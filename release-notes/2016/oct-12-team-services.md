@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 10/12/2016
 ---
 
 # New navigation, Test & Feedback extension GA, and cherry-pick – Oct 12

@@ -2,6 +2,7 @@
 ms.topic: include
 ---
 
+<a id="discussion" />
 
 ::: moniker range=">= tfs-2017" 
 
@@ -14,7 +15,7 @@ Use the **Discussion** section to add and review comments made about the work be
 
 ::: moniker-end 
 
-::: moniker range="azure-devops"   
+::: moniker range=">= azure-devops-2019"
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within each text box that can be formatted. 
 
@@ -28,6 +29,17 @@ Choose one of these icons &mdash;![ ](/azure/devops/_img/icons/at-mention.png), 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, @mention drop-down menu](/azure/devops/boards/_shared/_img/discussion-at-mention.png)  
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"  
+
+> [!NOTE]   
+> This latest version of the rich text editor requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"  
+
 Type a name, or enter a number and the menu list will filter to match your entry. Choose the entry you want to add. You can bring a group into the discussion by typing **@** and the group name, such as a team or security group. 
 
 ### Edit or delete a comment 
@@ -37,13 +49,24 @@ If you need to edit or delete any of your discussion comments, choose ![ ](/azur
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, Edit, Delete actions](/azure/devops/boards/_shared/_img/discussion-edit-delete.png)  
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"  
+
+> [!NOTE]   
+> The edit/delete feature requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"  
+
 After updating the comment, choose <strong>Update</strong>. To delete the comment, you'll need to confirm that you want to delete it. 
 
 A full audit trail of all  edited and deleted comments is maintained in the <strong>History</strong> tab on the work item form. 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 Use the [<strong>@mention</strong> control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
@@ -58,3 +81,13 @@ Note that you can't edit or delete comments once they've been entered.
 
 
 
+::: moniker range="azure-devops"
+
+### Add a reaction to a comment 
+
+You can add one or more reactions to any comment. Choose a smiley icon at the upper-right corner of any comment or choose from the icons at the bottom of a comment next to any existing reactions. To remove your reaction, click the reaction on the bottom of your comment. The following shows an example of the experience of adding a reaction, as well as the display of reactions on a comment.
+
+> [!div class="mx-imgBorder"]  
+> ![Add reactions to a comment](/azure/devops/release-notes/2019/_img/156_09.png)  
+
+::: moniker-end 

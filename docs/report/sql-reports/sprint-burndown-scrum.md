@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Tracks how much work remains in a sprint backlog.
 ms.assetid: f7422ba3-c309-4092-87cf-17a83c77ac01
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 

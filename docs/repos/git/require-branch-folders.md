@@ -5,7 +5,7 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -72,17 +72,17 @@ Finally, allow administrators to create a branch called `master` (in case it eve
 ## Rename old branches
 
 #### [Browser](#tab/browser/)
-0. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
-1. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
-2. Choose its context menu (the `...` button) and choose **New branch**.
+1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
+2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
+3. Choose its context menu (the `...` button) and choose **New branch**.
 
    ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
 
-3. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
+4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
    ![Create new branch](_img/require-branch-folders/create-new-branch.png)
 
-4. Choose the red trashcan icon next to the old branch name to delete it.
+5. Choose the red trashcan icon next to the old branch name to delete it.
 
    ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
 

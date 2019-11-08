@@ -1,5 +1,5 @@
 ```YAML
-# NuGet Tool Installer
+# NuGet tool installer
 # Acquires a specific version of NuGet from the internet or the tools cache and adds it to the PATH. Use this task to change the version of NuGet used in the NuGet tasks.
 - task: NuGetToolInstaller@0
   inputs:

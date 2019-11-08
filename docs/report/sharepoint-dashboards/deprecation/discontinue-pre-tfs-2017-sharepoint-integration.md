@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: overview
 ms.manager: abjork
 ms.author: greggboe
-monikerRange: '>=tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 

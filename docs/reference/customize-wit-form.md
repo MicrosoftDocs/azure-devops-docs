@@ -5,7 +5,7 @@ description: Customize the web version of the work item form in Azure DevOps Ser
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -72,7 +72,7 @@ See the following topics to make the indicated customizations:
 > [!NOTE]   
 > The **witadmin** command-line tool is not supported on Azure DevOps Services. Instead, you use [inherited processes](../organizations/settings/work/manage-process.md) to modify the work item type. 
 
-0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
+1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).  
   
 1. Open a Command Prompt window according to the instructions provided in [witAdmin: Customize and manage objects for tracking work](/azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work#run-witadmin-tool). 
 
@@ -84,7 +84,9 @@ See the following topics to make the indicated customizations:
 
 2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
-       witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    ```
+    witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
+    ```
 
    An example of a <em>CollectionURL</em> for an organization is https://dev.azure.com/*OrganizationName*.
 
@@ -92,7 +94,9 @@ See the following topics to make the indicated customizations:
 
 4. Import the WIT definition file.  
 
-       witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+    ```
+    witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"  
+    ```
 
 5. Open either the web portal to view the changes. If the client is already open, refresh the page. 
 

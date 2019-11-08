@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
@@ -30,8 +30,11 @@ You can install an Apple provisioning profile that is:
 xcode
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.md)]
+
 ::: moniker-end
 
 ## Arguments

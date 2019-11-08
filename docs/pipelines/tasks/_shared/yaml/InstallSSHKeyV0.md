@@ -1,9 +1,9 @@
 ```YAML
-# Install SSH Key
-# Install an SSH key prior to a build or release
+# Install SSH key
+# Install an SSH key prior to a build or deployment
 - task: InstallSSHKey@0
   inputs:
-    hostName: 
+    knownHostsEntry: 
     sshPublicKey: 
     #sshPassphrase: # Optional
     sshKeySecureFile: 

@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 description: In the **Sprint 153 Update** of Azure DevOps, we are improving the Azure Boards integration with GitHub. 
 ---
 
@@ -13,6 +13,10 @@ description: In the **Sprint 153 Update** of Azure DevOps, we are improving the 
 In the **Sprint 153 Update** of Azure DevOps, we continue to enhance the Azure Boards integration with GitHub. Now you can get information about your linked GitHub commits, pull requests and issues from your Kanban board. This information will give you a quick sense of where an item is and allow you to directly navigate to the GitHub commit, pull request, or issue for more details.
 
 Check out the [Features](#features) list below for more.
+
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/nterH4fTd3M]
 
 ## Features
 
@@ -80,7 +84,7 @@ Marketplace:
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

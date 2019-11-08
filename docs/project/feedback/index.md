@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 09/19/2017

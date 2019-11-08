@@ -6,7 +6,7 @@ ms.topic: include
 
 We're excited to announce the new Azure Pipelines app for Microsoft Teams. You can now easily monitor Azure DevOps Pipelines and approve releases in Teams. In addition, you can manage subscriptions for completed builds, releases, pending approvals and get notifications for these events in your Teams channels.
 
-To get started, install the Azure Pipelines app from the Microsoft Teams app store and see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops).
+To get started, install the Azure Pipelines app from the Microsoft Teams app store and see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/integrations/microsoft-teams?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/151_09.png "Azure Pipelines app for Microsoft Teams")

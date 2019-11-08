@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 04/08/2019
+ms.date: 10/16/2019
 ---
 
 # Query by date or current iteration
@@ -30,10 +30,11 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 
 ## Supported operators and macros 
+
 Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iteration Path</strong> can use the operators and macros listed in the following table.
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
 <thead>
@@ -46,12 +47,12 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
+    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"><sup>1</sup></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
     <td>= , &lt;&gt; , Under, Not Under
-    <p><strong>Macros</strong>: <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>1</sup> and <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>2</sup> valid with the <strong>Iteration Path</strong> field</p></td>
+    <p><strong>Macros</strong>: <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></strong><sup>2</sup> and <strong><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref> +/- n</strong><sup>3</sup> valid with the <strong>Iteration Path</strong> field</p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +61,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
 <table valign="top">
 <thead>
@@ -87,7 +88,9 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 
 #### Notes:
-1. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
+
+1. The <strong>@StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear</strong> macros are supported for Azure DevOps Server 2019.1 and later versions, and only when run from the web portal.
+2. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 2. The **@CurrentIteration +/- n** macro is supported for Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
@@ -95,7 +98,10 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. If you're new to creating queries, see [Use the query editor to list and manage queries](using-queries.md). 
 
-Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. Enter dates in the **Date Pattern** you set for your personal profile. (See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.)   
+Not all fields are valid for all work item types (WITs). Jump to [date fields](#date_fields) for the set of fields you can include in queries and which WITs they apply to. 
+
+> [!IMPORTANT]  
+> Enter dates in the **Date Pattern** you set for your personal profile. See [Set personal preferences](../../organizations/settings/set-your-preferences.md) for details.   
 
 <table valign="top">
 <tbody valign="top">
@@ -139,6 +145,13 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tr>
 <tr>
   <td>
+    <p>Items that haven't been closed (Closed Date is null)</p>
+  </td>
+  <td><img src="_img/q-closed-date-null.png" alt="Clause for finding items whose Closed Date is empty or null"/>
+  </td>
+</tr>
+<tr>
+  <td>
     <p>Items whose status was updated within the last week</p>
   </td>
   <td><img src="_img/q-by-state-changed-within-last-week.png" alt="Clause for finding items whose status was updated within the last week"/>
@@ -154,12 +167,24 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tbody>
 </table>
 
-::: moniker range="azure-devops"
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+
+::: moniker range=">= azure-devops-2019"
 
 ## Start of Day, Week, Month, or Year date-based queries
 
 The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For additional examples for using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
 <tbody valign="top">
@@ -221,6 +246,9 @@ Azure Boards adds a team parameter when you select the <strong>@CurrentIteration
 
 > [!div class="mx-imgBorder"]
 > ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
+
+> [!TIP]  
+> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it]((../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 

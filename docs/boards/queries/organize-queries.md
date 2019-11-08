@@ -7,12 +7,12 @@ ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/16/2019
 ---
 
 
@@ -20,7 +20,11 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders.
+Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
+
+> [!NOTE]  
+> To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
+
  
 [!INCLUDE [temp](../_shared/prerequisites-queries.md)]
 
@@ -35,7 +39,7 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 You add query folders from the **Boards>Queries>All** page.
  
-0. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
+1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
 1. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
@@ -59,7 +63,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 You add query folders from the **Boards>Queries** page.
 
-0. To add a folder, choose the ![ ](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
+1. To add a folder, choose the ![ ](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
@@ -101,7 +105,7 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 **A:** Yes. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
 ::: moniker-end
 
-### Q: Can I add folders to team favorites?
+### Q: Can I add folders to My Favorites or Team Favorites?
 
 **A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
 
@@ -113,11 +117,12 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 **A:** Yes. In the web portal, choose **Rename** from the context menu. In Visual Studio Team Explorer, simply drag the folder to the new location.  
 
-In Team Explorer for Eclipse, choose **Move** from the context menu and select the folder to which you want to move the item.
+In Team Explorer Everywhere (a plugin for Eclipse), choose **Move** from the context menu and select the folder to which you want to move the item.
 
 <!-- ENDSECTION --> 
 
 ## Related articles
+
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Set query permissions](set-query-permissions.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)

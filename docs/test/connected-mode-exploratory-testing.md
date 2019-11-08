@@ -5,9 +5,9 @@ ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---

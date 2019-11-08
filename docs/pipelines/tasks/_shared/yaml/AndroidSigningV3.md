@@ -1,5 +1,5 @@
 ```YAML
-# Android Signing
+# Android signing
 # Sign and align Android APK files
 - task: AndroidSigning@3
   inputs:

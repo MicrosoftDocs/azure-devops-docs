@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -14,10 +14,12 @@ ms.date: 02/08/2018
 ---
 
 
-<a id="set-permissions">  </a>
+
 # Set dashboard permissions    
 
 [!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)] 
+
+<a id="set-permissions">  </a>
 
 ::: moniker range=">= azure-devops-2019"
 As a member of the Project Administrators group, you can set the default dashboard permissions for all teams. As a team or project administrator, you can set individual dashboard permissions for team members. The permissions only affect the team members to which the dashboards belongs. 
@@ -44,6 +46,7 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 
 
 <a id="permissions">  </a>
+
 ## Prerequisites  
 
 - If you haven't been added as a team member, [get added now](/azure/devops/organizations/security/add-users-team-project).
@@ -53,11 +56,12 @@ To learn more about adding and viewing dashboards, see [Add, rename, and delete 
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Set default dashboard permissions for a project
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for members of the Project Administrators group. You can change the default permissions a project from the Project settings. 
 
-0. Choose **Project Settings** and then **Dashboards**.  
+1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions.png)
@@ -70,7 +74,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ## Set individual dashboard permissions for team members
 
-0. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)

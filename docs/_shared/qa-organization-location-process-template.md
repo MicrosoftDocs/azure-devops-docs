@@ -4,7 +4,7 @@ A: [Find your organization's region](/azure/devops/organizations/accounts/change
 
 #### Q: How do I change my project name, organization location, or process? 
 
-A:	Change these when you sign up for your organization. 
+A: Change these when you sign up for your organization. 
 
 <img alt="Change organization details" src="/azure/devops/_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 

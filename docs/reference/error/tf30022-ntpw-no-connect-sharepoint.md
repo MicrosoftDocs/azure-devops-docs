@@ -5,8 +5,9 @@ description: The New Team Project Wizard is unable to connect to the server {nam
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: dd798fbb-8e24-4a33-91f6-7167138d7414
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---

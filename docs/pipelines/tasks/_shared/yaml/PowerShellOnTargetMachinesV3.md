@@ -1,6 +1,6 @@
 ```YAML
-# PowerShell on Target Machines
-# Execute PowerShell scripts on remote machine(s). This version of the task uses PSSession and Invoke-Command for remoting.
+# PowerShell on target machines
+# Execute PowerShell scripts on remote machines using PSSession and Invoke-Command for remoting
 - task: PowerShellOnTargetMachines@3
   inputs:
     machines: 

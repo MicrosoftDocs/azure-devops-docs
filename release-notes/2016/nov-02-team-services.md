@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 11/02/2016
 ---
 
 # Microsoft Teams integration, repo favorites, and new package management and release management regions – Nov 2

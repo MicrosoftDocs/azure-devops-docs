@@ -5,7 +5,7 @@ description: Register the instance of Project Web Access or Project Web App (PWA
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4093f721-e8ed-439b-9882-00fbb2ea430f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -41,7 +41,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
  To use these commands, you must belong to the **Team Foundation Administrators**  group. To register or unregister an instance of PWA, you must also belong to the Administrators group for the instance. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
  
   

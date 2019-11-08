@@ -5,7 +5,7 @@ description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2015'
 
 The **undelete** command restores items that were previously deleted.
 
->**Note:**  
->  ** **The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 

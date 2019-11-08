@@ -7,7 +7,7 @@ ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2017
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 ---
 # Troubleshoot creating a project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  � 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 ## Resolve errors
 
@@ -113,7 +113,7 @@ The log shows each action taken by the wizard at the time of the failure and may
 
 ### Q: Where can I go if I have more questions?
 
-**A:** You can post a question or search for answers in our [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), or through our  �[Support](https://www.visualstudio.com/team-services/support/)  �portal.
+**A:** You can post a question or search for answers in our [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services), or through our [Support](https://www.visualstudio.com/team-services/support/) portal.
 
 
 

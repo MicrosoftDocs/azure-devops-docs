@@ -5,10 +5,10 @@ title: Tutorials catalog for developing extensions in Azure DevOps Services
 description: Follow tutorials to create an extension in Azure DevOps Services
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/19/2016
 ---
 

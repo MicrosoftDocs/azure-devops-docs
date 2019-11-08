@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: WIT Attachments | REST API Reference for Team Foundation Server
 description: Work with work item attachments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 55EF1F80-21BC-4497-9D17-1171C5F504BD
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

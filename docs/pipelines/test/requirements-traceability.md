@@ -1,19 +1,19 @@
 ---
-title: Trace test requirements
+title: Requirements traceability
 description: Link requirements, tests, and bugs to enable requirements traceability
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vinojos
 author: vinodjo
-ms.date: 12/07/2018
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Trace test requirements
+# Requirements traceability
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -26,7 +26,9 @@ A fundamental aspect of requirements traceability is association of the requirem
 > Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 <a name="agileteams"></a>

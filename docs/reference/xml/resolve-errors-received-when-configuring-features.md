@@ -5,7 +5,7 @@ description: Occurs when definitions in the project conflict with definitions in
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/19/2017
@@ -32,7 +32,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](https://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](https://go.microsoft.com/fwlink/?LinkId=248071).  
  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
@@ -106,7 +106,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-0. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+1. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
    ```  
    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  

@@ -3,10 +3,10 @@ title: Team Foundation Service updates - July 29
 description: VSTS release notes for July 29 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 0847839d-1513-46fa-a8e6-41c5cf5ec0f5
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -14,7 +14,7 @@ author: yukom
 
 ## Improved permission management for Git repos
 
-In a continuation of our goal to offer a great [enterprise grade Git](http://blogs.msdn.com/b/bharry/archive/2013/06/19/enterprise-grade-git.aspx) solution, we have added a number of enhancements to permission management for Git repos. The most notable is the introduction of branch level permissions. You can now control who has the ability to push certain branches to the server. This lets you have Git repos the whole team can work on, but with branches that only specific people are allowed to push to.
+In a continuation of our goal to offer a great [enterprise grade Git](https://blogs.msdn.com/b/bharry/archive/2013/06/19/enterprise-grade-git.aspx) solution, we have added a number of enhancements to permission management for Git repos. The most notable is the introduction of branch level permissions. You can now control who has the ability to push certain branches to the server. This lets you have Git repos the whole team can work on, but with branches that only specific people are allowed to push to.
 
 We also added a few more permissions at the repo level. You can now control who can push new branches or tags to a repository. This lets you manage branch proliferation on the team’s golden repo. Finally, you can now configure the default permissions for all repos in a team project at once. For teams that have lots of repositories, this makes it much easier to manage permission changes.
 
@@ -46,7 +46,7 @@ We’ve had support for emoticons in the team room since it launched on the serv
 
 And finally, we received a lot of customer feedback indicating users want to delete rooms, especially the ones “automagically” created for you when you create new team projects. Room admins will now see "Delete" as an option on the context menu next to each room. Deleting a room deletes all messages in the room history so be sure you've copied any content you need.
 
-That’s a wrap on sprint 51. See you again in 3 weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s a wrap on sprint 51. See you again in 3 weeks. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

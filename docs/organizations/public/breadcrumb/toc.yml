@@ -4,8 +4,4 @@
   items: 
   - name: Collaborate
     tocHref: /azure/devops/organizations/public/
-    topicHref: /azure/devops/project/index
-    items:
-    - name: Public Projects
-      tocHref: /azure/devops/organizations/public/
-      topicHref: /azure/devops/organizations/public/index
+    topicHref: /azure/devops/organizations/index

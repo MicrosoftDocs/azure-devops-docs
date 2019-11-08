@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -47,17 +47,18 @@ Sign up for an organization, add users, and manage permissions and access.
 
 * [Set your preferences](../settings/set-your-preferences.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage your organization
-    * [Change your organization owner](change-organization-ownership.md)
+    * [Change your organization Owner](change-organization-ownership.md)
     * [Rename your organization](rename-organization.md)
     * [Delete your organization](delete-your-organization.md)
     * [Recover your organization](recover-your-organization.md)
     * [Sign in with different credentials](../projects/connect-to-projects.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Change organization location (region)](change-organization-location.md)
     * [Add privacy policy URL](add-privacy-policy-url.md)
+    * [Change time zone](change-time-zone.md)
 * Manage access to your organization
     * [Add users to your organization](add-organization-users.md)
     * [Manage users](manage-users-table-view.md)
-    * [Manage conditional access](manage-conditional-access.md)
+    * [Manage Conditional Access](manage-conditional-access.md)
     * [Link work accounts to Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Faccounts%2Fbreadcrumb%2Ftoc.json&view=azure-devops)
     * [Authenticate with personal access tokens](use-personal-access-tokens-to-authenticate.md)
     * [Revoke user PATs - for admins](admin-revoke-user-pats.md)
@@ -73,13 +74,11 @@ Sign up for an organization, add users, and manage permissions and access.
         * [Change your Azure AD tenant connection](change-azure-ad-connection.md)
         
 * Manage extensions
-    * [Install extensions](../../marketplace/install-extension.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
-    * [Assign paid extensions access](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
+    * [Install extensions](../../marketplace/install-extension.md)
     * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
     * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json)
 * Manage group-based licensing
-    * [Assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
-    * [Migrate to group-based resource management](migrate-to-group-based-resource-management.md)
+    * [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md)
     * [Remove direct assignments](remove-direct-assignments.md)
 
 ## Reference
@@ -92,5 +91,5 @@ Sign up for an organization, add users, and manage permissions and access.
 
 ## Resources
 
-- [Get Started using Azure DevOps](../../get-started/index.md)
-- [Marketplace & Extensibility](../../marketplace-extensibility/index.md)
+- [Get started using Azure DevOps](../../get-started/index.yml)
+- [Marketplace & extensibility](../../marketplace-extensibility/index.yml)

@@ -6,7 +6,9 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 06/01/2017
 ---
+
 
 # New Visual Studio Enterprise pipeline benefit, mobile work item form GA, and source based release triggers – June 1
 
@@ -78,9 +80,9 @@ Build templates let you create a baseline for users to get started with defining
 
 ```json
 {  "id": "Template1", 
-   "type": "ms.vss-build.template", 
-   "targets": [ "ms.vss-build.templates" ], 
-   "properties": { "name": "Template1" } }
+  "type": "ms.vss-build.template", 
+  "targets": [ "ms.vss-build.templates" ], 
+  "properties": { "name": "Template1" } }
 ```
 
 For the full example, see https://github.com/Microsoft/vsts-extension-samples/tree/master/fabrikam-build-extension.

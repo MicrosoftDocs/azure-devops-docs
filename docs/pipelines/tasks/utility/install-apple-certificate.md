@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
@@ -25,8 +25,11 @@ You can use this task to install an Apple certificate that is stored as a [secur
 xcode
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleCertificateV2.md)]
+
 ::: moniker-end
 
 ## Arguments

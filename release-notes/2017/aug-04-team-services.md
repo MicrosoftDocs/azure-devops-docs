@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
+ms.date: 08/04/2017
 ---
 
 # Visual Studio Team Services (VSTS) Sprint 121 Update

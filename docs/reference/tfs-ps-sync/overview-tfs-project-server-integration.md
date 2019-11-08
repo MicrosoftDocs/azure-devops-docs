@@ -5,8 +5,9 @@ description: Understand how to customize data synchronization between Team Found
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/12/2017
 ms.topic: overview
 ---
@@ -41,7 +42,7 @@ ms.topic: overview
 |Setup|You must install the Team Foundation Server Extensions for Project Server on all Web Tiers and on all App Tiers in the server farm.<br /><br /> You must install the cumulative updates or modify the web.config file.|You must install the Team Foundation Server Extensions for Project Server on all Web Tiers and on all App Tiers in the server farm.|  
 |Security|See [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).|See [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).|  
 |Authentication|Instance of PWA must be set to **Classic Mode Authentication**.|Instance of PWA can be set to either **Classic Mode Authentication** or **Claims Based Authentication**.|  
-|Security mode|You manage Project Server security through customizable security groups and other functionality that is distinct from SharePoint groups.|You can choose between SharePoint or Project Server Permission Modes to control user access to sites and projects. To learn more, see [Plan user access in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262117).|  
+|Security mode|You manage Project Server security through customizable security groups and other functionality that is distinct from SharePoint groups.|You can choose between SharePoint or Project Server Permission Modes to control user access to sites and projects. To learn more, see [Plan user access in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262117).|  
 |Approval comments|Approval comments that the project manager specifies in PWA are recorded in the History field for the work item.|Approval comments that the project manager specifies in PWA are recorded in the History field for the work item.|  
 |Automatic approvals|You can automatically approve changes that occur when data is synchronized.|You can automatically approve changes that occur when data is synchronized.|  
 |SharePoint tasks list|Not applicable.|Projects that synchronize with TFS must be configured as an Enterprise Project and not as a SharePoint tasks list.|  

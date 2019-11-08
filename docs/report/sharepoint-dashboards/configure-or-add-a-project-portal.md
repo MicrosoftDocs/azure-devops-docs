@@ -5,11 +5,11 @@ description: How the SharePoint project portal provides access to shared documen
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
-monikerRange: '>=tfs-2013'
+monikerRange: '>= tfs-2013'
 ms.topic: tutorial
 ---
 
@@ -140,6 +140,6 @@ The project portal is a site associated with a team project for the purposes of 
 
 The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//boards/work-items/guidance/choose-process.md).  
   
-- [SharePoint Online Tutorial](http://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
+- [SharePoint Online Tutorial](https://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
 
 

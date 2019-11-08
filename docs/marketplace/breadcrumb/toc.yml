@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Marketplace & Extensibility
+  - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace/
     topicHref: /azure/devops/marketplace-extensibility/index
-    items: 
-    - name: Discover & Manage Extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/index

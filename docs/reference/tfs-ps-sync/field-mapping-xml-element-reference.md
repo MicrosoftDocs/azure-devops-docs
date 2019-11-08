@@ -5,7 +5,7 @@ description: Customize the field mappings to define which fields to keep synchro
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: dfd7bc62-dd68-4412-a86d-5f82c3ad9af3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

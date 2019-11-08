@@ -1,10 +1,11 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md", 
+          "**/*.yml"
         ],
         "group": "all",
         "exclude": [
@@ -53,7 +54,13 @@
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.team-services",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -66,9 +73,10 @@
         "report/excel/**": "<= tfs-2017",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sharepoint-dashboards/**": "<= tfs-2017",
         "report/sql-reports/**": "<= azure-devops-2019",
-        "work/tfs-ps-sync/**": "<= tfs-2015"
+        "reference/tfs-ps-sync/**": "<= tfs-2015",
+        "reference/witadmin/**": "<= azure-devops-2019",
+        "reference/mapping/**": "<= azure-devops-2019"
       },
       "ROBOTS":{
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"

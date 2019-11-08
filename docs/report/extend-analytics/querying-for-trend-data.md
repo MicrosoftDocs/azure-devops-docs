@@ -1,11 +1,11 @@
 ---
 title: Query trend data
 titleSuffix: Azure DevOps 
-description: How to query the Analytics service trend data and consume it in a client tool when working from Azure DevOps   
+description: How to query Analytics trend data and consume it in a client tool when working from Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -17,7 +17,7 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
+Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. Analytics supports these capabilities.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -36,12 +36,14 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 > [!NOTE]
 > The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL.
-> 
+
+
 > [!div class="tabbedCodeSnippets"]
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> ::: moniker-end
+
+::: moniker-end
 
 [!INCLUDE [temp](../_shared/api-versioning.md)]
 
@@ -133,8 +135,8 @@ This returns a result similar to the following:
 
 In this query, there are two key differences. We added a filter clause to filter the data to a specific iteration and the dates are now being compared to the iteration start and end dates versus a hard coded date.  
  
- [!Note]
- If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
+> [!NOTE]  
+> If aggregation is not used in your query on snapshot tables, you will see the warning "The specified query does not include a $select or $apply clause which is recommended for all queries." in the response. 
 
 ## Related articles
 

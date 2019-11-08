@@ -5,8 +5,9 @@ description: Resolve process configuration issues in Azure DevOps Services & Tea
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 09/29/2017  
 ---

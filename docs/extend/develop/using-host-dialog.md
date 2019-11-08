@@ -5,14 +5,16 @@ title: Modal Dialog | Extensions for Azure DevOps Services
 description: Use the modal dialog provided by the host
 ms.assetid: 59748E0E-2D5E-FF79-ED0E-4B76037A8010
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 09/19/2019
 ---
 
 # Modal dialog
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 The HostDialogService enables you to present a modal dialog to the user and prevent interaction with all parts of web access until the dialog is dismissed. 
 
@@ -37,7 +39,7 @@ To start, declare a contribution of type `ms.vss-web.control` in your extension 
     }
 ```
 
-The `uri` property references a page that will be rendered within the content area of the dialog:
+The `uri` property references a page that is rendered within the content area of the dialog:
 
 ```html
 <!DOCTYPE html>
@@ -246,4 +248,13 @@ To not show any buttons on the dialog, you can set the `buttons` attribute to `n
         buttons: null
     };
 ```
+
+### More information
+
+If you have a question or are looking for more information, consider going to one of the following areas:
+
+- [Azure DevOps on Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops)
+- [Azure DevOps Support Bot](https://azuredevopsvirtualagent.azurewebsites.net/)
+- [Developer Community](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
+
 

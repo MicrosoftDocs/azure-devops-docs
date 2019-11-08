@@ -5,7 +5,7 @@ description: Quick start helping users to create a trend report using an Analyti
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -17,9 +17,11 @@ ms.date: 12/04/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics service data store. 
+With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
 
-If you don't have Power BI Desktop, you can [download](https://powerbi.microsoft.com/desktop) and install it for free.
+[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+
+If you don't have Power BI Desktop, you can [download](/power-bi/desktop-what-is-desktop) and install it for free.
 
 You can create status and trend reports of your work tracking data using one of the default Analytics views available to you. As needed, you can also [create a custom Analytics view](analytics-views-create.md). 
  
@@ -44,10 +46,10 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker range="azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, create one. See [Sign up for free](/azure/devops/user-guide/sign-up-invite-teammates). 
-- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics service](/azure/devops/report/powerbi/analytics-security).
+- If you haven't been added as a project member, [get added now](/azure/devops/organizations/accounts/add-organization-users). Anyone with access to the project, except Stakeholders, can view Analytics views.
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
 - **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). 
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
 ::: moniker-end
@@ -57,10 +59,10 @@ In order to create a Power BI report that references an Analytics view, you must
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
-- Have installed the [Analytics Marketplace extension](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions.
+- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.
 - **Boards** must be enabled. If disabled, **Analytics views** won't display. To re-enable it, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
-- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/azure/devops/report/powerbi/analytics-security).
-- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
+- Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).
+- Have installed *Power BI Desktop* *October 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
 ::: moniker-end
@@ -73,7 +75,7 @@ In order to create a Power BI report that references an Analytics view, you must
 
 By verifying the view you'll use in Power BI, your view is more likely to load correctly in Power BI. If verification takes too long, you can quickly adjust the view. Add filters or narrow your history and verify your view again.
 
-0. From the **Analytics view>All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
+1. From the **Analytics view>All** page, choose the ![ ](../_img/icons/actions-icon.png) actions icon next to the default view and select the **Edit** option. For a project that uses the Agile process, this will be the **Stories -Last 30 days** view.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Analytics>All, Edit the Stories -Last 30 days view](_img/create-report/edit-default-view-last-30-days.png)  
@@ -96,7 +98,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Connect to an Analytics view on Azure DevOps Server 
 
-0. Open Power BI Desktop.  
+1. Open Power BI Desktop.  
  
 1. Choose **Get Data**, **Online Services**, **Azure DevOps Server (Beta)**, and then choose **Connect**. 
 
@@ -124,7 +126,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Connect to an Analytics view 
 
-0. Open Power BI Desktop.  
+1. Open Power BI Desktop.  
  
 1. Choose **Get Data**, **Online Services**, **Azure DevOps (Beta)**, and then choose **Connect**. 
 
@@ -150,7 +152,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Create a daily trend report 
 
-0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
+1. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
 
     > [!div class="mx-imgBorder"]  
     > ![Select work item field](_img/create-report/select-line-chart-work-id.png)  
@@ -189,7 +191,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 ## Create a card to show the latest active stories count
 
-0. Add a new page by clicking the plus sign (+) at the bottom of the page. 
+1. Add a new page by clicking the plus sign (+) at the bottom of the page. 
 
 1. Select the card visual, add the **Work Item Id** field, and then drag the **State** and **Work Item Type** fields under Page level filters. Filter the State to show Active, and filter the Work Item Type for Bugs. 
 

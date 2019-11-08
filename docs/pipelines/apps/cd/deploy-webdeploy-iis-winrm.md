@@ -5,7 +5,7 @@ ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -35,9 +35,9 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../../languages/dotnet-core.md)
+* [Build your ASP.NET Core app](../../ecosystems/dotnet-core.md)
 
-* [Build your Node.js app with gulp](../../languages/javascript.md)
+* [Build your Node.js app with gulp](../../ecosystems/javascript.md)
 
 ### WinRM configuration
 

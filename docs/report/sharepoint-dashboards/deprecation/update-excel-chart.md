@@ -5,11 +5,12 @@ description: TFS SharePoint integration - Update an Excel chart on a SharePoint 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
-ms.topic: 
 ---
 
 # Update Excel Chart after SharePoint integration is disabled

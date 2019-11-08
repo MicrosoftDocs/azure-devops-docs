@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops  
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -210,7 +210,8 @@ Use the following commands to delete the TFS tables:
 `DROP TABLE [dbo].[TFS_mapped_projects]`   
 `DROP TABLE [dbo].[TFS_status_approvals]`   
 
->**Note:** If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
+> [!NOTE]
+> If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
 >
 >![Sample screenshot of error message](_img/ps-tfs-integ-error-message.png)
 

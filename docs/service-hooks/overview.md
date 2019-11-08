@@ -5,10 +5,10 @@ ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 
@@ -37,7 +37,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
 [AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/en-us/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 [Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Grafana](./services/grafana.md) |
 [MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [Slack](./services/slack.md)	   |		|			|			| [Zapier](https://zapier.com/apps/webhook/integrations)
@@ -162,9 +162,9 @@ A: Yes. For more information, see [Create a service hooks subscription](create-s
 
 A: Yes. You can revoke authorizations from your profile.
 
-1. 	Go to your profile page from http://visualstudio.com. 
+1. 	Go to your profile page from https://visualstudio.com. 
 
-	Make sure you start from the Visual Studio site (http://visualstudio.com) 
+	Make sure you start from the Visual Studio site (https://visualstudio.com) 
 	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
 	your profile accessed from your organization will take you to the wrong implementation 
 	of the authorizations management feature.
@@ -183,3 +183,13 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 
 <!-- ENDSECTION -->
+
+
+
+## Related articles
+
+* [Troubleshoot service hooks and FAQs](troubleshoot.md)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+* [Billing information](../organizations/billing/index.md)
+
+

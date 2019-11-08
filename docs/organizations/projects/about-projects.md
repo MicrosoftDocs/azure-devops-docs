@@ -2,14 +2,14 @@
 title: About projects and scaling your organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
-description: Understand project management and how you can track progress and collaborate on building software solutions.
+description: Understand how to structure your project to support collaboration on building software solutions.
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
@@ -161,7 +161,7 @@ A public project, on the other hand, doesn't require users  to sign in to gain r
 
 When you add a project, look at using the following elements to structure it to support your business needs:
 
-- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project.  
+- [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project. If you're using TFVC and heading toward a consolidated project model, create root folders for different teams and projects, just as you would create separate repos in Git. Folders can be secured as needed and workspace mappings can control what segments of the repo you're actively using. 
 - [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams.
 - [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
 - [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
@@ -178,8 +178,8 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
-- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/languages/dotnet-core.md#run-your-tests).
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -188,8 +188,8 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md).
-- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.md) and [continuous testing for your builds](../../pipelines/languages/dotnet-core.md#run-your-tests).
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 
@@ -214,6 +214,20 @@ To review  stories and short videos on how Microsoft transitioned from waterfall
 
 In addition to connecting through a web browser, you can connect to a project from the following clients:
 
+::: moniker range=">= azure-devops-2019"
+
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in)
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 - [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
@@ -224,7 +238,16 @@ In addition to connecting through a web browser, you can connect to a project fr
 - [Azure Test Plans](https://msdn.microsoft.com/library/jj635157.aspx) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
+::: moniker-end
+
 See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server/compatibility).
+
+## Q & A
+
+### Q: Can I move or transfer a project to another organization or collection? 
+
+**A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
+ 
 
 ## Related articles
 

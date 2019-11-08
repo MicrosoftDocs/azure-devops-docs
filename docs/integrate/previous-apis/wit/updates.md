@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Updates | REST API Reference for Team Foundation Server
 description: Work with updates to work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B4C07EF4-535A-4479-803D-C181553613EE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -451,7 +451,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
         "added": [
           {
             "rel": "Hyperlink",
-            "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+            "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
             "attributes": {
               "authorizedDate": "2014-12-29T20:49:27.98Z",
               "id": 65275,

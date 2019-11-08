@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Attachments | REST API Reference for Team Foundation Server
 description: Work with test attachments programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 17331F93-DD6A-459E-A3E6-D4A0FABAAC9B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

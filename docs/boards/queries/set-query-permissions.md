@@ -6,11 +6,11 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 682f0eb0-462d-41e2-b6a2-41949d1b90fb  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/08/2018
+ms.date: 10/16/2019
 ---
 
 
@@ -20,7 +20,7 @@ ms.date: 01/08/2018
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
-All users can create and edit their own queries and save them under **My Queries**.
+All users can create and edit their own queries and save them under **My Queries**. Only you can view queries saved under your **My Queries** space.
 
 By default, only project administrators can create and edit queries and folders under **Shared Queries**, or change the permissions for a query or folder. 
 
@@ -49,7 +49,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose **All**. Expand **Shared Queries**. 
+1. Choose **All**. Expand **Shared Queries**. 
  
 1. To add a folder, choose the ![ ](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
@@ -80,7 +80,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 ::: moniker range="<= tfs-2018"
 
-0. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
+1. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../_img/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
 
 	![New query folder link on queries context menu](_img/set-query-perm-new-folder.png)  
 
@@ -108,7 +108,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Choose  the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.  
+1. Choose  the ![ ](../_img/icons/actions-icon.png) actions icon and select **Security**.  
 
    > [!div class="mx-imgBorder"]  
    > ![Open query permissions](_img/permissions/query-permissions-select.png)
@@ -125,7 +125,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range="<= tfs-2018"
 
-0. Choose the ![ ](../_img/icons/context_menu.png) context menu icon and select **Security**. 
+1. Choose the ![ ](../_img/icons/context_menu.png) context menu icon and select **Security**. 
 
    ![Open query permissions](_img/set-query-perm-security-menu-option.png)
 

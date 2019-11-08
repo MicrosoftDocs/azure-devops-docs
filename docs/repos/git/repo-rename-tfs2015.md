@@ -5,7 +5,7 @@ description: You can rename a Git repository in a few steps, but be aware that y
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -26,7 +26,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 [!INCLUDE [temp](_shared/steps-open-control-panel-team-project.md)]
 
-0. Rename the repo from the Version Control tab.
+1. Rename the repo from the Version Control tab.
 
    ![Rename a repository](_img/repo-rename/AdminVC.png)
 

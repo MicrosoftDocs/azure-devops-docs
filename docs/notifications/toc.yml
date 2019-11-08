@@ -1,5 +1,3 @@
-- name: Notifications
-  href: index.md
 - name: About notifications
   href: about-notifications.md
 - name: Navigating the UI
@@ -16,6 +14,8 @@
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
+  - name: Set alerts, get notified when changes occur
+    href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
 - name: How-to guides
@@ -30,7 +30,7 @@
     href: change-email-address.md
   - name: Use subscription logging for troubleshooting
     href: howto-use-subscription-logging.md
-  - name: Exclude yourself from notification of events initiated by you
+  - name: Exclude yourself from notification of events you initiated
     href: howto-exclude-self-from-email.md
   - name: "Use @mentions to further discussion"
     href: at-mentions.md

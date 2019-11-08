@@ -5,7 +5,7 @@ description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -54,7 +54,7 @@ Essentially, status is the way a user or service posts their evaluation about a 
 * Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example. 
-Consider a [CI service](../../pipelines/index.md) that is required to build all code changes in a project. 
+Consider a [CI service](../../pipelines/index.yml) that is required to build all code changes in a project. 
 When that service evaluates the changes in a pull request, it needs to post back the results of the build and tests. 
 For changes that pass the build, a status like this might be posted on the PR:
 

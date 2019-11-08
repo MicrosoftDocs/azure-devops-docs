@@ -4,9 +4,9 @@ description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -96,7 +96,7 @@ If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we r
 
 [!INCLUDE [](../_shared/npm/npmrc.md)]
 
-`vsts-npm-auth` is not supported on TFS.
+`vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
 
 ::: moniker-end
 

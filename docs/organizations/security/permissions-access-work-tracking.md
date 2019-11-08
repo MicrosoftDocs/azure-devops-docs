@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -173,7 +173,7 @@ The **Edit project-level information** permission includes the ability to perfor
 
 ## Team administrator role and permissions  
 
-The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the project.
+The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
 
 
 <table>

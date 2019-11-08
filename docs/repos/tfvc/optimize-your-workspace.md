@@ -5,7 +5,7 @@ description: Optimize your workspace
 ms.assetid: 0ad2897c-5a99-455e-a5ee-16e4413d0b6b
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -95,5 +95,5 @@ Raisa manages her work in three workspaces, each of which maps folders in a bran
 
 ![Branches](_img/optimize-your-workspace/IC720117.png)
 
-> **Note:**  
+> [!NOTE]
 > [Branching](use-branches-isolate-risk-team-foundation-version-control.md) or [suspending (or shelving)](suspend-your-work-manage-your-shelvesets.md) are the preferred ways to isolate different work efforts against the same codebase. However, if neither of these approaches meets your needs, you can map the same server folder in more than one workspace. In most cases you should not need to do this. If you do map the same server folder in more than one workspace, remember that you could have separate and different pending changes to the same file stored in each workspace.

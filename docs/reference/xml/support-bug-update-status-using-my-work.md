@@ -5,7 +5,7 @@ description: Update the ProcessConfiguration bug category states to support code
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/20/2017
@@ -61,7 +61,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
 ## Add WITs to the Bug category  
 You add WITs to a category by updating the [Categories definition file](categories-xml-element-reference.md) and importing it to your project. Follow the [customization sequence](../customize-work.md) that matches your process model. 
  
-0. Open the categories file in Notepad and locate the `CATEGORY` element for the `"Bug Category"`.  
+1. Open the categories file in Notepad and locate the `CATEGORY` element for the `"Bug Category"`.  
   
 1. To add a new type of work item, add a `WORKITEMTYPE` element that specifies the reference name of a work item type that you want to add.  
   
@@ -87,7 +87,7 @@ You add WITs to a category by updating the [Categories definition file](categori
 ## Assign metastates to workflow states defined for bugs  
  You assign metastates to the workflow states of bugs within the `BugWorkItems` element in the definition for ProcessConfiguration. Follow the [customization sequence](../customize-work.md) that matches your process model. 
    
-0. Open ProcessConfigurations in Notepad and locate the `BugWorkItems` element.  
+1. Open ProcessConfigurations in Notepad and locate the `BugWorkItems` element.  
   
 1. Update the values assigned to the `State` elements to match the values used in the workflow for the types of work items that you use to track bugs.  
   

@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 04/19/2017
 ---
 
 # Delivery timeline markers, git graph, and build and release improvements – Apr 19

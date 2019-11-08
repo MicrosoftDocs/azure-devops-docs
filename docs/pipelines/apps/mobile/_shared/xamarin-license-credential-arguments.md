@@ -1,2 +1,2 @@
-<li>Email: `$(xamarin.email)`</li>
-<li>Password: `$(xamarin.password)`</li>
+<li>Email: <code>$(xamarin.email)</code></li>
+<li>Password: <code>$(xamarin.password)</code></li>
