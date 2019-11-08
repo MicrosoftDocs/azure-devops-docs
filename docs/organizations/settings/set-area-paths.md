@@ -744,7 +744,7 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 * * *
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
@@ -762,33 +762,6 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 > [!NOTE]
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018 >= tfs-2017" 
-
-1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](_img/areas/edit-area-rename.png)  
-
-2. In the dialog that opens, enter the new name.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](_img/areas/edit-area-rename-dialog.png)
-
-3. To move the node within the hierarchy, change the Location field.
-
-4. To delete a node, choose the **Delete** option from the actions menu.
-
-> [!NOTE]
-> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-When you rename an area or an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths.
 
 ::: moniker-end
 
