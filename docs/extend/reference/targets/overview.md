@@ -9,19 +9,21 @@ ms.author: chcomley
 author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
-ms.date: 07/22/2018
+ms.date: 11/08/2019
 ---
 
 # Azure DevOps Services extensibility points
 
-Extensions extend and enhance the Azure DevOps Services user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
+[!INCLUDE [version-vsts-tfs-2017-on](../../../boards/_shared/version-vsts-tfs-2017-on.md)]
+
+Extensions enhance the Azure DevOps Services user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
 
 >[!NOTE]
->To learn more about the Azure DevOps Services extensibility model, see [contribution model](../../develop/contributions-overview.md) for an overview.
+>To learn more about the Azure DevOps Services extensibility model, see the [Contribution model](../../develop/contributions-overview.md) for an overview.
 
 ## Other useful references
 
-The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
+The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension. Install this extension into your organization. Once it's installed, you see the extensibility points that are available. We recommend you install this extension into a personal or test organization. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available. 
 Also, find a sample of a repository creation extension point in this [GitHub pull request](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fazure-devops-extension-sample%2Fpull%2F18&data=02%7C01%7CChrystal.Comley%40microsoft.com%7C35f725d23dab4d086a3008d706321990%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636984684551848254&sdata=%2F%2FPWFMtU3KXulFgMJfu%2FXAihRJ7QT18IOD7C7IajPfo%3D&reserved=0).
 </div>
 
@@ -31,10 +33,6 @@ Also, find a sample of a repository creation extension point in this [GitHub pul
 
 Hubs and hub groups are the primary navigation elements in Azure DevOps Services. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the organization (also known as a collection) level or the project level, but most extensions contribute to the project level.
 
-Extensions can contribute both hubs and hub groups. A common extensibility scenario is to contribute a hub to an existing hub group. For example:
-
-![sources hub](./vss/code/web/_img/hubs-source.png)
-
 ### Targetable hub groups
 
 <a name="targets"></a>
@@ -43,12 +41,12 @@ Here are the most common, Microsoft-provided hub groups that hubs can be contrib
 
 Name                | ID                                         | Level                           | Preview
 --------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sources hub](./vss/code/web/_img/hubs-source.png)
-Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![work hub](./vss/work/web/_img/hubs-workitems.png)
-Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
-Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
-Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](./vss/web/_img/hubs-admin-project.png) 
-Account settings  | `ms.vss-web.collection-admin-hub-group`    | Account (or collection)      | ![project admin](./vss/web/_img/hubs-admin-collection.png) 
+Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![azure repos](./vss/code/web/_img/azure-repos.png)
+Boards               | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![azure boards](./vss/work/web/_img/azure-boards.png)
+Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![azure pipelines](./vss/build/web/_img/azure-pipelines.png)
+Test Plans                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![test plans](./vss/test/web/_img/azure-test-plans.png)
+Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](vss/test/web/_img/project-settings.png)
+Organization settings  | `ms.vss-web.collection-admin-hub-group`    | Organization (or collection)      | ![organization admin](vss/test/web/_img/organization-settings.png)
 
 
 ### Example
@@ -86,18 +84,19 @@ See [how to add an action](../../develop/add-action.md) for details on contribut
 
 <a name="menus_admin"></a>
 
-### Settings
+### Organization settings
 
 Name                              | Target ID                                           | Preview 
 ----------------------------------|-----------------------------------------------------|-------------------
-Account (collection) overview toolbar       | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
+Organization (collection) overview toolbar       | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
 Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               | 
 Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
 Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
 
 <a name="menus_build"></a>
+<a name="menu_release"></a>
 
-### Build
+### Azure Pipelines
 
 Name                      | Target ID                                   | Preview 
 --------------------------|---------------------------------------------|-------------------
@@ -105,22 +104,16 @@ Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![comp
 Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
 Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../_img/extension_test_custom_action.png)
 Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../_img/extension_test_custom_tab.jpg)
-
-<a name="menu_release"></a>
-
-### Release
-
-Name                                     | Target ID                                                              | Preview 
------------------------------------------|-------------------------------------------------------------------------|-------------------
 Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/_img/definitionExplorerContextMenu.png)
 Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/_img/definitionExplorerToolbarMenu.png)
 Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/_img/releaseSummaryToolbarMenu.png)
 Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/_img/releaseSummaryTab.png)
 Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![releaseSummarySection](./vss/release/web/_img/releaseSummarySection.png)
 
+
 <a name="menus_code"></a>
 
-### Code
+### Azure Repos
 
 Name                                | Target ID                                        | Preview 
 ------------------------------------|--------------------------------------------------|-------------------
@@ -138,7 +131,7 @@ Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu` 
 
 <a name="menus_test"></a>
 
-### Test
+### Test Plans
 
 Name                       | Target ID                                   | Preview 
 ---------------------------|---------------------------------------------|-------------------
@@ -150,7 +143,7 @@ Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![tes
 
 <a name="menus_work"></a>
 
-### Work
+### Azure Boards
 
 Name                            | Target ID                                         | Preview 
 --------------------------------|---------------------------------------------------|-------------------
@@ -184,7 +177,7 @@ The work item form is enhanced by extensions with new sections, tabs, actions, a
 
 <a name="buildtasks"></a>
 
-## Build and release tasks
+## Azure Pipelines tasks
 
 Tasks perform work in a build or release. For more information, learn how to [contribute a build or release task](../../develop/add-build-task.md).
 
