@@ -6,10 +6,10 @@ ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/04/2016
 ---
 
@@ -34,7 +34,7 @@ Select the consumer that you want to use in your subscription from the following
 Provides integration with Microsoft Azure Service Bus, including Notification Hubs.
 
 ### Send a message to a Notification Hub
-This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](http://go.microsoft.com/fwlink/?LinkID=392636).
+This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusNotificationHubSend**
@@ -57,7 +57,7 @@ This action sends a generic, template notification to the specified Azure Notifi
     * Required: **No**
 
 ### Send a message to a Service Bus Queue
-This action sends a JSON string representation of the event to the specified Azure Service Bus queue. [Learn more](http://go.microsoft.com/fwlink/?LinkID=392636).
+This action sends a JSON string representation of the event to the specified Azure Service Bus queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusQueueSend**
@@ -90,7 +90,7 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **No**
 
 ### Send a message to a Service Bus Topic
-This action sends a JSON string representation of the event to the specified Azure Service Bus topic. [Learn more](http://go.microsoft.com/fwlink/?LinkID=392636).
+This action sends a JSON string representation of the event to the specified Azure Service Bus topic. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusTopicSend**
@@ -127,7 +127,7 @@ This action sends a JSON string representation of the event to the specified Azu
 Provides integration with Microsoft Azure Storage.
 
 ### Insert a message in a Storage Queue
-This action inserts a JSON string representation of the event to the specified Azure storage queue. [Learn more](http://go.microsoft.com/fwlink/?LinkID=390532).
+This action inserts a JSON string representation of the event to the specified Azure storage queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390532).
 
 * Consumer ID: **azureStorageQueue**
 * Action ID: **enqueue**
@@ -179,7 +179,7 @@ This action inserts a JSON string representation of the event to the specified A
 Campfire is like instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
-Post a message about the event to a room in Campfire. [Learn more](http://go.microsoft.com/fwlink/?LinkID=393613).
+Post a message about the event to a room in Campfire. [Learn more](https://go.microsoft.com/fwlink/?LinkID=393613).
 
 * Consumer ID: **campfire**
 * Action ID: **postMessageToRoom**
@@ -211,7 +211,7 @@ Post a message about the event to a room in Campfire. [Learn more](http://go.mic
 Flowdock is chat and inbox for teams.
 
 ### Post a message to a team chat
-Post a message about the event to a team chat in Flowdock. [Learn more](http://go.microsoft.com/fwlink/?LinkId=392098).
+Post a message about the event to a team chat in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToChat**
@@ -244,7 +244,7 @@ Post a message about the event to a team chat in Flowdock. [Learn more](http://g
     * Required: **No**
 
 ### Post a message to a team inbox
-Post a message about the event to a team inbox in Flowdock. [Learn more](http://go.microsoft.com/fwlink/?LinkId=392098).
+Post a message about the event to a team inbox in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToTeamInbox**
@@ -301,7 +301,7 @@ Post a message about the event to a team inbox in Flowdock. [Learn more](http://
 HipChat provides group instant messaging for companies and teams.
 
 ### Post a message to a room
-Post a message about the event to a room in HipChat. [Learn more](http://go.microsoft.com/fwlink/?LinkId=392098).
+Post a message about the event to a room in HipChat. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
 
 * Consumer ID: **hipChat**
 * Action ID: **postMessageToRoom**
@@ -430,14 +430,14 @@ Posts an event to a Kato room
 Provides integration with Trello.
 
 ### Create a card
-This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. [Learn more](http://go.microsoft.com/fwlink/?LinkID=390530).
+This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
 
 * Consumer ID: **trello**
 * Action ID: **createCard**
 * Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
 * Settings:
   * **userToken**
-    * User token (need one? [Get it now](http://go.microsoft.com/fwlink/?LinkID=390580).)
+    * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
     * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
@@ -463,14 +463,14 @@ This action creates a card on an existing list in Trello. A card can represent a
     * Required: **No**
 
 ### Create a list
-This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. [Learn more](http://go.microsoft.com/fwlink/?LinkID=390530).
+This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
 
 * Consumer ID: **trello**
 * Action ID: **createList**
 * Supported events: **build.complete, git.push, tfvc.checkin, workitem.created, workitem.commented, workitem.updated**
 * Settings:
   * **userToken**
-    * User token (need one? [Get it now](http://go.microsoft.com/fwlink/?LinkID=390580).)
+    * User token (need one? [Get it now](https://go.microsoft.com/fwlink/?LinkID=390580).)
     * Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.
     * Data type: **string**
     * Required: **Yes**
@@ -490,7 +490,7 @@ This action creates a list on an existing board in Trello. A list is used to org
 Provides event communication via HTTP.
 
 ### Post via HTTP
-This action posts a JSON object representation of the event to the specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. [Learn more](http://go.microsoft.com/fwlink/?LinkID=390531).
+This action posts a JSON object representation of the event to the specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390531).
 
 * Consumer ID: **webHooks**
 * Action ID: **httpRequest**

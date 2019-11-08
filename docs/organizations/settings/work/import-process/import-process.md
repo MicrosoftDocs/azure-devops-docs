@@ -5,7 +5,7 @@ description: Add or update a process by importing a process to support customiza
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

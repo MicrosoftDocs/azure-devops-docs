@@ -6,7 +6,7 @@ description: Learn how to add, run, and quickly update manual test cases
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 04/23/2019
@@ -14,7 +14,7 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-# Add, run, and update inline tests
+# Quickstart: Add, run, and update inline tests
 
 [!INCLUDE [version-tfs-2017-through-vsts](../_shared/version-tfs-2017-through-vsts.md)]
 

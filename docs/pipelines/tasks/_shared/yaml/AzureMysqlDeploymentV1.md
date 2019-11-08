@@ -1,6 +1,6 @@
 ```YAML
-# Azure Database for MySQL Deployment
-# Run your scripts and make changes to your Azure Database for MySQL.
+# Azure Database for MySQL deployment
+# Run your scripts and make changes to your Azure Database for MySQL
 - task: AzureMysqlDeployment@1
   inputs:
     azureSubscription: 

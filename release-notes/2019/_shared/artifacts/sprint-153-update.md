@@ -25,4 +25,4 @@ By using package search, you can:
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/153_08.png)
 
-You can learn more about package search [here](https://docs.microsoft.com/en-us/azure/devops/project/search/package-search?view=azure-devops).
+You can learn more about package search [here](https://docs.microsoft.com/azure/devops/project/search/package-search?view=azure-devops).

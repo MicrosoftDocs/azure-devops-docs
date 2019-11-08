@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference
 monikerRange: '>= tfs-2013'
@@ -15,13 +15,8 @@ ms.date: 11/19/2018
 ---
 
 
-::: moniker range=">= azure-devops-2019" 
-# Keyboard shortcuts for work item forms and the Work Items page
-::: moniker-end  
-
-::: moniker range="<= tfs-2018"  
 # Keyboard shortcuts for work item forms 
-::: moniker-end  
+  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
 
@@ -29,6 +24,7 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Boards>Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]

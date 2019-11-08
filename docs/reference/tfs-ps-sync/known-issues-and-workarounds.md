@@ -5,8 +5,9 @@ description: Workaround known issues with the integration of Team Foundation Ser
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 45423e0a-63f7-4fc4-8319-9344a43abed3
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
@@ -20,7 +21,7 @@ ms.date: 01/12/2017
  You can resolve most issues by performing the recommended actions.  
   
 > [!NOTE]
->  For more information, see the following forum post on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
+>  For more information, see the following forum post on the Microsoft website: [Team Foundation Server and Project Server Integration](https://go.microsoft.com/fwlink/?LinkId=207282).  
   
 ##  <a name="summary"></a> Summary tasks with mapped child tasks are not updated in the project plan  
  By design, Team Foundation Server (TFS) does not update the Project fields for summary tasks, that is, tasks that have subtasks that are mapped to work items in TFS. The synchronization process skips updates of summary tasks because the project plan calculates the work on summary tasks. Changes to non-work fields, such as Title, are also not updated for summary tasks. This behavior is a known limitation of the integration of the two server products.  
@@ -49,7 +50,7 @@ ms.date: 01/12/2017
 |TF291011: An unsupported field type '{0}' is assigned to Project Server field: '{1}'.|When you map a field in Team Foundation to a field in Project Server, the data types of those fields must conform to the field mapping criteria. For more information, see [Data Types and Field Mapping Criteria](restrictions-mapping-ps-fields.md#datatypes).|  
 |TF294003: Cannot access the following PWA instance: *pwaUrl*. Project Server returned this error: "The request failed with HTTP status 401: Unauthorized." Verify that the PWA instance exists, and that the necessary permissions have been granted to the service account for the project collection to access the PWA.|You must grant the service account for Team Foundation Server permissions to access the instance of PWA. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).|  
 |TF294026: The following work item field does not exist: Microsoft.VSTS.Scheduling.CompletedWork. Contact your administrator for Team Foundation Server to add this work item field.|This error might appear under the following conditions:<br /><br /> - You try to upload the default field mappings to a project collection that only contains projects that were created from the Visual Studio Scrum process template. This template does not contain the **Completed Work** or **Original Estimate** fields in Team Foundation fields. You must map these fields.<br /><br /> - You can resolve this error by downloading the contents of the default field mappings, deleting the unsupported mappings, and then uploading the modified field mappings. For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).|  
-|TF400651: Team Foundation Server cannot be integrated with the following project because it is a SharePoint Tasks List Project: {0}. Convert the project to an Enterprise Project or select a different project.|This message appears when the project plan has been configured as a SharePoint Tasks Lists Project. To resolve this issue, see [Change a SharePoint task list into an enterprise project](http://officepreview.microsoft.com/project-server-help/change-a-sharepoint-task-list-into-an-enterprise-project-HA102848144.aspx?CTT=5&origin=HA102848179).|  
+|TF400651: Team Foundation Server cannot be integrated with the following project because it is a SharePoint Tasks List Project: {0}. Convert the project to an Enterprise Project or select a different project.|This message appears when the project plan has been configured as a SharePoint Tasks Lists Project. To resolve this issue, see [Change a SharePoint task list into an enterprise project](https://officepreview.microsoft.com/project-server-help/change-a-sharepoint-task-list-into-an-enterprise-project-HA102848144.aspx?CTT=5&origin=HA102848179).|  
   
 ##  <a name="resourcenames"></a> Resource names cannot contain special characters  
  Several characters, such as square brackets or corner brackets, can cause problems when you synchronize user names between Active Directory and Project Server. For more information, see [Active Directory Resource Pool Synchronization (Project Server 2013)](https://technet.microsoft.com/library/jj819320.aspx).  
@@ -98,7 +99,7 @@ ms.date: 01/12/2017
   
 - A single static IP as the NLB front end with a name that is registered with the Domain Name Service (DNS).  
   
-  To work around this problem, you must set one of two registry keys. For more information, see the following page on the Microsoft website: [You receive error 401.1 when you browse a Web site that uses Integrated Authentication and is hosted on IIS 5.1 or a later version](http://go.microsoft.com/fwlink/?LinkId=207283).  
+  To work around this problem, you must set one of two registry keys. For more information, see the following page on the Microsoft website: [You receive error 401.1 when you browse a Web site that uses Integrated Authentication and is hosted on IIS 5.1 or a later version](https://go.microsoft.com/fwlink/?LinkId=207283).  
   
 ##  <a name="unsupportedconfig"></a> Multiple errors might occur when updating subprojects with the master project open  
  You can synchronize data between a project and an enterprise project plan that is a subproject. You cannot manage or update any data from a master project that contains mapped subprojects. You can have a master plan that includes subprojects that are mapped to Team Foundation Server, but the Team Foundation client add-in for Project Professional blocks editing of mapped subprojects from a master plan. Specifically, the add-in prevents you from modifying or deleting a task that is scheduled to synchronize with Team Foundation from the master plan  

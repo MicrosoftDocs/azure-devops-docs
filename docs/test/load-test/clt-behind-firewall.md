@@ -5,9 +5,9 @@ ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---

@@ -5,7 +5,7 @@ description: Edit Check-In Policies
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -24,8 +24,8 @@ Administrators of Team Foundation version control can add and edit check-in poli
 -   **Code Analysis**   Requires that code analysis is run before check-in.  
 -   **Work Items**   Requires that one or more work items are associated with the check-in.
 
->**Note:**  
->You can temporarily disable one or more policy types in **Source Control Settings**, on the** Check-in Policy** tab, by highlighting the policies and clicking **Disable**. To enable a disabled policy, highlight the disabled policy, and click **Enable**.
+> [!NOTE]
+> You can temporarily disable one or more policy types in **Source Control Settings**, on the** Check-in Policy** tab, by highlighting the policies and clicking **Disable**. To enable a disabled policy, highlight the disabled policy, and click **Enable**.
 
 **Required Permissions**  
 To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).

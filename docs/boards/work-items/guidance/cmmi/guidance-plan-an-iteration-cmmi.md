@@ -6,8 +6,9 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -58,6 +59,6 @@ Developing software in iterations means that you divide your work into increment
 ##  <a name="AdditionalResources"></a> Additional resources  
  For more information, see the following Web resources:  
   
- [Project Retrospectives: A Handbook for Team Reviews](http://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
+ [Project Retrospectives: A Handbook for Team Reviews](https://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
   
- [Agile Retrospectives: Making Good Teams Great](http://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.
+ [Agile Retrospectives: Making Good Teams Great](https://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.

@@ -6,7 +6,7 @@ ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -25,7 +25,7 @@ This is the second task in the four-task sequence to add reports to your team pr
 [![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 > [!IMPORTANT]
->**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json).
+>**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
 
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.  
@@ -73,7 +73,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 1. Verify that you have the following tools, configurations, and permissions. 
 
-	* If you haven't installed TFS power tools, [install them now](http://go.microsoft.com/fwlink/?LinkId=320602).  
+	* If you haven't installed TFS power tools, [install them now](https://go.microsoft.com/fwlink/?LinkId=320602).  
 	* If you haven't installed Visual Studio, [install a version of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.  
 	* If you aren't an administrator for the team project, [get added now](/azure/devops/server/admin/add-administrator-tfs).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
@@ -160,7 +160,7 @@ You can always check the names by opening the context menu for any report, choos
 **A:** For TFS 2015 and earlier versions, you can use **tfpt addprojectportal** command to add a project portal and Excel reports once you have [added a SharePoint web application](https://msdn.microsoft.com/library/ee805928.aspx) to your team project collection. 
 
 #### Q: Can I get these same reports using Azure DevOps Services?
-**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/powerbi/toc.json&bc=/azure/devops/report/powerbi/breadcrumb/toc.json).
+**A:** Not at this time. Uploading reports is only supported for an on-premises TFS. You can, however, [chart the results of a flat-list query](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
 
 #### Q: How do I customize a report?
 **A:** You can customize the reports you uploaded using [SQL Server Report Builder 2012](https://www.microsoft.com/download/details.aspx?id=29072). To learn more, see [Creating Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730837.aspx) and [Customizing Reports for Team Foundation Server 2010](https://msdn.microsoft.com/library/ff730838.aspx). Even though these articles are based on TFS 2010, they are valid for TFS 2013 and later versions. 
@@ -169,6 +169,6 @@ You can always check the names by opening the context menu for any report, choos
 **A:** See [Perspectives and measure groups provided in the Analysis Services cube for Visual Studio](https://msdn.microsoft.com/library/ms244710.aspx).
 
 #### Q: Where can I go if I have more questions?
-**A:** Search for an answer or post a question in the [Team Foundation Server - Reporting & Warehouse forum](http://go.microsoft.com/fwlink/?LinkId=95680).
+**A:** Search for an answer or post a question in the [Team Foundation Server - Reporting & Warehouse forum](https://go.microsoft.com/fwlink/?LinkId=95680).
 
 <!-- ENDSECTION -->

@@ -5,7 +5,7 @@ description: Use Excel to bulk add or modify work items-such as backlog items, t
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -46,7 +46,7 @@ In this article you'll learn:
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 
 - Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end  
@@ -94,21 +94,21 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
-0. From the New List dialog, choose **Input list**.  
+5. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+6.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-0.  Specify the titles of the work items you want to add and their work item type.
+7.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-0.  Publish your worksheet.
+8.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -118,7 +118,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-0.  Also, note how you can open a work item in the web portal to add more information.
+9.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 

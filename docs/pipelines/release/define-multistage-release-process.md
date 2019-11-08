@@ -6,7 +6,7 @@ ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 Azure Pipelines and Team Foundation Server (TFS) provide a highly

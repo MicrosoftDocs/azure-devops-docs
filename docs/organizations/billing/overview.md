@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/28/2019
@@ -29,22 +29,22 @@ During your first purchase for your organization, you're prompted to select the 
 The following links take you to the paid services that are offered by Microsoft:
 
  * [Buy Basic access for users](buy-basic-access-add-users.md)
- * [Buy Azure Test Plans](buy-basic-plus-test-plans.md)
+ * [Buy Azure Test Plans](buy-basic-access-add-users.md)
  * [Buy CI/CD](buy-more-build-vs.md)
- * [Sign up for Azure Artifacts](../../artifacts/sign-up-azure-artifacts.md)
+ * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
  * [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
 
 Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=azure-devops).
+To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
 
 ## Prerequisites
 
 Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
 
-* User has [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).

@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 9b2c7b3d-32d0-4ce1-8e17-ec9e8c3e451f
 ms.manager: jenp
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.date: 01/31/2018

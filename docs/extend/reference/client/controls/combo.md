@@ -4,18 +4,18 @@ description: Use the combo control to have an editable control with the drop dow
 ms.assetid: 830B76D7-FE6F-CE63-0689-7DA663207A51
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: article
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.date: 08/04/2016
+ms.date: 06/28/2019
 ---
 
 # Combo control
 
-See [Use combo](../../../develop/ui-controls/comboo.md) for basic usage and advanced samples.
+See [Use combo](../../../develop/ui-controls/comboo.md) for basic usage and advanced samples. For more information, see 
 
 ## Create a combo
 

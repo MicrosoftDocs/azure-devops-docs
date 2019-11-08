@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,21 +14,17 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/14/2019
 ---
 
-
-::: moniker range=">= azure-devops-2019"
-
 # Move, change, or delete work items 
 
 [!INCLUDE [temp](../_shared/azure-boards.md)]
 
-Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
+::: moniker range=">= azure-devops-2019"
 
+Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-
-# Delete or restore work items 
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
@@ -268,7 +264,7 @@ You can't change type, move work items, or delete/restore work items whose work 
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
 * To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
 * To delete or remove work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the <strong>Project Administrators **group or have the **Delete work items in this project</strong> permission set to **Allow**. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
+* To delete work items, you must be a member of the <strong>Project Administrators <strong>group or have the **Delete work items in this project</strong> permission set to **Allow</strong>. By default, for TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** set to **Not set**. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
@@ -357,20 +353,22 @@ By changing the **State** of a work item to <em>Removed</em>, you effectively re
 
 To cause removed items to not show up in queries, you must add a clause that filters on the **State** field. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. 
+> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 ::: moniker-end
 
 <a id="delete"> </a> 
 
-::: moniker range=">= azure-devops-2019"
-
 ## Delete work items  
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
+
+#### [Browser](#tab/browser/)
+
+::: moniker range=">= azure-devops-2019"
 
 1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
@@ -396,20 +394,14 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-
-## Delete work items 
- 
-::: moniker-end  
-
 ::: moniker range="tfs-2015"  
+
 > [!NOTE]  
 > The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-
-Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
@@ -437,6 +429,46 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 ::: moniker-end
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="= azure-devops"
+
+You can delete a work item with the [az boards work-item delete](/cli/azure/ext/azure-devops/boards/work-item#ext-azure-devops-az-boards-work-item-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+> [!NOTE] 
+> You can restore work items you **delete**, but cannot restore work items you choose to **destroy**.
+
+```CLI 
+az boards work-item delete --id
+                           [--destroy]
+                           [--org]
+                           [--project]
+                           [--yes] 
+``` 
+
+#### Parameters 
+
+- **id**: Required. The ID of the work item.
+- **destroy**: Optional. Permanently delete this work item.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Do not prompt for confirmation.
+
+#### Example 
+
+The following command permanently deletes the bug with the ID 864 and doesn't prompt you for confirmation.
+
+```CLI
+az boards work-item delete --id 864 --destroy --yes
+```
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 <a id="restore" />
 

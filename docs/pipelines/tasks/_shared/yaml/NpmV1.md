@@ -1,6 +1,6 @@
 ```YAML
 # npm
-# Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Package Management.
+# Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Azure Artifacts.
 - task: Npm@1
   inputs:
     #command: 'install' # Options: install, publish, custom

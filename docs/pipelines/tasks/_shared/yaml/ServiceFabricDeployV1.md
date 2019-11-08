@@ -1,6 +1,6 @@
 ```YAML
-# Service Fabric Application Deployment
-# Deploy a Service Fabric application to a cluster.
+# Service Fabric application deployment
+# Deploy an Azure Service Fabric application to a cluster
 - task: ServiceFabricDeploy@1
   inputs:
     applicationPackagePath: 

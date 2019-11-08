@@ -5,9 +5,9 @@ description: With deprecation of the WIT Client OM, you need to update your code
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2C636EA8-6A10-48C1-9620-F792915EBB65
-ms.manager: jillfra
-ms.author: dahellem
-author: DanHellem
+ms.manager: mijacobs
+ms.author: liho
+author: KathrynEE
 ms.topic: reference
 monikerRange: "azure-devops"
 ms.date: 08/29/2018
@@ -41,10 +41,6 @@ Any references to the latest versions of WIT Client OM will result in an obsolet
 ![warning message in Visual Studio](_img/wit-client-om-deprecation-vs.png)
 
 ## Q&A
-
-### How do I know what tools are running?
-
-If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and ensure they are aware of our deprecation plan.
 
 ### How do I fix my tools?
 

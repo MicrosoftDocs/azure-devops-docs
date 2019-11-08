@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '>= tfs-2013' 
 ms.date: 09/08/2017
@@ -187,7 +187,7 @@ When you add objects to a process template, you will want to make sure that you 
 - [Configure features after an upgrade](../configure-features-after-upgrade.md)  
 - [Process template plug-ins: Index to XML elements](process-template-plug-ins-xml-elements-index.md)
 - [XML element reference](../xml/xml-element-reference.md)  
-- [Forum: Team Foundation Server &mdash;Process Templates](http://go.microsoft.com/fwlink/?LinkId=216461)    
+- [Forum: Team Foundation Server &mdash;Process Templates](https://go.microsoft.com/fwlink/?LinkId=216461)    
   
 Sometimes third parties make available process templates that they've created. You may need to do extra work after a TFS upgrade when using a process template provided by a third-party as described [Customize your work tracking experience, Maintenance and upgrade implications (TFS)](../on-premises-xml-process-model.md#before-you-customize).
 

@@ -1,6 +1,6 @@
 ```YAML
-# Visual Studio Build
-# Build with MSBuild and set the Visual Studio version property.
+# Visual Studio build
+# Build with MSBuild and set the Visual Studio version property
 - task: VSBuild@1
   inputs:
     #solution: '**\*.sln' 

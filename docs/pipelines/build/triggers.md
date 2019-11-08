@@ -4,11 +4,11 @@ description: Learn about how you can specify CI, scheduled, gated, and other tri
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 06/19/2019
+ms.date: 09/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -27,8 +27,7 @@ On the Triggers tab, you specify the events that trigger the build. You can use 
 
 Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 YAML builds are configured by default with a CI trigger on all branches.
@@ -55,6 +54,7 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
+Note: you cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
 
 You can specify branches to include and exclude. For example:
 
@@ -75,9 +75,9 @@ In addition to specifying branch names in the `branches` lists, you can also con
 trigger:
   branches:
     include:
-      refs/tags/{tagname}
+      - refs/tags/{tagname}
     exclude:
-      refs/tags/{othertagname}
+      - refs/tags/{othertagname}
 ```
 
 If you don't specify any triggers, the default is as if you wrote:
@@ -91,30 +91,6 @@ trigger:
 
 >[!IMPORTANT]
 >When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-### Tags
-
-In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
-
-```yaml
-# specific branch build
-trigger:
-  tags:
-    include:
-    - v2.*
-    exclude:
-    - v2.0
-```
-
-If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 ### Batching CI builds
 
@@ -149,7 +125,37 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you also need to explicitly specify branches or tags to trigger on.
+When you specify paths, you also need to explicitly specify branches to trigger on. 
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### Tags
+
+In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
+
+```yaml
+# specific branch build
+trigger:
+  tags:
+    include:
+    - v2.*
+    exclude:
+    - v2.0
+```
+
+If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
+
+> [!NOTE]
+> If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
+
+> [!NOTE]
+> Triggering on tags is not currently supported for Bitbucket Cloud repos.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 ### Opting out of CI builds
 
@@ -194,8 +200,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select this trigger if you want the build to run whenever someone checks in code.
 
 ### Batch changes
@@ -212,11 +217,11 @@ If your repository is Git then you can specify the branches where you want to tr
 
 If your Git repo is in Azure Repos or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
- > **Tips:**
- * If you don't set path filters, then the root folder of the repo is implicitly included by default.
- * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
- * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
- * The order of path filters doesn't matter.
+> **Tips:**
+>  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
+>  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
 
 #### Example
 
@@ -240,21 +245,19 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ### TFVC Include
 
-Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](repository.md).
+Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings on the [Repository tab](../repos/index.md).
 
 ### CI trigger for a remote Git repo or Subversion
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
----
-
+* * *
 ## PR triggers
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches,
 or when changes are pushed to such a pull request.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
@@ -276,7 +279,13 @@ or when changes are pushed to such a pull request.
 ::: moniker range=">= azure-devops-2019"
 
 You can specify the target branches for your pull request builds.
-For example, to run pull request builds only for branches that target: `master` and `releases/*`:
+For example, to run pull request builds only for source branches in a PR that
+target `master` and `releases/*`, you can use the following `pr` trigger. 
+This configuration triggers a build upon creation of any pull request where the target branch 
+is set to the `master` or `releases/*` branches. 
+The pipeline also triggers once with any commit coming into the source branch when the target branch 
+is set to be `master` or `releases/*`, while the pull request is active.
+
 
 ```yaml
 pr:
@@ -288,7 +297,9 @@ PR triggers will fire for these branches once the pipeline YAML file has reached
 For example, if you add `master` in a topic branch, PRs to `master` will not start automatically building.
 When the changes from the topic branch are merged into `master`, then the trigger will be fully configured.
 
-If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all branches, as if you wrote:
+If no `pr` triggers appear in your YAML file, pull request builds are automatically enabled for all 
+branches, as if you wrote the following `pr` trigger. This configuration triggers a build when any 
+pull request is created, and when commits come into the source branch of any active pull request.
 
 ```yaml
 pr:
@@ -365,14 +376,17 @@ pr: none
 
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
+> [!NOTE]
+> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 ### GitHub, GitHub Enterprise Server, Subversion, and Bitbucket Cloud
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
@@ -394,8 +408,7 @@ If your Git repo is hosted in Azure Repos, there won't be a **Pull request valid
 
 Pull request triggers are not available for Other/external Git repos.
 
----
-
+* * *
 ::: moniker range="azure-devops"
 
 ### Trigger builds using GitHub pull request comments
@@ -406,9 +419,18 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 
 ## Scheduled triggers
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range="> azure-devops-2019"
+
+> [!IMPORTANT]
+> Scheduled triggers defined using the pipeline settings UI take precedence over YAML scheduled triggers.
+> 
+> If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, 
+> only the UI defined scheduled triggers are run. 
+> To run the YAML defined scheduled triggers in your YAML pipeline,
+> you must remove the scheduled triggers defined in the pipeline setting UI.
+> Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
+> scheduled triggers to start running.
 
 Scheduled triggers cause a build to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
@@ -449,12 +471,69 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
-The schedules are read and updated when the following events occur, and schedules get 
-added to the scheduling database for the current branch, if the branch criteria is satisfied.
+Scheduled triggers are evaluated for a branch when the following events occur.
 
-* The yaml file is created or updated
-* A pipeline is created or updated
-* A new branch is created
+* A pipeline is created.
+* A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
+* A new branch is created. 
+
+After one of these events occurs in a branch, any scheduled builds for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
+
+> [!IMPORTANT]
+> Scheduled builds for a branch are added only if the branch matches the branch filters for the 
+> scheduled triggers in the YAML file **in that particular branch**.
+
+### Example of scheduled triggers for multiple branches
+
+For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
+
+```yaml
+# YAML file in the master branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+Next, a new branch is created based off of `master`, named `new-feature`. The scheduled triggers from the YAML file in the new branch are read, and since there is no match for the `new-feature` branch, no changes are made to the scheduled builds, and the `new-feature` branch is not built using a scheduled trigger.
+
+If `new-feature` is added to the `branches` list and this change is pushed to the `new-feature` branch, the YAML file is read, and since `new-feature` is now in the branches list, a scheduled build is added for the `new-feature` branch.
+
+```yaml
+# YAML file in the new-feature-branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - new-feature
+```
+
+Now consider that a branch named `release` is created based off `master`, and then `release` is added to the branch filters in the YAML file in the `master` branch, but not in the newly created `release` branch.
+
+```yaml
+# YAML file in the release branch
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+
+# YAML file in the master branch with release added to the branches list
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+    - release
+```
+
+Because `release` was added to the branch filters in the `master` branch, but **not** to the branch filters in the `release` branch, the `release` branch won't be built on that schedule. Only when the `feature` branch is added to the branch filters in the YAML file **in the feature branch** will the scheduled build be added to the scheduler.
 
 ### Supported cron syntax
 
@@ -608,19 +687,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
-::: moniker range="> azure-devops-2019"
-
-> [!IMPORTANT]
-> Scheduled triggers are moving from the classic editor to YAML. 
-> Existing schedules defined in the classic editor will be honored, but
-> can't be updated, and new schedules can't be defined in the classic editor.
-> To update your existing classic editor schedules, migrate them to 
-> [YAML scheduled triggers](triggers.md?tabs=yaml#scheduled-triggers) 
-> and update them there. See [Migrating from the classic editor](triggers.md?tabs=yaml#migrating-from-the-classic-editor) for migration guidance.
-
-::: moniker-end
+#### [Classic](#tab/classic/)
 
 Select the days and times when you want to run the build.
 
@@ -695,13 +762,12 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker-end
 
----
-
+* * *
 <h2 id="gated">TFVC gated check-in</h2>
 
 If your code is in a [Team Foundation version control (TFVC)](../../repos/tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
-By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](repository.md).
+By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](../repos/index.md).
 
 Otherwise, you can clear this check box and specify the paths in the trigger.
 
@@ -725,7 +791,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 
 ### A few other things to know
 
-* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](repository.md).
+* Make sure the folders you include in your trigger are also included in your mappings on the [Repository tab](../repos/index.md).
 
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
@@ -785,7 +851,9 @@ Wildcards patterns allow `*` to match zero or more characters and `?` to match a
 For branches and tags, a wildcard may appear anywhere in the pattern.
 
 For paths, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
-You may not include `*` in the middle of a path filter, and you may not use `?`.
+
+> [!IMPORTANT]
+> You may **not** include `*` in the middle of a path filter, and you may not use `?`.
 
 ```yaml
 trigger:
@@ -811,7 +879,7 @@ trigger:
 
 ### How do I protect my Git codebase from build breaks?
 
-If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
+If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is also available for GitHub repos. See [About protected branches](https://help.github.com/en/articles/about-protected-branches).
 
 ::: moniker range="azure-devops"
 
@@ -833,6 +901,11 @@ Your organization goes dormant five minutes after the last user signed out of Az
 
 * For [CI triggers](#ci-triggers), the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
 * For [PR triggers](#pr-triggers), the YAML file that is in the source branch of the PR is evaluated to see if a PR build should be run.
+* For [Scheduled triggers](#scheduled-triggers), the YAML file that is in the branch is used to set the scheduled triggers for that branch.
+
+### My CI or PR trigger doesn't seem to fire
+
+Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
 
 ::: moniker-end
 
@@ -841,5 +914,6 @@ Your organization goes dormant five minutes after the last user signed out of Az
 ::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
+
 
 <!-- ENDSECTION -->

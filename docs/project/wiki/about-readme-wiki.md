@@ -1,35 +1,46 @@
 ---
-title: Search Wiki content defined in your team project
+title: Share information using a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: overview
 ms.date: 03/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range=">= azure-devops-2019"
 
 # About Wikis, READMEs, and Markdown
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
+::: moniker range=">= tfs-2018"
+
 To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within a team project Wiki, content you add to a dashboard, your team project README file, or other repository README file.  
 
 ::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+
+To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2018"
 
 ## Wiki
 
 Use your team project wiki to share information with other team members. When you provision a wiki from scratch, a new Git repository stores your Markdown files, images, attachments, and sequence of pages. This wiki supports collaborative editing of its content and structure.
+
+
+> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
 
 ::: moniker-end
 
@@ -112,15 +123,6 @@ There are significant differences between how you manage the content for a wiki 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-# About READMEs and Markdown
-
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
-
-To support your team or contributors to your project, use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your team project. You can use Markdown format within content you add to a dashboard, your team project README file, or other repository README file.  
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 

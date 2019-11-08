@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 04/12/2018
@@ -30,7 +30,7 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Install the extension
 
-To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type team. Find the Azure DevOps Services extension published by Microsoft and click the **Install** button. 
+To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type *azure repos*. Find the Azure Repos extension published by Microsoft and click the **Install** button. 
 
 Restart Visual Studio Code.
 

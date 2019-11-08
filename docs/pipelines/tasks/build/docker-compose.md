@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
-ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.manager: mijacobs
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---
@@ -19,8 +19,6 @@ monikerRange: '> tfs-2018'
 Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
 
-See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust for build and push](../../build/content-trust.md).
-
 ::: moniker range="> tfs-2018"
 
 ## Container registry types
@@ -29,7 +27,7 @@ See also [Docker Installer task](../tool/docker-installer.md) and [Content Trust
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.</td></tr>
+<tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a> to manually set up the connection.</td></tr>
 <tr><td><code>azureContainerRegistry</code><br/>(Azure container registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
 </table>
 
@@ -53,7 +51,7 @@ The **containerregistrytype** value is required when using any container registr
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td><td>(Required) [Docker registry service connection](../../library/service-endpoints.md).</td></tr>
+<tr><td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td><td>(Required) <a href="../../library/service-endpoints.md" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md)">Docker registry service connection</a>.</td></tr>
 </table>
 
 This YAML example specifies a container registry other than ACR where **Contoso**
@@ -75,7 +73,9 @@ is the name of the Docker registry service connection for the container registry
 <tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
 <tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
 <tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td></tr>
+<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the | operator in YAML to indicate that newlines should be preserved. <br/>Example: <pre>dockerComposeFileArgs: |
+    firstArg=$(firstArg)
+    secondArg=$(secondArg)</pre></td></tr>
 <tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
 <tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
 <tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>

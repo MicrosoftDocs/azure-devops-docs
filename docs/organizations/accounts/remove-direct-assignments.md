@@ -6,7 +6,7 @@ description: To manage a user's resources only by the groups that they're in, yo
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 04/26/2019

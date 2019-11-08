@@ -1,17 +1,17 @@
 ---
-title: Query by numeric field
+title: Query by numeric fields
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 10/03/2019
 ---
 
 # Query by numeric fields    
@@ -66,7 +66,6 @@ Items that are Active or Closed
 <td>
 <code>State <em> In </em> Active,Closed</code><br/></td>
 </tr>
-
 <tr>
 <td>
 Items in the Requirements category 
@@ -122,11 +121,23 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 ::: moniker-end
 
 
+<a id="undefined-value"/>
+
+## Undefined field value queries
+
+You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type User Stories whose Story Points field is blank.  
+
+> [!div class="mx-imgBorder"]  
+> ![Filter based on blank entries](_img/numeric/field-value-blank.png)
+
+To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
+
+
 <a id="effort"/>
 
 ## Effort or story point queries and charts  
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 
@@ -205,8 +216,10 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 > The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
-For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
+For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
+
+<a id="fields" />
 
 ## Fields used to estimate and track work
 
@@ -313,10 +326,10 @@ The following table describes the activity-based and numeric fields that you can
 </tbody>
 </table>
 
-**Notes:**
+#### Notes:
 
-1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
 3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 

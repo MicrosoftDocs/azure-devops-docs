@@ -6,10 +6,10 @@ ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/18/18
+ms.date: 12/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -75,9 +75,8 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
-   * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
-   * [How to create Azure Service Principal with a certificate using Azure PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
+   * [Use the portal to create an Azure Active Directory application and a service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use Azure PowerShell to create an Azure service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)   
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -122,7 +121,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).

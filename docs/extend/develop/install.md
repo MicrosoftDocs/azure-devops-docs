@@ -5,10 +5,10 @@ title: How to Install Your Extension | Extensions for Azure DevOps Services
 description: How to install your extension for Azure DevOps Services.
 ms.assetid: ab9c2c1f-a78d-4f97-9b7e-ae8eaef0a3ee
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -16,4 +16,4 @@ ms.date: 08/04/2016
 
 [!INCLUDE [Install](../_shared/procedures/install.md)]
 
-[!INCLUDE [ExtensionsTab](../_shared/extensions-tab.md)]
+

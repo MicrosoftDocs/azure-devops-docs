@@ -7,11 +7,12 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 10/17/2019
 ---
+
 
 # Best tool to add, update, and link work items 
 
@@ -36,12 +37,14 @@ If you want to make a single update to one work item, you can do that from withi
 - [Deleting the work item](../backlogs/remove-delete-work-items.md#delete-work-items) 
 
 **Additional supported tasks**: 
+
 - [Share information](../queries/share-plans.md)
 - [Copy the work item URL](../backlogs/copy-clone-work-items.md#copy-the-url)
 - [Capturing the work item to use as a template](../backlogs/work-item-template.md#capture)
 - [Updating fields of the work item by applying an existing template](../backlogs/work-item-template.md#apply) 
 
 ::: moniker range=">= azure-devops-2019" 
+
 ## Work Items  
 
 Use the [Work Items](view-add-work-items.md) page to quickly focus on work items of interest to you. 
@@ -54,7 +57,8 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 	- That you've recently viewed or updated
 	- That has been recently updated, completed, or created for the project. 
 
-**Additional supported tasks**: 
+#### Additional supported tasks: 
+
 - [Add a work item](view-add-work-items.md)  
 - [Restore work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items)  
 - [View work items through a mobile browser](../..//project/navigation/mobile-work.md)
@@ -76,7 +80,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 - Quickly adding [product backlog](../boards/kanban-quickstart.md) and [portfolio backlog](../boards/kanban-epics-features-stories.md) items 
 - Updating the status of backlog items  
 - Adding linked child items ([task checklists](../boards/add-task-checklists.md), [user stories or features](../boards/kanban-epics-features-stories.md))  
-- [Filtering work items to focus on different views](../boards/filter-kanban-board.md) 
+- [Focusing the view based on assignment, tags, or other filter criteria](../boards/filter-kanban-board.md) 
 - Adding, running, and updating [inline test cases](../boards/add-run-update-tests.md))
 
 
@@ -109,6 +113,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Planning a sprint](../sprints/assign-work-sprint.md) 
 - [Forecasting work](../sprints/forecast.md) 
 - [Emailing a list of backlog items](email-work-items.md)
+- [Focusing the list based on assignment, tags, or other filter criteria](../backlogs/filter-backlogs.md) 
 
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 
@@ -119,7 +124,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 	- [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
 	- [Delete work items](../backlogs/remove-delete-work-items.md#delete)  
 - [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)  
-- [Monitoring team velocity](../../report/dashboards/velocity-chart-data-store.md)  
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
@@ -129,7 +134,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
  	- [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
 - [Creating a Git branch from one or more work items](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
-- [Monitoring team velocity](../../report/dashboards/velocity-chart-data-store.md) 
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"  
@@ -137,7 +142,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)
 - [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
 - [Restoring work items from the recycle bin](../backlogs/remove-delete-work-items.md#restore-work-items) 
-- [Monitoring team velocity](../../report/dashboards/velocity-chart-data-store.md)  
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md)  
 ::: moniker-end  
 
 
@@ -145,7 +150,7 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
 - [Assigning work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)  
 - [Adding or removing tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
-- [Monitoring team velocity](../../report/dashboards/velocity-chart-data-store.md) 
+- [Monitoring team velocity](../../report/dashboards/team-velocity.md) 
 ::: moniker-end
 
 
@@ -164,7 +169,7 @@ Sprint tools provide teams a focused view of work items they've assigned to a sp
 - [Emailing or sharing a sprint plan](../sprints/share-plan.md)
 
 **Additional supported tasks**: 
-- [Monitoring sprint burndown](../sprints/sprint-burndown.md)  
+- [Monitoring sprint burndown](../../report/dashboards/configure-sprint-burndown.md)  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
 
 
@@ -209,7 +214,6 @@ When you want to review the schedule of stories or features your teams plan to d
 <th width="30%">Office application</th>
 <th width="70%">Best tool for:</th>
 </tr>
-
 <tr>
 <td><a href="../backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[**Excel**](../backlogs/office/bulk-add-modify-work-items-excel.md)"><strong>Excel</strong></a> </td>
 <td> 
@@ -219,7 +223,6 @@ When you want to review the schedule of stories or features your teams plan to d
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><a href="../backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[**Project**](../backlogs/office/create-your-backlog-tasks-using-project.md)"><strong>Project</strong></a> </td>
 <td>
@@ -230,7 +233,6 @@ When you want to review the schedule of stories or features your teams plan to d
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[**Storyboarding with PowerPoint**](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)"><strong>Storyboarding with PowerPoint</strong></a>   </td>
 <td> 
@@ -274,7 +276,6 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><a href="../../test/run-manual-tests.md" data-raw-source="[Test Runner](../../test/run-manual-tests.md)">Test Runner</a></td>
 <td> 
@@ -283,7 +284,6 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><a href="../../test/connected-mode-exploratory-testing.md" data-raw-source="[Test &amp; Feedback extension](../../test/connected-mode-exploratory-testing.md)">Test &amp; Feedback extension</a> </td>
 <td> 
@@ -376,8 +376,6 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </table>
 
 
-
-
 ## Marketplace extensions 
 
 A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
@@ -395,7 +393,8 @@ Provides you access to these additional tools through the Team Explorer plug-in 
 
 ## Related articles 
 
+- [Set up your Backlogs and Boards](../backlogs/set-up-your-backlog.md)  
 - [Navigate in the web portal](../../project/navigation/index.md)
 - [Navigate in Team Explorer](../../user-guide/work-team-explorer.md)
-- [Configure a Burndown or Burnup widget](../..//report/dashboards/configure-burndown-burnup-widgets.md)
+- [Why use Azure Boards?](../get-started/why-use-azure-boards.md)
 

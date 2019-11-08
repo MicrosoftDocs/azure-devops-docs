@@ -1,11 +1,11 @@
 ---
-title: Cloud-based Web Performance Test task
+title: Cloud-based Web Performance Test task (Deprecated)
 description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -24,7 +24,9 @@ The task generates load against an application URL
 using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -34,8 +36,11 @@ The agent must have the following capability:
 * Azure PowerShell
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -64,7 +69,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

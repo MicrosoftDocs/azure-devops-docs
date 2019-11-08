@@ -3,10 +3,10 @@ title: Azure DevOps Service Status Documentation
 description: Description of how Azure DevOps services status is monitored and available to users
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-new-user
 ms.assetid: 3F3BD90B-1D08-4C8F-9CDC-D4B806F65448
-ms.manager: jillfra
-ms.date: 06/14/2019
+ms.manager: mijacobs
+ms.date: 10/17/2019
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
@@ -83,7 +83,8 @@ You can use [the RSS feed](https://status.dev.azure.com/_rss) to subscribe and r
 
 For users who are looking to build an automated solution to monitor the infrastructure incidents, 
 we provide REST APIs to retrieve the current health status of each of the Azure DevOps services. 
-Stay tuned for more information. 
+
+[!INCLUDE [rest-api-docs-rollout](../_shared/rest-api-docs-rollout.md)] 
 
 ## Get Help
 

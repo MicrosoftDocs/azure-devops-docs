@@ -1,6 +1,6 @@
 ```YAML
-# Conda Environment
-# Create and activate a Conda environment.
+# Conda environment
+# Create and activate a Conda environment
 - task: CondaEnvironment@0
   inputs:
     environmentName: 

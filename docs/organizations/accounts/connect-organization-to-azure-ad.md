@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 05/30/2019
+ms.date: 10/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -41,6 +41,9 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
         ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 
     4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who is in the Azure DevOps organization and NOT in the Azure AD. For any user that you don't create an Azure AD email address, be prepared to invite these users as guests to the Azure AD in future steps.
+	
+> [!NOTE]
+> Ensure you're using Azure AD Public. Support for Azure AD Government is currently limited.
 
 ## Connect your organization to Azure AD
 
@@ -112,11 +115,34 @@ When you inform your users of the completed change, include the following tasks 
 - [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity if you don't want to be prompted to choose between accounts.
 - [Manage your Visual Studio with MSDN subscription](/visualstudio/subscriptions/manage-vs-subscriptions), if you used a Microsoft account to sign up for Azure DevOps. Link work or school accounts to this subscription.
 
+## Manage multiple organizations backed by Azure AD
+
+## Get list of organizations
+
+You can download a complete list of organizations backed by an Azure Active Directory tenant. 
+The following details are included:
+- organization IDs
+- organization names
+- organization URLs
+- organization owners
+
+For any of the organizations backed by your directory, complete the following steps.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Azure Active Directory**, and then **Download**.
+
+   :::image type="content" source="_img/_shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
+
 ## Related articles
 
 * [Disconnect from Azure AD](disconnect-organization-from-azure-ad.md)
 * [Change Azure AD connection](change-azure-ad-connection.md)
-* [Enforce conditional access policies](manage-conditional-access.md)
+* [Enforce Conditional Access policies](manage-conditional-access.md)
 * [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
 
 

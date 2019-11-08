@@ -33,7 +33,7 @@ You can also abbreviate the `/AzurePipelines` moniker as `/azp`. For more detail
 
 ### Limit pull request validation builds to authorized team members
 
-It's a good practice to protect the quality of a branch by implementing [pull request validation builds](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azdevops#pull-request-validation). Until now, those validation builds were triggered automatically by any GitHub pull request, which could be risky since the build would start without your review.
+It's a good practice to protect the quality of a branch by implementing [pull request validation builds](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azdevops#pull-request-validation). Until now, those validation builds were triggered automatically by any GitHub pull request, which could be risky since the build would start without your review.
 
 With this update, you can require pull request validation builds to be authorized by your team. To do so, select the Triggers tab in your pipeline's settings. Then, under Pull request validation, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline.
 

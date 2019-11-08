@@ -6,7 +6,7 @@ ms.date: 10/30/2017
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 description: Visual Studio Team Services (VSTS) release notes for Sprint 125 Update on October 30, 2017.
 ---
 
@@ -36,7 +36,7 @@ The **Column options** dialog used to configure the columns of the work item gri
 
 ### Added support for Not In query operator
 
-Fields that support the “In” [query operator](/azure/devops/work/track/query-operators-variables#query-operators) now support “Not In”. Write queries for work items “Not In” a list of IDs, “Not In” a list of states, and much more, all without having to create many nested “Or” clauses. This feature was prioritized based on a [customer suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2772233--not-in-operator-for-work-item-queries). Keep submitting those ideas and voting up those most important to you.
+Fields that support the “In” [query operator](/azure/devops/work/track/query-operators-variables#query-operators) now support “Not In”. Write queries for work items “Not In” a list of IDs, “Not In” a list of states, and much more, all without having to create many nested “Or” clauses. This feature was prioritized based on a [customer suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2772233--not-in-operator-for-work-item-queries). Keep submitting those ideas and voting up those most important to you.
 
 > [!div class="mx-imgBorder"]
 > ![Not In query operator](_img/125_02.png)
@@ -130,7 +130,7 @@ You can now adorn projects with important keywords (tags). Tags are easily added
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

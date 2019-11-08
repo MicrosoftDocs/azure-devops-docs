@@ -6,19 +6,21 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/15/2019
+ms.date: 10/14/2019
 ---
 
 # About Sprints, Scrum and project management 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-The Scrum method uses Iteration Paths, also referred to as sprints, to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
+Your Sprints tools includes a filtered backlog based on an Iteration Path, and a similarly filtered Taskboard. These tools are useful for implementing Scrum practices. With Scrum, you can schedule and plan sprints, update your taskboard, and monitor your sprint burndown. 
+
+Scrum methods use Iteration Paths, also referred to as sprints, to plan work to be performed by a team within a specific time period and cadence. To get started, several sprints are predefined for your team. If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum).  
 
 
 [!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
@@ -50,7 +52,7 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 4. [Adjust work to fit sprint capacity](adjust-work.md)  
 5. (Optional) [Share your sprint plan](share-plan.md)  
 6. [Update the Taskboard](task-board.md) 
-7. [Monitor your sprint burndown](sprint-burndown.md) 
+7. [Monitor your sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
 
 
 ## Sprint backlogs and taskboards
@@ -87,6 +89,9 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)
 
+	> [!NOTE]   
+	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
+
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
 1. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
@@ -114,12 +119,12 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ::: moniker-end  
 
+[!INCLUDE [temp](../_shared/velocity-section.md)]
 
 ## Try this next
 
 > [!div class="nextstepaction"]
 > [Schedule sprints](define-sprints.md) 
-
 
 ## Related articles 
 
@@ -127,7 +132,8 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About work items](../work-items/about-work-items.md)  
-
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development) 
  
 
 

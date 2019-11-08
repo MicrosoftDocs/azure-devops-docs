@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -152,7 +152,7 @@ Use the following guidance and that provided for [fields used in common across w
         <a href="../../queries/query-numeric.md" data-raw-source="[Size](../../queries/query-numeric.md)">Size</a> </p>
     </td>
     <td>
-      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity charts](../../../report/dashboards/velocity-chart-data-store.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p>
+      <p>Estimate the amount of work required to complete a requirement using any numeric unit of measurement your team prefers. </p><p> By defining the <strong>Size</strong> for requirements, teams can use the Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools to estimate future iterations or work efforts. The Kanban <a href="../../boards/kanban-basics.md" data-raw-source="[Cumulative Flow Diagram](../../boards/kanban-basics.md)">Cumulative Flow Diagram</a> references the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p>
     </td>
   </tr>
 <tr>
@@ -189,7 +189,6 @@ Use the following guidance and that provided for [fields used in common across w
         </li>
       </ul>
       <p>
-        
       </p>
     </td>
   </tr>
@@ -374,7 +373,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 <tr>
 <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
 <td>
-<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the <a href="https://msdn.microsoft.com/library/ff731588.aspx" data-raw-source="[Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
+<p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the <a href="https://msdn.microsoft.com/library/ff731588.aspx" data-raw-source="[Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx)">Sprint Burndown</a> report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
 </td>
 </tr>
 <tr>

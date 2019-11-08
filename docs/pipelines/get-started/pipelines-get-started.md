@@ -5,37 +5,20 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 4/8/2019
 monikerRange: '>= tfs-2015'
 ---
 
-::: moniker range="azure-devops"
-
 # Use Azure Pipelines
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-# Use Azure DevOps Server Pipelines
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-# Use build and release
-
-::: moniker-end
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
 You define your pipeline mostly in code in a YAML file alongside the rest of the code for your app. 
@@ -63,8 +46,7 @@ YAML pipelines aren't available in TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 You create and configure your build and release pipelines in the web portal with the classic editor.
 When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
 
@@ -77,7 +59,7 @@ The basic steps are these:
 6. Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 ![Pipelines designer intro image](../_img/pipelines-image-designer.png)
-    
+
 [Create your first pipeline](../create-first-pipeline.md).
 
----
+* * *

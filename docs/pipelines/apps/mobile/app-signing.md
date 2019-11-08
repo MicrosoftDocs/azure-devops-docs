@@ -6,9 +6,9 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2018'

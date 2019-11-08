@@ -5,7 +5,7 @@ description: Choose between HTTPS, SSH, personal access tokens, and alternate cr
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -72,7 +72,7 @@ Learn more about [setting up SSH with Azure DevOps Services](use-ssh-keys-to-aut
 >[!IMPORTANT]
 > - Use of alternate credentials is not recommended.
 > - Alternate credentials are not supported on TFS.
-> - The username specified for the alternate credentials must be unique across Azure DevOps Services and can't be reused.
+> - The username specified for the alternate credentials must be unique within that user's Azure DevOps organization, and can't be reused more than once per organization.
 
 Create an alternate user name and password to access your Git repository using alternate credentials.
 Unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your Azure DevOps Services data.

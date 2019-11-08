@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -36,7 +36,7 @@ Detailed issue logs are available under the build artifact tab of the build summ
 > [!div class="mx-imgBorder"]
 > ![Build summary details for artifacts](_img/details-in-artifacts.png)
 
-PDM, CheckStyle and FindBugs support for Maven and Gradle is currently available in Azure DevOps Services  or TFS 2017 Update 1 or later.
+PMD, CheckStyle and FindBugs support for Maven and Gradle is currently available in Azure DevOps Services or TFS 2017 Update 1 or later.
 
 ## Next Steps
 

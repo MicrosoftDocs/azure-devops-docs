@@ -2,11 +2,8 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Get Started
+  - name: Get started
     tocHref: /azure/devops/user-guide/
     topicHref: /azure/devops/get-started/index
-    items: 
-    - name: Start using Azure DevOps
-      tocHref: /azure/devops/user-guide/
-      topicHref: /azure/devops/user-guide/index
+
 

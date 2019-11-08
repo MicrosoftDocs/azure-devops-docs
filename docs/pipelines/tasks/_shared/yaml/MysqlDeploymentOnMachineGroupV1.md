@@ -1,6 +1,6 @@
 ```YAML
-# MySQL Database Deploy
-# This is an early preview. Run your scripts and make changes to your MySQL Database.
+# MySQL database deploy
+# Run scripts and make changes to a MySQL Database
 - task: MysqlDeploymentOnMachineGroup@1
   inputs:
     #taskNameSelector: 'SqlTaskFile' # Optional. Options: sqlTaskFile, inlineSqlTask

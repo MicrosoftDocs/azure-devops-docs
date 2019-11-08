@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Capacity | REST API Reference for Team Foundation Server
 description: Work with capacity programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: bfcad439-f8a2-4a73-9276-485fdf01aaaf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
