@@ -48,6 +48,10 @@
     href: export-users-audit-log.md   
   - name: Set permissions for an object or role
     items: 
+    - name: Set work tracking and plan permissions 
+      href: set-permissions-access-work-tracking.md
+    - name: Set permissions and access for manual testing
+      href: set-permissions-access-test.md
     - name: Set dashboard permissions
       href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set Git branch permissions
@@ -60,8 +64,6 @@
       href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set Wiki permissions
       href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Set work tracking and plan permissions 
-      href: set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set feedback permissions
       href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set permissions to manage extensions
