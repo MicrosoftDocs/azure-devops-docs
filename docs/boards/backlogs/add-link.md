@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -139,7 +139,6 @@ If you are working from the Query Results page, you'll need to bulk save the wor
 
 
 #### [Visual Studio](#tab/visual-studio/)
-
 From the Add link to Multiple Items dialog, select the link type, enter a work item ID, and then click OK. 
 
 For example, here we use the Related link type to link several items to the user story with ID of *4654*. 
@@ -151,7 +150,6 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 You'll need to bulk save the work items you've modified. 
 
 * * *
-
 ## Link to a new work item   
 
 Here, we have selected to add a link to the selected work items.  
@@ -164,12 +162,12 @@ Here, we have selected to add a link to the selected work items.
     <img src="_img/bulk-modify-link-new-ts.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" />
     ::: moniker-end
 
-1. A work item of the type selected opens. Enter additional information and save the work item.
+2. A work item of the type selected opens. Enter additional information and save the work item.
     ::: moniker range=">= tfs-2017"
     > [!div class="mx-imgBorder"]  
     > ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
     ::: moniker-end
-1. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
+3. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
 
 
@@ -249,9 +247,8 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
      Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
-    <!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
-
-        To expand or collapse a tree view list, choose the + or signs.    
+    <!-- You can change the display of the work items that are listed by using one of the following user interface controls:  
+      To expand or collapse a tree view list, choose the + or signs.    
       To resize a column, point your cursor at the edge of a column header and drag it to a new location.    
       To sort on a column field, choose the column title.    
       To move a column field, choose the column title and drag to another location. -->  

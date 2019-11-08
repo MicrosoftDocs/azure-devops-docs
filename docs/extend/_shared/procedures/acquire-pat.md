@@ -20,14 +20,14 @@ This is required because the Visual Studio Marketplace
 publishing APIs work outside the context of an organization.
 
 1. Select the **Marketplace (publish)** scope. 
-This will limit the token to only being able 
-to publish extensions to the Visual Studio Marketplace.
+This limits the token to only being able 
+to publish extensions to the Marketplace.
 
    <img alt="Marketplace scope" src="/azure/devops/extend/_shared/procedures/_img/create-pat/marketplace-scope.png" style="border: 1px solid #CCCCCC" />
        
 1. Finish creating your token. 
     
-1. Copy your generated personal access token. 
+2. Copy your generated personal access token. 
 Make sure to keep it secret.
 
    <img alt="Copy personal access token" src="/azure/devops/extend/_shared/procedures/_img/create-pat/copy-pat.png" style="border: 1px solid #CCCCCC" />

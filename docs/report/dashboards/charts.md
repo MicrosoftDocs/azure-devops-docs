@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -296,7 +296,7 @@ Also, from the web portal, you can view the following charts:
 
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
-- [Sprint burndown charts](../../boards/sprints/sprint-burndown.md)  
+- [View/configure sprint burndown](configure-sprint-burndown.md)  
 - [Test progress and test results](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
@@ -326,9 +326,19 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range=">= azure-devops-2019"
 
-### Widgets and the Analytics Service 
+### Widgets and Analytics data
 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../dashboards/analytics-widgets.md).  
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
+ 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Analytics is in preview and provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
  
 ::: moniker-end
 

@@ -130,7 +130,7 @@ The **Go** task helps you download dependencies, build, or test your application
 
 Now, gates can come in the form of an extension, which makes it easier for you&#8212;or extension authors&#8212;to integrate new or custom services and configure the gate.
 
-See the [authoring gate tasks](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) documentation for more information.
+See the [authoring gate tasks](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) documentation for more information.
 
 ## Package
 
@@ -217,7 +217,7 @@ When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

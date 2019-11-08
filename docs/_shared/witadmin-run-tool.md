@@ -13,6 +13,17 @@ To run the **witadmin** command-line tool, open a Command Prompt window where Vi
 > If you are connecting to an on-premises server, you must use the same or later version of Visual Studio or Team Explorer as Azure DevOps Server or TFS. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Team Explorer 2017. There is no Team Explorer 2015 version. 
   
 
+::: moniker range="azure-devops-2019"
+
+*Visual Studio 2019 or Team Explorer 2019 client:*
+
+`%programfiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`
+
+or, `TeamExplorer`, `Professional` or `Enterprise` in place of `Community`, depending on the version you've installed.  
+
+::: moniker-end
+
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 *Visual Studio 2017 or Team Explorer 2017 client:*

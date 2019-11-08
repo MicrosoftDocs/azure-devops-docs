@@ -1,5 +1,5 @@
 ```YAML
-# Conda Environment
+# Conda environment
 # This task is deprecated. Use `conda` directly in script to work with Anaconda environments.
 - task: CondaEnvironment@1
   inputs:

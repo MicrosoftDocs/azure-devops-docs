@@ -5,7 +5,7 @@ description: Learn about branch policies in Azure DevOps Services & TFS
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -35,9 +35,9 @@ Developers pushing changes directly to the protected branches will have their pu
 
 Keep your branch strategy simple by building your strategy from these three concepts:
 
-0. Use feature branches for all new features and bug fixes.
-1. Merge feature branches into the master branch using pull requests. 
-2. Keep a high quality, up-to-date master branch.  
+1. Use feature branches for all new features and bug fixes.
+2. Merge feature branches into the master branch using pull requests. 
+3. Keep a high quality, up-to-date master branch.  
 
 A strategy that extends these concepts and avoids contradictions will result in a version control workflow for your team that is consistent and easy to follow. 
 

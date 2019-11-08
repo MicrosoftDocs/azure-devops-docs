@@ -5,27 +5,26 @@ description: Add and manage work item templates to pre-populate fields in work i
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2019
+ms.date: 09/18/2019
 ---
 
 # Use templates to add and update work items 
 
 **Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015** 
 
-<!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
+<!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 For example usage of work item templates, see [Sample work item templates](../work-items/work-item-template-examples.md)
-
 
 
 ## Prerequisites  
@@ -47,6 +46,9 @@ For example usage of work item templates, see [Sample work item templates](../wo
 
 ::: moniker-end
 
+
+> [!NOTE]  
+> If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
 
 <a id="capture"> </a> 
 
@@ -72,11 +74,11 @@ The steps to capture a work item differ based on the platform, version, and clie
     > [!div class="mx-imgBorder"]  
     > ![Capture template dialog](_img/templates/capture-template-vsts-s136.png) 
 
-3. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
+3. Once you've saved the template, choose **Copy link** to capture the URL for the template. 
 
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
+4. You can paste the URL link into a browser to create a work item, or provide it to others for their use to add work items. For example, you can add it as a hyperlink to a [project wiki](../../project/wiki/wiki-create-repo.md), a [dashboard via a markdown widget](../../report/dashboards/add-markdown-to-dashboard.md), or other shared network resource.
 
-    You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink.  
+	Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
 ::: moniker-end  
 
@@ -130,7 +132,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
     ``` 
 
     > [!TIP]  
-    > The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there's a 2000 character limit recognized by browsers. There's no work around to that limit.   
+    > The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there is a 2000 character limit imposed by some browser clients with no work around.   
 
 4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
 
@@ -146,9 +148,6 @@ If you primarily work in Visual Studio or Team Explorer, and want to create work
 
 You create these files using Work Item Templates, a power tool for Visual Studio, which you can download from [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
-> [!NOTE]  
-> If you are working from Visual Studio 2019, the ability to capture and apply templates requires setting the Work Items page to the legacy experience. See [Set the Work Items experience in Visual Studio](../work-items/set-work-item-experience-vs.md).
-
 1.  Open or run a query that lists the work item whose fields you want to capture.
 
 2. Right-click the work item of the type and whose fields you want to capture, and select Capture Template from the context menu.
@@ -162,7 +161,6 @@ You create these files using Work Item Templates, a power tool for Visual Studio
 4. Save the template and it will appear in the root of the Team Explorer pane under the Templates section.  
 
 * * *
-
 <a id="add-wi"> </a>
 
 ## Add a work item using a template  
@@ -177,9 +175,7 @@ The main method for adding a work item using a template is to open the template 
 
 #### [Browser](#tab/browser/)
 
-1. Open settings for a team.  
-
-    Choose **Project Settings**.
+1. Go to **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
@@ -277,19 +273,19 @@ To learn more about the markdown widget see [Add Markdown to a dashboard, Markdo
 
 <a id="apply"> </a>
 
-## Apply a template to existing work item(s)  
+## Apply a template to new or existing work item(s)  
 
 You can apply a template to a single work item or perform a bulk update of several work items.  
 
 <a id="team-services-apply" />
 
-#### [Browser](#tab/browser)
+#### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"  
 
 ### Apply a template within a work item form 
 
-1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
+1. Open a new work item or an existing work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
     > [!div class="mx-imgBorder"]
     > ![Apply a template to an existing work item within the form](_img/templates/apply-template-vsts-s136.png) 
@@ -310,10 +306,12 @@ You can apply a template to a single work item or perform a bulk update of sever
 1. Open the work item that you want to update using the fields defined within a template, choose the ![ ](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
 
-    <img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
+~~~
+<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
 
-    > [!TIP]  
-    > Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
+> [!TIP]  
+> Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
+~~~
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
@@ -328,8 +326,8 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 2. Choose the template to apply. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
 
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
@@ -343,7 +341,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 2. Choose the template to apply. 
 
-	![Bulk update several work items](_img/wi-templates-bulk-update-list-vsts.png)
+    ![Bulk update several work items](_img/wi-templates-bulk-update-list-vsts.png)
 
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
@@ -356,8 +354,7 @@ The feature to apply a template to existing work items from the web browser isn'
 ::: moniker-end 
 
 
-#### [Visual Studio](#tab/visual-studio)
-
+#### [Visual Studio](#tab/visual-studio/)
 <a id="team-explorer-apply" />
 
 ### Apply a template to one or more work items  
@@ -379,14 +376,12 @@ The feature to apply a template to existing work items from the web browser isn'
 
     <img src="_img/wi-templates-apply-save-work-items-te.png" alt="Save changes from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
 
-* * * 
-
+* * *
 <a id="manage"> </a> 
 
 ## Manage work item templates
 
 #### [Browser](#tab/browser/)
-
 ::: moniker range=">= azure-devops-2019"
 
 You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
@@ -481,7 +476,6 @@ Managing work item templates from the web portal is only supported from TFS 2017
 ::: moniker-end
 
 #### [Visual Studio](#tab/visual-studio/)
-
 <a id="team-explorer-manage" />
 
 If Visual Studio with power tools installed, you can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template.   
@@ -519,7 +513,6 @@ To make frequently-used templates more accessible, you can set a default templat
 To change the directory where templates are stored, click the Configure link, or navigate to it via **Tools>Options>Microsoft Team Foundation Server>Work Item Templates**. Use this dialog to set your template store path. Place your templates in a network location to share them with your team.  
 
 * * *
-
 ::: moniker range=">= tfs-2017"
 
 ## Add or remove tags from templates 
@@ -543,12 +536,13 @@ You can specify a work item template that specifies several field values using t
 
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
 > [FieldReferenceName 1]={FieldValue 1}&
 > [FieldReferenceName 2]={FieldValue 2}&
 > [FieldReferenceName 3]={FieldValue 3}&
 > . . .
 > ```
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
@@ -570,7 +564,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker range="azure-devops"
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
 > [System.Title]=TaskTitle&
 > [System.AssignedTo]=Jamal+Hartnett&
 > [System.Description]=<p>Always+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.</p>&
@@ -596,7 +590,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker-end
 
 > [!TIP] 
-> There is a 2000 character limit recognized by browsers. 
+> There is a 2000 character limit imposed by some browser clients. 
 
 You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
 
@@ -606,7 +600,7 @@ You can save the URL as a text file or add the URL to a [dashboard](#markdown-wi
 
 ### Q: How do I set a default template for a team? 
 
-**A:** The feature to set a default template for a team isn't a supported at this time. 
+**A:** The feature to set a default template for a team isn't a supported feature at this time. 
 
 ::: moniker range="<= tfs-2015"
 From the Work Item Templates tool, you can set a default for each work item type. However, that default is set only for you and available only when working through Team Explorer. Open the template context menu and select **Set as default**. 
@@ -654,4 +648,4 @@ Or, you can use a Kanban board to add child tasks, backlog items, or features. T
 
 ## Related articles
 
-- [Sample work item templates ](../work-items/work-item-template-examples.md)
+- [Sample work item templates](../work-items/work-item-template-examples.md)

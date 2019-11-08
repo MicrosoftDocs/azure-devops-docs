@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 10/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -147,6 +147,10 @@ You can do this by adding your Microsoft account as a member to your Azure AD.
 A: You must be a member or have read access in those directories. Otherwise, you can add them
 [using B2B collaboration through your Azure AD administrator](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/). You can also add them by using their Microsoft accounts, or by creating new work accounts for them in your directory.
 
+### Q: What if I get an error trying to map a user to an existing member of my organization?
+
+A: You can map the user onto a different identity that isn't yet an active member of the organization or add the existing user to your Azure AD. If you still need to map to the existing Azure DevOps organization member, [contact support.](https://azure.microsoft.com/support/devops/)
+
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
 A: If you used a Microsoft account to activate a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes Azure DevOps as a benefit, you can add a work or school account. The account must be managed by Azure AD. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../../billing/link-msdn-subscription-to-organizational-account-vs.md).
@@ -198,6 +202,10 @@ A: When users are disabled or removed from your directory, they can no longer ac
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)
 - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
 
+### Q: How can I manage multiple organizations that are backed by Azure AD?
+
+A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Manage multiple organizations backed by Azure AD](connect-organization-to-azure-ad.md#manage-multiple-organizations-backed-by-azure-ad).
+
 <a name="connect-o365-azure-ad"></a>
 
 ### Q: Can I connect my organization to an Azure AD created from Office 365?
@@ -219,14 +227,18 @@ A: This might happen due to any of the following circumstances:
 
 ### Q: Why is my organization already connected to a directory? Can I change that directory?
 
-A: Your organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. You can [disconnect your organization](disconnect-organization-from-aad.md) from this directory, and [reconnect to another directory](connect-organization-to-azure-ad.md). You might have to migrate some users.
+A: Your organization was connected to a directory when the organization Owner created the organization, or sometime after that. When you create an organization with a work or school account, your organization is automatically connected to the directory that manages that work or school account. Yes, you can [switch directories](#switch-directory). You might have to migrate some users.
+
+<a name="switch-directory"></a>
+
+[!INCLUDE [qa-switch-directory-azure-ad](../../_shared/qa-switch-directory-azure-ad.md)]
 
 <a name="AlternateCredentials"></a>
 
 ### Q: My alternate credentials don't work anymore. What do I do?
 
 A: This happens after you connect your organization to a directory. 
-[Set up your credentials](http://support.microsoft.com/kb/2991274) again for the organization that you connected.
+[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 
@@ -289,11 +301,15 @@ Select the bolded text to see which users are affected.
 
 ### Q: What if I have over 100 users and want to connect to Azure AD?
 
-A: If you have more than 100 users, [contact support](https://azure.microsoft.com/support/devops/).
+A: If you have more than 100 users, you can still connect, however you may need to [contact support](https://azure.microsoft.com/support/devops/) for help with disconnected users.
 
 ### Q: I have more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
-A: Currently, the in-app feature doesn't support connections for organizations with over 100 members. Please [contact support](https://azure.microsoft.com/support/devops/).
+A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won’t work beyond 100. Please [contact support](https://azure.microsoft.com/support/devops/).
+
+### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
+
+A: The tenant cache needs to be cleared if you're using a GCM version prior to v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a login error like below. The GCM will automatically recreate and populate the cache file as needed on subsequent login attempts.
 
 <a name="get-support"></a>
 

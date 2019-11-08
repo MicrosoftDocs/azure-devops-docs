@@ -5,7 +5,7 @@ description: Use Git commit to save your work into Git version control with Visu
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -150,14 +150,14 @@ Amend your last commit to correct small errors without making a new commit.
 > Do not amend [pushed](pushing.md) commits. If you need to update pushed code, [undo the changes with revert](undo.md) or create and push another commit.
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
-1. Enter the updated commit message and select **Amend Previous Commit** from the **Actions** drop-down.   
+1. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
+2. Enter the updated commit message and select **Amend Previous Commit** from the **Actions** drop-down.   
 
     ![Amend a commit in Visual Studio](_img/vs_amend_commit.png)
 
 #### [Command Line](#tab/command-line/)
-0. Stage your changes using `git add` just as you would if you were creating a new commit.
-1. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
+1. Stage your changes using `git add` just as you would if you were creating a new commit.
+2. Use the `--amend` option to the `commit` command to update the most recent commit with the staged changes and updated description.
 
     ```
     git commit -m --amend "short descriptive message"

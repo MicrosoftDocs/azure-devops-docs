@@ -5,11 +5,11 @@ description: Configure teams to support portfolio backlogs to track progress acr
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 10/28/2019
 ---
 
 # Configure a hierarchy of teams
@@ -56,10 +56,9 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-    > [!div class="mx-imgBorder"]
-    > ![Open Code, new nav](../../organizations/settings/_img/add-team/open-project-settings-teams-new-nav.png) 
+  ![Open Project settings, and then Teams](../../organizations/settings/_img/_shared/open-project-settings-team-new-nav.png)
 
-1. Choose **New team**. Give the team a name, and optionally a description. 
+2. Choose **New team**. Give the team a name, and optionally a description. 
 
     > [!div class="mx-imgBorder"]
     > ![Create a sub-team with its own area path](../../organizations/settings/_img/add-team/create-new-team-new-nav.png)

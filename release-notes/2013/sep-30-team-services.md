@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Sep 30
 description: VSTS release notes for September 30 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 4f79eafa-0844-4cb4-acd0-18332d982205
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -41,12 +41,8 @@ Note: The grid view will only show test case work item fields - it will not show
 
 Tester, Configurations etc., which are associated with running tests.
 
-That’s it for this sprint 54. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 54. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 
 Jamie Cool
-
-
-
-

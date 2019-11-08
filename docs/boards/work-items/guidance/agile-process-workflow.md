@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -77,7 +77,7 @@ Use the following guidance and that provided for [fields used in common across w
 </td></tr>
 <tr>
     <td width="20%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Story Points](../../queries/query-numeric.md)">Story Points</a></p></td>
-    <td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile <a href="../../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity charts](../../../report/dashboards/velocity-chart-data-store.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p></td></tr>
+    <td><p>Estimate the amount of work required to complete a user story using any numeric unit of measurement your team prefers.</p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p></td></tr>
 <tr>
     <td><p><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a></p>
 </td>
@@ -160,7 +160,7 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 </tr>
 <tr>
     <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a></p></td>
-    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../../sprints/sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="https://msdn.microsoft.com/library/dd380678.aspx" data-raw-source="[Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx)">Burndown and Burn Rate</a>, <a href="https://msdn.microsoft.com/library/dd380673.aspx" data-raw-source="[Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx)">Remaining Work</a>, and <a href="https://msdn.microsoft.com/library/dd380706.aspx" data-raw-source="[Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
+    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../../sprints/set-capacity.md" data-raw-source="[capacity charts](../../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>, and the following (TFS only) reports: <a href="https://msdn.microsoft.com/library/dd380678.aspx" data-raw-source="[Burndown and Burn Rate](https://msdn.microsoft.com/library/dd380678.aspx)">Burndown and Burn Rate</a>, <a href="https://msdn.microsoft.com/library/dd380673.aspx" data-raw-source="[Remaining Work](https://msdn.microsoft.com/library/dd380673.aspx)">Remaining Work</a>, and <a href="https://msdn.microsoft.com/library/dd380706.aspx" data-raw-source="[Status on All Iterations](https://msdn.microsoft.com/library/dd380706.aspx)">Status on All Iterations</a>.</p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td></tr>
 <tr>
     <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Completed Work](../../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>
@@ -193,7 +193,7 @@ The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) cap
 
 ### Track code defects
 
-You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
+You can [create bugs from the web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   

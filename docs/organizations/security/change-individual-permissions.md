@@ -5,12 +5,12 @@ description: Add custom security groups, change permissions for groups or indivi
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/25/2019
+ms.date: 11/01/2019
 ---
 
 
@@ -45,10 +45,27 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Choose **Project settings** > **Security**.
+2. Choose **Create group** to open the dialog for adding a group.
+3. Enter a name for the group, and optionally a description.
+
+    For example, here we define a Team Admins group.
+4. 4. Choose **Create group**.
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose **Project Settings** > **Security**.
+#### [Current page](#tab/current-page) 
+
+1. Choose **Project settings** > **Security**.
 
     *To see the full image, click to expand*.
 
@@ -66,6 +83,9 @@ To create a project-level security group, open the web portal and choose the pro
     ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
 
 4. Choose **Create group**.
+
+* * *
+
 ::: moniker-end
 
 

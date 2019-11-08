@@ -5,7 +5,7 @@ description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart
@@ -37,10 +37,11 @@ The instructions below use the default bash shell used on Linux and macOS, but t
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
     [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
   
-   3. For seamless commanding, set the organization and project as defaults in configuration.
+4. For seamless commanding, set the organization and project as defaults in configuration.
  
-      `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
-      ## Download and install Git
+    `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
+    
+## Download and install Git
 
 * [Windows](#windows)
 * [macOS](#macos)

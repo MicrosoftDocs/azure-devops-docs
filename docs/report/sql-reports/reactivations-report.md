@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Determines how effectively the team is fixing bugs.
 ms.assetid: de38d7e8-4bd4-4b43-be4f-a116ea424bee
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 

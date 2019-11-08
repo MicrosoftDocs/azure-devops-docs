@@ -1,6 +1,6 @@
 ```YAML
-# Windows Machine File Copy
-# Copy files to remote machine(s)
+# Windows machine file copy
+# Copy files to remote Windows machines
 - task: WindowsMachineFileCopy@1
   inputs:
     sourcePath: 

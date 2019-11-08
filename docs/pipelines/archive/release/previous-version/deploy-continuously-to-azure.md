@@ -6,7 +6,7 @@ ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -40,7 +40,7 @@ Before you start, you'll need:
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 
-  **[here](http://go.microsoft.com/fwlink/?LinkId=518666)**.
+  **[here](https://go.microsoft.com/fwlink/?LinkId=518666)**.
 
 ## Create a release definition
 
@@ -100,7 +100,7 @@ along with the environments. You can add stages and environments, too.
 
    Each new build will trigger a release. You can also manually trigger a new release.
 
-###Q: How can I view and customize the deployment actions for each stage of my release?
+### Q: How can I view and customize the deployment actions for each stage of my release?
 
 **A**: In the Release Management client, go to **Configure Apps**, **vNext Release 
 Templates** and open your release template.
@@ -108,7 +108,7 @@ Learn more **[here](release-without-agents.md)**.
 
 ![Release Template Designer](_img/deploy-continuously-09.png)
 
-###Q: How can I use a different Azure Pipelines account for my releases?
+### Q: How can I use a different Azure Pipelines account for my releases?
 
 **A**: In the Release Management client, go to **Administration**, **Settings**, and edit the URL.
 

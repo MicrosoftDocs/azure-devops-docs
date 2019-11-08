@@ -5,7 +5,7 @@ ms.topic: include
 ### Updates to hosted pipelines images
 
 > [!NOTE]
-> We are not deploying the [Sprint 152 Update](https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-152-update#updates-to-hosted-pipelines-images) for the VS2017 and VS2019 images. The Sprint 153 Update will include the Sprint 152 changes.
+> We are not deploying the [Sprint 152 Update](https://docs.microsoft.com/azure/devops/release-notes/2019/sprint-152-update#updates-to-hosted-pipelines-images) for the VS2017 and VS2019 images. The Sprint 153 Update will include the Sprint 152 changes.
 
 With this update, we added Windows SDK 18362 to the VS2019 image. In addition, we downgraded several versions of Python to address a bug. The new versions in this update are the following:
 
@@ -41,7 +41,7 @@ steps:
 
 We have also updated the Download Pipeline Artifact to let you download artifacts that have been published with the traditional Publish Build Artifacts task. Now you don't need to know how an artifact was published when you are going to consume it in your pipeline.
 
-To learn more about these changes, see the pipeline artifacts in Azure Pipeline documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml).
+To learn more about these changes, see the pipeline artifacts in Azure Pipeline documentation [here](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml).
 
 ### Use cron syntax to specify schedules in a YAML file
 

@@ -1,6 +1,6 @@
 ```YAML
-# FTP Upload
-# FTP Upload
+# FTP upload
+# Upload files using FTP
 - task: FtpUpload@1
   inputs:
     #credentialsOption: 'serviceEndpoint' # Options: serviceEndpoint, inputs

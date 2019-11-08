@@ -71,7 +71,7 @@ columns.order|`string`|asc|Specifies how ordering should be performed (&quot;asc
 columns.hidden|`boolean`|false|Determines whether the column should be hidden or not
 columns.fixed|`boolean`|false|Determines whether column moving effects this column or not
 columns.format|`string`||If the value of cell is Date, format is used (like &#x27;mm/dd/yyyy&#x27;)
-gutter|`IGridGutterOptions`|false|Options about the gutter. If specified false, gutter will be invisible
+gutter|`IGridGutterOptions`|false|Options about the gutter. If specified false, gutter is invisible
 gutter.contextMenu|`boolean`||Determines whether a context menu is show in the gutter or not
 gutter.icon.index|`any`||String or number value to get the icon value from source item corresponding to current row
 gutter.icon.tooltipIndex|`any`||String or number value to get the icon tooltip value from source item corresponding to current row

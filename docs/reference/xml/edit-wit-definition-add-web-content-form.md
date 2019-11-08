@@ -5,7 +5,7 @@ description: Adds a Web content or HTML content to a work item form by exporting
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 212ce627-db5c-4d19-a6c5-68f10cb6ca1c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017

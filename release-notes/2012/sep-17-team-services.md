@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Sep 17
 description: VSTS release notes for September 27 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8b7d5798-e6f4-4757-b743-0e9ea276fa1c
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -34,7 +34,7 @@ Another useful update in this sprint is ability to collapse the left panel on in
 
 ## Continued UX updates
 
-Earlier this summer we pushed a fairly [big update](http://blogs.msdn.com/b/bharry/archive/2012/07/16/team-foundation-service-updates-7-16.aspx) to the navigation of the site. As we continue to update the service we’ll be refining the UI to ensure it’s easy to use and visually appealing. In this update we removed the more traditional tabs from the UI and replaced them with a colored hyperlink. It’s subtle, but another step towards reducing chrome in the UI and making it easier to focus on your data.
+Earlier this summer we pushed a fairly [big update](https://blogs.msdn.com/b/bharry/archive/2012/07/16/team-foundation-service-updates-7-16.aspx) to the navigation of the site. As we continue to update the service we’ll be refining the UI to ensure it’s easy to use and visually appealing. In this update we removed the more traditional tabs from the UI and replaced them with a colored hyperlink. It’s subtle, but another step towards reducing chrome in the UI and making it easier to focus on your data.
 
 ## Process templates
 
@@ -50,7 +50,7 @@ If you’re using Xcode in your environment, we published a [new article](/azure
 
 ## News RSS feed
 
-Finally, as [promised](http://blogs.msdn.com/b/bharry/archive/2012/08/27/team-foundation-service-updates-8-27.aspx) we’ve enabled an [RSS feed](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed) on our news section so you can more easily keep track of what we’re doing.
+Finally, as [promised](https://blogs.msdn.com/b/bharry/archive/2012/08/27/team-foundation-service-updates-8-27.aspx) we’ve enabled an [RSS feed](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed) on our news section so you can more easily keep track of what we’re doing.
 
 That’s the list for sprint 36. We’ll have another update for you in 3 more weeks. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
 
