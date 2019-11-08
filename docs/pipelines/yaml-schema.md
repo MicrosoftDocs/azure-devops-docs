@@ -1697,7 +1697,7 @@ steps:
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 
 ```
-### Download location
+### Artifact download location
 Artifacts from current pipeline are downloaded to `$(Pipeline.Workspace)/`. 
 Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
 
