@@ -558,8 +558,6 @@ Fabrikam Fiber\Voice                   True                 True
 
 * * *
 
-::: moniker-end
-
 ::: moniker range=" azure-devops-2019"
 
 1. Open **Areas** for the team context.  
@@ -585,7 +583,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: monkier-end
 
-::: moniker range="= tfs-2018"  
+::: moniker range=" tfs-2018"  
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
 
