@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/01/2019
+ms.date: 11/08/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -22,7 +22,7 @@ In this article, learn how to administer the new tenant policy for restricting n
 
 ## Prerequisites
 
-Users must be assigned to the role, Azure DevOps Administrator in Azure Active Directory (Azure AD). Any user with this role can administer this tenant policy. Your administrator can help assign this new role to you. If you don't see the policy section, then you aren't an Azure DevOps Administrator. Check [the portal](https://ms.portal.azure.com/#home) or talk to your Azure AD administrator. You can find this role in the [Azure Portal](https://ms.portal.azure.com/#home) under **Azure Active Directory > Roles and administrators**.
+Users must be assigned to the role, Azure DevOps Administrator in Azure Active Directory (Azure AD). Any user with this role can administer this tenant policy. Your Azure Active AD administrator can help assign this new role to you. If you don't see the policy section, then you aren't an Azure DevOps Administrator. Check [the portal](https://ms.portal.azure.com/#home) or talk to your Azure AD administrator. You can find this role in the [Azure Portal](https://ms.portal.azure.com/#home) under **Azure Active Directory > Roles and administrators**.
 
 ![Check Azure AD roles and administrators](_img/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
 
