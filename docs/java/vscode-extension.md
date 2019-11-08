@@ -1,4 +1,4 @@
----
+﻿---
 title: VS Code extension for Java development with Azure DevOps Services
 description: Learn how to use the VS Code extension for Java development with Azure DevOps Services
 ms.prod: devops
