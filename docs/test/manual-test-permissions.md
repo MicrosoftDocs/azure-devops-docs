@@ -1,5 +1,5 @@
 ---
-title: Permissions and access for manual testing
+title: Permissions, licensing, and access for manual testing
 description: Default permissions and access levels in Azure DevOps and TFS for manual and exploratory testing topics and problems
 ms.assetid: 91146CFD-A4CE-4CC5-973D-1633419CAFDE
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Manual testing permissions and access 
+# Manual test permissions and access 
 
 [!INCLUDE [version-header](_shared/version-header.md)]
 
@@ -75,3 +75,7 @@ Permissions can be applied at [Project level](../organizations/security/permissi
 and at [Area path level](../organizations/security/permissions.md#area-path-object-level). 
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+
+## Related articles
+
+- [Set permissions and access for manual testing](../organizations/security/set-permissions-access-test.md)
