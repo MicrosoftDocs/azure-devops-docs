@@ -1,5 +1,5 @@
----
-title: Quickstart guide to plan and track work for either the Basic or Agile process
+﻿---
+title: Quickstart guide to plan & track work for Basic or Agile process
 titleSuffix: Azure Boards 
 description: Plan and track work in your new team project on Azure Boards
 ms.custom: boards-get-started

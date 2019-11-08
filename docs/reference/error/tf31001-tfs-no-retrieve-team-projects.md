@@ -1,4 +1,4 @@
----
+﻿---
 title: TF31001-Team Foundation cannot retrieve...
 titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer can't display the list of projects defined on a Team Foundation Server. 

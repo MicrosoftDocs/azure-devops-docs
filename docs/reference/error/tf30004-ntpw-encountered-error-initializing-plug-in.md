@@ -1,5 +1,5 @@
----
-title: TF30004-The New Team Project Wizard unexpected error ... 
+﻿---
+title: TF30004-The New Team Project Wizard unexpected error
 titleSuffix: Azure DevOps & TFS
 description: The Wizard was not able to initialize the plug-in after an attempt to create the project.
 ms.prod: devops
