@@ -170,7 +170,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 <a id="admin-intro-team-services" /> 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.
 
@@ -448,7 +448,7 @@ Define both areas and iterations from **Project Settings > Team configuration**.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"  
+::: moniker range=" <= tfs-2018"  
 
 You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
@@ -560,7 +560,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=" azure-devops-2019"
 
 1. Open **Areas** for the team context.  
 
