@@ -31,7 +31,7 @@ To support structured document models like JSON, Rego extends Datalog. Rego quer
 
 Below are the sample policies shared. Based on your requirements, you can build your own set of policies.
 
-## Check specific project/pipeline 
+### Check specific project/pipeline 
 
 This policy checks if the images are built by Azure Pipelines and Pipeline-foo. For this to work, the pipeline definition should override the name field to something like: **AzureDevOps_$(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)**. See more about naming pipeline runs [here.](../process/run-number.md)
 
@@ -59,7 +59,7 @@ fetchImage(uri) = img {
 }
 ```
 
-## Check whitelisted registries
+### Check whitelisted registries
 
 This policy checks if the images are from whitelisted registries only.
 
@@ -89,7 +89,7 @@ fetchImage(uri) = img {
 }
 ```
 
-## Check forbidden ports
+### Check forbidden ports
 
 This policy checks for any forbidden ports exposed in the container image.
 
@@ -123,7 +123,7 @@ fetchImage(uri) = img {
 
 ```
 
-## Check prior deployments
+### Check prior deployments
 
 This policy checks if the image has been pre-deployed to one/more of the environments before being deployed to specific environment/resources with Check configured. 
 
