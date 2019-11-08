@@ -151,6 +151,10 @@ ID     Identifier                            Name                Path           
 
 * * *
 
+::: moniker range="<= tfs-2018"
+
+You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon.
+
 ::: moniker range="= azure-devops-2019"
 
 1. From the web portal, open <strong>Project settings</strong>.
@@ -552,8 +556,6 @@ Fabrikam Fiber\Voice                   True                 True
 
 * * *
 
-::: moniker-end
-
 ::: moniker range="azure-devops-2019"
 
 1. Open **Areas** for the team context.  
@@ -579,7 +581,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: monkier-end
 
-::: moniker range=">= tfs-2017 < azure-devops-2019"  
+::: moniker range="= tfs-2018"  
 
 All work items assigned to the area paths selected for a team appear on the backlogs and boards for that team. You can select one or more area paths and optionally include their sub-area paths. Choose to include sub-area paths when you want to support rollup views of work performed across several teams or areas.
 
@@ -608,6 +610,20 @@ The default area path determines the default area path assigned to work items th
 
    > [!div class="mx-imgBorder"]  
    > ![Backlog view of default team](_img/add-team/product-backlog-default-team-horz.png)  
+
+::: moniker-end
+
+::: moniker range=" tfs-2017" 
+
+> [!div class="mx-imgBorder"]
+> ![Areas, defaults defined for project](_img/areas/modify-areas-its-areas-ts.png)
+
+To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../_img/icons/actions-icon.png) context menu for the area path and choose **New child**.  
+
+Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions).  
+
+ > [!div class="mx-imgBorder"]   
+ > ![Add a new area path](_img/areas/m-areas-add-area-path.png) 
 
 ::: moniker-end
 
