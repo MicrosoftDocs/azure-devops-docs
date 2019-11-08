@@ -1,5 +1,5 @@
----
-title: System and setup requirements to support TFS-Project Server integration 
+﻿---
+title: System and setup requirements to support TFS-Project Server
 titleSuffix: TFS 
 description: Requirements to support Team Foundation Server-Project Server integration 
 ms.prod: devops

@@ -1,4 +1,4 @@
----
+﻿---
 title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
