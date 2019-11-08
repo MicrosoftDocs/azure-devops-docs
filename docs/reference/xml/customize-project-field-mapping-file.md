@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '<= tfs-2018'
 ms.date: 05/06/2019
 ---
