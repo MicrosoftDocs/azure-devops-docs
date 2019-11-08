@@ -151,12 +151,6 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-::: moniker range="<= tfs-2018"
-
-You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon.
-
-::: moniker-end
-
 ::: moniker range="= azure-devops-2019"
 
 1. From the web portal, open <strong>Project settings</strong>.
