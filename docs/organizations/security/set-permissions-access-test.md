@@ -39,7 +39,7 @@ Test permissions can be set at these levels/and should address these tasks:
 <td><strong>Object-level permissions</strong> </td>
 <td>
 <ul>
-<li><a href="#set-permissions-area-path">Modify test plans  under an area path</a></li>
+<li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">Modify test plans under an area path</a></li>
 </ul>
 </td>
 </tr>
@@ -47,8 +47,8 @@ Test permissions can be set at these levels/and should address these tasks:
 <td><strong>Project-level permissions</strong> </td>
 <td>
 <ul>
-<li><a href="#project-level-test-permissions">Create, delete, view test runs</a></li>
-<li><a href="#project-level-test-permissions">Manage test configurations and environments</a></li>
+<li><a href="set-permissions-access-work-tracking.md#project-level-test-permissions">Create, delete, view test runs</a></li>
+<li><a href="set-permissions-access-work-tracking.md#project-level-test-permissions">Manage test configurations and environments</a></li>
 </ul>
 </td>
 </tr>
@@ -68,8 +68,6 @@ Test permissions can be set at these levels/and should address these tasks:
 
 ## Grant access to manual testing features 
 
-TBD
-
 To have full access to the Test feature set, your [access level must be set to Basic + Test Plans](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases.  
 
 
@@ -81,14 +79,13 @@ Area path permissions let you grant or restrict access to edit or modify test pl
 
 In addition to the project-level permissions set in the previous section, team members need permissions to manage test artifacts which are set for an area path. 
 
-[Open the **Security** page for area paths](#set-permissions-area-path) and choose the user or group you want to grant permissions. 
+[Open the **Security** page for area paths](set-permissions-access-work-tracking.md#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
 ![Open Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
+
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
 ![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
-::: moniker-end  
-
 
 <a id="delete-test-artifacts"></a>
 

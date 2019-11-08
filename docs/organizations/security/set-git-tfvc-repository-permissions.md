@@ -66,6 +66,8 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 <a id="git-repository">  </a>
 
+[!INCLUDE [temp](../../_shared/ability-to-find-user-once-added.md)]
+
 ## Set Git repository permissions
 
 You can set the permissions for all Git repositories for a project, or for a single repository. 
@@ -74,9 +76,11 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. To set the permissions for all Git repositories for a project, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+2. Open the **Repos>Repositories** page. 
 
-	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
+	To set the permissions for all Git repositories, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+
+	For example, here we choose (1) **Project settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 
 	[!INCLUDE [temp](../../_shared/lightbox-image.md)] 
 
@@ -84,8 +88,17 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
+3.  To set permissions for a specific user or group, choose the ![ ](../../_img/icons/add-icon.png) add icon and select or search for the identity you want. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add user or group](_img/git-tfvc-perm//add-user-group.png)  
+
+	Then make the changes to the permission set. 
+
 	> [!NOTE]  
-	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md#project-level)
+
+	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
  
 	The changes are made automatically, no need to save your changes.  
 
@@ -144,7 +157,6 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ## Set TFVC repository permissions
 
-
 ::: moniker range="azure-devops"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
@@ -155,10 +167,19 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	[![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repo.png)](_img/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
 
-	> [!NOTE]  
-	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+3.  To set permissions for a specific user or group, choose the ![ ](../../_img/icons/add-icon.png) add icon and select or search for the identity you want. 
 
-	The changes are made automatically, no need to save your changes. 
+	> [!div class="mx-imgBorder"]  
+	> ![Add user or group](_img/git-tfvc-perm//add-user-group.png)  
+
+	Then make the changes to the permission set. 
+
+	> [!NOTE]  
+	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md#project-level)
+
+	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+ 
+	The changes are made automatically, no need to save your changes.  
 
 ::: moniker-end    
 
