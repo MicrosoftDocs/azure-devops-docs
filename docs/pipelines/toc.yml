@@ -260,7 +260,7 @@
       href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
-  - name: Approvals
+  - name: Approvals & Checks
     href: process/approvals.md
     displayName: approvals, checks
   - name: Artifacts
@@ -702,6 +702,8 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+  - name: Artifact policy checks
+    href: process/artifact-policy.md
 - name: Case Studies & Best Practices
   items:
     - name: Add Continuous Security Validation to your CICD Pipeline 
