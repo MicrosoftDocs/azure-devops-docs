@@ -27,7 +27,7 @@ This article describes how to use Azure DevOps to create a project and establish
 
 If you have a project already, see [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md).
 
-::: moniker range="<= azure-devops-server-2019"
+::: moniker range="<= azure-devops-2019"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can sign up for Azure DevOps Services and create a project. For more information, see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).
 ::: moniker-end
