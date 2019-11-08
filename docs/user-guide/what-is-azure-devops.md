@@ -106,7 +106,7 @@ This content supports a platform/version selector. Toggle the Content version se
    > [!div class="mx-imgBorder"]  
    > ![Documentation version selector](../_shared/_img/version-selector.png)
 
-## Try these tasks next  
+## Next steps  
 
 > [!div class="nextstepaction"]
 > [Sign up for Azure DevOps Services](sign-up-invite-teammates.md) or [Install Azure DevOps Server](/azure/devops/server/install/single-server)
