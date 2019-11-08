@@ -699,6 +699,8 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+  - name: Artifact policy checks
+    href: process/artifact-policy.md
 - name: Case Studies & Best Practices
   items:
     - name: Add Continuous Security Validation to your CICD Pipeline 
