@@ -19,7 +19,7 @@ Artifact policies are enforced before deploying to critical environments such as
 > [!NOTE]
 > Currently, the supported artifact types are for container images and Kubernetes environments
 
-## Pre-requisites
+## Prerequisites
 
 Use Rego for defining policy that is easy to read and write.
 
