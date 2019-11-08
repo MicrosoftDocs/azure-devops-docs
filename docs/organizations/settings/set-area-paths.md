@@ -155,6 +155,8 @@ ID     Identifier                            Name                Path           
 
 You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../_img/icons/gear-icon.png) gear icon.
 
+::: moniker-end
+
 ::: moniker range="= azure-devops-2019"
 
 1. From the web portal, open <strong>Project settings</strong>.
@@ -168,7 +170,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 <a id="admin-intro-team-services" /> 
 
-::: moniker range=">=tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal for the project, choose the ![ ](../../_img/icons/gear_icon.png) gear icon.
 
@@ -556,6 +558,8 @@ Fabrikam Fiber\Voice                   True                 True
 
 * * *
 
+::: moniker-end
+
 ::: moniker range="azure-devops-2019"
 
 1. Open **Areas** for the team context.  
@@ -762,28 +766,7 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 * * *
 
-::: moniker range="azure-devops-2019"
-
-1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](_img/areas/edit-area-rename.png)  
-
-2. In the dialog that opens, enter the new name.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](_img/areas/edit-area-rename-dialog.png)
-
-3. To move the node within the hierarchy, change the Location field.
-
-4. To delete a node, choose the **Delete** option from the actions menu.
-
-> [!NOTE]
-> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and select **Edit**.  
 
@@ -842,6 +825,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 ### Programmatic resources
 
 ::: moniker range="azure-devops"
+
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
