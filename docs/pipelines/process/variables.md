@@ -373,6 +373,7 @@ jobs:
 - deployment: A
   pool:
     vmImage: 'ubuntu-16.04'
+  environment: staging
   strategy:
     runOnce:
       deploy:
