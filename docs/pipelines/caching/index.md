@@ -105,6 +105,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Scope | Read | Write |
 |--------|------|-------|
 | Source branch | Yes | Yes |
+| Master branch | Yes | No |
 
 ### Pull request runs
 
@@ -113,6 +114,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Source branch | Yes | No |
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Master branch | Yes | No |
 
 ### Pull request fork runs
 
@@ -120,6 +122,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 |--------|------|-------|
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Master branch | Yes | No |
 
 ## Conditioning on cache restoration
 
