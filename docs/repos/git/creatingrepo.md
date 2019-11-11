@@ -74,7 +74,6 @@ another remote Git repository.
 
    ![Creating a new local Git repository in Visual Studio Team Explorer](_img/CreateNewRepoVS.png)</ol>
 
-<a name="remotes" />
 ### Connect a local repo to a remote
 
 To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
