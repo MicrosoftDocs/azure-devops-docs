@@ -931,6 +931,9 @@ resources:
         exclude:   
         - users/*  
 ```
+
+---
+
 >[!IMPORTANT]
 >When you define the resource trigger, if the `pipeline` resource is from the same repo as the current pipeline, we will follow the same branch and commit on which the event is raised. However, if the `pipeline` resource is from a different repo, the current pipeline is triggered on the master branch.
 
