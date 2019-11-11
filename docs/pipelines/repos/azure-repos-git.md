@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2015'
 
 # Build Azure Repos Git or TFS Git repositories
 
+test of premerger rules
+
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
