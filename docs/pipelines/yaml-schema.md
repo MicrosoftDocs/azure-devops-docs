@@ -880,7 +880,7 @@ Any external service that is consumed as part of your pipeline is a resource. An
 
 Resources in YAML represent sources of types pipelines, repositories and containers.
 
-#### Schema
+### General schema
 
 ```yaml
 resources:
@@ -890,7 +890,8 @@ resources:
 ```
 
 ### Pipeline resource
-If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. And you can also enable pipeline completion triggers.
+If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipeline` resource. 
+And you can also enable pipeline completion triggers.
 
 # [Schema](#tab/schema)
 
@@ -922,7 +923,7 @@ resources:
     source: MyCIPipelineC
     branch: releases/M159  
     version: 20190718.2 
-    trigger:     .
+    trigger:
       branches:  
         include:  
         - master
@@ -951,7 +952,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from pipeline resource using `-download` task. See the [download](yaml-schema.md#download) keyword.
+You can consume artifacts from pipeline resource using `download` task. See the [download](yaml-schema.md#download) keyword.
 
 
 ### Container resource
@@ -1676,7 +1677,7 @@ Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publis
 
 ## Download
 
-`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run or from another azure pipeline that is associated as a `pipeline` resource.
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run or from another Azure pipeline that is associated as a `pipeline` resource.
 
 # [Schema](#tab/schema)
 
@@ -1702,7 +1703,7 @@ Artifacts from current pipeline are downloaded to `$(Pipeline.Workspace)/`.
 Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
 
 ### Automatic download in deployment jobs
-All the available artifacts from current pipeline as well as from associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However you can choose to not download by specifiying `- download: none` 
+All the available artifacts from current pipeline as well as from associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However you can choose to not download by specifiying `download: none` 
 
 ---
 
