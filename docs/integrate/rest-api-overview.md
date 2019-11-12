@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
+title: REST APIs for Azure DevOps and Team Foundation Server
+description: Read an overview of the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
