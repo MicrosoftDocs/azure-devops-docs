@@ -23,7 +23,7 @@ This quickstart shows you how to publish your first Universal Package by using t
 1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
 3. Version 0.14.0 or greater of the Azure Devops extension for the Azure CLI is required. Install the Azure DevOps extension using the command ```az extension add --name azure-devops```. 
-You can check what extension version you currently have installed with the command ```az --version```, and upgrade to the latest Azure Devops extension with the command ```az extension update --name azure-devops```.
+You can check what extension version you currently have installed with the command ```az --version```, and upgrade to the latest Azure DevOps extension with the command ```az extension update --name azure-devops```.
 
 ## Prepare files for publishing
 
