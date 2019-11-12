@@ -1,7 +1,7 @@
 ---
 title: Connect to your Git repos using credential managers
 titleSuffix: Azure Repos
-description: Authenticate to Azure DevOps Services and TFS Git repos using credential managers
+description: Authenticate to Azure Repos and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.prod: devops
 ms.technology: devops-code-git 
@@ -9,16 +9,16 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/15/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Use Git Credential Managers to Authenticate to Azure Repos
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Git Credential Managers simplify authentication with your Azure DevOps Services Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure DevOps Services, credential managers also provide support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
+Git Credential Managers simplify authentication with your Azure Repos Git repositories. Credential managers let you use the same credentials that you use for the Azure DevOps Services web portal. Credential managers support multi-factor authentication through Microsoft account or Azure Active Directory (Azure AD).  Besides supporting multi-factor authentication with Azure Repos, credential managers also provide support [two-factor authentication](https://help.github.com/articles/about-two-factor-authentication/) with GitHub repositories.
 
-Azure DevOps Services provides IDE support for Microsoft account and Azure AD authentication through the following clients:
+Azure Repos provides IDE support for Microsoft account and Azure AD authentication through the following clients:
 
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
 - [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/azure/devops/java/download-intellij-plug-in)
@@ -36,7 +36,7 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 
 ### macOS and Linux
 
-We recommend [using SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure DevOps Services, not a credential manager.
+We recommend [using SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, not a credential manager.
 
 > Review the [system and software requirements](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#system-requirements) before installing the credential manager.
 
@@ -52,7 +52,7 @@ When you connect to a Git repository from your Git client for the first time, th
 
 ![Git Credential Manager prompting during Git pull](_img/gcm_login_prompt.gif)
 
-Once authenticated, the credential manager creates and caches a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires. A token can be revoked through Azure DevOps Services.
+Once authenticated, the credential manager creates and caches a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for future connections to the repo. Git commands that connect to this account won't prompt for user credentials until the token expires. A token can be revoked through Azure Repos.
 
 ### Getting help
 
