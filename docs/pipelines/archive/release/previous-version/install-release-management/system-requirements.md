@@ -6,9 +6,9 @@ ms.assetid: 5B39B13E-166B-48DF-B8CB-45725355F644
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---
@@ -54,7 +54,7 @@ with the following versions of TFS:
 **SQL Server:** 
 
 You can use the same SQL Server instance you used for TFS, 
-**[install a new instance](/tfs/server/install/sql-server/install-sql-server)**, 
+**[install a new instance](/azure/devops/server/install/sql-server/install-sql-server)**, 
 or use an instance that matches the following requirements: 
 
 * SQL Server 2016 
@@ -124,7 +124,7 @@ These are the software requirements for all the agents in your environment.
 * Windows Server 2012 R2
 * Windows Server 2012
 * Windows Server 2008 R2, Service Pack 1 
-* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](http://support.microsoft.com/kb/968930)
+* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
 
 **The .NET Framework:**
 

@@ -1,17 +1,17 @@
----
-title: Group/organize backlog items - define features and epics
+﻿---
+title: Group/organize backlog items, define features and epics
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 06/11/2019
 ---
 
 # Define features and epics  
@@ -25,23 +25,20 @@ Or, you've got an existing backlog and now need to organize it.
 
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
 Use your backlogs to plan your project and to:  
-*	Manage a portfolio of features that are supported by different development and management teams  
-*	Group items into a release train  
-*	Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
+*   Manage a portfolio of features that are supported by different development and management teams  
+*   Group items into a release train  
+*   Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
-Use this topic to learn how to: 
+Use this article to learn how to: 
 >[!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
 
-> [!NOTE]
-> To understand the features supported on each backlog and board, and how each display hierarchical items, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
 
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md).  
-
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## What comprises a feature or epic?  
 
@@ -63,74 +60,84 @@ A feature typically represents a shippable component of software. An epic repres
 - Support integration with external services 
 - Support mobile apps
 
-
 <a id="view-portfolio-backlog" />
+
 ## View a backlog or portfolio backlog 
-To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don't see all three backlog levels&mdash;
+
+To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don&#39;t see all three backlog levels&mdash;
 Epics, Features, and Backlog items&mdash;
-you can [enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
+you can <a href="../../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md)">enable them for your team</a>. 
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-[!INCLUDE [temp](../../_shared/new-navigation-5.md)] 
+::: moniker range="azure-devops"
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
-
-0. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
-
-	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
-
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
-0. Choose the portfolio backlog that you want, **Features** or **Epics**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/features-epics/choose-features-epics-agile.png) 
-
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+    To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+	> ![Choose another team](../sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+
+	> [!TIP]    
+	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+
+1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint//select-product-backlog-agile-s155.png) 
+
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-column-options-s155.png) 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="azure-devops-2019"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-::: moniker-end
+    ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-# [Previous navigation](#tab/previous-nav)
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+1. Choose the portfolio backlog that you want, **Features** or **Epics**. 
 
-0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/features-epics/choose-features-epics-agile.png) 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
-	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
-
-0.	Choose **Epics** to see a list of all epics defined in your team's active area paths.  
-
-	![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
+    > [!div class="mx-imgBorder"]  
+    > ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+::: moniker range="<= tfs-2018"
+
+1. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
+
+    > [!div class="mx-imgBorder"]
+    > ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
+
+    To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+
+1. Choose **Epics** to see a list of all epics defined in your team's active area paths.  
+
+   ![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
+
 ::: moniker-end
 
----
 
 > [!TIP]  
 > Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
@@ -138,60 +145,44 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 <a name="add-features-epics"></a>
 <a name="add-features"></a>
+
 ## Add features and epics 
+
 Just as you can [add items to your product backlog](create-your-backlog.md), you can add items to your features and epics backlogs. 
 
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
+1. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
-::: moniker range=">= azdevserver-2019"
+    > [!div class="mx-imgBorder"]
+    > ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
 
-0. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
+2. Repeat this step to capture all your ideas as work items.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
+    Here, we've added six features.  
 
-0. Repeat this step to capture all your ideas as work items.  
+    > [!div class="mx-imgBorder"]
+    > ![Add a feature](_img/features-epics/features-backlog-agile.png) 
 
-	Here, we've added six features.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Add a feature](_img/features-epics/features-backlog-agile.png) 
-
-	You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
+    You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
 
 ::: moniker-end
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
+
+    > [!div class="mx-imgBorder"]
+    > ![Add a feature](_img/features-epics/add-feature-standard.png) 
+
+2. Repeat this step until you've captured all your main ideas. 
+
+   Here, we've added six features.  
+
+   ![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
 
 ::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
-
-0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Add a feature](_img/features-epics/add-feature-standard.png) 
-
-0. 	Repeat this step until you've captured all your main ideas. 
-
-	Here, we've added six features.  
-
-	![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
-
-::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Add details to a feature or epic 
 
@@ -200,8 +191,8 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
 
 > [!div class="mx-imgBorder"]  
-> [Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
- 
+> ![Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
+
 <table>
 <tbody valign="top">
 <tr>
@@ -210,10 +201,9 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </tr>
 <tr>
 <td>
-[Value Area](../queries/planning-ranking-priorities.md)
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Value Area](../queries/planning-ranking-priorities.md)">Value Area</a>
 </td>
-<td>The area of customer value addressed by the epic, feature, or backlog item. Values include:  
-<ul>
+<td>The area of customer value addressed by the epic, feature, or backlog item. Values include:<br/><ul>
 <li><b>Architectural</b> &mdash;technical services to implement business features that deliver solution </li> 
 <li><b>Business</b> (Default) &mdash;services that fulfill customers or stakeholder needs that directly deliver customer value to support the business </li>
 </ul>
@@ -221,52 +211,48 @@ Open each item (double-click, or press Enter to open the selected item) and add 
 </tr>
 <tr>
 <td>
-[Effort](../queries/query-numeric.md)<br/>
-[Story Points](../queries/query-numeric.md)<br/>
-[Size](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md" data-raw-source="[Effort](../queries/query-numeric.md)">Effort</a><br/>
+<a href="../queries/query-numeric.md" data-raw-source="[Story Points](../queries/query-numeric.md)">Story Points</a><br/>
+<a href="../queries/query-numeric.md" data-raw-source="[Size](../queries/query-numeric.md)">Size</a>
 </td>
 <td>
-Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are [story points, time, or other relative unit](create-your-backlog.md#estimates). 
+Provide a relative estimate of the amount of work required to complete a Feature or Epic. Use any numeric unit of measurement your team prefers. Some options are <a href="create-your-backlog.md#estimates" data-raw-source="[story points, time, or other relative unit](create-your-backlog.md#estimates)">story points, time, or other relative unit</a>. 
 </td>
 </tr>
-
 <tr>
 <td>
-
-[Business Value](../queries/query-numeric.md)
+<a href="../queries/query-numeric.md" data-raw-source="[](../queries/query-numeric.md)"></a>
+<a href="../queries/query-numeric.md">Business Value</a>
 </td>
 <td>
 Specify a priority that captures the relative value of an Epic, Feature, or backlog item compared to other items of the same type. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.
-
-</td>
-</tr>
-
-<tr>
-<td>
-[Time Criticality](../queries/planning-ranking-priorities.md)
-</td>
-<td>
-A subjective unit of measure that captures the how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
 </td>
 </tr>
 <tr>
-	<td><p>[Target Date](../queries/query-by-date-or-current-iteration.md)</p></td>
-	<td><p>Specify the date by which the feature should be implemented.</p></td></tr>
-
+<td>
+<a href="../queries/planning-ranking-priorities.md" data-raw-source="[Time Criticality](../queries/planning-ranking-priorities.md)">Time Criticality</a>
+</td>
+<td>
+A subjective unit of measure that captures how the business value decreases over time. Higher values indicate that the Epic or Feature is inherently more time critical than those items with lower values. 
+</td>
+</tr>
+<tr>
+    <td><p><a href="../queries/query-by-date-or-current-iteration.md" data-raw-source="[Target Date](../queries/query-by-date-or-current-iteration.md)">Target Date</a></p></td>
+    <td><p>Specify the date by which the feature should be implemented.</p></td></tr>
 </tbody>
 </table>
 
 
 ## Add child items
+
 With your features defined, you're able to add child items to them. From any backlog, you can add child items. 
 You can add features to epics, and backlog items to features. 
 
 > [!TIP]  
 > You can also add child user stories (Agile), or product backlog items (Scrum) or requirements (CMMI) from the Kanban board for Features. And, you can add child features from the Epic board. For details, see [Kanban board features and epics](../boards/kanban-epics-features-stories.md). Also, you can quickly parent or reparent children from a backlog using the mapping pane as described in [Organize your backlog, map child work items to parents](organize-backlog.md).
 
-# [New navigation](#tab/new-nav)
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png) and choose from the options provided.
 
@@ -280,16 +266,8 @@ Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-
-::: moniker-end
-
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018"
 
 To add a work item, choose the ![plus icon](../_img/icons/green_plus_icon.png) and choose from the options provided.
 
@@ -302,11 +280,6 @@ The work item always corresponds to the hierarchy of work item types that are de
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 For Scrum projects, your hierarchy is as shown: 
 
@@ -318,7 +291,13 @@ The work item types you'll see depends on the [process you selected to create yo
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
- 
+
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+
+
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+
 ## Try this next  
 
 Portfolio backlogs are not only a great way to organize your project plan, but also a great way to provide visibility of project plans across enterprise teams. With portfolio backlogs, management teams can gain insight into project status across all their development teams. 
@@ -330,15 +309,8 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 ## Related articles  
 
 - [Product backlog controls](product-backlog-controls.md)
-- [Filter product and portfolio backlogs ](filter-backlogs.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
+- [Product backlog controls](product-backlog-controls.md)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
-
-
-
-  
-
- 
-
-

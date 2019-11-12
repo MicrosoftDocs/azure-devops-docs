@@ -5,8 +5,8 @@ description: Learn to map Team Foundation Version Control (TFVC) commands and wo
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: douge
-ms.author: douge
+ms.manager: mijacobs
+ms.author: sdanie
 author: wpschaub
 ms.topic: conceptual
 ms.date: 04/25/2018
@@ -22,7 +22,7 @@ This article will not delve deep into the [Git commands](http://git-scm.com/book
 
 ## Start at the beginning by creating a new repo
 
-Each Project can host [TFVC and Git repositories in the same project](http://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
+Each Project can host [TFVC and Git repositories in the same project](https://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
 
 ![Create a new Git repo in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 
@@ -222,7 +222,7 @@ In the Azure DevOps Services web portal, choose **CODE > History** or **CODE > E
 
 ![Viewing Branch history in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
 
-At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TVFC actions. 
+At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
 
 You also have the option of issuing a [pull request](pull-requests.md), to publish and stage your changes on the server/remote repo at this point.
 
@@ -287,7 +287,7 @@ git clean -xdf
 ```
 
 
-The scenario is synonymous to doing a `Get > Latest Version` with the `Overwrite writeable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
+The scenario is synonymous to doing a `Get > Latest Version` with the `Overwrite writable files that are not checked out` and `Overwrite all files if the local version matches the specified version` options in TFVC.
 
 Alternatively you can manually delete your local repo - after making a validated copy off course - and then `clone` the repository again.
 

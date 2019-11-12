@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -84,7 +84,8 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![Select the SDK folder](../_img/intellijgit/intellij-select-sdk.png)
 
-    > **Note**: The project will not currently compile, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
+    > [!NOTE]
+    > The project will not currently compile, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
 
 ## Clone MyShuttleCalc from Azure DevOps Services with IntelliJ
 

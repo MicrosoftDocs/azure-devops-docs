@@ -1,11 +1,11 @@
 ---
-title: Bulk modify using Excel
+title: Bulk modify work items using Microsoft Excel
 titleSuffix: Azure Boards  
-description: Use Excel to bulk add or modify work items--such as backlog items, tasks, bugs, or issues--in Azure Boards or Team Foundation Server   
+description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards or Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -18,11 +18,11 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you have a lot of work items to add or modify, using Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
+When you have a lot of work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
 You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 
-In this topic you'll learn:  
+In this article you'll learn:  
 
 >[!div class="checklist"]    
 > * Connect to a project from Excel 
@@ -34,25 +34,30 @@ In this topic you'll learn:
   
 
 ## Prerequisites 
+
 ::: moniker range=">= tfs-2017" 
-- Office Excel 2010 or later version, including Office Excel 365
-- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
+
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
-- Office Excel 2007, Office Excel 2010, or Office Excel 2013
-- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409) 
+
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+
 ::: moniker-end  
 
-To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/tfs/server/compatibility). 
+To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
 <a id="add-work-items"> </a>  
+
 ## Add work items
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
+1.  If you don't have Microsoft Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For Azure Boards and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure DevOps or TFS project. 
 	
@@ -89,21 +94,21 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
-0. From the New List dialog, choose **Input list**.  
+5. From the New List dialog, choose **Input list**.  
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-0.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
+6.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
-0.  Specify the titles of the work items you want to add and their work item type.
+7.  Specify the titles of the work items you want to add and their work item type.
 
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
-0.  Publish your worksheet.
+8.  Publish your worksheet.
 
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
 
@@ -113,7 +118,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
 
-0.  Also, note how you can open a work item in the web portal to add more information.
+9.  Also, note how you can open a work item in the web portal to add more information.
 
     ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
 
@@ -133,7 +138,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 > [!NOTE]  
-> To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+> To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by misspelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 
@@ -153,12 +158,13 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	You'll notice that as you select user names, Excel remembers your recent selections and you can select those user accounts directly from the field.   
 
-	![Assigned to field, Drop-dowm menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
+	![Assigned to field, Drop-down menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
 
 > [!TIP]  
->Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
+> Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
 
 <a id="tree-list"></a>
+
 ## Add linked backlog items and tasks 
 
 You can bulk add a nested list of work items, such as a work break down structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
@@ -262,7 +268,7 @@ First, publish whatever changes you have made. Then, on the **Team** ribbon, cho
 Remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;and, then **Refresh** your worksheet.
 
 > [!TIP]  
->Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
+> Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
  
 
 ### Convert from an input list to a query
@@ -275,6 +281,7 @@ If you're working with a non-query input list, you can add work items by choosin
 
 
 ## Bulk edit test cases
+
 You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
 
 ## Related articles
@@ -297,7 +304,8 @@ To resolve publishing errors, see one of these topics:
 - [Invalid links](resolve-excel-invalid-links-tree-list.md)  
 
 ### Delete work items
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items ](../../backlogs/remove-delete-work-items.md).
+
+You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 
 ### Direct link query converts to flat list
 

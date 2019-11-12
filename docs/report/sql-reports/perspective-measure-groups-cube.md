@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Generate reports of aggregated information about the data stored in team project collections
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
@@ -62,7 +63,7 @@ By using the SQL Server Analysis Services cube for Visual Studio Team Foundation
 |Measure group|Each measure group contains measures, such as Work Item Count, and dimensions, such as Date and Team Project. The measures are the numeric values that provide summaries at different levels of aggregation. You can use them in the Values section of a PivotTable or PivotChart report. The following illustration indicates the measure groups for Team Foundation.<br /><br /> ![Team System Measure Groups](_img/rpt_mgroups.png "RPT_MGroups")|  
 |Perspective | By using perspectives, you can view portions of a cube, making it easier to focus on just the set of information that is of interest for creating a report. |  
 
->[!NOTE]  
+> [!NOTE]  
 >Perspectives are available only when your data warehouse is using SQL Server Enterprise Edition. Otherwise, you will see only a single perspective, the Team System cube. Each perspective provides a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole cube. A perspective is a subset of the features and objects of a cube.
   
 ## Related notes

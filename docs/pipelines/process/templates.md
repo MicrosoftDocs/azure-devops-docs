@@ -1,19 +1,19 @@
 ---
-title: Job and step templates
+title: Templates
 ms.custom: seodec18
 description: How to re-use pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
-ms.author: alewis
+ms.manager: mijacobs
+ms.author: macoope
 author: vtbassmatt
-ms.date: 10/10/2018
-monikerRange: 'vsts'
+ms.date: 09/25/2019
+monikerRange: '>= azure-devops-2019'
 ---
 
-# Job and step templates
+# Templates
 
 **Azure Pipelines**
 
@@ -58,7 +58,7 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-## Job reuse
+## Job re-use
 
 Much like steps, jobs can be reused.
 
@@ -81,11 +81,60 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
+## Stage re-use
+
+Stages can also be reused.
+
+```yaml
+# File: templates/stages.yml
+stages:
+- stage: Stage1
+  jobs:
+  - job: Build
+    steps:
+    - script: npm install
+
+  - job: Test
+    steps:
+    - script: npm test
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+stages:
+- template: templates/stages.yml  # Template reference
+```
+
+## Variable re-use
+
+Variables can be defined in one YAML and used in another.
+
+```yaml
+# File: vars.yml
+variables:
+  favoriteVeggie: 'brussels sprouts'
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+variables:
+- template: vars.yml  # Template reference
+
+steps:
+- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+```
+
 ## Passing parameters
 
-You can pass parameters to both step and job templates.
+You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
+
+To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
+
+### Job, stage, and step templates with parameters
 
 ```yaml
 # File: templates/npm-with-params.yml
@@ -126,7 +175,63 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
-The above example shows only how to use parameters with a job template. But you can also use parameters with step templates.
+You can also use parameters with step or stage templates.
+For example, steps with parameters:
+
+```yaml
+# File: templates/steps-with-params.yml
+
+parameters:
+  runExtendedTests: 'false'  # defaults for any parameters that aren't specified
+
+steps:
+- script: npm test
+- ${{ if eq(parameters.runExtendedTests, 'true') }}:
+  - script: npm test --extended
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: azure-pipelines.yml
+
+steps:
+- script: npm install
+  
+- template: templates/steps-with-params.yml  # Template reference
+  parameters:
+    runExtendedTests: 'true'
+```
+
+> [!Note]
+> Scalar parameters are always treated as strings.
+> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
+> Non-empty strings are cast to `true` in a Boolean context.
+> That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
+
+Parameters are not limited to scalar strings.
+As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
+Likewise, sequences can be passed where sequences are expected.
+For example:
+
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: process.yml
+  parameters:
+    pool:   # this parameter is called `pool`
+      vmImage: ubuntu-latest  # and it's a mapping rather than a string
+
+
+# process.yml
+parameters:
+  pool: {}
+
+jobs:
+- job: build
+  pool: ${{ parameters.pool }}
+```
 
 ## Using other repositories
 
@@ -174,6 +279,7 @@ resources:
     - repository: templates
       type: github
       name: Contoso/BuildTemplates
+      ref: refs/tags/v1.0 # optional ref to pin to
 
 jobs:
 - template: common.yml@templates  # Template reference
@@ -181,11 +287,19 @@ jobs:
     vmImage: 'vs2017-win2016'
 ```
 
+For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
+For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
+The project must be in the same organization; cross-organization references are not supported.
+
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
 Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
 This means that you can't use scripts from the template repo in your pipeline.
+
+If you want to use a particular, fixed version of the template, be sure to pin to a ref.
+Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
+If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 ## Template expressions
 
@@ -225,6 +339,14 @@ steps:
     solution: my.sln
 ```
 
+### Context
+
+Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
+Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+the [system variables](../build/variables.md#system-variables). 
+Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
+Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
+
 ### Required parameters
 
 You can add a validation step at the beginning of your template to check for the parameters you require.
@@ -240,7 +362,8 @@ parameters:
 steps:
 - bash: |
     if [ -z "$SOLUTION" ]; then
-      echo ##vso[task.complete result=Failed;]Missing template parameter \"solution\"
+      echo "##vso[task.logissue type=error;]Missing template parameter \"solution\""
+      echo "##vso[task.complete result=Failed;]"
     fi
   env:
     SOLUTION: ${{ parameters.solution }}
@@ -253,7 +376,7 @@ steps:
     solution: ${{ parameters.solution }}
 ```
 
-To prove that the template fails if it's missing the required parameter:
+To show that the template fails if it's missing the required parameter:
 
 ```yaml
 # File: azure-pipelines.yml
@@ -265,16 +388,16 @@ steps:
 
 ```
 
-## Template expression functions
+### Template expression functions
 
 You can use [general functions](expressions.md#functions) in your templates. You can also use a few template expression functions.
 
-### format
+#### format
 * Simple string token replacement
 * Min parameters: 2. Max parameters: N
 * Example: `${{ format('{0} Build', parameters.os) }}` &rarr; `'Windows Build'`
 
-### coalesce
+#### coalesce
 * Evaluates to the first non-empty, non-null string argument
 * Min parameters: 2. Max parameters: N
 * Example:
@@ -288,7 +411,7 @@ steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
 ```
 
-## Insertion
+### Insertion
 
 You can use template expressions to alter the structure of a YAML pipeline.
 For instance, to insert into a sequence:
@@ -334,14 +457,14 @@ To insert into a mapping, use the special property `${{ insert }}`.
 ```yaml
 # Default values
 parameters:
-  variables: {}
+  additionalVariables: {}
 
 jobs:
 - job: build
   variables:
     configuration: debug
     arch: x86
-    ${{ insert }}: ${{ parameters.variables }}
+    ${{ insert }}: ${{ parameters.additionalVariables }}
   steps:
   - task: msbuild@1
   - task: vstest@2
@@ -351,11 +474,11 @@ jobs:
 jobs:
 - template: jobs/build.yml
   parameters:
-    variables:
+    additionalVariables:
       TEST_SUITE: L0,L1
 ```
 
-## Conditional insertion
+### Conditional insertion
 
 If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
 
@@ -415,13 +538,14 @@ steps:
     debug: true
 ```
 
-## Iterative insertion
+### Iterative insertion
 
-The `each` directive allows iterative insertion based on a sequence or mapping.
+The `each` directive allows iterative insertion based on a YAML sequence (array) or mapping (key-value pairs).
 
-For example, to wrap all steps within each job
+For example, you can wrap the steps of each job with additional pre- and post-steps:
 
 ```yaml
+# job.yml
 parameters:
   jobs: []
 
@@ -437,27 +561,58 @@ jobs:
       condition: always()
 ```
 
-For example, to wrap all jobs with an additional dependency
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: job.yml
+  parameters:
+    jobs:
+    - job: A
+      steps:
+      - script: echo This will get sandwiched between SetupMyBuildTools and PublishMyTelemetry.
+    - job: B
+      steps:
+      - script: echo So will this!
+```
+
+You can also manipulate the properties of whatever you're iterating over.
+For example, to add additional dependencies:
 
 ```yaml
+# job.yml
 parameters:
   jobs: []
 
 jobs:
-- job: CredScan                       # Cred scan first
-  pool: MyCredScanPool
+- job: SomeSpecialTool                # Run your special tool in its own job first
   steps:
-  - task: MyCredScanTask@1
-- ${{ each job in parameters.jobs }}: # Then each job
+  - task: RunSpecialTool@1
+- ${{ each job in parameters.jobs }}: # Then do each job
   - ${{ each pair in job }}:          # Insert all properties other than "dependsOn"
       ${{ if ne(pair.key, 'dependsOn') }}:
         ${{ pair.key }}: ${{ pair.value }}
     dependsOn:                        # Inject dependency
-    - CredScan
-    - ${{if job.dependsOn}}:
+    - SomeSpecialTool
+    - ${{ if job.dependsOn }}:
       - ${{ job.dependsOn }}
 ```
 
-## Escaping
+```yaml
+# azure-pipelines.yml
+jobs:
+- template: job.yml
+  parameters:
+    jobs:
+    - job: A
+      steps:
+      - script: echo This job depends on SomeSpecialTool, even though it's not explicitly shown here.
+    - job: B
+      dependsOn:
+      - A
+      steps:
+      - script: echo This job depends on both Job A and on SomeSpecialTool.
+```
+
+### Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`

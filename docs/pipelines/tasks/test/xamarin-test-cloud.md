@@ -5,10 +5,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -20,15 +20,20 @@ monikerRange: '>= tfs-2015'
 
 This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
->**NOTE:** This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AppCenterTest) task instead.
+> [!NOTE]
+> This task is deprecated. Use the [App Center Test](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AppCenterTestV1) task instead. [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+
 
 ## Demands
 
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/XamarinTestCloudV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -69,8 +74,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

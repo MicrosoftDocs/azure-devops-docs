@@ -5,11 +5,11 @@ ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 10/31/2019
 ---
 
 # Use the grid control
@@ -18,9 +18,12 @@ This page shows different samples about the grid control.
 
 **Go to [API Reference](../../reference/client/controls/grid.md) for more details.**
 
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+
 <a name="basic"></a>
 
 ## Grid height, grid width, and columns
+
 This sample shows the basic usage of the grid. Note that, `canSortBy` is set to false for "Column 2" which disables sorting for that column.
 
 ``` typescript
@@ -50,6 +53,7 @@ This sample shows the basic usage of the grid. Note that, `canSortBy` is set to 
 ```
 
 <a name="update"></a>
+
 ## Update grid source
 
 This sample shows how the grid can be updated after it is initialized using `setDataSource`.
@@ -88,6 +92,7 @@ This sample shows how the grid can be updated after it is initialized using `set
 ```
 
 <a name="contextmenu"></a>
+
 ## Context menu
 
 This sample shows the usage of contextMenu for each row in the grid. The item associated with the context menu is obtained using `args.get_commandArgument().item` in `menuItemClick` function.
@@ -157,6 +162,7 @@ This sample shows the usage of contextMenu for each row in the grid. The item as
 ```
 
 <a name="open"></a>
+
 ## Open row details
 
 This sample shows how an action can be executed when a row is opened. `openRowDetail` delegate is executed when the row is double clicked or enter key is hit when a row has the focus.
@@ -196,10 +202,11 @@ This sample shows how an action can be executed when a row is opened. `openRowDe
   var grid = Controls.create(Grids.Grid, container, gridOptions);
 ```
 <a name="hierarchy"></a>
+
 ## Hierarchy
 
-By default first column is indented. Setting `indent: true` for a particular column will cause that column to have indentation for hierarchy. See column options in the below sample.
-Settings `collapsed: true` will get a parent item to be displayed collapsed. To update the data source, use `gridSource.update(newItems);`.
+By default first column is indented. Setting `indent: true` for a particular column causes that column to have indentation for hierarchy. See column options in the below sample.
+Settings `collapsed: true` get a parent item to be displayed collapsed. To update the data source, use `gridSource.update(newItems);`.
 ``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
@@ -252,6 +259,7 @@ Settings `collapsed: true` will get a parent item to be displayed collapsed. To 
 ```
 
 <a name="formatting"></a>
+
 ## Conditional formatting
 
 This sample shows the customization of the grid cells. "Total" column is a calculated column and styled differently in `getCellContents` method.
@@ -391,7 +399,9 @@ This sample shows the customization of the grid cells. "Total" column is a calcu
 ```
 
 <a name="dragdrop"></a>
+
 ## Drag & drop within grid
+
 This sample shows dragging grid rows and dropping them to the same grid which basically changes the ordering of grid item.
 
 ``` css
@@ -593,7 +603,9 @@ This sample shows dragging grid rows and dropping them to the same grid which ba
 ```
 
 <a name="dropoutside"></a>
+
 ## Drag & drop outside of the grid
+
 This sample shows dragging grid rows and dropping them to an outside target.
 
 ``` html

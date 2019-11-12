@@ -5,17 +5,17 @@ ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
-ms.date: 06/30/2017
+ms.author: chcomley
+author: chcomley
+ms.date: 06/12/2019
 ---
 
 # Choosing the right authentication mechanism
 
 
-When writing an application which interfaces with Azure DevOps Services, you will have to authenticate to gain acess to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
+When writing an application which interfaces with Azure DevOps Services, you will have to authenticate to gain access to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This topic provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. We have provided basic descriptions, examples, and code samples to get you started.
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
@@ -28,18 +28,21 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services Extension](../../../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../../../extend/develop/add-dashboard-widget.md) |
 
+> [!NOTE]
+> The Azure DevOps API doesn't support non-interactive service access via service principals.
 
+To learn more about how security and identity are managed, see [About security and identity](../../../organizations/security/about-security-identity.md).
+
+To learn more about how we store your credentials, see [Credential storage for Azure DevOps](../../../organizations/security/credential-storage.md).
 
 ## Enabling IIS Basic Authentication invalidates using PATs for TFS
 
 Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic-auth.md).
 
-
-
 ## Q&A
 
 #### Q: I am making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](./../client-libraries/dotnet.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
-A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.
+A: We recommend using Azure DevOps Services Client Libraries over REST APIs when accessing Azure DevOps Services resources. They are simpler and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST APIs.
 
 #### Q: Can I use ADAL if I log into my organization with a Microsoft account (MSA)?
 

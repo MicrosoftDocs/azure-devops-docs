@@ -56,7 +56,7 @@ exports.submitRequests = function () {
         function(context, result) {
             return {
                         "name": "FabrikamTravel",
-                        "description": "Frabrikam travel app for Windows Phone",
+                        "description": "Fabrikam travel app for Windows Phone",
                         "capabilities": {
                             "versioncontrol": {
                             "sourceControlType": "Git"

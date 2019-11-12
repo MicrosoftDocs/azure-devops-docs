@@ -1,6 +1,6 @@
 ```YAML
-# Cloud-based Web Performance Test
-# Runs a quick web performance test in the cloud with Azure Pipelines.
+# Cloud-based web performance test
+# Run a quick web performance test in the cloud with Azure Pipelines
 - task: QuickPerfTest@1
   inputs:
     #connectedServiceName: # Optional

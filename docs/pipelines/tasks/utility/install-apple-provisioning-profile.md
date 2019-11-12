@@ -5,18 +5,17 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
-ms.reviewer: dastahel
+ms.author: dastahel
+author: davidstaheli
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Install Apple Provisioning Profile task
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install an Apple provisioning profile that is required to build on a macOS agent.
 You can use this task to install provisioning profiles needed to build iOS Apps, Apple WatchKit Apps and App Extensions.
@@ -31,8 +30,11 @@ You can install an Apple provisioning profile that is:
 xcode
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.md)]
+
 ::: moniker-end
 
 ## Arguments

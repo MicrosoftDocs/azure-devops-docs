@@ -1,21 +1,21 @@
 ---
-title: Deployment groups in Azure Pipelines
+title: Use deployment groups in a release pipeline
 ms.custom: seodec18
 description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Deployment groups
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -57,6 +57,7 @@ deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
 the deployment group is used in a [Deployment group job](../../process/deployment-group-phases.md).
+Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
 You manage the security for a deployment group by
 [assigning security roles](../../agents/pools-queues.md#security).
 

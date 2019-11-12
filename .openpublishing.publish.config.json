@@ -1,7 +1,7 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "release-notes",
+      "docset_name": "azure-devops-release-notes",
       "build_source_folder": "release-notes",
       "build_output_subfolder": "release-notes",
       "locale": "en-us",
@@ -17,13 +17,13 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "team-services",
+      "docset_name": "azure-devops-docs",
       "build_source_folder": "docs",
-      "build_output_subfolder": "team-services",
+      "build_output_subfolder": "docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "vsts || >= tfs-2013 <= tfs-2018 || >= azdevserver-2019"
+        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -36,7 +36,6 @@
     }
   ],
   "notification_subscribers": [
-    "douge@microsoft.com",
     "kaelli@microsoft.com"
   ],
   "branches_to_filter": [],
@@ -44,8 +43,8 @@
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "enable_incremental_build": false,
-  "need_pr_comments": false,
+  "enable_incremental_build": true,
+  "need_pr_comments": true,
   "resolve_user_profile_using_github": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [

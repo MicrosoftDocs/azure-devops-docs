@@ -1,24 +1,26 @@
 ---
 title: Add organization users to Azure Active Directory tenant
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Add users to your Azure Active Directory when Azure AD is connected to your organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2018
-monikerRange: 'vsts'
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-<a name="SetUpCurrentUsers"></a>
 
-# Add organization users in Azure DevOps to your Azure Active Directory
+
+# Add organization users to your Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+<a name="SetUpCurrentUsers"></a>
 
 If your organization was created with a Microsoft account, you can connect your organization to your directory (tenant) in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then you can sign in to Azure DevOps with the same user name and password that you use with these Microsoft services. You can also enforce policies for accessing your team's critical resources and key assets.
 
@@ -32,11 +34,11 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
    * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
    * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization owner, if you're not already in the directory.
+2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization Owner, if you're not already in the directory.
 
    What does an example directory look like?
   
-   Suppose Jamal is an Azure AD global administrator at Fabrikam and is listed in the Fabrikam directory with his work account (jamalhartnett@fabrikam.com). He's also the organization owner and a user with a Microsoft account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with Azure DevOps. To free up the access used by his Microsoft account, he must change the organization owner to his work account.
+   Suppose Jamal is an Azure AD global administrator at Fabrikam and is listed in the Fabrikam directory with his work account (jamalhartnett@fabrikam.com). He's also the organization Owner and a user with a Microsoft account (jamalhartnett@live.com). He wants to keep his work history, so he adds his Microsoft account to the Fabrikam directory. If Jamal doesn't need his work history, he can use his work account with Azure DevOps. To free up the access used by his Microsoft account, he must change the organization Owner to his work account.
 
    Nicole is user at Fabrikam. She has a work account (nicolezamora@fabrikam.com) that shares the same sign-in address as her Microsoft account. Nicole continues to work seamlessly with the same sign-in address.
 

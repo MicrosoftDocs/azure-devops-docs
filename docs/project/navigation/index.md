@@ -1,34 +1,34 @@
 ---
 title: Navigating within the web portal  
-titleSuffix: Azure DevOps Services & TFS 
-description: Navigate within the user interface/web portal of Azure DevOps Services & Team Foundation Server  
+titleSuffix: Azure DevOps
+description: Navigate within the user interface/web portal of Azure DevOps
 ms.custom: "Navigation, seodec18"
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 03/05/2019
 ---
 
 # Web portal navigation in Azure DevOps  
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
-The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
-- **New navigation**: **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**
-- **Previous navigation**: **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, **Wiki**, and **Analytics views**
+The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on-premises and it's version. 
+
+[!INCLUDE [temp](../../_shared/version-selector.md)] 
 
 Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
 The web portal for Azure DevOps Server is organized around a set of services&mdash;such as, **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**&mdash; as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 
@@ -42,29 +42,22 @@ Each service provides you with one or more pages which support a number of featu
 The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/new-navigation-wp.md)] 
-
 Here's what you need to know to get up and running using the web portal.  
 
-# [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different [service or functional area](../../user-guide/services.md) 
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited 
-- [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
+- [**Open team artifacts, use breadcrumbs, selectors and directories**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation  
 - [**Search box**](search-basics.md): use to find code, work items, or wiki content  
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources.  
 
 ::: moniker-end
+
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 - [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
 - [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
@@ -77,41 +70,27 @@ Here's what you need to know to get up and running using the web portal.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
----
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019" 
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
 
-# [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
-In **New navigation**, you select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
 
-![New navigation experience with vertical sidebar](_img/gif-images/vertical-nav.gif)
+::: moniker range=">= azure-devops-2019"  
+You select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
+
+![Vertical sidebar](_img/gif-images/vertical-nav.gif)
 
 ::: moniker-end
+
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end
+You select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-With the previous navigation enabled, you select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
-
-![Previous navigation experience with horizontal navigation](_img/gif-images/horizontal-nav.gif)
+![Horizontal navigation](_img/gif-images/horizontal-nav.gif)
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are a lot of features and functionality.  
 
@@ -121,7 +100,7 @@ To start planning and tracking work, see [About Agile tools](../../boards/get-st
 
 ## Connect to the web portal, user accounts and licensing  
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/accounts/add-organization-users.md) can connect. This is typically done by the organization owner. 
 
@@ -131,7 +110,7 @@ Limited access is available to an unlimited number of stakeholders for free. For
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 You connect to the web portal through a supported web browser&mdash;such as the latest versions of Edge, Chrome, Safari, or Firefox. Only users who have been [added to a project](../../organizations/security/add-users-team-project.md) can connect. This is typically done by a member of the Project Administrators group.
 
@@ -161,11 +140,11 @@ Although you can access source code, work items, and builds from both clients, s
 <tbody valign="top">
 <tr>
 <td><ul>
-<li><p>[Product backlog](../../boards/backlogs/create-your-backlog.md), [Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md), [Sprint backlogs](../../boards/sprints/assign-work-sprint.md), [Task boards](../../boards/sprints/task-board.md), [Capacity planning](../../boards/sprints/set-capacity.md) </p></li>
-<li><p>[Kanban board](../../boards/boards/kanban-basics.md)</p></li>
-<li><p>[Dashboards](../../report/dashboards/dashboards.md), [Widgets](../../report/dashboards/widget-catalog.md), and [Charts](../../report/dashboards/charts.md)</p></li>
-<li><p>[Team rooms](../../notifications/collaborate-in-a-team-room.md)</p></li>
-<li><p>[Request feedback](../feedback/get-feedback.md)</p></li>
+<li><p><a href="../../boards/backlogs/create-your-backlog.md" data-raw-source="[Product backlog](../../boards/backlogs/create-your-backlog.md)">Product backlog</a>, <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Portfolio backlogs](../../boards/boards/kanban-epics-features-stories.md)">Portfolio backlogs</a>, <a href="../../boards/sprints/assign-work-sprint.md" data-raw-source="[Sprint backlogs](../../boards/sprints/assign-work-sprint.md)">Sprint backlogs</a>, <a href="../../boards/sprints/task-board.md" data-raw-source="[Task boards](../../boards/sprints/task-board.md)">Task boards</a>, <a href="../../boards/sprints/set-capacity.md" data-raw-source="[Capacity planning](../../boards/sprints/set-capacity.md)">Capacity planning</a> </p></li>
+<li><p><a href="../../boards/boards/kanban-basics.md" data-raw-source="[Kanban board](../../boards/boards/kanban-basics.md)">Kanban board</a></p></li>
+<li><p><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards](../../report/dashboards/dashboards.md)">Dashboards</a>, <a href="../../report/dashboards/widget-catalog.md" data-raw-source="[Widgets](../../report/dashboards/widget-catalog.md)">Widgets</a>, and <a href="../../report/dashboards/charts.md" data-raw-source="[Charts](../../report/dashboards/charts.md)">Charts</a></p></li>
+<li><p><a href="../../notifications/collaborate-in-a-team-room.md" data-raw-source="[Team rooms](../../notifications/collaborate-in-a-team-room.md)">Team rooms</a></p></li>
+<li><p><a href="../feedback/get-feedback.md" data-raw-source="[Request feedback](../feedback/get-feedback.md)">Request feedback</a></p></li>
 <li><p>Web-based Test Management</p></li>
 <li><p>Administration pages to administer accounts, team projects, and teams</p></li>
 </ul></td>
@@ -173,8 +152,8 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p>Task specific interfaces that integrate with Git and TFVC, such as:
 </p>
 <ul>
-<li><p><b>Git: </b> [Changes](../../repos/git/commits.md#stage-your-changes-and-commit) |  [Branches](../../repos/git/branches.md) | [Pull Requests](../../repos/git/pullrequest.md) | [Sync](../../repos/git/pulling.md) | [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
-<li><p><b>TFVC: </b> [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) | [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)  | [Work Items](../../boards/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
+<li><p><b>Git: </b> <a href="../../repos/git/commits.md#stage-your-changes-and-commit" data-raw-source="[Changes](../../repos/git/commits.md#stage-your-changes-and-commit)">Changes</a> |  <a href="../../repos/git/branches.md" data-raw-source="[Branches](../../repos/git/branches.md)">Branches</a> | <a href="../../repos/git/pullrequest.md" data-raw-source="[Pull Requests](../../repos/git/pullrequest.md)">Pull Requests</a> | <a href="../../repos/git/pulling.md" data-raw-source="[Sync](../../repos/git/pulling.md)">Sync</a> | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="https://msdn.microsoft.com/library/ms181721.aspx" data-raw-source="[Builds](https://msdn.microsoft.com/library/ms181721.aspx)">Builds</a> </p></li>
+<li><p><b>TFVC: </b> <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work" data-raw-source="[My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work)">My Work</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work" data-raw-source="[Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work)">Pending Changes</a> | <a href="../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed" data-raw-source="[Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)">Source Control Explorer</a>  | <a href="../../boards/backlogs/add-work-items.md" data-raw-source="[Work Items](../../boards/backlogs/add-work-items.md)">Work Items</a> | <a href="https://msdn.microsoft.com/library/ms181721.aspx" data-raw-source="[Builds](https://msdn.microsoft.com/library/ms181721.aspx)">Builds</a> </p></li>
 </ul>
 </li>
 <li><p>Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client.</p></li>

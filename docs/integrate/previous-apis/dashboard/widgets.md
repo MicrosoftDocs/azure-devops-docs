@@ -4,11 +4,11 @@ description: Work with widgets programmatically using the REST APIs for Visual S
 ms.assetid: 8dbe828d-e90b-40c8-bd7b-2becaf7f7752
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

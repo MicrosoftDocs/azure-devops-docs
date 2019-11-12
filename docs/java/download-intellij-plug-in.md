@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -35,13 +35,13 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
-1. Click the `Install plugin` button and restart IntelliJ IDEA. 
+2. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
+3. Click the `Install plugin` button and restart IntelliJ IDEA. 
  
- ## Next Steps 
-* Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
+   ## Next Steps 
+4. Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
  
- ## Frequently Asked Questions (FAQ)
+   ## Frequently Asked Questions (FAQ)
 
 **Q:  What versions of IntelliJ IDEA are supported?**
 

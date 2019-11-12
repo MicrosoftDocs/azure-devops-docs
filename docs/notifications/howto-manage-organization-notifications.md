@@ -1,24 +1,29 @@
 ---
 title: Manage notifications for an organization
-titleSuffix: Azure DevOps Services & TFS 
+titleSuffix: Azure DevOps 
 description: Manage notifications for an organization in Azure DevOps Services or Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
-ms.manager: douge
+ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/30/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Manage notifications for an organization
 
-<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b>
+[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE] 
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+
+In this article, learn about managing notifications for your organization. 
+
+> [!TIP]
+> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. 
 
 ## Organization level notifications page
 
@@ -57,6 +62,6 @@ The `Statistics` section shows the most active notification subscriptions and th
 
 ## Organization notifications page: Settings
 
-The `Settings` section allows organization level notification settings to be managed by any member of the **project collection administrators** group. The _Default delivery option_ setting is inherited by all teams and groups, and therefore is not explicitly set at the team or group level.
+The `Settings` section allows organization level notification settings to be managed by any member of the **project collection administrators** group. All teams and groups inherit the _Default delivery option_ setting, which is why it isn't explicitly set at the team or group level.
 
 ![Organization level notifications page: Settings](_img/view-organization-notification-settings.png)

@@ -6,10 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactRunCoverage to query for data in Team Foundation Server
 ms.assetid: 4868da2c-9402-444e-a4a4-6b99e71a27ac
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 

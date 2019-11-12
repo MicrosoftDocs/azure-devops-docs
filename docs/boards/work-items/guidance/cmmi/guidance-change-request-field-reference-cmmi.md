@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
 ms.topic: reference
-ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
@@ -22,7 +23,7 @@ You can track change requests for CMMI work items by using these six fields: Jus
   
  None of these fields are reportable or indexed. They all have a data type of HTML.  
   
-> [!div class="mx-tdBreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |**Field name**|**Description**|**Reference name**|  
 > |--------------------|---------------------|--------------------|  
 > |**Justification**|Why the change has been proposed and what value it would bring to the product and the customer.|Microsoft.VSTS.CMMI.Justification|  

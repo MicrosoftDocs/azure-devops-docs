@@ -1,17 +1,17 @@
 ---
 title: Key concepts, objects, and terms
-titleSuffix: Azure DevOps Services & TFS
-description: Understand the key concepts that support navigation and managing projects available with Azure DevOps & Team Foundation Server  
+titleSuffix: Azure DevOps
+description: Understand the key concepts that support navigation and managing projects available with Azure DevOps
 ms.custom: Navigation
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/08/2019
 ---
 
 
@@ -19,7 +19,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
  
-This glossary describes terms used when navigating in the web portal for  Azure DevOps Services and Team Foundation Server (TFS).  See also: 
+This glossary describes terms used when navigating in the web portal for  Azure DevOps.  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Security glossary](../../organizations/security/security-glossary.md)  
 
@@ -29,7 +29,7 @@ An interactive list of work items that corresponds to a team's project plan or r
 
 Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 ## Analytics views
 Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end

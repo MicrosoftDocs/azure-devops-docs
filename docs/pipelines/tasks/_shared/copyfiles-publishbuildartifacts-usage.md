@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 ## Usage
 
 A typical pattern for using this task is:
@@ -14,14 +14,14 @@ For example:
 
 ```yaml
 steps:
-- powershell: .\build.ps1
+- script: ./buildSomething.sh
 - task: CopyFiles@2
   inputs:
-    contents: _buildOutput\**
+    contents: '_buildOutput/**'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    pathToPublish: $(Build.ArtifactStagingDirectory)
     artifactName: MyBuildOutputs
 ```
 ::: moniker-end

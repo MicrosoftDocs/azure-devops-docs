@@ -6,10 +6,10 @@ titleSuffix: TFS
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azdevserver-2019'
+monikerRange: '<= azure-devops-2019'
 ms.date: 11/19/2018
 ---
 
@@ -19,9 +19,9 @@ ms.date: 11/19/2018
 
 One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
-::: moniker range="azdevserver-2019"
+::: moniker range="azure-devops-2019"
 
->[!NOTE]  
+> [!NOTE]  
 >This feature is available with Azure DevOps Server 2019 configured with SQL Server Analysis Services. 
 > 
 >If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
@@ -51,7 +51,7 @@ You can generate these reports only when you work with an on-premises TFS that h
 
 * You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
 
-* A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](http://office.microsoft.com/excel/). 
+* A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](https://office.microsoft.com/excel/). 
 
 * Either Visual Studio or the Team Explorer plug-in for Visual Studio, which you can [install from this download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). Team Explorer is free and requires a Windows OS.
 
@@ -79,7 +79,7 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
 4. To view a report, choose a tab, for example, choose the State tab to view the distribution of work items by State. 
 
-   You can change the chart type and filters. For more information, see [Use PivotTables and other business intelligence tools to analyze your data](http://office.microsoft.com/excel-help/use-pivottables-and-other-business-intelligence-tools-to-analyze-your-data-HA104042322.aspx?CTT=1). 
+   You can change the chart type and filters. For more information, see [Use PivotTables and other business intelligence tools to analyze your data](https://office.microsoft.com/excel-help/use-pivottables-and-other-business-intelligence-tools-to-analyze-your-data-HA104042322.aspx?CTT=1). 
 
 ## Create a query-based report by using Excel
 
@@ -88,7 +88,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 1. Open an Office Excel workbook and choose **New Report**.  
    ![New Report (Team menu selection)](_img/IC733833.png)  
 
-   If you don't see the Team menu, you'll need to install Team Explorer to get the Team Foundation add-in to Excel. See **Requirements** listed earlier in this topic.   
+   If you don't see the Team menu, you'll need to install Team Explorer to get the Team Foundation add-in to Excel. See **Requirements** listed earlier in this article.   
 
 2. Connect to the team project and choose the query.   
 
@@ -107,7 +107,7 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 
 <a id="which_fields_are_non_reportable"></a>
-###Q: Which fields can't I use to generate a report?
+### Q: Which fields can't I use to generate a report?
  
    **A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report. 
 
@@ -115,15 +115,15 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
    * Fields with filter criteria that specify the **Contains**, **Contains Words**, **Does Not Contain**, or **Does Not Contain Words** operators will not be added to the PivotTable. Excel does not support these operators.
 
-###Q: Can I create reports if I'm working in Azure DevOps?
+### Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../analytics/index.md). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
-###Q: How do I refresh the report to show the most recent data?
+### Q: How do I refresh the report to show the most recent data?
 
-   **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](http://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
+   **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](https://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
 
-###Q: Can I upload these reports to a project portal?
+### Q: Can I upload these reports to a project portal?
 
    **A:** Yes. See [Manage documents and document libraries](../sharepoint-dashboards/manage-documents-and-document-libraries.md).
 

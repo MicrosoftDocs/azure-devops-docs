@@ -4,9 +4,9 @@ description: Set up the NuGet developer environment for Azure Artifacts in Azure
 ms.assetid: EA79E902-C679-4AA7-BE33-E865F593EB06
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-Using a package mangement system helps increase your team's velocity and decreases the amount of code duplication across your organization.
+Using a package management system helps increase your team's velocity and decreases the amount of code duplication across your organization.
 Multiple developers on a team need to coordinate where and how they access packages.
 For example, developers will need a compatible NuGet client and credentials to authenticate to any Azure DevOps Services hosted feeds before they can restore or push packages.
 

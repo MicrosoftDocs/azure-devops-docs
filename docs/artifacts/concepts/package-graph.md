@@ -5,9 +5,9 @@ ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: amullans
 ms.date: 2/6/2018
 ---
@@ -38,7 +38,7 @@ Next, consider what happens if Contoso adds an upstream source to AdventureWorks
 
 ![Contoso adds an upstream to AdventureWorks](_img/upstream-source-graph2.svg)
 
-Now, let's have the Fabrikam feed add an upstream source to the Contoso feed. Once that's done, a user connected to Fabrikam can install any verion of Widgets, any version of Gizmos, but only *saved* versions (i.e. 2.0.0) of Gadgets. 
+Now, let's have the Fabrikam feed add an upstream source to the Contoso feed. Once that's done, a user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but only *saved* versions (i.e. 2.0.0) of Gadgets. 
 
 ![Fabrikam adds an upstream source to Contoso](_img/upstream-source-graph3.svg)
 

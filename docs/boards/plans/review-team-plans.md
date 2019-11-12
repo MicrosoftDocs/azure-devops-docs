@@ -5,12 +5,12 @@ description: Add & use plans to review scheduled multi-team deliverables in Azur
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
@@ -28,7 +28,7 @@ Delivery plans is also interactive. You can change the assigned sprint of a work
 
 Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
-In this topic you'll learn:
+In this article you'll learn:
 
 >[!div class="checklist"]   
 > - How to review a plan with your teams
@@ -40,18 +40,39 @@ In this topic you'll learn:
 
 
 ## Prerequisites
-In order to add and configure a plan, you must have the following in place:  
-- [Installed the Plans extension](#install-plans)  
-- Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access for a private project can't add or view plans; users with Stakeholder access for a public project can add and view plans.)  
-- [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
-- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
-- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
-All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
+::: moniker range="azure-devops"  
+
+- In order to add and configure a Delivery Plan, you must have the following in place:  
+	- [Installed the Delivery Plans extension](#install-plans).  
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md).  Users granted **Stakeholder** access for private projects cannot add nor view plans. Users granted **Stakeholder** access for a public project can add and view plans.
+	- [Configured teams](../../organizations/settings/add-teams.md)
+	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"  
+
+- In order to add and configure a Delivery Plan, you must have the following in place:  
+	- [Installed the Delivery Plans extension](#install-plans).  
+	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access cannot add nor view plans.
+	- [Configured teams](../../organizations/settings/add-teams.md)
+	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
+- To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
+- To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
+
+::: moniker-end
+
 
 
 <a id="install-plans">  </a>
-### Install the Plans page extension 
+### Install the Delivery Plans extension 
 
 The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
 
@@ -79,67 +100,45 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
 
 Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-[!INCLUDE [temp](../../_shared/new-navigation-7.md)]  
+::: moniker range=">= azure-devops-2019"  
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
-
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
 
-0. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan** . 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/add-plan.png) 
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
-0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
+2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
-::: moniker-end 
+	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png)  
+   ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
-0. Open **Boards>Plans**. 
+1. Open **Boards>Plans**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 
 
-0. To add a plan, choose **New Plan** . 
+1. To add a plan, choose **New Plan** . 
 
-	::: moniker range="vsts"  
-	> [!div class="mx-imgBorder"]  
-	> ![Add a plan](_img/plans/add-plan.png) 
-	::: moniker-end  
-	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
-	::: moniker-end  
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
-0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
-
+2. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 	> [!div class="mx-imgBorder"]  
 	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
-
----
 
 When defining a plan, note the following:  
 - Use the name and description field to clearly identify your plan within the project 
@@ -156,14 +155,14 @@ Once you've defined a plan, you can further customize it.
 1. Choose the ![ ](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
-	- Edit the teams you've selected and their backlog level  
-	- Set field criteria to further limit the work items that will appear on the plan 
-	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
+   - Edit the teams you've selected and their backlog level  
+   - Set field criteria to further limit the work items that will appear on the plan 
+   - Add markers to show important upcoming events on your timeline 
+   - Customize the fields that display on the cards, similar to how you [customize them for your Kanban or taskboard](../../boards/boards/customize-cards.md).  
 
-	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
+     Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 
-	<img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
+     <img src="_img/review-team-plans-set-field-criteria.png" alt="Settings dialog, Fields page" style="border: 2px solid #C3C3C3;" />
 
 3. To set a marker, open the Markers page, specify a date and select a color. 	
 
@@ -180,7 +179,6 @@ Once you've defined a few plans, you'll see them listed from the Plans page unde
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project.
 
 To open a plan, simply choose the plan name.  
-
 
 ## Interactive elements of plans, change the plan view  
  
@@ -233,7 +231,7 @@ To quickly change the cards to only show their Title, enter the keyboard shortcu
 
 ### Update the iteration for a backlog item 
 
-As changes occur to the schedule, you you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
+As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
 > [!div class="mx-imgBorder"]  
 > ![Move a card to a different iteration](_img/plans_move1.png)
@@ -252,7 +250,7 @@ For additional resources for working with multiple teams, see these additional t
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans using the [REST API, Plans](/rest/api/vsts/work/plans).
+You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans).
 
 
  

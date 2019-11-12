@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 193eee36-7d2a-4652-b905-7759cc60321e
 ms.topic: conceptual
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
@@ -81,6 +82,6 @@ You arrange the basic resources of the project in an initial stage that is named
 ##  <a name="AdditionalResources"></a> Additional Resources  
  For more information, see the following Web resources:  
   
--   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179021), Stephen R. Palmer and John Malcolm Felsing; Prentice Hall PTR, 2002.  
+-   [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179021), Stephen R. Palmer and John Malcolm Felsing; Prentice Hall PTR, 2002.  
   
--   [The IT Measurement Compendium: Estimating and Benchmarking Success with Functional Size Measurement](http://go.microsoft.com/fwlink/?LinkId=179022), Manfred Bundschuh and Carol Dekkers; Springer, 2008.
+-   [The IT Measurement Compendium: Estimating and Benchmarking Success with Functional Size Measurement](https://go.microsoft.com/fwlink/?LinkId=179022), Manfred Bundschuh and Carol Dekkers; Springer, 2008.

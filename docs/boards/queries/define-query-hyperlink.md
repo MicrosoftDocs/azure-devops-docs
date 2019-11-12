@@ -7,8 +7,9 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 11/19/2018  
@@ -28,7 +29,7 @@ The easiest way to define a hyperlink is to create a query that matches what you
 
 ## Query hyperlink syntax 
 
-::: moniker range="vsts"  
+::: moniker range="azure-devops"  
 
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -43,7 +44,7 @@ https://dev.azure.com/fabrikam/FabrikamFiber/_workitems?_a=query&wiql=SELECT%20%
 
 The decoded WIQL conforms to: 
 
-```
+```wiql
 SELECT [System.ID], [System.Title]
    FROM WorkItems 
    WHERE [System.TeamProject]='FabrikamFiber' 
@@ -132,5 +133,5 @@ SELECT [System.ID], [System.Title], [System.State]
 ## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
-- [REST API, Wiql](/rest/api/vsts/wit/wiql)
+- [REST API, Wiql](/rest/api/azure/devops/wit/wiql)
  

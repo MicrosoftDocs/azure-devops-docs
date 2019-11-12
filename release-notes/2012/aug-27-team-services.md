@@ -3,18 +3,18 @@ title: Team Foundation Service updates - Aug 27
 description: VSTS release notes for August 27 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 98cc1eb1-1b6f-415d-814b-da3d8a02d90c
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Team Foundation Service updates - Aug 27
+# Team Foundation Service updates - Aug 27
 
 Last sprint was mostly focused on new project management features – kanban and some task board improvements. This sprint, we’ve turned our attention to more code centric improvements.
 
-##A new source viewer and diff experience
+## A new source viewer and diff experience
 
 Probably the most exciting improvement this sprint is a new source viewer and diff experience. Until this sprint, we had a very simple source code browsing experience. You can see an example here…
 
@@ -32,13 +32,13 @@ The new source viewer has also been used to replace our previous “diff” expe
 
 ![diff viewer](_img/8_27_04.png)
 
-##Updates to the hosted build image
+## Updates to the hosted build image
 
 We updated the build VM image on our hosted build service, adding some new components that people have been asking for… We’ve added SharePoint 2010 to the hosted build image so that you can now do hosted builds of your SharePoint components. There are a number of other things that we are working on (WiX, Phone Tools, etc) that we weren’t quite able to get in for this update but will as soon as we can.
 
-##Basic auth support
+## Basic auth support
 
-A couple of weeks ago we [announced](http://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
+A couple of weeks ago we [announced](https://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
 
 Part of today’s rollout is support for basic authentication which enables two important new scenarios:
 
@@ -53,11 +53,11 @@ Click the “Enable alternate credentials and set password” link on the Creden
 
 ![Enable alternate credentials on the user profile page](_img/8_27_06.png)
 
-Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=vsts#alternate-credentials) for more info on how to use this.
+Then enter a password and save the changes. You now have a username and password you can use with the cross platform TEE command line and with the Git-tf command line. See the [learn content](/azure/devops/git/auth-overview?view=azure-devops#alternate-credentials) for more info on how to use this.
 
 That’s it for sprint 35. We’re already busy on sprint 36 and looking forward to bringing more great stuff your way. Please feel free to use our [UserVoice site](https://visualstudio.uservoice.com/forums/330519-vso) if you want to help prioritize our investments.
 
-By the way, we've updated this page so you can bookmark it ([http://tfs.visualstudio.com/news/](http://tfs.visualstudio.com/news/)), and you'll always get the most recent news.
+By the way, we've updated this page so you can bookmark it ([https://tfs.visualstudio.com/news/](https://tfs.visualstudio.com/news/)), and you'll always get the most recent news.
 
 Thanks,
 

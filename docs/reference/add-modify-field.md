@@ -1,16 +1,16 @@
 ---
 title: Add or modify a work tracking field
 titleSuffix: Azure DevOps & TFS
-description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server  
+description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azdevserver-2019'
-ms.date: 03/20/2018
+monikerRange: ">= tfs-2013 < azure-devops"  
+ms.date: 01/24/2019
 ---
 
 # Add or modify a field to track work 
@@ -45,9 +45,11 @@ Work item fields are maintained for a project collection. You add fields when yo
 
 -   **Import a global workflow definition**. All new fields that are defined within the global workflow are added to the collection. You define a global workflow when you want to maintain a set of work item fields that several types of work items share. For more information, see [Customize global workflow](xml/global-workflow-xml-element-reference.md).
 
+::: moniker range="< tfs-2017"
 -   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](./tfs-ps-sync/project-server-fields-added-to-tfs.md).
+::: moniker-end 
 
-All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises TFS and reporting. 
+All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises server and reporting. 
 
 To add or customize a field for a collection, modify the XML content for the  WIT definition. Define each field through a **FIELD** element within the **FIELDS** section of the WIT definition. For information about the structure and location of these files, see [All FIELD XML elements reference](xml/all-field-xml-elements-reference.md).
 
@@ -82,7 +84,7 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
-> [!div class="tabbedCodeSnippets"]
+
 ```XML
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
    <DEFAULT from="value" value="False" />
@@ -92,9 +94,8 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
 
-> [!div class="tabbedCodeSnippets"]
 ```XML
-<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triag" /> 
+<Control Label="Triage" Type="FieldControl" FieldName="Fabrikam.Triage" />
 ```
  
 The field will appear as a checkbox on the form. 
@@ -112,8 +113,7 @@ To modify the pick list for most string or integer fields within a work item for
 <tbody>
 <tr>
 <td>Custom field and pick list<br /><br />
-![Custom pick list](_img/custom-pick-list.png)  
-</td>
+<img src="_img/custom-pick-list.png" alt="Custom pick list"/><br/></td>
 <td>
 <pre><code>&lt;FIELD name=&quot;Resolution&quot; refname=&quot;MyCompany.Resolution&quot; type=&quot;String&quot;&gt;    
 &lt;ALLOWEDVALUES&gt;
@@ -143,7 +143,6 @@ To add a custom field or add rules to a field, edit the WIT definition. You can 
 
 For example, with the following code snippet, you can enforce the rule that only members of the Management Team, a customer defined TFS group, can modify the Stack Rank field once a work item has been created.
 
-> [!div class="tabbedCodeSnippets"]
 ```XML
 <FIELD name="Stack Rank" refname="Microsoft.VSTS.Common.StackRank" type="Double" reportable="dimension">  
    <FROZEN not="[project]\Management Team" />  
@@ -171,87 +170,84 @@ For more information about applying field rules and restrictions, see [Apply a r
 ## To add a custom field
 To add a custom field, edit the WIT definition to add a **FIELD** element within the **FIELDS** section and a **Control** element within the **FORM** section. 
 
-0. Export the WIT definition file [based on the process model you use](customize-work.md).   
+1. Export the WIT definition file [based on the process model you use](customize-work.md).   
 
-0.  Locate the section of the XML file that begins with ```FIELDS```.
+1. Locate the section of the XML file that begins with ```FIELDS```.
 
-0.  Add the ```FIELD``` element that specifies the name of the custom field to add. You must specify the following required attributes: friendly ```name```, ```refname``` (reference name), and ```type```. For more information, see [FIELD (Definition) element reference](xml/field-definition-element-reference.md).
+2. Add the ```FIELD``` element that specifies the name of the custom field to add. You must specify the following required attributes: friendly ```name```, ```refname``` (reference name), and ```type```. For more information, see [FIELD (Definition) element reference](xml/field-definition-element-reference.md).
 
-    The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
+   The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
 
-	> [!div class="tabbedCodeSnippets"]
-	```XML
-	<FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
-	   <ALLOWEDVALUES>
-	      <LISTITEM value="Customer" />
-	      <LISTITEM value="Executive Management" />
-	      <LISTITEM value="Other" />
-	      <LISTITEM value="Support" />
-	      <LISTITEM value="Team" />
-	      <LISTITEM value="Technicians" />
-	      <DEFAULTVALUE value="Customer" />
-	    </ALLOWEDVALUES>
-	</FIELD>
-	```
+   ```XML
+   <FIELD name="Requestor" refname="FabrikamFiber.MyTeam.Requestor" type="String" reportable="Dimension">
+      <ALLOWEDVALUES>
+         <LISTITEM value="Customer" />
+         <LISTITEM value="Executive Management" />
+         <LISTITEM value="Other" />
+         <LISTITEM value="Support" />
+         <LISTITEM value="Team" />
+         <LISTITEM value="Technicians" />
+         <DEFAULTVALUE value="Customer" />
+       </ALLOWEDVALUES>
+   </FIELD>
+   ```
+   
+   > [!TIP]
+   > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md#WorkItemFields). 
 
-    > [!TIP]  
-    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../organizations/settings/naming-restrictions.md#WorkItemFields). 
+3. Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
 
-0.  Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
+   For example, the following code snippet adds the Requestor field to appear below the Reason field on the work item form.
 
-    For example, the following code snippet adds the Requestor field to appear below the Reason field on the work item form.
-	> [!div class="tabbedCodeSnippets"]
-	```XML
-	<Column PercentWidth="50">
-	   <Group Label="Status">
-	      <Column PercentWidth="100">
-	         <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
-	         <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
-	         <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
-	         <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
-	      </Column>
-	   </Group>
-	</Column>
-	```
+   ```XML
+   <Column PercentWidth="50">
+      <Group Label="Status">
+         <Column PercentWidth="100">
+            <Control FieldName="System.AssignedTo" Type="FieldControl" Label="Assi&amp;gned To:" LabelPosition="Left" />
+            <Control FieldName="System.State" Type="FieldControl" Label="&amp;State:" LabelPosition="Left" />
+            <Control FieldName="System.Reason" Type="FieldControl" Label="Reason:" LabelPosition="Left" ReadOnly="True" />
+            <Control FieldName="FabrikamFiber.MyTeam.Requestor" Type="FieldControl" Label="Requestor:" LabelPosition="Left" ReadOnly="True" />
+         </Column>
+      </Group>
+   </Column>
+   ```
+   
+   > [!TIP]
+   > The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](xml/control-xml-element-reference.md).   
 
-	> [!TIP]  
-	> The schema definition for work tracking defines all child elements of the `FORM` element as camel case and all other elements as all capitalized. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. For more information, see [Control XML element reference](xml/control-xml-element-reference.md).   
+4. Import the WIT definition file according to the process model you use.
 
-0.  Import the WIT definition file according to the process model you use.
+5. Open either the web portal or Team Explorer to view the changes. If the client is already open, refresh the page.
 
-0.  Open either the web portal or Team Explorer to view the changes. If the client is already open, refresh the page.
+   The following illustration shows that the work item form for the product backlog item now contains the new field.  
 
-    The following illustration shows that the work item form for the product backlog item now contains the new field.  
-
-    ![New field in form](_img/IC539047.png)  
+   ![New field in form](_img/IC539047.png)  
 
 
 <a id="change-label">  </a>
 
 ## To change the field label on a work item form
 To modify the field label, change the value assigned to the ```Control``` element ```Label``` attribute. To remove a field from the work item form, delete the ```Control``` element associated with the field. 
- 
-0.  Export the WIT definition file according to your process model.
 
-0.  In the `FORM` and `Layout` sections, find the definition of the field you want to modify. This example modifies the label for the **Title** field:
+1. Export the WIT definition file according to your process model.
 
-	> [!div class="tabbedCodeSnippets"]
-	```XML
-	<Column PercentWidth="70">  
-	   <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />  
-	</Column>
-	```
+1. In the `FORM` and `Layout` sections, find the definition of the field you want to modify. This example modifies the label for the **Title** field:
 
-0.  Change the label for the field so that the Portuguese branch office working on this particular project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
+   ```XML
+   <Column PercentWidth="70">  
+      <Control Type="FieldControl" FieldName="System.Title" Label="Title" LabelPosition="Left" />  
+   </Column>
+   ```
 
-	> [!div class="tabbedCodeSnippets"]
-	```XML
-	<Column PercentWidth="70">  
-	   <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
-	</Column>
-	```
+2. Change the label for the field so that the Portuguese branch office working on this particular project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
 
-0.  Import the modified WIT definition.
+   ```XML
+   <Column PercentWidth="70">  
+      <Control Type="FieldControl" FieldName="System.Title" Label="Title (Titulo):" LabelPosition="Left" />  
+   </Column>
+   ```
+
+3. Import the modified WIT definition.
 
 
 <a id="custom-control">  </a>
@@ -259,11 +255,11 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 
 Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
-Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using [REST APIs for tracking work items](/rest/api/azure/devops/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
-Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
+Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=AzureDevOps&category=All%20categories&visibilityQuery=all&sortBy=Relevance). For example:
 
 -   [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) that supports the input of multiple values for a field by showing a list of check boxes  
 -   [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items  
@@ -274,25 +270,26 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="change-attribute">  </a>
 ## Change an attribute of an existing field 
 
 You use **witadmin changefield** to change the attributes of an existing field. For example, the following command changes the friendly name defined for MyCompany.Type to Evaluation Method.  
 
-> [!div class="tabbedCodeSnippets"]
 ```
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.Type /name:"Evaluation Method"
 ```  
 
 The following table summarizes the attributes you can change using [witadmin changefield](witadmin/manage-work-item-fields.md).
 
-| Attribute | Description |
-|---|---|
-| Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
-| Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
-| Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Field data type and reportable attributes](xml/define-modify-work-item-fields.md). |
-| Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
+> [!div class="mx-tdCol2BreakAll"]  
+> 
+> | Attribute | Description |
+> |---|---|
+> | Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
+> | Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
+> | Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](xml/reportable-fields-reference.md). For more information about reportable attributes, see [Work item fields and attributes, Reportable attributes](../boards/work-items/work-item-fields.md). |
+> | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
 <a id="index-field">  </a>
 ## Change the index attribute of a field
@@ -311,7 +308,7 @@ Other related topics or resources:
 
 - [Work tracking object limits](../organizations/settings/work/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
-- [Field data type and field attributes](xml/define-modify-work-item-fields.md)    
+- [About work item fields and attributes](../boards/work-items/work-item-fields.md)    
 - [WebLayout and Control elements](xml/weblayout-xml-elements.md)
 - [Guide to administrative tasks](../organizations/accounts/organization-management.md)  
 - [Import, export, and manage work item fields (witadmin)](witadmin/manage-work-item-fields.md).
@@ -326,7 +323,7 @@ Other related topics or resources:
   
 To get added as an administrator, [Add administrators](../organizations/security/set-project-collection-level-permissions.md).
 
-<a id="field-reference"></a>  
+<a id="field-reference"></a>
 
 [!INCLUDE [temp](../_shared/field-reference.md)]
 
@@ -346,24 +343,24 @@ To list or review fields, you can use one of the following tools, depending on t
 <tbody valign="top" align="center">
 
 <tr>
-<td align="left">[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)<sup>1</sup></td>
+<td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/><sup>1</sup></td>
 <td> </td>
 </tr>
 
 <tr>
-<td align="left">[Work item field explorer](#wi-explorer) <sup>2</sup> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td align="left"><a href="#wi-explorer" data-raw-source="[Work item field explorer](#wi-explorer)">Work item field explorer</a> <sup>2</sup> </td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
-<td align="left">[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
+<td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -385,7 +382,7 @@ In addition to the attributes that you can change for a work item field, there a
 
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 
-::: moniker range=">= tfs-2013 <= azdevserver-2019"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
 <a id="integration-fields">  </a>
 ### Test, build, and version control fields
 
@@ -394,14 +391,14 @@ Several WITs contain fields that provide information that is generated by automa
 For example, you can add the **Found In** and **Integrated in Build** fields that appear in the type definitions for bugs. These fields associate bugs with the builds where they were found or fixed. You can use the following code snippet to add these fields to a work item type definition.
 
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
-    <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
-</FIELD>
-<FIELD name="Integration Build" refname="Microsoft.VSTS.Build.IntegrationBuild" type="String" reportable="dimension">
-    <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
-</FIELD>
-```
+> ```XML
+> <FIELD name="Found In" refname="Microsoft.VSTS.Build.FoundIn" type="String" reportable="dimension">
+>     <HELPTEXT>Product build number (revision) in which this item was found</HELPTEXT>
+> </FIELD>
+> <FIELD name="Integration Build" refname="Microsoft.VSTS.Build.IntegrationBuild" type="String" reportable="dimension">
+>     <HELPTEXT>Product build number this bug was fixed in</HELPTEXT>
+> </FIELD>
+> ```
 
 For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
 
@@ -418,18 +415,22 @@ When you remove a field from a specific type of work item, that field is not rem
 
 2.  Verify the field is not in use. For example:
 
-        witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
+    witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
 
-        Field: MyCompany.CustomContact
-        Name: Custom Contact
-        Type: String
-        Reportable As: dimension
-        Use: Not In Use
-        Indexed: False
+    Field: MyCompany.CustomContact
+    Name: Custom Contact
+    Type: String
+    Reportable As: dimension
+    Use: Not In Use
+    Indexed: False
+    ```
 
 3.  Delete the field. For example:
 
-        witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
+    witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:MyCompany.CustomContact
+    ```
 
 4.  If the deleted field was reportable, [rebuild the data warehouse to purge the old field and its values](../Report/admin/rebuild-data-warehouse-and-cube.md).
 

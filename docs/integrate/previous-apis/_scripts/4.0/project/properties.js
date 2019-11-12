@@ -44,7 +44,7 @@ exports.submitRequests = function() {
                     {
                         "op": "add",
                         "path": "/Alias",
-                        "value": "Frabrikam"
+                        "value": "Fabrikam"
                     }
                 ]
         },

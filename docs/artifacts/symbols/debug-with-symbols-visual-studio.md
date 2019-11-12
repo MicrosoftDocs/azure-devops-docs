@@ -4,9 +4,9 @@ description: Debug with symbols in Visual Studio using the Symbol Server in Azur
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'

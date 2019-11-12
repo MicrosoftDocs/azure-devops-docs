@@ -5,10 +5,10 @@ ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -29,11 +29,14 @@ See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/
 
 * This task uses a Service Fabric installation to connect and deploy to a Service Fabric cluster.  
 
-* [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
+* [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeployV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -49,7 +52,7 @@ See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/
 | **Get Status Timeout (s)** | Timeout in seconds for getting the status of an existing application. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
-Also see: [Service Fabric PowerShell Utility ](../utility/service-fabric-powershell.md)
+Also see: [Service Fabric PowerShell Utility](../utility/service-fabric-powershell.md)
 
 ## Open source
 

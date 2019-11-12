@@ -1,22 +1,21 @@
 ---
 title: Review code coverage
-ms.custom: seodec18
 description: Review code coverage results in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 86D94FB7-D730-4ECE-8300-5E76934090A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.custom: continuous-test
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
 ms.author: vinojos
-author: vinojos
+author: vinodjo
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Review code coverage results
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 
@@ -38,8 +37,8 @@ over time by reducing the test debt.
 ## Example
 
 To view an example of publishing code coverage results for your choice of language,
-see the **Languages** section of the Pipelines topics. For example, collect and publish
-code coverage for [JavaScript](../languages/javascript.md) using Istanbul.
+see the **Ecosystems** section of the Pipelines topics. For example, collect and publish
+code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 
 ## View results 
 
@@ -77,7 +76,7 @@ The code coverage artifacts published during the build can be viewed under the
 * [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) publishes code coverage results to Azure Pipelines or TFS,
   which were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format. 
 * Built-in tasks such as [Visual Studio Test](../tasks/test/vstest.md),
-  [.NET Core](../tasks/build/dotnet-core.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
+  [.NET Core](../tasks/build/dotnet-core-cli.md), [Ant](../tasks/build/ant.md), [Maven](../tasks/build/maven.md),
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)
   provide the option to publish code coverage data to the pipeline.
 

@@ -5,8 +5,9 @@ description: Syntax and usage of the FIELD element used to specify rules and con
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 62ee6ea1-bb55-4462-93ff-224ad799812a
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/10/2017
 ---
 
@@ -22,29 +23,29 @@ You use the **FIELD** (Workflow) element to specify the rules and conditions tha
 ## Syntax  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<FIELD refname="fieldReferenceName">  
-   <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-   <ALLOWEXISTINGVALUE />  
-   <CANNOTLOSEVALUE />  
-   <COPY />  
-   <DEFAULT />  
-   <EMPTY />  
-   <FROZEN />  
-   <MATCH />  
-   <NOTSAMEAS />  
-   <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-   <READONLY />  
-   <REQUIRED />  
-   <SERVERDEFAULT />  
-   <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-   <VALIDUSER />  
-   <WHEN> . . . </WHEN>  
-   <WHENNOT> . . . </WHENNOT>  
-   <WHENCHANGED> . . . </WHENCHANGED>  
-   <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-<FIELD>  
-```  
+> ```XML
+> <FIELD refname="fieldReferenceName">  
+>    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+>    <ALLOWEXISTINGVALUE />  
+>    <CANNOTLOSEVALUE />  
+>    <COPY />  
+>    <DEFAULT />  
+>    <EMPTY />  
+>    <FROZEN />  
+>    <MATCH />  
+>    <NOTSAMEAS />  
+>    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+>    <READONLY />  
+>    <REQUIRED />  
+>    <SERVERDEFAULT />  
+>    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+>    <VALIDUSER />  
+>    <WHEN> . . . </WHEN>  
+>    <WHENNOT> . . . </WHENNOT>  
+>    <WHENCHANGED> . . . </WHENCHANGED>  
+>    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+> <FIELD>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  

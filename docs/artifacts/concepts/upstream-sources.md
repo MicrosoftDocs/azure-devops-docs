@@ -5,9 +5,9 @@ ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/1/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -18,12 +18,21 @@ monikerRange: '>= tfs-2017'
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or enterprise). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com, nuget.org, Maven Central, and PyPI) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or in organizations in your Azure Active Directory (AAD) tenant). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
+- [How-to: Set up upstream sources](../how-to/set-up-upstream-sources.md)
 - [Use nuget.org as an upstream](../nuget/upstream-sources.md)
 - [Use npmjs.com as an upstream](../npm/upstream-sources.md)
+- [Use Maven Central as an upstream](../maven/upstream-sources.md)
+
+::: moniker range="azure-devops"
+
+> [!NOTE]
+> Custom upstream sources are currently only supported for npm.
+
+::: moniker-end
 
 ## Benefits of upstream sources
 
@@ -57,7 +66,7 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 
 For npm, you should have only one `registry` line, like:
 
-```text
+```ini
 registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
 always-auth=true
 ```
@@ -122,7 +131,7 @@ If you must push a package-version that already exists on one of your upstream s
 
 ### Metadata cached from upstream sources
 
-When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. This means that you may not be able to install a package that was published to the upstream source within the last 24 hours.
+When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This depends on job timing and package data propagation.
 
 <a name="offline-upstreams"></a>
 

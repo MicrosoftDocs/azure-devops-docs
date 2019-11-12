@@ -6,11 +6,11 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E67B2B25-5928-4784-A6CD-E998F4FDE620
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 06/27/2017
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 
@@ -65,12 +65,12 @@ Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **src/main/
 ![Screenshot showing update to code](_img/quick-to-azure/cicd-get-started-update-code.png)
 
 Change the following line of text:
-```
+```html
 <h2>Hello World!</h2>
 ```
 
 to the following:
-```
+```html
 <h2>Demo of CI/CD!!</h2>
 ```
 

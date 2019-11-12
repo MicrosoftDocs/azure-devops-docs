@@ -5,8 +5,9 @@ description: Change the work item form layout by exporting the XML file and modi
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 73869d51-eaa2-4aad-90f4-3081b8d26963
-ms.author: kaelliauthor: KathrynEE
-ms.manager: douge
+ms.author: kaelli
+author: KathrynEE
+ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 03/31/2017
@@ -54,7 +55,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 1.  Find the `<TabGroup>` section of the XML file. Notice that there are `<Tab>` elements for items such as Links and File Attachments in which each `<Tab>` element contains a `<Control>` element that renders the respective control.  
   
-    ```  
+    ```xml
     <Tab Label="Links">  
           <Control Type="LinksControl" />  
     </Tab>  
@@ -65,7 +66,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 2.  Merge the two `<Tab>` elements into a single Links and Attachments `<Tab>` element that contains both controls by replacing the XML shown in the previous step with the new XML shown in the following example:  
   
-    ```  
+    ```xml
     <Tab Label="Links and Attachments">  
           <Control Type="LinksControl" Label="Links" LabelPosition="Top" />  
           <Control Type="AttachmentsControl" Label="Attachments" LabelPosition="Top" />  
@@ -74,7 +75,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 3.  Find the section of the `<FORM>`, `<Layout>` definition that describes the group you want to modify, such as the Classification group.  
   
-    ```  
+    ```xml
     <Group Label="Classification">  
           <Column PercentWidth="100">  
            <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
@@ -88,7 +89,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 4.  Select and copy the following lines to the clipboard for later use.  
   
-    ```  
+    ```xml
   
     <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" /> <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
   
@@ -96,7 +97,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 5.  Delete the lines starting with `<Group Label="Classification">` and ending with `<Group>` in the following XML, to remove the Classification group from its current position on the form.  
   
-    ```  
+    ```xml
     <Layout>  
           <Group>  
            <Column PercentWidth="70">  
@@ -111,7 +112,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 6.  In the `<TabGroup>` section, find the following lines that define the **Details** tab:  
   
-    ```  
+    ```xml
     <Tab Label="Details">  
           <Group>  
            <Column PercentWidth="50">  
@@ -140,7 +141,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 7.  To move these controls to the **Details** tab, paste the contents of your clipboard below the `<Tab Label="Details">` element.  
   
-    ```  
+    ```xml
     <Tab Label="Details">  
           <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />      <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
           <Group>  
@@ -153,7 +154,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 8.  Make the following changes to create a grouping around the moved fields and to divide the fields into two columns:  
   
-    ```  
+    ```xml
     <Tab Label="Details">  
        <Group Label="Classification">
           <Column PercentWidth="50">
@@ -182,7 +183,7 @@ Perform one of the following steps based on the scope of the customization you a
   
 9. Save your changes.  
   
-10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](define-modify-work-item-fields.md).  
+10. To import the new work item type to a single project, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md). To add the work item type to your process template, see [Add type definitions for work items](../process-templates/add-wit-definitions-process-template.md).  
   
 <a name="Verify"></a> 
 ##  Verify the Web page or HTML content appears in the work item form  

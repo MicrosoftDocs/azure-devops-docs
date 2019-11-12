@@ -1,14 +1,14 @@
 ---
-title: Releases in Azure Pipelines and Team Foundation Server
+title: Understand releases and deployments
 ms.custom: seodec18
 description: DevOps CI CD - Understand releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -19,16 +19,21 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. If you author your pipelines using YAML, see [runs](../process/runs.md).
+::: moniker-end
 
 A **release** is the package or container that holds a versioned set of artifacts
 specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
 It includes a snapshot of all the information required to carry out all the tasks
 and actions in the release pipeline, such as the
-[stages](environments.md),
+[stages](../process/stages.md),
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
-queuing options. There can be multiple releases from one released pipeline, and information
+queuing options. There can be multiple releases from one release pipeline, and information
 about each one is stored and displayed in Azure Pipelines for the specified
 [retention period](../policies/retention.md#release).  
 
@@ -46,7 +51,7 @@ The following schematic shows the relationship between release pipelines, releas
 
 ![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
 
-Releases (and, in some cases, draft releases) can be created from a release pipeline in several ways:
+Releases can be created from a release pipeline in several ways:
 
 * By a [continuous deployment trigger](triggers.md)
   that creates a release when a new version of the source build artifacts is available.
@@ -69,7 +74,7 @@ or immediately start a deployment. For example:
   For example, it may specify that the release is deployed only as far as the QA stage
   and not to the production stage.   
 
-* There may be [queuing policies](environments.md#queuing-policies)
+* There may be [queuing policies](../process/stages.md#queuing-policies)
   defined for an stage, which specify which of multiple deployments will occur,
   or the order in which releases are deployed.
 
@@ -77,7 +82,6 @@ or immediately start a deployment. For example:
   defined for a stage, and the deployment will not occur until all
   necessary approvals have been granted.
 
-* Approvers may defer the release to a stage until a specified date and time using a
-  [scheduled trigger](triggers.md#env-triggers).
+* Approvers may defer the release to a stage until a specified date and time.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

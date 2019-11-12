@@ -5,17 +5,16 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.custom: seodec18
-ms.date: 12/06/2018
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Build TFVC repositories
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -56,7 +55,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 > [!NOTE]
 > Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end
@@ -94,6 +93,8 @@ If you select **True** then the build pipeline performs an undo of any changes a
 [//]: # (TODO: confirm this is correct for TFVC; clarify folder)
 
 Select **true** to delete the repository folder.
+
+## Label sources
 
 [!INCLUDE [include](_shared/label-sources.md)]
 

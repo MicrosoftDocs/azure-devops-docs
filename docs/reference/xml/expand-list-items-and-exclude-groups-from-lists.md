@@ -5,17 +5,15 @@ description: Examples for expanding pick list items and restricting items using 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 05/10/2017
 ---
 
 # Expand list items and exclude groups from lists
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
-
-> [!IMPORTANT]  
->This topic applies to project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can expand and filter lists by using the `expanditems` and `filteritems` attributes. You can apply these attributes to these list type elements: `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES`.  
   
@@ -54,7 +52,7 @@ To better understand how these attributes are used to populate a field's drop-do
 <td> 
 <p>A project group that contains the names of three business analyst team members.</p>
 
-<p>**Note:** Use the literal prefix [Project] instead of using the actual name of the project.</p>
+<p><strong>Note:</strong> Use the literal prefix [Project] instead of using the actual name of the project.</p>
 </td>
 </tr>
 <tr>
@@ -78,12 +76,12 @@ To better understand how these attributes are used to populate a field's drop-do
 <td>
 <p>Example1\MyReports</p>
 <ul style="list-style: none;margin-bottom:0px"> 
-<li style="margin-bottom:0px">Userone</li>
-<li style="margin-bottom:0px">Usertwo</li>
-<li style="margin-bottom:0px">Userthree</li>
+<li style="margin-bottom:0px">UserOne</li>
+<li style="margin-bottom:0px">UserTwo</li>
+<li style="margin-bottom:0px">UserThree</li>
 <li style="margin-bottom:0px">MyRemotes</li>
-<li style="margin-bottom:0px">Userfour</li>
-<li style="margin-bottom:0px">Userfive</li>
+<li style="margin-bottom:0px">UserFour</li>
+<li style="margin-bottom:0px">UserFive</li>
 </ul> 
 </td>
 <td>
@@ -105,7 +103,7 @@ To better understand how these attributes are used to populate a field's drop-do
 </tbody>
 </table>
 
-##Example: Expand lists and exclude groups
+## Example: Expand lists and exclude groups
 
 In this example, the field contains a string value, a group, and a global list. At the time it is run, the list is expanded and groups are excluded.
 
@@ -184,7 +182,7 @@ In this example, the field contains a string value, two groups, and a global lis
 
 
 
-##Example: Do not expand lists or groups, and do not filter
+## Example: Do not expand lists or groups, and do not filter
 
 In this example, the field contains a string value, two groups, and a global list. At run time, the list is not expanded and groups are not filtered out. This means that group names are displayed, but not the users within those groups.
 

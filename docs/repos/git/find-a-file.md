@@ -5,9 +5,9 @@ description: Search your Git repo in Azure DevOps Services or TFS for a specific
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Find a file or folder in your Git repository
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 Quickly find and navigate to a file or folder in your Git repository using the path control in the **Files** page.
 
@@ -29,17 +29,16 @@ While browsing your Git repository, start typing in the path control box to sear
 
 ### Hotkey navigation
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
 
 Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **Commits** pages in the **Repos** view. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
 
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 Launch the Find a File experience from the keyboard with the `t` shortcut from the **Files** or **History** tabs in the **Files** page. Use the up and down arrows to cycle through the results, and click or press Enter to open a result. Press `Esc` to close the Find a File experience.
 
----
+::: moniker-end
 
 

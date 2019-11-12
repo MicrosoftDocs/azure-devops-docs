@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Types | REST API Reference for Team Foundation Server
 description: Work with work item types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C58D078F-9310-4BE9-95A5-715CB70370FD
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -3079,7 +3079,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
     },
     {
       "name": "Test Suite",
-      "description": "Tracks test activites for a specific feature, requirement, or user story.",
+      "description": "Tracks test activities for a specific feature, requirement, or user story.",
       "xmlForm": "<FORM><Layout HideControlBorders=\"true\" HideReadOnlyEmptyFields=\"true\"><Group Margin=\"(4,0,0,0)\"><Column PercentWidth=\"100\"><Control FieldName=\"System.Title\" Type=\"FieldControl\" LabelPosition=\"Top\" ControlFontSize=\"large\" EmptyText=\"&lt;Enter title here&gt;\" /></Column></Group><Group Margin=\"(10,0,0,0)\"><Column PercentWidth=\"100\"><Control FieldName=\"System.IterationPath\" Type=\"WorkItemClassificationControl\" Label=\"Ite&amp;ration\" LabelPosition=\"Left\" /></Column></Group><Group Margin=\"(10,0,0,0)\"><Column PercentWidth=\"50\"><Group Label=\"Status\"><Column PercentWidth=\"100\"><Control FieldName=\"System.AssignedTo\" Type=\"FieldControl\" Label=\"Assi&amp;gned To\" LabelPosition=\"Left\" /><Control FieldName=\"System.State\" Type=\"FieldControl\" Label=\"Stat&amp;e\" LabelPosition=\"Left\" /></Column></Group></Column><Column PercentWidth=\"50\"><Group Label=\"Details\"><Column PercentWidth=\"100\"><Control FieldName=\"System.AreaPath\" Type=\"WorkItemClassificationControl\" Label=\"&amp;Area\" LabelPosition=\"Left\" /><Control FieldName=\"Microsoft.VSTS.TCM.TestSuiteType\" Type=\"FieldControl\" Label=\"Test Suite Type\" LabelPosition=\"Left\" /></Column></Group></Column></Group><Group><Column PercentWidth=\"100\"><TabGroup Margin=\"(5,0,0,0)\"><Tab Label=\"Summary\"><Group><Column PercentWidth=\"50\"><Control FieldName=\"System.Description\" Type=\"HtmlFieldControl\" Label=\"Description\" LabelPosition=\"Top\" Dock=\"Fill\" /></Column><Column PercentWidth=\"50\"><Control FieldName=\"System.History\" Type=\"WorkItemLogControl\" Label=\"Histor&amp;y\" LabelPosition=\"Top\" Dock=\"Fill\" /></Column></Group></Tab><Tab Label=\"Attachments\"><Control Type=\"AttachmentsControl\" LabelPosition=\"Top\" /></Tab><Tab Label=\"Links\"><Control Type=\"LinksControl\" Name=\"GeneralLinks\" LabelPosition=\"Top\"><LinksControlOptions><LinkColumns><LinkColumn RefName=\"System.Id\" /><LinkColumn RefName=\"System.WorkItemType\" /><LinkColumn RefName=\"System.Title\" /><LinkColumn RefName=\"System.AssignedTo\" /><LinkColumn RefName=\"System.State\" /><LinkColumn LinkAttribute=\"System.Links.Comment\" /></LinkColumns><WorkItemLinkFilters FilterType=\"includeAll\" /><ExternalLinkFilters FilterType=\"includeAll\" /><WorkItemTypeFilters FilterType=\"includeAll\" /></LinksControlOptions></Control></Tab></TabGroup></Column></Group></Layout></FORM>",
       "fieldInstances": [
         {

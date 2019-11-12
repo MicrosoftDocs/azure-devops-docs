@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
@@ -34,20 +35,20 @@ You can query for links between bugs, tasks, and other types of work items by us
   
  You can use the following sample query to find the following types of information:  
   
--   total number of hours for completed work  
+- total number of hours for completed work  
   
--   original estimated work  
+- original estimated work  
   
--   remaining work  
+- remaining work  
   
--   total story points for each user story in a team project under a specified area path  
+- total story points for each user story in a team project under a specified area path  
   
- For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=178080).  
+  For information about the Coalesce function that is used in the sample query, see the following page on the Microsoft Web site: [COALESCE (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=178080).  
   
 > [!NOTE]
 >  This query assumes that a user story is linked to other work items through Child links.  
   
-```  
+```sql
 declare @TeamProjectNodeSK int  
 select @TeamProjectNodeSK = ProjectNodeSK from GetProjectNodeInfoFromReportFolder(N'/TfsReports/VSTSDF/ProcessDev10')  
 -- This table-value function returns the ProjectNodeSK: the Surrogate Key of a team project under a certain area path.  

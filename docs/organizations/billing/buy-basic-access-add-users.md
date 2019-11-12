@@ -1,101 +1,102 @@
 ---
-title: Buy Basic access for users in the Visual Studio Marketplace
+title: Manage paid access for users in Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Increase number of users when you need more than the free amount via the Visual Studio Marketplace
+description: Assign paid access and control the default access of your new users in Azure DevOps
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
-ms.topic: quickstart
-ms.manager: douge
+ms.topic: conceptual
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
-monikerRange: 'vsts'
+ms.date: 11/04/2019
+monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Pay for more Basic users
+# Quickstart: Manage paid access for users
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-In this quickstart, you learn how to pay for more users in your organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/subscriptions/). You also get five free additional users in your organization.
+> [!NOTE]
+> We’ve recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
-[Pay for additional users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) in whatever quantity you need. When you pay for users, the total number of users that you can add as members in your organization increases. This amount is added to the free limits previously mentioned.
+In this quickstart, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
 
-For a list of included features, see the [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
+Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
-If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
+To view costs for Azure DevOps, see the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## Prerequisites
 
-The first time that you set up billing for your organization, whether you do the setup up via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you need:
+Ensure the following is true:
 
-* [Project collection administrator (PCA) or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner). If you aren't a PCA or organization owner, you're prompted to send a purchase request to the admins for your organization.
-
-   > [!div class="mx-imgBorder"]
-![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
-
-* [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md).
-
-To make subsequent edits to paid quantities in your organization, you need only the owner or contributor role on your Azure subscription.
+* [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
+* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 
 <a name="buy-access-vs-marketplace"></a>
 
-## Increase number of paid users
+## Assign users Basic or Basic + Test Plans
 
-1. Sign in to [**Visual Studio Marketplace**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), go to the **Azure DevOps** tab, and then find and choose **Azure DevOps Services Users**. Select **Get**.
+The simplest way to control paid access is by manually assigning an access level when you [add a new user to your organization](../accounts/add-organization-users.md) and by [removing users](../accounts/delete-organization-users.md) when they leave your organization. 
 
+Keep the following information in mind:
 
-   ![Go to Visual Studio Marketplace, Azure DevOps tab, Other, Azure DevOps Users](_img/buy-more-basic-access/marketplace-choose-get.png)
+- **Visual Studio subscribers** are detected automatically when they sign in. There's no additional charge for users with a Visual Studio subscription.
+- **Stakeholder** is a [free access level with limited functionality](../security/get-started-stakeholder.md).
+- **Basic** is free for the first 5 users, and paid for 6 or more users.
+- **Basic + Test Plans** is paid only, but is [free to try for 30 days](try-additional-features-vs.md).
 
-2. Select your organization and then choose **Buy**.
+## Select the default access level for new users
 
-   > [!div class="mx-imgBorder"]
-![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
+After you set up billing for your organization all new users get the free Stakeholder access if they’re added directly to a Project. That way you aren't surprised by charges for new users who weren’t added directly to the organization by a Project Collection Administrator. 
 
-3. Confirm the Azure subscription where your Azure DevOps charges are billed and then choose **Continue**.
+To change the access level for new users added to projects, do the following tasks:
 
-   If you have multiple Azure subscriptions, select the Azure subscription that you want to use. If you don't have an Azure subscription, you can create a new one.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-   > [!div class="mx-imgBorder"]
-![Confirm or select your Azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-4. Enter the number of paid users and then choose **Continue**. You also see the number of free users that are included, which is separate.
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   > [!div class="mx-imgBorder"]
-![Enter the number of paid users](_img/buy-more-basic-access/marketplace-select-number-of-users.png)
+3. Select **Billing**.
 
-5. Review your order and then choose **Confirm**.
+   :::image type="content" source="_img/_shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
 
-   > [!div class="mx-imgBorder"]
-![Visual Studio Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
+4. Change **Default access level for new users** to Basic.
 
-6. Choose **Manage users** to go to your organization and [add new users](../accounts/add-organization-users.md).
+   :::image type="content" source="_img/_shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
 
-The number of users to whom you can assign Basic appears on the right side of your screen.
+## Automate access level assignment with group rules
 
-[!INCLUDE [temp](../../_shared/new-navigation-cloud.md)]
+Larger organizations may want to automate access level assignments, so you don't have to manually do so every time a user is added or removed. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization, and under assignment-based billing, you’ll find that assignment errors are no longer very common.
 
-# [New navigation](#tab/new-nav)
+## Reduce charges for users who no longer need access
 
-   ![Number of users to whom you can assign Basic](_img/buy-more-basic-access/users-summary.png)
+Billing stops automatically when users are removed from your organization or are assigned the free Stakeholder access level. 
+ 
+To find out if you have users who are no longer using Azure DevOps, do the following tasks:
 
-# [Previous navigation](#tab/previous-nav)
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-   > [!div class="mx-imgBorder"]
-![Number of users to whom you can assign Basic](_img/buy-more-basic-access/vsts-manage-users.png)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
----
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-## Clean up resources
+3. Select **Users** and then sort by **Last Access**.
 
-To remove users or make an adjustment, sign in to Azure DevOps. Choose **Manage users** and then choose **Change quantity**.
+   :::image type="content" source="_img/_shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
+ 
+4. If you have users who've never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
+
+   :::image type="content" source="_img/_shared/export-users.png" alt-text="Export users":::
+
+## Pay for a user once across multiple organizations
+
+If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each Basic or Basic + Test Plan user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md#multi-org-billing).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Buy CI/CD](buy-more-build-vs.md#prerequisites)
 
-## Related articles
-
-* [Reduce or cancel paid users](reduce-cancel-paid-users.md)

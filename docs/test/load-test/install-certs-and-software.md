@@ -1,13 +1,13 @@
 ---
-title: Install certificates andsoftware on agents
+title: Install certificates and software on agents
 description: Install certificates and custom software on agent machines with Azure DevOps
 ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -15,6 +15,8 @@ monikerRange: '> tfs-2018'
 # Install certificates and custom software on agent machines
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 In some test scenarios you might need to set up the environment for the test, such as installing certificates
 or custom software, and then clean up the environment afterwards (such as removing temporary files or folders created during test execution).
@@ -31,7 +33,7 @@ Some examples are:
   install the certificate.
 
 * Install software on the machines running the load test agents in the cloud to collect data or metrics;
-  for example, installing [Network Monitor](http://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
+  for example, installing [Network Monitor](https://blogs.technet.com/b/netmon/) to capture network traffic statistics. 
   You can use a setup script to install it on the agent machine and use a cleanup script to save the data to remote storage
   such as Azure Storage (by using a SAS key).
 

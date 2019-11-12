@@ -6,20 +6,21 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ED3CC394-EE6C-4E12-A2BC-F43A0EE17318  
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
-#Add, run, and update inline tests
+# Add, run, and update inline tests
 
 [!INCLUDE [temp](../../_shared/dev15-and-ts-version-header.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
-In this topic, you'll learn: 
+In this article, you'll learn: 
 > [!div class="checklist"]    
 > * How to add inline tests to a backlog item from your Kanban board  
 > * How to run tests and update the status of tests  
@@ -30,19 +31,14 @@ In this topic, you'll learn:
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
-
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal
 
-[!INCLUDE [temp](../../_shared/new-navigation-7.md)] 
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
-
-0. To view your Kanban board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
+1. To view your Kanban board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
 
 	![Open your Kanban board](_img/quickstart/open-kanban-board-agile.png)  
 
@@ -57,38 +53,24 @@ Tests you create from the Kanban board are automatically linked to the user stor
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end
 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
-
-0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
-0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+1. To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+   > [!div class="mx-imgBorder"]  
+   > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
-0. Your Kanban board displays. 
+2. Your Kanban board displays. 
 
 	![Kanban board, Agile template](_img/kanban-basics-intro.png)  
 
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 
 ## Add tests   
 
@@ -132,7 +114,7 @@ You can update the status of the test from the ![Actions icon](../_img/icons/act
 
 <img src="_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /> 
  
-Updating the status of tests enable you to [track test results](../../test/track-test-status.md).  
+Updating the status of tests enable you to <a href="../../test/track-test-status.md" data-raw-source="[track test results](../../test/track-test-status.md)">track test results</a>.  
 
 [Why doesn't the Kanban board show the status for test suites and plans already created in **Test**?](#test-status-kanban)
 
@@ -167,7 +149,7 @@ Additional ways you can quickly add linked items and objects to user stories fro
 - [Add inline tasks](add-task-checklists.md)
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md) 
 
-To initate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
+To initiate web-based exploratory testing for a user story, you need to install the [Test & Feedback Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web). For details, see [Install the Test & Feedback extension](../../test/perform-exploratory-tests.md).
 
 <a name="test-status-kanban"></a>
 ### Test status in the Kanban board

@@ -1,24 +1,16 @@
 ---
 title: Use the Azure portal to create a pipeline
-ms.custom: seodec18
 description: Use the Azure portal to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd
-services: vsts
-documentationcenter: vs-devops-build
-author: mlearned
-manager: douge
-editor: ''
-ms.assetid:
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: quickstart
-ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
-ms.date: 05/06/2018
 ms.author: mlearned
-ms.custom: mvc
-monikerRange: 'vsts'
+author: mlearned
+ms.manager: mijacobs
+ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
+ms.custom: "mvc, seodec18"
+ms.date: 05/06/2018
+monikerRange: 'azure-devops'
 ---
 
 # Use the Azure portal

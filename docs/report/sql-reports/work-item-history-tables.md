@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
 ms.assetid: 54f07bd4-dc55-4f68-a28e-e61ccce77060
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
@@ -25,22 +26,22 @@ You can query for historical data about bugs, tasks, and other types of work ite
   
  FactWorkItemHistory is associated with the following dimension tables:  
   
--   DimArea  
+- DimArea  
   
--   DimIteration  
+- DimIteration  
   
--   DimPerson  
+- DimPerson  
   
--   DimTeamProject  
+- DimTeamProject  
   
--   DimWorkItem  
+- DimWorkItem  
   
- You can use the following sample query to find the historical workload trend for the period between 2009-09-21 and 2009-09-30 for certain user stories. For each user story in the team project, this query returns information about the total completed work, the original estimated work, the remaining work, and the total story points for every day during that period.  
+  You can use the following sample query to find the historical workload trend for the period between 2009-09-21 and 2009-09-30 for certain user stories. For each user story in the team project, this query returns information about the total completed work, the original estimated work, the remaining work, and the total story points for every day during that period.  
   
 > [!NOTE]    
 >  This query assumes that a user story is linked to other work items through child links.  
   
-```  
+```sql
 declare @TeamProjectNodeSK int  
 select @TeamProjectNodeSK = ProjectNodeSK from GetProjectNodeInfoFromReportFolder(N'/TfsReports/VSTSDF/ProcessDev10')  
 -- This table value function returns the ProjectNodeSK: the Surrogate Key of a team project under a certain area path.  
@@ -51,7 +52,7 @@ select @TeamProjectCollectionGuid = pc.ProjectNodeGUID from DimTeamProject p inn
 ```  
  <br/>
 
-```  
+```sql
 select   
     d.DateSK  
     ,wi.System_Title  

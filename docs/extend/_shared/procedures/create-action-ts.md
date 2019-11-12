@@ -1,7 +1,7 @@
 *to be converted to typescript* 
 
-1. Create an object with a function that will handle the action.
-In this case, we'll open the Hello hub.
+1. Create an object with a function that handles the action.
+In this case, we open the Hello hub.
 
 	```
 	scripts/action.js
@@ -16,7 +16,7 @@ In this case, we'll open the Hello hub.
 				// Get the Web Context to create the uri
 				var vstsContext = VSS.getWebContext();
 
-				// Navigate to the new View Assoicated Work Items hub.
+				// Navigate to the new View Associated Work Items hub.
 				// Fabrikam is the extension's namespace and Fabrikam.HelloWorld is the hub's id.
 				window.parent.location.href = vstsContext.host.uri +
 					vstsContext.project.name + "/_apps/hub/Fabrikam/Fabrikam.HelloWorld";

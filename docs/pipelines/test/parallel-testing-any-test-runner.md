@@ -1,22 +1,21 @@
 ---
 title: Run VSTest tests in parallel
 description: Speed up testing by running tests in parallel for any test runner
-ms.custom: seodec18
 ms.assetid: 21D3C181-5067-45C7-8A98-1F0ECB2CCB01
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.custom: continuous-test
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 12/07/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Run tests in parallel for any test runner
 
-**Azure Pipelines | TFS 2018.2 and later**
+[!INCLUDE [include](../_shared/version-server-2019-rtm.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -29,10 +28,6 @@ cannot process builds quickly enough.
 Running tests in parallel is a great way to improve the efficiency of CI/CD pipelines.
 This can be done easily by employing the additional capacity offered by the cloud.
 This article discusses how you can parallelize tests by using multiple agents to process jobs.
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
-::: moniker-end
 
 ## Pre-requisite
 
@@ -84,9 +79,17 @@ test files numbered 2 and 5.
 
 ## Sample code
 
+This .NET Core sample uses `--list-tests` and `--filter` parameters of `dotnet test` to slice the tests.
+The tests are run using NUnit. Test results created by `DotNetCoreCLI@2` test task are then published to the server.
+Import (into Azure Repos or Azure DevOps Server) or fork (into GitHub) this repo:
+
+```
+https://github.com/idubnori/ParallelTestingSample-dotnet-core
+```
+
 This Python sample uses a PowerShell script to slice the tests.
 The tests are run using pytest. JUnit-style test results created by pytest are then published to the server.
-Import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+Import (into Azure Repos or Azure DevOps Server) or fork (into GitHub) this repo:
 
 ```
 https://github.com/PBoraMSFT/ParallelTestingSample-Python
@@ -94,7 +97,7 @@ https://github.com/PBoraMSFT/ParallelTestingSample-Python
 
 This JavaScript sample uses a bash script to slice the tests.
 The tests are run using the mocha runner. JUnit-style test results created by mocha are then published to the server.
-Import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+Import (into Azure Repos or Azure DevOps Server) or fork (into GitHub) this repo:
 
 ```
 https://github.com/PBoraMSFT/ParallelTestingSample-Mocha
@@ -102,7 +105,7 @@ https://github.com/PBoraMSFT/ParallelTestingSample-Mocha
 
 The sample code includes a file `azure-pipelines.yml` at the root of the repository
 that you can use to create a pipeline. Follow all the instructions in
-[Create your first pipeline](../get-started-yaml.md) to create a pipeline and see test slicing in action.
+[Create your first pipeline](../create-first-pipeline.md) to create a pipeline and see test slicing in action.
 
 ## Combine parallelism for massively parallel testing
 

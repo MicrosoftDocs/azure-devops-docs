@@ -1,11 +1,13 @@
 ---
-title: TF30320-The New Team Project Wizard...titleSuffix: Azure DevOps & TFS
+title: TF30320-The New Team Project Wizard...
+titleSuffix: Azure DevOps & TFS
 description: Display an error when the New Team Project Wizard could not retrieve the list of projects on the Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile
-ms.assetid: 252752a7-ec21-465e-878c-1d303ee60284
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs7-ec21-465e-878c-1d303ee60284
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -18,11 +20,11 @@ This error occurs when the New Team Project Wizard attempts to check the Team Fo
   
  The likely causes of this problem are:  
   
--   The network is not available    
--   The Team Foundation server is not available    
--   There is an unexpected problem with the CommonStructureService Web service.  
+- The network is not available    
+- The Team Foundation server is not available    
+- There is an unexpected problem with the CommonStructureService Web service.  
   
- The procedures below will help you correct the cause.  
+  The procedures below will help you correct the cause.  
   
 ### To correct this error  
   

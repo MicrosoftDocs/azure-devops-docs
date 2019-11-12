@@ -1,25 +1,21 @@
 ---
-title: Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
-ms.custom: seodec18
+title: Deploy to Kubernetes on AKS with Jenkins
 description: Set up continuous integration (CI) and continuous deployment (CD) with Kubernetes for your apps using Jenkins, Azure Container Service (AKS), and Azure Pipelines
-author: nicolela
-manager: ruisun
-editor: mlearned
 ms.prod: devops
 ms.technology: devops-cicd
-ms.devlang: na
 ms.topic: tutorial
-ms.tgt_pltfrm: 
-ms.workload: 
+ms.author: mlearned
+author: mlearned
+ms.reviewer: nicolela
+ms.manager: mijacobs
+ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
-ms.author: nicolela
-ms.custom: mvc
 monikerRange: '>= tfs-2015'
 ---
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -42,7 +38,7 @@ You will:
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in Azure Pipelines
 > * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utilty tasks Azure Pipelines extension
+> * Install the Release Management Utility tasks Azure Pipelines extension
 > * Create an Azure Pipelines release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
@@ -76,14 +72,14 @@ GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutor
 
 1. In Azure Repos, on the **Code** page for your Azure Repos project, select the option to **Import repository**.
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
-  ```
-  https://github.com/spring-guides/gs-spring-boot-docker
-  ```
+2. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
+   ```
+   https://github.com/spring-guides/gs-spring-boot-docker
+   ```
 
-1. Click **Import** to copy the sample code into your Git repo.
+3. Click **Import** to copy the sample code into your Git repo.
 
-1. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
+4. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
 
 ## Configure the sample app to build and push a Docker image to your ACR
 
@@ -99,7 +95,7 @@ You will find the **pom.xml** file in your repository in the folder named **comp
 
 1. Update the `<properties>` collection in the **pom.xml** with the login server value for your ACR.  The login server is the name of your ACR appended with *.azurecr.io*.  For example, **yourACRName.azurecr.io**.
 
-    ```
+    ```xml
     <properties>
        <docker.image.prefix>wingtiptoysregistry.azurecr.io</docker.image.prefix>
        <java.version>1.8</java.version>
@@ -108,7 +104,7 @@ You will find the **pom.xml** file in your repository in the folder named **comp
 
 1. Update the **com.spotify** plugin in the **pom.xml** file so that the `<configuration>` section includes the tag for the Docker image that will be built and pushed to your ACR.  The tag will be set to the current Jenkins build id.  Also, add the **useMavenSettingsForAuth** setting to the configuration so that in a later step, you can configure Maven to authenticate with your ACR which is a private registry.
 
-    ```
+    ```xml
     <plugin>
       <groupId>com.spotify</groupId>
       <artifactId>dockerfile-maven-plugin</artifactId>
@@ -139,7 +135,7 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 1. Copy and paste the following contents into the **K8sDeploy.yaml** file.  Ensure the image prefix `<yourACRName>` is replaced with the name of your ACR appended with *.azurecr.io*.  Also, notice that the image is tagged with **__Build.BuildId__**.  This is a token that will be automatically replaced during the Azure Pipelines release so that it's set to the current Jenkins build id.  For example, if the current Jenkins build id is 5, the full name of an image that will be pulled during the Azure Pipelines release will look similar to: yourACRName.azurecr.io/gs-spring-boot-docker:5.
 
-    ```
+    ```yaml
     apiVersion: extensions/v1beta1
     kind: Deployment
     metadata:
@@ -180,8 +176,8 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 You must configure credentials for connecting to Azure Pipelines.  When using credentials to connect to Azure Pipelines, it is a best practice to use a **personal access token (PAT)**.  You also need to create a Jenkins credential to use in your Jenkins build jobs.
 
-  > [!NOTE]
-  Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
+> [!NOTE]
+>   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
  
 1.  Create a PAT in your Azure Pipelines account. Jenkins requires this information to access your Azure DevOps organization.  Ensure you **store** the token information for upcoming steps in this section.
   Read [How do I create a personal access token for Azure Pipelines and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.
@@ -216,7 +212,7 @@ Since your ACR is a private registry, you must configure the user name and passw
 
 1. In the **Content** window, update the `<servers>` section of the contents to include the name of your ACR and its password.  For example:
   
-    ```
+    ```xml
     <server>
       <id>yourACRName.azurecr.io</id>
       <username>yourACRName</username>
@@ -254,7 +250,7 @@ You create a Jenkins build job to use the source code stored in your Azure Repos
 1. Select the **Post-build Actions** tab.  Choose **Add post-build action**, then select **Trigger release in TFS/Team Services**.
 
 1. Enter a **Collection URL**.  An example is 
-`http://dev.azure.com/{your-organization}/DefaultCollection`
+`https://dev.azure.com/{your-organization}/DefaultCollection`
 
 1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
@@ -321,7 +317,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 1. Repeat the steps in this section to create another **service hook** for the **pull request merge attempted** trigger type.  This will allow either simple commits to the repository as well as pull requests to both trigger the Jenkins build.
 
-## Install the Release Management Utilty tasks Azure Pipelines extension
+## Install the Release Management Utility tasks Azure Pipelines extension
 
 A release pipeline specifies the steps that Azure Pipelines executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
@@ -419,7 +415,7 @@ gs-spring-boot-docker   10.0.242.8   13.65.196.3   80:31215/TCP   3m
 When your AKS cluster is no longer needed, you can use the `az group delete` command to remove the resource group, which will remove all of its related resources;  for example:
 
 ```azurecli
-az group delete --name <yourAKSCluster> --yes --now-wait
+az group delete --name <yourAKSCluster> --yes --no-wait
 ```
 
 ## Next Steps
@@ -434,7 +430,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in Azure Pipelines
 > * Configure a Jenkins CI build with Azure Pipelines integration
-> * Install the Release Management Utilty tasks Azure Pipelines extension
+> * Install the Release Management Utility tasks Azure Pipelines extension
 > * Create an Azure Pipelines release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app

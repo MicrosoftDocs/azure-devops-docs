@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Templates | REST API Reference for Team Foundation Server
 description: Work with work item templates programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 0FF507EB-0E59-45F9-8A04-E3E95BA3DA58
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/26/2016
 ---
 

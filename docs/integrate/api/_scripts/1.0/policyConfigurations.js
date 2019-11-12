@@ -28,7 +28,7 @@ exports.submitRequests = function()
 
 	apiwriter.postJson('/build/definitions?api-version=2.0-preview.2',
 		{
-			// this is a rather incomplete build defininition, but we only need a valid ID, not a valid definition
+			// this is a rather incomplete build definition, but we only need a valid ID, not a valid definition
 			"name":"PolicyAPIDocsExample",
 			"documentQuality":"definition"
 		},

@@ -5,12 +5,12 @@ description:  Learn how to standardize pull request descriptions using pull requ
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
-ms.date: 09/26/2018
-monikerRange: 'vsts'
+ms.date: 12/10/2018
+monikerRange: 'azure-devops'
 ---
 
 # Improve pull request descriptions using templates
@@ -44,6 +44,9 @@ Azure Repos allows you to create the following type of pull request templates:
 - **Additional** pull request templates that can be optionally added by the pull request creator
 
 The type of pull request template is determined by its filename and folder location, as covered in the following sections. The filenames and folder locations are not case sensitive, but they must be in the default branch of your repository.
+
+>[!NOTE]
+>All pull request template files must be located in the default branch (typically master) of your repository. Only pull request template files from the default branch are used.
 
 ## Default pull request templates
 

@@ -27,7 +27,7 @@ exports.submitRequests = function () {
     // Get all wit fields
     apiwriter.getJsonEx('/wit/fields', collectionScopeUrl);
 
-    // Get a specfic wit field
+    // Get a specific wit field
     apiwriter.getJsonEx('/wit/fields/{fieldName}', collectionScopeUrl);
     
     // Get all work item types

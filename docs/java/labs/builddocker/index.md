@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -26,7 +26,8 @@ In this exercise, you are going to create a Docker Registry in Azure as well as 
 
 This exercise assumes you have completed the exercises to [create a Team Project](../settingvstsproject/index.md) and have [set up the Docker private Azure DevOps Services agent](../dockerbuildagent/index.md). You should also have set up Maven package management and have a MyShuttleCalc package in the feed. This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: You don't have to use the Azure container registry - you can use whatever registry you choose. You can also create an equivalent build using Jenkins.
+> [!NOTE]
+> You don't have to use the Azure container registry - you can use whatever registry you choose. You can also create an equivalent build using Jenkins.
 
 ## Create a Docker Container Registry in Azure
 
@@ -138,7 +139,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     | Server URL | `http://10.0.0.4:8080`  | Selects JaCoCo as the coverage tool |
     | Source Files Directory | `src/main` | Sets the source files directory for JaCoCo |
 
-    ![Maven task settings](../_img/builddocker/Azure DevOps Services-maven.png)
+    ![Maven task settings](../_img/builddocker/vsts-maven.png)
 
 1. Click on the "Copy Files" task. Set the Contents property to:
 
@@ -148,7 +149,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     *.release.*
     ```
 
-    ![Copy Files task settings](../_img/builddocker/Azure DevOps Services-copyfiles.png)
+    ![Copy Files task settings](../_img/builddocker/vsts-copyfiles.png)
 
     The Publish Build Artifacts task publishes everything in the artifact staging directory. The Copy Files task copies the following artifacts into this directory so that they are available for Release (which you will create in a later lab):
 

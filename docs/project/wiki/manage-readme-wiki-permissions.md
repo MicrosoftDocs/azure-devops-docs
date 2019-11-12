@@ -7,25 +7,19 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.date: 11/19/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Manage README and Wiki permissions
+# Manage Wiki permissions
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
 
-By default, all members of the Contributors group can edit README files and Wiki pages.
-
-<a id="manage-readme-permissions"></a>
-
-## Manage README permissions
-
-You manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md).
+By default, all members of the Contributors group can edit Wiki pages.
 
 ::: moniker range=">= tfs-2018"
 
@@ -43,7 +37,7 @@ By default, all project contributors have read and edit access of the wiki repos
 
 ::: moniker range=">=tfs-2018"
 
-To open the Security dialog, choose **More>Security** on the wiki home page.
+To open the Security dialog, choose **More > Wiki Security**.
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki, Choose More, select security](_img/wiki/wiki-open-security.png)
@@ -54,10 +48,7 @@ For definitions of each repository permission, see [Git repository permissions](
 
 ## Don't have access to create a page?
 
-If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki. Even if you don't have access to a wiki page, you can see the security and identify an administrative member who can provision access to the wiki.
-
-> [!div class="mx-imgBorder"]  
-> ![View wiki security if you don't have access to Wiki](_img/wiki/wiki-no-permission-message.png)  
+If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki.
 
 ## Stakeholder wiki access
 
@@ -77,4 +68,3 @@ Users with [Stakeholder access](../../organizations/security/get-started-stakeho
 
 - [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md)
 - [Get Started with Git](../../repos/git/gitquickstart.md)
-- [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

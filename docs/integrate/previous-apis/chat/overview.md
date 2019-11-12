@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Room Overview | REST API Reference for Team Foundation Server
 description: Work with team rooms, users, and messages programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8A15216E-A1DC-423A-939C-981C95648307
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -41,7 +41,7 @@ Get the [team rooms](./rooms.md) in a VSTS organization.
 ### Join a room
 
 1. Get the ID of the user.
-2. [Add the authenticed user](./users.md#joinaroom) to the room.
+2. [Add the authenticated user](./users.md#joinaroom) to the room.
 
 ### Post a message to the room
 

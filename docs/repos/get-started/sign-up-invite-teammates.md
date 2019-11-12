@@ -5,11 +5,11 @@ description: Quickstart guide to signing up and inviting others to join a team p
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
-ms.date: 09/10/2018
-monikerRange: 'vsts'
+author: apawast
+ms.date: 05/06/2018
+monikerRange: 'azure-devops'
 ---
 
 # Sign up for free and invite others to collaborate on your project
@@ -19,6 +19,10 @@ monikerRange: 'vsts'
 <a name="MicrosoftAccount"></a>
 
 [!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
+
+<a name="GitHubAccount"></a>
+
+[!INCLUDE [sign-in-github-account](../../_shared/sign-in-github-account.md)]
 
 <a id="invite-others" />
 

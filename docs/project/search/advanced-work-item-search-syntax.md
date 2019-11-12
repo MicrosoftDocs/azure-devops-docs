@@ -5,19 +5,20 @@ ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Work Item Search is available as a built-in extension in Azure DevOps and TFS.
-Users can use Work Item Search by default without any installation.
+Users can use Work Item Search by default without any installation 
+when Boards service is installed and enabled in Azure DevOps Services.
 
 By using Work Item Search you can:
 
@@ -41,6 +42,8 @@ By using Work Item Search you can:
 * **Take advantage of integration with work item tracking**:
   The Work Item Search interface integrates with familiar controls for managing your work items;
   letting you view, edit, comment, share, and much more.
+
+
 
 <a name="acrossfield"></a>
 ## Full text search across all fields
@@ -76,17 +79,17 @@ The dropdown list of suggestions helps complete your search faster.
 Mix and match the functions to create quick powerful searches. For example:
 
 * Scope your search terms to match in any work item field including custom fields.
-Simply type the field name followed by the search terms; for example, a search such as **tags:Critical** 
-finds work items having a field 'tags' containing the term 'Critical'.
+  Simply type the field name followed by the search terms; for example, a search such as **tags:Critical** 
+  finds work items having a field 'tags' containing the term 'Critical'.
 
 * Use multiple inline search filters to scope your search by any work item field, including custom fields.
-For example, a search such as **t: Bug path:"project\search"** finds all bugs in the area path "project\search".
+  For example, a search such as **t: Bug path:"project\search"** finds all bugs in the area path "project\search".
 
 * Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer and float fields.
-For example, a search such as **t: Bug CreatedDate> @Today-7** finds all bugs created in the last week
+  For example, a search such as <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week
 
 * For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
-for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that neccesarily contain the path "tools.demoproject.com". 
+  for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="_img/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
@@ -122,15 +125,17 @@ Type or paste the work item ID in the search box in the Azure DevOps or TFS titl
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"  
 
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal-new.png)
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"  
 
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal.png)
 
----
+::: moniker-end
 
 <a name="boolean"></a>
 ## Narrow your search with Boolean operators

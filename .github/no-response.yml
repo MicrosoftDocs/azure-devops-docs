@@ -1,0 +1,15 @@
+# Configuration for probot-no-response - https://github.com/probot/no-response
+
+# Number of days of inactivity before an Issue is closed for lack of response
+daysUntilClose: 14
+# Label requiring a response
+responseRequiredLabel: article-url-needed
+# Comment to post when closing an Issue for lack of response. Set to `false` to disable
+closeComment: >
+  This issue has been automatically closed because there has been no response
+  to our request for the article URL from the original author. To continue the 
+  discussion, please open a new issue that is associated with a topic by browsing 
+  to the topic on docs.microsoft.com and choosing **Content feedback** at the bottom. 
+  Thank you for your feedback.
+
+![image](https://user-images.githubusercontent.com/1580889/51848491-af95cd80-22eb-11e9-81a2-1680fc40caf9.png)

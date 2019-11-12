@@ -5,9 +5,9 @@ ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -161,20 +161,20 @@ The extension lets you create test cases as you explore your application.
 
    ![Stop the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-05.png)
 
-1. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
+2. If you are using Azure DevOps, or TFS 2017 and higher, open the **Session timeline** page and choose the "view" icon to see your completed exploratory 
    sessions in Azure DevOps or TFS.
 
    ![View the exploratory testing session](_img/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
  
    ![View exploratory testing sessions on the server](_img/connected-mode-exploratory-testing/create-bugs-07.png)
 
-1. Now see how you can [view your sessions and get insights](insights-exploratory-testing.md).
+## See your exploratory session results 
+
+After you file bugs, create tasks, or create test cases, all these show up in the "Recent exploratory sessions" page in Azure Test Plans or TFS.
+
+* See how you can [view your sessions and get insights](insights-exploratory-testing.md).
 
 [How do I play the video recordings I created with the extension?](reference-qa.md#recording-playback)
 
-## Next step
-
-> [!div class="nextstepaction"]
-> [Get insights across your sessions](insights-exploratory-testing.md)

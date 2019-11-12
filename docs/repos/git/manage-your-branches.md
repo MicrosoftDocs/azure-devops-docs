@@ -5,9 +5,9 @@ description: Find your work and search for branches using the branches page in A
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/13/2018
 monikerRange: '>= tfs-2017'
@@ -15,37 +15,26 @@ monikerRange: '>= tfs-2017'
 
 # Manage branches
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 Manage the work in your team's Git repo from the **Branches** view on the web. 
 Customize the view to track the branches you care most about so you can stay on top of changes made by your team.
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
 ![View your branches](_img/repos-navigation/repos-branches.png)
 
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
 ![Access the branches view from your Git repo in Team Explorer](_img/branches/branches_nav.png)
 
----
+::: moniker-end
 
 ## Organize your branches
 
@@ -89,8 +78,8 @@ If the branch has a pull request open, you can see its pull request ID. Select t
 The ahead and behind numbers listed for each branch are in comparison with the branch currently labeled **Compare** on the Branches page. Update your compare branch to see how far ahead or behind
 your branches shown on the page are to another branch in your repo:
 
-0. Select the **...** next to the branch you want to set as the baseline for comparison.   
-0. Select **Set as compare branch**.
+1. Select the **...** next to the branch you want to set as the baseline for comparison.   
+2. Select **Set as compare branch**.
 
 The **Compare** label will move to this branch and the other branches on the page will have the number of commits ahead/behind updated to reflect the new comparison.
 
@@ -109,14 +98,7 @@ browse the files based on the most recent commit on the branch. **View history**
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
-
-::: moniker-end
-
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"
 
 1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
 
@@ -126,11 +108,11 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
 4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
-  ![Set default branch](_img/pull-requests/set-default-branch-new-nav.png)
+   ![Set default branch](_img/pull-requests/set-default-branch-new-nav.png)
 
 ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
 1. Select the settings icon while you have your project open to bring up the project administration page.
 
@@ -144,4 +126,4 @@ Select **Previous navigation** to view the steps for this procedure in your sele
 
    ![Set a default branch for a Git repo in Azure DevOps Services or TFS](_img/pull-requests/set_default_branch.png)
 
----
+::: moniker-end

@@ -5,8 +5,9 @@ description: Add fields to a work item form through export, modify, and import o
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05912b54-10f4-4ba2-947d-0c856daafdf0
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -80,7 +81,7 @@ ms.date: 01/12/2017
 > [!NOTE]
 >  The following information is provided for reference purposes only.  
   
-```  
+```xml
 <Assignments>  
 &nbsp;&nbsp;&nbsp;<Assignment IsPrimary="true" Succeeded="true">  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Field RefName="System.AssignedTo">Eduard Dell</Field>  

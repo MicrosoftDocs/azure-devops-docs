@@ -4,11 +4,12 @@ description: Find, download, and cache a specified version of NuGet and add it t
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: amullans
+ms.author: phwilson
+author: chasewilson
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # NuGet Tool Installer task
@@ -24,8 +25,11 @@ Use this task in a build or release pipeline to find, download, and cache a spec
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/NuGetToolInstallerV0.md)]
+
 ::: moniker-end
 
 ## Arguments

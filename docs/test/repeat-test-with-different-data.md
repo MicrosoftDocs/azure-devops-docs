@@ -5,10 +5,10 @@ ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 12/07/2018
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 06/02/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -122,7 +122,7 @@ parameter combinations. To speed things up, create an action
 recording when you run the test with the first set of parameter 
 values, and then play it back for the other sets.
 
-1. Use Microsoft Test Manager to [run the test](run-manual-tests.md).
+1. Use Azure Test Plans to [run the test](run-manual-tests.md).
 
 1. Select **Create action recording** before you choose **Start**.
 
@@ -141,7 +141,7 @@ Record and playback doesn't work with all applications. For details, see
 ## See also
 
 * [FAQs for manual testing](reference-qa.md#repeatdifferent)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 * [Testing different configurations](test-different-configurations.md)
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](how-long-to-keep-test-results.md)

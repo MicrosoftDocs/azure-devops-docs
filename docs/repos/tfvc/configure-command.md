@@ -5,9 +5,9 @@ description: Configure Command
 ms.assetid: c61c2a48-20d4-4452-b6e1-6c1aa3b521ee
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Enables an administrator to view and change the following configuration settings for a project in the **Source Control Settings** dialog box:
 
@@ -81,7 +81,7 @@ The following example displays the myproj project settings in the project collec
 
 #### Concepts
 
-[Managing File Types](/tfs/server/admin/manage-file-types)
+[Managing File Types](/azure/devops/server/admin/manage-file-types)
 
 #### Other Resources
 

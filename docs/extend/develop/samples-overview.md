@@ -5,16 +5,19 @@ title: Samples Overview | Extensions for Azure DevOps Services
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
 # Azure DevOps Services extension samples
 
-You can get started developing your extension by working from an sample. 
+Get started developing your extension by working from a sample. 
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 The Microsoft samples listed below show the capabilities of the extension framework and how to 
 contribute to various areas. Each sample illustrates one or more contributions. We've limited the 
 number of contributions for each sample to increase understanding of the extension framework.
@@ -34,10 +37,11 @@ number of contributions for each sample to increase understanding of the extensi
 | [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) | [GitHub](https://github.com/melborp/StateModelVisualization) | Toolbar action (work item), Hub | Visualize the state model for a selected work item type. |
 | [Tags MRU](https://marketplace.visualstudio.com/items?itemName=cschleiden.tags-mru) | [GitHub](https://github.com/cschleiden/vsts-extension-tags-mru) | Context menu action (work item), Notification (work item) | Keeps a list of the most recently used work item tags and allows adding them with a single click. |
 | [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar) | [GitHub](https://github.com/Microsoft/vsts-team-calendar) | Hub, Event sources | Track events important to your team, view and manage days off, quickly see when sprints start and end, and more. |
-| [Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) | [GitHub](https://github.com/ALM-Rangers/Visualize-Team-Project-Health-Widgets) | Dashboard Widget | Enable users to visualise the overall health of builds, delivering a visual cue similar to the Codify Build Light. |
+| [Project Health](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TeamProjectHealth) | [GitHub](https://github.com/ALM-Rangers/Visualize-Team-Project-Health-Widgets) | Dashboard Widget | Enable users to visualize the overall health of builds, delivering a visual cue similar to the Codify Build Light. |
 | [User Voice UI](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui) | [GitHub](https://github.com/Microsoft/vsts-uservoice-ui-extension) | Group (work item form), Hub, Extension data | Shows rich data of the linked User Voice suggestions on the work item form. It covers the following techniques: calling external APIs, add tags to work item, add links to work item, resize of container. |
 | [Work Item Details](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails) | [GitHub](https://github.com/ALM-Rangers/Work-Item-Details-Widget-Extension) | Context menu action (work item), Dashboard Widget | View details of work item(s) on your dashboard |
 | [WSJF](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) | [GitHub](https://github.com/Microsoft/vsts-wsjf-extension) | Notification (work item), Context menu action (work item) | Calculates the Weighted Shortest Job First (WSJF), which is a formula to calculate the backlog items with highest ROI. It is a popular prioritization feature in frameworks like [SAFe](http://www.scaledagileframework.com/wsjf/). |
+| [Cascading Picklists](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.cascading-picklists-extension) | [GitHub](https://github.com/microsoft/azure-devops-extension-cascading-picklist) | Work Item Form | Convert regular picklist fields into lists that display or hide values depending on the value of a parent picklist. |
 
 ## How to get started
 

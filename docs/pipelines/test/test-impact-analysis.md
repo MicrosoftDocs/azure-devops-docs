@@ -1,22 +1,28 @@
 ---
 title: Use Test Impact Analysis
-ms.custom: seodec18
 description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.custom: continuous-test
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-**Visual Studio 2015.3 and later | TFS 2017.1 and later | Azure Pipelines**
+[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+
+::: moniker range="<= tfs-2018"
+
+> [!NOTE] 
+> Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+
+::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
@@ -45,7 +51,9 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Test Impact Analysis supported scenarios
@@ -58,7 +66,7 @@ At present, TIA is supported for:
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
 * CI and in PR workflows
-* Git, GitHub, External Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
+* Git, GitHub, Other Git, TFVC repos (including partially mapped TFVC repositories with a [workaround](../../articles/test-impact-for-partially-mapped-tfvc-repositories.md))
 * IIS interactions (over REST, SOAP APIs), using HTTP/HTTPS protocols
 * Automated Tests
 * Single machine topology. Tests and app (SUT) must be running on the same machine.
@@ -87,7 +95,7 @@ The Test Impact data collector is automatically configured. No additional steps 
 If your application interacts with a service in the context of IIS, you must also configure the Test Impact data collector to run in the context of IIS by using a **.runsettings** file.
 Here is a sample that creates this configuration:
 
-``` sample.runsettings
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
   <DataCollectionRunSettings>

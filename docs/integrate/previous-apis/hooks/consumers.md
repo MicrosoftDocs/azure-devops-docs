@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Service Hook Consumers | REST API Reference for Team Foundation Server
 description: Work with service hook consumers programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B05297FC-F542-42FD-ACDA-E9734974ACBC
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -42,7 +42,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Zendesk",
       "description": "Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.",
       "imageUrl": "",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396756",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=396756",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -93,7 +93,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "zendesk",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
           "name": "Create a private comment in a ticket",
-          "description": "Create a private comment in a ticket. <a href='http://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
+          "description": "Create a private comment in a ticket. <a href='https://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
           "supportedEventTypes": [
             "workitem.commented"
           ],
@@ -111,7 +111,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zapier",
       "name": "Zapier",
       "description": "Zapier enables you to automate tasks between 200+ online services. <b>Note:</b> Subscriptions for this service must be created and managed at zapier.com.",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390581",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390581",
       "authenticationType": "none",
       "externalConfiguration": {
         "editSubscriptionPropertyName": "editSubscriptionUrl"
@@ -161,7 +161,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/webHooks",
       "name": "Web Hooks",
       "description": "Provides event communication via HTTP",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390531",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390531",
       "authenticationType": "none",
       "inputDescriptors": [],
       "actions": [
@@ -170,7 +170,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "webHooks",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/webHooks/actions/httpRequest",
           "name": "Post via HTTP",
-          "description": "This action posts a JSON object representation of the event to the specified URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='http://go.microsoft.com/fwlink/?LinkID=390531'>Learn More</a>",
+          "description": "This action posts a JSON object representation of the event to the specified URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='https://go.microsoft.com/fwlink/?LinkID=390531'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -345,7 +345,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "UserVoice",
       "description": "UserVoice integrates easy-to-use feedback, helpdesk, and knowledge base management tools in one platform that empowers users to speak and companies to understand.  <b>Note:</b> Subscriptions for this service must be created and managed at uservoice.com.",
       "imageUrl": "",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393617",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393617",
       "authenticationType": "external",
       "externalConfiguration": {},
       "inputDescriptors": [],
@@ -403,12 +403,12 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Trello",
       "description": "Provides integration with Trello",
       "imageUrl": "https://d2k1ftgv7pobq7.cloudfront.net/images/bd87ee916375920ae72dffadbb10d412/logo-blue-lg.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390530",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390530",
       "authenticationType": "external",
       "inputDescriptors": [
         {
           "id": "userToken",
-          "name": "User token (need one? <a href='http://go.microsoft.com/fwlink/?LinkID=390580'>Get it now</a>)",
+          "name": "User token (need one? <a href='https://go.microsoft.com/fwlink/?LinkID=390580'>Get it now</a>)",
           "description": "Your user token provided by Trello.  Click the link in the action description above to learn how to obtain this token.",
           "inputMode": "textBox",
           "isConfidential": true,
@@ -427,7 +427,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "trello",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/trello/actions/createCard",
           "name": "Create a card",
-          "description": "This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. <a href='http://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
+          "description": "This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. <a href='https://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -526,7 +526,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "trello",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/trello/actions/createList",
           "name": "Create a list",
-          "description": "This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. <a href='http://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
+          "description": "This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. <a href='https://go.microsoft.com/fwlink/?LinkID=390530'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -574,7 +574,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "MyGet",
       "description": "MyGet allows you to create and host your own NuGet feeds with your own packages and those from other package sources such as NuGet.org.  <b>Note:</b> Subscriptions for this service must be created and managed at myget.org.",
       "imageUrl": "https://www.myget.org/Content/images/myget/logo.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393619",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393619",
       "authenticationType": "external",
       "externalConfiguration": {},
       "inputDescriptors": [],
@@ -663,7 +663,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Kato",
       "description": "Kato is a powerful collaboration platform based on simple chat that helps organizations move faster by decreasing email volume and making all communication instantly searchable.",
       "imageUrl": "",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393614",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393614",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -698,7 +698,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "kato",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/kato/actions/postEventToRoom",
           "name": "Post event to room",
-          "description": "Posts an event to a Kato room. <a href='http://go.microsoft.com/fwlink/?LinkId=393614'>Learn more.</a>",
+          "description": "Posts an event to a Kato room. <a href='https://go.microsoft.com/fwlink/?LinkId=393614'>Learn more.</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -712,7 +712,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Jenkins",
       "description": "Jenkins is an open source continuous integration service popular with Java teams.",
       "imageUrl": "http://jenkins-ci.org/sites/default/files/images/headshot.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393616",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393616",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -742,7 +742,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
         {
           "id": "password",
           "name": "User API token (or password)",
-          "description": "The user's API token, which is available in the Jenkin user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.",
+          "description": "The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.",
           "inputMode": "passwordBox",
           "isConfidential": true,
           "useInDefaultDescription": false,
@@ -758,7 +758,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "jenkins",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/jenkins/actions/triggerGenericBuild",
           "name": "Trigger generic build",
-          "description": "Triggers a generic Jenkins build, invoking the Jenkins build URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='http://go.microsoft.com/fwlink/?LinkId=393616'>Learn more.</a>",
+          "description": "Triggers a generic Jenkins build, invoking the Jenkins build URL. Secure, HTTPS endpoints are recommended due to the potential for private data in the event payload. <a href='https://go.microsoft.com/fwlink/?LinkId=393616'>Learn more.</a>",
           "supportedEventTypes": [
             "git.push",
             "build.complete",
@@ -809,7 +809,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
             {
               "id": "buildParams",
               "name": "Build parameters",
-              "description": "Build parameteres names and values separated by a colon(e.g. \"param1:value1\") with each name-value pair appearing on its own line of text",
+              "description": "Build parameters names and values separated by a colon(e.g. \"param1:value1\") with each name-value pair appearing on its own line of text",
               "inputMode": "textArea",
               "isConfidential": false,
               "useInDefaultDescription": false,
@@ -840,7 +840,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Hubot",
       "description": "Hubot is a popular chat bot service that responds to commands sent by users in a team room; helping automate common tasks like creating work items, checking build status, and viewing recent team activity.",
       "imageUrl": "",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=402677",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=402677",
       "authenticationType": "external",
       "inputDescriptors": [],
       "actions": [
@@ -849,7 +849,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "hubot",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/hubot/actions/postMessage",
           "name": "Post a message",
-          "description": "This action sends a team room message to the specified URL (typically this URL will end with /hubot/messagehook). A strong user name and password are highly recommended. <a href='http://go.microsoft.com/fwlink/?LinkID=402677'>Learn more.</a>",
+          "description": "This action sends a team room message to the specified URL (typically this URL will end with /hubot/messagehook). A strong user name and password are highly recommended. <a href='https://go.microsoft.com/fwlink/?LinkID=402677'>Learn more.</a>",
           "supportedEventTypes": [
             "message.posted"
           ],
@@ -900,7 +900,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "hubot",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/hubot/actions/postMessageToQueue",
           "name": "Post a message to an Azure Service Bus Queue",
-          "description": "This action sends a team room message to the specified Azure Service Bus queue. <a href='http://go.microsoft.com/fwlink/?LinkID=402677'>Learn more.</a>",
+          "description": "This action sends a team room message to the specified Azure Service Bus queue. <a href='https://go.microsoft.com/fwlink/?LinkID=402677'>Learn more.</a>",
           "supportedEventTypes": [
             "message.posted"
           ],
@@ -949,7 +949,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "HipChat",
       "description": "HipChat, from Atlassian, provides group chat and video chat built for teams.",
       "imageUrl": "http://www.hipchat.com/img/logo.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkId=392098",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkId=392098",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -971,7 +971,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "hipChat",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/hipChat/actions/postMessageToRoom",
           "name": "Post a message to a room",
-          "description": "Post a message about the event to a room in HipChat. <a href='http://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
+          "description": "Post a message about the event to a room in HipChat. <a href='https://go.microsoft.com/fwlink/?LinkId=392098'>Learn more.</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1066,7 +1066,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/flowdock",
       "name": "Flowdock",
       "description": "Flowdock provides chat and inbox for teams, providing one place to talk and stay up-to-date.",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393615",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393615",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -1112,7 +1112,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "flowdock",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/flowdock/actions/postMessageToChat",
           "name": "Post a message to a team chat",
-          "description": "Post a message about the event to a team chat in Flowdock. <a href='http://go.microsoft.com/fwlink/?LinkId=393615'>Learn more.</a>",
+          "description": "Post a message about the event to a team chat in Flowdock. <a href='https://go.microsoft.com/fwlink/?LinkId=393615'>Learn more.</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1151,7 +1151,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "flowdock",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/flowdock/actions/postMessageToTeamInbox",
           "name": "Post a message to a team inbox",
-          "description": "Post a message about the event to a team inbox in Flowdock. <a href='http://go.microsoft.com/fwlink/?LinkId=393615'>Learn more.</a>",
+          "description": "Post a message about the event to a team inbox in Flowdock. <a href='https://go.microsoft.com/fwlink/?LinkId=393615'>Learn more.</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1241,7 +1241,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "Campfire",
       "description": "Campfire provides team collaboration with real time chat. Campfire is like instant messaging, but designed exclusively for groups.",
       "imageUrl": "https://campfirenow.com/images/logo_campfire-full.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=393613",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=393613",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -1277,7 +1277,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "campfire",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/campfire/actions/postMessageToRoom",
           "name": "Post a message to a room",
-          "description": "Post a message about the event to a room in Campfire. <a href='http://go.microsoft.com/fwlink/?LinkID=393613'>Learn more.</a>",
+          "description": "Post a message about the event to a room in Campfire. <a href='https://go.microsoft.com/fwlink/?LinkID=393613'>Learn more.</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1321,8 +1321,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureServiceBus",
       "name": "Azure Service Bus",
       "description": "Microsoft Azure Service Bus provides a hosted, secure, and widely available infrastructure for widespread communication, large-scale event distribution, naming, and service publishing.",
-      "imageUrl": "http://www.windowsazure.com/css/images/logo.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=392636",
+      "imageUrl": "https://www.windowsazure.com/css/images/logo.png",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=392636",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -1346,7 +1346,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "azureServiceBus",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureServiceBus/actions/serviceBusNotificationHubSend",
           "name": "Send a message to a Notification Hub",
-          "description": "This action sends a generic, template notification to the specified Azure Notification Hub. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+          "description": "This action sends a generic, template notification to the specified Azure Notification Hub. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1391,7 +1391,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "azureServiceBus",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureServiceBus/actions/serviceBusQueueSend",
           "name": "Send a message to a Service Bus Queue",
-          "description": "This action sends a JSON string representation of the event to the specified Azure Service Bus queue. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+          "description": "This action sends a JSON string representation of the event to the specified Azure Service Bus queue. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1530,7 +1530,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "azureServiceBus",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureServiceBus/actions/serviceBusTopicSend",
           "name": "Send a message to a Service Bus Topic",
-          "description": "This action sends a JSON string representation of the event to the specified Azure Service Bus topic. <a href='http://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
+          "description": "This action sends a JSON string representation of the event to the specified Azure Service Bus topic. <a href='https://go.microsoft.com/fwlink/?LinkID=392636'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1671,8 +1671,8 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureStorageQueue",
       "name": "Azure Storage",
       "description": "Microsoft Azure Storage is a service for storing large numbers of messages that can be accessed from anywhere in the world. It is useful for creating a backlog of work to process asynchronously.",
-      "imageUrl": "http://www.windowsazure.com/css/images/logo.png",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=390532",
+      "imageUrl": "https://www.windowsazure.com/css/images/logo.png",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=390532",
       "authenticationType": "external",
       "inputDescriptors": [
         {
@@ -1710,7 +1710,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "azureStorageQueue",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/azureStorageQueue/actions/enqueue",
           "name": "Insert a message in a Storage Queue",
-          "description": "This action inserts a JSON string representation of the event to the specified Azure storage queue. <a href='http://go.microsoft.com/fwlink/?LinkID=390532'>Learn More</a>",
+          "description": "This action inserts a JSON string representation of the event to the specified Azure storage queue. <a href='https://go.microsoft.com/fwlink/?LinkID=390532'>Learn More</a>",
           "supportedEventTypes": [
             "*"
           ],
@@ -1882,7 +1882,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
       "name": "AppVeyor",
       "description": "AppVeyor automates building, testing, and deployment of .NET applications - helping your team focus on delivering great apps.",
       "imageUrl": "",
-      "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396758",
+      "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=396758",
       "authenticationType": "external",
       "externalConfiguration": {},
       "inputDescriptors": [],
@@ -1892,7 +1892,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers?api-version=1.0
           "consumerId": "appVeyor",
           "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/appVeyor/actions/triggerBuild",
           "name": "Trigger a AppVeyor build",
-          "description": "Trigger a AppVeyor build <a href='http://go.microsoft.com/fwlink/?LinkID=396758'>Learn more</a>",
+          "description": "Trigger a AppVeyor build <a href='https://go.microsoft.com/fwlink/?LinkID=396758'>Learn more</a>",
           "supportedEventTypes": [
             "git.push"
           ],
@@ -1953,7 +1953,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk?api-vers
   "name": "Zendesk",
   "description": "Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.",
   "imageUrl": "",
-  "informationUrl": "http://go.microsoft.com/fwlink/?LinkID=396756",
+  "informationUrl": "https://go.microsoft.com/fwlink/?LinkID=396756",
   "authenticationType": "external",
   "inputDescriptors": [
     {
@@ -2004,7 +2004,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk?api-vers
       "consumerId": "zendesk",
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
       "name": "Create a private comment in a ticket",
-      "description": "Create a private comment in a ticket. <a href='http://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
+      "description": "Create a private comment in a ticket. <a href='https://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
       "supportedEventTypes": [
         "workitem.commented"
       ],
@@ -2039,7 +2039,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions?
       "consumerId": "zendesk",
       "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
       "name": "Create a private comment in a ticket",
-      "description": "Create a private comment in a ticket. <a href='http://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
+      "description": "Create a private comment in a ticket. <a href='https://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
       "supportedEventTypes": [
         "workitem.commented"
       ],
@@ -2071,7 +2071,7 @@ GET https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/
   "consumerId": "zendesk",
   "url": "https://mytfsserver/DefaultCollection/_apis/hooks/consumers/zendesk/actions/createPrivateComment",
   "name": "Create a private comment in a ticket",
-  "description": "Create a private comment in a ticket. <a href='http://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
+  "description": "Create a private comment in a ticket. <a href='https://go.microsoft.com/fwlink/?LinkId=396756'>Learn more.</a>",
   "supportedEventTypes": [
     "workitem.commented"
   ],

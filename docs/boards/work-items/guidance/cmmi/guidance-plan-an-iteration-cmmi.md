@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 || azdevserver-2019'
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
@@ -25,7 +26,7 @@ Developing software in iterations means that you divide your work into increment
 ## Create tasks to implement and test each requirement  
  The iteration plan is represented by the list of tasks that are scheduled for the iteration. Each task is linked to the product requirement that it implements.  
   
- The task list is visible in the [taskboard](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), Work Breakdown query, and on the [Progress Dashboard](http://msdn.microsoft.com/4aa21c4a-651b-4cec-a204-59524abdae82).  
+ The task list is visible in the [taskboard](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), Work Breakdown query, and on the [Progress Dashboard](https://msdn.microsoft.com/4aa21c4a-651b-4cec-a204-59524abdae82).  
   
  At the start of the iteration, the team reviews the requirements that are scheduled for this iteration and creates task work items. The task work items describe the work (such as design, development, and testing) that is required to complete the requirement.  
   
@@ -58,6 +59,6 @@ Developing software in iterations means that you divide your work into increment
 ##  <a name="AdditionalResources"></a> Additional resources  
  For more information, see the following Web resources:  
   
- [Project Retrospectives: A Handbook for Team Reviews](http://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
+ [Project Retrospectives: A Handbook for Team Reviews](https://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
   
- [Agile Retrospectives: Making Good Teams Great](http://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.
+ [Agile Retrospectives: Making Good Teams Great](https://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.

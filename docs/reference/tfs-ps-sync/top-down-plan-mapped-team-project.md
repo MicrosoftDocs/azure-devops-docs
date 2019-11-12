@@ -5,8 +5,9 @@ description: Maintain scheduling data and resource usage for requirements in the
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9760e3f2-2c1a-4c05-8d3d-c25abc79289a
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017
@@ -25,17 +26,17 @@ ms.date: 01/12/2017
 
   
 > [!NOTE]
->  For a demonstration video, see the following page on the Microsoft website: [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222610). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
+>  For a demonstration video, see the following page on the Microsoft website: [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222610). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
   
  **Requirements**  
   
  To perform the procedures in this topic, the following permissions must be assigned:  
   
--   To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
+- To publish tasks from an enterprise project plan to Team Foundation, the resource who is assigned to the task must be a member of the **Contributors** group for the project.  
   
--   To update work items in Team Foundation and submit them to Project Server, users must be members of the **Contributors** group for the project. Also, users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project.  
+- To update work items in Team Foundation and submit them to Project Server, users must be members of the **Contributors** group for the project. Also, users must be members of the **Team Members** group for Project Web Access or Project Web App (PWA) or must have the Open Project and View Project Site permissions in Project.  
   
- For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="Overview"></a> Process Overview of Top-Down Planning by Using Project Server  
  As the following illustration shows, 10 main steps occur in the synchronization of requirements between the project plan and the project.  
@@ -57,7 +58,7 @@ ms.date: 01/12/2017
 |Area to configure|Recommended configuration|Notes|  
 |-----------------------|-------------------------------|-----------|  
 |Process template for project|Microsoft Solutions Framework (MSF) for Capability Maturity Model Integration (CMMI) Process Improvement|The CMMI template provides requirement and task types of work items. You can use the backlog and board pages to manage your backlog and plan and run your sprints. Or, you can use shared queries that you open in Excel to quickly define and link tasks to requirements.|  
-|Project mapping|`/workItemTypes:Requirement`|When you map the enterprise project plan to the project, specify the requirement as the work item type. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](http://go.microsoft.com/fwlink/?LinkId=203354).|  
+|Project mapping|`/workItemTypes:Requirement`|When you map the enterprise project plan to the project, specify the requirement as the work item type. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
 |Field mapping|`/useDefaultFieldMappings`|You can use the default field mappings. No additional field mappings are required.|  
 |Resource Names|You must add team members to the Team Members group for each instance of PWA, or you must grant them the Open Project and View Project Site permissions in Project. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).<br /><br /> Also, you must add all team members to the enterprise resource pool and the resource pool for the project plan.|You must grant permissions to all user accounts that are assigned as resources in the project plan or that are named in the Assigned To field for a work item. These users submit status updates that flow into the status queue for the instance of PWA.<br /><br /> All names that are assigned to the **Resource Names** field must be recognized as valid contributors of the project.|  
 |Project managers|Accounts of users of Project Professional  must be granted **View Project-level information** or assigned as members of the **Reader** group in Team Foundation for projects to which they will publish.|You must grant project managers permissions to modify work items for those projects that are mapped to their enterprise project plans.|  
@@ -65,15 +66,15 @@ ms.date: 01/12/2017
 ##  <a name="PMTasks"></a> Project Manager Tasks and Best Practices  
  Best or required practices are provided for the following tasks that the project manager performs:  
   
--   [Define Requirements](#definerequirements)  
+- [Define Requirements](#definerequirements)  
   
--   [Approve Status Updates](#ApproveUpdates)  
+- [Approve Status Updates](#ApproveUpdates)  
   
--   [Review the Schedule, and Set a Baseline](#ReviewSchedule)  
+- [Review the Schedule, and Set a Baseline](#ReviewSchedule)  
   
--   [Preview Updates and Impacts on Critical Path](#determineimpacts)  
+- [Preview Updates and Impacts on Critical Path](#determineimpacts)  
   
- In addition to these activities, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
+  In addition to these activities, you can also view the assignment of work to resources. For more information, see [Work with resource rollup](work-with-resource-rollup.md).  
   
 ###  <a name="definerequirements"></a> Define Requirements  
  When you define requirements, you should assign them to the development team lead. As the following illustration shows, you must also set the **Publish to Team Project** field to **Yes**, and the **Work Item Type** field to **Requirement**. If only one type of work item is mapped for the project, it is set automatically.  
@@ -112,7 +113,7 @@ ms.date: 01/12/2017
   
  ![Rollup of estimated work](_img/tfs-ps_pp_rollup.png "TFS-PS_PP_RollUp")  
   
- To maintain control of your schedule, you set a baseline to track the team progress against the target schedule. For more information, see the following page on the Microsoft website: [Create or update a baseline or an interim plan](http://go.microsoft.com/fwlink/?LinkId=203362).  
+ To maintain control of your schedule, you set a baseline to track the team progress against the target schedule. For more information, see the following page on the Microsoft website: [Create or update a baseline or an interim plan](https://go.microsoft.com/fwlink/?LinkId=203362).  
   
 ###  <a name="determineimpacts"></a> Preview Updates and Impacts on the Critical Path  
  As team members make progress, they update the **Remaining Work** and **Completed Work** fields for each task. These values roll up for each requirement that is published to Team Foundation. Before you approve the updates, you can preview the impact that the updates will have on the critical path by clicking **Preview Updates** in the **Approval Center**.  

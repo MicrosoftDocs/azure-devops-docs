@@ -1,28 +1,57 @@
----
-title: How are Backlogs used to support portfolios, priority, and multi-team ownership 
+﻿---
+title: Backlogs used for portfolios, priority, & multi-team ownership
 titleSuffix: Azure Boards 
 description: Plan, track, and organize user stories, features, and bugs using backlogs and multiple teams 
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28C02AE8-CF8D-4B6E-8301-F46A5622E6C4
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 09/13/2018
---- 
+ms.date: 10/14/2019
+---
 
 # Backlogs, portfolios, and Agile project management 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
+
+::: moniker range=">= tfs-2017"
+With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. Once you have your plan in place, you can start driving code development efforts. 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
+::: moniker-end
+
+If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. If you want to add another product backlog, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).
+
+## Use backlogs
+
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
 If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
 
-####In a nutshell you use Backlogs to: 
+#### In a nutshell you use Backlogs to: 
+
+::: moniker range="azure-devops"  
+
+- Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
+- [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
+- [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
+- Quickly assign backlog items to team members and to sprints using either [bulk update](bulk-modify-work-items.md) or [drag and drop to a sprint](../sprints/assign-work-sprint.md)
+- Group or organize backlog items by [mapping them within a hierarchy](organize-backlog.md)  
+- Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
+- [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint
+- [Display rollup progress, counts, or totals](display-rollup.md) to show completion of work or amount of work still to do.
+
+::: moniker-end 
+
+::: moniker range="<= azure-devops-2019"  
+
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first
 - [Add details and estimates](create-your-backlog.md#estimates) to your backlog items 
@@ -31,39 +60,31 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 - Review the hierarchy or [portfolio of work assigned to multiple teams](#multi-team)
 - [Forecast work](../sprints/forecast.md) to estimate what can be delivered within a sprint.
 
-> [!NOTE]
-> To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
+::: moniker-end 
 
+[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
 
 ## Product and portfolio backlogs 
 
-Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.. 
+Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"
-![New Navigation, Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)    
+![Boards>Backlogs](../work-items/_img/about-agile/view-backlogs.png)  
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
 !["Web portal, choose Boards>Backlogs](../work-items/_img/view-add/view-stories-backlogs-standard.png)
+
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2015"
+
+::: moniker range="<= tfs-2015"
+
 ![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end 
-
----
 
 
 ## Backlog configuration 
@@ -76,7 +97,11 @@ Each backlog is associated with a team. Team configuration settings determine th
 - Determines which backlog levels are active for the team 
 - Defines how bugs will be treated, as requirements or as tasks. 
 
-For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md), [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md), and [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md).
+For details, see the following articles: 
+- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
+- [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
 
 ## Define work items and create your backlog  
 
@@ -87,6 +112,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 
 <a id="stack-rank" />
+
 ## Backlog priority or stack rank order
 
 <a id="change-position"> </a> 
@@ -102,11 +128,15 @@ The preferred method for bulk edit is to use multi-select to move items to the t
 ## In Progress items and work listed on the backlog 
 
 ::: moniker range=">= tfs-2018" 
+
 Backlogs are designed to display work that corresponds to a Proposed, In Progress, or Resolved category state. Once you've completed work and its state enters a *Done*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work, or view the [**Recently completed** pivot from the **Work Items** page](../work-items/view-add-work-items.md). 
+
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2017" 
+::: moniker range="<= tfs-2017" 
+
 Backlogs are designed to display work that is in progress. Once you've completed work and it's state enters a *Done*, *Completed*, or *Closed* state, then it falls off the backlog view. You can always [create a query](../queries/using-queries.md) to view completed work. 
+
 ::: moniker-end 
 
 In general, you'll want to display all items that are in the **In Progress** category state, which corresponds to the *Active* and *Committed* states. To focus on work that is proposed but not in progress, you can toggle the backlog view to turn off [**In Progress**](create-your-backlog.md#convert-ideas). This is useful when [forecasting your product backlog](../sprints/forecast.md). 
@@ -120,69 +150,87 @@ When you have a number of initiatives your teams are working on, you often times
 
 For example, here the Customer Service team has organized several backlog items under two features and one epic. 
 
-> [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/overview/customer-service-backlog-parents-on.png)  
+::: moniker range="azure-devops"
 
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership](_img/overview/customer-service-backlog-parents-on.png)  
+
+::: moniker-end 
+
+::: moniker range="<= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership](_img/overview/customer-service-backlog-parents-on.png)  
+
+::: moniker-end 
+
+[!INCLUDE [temp](../_shared/velocity-section.md)]
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
 
 <a id="multi-team">  </a>
+
 ## Work with multi-team ownership of backlog items  
 
 When you have several teams, your hierarchical views may show items that belong to other teams. 
 
 ### View backlog items and parent items owned by other teams
 
-Your team's product backlog lists only those items whose area path matches those your team has subscribed to. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). However, if you show parents, 
+Your team's product backlog lists only those items whose area path matches those assigned to your team. However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 
-# [New navigation](#tab/new-nav)
+::: moniker range="azure-devops"
 
-::: moniker range=">= azdevserver-2019"
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/customer-service-backlog-parents-on.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/customer-service-backlog-parents-on-s155.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker range="azure-devops-2019"
+
+Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/customer-service-backlog-parents-on.png)   
+
+> [!TIP]    
+> Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
+
 ::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, previous navigation](_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
 
 ::: moniker-end   
+
 ::: moniker range="tfs-2017" 
+
 Backlog displays with work item icons is supported for TFS 2017.2 and later versions. For TFS 2017.1 and earlier versions, items that are owned by other teams appear with hollow-filled bars.  
 
 <img src="_img/ALM_OB_CustServTeamBacklog.png" alt="Team backlog is filtered based on area path ownership" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
+
 Items that are owned by other teams appear with hollow-filled bars.  
 
 ![Team backlog is filtered based on area path ownership](_img/ALM_OB_CustServTeamBacklog.png)  
+
 ::: moniker-end   
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
-
-
---- 
+For details, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md). 
 
 ### View Epics and child items owned by other teams
 
@@ -190,48 +238,42 @@ Here's another example that shows the **Epics** backlog for the **Management** t
 Drilling down, you can see all the backlog items and features, even though they 
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
+::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics-s155.png)   
+
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics.png)   
+
 ::: moniker-end 
 
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 Here's another example that shows the **Epics** backlog for the **Management** team. 
 Drilling down, you can see all the backlog items and features, even though they 
 belong to one of three different teams: Customer Service, Phone, and Web.  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership, new navigation](_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Backlog that shows parents and multi-team ownership](_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 
 <img src="_img/ALM_OB_MutliTeamOwnershipEpics.png" alt="Drill-down of Epics showing features and backlog items owned by other teams" style="border: 1px solid #C3C3C3;" />  
 
 ::: moniker-end 
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
-
 From these views, you can reparent items, both those that you own and those owned by other teams. 
 However, you can't reorder items that another team owns.  
 
 This enables management teams to focus on high level features and epics, and development teams 
-to focus on just those backlog items they're responsible to deliver. 
+to focus on just those backlog items they're responsible to deliver.
 
 To make this work for you, you'll need to [add teams and set their area paths](../../organizations/settings/add-teams.md). 
 For example, you can create a team structure similar to this one with two management and three development teams.
@@ -240,17 +282,16 @@ For example, you can create a team structure similar to this one with two manage
 
 To learn more about hierarchical team and backlog structures, see [Portfolio management](../plans/portfolio-management.md).
 
+<a id="leaf-node" />
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
 ## Display of leaf node work items  
 
-When a product or portfolio backlog contains same-category, nested work items, only the last child item within the nested set displays on the Kanban board, sprint backlog, or taskboard. 
+For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
 [!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
 
-To learn more, see [Fix "Ordering backlog items is disabled"](../backlogs/resolve-backlog-reorder-issues.md).
+To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
-::: moniker-end
 
 ## Permissions and access
 
@@ -260,48 +301,20 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-## Customize your backlogs 
-
-::: moniker range="vsts"
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-::: moniker-end
-
-
-::: moniker range="azdevserver-2019"
-
-If you need more than three backlog levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project: 
-
-**Inheritance process model:**
-- [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
-- [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
-
-**On-premises XML process model:**
-- [Customize work tracking](../../reference/customize-work.md)
-- [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md)
-- [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md)
-
-::: moniker-end
-
- 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
-
-You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn more, see [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 
-::: moniker-end
+[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
 
 ## Try this next  
 
 If you're just getting started, see [Start using Azure Boards](../get-started/index.md). 
 
 ## Related articles 
+
 - [Web portal navigation](../../project/navigation/index.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md)  
 - [About work items](../work-items/about-work-items.md)  
-
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [Agile culture](/azure/devops/learn/agile/agile-culture) 
 
 
  

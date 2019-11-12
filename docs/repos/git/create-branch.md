@@ -5,9 +5,9 @@ description: Use the branches page to create a new Git branch in Azure DevOps Se
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a new Git branch
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 >[!TIP]
 > Need help creating a new Git branch in your local repo from Visual Studio or the command line? Visit the [Git tutorial](branches.md).
@@ -26,52 +26,41 @@ monikerRange: '>= tfs-2013'
 
 ## Create a new branch from the web 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
+1. View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
 
-::: moniker range="vsts"
+   ![View your branches](_img/repos-navigation/repos-branches.png)
 
-0. View your repo's branches by selecting **Repos**, **Branches** while viewing your repo on the web.
+2. Select the **New branch** button in the upper right corner of the page.
 
-  ![View your branches](_img/repos-navigation/repos-branches.png)
+   ![Create branch button](_img/branches/create-branch.png)
 
-0. Select the **New branch** button in the upper right corner of the page.
-
-  ![Create branch button](_img/branches/create-branch.png)
-
-0. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
+3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
     ![Create a branch with the new branch dialog](_img/branches/newbranch_dialog.png)
 
-0. Select **Create branch**.
-
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-
-Select **Previous navigation** to view the steps for this procedure in your selected version of the documentation.
+4. Select **Create branch**.
 
 ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="<= tfs-2018"
 
-0. View your repo's branches by selecting **Branches** while viewing your repo on the web.
+1. View your repo's branches by selecting **Branches** while viewing your repo on the web.
 
-  ![Branches page](_img/branches/branches_nav.png)
+   ![Branches page](_img/branches/branches_nav.png)
 
-0. Select the **New branch** button in the upper right corner of the page.
+2. Select the **New branch** button in the upper right corner of the page.
 
-  ![Create branch button](_img/branches/create-branch.png)
+   ![Create branch button](_img/branches/create-branch.png)
 
-0. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
+3. In the **Create a branch** dialog, enter a name for your new branch, select a branch to base the work off of, and associate any work items.
 
     ![Create a branch with the new branch dialog](_img/branches/newbranch_dialog.png)
 
-0. Select **Create branch**.
+4. Select **Create branch**.
 
----
+::: moniker-end
 
 >[!TIP]
 > You will need to [fetch](pulling.md) the branch before you can see it and swap to it in your local repo.

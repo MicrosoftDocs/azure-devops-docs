@@ -1,30 +1,22 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET app | Azure Pipelines
-ms.custom: seodec18
 description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
-ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
-services: vsts
-documentationcenter: ''
-author: alewis
-manager: douge
-editor: ''
+ms.topic: conceptual
+ms.author: sdanie
+author: steved0x
+ms.manager: mijacobs
 ms.assetid: 6728CA49-5D44-4603-96E1-3BC3CF8D9793
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: aspnet
-ms.author: alewis
-author: andyjlewis
 ms.date: 06/27/2017
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.
@@ -90,7 +82,7 @@ Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home
 ![Screenshot showing update to code](./_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-update-code.png)
 
 Add the following line of text as indicated in the image above:
-```
+```html
 <h1>Demo of CI/CD!!</h1>
 ```
 

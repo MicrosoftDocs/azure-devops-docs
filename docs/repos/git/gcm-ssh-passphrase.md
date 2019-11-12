@@ -5,9 +5,9 @@ description: Understand what a SSH passphrase is and why the Git Credential Mana
 ms.assetid: 266f5d0e-78b9-4911-9bdf-ab509f17ff23
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'

@@ -5,17 +5,17 @@ ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -106,7 +106,7 @@ use to create an Azure Virtual Machine on demand.
    **PowerShell on Target Machines**. These are the tasks you 
    typically use to deploy apps to an Azure VM, and they require values
    such as the VM Resource Group name, IP address, and 
-   fully-qualified domain name (FDQN).
+   fully-qualified domain name (FQDN).
 
 ## Deploy
 

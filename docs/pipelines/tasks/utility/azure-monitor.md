@@ -5,33 +5,38 @@ ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ahomer
-author: alexhomer1
+ms.author: ronai
+author: RoopeshNair
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Query Azure Monitor Alerts task
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
+
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
+
+[!INCLUDE [temp](../_shared/yaml/AzureMonitorV1.md)]
+
 ::: moniker-end
 
 ## Arguments

@@ -1,30 +1,22 @@
 ---
 title: Quick Start - Build and Deploy a ASP.NET Core app | Azure Pipelines
-ms.custom: seodec18
 description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-services: vsts
-documentationcenter: ''
-author: alewis
-manager: douge
-editor: ''
+ms.author: sdanie
+author: steved0x
+ms.manager: mijacobs
 ms.assetid: 4162F547-3E73-4B1E-970F-A26DFCA206E1
-ms.workload: web
-ms.tgt_pltfrm: na
-ms.devlang: dotnetcore
+ms.custom: "mvc, seodec18"
 ms.date: 06/24/2017
-ms.author: alewis
-author: andyjlewis
-ms.custom: mvc
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET Core app to Azure
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 ASP.NET Core apps.
@@ -72,7 +64,7 @@ Navigate to the **Code** hub in the Azure Repos portal. Navigate to **Views/Home
 ![Screenshot showing update to code](../../../apps/cd/azure/_shared/_img/aspnet-core-code-change.png)
 
 Add the following line of text above the carousel display in the page:
-```
+```html
 <h1>Demo of ASP.NET Core CI/CD!!</h1>
 ```
 

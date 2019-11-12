@@ -38,8 +38,8 @@
 | | `vso.project_write` | Project and team (read and write) | Grants the ability to read and update projects and teams. |
 | | `vso.project_manage` | Project and team (read, write and manage) | Grants the ability to create, read, update, and delete projects and teams. |
 | **Release** | `vso.release` | Release (read) | Grants the ability to read release artifacts, including releases, release definitions and release environment. |
-| | `vso.release_execute` | Release (read, write and execute) | Grants the ability to read and update release artifacts, including releases, release definitions and release envrionment, and the ability to queue a new release. |
-| | `vso.release_manage` | Release (read, write, execute and manage) | Grants the ability to read, update, and delete release artifacts, including releases, release definitions and release envrionment, and the ability to queue and approve a new release. |
+| | `vso.release_execute` | Release (read, write and execute) | Grants the ability to read and update release artifacts, including releases, release definitions and release environment, and the ability to queue a new release. |
+| | `vso.release_manage` | Release (read, write, execute and manage) | Grants the ability to read, update, and delete release artifacts, including releases, release definitions and release environment, and the ability to queue and approve a new release. |
 | **Security** | `vso.security_manage` | Security (manage) | Grants the ability to read, write, and manage security permissions. |
 | **Service Connections** | `vso.serviceendpoint` | Service Endpoints (read) | Grants the ability to read service endpoints. |
 | | `vso.serviceendpoint_query` | Service Endpoints (read and query) | Grants the ability to read and query service endpoints. |

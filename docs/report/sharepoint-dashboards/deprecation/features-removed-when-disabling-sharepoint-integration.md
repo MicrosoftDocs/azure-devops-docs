@@ -5,10 +5,11 @@ description: TFS SharePoint integration - Features removed when disabling ShareP
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>=tfs-2013 <= tfs-2017'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
@@ -19,7 +20,7 @@ ms.date: 09/28/2017
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read the [Discontinuing the pre-TFS 2018 SharePoint integration model](./discontinue-pre-tfs-2017-sharepoint-integration.md)
 
-Beginning with TFS 2018, the features that the TFS Extension for SharePoint provided will no longer be available. This topic describes each feature being deprecated and proposed replacements.
+Beginning with TFS 2018, the features that the TFS Extension for SharePoint provided will no longer be available. this article describes each feature being deprecated and proposed replacements.
  
 ## Creation of a SharePoint site when creating a team project 
 
@@ -100,7 +101,7 @@ Quick links are listed on the left side navigation pane of a TFS SharePoint site
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 
 ## Manage a Documents library using the Team Explorer Documents pane
-If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
+If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
 
 Going forward, the Documents pane within Team Explorer will no longer be supported. 
 

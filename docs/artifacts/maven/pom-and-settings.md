@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 944f45ee-baa3-45ba-8467-5e7ab2bc47cf
 ms.manager: jenp
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 08/16/2019
 monikerRange: '>= tfs-2018'
 ---
 

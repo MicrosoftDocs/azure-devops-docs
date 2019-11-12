@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '<= azdevserver-2019'
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
@@ -28,7 +29,7 @@ You manage the link types defined for a project collection by using the followin
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
 
- **Requirements**  
+## Prerequisites  
   
  For the project collection where the link types are defined, you must have the following permissions set:  
   
@@ -38,7 +39,7 @@ You manage the link types defined for a project collection by using the followin
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   

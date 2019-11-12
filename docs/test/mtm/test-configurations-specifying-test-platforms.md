@@ -5,9 +5,9 @@ ms.assetid: 40d4a0f6-5978-404d-9627-fa81e950d718
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -19,6 +19,8 @@ monikerRange: '>= tfs-2015'
 >[!NOTE]
 >[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
+**For Azure DevOps and TFS, see [Test different configurations](../test-different-configurations.md).**
+
 Your users will probably install or run your app on a wide variety of configurations, such as different operating systems, web browsers, and other variations. You will want to run at least some of your tests in environments that have those different configurations. Use your test plan to decide which tests you want to run on which configurations. You have to make sure that when you run your tests that you have set up your environments for the configurations that you need.
 
 You might draw up a schematic matrix of the combinations that you want to test:
@@ -29,7 +31,7 @@ Use Microsoft Test Manager to specify test configurations. But you can still run
 
 **Requirements**
 
-* [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/)
+* [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 
 ## Planning tests with configurations  
  

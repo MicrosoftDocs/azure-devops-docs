@@ -71,4 +71,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 </project>
 ```
 
+> [!IMPORTANT]
+> The `<id>` tags in the _settings.xml_ and the _pom.xml_ **must** match.
+
 See the [Maven CLI docs](http://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.

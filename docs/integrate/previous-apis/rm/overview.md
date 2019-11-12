@@ -4,12 +4,12 @@ description: Work with Visual Studio Online builds programmatically using the RE
 ms.assetid: a5af63ab-36dd-4370-b962-ffbd6c1c4f58
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
-ms.date: 06-01-2017
+ms.author: chcomley
+author: chcomley
+ms.date: 06/01/2017
 ---
 
 # Release Management
@@ -29,26 +29,26 @@ A release process goes through a set of [approval requests](./approvals.md).
 
 ## Common tasks
 
-###Create a release [definition](./definitions.md)
+### Create a release [definition](./definitions.md)
 
 1. Add one or more environments to release [definition](./definitions.md).
 2. Add tasks to each environment.
 3. Add [approvals](./approvals.md) or make them automated, for each environment.
 4. Save release [definition](./definitions.md)
 
-###Start a release
+### Start a release
 
 1. Get the ID of the release [definition](./definitions.md) that you want to use.
 3. Create a [release](./releases.md).
 3. Get the ID of the release from the response so you can use it later.
 4. If required, abandon a [release](./releases.md).
 
-###Get a release details
+### Get a release details
 
 1. Get a list of [releases](./releases.md) and find the ID of the release you're interested in.
 2. Get the [details](./releases.md#getreleasedetails) about the release.
 4. Get the [approvals](./approvals.md) required for the release.
 
-###Accept/Reject approvals
+### Accept/Reject approvals
 
 For each environment where the application is being deployed, you can have pre-deployment or post-deployment [approvals](./approvals.md). If you are one of the approvers, you will get an approval request which you can accept or reject based on some criteria.

@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Plans | REST API Reference for Team Foundation Server
 description: Work with test plans programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B07716A0-0420-49F8-95B9-880105FADDA3
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -112,7 +112,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?a
     },
     {
       "id": 4,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
@@ -493,7 +493,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
     },
     {
       "id": 72,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",
@@ -527,7 +527,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?i
       "state": "Active",
       "rootSuite": {
         "id": "73",
-        "name": "spritn3",
+        "name": "sprint3",
         "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/72/Suites/73"
       },
       "clientUrl": "mtms://mytfsserver/defaultcollection/p:Fabrikam-Fiber-TFVC/Testing/testplan/connect?id=72"
@@ -675,7 +675,7 @@ GET https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/plans?f
     },
     {
       "id": 4,
-      "name": "spritn3",
+      "name": "sprint3",
       "url": "https://mytfsserver/DefaultCollection/fabrikam-fiber-tfvc/_apis/test/Plans/4",
       "project": {
         "id": "eb6e4656-77fc-42a1-9181-4c6d8e9da5d1",

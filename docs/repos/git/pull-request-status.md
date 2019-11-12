@@ -5,9 +5,9 @@ description: Pull request workflow extensibility using status and policy
 ms.assetid: 6ba68828-c05d-4afa-b29f-9ca39be5a0ce
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 06/18/2018
 monikerRange: '>= tfs-2018'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # Customize and extend pull request workflows with pull request status
 
-#### Azure Repos | TFS 2018 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
 
 [Pull requests](pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 
@@ -54,7 +54,7 @@ Essentially, status is the way a user or service posts their evaluation about a 
 * Where can I learn more about what I need to do to meet the requirements?
 
 Let's look at an example. 
-Consider a [CI service](../../pipelines/index.md) that is required to build all code changes in a project. 
+Consider a [CI service](../../pipelines/index.yml) that is required to build all code changes in a project. 
 When that service evaluates the changes in a pull request, it needs to post back the results of the build and tests. 
 For changes that pass the build, a status like this might be posted on the PR:
 

@@ -1,12 +1,13 @@
----
+﻿---
 title: IProcessTemplates.AddUpdateTemplate method 
 titleSuffix: Azure DevOps & TFS 
 description: Syntax and usage for the IProcessTemplates.AddUpdateTemplate method to add or update a process template when working with Azure DevOps Services or Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d99e9d10-9629-4782-9c2c-3b5fdf2550a6
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
@@ -33,15 +34,7 @@ Add or update a process template with the given properties.
 <h4>C#</h4>
 </td>
 <td width="250px">
-```
-void AddUpdateTemplate( ```<br/>``` 
-	string name,  ```<br/>```  
-	string description,  ```<br/>```  
-	string metadata,  ```<br/>```  
-	string state,  ```<br/>``` 
-	string zipFileName ```<br/>``` 
-)
-```
+<code>void AddUpdateTemplate(</code><br/><code>string name,</code><br/><code>string description,</code><br/><code>string metadata,</code><br/><code>string state,</code><br/><code>string zipFileName</code><br/><code>)</code>
 </td>
 </tr>
 
@@ -50,13 +43,7 @@ void AddUpdateTemplate( ```<br/>```
 <h4>C++</h4>
 </td>
 <td>
-```void AddUpdateTemplate(```<br/>``` 
-	String^ name,```<br/>``` 
-	String^ description,```<br/>``` 
-	String^ metadata,```<br/>``` 
-	String^ state,```<br/>``` 
-	String^ zipFileName```<br/>``` 
-)```
+<code>void AddUpdateTemplate(</code><br/><code>String^ name,</code><br/><code>String^ description,</code><br/><code>String^ metadata,</code><br/><code>String^ state,</code><br/><code>String^ zipFileName</code><br/><code>)</code>
 </td>
 </tr>
 
@@ -65,13 +52,7 @@ void AddUpdateTemplate( ```<br/>```
 <h4>F#</h4>
 </td>
 <td>
-```
-abstract AddUpdateTemplate : ```<br/>``` 
-        name:string * ```<br/>``` 
-        description:string * ```<br/>``` 
-        metadata:string * ```<br/>``` 
-        state:string * ```<br/>``` 
-        zipFileName:string -> unit ```
+<code>abstract AddUpdateTemplate :</code><br/><code>name:string *</code><br/><code>description:string *</code><br/><code>metadata:string *</code><br/><code>state:string *</code><br/><code>zipFileName:string -&gt; unit</code>
 </td>
 </tr>
 
@@ -80,13 +61,7 @@ abstract AddUpdateTemplate : ```<br/>```
 <h4>VB</h4>
 </td>
 <td>
-```'Sub AddUpdateTemplate (```<br/>``` 
-	name As String,```<br/>``` 
-	description As String,```<br/>``` 
-	metadata As String,```<br/>``` 
-	state As String,```<br/>``` 
-	zipFileName As String```<br/>``` 
-)```
+<code>&#39;Sub AddUpdateTemplate (</code><br/><code>name As String,</code><br/><code>description As String,</code><br/><code>metadata As String,</code><br/><code>state As String,</code><br/><code>zipFileName As String</code><br/><code>)</code>
 </td>
 </tr>
 </table>
@@ -129,7 +104,7 @@ API values for the name, description and metadata arguments are now overridden b
 
 These properties are defined in the [ProcessTemplate.xml file](https://msdn.microsoft.com/library/aa395261.aspx).
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <ProcessTemplate>    
   <metadata>   
@@ -141,7 +116,6 @@ These properties are defined in the [ProcessTemplate.xml file](https://msdn.micr
    </plugins>    
   </metadata>   
   <groups>   
-
 ```
 
 ## Related articles

@@ -5,22 +5,25 @@ title: Custom build/release task reference | Extensions for Azure DevOps Service
 description: Reference for creating a custom build or release task with an extension in Azure DevOps Services.
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 11/29/2018
 ---
 
 # Reference for integrating custom build tasks into extensions
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 ## Custom tasks
+
 [Tasks](../../pipelines/process/tasks.md) are the building blocks for defining automation in a build or release pipeline. We offer many [built-in tasks](../../pipelines/tasks/index.md)
 to enable fundamental build and deployment scenarios that we recommend you examine before building your own. If the existing tasks don't satisfy your needs, you can build a [custom task](add-build-task.md).
 
 ## Custom build task JSON
 
-When creating a custom build or release task with an extension, your extension will include a `task.json` file for each build or release task.
+When creating a custom build or release task with an extension, your extension includes a `task.json` file for each build or release task.
 This file describes the build or release task and is what the build system uses to render configuration options to the user and to know which scripts to execute at build time.
 
 The build/release task SDK documentation is [on GitHub](https://github.com/Microsoft/azure-pipelines-task-lib).
@@ -65,7 +68,7 @@ multiple versions in one extension.
                     
 
 >[!NOTE]
->The code will look for the `task.json` file inside the task folder. If one is not found, it will look just *one* level deeper.
->An error will be thrown if one is not found in either level.
+>The code looks for the `task.json` file inside the task folder. If one is not found, it looks just *one* level deeper.
+>An error is thrown if one is not found in either level.
 
 

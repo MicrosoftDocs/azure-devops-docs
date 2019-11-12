@@ -1,12 +1,13 @@
----
+﻿---
 title: Map Project Server components to Team Foundation components
 titleSuffix: TFS 
 description: Define each point of integration by mapping server products, project plans, and projects to support Team Foundation Server-Project Server integration 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e4ae6a70-0e75-4387-a466-a2b882d23ed2
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---

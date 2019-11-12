@@ -5,10 +5,10 @@ ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 08/04/2016
 ---
 
@@ -44,7 +44,7 @@ Deprecated event types:
 * [Team room message posted](#message.posted)
 
 > [!NOTE]
-> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.Azure DevOps Services) provides support for receiving WebHooks from Azure DevOps Services.
+> The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
 
 ## Build and release
 
@@ -83,7 +83,7 @@ A build completes
     "markdown": "Build [ConsumerAddressModule_20150407.2](https://dev.azure.com/fabrikam-fiber-inc/web/build.aspx?pcguid=5023c10b-bef3-41c3-bf53-686c4e34ee9e&builduri=vstfs%3a%2f%2f%2fBuild%2fBuild%2f3) succeeded"
   },
   "resource": {
-    "uri": "vstfs:///pipelines/Build/2",
+    "uri": "vstfs:///Build/Build/2",
     "id": 2,
     "buildNumber": "ConsumerAddressModule_20150407.1",
     "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/71777fbc-1cf2-4bd1-9540-128c1c71f766/_apis/build-release/Builds/2",
@@ -897,91 +897,126 @@ A deployment completed
 
 #### Sample payload
 ```json
-{
-  "id": "c3e52c57-187a-45c4-abe2-184a48291bad",
-  "eventType": "ms.vss-release.deployment-completed-event",
-  "publisherId": "rm",
-  "scope": "all",
-  "message": {
-    "text": "Deployment of release Release-1 on environment Dev Succeeded.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded."
-  },
-  "detailedMessage": {
-    "text": "Deployment of release Release-1 on environment Dev Succeeded. Time to deploy: 0.11 minutes.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1'>Dev</a> Succeeded. Time to deploy: 0.11 minutes.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=1) Succeeded. Time to deploy: 0.11 minutes."
-  },
-  "resource": {
-    "environment": {
-      "id": 5,
-      "releaseId": 0,
-      "name": "Dev",
-      "status": "succeeded",
-      "variables": {},
-      "preDeployApprovals": [],
-      "postDeployApprovals": [],
-      "preApprovalsSnapshot": {
-        "approvals": [],
-        "approvalOptions": {
-          "requiredApproverCount": 0,
-          "releaseCreatorCanBeApprover": true
-        }
-      },
-      "postApprovalsSnapshot": {
-        "approvals": []
-      },
-      "deploySteps": [],
-      "rank": 1,
-      "definitionEnvironmentId": 1,
-      "queueId": 1,
-      "environmentOptions": {
-        "emailNotificationType": "OnlyOnFailure",
-        "emailRecipients": "release.environment.owner;release.creator",
-        "skipArtifactsDownload": false,
-        "timeoutInMinutes": 0,
-        "enableAccessToken": false
-      },
-      "demands": [],
-      "conditions": [],
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "workflowTasks": [
-        {
-          "taskId": "00000000-0000-0000-0000-000000000000",
-          "version": "*",
-          "name": "Deploy Website to Azure",
-          "enabled": true,
-          "alwaysRun": false,
-          "continueOnError": false,
-          "timeoutInMinutes": 0,
-          "definitionType": null,
-          "inputs": {
-            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-            "WebSiteName": "$(webAppName)",
-            "WebSiteLocation": "Southeast Asia",
-            "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-          }
-        }
-      ],
-      "deployPhasesSnapshot": [],
-      "owner": {
-        "id": "4247c988-4060-4712-abca-ff44681dd78a",
-        "displayName": "Chuck Reinhart"
-      },
-      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-      "schedules": [],
-      "release": {
-        "id": 1,
-        "name": "Release-1",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/1"
-      }
+"environment": {
+            "id": 5,
+            "releaseId": 0,
+            "name": "Dev",
+            "status": "succeeded",
+            "variables": {},
+            "variableGroups": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "preApprovalsSnapshot": {
+                "approvals": [],
+                "approvalOptions": {
+                    "requiredApproverCount": 0,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": "beforeGates"
+                }
+            },
+            "postApprovalsSnapshot": {
+                "approvals": []
+            },
+            "deploySteps": [],
+            "rank": 1,
+            "definitionEnvironmentId": 1,
+            "queueId": 1,
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": false,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [],
+            "modifiedOn": "2016-01-21T08:19:17.26Z",
+            "workflowTasks": [],
+            "deployPhasesSnapshot": [],
+            "owner": {
+                "displayName": "Chuck Reinhart",
+                "id": "4247c988-4060-4712-abca-ff44681dd78a"
+            },
+            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+            "schedules": [],
+            "release": {
+                "id": 1,
+                "name": "Release-1",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "releaseDefinition": {
+                "id": 1,
+                "name": "Fabrikam.CD",
+                "projectReference": null,
+                "_links": {}
+            },
+            "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            }
+        },
+        "project": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Fabrikam"
+        },
+        "deployment": {
+            "id": 0,
+            "release": {
+                "id": 1,
+                "name": "Release-1",
+                "artifacts": [],
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "releaseDefinition": null,
+            "releaseEnvironment": {
+                "id": 5,
+                "name": "Dev",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "projectReference": null,
+            "definitionEnvironmentId": 0,
+            "attempt": 1,
+            "reason": "none",
+            "deploymentStatus": "succeeded",
+            "operationStatus": "Undefined",
+            "requestedBy": null,
+            "startedOn": "2016-01-21T08:19:17.26Z",
+            "completedOn": "2016-01-21T08:25:17.26Z",
+            "lastModifiedOn": "0001-01-01T00:00:00",
+            "lastModifiedBy": null,
+            "conditions": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "_links": {}
+        },
+        "comment": null,
+        "data": {}
     },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
-    }
-  },
   "resourceVersion": "3.0-preview.1",
   "resourceContainers": {
     "collection": {
@@ -1010,100 +1045,136 @@ A deployment was started
 #### Sample payload
 ```json
 {
-  "id": "055285c7-9d7a-4ca0-bbfe-5eb0529d312e",
-  "eventType": "ms.vss-release.deployment-started-event",
-  "publisherId": "rm",
-  "scope": "all",
-  "message": {
-    "text": "Deployment of release Release-1 to environment Dev started.",
-    "html": "Deployment on environment <a href='http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4'>Dev</a> started.",
-    "markdown": "Deployment on environment [Dev](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4) started."
-  },
-  "detailedMessage": {
-    "text": "Deployment of release Release-1 on environment Dev started.\\r\\nTrigger: Manual",
-    "html": "Deployment on environment <a href='Dev'>http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4</a> started.\\r\\nTrigger: Manual",
-    "markdown": "Deployment on environment [Release-1](http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=8&definitionId=4) started.\\r\\nTrigger: Dev"
-  },
-  "resource": {
-    "environment": {
-      "id": 5,
-      "releaseId": 0,
-      "name": "Dev",
-      "status": "queued",
-      "variables": {},
-      "preDeployApprovals": [],
-      "postDeployApprovals": [],
-      "preApprovalsSnapshot": {
-        "approvals": [],
-        "approvalOptions": {
-          "requiredApproverCount": 0,
-          "releaseCreatorCanBeApprover": true
-        }
-      },
-      "postApprovalsSnapshot": {
-        "approvals": []
-      },
-      "deploySteps": [],
-      "rank": 1,
-      "definitionEnvironmentId": 1,
-      "queueId": 1,
-      "environmentOptions": {
-        "emailNotificationType": "OnlyOnFailure",
-        "emailRecipients": "release.environment.owner;release.creator",
-        "skipArtifactsDownload": false,
-        "timeoutInMinutes": 0,
-        "enableAccessToken": false
-      },
-      "demands": [],
-      "conditions": [],
-      "modifiedOn": "2016-01-21T08:19:17.26Z",
-      "workflowTasks": [
-        {
-          "taskId": "00000000-0000-0000-0000-000000000000",
-          "version": "*",
-          "name": "Deploy Website to Azure",
-          "enabled": true,
-          "alwaysRun": false,
-          "continueOnError": false,
-          "timeoutInMinutes": 0,
-          "definitionType": null,
-          "inputs": {
-            "ConnectedServiceName": "b460b0f8-fe23-4dc2-a99c-fd8b0633fe1c",
-            "WebSiteName": "$(webAppName)",
-            "WebSiteLocation": "Southeast Asia",
-            "Slot": "",
-            "Package": "$(System.DefaultWorkingDirectory)\\**\\*.zip"
-          }
-        }
-      ],
-      "deployPhasesSnapshot": [],
-      "owner": {
-        "id": "4247c988-4060-4712-abca-ff44681dd78a",
-        "displayName": "Chuck Reinhart"
-      },
-      "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
-      "schedules": [],
-      "release": {
-        "id": 5,
-        "name": "Release-1",
-        "url": "http://vsrm.dev.azure.com/fabfiber/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5"
-      }
+    "id": "1f04688d-98bb-4206-850f-43389f4c8cb4",
+    "eventType": "ms.vss-release.deployment-started-event",
+    "publisherId": "rm",
+    "message": {
+        "text": "Deployment of release Release-5 to stage Dev started.",
+        "html": "Deployment on stage <a href='http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4'>Dev</a> started.",
+        "markdown": "Deployment on stage [Dev](http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started."
     },
-    "project": {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "Fabrikam"
-    }
-  },
-  "resourceVersion": "3.0-preview.1",
-  "resourceContainers": {
-    "collection": {
-      "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+    "detailedMessage": {
+        "text": "Deployment of release Release-5 on stage Dev started.\r\nTrigger: Manual",
+        "html": "Deployment on stage <a href='Dev'>http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4</a> started.<br>Trigger: Manual",
+        "markdown": "Deployment on stage [Release-1](http://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?_a=environment-summary&definitionEnvironmentId=1&definitionId=4) started.\r\nTrigger: Dev"
     },
-    "account": {
-      "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
-    }
-  },
-  "createdDate": "2016-09-19T13:03:28.4539019Z"
+    "resource": {
+        "environment": {
+            "id": 5,
+            "releaseId": 0,
+            "name": "Dev",
+            "status": "queued",
+            "variables": {},
+            "variableGroups": [],
+            "preDeployApprovals": [],
+            "postDeployApprovals": [],
+            "preApprovalsSnapshot": {
+                "approvals": [],
+                "approvalOptions": {
+                    "requiredApproverCount": 0,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": "beforeGates"
+                }
+            },
+            "postApprovalsSnapshot": {
+                "approvals": []
+            },
+            "deploySteps": [],
+            "rank": 1,
+            "definitionEnvironmentId": 1,
+            "queueId": 1,
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": false,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [],
+            "modifiedOn": "2016-01-21T08:19:17.26Z",
+            "workflowTasks": [],
+            "deployPhasesSnapshot": [],
+            "owner": {
+                "displayName": "Chuck Reinhart",
+                "id": "4247c988-4060-4712-abca-ff44681dd78a"
+            },
+            "scheduledDeploymentTime": "2016-01-21T08:19:17.26Z",
+            "schedules": [],
+            "release": {
+                "id": 5,
+                "name": "Release-5",
+                "_links": {
+                    "web": {
+                        "href": "https://fabfiber.visualstudio.com/Fabrikam-Fiber-Git/_release?releaseId=1&_a=release-summary"
+                    }
+                }
+            },
+            "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            }
+        },
+        "release": {
+            "id": 0,
+            "name": null,
+            "status": "undefined",
+            "createdOn": "0001-01-01T00:00:00",
+            "modifiedOn": "0001-01-01T00:00:00",
+            "modifiedBy": null,
+            "createdBy": null,
+            "environments": [],
+            "variables": {},
+            "variableGroups": [],
+            "artifacts": [],
+            "releaseDefinition": {
+                "id": 1,
+                "name": "Fabrikam.CD",
+                "projectReference": null,
+                "_links": {}
+            },
+            "releaseDefinitionRevision": 0,
+            "reason": "none",
+            "releaseNameFormat": null,
+            "keepForever": false,
+            "definitionSnapshotRevision": 0,
+            "logsContainerUrl": null,
+            "_links": {},
+            "tags": [],
+            "triggeringArtifactAlias": null,
+            "projectReference": null
+        },
+        "project": {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Fabrikam"
+        }
+    },
+    "resourceVersion": "3.0-preview.1",
+    "resourceContainers": {
+        "collection": {
+            "id": "c12d0eb8-e382-443b-9f9c-c52cba5014c2"
+        },
+        "account": {
+            "id": "f844ec47-a9db-4511-8281-8b63f4eaf94e"
+        },
+        "project": {
+            "id": "be9b3917-87e6-42a4-a549-2bc06a7a878f"
+        }
+    },
+    "createdDate": "2019-10-10T17:49:39.157Z"
 }
 ```
 
@@ -1609,14 +1680,14 @@ Filter events to include only newly created work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett."
+    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Assigned to: \r\n- Comment: \r\n- Severity: 3 - Medium\r\n",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: </li>\r\n<li>Comment: </li>\r\n<li>Severity: 3 - Medium</li></ul>",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Assigned to: \r\n* Comment: \r\n* Severity: 3 - Medium\r\n"
+    "text": "Bug #5 (Some great new idea!) created by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Assigned to: \r\n- Comment: \r\n- Severity: 3 - Medium\r\n",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) created by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: </li>\r\n<li>Comment: </li>\r\n<li>Severity: 3 - Medium</li></ul>",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) created by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Assigned to: \r\n* Comment: \r\n* Severity: 3 - Medium\r\n"
   },
   "resource": {
     "id": 5,
@@ -1638,22 +1709,22 @@ Filter events to include only newly created work items.
     },
     "_links": {
       "self": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1720,16 +1791,16 @@ Filter events to include only newly deleted work items.
     },
     "_links": {
       "self": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
       },
       "workItemType": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/recyclebin/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1767,14 +1838,14 @@ Filter events to include only newly restored work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett."
+    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Severity: 3 - Medium\r\n",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>Severity: 3 - Medium</li></ul>",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Severity: 3 - Medium\r\n"
+    "text": "Bug #5 (Some great new idea!) restored by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- Area: FabrikamCloud\r\n- Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n- State: New\r\n- Severity: 3 - Medium\r\n",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) restored by Jamal Hartnett.<ul>\r\n<li>Area: FabrikamCloud</li>\r\n<li>Iteration: FabrikamCloud\\Release 1\\Sprint 1</li>\r\n<li>State: New</li>Severity: 3 - Medium</li></ul>",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) restored by Jamal Hartnett.\r\n\r\n* Area: FabrikamCloud\r\n* Iteration: FabrikamCloud\\Release 1\\Sprint 1\r\n* State: New\r\n* Severity: 3 - Medium\r\n"
   },
   "resource": {
     "id": 5,
@@ -1796,19 +1867,19 @@ Filter events to include only newly restored work items.
     },
     "_links": {
       "self": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       },
       "html": {
         "href": "https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=d81542e4-cdfa-4333-b082-1ae2d6c3ad16&id=5"
@@ -1817,7 +1888,7 @@ Filter events to include only newly restored work items.
         "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/history"
       }
     },
-    "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {
@@ -1856,14 +1927,14 @@ Filter events to include only changed work items.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
+    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- New State: Approved\r\n",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>New State: Approved</li></ul>",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* New State: Approved\r\n"
+    "text": "Bug #5 (Some great new idea!) updated by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\n\r\n- New State: Approved\r\n",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) updated by Jamal Hartnett.<ul>\r\n<li>New State: Approved</li></ul>",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) updated by Jamal Hartnett.\r\n\r\n* New State: Approved\r\n"
   },
   "resource": {
     "id": 2,
@@ -1910,16 +1981,16 @@ Filter events to include only changed work items.
     },
     "_links": {
       "self": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2"
       },
       "parent": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       }
     },
-    "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2",
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates/2",
     "revision": {
       "id": 5,
       "rev": 2,
@@ -1938,7 +2009,7 @@ Filter events to include only changed work items.
         "Microsoft.Azure DevOps Services.Common.Severity": "3 - Medium",
         "WEF_EB329F44FE5F4A94ACB1DA153FDF38BA_Kanban.Column": "New"
       },
-      "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
+      "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions/2"
     }
   },
   "resourceVersion": "1.0",
@@ -1979,14 +2050,14 @@ Filter events to include only work items commented on.
   "publisherId": "tfs",
   "scope": "all",
   "message": {
-    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett."
+    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett."
   },
   "detailedMessage": {
-    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\nThis is a great new idea",
-    "html": "<a href=\"http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.<br/>This is a great new idea",
-    "markdown": "[Bug #5](http://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett.\r\nThis is a great new idea"
+    "text": "Bug #5 (Some great new idea!) commented on by Jamal Hartnett.\r\n(https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5)\r\nThis is a great new idea",
+    "html": "<a href=\"https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&amp;id=5\">Bug #5</a> (Some great new idea!) commented on by Jamal Hartnett.<br/>This is a great new idea",
+    "markdown": "[Bug #5](https://dev.azure.com/fabrikam-fiber-inc/web/wi.aspx?pcguid=74e918bf-3376-436d-bd20-8e8c1287f465&id=5) (Some great new idea!) commented on by Jamal Hartnett.\r\nThis is a great new idea"
   },
   "resource": {
     "id": 5,
@@ -2009,22 +2080,22 @@ Filter events to include only work items commented on.
     },
     "_links": {
       "self": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
       },
       "workItemUpdates": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/updates"
       },
       "workItemRevisions": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5/revisions"
       },
       "workItemType": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/ea830882-2a3c-4095-a53f-972f9a376f6e/workItemTypes/Bug"
       },
       "fields": {
-        "href": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
+        "href": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/fields"
       }
     },
-    "url": "http://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
+    "url": "https://dev.azure.com/fabrikam-fiber-inc/DefaultCollection/_apis/wit/workItems/5"
   },
   "resourceVersion": "1.0",
   "resourceContainers": {

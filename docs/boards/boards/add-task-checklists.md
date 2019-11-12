@@ -6,11 +6,12 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 01/08/2018
 ---
 
 
@@ -30,54 +31,52 @@ With task checklists, you continue to enjoy lightweight tracking, while gaining 
 
 ::: moniker-end
 
-In this topic, you'll learn: 
+In this article, you'll learn: 
 > [!div class="checklist"]    
 > * How to add a task or set of tasks to a backlog item from your Kanban board  
 > * How to mark a task as done 
 > * How to expand or collapse the task checklist  
 > * How to reorder and reparent tasks or reassign them to a sprint
 > * Keyboard shortcuts for working with the Kanban board 
-  
+
 <img src="_img/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]  
+[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 ## Add a task or set of tasks 
 
 1. To start adding tasks, open the menu for the work item.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
-	<img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end
-	::: moniker range="tfs-2015"
-	<img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
-	::: moniker-end
+    ::: moniker range=">= tfs-2017"  
+    <img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    ::: moniker-end
+    ::: moniker range="tfs-2015"
+    <img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    ::: moniker-end
 
 2. If you have a number of tasks to add, simply keep typing your task titles and click Enter.   
 
-	<img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
+    <img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3.	If you have details you want to add about a task, open the parent work item and then choose the ![ ](../_img/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../_img/icons/icon-links-tab-wi.png) links icon/tab. 
 
-	<img src="_img/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+   <img src="_img/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 
 4. Double-click the task, or select and press the Enter key, to open it.   
 
-	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
-	Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
+    Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
 
 
 ## Mark a task as done 
 
 When you complete a task, simply click the checkbox to change its status to Done or Closed. 
 
-<img src="_img/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" />  
- 
+<img src="_img/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /><br/>
 The State of the work item is updated from To Do to Done for Scrum projects, and from Active to Closed for Agile and CMMI projects.  
 
 ## Expand or collapse the task checklist  
@@ -96,6 +95,9 @@ You can drag a task within a work item to reorder it. Or, you can drag the task 
 
 ![Drag tasks to reorder them within the list](_img/task-checklist-reorder-tasks.png)  
 
+> [!NOTE]   
+> Users with **Stakeholder** access can't drag-and-drop tasks or reorder and reparent tasks.
+
 To reassign a task to a different sprint, you must open the sprint backlog where it's currently defined and then drag it to the new sprint.  
 
 ## Configure the Kanban board 
@@ -110,9 +112,9 @@ To configure or change the layout of the board, see one of these topics.
 
 ## Q & A
 
-### Q: If I manage bugs with tasks, can I add bugs as a checklist to a requirment? 
+### Q: If I manage bugs with tasks, can I add bugs as a checklist to a requirement? 
 **A:** No. Task checklists only support the task work item type. 
- 
+
 
 ## Related articles  
 Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
@@ -126,5 +128,5 @@ In addition, you can:
 - [Kanban board controls](kanban-board-controls.md)
 
 ### REST API resources
-To programmatically create tasks, see the [REST API, Work Items reference](/rest/api/vsts/wit/work%20items).
+To programmatically create tasks, see the [REST API, Work Items reference](/rest/api/azure/devops/wit/work%20items).
 

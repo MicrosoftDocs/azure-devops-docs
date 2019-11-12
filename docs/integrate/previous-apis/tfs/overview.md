@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Projects and Teams Overview | REST API Reference for Team Foundation Server
 description: Work with teams, projects, and project collections programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 2FFBCD08-28E6-4EB4-86E4-557E416E4380
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -30,7 +30,7 @@ A VSTS organization has one or more [projects](./projects.md). Each project has 
 
 ### Get a list of projects
 
-Get the [projects](./projects.md) in theorganization. 
+Get the [projects](./projects.md) in the organization. 
 
 ### Get a project's source control provider
 

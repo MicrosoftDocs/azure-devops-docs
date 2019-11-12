@@ -5,9 +5,9 @@ description: Create a serverless function to listen to pull request events and p
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: yohasna
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Use Azure Functions to create custom branch policies
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a custom branch policy using [Azure Functions](https://azure.microsoft.com/services/functions/) to validate PRs in an Azure DevOps Services Git repository. With Azure Functions you don't have to worry about provisioning and maintaining servers, especially when your workload grows. Azure Functions provide a fully managed compute platform with high reliability and security.
 
@@ -28,8 +28,6 @@ An organization in Azure DevOps with a Git repo. If you don't have an organizati
 Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
-#r "Newtonsoft.Json"
-
 using System;
 using System.Net;
 using System.Net.Http;
@@ -137,7 +135,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
 Update the code of your Azure function to look like the following example.
 
-Make sure to update the code with your account name, project name, repository name and [PAT token](../../integrate/get-started/authentication/pats.md). In order to have permission to change PR status, the PAT requires [vso.code_status](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
+Make sure to update the code with your account name, project name, repository name and [PAT token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). In order to have permission to change PR status, the PAT requires [vso.code_status](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/pull-requests/pullrequeststatuses#authorization-scopes) scope, which you can grant by selecting the **Code (status)** scope on the **Create a personal access token** page.
 
 >[!Important]
 >This sample code stores the PAT in code to simplify the sample. It is recommended to store secrets in KeyVault and retrieve them from there.
@@ -146,8 +144,6 @@ Make sure to update the code with your account name, project name, repository na
 This sample inspects the PR title to see if the user has indicated if the PR is a work in progress by adding **WIP** to the title. If so, the sample code changes the status posted back to the PR. Replace the code in your Azure function with the following code to implement updating the status posted back to the PR.
 
 ```cs
-#r "Newtonsoft.Json"
-
 using System;
 using System.Net;
 using System.Net.Http;
@@ -247,7 +243,7 @@ private static string ComputeStatus(string pullRequestTitle)
         {
             State = state,
             Description = description,
-            TargetUrl = "http://visualstudio.microsoft.com",
+            TargetUrl = "https://visualstudio.microsoft.com",
 
             Context = new
             {
@@ -285,7 +281,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
 
-0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a serverless Azure function that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

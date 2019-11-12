@@ -6,10 +6,10 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/19/2018
+ms.date: 08/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,22 +20,21 @@ monikerRange: '>= tfs-2015'
 Wikis and repository README files are great ways to share information with your team and stakeholders.
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]  
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](/visualstudio/releasenotes/tfs2018-relnotes).
+
 ::: moniker-end
 
-<br/>
-> [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]
+> [!VIDEO https://www.youtube.com/embed/744v1IefE-E?start=0]
 
 ## 5-minute quickstarts  
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
 - [Publish code to a wiki](publish-repo-to-wiki.md)  
-- [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
 
 ::: moniker-end
 
@@ -43,8 +42,7 @@ Wikis and repository README files are great ways to share information with your 
 
 - [Create a wiki for your project](wiki-create-repo.md)  
 - [Add & edit wiki pages](add-edit-wiki.md)  
-- [Share your project vision](project-vision-status.md)  
-- [Add markdown to your dashboard](../../report/dashboards/add-markdown-to-dashboard.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json )
+
 
 ::: moniker-end
 
@@ -65,14 +63,19 @@ Wikis and repository README files are great ways to share information with your 
 
 ## How-to guides
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 - [View wiki history and revert](wiki-view-history.md)
 - [Filter or print wiki content](filter-print-wiki.md)  
 - [Search wiki content](search-wiki.md)
-- [Version, select, or un-publish a wiki](wiki-select-unpublish-versions.md)  
+- [Follow wiki pages, get notifications](follow-notifications-wiki-pages.md)
+- [Create and embed a work item from wiki content](create-embed-wit-from-wiki.md)
+- [Version, select, or unpublish a wiki](wiki-select-unpublish-versions.md)
+- [Add comments to wiki](add-comments-wiki.md)  
 - [Update wiki pages offline](wiki-update-offline.md)  
 - [Manage README & Wiki permissions (security)](manage-readme-wiki-permissions.md)
+- [Markdown guidance](markdown-guidance.md)
+- [Wiki Markdown guidance](wiki-markdown-guidance.md)
 
 ::: moniker-end
 
@@ -92,13 +95,10 @@ Wikis and repository README files are great ways to share information with your 
 
 ::: moniker-end
 
-## Reference
+## Related articles
 
-- [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
 - [Navigate in the web portal](..//navigation/index.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)
-
-## Resources
-
 - [Dashboards](../../report/dashboards/index.md)
 - [Manage projects](../../organizations/projects/index.md)
+- [Azure DevOps data protection overview](../../organizations/security/data-protection.md?toc=/azure/devops/project/wiki/toc.json&bc=/azure/devops/project/wiki/breadcrumb/toc.json)

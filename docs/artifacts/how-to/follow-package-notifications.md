@@ -4,9 +4,9 @@ description: Following a package in Azure DevOps Services or TFS will allow you 
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/10/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -28,7 +28,7 @@ If you’re using release views, you can get notifications when new version of a
 1. Go to the feed page
 2. Filter to a view (e.g. @release)
 3. Go to the package you want to follow
-4. Click the **Follow** buttton
+4. Click the **Follow** button
 
 ## Follow a package from the notification settings page
 

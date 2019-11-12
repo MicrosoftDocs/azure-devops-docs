@@ -1,12 +1,12 @@
 ---
 title: Add markdown content to a team dashboard 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
@@ -15,38 +15,51 @@ ms.date: 11/19/2018
 
 # Add Markdown to a dashboard
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
 
 <a id="markdown-widget">  </a> 
+
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  
-- Provide links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
+- Links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
 - Important dates or target deadlines  
 
 Here's an example:  
 <img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
-::: moniker-end
+[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
-::: moniker-end
+## Supported Markdown syntax
 
-::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
-::: moniker-end
+The Markdown widget supports CommonMark standard features, such as: 
+- Headings 
+- Paragraphs and line breaks
+- Blockquotes
+- Horizontal rule 
+- Emphasis (bold, italics, strikethrough)
+- Tables
+- Lists, both ordered and unordered  
+- Links
+- Images 
+- Escaping characters
+
+For details on usage, see [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md).
+
+For performance reasons, the Markdown widget doesn't add support for a number of extended features, many of which are supported in the wiki. Extended capabilities would impede widget load time. For example, the following extended markdown features aren't supported in the Markdown widget:
+- Emdedded HTML syntax  
+- Code highlighting (wiki/others support language-syntax aware color coding, CommonMark just renders code as plain preformatted text)
+- Checklists
+- Emoji characters  
+- Attachments
+- Math formulas
 
 
-## Connect to the web portal for your project 
+## Connect to your project 
+
 To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
-
-# [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 Open a web browser, connect to your project, and  choose **Overview>Dashboards**. 
 
 > [!div class="mx-imgBorder"]  
@@ -56,30 +69,18 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015  <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-
-# [Previous navigation](#tab/previous-nav)  
-
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 Open a web browser, connect to your project, and  choose **Dashboards**. 
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
 
----
-
-## Add the markdown widget to a dashboard  
+## Add the markdown widget
 If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboards.md).  
 
 ::: moniker range="tfs-2015"
@@ -87,24 +88,24 @@ If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboa
 > Requires TFS 2015.1 or later version.   
 ::: moniker-end
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  
 
-0. Add or drag the Markdown widget onto the dashboard where you want it located.  
+1. Add or drag the Markdown widget onto the dashboard where you want it located.  
 
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
-0. Choose **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
+1. Choose **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
 
-0. Choose the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
+2. Choose the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
 
 	To edit a markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. To learn more, see [Set dashboard permissions](dashboard-permissions.md). 
 
-0. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
+3. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
+4. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -123,7 +124,7 @@ To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.pn
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported. This restriction has been implemented for security purposes.
 	
-0. Optionally, you can choose to point to a file in your repository.  
+5. Optionally, you can choose to point to a file in your repository.  
 
 	<img src="_img/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
 
@@ -131,23 +132,23 @@ To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.pn
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-0. Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard.  
+1. Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard.  
 
-0. Choose ![add a widget icon](_img/add-widget-icon.png) to open the widget catalog.  
+1. Choose ![add a widget icon](_img/add-widget-icon.png) to open the widget catalog.  
 
-0. Drag the Markdown widget onto the dashboard where you want it located.  
+2. Drag the Markdown widget onto the dashboard where you want it located.  
 
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
-0. Choose the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
+3. Choose the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 
 
 	To edit a markdown widget, you may need to be a team admin, a member of the Project Administrators group, or be granted permissions. To learn more, see [Set dashboard permissions](dashboard-permissions.md). 
 
-0. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
+4. Adjust the widget size as needed to fit the contents of the markdown you'll enter. The largest size is 10 tiles wide by 10 tiles tall. You can always adjust this later. 
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
+5. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -166,16 +167,16 @@ To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.pn
 	> [!NOTE]  
 	> Links to documents on file shares using `file://` are not supported on TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
 	
-0. Optionally, you can choose to point to a file in your repository.
+6. Optionally, you can choose to point to a file in your repository.
 
 	<img src="_img/add-markdown-configure-repo-file.png" alt="Configure Markdown widget with a repo file" style="border: 2px solid #C3C3C3;" /> 
 
-0. If you haven't closed the widget catalog yet, do that now.
+7. If you haven't closed the widget catalog yet, do that now.
 
-0. If you want to reposition the markdown widget or other widgets on the dashboard, do that now while you're still in dashboard edit mode. 
+8. If you want to reposition the markdown widget or other widgets on the dashboard, do that now while you're still in dashboard edit mode. 
 
-0. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
-::: moniker-end
+9. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
+    ::: moniker-end
 
 
 ## Related articles

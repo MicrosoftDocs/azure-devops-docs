@@ -2,7 +2,7 @@
 
 1. In the body of the page, initialize the helper functions.
 
-	```
+	```html
 	<script>
     VSS.init({
         explicitNotifyLoaded: true,
@@ -33,7 +33,7 @@
 
 1. Notify that the page is loaded.
 
-	```
+	```html
 	...
 	
     VSS.notifyLoadSucceeded();

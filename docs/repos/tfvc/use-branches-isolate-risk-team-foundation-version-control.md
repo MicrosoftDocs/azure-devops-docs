@@ -5,9 +5,9 @@ description: Use branches to isolate risk in Team Foundation Version Control
 ms.assetid: d74122a4-6a3d-45fb-82b7-3c1494ed4afd
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use branches to isolate risk in Team Foundation Version Control
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Consider some challenges team members typically face when they work on a software project that is staffed by more than five or ten people:
 
@@ -66,4 +66,4 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 
  [Branch strategically](branch-strategically.md) 
 
-[Visual Studio TFS Branching Guide](http://go.microsoft.com/fwlink/?LinkId=191400)
+[Visual Studio TFS Branching Guide](https://go.microsoft.com/fwlink/?LinkId=191400)

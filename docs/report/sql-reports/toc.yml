@@ -1,64 +1,61 @@
-- name: SQL Server Reporting (TFS)
-  href: index.md
-- name: Overview
-  items:
-  - name: Reporting Services Reports
-    href: reporting-services-reports.md
+- name: Reporting Services Reports
+  href: reporting-services-reports.md
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
-    href: ../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+    href: ../excel/create-status-and-trend-excel-reports.md
   - name: Grant permissions to view or create reports
-    href: ../admin/grant-permissions-to-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+    href: ../admin/grant-permissions-to-reports.md
 - name: Concepts
   items:
   - name: Choose data source and authoring tool
-    href: ../dashboards/choose-source-data-authoring-tool.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+    href: ../dashboards/choose-source-data-authoring-tool.md
   - name: Components of the data warehouse
     href: components-data-warehouse.md
 - name: How-to Guides
   items:
   - name: Add reports to a team project
-    href: ../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+    href: ../admin/add-reports-to-a-team-project.md
     items:
     - name: Add a report server
-      href: ../admin/add-a-report-server.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/add-a-report-server.md
     - name: Upload reports to a team project
-      href: ../admin/upload-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/upload-reports.md
     - name: Set permissions to view or create reports
-      href: ../admin/grant-permissions-to-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/grant-permissions-to-reports.md
     - name: Review team activities
-      href: ../admin/review-team-activities-for-useful-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/review-team-activities-for-useful-reports.md
     - name: Locate reports after the upgrade to TFS 2010
-      href: ../admin/locate-reports-after-upgrade.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/locate-reports-after-upgrade.md
   - name: Manage data warehouse
     items:
     - name: Manage the data warehouse and cube
-      href: ../admin/manage-reports-data-warehouse-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/manage-reports-data-warehouse-cube.md
     - name: Manually process the data warehouse and cube
-      href: ../admin/manually-process-data-warehouse-and-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/manually-process-data-warehouse-and-cube.md
     - name: Change a process control setting
-      href: ../admin/change-a-process-control-setting.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/change-a-process-control-setting.md
     - name: Rebuild the data warehouse and cube
-      href: ../admin/rebuild-data-warehouse-and-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-  - name: Create and manage Reporting Services reports
-    href: create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+      href: ../admin/rebuild-data-warehouse-and-cube.md
+  - name: Manage Reporting Services reports
     items:
+    - name: Create and manage Reporting Services reports
+      href: create-and-manage-reporting-services-reports.md
     - name: Create a Report Server Project
       href: create-a-report-server-project.md
-    - name: Create a Detailed Report
+    - name: Create a detailed report
       href: create-a-detailed-report-using-report-designer.md
     - name: Create an aggregate report
       href: create-aggregate-report-report-designer-analysis-services-cube.md
-    - name: "View, organize, and configure reports using Report Manager"
-      href: ../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-    - name: "View, upload, and organize Reporting Services reports"
-      href: ../admin/view-upload-organize-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-  - name: Disable the Data Warehouse
-    href: ../admin/disable-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
+    - name: View, organize, & configure reports
+      href: ../admin/view-organize-configure-reports-using-report-manager.md
+    - name: View, upload, & organize reports 
+      href: ../admin/view-upload-organize-reporting-services-reports.md
+  - name: Disable the data warehouse
+    href: ../admin/disable-data-warehouse.md
 - name: Reference
   items:
-  - name: Reporting Services reports (TFS)
+  - name: Reporting Services reports 
     items:
     - name: Backlog Overview (Scrum)
       href: backlog-overview-scrum.md
@@ -100,7 +97,7 @@
       href: sprint-burndown-scrum.md
     - name: Velocity (Scrum)
       href: velocity.md
-  - name: Data warehouse table reference (TFS)
+  - name: Data warehouse table reference 
     items:
     - name: Data warehouse tables
       href: table-reference-relational-warehouse-database.md
@@ -149,14 +146,5 @@
   - name: Address inaccuracies published for summary values
     href: address-inaccuracies-published-for-summary-values.md
   - name: Resolve schema conflicts in the data warehouse
-    href: ../admin/resolve-schema-conflicts.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Reporting roadmap
-    href: ../analytics/reporting-roadmap.md
-  - name: SharePoint Integration
-    href: ../sharepoint-dashboards/index.md
-  - name: Server Administration (TFS)
-    href: /tfs/server/index
-  - name: TFS - Reporting & Warehouse forum
-    href: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsreporting
+    href: ../admin/resolve-schema-conflicts.md
+

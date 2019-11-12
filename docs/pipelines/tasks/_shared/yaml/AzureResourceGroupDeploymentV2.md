@@ -1,6 +1,6 @@
 ```YAML
-# Azure Resource Group Deployment
-# Deploy an Azure resource manager (ARM) template to a resource group. You can also start, stop, delete, deallocate all Virtual Machines (VM) in a resource group
+# Azure resource group deployment
+# Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
 - task: AzureResourceGroupDeployment@2
   inputs:
     azureSubscription: 
@@ -13,15 +13,17 @@
     #csmFile: # Required when  TemplateLocation == Linked Artifact
     #csmParametersFile: # Optional
     #overrideParameters: # Optional
-    #deploymentMode: 'Incremental' # Options: incremental, complete, validation
+    #deploymentMode: 'Incremental' # Options: Incremental, Complete, Validation
     #enableDeploymentPrerequisites: 'None' # Optional. Options: none, configureVMwithWinRM, configureVMWithDGAgent
     #teamServicesConnection: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #teamProject: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
     #deploymentGroupName: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent
-    #copyAzureVMTags: # Optional
+    #copyAzureVMTags: true # Optional
     #runAgentServiceAsUser: # Optional
     #userName: # Required when enableDeploymentPrerequisites == ConfigureVMWithDGAgent && RunAgentServiceAsUser == True
     #password: # Optional
     #outputVariable: # Optional
+    #deploymentName: # Optional
     #deploymentOutputs: # Optional
+    #addSpnToEnvironment: false # Optional
 ```

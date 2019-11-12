@@ -1,6 +1,6 @@
-#### Q:	What happens if my Azure subscription is disabled?
+#### Q: What happens if my Azure subscription is disabled?
 
-A:	If you're the organization owner or 
+A: If you're the organization owner or 
 [Azure subscription Account Administrator](/azure/billing/billing-add-change-azure-subscription-administrator), 
 check your subscription status in the [Account Center](https://account.windowsazure.com/), 
 then try to [fix your subscription](/azure/billing-subscription-become-disable). 

@@ -16,7 +16,7 @@
 
 	If you have the image published on another site, you don't need to add it to your extension. You'll be able to reference it from that site.
 
-5. Add three more pages - one the describes your extension, one that provides support infomormation, and one that describes your terms of service.
+5. Add three more pages - one the describes your extension, one that provides support information, and one that describes your terms of service.
 
 	```
 	info.html

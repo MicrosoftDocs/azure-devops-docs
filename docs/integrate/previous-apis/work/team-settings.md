@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Settings | REST API Reference for Team Foundation Server
 description: Work with team settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7e545cbe-a332-448e-95e6-6a56e9c48249
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -126,7 +126,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 |:-----------	|:---------
 | bugBehavior	| AsRequirements, AsTasks, Off
 | workingDays   | monday, tuesday, wednesday, thursday, friday, saturday, sunday
-| backlogVisibilities | A dictionary of keys (Microsoft.EpicCategory, Microsoft.FeatureCategor, Microsoft.RequirementCategory) and boolean values.
+| backlogVisibilities | A dictionary of keys (Microsoft.EpicCategory, Microsoft.FeatureCategory, Microsoft.RequirementCategory) and boolean values.
 
 #### Sample request
 

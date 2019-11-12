@@ -5,9 +5,9 @@ ms.assetid: 2C83E7E1-93BE-44F9-A041-AC23963404D3
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: tutorial
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -16,10 +16,12 @@ monikerRange: '> tfs-2018'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 Find performance issues before you release your app by running load tests with Visual Studio 
-Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
+Enterprise using [Cloud-based Load Testing](https://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
-All you need is an [Azure DevOps subscription](http://go.microsoft.com/fwlink/?LinkId=307137).
+All you need is an [Azure DevOps subscription](https://go.microsoft.com/fwlink/?LinkId=307137).
 
 In this tutorial, you'll learn how to:
 
@@ -45,7 +47,7 @@ actions in your app at the same time.
 
    If you don't see the template for the web performance and load test project type,
    ensure you have installed the required packages during Visual Studio setup.
-   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
+   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
 
    ![Installing packages required for web performance and load testing](_img/run-performance-tests-app-before-release/install-tools.png)
 

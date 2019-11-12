@@ -1,22 +1,22 @@
----
+﻿---
 title: Add, rename, delete, and manage team dashboards
-titleSuffix: Azure DevOps Services and TFS  
+titleSuffix: Azure DevOps  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
 ms.custom: "dashboards, seodec18" 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 12/05/2018
+ms.date: 04/05/2019
 ---
 
-# Add, rename, and delete team dashboards in Azure DevOps
+# Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
@@ -33,28 +33,15 @@ The Overview page provides access to a default team dashboard which you can cust
 > For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
 
-::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]  
-::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azdevserver-2019"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
-::: moniker-end
 
-::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
-::: moniker-end
- 
-
-## Connect to the web portal for your project 
-
-[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
+## Connect to your project 
 
 All dashboards are associated with a team.
 
-# [New navigation](#tab/new-nav)
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens. 
 
@@ -76,58 +63,29 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range="vsts"  
-
-Open a web browser, connect to your project, and choose **Dashboards**. The dashboard directory page opens.  
-
-> [!div class="mx-imgBorder"]  
-> ![Dashboards directory, previous navigation](_img/dashboards/directory-prev.png) 
-
-It lists dashboards in the following order: 
-- Your last visited dashboard
-- Your favorited dashboards
-- All dashboards of teams that you belong to
-- All dashboards defined for the project in alphabetical order. 
-
-Choose the ![ ](../../_img/icons/filter-icon.png) filter icon to filter the list by keyword or team.  
-
-> [!div class="mx-imgBorder"]  
-> ![Filter the dashboard directory](_img/dashboards/filter-directory.png)  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 Open a web browser, connect to your project, and choose **Dashboards**. 
 
 ![Dashboards directory, previous navigation](_img/dashboards-go-to.png) 
-::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018 || vsts"  
 If you need to switch to a different project, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
-::: moniker-end  
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
----
+
 
 <a id="choose-dashboard" />
 
+::: moniker range=">= azure-devops-2019"
+## Select a dashboard 
 
-::: moniker range=">= azdevserver-2019"
-## Select a dashboard to view, modify, or favorite
-
-0. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
+1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 	 
-0. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+1. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](_img/dashboards/favorite-dashboard.png)  
@@ -139,7 +97,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-## Select a dashboard to view or modify
+## Select a dashboard 
 
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project, repo or team](../../project/navigation/go-to-project-repo.md#switch-team-context).
 
@@ -153,18 +111,18 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ::: moniker-end  
 
 
-## Add and name your dashboard 
+## Add a dashboard 
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json). 
+	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
@@ -204,7 +162,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 ::: moniker-end
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 - To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](_img/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
 - To delete a dashboard, open the Dashboards directory, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.  
@@ -250,13 +208,13 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 ::: moniker-end
 
 
-## Move or delete a widget from a dashboard  
+## Move or delete a widget 
 
 > [!NOTE]  
 > Just as you have to be a team admin, a project admin, or have the necessary permissions to add items to a dashboard, you must have the [necessary permissions](#permissions) to remove items.  
 
 
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 Choose ![ ](_img/icons/edit-icon.png) **Edit** to modify your dashboard. 
 
 You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
@@ -293,10 +251,12 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
   
 ## Related articles
+
 - [Review the widget catalog](widget-catalog.md)
 - [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/vsts/dashboard/dashboards).  
+
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
 

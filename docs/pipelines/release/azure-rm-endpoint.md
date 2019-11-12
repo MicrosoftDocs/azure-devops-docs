@@ -1,29 +1,31 @@
 ---
-title: Troubleshooting Azure Resource Manager service connections
+title: Troubleshoot Azure Resource Manager service connections
 ms.custom: seodec18
 description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Troubleshoot Azure Resource Manager service connections
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service connection
-for your DevOps CI/CD processes.
+a connection to Microsoft Azure using an **Azure Resource Manager** 
+[service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service connection?
@@ -128,6 +130,11 @@ The directory administrator has permission to change this setting, as follows:
 1. Choose **User settings**.
 
 1. In the **App registrations** section, change **Users can register applications** to **Yes**.
+
+
+#### Create the service principal manually with the user already having required permissions in Azure Active Directory
+
+You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
 
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found

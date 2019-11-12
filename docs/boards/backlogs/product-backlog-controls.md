@@ -1,38 +1,37 @@
----
+﻿---
 title: Use backlog controls to switch views or enable options  
 titleSuffix: Azure Boards 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
-ms.custom: "boards-backlogs, seodec18"    
+ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/14/2019
 ---
 
 
-<a id="backlog-controls">  </a>
+
+
 # Product backlog controls  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
+<a id="backlog-controls">  </a>
+
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)
-
-::: moniker range=">= azdevserver-2019"
+::: moniker range=">= azure-devops-2019"
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
 | ![backlogs](../../_img/icons/backlogs.png) | Backlog options  | [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](_img/backlogs-menu.png)    |  
 | ![view options](../../_img/icons/view-options-icon.png) | View options |- [Turn Parents on/off](organize-backlog.md)<br/>- [Turn Forecasting on/off](../sprints/forecast.md)<br/>- [Turn In Progress items on/off](../sprints/forecast.md)<br/>- [Show Mapping](organize-backlog.md)<br/>- [Show Planning](../sprints/assign-work-sprint.md)<br/>![view options](_img/view-options.png) |  
-| ![Filter](../_img/icons/filter-icon.png) |  Filter | [Turn filtering On/Off ](filter-backlogs.md)  |   
+| ![Filter](../_img/icons/filter-icon.png) |  Filter | [Turn filtering On/Off](filter-backlogs.md)  |   
 | ![Settings icon](../../_img/icons/blue-gear.png) | Settings   | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |  
 | ![full screen](../../_img/icons/full-screen-icon.png) / ![exit full screen](../../_img/icons/exit-full-screen-icon.png)  | Full screen | Enter or exit full screen mode  |  
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png) | Expand/Collapse | Expand or collapse one level of the tree hierarchy |   
@@ -53,13 +52,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018" 
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end 
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2013 <= tfs-2018 || vsts"
+::: moniker range="<= tfs-2018"
 
 | Control                  | Function                      |
 |--------------------------|-------------------------------|
@@ -73,21 +66,13 @@ Once you've defined your product backlog, you can use the following controls to 
 | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
 | ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
 | ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off ](filter-backlogs.md)  |  
+| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off](filter-backlogs.md)  |  
 
 
 > [!IMPORTANT]  
 > If you set the **In progress** control to **Hide**, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
 
 ::: moniker-end
-
-::: moniker range="azdevserver-2019"
-
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-
-::: moniker-end
-
----
 
 
 Even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 

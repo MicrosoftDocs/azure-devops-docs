@@ -5,9 +5,9 @@ description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Set branch permissions
 
-#### Azure Repos | TFS 2018 | TFS 2017 Update 1
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
 
 ## Overview
 
@@ -26,17 +26,17 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
-  If you're not using the new navigation preview, select **Code**, **Branches**.
+   If you're not using the new navigation preview, select **Code**, **Branches**.
 
-  ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+   ![Open up the Branches page on the web](_img/branches/branches_nav.png)
 
-1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
+2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-  ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](_img/branches/branches-page.png)
 
-0. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
+3. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
    ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
 
@@ -64,7 +64,7 @@ Control branch permission settings from the branch permission view. Users and gr
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
-> ![Documentation version selector](../../_img/documentation-version-selector.png)
+> ![Content version selector](../../_shared/_img/version-selector.png)
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
@@ -94,7 +94,7 @@ Control branch permission settings from the branch permission view. Users and gr
 
 ::: moniker-end    
 
-::: moniker range="vsts" 
+::: moniker range="azure-devops" 
 
 ### Permissions in Azure DevOps Services
 

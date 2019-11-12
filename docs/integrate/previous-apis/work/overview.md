@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Overview | REST API Reference for Team Foundation Server
 description: Work with work tooling programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: fe538cca-d062-445e-8dc2-852a6758f5c3
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -53,7 +53,7 @@ ms.date: 08/04/2016
 2. Update [card fields](./card-fields.md#updatecardfieldsonaboard) for a board.
 
 ### Update card style rules on a board
-1. Get [card styling rules ](./card-rules.md#getcardstylingrulesforaboard) for a board.
+1. Get [card styling rules](./card-rules.md#getcardstylingrulesforaboard) for a board.
 2. Update [card styling rules](./card-rules.md#updatecardstylingrulesonaboard) for a board.
 
 ### Update chart settings

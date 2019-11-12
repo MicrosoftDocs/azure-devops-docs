@@ -1,11 +1,11 @@
----
-title: Field mapping XML element reference for TFS-Project Server integration
+﻿---
+title: Field mapping XML element reference for TFS-Project Server
 titleSuffix: TFS
 description: Customize the field mappings to define which fields to keep synchronized when using Team Foundation Server & Project Server integration
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: dfd7bc62-dd68-4412-a86d-5f82c3ad9af3
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -75,7 +75,7 @@ ms.date: 01/12/2017
   
  The following example shows the nesting structure of XML elements. To view the default mappings, see [Default Mapping File](#default_file) later in this topic.  
   
-```  
+```xml
 <mappingFile>  
 &nbsp;&nbsp;&nbsp;<persistables>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
@@ -100,14 +100,14 @@ ms.date: 01/12/2017
 ### Field Element Syntax  
  The following syntax defines the attributes of the `field` element:  
   
-```  
+```xml
 <field tfsName="FieldName" tfsMirrorName="FieldMirrorName" displayTfsField="true | false" displayTfsMirror=" true | false" onConflict="PSWin">  
 ```  
   
 ### Target Element Syntax  
  The following syntax defines the attributes of the `target` element:  
   
-```  
+```xml
 <target provider="ProviderName" name="ProjectFieldName" />  
 ```  
   
@@ -141,7 +141,7 @@ ms.date: 01/12/2017
   
  For a list of all fields that are added to a type of work item when you add that type to participate in data synchronization, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-```  
+```xml
 <mappingFile>  
   <persistables>  
     <Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  

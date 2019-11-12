@@ -5,13 +5,12 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
-ms.manager: douge
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: alewis
-author: andyjlewis
-ms.reviewer: dastahel
+ms.author: dastahel
+author: davidstaheli
 ms.date: 12/07/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
 # Java Tool Installer task
@@ -19,7 +18,7 @@ monikerRange: 'vsts'
 **Azure Pipelines**
 
 Use this task in a build or release pipeline to acquire a specific version of Java from a user supplied Azure blob,
-from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment varaible.
+from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment variable.
 Use this task to change the version of Java used in Java tasks.
 
 ## Demands
@@ -27,8 +26,11 @@ Use this task to change the version of Java used in Java tasks.
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -46,6 +48,39 @@ None
 | Destination directory | Specify the destination directory into which the JDK should be extracted. |
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
+
+## Examples
+
+Here's an example of getting the archive file from a local directory on Linux.
+The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that it includes the `bin`, `lib`, `include`, `jre`, etc. directories.
+
+```yaml
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: "11"
+      jdkArchitectureOption: x64
+      jdkSourceOption: LocalDirectory
+      jdkFile: "/builds/openjdk-11.0.2_linux-x64_bin.tar.gz"
+      jdkDestinationDirectory: "/builds/binaries/externals"
+      cleanDestinationDirectory: true
+```
+
+Here's an example of downloading the archive file from Azure Storage.
+The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that it includes the `bin`, `lib`, `include`, `jre`, etc. directories.
+
+```yaml
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '6'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: AzureStorage
+    azureResourceManagerEndpoint: myARMServiceConnection
+    azureStorageAccountName: myAzureStorageAccountName
+    azureContainerName: myAzureStorageContainerName
+    azureCommonVirtualFile: 'jdk1.6.0_45.zip'
+    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk6'
+    cleanDestinationDirectory: false
+```
 
 ## Open source
 

@@ -5,9 +5,9 @@ ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -15,6 +15,8 @@ monikerRange: '> tfs-2018'
 # FAQs for load testing
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 <a name="qageneral"></a>
 ## General
@@ -101,7 +103,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -151,8 +153,8 @@ and virtual user minutes will be charged accordingly.
 
 * Visual Studio IDE: 48 hours
 * Azure DevOps Load test page:
- - URL-based load tests: 48 hours
- - JMeter load tests: 4 hours
+  - URL-based load tests: 48 hours
+  - JMeter load tests: 4 hours
 * Azure portal: 1 hour
 
 ### Q: Do other load tests run on the same virtual machines that host my agents?
@@ -207,7 +209,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 **A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the subscription level.
 
-----------
+---
 
 <a name="qavisualstudio"></a>
 ## Visual Studio load testing
@@ -248,7 +250,7 @@ and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 **A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
 
-----------
+---
 
 <a name="qaazure"></a>
 ## Azure load testing
@@ -313,7 +315,7 @@ features and services help your team collaborate more easily and deploy continuo
 
 **A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
 
-----------
+---
 
 <a name="set-up-tests"></a>
 ## Setting up tests
@@ -395,7 +397,7 @@ add WebDeploy_x64_en-US.msi to Deployment window. The setup.cmd will look like t
 
 `%DeploymentDirectory%\WebDeploy_x64_en-US.msi /passive`
 
-----------
+---
 
 <a name="jmeter-tests"></a>
 ## Apache JMeter tests
@@ -420,7 +422,7 @@ when you set up the test, and it will be applied when the load test runs.
 
 **A**: Custom listeners are not currently supported.
 
-----------
+---
 
 <a name="run-monitor-tests"></a>
 ## Running and monitoring load tests
@@ -442,7 +444,7 @@ For more information, see
 
 **A**: You can view the service status at the top of the 
 [Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
-and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
+and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
@@ -487,7 +489,7 @@ For better performance as you download more reports, use SQL Server.
     </dependentAssembly>
     ```
 
-----------
+---
 
 <a name="recordreplay"></a>
 ## Recording and replaying tests
@@ -516,7 +518,7 @@ API and the details required to create your test.
 allows you to run cloud-based load tests. See 
 [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/05/09/trying-out-the-cloud-load-testing-service-using-visual-studio-enterprise-trial/).
 
-----------
+---
 
 <a name="qaappinsights"></a>
 ## Application Insights
@@ -577,7 +579,7 @@ for your app there. If you see data collected there, report your issue to
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
-----------
+---
 
 <a name="troubleshooting"></a>
 ## Troubleshooting
@@ -686,7 +688,7 @@ was changed from AllIndividualDetails to None. If you want to collect the indivi
 you must specifically set TimingDetailsStorage property to be AllIndividualDetails. 
 See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-settings-properties).
 
-----------
+---
 
 <a name="errors"></a>
 ## Errors
@@ -738,7 +740,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 **A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
 
-----------
+---
 
 <a name="qalinks"></a>
 ## Links to useful resources
@@ -781,6 +783,6 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Sample code for REST APIs (Test Execution)](https://code.msdn.microsoft.com/windowsdesktop/Cloud-Load-Testing-API-b333e778)
 * [Sample code for REST APIs (Importing Results)](https://code.msdn.microsoft.com/windowsdesktop/Importing-Load-Test-Results-b577864b)
 
------------------
+---
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

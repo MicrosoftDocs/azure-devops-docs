@@ -1,36 +1,37 @@
----
-title: Storyboard your ideas with PowerPoint
-titleSuffix: Azure Boards 
-description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Azure Boards or Team Foundation Server  
+﻿---
+title: Storyboard your ideas with Microsoft PowerPoint
+titleSuffix: TFS 
+description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 05/10/2017
+monikerRange: '<= tfs-2018'
+ms.date: 09/06/2019
 ---
 
-# Storyboard your ideas using PowerPoint
+# Storyboard your ideas using Microsoft PowerPoint
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-tfs-2018-earlier.md)]
 
-With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides.
+With storyboarding, you turn your ideas and goals into something visual. Your ideas are easier for other people to understand, so they can give you constructive feedback, sooner. You can bring your ideas to life with storyboard shapes, text, animation, and all the other features that Microsoft PowerPoint Storyboarding provides.
 
 > [!IMPORTANT]  
-> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Storyboarding with PowerPoint and Office Project. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.   
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Storyboarding with PowerPoint and Microsoft Project. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.   
 
 ## Use storyboard shapes and PowerPoint features
 
-1.  If you're interfacing with Azure Boards or TFS 2017 or later versions, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
+1.  If you're interfacing with Azure Boards or TFS 2017 or later versions, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/azure/devops/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
 
 2.  If you haven't installed a version of [Visual Studio (2013 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to create and modify storyboards.
 
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
+3.  Open PowerPoint Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
     <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
 
@@ -65,7 +66,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 1.  Save or upload your storyboard to a shared location that everyone on your team can access.
 
-2.  If you started Power Point Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
+2.  If you started PowerPoint Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 
@@ -103,13 +104,13 @@ With PowerPoint Storyboarding, you can illustrate a new or a modified interface.
 ## Related articles
 
 Start using Storyboarding with PowerPoint today by downloading the free plug-in to PowerPoint: 
-- [Team Foundation Server Office&reg; Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
+- [Team Foundation Server Office&reg; Integration 2017](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
 
 ### Custom shapes 
 You can create your own shapes using [My Shapes](add-share-storyboard-shapes.md), which get saved to the following folder in a .sbsx file:
 
-<code><i>Drive</i>:\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
+<code><i>Drive</i>:\Users\\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\PowerPoint\Shapes</code>
 
 <!---
 You can then share your custom shapes or import custom shapes developed by others in the Visual Studio community.  

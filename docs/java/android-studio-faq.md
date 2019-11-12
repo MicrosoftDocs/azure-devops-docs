@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -108,7 +108,7 @@ In some rare cases, the list of repositories is empty after signing in with your
 
 ### When I test the tf executable, I get a warning that the version detected is 0.0.0. How can I make it detect the actual version?
 
-This has been seen in version 14.0.3 and below of the TF Comand Line Tool when it defaults to not use English for the output. This has been fixed in the newer versions of the tool which can be  downloaded from [GitHub](https://github.com/Microsoft/team-explorer-everywhere/releases).
+This has been seen in version 14.0.3 and below of the TF Command Line Tool when it defaults to not use English for the output. This has been fixed in the newer versions of the tool which can be  downloaded from [GitHub](https://github.com/Microsoft/team-explorer-everywhere/releases).
 
 
 ### How do I collect logs to help troubleshoot an issue?

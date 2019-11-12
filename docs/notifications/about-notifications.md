@@ -1,22 +1,22 @@
 ---
-title: Get started with notifications in Azure DevOps Services and TFS
-description: Understand how notifications or alerts are managed in Azure DevOps Services or Team Foundation Server (TFS)
+title: Get started with notifications in Azure DevOps
+description: Understand how notifications or alerts are managed in Azure DevOps
 ms.prod: devops
 ms.technology: devops-collab
 toc: show
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 09/01/2017
-monikerRange: '>= tfs-2017'
+ms.date: 03/05/2019
+monikerRange: '>= tfs-2013'
 ---
 
 # About notifications
 
-**Azure DevOps Services | TFS 2018 | TFS 2017**
+[!INCLUDE [ ](../_shared/version-vsts-tfs-all-versions.md)]
 
-Notifications help you and your team stay informed about activity that occurs within your Azure DevOps Services or Team Foundation Server (TFS) projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds. You can be notified via email. For example,you can get notified whenever a bug that you opened is resolved or when a work item is assigned to you.
+Notifications help you and your team stay informed about activity that occurs within your Azure DevOps projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds. You can be notified via email. For example,you can get notified whenever a bug that you opened is resolved or when a work item is assigned to you.
 
 You receive notifications based on rules or subscriptions. Subscriptions arise from the following instances:
 
@@ -32,11 +32,12 @@ You can manage your notifications, which you access from your organization menu.
 
 ## Preferred email address
 
-Notifications are sent by default to the preferred email address for your organization profile. This is typically the email address you signed into Azure DevOps Services or TFS with, but can be managed via your organization preferences profile page.
+Notifications are sent by default to the preferred email address for your organization profile. This is typically the email address you signed into Azure DevOps with, but can be managed via your organization preferences profile page.
 
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
 
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ## Integrating with other services 
 
@@ -50,10 +51,21 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 
 You can also use a third-party service like Zapier to send notifications to hundreds of other services. Learn more about [Zapier and Azure DevOps Services integration](../service-hooks/services/zapier.md).
 
-::: moniker range=">= tfs-2015 < vsts"
+::: moniker-end
 
-## On-premises SMTP server (TFS)
+::: moniker range="< azure-devops"
+
+## On-premises SMTP server
  
-For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications.
+For on-premises Azure DevOps, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications.
 
 ::: moniker-end
+
+## Related articles
+
+* [Default and supported notifications](oob-built-in-notifications.md)
+* [Supported event types](oob-supported-event-types.md)
+* [FAQs](faq-notifications.md)
+* [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Azure DevOps data protection overview](../organizations/security/data-protection.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+* [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemname=ms-vsts.vss-services-teams)

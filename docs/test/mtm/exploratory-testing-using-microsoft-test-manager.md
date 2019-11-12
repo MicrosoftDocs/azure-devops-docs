@@ -5,9 +5,9 @@ ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -19,13 +19,15 @@ monikerRange: '>= tfs-2015'
 >[!NOTE]
 >[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
 
+**For Azure DevOps and TFS, see [Exploratory testing with the Test &amp; Feedback extension](../connected-mode-exploratory-testing.md).**
+
 While you work with your application, Microsoft Test Manager can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 ## Explore your app  
   
-1. Install [the latest build of your application](../../pipelines/index.md). If it's a desktop application, install it on a machine that has Microsoft Test Manager. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have Microsoft Test Manager.  
+1. Install [the latest build of your application](../../pipelines/index.yml). If it's a desktop application, install it on a machine that has Microsoft Test Manager. If it's a server, you can install it on any other machine, but you'll want to run the browser or client on the same machine where you have Microsoft Test Manager.  
   
 1. [Connect Microsoft Test Manager to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) if you haven't already. The test plan stores default settings and test results.  
   

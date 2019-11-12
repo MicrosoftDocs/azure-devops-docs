@@ -1,6 +1,6 @@
 ```YAML
-# App Center Distribute
-# Distribute app builds to testers and users via App Center
+# App Center distribute
+# Distribute app builds to testers and users via Visual Studio App Center
 - task: AppCenterDistribute@1
   inputs:
     serverEndpoint: 
@@ -15,5 +15,6 @@
     #releaseNotesOption: 'input' # Options: input, file
     #releaseNotesInput: # Required when releaseNotesOption == Input
     #releaseNotesFile: # Required when releaseNotesOption == File
+    #isMandatory: false # Optional
     #distributionGroupId: # Optional
 ```

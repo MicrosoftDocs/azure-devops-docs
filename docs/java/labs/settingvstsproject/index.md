@@ -4,13 +4,15 @@ description: Tutorial lab for setting up a Java project with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
 
+
+# Set up Azure DevOps Services for a Java project
 
 This exercise will walk you through the steps to creating your Azure DevOps account and create a new project. 
 
@@ -51,16 +53,16 @@ In this task you will generate a personal access token for yourself. PATs essent
 
 ## Create a new project with Azure DevOps Services Demo Generator...
 
-Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
+Next, you need to create a team project. You can create the team project manually or by using [Azure DevOps Services Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your organization with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
 
 The steps below use Azure DevOps Services Demo Generator to provision a demo Java project for you.
 
-1. Open [Azure DevOps Services Demo Generator](https://Azure DevOps Servicesdemogenerator.azurewebsites.net/).
+1. Open [Azure DevOps Services Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/).
 
 2. Enter your account name and the PAT you saved earlier. Click **Verify and Continue**.
 
    > [!div class="mx-imgBorder"]
-   > ![The Azure DevOps Services Demo Generator login page](../_img/settingvstsproject/Azure DevOps Servicesdemogen.png)
+   > ![The Azure DevOps Services Demo Generator login page](../_img/settingvstsproject/vstsdemogen.png)
 
 3. Use **MyShuttle2** for the template. Use **jdev-labs** for the Project Name. Select **Create Project**.
 

@@ -5,20 +5,25 @@ ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.custom: seodec18
-ms.date: 12/06/2018
+ms.date: 03/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Release, branch, and stage triggers
+# Release triggers
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+> [!NOTE] 
+> This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
 ::: moniker-end
 
 You can configure when releases should be created, and when those releases should be deployed to stages,
@@ -59,6 +64,8 @@ default branch in the build pipeline.
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
+For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
+
 <h2 id="scheduled-triggers">Scheduled release triggers</h2>
 
 If you want to create and start a release at specific times, define one or more
@@ -81,7 +88,7 @@ that you want to activate this trigger.
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
 Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
-You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
@@ -122,7 +129,11 @@ when a release is created by a continuous deployment trigger, based on:
   you can select the days of the week and the time of day that
   Azure Pipelines will automatically start a new deployment. Unlike scheduled
   release triggers, you cannot configure multiple schedules for stage triggers.
-  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
+  Note that, with scheduled triggers, a new deployment request is created that deploys the 
+  artifacts from the current release. All deployment requests are executed on the stage as per the configured [queueing policies](../process/stages.md?tabs=classic#queuing-policies) defined on the stage.
+  For example, if the queueing policy is set to **Deploy latest and cancel the others**, any previously deployed artifacts
+  on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be
+  available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
@@ -131,7 +142,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **A pull request that updates the artifacts**. If you have enabled
   [pull request triggers](#prsettrigger) for your pipeline, you must also enable
   pull request deployment for the specific stages where you want the release to be deployed. 
-  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. 
+  You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
   ![The pull request trigger conditions settings](_img/trigger-02c.png)
 

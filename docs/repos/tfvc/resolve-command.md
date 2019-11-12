@@ -5,9 +5,9 @@ description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Resolve Command
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Lets you resolve conflicts between changed items in your workspace and the latest or destination versions of items on the server.
 
@@ -43,10 +43,10 @@ To use the **resolve** command, you must be either the workspace owner or have t
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You can specify more than one *Itemspec* argument.
+You can specify more than one <em>Itemspec</em> argument.
 </div>
 </div>
 </div></td>
@@ -65,7 +65,7 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>\<em>UserName</em> or <em>UserName</em>.</p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName</em>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -97,28 +97,28 @@ You can specify more than one *Itemspec* argument.
 </tr>
 <tr>
 <td><p><strong>/overridetype</strong></p></td>
-<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
+<td><p>Specifies optional encoding for files involved in a three-way merge. The files are treated as the specified encoding. You must determine the correct encoding. Team Foundation Server saves the resulting merge output in the specified encoding in your workspace. For more information about file encodings, see <a href="/azure/devops/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You cannot specify both an **/overridetype** and a **/converttotype**.
+You cannot specify both an <strong>/overridetype</strong> and a <strong>/converttotype</strong>.
 </div>
 </div>
 </div></td>
 </tr>
 <tr>
 <td><p><strong>/converttotype</strong></p></td>
-<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="/tfs/server/admin/manage-file-types">Managing File Types</a>.</p>
+<td><p>Specifies the encoding used for temporary conversion for the input in a three-way merge operation. The merge output is saved in the specified encoding in your workspace. This option is an advanced option and seldom used. For more information about file encodings, see <a href="/azure/devops/server/admin/manage-file-types">Managing File Types</a>.</p>
 <div class="alert">
 <div class="mtps-table" xmlns="http://www.w3.org/1999/xhtml">
 <div class="mtps-row">
-**Note**
+<strong>Note</strong>
 </div>
 <div class="mtps-row">
-You cannot specify both an **/overridetype** and a **/converttotype**.
+You cannot specify both an <strong>/overridetype</strong> and a <strong>/converttotype</strong>.
 </div>
 </div>
 </div></td>
@@ -142,7 +142,7 @@ You cannot specify both an **/overridetype** and a **/converttotype**.
 </tbody>
 </table>
 ## Remarks
-You can use the **Resolve** command to select a resolution for pending changes that conflict with the server version.
+You can use the <strong>Resolve</strong> command to select a resolution for pending changes that conflict with the server version.
 
 If version conflicts are detected between your version and the version on the destination server during a get, check-in, or merge operation, a prompt appears for you to select a conflict resolution using the **resolve** command. You must resolve conflicts before you can check in your pending changes.
 
@@ -172,7 +172,7 @@ The following example attempts to resolve all conflicts by automatically merging
 
 #### Concepts
 
-[Managing File Types](/tfs/server/admin/manage-file-types)
+[Managing File Types](/azure/devops/server/admin/manage-file-types)
 
 #### Other Resources
 

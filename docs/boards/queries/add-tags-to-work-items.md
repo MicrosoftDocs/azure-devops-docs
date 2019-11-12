@@ -6,11 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 79A08F31-BB8A-48BD-AD17-477EE0B76BC7
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 09/26/2019
 ---
 
 # Add work item tags to categorize and filter lists and boards  
@@ -23,10 +24,23 @@ item query by categories that you define.
 A tag corresponds to a one or two keyword phrase that you define and that  
 supports your needs to filter a backlog or query, or define a query. 
 
+Tags are a better choice to filter work items than using text strings as described in [Guidance to create high-performing queries](high-performing-queries.md).
+
 You can add and modify tags from the web portal, from Team Explorer plug-in for Visual Studio. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk modifications of tags.  
+
+> [!NOTE]   
+> Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
+
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+
+::: moniker range="azure-devops"
+> [!NOTE]   
+> Users with **Stakeholder** access for public projects are allowed to add new tags. 
+::: moniker-end
 
 
 <a id="assign"></a>
+
 ## Add tags to a work item
 
 Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
@@ -48,18 +62,20 @@ To add several tags at one time, type a comma between tags. Tags are case sensit
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   
 
-
+::: moniker range="azure-devops"
 > [!NOTE]   
 > By default, all Contributors and Stakeholders of public projects are granted permissions to add new and existing 
 > tags. Stakeholders in private projects can add tags that are already defined, but not add 
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
-	
+::: moniker-end	
 
 
 <a id="bulk-modify"></a>
+
 ## Bulk add or remove tags 
+
 ::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
@@ -81,6 +97,7 @@ You bulk modify tags in the same way as you [bulk modify other fields using the 
 
 
 <a id="query"></a>
+
 ## Query for work items based on tags  
 
 To query work items based on tags, add a clause for each tag you want to use to support your query.  
@@ -90,16 +107,20 @@ To query work items based on tags, add a clause for each tag you want to use to 
 > Adding tags to a query is supported from TFS 2013.2 and later versions.
 ::: moniker-end
 
+> [!TIP]    
+> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+
 For example, here we query for all work items that are tagged either ```Web``` or ```Service```. 
 
 > [!div class="mx-imgBorder"]
 > ![Bulk add to several work items](_img/add-tags/query-tags-add-or.png) 
 
-> [!TIP]    
-> You can use the **Contains** or **Does Not Contain** operators. To learn more about queries, see [Create managed queries](using-queries.md). 
+
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
 
 <a id="show-tags"></a>
+
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
@@ -129,7 +150,9 @@ All tags that have been added to the listed work items appear.
 ::: moniker-end
 
 <a id="filter"></a>
+
 ## Filter lists using tags  
+
 From the web portal, you can filter backlogs, boards, and query results using tags. 
  
 ::: moniker range=">= tfs-2017"
@@ -172,27 +195,49 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ::: moniker-end
 
+::: moniker range=">=tfs-2015"
+  
+## Color-code tags on boards
+
+You can highlight tags on Kanban board cards by color-coding them. These colors only appear on the Kanban board that you configure. they don't appear on backlogs or taskboards. To learn more, see [Customize cards, color-code tags](../boards/customize-cards.md#color-tags). 
+::: moniker-end   
+
+::: moniker range="tfs-2015"  
+Requires TFS 2015.1 or later version.  
+::: moniker-end   
+
+::: moniker range=">=tfs-2015"  
+
+> [!div class="mx-imgBorder"]
+> ![Boards>Settings>Tag colors dialog](_img/add-tags/color-code-tags.png)
+
+::: moniker-end   
+
+
 ## Related articles
 
-Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags. 
+- [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
 ### Limits on number of tags
+
 While no hard limit exists, creating more than 100K tags for a project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 
-	TF401243: Failed to save work item because too many new tags were added to the work item.
+```
+TF401243: Failed to save work item because too many new tags were added to the work item.
+```
 
 Simply save the work item with the tags (100 or less) that you've added, and then you can add more tags. 
 
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="<= azure-devops-2019"
 
 ### Add tags to the default column view on the product backlog 
 

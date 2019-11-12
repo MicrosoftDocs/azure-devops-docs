@@ -5,25 +5,29 @@ description: Learn the basics about Azure Pipelines and how to use it to automat
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: douge
-ms.date: 07/06/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 4/8/2019
+monikerRange: '>= tfs-2015'
 ---
+
 # Use Azure Pipelines
 
-You can use either [YAML](../get-started-yaml.md) or the [visual designer](../get-started-designer.md) to define your pipelines. 
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-**Azure Pipelines**
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [visual designer](../get-started-designer.md) to do the same. 
+#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
 
-When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
-When you use the visual designer, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+You define your pipeline mostly in code in a YAML file alongside the rest of the code for your app. 
 
-## Use Azure Pipelines with YAML
+* The pipeline is versioned with your code and follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
+* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
 
-You can configure your pipelines in a YAML file that exists alongside your code.
+The basic steps are these:
 
 1. Configure Azure Pipelines to use your Git repo.
 2. Edit your `azure-pipelines.yml` file to define your build.
@@ -32,33 +36,30 @@ You can configure your pipelines in a YAML file that exists alongside your code.
 
 ![Pipelines YAML intro image ](../_img/pipelines-image-yaml.png)
 
-### Benefits of using YAML
+[Create your first pipeline](../create-first-pipeline.md).
 
-* The pipeline is versioned with your code and follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
-* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+::: moniker-end
 
-If you think the YAML workflow is best for you, [create your first pipeline by using YAML](../get-started-yaml.md).
+::: moniker range="<= azure-devops-2019"
 
-## Use Azure Pipelines in the visual designer
+YAML pipelines aren't available in TFS.
 
-You can create and configure your build and release pipelines in the Azure DevOps Services web portal with the visual designer. 
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+You create and configure your build and release pipelines in the web portal with the classic editor.
+When you use the classic editor, you define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+
+The basic steps are these:
 
 1. Configure Azure Pipelines to use your Git repo.
-2. Use the Azure Pipelines visual designer to create and configure your build and release pipelines.
+2. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
 3. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
 5. The build creates an artifact that's used by the rest of your pipeline to run tasks such as deploying to staging or production.
 6. Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 ![Pipelines designer intro image](../_img/pipelines-image-designer.png)
 
-     
-### Benefits of using the visual designer
+[Create your first pipeline](../create-first-pipeline.md).
 
-The visual designer is great for users who are new to the world of continuous integration (CI) and continuous delivery (CD).
-
-* The visual representation of the pipelines makes it easier to get started. 
-* The visual designer is located in the same hub as the build results. This location makes it easier to switch back and forth and make changes.
-
-If you think the designer workflow is best for you, [create your first pipeline by using the visual designer](../get-started-designer.md).
-
+* * *

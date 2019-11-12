@@ -1,8 +1,9 @@
 ```YAML
-# Python Twine Upload Authenticate
-# Authentication for uploading Python distributions using twine. Please add '-r FeedName/EndpointName --config-file $(PYPIRC_PATH)' to your twine upload command. For feeds present in this organization, use the feed name as the repository (-r). Otherwise, use the endpoint name defined in the service connection.
+# Python twine upload authenticate
+# Authenticate for uploading Python distributions using twine. Add '-r FeedName/EndpointName --config-file $(PYPIRC_PATH)' to your twine upload command. For feeds present in this organization, use the feed name as the repository (-r). Otherwise, use the endpoint name defined in the service connection.
 - task: TwineAuthenticate@0
   inputs:
-    artifactFeeds:  # 'feed_name1, feed_name2'
-    #externalFeeds: # Optional. 'feed_name1, feed_name2'
+    artifactFeeds: 
+    #externalFeeds: # Optional
+    #publishPackageMetadata: true # Optional
 ```

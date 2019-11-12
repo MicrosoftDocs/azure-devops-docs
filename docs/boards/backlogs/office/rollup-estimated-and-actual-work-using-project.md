@@ -5,18 +5,21 @@ description: Provides summed values of select fields for all child work items of
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 502d6c76-36a0-4448-b73c-9af43703b562
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/22/2017  
+monikerRange: '<= tfs-2018'
+ms.date: 08/15/2019
 ---
 
 # Rollup estimated and actual work using Project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
-  
+
+[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+
  There are a few items to be aware of, however, to make it work correctly. You may have to add fields to work item types (WITs) and update the Microsoft Project Mapping file. You can work in Project or TFS to structure the breakdown of work items and move seamlessly back and forth from each tool by publishing and refreshing data. After setting a baseline schedule in Project, you publish your rollup values to TFS.  
   
  With Project, you can rollup estimated, completed work or remaining work, and effort, size, or story points. By publishing the rollup values back to TFS, you can view them in work item forms, queries or on the backlog pages.  
@@ -25,22 +28,23 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  To learn about other methods that support rollup, see [Support rollup of work and other fields](../../../reference/xml/support-rollup-of-work-and-other-fields.md).  
   
-## Add fields to work item types  
+## Add fields to work item types
+  
  The following default fields used to schedule work are only present on the task work item.  
   
--   Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)  
+- Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate): The amount of work required to complete a task. (Agile and CMMI)  
   
--   Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)  
+- Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)  
   
--   Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
+- Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
   
- If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+  If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
 1.  Add required fields to the WITs that will capture the rollup values.  
   
      For example, to rollup Original Estimate or Completed Work for user stories, add the following fields to the WIT definition for user story:  
   
-    ```  
+    ```xml
     <FIELD name="Original Estimate" refname="Microsoft.VSTS.Scheduling.OriginalEstimate" type="Double" reportable="measure" formula="sum">  
        <HELPTEXT>Initial value for Remaining Work - set once, when work begins</HELPTEXT>  
     </FIELD>  
@@ -54,14 +58,16 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
 2.  Determine if you want to make rollup values read-only on the work item form.  
   
      By making them read-only you prevent users from introducing data inaccuracies into TFS. You make fields read-only using the `Control` field `Readonly` attribute.  
+
+<a name="project"></a> 
   
-##  <a name="project"></a> Update the Microsoft Project Mapping file  
+##  Update the Microsoft Project Mapping file  
   
 1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).  
   
      Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
-    ```  
+    ```xml
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />  
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.CompletedWork" ProjectField="pjTaskActualWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />    
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.RemainingWork" ProjectField="pjTaskRemainingWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />      
@@ -73,17 +79,20 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 2.  If you want to map Effort, Story Points, or Size, use   a pjTaskNumber field, for example:  
   
-    ```  
+    ```xml
     <Mapping WorkItemTrackingFieldReferenceName="Microsoft.VSTS.Scheduling.StoryPoints" ProjectField="pjTaskNumber12" PublishOnly="false" IfSummaryRefreshOnly="false" />  
     ```  
   
 3.  Assign `PublishOnly="false"` and `IfSummaryRefreshOnly="false"` in the mapping file so that the rollup summary values are published to the TFS database.  
   
-##  <a name="requirements"></a> Structure your work items to support rollup  
+
+<a name="requirements"></a> 
+
+## Structure your work items to support rollup  
   
 1.  Link all work items that should support rollup using parent-child links.  For example, create tasks that link to user stories.  
   
-     You can do this easily by [creating tasks from the taskboard](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
+     You can do this easily by [creating tasks from the taskboard](https://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3), or you can [create your schedule in Project](create-your-backlog-tasks-using-project.md).  
   
 2.  Determine the unit of time used to track work and make sure it is used consistently across your team or organization. For example, you can track tasks using hours or days.  
   
@@ -93,7 +102,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 4.  If you want to roll up to a feature level, link user stories, or other backlog items, to features using parent-child links.  
   
-     You can quickly link items [using the mapping pane](http://msdn.microsoft.com/658f5e1c-ccdd-48da-bd88-4637273c666d).  
+     You can quickly link items [using the mapping pane](https://msdn.microsoft.com/658f5e1c-ccdd-48da-bd88-4637273c666d).  
   
 ## Create a query of the work items you want to rollup  
  If you've created your work items in Project, then you can proceed to creating your schedule in Project.  
@@ -102,7 +111,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  ![Create query from backlog page](_img/alm_rup_createquery.png "ALM_RUP_CreateQuery")  
   
- For more information, about tree queries, see [Use the query editor to list and manage queries](http://msdn.microsoft.com/c9b6d41c-47ce-4a29-8a1c-ba44d8c4809a)  
+ For more information, about tree queries, see [Use the query editor to list and manage queries](https://msdn.microsoft.com/c9b6d41c-47ce-4a29-8a1c-ba44d8c4809a)  
   
 ## Create your schedule in Project  
   
@@ -128,7 +137,8 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 4.  Enter your work estimates in the Duration column, not in the Baseline Work.  
   
-## Set a baseline and publish changes and rollup values to TFS  
+## Set a baseline and publish changes and rollup values to TFS
+  
  When you use Microsoft Project to create parent and child tasks, it assigns parent or summary tasks the rollup of hours or days that are defined for all its child tasks.  
   
 1.  When you have a schedule that meets your needs, set the Project Baseline to copy the values in the Duration field to the Original Estimate field.  
@@ -147,10 +157,12 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 ## Q & A  
   
-### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file?  
+### Q: Where can I learn more about customizing the Microsoft Project Field Mapping file? 
+ 
  **A:** See [Customize the Microsoft Project field mapping file](../../../reference/xml/customize-project-field-mapping-file.md).  
   
-### Q: What's the difference between manual and automated task scheduling?  
+### Q: What's the difference between manual and automated task scheduling? 
+ 
  **A:** By using Task Mode, which is accessed through the following Ribbon menu, you have more flexibility in the way you and team members schedule tasks.  
   
  ![Task mode scheduling ribbon menu options](_img/tfs_oiproj_taskmode_menu.png "TFS_OIProj_TaskMode_Menu")  
@@ -159,5 +171,6 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
  Start and finish dates for auto scheduled tasks (![Auto Update Task Mode icon](_img/tfs_oiproj_autoupdate_icon.png "TFS_OIProj_AutoUpdate_Icon")) are determined by the scheduling engine based on task dependencies and the project calendar, as in previous releases of Project. Project managers who are accustomed to automatic scheduling with past versions of Project can turn the new manual scheduling feature off for specific tasks or the entire project.  
   
-### Q: Can I get a rollup of team capacity?  
+### Q: Can I get a rollup of team capacity?
+  
  **A:** No. The data entered for team capacity isn't stored in the regular data stores.

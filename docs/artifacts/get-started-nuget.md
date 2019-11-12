@@ -1,13 +1,13 @@
 ---
-title: Get Started with NuGet Azure Artifacts in Azure DevOps Services and TFS
+title: Get started with NuGet packages in Azure DevOps Services and TFS
 description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -17,9 +17,16 @@ monikerRange: '>= tfs-2017'
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
-This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
 
-::: moniker range=">=tfs-2017 < vsts"
+For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](/nuget/install-nuget-client-tools).
+
+::: moniker range=">=tfs-2017 <= tfs-2018"
+
+This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < azure-devops"
 
 > Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer, if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 

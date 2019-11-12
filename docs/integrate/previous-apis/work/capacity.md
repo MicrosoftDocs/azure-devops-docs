@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Capacity | REST API Reference for Team Foundation Server
 description: Work with capacity programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: bfcad439-f8a2-4a73-9276-485fdf01aaaf
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -160,7 +160,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 
 | Parameter  	| Allowed Values     
 |:-----------	|:---------
-| activity name	| Deployment, Design, Development, Documentation, Localization, Program Managment, Testing (localized)
+| activity name	| Deployment, Design, Development, Documentation, Localization, Program Management, Testing (localized)
 
 #### Sample request
 

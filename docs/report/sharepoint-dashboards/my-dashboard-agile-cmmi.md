@@ -6,8 +6,10 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: e05d8187-c5cc-423a-b977-6ce5ad52abc4
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---
 
@@ -17,13 +19,13 @@ ms.date: 12/30/2016
 
 You can monitor your tasks and quickly access work items that are assigned to you by using My Dashboard. You can use this dashboard to answer the following questions:  
   
--   What is the next set of tasks, bugs, or test cases that I should act on?  
+- What is the next set of tasks, bugs, or test cases that I should act on?  
   
--   What is the status of the team's most recent builds?  
+- What is the status of the team's most recent builds?  
   
- **Requirements**  
+  **Requirements**  
   
- See requirements listed in [Project portal dashboards](project-portal-dashboards.md).  
+  See requirements listed in [Project portal dashboards](project-portal-dashboards.md).  
   
 ##  <a name="Data"></a> Data that appears in the dashboard  
  You can use My Dashboard to review and access your work items. To learn about the Web Parts that are displayed on My Dashboard, refer to the illustration and the table that follow. You can open the list of Tasks, Bugs, and Test Cases in either Team Web Access or Team Explorer by using one of the following team queries: My Tasks, My Bugs, or My Test Cases.  

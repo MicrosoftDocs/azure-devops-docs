@@ -1,14 +1,14 @@
 ---
-title: Control deployments with gates in Azure Pipelines
+title: Control deployments by using gates
 ms.custom: seodec18
 description: Understand gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -65,6 +65,9 @@ The following gates are available by default:
   For more details, see [HTTP REST API task](../../tasks/utility/http-rest-api.md).
 * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
+* **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
+  given subscription and resource group, and optionally at a specific resource level. For more details, see
+  [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md).
 
 You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
@@ -106,7 +109,8 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Stages](../environments.md)
+* [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also

@@ -2,15 +2,15 @@
 title: Add and manage issues or impediments 
 titleSuffix: Azure Boards 
 description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
-ms.custom: "boards-backlogs, seodec18"   
+ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 11/19/2018
+ms.date: 10/14/2019
 ---
 
 # Manage issues or impediments 
@@ -23,22 +23,56 @@ If you have known issues you want to track, you can do so by defining an impedim
 
 Don't confuse impediments with bugs. You track impediments that may cause problems with delivering one or more requirements. For example, you may have to address feature ambiguity, personnel or resource issues, problems with environments, or other risks that impact scope, quality, or schedule. Other issues that deserve tracking are decisions that require several stakeholders or product teams to weigh in on.
 
-In this topic you'll learn: 
+::: moniker range="> tfs-2018"
 
->[!div class="checklist"]      
+> [!IMPORTANT]  
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> 
+> If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/plan-track-work.md).
+
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+
+> [!IMPORTANT]  
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+
+::: moniker-end
+
+In this article you'll learn: 
+
+> [!div class="checklist"]      
+> * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
 
+## When to use issues versus tasks
+
+You use issues or impediments to track items that may block work from getting done. In general, you link these items to user stories or other work items using a Related link type.
+
+You define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md) or if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking user stories, or other requirement work item types, to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]  
+> If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"  
+
+If you want to add these work item types to a backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+
+::: moniker-end
+
 ## Add an issue or impediment 
 
-[!INCLUDE [temp](../../_shared/new-navigation-azd.md)]  
-
-# [New navigation](#tab/new-nav)  
-
-::: moniker range=">= azdevserver-2019"  
+::: moniker range=">= azure-devops-2019"  
 
 Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
@@ -49,13 +83,7 @@ Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within t
 
 ::: moniker-end   
 
-::: moniker range=">= tfs-2013 <= tfs-2018"   
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)] 
-::: moniker-end   
-
-# [Previous navigation](#tab/previous-nav)
-
-::: moniker range=">= tfs-2017 <= tfs-2018 || vsts"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
@@ -71,25 +99,34 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker-end
 
-::: moniker range="azdevserver-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
-::: moniker-end
-
----
 
 <a id="customize"> </a>
+
 ## Customize issues tracking
 
 [!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
-::: moniker range="vsts"
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
+
+
+::: moniker range="azure-devops"
+
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). 
+
 ::: moniker-end
 
-::: moniker range="<= azdevserver-2019"
+::: moniker range="azure-devops-2019"
+
+Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). You can only have them appear on your backlog if your project is customized using the On-premises XML process model. To lear more, see [Customize the On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model).
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
+
 ::: moniker-end
 
 ## Related articles 
+
 - [Add work items](add-work-items.md)
 - [Work item form controls](../work-items/work-item-form-controls.md)
 - [Manage bugs or code defects](manage-bugs.md)

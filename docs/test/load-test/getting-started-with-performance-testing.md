@@ -5,21 +5,23 @@ ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 
-<a name="cloudloadtest"></a>
 # Load test your app in the cloud using Visual Studio and Azure DevOps
+<a name="cloudloadtest"></a>
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+
 Check your app or web site's performance before you launch it or deploy updates to production by using load testing.
 Find problems before your customers do. Start running 
-[cloud-based load tests](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs) 
+cloud-based load tests
 in almost no time with Azure DevOps.
 
 > This example shows how to execute a cloud load test using Visual Studio. You can also
