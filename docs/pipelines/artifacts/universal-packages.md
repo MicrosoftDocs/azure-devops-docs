@@ -175,3 +175,7 @@ You can use a wildcard expression as the version to get the latest (highest) ver
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
 [Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
+
+### In what versions of Azure DevOps/TFS are Universal Packages available? 
+
+Universal Packages are only available for Azure DevOps Services.

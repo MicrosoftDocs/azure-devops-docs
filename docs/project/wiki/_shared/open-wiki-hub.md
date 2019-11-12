@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ## Open the Wiki  
 
 #### [Browser](#tab/browser) 

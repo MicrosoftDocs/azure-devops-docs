@@ -1,5 +1,5 @@
----
-title: How are Backlogs used to support portfolios, priority, and multi-team ownership 
+﻿---
+title: Backlogs used for portfolios, priority, & multi-team ownership
 titleSuffix: Azure Boards 
 description: Plan, track, and organize user stories, features, and bugs using backlogs and multiple teams 
 ms.custom: "boards-backlogs, seodec18"

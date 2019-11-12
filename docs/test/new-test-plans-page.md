@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: harishkragarwal
 author: harishkragarwal
-ms.date: 07/01/2019
+ms.date: 11/05/2019
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
@@ -99,4 +99,9 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 <a name="feedback"></a>
 ## Provide feedback
-Reach us at devops_tools@microsoft.com to share your thoughts on the new page. In the process, share screenshots as appropriate.
+Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
+
+>[!IMPORTANT]
+> Your feedback to `devops_tools@microsoft.com` is getting through, even if you receive a message 
+> that seems to indicate that the message couldn't be delivered. Thank you for your feedback and patience
+> while we resolve the issue that is causing the message. 

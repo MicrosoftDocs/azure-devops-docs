@@ -16,6 +16,10 @@ In addition, we switched from monthly to daily billing. This means that if you g
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/87r31PUtdN0]
+
 ## Features
 
 ### General:

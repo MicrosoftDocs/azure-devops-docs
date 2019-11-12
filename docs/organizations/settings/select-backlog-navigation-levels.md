@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/11/2019
+ms.date: 10/28/2019
 ---
 
 # Select backlog navigation levels for your team
@@ -56,13 +56,13 @@ You can change the setting from a backlog or board view. Here we show how to cha
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
+4. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
 	![Team settings dialog, Backlogs tab](_img/select-nav-backlog-levels-config-ts.png)  
 
-1. When done with your changes, choose **Save**.  
+5. When done with your changes, choose **Save and close**.  
 
-1. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
+6. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
 ::: moniker-end  
 
@@ -83,7 +83,8 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 4. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 
-::: moniker-end  
+::: moniker-end
+
 ::: moniker range="tfs-2015" 
 
 Requires TFS 2015.1 or later version. 

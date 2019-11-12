@@ -14,6 +14,8 @@ ms.date: 08/23/2016
 
 # Add a hub
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
 ![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)

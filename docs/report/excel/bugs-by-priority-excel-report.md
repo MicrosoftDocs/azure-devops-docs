@@ -8,7 +8,7 @@ ms.topic: reference
 ms.assetid: c1ba2ff0-b4f5-4ddb-88ce-f3358161b877
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
