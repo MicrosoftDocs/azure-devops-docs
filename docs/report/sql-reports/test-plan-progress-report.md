@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Test Plan Progress report to track the team's progress in testing the product 
 ms.assetid: 97d112d1-2d31-4890-b518-124fbeebea30
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 # Test Plan Progress Report
@@ -49,11 +50,11 @@ After the team creates test plans and starts to run tests by using the test mana
   
  You can filter the Test Plan Progress report in the following ways:  
   
--   Change the start and end dates for the report.  
+- Change the start and end dates for the report.  
   
--   Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.  
+- Filter the test plans that are counted in the report by specifying iteration paths, area paths, and the names or states of the test plans.  
   
- For more information, see [Filtering the Report](#Changing) later in this article.  
+  For more information, see [Filtering the Report](#Changing) later in this article.  
   
 ### Required Activities for Managing Test Cases and Test Plans  
  For the Test Plan Progress report to be useful and accurate, the team must perform the following activities to manage test plans:  

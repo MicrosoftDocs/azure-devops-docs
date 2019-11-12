@@ -5,10 +5,11 @@ description: TFS SharePoint integration - Features removed when disabling ShareP
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>=tfs-2013 <= tfs-2017'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
@@ -100,7 +101,7 @@ Quick links are listed on the left side navigation pane of a TFS SharePoint site
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 
 ## Manage a Documents library using the Team Explorer Documents pane
-If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
+If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
 
 Going forward, the Documents pane within Team Explorer will no longer be supported. 
 

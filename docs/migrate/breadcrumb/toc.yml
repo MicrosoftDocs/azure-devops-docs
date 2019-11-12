@@ -2,6 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Migration & Import
-    tocHref: /azure/devops/
-    topicHref: /azure/devops/migrate/index
+  - name: Get started
+    tocHref: /azure/devops/migrate/
+    topicHref: /azure/devops/get-started/index

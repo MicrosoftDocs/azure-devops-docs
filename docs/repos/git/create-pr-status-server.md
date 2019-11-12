@@ -5,9 +5,9 @@ description: Create a web server to listen to pull request events and post statu
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
-ms.author: mmitrik
-author: mmitrik
+ms.manager: mijacobs
+ms.author: apawast
+author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'
@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2018'
 
 # Create a pull request status server with Node.js
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in an Azure DevOps Services Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](pull-request-status.md).
 
 ## Prerequisites
 * An organization in Azure DevOps with a Git repo. If you don't have an organization, [sign up](../../organizations/accounts/create-organization.md) to upload and share code in free unlimited private Git repositories.
-* Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
+* Install [VS Code](https://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js
 To install Node.js, [download](https://nodejs.org/en/download/) the LTS release appropriate for your platform. The download contains an installer, which you can run to install the Node.js runtime on your local machine. When installing Node.js, be sure to keep the [npm package manager](https://www.npmjs.com/) portion of the install, which is selected by default.
@@ -84,7 +84,7 @@ The steps in this section use [Express](https://expressjs.com/), which is a ligh
     node app.js
     ```
 
-  Verify the server is running by browsing to `http://localhost:3000/`.
+   Verify the server is running by browsing to `http://localhost:3000/`.
 
 ## Listen for HTTP POST requests
 The web server is going to receive `POST` requests from Azure DevOps Services, so you need to handle those requests in your server.
@@ -212,7 +212,7 @@ Now that your server can receive service hook events when new PRs are created, u
     ```
 
 6. Create a personal auth token (PAT) for your app to use, following these instructions: 
-[Authenticating with personal access tokens](../../integrate/get-started/authentication/pats.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
+   [Authenticating with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). You should create a new PAT for every service that you use to access your account, naming it appropriately.
 
 7. Create an environment variable for your PAT.
 
@@ -230,19 +230,19 @@ Now that your server can receive service hook events when new PRs are created, u
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+   `State` is an enum of type [GitStatusState](/rest/api/vsts/git/pull%20request%20statuses/get?view=vsts-rest-4.1#gitstatusstate). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
-  The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
+   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
-  The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed. This is the place where users can go to get more information about the status, for example, a build report or test run. If no URL is specified, the description will appear as text with no link.
+   The `targetUrl` is a URL that will be used to create a link for the description text in the Status section and activity feed. This is the place where users can go to get more information about the status, for example, a build report or test run. If no URL is specified, the description will appear as text with no link.
 
-  The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status. 
+   The context `name` and `genre` are used to categorize the status and distinguish it from other services posting status. 
 
     ``` javascript
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"
@@ -282,7 +282,7 @@ Now that your server can receive service hook events when new PRs are created, u
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://visualstudio.microsoft.com",
+            "targetUrl": "https://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"
@@ -339,7 +339,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
 
-0. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
+7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 
 ## Next Steps
 * In this article, you learned the basics of how to create a service that listens for PR events via service hooks and can post status messages using the status API. For more information about the pull request status API see the [REST API documentation](https://go.microsoft.com/fwlink/?linkid=854107). 

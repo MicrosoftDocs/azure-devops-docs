@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -70,7 +70,7 @@ Or, use one of the shared queries that the CMMI process provides.
 ## Monitor progress  
 
 <meta name="description" content="CMMI monitor progress" />
-All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and trend charts and dashboards](../../../report/dashboards/overview.md). In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
+All processes&mdash;Agile, Scrum, and CMMI&mdash;support <a href="../../../report/dashboards/overview.md" data-raw-source="[building status and trend charts and dashboards](../../../report/dashboards/overview.md)">building status and trend charts and dashboards</a>. In addition, several charts are automatically built based on the Agile tools you use. These charts display within the web portal.  
 
 ## Create light-weight charts  
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
@@ -93,11 +93,13 @@ If you need to add reporting services or update reports to the latest versions, 
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 <a id="dashboards"></a>
+
 ## SharePoint portal dashboards
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
 To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+
 ::: moniker-end
 
 
@@ -136,7 +138,7 @@ The situations and working practices of development teams vary widely, and most 
 
 Using the CMMI template and guidance can help you achieve the aims of CMMI if you use it as part of a process improvement program. You should adapt this guidance to your own situation, which will depend on the type and history of the product that you are developing, the project's scale, the background of the team members, and accepted practices in your organization.
 
- This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](http://go.microsoft.com/fwlink/?LinkId=178527).  
+ This guidance was developed in partnership with David Anderson. For more information, see the following Web page: [David J Anderson & Associates](https://go.microsoft.com/fwlink/?LinkId=178527).  
 
 
 <a id="predefined-queries" />

@@ -6,7 +6,7 @@ ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
 ms.prod: devops
 ms.technology: devops-code-git 
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Azure Repos Git tutorial
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
@@ -27,10 +27,10 @@ Version control has a general workflow that most developers use when writing cod
 These steps are:
 
 ---
-0. Get a local copy of code if they don't have one yet.
-0. Make changes to code to fix bugs or add new features.
-0. Once the code is ready, make it available for review by your team.
-0. Once the code is reviewed, merge it into the team's shared codebase.
+1. Get a local copy of code if they don't have one yet.
+2. Make changes to code to fix bugs or add new features.
+3. Once the code is ready, make it available for review by your team.
+4. Once the code is reviewed, merge it into the team's shared codebase.
 
 ---
 
@@ -42,11 +42,11 @@ These terms might sound familiar if you've used a version control system like Te
 ##  Git workflow
 
 ---
-0. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
-0. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
-0. [Push your branch](pushing.md) to the remote repository. 
-0. [Create a pull request](pullrequest.md) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
-0. [Complete your pull request](pullrequest.md) and resolve any merge conflicts from changes other people made after you created your branch.   
+1. [Create a branch](branches.md) for the changes you plan to make and give it a name, such as `users/jamal/fix-bug-3214` or `cool-feature-x`. For more branching guidance, see [Adopt a Git branching strategy](git-branching-guidance.md)
+2. [Commit changes](commits.md) to your branch. People often have multiple commits for a bug fix or feature.
+3. [Push your branch](pushing.md) to the remote repository. 
+4. [Create a pull request](pullrequest.md) so other people can review your changes. To incorporate feedback, you might need to make more commits and push more changes.
+5. [Complete your pull request](pullrequest.md) and resolve any merge conflicts from changes other people made after you created your branch.   
 
 ---
 

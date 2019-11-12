@@ -5,9 +5,9 @@ ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -136,9 +136,10 @@ Switch between Grid and List views using the View menu at the right of the windo
 
 ![Use the View menu to switch between List and Grid views](_img/create-test-cases/GridViewSwitch.png)
 
-> **Note**: Do not use the Team plugin for Excel to add or update test case work items.
-  Excel cannot parse the format used to store test steps, and in some cases
-  this may affect the formatting of the test case work items. 
+> [!NOTE]
+> Do not use the Team plugin for Excel to add or update test case work items.
+> Excel cannot parse the format used to store test steps, and in some cases
+> this may affect the formatting of the test case work items. 
 
 ### Q: Can I bulk edit multiple test cases?
 
@@ -312,7 +313,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for Azure DevOps. 
+**A:** Yes, if you have Azure Test Plans for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -371,7 +372,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: Can I opt out of telemetry for the Test Runner client? 
 
 **A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
-in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/PrivacyStatement),
 no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
@@ -530,7 +531,7 @@ Some browser versions do not currently support all the features of the Test &amp
 
 <p />
 For more details, see 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web), Azure DevOps tab.
+<a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
 
 <a name="recording-playback"><a/>
 ### Q: How do I play the video recordings I created with the extension?
@@ -559,6 +560,40 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 1. Navigate to **chrome://flags/#enable-use-zoom-for-dsf** 
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
+
+## FAQ on New Test Plans Page
+
+### Q: How can I assign configurations to my test cases?
+**A:** You can assign configurations in two ways: 
+
+a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
+![FAQ1.1](_img/FAQ1.1.png)
+
+b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
+
+
+### Q: How can I see the configurations assigned to my test cases?
+**A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
+![FAQ2](_img/FAQ2.png)
+
+### Q: How can I edit the test case?
+**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
+![FAQ3](_img/FAQ3.png)
+
+### Q: How can I see the outcome of each test case?
+**A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
+![FAQ4](_img/FAQ4.png)
+
+### Q: How can I assign testers?
+**A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
+![FAQ5](_img/FAQ5.png)
+
+### Q: How can I view the execution history of the test case?
+**A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
+
+
+### Q: Can I select more than 1 work item while creating a requirement based suite?
+**A:** No, the requirement based suite is linked to one work item.
 
 *****
 

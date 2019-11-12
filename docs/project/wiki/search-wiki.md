@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
 ms.date: 12/17/2018

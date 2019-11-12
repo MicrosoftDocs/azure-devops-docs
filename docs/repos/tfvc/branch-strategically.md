@@ -5,9 +5,9 @@ description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Branch strategically
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 Source code is an important asset in your development effort. But it can be a challenge to effectively manage and evolve source files when multiple developers work concurrently on file updates. You can use a version control system to store source code in shared repositories, to isolate parallel development efforts, to integrate code changes, and to recover previous file versions. A key element in version control is branching that enables simultaneous development. If you branch strategically, you can maintain the order and consistency of multiple versions of your software.
 
@@ -27,7 +27,7 @@ Team Foundation provides a flexible and reliable version control system. You can
 When you work with a version control system, you must consider how to set up a branch structure. You can create a branch by mirroring the source code file. Then you can change the branch without affecting the source. For example, as the branch structure in the following illustration shows, the MAIN branch contains completed functionality that has passed integration tests, and the DEVELOPMENT branch contains the code that is under construction. When a new functionality in the DEVELOPMENT branch is completed and can pass integration tests, you can promote the code from the DEVELOPMENT branch to the MAIN branch. This process is referred to as reverse integration. Conversely, if you merge the code from the MAIN branch to the DEVELOPMENT branch, the process is referred to as forward integration.
 
 ![Main Branch](_img/branch-strategically/IC372280.png)   
-   For more information about how to create and merge code branches, see the following page on the CodePlex Web site: [Team Foundation Server Branching Guide 2.0](http://go.microsoft.com/fwlink/?LinkId=178567).
+   For more information about how to create and merge code branches, see the following page on the CodePlex Web site: [Team Foundation Server Branching Guide 2.0](https://go.microsoft.com/fwlink/?LinkId=178567).
 
 Branching and merging entail the following principles:
 

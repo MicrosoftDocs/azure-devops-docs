@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -33,11 +33,11 @@ You can control which services are available through the web portal by turning a
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
-::: moniker-end
+  ::: moniker-end
 
 ## Change the visibility for a service  
 
-1. 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  

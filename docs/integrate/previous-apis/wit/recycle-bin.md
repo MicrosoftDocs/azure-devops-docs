@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Recycle Bin | REST API Reference for Team Foundation Server
 description: Work with deleted work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A4633743-4644-421E-9B4F-3C906F9D4D42
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,10 +14,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 2/14/2019
 ---
 
-<a id="adjust-work">  </a>
+
+
 # 4. Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+
+<a id="adjust-work">  </a>
 
 After you've defined all the tasks for all the sprint backlog items, you'll want to check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
@@ -25,6 +28,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ![Over capacity](_img/IC795969.png)  
 
+Use this article to learn how to:
 > [!div class="checklist"]   
 > * Adjust your sprint plan if your team is over or under capacity    
 > * Load balance work across your team 
@@ -35,23 +39,46 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ## Open a Sprint backlog for a team 
 
-::: moniker range=">= azure-devops-2019"
 
-0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+::: moniker range="azure-devops"
 
-	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    > [!div class="mx-imgBorder"]  
+    > ![Open Work, Sprints, for a team](_img/add-tasks/open-sprint-backlog-s155-co.png)
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
+    ![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -59,7 +86,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -71,7 +98,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
 
-0. Choose the sprint you want to plan. 
+1. Choose the sprint you want to plan. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)

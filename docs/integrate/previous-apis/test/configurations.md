@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Configurations | REST API Reference for Team Foundation Server
 description: Work with test configurations programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: b551e771-0315-4cfc-a3bd-ddfa3bb6b71f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/23/2016
 ---
 

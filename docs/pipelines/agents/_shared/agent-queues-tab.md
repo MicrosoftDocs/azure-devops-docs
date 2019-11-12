@@ -2,12 +2,32 @@
 ms.topic: include
 ---
 
-* Azure Pipelines: `https://dev.azure.com/{your_organization}/{project-name}/_admin/_AgentQueue`
+::: moniker range="azure-devops"
 
-* TFS 2017 and newer: `https://{your_server}/tfs/{collection-name}/{project-name}/_admin/_AgentQueue`
+[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab.md)]
 
-* TFS 2015 RTM: `http://{your_server}:8080/tfs/_admin/_buildQueue`
+::: moniker-end
 
-* TFS 2015.3: `http://{your_server}:8080/tfs/{collection-name}/_admin/_AgentQueue`
+::: moniker range="azure-devops-2019"
 
-[The TFS URL doesn't work for me. How can I get the correct URL?](/azure/devops/server/admin/websitesettings)
+[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-server-2019.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-tfs-2018.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-tfs-2017.md)]
+
+::: moniker-end
+
+::: moniker range="tfs-2015"
+
+[!INCLUDE [agent-queues-tab](agent-queues-tab/agent-queues-tab-tfs-2015.md)]
+
+::: moniker-end

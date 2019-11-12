@@ -5,7 +5,7 @@ description: Modify or add a work item type to support queries, reports, and wor
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -64,24 +64,24 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 > [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
+   [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
-0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
     `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-0.  Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+3. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
 
-0.  Import the WIT definition file.  
+4. Import the WIT definition file.  
 
-	`witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
+   `witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
-0.  Open the web portal or refresh the page to view the changes.  
+5. Open the web portal or refresh the page to view the changes.  
 
-    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
+   For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="add-wit">  </a>
 <a id="edit-wit">  </a>
@@ -104,7 +104,9 @@ You add fields and field rules to the **FIELDS** section. For the field to appea
 
 For example, to add the work item ID to a form, specify the following XML syntax within the `FORM` section.
 
-    <Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```xml
+<Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```
 
 To learn more about defining fields, see [Add or modify a field](add-modify-field.md).
 
@@ -237,20 +239,24 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 
 -   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
-        <TRANSITION from=" " to="New">
-           <FIELDS>
-              <FIELD refname="System.CreatedBy">
-                <VALIDUSER for="Allowed Group" not="Disallowed Group" />
-              </FIELD>
-           </FIELDS>
-        </TRANSITION> 
+    ```xml
+    <TRANSITION from=" " to="New">
+        <FIELDS>
+            <FIELD refname="System.CreatedBy">
+            <VALIDUSER for="Allowed Group" not="Disallowed Group" />
+            </FIELD>
+        </FIELDS>
+    </TRANSITION> 
+    ```
 
 <a id="delete-wit">  </a>
 ## Delete a WIT (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
-    witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
+witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
 
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
 
@@ -267,7 +273,7 @@ Other related topics or resources:
 - [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
 - [Customize cards on boards](../boards/boards/customize-cards.md)  
-- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+- [Team Foundation Server - Project Management & Work Item forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 
 
 ## Rename a WIT (On-premises XML) 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
@@ -6,7 +6,7 @@ ms.custom: "dashboards, seodec18"
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -80,12 +80,12 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 ::: moniker range=">= azure-devops-2019"
 ## Select a dashboard 
 
-0. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
+1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 	 
-0. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+1. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Dashboards, Favorite a dashboard](_img/dashboards/favorite-dashboard.png)  
@@ -122,7 +122,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 	> [!div class="mx-imgBorder"]  
 	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
 
-	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/dashboards/toc.json&bc=/azure/devops/report/dashboards/breadcrumb/toc.json). 
+	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 2. Enter the name of the dashboard and other information you want to capture. 
 
@@ -251,10 +251,12 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 > [Add a widget to a dashboard](add-widget-to-dashboard.md)
   
 ## Related articles
+
 - [Review the widget catalog](widget-catalog.md)
 - [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 
+
 Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](/rest/api/azure/devops/dashboard/dashboards).  
 

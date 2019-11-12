@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
-ms.date: 06-01-2017
+ms.author: chcomley
+author: chcomley
+ms.date: 06/01/2017
 ---
 
 # Release API Contracts
@@ -1469,7 +1469,7 @@ Extends: [ExecutionInput](#ExecutionInput)
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }
+The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
 
 
 | Field        | Type      | Notes

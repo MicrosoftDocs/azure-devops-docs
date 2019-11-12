@@ -6,7 +6,7 @@ ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/10/2019
@@ -177,7 +177,7 @@ and [Update change request states](https://docs.servicenow.com/bundle/istanbul-i
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also

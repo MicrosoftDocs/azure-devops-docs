@@ -1,20 +1,23 @@
----
+﻿---
 title: Get the Eclipse Plug-in for Azure DevOps Services & TFS support
 description: Information and download links for Team Explorer Everywhere for Eclipse
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel
-ms.date: 11/01/2018
+ms.date: 05/13/2019
 monikerRange: '>= tfs-2013'
 ---
 
 
 # Visual Studio Team Explorer Everywhere for Eclipse (Azure DevOps Services and TFS)
+
+> [!NOTE]
+> The Team Explorer Everywhere plugin works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
 Visual Studio Team Explorer Everywhere (TEE) is a plug-in for [Eclipse](https://www.eclipse.org/) that enables
 you to work with Team Foundation Server (TFS) and Azure DevOps using both Team Foundation Version Control (TFVC) 
@@ -23,6 +26,7 @@ and Git version control systems.
 For information on connecting to an Azure DevOps Services Git repo from Eclipse with TEE, read [Share your code with Eclipse and Azure DevOps Services Git](/azure/devops/repos/git/share-your-code-in-git-eclipse).
 
 ## Eclipse Update Site for Latest Release
+
 The latest release of [TEE](https://marketplace.eclipse.org/content/team-explorer-everywhere) can always be installed in Eclipse using this update site URL:
 
 * **https://dl.microsoft.com/eclipse**
@@ -69,22 +73,22 @@ The latest release of [TEE](https://marketplace.eclipse.org/content/team-explore
 * Contains the TEE plugin for Eclipse, the cross-platform TFVC command-line-client (CLC), and the TFS SDK for Java
 
 ### TEE 2013 (Dev 12 RTM)
-* [Download page for TEE 2013](http://www.microsoft.com/download/details.aspx?id=40785)
+* [Download page for TEE 2013](https://www.microsoft.com/download/details.aspx?id=40785)
 * Released 09/21/2014
 * Contains the TEE plugin for Eclipse, the cross-platform TFVC command-line-client (CLC), and the TFS SDK for Java
 
 ### TEE (Dev 11 RTM)
-* [Download page for TEE Dev 11 RTM](http://www.microsoft.com/download/details.aspx?id=30661)
+* [Download page for TEE Dev 11 RTM](https://www.microsoft.com/download/details.aspx?id=30661)
 * Released 06/26/2013
 * Contains the TEE plugin for Eclipse and the cross-platform TFVC command-line-client (CLC)
 
 ### TEE 2010
-* [Download page for TEE 2010](http://www.microsoft.com/download/details.aspx?id=4240)
+* [Download page for TEE 2010](https://www.microsoft.com/download/details.aspx?id=4240)
 * Released 04/12/2010
 * Contains the Eclipse TEE Plugin and a cross-platform TFVC command-line-client (CLC)
-* [Download page for TEE 2010 SP1](http://www.microsoft.com/download/details.aspx?id=25125)
-* [Download page for TEE 2010 SP1 Language Pack](http://www.microsoft.com/download/details.aspx?id=27118)
-* [Download page for TEE 2010 Power Tools](http://www.microsoft.com/download/confirmation.aspx?id=28557)
+* [Download page for TEE 2010 SP1](https://www.microsoft.com/download/details.aspx?id=25125)
+* [Download page for TEE 2010 SP1 Language Pack](https://www.microsoft.com/download/details.aspx?id=27118)
+* [Download page for TEE 2010 Power Tools](https://www.microsoft.com/download/confirmation.aspx?id=28557)
 
 ## Next Steps 
 * Learn more about TEE from our [Eclipse FAQ](eclipse-faq.md)

@@ -7,11 +7,11 @@ ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 11/01/2019
 ---
 
 # About permissions and groups
@@ -67,6 +67,22 @@ that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+> [!div class="mx-imgBorder"]  
+> ![Permissions, Why link](_img/view-permissions/about-permissions-information-preview.png)
+
+A new dialog opens that shows the inheritance information for that permission.  
+
+::: moniker-end
+
+#### [Current page](#tab/current-page) 
+
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
@@ -75,6 +91,9 @@ To understand why a permission is inherited, you can pause over a permission set
 A new window opens that shows the inheritance information for that permission.  
 
 ![Permissions trace dialog](_img/about-permissions-trace.png)
+
+
+* * *
 
 ::: moniker-end
 
@@ -156,22 +175,22 @@ You set most permissions through the web portal. You can use the tools listed in
 Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
 You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
 
-|Permission level|Web portal security pages |Team Foundation Administration Console|TFSSecurity command-line tool|Tf command-line tool|TFSLabConfig command-line tool|
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Server-level](permissions.md#server)||![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|||
-|[Collection-level](permissions.md#collection)|![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|![check mark](../../_img/check.png)|||
-|[Project and test level](permissions.md#project_test)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
-|[Build level](permissions.md#build)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
-|[Git repository](permissions.md#git-repo)|![check mark](../../_img/check.png)|||![check mark](../../_img/check.png)||
-|[Team Foundation Version Control](permissions.md#tfvc)|![check mark](../../_img/check.png)|||![check mark](../../_img/check.png)||
-|[Area level for work item tracking](permissions.md#area-permissions)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
-|[Iteration level for work item tracking](permissions.md#iteration-path-permissions)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
-|[Work item query](permissions.md#query)|![check mark](../../_img/check.png)||![check mark](../../_img/check.png)|||
-|[Work item tags](permissions.md#tags)|||![check mark](../../_img/check.png)|||
-|[Alerts](permissions.md#alerts)|||![check mark](../../_img/check.png)|||
-|[Releases](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
-|[Lab Management](permissions.md#lab)|||||![check mark](../../_img/check.png)|
 
+|                                  Permission level                                   |      Web portal security pages      | Team Foundation Administration Console |    TFSSecurity command-line tool    |        Tf command-line tool         |   TFSLabConfig command-line tool    |
+|-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|:-----------------------------------:|
+|                        [Server-level](permissions.md#server)                        |                                     |  ![check mark](../../_img/check.png)   | ![check mark](../../_img/check.png) |                                     |                                     |
+|                    [Collection-level](permissions.md#collection)                    | ![check mark](../../_img/check.png) |  ![check mark](../../_img/check.png)   | ![check mark](../../_img/check.png) |                                     |                                     |
+|                [Project and test level](permissions.md#project_test)                | ![check mark](../../_img/check.png) |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                         [Build level](permissions.md#build)                         | ![check mark](../../_img/check.png) |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                      [Git repository](permissions.md#git-repo)                      | ![check mark](../../_img/check.png) |                                        |                                     | ![check mark](../../_img/check.png) |                                     |
+|               [Team Foundation Version Control](permissions.md#tfvc)                | ![check mark](../../_img/check.png) |                                        |                                     | ![check mark](../../_img/check.png) |                                     |
+|        [Area level for work item tracking](permissions.md#area-permissions)         | ![check mark](../../_img/check.png) |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+| [Iteration level for work item tracking](permissions.md#iteration-path-permissions) | ![check mark](../../_img/check.png) |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                       [Work item query](permissions.md#query)                       | ![check mark](../../_img/check.png) |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                        [Work item tags](permissions.md#tags)                        |                                     |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                           [Alerts](permissions.md#alerts)                           |                                     |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
+|                    [Releases](permissions.md#release_management)                    | ![check mark](../../_img/check.png) |                                        |                                     |                                     |                                     |
+|                        [Lab Management](permissions.md#lab)                         |                                     |                                        |                                     |                                     | ![check mark](../../_img/check.png) |
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 ## Setting permissions for SQL Server reports 

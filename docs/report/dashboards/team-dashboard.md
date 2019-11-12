@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2015'
@@ -51,7 +51,7 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 5.	Choose a tile or link to open it. 
 
-###Remove an item or chart from your dashboard 
+### Remove an item or chart from your dashboard 
 
 Choose the ellipses for any tile to remove it from a dashboard. 
 
@@ -61,7 +61,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 ![Unpin an item from the team homepage](_img/tfs-unpin-from-homepage.png)   
 
-##Related notes
+## Related notes
 
 - [Define queries](../../boards/queries/using-queries.md) 
 - [Define builds](../../pipelines/overview.md) 
@@ -70,7 +70,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 <a id="switch-team-context">  </a>
 
-###Switch team context  
+### Switch team context  
  
 You navigate to your team context from the top navigation bar.   
 

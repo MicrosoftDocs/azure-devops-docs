@@ -5,8 +5,9 @@ description: Map a project collection to an instance of Project Web Access or Pr
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d873f68e-3e88-4daa-9c28-a192dab86765
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -18,15 +19,15 @@ ms.date: 01/12/2017
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server and Microsoft Project Server, you must perform several tasks that include mapping a project collection to an instance of Project Web Access or Project Web App (PWA). You can manage this mapping by using the following options of the **TFSAdmin** command-line tool:  
   
--   **/MapPWAToCollection**: Maps a project collection to an instance of PWA. You can map multiple collections to an instance, but you can map each collection to only one instance. Before you can map a collection to an instance, you must register the instance.  
+- **/MapPWAToCollection**: Maps a project collection to an instance of PWA. You can map multiple collections to an instance, but you can map each collection to only one instance. Before you can map a collection to an instance, you must register the instance.  
   
--   **/GetMappedCollections**: Returns the list of project collections that have been mapped to an instance of PWA.  
+- **/GetMappedCollections**: Returns the list of project collections that have been mapped to an instance of PWA.  
   
--   **/UnmapPWAFromCollection**: Removes the mapping of a project collection from an instance of PWA.  
+- **/UnmapPWAFromCollection**: Removes the mapping of a project collection from an instance of PWA.  
   
- For an end-to-end overview of how to integrate these products, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
+  For an end-to-end overview of how to integrate these products, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   
- To use the **TFSAdmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
+  To use the **TFSAdmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
 ```  
 cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE  
@@ -39,7 +40,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
  To use these commands, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the context menu for the **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
  
   
@@ -82,17 +83,17 @@ Mapping project collection http://MyTFSServer:8080/tfs/Collection0 to PWA http:/
   
  The following operations are performed when you map a project collection:  
   
--   The location service for the collection is updated with the mapping.  
+- The location service for the collection is updated with the mapping.  
   
--   Global rules and fields on the collection are created.  
+- Global rules and fields on the collection are created.  
   
--   The synchronization engine is registered with the job service.  
+- The synchronization engine is registered with the job service.  
   
- Before you can unmap a collection from an instance of PWA, you must first unmap all projects and enterprise project plans that are mapped for the project collection. If projects are mapped when you run the **/UnmapPWAFromCollection** option, a message notifies you that you must first use the `/UnmapPlanFromProject` option. As an alternative, you can use the `/force` flag to remove all mappings for all projects in the collection.  
+  Before you can unmap a collection from an instance of PWA, you must first unmap all projects and enterprise project plans that are mapped for the project collection. If projects are mapped when you run the **/UnmapPWAFromCollection** option, a message notifies you that you must first use the `/UnmapPlanFromProject` option. As an alternative, you can use the `/force` flag to remove all mappings for all projects in the collection.  
   
- You can display a list of mapped projects by running the **/GetMappedProjects** option. For more information, see [Manage mappings](manage-mappings-enterprise-project-team-project.md).  
+  You can display a list of mapped projects by running the **/GetMappedProjects** option. For more information, see [Manage mappings](manage-mappings-enterprise-project-team-project.md).  
   
- If you run **/UnmapPWAFromCollection** on a collection to which no projects are mapped, the command removes not only the mapping but also the global rules.  
+  If you run **/UnmapPWAFromCollection** on a collection to which no projects are mapped, the command removes not only the mapping but also the global rules.  
   
 ## Examples  
  The following values apply in each example:  

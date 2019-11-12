@@ -6,7 +6,7 @@ ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -110,7 +110,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also

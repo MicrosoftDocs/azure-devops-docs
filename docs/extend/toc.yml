@@ -1,13 +1,7 @@
-- name: "Develop Extensions"
-  href: index.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
-- name: Overview
-  items:
-    - name: What are extensions?
-      href: ./overview.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
-- name: Quickstarts
-  items:
-  - name: Develop a web extension
-    href: get-started/node.md
+- name: What are extensions?
+  href: ./overview.md
+- name: Develop a web extension
+  href: get-started/node.md
 - name: Tutorials
   items:
   - name: Create a custom pipelines task
@@ -16,7 +10,7 @@
     href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
-  - name: Sample extensions
+  - name: Azure DevOps Services extension samples
     href: develop/samples-overview.md
 - name: Concepts
   items:
@@ -39,9 +33,9 @@
     - name: Add a service hook
       href: develop/add-service-hook.md
     - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
     - name: Store data and settings
@@ -64,7 +58,7 @@
       href: develop/call-rest-api.md
     - name: Extensions for public projects
       href: develop/public-project.md
-    - name: New navigation (preview)
+    - name: Use vertical navigation
       href: develop/web-navigation.md
     - name: Work with URLs
       href: develop/work-with-urls.md      
@@ -94,7 +88,7 @@
       href: publish/overview.md
     - name: Package and publish integrations
       href: publish/integration.md
-    - name: Make your listing public
+    - name: Make listing public and Top Publisher program
       href: publish/publicize.md
     - name: Publish via command line
       href: publish/command-line.md
@@ -187,13 +181,3 @@
       href: reference/client/controls/waitcontrol.md
     - name: How to get help
       href: support/help.md
-- name: Resources
-  items:
-  - name: Visual Studio Marketplace
-    href: https://marketplace.visualstudio.com/
-  - name: Manage Extensions
-    href: ../marketplace/index.md
-  - name: Build Visual Studio extensions
-    href: /azure/devops/integrate/ide/extensions/overview
-
-

@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -46,7 +46,7 @@ For an overview of the fields defined within a default process template, see [Wo
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -99,7 +99,7 @@ When you assign the `syncnamechanges` attribute to a String field, the field alw
 - The `VALIDUSER` rule is specified for a work item type    
 - The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
   
- For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
+  For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
   
 ### Attributes that you can change for each work item type  
 

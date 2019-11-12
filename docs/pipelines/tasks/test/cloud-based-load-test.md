@@ -1,11 +1,11 @@
 ---
-title: Cloud-based Load Test task
+title: Cloud-based Load Test task (Deprecated)
 description: Runs the load test in cloud with a build or release pipeline with Azure Pipelines to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -25,7 +25,9 @@ Microsoft Azure and can be used to test your app's
 performance by generating load on it.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -35,8 +37,11 @@ The agent must have the following capability:
 * Azure PowerShell
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -52,7 +57,7 @@ The agent must have the following capability:
 
 ## Examples
 
-* [Scheduling Load Test Execution](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
+* [Scheduling Load Test Execution](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/23/scheduling-load-test-execution.aspx)
 
 ## More Information
 
@@ -85,7 +90,9 @@ a failure to be reported. For more details, see:
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -1,6 +1,6 @@
 ```YAML
-# Archive Files
-# Archive files using compression formats such as .7z, .rar, .tar.gz, and .zip.
+# Archive files
+# Compress files into .7z, .tar.gz, or .zip
 - task: ArchiveFiles@2
   inputs:
     #rootFolderOrFile: '$(Build.BinariesDirectory)' 

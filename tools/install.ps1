@@ -1,12 +1,12 @@
 Set-Variable -Name GitRoot -Value (git rev-parse --show-toplevel)
 Set-Variable -Name GitCommitMessageHookPath -Value (Join-Path $GitRoot "/.git/hooks/commit-msg")
 
-Set-Variable -Name NewCommitMessageFile -Value "/hooks/commit-msg"
-Set-Variable -Name NewCommitMessagePath -Value (Join-Path $PSScriptRoot $NewCommitMessageFile)
+Set-Variable -Name NewCommitMessageHookFile -Value "/hooks/commit-msg"
+Set-Variable -Name NewCommitMessageHookPath -Value (Join-Path $PSScriptRoot $NewCommitMessageHookFile)
 
-if(!(Test-Path -Path $NewCommitMessagePath -PathType Leaf))
+if(!(Test-Path -Path $NewCommitMessageHookPath -PathType Leaf))
 {
-    Write-Error "Something's gone wrong, I can't find $NewCommitMessagePath"
+    Write-Error "Something's gone wrong, I can't find $NewCommitMessageHookPath"
     exit 1
 }
 
@@ -25,5 +25,5 @@ if (Test-Path -Path $GitCommitMessageHookPath)
     Rename-Item -Path $GitCommitMessageHookPath -NewName $BackedUpCommitMessageHook
 }
 
-Copy-Item -Path $NewCommitMessagePath -Destination $GitCommitMessageHookPath
+Copy-Item -Path $NewCommitMessageHookPath -Destination $GitCommitMessageHookPath
 Write-Host "Done."

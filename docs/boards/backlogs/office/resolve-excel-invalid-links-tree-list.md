@@ -5,7 +5,7 @@ description: Address invalid link error messages that occur when publishing an E
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f2250e37-5150-4546-81b8-4ec8023046c2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -22,7 +22,7 @@ You can resolve most errors using the procedures provided in this article.
  
 
 <a name="tf208000"></a> 
-##TF208000: Duplicate titles  
+## TF208000: Duplicate titles  
 
 If you add a value to multiple Title columns of a work item, when you try to publish the tree, the error message **TF208000** appears in the **Work Item Publishing Errors** dialog box. The error message specifies the row number of the invalid link.  
   
@@ -141,6 +141,6 @@ This message indicates that you can publish the changes that you made to the fie
 -  [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md)   
 -  [Work in Excel or Project](track-work.md)
 
-###Required permissions  
+### Required permissions  
   
 To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 

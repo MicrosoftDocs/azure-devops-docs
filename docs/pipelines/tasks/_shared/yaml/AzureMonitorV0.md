@@ -1,6 +1,6 @@
 ```YAML
-# Query Classic Azure Monitor Alerts
-# Observe the configured classic Azure monitor rules for active alerts.
+# Query Classic Azure Monitor alerts
+# Observe the configured classic Azure Monitor rules for active alerts
 - task: AzureMonitor@0
   inputs:
     connectedServiceNameARM: 

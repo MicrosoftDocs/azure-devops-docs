@@ -1,40 +1,29 @@
 - name: Web portal navigation 
   href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+- name: Open a service, page, or setting 
+  href: go-to-service-page.md   
+- name: Add an artifact or team artifacts
+  href: add-artifact-team.md  
+- name: Use breadcrumbs, selectors, and directories
+  href: use-breadcrumbs-selectors.md  
+- name: Open another project or repo  
+  href: go-to-project-repo.md 
+- name: Work with favorites 
+  href: set-favorites.md  
+- name: Work across projects
+  href: work-across-projects.md  
+- name: Filter basics 
+  href: filter-basics.md
+- name: Search your repo, work items, or wiki 
+  href: search-basics.md   
+- name: Enable a preview feature  
+  href: preview-features.md  
+- name: Reference
   items:
-  - name: Open a service, page, or settings
-    href: go-to-service-page.md   
-  - name: Add an artifact or team artifacts
-    href: add-artifact-team.md  
-  - name: Open team artifacts, use breadcrumbs, selectors, and directories
-    href: use-breadcrumbs-selectors.md  
-  - name: Open another project or repo  
-    href: go-to-project-repo.md 
-  - name: Enable a preview feature  
-    href: preview-features.md  
-  - name: Work with favorites 
-    href: set-favorites.md  
-  - name: Work across projects
-    href: work-across-projects.md   
-  - name: Filter basics 
-    href: filter-basics.md
-  - name: Search your repo, work items, or wiki 
-    href: search-basics.md  
-  - name: Go mobile 
-    href: mobile-work.md  
-  - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   - name: Glossary
     href: glossary.md  
-- name: Resources
-  items:
-  - name: Dashboards   
-    href: ../../report/dashboards/index.md  
-  - name: Wiki 
-    href: ../wiki/index.md  
-  - name: Notifications 
-    href: ../../notifications/index.md
-  - name: Manage projects 
-    href: ../../organizations/projects/index.md
-  - name: Settings 
-    href: ../../organizations/settings/index.md
+  - name: Go mobile 
+    href: mobile-work.md  
+  - name: Keyboard shortcuts
+    href: keyboard-shortcuts.md  
  

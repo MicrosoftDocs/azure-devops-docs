@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 962eba84-0c28-4c94-8abc-3cdb9f1df53a
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -63,26 +63,26 @@ ms.date: 01/12/2017
   
 #### To move some collections to a different instance of TFS and a different instance of PWA  
   
-1.  Use the **/UnmapPwaFromCollection** command option with the **/force** switch to unmap each collection that you are moving.  
+1. Use the **/UnmapPwaFromCollection** command option with the **/force** switch to unmap each collection that you are moving.  
   
-    > [!WARNING]
-    >  By using the **/force** switch, you break all associations between enterprise project plans and projects that are defined for the collection.  
+   > [!WARNING]
+   >  By using the **/force** switch, you break all associations between enterprise project plans and projects that are defined for the collection.  
   
-2.  Move or split the collection.  
+2. Move or split the collection.  
 
-     For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
+    For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
   
-3.  Assign all required permissions.  
+3. Assign all required permissions.  
   
-     For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+    For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
-4.  Use the **/RegisterPWA** command option to register the second instance of PWA with the second application-tier server.  
+4. Use the **/RegisterPWA** command option to register the second instance of PWA with the second application-tier server.  
   
-5.  Use the **/MapPwaToCollection** command option to map each collection that you moved to the second instance of PWA.  
+5. Use the **/MapPwaToCollection** command option to map each collection that you moved to the second instance of PWA.  
   
-6.  Use the **/MapPlanToTeamProject** command option to map each plan to the project that was moved to a different collection.  
+6. Use the **/MapPlanToTeamProject** command option to map each plan to the project that was moved to a different collection.  
   
- For more information, see the following topics:  
+   For more information, see the following topics:  
 
 -   [Move or clone TFS](/azure/devops/server/admin/move-across-domains)  
 
@@ -119,7 +119,7 @@ ms.date: 01/12/2017
 ##  <a name="upgrading"></a> Upgrade from Project Server 2007 to Project Server 2010  
  If you have an instance of Project Web Access that is registered to TFS and the synchronization process is running for a collection, you must perform the following procedures before you upgrade the instance from Project Server 2007 to Project Server 2010:  
   
-1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=211859)  
+1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=211859)  
   
 2.  To enable the synchronization after the upgrade, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   

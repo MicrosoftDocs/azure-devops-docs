@@ -5,8 +5,9 @@ description: Add a task group or a task to a plug-in file process template to de
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/24/2017
 ---
@@ -50,17 +51,17 @@ The following table identifies which plug-ins depend on other plug-ins. Only the
  Use the dependency element in tasks and groups to indicate when a dependency exists. The following example shows how to use the dependency element to specify that the WorkItemTracking task group depends on the Classification and Groups task groups.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Workitem definitions uploaded.">  
-   <dependencies>
-      <dependency groupId="Classification"/>
-      <dependency groupId="Groups"/>
-   </dependencies>  
-   <taskList filename="WorkItem Tracking\WorkItems.xml"/>  
-</group>  
-```  
-  
-> [!NOTE]  
+> ```XML
+> <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Workitem definitions uploaded.">  
+>    <dependencies>
+>       <dependency groupId="Classification"/>
+>       <dependency groupId="Groups"/>
+>    </dependencies>  
+>    <taskList filename="WorkItem Tracking\WorkItems.xml"/>  
+> </group>  
+> ```  
+> 
+> [!NOTE]
 >  The **groupId** element references the **id** element value in the other group.  
   
 The following table describes the elements that you use to define task group dependencies. For more information about how to define task groups, see [Process template XML elements reference](process-template-xml-elements-reference.md).  
@@ -75,12 +76,12 @@ The following table describes the elements that you use to define task group dep
  The following example shows how to use the **dependency** element to specify that the WorkItems task depends on the task with an ID of "WITs."  
   
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<task id="WIs" name="WorkItems" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work items uploaded"  completionDescription="Processing the actual work items used by work item tracking">  
-   <dependencies>
-      <dependency taskId="WITs" />
-   </dependencies>  
-```  
+> ```XML  
+> <task id="WIs" name="WorkItems" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work items uploaded"  completionDescription="Processing the actual work items used by work item tracking">  
+>    <dependencies>
+>       <dependency taskId="WITs" />
+>    </dependencies>  
+> ```  
   
  The following table describes the elements that you use to define task dependencies. For more information about how to define tasks, see [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md).  
   

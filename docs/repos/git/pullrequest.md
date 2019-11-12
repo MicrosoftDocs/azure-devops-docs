@@ -5,9 +5,9 @@ description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 #  Create a pull request
 
-#### Azure Repos | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
 [Git's workflow](gitworkflow.md) uses [branches](branches.md) to isolate work until you're ready to merge the changes into your default branch, such as `master`. 
 The pull request is the collaborative process that lets the rest of the team discuss changes in a branch and agree to merge them once everyone approves.
@@ -37,29 +37,29 @@ In this tutorial you learn how to:
 
 To create a pull request in Azure Repos:
 
-0. [Push](pushing.md) your local branch.
-0. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
+1. [Push](pushing.md) your local branch.
+2. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
 
-  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
 
-  ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push-files-tab.png)
+   ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push-files-tab.png)
  
-  You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
+   You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Project](../../organizations/projects/connect-to-projects.md).
 
-  ![Pull Requests](_img/pull-requests/pull-requests.png)
+   ![Pull Requests](_img/pull-requests/pull-requests.png)
 
-  From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
+   From the **Pull Requests** view you can view pull requests opened by you, assigned to you, and you can create new pull requests. Select **New Pull Request** to open up a web browser where you can create the new pull request in the Azure DevOps Services web portal for your current branch.   
 
-  ![Pull Requests](_img/pull-requests/new-pull-request.png)
+   ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-0. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
+3. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 
-  ![Adding detail to a pull request](_img/pull-request-detail.png)
+   ![Adding detail to a pull request](_img/pull-request-detail.png)
 
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/boards/index.md) to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/queries/link-work-items-support-traceability.md#work-items-linked-to-git-code-development) to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 

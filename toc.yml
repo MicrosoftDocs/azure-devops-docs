@@ -104,7 +104,7 @@
       href: connect/work-web-portal.md
     - name: Work from your account hub
       href: connect/account-home-pages.md
-  - name: Manage users & access�(Azure DevOps)
+  - name: Manage users & access(Azure DevOps)
     items:
     - name: Add and manage users
       href: /team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services
@@ -171,9 +171,9 @@
       href: /docs/setup-admin/team-services/try-additional-features-vs
     - name: Get more features for Azure DevOps
       href: /docs/marketplace/get-vsts-extensions
-    - name: Pricing: Azure DevOps
+    - name: "Pricing: Azure DevOps"
       href: https://visualstudio.microsoft.com/team-services/pricing/
-    - name: Pricing: TFS
+    - name: "Pricing: TFS"
       href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Collaborate with Microsoft Teams
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams
