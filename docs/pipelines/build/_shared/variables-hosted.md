@@ -512,10 +512,12 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
+
 <tr>
-<td>System.CollectionId</td>
-<td>The GUID of the TFS collection or Azure DevOps organization</td>
+<td>System.collectionUri</td>
+<td>A string Team Foundation Server collection URI.</td>
 </tr>
+
 
 <tr>
 <td>System.DefaultWorkingDirectory</td>
@@ -574,6 +576,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
+<td>System.PlanId</td>
+<td>A string-based identifier for a test plan under which a test must run.</td>
+</tr>
+
+
+<tr>
 <td>System.StageAttempt</td>
 <td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
 </tr>
@@ -620,8 +628,13 @@ Otherwise, it is set to <code>False</code>.</td>
 </tr>
 
 <tr>
+<td>System.TaskInstanceId</td>
+<td>A string representing the task instance identifier.</td>
+</tr>
+
+<tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
+<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
@@ -634,6 +647,11 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>System.TeamProjectId</td>
 <td>The ID of the project that this build belongs to.</td>
+</tr>
+
+<tr>
+<td>System.TimelineId</td>
+<td>A string-based ID of a timeline record.</td>
 </tr>
 
 <tr>
