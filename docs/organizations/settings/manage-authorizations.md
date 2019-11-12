@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 09/05/2019
+ms.date: 10/28/2019
 ---
 
 #  Authorize other services to access Azure DevOps
@@ -23,7 +23,7 @@ When you use a service that's integrated with Azure DevOps Services, we use the 
 
 ## Authorize a service
 
-A typical authorization flow might similar to the following example:
+A typical authorization flow might be similar to the following example:
 
 1. You're using a service that uses Azure DevOps resources, so the service requests authorization.
 
@@ -54,7 +54,7 @@ To ensure an authorization request is legitimate, do the following actions:
 ## Manage authorizations
 
 View the services that you've authorized to access your organization. Go to **User settings**, and then select **Authorizations**. You can also go to [your profile view](https://app.vssps.visualstudio.com/Profile/View)
-and follow the **Manage authorizations** link.
+and follow the **Azure DevOps profile** link.
 
 ![User settings, authorizations tab](_img/user-settings-authorizations.png)
 

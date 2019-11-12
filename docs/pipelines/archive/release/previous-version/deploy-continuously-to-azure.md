@@ -40,7 +40,7 @@ Before you start, you'll need:
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 
-  **[here](http://go.microsoft.com/fwlink/?LinkId=518666)**.
+  **[here](https://go.microsoft.com/fwlink/?LinkId=518666)**.
 
 ## Create a release definition
 

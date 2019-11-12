@@ -5,7 +5,7 @@ ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: amullans
+ms.manager: adandree
 ms.author: wismythe
 author: willsmythe
 ms.date: 07/05/2019
@@ -75,7 +75,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@0
+- task: CacheBeta@1
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
@@ -87,6 +87,36 @@ steps:
 In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file which uniquely identifies the set of dependencies in the cache.
 
 On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
+
+#### Restore keys
+
+`restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+
+#### Example
+
+Here is an example on how to use restore keys by Yarn:
+
+```yaml
+variables:
+  YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+
+steps:
+- task: CacheBeta@1
+  inputs:
+    key: yarn | $(Agent.OS) | yarn.lock
+    path: $(YARN_CACHE_FOLDER)
+    restoreKeys: |
+      yarn | $(Agent.OS)
+      yarn
+  displayName: Cache Yarn packages
+
+- script: yarn --frozen-lockfile
+```
+
+In this example, the cache task will attempt to find if the key exists in the cache. If the key does not exist in the cache, it will try to use the first restore key `yarn | $(Agent.OS)`.
+This will attempt to search for all keys that either exactly match that key or has that key as a prefix. A prefix hit can happen if there was a different `yarn.lock` hash segment.
+For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
+If there is a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
 
 ## Cache isolation and security
 
@@ -120,7 +150,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 
 ## Conditioning on cache restoration
 
-In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there is a cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
+In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there is a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
 
 In the following example, the `install-deps.sh` step is skipped when the cache is restored:
 
@@ -253,7 +283,7 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-See [Package reference in project files](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files) for more details.
+See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details.
 
 ## Node.js/npm
 

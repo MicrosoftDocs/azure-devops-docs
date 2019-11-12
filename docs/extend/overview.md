@@ -9,21 +9,24 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/26/2017
+ms.date: 10/24/2019
 ---
 
 # What are extensions?
 
->[!NOTE]
-> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/index.md).
-
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with Azure DevOps Services. 
-They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred development tools.
-They utilize our [RESTful API Library](/rest/api/vsts/) in order to easily interact with Azure DevOps Services and applications/services.
+They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred development tools. 
+They use our [RESTful API Library](/rest/api/vsts/) in order to easily interact with Azure DevOps Services and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using Azure DevOps Services. 
 
+
+> [!NOTE]
+> This section covers developing custom extensions and service-hooks, to find information on installing extensions from the Marketplace, or buying Visual Studio Subscriptions, visit the [Marketplace documentation](../marketplace/overview.md).
+
+
 ## What makes up an extension?
+
 <div align="center" style="padding-top:15px">
 <img alt="Components of an extension" src="./_img/extension-components.png" style="padding-bottom:20px">
 </div>

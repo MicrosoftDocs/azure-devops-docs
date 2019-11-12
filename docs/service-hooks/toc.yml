@@ -1,5 +1,3 @@
-- name: Service Hooks
-  href: index.md
 - name: Integrate with service hooks
   href: overview.md
 - name: Quickstarts
@@ -12,6 +10,8 @@
     href: services/jenkins.md
   - name: Create a service hook with Trello
     href: services/trello.md
+  - name: Create a service hook with Datadog
+    href: services/datadog.md
   - name: Create a service hook with Microsoft Teams
     href: services/teams.md
 - name: How-to Guides

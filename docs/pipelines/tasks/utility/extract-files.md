@@ -44,16 +44,16 @@ None
 <tr>
 <td>Archive file patterns</td>
 <td>
-<p>The archives you want to extract. The default file path is relative from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
-<p>Specify match pattern filters (one on each line) that you want to apply to identify the list of archives to extract. For example:
+<p>Patterns to match the archives you want to extract. By default, patterns start in the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
+<p>Specify pattern filters, one per line, that match the archives to extract. For example:
 </p>
 <ul>
-<li><code>test.zip</code> extracts the test.zip file to the root folder.</li>
-<li><code>test*.zip</code> extracts all .zip files in the test folder.</li>
-<li><code><strong>*.tar</code> extracts all .tar files in the root folder and sub-folders.</li>
-<li><code></strong>\bin*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
+<li><code>test.zip</code> extracts the test.zip file in the root folder.</li>
+<li><code>test/*.zip</code> extracts all .zip files in the test folder.</li>
+<li><code>**/*.tar</code> extracts all .tar files in the root folder and sub-folders.</li>
+<li><code>**/bin/*.7z</code> extracts all &#39;&#39;.7z&#39;&#39; files in any sub-folder named bin.</li>
 </ul>
-<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as <code><strong>\bin\</strong></code> instead of <code>**\bin</code>.</p>
+<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as <code>**/bin/**</code> instead of <code>**/bin</code>.</p>
 </td>
 </tr>
 <tr>

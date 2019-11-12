@@ -1,4 +1,4 @@
----
+﻿---
 title: Remove a component from participating in data synchronization
 titleSuffix: TFS 
 description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
@@ -34,7 +34,7 @@ When you delete a task from Project Server that has been synchronized with a wor
  To use these commands, your **Administer Project Server integration** permission must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. To register or unregister an instance of PWA, you must also belong to the Administrators group for the instance. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to run the `TfsAdmin` command-line tool on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to run the `TfsAdmin` command-line tool on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ##  <a name="removeintegration"></a> Remove integration and shut down synchronization  
  The following illustration shows the systematic sequence of steps that you take to shut down the synchronization engine and remove the integration of Team Foundation Server and Project Server. You can perform the sequence of steps as shown, or you can use the **/force** switch when you perform step 3 using the `TfsAdmin ProjectServer /UnMapPWAFromCollection` command option.  

@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 
 monikerRange: '>= tfs-2015'
 ---
@@ -32,7 +32,25 @@ In this topic, we discuss user-defined variables. Names of these variables consi
 
 A few variable prefixes are reserved by the system and should not be used.
 These are: `endpoint`, `input`, `secret`, and `securefile`.
-Any variable which begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
+Any variable that begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
+
+## Understand variable syntax
+
+Azure Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
+
+Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
+
+Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
+
+Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.value]`, but `$[variables.key]: value` is not.
+
+|Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
+|---|---|---|---|---|
+|macro|`$(var)`|runtime|value (right side)|prints `$(var)`|
+|template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
+|runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
+
+When pipeline variables are turned into environment variables, variable names become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
 
 ## Set variables in pipeline
 
@@ -111,7 +129,7 @@ You can set a variable for a build pipeline by following these steps:
 - Navigate to **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
 - Locate the **Variables** for this pipeline.
 - Add or update the variable.
-- To mark the variable as secret and store in an encrypted manner, select the ![Secret](_img/variables/secret-variable-icon.png) lock icon.
+- To mark the variable as secret, select **Keep this value secret**.
 - Save the pipeline.
 
 Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
@@ -364,6 +382,37 @@ jobs:
     name: echovar
 ```
 
+The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
+
+```yaml
+jobs:
+
+# Set an output variable from a deployment
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job for the first slice
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in TFS.
@@ -464,24 +513,31 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
 
 1. Job level variable set in the YAML file
+1. Stage level variable set in the YAML file
 1. Pipeline level variable set in the YAML file
 1. Variable set at queue time
-1. Pipeline variable set in the web editor
+1. Pipeline variable set in Pipeline settings UI
 
-In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the pipeline using the web editor.
+In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the Pipeline settings UI.
 
 ```yaml
 variables:
   a: 'pipeline yaml'
 
-jobs:
-- job: A
+stages:
+- stage: one
+  displayName: one
   variables:
-  - group: G
-  - name: a
-    value: 'job yaml'
-  steps:
-    - bash: echo $(a)        # This will be 'job yaml'
+   - name: a
+     value: 'stage yaml'
+
+  jobs:
+  - job: A
+    variables:
+    - name: a
+      value: 'job yaml'
+    steps:
+      - bash: echo $(a)        # This will be 'job yaml'
 ```
 
 > [!NOTE]
@@ -577,5 +633,4 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will be 20, since the variables are expanded just before the step
    ```
 
----
-* * *
+

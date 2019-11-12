@@ -9,7 +9,7 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/08/2019
+ms.date: 10/21/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -37,7 +37,7 @@ jobs:
 
   steps:
   - script: echo Hello!
-    condition: always() # this step will always run, even if the pipeline is cancelled
+    condition: always() # this step will always run, even if the pipeline is canceled
 
 - job: Bar
   dependsOn: Foo
@@ -150,7 +150,7 @@ jobs:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I've got a conditional step that runs even when a job is cancelled. Does this affect a job that I cancelled in the queue?
+### I've got a conditional step that runs even when a job is canceled. Does this affect a job that I canceled in the queue?
 
 No. If you cancel a job while it's in the queue, then the entire job is canceled, including steps like this.
 

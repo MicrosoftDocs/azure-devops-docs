@@ -114,7 +114,7 @@ If you are a TeamCity user, you can now consume TeamCity builds as artifacts in 
 
 ### Release Management Client SDK
 
-If you need to work with Release Management REST APIs, we now have a [C# client SDK](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) available as a nuget package. A sample usage can be found here: [http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx)
+If you need to work with Release Management REST APIs, we now have a [C# client SDK](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) available as a nuget package. A sample usage can be found here: [https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx)
 
 ## Dashboards
 

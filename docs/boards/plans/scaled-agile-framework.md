@@ -293,7 +293,7 @@ You can also add tags to your epics, to help you track the investment themes eac
 
 ![Epic work item form, add tags](_img/safe-add-tags-to-epic.png)
 
-Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](http://scaledagileframework.com/business-epic-kanban/).
+Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](https://www.scaledagileframework.com/portfolio-kanban/).
 
 ![Epic kanban board with custom columns](_img/safe-kanban-custom-columns.png)
 
@@ -335,7 +335,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 - SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
-- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
+- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
@@ -349,7 +349,7 @@ This article has been updated from the previous white paper developed in collabo
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and an ALM|DevOps Ranger.  
-- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
+- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](https://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
 - Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM|DevOps Ranger), Richard Hundhausen (independent consultant, ALM|DevOps Ranger) and Bill Heys (independent consultant, ALM|DevOps Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM|DevOps Ranger).  
 
 

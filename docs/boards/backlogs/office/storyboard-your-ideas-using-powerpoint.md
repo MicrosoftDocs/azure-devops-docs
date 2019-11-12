@@ -1,4 +1,4 @@
----
+﻿---
 title: Storyboard your ideas with Microsoft PowerPoint
 titleSuffix: TFS 
 description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
@@ -31,7 +31,7 @@ With storyboarding, you turn your ideas and goals into something visual. Your id
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3.  Open Power Point Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
+3.  Open PowerPoint Storyboarding and start with a blank slide. You should see the **Storyboarding** ribbon and **Storyboard Shapes** library. If you don't see the Storyboarding ribbon, see step 2.
 
     <img src="_img/IC652597.png" alt="Open PowerPoint Storyboarding" style="border: 1px solid #C3C3C3;" /> 
 
@@ -66,7 +66,7 @@ When you share your storyboards to a shared network location, you can link the s
 
 1.  Save or upload your storyboard to a shared location that everyone on your team can access.
 
-2.  If you started Power Point Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
+2.  If you started PowerPoint Storyboarding from a backlog item, then you are already linked to the initial item and you are done.
 
     Otherwise, open the **Links** tab or the **Storyboard Links** tab.
 

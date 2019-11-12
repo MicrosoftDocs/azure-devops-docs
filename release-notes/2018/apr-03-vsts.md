@@ -217,7 +217,7 @@ When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

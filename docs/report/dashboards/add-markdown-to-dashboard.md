@@ -19,9 +19,10 @@ ms.date: 11/19/2018
 
 
 <a id="markdown-widget">  </a> 
+
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  
-- Provide links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
+- Links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
 - Important dates or target deadlines  
 
 Here's an example:  
@@ -29,8 +30,33 @@ Here's an example:
 
 [!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
 
+## Supported Markdown syntax
+
+The Markdown widget supports CommonMark standard features, such as: 
+- Headings 
+- Paragraphs and line breaks
+- Blockquotes
+- Horizontal rule 
+- Emphasis (bold, italics, strikethrough)
+- Tables
+- Lists, both ordered and unordered  
+- Links
+- Images 
+- Escaping characters
+
+For details on usage, see [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md).
+
+For performance reasons, the Markdown widget doesn't add support for a number of extended features, many of which are supported in the wiki. Extended capabilities would impede widget load time. For example, the following extended markdown features aren't supported in the Markdown widget:
+- Emdedded HTML syntax  
+- Code highlighting (wiki/others support language-syntax aware color coding, CommonMark just renders code as plain preformatted text)
+- Checklists
+- Emoji characters  
+- Attachments
+- Math formulas
+
 
 ## Connect to your project 
+
 To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
 ::: moniker range=">= azure-devops-2019"  

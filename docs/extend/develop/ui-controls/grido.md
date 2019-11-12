@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Use the grid control
@@ -17,6 +17,8 @@ ms.date: 08/04/2016
 This page shows different samples about the grid control.
 
 **Go to [API Reference](../../reference/client/controls/grid.md) for more details.**
+
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 
@@ -51,6 +53,7 @@ This sample shows the basic usage of the grid. Note that, `canSortBy` is set to 
 ```
 
 <a name="update"></a>
+
 ## Update grid source
 
 This sample shows how the grid can be updated after it is initialized using `setDataSource`.
@@ -256,6 +259,7 @@ Settings `collapsed: true` get a parent item to be displayed collapsed. To updat
 ```
 
 <a name="formatting"></a>
+
 ## Conditional formatting
 
 This sample shows the customization of the grid cells. "Total" column is a calculated column and styled differently in `getCellContents` method.

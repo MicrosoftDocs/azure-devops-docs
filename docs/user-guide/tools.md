@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/29/2019
+ms.date: 10/31/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -81,6 +81,9 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
 - [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 
+> [!IMPORTANT]
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
+
 ::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
@@ -89,6 +92,10 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
 - [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
+
+> [!TIP]
+> Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
+> ![Check Azure DevOps Office Integration](_img/check-azure-devops-office-integration-code-tools.png)
 
 ::: moniker-end
 

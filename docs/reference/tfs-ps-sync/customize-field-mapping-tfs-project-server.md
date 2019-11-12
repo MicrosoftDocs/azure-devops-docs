@@ -1,4 +1,4 @@
----
+﻿---
 title: Customize the field mapping between TFS and Project Server
 titleSuffix: TFS
 description: Associate the fields in Team Foundation Server with fields in Project Server 
@@ -34,7 +34,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
   
 > [!NOTE]
->  For a demonstration video, see the following page on the Microsoft website: [Managing Field Mappings for Integration of Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222613).  
+>  For a demonstration video, see the following page on the Microsoft website: [Managing Field Mappings for Integration of Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222613).  
   
  **Requirements**  
   
@@ -184,7 +184,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 1. Add two customer enterprise fields to Project Server, and label them as **Area (TFS)** and **Iteration (TFS)**.  
   
-    For more information, see the following page on the Microsoft website: [Creating Lookup Tables and Enterprise Custom Fields](http://go.microsoft.com/fwlink/?LinkId=209696).  
+    For more information, see the following page on the Microsoft website: [Creating Lookup Tables and Enterprise Custom Fields](https://go.microsoft.com/fwlink/?LinkId=209696).  
   
 2. Export the field mappings from the project collection where the projects are defined.  
   

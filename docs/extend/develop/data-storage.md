@@ -18,6 +18,8 @@ Azure DevOps Services extensions have the ability to store user preferences and 
 
 There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
 
+[!INCLUDE [rest-api-docs-rollout](../../_shared/rest-api-docs-rollout.md)]
+
 ### What you can store
 
 The service is designed to let you store and manage two different types of data:

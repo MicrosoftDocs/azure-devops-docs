@@ -13,7 +13,7 @@ ms.date: 03/28/2019
 monikerRange: "azure-devops"
 ---
 
-<!--- Supports FWLINK: http://go.microsoft.com/fwlink/?LinkId=692096 -->
+<!--- Supports FWLINK: https://go.microsoft.com/fwlink/?LinkId=692096 -->
 
 # Migration guide
 

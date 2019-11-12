@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/06/2019
+ms.date: 10/27/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -482,8 +482,8 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 ### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
 
-You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the the major and minor run numbers.
-The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps.
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
+The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
 
 ```yaml
 trigger:

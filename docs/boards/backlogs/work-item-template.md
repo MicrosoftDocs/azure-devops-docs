@@ -1,5 +1,5 @@
----
-title: Add and use work item templates to update user stories, tasks, issues, and other work items
+﻿---
+title: Add & use work item templates to update stories, issues, and more
 titleSuffix: Azure Boards   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
 ms.technology: devops-agile
@@ -17,7 +17,7 @@ ms.date: 09/18/2019
 
 **Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio 2015** 
 
-<!--- Supports FWLINK http://go.microsoft.com/fwlink/?LinkId=824070 -->
+<!--- Supports FWLINK https://go.microsoft.com/fwlink/?LinkId=824070 -->
 
 With work item templates you can quickly create work items which have pre-populated values for your team's commonly used fields. For example, you can create a task template that will set the area path, iteration path, and discipline or activity whenever you use it to create a task.  
 
@@ -132,7 +132,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
     ``` 
 
     > [!TIP]  
-    > The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there's a 2000 character limit recognized by browsers. There's no work around to that limit.   
+    > The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there is a 2000 character limit imposed by some browser clients with no work around.   
 
 4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
 
@@ -536,7 +536,7 @@ You can specify a work item template that specifies several field values using t
 
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/{WorkItemType}?
 > [FieldReferenceName 1]={FieldValue 1}&
 > [FieldReferenceName 2]={FieldValue 2}&
 > [FieldReferenceName 3]={FieldValue 3}&
@@ -564,7 +564,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker range="azure-devops"
 > [!div class="tabbedCodeSnippets"]
 > ```URL
-> http://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
+> https://dev.azure.com/{OrganizationName}/{ProjectName}/_workItems/create/Task?
 > [System.Title]=TaskTitle&
 > [System.AssignedTo]=Jamal+Hartnett&
 > [System.Description]=<p>Always+include+Remaining+Work+and+links+to+any+related+bugs+or+user+stories.</p>&
@@ -590,7 +590,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 ::: moniker-end
 
 > [!TIP] 
-> There is a 2000 character limit recognized by browsers. 
+> There is a 2000 character limit imposed by some browser clients. 
 
 You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
 

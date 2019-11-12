@@ -5,7 +5,6 @@ summary: Configure resources and manage settings for an organization, project, t
 
 metadata:
   title: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-settings
   ms.topic: landing-page 

@@ -1,4 +1,4 @@
----
+﻿---
 title: CMMI process guidance, Create a solution architecture
 titleSuffix: Azure Boards
 description: Investigate alternative architectural strategies to create good architecture  
@@ -125,4 +125,4 @@ Part of creating a good architecture is investigating alternative architectural 
  Identify the scenarios that do not meet budget allocations. Measure the performance of the scenarios. Use prototyping in early iterations if code is not available. Repeat the budgeting, evaluation, and validation steps as necessary by using data that is acquired during validation.  
   
 ## Develop a Threat Model  
- For more information, see the following page on the Microsoft Web site: [Security Developer Center](http://go.microsoft.com/fwlink/?LinkId=158810).
+ For more information, see the following page on the Microsoft Web site: [Security Developer Center](https://go.microsoft.com/fwlink/?LinkId=158810).

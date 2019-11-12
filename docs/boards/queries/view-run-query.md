@@ -60,7 +60,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 
 <a id="tips-queries-hub"> </a> 
 
-## Tips for working with the directory-focused **Queries** pages 
+## Tips for working with the directory-focused Queries pages 
 
 The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
 

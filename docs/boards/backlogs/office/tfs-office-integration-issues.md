@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
-ms.date: 09/28/2018   
+ms.date: 10/24/2019  
 ---
 
 
@@ -23,7 +23,10 @@ If you don't see the Team ribbon in Microsoft Excel, as shown in the image below
 
 [!INCLUDE [temp](../../_shared/deprecate-project.md)]
 
-## Enable the Team Foundation Add-in 
+> [!IMPORTANT]  
+> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads). These software installs the Azure DevOps Office Integration Add-in or Team Foundation Office Integration Add-in  For a list of prerequisites, see [Azure Boards and Office integration](track-work.md). 
+
+## Enable the Azure DevOps or Team Foundation Add-in 
 
 1.	From the Excel **File** menu, choose **Options**.  
 2.	Choose Add-ins and from the **Manage** picklist, choose **COM Add-ins**, and then choose **Go**.

@@ -11,7 +11,7 @@ We're excited to announce the new Azure Boards app for Microsoft Teams. With thi
 
 ### Import work items from a CSV file
 
-Until now, importing work items from a CSV file was dependent on using the Excel plugin. In this update we are providing a first class import experience directly from Azure Boards so you can import new or update existing work items. To learn more, see the documentation [here](https://docs.microsoft.com/en-us/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops).
+Until now, importing work items from a CSV file was dependent on using the Excel plugin. In this update we are providing a first class import experience directly from Azure Boards so you can import new or update existing work items. To learn more, see the documentation [here](https://docs.microsoft.com/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops).
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/159_01.gif)
@@ -26,7 +26,7 @@ Parent context is now available within your Kanban board as a new field for work
 
 ### Add parent field to backlog and queries
 
-The parent field is now available when viewing backlogs and query results. To add the parent field, use the **Column options**s view.
+The parent field is now available when viewing backlogs and query results. To add the parent field, use the **Column options** view.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/159_02.png)

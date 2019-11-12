@@ -101,11 +101,11 @@ layout of the hosted agents is subject to change without warning.
 
 ## Agent IP ranges
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
-To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/en-us/download/details.aspx?id=56519) for all regions in that geography.
+To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
@@ -154,9 +154,9 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
-  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'${xcodeRoot};sudo xcode-select --switch ${xcodeRoot}/Contents/Developer"`
+  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
   
-  where `${xcodeRoot}` = `/Applications/Xcode_10.1.app`
+  where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
@@ -184,8 +184,15 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
 #### .NET Core
   .NET Core 2.2.105 is default on VM images but Mono version 6.0 or greater requires .NET Core 2.2.300+. 
-  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
+  If you use the Mono 6.0 or greater, you will have to override .NET Core version using [.NET Core Tool Installer task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops).
 
+#### Boost
+  The VM images contain prebuilt Boost libraries with their headers in the directory designated by `BOOST_ROOT` environment variable. In order to include the Boost headers, the path `$BOOST_ROOT/include` should be added to the search paths.
+  
+  Example of g++ invocation with Boost libraries:
+  ```
+  g++ -I "$BOOST_ROOT/include" ...
+  ```
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
 
