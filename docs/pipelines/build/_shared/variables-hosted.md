@@ -512,6 +512,10 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>
 
+<tr>
+<td>System.CollectionId</td>
+<td>The GUID of the TFS collection or Azure DevOps organization</td>
+</tr>
 
 <tr>
 <td>System.collectionUri</td>
