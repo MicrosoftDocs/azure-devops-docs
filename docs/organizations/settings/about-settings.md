@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/05/2019
+ms.date: 10/28/2019
 ---
 
 
@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -157,6 +157,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 ::: moniker range=">= azure-devops-2019"
+
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -363,7 +364,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><strong>Billing</strong></td>
 <td><ul>
 <li><a href="../billing/set-up-billing-for-your-organization-vs.md" data-raw-source="[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)">Set up billing</a></li>
-<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Buy access to Azure DevOps Server or Azure Test Plans](../billing/try-additional-features-vs.md)">Try Azure Test Plans for free</a></li>
+<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans](../billing/try-additional-features-vs.md)">Try Azure Test Plans for free</a></li>
 <li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)">Pay for users (Basic)</a></li>
 <li><a href="../billing/buy-more-build-vs.md" data-raw-source="[Buy CI/CD](../billing/buy-more-build-vs.md)">Buy CI/CD</a></li>
 <li><a href="../billing/add-backup-billing-managers.md" data-raw-source="[Add a user to make purchases](../billing/add-backup-billing-managers.md)">Add a user to make purchases</a></li>

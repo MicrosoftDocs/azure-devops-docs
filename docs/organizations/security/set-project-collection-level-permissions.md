@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ---
 
 # Set permissions at the project- or collection-level
@@ -80,17 +80,16 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Choose **Project Settings** and then **Permissions**.
+2. Choose **Project settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project groups](_img/permissions/project-permisions-s154.png)
+	![Choose Project settings, and then Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
 
-1. Choose **Project Administrators** group, **Members**, and then **Add**.  
+3. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-collection/project-admin-members-add-s154.png) 
 
-1. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-collection/add-member-project-admin.png)  
@@ -98,7 +97,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save**. 
+5. Choose **Save**. 
 
 #### [Current page](#tab/current-page) 
 
@@ -110,12 +109,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-1. Choose **Project Administrators** group, **Members**, and then **Add**.  
+3. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-1. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+4. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -123,7 +122,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+5. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 
 * * *
 

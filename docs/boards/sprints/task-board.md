@@ -324,7 +324,7 @@ You can [drag-and-drop work items onto a sprint from any backlog or board](assig
 
 ## Try this next
 
-Work with [sprint burndown](sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks.
+Work with [sprint burndown](../../report/dashboards/configure-sprint-burndown.md) charts to monitor progress, manage scope creep, and mitigate risks.
 
 
 ## Related articles

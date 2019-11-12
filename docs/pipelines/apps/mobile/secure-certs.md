@@ -171,7 +171,7 @@ However, here are a few additional tips that can help you get your app up and ru
 
 Follow these steps:
 
-1. **Windows only**: You may need to install openssl.exe. If you have the [Git command line tools](http://www.git-scm.com/downloads) installed, openssl may already be in your path (Ex: C:\Program Files (x86)\Git\bin). If not, install the command line tools or download a binary distribution of OpenSSL for Windows from [one of the community mirrors](http://go.microsoft.com/fwlink/?LinkID=627128) and add it to your path. This will also need to be done on any Windows machines running the build agent.
+1. **Windows only**: You may need to install openssl.exe. If you have the [Git command line tools](http://www.git-scm.com/downloads) installed, openssl may already be in your path (Ex: C:\Program Files (x86)\Git\bin). If not, install the command line tools or download a binary distribution of OpenSSL for Windows from [one of the community mirrors](https://go.microsoft.com/fwlink/?LinkID=627128) and add it to your path. This will also need to be done on any Windows machines running the build agent.
 
 2. Now, encrypt the keystore for your app.
    1. Open a terminal or command prompt and go to where your keystore is located.

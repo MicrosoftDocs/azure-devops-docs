@@ -62,14 +62,14 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the the default working directory</td>
+    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
     <td>(Required) You can write your scripts inline here. When using Windows agent, use PowerShell or PowerShell Core or batch scripting whereas use PowerShell Core or shell scripting when using Linux based agents. For batch files use the prefix \"call\" before every azure command. You can also pass predefined and custom variables to this script using arguments. <br/><b>Example for PowerShell/PowerShellCore/shell:</b> az --version az account show <br/><b>Example for batch:</b> call az --version call az account show</td>
 </tr>
 <tr>
-    <td><code>scriptArguments</code><br/>Script Arguments</td>
+    <td><code>arguments</code><br/>Script Arguments</td>
     <td>(Optional) Arguments passed to the script</td>
 </tr>
 <tr>
@@ -82,7 +82,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>useGlobalConfig</code><br/>Use global Azure CLI configuration</td>
-    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/en-us/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
+    <td>(Optional) If this is false, this task will use its own separate <a href= "https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest#cli-configuration-file">Azure CLI configuration directory</a>. This can be used to run Azure CLI tasks in <b>parallel</b> releases" <br/>Default value: false</td>
 </tr>
 <tr>
     <td><code>workingDirectory</code><br/>Working Directory</td>

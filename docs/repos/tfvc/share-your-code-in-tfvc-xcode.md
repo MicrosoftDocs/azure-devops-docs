@@ -22,7 +22,7 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 
 ## Download and configure Git-tf
 
-1. Download and extract [Git-tf](http://go.microsoft.com/fwlink/p/?LinkId=261658).
+1. Download and extract [Git-tf](https://go.microsoft.com/fwlink/p/?LinkId=261658).
 
 2. Add Git-tf and the Java runtime to your path.
 

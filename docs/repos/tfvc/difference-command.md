@@ -144,7 +144,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 - **SS**
 
-  **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<http://go.microsoft.com/fwlink/?LinkId=99139>).
+  **SS** is default difference output format for Visual SourceSafe. For more information, see "Diff (Command Line)" at the Microsoft Web site (<https://go.microsoft.com/fwlink/?LinkId=99139>).
 
 - **SS\_SideBySide**
 

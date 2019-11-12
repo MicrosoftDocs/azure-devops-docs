@@ -216,8 +216,10 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 > The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
-For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
+For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
+
+<a id="fields" />
 
 ## Fields used to estimate and track work
 

@@ -1,5 +1,5 @@
----
-title: Make Agile team progress visible to the Program Management Office 
+﻿---
+title: Make Agile team progress visible to Program Management Office
 titleSuffix: TFS
 description: View work progress and resource usage using Team Foundation Server & Project Server
 ms.prod: devops
@@ -25,7 +25,7 @@ ms.date: 01/12/2017
  
   
 > [!NOTE]
->  For a demonstration video, see the following page on the Microsoft website: [Making Agile Team Progress Visible to the Project Management Office](http://go.microsoft.com/fwlink/?LinkId=222612). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
+>  For a demonstration video, see the following page on the Microsoft website: [Making Agile Team Progress Visible to the Project Management Office](https://go.microsoft.com/fwlink/?LinkId=222612). Some details may differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
   
  **Requirements**  
   
@@ -58,11 +58,11 @@ ms.date: 01/12/2017
 |Area to configure|Recommended configuration|Notes|  
 |-----------------------|-------------------------------|-----------|  
 |Process template for project|Microsoft Solutions Framework (MSF) for Agile Software Development|The Agile process template provides user story and task types of work items. You can use the web portal **Backlog** and **Board** pages to manage your backlog and plan and run your sprints **Note:**  You can also use a customized process template.|  
-|Project mapping|`/workItemTypes:User Story`|When you map the enterprise project plan to the project, specify the user story as the work item type. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](http://go.microsoft.com/fwlink/?LinkId=203354).|  
+|Project mapping|`/workItemTypes:User Story`|When you map the enterprise project plan to the project, specify the user story as the work item type. You can also disallow fixed work for tasks. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
 |Field mappings|`/useDefaultFieldMappings`|You can use the default field mappings. No additional field mappings are required.|  
 |Resource Names|You must add team members to the Team Members group for each instance of PWA, or you must grant them the Open Project and View Project Site permissions in Project. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).<br /><br /> Also, you must add all team leads and other team members to the enterprise resource pool for Project Server and the resource pool for the enterprise project plan.|You must grant permissions to all user accounts that are assigned as resources in the project plan or that are named in the Assigned To field for a work item. These users submit status updates that flow into the status queue for the instance of PWA.<br /><br /> All names that are assigned to the **Resource Names** field must be recognized as valid contributors of the project.|  
 |Project managers|Accounts of users of Project Professional  must be granted **View Project-level information** or assigned as members of the **Reader** group in Team Foundation for projects to which they will publish.|You must grant project managers permissions to modify work items in those projects that are mapped to their enterprise project plans.|  
-|Automatic approvals|Define a rule to automatically approve all updates that are submitted from Team Foundation Server to Project Server.|As a project manager, you can define approval rules by using the instance of PWA for your project plan. For more information, see [Approve or reject task updates](http://go.microsoft.com/fwlink/?LinkId=203361).|  
+|Automatic approvals|Define a rule to automatically approve all updates that are submitted from Team Foundation Server to Project Server.|As a project manager, you can define approval rules by using the instance of PWA for your project plan. For more information, see [Approve or reject task updates](https://go.microsoft.com/fwlink/?LinkId=203361).|  
   
   
 <a name="ActionsAgileTeam"></a>   

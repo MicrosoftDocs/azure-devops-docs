@@ -62,7 +62,7 @@ You must have been added to the Azure DevOps project and been granted Stakeholde
 
 1. Choose the link provided in the email invitation you should have received. Or, open a browser window and enter the URL for the web portal.
 	::: moniker range="azure-devops"  
-	`http://dev.azure.com/OrganizationName/ProjectName`
+	`https://dev.azure.com/OrganizationName/ProjectName`
 	::: moniker-end
 	::: moniker range="<= azure-devops-2019"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	

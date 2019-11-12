@@ -80,6 +80,8 @@
   items:
   - name: Azure Boards with Slack
     href: integrations/boards-slack.md
+  - name: Azure Boards with Teams
+    href: integrations/boards-teams.md
   - name: Project Server Integration (Deprecated)
     href: /azure/devops/reference/tfs-ps-sync/index
 - name: REST API Reference
@@ -100,7 +102,7 @@
     href: /rest/api/vsts/wit/wiql 
 - name: Marketplace Extensions
   items:
-  - name: Wiql Editor 
+  - name: WIQL Editor 
     href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
   - name: Enhanced Export 
     href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export

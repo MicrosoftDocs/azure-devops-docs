@@ -101,7 +101,7 @@ Here's how you can customize a SharePoint dashboard:
   
   For more information about how to work with and customize reports in Office Excel, see these articles:  
   
-- [Ways to customize PivotTable reports](http://go.microsoft.com/fwlink/?LinkId=165722)    
-- [Edit or remove a workbook from Excel Services](http://go.microsoft.com/fwlink/?LinkId=165723)   
-- [Publish a workbook to Excel Services](http://go.microsoft.com/fwlink/?LinkId=165724)    
-- [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)
+- [Ways to customize PivotTable reports](https://go.microsoft.com/fwlink/?LinkId=165722)    
+- [Edit or remove a workbook from Excel Services](https://go.microsoft.com/fwlink/?LinkId=165723)   
+- [Publish a workbook to Excel Services](https://go.microsoft.com/fwlink/?LinkId=165724)    
+- [Save a file to a SharePoint library or another Web location](https://go.microsoft.com/fwlink/?LinkId=165725)

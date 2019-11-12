@@ -33,11 +33,11 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
   To learn more, see the following topics:  
   
-- [Creating Reports for Team Foundation Server 2010](http://go.microsoft.com/fwlink/?LinkID=199478) describes how to create reports that you can view by using Report Manager.  
+- [Creating Reports for Team Foundation Server 2010](https://go.microsoft.com/fwlink/?LinkID=199478) describes how to create reports that you can view by using Report Manager.  
   
    (There are only minor schema changes introduced for the TFS 2015 relational warehouse since TFS 2010).  
   
-- [Customizing Reports for Team Foundation Server 2010](http://go.microsoft.com/fwlink/?LinkID=199479) describes how to customize the default reports for Reporting Services that are provided with each process template. These reports use queries that are written in either SQL or Multidimensional Expressions (MDX).  
+- [Customizing Reports for Team Foundation Server 2010](https://go.microsoft.com/fwlink/?LinkID=199479) describes how to customize the default reports for Reporting Services that are provided with each process template. These reports use queries that are written in either SQL or Multidimensional Expressions (MDX).  
   
    (There are only minor schema changes introduced for the TFS 2015 cube since TFS 2010).  
   
@@ -56,7 +56,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
 - **Report Builder 2.0** is an intuitive environment for authoring reports. This application is optimized for Microsoft Office so that business users can work in that familiar environment. You can use Report Builder 2.0 to work with data, define a layout, preview a report, and publish a report to a report server or a SharePoint site. This application includes a wizard for creating tables or charts, in addition to query builders and an expression editor. It also supports the advanced reporting features in SQL Server 2008 Reporting Services.  
   
-   You can download Report Builder for free from the following page on the Microsoft Web site: [Microsoft SQL Server 2008 Reporting Services Report Builder 2.0](http://go.microsoft.com/fwlink/?LinkId=181949).  
+   You can download Report Builder for free from the following page on the Microsoft Web site: [Microsoft SQL Server 2008 Reporting Services Report Builder 2.0](https://go.microsoft.com/fwlink/?LinkId=181949).  
   
 - **Report Designer** is a graphical interface for creating full-featured Reporting Services reports. After your report is finished, you have access to the full functionality for managing Reporting Services reports. To use Report Designer, you must know how to connect to and query a data source, but you do not have to know Report Definition Language (RDL).  
   
@@ -64,10 +64,10 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
   To learn more about how to work with authoring tool, see these articles:  
   
-- [Designing and Implementing Reports (Reporting Services)](http://go.microsoft.com/fwlink/?LinkId=181950)  
-- [Reporting Services in Business Intelligence Development Studio](http://go.microsoft.com/fwlink/?LinkId=181951)   
-- [Comparing Report Authoring Environments](http://go.microsoft.com/fwlink/?LinkId=181952)   
-- [Designing and Implementing Reports Using Report Builder 2.0](http://go.microsoft.com/fwlink/?LinkId=181953)  
+- [Designing and Implementing Reports (Reporting Services)](https://go.microsoft.com/fwlink/?LinkId=181950)  
+- [Reporting Services in Business Intelligence Development Studio](https://go.microsoft.com/fwlink/?LinkId=181951)   
+- [Comparing Report Authoring Environments](https://go.microsoft.com/fwlink/?LinkId=181952)   
+- [Designing and Implementing Reports Using Report Builder 2.0](https://go.microsoft.com/fwlink/?LinkId=181953)  
   
 ##  <a name="AdditionalResources"></a> Q & A  
   

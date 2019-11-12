@@ -1,4 +1,4 @@
----
+﻿---
 title: Manage the association of enterprise projects to projects
 titleSuffix: TFS 
 description: Understand how to map enterprise projects using Team Foundation Server & Project Server 
@@ -115,9 +115,9 @@ ms.date: 01/12/2017
   
 #### For information about how to add users to the enterprise resource pool, see the following pages on the Microsoft website:  
   
-- [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)  
+- [Add resources to the enterprise resource pool](https://go.microsoft.com/fwlink/?LinkId=203356)  
   
-- [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
+- [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=203359)  
   
   In addition, you must grant users in Team Foundation access to sign in to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   

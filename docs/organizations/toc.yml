@@ -132,7 +132,7 @@
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
   - name: Public projects
-    href: ./public/index.md
+    href: ./public/about-public-projects.md
   - name: Azure Boards
     href: ../boards/index.yml
   - name: Azure Repos

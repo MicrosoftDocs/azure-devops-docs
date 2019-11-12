@@ -10,19 +10,20 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
-monikerRange: '>= tfs-2015'
-ms.date: 09/16/2019
+monikerRange: '>= tfs-2018'
+ms.date: 10/25/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/_shared/version-vsts-tfs-all-versions.md)]
 
 [!INCLUDE [version-selector](../../_shared/version-selector.md)]
 
-Here you can find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
+In this article, find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
 
 ::: moniker range=">= azure-devops-2019"
+
 <a id="toc-wiki" > </a>
 
 ## Table of contents (TOC) for Wiki pages
@@ -97,10 +98,6 @@ The iframe is the embed iframe block of the YouTube or Microsoft Streams video.
 
 (The ending ":::" is required to prevent a break in the page)
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
 ## YAML tags
 
 Any file that contains a YAML block in a Wiki is processed by a table with one head and one row. The YAML block must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. It supports all basic datatypes, lists, and objects as values. The syntax is supported in wiki, code file preview.
@@ -129,10 +126,6 @@ title: Hello world
 
 ![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
 ## Embed Azure Boards query results in Wiki
 
 To embed Azure Boards query results in a wiki page as a table, use the following syntax:
@@ -147,12 +140,6 @@ Alternatively, you can also use the toolbar icon and the query selector to embed
 > ![Query Results Icon](_img/query_selector_icon.png)
 >
 > ![Query Selector Pane](_img/query_selector_pane.png)
-
-
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2019"
 
 ## @mention users and groups
 
@@ -172,13 +159,16 @@ You can also select "@mention" from the edit toolbar.
 ## Link to work items from a Wiki page
 
 ::: moniker range="> tfs-2018"
+
 Enter the pound sign (`#`), and then enter a work item ID.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]
 > This feature is available with TFS 2018.2 and later versions.
+
 ::: moniker-end
 
 
@@ -189,11 +179,17 @@ Enter the pound sign (`#`), and then enter a work item ID.
 In wiki pages, you can also create rich content using HTML tags.
 
 ::: moniker range="tfs-2018"
+
 > [!NOTE]
-> Pasting rich content as HTML is supported in TFS 2018.2 and later versions.
+> Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+> 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
+
+> [!NOTE]
+> Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+
 **Example - Embedded video**
 
 ```HTML
@@ -228,6 +224,12 @@ In wiki pages, you can also create rich content using HTML tags.
 ```
 
 **Result:**
+
+![Light theme view](_img/wiki/green-red-light-theme.png)
+
+![Dark theme view](_img/wiki/green-red-dark-theme.png)
+
+<!---
 <p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>
 <p><tt>This text is teletype text.</tt></p>
 <font color="blue">Colored text</font>
@@ -237,6 +239,7 @@ In wiki pages, you can also create rich content using HTML tags.
 <p>The project status is <span style="color:green;font-weight:bold">GREEN</span> even though the bug count / developer may be in <span style="color:red;font-weight:bold">red.</span> - Capability of span
 <p><small>Disclaimer: Wiki also supports showing small text</small></p>
 <p><big>Bigger text</big></p>
+-->
 
 ::: moniker-end
 

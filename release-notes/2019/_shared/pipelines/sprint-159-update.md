@@ -33,8 +33,8 @@ Here is the detailed YAML schema for pipelines resource.
 resources: 
   pipelines:
   - pipeline: MyAppCI  # identifier for the pipeline resource
-        project:  DevOpsProject # project for the build pipeline; optional input for current project
-        source: MyCIPipeline  # source pipeline definition name
+    project:  DevOpsProject # project for the build pipeline; optional input for current project
+    source: MyCIPipeline  # source pipeline definition name
     branch: releases/M159  # branch to pick the artifact, optional; defaults to all branches
     version: 20190718.2 # pipeline run number to pick artifact; optional; defaults to last successfully completed run
     trigger:     # Optional; Triggers are not enabled by default.
@@ -54,7 +54,7 @@ steps:
     artifact:  A1 # name of the artifact to download; optional; defaults to all artifacts
 ```
 
-For more details, see the downloading artifacts documentation [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
+For more details, see the downloading artifacts documentation [here](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
 
 ### Bitbucket integration and other improvements in getting started with pipelines
 

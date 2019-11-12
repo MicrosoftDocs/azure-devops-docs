@@ -1,5 +1,3 @@
-- name: Manage projects
-  href: index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: About projects
   href: about-projects.md
 - name: What do I get with a project?

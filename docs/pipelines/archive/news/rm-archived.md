@@ -661,7 +661,7 @@ to help you easily integrate your applications with
 Release Management. The SDK is available as a
 [NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/).
 Example usage for this SDK can be found
-[here](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
+[here](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
 
 <a name="update-apr26-16"></a>
 ### Apr 26, 2016 Update (Azure Pipelines)
@@ -732,7 +732,7 @@ deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
-[this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+[this blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 <a name="apr26-import"></a>
 **Import, export, and clone release pipelines**

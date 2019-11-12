@@ -18,7 +18,7 @@ You can access the feature from the admin area in either the Project or Collecti
 
 ![Rename menu item in the team project context menu on the project collection administration page](_img/4_24_01.png)
 
-We’ve worked to make team project rename as seamless as possible by automatically updating names that we have access to and minimizing reaction work to team members. There are still some manual steps—some of which we’ll add automation for over the next couple of deployments—but for the most part reaction work is small. The document [Rename a team project](http://go.microsoft.com/fwlink/p?LinkId=528893) highlights the artifacts (Client caches, Git remotes, etc.) that require some extra attention.
+We’ve worked to make team project rename as seamless as possible by automatically updating names that we have access to and minimizing reaction work to team members. There are still some manual steps—some of which we’ll add automation for over the next couple of deployments—but for the most part reaction work is small. The document [Rename a team project](https://go.microsoft.com/fwlink/p?LinkId=528893) highlights the artifacts (Client caches, Git remotes, etc.) that require some extra attention.
 
 It has been a long time in the making, but it feels good to finally call this feature done and get it into your hands.
 

@@ -53,6 +53,3 @@ Your organization is renamed.
 
 A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn the new URL off - then, you will go back to using old URL format.  
 
-## Q: If I change the organization name, does the original URL still work (so that other team members can migrate at their own pace)?
-
-A: Yes. The old URL will still be available when enable the new URL, but it will automatically jump to the new URL.

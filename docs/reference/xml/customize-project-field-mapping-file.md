@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '<= tfs-2018'
 ms.date: 05/06/2019
 ---
@@ -17,17 +17,26 @@ ms.date: 05/06/2019
 
 [!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)] 
 
-You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Project, the field map determines which fields in the work item database match the fields in Project.  
+You can customize how data is published and refreshed by modifying the Microsoft Project mapping file. When publishing or refreshing tasks in Project, the mapping file determines how Project task fields map to Team Foundation Server (TFS) work item fields. Also, the mapping file controls the publishing behavior. You can control if fields are only published, or both published and refreshed.   
 
 [!INCLUDE [temp](_shared/project-integration-deprecated.md)]
 
+::: moniker range="<= tfs-2015"
+
+> [!IMPORTANT]  
+>  If you are using Project Professional to synchronize tasks with work item data, then you must [Customize the field mapping between work items and Project Server](../tfs-ps-sync/customize-field-mapping-tfs-project-server.md). 
+
+::: moniker-end 
+
+
 For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
- To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
+To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
   
 <a name="FieldMappings"></a> 
 
 ## Mapping element  
+
  To specify a mapping between a work item field and a project column, you use the `Mapping` element.  
   
  You use the following XML syntax to specify a mapping between a work item type field and an Project field. The `Mapping` element is then used to specify a field mapping.  
@@ -43,6 +52,7 @@ For information on using Project and TFS to track work, see [Create your backlog
 > ```  
   
 ### Attributes  
+
  The following table describes the attributes that can be used with the `Mapping` element.  
   
 |**Attribute**|**Description**|  
@@ -75,13 +85,17 @@ For information on using Project and TFS to track work, see [Create your backlog
 >  As a best practice, you should map calculated fields in Project to read-only fields in Team Foundation. This helps avoid confusion so that team members do not try to change calculated fields.   
   
 <a name="Reserved"></a> 
+
 ## ReservedField element  
+
  The `ReservedField` element works to support hierarchical links defined between tasks and is an optional element.  
   
  If this element is not specified in the mapping, then Project uses the default `pjNumber20` field.  
 
-<a name="Synchronization"></a>   
+<a name="Synchronization"></a>  
+ 
 ##  SyncField element  
+
  The synchronization field enables you to control the publish and refresh behavior of each task. The field displays as a column with the title **Publish and Refresh** when you use the **Team System Task Sheet** view.  
   
  You must specify a synchronization field in the Microsoft Project field mapping file. Use the following XML syntax to specify which field is the synchronization field. To specify a synchronization field, use the `SyncField` element. The `ProjectField` attribute must be set to a valid Project field.  
@@ -101,6 +115,7 @@ For information on using Project and TFS to track work, see [Create your backlog
 For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
 ##  <a name="ResourceNameSeparator"></a> ResourceNameSeparator Element  
+
  You can use the `ResourceNameSeparator` to define the character that will distinguish resource names that are in a string. Team Foundation users and resources are synchronized with the users of the Active Directory directory service. The names for users and resources may include a delimiter, such as a comma, to separate the last name, first name, and middle initial of a resource.  
   
  This is an optional element. If this element is not specified in the mapping, then Project separates resource names by using the default mappings that are defined in the following table:  
@@ -125,26 +140,31 @@ For more information about how to use the synchronization field in Project, see 
 > <ResourceNameSeparator WorkItemTrackingCharacter="-" ProjectCharacter="*"/>  
 > ```  
 > <a name="Hierarchy"></a>   
+> 
 > ##  Hierarchy link type  
+> 
 >  When you create summary tasks in  Project, a tree link is created between the summary task, the parent, and the subordinate or child tasks. Project uses the default System.LinkTypes.Hierarchy to create these links.  
   
 <a name="Dependency"></a> 
+
 ##  Dependency link type  
+
  When you create links between tasks in Project, you create a dependent link between the tasks. The predecessor task is assigned a Predecessor link and the successor task is assigned a Successor link. These are the default designations that are defined for the System.LinkTypes.Dependency link type.  
   
 <a name="PublishRefresh"></a> 
+
 ## Mapping attributes that affect publishing and refreshing  
+
  The following mapping fields and Project field values determine whether a value for a work item is published or refreshed:  
   
--   The value of the **Publish and Refresh** value for each work item.    
--   The value of the **PublishOnly** attribute for a specific mapping field.    
--   The value of the **IfSummaryRefreshOnly** for a specific mapping field.    
+-   The value of the **Publish and Refresh** value for each work item.  
+-   The value of the **PublishOnly** attribute for a specific mapping field.  
+-   The value of the **IfSummaryRefreshOnly** for a specific mapping field.  
 -   The classification of the task as a summary or parent task.  
-  
      A parent task is a task that has at least one child task that is published to Team Foundation Server.  
-  
+
+
 **For work items that are not summary tasks**  
-  
 The following table indicates whether a work item that is not a summary or parent task is published or refreshed based on the mapping field attributes and the assignment that is made to the **Publish and Refresh** value of the item.  
   
 |Publish and Refresh<br />(task level)|PublishOnly attribute|Field is Published?|Field is Refreshed?|  
@@ -169,4 +189,8 @@ The following table indicates whether a work item that is not a summary or paren
 |Yes|False|False|Yes|Yes|  
   
 ## Related articles
--  [LinkTypes](link-type-element-reference.md)   
+
+- [LinkTypes](link-type-element-reference.md)   
+-  [Address inaccuracies published for summary values](../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
+-  [Work in Excel and Project](../../boards/backlogs/office/track-work.md)
+-  [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)

@@ -43,8 +43,8 @@
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "enable_incremental_build": false,
-  "need_pr_comments": false,
+  "enable_incremental_build": true,
+  "need_pr_comments": true,
   "resolve_user_profile_using_github": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [

@@ -9,10 +9,12 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Configure UI Controls
+
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
 
 This example shows the steps before you can add a control to the hub that we created in [Add a hub](../add-hub.md).
 

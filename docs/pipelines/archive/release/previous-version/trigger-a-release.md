@@ -99,15 +99,15 @@ Also, if you haven't yet set up your build system,
  
 **A**: See these blog posts:
 
-* [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](http://blogs.msdn.com/b/visualstudioalm/archive/2014/10/10/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3.aspx) 
+* [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/10/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3.aspx) 
 
-* [Deploy Azure Cloud Service using Release Management](http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/09/deploying-azure-cloud-service-using-release-management.aspx) 
+* [Deploy Azure Cloud Service using Release Management](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/09/deploying-azure-cloud-service-using-release-management.aspx) 
 
-* [Announcing DevOps style deployments using Visual Studio 2015 and Azure](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure.aspx) 
+* [Announcing DevOps style deployments using Visual Studio 2015 and Azure](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure.aspx) 
 
-* [Using Release Management service to manage releases](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx) 
+* [Using Release Management service to manage releases](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx) 
 
-* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](http://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/how-to-trigger-deployments-to-chef-managed-environment-from-release-management.aspx) 
+* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/how-to-trigger-deployments-to-chef-managed-environment-from-release-management.aspx) 
 
 <a name="add_template"></a>
 ### Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?
@@ -125,7 +125,7 @@ with the corresponding release management process template.
 1. In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**
    locate the template that you need. Or download the template to this 
    folder from the zip file that is attached to 
-   **[this blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
+   **[this blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
 
    * TFS 2013 and 2015
      - **TFVC**: ReleaseTfvcTemplate.12.xaml.
@@ -151,7 +151,7 @@ with the corresponding release management process template.
 
 **A**: Add sections to your custom build pipeline template to provide the 
 workflow logic. Download the snippets file with these sections 
-**[here](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
+**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
 Use the snippets to add these arguments to your build pipeline template: 
 **ConfigurationsToRelease**, **ReleaseBuild**, **ReleaseTargetStage**, 
 **DropBuild**.
@@ -163,7 +163,7 @@ check it in. If you use Git, commit and push the build pipeline template.
 ### Q: I use the upgrade template. Which build pipeline template should I use for Release Management?
 
 **A**: Learn what you need to do 
-**[here](http://blogs.msdn.com/b/visualstudioalm/archive/2014/01/31/how-to-modify-the-upgradetemplate-xaml-to-enable-releasing-from-a-build.aspx)**.
+**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/01/31/how-to-modify-the-upgradetemplate-xaml-to-enable-releasing-from-a-build.aspx)**.
 
 ### Q: Can I deploy components of my application to different machines?
 

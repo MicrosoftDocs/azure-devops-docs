@@ -16,6 +16,10 @@ In addition, we switched from monthly to daily billing. This means that if you g
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/87r31PUtdN0]
+
 ## Features
 
 ### General:
@@ -82,7 +86,7 @@ Check out the [Features](#features) list below for more.
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 
