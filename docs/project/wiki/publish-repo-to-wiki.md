@@ -12,7 +12,7 @@ ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 05/29/2019  
+ms.date: 11/12/2019  
 ---
 
 # Quickstart: Publish a Git repository to a wiki

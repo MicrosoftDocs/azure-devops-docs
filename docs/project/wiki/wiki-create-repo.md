@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 08/07/2019
+ms.date: 11/12/2019  
 ---
 
 # Quickstart: Create a Wiki for your project
