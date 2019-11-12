@@ -11,7 +11,7 @@ ms.date: 07/07/2019
 monikerRange: 'azure-devops'
 ---
 
-# Share your packages publicly (preview)
+# Share your packages publicly
 
 Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet. 
 
