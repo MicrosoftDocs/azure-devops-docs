@@ -1,6 +1,6 @@
 ---
-title: Build and deploy to a Java web app on Linux
-description: Continuous integration and deployment (CI/CD) to a Java web app on Linux
+title: Build and deploy Java web app to Azure Functions
+description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
