@@ -38,5 +38,6 @@ There some important things to note regarding public feeds:
 * Public feeds can only be created inside of public projects
 * Public feeds aren't intended as a replacement for existing registries of record (NuGet.org, npmjs.com, etc.)
 * Public feeds can't have upstream sources
+* Public users cannot currently download universal packages. All other package protocol types are supported for public access.
 
 ::: moniker-end

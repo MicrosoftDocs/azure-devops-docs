@@ -196,7 +196,7 @@
       href: test/review-code-coverage-results.md
     - name: Code coverage for pull requests
       href: test/codecoverage-for-pullrequests.md    
-    - name: Trace test requirements
+    - name: Requirements traceability
       href: test/requirements-traceability.md
     - name: Use Test Impact Analysis
       href: test/test-impact-analysis.md
@@ -234,7 +234,6 @@
       href: targets/create-virtual-network.md
     - name: Use Build & Release for automated testing
       href: /visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management
-
 - name: Concepts
   items:
   - name: Agents
@@ -261,7 +260,7 @@
       href: agents/docker.md
     - name: Using a self-signed certificate
       href: agents/certificate.md
-  - name: Approvals
+  - name: Approvals & Checks
     href: process/approvals.md
     displayName: approvals, checks
   - name: Artifacts
@@ -307,6 +306,9 @@
   - name: Jobs
     href: process/phases.md
     displayName: phases, stages, job type, dependencies, conditions, timeouts, multi-configuration, slicing, job variables, artifact download, oauth token
+  - name: Library
+    href: library/index.md
+    displayName: security roles, variable groups, secure files
   - name: Parallel jobs (licensing)
     href: licensing/concurrent-jobs.md
   - name: Permissions
@@ -364,6 +366,7 @@
     href: library/secure-files.md
   - name: Service connections
     href: library/service-endpoints.md
+    displayName: service endpoints
   - name: Service containers
     href: process/service-containers.md
   - name: Stages
@@ -699,6 +702,8 @@
       href: tasks/transforms-variable-substitution.md
   - name: Logging commands
     href: scripts/logging-commands.md
+  - name: Artifact policy checks
+    href: process/artifact-policy.md
 - name: Case Studies & Best Practices
   items:
     - name: Add Continuous Security Validation to your CICD Pipeline 

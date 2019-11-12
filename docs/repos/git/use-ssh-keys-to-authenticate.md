@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -97,12 +97,43 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 Associate the public key generated in the previous step with your user ID.
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
+  
+2. From your home page, open your profile and select **Azure DevOps profile**.
+
+   ![My profile Team Services](_shared/_img/my-profile-team-services-preview.png)
+
+3. Under Security, select **SSH public keys**, and then select **+ New Key**.
+
+    ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key-preview.png)
+4. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
+
+   >[!IMPORTANT]
+   >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
+
+    ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
+
+4. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
+
+
+::: moniker-end
+
+#### [Current page](#tab/current-page) 
+
 1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
    user interface. Select **Security** in the menu that appears.
 
    ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
 
-2. Select **SSH public keys** , then select **+New Key**.
+2. Select **SSH public keys**, and then select **+ New Key**.
 
     ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
 
@@ -114,7 +145,9 @@ Associate the public key generated in the previous step with your user ID.
     ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
 
 4. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
-  
+
+* * *
+
 <a name="copy-url"></a>
 
 ### Step 3: Clone the Git repository with SSH
@@ -187,6 +220,7 @@ When you are asked if you want to continue connecting, type `yes`. Git will clon
 <a name="rememberpassphrase"></a>
 
 ### How can I have Git remember the passphrase for my key on Windows?
+
 Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
 your passphrase so you don't have to provide it every time you connect to your repo.
 

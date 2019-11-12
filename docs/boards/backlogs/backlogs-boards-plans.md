@@ -1,4 +1,4 @@
----
+﻿---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
 description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
@@ -290,8 +290,8 @@ The following table indicates those elements or tasks associated with each type 
 <td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
 <td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
 <td><a href="../../report/dashboards/cumulative-flow.md">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md">Velocity</a></td>
-<td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
-<td><a href="../sprints/sprint-burndown.md">Sprint burndown</a> </td>
+<td><a href="../../report/dashboards/configure-sprint-burndown.md">Sprint burndown</a> </td>
+<td><a href="../../report/dashboards/configure-sprint-burndown.md">Sprint burndown</a> </td>
 </tr>
 <tr>
 <td>Duration (see note 5) </td>
@@ -420,8 +420,8 @@ The following table indicates those elements or tasks associated with each type 
 <td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
 <td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
 <td><a href="../../report/dashboards/cumulative-flow.md" data-raw-source="[Cumulative flow](../../report/dashboards/cumulative-flow.md)">Cumulative flow</a><br/><a href="../../report/dashboards/team-velocity.md" data-raw-source="[Velocity](../../report/dashboards/team-velocity.md)">Velocity</a></td>
-<td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
-<td><a href="../sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../sprints/sprint-burndown.md)">Sprint burndown</a> </td>
+<td><a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)">Sprint burndown</a> </td>
+<td><a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[Sprint burndown](../../report/dashboards/configure-sprint-burndown.md)">Sprint burndown</a> </td>
 </tr>
 <tr>
 <td>Duration (see note 5) </td>
@@ -443,7 +443,7 @@ The following table indicates those elements or tasks associated with each type 
 2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../sprints/forecast.md).  
 4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) for details.  
-5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../sprints/sprint-burndown.md#past-sprints).
+5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md#past-sprints).
 
 
 [!INCLUDE [temp](../_shared/display-rollup-section.md)]

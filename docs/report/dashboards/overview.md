@@ -1,4 +1,4 @@
----
+﻿---
 title: Understand dashboards, charts, reports & widgets
 titleSuffix: Azure DevOps  
 description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
@@ -489,7 +489,7 @@ Velocity is based on the values entered for Effort, Story Points, or Size fields
 
 ### Sprint burndown  
 
-Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../../boards/sprints/sprint-burndown.md) in terms of remaining work. 
+Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](configure-sprint-burndown.md) in terms of remaining work. 
 
 | Capacity bars | Burndown  |
 |-------| ----- |
@@ -504,7 +504,7 @@ Each sprint provides access to two charts. The first [tracks capacity](../../boa
 To learn more about these reports, see one of the following articles:
 - [Cumulative flow](cumulative-flow.md)
 - [Team velocity](team-velocity.md)
-- [Sprint burndown chart](../../boards/sprints/sprint-burndown.md)  
+- [View/configure sprint burndown](configure-sprint-burndown.md)  
 
 ::: moniker range="azure-devops"
 

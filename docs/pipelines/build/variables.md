@@ -9,7 +9,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 08/23/2019
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -33,14 +33,14 @@ Learn more about [working with variables](../process/variables.md).
 ::: moniker range="> tfs-2017"
 
 This is a deprecated variable that modifies how the build agent cleans up source.
-To learn how to clean up source, see [source repositories](../repos/index.md).
+To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 This variable modifies how the build agent cleans up source.
-To learn more, see [source repositories](../repos/index.md).
+To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
 ::: moniker-end
 

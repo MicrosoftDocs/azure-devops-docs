@@ -19,9 +19,12 @@ set the credentials in the HTTP request header when calling the external endpoin
 that can be utilized by a custom service endpoint type. This set is closed so that Azure DevOps Services would be able to interpret the authentication scheme used 
 in any custom endpoint & support connecting to the external service.
 
-Following are the authentication schemes that are part of the closed set:
+See the following authentication schemes that are part of the closed set.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ## Basic authentication
+
 This scheme takes 2 inputs - Username & Password (confidential)
 
 Default authentication header used is: "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
@@ -74,6 +77,7 @@ Default authentication header used is: "Basic {{ #base64 endpoint.username \":\"
 ```
 
 ## Token based authentication
+
 This scheme takes 1 input - API Token (confidential)
 
 Default authentication header used is: {{endpoint.apitoken}}
@@ -112,7 +116,9 @@ Default authentication header used is: {{endpoint.apitoken}}
 }
 }
 ```
+
 ## Certificate based authentication
+
 This scheme takes 1 input - Certificate (confidential)
 
 The value of certificate has to be provided in the text area.
@@ -146,6 +152,7 @@ The value of certificate has to be provided in the text area.
 ```
 
 ## No authentication
+
 This scheme is used when an endpoint type doesn't require to take any input. For e.g. external services that support anonymous access to its resources.
 
 ```json

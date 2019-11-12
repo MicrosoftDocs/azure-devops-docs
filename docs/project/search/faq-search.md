@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: sunar
 author: chcomley
-ms.date: 10/25/2019
-monikerRange: '>= tfs-2017'
+ms.date: 11/06/2019
+monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
 # Troubleshoot Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header-tfs-only](../../_shared/version-header-tfs-only.md)]
 
 - [Troubleshoot Search](#troubleshoot-search)
   - [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
@@ -120,7 +120,7 @@ A:
 
 ## Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?
 
-A: If the search is set up on a separate (remote) server and source version is TFS Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
+A: If the search is set up on a separate (remote) server and source version is TFS 2018 Update 2 (or higher), verify that [these upgrade steps](administration.md#upgrading-search) were followed.
 If not, then run [this script](https://github.com/microsoft/Code-Search/blob/master/Azure_DevOps_Server_2019/Troubleshooting/Repair-Search.ps1) to fix the issue.
 
 ## Partial results in code search

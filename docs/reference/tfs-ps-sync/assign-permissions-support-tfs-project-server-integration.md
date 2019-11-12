@@ -1,4 +1,4 @@
----
+﻿---
 title: Assign permissions to support TFS-Project Server integration
 titleSuffix: TFS 
 description: Assign permissions to support configuration and working with Team Foundation Server & Project Server  data synchronization

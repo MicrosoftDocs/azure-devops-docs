@@ -9,15 +9,19 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Use the pivot filter control
 
 This page shows how to use a pivot filter control.
 
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+
 <a name="basic"></a>
+
 ## Basic usage
+
 This sample shows basic usage of a pivot filter. Please try to use html markup below since it picks up necessary styles from `hub-pivot` and `filters` classes.
 
 ``` html

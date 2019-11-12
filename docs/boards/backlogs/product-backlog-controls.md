@@ -1,4 +1,4 @@
----
+﻿---
 title: Use backlog controls to switch views or enable options  
 titleSuffix: Azure Boards 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
