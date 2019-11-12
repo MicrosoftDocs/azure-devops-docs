@@ -71,6 +71,8 @@ If you need to switch your team project, choose the ![ ](/azure/devops/boards/_i
 
 ## Publish a Git repository to a wiki
 
+#### [Browser](#tab/browser) 
+
 Choose this option when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
 1. Select **Publish code as Wiki**.  
@@ -112,6 +114,54 @@ Choose this option when you maintain Markdown files in an existing Git repo and 
 The head of the Git repo branch is now mapped to the wiki. Any changes made within the branch and selected folder(s) are automatically reflected in the Wiki. There are no other workflows involved.
 
 With the Wiki provisioned with the Markdown files you've added, you can now add or edit pages in the same way that you maintain code in your Git repository.  
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="= azure-devops"
+
+You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
+
+> [!NOTE]
+> You can't publish code as Wiki if your project doesn't have a Git repository already defined. If necessary, [create a new Git repo](/cli/azure/ext/azure-devops/repos#ext-azure-devops-az-repos-create), and then return to this page.
+
+```CLI 
+az devops wiki create [--mapped-path]
+                      [--name]
+                      [--org]
+                      [--project]
+                      [--repository]
+                      [--type {codewiki, projectwiki}]
+                      [--version]
+``` 
+
+#### Parameters 
+
+- **mapped-path**: (Required for the **codewiki** type). Mapped path of the new wiki. For example, you can specify "/" to publish from the root of the repository. 
+- **name**: Name of the new wiki.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
+- **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
+- **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
+
+#### Example 
+
+The following command creates a **codewiki** named "My New Wiki" published from the **MyRepo** repository. The wiki is published in the **wikis** folder in the **master** branch and the result is shown in table format.
+
+```CLI 
+az devops wiki create --name "My New Wiki" --type codewiki --repository MyRepo --mapped-path /wikis --version master --output table
+
+ID                                    Name         Type
+------------------------------------  -----------  --------
+77abd847-31ec-45e9-8622-a190df8e5917  My New Wiki  codeWiki
+
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 ## Edit, rename, or delete pages  
 
