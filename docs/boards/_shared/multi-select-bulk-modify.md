@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
+### Use multi-select to bulk modify items
 
 <a id="bulk-modify">  </a>
-### Use multi-select to bulk modify items
 
 Multi-select of work items on the product and sprint backlogs works in the same way as multi-select works within query results. 
 

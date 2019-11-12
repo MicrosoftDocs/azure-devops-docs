@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Manage
-    tocHref: /azure/devops/organizations/
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/projects/
     topicHref: /azure/devops/organizations/index
-    items:
-    - name: Manage projects
-      tocHref: /azure/devops/organizations/projects/
-      topicHref: /azure/devops/organizations/projects/index

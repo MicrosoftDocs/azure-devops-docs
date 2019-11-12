@@ -1,6 +1,6 @@
 ```YAML
 # Deploy to Kubernetes
-# Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
+# Deploy, configure, update a Kubernetes cluster in Azure Container Service by running kubectl commands
 - task: Kubernetes@1
   inputs:
     #connectionType: 'Kubernetes Service Connection' # Options: Azure Resource Manager, Kubernetes Service Connection, none

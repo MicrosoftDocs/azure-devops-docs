@@ -5,7 +5,7 @@ description: How to implement the Scaled Agile Framework to support epics, relea
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -24,11 +24,11 @@ If you're interested in using SAFe, you can configure projects created with the 
 
 In this article you'll learn how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure your Agile tools to support SAFe.  
 
-If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations) from Inbar Oren, the Lean Samurai, are a good way to orient yourself.  
+If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile Framework Foundations](https://www.scaledagileframework.com/videos/) from Inbar Oren, the Lean Samurai, are a good way to orient yourself.  
 
 SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
-##Map SAFe&reg; concepts to Agile tool concepts
+## Map SAFe&reg; concepts to Agile tool concepts
 
 The SAFe big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
@@ -41,7 +41,7 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
-##SAFe&reg; portfolios, programs, and teams map to Agile tool teams and projects  
+## SAFe&reg; portfolios, programs, and teams map to Agile tool teams and projects  
 
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
@@ -49,12 +49,12 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
-###SAFe&reg; backlogs map to your Agile tools backlogs
+### SAFe&reg; backlogs map to your Agile tools backlogs
 Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
 
 ![Hierarchical backlog: epics, features, and stories](_img/safe-epics-to-stories-value-area.png)
 
-###SAFe&reg; releases, iterations, and sprints map to iterations
+### SAFe&reg; releases, iterations, and sprints map to iterations
 
 SAFe Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 
@@ -66,7 +66,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ![Teams track deliverables using iterations](_img/safe-teams-track-deliverables.png)  
 
-###SAFe&reg; value streams and budgets map to tags and the Value Area field  
+### SAFe&reg; value streams and budgets map to tags and the Value Area field  
 You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, and associated budgets.
 
 ![Tags can track value streams or associated budgets](_img/save-epics-value-stream-tags.png)  
@@ -81,17 +81,17 @@ For a more robust mapping of work to architecture or business features, you can 
 
 ![Value Area tracks Business or Architectural work](_img/safe-epic-to-stories-map-to-value-area.png)  
 
-##Plan and track SAFe&reg; projects using your Agile tools 
+## Plan and track SAFe&reg; projects using your Agile tools 
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
-###Map features to epics and stories to features
+### Map features to epics and stories to features
 The program team can map features to epics using the mapping pane. Feature teams can use the same experience to map their stories to features.
  
 
 ![Map features to epics](_img/safe-map-features-to-epics.png)  
 
-###Portfolio team's view of progress
+### Portfolio team's view of progress
 
 To track the progress of epics that span Releases, the Portfolio team's backlog shows epics. Each epic can be expanded to show the features and user stories that support it.
 
@@ -106,7 +106,7 @@ The Portfolio team can also view the progress of epics on their Kanban board.
 > [!TIP]  
 >You can also [customize the card color based on various criteria](../../boards/boards/customize-cards.md#style-rule), such as the Value Area=Architectural, by applying styling rules.  
 
-###Program teams' progress view 
+### Program teams' progress view 
 Program teams, primarily concerned with Release Trains, can see the features in their backlog, along with the PIs with which they're associated.
 
 ![Program team backlog of features and stories](_img/safe-fiber-suite-features-to-stories.png)  
@@ -119,7 +119,7 @@ Another view available to program teams shows query-based graphs of release trai
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the [rich reporting options and built-in reports](../../report/dashboards/overview.md).
 
-###Feature teams' view of progress
+### Feature teams' view of progress
 For individual feature teams, their backlog view shows the Stories that they're working on.
 
 ![Migrate feature team backlog of stories](_img/safe-migrate-feature-team-stories.png)  
@@ -140,7 +140,7 @@ For everything else, it is very much business as usual for individual feature te
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.  
 
-##Configure your Agile tools to support SAFe&reg;  
+## Configure your Agile tools to support SAFe&reg;  
 In this section, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
 ![Hierarchical areas support 3 levels of 9 teams](_img/safe-config-teams.png) 
@@ -154,7 +154,7 @@ In order to go from one project with one default team, area, and set of iteratio
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 
-###Create areas to support your team hierarchy
+### Create areas to support your team hierarchy
 
 1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
 2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
@@ -167,7 +167,7 @@ You'll need to be a [member of the Project Administrators group](../../organizat
 
 	![Areas page, 9 area paths defined](_img/safe-team-area-paths-added.png)  
 
-###Create iterations to support your release trains and sprints
+### Create iterations to support your release trains and sprints
 To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
 
 If you already have iterations for your default team, you can rename them. You'll want to create an iteration structure that supports your entire team structure, not just one team.  
@@ -180,17 +180,17 @@ If you already have iterations for your default team, you can rename them. You'l
 	![Iterations page, create IP Sprint iteration](_img/safe-view-of-iterations.png)
 
 
-###Create and configure your teams
+### Create and configure your teams
 In this section, we'll show how to configure a hierarchical team structure which maps to the hierarchical area paths we created previously.
 This structure maps the following SAFe teams to your Agile tools' teams:  
 - Portfolio team -> default top-level team, the Fabrikam team  
 - Program teams -> secondary-level teams, Fiber Suite and Service Suite  
 - Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
 - 
-If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
+  If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
-####Create and configure each Program team
+#### Create and configure each Program team
 
 1. From the Overview page for the project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
 
@@ -217,7 +217,7 @@ You'll need to be a [project administrator](../../organizations/security/add-use
 
 
 
-####Create and configure each Feature team
+#### Create and configure each Feature team
 Next, we'll create some feature teams to get work done at the third level of the team hierarchy. Each feature team will contribute sprint work that rolls up into the PI. The number of teams you create will depend on the size of your organization.
 
 1. Create a new team from the administration page for the original team, and name the team. Just like before, make sure you clear the check box next to **Create an area path with the name of the team**.
@@ -239,7 +239,7 @@ Next, we'll create some feature teams to get work done at the third level of the
 5. Repeat steps 1 through 4 for each feature team in your organization. Make sure that the default area path you configure for the team is sub-area path under its corresponding program-level area path. This ensures rollup from feature teams to program teams.
 
 
-####Configure the Portfolio team
+#### Configure the Portfolio team
 Now that your sub-team structure is configured, we reconfigure the default team to act as the Portfolio team. While this team will continue to have the name of the project, the changes you make to this top-level team will help ensure that it effectively tracks epics across PIs at the highest level.  
 
 1. On the Areas page for the project, change the settings so that sub-areas are not included. Make sure you choose the project and not the default team, Fabrikam.  
@@ -259,7 +259,7 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 	![Overview page, Portfolio team members](_img/safe-overview-portfolio-team-members.png)
 
 
-###Update the Area Path for existing work items
+### Update the Area Path for existing work items
 For any existing work items to show up on a team's backlog, you must update the Area path of each work item to the team's default area path. You can use the bulk edit feature from your web browser or you can use Excel.  
 
 1. Create a query that contains the work items you want to edit, select the ones you want to edit, and then open the context menu from any one of the selected items.  
@@ -276,7 +276,7 @@ For any existing work items to show up on a team's backlog, you must update the 
 
 	For more info on bulk modifying work items, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
-###Add epics and map epics to features
+### Add epics and map epics to features
 You add epics in the same way you add user stories and features. From the Portfolio team's backlog page for epics, add an epic backlog item.
 
 ![Epic backlog, add an epic using quick add panel](_img/safe-add-epics.png)   
@@ -293,13 +293,13 @@ You can also add tags to your epics, to help you track the investment themes eac
 
 ![Epic work item form, add tags](_img/safe-add-tags-to-epic.png)
 
-Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](http://scaledagileframework.com/business-epic-kanban/).
+Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](https://www.scaledagileframework.com/portfolio-kanban/).
 
 ![Epic kanban board with custom columns](_img/safe-kanban-custom-columns.png)
 
 However, this is not very interesting yet. Nothing is in progress, and you can't drill down to see which features support your epics. You'll want to map existing features to the epics you just created, and map user stories to those features, if they're not already mapped.  
 
-###Map multiple items if you've an existing backlog 
+### Map multiple items if you've an existing backlog 
 Mapping work items is easy using the mapping pane. First, turn on the mapping pane from the features or stories backlog page. Here, we choose the Fiber Suite team and turn on both the mapping pane and the view to see the hierarchy of features mapped to epics.
 
 ![Map features to epics](_img/safe-map-features-to-epics.png)
@@ -335,7 +335,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 - SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
-- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
+- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
@@ -345,11 +345,11 @@ Resources mentioned earlier in this article and a few more are provided here for
 ### About the authors
 This article has been updated from the previous white paper developed in collaboration with the following authors:  
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](http://31og.com) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
-- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
-- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps and on-premises TFS.
+- Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is an [ALM|DevOps Ranger](https://blogs.msdn.microsoft.com/visualstudioalmrangers/). When he is not Ruck Mastering and contributing to ALM|DevOps Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
+- Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
-- Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
-- Willy-Peter Schaub is a program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](http://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
-- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM Ranger), Richard Hundhausen (independent consultant, ALM Ranger) and Bill Heys (independent consultant, ALM Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM Ranger).  
+- Susan Ferrell is a senior technical writer and an ALM|DevOps Ranger.  
+- Willy-Peter Schaub is a program manager with the ALM|DevOps Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. His blog is at [blogs.msdn.com/b/willy-peter_schaub](https://blogs.msdn.com/b/willy-peter_schaub) and you can follow him on Twitter at [twitter.com/wpschaub](http://twitter.com/wpschaub).  
+- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM|DevOps Ranger), Richard Hundhausen (independent consultant, ALM|DevOps Ranger) and Bill Heys (independent consultant, ALM|DevOps Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM|DevOps Ranger).  
 
 

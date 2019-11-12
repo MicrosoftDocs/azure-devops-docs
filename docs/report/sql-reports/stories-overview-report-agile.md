@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all user stories, filtered by area and iteration and in order of importance.
 ms.assetid: 2b21601e-c737-4eda-b836-87517e19cf63
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 # Stories Overview Report (Agile)
@@ -37,17 +38,17 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
  **Work Progress**  
   
--   **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the user story or its child stories.  
+- **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the user story or its child stories.  
   
--   **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the user story or its child stories.  
+- **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the user story or its child stories.  
   
- **Test Status**  
+  **Test Status**  
   
--   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).  
+- **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).  
   
--   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
+- **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
   
--   **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or user story, where the options are **Active** (blue) and **Resolved** (gold). If a user story is linked to one or more child stories, the values represent a rollup of all bugs for the user story and its child stories.  
+- **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or user story, where the options are **Active** (blue) and **Resolved** (gold). If a user story is linked to one or more child stories, the values represent a rollup of all bugs for the user story and its child stories.  
   
 ### User Stories that Appear in the Report  
  The Stories Overview report lists and highlights user stories according to the following criteria:  
@@ -88,19 +89,19 @@ The Stories Overview report lists all user stories, filtered by area and iterati
 ## Interpreting the Report  
  The Stories Overview report shows overall work progress in the three areas that are important to completing and closing a user story:  
   
--   Tasks implemented to complete the user story.  
+- Tasks implemented to complete the user story.  
   
--   Test cases run to ensure the quality of the implemented user stories.  
+- Test cases run to ensure the quality of the implemented user stories.  
   
--   Bugs identified that indicate problems with the quality of the user stories.  
+- Bugs identified that indicate problems with the quality of the user stories.  
   
- Depending on your area of focus, you can filter the report in the following ways:  
+  Depending on your area of focus, you can filter the report in the following ways:  
   
--   Specify the **Iteration** and **Area** paths of interest.  
+- Specify the **Iteration** and **Area** paths of interest.  
   
-     For more information, see [Filtering the Report](#Changing) later in this article.  
+   For more information, see [Filtering the Report](#Changing) later in this article.  
   
--   Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a user story and display child stories. Parent stories display a rollup of all task hours that are assigned to it and its child stories.  
+- Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a user story and display child stories. Parent stories display a rollup of all task hours that are assigned to it and its child stories.  
   
 ### Questions that the report answers  
  You can review the report to determine the overall progress for each user story of interest. For example, you can find answers to the following questions:  

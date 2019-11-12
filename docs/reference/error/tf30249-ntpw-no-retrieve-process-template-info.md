@@ -1,11 +1,13 @@
 ---
-title: TF30249-The New Team Project Wizard... titleSuffix: Azure DevOps & TFS
+title: TF30249-The New Team Project Wizard... 
+titleSuffix: Azure DevOps & TFS
 description: Occurs an error when the New Team Project Wizard cannot download the process template header information.
 ms.prod: devops
 ms.technology: devops-agile
-ms.assetid: 3bdffbfa-9b0d-4222-8630-5e76330a511e
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobsa-9b0d-4222-8630-5e76330a511e
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -18,11 +20,11 @@ This error occurs when the New Team Project Wizard cannot download the process t
   
  There are two likely causes for this error:  
   
--   The network is not available.  
+- The network is not available.  
   
--   Your user account does not have sufficient permissions to access and download the process template files.  
+- Your user account does not have sufficient permissions to access and download the process template files.  
   
- The following procedures will help you correct the problem.  
+  The following procedures will help you correct the problem.  
   
 ### To correct this error  
   

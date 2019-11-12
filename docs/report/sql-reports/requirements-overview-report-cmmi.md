@@ -6,9 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by area and iteration and in order of importance.
 ms.assetid: 18214bb0-6ff1-4e91-b354-a9b46823f69d
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+ms.date: 10/17/2017
 ---
 
 
@@ -36,17 +37,17 @@ The Requirements Overview report lists all requirements, filtered by area and it
   
  **Work Progress**  
   
--   **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the requirement or its child requirements.  
+- **% Hours Completed**: A numeric value and visual representation that shows the percentage of completed work based on the rollup of baseline and completed hours for all tasks that are linked to the requirement or its child requirements.  
   
--   **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the requirement or its child requirements.  
+- **Hours Remaining**: A numeric value for the rollup of all remaining hours for all tasks that are linked to the requirement or its child requirements.  
   
- **Test Status**  
+  **Test Status**  
   
--   **Tests**: A numeric value that represents the number of test cases that are linked to the requirement or its child requirements.  
+- **Tests**: A numeric value that represents the number of test cases that are linked to the requirement or its child requirements.  
   
--   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
+- **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
   
--   **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or requirement, where the options are **Active** (blue) and **Resolved** (gold). If a requirement is linked to one or more child requirements, the values represent a rollup of all bugs for the requirement and its child requirements.  
+- **Bugs**: A numeric value and visual representation that shows the number of bugs that are linked to the test case or requirement, where the options are **Active** (blue) and **Resolved** (gold). If a requirement is linked to one or more child requirements, the values represent a rollup of all bugs for the requirement and its child requirements.  
   
 ### Requirements that Appear in the Report  
  The Requirements Overview report lists and highlights requirements according to the following criteria:  
@@ -86,19 +87,19 @@ The Requirements Overview report lists all requirements, filtered by area and it
 ##  <a name="Interpreting"></a> Interpreting the Report  
  The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:  
   
--   Tasks implemented to complete each requirement.  
+- Tasks implemented to complete each requirement.  
   
--   Tests run to ensure the quality of the implemented requirements.  
+- Tests run to ensure the quality of the implemented requirements.  
   
--   Bugs identified that indicate problems with the quality of the requirements.  
+- Bugs identified that indicate problems with the quality of the requirements.  
   
- Depending on your area of focus, you can filter the report in the following ways:  
+  Depending on your area of focus, you can filter the report in the following ways:  
   
--   Specify the **Iteration** and **Area** paths of interest.  
+- Specify the **Iteration** and **Area** paths of interest.  
   
-     For more information, see [Filtering the Report](#Changing) later in this article.  
+   For more information, see [Filtering the Report](#Changing) later in this article.  
   
--   Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
+- Click ![Expand](_img/icon_expand.gif "Icon_Expand") or ![Collapse](_img/icon_collapse.gif "Icon_Collapse") to expand or collapse a requirement and display child requirements. Parent requirements display a rollup of all task hours that are assigned to it and its child requirements.  
   
 ### Questions That the Report Answers  
  You can review the report to determine the overall progress for each requirement of interest. For example, you can find answers to the following questions:  

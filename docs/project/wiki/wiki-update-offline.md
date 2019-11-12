@@ -7,10 +7,10 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
 ms.date: 12/20/2018  
 ---
@@ -105,13 +105,13 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 
 	For example:  
 
-	```
+    ```
 	Welcome
 	Roadmap  
 	How-to-contribute  
 	Home  
 	Reference  
-	```
+    ```
 
 ### Add subpages
 
@@ -126,12 +126,12 @@ To add pages at the root of the wiki tree, add a Markdown file at the root of th
 	 
 	For example, the file has the following subpages:
 
-	```
+    ```
 	Request-extensions  
 	Licensing  
 	Smoke-test  
 	Coding-guidelines  
-	```
+    ```
 
 ### Push your changes
 

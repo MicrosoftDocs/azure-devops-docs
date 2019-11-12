@@ -8,46 +8,51 @@
 <th width="20%">Project Admins</th>
 </tr>
 <tbody valign="top" align="center">
-
-
 <tr>
-<td align="left">Provide feedback using the Test & Feedback extension
+<td align="left">Provide feedback using the Test &amp; Feedback extension
 </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Exploratory testing, view test runs 
 </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
 <td align="left">Manage test plans and test suites 
-<p>Manage test configurations and test environments </p>
-<p>Exploratory testing, create and delete test runs </p>
-<p>Request feedback using the Test & Feedback extension</p>
-</td>
+<p>Manage test configurations and test environments </p></td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 <tr>
-<td align="left">Test Manager (purchased separately)
+<td><p>Exploratory testing, create and delete test runs </p></td>
+<td>  </td>
+<td>  </td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td><p>Request feedback using the Test &amp; Feedback extension</p></td>
+<td>  </td>
+<td>  </td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Azure Test Plans (formerly Test Manager, purchased separately)
 </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
+<td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
-
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -24,7 +24,10 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -37,9 +40,9 @@
     "externalReference": [],
     "globalMetadata": {
       "brand": "azure-devops",
-      "searchScope": ["Azure DevOps" "VSTS", "Team Services"],
-      "author": "erickson-doug",
-      "ms.author": "jillfra",
+      "searchScope": ["Azure DevOps", "VSTS", "Team Services"],
+      "author": "mijacobs",
+      "ms.author": "mijacobs",
       "ms.topic": "conceptual",
       "ms.prod": "devops",
       "ms.technology": "conceptual"

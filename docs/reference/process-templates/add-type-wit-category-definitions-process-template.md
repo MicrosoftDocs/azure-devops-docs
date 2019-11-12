@@ -5,8 +5,9 @@ description: Add or modify categories to your process template for Team Foundati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 93f146df-8424-4183-89f7-298943eb8c0f
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -30,37 +31,37 @@ The file that defines the categories must conform to the schema definition for c
 The following example shows the syntax structure that defines a category that is named **Requirement Category** and that is associated with the **User Story** work item type.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<CATEGORIES>  
-      <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">  
-      <DEFAULTWORKITEMTYPE name="User Story" />  
-      </CATEGORY>  
-      . . .   
-</CATEGORIES>  
-```  
+> ```XML 
+> <CATEGORIES>  
+>       <CATEGORY refname="Microsoft.RequirementCategory" name="Requirement Category">  
+>       <DEFAULTWORKITEMTYPE name="User Story" />  
+>       </CATEGORY>  
+>       . . .   
+> </CATEGORIES>  
+> ```  
   
 <a name="upload"></a> 
 ##  Specify a category definition file to upload  
  To upload a set of category definitions, you specify the **CATEGORIES** element within the **taskxml** element. The filename attribute is a relative path of the category definition file. For example, the following syntax specifies that the categories.xml file will be uploaded.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<CATEGORIES fileName="WorkItem Tracking\categories.xml" />  
-```  
+> ```XML 
+> <CATEGORIES fileName="WorkItem Tracking\categories.xml" />  
+> ```  
   
  The following example shows how to specify a task that uploads a categories file. Because each category specifies a default work item type, the task to upload the category definition file depends on the successful completion of the **WITs** task which uploads the type definitions for work items.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">  
-      <dependencies>  
-      <dependency taskId="WITs" />  
-      </dependencies>  
-      <taskXml>  
-      <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
-      </taskXml>  
-</task>  
-```  
+> ```XML 
+> <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">  
+>       <dependencies>  
+>       <dependency taskId="WITs" />  
+>       </dependencies>  
+>       <taskXml>  
+>       <CATEGORIES fileName="WorkItem Tracking\Categories.xml" />  
+>       </taskXml>  
+> </task>  
+> ```  
   
 <a name="elements"></a> 
 ##  CATEGORIES element reference  

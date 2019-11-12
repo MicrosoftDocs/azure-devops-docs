@@ -6,9 +6,9 @@ ms.assetid: f1ceefae-192f-49ee-af52-b9a29852bf85
 toc: show
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sancha
-author: steved0x
+author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2017'
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Commit history
 
-#### Azure Repos | TFS 2018 | TFS 2017 Update 1
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
 
 ## Commit history view
 

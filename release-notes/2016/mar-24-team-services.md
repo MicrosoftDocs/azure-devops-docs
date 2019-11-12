@@ -3,18 +3,18 @@ title: Improved commit traceability, custom multiline fields, and board/test int
 description: VSTS release notes for March 24 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 82e1be4f-ab46-40e1-a3f2-ad8fb9e18a67
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
-#Improved commit traceability, custom multiline fields, and board/test integration - Mar 24
+# Improved commit traceability, custom multiline fields, and board/test integration - Mar 24
 
 Let’s start by walking through some of the improvements we’ve made in the Code hub…
 
-##Commit traceability
+## Commit traceability
 
 Build status (success or failure) is now clearly visible in the Code Explorer and Commit Details views. More details are just a click away, so you’ll always know if the changes in the commit passed the build or not. You can also customize which builds post status in the repository options for the build definition.
 
@@ -26,21 +26,21 @@ On a related note, it’s also now easier to add and remove reviewers from your 
 
 ![Removing a reviewer](_img/3_24_02.png)
 
-##View Git LFS files in the web
+## View Git LFS files in the web
 
 If you’re already working with large files in Git (audio, video, datasets, etc.), then you know that Git Large File Storage (LFS) replaces these files with pointers inside Git, while storing the file contents in a remote server, like Team Services. This deployment now makes it possible to view the full contents of these large files by simply clicking the file in the repo of your Team Services account.
 
-##Git for Windows now includes Team Services authentication by default
+## Git for Windows now includes Team Services authentication by default
 
 [Git for Windows 2.7.4](https://git-scm.com/download/win) now installs the [Windows Credential Helper](https://github.com/Microsoft/Git-Credential-Manager-for-Windows). This means that Windows users can now simply install the latest version of Git and start working against Team Services. If the user needs to authenticate, they will get an interactive prompt—no need for alternate credentials or personal access tokens. For Linux and Mac users, they can achieve the same experience using the [Git Credential Manager for Mac and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux).
 
-##Custom multiline text fields
+## Custom multiline text fields
 
 We’ve added multiline text fields to the list of types available when customizing your work items. These fields allow rich formatting (bold, underline, bullets, inline images, etc.), and are great for capturing data about your work that needs a bit more space. For now, you can only place these fields in the first column of your work items. Support for more layout options will come later.
 
 ![A custom multiline text field](_img/3_24_03.png)
 
-##Test progress from your cards
+## Test progress from your cards
 
 Over the past few months you’ve seen us adding more and more functionality to cards on your boards. Our latest deployment brings the capability to add, view, and interact with test cases directly from your stories. Use the new **Add Test** menu option to create a linked Test case, and then monitor status directly from the card as things progress.
 
@@ -58,35 +58,38 @@ With this new capability, you can now perform the following actions directly fro
 
 If you need advanced test management capabilities (like assign testers, assign configurations, centralized parameters, exporting test results, etc.), you can then switch over to Test Hub and start using the default test plan/requirement-based suites that have been auto-created for you. You can learn about this capability [here](https://msdn.microsoft.com/Library/vs/alm/Work/kanban/add-run-update-tests).
 
-##Capture screen recordings
+## Capture screen recordings
 
 Building on all the recent improvements to the [Exploratory Testing](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) extension, this deployment brings the ability to perform on-demand screen recordings that are automatically attached to the task or bug being filed. Support for audio is coming next.
 
 ![Capturing a screen recording](_img/3_24_05.png)
 
-##Queue a Run by specifying your test suite
+## Queue a Run by specifying your test suite
 
 Test plans and test suites can now trigger automated runs in builds using the “Run Functional Tests” task. Results will appear in the Tests tab on your Build Summary pages, as well as in the Test Hub. Use the new Test Suite group to get a quick view of all suites run and their quality.
 
-##Configuration management in the Test Hub
+## Configuration management in the Test Hub
 
 We’ve brought test configuration management to the web UI by adding a new Configurations tab within the Test Hub. Here you’ll find all your configurations, ready for you to configure as needed.
 
-##Enable build result extensions to specify order and column
+## Enable build result extensions to specify order and column
 
-Build result section extensions can now specify which column and the order in which they appear. The result view has two columns, and all extensions will be in the first column by default. **Note**: All third-party extensions will appear after the build result sections we include.
+Build result section extensions can now specify which column and the order in which they appear. The result view has two columns, and all extensions will be in the first column by default.
+
+> [!NOTE]
+> All third-party extensions will appear after the build result sections we include.
 
 ![Configuring the order and column](_img/3_24_06.png)
 
-##Configure status API reporting for a build definition
+## Configure status API reporting for a build definition
 
 You can now choose which build definitions report their status back to the Git status API. This is particularly useful if you have many definitions that build a given repository or branch, but only have one that represents the real health.
 
-##Tab contribution point
+## Tab contribution point
 
 And finally, for those of you writing extensions, we’ve added a new contribution point on the board and backlog pages to allow you to write extensions as a pivot tab next to Board/Backlog/[Capacity] tabs.
 
-Feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)) if you have questions. As always, any ideas on things you’d like to see us prioritize, head over to UserVoice to add your idea or vote for an existing one.
+Feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). As always, any ideas on things you’d like to see us prioritize, head over to UserVoice to add your idea or vote for an existing one.
 
 Thanks,
 

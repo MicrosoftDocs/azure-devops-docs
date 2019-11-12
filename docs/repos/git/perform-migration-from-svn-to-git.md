@@ -3,9 +3,9 @@ title: Migrate from Subversion (SVN) to Git
 description: Learn how to migrate from Subversion (SVN) to Git, including history
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
-ms.date: 04/25/2018
+ms.technology: devops-code-git
+ms.manager: mijacobs
+ms.date: 06/04/2019
 ms.author: hkamel
 author: hkamel
 monikerRange: '>= tfs-2013'
@@ -77,9 +77,12 @@ Subversion just uses the username for each commit, while Git stores both a real 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 
 ```
-svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique
+svn.exe log --quiet | ? { $_ -notlike '-*' } | % { "{0} = {0} <{0}>" -f ($_ -split ' \| ')[1] } | Select-Object -Unique | Out-File 'authors-transform.txt'
 ```
 This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
+
+> [!NOTE]
+> Encoding can be adjusted by appending the **-Encoding** option to the command above, for instance, `OutFile 'authors-transform.txt' -Encoding utf8`.
 
 ### Clone the Subversion repository using git-svn
 
@@ -115,9 +118,8 @@ git add .gitignore
 git commit -m 'Convert svn:ignore properties to .gitignore.'
 ```
 > [!TIP]
->
-> Read more about **.gitignore**: [Ignore file changes with Git]
-(/azure/devops/repos/git/ignore-files?tabs=visual-studio)
+> 
+> Read more about **.gitignore**: [Ignore file changes with Git](/azure/devops/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -125,24 +127,28 @@ In this step, you will create a bare repository and make its default branch matc
 
 1. Create a bare Git repository
 
-   ```
-   git init --bare c:\new-bare.git
-   cd c:\new-bare.git
-   git symbolic-ref HEAD refs/heads/trunk
-   ```
+    ```
+    git init --bare c:\new-bare.git
+    cd c:\new-bare.git
+    git symbolic-ref HEAD refs/heads/trunk
+    ```
+
 2. Push the local Git repository to the new bare Git repository
-   ```
-   cd c:\mytempdir
-   git remote add bare c:\new-bare.git
-   git config remote.bare.push 'refs/remotes/*:refs/heads/*'
-   git push bare
-   ```
+   
+    ```
+    cd c:\mytempdir 
+    git remote add bare c:\new-bare.git 
+    git config remote.bare.push 'refs/remotes/*:refs/heads/*' 
+    git push bare 
+    ```
+
 3. Rename "trunk" branch to "master"
 Your main development branch will be named "trunk", which matches the name it was in Subversion. You'll want to rename it to Git's standard "master" branch using:
-   ```
-   cd c:\new-bare.git
-   git branch -m trunk master
-   ```
+   
+    ```
+    cd c:\new-bare.git
+    git branch -m trunk master
+    ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
 

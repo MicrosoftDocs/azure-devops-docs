@@ -20,7 +20,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < azure-devops"
+::: moniker range=">=tfs-2017 < azure-devops-2019"
 
 1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
 

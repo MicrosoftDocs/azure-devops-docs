@@ -5,8 +5,9 @@ description: Define additional types of links that team members can create betwe
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -33,12 +34,12 @@ You specify the definition file for each link type in a separate file, or you ca
 The following example shows the syntax structure that defines the **TestedBy** link type.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<?xml version="1.0" encoding="utf-8"?>  
-<LinkTypes>  
-  <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />  
-</LinkTypes>  
-```  
+> ```XML
+> <?xml version="1.0" encoding="utf-8"?>  
+> <LinkTypes>  
+>   <LinkType ReferenceName="Microsoft.VSTS.Common.TestedBy" ForwardName="Tested By" ReverseName="Tests" Topology="Dependency" />  
+> </LinkTypes>  
+> ```  
   
 You can customize or add a link type definition in the LinkTypes folder. For more information about how to define a type of link, see [Define a custom link type](../xml/define-custom-link-type.md).  
   
@@ -48,23 +49,23 @@ You can customize or add a link type definition in the LinkTypes folder. For mor
  To upload a link type definition in the process template, you specify the **LINKTYPE** element within the **taskxml** element. The filename attribute is a relative path of the definition file for the link type. For example, the following syntax specifies that the TestedBy.xml file will be uploaded.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
-```  
+> ```XML
+> <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
+> ```  
   
 The following example shows how to specify a task that creates the two types of links that are defined in the Agile process template. These types correspond to the **SharedStep** and **TestedBy** link types.  
   
 > [!div class="tabbedCodeSnippets"]
-```XML
-<task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  
-      <taskXml>  
-      <LINKTYPES>  
-         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />  
-         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
-      </LINKTYPES>  
-      </taskXml>  
-</task>  
-```  
+> ```XML
+> <task id="LinkTypes" name="LinkType definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item link types created">  
+>       <taskXml>  
+>       <LINKTYPES>  
+>          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />  
+>          <LINKTYPE fileName="WorkItem Tracking\LinkTypes\TestedBy.xml" />  
+>       </LINKTYPES>  
+>       </taskXml>  
+> </task>  
+> ```  
   
 <a name="elements"></a> 
   

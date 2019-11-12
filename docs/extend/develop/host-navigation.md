@@ -5,10 +5,10 @@ title: Host Page Navigation | Extensions for Azure DevOps Services
 description: Use host navigation to modify host url hash or reload page
 ms.assetid: 9B188838-55FD-98A6-9062-2652C06BF381
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,6 +18,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 
 ![example](./_img/hash-browser.png)
 
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ### Get the current hash value
 
@@ -37,7 +38,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 	// Get navigation service
     VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
         navigationService.onHashChanged(function (hash) {
-        	// Adding #something to the end of browser url will execute this handler with the hash value "something"
+        	// Adding #something to the end of browser url executes this handler with the hash value "something"
             console.log("Hash changed to : " + hash);                        
         });
     });

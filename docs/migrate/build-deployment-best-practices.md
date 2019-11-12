@@ -2,13 +2,13 @@
 title: Azure DevOps - A Pipeline Automation Case Study for World Wide Time Keeping
 description: Automate build and release pipelines with Azure DevOps, a case study for World Wide Time Keeping
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 06/01/2016
-ms.author: mlearned
-author: mlearned
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,8 +17,6 @@ monikerRange: '>= tfs-2015'
 > Author: Vaibhav Rajeev Thombre
 
 October 2015
-
-## Introduction 
 
 In an Agile world, delivering quick and frequent releases for large, complex systems with multiple components 
 becomes cumbersome and time-consuming if done manually, because each component has a high degree of complexity and 
@@ -41,7 +39,7 @@ to cut down their release cycles and deliver faster. We assume that readers have
 of Engineering Cycles and their phases (Develop/Test/Build/Deploy) and a fundamental knowledge of Agile practices 
 and delivery cycles.
 
-## Build Automation
+## Build automation
 
 Many teams have multiple requirements for build, but the following practices can be applied to most teams. 
 You may adopt the whole approach or just implement the components that work out best for you.
@@ -67,9 +65,9 @@ can be identified and fixed early, which is required in the Agile world.
 your check-ins and daily builds. This ensures that any security vulnerabilities are identified 
 as soon as possible and can be fixed quickly.
 
-##	Deployment Automation 
+##	Deployment automation 
 
-### Using Deployment Scripts
+### Use deployment scripts
 
 **Deployments for internal SWE environment:** Set up the internal SWE environments deployments with the 
 daily automated builds by integrating the build pipelines with the deployment scripts. All the 
@@ -84,7 +82,7 @@ Because you have set up one-click builds for them, when the build completes succ
 executed at the end and the product is deployed. Therefore, you do not have to manually deploy the 
 system. Instead it's deployed automatically by simply queuing a build.
 
-### The Release Pipeline
+### The release pipeline
 
 In theory, a release pipeline is a process that dictates how you deliver software to your end users. 
 In practice, a release pipeline is an implementation of that pattern. The pipeline begins with code 
@@ -98,7 +96,7 @@ occur as code moves through a release pipeline.
 
 ![Pipeline for continuous delivery](./_img/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
 
-### Using Release Management
+### Use Release Management
 
 If your team is working on Azure-based components - web apps, services, web jobs, and so on - you can use 
 Release Management for automating deployments.

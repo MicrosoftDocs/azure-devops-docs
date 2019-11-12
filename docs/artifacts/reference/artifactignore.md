@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: reference
 ms.manager: hdixon
-ms.author: midenn
-author: mitchdenny
+ms.author: wismyth
+author: willsmythe
 ms.date: 10/26/2018
 monikerRange: 'azure-devops'
 ---

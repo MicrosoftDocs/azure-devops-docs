@@ -1,9 +1,8 @@
-- name: Azure DevOps Services
+- name: Azure DevOps 
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
   - name: Azure Pipelines
-    tocHref: /azure/devops/
     topicHref: /azure/devops/pipelines/index
     items:
     - name: Deploy to Azure

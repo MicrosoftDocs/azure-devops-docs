@@ -5,7 +5,7 @@ ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -19,10 +19,12 @@ monikerRange: '>= tfs-2017'
 
 Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -30,8 +32,11 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 None
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV1.md)]
+
 ::: moniker-end
 
 ## Arguments

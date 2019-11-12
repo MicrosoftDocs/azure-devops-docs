@@ -8,7 +8,7 @@ ms.assetid: 64725cfe-72f8-4ac5-8946-95e808e035f9
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 02/26/2018
 ---
 
@@ -23,12 +23,12 @@ Global lists are pick lists that you can include in one or more fields and types
 >**Feature availability:**&#160;Hosted XML customization supports adding and updating global lists. To learn more, see [Process template customizations differences](../../organizations/settings/work/import-process/differences.md).   
 
 You can define a global list within its own definition file, in the definition file for a type of work item, or in global workflow. The global-list definition manages the global lists that are defined for a collection. The global-list definition uses the following commands in the **witadmin** command-line tool:    
--   **destroygloballist**:  Destroys a global list.    
--   **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
--   **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
--   **listgloballist**:  Displays the name of each global list defined on the server.  
+- **destroygloballist**:  Destroys a global list.    
+- **exportgloballist**:  Exports the global lists to an XML file, or to the Command Prompt window. It exports a single file, which contains all global lists that have been defined for the project collection. 
+- **importgloballist**:  Imports global lists from an XML file. If you try to import a global list that already exists on the server, a warning asks if you want to overwrite the global list that is on the server. If you try to import a global list that does not already exist, the command creates a new global list.    
+- **listgloballist**:  Displays the name of each global list defined on the server.  
   
- See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
+See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
 
@@ -43,7 +43,7 @@ For the project collection where the global lists are defined, you must have the
 -   To destroy a global list using **witadmin destroygloballist**, you must be a member of the **Project Collection Administrators** security group.  
   
 > [!NOTE]   
-> Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut window, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+> Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut window, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ witadmin listgloballist /collection:CollectionURL
 |-------------------|---------------------|  
 |**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/n**:`GlobalListName`|The name of the global list to destroy.|  
-|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft Web site: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
+|**/f**:`FileName`|The path and the name of the global list XML definition file to export or import.<br /><br />**Note:**  If the client computer runs Windows Vista, you might not have permissions to certain folders. If you try to export the global list to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. For more information, see the following pages on the Microsoft Web site: [Registry Virtualization](https://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](https://go.microsoft.com/fwlink/?LinkId=92323). To avoid this redirection, you can export the file to a location where you have permissions.|  
 |**/e**:`Encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  

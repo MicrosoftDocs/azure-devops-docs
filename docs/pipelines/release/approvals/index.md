@@ -6,7 +6,7 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -65,7 +65,7 @@ though service management methodologies such as ITIL. For more details, see [Rel
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [ServiceNow release and deployment control](servicenow.md)
-* [Stages](../environments.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)
 

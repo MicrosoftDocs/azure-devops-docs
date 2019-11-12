@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Queries | REST API Reference for Team Foundation Server
 description: Work with work item queries programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: F91A2D76-3586-4552-A9F4-AC9E5CBB46D4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

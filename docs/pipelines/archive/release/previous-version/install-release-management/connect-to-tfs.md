@@ -6,7 +6,7 @@ ms.assetid: CEB0875B-F42A-45F3-B743-D6C522F7E5A6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -37,7 +37,7 @@ permissions.
    or the **Domain Administrators** group (domain account).
 
     > [!TIP]
-    > _Do you need to add team mates to the **Release Manager** role 
+    > _Do you need to add teammates to the **Release Manager** role 
     > in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
 
 1. Either designate an existing account or create a user account in TFS 
@@ -89,7 +89,7 @@ permissions.
    Management. This is required to connect an SMTP server to Release Management.
 
     > [!TIP]
-    > _Do you need to add team mates to the **Release Manager** role 
+    > _Do you need to add teammates to the **Release Manager** role 
    in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
 
 1. In Release Management client, choose **Administration** and then **Settings**.

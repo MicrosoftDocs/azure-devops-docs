@@ -54,40 +54,52 @@ Make sure you've prepared the build as described [above](#prepare).
 See [Create a feed](../../../artifacts/feeds/create-feed.md).
 
 
-#### [Build](../../index.md) tasks
+#### [Build](../../index.yml) tasks
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>
+
+<img src="/azure/devops/tasks/build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+
+<br/><strong>Build: Visual Studio Build</strong></td>
 <td>
 <p>Build your solution.</p>
 <ul>
-<li>Solution: ```**\*.sln```</li>
-<li>Platform: ```$(BuildPlatform)```</li>
-<li>Configuration: ```$(BuildConfiguration)```</li>
+<li>Solution: <code><strong>*.sln</code></li>
+<li>Platform: <code>$(BuildPlatform)</code></li>
+<li>Configuration: <code>$(BuildConfiguration)</code></li>
 <!-- Reviewers: what research and guidance do we think is needed, if any, around building packages that depend on packages? -->
 </ul>
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Packager](../package/_img/nuget-packager.png)<br/>**Package: NuGet Packager**</td>
+<td>
+
+<img src="/azure/devops/tasks/package/_img/nuget-packager.png" alt="Package: NuGet Packager"/>
+
+<br/></strong>Package: NuGet Packager<strong></td>
 <td>
 <p>Package your projects.</p>
 <ul>
-<li>Path/Pattern to nuspec files: ```**\*.csproj```</li>
+<li>Path/Pattern to nuspec files: <code></strong>*.csproj</code></li>
 <li>Use Build number to version package: Selected</li>
-<li>Advanced, Configuration to Package: ```Release```</li>
+<li>Advanced, Configuration to Package: <code>Release</code></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
+<td>
+
+<img src="/azure/devops/tasks/package/_img/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+
+<br/><strong>Package: NuGet Publisher</strong></td>
 <td>
 <p>Publish your packages to Azure Artifacts.</p>
 <ul>
-<li>Path/Pattern to nupkg: ```**\*.nupkg```</li>
+<li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: Internal NuGet Feed</li>
-<li>Internal feed URL: See [Find your NuGet package source URL](../../../artifacts/nuget/consume.md#get-nuget-pkg-url).
+<li>Internal feed URL: See <a href="/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url" data-raw-source="[Find your NuGet package source URL](/azure/devops/artifacts/nuget/consume#get-nuget-pkg-url)">Find your NuGet package source URL</a>.
 </li>
 </ul>
 </td>
@@ -108,45 +120,57 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 
 <table>
 <tr>
-<td>![Build: Visual Studio Build](../build/_img/visual-studio-build.png)<br/>**Build: Visual Studio Build**</td>
+<td>
+
+<img src="/azure/devops/tasks/build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+
+<br/><strong>Build: Visual Studio Build</strong></td>
 <td>
 <p>Build your solution.</p>
 <ul>
-<li>Solution: ```**\*.sln```</li>
-<li>Platform: ```$(BuildPlatform)```</li>
-<li>Configuration: ```$(BuildConfiguration)```</li>
+<li>Solution: <code><strong>*.sln</code></li>
+<li>Platform: <code>$(BuildPlatform)</code></li>
+<li>Configuration: <code>$(BuildConfiguration)</code></li>
 <!-- Reviewers: what research and guidance do we think is needed, if any, around building packages that depend on packages? -->
 </ul>
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Packager](../package/_img/nuget-packager.png)<br/>**Package: NuGet Packager**</td>
+<td>
+
+<img src="/azure/devops/tasks/package/_img/nuget-packager.png" alt="Package: NuGet Packager"/>
+
+<br/></strong>Package: NuGet Packager<strong></td>
 <td>
 <p>Package your projects.</p>
 <ul>
-<li>Path/Pattern to nuspec files: ```**\*.csproj```</li>
+<li>Path/Pattern to nuspec files: <code></strong>*.csproj</code></li>
 <li>Use Build number to version package: Selected</li>
-<li>Advanced, Configuration to Package: ```Release```</li>
+<li>Advanced, Configuration to Package: <code>Release</code></li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>![Package: NuGet Publisher](../package/_img/nuget-publisher.png)<br/>**Package: NuGet Publisher**</td>
+<td>
+
+<img src="/azure/devops/tasks/package/_img/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+
+<br/><strong>Package: NuGet Publisher</strong></td>
 <td>
 <p>Publish your packages to NuGet.org.</p>
 <ul>
-<li>Path/Pattern to nupkg: ```**\*.nupkg```</li>
+<li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: External NuGet Feed</li>
 <li>
-<p>NuGet Server Endpoint: ![endpoint manage](_img/endpoint-manage.png)</p>
+<p>NuGet Server Endpoint: <img src="/azure/devops/tasks/_shared/_img/endpoint-manage.png" alt="endpoint manage"/></p>
 <ol>
-<li>Click "New service connection", and then click Generic.</li>
+<li>Click &quot;New service connection&quot;, and then click Generic.</li>
 <li><p>On the Add New Generic Connection dialog box:</p>
 <ul>
-<li>Connection Name: ```NuGet```</li>
-<li>Server URL: ```https://nuget.org/```</li>
-<li>User name: ```{your-name}```</li>
-<li>Password/Token Key: Paste API Key from your [NuGet account](https://www.nuget.org/account).</li>
+<li>Connection Name: <code>NuGet</code></li>
+<li>Server URL: <code><a href="https://nuget.org/" data-raw-source="https://nuget.org/">https://nuget.org/</a></code></li>
+<li>User name: <code>{your-name}</code></li>
+<li>Password/Token Key: Paste API Key from your <a href="https://www.nuget.org/account" data-raw-source="[NuGet account](https://www.nuget.org/account)">NuGet account</a>.</li>
 </ul>
 </li>
 </ol>

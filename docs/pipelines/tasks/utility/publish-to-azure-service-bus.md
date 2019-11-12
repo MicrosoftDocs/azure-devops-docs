@@ -5,7 +5,7 @@ ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -21,11 +21,14 @@ Use this task in a build or release pipeline to send a message to an Azure Servi
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -46,7 +49,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Do I need an agent?
 
-You do not need an agent to run this task. This task Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+You do not need an agent to run this task. This task Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ### Where should a task signal completion?
 

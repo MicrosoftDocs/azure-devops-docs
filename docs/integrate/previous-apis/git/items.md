@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Items | REST API Reference for Team Foundation Server
 description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -64,11 +64,11 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 When you get an item that is a file, the response is a stream (`application/octet-stream`) that contains the contents of the file. You can also get a [specific version](#getaspecificversion) of an item. 
 
-####Sample request
+#### Sample request
 ```no-highlight
 GET http://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-Git/_apis/repos/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
 ```
-####Sample response
+#### Sample response
 
 ```html
 <div class="jumbotron">
@@ -83,28 +83,28 @@ GET http://fabrikam-fiber-inc:8080/DefaultCollection/Fabrikam-Fiber-Git/_apis/re
             ASP.NET Single Page Application (SPA) helps you build applications that include significant client-side interactions using HTML, CSS, and JavaScript.
             It's now easier than ever before to getting started writing highly interactive web applications.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=273732">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
         <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
 ```
-#####Status code: 200
+##### Status code: 200
 
 ### Zip a folder
 <a name="zipafolder" />
 
 Set `scopePath` to the folder that you want to get in a zipped format and include the request header `Accept: application/zip`.
 
-####Sample request
+#### Sample request
 ```http
 Accept: application/zip
 ```
@@ -120,7 +120,7 @@ You can get a .zip file that contains the contents of a [specific version](#geta
 
 Set the accept header to `application/json` to get the metadata for a file, or for a [specific version](#getaspecificversion) of a file.
 
-####Sample request
+#### Sample request
 
 ```http
 Accept: application/json
@@ -129,10 +129,10 @@ Accept: application/json
 GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
 ```
 
-####Response
+#### Response
 The objectId in the metadata is the SHA1 hash of the item.
 
-#####Status code: 200
+##### Status code: 200
 ```json
 {
   "count": 1,

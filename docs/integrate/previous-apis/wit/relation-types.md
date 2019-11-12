@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Relation Types | REST API Reference for Team Foundation Server
 description: Work with work item relation types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: D5EAD6ED-8972-4A9F-A5EE-369C1C77E996
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

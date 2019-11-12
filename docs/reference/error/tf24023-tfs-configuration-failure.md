@@ -1,11 +1,11 @@
----
+﻿---
 title: TF24023-Team Foundation Server configuration... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a project 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83546f98-1ca6-4b07-afe5-134df7f291bf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -18,13 +18,13 @@ ms.date: 02/22/2017
 
 This error occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server {*name*} while creating a project. Possible causes of this error include:  
   
--   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
+- A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
--   The server that hosts Team Foundation Server is offline.  
+- The server that hosts Team Foundation Server is offline.  
   
--   A critical file is missing from the server.  
+- A critical file is missing from the server.  
   
- Because the wizard could not connect to the Team Foundation server, the wizard was unable to create the required directory on the server.  
+  Because the wizard could not connect to the Team Foundation server, the wizard was unable to create the required directory on the server.  
   
 ### To correct this error  
   

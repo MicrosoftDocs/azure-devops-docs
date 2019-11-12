@@ -18,7 +18,7 @@ After you've verified your customizations, you can now apply the process to your
 	> [!div class="mx-imgBorder"]  
 	> ![Agile process context menu, Choose Change team projects to use MyAgile](/azure/devops/organizations/settings/work/_img/process/add-custom-change-process.png) 
 
-0. Check the check box of those projects you want to change to use the Agile process. The system lists only those projects that are valid for the current process.	
+1. Check the check box of those projects you want to change to use the Agile process. The system lists only those projects that are valid for the current process.	
 
 	Here we choose to use the Agile process for the Fabrikam Fiber A and Fabrikam Fiber projects.  Only those projects created from the Agile process or one that inherits from Agile appears under the Available projects column. 
   

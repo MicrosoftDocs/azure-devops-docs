@@ -1,13 +1,13 @@
----
+﻿---
 title: Deprecation of the Work Item Tracking (WIT) and Test Client OM
 titleSuffix: Azure DevOps
 description: With deprecation of the WIT Client OM, you need to update your code to use REST APIs
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2C636EA8-6A10-48C1-9620-F792915EBB65
-ms.manager: jillfra
-ms.author: dahellem
-author: DanHellem
+ms.manager: mijacobs
+ms.author: liho
+author: KathrynEE
 ms.topic: reference
 monikerRange: "azure-devops"
 ms.date: 08/29/2018
@@ -36,15 +36,11 @@ Updating your code to use REST is vital to ensure your tools will work as we rel
 
 Any references to the latest versions of WIT Client OM will result in an obsolete warning. This includes the dlls that come with Visual Studio 2019 and Azure DevOps 2019. Here is an example warning you may receive...
 
-**CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at https://aka.ms/witclientom'**
+**CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at <https://aka.ms/witclientom>'**
 
 ![warning message in Visual Studio](_img/wit-client-om-deprecation-vs.png)
 
 ## Q&A
-
-### How do I know what tools are running?
-
-If you don't know what tools are running against your account that use the WIT Client OM, you can [contact us](mailto:dahellem@microsoft.com) directly. We can help you identify them so you can then contact the tool owners and ensure they are aware of our deprecation plan.
 
 ### How do I fix my tools?
 

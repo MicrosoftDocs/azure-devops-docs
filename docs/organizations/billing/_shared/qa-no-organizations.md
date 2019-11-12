@@ -1,6 +1,6 @@
-### Q:		Why don't I see my organization in the Visual Studio Marketplace?
+### Q: 	Why don't I see my organization in the Visual Studio Marketplace?
 
-A:	If you don't see your organization when buying from the Visual Studio Marketplace, try these steps:
+A: If you don't see your organization when buying from the Visual Studio Marketplace, try these steps:
 
 1.	Check the identity that you use to sign in to the Visual Studio Marketplace. In the upper-right corner, select your user name to view your profile. 
 1.	On the left, make sure your email address and directory are correct.

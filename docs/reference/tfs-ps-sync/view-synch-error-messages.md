@@ -5,8 +5,9 @@ description: View synchronization engine error messages when using Team Foundati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd4e04e2-7a15-4a2c-8833-301f1292cdba
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: troubleshooting
 ms.date: 01/12/2017
 ---
@@ -49,19 +50,19 @@ TfsAdmin ProjectServer /GetSyncMessages /collection:tpcUrl
 ## Return value  
  The **/GetSyncMessages** option displays a tab-delimited set of messages with their column headers. The following information appears for each message:  
   
--   **Date**: Date when the message was logged.  
+- **Date**: Date when the message was logged.  
   
--   **Team Project Collection Name\Team Project Name**: Names of the project collection and the project.  
+- **Team Project Collection Name\Team Project Name**: Names of the project collection and the project.  
   
--   **Project Name**: Name of the enterprise project plan.  
+- **Project Name**: Name of the enterprise project plan.  
   
--   **Message**: Content of the message.  
+- **Message**: Content of the message.  
   
- These messages are extracted from the synchronization job log. The `/GetSyncMessages` option truncates the messages that are much longer than average. When this truncation occurs, the following message appears:  
+  These messages are extracted from the synchronization job log. The `/GetSyncMessages` option truncates the messages that are much longer than average. When this truncation occurs, the following message appears:  
   
- **There are additional errors that have been truncated from the log. These errors can be viewed in the event log for the application-tier server(s).**  
+  **There are additional errors that have been truncated from the log. These errors can be viewed in the event log for the application-tier server(s).**  
   
- You can view the complete message by opening the event log for the corresponding application-tier server.  
+  You can view the complete message by opening the event log for the corresponding application-tier server.  
   
 ## Example  
  The following example retrieves the error messages that have been logged for DefaultCollection, which is defined on the MyTFSServer application-tier server.  
