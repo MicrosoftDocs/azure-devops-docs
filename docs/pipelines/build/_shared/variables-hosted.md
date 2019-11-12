@@ -518,7 +518,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
-<td>System.collectionUri</td>
+<td>System.CollectionUri</td>
 <td>A string Team Foundation Server collection URI.</td>
 </tr>
 
