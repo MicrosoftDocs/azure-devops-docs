@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestCaseResultAttachmentModel API | Extensions for Azure DevOps Services
+description: Data representation of a test case result attachment model.
 ms.assetid: d5b8370a-dc61-7719-4ceb-734080b24194
 ms.prod: devops
 ms.technology: devops-ecosystem
