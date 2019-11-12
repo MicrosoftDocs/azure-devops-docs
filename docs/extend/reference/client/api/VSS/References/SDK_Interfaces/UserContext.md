@@ -1,5 +1,6 @@
 ---
 title: VSS/References/SDK.Interfaces UserContext API | Extensions for Azure DevOps Services
+'description: Data representation of user context.
 ms.assetid: b24baedf-97ad-cb18-4218-528029dce587
 ms.prod: devops
 ms.technology: devops-ecosystem
