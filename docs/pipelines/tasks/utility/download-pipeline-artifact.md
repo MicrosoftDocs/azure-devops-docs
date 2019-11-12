@@ -1,6 +1,6 @@
 ---
 title: Download Pipeline Artifacts task
-description: Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
+description: Download Pipeline Artifacts task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
