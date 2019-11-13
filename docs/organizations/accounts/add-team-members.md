@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 11/13/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -19,12 +19,8 @@ monikerRange: 'azure-devops'
 
 Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Azure DevOps Server, see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
-When you add members to projects, one of the following permissions is automatically assigned:
-
-* [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if you have seats available.
-* [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if you *don't* have available seats.
+When you add members to projects and you don't have billing set up, [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) is automatically assigned, until you run out of seats available.
+When you add members to projects and you do have billing set up, [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) is assigned only if your default access level is set to Basic.
 
 When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
