@@ -9,7 +9,7 @@ ms.custom: "continuous-test, seodec18"
 ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -135,6 +135,19 @@ use the following steps.
      ![DownloadBuildArtifacts](_img/parallel-testing-vstest/download-build-artifacts.png)
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+
+## Setting up jobs for parallel testing in YAML pipelines
+
+Specify the `parallel` strategy in the `job` and indicate how many jobs should be dispatched. You can specify as many as 99 agents to scale up testing for large test suites.
+
+```YAML
+jobs:
+- job: ParallelTesting
+  strategy:
+    parallel: 2
+```
+
+For more information, see [YAML schema - Job](../yaml-schema.md#job).
 
 ## Run tests in parallel in release pipelines
 
