@@ -1,5 +1,5 @@
----
-title: Troubleshoot permissions and access via Azure Active Directory
+﻿---
+title: Troubleshoot permissions and access via AAD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, how to add users, or how to connect to, disconnect from, or switch your directory.

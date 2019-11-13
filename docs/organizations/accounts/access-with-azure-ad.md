@@ -1,5 +1,5 @@
----
-title: Access your organization with Azure Active Directory
+﻿---
+title: Access your organization with AAD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to authenticate users and control access to your organization the same way you can with Microsoft services, like Office 365 and Azure
