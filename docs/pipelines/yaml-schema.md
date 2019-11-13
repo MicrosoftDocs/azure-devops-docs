@@ -1691,11 +1691,14 @@ steps:
   patterns: string # patterns representing files to include; optional
 ```
 ### Artifact download location
-Artifacts from current pipeline are downloaded to `$(Pipeline.Workspace)/`. 
+
+Artifacts from the current pipeline are downloaded to `$(Pipeline.Workspace)/`.
+
 Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
 
 ### Automatic download in deployment jobs
-All the available artifacts from current pipeline as well as from associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However you can choose to not download by specifiying `download: none` 
+
+All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifiying `download: none`.
 
 # [Example](#tab/example)
 
