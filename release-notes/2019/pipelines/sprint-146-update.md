@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines - Sprint 146 Update
+description: See the Sprint 146 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

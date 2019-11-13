@@ -1,5 +1,5 @@
----
-title: View, filter, & add user stories, issues, and bugs from the Work Items hub
+﻿---
+title: View, filter, & add stories, issues, & bugs from Work Items hub
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views   
 ms.custom: "boards-work-items, seodec18"  

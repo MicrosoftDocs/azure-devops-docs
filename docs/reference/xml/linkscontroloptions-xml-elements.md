@@ -1,4 +1,4 @@
----
+﻿---
 title: LinksControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
