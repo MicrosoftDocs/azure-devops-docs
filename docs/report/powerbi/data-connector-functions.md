@@ -1,4 +1,4 @@
----
+﻿---
 title: Connect using Power Query and Azure DevOps functions 
 titleSuffix: Azure DevOps 
 description: Describes the available functions that the Power BI Data Connector and Analytics support for Azure DevOps 
@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.reviewer: stansw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

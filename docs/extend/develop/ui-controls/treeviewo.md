@@ -5,18 +5,20 @@ ms.assetid: 8A32169B-3E9F-688A-B886-0A5627B863E8
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 10/31/2019
 ---
 
 # Use the treeview control
 
 This page shows different samples about the treeview control.
 
-> Go to [API Reference](../../reference/client/controls/tree.md) for more details.
+**Go to [API Reference](../../reference/client/controls/tree.md) for more details.**
+
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 
@@ -94,6 +96,7 @@ Below code works based on **Basic tree** example above. Attaching `selectionchan
 <a name="addremove"></a>
 
 ## Add/remove nodes
+
 Below code works based on **Basic tree** example above. This sample displays how to add nodes to TreeView as well as removing nodes from it.
 
 ``` html
@@ -135,6 +138,7 @@ Below code works based on **Basic tree** example above. This sample displays how
 <a name="setselectednode"></a>
 
 ## Set selected node programmatically
+
 Below code works based on **Basic tree** example above. It enables setting a node selected programmatically.
 
 ```html
@@ -156,6 +160,7 @@ $("#btnSelectedNode").click(function (e) {
 <a name="contextmenu"></a>
 
 ## Context menu
+
 Below code works based on the `source` used in **Basic tree** example above. The sample shows the usage of contextMenu for each node in the treeView. The item associated with the context menu is obtained using `args.get_commandArgument().item` in `menuItemClick` function.
 
 

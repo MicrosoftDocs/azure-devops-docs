@@ -6,8 +6,9 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: fedaecea-cedb-467b-b8f4-03f63420f7b3
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 

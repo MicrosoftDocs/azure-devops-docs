@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 6/30/2019
@@ -1005,6 +1005,10 @@ When you're ready you can publish the draft to merge the changes into your build
 ::: moniker range="<= azure-devops-2019"
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
+
+### How can I delete a pipeline?
+
+To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 
 <a name="queueabuild"></a>
 

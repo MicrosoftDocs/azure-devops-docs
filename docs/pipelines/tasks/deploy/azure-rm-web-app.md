@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: 57D04B69-1068-4A06-80B8-4C0FE7BEEC55
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 4/25/2019
@@ -98,4 +98,4 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 ## Open Source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

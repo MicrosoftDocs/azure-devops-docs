@@ -5,7 +5,7 @@ description: Understand how data is updated and time requirements associated wit
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

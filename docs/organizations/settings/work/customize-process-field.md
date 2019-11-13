@@ -1,4 +1,4 @@
----
+﻿---
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a project
@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -123,6 +123,7 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../_img/icons/delete_icon.png) delete icon.  
 
 	::: moniker range="azure-devops"
+	<a id="edit-picklist-inherited" />
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  

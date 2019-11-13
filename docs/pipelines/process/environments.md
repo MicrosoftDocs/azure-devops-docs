@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 05/03/2019
@@ -75,19 +75,19 @@ It is possible to scope down the target of deployment to a particular resource w
 
 ```YAML
 environment: 'smarthotel-dev.bookings'
-  strategy: 
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: $(imagePullSecret)
-            containers: $(containerRegistry)/$(imageRepository):$(tag)
-            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+strategy: 
+ runOnce:
+   deploy:
+     steps:
+     - task: KubernetesManifest@0
+       displayName: Deploy to Kubernetes cluster
+       inputs:
+         action: deploy
+         namespace: $(k8sNamespace)
+         manifests: $(System.ArtifactsDirectory)/manifests/*
+         imagePullSecrets: $(imagePullSecret)
+         containers: $(containerRegistry)/$(imageRepository):$(tag)
+         # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 <a name="in-run-details"></a>

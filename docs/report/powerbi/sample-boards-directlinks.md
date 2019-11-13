@@ -1,15 +1,15 @@
----
+﻿---
 title: Work Items with Direct Links sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate reports based on Work Items with Direct Links
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/07/2019
 ---

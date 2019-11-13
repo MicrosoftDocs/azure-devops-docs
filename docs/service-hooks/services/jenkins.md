@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and TFS with Jenkins
 description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: phwilson
 author: chasewilson

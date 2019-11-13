@@ -6,11 +6,11 @@ description: Understand the tools that support connecting to Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/29/2019
+ms.date: 10/31/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -81,6 +81,9 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
 - [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 
+> [!IMPORTANT]
+> Starting with Visual Studio 2019, the Team Foundation plug-in for Office is deprecating support for Microsoft Project. Project integration and the TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. However, you can continue to use Microsoft Excel.
+
 ::: moniker-end
 
 ::: moniker range="= azure-devops-2019"
@@ -89,6 +92,10 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 - [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md): By using Project, you can plan projects, schedule tasks, assign resources, and track changes. You have access to additional features, such as a project calendar, Gantt charts, and resource views.
 - [Project Professional](https://www.projectmanager.com/pm/microsoft-project-cs): With Project Professional, project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information.
 - [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md): Illustrate user stories and requirements by using PowerPoint.
+
+> [!TIP]
+> Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
+> ![Check Azure DevOps Office Integration](_img/check-azure-devops-office-integration-code-tools.png)
 
 ::: moniker-end
 
@@ -154,8 +161,8 @@ To learn more, see [Web portal navigation](../project/navigation/index.md).
 
 The following extensions are available and are built and maintained by the Azure DevOps Services product team:
 
-- [Azure Test Plans](../organizations/billing/buy-basic-plus-test-plans.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
-- [Azure Artifacts](../artifacts/sign-up-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
+- [Azure Test Plans](../organizations/billing/buy-basic-access-add-users.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
+- [Azure Artifacts](../artifacts/start-using-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
 - [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   

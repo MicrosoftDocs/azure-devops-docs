@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Resolve errors that occur with an Analytics view and Power BI for Azure DevOps 
 ms.prod: devops
 ms.reviewer: romik
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

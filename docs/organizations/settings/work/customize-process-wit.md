@@ -1,4 +1,4 @@
----
+﻿---
 title: Customize a work item type for an inherited process
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a work item type for a project 
@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

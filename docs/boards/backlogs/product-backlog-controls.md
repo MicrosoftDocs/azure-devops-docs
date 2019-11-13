@@ -1,4 +1,4 @@
----
+﻿---
 title: Use backlog controls to switch views or enable options  
 titleSuffix: Azure Boards 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
@@ -6,7 +6,7 @@ ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

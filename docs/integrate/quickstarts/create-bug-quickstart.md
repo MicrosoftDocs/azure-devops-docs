@@ -5,7 +5,7 @@ ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -20,7 +20,7 @@ Creating a new bug (or any work item) is pretty straight forward. You just need 
 To work on this Quickstart, you'll need the following prerequisites:
 
 * An organization in Azure DevOps Services. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
-* A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
+* A Personal Access Token, [find out how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 ## Create a C# project in Visual Studio

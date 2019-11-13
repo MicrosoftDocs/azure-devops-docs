@@ -22,7 +22,7 @@ The first thing you will notice is that we’ve changed our name. What was Team 
 
 ![New Visual Studio Online site](_img/11_13_02.png)
 
-With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. http://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
+With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. https://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
 
 ![Your profile page](_img/11_13_03.png)
 
@@ -108,12 +108,10 @@ Without Application Insights, “what’s next” decisions are often guesswork.
 
 ### Next Steps
 
-If you are already Visual Studio Online user and want to participate in the limited preview, request an invitation code via the new Application Insights tile on your Visual Studio Online home page. If you aren’t yet a Visual Studio Online user, you can quickly sign up [here](http://go.microsoft.com/fwlink/?LinkId=307137).
+If you are already Visual Studio Online user and want to participate in the limited preview, request an invitation code via the new Application Insights tile on your Visual Studio Online home page. If you aren’t yet a Visual Studio Online user, you can quickly sign up [here](https://go.microsoft.com/fwlink/?LinkId=307137).
 
-As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
+As always we’re eager to hear any feedback on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads) and [Twitter](http://twitter.com/search?q=%23tfservice).
 
 Thanks,
 
 Brian Harry
-
-

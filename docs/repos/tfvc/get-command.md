@@ -5,7 +5,7 @@ description: Get files or folders under TFVC version control using the Get comma
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -78,7 +78,7 @@ Gets (downloads) either the latest version or a specified version of one or more
 </tr>
 <tr>
 <td><p><strong>/remap</strong></p></td>
-<td><p>See <a href="http://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
+<td><p>See <a href="https://go.microsoft.com/fwlink/?LinkId=253390">phkelley&#39;s blog: tf get /remap</a>.</p></td>
 </tr>
 <tr>
 <td><p><strong>/version</strong>:<i>versionspec</i></p></td>

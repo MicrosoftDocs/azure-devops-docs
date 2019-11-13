@@ -5,10 +5,10 @@ title: Develop a web extension for Azure DevOps Services
 description: Tutorial for creating your first web extension for Azure DevOps Services
 ms.assetid: ae82118c-82fa-40ec-9f29-989ce981f566
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: wismythe
-author: willsmythe
+ms.author: apawast
+author: apawast
 ms.date: 05/11/2018
 ---
 
@@ -276,8 +276,8 @@ In order to debug the extension using Visual Studio or Browser Developer Tools a
 This tells Azure DevOps Services to load the extension from your local web server instance (e.g. IISExpress in Visual Studio).
 After changing manifest you need to deploy and install this debugging extension only once.
 
-    >[!NOTE]
-    >You have to run local web server in SSL mode, because Azure DevOps Services demands that web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
+> [!NOTE]
+> You have to run local web server in SSL mode, because Azure DevOps Services demands that web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
 
 
 ## Next steps

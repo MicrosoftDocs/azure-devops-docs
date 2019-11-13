@@ -1,6 +1,4 @@
-- name: Sprints (Scrum) 
-  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: About sprints and Scrum
+- name: About Sprints and Scrum
   href: scrum-overview.md
 - name: Quickstarts
   items:
@@ -25,7 +23,7 @@
     href: task-board.md
   - name: Monitor sprint burndown
     displayname: charts, in-context charts, in context reports, remaining work, scope 
-    href: sprint-burndown.md
+    href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Forecast
     displayname: velocity, sprints, iterations  
     href: forecast.md

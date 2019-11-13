@@ -6,7 +6,7 @@ ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -30,10 +30,11 @@ for these has sufficient permissions to do whatever tasks are required for
 the release. The service account you use for the deployment agents is 
 automatically added to Release Management.
 
-***Tip:*** _As good practice, do not install the deployment agent on the 
-same machine as the Release Management server. If you do install the two on 
-the same machine and you need to upgrade, uninstall the server before you 
-uninstall the deployment agent._ 
+> [!TIP]
+> As good practice, do not install the deployment agent on the 
+> same machine as the Release Management server. If you do install the two on 
+> the same machine and you need to upgrade, uninstall the server before you 
+> uninstall the deployment agent. 
  
 ## Install and configure the Microsoft deployment agent
 
@@ -42,17 +43,18 @@ uninstall the deployment agent._
    where you will install the agent. You must also be a member of the 
    **Release Manager** role in Release Management.
 
-   ***Tip:*** _Do you need to add teammates to the **Release Manager** role 
-   in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
+   > [!TIP]
+   > Do you need to add teammates to the **Release Manager** role 
+   > in Release Management? See [Add users to Release Management](../add-users-and-groups.md).
 
 2. If you have not already downloaded the deployment agent, 
    **[do this now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs)**.
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
@@ -64,8 +66,9 @@ uninstall the deployment agent._
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
 5. Specify the account to run the Microsoft Deployment Agent Windows 
    service and the URL of the Release Management Server. If you use a user 

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 08/15/2019
+ms.date: 09/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -33,7 +33,30 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem).
+::: moniker range=">= tfs-2018"
+
+Make sure your machine has these prerequisites:
+- macOS Sierra (10.12) or higher
+- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+
+These prereqs are required for agent version 2.125.0 and higher.
+
+::: moniker-end
+
+::: moniker range="< tfs-2018"
+
+These prereqs are required for agent version 2.124.0 and below.
+**If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
+
+Make sure your machine has these prerequisites:
+- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
+- Git 2.9.0 or higher (latest version strongly recommended)
+- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+
+::: moniker-end
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](http://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -69,7 +92,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 ### Azure DevOps Server 2019
 
@@ -287,6 +310,9 @@ Command:
 #### Automatic login and lock
 
 Normally, the agent service runs only after the user logs in. If you want the agent service to automatically start when the machine restarts, you can configure the machine to automatically log in and lock on startup. See [Set your Mac to automatically log in during startup - Apple Support](https://support.apple.com/HT201476).
+
+> [!NOTE]
+> For more information, see the [Terminally Geeky: use automatic login more securely](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/) blog. The .plist file mentioned in that blog may no longer be available at the source, but a copy can be found here: [Lifehacker - Make OS X load your desktop before you log in](https://lifehacker.com/5779922/make-os-x-load-your-desktop-before-you-log-in).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 

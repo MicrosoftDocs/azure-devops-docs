@@ -6,7 +6,7 @@ description: Share sprint plan working with Scrum methods
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -15,12 +15,14 @@ ms.date: 2/14/2019
 ---
 
 
-<a id="share" >  </a>
+
 
 # 5. Share your sprint plan
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
  
+<a id="share" >  </a>
+
 Once you've completed your sprint plan, you can easily share it with other members of your team or organization.  This article shows you how to: 
 
 > [!div class="checklist"]   

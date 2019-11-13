@@ -9,4 +9,3 @@ You can now add a feed in another organization associated with your Azure Active
 ### Use the Python Credential Provider (preview) to authenticate pip and twine with Azure Artifacts feeds
 
 You can now install and use the [Python Credential Provider (artifacts-keyring)](https://github.com/microsoft/artifacts-keyring) (currently in preview) to automatically set up authentication to publish or consume Python packages to or from an Azure Artifacts feed. With the credential provider, you don't have to set up any configuration files (pip.ini/pip.conf/.pypirc), you will simply be taken through an authentication flow in your web browser when calling pip or twine for the first time. See more information in [the documentation](https://docs.microsoft.com/azure/devops/artifacts/quickstarts/python-packages?view=azure-devops). 
-

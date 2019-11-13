@@ -7,10 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: kaelli
-ms.reviewer: danhellem
+ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 06/28/2019
 ---
@@ -19,7 +19,11 @@ ms.date: 06/28/2019
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-You can change a project based on the Basic process to use the Agile process. Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
+You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
+
+[!INCLUDE [temp](../_shared/cloud-only-feature.md)]
+
+Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 
 |  Process | Work item types | Workflow |
 |------|---------|---------|
@@ -67,8 +71,8 @@ Reasons you might want to change your process from Basic to Agile:
 
 1. Upon completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
-> [!div class="mx-imgBorder"]  
-> ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Step 3 of 3 of change process dialog](_img/change-process/change-process-basic-to-agile-wizard-choose-agile-complete.png)
 
     Steps to manually update your work items and board settings:
     - Update the column to state mapping for each team Kanban board.

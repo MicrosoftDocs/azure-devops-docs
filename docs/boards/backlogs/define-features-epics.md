@@ -1,12 +1,12 @@
----
-title: Group/organize backlog items - define features and epics
+﻿---
+title: Group/organize backlog items, define features and epics
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -293,6 +293,10 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 
 [!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+
+
+
+[!INCLUDE [temp](../_shared/display-rollup-section.md)]
 
 ## Try this next  
 

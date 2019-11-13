@@ -5,8 +5,9 @@ description: Learn how Azure Pipelines works with your code and tools to automat
 ms.topic: overview
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
-ms.manager: elbatk
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
 ms.date: 07/24/2019
 monikerRange: 'azure-devops'
 ---

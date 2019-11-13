@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: XAML Build Overview | REST API Reference for Team Foundation Server
 description: Work with xaml builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: f92b9363-6b36-4576-98ad-6c2fbf09d536
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

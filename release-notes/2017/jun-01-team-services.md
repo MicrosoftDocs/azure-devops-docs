@@ -80,9 +80,9 @@ Build templates let you create a baseline for users to get started with defining
 
 ```json
 {  "id": "Template1", 
-   "type": "ms.vss-build.template", 
-   "targets": [ "ms.vss-build.templates" ], 
-   "properties": { "name": "Template1" } }
+  "type": "ms.vss-build.template", 
+  "targets": [ "ms.vss-build.templates" ], 
+  "properties": { "name": "Template1" } }
 ```
 
 For the full example, see https://github.com/Microsoft/vsts-extension-samples/tree/master/fabrikam-build-extension.

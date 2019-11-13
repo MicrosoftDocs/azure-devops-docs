@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -67,7 +67,9 @@ Both of these resolve to the `PowerShell@2` task.
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code></td></tr>
 <tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the Powershell script. Ignored when Type is <code>inline</code>.</td></tr>
+<tr><td>Arguments</td><td>Arguments passed to the Powershell script.<br>
+  For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
+  Ignored when Type is <code>inline</code>.</td></tr>
 <tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
 <tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code><a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a></code>.</td></tr>
 <tr>
@@ -81,6 +83,10 @@ Both of these resolve to the `PowerShell@2` task.
 <tr>
 <td>ignoreLASTEXITCODE</td>
 <td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don&#39;t want this behavior, set this to <code>true</code>.</td>
+</tr>
+<tr>
+<td>pwsh</td>
+<td>If <code>true</code>, runs PowerShell Core. Otherwise, runs Windows PowerShell. Defaults to <code>false</code>.</td>
 </tr>
 <tr>
 <td>Environment variables</td>

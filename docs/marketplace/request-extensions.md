@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/18/2019
@@ -71,7 +71,7 @@ Review your requests after the Marketplace sends the request to your Project Col
 
 Your requests appear on the **Extensions** page, **Requested** tab.
 
-    ![Requested extensions page](_shared/_img/requested-extensions-2019.png)
+![Requested extensions page](_shared/_img/requested-extensions-2019.png)
 
 Your Project Collection Administrator can review your request after they get it.
 

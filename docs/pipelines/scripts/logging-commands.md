@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
-ms.date: 07/08/2019
+ms.date: 09/24/2019
 ---
 
 # Logging commands
@@ -19,7 +19,9 @@ They cover actions like creating new [variables](../process/variables.md), marki
 
 The general format for a logging command is:
 
-    ##vso[area.action property1=value;property2=value;...]message
+```
+##vso[area.action property1=value;property2=value;...]message
+```
 
 To invoke a logging command, echo the command via standard output.
 

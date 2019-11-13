@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 02/14/2019
@@ -135,7 +135,9 @@ Here is an example that uses a secret variable named `myGitHubAccessToken` for t
 
 ### Testing on Azure-hosted devices
 
-Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
+Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid. 
+
+[Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
 [!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
 

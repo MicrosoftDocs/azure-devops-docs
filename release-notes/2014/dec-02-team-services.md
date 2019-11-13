@@ -58,7 +58,7 @@ Finally, we’ve heard from many of you that it’s annoying that you can’t sh
 
 ## Release Management Preview as Visual Studio Online service
 
-On November 12, we announced that Release Management is now available as a Visual Studio Online service as a Preview feature. With this, you can now configure [Release Management Update 4 client](http://go.microsoft.com/?linkid=9843000) to connect to a Visual Studio Online account. Once connected, you can and then [set up and manage releases to Azure](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx).
+On November 12, we announced that Release Management is now available as a Visual Studio Online service as a Preview feature. With this, you can now configure [Release Management Update 4 client](https://go.microsoft.com/?linkid=9843000) to connect to a Visual Studio Online account. Once connected, you can and then [set up and manage releases to Azure](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx).
 
 ![Connecting Release Management to a VSO account](_img/12_02_07.png)
 

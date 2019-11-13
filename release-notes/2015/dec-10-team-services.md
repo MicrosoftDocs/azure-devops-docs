@@ -25,7 +25,7 @@ I’m happy to announce that, with our deployment this week, all customers now h
 
 ![Customizing a work item](_img/12_10_01.png)
 
-As many of you know, we’ve been waiting quite a while to get this capability ready for VS Team Services. While we’re excited about this first step, I want to assure you that we’re far from done. Our next steps will include support for pick-list fields, state customization, HTML fields, completely custom work item types, completely custom processes, and more. You can read all about today’s updates in Justin’s [blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/adding-a-custom-field-to-a-work-item.aspx?wa=wsignin1.0).
+As many of you know, we’ve been waiting quite a while to get this capability ready for VS Team Services. While we’re excited about this first step, I want to assure you that we’re far from done. Our next steps will include support for pick-list fields, state customization, HTML fields, completely custom work item types, completely custom processes, and more. You can read all about today’s updates in Justin’s [blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/adding-a-custom-field-to-a-work-item.aspx?wa=wsignin1.0).
 
 ## Work item discussion
 
@@ -76,9 +76,8 @@ We’ve heard from many of you that you’d like to be able to filter your code 
 
 ![Filtering code search results by path](_img/12_10_07.png)
 
-That’s it for Sprint 92. Please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for Sprint 92. Please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 
 Aaron Bjork
-

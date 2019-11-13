@@ -5,7 +5,7 @@ description: Sets up authentication with pip so you can perform pip commands in 
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 08/02/2019
@@ -33,11 +33,11 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 ## Arguments
 
-| Argument                                                                                           | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `artifactFeeds`<br/>My feeds (select below)                                                        | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with pip. |
-| `pythonDownloadServiceConnections`<br/>Feeds from external organizations                           | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-python-download" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#sep-python-download)">pip service connection</a> names from external organizations to authenticate with pip. |
-| `onlyAddExtraIndex`<br/>Don't set primary index URL                                                | (Optional) Boolean value, if set to 'true' will force pip to get distributions from official python registry first. By default, it's `false`  |
+| Argument| Description|
+| --------| -----------|
+| `artifactFeeds`<br/>My feeds| (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with pip. |
+| `pythonDownloadServiceConnections`<br/>Feeds from external organizations| (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-python-download" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#sep-python-download)">pip service connection</a> names from external organizations to authenticate with pip. |
+| `onlyAddExtraIndex`<br/>Don't set primary index URL | (Optional) Boolean value, if set to `true` will force pip to get distributions from official python registry first. By default, it's `false` |
 | [!INCLUDE [temp](../_shared/control-options-arguments.md)] |
 
 ## Examples

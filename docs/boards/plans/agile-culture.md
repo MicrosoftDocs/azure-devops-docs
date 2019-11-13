@@ -1,11 +1,11 @@
----
+﻿---
 title: 7 elements of Agile culture to support autonomy and alignment
 titleSuffix: Azure Boards 
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,5 +1,3 @@
-- name: On-premises XML Process
-  href: index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: On-premises XML process model
   href: ../on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: How-to Guides

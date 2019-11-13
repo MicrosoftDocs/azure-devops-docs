@@ -1,4 +1,4 @@
----
+﻿---
 title: View and configure team velocity based on Analytics data
 titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
@@ -8,7 +8,7 @@ ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 
@@ -167,6 +167,13 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> ![Open Velocity Analytics](_img/velocity/analytics-velocity-azure-devops.png)
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
+
+1. To add the report to a dashboard, choose the ![ ](_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/add-analytics-chart-abbreviated.png) 
+	
+	Select the dashboard and choose **OK**.  
 
 1. To return to the Analytics summary, choose the ![ ](../../_img/icons/back-arrow.png) back arrow.
 

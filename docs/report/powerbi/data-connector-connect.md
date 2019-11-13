@@ -6,7 +6,7 @@ ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

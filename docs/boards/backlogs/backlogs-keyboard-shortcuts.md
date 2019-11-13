@@ -1,12 +1,12 @@
----
-title: Keyboard shortcuts for working with product, portfolio, and sprint backlogs
+﻿---
+title: Keyboard shortcuts for product, portfolio, & sprint backlogs
 titleSuffix: Azure Boards
 description: Use keyboard shortcuts in the web portal product, portfolio, and sprint backlogs 
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

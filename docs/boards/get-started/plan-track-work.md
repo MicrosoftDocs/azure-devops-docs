@@ -1,12 +1,12 @@
----
-title: Quickstart guide to plan and track work for either the Basic or Agile process
+﻿---
+title: Quickstart guide to plan & track work for Basic or Agile process
 titleSuffix: Azure Boards 
 description: Plan and track work in your new team project on Azure Boards
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -21,10 +21,7 @@ ms.date: 08/23/2019
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
-> [!NOTE]  
-> The Basic process is currently only available from Azure DevOps Services. For on-premises deployments, choose the Agile process. 
-
-Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.  
+Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.
 
 [!INCLUDE [temp](../_shared/basic-process-note.md)] 
 
@@ -35,7 +32,7 @@ The Basic process provides three work item types&mdash;epics, issues, and tasks&
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) 
+> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -49,7 +46,7 @@ The Agile process provides several work item types&mdash;for example, user stori
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) 
+> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -75,6 +72,8 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 <a id="define-new-work">  </a>
 
 ## Open the Kanban board 
+
+A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 #### [Basic process](#tab/basic-process) 
 
@@ -464,7 +463,7 @@ In addition to the fields you can define for a user story, you can specify the f
 <tr>
 <td><a href="../queries/query-numeric.md" data-raw-source="[Remaining Work](../queries/query-numeric.md)">Remaining Work</a>
 </td>
-<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../sprints/set-capacity.md" data-raw-source="[capacity charts](../sprints/set-capacity.md)">capacity charts</a>, the <a href="../sprints/sprint-burndown.md" data-raw-source="[sprint burndown chart](../sprints/sprint-burndown.md)">sprint burndown chart</a>. If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p> 
+<td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="../sprints/set-capacity.md" data-raw-source="[capacity charts](../sprints/set-capacity.md)">capacity charts</a>, the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>. If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p> 
 </td> 
 </tr>
 </tbody>

@@ -40,7 +40,7 @@ When a test fails, it’s usually helpful to understand when it last passed, and
 
 ## Preview Markdown and HTML files in Code Explorer
 
-When browsing Markdown files or HTML files in source control, it's often useful to see the rendered contents of those files rather than the raw source code. In this sprint we added the ability to show a preview of those files directly from the **Code Explorer**. Simply browse to any <em>.md file and the contents will be rendered as Markdown; or browse to any <em>.htm or *.html file to see a preview of the file. If you want to see the raw source code, you still can. Simply click on the new **Show raw content</em></em> button on the right of the toolbar.
+When browsing Markdown files or HTML files in source control, it's often useful to see the rendered contents of those files rather than the raw source code. In this sprint we added the ability to show a preview of those files directly from the **Code Explorer**. Simply browse to any \*.md file and the contents will be rendered as Markdown; or browse to any \*.htm or \*.html file to see a preview of the file. If you want to see the raw source code, you still can. Simply click on the new **Show raw content** button on the right of the toolbar.
 
 ![Previewing a markdown file](_img/11_04_05.png)
 

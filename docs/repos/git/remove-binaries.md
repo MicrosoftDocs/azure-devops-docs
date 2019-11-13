@@ -4,8 +4,8 @@ description: Learn how to remove a large binary from your Git history to manage 
 ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
+ms.technology: devops-code-git
+ms.manager: mijacobs
 ms.date: 04/27/2018
 ms.author: edwardf
 author: edwardaf

@@ -1,11 +1,11 @@
----
+﻿---
 title: Get the Eclipse Plug-in for Azure DevOps Services & TFS support
 description: Information and download links for Team Explorer Everywhere for Eclipse
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel
@@ -73,22 +73,22 @@ The latest release of [TEE](https://marketplace.eclipse.org/content/team-explore
 * Contains the TEE plugin for Eclipse, the cross-platform TFVC command-line-client (CLC), and the TFS SDK for Java
 
 ### TEE 2013 (Dev 12 RTM)
-* [Download page for TEE 2013](http://www.microsoft.com/download/details.aspx?id=40785)
+* [Download page for TEE 2013](https://www.microsoft.com/download/details.aspx?id=40785)
 * Released 09/21/2014
 * Contains the TEE plugin for Eclipse, the cross-platform TFVC command-line-client (CLC), and the TFS SDK for Java
 
 ### TEE (Dev 11 RTM)
-* [Download page for TEE Dev 11 RTM](http://www.microsoft.com/download/details.aspx?id=30661)
+* [Download page for TEE Dev 11 RTM](https://www.microsoft.com/download/details.aspx?id=30661)
 * Released 06/26/2013
 * Contains the TEE plugin for Eclipse and the cross-platform TFVC command-line-client (CLC)
 
 ### TEE 2010
-* [Download page for TEE 2010](http://www.microsoft.com/download/details.aspx?id=4240)
+* [Download page for TEE 2010](https://www.microsoft.com/download/details.aspx?id=4240)
 * Released 04/12/2010
 * Contains the Eclipse TEE Plugin and a cross-platform TFVC command-line-client (CLC)
-* [Download page for TEE 2010 SP1](http://www.microsoft.com/download/details.aspx?id=25125)
-* [Download page for TEE 2010 SP1 Language Pack](http://www.microsoft.com/download/details.aspx?id=27118)
-* [Download page for TEE 2010 Power Tools](http://www.microsoft.com/download/confirmation.aspx?id=28557)
+* [Download page for TEE 2010 SP1](https://www.microsoft.com/download/details.aspx?id=25125)
+* [Download page for TEE 2010 SP1 Language Pack](https://www.microsoft.com/download/details.aspx?id=27118)
+* [Download page for TEE 2010 Power Tools](https://www.microsoft.com/download/confirmation.aspx?id=28557)
 
 ## Next Steps 
 * Learn more about TEE from our [Eclipse FAQ](eclipse-faq.md)

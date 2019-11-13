@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b66517e3-85de-4847-82f6-b1b0431d2915
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
 ms.date: 08/28/2019
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 Docker Content Trust (DCT) provides the ability to use digital signatures for data sent to and received from remote Docker registries. These signatures allow client-side or runtime verification of the integrity and publisher of specific image tags.
 
 > [!NOTE]
-> A prerequisite for signing an image is a Docker Registry with a Notary server attached (Such as the [Docker Hub](https://docs.docker.com/engine/security/trust/content_trust/) or [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-content-trust))
+> A prerequisite for signing an image is a Docker Registry with a Notary server attached (Such as the [Docker Hub](https://docs.docker.com/engine/security/trust/content_trust/) or [Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-content-trust))
 
 ## Signing images in Azure Pipelines
 

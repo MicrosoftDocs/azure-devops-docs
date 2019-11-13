@@ -5,16 +5,19 @@ ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure Artifacts in Azure DevOps Services and Azure DevOps Server
+# What is Azure Artifacts? 
 
 [!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+
+With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
+add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  
 
 Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server. It comes pre-installed in Azure DevOps Services, Azure DevOps Server 2019, and Team Foundation Server (TFS) 2017 and 2018.
 
@@ -31,7 +34,7 @@ A note on terminology: you might also have heard feeds called package *repositor
 
 Get up and running with NuGet, npm, and Maven in Azure DevOps Services and TFS in just a few minutes with the [NuGet quickstart](get-started-nuget.md), [npm quickstart](get-started-npm.md), and [Maven quickstart](get-started-maven.md).
 
-If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](license-azure-artifacts.md) in your organization.
+If you haven't used packages before, see the [conceptual introduction](artifacts-key-concepts.md). When you're ready to get started, [learn how to assign Azure Artifacts licenses](start-using-azure-artifacts.md) in your organization.
 
 You can control the amount of packages you retain using Retention Policies in your feed settings. For more information see [automatically deleting old packages](./how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies)
 

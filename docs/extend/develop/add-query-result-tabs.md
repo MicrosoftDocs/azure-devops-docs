@@ -5,7 +5,7 @@ ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -13,6 +13,8 @@ ms.date: 05/15/2018
 ---
 
 # Add tabs on query result pages
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.

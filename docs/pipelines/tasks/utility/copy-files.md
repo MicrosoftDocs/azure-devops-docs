@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -84,6 +84,10 @@ None
 <td>Flatten Folders</td>
 <td>Flatten the folder structure and copy all files into the specified target folder.</td>
 </tr>
+<tr>
+<td>Preserve Target Timestamp</td>
+<td>Using the original source file, preserve the target file timestamp.</td>
+</tr>
 
 
 <tr>
@@ -119,7 +123,8 @@ You want to copy just the readme and the files needed to run this C# console app
         |-- ConsoleApplication1.csproj
 ```
 
-> **Note:** _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
+> [!NOTE]
+> _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
 
 On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 

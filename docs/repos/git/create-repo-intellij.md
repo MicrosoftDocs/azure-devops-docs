@@ -5,7 +5,7 @@ description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

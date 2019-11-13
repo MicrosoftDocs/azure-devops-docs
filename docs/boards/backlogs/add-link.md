@@ -1,4 +1,4 @@
----
+﻿---
 title: Link user stories, issues, bugs, and other work items  
 titleSuffix: Azure Boards
 description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
@@ -6,7 +6,7 @@ ms.custom: seodec18
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -247,9 +247,8 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
      Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
-    <!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
-
-        To expand or collapse a tree view list, choose the + or signs.    
+    <!-- You can change the display of the work items that are listed by using one of the following user interface controls:  
+      To expand or collapse a tree view list, choose the + or signs.    
       To resize a column, point your cursor at the edge of a column header and drag it to a new location.    
       To sort on a column field, choose the column title.    
       To move a column field, choose the column title and drag to another location. -->  

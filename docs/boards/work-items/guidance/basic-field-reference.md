@@ -1,4 +1,4 @@
----
+﻿---
 title: Look up the description of a system or basic work item field 
 titleSuffix: Azure Boards
 description: Index to those fields used in the Basic process for Azure Boards
@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

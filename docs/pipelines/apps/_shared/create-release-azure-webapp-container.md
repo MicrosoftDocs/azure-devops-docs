@@ -39,27 +39,19 @@ ms.topic: include
    - **Startup command**: Start up command for the container.
 
    <!--
-
    1. Open the **Tasks** tab and select the **Stage 1** item.
    Configure the linked settings as follows:
-
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
-
    - **App Service type**: Select **Web App for Containers**.  
-
    - **App Service name**: Select the web app you created earlier from your subscription. App services based on selected app type will only be listed.
-
    When you select the Docker-enabled app type, the task recognizes that it is a
    containerized app, and changes the property settings to show the following:
-
    - **Registry or Namespace**: Enter the path to your Azure Container Registry which is a globally unique top-level domain name for your specific registry or namespace. Typically this is _your-registry-name_**.azurecr.io**
    
    - **Image**: Name of the repository where the container images are stored. 
-
    - **Tag**: Tags are optional, it is the mechanism that registries use to give Docker images a version. A fully qualified image name will be of the format: '/:'. For example, 'myregistry.azurecr.io/nginx:latest'.
-
    - **Startup command**: Start up command for the container.
    -->
    

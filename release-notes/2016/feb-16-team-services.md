@@ -117,20 +117,8 @@ You can now click a work item on the Kanban board and use keyboard shortcut keys
 
 That’s all :-)
 
-As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [User Voice site](http://visualstudio.uservoice.com/forums/330519-vso).
+As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [User Voice site](https://visualstudio.uservoice.com/forums/330519-vso).
 
 Thanks
 
 Anand Kamat
-
-
-
-
-
-
-
-
-
-
-
-

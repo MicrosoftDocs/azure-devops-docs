@@ -5,7 +5,7 @@ description: Create a query by filtering on field values compared to other field
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

@@ -37,13 +37,13 @@ With the new reports you have more control and information about your team. Here
 
 Here is an example of the CFD report showing the flow for the last 30 days of the Stories backlog.
 
-   > [!div class="mx-imgBorder"]
-   > ![Badge](../../_img/155_05.png)
+  > [!div class="mx-imgBorder"]
+  > ![Badge](../../_img/155_05.png)
 
 The Velocity chart can now be tracked for all backlog levels. For example, you can now add both Features and Epics whereas before the previous chart supported only Requirements. Here is an example of a velocity report for the last 6 iterations of the Features backlog.
 
-   > [!div class="mx-imgBorder"]
-   > ![Badge](../../_img/155_06.png)
+  > [!div class="mx-imgBorder"]
+  > ![Badge](../../_img/155_06.png)
 
 ### Azure Boards app for Slack
 

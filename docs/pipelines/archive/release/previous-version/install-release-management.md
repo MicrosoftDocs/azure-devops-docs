@@ -6,7 +6,7 @@ ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -73,9 +73,9 @@ ready to manage releases.
 
   ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
   a non-trial version, see 
-  [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+  [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
   or 
-  [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+  [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
   If you are an MSDN subscriber, you can download a non-trial version from the 
   [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
 

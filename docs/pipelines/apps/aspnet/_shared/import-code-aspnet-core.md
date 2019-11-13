@@ -22,4 +22,4 @@ You've got a few version control options. Some common ones are:
 
   1. Select **Fork** to create your own copy of the repository.
 
-This quickstart works for apps targeting the .Net Core 1.1 or 2.0 frameworks. The sample app is a Visual Studio solution that has two projects: an ASP.NET Core Web Application project and a Unit Test project (both targeting .Net Core 1.1 framework).
+This quickstart works for apps targeting the .NET Core 1.1 or 2.0 frameworks. The sample app is a Visual Studio solution that has two projects: an ASP.NET Core Web Application project and a Unit Test project (both targeting .NET Core 1.1 framework).

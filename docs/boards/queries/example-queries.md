@@ -7,17 +7,23 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/01/2019
+ms.date: 09/26/2019
 ---
 
 
 # About managed queries  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. 
+
+If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
+
+## Use queries
 
 A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
@@ -31,9 +37,11 @@ With queries, you can perform these functions:
 - Create a chart that shows a burndown or burnup over time 
 - View a tree of parent-child related work items 
 
-For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). For specific examples, click  one of the following links.  
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
-## Getting started 
+For specific examples, choose one of the following articles listed under [Example queries](#examples).  
+
+## Get started 
 
 If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
@@ -176,12 +184,18 @@ You can list work items based on the following criteria...
 ## Related articles
 
 - [Query quick reference](query-index-quick-ref.md)
-- [Work item field index](../work-items/guidance/work-item-field.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)  
+- [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
+  
+### Add a custom field to support your queries
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-To learn about query charts and widgets, see these topics:  
+### About query charts and widgets
+
+To learn about query charts and widgets, see these articles:  
 - [Chart a flat-list query](../../report/dashboards/charts.md)   
 - [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget)  
 - [Query results widget](../../report/dashboards/widget-catalog.md#query-results-widget)   
@@ -195,3 +209,4 @@ By default, you query within a single project. However, using the query editor, 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
+

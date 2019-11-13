@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 08/16/209  
+ms.date: 10/03/2019
 ---
 
 # Query by numeric fields    
@@ -66,7 +66,6 @@ Items that are Active or Closed
 <td>
 <code>State <em> In </em> Active,Closed</code><br/></td>
 </tr>
-
 <tr>
 <td>
 Items in the Requirements category 
@@ -217,8 +216,10 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 > The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
-For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
+For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
+
+<a id="fields" />
 
 ## Fields used to estimate and track work
 
@@ -325,10 +326,10 @@ The following table describes the activity-based and numeric fields that you can
 </tbody>
 </table>
 
-**Notes:**
+#### Notes:
 
-1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
 3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
