@@ -1690,6 +1690,12 @@ steps:
   artifact: string # artifact name; optional; downloads all the avaialable artifacts if not specified
   patterns: string # patterns representing files to include; optional
 ```
+### Artifact download location
+Artifacts from current pipeline are downloaded to `$(Pipeline.Workspace)/`. 
+Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
+
+### Automatic download in deployment jobs
+All the available artifacts from current pipeline as well as from associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However you can choose to not download by specifiying `download: none` 
 
 # [Example](#tab/example)
 
@@ -1701,13 +1707,6 @@ steps:
 - download: MyAppA   # downloads artifacts available as part of the pipeline resource
 
 ```
-### Artifact download location
-Artifacts from current pipeline are downloaded to `$(Pipeline.Workspace)/`. 
-Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
-
-### Automatic download in deployment jobs
-All the available artifacts from current pipeline as well as from associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However you can choose to not download by specifiying `download: none` 
-
 ---
 
 Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
