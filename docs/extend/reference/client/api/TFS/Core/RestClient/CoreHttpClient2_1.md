@@ -1,5 +1,6 @@
 ---
 title: TFS/Core/RestClient CoreHttpClient2_1 API | Extensions for Azure DevOps Services
+description: Data representation of a core http client 2_1.
 ms.assetid: 5307889f-f465-c35c-ce00-447872e8f4ff
 ms.prod: devops
 ms.technology: devops-ecosystem

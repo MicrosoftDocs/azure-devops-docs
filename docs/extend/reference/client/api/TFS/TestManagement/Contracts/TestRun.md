@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestRun API | Extensions for Azure DevOps Services
+description: Data representation of a test run.
 ms.assetid: 104b2f37-2962-e94c-8555-5941fdce65f0
 ms.prod: devops
 ms.technology: devops-ecosystem

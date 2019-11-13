@@ -6,7 +6,7 @@ ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
 ms.prod: devops
 ms.technology: devops-code-git
 ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019

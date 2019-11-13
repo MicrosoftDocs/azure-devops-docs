@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestPlan API | Extensions for Azure DevOps Services
+description: Data representation of a test plan.
 ms.assetid: a0c2fddb-19cd-e875-8e86-6b9685937fb2
 ms.prod: devops
 ms.technology: devops-ecosystem
