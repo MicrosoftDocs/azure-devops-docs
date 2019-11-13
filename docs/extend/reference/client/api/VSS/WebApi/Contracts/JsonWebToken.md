@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts JsonWebToken API | Extensions for Azure DevOps Services
+description: Data representation of a JSON web token.
 ms.assetid: ce564ac7-bfef-1768-ebec-def2d9793402
 ms.prod: devops
 ms.technology: devops-ecosystem

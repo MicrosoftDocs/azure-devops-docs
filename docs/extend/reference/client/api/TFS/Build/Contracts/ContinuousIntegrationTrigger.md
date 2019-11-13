@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts ContinuousIntegrationTrigger API | Extensions for Azure DevOps Services
+description: Data representation of a continuous integration trigger.
 ms.assetid: 89b6ae91-8256-6d42-d859-c72fbe21690a
 ms.prod: devops
 ms.technology: devops-ecosystem
