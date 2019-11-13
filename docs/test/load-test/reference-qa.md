@@ -443,7 +443,7 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
+[Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
 and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
