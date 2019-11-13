@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 08/28/2019
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +17,12 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to permanently modify environment variables.
+Use this task in a build or release pipeline to run a Windows .bat or .cmd script.
+Optionally, allow it to permanently modify environment variables.
+
+> [!NOTE]
+> This task is not compatible with Windows containers.
+> If you need to run a batch script on a Windows container, use the [command line task](command-line.md) instead.
 
 ::: moniker range="<= tfs-2018"
 
