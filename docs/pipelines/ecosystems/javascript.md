@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to automatically build and test JavaScript and Node.js apps, and then deploy or publish to targets.
+Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -38,9 +38,23 @@ This guidance explains how to automatically build and test JavaScript and Node.j
 
 ::: moniker-end
 
-Follow these instructions to set up a pipeline for a sample Node app.
-
 ::: moniker range="azure-devops"
+
+### Get the code
+
+Fork this repo in GitHub:
+
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+### Create the pipeline
 
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
