@@ -494,7 +494,7 @@ For tests in your pipeline that require a browser to run (such as the **ng test*
 
 ### React and Vue
 
-All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file should contain the standard Node.js script:
+All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file contains the standard Node.js script:
 
 ::: moniker range="azure-devops"
 
@@ -507,20 +507,36 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The built files are kept in a new folder, `/dist` (for Vue) or `/build` (for React), so add the following task to your *azure-pipelines.yml* file to ready that folder for publication, edited to suit the structure of your build:
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `dist` or `build`, that is ready for release.
 
 ::: moniker range="azure-devops"
 
 ```yaml
-- task: PublishBuildArtifacts@1
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
   inputs:
-    artifactName: dist
-    pathtoPublish: 'dist'
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+  inputs: 
+    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
 ```
 
 ::: moniker-end
 
-Note, you will need to point the Release task to this `/dist` or `/build` folder. Set your built files to be deployed using the `Deploy Azure App Service` task, and edit the Tasks area of this service to set the Package or folder to be deployed to be the file path to your build folder in the Tasks area.
+To release, point your release task to the `dist` or `build` artifact and use the [Azure Web App Deploy task](../targets/webapp.md). 
 
 ### Webpack
 
