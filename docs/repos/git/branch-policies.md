@@ -30,7 +30,7 @@ Policies enforce your team's code quality and change management standards.
 
    ![Branches page](_img/branches/branches-page.png)
 
-1. Select the **...** icon. Select **Branch policies** from the context menu.
+1. Select the **...** button. Select **Branch policies** from the context menu.
 
    ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
 

@@ -8,7 +8,6 @@ To use all the features described in this article, you must have one of the foll
 - [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
-subscription
 
 Or, install [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 available from Visual Studio Marketplace.

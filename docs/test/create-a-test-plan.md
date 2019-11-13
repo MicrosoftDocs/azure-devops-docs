@@ -85,7 +85,7 @@ To create and edit a test artifact, you must have one of the following access le
 
 - [Basic + Test plans](../organizations/security/access-levels.md)
 - [Visual Studio Enterprise](../organizations/security/access-levels.md)
-- [Basic](../organizations/security/access-levels.md) to create and edit test cases, the other types of test artifacts
+- [Basic](../organizations/security/access-levels.md) to create and edit test cases, but not the other types of test artifacts
 
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
@@ -148,7 +148,7 @@ Now add test suites for the backlog items that need manual tests. These tests co
 ## Find a test case in a test plan
 
 In **Test Plans** for your test plan, use the ![filter-icon](_img/create-a-test-plan/filter-icon.png) filter icon (**1**) to show the search and filter lists (**2**) that help you find the tests you want to work with.
-Or filter the list of tests using the **Outcome**, **Tester**, and **Configuration** (**3**).
+Or filter the list of tests using **Outcome**, **Tester**, and **Configuration** (**3**).
 
   ![Finding a test plan](_img/create-a-test-plan/select-test-plan.png)
   
