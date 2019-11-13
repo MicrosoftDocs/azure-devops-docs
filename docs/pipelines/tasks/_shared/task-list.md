@@ -52,7 +52,7 @@ ms.topic: include
 | ![icon](../utility/_img/download-fileshare-artifacts.png) [Download Fileshare Artifacts task](../utility/download-fileshare-artifacts.md) - Download Fileshare Artifacts task for Azure Pipelines and TFS | Azure Pipelines |
 | ![icon](../utility/_img/download-github-release.png) [Download GitHub Release task](../utility/download-github-release.md) - Download assets from your GitHub release as part of your pipeline | Azure Pipelines |
 | ![icon](../utility/_img/downloadpackage.png) [Download Package task](../utility/download-package.md) - Download a package from a Package Management feed in Azure Artifacts or TFS. | Azure Pipelines |
-| ![icon](../utility/_img/download-pipeline-artifact.png) [Download Pipeline Artifact task](../utility/download-pipeline-artifact.md) - Download Pipeline Artifact task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline | Azure Pipelines |
+| ![icon](../utility/_img/download-pipeline-artifact.png) [Download Pipeline Artifacts task](../utility/download-pipeline-artifact.md) - Download Pipeline Artifacts task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline | Azure Pipelines |
 | ![icon](../utility/_img/download-secure-file.png) [Download Secure File task](../utility/download-secure-file.md) - Download a secure file to a temporary location on the build or release agent in | Azure Pipelines |
 | ![icon](../utility/_img/extract-files.png) [Extract Files task](../utility/extract-files.md) - Extract files from archives to a target folder using minimatch patterns on  (TFS) | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/_img/file-transform.png) [File Transform task](../utility/file-transform.md) - Apply configuration file transformations and variable substitution to a target package or folder | Azure Pipelines, Azure DevOps Server 2019 |
@@ -107,6 +107,7 @@ ms.topic: include
 | ![icon](../package/_img/pypi-publisher.png) [PyPI Publisher task (Deprecated)](../package/pypi-publisher.md) - How to upload a package to PyPI when building code | Azure Pipelines |
 | ![icon](../package/_img/pip-authenticate.png) [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
 | ![icon](../package/_img/twine-authenticate.png) [Python Twine Upload Authenticate](../package/twine-authenticate.md) - Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. | Azure Pipelines |
+| ![icon](../package/_img/universal-packages.png) [Universal Package, download and publish task](../package/universal-packages.md) - Learn all about how you can make use of NuGet packages when you are building code | Azure Pipelines, TFS 2018 and newer |
 
 ## Deploy
 
@@ -114,7 +115,8 @@ ms.topic: include
 |--------|-----------|
 | ![icon](../deploy/_img/appcenterdistribute.png) [App Center Distribute task](../deploy/app-center-distribute.md) - Distribute app builds to testers and users through App Center | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../deploy/_img/azurermwebappdeployment.png) [Azure App Service Deploy task](../deploy/azure-rm-web-app-deployment.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines, Azure DevOps Server 2019 |
-| ![icon](../deploy/_img/azureappservicemanage.png) [Azure App Service Manage task](../deploy/azure-app-service-manage.md) - Start, Stop, Restart, Slot swap, Install site extensions, or Enable Continuous Monitoring for an Azure App Service | Azure Pipelines |
+| ![icon](../deploy/_img/azureappservicemanage.png) [Azure App Service Manage task](../deploy/azure-app-service-manage.md) - Start, Stop, Restart, Slot swap, Swap with Preview, Install site extensions, or Enable Continuous Monitoring for an Azure App Service | Azure Pipelines |
+| ![icon](../deploy/_img/azure-app-service-settings.png) [Azure App Service Settings task](../deploy/azure-app-service-settings.md) - Azure App Service Settings Task supports configuring App settings, connection strings and other general settings in bulk using JSON syntax on your web app or any of its deployment slots. | Azure Pipelines |
 | ![icon](../deploy/_img/azure-cli-icon.png) [Azure CLI task](../deploy/azure-cli.md) - build task to run a shell or batch script containing Microsoft Azure CLI commands | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../deploy/_img/azurecloudpowershelldeployment.png) [Azure Cloud Service Deployment task](../deploy/azure-cloud-powershell-deployment.md) - Deploy an Azure Cloud Service | Azure Pipelines |
 | ![icon](../deploy/_img/azuremysqldeployment.png) [Azure Database for Mysql Deployment task](../deploy/azure-mysql-deployment.md) - Run your scripts and make changes to your Azure DB for Mysql. | Azure Pipelines |

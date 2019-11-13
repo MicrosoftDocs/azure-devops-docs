@@ -1,4 +1,4 @@
----
+﻿---
 title: Manage field mappings for TFS-Project Server integration
 titleSuffix: TFS 
 description: Modify how fields are mapped and synchronized to support Team Foundation Server-Project Server integration 
