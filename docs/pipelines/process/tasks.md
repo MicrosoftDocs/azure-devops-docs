@@ -122,7 +122,7 @@ Control options are available as keys on the `task` section.
 The timeout period begins when the task starts running. It does not include the
 time the task is queued or is waiting for an agent.
 
-In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() expression](expressions.md#succeededorfailed).
+In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
 
 ```yaml
 steps:
