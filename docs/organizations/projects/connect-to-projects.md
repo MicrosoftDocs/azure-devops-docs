@@ -1,5 +1,5 @@
----
-title: Connect to a project from a web browser or supported client in Azure DevOps
+﻿---
+title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
 ms.technology: devops-new-user

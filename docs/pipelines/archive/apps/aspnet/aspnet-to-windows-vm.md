@@ -1,6 +1,6 @@
----
-title: Quick Start - Build and Deploy a ASP.NET app | Azure Pipelines
-description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
+﻿---
+title: Build and Deploy a ASP.NET app|title: Build and Deploy a ASP.NET app
+description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure usingtitle: Build and Deploy a ASP.NET app
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ASP.NET apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET app
 to a Windows virtual machine in Azure.
-You create the virtual machine using Azure Powershell, and then you set up CI/CD in Azure Pipelines. In the CI pipeline, you build the app using MSBuild and run tests using VSTest.
+You create the virtual machine using Azure Powershell, and then you set up CI/CD intitle: Build and Deploy a ASP.NET app. In the CI pipeline, you build the app using MSBuild and run tests using VSTest.
 
 ![Screenshot showing ASP.NET web app](_img/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
