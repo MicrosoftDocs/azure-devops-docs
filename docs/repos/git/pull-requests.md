@@ -111,7 +111,7 @@ Create a pull request directly from a work item linked to the branch.
 1. From **Backlogs** or **Queries** in the **Work** view, open the work item with the linked branch.
 1. In the **Development** area of the work item, select **Create a pull request**.
 
-![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](_img/pull-requests/create-pr-from-work-item.png)
+   ![Creating Pull Requests from the Development area of a Work Item with a Linked Branch](_img/pull-requests/create-pr-from-work-item.png)
 
 The link takes you to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
@@ -134,7 +134,7 @@ Initiate pull requests directly from Visual Studio.
 
 1. Select **View** > **Team Explorer** to open Team Explorer. You can also select Ctrl+\ then Ctrl+m.
 
-1. Select **Home** then choose **Pull Requests**.
+1. Select **Home**, then choose **Pull Requests**.
 
    ![Pull Requests](_img/pull-requests/pull-requests.png)
 
@@ -359,7 +359,7 @@ You can select and view changes made in commits on the branch in **Commits**.
 ### Leave comments
 
 Add comments to the pull request to make suggestions, reply to previous comments, and point out problems with the proposed changes.
-Comment inline in the **Files** tab in your pull request by selecting the comment button. ![Comment button in a pull request](./_img/pull-requests/pr_comment_icon.png).
+Comment inline in the **Files** tab in your pull request by selecting the comment button. ![Comment button in a pull request](./_img/pull-requests/pr_comment_icon.png)
 Leave feedback not tied to a specific code change by commenting in **Overview**.
 Reply directly to the author or other reviewers by using `@username` and reference work items using `#workitemID` in your comments. You can also reference other pull requests using `!pullrequestID`.
 
@@ -436,7 +436,7 @@ For most teams, nearly all pull requests target the same branch, such as `master
    - **Squash changes when merging** to [squash merge](merging-with-squash.md) your pull request.
    - **Override branch policies and enable merge** to force a branch to merge even if it doesn't satisfy all branch policies. This option is only available if you have [Exempt from policy enforcement](branch-policies.md#bypass-branch-policies) permissions.
 
-1. Select Complete merge.
+1. Select **Complete merge**.
 
 Linked work items are also updated showing the pull request completion.
 

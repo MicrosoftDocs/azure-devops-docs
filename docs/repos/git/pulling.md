@@ -205,7 +205,7 @@ To merge the latest changes from the master branch to your branch:
 
    ![Commit merge from master](_img/pulling/commit-merge-from-master.png)
 
-When you're ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the **Synchronization** view.
+1. When you're ready to push your local commits, including your new merge commit, to the remote server, choose **Push** from the **Synchronization** view.
 
    ![Push](_img/pulling/merge-from-master-push.png)
 

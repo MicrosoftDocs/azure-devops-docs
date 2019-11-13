@@ -47,7 +47,7 @@ This URL represents the source of the repo you're going to copy.
 
 If you're using Azure Repos or Azure DevOps Server, you can find this clone URL in the web portal.
 
-1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos** then **Files**.
+1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, then **Files**.
 
    ![Repos files](../get-started/_img/clone-repo/repos-files.png)
 

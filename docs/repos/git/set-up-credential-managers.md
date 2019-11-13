@@ -22,7 +22,7 @@ Azure Repos provides IDE support for Microsoft account and Azure AD authenticati
 
 - [Team Explorer in Visual Studio](../../organizations/projects/connect-to-projects.md)
 - [IntelliJ and Android Studio with the Azure Repos Plugin for IntelliJ](/azure/devops/java/download-intellij-plug-in)
-- [Eclipse (with the Team Explorer Everywhere plug-in)](https://github.com/Microsoft/team-explorer-everywhere)
+- [Eclipse with the Team Explorer Everywhere plug-in](https://github.com/Microsoft/team-explorer-everywhere)
 
 If your environment doesn't have an integration available, configure your IDE with a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) or [SSH](use-ssh-keys-to-authenticate.md) to connect to your repositories.
 
@@ -38,6 +38,7 @@ Download and run the latest [Git for Windows installer](https://git-scm.com/down
 
 We recommend [using SSH keys](use-ssh-keys-to-authenticate.md) to authenticate to Azure Repos, not a credential manager.
 
+> [!TIP]
 > Review the [system and software requirements](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md#system-requirements) before installing the credential manager.
 
 On macOS and Linux, there are [several install options](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md) that use native package managers to install the credential manager. After installing the package for your platform, run the following command to configure Git to use the credential manager:

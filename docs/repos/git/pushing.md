@@ -37,7 +37,7 @@ In this tutorial you learn how to:
 ## Share your code with push
 
 #### [Visual Studio](#tab/visual-studio/)
-1. Open the **Synchronization** view in Team Explorer. Select **Home** and then choose **Sync**. 
+1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
    ![Synchronization](_img/gitquickstart-vs2017/sync.png)
 
