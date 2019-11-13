@@ -519,7 +519,7 @@ macOS/Linux:
 ```
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
-https://azure.microsoft.com/en-us/support/devops/
+
 [Get subscription, billing, and technical support](https://azure.microsoft.com/support/devops/)
 
 Report any problems on [Developer Community](https://developercommunity.visualstudio.com/).
