@@ -136,6 +136,8 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
+::: moniker range="> azure-devops-2019"
+
 ## Setting up jobs for parallel testing in YAML pipelines
 
 Specify the `parallel` strategy in the `job` and indicate how many jobs should be dispatched. You can specify as many as 99 agents to scale up testing for large test suites.
@@ -148,6 +150,8 @@ jobs:
 ```
 
 For more information, see [YAML schema - Job](../yaml-schema.md#job).
+
+::: moniker-end
 
 ## Run tests in parallel in release pipelines
 
