@@ -36,15 +36,15 @@ Usage content and drill-in experiences are designed to support two main scenario
 
 1. Daily review of activity, adoption and interaction.
 
-The four controls under Usage analytics show counts over 24 hours, and the trend in comparison to the previous 24 hours. Clicking these controls provides more detail:
+    The four controls under Usage analytics show counts over 24 hours, and the trend in comparison to the previous 24 hours. Clicking these controls provides more detail:
 
-![Daily activity review: usage analytics control panel](_img/4_22_03.png)
+    ![Daily activity review: usage analytics control panel](_img/4_22_03.png)
 
 2. Deeper analysis of activity and trends over a longer time period (7 days default). From the Overview blade, click Usage:
 
-![Accessing usage analytics for longer time periods](_img/4_22_04.png)
+    ![Accessing usage analytics for longer time periods](_img/4_22_04.png)
 
-	This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
+  This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 
 ## Usage Reports Calculation for Daily Active Users
 
@@ -53,10 +53,8 @@ A new calculation for Daily Active Users (DAU) has been added to the usage repor
 
 ## Feedback please!
 
-That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](http://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+That’s a wrap for Sprint 81. Next update immediately after [Build 2015](http://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](https://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
 
 Thanks,
 
 David Lubash
-
-

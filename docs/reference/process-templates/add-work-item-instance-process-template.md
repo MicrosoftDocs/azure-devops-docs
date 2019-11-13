@@ -5,8 +5,9 @@ description: Define work items that act as reminders for each project manager to
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7cc17cb2-d854-469b-b45f-060e94baca71
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019' 
 ms.date: 04/13/2017

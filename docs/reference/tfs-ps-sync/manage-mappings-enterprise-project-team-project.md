@@ -1,11 +1,11 @@
----
+﻿---
 title: Manage mappings between an enterprise project and a  project
 titleSuffix: TFS 
 description: Manage mappings between an enterprise project and a project to support Team Foundation Server & Project Server integration
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05c10281-e873-43ea-80a3-23050438c379
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -65,7 +65,7 @@ TfsAdmin ProjectServer /UnmapPlanFromTeamProject /collection:tpcUrl /enterpriseP
 |**/enterpriseProject**:`EnterpriseProjectName`|Specifies the name of an enterprise project plan. The plan must be stored and published on Project Server, and the instance of PWA must be registered with the deployment of Team Foundation Server where the project collection is stored.|  
 |**/teamProject:** *TeamProjectName*|Specifies the name of a project that is defined in the project collection.|  
 |**/workItemTypes**:`ListOfWorkItemTypes`|Specifies, in a comma-delimited list, the reference names of one or more types of work items. You should specify only those types of work items whose data you want to track in Project Professional. For example, you can specify the following types of work item to support an Agile process as *"User Story,Task"* or *"User Story",Task* Do not include a space after the comma.|  
-|**/noFixedWork**|Specifies that the task type in Project Professional should not be automatically set to Fixed Work for tasks that are mapped to work items in Team Foundation. By default, as part of the integration between the two server products, tasks in the enterprise project plan that are mapped to work items in Team Foundation have their task type set to **Fixed Work**. You can override this behavior by using this switch. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](http://go.microsoft.com/fwlink/?LinkId=203354).|  
+|**/noFixedWork**|Specifies that the task type in Project Professional should not be automatically set to Fixed Work for tasks that are mapped to work items in Team Foundation. By default, as part of the integration between the two server products, tasks in the enterprise project plan that are mapped to work items in Team Foundation have their task type set to **Fixed Work**. You can override this behavior by using this switch. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
 |**/projectFieldForWorkItemType**: `ProjectFieldName`|Specifies the name of the Microsoft Project field in which to display the value for the work item type that is defined in Team Foundation. You should specify a value between pjTaskText1 and pjTaskText30. By default, the value is pjTaskText30.|  
 |**/force**|Removes all mappings for all work items that are defined in the project and currently linked to a project plan. An unmapped project cannot contain any linked work items. You should specify this option only if you are sure that you no longer want any work items in the project to continue to participate in data synchronization.|  
 |**/skipUIChanges**|Specifies that the **Project Server** tab in the work item form should not be changed for the types that you specify. You should include this flag if you have customized the **Project Server** tab for the affected types.|  

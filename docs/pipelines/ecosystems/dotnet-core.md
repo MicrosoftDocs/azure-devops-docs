@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
 ms.reviewer: vijayma
-ms.date: 5/5/2019
+ms.date: 10/17/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -131,15 +131,29 @@ See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
 
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file:
+If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x, add this snippet:
 
 ```yaml
-# do this before all your .NET Core tasks
+ steps:
+    - task: UseDotNet@2
+      inputs:
+        version: '3.0.x'
+
+    - task: UseDotNet@2
+      inputs:
+        version: '2.2.x'
+        packageType: runtime
+```
+
+If you are installing on a Windows agent, it will already have a .NET Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true` in this snippet: 
+
+```yaml
 steps:
-- task: DotNetCoreInstaller@0
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
   inputs:
-    version: '2.1.300' # replace this value with the version that you need for your project
-# ...
+    version: 3.0.x
+    performMultiLevelLookup: true
 ```
 
 > [!TIP]
@@ -215,14 +229,7 @@ you get the benefit of using the package cache.
 
 ::: moniker range="azure-devops"  
 
-To restore packages, use the `dotnet restore` command:
-
-```yaml
-steps:
-- script: dotnet restore
-```
-
-Or to restore packages from a custom feed, use the **.NET Core** task:
+To restore packages from a custom feed, use the **.NET Core** task:
 
 ```yaml
 # do this before your build tasks
@@ -407,10 +414,40 @@ steps:
 
 ::: moniker-end
 
-> [!TIP]
-> If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
-> Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
+### Collect code coverage metrics with Coverlet
+If you're building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+
+Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
+
+To run tests and publish code coverage with Coverlet, add this snippet to your `azure-pipelines.yml` file:
+
+```yaml
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: Refit.Tests/Refit.Tests.csproj
+    arguments: -c $(BuildConfiguration) --settings $(System.DefaultWorkingDirectory)/CodeCoverage.runsettings --collect:"XPlat Code Coverage" -- RunConfiguration.DisableAppDomain=true
+  displayName: Run Tests
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: custom
+    custom: tool
+    arguments: install --tool-path . dotnet-reportgenerator-globaltool
+  displayName: Install ReportGenerator tool
+  
+- script: reportgenerator -reports:$(Agent.TempDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/coverlet/reports -reporttypes:"Cobertura"
+  displayName: Create reports
+  
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: $(Build.SourcesDirectory)/coverlet/reports/Cobertura.xml  
+
+```
+ 
 ## Package and deliver your code
 
 After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package, 
@@ -443,6 +480,10 @@ steps:
     artifactName: 'myWebsiteName'
 
 ```
+
+> [!NOTE]
+> The `dotNetCoreCLI@2` task has a `publishWebProjects` input that is set to **true** by default. This publishes _all_ web projects in your repo by default. You can find more help and information in the [open source task on GitHub](https://github.com/microsoft/azure-pipelines-tasks).
+
 To copy additional files to Build directory before publishing, use [Utility: copy files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
@@ -454,6 +495,9 @@ steps:
 # ...
 # do this near the end of your pipeline in most cases
 - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+- task: NuGetAuthenticate@0
+  input:
+    nuGetServiceConnections: '<Name of the NuGet service connection>'
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -463,7 +507,7 @@ steps:
     versionEnvVar: version
 ```
 
-For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).
+For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  
 
 ### Deploy a web app
 
@@ -554,7 +598,7 @@ of the .NET Core SDK that's used in your build.
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
 
 ### Where can I learn more about .NET Core commands?
 

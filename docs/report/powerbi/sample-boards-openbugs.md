@@ -5,11 +5,11 @@ description: How-to guide to generate an open bugs Power BI report
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
-ms.topic: tutorial
+ms.topic: sample
 monikerRange: '>= azure-devops-2019'
 ms.date: 08/07/2019
 ---

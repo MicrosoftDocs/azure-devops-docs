@@ -1,4 +1,4 @@
----
+﻿---
 title: Describes work item fields, attributes and how to list them
 titleSuffix: Azure Boards
 description: Understand how fields are defined and modified 
@@ -6,7 +6,7 @@ ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -8,8 +8,10 @@
       href: quickstarts/work-item-quickstart.md
 - name: Samples
   items:
-    - name: Samples
+    - name: .NET
       href: get-started/client-libraries/samples.md
+    - name: .NET (Legacy)
+      href: get-started/client-libraries/soapSamples.md
 - name: Concepts
   items:
     - name: Best practices
@@ -33,7 +35,7 @@
 - name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: get-started/authentication/pats.md
+      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
     - name: Authenticate with OAuth 2.0
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically

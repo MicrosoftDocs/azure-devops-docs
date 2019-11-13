@@ -56,4 +56,3 @@ You can now hide custom fields from the form layout when customizing your proces
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/154_29.png "Hide a custom field from a work item layout")
-

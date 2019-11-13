@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 10/07/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -121,12 +121,12 @@ Don't forget to arrange the emulator parameters to fit your testing environment.
 #!/usr/bin/env bash
 
 # Install AVD files
-# echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
+echo "y" | $ANDROID_HOME/tools/bin/sdkmanager --install 'system-images;android-27;google_apis;x86'
 
 # Create emulator
 echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd -n xamarin_android_emulator -k 'system-images;android-27;google_apis;x86' --force
 
-echo $ANDROID_HOME/emulator/emulator -list-avds
+$ANDROID_HOME/emulator/emulator -list-avds
 
 echo "Starting emulator"
 
@@ -142,6 +142,8 @@ echo "Emulator started"
 ## Test on Azure-hosted devices
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
+
+[Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
 ::: moniker range="> tfs-2018"
 

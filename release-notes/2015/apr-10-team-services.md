@@ -18,7 +18,8 @@ The first thing I’ll highlight is that you now have configuration options for 
 
 ![Card configuration options](_img/4_10_01.png)
 
-**Note:** The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
+> [!NOTE]
+> The option to show tags on your cards is only available on Kanban boards. We'll be turning this feature on for Taskboards in our next deployment.
 
 ![Card configuration options dialog](_img/4_10_02.png)
 
@@ -43,17 +44,10 @@ This sprint we also made a change to the code history hub by introducing a new v
 
 ## Cloud load testing support for 100 cores
 
-Finally, we enabled last week [support for up to 100 cores](http://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
+Finally, we enabled last week [support for up to 100 cores](https://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
 
 If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
 
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

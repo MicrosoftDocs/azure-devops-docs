@@ -6,7 +6,7 @@ ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -17,10 +17,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
-**NOTE**: Release Management has now been combined with the Build features
-of Azure Pipelines and Team Foundation Server (TFS) in the new 
-**Pipelines** hub. For details of new features and changes, see
-[Team Foundation Build and Release release notes](2017.md).
+> [!NOTE]
+> Release Management has now been combined with the Build features
+> of Azure Pipelines and Team Foundation Server (TFS) in the new 
+> **Pipelines** hub. For details of new features and changes, see
+> [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -660,7 +661,7 @@ to help you easily integrate your applications with
 Release Management. The SDK is available as a
 [NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/).
 Example usage for this SDK can be found
-[here](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
+[here](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
 
 <a name="update-apr26-16"></a>
 ### Apr 26, 2016 Update (Azure Pipelines)
@@ -691,8 +692,9 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-_**NOTE**: This feature is being rolled out over time to all regions;
-therefore, it may not yet be available in your region._
+> [!NOTE]
+> This feature is being rolled out over time to all regions;
+> therefore, it may not yet be available in your region.
 
 <a name="apr26-tfsonprem"></a>
 **TFVC and TF Git as artifact sources**
@@ -730,7 +732,7 @@ deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
-[this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+[this blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 <a name="apr26-import"></a>
 **Import, export, and clone release pipelines**

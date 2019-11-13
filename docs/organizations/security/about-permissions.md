@@ -7,11 +7,11 @@ ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 11/01/2019
 ---
 
 # About permissions and groups
@@ -67,6 +67,22 @@ that has the permission explicitly set.
 
 To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+> [!div class="mx-imgBorder"]  
+> ![Permissions, Why link](_img/view-permissions/about-permissions-information-preview.png)
+
+A new dialog opens that shows the inheritance information for that permission.  
+
+::: moniker-end
+
+#### [Current page](#tab/current-page) 
+
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
@@ -75,6 +91,9 @@ To understand why a permission is inherited, you can pause over a permission set
 A new window opens that shows the inheritance information for that permission.  
 
 ![Permissions trace dialog](_img/about-permissions-trace.png)
+
+
+* * *
 
 ::: moniker-end
 

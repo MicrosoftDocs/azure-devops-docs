@@ -5,10 +5,10 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
-ms.date: 05/17/2019
+ms.date: 10/21/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -415,7 +415,7 @@ trigger:
 
 You can opt-out of CI builds either by [disabling the CI trigger](#disabling-the-ci-trigger), or by [skipping CI builds for individual commits](#skipping-ci-for-individual-commits)).
 
-You can also override the YAML CI trigger in the classic editor and disable it there. For more information, see [Overriding YAML triggers](#overriding-yaml-triggers).
+You can also override the YAML CI trigger in the pipeline editor and disable it there. For more information, see [Overriding YAML triggers](#overriding-yaml-triggers).
 
 #### Disabling the CI trigger
 
@@ -470,7 +470,7 @@ Pull request (PR) triggers cause a build to run whenever a pull request is opene
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
+> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in pipelines settings by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
@@ -643,7 +643,7 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 ### Overriding YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the classic editor, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
+PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
 ![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
@@ -728,7 +728,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
   - Contained in the same GitHub organization as the Git repo specified above.
 
-  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. 
+    - For example, this one would be checked out: `git submodule add ../../submodule.git mymodule` 
+	- This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
 
 
 #### Authenticated submodules

@@ -1,6 +1,6 @@
-- name: Azure DevOps Marketplace & Extensibility Documentation
-  href: index.md
-- name: Discover & Manage Extensions
+- name: Marketplace & extensibility
+  href: index.yml
+- name: Discover & manage extensions
   href: ../marketplace/toc.yml
 - name: Develop extensions
   href: ../extend/toc.yml 
@@ -40,3 +40,7 @@
     href: /azure/devops/organizations/index
   - name: Build Visual Studio extensions
     href: /visualstudio/extensibility/shipping-visual-studio-extensions
+  - name: Build apps for Windows
+    href: /windows/apps/
+  - name: Mobile application development in Microsoft
+    href: /azure/mobile-apps/

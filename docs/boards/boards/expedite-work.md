@@ -1,4 +1,4 @@
----
+﻿---
 title: Expedite work with swimlanes, use swimlanes to differentiate work items on your Kanban board
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
@@ -7,8 +7,9 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 03/15/2019

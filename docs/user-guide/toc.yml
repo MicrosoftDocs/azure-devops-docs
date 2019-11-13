@@ -60,6 +60,10 @@
   items:
   - name: Sign in to the web or a client
     href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+- name: Reference
+  items:
+  - name: Features index
+    href: alm-devops-features.md
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection

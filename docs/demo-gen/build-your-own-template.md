@@ -3,7 +3,7 @@ title: Build an Azure DevOps Demo Generator template
 description: Learn to build a template for the Azure DevOps Services Demo Generator
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sraj
 author: hsachinraj
 ms.topic: conceptual

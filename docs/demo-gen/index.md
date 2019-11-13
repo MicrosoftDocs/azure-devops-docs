@@ -3,7 +3,7 @@ title: What is the Azure DevOps Services Demo Generator?
 description: About the Azure DevOps Services Demo Generator V2
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 ms.topic: conceptual
 monikerRange: 'azure-devops'

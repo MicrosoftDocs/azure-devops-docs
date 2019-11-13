@@ -5,7 +5,7 @@ ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -47,7 +47,7 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 * [Voluntary stakeholder feedback using the Test &amp; Feedback extension](voluntary-stakeholder-feedback.md#voluntary)
 * [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
 

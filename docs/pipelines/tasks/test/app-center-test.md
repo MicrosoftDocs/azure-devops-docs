@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AD5CD22A-BE4E-48BB-ADCE-181A32432DA5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -18,7 +18,8 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
 
 This task lets you run test suites against an application binary (`.apk` or `.ipa` file) using App Center Test.
-For details about using this task, see the App Center documentation topic [Using Azure DevOps for UI Testing](https://docs.microsoft.com/appcenter/test-cloud/vsts-plugin).
+- [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+- For details about using this task, see the App Center documentation article [Using Azure DevOps for UI Testing](/appcenter/test-cloud/vsts-plugin).
 
 ::: moniker range="<= tfs-2018"
 

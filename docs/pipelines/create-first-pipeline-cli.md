@@ -1,4 +1,4 @@
----
+﻿---
 title: Create your first pipeline using the Azure CLI
 ms.custom: seodec18
 description: Create your first pipeline in Azure Pipelines, Azure DevOps
@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: geverghe
 author: geverghe
 ms.date: 6/30/2019
@@ -40,7 +40,7 @@ You can use Azure Pipelines to build an app written in any language. For this qu
     After you've forked it, clone it to your dev machine. 
     Learn how: [Fork a repo](https://help.github.com/en/articles/fork-a-repo).
 
-1. Navigtate to the cloned directory.
+1. Navigate to the cloned directory.
 
 1. Create a new pipeline:
 

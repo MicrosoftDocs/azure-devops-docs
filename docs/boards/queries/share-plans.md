@@ -1,4 +1,4 @@
----
+﻿---
 title: Share information in work items and social tools 
 titleSuffix: Azure Boards 
 description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

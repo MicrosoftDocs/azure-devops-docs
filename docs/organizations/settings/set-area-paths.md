@@ -5,7 +5,7 @@ description: Group work items based on team, product, or feature area by definin
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -21,7 +21,7 @@ ms.date: 08/01/2019
 You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.
 
 > [!NOTE] 
-> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes) or the Azure DevOps CLI commands, [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration) and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes), or the Azure DevOps CLI commands and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
 
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards.
 
@@ -90,12 +90,12 @@ As needed, you can do the following actions at any time:
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**.
 
-1. From the web portal, open <strong>Project Settings</strong>.
+1. From the web portal, open <strong>Project settings</strong>.
 
-1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.
+2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Work>Project Configuration](_img/areas/open-project-work-areas-settings-vert.png)   
+    > ![Project Settings>Project Configuration](_img/areas/open-project-work-areas-settings-vert.png)   
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 <a id="list-areas" /> 
 
-You can list the area paths defined for a project using [az boards area project list](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can list the area paths defined for a project using [az boards area project list](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -243,7 +243,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 <a id="add-area" /> 
 
-You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -308,21 +308,21 @@ From a web browser, open the web portal administrative context for your team.
 
 ::: moniker range=">= azure-devops-2019"  
 
-You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
-   Here we open the Board for the Web team and from there the team profile. 
+   Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
    > [!div class="mx-imgBorder"]  
    > ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)  
 
-1. Choose **Iterations and areas**. 
+2. Choose **Iterations and areas**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Team Profile, choose Iterations and area](_img/team-defaults/team-profile-choose-iterations-areas.png)   
 
-2. If you need to switch the team context, use the team selector within the breadcrumbs.
+3. If you need to switch the team context, use the team selector within the breadcrumbs.
 
     > [!div class="mx-imgBorder"]  
     > ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
@@ -344,7 +344,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 <a id="list-team-area-paths" /> 
 
-You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md).  
+You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -401,12 +401,12 @@ The default area path determines the default area path assigned to work items th
 
 1. Open **Areas** for the team context.  
 
-   Here, we show the Areas for the Web team.  
+   Here, we show the Areas for the Fabrikam Fiber team.  
 
    > [!div class="mx-imgBorder"]
-   > ![Area page for team](_img/team-defaults/open-areas-web-team.png)
+   > ![Area page for team](_img/team-defaults/open-areas-fabrikam-team.png)
 
-1. Choose the area path(s) to be active for each team.  
+2. Choose the area path(s) to be active for each team.  
 
     > [!div class="mx-imgBorder"]
     > ![Work, Iterations page for team](_img/team-defaults/stdefaults-add-area-paths.png)  
@@ -426,13 +426,13 @@ The default area path determines the default area path assigned to work items th
 
 1. Open the Areas admin page for the team context.  
 
-    Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
+    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
 
-    ![Work, Area page forWeb  team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
+    ![Work, Area page for Fabrikam Fiber team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
 
-1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
+1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
 
-   ![Product backlog for Web team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
+   ![Product backlog for Fabrikam Fiber team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
 
 ::: moniker-end  
 
@@ -443,7 +443,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker range="azure-devops"
 
-You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -516,7 +516,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 ::: moniker range="azure-devops"
 
-You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/get-started.md). 
+You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 <a id="rename-move-project-area-path" /> 
 

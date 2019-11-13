@@ -36,7 +36,7 @@ In the same way as the work item form, the pull request details view has been up
 
 ## Build widgets in the catalog
 
-As I wrote about in the [dashboards futures blog](http://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/dashboards-futures-january-2016.aspx), one area we’re focusing on is improving the discoverability and ease in bringing different charts to your dashboard. With this update, you’ll see a new option to add a build history chart from the dashboard catalog, and you’ll be able to configure the build definition displayed directly from the dashboard.
+As I wrote about in the [dashboards futures blog](https://blogs.msdn.com/b/visualstudioalm/archive/2016/01/11/dashboards-futures-january-2016.aspx), one area we’re focusing on is improving the discoverability and ease in bringing different charts to your dashboard. With this update, you’ll see a new option to add a build history chart from the dashboard catalog, and you’ll be able to configure the build definition displayed directly from the dashboard.
 
 ![Adding a build history chart from the dashboard catalog](_img/1_25_04.png)
 
@@ -216,21 +216,10 @@ You can now search for code in Git repositories added to your existing team proj
 
 Whew! That was a long list of improvements.
 
-Feel free to reach me on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+Feel free to reach me on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Enjoy!
 
 Thanks,
 
 Karen Ng
-
-
-
-
-
-
-
-
-
-
-

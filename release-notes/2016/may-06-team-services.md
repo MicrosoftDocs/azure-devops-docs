@@ -76,7 +76,10 @@ Second, it’s very common to need to understand and identify test cases or cont
 
 This release brings with it quite a few Release Management (RM) improvements. Let’s walk through the new capabilities…
 
-First, Release Management now supports linking repositories (both Git and Team Foundation Version Control) as artifact sources directly to a release definition, enabling you to consume resources in your repos without having to publish build artifacts with the same files. **Note:** There is no support yet for auto-triggering new releases when a commit is made into these repositories, but that work is in flight, so stay tuned.
+First, Release Management now supports linking repositories (both Git and Team Foundation Version Control) as artifact sources directly to a release definition, enabling you to consume resources in your repos without having to publish build artifacts with the same files.
+
+> [!NOTE]
+> There is no support yet for auto-triggering new releases when a commit is made into these repositories, but that work is in flight, so stay tuned.
 
 ![Linking a repository in Release Management](_img/5_06_09.png)
 
@@ -88,7 +91,7 @@ Additionally, you’ll find these new features:
 
 -**Schedule Based Deployment Condition.** You can now configure a condition on an environment to pick up the successful deployments (or the latest one) from another environment and promote them at the selected time. This capability allows you to have time-based deployments that happen on a repeatable schedule. Chose the Deployment Condition tab in your environment to configure the schedule.
 
--**Release Management REST APIs.** You can now use the REST APIs for Release Management service. They are published at: [/azure/devops/integrate/](/azure/devops/integrate/). Most of these APIs work with the on-premises releases of RM features in TFS 2015 Update 2 as well (changes between TFS and Team Services versions are indicated in the API docs). You can find some basic examples on how to use these APIs in this [blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+-**Release Management REST APIs.** You can now use the REST APIs for Release Management service. They are published at: [/azure/devops/integrate/](/azure/devops/integrate/). Most of these APIs work with the on-premises releases of RM features in TFS 2015 Update 2 as well (changes between TFS and Team Services versions are indicated in the API docs). You can find some basic examples on how to use these APIs in this [blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 -**Simplified Release Definition Wizard.** We’ve simplified the wizard to create release definitions. You can enter most of the inputs to setup a definition with a single environment in this wizard. We have also simplified the process for adding more environments into a definition or to clone an environment. 
  
@@ -132,7 +135,7 @@ The final thing I want to point out is that you might be noticing some subtle ch
 
 ![Restyled, cleaner dialog box](_img/5_06_13.png)
 
-There’s a lot here, so I hope you made it to the end. As always, free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+There’s a lot here, so I hope you made it to the end. As always, free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
 
 Thanks,
 

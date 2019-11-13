@@ -3,13 +3,13 @@ title: Migration import from Azure DevOps Server to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-learn
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.date: 04/13/2018
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
@@ -541,7 +541,7 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='<username>'
 Following our Fabrikam example the two SQL commands would look like the following:
 
 ```sql
-ALTER DATABASE [TFoo] SET RECOVERY SIMPLE;
+ALTER DATABASE [Foo] SET RECOVERY SIMPLE;
 
 USE [Foo]
 CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'

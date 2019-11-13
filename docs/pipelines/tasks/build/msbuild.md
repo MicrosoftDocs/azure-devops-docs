@@ -6,7 +6,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016
@@ -53,7 +53,7 @@ msbuild
 <td>Project</td>
 <td>
 <p>If you want to build a single project, click the <strong>...</strong> button and select the project.</p>
-<p>If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (<code><em></code>) and recursive wildcards (<code></em><em></code>). For example, <code></em><em>*.</em>proj</code> searches for all MSBuild project (.&#42;proj) files in all subdirectories.</p>
+<p>If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (<code><em>*</em></code>) and recursive wildcards (<code><em>**</em></code>). For example, <code><em>**.*</em>proj</code> searches for all MSBuild project (.*proj) files in all subdirectories.</p>
 <p>Make the sure the projects you specify are downloaded by this build pipeline. On the Repository tab:</p>
 <ul>
 <li>
@@ -90,7 +90,7 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 <td>Clean</td>
 <td>
 <p>Set to False if you want to make this an incremental build. This setting might reduce your build time, especially if your codebase is large. This option has no practical effect unless you also set Clean repository to False.</p>
-<p>Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild <code>/target:clean</code> argument.</p>
+<p>Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild <code>/target:clean</code> argument.</p><p>See [repo options](/devops/pipelines/repos/pipeline-options-for-git#clean-the-local-repo-on-the-agent).</p>
 </td>
 </tr>
 <tr>

@@ -1,5 +1,3 @@
-- name: Microsoft Project Mapping File
-  href: index.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Customize the Project field mapping
   href: ../xml/customize-project-field-mapping-file.md
 - name: Upload/download the Project mapping file

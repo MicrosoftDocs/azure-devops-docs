@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vinojos
 author: vinojos
 ms.date: 06/28/2019
@@ -62,8 +62,9 @@ Test results can be surfaced in the **Tests** tab using one of the following opt
   - Javascript - Mocha,  Jest  and  Jasmine
   - Python- Unittest
  
-  **Note**: This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
-  [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
+    > [!NOTE]
+    > This inferred test report is a limited experience. Some features available in fully-formed test reports are not present here
+    > [(more details)](#automatically_inferred_tests). We recommend that you publish a fully-formed test report to get the full Test and Insights experience in Pipelines. Also see:  
 
   - [Publishing fully-formed test reports for JavaScript test runners](../ecosystems/javascript.md#run-unit-tests)
   - [Publishing fully-formed test reports for Python test runners](../ecosystems/python.md#test)

@@ -5,10 +5,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
-ms.date: 08/28/2019
+ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 # Deploy to Kubernetes
@@ -31,7 +31,7 @@ While it is possible to use script for loading kubeconfig files onto the agent f
 
 In the **Azure Kubernetes Service** provider option, once the subscription, cluster and namespace inputs are provided, in addition to fetching and securely storing the required credentials, for an RBAC enabled cluster [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) and [RoleBinding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#service-account-permissions) objects are created such that the ServiceAccount is able to perform actions only on the chosen namespace.
 
-The **Generic provider (reusing existing ServiceAccount)** option can be used to configure a connection to any cloud provider's cluster - AKS/EKS/GKE/OpenShift/...
+The **Generic provider** (reusing existing ServiceAccount) option can be used to configure a connection to any cloud provider's cluster (AKS/EKS/GKE/OpenShift/etc.).
 
 ## Example
 ```YAML
@@ -84,3 +84,8 @@ Note that to allow image pull from private registries, prior to the `deploy` act
 > [!TIP]
 > - If setting up an end-to-end CI-CD pipeline from scratch for a repository containing a Dockerfile, checkout the [Deploy to Azure Kubernetes template](aks-template.md), which constructs an end-to-end YAML pipeline along with creation of an [environment](../../process/environments.md) and [Kubernetes resource](../../process/environments-kubernetes.md) to help visualize these deployments.
 > -  While YAML based pipeline currently supports triggers on a single Git repository, if triggers are required for manifest files stored in another Git repository or if triggers are required for Azure Container Registry or Docker Hub, usage of release pipelines instead of a YAML based pipeline is recommended for doing the Kubernetes deployments.
+
+## Alternatives
+Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
+- [Kubectl task](../../tasks/deploy/kubernetes.md)
+- kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```

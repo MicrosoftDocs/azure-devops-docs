@@ -5,11 +5,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/07/2018
+ms.date: 08/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to change the stage.
+Use this task in a build or release pipeline to run a Windows .bat or .cmd script and optionally allow it to permanently modify environment variables.
 
 ::: moniker range="<= tfs-2018"
 

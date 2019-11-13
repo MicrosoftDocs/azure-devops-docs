@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -24,7 +24,7 @@ The most common built-in security groups&mdash;**Readers**, **Contributors**, an
 
 In general, use the following guidance when assign users to an access level and security group: 
 - Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
-- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. Also, 
+- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 - Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 - Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 
@@ -272,7 +272,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= tfs-2015"
 
-You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
+You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -283,7 +283,19 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 
 ## Azure Artifacts
 
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops" 
+
+Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019" 
+
+Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
 
 ::: moniker-end
 
@@ -294,9 +306,12 @@ You can manage feeds from the web portal, **Artifacts** or **Build and release >
 
 You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](_shared/package-feeds.md)]
 
 ::: moniker-end

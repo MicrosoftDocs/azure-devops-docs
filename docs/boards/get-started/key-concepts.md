@@ -6,7 +6,7 @@ ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -88,6 +88,8 @@ A picklist specifies an enumerated set of values that appear within a drop-down 
 [!INCLUDE [temp](../../_shared/glossary-terms/queries.md)]  
 
 [!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/rollup.md)] 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 

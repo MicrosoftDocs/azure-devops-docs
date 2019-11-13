@@ -6,12 +6,12 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
-author: chcomley
+author: roofers
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 06/12/2019
+ms.date: 11/04/2019
 ---
 
 # Quickstart: Access, export, and filter audit logs
@@ -21,7 +21,7 @@ ms.date: 06/12/2019
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this quickstart, you learn how to access, export, and filter audit logs. Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
+In this quickstart, learn how to access, export, and filter audit logs. Auditing contains many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
 
 When an audit-able event occurs, a log entry is recorded as an audit event. Events contain information such as IP, user who caused the event, what happened, and other useful pieces of data that help you answer the who, what, when, and where. 
 
@@ -32,6 +32,31 @@ Auditing is turned on by default for all Azure DevOps organizations. You can't t
 By default, Project Collection Administrators are the only group that can access the auditing feature. 
 
 ## Access auditing
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+3. Select **Auditing**.
+
+   ![Auditing](_img/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   If you don't see Auditing in organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
+4. Select **Permissions**, and then find the group or users to provide auditing access to.
+
+   ![Select Permissions to provide audit access](_img/azure-devops-auditing/select-permissions-preview.png)  
+
+5. Set **View audit log** to **allow**, and then select **Save changes**.
+   ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+
+The user or group members have access to view your organization audit events. 
+
+#### [Current page](#tab/current-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
@@ -45,6 +70,10 @@ By default, Project Collection Administrators are the only group that can access
    ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
 The user or group members have access to view your organization audit events. 
+
+::: moniker-end
+
+* * *
 
 ## Review audit log
 

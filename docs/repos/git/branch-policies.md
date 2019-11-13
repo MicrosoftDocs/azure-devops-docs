@@ -5,7 +5,7 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -250,6 +250,6 @@ You can [add the users to a group](../../organizations/accounts/add-team-members
 Even for users that are exempt from policy enforcement, the configured policies are still evaluated when changes are added to a pull request.  For exempt users, policy status is advisory only and will not block completion of the pull request.
 
 #### Where can I get more information on advanced policy configurations?
-Check out the [REST API documentation](http://go.microsoft.com/fwlink/?LinkId=526702) for more details.    
+Check out the [REST API documentation](https://go.microsoft.com/fwlink/?LinkId=526702) for more details.    
 
 ::: moniker-end 

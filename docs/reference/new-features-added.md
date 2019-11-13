@@ -5,7 +5,7 @@ description: Features that you can enable through the Configure Features Wizard 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 ---
 
 <!---
-Supports the following FWLINK: Learn more about these configuration changes: http://go.microsoft.com/fwlink/?LinkID=242985 - 
+Supports the following FWLINK: Learn more about these configuration changes: https://go.microsoft.com/fwlink/?LinkID=242985 - 
 -->
 
 # New features added through feature enablement 

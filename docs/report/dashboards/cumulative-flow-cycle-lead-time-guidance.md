@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -163,7 +163,7 @@ Two potentially easy ways to solve this problem are: 1) Shift developers from th
 
 Scope changes apply to fixed period CFDs only. The top line of the chart indicates the scope of work because a sprint is pre-loaded with the work to do on the first day, this becomes a set level of work. Changes to this top line indicate worked was added or removed.  
 
-The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [sprint burndown chart](../../boards/sprints/sprint-burndown.md) can also show scope changes.   
+The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [View/configure sprint burndown](configure-sprint-burndown.md) can also show scope changes.   
 
 
 ### Too much work in progress?  

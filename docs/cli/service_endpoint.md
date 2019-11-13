@@ -3,10 +3,10 @@ title: Create Service Endpoint using Azure DevOps CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Service Endpoint
 ms.topic: reference 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: gsaral
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -39,6 +39,10 @@ az devops service-endpoint azurerm create
 
 In interactive mode this command will ask for service principal password/secret using a prompt message, for automation purpose set service principal password/secret in `AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY` environment variable.
 
+```bash
+export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
+```
+
 ### Using client certificate
 
 If AAD application uses [certificate for authentification](/azure/active-directory/develop/active-directory-certificate-credentials) then create .pem for the certificate and pass path to .pem file in `--azure-rm-service-principal-certificate-path` argument.
@@ -60,7 +64,7 @@ az devops service-endpoint create
 Prerequisite for using this command is that user should be aware of the request format for creating that particular kind of service endpoint.
 
 It can be achived using the following steps:
-Create endpoint of same time from UI and capture it's network trace (using tool of your preference like Fiddler, Chrome Developer tool)
+Create endpoint of same type from UI and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool)
 
 ![Docker Create UI](_img/DockerServiceEndpointCreateUI.png)
 

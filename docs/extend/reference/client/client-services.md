@@ -4,7 +4,7 @@ ms.technology: devops-ecosystem
 title: Clients Services | Extensions for Azure DevOps Services
 description: Client Services provided by Azure DevOps Services.
 ms.assetid: 92736987-875E-4816-B835-F04917B4AF46
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

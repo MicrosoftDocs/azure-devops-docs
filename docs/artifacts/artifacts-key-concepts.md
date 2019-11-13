@@ -4,7 +4,7 @@ description: Key concepts for Azure Artifacts within Azure DevOps Services and T
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.date: 2/6/2018
@@ -32,7 +32,7 @@ The only way to work around the immutability constraint is to create a new feed 
 
 ## Recycle Bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](#immutability).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
+If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
 
 Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 

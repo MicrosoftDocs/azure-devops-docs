@@ -1,5 +1,3 @@
-- name: Hosted XML Process
-  href: index.md?toc=/azure/devops/organizations/settings/work/hosted/toc.json&bc=/azure/devops/organizations/settings/work/hosted/breadcrumb/toc.json
 - name: Hosted XML process overview
   href: ../hosted-xml-process-model.md
 - name: Differences between process models

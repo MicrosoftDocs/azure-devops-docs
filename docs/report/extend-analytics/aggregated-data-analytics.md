@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: How to guide to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

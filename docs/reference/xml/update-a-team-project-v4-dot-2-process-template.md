@@ -5,7 +5,7 @@ description: Update a project based on a Microsoft Solutions Framework (MSF) ver
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017
@@ -92,7 +92,7 @@ For more information, see [Add administrators, set permissions at the project-le
 > [!TIP]  
 >  To get access to the latest versions of the default process templates, install the latest update for TFS. TFS 2012.1 provided significant updates that were made to the workflow for several work item types. These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.  
 >   
-> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](http://go.microsoft.com/fwlink/?LinkId=272181).   
+> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](https://go.microsoft.com/fwlink/?LinkId=272181).   
 
 ## 4. Import link types  
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  

@@ -5,7 +5,7 @@ description: Track changes and use tools to support audit requirements when work
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

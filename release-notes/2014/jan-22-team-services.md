@@ -37,4 +37,3 @@ That’s it for this sprint.
 Thanks,
 
 Aaron Bjork
-

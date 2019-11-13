@@ -1,4 +1,4 @@
----
+﻿---
 title: View and configure the cumulative flow diagram (CFD) reports
 titleSuffix: Azure DevOps 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops  
 ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -161,7 +161,9 @@ CFD reports are available for each backlog level, both product and portfolio bac
 
 1. Next, choose **View full report** for the Cumulative Flow Diagram.  
 
-1. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. Hover over a point in time to show how many work items are in a particular state. The default settings for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
+1. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. You can choose a Rolling period of 14 days or up to 180 days.  
+
+	Hover over a point in time to show how many work items are in a particular state. The default settings for the Cumulative Flow Diagram-Average work in progress includes completed work items since the team started tracking work. 
 
 	For example, On July 3, 101 items were in a Research state.
 
@@ -169,6 +171,13 @@ CFD reports are available for each backlog level, both product and portfolio bac
 	> ![Open CFD Analytics](_img/cfd/analytics-cfd-azure-devops.png)
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
+
+1. To add the report to a dashboard, choose the ![ ](_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/add-analytics-chart-abbreviated.png) 
+	
+	Select the dashboard and choose **OK**.  
 
 1. To return to the Analytics summary, choose the ![ ](../../_img/icons/back-arrow.png)back arrow.
 

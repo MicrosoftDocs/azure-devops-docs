@@ -5,11 +5,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 06/28/2019
+ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -189,6 +189,10 @@ Please note that the checkout path value cannot be set to go up any directory le
 
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
+If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
+
+> [!NOTE]
+> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](../yaml-schema.md#checkout).
 
 The build pipeline will check out your Git submodules as long as they are:
 
@@ -262,10 +266,15 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2017"
 
-* **Azure Pipelines, TFS 2017.3 and newer:** Select the check box to enable this option.
+In the classic editor, select the check box to enable this option.
 
-> [!NOTE]
-> This is not enabled by default in *azure-pipelines.yml* and requires use of the **checkout** task.
+In a YAML build, add a checkout step with `lfs` set to `true`:
+
+```yaml
+steps:
+- checkout: self
+  lfs: true
+```
 
 ::: moniker-end
 
@@ -277,7 +286,33 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install git-lfs on the agent for this option to work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work.
+
+### Using Git LFS with submodules
+
+If a submodule contains LFS files, Git LFS must be configured prior to checking out submodules.
+The Microsoft-hosted macOS and Linux agents come preconfigured this way.
+Windows agents and self-hosted macOS / Linux agents may not.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+As a workaround, if you're using YAML, you can add the following step before your `checkout`:
+
+```yaml
+steps:
+- script: |
+    git config --global --add filter.lfs.required true
+    git config --global --add filter.lfs.smudge "git-lfs smudge -- %f"
+    git config --global --add filter.lfs.process "git-lfs filter-process"
+    git config --global --add filter.lfs.clean "git-lfs clean -- %f"
+  displayName: Configure LFS for use with submodules
+- checkout: self
+  lfs: true
+  submodules: true
+# ... rest of steps ...
+```
 
 ::: moniker-end
 
@@ -365,7 +400,8 @@ In these cases this option can help you conserve network and storage resources. 
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
-> **Tip:** The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
+> [!TIP]
+> The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
 
 ::: moniker-end
 

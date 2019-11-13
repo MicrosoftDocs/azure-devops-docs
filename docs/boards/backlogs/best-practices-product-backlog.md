@@ -1,12 +1,12 @@
----
-title: What are best practices for working with product and portfolio backlogs 
+﻿---
+title: Best practices for working with product and portfolio backlogs
 titleSuffix: Azure Boards
 description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

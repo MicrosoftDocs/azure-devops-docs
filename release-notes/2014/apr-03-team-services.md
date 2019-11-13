@@ -32,7 +32,7 @@ Part of our GA announcement is the addition of a financially-backed SLA for our 
 -We guarantee at least 99.9% availability to execute build operations using the paid **Visual Studio Online Build Service**.
 -We guarantee at least 99.9% availability to execute load testing operations using the paid **Visual Studio Load Testing Service**.
 
-All availability is calculated over a monthly billing cycle. For more details, please visit: [http://www.windowsazure.com/support/legal/sla/](http://www.windowsazure.com/support/legal/sla/).
+All availability is calculated over a monthly billing cycle. For more details, please visit: [https://www.windowsazure.com/support/legal/sla/](https://www.windowsazure.com/support/legal/sla/).
 
 ### Data Export Window
 
@@ -57,29 +57,3 @@ That’s all the news for today. Thank you to each and every one of you that has
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

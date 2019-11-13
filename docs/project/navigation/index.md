@@ -6,7 +6,7 @@ ms.custom: "Navigation, seodec18"
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

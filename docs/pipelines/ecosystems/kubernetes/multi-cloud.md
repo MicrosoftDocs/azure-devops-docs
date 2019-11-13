@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 525536ba-94c7-487b-bcf9-ca7733135e89
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
 ms.date: 08/28/2019
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 # Multi-cloud Kubernetes deployments
 
 [!INCLUDE [include](../../_shared/version-team-services.md)]
-With Kubernetes having a standard interface and running the same way on all cloud providers, Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers. This document contains information on how to connect to each of these clusters, and how to perform parallel deployments to multiple clouds - 
+With Kubernetes having a standard interface and running the same way on all cloud providers, Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers. This document contains information on how to connect to each of these clusters, and how to perform parallel deployments to multiple clouds. 
 
 ## Setup environment and Kubernetes resources
 
@@ -104,4 +104,23 @@ jobs:
             action: deploy
             namespace: openshiftnamespace
             manifests: manifests/*
+- deployment:
+  displayName: Deploy to DigitalOcean
+  pool:
+    vmImage: ubuntu-latest
+  environment: contoso.digitaloceannamespace
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: KubernetesManifest@0
+          displayName: Deploy to Kubernetes cluster
+          inputs:
+            action: deploy
+            namespace: digitaloceannamespace
+            manifests: manifests/*
 ```
+
+> [!NOTE]
+> When using the service account option, [ensure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.

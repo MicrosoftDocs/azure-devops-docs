@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E6A051F3-8B84-4724-9110-F84DB1F3DCD5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 08/04/2016
@@ -81,7 +81,6 @@ On the Build tab, add these tasks:
 
 <table>
    <tr>
-
       <td><img src="../../../tasks/build/_img/maven.png" alt="Build: Maven"/> <strong>Build: Maven</strong></td>
       <td>
 <p>Build the app.</p>
@@ -90,7 +89,6 @@ On the Build tab, add these tasks:
 </ul>
       </td>
 </tr>
-
         <tr>
             <td><img src="../../../tasks/utility/_img/curl-upload-files.png" alt="Utility: cURL Upload Files"/> <strong>Utility: cURL Upload Files</strong></td>
             <td>

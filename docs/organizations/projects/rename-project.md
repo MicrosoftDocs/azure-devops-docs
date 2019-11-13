@@ -8,22 +8,22 @@ ms.technology: devops-accounts
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 07/08/2019
+ms.date: 10/15/2019
 ---
 
 # Rename a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-In this article, learn how to rename a project. A project rename updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. 
-Projects can be renamed multiple times and older names can be reused. 
+In this article, learn how to rename a project. When you rename a project, it updates all of your version control paths, work items, queries, and other project artifacts to reflect the new name. Projects can be renamed multiple times and older names can be reused. 
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
+> [!WARNING]
+> Renaming a project sends email notifications to everyone in the project, if there are less than 1,000 users. If there are greater than 1,000 users in your project, only PCAs receive email notifications.
 
 ## Rename a project
 
@@ -43,14 +43,15 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the Projects page, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
+1. Sign in to your organization.
+2. From the Projects page, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/choose-rename-menu-option.png)
 
-2. Edit the name. 
+3. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/rename-project-dialog.png)
@@ -61,11 +62,12 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 ::: moniker range="tfs-2015"
 
-1. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
+1. Sign in to your organization.
+2. From the **Overview** tab, open the ![](../../_img/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
 
 	![Enter a new project name](_img/rename-project/collection-rename.png)
 
-2. Edit the name. 
+3. Edit the name. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](_img/rename-project/rename-project-dialog.png)
@@ -180,8 +182,8 @@ If your team uses TFVC with [local workspaces](../../repos/tfvc/decide-between-u
 For the following clients, execute a get or check-in and the workspace mapping is corrected to use the new project name:
 
 - Visual Studio 2015 (RC or later versions)  
-- Visual Studio 2012 with [Update 5](http://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)  
-- Team Foundation Server plugin [Team Explorer Everywhere 2015](http://go.microsoft.com/fwlink/?LinkID=617042)
+- Visual Studio 2012 with [Update 5](https://go.microsoft.com/fwlink/?LinkId=615776) (RC or later versions)  
+- Team Foundation Server plugin [Team Explorer Everywhere 2015](https://go.microsoft.com/fwlink/?LinkID=617042)
 
 We recommend that you update your clients to the latest update or release, if possible. For all other supported Visual Studio versions, 
 except for Visual Studio 2010 which only supports server workspaces,

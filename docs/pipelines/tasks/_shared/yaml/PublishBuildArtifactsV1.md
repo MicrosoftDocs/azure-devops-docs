@@ -9,4 +9,5 @@
     #targetPath: # Required when publishLocation == FilePath
     #parallel: false # Optional
     #parallelCount: # Optional
+    #fileCopyOptions: #Optional
 ```

@@ -5,13 +5,12 @@ ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/07/2018
+ms.date: 09/30/2019
 monikerRange: '>= tfs-2017'
 ---
-
 
 # Run automated tests from test plans
 
@@ -142,10 +141,11 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
 
-   > **Note**: If you are running UI tests such as CodeUI or Selenium
-   on physical browsers such as IE, Firefox, or Chrome, the agent
-   on the machines must be running in interactive mode and not
-   as a service. [More details](#faq-agentmode). 
+   > [!NOTE]
+   > If you are running UI tests such as CodeUI or Selenium
+   > on physical browsers such as IE, Firefox, or Chrome, the agent
+   > on the machines must be running in interactive mode and not
+   > as a service. [More details](#faq-agentmode). 
 
 8. In the **Pipeline** page of the release pipeline, verify
    that the build pipeline containing the test binaries is linked
@@ -200,6 +200,8 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    makes it easy to find the release that ran the tests if you need
    to come back later and analyze the results. Also use this link if you
    want to open the release to view the release logs.
+
+   **Note** : Manually attaching of files is not supported for automated test results.
 
    [What are the typical error scenarios or issues I should look out for if my tests don't run?](#faq-errors)
 
@@ -406,6 +408,6 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Continuous testing scenarios and capabilities](index.md)
+* [Continuous testing scenarios and capabilities](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

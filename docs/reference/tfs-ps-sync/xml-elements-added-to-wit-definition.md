@@ -1,11 +1,11 @@
----
+﻿---
 title: XML elements added to the definition for the work item type
 titleSuffix: TFS
 description: Show the XML elements added to the definition for the work item type when using Team Foundation Server & Project Server integration
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7f58b123-18df-4382-895e-01f7c9e366f8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

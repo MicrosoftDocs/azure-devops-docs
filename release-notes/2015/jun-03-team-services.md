@@ -49,6 +49,3 @@ If you have any questions, feel free to reach out on [Twitter](https://twitter.c
 Thanks,
 
 Aaron Bjork
-
-
-

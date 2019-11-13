@@ -7,11 +7,11 @@ ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 07/08/2019
+ms.date: 10/15/2019
 ---
 
 # Delete a project
@@ -21,19 +21,25 @@ ms.date: 07/08/2019
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are only in use.
 
 > [!Caution]
-> Projects are permanently deleted, if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+> Projects are permanently deleted if not restored within 28 days. For more information on restoring projects, see [Restore a project](restore-project.md). If you want to access project data while the project is deleted (without [restoring it](restore-project.md)) you should [save project data](save-project-data.md).
+
+#### [Browser](#tab/browser) 
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Delete project
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```), and then open the project that you want to delete.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select **Project settings** > **Overview**, scroll down the page to find "Delete project", and then select **Delete**."
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-    ![Select Project settings, Overview, and scroll to delete project](_img/delete-project/select-project-settings-overview-scroll-delete.png)
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. To confirm deletion, enter the project name into the popup screen, and then select **Delete**.
+3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
+
+   :::image type="content" source="_img/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
+
+4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
     ![popup confirmation delete project screen](_img/delete-project/confirm-delete-project.png)
 
@@ -112,3 +118,41 @@ Review the status and log files for the delete action. Open the **Status** tab a
     If partial data remains, you can also use the [TFSDeleteProject](/azure/devops/server/command-line/tfsdeleteproject-cmd) command line tool.
 
 ::: moniker-end
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="= azure-devops"
+
+You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az devops project delete --id
+                         [--org]
+                         [--yes] 
+``` 
+
+#### Parameters 
+
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Do not prompt for confirmation.
+
+#### Example 
+
+The following command deletes the team project with the specified ID without prompting you for confirmation.
+
+```CLI 
+az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
+``` 
+
+::: moniker-end
+
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * * 
+
+## Related articles
+
+- [Create project](/azure/devops/organizations/projects/create-project)
+- [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd)

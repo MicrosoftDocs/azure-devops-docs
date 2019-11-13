@@ -21,7 +21,7 @@ First and foremost, I’m excited to announce that this week we are rolling out 
 - Work item chart authoring
 - Team Rooms
 
-This change means all teams of five or fewer members have access to these features in Visual Studio Online for free, while larger teams can access this functionality at a much lower price point. Brian Harry will be talking more about the impact of this change on his blog at [http://blogs.msdn.com/bharry](http://blogs.msdn.com/bharry).
+This change means all teams of five or fewer members have access to these features in Visual Studio Online for free, while larger teams can access this functionality at a much lower price point. Brian Harry will be talking more about the impact of this change on his blog at [https://blogs.msdn.com/bharry](https://blogs.msdn.com/bharry).
 
 Now that the big news is out of the bag, let’s jump into a few improvements to the service…
 
@@ -37,7 +37,7 @@ Second, notice that the parent user story now looks more like a card, matching i
 
 ## Editing tiles on the Kanban board
 
-We also turned on the ability to edit the assigned user and effort values for cards on your Kanban boards. This is the first in a series of changes coming that accrue toward a complete add, edit, and reorder experience directly from the board. Last week I outlined the [list of improvements](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/21/agile-project-management-futures.aspx) like this that are on their way in upcoming sprints.
+We also turned on the ability to edit the assigned user and effort values for cards on your Kanban boards. This is the first in a series of changes coming that accrue toward a complete add, edit, and reorder experience directly from the board. Last week I outlined the [list of improvements](https://blogs.msdn.com/b/visualstudioalm/archive/2015/01/21/agile-project-management-futures.aspx) like this that are on their way in upcoming sprints.
 
 ![Editing Kanban tiles](_img/1_27_03.png)
 

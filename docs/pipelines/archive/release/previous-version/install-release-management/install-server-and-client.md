@@ -6,7 +6,7 @@ ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -33,12 +33,13 @@ not removed. Then install the latest server and client. When you configure
 the latest update for your Release Management server, use the same SQL Server 
 instance that you used before for the database server.
 
-***Tip:*** _If you installed TFS Express or basic, you have an instance of 
-SQL Server Express available to you. If you installed TFS, you already have 
-the necessary permissions on the SQL Server. If you don't know if you're 
-using SQL Express, look at the **Application Tier** node in the TFS 
-administration console. Scroll down to **Data Tier Summary** and look for 
-**SQLServerExpress** to confirm._
+> [!TIP]
+> If you installed TFS Express or basic, you have an instance of
+> SQL Server Express available to you. If you installed TFS, you already have
+> the necessary permissions on the SQL Server. If you don't know if you're
+> using SQL Express, look at the **Application Tier** node in the TFS
+> administration console. Scroll down to **Data Tier Summary** and look for
+> **SQLServerExpress** to confirm.
 
 <a name="installserver"></a>
 ## Install the Release Management server
@@ -53,9 +54,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
@@ -67,8 +68,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
 5. Specify the SQL Server instance to host the Release Management Server 
    database and then choose **Test** to verify connectivity. Accept the default 
@@ -107,9 +109,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
@@ -121,8 +123,9 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
 1. Restart your computer, if prompted, and then choose **Launch**.
 
-   ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
-   you can **[opt out](../manage-your-release.md#optout)** at any time._ 
+   > [!TIP]
+   > If you join the Visual Studio Experience Improvement Program,
+   > you can **[opt out](../manage-your-release.md#optout)** at any time.
 
 1. Enter the name of the Release Management server. If you're installing the 
    client on the same computer that is running Release Management server, you 
@@ -130,9 +133,10 @@ administration console. Scroll down to **Data Tier Summary** and look for
 
    ![Connecting the client to the server](_img/install-server-client-06.png)
 
-   ***Tip:*** _If you changed any of the default options in your Release 
-   Management server setup, you can change the protocol or port number here so 
-   that you can connect to the server._
+   > [!TIP]
+   > If you changed any of the default options in your Release
+   > Management server setup, you can change the protocol or port number here so
+   > that you can connect to the server.
 
 ## Related topics
 

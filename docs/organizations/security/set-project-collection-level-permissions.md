@@ -5,12 +5,12 @@ description: How-to guide to set project-level permissions in Azure DevOps
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
+ms.date: 11/01/2019
 ---
 
 # Set permissions at the project- or collection-level
@@ -67,14 +67,11 @@ For a description of each group and each permission, see [Permissions and groups
 
 ## Add a user or group to a security group
 
-
-
-As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a pre-defined security group. 
+As roles and responsibilities change, you might need to change the permission levels for individual members of a project. The easiest way to do that is to add the user or a group of users to a pre-defined security group.  If roles change, you can then remove the user from a group.
 
 Here we show how to add a user to the built-in Project Administrators group. The method is similar to adding an Azure Active Directory or Active Directory group. 
 
 ::: moniker range="azure-devops"
-
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -83,17 +80,16 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Choose **Project Settings** and then **Permissions**.
+2. Choose **Project settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project groups](_img/permissions/project-permisions-s154.png)
+	![Choose Project settings, and then Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
 
-1. Choose **Project Administrators** group, **Members**, and then **Add**.  
+3. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-collection/project-admin-members-add-s154.png) 
 
-1. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-collection/add-member-project-admin.png)  
@@ -101,7 +97,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save**. 
+5. Choose **Save**. 
 
 #### [Current page](#tab/current-page) 
 
@@ -113,12 +109,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
-1. Choose **Project Administrators** group, **Members**, and then **Add**.  
+3. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Security, Add member](_img/project-level-permissions-add-member.png) 
 
-1. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
+4. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
@@ -126,11 +122,11 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
+5. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
 
 * * *
 
-::: moniker-end    
+::: moniker-end 
 
 
 ::: moniker range="azure-devops-2019"
@@ -157,8 +153,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
 1. Choose **Save changes**. Choose the ![ ](../../_img/icons/refresh.png) refresh icon to see the additions.  
-::: moniker-end    
 
+::: moniker-end 
 
 ::: moniker range="<= tfs-2018"
 
@@ -186,6 +182,32 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
+
+
+## Remove a user or a group
+
+::: moniker range="azure-devops"
+
+1. To remove a user or group from a security group, choose the ![ ](../../_img/icons/more-actions.png) **More actions** icon, and then **Remove**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Remove a user](_img/project-collection/remove-admin-member-s157.png)  
+
+1. Choose **Delete** to confirm removal of the group member.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Remove user dialog](_img/project-collection/delete-member-confirm-dialog.png)  
+
+::: moniker-end  
+
+::: moniker range="<= azure-devops-2019"
+
+1. To remove a user from a group, choose **Remove** next to the user's name that you want to remove. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Remove a user](_img/project-collection/remove-admin-member-server.png)  
+
+::: moniker-end    
 
 ## Change the permission level for a project-level group 
 
@@ -265,9 +287,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="azure-devops"
 
-
 > [!NOTE]   
-> To enable the new user interface for the Organization Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
+> To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
 
 1. From your project web portal, choose the ![](../../_img/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
@@ -408,7 +429,6 @@ You can change a group description or add a group image by editing the group pro
 
 1. Choose **Save** to save your changes.
 
-
 ### Manage organization-level groups 
 
 1. From the **Organization > Settings > Security** page, choose the group you want to manage, and hover over the context menu and select **Edit Group** or **Delete Group**.  
@@ -446,7 +466,6 @@ You can change a group name, description, add a group image, or delete a group.
 	> ![Edit group profile description](_img/project-collection/edit-project-level-group-current.png)   
 
 1. Choose **Save** to save your changes.
-
 
 ::: moniker-end
 
