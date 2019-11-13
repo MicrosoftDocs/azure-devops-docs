@@ -320,9 +320,9 @@ This may be because there is insufficient capacity on your App Service Plan. To 
 This may be because web.config is not present in your app. You can either add a web.config file to your source or auto-generate one using the File Transforms and Variable Substitution Options of the task.
 
 1. Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps
-![Generate web.config parameters Dialog](_img\azure-rm-web-app-deployment-01.png)
+![Generate web.config parameters Dialog](_img/azure-rm-web-app-deployment-01.png)
 1. Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters
-![Drop Down Dialog](_img\azure-rm-web-app-deployment-02.png)
+![Drop Down Dialog](_img/azure-rm-web-app-deployment-02.png)
 1. Select your application type from the drop down
 1. Click on OK. This will populate web.config parameters required to generate web.config
 
