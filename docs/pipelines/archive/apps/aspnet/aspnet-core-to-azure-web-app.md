@@ -1,6 +1,6 @@
 ﻿---
-title: Build and Deploy a ASP.NET Core app|title: Build and Deploy a ASP.NET Core app
-description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure usingtitle: Build and Deploy a ASP.NET Core app
+title: Build and Deploy a ASP.NET Core app
+description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
