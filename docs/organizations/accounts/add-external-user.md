@@ -1,5 +1,5 @@
----
-title: Add, invite external users, guest users to your organization
+﻿---
+title: Add, invite guest users to your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to invite an outside or external user to your organization
