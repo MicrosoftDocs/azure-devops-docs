@@ -122,6 +122,20 @@ Control options are available as keys on the `task` section.
 The timeout period begins when the task starts running. It does not include the
 time the task is queued or is waiting for an agent.
 
+In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() expression](expressions.md#succeededorfailed).
+
+```yaml
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: ''3.7'
+    architecture: 'x64'
+- task: PublishTestResults@2
+  inputs:
+   testResultsFiles: "**/TEST-*.xml"
+  condition: succeededOrFailed()
+```
+
 > [!NOTE]
 > For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
 
