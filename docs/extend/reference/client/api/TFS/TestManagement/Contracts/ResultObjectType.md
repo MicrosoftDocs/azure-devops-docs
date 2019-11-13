@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts ResultObjectType API | Extensions for Azure DevOps Services
+description: Data representation of a result object type.
 ms.assetid: a016f700-c3a2-5340-81cc-d9829c7221d7
 ms.prod: devops
 ms.technology: devops-ecosystem

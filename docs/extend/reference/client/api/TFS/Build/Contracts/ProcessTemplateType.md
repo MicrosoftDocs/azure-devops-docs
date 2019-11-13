@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts ProcessTemplateType API | Extensions for Azure DevOps Services
+description: Data representation of a process template type.
 ms.assetid: d71298af-9f46-ee18-0b80-1de34b38108d
 ms.prod: devops
 ms.technology: devops-ecosystem
