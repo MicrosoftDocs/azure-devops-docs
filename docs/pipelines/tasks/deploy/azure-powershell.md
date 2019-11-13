@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a PowerShell script within an Azure environment.
+Use this task in a build or release pipeline to run a PowerShell script within an Azure environment. The Azure context is authenticated with the provided Azure Resource Manager service connection.
 
 ::: moniker range="> tfs-2018"
 
@@ -51,17 +51,7 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 ## Samples
 
-```
-- task: AzurePowerShell@4
-  inputs:
-    azureSubscription: my-arm-service-connection
-    scriptType: filePath
-    scriptPath: $(Build.SourcesDirectory)\myscript.ps1
-    scriptArguments:
-      -Arg1 val1 `
-      -Arg2 val2
-    azurePowerShellVersion: latestVersion
-```
+[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
 
 ## Open source
 
