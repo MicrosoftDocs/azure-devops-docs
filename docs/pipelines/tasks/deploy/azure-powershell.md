@@ -41,7 +41,7 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 To pick the latest version available on the agent, select "Latest installed version".
 
 For self-hosted agents you can specify preferred version of Azure PowerShell using "Specify version"</td></tr>
-<tr><td>preferredAzurePowerShellVersion</td><td>(Required) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported.</td></tr>
+<tr><td>preferredAzurePowerShellVersion</td><td>(Required when azurePowerShellVersion is otherVersion) Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported.</td></tr>
 
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
@@ -51,7 +51,17 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 ## Samples
 
-Include samples here
+```
+- task: AzurePowerShell@4
+  inputs:
+    azureSubscription: my-arm-service-connection
+    scriptType: filePath
+    scriptPath: $(Build.SourcesDirectory)\myscript.ps1
+    scriptArguments:
+      -Arg1 val1 `
+      -Arg2 val2
+    azurePowerShellVersion: latestVersion
+```
 
 ## Open source
 
