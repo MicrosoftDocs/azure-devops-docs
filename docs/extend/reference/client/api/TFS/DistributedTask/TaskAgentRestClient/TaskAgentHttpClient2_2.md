@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/TaskAgentRestClient TaskAgentHttpClient2_2 API | Extensions for Azure DevOps Services
+description: Data representation of a task agent http client 2_2.
 ms.assetid: 34ba9371-4384-5a20-18f3-f23438a85330
 ms.prod: devops
 ms.technology: devops-ecosystem

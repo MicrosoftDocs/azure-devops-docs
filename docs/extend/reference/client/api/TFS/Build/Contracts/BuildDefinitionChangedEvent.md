@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildDefinitionChangedEvent API | Extensions for Azure DevOps Services
+description: Data representation of a build definition changed event.
 ms.assetid: f011c0c1-d310-9ece-88e7-1cce323a2602
 ms.prod: devops
 ms.technology: devops-ecosystem

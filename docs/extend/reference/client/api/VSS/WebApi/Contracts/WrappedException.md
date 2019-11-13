@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts WrappedException API | Extensions for Azure DevOps Services
+description: Data representation of a wrapped exception.
 ms.assetid: 20683c0c-1d95-9933-3992-79096b769375
 ms.prod: devops
 ms.technology: devops-ecosystem
