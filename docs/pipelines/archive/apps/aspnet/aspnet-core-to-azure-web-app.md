@@ -23,7 +23,7 @@ ASP.NET Core apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET Core app
 to an Azure Web App.
-You create the web app using the Azure CLI, then set up CI/CD intitle: Build and Deploy a ASP.NET Core app.
+You create the web app using the Azure CLI, then set up CI/CD using Azure Pipelines.
 
 ![Screenshot showing ASP.NET Core web app](../../../apps/cd/azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 
