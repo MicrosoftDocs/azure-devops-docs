@@ -396,7 +396,7 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 
 TFS 2017 Update 1 includes updated Search components. If the Search
 service was configured in TFS 2017 RTM during an upgrade, the
-Search service components re updated automatically if the Search
+Search service components are updated automatically if the Search
 service was configured on the TFS that's getting upgraded.
 If Search was configured on a remote server, follow
 [these instructions](#separate-server) to update it.
