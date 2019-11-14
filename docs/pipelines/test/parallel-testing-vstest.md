@@ -136,7 +136,7 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
-::: moniker range="> azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Setting up jobs for parallel testing in YAML pipelines
 
