@@ -224,7 +224,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches.
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
+	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
