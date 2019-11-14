@@ -187,13 +187,6 @@ You can now define a set of policies and add the policy evaluation as a check on
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/160_15.png)
 
-### Markdown support in automated test error messages
-
-We now support markdown in error messages for automated tests. You can easily format error messages for both test run and test result to improve readability and ease troubleshooting the failure in Azure Pipelines. The supported markdown syntax can be found [here](https://docs.microsoft.com/azure/devops/project/wiki/markdown-guidance?view=azure-devops).
-
-> [!div class="mx-imgBorder"]
-> ![Badge](../../_img/160_03.png)
-
 ### Diagnosing cron schedules in YAML
 
 We have seen a steady increase in the use of cron syntax for specifying schedules in your YAML pipelines. As we listened to your feedback, we heard that it was hard for you to determine whether Azure Pipelines had processed your syntax correctly. Previously, you would have to wait for the actual time of the scheduled run to debug schedule problems. To help you diagnose branch/syntax errors, we added a new action menu for pipeline. The **Scheduled runs** in the Run pipeline menu will give you a preview of the upcoming few scheduled runs for your pipeline to help you diagnose errors with your cron schedules.
