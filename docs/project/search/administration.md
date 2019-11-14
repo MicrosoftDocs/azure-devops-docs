@@ -215,7 +215,7 @@ the JRE installation guide and then rerun the configuration wizard.
 * [Zulu OpenJDK installation guide](http://docs.azul.com/zulu/zuludocs/index.htm)
 * [Oracle JRE troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
 
-If you cannot install the version of Java required by Search due to other dependencies, you can:
+If you can't install the version of Java required by Search due to other dependencies, you can:
 
 * Install Azure DevOps Server or TFS together with the Search extension on a server that doesn't have Java installed (not recommended for more than 250 users or CPU utilization greater than 50% or multiple ATs).
 
@@ -256,7 +256,7 @@ Consider the following points when configuring Search:
 
 * If you don't set the checkbox to install the Code Search extension for all your project collections when 
   configuring Search, your project collection administrator can install it from the Local Gallery. Ensure you
-  navigate to the Local Gallery (`http://{Server}/tfs/_gallery`) from your Azure DevOps Server or TFS portal page. 
+  navigate to the Local Gallery (`http://{Server}:8080/tfs/_gallery`) from your Azure DevOps Server or TFS portal page. 
 
 * The search index folder should be on a separate fast hard drive, backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
