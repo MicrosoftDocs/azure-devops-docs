@@ -418,7 +418,7 @@
         href: tasks/build/android-signing.md
       - name: Ant
         href: tasks/build/ant.md
-      - name: Azure IoT Edge
+      - name: Azure IoTEdge
         href: tasks/build/azure-iot-edge.md
       - name: CMake
         href: tasks/build/cmake.md
@@ -432,7 +432,7 @@
         href: tasks/build/gradle.md
       - name: Grunt
         href: tasks/build/grunt.md
-      - name: gulp
+      - name: Gulp
         href: tasks/build/gulp.md
       - name: Index Sources & Publish Symbols
         href: tasks/build/index-sources-publish-symbols.md
@@ -450,19 +450,23 @@
         href: tasks/build/xamarin-ios.md
       - name: Xcode
         href: tasks/build/xcode.md
+      - name: Xcode Build
+        href: tasks/build/xcode-build.md
       - name: Xcode Package iOS
         href: tasks/build/xcode-package-ios.md
     - name: Utility tasks
       items:
-      - name: Archive files
+      - name: Archive Files
         href: tasks/utility/archive-files.md
       - name: Azure Network Load Balancer
         href: tasks/utility/azure-nlb-management.md
+      - name: Azure Policy
+        href: tasks/utility/azure-policy.md
       - name: Bash
         href: tasks/utility/bash.md
-      - name: Batch script
+      - name: Batch Script
         href: tasks/utility/batch-script.md
-      - name: Command line
+      - name: Command Line
         href: tasks/utility/command-line.md
       - name: Copy and Publish Build Artifacts
         href: tasks/utility/copy-and-publish-build-artifacts.md
@@ -470,7 +474,7 @@
         href: tasks/utility/copy-files.md
       - name: cURL Upload Files
         href: tasks/utility/curl-upload-files.md
-      - name: Decrypt File
+      - name: Decrypt File (OpenSSL)
         href: tasks/utility/decrypt-file.md
       - name: Delay
         href: tasks/utility/delay.md
@@ -484,7 +488,7 @@
         href: tasks/utility/download-github-release.md
       - name: Download Package
         href: tasks/utility/download-package.md
-      - name: Download Pipeline Artifact
+      - name: Download Pipeline Artifacts
         href: tasks/utility/download-pipeline-artifact.md
       - name: Download Secure File
         href: tasks/utility/download-secure-file.md
@@ -504,7 +508,7 @@
         href: tasks/utility/install-ssh-key.md
       - name: Invoke Azure Function
         href: tasks/utility/azure-function.md
-      - name: Invoke REST API
+      - name: Invoke HTTP REST API
         href: tasks/utility/http-rest-api.md
       - name: Jenkins Download Artifacts
         href: tasks/utility/jenkins-download-artifacts.md
@@ -514,9 +518,9 @@
         href: tasks/utility/powershell.md
       - name: Publish Build Artifacts
         href: tasks/utility/publish-build-artifacts.md
-      - name: Publish Pipeline Artifact
+      - name: Publish Pipeline Artifacts
         href: tasks/utility/publish-pipeline-artifact.md
-      - name: Publish to Azure Service Bus
+      - name: Publish To Azure Service Bus
         href: tasks/utility/publish-to-azure-service-bus.md
       - name: Python Script
         href: tasks/utility/python-script.md
@@ -524,23 +528,23 @@
         href: tasks/utility/azure-monitor.md
       - name: Query Work Items
         href: tasks/utility/work-item-query.md
-      - name: Security and Compliance Assessment
-        href: tasks/utility/azure-policy.md
-      - name: Service Fabric PowerShell
+      - name: Service Fabric PowerShell Utility
         href: tasks/utility/service-fabric-powershell.md
-      - name: Shell script
+      - name: Shell Script
         href: tasks/utility/shell-script.md
       - name: Update Service Fabric Manifests
         href: tasks/utility/service-fabric-versioning.md
+      - name: Xamarin License
+        href: tasks/utility/xamarin-license.md
     - name: Test tasks
       items:
       - name: App Center Test
         href: tasks/test/app-center-test.md
-      - name: Cloud-based Apache JMeter Load Test
+      - name: Cloud-based Apache JMeter Load Test  (Deprecated)
         href: tasks/test/run-jmeter-load-test.md
-      - name: Cloud-based Load Test
+      - name: Cloud-based Load Test  (Deprecated)
         href: tasks/test/cloud-based-load-test.md
-      - name: Cloud-based Web Performance Test
+      - name: Cloud-based Web Performance Test  (Deprecated)
         href: tasks/test/cloud-based-web-performance-test.md
       - name: Container Structure Test Task
         href: tasks/test/container-structure-test-task.md
@@ -554,32 +558,32 @@
         href: tasks/test/vstest.md
       - name: Visual Studio Test Agent Deployment
         href: tasks/test/visual-studio-test-agent-deployment.md
+      - name: Xamarin Test Cloud
+        href: tasks/test/xamarin-test-cloud.md
     - name: Package tasks
       items:
       - name: CocoaPods
         href: tasks/package/cocoapods.md
       - name: Conda Environment
         href: tasks/package/conda-environment.md
-      - name: Maven Authenticate
+      - name: Maven Authenticate  (for  runners)
         href: tasks/package/maven-authenticate.md
       - name: npm
         href: tasks/package/npm.md
-      - name: npm Authenticate
+      - name: npm Authenticate  (for  runners)
         href: tasks/package/npm-authenticate.md
-      - name: NuGet
-        href: tasks/package/nuget.md
       - name: NuGet Authenticate
         href: tasks/package/nuget-authenticate.md
-      - name: PyPI Publisher
+      - name: NuGet restore, pack, and publish
+        href: tasks/package/nuget.md
+      - name: PyPI Publisher  (Deprecated)
         href: tasks/package/pypi-publisher.md
       - name: Python Pip Authenticate
         href: tasks/package/pip-authenticate.md
       - name: Python Twine Upload Authenticate
         href: tasks/package/twine-authenticate.md
-      - name: Universal Packages
+      - name: Universal Package, download and publish
         href: tasks/package/universal-packages.md
-      - name: Xamarin Component Restore
-        href: /xamarin/cross-platform/troubleshooting/component-nuget
       - name: Previous versions
         items:
         - name: NuGet Installer 0.*
@@ -608,8 +612,10 @@
         href: tasks/deploy/azure-app-service-settings.md
       - name: Azure CLI
         href: tasks/deploy/azure-cli.md
-      - name: Azure Cloud PowerShell Deployment
+      - name: Azure Cloud Service Deployment
         href: tasks/deploy/azure-cloud-powershell-deployment.md
+      - name: Azure Database for Mysql Deployment
+        href: tasks/deploy/azure-mysql-deployment.md
       - name: Azure File Copy
         href: tasks/deploy/azure-file-copy.md
       - name: Azure Function App
@@ -620,8 +626,6 @@
         href: tasks/deploy/azure-key-vault.md
       - name: Azure Monitor Alerts
         href: tasks/deploy/azure-monitor-alerts.md
-      - name: Azure MySQL Deployment
-        href: tasks/deploy/azure-mysql-deployment.md
       - name: Azure Policy Check Gate
         href: tasks/deploy/azure-policy-check-gate.md
       - name: Azure PowerShell
@@ -630,13 +634,13 @@
         href: tasks/deploy/azure-resource-group-deployment.md
       - name: Azure SQL Database Deployment
         href: tasks/deploy/sql-azure-dacpac-deployment.md
-      - name: Azure Web App
-        href: tasks/deploy/azure-rm-web-app.md
       - name: Azure VM Scale Set Deployment
         href: tasks/deploy/azure-vmss-deployment.md
+      - name: Azure Web App
+        href: tasks/deploy/azure-rm-web-app.md
       - name: Azure Web App for Container
         href: tasks/deploy/azure-rm-web-app-containers.md
-      - name: Build Machine Image (Packer)
+      - name: Build Machine Image
         href: tasks/deploy/packer-build.md
       - name: Chef
         href: tasks/deploy/chef.md
@@ -644,45 +648,41 @@
         href: tasks/deploy/chef-knife.md
       - name: Copy Files Over SSH
         href: tasks/deploy/copy-files-over-ssh.md
-      - name: Docker
-        href: tasks/build/docker.md
-      - name: Docker Compose
-        href: tasks/build/docker-compose.md
-      - name: Helm Deploy
-        href: tasks/deploy/helm-deploy.md
-      - name: IIS Web App Deploy (Machine Group)
+      - name: IIS Web App Deploy
         href: tasks/deploy/iis-web-app-deployment-on-machine-group.md
-      - name: IIS Web App Manage (Machine Group)
+      - name: IIS Web App Manage
         href: tasks/deploy/iis-web-app-management-on-machine-group.md
-      - name: Kubectl task
+      - name: Kubectl
         href: tasks/deploy/kubernetes.md
-      - name: Kubernetes manifest task
+      - name: Kubernetes Manifest
         href: tasks/deploy/kubernetes-manifest.md
+      - name: MySQL Database Deployment On Machine Group
+        href: tasks/deploy/mysqldb-deployment.md
+      - name: Package and Deploy Helm Charts
+        href: tasks/deploy/helm-deploy.md
       - name: PowerShell on Target Machines
         href: tasks/deploy/powershell-on-target-machines.md
-      - name: Service Fabric App Deployment
+      - name: Service Fabric Application Deployment
         href: tasks/deploy/service-fabric-deploy.md
       - name: Service Fabric Compose Deploy
         href: tasks/deploy/service-fabric-compose-deploy.md
-      - name: SSH
+      - name: SSH Deployment
         href: tasks/deploy/ssh.md
       - name: Windows Machine File Copy
         href: tasks/deploy/windows-machine-file-copy.md
       - name: WinRM SQL Server DB Deployment
         href: tasks/deploy/sql-dacpac-deployment-on-machine-group.md
-      - name: MySQL Database Deployment On Machine Group  
-        href: tasks/deploy/mysqldb-deployment.md
     - name: Tool tasks
       items:
       - name: Docker Installer
         href: tasks/tool/docker-installer.md
       - name: Go Tool Installer
         href: tasks/tool/go-tool.md
-      - name: Helm Installer
+      - name: Helm installer
         href: tasks/tool/helm-installer.md
       - name: Java Tool Installer
         href: tasks/tool/java-tool-installer.md
-      - name: Kubectl Installer
+      - name: Kubectl installer
         href: tasks/tool/kubectl-installer.md
       - name: Node.js Tool Installer
         href: tasks/tool/node-js.md
