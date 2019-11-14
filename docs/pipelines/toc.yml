@@ -418,7 +418,7 @@
         href: tasks/build/android-signing.md
       - name: Ant
         href: tasks/build/ant.md
-      - name: Azure IoTEdge
+      - name: Azure IoT Edge
         href: tasks/build/azure-iot-edge.md
       - name: CMake
         href: tasks/build/cmake.md
@@ -566,11 +566,11 @@
         href: tasks/package/cocoapods.md
       - name: Conda Environment
         href: tasks/package/conda-environment.md
-      - name: Maven Authenticate  (for  runners)
+      - name: Maven Authenticate
         href: tasks/package/maven-authenticate.md
       - name: npm
         href: tasks/package/npm.md
-      - name: npm Authenticate  (for  runners)
+      - name: npm Authenticate
         href: tasks/package/npm-authenticate.md
       - name: NuGet Authenticate
         href: tasks/package/nuget-authenticate.md
