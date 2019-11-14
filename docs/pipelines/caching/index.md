@@ -77,7 +77,10 @@ variables:
 steps:
 - task: CacheBeta@1
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    restoreKeys: |
+       yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -132,6 +135,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Scope | Read | Write |
 |--------|------|-------|
 | Source branch | Yes | Yes |
+| Master branch | Yes | No |
 
 ### Pull request runs
 
@@ -140,6 +144,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Source branch | Yes | No |
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Master branch | Yes | No |
 
 ### Pull request fork runs
 
@@ -147,6 +152,7 @@ When a cache step is encountered during a run, the cache identified by the key i
 |--------|------|-------|
 | Target branch | Yes | No |
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
+| Master branch | Yes | No |
 
 ## Conditioning on cache restoration
 
@@ -159,6 +165,7 @@ steps:
 - task: CacheBeta@0
   inputs:
     key: mykey | mylockfile
+    restoreKeys: mykey
     path: $(Pipeline.Workspace)/mycache
     cacheHitVar: CACHE_RESTORED
 
@@ -181,7 +188,10 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: gems | $(Agent.OS) | my.gemspec
+    key: 'gems | "$(Agent.OS)" | my.gemspec'
+    restoreKeys: | 
+       gems | "$(Agent.OS)"
+       gems
     path: $(BUNDLE_PATH)
   displayName: Cache gems
 
@@ -206,7 +216,7 @@ steps:
 
 - task: CacheBeta@0
   inputs:
-    key: ccache | $(Agent.OS)
+    key: 'ccache | "$(Agent.OS)"'
     path: $(CCACHE_DIR)
   displayName: ccache
 ```
@@ -230,7 +240,8 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: gradle | $(Agent.OS)
+    key: 'gradle | "$(Agent.OS)"'
+    restoreKeys: gradle
     path: $(GRADLE_USER_HOME)
   displayName: Gradle build cache
 
@@ -258,7 +269,10 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: maven | **/pom.xml
+    key: 'maven | "$(Agent.OS)" | **/pom.xml'
+    restoreKeys: |
+       maven | "$(Agent.OS)"
+       maven
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
@@ -278,7 +292,10 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: nuget | packages.lock.json
+    key: 'nuget | "$(Agent.OS)" | packages.lock.json'
+    restoreKeys: |
+       nuget | "$(Agent.OS)"
+       nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
@@ -300,7 +317,10 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: npm | $(Agent.OS) | package-lock.json
+    key: 'npm | "$(Agent.OS)" | package-lock.json'
+    restoreKeys: |
+       npm | "$(Agent.OS)"
+       npm
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -325,7 +345,10 @@ variables:
 steps:
 - task: CacheBeta@0
   inputs:
-    key: yarn | $(Agent.OS) | yarn.lock
+    key: 'yarn | "$(Agent.OS)" | yarn.lock'
+    restoreKeys: |
+       yarn | "$(Agent.OS)"
+       yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
@@ -345,13 +368,13 @@ If you experience problems enabling caching for your project, first check the li
 Clearing a cache is currently not supported. However you can add a string literal (e.g. `version2`) to your existing cache key to change the key in a way that avoids any hits on existing caches. For example, change the following cache key from this:
 
 ```yaml
-key: yarn | $(Agent.OS) | yarn.lock
+key: 'yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
 to this:
 
 ```yaml
-key: version2 | yarn | $(Agent.OS) | yarn.lock
+key: 'version2 | yarn | "$(Agent.OS)" | yarn.lock'
 ```
 
 ### When does a cache expire?

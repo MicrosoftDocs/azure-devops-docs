@@ -78,7 +78,7 @@ RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz
 ```YAML
 strategy: 
     runOnce:
-      pre-deploy:        
+      preDeploy:        
         pool: [ server | pool ] # see pool schema        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
@@ -115,7 +115,7 @@ Canary deployment strategy is an advance deployment strategy which helps in miti
 strategy: 
     canary:
       increments: [ number ]
-      pre-deploy:        
+      preDeploy:        
         pool: [ server | pool ] # see pool schema        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
