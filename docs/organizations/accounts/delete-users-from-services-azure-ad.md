@@ -1,5 +1,5 @@
 ﻿---
-title: Remove users from an organization connected to AAD
+title: Remove users from organization connected to Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Understand how to delete users from Azure DevOps connected to Azure Active Directory (Azure AD) via the Azure portal
