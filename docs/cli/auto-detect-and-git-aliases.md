@@ -39,4 +39,30 @@ For example, a pull request can now be created using the following command:
 ```bash
 git pr create --target-branch {branch\_name}
 ```
+## Parameter detection hierarcy
 
+There are three main ways by which parameters can be provided to a command and they have been listed in order of priority:
+1. Command parameters
+For example: 
+`az repos list --organization https://dev.azure.com/contoso --project webApplication`
+2. Auto detection from git context if --detect is on. Detect is on by default. 
+3. Default configuration
+For example: 
+`az devops configure --defaults organization=https://dev.azure.com/contoso project=webApplication`
+
+Say a customer runs the following commands
+```
+~/$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
+~/$ az repos list --organization=https://dev.azure.com/contosoTest --project=testApplication
+````
+
+In this case, the organization and project parameters are provided via defaults and via command parameters. As per the hierarchy, the command parameters are given top priority and will be used for the command run.
+
+Let's have a look another example. Say a user user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `ON` by default. 
+
+```
+~/contosoTest/portal$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
+~/contosoTest/portal$ az repos list
+```
+
+In this case, the `contosoTest` and `testApplication` will be auto detected as the target organization and project in the command and will override the defaults that have been set.
