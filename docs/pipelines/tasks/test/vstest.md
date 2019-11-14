@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 11/13/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,7 @@ Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed
 
 Tests that target the .NET core framework can be executed by specifying the appropriate target framework value.  
 
-Tests can be distributed on multiple agents using version 2 of this task. 
+Tests can be distributed on multiple agents using version 2 of this task. For more information, see [Run tests in parallel using the Visual Studio Test task](../../test/parallel-testing-vstest.md).
 
 ## Demands 
 
