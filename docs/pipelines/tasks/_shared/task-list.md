@@ -10,7 +10,7 @@ ms.topic: include
 | ![icon](../build/_img/android-build.png) [Android build task (deprecated; use Gradle)](../build/android-build.md) - Android build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/android-signing.png) [Android signing build and release task](../build/android-signing.md) - Android signing build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/ant.png) [Ant build and release task](../build/ant.md) - Learn how to build with Apache Ant | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](../build/_img/azure-iot-edge.png) [Azure IoTEdge task](../build/azure-iot-edge.md) - Build, test, and deploy applications quickly and efficiently to Azure IoT Edge | Azure Pipelines |
+| ![icon](../build/_img/azure-iot-edge.png) [Azure IoT Edge task](../build/azure-iot-edge.md) - Build, test, and deploy applications quickly and efficiently to Azure IoT Edge | Azure Pipelines |
 | ![icon](../build/_img/cmake.png) [CMake build and release task](../build/cmake.md) - CMake build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/_img/dockercompose.png) [Docker Compose task](../build/docker-compose.md) - Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry. | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../build/_img/docker.png) [Docker task](../build/docker.md) - Build and push Docker images to any container registry using Docker registry service connection | Azure Pipelines, TFS 2018 and newer |
