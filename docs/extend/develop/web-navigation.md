@@ -1,8 +1,8 @@
----
+﻿---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Developing extensions for Azure DevOps Services vertical web navigation | Azure DevOps Services
-description: Guidance for developing Azure DevOps Services extensions to be used with vertical web navigation
+title: Developing extensions for vertical web navigation|title: Developing extensions for vertical web navigation
+description: Guidance for developingtitle: Developing extensions for vertical web navigation extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: mijacobs
