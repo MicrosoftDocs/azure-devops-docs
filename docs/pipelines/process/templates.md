@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: macoope
 author: vtbassmatt
-ms.date: 09/25/2019
+ms.date: 11/14/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
