@@ -12,13 +12,13 @@ ms.date: 11/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Install and manage Code, Wiki, and Work Item Search
+# Install and manage Search
 
 [!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="= azure-devops"
 
-In this article, learn how to install and uninstall the Search extension in Azure DevOps Services.
+In this article, learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Services.
 
 ::: moniker-end
 
