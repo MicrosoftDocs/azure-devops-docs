@@ -1,5 +1,5 @@
 ﻿---
-title: Disconnect organization from AAD
+title: Disconnect organization from Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
