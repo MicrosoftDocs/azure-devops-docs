@@ -1,7 +1,7 @@
-﻿---
+---
 title: What are access levels? What access levels are supported?
 titleSuffix: Azure DevOps
-description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic + Test Plans, or VS Enterprise access levels 
+description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
@@ -81,7 +81,7 @@ The following table indicates those features available for each supported access
 </tr>
 
 <tr>
-<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-quickstart.md)">Kanban boards</a>. Stakeholders can&#39;t add work items, can&#39;t drag-and-drop work items to update status, and can&#39;t update fields displayed on cards. 
+<td align="left"><strong>Agile boards</strong><br/>Includes limited access to <a href="../../boards/boards/kanban-quickstart.md">Kanban boards</a>. On Boards, Stakeholders can't add work items, can't drag-and-drop work items to update status, and can't update fields displayed on cards. 
 </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
