@@ -51,9 +51,10 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
 <h3 id="secure-file-authorization">How do I authorize a secure file for use in all pipelines?</h3>
+
  1. Navigate to the **Library** tab in **Azure Pipelines**.
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 
- 1. In the details view, below the "Properties" section, select **Authorize for use in all pipelines**, and then select **Save**.
+ 1. In the details view, below the **Properties** section, select **Authorize for use in all pipelines**, and then select **Save**.
 
 <!-- ENDSECTION -->
