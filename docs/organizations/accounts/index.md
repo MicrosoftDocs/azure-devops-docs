@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 10/31/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -72,6 +72,7 @@ Sign up for an organization, add users, and manage permissions and access.
         * [Connect Azure DevOps to Azure Active Directory](connect-organization-to-aad.md)
         * [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
         * [Change your Azure AD tenant connection](change-azure-ad-connection.md)
+        * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
         
 * Manage extensions
     * [Install extensions](../../marketplace/install-extension.md)
