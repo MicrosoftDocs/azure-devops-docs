@@ -279,6 +279,20 @@ mounted by the Functions runtime and files in the **wwwroot** folder become read
 
 Creates a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
 
+## FAQs
+
+### What authentication should I use for Virtual Machines? How does Managed Service Identity (MSI) work?
+
+Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without having credentials in your code. Configure Managed Service Identity (MSI) for virtual machine https://aka.ms/azure-msi-docs
+
+### Is *Publish using zip deploy* option supported for MSBuild package type?
+ 
+No, web packages created using MSBuild task (with default arguments) has a nested folder structure that can only be deployed correctly by Web Deploy. To convert the packaging structure, follow the steps provided [here](https://github.com/microsoft/azure-pipelines-tasks/wiki/Migrating-from-Web-Deploy-to-Run-From-Package-deployment-mechanism)
+
+### How should I configure Web Job Deployment with App Insights?
+
+When deploying to an App Service with App Insights configured, if you have enabled “Remove additional files at destination” then you also need to enable “Exclude files from the App_Data folder” in order to keep App insights extension in safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
+
 ## Troubleshooting
 
 ### Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.
@@ -301,18 +315,6 @@ Check if the package mentioned in the task is published as an artifact in the bu
 When deploying .NET apps to Web App on Windows, deployment may fail with error code *ERROR_FILE_IN_USE*. To resolve the error, ensure *Rename locked files* and *Take App Offline* options are enabled in the task. For zero downtime deployments, use slot swap.
 
 You can also use *Run From Package deployment* method to avoid resource locking.
-
-### Managed Service Identity (MSI)
-
-Configure Managed Service Identity (MSI) for virtual machine https://aka.ms/azure-msi-docs
-
-### Publish using zip deploy option is not supported for msBuild package type
- 
-Follow the steps provided in the link https://github.com/microsoft/azure-pipelines-tasks/wiki/Migrating-from-Web-Deploy-to-Run-From-Package-deployment-mechanism
-
-### Web Job deployment 
-
-When deploying to an App Service with App Insights configured, if you have enabled “Remove additional files at destination” then you also need to enable “Exclude files from the App_Data folder” in order to keep App insights extension in safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
 
 ### A release hangs for long time and then fails
 
