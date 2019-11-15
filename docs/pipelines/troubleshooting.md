@@ -521,15 +521,17 @@ macOS/Linux:
 ```
 ### Job Time-out
 
-A release may hang and then fail due to job time-out. This is because Free Microsoft hosted agents will give you 60 minutes for a private repository after which the job will time out. More on timeouts [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts).
+A build or a release may run for a long time and then fail due to job time-out. 
+Job timeout closely depends on the agent being used. Free Microsoft hosted agents have a max timeout of 60 minutes per job for a private repository and 360 minutes for a public repository.
+To increase the max timeout for a job, you can opt for any of the following.
+* Buy a Microsoft hosted agent which will give you 360 minutes for all jobs, irrespective of the repository used
+* Use a self-hosted agent to rule out any timeout issues due to the agent
 
-If you need more time then you can opt for any of the following
-* You can buy a Microsoft hosted agent which will give you 360 minutes.
-* You can use a self-hosted agent to rule out agent issues
+Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts).
 
 ### Service Connection related issues
 
-To troubleshoot issues related to service connections, see [Service Connection troubleshooting](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
