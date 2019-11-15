@@ -64,3 +64,4 @@ For answers to frequently asked questions about connecting, disconnecting, or ch
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
 * [Access with Azure AD](access-with-azure-ad.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
