@@ -64,6 +64,7 @@ Before you switch your organization directory, make sure the following is true:
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
 - [Manage Azure AD groups](manage-azure-active-directory-groups.md)
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 
 
