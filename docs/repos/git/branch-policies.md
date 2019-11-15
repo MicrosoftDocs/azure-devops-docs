@@ -22,7 +22,7 @@ Policies enforce your team's code quality and change management standards.
 
 ## Configure branch policies
 
-1. Open the **Branches** page by navigating to your project in the web portal and then select **Repos** > **Branches**.
+1. Select **Repos** > **Branches** to open the **Branches** page in the web portal.
 
    ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
 
@@ -34,7 +34,7 @@ Policies enforce your team's code quality and change management standards.
 
    ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
 
-1. Configure your policies in the **Policies** page. See the following sections for descriptions for each policy type. Once your policies are configured, select **Save changes** to apply your new policy configuration.
+1. Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
 
    ![Policies tab](_img/branch-policies/save-policy-changes.png)  
 
@@ -59,7 +59,7 @@ When the required number of reviewers approve the pull request, it can finish.
 > The **Requestors can approve their own changes** setting only applies to the **Require a minimum number of reviewers** policy. It doesn't affect other policies such as [Automatically include code reviewers](#automatically-include-code-reviewers). For example, Jamal Hartnett creates a pull request with the following policies configured:
 >
 > - **Minimum number of reviewers** requires two reviewers.
-> - **Requestors can approve their own changes** is not set.
+> - **Requestors can approve their own changes** isn't set.
 > - The **Fabrikam Team** group is a required reviewer, and Jamal is a member of that group.
 >
 >In this example, since Jamal is part of the **Fabrikam Team** group, his **Approve** vote satisfies the required reviewer policy. The pull request still requires two additional **Approve** votes to satisfy the **Minimum number of reviewers** policy, since his vote doesn't count toward that policy.
@@ -101,9 +101,9 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 ## Build validation
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Build policies reduce breaks and keep your tests results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
 
-When a build validation policy is enabled, a new build is queued when a new pull request is created. A new build also queues when changes are pushed to an existing pull request targeting this branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
+When a build validation policy is enabled, a new build queue when a new pull request is created. A new build also queues when changes are pushed to an existing pull request targeting this branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
 >Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
@@ -136,7 +136,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
-![Require approval from external services](_img/branch-policies/require-approval-from-additional-services.png)
+![Require external services to approve](_img/branch-policies/require-approval-from-additional-services.png)
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
 
@@ -144,7 +144,7 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 ## Automatically include code reviewers
 
-Designate reviewers for specific directories and files in your repo.
+Select reviewers for specific directories and files in your repo.
 
 ![Enter the path and required reviewers](_img/branch-policies/RequireSpecificReviewers.png)
 

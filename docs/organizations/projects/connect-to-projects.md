@@ -85,7 +85,7 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-    Choose your project or team from the set of available links, or choose Browse to access all projects and teams.
+    Choose your project or team from the set of available links, or choose **Browse** to access all projects and teams.
 
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
 
@@ -124,7 +124,7 @@ To learn more about each page and the tasks you can do, see [Web portal navigati
 
 Open the web portal from the home page.
 
-    ![Connect to the web portal](_img/connect-tp-open-web-portal.png)
+![Connect to the web portal](_img/connect-tp-open-web-portal.png)
 
 <a id="visual-studio">  </a>
 
@@ -218,7 +218,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. Select a different user or select **Add an account** to access a project using different credentials.
 
-   ![Connect with VS using different sign-in credentials](_img/connect-projects-tfs/choose-different-user-vs2017.png) 
+   ![Connect with VS using different credentials to sign in](_img/connect-projects-tfs/choose-different-user-vs2017.png) 
 
 1. Sign in using an account that is associated with an Azure DevOps project, either a valid Microsoft account or GitHub account.
 
@@ -235,7 +235,7 @@ Your client remembers the set of connections you've configured. You can switch f
 
 1. Select a different user from the drop-down or select **Add an account** to access a project using different credentials.
 
-   ![Connect with VS 2017 using different sign-in credentials](_img/connect-projects-tfs/choose-different-user-vs2017.png)
+   ![Connect with VS 2017 using different credentials to sign in](_img/connect-projects-tfs/choose-different-user-vs2017.png)
 
 1. Sign in using a valid Microsoft account that is associated with an Azure DevOps Services or TFS project.
 
