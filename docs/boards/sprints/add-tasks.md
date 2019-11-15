@@ -214,7 +214,7 @@ During the sprint, team members update remaining work to continually reflect the
 </tr>
 <tr>
     <td width="18%"><p><a href="../queries/query-numeric.md" data-raw-source="[Remaining Work](../queries/query-numeric.md)">Remaining Work</a></p></td>
-    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="set-capacity.md" data-raw-source="[capacity charts](set-capacity.md)">capacity charts</a> and the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a>You can specify work in any unit of measurement your team chooses.</p></td></tr>
+    <td><p>The amount of work remaining to complete a task. As work progresses, update this field. It&#39;s used to calculate <a href="set-capacity.md" data-raw-source="[capacity charts](set-capacity.md)">capacity charts</a> and the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a>You can specify work in any unit of measurement your team chooses.</p></td></tr>
 <tr>
     <td><p><a href="../queries/query-numeric.md" data-raw-source="[Completed Work](../queries/query-numeric.md)">Completed Work</a> </p></td>
 	<td><p>The amount of work spent implementing a task.</p></td></tr>

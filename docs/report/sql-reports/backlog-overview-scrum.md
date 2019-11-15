@@ -8,7 +8,7 @@ description: Reports the lists of all product backlog items (PBIs) - Team Founda
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 

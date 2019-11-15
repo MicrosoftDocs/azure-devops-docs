@@ -22,7 +22,7 @@
   items:
   - name: Create a private PowerShell repository
     href: tutorials/private-powershell-library.md
-  - name: Share packages publicly (preview)
+  - name: Share packages publicly
     href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md

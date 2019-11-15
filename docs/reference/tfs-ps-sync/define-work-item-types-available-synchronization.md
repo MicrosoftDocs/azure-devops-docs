@@ -1,4 +1,4 @@
----
+﻿---
 title: Define the work item types available for synchronization
 titleSuffix: TFS 
 description: Configure the two server products before you synchronize data between Team Foundation Server & Project Server

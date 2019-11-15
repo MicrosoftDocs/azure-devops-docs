@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts Publisher API | Extensions for Azure DevOps Services
+description: Data representation of a publisher.
 ms.assetid: cc78e4fe-6f40-2719-de7e-4aa4022d62dd
 ms.prod: devops
 ms.technology: devops-ecosystem

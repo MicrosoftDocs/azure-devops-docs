@@ -13,7 +13,7 @@ ms.date: 10/07/2019
 monikerRange: 'azure-devops'
 ---
 
-# Publish Pipeline Artifact task
+# Publish Pipeline Artifacts task
 
 **Azure Pipelines**
 

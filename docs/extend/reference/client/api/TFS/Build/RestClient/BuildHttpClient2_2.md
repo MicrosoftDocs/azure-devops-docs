@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/RestClient BuildHttpClient2_2 API | Extensions for Azure DevOps Services
+description: Data representation of a build http client 2_2.
 ms.assetid: 77299e6b-d4c4-266f-9462-71d97b981c56
 ms.prod: devops
 ms.technology: devops-ecosystem

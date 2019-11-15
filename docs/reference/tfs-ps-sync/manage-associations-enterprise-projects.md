@@ -1,4 +1,4 @@
----
+﻿---
 title: Manage the association of enterprise projects to projects
 titleSuffix: TFS 
 description: Understand how to map enterprise projects using Team Foundation Server & Project Server 

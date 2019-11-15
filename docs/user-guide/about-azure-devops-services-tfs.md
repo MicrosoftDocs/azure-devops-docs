@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 08/23/2019 
+ms.date: 11/13/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
@@ -103,7 +103,7 @@ Project collections serve as containers for security and administration, and phy
 
 Finally, projects are used to encapsulate the assets of individual software projects, including source code, work items, and so on.
 
-To learn more, see [Plan your Azure DevOps organization structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure.md).
+Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 
