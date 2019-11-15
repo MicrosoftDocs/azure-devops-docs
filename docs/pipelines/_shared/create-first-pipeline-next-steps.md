@@ -62,7 +62,7 @@ az pipelines list [--detect {false, true}]
 - **query-order**: Order of the results. Accepted values: **ModifiedAsc**, **ModifiedDesc**, **NameAsc**, **NameDesc**, **None**
 - **repository**: Limit results to pipelines associated with this repository.
 - **repository-type**: Limit results to pipelines associated with this repository type. It is mandatory to pass **repository** argument along with this argument. Accepted values: **bitbucket**, **git**, **github**, **githubenterprise**, **svn**, **tfsgit**, **tfsversioncontrol**
-- **top**:Maximum number of pipelines to list.
+- **top**: Maximum number of pipelines to list.
 
 ### az pipelines delete
 
