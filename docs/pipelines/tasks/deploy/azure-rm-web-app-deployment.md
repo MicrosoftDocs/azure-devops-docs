@@ -283,11 +283,24 @@ Creates a .war deployment package and deploys the file content to the **wwwroot*
 
 ### Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.
 
-Service connection used by the task would have been expired or the service principal use must have been removed from the app registrations. [Troubleshoot the affected Azure Resource Manager service connection.](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or does not have permissions to the App Service, the task fails with the specified error. Verify validity of the service principal used and that it is present in the app registration. For more details, see 
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
+   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   also contains more information about using service principal authentication.
 
 ### SSL error
 
-To use a certificate in App Service, the certificate must be signed by a trusted certificate authority. If your web app gives you certificate validation errors, you're probably using a self-signed certificate and to resolve them you need to set a variable named VSTS_ARM_REST_IGNORE_SSL_ERRORS to the value true in the build or release pipeline.
+To use a certificate in App Service, the certificate must be signed by a trusted certificate authority. If your web app gives you certificate validation errors, you're probably using a self-signed certificate. Set a variable named VSTS_ARM_REST_IGNORE_SSL_ERRORS to the value true in the build or release pipeline to resolve the error.
+
+### No package found with specified pattern
+
+Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.
+
+### ERROR_FILE_IN_USE
+
+When deploying .NET apps to Web App on Windows, deployment may fail with error code *ERROR_FILE_IN_USE*. To resolve the error, ensure *Rename locked files* and *Take App Offline* options are enabled in the task. For zero downtime deployments, use slot swap.
+
+You can also use *Run From Package deployment* method to avoid resource locking.
 
 ### Managed Service Identity (MSI)
 
@@ -297,19 +310,9 @@ Configure Managed Service Identity (MSI) for virtual machine https://aka.ms/azur
  
 Follow the steps provided in the link https://github.com/microsoft/azure-pipelines-tasks/wiki/Migrating-from-Web-Deploy-to-Run-From-Package-deployment-mechanism
 
-### ERROR_FILE_IN_USE
-
-For avoiding deployment failure with error code ERROR_FILE_IN_USE, in case of .NET apps targeting Web App on Windows, ensure that 'Rename locked files' and 'Take App Offline' are enabled. For zero downtime deployment use slot swap.
-
-You can also use Run From Package deployment method to avoid resource locking.
-
 ### Web Job deployment 
 
 When deploying to an App Service with App Insights configured, if you have enabled “Remove additional files at destination” then you also need to enable “Exclude files from the App_Data folder” in order to keep App insights extension in safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
-
-### No package found with specified pattern
-
-Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.
 
 ### A release hangs for long time and then fails
 
