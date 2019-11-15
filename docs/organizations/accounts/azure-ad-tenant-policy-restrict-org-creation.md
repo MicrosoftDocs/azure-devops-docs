@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy. This policy restricts users from creating an organization and is turned off, by default.
+In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy. This policy restricts users from creating an organization in Azure DevOps and is turned off, by default.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ For more information about the new built-in Azure AD roles, see [Administrator r
 If you don't see the policy section in Azure DevOps, you aren't an administrator. To check your role, sign in to the [Azure portal](https://ms.portal.azure.com/#home), and then choose **Azure Active Directory > Roles and administrators**. In case that you aren't an Azure DevOps administrator, talk to your administrator.
 
 ![Check Azure AD roles and administrators](_img/azure-ad-tenant-policy/azure-ad-roles-and-administrators.png)
+
 You can also check your role using the Azure AD PowerShell module.
 ![Azure AD PowerShell to enable policy](_img/azure-ad-tenant-policy/azure-ad-powershell.png)
 
@@ -48,6 +49,8 @@ You can also check your role using the Azure AD PowerShell module.
 ### Create allow list
 
 With the policy turned on, all users are restricted from creating new organizations. Grant an exception to users or groups with an allow list. Users on the allow list can create new organizations, but they can't manage the policy.
+
+1. Select **Add AAD user or group**.
 
 ![Option, Create allow list and add Azure AD users or groups](_img/azure-ad-tenant-policy/add-azure-ad-user-group.png)
  
