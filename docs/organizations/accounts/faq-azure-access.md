@@ -139,7 +139,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 ### Q: Why did I get an error stating that my organization has multiple active identities with the same UPN?
 
-A: During the connect process, we map existing users onto members of the Azure AD tenant based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don’t know which user to map. This can happen if a user changes their UPN to match one already existing in the organization.
+A: During the connect process, we map existing users to members of the Azure AD tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don’t know how to map these users. This can happen if a user changes their UPN to match one already existing in the organization.
 
 ### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 
