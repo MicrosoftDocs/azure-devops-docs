@@ -44,7 +44,7 @@ When you choose **OK**, the system:
 1. Creates an Azure Resource Manager service connection using this application's details
 
 <a name="troubleshoot"></a>
-## How to troubleshoot errors that may occur
+## How to troubleshoot errors that may occur while creating a connection?
 
 Errors that may occur when the system attempts to create the service connection include:
 
@@ -161,11 +161,5 @@ the **Contributor** role.
 
 To resolve this issue, ask the subscription administrator to
 [configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
-
-## Why is a script failing to run from Azure Pipelines?
-
-This typically occurs if you are using a service connection which has insufficient permissions to run the script. The script may run successfully on your local workstation because you may have the required access.
-
-To resolve this issue, update the service connection with a new service principle having the required permissions
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
