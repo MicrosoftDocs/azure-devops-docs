@@ -69,7 +69,7 @@ Some suggestions for naming your feature branches:
 Long-lived feature branches present problems when you need to build code on top of the branch before the work in the branch is finished.
 Merge unfinished features into the master branch so others can build off their work. Keep them hidden from your users and testers by using feature flags.
 Enable the flag in development to use the feature without the changes affecting anyone else.
-Once the feature is finished, remove the flags or use them to roll out the feature to select users and testers.
+Once you finish with the feature, remove the flags or use them to roll out the feature to select users and testers.
 
 Learn more about [using feature flags](http://martinfowler.com/articles/feature-toggles.html) in your code.
 
@@ -92,7 +92,7 @@ Some suggestions for successful pull requests:
 
 ### Keep a high quality, up-to-date master branch
 
-The code in your master branch should pass tests, build cleanly, and always be up-to-date.
+The code in your master branch should pass tests, build cleanly, and always be current.
 Your master branch needs these qualities so that feature branches created by your team start from a known good version of code.
 
 ::: moniker range=">= tfs-2015" 

@@ -30,7 +30,7 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS
 
 | Authentication Type | When to use | Secure? | Ease of setup | Additional tools |   
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
-| Personal access tokens | When you need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | (Optional) [Git Credential Manager](set-up-credential-managers.md) |   
+| Personal access tokens | When you need an easy way to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | (Optional) [Git Credential Manager](set-up-credential-managers.md) |   
 | SSH | When you already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
 | Alternate credentials | When you can't use personal access tokens or SSH |  Least secure | Easy | No |
 
@@ -39,7 +39,7 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS
 Personal access tokens let you create a password for use with the command line or other Git client. You don't need to use your Azure Repos username and password directly.
 An expiration date is set on these tokens when they're created.
 You can restrict the scope of the data they can access.
-Use personal access tokens to authenticate if you don't already have SSH keys set up on your system. If you need to restrict the permissions granted by the credential, use personal access tokens.
+Use personal access tokens to authenticate if you don't already have SSH keys set up on your system. If you need to restrict the permissions the credential can grant, use personal access tokens.
 
 * [Learn more about personal access tokens and how to create one](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
@@ -77,7 +77,7 @@ Use alternate credentials as a last resort when you can't use personal access to
 
 >[!IMPORTANT]
 > - We don't recommend using alternate credentials.
-> - Azure DevOps Server does not support alternate credentials.
+> - Azure DevOps Server doesn't support alternate credentials.
 > - The username specified for the alternate credentials must be unique within that user's Azure DevOps Services organization.
 
 Create an alternate username and password to access your Git repository using alternate credentials.

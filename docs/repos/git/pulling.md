@@ -112,7 +112,7 @@ Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** v
 #### [Command Line](#tab/command-line/)
 
 Running `merge` without any flags or parameters adds the commits downloaded from `fetch` into the local branch.
-Git adds a merge commit if you have any conflicts. This merge commit has two parent commits (one for each branch) and contains the changes committed to resolve the conflicts between branches. 
+Git adds a merge commit if you have any conflicts. This merge commit has two parent commits, one for each branch, and contains the changes committed to resolve the conflicts between branches.
 
 ```cmd
 git merge
@@ -148,7 +148,7 @@ updates files in your open project, so make sure to [commit your changes](commit
 
    There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
-1.  Review the confirmation message is displayed when the pull operation completes.
+1. Review the confirmation message is displayed when the pull operation completes.
 
    ![Pull operation complete](_img/pulling/pull-results.png)
 

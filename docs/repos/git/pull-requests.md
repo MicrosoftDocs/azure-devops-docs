@@ -332,7 +332,7 @@ Starting with Visual Studio 2017 Update 6, you can check out the source branch f
 
 ### Browse code changes
 
-Select **Files** to view the changes made to the source branch relative to the target branch of the pull request.
+Select **Files** to view the changes made to the source branch next to the target branch of the pull request.
 
 >[!NOTE]
 >The size limit for files in the files view and the diff view is 5 MB. To view and diff files larger than 5 MB, you can download the file and view it using a local diff tool.

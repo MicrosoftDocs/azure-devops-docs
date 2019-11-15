@@ -47,7 +47,7 @@ For each development cycle and release of your product, you create a test plan a
 You can also, if you wish, divide the test cases into separate test suites within the plan to enable easier management and monitoring of these separate sets of test cases.
 
 After you create your test plan, you [assign test configurations](test-different-configurations.md) and [assign testers](create-test-cases.md#assign-testers) to cover the required test matrix.
-These testers [execute the tests](run-manual-tests.md) and gauge the quality of the product.
+These testers [run the tests](run-manual-tests.md) and gauge the quality of the product.
 Testers continue testing until the product meets exit criteria.
 For the next development cycle and release, you can create a new test plan and reuse the same test cases.
 You repeat this development-test-release cycle by importing the same test cases into each new test plan.

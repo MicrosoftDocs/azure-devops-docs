@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-#  Get Started with Azure Repos and Visual Studio
+# Get Started with Azure Repos and Visual Studio
 
 > [!div class="op_single_selector"]
 > - [Visual Studio 2017](gitquickstart.md)
@@ -47,7 +47,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
    [!INCLUDE [project-urls](../../_shared/project-urls.md)]
 
-1. Verify the location of the cloned repo on your PC and select **Clone**.
+1. Verify the location of the cloned repo on your computer and select **Clone**.
 
 #### [Command Line](#tab/command-line/)
 1. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.
@@ -68,15 +68,16 @@ If you don't have a Git repository yet, you can create one [using your own code]
     git clone https://dev.azure.com/fabrikam-fiber/_git/FabrikamFiber
     ```
 
-Git downloads and creates your own copy of the code in a new folder for you. 
+Git downloads and creates your own copy of the code in a new folder for you.
 
 * * *
 <a name="commit"></a>
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work being done in the project. The recommended [Git workflow](gitworkflow.md) 
-uses a new branch for every feature or fix you work on. You make [commits](commits.md) in your local Git repository to save your changes on that branch.
+Git [branches](branches.md) isolate your changes from other work being done in the project.
+The recommended [Git workflow](gitworkflow.md) uses a new branch for every feature or fix you work on.
+You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select the **Home** button and choose **Branches**. 
