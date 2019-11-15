@@ -84,8 +84,7 @@ az pipelines delete --id
 
 ### Example
 
-> [!NOTE]
-> This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example lists pipelines in table format, and then deletes the pipeline with an ID of 6. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az pipelines list --output table
@@ -94,7 +93,7 @@ ID    Path    Name           Status    Default Queue
 ----  ------  -------------  --------  ------------------
 6     \       FabrikamFiber  enabled   Hosted Ubuntu 1604
 
-az pipelines delete --id 6 --output table
+az pipelines delete --id 6
 
 Are you sure you want to delete this pipeline? (y/n): y
 Pipeline 6 was deleted successfully.
