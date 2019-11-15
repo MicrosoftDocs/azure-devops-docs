@@ -1,4 +1,4 @@
----
+﻿---
 title: Install and configure the Azure Boards app for GitHub  
 titleSuffix: Azure Boards
 description: Configure the Azure Boards app to connect one or more GitHub repositories to Azure Boards 

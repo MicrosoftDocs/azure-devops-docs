@@ -90,12 +90,12 @@ As needed, you can do the following actions at any time:
 
 You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**.
 
-1. From the web portal, open <strong>Project Settings</strong>.
+1. From the web portal, open <strong>Project settings</strong>.
 
-1. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Areas**.
+2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Work>Project Configuration](_img/areas/open-project-work-areas-settings-vert.png)   
+    > ![Project Settings>Project Configuration](_img/areas/open-project-work-areas-settings-vert.png)   
 
 ::: moniker-end
 
@@ -308,21 +308,21 @@ From a web browser, open the web portal administrative context for your team.
 
 ::: moniker range=">= azure-devops-2019"  
 
-You define both areas and iterations from **Project Settings>Boards>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
 1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
-   Here we open the Board for the Web team and from there the team profile. 
+   Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
    > [!div class="mx-imgBorder"]  
    > ![Work Backlog or Board, choose team profile icon](_img/team-defaults/open-team-profile-choose-team-settings.png)  
 
-1. Choose **Iterations and areas**. 
+2. Choose **Iterations and areas**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Team Profile, choose Iterations and area](_img/team-defaults/team-profile-choose-iterations-areas.png)   
 
-2. If you need to switch the team context, use the team selector within the breadcrumbs.
+3. If you need to switch the team context, use the team selector within the breadcrumbs.
 
     > [!div class="mx-imgBorder"]  
     > ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
@@ -401,12 +401,12 @@ The default area path determines the default area path assigned to work items th
 
 1. Open **Areas** for the team context.  
 
-   Here, we show the Areas for the Web team.  
+   Here, we show the Areas for the Fabrikam Fiber team.  
 
    > [!div class="mx-imgBorder"]
-   > ![Area page for team](_img/team-defaults/open-areas-web-team.png)
+   > ![Area page for team](_img/team-defaults/open-areas-fabrikam-team.png)
 
-1. Choose the area path(s) to be active for each team.  
+2. Choose the area path(s) to be active for each team.  
 
     > [!div class="mx-imgBorder"]
     > ![Work, Iterations page for team](_img/team-defaults/stdefaults-add-area-paths.png)  
@@ -426,13 +426,13 @@ The default area path determines the default area path assigned to work items th
 
 1. Open the Areas admin page for the team context.  
 
-    Here, we navigate to the Web team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
+    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
 
-    ![Work, Area page forWeb  team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
+    ![Work, Area page for Fabrikam Fiber team](_img/team-defaults/stdefaults-open-team-area-page-tfs.png)  
 
-1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber\Web area path.   
+1. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
 
-   ![Product backlog for Web team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
+   ![Product backlog for Fabrikam Fiber team](_img/team-defaults/stdefaults-backlog-web-team-list.png)  
 
 ::: moniker-end  
 
@@ -630,3 +630,4 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
 
 ::: moniker-end
+

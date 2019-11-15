@@ -26,7 +26,7 @@ Parent context is now available within your Kanban board as a new field for work
 
 ### Add parent field to backlog and queries
 
-The parent field is now available when viewing backlogs and query results. To add the parent field, use the **Column options**s view.
+The parent field is now available when viewing backlogs and query results. To add the parent field, use the **Column options** view.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/159_02.png)

@@ -23,7 +23,6 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 > [!NOTE]
 > The Python Twine Upload Authenticate task in Azure Pipelines is currently in public preview.
 
-
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -35,9 +34,9 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 ## Arguments
 
 
-| Argument                                                             | Description                                                         |
-| ---------------------------------------------------------------------| ------------------------------------------------------------------- |
-| `artifactFeed`<br/>My feed (select below)                            | (Optional) An Azure Artifacts feed name to authenticate with `twine`. |
+| Argument| Description|
+| --------| -----------|
+| `artifactFeed`<br/>My feed| (Optional) An Azure Artifacts feed name to authenticate with `twine`. |
 | `pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A <a href="~/pipelines/library/service-endpoints.md#sep-python-upload" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#sep-python-upload)">twine service connection</a> name from external organization to authenticate with `twine`. The credentials stored in the endpoint must have package upload permissions. |
 | [!INCLUDE [temp](../_shared/control-options-arguments.md)] |
 

@@ -1,5 +1,5 @@
----
-title: Understand how work items are used to track user stories, issues, bugs, features, and epics 
+﻿---
+title: Using work items to track user stories, issues, & more
 titleSuffix: Azure Boards and TFS
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
 ms.custom: work-items, seodec18

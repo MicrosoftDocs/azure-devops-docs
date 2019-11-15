@@ -1,5 +1,6 @@
 ---
 title: TFS/Core/Contracts WebApiProject API | Extensions for Azure DevOps Services
+description: Data representation of a Web API project.
 ms.assetid: 9ba5c949-af0e-6e6d-431c-5066d35cb046
 ms.prod: devops
 ms.technology: devops-ecosystem

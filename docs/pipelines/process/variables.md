@@ -129,7 +129,7 @@ You can set a variable for a build pipeline by following these steps:
 - Navigate to **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
 - Locate the **Variables** for this pipeline.
 - Add or update the variable.
-- To mark the variable as secret and store in an encrypted manner, select the ![Secret](_img/variables/secret-variable-icon.png) lock icon.
+- To mark the variable as secret, select **Keep this value secret**.
 - Save the pipeline.
 
 Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
@@ -379,6 +379,37 @@ jobs:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
   - script: "echo $(myVarFromJobsA1)"
+    name: echovar
+```
+
+The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
+
+```yaml
+jobs:
+
+# Set an output variable from a deployment
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job for the first slice
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
 

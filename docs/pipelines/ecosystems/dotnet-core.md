@@ -495,6 +495,9 @@ steps:
 # ...
 # do this near the end of your pipeline in most cases
 - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+- task: NuGetAuthenticate@0
+  input:
+    nuGetServiceConnections: '<Name of the NuGet service connection>'
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -502,16 +505,6 @@ steps:
     publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
     versionEnvVar: version
-```
-
-To publish a NuGet package as an Azure Artifacts feed, add this snippet:
-
-```yaml
-steps:
-- task: NuGetAuthenticate@0
-  #inputs:
-    #nuGetServiceConnections: MyOtherOrganizationFeed, MyExternalPackageRepository # Optional
-    #forceReinstallCredentialProvider: false # Optional
 ```
 
 For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  
