@@ -40,7 +40,7 @@ To delete a pipeline using Azure CLI, you can use the [az devops pipeline delete
 
 ### az pipelines list
 
-```AzureCLI
+```azurecli-interactive
 az pipelines list [--detect {false, true}]
                   [--folder-path]
                   [--name]
@@ -66,7 +66,7 @@ az pipelines list [--detect {false, true}]
 
 ### az pipelines delete
 
-```AzureCLI
+```azurecli-interactive
 az pipelines delete --id
                     [--detect {false, true}]
                     [--org]
@@ -83,5 +83,21 @@ az pipelines delete --id
 - **yes** or **y**: Do not prompt for confirmation.
 
 ### Example
+
+> [!NOTE]
+> This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli-interactive
+az pipelines list --output table
+
+ID    Path    Name           Status    Default Queue
+----  ------  -------------  --------  ------------------
+6     \       FabrikamFiber  enabled   Hosted Ubuntu 1604
+
+az pipelines delete --id 6 --output table
+
+Are you sure you want to delete this pipeline? (y/n): y
+Pipeline 6 was deleted successfully.
+```
 
 * * *
