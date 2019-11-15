@@ -16,7 +16,7 @@ ms.date: 11/08/2019
 
 [!INCLUDE [version-vsts-tfs-2017-on](../../../boards/_shared/version-vsts-tfs-2017-on.md)]
 
-Extensions enhance the Azure DevOps Services user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
+Extensions enhance the Azure DevOps Services user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target.
 
 >[!NOTE]
 >To learn more about the Azure DevOps Services extensibility model, see the [Contribution model](../../develop/contributions-overview.md) for an overview.
@@ -41,10 +41,10 @@ Here are the most common, Microsoft-provided hub groups that hubs can be contrib
 
 Name                | ID                                         | Level                           | Preview
 --------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![azure repos](./vss/code/web/_img/azure-repos.png)
-Boards               | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![azure boards](./vss/work/web/_img/azure-boards.png)
-Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![azure pipelines](./vss/build/web/_img/azure-pipelines.png)
-Test Plans                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![test plans](./vss/test/web/_img/azure-test-plans.png)
+Azure Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![azure repos](./vss/code/web/_img/azure-repos.png)
+Azure Boards               | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![azure boards](./vss/work/web/_img/azure-boards.png)
+Azure Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![azure pipelines](./vss/build/web/_img/azure-pipelines.png)
+Azure Test Plans                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![test plans](./vss/test/web/_img/azure-test-plans.png)
 Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](vss/test/web/_img/project-settings.png)
 Organization settings  | `ms.vss-web.collection-admin-hub-group`    | Organization (or collection)      | ![organization admin](vss/test/web/_img/organization-settings.png)
 
