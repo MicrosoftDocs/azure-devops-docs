@@ -21,7 +21,7 @@ The Azure DevOps Extension has been optimized for Azure Repos to work well with 
 
 The Azure DevOps Extension evaluates if your current working directory is an Azure Repos git repository to auto detect configuration setting - organization, project, and repository. Auto detection is controlled by the `--detect` flag, which is `true` by default.
 
-Wih this capability, you can run `az repos pr list` in your local git checkout to view all PRs in the repository.
+With this capability, you can run `az repos pr list` in your local git checkout to view all PRs in the repository.
 
 You can also configure the Azure DevOps Extension to add git aliases for common git-based Azure Repos commands like creating or adding reviewers to pull requests. Run the following command to enable git aliases.
 
