@@ -202,6 +202,7 @@ You define both areas and iterations from the **Work** pages of the project admi
     ![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
+
 <a id="add-areas" /><br/>
 <a id="add-areas-team-services" />
 <a id="tfs-15-area-paths" />
@@ -242,8 +243,6 @@ If you haven't added any areas or teams, you'll see that only one area is define
     > ![Add a new area path](_img/areas/new-area-vert.png) 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range="azure-devops"
 
 <a id="add-area" /> 
 
@@ -299,8 +298,6 @@ ID     Identifier                            Name    Path                       
 
 * * *
 
-::: moniker-end
-
 ::: moniker range=">= tfs-2018 < azure-devops"
 
 > [!div class="mx-imgBorder"]  
@@ -313,6 +310,7 @@ ID     Identifier                            Name    Path                       
     > [!div class="mx-imgBorder"]  
     > ![Add a new area path](_img/areas/new-area-vert.png) 
 
+::: moniker-end
 
 ::: moniker range="tfs-2017"  
 
@@ -391,8 +389,6 @@ You define both areas and iterations from **Project Settings > Team configuratio
 ::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range="azure-devops"
 
 <a id="list-team-area-paths" /> 
 
@@ -536,8 +532,6 @@ The default area path determines the default area path assigned to work items th
 
 <a id="set-team-area-paths" /> 
 
-::: moniker range="azure-devops"
-
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
@@ -663,8 +657,6 @@ When you rename an area or an iteration, or move the node within the tree hierar
 > When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range="azure-devops"
 
 You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
