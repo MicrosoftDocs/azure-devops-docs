@@ -71,7 +71,7 @@ You can also use group mentions. Enter the name of a team or a security group, c
 
 To <strong>@mention</strong> a user you've never selected previously, just continue to enter the entire name to perform your search against the full directory.  
 
-Names of those that you mention appear in <span style="color:#0099FF">blue text</span>. Choose the<strong>@mention link name</strong> to open the user's contact card, which can provide you additional context for why they were pulled into the conversation.  
+Names of those that you mention appear in <span style="color:#0099FF">blue text</span>. Choose the <strong>@mention link name</strong> to open the user's contact card, which can provide you additional context for why they were pulled into the conversation.  
 
 ![Web portal, At mention user contact card accessible](_img/at-mention-link-to-user-contact-card.png)  
 
