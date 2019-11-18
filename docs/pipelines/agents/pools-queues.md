@@ -168,7 +168,104 @@ If you are a project team member, you create and manage agent queues from the ag
 
 ::: moniker range="azure-devops"
 
-test cli stuff
+[List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [List agent queue details](#list-agent-queue-details)
+
+> [!NOTE]
+> At this time you can only view information about agent pools and queues using the Azure CLI.
+
+### List agent pools
+
+```azurecli
+az pipelines pool list [--action {manage, none, use}]
+                       [--detect {false, true}]
+                       [--org]
+                       [--pool-name]
+                       [--pool-type {automation, deployment}]
+```
+
+#### Parameters
+
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **pool-name**: Filter the list with matching pool name.
+- **pool-type**: Filter the list with type of pool. Accepted values: **automation**, **deployment**
+
+#### Example
+
+The following example lists all pools in table format. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines pool list --output table
+
+ID    Name                             Is Hosted    Pool Type
+----  -------------------------------  -----------  -----------
+1     Default                          False        automation
+2     Hosted                           True         automation
+3     Hosted VS2017                    True         automation
+4     Hosted Windows 2019 with VS2019  True         automation
+5     Hosted Windows Container         True         automation
+6     Hosted macOS                     True         automation
+7     Hosted macOS High Sierra         True         automation
+8     Hosted Ubuntu 1604               True         automation
+9     Azure Pipelines                  True         automation
+10    MyAgentPool                      False        automation
+
+```
+
+### Show agent pool details
+
+```azurecli
+az pipelines pool show --id
+                       [--action {manage, none, use}]
+                       [--detect {false, true}]
+                       [--org]
+```
+
+#### Parameters
+
+- **id** or **pool-id**: (Required) Id of the pool to list the details.
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+
+#### Example
+
+The following example displays pool details for the Hosted Windows 2019 with VS2019 pool. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+ az pipelines pool show --id 4
+
+{
+  "agentCloudId": 1,
+  "autoProvision": true,
+  "autoSize": null,
+
+  <Some properties removed for space>
+
+  "poolType": "automation",
+  "properties": null,
+  "scope": "941fcaeb-be37-4309-b7b0-5cf156e1236e",
+  "size": 1,
+  "targetSize": 1
+}
+```
+
+You can also use `--output table` which returns the same information as the `list` command.
+
+```azurecli
+ az pipelines pool show --id 4 --output table
+
+ID    Name                             Is Hosted    Pool Type
+----  -------------------------------  -----------  -----------
+4     Hosted Windows 2019 with VS2019  True         automation
+```
+
+### List agent queues
+
+### List agent queue details
+
+
 
 ::: moniker-end
 
