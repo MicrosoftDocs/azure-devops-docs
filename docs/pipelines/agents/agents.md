@@ -502,15 +502,7 @@ Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
-You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
-
-1. In your web browser, navigate to Agent pools:
-
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
-
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [Show agent details](#show-agent-details).
 
 ## Q & A
 
