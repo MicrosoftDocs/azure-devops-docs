@@ -84,8 +84,6 @@ As needed, you can do the following actions at any time:
 
 ## Open Project Settings, list project areas
 
-## Configure working days
-
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
