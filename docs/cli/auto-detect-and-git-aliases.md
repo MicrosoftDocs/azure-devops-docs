@@ -59,11 +59,11 @@ Say a customer runs the following commands
 
 In this case, the organization and project parameters are provided via defaults and via command parameters. As per the hierarchy, the command parameters are given top priority and will be used for the command run.
 
-Let's have a look another example. Say a user user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `ON` by default. 
+Let's have a look at another example. Say a user user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `ON` by default. 
 
 ```bash
 ~/contosoTest/portal$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
 ~/contosoTest/portal$ az repos list
 ```
 
-In this case, the `contosoTest` and `testApplication` will be auto detected as the target organization and project in the command and will override the defaults that have been set.
+In this case, `contosoTest` and `testApplication` will be auto detected as the target organization and project from git context and will override the defaults that have been set.
