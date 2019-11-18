@@ -171,7 +171,7 @@ If you are a project team member, you create and manage agent queues from the ag
 [List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
 
 > [!NOTE]
-> At this time you can only view information about agent pools and queues using the Azure CLI.
+> At this time you can view information about agent pools and queues, but not edit them, using the Azure CLI.
 >
 > If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -235,14 +235,14 @@ az pipelines pool show --id
 The following example displays pool details for the Hosted Windows 2019 with VS2019 pool. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
- az pipelines pool show --id 4
+az pipelines pool show --id 4
 
 {
   "agentCloudId": 1,
   "autoProvision": true,
   "autoSize": null,
 
-  <Some properties removed for space>
+  <Some properties omitted for space>
 
   "poolType": "automation",
   "properties": null,
