@@ -10,7 +10,7 @@ Head over to Azure DevOps and take a look.
 
 ## Feedback
 
-We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
+We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Make a suggestion](../../_img/make-a-suggestion.png)

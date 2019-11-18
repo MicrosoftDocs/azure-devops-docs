@@ -117,7 +117,7 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 ### Use a template parameter as part of a condition
 
-Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions.
+Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is false.
 
 ```yaml
 parameters:
@@ -125,8 +125,9 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', false))
 ```
+
 ### Use the output variable from a job in a condition in a subsequent job
 
 You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-in-script). 
