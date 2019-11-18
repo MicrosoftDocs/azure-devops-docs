@@ -106,7 +106,7 @@ The blue area indicates the number of work items active or in progress each day 
 > ![Choose another team](_img/burndown/analytics-burndown-stories-count-past-s159.png) 
 
 > [!NOTE]  
-> The **Total Scope** line reflects the number of work items added to the sprint. If the team's default iteration is the **@CurrentIteration**, then new work items are added to the current iteration. The scope decreases as the Iteration Path is modified to another sprint, or work items are completed.  
+> The **Total Scope** line reflects the number of work items added to the sprint. If the team's default iteration is the **\@CurrentIteration**, then new work items are added to the current iteration. The scope decreases as the Iteration Path is modified to another sprint, or work items are completed.  
 
 ::: moniker-end
  
@@ -481,9 +481,9 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 	- **Burndown on** - Choose how you want to burndown. You may burndown by count of work items or a sum based on a selected field.  
 
-	- **Select iteration** - You may select **@CurrentIteration**, or a specific iteration.  
+	- **Select iteration** - You may select **\@CurrentIteration**, or a specific iteration.  
 
-	- **Time period** - If you selected **@CurrentIteration**, these dates are not editable, as they will be automatically to the start/end date of the current iteration. If you selected a specific iteration, you may customize the start/end date for the burndown chart. 
+	- **Time period** - If you selected **\@CurrentIteration**, these dates are not editable, as they will be automatically to the start/end date of the current iteration. If you selected a specific iteration, you may customize the start/end date for the burndown chart. 
 
 2. **Advanced features**:  Check the boxes of the following options that you want to add to your chart.    
     - **Show total scope**: Displays both the historical and projected scope increase.  
