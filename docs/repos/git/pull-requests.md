@@ -40,7 +40,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
    ![Viewing completed and abandoned pull requests in Azure Repos](_img/pull-requests/pr_status_widget.png)
 
-   You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
+1. You can view all of your pull requests across different projects in your organization by choosing **Pull requests** in the **My Work** view.
 
    ![View all your pull requests](_img/pull-requests/view-all-my-pull-requests.png)
 
@@ -74,7 +74,7 @@ Create a new pull request from:
 
 - [Pushed feature branches to your Git repo](#after-pushing-a-branch)
 - [The **Development** section in a linked work item](#from-a-linked-work-item)
-- [From the Pull requests page on the web](#from-the-pull-requests-page-on-the-web)
+- [From the Pull Requests page on the web](#from-the-pull-requests-page-on-the-web)
 - [Team Explorer in Visual Studio](#from-visual-studio) 
 - [Using the Azure DevOps Services CLI](#from-the-azure-devops-services-cli)
 
@@ -115,7 +115,7 @@ Create a pull request directly from a work item linked to the branch.
 
 The link takes you to a page where you can [enter your pull request details](pull-requests.md#finish) and create the pull request.
 
-### From the Pull requests page on the web
+### From the Pull Requests page on the web
 
 Create pull requests from any branch from the **Pull Request** page on the web.
 
@@ -150,7 +150,7 @@ Initiate pull requests directly from Visual Studio.
 
 ### From the Azure DevOps Services CLI
 
-You can now manage your pull requests and other resources the command line with [azure-devops](/cli/azure/ext/azure-devops/?view=azure-cli-latest). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
+You can now manage your pull requests and other resources from the command line with [azure-devops](/cli/azure/ext/azure-devops/?view=azure-cli-latest). Azure Repos and Azure DevOps Server, formerly Team Foundation Server 2017 Update 2 or later, support pull requests by using the command line.
 
 For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
@@ -339,7 +339,7 @@ Select **Files** to view the changes made to the source branch next to the targe
 
 ![Pull request files](_img/pull-requests/pull-request-files.png)
 
-Review previous versions of the code from the **All updates** drop-down.
+Review previous versions of the code from the **All updates** drop-down list.
 Every time Azure Repos updates the branch, it adds a new version to the list and on the **Updates** tab.
 
 The diff view updates as you select different changes.
@@ -348,7 +348,7 @@ Catch up with a pull request after being away from it by stepping through change
 
 ![Pull request updates](_img/pull-requests/pull-request-file-updates.png)
 
-Browse a list of changes by push from the author using **Updates**.
+Browse a list of changes from the author using **Updates**.
 
 ![Pull request updates](_img/pull-requests/pull-request-updates.png)
 
@@ -369,7 +369,7 @@ Update comment status to let reviewers know what you are doing to address the co
 
 ![Reviewing comments in Azure Repos pull requests](./_img/pull-requests/pr-comments-reply-and-resolve.png)
 
-Additional options are available in the comment resolution drop-down.
+Additional options are available in the comment resolution drop-down list.
 
 ![Reviewing comments in Azure Repos pull requests](./_img/pull-requests/pr-comment-resolution.png)
 
@@ -382,7 +382,7 @@ Additional options are available in the comment resolution drop-down.
 ### Vote on the changes
 
 Use the button at the upper right to vote on the changes in a pull request.
-The default option is **Approve**, but you can select other options from the drop-down:
+The default option is **Approve**, but you can select other options from the drop-down list:
 
 ![Pull request voting options](./_img/pull-requests/pr-voting-options.png)
 
@@ -394,9 +394,7 @@ The default option is **Approve**, but you can select other options from the dro
 
 The number of required approvals in a pull request can be set from the [branch policy](branch-policies.md) for the branch. A pull request that meets the required number of approvals can be completed. Even if other reviewers reject the changes, the pull request is completed.
 
- When you configure the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy, select **Reset code reviewer votes when there are new changes** to reset votes when you push new changes.
-
-![List of Pull Request voters in Azure Repos](./_img/pull-requests/Approval.png)
+When you configure the [Require a minimum number of reviewers](branch-policies.md#require-a-minimum-number-of-reviewers) branch policy, select **Reset code reviewer votes when there are new changes** to reset votes when you push new changes.
 
 Best practice: At least two reviewers should review and approve the changes in a significant pull request.  
 
@@ -446,7 +444,7 @@ Linked work items are also updated showing the pull request completion.
 
 ### Complete automatically
 
-Select **Set auto-complete** from the **Complete** button drop-down to complete the pull request and merge the changes as soon the meet all [branch policies](branch-policies.md).
+Select **Set auto-complete** from the **Complete** drop-down list to complete the pull request and merge the changes as soon the meet all [branch policies](branch-policies.md).
 When the conditions satisfy branch policies, the pull request is completed. You receive an email notification. If there's a conflict or an error completing the pull request, email notifies you of the issue.
 
 Once you set auto-complete, the pull request displays a banner.
@@ -470,7 +468,7 @@ Reactivate an abandoned pull request at any time. Select the pull request from t
 <a name="notifications"></a>
 ## Receiving notification of pull request updates
 
-Subscribe to email alerts to get notified when changes are made to your pull requests.
+Subscribe to email alerts to get notified for changes to your pull requests.
 
 >[!NOTE]
 >By default, you are subscribed to several common pull request notifications. For a complete list of default notification subscriptions, see [Out-of-the-box (OOB) or default subscriptions](../../notifications/oob-built-in-notifications.md#out-of-the-box-oob-or-default-subscriptions)
@@ -485,7 +483,7 @@ Subscribe to email alerts to get notified when changes are made to your pull req
 
   ![Subscribe to emails](./_img/pull-requests/new-subscription-new-nav.png)
 
-- To edit a notification, select **...** for the notification and choose **View** to edit the subscription. 
+- To edit a notification, select **...** for the notification and choose **View** to edit the subscription.
 
   ![Change subscription](./_img/pull-requests/view-pr-notifications.png)
 
@@ -531,7 +529,7 @@ To undo the changes in a pull request, follow these steps:
 1. Select **Create pull request** to merge the newly created branch in a second pull request to complete the revert.
 
 > [!NOTE]
-> The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch does not contain a reverted commit for each of the commits merged in the original pull request.
+> The branch created during this revert has a single commit that reverts the file changes in the pull request. The branch doesn't contain a reverted commit for each of the commits merged in the original pull request.
 
 ## Cherry-pick a pull request
 

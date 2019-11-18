@@ -68,14 +68,14 @@ If you don't have a Git repository yet, you can create one [using your own code]
     git clone https://dev.azure.com/fabrikam-fiber/_git/FabrikamFiber
     ```
 
-Git downloads and creates your own copy of the code in a new folder for you.
+   Git downloads and creates your own copy of the code in a new folder for you.
 
 * * *
 <a name="commit"></a>
 
 ## Commit your work
 
-Git [branches](branches.md) isolate your changes from other work being done in the project.
+Git [branches](branches.md) isolate your changes from other work in the project.
 The recommended [Git workflow](gitworkflow.md) uses a new branch for every feature or fix you work on.
 You make [commits](commits.md) in your local Git repository to save your changes on that branch.
 
@@ -84,7 +84,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
 
    ![Branches](_img/gitquickstart-vs2017/branches.png)
 
-1. Right-click the master branch and choose **New Local Branch From**
+1. Right-click the master branch and choose **New Local Branch From**.
 
    ![Creating a Local Branch off the Master branch in Visual Studio](_img/gitquickstart-vs2017/new-local-branch-menu.png)  
 
@@ -133,7 +133,7 @@ You make [commits](commits.md) in your local Git repository to save your changes
     git commit -a -m "Descriptive message"
     ```
 
-This command saves your changes locally to a new [commit](commits.md) in Git. Make sure to give the commit a short message that describes your changes after `-m`.
+   This command saves your changes locally to a new [commit](commits.md) in Git. Make sure to give the commit a short message that describes your changes after `-m`.
 
 * * *
 <a name="push"></a>
@@ -227,6 +227,6 @@ Pulling often makes sure that your feature branches from your main branch are us
     git pull
     ```
 
-Git downloads the changes and merges them with your own changes into your local branch.
+   Git downloads the changes and merges them with your own changes into your local branch.
 
 * * *

@@ -67,7 +67,7 @@ A project defines a process and data storage in which you manage your software p
 
     ::: moniker range=">= azure-devops-2019"
 
-    From the project summary page, hover over a service and then choose the page you want. To choose another project, choose Azure DevOps. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+    From the project summary page, hover over a service and then choose the page you want. To choose another project, choose **Azure DevOps**. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-vert.png)  
@@ -187,9 +187,9 @@ If you're not a member of an Azure DevOps security group, [get added to one](../
 
    ![Connect to Team Foundation Server dialog box](_img/connect-projects-tfs/IC671574.png)
 
-If it's your first time connecting, add TFS to the list of recognized servers.
+   If it's your first time connecting, add TFS to the list of recognized servers.
 
-![ALM\_EXL\_AddServer](_img/connect-projects-tfs/IC658167.png)
+   ![ALM\_EXL\_AddServer](_img/connect-projects-tfs/IC658167.png)
 
 If you selected just one project, you'll see the **Home** page for that project. The pages differ based on the resources enabled and the source control system selected for your project.
 
@@ -287,7 +287,7 @@ If your remote team uses a [Azure DevOps Proxy Server](/azure/devops/server/inst
 
 1. First, make sure that you've connected to Azure DevOps Server as described [in the previous section](#visual-studio).
 
-1. From the Visual Studio **Tools** menu, select **Options**, then select **Source Control** > **Plug-in Selection**. Confirm that **Visual Studio Team Foundation Server** is selected.
+1. From the Visual Studio **Tools** menu, select **Options**, then select **Source Control** > **Plug-in Selection**. Select **Visual Studio Team Foundation Server**.
 
     ![Plug-in Selection page, Options dialog box](_img/connect-projects-tfs/plug-in-selection-for-visual-studio.png)
 

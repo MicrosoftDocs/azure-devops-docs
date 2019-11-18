@@ -60,7 +60,7 @@ touch /home/frank/myrepo/.gitignore
 
 ---
 
-Git applies *.gitignore* to the folder and any child folders where it's located. Microsoft recommended you place your *.gitignore* in the root folder of your repo to prevent confusion.
+Git applies *.gitignore* to the folder and any child folders where it's located. We recommend you place your *.gitignore* in the root folder of your repo to prevent confusion.
 
 ### Customize your .gitignore
 
@@ -156,10 +156,10 @@ git update-index --no-assume-unchanged <file>
 #### Permanently ignore changes to a file
 
 If a file is already tracked by Git, adding that file to your *.gitignore* isn't enough to ignore changes to the file.
-You also need to remove the information about the file from Git's index:
+You also need to remove the information about the file from Git's index.
 
 > [!NOTE]
-> These steps do not delete the file from your system. They just tell Git to ignore future updates to the file.
+> These steps don't delete the file from your system. They just tell Git to ignore future updates to the file.
 
 1. Add the file in your *.gitignore*.
 
