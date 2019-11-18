@@ -107,7 +107,7 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ## Set WIP limits
 
-With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
+With an understanding of how you'll use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
