@@ -1,5 +1,5 @@
 ---
-title: Azure IoTEdge task
+title: Azure IoT Edge task
 description: Build, test, and deploy applications quickly and efficiently to Azure IoT Edge
 ms.topic: reference
 ms.prod: devops

@@ -13,7 +13,7 @@ ms.topic: include
 
 1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
   
-2. From your home page, open your profile and select **Azure DevOps profile**.
+2. From your home page, open your user settings, and then select **Profile**.
 
    ![My profile Team Services](_img/my-profile-team-services-preview.png)
 
@@ -131,7 +131,7 @@ When you don't need your token anymore, just revoke it to remove access.
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, open your profile and select **Azure DevOps profile**.
+1. From your home page, open your user settings, and then select **Profile**.
 
    ![My profile Team Services](_img/my-profile-team-services-preview.png)
 

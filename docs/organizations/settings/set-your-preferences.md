@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/05/2019
+ms.date: 11/13/2019
 ---
 
 # Set user preferences
@@ -35,7 +35,7 @@ From your profile page, you can change your picture or other account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-1. To change your user preferences, open your profile menu, and then select **Azure DevOps profile**.
+1. From your home page, open your user settings, and then select **Profile**.
 
    ![Open Azure DevOps profile](_img/open-profile-user-settings-preview.png)
 

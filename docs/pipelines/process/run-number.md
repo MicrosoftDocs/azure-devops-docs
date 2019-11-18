@@ -53,7 +53,7 @@ At the time a run is started:
 
 * Branch: master
 
-* Run ID: 752
+* Build ID/Run ID: 752
 
 * Date: May 5, 2019.
 
@@ -76,7 +76,7 @@ The following table shows how each token is resolved based on the previous examp
 | Token | Example replacement value |
 | ----- | ------------------------- |
 | `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
-| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID.|
+| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
 | `$(Hours)` | 21 |
