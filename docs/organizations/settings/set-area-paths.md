@@ -386,8 +386,6 @@ You define both areas and iterations from **Project Settings > Team configuratio
     > [!div class="mx-imgBorder"]  
     > ![Team Configuration, Team breadcrumb](_img/team-defaults/select-team-context.png) 
 
-::: moniker-end
-
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="list-team-area-paths" /> 
@@ -621,7 +619,6 @@ When you rename an area or an iteration, or move the node within the tree hierar
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
-
 
 1. To rename an area or iteration path, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
 
