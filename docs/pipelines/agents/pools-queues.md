@@ -55,6 +55,9 @@ When you create a pipeline, you specify which pool it uses.
 
 ::: moniker-end
 
+
+
+
 ::: moniker range="<= tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
@@ -74,6 +77,8 @@ If you are a project team member, you create and manage agent queues from the ag
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+
+
 
 ## Default agent pools
 
@@ -133,8 +138,46 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 * * *
 
+### Managing pools and queues
+
+#### [Browser](#tab/browser)
+
+::: moniker range="<= tfs-2018"
+You create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+
+::: moniker range="<= tfs-2018"
+You create and manage agent queues from the agent queues tab in project settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
+::: moniker-end
+
+[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
+
+test cli stuff
 
 ::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
+
+
+
+
+
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 
