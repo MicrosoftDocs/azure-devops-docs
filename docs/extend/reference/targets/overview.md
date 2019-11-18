@@ -88,10 +88,10 @@ See [how to add an action](../../develop/add-action.md) for details on contribut
 
 Name                              | Target ID                                           | Preview 
 ----------------------------------|-----------------------------------------------------|-------------------
-Organization (collection) overview toolbar       | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
-Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               | 
-Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
-Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
+Organization (collection) overview toolbar       | ![Organization overvew toolbar](vss/web/_img/organization-overview-toolbar.png)`ms.vss-admin-web.collection-overview-toolbar-menu` | 
+Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               |![Projects grid](vss/web/_img/projects-grid.png) 
+Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    |![Project overview toolbar](vss/web/_img/project-overview-toolbar.png) 
+Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  |![Project overvew teams grid](vss/web/_img/project-overview-teams-grid.png) 
 
 <a name="menus_build"></a>
 <a name="menu_release"></a>
