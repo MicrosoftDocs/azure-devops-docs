@@ -1,7 +1,7 @@
 ---
 title: Auto detect configuration and git aliases
 titleSuffix: Azure DevOps 
-description: Auto detect configuration and git aliases when using Azure DevOps extension command line interface 
+description: Auto detect configuration and git aliases when using Azure DevOps extension command-line interface 
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.prod: devops 
@@ -19,19 +19,18 @@ ms.date: 06/18/2019
 
 The Azure DevOps Extension has been optimized for Azure Repos to work well with git workflows.
 
-The Azure DevOps Extension evaluates if your current working directory is an Azure Repos git repository to auto detect configuration setting - organization, project and repository. This is achieved using the `detect` flag which is ON by default.
+The Azure DevOps Extension evaluates if your current working directory is an Azure Repos git repository to auto detect configuration setting - organization, project, and repository. The auto detection is controlled by the `detect` flag, which is ON by default.
 
-If you are working in a local check out of a repository, you can simply run `az repos pr list` from the local directory to view all PRs.
+If you are working in a local check out of a repository, you can run `az repos pr list` from the local directory to view all PRs.
 
-You can also configure the Azure DevOps Extension to add git aliases for common git-based Azure Repos commands like creating or adding reviewers to pull requests. This can be enabled by running the following command:
+You can also configure the Azure DevOps Extension to add git aliases for common git-based Azure Repos commands like creating or adding reviewers to pull requests. Run the following command to enable git aliases.
 
 
 ```bash
 az devops configure --use-git-aliases true
 ```
 
-This will alias all `az repos` commands to `git repo` and all `az repos pr` commands to `git pr`.
-So `az repos list` becomes `git repo list` and `az repos pr list` becomes `git pr list`
+All `az repos` commands will now be aliased to `git repo` and all `az repos pr` commands to `git pr`.
 
 For example, a pull request can now be created using the following command:
 
@@ -40,7 +39,7 @@ For example, a pull request can now be created using the following command:
 git pr create --target-branch {branch\_name}
 ```
 
-## Parameter detection hierarcy
+## Parameter detection hierarchy
 
 There are three main ways by which parameters can be provided to a command and they have been listed in order of priority:
 1. Command parameters
@@ -59,7 +58,7 @@ Say a customer runs the following commands
 
 In this case, the organization and project parameters are provided via defaults and via command parameters. As per the hierarchy, the command parameters are given top priority and will be used for the command run.
 
-Let's have a look at another example. Say a user user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `ON` by default. 
+Let's have a look at another example. Say a user has pre-configured the default organization to `contoso` and project to `webApp`. However, the user is working out of a local checkout of a git repo, which is in the `contosoTest` organization and `testApplication` project. Further, `--detect` is `ON` by default. 
 
 ```bash
 ~/contosoTest/portal$ az devops configure --defaults organization=https://dev.azure.com/contoso project=webApp
