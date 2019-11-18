@@ -45,7 +45,7 @@ There are three main ways by which parameters can be provided to a command and t
 1. Command parameters
 For example: 
 `az repos list --organization https://dev.azure.com/contoso --project webApplication`
-2. Auto detection from git context if --detect is on. Detect is on by default. 
+2. Auto detection from git context if --detect is TRUE. Detect is TRUE by default. 
 3. Default configuration
 For example: 
 `az devops configure --defaults organization=https://dev.azure.com/contoso project=webApplication`
