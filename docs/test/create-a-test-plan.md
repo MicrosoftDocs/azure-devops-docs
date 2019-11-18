@@ -90,7 +90,7 @@ To create and edit a test artifact, you must have one of the following access le
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
 >[!NOTE]
-> Stakeholders cannot create or manage test cases. You must have at least Basic access.
+> Stakeholders can't create or manage test cases. You must have at least Basic access.
 See [Default manual testing permissions and access](manual-test-permissions.md).
 
 ::: moniker-end
@@ -126,7 +126,7 @@ You need a project. For more information, see [create your project](../organizat
 
 Now add test suites for the backlog items that need manual tests. These tests could be user stories, requirements, or other work items based your project.
 
-1. To add a suite to a test plan, select the **+** new drop-down and choose a type of test suite.
+1. To add a suite to a test plan, select the **+** new drop-down list and choose a type of test suite.
 
    ![Creating a requirement-based test suite](_img/create-a-test-plan/AddRequirementSuitesToTestPlan.png) 
 

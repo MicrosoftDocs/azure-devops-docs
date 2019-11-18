@@ -105,7 +105,7 @@ Team Explorer merges when you do a **Pull** or a **Sync** from the **Changes** v
 
    ![Synchronization view](_img/pulling/sync.png)
 
-1. Review the confirmation message is displayed when the sync operation completes.
+1. Review the confirmation message when the sync operation completes.
 
    ![Synch operation complete](_img/pulling/sync-results.png)
 
@@ -142,13 +142,13 @@ updates files in your open project, so make sure to [commit your changes](commit
 
    ![Synchronization view](_img/pulling/synchronization-menu.png)
 
-1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch. 
+1. In **Synchronization**, choose **Pull** to fetch remote changes and merge them into your local branch.
 
    ![Pull](_img/pulling/pull.png)
 
    There are two **Pull** links, one near the top and one in the **Incoming Commits** section. You can use either one.
 
-1. Review the confirmation message is displayed when the pull operation completes.
+1. Review the confirmation message when the pull operation completes.
 
    ![Pull operation complete](_img/pulling/pull-results.png)
 
@@ -191,7 +191,7 @@ To merge the latest changes from the master branch to your branch:
 
 1. In Team Explorer, select the **Home** button and choose **Branches**.
 
-1. Make sure that your target branch is checked out. Right-click the target branch, and choose **Merge From**.
+1. Check out your target branch. Right-click the target branch, and choose **Merge From**.
 
    ![Merge from](_img/pulling/merge-from-menu.png)
 
