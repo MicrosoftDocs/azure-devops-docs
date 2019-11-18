@@ -125,7 +125,7 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 #### [Browser](#tab/browser)
 
-You can view the details of an agent, including its system capabilities, and manage its user capabilities by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
+You can view the details of an agent, including its version and system capabilities, and manage its user capabilities, by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
 1. In your web browser, navigate to Agent pools:
 
@@ -138,6 +138,8 @@ You can view the details of an agent, including its system capabilities, and man
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 ::: moniker range="azure-devops"
+
+You can view the details of an agent, including its version, and system and user capabilities, by using the following `az pipelines` Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
