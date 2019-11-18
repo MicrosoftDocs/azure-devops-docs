@@ -172,6 +172,8 @@ If you are a project team member, you create and manage agent queues from the ag
 
 > [!NOTE]
 > At this time you can only view information about agent pools and queues using the Azure CLI.
+>
+> If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List agent pools
 
