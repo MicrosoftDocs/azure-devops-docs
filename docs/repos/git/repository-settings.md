@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
-ms.date: 10/12/2018
+ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -36,13 +36,27 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ## View and edit repository settings
 
-::: moniker range=">= azure-devops-2019"
+#### [Browser](#tab/browser)
+
+::: moniker range="azure-devops-2019"
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
    ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
 
-2. Select **options** to view and configure your repository settings.
+2. Select **Options** to view and configure your repository settings.
+
+   ![The options UI](_img/repository-settings/repository-settings-server-2019.png)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
+
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
+
+2. Select **Options** and **Policies** to view and configure your repository settings.
 
    ![The options UI](_img/repository-settings/repository-settings.png)
 
@@ -71,6 +85,99 @@ You may also want to learn about client-side [Git preferences](git-config.md).
    ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
+
+You can use Azure CLI to configure [Case enforcement](#case-enforcement) policy.
+
+[Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy)
+
+> [!NOTE]
+> If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+### Create case enforcement policy
+
+```azurecli
+az repos policy case-enforcement create --blocking {false, true}
+                                        --enabled {false, true}
+                                        --repository-id
+                                        [--detect {false, true}]
+                                        [--org]
+                                        [--project]
+```
+
+#### Parameters
+
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+
+#### Example
+
+The following example creates a blocking case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos policy case-enforcement create --blocking true --enabled true --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c
+{
+
+  <Some properties omitted for space>
+
+  },
+  "createdDate": "2019-11-19T15:34:38.854450",
+  "id": 4,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+
+  <Some properties omitted for space>
+
+}
+```
+
+### Update case enforcement policy
+
+```azurecli
+az repos policy case-enforcement update --id
+                                        [--blocking {false, true}]
+                                        [--detect {false, true}]
+                                        [--enabled {false, true}]
+                                        [--org]
+                                        [--project]
+                                        [--repository-id]
+```
+
+#### Parameters
+
+- **id** or **policy-id**: (Required) ID of the policy.
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **repository-id**: (Required) Id of the repository on which to apply the policy.
+
+#### Example
+
+The following example updates a case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos policy case-enforcement update --blocking false --enabled false --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --policy-id 4 --output table
+
+ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------  -------------  ------------  ------------------------------------  ------------
+4     Work item linking  False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 ## Forking
 
