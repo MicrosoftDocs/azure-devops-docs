@@ -53,3 +53,8 @@ and differences in how you [control organization access with Microsoft accounts 
     You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
 5. Add more users or groups, or save your changes if you're done.
+
+## Related articles
+
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Manage conditional access](manage-conditional-access.md)

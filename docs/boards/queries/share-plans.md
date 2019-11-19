@@ -1,4 +1,4 @@
----
+﻿---
 title: Share information in work items and social tools 
 titleSuffix: Azure Boards 
 description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 

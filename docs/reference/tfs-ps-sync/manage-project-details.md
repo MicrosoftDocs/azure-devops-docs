@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: ff9499ea-cd5b-4ede-aa1a-de8ef3d9e704
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 01/12/2017

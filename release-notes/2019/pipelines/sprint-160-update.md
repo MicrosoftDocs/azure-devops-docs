@@ -1,10 +1,11 @@
 ---
 title: Azure Pipelines - Sprint 160 Update
+description: See the Sprint 160 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/04/2019
+ms.date: 11/13/2019
 ---
 
 # Azure Pipelines - Sprint 160 Update

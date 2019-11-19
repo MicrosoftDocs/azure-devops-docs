@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -54,7 +54,7 @@ Learn more about the differences in how you
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-## Understand Azure AD groups
+## Azure AD groups
 
 ### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
 
@@ -136,6 +136,10 @@ A: No, but you might be interested in our [process customization plans](https://
 ## Add users to directory
 
 [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
+
+### Q: Why did I get an error stating that my organization has multiple active identities with the same UPN?
+
+A: During the connect process, we map existing users to members of the Azure AD tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don’t know how to map these users. This can happen if a user changes their UPN to match one already existing in the organization.
 
 ### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 
@@ -306,6 +310,10 @@ A: If you have more than 100 users, you can still connect, however you may need 
 ### Q: I have more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
 A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won’t work beyond 100. Please [contact support](https://azure.microsoft.com/support/devops/).
+
+### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
+
+A: The tenant cache needs to be cleared if you're using a GCM version prior to v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a login error like below. The GCM will automatically recreate and populate the cache file as needed on subsequent login attempts.
 
 <a name="get-support"></a>
 

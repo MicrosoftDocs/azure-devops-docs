@@ -183,7 +183,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* Azure Pipelines: `https://dev.azure.com/{organizaion}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
+* Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
