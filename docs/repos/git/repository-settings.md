@@ -123,7 +123,6 @@ The following example retrieves the IDs of the existing repositories using `az r
 
 ```azurecli
 az repos list --output table
-
 ID                                    Name           Default Branch    Project
 ------------------------------------  -------------  ----------------  -------------
 6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
@@ -216,7 +215,6 @@ The following example retrieves the IDs of the existing repositories using `az r
 
 ```azurecli
 az repos list --output table
-
 ID                                    Name           Default Branch    Project
 ------------------------------------  -------------  ----------------  -------------
 6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
@@ -258,7 +256,7 @@ az repos policy file-size update --id
 - **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+- **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **repository-id**: (Required) Id of the repository on which to apply the policy.
