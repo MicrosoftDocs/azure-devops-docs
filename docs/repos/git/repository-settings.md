@@ -99,6 +99,8 @@ You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Ma
 
 ### Create case enforcement policy
 
+Use `az repos case-enforcement create` to manage [Case enforcement](#case-enforcement) policy.
+
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
                                         --enabled {false, true}
@@ -146,6 +148,8 @@ az repos policy case-enforcement create --blocking true --enabled true --reposit
 
 ### Update case enforcement policy
 
+Use `az repos case-enforcement update` to manage [Case enforcement](#case-enforcement) policy.
+
 ```azurecli
 az repos policy case-enforcement update --id
                                         [--blocking {false, true}]
@@ -186,6 +190,8 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 ```
 
 ### Create file size policy
+
+Use `az repos policy file-size create` to manage  [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size create --blocking {false, true}
@@ -237,6 +243,8 @@ az repos policy file-size create --blocking true --enabled true --maximum-git-bl
 ```
 
 ### Update file size policy
+
+Use `az repos policy file-size update` to manage  [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size update --id
