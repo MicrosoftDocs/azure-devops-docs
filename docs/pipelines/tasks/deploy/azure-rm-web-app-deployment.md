@@ -295,9 +295,7 @@ Managed identities for Azure resources provides Azure services with an automatic
 No, web packages created using MSBuild task (with default arguments) has a nested folder structure that can only be deployed correctly by Web Deploy. To convert the packaging structure, follow the below steps 
 
 * In Build Solution task, change the MSBuild Arguments to
-
 /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="$(System.DefaultWorkingDirectory)\\WebAppContent"
-
 
 * Add Archive Task and change the inputs as follows:
   * Change *Root folder or file to archive* to
