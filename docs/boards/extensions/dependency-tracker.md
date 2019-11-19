@@ -20,7 +20,11 @@ ms.date: 11/07/2019
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
 
-<!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency --> 
+<!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency 
+
+https://microsoft.visualstudio.com/OS/_apps/hub/wdgeswm.dependencytracker.dependencytracker-hub#b4cd1b1c9c7ce3dfbaa3fabc9532a040
+
+--> 
 
 
 The [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you  to track the state of the dependencies as well as their timing to help support you in assessing the risk of dependencies to deliverables. 
@@ -40,7 +44,7 @@ Producing for/Consuming from link.
 
 ## Recommended use and sequence
 
-You can use the Dependency Tracker to visualize and track: 
+You can use Dependency Tracker to visualize and track the following work items: 
 - Dependencies on deliverables for work that your team is delivering  
 - Dependencies you have on other teams for work that your team is delivering 
 - Dependencies that other teams have on work your team is delivering 
@@ -93,7 +97,7 @@ A dependency represents work where one team is dependent on another team. Both t
 	If the partner team is in a different organization, then first choose the **Partner Account**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose parnter account](_img/tracker/choose-partner-organization.png)
+	> ![Choose partner account](_img/tracker/choose-partner-organization.png)
 
 1.  You can search for work items by ID or by entering a keyword contained within the work item title. Here, we link a user story and a bug. 
 
@@ -101,7 +105,7 @@ A dependency represents work where one team is dependent on another team. Both t
 	> ![Create a dependency, choose two existing work items to link](_img/tracker/create-dependency.png)
 
 	- The Producer is the team that commits to delivering the work.
-	- The Consumer is the team that needs or is dependency on the work.
+	- The Consumer is the team that needs or is dependent on the work.
 	- The fastest way to create a dependency link is to type the Producer and Consumer work item ids in the search boxes and then choose **Save**.
 
 	Optionally, you can choose **Create New** to add work items that you then link as dependent upon each other. Here we create two new features and link them. 
@@ -132,11 +136,20 @@ You can also link work items using the **Links** tab to create Successor/Predece
 > [!div class="mx-imgBorder"]  
 > ![Create links manually](_img/tracker/create-links-manually.png)
 
+> [!NOTE]   
+> The Successor/Predecessor (consumes/produces) link types are the default link types used by the Dependency Tracker. If you're projects are customized using a Hosted XML process model, it's possible to specify different link types in the Dependency Tracker configuration. See [Configure the Dependency Tracker](#configuration) later in this article.
+
 To learn more, see [Link user stories, issues, bugs, and other work items](../backlogs/add-link.md). 
 
 ## Remove dependency links
 
-Option from list, option from manual links. 
+You can remove a dependency by choosing the ![ ](../../_img/icons/actions-icon.png) actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
+
+> [!div class="mx-imgBorder"]  
+> ![Create links manually](_img/tracker/remove-dependency-link.png)
+
+Optionally, you can remove the link from the work item's **Links** tab. 
+
 
 ## Create a query of dependencies 
 
@@ -170,9 +183,9 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 - **Partner**: Check one or more check boxes for the leaf node of the Area Paths participating in the dependencies.  
 
 > [!NOTE]   
-> Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items which XXXX to w ork items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
+> Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items which XXXX to work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
 
-### Supported dril-ldowns 
+### Supported drill-downs 
 
 Several views provide interative visualization through drilldowns. 
 
