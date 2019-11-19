@@ -287,7 +287,7 @@ Managed identities for Azure resources provides Azure services with an automatic
 
 > [!NOTE]
 >
-> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) and configure managed identity for the virtual machine.
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up](/azure/devops/pipelines/agents/agents?view=azure-devops#install) a self hosted agent and configure managed identity for the virtual machine.
 
 
 ### Is *Publish using zip deploy* option supported for MSBuild package type?
