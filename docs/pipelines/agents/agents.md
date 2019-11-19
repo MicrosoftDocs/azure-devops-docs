@@ -246,7 +246,7 @@ This command group is in preview. It may be changed/removed in a future release.
 }
 ```
 
-You can also use `--output table` which returns the same information as the `list` command.
+You can also use `--output table` which returns an abbreviated version of the same information.
 
 ```azurecli
 az pipelines pool show --id 4 --output table
