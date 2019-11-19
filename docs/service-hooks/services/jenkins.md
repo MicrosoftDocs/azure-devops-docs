@@ -1,8 +1,8 @@
----
+﻿---
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Jenkins
+title: Create a service hook with Jenkins
 description: Use Jenkins with your Azure DevOps Services organization
 ms.assetid: 3e9cf797-092f-48da-a515-e4d0cc93c4a1
 ms.manager: mijacobs
