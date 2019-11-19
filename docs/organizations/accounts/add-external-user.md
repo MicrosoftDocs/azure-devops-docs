@@ -27,12 +27,12 @@ Learn how to invite external users to your organization, if you access Azure Dev
 > [!NOTE]   
 > To enable the new user interface for Organization Permissions Settings, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+#### [Current page](#tab/current-page)
 
    >[!div class="mx-imgBorder"]
    >![External guest access](_img/add-external-user/guest-access.png)
 
-#### [Current page](#tab/current-page)
+#### [Preview page](#tab/preview-page) 
 
    ![External guest access turned on](_img/add-external-user/guest-access-preview.png)
 
