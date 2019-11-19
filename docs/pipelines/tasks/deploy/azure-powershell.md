@@ -63,7 +63,6 @@ To resolve this issue, ensure the service principle/ authentication credentials 
 
 [!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
 
-
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
