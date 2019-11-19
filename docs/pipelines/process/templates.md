@@ -17,9 +17,14 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Use templates to define your logic once and then reuse it several times.
+Use templates to define your logic once and then reuse it several times. 
 Templates combine the content of multiple YAML files into a single pipeline.
 You can pass parameters into a template from your parent pipeline.
+
+## Types of Templates: Extends and Includes
+Includes templates let you copy content from one YAML and re-use it in a different YAML multiple times. This saves you from having to include the same logic in multiple places. You can quickly update content that is included in multiple places in one file. 
+
+Extends templates provide a framework that can be built in an additional YAML. An extends template defines the outer structure allowed in a YAML and then a pipeline author can implement the content that is allowed.   
 
 ## Step re-use
 
