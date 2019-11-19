@@ -199,8 +199,6 @@ az pipelines agent show --agent-id
 
 #### Parameters
 
-#### Parameters
-
 - **agent-id** or **id**: (Required) The agent ID to get information about.
 - **pool-id**: (Required) The agent pool containing the agents.
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
