@@ -31,12 +31,14 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 
 To delete a pipeline using Azure CLI, you can use the [az devops pipeline delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command. This command requires the `id` of the pipeline to delete, which you can get using the [az devops pipeline list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command. 
 
-[az pipelines list](#az-pipelines-list) | [az pipelines delete](#az-pipelines-delete) | [Example](#example)
+[List pipelines](#list-pipelines) | [Delete pipeline](#delete-pipeline) | [Example](#example)
 
 > [!NOTE]
 > If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-### az pipelines list
+### List pipelines
+
+You can list your pipelines using the [az pipelines list](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-list) command.
 
 ```azurecli
 az pipelines list [--detect {false, true}]
@@ -62,7 +64,9 @@ az pipelines list [--detect {false, true}]
 - **repository-type**: Limit results to pipelines associated with this repository type. It is mandatory to pass **repository** argument along with this argument. Accepted values: **bitbucket**, **git**, **github**, **githubenterprise**, **svn**, **tfsgit**, **tfsversioncontrol**
 - **top**: Maximum number of pipelines to list.
 
-### az pipelines delete
+### Delete pipeline
+
+You can delete a pipeline using the [az pipelines delete](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest#ext-azure-devops-az-pipelines-delete) command.
 
 ```azurecli
 az pipelines delete --id
