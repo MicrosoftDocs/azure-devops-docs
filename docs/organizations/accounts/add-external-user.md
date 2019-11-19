@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2019
+ms.date: 11/19/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -24,8 +24,19 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
 * You must set the policy **External guest access** to **On** for the organization that you want to invite external users to.
 
+> [!NOTE]   
+> To enable the new user interface for Organization Permissions Settings, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Current page](#tab/current-page)
+
    >[!div class="mx-imgBorder"]
    >![External guest access](_img/add-external-user/guest-access.png)
+
+#### [Preview page](#tab/preview-page) 
+
+   ![External guest access turned on](_img/add-external-user/guest-access-preview.png)
+
+* * *
 
 * You must be a member of the Project Collection Administrators  or Project Administrators group for the organization that you want to invite external users to.
 
