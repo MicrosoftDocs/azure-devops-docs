@@ -16,23 +16,6 @@ monikerRange: '>= tfs-2017 < azure-devops'
 
 [!INCLUDE [version-header-tfs-only](../../_shared/version-header-tfs-only.md)]
 
-- [Troubleshoot Search](#troubleshoot-search)
-  - [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
-  - [Q: Why are no search results shown after installing or configuring Search?](#q-why-are-no-search-results-shown-after-installing-or-configuring-search)
-  - [Q: How do I know if indexing was triggered for all the collections?](#q-how-do-i-know-if-indexing-was-triggered-for-all-the-collections)
-  - [Q: Why does Search stop working and no results are shown?](#q-why-does-search-stop-working-and-no-results-are-shown)
-  - [Q: Why doesn't Search show the expected results?](#q-why-doesnt-search-show-the-expected-results)
-  - [Q: Why is Azure DevOps Server or TFS overall performance affected?](#q-why-is-azure-devops-server-or-tfs-overall-performance-affected)
-  - [Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?](#q-why-doesnt-search-work-post-upgrade-to-azure-devops-server-2019-update-1)
-  - [Partial results in code search](#partial-results-in-code-search)
-    - [Problem](#problem)
-    - [Explanation](#explanation)
-    - [Recommendation](#recommendation)
-  - [Wildcard search](#wildcard-search)
-    - [Problem](#problem-1)
-    - [Explanation](#explanation-1)
-    - [Recommendation](#recommendation-1)
-
 <a name="no-search-box"></a>
 
 ## Q: Why isn't the Search box displayed after it's configured?
