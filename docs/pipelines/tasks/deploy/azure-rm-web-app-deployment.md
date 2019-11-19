@@ -281,9 +281,14 @@ Creates a .war deployment package and deploys the file content to the **wwwroot*
 
 ## FAQs
 
-### What authentication should I use for Virtual Machines? How does Managed Service Identity (MSI) work?
+### What authentication should I use for Virtual Machines? How do Managed Identities work?
 
-Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without having credentials in your code. Configure Managed Service Identity (MSI) for virtual machine https://aka.ms/azure-msi-docs
+Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without having credentials in your code. Configure managed identities for virtual machine https://aka.ms/azure-msi-docs
+
+> [!NOTE]
+>
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up](/azure/devops/pipelines/agents/agents?view=azure-devops#install) a self hosted agent and configure managed identity for the virtual machine.
+
 
 ### Is *Publish using zip deploy* option supported for MSBuild package type?
  
