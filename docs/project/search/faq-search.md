@@ -54,18 +54,18 @@ name of the server where Search is installed:
 1. Access the URL `http://SearchServer:9200` from a web browser
    on a computer in the same domain as the server running Search.
    - If the status returned is `200 - OK`, go to step 2.
-   - If any other status is returned, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).
+   - If any other status is returned, [contact Support](https://azure.microsoft.com/support/devops/).
    - If you don't get a response, verify that the 
      **elasticsearch-service-x64** service is running on 
      the server where Search is configured. If the service
      is stopped, start it and access the Search server again.  
      If you still get no response, or a response other than
-     `200 - OK`, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).<p />
+     `200 - OK`, [contact Support](https://azure.microsoft.com/support/devops/).<p />
 
 2. If the status is 200, access the URL `http://SearchServer:9200/_cat/health?v`
    from a web browser on a computer in the same domain as the server running Search.
    - If the status column shows green/OK, and 
-     Search is still not working, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous). 
+     Search is still not working, [contact Support](https://azure.microsoft.com/support/devops/). 
    - If the status column shows red/fault, look at the value
      in the **init** or **unassigned** columns. If these values are 
      greater than zero, wait for 30 minutes and then
@@ -74,7 +74,7 @@ name of the server where Search is installed:
 3. Access the URL `http://SearchServer:9200/_cat/shards?v`
    from a web browser on a computer in the same domain as the server running Search.
    - Make a note of the values in the **Shard** column for the 
-     rows with a **state** value of **unassigned** and [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).<p />
+     rows with a **state** value of **unassigned** and [contact Support](https://azure.microsoft.com/support/devops/).<p />
 
 <a name="unexpected-results"></a>
 
