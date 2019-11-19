@@ -1052,6 +1052,9 @@ for authorization.
 * [PR trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
 
+> [!NOTE]
+> Trigger blocks cannot contain variables or template expressions.
+
 ### Push trigger
 
 A trigger specifies what branches will cause a continuous integration build to
