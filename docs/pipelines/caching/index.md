@@ -72,7 +72,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@1
+- task: Cache@2
   inputs:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
@@ -101,7 +101,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@1
+- task: Cache@2
   inputs:
     key: yarn | $(Agent.OS) | yarn.lock
     path: $(YARN_CACHE_FOLDER)
