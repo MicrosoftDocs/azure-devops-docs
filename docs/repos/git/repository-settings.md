@@ -119,7 +119,7 @@ az repos policy case-enforcement create --blocking {false, true}
 
 #### Example
 
-The following example creates a blocking case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing repositories using `az repos list` and then creates a blocking case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos list --output table
@@ -129,7 +129,6 @@ ID                                    Name           Default Branch    Project
 6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
 
 az repos policy case-enforcement create --blocking true --enabled true --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c
-
 {
 
   <Some properties omitted for space>
@@ -161,20 +160,27 @@ az repos policy case-enforcement update --id
 #### Parameters
 
 - **id** or **policy-id**: (Required) ID of the policy.
-- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **repository-id**: (Required) Id of the repository on which to apply the policy.
 
 #### Example
 
-The following example updates a case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using `az repos policy list` and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
-az repos policy case-enforcement update --blocking false --enabled false --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --policy-id 4 --output table
+az repos policy list --output table
+ID    Name                     Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------------  -------------  ------------  ------------------------------------  ------------
+2     File size restriction    True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+3     Git repository settings  True           True          6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+4     Work item linking        False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+5     Path Length restriction  True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
 
+az repos policy case-enforcement update --blocking false --enabled false --policy-id 4 --output table
 ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------  -------------  ------------  ------------------------------------  ------------
 4     Work item linking  False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
@@ -206,7 +212,7 @@ az repos policy file-size create --blocking {false, true}
 
 #### Example
 
-The following example creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing repositories using `az repos list` and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos list --output table
@@ -216,7 +222,6 @@ ID                                    Name           Default Branch    Project
 6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
 
 az repos policy file-size create --blocking true --enabled true --maximum-git-blob-size 10485760 --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --use-uncompressed-size true
-
 {
 
   <Some properties omitted for space>
@@ -250,9 +255,9 @@ az repos policy file-size update --id
 #### Parameters
 
 - **id** or **policy-id**: (Required) ID of the policy.
-- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
@@ -261,17 +266,10 @@ az repos policy file-size update --id
 
 #### Example
 
-The following example creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using `az repos policy list` and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
-az repos list --output table
-
-ID                                    Name           Default Branch    Project
-------------------------------------  -------------  ----------------  -------------
-6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
-
 az repos policy list --output table
-
 ID    Name                     Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------------  -------------  ------------  ------------------------------------  ------------
 2     File size restriction    True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
@@ -279,8 +277,7 @@ ID    Name                     Is Blocking    Is Enabled    Repository Id       
 4     Work item linking        False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
 5     Path Length restriction  True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
 
-az repos policy file-size update --id 2 --blocking true --enabled true --maximum-git-blob-size 20971520 --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --use-uncompressed-size true
-
+az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
 {
   
   <Some properties omitted for space>
