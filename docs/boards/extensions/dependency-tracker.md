@@ -153,6 +153,14 @@ Optionally, you can remove the link from the work item's **Links** tab.
 
 ## Create a query of dependencies 
 
+To open a set of dependent work items, select them in the same way you would via a bulk edit, choose the ![ ](../../_img/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
+
+> [!div class="mx-imgBorder"]  
+> ![Create links manually](_img/tracker/open-as-query.png)
+
+A new tab opens to the Query Results page. 
+
+
 ## Supported views, filters, and drill downs 
 
 From the Dependency Tracker, you can choose different views and filters, as well as drill down to obtain specific details. 
