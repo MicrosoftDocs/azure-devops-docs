@@ -358,6 +358,12 @@ You can rename files and folders or re-create [branches](create-branch.md) and [
 
 ::: moniker range="azure-devops"
 
+For instructions on configuring this policy using Azure CLI, see [View and edit repository settings](repository-settings.md?tabs=azure-devops-cli#view-and-edit-repository-settings).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
 ### Restrict File Names
 
 Not all [files names](os-compatibility.md) are allowed on the three major OS file systems (Windows, macOS, and Linux). Developers can push commits to a shared repository that may contain files or folders with names that are invalid on one or more platforms. If these files or folders are fetched and checked out on a platform where they are invalid then the working directory can become corrupted.
@@ -382,6 +388,12 @@ We have suggestions for helping you [manage large files](manage-large-files.md).
 This setting gives administrators a way to block files over a certain size from entering the repository.
 If a push contains a new or updated file larger than the limit configured in this setting, that push will be blocked.
 The user will have to rewrite their unpushed history to remove the large file and try the push again.
+
+::: moniker range="azure-devops"
+
+For instructions on configuring this policy using Azure CLI, see [View and edit repository settings](repository-settings.md?tabs=azure-devops-cli#view-and-edit-repository-settings).
+
+::: moniker-end
 
 ## Other ways to manage repositories
 
