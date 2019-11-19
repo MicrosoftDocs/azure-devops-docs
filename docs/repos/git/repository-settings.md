@@ -90,9 +90,9 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ::: moniker range="azure-devops"
 
-You can use Azure CLI to configure [Case enforcement](#case-enforcement) policy.
+You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Maximum file size](#maximum-file-size) policies.
 
-[Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy)
+[Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy) | [Create file size policy](#create-file-size-policy) | [Update file size policy](#update-file-size-policy)
 
 > [!NOTE]
 > If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
@@ -122,7 +122,14 @@ az repos policy case-enforcement create --blocking {false, true}
 The following example creates a blocking case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
+az repos list --output table
+
+ID                                    Name           Default Branch    Project
+------------------------------------  -------------  ----------------  -------------
+6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
+
 az repos policy case-enforcement create --blocking true --enabled true --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c
+
 {
 
   <Some properties omitted for space>
@@ -171,6 +178,132 @@ az repos policy case-enforcement update --blocking false --enabled false --repos
 ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
 ----  -----------------  -------------  ------------  ------------------------------------  ------------
 4     Work item linking  False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+```
+
+### Create file size policy
+
+```azurecli
+az repos policy file-size create --blocking {false, true}
+                                 --enabled {false, true}
+                                 --maximum-git-blob-size
+                                 --repository-id
+                                 --use-uncompressed-size {false, true}
+                                 [--detect {false, true}]
+                                 [--org]
+                                 [--project]
+```
+
+#### Parameters
+
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+
+#### Example
+
+The following example creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos list --output table
+
+ID                                    Name           Default Branch    Project
+------------------------------------  -------------  ----------------  -------------
+6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
+
+az repos policy file-size create --blocking true --enabled true --maximum-git-blob-size 10485760 --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --use-uncompressed-size true
+
+{
+
+  <Some properties omitted for space>
+
+  },
+  "createdDate": "2019-11-19T15:34:38.854450",
+  "id": 2,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+
+  <Some properties omitted for space>
+
+}
+```
+
+### Update file size policy
+
+```azurecli
+az repos policy file-size update --id
+                                 [--blocking {false, true}]
+                                 [--detect {false, true}]
+                                 [--enabled {false, true}]
+                                 [--maximum-git-blob-size]
+                                 [--org]
+                                 [--project]
+                                 [--repository-id]
+                                 [--use-uncompressed-size {false, true}]
+```
+
+#### Parameters
+
+- **id** or **policy-id**: (Required) ID of the policy.
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+
+#### Example
+
+The following example creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos list --output table
+
+ID                                    Name           Default Branch    Project
+------------------------------------  -------------  ----------------  -------------
+6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
+
+az repos policy list --output table
+
+ID    Name                     Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------------  -------------  ------------  ------------------------------------  ------------
+2     File size restriction    True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+3     Git repository settings  True           True          6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+4     Work item linking        False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+5     Path Length restriction  True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+
+az repos policy file-size update --id 2 --blocking true --enabled true --maximum-git-blob-size 20971520 --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --use-uncompressed-size true
+
+{
+  
+  <Some properties omitted for space>
+
+  "createdDate": "2019-11-19T16:09:32.960070+00:00",
+  "id": 2,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+  "revision": 5,
+  "settings": {
+    "maximumGitBlobSizeInBytes": 20971520,
+    "scope": [
+      {
+        "repositoryId": "6589f9e0-082b-4b96-9dfd-8141b7da409c"
+      }
+    ],
+    "useUncompressedSize": true
+  },
+  
+   <Some properties omitted for space>
+
+}
 ```
 
 ::: moniker-end
