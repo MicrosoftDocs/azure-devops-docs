@@ -39,13 +39,15 @@ As an example, we'll set our repository to enforce the following rules:
 
 ## Preparation
 
-* You will need the Team Foundation version control command (`tf.exe`) on your computer.
-Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the **Developer Command Prompt**).
+* You will need the Team Foundation version control command (`tf.exe`).
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
+
+> [!NOTE]
+> The command `tf.exe` is installed by default with Visual Studio. For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
 
 ## Enforce permissions
 
-Run the following commands in the Developer Command Prompt.
+Run the following commands in the Developer Command Prompt, under **Start** > **Visual Studio** > **Developer Command Prompt**.
 Each command is preceded with an explanation of what it's doing. If you don't have a personal access token cached (for example by signing in to the Azure DevOps Services web portal) you'll be prompted to login.
 
 First, block the Create Branch permission at the repository root for the project's contributors.
