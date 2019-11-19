@@ -160,19 +160,29 @@ To open a set of dependent work items, select them in the same way you would via
 
 A new tab opens to the Query Results page. 
 
+You can also create a custom query by selecting the Work items and direct links query type and choose any work item type. 
+
+Choose **Copy to HTML** to copy the selected work items to the clipboard as a formatted table. 
 
 ## Supported views, filters, and drill downs 
 
 From the Dependency Tracker, you can choose different views and filters, as well as drill down to obtain specific details. 
 
 ### Supported filters
-- Area
-- Story (toggle between Area or Story)
-- Release (multiselect)
-- Iteration (multiselect)
-- Product Family (multiselect)
-- Product (multiselect)
-- Ability to drop dependencies within the selected area (usually used for excluding dependencies inside my team)
+
+Top level filters are described in the table below 
+
+| Filter | Description |
+| -------| ----------- | 
+| Area View | Selects the area path of the team(s) that are participating in dependency tracking. 
+| Story (toggle between Area or Story)| 
+| Release (multiselect)| 
+| Iteration (multiselect)| 
+| Product Family (multiselect) | 
+| Product (multiselect)| 
+
+
+Ability to drop dependencies within the selected area (usually used for excluding dependencies inside my team)
 
 ## Filter using keywords, tags, or select field values
 
