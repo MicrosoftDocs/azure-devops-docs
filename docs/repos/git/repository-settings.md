@@ -191,7 +191,7 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 ### Create file size policy
 
-Use `az repos policy file-size create` to manage  [Maximum file size](#maximum-file-size) policy.
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage  [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size create --blocking {false, true}
@@ -217,7 +217,7 @@ az repos policy file-size create --blocking {false, true}
 
 #### Example
 
-The following example retrieves the IDs of the existing repositories using `az repos list` and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing repositories using [az repos list](/cli/azure/repos?view=azure-cli-latest#az-repos-list) and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos list --output table
@@ -244,7 +244,7 @@ az repos policy file-size create --blocking true --enabled true --maximum-git-bl
 
 ### Update file size policy
 
-Use `az repos policy file-size update` to manage  [Maximum file size](#maximum-file-size) policy.
+Use [az repos policy file-size update](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-delete) to manage [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size update --id
@@ -272,7 +272,7 @@ az repos policy file-size update --id
 
 #### Example
 
-The following example retrieves the IDs of the existing policies using `az repos policy list` and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos policy list --output table

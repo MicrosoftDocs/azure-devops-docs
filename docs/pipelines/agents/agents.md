@@ -139,7 +139,7 @@ You can view the details of an agent, including its version and system capabilit
 
 ::: moniker range="azure-devops"
 
-You can view the details of an agent, including its version, and system and user capabilities, by using the following `az pipelines` Azure CLI methods.
+You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
 
 [List agents](#list-agents) | [Show agent details](#show-agent-details)
 
@@ -147,6 +147,8 @@ You can view the details of an agent, including its version, and system and user
 > If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List agents
+
+You can list your agents using the [az pipelines agent list](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-list) command.
 
 ```azurecli
 az pipelines agent list --pool-id
@@ -185,6 +187,8 @@ ID    Name          Is Enabled    Status    Version
 ```
 
 ### Show agent details
+
+You can retrieve agent details using the [az pipelines agent show](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-show) command.
 
 ```azurecli
 az pipelines agent show --agent-id
