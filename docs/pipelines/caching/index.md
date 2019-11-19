@@ -12,10 +12,7 @@ ms.date: 07/05/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline caching (preview)
-
-> [!NOTE]
-> Pipeline caching is in preview and should not be used in production pipelines. Please [report any issues](#known-issues-and-feedback) you experience, including problems determining the appropriate settings for your scenario.
+# Pipeline caching
 
 Pipeline caching can help reduce build time by allowing the outputs or downloaded dependencies from one run to be reused in later runs, thereby reducing or avoiding the cost to recreate or redownload the same files again. Caching is especially useful in scenarios where the same dependencies are downloaded over and over at the start of each run. This is often a time consuming process involving hundreds or thousands of network calls.
 
@@ -383,6 +380,6 @@ A cache will expire after 7 days of no activity.
 
 ### Is there a limit on the size of a cache?
 
-During the public preview, there is no enforced limit on the size of individual caches or the total size of all caches in an organization.
+There is no enforced limit on the size of individual caches or the total size of all caches in an organization.
 
 <!-- ENDSECTION -->
