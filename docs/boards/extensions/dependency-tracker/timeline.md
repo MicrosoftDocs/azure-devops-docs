@@ -23,6 +23,6 @@ The Dependency Timeline feature is in Beta.  The Timeline is designed to provide
 - Hover over an item to see a detailed card or double click to open an individual work item
 - Right clicking of an item to reassign it to a new iteration
 
-![Timeline](_img/Timeline.png)
+![Timeline](../_img/tracker/Timeline.png)
 
 In order for the timeline to function correctly Iterations must have dates assigned

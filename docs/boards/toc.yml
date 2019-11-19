@@ -98,7 +98,7 @@
     - name: Risk graph
       href: ./extensions/dependency-tracker/risk-graph.md        
   - name: Project Server Integration (Deprecated)
-    href: ../../reference/tfs-ps-sync/toc.yml
+    href: ../reference/tfs-ps-sync/toc.yml
 - name: REST API Reference
   items:
   - name: Work Items
