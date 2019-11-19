@@ -64,6 +64,16 @@
       href: sample-boards-leadcycletime.md
     - name: Boards - Add a team slicer
       href: sample-boards-teamslicer.md
+    - name: Test Plans - Overall execution status
+      href: sample-testplans-overallexecution.md
+    - name: Test Plans - execution trend
+      href: sample-testplans-executiontrend.md
+    - name: Test Plans - Suite level aggregation
+      href: sample-testplans-aggregatedatlevel.md
+    - name: Test Plans - Tester by outcome matrix
+      href: sample-testplans-testerbyoutcome.md
+    - name: Test Plans - Configuration by outcome matrix
+      href: sample-testplans-configurationbyoutcome.md
   - name: Use Analytics views
     items:
     - name: Active bugs report 
