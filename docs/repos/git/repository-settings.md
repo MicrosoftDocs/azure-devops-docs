@@ -95,11 +95,11 @@ You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Ma
 [Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy) | [Create file size policy](#create-file-size-policy) | [Update file size policy](#update-file-size-policy)
 
 > [!NOTE]
-> If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az repos](/cli/azure/repos?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### Create case enforcement policy
 
-Use `az repos case-enforcement create` to manage [Case enforcement](#case-enforcement) policy.
+Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-create) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
@@ -148,7 +148,7 @@ az repos policy case-enforcement create --blocking true --enabled true --reposit
 
 ### Update case enforcement policy
 
-Use `az repos case-enforcement update` to manage [Case enforcement](#case-enforcement) policy.
+Use [az repos case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement update --id
