@@ -39,6 +39,9 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run.
 
+> [!NOTE]  
+> Currently, only 1 condition is supported for state-based rules.
+
 Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:

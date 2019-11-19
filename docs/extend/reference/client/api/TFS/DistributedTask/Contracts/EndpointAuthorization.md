@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts EndpointAuthorization API | Extensions for Azure DevOps Services
+description: Data representation of an endpoint authorization.
 ms.assetid: 8ff2d4be-7620-dd71-5fc0-c57ee170b280
 ms.prod: devops
 ms.technology: devops-ecosystem

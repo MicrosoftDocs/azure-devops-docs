@@ -14,7 +14,7 @@ Secret variables are encrypted at rest with a 2048-bit RSA key.
 Secrets are available on the agent for tasks and scripts to use **(so be careful about who has access to alter your pipeline)**.
 
 > [!IMPORTANT]
-> We make an effort to mask secrets from appearing in Azure Pipelines output, but it's not foolproof. **Never echo secrets as output.**
+> We make an effort to mask secrets from appearing in Azure Pipelines output, but it's not bulletproof. **Never echo secrets as output.**
 > Some operating systems log command line arguments. **Never pass secrets on the command line.**
 > Instead, we suggest that you map your secrets into environment variables.
 > 

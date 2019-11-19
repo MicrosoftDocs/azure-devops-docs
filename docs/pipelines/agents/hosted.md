@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
-ms.author: jobourne
-author: thejoebourneidentity
+ms.author: sdanie
+author: steved0x
 ms.date: 09/20/2019
 monikerRange: 'azure-devops'
 ---
@@ -154,9 +154,9 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
-  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'${xcodeRoot};sudo xcode-select --switch ${xcodeRoot}/Contents/Developer"`
+  `/bin/bash -c "echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'$(xcodeRoot);sudo xcode-select --switch $(xcodeRoot)/Contents/Developer"`
   
-  where `${xcodeRoot}` = `/Applications/Xcode_10.1.app`
+  where `$(xcodeRoot)` = `/Applications/Xcode_10.1.app`
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 

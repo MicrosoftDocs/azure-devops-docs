@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/05/2019
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -44,7 +44,7 @@ A: https://dev.azure.com/{yourorganization}
 
 A: No, but you can extend a PAT or modify its scope.
 
-## Q: Is there a way to renew a PAT via rest API?
+### Q: Is there a way to renew a PAT via rest API?
 A: No, we don’t have a rest API to renew a PAT. It has to be done within the user interface (UI).
 
 ### Q: Where can I learn more about how to use PATs?
@@ -78,7 +78,7 @@ A: An administrator or a tool might have created a PAT on your behalf. See the f
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](admin-revoke-user-pats.md#revoke-pats). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
 
-## Q: How can I use a PAT in my code?
+### Q: How can I use a PAT in my code?
 
 A: See the following sample that gets a list of builds using curl.
 <br/>

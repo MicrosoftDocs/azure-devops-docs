@@ -1,6 +1,6 @@
 ---
-title: Extension Report | Azure DevOps Services
-description: An overview of reports available for an extension. 
+title: Extension Report | Azure DevOps
+description: Use the Reports feature to track and analyze how your extension is performing and take required actions. 
 ms.assetid: baf829df-0975-46d8-8dea-7a5c9f6968ef
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 04/13/2018
+ms.date: 11/12/2019
 ---
 
 # Extension reporting hub

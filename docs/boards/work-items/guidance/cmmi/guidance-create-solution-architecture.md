@@ -1,4 +1,4 @@
----
+﻿---
 title: CMMI process guidance, Create a solution architecture
 titleSuffix: Azure Boards
 description: Investigate alternative architectural strategies to create good architecture  

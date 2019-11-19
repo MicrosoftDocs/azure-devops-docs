@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts AggregatedResultsDifference API | Extensions for Azure DevOps Services
+description: Data representation of an aggregated results difference.
 ms.assetid: b02a7a2d-f72b-b65b-9a65-b61d37098c30
 ms.prod: devops
 ms.technology: devops-ecosystem

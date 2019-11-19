@@ -1,5 +1,5 @@
----
-title: Field mapping XML element reference for TFS-Project Server integration
+﻿---
+title: Field mapping XML element reference for TFS-Project Server
 titleSuffix: TFS
 description: Customize the field mappings to define which fields to keep synchronized when using Team Foundation Server & Project Server integration
 ms.prod: devops

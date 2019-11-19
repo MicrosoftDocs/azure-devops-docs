@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/04/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -118,7 +118,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="23"><a href="2019/sprint-160-update.md" data-raw-source="[4 November 2019](2019/sprint-160-update.md)">4 November 2019</a></td>
+            <td rowspan="22"><a href="2019/sprint-160-update.md" data-raw-source="[4 November 2019](2019/sprint-160-update.md)">4 November 2019</a></td>
             <td>Cross-repo branch policy administration</td><td>Repos</td><td>Future</td>
         </tr>
         <tr><td>Multi-stage pipelines UX</td><td>Pipelines</td><td>Future</td></tr>
@@ -130,7 +130,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Simplified resource authorization in YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Improve pipeline security by restricting the scope of access tokens</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Evaluate artifact check</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Markdown support in automated test error messages</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Diagnosing cron schedules in YAML</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updates to the ARM template deployment task</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Project level security for service connections</td><td>Pipelines</td><td>Future</td></tr>
