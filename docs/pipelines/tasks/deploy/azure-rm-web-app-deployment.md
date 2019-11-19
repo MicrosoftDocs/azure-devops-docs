@@ -287,12 +287,24 @@ Managed identities for Azure resources provides Azure services with an automatic
 
 > [!NOTE]
 >
-> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up](/azure/devops/pipelines/agents/agents?view=azure-devops#install) a self hosted agent and configure managed identity for the virtual machine.
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent] (/azure/devops/pipelines/agents/agents?view=azure-devops#install) and configure managed identity for the virtual machine.
 
 
 ### Is *Publish using zip deploy* option supported for MSBuild package type?
  
-No, web packages created using MSBuild task (with default arguments) has a nested folder structure that can only be deployed correctly by Web Deploy. To convert the packaging structure, follow the steps provided [here](https://github.com/microsoft/azure-pipelines-tasks/wiki/Migrating-from-Web-Deploy-to-Run-From-Package-deployment-mechanism)
+No, web packages created using MSBuild task (with default arguments) has a nested folder structure that can only be deployed correctly by Web Deploy. To convert the packaging structure, follow the below steps 
+
+* In Build Solution task, change the MSBuild Arguments to
+/p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="$(System.DefaultWorkingDirectory)\\WebAppContent"
+
+
+* Add Archive Task and change the inputs as follows:
+  * Change *Root folder or file to archive* to
+    $(System.DefaultWorkingDirectory)\\WebAppContent
+    ![Root folder or file to archive](_img/azure-rm-web-app-deployment-03.png)
+ 
+   * Disable *Prepend root folder name to archive paths* option
+    ![Prepend root folder name to archive paths](_img/azure-rm-web-app-deployment-04.png)
 
 ### How should I configure Web Job Deployment with App Insights?
 
