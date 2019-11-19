@@ -34,7 +34,7 @@ To delete a pipeline using Azure CLI, you can use the [az pipeline delete](/cli/
 [List pipelines](#list-pipelines) | [Delete pipeline](#delete-pipeline) | [Example](#example)
 
 > [!NOTE]
-> If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### List pipelines
 
