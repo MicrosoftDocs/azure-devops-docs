@@ -258,14 +258,6 @@ ID    Name                             Is Hosted    Pool Type
 
 * * *
 
-1. In your web browser, navigate to Agent pools:
-
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
-
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
-
 > [!TIP]
 >
 > After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up.
