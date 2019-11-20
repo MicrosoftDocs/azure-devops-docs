@@ -1,5 +1,5 @@
 ﻿---
-title: Using work items to track user stories, issues, & more
+title: Using work items to track user stories, & more
 titleSuffix: Azure Boards and TFS
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
 ms.custom: work-items, seodec18

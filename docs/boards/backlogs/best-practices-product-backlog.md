@@ -1,5 +1,5 @@
 ﻿---
-title: Best practices for working with product and portfolio backlogs
+title: Product and portfolio backlog best practices
 titleSuffix: Azure Boards
 description: Best practices to manage and refine your product backlog in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"  
