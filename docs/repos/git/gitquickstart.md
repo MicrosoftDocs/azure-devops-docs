@@ -26,6 +26,8 @@ monikerRange: '>= tfs-2017'
 This guide covers the basics so you can get up and running using Git with code already in Azure Repos or Azure DevOps Server.
 Explore our [full tutorial](gitworkflow.md) for more information on how to use Git from Visual Studio or the command line.
 
+Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
+
 If you don't have your code in an Azure Repos or Azure DevOps Server Git repo, visit our [Visual Studio](share-your-code-in-git-vs.md) or [command line](share-your-code-in-git-cmdline.md) getting started articles to learn how to create a local repo for your code and push it to Azure Repos.
 
 <a name="clone"></a>
