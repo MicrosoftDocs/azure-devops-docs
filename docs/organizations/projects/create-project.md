@@ -39,7 +39,7 @@ If you have a project already, see [Get Started with Azure Repos and Visual Stud
 - You create a project within an organization. If you haven't created an organization yet, create one by following the instructions in [Sign up, sign in to Azure DevOps](../../user-guide/sign-up-invite-teammates.md), which also creates a project. Or see [Quickstart: Create an organization or project collection](../accounts/create-organization.md).  
 - You must be a member of the Project Collection Administrators group or have the **Create new projects** permission set to **Allow**. If you're the Organization Owner, you're automatically added to the Project Collection Administrators group. If you aren't a member, get added now. For more information, see [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md).
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"  
 
@@ -61,7 +61,7 @@ If you have a project already, see [Get Started with Azure Repos and Visual Stud
 
     - Have you configured a SharePoint Web application for your deployment? You can configure a SharePoint portal when you create your project. To do so, contact your SharePoint administrator to give you Full Control permissions on the server that hosts SharePoint Products. Otherwise, you can skip this step and configure a portal at a later time.
 
-::: moniker-end  	
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -405,8 +405,6 @@ Connect to a project, collection, or server from your web browser.
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-::: moniker range="azure-devops"  
 
 <a id="list-projects" /> 
 
