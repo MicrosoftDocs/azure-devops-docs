@@ -225,7 +225,7 @@ az pipelines pool show --id
 
 #### Parameters
 
-- **id** or **pool-id**: (Required) Id of the pool to list the details.
+- **id** or **pool-id**: (Required) ID of the pool to list the details.
 - **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
@@ -312,7 +312,7 @@ az pipelines queue show --id
 
 #### Parameters
 
-- **id** or **queue-id**: Id of the agent queue to get information about.
+- **id** or **queue-id**: ID of the agent queue to get information about.
 - **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
