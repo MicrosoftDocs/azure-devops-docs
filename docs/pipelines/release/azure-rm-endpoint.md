@@ -162,14 +162,13 @@ the **Contributor** role.
 To resolve this issue, ask the subscription administrator to
 [configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-## FAQs
+## What authentication mechanisms are supported? How do Managed Identities work?
 
-### What authentication should I use for Virtual Machines? How do Managed Identities work?
-
-Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without having credentials in your code. Configure managed identities for virtual machine https://aka.ms/azure-msi-docs
+Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or  Managed Identity Authentication.
+Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection. [Learn more](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) about managed identities for virtual machines.  
 
 > [!NOTE]
 >
-> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up](/azure/devops/pipelines/agents/agents?view=azure-devops#install) a self hosted agent and configure managed identity for the virtual machine.
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
