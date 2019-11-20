@@ -55,6 +55,9 @@ When you create a pipeline, you specify which pool it uses.
 
 ::: moniker-end
 
+
+
+
 ::: moniker range="<= tfs-2018"
 You create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
@@ -74,6 +77,8 @@ If you are a project team member, you create and manage agent queues from the ag
 ::: moniker-end
 
 [!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+
+
 
 ## Default agent pools
 
@@ -106,11 +111,13 @@ By default, all contributors in a project are members of the **User** role on ho
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
+::: moniker-end
+
 ### Choosing a pool and agent in your pipeline
 
 # [YAML](#tab/yaml)
 
-To choose a Microsoft-hosted agent from the Azure Pipelines pool in your YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
+To choose a Microsoft-hosted agent from the Azure Pipelines pool in your Azure DevOps Services YAML pipeline, specify the name of the image, using the **YAML VM Image Label** from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
 ```yaml
 pool:
@@ -133,8 +140,217 @@ To choose a pool and agent in the classic editor, navigate to the pipeline setti
 
 * * *
 
+### Managing pools and queues
+
+#### [Browser](#tab/browser)
+
+::: moniker range="<= tfs-2018"
+You create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
+::: moniker-end
+
+[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+
+::: moniker range="<= tfs-2018"
+You create and manage agent queues from the agent queues tab in project settings.
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
+::: moniker-end
+
+[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
+
+[List agent pools](#list-agent-pools) | [Show agent pool details](#show-agent-pool-details) | [List agent queues](#list-agent-queues) | [Show agent queue details](#show-agent-queue-details)
+
+> [!NOTE]
+> At this time you can view information about agent pools and queues, but not edit them, using the Azure CLI.
+>
+> If this is your first time using `az devops pipelines` commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+### List agent pools
+
+```azurecli
+az pipelines pool list [--action {manage, none, use}]
+                       [--detect {false, true}]
+                       [--org]
+                       [--pool-name]
+                       [--pool-type {automation, deployment}]
+```
+
+#### Parameters
+
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **pool-name**: Filter the list with matching pool name.
+- **pool-type**: Filter the list with type of pool. Accepted values: **automation**, **deployment**
+
+#### Example
+
+The following example lists all pools in table format. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines pool list --output table
+
+ID    Name                             Is Hosted    Pool Type
+----  -------------------------------  -----------  -----------
+1     Default                          False        automation
+2     Hosted                           True         automation
+3     Hosted VS2017                    True         automation
+4     Hosted Windows 2019 with VS2019  True         automation
+5     Hosted Windows Container         True         automation
+6     Hosted macOS                     True         automation
+7     Hosted macOS High Sierra         True         automation
+8     Hosted Ubuntu 1604               True         automation
+9     Azure Pipelines                  True         automation
+10    MyAgentPool                      False        automation
+```
+
+### Show agent pool details
+
+```azurecli
+az pipelines pool show --id
+                       [--action {manage, none, use}]
+                       [--detect {false, true}]
+                       [--org]
+```
+
+#### Parameters
+
+- **id** or **pool-id**: (Required) ID of the pool to list the details.
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+
+#### Example
+
+The following example displays pool details for the Hosted Windows 2019 with VS2019 pool. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines pool show --id 4
+
+{
+  "agentCloudId": 1,
+  "autoProvision": true,
+  "autoSize": null,
+
+  <Some properties omitted for space>
+
+  "poolType": "automation",
+  "properties": null,
+  "scope": "941fcaeb-be37-4309-b7b0-5cf156e1236e",
+  "size": 1,
+  "targetSize": 1
+}
+```
+
+You can also use `--output table` which returns the same information as the `list` command.
+
+```azurecli
+az pipelines pool show --id 4 --output table
+
+ID    Name                             Is Hosted    Pool Type
+----  -------------------------------  -----------  -----------
+4     Hosted Windows 2019 with VS2019  True         automation
+```
+
+### List agent queues
+
+```azurecli
+az pipelines queue list [--action {manage, none, use}]
+                        [--detect {false, true}]
+                        [--org]
+                        [--project]
+                        [--queue-name]
+```
+
+#### Parameters
+
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+- **queue-name**: Filter the list with matching queue name regex. e.g. *ubuntu* for queue with name 'Hosted Ubuntu 1604'.
+
+#### Example
+
+The following example lists all queues in table format. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines queue list --output table
+This command group is in preview. It may be changed/removed in a future release.
+ID    Name                             Pool IsHosted    Pool Type
+----  -------------------------------  ---------------  -----------
+11    Default                          False            automation
+12    Hosted                           True             automation
+13    Hosted VS2017                    True             automation
+14    Hosted Windows 2019 with VS2019  True             automation
+15    Hosted Windows Container         True             automation
+16    Hosted macOS                     True             automation
+17    Hosted macOS High Sierra         True             automation
+18    Hosted Ubuntu 1604               True             automation
+19    Azure Pipelines                  True             automation
+```
+
+### Show agent queue details
+
+```azurecli
+az pipelines queue show --id
+                        [--action {manage, none, use}]
+                        [--detect {false, true}]
+                        [--org]
+                        [--project]
+```
+
+#### Parameters
+
+- **id** or **queue-id**: ID of the agent queue to get information about.
+- **action**: Filter the list with user action permitted. Accepted values: **manage**, **none**, **use**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
+
+#### Example
+
+The following example displays queue details for the Hosted Windows 2019 with VS2019 queue. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines queue show --id 14
+
+{
+  "id": 14,
+  "name": "Hosted Windows 2019 with VS2019",
+  "pool": {
+    "id": 4,
+    "isHosted": true,
+    "isLegacy": true,
+    "name": "Hosted Windows 2019 with VS2019",
+    "poolType": "automation",
+    "scope": "941fcaeb-be37-4309-b7b0-5cf156e1236e",
+    "size": 1
+  },
+  "projectId": "16836457-4ce1-4e77-b97a-e7e0c6508e84"
+}
+```
 
 ::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
+
+
+
+
+
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](../process/phases.md).
 

@@ -1,6 +1,6 @@
----
-title: Troubleshooting the migration import from Azure DevOps Server to Azure DevOps Services | Azure DevOps
-description: Guidance for fixing common DataMigratorTool validation errors. 
+﻿---
+title: Troubleshooting migration import from Azure DevOps Server to Services
+description: Guidance for fixing common DataMigratorTool validation errors.  
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate

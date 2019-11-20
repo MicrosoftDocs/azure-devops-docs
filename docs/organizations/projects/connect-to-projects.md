@@ -1,5 +1,5 @@
----
-title: Connect to a project from a web browser or supported client in Azure DevOps
+﻿---
+title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
 ms.technology: devops-new-user
@@ -328,4 +328,4 @@ Learn more about how to:
 
 If all you need is a code repository and bug tracking solution, then start with the [Get Started with Azure Repos](../../repos/git/gitquickstart.md) and [Manage bugs](../../boards/backlogs/manage-bugs.md).  
 
-To start planning and tracking work, see [What is Azure Boards?](../../boards/get-started/what-is-azure-boards.md).
+To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../boards/get-started/what-is-azure-boards.md). 

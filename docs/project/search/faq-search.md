@@ -16,23 +16,6 @@ monikerRange: '>= tfs-2017 < azure-devops'
 
 [!INCLUDE [version-header-tfs-only](../../_shared/version-header-tfs-only.md)]
 
-- [Troubleshoot Search](#troubleshoot-search)
-  - [Q: Why isn't the Search box displayed after it's configured?](#q-why-isnt-the-search-box-displayed-after-its-configured)
-  - [Q: Why are no search results shown after installing or configuring Search?](#q-why-are-no-search-results-shown-after-installing-or-configuring-search)
-  - [Q: How do I know if indexing was triggered for all the collections?](#q-how-do-i-know-if-indexing-was-triggered-for-all-the-collections)
-  - [Q: Why does Search stop working and no results are shown?](#q-why-does-search-stop-working-and-no-results-are-shown)
-  - [Q: Why doesn't Search show the expected results?](#q-why-doesnt-search-show-the-expected-results)
-  - [Q: Why is Azure DevOps Server or TFS overall performance affected?](#q-why-is-azure-devops-server-or-tfs-overall-performance-affected)
-  - [Q: Why doesn't Search work post upgrade to Azure DevOps Server 2019 Update 1?](#q-why-doesnt-search-work-post-upgrade-to-azure-devops-server-2019-update-1)
-  - [Partial results in code search](#partial-results-in-code-search)
-    - [Problem](#problem)
-    - [Explanation](#explanation)
-    - [Recommendation](#recommendation)
-  - [Wildcard search](#wildcard-search)
-    - [Problem](#problem-1)
-    - [Explanation](#explanation-1)
-    - [Recommendation](#recommendation-1)
-
 <a name="no-search-box"></a>
 
 ## Q: Why isn't the Search box displayed after it's configured?
@@ -71,18 +54,18 @@ name of the server where Search is installed:
 1. Access the URL `http://SearchServer:9200` from a web browser
    on a computer in the same domain as the server running Search.
    - If the status returned is `200 - OK`, go to step 2.
-   - If any other status is returned, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).
+   - If any other status is returned, [contact Support](https://azure.microsoft.com/support/devops/).
    - If you don't get a response, verify that the 
      **elasticsearch-service-x64** service is running on 
      the server where Search is configured. If the service
      is stopped, start it and access the Search server again.  
      If you still get no response, or a response other than
-     `200 - OK`, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).<p />
+     `200 - OK`, [contact Support](https://azure.microsoft.com/support/devops/).<p />
 
 2. If the status is 200, access the URL `http://SearchServer:9200/_cat/health?v`
    from a web browser on a computer in the same domain as the server running Search.
    - If the status column shows green/OK, and 
-     Search is still not working, [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous). 
+     Search is still not working, [contact Support](https://azure.microsoft.com/support/devops/). 
    - If the status column shows red/fault, look at the value
      in the **init** or **unassigned** columns. If these values are 
      greater than zero, wait for 30 minutes and then
@@ -91,7 +74,7 @@ name of the server where Search is installed:
 3. Access the URL `http://SearchServer:9200/_cat/shards?v`
    from a web browser on a computer in the same domain as the server running Search.
    - Make a note of the values in the **Shard** column for the 
-     rows with a **state** value of **unassigned** and [contact Support](https://visualstudio.microsoft.com/vs/support/#talktous).<p />
+     rows with a **state** value of **unassigned** and [contact Support](https://azure.microsoft.com/support/devops/).<p />
 
 <a name="unexpected-results"></a>
 

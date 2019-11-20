@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/14/2019
+ms.date: 11/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -96,7 +96,7 @@ Non-administrative users can also request the extension is added.
 ### Installation
 
 Code Search is an opt-in feature, and can be installed later from the Local Gallery. 
-Go to **Local Gallery** (```https://{server}:8080/tfs/_gallery```) as an administrator.
+Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator.
 Non-administrative users can also request the extension be added to TFS or Azure DevOps Server. 
 
 For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 

@@ -1,5 +1,5 @@
----
-title: Set up Team Foundation Version Control on your dev machine
+﻿---
+title: Team Foundation Version Control on your dev machine
 titleSuffix: Azure Repos
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
