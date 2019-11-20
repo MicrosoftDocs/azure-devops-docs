@@ -292,7 +292,7 @@ Managed identities for Azure resources provides Azure services with an automatic
 
 ### Is *Publish using zip deploy* option supported for MSBuild package type?
  
-No, web packages created using MSBuild task (with default arguments) has a nested folder structure that can only be deployed correctly by Web Deploy. To convert the packaging structure, follow the below steps 
+Web packages created using MSBuild task (with default arguments) have a nested folder structure that can only be deployed correctly by Web Deploy. Publish to zip deploy option can not be used to deploy those packages. To convert the packaging structure, follow the below steps. 
 
 * In Build Solution task, change the MSBuild Arguments to
 /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="$(System.DefaultWorkingDirectory)\\WebAppContent"
