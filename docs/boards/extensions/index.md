@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/31/2019
+ms.date: 11/20/2019
 ---
 
 # Azure Boards extensions developed by Microsoft

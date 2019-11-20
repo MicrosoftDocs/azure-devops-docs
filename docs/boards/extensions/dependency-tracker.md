@@ -12,7 +12,7 @@ ms.reviewer: chesing
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 11/07/2019
+ms.date: 11/20/2019
 ---
 
 # Plan and track dependencies using the Dependency Tracker extension
