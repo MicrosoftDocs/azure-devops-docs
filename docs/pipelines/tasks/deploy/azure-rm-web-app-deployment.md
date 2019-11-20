@@ -307,7 +307,7 @@ Web packages created using MSBuild task (with default arguments) have a nested f
 
 ### How should I configure Web Job Deployment with App Insights?
 
-When deploying to an App Service with App Insights configured, if you have enabled “Remove additional files at destination” then you also need to enable “Exclude files from the App_Data folder” in order to keep App insights extension in safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
+When deploying to an App Service with Application Insights configured and you have enabled “Remove additional files at destination”, then you also need to enable “Exclude files from the App_Data folder” in order to keep the app insights extension in a safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
 
 ## Troubleshooting
 
