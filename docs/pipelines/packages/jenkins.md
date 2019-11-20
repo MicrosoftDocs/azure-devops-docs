@@ -1,5 +1,5 @@
----
-title: Use Jenkins with Azure Artifacts to publish packages of binary components
+﻿---
+title: Publish Packages with Jenkins & Azure Artifacts
 ms.custom: seodec18
 description: Working with feeds in Jenkins-CI
 ms.assetid: FC3EC349-1F9B-42A7-B523-495F21BC73F6
