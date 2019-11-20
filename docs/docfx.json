@@ -67,6 +67,8 @@
         "artifacts/**/**.md": "Azure Artifacts",
         "boards/**/**.md": "Azure Boards",
         "cli/**/**.md": "Azure DevOps",
+        "extend/**/**.md": "Azure DevOps",
+        "integrate/**/**.md": "Azure DevOps",
         "java/**/**.md": "Azure DevOps",
         "marketplace/**/**.md": "Azure DevOps",
         "migrate/**/**.md": "Azure DevOps",

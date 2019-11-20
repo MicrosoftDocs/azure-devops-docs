@@ -1,5 +1,5 @@
 ﻿---
-title: Customize a work item type for an inherited process
+title: Customize work item type for inherited process
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a work item type for a project 
 ms-custom: inherited-process

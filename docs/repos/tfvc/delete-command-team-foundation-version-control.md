@@ -1,4 +1,4 @@
----
+﻿---
 title: Delete Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Delete Command (Team Foundation Version Control)

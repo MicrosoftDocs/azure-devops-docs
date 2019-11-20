@@ -1,5 +1,5 @@
----
-title: Migration import from Azure DevOps Server to Azure DevOps Services 
+﻿---
+title: Migrate from Azure DevOps Server to Azure DevOps
 titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
@@ -548,6 +548,8 @@ CREATE LOGIN fabrikam WITH PASSWORD = 'fabrikamimport1!'
 CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
+> [!NOTE]   
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#SSMSProcedure) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the Import Specification File to Target the VM
 The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:

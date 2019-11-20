@@ -1,5 +1,5 @@
 ﻿---
-title: Set up Active Directory / Azure Active Directory for Azure DevOps
+title: Set up Active Directory / Azure AD
 description: Manage large groups of users using Active Directory (AD) for Azure DevOps Server or Azure Active Directory (Azure AD) for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-security

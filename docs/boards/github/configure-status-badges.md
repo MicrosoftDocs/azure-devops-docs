@@ -1,5 +1,5 @@
 ﻿---
-title: Enable Kanban board badge status for your GitHub repo  
+title: Enable Kanban board badge status for GitHub repo
 titleSuffix: Azure Boards
 description: Configure your Kanban board badge status to appear on your GitHub repo  
 ms.assetid: 

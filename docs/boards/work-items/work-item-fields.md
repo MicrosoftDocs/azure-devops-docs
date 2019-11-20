@@ -1,5 +1,5 @@
 ﻿---
-title: Describes work item fields, attributes and how to list them
+title: Work item fields, attributes and how to list them
 titleSuffix: Azure Boards
 description: Understand how fields are defined and modified 
 ms.custom: work-items

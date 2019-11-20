@@ -1,5 +1,5 @@
----
-title: REST API samples for Azure DevOps Services and Team Foundation Server
+﻿---
+title: REST API samples for Azure DevOps and TFS
 description: REST API samples for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
 ms.prod: devops

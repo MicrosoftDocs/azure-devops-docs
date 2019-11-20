@@ -1,5 +1,5 @@
----
-title: Publish a Maven artifact using Gradle and Azure DevOps Services
+﻿---
+title: Publish a Maven artifact using Gradle
 description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -132,6 +132,9 @@ repositories {
 ```
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
 publishing and downloading to use separate organizations, if you prefer.
+
+> [!NOTE]
+> You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
 
 Replace the following fields with your own values:
 

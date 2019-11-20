@@ -1,5 +1,5 @@
 ﻿---
-title: Manage mappings between an enterprise project and a  project
+title: Mappings between enterprise projects and projects
 titleSuffix: TFS 
 description: Manage mappings between an enterprise project and a project to support Team Foundation Server & Project Server integration
 ms.prod: devops

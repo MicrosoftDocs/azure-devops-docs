@@ -1,5 +1,5 @@
----
-title: Change your preferred email address for notifications
+﻿---
+title: Change your preferred, notification email address
 titleSuffix: Azure DevOps
 description: Change the email address used to receive alerts or email  notifications managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops

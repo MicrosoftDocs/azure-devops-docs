@@ -197,6 +197,28 @@ Checking a NuGet.Config into source control ensures that a key piece of informat
 
 However, for situations where a team of developers works on a large range of projects, it's also possible to add an Azure Artifacts feed to the global NuGet.Config on each developer's machine. In these situations, using the "Feeds I select here" option in the NuGet task replicates this configuration.
 
+## Troubleshooting
+
+### File structure for output files is different from previous builds
+
+Azure DevOps hosted agents are configured with .Net Core 3.0, 2.1 and 2.2.
+CLI for .Net Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+
+```YAML
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o testpath'
+    zipAfterPublish: false
+    modifyOutputPath: true
+```
+
 ## Open Source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

@@ -1,5 +1,5 @@
----
-title: Index Sources & Publish Symbols build and release task
+﻿---
+title: Index Sources & Publish Symbols
 ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference

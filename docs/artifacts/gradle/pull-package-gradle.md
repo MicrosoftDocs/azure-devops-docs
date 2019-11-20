@@ -1,5 +1,5 @@
----
-title: Install a Maven artifact using Gradle and Azure DevOps Services
+﻿---
+title: Install a Maven artifact using Gradle
 description: Install a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
