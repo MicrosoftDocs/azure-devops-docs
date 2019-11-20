@@ -17,14 +17,70 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Use templates to define your logic once and then reuse it several times. 
-Templates combine the content of multiple YAML files into a single pipeline.
-You can pass parameters into a template from your parent pipeline.
+Use templates to define logic and parameters that can be reused. There are two types of templates - includes and extends. An includes template contains re-useable content that can be inserted into multiple YAMLs. An extends template defines the outer structure allowed in a YAML.   
 
-## Types of Templates: Extends and Includes
-Includes templates let you copy content from one YAML and re-use it in a different YAML multiple times. This saves you from having to include the same logic in multiple places. You can quickly update content that is included in multiple places in one file. 
+## Includes templates
+Includes templates let you copy content from one YAML and re-use it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. For example, this YAML include template contains npm steps that are re-used in `azure-pipeline.yml`.  
 
-Extends templates provide a framework that can be built in an additional YAML. An extends template defines the outer structure allowed in a YAML and then a pipeline author can implement the content that is allowed.   
+```yaml
+# File: include-npm-steps.yml
+
+steps:
+- script: npm install
+- script: yarn install
+- script: npm run compile
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
+```
+
+## Extends templates
+
+Extends templates provide a framework that can be used to define additional YAMLs. You define child YAMLs from a parent YAML. 
+
+```yaml
+# File: parent.yml (NEEDS WORK)
+
+parameters:
+  buildPool:
+    type: pool
+    default: ''
+    values:
+    - ubuntu-latest
+    - windows-latest
+    - SecureBuildPool
+  buildSteps:
+    type: stepList
+    default: []
+
+stages:
+- stage: buildstage
+  jobs:
+  - job: buildjob
+  - task: echo Text is printed here
+
+```
+
+```yaml
+# File: child.yml (NEEDS WORK)
+extends:
+  template: parent.yml@tmpl
+  parameters:
+    buildPool: ubuntu-latest
+```
 
 ## Step re-use
 
