@@ -1,4 +1,4 @@
----
+﻿---
 title: Rename Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rename Command (Team Foundation Version Control)
