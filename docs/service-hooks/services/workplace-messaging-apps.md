@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Workplace Messaging Apps
 
-Below listed integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like 
+The following integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like 
 [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) and [Slack](https://slack.com). 
 These integrations also help users to complete
 workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels.
