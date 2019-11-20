@@ -114,7 +114,7 @@ az repos policy case-enforcement create --blocking {false, true}
 
 - **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
@@ -168,7 +168,7 @@ az repos policy case-enforcement update --id
 - **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
 
 #### Example
 
@@ -209,7 +209,7 @@ az repos policy file-size create --blocking {false, true}
 - **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
-- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
@@ -267,7 +267,7 @@ az repos policy file-size update --id
 - **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
 - **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
 - **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
-- **repository-id**: (Required) Id of the repository on which to apply the policy.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
 
 #### Example
