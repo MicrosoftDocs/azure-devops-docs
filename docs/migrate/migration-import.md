@@ -1,5 +1,5 @@
----
-title: Migration import from Azure DevOps Server to Azure DevOps Services 
+﻿---
+title: Migrate from Azure DevOps Server to Azure DevOps
 titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
