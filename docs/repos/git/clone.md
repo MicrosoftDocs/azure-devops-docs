@@ -45,7 +45,7 @@ In this tutorial you learn how to:
 Before you can clone an existing repo, you'll need a URL that points to the existing repo.
 This URL represents the source of the repo you're going to copy.
 
-If you're using Azure Repos or Azure DevOps Server, you can find this clone URL in the web portal.
+If you're using Azure Repos, Azure DevOps Server 2019, or Team Foundation Server, you can find this clone URL in the web portal.
 
 1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, then **Files**.
 
