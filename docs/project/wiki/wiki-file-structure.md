@@ -1,5 +1,5 @@
----
-title: Wiki repository files, structure, and conventions in Azure DevOps
+﻿---
+title: Wiki files, structure, and conventions
 titleSuffix: Azure DevOps 
 description: Understand the file conventions of the Git repository wiki in Azure DevOps
 ms.technology: devops-collab

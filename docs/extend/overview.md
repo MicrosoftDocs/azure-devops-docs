@@ -1,7 +1,7 @@
----
+﻿---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Developing extensions for Azure DevOps Services and Team Foundation Server
+title: Developing extensions for Azure DevOps Services and TFS
 description: Overview of creating extensions for Azure DevOps Services
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual

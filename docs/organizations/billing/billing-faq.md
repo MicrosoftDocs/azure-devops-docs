@@ -1,5 +1,5 @@
----
-title: Frequently asked questions about billing management
+﻿---
+title: Frequent questions about billing management
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Find answers to frequently asked questions (FAQs) about billing for your organization
