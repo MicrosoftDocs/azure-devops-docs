@@ -1,5 +1,5 @@
----
-title: Build and Release Tasks in Azure Pipelines and TFS
+﻿---
+title: Build and Release Tasks
 ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
