@@ -283,7 +283,12 @@ Creates a .war deployment package and deploys the file content to the **wwwroot*
 
 ### How should I configure my service connection?
 
-For details related to service connections refer to [this](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
+
+> [!NOTE]
+>
+> Publish profile based authentication is also supported for deployments to app service.
+
 
 ### Is *Publish using zip deploy* option supported for MSBuild package type?
  
