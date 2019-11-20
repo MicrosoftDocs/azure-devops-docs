@@ -1,5 +1,5 @@
 ﻿---
-title: Map Project Server components to Team Foundation components
+title: Map Project Server & Team Foundation components
 titleSuffix: TFS 
 description: Define each point of integration by mapping server products, project plans, and projects to support Team Foundation Server-Project Server integration 
 ms.prod: devops

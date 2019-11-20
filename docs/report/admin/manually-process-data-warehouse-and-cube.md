@@ -1,5 +1,5 @@
 ﻿---
-title: Manually process the data warehouse and analysis services cube
+title: Process data warehouse and analysis services cube
 titleSuffix: TFS
 description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  

@@ -1,5 +1,5 @@
 ﻿---
-title: Map a project plan that was previously bound to a project
+title: Map a project plan that was bound to a project
 titleSuffix: TFS 
 description: Specify work items that you want to synchronize using Team Foundation Server & Project Server
 ms.prod: devops

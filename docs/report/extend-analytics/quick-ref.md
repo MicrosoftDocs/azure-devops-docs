@@ -1,5 +1,5 @@
 ﻿---
-title: Quick reference index for tasks & concepts using Data & Analytics
+title: Tasks & concepts using Data & Analytics
 titleSuffix: Azure DevOps  
 description: Supported tasks and concepts to generate results using OData backed Analytics for Azure DevOps 
 ms.prod: devops
