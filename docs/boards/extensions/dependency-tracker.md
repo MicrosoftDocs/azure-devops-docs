@@ -93,9 +93,11 @@ All teams across organizations can participate in tracking dependencies.
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
 
-In addition, you will have wanted to perform these tasks: 
+In addition, the following configuration or customization tasks should be performed: 
 - Set up the area paths and teams that will participate in dependency tracking 
-- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking - this is essential for the Timeline view to yield meaningful data. 
+- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking - this is essential for the Timeline view to yield meaningful data
+- Customize your process as needed to support any additional work items or fields 
+- [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations you've made.
 
 
 ## Open the Dependency Tracker
@@ -145,8 +147,7 @@ Ability to drop dependencies within the selected area (usually used for excludin
 
 ## Drill-down options 
 
-
-Several views provide interative visualization through drilldowns. 
+Several views provide interative visualization through drilldowns. These are addressed in the description of each of the tabbed views later in this article. 
 
 > [!div class="mx-imgBorder"]  
 > ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
@@ -164,7 +165,7 @@ A dependency represents work where one team is dependent on another team. Both t
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Dependency](_img/tracker/choose-new-dependency.png)
 
-	If the partner team is in a different organization, then first choose the **Partner Account**.   
+	If the partner team is in a different organization, then first choose the **Partner Account**. The Partner Account option can be enabled or disabled by [configuring the Dependency Tracker](#configuration).   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose partner account](_img/tracker/choose-partner-organization.png)
@@ -235,63 +236,70 @@ Choose **Copy to HTML** to copy the selected work items to the clipboard as a fo
 
 <a id="consume" />
 
-## Consuming Dependencies: View dependencies for a team 
+## Consuming Dependencies
 
-The **Consuming Dependencies** view shows work that my team is dependent upon other teams/area paths. It is useful for answering the following questions: 
+The **Consuming Dependencies** view shows work that a team is dependent upon other teams/area paths. It is useful for answering the following questions: 
 
-- *Which dependencies am I consuming as the owner of the selected Area?* 
-- *How many dependencies per Producer team (by area level 3)?*
-- *What are the State of my consumer dependencies?*
+- *Which dependencies am I consuming as the owner of the selected areas and sub areas?* 
+- *How many dependencies per producer team (by area level 3)?*
+- *What are the workflow states of my consumer dependencies?*
 
 > [!div class="mx-imgBorder"]  
-> [Consuming-View](_img/tracker/consuming-dependencies-view.png)
+> ![Consuming-View](_img/tracker/consuming-dependencies-view.png)
 
-On the bar chart each column represents another area path that is producing dependencies for this area path by state or risk. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
+Each column on the bar chart represents another area path that is producing dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
-- Filtering down work items
-- Changing if the Producer or Consumer work items are displayed on top
-- Expanding using the + to show both halves of the dependency
+Within the table you can perform the following actions. 
+
+- Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
+- Expand or collapse the list of work items to show the full list of dependent work items using the ![ ](../_img/icons/expand_icon.png) expand and ![ ](../_img/icons/collapse_icon.png) collapse icons 
+- Add or remove column fields by opening Column Options
+- Switch the sequence of work items by choosing the Display: **Consumer on top** or **Producer on top**
+
 
 <a id="produce" />
 
-## Producing Dependencies: view deliverable work for a team  
+## Producing Dependencies 
 
 The **Producing Dependencies** view shows work that other teams/area paths are dependent on per the selected area. It is useful for answering the following questions: 
 
-- *Which dependencies am I reponsible for delivering as the owner of the selected Area?* 
-- *How many dependencies exist per Consumer team (by area level 3)?*
-- *What are the states of my producer dependencies?*
-
+- *Which dependencies is my team reponsible for delivering as the owner of the selected area(s)?* 
+- *How many dependencies exist per consumer team (by area level 3)?*
+- *What are the workflow states of my producer dependencies?*
 
 > [!div class="mx-imgBorder"]  
-> [Dependency Tracker](_img/tracker/producing-dependencies-view.png)
+> ![Dependency Tracker](_img/tracker/producing-dependencies-view.png)
 
-- Filtering down work items
-- Changing if the Producer or Consumer work items are displayed on top
-- Expanding using the + to show both halves of the dependency
+Each column on the bar chart represents another area path that is consuming dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
-
+Within the table you can perform the same actions as in the Consuming Dependencies view. 
+ 
+ 
 <a id="timeline" />
 
-## Timeline view
-
-The **Timeline** tab provides a calendar view of dependencies  
-
-- What are all the deliverable dependencies against selected timeline for a given team?
+## Timeline 
 
 > [!NOTE]   
-> The Dependency Timeline feature is in Beta. From the Timeline view, you can view the sequencing of dependencies across months. In order for the Timeline to function correctly, Iteration Paths must have dates assigned. 
+> The Timeline view is in Beta. 
 
-![Timeline](_img/tracker/Timeline.png)
+The **Timeline** tab provides a calendar view of dependencies. In order for the Timeline to function correctly, Iteration Paths must have dates assigned. 
 
+The Timeline view helps answering the following questions: 
 
-- Red arrows highlight when the sequencing is out of order and a predecessor is scheduled to be complete after a successor
-- The left-hand colored bar designates the state of each item
-- Hover over an item to see a detailed card or double click to open an individual work item
-- Right clicking of an item to reassign it to a new iteration
+- *What is the sequence of dependencies within the time window.*
+- *What are all the deliverable dependencies against within the three month time window for a given team?*
+
+There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. Color codes can be customized within the [Dependency Tracker configuration](#configuration).
+
+#### Correct Flow
+
+This view shows those dependencies that are in the correct sequence where a successor work item is scheduled to be completed after it's predecessor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
+
+#### Incorrect Flow
+This view shows those dependencies that are out of order and a predecessor work item is scheduled to be completed after a successor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, incorrect flow](_img/tracker/timeline-oc-word-2019-incorrect-flow.png)
@@ -301,11 +309,31 @@ The **Timeline** tab provides a calendar view of dependencies
 
 ## Risk Graph
 
-The Risk Graph is a bird’s eye view of how dependencies flow from Producer team to Story (V1), or from Producer to Consumers (view coming soon). The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories, as well as leveraging Risk Assessment fields. 
+The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
-![Dependency Tracker Risk Graph](_img/tracker/risk-graph.png)
+> [!div class="mx-imgBorder"]  
+> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph.png)
 
-The color coding in the risk graph is dependent on the State of the item and is configurable. The width of the lines in the risk graph indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
+There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines in the indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
+
+#### Consuming From
+
+> [!div class="mx-imgBorder"]  
+> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph-ff-consuming-from.png)
+
+#### Producing For
+
+> [!div class="mx-imgBorder"]  
+> ![Dependency Tracker Risk Graph, Producing For](_img/tracker/risk-graph-ff-producing-for.png)
+
+
+#### Filtered on a specific dependency
+
+You can drill down into specifics by choosing one of the dependencies. 
+
+> [!div class="mx-imgBorder"]  
+> ![Dependency Tracker Risk Graph, Producing For, Filtered on a dependency](_img/tracker/risk-graph-ff-producing-for-filtered.png)
+
 
 <a id="configuration" /> 
 
@@ -483,9 +511,6 @@ Cross account linking requires the use of a special link type and should only be
     "iterationDepth": 8
 }
 ```
-## Other customizations
-
-*Are there other customizations I can make to the Dependency Tracker?* 
 
 
 ## Related articles
