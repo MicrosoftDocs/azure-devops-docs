@@ -49,6 +49,16 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 </table>
 
+## Troubleshooting
+### Script worked locally, but failed in the pipeline
+
+This typically occurs when the service connection used in the pipeline has insufficient permissions to run the script. Locally, the script runs with your credentials and would succeed as you may have the required access.
+
+To resolve this issue, ensure the service principle/ authentication credentials have the required permissions. For more details, see 
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
+   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   also contains more information about using service principal authentication.
+
 ## Samples
 
 [!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
