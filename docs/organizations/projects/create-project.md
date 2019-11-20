@@ -146,6 +146,51 @@ When you create a project, specify the following options:
    - **Test Plans** to define test plans and test suites. See [Create test plans and test suites](../../test/create-a-test-plan.md).
    - **Manage your services** to disable the visibility of services. See [Turn a service on or off](../settings/set-services.md).
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+<a id="create-project" /> 
+
+You can create a project using the [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops project create --name
+                         [--description]
+                         [--open]
+                         [--org]
+                         [--process]
+                         [--source-control {git, tfvc}]
+                         [--visibility {private, public}]
+```
+
+#### Parameters
+
+- **name**: Required. Name of the project to create.  
+- **description**: Optional. Short description of the project. Enclose the description in quotes.  
+- **open**: Optional. Once the command creates a project, it opens in the default web browser.
+- **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
+- **source-control**: Optional. Type of source control repository to create for the project: *git* (default) or *tfvc*. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
+- **visibility**: Optional. Project visibility. Accepted values: *private* (default), *public*.
+
+#### Example
+
+The following command creates a new project named *MyFirstProject* under the Fabrikam organization. The project has the *Agile* process, and *git* source control. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
+ID                                    Name             Visibility    Process    Source Control
+------------------------------------  ---------------  ------------  ---------  ----------------
+be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
+```
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+#### [Team Explorer](#tab/team-explorer)
+
+Creating a project from Team Explorer isn't supported for Azure DevOps Services. If you try, Team Explorer redirects you to the web portal.
+
 ::: moniker-end
 
 * * *
@@ -236,14 +281,6 @@ Creating a project from the web portal isn't supported for TFS 2015 and earlier 
 
 ::: moniker-end
 
-#### [Team Explorer](#tab/team-explorer)
-
-::: moniker range="azure-devops"
-
-Creating a project from Team Explorer isn't supported for Azure DevOps Services. If you try, Team Explorer redirects you to the web portal.
-
-::: moniker-end
-
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
 > [!NOTE]
@@ -254,7 +291,6 @@ Creating a project from Team Explorer isn't supported for Azure DevOps Services.
 ::: moniker-end
 
 <a id="te"> </a>
-
 
 ::: moniker range="<= tfs-2017"
 
@@ -323,62 +359,20 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
 ::: moniker-end
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"  
-
-<a id="create-project" /> 
-
-You can create a project using the [az devops project create](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-az devops project create --name
-                         [--description]
-                         [--open]
-                         [--org]
-                         [--process]
-                         [--source-control {git, tfvc}]
-                         [--visibility {private, public}]
-```
-
-#### Parameters
-
-- **name**: Required. Name of the project to create.  
-- **description**: Optional. Short description of the project. Enclose the description in quotes.  
-- **open**: Optional. Once the command creates a project, it opens in the default web browser.
-- **org**: Optional. Azure DevOps organization URL. Required if not configured as default or picked up by using `git config`. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **process**: Optional. The process model to use, such as *Agile*, *Basic*, *Scrum*, *CMMI*, or other custom process model. Agile is the default. To learn more, see [About process customization and inherited processes](../settings/work/inheritance-process-model.md).
-- **source-control**: Optional. Type of source control repository to create for the project: *git* (default) or *tfvc*. If not, name or ID of the project. Example: `--project "Fabrikam Fiber"`.
-- **visibility**: Optional. Project visibility. Accepted values: *private* (default), *public*.
-
-#### Example
-
-The following command creates a new project named *MyFirstProject* under the Fabrikam organization. The project has the *Agile* process, and *git* source control. For other output format options, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops project create --name MyFirstProject --description "Test project 1" --org https://dev.azure.com/fabrikam/ --process Agile --source-control  git --output table
-ID                                    Name             Visibility    Process    Source Control
-------------------------------------  ---------------  ------------  ---------  ----------------
-be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
-```
-
-::: moniker-end
-
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
-
----
 
 ## List and connect to projects
 
-#### [Browser](#tab/browser)
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Settings page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
 
 Connect to a project, collection, or server from your web browser.
 
-::: moniker range="azure-devops"
-
-1. To view the projects defined for an organization, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
 2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
@@ -392,54 +386,23 @@ Connect to a project, collection, or server from your web browser.
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
 
-::: moniker-end  
+#### [Current](#tab/current-page)
 
-::: moniker range=">= tfs-2018 <= azure-devops-2019"  
+Connect to a project, collection, or server from your web browser.
 
-1. To view the projects defined for a collection, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+1. To view the projects defined for an organization, select **Azure DevOps** to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
 
-1. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](_img/create-project/list-projects-2019.png)  
-
-1. Or, select **Admin settings** and then choose **Projects** to list all projects.
+2. Choose the organization to view the list of projects. The page lists the last two or three projects you connected to at the top. Select any project to connect to that project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
+	> ![Open Projects](_img/create-project/list-projects.png)  
+
+3. Or, choose **Organization settings** and then select **Projects** to list all projects.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects](_img/create-project/list-projects-org-settings.png)  
 
 	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2017"  
-
-Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (TFS Web Portal)](../../_img/icons/gear-icon.png)
-
-> [!div class="mx-imgBorder"]  
-> ![Overview tab, Project list, Collection settings](_img/create-project/list-projects-2017.png)
-
-You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
-
-::: moniker-end  
-
-#### [Team Explorer](#tab/team-explorer)
-
-From Team Explorer, you can view a list of projects by connecting to an organization or server. For details, see [Connect to a project](connect-to-projects.md).
-
-#### Visual Studio 2019
-> [!div class="mx-imgBorder"]  
-> ![Connect to a project dialog](_img/create-project/connect-to-a-project-2019.png)  
-
-#### Visual Studio 2017
-
-> [!div class="mx-imgBorder"]  
-> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2017.png)  
-
-#### Visual Studio 2015
-
-> [!div class="mx-imgBorder"]  
-> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2015.png)  
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -516,11 +479,58 @@ ID                                    Name            Visibility    Process     
 
 ```
 
-::: moniker-end
-
 [!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
 
----
+#### [Team Explorer](#tab/team-explorer)
+
+From Team Explorer, you can view a list of projects by connecting to an organization or server. For details, see [Connect to a project](connect-to-projects.md).
+
+::: moniker-end
+
+* * *
+
+::: moniker range=">= tfs-2018 <= azure-devops-2019"  
+
+1. To view the projects defined for a collection, select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../_img/icons/project-icon.png)
+
+2. Choose the collection to view the list of projects. The page lists the last two or three projects you connected to at the top. Choose any project to connect to that project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects](_img/create-project/list-projects-2019.png)  
+
+1. Or, select **Admin settings** and then choose **Projects** to list all projects.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Projects](_img/create-project/list-projects-admin-settings-2019.png)  
+
+	You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2017"  
+
+Open the administration overview page by choosing the gear button and choose **Collection settings**. ![Settings button (TFS Web Portal)](../../_img/icons/gear-icon.png)
+
+> [!div class="mx-imgBorder"]  
+> ![Overview tab, Project list, Collection settings](_img/create-project/list-projects-2017.png)
+
+You can choose a project to open project settings for that project on this page. For more information, see [About settings at the user, team, project, or organization-level](../settings/about-settings.md). Or, you can [rename a project](rename-project.md) or [delete a project](delete-project.md).
+
+::: moniker-end
+
+#### Visual Studio 2019
+> [!div class="mx-imgBorder"]  
+> ![Connect to a project dialog](_img/create-project/connect-to-a-project-2019.png)  
+
+#### Visual Studio 2017
+
+> [!div class="mx-imgBorder"]  
+> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2017.png)  
+
+#### Visual Studio 2015
+
+> [!div class="mx-imgBorder"]  
+> ![Connect to a project dialog](_img/create-project/connect-to-a-project-vs-2015.png)  
 
 <a id="add-a-repository" />
 
