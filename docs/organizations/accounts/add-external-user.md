@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -25,7 +25,7 @@ In this article, learn how to invite external users to your organization, if you
 * Set the policy **External guest access** to **On** for the organization that you want to invite external users to.
 
 > [!NOTE]   
-> To enable the new user interface for Organization Permissions Settings, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Current page](#tab/current-page)
 

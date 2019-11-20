@@ -14,7 +14,7 @@ ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
-# Change the organization Owner in Azure DevOps
+# Change the organization owner
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
