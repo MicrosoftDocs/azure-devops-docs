@@ -1,5 +1,5 @@
 ﻿---
-title: Choose a process such as Basic, Agile, Scrum, or CMMI
+title: Choose a process like Basic, Agile, Scrum, or CMMI
 titleSuffix: Azure Boards
 description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items 

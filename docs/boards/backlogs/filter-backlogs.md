@@ -1,5 +1,5 @@
 ﻿---
-title: Filter backlogs & queries using keywords, tags, or other fields
+title: Filter backlogs and queries
 titleSuffix: Azure Boards
 description: Filter a backlog or query based on keywords, tags, or other fields   
 ms.custom: "boards-backlogs, seodec18" 
