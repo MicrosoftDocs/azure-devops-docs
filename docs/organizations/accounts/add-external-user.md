@@ -18,11 +18,11 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to invite external users to your organization, if you access Azure DevOps via Azure Active Directory (Azure AD). To do so, you must add the identities of those users to your Azure AD and organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
+In this article, learn how to invite external users to your organization, if you access Azure DevOps via Azure Active Directory (Azure AD). To do so, you must add the identities of those users to your Azure AD and organizations. Doing this also grants the users some additional privileges. For more information see [additional organization-level resources](resources-granted-to-project-members.md).
 
 ## Prerequisites
 
-* You must set the policy **External guest access** to **On** for the organization that you want to invite external users to.
+* Set the policy **External guest access** to **On** for the organization that you want to invite external users to.
 
 > [!NOTE]   
 > To enable the new user interface for Organization Permissions Settings, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -40,7 +40,7 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
 * You must be a member of the Project Collection Administrators  or Project Administrators group for the organization that you want to invite external users to.
 
-* The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure Active Directory guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
+* The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
 ## Invite external user
 
@@ -56,8 +56,8 @@ Learn how to invite external users to your organization, if you access Azure Dev
 
 4. Complete the form based on the following guidance, and then select **Add**.
 
-	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accounts (MSAs), the email addresses display in red.
-	- **Access level**: You can add up to 5 users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**.  To learn more, see [Default roles & access for public projects](../public/default-roles-access-public.md).
+	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). For Microsoft accounts (MSAs), the email addresses display in red.
+	- **Access level**: You can add up to five users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both Stakeholder and Basic access levels grant full access to **Code**, **Work**, and **Build and Release**. But, Stakeholders only get partial access to **Test** and **Dashboards**. For more information, see [Default roles & access for public projects](../public/default-roles-access-public.md).
 	- **Add to projects**: Select each public project that you want to add the user to.  
 	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
 	- **Send email invites**: Check the box next to "Send email invites" to invite your new users via their email addresses.
