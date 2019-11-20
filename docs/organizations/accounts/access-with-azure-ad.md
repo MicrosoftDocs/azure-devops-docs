@@ -10,13 +10,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 08/06/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
 # Access your organization with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 In this article, learn how to authenticate users and control access to
 your organization the same way you

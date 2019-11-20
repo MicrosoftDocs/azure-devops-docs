@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -42,7 +42,9 @@ For more information, see the REST API reference article, section [API & TFS ver
 
 ## Enable Conditional Access for Azure DevOps
 
-To enforce Conditional Access policy on your organization, you must enable the policy in Azure DevOps, as it is set to *off* by default. This setting only applies to alternate credentials, and doesn't apply if CAPs are set in Azure AD, regardless of the settings in Azure DevOps.
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+
+To enforce Conditional Access on your organization, you must enable the policy in Azure DevOps, as it's set to *off* by default. This setting only applies to alternate credentials, and doesn't apply if CAPs are set in Azure AD, regardless of the settings in Azure DevOps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
