@@ -20,11 +20,13 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Dependency Tracker](dependency-tracker.md)
 
 ## Integration 
+
 - [Azure Boards Slack](../integrations/boards-slack.md)
 - [Azure Boards Microsoft Teams app](../integrations/boards-teams.md)
 
 
 ## Product planning 
+
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)

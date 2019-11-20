@@ -27,10 +27,10 @@ https://microsoft.visualstudio.com/OS/_apps/hub/wdgeswm.dependencytracker.depend
 --> 
 
 
-The [Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you  to track the state of the dependencies as well as their timing to help support you in assessing the risk of dependencies to deliverables. 
+The Dependency Tracker extension provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you  to track the state of the dependencies as well as their timing to help support you in assessing the risk of dependencies to deliverables. 
 
 > [!NOTE]   
-> The Dependency Tracker extension is only available on Azure DevOps Services at this time. 
+> The Dependency Tracker extension is only available on Azure DevOps Services at this time. You can download it from the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)
 
 You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
 - **Consumer**: Feature team who has a need and initiates a request for work
@@ -40,9 +40,17 @@ Each work request and work deliverable is defined as a work item. The work items
 Producing for/Consuming from link.
 
 > [!TIP]   
-> While any work item type can participate in dependency tracking, you may want to decide if you want to limit dependencies to specific types, such as Features, Epics, User Stories, or Bugs. 
+> While any work item type can participate in dependency tracking, you may want to decide if you want to limit dependencies to specific types, such as Features, Epics, User Stories, or Bugs. You can create that restriction through [Configuration of Dependency Tracker](#configuration).
 
-## Recommended use and sequence
+From the Dependency Tracker, you can choose different views and filters, as well as drill down to obtain specific details. These views and options are described in the following sections: 
+- [Filter options](#filter)
+- [Drill-down](#drill-down)
+- [Consuming Dependencies](#consume)
+- [Producing Dependencies](#produce)
+- [Timeline](#timeline)
+- [Risk Graph](#risk-graph)
+
+## Recommended use and key terms
 
 You can use Dependency Tracker to visualize and track the following work items: 
 - Dependencies on deliverables for work that your team is delivering  
@@ -51,9 +59,27 @@ You can use Dependency Tracker to visualize and track the following work items:
 
 All teams across organizations can participate in tracking dependencies. 
 
-
 > [!NOTE] 
 > Dependency Tracker doesn't replace the in person interactions required to agree to doing the work. It provides easier planning and tracking capabilities. Dependencies should be agreed upon by all parties before they are entered in to the Dependency Tracker.
+
+### Key terms
+
+- **Dependency**: work that Team A requires from Team B to do the work Team A is trying to do
+- **Consumer**: the team that wants work done
+- **Producer**: the team that is being asked to do the work
+- **Sequencing**: when a producing team’s work is needed before the consuming team can start their work
+
+### Recommended practices 
+
+- The consumer is the team that asks for the work – they initiate all discussions on the work they require
+- The consumer owns the engagement and tracking of that work – since it is the work their scenario requires, the burden is on the consumer to file, monitor, and track the status of the work
+- The consumer owns entering the work into VSTS and submitting that work request to the producer
+- Once the work has been submitted to the producer, the producer owns the work item,
+	- The producer is responsible for maintaining the work item in VSTS
+	- The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
+	- The consumer should not touch these values, once the work item has been handed off
+- The consumer is in charge of keeping tabs on the work they requested (the Dependency Tracker report is one way to do so), so that they are aware of any material changes and adjustments
+
 
 
 ## Prerequisites
@@ -66,6 +92,10 @@ All teams across organizations can participate in tracking dependencies.
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
+
+In addition, you will have wanted to perform these tasks: 
+- Set up the area paths and teams that will participate in dependency tracking 
+- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking - this is essential for the Timeline view to yield meaningful data. 
 
 
 ## Open the Dependency Tracker
@@ -84,6 +114,46 @@ All teams across organizations can participate in tracking dependencies.
 
 	You can only filter on those Area paths defined for the project. 
 
+<a id="filter" /> 
+
+## Filter options 
+
+You can filter each supported view by typing a keyword or using one or more of the fields provided, such as State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field.  
+
+To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon. 
+
+> [!div class="mx-imgBorder"]  
+> ![Filter by keyword or field](_img/tracker/filter.png)  
+
+You can toggle filters  on and off by choosing the filter icon. To see more filters use the arrows at the end of the list of filters. 
+
+Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
+
+- **State**: Check one or more check boxes for the  work item states you want to view. The drop-down list should include all workflow States defined for all work item types shown in the selected view.  
+- **Work item type**: Check one or more check boxes for the Work item types you want to view. Work item types configured to participate in dependency tracking. The default work item types are: Epic, Feature, User Story, and Bug. To modify the configuration, see [Configuration of Dependency Tracker](#configuration).
+- **Iteration**: Check one or more check boxes for the Iteration Paths you want to view.  The drop-down list should include all Iteration Paths [configured for the project](../../organizations/settings/set-iteration-paths-sprints.md) and for which there are work items listed in the current view.
+- **Priority**:  Check one or more check boxes for the Priorities you want to view. The priority values assigned to work items  
+- **Partner**: The partner organization for which the work item is defined. 
+
+> [!NOTE]   
+> Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items shown in the selected view that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
+
+Ability to drop dependencies within the selected area (usually used for excluding dependencies inside my team)
+
+
+<a id="drill-down" /> 
+
+## Drill-down options 
+
+
+Several views provide interative visualization through drilldowns. 
+
+> [!div class="mx-imgBorder"]  
+> ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
+
+
+
+<a id="create" /> 
 
 ## Create a dependency 
 
@@ -150,10 +220,9 @@ You can remove a dependency by choosing the ![ ](../../_img/icons/actions-icon.p
 
 Optionally, you can remove the link from the work item's **Links** tab. 
 
-
 ## Create a query of dependencies 
 
-To open a set of dependent work items, select them in the same way you would via a bulk edit, choose the ![ ](../../_img/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
+To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
 > ![Create links manually](_img/tracker/open-as-query.png)
@@ -164,57 +233,9 @@ You can also create a custom query by selecting the Work items and direct links 
 
 Choose **Copy to HTML** to copy the selected work items to the clipboard as a formatted table. 
 
-## Supported views, filters, and drill downs 
+<a id="consume" />
 
-From the Dependency Tracker, you can choose different views and filters, as well as drill down to obtain specific details. 
-
-### Supported filters
-
-Top level filters are described in the table below 
-
-| Filter | Description |
-| -------| ----------- | 
-| Area View | Selects the area path of the team(s) that are participating in dependency tracking. 
-| Story (toggle between Area or Story)| 
-| Release (multiselect)| 
-| Iteration (multiselect)| 
-| Product Family (multiselect) | 
-| Product (multiselect)| 
-
-
-Ability to drop dependencies within the selected area (usually used for excluding dependencies inside my team)
-
-## Filter using keywords, tags, or select field values
-
-You can filter by select field values. To start filtering, choose the ![](../_img/icons/filter-icon.png) filter icon.
-
-> [!div class="mx-imgBorder"]  
-> ![Enable field-based filtering](_img/tracker/filter.png)
-
-Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
-
-- **Search title or tag**: Enter a keyword used within a work item title or tag. 
-- **State**: Check one or more check boxes for the  work item states you want to view. 
-- **Work item type**: Check one or more check boxes for the Work item types you want to view. 
-- **Iteration**: Check one or more check boxes for the Iteration Paths you want to view.   All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
-- **Priority**: Check one or more check boxes for the Priorities you want to view. 
-- **Partner**: Check one or more check boxes for the leaf node of the Area Paths participating in the dependencies.  
-
-> [!NOTE]   
-> Filter options are dependent on the [configuration](#configuration) defined for the Dependency Tracker. Also, only those options that correspond to work items which XXXX to work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path. 
-
-### Supported drill-downs 
-
-Several views provide interative visualization through drilldowns. 
-
-
-> [!div class="mx-imgBorder"]  
-> ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
-
-### Multi-select options 
-
-
-## View dependencies for a team 
+## Consuming Dependencies: View dependencies for a team 
 
 The **Consuming Dependencies** view shows work that my team is dependent upon other teams/area paths. It is useful for answering the following questions: 
 
@@ -222,13 +243,9 @@ The **Consuming Dependencies** view shows work that my team is dependent upon ot
 - *How many dependencies per Producer team (by area level 3)?*
 - *What are the State of my consumer dependencies?*
 
-The **Producing Dependencies** view addresses these questions: 
+<a id="produce" />
 
-- *Which dependencies am I reponsible for producing as the owner of the selected Area?* 
-- How many dependencies exist per Consumer team (by area level 3)?
-- What are the State of my producer dependencies?
-
-### View deliverable work for a team  
+## Producing Dependencies: view deliverable work for a team  
 
 The **Producing Dependencies** view shows work that other teams/area paths are dependent on per the selected area. It is useful for answering the following questions: 
 
@@ -245,12 +262,16 @@ You can view and filter specific dependency views.
 > [!div class="mx-imgBorder"]  
 > ![Consuming-View](_img/tracker/consuming-dependencies-view.png)
 
+<a id="timeline" />
 
-## View calendar view of dependencies 
+## Timeline view
+
+The **Timeline** tab provides a calendar view of dependencies  
 
 - What are all the deliverable dependencies against selected timeline for a given team?
 
-The Dependency Timeline feature is in Beta. From the Timeline view (currently in Beta), you can view the sequencing of dependencies across months.
+> [!NOTE]   
+> The Dependency Timeline feature is in Beta. From the Timeline view, you can view the sequencing of dependencies across months.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
@@ -267,6 +288,14 @@ The Dependency Timeline feature is in Beta. From the Timeline view (currently in
 ![Timeline](_img/tracker/Timeline.png)
 
 In order for the timeline to function correctly Iterations must have dates assigned
+
+
+<a id="risk-graph" />
+
+## Risk Graph
+
+The Risk Graph is a bird’s eye view of how dependencies flow from Producer team to Story (V1), or from Producer to Consumers (view coming soon). The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories, as well as leveraging Risk Assessment fields. 
+
 
 
 
@@ -446,6 +475,10 @@ Cross account linking requires the use of a special link type and should only be
     "iterationDepth": 8
 }
 ```
+## Other customizations
+
+*Are there other customizations I can make to the Dependency Tracker?* 
+
 
 ## Related articles
 
@@ -456,6 +489,13 @@ Cross account linking requires the use of a special link type and should only be
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 
 
+## Dependency Bot
+
+The dependency bot works in the background to notify teams when dependencies are created. These include performing the following actions: 
+- Notify the producer (copy the consumer) when a dependency is created
+- Notify the consumer (copy the producer) when the producer has changed the State of the deliverable to Cut
+- Notify the consumer (copy the producer) when the producer has moved out the iteration path of a committed dependency.
+
 
 <!--- TO BE COMPLETED
 
@@ -463,14 +503,6 @@ Cross account linking requires the use of a special link type and should only be
 - Ask Cheryl how her link type is Producing for/Consuming from link
 
 
-
-## Dependency Bot
-
-Dependency Bot 
-The dependency bot works in the background to help dependency management less painful. Have a suggestion on what other skills the bot can have? Please use the Feedback Hub to let us know. Starting skills: 
-Notify the producer (copy the consumer) when a dependency is created
-Notify the consumer (copy the producer) when the producer has changed the State of the deliverable to Cut
-Notify the consumer (copy the producer) when the producer has moved out the iteration path of a committed dependency.
 
 --> 
 
