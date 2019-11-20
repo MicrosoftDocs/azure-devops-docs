@@ -30,7 +30,7 @@ Pipeline caching and [pipeline artifacts](../artifacts/pipeline-artifacts.md) pe
 
 ## Using the Cache task
 
-Caching is added to a pipeline using the `CacheBeta` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
+Caching is added to a pipeline using the `Cache` pipeline task. This task works like any other task and is added to the `steps` section of a job. 
 
 When a cache step is encountered during a run, the task will restore the cache based on the provided inputs. If no cache is found, the step completes and the next step in the job is run. After all steps in the job have run and assuming a successful job status, a special "save cache" step is run for each "restore cache" step that was not skipped. This step is responsible for saving the cache.
 
@@ -39,7 +39,7 @@ When a cache step is encountered during a run, the task will restore the cache b
 
 ### Configuring the task
 
-The `CacheBeta` task has two required inputs: `key` and `path`. 
+The `Cache` task has two required inputs: `key` and `path`. 
 
 #### Path input
 
@@ -159,7 +159,7 @@ In the following example, the `install-deps.sh` step is skipped when the cache i
 
 ```yaml
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: mykey | mylockfile
     restoreKeys: mykey
@@ -183,7 +183,7 @@ variables:
   BUNDLE_PATH: $(Pipeline.Workspace)/.bundle
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'gems | "$(Agent.OS)" | my.gemspec'
     restoreKeys: | 
@@ -211,7 +211,7 @@ steps:
     echo "##vso[task.prependpath]/usr/lib/ccache"
   displayName: Install ccache and update PATH to use linked versions of gcc, cc, etc
 
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'ccache | "$(Agent.OS)"'
     path: $(CCACHE_DIR)
@@ -235,7 +235,7 @@ variables:
   GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'gradle | "$(Agent.OS)"'
     restoreKeys: gradle
@@ -264,7 +264,7 @@ variables:
   MAVEN_OPTS: '-Dmaven.repo.local=$(MAVEN_CACHE_FOLDER)'
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'maven | "$(Agent.OS)" | **/pom.xml'
     restoreKeys: |
@@ -287,7 +287,7 @@ variables:
   NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'nuget | "$(Agent.OS)" | packages.lock.json'
     restoreKeys: |
@@ -312,7 +312,7 @@ variables:
   npm_config_cache: $(Pipeline.Workspace)/.npm
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'npm | "$(Agent.OS)" | package-lock.json'
     restoreKeys: |
@@ -340,7 +340,7 @@ variables:
   YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
 
 steps:
-- task: CacheBeta@0
+- task: Cache@2
   inputs:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
