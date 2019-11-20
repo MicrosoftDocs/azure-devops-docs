@@ -199,12 +199,12 @@ However, for situations where a team of developers works on a large range of pro
 
 ## Troubleshooting
 
-### Publish with output path in Azure pipelines
+### File structure for output files is different from previous builds
 
-.Net Core ecosystem in Azure DevOps hosted agents was updated to contain .Net Core 3.0 along with 2.1 and 2.2.
-The latest CLI has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+Azure DevOps hosted agents are configured with .Net Core 3.0, 2.1 and 2.2.
+CLI for .Net Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
 
-To resolve this issue, use the *Add project name to publish path* (modifyOutputPath in YAML) input in .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
 
 ```YAML
 steps:
