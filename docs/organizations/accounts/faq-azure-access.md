@@ -9,13 +9,17 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot permissions and access with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+<a name="alt-creds-deprecation"></a>
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## General
 
@@ -195,7 +199,7 @@ To block all access for these users, remove them from Azure AD groups in your or
 
 ### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
-A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
+A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other [alternate credentials](#alt-creds-deprecation).
 
 <a name="faq-connect"></a>
 
@@ -241,7 +245,7 @@ A: Your organization was connected to a directory when the organization Owner cr
 ### Q: My alternate credentials don't work anymore. What do I do?
 
 A: This happens after you connect your organization to a directory. 
-[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
+[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected. See [important information about alternate credentials](#alt-creds-deprecation).
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 

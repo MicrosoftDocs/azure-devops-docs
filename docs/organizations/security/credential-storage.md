@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 ms.manager: mijacobs
-ms.date: 01/25/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -15,11 +15,15 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
+
+
 ## Credential security
 
 Microsoft is committed to ensuring that your projects remain safe and secure, without exception. In Azure DevOps, your projects benefit from multiple layers of security and governance technologies, operational practices, and compliance policies. We enforce data privacy and integrity both at rest and in transit. In addition, we adhere to the following practices with respect to the credentials or secrets that Azure DevOps stores. To learn more about how to choose the right authentication mechanism, see [Guidance for authentication](../../integrate/get-started/authentication/authentication-guidance.md).
 
 ## Alternate credentials (basic auth)
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 * We store two values, a 16-byte password salt and a 32-byte password hash
 * Raw password is provided directly by the caller over SSL
