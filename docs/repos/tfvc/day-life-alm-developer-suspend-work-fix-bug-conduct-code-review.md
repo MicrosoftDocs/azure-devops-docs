@@ -1,4 +1,4 @@
----
+﻿---
 title: Suspend work, fix a bug, and conduct a code review
 titleSuffix: Azure Repos
 description: Day in the life of a devops developer. Suspend work, fix a bug, and conduct a code review.

@@ -133,6 +133,9 @@ repositories {
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
 publishing and downloading to use separate organizations, if you prefer.
 
+> [!NOTE]
+> You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
+
 Replace the following fields with your own values:
 
 - `groupId`: A group ID you associate with your artifact. Give it a team or organization name so consumers can identify the origin easier.

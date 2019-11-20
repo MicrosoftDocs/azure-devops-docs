@@ -1,4 +1,4 @@
----
+﻿---
 title: MySQL Database Deployment On Machine Group task
 description: The task is used to deploy for MySQL Database.
 ms.prod: devops
