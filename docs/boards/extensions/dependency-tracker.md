@@ -243,6 +243,15 @@ The **Consuming Dependencies** view shows work that my team is dependent upon ot
 - *How many dependencies per Producer team (by area level 3)?*
 - *What are the State of my consumer dependencies?*
 
+> [!div class="mx-imgBorder"]  
+> [Consuming-View](_img/tracker/consuming-dependencies-view.png)
+
+On the bar chart each column represents another area path that is producing dependencies for this area path by state or risk. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
+
+- Filtering down work items
+- Changing if the Producer or Consumer work items are displayed on top
+- Expanding using the + to show both halves of the dependency
+
 <a id="produce" />
 
 ## Producing Dependencies: view deliverable work for a team  
@@ -254,13 +263,13 @@ The **Producing Dependencies** view shows work that other teams/area paths are d
 - *What are the states of my producer dependencies?*
 
 
-Consuming Dependencies - work the selected area path is dependent on other area paths to complete
-Producing Dependencies - work the selected area path is doing that other area paths are dependent on
-
-You can view and filter specific dependency views. 
-
 > [!div class="mx-imgBorder"]  
-> ![Consuming-View](_img/tracker/consuming-dependencies-view.png)
+> [Dependency Tracker](_img/tracker/producing-dependencies-view.png)
+
+- Filtering down work items
+- Changing if the Producer or Consumer work items are displayed on top
+- Expanding using the + to show both halves of the dependency
+
 
 <a id="timeline" />
 
@@ -271,7 +280,15 @@ The **Timeline** tab provides a calendar view of dependencies
 - What are all the deliverable dependencies against selected timeline for a given team?
 
 > [!NOTE]   
-> The Dependency Timeline feature is in Beta. From the Timeline view, you can view the sequencing of dependencies across months.
+> The Dependency Timeline feature is in Beta. From the Timeline view, you can view the sequencing of dependencies across months. In order for the Timeline to function correctly, Iteration Paths must have dates assigned. 
+
+![Timeline](_img/tracker/Timeline.png)
+
+
+- Red arrows highlight when the sequencing is out of order and a predecessor is scheduled to be complete after a successor
+- The left-hand colored bar designates the state of each item
+- Hover over an item to see a detailed card or double click to open an individual work item
+- Right clicking of an item to reassign it to a new iteration
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
@@ -280,24 +297,15 @@ The **Timeline** tab provides a calendar view of dependencies
 > ![Timeline view, incorrect flow](_img/tracker/timeline-oc-word-2019-incorrect-flow.png)
 
 
-- Red arrows highlight when the sequencing is out of order and a predecessor is scheduled to be complete after a successor
-- The left-hand colored bar designates the state of each item
-- Hover over an item to see a detailed card or double click to open an individual work item
-- Right clicking of an item to reassign it to a new iteration
-
-![Timeline](_img/tracker/Timeline.png)
-
-In order for the timeline to function correctly Iterations must have dates assigned
-
-
 <a id="risk-graph" />
 
 ## Risk Graph
 
 The Risk Graph is a bird’s eye view of how dependencies flow from Producer team to Story (V1), or from Producer to Consumers (view coming soon). The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories, as well as leveraging Risk Assessment fields. 
 
+![Dependency Tracker Risk Graph](_img/tracker/risk-graph.png)
 
-
+The color coding in the risk graph is dependent on the State of the item and is configurable. The width of the lines in the risk graph indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
 <a id="configuration" /> 
 
