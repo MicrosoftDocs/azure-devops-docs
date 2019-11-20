@@ -1,5 +1,5 @@
----
-title: Azure DevOps - A Pipeline Automation Case Study for World Wide Time Keeping
+﻿---
+title: Pipeline Automation Case Study for World Wide Time Keeping
 description: Automate build and release pipelines with Azure DevOps, a case study for World Wide Time Keeping
 ms.prod: devops
 ms.topic: conceptual
