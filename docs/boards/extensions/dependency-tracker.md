@@ -516,6 +516,10 @@ Cross account linking requires the use of a special link type and should only be
 ## Related articles
 
 - [Review team delivery plans](../plans/review-team-plans.md)
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
+- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
+- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
+
 
 ## Related Marketplace extensions
 
