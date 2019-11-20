@@ -172,7 +172,7 @@ az repos policy case-enforcement update --id
 
 #### Example
 
-The following example retrieves the IDs of the existing policies using `az repos policy list` and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos policy list --output table
