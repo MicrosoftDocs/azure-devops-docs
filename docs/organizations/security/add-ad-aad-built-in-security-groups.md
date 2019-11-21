@@ -85,7 +85,6 @@ The method for adding a user or group to a built-in security group is the same, 
 	> you can't browse to it or check the friendly name.
 	> After the identity has been added, you can just enter the friendly name.
 
-
 #### [Current page](#tab/current-page)
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
@@ -121,7 +120,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker-end
 
-* * *
+---
 
 ::: moniker range="= azure-devops-2019"
 
