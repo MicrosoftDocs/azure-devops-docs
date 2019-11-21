@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2019
+ms.date: 11/20/2019
 ---
 
 
@@ -52,12 +52,18 @@ To create a project-level security group, open the web portal and choose the pro
 
 #### [Preview page](#tab/preview-page) 
 
-1. Choose **Project settings** > **Security**.
-2. Choose **Create group** to open the dialog for adding a group.
-3. Enter a name for the group, and optionally a description.
+1. Choose **Project settings > Permissions**.
 
-    For example, here we define a Team Admins group.
-4. 4. Choose **Create group**.
+   ![Choose Project settings, and then the Permissions page](_img/permissions/choose-project-settings-permissions.png)  
+
+2. Choose **New group** to open the dialog for adding a group.
+
+   ![Select New group to open dialog for adding group](_img/permissions/permissions-select-new-group.png)
+
+3. Enter a name for the group, select users or groups for membership, optionally add a description, and then choose **Create**.
+
+   ![Create group dialog](_img/permissions/create-group-dialog.png)
+   
 
 ::: moniker-end
 
