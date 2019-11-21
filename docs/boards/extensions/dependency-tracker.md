@@ -73,9 +73,9 @@ All teams across organizations can participate in tracking dependencies.
 
 - The consumer is the team that asks for the work – they initiate all discussions on the work they require
 - The consumer owns the engagement and tracking of that work – since it is the work their scenario requires, the burden is on the consumer to file, monitor, and track the status of the work
-- The consumer owns entering the work into VSTS and submitting that work request to the producer
+- The consumer owns entering the work into Azure Boards and submitting that work request to the producer
 - Once the work has been submitted to the producer, the producer owns the work item,
-	- The producer is responsible for maintaining the work item in VSTS
+	- The producer is responsible for maintaining the work item in Azure Boards
 	- The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
 	- The consumer should not touch these values, once the work item has been handed off
 - The consumer is in charge of keeping tabs on the work they requested (the Dependency Tracker report is one way to do so), so that they are aware of any material changes and adjustments
@@ -89,6 +89,7 @@ All teams across organizations can participate in tracking dependencies.
 - To create a dependency, you must be a member of the Contributors group for both projects that participate in the dependency linking.
 - To support cross-organization participation, all organizations must authenticate users through the same [Azure Active Directory](../../organizations/accounts/connect-organization-to-azure-ad.md). 
 - Azure Boards must be enabled as a service. If it is disabled, then you'll need to have it reenabled. For details, see [Turn a service on or off](../../organizations/settings/set-services.md). 
+- In order to modify the configuration, you must be a member of the  Project Collection Administrator Group. 
 
 > [!IMPORTANT]  
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
@@ -279,15 +280,13 @@ Within the table you can perform the same actions as in the Consuming Dependenci
 
 ## Timeline 
 
-> [!NOTE]   
-> The Timeline view is in Beta. 
-
-The **Timeline** tab provides a calendar view of dependencies. In order for the Timeline to function correctly, Iteration Paths must have dates assigned. 
-
-The Timeline view helps answering the following questions: 
+The **Timeline** tab provides a calendar view of dependencies. The Timeline view is in Beta. The Timeline view helps answering the following questions: 
 
 - *What is the sequence of dependencies within the time window.*
 - *What are all the deliverable dependencies against within the three month time window for a given team?*
+
+> [!IMPORTANT]   
+> In order for the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
 
 There are two versions of the Timeline view: **Correct Flow** and **Incorrect Flow**. Each version shows the color-coded workflow state. Color codes can be customized within the [Dependency Tracker configuration](#configuration).
 
@@ -338,6 +337,8 @@ You can drill down into specifics by choosing one of the dependencies.
 <a id="configuration" /> 
 
 ## Configure the Dependency Tracker
+
+You must be a member of the  Project Collection Administrator Group  in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
 You can customize the configuration used in the Dependency Tracker as follows: 
 
@@ -471,7 +472,6 @@ Cross account linking requires the use of a special link type and should only be
     "riskAssessmentValues": [],
     "releases": [],
     "partnerAccounts": [],
-    "rankValues": [],
     "timelineEnabled": true,
     "newDependencyButtonEnabled": true,
     "crossAccountConfigs": {
@@ -512,9 +512,261 @@ Cross account linking requires the use of a special link type and should only be
 }
 ```
 
+### Property descriptions 
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+<th width="25%">Property</th>
+<th width="30%">Description</th>
+<th width="20%">Default</th>
+<th width="25%">Example</th>
+</tr>
+<tr>
+<td>consumesLinkName</td>
+<td>Specifies the link type used to create the link from producer to consumer.  </td>
+<td>System.LinkTypes.Dependency-Reverse</td>
+<td> </td>
+</tr>
+<tr>
+<td>producesLinkName</td>
+<td>Specifies the link type used to create the link from consumer to producer. </td>
+<td>System.LinkTypes.Dependency-Forward</td>
+<td> </td>
+</tr>
+<tr>
+<td>queryFields</td>
+<td> </td>
+<td>{}</td>
+<td> </td>
+</tr>
+<tr>
+<td>dependencyWorkItemTypes</td>
+<td>Specifies the work item types that participate in dependency tracking. From the Create dependency dialog, only those work item types listed can be created.  </td>
+<td>[
+        "Epic",
+        "Feature",
+        "User Story",
+        "Bug"
+    ]</td>
+<td>If using the Scrum process, you would change this to: 
+[
+        "Epic",
+        "Feature",
+        "Product Backlog Item",
+        "Bug"
+    ]
+</td>
+</tr>
+<tr>
+<td>selectedDependencyWorkItemTypes</td>
+<td>Restricts the work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. </td>
+<td>Any</td>
+<td>To restrict the work item types to just Epics and Features, specify:  
+[
+        "Epic",
+        "Feature"
+    ]</td>
+</tr>
+<tr>
+<td>selectedReleases</td>
+<td>Restricts the focus to just those work items that are assigned to those Interation Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied.  </td>
+<td>none specified</td>
+<td>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:  
+[
+        "Fabrikam/Release 1",
+        "Fabrikam/Release 2",
+    ]</td>
+</tr>
+<tr>
+<td>workItemCategoriesAndColors</td>
+<td>Specifies the colors used to represent work items based on their category and workflow state. </td>
+<td>{
+        "Proposed": {
+            "displayName": "Proposed",
+            "color": "#a6a6a6"
+        },
+        "InProgress": {
+            "displayName": "In Progress",
+            "color": "#00bcf2"
+        },
+        "Completed": {
+            "displayName": "Completed",
+            "color": "#9ac70b"
+        },
+        "Removed": {
+            "displayName": "Removed",
+            "color": "#d9242c"
+        },
+        "Resolved": {
+            "displayName": "Resolved",
+            "color": "#ff9d00"
+        }
+    }</td>
+</tr>
+<tr>
+<td>workItemDislayStatesAndDisplayColors</td>
+<td>Maps the workflow states to colors used to display them. </td>
+<td>{
+        "New": {
+            "textColor": "rgb(112, 112, 112)",
+            "chartColor": "rgb(112, 112, 112)",
+            "states": [
+                "New"
+            ]
+        },
+        "Active": {
+            "textColor": "rgb(0, 122, 204)",
+            "chartColor": "rgb(0, 122, 204)",
+            "states": [
+                "Active",
+                "Resolved"
+            ]
+        },
+        "Closed": {
+            "textColor": "rgb(16, 124, 16)",
+            "chartColor": "rgb(16, 124, 16)",
+            "states": [
+                "Closed"
+            ]
+        },
+        "Removed": {
+            "textColor": "rgb(204, 41, 61)",
+            "chartColor": "rgb(204, 41, 61)",
+            "states": [
+                "Removed"
+            ]
+        },
+        "Other": {
+            "textColor": "rgb(178, 178, 178)",
+            "chartColor": "rgb(178, 178, 178)",
+            "states": []
+        }
+    }</td>
+<td>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </td>
+</tr>
+<td>riskAssessementValues</td>
+<td>Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. </td>
+<td>[]</td>
+<td>["1-High", "2-Medium", "3-Low"]</td>
+</tr>
+<tr>
+<td>releases</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>partnerAccounts</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>timelineEnabled</td>
+<td>Enables of disables the Timeline view.</td>
+<td>true</td>
+<td> </td>
+</tr>
+<tr>
+<td>newDependencyButtonEnabled</td>
+<td>Enables of disables the **New Dependency** link to create a new linked dependency.</td>
+<td>true</td>
+<td> </td>
+</tr>
+<tr>
+<td>crossAccountConfigs</td>
+<td>(1) Enables of disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </td>
+<td>{
+        "crossAccountDependencyEnabled": true,
+        "crossAccountDependencyToggleDefaultState": false
+    }</td>
+<td>If you don't want any dependencies created that belong to other organizations, then change this configuration to: 
+{
+        "crossAccountDependencyEnabled": true,
+        "crossAccountDependencyToggleDefaultState": false
+    }
+</td>
+</tr>
+<tr>
+<td>PriorityValues</td>
+<td>Specifies the [Priority](../queries/planning-ranking-priorities.md#risk) field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   </td>
+<td>[
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "(blank)"
+    ]</td>
+<td> </td>
+</tr>
+<tr>
+<td>defaultColumns</td>
+<td>Specifies the field columns and order used to display dependency lists. </td>
+<td>[
+        "Id",
+        "Area Path",
+        "Dependency Title",
+        "State",
+        "Consumers",
+        "Producers"
+    ]</td>
+<td> </td>
+</tr>
+<tr>
+<td>riskAnalysisEnabled</td>
+<td>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</td>
+<td>False</td>
+<td> </td>
+</tr>
+<tr>
+<td>riskAssessmentValues</td>
+<td> </td>
+<td>[]</td>
+<td> </td>
+</tr>
+<tr>
+<td>riskGraphConfig</td>
+<td>Maps the workflow States to one of the three Risk areas displayed on the Graph: atRisk is Red, nuetral is Gray, and onTrack is Green.  </td>
+<td>
+{
+    "atRisk": [
+        "Removed"
+    ],
+    "neutral": [
+        "New"
+    ],
+    "onTrack": [
+        "Active",
+        "Resolved",
+        "Closed",
+         "Other"
+        ]
+},
+</td>
+<td>Add or remove workflow states used in work item types participating in dependency tracking.</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>iterationDepth</td>
+<td>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </td>
+<td>8</td>
+<td>A depth of three would correspond to: Fabrikam Fiber/Release 1/Sprint 20. </td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## Related articles
 
+- [Work item field index](..//work-items/guidance/work-item-field.md)
 - [Review team delivery plans](../plans/review-team-plans.md)
 - [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
 - [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
