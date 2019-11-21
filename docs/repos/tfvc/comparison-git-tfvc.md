@@ -277,8 +277,8 @@ Need more help to make a choice? These charts might help.
 </thead>
 <tr>
 <td>CodePlex support</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](http://www.codeplex.com/)">CodePlex</a> is supported.</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](http://www.codeplex.com/)">CodePlex</a> is supported.</td>
+<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
+<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
 </tr>
 <tr>
 <td>Migration path</td>

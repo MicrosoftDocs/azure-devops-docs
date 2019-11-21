@@ -39,7 +39,7 @@ Permissions to manage notifications at each page default are  as follows:
 
 ## Navigating to the organization-level notifications page
 
-Select the Notifications page under organization settings.
+Select **Organization settings**, and then **Notifications**.
 
 Personal:
 ```
@@ -74,7 +74,7 @@ https://dev.azure.com/{organization}/_admin/_notifications
 
 ## Navigating to the team level notifications page
 
-Select the Notifications page under project settings.
+Select **Project settings**, and then **Notifications**.
 
    ::: moniker range=">= tfs-2018"  
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  

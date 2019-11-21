@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/13/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -39,15 +39,15 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the landing page, which is your Projects page, select  ![gear icon](../../_img/icons/gear-icon.png) **Project settings**.
+2. Open your project, and then select **Project settings > Teams**. Then, select your project.
 
-   ![The Projects page](../../_shared/_img/settings/open-project-settings-vert-brn.png)
+   ![The Projects page](_img/_shared/open-project-settings.png)
 
-3. Invite members to your project.
+3. Select **Add** to invite members to your project.
 
    ![On your project home page, select Invite a friend](_img/add-team-members/add-member-to-project.png)
 
-4. Add users or groups.
+4. Add users or groups, and then choose **Save**.
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
 

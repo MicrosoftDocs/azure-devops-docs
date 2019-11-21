@@ -66,11 +66,6 @@ Some suggestions for naming your feature branches:
 
 #### Use feature flags to manage long-running branches
 
-Long-lived feature branches present problems when you need to build code on top of the branch before the work in the branch is finished.
-Merge unfinished features into the master branch so others can build off their work. Keep them hidden from your users and testers by using feature flags.
-Enable the flag in development to use the feature without the changes affecting anyone else.
-Once you finish with the feature, remove the flags or use them to roll out the feature to select users and testers.
-
 Learn more about [using feature flags](http://martinfowler.com/articles/feature-toggles.html) in your code.
 
 ### Review and merge code with pull requests

@@ -60,8 +60,10 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
     - Settings to associate build and release pipelines
 - Test suites tree:
     - Create and manage suites (static, requirement or query based)
+    - Import (i.e. copy) suite from another test plan
     - Assign configurations
     - Order suites
+    - Export
     - User acceptance testing
 - Define tab:
     - Create and add new test cases
@@ -87,9 +89,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 **Capabilities from the following list will be added every 3 weeks:**
 
 - Test suites tree:
-	- Import (i.e. copy) suite from another test plan
 	- Show all test cases and points from child suites
-	- Export
 	- Drag and drop test cases across suites
 - Define tab	
 	- See linked items: requirements and bugs

@@ -272,7 +272,7 @@ macOS/Linux:
 
 #### Use full HTTP tracing - Windows
 
-1. Start [Fiddler](http://www.telerik.com/fiddler).
+1. Start [Fiddler](https://www.telerik.com/fiddler).
 
 2. We recommend you listen only to agent traffic. File > Capture Traffic off (F12)  
 

@@ -117,7 +117,7 @@ Searching for a task in the build or release definition editor now lists relevan
 
 ### Seamlessly use public packages using upstream sources
 
-Upstream sources for [nuget.org](http://nuget.org) and [npmjs.com](https://npmjs.com) are now generally available. Benefits include the ability to manage (unlist, deprecate, unpublish, delete, etc.) packages saved from upstream sources as well as guaranteed saving of every upstream package you use.
+Upstream sources for [nuget.org](https://nuget.org) and [npmjs.com](https://npmjs.com) are now generally available. Benefits include the ability to manage (unlist, deprecate, unpublish, delete, etc.) packages saved from upstream sources as well as guaranteed saving of every upstream package you use.
 
 For now, these benefits apply only to feeds created after this announcement, unless you previously enabled the upstream sources preview toggle in your **Preview features** panel. If you enabled the preview toggle, any feed created after you enabled the toggle can use these benefits. In a later Update, you’ll be able to upgrade older feeds to take advantage of these improvements.
 
