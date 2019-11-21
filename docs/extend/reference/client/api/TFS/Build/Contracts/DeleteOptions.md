@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts DeleteOptions API | Extensions for Azure DevOps Services
+description: Data representation of a delete option.
 ms.assetid: 858dcde2-d5de-d485-a506-6c87be2ad22c
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

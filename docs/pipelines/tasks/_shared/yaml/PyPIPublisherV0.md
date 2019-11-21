@@ -1,6 +1,6 @@
 ```YAML
-# PyPI Publisher
-# Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
+# PyPI publisher
+# Create and upload an sdist or wheel to a PyPI-compatible index using Twine
 - task: PyPIPublisher@0
   inputs:
     pypiConnection: 

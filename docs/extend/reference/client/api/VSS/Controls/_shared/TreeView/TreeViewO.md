@@ -34,7 +34,7 @@ void
 #### Parameters
 
 * `node`: TreeNode. Node to be selected.
-* `suppressChangeEvent`: boolean. Optional. If specified true, &quot;selectionChanged&quot; event will not fire.
+* `suppressChangeEvent`: boolean. Optional. If specified true, &quot;selectionChanged&quot; event doesn't fire.
 
 <a name="method_removeNode"></a>
 <h3 class='method'>removeNode()</h3>

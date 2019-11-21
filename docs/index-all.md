@@ -8,7 +8,7 @@ ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid:  
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: kaelli 
 ms.date: 09/05/2018
 featureFlags:
@@ -40,7 +40,7 @@ featureFlags:
                                                         <p><a href="/azure/devops/boards/get-started/index">Azure Boards</a></p>
                                                         <p><a href="/azure/devops/pipelines/get-started/pipelines-get-started">Azure Pipelines</a></p>
                                                         <p><a href="/azure/devops/user-guide/index">Azure DevOps</a></p>
-                                                        <p><a href="/azure/devops/project/navigation/preview-features">Web portal navigation</a></p>
+                                                        <p><a href="/azure/devops/project/navigation/index">Web portal navigation</a></p>
                                                         <p><a href="/azure/devops/release-notes/index">What&#39;s new</a></p>
                                                         <p><a href="https://www.azuredevopslabs.com/">Azure DevOps Hands-on Lab</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">Azure DevOps Videos</a></p>
@@ -55,11 +55,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Plan and track work</h3>
-                                                        <p><a href="/azure/devops/boards/work-items/index">Work Items</a></p>
-                                                        <p><a href="/azure/devops/boards/boards/index">Boards (Kanban)</a></p>
-                                                        <p><a href="/azure/devops/boards/backlogs/index">Backlogs</a></p>
-                                                        <p><a href="/azure/devops/boards/sprints/index">Sprints (Scrum)</a></p>
-                                                        <p><a href="/azure/devops/boards/queries/index">Queries</a></p>
+                                                        <p><a href="/azure/devops/boards/work-items/about-work-items">Work Items</a></p>
+                                                        <p><a href="/azure/devops/boards/boards/kanban-overview">Boards (Kanban)</a></p>
+                                                        <p><a href="/azure/devops/boards/backlogs/backlogs-overview">Backlogs</a></p>
+                                                        <p><a href="/azure/devops/boards/sprints/scrum-overview">Sprints (Scrum)</a></p>
+                                                        <p><a href="/azure/devops/boards/queries/query-index-quick-ref">Queries</a></p>
                                                         <p><a href="/azure/devops/organizations/settings/work/inheritance-process-model">Process customization</a></p>
                                                         <p><a href="/azure/devops/boards/plans/index">Plans (Agile at scale)</a></p>
                                                         <p><a href="/azure/devops/project/feedback/index">Request Feedback</a></p>
@@ -91,7 +91,7 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Continuous integration &amp; delivery</h3>
                                                         <p><a href="/azure/devops/pipelines/index">Build and release pipelines</a></p>
-                                                        <p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
+                                                        <p><a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a></p>
                                                         <p><a href="/azure/devops/deploy-azure/index">Deploy to Azure</a></p>
                                                         <p><a href="/azure/devops/artifacts/index">Package management</a></p>
                                                         <p><a href="/azure/devops/pipelines/library/index">Library assets</a></p>
@@ -108,10 +108,10 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Reporting</h3>
-                                                        <p><a href="/azure/devops/report/dashboards/index">Dashboards, Charts, Reports, &amp; Widgets</a></p>
-                                                        <p><a href="/azure/devops/report/powerbi/index">Power BI Integration</a></p>
-                                                        <p><a href="/azure/devops/report/extend-analytics/index">Extend Analytics with OData</a></p>
-                                                        <p><a href="/azure/devops/report/sql-reports/index">SQL Server Reports (Legacy)</a></p>
+                                                        <p><a href="/azure/devops/report/dashboards/quick-ref">Dashboards, Charts, Reports, &amp; Widgets</a></p>
+                                                        <p><a href="/azure/devops/report/powerbi/overview">Power BI Integration</a></p>
+                                                        <p><a href="/azure/devops/report/extend-analytics/quick-ref">Extend Analytics with OData</a></p>
+                                                        <p><a href="/azure/devops/report/sql-reports/reporting-services-reports">SQL Server Reports (Legacy)</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -140,7 +140,7 @@ featureFlags:
                                                         <h3>Test</h3>
                                                         <p><a href="/azure/devops/test/index">Exploratory &amp; manual testing</a></p>
                                                         <p><a href="/azure/devops/project/feedback/index">Request stakeholder feedback</a></p>
-                                                        <p><a href="/azure/devops/pipelines/languages/dotnet-core#run-your-tests">Continuous testing</a></p>
+                                                        <p><a href="/azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests">Continuous testing</a></p>
                                                         <p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
                                                     </div>
                                                 </div>
@@ -173,11 +173,11 @@ featureFlags:
                                                         <p><a href="/azure/devops/organizations/projects/index">Manage projects</a></p>
                                                         <p><a href="/azure/devops/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a></p>
                                                         <p><a href="/azure/devops/organizations/security/index">Security &amp; identity</a></p>
-                                                        <p><a href="/azure/devops/reference/index">Customization</a></p>
+                                                        <p><a href="/azure/devops/reference/customize-work">Customization</a></p>
                                                         <p><a href="/azure/devops/organizations/accounts/index">Manage organizations</a></p>
                                                         <p><a href="/azure/devops/billing/index">Billing</a></p>
                                                         <p><a href="/azure/devops/notifications/index">Manage notifications</a></p>
-                                                        <p><a href="/tfs/index">Team Foundation Server</a></p>
+                                                        <p><a href="/azure/devops/server/admin/admin-quick-ref">Azure DevOps Server</a></p>
                                                         <p><a href="/azure/devops/migrate">Migration &amp; Import</a></p>
                                                     </div>
                                                 </div>

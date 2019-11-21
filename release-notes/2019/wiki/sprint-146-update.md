@@ -1,5 +1,6 @@
 ---
 title: Wiki - Sprint 146 Update
+description: See the Sprint 146 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
@@ -23,7 +24,7 @@ ms.date: 01/14/2018
 Read about the new features below and head over to Azure DevOps to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

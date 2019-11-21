@@ -1,12 +1,13 @@
 ---
 title: advanced package search syntax
-description: How To Use Package Search - Advanced options for using Package Search across all your feeds in a Azure DevOps organizaion
+titleSuffix: Azure Artifacts
+description: Advanced options for using Package Search across all your feeds in a Azure DevOps organization
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: sumallel
+ms.manager: mijacobs
+ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 04/18/2019
@@ -14,25 +15,27 @@ ms.date: 04/18/2019
 
 # How To: Use Package Search
 
-[!INCLUDE version-header]
+[!INCLUDE [version-header](../../_shared/version-vsts-only.md)]
 
-Package Search is available as a built-in extension in Azure DevOps. 
-Users can use Package Search by default when Artifacts service is installed and enabled in Azure DevOps Services.
-
-By using Package Search you can:
+Package Search is automatically available to users of Azure DevOps Services. By using Package Search you can:
 
 * **Search package by title and description**: You can quickly and easily find relevant packages by using 
 free text search on title and description. 
 You can also narrow your search by using Boolean operators and combine search criteria. 
-  ![](_img/_shared/pkg-srch-u2.png)
+
+> [!div class="mx-imgBorder"]  
+> [Web portal package search](_img/_shared/pkg-srch-u2.png)
 
 * **Search across all of your organization feeds**:
   Search in your and your team's feeds across the organization. Narrow your search by using feed, view 
   and package type filters. Use wildcards to widen your search and 
   Boolean operators to fine-tune it. 
-  ![](_img/_shared/pkg-srch-u1.png)
+
+> [!div class="mx-imgBorder"]  
+> [Web portal package search across organization feeds](_img/_shared/pkg-srch-u1.png)
 
 <a name="syntaxdetails"></a>
+
 ## Syntax for simple and compound searches
 
 Use simple search strings for words or phrases. The default is a whole word search; 
@@ -63,7 +66,7 @@ For example:
   the search string `xml parser`.
 * `xml OR parser` finds packages that contain either of the words **xml** or **parser**.
 * `xml NOT parser` finds packages that contain the word **xml** but not the word **parser**.
-* `(xml NOT parser) OR `lib` finds packages that contain the word **xml**
+* `(xml NOT parser)` OR `lib` finds packages that contain the word **xml**
   but not the word **parser** or packages that contain the word **lib**.
 
 ## Broaden your search by using  wildcards

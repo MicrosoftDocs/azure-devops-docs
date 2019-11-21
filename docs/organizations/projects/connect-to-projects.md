@@ -1,23 +1,23 @@
----
-title: Connect to a project from a web browser or supported client in Azure DevOps
+﻿---
+title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
 ms.technology: devops-new-user
 ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 05/15/2019 
 monikerRange: '>= tfs-2013'
 ---
 
-# Connect to a project in Azure DevOps
+# Quickstart: Connect to a project in Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To share code, build apps, track work, and collaborate with team members, you connect to a project from one of the following clients:
+In this quickstart, you learn how to connect to a project in order to share code, build apps, track work, and collaborate with team members, from one of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
@@ -26,22 +26,23 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
 - [Visual Studio Code](../../java/vscode-extension.md)    
 
-> [!NOTE]
-> A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
+A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
 
-If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
+## Prerequisites
 
-From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
+- If you don't have a project yet, [create one](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
-To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
+- From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, configure your client to [connect to a TFS Proxy server](#proxy).
+
+- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
 <a id="web-portal">  </a>
 
 ## Connect from the web portal
 
-1. If you're not a member of a security group, ask your project administrator to add you.  
+1. If you're not a member of a security group, ask your Project Administrator to add you.  
 
-2. Open a browser window and enter a URL that uses the following form:  
+2. Open a browser window and enter a URL that uses the following form: 
 
    ::: moniker range="azure-devops"
    <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
@@ -55,7 +56,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
    The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
    ::: moniker-end
 
-3. When you access the server for the first time, a Windows Identity dialog box appears. Fill in your credentials and choose the **OK** button.
+3. When you access the server for the first time, a Windows Identity dialog box appears. Enter your credentials and choose the **OK** button.
 
    > [!TIP]
    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
@@ -263,7 +264,7 @@ You can locate the executable in the following folder: `*Drive*:\\Program Files 
 
 ### User accounts and licensing for Visual Studio
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (Azure DevOps Services)](../accounts/add-organization-users.md) or a [Project Administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="azure-devops"
 Azure DevOps Services provides access to the first 5 account users free. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). 
@@ -305,7 +306,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
-- [Microsoft Test Manager](../../test/mtm/guidance-mtm-usage.md)
+- [Azure Test Plans](../../test/mtm/guidance-mtm-usage.md) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility

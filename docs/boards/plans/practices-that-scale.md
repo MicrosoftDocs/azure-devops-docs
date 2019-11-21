@@ -5,7 +5,7 @@ description: Scaling Agile recommended practices for working in Azure Boards, Az
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -129,5 +129,5 @@ In addition to the above practices, you'll find additional guidance around scali
 
 ### Practices that don't scale
 - **Estimating large initiatives**: Part of waterfall project methods involved estimating resources and schedules. The larger the initiatives, the less likely these estimates were of any value. As projects grow, risks and unforeseen issues and impediments can arise, invalidating many estimates.   
-- **Velocity**: While [team velocity](../../report/dashboards/velocity-chart-data-store.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
+- **Velocity**: While [team velocity](../../report/dashboards/team-velocity.md) can provide a useful metric for gaining insight into how much work each team can complete during a sprint cycle, you can't add team velocities to gain meaningful or useful metrics. Also, using velocity gained from a number of teams to reliably perform long range forecasts is problematic. Teams vary in the way they estimate their work, and those variations increase over time.  
 - **Top-down prescriptive solutions**: One size does not fit all, and one solution typically does not fit all teams. Supporting team autonomy means letting teams find their own solutions. 

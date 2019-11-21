@@ -3,20 +3,20 @@ title: Build preview, updated backlog navigation, branch policies, and more... �
 description: VSTS release notes for May 15 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: fbacd947-48da-4483-b04b-60170c11b221
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
 # Build preview, updated backlog navigation, branch policies, and more... – May 15
 
-You might think that this would be a light deployment for us, given all the [announcements](http://blogs.msdn.com/b/bharry/archive/2015/04/29/visual-studio-and-team-foundation-server-at-build-2015.aspx) made over the past two weeks at [BUILD](http://buildwindows.com/) and [Ignite](http://ignite.microsoft.com/)… but you’d be wrong. :-) Let’s jump right in…
+You might think that this would be a light deployment for us, given all the [announcements](https://blogs.msdn.com/b/bharry/archive/2015/04/29/visual-studio-and-team-foundation-server-at-build-2015.aspx) made over the past two weeks at [BUILD](http://buildwindows.com/) and [Ignite](https://ignite.microsoft.com/)… but you’d be wrong. :-) Let’s jump right in…
 
 ## Build Preview now publicly available
 
-The next version of our build system is now publicly available on Visual Studio Online. In addition to all of the [new capabilities](http://blogs.msdn.com/b/visualstudioalm/archive/2015/02/12/build-futures.aspx), you also have access to the Hosted queue, enabling you to run builds on Virtual Machines running in Azure. For our initial public preview, any builds you run in the hosted pool will not count against your 60 free build minutes or subscription.
+The next version of our build system is now publicly available on Visual Studio Online. In addition to all of the [new capabilities](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/12/build-futures.aspx), you also have access to the Hosted queue, enabling you to run builds on Virtual Machines running in Azure. For our initial public preview, any builds you run in the hosted pool will not count against your 60 free build minutes or subscription.
 
 ![New build system in preview](_img/5_15_01.png)
 
@@ -46,7 +46,7 @@ We updated our three out-of-the-box process templates to include new fields and 
 
 ![New work item type, Epic](_img/5_15_04.png)
 
-The Epic work item is also bound to a new optional backlog level. Using the steps above, you can turn/off this new level as desired. We also made a few process updates to address some usability issues. You can read more about the process changes in a [post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/14/scaled-agile-framework-visual-studio-online-process-template-updates.aspx) written by Gregg Boer.
+The Epic work item is also bound to a new optional backlog level. Using the steps above, you can turn/off this new level as desired. We also made a few process updates to address some usability issues. You can read more about the process changes in a [post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/14/scaled-agile-framework-visual-studio-online-process-template-updates.aspx) written by Gregg Boer.
 
 ## Kanban and Taskboard improvements
 
@@ -90,11 +90,11 @@ To learn more about all the services, see [Integrate with service hooks](https:/
 
 ## Power BI & Visual Studio Online
 
-Finally, at the [BUILD](http://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/04/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) on how to get started.
+Finally, at the [BUILD](http://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/04/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) on how to get started.
 
 ![Power BI integration](_img/5_15_09.png)
 
-That’s a wrap for sprint 82. If you have questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see us prioritize, head over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for sprint 82. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 

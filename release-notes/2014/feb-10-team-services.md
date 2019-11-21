@@ -3,10 +3,10 @@ title: Visual Studio Online updates - Feb 10
 description: VSTS release notes for February 10 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 31b56eea-567c-4296-aa78-29cf0065ce87
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -24,7 +24,7 @@ We’ve also surfaced a new permission that allows you to manage who can create 
 
 ![Tag Permission](_img/2_10_02.png)
 
-We’re always anxious to hear your feedback. Let us know how we’re doing at [http://visualstudio.microsoft.com/support/support-overview-vs](https://visualstudio.microsoft.com/support/support-overview-vs).
+We’re always anxious to hear your feedback. Let us know how we’re doing at [https://visualstudio.microsoft.com/support/support-overview-vs](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 Thanks,
 

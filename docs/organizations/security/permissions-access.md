@@ -6,25 +6,25 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/07/2018
+ms.date: 06/02/2019
 ---
 
 # Default permissions and access for Azure DevOps
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
+To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
 The most common built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 In general, use the following guidance when assign users to an access level and security group: 
-- Grant **Basic** access and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
-- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. Also, 
+- Grant **Basic** access or higher and add to the **Contributors** security group full-time workers who contribute to the code base or manage projects.
+- Grant **Stakeholder** access and add to the **Contributors** security group managers or users who don't actively contribute to the code base but want to check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 - Grant **Stakeholder** access and add to the **Project Administrators** security group users tasked with managing project resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 - Grant **Stakeholder** access and add to the **Project Collection Administrators** security group users tasked with managing organization or collection resources. If they also need to contribute to the code base, then you must assign them **Basic** or higher-level access.  
 
@@ -84,6 +84,7 @@ You set [permissions](../../report/powerbi/analytics-security.md) for the servic
 ::: moniker range=">= azure-devops-2019"
 
 ## Azure Boards
+
 You can plan and track work from the web portal **Boards** hub, and using Eclipse, Visual Studio, Excel, Project, and other clients. For an overview of work tracking features, see [About Agile tools](../../boards/get-started/what-is-azure-boards.md). 
 
 ::: moniker-end
@@ -91,6 +92,7 @@ You can plan and track work from the web portal **Boards** hub, and using Eclips
 ::: moniker range="azure-devops"
 
 Users granted Stakeholder access are granted different access to features depending on whether it is a private or a public project. For private projects, Stakeholders have limited access to select work tracking functions, whereas for public projects, Stakeholders enjoy full access to work tracking features. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
+
 ::: moniker-end    
 
 ::: moniker range="<= tfs-2018"
@@ -258,7 +260,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= azure-devops-2019"
 
-## Test Plans
+## Azure Test Plans
 
 ::: moniker-end
 
@@ -270,7 +272,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ::: moniker range=">= tfs-2015"
 
-You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.md). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
+You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings>Security**. 
 
 [!INCLUDE [temp](_shared/test.md)]
 
@@ -281,7 +283,19 @@ You can define and manage manual tests from the web portal, **Test Plans** or **
 
 ## Azure Artifacts
 
-You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages** Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+You can manage feeds from the web portal, **Artifacts** or **Build and release > Packages**. Feeds have three permission levels: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any permission level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
+
+::: moniker-end
+
+::: moniker range="azure-devops" 
+
+Users granted Stakeholder or Basic access, or higher can access Azure Artifacts features. 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019" 
+
+Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
 
 ::: moniker-end
 
@@ -292,9 +306,12 @@ You can manage feeds from the web portal, **Artifacts** or **Build and release >
 
 You can manage feeds from the web portal, **Build and release > Packages**.  Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
+Users granted Basic access or higher can access Package management features. Users granted Stakeholder access have no access.  
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](_shared/package-feeds.md)]
 
 ::: moniker-end

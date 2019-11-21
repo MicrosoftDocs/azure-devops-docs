@@ -1,14 +1,14 @@
----
-title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
+﻿---
+title: Get started with the REST APIs for Azure DevOps and TFS
+description: Learn the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -96,7 +96,7 @@ Here's how to get a list of projects from TFS using the default port and collect
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../get-started/Authentication/PATs.md).
+The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 
 ## Responses

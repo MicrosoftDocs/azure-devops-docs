@@ -1,11 +1,12 @@
----
-title: Delivery timeline markers, commit graph, and build and release improvements – Apr 19
+﻿---
+title: Delivery timeline markers, commit graph, better build & release – Apr 19
 description: VSTS release notes for Apr 19 2017
 ms.ContentId: 36adccf7-a9b9-4009-8cc3-7f9bdbb42a56
 ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 04/19/2017
 ---
 
 # Delivery timeline markers, git graph, and build and release improvements – Apr 19

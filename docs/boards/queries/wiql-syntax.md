@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.topic: reference
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -24,6 +24,9 @@ You can use the WIQL syntax to [define a query as a hyperlink](../../boards/quer
 A query defined using the Work Item Query Language (WIQL) consists of a `SELECT` statement that lists the fields to be returned as columns in the result set. You can further qualify the result set by using a logical expression. You can specify a sort order. Use an `ASOF` clause to state that a query is evaluated as of a previous time.
 
 The WIQL syntax is not case sensitive.
+
+> [!IMPORTANT] 
+> The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query-by-wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work%20items/list#get-list-of-work-items-for-specific-fields). 
 
 
 ## Example queries 
@@ -368,9 +371,9 @@ The following table lists the macros or variables you can use within a WIQL quer
 ::: moniker range="azure-devops"
 
 
-|                                                                Macro                                                                |                                                                                                                                                                                          Usage                                                                                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                        <strong>@Me</strong>                                                         |                                       Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.                                       |
+|  Macro       |       Usage        |
+|---------|-----|
+|  <strong>@Me</strong>   | Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.   |
 |                                                 <strong>@CurrentIteration</strong>                                                  |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
 |                                                      <strong>@Project</strong>                                                      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
 | <strong>@StartOfDay</strong><br/><strong>@StartOfWeek</strong><br/><strong>@StartOfMonth</strong><br/><strong>@StartOfYear</strong> |                    Use these macros to filter DateTime fields based on the start of the current day, week, month, year or an offset to one of these. For example, you can find all items created in the last 3 months if you set the **Field** column to **Created Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@StartOfMonth - 3**.                     |
@@ -408,6 +411,7 @@ The `@me` macro substitutes the Windows Integrated account name of the user who 
 ```
 
 ### @today macro 
+
 You can use the `@today` macro with any <strong>DateTime</strong> field. This macro substitutes midnight of the current date on the local computer that runs the query. You can also specify `@today+x` or `@today-y` using integer offsets for x days after `@today` and y days before `@today`, respectively. Note that a query that uses the `@today` macro can return different result sets depending on the time zone in which it is run. 
 
 The examples below assumes that today is 1/3/19.
@@ -434,11 +438,26 @@ is the equivalent of:
 [System.CreatedDate] > '1/1/19'
 ```
 
+
 <a id="start-of" />
+
+
+::: moniker range=">= azure-devops-2019"
 
 ### @StartOfDay, @StartOfWeek, @StartOfMonth, @StartOfYear macros 
 
 You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. This macro substitutes midnight of the current day, start of week, start of month, or start of year on the local computer that runs the query. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 
 These macros accept a modifier string which has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the @Today macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function, e.g. `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
 
@@ -472,6 +491,8 @@ is the equivalent of:
 ```WIQL
 [Microsoft.VSTS.Scheduling.TargetDate]  > '1/1/19'
 ```
+
+::: moniker-end
 
 
 ### Custom macros 

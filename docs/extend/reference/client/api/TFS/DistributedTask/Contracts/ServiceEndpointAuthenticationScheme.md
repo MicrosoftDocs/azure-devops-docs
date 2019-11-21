@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts ServiceEndpointAuthenticationScheme API | Extensions for Azure DevOps Services
+description: Data representation of a service endpoint authentication scheme.
 ms.assetid: b6947793-469b-df12-9781-6d13c371833a
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

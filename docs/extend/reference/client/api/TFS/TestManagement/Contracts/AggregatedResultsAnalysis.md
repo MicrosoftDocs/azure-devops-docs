@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts AggregatedResultsAnalysis API | Extensions for Azure DevOps Services
+description: Data representation of an aggregated results analysis.
 ms.assetid: cbe09142-90da-811a-493d-cf1c52073f66
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

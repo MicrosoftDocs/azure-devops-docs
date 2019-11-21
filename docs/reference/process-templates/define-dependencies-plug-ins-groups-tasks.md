@@ -5,8 +5,9 @@ description: Add a task group or a task to a plug-in file process template to de
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 235eaf03-7012-4c7d-8b16-138f3467a168
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/24/2017
 ---

@@ -5,12 +5,12 @@ description: Guide to adding and configuring teams in Azure DevOps
 ms.technology: devops-settings
 ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/25/2019
 ---
 
 # About teams and Agile tools
@@ -19,9 +19,9 @@ ms.date: 11/19/2018
 
 <a id="teams"></a>
 
-Adding a team is the #1 way in which Agile tools supports a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
+Adding a team is the #1 way in which Agile tools support a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
 
-Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do this by defining teams and their associated area path(s). 
+Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do so by defining teams and their associated area path(s). 
 
 ![Each team has its own view of the work](../../boards/plans/_img/pm-team-structure.png) 
 
@@ -43,7 +43,7 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-2013.png)
 ::: moniker-end
 
-These tools reference the team's default area path, iteration path, and selected sprints to automatically filter the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
+These tools reference the team's default area path, iteration path, and selected sprints to filter automatically the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
 
 ::: moniker range=">= tfs-2017"
 
@@ -374,7 +374,7 @@ Many of these tools are built from system queries that reference the team area p
 
 What work items appear on team backlogs and boards? When you add work items to a backlog or board, how are team defaults used to assign field values? 
 
-Teams are associated with one or more area paths and a backlog iteration path which determine what items appear on their backlogs and boards. 
+Teams are associated with one or more area paths and a backlog iteration path, which determines what items appear on their backlogs and boards. 
 
 When you define a team, you define the team's: 
 - Selected area path(s) 
@@ -383,9 +383,9 @@ When you define a team, you define the team's:
 - Backlog iteration path 
 - Default iteration path 
 
-All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or it's parent-child status.   
+All Agile tools reference the area path(s) defined for a team. The set of work items that appear on a backlog or board depend on the current State of a work item or its parent-child status.   
 
-In addition, several tools reference the team's default iteration and selected iteration paths or sprints. For example, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
+Several tools reference the team's default iteration and selected iteration paths or sprints, also. Such as, when you add new work items from a backlog or board view, or from a team dashboard, the system assigns the team's default area path and default iteration path to these work items. 
 
 
 <table valign="top" width="100%" > 
@@ -446,13 +446,14 @@ In addition, several tools reference the team's default iteration and selected i
 
 ## Structure hierarchical teams or scale agility within an enterprise 
 
-Although there is no concept of sub-teams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../organizations/settings/add-teams.md).
+Although there's no concept of subteams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../organizations/settings/add-teams.md).
 
-Also, these topics can walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
+Also, the following articles walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
 - [Portfolio management](../../boards/plans/portfolio-management.md)
 - [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../boards/plans/scaled-agile-framework.md)
 
 <a id="team-group"> </a>
+
 ## Team groups 
 
 When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
@@ -460,7 +461,9 @@ When you add a team, a security group is automatically created with the team nam
 <img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker range=">= tfs-2017"
-You can also use the <strong>@mention</strong> control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
+
+You can also use the <strong>@mention</strong> control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+
 ::: moniker-end
 
 ## Work on more than one team
@@ -484,7 +487,7 @@ You can choose to limit access to select features by making a user a [Stakeholde
 - The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Manage teams and configure team tools](manage-teams.md)   
-- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 
+- To have work done by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ## Related articles 

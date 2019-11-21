@@ -5,8 +5,9 @@ description: Manage the configuration of Team Foundation Server & Project Server
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 529c5a49-31d7-4080-b3b5-1bcc95c8a102
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -19,7 +20,7 @@ ms.date: 01/12/2017
 As an administrator for the integration of Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must configure the integration of the two server products. When you configure this integration, you define what components participate in data synchronization and what data flows from projects to enterprise project plans. The initial configuration requires that you install software, grant permissions, register instances of Project Web Access or Project Web App (PWA), and map Project Server components to Team Foundation components. You might also need to customize the types of work items and how fields are mapped to participate in data synchronization. After you configure the integration, you might need to monitor and troubleshoot it.  
   
 > [!NOTE]
->  You can download a virtual machine that demonstrates how you can integrate TFS and Project Server 2010 so that teams can share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in Team Foundation Server, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS. For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](http://go.microsoft.com/fwlink/?LinkID=196413).  
+>  You can download a virtual machine that demonstrates how you can integrate TFS and Project Server 2010 so that teams can share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in Team Foundation Server, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS. For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](https://go.microsoft.com/fwlink/?LinkID=196413).  
   
 ##  <a name="Setup"></a> Setup and configuration  
   

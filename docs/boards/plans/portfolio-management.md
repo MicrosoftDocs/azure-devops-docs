@@ -5,8 +5,9 @@ description: Work with a hierarchical team structure to manage product and portf
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019

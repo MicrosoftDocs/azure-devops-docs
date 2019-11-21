@@ -5,7 +5,7 @@ description: Add files to the server
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -132,13 +132,13 @@ You can also manually add files to version control.
 >[!IMPORTANT]
 >Make sure this folder is checked in before you proceed. If you are creating the folder now, open its context menu and choose **Check In**, and then check in the new folder before proceeding.
 
-3.  Drag the folders or files from Windows Explorer (or File Explorer) into the folder in Source Control Explorer.
+3. Drag the folders or files from Windows Explorer (or File Explorer) into the folder in Source Control Explorer.
 
-4.  When the **Add to Source Control** dialog box appears, make sure all the files you want to add are selected, and then choose **Include item(s)**.
+4. When the **Add to Source Control** dialog box appears, make sure all the files you want to add are selected, and then choose **Include item(s)**.
 
-5.  Choose **Finish**.
+5. Choose **Finish**.
 
-6.  In Team Explorer, when the **Pending Changes** page appears, make sure the binaries that you want to add appear in the **Included Changes** section. Choose **Check In**.
+6. In Team Explorer, when the **Pending Changes** page appears, make sure the binaries that you want to add appear in the **Included Changes** section. Choose **Check In**.
 
 ## Leverage third-party binaries that your code does not build
 
@@ -147,7 +147,7 @@ Many teams develop code that depends on binaries that are not built by the solut
 Sometimes these binaries come from another team in the same company. For example, Team A depends on binaries produced by Team B, and each team must for some reason work in different project collections. As a result, Team B delivers binaries to Team A, which then checks them into version control.
 
 >[!TIP]  
->If your dev machines and [build agents](../../pipelines/agents/agents.md) can access the Internet, then [NuGet](http://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. You can store your packages in TFS or Azure DevOps Services using [Azure Artifacts](../../artifacts/index.md).
+>If your dev machines and [build agents](../../pipelines/agents/agents.md) can access the Internet, then [NuGet](https://go.microsoft.com/fwlink/?LinkId=246165) may make it easier for your team to manage your dependencies and keep your binaries up to date. You can store your packages in TFS or Azure DevOps Services using [Azure Artifacts](../../artifacts/index.yml).
 
 The folder and workspace structure you should use to store your third-party binaries depends on the way your solutions depend on these libraries.
 

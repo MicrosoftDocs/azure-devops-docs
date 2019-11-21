@@ -5,7 +5,7 @@ description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -42,6 +42,10 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
+<li><a href="permissions.md#view-audit-log-permission">Audit log</a></li>
+
+
+
 </ul>
 <h3>B</h3>
 <ul>

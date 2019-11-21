@@ -6,7 +6,7 @@ ms.custom: boards-sprints
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -92,7 +92,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>
 <b>Sprint burndown chart</b>
 </p>
-<p>You use the <a href="sprint-burndown.md" data-raw-source="[sprint burndown chart](sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
+<p>You use the <a href="../../report/dashboards/configure-sprint-burndown.md" data-raw-source="[sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md)">sprint burndown chart</a> to mitigate risk and check for scope creep throughout your sprint cycle. The burndown chart reflects the progress made by your team in completing all the work they estimated during their sprint planning meeting. </p>
 <p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
 </td>
 <td>
@@ -106,7 +106,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 ##  Velocity and forecast 
 <p>While you use sprint planning and tracking tools for each sprint, you use the velocity and forecast tools to estimate work that can be completed in future sprints. </p>
 <p>Velocity provides a useful metric for gaining insight into how much work your team can complete during a sprint cycle. And, the forecast tool provides a means for determining how much work your team can complete within a sprint based on a specified team velocity. </p>
-<p>After your team has worked several sprints, they can use the <a href="../../report/dashboards/velocity-chart-data-store.md" data-raw-source="[velocity chart](../../report/dashboards/velocity-chart-data-store.md)">velocity chart</a> and <a href="forecast.md" data-raw-source="[forecast](forecast.md)">forecast</a> tool to estimate work that can be accomplished in future sprints.  </p>
+<p>After your team has worked several sprints, they can use the <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity chart](../../report/dashboards/team-velocity.md)">velocity chart</a> and <a href="forecast.md" data-raw-source="[forecast](forecast.md)">forecast</a> tool to estimate work that can be accomplished in future sprints.  </p>
 
 <table valign="top" > 
 <tr valign="top" > 

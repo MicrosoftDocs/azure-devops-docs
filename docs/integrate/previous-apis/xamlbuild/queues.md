@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Build Queues (XAML Build) | REST API Reference for Team Foundation Server
 description: Get build queues using the REST APIs for Team Foundation Server.
 ms.assetid: 3F7AB00B-8BC2-437B-8088-ED9F66180941
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

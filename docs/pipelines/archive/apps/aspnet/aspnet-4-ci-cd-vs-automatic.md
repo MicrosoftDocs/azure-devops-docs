@@ -1,14 +1,14 @@
----
-title: Deploy a CI/CD pipeline ASP.NET web app to Azure
+﻿---
+title: Deploy CI/CD pipeline ASP.NET web app to Azure
 ms.custom: seodec18
 description: Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 498BF7D8-2932-46FB-BD38-E8EBD1C5CABA
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 02/10/2017
 monikerRange: '>= tfs-2015'
 ---

@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 05/14/2019
 monikerRange: 'azure-devops'
 ---
 # Access with Azure Active Directory groups
@@ -29,8 +29,8 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Prerequisites
 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
-* You must be a project administrator, project collection administrator, or organization owner. You must also have at least Basic access, not Stakeholder.
-* To create and manage Azure AD groups, you must have Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
+* You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
+* To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes might take up to 24 hours to be visible in Azure DevOps.
 
 ## Add an Azure AD group to an Azure DevOps group
@@ -53,3 +53,8 @@ and differences in how you [control organization access with Microsoft accounts 
     You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
 5. Add more users or groups, or save your changes if you're done.
+
+## Related articles
+
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+- [Manage conditional access](manage-conditional-access.md)

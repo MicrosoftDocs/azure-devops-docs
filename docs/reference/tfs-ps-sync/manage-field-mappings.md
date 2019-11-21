@@ -1,12 +1,13 @@
----
-title: Manage field mappings for TFS-Project Server integration
+﻿---
+title: Field mappings for TFS-Project Server integration
 titleSuffix: TFS 
 description: Modify how fields are mapped and synchronized to support Team Foundation Server-Project Server integration 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 67b6ad0e-923f-4a31-baf3-64beff2d4080
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -55,7 +56,7 @@ TfsAdmin ProjectServer /UploadFieldMappings /collection:tpcUrl /filePath:mapping
 |Parameter|Description|  
 |---------------|-----------------|  
 |**/collection**:`tpcURL`|Specifies the uniform resource locator (URL) of a project collection. You specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
-|**/filePath**:`mappingFile`|Specifies the path and file name of the XML definition file that contains the field mappings. **Note:**  If you are using Windows Vista, you might not have permissions to access certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the following pages on the Microsoft website: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323).|  
+|**/filePath**:`mappingFile`|Specifies the path and file name of the XML definition file that contains the field mappings. **Note:**  If you are using Windows Vista, you might not have permissions to access certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the following pages on the Microsoft website: [Registry Virtualization](https://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](https://go.microsoft.com/fwlink/?LinkId=92323).|  
 |**/encoding**:`encoding`|Specifies the name of an encoding format for the .NET Framework 2.0. The command exports or imports the XML data in the encoding format that you specify. For example, /e:utf-7 specifies Unicode (UTF-7) encoding. If you do not specify this parameter, the command tries to detect the encoding and uses UTF-8 if detection fails.|  
 |**/validateOnly**|Validates the mapping file but does not upload it.|  
 |**/useDefaultFieldMappings**|Uploads the default field mappings instead of a custom mapping file. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).|  

@@ -6,7 +6,7 @@ description: Share sprint plan working with Scrum methods
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -15,11 +15,14 @@ ms.date: 2/14/2019
 ---
 
 
-<a id="share" >  </a>
+
+
 # 5. Share your sprint plan
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
  
+<a id="share" >  </a>
+
 Once you've completed your sprint plan, you can easily share it with other members of your team or organization.  This article shows you how to: 
 
 > [!div class="checklist"]   
@@ -31,9 +34,30 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ## Open a Sprint backlog for a team 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+
+    > [!div class="mx-imgBorder"]  
+    > ![Open Work, Sprints, for a team](_img/add-tasks/open-sprint-backlog-s155-co.png)
+
+   To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+   > [!div class="mx-imgBorder"]  
+   > ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)  
+
+2. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 1. ![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -51,9 +75,10 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker-end
 
+
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
 	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
@@ -79,7 +104,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range=">= azure-devops-2019"
 
-0. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -104,7 +129,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ::: moniker range="<= tfs-2018"
 
-0. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+1. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 1. To email the sprint plan, create and save the query for the sprint backlog. 
 

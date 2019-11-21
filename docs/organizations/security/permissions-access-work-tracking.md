@@ -1,4 +1,4 @@
----
+﻿---
 title: Default work tracking permissions & access 
 titleSuffix: Azure Boards & TFS 
 description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
@@ -6,12 +6,12 @@ ms.technology: devops-security
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/07/2018
+ms.date: 06/02/2019
 ---
 
 # Permissions and access for work tracking
@@ -20,13 +20,13 @@ ms.date: 01/07/2018
 
 ::: moniker range=">= azure-devops-2019"
 
-As a member of an Azure DevOps project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure DevOps project, you can use most of the features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"
 
-As a member of an Azure DevOps project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level supports full access to all features under the **Work** hub. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
+As a member of an Azure DevOps project, you can use most of the features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all features under the **Work** hub. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
 ::: moniker-end
 
@@ -173,7 +173,7 @@ The **Edit project-level information** permission includes the ability to perfor
 
 ## Team administrator role and permissions  
 
-The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project administrator permissions extend across all teams defined for the project.
+The following table summarizes a subset of the default permissions assigned to the project Readers, Contributors and Project Administrators groups and the Team Administrator role. Team admin permissions extend only to the team for which they're an administrator. Project Administrator permissions extend across all teams defined for the project.
 
 
 <table>

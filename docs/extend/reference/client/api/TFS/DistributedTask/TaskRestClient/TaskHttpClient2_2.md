@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/TaskRestClient TaskHttpClient2_2 API | Extensions for Azure DevOps Services
+description: Data representation of a task http client 2_2.
 ms.assetid: 48166a93-3acc-f903-3f87-c895652b7a38
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

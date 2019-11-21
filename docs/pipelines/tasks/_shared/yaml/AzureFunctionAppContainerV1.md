@@ -1,6 +1,6 @@
 ```YAML
-# Azure Function for Container
-# Update Function Apps with Docker Containers
+# Azure Functions for container
+# Update a function app with a Docker container
 - task: AzureFunctionAppContainer@1
   inputs:
     azureSubscription: 

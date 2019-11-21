@@ -110,7 +110,7 @@ A page similar to the following example opens showing the version number.
 
 <img src="../_img/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|

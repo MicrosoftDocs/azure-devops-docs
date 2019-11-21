@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -75,6 +75,13 @@ Select **+ New service connection** in the left pane and choose **Subversion** f
 > ![Add a Subversion endpoint screen](_img/svn-new-svn-repository-connection.png)
 
 Enter the friendly name you wish to use for this connection. The name should be unique in the list of connect services and something easy to remember (e.g, "Subversion - DeepSpace"). Next, enter the Server URL, User name and Password used to connect to the desired Subversion repository. Click **OK**.
+
+> [!NOTE]
+> In the Subversion service connection you can enable "Accept untrusted SSL certificates." However, you may still see an SSL certificate verification problem.
+> When this option is checked/enabled, `--trust-server-cert` is added to the SVN command line sent to the agent. For Tortoise SVN, this tells the client to allow for an "unknown certificate authority".
+> This means that if the name in your certificate does not match the URL you are getting the sources from, the SVN client will not connect. This may occur if you are using the IP address for the server.
+> The simplest way to work around this is to use your browser to view the certificate that you are using and check the `cn` value (the name of the server specified in the certificate).
+> Then, on the server that is running the agent, add a record to the `hosts` file that matches this name and point it to the IP address of the SVN server.
 
 Go ahead and close the services administration web page to get back to the build pipeline. Now that you're back on the **Repository** tab, click the **Refresh** button next to the **Manage** link. Once you do, the **Connection** property will be populated with the "Subversion - DeepSpace" value. If you have more than one value in the **Connection** drop down, ensure that you select the one pointing to the Subversion repository. When complete, your repository tab should look similar to the image below.
 

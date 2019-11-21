@@ -1,5 +1,5 @@
----
-title: Update status, assign work, and link work items using work item form controls 
+﻿---
+title: Using work item form controls
 titleSuffix: Azure Boards 
 description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.custom: work-items, seodec18  
@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
 ms.date: 04/09/2019
@@ -30,7 +30,7 @@ As the following image shows, each work item form comes with a number of control
 
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;
-[Agile](./guidance/agile-process.md), [Basic](../get-started/track-issues-tasks.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+[Agile](./guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](./guidance/scrum-process.md), or [CMMI](./guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), product backlog items (Scrum), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of these processes, see [Choose a process](./guidance/choose-process.md). 
 
@@ -159,8 +159,7 @@ In addition, the Links control tab provides access to all links made to the work
 
 <a id="discussion">  </a>
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
-
+[!INCLUDE [temp](../_shared/discussion-tip.md)]
 
 <a id="copy-url">  </a>
 

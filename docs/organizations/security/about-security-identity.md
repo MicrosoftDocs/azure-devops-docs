@@ -6,17 +6,19 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 02/19/2019
+ms.date: 06/02/2019
 ---
 
 # About security and identity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+
+For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
@@ -34,7 +36,7 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)

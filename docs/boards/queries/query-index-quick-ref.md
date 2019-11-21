@@ -7,11 +7,11 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 10/02/2019
 ---
 
 # Query quick reference 
@@ -19,6 +19,10 @@ ms.date: 02/04/2019
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
+For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
 ## Query tasks 
 
@@ -37,7 +41,6 @@ Use this index to quickly access information on query editor tasks, operators av
 <li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Delete a query](view-run-query.md#view-rename-delete)">Delete a query</a></li>
 <li><a href="using-queries.md#directs-link-query" data-raw-source="[Direct-links query](using-queries.md#directs-link-query)">Direct-links query</a></li>
 <li><a href="using-queries.md" data-raw-source="[Edit a query](using-queries.md)">Edit a query</a></li>
-
 </ul>
 </td>
 <td width="33%">
@@ -56,7 +59,6 @@ Use this index to quickly access information on query editor tasks, operators av
 </td>
 <td width="34%">
 <ul>
-
 <li><a href="using-queries.md#flat-list-query" data-raw-source="[Save a query](using-queries.md#flat-list-query)">Save a query</a></li>
 <li><a href="set-query-permissions.md" data-raw-source="[Set query permissions](set-query-permissions.md)">Set query permissions</a></li>
 <li><a href="using-queries.md#tree-query" data-raw-source="[Tree query](using-queries.md#tree-query)">Tree query</a></li>
@@ -68,12 +70,13 @@ Use this index to quickly access information on query editor tasks, operators av
 </ul>
 </td>
 </tr>
-
 </tbody>
 </table>
 
 <a id="fields-operators-macros" />
+
 ## Operators and macros supported for each data type
+
 The following table indicates the operators and macros available for the different field data types. Each field is associated with a data type. You can find the data type listed in the descriptions of each field, which you can look up using the <a href="../work-items/guidance/work-item-field.md" data-raw-source="[Work item field index](../work-items/guidance/work-item-field.md)">Work item field index</a>. Operators available for defining a query clause depends on the data type of the field that you select. For more detailed descriptions of data types, operators, and macros, see <a href="query-operators-variables.md" data-raw-source="[Query fields, operators, and macros](query-operators-variables.md)">Query fields, operators, and macros</a>.
 
 <table valign="top">
@@ -94,7 +97,7 @@ The following table indicates the operators and macros available for the differe
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
     <td>A date field in which you can specify a variable, such as <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> or <strong><xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See <a href="../../organizations/settings/set-your-preferences.md" data-raw-source="[Set personal preferences](../../organizations/settings/set-your-preferences.md)">Set personal preferences</a> for details.)<p> For query examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or@CurrentIteration](query-by-date-or-current-iteration.md)">Query by date or@CurrentIteration</a>. </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, valid with any <strong>DateTime</strong> field</p><p><strong>Additional macros supported on Azure DevOps Services</strong>: <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, valid with any <strong>DateTime</strong> field</p></td> 
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, valid with any <strong>DateTime</strong> field</p><p><strong>Additional macros supported on Azure DevOps 2019 Update 1 and later versions:</strong>:<br/><strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, valid with any <strong>DateTime</strong> field</p></td> 
 </tr>
 <tr>
     <td><strong>Double</strong> </td>
@@ -114,11 +117,6 @@ The following table indicates the operators and macros available for the differe
 	<td><p> <strong>HTML</strong> </p></td>
     <td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a>. </td>
 	<td>Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup></td>
-</tr>
-<tr>
-	<td><p><strong>History</strong> </p></td>
-    <td>Custom formatted field used to track historical information associated with the <strong>History</strong> field.Query samples: <a href="history-and-auditing.md" data-raw-source="[History and auditing](history-and-auditing.md)">History and auditing</a>. </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever</td>
 </tr>
 <tr>
     <td><strong>Identity</strong></td>
@@ -159,7 +157,8 @@ The following table indicates the operators and macros available for the differe
 </table>
 
  
-#### Notes:
+#### Notes:  
+
 1. The **Boolean** data type field is supported for TFS 2017 and later versions.  
 2. The **picklist...** data types are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 3. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions.
@@ -169,11 +168,10 @@ The following table indicates the operators and macros available for the differe
 7. The <strong>@Project</strong> macro is supported for TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
-10. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
+11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
-
-
+<a id="samples" />
 
 ## Query samples for select fields 
 
@@ -285,13 +283,17 @@ The following table lists common query fields and their data type for which samp
 </tr>
 </tbody>
 </table>
- 
- 
-#### Notes:
+
+
+**Notes:**
+
 1. The <strong>Comment Count</strong> field is supported for TFS 2017 and later versions. 
 
 
 ## Related articles
+
+- [Query by field value comparisons](query-field-value.md) 
+- [Guidance to create high-performing queries](high-performing-queries.md)
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

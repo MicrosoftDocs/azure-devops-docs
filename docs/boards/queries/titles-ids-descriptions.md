@@ -6,20 +6,22 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 02/07/2019
+ms.date: 10/16/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
+
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
+When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
 ## Supported operators and macros 
+
 Query clauses that specify a text or rich-text field can use the operators and macros listed in the following table.
 
 <table valign="top">
@@ -48,12 +50,21 @@ Query clauses that specify a text or rich-text field can use the operators and m
 </tbody>
 </table>
 
-#### Notes:
+#### Notes:  
+
 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 
 
+## Use `Contains words` for string matches
+ 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. 
+
+While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
+
+
 <a id="keyword"/>
+
 ## Keyword or phrase query
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
@@ -62,8 +73,15 @@ Use **Contains** or **Contains Words** to list items that partially or exactly m
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
 
+For example, specify **Contains Words** and <strong>inform&#42;</strong> to filter on a text field that contains *inform* or *information* or *informational*. 
+
+> [!div class="mx-imgBorder"] 
+> ![Use wild card with Contains Words](_img/text-queries/contains-word-wildcard.png)
+
+[!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
 <a id="undefined-value"/>
+
 ## Undefined field value queries
 
 You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
@@ -76,17 +94,20 @@ To list work items based on a field that isn't blank, use the not operator (<>) 
 ::: moniker range=">= azure-devops-2019"
 
 <a id="empty"/>
+
 ## Empty or not empty HTML field queries
 
 You can find work items where no **Description** has been entered. Using the **Is Empty** or **Is Not Empty** with an HTML field supports listing work items with empty or not empty rich text fields. You don't specify a value with this operator.  
 
 For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
 
-![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+> [!div class="mx-imgBorder"] 
+> ![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
 
 ::: moniker-end
 
 <a id="category"/>
+
 ## Category based queries
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
@@ -94,6 +115,7 @@ To filter work items based on the category they belong to, use the **In Group** 
 ![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
 
 <a id="category"/>
+
 ## What items appear in the Requirement or Task categories? 
 
 The default assignments of work item types to each category are listed below for each process.  
@@ -111,7 +133,8 @@ However, each team can determine if the Bug work item type appears in either the
 
 The following table describes common fields used to filter queries. The **ID** fields uniquely identify work items in a list. Use the **Title** field to distinguish the work item from all others of the same type.  The **Description** and other rich-text (data type=HTML) fields provide additional information that is needed to implement work and track changes. After a work item is created, you can modify all fields except for the **ID**. When you add and save a work item, the ID is assigned by the system and cannot be changed. 
 
->**Note:**&#160;&#160;The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises TFS, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
+> [!NOTE]   
+> The system automatically indexes all long-text fields with a data type of **PlainText** and **HTML** fields for full-text search. This includes the **Title**, **Description**, and **Steps to Repro** fields. For more information and  server and collation requirements applicable to on-premises TFS, see [Query fields, operators, values, and variables - Full-text and partial word searches](query-operators-variables.md#full-text).
 
 
 <table width="100%">
@@ -125,7 +148,6 @@ The following table describes common fields used to filter queries. The **ID** f
     <td><p>Acceptance Criteria  <sup>1</sup></p></td>
     <td><p>A description of the criteria to be met before the bug or product backlog item can be closed.</p><p>Before work begins on a bug or product backlog item, the criteria for customer acceptance should be described as clearly as possible. Conversations between the team and customers to define the acceptance criteria will help ensure that your team understands your customers&#39; expectations. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p> 
 <p>Reference name=Microsoft.VSTS.Common.AcceptanceCriteria, Data type=HTML</p>  </td><br/>    <td><p>Bug, Epic, Feature, Product backlog item (Scrum)</p></td>
-
 </tr>
 <tr>
   <td>
@@ -146,7 +168,6 @@ The unique identifier that is assigned to a work item. Work item IDs are unique 
 </td>
 <td>All</td>
 </tr>
-
 <tr>
   <td>
 Repro Steps (or Steps to reproduce) <sup>1</sup> 
@@ -158,27 +179,21 @@ Repro Steps (or Steps to reproduce) <sup>1</sup>
   </td>
 <td>Bug</td>
 </tr>
-
-
 <tr>
     <td><p>Resolution</p></td>
     <td><p>Describes how an impediment was resolved.</p>
 <p>Reference name=Microsoft.VSTS.Common.Resolution, Data type=HTML</p>  </td><br/>    <td><p>Impediment (Scrum)</p></td>
-
 </tr>
-
 <tr>
   <td>
 System Info<sup>1</sup> 
   </td>
   <td>
     <p>Information about the software and system configuration that is relevant to the bug, code review, or feedback. </p>
-
     <p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
   </td>
   <td>Bug, Code Review Request, Feedback Request<br/>  </td>
 </tr>
-
 <tr>
 <td>
 Team Project
@@ -186,23 +201,20 @@ Team Project
 <td>
 <p>The project to which a work item belongs. Add this field to a query when you want to filter your list to items in one or more projects. </p>
 <blockquote><strong>Note:</strong>&#160;&#160;For Azure Boards or for TFS 2015.1 and later versions, you must check the Query across projects option in the query editor for this field to appear in the drop down field list. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Example queries, query across projects](using-queries.md#across-projects)">Example queries, query across projects</a>. </blockquote>
-
-    <p>Reference name=System.TeamProject, Data type=String</p>
+<p>Reference name=System.TeamProject, Data type=String</p>
 </td>
 <td>All</td>
 </tr>
-
 <tr>
   <td>
 Title
   </td>
   <td>
-    <p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
+<p>A short description that summarizes what the work item is and helps team members distinguish it from other work items in a list.</p>
     <p>Reference name=System.Title, Data type=String</p>
   </td>
 <td>All</td>
 </tr>
-
 <tr>
   <td>
 Work Item Type
@@ -219,10 +231,11 @@ Work Item Type
 
 #### Notes:   
 
-0. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
+1. To learn more about working with rich-text fields, see [Share information within work items](share-plans.md#rich-text).   
 1. Upon upgrade to Team Foundation Server 2012, the Description field was changed from a field type of PlainText to **HTML**. Using the **witadmin changefield** command you can revert the data type for this field. See [Manage work item fields (witadmin)](../../reference/witadmin/manage-work-item-fields.md).
 
 ## Related articles
+
 - [Query editor](using-queries.md)   
 - [Add work items](../backlogs/add-work-items.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md)  

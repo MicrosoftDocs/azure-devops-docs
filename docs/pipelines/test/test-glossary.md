@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: vinojos
 author: vinodjo
 ms.date: 12/07/2018
@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 The section lists commonly used terms for [test report](review-continuous-test-results-after-build.md) and [test analytics](test-analytics.md) in the pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 | Term | Definition |

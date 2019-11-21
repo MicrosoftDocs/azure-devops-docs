@@ -6,7 +6,7 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.author: mlearned
 author: mlearned
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.assetid: 3DE9D448-714C-434D-90AB-D50EE9AF91FB
 ms.custom: "mvc, seodec18"
 ms.date: 05/06/2018

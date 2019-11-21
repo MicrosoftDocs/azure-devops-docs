@@ -6,8 +6,9 @@ ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dakale
+author: dakale
 ms.date: 01/14/2019
 monikerRange: 'azure-devops'
 ---
@@ -209,7 +210,7 @@ Service containers share the same container resources as container jobs. This me
 
 # [Classic](#tab/classic)
 
-Service containers are not yet supported in the designer.
+Service containers are not yet supported in classic pipelines.
 
 ---
 

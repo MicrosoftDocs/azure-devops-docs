@@ -5,8 +5,9 @@ description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.date: 04/05/2017
 ---
 

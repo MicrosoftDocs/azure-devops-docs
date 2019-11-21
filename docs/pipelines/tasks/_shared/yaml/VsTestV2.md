@@ -4,7 +4,7 @@
 - task: VSTest@2
   inputs:
     #testSelector: 'testAssemblies' # Options: testAssemblies, testPlan, testRun
-    #testAssemblyVer2: |
+    #testAssemblyVer2: | # Required when testSelector == TestAssemblies
     #  **\*test*.dll
     #  !**\*TestAdapter.dll
     #  !**\obj\** 
@@ -37,7 +37,7 @@
     #platform: # Optional
     #configuration: # Optional
     #publishRunAttachments: true # Optional
-    #diagnosticsEnabled: True # Optional
+    #diagnosticsEnabled: false # Optional
     #collectDumpOn: 'onAbortOnly' # Optional. Options: onAbortOnly, always, never
     #rerunFailedTests: False # Optional
     #rerunType: 'basedOnTestFailurePercentage' # Optional. Options: basedOnTestFailurePercentage, basedOnTestFailureCount

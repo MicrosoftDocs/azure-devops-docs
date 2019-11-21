@@ -6,7 +6,7 @@ ms.date: 3/5/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 description: In the Sprint 131 Update of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice, including Work Items hub.
 hide_comments: true
 ---
@@ -17,7 +17,7 @@ In the **Sprint 131 Update** of Visual Studio Team Services (VSTS), there are a 
 
 Other highlights include:
 
-- [Query work across the iteration schedule with +/- @CurrentIteration](#query-work-across-the-iteration-schedule-with---currentiteration)
+- [Query work across the iteration schedule with +/- @CurrentIteration](#query-work)
 - [Improve release times by partially downloading artifacts](#improve-release-times-by-partially-downloading-artifacts)
 
 ## What’s new in VSTS
@@ -57,6 +57,9 @@ Any project pivot can now be sorted based on a variety of options, including tit
 
 > [!div class="mx-imgBorder"]
 > ![Work Items sorting options](_img/131_02.png)
+
+
+<a id="query-work" />
 
 ### Query work across the iteration schedule with +/- @CurrentIteration
 
@@ -150,7 +153,7 @@ Steps to add the alternate account to your subscription can be found in the [My 
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

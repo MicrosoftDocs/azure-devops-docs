@@ -1,12 +1,12 @@
----
-title: Copy or clone user stories, issues, bugs, tasks, or other work items 
+﻿---
+title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
@@ -35,11 +35,13 @@ Use this article to learn how to:
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
+
 ## Copy or clone a work item   
-Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. No  history or attachments are copied. 
 
-Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No  history or attachments are copied over from the original work item. 
+Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
+> [!NOTE]
+> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the  Closed By field when the State is New or Active, then that field will get copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
 
 ::: moniker range=">= tfs-2018"
 <!---#### Azure Boards and TFS 2018-->
@@ -55,6 +57,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 
 ::: moniker range="tfs-2017"
+
 <!---#### TFS 2017-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
 
@@ -66,6 +69,7 @@ Copy a work item when you want to create another instance of it and optionally c
    ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 <!---#### TFS 2015-->
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
@@ -86,12 +90,14 @@ Copy a work item when you want to create another instance of it and optionally c
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Change the work item type  
 
 If you have a large number of work items whose type you want to change, use [Change work item type](../../reference/add-modify-wit.md). If Change work item type isn't available to you, you can export a set of work items using Excel, copy them to a new Excel list, and re-import them by specifying a different work item type. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 ::: moniker-end
 
 <a id="html"></a>
+
 ## Copy a list of work items  
 
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 

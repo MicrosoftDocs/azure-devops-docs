@@ -5,7 +5,7 @@ description: Update a project based on a Microsoft Solutions Framework (MSF) ver
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017
@@ -53,7 +53,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
 
-0. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
+1. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
 
    ```  
    witadmin changefield /collection:CollectionURL /n:System.AreaId /name:"Area Id"  
@@ -92,7 +92,7 @@ For more information, see [Add administrators, set permissions at the project-le
 > [!TIP]  
 >  To get access to the latest versions of the default process templates, install the latest update for TFS. TFS 2012.1 provided significant updates that were made to the workflow for several work item types. These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.  
 >   
-> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](http://go.microsoft.com/fwlink/?LinkId=272181).   
+> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](https://go.microsoft.com/fwlink/?LinkId=272181).   
 
 ## 4. Import link types  
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  
@@ -249,7 +249,7 @@ After you have completed the upgrade tasks that are described earlier in this to
 
 ##  Additional information about changes made when upgrading TFS  
 
- When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2010. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
+ When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2011. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
 
 -   [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)  
 -   [Update a customized process template to access new features](../update-customized-process-template.md)    

@@ -25,7 +25,7 @@ In some cases you might need to use the [MSBuild task](../build/msbuild.md). For
 
 <ol>
 <li><p>
-On the Variables tab, make sure you've got variables defined for your configurations and platforms. To specify multiple values, separate them with commas.
+On the Variables tab, make sure you&#39;ve got variables defined for your configurations and platforms. To specify multiple values, separate them with commas.
 </p>
 <p>For example, for a .NET app you could specify:</p>
 <table>
@@ -63,13 +63,13 @@ On the Variables tab, make sure you've got variables defined for your configurat
 </tr>
 </table>
 </li>
-<li><p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: ```BuildConfiguration, BuildPlatform```</p>
+<li><p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
 <p>Select Parallel if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
 </li>
 <li><p>On the Build tab, select this step and specify the Platform and Configuration arguments. For example:</p>
 <ul>
-<li>Platform: ```$(BuildPlatform)```</li>
-<li>Configuration: ```$(BuildConfiguration)```</li>
+<li>Platform: <code>$(BuildPlatform)</code></li>
+<li>Configuration: <code>$(BuildConfiguration)</code></li>
 </ul>
 </li>
 </ol>

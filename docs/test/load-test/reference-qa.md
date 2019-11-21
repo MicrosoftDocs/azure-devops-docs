@@ -5,9 +5,9 @@ ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -103,7 +103,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -153,8 +153,8 @@ and virtual user minutes will be charged accordingly.
 
 * Visual Studio IDE: 48 hours
 * Azure DevOps Load test page:
- - URL-based load tests: 48 hours
- - JMeter load tests: 4 hours
+  - URL-based load tests: 48 hours
+  - JMeter load tests: 4 hours
 * Azure portal: 1 hour
 
 ### Q: Do other load tests run on the same virtual machines that host my agents?
@@ -443,8 +443,8 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
-and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
+[Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
+and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 

@@ -4,7 +4,7 @@ description: Tutorial lab for setting up a Java project with Azure DevOps
 ms.prod: devops
 ms.technology: devops-cicd
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

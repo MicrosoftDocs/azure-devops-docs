@@ -6,7 +6,7 @@ ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: macoope
 ms.date: 05/06/2019
 monikerRange: '>= azure-devops-2019'
@@ -215,6 +215,6 @@ jobs:
 
 # [Classic](#tab/classic)
 
-Container jobs are not yet supported in the designer.
+Container jobs are not yet supported in the classic editor.
 
 ---

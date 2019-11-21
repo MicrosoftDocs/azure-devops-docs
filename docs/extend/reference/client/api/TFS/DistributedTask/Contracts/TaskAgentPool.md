@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts TaskAgentPool API | Extensions for Azure DevOps Services
+description: Data representation of a task agent pool.
 ms.assetid: 2f24f7ca-f6ae-ff04-014b-91864e223175
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

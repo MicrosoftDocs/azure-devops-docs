@@ -6,8 +6,9 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 02/14/2019
@@ -106,11 +107,11 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ## Set WIP limits
 
-With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
+With an understanding of how you'll use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
@@ -129,7 +130,7 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
 1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
@@ -147,31 +148,31 @@ With an understanding of how you'll use WIT limits, here's how you set them. If 
 ::: moniker-end
 
 ::: moniker range="tfs-2015" 
-0. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
 	**TFS 2015.1 and later versions**  
-2. Choose **Columns** and then a column tab to set the WIP limit for that column.  
+3. Choose **Columns** and then a column tab to set the WIP limit for that column.  
 	
 	![Settings, Columns, set WIP limits](_img/wip-columns-settings.png)  
 
-3. When done with your changes, choose **Save**.  
+4. When done with your changes, choose **Save**.  
 
 	**TFS 2015**     
-4. Set the WIP limits for each intermediate column.     
+5. Set the WIP limits for each intermediate column.     
 	![Customize WIP limits](_img/WIP_5.png)    
    ::: moniker-end  
    ::: moniker range="tfs-2013"    
-5. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-6. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+7. Choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Open configuration settings](_img/columns/open-settings-2013.png)    
 
-7. Set the WIP limits for each intermediate column.           
+8. Set the WIP limits for each intermediate column.           
 
 	![Customize WIP limits](_img/WIP_5.png)   
 

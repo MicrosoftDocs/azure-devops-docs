@@ -1,6 +1,6 @@
 ```YAML
-# [Deprecated] IIS Web App Deployment
-# Deploy by MSDeploy, create/update website & app pools
+# [Deprecated] IIS Web App deployment
+# Deploy using MSDeploy, then create/update websites and app pools
 - task: IISWebAppDeployment@1
   inputs:
     environmentName: 

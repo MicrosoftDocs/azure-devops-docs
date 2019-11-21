@@ -4,7 +4,7 @@ description: Configure features after an upgrade to  the application-tier server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A71B6DD4-2780-4B61-B863-03BBE44AC953
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -106,7 +106,7 @@ See the following resources as they relate to updating your project:
 - [Additional configuration options](additional-configuration-options.md)
 - [Changes made to process templates to support new features](../boards/work-items/guidance/changes-to-process-templates.md)
 
-If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
+If you have additional questions, you can post one or search for answers in the [Team Foundation Server - work tracking](https://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads) forum.
 
 
 <a id="program-updates"> </a>
@@ -115,7 +115,7 @@ If you have additional questions, you can post one or search for answers in the 
 
 If the projects were created from the same process template, you should be able to modify the source process template, upload it, and then batch update all projects defined for a project collection. Review the following resources: 
 *	[Update a customized process template to access new features](update-customized-process-template.md)
-*	[How to Configure Features for dozens of projects](http://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx)
+*	[How to Configure Features for dozens of projects](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx)
 *	[Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
 ### Resolve warning or error messages related to the update of test management artifacts

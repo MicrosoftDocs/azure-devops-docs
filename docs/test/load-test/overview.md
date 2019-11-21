@@ -5,9 +5,9 @@ ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 01/18/2019
 monikerRange: '> tfs-2018'
 ---
@@ -91,7 +91,7 @@ Many commercial services such as [Blazemeter](https://www.blazemeter.com/) suppo
  
 If you use code based tests for load testing and .NET is your platform of choice then tools such as
 [Neoload](https://www.neotys.com/neoload/overview), [Micro Focus Silk Performer](https://www.microfocus.com/products/silk-portfolio/silk-performer/),
-and [Micro Focus Load Runner](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview) are options to consider.
+and [Micro Focus Load Runner](https://www.microfocus.com/products/loadrunner-load-testing/overview) are options to consider.
 
 In addition, extensions from several load test vendors such as [SOASTA](https://marketplace.visualstudio.com/items?itemName=SOASTA.SOASTA-Extension)
 (now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=apicasystem.apica-loadtest), and

@@ -3,10 +3,10 @@ title: Visual Studio Online General Availability
 description: VSTS release notes for April 3 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: bfe41b66-a230-42f6-b0f0-07f2b164496c
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -32,7 +32,7 @@ Part of our GA announcement is the addition of a financially-backed SLA for our 
 -We guarantee at least 99.9% availability to execute build operations using the paid **Visual Studio Online Build Service**.
 -We guarantee at least 99.9% availability to execute load testing operations using the paid **Visual Studio Load Testing Service**.
 
-All availability is calculated over a monthly billing cycle. For more details, please visit: [http://www.windowsazure.com/support/legal/sla/](http://www.windowsazure.com/support/legal/sla/).
+All availability is calculated over a monthly billing cycle. For more details, please visit: [https://www.windowsazure.com/support/legal/sla/](https://www.windowsazure.com/support/legal/sla/).
 
 ### Data Export Window
 
@@ -57,29 +57,3 @@ That’s all the news for today. Thank you to each and every one of you that has
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

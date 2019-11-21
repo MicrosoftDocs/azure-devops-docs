@@ -7,7 +7,7 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
@@ -39,5 +39,9 @@ Most DevOps settings are made at the project-level. You configure agent and depl
 ## Test
 
 - [Set test retention policies](../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+
+## Audit
+
+- [Access, export, and filter audit logs](azure-devops-auditing.md)
 
 

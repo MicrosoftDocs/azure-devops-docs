@@ -3,16 +3,16 @@ title: Team Foundation Service updates - Jun 26
 description: VSTS release notes for June 26 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: de8ae787-f7be-4567-a0fc-a82b9bff98bb
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
 # Team Foundation Service updates - Jun 26
 
-It’s an exciting day today as we announced and released Visual Studio 2013 Preview.  Visit [Soma's blog](http://blogs.msdn.com/b/somasegar/archive/2013/06/26/visual-studio-2013-preview.aspx) to read about the details.  Related to that announcement we have a few changes to the service that you’ll want to know about.
+It’s an exciting day today as we announced and released Visual Studio 2013 Preview.  Visit [Soma's blog](https://blogs.msdn.com/b/somasegar/archive/2013/06/26/visual-studio-2013-preview.aspx) to read about the details.  Related to that announcement we have a few changes to the service that you’ll want to know about.
 
 ## Windows 8.1 support in the build service
 
@@ -37,8 +37,3 @@ That’s it for today.
 Thanks.
 
 Aaron Bjork
-
-
-
-
-
