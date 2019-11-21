@@ -285,7 +285,7 @@ on-demand test execution.
 or [Selenium](../pipelines/test/continuous-test-selenium.md) tests,
 the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser.
-If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
+If you are using a headless browser such as [PhantomJS](https://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
 [Build and release agents](../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../pipelines/agents/v2-windows.md),

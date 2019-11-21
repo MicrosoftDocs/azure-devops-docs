@@ -414,7 +414,7 @@ Set the Control Options for the Publish Test Results task to run the task even i
 
 ## End-to-end browser testing 
 
-Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](http://karma-runner.github.io/2.0/index.html). Then publish the results for the build to VSTS with these steps: 
+Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](https://karma-runner.github.io/2.0/index.html). Then publish the results for the build to VSTS with these steps: 
 
 1. Install a headless browser testing driver such as headless Chrome or Firefox, or a browser mocking tool such as PhantomJS, on the build agent. 
 1. Configure your test framework to use the headless browser/driver option of your choice according to the tool's documentation.

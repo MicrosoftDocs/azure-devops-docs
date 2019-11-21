@@ -1,4 +1,4 @@
-﻿---
+---
 title: Install a Maven artifact using Gradle
 description: Install a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
@@ -21,7 +21,7 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
 

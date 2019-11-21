@@ -1,4 +1,4 @@
-﻿---
+---
 title: Change app access policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
@@ -24,7 +24,7 @@ You can change your application access policies for your organization in Azure D
 
 * [Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) as a single set of credentials across all tools that don't have plug-in, extension, or native support. For example, you can use basic authentication to access [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md), but you must turn on alternate credentials.
 
-* [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys when you use Linux, macOS, or Windows running [Git for Windows](http://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+* [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys when you use Linux, macOS, or Windows running [Git for Windows](https://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
 
 * [Personal access tokens](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
