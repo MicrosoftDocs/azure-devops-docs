@@ -514,69 +514,69 @@ Cross account linking requires the use of a special link type and should only be
 
 ### Property descriptions 
 
+The following table describes each of the property items specified in the configuration file. 
+
 <table valign="top">
 <tbody valign="top">
 <tr>
-<th width="25%">Property</th>
-<th width="30%">Description</th>
-<th width="20%">Default</th>
-<th width="25%">Example</th>
+<th width="30%">Property</th>
+<th width="40%">Description</th>
+<th width="30%">Default/Example</th>
 </tr>
 <tr>
 <td>consumesLinkName</td>
 <td>Specifies the link type used to create the link from producer to consumer.  </td>
 <td>System.LinkTypes.Dependency-Reverse</td>
-<td> </td>
 </tr>
 <tr>
 <td>producesLinkName</td>
 <td>Specifies the link type used to create the link from consumer to producer. </td>
 <td>System.LinkTypes.Dependency-Forward</td>
-<td> </td>
 </tr>
 <tr>
 <td>queryFields</td>
 <td> </td>
 <td>{}</td>
-<td> </td>
 </tr>
 <tr>
 <td>dependencyWorkItemTypes</td>
 <td>Specifies the work item types that participate in dependency tracking. From the Create dependency dialog, only those work item types listed can be created.  </td>
-<td>[
-        "Epic",
-        "Feature",
-        "User Story",
-        "Bug"
-    ]</td>
-<td>If using the Scrum process, you would change this to: 
-[
-        "Epic",
-        "Feature",
-        "Product Backlog Item",
-        "Bug"
+<td>[  
+        "Epic",  
+        "Feature",  
+        "User Story",  
+        "Bug"  
+    ]<br/>
+If using the Scrum process, you would change this to: 
+[  
+        "Epic",  
+        "Feature",  
+        "Product Backlog Item",  
+        "Bug"  
     ]
 </td>
 </tr>
 <tr>
 <td>selectedDependencyWorkItemTypes</td>
 <td>Restricts the work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. </td>
-<td>Any</td>
-<td>To restrict the work item types to just Epics and Features, specify:  
-[
-        "Epic",
-        "Feature"
-    ]</td>
+<td>Any<br/>
+<p>To restrict the work item types to just Epics and Features, specify:</p> 
+[  
+        "Epic",  
+        "Feature"  
+    ]  
+</td>
 </tr>
 <tr>
 <td>selectedReleases</td>
 <td>Restricts the focus to just those work items that are assigned to those Interation Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied.  </td>
-<td>none specified</td>
-<td>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:  
-[
-        "Fabrikam/Release 1",
-        "Fabrikam/Release 2",
-    ]</td>
+<td>none specified<br/>
+<p>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:</p> 
+[  
+        "Fabrikam/Release 1",  
+        "Fabrikam/Release 2",  
+    ]  
+</td>
 </tr>
 <tr>
 <td>workItemCategoriesAndColors</td>
@@ -607,52 +607,52 @@ Cross account linking requires the use of a special link type and should only be
 <tr>
 <td>workItemDislayStatesAndDisplayColors</td>
 <td>Maps the workflow states to colors used to display them. </td>
-<td>{
-        "New": {
-            "textColor": "rgb(112, 112, 112)",
-            "chartColor": "rgb(112, 112, 112)",
-            "states": [
-                "New"
-            ]
-        },
-        "Active": {
-            "textColor": "rgb(0, 122, 204)",
-            "chartColor": "rgb(0, 122, 204)",
-            "states": [
-                "Active",
-                "Resolved"
-            ]
-        },
-        "Closed": {
-            "textColor": "rgb(16, 124, 16)",
-            "chartColor": "rgb(16, 124, 16)",
-            "states": [
-                "Closed"
-            ]
-        },
-        "Removed": {
-            "textColor": "rgb(204, 41, 61)",
-            "chartColor": "rgb(204, 41, 61)",
-            "states": [
-                "Removed"
-            ]
-        },
-        "Other": {
-            "textColor": "rgb(178, 178, 178)",
-            "chartColor": "rgb(178, 178, 178)",
-            "states": []
-        }
-    }</td>
-<td>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </td>
+<td><code>{  
+        "New": {  
+            "textColor": "rgb(112, 112, 112)",  
+            "chartColor": "rgb(112, 112, 112)",  
+            "states": [  
+                "New"  
+            ]  
+        },  
+        "Active": {  
+            "textColor": "rgb(0, 122, 204)",  
+            "chartColor": "rgb(0, 122, 204)",  
+            "states": [  
+                "Active",  
+                "Resolved"  
+            ]  
+        },  
+        "Closed": {  
+            "textColor": "rgb(16, 124, 16)",  
+            "chartColor": "rgb(16, 124, 16)",  
+            "states": [  
+                "Closed"  
+            ]  
+        },  
+        "Removed": {  
+            "textColor": "rgb(204, 41, 61)",  
+            "chartColor": "rgb(204, 41, 61)",  
+            "states": [  
+                "Removed"  
+            ]  
+        },  
+        "Other": {  
+            "textColor": "rgb(178, 178, 178)",  
+            "chartColor": "rgb(178, 178, 178)",  
+            "states": []  
+        }  
+    }  
+</code>
+<p>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </p>
+</td>
 </tr>
 <td>riskAssessementValues</td>
 <td>Specifies the [Risk](../queries/planning-ranking-priorities.md#risk) field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. </td>
-<td>[]</td>
 <td>["1-High", "2-Medium", "3-Low"]</td>
 </tr>
 <tr>
 <td>releases</td>
-<td> </td>
 <td> </td>
 <td> </td>
 </tr>
@@ -660,32 +660,29 @@ Cross account linking requires the use of a special link type and should only be
 <td>partnerAccounts</td>
 <td> </td>
 <td> </td>
-<td> </td>
 </tr>
 <tr>
 <td>timelineEnabled</td>
 <td>Enables of disables the Timeline view.</td>
 <td>true</td>
-<td> </td>
 </tr>
 <tr>
 <td>newDependencyButtonEnabled</td>
 <td>Enables of disables the **New Dependency** link to create a new linked dependency.</td>
 <td>true</td>
-<td> </td>
 </tr>
 <tr>
 <td>crossAccountConfigs</td>
 <td>(1) Enables of disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </td>
-<td>{
-        "crossAccountDependencyEnabled": true,
-        "crossAccountDependencyToggleDefaultState": false
-    }</td>
-<td>If you don't want any dependencies created that belong to other organizations, then change this configuration to: 
-{
-        "crossAccountDependencyEnabled": true,
-        "crossAccountDependencyToggleDefaultState": false
-    }
+<td><code>{
+        "crossAccountDependencyEnabled": true,  
+        "crossAccountDependencyToggleDefaultState": false  
+    }  </code><br/>
+<p>If you don't want any dependencies created that belong to other organizations, then change this configuration to: </p>
+<code>{  
+        "crossAccountDependencyEnabled": true,  
+        "crossAccountDependencyToggleDefaultState": false  
+    }</code>
 </td>
 </tr>
 <tr>
@@ -699,7 +696,6 @@ Cross account linking requires the use of a special link type and should only be
         "4",
         "(blank)"
     ]</td>
-<td> </td>
 </tr>
 <tr>
 <td>defaultColumns</td>
@@ -712,38 +708,35 @@ Cross account linking requires the use of a special link type and should only be
         "Consumers",
         "Producers"
     ]</td>
-<td> </td>
 </tr>
 <tr>
 <td>riskAnalysisEnabled</td>
 <td>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</td>
 <td>False</td>
-<td> </td>
 </tr>
 <tr>
 <td>riskAssessmentValues</td>
 <td> </td>
 <td>[]</td>
-<td> </td>
 </tr>
 <tr>
 <td>riskGraphConfig</td>
-<td>Maps the workflow States to one of the three Risk areas displayed on the Graph: atRisk is Red, nuetral is Gray, and onTrack is Green.  </td>
+<td>Maps the workflow States to one of the three Risk areas displayed on the Graph: <code>atRisk</code> is Red, <code>nuetral</code> is Gray, and <code>onTrack</code> is Green.  </td>
 <td>
-{
-    "atRisk": [
-        "Removed"
-    ],
-    "neutral": [
-        "New"
-    ],
-    "onTrack": [
-        "Active",
-        "Resolved",
-        "Closed",
-         "Other"
+<code>{  
+    "atRisk": [  
+        "Removed"  
+    ],  
+    "neutral": [  
+        "New"  
+    ],  
+    "onTrack": [  
+        "Active",  
+        "Resolved",  
+        "Closed",  
+         "Other"  
         ]
-},
+}</code>
 </td>
 <td>Add or remove workflow states used in work item types participating in dependency tracking.</td>
 </tr>
@@ -751,13 +744,11 @@ Cross account linking requires the use of a special link type and should only be
 <td> </td>
 <td> </td>
 <td> </td>
-<td> </td>
 </tr>
 <tr>
 <td>iterationDepth</td>
 <td>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </td>
-<td>8</td>
-<td>A depth of three would correspond to: Fabrikam Fiber/Release 1/Sprint 20. </td>
+<td>8<p>A depth of three would correspond to: Fabrikam Fiber/Release 1/Sprint 20. </p></td>
 </tr>
 </tbody>
 </table>
