@@ -88,11 +88,11 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 <a id="account-manager" />
 
-1. To access the Preview features options, open your profile menu, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose **Preview features**. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
+1. To access the Preview features options, open your profile menu, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, choose **User settings**, and then choose **Preview features**. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
 
 	#### New Account Manager enabled
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](_img/preview-features/open-preview-features.png)
+	> ![Open Preview Features](_img/preview-features/open-preview-features-s161.png)
 
 	Choose **Azure DevOps profile** to access your personal Azure DevOps settings, notifications, usage, and security settings.  
 
