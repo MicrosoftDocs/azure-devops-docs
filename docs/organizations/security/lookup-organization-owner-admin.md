@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 11/21/2019
 ---
 
 
@@ -41,17 +41,16 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 
 1. Open the web portal and choose the project where you want to look up members of a Project Administrators group or any other project security group. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Choose **Project Settings** and then **Permissions**.
+2. Choose **Project settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project groups](_img/permissions/project-permisions-s154.png)
+	![Choose Project settings > Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
 
-1. Choose **Project Administrators** group, and then **Members**.  
+3. Choose **Project Administrators** group, and then **Members**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings, Permissions page, Add member](_img/project-collection/project-admin-members-tab-s154.png) 
 
-2. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-collection/add-member-project-admin.png)  
@@ -59,7 +58,7 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save**. 
+5. Choose **Save**. 
 
 #### [Current page](#tab/current-page) 
 
@@ -129,30 +128,26 @@ To find out who is a member of the Project Collection Administrators group, chec
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
 
-1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.  
+1. Choose the ![project-icon.png](../../_img/icons/project-icon.png) Azure DevOps logo to open your projects. Then choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
+	![Open Organization settings](../../_shared/_img/open-organization-settings-preview.png)
 
-1. Choose **Permissions** under the **Security** group, then **Project Collection Administrators** group, and then the **Members** tab. 
+2. Choose **Permissions** under the Security group, and then **Project Collection Administrators** > **Members** tab. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Security, Project Collection Administrators group, Members tab](_img/project-collection/project-collection-admins-members-tab-s157.png)  
 
 ::: moniker-end   
 
-
-
 ::: moniker range="azure-devops-2019"
 
 To find out who is a member, check the **Security** settings at the collection level. 
 
-1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![project-icon.png](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-server.png)  
+   ![Open Organization settings](../../pipelines/agents/_img/agent-pools-tab/organization-settings.png)
 
-1. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+2. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
@@ -161,7 +156,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the ![ ](/azure/devops/_img/icons/gear_icon.png) settings icon and choose **Collection settings**.
+1. Choose the ![project-icon.png](../../_img/icons/project-icon.png) settings icon and choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
@@ -181,10 +176,9 @@ To find out who is a member, check the **Security** settings at the collection l
 
 1. Choose the ![ ](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
+	![Open organization settings](../../_shared/_img/open-organization-settings-preview.png)  
 
-1. Choose **Overview** and scroll down to show the **Organization owner**.
+2. Choose **Overview** and scroll down to show the **Organization owner**.
 
    > [!div class="mx-imgBorder"]  
    > ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
