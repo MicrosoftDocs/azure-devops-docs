@@ -69,7 +69,7 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
 For customers who prefer to continue using a self-service model for load test and cloud-load testing,
 there are a number of free and commercial tools available.
 
-For example, [Apache JMeter](http://jmeter.apache.org) is a free, popular open source tool with a strong community backing.
+For example, [Apache JMeter](https://jmeter.apache.org) is a free, popular open source tool with a strong community backing.
 It supports many different protocols and has rich extensibility that can be leveraged to customize the tool to your needs.
 In addition, if you have been using Apache JMeter to run load tests using the cloud-based load testing service,
 you will be able to use these load tests with alternatives that support them.
@@ -79,13 +79,13 @@ The following table outlines how the concepts in Visual Studio load test map to 
 | Visual Studio Load test | Apache JMeter load test |
 | --- | --- |
 |Load test (.loadtest file) | JMX (.jmx file) |
-|Webtest recorder | [HTTP(S) test script recorder](http://jmeter.apache.org/usermanual/component_reference.html) |
-|Webtest | [HTTP sampler](http://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request) |
-|Unit test | [JUnit sampler](http://jmeter.apache.org/usermanual/junitsampler_tutorial.html) |
+|Webtest recorder | [HTTP(S) test script recorder](https://jmeter.apache.org/usermanual/component_reference.html) |
+|Webtest | [HTTP sampler](https://jmeter.apache.org/usermanual/component_reference.html#HTTP_Request) |
+|Unit test | [JUnit sampler](https://jmeter.apache.org/usermanual/junitsampler_tutorial.html) |
 |Selenium test | [WebDriver sampler](https://jmeter-plugins.org/wiki/WebDriverTutorial/) |
 |Request and test plugins for extensibility | Extensibility using [JMeter plugins](https://jmeter-plugins.org/) |
-|Reporting | [Dashboard](http://jmeter.apache.org/usermanual/generating-dashboard.html) |
-|Distribution using Test Controller/Test Agent | [Distribution in Apache JMeter](http://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html) |
+|Reporting | [Dashboard](https://jmeter.apache.org/usermanual/generating-dashboard.html) |
+|Distribution using Test Controller/Test Agent | [Distribution in Apache JMeter](https://jmeter.apache.org/usermanual/jmeter_distributed_testing_step_by_step.html) |
 
 Many commercial services such as [Blazemeter](https://www.blazemeter.com/) support running Apache JMeter tests.
  

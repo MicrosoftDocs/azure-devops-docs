@@ -126,7 +126,7 @@ Use this task in a build or release pipeline to install and publish npm packages
             <ul>
                 <li><strong>Registry I select here</strong> publishes to an Azure Artifacts registry in the same organization/collection as the build. After you select this option, select the target registry from the dropdown.
                 </li>
-                <li><strong>External npm registry (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.npmjs.com/" data-raw-source="[npm](https://www.npmjs.com/)">npm</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](http://www.myget.org/)">MyGet</a>, or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a>.
+                <li><strong>External npm registry (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.npmjs.com/" data-raw-source="[npm](https://www.npmjs.com/)">npm</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](https://www.myget.org/)">MyGet</a>, or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a>.
                 </li>
             </ul>
         </td>

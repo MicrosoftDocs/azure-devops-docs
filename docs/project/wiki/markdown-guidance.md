@@ -1,4 +1,4 @@
-﻿---
+---
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
@@ -20,7 +20,7 @@ ms.date: 09/19/2019
 
 [!INCLUDE [version-selector](../../_shared/version-selector.md)]
 
-Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
@@ -642,7 +642,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 #### Supported in: Pull Requests | Wikis
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
@@ -650,7 +650,7 @@ In pull request comments and wiki pages, you can use emojis to add character and
 
 #### Supported in: Pull Requests
 
-In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 

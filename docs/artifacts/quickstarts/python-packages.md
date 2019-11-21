@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
 ms.prod: devops
@@ -100,4 +100,4 @@ To consume or publish Python packages as part of your continuous integration/con
 
 To learn more about how to create, configure, and use Python packages as part of your project or pipeline, see [Build Python apps](../../pipelines/ecosystems/python.md).
 
-If you’d like to learn more about how Python packages work, see [The Architecture of Open Source Applications: Python Packaging](http://www.aosabook.org/en/packaging.html), an excerpt from the book *Architecture of Open Source Applications*.
+If you’d like to learn more about how Python packages work, see [The Architecture of Open Source Applications: Python Packaging](https://www.aosabook.org/en/packaging.html), an excerpt from the book *Architecture of Open Source Applications*.

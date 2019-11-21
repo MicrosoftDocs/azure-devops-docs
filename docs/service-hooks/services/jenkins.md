@@ -1,4 +1,4 @@
-﻿---
+---
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -21,7 +21,7 @@ Git repository or when you check in code to Team Foundation version control.
 
 ## Configure Jenkins
 
-1. If you haven't already, set up a [Jenkins](http://jenkins-ci.org/) server.
+1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
 
 2. If you're setting up Jenkins on-premises, [enable HTTPS](https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins).
 

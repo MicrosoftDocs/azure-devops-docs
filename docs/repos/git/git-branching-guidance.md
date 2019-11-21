@@ -71,7 +71,7 @@ Merge unfinished features into the master branch so others can build off their w
 Enable the flag in development to use the feature without the changes affecting anyone else. 
 Once the feature is finished, you can remove the flags or use them to roll out the feature to select users and testers.
 
-[Learn more](http://martinfowler.com/articles/feature-toggles.html) about using feature flags in your code.
+[Learn more](https://martinfowler.com/articles/feature-toggles.html) about using feature flags in your code.
 
 ### Review and merge code with pull requests
 
