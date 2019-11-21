@@ -214,11 +214,15 @@ az devops security permission reset-all --id
 
 ### Example
 
-The following command clears all permissions for the user contoso@contoso.com in the specified namespace without requiring confirmation.  
+The following command clears all permissions for the user contoso@contoso.com in the specified namespace without requiring confirmation. The result is shown in the CLI.
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops security permission reset-all --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --token 0611925a-b287-4b0b-90a1-90f1a96e9f1f --yes
+az devops security permission reset-all --id 58450c49-b02d-465a-ab12-59ae512d6531 --subject contoso@contoso.com --token 0611925a-b287-4b0b-90a1-90f1a96e9f1f --yes --output table
+
+Result
+--------
+True
 ```
 
 ## Show permissions
