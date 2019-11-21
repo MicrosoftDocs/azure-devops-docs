@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 10/25/2019
+ms.date: 11/21/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -151,6 +151,19 @@ You can also select "@mention" from the edit toolbar.
 
 > ![Mention from edit toolbar](_img/mention-toolbar.png)
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Page visits for wiki pages
+
+Get insights into the page visits for wiki pages. You can store this data in your data source and create dashboards to get specific insights like top-n most viewed pages.
+You also see an aggregated page visits count for the last 30 days in every page.
+
+![Wiki page visits](_img/wiki/wiki-page-visits.png)
+
+> [!NOTE]
+> A page visit is defined as a page view by a given user in a 15-minute interval.
 
 ::: moniker-end
 
