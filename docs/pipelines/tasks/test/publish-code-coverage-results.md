@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Use this task in a build pipeline to publish code coverage results produced when
 running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
 The task supports popular coverage result formats such as
-[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
+[Cobertura](https://cobertura.github.io/cobertura/) and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 This task can only be used in Build pipelines and is not supported in Release pipelines.
 

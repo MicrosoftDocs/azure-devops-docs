@@ -284,7 +284,7 @@ as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command
 
 #### Get the packaging tool
 
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](http://nodejs.org), from your command line.
+You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
