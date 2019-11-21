@@ -92,7 +92,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 	#### New Account Manager enabled
 
-	Choose the ![ ](../../_img/icons/actions-icon.png) actions icon, choose **User settings**, and then choose **Preview features**. 
+	Choose your profile menu, then choose the ![ ](../../_img/icons/actions-icon.png) actions icon, **User settings**, and then **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open User settings](_img/preview-features/open-preview-features-s161.png)  ![Open Preview Features](_img/preview-features/user-settings-menu.png) 
