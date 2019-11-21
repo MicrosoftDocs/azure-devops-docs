@@ -327,5 +327,5 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 - [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
 - [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-- [Azure DevOps plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
+- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 - [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  

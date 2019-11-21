@@ -12,7 +12,7 @@ author: yukom
 
 # Build preview, updated backlog navigation, branch policies, and more... – May 15
 
-You might think that this would be a light deployment for us, given all the [announcements](https://blogs.msdn.com/b/bharry/archive/2015/04/29/visual-studio-and-team-foundation-server-at-build-2015.aspx) made over the past two weeks at [BUILD](http://buildwindows.com/) and [Ignite](https://ignite.microsoft.com/)… but you’d be wrong. :-) Let’s jump right in…
+You might think that this would be a light deployment for us, given all the [announcements](https://blogs.msdn.com/b/bharry/archive/2015/04/29/visual-studio-and-team-foundation-server-at-build-2015.aspx) made over the past two weeks at [BUILD](https://buildwindows.com/) and [Ignite](https://ignite.microsoft.com/)… but you’d be wrong. :-) Let’s jump right in…
 
 ## Build Preview now publicly available
 
@@ -90,7 +90,7 @@ To learn more about all the services, see [Integrate with service hooks](https:/
 
 ## Power BI & Visual Studio Online
 
-Finally, at the [BUILD](http://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/04/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) on how to get started.
+Finally, at the [BUILD](https://buildwindows.com/) conference two weeks ago, we announced our new Power BI integration for VS Online. If you have not had a chance to see it yet, read [Jeff Levinson’s post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/05/04/gain-understanding-and-insights-into-projects-in-visual-studio-online-with-power-bi.aspx) on how to get started.
 
 ![Power BI integration](_img/5_15_09.png)
 
