@@ -1,12 +1,12 @@
 ---
-title: Manage tokens and namespaces
-titleSuffix: Azure DevOps
+title: Manage tokens & namespaces
+titleSuffix: Azure DevOps Services
 description: Manage security permissions using the Azure DevOps CLI.  
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
+ms.manager: geverghe
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
@@ -18,14 +18,18 @@ ms.date: 11/20/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
 
-You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands.
+Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces are used to determine whether a user has permissions to perform a specific action on a specific resource.
+
+Each family of resources (such as work items or Git repositories) is secured through a unique namespace. Each security namespace contains zero or more access control lists (ACLs). Each ACL contains a token, an inherit flag, and a set of zero or more access control entries (ACEs). Each ACE contains an identity descriptor, an allowed permissions bitmask, and a denied permissions bitmask. Tokens are arbitrary strings representing resources in Azure DevOps Services.
+
+You can manage tokens and namespaces for your organization with the [az devops security permission](/cli/azure/ext/azure-devops/devops/security/permission) commands. Use this command to:
 
 - View the permissions associated with tokens and namespaces
 - View details about those permissions
 - Update or reset permissions
 
 > [!NOTE]
-> You can only manage tokens and namespaces for your organization with the Azure DevOps Command Line Interface (CLI), `az devops security permission`. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> For Azure DevOps Services, you can manage tokens and namespaces using the az devops security permission documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
 
 ## Prerequisites 
 
@@ -34,7 +38,7 @@ You can manage tokens and namespaces for your organization with the [az devops s
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
 
-## security permission commands
+## Security permission commands
 
 > [!div class="mx-tdBreakAll"]  
 > | Command | Description |
@@ -66,14 +70,14 @@ az devops security permission list --id
 
 ### Parameters
 
-- **id**: Required. ID of security namespace.
+- **id**: Required. ID of security namespace. To obtain the ID, use the [az devops security permission namespace list](#list-namespaces) command.
 - **subject**: Required. The email address or group descriptor of the user.
 - **recurse**: Optional. If true, and the namespace is hierarchical, this parameter returns the child ACLs of the tokens.
 - **token**: Optional. Specify an individual security token.
 
 ### Example
 
-The following command shows a detailed list of the tokens associated with the user contoso@contoso.com in the specified namespace, and shows the results in table format.
+The following command lists the tokens in table format for the specified namespace, which corresponds to Analytics, and associated with the user  contoso@contoso.com.
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -105,6 +109,8 @@ az devops security permission namespace list [--local-only]
 ### Parameters
 
 - **local-only**: Optional. If true, retrieve only local security namespaces.
+
+    Security namespaces may have their data mastered in one microservice, but still be visible in other microservices. If a security namespace's data is mastered in microservice X, it is said to be local to that microservice. Otherwise, it is said to be remote.
 
 ### Example
 
@@ -280,7 +286,7 @@ az devops security permission update --id
 - **token**: Required. Individual security token.
 - **allow-bit**: Optional. Allow bit or addition of bits. Required if --deny-bit is missing.
 - **deny-bit**: Optional. Deny bit or addition of bits. Required if --allow-bit is missing.
-- **merge**: Optional. If set, the existing ACE has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are *false* or *true*.
+- **merge**: Optional. If set, the existing access control entry (ACE) has its allow and deny merged with the incoming ACE's allow and deny. If unset, the existing ACE is displaced. The accepted values are *false* or *true*.
 
 ### Example
 
@@ -297,7 +303,6 @@ ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the q
 
 ## Related articles
 
-- [About access levels](access-levels.md)
-- [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
-- [Azure DevOps Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
-- [Default permissions and access](permissions-access.md). 
+- [Security REST API](/rest/api/azure/devops/security/)
+- [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd) 
+- [Security glossary](security-glossary.md)
