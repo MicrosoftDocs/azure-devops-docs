@@ -63,11 +63,6 @@ To create a project-level security group, open the web portal and choose the pro
 3. Enter a name for the group, select users or groups for membership, optionally add a description, and then choose **Create**.
 
    ![Create group dialog](_img/permissions/create-group-dialog.png)
-   
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 #### [Current page](#tab/current-page) 
 
@@ -94,6 +89,28 @@ To create a project-level security group, open the web portal and choose the pro
 
 ::: moniker-end
 
+::: moniker range="= azure-devops-2019"
+
+#### [Current page](#tab/current-page) 
+
+1. Choose **Project settings** > **Security**.
+
+    *To see the full image, click to expand*.
+
+    [![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
+
+2. Choose **Create group** to open the dialog for adding a group.
+
+    > [!div class="mx-imgBorder"]
+    > ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
+
+3. Enter a name for the group, and optionally a description.
+
+    For example, here we define a Team Admins group.
+
+    ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
+
+4. Choose **Create group**.
 
 ::: moniker range="<= tfs-2018"
 
