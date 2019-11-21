@@ -519,8 +519,8 @@ The following table describes each of the property items specified in the config
 <table valign="top">
 <tbody valign="top">
 <tr>
-<th width="30%">Property</th>
-<th width="40%">Description</th>
+<th width="25%">Property</th>
+<th width="45%">Description</th>
 <th width="30%">Default/Example</th>
 </tr>
 <tr>
@@ -674,56 +674,57 @@ If using the Scrum process, you would change this to:
 <tr>
 <td>crossAccountConfigs</td>
 <td>(1) Enables of disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </td>
-<td><code>{
+<td>Default: <pre>{
         "crossAccountDependencyEnabled": true,  
         "crossAccountDependencyToggleDefaultState": false  
-    }  </code><br/>
+    }  </pre><br/>
 <p>If you don't want any dependencies created that belong to other organizations, then change this configuration to: </p>
-<code>{  
+<pre>{  
         "crossAccountDependencyEnabled": true,  
         "crossAccountDependencyToggleDefaultState": false  
-    }</code>
+    }</pre>
 </td>
 </tr>
 <tr>
 <td>PriorityValues</td>
 <td>Specifies the [Priority](../queries/planning-ranking-priorities.md#risk) field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   </td>
-<td>[
+<td>Default: <pre>[
         "0",
         "1",
         "2",
         "3",
         "4",
         "(blank)"
-    ]</td>
+    ]</pre></td>
 </tr>
 <tr>
 <td>defaultColumns</td>
 <td>Specifies the field columns and order used to display dependency lists. </td>
-<td>[
+<td>Default: <pre>[
         "Id",
         "Area Path",
         "Dependency Title",
         "State",
         "Consumers",
         "Producers"
-    ]</td>
+    ]</pre></td>
 </tr>
 <tr>
 <td>riskAnalysisEnabled</td>
 <td>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</td>
-<td>False</td>
+<td>Default: False</td>
 </tr>
 <tr>
 <td>riskAssessmentValues</td>
 <td> </td>
-<td>[]</td>
+<td>Default: []</td>
 </tr>
 <tr>
 <td>riskGraphConfig</td>
 <td>Maps the workflow States to one of the three Risk areas displayed on the Graph: <code>atRisk</code> is Red, <code>nuetral</code> is Gray, and <code>onTrack</code> is Green.  </td>
-<td>
-<code>{  
+<td>Default: 8
+<pre>
+{  
     "atRisk": [  
         "Removed"  
     ],  
@@ -736,19 +737,13 @@ If using the Scrum process, you would change this to:
         "Closed",  
          "Other"  
         ]
-}</code>
-</td>
-<td>Add or remove workflow states used in work item types participating in dependency tracking.</td>
+}</pre>
+<p>Add or remove workflow states used in work item types participating in dependency tracking.</p></td>
 </tr>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-<tr>
+
 <td>iterationDepth</td>
 <td>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </td>
-<td>8<p>A depth of three would correspond to: Fabrikam Fiber/Release 1/Sprint 20. </p></td>
+<td>Default: 8<p>A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. </p></td>
 </tr>
 </tbody>
 </table>
