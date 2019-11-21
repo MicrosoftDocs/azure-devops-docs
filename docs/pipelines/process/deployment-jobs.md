@@ -59,7 +59,7 @@ When deploying application updates it is important that the technique used to de
 
 #### Following are the descriptions of lifecycle hooks:
 
-**preDeploy** – Used to run steps that intialize resources before application deployment starts. 
+**preDeploy** – Used to run steps that initialize resources before application deployment starts. 
 
 **deploy** – Used to run steps that deploy your application.
 
@@ -67,7 +67,7 @@ When deploying application updates it is important that the technique used to de
 
 **postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
 
-**on: failure or on: success** - Used to run steps that peform rollback actions or clean-up. 
+**on: failure or on: success** - Used to run steps that perform rollback actions or clean-up. 
 
 
 
