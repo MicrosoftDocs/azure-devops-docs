@@ -20,7 +20,7 @@ monikerRange: '>= azure-devops-2019'
 Use templates to define logic and parameters that can be reused. There are two types of templates - includes and extends. An includes template contains re-useable content that can be inserted into multiple YAMLs. An extends template defines the outer structure allowed in a YAML.   
 
 ## Includes templates
-Includes templates let you copy content from one YAML and re-use it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. For example, this YAML include template contains npm steps that are re-used in `azure-pipeline.yml`.  
+Includes templates let you copy content from one YAML and re-use it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. This YAML include template contains npm steps that are re-used in `azure-pipeline.yml`.  
 
 ```yaml
 # File: include-npm-steps.yml
@@ -53,33 +53,53 @@ Extends templates provide a framework that can be used to define additional YAML
 
 ```yaml
 # File: parent.yml (NEEDS WORK)
-
 parameters:
-  buildPool:
-    type: pool
-    default: ''
-    values:
-    - ubuntu-latest
-    - windows-latest
-    - SecureBuildPool
-  buildSteps:
-    type: stepList
-    default: []
+- name: buildSteps
+  type: stepList
+  default: []
+- name: path
+  type: string
+  default: '**\*.sln'
 
 stages:
-- stage: buildstage
+- stage: secure_buildstage
+  pool: Hosted VS2017
   jobs:
-  - job: buildjob
-  - task: echo Text is printed here
+  - job: secure_buildjob
+    steps:
 
+    - script: echo This happens before user code
+      displayName: 'Base: Pre-build'
+
+    - script: echo Building
+      displayName: 'Base: Build'
+
+    - ${{ each step in parameters.buildSteps }}:
+      - ${{ each pair in step }}:
+          ${{ if ne(pair.key, 'script') }}:
+            ${{ pair.key }}: ${{ pair.value }}       
+          ${{ if eq(pair.key, 'script') }}:
+            'Rejecting Script: ${{ pair.value }}': error             
+
+    - script: echo Hello, world!
+      displayName: 'Base: Signing'
 ```
 
 ```yaml
-# File: child.yml (NEEDS WORK)
+# File: azure-pipelines.yml (NEEDS WORK)
+trigger:
+- master
+
 extends:
-  template: parent.yml@tmpl
+  template: parent.yml
   parameters:
-    buildPool: ubuntu-latest
+    buildSteps:  
+      - bash: echo Test
+        displayName: Test - Will Pass
+      - bash: echo "Test"
+        displayName: Test 2 - Will Pass
+      - script: echo "Script Test" # Will break script
+        displayName: Test 3 - Will Fail
 ```
 
 ## Step re-use
