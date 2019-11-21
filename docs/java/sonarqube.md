@@ -25,7 +25,7 @@ Configure an Azure DevOps Services or TFS Maven or Gradle build task to use Sona
 
 ## About SonarQube
 
-[SonarQube](http://www.sonarqube.org/) is a set of static analyzers that can be used to identify areas of improvement in your code. It allows you to analyze the technical debt in your project and keep track of it in the future. With Maven and Gradle build tasks, you can run SonarQube analysis with minimal setup in a new or existing Azure DevOps Services build task.
+[SonarQube](https://www.sonarqube.org/) is a set of static analyzers that can be used to identify areas of improvement in your code. It allows you to analyze the technical debt in your project and keep track of it in the future. With Maven and Gradle build tasks, you can run SonarQube analysis with minimal setup in a new or existing Azure DevOps Services build task.
 
 ## Creating a SonarQube endpoint
 

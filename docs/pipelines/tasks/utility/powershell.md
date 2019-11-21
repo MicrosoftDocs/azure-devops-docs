@@ -176,7 +176,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [Windows PowerShell Tutorial](http://www.computerperformance.co.uk/powershell/index.htm)
 
-[PowerShell.org](http://powershell.org/)
+[PowerShell.org](https://powershell.org/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 

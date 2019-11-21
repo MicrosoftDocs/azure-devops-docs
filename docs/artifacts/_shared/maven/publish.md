@@ -17,4 +17,4 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 
 3. From the directory containing your **pom.xml** file, run the command, `mvn build` and `mvn deploy`. The Maven artifact should appear in your feed.
 
-See the [Maven CLI docs](http://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.
+See the [Maven CLI docs](https://maven.apache.org/plugins/maven-deploy-plugin/) for more publish options.

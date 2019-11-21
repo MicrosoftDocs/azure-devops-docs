@@ -62,7 +62,7 @@ We support the following subset of .NET Core supported distributions:
 Regardless of your platform, you will need to install Git 2.9.0 or higher.
 We strongly recommend installing the latest version of Git.
 
-If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](http://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 The agent installer knows how to check for other dependencies.

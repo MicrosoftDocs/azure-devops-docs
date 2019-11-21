@@ -56,7 +56,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
 1. Open the Azure DevOps Services web portal in your browser by going to `https://<your account name>.visualstudio.com`.
 
-1. Find your Git repository. Select **Clone** in the upper right, then copy the clone URL.
+1. Open the Azure DevOps Services web portal in your browser by navigating to `https://<your account name>.visualstudio.com` and find your Git repository. Copy the clone URL from the **Clone** pop-up.   
 
    ![Finding the Clone URL for your Git Repository in Azure Repos](_img/gitquickstart-vs2017/clone-url.png)
 

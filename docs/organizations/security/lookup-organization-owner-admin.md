@@ -30,7 +30,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Show members of the Project Administrators group
 
-If you aren't a Project Administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
+If you aren't a Project Administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings > Permissions** page and seeing who are members. 
 
 ::: moniker range="azure-devops"
 
@@ -49,9 +49,9 @@ If you aren't a Project Administrator, and you need to be, find someone who is, 
 1. Choose **Project Administrators** group, and then **Members**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Security, Add member](_img/project-collection/project-admin-members-tab-s154.png) 
+	> ![Project Settings, Permissions page, Add member](_img/project-collection/project-admin-members-tab-s154.png) 
 
-1. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
+2. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add users and group dialog](_img/project-collection/add-member-project-admin.png)  
