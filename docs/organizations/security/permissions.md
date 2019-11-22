@@ -560,8 +560,7 @@ For each project that you create, the system creates the followings project-leve
 
 #### [Preview page](#tab/preview-page) 
 
-> [!div class="mx-imgBorder"]  
-> ![Project groups](_img/permissions/project-permisions-s154.png)
+> ![Project groups](_img/permissions/project-settings-permissions.png)
 
 #### [Current page](#tab/current-page) 
 

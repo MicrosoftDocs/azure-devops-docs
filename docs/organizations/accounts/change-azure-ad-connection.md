@@ -36,7 +36,7 @@ Before you switch your organization directory, make sure the following is true:
 
     ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Switch directory**.
+3. Select **Azure Active Directory**, and then **Switch directory**.
 
    ![Select Switch directory button](_img/change-azure-ad-connection.md/select-switch-directory.png)
 

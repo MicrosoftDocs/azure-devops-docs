@@ -62,7 +62,7 @@ ConnectALL is from Go2Group, a global provider of IT delivery solutions that hel
 
 ![Tasktop](_img/tfs-ps-sync-tas-logo.png)
 
-## [Tasktop](http://www.tasktop.com/product-overview)
+## [Tasktop](https://www.tasktop.com/product-overview)
  
 Tasktop provides enterprise-grade integration between Microsoft Project Server and Azure DevOps Services and TFS, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
  
