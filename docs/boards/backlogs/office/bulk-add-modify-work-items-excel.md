@@ -20,8 +20,6 @@ ms.date: 11/19/2018
 
 When you have a lot of work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
-You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
-
 In this article you'll learn:  
 
 >[!div class="checklist"]    
@@ -31,15 +29,38 @@ In this article you'll learn:
 > * Select user accounts  
 > * Add hierarchically linked backlog items and tasks   
 > * Work with different list types    
-  
+
+
+::: moniker range="<= tfs-2018" 
+> [!NOTE]   
+> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
+::: moniker-end  
+
 
 ## Prerequisites 
 
-::: moniker range=">= tfs-2017" 
+::: moniker range="azure-devops" 
 
+Integration of Microsoft Excel with the cloud service for Azure Boards is fully supported. 
+
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017 < azure-devops" 
+
+- You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
 
 ::: moniker-end  
 
@@ -135,6 +156,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 
 
 <a id="select-user"></a>
+
 ## Select user accounts 
 
 > [!NOTE]  
@@ -310,41 +332,4 @@ You can't delete work items from Excel. The only way to delete work items is fro
 ### Direct link query converts to flat list
 
 When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
-
-### Multiple worksheets
-
-Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
-
-To bulk add or modify work items in a different project, open a new Excel workbook. 
-
-### Use Excel cut and paste functions
-
-You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to re-sequence items within a list and change link relationships among work items.
-
-To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
-
-> [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  
-
-### Web portal and Excel access
-
-To open Excel from a web portal query, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) marketplace extension. 
-
-To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
-
-Once you've installed Visual Studio, open Excel and look for the Team ribbon.
-
-### Disable the Team Foundation Add-in 
-
-If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/en-sg/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460).
-
-### Enable the Developer tab 
-
-See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon).
-
-### Excel for Mac 
-
-macOS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require Windows.
-
-
 
