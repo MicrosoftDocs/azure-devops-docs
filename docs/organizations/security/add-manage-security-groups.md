@@ -209,6 +209,89 @@ Name                              Description
 [MyFirstProject]\Management Team  Management team focused on creating and maintaining customer services
 ```
 
+## Add a member to a group
+
+You can add a member to a security group with the [az devops security group membership add](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-add) command.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership add --group-id
+                                        --member-id
+```
+
+### Parameters
+
+- **group-id**: Required. Descriptor of the group to which member is to be added.
+- **member-id**: Required. Descriptor of the group or email address of the user to be added.
+
+### Example
+
+The following command adds the user contoso@contoso.com to the specified security group and shows the results in table format.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership add --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --output table
+
+Name                                 Type    Email
+-----------------------------------  ------  -------------------
+[MyFirstProject]\Account Management  group
+contoso@contoso.com                  user    contoso@contoso.com
+```
+
+## List memberships for a group or user
+
+You can list memberships for a group or user with the [az devops security group membership list](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-list) command.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership list --id
+                                         [--relationship {memberof, members}]
+```
+
+### Parameters
+
+- **id**: Required. Security group descriptor or user email address whose membership details are required.
+- **relationship**: Optional. Get **member of** or **members** information for the group. The accepted values are *memberof* and *members*.
+
+### Example
+
+The following command lists the members of the specified security group and shows the results in table format.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership list --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --output table
+
+Name                 Type    Email                Descriptor
+-------------------  ------  -------------------  ----------------------------------------------------
+contoso@contoso.com  user    contoso@contoso.com  msa.NDMzMmNjOWYtYzY4Zi03YTNlLTk2ZTktYmYwM2U4NjgxOTRh
+```
+
+## Remove a member from a group
+
+You can remove a member from a security group with the [az devops security group membership remove](/cli/azure/ext/azure-devops/devops/security/group/membership#ext-azure-devops-az-devops-security-group-membership-remove) command.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership remove --group-id
+                                           --member-id
+                                           [--yes]
+```
+
+### Parameters
+
+- **group-id**: Required. Descriptor of the group from which member needs to be removed.
+- **member-id**: Required. Descriptor of the group or email address of the user to be removed.
+- **yes**: Optional. Don't prompt for confirmation.
+
+### Example
+
+The following command removes the user contoso@contoso.com from the specified security group without prompting for confirmation.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0yMjc3MTY5NTAtOTkzNjA1MTg2LTI1ODQxNTkyOTktMjYzMDUyNzA2OC0xLTQxNDY0Mzc4MzktMzgxMDM2MDM5MS0yNjE0MjU5MzI3LTI5MjI2MTc3OTA --member-id contoso@contoso.com --yes
+```
+
 ## Related articles
 
 - [Security REST API](/rest/api/azure/devops/security/)

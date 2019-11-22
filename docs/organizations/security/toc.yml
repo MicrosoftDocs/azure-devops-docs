@@ -68,6 +68,8 @@
       href: ../../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage tokens and namespaces
     href: manage-tokens-namespaces.md
+  - name: Manage security groups
+    href: add-manage-security-groups.md
   - name: Set SQL Server report permissions 
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set SharePoint project portal permissions
