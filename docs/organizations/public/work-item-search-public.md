@@ -30,8 +30,6 @@ In this quickstart, you learn how to perform a work item search to quickly find 
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
-
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
