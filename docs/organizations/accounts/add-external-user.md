@@ -42,6 +42,9 @@ In this article, learn how to invite external users to your organization, if you
 
 * The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
+> [!TIP]
+> We recommend using a different email/UPN for your personal and business accounts, rather than using the same, even though it's allowed. This will eliminate the challenge of disambiguating between your business and personal accounts when the email/UPN is the same.
+
 ## Invite external user
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
