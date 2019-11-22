@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -27,14 +27,14 @@ In this article, learn how to invite external users to your organization, if you
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
+#### [Preview page](#tab/preview-page) 
+
+   ![External guest access turned on](_img/add-external-user/guest-access-preview.png)
+
 #### [Current page](#tab/current-page)
 
    >[!div class="mx-imgBorder"]
    >![External guest access](_img/add-external-user/guest-access.png)
-
-#### [Preview page](#tab/preview-page) 
-
-   ![External guest access turned on](_img/add-external-user/guest-access-preview.png)
 
 * * *
 
