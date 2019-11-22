@@ -63,7 +63,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
   inputs:
     buildType: 'specific'
     project: 'FabrikamFiber'
-    pipelineId: 12
+    pipeline: 12
     buildVersionToDownload: 'latest'
 ```
 
@@ -75,7 +75,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
   inputs:
     buildType: 'specific'
     project: 'FabrikamFiber'
-    pipelineId: 12
+    pipeline: 12
     buildVersionToDownload: 'latestFromBranch'
     branchName: 'refs/heads/master'
     tags: 'testTag'
@@ -91,8 +91,9 @@ Use this task in a build or release pipeline to download pipeline artifacts from
     artifact: 'WebApp'
     targetPath: $(Build.SourcesDirectory)/bin
     project: 'FabrikamFiber'
-    pipelineId: 12
+    pipeline: 12
     buildVersionToDownload: 'specific'
+    pipelineId: 40
 ```
 
 ## Q&A
