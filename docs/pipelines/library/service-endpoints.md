@@ -506,21 +506,24 @@ For an RBAC disabled cluster, a ServiceAccount is created in the chosen namespac
 The following command can be used to fetch Server URL - 
 
 ```
-kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}'
+kubectl config view --minify -o 'jsonpath={.clusters[0].cluster.server}'
 ```
 For fetching Secret object required to connect and authenticate with the cluster, the following sequence of commands need to be run -
 
 ```
-kubectl get serviceAccounts <service-account-name> -n <namespace> -o='jsonpath={.secrets[*].name}'
+kubectl get serviceAccounts <service-account-name> -n <namespace> -o 'jsonpath={.secrets[*].name}'
 ```   
 
 The above command fetches the name of the secret associated with a ServiceAccount. The output of the above command is to be substituted in the following command for fetching Secret object - 
 
 ```
-kubectl get secret <service-account-secret-name> -n <namespace> -o json
+kubectl get secret <service-account-secret-name> -n <namespace> -o yaml
 ```
 
-Copy and paste the Secret object fetched in JSON form into the Secret text-field.
+Copy and paste the Secret object fetched in YAML form into the Secret text-field.
+
+> [!NOTE]
+> When using the service account option, [ensure that a RoleBinding exists](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#kubectl-create-rolebinding), which grants permissions in the `edit` `ClusterRole` to the desired service account. This is needed so that the service account can be used by Azure Pipelines for creating objects in the chosen namespace.
 
 **Kubeconfig option**
 
