@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/08/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -39,7 +39,7 @@ To change your organization URL, you need at least Basic access and organization
 
    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if desired.
+3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if wanted.
 
    ![Rename you organization](_img/rename-vso-organization/rename-organization-new.png)
 
@@ -49,7 +49,7 @@ To change your organization URL, you need at least Basic access and organization
 
 Your organization is renamed.
 
-## Q: If I change the organization name, can I switch back? Is the toggle 2-way?
+## Q: If I change the organization name, can I switch back? Is the toggle two way?
 
-A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn the new URL off - then, you will go back to using old URL format.  
+A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.  
 
