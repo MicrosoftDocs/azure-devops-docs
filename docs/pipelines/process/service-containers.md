@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: dakale
-author: dakale
+ms.author: jukullam
+author: juliakm
 ms.date: 01/14/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Service Containers

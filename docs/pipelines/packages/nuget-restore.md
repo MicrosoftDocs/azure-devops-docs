@@ -7,9 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: amullans
+ms.author: phwilson
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
+author: chasewilson
 ---
 
 # Restore Package Management NuGet packages in Azure Pipelines
