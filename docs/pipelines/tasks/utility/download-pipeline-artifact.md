@@ -61,10 +61,10 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download artifacts from a specific pipeline.
 - task: DownloadPipelineArtifact@2
   inputs:
-    buildType: 'specific'
+    source: 'specific'
     project: 'FabrikamFiber'
     pipeline: 12
-    buildVersionToDownload: 'latest'
+    runVersion: 'latest'
 ```
 
 ### Download artifacts from a specific branch
@@ -73,10 +73,10 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download artifacts from a specific branch with a tag
 - task: DownloadPipelineArtifact@2
   inputs:
-    buildType: 'specific'
+    source: 'specific'
     project: 'FabrikamFiber'
     pipeline: 12
-    buildVersionToDownload: 'latestFromBranch'
+    runVersion: 'latestFromBranch'
     branchName: 'refs/heads/master'
     tags: 'testTag'
 ```
@@ -87,12 +87,12 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 # Download an artifact named 'WebApp' from a specific build run to 'bin' in $(Build.SourcesDirectory)
 - task: DownloadPipelineArtifact@2
   inputs:
-    buildType: 'specific'
+    source: 'specific'
     artifact: 'WebApp'
-    targetPath: $(Build.SourcesDirectory)/bin
+    path: $(Build.SourcesDirectory)/bin
     project: 'FabrikamFiber'
     pipeline: 12
-    buildVersionToDownload: 'specific'
+    runVersion: 'specific'
     pipelineId: 40
 ```
 
