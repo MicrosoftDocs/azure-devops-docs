@@ -399,23 +399,23 @@ The following table describes each of the property items specified in the config
 <th>Default/Example</th>
 </tr>
 <tr>
-<td>consumesLinkName</td>
-<blockquote>Specifies the link type used to create the link from producer to consumer.  </blockquote>
+<td>consumesLinkName
+<blockquote>Specifies the link type used to create the link from producer to consumer.  </blockquote></td>
 <td>System.LinkTypes.Dependency-Reverse</td>
 </tr>
 <tr>
-<td>producesLinkName</td>
-<blockquote>Specifies the link type used to create the link from consumer to producer. </blockquote>
+<td>producesLinkName
+<blockquote>Specifies the link type used to create the link from consumer to producer. </blockquote></td>
 <td>System.LinkTypes.Dependency-Forward</td>
 </tr>
 <tr>
-<td>queryFields</td>
-<blockquote> </blockquote>
+<td>queryFields
+<blockquote> </blockquote></td>
 <td>Default: <pre>{}</pre></td>
 </tr>
 <tr>
-<td>dependencyWorkItemTypes</td>
-<blockquote>Specifies the work item types that participate in dependency tracking. From the Create dependency dialog, only those work item types listed can be created.  </blockquote>
+<td>dependencyWorkItemTypes
+<blockquote>Specifies the work item types that participate in dependency tracking. From the Create dependency dialog, only those work item types listed can be created.  </blockquote></td>
 <td>Default: <pre>
 [  
   "Epic",  
@@ -434,8 +434,8 @@ The following table describes each of the property items specified in the config
 </td>
 </tr>
 <tr>
-<td>selectedDependencyWorkItemTypes</td>
-<blockquote>Restricts the work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. </blockquote>
+<td>selectedDependencyWorkItemTypes
+<blockquote>Restricts the work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. </blockquote></td>
 <td>Default: <pre>Any</pre><br/>
 <p>To restrict the work item types to just Epics and Features, specify:</p> 
 <pre>
@@ -446,8 +446,8 @@ The following table describes each of the property items specified in the config
 </td>
 </tr>
 <tr>
-<td>selectedReleases</td>
-<blockquote>Restricts the focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied.  </blockquote>
+<td>selectedReleases
+<blockquote>Restricts the focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied.  </blockquote></td>
 <td>Default: <pre>[]</pre><br/>
 <p>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:</p> 
 <pre>[  
@@ -457,8 +457,8 @@ The following table describes each of the property items specified in the config
 </td>
 </tr>
 <tr>
-<td>workItemCategoriesAndColors</td>
-<blockquote>Specifies the colors used to represent work items based on their category and workflow state. </blockquote>
+<td>workItemCategoriesAndColors
+<blockquote>Specifies the colors used to represent work items based on their category and workflow state. </blockquote></td>
 <td>Default: <pre>
 {
   "Proposed": {
@@ -484,8 +484,8 @@ The following table describes each of the property items specified in the config
 }</pre></td>
 </tr>
 <tr>
-<td>workItemDislayStatesAndDisplayColors</td>
-<blockquote>Maps the workflow states to colors used to display them. </blockquote>
+<td>workItemDislayStatesAndDisplayColors
+<blockquote>Maps the workflow states to colors used to display them. </blockquote></td>
 <td>Default: <pre>
 {  
   "New": {  
@@ -527,33 +527,33 @@ The following table describes each of the property items specified in the config
 <p>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </p>
 </td>
 </tr>
-<td>riskAssessementValues</td>
-<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#risk">Risk</a> field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. </blockquote>
+<td>riskAssessementValues
+<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#risk">Risk</a> field values. The Risk field specifies a subjective rating of the relative uncertainty around the successful completion of a user story. It is defined for the Agile process, but can be added to work item types used in other processes. </blockquote></td>
 <td>Default: <pre>["1-High", "2-Medium", "3-Low"]</pre></td>
 </tr>
 <tr>
-<td>releases</td>
-<blockquote> </blockquote>
+<td>releases
+<blockquote> </blockquote></td>
 <td>Default: <pre> </pre></td>
 </tr>
 <tr>
-<td>partnerAccounts</td>
-<blockquote> </blockquote>
+<td>partnerAccounts
+<blockquote> </blockquote></td>
 <td>Default: <pre> </pre></td>
 </tr>
 <tr>
-<td>timelineEnabled</td>
-<blockquote>Enables or disables the Timeline view.</blockquote>
+<td>timelineEnabled
+<blockquote>Enables or disables the Timeline view.</blockquote></td>
 <td>Default: <pre>true</pre></td>
 </tr>
 <tr>
-<td>newDependencyButtonEnabled</td>
-<blockquote>Enables or disables the **New Dependency** link to create a new linked dependency.</blockquote>
+<td>newDependencyButtonEnabled
+<blockquote>Enables or disables the **New Dependency** link to create a new linked dependency.</blockquote></td>
 <td>Default: <pre>true</pre></td>
 </tr>
 <tr>
-<td>crossAccountConfigs</td>
-<blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </blockquote>
+<td>crossAccountConfigs
+<blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </blockquote></td>
 <td>Default: <pre>
 {"crossAccountDependencyEnabled": true,  
 "crossAccountDependencyToggleDefaultState": false}</pre> 
@@ -565,13 +565,13 @@ The following table describes each of the property items specified in the config
 </td>
 </tr>
 <tr>
-<td>PriorityValues</td>
-<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#priority">Priority</a> field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   </blockquote>
+<td>priorityValues
+<blockquote>Specifies the <a href="../queries/planning-ranking-priorities.md#priority">Priority</a> field values. The Priority field specifies a subjective rating of a bug, issue, task, or user story as it relates to the business. It is defined for most backlog work item types and processes, but can be added to work item types used in other processes.   </blockquote></td>
 <td>Default: <pre>["0","1","2","3","4","(blank)"]</pre></td>
 </tr>
 <tr>
-<td>defaultColumns</td>
-<blockquote>Specifies the field columns and order used to display dependency lists. </blockquote>
+<td>defaultColumns
+<blockquote>Specifies the field columns and order used to display dependency lists. </blockquote></td>
 <td>Default: <pre>
 [
   "Id",
@@ -583,18 +583,18 @@ The following table describes each of the property items specified in the config
 ]</pre></td>
 </tr>
 <tr>
-<td>riskAnalysisEnabled</td>
-<blockquote>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</blockquote>
+<td>riskAnalysisEnabled<
+<blockquote>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</blockquote></td>
 <td>Default: <pre>False</pre></td>
 </tr>
 <tr>
-<td>riskAssessmentValues</td>
-<td> </td>
+<td>riskAssessmentValues
+<blockquote> </blockquote></td>
 <td>Default: <pre>[]</pre></td>
 </tr>
 <tr>
-<td>riskGraphConfig</td>
-<blockquote>Maps the workflow States to one of the three Risk areas displayed on the Graph: <code>atRisk</code> is Red, <code>nuetral</code> is Gray, and <code>onTrack</code> is Green.  </blockquote>
+<td>riskGraphConfig
+<blockquote>Maps the workflow States to one of the three Risk areas displayed on the Graph: <code>atRisk</code> is Red, <code>nuetral</code> is Gray, and <code>onTrack</code> is Green.  </blockquote></td>
 <td>Default: 8
 <pre>
 {  
@@ -613,8 +613,8 @@ The following table describes each of the property items specified in the config
 }</pre>
 <p>Add or remove workflow states used in work item types participating in dependency tracking.</p></td>
 </tr>
-<td>iterationDepth</td>
-<blockquote>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </blockquote>
+<td>iterationDepth
+<blockquote>Specifies the hierarchical depth of Iteration Paths that the Dependency Tracker queries to build the Timeline view. </blockquote></td>
 <td>Default: 8<p>A depth of 3 would correspond to: Fabrikam/Release 1/Sprint 20. </p></td>
 </tr>
 </tbody>
