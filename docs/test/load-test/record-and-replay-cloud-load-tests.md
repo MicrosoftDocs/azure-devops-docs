@@ -76,7 +76,7 @@ Edge, Internet Explorer, or
 [Firefox](https://www.mozilla.org/firefox/new/). For example, 
 [this video](https://msdnshared.blob.core.windows.net/media/2016/05/HARCreationVideo.mp4)
 shows how to create an HTTP Archive with different browsers and with 
-[Fiddler](http://www.telerik.com/fiddler).
+[Fiddler](https://www.telerik.com/fiddler).
  
 ## Create an HTTP Archive file
 
@@ -118,7 +118,7 @@ using your browser.
    ![Saving the HTTP traffic as a .har file](_img/record-and-replay-cloud-load-tests/02-save-as-har.png)
 
    You can also create an HTTP Archive using tools other
-   than a browser. For example, [Fiddler](http://www.telerik.com/fiddler)
+   than a browser. For example, [Fiddler](https://www.telerik.com/fiddler)
    is a popular tool for viewing and troubleshooting traffic. 
    Use Fiddler to record traffic in the same way and export sessions 
    as an HTTP Archive.
@@ -209,7 +209,7 @@ The **Logs** section gives you access to logs from all of the load-generating ag
 in your test are failing, these logs will help you figure out what went wrong. The test logs are 
 available in HTTP Archive (**.har**) format, the same format as you used to record the user scenario 
 and create the test. You can download these logs and view them in a HAR viewer such as 
-[Fiddler](http://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
+[Fiddler](https://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
 or any other viewer that you prefer. You can then inspect the details of each request 
 and its response in order to troubleshoot any failures in your test.
 

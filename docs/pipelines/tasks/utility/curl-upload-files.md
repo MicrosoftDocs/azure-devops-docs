@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to use [cURL](http://curl.haxx.se/) to upload files with supported protocols
+Use this task in a build or release pipeline to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
 such as FTP, FTPS, SFTP, HTTP, and more.
 
 ## Demands
@@ -103,7 +103,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Where can I learn FTP commands?
 
-[List of raw FTP commands](http://www.nsftools.com/tips/RawFTP.htm)
+[List of raw FTP commands](https://www.nsftools.com/tips/RawFTP.htm)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
