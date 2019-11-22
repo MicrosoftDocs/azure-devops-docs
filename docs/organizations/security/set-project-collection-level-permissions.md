@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2019
+ms.date: 11/21/2019
 ---
 
 # Set permissions at the project- or collection-level
@@ -82,12 +82,12 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 2. Choose **Project settings** and then **Permissions**.
 
-	![Choose Project settings, and then Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
+	![Choose Project settings, and then Permissions](_img/permissions/open-project-settings-permissions-preview.png)
 
 3. Choose **Project Administrators** group, **Members**, and then **Add**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Security, Add member](_img/project-collection/project-admin-members-add-s154.png) 
+	> ![Project Settings > Permissions, Add member](_img/project-collection/project-admin-members-add-s154.png) 
 
 4. Enter the name of the user account into the text box and then select from the match that appears. You can enter several identities recognized by the system into the **Add users and/or groups** box. The system automatically searches for matches. Choose the matches that meet your choices. 
 
