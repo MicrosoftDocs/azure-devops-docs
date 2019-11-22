@@ -1,68 +1,47 @@
 ---
-title: Project, collection, and organization settings
-titleSuffix: Azure DevOps & TFS
+title: Configure settings for projects, collections, organizations
+titleSuffix: Azure DevOps
+ms.custom: seodec18
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 07/27/2018
+ms.date: 05/06/2019
 ---
 
-# All settings 
+# DevOps Settings
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. For a comprehensive index of all configurable settings, see [About user, team, project, and collection-level settings](about-settings.md). 
+Most DevOps settings are made at the project-level. You configure agent and deployment pools, and parallel jobs for many projects at the organization or collection level. For a comprehensive index of all configurable settings, see [About user, team, project, and collection-level settings](about-settings.md).
 
-For articles specific to teams, projects, organizations, and billing, see [Scale & configure teams](scale/index.md), [Manage projects](../projects/index.md), [Manage organizations](../accounts/index.md), and [Billing](../billing/index.md).
+## Pipelines (Build and Release)
 
-## 5-minute quickstarts
-
-- [Get started as an administrator](../../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)
-- [Set area paths](set-area-paths.md)
-- [Set iteration paths or sprints](set-iteration-paths-sprints.md) 
-- [Add users to a project or team](../security/add-users-team-project.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
-- [Add a team administrator](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Agent pools & queues](../../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Service endpoints](../../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Retention & limits](../../pipelines/policies/retention.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Deployment pools & groups](../../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
 
-## Tutorials
+## Repos (Code)
 
-- [Add and manage users](../accounts/add-organization-users.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
-- [Change individual permissions](../security/change-individual-permissions.md) 
-- [Grant or restrict permissions to select tasks](../security/restrict-access.md) 
-- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md) 
-- [Customize a project](./work/customize-process.md) 
-
-
-## Concepts 
-
-- [Area & iteration paths (aka sprints)](about-areas-iterations.md) 
-- [Teams & Agile tools](about-teams-and-settings.md) 
-- [Notifications](../../notifications/about-notifications.md)   
-- [Process customization](./work/inheritance-process-model.md)        
+- [Create & manage Git repositories]( ../../git/create-new-repo.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Manage Git branch policies](../../git/branch-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Manage repository permissions](../security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
+- [Add TFVC Check-In Policies](../../tfvc/add-check-policies.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
 
-## How-to guides
+## Test
 
-- [Set team defaults](set-team-defaults.md)    
-- [Manage teams and configure team tools](manage-teams.md)   
+- [Set test retention policies](../../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json) 
 
+## Audit
 
-## Reference
-- [Default permissions and access](../security/permissions-access.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
-- [Manage teams and configure team tools](../../organizations/settings/manage-teams.md?toc=/azure/devops/organizations/settings/toc.json&bc=/azure/devops/organizations/settings/breadcrumb/toc.json)  
+- [Access, export, and filter audit logs](azure-devops-auditing.md)
 
 
-## Resources
-
-- [Web portal navigation](../../project/navigation/index.md) 
-- [Manage projects](../projects/index.md) 
-- [Security & identity](../security/index.md) 
-- [Manage Extensions (Marketplace)](../../marketplace/index.md) 
-- [Service hooks](../../service-hooks/index.md) 
- 

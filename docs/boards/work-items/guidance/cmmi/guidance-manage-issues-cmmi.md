@@ -1,13 +1,14 @@
 ---
 title: CMMI process guidance, Manage issues  
-titleSuffix: Azure Boards and TFS
+titleSuffix: Azure Boards
 description: Use the issue work item to help you to track problems with the project plan and its activities and tasks  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4f90afe9-9748-42e9-9117-e98ee6543417
 ms.topic: conceptual
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
@@ -54,7 +55,7 @@ You can use the issue work item to help you track problems with the project plan
  If the issue has not been successfully resolved, rework the corrective action tasks, and assign them to suitable personnel for resolution. Reconsider the priority of the issue, and consider raising it to expedite resolution and to avoid additional delay.  
   
 ## Additional resources  
- For more information about SCAMPI appraisals, see the following Web page: [Software Engineering Institute](http://go.microsoft.com/fwlink/?LinkId=179026).  
+ For more information about SCAMPI appraisals, see the following Web page: [Software Engineering Institute](https://go.microsoft.com/fwlink/?LinkId=179026).  
   
 ## Related articles
  [Fields that track bugs, issues, and risks (CMMI)](guidance-bugs-issues-risks-field-reference-cmmi.md)

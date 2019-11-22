@@ -1,7 +1,8 @@
-- name: Azure DevOps & TFS
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
+    items: 

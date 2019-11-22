@@ -1,22 +1,25 @@
 ---
-title: Invite external users
-titleSuffix: Azure DevOps
-description: Security and data access considerations when you add an external or outside user
+title: About inviting external users
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Security and data access considerations when you add an external or outside user to Azure DevOps
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/10/2018
-monikerRange: 'vsts'
+ms.date: 12/06/2018
+monikerRange: 'azure-devops'
 ---
 
-# Invite external users to Azure DevOps
+# About inviting external users to Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+Learn about security and data access considerations when you're adding guest users to Azure DevOps.
 
 A project is a container and security boundary for your software development assets: work items, code, builds, and so on. When you add someone as a member of a project, you're also trusting that person with additional privileges. A project member has access to organization-level resources and additional groups (or scopes) beyond the project. If someone isn't already a member of your organization, when you add them to a project, you implicitly grant them additional access.
 
@@ -30,7 +33,7 @@ Project members have access to resources beyond the specific project. Those reso
 
 * Information about other members, including their email address and other contact details that's hidden from non-members.
 * The **Settings** area, including security groups and permissions.
-* All installed extensions, including paid extensions (if you assign a license).
+* All installed extensions.
 * [Process](../settings/work/manage-process.md) metadata from all processes in the organization, including the work item types, its fields, and picklist items. Picklist items can show sensitive information like release dates, as shown in this example:
 
    ![Edit the private release dates field](../projects/_img/edit-field-release-in-feature.png)
@@ -43,5 +46,5 @@ These resources and groups are required for the proper functioning of a member o
 
 ### Related articles
 
-* [Add external users](add-external-user.md)
-* [Add team members](add-team-members.md)
+* [Add external users to Azure DevOps](add-external-user.md)
+* [Add members to projects in Azure DevOps](add-team-members.md)

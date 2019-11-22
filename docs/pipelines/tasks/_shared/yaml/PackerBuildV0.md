@@ -1,6 +1,6 @@
 ```YAML
-# Build Machine Image
-# Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
+# Build machine image
+# Build a machine image using Packer, which may be used for Azure Virtual machine scale set deployment
 - task: PackerBuild@0
   inputs:
     #templateType: 'builtin' # Options: builtin, custom
@@ -18,6 +18,6 @@
     deployScriptPath: 
     #deployScriptArguments: # Optional
     #additionalBuilderParameters: '{}' # Optional
-    #skipTempFileCleanupDuringVMDeprovision: # Optional
+    #skipTempFileCleanupDuringVMDeprovision: true # Optional
     #imageUri: # Optional
 ```

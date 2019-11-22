@@ -1,27 +1,30 @@
 ---
 title: Gradle build and release task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Gradle build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B34A3A3D-C239-4036-AB3C-663FDDCD63C4
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Build: Gradle 
- 
+# Gradle task
+
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/gradle.png) Build using a Gradle wrapper script
+Use this task in a build or release pipeline to build using a Gradle wrapper script.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -35,18 +38,18 @@ monikerRange: '>= tfs-2015'
 </thead>
 <tr>
 <td>Gradle Wrapper</td>
-<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
-<p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p></td>
+<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the <code>gradlew.bat</code> wrapper. Agents on Linux or macOS can use the <code>gradlew</code> shell script.</p>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_wrapper.html" data-raw-source="[The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)">The Gradle Wrapper</a>.</p></td>
 </tr>
 <tr>
 <td>Options</td>
 <td><p>Specify any command line options you want to pass to the Gradle wrapper.</p>
-<p>See [Gradle Command Line](https://docs.gradle.org/current/userguide/gradle_command_line.html).</p></td>
+<p>See <a href="https://docs.gradle.org/current/userguide/gradle_command_line.html" data-raw-source="[Gradle Command Line](https://docs.gradle.org/current/userguide/gradle_command_line.html)">Gradle Command Line</a>.</p></td>
 </tr>
 <tr>
 <td>Tasks</td>
-<td><p>The task(s) for Gradle to execute. A list of tasks can be taken from `gradlew tasks` issued from a command prompt. </p>
-<p>See [Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html).</p></td>
+<td><p>The task(s) for Gradle to execute. A list of task names should be separated by spaces and can be taken from <code>gradlew tasks</code> issued from a command prompt. </p>
+<p>See <a href="https://docs.gradle.org/current/userguide/tutorial_using_tasks.html" data-raw-source="[Gradle Build Script Basics](https://docs.gradle.org/current/userguide/tutorial_using_tasks.html)">Gradle Build Script Basics</a>.</p></td>
 </tr>
 <tr>
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
@@ -57,7 +60,7 @@ monikerRange: '>= tfs-2015'
 </tr>
 <tr>
 <td>Test Results Files</td>
-<td>Test results files path.  Wildcards can be used.  For example, ```**/TEST-*.xml``` for all xml files whose name starts with TEST-."</td>
+<td>Test results files path.  Wildcards can be used.  For example, <code><em>*/TEST-</em>.xml</code> for all xml files whose name starts with TEST-.&quot;</td>
 </tr>
 <tr>
 <td>Test Run Title</td>
@@ -94,24 +97,29 @@ monikerRange: '>= tfs-2015'
 <tr>
 <td>Run SonarQube Analysis</td>
 <td>Select if you want to run a SonarQube analysis.
-See [The Gradle build task now supports SonarQube analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/).
+See <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/" data-raw-source="[The Gradle build task now supports SonarQube analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis/)">The Gradle build task now supports SonarQube analysis</a>.
 </td>
 </tr>
 <tr>
 <td>Run PMD Analysis</td>
-<td>Select if you want to perform a [PMD static analysis](https://pmd.github.io/).
-A build result page for each project is shown on the **Artifacts** tab of the completed build.
-See [Gradle build task now also supports PMD analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/).
+<td>Select if you want to perform a <a href="https://pmd.github.io/" data-raw-source="[PMD static analysis](https://pmd.github.io/)">PMD static analysis</a>.
+A build result page for each project is shown on the <strong>Artifacts</strong> tab of the completed build.
+See <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/" data-raw-source="[Gradle build task now also supports PMD analysis](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/29/gradle-build-task-now-also-supports-pmd-analysis/)">Gradle build task now also supports PMD analysis</a>.
 </td>
 </tr>
 <tr>
 <td>Run Checkstyle Analysis</td>
-<td>Select if you want to perform a [Checkstyle static analysis](http://checkstyle.sourceforge.net)
+<td>Select if you want to perform a <a href="http://checkstyle.sourceforge.net" data-raw-source="[Checkstyle static analysis](http://checkstyle.sourceforge.net)">Checkstyle static analysis</a>
 The build summary reports the number of issues found by Checkstyle. Detailed issue logs are available under the build Artifact tab of the build summary.
 If the Checkstyle analysis is customized, the task only attempts to find the reports and produce a summary.
 </td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
@@ -120,7 +128,7 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -128,22 +136,22 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 ### How do I generate a wrapper from my Gradle project?
 
 The Gradle wrapper allows the build agent to download and configure the exact Gradle environment that is 
-   checked into the repoistory without having any software configuration on the build agent itself other than the 
+   checked into the repository without having any software configuration on the build agent itself other than the 
    JVM.
 
 1. Create the Gradle wrapper by issuing the following command from the root project directory where your 
-build.gradle resides:
+   build.gradle resides:
 
-  `jamal@fabrikam> gradle wrapper`
+   `jamal@fabrikam> gradle wrapper`
 
-0. Upload your Gradle wrapper to your remote repository.
-   
+2. Upload your Gradle wrapper to your remote repository.
+
    There is a binary artifact that is generated by the gradle wrapper ( located at `gradle/wrapper/gradle-wrapper.jar` ).
    This binary file is small and doesn't require updating. If you need to change the Gradle 
    configuration run on the build agent, you update the `gradle-wrapper.properties`.
-   
+
    The repository should look something like this:
-   
+
 ```
 |-- gradle/
     `-- wrapper/
@@ -163,7 +171,7 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
 ::: moniker-end
 

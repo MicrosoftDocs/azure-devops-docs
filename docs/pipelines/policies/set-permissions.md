@@ -1,21 +1,61 @@
 ---
-title: Set build and release permissions
-titleSuffix: Azure Pipelines & TFS
-description: Grant or restrict access to build-release, library, task group, and variable group functions in Azure Pipelines or Team Foundation Server
+title: Add users to Azure Pipelines
+ms.custom: seodec18
+description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 02/12/18
-monikerRange: '>= tfs-2017 < vsts'
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
+ms.date: 05/02/2019
+monikerRange: '>= tfs-2015'
 ---
 
-# Set build and release permissions
+# Add users to Azure Pipelines
+
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
+::: moniker range="> tfs-2018"
+
+If your teammates want to edit pipelines, then have an administrator add them to your project:
+
+1. Make sure you are a member of the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+
+2. Go to your project summary: `https://dev.azure.com/{your-organization}/{your-project}`
+
+3. Invite the teammates to join the project.
+
+   > [!div class="mx-imgBorder"]
+   > ![Invite button](_img/project-invite-button.png)
+   > 
+   > [!div class="mx-imgBorder"]
+   > ![Add users to project dialog box](_img/project-invite-dialog-box.png)
+
+4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
+
+## Confirm that contributors have pipeline permissions 
+
+If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
+
+1. Make sure you are a member of the Build Administrators group or the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
+
+2. Open the build security dialog box.
+
+   > [!div class="mx-imgBorder"]
+   > ![Security menu item for all builds](_img/security-menu-item.png)
+
+3. On the permissions dialog box, make sure the following permissions are set to Allow.
+
+   > [!div class="mx-imgBorder"]
+   > ![Permissions dialog box for all builds in the project](_img/builds-permissions-dialog-box.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md).
 
@@ -27,17 +67,17 @@ In addition to permission assignments, you manage security for several resources
 
    ![Open the Security dialog for all build pipelines](_img/set-build-release-permissions/open-all-build-definitions-security.png)
 
-  To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
+   To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
 
    <img src="_img//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
-1. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
+2. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny.
 
    For example, here we change the permission for Edit build pipeline for the Contributors group to Allow.
 
    <img src="_img/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
-1. Save your changes.
+3. Save your changes.
 
 ## Set permissions for release pipelines
 
@@ -60,7 +100,9 @@ In addition to permission assignments, you manage security for several resources
 <a id="variable-group" />
 <a id="library" />
 
-::: moniker range=">= tfs-2017"
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
@@ -91,9 +133,9 @@ For example, here we show how to set the security for variable groups.
 
 ::: moniker-end
 
-<a id="task-group" />
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
-::: moniker range=">= tfs-2017"
+<a id="task-group" />
 
 ## Manage task group permissions
 
@@ -118,6 +160,8 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker-end
 
+::: moniker range="<= tfs-2018"
+
 <a id="collection-level" /> 
 
 ## Set collection-level permissions to administer build resources
@@ -132,7 +176,9 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. Save your changes.
 
-::: moniker range=">= tfs-2015"
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 ## Manage permissions for agent pools and service connections
 
@@ -159,7 +205,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">= tfs-2018 <= tfs-2018"
 
 ## Manage permissions for agent pools and deployment pools  
 
@@ -188,8 +234,12 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 ::: moniker-end
 
+::: moniker range="<= tfs-2018"
+
 ## Related notes 
 
 [Default build and release permissions](../policies/permissions.md)
 - [Default permissions and access](../../organizations/security/permissions-access.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md) 
+
+::: moniker-end

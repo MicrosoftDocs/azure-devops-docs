@@ -60,7 +60,7 @@ exports.submitRequests = function() {
             //if you need to select a particular repo, put any filtering code here
             //for example...
             /*var searchIndex;
-            for (serachIndex = 0; searchIndex < result.responseBody.count; ++searchIndex) {
+            for (searchIndex = 0; searchIndex < result.responseBody.count; ++searchIndex) {
                 if (result.responseBody.value[searchIndex].project.name == "2016_10_27") {
                     repoIndex = searchIndex;
                 }

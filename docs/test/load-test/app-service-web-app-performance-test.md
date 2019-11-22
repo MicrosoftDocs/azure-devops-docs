@@ -1,20 +1,22 @@
 ---
-title: Test your Azure web app performance under load from the Azure portal
+title: Test performance from the Azure portal
 description: Run Azure web app performance tests to check how your app handles user load. Measure response time and find failures that might indicate problems.
 ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Load test with the Azure portal
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 Check your web app's performance before you launch it or deploy updates to production by running load tests. 
 That way, you can better assess whether your app is ready for release. Feel more
@@ -96,13 +98,13 @@ that represent an end-to-end user scenario by uploading a Visual
 Studio Web Test file. Some of the ways you can create a
 Visual Studio Web Test file are:
 
-* [Capture traffic using Fiddler and export as a Visual Studio Web Test file](http://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
+* [Capture traffic using Fiddler and export as a Visual Studio Web Test file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
 * [Create a load test file in Visual Studio](run-performance-tests-app-before-release.md)
 
 To upload and run a Visual Studio Web Test file:
  
 1. Follow the [steps above](#singletest) to open the **New performance test** blade.
-   In this blade, choose the CONFIGFURE TEST USING option to open the 
+   In this blade, choose the CONFIGURE TEST USING option to open the 
    **Configure test using** blade.  
 
    ![Opening the Configure load testing blade](_img/app-service-web-app-performance-test/multiple-01-authoring-blade.png)

@@ -171,7 +171,7 @@
           },
           "visibleRule": {
             "type": "string",
-            "description": "Allow's you to define a rule which dictates when the input will be visible to a user, for example \"variableName = value\""
+            "description": "Allows you to define a rule which dictates when the input will be visible to a user, for example \"variableName = value\""
           },
           "properties": {
             "type": "object",

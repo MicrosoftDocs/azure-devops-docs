@@ -2,4 +2,5 @@
 ms.topic: include
 ---
 
-**Previous navigation** isn't supported for this feature. Choose **New navigation** for guidance.
+**Previous navigation** isn't supported for this version of the web portal. Choose the **New navigation** tab for guidance.
+ 

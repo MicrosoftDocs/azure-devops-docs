@@ -1,12 +1,12 @@
 ```YAML
 # Xamarin.iOS
-# Build an iOS app with Xamarin on macOS.
+# Build an iOS app with Xamarin on macOS
 - task: XamariniOS@2
   inputs:
     #solutionFile: '**/*.sln' 
     #configuration: 'Release' 
     #clean: false # Optional
-    packageApp: 
+    #packageApp: true 
     #buildForSimulator: false # Optional
     #runNugetRestore: false 
     #args: # Optional

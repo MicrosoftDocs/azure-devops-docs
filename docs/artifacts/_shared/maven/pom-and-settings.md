@@ -2,79 +2,44 @@
 ms.topic: include
 ---
 
-To talk to Azure DevOps Services feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
+To talk to Azure Artifact feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
 
-::: moniker range="vsts"
+   ::: moniker range=">= azure-devops-2019"
 
-1. From the **Azure Artifacts** page, click _Connect to Feed_
+1. From the **Azure Artifacts** page, select **Connect to Feed**.
+   
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button on the upper right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
+   > 
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed button in the upper-right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
-    > 
+   ::: moniker-end
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
-    
-    ---
+   ::: moniker range=">= tfs-2018 < azure-devops-2019"
 
-2. Copy the "registry" text:
+2. From the **Packages** page, select **Connect to Feed**.
 
-    # [New navigation](#tab/new-nav)
-    > [!div class="mx-imgBorder"] 
-    >![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
-    > 
+   ![Connect to feed button on the upper right of the page](../_img/connect-to-feed.png)
 
-    # [Previous navigation](#tab/previous-nav)
-    ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
+   ::: moniker-end
 
-    ---
-    
-::: moniker-end
-
-::: moniker range=">= tfs-2018 < vsts"
-
-1. From the **Packages** page, click _Connect to Feed_
-    ![Connect to feed button in the upper-right of the page](../_img/connect-to-feed.png)
-2. Copy the "registry" text:
-    ![Connect to feed from Azure Artifacts](../_img/connect-to-feed-npm-registry.png)
-
-::: moniker-end
-
-1. Open the **Maven** tab, choose **Generate Maven credentials**, and copy the generated credentials. (images below)
+3. Open the **Maven** tab under the maven header.
 
    * Maven pulls credentials from your **settings.xml** file.
    
-   * On Linux, the file path is usually `"${user.home}/.m2/settings.xml"`
+   * On Linux, the file path is usually `"${user.home}/.m2/settings.xml"`.
    
-   * On macOS, the file path is usually `"~/.m2/settings.xml"`
+   * On macOS, the file path is usually `"~/.m2/settings.xml"`.
    
-   * On Windows, the file path is usually `"%USERPROFILE%/.m2/settings.xml"`
+   * On Windows, the file path is usually `"%USERPROFILE%/.m2/settings.xml"`.
    
    * If the file doesn't exist, create one now.
 
-1. Inside the `<settings>` and `<servers>` elements in the file, paste the credentials you copied in **Step 3** above.
+4. If you haven't installed Maven on your machine, you can select **Get the tools** to download and install it.
 
-**Sample settings.xml:**
+5. Follow the **Project setup** section including generating a personal access token.
 
-```xml
-<settings>
-  <servers>
-    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
-    <server>
-      <id>dev.azure.com-yourFeedName</id>
-      <configuration>
-        <httpHeaders>
-          <property>
-            <name>Authorization</name>
-            <!--The generated token expires on or before 7/19/2017-->
-            <value>Basic Y2Fqb...</value>
-          </property>
-        </httpHeaders>
-      </configuration>
-    </server>
-  </servers>
-</settings>
-```
+   > [!div class="mx-imgBorder"] 
+   >![Set up Maven authentication](../_img/maven-azure-devops-newnav.png)
+   >
 
->**NOTE:** You can find more information about the **settings.xml** file in the [settings.xml reference](https://maven.apache.org/settings.html).
+You can find more information about the settings.xml file in the [settings.xml reference](https://maven.apache.org/settings.html).

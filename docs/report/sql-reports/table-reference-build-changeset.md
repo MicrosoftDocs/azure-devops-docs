@@ -6,11 +6,11 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2017'
-ms.date: 10/17/17
+monikerRange: '<= azure-devops-2019'
+ms.date: 10/17/2017
 ---
 
 # Build Changeset tables

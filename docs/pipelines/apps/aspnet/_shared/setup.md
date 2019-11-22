@@ -2,9 +2,9 @@
 
 ### Azure DevOps organization
 
-You'll need an Azure DevOps organization. To create one, visit [Sign up for Azure DevOps](https://visualstudio.microsoft.com/vsts/).
+You'll need an organization in Azure DevOps. To create one, visit [Sign up for Azure DevOps](https://visualstudio.microsoft.com/vsts/).
 
-You can also use Team Foundation Server (TFS) if you require the use of on-premises servers instead of Azure DevOps, and we'll show some of those details. Also see [Get Started with TFS](/tfs/server/install/get-started) for general information.
+You can also use Team Foundation Server (TFS) if you require the use of on-premises servers instead of Azure DevOps, and we'll show some of those details. Also see [Get Started with TFS](/azure/devops/server/install/get-started) for general information.
 
 ### Set up local version control and a project
 

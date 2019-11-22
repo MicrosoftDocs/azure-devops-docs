@@ -1,21 +1,21 @@
 ---
-title: How to provision agents for deployment groups
-titleSuffix: Azure Pipelines & TFS
+title: Provision agents for deployment groups
+ms.custom: seodec18
 description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # How To: Provision agents for deployment groups
 
-**Azure Pipelines | TFS 2018**
+[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -34,7 +34,7 @@ You can install the agent in any one of these ways:
 For information about agents and pipelines, see:
 
 * [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
-* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md).
+* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs.md).
 * [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="runscript"></a>
@@ -83,7 +83,7 @@ For information about agents and pipelines, see:
 
    ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Azure Pipelines subacription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    
@@ -158,7 +158,8 @@ where:
 * **Tags** is optional. A comma-separated list of tags that will be set on the agent. Tags are not case sensitive and each must be no more than 256 characters
 * **PATToken** is required. The Personal Access Token that will be used to authenticate against Azure Pipelines to download and configure the agent
 
->**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
+> [!NOTE]
+> If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
 For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 

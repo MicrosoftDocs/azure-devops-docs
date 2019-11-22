@@ -1,13 +1,13 @@
 ---
 title: VSS/References/SDK.Interfaces ContributionContext API | Extensions for Azure DevOps Services
-description: Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframed. This context provides information about how to popluate the content.
+description: Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content.
 ms.assetid: bb5238df-0af8-dc23-3da2-1ab1571b8164
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -18,11 +18,11 @@ ms.date: 08/04/2016
 Defined in vss.d.ts
 
 
-Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframed. This context provides information about how to popluate the content. 
+Model for a contribution context object which is used for contributed content provided by this service (e.g. Hubs). The content may be included in the parent DOM or iframe. This context provides information about how to populate the content. 
 
 ### Members
 
-* `containerCssClass`: string. CSS class for the container element which will host this content. Typical usage is to just supply a unique CSS class on the element, register an enhancement for that class in a TypeScript module, and reference that TypeScript module in this ContributionContent object.
+* `containerCssClass`: string. CSS class for the container element which hosts this content. Typical usage is to just supply a unique CSS class on the element, register an enhancement for that class in a TypeScript module, and reference that TypeScript module in this ContributionContent object.
 
 * `contributionData`: any. Generic property bag which individual contributions can use to pass data to the client
 

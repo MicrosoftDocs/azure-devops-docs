@@ -5,23 +5,20 @@ description: Enable the new work item form for customizing the work tracking exp
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 51A6F894-9B45-4A07-9DDB-C359C8BB4DE1
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'vsts || tfs-2017'
+monikerRange: 'tfs-2017'
 ms.date: 03/16/2017
 ---
 
 # Manage roll out of the new web form
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
+**TFS 2017**
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.
->  
-> - For users of Azure DevOps Services that use the [Inheritance process model](../organizations/settings/work/manage-process.md), the switch to the new form is automatic.
-> - For users of Azure DevOps Services that use [Hosted XML process model](../organizations/settings/work/import-process/import-process.md), an admin must [enable the new form](#enable).
 > - For on-premises TFS 2017 and later versions, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) 
 > - For TFS 2015 and earlier versions, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
 
@@ -40,9 +37,6 @@ You enable the new form from the project collection admin page.
 1. To start, choose the ![](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the project collection.  
 
 	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
-<!--- 
-	![Open admin context](../_img/icons/ALM_OpenAdminContext.png)  
- -->
 
 2. From the collection admin page, click **Enable the new work item form**. 
 
@@ -53,7 +47,6 @@ You enable the new form from the project collection admin page.
 4. Click **Create new layout** to initiate the process of transforming the WIT definitions.  
 
 	<img src="_img/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" style="border: 2px solid #C3C3C3;" />
-
 
 <!---
 You enable the new form from the project collection admin page.    
@@ -135,36 +128,36 @@ A best-effort transformation is made to maintain the field groupings and layout 
 **Transformed or added elements**  
 
 <ul>
-<li>If you have a **Layout** with ```Target=Web```, it is transformed to the **WebLayout** definition</li>
-<li>If you simply have a single **Layout** section, a new section with the **WebLayout** definition is added</li>
-<li>All parent **Tabs** are converted to a **Page**</li>
-<li>All non-nested **Groups** within a **Tab** are converted to a **Group**; if you have more than four of these groups, some are combined into a single **Group** </li>
-<li>All nested **Groups** within a **Group** remain a **Group** </li>
-<li>All **HTMLFieldControl** and **WebPageControl** elements are moved to the first **Section** within a **Page**. </li>
+<li>If you have a <strong>Layout</strong> with <code>Target=Web</code>, it is transformed to the <strong>WebLayout</strong> definition</li>
+<li>If you simply have a single <strong>Layout</strong> section, a new section with the <strong>WebLayout</strong> definition is added</li>
+<li>All parent <strong>Tabs</strong> are converted to a <strong>Page</strong></li>
+<li>All non-nested <strong>Groups</strong> within a <strong>Tab</strong> are converted to a <strong>Group</strong>; if you have more than four of these groups, some are combined into a single <strong>Group</strong> </li>
+<li>All nested <strong>Groups</strong> within a <strong>Group</strong> remain a <strong>Group</strong> </li>
+<li>All <strong>HTMLFieldControl</strong> and <strong>WebPageControl</strong> elements are moved to the first <strong>Section</strong> within a <strong>Page</strong>. </li>
 </ul>
 
 **Removed elements and attributes**  
 
 <ul>
-<li>All **Splitter** elements are removed </li>
-<li><p>All elements within the form header and **Control** elements with the following type designations are removed from the **WebLayout** section:</p>
+<li>All <strong>Splitter</strong> elements are removed </li>
+<li><p>All elements within the form header and <strong>Control</strong> elements with the following type designations are removed from the <strong>WebLayout</strong> section:</p>
 <ul>
-<li>```AttachmentsControl```</li>
-<li>```LinksControl``` </li>
-<li>```WorkItemClassificationControl```</li>
-<li>```WorkItemLogControl```</li>
+<li><code>AttachmentsControl</code></li>
+<li><code>LinksControl</code> </li>
+<li><code>WorkItemClassificationControl</code></li>
+<li><code>WorkItemLogControl</code></li>
 </ul>
-<p>They aren't required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
+<p>They aren&#39;t required as the system now manages these elements, automatically adding them to the header section area within each work item form</p>
 </li>
-<li>The following attributes are removed from each **Control** and **Group** elements:
+<li>The following attributes are removed from each <strong>Control</strong> and <strong>Group</strong> elements:
 <ul>
-<li>```ControlSpacing```</li>
-<li>```FixedWidth``` </li>
-<li>```LabelSpacing```</li>
-<li>```Margin``` </li>
-<li>```MinimumSize```</li>
-<li>```Padding```</li>
-<li>```PercentWidth``` </li>
+<li><code>ControlSpacing</code></li>
+<li><code>FixedWidth</code> </li>
+<li><code>LabelSpacing</code></li>
+<li><code>Margin</code> </li>
+<li><code>MinimumSize</code></li>
+<li><code>Padding</code></li>
+<li><code>PercentWidth</code> </li>
 </ul>
 </li>
 </ul>

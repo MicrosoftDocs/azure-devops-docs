@@ -1,14 +1,14 @@
 ---
-title: Control deployments with gates in Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
+title: Control deployments by using gates
+ms.custom: seodec18
 description: Understand gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -65,8 +65,11 @@ The following gates are available by default:
   For more details, see [HTTP REST API task](../../tasks/utility/http-rest-api.md).
 * **Query Work items**: Ensure the number of matching work items returned from a query is within a threshold.
   For more details, see [Work item query task](../../tasks/utility/work-item-query.md).
+* **Security and compliance assessment**: Assess Azure Policy compliance on resources within the scope of a
+  given subscription and resource group, and optionally at a specific resource level. For more details, see
+  [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md).
 
-You can [create your own gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
+You can [create your own gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md) with Marketplace extensions.
    
 The evaluation options that apply to all the gates you've added are:
 
@@ -106,7 +109,8 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Stages](../environments.md)
+* [Security Compliance and Assessment task](../../tasks/utility/azure-policy.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
 ## See also
@@ -116,7 +120,7 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
-* [Author custom gates](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
+* [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

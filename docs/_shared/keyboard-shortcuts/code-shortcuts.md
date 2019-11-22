@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts when working from a page under **Re
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td>![Code shortcuts](/azure/devops/_shared/_img/keyboard-shortcuts/code-shortcuts.png)</td>
+<td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/code-shortcuts.png" alt="Code shortcuts"/></td>
 <td>
 
 **Code**<br/> 

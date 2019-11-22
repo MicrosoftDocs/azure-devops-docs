@@ -1,61 +1,69 @@
 ---
-title: How to use Azure Pipe
-titleSuffix: Azure DevOps Services
+title: Use Azure Pipelines
+ms.custom: seodec18
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: douge
-ms.date: 07/06/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 11/15/2019
+monikerRange: '>= tfs-2015'
 ---
 
-# How to use Azure Pipelines
+# Use Azure Pipelines
 
-You can either use [YAML](../get-started-yaml.md) to define your pipelines or use the [visual designer](../get-started-designer.md) to do the same. 
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. 
-When you use the visual designer, you define a **build pipeline** to build and test your code, and then to publish artifacts. You also define a **release pipeline** to consume and deploy those artifacts to deployment targets.
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
-## Use Azure Pipelines with YAML
+#### [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
 
-You can configure your pipelines in a YAML file that exists alongside your code.
+You define your pipeline in a YAML file called `azure-pipelines.yml` with the rest of your app.
+
+* The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
+* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
+* A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+
+Follow these basic steps:
 
 1. Configure Azure Pipelines to use your Git repo.
-2. Edit your `azure-pipelines.yml` file to define your build.
-3. Push your code to your version control repository, this will kick off the default trigger to build and deploy, and monitor the results.
-4. Your code is now updated, built, tested, and packaged and can be deployed to any target.
+1. Edit your `azure-pipelines.yml` file to define your build.
+1. Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
+
+Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 ![Pipelines YAML intro image ](../_img/pipelines-image-yaml.png)
 
-### Benefits of using YAML
+[Create your first pipeline](../create-first-pipeline.md).
 
-* The pipeline is versioned with your code and follows the same branching structure as your code, so you get validation of your changes through code reviews in pull requests and branch build policies.
-* Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
-* If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase.
+::: moniker-end
 
-If you think the YAML workflow is best for you, take the next step by [creating your first pipeline using YAML](../get-started-yaml.md).
+::: moniker range="<= tfs-2018"
 
-## Use Azure Pipelines in the visual designer
+YAML pipelines aren't available in TFS.
 
-You can create and configure your build and release pipelines in the Azure DevOps web portal with the visual designer. 
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+
+Create and configure pipelines in the [Azure DevOps Services web portal](https://dev.azure.com/) with the classic editor.
+You define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+
+Follow these basic steps:
 
 1. Configure Azure Pipelines to use your Git repo.
-2. Use the Azure Pipelines visual designer to create  and configure your build and release pipelines.
-3. Push your code to your version control repository which triggers your pipeline, running any tasks such as building or testing code.
-5. The build creates an artifact that is used by the rest of your pipeline, running any tasks such as deploying to staging or production.
-6. Your code is now updated, built, tested, and packaged and can be deployed to any target.
+1. Use the Azure Pipelines classic editor to create and configure your build and release pipelines.
+1. Push your code to your version control repository. This action triggers your pipeline and runs tasks such as building or testing code.
+
+The build creates an artifact that's used by the rest of your pipeline to run tasks such as deploying to staging or production.
+
+Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 ![Pipelines designer intro image](../_img/pipelines-image-designer.png)
 
-     
-### Benefits of using the visual designer
+[Create your first pipeline](../create-first-pipeline.md).
 
-The visual designer is great for users that are new to the world of CI and CD.
-
-* The visual representation of the pipelines makes it easier to get started. 
-* The visual designer is located in the same hub as the build results, making it easier to switch back and forth and make changes if needed.
-
-If you think the designer workflow is best for you, take the next step by [creating your first pipeline using the visual designer](../get-started-designer.md).
-
+* * *

@@ -1,22 +1,21 @@
 ---
-title: Requirements traceability in a pipeline
-titleSuffix: Azure Pipelines & TFS
+title: Requirements traceability
 description: Link requirements, tests, and bugs to enable requirements traceability
 ms.assetid: 41F15A66-D8C2-43AA-9E38-BCED9A8D3F55
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.custom: continuous-test
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
 ms.author: vinojos
-author: vinojos
-ms.date: 08/22/2018
+author: vinodjo
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Trace test requirements
+# Requirements traceability
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 **Requirements traceability** is the ability to relate and document two or more phases of 
 a development process, which can then be traced both forward or backward from its origin.
@@ -27,7 +26,9 @@ A fundamental aspect of requirements traceability is association of the requirem
 > Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 <a name="agileteams"></a>

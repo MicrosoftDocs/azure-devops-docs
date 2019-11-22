@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts TestFailuresAnalysis API | Extensions for Azure DevOps Services
+description: Data representation of a test failures analysis.
 ms.assetid: a071376d-6809-f9dd-14be-d3a917d13835
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

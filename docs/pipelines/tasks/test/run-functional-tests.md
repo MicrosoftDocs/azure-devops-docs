@@ -1,28 +1,32 @@
 ---
-title: Azure Pipelines and TFS Build and Test - Run Functional Tests task
-titleSuffix: Azure Pipelines & TFS
+title: Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: pbora
+author: pboraMSFT
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Test: Run Functional Tests
+# Run Functional Tests task
+
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
+[Visual Studio Test](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md)
 task together with [jobs](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
@@ -32,18 +36,19 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-![icon](_img/run-functional-tests-icon.png)
-Run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
-Use this task when you want to run tests on remote machines, and you cannot run
-tests on the build machine.
+Use this task in a build or release pipeline to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+Use this task when you want to run tests on remote machines, and you cannot run tests on the build machine.
 
 ### Demands and prerequisites
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
+
 ::: moniker-end
 
 ### Arguments
@@ -64,8 +69,8 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 | **Distribute tests by number of machines** | When checked, distributes tests based on the number of machines, instead of distributing tests at the assembly level, irrespective of the container assemblies passed to the task. |
 | **Test Run Title** | Optional. A name for this test run, used to identify it for reporting and in comparison with other test runs. |
 | **Platform** | Optional. The build platform against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `x64` or `x86`<br />- If you have defined a variable for platform in your build task, use that here. |
-| **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
-| **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager (MTM). <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from MTM}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in MTM.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
+| **Configuration** | Optional. The build configuration against which the test run should be reported. Used only for reporting.<br />- If you are using the **Build - Visual Studio** template, this is automatically defined, such as `Debug` or `Release`<br />- If you have defined a variable for configuration in your build task, use that here. |
+| **Test Configurations** | Optional. A string that contains the filter(s) to report the configuration on which the test case was run. Used only for reporting with Microsoft Test Manager. <br />- Syntax: {expression for test method name(s)} **:** {configuration ID from Microsoft Test Manager}<br />- Example: `FullyQualifiedName~Chrome:12` to report all test methods that have **Chrome** in the **Fully Qualified Name** and map them to configuration ID **12** defined in Microsoft Test Manager.<br />- Use ```DefaultTestConfiguration:{Id}``` as a catch-all. |
 | **Application Under Test Machines** | A list of the machines on which the Application Under Test (AUT) is deployed, or on which a specific process such as W3WP.exe is running. Used to collect code coverage data from these machines. Use this in conjunction with the **Code Coverage Enabled** setting. The list can be a comma-delimited list of machine names or an output variable from an earlier task. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
@@ -136,12 +141,12 @@ These scenarios are supported for:
 ### More information
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
-* [Set up environments to run continuous test tasks with your builds](../../test/set-up-continuous-test-environments-builds.md)
+* [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
 * [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks
 
-* [Deploy Azure Resource Group](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
+* [Deploy Azure Resource Group](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 * [Azure File Copy](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/AzureFileCopyV1)
 * [Windows Machine File Copy](../deploy/windows-machine-file-copy.md)
 * [PowerShell on Target Machines](../deploy/powershell-on-target-machines.md)
@@ -149,7 +154,7 @@ These scenarios are supported for:
 
 ### Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -162,8 +167,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
+
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

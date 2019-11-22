@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts CoverageQueryFlags API | Extensions for Azure DevOps Services
+description: Data representation of coverage query flags.
 ms.assetid: 476ff80c-6476-0fdf-f882-3bae243851dc
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -17,6 +18,6 @@ Module path: `TFS/TestManagement/Contracts`
 
 ### Values
 
-* `Modules` If set, the Coverage.Modules property will be populated.
-* `Functions` If set, the ModuleCoverage.Functions properties will be populated.
-* `BlockData` If set, the ModuleCoverage.CoverageData field will be populated.
+* `Modules` If set, the Coverage.Modules property is populated.
+* `Functions` If set, the ModuleCoverage.Functions properties are populated.
+* `BlockData` If set, the ModuleCoverage.CoverageData field is populated.

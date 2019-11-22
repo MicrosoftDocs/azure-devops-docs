@@ -1,26 +1,27 @@
----
-title: Archived release notes for Microsoft Release Management
-titleSuffix: Azure Pipelines & TFS
+﻿---
+title: Archived release notes for Release Management
+ms.custom: seodec18
 description: Archived release for Azure Pipelines and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2013'
 ---
 
 # Archived release notes for Microsoft Release Management
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
-**NOTE**: Release Management has now been combined with the Build features
-of Azure Pipelines and Team Foundation Server (TFS) in the new 
-**Pipelines** hub. For details of new features and changes, see
-[Team Foundation Build and Release release notes](2017.md).
+> [!NOTE]
+> Release Management has now been combined with the Build features
+> of Azure Pipelines and Team Foundation Server (TFS) in the new 
+> **Pipelines** hub. For details of new features and changes, see
+> [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -28,29 +29,29 @@ of Azure Pipelines and Team Foundation Server (TFS) in the new
 The following changes, categorized by release date, were added to Release Management:
 
 * **Team Foundation Server**
- - [November 16, 2016 Update](#update-nov16)
- - [Mar 3, 2016 Update](#update-mar3-16)
- - [Feb 12, 2016 Update](#update-feb12-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [Mar 3, 2016 Update](#update-mar3-16)
+  - [Feb 12, 2016 Update](#update-feb12-16)
 * **Azure Pipelines**
- - [November 23, 2016 Update](#update-nov23-16)
- - [November 16, 2016 Update](#update-nov16)
- - [October 12, 2016 Update](#update-oct12-16)
- - [September 21, 2016 Update](#update-sep21-16)
- - [September 2, 2016 Update](#update-sep2-16)
- - [July 28, 2016 Update](#update-jul28-16)
- - [June 24, 2016 Update](#update-jun24-16)
- - [May 23, 2016 Update](#update-may23-16)
- - [April 26, 2016 Update](#update-apr26-16)
- - [April 8, 2016 Update](#update-apr8-16)
- - [March 15, 2016 Update](#update-mar15-16)
- - [February 24, 2016 Update](#update-feb24-16)
- - [February 11, 2016 Update](#update-feb11-16)
- - [December 1, 2015 Update ](#update-dec1-15)
- - [November 18, 2015 Update](#update-nov18-15)
- - [November 03, 2015 Update](#update-nov3-15)
- - [October 19, 2015 Update ](#update-oct19-15)
- - [September 21, 2015 Update ](#update-sep21-15)
- - [September 4, 2015 Update](#update-sep4-15)
+  - [November 23, 2016 Update](#update-nov23-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [October 12, 2016 Update](#update-oct12-16)
+  - [September 21, 2016 Update](#update-sep21-16)
+  - [September 2, 2016 Update](#update-sep2-16)
+  - [July 28, 2016 Update](#update-jul28-16)
+  - [June 24, 2016 Update](#update-jun24-16)
+  - [May 23, 2016 Update](#update-may23-16)
+  - [April 26, 2016 Update](#update-apr26-16)
+  - [April 8, 2016 Update](#update-apr8-16)
+  - [March 15, 2016 Update](#update-mar15-16)
+  - [February 24, 2016 Update](#update-feb24-16)
+  - [February 11, 2016 Update](#update-feb11-16)
+  - [December 1, 2015 Update](#update-dec1-15)
+  - [November 18, 2015 Update](#update-nov18-15)
+  - [November 03, 2015 Update](#update-nov3-15)
+  - [October 19, 2015 Update](#update-oct19-15)
+  - [September 21, 2015 Update](#update-sep21-15)
+  - [September 4, 2015 Update](#update-sep4-15)
 
 <a name="update-nov23-16"></a>
 ### November 23, 2016 Update (Azure Pipelines)
@@ -74,7 +75,7 @@ The maximum number of concurrent builds you can run and releases
 you can deploy at the same time is limited only by the number
 of pipelines you have.
 
-Your Azure DevOps organization includes these free amounts:
+Your organization includes these free amounts:
 
 * One free Hosted Pipeline: With this free hosted pipeline, you get
   four hours (240 minutes) per month and a maximum duration of 30
@@ -92,7 +93,7 @@ Your Azure DevOps organization includes these free amounts:
   that you can use. You can also buy more private pipelines.
 
 For more information, see
-[Concurrent build and release pipelines in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent build and release pipelines in Azure Pipelines](../../licensing/concurrent-jobs.md)
 and [Concurrent release pipelines in TFS](../../licensing/concurrent-pipelines-tfs.md).
 
 If you previously bought private agents in the Azure portal, they'll
@@ -175,7 +176,7 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img\rm-archived\release-notes-29.png)
+![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
 ### November 16, 2016 Update (Azure Pipelines, TFS 2017)
@@ -192,7 +193,7 @@ We're also announcing general availability of Release Management in Azure Pipeli
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
-[Concurrent pipelines for your builds and releases in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md)
+[Concurrent pipelines for your builds and releases in Azure Pipelines](../../licensing/concurrent-jobs.md)
 
 <a name="update-oct12-16"></a>
 ### October 12, 2016 Update (Azure Pipelines)
@@ -235,7 +236,7 @@ resources that are not in your template. By default,
 
 ![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
 
-See [Azure Resource Group Deployment Task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
+See [Azure Resource Group Deployment Task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
 <a name="oct12-clitask"></a>
 **Azure CLI task**
@@ -388,7 +389,7 @@ Two new features make it easier to deploy applications to Azure:
   and so has access to all resources within the subscription. For more details, see
   [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
- ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
+  ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
 
 * **Deployment to national Azure clouds**. Use the new **Environment** setting in an
   Azure Classic service connection to target a specific Azure cloud, including pre-defined
@@ -396,7 +397,7 @@ Two new features make it easier to deploy applications to Azure:
   For more details, see
   [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic).
 
- ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
+  ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
 
 <a name="jul28-softdelete"></a>
 **Soft delete of releases**
@@ -439,7 +440,7 @@ Two new features make it easier to work with artifacts and artifact sources:
   name of the build pipeline, you can edit the source alias to reflect the name of the
   build pipeline.
 
- For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
+  For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
 
 * A number of variables of the format Build.\* (such as Build.BuildId and Build.BuildNumber)
   are exposed for use in task parameters. When multiple sources are associated with a release,
@@ -599,7 +600,7 @@ IIS web apps and databases from Azure Pipelines and TFS.
 **Web app deployment using ARM**
 
 A new version of the **Azure Web App Deployment** task is available, called
-**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
+**[AzureRM Web App Deployment](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
 It uses MSDeploy and an Azure Resource Manager service connection connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common
@@ -660,7 +661,7 @@ to help you easily integrate your applications with
 Release Management. The SDK is available as a
 [NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/).
 Example usage for this SDK can be found
-[here](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
+[here](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
 
 <a name="update-apr26-16"></a>
 ### Apr 26, 2016 Update (Azure Pipelines)
@@ -691,8 +692,9 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-_**NOTE**: This feature is being rolled out over time to all regions;
-therefore, it may not yet be available in your region._
+> [!NOTE]
+> This feature is being rolled out over time to all regions;
+> therefore, it may not yet be available in your region.
 
 <a name="apr26-tfsonprem"></a>
 **TFVC and TF Git as artifact sources**
@@ -730,7 +732,7 @@ deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
-[this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+[this blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 <a name="apr26-import"></a>
 **Import, export, and clone release pipelines**
@@ -843,17 +845,17 @@ to satisfy these requirements. The extension adds
 a number of tasks to your task catalog:
 
 * The **Tokenization** task helps in replacing
-special tokens in any configuration file with the
-required environment-specific values at release time.
+  special tokens in any configuration file with the
+  required environment-specific values at release time.
 
- ![Inline Powershell script](_img/rm-archived/release-notes-12.png)
+  ![Inline Powershell script](_img/rm-archived/release-notes-12.png)
 
 * The **Rollback** task that checks whether any of
- the previous tasks in the environment have failed,
- and provides that information to your custom
- PowerShell script. Based on information about
- which task has failed, your custom script can run
- appropriate cleanup logic.
+  the previous tasks in the environment have failed,
+  and provides that information to your custom
+  PowerShell script. Based on information about
+  which task has failed, your custom script can run
+  appropriate cleanup logic.
 
 <a name="update-mar3-16"></a>
 ### Mar 3, 2016 Update (Team Foundation Server)
@@ -1055,7 +1057,7 @@ process, or multiple releases may be queued up on a
 production environment awaiting approval after they
 have passed QA. Queuing policies allow you to deploy in
 parallel, deploy in sequence, or just deploy the latest one.
-See [Queuing policies](../../release/environments.md#queuing-policies)
+See [Queuing policies](../../process/stages.md#queuing-policies)
 
 ![Configuring queuing policies](_img/rm-archived/release-notes-04.png)
 

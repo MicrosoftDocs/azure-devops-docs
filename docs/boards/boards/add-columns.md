@@ -1,24 +1,22 @@
 ---
 title: Add columns to your Kanban board
-titleSuffix: Azure Boards and TFS
-description: Map your Kanban board, support your team's work flow in Azure Boards & Team Foundation Server
-ms.global_help.title: Add columns
-ms.global_help.keywords: ms.vss-work-web.boards-hub, 3  
+titleSuffix: Azure Boards
+description: Map your Kanban board, support your team's work flow in Azure Boards, Azure DevOps, & Team Foundation Server
+ms.custom: boards-kanban 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/24/2018
+ms.date: 08/15/2019
 ---
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
-
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -30,34 +28,40 @@ For example, the main workflow stages performed by our example dev team are capt
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
+
 > [!NOTE]    
->If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> If you're looking at how to add columns to a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
+
 > [!NOTE]    
->If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+> If you're looking at how to add columns to a taskboard, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
->For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+> For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
+
 ::: moniker-end
+
+
+[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
 
 <a id="map-the-flow-of-work">  </a>
 
-##Map the flow of work
+## Map the flow of work
 It's best if you involve the entire team to identify an initial set of workflow stages. Each team member provides useful perspectives to capture and further deepen team understanding of the end-to-end processes.
 
 To get started, ask your team these questions: 
 
-* What types of activities do we regularly perform? 
-* What natural handoffs occur within our team? Or, from our team to other teams? 
-* What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?
-* What work needs to occur at each stage? 
+- *What types of activities do we regularly perform?* 
+- *What natural hand offs occur within our team? Or, from our team to other teams?* 
+- *What activities will help reinforce our team policies, such as analysis, code review, or design acceptance?*
+- *What work needs to occur at each stage?* 
 
 
-Our example dev team came up with these stages as essential to their process: 
+Our example development team came up with these stages as essential to their process: 
 
 ![Example workflow stages ](_img/ALM_AC_Workflow.png)
 
@@ -69,7 +73,7 @@ Our example dev team came up with these stages as essential to their process:
 
 You can always revisit these initial stages later and adjust. 
 
-Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](http://msdn.microsoft.com/library/dn914589.aspx) for each column. 
+Another idea, capture the list of items your team identifies as critical-to-complete for each stage. You can use that later to fill out the [Definition of Done](https://msdn.microsoft.com/library/dn914589.aspx) for each column. 
 
 ## Update status and handoff items
 
@@ -101,15 +105,11 @@ Now that you've got the essentials of how to work with your Kanban board, here's
 
 You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+::: moniker range=">= azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-::: moniker range="vsts"  
-
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-0. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the ![](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/_img/configure-team/open-board-settings.png)  
@@ -131,31 +131,26 @@ You'll see different column titles and choices based on the [Process](../work-it
 	> [!div class="mx-imgBorder"]
 	> ![Settings, Columns, Add and rename columns, Agile process](_img/add-columns-settings-dialog-add-test-ts.png)  
 
-0. To change the column order, simply drag the column tab to the position you want.  
+4. To change the column order, simply drag the column tab to the position you want.  
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the ![](../../_img/icons/actions-icon.png) actions icon from the column tab and select **Remove** from the menu.  
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the ![](../../_img/icons/actions-icon.png) actions icon from the column tab and select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings dialog, Columns tab, open Column tab menu, remove column](_img/columns/remove-column.png)    
 
-0.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
+6. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
+   Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
 
-0. When done with your changes, choose **Save**.
+7. When done with your changes, choose **Save**.
 
-::: moniker-end  
+::: moniker-end 
 
-::: moniker range=">= tfs-2013  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
-::: moniker-end  
+::: moniker range="tfs-2018"  
 
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-# [Previous navigation](#tab/previous-nav)
-::: moniker range=">= tfs-2018"  
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
-
-0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
@@ -175,25 +170,26 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
 
-0. To change the column order, simply drag the column tab to the position you want.  
+4. To change the column order, simply drag the column tab to the position you want.  
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Remove** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Remove** from the menu. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, delete a column](_img/columns/remove-column.png)  
 
-0.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).  
+6. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).  
 
-	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
+   Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
 
-0. When done with your changes, choose **Save**.  
+7. When done with your changes, choose **Save**.  
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2017"  
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-0. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
+
+1. Choose ![settings icon](../../_img/icons/team-settings-gear-icon.png) to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](_img/add-columns-open-settings-ts.png)  
 
@@ -213,9 +209,9 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	<img src="_img/add-columns-settings-dialog-add-test-ts.png" alt="Kanban board, Settings, Columns, Add and rename  columns, Agile process" style="border: 1px solid #C3C3C3;" /> 
 
-0. To change the column order, simply drag the column tab to the position you want.  
+4. To change the column order, simply drag the column tab to the position you want.  
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](_img/kanban-delete-column.png)  
 
@@ -223,19 +219,19 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 ::: moniker range="tfs-2015"  
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-0. the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open the common configuration settings dialog for the Kanban board. 
+1. the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](../../boards/boards/_img/kanban-card-customize-open-settings.png)  
 
 	#### TFS 2015.1  
 
-0. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
+2. Choose **Columns** and then a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/add-columns-active-agile-update-1.png)
 
-0. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
+3. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
 	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
@@ -247,21 +243,21 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	![Kanban board, add and rename columns](_img/vso-column-settings-add-rename-columns-no-tags.png)
 
-0. To change the column order, simply drag the column tab to the position you want.  
+4. To change the column order, simply drag the column tab to the position you want.  
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../_img/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](_img/kanban-delete-column.png)  
 
-0. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
+6. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
 	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).  
  
-0. When done with your changes, choose **Save**.  
+7. When done with your changes, choose **Save**.  
 
 	#### TFS 2015  
 
-0. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
+8. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/ALM_AC_CustomizeColumns.png)  
 
@@ -271,21 +267,21 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible. 
 
-0. To change the column order, use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons. 
+9. To change the column order, use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons. 
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
+1. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, click X at the top of the column.</p>
 
-0. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
+11. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
-	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).
+     Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2013"  
 
-0.  [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
+1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-0. Choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open Customize Columns.  
+1. Choose the ![ ](../_img/icons/team-settings-gear-icon.png) gear icon, to open Customize Columns.  
 
 	![Kanban board, open common configuration settings](_img/columns/open-settings-2013.png)  
 
@@ -293,7 +289,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/ALM_AC_CustomizeColumns.png)  
 
-0. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
+2. Change your column titles to map to your workflow stages. You can add, rename, and move columns to support more stages. 
 
 	Here, we rename the first, second, and third columns to Backlog, Analyze, and Develop. We then add a column and label it Test. 
 
@@ -301,22 +297,19 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 	Rename column titles to best reflect each stage of work. Keep the column titles as simple as possible.</p>
 
-0. To change the column order, use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons. 
+3. To change the column order, use the left ![left arrow](_img/ALM_AC_LeftIcon.png) or right ![right arrow](_img/ALM_AC_RightIcon.png) arrow icons. 
 
-0. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose **X** at the top of the column.</p>
+4. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose **X** at the top of the column.</p>
 
-0. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
+5. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
 	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).
  
 ::: moniker-end
 
-
----
-
-
 <a id="state-mappings" >   </a>
 <a id="when-to-update-the-kanban-column-to-state-mappings"></a>
+
 ## Update Kanban column-to-State mappings
  
 Another "under the hood" item that impacts Kanban column-to-State mappings is categories. The Kanban board and other Agile tools uses categories to group WITs that they want to treat the same. 
@@ -338,7 +331,7 @@ In this example two new states have been added, Triaged for bug, and Investigate
 
 ::: moniker range="tfs-2015"
 
-**TFS 2015.1 **
+**TFS 2015.1**
 In this example two new states have been added, Triaged for bug, and Investigate for user story. Each needs to be mapped to an existing or new column in order for the Kanban board to display work items assigned to these states.  
 
 <img src="_img/add-columns-custom-states-mapping.png" alt="Kanban board settings, Columns" style="border: 1px solid #C3C3C3;" />  
@@ -389,14 +382,12 @@ Kanban columns may correspond to an actual workflow state or a pseudo state. For
 That's about all you need to know about working with Kanban columns. Here are a few more options you have for customizing the look and feel of the board. 
 
 * [Workflow states & state categories](../work-items/workflow-and-state-categories.md)  
+* [Set up your backlogs and boards](../backlogs/set-up-your-backlog.md)
 * [Show bug on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 * [Work in Progress limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../../boards/boards/customize-cards.md) 
-* [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
-
 
 ### REST API resources
-To interact programmatically with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
+To interact programmatically with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/azure/devops/work/boards).

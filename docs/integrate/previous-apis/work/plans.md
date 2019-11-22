@@ -124,7 +124,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans/27
         "fieldName": "System.Tags",
         "logicalOperator": "AND",
         "operator": "CONTAINS",
-        "value": "Acceesibility"
+        "value": "Accessibility"
       }
     ],
     "cardSettings": {
@@ -228,7 +228,7 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans/27
         "fieldName": "System.Tags",
         "logicalOperator": "AND",
         "operator": "CONTAINS",
-        "value": "Acceesibility"
+        "value": "Accessibility"
       }
     ],
     "cardSettings": {
@@ -269,7 +269,7 @@ PUT https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/work/plans/27
         "fieldName": "System.Tags",
         "logicalOperator": "AND",
         "operator": "CONTAINS",
-        "value": "Acceesibility"
+        "value": "Accessibility"
       }
     ],
     "cardSettings": {

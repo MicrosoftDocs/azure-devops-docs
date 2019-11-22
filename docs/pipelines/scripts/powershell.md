@@ -1,15 +1,15 @@
----
-title: Use a PowerShell script to customize your build pipeline
-titleSuffix: Azure Pipelines & TFS
+﻿---
+title: Use PowerShell scripts to customize pipelines
+ms.custom: seodec18
 description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 08/04/2016
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,28 +23,50 @@ monikerRange: '>= tfs-2015'
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
-You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+::: moniker range=">= azure-devops-2019"
 
-0. Push your script into your repo.
+You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
+PowerShell Core runs on any platform.
 
-0. Add a PowerShell build task.
+1. Push your script into your repo.
 
- ![Add task](_img/BldStepAddBegin.png)
+2. Add a `pwsh` or `powershell` step:
 
- ![Add PowerShell task](_img/BldScriptPSAdd.png)
+```yaml
+# for PowerShell Core
+steps:
+- pwsh: ./my-script.ps1
 
-0. Drag the build task where you want it to run.
+# for Windows PowerShell
+steps:
+- powershell: .\my-script.ps1
+```
 
-0. Specify the name of the script.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+
+1. Push your script into your repo.
+
+2. Add a PowerShell build task.
+
+   ![Add task](_img/BldStepAddBegin.png)
+
+   ![Add PowerShell task](_img/BldScriptPSAdd.png)
+
+3. Drag the build task where you want it to run.
+
+4. Specify the name of the script.
+
+::: moniker-end
 
 ## Example: Version your assemblies
 
 For example, to version to your assemblies, copy and upload this script to your project:
 
-```powershell
-##-----------------------------------------------------------------------
-## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
-##-----------------------------------------------------------------------
+```ps
 # Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
@@ -154,13 +176,13 @@ To enable your script to use the build pipeline OAuth token, go to the **Options
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
-```powershell
-$url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
+```ps
+$url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
 Write-Host "URL: $url"
 $pipeline = Invoke-RestMethod -Uri $url -Headers @{
     Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
 }
-Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 1000)"
+Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
 
 
@@ -182,7 +204,7 @@ The build runs the script same branch of the code you are building.
 
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

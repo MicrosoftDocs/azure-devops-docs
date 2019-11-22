@@ -5,8 +5,9 @@ description: Syntax and usage for the Open method to open a work item for modifi
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 38195423-A9B7-4C5B-8FA2-F9DA5C97DB1F
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
@@ -29,7 +30,7 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <h4>C#</h4>
 </td>
 <td>
-```public void Open()```
+<code>public void Open()</code>
 </td>
 </tr>
 
@@ -38,8 +39,8 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <h4>C++</h4>
 </td>
 <td>
-```public:```<br/>
-```void Open()```
+<code>public:</code><br/>
+<code>void Open()</code>
 </td>
 </tr>
 
@@ -48,7 +49,7 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <h4>F#</h4>
 </td>
 <td>
-```member Open : unit -> unit```
+<code>member Open : unit -&gt; unit</code>
 </td>
 </tr>
 
@@ -57,7 +58,7 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <h4>JScript</h4>
 </td>
 <td>
-```public void Open()```
+<code>public void Open()</code>
 </td>
 </tr>
 
@@ -66,8 +67,8 @@ Opens a work item for modification. This method is [rate limited](../../integrat
 <h4>VB</h4>
 </td>
 <td>
-```'Declaration```<br/>
-```Public Sub Open```
+<code>&#39;Declaration</code><br/>
+<code>Public Sub Open</code>
 </td>
 </tr>
 </table>

@@ -7,9 +7,9 @@ ms.technology: devops-agile
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 02/10/2017
 ---
 
@@ -129,41 +129,41 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
  You can use the following sequence of steps to change the attribute assignment of a field:  
   
-1.  You can use the **witadmin changefield** command to change an attribute assignment to a field. You exercise this command for a project collection. Use the following syntax:  
+1. You can use the **witadmin changefield** command to change an attribute assignment to a field. You exercise this command for a project collection. Use the following syntax:  
   
-    ```  
-    witadmin changefield /collection:CollectionURL /n:RefName [/name:NewName] [/syncnamechanges:true | false] [/reportingname:ReportingName] [/reportingrefname:ReportingRefName] [/reportingtype:Type] [/reportingformula:Formula] [/noprompt]  
-    ```  
+   ```  
+   witadmin changefield /collection:CollectionURL /n:RefName [/name:NewName] [/syncnamechanges:true | false] [/reportingname:ReportingName] [/reportingrefname:ReportingRefName] [/reportingtype:Type] [/reportingformula:Formula] [/noprompt]  
+   ```  
   
-     To make an existing field reportable, change the reportingtype. For example, to make the AW.Common.TeamPriority field available for filtering of reports, assign the Dimension value to it:  
+    To make an existing field reportable, change the reportingtype. For example, to make the AW.Common.TeamPriority field available for filtering of reports, assign the Dimension value to it:  
   
-    ```  
-    witadmin changefield /collection:http://AdventureWorksServer:8080/AWTeam/Collection1 /n:AW.Common.TeamPriority /reportingtype:dimension   
-    ```  
+   ```  
+   witadmin changefield /collection:http://AdventureWorksServer:8080/AWTeam/Collection1 /n:AW.Common.TeamPriority /reportingtype:dimension   
+   ```  
   
-     For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
+    For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
   
-2.  (Optional) If you have more than one project collection, you may want to make similar changes to the work item field that is defined in that collection. To avoid schema conflicts when you export and process data to the data warehouse databases, you must assign the same values to these attributes across all collections:  
+2. (Optional) If you have more than one project collection, you may want to make similar changes to the work item field that is defined in that collection. To avoid schema conflicts when you export and process data to the data warehouse databases, you must assign the same values to these attributes across all collections:  
   
-    -   Field type (the value for this field cannot be changed for an existing field).  
+   - Field type (the value for this field cannot be changed for an existing field).  
   
-    -   Reporting type.  
+   - Reporting type.  
   
-    -   Reporting name.  
+   - Reporting name.  
   
      For more information, see [Resolve data warehouse schema conflicts](../../report/admin/resolve-schema-conflicts.md).  
   
-3.  After you have made all changes to the work item fields that you want to use for reporting, you must process the data warehouse databases. You can use the **ProcessWarehouse** and **ProcessAnalysis** Web services, which are available through the **WarehouseControlWebService**.  
+3. After you have made all changes to the work item fields that you want to use for reporting, you must process the data warehouse databases. You can use the **ProcessWarehouse** and **ProcessAnalysis** Web services, which are available through the **WarehouseControlWebService**.  
   
-     This step makes sure that people who use reports do not see an error when you change the field attributes.  
+    This step makes sure that people who use reports do not see an error when you change the field attributes.  
   
-     For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
+    For more information, see [Manage work item fields](../witadmin/manage-work-item-fields.md).  
 
 <a name="add_a_field"></a>   
 ##  Add fields to support reporting  
  You can add fields to the definition of a work item type or types. When you add the field, you should add the same field element definition to all types of work items for which the field will support reporting. If you want the field to support cross-project reporting, the field should be added to all work item types in all projects that will be reported on.  
   
- For more information, see [Define and modify work item fields](define-modify-work-item-fields.md).  
+ For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).  
 
 <a name="verify"></a> 
 ##  Verify changes made to reportable field attributes  
@@ -186,15 +186,15 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
  Work item fields that have a reportable type of dimension correspond to dimension attributes in the cube. Dimension attributes are organized into folders that are based on the reporting reference name that is assigned in the process template or work item type definition. The following types of mapping occur:  
   
--   Fields that have the "System" prefix are intrinsic and listed directly under the Work Item dimension, with "Work Item" prepended.  
+- Fields that have the "System" prefix are intrinsic and listed directly under the Work Item dimension, with "Work Item" prepended.  
   
--   Other fields are put under folders whose names correspond to the prefixes in their reference names. For example, fields that have the "Microsoft.VSTS.Common" prefix are listed under the folder that is labeled "Microsoft VSTS Common."  
+- Other fields are put under folders whose names correspond to the prefixes in their reference names. For example, fields that have the "Microsoft.VSTS.Common" prefix are listed under the folder that is labeled "Microsoft VSTS Common."  
   
- As the following illustration shows, a folder is added for each prefix group of fields that share a common prefix:  
+  As the following illustration shows, a folder is added for each prefix group of fields that share a common prefix:  
   
- ![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders")  
+  ![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders")  
   
- The following table lists the fields whose reference names begin with "System" and that are listed in the PivotTable report with the prefix of "Work Item." These fields are put directly under the Work Item dimension. All other fields are put under folders whose names correspond to the prefixes in their reference names.  
+  The following table lists the fields whose reference names begin with "System" and that are listed in the PivotTable report with the prefix of "Work Item." These fields are put directly under the Work Item dimension. All other fields are put under folders whose names correspond to the prefixes in their reference names.  
   
 > [!NOTE]  
 >  Deployments that do not use the Enterprise version of SQL Server Analysis Services do not have access to the translation features that are provided by that version. In these deployments, fields are identified by their full reference name in the cube, with "˜.' replaced by "˜_' (for example, "System_Id" and "System_Title").  

@@ -4,7 +4,7 @@ exports.getContext = function() {
     return {
 		securityNamespaceId : null, 
 		token : null,
-		orginalInheritValue : null
+		originalInheritValue : null
     };
 };
 
@@ -38,7 +38,7 @@ exports.submitRequests = function() {
     apiwriter.getJson('/accesscontrollists/{securityNamespaceId}/',
 		function(context, result) {
 			context.token = result.responseBody.value[0].token;
-			context.orginalInheritValue = result.responseBody.value[0].inheritPermissions;
+			context.originalInheritValue = result.responseBody.value[0].inheritPermissions;
 		}
 	);
 
@@ -64,7 +64,7 @@ exports.submitRequests = function() {
 		function(context, result) {
 			return { 
 				"token": context.token, 
-				"inherit" : context.orginalInheritValue
+				"inherit" : context.originalInheritValue
 			}
 		}
 	);

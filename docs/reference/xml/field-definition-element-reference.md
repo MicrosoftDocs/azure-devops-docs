@@ -5,7 +5,7 @@ description: Syntax and usage of the FIELD element used to specify data fields w
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/16/2017
@@ -22,37 +22,37 @@ You use the **FIELD** (Definition) element to define a work item field and speci
   
 ## Syntax  
   
-> [!NOTE]    
+> [!NOTE]
 > The Boolean data type is supported for Azure DevOps Services and for on-premises TFS 2017.2 and later versions. 
-
+> 
 > [!div class="tabbedCodeSnippets"]
-```XML  
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" 
-type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
-syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum"  
-reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
-   <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-   <ALLOWEXISTINGVALUE />  
-   <CANNOTLOSEVALUE />  
-   <COPY />  
-   <DEFAULT />  
-   <EMPTY />  
-   <FROZEN />  
-   <HELPTEXT> . . . </HELPTEXT>  
-   <MATCH />  
-   <NOTSAMEAS />  
-   <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-   <READONLY />  
-   <REQUIRED />  
-   <SERVERDEFAULT />  
-   <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-   <VALIDUSER />  
-   <WHEN> . . . </WHEN>  
-   <WHENNOT> . . . </WHENNOT>  
-   <WHENCHANGED> . . . </WHENCHANGED>  
-   <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-</FIELD>  
-```  
+> ```XML  
+> <FIELD name="fieldDisplayName" refname="fieldReferenceName" 
+> type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID | Boolean"   
+> syncnamechanges ="true | false" reportable="Dimension | Detail | Measure" formula="sum" 
+> reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >  
+>    <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+>    <ALLOWEXISTINGVALUE />  
+>    <CANNOTLOSEVALUE />  
+>    <COPY />  
+>    <DEFAULT />  
+>    <EMPTY />  
+>    <FROZEN />  
+>    <HELPTEXT> . . . </HELPTEXT>  
+>    <MATCH />  
+>    <NOTSAMEAS />  
+>    <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+>    <READONLY />  
+>    <REQUIRED />  
+>    <SERVERDEFAULT />  
+>    <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+>    <VALIDUSER />  
+>    <WHEN> . . . </WHEN>  
+>    <WHENNOT> . . . </WHENNOT>  
+>    <WHENCHANGED> . . . </WHENCHANGED>  
+>    <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+> </FIELD>  
+> ```  
   
 ## Attributes and elements  
  The following sections describe attributes, child elements, and parent elements.  
@@ -148,4 +148,4 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
 -  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)   
 -  [Customize your work tracking experience](../customize-work.md)    
 -  [Manage work item fields](../witadmin/manage-work-item-fields.md)   
--  [Define and modify work item fields](define-modify-work-item-fields.md)   
+-  [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   

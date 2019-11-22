@@ -1,19 +1,21 @@
 ---
-title: Deploy a Docker container app to an Azure Web App
-titleSuffix: Azure Pipelines & TFS
+title: Deploy a Docker container app
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Web App in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: ronai
+author: RoopeshNair
+ms.date: 08/30/2019
+monikerRange: '> tfs-2018'
 ---
 
 # Deploy to an Azure Web App for Containers
+
+**Azure Pipelines**
 
 We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure Web App using
 Azure Pipelines.
@@ -24,20 +26,43 @@ For example, you can continuously deliver your app to a Windows VM hosted in Azu
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-## Example
+## Get the code
 
-If you want some sample code that works with this guidance, import (into Azure DevOps) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, [import](../../../repos/git/import-git-repository.md) (into Azure DevOps) or fork (into GitHub) the following repository, based on the desired runtime.
+
+#### [Java](#tab/java)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
-https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnetcore/container/Application
+https://github.com/spring-guides/gs-spring-boot-docker.git
+```
+#### [JavaScript](#tab/java-script)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
+https://github.com/MicrosoftDocs/pipelines-javascript-docker
+```
+#### [Python](#tab/python)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial/
+```
+#### [.NET Core](#tab/dotnet-core)
+
+[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core-docker
+```
+* * *
+
 ## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build pipeline that publishes a Docker container image.
-To set up a CI build pipeline, see:
-
-* [Build and push a Docker image](../../languages/docker.md).
+Set up a CI pipeline for [building an image](../../ecosystems/containers/build-image.md) and [pushing it to a container registry](../../ecosystems/containers/push-image.md).
 
 ## Prerequisites
 

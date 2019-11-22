@@ -5,9 +5,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'
@@ -19,29 +19,29 @@ monikerRange: '>= tfs-2015'
 *Compatible with `IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE` and `CLion`.*
 
 
-The plugin is available in the [IntelliJ Plugin Repository](http://plugins.jetbrains.com/plugin/7981).
+The plugin is available in the [IntelliJ Plugin Repository](https://plugins.jetbrains.com/plugin/7981).
 
 The plugin can be installed from IntelliJ by browsing the Plugin Repository.
 1. In IntelliJ, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Browse repositories...` button and search for "Azure DevOps Services". 
+1. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
 
 
- You can also download the plugin to disk from the [Plugin Repository](http://plugins.jetbrains.com/plugin/7981) and install the downloaded JAR file.
+ You can also download the plugin to disk from the [Plugin Repository](https://plugins.jetbrains.com/plugin/7981) and install the downloaded JAR file.
 1. In IntelliJ, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
-1. Click the `Install plugin` button and restart IntelliJ IDEA. 
+2. Click the `Install plugin from disk...` button and browse to the JAR file on disk.
+3. Click the `Install plugin` button and restart IntelliJ IDEA. 
  
- ## Next Steps 
-* Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
+   ## Next Steps 
+4. Learn more about the IntelliJ plugin from our [Azure DevOps Services Git with IntelliJ documentation](/azure/devops/repos/git/create-repo-intellij).
  
- ## Frequently Asked Questions (FAQ)
+   ## Frequently Asked Questions (FAQ)
 
 **Q:  What versions of IntelliJ IDEA are supported?**
 

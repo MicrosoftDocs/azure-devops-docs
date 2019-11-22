@@ -1,21 +1,21 @@
 ---
-title: Manage a virtual machine in Azure DevTest Labs
-titleSuffix: Azure Pipelines & TFS
+title: Manage a VM in DevTest Labs
 description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs in Azure Pipelines and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: ronai
+author: RoopeshNair
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -40,7 +40,7 @@ would use the tasks individually in your own custom build-test-deploy pipeline.
 
 Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
-extension from Visual Studio Marketplace:
+extension from Visual Studio Marketplace, Azure DevOps tab:
 
 * For Azure Pipelines, choose **Install**
 * For TFS, choose **Download** and install the extension on your server.
@@ -58,7 +58,7 @@ use to create an Azure Virtual Machine on demand.
    on your computer. Name the file **CreateVMTemplate.json**.
 
 1. Edit the **CreateVMTemplate.json** file as described in 
-   [this post](http://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
+   [this post](https://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
    on Tarun Arora's blog to configure it for Windows Remote
    Management (WinRM).
 
@@ -106,7 +106,7 @@ use to create an Azure Virtual Machine on demand.
    **PowerShell on Target Machines**. These are the tasks you 
    typically use to deploy apps to an Azure VM, and they require values
    such as the VM Resource Group name, IP address, and 
-   fully-qualified domain name (FDQN).
+   fully-qualified domain name (FQDN).
 
 ## Deploy
 
@@ -166,7 +166,7 @@ release pipeline in Azure Pipelines.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
@@ -248,7 +248,7 @@ release pipeline in Azure Pipelines.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< vsts"
+::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/qa-versions.md)]
 ::: moniker-end
 

@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Result Retention Settings | REST API Reference for Team Foundation Server
 description: Work with test result retention settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8A82A554-48F3-4A0B-A119-8C76A7E966DD
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [API_version](../_data/version2-preview.md)]
 
-[!INCLUDE [GET_STARTED](../_data/get-started.md)] Look [here](https://visualstudio.microsoft.com/en-us/docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results) to know more about result retention settings.
+[!INCLUDE [GET_STARTED](../_data/get-started.md)] Look [here](https://visualstudio.microsoft.com/docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results) to know more about result retention settings.
 
 Below APIs fetch or update result retention settings for a project. To get list of projects, look [here](../tfs/projects.md).
 

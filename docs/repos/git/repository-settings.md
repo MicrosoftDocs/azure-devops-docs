@@ -5,17 +5,17 @@ description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
-ms.date: 10/04/2018
-monikerRange: '>= tfs-2018'
+ms.date: 11/19/2019
+monikerRange: '>= tfs-2017'
 ---
 
 # Repository settings
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
 
 #### Azure Repos
 
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2018'
 
 ::: moniker range="tfs-2018"
 
-#### Azure Repos | TFS 2018 Update 2
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 Update 2
 
 ::: moniker-end
 
@@ -36,46 +36,284 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 ## View and edit repository settings
 
-::: moniker range="vsts"
+#### [Browser](#tab/browser)
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]
+::: moniker range="azure-devops-2019"
 
-# [New navigation](#tab/new-nav)
+1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-1. From your web browser, open the project for your Azure DevOps organization and choose **Project settings**, **Repositories**, and select your repository.
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
+2. Select **Options** to view and configure your repository settings.
 
-1. Select **options** to view and configure your repository settings.
+   ![The options UI](_img/repository-settings/repository-settings-server-2019.png)
 
-  ![The options UI](_img/repository-settings/repository-settings.png)
+::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
+::: moniker range="azure-devops"
 
-1. From your web browser, open the project for your Azure DevOps organization and choose the gear icon, **Version Control**, and select your repository.
+1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
 
-1. Select **options** to view and configure your repository settings.
+2. Select **Options** and **Policies** to view and configure your repository settings.
 
-  ![The options UI](_img/repository-settings/repository-settings.png)
+   ![The options UI](_img/repository-settings/repository-settings.png)
 
----
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+
+1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
+
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+
+2. Select **options** to view and configure your repository settings.
+
+   ![The options UI](_img/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-1. From your web browser, open the project for your Azure DevOps organization and choose the gear icon, **Version Control**, and select your repository.
+1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-  ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
 
-1. Select **options** to view and configure your repository settings.
+2. Select **options** to view and configure your repository settings.
 
-  ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
+   ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
+
+You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Maximum file size](#maximum-file-size) policies.
+
+[Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy) | [Create file size policy](#create-file-size-policy) | [Update file size policy](#update-file-size-policy)
+
+> [!NOTE]
+> If this is your first time using [az repos](/cli/azure/repos?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+### Create case enforcement policy
+
+Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-create) to manage [Case enforcement](#case-enforcement) policy.
+
+```azurecli
+az repos policy case-enforcement create --blocking {false, true}
+                                        --enabled {false, true}
+                                        --repository-id
+                                        [--detect {false, true}]
+                                        [--org]
+                                        [--project]
+```
+
+#### Parameters
+
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+
+#### Example
+
+The following example retrieves the IDs of the existing repositories using `az repos list` and then creates a blocking case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos list --output table
+ID                                    Name           Default Branch    Project
+------------------------------------  -------------  ----------------  -------------
+6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
+
+az repos policy case-enforcement create --blocking true --enabled true --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c
+{
+
+  <Some properties omitted for space>
+
+  },
+  "createdDate": "2019-11-19T15:34:38.854450",
+  "id": 4,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+
+  <Some properties omitted for space>
+
+}
+```
+
+### Update case enforcement policy
+
+Use [az repos case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
+
+```azurecli
+az repos policy case-enforcement update --id
+                                        [--blocking {false, true}]
+                                        [--detect {false, true}]
+                                        [--enabled {false, true}]
+                                        [--org]
+                                        [--project]
+                                        [--repository-id]
+```
+
+#### Parameters
+
+- **id** or **policy-id**: (Required) ID of the policy.
+- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
+
+#### Example
+
+The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos policy list --output table
+ID    Name                     Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------------  -------------  ------------  ------------------------------------  ------------
+2     File size restriction    True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+3     Git repository settings  True           True          6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+4     Work item linking        False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+5     Path Length restriction  True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+
+az repos policy case-enforcement update --blocking false --enabled false --policy-id 4 --output table
+ID    Name               Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------  -------------  ------------  ------------------------------------  ------------
+4     Work item linking  False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+```
+
+### Create file size policy
+
+Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage  [Maximum file size](#maximum-file-size) policy.
+
+```azurecli
+az repos policy file-size create --blocking {false, true}
+                                 --enabled {false, true}
+                                 --maximum-git-blob-size
+                                 --repository-id
+                                 --use-uncompressed-size {false, true}
+                                 [--detect {false, true}]
+                                 [--org]
+                                 [--project]
+```
+
+#### Parameters
+
+- **blocking**: (Required) Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **maximum-git-blob-size**: (Required) Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
+- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+
+#### Example
+
+The following example retrieves the IDs of the existing repositories using [az repos list](/cli/azure/repos?view=azure-cli-latest#az-repos-list) and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos list --output table
+ID                                    Name           Default Branch    Project
+------------------------------------  -------------  ----------------  -------------
+6589f9e0-082b-4b96-9dfd-8141b7da409c  FabrikamFiber  master            FabrikamFiber
+
+az repos policy file-size create --blocking true --enabled true --maximum-git-blob-size 10485760 --repository-id 6589f9e0-082b-4b96-9dfd-8141b7da409c --use-uncompressed-size true
+{
+
+  <Some properties omitted for space>
+
+  },
+  "createdDate": "2019-11-19T15:34:38.854450",
+  "id": 2,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+
+  <Some properties omitted for space>
+
+}
+```
+
+### Update file size policy
+
+Use [az repos policy file-size update](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-delete) to manage [Maximum file size](#maximum-file-size) policy.
+
+```azurecli
+az repos policy file-size update --id
+                                 [--blocking {false, true}]
+                                 [--detect {false, true}]
+                                 [--enabled {false, true}]
+                                 [--maximum-git-blob-size]
+                                 [--org]
+                                 [--project]
+                                 [--repository-id]
+                                 [--use-uncompressed-size {false, true}]
+```
+
+#### Parameters
+
+- **id** or **policy-id**: (Required) ID of the policy.
+- **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
+- **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **repository-id**: (Required) ID of the repository on which to apply the policy.
+- **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
+
+#### Example
+
+The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az repos policy list --output table
+ID    Name                     Is Blocking    Is Enabled    Repository Id                         Branch
+----  -----------------------  -------------  ------------  ------------------------------------  ------------
+2     File size restriction    True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+3     Git repository settings  True           True          6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+4     Work item linking        False          False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+5     Path Length restriction  True           False         6589f9e0-082b-4b96-9dfd-8141b7da409c  All Branches
+
+az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
+{
+  
+  <Some properties omitted for space>
+
+  "createdDate": "2019-11-19T16:09:32.960070+00:00",
+  "id": 2,
+  "isBlocking": true,
+  "isDeleted": false,
+  "isEnabled": true,
+  "revision": 5,
+  "settings": {
+    "maximumGitBlobSizeInBytes": 20971520,
+    "scope": [
+      {
+        "repositoryId": "6589f9e0-082b-4b96-9dfd-8141b7da409c"
+      }
+    ],
+    "useUncompressedSize": true
+  },
+  
+   <Some properties omitted for space>
+
+}
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 ## Forking
 
@@ -102,7 +340,7 @@ By disabling this setting, users must opt-in to completing work items for each p
 ## Cross-platform compatibility settings
 
 >[!NOTE]
->Our recommendation is to configure these settings *either* at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
+>Our recommendation is to configure these settings **either** at the project level or each individual repo, but not both. If set at both levels, we will compute whichever setting is the most restrictive and honor that. Configuring these settings at only one level removes this complexity prevents slow downs in Git performance.
 
 ### Case enforcement
 
@@ -118,7 +356,13 @@ This setting will not fix a repository which already contains objects that only 
 We recommend fixing such issues before turning the policy on.
 You can rename files and folders or re-create [branches](create-branch.md) and [tags](git-tags.md) using new, non-conflicting names.
 
-::: moniker range="vsts"
+::: moniker range="azure-devops"
+
+For instructions on configuring this policy using Azure CLI, see [View and edit repository settings](repository-settings.md?tabs=azure-devops-cli#view-and-edit-repository-settings).
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 ### Restrict File Names
 
@@ -144,6 +388,12 @@ We have suggestions for helping you [manage large files](manage-large-files.md).
 This setting gives administrators a way to block files over a certain size from entering the repository.
 If a push contains a new or updated file larger than the limit configured in this setting, that push will be blocked.
 The user will have to rewrite their unpushed history to remove the large file and try the push again.
+
+::: moniker range="azure-devops"
+
+For instructions on configuring this policy using Azure CLI, see [View and edit repository settings](repository-settings.md?tabs=azure-devops-cli#view-and-edit-repository-settings).
+
+::: moniker-end
 
 ## Other ways to manage repositories
 

@@ -1,39 +1,54 @@
+---
+ms.topic: include
+---
 
 ## Open the Wiki  
 
-Begin by connecting to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers) and choose **Wiki**.  
+#### [Browser](#tab/browser) 
 
+Connect to your project using a [supported web browser](/azure/devops/server/compatibility#supported-browsers) and choose **Wiki**.
 
-> [!NOTE]
-> Choose **Previous navigation** when you see a top-level blue bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar, along with other navigational features, is enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps organization. To learn how to use the web portal effectively, see [Web portal navigation](/azure/devops/project/navigation/index).    
-> 
-> For on-premises TFS, choose **Previous Navigation** for guidance. 
+> [!div class="mx-imgBorder"] 
+>![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](../../../organizations/public/_img/wiki/open-wiki-vert-brn.png)
 
-# [New navigation](#tab/new-nav)  
+If you need to switch your team project, choose the ![project-icon.png](../../../_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
-::: moniker range="vsts"    
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-> [!div class="mx-imgBorder"]  
-> ![Create wiki, provision a Git repo for your wiki or publish existing repo markdown files](/azure/devops/project/wiki/_img/wiki/open-wiki-vert-brn.png)
+::: moniker range="= azure-devops"
 
-If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
- 
-::: moniker-end    
+You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
-::: moniker range="tfs-2018"    
-**New navigation** isn't supported on TFS at this time. Choose **Previous navigation** for guidance.
-::: moniker-end    
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki show --wiki
+                      [--open]
+                      [--project]
+                      [--subscription]
+```
 
-# [Previous navigation](#tab/previous-nav)
+### Parameters
 
-> [!div class="mx-imgBorder"]  
-> ![Open Wiki](/azure/devops/project/wiki/_img/wiki/wiki-connect-browser.png)
+- **--wiki**: Required. Name or ID of the wiki.
+- **--open**: Optional. Open the wiki page in your web browser.
+- **--project -p**: Optional. Name or ID of the project.
+- **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
-- If you need to switch your team project, choose the ![ ](/azure/devops/boards/_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).   
-- If you don't see **Wiki**, your screen size may be reduced. Choose the ![ ](/azure/devops/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), then choose **Wiki>Wiki**.
+### Example
 
-![Open wiki, reduced screen size](/azure/devops/project/wiki/_img/wiki/open-wiki-hub.png)
+Open a wiki named 'myprojectwiki'.
 
----
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki show --wiki myprojectwiki --open
+```
 
+::: moniker-end
 
+::: moniker range=">= tfs-2018 < azure-devops"
+
+[!INCLUDE [note-cli-not-supported](../../../_shared/note-cli-not-supported.md)]
+
+::: moniker-end
+
+* * *

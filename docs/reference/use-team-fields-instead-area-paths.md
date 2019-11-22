@@ -5,11 +5,11 @@ description: Steps to modify the XML syntax to support using a team field with T
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 04/14/2017
 ---
 
@@ -41,33 +41,37 @@ When you customize your project to support team fields, the Team field tab appea
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-0. If you aren't a member of the **Project Administrators** group, [get those permissions](../organizations/security/set-project-collection-level-permissions.md).
+1. If you aren't a member of the **Project Administrators** group, [get those permissions](../organizations/security/set-project-collection-level-permissions.md).
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+    [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-0.  Export the global list for the project collection.
+1. Export the global list for the project collection.
 
-        witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+    ```
+    witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+    ```
 
     Add the global list definition for your team. Include a value you'll want to use for items not yet assigned to a team. If your global list is empty, simply copy the following code, paste into the XML file, and modify to support your team labels.
 
 
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
-   <GLOBALLIST name="Teams">
-    <LISTITEM value="Unassigned"/>
-    <LISTITEM value="Team A"/>
-    <LISTITEM value="Team B"/>
-    <LISTITEM value="Team C"/>
-    <LISTITEM value="Team D"/>
-   </GLOBALLIST>
-</gl:GLOBALLISTS>
-```
+    ```XML
+    <?xml version="1.0" encoding="utf-8"?>
+    <gl:GLOBALLISTS xmlns:gl="http://schemas.microsoft.com/VisualStudio/2005/workitemtracking/globallists">
+       <GLOBALLIST name="Teams">
+        <LISTITEM value="Unassigned"/>
+        <LISTITEM value="Team A"/>
+        <LISTITEM value="Team B"/>
+        <LISTITEM value="Team C"/>
+        <LISTITEM value="Team D"/>
+       </GLOBALLIST>
+    </gl:GLOBALLISTS>
+    ```
 
-0.  Import the global list definition.
+1. Import the global list definition.
 
-        witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+    ```
+    witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
+    ```
 
     Note that global lists are defined for all projects within a project collection.
 
@@ -80,74 +84,82 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 1.  Export the work item type definitions. For Scrum, export the type definitions for the feature, product backlog item, bug, and task.
 
-        witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:"Product Backlog Item" /f:Directory/pbi.xml
-        witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:Bug /f:Directory/bug.xml
-        witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:Task /f:Directory/task.xml 
-        witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:"Test Plan" /f:Directory/TestPlan.xml
+    ```
+    witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:"Product Backlog Item" /f:Directory/pbi.xml
+    witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:Bug /f:Directory/bug.xml
+    witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:Task /f:Directory/task.xml 
+    witadmin exportwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /n:"Test Plan" /f:Directory/TestPlan.xml
+    ```
 
 2.  For each type, add a custom Team field that references the global list.
 
-        > [!div class="tabbedCodeSnippets"]
+    > [!div class="tabbedCodeSnippets"]
 		```XML
-        <FIELDS>
-        . . . 
-           <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
-              <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
-                <ALLOWEXISTINGVALUE />
-                  <ALLOWEDVALUES >
-                    <GLOBALLIST name="Teams" />
-                </ALLOWEDVALUES >
-                <DEFAULT from="value" value="Unassigned" />
-              </FIELD>
-        . . . 
-        </FIELDS>
-		```
+    <FIELDS>
+    . . . 
+        <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
+          <HELPTEXT>Name of the team that will do the work.</HELPTEXT>
+            <ALLOWEXISTINGVALUE />
+              <ALLOWEDVALUES >
+                <GLOBALLIST name="Teams" />
+            </ALLOWEDVALUES >
+            <DEFAULT from="value" value="Unassigned" />
+          </FIELD>
+    . . . 
+    </FIELDS>
+    ```
 
     > [!TIP]  
     >Name your custom field to distinguish it from other system fields. Do not use "System" as a prefix for `refname`. And, keep the `name` and `refname` labels to 128 characters and 70, respectively.
 
 3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. You'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
 
-        > [!div class="tabbedCodeSnippets"]
+    > [!div class="tabbedCodeSnippets"]
 		```XML
-        <FORM>
-        . . . 
-          <Group Label="Status">
-              <Column PercentWidth="100">
-                 <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
-                 <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
-                 <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
-                 <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
-              </Column>
-          </Group>
-        . . . 
-        </FORM>
-		```
+    <FORM>
+    . . . 
+      <Group Label="Status">
+          <Column PercentWidth="100">
+              <Control FieldName="MyCompany.Team" Type="FieldControl" Label="Team" LabelPosition="Left" EmptyText="&lt;None&gt;" />
+              <Control Type="FieldControl" FieldName="System.AssignedTo" Label="Assi&amp;gned to:" LabelPosition="Left" />
+              <Control FieldName="System.State" Type="FieldControl" Label="Stat&amp;e" LabelPosition="Left" />
+              <Control FieldName="System.Reason" Type="FieldControl" Label="Reason" LabelPosition="Left" ReadOnly="True" />
+          </Column>
+      </Group>
+    . . . 
+    </FORM>
+    ```
 
     Optionally, move the Area Path field to appear before or after the Iteration Path.
 
 4.  Import the updated type definitions.
 
-        witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/pbi.xml
-        witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/bug.xml
-        witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/task.xml
-        witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/TestPlan.xml
+    ```
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/pbi.xml
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/bug.xml
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/task.xml
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/TestPlan.xml
+    ```
 
 <a id="processconfig">  </a>  
 ### 3. Change process configuration to reference the team field
 
 1.  Export the ProcessConfiguration XML definition.
 
-        witadmin exportprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
+    ```
+    witadmin exportprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
+    ```
 
 2.  Replace `System.AreaPath` for the field used to specify `type="Team"`.
 
-        <TypeField refname="MyCompany.Team" type="Team" />
+    ```xml
+    <TypeField refname="MyCompany.Team" type="Team" />
+    ```
 
 3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
   
 
-```XML
+  ```XML
   <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
     <AddPanel>
       <Fields>
@@ -156,11 +168,13 @@ Add a custom team field to all work item types (WITs) that are included in the F
       </Fields>
     </AddPanel> 
   . . .
-```
+  ```
 
-4.  Import the definition file.
+4. Import the definition file.
 
-        witadmin importprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
+    ```
+    witadmin importprocessconfig /collection:"http://MyServer:8080/tfs/DefaultCollection" /p:MyProject /f:Directory/ProcessConfiguration.xml
+    ```
 
 <a id="config-teamfield">  </a>  
 ### 4. Configure the Team field for each team
@@ -221,14 +235,14 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 **A:** Before you can [configure features for an upgraded project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 
-1.  Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
+1. Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
 
-2.  [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
+2. [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
-  > [!IMPORTANT]  
-  >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+   > [!IMPORTANT]  
+   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
-3.  Modify the ProcessTemplate file, and update the process template name and version number. For example:
+3. Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -239,17 +253,18 @@ For backlog items you create from a team's backlog page, TFS assigns the default
     <version type="6B724908-EF14-45CF-84F8-768B5384DA45" major="3" minor="60" />
 ```
 
-4.  As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
+4. As described earlier in this topic, [Add a custom team field to work item types](#addteamfield), update the WIT definitions for the work item types assigned to the Feature, Requirements, and Task categories. For the Scrum process template, this corresponds to the Feature, Product Backlog Item, Bug, Task, and Test Plan WITs.
 
-5.  As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
+5. As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
 
-6.  [Upload the process template](../boards/work-items/guidance/manage-process-templates.md) that you just modified.
+6. [Upload the process template](../boards/work-items/guidance/manage-process-templates.md) that you just modified.
 
-7.  [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
+7. [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 
 
 
 
 ### Credits
 
-Guidance for [customizing teams decoupled from area paths](http://blog.hinshelwood.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshel](http://blog.hinshelwood.com), a senior devops consultant and Microsoft Visual Studio ALM MVP.
+Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/
+), a devops consultant and Developer Technologies MVP.

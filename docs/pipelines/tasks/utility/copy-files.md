@@ -1,26 +1,28 @@
 ---
-title: Copy Files
-titleSuffix: Azure Pipelines & TFS
-description: Learn how you can copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server TFS
+title: Copy Files task
+description: Copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 08/10/2016
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: macoope
+author: vtbassmatt
+ms.date: 08/01/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Copy Files
+# Copy Files task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
 
-![](_img/copy-files.png) Copy files from a source folder to a target folder using match patterns.
+Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,8 +30,11 @@ monikerRange: '>= tfs-2015'
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -44,26 +49,27 @@ None
 <tr>
 <td>Source Folder</td>
 <td>
-<p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
-<p>If your build produces artifacts outside of the sources directory, specify ```$(Agent.BuildDirectory)``` to copy files from the directory created for the pipeline.</p>
+<p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
+<p>If your build produces artifacts outside of the sources directory, specify <code>$(Agent.BuildDirectory)</code> to copy files from the directory created for the pipeline.</p>
 </td>
 </tr>
 <tr>
 <td>Contents</td>
-<td><p>Specify match pattern filters (one on each line) that you want to apply to the list of files to be copied. For example:
+<td><p>Specify <a href="http://man7.org/linux/man-pages/man3/fnmatch.3.html">fnmatch pattern filters</a> (one per line) that you want to apply to the list of files to be copied. For example:
 </p>
 <ul>
-<li>```*``` copies all files in the root folder.</li>
-<li>```**\*``` copies all files in the root folder and all files in all sub-folders.</li>
-<li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
+<li><code>*</code> copies all files in the specified source folder.</li>
+<li><code>**</code> copies all files in the specified source folder and all files in all sub-folders.</li>
+<li><code>**\bin\**</code> copies all files recursively from any <code>bin</code> folder.</li>
 </ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
+<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as <code>**\bin\**</code> instead of <code>**\bin</code>.</p>
+<p>You must use the path separator that matches your build agent type, e.g. <code>/</code> must be used for Linux agents.
 <p>More examples are shown below.</p>
 </td>
 </tr>
 <tr>
 <td>Target Folder</td>
-<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify ```$(Build.ArtifactStagingDirectory)``` if you intend to [publish the files as build artifacts](../../build/artifacts.md).</td>
+<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify <code>$(Build.ArtifactStagingDirectory)</code> if you intend to <a href="../../artifacts/build-artifacts.md" data-raw-source="[publish the files as build artifacts](../../artifacts/build-artifacts.md)">publish the files as build artifacts</a>.</td>
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 <tr>
@@ -74,13 +80,28 @@ None
 <td>Overwrite</td>
 <td>Select this check box to replace existing files in the target folder.</td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+<tr>
+<td>Flatten Folders</td>
+<td>Flatten the folder structure and copy all files into the specified target folder.</td>
+</tr>
+<tr>
+<td>Preserve Target Timestamp</td>
+<td>Using the original source file, preserve the target file timestamp.</td>
+</tr>
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Notes
 
 If no files are matched, the task will still report success.
 If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
+
+[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
 
 ## Examples
 
@@ -102,37 +123,102 @@ You want to copy just the readme and the files needed to run this C# console app
         |-- ConsoleApplication1.csproj
 ```
 
+> [!NOTE]
+> _ConsoleApplication1.sln_ contains a _bin_ folder with .dll and .exe files, see the Results below to see what gets moved!
+
 On the Variables tab, ```$(BuildConfiguration)``` is set to ```release```.
 
-#### Arguments
+#### [YAML](#tab/yaml/)
+::: moniker range="azure-devops"
 
-* Source Folder: ```$(Build.SourcesDirectory)```
+**Example with multiple match patterns:**
 
-* Contents (example of multiple match patterns):
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+     ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-   ```
-   ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
-   ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
-   ConsoleApplication1\readme.txt
-   ```
+**Example with OR condition:**
 
-* Contents (example of OR condition):
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-   ```
-   ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
-   ConsoleApplication1\readme.txt
-   ```
+**Example with NOT condition:**
 
-* Contents (example of NOT condition): 
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    Contents: |
+     ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+     !ConsoleApplication1\**\ClassLibrary*\**
+     ConsoleApplication1\readme.txt
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
-   ```
-   ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
-   !ConsoleApplication1\**\ClassLibrary*\**
-   ConsoleApplication1\readme.txt
-   ```
+::: moniker-end
 
-* Target Folder: ```$(Build.ArtifactStagingDirectory)```
+::: moniker range="< azure-devops"
 
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+![icon](_img/copy-files.png) **Utility: Copy Files**
+
+* Source folder
+
+  ```
+  $(Build.SourcesDirectory)
+  ```
+
+* Contents
+
+    **Example with multiple match patterns:**
+
+    ```
+    ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+    ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+    ConsoleApplication1\readme.txt
+    ```
+
+    **Example with OR condition:**
+    ```
+    ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+    ConsoleApplication1\readme.txt
+    ```
+
+    **Example with NOT condition:**
+    ```
+    ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+    !ConsoleApplication1\**\ClassLibrary*\**
+    ConsoleApplication1\readme.txt
+    ```
+
+* Target folder
+
+  ```
+  $(Build.ArtifactStagingDirectory)
+  ```
+
+* * *
 #### Results
 
 These files are copied to the staging directory:
@@ -150,19 +236,60 @@ These files are copied to the staging directory:
 
 ### Copy everything from the source directory except the .git folder
 
-* Source Folder: ```$(Build.SourcesDirectory)```
 
-* Contents (example of multiple match patterns):
+#### [YAML](#tab/yaml/)
+::: moniker range="azure-devops"
 
-   ```
-   **/*
-   !.git/**/*
-   ```
+**Example with multiple match patterns:**
 
+```yaml
+steps:
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: |
+     **/*
+     !.git/**/*
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+#### [Classic](#tab/classic/)
+![icon](_img/copy-files.png) **Utility: Copy Files**
+
+* Source folder
+
+  ```
+  $(Build.SourcesDirectory)
+  ```
+
+* Contents
+
+**Example with multiple match patterns:**
+
+ ```
+     **/*
+     !.git/**/*
+```
+
+* Target folder
+
+  ```
+  $(Build.ArtifactStagingDirectory)
+  ```
+
+* * *
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
@@ -172,14 +299,16 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### How do I use this task to publish artifacts?
 
-See [Artifacts in Azure Pipelines](../../build/artifacts.md).
+See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

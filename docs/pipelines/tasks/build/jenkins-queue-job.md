@@ -1,26 +1,28 @@
 ---
 title: Jenkins Queue Job build and release task
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-# Build: Jenkins Queue Job
+# Jenkins Queue Job task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
-![](_img/jenkins-queue-job.png) Queue a job on a Jenkins server
+Use this task in a build or release pipeline to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,8 +30,11 @@ monikerRange: '>= tfs-2017'
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/JenkinsQueueJobV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -45,7 +50,7 @@ None
 <tr>
 <td>Jenkins service connection</td>
 <td>
-<p>Select the service connection for your Jenkins instance.  To create one, click **Manage** and create a new Jenkins service connection.</p>
+<p>Select the service connection for your Jenkins instance.  To create one, click <strong>Manage</strong> and create a new Jenkins service connection.</p>
 </td>
 </tr>
 
@@ -73,21 +78,21 @@ None
 <tr>
 <td>Parameterized job</td>
 <td>
-<p>Select this option if the Jekins job requires parameters.</p>
+<p>Select this option if the Jenkins job requires parameters.</p>
 </td>
 </tr>
 
 <tr>
 <td>Job parameters</td>
 <td>
-<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the paramter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> paramter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
+<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
 </td>
 </tr>
 
 <tr>
 <td>Trust server certificate</td>
 <td>
-<p>Selecting this option results in the Jenkins server's SSL certificate being trusted even if it is self-signed or cannot be validated by a Certificate Authority (CA).
+<p>Selecting this option results in the Jenkins server&#39;s SSL certificate being trusted even if it is self-signed or cannot be validated by a Certificate Authority (CA).
 </td>
 </tr>
 
@@ -100,7 +105,7 @@ You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatic
 To set it up:
 
 <ol>
-<li>Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
+<li>Install the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin" data-raw-source="[Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)">Team Foundation Server Plug-in</a> on the Jenkins server.
 </li>
 <li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for Azure Pipelines/TFS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
 </li>
@@ -112,7 +117,7 @@ Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&l
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -121,8 +126,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

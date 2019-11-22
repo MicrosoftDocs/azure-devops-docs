@@ -4,9 +4,9 @@ description: Leave your file shares behind and bring your packages to Azure DevO
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -31,14 +31,14 @@ List operations on your file shares require the client to open every `nupkg` and
 file share has been configured to provide an index that the NuGet client understands.
 - **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. 
 This ensures that any dependencies on that version are guaranteed to remain valid. 
-However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../feeds/immutability.md).
+However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../artifacts-key-concepts.md#immutability).
 - **Well-formedness:** Azure DevOps Services validates all pushed packages to ensure they're well-formed.
 This prevents invalid packages from entering your development and build environments.
 However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.
 
-### NuGet 3.x is recommended
+### NuGet 4.8+ is recommended
 
-[!INCLUDE [nuget-3x](../_shared/nuget/nuget-3x.md)]
+[!INCLUDE [nuget-recommended-version](../_shared/nuget/nuget-recommended-version.md)]
 
 ### Authentication and authorization
 
@@ -144,4 +144,4 @@ This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds
 
-Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-to's for [restoring](/azure/devops/pipelines/packages/nuget-restore) and [publishing](/azure/devops/pipelines/targets/nuget) packages in Team Build.
+Update your builds to ensure they have the right credentials to consume and publish packages in feeds. See the how-tos for [restoring](/azure/devops/pipelines/packages/nuget-restore) and [publishing](/azure/devops/pipelines/artifacts/nuget) packages in Team Build.

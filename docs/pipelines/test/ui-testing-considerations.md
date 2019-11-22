@@ -1,28 +1,30 @@
 ---
-title: Run UI tests in a CI/CD pipeline
-titleSuffix: Azure Pipelines & TFS
+title: Configure for UI testing
 description: Continuous testing. Things to consider when running UI tests and FAQ. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.custom: continuous-test
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
+ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # UI testing considerations
 
-**Azure Pipelines | TFS 2017.1 and later**
+[!INCLUDE [version-header-vsts-tfs2017](../_shared/version-tfs-2017-rtm.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
 the typical considerations for running UI tests. 
 
 ::: moniker range="<= tfs-2018"
+
+> [!NOTE] 
+> Applies only to TFS 2017 Update 1 and later.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -40,7 +42,7 @@ When running Selenium tests for a web app, you can launch the browser in two way
    components being visible. While this mode is obviously not useful for browsing the web,
    it is useful for running automated tests in an unattended manner in a CI/CD pipeline.
    [Chrome](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
-   and [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Headless_mode) browsers can be run in headless mode.
+   and [Firefox](https://developer.mozilla.org/docs/Mozilla/Firefox/Headless_mode) browsers can be run in headless mode.
 	
    This mode generally consumes less resources on the machine because the UI is not
    rendered and tests run faster. As a result, potentially more tests can be run in
@@ -79,7 +81,7 @@ A special configuration is required for agents to run UI tests in visible UI mod
 
 Microsoft-hosted agents are pre-configured for UI testing and UI tests for both
 web apps and desktop apps. Microsoft-hosted agents are also
-pre-configured with [popular browsers and matching web-driver versions](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
+pre-configured with [popular browsers and matching web-driver versions](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md)
 that can be used for running Selenium tests.
 The browsers and corresponding web-drivers are updated on a periodic basis.
 To learn more about running Selenium tests, see [UI test with Selenium](continuous-test-selenium.md)
@@ -100,7 +102,7 @@ context of the user specified in the auto-logon settings.
 If you use Remote Desktop to access the computer on which an agent is running
 with auto-logon, simply disconnecting the Remote Desktop causes the computer
 to be locked and any UI tests that run on this agent may fail.
-To avoid this, use the [tscon](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tscon)
+To avoid this, use the [tscon](https://docs.microsoft.com/windows-server/administration/windows-commands/tscon)
 command on the remote computer to disconnect from Remote Desktop. For example: 
 
 `%windir%\System32\tscon.exe 1 /dest:console`
@@ -174,12 +176,20 @@ Use the `TestContext.AddTestAttachment()` method available in NUnit 3.7 or highe
 
 ---
 
-> [!NOTE]
-> If you use the [Publish Test Results task](../tasks/test/publish-test-results.md)
-> to publish results, test result attachments can only be published if you are using
-> the VSTest (TRX) results format or the [NUnit 3.0 results](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
-> format. Result attachments cannot be published if you use JUnit or xUnit test results.
+If you use the [Publish Test Results task](../tasks/test/publish-test-results.md)
+to publish results, test result attachments can only be published if you are using
+the VSTest (TRX) results format or the [NUnit 3.0 results](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
+format. 
 
+Result attachments cannot be published if you use JUnit or xUnit test results. This is because these test result formats do not have a formal definition for attachments in the results schema. You can use one of the below approaches to publish test attachments instead.
+
+* If you are running tests in the build (CI) pipeline, you can use the
+  [Copy and Publish Build Artifacts](../tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
+  These will appear in the **Artifacts** page of your build summary. 
+
+* Use the REST APIs to publish the necessary attachments. Code samples can be found
+  in [this GitHub repository](https://github.com/ManojBableshwar/VstsTestRestApiSamples/blob/master/PublishResultsFromCsvWithAttachments/PublishResultsFromCsvWithAttachments.cs).
+  
 <a name="capture-video"></a>
 
 ### Capture video

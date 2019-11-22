@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts WebApiConnectedServiceDetails API | Extensions for Azure DevOps Services
+description: Data representation of Web API connected service details.
 ms.assetid: ac6590ce-301f-fd1f-8f29-e41c5a86b660
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/25/2016
 ---
 

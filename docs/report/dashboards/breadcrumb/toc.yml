@@ -1,7 +1,0 @@
-- name: Azure DevOps & TFS
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Dashboards
-    tocHref: /azure/devops/report/dashboards/
-    topicHref: /azure/devops/report/dashboards/index

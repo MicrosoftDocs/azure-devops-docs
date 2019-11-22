@@ -1,20 +1,20 @@
 ---
-title: FAQs and problem solutions for manual testing   
+title: FAQs and problem solutions   
 description: FAQs for manual testing topics for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs](_shared/version-inc-vs.md)] 
+[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -33,7 +33,7 @@ monikerRange: '>= tfs-2015'
 
 ![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I group and reorder my requirement-based test suites together?
 
@@ -51,17 +51,11 @@ Drag and drop tests to reorder them.
 for example, all tests that have Priority=1. The suite will automatically include 
 every test case that is returned by the query that you define.
 
-### Q: Can I edit other properties of a test plan?
+<a name="copyclonetce"></a>
 
-**A:** You can only do this from Microsoft Test Manager (MTM). If you're using Visual Studio 2017, Visual Studio 2015,
-Visual Studio 2013, or Visual Studio 2012 Update 3, you can open a test plan in MTM directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
-(The most recently installed version of MTM is launched.)
+### Q: Can I copy or clone test plans and test suites?
 
-![Open test plan using Microsoft Test Manager](_img/create-a-test-plan/OpenTestPlanMTM.png) 
-
-### Q: Can I copy, clone, and move test plans and test suites?
-
-**A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
+**A:** Yes. For test plans, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). For test suites, use [this API](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose these capabilities through the out-of-box UI in a future release.
 
 ### Q: Can I export the test plan to share or review offline?
 
@@ -113,7 +107,7 @@ Or permanently delete it.
 
 ![Delete a test case](_img/create-test-cases/delete-test-case.png)
 
-See also [Delete test artifacts](../boards/backlogs/remove-delete-work-items.md#delete-test)
+See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
 ### Q: Can I add an extra line to a test step?
 
@@ -124,6 +118,8 @@ results field to add an extra line.
 
 **A:** Select a test step. Press Alt+P to insert a new test step 
 above the selected step.
+
+<a name="add-multiple-test-cases"></a>
 
 ### Q: Is there a way to quickly add multiple test cases at the same time?
 
@@ -140,9 +136,10 @@ Switch between Grid and List views using the View menu at the right of the windo
 
 ![Use the View menu to switch between List and Grid views](_img/create-test-cases/GridViewSwitch.png)
 
-> **Note**: Do not use the Team plugin for Excel to add or update test case work items.
-  Excel cannot parse the format used to store test steps, and in some cases
-  this may affect the formatting of the test case work items. 
+> [!NOTE]
+> Do not use the Team plugin for Excel to add or update test case work items.
+> Excel cannot parse the format used to store test steps, and in some cases
+> this may affect the formatting of the test case work items. 
 
 ### Q: Can I bulk edit multiple test cases?
 
@@ -157,16 +154,10 @@ When you review, you can update and add new test cases.
 Or, you can filter and sort the test cases in list view. Then select 
 just the ones that you want to bulk edit using the grid.
 
-![Select test cases in list view to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
+![Select test cases in listview to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
 
 To return to the test suite view, switch the view 
 from Grid back to List.
-
-<a name="copyclonetce"></a>
-
-### Q: Can I copy, clone, and move test plans and test suites?
-
-**A:** Yes, install the [Test Case Explorer extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer) from Marketplace.
 
 ### Q: Can I copy test cases and test steps from an existing Excel worksheet?
 
@@ -212,13 +203,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -322,7 +313,7 @@ against that build.
 
 ### Q: Can I fix my test steps while I'm running a test?
 
-**A:** Yes, if you have the Test Manager for Azure DevOps. 
+**A:** Yes, if you have Azure Test Plans for Azure DevOps. 
 You can insert, move, or delete steps. 
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
@@ -335,9 +326,10 @@ The tool to edit the test steps is shown.
 
 ### Q: Can I add a screenshot to the test results when I am running a test?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to take screenshots of the web 
-app while testing. 
+app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
 
@@ -345,9 +337,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture my actions on the app as a log?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner capture your actions on the web 
-app as image logs while testing.
+app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
 ![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
 
@@ -355,9 +348,10 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 
 ### Q: Can I capture screen recordings of my app?
 
-**A:** If you are using Google Chrome, you can use 
+**A:** If you are using Google Chrome or Firefox, you can use 
 the web runner to capture screen recordings of 
-your web and desktop apps while testing. 
+your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
+or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
 ![Capturing a screen recording from the app](_img/_shared/collect-diagnostic-data-11.png) 
 
@@ -366,6 +360,20 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: How do I control how long I keep my test data?
 
 **A:** [Learn more here](how-long-to-keep-test-results.md).
+
+### Q: Where can I download the Test Runner client?
+
+**A:** The Test Runner desktop client can be downloaded from [here](https://aka.ms/ATPTestRunnerDownload).
+
+### Q: What are the supported operating systems for the Test Runner client?
+
+**A:** The Test Runner desktop client is currently supported only on Windows. 
+
+### Q: Can I opt out of telemetry for the Test Runner client? 
+
+**A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
+in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/PrivacyStatement),
+no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
 ### Q: Can I run tests offline and then import the results?
@@ -476,15 +484,6 @@ Test results are often deleted before you can analyze them.
 
 [Go to related topic &gt;](mtm/share-steps-between-test-cases.md)
 
-### Q: How do I use shared steps in Microsoft Test Manager?**  
-
-**A:** It's almost exactly the same in Microsoft Test Manager as in the web portal. The buttons look slightly different.  
-  
-### Q: Can I find all my shared steps, and all the test cases where they are used?**  
-
-**A:** Yes. [Open Microsoft Test Manager](mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md) and look under **Organize**, **Shared Steps Manager**.  
-Shared steps and test cases are stored as work items in Team Foundation Server.  
-  
 ### Q: Can I share steps between test plans and projects?**  
 
 **A:** Yes. But don't forget that if you edit shared steps, the changes appear in every place you use them.  
@@ -532,14 +531,14 @@ Some browser versions do not currently support all the features of the Test &amp
 
 <p />
 For more details, see 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web).
+<a href="https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web" data-raw-source="[Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web)">Visual Studio Marketplace</a>, Azure DevOps tab.
 
 <a name="recording-playback"><a/>
 ### Q: How do I play the video recordings I created with the extension?
 
 **A:** The video recordings created by the Test &amp; Feedback extension can be
 viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the
-[VLC Video Player](http://www.videolan.org/vlc/download-windows.html).
+[VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
 ### Q: Does the extension support Team Foundation Server?
 
@@ -562,40 +561,39 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
 
-*****
+## FAQ on New Test Plans Page
 
-<a name="mtmqna"></a>
-## Microsoft Test Manager
+### Q: How can I assign configurations to my test cases?
+**A:** You can assign configurations in two ways: 
 
-[Go to related topic &gt;](mtm/run-manual-tests-with-microsoft-test-manager.md)
+a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
+![FAQ1.1](_img/FAQ1.1.png)
 
-### Q: Can I record a test in one test plan and play it back in another?
-  
-**A:** Yes, this is a great way to do regression tests quickly and accurately. 
-If you want to repeat some tests you did in a previous sprint, 
-just add those test cases to the test plan for the current sprint.
-The recording is linked to the test case, not to its appearance 
-in any particular test plan or suite.
+b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
 
-### Q: Can I record a test in one test configuration and play it back in a different configuration? The tests for different configurations show up as separate tests in the Run page.
-  
-**A:** Yes, the recording is linked to the test case, 
-so you can play it back from any instance of that test case, even in different 
-[test configurations](mtm/test-configurations-specifying-test-platforms.md), 
-test suites, or test plans.
 
-### Q: Some or all of my actions aren't recorded, or the playback doesn't work properly. Why?
-  
-**A:** Action recording works best for apps in which each user 
-interface field has a unique ID, and for basic actions such as keystrokes, 
-clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
-To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
+### Q: How can I see the configurations assigned to my test cases?
+**A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
+![FAQ2](_img/FAQ2.png)
 
-### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
+### Q: How can I edit the test case?
+**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
+![FAQ3](_img/FAQ3.png)
 
-**A:** Yes, see [Automate system tests](../pipelines/index.md).
+### Q: How can I see the outcome of each test case?
+**A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
+![FAQ4](_img/FAQ4.png)
+
+### Q: How can I assign testers?
+**A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
+![FAQ5](_img/FAQ5.png)
+
+### Q: How can I view the execution history of the test case?
+**A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
+
+
+### Q: Can I select more than 1 work item while creating a requirement based suite?
+**A:** No, the requirement based suite is linked to one work item.
 
 *****
 

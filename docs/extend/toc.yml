@@ -1,16 +1,16 @@
-- name: "Develop Extensions"
-  href: index.md
-- name: Overview
+- name: What are extensions?
+  href: ./overview.md
+- name: Develop a web extension
+  href: get-started/node.md
+- name: Tutorials
   items:
-    - name: What are extensions?
-      href: ./overview.md
-- name: Quickstarts
-  items:
-  - name: Develop a web extension
-    href: get-started/node.md
+  - name: Create a custom pipelines task
+    href: develop/add-build-task.md
+  - name: Use a pipeline decorator
+    href: develop/add-pipeline-decorator.md
 - name: Samples
   items:
-  - name: Sample extensions
+  - name: Azure DevOps Services extension samples
     href: develop/samples-overview.md
 - name: Concepts
   items:
@@ -26,8 +26,6 @@
       href: develop/add-hub.md
     - name: Add a menu action
       href: develop/add-action.md
-    - name: Add a build or release task
-      href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
     - name: Add a new service endpoint
@@ -35,9 +33,9 @@
     - name: Add a service hook
       href: develop/add-service-hook.md
     - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/extend/toc.json&bc=/azure/devops/extend/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Add a chart
       href: develop/add-chart.md
     - name: Store data and settings
@@ -60,7 +58,7 @@
       href: develop/call-rest-api.md
     - name: Extensions for public projects
       href: develop/public-project.md
-    - name: New navigation (preview)
+    - name: Use vertical navigation
       href: develop/web-navigation.md
     - name: Work with URLs
       href: develop/work-with-urls.md      
@@ -90,7 +88,7 @@
       href: publish/overview.md
     - name: Package and publish integrations
       href: publish/integration.md
-    - name: Make your listing public
+    - name: Make listing public and Top Publisher program
       href: publish/publicize.md
     - name: Publish via command line
       href: publish/command-line.md
@@ -110,8 +108,10 @@
   items:
   - name: Manifest reference
     href: develop/manifest.md
-  - name: Build/Release task reference
-    href: develop/build-task-schema.md
+  - name: Integrate a Pipelines task into an extension
+    href: develop/integrate-build-task.md
+  - name: Pipeline decorator context
+    href: develop/pipeline-decorator-context.md
   - name: Endpoint authentication schemes
     href: develop/auth-schemes.md
   - name: Content hosting
@@ -181,13 +181,3 @@
       href: reference/client/controls/waitcontrol.md
     - name: How to get help
       href: support/help.md
-- name: Resources
-  items:
-  - name: Visual Studio Marketplace
-    href: https://marketplace.visualstudio.com/
-  - name: Manage Extensions
-    href: ../marketplace/index.md
-  - name: Build Visual Studio extensions
-    href: /azure/devops/integrate/ide/extensions/overview
-
-

@@ -5,17 +5,20 @@ ms.topic: conceptual
 title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 09/11/2019
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
 
+> [!NOTE]
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](PATs.md) to authenticate on behalf of a user.
+
 Authenticate your web app's users to access the REST APIs so that your app doesn't have to keep asking for their usernames and passwords.
-Azure DevOps Services uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.
+Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
 Use this token when you call the REST APIs from your app.
 
 First, you'll register your web app and get an app ID from Azure DevOps Services.
@@ -52,14 +55,14 @@ When your register your app, the application settings page is displayed.
 <img alt="Application settings for your app" src="./_img/app-settings.png" style="border: 1px solid #CCCCCC" />
 
 You'll call the authorization URL and pass your app ID and authorized scopes
-when you want to have a user authorize your app to access his/her Azure DevOps Services organization.
+when you want to have a user authorize your app to access their organization.
 You'll call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
 The settings for each app that you register are available from your profile (https://app.vssps.visualstudio.com/profile/view).
 
 ## Authorize your app
 
-If your user hasn't yet authorized your app to access his/her Azure DevOps Services organization,
+If your user hasn't yet authorized your app to access their organization,
 call the authorization URL. 
 
 ```no-highlight
@@ -77,7 +80,7 @@ client_id     | GUID   | The ID assigned to your app when it was registered
 response_type | string | `Assertion`
 state         | string | Can be any value. Typically a generated string value that correlates the callback with its associated authorization request.
 scope         | string | Scopes registered with the app. Space separated. See [available scopes](#scopes).
-redirect_uri  | URL    | Callback URL for your appp. **This must exactly match the URL registered with the app**
+redirect_uri  | URL    | Callback URL for your app. **This must exactly match the URL registered with the app**
 
 Azure DevOps Services will ask your user to authorize your app.
 It will handle authentication and then call you back with an authorization code, if the user approves the authorization.
@@ -158,7 +161,7 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 }
 ```
 <br>
-**Important:** securely persist the *refresh_token* so your app does not need to prompt the user authorize again. *Access tokens* expire relatively quickly and should not be persisted.
+<strong>Important:</strong> securely persist the <em>refresh_token</em> so your app does not need to prompt the user authorize again. <em>Access tokens</em> expire relatively quickly and should not be persisted.
 
 ## Use the access token
 
@@ -218,7 +221,7 @@ Replace the placeholder values in the sample request body above:
 }
 ```
 <br>
-**Important**: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
+<strong>Important</strong>: a new refresh token will be issued for the user. Persist this new token and use it the next time you need to acquire a new access token for the user.
 
 <a name="scopes"></a>
 
@@ -226,7 +229,7 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopestable](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../_shared/scopes.md)]
 
 When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.

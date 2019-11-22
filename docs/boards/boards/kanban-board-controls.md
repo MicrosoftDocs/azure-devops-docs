@@ -1,15 +1,17 @@
 ---
 title: Kanban board controls  
-titleSuffix: Azure Boards and TFS
-description: Use board controls available with your Kanban board in Azure Boards & Team Foundation Server    
+titleSuffix: Azure Boards
+description: Use board controls available with your Kanban board in Azure Boards, Azure DevOps, & Team Foundation Server   
+ms.custom: boards-kanban  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040  
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
+ms.date: 11/19/2018
 ---
 
 # Kanban board controls
@@ -48,6 +50,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+
 > [!div class="mx-tdCol2BreakAll"]
 > |Control                  | Function                      |
 > |--------------------------|-------------------------------|
@@ -70,10 +73,13 @@ Enter **?** to open the Kanban board keyboard shortcuts.
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
+
 Global keyboard shortcuts are available from TFS 2015.2 and later versions.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end

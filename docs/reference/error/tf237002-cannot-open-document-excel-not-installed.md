@@ -5,7 +5,7 @@ description: Appears when a Team Foundation add-in has been disabled in an Offic
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -18,7 +18,7 @@ ms.date: 09/28/2018
 
 Error message TF237002 or TF400593 appears when a Team Foundation add-in has been disabled in an Office client, or Office Primary Interop Assemblies are not installed or were damaged after they were installed.  
 
- The **Team** menu or **Team** ribbon appears when you install Visual Studio. You can install Visual Studio Community or Team Foundation Server Standalone Office Integration 2015 for free [from the Visual Studio download page](http://www.visualstudio.com/downloads/download-visual-studio-vs).  
+ The **Team** menu or **Team** ribbon appears when you install Visual Studio. You can install Visual Studio Community or Team Foundation Server Standalone Office Integration 2015 for free [from the Visual Studio download page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
   
  If the **Team** menu or **Team** ribbon doesn't appear in your Office client, try re-enabling the Team Foundation add-in. If you continue to have problems, verify that the .NET Programmability Support option is configured correctly. As a final solution, try repairing your Office client.  
   

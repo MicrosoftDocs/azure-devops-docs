@@ -6,10 +6,10 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Analyze and report on test results using the test perspective 
@@ -39,7 +39,7 @@ By using the Test perspective, you can create reports that answer the following 
 > [!NOTE]
 > If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups in the whole Team System cube.
   
- To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this topic.  
+ To use many Test measures and dimension attributes, the test team must publish the test results to the data store for Team Foundation Server. For more information, see [Required activities](#tracking) later in this article.  
   
  
 <a name="example_report"></a>  
@@ -113,7 +113,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
  The test case corresponds to a type of work item that the test team uses to define both manual and automated tests that your team can run and manage by using Microsoft Test Manager. A test plan consists of test configurations and test suites. A test configuration defines the software or hardware on which you want to run your tests. A test suite defines a hierarchy within the plan so that you can group test cases together.  
   
- For more information, see [Testing overview](../../test/index.md).  
+ For more information, see [Testing overview](../../test/index.yml).  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
@@ -158,14 +158,14 @@ The following table describes the attributes that are defined for the Test Run d
   
 <a name="work_item"></a> 
 ###  Work item and work item linked dimensions  
-You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this topic, provides an example of using the linked work item.  
+You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this article, provides an example of using the linked work item.  
   
  For a description of each attribute, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md)    
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

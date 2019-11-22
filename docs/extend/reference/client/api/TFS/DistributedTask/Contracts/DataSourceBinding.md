@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts DataSourceBinding API | Extensions for Azure DevOps Services
+description: Data representation of data source binding.
 ms.assetid: 03d2d601-5e71-5b7c-2851-d733ba90dc90
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

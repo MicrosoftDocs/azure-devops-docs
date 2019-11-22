@@ -1,6 +1,6 @@
 ```YAML
-# Service Fabric Application Deployment
-# Deploy a Service Fabric application to a cluster.
+# Service Fabric application deployment
+# Deploy an Azure Service Fabric application to a cluster
 - task: ServiceFabricDeploy@1
   inputs:
     applicationPackagePath: 
@@ -21,7 +21,6 @@
     #upgradeMode: 'Monitored' # Required when overridePublishProfileSettings == True && IsUpgrade == True# Options: monitored, unmonitoredAuto, unmonitoredManual
     #failureAction: 'Rollback' # Required when overridePublishProfileSettings == True && IsUpgrade == True && UpgradeMode == Monitored# Options: rollback, manual
     #upgradeReplicaSetCheckTimeoutSec: # Optional
-    #replicaQuorumTimeoutSec: # Optional
     #timeoutSec: # Optional
     #forceRestart: false # Optional
     #healthCheckRetryTimeoutSec: # Optional
@@ -39,5 +38,5 @@
     #azureSubscription: # Required when configureDockerSettings == True && RegistryCredentials == AzureResourceManagerEndpoint
     #registryUserName: # Optional
     #registryPassword: # Optional
-    #passwordEncrypted: # Optional
+    #passwordEncrypted: true # Optional
 ```

@@ -5,18 +5,18 @@ description: Keep your repository's branch layout clean and understandable by re
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 10/11/2018
 monikerRange: '>= tfs-2018'
 ---
 
 
 # Require branches to be created in folders
 
-#### Azure Repos | TFS 2018
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 
 When you have many people collaborating in a repository, the number and names of branches can quickly get out of control.
 Hierarchical branch folders is an effective way to tame the chaos.
@@ -39,60 +39,60 @@ As an example, we'll set our repository to enforce the following rules:
 
 ## Preparation
 
-* You will need the Team Foundation version control command (`tf.exe`) on your computer.
-Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the **Developer Command Prompt**).
+* You will need the Team Foundation version control command (`tf.exe`).
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
+
+> [!NOTE]
+> The command `tf.exe` is installed by default with Visual Studio. For additional options, download [Team Explorer](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TeamExplorer).
 
 ## Enforce permissions
 
-Run the following commands in the Developer Command Prompt.
+Run the following commands in the Developer Command Prompt, under **Start** > **Visual Studio** > **Developer Command Prompt**.
 Each command is preceded with an explanation of what it's doing. If you don't have a personal access token cached (for example by signing in to the Azure DevOps Services web portal) you'll be prompted to login.
 
 First, block the Create Branch permission at the repository root for the project's contributors.
 
-    tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo
+    tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo
 
 Then, allow contributors to create branches under `features` and `users`.
 
-    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
+    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
 
-    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
+    tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
 
 Allow administrators to create branches under `releases`.
 
-    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
+    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
 
 Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.
 
-    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://fabrikam-fiber.visualstudio.com/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
+    tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:master
 
 >[!NOTE]
 >For more information, see [tf git permission](../../repos/tfvc/git-permission-command.md). You can also access help for these commands from the command line by running `tf git /?` and `tf git permission /?`.
 
 ## Rename old branches
 
-# [Browser](#tab/browser)
+#### [Browser](#tab/browser/)
+1. Open your repo on the web and [select the **Branches** view](manage-your-branches.md).
+2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
+3. Choose its context menu (the `...` button) and choose **New branch**.
 
-0. Navigate to the **Branches** page.
-0. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
-0. Choose its context menu (the `...` button) and choose **New branch**.
+   ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
 
-  ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
+4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-0. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
+   ![Create new branch](_img/require-branch-folders/create-new-branch.png)
 
-  ![Create new branch](_img/require-branch-folders/create-new-branch.png)
+5. Choose the red trashcan icon next to the old branch name to delete it.
 
-0. Choose the red trashcan icon next to the old branch name to delete it.
-
-  ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
+   ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
 
 
 >[!NOTE] 
 >Any custom permissions or branch policies you had set up will not be migrated.
 
-# [Command Line](#tab/command-line)
-
+#### [Command Line](#tab/command-line/)
 First, make sure you have the latest set of branches:
 
     cd {your_repo}
@@ -107,4 +107,4 @@ Then, repeat these commands for each branch you want to migrate:
 >[!NOTE]
 >Any custom permissions or branch policies you had set up will not be migrated.
 
----
+* * *

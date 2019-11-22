@@ -1,11 +1,13 @@
 ---
-title: TF31004-Team Foundation error...titleSuffix: Azure DevOps & TFS
+title: TF31004-Team Foundation error...
+titleSuffix: Azure DevOps & TFS
 description: Occurs when the instance of Team Foundation on the local computer cannot connect to the application-tier server for Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-agile
-ms.assetid: f0bcc998-859f-4b75-bb3d-3976cd8578f6
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs8-859f-4b75-bb3d-3976cd8578f6
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -18,13 +20,13 @@ This is a generic error message displayed when the instance of Team Foundation o
   
  The likely causes of this problem are:  
   
--   The version of Team Foundation running on the local computer does not match the version running on the Team Foundation Server server {name}.  
+- The version of Team Foundation running on the local computer does not match the version running on the Team Foundation Server server {name}.  
   
--   The server returned HTML content instead of XML content.  
+- The server returned HTML content instead of XML content.  
   
--   The required Web service on the server could not be found.  
+- The required Web service on the server could not be found.  
   
- The procedure below will help you correct the cause.  
+  The procedure below will help you correct the cause.  
   
 ### To correct this error  
   

@@ -1,20 +1,24 @@
 ---
 title: Deploy to Azure index to content
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn how to deploy to Azure using Azure Pipelines. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BC7FACEF-6E79-4BBA-BF53-07BD27EEB235  
-ms.manager: douge
-ms.author: kaelli
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 05/08/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Deploy to Azure
 
+[!INCLUDE [version-tfs-2015-rtm](_shared/version-tfs-2015-rtm.md)]
+
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+
+
 ::: moniker-end
 
 Azure Pipelines is Microsoft's DevOps solution for Azure. The Build and Release services provide streamlined experiences to deploy your apps to one of Azure's many services. These services provide a continuous delivery solution if your code is managed in GitHub, Azure Repos Git or Team Foundation Version Control, or in one of the other Git servers.

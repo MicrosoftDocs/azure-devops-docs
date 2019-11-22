@@ -1,14 +1,14 @@
----
-title: Microsoft Release Management 2013 Server and Client Version - Help Contents
-titleSuffix: Azure Pipelines & TFS
+﻿---
+title: Microsoft Release Management 2013 Server & Client Version
+ms.custom: seodec18
 description: Create managed continuous deployment pipelines in Azure Pipelines or TFS using Release Management 2013 (server and client version)
 ms.assetid: 15B2F7A1-E9D3-4D4D-9991-A514959D71F2
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---

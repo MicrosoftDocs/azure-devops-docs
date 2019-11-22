@@ -4,12 +4,12 @@ description: Work with Maven packages programmatically using the REST APIs for V
 ms.assetid:
 ms.manager: andrusj
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 02/10/2017
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 ---
 # Maven
 

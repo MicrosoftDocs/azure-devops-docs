@@ -1,7 +1,0 @@
-- name: Azure DevOps & TFS
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Technical Articles
-    tocHref: /azure/devops/
-    topicHref: /azure/devops/articles/index

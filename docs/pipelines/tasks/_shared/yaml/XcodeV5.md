@@ -30,6 +30,6 @@
     #destinationDevices: # Optional
     #args: # Optional
     #workingDirectory: # Optional
-    #useXcpretty: # Optional
+    #useXcpretty: true # Optional
     #publishJUnitResults: # Optional
 ```

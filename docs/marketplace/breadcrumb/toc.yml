@@ -1,7 +1,7 @@
-- name: Azure DevOps & TFS
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Manage extensions
-    tocHref: /azure/devops/
-    topicHref: /azure/devops/marketplace/index
+  - name: Marketplace & extensibility
+    tocHref: /azure/devops/marketplace/
+    topicHref: /azure/devops/marketplace-extensibility/index

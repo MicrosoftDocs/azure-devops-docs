@@ -19,7 +19,7 @@ exports.submitRequests = function()
             context.repositoryId = result.responseBody.value[0].id;
         });
 
-    //get the top level item and its immediate children including lastestProcessedChange
+    //get the top level item and its immediate children including latestProcessedChange
     apiwriter.getJson('/git/repositories/{repositoryId}/items?scopePath={folderPath}&recursionLevel=OneLevel&latestProcessedChange=true',
         function(context, result) {
 			//get path for more detailed GET request 

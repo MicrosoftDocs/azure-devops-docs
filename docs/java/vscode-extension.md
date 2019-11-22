@@ -1,13 +1,13 @@
----
-title: VS Code extension for Java development with Azure DevOps Services
+﻿---
+title: VS Code extension for Java development
 description: Learn how to use the VS Code extension for Java development with Azure DevOps Services
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 04/12/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -18,11 +18,11 @@ monikerRange: '>= tfs-2015'
 Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can find out more about it at https://code.visualstudio.com. The Azure DevOps extension allows you to connect to Azure DevOps Services, monitor your builds and manage your pull requests and work items for your Azure DevOps Services Git and TFVC repositories.
 
 > [!div class="mx-imgBorder"]
-![The Azure DevOps Services VS Code extension in action](_img/vscode.png)
+> ![The Azure DevOps Services VS Code extension in action](_img/vscode.png)
 
 ## Prerequisites
 
- - You already have an Azure DevOps organization. If you do not already have an Azure DevOps organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
+ - You already have an organization in Azure DevOps. If you do not already have an organization, [sign up](/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
  - You have already [cloned an Azure DevOps Services Git repository](/azure/devops/repos/git/clone?tabs=command-line) to your computer locally.
 
@@ -30,14 +30,14 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Install the extension
 
-To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type team. Find the Azure DevOps Services extension published by Microsoft and click the **Install** button. 
+To install the extension with the latest version of Visual Studio Code, bring up the **Visual Studio Code Command Palette** (press **F1**), type `install` and choose **Extensions: Install Extensions**. In the **Search Extensions in Marketplace** text box, type *azure repos*. Find the Azure Repos extension published by Microsoft and click the **Install** button. 
 
 Restart Visual Studio Code.
 
 ## Acquire a personal access token
 
 If you are connecting to Azure DevOps Services or TFS, you may need a *personal access token* (PAT) to securely access your account. 
-If you do not have a personal access token yet, you will need to [create one on your Azure DevOps organization](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
+If you do not have a personal access token yet, you will need to [create one on your organization](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate). 
 
 ## Connect to your Azure DevOps Services Git repo
 
@@ -46,7 +46,7 @@ Once you have installed the extension, open either the root folder or a sub-fold
 The indicator looks like this:
 
 > [!div class="mx-imgBorder"]
-![Azure DevOps Services VS Code extension login indicator](_img/team-error.png)
+> ![Azure DevOps Services VS Code extension login indicator](_img/team-error.png)
 
 
 To log in to your account, run the `team signin` command. If your repository is an Azure DevOps Services repository, you will be prompted to enter your personal access token. When you do, it will be stored securely on your computer and used to connect to Azure DevOps Services. 
@@ -63,20 +63,20 @@ Once your credentials are verified, the status bar indicators will be active and
 ## Status bar indicators
 
 > [!div class="mx-imgBorder"]
-![Team Project name status indicator](_img/project-indicator.png)
- This status bar item is populated with the name of the team project to which the Git repository belongs. Clicking on the item will open your browser to the team website.
-
+> ![Team Project name status indicator](_img/project-indicator.png)
+>  This status bar item is populated with the name of the team project to which the Git repository belongs. Clicking on the item will open your browser to the team website.
+> 
 > [!div class="mx-imgBorder"]
-![Pull request status indicator](_img/pullrequest-indicator.png)
- This status bar item is a count of active pull requests that you either requested yourself or were added to explicitly as a reviewer. Clicking the item will display that list of pull requests in the quick pick list. Choosing one will take you to that pull request in your browser. This indicator will update its status every 5 minutes.
-
+> ![Pull request status indicator](_img/pullrequest-indicator.png)
+>  This status bar item is a count of active pull requests that you either requested yourself or were added to explicitly as a reviewer. Clicking the item will display that list of pull requests in the quick pick list. Choosing one will take you to that pull request in your browser. This indicator will update its status every 5 minutes.
+> 
 > [!div class="mx-imgBorder"]
-![Build status indicator](_img/buildstatus-indicator.png)
- This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build's summary page in your browser. This indicator will update its status every 5 minutes.
-
+> ![Build status indicator](_img/buildstatus-indicator.png)
+>  This status bar item shows the status of the build for this particular repository and branch. Hovering over the item will provide additional information about which build was referenced (if any). Clicking on the item will take you to that build's summary page in your browser. This indicator will update its status every 5 minutes.
+> 
 > [!div class="mx-imgBorder"]
-![Work item count status indicator](_img/pinnedquery-indicator.png)
- This status bar item shows the number of items returned by your pinned work item query. If you have not configured a pinned query it defaults to the work items assigned to you. Clicking the item will show you the work items the query returns. This indicator will update its status every 5 minutes.
+> ![Work item count status indicator](_img/pinnedquery-indicator.png)
+>  This status bar item shows the number of items returned by your pinned work item query. If you have not configured a pinned query it defaults to the work items assigned to you. Clicking the item will show you the work items the query returns. This indicator will update its status every 5 minutes.
 
 ## Commands
 In addition to the status bar integrations, the extension also provides several commands for interacting with Azure DevOps Services and Team Foundation Server. In the Command Palette (F1), type team and choose a command.
@@ -89,8 +89,8 @@ In addition to the status bar integrations, the extension also provides several 
 - `team view blame`- If a file in the repository is opened in the editor, it will open your browser to the blame page for that file in the current branch in the server repository.
 - `team view build summary` - Same behavior as clicking on the Build Status status bar item.
 - `team view history` - If a file in the repository is opened in the editor, it will open your browser to the history page for that file in the current branch in the server repository. Otherwise, the history of the current branch in the server repository will be opened.
-- `team signin` - Use this command to log in to an Azure DevOps organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
-- `team signout` - Use this command to log out from an Azure DevOps organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
+- `team signin` - Use this command to log in to an organization or Team Foundation Server 2015 Update 2 (and later) server. When your credentials are provided, they will be stored securely on your computer. The saved credentials will be used for that account until they are removed by the team signout command or overwritten by a subsequent team signin command. See the "Secure Credential Storage" topic below for more details.
+- `team signout` - Use this command to log out from an organization or Team Foundation Server 2015 Update 2 (and later) server. Logging out will remove your credentials from your local computer. To log back in, you will need to run the team signout command again.
 - `team view pull requests` - Same behavior as clicking on the Pull Requests status bar item.
 - `team view website` - Same behavior as clicking on the team project status bar item.
 - `team view work items` - Prompts you to choose a work item that is assigned to you, sorted by ChangedDate descending. Choosing a work item will open it in your browser. This command will return a maximum of 200 results with an option to "Browse additional work items...". Choosing that option will open your browser to show all of the results of your query.
@@ -102,7 +102,7 @@ When you run the `team signin` command, the credentials that you provide will be
  - On Linux, your credentials will be stored in a file on your local file system in a subdirectory of your home folder. That file is created only with RW rights for the user running Visual Studio Code. It is not encrypted on disk.
 
 ## Next steps
-Check out the [README.md in the GitHub repository](https://github.com/Microsoft/Azure DevOps Services-vscode/blob/master/README.md) for more details on the extension.
+Check out the [README.md in the GitHub repository](https://github.com/Microsoft/vsts-vscode/blob/master/README.md) for more details on the extension.
 
 ## Frequently asked questions (FAQ)
 
@@ -113,4 +113,4 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.
 
 **Q: Where can I find the source code for the extension?**
-**A:** The code is open source on GitHub at [Microsoft/Azure DevOps Services-vscode](https://github.com/Microsoft/Azure DevOps Services-vscode). We welcome feedback and contributions!
+**A:** The code is open source on GitHub at [Microsoft/vsts-vscode](https://github.com/Microsoft/vsts-vscode). We welcome feedback and contributions!

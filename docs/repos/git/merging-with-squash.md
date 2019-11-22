@@ -5,9 +5,9 @@ description: Squash merge your pull requests to keep a linear Git history
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: sdanie
-author: steved0x
+author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Squash merge pull requests
 
-#### Azure Repos | TFS 2018 | TFS 2017
+#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017
 
 ## Pull requests and Git history
 

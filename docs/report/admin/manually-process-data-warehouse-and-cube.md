@@ -1,15 +1,16 @@
----
-title: Manually process the data warehouse and analysis services cube
+﻿---
+title: Process data warehouse and analysis services cube
 titleSuffix: TFS
 description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/14/2018
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 # Manually process the TFS data warehouse and analysis services cube
@@ -40,7 +41,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 2. Log on to the application-tier server and open the Warehouse Control Web Service by entering the following URL in a supported web browser:  
 
-	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx  ``` 
+	```http://localhost:8080/tfs/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx``` 
 
 	If another name was used other than **tfs** for the virtual directory, then type the *IIS Virtual Directory* that was specified when Team Foundation Server was installed.  
 
@@ -121,7 +122,7 @@ This service changes the StringStoresCompatibilityLevel to 1100 for the **Work I
 
 1. From the Warehouse Control Web Service, choose **ProcessDimensionsForExpandedCapacity**.  
 
-2. Enter the name of the dimension. From the above error message, the dimension name is ```dimWorkItem```.  
+2. Enter the name of the dimension. From the above error message, the dimension name is ```vDimWorkItemOverlay```.  
  
 3. The service returns **True** when it successfully resets the value to 1100. 
 

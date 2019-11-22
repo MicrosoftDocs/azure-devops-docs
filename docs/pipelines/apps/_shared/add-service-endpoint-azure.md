@@ -8,7 +8,11 @@ If a subscription is not available, then add a service connection:
 
 <ol>
 
-<li>![Manage](_img/azure-web-app-deployment-step-azure-subscription-manage.png)</li>
+<li>
+
+![Manage](_img/azure-web-app-deployment-step-azure-subscription-manage.png)
+
+</li>
 
 <li>Click New service connection, and then click Azure.</li>
 

@@ -5,10 +5,11 @@ description: Syntax and usage of the global workflow elements to define data fie
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
-monikerRange: '>= tfs-2013 <= tfs-2018'
+monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 09/10/2017
 ---
 
@@ -32,26 +33,26 @@ By using global workflow, you can minimize the work that is required to define a
  **Specify FIELDS**:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<?xml version="1.0" encoding="utf-8"?>  
-<GLOBALWORKFLOW>  
-      <FIELDS>   
-      <FIELD> . . . </FIELD>  
-      </FIELDS>  
-</GLOBALWORKFLOW>  
-```  
+> ```XML 
+> <?xml version="1.0" encoding="utf-8"?>  
+> <GLOBALWORKFLOW>  
+>       <FIELDS>   
+>       <FIELD> . . . </FIELD>  
+>       </FIELDS>  
+> </GLOBALWORKFLOW>  
+> ```  
   
  **Specify GLOBALLISTS**:  
   
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<?xml version="1.0" encoding="utf-8"?>  
-<GLOBALWORKFLOW>  
-      <GLOBALLISTS>   
-      <GLOBALLIST> . . . </GLOBALLIST>  
-      </GLOBALLISTS>  
-</GLOBALWORKFLOW>  
-```  
+> ```XML 
+> <?xml version="1.0" encoding="utf-8"?>  
+> <GLOBALWORKFLOW>  
+>       <GLOBALLISTS>   
+>       <GLOBALLIST> . . . </GLOBALLIST>  
+>       </GLOBALLISTS>  
+> </GLOBALWORKFLOW>  
+> ```  
   
 <a name="FIELD"></a> 
 ##  FIELD (Definition) element  
@@ -59,32 +60,32 @@ By using global workflow, you can minimize the work that is required to define a
   
 > [!NOTE]
 >  You cannot specify the **HELPTEXT** element for a field that you define in a global workflow.  
-  
+> 
 > [!div class="tabbedCodeSnippets"]
-```XML 
-<FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "  
-syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
-reportable="Dimension | Detail | Measure" formula="avg" >  
-      <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
-      <ALLOWEXISTINGVALUE />  
-      <CANNOTLOSEVALUE />  
-      <COPY />  
-      <DEFAULT />  
-      <EMPTY />  
-      <FROZEN />      <MATCH />  
-      <NOTSAMEAS />  
-      <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
-      <READONLY />  
-      <REQUIRED />  
-      <SERVERDEFAULT />  
-      <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
-      <VALIDUSER />  
-      <WHEN>> . . . </WHEN>  
-      <WHENNOT> . . . </WHENNOT>  
-      <WHENCHANGED> . . . </WHENCHANGED>  
-      <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
-</FIELD>  
-```  
+> ```XML 
+> <FIELD name="fieldDisplayName" refname="fieldReferenceName" type="String | Integer | Double | DateTime | PlainText | HTML | History | TreePath | GUID "  
+> syncnamechanges="true | false" reportingname="reportingDisplayName" reportingrefname="reportingReferenceName"  
+> reportable="Dimension | Detail | Measure" formula="avg" >  
+>       <ALLOWEDVALUES> . . . </ALLOWEDVALUES>  
+>       <ALLOWEXISTINGVALUE />  
+>       <CANNOTLOSEVALUE />  
+>       <COPY />  
+>       <DEFAULT />  
+>       <EMPTY />  
+>       <FROZEN />      <MATCH />  
+>       <NOTSAMEAS />  
+>       <PROHIBITEDVALUES /> . . . </PROHIBITEDVALUES>  
+>       <READONLY />  
+>       <REQUIRED />  
+>       <SERVERDEFAULT />  
+>       <SUGGESTEDVALUES /> . . . </SUGGESTEDVALUES>  
+>       <VALIDUSER />  
+>       <WHEN>> . . . </WHEN>  
+>       <WHENNOT> . . . </WHENNOT>  
+>       <WHENCHANGED> . . . </WHENCHANGED>  
+>       <WHENNOTCHANGED> . . . </WHENNOTCHANGED>  
+> </FIELD>  
+> ```  
   
  
  <a name="LISTElements"></a>  

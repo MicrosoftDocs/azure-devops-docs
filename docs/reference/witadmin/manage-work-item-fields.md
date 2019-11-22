@@ -6,9 +6,10 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
 ms.topic: reference
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2018'
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
@@ -36,16 +37,16 @@ For an overview of the fields defined within a default process template, see [Wo
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 
+
+## Prerequisites  
   
- **Requirements**  
-  
--   To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.    
+-  To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.    
 -   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -59,7 +60,7 @@ witadmin indexfield /collection:CollectionURL /n:Name /index:on|off
 witadmin listfields /collection:CollectionURL /n:RefName [/unused]  
 ```  
   
-#### Parameters  
+### Parameters  
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
@@ -70,7 +71,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/syncnamechanges**|Specifies to use the work item field to store names and to update as changes are made in Active Directory or a workgroup. This option is valid only when a field with the data type of String is specified for the `typename`.<br /><br /> Specify `true` to enable synchronization for the data field, specify `false` to disable synchronization for the data field.|  
 |**/reportingname**:`ReportingName`|Specifies the name of the field in the data warehouse to be used for reporting.|  
 |**/reportingrefname**:`ReportingRefName`|Specifies the reference name of the field in the data warehouse to be used for reporting.|  
-|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](../xml/define-modify-work-item-fields.md).|  
+|**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [About work item fields and attributes](../../boards/work-items/work-item-fields.md).|  
 |**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
 |**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../xml/field-definition-element-reference.md).|  
 |**/unused**|Lists all fields that are not used by any project defined in the project collection.|  
@@ -79,45 +80,50 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 
 ### Indexed fields  
- A query index is created based on those fields that have indexing enabled. This index improves the response time when running queries that include indexed fields.  
+
+A query index is created based on those fields that have indexing enabled. This index improves the response time when running queries that include indexed fields.  
   
- By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. If there are other fields that your team frequently uses in their queries, you can add them to the query index.  
+By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. If there are other fields that your team frequently uses in their queries, you can add them to the query index.  
   
 ### Synchronizing person names with Active Directory  
- You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Active Directory. You must enable synchronization for each field for each project collection that contains the custom fields.  
+
+You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Active Directory. You must enable synchronization for each field for each project collection that contains the custom fields.  
   
- All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AuthorizedAs, System.AssignedTo, System.ChangedBy and System.CreatedBy.  Synchronization in enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../boards/queries/query-by-workflow-changes.md).  
+All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AuthorizedAs, System.AssignedTo, System.ChangedBy and System.CreatedBy.  Synchronization in enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../boards/queries/query-by-workflow-changes.md).  
   
- After synchronization is enabled, the field no longer shows a static string. Instead, the field shows the name associated with a user account. When you change the user name in Active Directory or in Workgroup, a field with `syncnamechanges` set to `true` automatically shows the new name.  
+After synchronization is enabled, the field no longer shows a static string. Instead, the field shows the name associated with a user account. When you change the user name in Active Directory or in Workgroup, a field with `syncnamechanges` set to `true` automatically shows the new name.  
   
- When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field does not allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:  
+When you assign the `syncnamechanges` attribute to a String field, the field always accepts valid user names. However, the field does not allow group names that are stored in Team Foundation Server or in Active Directory if any one of the following conditions is `true`:  
   
--   The `VALIDUSER` rule is specified across all work item types    
--   The `VALIDUSER` rule is specified for a work item type    
--   The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
+- The `VALIDUSER` rule is specified across all work item types    
+- The `VALIDUSER` rule is specified for a work item type    
+- The `ALLOWEDVALUES` rule is specified for a work item type, and that rule has a filter criteria that excludes groups  
   
- For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
+  For more information, see [All FIELD elements](../xml/field-definition-element-reference.md).  
   
 ### Attributes that you can change for each work item type  
- You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
+
+You change the following attributes or values defined for a field by changing the work item type definition in which the field appears:  
   
--   **Name** that displays on the work item form. See [Control](../xml/control-xml-element-reference.md)   
+-   **Name** that displays on the work item form. See [WebLayout and Control elements](../xml/weblayout-xml-elements.md) or [Control XML element reference](../xml/control-xml-element-reference.md).   
 -   **Help text**. See [Apply a field rule](../xml/apply-rule-work-item-field.md).    
 -   **Allowed values** or items within a pick list or drop-down menu. See [ALLOWEDVALUES, SUGGESTEDVALUES, and PROHIBITEDVALUES XML elements](../xml/define-pick-lists.md).  
   
 ## Examples  
- Unless otherwise specified, the following values apply in each example:  
+
+Unless otherwise specified, the following values apply in each example:  
   
 -   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
 -   Work item field name: AdventureWorks.Field    
 -   Default encoding: UTF-8  
   
 ### List fields  
- Use **witadmin listfields** to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which projects.  
+
+Use **witadmin listfields** to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which projects.  
   
 ### View the attributes of a work item field  
-  
--   Enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.  
+
+- Enter the following command to list the attributes defined for a specified field, such as Microsoft.VSTS.Common.Issue.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:Microsoft.VSTS.Common.Issue  
@@ -180,7 +186,8 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     ```  
   
 ### Rename a field  
- You can change the friendly name of a work item field to meet the naming conventions that your team uses. Note that the new name is applied to all work item types that reference the changed field in all projects in the project collection. The friendly name displays when you define filter criteria in a work item query. The name that appears on a work item form may be different than the friendly name defined for the field.  
+
+You can change the friendly name of a work item field to meet the naming conventions that your team uses. Note that the new name is applied to all work item types that reference the changed field in all projects in the project collection. The friendly name displays when you define filter criteria in a work item query. The name that appears on a work item form may be different than the friendly name defined for the field.  
   
 #### To rename a work item field  
   
@@ -212,7 +219,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 6.  On the **Query** toolbar, choose ![Run Query](_img/icon_runquery.png "Icon_runQuery")**Run**.  
   
-7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Availablecolumns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
+7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   
 8.  Select **Important Rank** in the **Available columns** box, and then choose the **>** button (add selected columns). Choose **OK**.  
   
@@ -227,12 +234,13 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name just specified.  
   
     > [!NOTE]  
-    >  For more information about how to change field labels on work item forms, see [ Control XML element reference](../xml/control-xml-element-reference.md).  
+    > For more information about how to change field labels on work item forms, see [Control XML element reference](../xml/control-xml-element-reference.md).  
   
 12. Close the new Task and choose **No** when you are prompted to save the work item.  
   
 ### Change the report as value for a field  
- The following command specifies the ability to report the type of the DateTime field AdventureWorks.CreatedOn to dimension. This field's data enters the warehouse and Analysis Services databases so that it can be used to filter reports.  
+
+The following command specifies the ability to report the type of the DateTime field AdventureWorks.CreatedOn to dimension. This field's data enters the warehouse and Analysis Services databases so that it can be used to filter reports.  
   
 ```  
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.CreatedOn /reportingtype:dimension  
@@ -276,7 +284,8 @@ witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
      If the change request fails, an error message appears. The most common mistakes that can be made are trying to change a system reference field, or trying to change a field of a data type other than String. These operations are not supported.  
   
 ### Delete a field  
- Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field AdventureWorks.Field from Collection1:  
+
+Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field AdventureWorks.Field from Collection1:  
   
 ```  
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field  
@@ -321,17 +330,19 @@ Enter the following command to delete the MyCompany.MyProcess.MyField field, and
 ```  
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:RefName  
 ```  
+
 Enter **y** at the confirmation prompt to complete this step.  
   
 ## Q & A  
   
 ### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
- **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
+
+**A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
   
- Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
+Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../on-premises-xml-process-model.md#before-you-customize).  
   
 ## Related articles 
- 
+
 -  [Customizing your work tracking experience](../customize-work.md)   
 -  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

@@ -27,7 +27,7 @@ WinRM over HTTPS, with the default port 5986 already opened in the firewall
 and a self-signed certificate installed on the machine. These virtual 
 machines can be accessed with no further configuration required.
 Existing Classic virtual machines can be also selected by using the 
-[Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
+[Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 task.
 
 * **Azure Resource Group**. If you have an 
@@ -37,7 +37,7 @@ protocol. You need to open port 5986 in the firewall, and install a
 self-signed certificate.
 
 To dynamically deploy Azure Resource Groups that contain virtual machines, use the 
-[Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
+[Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
 task. This task has a checkbox named **Enable Deployment Pre-requisites**. Select 
 this to automatically set up the WinRM HTTPS protocol on the virtual machines, 
 open port 5986 in the firewall, and install a test certificate. The virtual machines 

@@ -1,12 +1,13 @@
----
-title: Resolve errors received when configuring features for TFS
+﻿---
+title: Resolve errors received configuring TFS features
 titleSuffix: TFS 
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/19/2017
 ---
 
@@ -22,16 +23,16 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). 
 
   
-##Required permissions 
+## Required permissions 
   
--   To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  
+- To download and upload process templates, you must be a member of the **Project Collection Administrators** group. If security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  
   
--   To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
+- To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
   
- For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
+  For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](https://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](https://go.microsoft.com/fwlink/?LinkId=248071).  
  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
@@ -40,13 +41,13 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 ###  <a name="process_template"></a> Resolve errors by modifying a process template  
  You modify a process template by performing these steps:  
   
-1.  Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
+1. Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-2.  Modify a definition file for a work item type (WIT), categories, or process configuration. See [Customize your work tracking experience](../customize-work.md).  
+2. Modify a definition file for a work item type (WIT), categories, or process configuration. See [Customize your work tracking experience](../customize-work.md).  
   
-3.  Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
+3. Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
- See also [Update a customized process template to access new features](../update-customized-process-template.md).  
+   See also [Update a customized process template to access new features](../update-customized-process-template.md).  
   
 ###  <a name="team_project"></a> Resolve errors by modifying your project or project collection  
  To resolve an error or warning, you may choose to modify the project or project collection using the **witadmin** command. See [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).  
@@ -60,7 +61,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 |-----------|-----------|---------------------------------|-----------------------------|  
 |**TF400613: The work item type '{1}' specified in category '{0}' does not exist**.|A required WIT is missing from your project because it was renamed, was removed, or was not added. Either rename the specified WIT definition, or import the missing WIT from the latest version of the process templates installed with the TFS upgrade.|Change the WIT defined in the specified category to specify an existing WIT.|To rename a WIT, use `witadmin renamewitd`. To add a missing WIT, locate it in the latest process template, and import it using `witadmin importwitd`. See [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md).|  
 |**TF400614: Category '{0}' does not exist**.|A required category is missing from the categories definition file in the process template that was selected to update your project. Add the missing category.|Add the missing category to the process template. See [Use categories to group work item types](use-categories-to-group-work-item-types.md).|Add the missing category to the project using `witadmin importcategories`. See [Import and export categories](../witadmin/witadmin-import-export-categories.md)|  
-|**TF400617: The type of field '{0}' in work item type '{1}' conflicts with the type of the existing field**.|The data type of the field defined in the WIT being added does not match the data type defined in the project collection. Correct the assignment in the WIT definition and then rerun the wizard. **Note:**  The upgrade Visual Studio Team Foundation Server 2012 changes the **Description** field (System.Description) from a field type of plain text to HTML, in order to support text formatting and insertion of images and hyperlinks. In the latest version of Team Foundation Server, you can switch the data type between `PlainText` and `HTML`.|Download the process template, open the type definition, locate the `FIELD` assignment, modify the `type` attribute to match that defined for the collection, and then, upload the process template. See [FIELD (Definition) element reference](field-definition-element-reference.md), **Tip:**  To determine the type assigned to a field, run `witadmin listsfields`.|Use **witadmin changefield** and specify the `type` attribute. See [Manage work item fields](../witadmin/manage-work-item-fields.md). **Note:**  You can change the type definition for the project collection only when the type is `PlainText` or `HTML`.|  
+|**TF400617: The type of field '{0}' in work item type '{1}' conflicts with the type of the existing field**.|The data type of the field defined in the WIT being added does not match the data type defined in the project collection. Correct the assignment in the WIT definition and then rerun the wizard. **Note:**  The upgrade Visual Studio Team Foundation Server 2012 changes the **Description** field (System.Description) from a field type of plain text to HTML, in order to support text formatting and insertion of images and hyperlinks. In the latest version of Team Foundation Server, you can switch the data type between `PlainText` and `HTML`.|Download the process template, open the type definition, locate the `FIELD` assignment, modify the `type` attribute to match that defined for the collection, and then, upload the process template. See [FIELD (Definition) element reference](field-definition-element-reference.md), **Tip:**  To determine the type assigned to a field, run `witadmin listfields`.|Use **witadmin changefield** and specify the `type` attribute. See [Manage work item fields](../witadmin/manage-work-item-fields.md). **Note:**  You can change the type definition for the project collection only when the type is `PlainText` or `HTML`.|  
 |**TF400618: The reporting type of field '{0}' in work item type '{1}' conflicts with the reporting type of the existing field**.|A reporting attribute assigned to a field in a WIT definition does not match the attribute defined in the project collection.|Download the process template, open the type definition, locate the `FIELD` assignment and modify the `reportable` attribute to match that defined for the collection. Then, upload the process template. See [FIELD (Definition) element reference](field-definition-element-reference.md),|Use `witadmin changefield` and specify the `reportingtype` attribute. See [Manage work item fields](../witadmin/manage-work-item-fields.md).|  
 |**TF400619: The**  `SyncNameChanges`  **of field '{0}' in work item type '{1}' conflicts with the SyncNameChanges  of the existing field**.|The `syncnamechanges` attribute assigned to a field in a WIT definition does not match the attribute defined in the project collection. This attribute specifies whether to update a person name field when that name changes in Active Directory.|Download the process template, open the type definition, locate the `FIELD` assignment, modify it to match the definition in the collection, and then, upload the process template. See [FIELD (Definition) element reference](field-definition-element-reference.md).|Use **witadmin changefield** command and specify the `/syncnamechanges` parameter. See [Manage work item fields](../witadmin/manage-work-item-fields.md).|  
 |**TF400620: The friendly name of field '{0}' in work item type '{1}' conflicts with the friendly name of an existing field**.|The friendly name assigned to a field in a WIT definition must match that defined in the project collection.|Download the process template, open the type definition, locate the `FIELD` assignment, and modify it to match that defined for the collection. Then, upload the process template.|To change the friendly name for the project collection, use **witadmin changefield** command and specify the `/name` parameter. See [Manage work item fields](../witadmin/manage-work-item-fields.md).|  
@@ -71,7 +72,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
  To learn more, see the following topics:  
   
 -   [Overview of process template files](../process-templates/overview-process-template-files.md)    
--   [Define and modify work item fields](define-modify-work-item-fields.md)   
+-   [About work item fields and attributes](../../boards/work-items/work-item-fields.md)   
 -   [Change the workflow](change-workflow-wit.md)    
 -   [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md)  
   
@@ -105,54 +106,54 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   
-0.  Export the type definition file for the backlog item by substituting your data for the arguments shown:  
+1. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   
-    ```  
-    witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
+   ```  
+   witadmin exportwitd  /collection:CollectionURL /p:"ProjectName" /n:"TypeName" /f:"DirectoryPath\FileName.xml"  
   
-    Where:  
-          CollectionURL specifies the URL of the project collection  
-          ProjectName specifies the name of your project defined within the collection  
-          TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
+   Where:  
+         CollectionURL specifies the URL of the project collection  
+         ProjectName specifies the name of your project defined within the collection  
+         TypeName specifies the name of your backlog item, for example User Story or Product Backlog Item.  
   
-    Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
-    For example: http://srvalm:8080/tfs/DefaultCollection.  
+   Use the following format for CollectionURL:      http://ServerName:Port/VirtualDirectoryName/CollectionName  
+   For example: http://srvalm:8080/tfs/DefaultCollection.  
   
-    ```  
+   ```  
   
-0.  Open the file using a text editor, such as Notepad.  
+1. Open the file using a text editor, such as Notepad.  
   
-0.  Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
+2. Add this code snippet just before the `</Layout>` end-tag of your backlog type:  
   
-	> [!div class="tabbedCodeSnippets"]
-	```XML  
-    <TabGroup>  
-    <Tab Label="Storyboards">   
-          <Control Name="StoryboardsControl" Type="LinksControl">   
-          <LinksControlOptions>   
-             <WorkItemLinkFilters FilterType="excludeAll" />   
-             <ExternalLinkFilters FilterType="include">   
-                   <Filter LinkType="Storyboard" />   
-             </ExternalLinkFilters>   
-             <LinkColumns>   
-                   <LinkColumn RefName="System.Title" />   
-                   <LinkColumn LinkAttribute="System.Links.Comment" />   
-             </LinkColumns>   
-          </LinksControlOptions>   
-          </Control>   
-    </Tab>   
-    </TabGroup>  
-    ```  
+   > [!div class="tabbedCodeSnippets"]
+   > ```XML  
+   > <TabGroup>  
+   > <Tab Label="Storyboards">   
+   >       <Control Name="StoryboardsControl" Type="LinksControl">   
+   >       <LinksControlOptions>   
+   >          <WorkItemLinkFilters FilterType="excludeAll" />   
+   >          <ExternalLinkFilters FilterType="include">   
+   >                <Filter LinkType="Storyboard" />   
+   >          </ExternalLinkFilters>   
+   >          <LinkColumns>   
+   >                <LinkColumn RefName="System.Title" />   
+   >                <LinkColumn LinkAttribute="System.Links.Comment" />   
+   >          </LinkColumns>   
+   >       </LinksControlOptions>   
+   >       </Control>   
+   > </Tab>   
+   > </TabGroup>  
+   > ```  
   
-0.  Save and close the file.  
+3. Save and close the file.  
   
-0.  Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
+4. Import the type definition file by typing this command, substituting your data for the arguments that are shown:  
   
-    ```  
-    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
-    ```  
+   ```  
+   witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\FileName.xml"  
+   ```  
   
-0.  Verify that the tab shows up in the backlog item.  
+5. Verify that the tab shows up in the backlog item.  
   
 ## Related articles
 

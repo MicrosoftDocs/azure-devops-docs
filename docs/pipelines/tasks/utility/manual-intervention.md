@@ -1,30 +1,30 @@
 ---
-title: Manual intervention task for Azure Pipelines and TFS 
-titleSuffix: Azure Pipelines & TFS
-description: Build and release task to pause an active deployment within a stage with a build or release pipeline in Azure Pipelines and TFS
+title: Manual Intervention task 
+description: Pause an active deployment within a stage in a release pipeline in Azure Pipelines and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: ronai
+author: RoopeshNair
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
-# Utility: Manual intervention
+# Manual Intervention task
 
-![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
+**Azure Pipelines**
+
+Use this task in a release pipeline to pause an active deployment within a stage,
+typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This task is not supported in a build pipeline.
 
-::: moniker range="> tfs-2018"
-## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/ManualInterventionV8.md)]
-::: moniker-end
+![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
 
 ## Arguments
 
@@ -49,7 +49,6 @@ send email notifications to users and user groups when it is awaiting interventi
 and specify the automatic response (reject or resume the deployment) after a configurable
 timeout occurs.
 
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
 
 > You can use built-in and custom variables to generate portions of your instructions.
 
@@ -60,5 +59,3 @@ After carrying out the manual steps, the administrator or user can choose to res
 Users with **Manage deployment** permission on the stage can resume or reject the manual intervention.
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
-
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/ManualIntervention).

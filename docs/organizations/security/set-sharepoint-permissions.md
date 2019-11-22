@@ -6,7 +6,7 @@ ms.technology: devops-security
 ms.topic: conceptual
 ms.assetid: 
 toc: show
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/02/2017
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
 # Set SharePoint site permissions
 
-**TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]
 > Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 
@@ -28,9 +28,9 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
     ![Choose the SharePoint group and add users](../accounts/_img/add-users-team-project/invite-people.png)
 
-    -   To add users who will require minimal access to the project, choose **Readers**.
-    -   To add users who will contribute fully to this project, choose **Contributors**.
-    -   To add users who will act as project leads, choose **Full Control**.
+    -   To add users who require minimal access to the project, choose **Readers**.
+    -   To add users who contribute fully to this project, choose **Contributors**.
+    -   To add users who act as project leads, choose **Full Control**.
 
 For more information about users and groups in SharePoint Products,
 [go here](https://technet.microsoft.com/library/cc262690.aspx).
@@ -53,6 +53,6 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/tfs/server/admin/_img/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/_img/add-administrator-tfs/people-and-groups.png)
 
 

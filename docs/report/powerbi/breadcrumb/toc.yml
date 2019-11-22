@@ -1,7 +1,0 @@
-- name: Azure DevOps Services
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Power BI
-    tocHref: /azure/devops/report/powerbi/
-    topicHref: /azure/devops/report/powerbi/index

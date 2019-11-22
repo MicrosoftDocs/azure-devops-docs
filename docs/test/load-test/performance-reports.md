@@ -1,20 +1,22 @@
 ---
-title: View and compare your Visual Studio load test runs 
+title: View and compare load test runs 
 description: Get started with web performance tests - view and compare your load test runs using the features of Azure DevOps
 ms.assetid: 1A1A725F-4A6A-4652-AFD1-FC7C9A248A7B
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # View and compare your load test runs
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two

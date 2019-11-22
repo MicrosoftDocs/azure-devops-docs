@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Pushes | REST API Reference for Team Foundation Server
 description: Work with Git pushes programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 20422F1A-30A6-405F-AAE2-BABDA6371E40
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -37,8 +37,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | repository | string   |         | ID or name of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| fromDate   | [DateTime](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) |         | Start date to search from.
-| toDate     | [DateTime](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) |         | End date to search to.
+| fromDate   | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | Start date to search from.
+| toDate     | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) |         | End date to search to.
 | pusherId   | guid     |         | Identity of the person who submitted the push.
 | refName    | string   |         | Branch name to consider.
 | includeRefUpdates| bool	| false		| If `true`, include the list of refs that were updated by the push.

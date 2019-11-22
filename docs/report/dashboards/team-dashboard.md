@@ -1,14 +1,16 @@
 ---
-title: TFS team home page or dashboard  
-description: View progress and gain quick access to code, builds, and work items from the team home page in Azure DevOps  and Team Foundation Server (TFS)  
+title: Team home page or dashboard  
+titleSuffix: TFS
+description: View progress and gain quick access to code, builds, and work items from the team home page in Team Foundation Server (TFS)  
+ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013 <= tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 08/11/2016
 ---
 
@@ -16,8 +18,8 @@ ms.date: 08/11/2016
 
 <b>TFS 2015 | TFS 2013</b>  
 
->[!NOTE]  
->**Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
+> [!NOTE]  
+> **Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
 
 Teams can view the progress of work from the team home page. Team administrators can add or pin items to this dashboard and re-sequence tiles. Each tile provides team members quick access to work items, build progress, code changes, and more.
 
@@ -27,7 +29,7 @@ From the web portal, you can view pinned items on the home page, including flat-
 
 If you need to add a team first, see [Add teams](../../organizations/settings/add-teams.md).
 
-##Pin items to a dashboard 
+## Pin items to a dashboard 
 
 You pin an item to the team dashboard from the code, work, and build pages.
 
@@ -47,9 +49,9 @@ You pin an item to the team dashboard from the code, work, and build pages.
 
 	Using Internet Explorer 10 or Internet Explorer 11, you can also tab to a tile and press Shift+L or Shift+R to move the selected tile to the left or to the right.
 
-5.	Click a tile or link to open it. 
+5.	Choose a tile or link to open it. 
 
-###Remove an item or chart from your dashboard 
+### Remove an item or chart from your dashboard 
 
 Choose the ellipses for any tile to remove it from a dashboard. 
 
@@ -59,7 +61,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 ![Unpin an item from the team homepage](_img/tfs-unpin-from-homepage.png)   
 
-##Related notes
+## Related notes
 
 - [Define queries](../../boards/queries/using-queries.md) 
 - [Define builds](../../pipelines/overview.md) 
@@ -68,7 +70,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 <a id="switch-team-context">  </a>
 
-###Switch team context  
+### Switch team context  
  
 You navigate to your team context from the top navigation bar.   
 

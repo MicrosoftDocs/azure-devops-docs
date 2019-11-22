@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts TimelineReference API | Extensions for Azure DevOps Services
+description: Data representation of timeline reference.
 ms.assetid: 10ca878d-7c1b-a906-d7e0-1b007731c818
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/25/2016
 ---
 

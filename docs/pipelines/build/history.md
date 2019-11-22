@@ -1,14 +1,14 @@
 ---
 title: Build pipeline history
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about how you can determine what changed, when it happened, and who did it on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 3/15/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -57,7 +57,7 @@ No
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
 [!INCLUDE [temp](../_shared/qa-versions.md)]
 ::: moniker-end
 

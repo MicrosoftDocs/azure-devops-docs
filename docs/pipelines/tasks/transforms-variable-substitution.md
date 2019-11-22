@@ -1,27 +1,36 @@
 ---
 title: File transforms and variable substitution
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: File transforms and variable substitution for tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # File transforms and variable substitution reference
 
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task
+Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureRmWebAppDeploymentV3) task
 version 3 and later and the [IIS Web App Deploy](deploy/iis-web-app-deployment-on-machine-group.md) task, allow users to configure the package based on the environment specified.
 These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
+However, file transforms and variable substitution are **not confined to web app files**. You can use these techniques with any XML or JSON files. 
+
+::: moniker range="> tfs-2018"
+> [!NOTE]  
+> File transforms and variable substitution are also supported by the separate [File Transform task](utility/file-transform.md) for use in Azure Pipelines.
+  You can use the File Transform task to apply file transformations and variable substitutions on any configuration and parameters files.
+::: moniker-end
 
 Configuration substitution is specified in the **File Transform and Variable Substitution Options**
 section of the settings for the tasks. The transformation and substitution options are:
@@ -33,7 +42,7 @@ section of the settings for the tasks. The transformation and substitution optio
 When the task runs, it first performs XML transformation, XML variable substitution, and JSON variable substitution 
 on configuration and parameters files. Next, it invokes **msdeploy.exe**, which uses
 the **parameters.xml** file to substitute values in the **web.config** file.
- 
+
 <a name="xmltransform"></a> 
 ## XML Transformation
 
@@ -43,9 +52,9 @@ and is based on the environment to which the web package will be deployed.
 This option is useful when you want to add, remove or modify configurations for different environments.
 Transformation will be applied for other configuration files including Console or Windows service application
 configuration files (for example, **FabrikamService.exe.config**).
-  
+
 ### Configuration transform file naming conventions
- 
+
 XML transformation will be run on the `*.config` file for
 transformation configuration files named `*.Release.config` or `*.<stage>.config`
 and will be executed in the following order:
@@ -69,7 +78,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    For example, use the following configuration files:
 
    **Configuration file**
- 
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
@@ -87,10 +96,10 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
      </system.web>
    </configuration>
    ```
-<p />
+   <p />
 
    **Transform file**
- 
+
    ```xml
    <?xml version="1.0"?>
    <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
@@ -107,8 +116,8 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
      </system.web>
    </configuration>
    ```
-<p />
- 
+   <p />
+
    This example transform configuration file does three things:
 
    * It adds a new database connection string inside the `ConnectionStrings` element.
@@ -117,15 +126,15 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
 
-1. Create a release pipeline with an stage named **Release**.
- 
-1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
+2. Create a release pipeline with a stage named **Release**.
+
+3. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
    ![Release pipeline for XML transformation](_img/release-definition2.png)
- 
-1. Save the release pipeline and start a new release.
 
-1. Open the `Web.config` file to see the transformations from `Web.Release.config`.
+4. Save the release pipeline and start a new release.
+
+5. Open the `Web.config` file to see the transformations from `Web.Release.config`.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -147,20 +156,20 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
    </configuration>
    ```
 
-**Note**:
+### XML transformation notes
 
 * You can use this technique to create a default package and deploy it to multiple stages.
 
 * XML transformation takes effect only when the configuration file and transform file
   are in the same folder within the specified package.
- 
-* Set the **Copy to Output Directory** property for the configuration transform files to **Copy If Newer**.
 
 * By default, MSBuild applies the transformation as it generates the web package if the `<DependentUpon>` element
   is already present in the transform file in the `*.csproj` file. In such cases, the **Azure App Service Deploy**
   task will fail because there is no further transformation applied on the `Web.config` file. Therefore, it is
   recommended that the `<DependentUpon>` element is removed from all the transform files to disable any build-time
   configuration when using XML transformation.
+
+* Set the **Build Action** property for each of the transformation files (`Web.config`) to **Content** so that the files are copied to the root folder.
 
   ```xml
   ...
@@ -172,21 +181,21 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
   </Content>
   ...
   ```
- 
+
 <a name="xmlvarsubs"></a> 
 ## XML variable substitution
 
 This feature enables you to modify configuration settings in configuration files (`*.config` files)
 inside web packages and XML parameters files (`parameters.xml`).
 In this way, the same package can be configured based on the environment to which it will be deployed.
- 
+
 Variable substitution takes effect only on the `applicationSettings`, `appSettings`, `connectionStrings`,
-and `configSections` elements of configuration files.
- 
+and `configSections` elements of configuration files. If you are looking to substitute values outside of these elements you can use a (`parameters.xml`) file, however you will need to use a 3rd party pipeline task to handle the variable substitution.
+
 ### XML variable substitution example
 
 As an example, consider the task of changing the following values in `Web.config`:
- 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -204,7 +213,7 @@ As an example, consider the task of changing the following values in `Web.config
         <!-- Change AdminUserName in this line: --> 
         <add key="AdminUserName" value="__AdminUserName__" />
         <!-- Change AdminPassword in this line: --> 
-        <add key="AdminPassword" value="__AdminPasword__" />
+        <add key="AdminPassword" value="__AdminPassword__" />
     </appSettings>
     <entityFramework>
         <defaultConnectionFactory type="System.Data.Entity.LocalDbConnectionFactory">
@@ -220,24 +229,24 @@ As an example, consider the task of changing the following values in `Web.config
 <p />
 
 1. Create a release pipeline with a stage named **Release**.
- 
+
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
    ![Release pipeline for XML variable substitution](_img/release-definition.png)
 
 1. Define the required values in release pipeline variables:
- 
+
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |
    | DefaultConnection | Data Source=(ProdDB)\\MSSQLProdDB;AttachFileName=Local.mdf | No | Release |
    | AdminUserName | ProdAdminName | No | Release |
    | AdminPassword | [your-password] | Yes | Release |
    | invariantName | System.Data.SqlClientExtension | No | Release |
- 
+
 1. Save the release pipeline and start a new release.
 
 1. Open the `Web.config` file to see the variable substitutions.
- 
+
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <configuration>
@@ -265,8 +274,8 @@ As an example, consider the task of changing the following values in `Web.config
        </entityFramework>
    </configuration>
    ```
- 
-**Note**:
+
+### XML variable substitution notes
 
 * By default, ASP.NET applications have a default parameterized connection attribute.
   These values are overridden only in the `parameters.xml` file inside the web package.
@@ -274,10 +283,10 @@ As an example, consider the task of changing the following values in `Web.config
 * Because substitution occurs before deployment, the user can override the
   values in `Web.config` using `parameters.xml` (inside the web package) or
   a `setparameters` file.
- 
+
 <a name="jsonvarsubs"></a> 
 ## JSON variable substitution
- 
+
 This feature substitutes values in the JSON configuration files.
 It overrides the values in the specified JSON configuration files
 (for example, `appsettings.json`) with the values matching names of release pipeline
@@ -307,16 +316,16 @@ named **appsettings.json**.
 ### JSON variable substitution example
 
 As an example, consider the task of overriding values in this JSON file:
- 
+
 ```json
 {
   "Data": {
     "DefaultConnection": {
-      "ConnectionString": "Data Source=(LocalDb)\MSDB;AttachDbFilename=aspcore-local.mdf;"
+      "ConnectionString": "Data Source=(LocalDb)\\MSDB;AttachDbFilename=aspcore-local.mdf;"
     },
     "DebugMode": "enabled",
     "DBAccess": {
-      "Admininstrators": ["Admin-1", "Admin-2"],
+      "Administrators": ["Admin-1", "Admin-2"],
       "Users": ["Vendor-1", "vendor-3"]
     },
     "FeatureFlags": {
@@ -331,7 +340,6 @@ As an example, consider the task of overriding values in this JSON file:
     }
   }
 }
-
 ```
 <p />
 
@@ -339,8 +347,8 @@ The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
 1. Create a release pipeline with a stage named **Release**.
- 
-1. Add an **Azure App Service Deploy** task and enter a newline-separated
+
+2. Add an **Azure App Service Deploy** task and enter a newline-separated
    list of JSON files to substitute the variable values in the **JSON variable substitution** textbox.
    Files names must be relative to the root folder.
    You can use wildcards to search for JSON files. For example:
@@ -348,18 +356,20 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 
    ![Release pipeline for JSON variable substitution](_img/json-setting.png)
 
-1. Define the required substitution values in release pipeline or stage variables.
- 
-   | Name | Value | Secure | Scope |
-   | ---- | ----- | ------ | ----- |
-   | Data.DebugMode | disabled | No | Release |
-   | Data.DefaultConnection.ConnectionString | Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf; | No | Release |
-   | Data.DBAccess.Users.0 | Admin-3 | Yes | Release |
-   | Data.FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
-   
-1. Save the release pipeline and start a new release.
+3. Define the required substitution values in release pipeline or stage variables.
 
-1. After the transformation, the JSON will contain the following:
+
+   |                     Name                      |                         Value                         | Secure |  Scope  |
+   |-----------------------------------------------|-------------------------------------------------------|--------|---------|
+   |                Data.DebugMode                 |                       disabled                        |   No   | Release |
+   |    Data.DefaultConnection.ConnectionString    | Data Source=(prodDB)\\MSDB;AttachDbFilename=prod.mdf; |   No   | Release |
+   |             Data.DBAccess.Users.0             |                        Admin-3                        |  Yes   | Release |
+   | Data.FeatureFlags.Preview.1.NewWelcomeMessage |                      AllAccounts                      |   No   | Release |
+
+
+4. Save the release pipeline and start a new release.
+
+5. After the transformation, the JSON will contain the following:
 
    ```json
    {
@@ -369,7 +379,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
        },
        "DebugMode": "disabled",
        "DBAccess": {
-         "Admininstrators": ["Admin-1", "Admin-2"],
+         "Administrators": ["Admin-1", "Admin-2"],
          "Users": ["Admin-3", "vendor-3"]
        },
        "FeatureFlags": {
@@ -384,10 +394,10 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
        }
      }
    }
-'''
+   '''
 
-**Note**:
- 
+### JSON variable substitution notes
+
 * To substitute values in nested levels of the file, concatenate the names with
   a period (`.`) in hierarchical order.
 
@@ -403,4 +413,19 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 * If the file specification you enter does not match any file, the task will fail.
 
 * Variable name matching is case-sensitive.
+
+* Variable substitution is applied for only the JSON keys predefined in the object hierarchy. It does not create new keys. 
+
+* If a variable name includes periods ("."), the transformation will attempt to locate the item within the hierarchy.
+  For example, if the variable name is `first.second.third`, the transformation process will search for:
+
+  ```json
+  "first" : {
+    "second": {
+      "third" : "value"
+    }
+  }
+  ```
+
+  as well as `"first.second.third" : "value"`.
 

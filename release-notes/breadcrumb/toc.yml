@@ -1,0 +1,7 @@
+- name: Azure DevOps
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
+  items: 
+  - name: Release Notes
+    tocHref: /azure/devops/release-notes/
+    topicHref: https://aka.ms/azuredevops/releasenotes

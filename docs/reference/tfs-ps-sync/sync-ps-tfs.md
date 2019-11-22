@@ -6,8 +6,9 @@ ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 0CDB65B6-FA2D-41D1-8E1E-41E38F235762  
 toc: show
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 09/19/2017  
 ---
@@ -22,7 +23,7 @@ ms.date: 09/19/2017
 If you are on a prior version of Team Foundation Server with the native integration installed and configured, the native integration will no longer work
 once you upgrade to TFS 2017 or later version.
 
-For more information on why we no longer support this integration, please read this blog post, [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](http://go.microsoft.com/fwlink/?LinkID=823693).
+For more information on why we no longer support this integration, please read this blog post, [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
 
 ## Synchronization support for TFS 2017 and Project Server
 
@@ -61,7 +62,7 @@ ConnectALL is from Go2Group, a global provider of IT delivery solutions that hel
 
 ![Tasktop](_img/tfs-ps-sync-tas-logo.png)
 
-## [Tasktop](http://www.tasktop.com/product-overview)
+## [Tasktop](https://www.tasktop.com/product-overview)
  
 Tasktop provides enterprise-grade integration between Microsoft Project Server and Azure DevOps Services and TFS, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
  

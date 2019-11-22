@@ -1,6 +1,6 @@
 ```YAML
 # Maven
-# Build with Apache Maven
+# Build, test, and deploy with Apache Maven
 - task: Maven@2
   inputs:
     #mavenPomFile: 'pom.xml' 
@@ -10,12 +10,12 @@
     #testResultsFiles: '**/TEST-*.xml' # Required when publishJUnitResults == True
     #testRunTitle: # Optional
     #codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo
-    #codeCoverageClassFilter: # Optional
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageClassFilesDirectories: # Optional
     #codeCoverageSourceDirectories: # Optional
     #codeCoverageFailIfEmpty: false # Optional
     #javaHomeOption: 'JDKVersion' # Options: jDKVersion, path
-    #jdkVersionOption: 'default' # Optional. Options: default, 1.10, 1.9, 1.8, 1.7, 1.6
+    #jdkVersionOption: 'default' # Optional. Options: default, 1.11, 1.10, 1.9, 1.8, 1.7, 1.6
     #jdkDirectory: # Required when javaHomeOption == Path
     #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
     #mavenVersionOption: 'Default' # Options: default, path

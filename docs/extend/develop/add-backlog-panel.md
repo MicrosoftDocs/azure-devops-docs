@@ -5,16 +5,18 @@ ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/22/2016
 ---
 
 # Add panels on backlog pages
 
-In this example, we'll add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 <!---
 ![panel extension on the Azure DevOps Services Portfolio backlog page](../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
@@ -76,7 +78,7 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item                                        |                   
+| title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
 | registeredObjectId | Id of the object registered for the panel                                             |    

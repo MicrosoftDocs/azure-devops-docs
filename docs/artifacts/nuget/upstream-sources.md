@@ -5,9 +5,9 @@ ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -63,19 +63,20 @@ To use your feed and upstream source, follow the instructions to [consume NuGet 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-::: moniker range="vsts"
 
-# [New navigation](#tab/new-nav)
+::: moniker range=">= azure-devops-2019"
+
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
-
-# [Previous navigation](#tab/previous-nav)
-![Viewing your cached packages](_img/view-cached-packages.png)
-
----
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range="<= tfs-2018"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

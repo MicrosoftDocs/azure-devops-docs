@@ -1,14 +1,14 @@
----
+﻿---
 title: Release actions to deploy an app with Release Management
-titleSuffix: Azure Pipelines & TFS
+ms.custom: seodec18
 description: Learn about the release actions to define the deployment sequence for an app in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2013'
 ---

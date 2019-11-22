@@ -1,20 +1,20 @@
 ---
-title: Index Sources & Publish Symbols build and release task
-titleSuffix: Azure Pipelines & TFS
+title: Index Sources & Publish Symbols
+ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: pbora
+author: PBoraMSFT
 ms.date: 11/14/2017
 monikerRange: '>= tfs-2015'
 ---
 
 
-# Build: Index Sources & Publish Symbols
+# Index Sources & Publish Symbols task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
@@ -22,11 +22,11 @@ monikerRange: '>= tfs-2015'
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task in a build or release pipeline to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/symbols/index).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/artifacts/symbols).
 
 > [!NOTE]
 > This build task works only:
@@ -38,8 +38,11 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -60,7 +63,7 @@ None
     <tr>
         <td>Search pattern</td>
         <td>
-            <p>[File matching pattern(s)](../file-matching-patterns.md) (rooted at the path supplied in the previous input) used to discover `pdbs` that contain symbols.</p>
+            <p><a href="../file-matching-patterns.md" data-raw-source="[File matching pattern(s)](../file-matching-patterns.md)">File matching pattern(s)</a> (rooted at the path supplied in the previous input) used to discover <code>pdbs</code> that contain symbols.</p>
         </td>
     </tr>
     <tr>
@@ -78,11 +81,11 @@ None
     <tr>
         <td>Symbol server type</td>
         <td>
-            **Package Management in Azure Artifacts:**
+            <strong>Package Management in Azure Artifacts:</strong>
             <ul>
-                <li>Select this option to use the symbol server built into the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed).</li>
+                <li>Select this option to use the symbol server built into the <a href="https://marketplace.visualstudio.com/items?itemName=ms.feed" data-raw-source="[Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed)">Package Management extension</a>.</li>
             </ul>
-            **File share:**
+            <strong>File share:</strong>
             <ul>
                 <li>Select this option to use the file share supplied in the next input.</li>
             </ul>
@@ -95,11 +98,17 @@ None
             </p>
             <p>To prepare your SymStore symbol store:</p>
             <ol>
-                <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \\fabrikam-share\symbols.</li>
-                <li>Grant full control permission to the [build agent service account](../../agents/agents.md#account).</li>
+                <li>Set up a folder on a file-sharing server to store the symbols. For example, set up \fabrikam-share\symbols.</li>
+                <li>Grant full control permission to the <a href="../../agents/agents.md#account" data-raw-source="[build agent service account](../../agents/agents.md#account)">build agent service account</a>.</li>
             </ol>
-            <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See [Publish Build Artifacts](../utility/publish-build-artifacts.md)).
+            <p>If you leave this argument blank, your symbols will be source indexed but not published. (You can also store your symbols with your drops. See <a href="../utility/publish-build-artifacts.md" data-raw-source="[Publish Build Artifacts](../utility/publish-build-artifacts.md)">Publish Build Artifacts</a>).
             </p>
+        </td>
+    </tr>
+        <tr>
+        <td>Compress symbols</td>
+        <td>
+            <p>Only available when <strong>File share</strong> is selected as the <strong>Symbol server type</strong>. Compresses your <code>pdbs</code> to save space. 
         </td>
     </tr>
     <tr>
@@ -115,8 +124,8 @@ None
         <td>Warn if not indexed</td>
         <td>
             <p>Enable this option if you want the build summary to show a warning when sources are not indexed for a PDB file.
-                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn't build.</p>
-            <p>Even if you don't select this option, the messages are written in log.
+                A common cause of sources to not be indexed are when your solution depends on binaries that it doesn&#39;t build.</p>
+            <p>Even if you don&#39;t select this option, the messages are written in log.
             </p>
         </td>
     </tr>
@@ -128,76 +137,28 @@ None
     <tr>
         <td>Product</td>
         <td>If you are publishing your symbols, you can specify the product parameter that is passed to symstore.exe. If blank,
-            [$(Build.DefinitionName)](../../build/variables.md) is passed.</td>
+            <a href="../../build/variables.md" data-raw-source="[$(Build.DefinitionName)](../../build/variables.md)">$(Build.DefinitionName)</a> is passed.</td>
     </tr>
     <tr>
         <td>Version</td>
         <td>If you are publishing your symbols, you can specify the version parameter that is passed to symstore.exe. If blank,
-            [$(Build.BuildNumber)](../../build/variables.md) is passed.</td>
+            <a href="../../build/variables.md" data-raw-source="[$(Build.BuildNumber)](../../build/variables.md)">$(Build.BuildNumber)</a> is passed.</td>
     </tr>
     <tr>
         <td>Artifact name</td>
         <td>Specify the pattern used for the name of the link from the artifact tab in the build summary to the file share where
-            you are publishing your symbols. For example, if you specify ```Symbols_$(BuildConfiguration)```, then the name
-            of the link to your published release symbols would be *Symbols_release*</td>
+            you are publishing your symbols. For example, if you specify <code>Symbols_$(BuildConfiguration)</code>, then the name
+            of the link to your published release symbols would be <em>Symbols_release</em></td>
     </tr>
-    [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
-## Use indexed symbols to debug your app
-
-You can use your indexed symbols to debug an app on a different machine from where the sources were built.
-
-### Enable your dev machine
-
-In Visual Studio you may need to enable the following two options:
-
-* Debug -> Options -> Debugging -> General
-  * -> Enable source server support
-  * -> Allow source server for partial trust assemblies (Managed only)
-
-### Overriding at debug time
-
-The mapping information injected into the PDB files contains variables that can be overridden at debugging time. Overriding the variables may be required if the collection URL has changed. When overriding the mapping information, the goals are to construct:
-
-* A command (SRCSRVCMD) that the debugger can use to retrieve the source file from the server.
-
-* A location (SRCSRVTRG) where the debugger can find the retrieved source file.
-
- The mapping information may look something like the following:
-
-```
-SRCSRV: variables ------------------------------------------
-TFS_EXTRACT_TARGET=%targ%\%var5%\%fnvar%(%var6%)%fnbksl%(%var7%)
-TFS_EXTRACT_CMD=tf.exe git view /collection:%fnvar%(%var2%) /teamproject:"%fnvar%(%var3%)" /repository:"%fnvar%(%var4%)" /commitId:%fnvar%(%var5%) /path:"%var7%" /output:%SRCSRVTRG% %fnvar%(%var8%)
-TFS_COLLECTION=http://SERVER:8080/tfs/DefaultCollection
-TFS_TEAM_PROJECT=93fc2e4d-0f0f-4e40-9825-01326191395d
-TFS_REPO=647ed0e6-43d2-4e3d-b8bf-2885476e9c44
-TFS_COMMIT=3a9910862e22f442cd56ff280b43dd544d1ee8c9
-TFS_SHORT_COMMIT=3a991086
-TFS_APPLY_FILTERS=/applyfilters
-SRCSRVVERCTRL=git
-SRCSRVERRDESC=access
-SRCSRVERRVAR=var2
-SRCSRVTRG=%TFS_EXTRACT_TARGET%
-SRCSRVCMD=%TFS_EXTRACT_CMD%
-SRCSRV: source files ---------------------------------------
-C:\BuildAgent\_work\1\src\MyApp\Program.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/Program.cs*TFS_APPLY_FILTERS
-C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TFS_REPO*TFS_COMMIT*TFS_SHORT_COMMIT*/MyApp/SomeHelper.cs*TFS_APPLY_FILTERS
-```
-
- The above example contains two sections: 1) the variables section and 2) the source files section. The information in the variables section is what can be overridden. The variables can leverage other variables, and can leverage information from the source files section.
-
- To override one or more of the variables while debugging with Visual Studio, create an ini file ```%LOCALAPPDATA%\SourceServer\srcsrv.ini```. Set the content of the INI file to override the variables. For example:
-
-```
-[variables]
-TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
-```
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -227,12 +188,12 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 [Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
 
-[Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
+[Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
 ### How long are Symbols retained?
 
-When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
+When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinitely.
 
 <!-- ENDSECTION -->

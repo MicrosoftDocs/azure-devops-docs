@@ -4,11 +4,11 @@ description: Work with dashboards and widgets programmatically using the REST AP
 ms.assetid: 4F24B9FE-28BC-42E4-A07D-B0B34B895812
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

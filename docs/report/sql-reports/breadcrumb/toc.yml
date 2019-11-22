@@ -1,7 +1,0 @@
-- name: Team Foundation Server
-  tocHref: /azure/devops/
-  topicHref: /tfs/index
-  items: 
-  - name: SQL Server Reporting 
-    tocHref: /azure/devops/report/sql-reports/
-    topicHref: /azure/devops/report/sql-reports/index

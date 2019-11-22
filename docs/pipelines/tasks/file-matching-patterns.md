@@ -1,41 +1,42 @@
----
-title: File matching patterns reference for Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+﻿---
+title: File matching patterns reference
+ms.custom: seodec18
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 08/04/2016
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # File matching patterns reference
 
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+
 ## Pattern syntax
 
-### Basic patterns
-
 A pattern is a string or list of newline-delimited strings.
+File and directory names are compared to patterns to include (or sometimes exclude) them in a task.
+You can build up complex behavior by stacking multiple patterns.
+See [fnmatch](http://man7.org/linux/man-pages/man3/fnmatch.3.html) for a full syntax guide.
 
-### Path separators
-Even on Windows, use `/` as the path separator.
-This ensures that the pattern works on any agent.
+### Match characters
 
-#### Asterisk
-`*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
+Most characters are used as exact matches.
+What counts as an "exact" match is platform-dependent:
+the Windows filesystem is case-insensitive, so the pattern "ABC" would match a file called "abc".
+On case-sensitive filesystems, that pattern and name would not match.
 
-#### Question mark
-`?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
+The following characters have special behavior.
 
-#### Character sets
-`[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
-
-### Double-asterisk
-`**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
+* `*` matches zero or more characters within a file or directory name. See <a href="#asterisk_examples">examples</a>.
+* `?` matches any single character within a file or directory name. See <a href="#question_mark_examples">examples</a>.
+* `[]` matches a set or range of characters within a file or directory name. See <a href="#character_set_examples">examples</a>.
+* `**` recursive wildcard. For example, `/hello/**/*` matches all descendants of `/hello`.
 
 ### Extended globbing
 * `?(hello|world)` - matches `hello` or `world` zero or one times
@@ -50,12 +51,20 @@ Note, extended globs cannot span directory separators. For example, `+(hello/wor
 Patterns that begin with `#` are treated as comments.
 
 ### Exclude patterns
-Leading `!` changes the meaning of an include pattern to exclude. Interleaved exclude patterns are supported.
+Leading `!` changes the meaning of an include pattern to exclude.
+You can include a pattern, exclude a subset of it, and then re-include a subset of that:
+this is known as an "interleaved" pattern.
 
-Note, multiple leading `!` flips the meaning.
+Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
+
+You must define an include pattern before an exclude one. See <a href="#character_set_examples">examples</a>.
 
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
+
+### Slash
+`/` is used as the path separator.
+Even on Windows, use `/` to ensure that the pattern works on any agent.
 
 ## Examples
 
@@ -167,9 +176,25 @@ SampleE.dat
 SampleG.dat
 ```
 
+#### Recursive wildcard examples
+
+Given the pattern `**/*.ext` and files:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+sample2/D.not
+```
+The pattern would match:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+```
+
 ### Exclude pattern examples
 
-**Example** Given the pattern:
+Given the pattern:
 ```
 *
 !*.xml
@@ -189,4 +214,53 @@ ConsoleHost.exe
 ConsoleHost.pdb
 Fabrikam.dll
 Fabrikam.pdb
+```
+
+<h4 id="doubleexcl_examples">Double exclude</h4>
+
+Given the pattern:
+```
+*
+!*.xml
+!!Fabrikam.xml
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+Fabrikam.dll
+Fabrikam.pdb
+Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+Fabrikam.dll
+Fabrikam.pdb
+Fabrikam.xml
+```
+
+<h4 id="doubleexcl_examples">Folder exclude</h4>
+
+Given the pattern:
+```
+**
+!sample/**
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+sample/Fabrikam.dll
+sample/Fabrikam.pdb
+sample/Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
 ```

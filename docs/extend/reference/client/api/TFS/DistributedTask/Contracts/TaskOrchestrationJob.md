@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts TaskOrchestrationJob API | Extensions for Azure DevOps Services
+description: Data representation of a task orchestration job.
 ms.assetid: bc2745cb-f361-3236-4452-af1266debcee
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

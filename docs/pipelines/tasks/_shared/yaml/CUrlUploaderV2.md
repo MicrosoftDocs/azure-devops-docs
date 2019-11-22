@@ -1,6 +1,6 @@
 ```YAML
-# cURL Upload Files
-# Use cURL to upload files with FTP, FTPS, SFTP, HTTP, and more.
+# cURL upload files
+# Use cURL's supported protocols to upload files
 - task: cURLUploader@2
   inputs:
     files: 

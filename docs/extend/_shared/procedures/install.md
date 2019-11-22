@@ -1,4 +1,4 @@
-1. From your organization control panel (```https://dev.azure.com/{organization}/_admin/_ext```), go to the project collection administraton page. 
+1. From your organization control panel (```https://dev.azure.com/{organization}/_admin/_ext```), go to the project collection administration page. 
 
 	![Control panel, view the collection administration page link](./_img/install/collection-page.png)
 

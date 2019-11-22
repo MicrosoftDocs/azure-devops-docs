@@ -1,22 +1,28 @@
 ---
-title: Speed up testing by running tests in parallel using Visual Studio Test task
-titleSuffix: Azure Pipelines & TFS
+title: Run any tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
-ms.custom: continuous-test
-ms.manager: douge
+ms.custom: "continuous-test, seodec18"
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
-ms.ms.date: 09/01/2018
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Run tests in parallel using the Visual Studio Test task
 
-**Azure Pipelines | TFS 2017.1 and later**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+
+::: moniker range="< tfs-2018"
+
+> [!NOTE]
+> For TFS, this topic applies to only TFS 2017 Update 1 and later.
+
+::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -41,13 +47,13 @@ This article discusses how you can configure the
 
 Familiarize yourself with the concepts of [agents](../agents/agents.md) and [jobs](../process/phases.md).
 To run multiple jobs in parallel, you must configure multiple agents.
-You also need sufficient [parallel jobs](../licensing/concurrent-jobs-vsts.md).
+You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## Test slicing
 
 The Visual Studio Test task (version 2) is designed to work seamlessly with parallel job settings.
 When a pipeline job that contains the Visual Studio Test task (referred to as the "VSTest task" for simplicity)
-is configured run on multiple agents in parallel, it automatically detects that multiple agents are involved
+is configured to run on multiple agents in parallel, it automatically detects that multiple agents are involved
 and creates test slices that can be run in parallel across these agents.
 
 The task can be configured to create test slices to suit different requirements such as
@@ -130,6 +136,23 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
+::: moniker range=">= azure-devops-2019"
+
+## Setting up jobs for parallel testing in YAML pipelines
+
+Specify the `parallel` strategy in the `job` and indicate how many jobs should be dispatched. You can specify as many as 99 agents to scale up testing for large test suites.
+
+```YAML
+jobs:
+- job: ParallelTesting
+  strategy:
+    parallel: 2
+```
+
+For more information, see [YAML schema - Job](../yaml-schema.md#job).
+
+::: moniker-end
+
 ## Run tests in parallel in release pipelines
 
 Use the following steps if you have a large test suite or long-running functional tests
@@ -145,7 +168,7 @@ to validate the app functionality.
 
    ![DeployApp1Agent](_img/parallel-testing-vstest/deploy-app-1-agent.png)
 
-1. **Run tests in parallel using multiple agents**:
+2. **Run tests in parallel using multiple agents**:
 
    * Add an **agent job**
 
@@ -167,7 +190,7 @@ to validate the app functionality.
      > For example, web app binaries are not required to run Selenium tests and downloading these can be
      > skipped if the app and test artifacts are published separately by your build pipeline.
 
-   *  Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the
@@ -192,7 +215,7 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
 
 2. **Parallelism offered by the Visual Studio Test Platform (vstest.console.exe)**. Visual Studio Test Platform can run
    test assemblies in parallel. Users of vstest.console.exe will recognize this as the
-   [/parallel switch](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options?view=vs-2017).
+   [/parallel switch](https://docs.microsoft.com/visualstudio/test/vstest-console-options?view=vs-2017).
    It does so by launching a test host process on each available core, and handing it tests in an assembly to execute.
    This works for any framework that has a test adapter for the Visual Studio test platform because the unit of parallelization
    is a test assembly or test file. This, when combined with the parallelism offered by test frameworks (described above),

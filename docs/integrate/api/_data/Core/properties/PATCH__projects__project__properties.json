@@ -11,7 +11,7 @@
       {
          "op": "add",
          "path": "/Alias",
-         "value": "Frabrikam"
+         "value": "Fabrikam"
       }
    ],
    "statusCode": 204,

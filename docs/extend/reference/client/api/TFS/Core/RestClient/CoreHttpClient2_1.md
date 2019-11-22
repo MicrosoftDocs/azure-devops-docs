@@ -1,14 +1,15 @@
 ---
 title: TFS/Core/RestClient CoreHttpClient2_1 API | Extensions for Azure DevOps Services
+description: Data representation of a core http client 2_1.
 ms.assetid: 5307889f-f465-c35c-ce00-447872e8f4ff
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+ms.date: 09/12/2019
 ---
 
 [!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
@@ -141,7 +142,7 @@ Get project with the specified ID or name, optionally including capabilities.
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProject](../../../TFS/Core/Contracts/TeamProject.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md);[Contracts.TeamProject](../../DistributedTask/Contracts/TeamProjectReference.md)
 
 <a name="method_getProjectCollection"></a>
 <h2 class='method'>getProjectCollection()</h2>
@@ -203,7 +204,7 @@ Get project references with the specified state
 <a name="method_getTeam"></a>
 <h2 class='method'>getTeam()</h2>
 
-Gets a team
+Get a team
 
 ### Syntax
 <pre class='syntax'>

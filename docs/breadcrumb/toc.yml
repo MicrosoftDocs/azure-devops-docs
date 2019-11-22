@@ -1,163 +1,99 @@
-- name: Azure DevOps & TFS
+- name: Azure DevOps
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Web portal navigation
-    tocHref: /azure/devops/project/navigation/
-    topicHref: /azure/devops/project/navigation/index
-  - name: Wikis
-    tocHref: /azure/devops/project/wiki/
-    topicHref: /azure/devops/project/wiki/index
-  - name: Search
-    tocHref: /azure/devops/project/search/
-    topicHref: /azure/devops/project/search/index
-  - name: Feedback
-    tocHref: /azure/devops/project/feedback/
-    topicHref: /azure/devops/project/feedback/index
-  - name: Dashboards
-    tocHref: /azure/devops/report/dashboards
-    topicHref: /azure/devops/report/dashboards/index
-  - name: Start using Azure DevOps
-    tocHref: /azure/devops/user-guide/
-    topicHref: /azure/devops/user-guide/index
-  - name: Discover extensions
-    tocHref: /azure/devops/marketplace/
-    topicHref: https://marketplace.visualstudio.com/
-  - name: Build extensions
-    tocHref: /azure/devops/extend/
-    topicHref: /azure/devops/extend/index
-  - name: Visual Studio extensions
-    tocHref: /azure/devops/integrate/ide/extensions/
-    topicHref: /azure/devops/integrate/ide/extensions/overview
-  - name: Integrate
-    tocHref: /azure/devops/integrate/
-    topicHref: /azure/devops/integrate/index
-  - name: Java 
-    tocHref: /azure/devops/java/
-    topicHref: /azure/devops/java/index 
-  - name: Azure DevOps demo generator
-    tocHref: /azure/devops/demo-gen/
-    topicHref: /azure/devops/demo-gen/index  
-  - name: Technical articles
-    tocHref: /azure/devops/articles/
-    topicHref: /azure/devops/articles/index
+  - name: Get started
+    tocHref: /azure/devops/get-started/
+    topicHref: /azure/devops/get-started/index
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
-    items:
-    - name: Boards (Kanban) 
-      tocHref: /azure/devops/boards/boards/
-      topicHref: /azure/devops/boards/boards/index
-    - name: Backlogs
-      tocHref: /azure/devops/boards/backlogs/
-      topicHref: /azure/devops/boards/backlogs/index
-    - name: Sprints (Scrum)
-      tocHref: /azure/devops/boards/sprints/
-      topicHref: /azure/devops/boards/sprints/index
-    - name: Work items
-      tocHref: /azure/devops/boards/work-items/
-      topicHref: /azure/devops/boards/work-items/index
-    - name: Queries
-      tocHref: /azure/devops/boards/queries/
-      topicHref: /azure/devops/boards/queries/index
-    - name: Plans (Agile at scale)
-      tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boards/plans/index
   - name: Azure Repos
     tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
-    items:
-    - name: Git
-      tocHref: /azure/devops/repos/git/
-      topicHref: /azure/devops/repos/git/index
-    - name: TFVC
-      tocHref: /azure/devops/repos/tfvc/
-      topicHref: /azure/devops/repos/tfvc/index
   - name: Azure Artifacts
     tocHref: /azure/devops/artifacts/
-    topicHref: /azure/devops/artifacts/index-a
+    topicHref: /azure/devops/artifacts/index
   - name: Azure Test Plans
     tocHref: /azure/devops/test/
-    topicHref: /azure/devops/test/index-tp
+    topicHref: /azure/devops/test/index
+  - name: Reporting
+    tocHref: /azure/devops/report/
+    topicHref: /azure/devops/report/index
     items:
-    - name: Exploratory & manual testing
-      tocHref: /azure/devops/test/
-      topicHref: /azure/devops/test/index
-    - name: Load testing
-      tocHref: /azure/devops/test/load-test/
-      topicHref: /azure/devops/test/load-test/index
-    - name: Continuous testing
-      tocHref: /azure/devops/test/
-      topicHref: /azure/devops/pipelines/test/getting-started-with-continuous-testing
-    - name: Unit testing
-      tocHref: /visualstudio/test/improve-code-quality/
-      topicHref: /visualstudio/test/unit-test-your-code
-  - name: Settings
+    - name: SharePoint Dashboards (Deprecated)
+      tocHref: /azure/devops/report/sharepoint-dashboards/
+      topicHref: /azure/devops/report/index
+  - name: Notifications
+    tocHref: /azure/devops/notifications/
+    topicHref: /azure/devops/organizations/index
+  - name: Collaborate
+    tocHref: /azure/devops/project/
+    topicHref: /azure/devops/project/index
+  - name: Developer resources
+    tocHref: /azure/devops/developer-resources/
+    topicHref: /azure/devops/developer-resources/index
+  - name: Collaborate
+    tocHref: /azure/devops/project/
+    topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/index
+    - name: Public projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/project/index
+    - name: Search
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/index
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/index
+  - name: Marketplace & extensibility
+    tocHref: /azure/devops/marketplace-extensibility/
+    topicHref: /azure/devops/marketplace-extensibility/index
+    items:
+    - name: Discover & manage extensions
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Develop extensions
+      tocHref: /azure/devops/extend/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Integrate applications
+      tocHref: /azure/devops/integrate/
+      topicHref: /azure/devops/marketplace-extensibility/index
+    - name: Service Hooks
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/marketplace-extensibility/index
+  - name: Configure & customize
     tocHref: /azure/devops/organizations/settings/
     topicHref: /azure/devops/organizations/index
     items:
-    - name: Manage projects
+    - name: Projects
       tocHref: /azure/devops/organizations/projects/
-      topicHref: /azure/devops/organizations/projects/index
-    - name: Manage organizations
+      topicHref: /azure/devops/organizations/index
+    - name: Process
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/organizations/index
+  - name: Security, access, & billing
+    tocHref: /azure/devops/security-access-billing/
+    topicHref: /azure/devops/security-access-billing/index
+    items:
+    - name: Organizations
       tocHref: /azure/devops/organizations/accounts/
-      topicHref: /azure/devops/organizations/accounts/index
+      topicHref: /azure/devops/security-access-billing/index
     - name: Billing
       tocHref: /azure/devops/organizations/billing/
-      topicHref: /azure/devops/organizations/billing/index
-    - name: "Security & identity"
+      topicHref: /azure/devops/security-access-billing/index
+    - name: Security
       tocHref: /azure/devops/organizations/security/
-      topicHref: /azure/devops/organizations/security/index
-    - name: All settings
-      tocHref: /azure/devops/organizations/settings/
-      topicHref: /azure/devops/organizations/settings/index
-    - name: Notifications
-      tocHref: /azure/devops/notifications/
-      topicHref: /azure/devops/notifications/index
-    - name: "Scale & configure teams"
-      tocHref: /azure/devops/organizations/settings/scale/
-      topicHref: /azure/devops/organizations/settings/scale/index
-    - name: Customization
-      tocHref: /azure/devops/reference/
-      topicHref: /azure/devops/reference/index
-    - name: Manage extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace/index
-    - name: Service hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/index
-- name: Azure DevOps Services
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items:
-  - name: Public Projects
-    tocHref: /azure/devops/organizations/public/
-    topicHref: /azure/devops/organizations/public/index
-  - name: Analytics
-    tocHref: /azure/devops/report/analytics/
-    topicHref: /azure/devops/report/analytics/index
-  - name: Power BI
-    tocHref: /azure/devops/report/powerbi/
-    topicHref: /azure/devops/report/powerbi/index
-  - name: Extend Analytics with OData
-    tocHref: /azure/devops/report/extend-analytics/
-    topicHref: /azure/devops/report/extend-analytics/index
-- name: Team Foundation Server
-  tocHref: /azure/devops/
-  topicHref: /tfs/index
-  items:
-  - name: "TFS administation"
-    tocHref: /tfs/server/
-    topicHref: /tfs/index
-  - name: Project Server integration
+      topicHref: /azure/devops/security-access-billing/index
+  - name: Azure DevOps Server Administration
+    tocHref: /azure/devops/server/
+    topicHref: /azure/devops/server/admin/admin-quick-ref
+  - name: Project Server Integration (Deprecated)
     tocHref: /azure/devops/reference/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index
-  - name: SQL Server Reporting
-    tocHref: /azure/devops/report/sql-reports/
-    topicHref: /azure/devops/report/sql-reports/index
-  - name: SharePoint Integration
-    tocHref: /azure/devops/report/sharepoint-dashboards/
-    topicHref: /azure/devops/report/sharepoint-dashboards/index

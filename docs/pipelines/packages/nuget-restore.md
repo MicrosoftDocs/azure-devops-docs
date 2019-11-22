@@ -1,12 +1,12 @@
 ---
-title: Restore Package Management NuGet packages in Azure Pipelines
-titleSuffix: Azure Pipelines & TFS
+title: Restore NuGet packages in Azure Pipelines
+ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: amullans
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Restore Package Management NuGet packages in Azure Pipelines
 
-**Azure Pipelines | TFS 2018 | TFS 2017**
+[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -37,7 +37,7 @@ Next, configure these options:
 
 Then, select feeds to use:
 
-- If you've checked in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
+- If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
 ![A screenshot of the NuGet task configured as outlined above](_img/restore-pkgs-on-build.png)
@@ -110,6 +110,6 @@ Because the NuGet Tool Installer is not available in TFS versions prior to TFS 2
 $(Build.BinariesDirectory)\nuget.exe
 1. Before your NuGet task, add a "PowerShell" task, select "Inline Script" as the Type, enter this PowerShell script as the Inline Script, and enter "4.3.0" (or any version of NuGet from this list) as the Arguments.
 
-Our thanks to [GitHub user leftler](https://github.com/Microsoft/vsts-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
+Our thanks to [GitHub user leftler](https://github.com/Microsoft/azure-pipelines-tasks/issues/3756#issuecomment-288185011) for creating the original version of the PowerShell script linked above.
 
 ::: moniker-end 

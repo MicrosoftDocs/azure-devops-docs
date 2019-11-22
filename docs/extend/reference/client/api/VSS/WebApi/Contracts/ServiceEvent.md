@@ -1,13 +1,14 @@
 ---
 title: VSS/WebApi/Contracts ServiceEvent API | Extensions for Azure DevOps Services
+description: Data representation of a service event.
 ms.assetid: 8bae4734-8da6-c9c0-d93e-babeb0900aa1
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,7 +19,7 @@ Module path: `VSS/WebApi/Contracts`
 
 ### Members
 
-* `eventType`: string. This is the ID of the type. Constants that will be used by subscribers to identify/filter events being published on a topic.
+* `eventType`: string. This is the ID of the type. Constants that are used by subscribers to identify and filter events being published on a topic.
 
 * `publisher`: [Publisher](../../../VSS/WebApi/Contracts/Publisher.md). This is the service that published this event.
 

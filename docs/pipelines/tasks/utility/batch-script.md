@@ -1,31 +1,41 @@
 ---
-title: Batch script
-titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS).
+title: Batch Script task
+description: Execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E60FC8AE-EDA7-4C1D-BDA5-CDC741FAD3E4
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.date: 08/10/2016
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: macoope
+author: vtbassmatt
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Utility: Batch script
+# Batch Script task
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the stage.
+Use this task in a build or release pipeline to run a Windows .bat or .cmd script.
+Optionally, allow it to permanently modify environment variables.
+
+> [!NOTE]
+> This task is not compatible with Windows containers.
+> If you need to run a batch script on a Windows container, use the [command line task](command-line.md) instead.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/BatchScriptV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -41,7 +51,7 @@ monikerRange: '>= tfs-2015'
 <td>Path</td>
 <td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
 <p>
-In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../build/variables.md).</p>
+In Team Foundation Build, this directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</p>
 </td>
 </tr>
 <tr>
@@ -64,7 +74,12 @@ In Team Foundation Build, this directory is [$(Build.SourcesDirectory)](../../bu
 <td>Fail on standard error</td>
 <td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
 </tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Example
@@ -88,12 +103,16 @@ On the Build tab of a build pipeline, add this task:
 
 <table>
    <tr>
-      <td>![](_img/batch-script.png)<br/>**Utility: Batch Script**</td>
-      
+      <td>
+
+![](_img/batch-script.png)
+
+<br/>**Utility: Batch Script**</td>
+
 <td>
 <p>Run test.bat.</p>
 <ul>
-<li>Path: ```test.bat```</li>
+<li>Path: <code>test.bat</code></li>
 </ul>
       </td>
 </tr>
@@ -101,19 +120,15 @@ On the Build tab of a build pipeline, add this task:
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### Where can I learn about batch files?
-
-[Using batch files](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands)
-
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 
@@ -121,8 +136,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-::: moniker range="< vsts"
+::: moniker range="< azure-devops"
+
 [!INCLUDE [temp](../../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

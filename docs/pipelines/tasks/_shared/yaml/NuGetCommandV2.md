@@ -1,6 +1,6 @@
 ```YAML
 # NuGet
-# Restore, pack, or push NuGet packages, or run a NuGet command. Supports NuGet.org and authenticated feeds like Package Management and MyGet. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
+# Restore, pack, or push NuGet packages, or run a NuGet command. Supports NuGet.org and authenticated feeds like Azure Artifacts and MyGet. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 - task: NuGetCommand@2
   inputs:
     #command: 'restore' # Options: restore, pack, push, custom
@@ -17,6 +17,7 @@
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg' # Required when command == Push
     #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
     #publishVstsFeed: # Required when command == Push && NuGetFeedType == Internal
+    #publishPackageMetadata: true # Optional
     #allowPackageConflicts: # Optional
     #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
     #verbosityPush: 'Detailed' # Options: quiet, normal, detailed
@@ -33,7 +34,7 @@
     #includeSymbols: false # Optional
     #toolPackage: # Optional
     #buildProperties: # Optional
-    #basePath: # Optional
+    #basePath: # Optional, specify path to nuspec files
     #verbosityPack: 'Detailed' # Options: quiet, normal, detailed
     #arguments: # Required when command == Custom
 ```

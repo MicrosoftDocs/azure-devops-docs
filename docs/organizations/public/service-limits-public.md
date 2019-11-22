@@ -6,19 +6,19 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
 ms.date: 07/02/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
-# Service limits 
+# Quickstart: Review rate and service limits 
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-Public projects are subject to the limits documented in this article. 
+In this quickstart, you learn which service limits and rate that your public projects are subject to. 
 
 <!---
 ## Pipelines
@@ -63,5 +63,7 @@ Wikis defined for a project are limited to 1 GB per git repository.
 > To derive the size of a wiki/git repository, download the repo to your local computer, unzip the file, and then open the **Properties** for the corresponding folder.  
 
 
-## Related articles 
-- [Work tracking object limits](../settings/work/object-limits.md) 
+## Next steps 
+
+> [!div class="nextstepaction"]
+> - [Review work tracking object limits](../settings/work/object-limits.md)

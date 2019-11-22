@@ -1,30 +1,39 @@
-- name: Start using Azure Boards
-  href: index.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json
+- name: Start using Azure Boards 
+  href: index.md
+- name: Sign up and invite some teammates 
+  href: sign-up-invite-teammates.md
+- name: Plan and track work
+  displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
+  href: plan-track-work.md 
+- name: Customize your boards
+  displayName: cards, columns, field, swimlanes, settings, backlog levels, 
+  href: customize-boards.md 
+- name: Track work as a Stakeholder
+  href: ../../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Manage your project
+  displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
+  href: manage-boards.md
+  displayName: cards, columns, field, swimlanes, settings
+- name: Concepts
   items:
-  - name: "What is Azure Boards?"
-    href: what-is-azure-boards.md
   - name: "Why use Azure Boards?"
+    displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
     href: why-use-azure-boards.md
-  - name: Sign up and invite some teammates 
-    href: sign-up-invite-teammates.md
-  - name: Plan and track work
-    href: plan-track-work.md 
-  - name: Create your backlog
-    href: ../backlogs/create-your-backlog.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json 
-  - name: Kanban board quickstart
-    href: ../boards/kanban-quickstart.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json  
-  - name: Default permissions (Security)
-    href: permissions-access-boards.md
+  - name: "Area & iteration paths"
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: "About teams & Agile tools"
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Key concepts
-    href: key-concepts.md
-  - name: Resources
-    items:
-    - name: Web portal navigation
-      href: ../../project/navigation/index.md
-    - name: Work items
-      href: ../work-items/index.md
-    - name: Process customization
-      href: ../../organizations/settings/work/inheritance-process-model.md
-    - name: Security & identity
-      href: ../../organizations/security/index.md
+    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
+    href: key-concepts.md 
+- name: Reference
+  items:
+  - name: Basic fields reference
+    href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+  - name: Default permissions & access (Security)
+    href: permissions-access-boards.md
+
+
+
+
 

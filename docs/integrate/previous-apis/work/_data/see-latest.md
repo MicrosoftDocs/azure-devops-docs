@@ -1,3 +1,2 @@
-<div class="alert alert-warning">
-	This API is deprecated. Please use the updated [Backlog Configuration API](../backlog-configuration.md).
-</div>
+> [!IMPORTANT]  
+> This API is deprecated. Please use the updated <a href="/azure/devops/integrate/previous-apis/work/backlog-configuration" data-raw-source="[Backlog Configuration API](/azure/devops/integrate/previous-apis/work/backlog-configuration)">Backlog Configuration API.

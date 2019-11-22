@@ -4,7 +4,7 @@ exports.getContext = function() {
     return {
       feedName: "fabrikam",
       feedView: "release",
-      packgeName: "bootstrap",
+      packageName: "bootstrap",
       packageVersion: "3.3.6",
     };
 };
@@ -14,10 +14,10 @@ exports.submitRequests = function() {
     apiwriter.setEnableWrite(true);
 
     // get package version details
-    apiwriter.getJson('/packaging/feeds/{feedName}/nuget/packages/{packgeName}/versions/{packageVersion}/');
+    apiwriter.getJson('/packaging/feeds/{feedName}/nuget/packages/{packageName}/versions/{packageVersion}/');
 
     // unlist the package
-    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packgeName}/versions/{packageVersion}/',
+    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packageName}/versions/{packageVersion}/',
         function(context, result) {
             return {
                 "listed" : "false"
@@ -26,7 +26,7 @@ exports.submitRequests = function() {
     );
 
     // relist the package
-    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packgeName}/versions/{packageVersion}/',
+    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packageName}/versions/{packageVersion}/',
         function(context, result) {
             return {
                 "listed" : "true"
@@ -35,7 +35,7 @@ exports.submitRequests = function() {
     );
 
     // promote the package
-    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packgeName}/versions/{packageVersion}/',
+    apiwriter.patchJson('/packaging/feeds/{feedName}/nuget/packages/{packageName}/versions/{packageVersion}/',
         function(context, result) {
             return {
                 "views" : { "op" : "add", "path" : "/views/-", "value" : context.feedView }
@@ -44,5 +44,5 @@ exports.submitRequests = function() {
     );
 
     // delete the package
-    apiwriter.deleteJson('/packaging/feeds/{feedName}/nuget/packages/{packgeName}/versions/{packageVersion}/', null);
+    apiwriter.deleteJson('/packaging/feeds/{feedName}/nuget/packages/{packageName}/versions/{packageVersion}/', null);
 };

@@ -5,11 +5,11 @@ description: How to customize links to process guidance-Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
-monikerRange: '>=tfs-2013'
+monikerRange: '>= tfs-2013'
 ms.topic: tutorial
 ---
 
@@ -114,13 +114,13 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 2.  In each file, locate the `meta` statement that specifies the URL. For example:  
   
-    ```  
-    <meta http-equiv="Refresh" content="0;URL=http://go.microsoft.com/fwlink/?LinkId=190653" />  
+    ```html
+    <meta http-equiv="Refresh" content="0;URL=https://go.microsoft.com/fwlink/?LinkId=190653" />  
     ```  
   
 3.  Replace the value specified for the URL with the URL of the customized guidance stored on your configured process guidance website. For example:  
   
-    ```  
+    ```html
     <meta http-equiv="Refresh" content="0;URL=http://YourPortal/Process Guidance/scrum/html/Bug.html" />  
     ```  
   

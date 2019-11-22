@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts GetOption API | Extensions for Azure DevOps Services
+description: Data representation of a get option.
 ms.assetid: 0bb1bfab-100d-e55e-ff17-48aaf58a638c
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

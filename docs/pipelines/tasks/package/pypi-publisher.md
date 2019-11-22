@@ -1,25 +1,33 @@
 ---
-title: PyPI Publisher
-titleSuffix: Azure Pipelines & TFS
+title: PyPI Publisher task (Deprecated)
+ms.custom: seodec18
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
 ms.author: brcrista
+author: brcrista
 ms.reviewer: dastahel
 ms.date: 5/7/2018
-monikerRange: 'vsts'
+monikerRange: 'azure-devops'
 ---
 
-# Package: PyPI Publisher
+# Package: PyPI Publisher task (deprecated)
 
-![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.
 Then, it will upload the package to a PyPI index using `twine`.
 The task will install the `wheel` and `twine` packages with `python -m pip install --user`.
+
+## Deprecated
+
+> [!WARNING]
+> The PyPI Publisher task has been deprecated. You can now [publish PyPI packages using twine authentication and custom scripts](../../targets/pypi.md). 
 
 ## Demands
 
@@ -36,8 +44,11 @@ A generic service connection for a PyPI index.
 > * **Password/Token Key**: password for your PyPI account
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -50,12 +61,11 @@ A generic service connection for a PyPI index.
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
-
 
 <!-- ENDSECTION -->

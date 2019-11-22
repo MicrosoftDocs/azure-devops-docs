@@ -1,5 +1,6 @@
 {
   "build": {
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -23,7 +24,10 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.mp4",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -35,11 +39,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "brand": "vsts",
-      "searchScope": ["VSTS", "Team Services"],
-      "author": "erickson-doug",
-      "ms.author": "douge",
-      "ms.topic": "douge",
+      "brand": "azure-devops",
+      "searchScope": ["Azure DevOps", "VSTS", "Team Services"],
+      "author": "mijacobs",
+      "ms.author": "mijacobs",
+      "ms.topic": "conceptual",
       "ms.prod": "devops",
       "ms.technology": "conceptual"
     },

@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Recycle Bin | REST API Reference for Team Foundation Server
 description: Work with deleted work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A4633743-4644-421E-9B4F-3C906F9D4D42
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -116,7 +116,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
       "System.Title": "First Workitem",
       "Microsoft.VSTS.Scheduling.Effort": 8,
       "WEF_6CB513B6E70E43499D9FC94E5BBFB784_Kanban.Column": "New",
-      "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http://msdn.microsoft.com/en-us/library/live/hh826547.aspx"
+      "System.Description": "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - https://msdn.microsoft.com/library/live/hh826547.aspx"
     },
     "_links": {
       "self": {
@@ -337,7 +337,7 @@ DELETE https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/403?api-versio
 
 #### Sample code
 
-* [C# (PermenentlyDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L90)
+* [C# (PermanentlyDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L90)
 
 ## Permanently delete multiple work items
 
@@ -390,4 +390,4 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
 
 #### Sample code
 
-* [C# (PermenentlyDeleteMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L101)
+* [C# (PermanentlyDeleteMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L101)

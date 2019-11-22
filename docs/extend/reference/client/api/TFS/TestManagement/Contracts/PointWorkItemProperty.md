@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts PointWorkItemProperty API | Extensions for Azure DevOps Services
+description: Data representation of a point work item property.
 ms.assetid: b46f37a9-2858-c0dd-69fc-4242868fb7a8
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

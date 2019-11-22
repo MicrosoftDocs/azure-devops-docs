@@ -1,13 +1,13 @@
----
-title: Setting up GitHub Source Linking with Azure DevOps Services Build & Azure DevOps Services Symbol Server
+﻿---
+title: GitHub Source Linking with Build & Symbol Server
 description: Using build to index and publish symbols from an Azure DevOps Services-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.manager: douge
+ms.manager: mijacobs
 ms.date: 03/02/2018
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ---
@@ -43,7 +43,7 @@ Once the build has been completed and the symbols have been published it is time
 
 To point Visual Studio to Azure DevOps Services for downloading symbols click on _Tools_, then _Options_ and then scroll down to the _Debugging_ group of items and select _Symbols_ item. Use the **New Azure DevOps Services Symbol Server location** icon to select your Azure DevOps Services server and add it to the list of symbols locations.
 
-![Adding Azure DevOps Services organization to the list of symbol locations](_img/symbollocationoptionspanel.png)
+![Adding organization to the list of symbol locations](_img/symbollocationoptionspanel.png)
 
 Next select the _General_ item under the _Debugging_ group and scroll down and check the **Enable Source Link support**.
 
@@ -60,7 +60,7 @@ Once consent is granted Visual Studio will download the source files directly fr
 ![Source code loaded from GitHub using symbols information](_img/codeloadedfromgithubusingsymbolsinfo.png)
 
 > [!NOTE]
-> When attaching to a process, you may need to uncheck the **Enable Just My Code** option unde the _Debugging | General_ options.
+> When attaching to a process, you may need to uncheck the **Enable Just My Code** option under the _Debugging | General_ options.
 
 ## Conclusion
 In this article we've shown you how to get up and running using the symbol server integrated with Azure DevOps Services even when your source code is coming from GitHub.
@@ -69,7 +69,7 @@ In this article we've shown you how to get up and running using the symbol serve
 
 ### Does this work with private GitHub repositories?
 
-No, currently the Source Link implementation in Visual Studio is not designed to work with authenticated GitHub repositories. This functionaly is being added in will be available in the future release of Visual Studio 2017.
+No, currently the Source Link implementation in Visual Studio is not designed to work with authenticated GitHub repositories. This functionality is being added in will be available in the future release of Visual Studio 2017.
 
 ## Reference Information
 

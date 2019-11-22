@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Points | REST API Reference for Team Foundation Server
 description: Work with test points programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 70C0FE8E-1A6B-4C0A-BC8A-46DAF75A9418
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

@@ -1,14 +1,16 @@
----
-title: Create and manage your Azure DevOps organization 
-description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
+﻿---
+title: About creating and managing organization
+titleSuffix: Azure DevOps
+ms.custom: seodec18
+description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2018
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -22,11 +24,11 @@ With an organization, you gain access to the platform in which you can do the fo
 * Plan and track your work as well as code defects and issues.
 * Set up continuous integration and deployment.
 * Integrate with other services by using service hooks.
-* Obtain additional features through Azure Marketplace extensions.
+* Obtain additional features and extensions.
 
 ## Create your organization
 
-Before you get started, read [Defining your organizations and projects](../../user-guide/define-organizations-and-projects.md). Then, you can [create your organization](create-organization.md). and invite others so they can access your organization.
+Before you get started, read [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
 so that Azure DevOps can create your project for code and other assets,
@@ -36,15 +38,14 @@ as your development environment, you can create your organization when you
 
 Your organization includes five free users
 with Basic access, plus unlimited Visual Studio
-subscribers and stakeholders at no extra charge.
+subscribers and Stakeholders at no extra charge.
 Your organization also includes free monthly amounts
-of additional services, like build and deployment,
-and cloud-based load testing.
+of additional services such as build and deployment.
 
 ## Connect to your organization
 
-Once your organization is created,
-[connect to your organization](../../organizations/projects/connect-to-projects.md)
+When your organization is created,
+[connect to your projects](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
 and add code to your project.
 
@@ -65,14 +66,6 @@ That way, you control each user's access.
 Or [add users to your project](add-team-members.md),
 and let Azure DevOps assign the next available access to them.
 
-## Try extensions for free
-
-Help your team do more with [Marketplace extensions](https://marketplace.visualstudio.com/).
-For example, organization owners can
-try the Test Manager extension free for 90 days.
-During the trial, all users with Basic access can
-[try Test Manager for free](../billing/try-additional-features-vs.md).
-
 ## Set up billing
 
 If you need more than the free users and amounts
@@ -91,3 +84,4 @@ your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.
+You can also [restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

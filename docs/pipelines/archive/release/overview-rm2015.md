@@ -1,14 +1,14 @@
----
-title: Microsoft Release Management 2015 Server and Client Version - Help Contents
-titleSuffix: Azure Pipelines & TFS
+﻿---
+title: Microsoft Release Management 2015 Server & Client Version
+ms.custom: seodec18
 description: Create managed continuous deployment pipelines in Azure Pipelines or TFS using Release Management 2015 (server and client version)
 ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 07/16/2018
 monikerRange: '>= tfs-2015'
 ---

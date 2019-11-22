@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Tags | REST API Reference for Team Foundation Server
 description: Work with work item tags programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: DDD158EB-BCCB-48AE-8C2F-5409D2326E48
-ms.manager: douge
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

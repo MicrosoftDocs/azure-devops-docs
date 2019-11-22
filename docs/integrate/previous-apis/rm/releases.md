@@ -4,11 +4,11 @@ description: Get Releases programmatically using the REST APIs for VSTS.
 ms.assetid: 3eb13243-f504-4cfd-a97e-638d8a0690d2
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
-ms.manager: douge
+monikerRange: '>= tfs-2015 < azure-devops'
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -34,8 +34,8 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 | Query
 | definitionId  | int   | Releases for this definition.
 | createdBy     | string   | Releases created by this user.<br/>Alias of the user. `chuckreinhart@outlook.com`, for example.
-| minCreatedTime | [DateTime](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) | Releases that were created after this time.
-| maxCreatedTime | [DateTime](http://msdn.microsoft.com/en-us/library/az4se3k1.aspx) | Releases that were created before this time.
+| minCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created after this time.
+| maxCreatedTime | [DateTime](https://msdn.microsoft.com/library/az4se3k1.aspx) | Releases that were created before this time.
 | statusFilter        | enum {<br/>&nbsp;&nbsp;Draft,<br/>&nbsp;&nbsp;Active,<br/>&nbsp;&nbsp;Abandoned<br/>} | Releases that have this status.
 | $expand		| enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;approvals,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of releases.
 | $top		| int | Number of releases to get
@@ -189,7 +189,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "name": "Fabrikam-Website",
         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
-      "description": "Fabrikram website release - M6",
+      "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,
@@ -352,7 +352,7 @@ GET https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_
         "name": "Fabrikam-Website",
         "url": "https://mytfsserver/DefaultCollection/ff213d65-d61d-447c-b39d-d16f21b18364/_apis/Release/definitions/12"
       },
-      "description": "Fabrikram website release - M6",
+      "description": "Fabrikam website release - M6",
       "reason": "manual",
       "releaseNameFormat": "Release-$(rev:r)",
       "keepForever": false,

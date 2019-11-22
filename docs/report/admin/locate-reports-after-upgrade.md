@@ -5,9 +5,11 @@ description: Locate reports in SQL Server Reporting Services after upgrading ear
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.date: 10/17/17
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: "<= azure-devops-2019" 
+ms.date: 11/19/2018
 ---
 
 
@@ -60,7 +62,7 @@ The following illustration shows this structure for the project that is named De
 
 To view post-upgrade reports
  
-0. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and press ENTER:
 
 	`http://ReportServerName/TFSReports/ProjectCollectionName/ProjectName/`
 
@@ -68,15 +70,15 @@ To view post-upgrade reports
 
 	`http://ReportServerName/TFSReports_TFSInstance/ProjectCollectionName/ProjectName/`
 
-0. Click the folder that contains the report that you want to view.
+1. Click the folder that contains the report that you want to view.
 
-0. Click the report that you want to view.
+1. Click the report that you want to view.
 
 ## View pre-upgrade reports
 
 To view pre-upgrade reports
 
-0. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
+1. Open Internet Explorer, type the following string in the Address bar, and then press ENTER:
 
 	`http://ReportServerName/Reports/ProjectName/`
 
@@ -84,7 +86,7 @@ To view pre-upgrade reports
 
 	`http://ReportServerName/Reports_TFSInstance/ProjectName/`
 
-0. Click the report that you want to view.
+1. Click the report that you want to view.
 
 
 
@@ -100,7 +102,7 @@ To view pre-upgrade reports
 > [!NOTE]
 >  The ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** option appears only when the team project collection that contains your team project is provisioned with Reporting Services. For more information, see [Add a Report Server to a Team Project Collection](../admin/add-reports-to-a-team-project.md).  
   
- The ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports are based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](http://go.microsoft.com/fwlink/?LinkId=263963).  
+ The ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports are based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](https://go.microsoft.com/fwlink/?LinkId=263963).  
   
  The reports that TFS provides with the default process templates provide a view of the current state of your project by aggregating and summarizing the metrics from such things as work items, version control, test results, and builds. You can use the default reports, or you can customize each report to fit your specific needs.  
   
@@ -117,7 +119,7 @@ To view pre-upgrade reports
 -   To manage reports from Report Manager, you must be a member of the SQL Server Reporting Services **Team Foundation Content Manager** role. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   
     > [!NOTE]
-    >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+    >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ##  <a name="Viewing"></a>  
   
@@ -130,11 +132,11 @@ To view pre-upgrade reports
   
  Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
--   Team Explorer is running on the same computer as Reporting Services.  
+- Team Explorer is running on the same computer as Reporting Services.  
   
--   You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
+- You are not logged on as an administrator, or enhanced security is enabled for Internet Explorer.  
   
- To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
+  To correct this issue, log onto your computer as an administrator, or open Internet Explorer, open Internet Options, choose the **Security** tab, and clear the **Enabled Protected Mode** check box.  
   
 1.  Choose the report and then press Enter.  
   

@@ -1,11 +1,11 @@
 ---
 title: Resolve data conflicts (publish and refresh)
-titleSuffix: Azure Boards and TFS
-description: Resolves data conflicts when publishing a work item from Excel or Project to Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: Resolves data conflicts when publishing a work item from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -48,9 +48,9 @@ A data conflict occurs when you try to publish a work item from [Excel](bulk-add
 ## Related articles
 -  [Resolve invalid links](resolve-excel-invalid-links-tree-list.md)   
 -  [Resolve data validation errors](resolve-excel-data-validation-errors.md)   
--  [Work in Excel and Project](track-work-vsts-tfs.md)  
+-  [Work in Excel and Project](track-work.md)  
 
 
-###Required permissions  
+### Required permissions  
   
 To update work items, you must be a member of the **Contributors** group or have your **View work items in this node** and your **Edit work items in this node** permissions set to **Allow**. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md). 

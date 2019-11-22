@@ -55,7 +55,7 @@ Administration:
 Read about the new features below and head over to Azure DevOps Services to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps Services](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps Services](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Azure Pipelines
 
@@ -70,13 +70,13 @@ Also, when you use the app, build results are made available in GitHub’s new [
 To get started, install the app [from the GitHub Marketplace](https://github.com/marketplace/azure-pipelines/) into your GitHub account or organization. You can also purchase additional parallel jobs with an existing GitHub payment account instead of a separate Azure account. Pricing is the same either way.
 
 > [!div class="mx-imgBorder"]
-![Azure Pipelines app in GitHub Marketplace](_img/launch_02.png)
+> ![Azure Pipelines app in GitHub Marketplace](_img/launch_02.png)
 
 ### Build open source projects with Azure Pipelines for free
 
 Azure Pipelines provides cloud-hosted pipelines for Linux, macOS, and Windows with unlimited minutes and 10 free parallel jobs for open source.
 
-See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=vsts&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=vsts) documentation for more information.
+See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=%2Fvsts%2Forganizations%2Fpublic%2Ftoc.json&bc=%2Fvsts%2Forganizations%2Fpublic%2Fbreadcrumb%2Ftoc.json&view=azure-devops&tabs=github) and [parallel jobs](/azure/devops/pipelines/licensing/concurrent-jobs-vsts?view=azure-devops) documentation for more information.
 
 ### Configure builds using YAML
 
@@ -84,7 +84,7 @@ See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=
 > To use this capability, you must have the **Build YAML pipelines** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your organization.
 
 
-YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=vsts) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=vsts), [external templates](/azure/devops/pipelines/yaml-schema?view=vsts#step-template), and [matrix execution](/azure/devops/pipelines/process/phases?view=vsts&tabs=yaml#multi-configuration).
+YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops#step-template), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-configuration).
 
 ### Create YAML build pipelines using the new wizard
 
@@ -94,7 +94,7 @@ YAML-based build pipelines are now broadly available. Automate your continuous i
 A new wizard simplifies this process of creating YAML-based build pipelines with GitHub and Azure Repos. Once you choose a repository to build, a pipeline will automatically be created if it contains a YAML file. Otherwise, Azure Pipelines will analyze your repository and recommend a YAML-based template for building your project. Just click **Save and run** to create a pull request for the suggested YAML and run the first build. Continuous integration and pull request triggers will be enabled automatically.
 
 > [!div class="mx-imgBorder"]
-![New pipeline wizard](_img/launch_01.png)
+> ![New pipeline wizard](_img/launch_01.png)
 
 ### Manage build pipelines using the new Builds page
 
@@ -104,7 +104,7 @@ A new wizard simplifies this process of creating YAML-based build pipelines with
 We are making several improvements and rolling out a new version of the **Builds** page. This new version combines the directory of all your build pipelines and the list of current builds so that you can quickly navigate across your project's builds to see their status. It also includes a preview of test analytics for the selected pipeline.
 
 > [!div class="mx-imgBorder"]
-![New Builds page](_img/launch_03.png)
+> ![New Builds page](_img/launch_03.png)
 
 ### Rebuild GitHub pull request builds
 
@@ -118,7 +118,7 @@ Build badges embedded into the homepage of a repository are a common way to show
 
 ### Leverage even more tools on Microsoft-hosted Linux agents
 
-In this update, several build, test, and deployment tools have been added to the [Microsoft-hosted Linux agents](/azure/devops/pipelines/agents/hosted?view=vsts#software), which removes the need to install them yourself during a build or release.
+In this update, several build, test, and deployment tools have been added to the [Microsoft-hosted Linux agents](/azure/devops/pipelines/agents/hosted?view=azure-devops#software), which removes the need to install them yourself during a build or release.
 
 - Erlang/OTP
 - Firefox
@@ -143,7 +143,7 @@ In this update, several build, test, and deployment tools have been added to the
 Knowing the changes that are getting deployed with a release is important to track improvements to the app. Now you can get the list of commits made in GitHub repos and the associated GitHub issues that are being deployed with a release.
 
 > [!div class="mx-imgBorder"]
-![Commits for a release](_img/launch_05.png)
+> ![Commits for a release](_img/launch_05.png)
 
 ### Manage build and deployment completion emails better using improved formatting
 
@@ -180,13 +180,13 @@ Environment | Stage | A logical and independent entity that represents where you
 Concurrent job/pipeline | Parallel job |  A parallel job gives you the ability to run a single build or release job at a time in your organization. With more parallel jobs available, you can run more build and release jobs at the same time.
 Service endpoint | Service connection | A group of settings, such as credentials, used to connect to external services to execute tasks in a build or release.
 
-See the [Concepts](/azure/devops/pipelines/?view=vsts#concepts) documentation for more information.
+See the [Concepts](/azure/devops/pipelines/?view=azure-devops#concepts) documentation for more information.
 
 ## Marketplace
 
 ### Leverage the latest extension categories
 
-As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=vsts#required-attributes) documentation for more information.
+As an extension contributor you will notice that extension categories have been aligned to match the renamed Azure DevOps services in the [Marketplace](https://marketplace.visualstudio.com/vsts). Although the previous categories have been automatically mapped to the new ones, we recommend switching to the new categories by updating your extension's manifest. See the [Manifest](/azure/devops/extend/develop/manifest?view=azure-devops#required-attributes) documentation for more information.
 
 ## Administration
 
@@ -195,12 +195,12 @@ As an extension contributor you will notice that extension categories have been 
 Although we've moved to the new `dev.azure.com` domain name as the URL for new organizations, you'll be able to continue accessing your organization using the `visualstudio.com` domain, as usual. If you'd like to change your URL to be based on `dev.azure.com`, an organization administrator (Project Collection Administrator) can change this from the organization settings page. Although adopting the new domain name won't redirect every request, any request to the root URL of the organization and links from many email and web-based links will change.
 
 > [!div class="mx-imgBorder"]
-![Org URL setting](_img/launch_04.png)
+> ![Org URL setting](_img/launch_04.png)
 
 We will make the move to the new URL gradually based on customer feedback. It will start as opt-in, then later we will make it the default for organizations. We have yet to set a timeline for deliberately moving organizations away from the `visualstudio.com` domain.
 
 > [!IMPORTANT]
-> To ensure your organization works with any existing firewall or IP restrictions, ensure that the appropriate domain names and IP addresses are allowed. See this [agent Q&A section](/azure/devops/pipelines/agents/v2-linux?view=vsts#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) for more information.
+> To ensure your organization works with any existing firewall or IP restrictions, ensure that the appropriate domain names and IP addresses are allowed. See this [agent Q&A section](/azure/devops/pipelines/agents/v2-linux?view=azure-devops#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with) for more information.
 
 ### Add Stakeholder users to save on Azure Pipelines license costs
 
@@ -221,7 +221,7 @@ See the [Provide Stakeholders access to edit build and release pipelines](/azure
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-![Make a suggestion](../_img/help-make-a-suggestion.png)
+> ![Make a suggestion](../_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

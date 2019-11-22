@@ -4,9 +4,9 @@ description: Use packages from npmjs.com in Azure DevOps Services and Team Found
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/13/2017
 monikerRange: '>= tfs-2017'
@@ -42,25 +42,26 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
 > [!NOTE]
-> Right now, Azure DevOps Services and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
+> Legacy feeds do not guarantee that every package `npm install`ed via a feed with upstreams enabled will be saved. Check if your feed is a [legacy feed](https://docs.microsoft.com/azure/devops/artifacts/reference/feed-upgrade-learn-more?view=azure-devops#determine-if-your-feed-is-a-legacy-feed) and consider upgrading it, if needed.
 
-::: moniker range="vsts"
+::: moniker range=">= azure-devops-2019"  
 
-# [New navigation](#tab/new-nav)
 ![Viewing your cached packages](_img/view-cached-packages-newnav.png)
-
-# [Previous navigation](#tab/previous-nav)
-![Viewing your cached packages](_img/view-cached-packages.png)
-
----
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2017 < vsts"
+::: moniker range="<= tfs-2018"
+
+![Viewing your cached packages](_img/view-cached-packages.png)
+
+::: moniker-end
+
+::: moniker range=">=tfs-2017 < azure-devops"
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 
 ::: moniker-end
 
 ## Scopes
+
 If you prefer to use scopes, which limit your private packages to those with the `@<scope>` prefix e.g. `@fabrikam/core` but enable you to consume public packages **directly** from npmjs.com, see [Scopes](scopes.md).

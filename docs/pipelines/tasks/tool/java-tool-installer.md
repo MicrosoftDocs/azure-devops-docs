@@ -1,30 +1,36 @@
 ---
-title: Java Tool Installer
-titleSuffix: Azure Pipelines & TFS
-description: Learn all about how you can use the Java Tool Installer to change the version of Java in Azure Pipelines and Team Foundation Server (TFS).
+title: Java Tool Installer task
+description: Change the version of Java in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
-ms.manager: douge
-ms.author: alewis
-author: andyjlewis
-ms.reviewer: dastahel
-ms.date: 11/15/2017
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: dastahel
+author: davidstaheli
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Tool: Java Tool Installer
+# Java Tool Installer task
 
-![icon](_img/java.png) Acquires a specific version of Java from a user supplied Azure blob, a location in the source or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to acquire a specific version of Java from a user supplied Azure blob,
+from a location in the source or on the agent, or from the tools cache. The task also sets the JAVA_HOME environment variable.
+Use this task to change the version of Java used in Java tasks.
 
 ## Demands
 
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -43,9 +49,42 @@ None
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
 
+## Examples
+
+Here's an example of getting the archive file from a local directory on Linux.
+The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that it includes the `bin`, `lib`, `include`, `jre`, etc. directories.
+
+```yaml
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: "11"
+      jdkArchitectureOption: x64
+      jdkSourceOption: LocalDirectory
+      jdkFile: "/builds/openjdk-11.0.2_linux-x64_bin.tar.gz"
+      jdkDestinationDirectory: "/builds/binaries/externals"
+      cleanDestinationDirectory: true
+```
+
+Here's an example of downloading the archive file from Azure Storage.
+The file should be an archive (.zip, .gz) of the `JAVA_HOME` directory so that it includes the `bin`, `lib`, `include`, `jre`, etc. directories.
+
+```yaml
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '6'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: AzureStorage
+    azureResourceManagerEndpoint: myARMServiceConnection
+    azureStorageAccountName: myAzureStorageAccountName
+    azureContainerName: myAzureStorageContainerName
+    azureCommonVirtualFile: 'jdk1.6.0_45.zip'
+    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk6'
+    cleanDestinationDirectory: false
+```
+
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

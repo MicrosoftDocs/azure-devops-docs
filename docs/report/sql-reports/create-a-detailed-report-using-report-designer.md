@@ -6,10 +6,10 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
@@ -22,17 +22,17 @@ You can track your team's progress more easily by creating reports that contain 
   
  After you create your first report, you might change it by experimenting with different data and layouts. For example, you could group the table by the Assigned To field.  
   
- If you have not created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). For more information about how to use Report Designer, see the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](http://go.microsoft.com/fwlink/?LinkId=181954). To create reports that primarily show aggregate information, see [Create an aggregate report using Report Designer and the Analysis Services Cube](create-aggregate-report-report-designer-analysis-services-cube.md).  
+ If you have not created reports for TFS before, see [Dashboards and reports](../admin/review-team-activities-for-useful-reports.md). For more information about how to use Report Designer, see the Microsoft Web site: [Designing and Implementing Reports Using Report Designer](https://go.microsoft.com/fwlink/?LinkId=181954). To create reports that primarily show aggregate information, see [Create an aggregate report using Report Designer and the Analysis Services Cube](create-aggregate-report-report-designer-analysis-services-cube.md).  
   
  **Requirements**  
   
 -   You must have Visual Studio and SQL Server Business Intelligence Development Studio installed on the same computer.  
   
-     To install Business Intelligence Development Studio, run the Setup program for SQL Server, and select the **Client Components** check box when you specify the components to install. To install the most recent service pack for SQL Server, see the following page on the Microsoft Web site: [How to obtain the latest service pack for SQL Server 2008](http://go.microsoft.com/fwlink/?LinkID=182174).  
+     To install Business Intelligence Development Studio, run the Setup program for SQL Server, and select the **Client Components** check box when you specify the components to install. To install the most recent service pack for SQL Server, see the following page on the Microsoft Web site: [How to obtain the latest service pack for SQL Server 2008](https://go.microsoft.com/fwlink/?LinkID=182174).  
   
 -   You must be a member of the **TfsWarehouseDataReaders** security role in the Analysis Services database on the data-tier server of Team Foundation Server. For more information, see [How to: Grant Access to the Databases of the Data Warehouse](../admin/grant-permissions-to-reports.md).  
 
--   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/tfs/server/admin/add-administrator-tfs).  
+-   You must be a member of the **Team Foundation Content Manager** role in SQL Server Reporting Services. For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator-tfs).  
   
 ### To create a report  
   

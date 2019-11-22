@@ -1,11 +1,11 @@
 ---
-title: Install a Maven artifact using Gradle and Azure DevOps Services
+title: Install a Maven artifact using Gradle
 description: Install a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
 ms.topic: conceptual
 ms.date: 01/31/2018
@@ -21,7 +21,7 @@ Gradle is a popular build tool for Java applications and the primary build tool 
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
 
@@ -44,7 +44,25 @@ You're ready to start! This tutorial will guide you through the process of insta
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
-Navigate to `https://dev.azure.com/{yourOrganization}/_details/organizations/security/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
+::: moniker range=">= azure-devops-2019"
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
+
+Click **+ New Token**.
+
+Give your token a name, duration, and select the **Packaging (read and write)** scope. 
+
+> You may have to choose "Show all scopes" at the bottom to see the Packaging area.
+
+![Create packaging personal access token](../_shared/_img/create-packaging-pat.png)
+
+Click **Create**.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, where `{yourOrganization}` is the name of your organization.
 
 Click **Add**.
 
@@ -56,12 +74,14 @@ Select the **Packaging (read and write)** scope.
 
 ![Select a token scope](_img/select-scope.png)
 
+::: moniker-end
+
 The token will be a long alphanumeric string, like "lzitaoxppojf6smpl2cxdoxybepfxfetjvtkmcpw3o6u2smgebfa". Copy this string and treat it securely.
 
 Now, go to the `.gradle` folder under the Gradle installation root directory. Typically, this is `%INSTALLPATH%/gradle/user/home/.gradle/`. In that folder, create a file named **gradle.properties**. 
 
 Open the **gradle.properties** file with a UTF-8-capable text editor and add the following:
-```
+```ini
 vstsMavenAccessToken=YOUR_TOKEN_HERE
 ```
 
@@ -70,13 +90,13 @@ Where *YOUR_TOKEN_HERE* is the token string you created previously. Save the fil
 ## Install a Maven artifact using Gradle
 
 Open your **build.gradle** file and confirm that the following text is present at the top of it:
-```
+```groovy
 apply plugin: 'java'
 ```
 
 Now, add the following code to the end of your **build.gradle** file. Use the `groupId`, `artifactId`, and `version` you supplied in the previous step.
 
-```
+```groovy
 dependencies { 
     compile(group: '{your-group-ID-here}', name: '{your-artifact-ID-here}', version: '{your-version-number-here}')  
 } 

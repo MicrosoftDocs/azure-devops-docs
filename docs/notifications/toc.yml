@@ -1,24 +1,26 @@
-- name: Notifications
-  href: index.md
-- name: Overview
-  items:
-  - name: About notifications
-    href: about-notifications.md
-  - name: Navigating the UX
-    href: navigating-the-ux.md
+- name: About notifications
+  href: about-notifications.md
+- name: Navigating the UI
+  href: navigating-the-ui.md 
 - name: Concepts
   items:
   - name: Events and notifications
     href: concepts-events-and-notifications.md
   - name: How email recipients are determined
     href: concepts-email-recipients.md
-- name: How-to Guides
+- name: Tutorials
   items:
-  - name: Manage your personal subscriptions
+  - name: "Follow work & pull requests"
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage personal notifications
     href: howto-manage-personal-notifications.md
-  - name: Manage your team and group subscriptions
+  - name: Set alerts, get notified when changes occur
+    href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Manage team and group notifications
     href: howto-manage-team-notifications.md
-  - name: Manage your organization subscriptions
+- name: How-to guides
+  items:
+  - name: Manage organization notifications
     href: howto-manage-organization-notifications.md
   - name: Manage organization default delivery settings
     href: howto-manage-organization-notifications-settings.md
@@ -28,10 +30,8 @@
     href: change-email-address.md
   - name: Use subscription logging for troubleshooting
     href: howto-use-subscription-logging.md
-  - name: Exclude yourself from notification of events initiated by you
+  - name: Exclude yourself from notification of events you initiated
     href: howto-exclude-self-from-email.md
-  - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
   - name: "Use @mentions to further discussion"
     href: at-mentions.md
   - name: "Use #ID to link to work items"
@@ -55,17 +55,8 @@
   - name: Events
     href: oob-supported-event-types.md
   - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: FAQs 
     href: faq-notifications.md 
-- name: Resources    
-  items:
-  - name: Git
-    href: ../repos/git/index.md
-  - name: Work items
-    href: ../boards/work-items/index.md
-  - name: Service Hooks
-    href: ../service-hooks/index.md
-  - name: REST API
-    href: https://visualstudio.microsoft.com/en-us/docs/integrate/api/notification/subscriptions
+
 

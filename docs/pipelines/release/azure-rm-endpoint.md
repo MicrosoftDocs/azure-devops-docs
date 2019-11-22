@@ -1,38 +1,40 @@
 ---
-title: Troubleshooting Azure Resource Manager service connections
-titleSuffix: Azure Pipelines & TFS
+title: Troubleshoot Azure Resource Manager service connections
+ms.custom: seodec18
 description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Troubleshoot Azure Resource Manager service connections
 
-**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service connection
-for your DevOps CI/CD processes.
+a connection to Microsoft Azure using an **Azure Resource Manager** 
+[service connection](../library/service-endpoints.md) for your Azure DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service connection?
 
-You open the **Add Azure Resource Manager srvice connection** dialog,
+You open the **Add Azure Resource Manager service connection** dialog,
 provide a connection name, and select a subscription from drop-down
 list of your subscriptions.  
 
-![The Add Azure Resource Manager srvice connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+![The Add Azure Resource Manager service connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
 When you choose **OK**, the system:
 
@@ -42,7 +44,7 @@ When you choose **OK**, the system:
 1. Creates an Azure Resource Manager service connection using this application's details
 
 <a name="troubleshoot"></a>
-## How to troubleshoot errors that may occur
+## How to troubleshoot errors that may occur while creating a connection?
 
 Errors that may occur when the system attempts to create the service connection include:
 
@@ -66,7 +68,7 @@ This is a permission issue that may be due to the following causes:
 #### The user has only guest permission in the directory
 
 The best approach to resolve this issue, while granting only the minimum additional permissions
-to the user, is to increase the Guest user permissions as follows:
+to the user, is to increase the Guest user permissions as follows.
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
@@ -88,7 +90,10 @@ to the user, is to increase the Guest user permissions as follows:
 1. Change **Guest user permissions are limited** to **No**.
 
 Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
-you can make the user a member of the **Global administrator** role as follows:
+you can make the user a member of the **Global administrator** role as follows.
+
+> **WARNING**: Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities such as Exchange Online, SharePoint Online, and Skype for Business Online. 
+
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
@@ -126,6 +131,11 @@ The directory administrator has permission to change this setting, as follows:
 
 1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
+
+#### Create the service principal manually with the user already having required permissions in Azure Active Directory
+
+You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
+
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found
 
@@ -151,5 +161,14 @@ the **Contributor** role.
 
 To resolve this issue, ask the subscription administrator to
 [configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+
+## What authentication mechanisms are supported? How do Managed Identities work?
+
+Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or  Managed Identity Authentication.
+Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection. [Learn more](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) about managed identities for virtual machines.  
+
+> [!NOTE]
+>
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

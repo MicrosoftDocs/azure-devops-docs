@@ -39,11 +39,9 @@
     href: labs/mavenpmjenkins/index.md
   - name: 7 - Publish Docker images
     href: labs/builddocker/index.md
-  - name: 8 - SonarQube
-    href: labs/sonarqube/index.md
-  - name: 9 - Continuous deployment
+  - name: 8 - Continuous deployment
     href: labs/releasemanagement/index.md
-  - name: 10 - Eclipse end-to-end
+  - name: 9 - Eclipse end-to-end
     href: labs/e2eeclipse/index.md
   - name: 10 - IntelliJ end-to-end
     href: labs/e2eintellij/index.md

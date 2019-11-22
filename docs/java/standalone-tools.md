@@ -1,13 +1,13 @@
----
-title: Use standalone static analysis with Azure DevOps Services and TFS
+﻿---
+title: Use standalone static analysis
 description: Learn how to use PMD, Checkstyle, and FindBugs with Azure DevOps Services and TFS for Java development
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: douge
-ms.author: douge
-author: erickson-doug
+ms.manager: mijacobs
+ms.author: dastahel
+author: davidstaheli
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -22,21 +22,21 @@ Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.ne
 To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](/azure/devops/pipelines/tasks/build/maven) or [Gradle build task](/azure/devops/pipelines/tasks/build/gradle).
 
 > [!div class="mx-imgBorder"]
-![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)
+> ![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)
 
 ## Reviewing the build summary and artifacts
 
 The build summary reports the number of issues found by each of the tools you have activated.
 
 > [!div class="mx-imgBorder"]
-![Build summary examples with issues](_img/code-analysis-reports.png)
+> ![Build summary examples with issues](_img/code-analysis-reports.png)
 
 Detailed issue logs are available under the build artifact tab of the build summary. If you analyze a multi-module Maven project, the results are split by module.
 
 > [!div class="mx-imgBorder"]
-![Build summary details for artifacts](_img/details-in-artifacts.png)
+> ![Build summary details for artifacts](_img/details-in-artifacts.png)
 
-PDM, CheckStyle and FindBugs support for Maven and Gradle is currently available in Azure DevOps Services  or TFS 2017 Update 1 or later.
+PMD, CheckStyle and FindBugs support for Maven and Gradle is currently available in Azure DevOps Services or TFS 2017 Update 1 or later.
 
 ## Next Steps
 

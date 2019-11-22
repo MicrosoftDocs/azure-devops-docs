@@ -5,8 +5,9 @@ description: Configure integration between Team Foundation Server & Project Serv
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 809f7eb3-f336-4f7d-b7a8-2b67366f3915
-ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 01/12/2017
 ---
 
@@ -22,7 +23,7 @@ ms.date: 01/12/2017
 Configuring the Integration of Team Foundation Server and Project Server  
   
 > [!NOTE]
->  To ask a question of the community, see the following forum post on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
+>  To ask a question of the community, see the following forum post on the Microsoft website: [Team Foundation Server and Project Server Integration](https://go.microsoft.com/fwlink/?LinkId=207282).  
   
  **Requirements**  
   
@@ -50,7 +51,7 @@ Configuring the Integration of Team Foundation Server and Project Server
 |Names of the projects that contain work items to synchronize with an enterprise project plan.|MyTeamProject or "My Team Project"|You may associate multiple enterprise project plans with the same project.|  
 |Names of the types of work items to synchronize.|You can specify any type of work item that is defined in your project to synchronize with tasks in the project plan. If you have customized any field that is required to support synchronization, you must customize the field mappings to reflect your changes. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).<br /><br /> User stories and tasks are most often synchronized in projects that are based on the process template for agile projects from the Microsoft Solutions Framework (MSF). Requirements and tasks are most often synchronized in projects that are based on the process template for Capability Maturity Model Integration (CMMI) from MSF.|For each enterprise project plan that you map to a project, you can specify the types of work items to synchronize. Tasks in Project Server are synchronized with types of work items in Team Foundation.<br /><br /> After you have made your initial configuration, you can change the types that are mapped. For more information, see [Specify work item types](specify-wits-to-synchronize.md).|  
 |(Optional) Name of the field in PWA to display the name of the work item type.|pjTaskText10|The default value is pjTaskText30. You can specify a different field to display the name of the work item type.|  
-|(Optional) Support for fixed work.|`/noFixedWork` option|When you associate an enterprise project plan with a project, you can allow or restrict the assignment of **Fixed Work** to tasks in Project Professional that are synchronized to Team Foundation. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](http://go.microsoft.com/fwlink/?LinkId=203354).|  
+|(Optional) Support for fixed work.|`/noFixedWork` option|When you associate an enterprise project plan with a project, you can allow or restrict the assignment of **Fixed Work** to tasks in Project Professional that are synchronized to Team Foundation. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
 |(Optional) Additional fields to synchronize.|For example, you can add fields such a cost center, team name, or health status.|By default, the following seven fields in Team Foundation are synchronized:<br /><br /> 1.  Title<br />2.  Assigned To<br />3.  Completed Work<br />4.  Remaining Work<br />5.  Original Estimate<br />6.  Start Date<br />7.  Finish Date<br /><br /> Only mapped fields are synchronized. To synchronize additional fields, you must customize the field mappings.  For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).|  
 |Accounts to grant administrative permissions|Names of administrators who will synchronize data from their plans with data in projects|You must grant **Administer Project Server integration** permissions to administrators who will use the `TFSAdmin` command-line tool to manage the mappings of enterprise project plans to projects.|  
 |Team Foundation users|User names or security distribution groups|You must add members of projects who are assigned to tasks in Team Foundation to the enterprise resource pool and to the resource pool of each enterprise project plan. You must also grant these users permission to sign in to Project Server.|  
@@ -160,25 +161,25 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 #### To associate an enterprise project plan with a project  
   
-1.  At a command prompt, enter the following command, and then choose the ENTER key:  
+1. At a command prompt, enter the following command, and then choose the ENTER key:  
   
-    ```  
-    TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamproject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /projectFieldForWorkItemType:ProjectFieldName  
-    ```  
+   ```  
+   TfsAdmin ProjectServer /MapPlanToTeamProject /collection:tpcUrl /enterpriseProject:EnterpriseProjectName /teamproject:TeamProjectName /workItemTypes:ListOfWorkItemTypes /projectFieldForWorkItemType:ProjectFieldName  
+   ```  
   
-     Replace *tpcUrl* with the URL of the project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task* or *"User Story,Task*. Do not include a space after the comma.  
+    Replace *tpcUrl* with the URL of the project collection, *EnterpriseProjectName* with the name of the enterprise project plan, *TeamProjectName* with the name of the project, and *ListOfWorkItemTypes* with the names of the types of work items. For example, you can specify the following types of work items to support an agile process as "*User Story,Task* or *"User Story,Task*. Do not include a space after the comma.  
   
-     Specify **/nofixedWork** if you want to prohibit fixed task type assignments. You can also specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item.  
+    Specify **/nofixedWork** if you want to prohibit fixed task type assignments. You can also specify the **/projectFieldForWorkItemType** argument and the name of a field in Project to store the type of work item.  
   
-     Wait until the following messages appear:  
+    Wait until the following messages appear:  
   
-     **Mapping enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
+    **Mapping enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
   
-     **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
+    **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*.  
   
-2.  Repeat step 1 for each enterprise project that you want to associate with a project.  
+2. Repeat step 1 for each enterprise project that you want to associate with a project.  
   
- If you mapped your project plan while it was open, you should close and re-open it for the changes to register. When you open the plan, you should verify whether the **Publish to Team Project** and **Work Item Type** (Text30) columns appear. The presence of these fields indicates that the project plan has been mapped to a project.  
+   If you mapped your project plan while it was open, you should close and re-open it for the changes to register. When you open the plan, you should verify whether the **Publish to Team Project** and **Work Item Type** (Text30) columns appear. The presence of these fields indicates that the project plan has been mapped to a project.  
   
 > [!NOTE]
 >  After you map your enterprise project plan with a project, you can change the types of work items that are mapped. For more information, see [Specify work item types](specify-wits-to-synchronize.md).  
@@ -190,19 +191,19 @@ Configuring the Integration of Team Foundation Server and Project Server
   
 -   **For Project Server 2013**:  
   
-    -   [Manage Active Directory Resource Pool synchronization in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262115)  
+    -   [Manage Active Directory Resource Pool synchronization in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262115)  
   
-    -   [Manage security group synchronization with Active Directory in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262113)  
+    -   [Manage security group synchronization with Active Directory in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262113)  
   
-    -   [Manage users in Project Server 2013](http://go.microsoft.com/fwlink/?LinkId=262114)  
+    -   [Manage users in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262114)  
   
 -   **For Project Server 2010**:  
   
-    -   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](http://technet.microsoft.com/library/gg982985.aspx)  
+    -   [Active Directory Resource Pool Synchronization (Project Server 2010 settings)](https://technet.microsoft.com/library/gg982985.aspx)  
   
-    -   [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
+    -   [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=203359)  
   
-    -   [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)  
+    -   [Add resources to the enterprise resource pool](https://go.microsoft.com/fwlink/?LinkId=203356) (Project Server 2010)  
   
 ## Related articles  
  [Map integration components](map-integration-components.md)   

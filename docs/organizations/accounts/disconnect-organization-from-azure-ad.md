@@ -1,66 +1,67 @@
----
-title: Disconnect your Azure DevOps organization from your Azure AD
-description: Learn how to stop using your organization's directory and sign in with a Microsoft account by disconnecting your Azure DevOps Services account from your directory
+﻿---
+title: Disconnect organization from Azure AD
+titleSuffix: Azure DevOps Services
+ms.custom: seodec18
+description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/12/2018
-monikerRange: 'vsts'
+ms.date: 05/14/2019
+monikerRange: 'azure-devops'
 ---
-# Disconnect your Azure DevOps organization from your Azure Active Directory
+# Disconnect your organization from Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="DisconnectDirectory"></a>
 
-To stop using your organization's directory and return to signing in with Microsoft accounts, you can disconnect your organization from your directory.
+To stop using your organization's Azure Active Directory (Azure AD) and return to signing in with Microsoft accounts, disconnect your organization from your directory.
 
-For more information, see the [Conceptual overview](access-with-azure-ad.md) for using Azure Active Directory (Azure AD) with Azure DevOps.
+For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
-* Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+* Before you disconnect your organization from your directory, make sure to **change the organization Owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
 
-* [Microsoft accounts](`https://signup.live.com/`) for all users in your organization, including yourself as organization owner.
-
-* [Organization ownership](faq-change-app-access.md#find-owner) for your Microsoft account. 
-
-* Global administrator permissions in your Azure AD for your Microsoft account as the organization owner. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
+* Add your Microsoft account to the Project Collection Administrator group in Organization Settings and confirm that you have Global Administrator Permissions in your Azure AD for your Microsoft account. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
 
 Learn about how to [Manage Azure administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).
 
-**What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts that share the same sign-in addresses that they use now. Otherwise, users won't have access until you add them to Azure DevOps as new users. Users can migrate everything except work history. They can re-link Visual Studio subscriptions and have their access levels reassigned to their new identities.
+**What happens to current users?**  Users can migrate everything except work history. They can reconnect Visual Studio subscriptions and have their access levels reassigned to their new identities.
+
+> [!IMPORTANT]
+> If you want to connect your organization to a different Azure Active Directory at any time, ensure that any connected organizations are disconnected from the original directory BEFORE you delete that directory. Once a new directory is established, connect your organization to the new directory so users can regain access. Learn more about [connecting your organization to Azure AD](connect-organization-to-azure-ad.md).
 
 ## Disconnect organization from directory
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) with your Microsoft account as the organization owner.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-   [Why am I asked to choose between a work or school account and a personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
-2. Select **All services**, and then **Azure DevOps Services organizations**.
+    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   ![Select Azure DevOps Services organizations in the Azure portal](_img/_shared/azure-portal-team-services-administration.png)
+3. Select **Azure Active Directory**, and then select **Disconnect directory**.
 
-3. Select your organization.
+   ![Organization settings, disconnect directory](_img/_shared/select-disconnect-directory.png)
 
-   ![Select your organization in Azure portal](_img/_shared/azure-portal-select-organization.png)
+4. Enter the name of your organization, and then select **Disconnect**.
 
-4. Select **Disconnect AAD**.
+   ![Disconnection confirmation](_img/_shared/disconnection-confirmation.png)
 
-   ![Disconnect organization from Azure AD](_img/_shared/azure-portal-disconnect-aad.png)
+5. Select **Sign out**.
 
-5. Select **Yes** to confirm.
+   ![Select Sign out](_img/_shared/sign-out-azure-devops.png)
 
-   ![Disconnect the organization from directory](_img/_shared/azure-portal-confirm-disconnect-directory.png)
+Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-6. Your organization is disconnected from your organization's directory.
+For answers to frequently asked questions about connecting, disconnecting, or changing your Azure AD, see the [FAQ](faq-azure-access.md#connect-disconnect-or-change-azure-ad).
 
-   ![Organization is now disconnected from your directory](_img/_shared/azure-portal-not-connected-to-directory.png)
+## Related articles
 
-   Only users with Microsoft accounts can sign in.
-
-   For answers to questions about disconnecting, see the [FAQ](faq-azure-access.md#faq-disconnect).
+* [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
+* [Access with Azure AD](access-with-azure-ad.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

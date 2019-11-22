@@ -1,21 +1,21 @@
 ---
-title: Approvals and gates overview in Azure Pipelines and TFS
-titleSuffix: Azure Pipelines & TFS
+title: Understand approvals and gates
+ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: ronai
+author: RoopeshNair
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release approvals and gates overview
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
@@ -31,7 +31,7 @@ that can include waiting for users to manually approve or reject deployments, an
 systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
 deployment pipeline and prompt users to carry out manual tasks, then resume or reject the deployment.
 
->At present, gates are available only in Azure Pipelines.
+> At present, gates are available only in Azure Pipelines.
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 
@@ -56,12 +56,16 @@ are useful include the following.
 
 You can, of course, combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
+In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
+though service management methodologies such as ITIL. For more details, see [Release deployment control using ServiceNow](servicenow.md).
+
 ## Related topics
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
-* [Stages](../environments.md)
+* [ServiceNow release and deployment control](servicenow.md)
+* [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](index.md)
 

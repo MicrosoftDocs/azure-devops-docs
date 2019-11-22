@@ -1,15 +1,17 @@
 ---
 title: Scrum process work items types & workflow
-titleSuffix: Azure Boards and TFS
-description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards & Team Foundation Server 
+titleSuffix: Azure Boards
+description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
+ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/19/2018
+ms.date: 11/19/2018
 ---
 
 # Scrum process work item types and workflow  
@@ -18,9 +20,13 @@ ms.date: 09/19/2018
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
-<img src="_img/scrum-process-plan-wits.png" alt="Scrum process, WITs used to plan and track" style="border: 2px solid #C3C3C3;" />
+![Scrum process, WITs used to plan and track](_img/scrum-process-plan-wits.png) 
 
-Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues.
+> [!NOTE]  
+> If you are new to the Scrum process, review [About Sprints, Scrum and project management](../../sprints/scrum-overview.md) to get started. 
+
+Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
+
 
 [!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
 
@@ -38,7 +44,7 @@ Later, you can open each PBI or bug to provide more details and estimate the eff
 
 
 By defining the **Effort** for PBIs and bugs, teams can use the forecast feature and velocity charts to estimate future sprints or work efforts. By defining the **Business Value**, product owners can specify priorities separate from the changeable backlog stack ranking.
- 
+
 Use the following guidance and that provided for [fields used in common across work item types](#definitions-in-common) when filling out the form. For details about creating bugs, see [Manage bugs](../../backlogs/manage-bugs.md). 
 
 <table>
@@ -47,21 +53,21 @@ Use the following guidance and that provided for [fields used in common across w
 </thead>
 <tbody valign="top">
 <tr>
-	<td width="20%"><p>[Effort](../../queries/query-numeric.md)</p></td>
-	<td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile [velocity charts](../../../report/dashboards/velocity-chart-data-store.md) and [forecast](../../sprints/forecast.md) tools reference the values in this field. For additional guidance, see the [Estimating](https://msdn.microsoft.com/library/hh765979) white paper.</p></td></tr>
+    <td width="20%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Effort](../../queries/query-numeric.md)">Effort</a></p></td>
+    <td><p>Estimate the amount of work required to complete a PBI using any unit of measurement your team prefers, such as story points or time. A numeric value is required. </p><p>Agile <a href="../../../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../../../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../../sprints/forecast.md" data-raw-source="[forecast](../../sprints/forecast.md)">forecast</a> tools reference the values in this field. For additional guidance, see the <a href="https://msdn.microsoft.com/library/hh765979" data-raw-source="[Estimating](https://msdn.microsoft.com/library/hh765979)">Estimating</a> white paper.</p></td></tr>
 <tr>
-	<td><p>[Business Value](../../queries/query-numeric.md)</p></td>
-	<td><p>Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.</p></td>
+    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Business Value](../../queries/query-numeric.md)">Business Value</a></p></td>
+    <td><p>Specify a number that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.</p></td>
 
 </tr>
 <tr>
-	<td><p>[Description](../../queries/titles-ids-descriptions.md)  </p></td>
-	<td><p>Provide enough detail for estimating how much work will be required to implement the item. Focus on who the feature is for, what users want to accomplish, and why. Don't describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item. </p>
-	</td>
+    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Description](../../queries/titles-ids-descriptions.md)">Description</a>  </p></td>
+    <td><p>Provide enough detail for estimating how much work will be required to implement the item. Focus on who the feature is for, what users want to accomplish, and why. Don&#39;t describe how the feature should be developed. Do provide sufficient details so that your team can write tasks and test cases to implement the item. </p>
+    </td>
 </tr>
 <tr>
-	<td><p>[Acceptance Criteria](../../queries/titles-ids-descriptions.md) </p></td>
-	<td><p>Define what "Done" means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.<br /><br />Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Conversations between the team and customers to determine the acceptance criteria helps ensure a common understanding within the team to meet customers'  expectations. The acceptance criteria can be used as the basis for acceptance tests so that the team can more effectively evaluate whether an item has been satisfactorily completed.</p>
+    <td><p><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </p></td>
+    <td><p>Define what &quot;Done&quot; means by describing the criteria that the team should use to verify whether the PBI or the bug fix has been fully implemented.<br /><br />Before work begins on a PBI or bug, describe the criteria for customer acceptance as clearly as possible. Conversations between the team and customers to determine the acceptance criteria helps ensure a common understanding within the team to meet customers&#39;  expectations. The acceptance criteria can be used as the basis for acceptance tests so that the team can more effectively evaluate whether an item has been satisfactorily completed.</p>
 
 </td>
 </tr>
@@ -128,16 +134,15 @@ When teams estimate work using hours or days, they define tasks and the **Remain
 
 <table><thead>
 <tr><th><p>Field/tab</p></th><th><p>Usage</p></th></tr></thead>
-<tbody valign="top">  
-<tr>
-	<td width="18%"><p>[Remaining Work](../../queries/query-numeric.md) </p></td>
-	<td><p>Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It's used to calculate capacity charts, the sprint burndown chart, and the [Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md) report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td>
+<tbody valign="top"><br/><tr>
+    <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </p></td>
+    <td><p>Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the <a href="../../../report/sql-reports/sprint-burndown-scrum.md" data-raw-source="[Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md)">Sprint Burndown (Scrum)</a> report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td>
 </tr>
 
 
 <tr>
-	<td><p>[Activity](../../queries/query-numeric.md) </p></td>
-	<td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
+    <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a> </p></td>
+    <td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>
 </tbody>
 </table>  
 
@@ -170,7 +175,7 @@ You can [create bugs from the web portal web portal, Visual Studio, or when test
 ## Related articles
 
 [!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
-  
+
 
 
 ### Track impediments
@@ -181,7 +186,7 @@ You can add an impediment from the [New work item widget](../../../report/dashbo
 
 ![Add work item from a New work item widget](_img/scrum-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
 ### Backlog list order

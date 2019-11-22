@@ -4,9 +4,9 @@ ms.technology: devops-ecosystem
 title: Clients Services | Extensions for Azure DevOps Services
 description: Client Services provided by Azure DevOps Services.
 ms.assetid: 92736987-875E-4816-B835-F04917B4AF46
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 A client service provides client-side (web) capability.  An instance of a client service can be acquired via the `VSS.getService` method:
 
-```
+```js
   var serviceId = "some service contribution identifier";
   
   VSS.getService(serviceId).then(function(svc) {

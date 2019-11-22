@@ -1,20 +1,22 @@
 ---
-title: Record and replay cloud-based load tests with Azure DevOps
+title: Record and replay load tests
 description: Get app performance data by recording and replaying cloud-based load tests using the features of Azure DevOps
 ms.assetid: 4D07F0F0-01FE-4BC7-A338-599D54E81134
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: douge
-ms.author: ahomer
-author: alexhomer1
-ms.date: 08/24/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 12/07/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Record and replay cloud-based load tests
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
+[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
 
 You can record and then replay cloud-based load tests on your web app or website directly
 using an HTTP Archive file and Azure DevOps.
@@ -51,7 +53,7 @@ to create plugins necessary to suit complex testing requirements.
 
 **HTTP Archive testing** also allows you to create load tests
 that mimic end-to-end user scenarios, but with fewer 
-capabilties than the rich Visual Studio 
+capabilities than the rich Visual Studio 
 Enterprise load tests. However, by using HTTP Archive files
 you can represent user scenarios that:
 
@@ -74,7 +76,7 @@ Edge, Internet Explorer, or
 [Firefox](https://www.mozilla.org/firefox/new/). For example, 
 [this video](https://msdnshared.blob.core.windows.net/media/2016/05/HARCreationVideo.mp4)
 shows how to create an HTTP Archive with different browsers and with 
-[Fiddler](http://www.telerik.com/fiddler).
+[Fiddler](https://www.telerik.com/fiddler).
  
 ## Create an HTTP Archive file
 
@@ -116,7 +118,7 @@ using your browser.
    ![Saving the HTTP traffic as a .har file](_img/record-and-replay-cloud-load-tests/02-save-as-har.png)
 
    You can also create an HTTP Archive using tools other
-   than a browser. For example, [Fiddler](http://www.telerik.com/fiddler)
+   than a browser. For example, [Fiddler](https://www.telerik.com/fiddler)
    is a popular tool for viewing and troubleshooting traffic. 
    Use Fiddler to record traffic in the same way and export sessions 
    as an HTTP Archive.
@@ -130,12 +132,12 @@ web portal using an HTTP Archive (**.har**) file.
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
    ![Selecting a HTTP archive test](_img/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
 
-1. In the **Import HTTP Archive file** dialog, select the **.har**
+3. In the **Import HTTP Archive file** dialog, select the **.har**
    file that you recorded in the earlier steps and choose **OK**.
 
    ![Selecting the HTTP archive file](_img/record-and-replay-cloud-load-tests/06-select-har-file.png)
@@ -161,21 +163,21 @@ web portal using an HTTP Archive (**.har**) file.
    identified and extracted from a request and correlated
    in any subsequent requests that use them.
 
-1. Open the **Settings** page to view and change any 
+4. Open the **Settings** page to view and change any 
    load test settings.
 
    ![Editing the test settings](_img/record-and-replay-cloud-load-tests/07c-har-import.png)
 
-1. Enter a name for your load test, then choose **Save**.
+5. Enter a name for your load test, then choose **Save**.
 
    ![Saving the test settings](_img/record-and-replay-cloud-load-tests/07f-har-save-test.png)
 
-1. Choose the **Run test** link to execute your load test.
+6. Choose the **Run test** link to execute your load test.
    A progress bar shows the current status of the test run. 
 
    ![Running the test](_img/record-and-replay-cloud-load-tests/07d-har-import.png)
 
-1. As the load test runs, you see a rich set of metrics
+7. As the load test runs, you see a rich set of metrics
    that indicate how your app is performing under load.
    When the test is complete, you can explore the results.
 
@@ -207,7 +209,7 @@ The **Logs** section gives you access to logs from all of the load-generating ag
 in your test are failing, these logs will help you figure out what went wrong. The test logs are 
 available in HTTP Archive (**.har**) format, the same format as you used to record the user scenario 
 and create the test. You can download these logs and view them in a HAR viewer such as 
-[Fiddler](http://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
+[Fiddler](https://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
 or any other viewer that you prefer. You can then inspect the details of each request 
 and its response in order to troubleshoot any failures in your test.
 

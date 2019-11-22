@@ -2,17 +2,22 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Auth and Security | Extensions for Azure DevOps Services
-description: Auth and secuirty for Azure DevOps Services Extensions
+description: Auth and security for Azure DevOps Services Extensions
 ms.assetid: c1704b14-66d2-4950-8633-a63fc8f88508
 ms.topic: conceptual
-ms.manager: douge
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/29/2016
 ---
 
 # Auth and security
+
+> [!NOTE]
+> This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ## Calling REST APIs from your extension
 
@@ -45,7 +50,7 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 ![key](./_img/get-extension-key.png)
 
 > [!WARNING]
-> Scope changes in an extension will cause the certificate to change. If you make changes to the scope, you will need a new extension key.
+> Scope changes in an extension cause the certificate to change. If you make changes to the scope, you need a new extension key.
 
 ### Generate a token to provide to your service
 
@@ -61,11 +66,11 @@ To get this key, right-click a [published extension](../publish/overview.md) and
 
 ### Parse and validate the token
 
-Here is a sample of parsing the token.  First download and store the secret for your extension.  You can get this from your publisher page.  This secret will need to be available to your application.
+Here is a sample of parsing the token.  First download and store the secret for your extension.  You can get this from your publisher page.  This secret needs to be available to your application.
 
 #### .NET Framework
 
-You will need to add 1 reference to get this sample to compile.
+You must add 1 reference to get this sample to compile.
 
 1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.2.2 of this package.
 
@@ -104,7 +109,7 @@ namespace TokenSample
 
 #### .NET Core - WebAPI
 
-You will need to add 1 reference to get this sample to compile.
+You must add 1 reference to get this sample to compile.
 
 1. Open the NuGet Package Manager and add a reference to *System.IdentityModel.Tokens.Jwt*. This sample was built with version 5.1.4 of this package.
 

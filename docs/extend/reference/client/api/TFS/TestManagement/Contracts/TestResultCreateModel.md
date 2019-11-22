@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts TestResultCreateModel API | Extensions for Azure DevOps Services
+description: Data representation of a test result create model.
 ms.assetid: acd2bfb5-06c4-21b8-d09b-1121deabd091
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

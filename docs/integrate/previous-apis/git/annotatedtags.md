@@ -1,14 +1,14 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-monikerRange: '>= tfs-2015 < vsts'
+monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Tags - Annotated | REST API Reference for VAzure DevOps Services and Team Foundation Server
 description: Work with annotated tags in Git using the REST APIs for Team Foundation Server.
 ms.assetid: 5F749008-5513-444E-8E46-AF575132796E
 ms.manager: jprakash
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/05/2017
 ---
 

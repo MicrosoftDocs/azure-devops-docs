@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts ScheduleDays API | Extensions for Azure DevOps Services
+description: Data representation of schedule days.
 ms.assetid: 2da9488b-1666-dae0-151e-8f655e28ed23
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

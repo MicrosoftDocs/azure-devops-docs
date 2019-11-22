@@ -6,15 +6,15 @@ ms.technology: devops-security
 ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.topic: reference
-ms.manager: douge
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/01/2016
-monikerRange: '>= tfs-2013 <= tfs-2017'
+monikerRange: '<= tfs-2017'
 ---
 # Git permissions prior to TFS 2017 Update 1
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
 
 In TFS 2017 Update 1 (and Azure DevOps), Git repository permissions have changed.
 For those customers using previous versions of TFS, here are the old permissions.
@@ -31,7 +31,7 @@ Individual repositories inherit permissions from the top-level **Git Repositorie
 
 Branches inherit permissions from assignments made at the repository level.   
 
-By default, the project level and collection level Readers groups have only Read permissions.
+By default, the project level Readers groups have only Read permissions.
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -42,12 +42,12 @@ By default, the project level and collection level Readers groups have only Read
 	<tr>
 		<td id="git-administer-permission">Administer</td>
 		<td>
-			Can rename and delete the repository. If assigned to the top-level **Git repositories** entry, can add additional repositories.
+            Can rename and delete the repository. If assigned to the top-level <strong>Git repositories</strong> entry, can add additional repositories.
 			<br /><br />
 			At the branch level, users can set permissions for the branch and unlock the branch.
 			<blockquote>
 				<b>TFS 2013, TFS 2015</b>: The Administer permission set on a individual Git repository does not grant the ability to rename or delete the repository. These tasks require
-				Administer permissions at the top-level **Git repositories** entry. 
+                Administer permissions at the top-level <strong>Git repositories</strong> entry. 
 			</blockquote>
 		</td>
 	</tr>
@@ -64,7 +64,7 @@ By default, the project level and collection level Readers groups have only Read
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
-			At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md). 
+            At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="../../repos/git/branch-policies.md" data-raw-source="[branch policies](../../repos/git/branch-policies.md)">branch policies</a>. 
 			At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>
@@ -73,7 +73,6 @@ By default, the project level and collection level Readers groups have only Read
 		<td>
 			Can push and edit Git notes to the repository.
 			They can also remove notes from items if they have the Force permission.
-			See <a href="http://git-scm.com/2010/08/25/notes.html">this topic</a> for more details on notes.
 		</td>
 	</tr>
 	<tr>

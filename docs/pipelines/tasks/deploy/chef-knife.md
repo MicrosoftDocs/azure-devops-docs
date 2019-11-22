@@ -1,24 +1,30 @@
 ---
-title: Chef Knife
-titleSuffix: Azure Pipelines & TFS
-description: Run Scripts with knife commands on your chef workstation
+title: Chef Knife task
+description: Run scripts with Knife commands on your Chef workstation
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C7B7CCF9-D6E0-472B-97BB-06B6E43504F3
-ms.manager: dastahel
-ms.author: dastahel
-ms.date: 05/04/2018
-monikerRange: 'vsts'
+ms.manager: mijacobs
+ms.custom: seodec18
+ms.author: ronai
+author: RoopeshNair
+ms.date: 12/07/2018
+monikerRange: 'azure-devops'
 ---
 
-# Deploy: Chef Knife
+# Chef Knife task
 
-![](_img/chefknife.png) Run Scripts with knife commands on your chef workstation
+**Azure Pipelines**
+
+Use this task in a build or release pipeline to run scripts with Knife commands on your Chef workstation.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/ChefKnifeV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -27,15 +33,14 @@ monikerRange: 'vsts'
 <tr><td>Chef Subscription</td><td>(Required) Chef subscription to configure before running knife commands</td></tr>
 <tr><td>Script Path</td><td>(Required) Path of the script. Should be fully qualified path or relative to the default working directory.</td></tr>
 <tr><td>Script Arguments</td><td>(Optional) Additional parameters to pass to Script.  Can be either ordinal or named parameters.</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Open source
 
-This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
-
-## Q & A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-<!-- ENDSECTION -->
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

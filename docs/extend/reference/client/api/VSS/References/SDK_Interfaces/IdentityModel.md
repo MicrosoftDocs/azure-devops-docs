@@ -5,9 +5,9 @@ ms.assetid: eb147689-f0a3-ff84-cc6d-73436442432b
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
