@@ -109,7 +109,7 @@ The following table describes the fields that you can use to plan and prioritize
     <td><p>Issue (CMMI)</p></td>
 </tr>
 <tr>
-    <td><a id="risk" /><p>Priority <sup>1</sup></p></td>
+    <td><a id="priority" /><p>Priority <sup>1</sup></p></td>
     <td><p>A subjective rating of the bug, issue, task, or test case as it relates to the business. You can specify the following values:</p>
 <ul style="list-style-type:none">
 <li><p><strong>1</strong>: Product cannot ship without the successful resolution of the work item, and it should be addressed as soon as possible.</p></li>
