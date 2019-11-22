@@ -3,16 +3,15 @@ title: Plan and track dependencies across teams and organizations using the Depe
 titleSuffix: Azure DevOps
 description: Learn how to track dependencies your team has on other teams with the dependency tracker  
 ms.custom: extensions
-ms.technology: devops-new-user 
 ms.technology: devops-agile
 ms.prod: devops
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.reviewer: chesing
+ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 11/20/2019
+ms.date: 11/22/2019
 ---
 
 # Plan and track dependencies using the Dependency Tracker extension
@@ -338,15 +337,17 @@ You can drill down into specifics by choosing one of the dependencies.
 
 ## Configure the Dependency Tracker
 
-You must be a member of the  Project Collection Administrator Group  in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
+You must be a member of the  Project Collection Administrator Group in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
-You can customize the configuration used in the Dependency Tracker as follows: 
+To change the configuration, choose the ![ ](../../_img/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
 
-- The link type to use to create dependency links. Default is Successor/Predecessor. Only customize if you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  
-- Work items 
-	- Work item category states and colors 
-	- Work item display states and colors
+The main properties you can modify are summarized as follows: 
+- The link types to use to create dependency links. Defaults are the Successor/Predecessor link types. Only customize when you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  
+- Work items and work item types
 	- Work item types to participate in dependency tracking 
+	- Mapping of work item category states to colors 
+	- Mapping of work item workflow states and colors
+- Default field columns in dependency list tables
 - Default filter selections:
 	- Default selected dependency work item types
 	- Default selected Iteration Paths
@@ -356,12 +357,11 @@ You can customize the configuration used in the Dependency Tracker as follows:
 	- Cross account (organization) dependencies 
 	- Cross account dependency toggle default state 
 - Risk graph configuration:
-	- Work item state(s) associated with at risk (Red color)
-	- Work item state(s) associated with neutral (Gray color)
-	- Work item state(s) associates with on track (Green color)
+	- Work item state(s) associated with at risk (Red color) work items
+	- Work item state(s) associated with neutral (Gray color) work items
+	- Work item state(s) associates with on track (Green color) work items
 
-To change the configuration, choose the ![ ](../../_img/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
-
+For a full list and description, see the [Property descriptions](#table) provided later in this section. 
 
 ### Enable or disable the New Dependency option
 
@@ -387,6 +387,7 @@ To disable, set the following syntax in the JSON configuration to `false`.
 
 Cross account linking requires the use of a special link type and should only be used in coordination with the **New Dependency** option.
 
+<a id="table' />
 
 ### Property descriptions 
 
@@ -410,8 +411,8 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>queryFields
-<blockquote> </blockquote></td>
-<td>Default: <pre>{}</pre></td>
+<blockquote>TBD</blockquote></td>
+<td>Default: <pre>{TBD}</pre></td>
 </tr>
 <tr>
 <td>dependencyWorkItemTypes
@@ -485,7 +486,7 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>workItemDislayStatesAndDisplayColors
-<blockquote>Maps the workflow states to colors used to display them. </blockquote></td>
+<blockquote>Maps the workflow states to colors used to display them. <p>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </p></blockquote></td>
 <td>Default: <pre>
 {  
   "New": {  
@@ -524,7 +525,6 @@ The following table describes each of the property items specified in the config
    }  
 }  
 </pre>
-<p>If you customize the workflow states, or use a process that uses different workflow states, you must update this property. </p>
 </td>
 </tr>
 <td>riskAssessementValues
@@ -533,13 +533,13 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>releases
-<blockquote> </blockquote></td>
-<td>Default: <pre> </pre></td>
+<blockquote>TBD</blockquote></td>
+<td>Default: <pre>[]</pre></td>
 </tr>
 <tr>
 <td>partnerAccounts
-<blockquote> </blockquote></td>
-<td>Default: <pre> </pre></td>
+<blockquote>TBD </blockquote></td>
+<td>Default: <pre>[]</pre></td>
 </tr>
 <tr>
 <td>timelineEnabled
@@ -555,12 +555,14 @@ The following table describes each of the property items specified in the config
 <td>crossAccountConfigs
 <blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </blockquote></td>
 <td>Default: <pre>
-{"crossAccountDependencyEnabled": true,  
-"crossAccountDependencyToggleDefaultState": false}</pre> 
+{
+"crossAccountDependencyEnabled": true,  
+"crossAccountDependencyToggleDefaultState": false
+}</pre> 
 <p>If you don't want any dependencies created that belong to other organizations, then change this configuration to: </p>
 <pre>{  
-  "crossAccountDependencyEnabled": true,  
-  "crossAccountDependencyToggleDefaultState": false  
+"crossAccountDependencyEnabled": true,  
+"crossAccountDependencyToggleDefaultState": false
 }</pre>
 </td>
 </tr>
@@ -583,7 +585,7 @@ The following table describes each of the property items specified in the config
 ]</pre></td>
 </tr>
 <tr>
-<td>riskAnalysisEnabled<
+<td>riskAnalysisEnabled
 <blockquote>Specifies whether or not Risk functionality is enabled. If set to true, then the riskAssessmentValues property must be defined.</blockquote></td>
 <td>Default: <pre>False</pre></td>
 </tr>
@@ -764,9 +766,7 @@ The dependency bot works in the background to notify teams when dependencies are
 <!--- TO BE COMPLETED
 
 - cross linking
-- Ask Cheryl how her link type is Producing for/Consuming from link
-
-
+- Ask how her link type is Producing for/Consuming from link
 
 --> 
 
