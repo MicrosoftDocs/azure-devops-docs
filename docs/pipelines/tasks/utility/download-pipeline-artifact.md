@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: hdixon
 ms.custom: seodec18
-ms.author: wismyth
-author: willsmythe
+ms.author: vijayma
+author: vijayma
 ms.date: 07/02/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Download Pipeline Artifacts task

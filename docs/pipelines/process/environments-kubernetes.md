@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: shasb
-ms.author: shasb
-author: shashankbarsin
+ms.author: jukullam
+author: juliakm
 ms.date: 05/03/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Environment - Kubernetes resource
