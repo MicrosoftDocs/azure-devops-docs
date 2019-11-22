@@ -387,7 +387,7 @@ To disable, set the following syntax in the JSON configuration to `false`.
 
 Cross account linking requires the use of a special link type and should only be used in coordination with the **New Dependency** option.
 
-<a id="table' />
+<a id="table" />
 
 ### Property descriptions 
 
@@ -416,7 +416,7 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>dependencyWorkItemTypes
-<blockquote>Specifies the work item types that participate in dependency tracking. From the Create dependency dialog, only those work item types listed can be created.  </blockquote></td>
+<blockquote>Specifies the work item types that participate in dependency tracking. From the Create a dependency dialog, only those work item types listed can be created.  </blockquote></td>
 <td>Default: <pre>
 [  
   "Epic",  
@@ -459,7 +459,7 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>workItemCategoriesAndColors
-<blockquote>Specifies the colors used to represent work items based on their category and workflow state. </blockquote></td>
+<blockquote>Specifies the colors used to represent work items based on their category and workflow state. For more information, see <a href="../work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards</a>.</blockquote></td>
 <td>Default: <pre>
 {
   "Proposed": {
@@ -548,12 +548,12 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>newDependencyButtonEnabled
-<blockquote>Enables or disables the **New Dependency** link to create a new linked dependency.</blockquote></td>
+<blockquote>Enables or disables the <strong>New Dependency</strong> link to create a new linked dependency.</blockquote></td>
 <td>Default: <pre>true</pre></td>
 </tr>
 <tr>
 <td>crossAccountConfigs
-<blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create dependency dialog.  </blockquote></td>
+<blockquote>(1) Enables or disables the support of creating new dependencies to work items in other partner accounts, and (2) specifies the default state of the Partner account options in the Create a dependency dialog.  </blockquote></td>
 <td>Default: <pre>
 {
 "crossAccountDependencyEnabled": true,  
