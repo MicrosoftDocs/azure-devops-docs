@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.manager: mijacobs
-ms.author: ronai
-author: RoopeshNair
+ms.author: jukullam
+author: juliakm
 ms.date: 05/03/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Environment
