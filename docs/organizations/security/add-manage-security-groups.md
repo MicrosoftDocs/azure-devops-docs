@@ -25,6 +25,7 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 - Create a new security group
 - View security groups and security group details
 - Update or delete a security group
+- Manage security group memberships for groups and users
 
 > [!NOTE]
 > For Azure DevOps Services, you can manage security groups using the `az devops security group` command documented in this article, or using the TFSSecurity command. To use the TFSSecurity command, you must install Azure DevOps Server 2019 to get access to the command line tool. To learn more, see [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd).
