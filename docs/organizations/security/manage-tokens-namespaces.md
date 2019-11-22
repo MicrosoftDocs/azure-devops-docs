@@ -38,73 +38,6 @@ You can manage tokens and namespaces for your organization with the [az devops s
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
 
-## Namespaces and their IDs
-
-The following table lists the IDs for the security namespaces.
-
-|Namespace|ID|
-|--- |--- |
-|AccountAdminSecurity|58450c49-b02d-465a-ab12-59ae512d6531|
-|Analytics|d34d3680-dfe5-4cc6-a949-7d9c68f73cba|
-|AnalyticsViews|7c7d32f7-0e86-4cd6-892e-b35dbba870bd|
-|AuditLog|c788c23e-1b46-4162-8f5e-d7585343b5de|
-|BoardsExternalIntegration|a6cc6381-a1ca-4b36-b3c1-4e65211e82b6|
-|Build|5a27515b-ccd7-42c9-84f1-54c998f03866|
-|BuildAdministration|445d2788-c5fb-4132-bbef-09c4045ad93f|
-|Chat|101eae8c-1709-47f9-b228-0e476c35b3ba|
-|Collection|71356614-aad7-4757-8f2c-0fb3bff6f680|
-|CrossProjectWidgetView|2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87|
-|CSS|3c15a8b7-af1a-45c2-aa97-2cb97078332e|
-|DashboardsPrivileges|2bf24a2b-70ba-43d3-ad97-3d9e1f75622f|
-|DataProvider|5a6cd233-6615-414d-9393-48dbb252bd23|
-|Discussion Threads|49b48001-ca20-4adc-8111-5b60c903a50c|
-|DistributedTask|cb594ebe-87dd-4fc9-ac2c-6a10a4c92046|
-|Environment|bc295513-b1a2-4663-8d1a-7017fd760d18|
-|EventSubscriber|3e65f728-f8bc-4ecd-8764-7e378b19bfa7|
-|EventSubscription|cb4d56d2-e84b-457e-8845-81320a133fbb|
-|Favorites|bed337f8-e5f3-4fb9-80da-81e17d06e7a8|
-|Git Repositories|2dab47f9-bd70-49ed-9bd5-8eb051e59c02|
-|Graph|11238e09-49f2-40c7-94d0-8f0307204ce4|
-|Identity|b7e84409-6553-448a-bbb2-af228e07cbeb|
-|IdentityPicker|83d4c2e6-e57d-4d6e-892b-b87222b7ad20|
-|Iteration|52d39943-cb85-4d7f-8fa8-c6baac873819|
-|Job|58b176e7-3411-457a-89d0-c6d0ccb3c52b|
-|Library|83e28ad4-2d72-4ceb-97b0-c7726d5502c3|
-|Location|9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1|
-|MetaTask|fc5b7b85-5d6b-41eb-8534-e128cb10eb67|
-|Plan|bb50f182-8e5e-40b8-bc21-e8752a1e7ae2|
-|Process|f6a4de49-dbe2-4704-86dc-f8ec1a294436|
-|Project|bf7bfa03-b2b7-47db-8113-fa2e002cc5b1|
-|ProjectAnalysisLanguageMetrics|fa557b48-b5bf-458a-bb2b-1b680426fe8b|
-|Proxy|4ae0db5d-8437-4ee8-a18b-1f6fb38bd34c|
-|Registry|c2ee56c9-e8fa-4cdd-9d48-2c44f697a58e|
-|ReleaseManagement|dc02bf3d-cd48-46c3-8a41-345094ecc94b|
-|ReleaseManagement|2a887f97-db68-4b7c-9ae3-5cebd7add999|
-|Security|73e71c45-d483-40d5-bdba-62fd076f7f87|
-|Server|4a9e8381-289a-4dfd-8460-69028eaa93b3|
-|ServiceEndpoints|1f4179b3-6bac-4d01-b421-71ea09171400|
-|ServiceHooks|e06e1c24-e93d-4e4a-908a-7d951187b483|
-|ServicingOrchestration|6ec4592e-048c-434e-8e6c-8671753a8418|
-|SettingEntries|302acaca-b667-436d-a946-87133492041c|
-|Social|2725d2bc-7520-4af4-b0e3-8d876494731f|
-|StrongBox|83abde3a-4593-424e-b45f-9898af99034d|
-|Tagging|c0e7a722-1cad-4ae6-b340-a8467501e7ce|
-|TeamLabSecurity|0582eb05-c896-449a-b933-aa3d99e121d6|
-|TestManagement|66312704-deb5-43f9-b51c-ab4ff5e351c3|
-|UtilizationPermissions|93bafc04-9075-403a-9367-b7164eac6b5c|
-|VersionControlItems|093cbb02-722b-4ad6-9f88-bc452043fa63|
-|VersionControlItems2|35e35e8e-686d-4b01-aff6-c369d6e36ce0|
-|VersionControlPrivileges|0d140cae-8ac1-4f48-b6d1-c93ce0301a12|
-|ViewActivityPaneSecurity|5ab15bc8-4ea1-d0f3-8344-cab8fe976877|
-|WebPlatform|7ffa7cf4-317c-4fea-8f1d-cfda50cfa956|
-|WorkItemQueryFolders|81c27cc8-7a9f-48ee-b63f-df1e1d0412dd|
-|WorkItemsHub|9a82c708-bfbe-4f31-984c-e860c2196781|
-|WorkItemTracking|a60e0d84-c2f8-48e4-9c0c-f32da48d5fd1|
-|WorkItemTrackingAdministration|84cc1aa4-15bc-423d-90d9-f97c450fc729|
-|WorkItemTrackingConfiguration|33344d9c-fc72-4d6f-aba5-fa317101a7e9|
-|WorkItemTrackingProvision|8adf73b7-389a-4276-b638-fe1653f7efc7|
-|Workspaces|a39371cf-0841-4c16-bbd3-276e341bc052|
-
 ## Security permission commands
 
 > [!div class="mx-tdBreakAll"]  
@@ -367,6 +300,73 @@ Name                      Bit    Permission Description                         
 ------------------------  -----  --------------------------------------------------------  ------------------
 ExecuteUnrestrictedQuery  8      Execute query without any restrictions on the query form  Allow
 ```
+
+## Namespaces and their IDs
+
+The following table lists the IDs for the security namespaces.
+
+|Namespace|ID|
+|--- |--- |
+|AccountAdminSecurity|58450c49-b02d-465a-ab12-59ae512d6531|
+|Analytics|d34d3680-dfe5-4cc6-a949-7d9c68f73cba|
+|AnalyticsViews|7c7d32f7-0e86-4cd6-892e-b35dbba870bd|
+|AuditLog|c788c23e-1b46-4162-8f5e-d7585343b5de|
+|BoardsExternalIntegration|a6cc6381-a1ca-4b36-b3c1-4e65211e82b6|
+|Build|5a27515b-ccd7-42c9-84f1-54c998f03866|
+|BuildAdministration|445d2788-c5fb-4132-bbef-09c4045ad93f|
+|Chat|101eae8c-1709-47f9-b228-0e476c35b3ba|
+|Collection|71356614-aad7-4757-8f2c-0fb3bff6f680|
+|CrossProjectWidgetView|2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87|
+|CSS|3c15a8b7-af1a-45c2-aa97-2cb97078332e|
+|DashboardsPrivileges|2bf24a2b-70ba-43d3-ad97-3d9e1f75622f|
+|DataProvider|5a6cd233-6615-414d-9393-48dbb252bd23|
+|Discussion Threads|49b48001-ca20-4adc-8111-5b60c903a50c|
+|DistributedTask|cb594ebe-87dd-4fc9-ac2c-6a10a4c92046|
+|Environment|bc295513-b1a2-4663-8d1a-7017fd760d18|
+|EventSubscriber|3e65f728-f8bc-4ecd-8764-7e378b19bfa7|
+|EventSubscription|cb4d56d2-e84b-457e-8845-81320a133fbb|
+|Favorites|bed337f8-e5f3-4fb9-80da-81e17d06e7a8|
+|Git Repositories|2dab47f9-bd70-49ed-9bd5-8eb051e59c02|
+|Graph|11238e09-49f2-40c7-94d0-8f0307204ce4|
+|Identity|b7e84409-6553-448a-bbb2-af228e07cbeb|
+|IdentityPicker|83d4c2e6-e57d-4d6e-892b-b87222b7ad20|
+|Iteration|52d39943-cb85-4d7f-8fa8-c6baac873819|
+|Job|58b176e7-3411-457a-89d0-c6d0ccb3c52b|
+|Library|83e28ad4-2d72-4ceb-97b0-c7726d5502c3|
+|Location|9e4894c3-ff9a-4eac-8a85-ce11cafdc6f1|
+|MetaTask|fc5b7b85-5d6b-41eb-8534-e128cb10eb67|
+|Plan|bb50f182-8e5e-40b8-bc21-e8752a1e7ae2|
+|Process|f6a4de49-dbe2-4704-86dc-f8ec1a294436|
+|Project|bf7bfa03-b2b7-47db-8113-fa2e002cc5b1|
+|ProjectAnalysisLanguageMetrics|fa557b48-b5bf-458a-bb2b-1b680426fe8b|
+|Proxy|4ae0db5d-8437-4ee8-a18b-1f6fb38bd34c|
+|Registry|c2ee56c9-e8fa-4cdd-9d48-2c44f697a58e|
+|ReleaseManagement|dc02bf3d-cd48-46c3-8a41-345094ecc94b|
+|ReleaseManagement|2a887f97-db68-4b7c-9ae3-5cebd7add999|
+|Security|73e71c45-d483-40d5-bdba-62fd076f7f87|
+|Server|4a9e8381-289a-4dfd-8460-69028eaa93b3|
+|ServiceEndpoints|1f4179b3-6bac-4d01-b421-71ea09171400|
+|ServiceHooks|e06e1c24-e93d-4e4a-908a-7d951187b483|
+|ServicingOrchestration|6ec4592e-048c-434e-8e6c-8671753a8418|
+|SettingEntries|302acaca-b667-436d-a946-87133492041c|
+|Social|2725d2bc-7520-4af4-b0e3-8d876494731f|
+|StrongBox|83abde3a-4593-424e-b45f-9898af99034d|
+|Tagging|c0e7a722-1cad-4ae6-b340-a8467501e7ce|
+|TeamLabSecurity|0582eb05-c896-449a-b933-aa3d99e121d6|
+|TestManagement|66312704-deb5-43f9-b51c-ab4ff5e351c3|
+|UtilizationPermissions|93bafc04-9075-403a-9367-b7164eac6b5c|
+|VersionControlItems|093cbb02-722b-4ad6-9f88-bc452043fa63|
+|VersionControlItems2|35e35e8e-686d-4b01-aff6-c369d6e36ce0|
+|VersionControlPrivileges|0d140cae-8ac1-4f48-b6d1-c93ce0301a12|
+|ViewActivityPaneSecurity|5ab15bc8-4ea1-d0f3-8344-cab8fe976877|
+|WebPlatform|7ffa7cf4-317c-4fea-8f1d-cfda50cfa956|
+|WorkItemQueryFolders|81c27cc8-7a9f-48ee-b63f-df1e1d0412dd|
+|WorkItemsHub|9a82c708-bfbe-4f31-984c-e860c2196781|
+|WorkItemTracking|a60e0d84-c2f8-48e4-9c0c-f32da48d5fd1|
+|WorkItemTrackingAdministration|84cc1aa4-15bc-423d-90d9-f97c450fc729|
+|WorkItemTrackingConfiguration|33344d9c-fc72-4d6f-aba5-fa317101a7e9|
+|WorkItemTrackingProvision|8adf73b7-389a-4276-b638-fe1653f7efc7|
+|Workspaces|a39371cf-0841-4c16-bbd3-276e341bc052|
 
 ## Related articles
 
