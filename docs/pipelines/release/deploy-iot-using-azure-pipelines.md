@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: mijacobs
-ms.author: puagarw
-author: pulkitaggarwl
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 04/25/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Automatically deploy to IoT edge devices 

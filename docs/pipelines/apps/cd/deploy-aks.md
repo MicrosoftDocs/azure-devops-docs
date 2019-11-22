@@ -1,14 +1,14 @@
 ---
 title: Deploy a Docker container app to an AKS cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
-ms.assetid:
+ms.assetid: 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/30/2019
 monikerRange: '> tfs-2018'
 ---

@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
-ms.author: ethomson
-author: ethomson
+ms.author: phwilson
+author: chasewilson
 ms.date: 02/07/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Migrate from Jenkins to Azure Pipelines
