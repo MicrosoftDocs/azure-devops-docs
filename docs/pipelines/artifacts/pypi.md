@@ -7,9 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: elbatk
+ms.author: phwilson
 ms.date: 10/31/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
+author: chasewilson
 ---
 
 # Publish Python packages in Azure Pipelines
