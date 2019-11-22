@@ -46,6 +46,9 @@ Azure DevOps is pre-configured with default security groups. You can add and man
 > | `az devops security group list` | List all the groups in a project or organization. |
 > | `az devops security group show` | Show group details. |
 > | `az devops security group update` | Update name and description for a security group. |
+> | `az devops security group membership add` | Add a member to a security group. |
+> | `az devops security group membership list` | List the memberships for a group or user. |
+> | `az devops security group membership remove` | Remove a member from a security group. |
 
 The following parameters are optional for all commands, and not listed in the examples provided in this article. 
 
