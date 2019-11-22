@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

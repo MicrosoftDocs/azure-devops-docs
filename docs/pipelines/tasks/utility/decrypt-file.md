@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Decrypt File (OpenSSL) task
