@@ -77,7 +77,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
     project: 'FabrikamFiber'
     pipeline: 12
     runVersion: 'latestFromBranch'
-    branchName: 'refs/heads/master'
+    runBranch: 'refs/heads/master'
     tags: 'testTag'
 ```
 
