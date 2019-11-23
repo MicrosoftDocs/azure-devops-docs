@@ -100,7 +100,7 @@ One advantage of working in Excel or Project is that you can work offline and ad
 
 <a name="WorkingOffline"></a> 
 
-##  Disconnect  a document file from the network  
+##  Disconnect a document file from the network  
   
 To disconnect a an Excel or Project document file from the network:  
   

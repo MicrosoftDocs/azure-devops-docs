@@ -1,5 +1,5 @@
 ---
-title: TFS-Office integration issues
+title: Azure DevOps Office integration issues
 titleSuffix: Azure Boards
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
@@ -13,11 +13,11 @@ ms.date: 10/24/2019
 ---
 
 
-# TFS-Microsoft Office integration issues
+# Azure DevOps Office integration issues
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-If you don't see the Team ribbon in Microsoft Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this article. 
+If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this article. 
 
 <img src="_img/tfs-office-issues-excel-team-ribbon.png" alt="Excel TFS-Office integration Team ribbon" style="border: 1px solid #C3C3C3;" /> 
 
