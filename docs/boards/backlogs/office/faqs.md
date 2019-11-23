@@ -19,8 +19,9 @@ ms.date: 11/22/2019
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
+[!INCLUDE [temp](../../../_shared/version-selector-minimize.md)]
 
-## Connect and Azure DevOps versioning support
+## Connect and versioning support
 
 If you are having connection issues, make sure you meet the prerequistes as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
 
@@ -89,7 +90,7 @@ To bulk edit links of other types, you can use the following clients:
 -   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
 -   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
--  Use the [work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
+-  Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
 
 ::: moniker-end   
 
@@ -169,7 +170,7 @@ If you start your worksheet from an existing query, you'll see all the column fi
 To bulk add or modify work items in a different project, open a new Excel workbook. 
 
 
-## Q: Can I use Excel cut and paste functions
+### Q: Can I use Excel cut and paste functions
 
 **A:** Yes. You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to resequence items within a list and change link relationships among work items.
 
