@@ -153,7 +153,7 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 ::: moniker range=">= azure-devops" 
 
-You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. You can also make changes to work items using the [az boards work-item create](../..work-items/view-add-work-items.md#add-work-item) command.
+You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. You can also make changes to work items using the [az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) command.
 
 ::: moniker-end  
 
@@ -209,7 +209,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 ## Add linked backlog items and tasks 
 
-You can bulk add a nested list of work items, such as a work break down structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
+You can bulk add a nested list of work items, such as a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
 
 Here's how a three-level nested tree of items appears in Excel:   
 
@@ -327,5 +327,6 @@ If you're working with a non-query input list, you can add work items by choosin
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
 - [Basic Excel tasks](https://support.office.com/en-us/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 

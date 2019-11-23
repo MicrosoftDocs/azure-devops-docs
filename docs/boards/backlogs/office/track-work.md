@@ -102,7 +102,7 @@ One advantage of working in Excel or Project is that you can work offline and ad
 
 ##  Disconnect a document file from the network  
   
-To disconnect a an Excel or Project document file from the network:  
+To disconnect an Excel or Project document file from the network:  
   
 1.  Open the document that you want to change while you are offline.  
   
