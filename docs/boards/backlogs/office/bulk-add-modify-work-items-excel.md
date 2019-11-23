@@ -30,11 +30,17 @@ In this article you'll learn:
 > * Add hierarchically linked backlog items and tasks   
 > * Work with different list types    
 
+::: moniker range="azure-devops" 
+> [!NOTE]   
+> While the examples shown here primarily represent connecting to an on-premises Azure DevOps Server, you can connect to the cloud service Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
+::: moniker-end  
 
 ::: moniker range="<= tfs-2018" 
 > [!NOTE]   
 > You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
 ::: moniker-end  
+
+For answers to specific questions about the integration of Microsoft Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).
 
 
 ## Prerequisites 
@@ -145,10 +151,24 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
     ![Work item displayed in the web portal](_img/bulk-modify-excel-user-story-web-access.png)
 
+::: moniker range=">= azure-devops" 
+
+You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. You can also make changes to work items using the [az boards work-item create](../..work-items/view-add-work-items.md#add-work-item) command.
+
+::: moniker-end  
+
+::: moniker range="azure-devops-2019" 
+You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
+
 You can make changes to work items in Excel, Project, the web portal, or Visual Studio, or Team Explorer Everywhere.
 
+::: moniker-end  
+
 > [!TIP]
->**Follow these tips to keep your work in sync:**   
+> **Follow these tips to keep your work in sync:**   
 >- When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](_img/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.  
 >- Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](_img/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.  
 >- To avoid data conflicts, publish your additions and modifications often.  
@@ -166,7 +186,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
-2. Click a person-named field to activate the Select User feature in the team ribbon.  
+2. Click a person-named field to activate the Select User feature in the Team ribbon.  
 
 	![Team ribbon, Select User](_img/bulk-add-excel-select-user-team-ribbon.png)  
 
@@ -302,34 +322,10 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
-## Bulk edit test cases
-
-You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
 
 ## Related articles
 
-While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
-
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
-- [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
-
-To bulk edit links, you can use these clients:  
--   Use Excel to edit parent-child or hierarchical links.  
--   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
--   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
--   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-
-To resolve publishing errors, see one of these topics:   
-
-- [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)  
-- [Data validation errors](resolve-excel-data-validation-errors.md)  
-- [Invalid links](resolve-excel-invalid-links-tree-list.md)  
-
-### Delete work items
-
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
-
-### Direct link query converts to flat list
-
-When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [Basic Excel tasks](https://support.office.com/en-us/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
