@@ -23,7 +23,7 @@ If you don't have permissions to install extensions, you can request extensions 
 ## Prerequisites
 
 - To request extensions, you must be a contributor for your organization
-- To approve extensions, you must be a member of the Project Collection Administrators group or have [**edit collection-level information** permissions](../organizations/security/permissions.md#collection) set to *Allow*
+- To approve extensions, you must be a member of the Project Collection Administrators group and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
 ## Request an extension
 

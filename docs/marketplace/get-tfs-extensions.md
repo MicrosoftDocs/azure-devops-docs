@@ -28,7 +28,7 @@ install extensions from the
 ## Prerequisites
 
 - You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) 
-or have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection). 
+and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection). 
 If you don't have permissions, you can [request extensions](request-extensions.md) instead.
 
 > [!NOTE]
@@ -103,7 +103,7 @@ for future Marketplace purchases.
 
 ## Install TFS extensions when disconnected
 
-While you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
+When you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
 and then installing them in a project collection. You can't install extensions when you're disconnected from TFS.
 
 ### Who can upload extensions?
