@@ -6,8 +6,8 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: geverghe
-ms.reviewer: jrice 
+ms.manager: mijacobs
+ms.reviewer: geverghe 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -18,7 +18,7 @@ ms.date: 11/22/2019
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
 
-Security groups assign a set of permissions to members of the group. For example, members of a Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups.
+Security groups assign a set of permissions to members of the group. For example, members of a Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups. To learn more, see [Permissions and groups](permissions.md).
 
 Azure DevOps is pre-configured with default security groups. You can add and manage security groups for your organization with the [az devops security group](/cli/azure/ext/azure-devops/devops/security/group) commands. Use this command to:
 
@@ -71,15 +71,15 @@ az devops security group create [--description]
                                 [--scope {organization, project}]
 ```
 
-### Parameters
+### Optional parameters
 
-- **description**: Optional. Description of the new security group.
-- **email-id**: Optional. Create new group using the email address as a reference to an existing group from an external AD or AAD backed provider. Required if **name** or **origin-id** is missing.
-- **groups**: Optional. A comma-separated list of descriptors referencing groups you want the newly created group to join.
-- **name**: Optional. Name of the new security group. Required if **origin-id** or **email-id** is missing.
-- **origin-id**: Optional. Create new group using the OriginID as a reference to an existing group from an external AD or AAD backed provider. Required if **name** or **email-id** is missing.
-- **project**: Optional. Name or ID of the project in which the group should be created.
-- **scope**: Optional. Create group at project or organization level. Accepted values are *organization* and *project* (default).
+- **description**: Description of the new security group.
+- **email-id**: Create new group using the email address as a reference to an existing group from an Azure Active Directory (AAD) backed provider. Required if **name** or **origin-id** is missing.
+- **groups**: A comma-separated list of descriptors referencing groups you want the newly created group to join.
+- **name**: Name of the new security group. Required if **origin-id** or **email-id** is missing.
+- **origin-id**: Create new group using the OriginID as a reference to an existing group from an AAD backed provider. Required if **name** or **email-id** is missing.
+- **project**: Name or ID of the project in which the group should be created.
+- **scope**: Create group at project or organization level. Accepted values are *organization* and *project* (default).
 
 ### Example
 
@@ -130,12 +130,12 @@ az devops security group list [--continuation-token]
                               [--subject-types]
 ```
 
-### Parameters
+### Optional parameters
 
-- **continuation-token**: Optional. If there are more results that can't be returned in a single page, the result set will contain a continuation token for retrieval of the next set of results.
-- **project**: Optional. List groups for a particular project.
-- **scope**: Optional. List the groups at project or organization level. Accepted values are *organization* and *project* (default).
-- **subject-types**: Optional. A comma-separated list of user subject subtypes to reduce the retrieved results. You can give initial part of descriptor (before the dot) as a filter, for example, vssgp,aadgp.
+- **continuation-token**: If there are more results that can't be returned in a single page, the result set will contain a continuation token for retrieval of the next set of results.
+- **project**: List groups for a particular project.
+- **scope**: List the groups at project or organization level. Accepted values are *organization* and *project* (default).
+- **subject-types**: A comma-separated list of user subject subtypes to reduce the retrieved results. You can give initial part of descriptor (before the dot) as a filter, for example, vssgp,aadgp.
 
 ### Example
 
@@ -202,15 +202,33 @@ az devops security group update --id
 
 ### Example
 
-The following command changes the name of the security group with the specified descriptor and shows the result in table format.
+The following command changes the name of the security group with the specified descriptor and shows the result in YAML format.
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
-az devops security group update --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw --name "Management Team" --output table
+az devops security group update --id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw --name "Management Team" --output yaml
 
-Name                              Description
---------------------------------  ---------------------------------------------------------------------
-[MyFirstProject]\Management Team  Management team focused on creating and maintaining customer services
+description: Management team focused on creating and maintaining customer services
+descriptor: vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw
+displayName: Management Team
+domain: vstfs:///Classification/TeamProject/5417a1c3-4b04-44d1-aead-50774b9dbf5f
+isCrossProject: null
+isDeleted: null
+isGlobalScope: null
+isRestrictedVisible: null
+legacyDescriptor: null
+localScopeId: null
+mailAddress: null
+origin: vsts
+originId: 8fe47a49-bfab-4356-9a85-90c5e62110be
+principalName: '[MyFirstProject]\Management Team'
+scopeId: null
+scopeName: null
+scopeType: null
+securingHostId: null
+specialType: null
+subjectKind: group
+url: https://vssps.dev.azure.com/kelliott/_apis/Graph/Groups/vssgp.Uy0xLTktMTU1MTM3NDI0NS0xODI5NDgwMzA1LTEzNjM2MTczNTEtMjI0NzE1OTUyMC03ODEzNDk2MjItMS0zNDU1MDI4NTE4LTI5Nzg5OTAxNTYtMjI4OTU2NzYyOS0xOTM2NDU3NTYw
 ```
 
 ## Add a member to a group
@@ -298,6 +316,7 @@ az devops security group membership remove --group-id vssgp.Uy0xLTktMTU1MTM3NDI0
 
 ## Related articles
 
+- [Manage tokens and namespaces](manage-tokens-namespaces.md)
 - [Security REST API](/rest/api/azure/devops/security/)
 - [TFSSecurity command](/azure/devops/server/command-line/tfssecurity-cmd) 
 - [Security glossary](security-glossary.md)
