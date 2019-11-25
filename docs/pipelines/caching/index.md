@@ -352,6 +352,29 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
+## PHP/Composer
+
+For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
+
+### Example
+
+```yaml
+variables:
+  COMPOSER_CACHE_DIR: $(Pipeline.Workspace)/.composer
+
+steps:
+  - task: Cache@2
+    inputs:
+      key: 'composer | "$(Agent.OS)" | composer.lock'
+      restoreKeys: |
+        composer | "$(Agent.OS)"
+        composer
+      path: $(COMPOSER_CACHE_DIR)
+    displayName: Cache composer
+
+  - script: composer install
+```
+
 ## Known issues and feedback
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
