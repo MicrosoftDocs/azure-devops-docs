@@ -64,8 +64,25 @@
     },
     "fileMetadata": {
       "titleSuffix": {
+        "artifacts/**/**.md": "Azure Artifacts",
+        "boards/**/**.md": "Azure Boards",
+        "cli/**/**.md": "Azure DevOps",
+        "extend/**/**.md": "Azure DevOps",
+        "integrate/**/**.md": "Azure DevOps",
+        "java/**/**.md": "Azure DevOps",
+        "marketplace/**/**.md": "Azure DevOps",
+        "migrate/**/**.md": "Azure DevOps",
+        "notifications/**/**.md": "Azure DevOps",
+        "organizations/**/**.md": "Azure DevOps",
         "pipelines/**/**.md": "Azure Pipelines",
-        "test/**/**.md": "Azure Test Plans"
+        "project/**/**.md": "Azure DevOps",
+        "reference/**/**.md": "Azure DevOps",
+        "report/**/**.md": "Azure DevOps",
+        "repos/**/**.md": "Azure Repos",
+        "security-access-billing/**/**.md": "Azure DevOps",
+        "service-hooks/**/**.md": "Azure DevOps",
+        "test/**/**.md": "Azure Test Plans",
+        "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
         "report/admin/**": "<= azure-devops-2019",

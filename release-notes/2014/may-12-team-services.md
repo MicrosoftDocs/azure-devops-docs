@@ -45,7 +45,7 @@ There are three options for receiving events:
 
 1.Use a generic web hook.
 2.Use one of the service hooks built for a specific service. An initial set are provided as part of this release. More will be added over time and we will be enabling third-party service hook submission in the future.
-3.Use [Zapier](http://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
+3.Use [Zapier](https://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
 Services hooks can be found as a new hub in project administration.
 
 ![Selecting a target service](_img/5_12_01.png)
@@ -74,7 +74,7 @@ We suggest you test out your migration before having your team come on board. Yo
 
 For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://aka.ms/OpsHub). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
 
-If you have any additional questions, the OpsHub team will be monitoring for questions marked with the OpsHub and visual-studio-online tags on [StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-online)!
+If you have any additional questions, the OpsHub team will be monitoring for questions marked with the OpsHub and visual-studio-online tags on [StackOverflow](https://stackoverflow.com/questions/tagged/visual-studio-online)!
 
 Thanks,
 

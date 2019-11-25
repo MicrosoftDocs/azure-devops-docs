@@ -1,5 +1,5 @@
----
-title: Edit a WIT definition to add web content to a work item form
+﻿---
+title: Edit WIT definition to add web content
 titleSuffix: TFS
 description: Adds a Web content or HTML content to a work item form by exporting the type definition XML file and adding a WebpageControl in the FORM section - Team Foundation Server (TFS)
 ms.prod: devops

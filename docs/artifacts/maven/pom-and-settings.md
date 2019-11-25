@@ -1,5 +1,5 @@
----
-title: Configure Maven client with Azure DevOps Services or Team Foundation Server
+﻿---
+title: Configure Maven client
 description: Successfully configure your Maven client for use with Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -9,7 +9,7 @@ ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
-ms.date: 08/16/2019
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 

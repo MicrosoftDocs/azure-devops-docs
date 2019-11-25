@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
+title: REST APIs for Azure DevOps and Team Foundation Server
+description: Read an overview of the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -193,7 +193,7 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
+The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
 like [Git blobs](previous-apis/git/blobs.md).
 
 Now you should be able to look around the specific

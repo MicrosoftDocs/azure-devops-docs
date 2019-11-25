@@ -1,5 +1,6 @@
 ---
 title: General - Sprint 159 Update
+description: See the Sprint 159 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

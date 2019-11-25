@@ -1,14 +1,15 @@
 ---
-title: Azure IoTEdge task
+title: Azure IoT Edge task
 description: Build, test, and deploy applications quickly and efficiently to Azure IoT Edge
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0803ABDD-002B-4179-B824-9765403F4289
 ms.manager: dastahel
-ms.author: dastahel
+ms.author: vijayma
 ms.date: 03/20/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
+author: vijayma
 ---
 
 # Azure IoT Edge task
