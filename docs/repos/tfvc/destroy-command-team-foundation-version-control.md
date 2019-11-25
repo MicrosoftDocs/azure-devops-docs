@@ -1,4 +1,4 @@
----
+﻿---
 title: Destroy Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Destroy Command (Team Foundation Version Control)

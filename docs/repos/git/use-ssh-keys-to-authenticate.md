@@ -40,7 +40,7 @@ The following steps cover configuration of SSH key authentication on the followi
 ---
 - Linux
 - macOS running at least Leopard (10.5)
-- Windows systems running  [Git for Windows](http://www.git-scm.com/download/win)   
+- Windows systems running  [Git for Windows](https://www.git-scm.com/download/win)   
 
 ---
 
@@ -234,7 +234,7 @@ If you are using the Bash shell (including Git Bash), start ssh-agent with:
 eval `ssh-agent`
 ```
 
-### I use [PuTTY](http://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
+### I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
 Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).

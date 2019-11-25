@@ -6,10 +6,10 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.manager: mijacobs
-ms.author: ronai
-author: RoopeshNair
+ms.author: jukullam
+author: juliakm
 ms.date: 5/2/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Deployment jobs
@@ -30,7 +30,7 @@ Using deployment job provides some benefits:
  - **Apply deployment strategy**: Define how your application is rolled-out.
 
    > [!NOTE] 
-   > At the moment we offer only the *runOnce* strategy, which executes the steps once sequentially. Additional strategies like blue-green, canary and rolling are on our roadmap.
+   > At the moment we offer only *runOnce* and *canary* strategy. Additional strategies like rolling, blue-green are on our roadmap.
 
 ## Schema
 
@@ -50,17 +50,112 @@ jobs:
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
-  strategy:
+  strategy: [ deployment strategy ] # see deployment strategy schema
+```
+
+### Deployment strategies:
+
+When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, routing traffic to the updated version, testing the updated version after routing traffic and in case of failure, running steps to restore to last known good version. We achieve this by using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+
+#### Following are the descriptions of lifecycle hooks:
+
+**preDeploy** – Used to run steps that initialize resources before application deployment starts. 
+
+**deploy** – Used to run steps that deploy your application.
+
+**routeTraffic** – Used to run steps that serve the traffic to the updated version. 
+
+**postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
+
+**on: failure or on: success** - Used to run steps that perform rollback actions or clean-up. 
+
+
+
+### RunOnce deployment strategy:
+
+RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed once and finally either `on:` `success` or `on:` `failure`is executed.  
+
+```YAML
+strategy: 
     runOnce:
-      deploy:
-        displayName: string                 # friendly name to display in the UI
+      preDeploy:        
+        pool: [ server | pool ] # see pool schema        
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+      deploy:          
+        pool: [ server | pool ] # see pool schema        
+        steps:
+        ...
+      routeTraffic:         
+        pool: [ server | pool ]         
+        steps:
+        ...        
+      postRouteTraffic:          
+        pool: [ server | pool ]        
+        steps:
+        ...
+      on:
+        failure:         
+          pool: [ server | pool ]           
+          steps:
+          ...
+        success:          
+          pool: [ server | pool ]           
+          steps:
+          ...
 ```
+
+
+### Canary deployment strategy:
+
+Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.  Currently this is applicable to only kubernetes resources in an environment.
+
+
+```YAML
+strategy: 
+    canary:
+      increments: [ number ]
+      preDeploy:        
+        pool: [ server | pool ] # see pool schema        
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+      deploy:          
+        pool: [ server | pool ] # see pool schema        
+        steps:
+        ...
+      routeTraffic:         
+        pool: [ server | pool ]         
+        steps:
+        ...        
+      postRouteTraffic:          
+        pool: [ server | pool ]        
+        steps:
+        ...
+      on:
+        failure:         
+          pool: [ server | pool ]           
+          steps:
+          ...
+        success:          
+          pool: [ server | pool ]           
+          steps:
+          ...
+```
+Canary deployment strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
+
+ 
+#### The following variables are available in this strategy:
+`strategy.name`: Name of the strategy. Eg, canary.
+<br>`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote or reject.
+<br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
+
+
 
 ## Examples
 
-The following example YAML snippet showcases a simple use of a deploy job - 
+### RunOnce Deployment strategy
+
+The following example YAML snippet showcases a simple use of a deploy job using runOnce deployment strategy - 
 
 ```YAML
 jobs:
@@ -118,3 +213,44 @@ This approach has the following benefits:
 - Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a kubernetes namespace: `smarthotel-dev.bookings`), since the deployment job is linked to the environment. 
 This is particularly useful in the cases where the same connection detail is to be set for multiple steps of the job.
 
+
+
+
+### Canary deployment strategy
+
+In the following example, the canary strategy for AKS will first deploy the changes with 10% pods followed by 20% while monitoring the health during postRouteTraffic. If all goes well, it will promote to 100%.  
+
+```YAML
+jobs: 
+- deployment: 
+  environment: musicCarnivalProd 
+  pool: 
+    name: musicCarnivalProdPool  
+  strategy:                  
+    canary:      
+      increments: [10,20]  
+      preDeploy:                                     
+        steps:           
+        - script: initialize, cleanup....   
+      deploy:             
+        steps: 
+        - script: echo deploy updates... 
+        - task: KubernetesManifest@0 
+          inputs: 
+            action: $(strategy.action)       
+            namespace: 'default' 
+            strategy: $(strategy.name) 
+            percentage: $(strategy.increment) 
+            manifests: 'manifest.yml' 
+      postRouteTaffic: 
+        pool: server 
+        steps:           
+        - script: echo monitor application health...   
+      on: 
+        failure: 
+          steps: 
+          - script: echo clean-up, rollback...   
+        success: 
+          steps: 
+          - script: echo checks passed, notify... 
+```

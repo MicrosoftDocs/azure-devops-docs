@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 10/21/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Build GitHub repositories

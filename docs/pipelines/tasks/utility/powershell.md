@@ -58,7 +58,8 @@ The Powershell task also has two shortcuts in YAML:
 ```
 
 Both of these resolve to the `PowerShell@2` task.
-`powershell` runs Windows PowerShell, while `pwsh` runs PowerShell Core.
+`powershell` runs Windows PowerShell and will only work on a Windows agent.
+`pwsh` runs PowerShell Core, which must be available on the agent or container.
 
 ::: moniker-end
 
@@ -176,7 +177,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [Windows PowerShell Tutorial](http://www.computerperformance.co.uk/powershell/index.htm)
 
-[PowerShell.org](http://powershell.org/)
+[PowerShell.org](https://powershell.org/)
 
 [!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
 

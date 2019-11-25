@@ -1,5 +1,5 @@
 ```YAML
-# Download pipeline artifact
+# Download pipeline artifacts
 # Download build and pipeline artifacts
 - task: DownloadPipelineArtifact@2
   inputs:

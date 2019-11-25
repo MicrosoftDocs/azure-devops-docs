@@ -1,5 +1,5 @@
----
-title: Make Agile team progress visible to the Program Management Office 
+﻿---
+title: Make Agile team progress visible to PM Office
 titleSuffix: TFS
 description: View work progress and resource usage using Team Foundation Server & Project Server
 ms.prod: devops

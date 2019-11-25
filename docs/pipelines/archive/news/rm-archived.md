@@ -1,5 +1,5 @@
----
-title: Archived release notes for Microsoft Release Management
+﻿---
+title: Archived release notes for Release Management
 ms.custom: seodec18
 description: Archived release for Azure Pipelines and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF

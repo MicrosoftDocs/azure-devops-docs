@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: sdanie
+author: steved0x
 ms.reviewer: macoope
 ms.date: 10/21/2019
 monikerRange: '>= azure-devops-2019'
@@ -115,6 +115,7 @@ Note: Azure Pipelines doesn't support all features of YAML, such as anchors, com
 ```yaml
 name: string  # build numbering format
 resources:
+  pipelines: [ pipelineResource ]
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
 variables: { string: string } | [ variable | templateReference ]
@@ -875,6 +876,87 @@ steps:
 ::: moniker-end
 
 ## Resources
+Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.).
+
+Resources in YAML represent sources of types pipelines, repositories and containers.
+
+### General schema
+
+```yaml
+resources:
+  pipelines: [ pipeline ]  
+  repositories: [ repository ]
+  containers: [ container ]
+```
+
+### Pipeline resource
+If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipeline` resource. 
+And you can also enable pipeline completion triggers.
+
+# [Schema](#tab/schema)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: string  # identifier for the pipeline resource
+    project:  string # project for the build pipeline; optional input for current project
+    source: string  # source pipeline definition name
+    branch: string  # branch to pick the artifact, optional; defaults to all branches
+    version: string # pipeline run number to pick artifact; optional; defaults to last successfully completed run
+    trigger:     # optional; Triggers are not enabled by default.
+      branches:  
+        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
+        exclude: [string] # branches to discard the trigger events, optional; defaults to none. 
+```
+# [Example](#tab/example)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: MyAppA 
+    source: MyCIPipelineA
+  - pipeline: MyAppB
+    source: MyCIPipelineB
+    trigger: true
+  - pipeline: MyAppC
+    project:  DevOpsProject 
+    source: MyCIPipelineC
+    branch: releases/M159  
+    version: 20190718.2 
+    trigger:
+      branches:  
+        include:  
+        - master
+        - releases/*
+        exclude:   
+        - users/*  
+```
+
+---
+
+>[!IMPORTANT]
+>When you define the resource trigger, if the `pipeline` resource is from the same repo as the current pipeline, we will follow the same branch and commit on which the event is raised. However, if the `pipeline` resource is from a different repo, the current pipeline is triggered on the master branch.
+
+#### `pipeline` resource meta-data as pre-defined variables.
+In each run, the meta-data for `pipeline` resource is available to all the jobs as pre-defined variables.
+
+```yaml
+resources.pipeline.<Alias>.projectName 
+resources.pipeline.<Alias>.projectID 
+resources.pipeline.<Alias>.pipelineName 
+resources.pipeline.<Alias>.pipelineID 
+resources.pipeline.<Alias>.runName 
+resources.pipeline.<Alias>.runID
+resources.pipeline.<Alias>.runURI
+resources.pipeline.<Alias>.sourceBranch 
+resources.pipeline.<Alias>.sourceCommit
+resources.pipeline.<Alias>.sourceProvider 
+resources.pipeline.<Alias>.requestedFor
+resources.pipeline.<Alias>.requestedForID
+```
+
+You can consume artifacts from pipeline resource using `download` task. See the [download](yaml-schema.md#download) keyword.
+
 
 ### Container resource
 
@@ -969,6 +1051,9 @@ for authorization.
 * [Push trigger](#push-trigger)
 * [PR trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+
+> [!NOTE]
+> Trigger blocks cannot contain variables or template expressions.
 
 ### Push trigger
 
@@ -1598,26 +1683,36 @@ Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publis
 
 ## Download
 
-`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run to `$(Pipeline.Workspace)`. It can also be used to disable automatic downloading of artifacts in classic release and deployment jobs.
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run or from another Azure pipeline that is associated as a `pipeline` resource.
 
 # [Schema](#tab/schema)
 
 ```yaml
 steps:
-- download: [ current | none ] # disable automatic download if "none"
-  artifact: string # artifact name
-  patterns: string # patterns representing files to include
+- download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
+  artifact: string # artifact name; optional; downloads all the avaialable artifacts if not specified
+  patterns: string # patterns representing files to include; optional
 ```
+### Artifact download location
+
+Artifacts from the current pipeline are downloaded to `$(Pipeline.Workspace)/`.
+
+Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
+
+### Automatic download in deployment jobs
+
+All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifiying `download: none`.
 
 # [Example](#tab/example)
 
 ```yaml
 steps:
-- download: current
+- download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
-```
+- download: MyAppA   # downloads artifacts available as part of the pipeline resource
 
+```
 ---
 
 Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).

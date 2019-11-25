@@ -1,5 +1,5 @@
----
-title: Troubleshoot adding administrators to projects and project collections
+﻿---
+title: Troubleshoot adding administrators to projects
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), about adding administrator to projects and collections

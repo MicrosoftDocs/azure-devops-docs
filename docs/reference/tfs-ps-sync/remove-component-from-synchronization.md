@@ -1,5 +1,5 @@
----
-title: Remove a component from participating in data synchronization
+﻿---
+title: Remove a component from participating in data sync
 titleSuffix: TFS 
 description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
 ms.prod: devops

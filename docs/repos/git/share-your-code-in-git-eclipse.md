@@ -90,7 +90,7 @@ Your project code is now in your Git repo.
 
 ### What if the Git views for commit and push don't show up?
 
-You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
+You can [download EGit](https://www.eclipse.org/egit/) to use Git with Eclipse.
 
 ## Next steps
 

@@ -1,5 +1,5 @@
----
-title: Change access levels for a user or group, manage access to features 
+﻿---
+title: Access levels for users or groups
 titleSuffix: Azure DevOps 
 description: Provide access to web portal users based on their license 
 ms.technology: devops-security

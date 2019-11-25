@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
-This guidance explains how to automatically build and test JavaScript and Node.js apps, and then deploy or publish to targets.
+Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -38,9 +38,23 @@ This guidance explains how to automatically build and test JavaScript and Node.j
 
 ::: moniker-end
 
-Follow these instructions to set up a pipeline for a sample Node app.
-
 ::: moniker range="azure-devops"
+
+### Get the code
+
+Fork this repo in GitHub:
+
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+### Create the pipeline
 
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
@@ -400,7 +414,7 @@ Set the Control Options for the Publish Test Results task to run the task even i
 
 ## End-to-end browser testing 
 
-Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](http://karma-runner.github.io/2.0/index.html). Then publish the results for the build to VSTS with these steps: 
+Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](https://karma-runner.github.io/2.0/index.html). Then publish the results for the build to VSTS with these steps: 
 
 1. Install a headless browser testing driver such as headless Chrome or Firefox, or a browser mocking tool such as PhantomJS, on the build agent. 
 1. Configure your test framework to use the headless browser/driver option of your choice according to the tool's documentation.
@@ -480,7 +494,7 @@ For tests in your pipeline that require a browser to run (such as the **ng test*
 
 ### React and Vue
 
-All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file should contain the standard Node.js script:
+All the dependencies for your React and Vue apps are captured in your *package.json* file. Your *azure-pipelines.yml* file contains the standard Node.js script:
 
 ::: moniker range="azure-devops"
 
@@ -493,20 +507,36 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The built files are kept in a new folder, `/dist` (for Vue) or `/build` (for React), so add the following task to your *azure-pipelines.yml* file to ready that folder for publication, edited to suit the structure of your build:
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `dist` or `build`, that is ready for release.
 
 ::: moniker range="azure-devops"
 
 ```yaml
-- task: PublishBuildArtifacts@1
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
   inputs:
-    artifactName: dist
-    pathtoPublish: 'dist'
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
+  inputs: 
+    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
 ```
 
 ::: moniker-end
 
-Note, you will need to point the Release task to this `/dist` or `/build` folder. Set your built files to be deployed using the `Deploy Azure App Service` task, and edit the Tasks area of this service to set the Package or folder to be deployed to be the file path to your build folder in the Tasks area.
+To release, point your release task to the `dist` or `build` artifact and use the [Azure Web App Deploy task](../targets/webapp.md). 
 
 ### Webpack
 

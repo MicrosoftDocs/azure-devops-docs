@@ -1,5 +1,5 @@
 ---
-title: Markdown syntax for files, widgets, and wikis in Azure DevOps
+title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.prod: devops
@@ -20,7 +20,7 @@ ms.date: 09/19/2019
 
 [!INCLUDE [version-selector](../../_shared/version-selector.md)]
 
-Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
@@ -76,7 +76,13 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker-end
 
+> [!IMPORTANT]  
+> Not all Markdown syntax is supported across all features. Each section in this article identifies the features the syntax is supported with the **Supported in** line.
+
+
 ## Headers
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -96,6 +102,8 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 <img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
 ## Paragraphs and line breaks
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
@@ -142,7 +150,9 @@ Add two spaces prior to the end of the line.
 
 Space is added in between paragraphs.
 
-## Block quotes
+## Blockquotes
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Quote previous comments or text to set the context for your comment or text.
 
@@ -163,6 +173,8 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 ![Quoting in Markdown](_img/markdown-guidance/markdown_quote2.jpg)
 
 ## Horizontal rules
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -185,7 +197,9 @@ above
 
 below    
 
-## Emphasis (bold, italics, strikethrough)  
+## Emphasis (bold, italics, strikethrough) 
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)] 
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
@@ -232,10 +246,34 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 **_Bold, italicized text_**
 **~~Bold, strike-through text~~**  
 
+
+::: moniker range=">= tfs-2017"
+
 ## Code highlighting
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+#### Supported in: Pull Requests | README files | Wikis
+
+::: moniker-end
+
+
+::: moniker range="tfs-2017"
+
+#### Supported in:  Pull Requests | README files
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Highlight suggested code segments using code highlight blocks.
 To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>).
+
+> [!NOTE] 
+> Code highlighting entered within the Markdown widget renders code as plain preformatted text.
+
 
 **Example:**
 
@@ -304,7 +342,11 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
+::: moniker-end
+
 ## Tables
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
 a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
@@ -335,6 +377,9 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
 ## Lists
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
@@ -399,6 +444,8 @@ Ordered lists start with a number followed by a period for each list item. Unord
 <a id="link-work-items" />
 
 ## Links
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
 
@@ -508,6 +555,8 @@ In wiki, you can also reference heading in another page:
 
 ## Images
 
+[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+
 To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
 
 - Comments
@@ -543,6 +592,8 @@ The path to the image file can be a relative path or the absolute path in Git or
 ::: moniker range=">= tfs-2017"
 
 ## Checklist or task list
+
+#### Supported in: Pull Requests | Wikis
 
 Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
 
@@ -589,13 +640,17 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+#### Supported in: Pull Requests | Wikis
+
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+#### Supported in: Pull Requests
+
+In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
@@ -627,6 +682,9 @@ To escape emojis, enclose them using the \` character.
 ::: moniker-end
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+
 
 <table width="650px">
 <tbody valign="top">
@@ -669,6 +727,18 @@ To escape emojis, enclose them using the \` character.
 <a name="attach"></a>
 
 ## Attachments
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+#### Supported in: Pull Requests | README files | Wikis
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+#### Supported in: Pull Requests | README files
 
 ::: moniker-end
 
@@ -727,6 +797,8 @@ Attachments support the following file formats.
 ::: moniker range=">=tfs-2018"
 
 ## Mathematical notation and characters
+
+#### Supported in: Pull Requests | Wikis
 
 Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests. The following supported elements are included:
 

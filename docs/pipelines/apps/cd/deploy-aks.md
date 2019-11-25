@@ -1,14 +1,14 @@
 ---
-title: Deploy a Docker container app to AKS
+title: Deploy a Docker container app to an AKS cluster
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Kubernetes Service (AKS) from Azure Pipelines
-ms.assetid:
+ms.assetid: 
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/30/2019
 monikerRange: '> tfs-2018'
 ---
@@ -66,7 +66,7 @@ Set up a CI pipeline for [building an image](../../ecosystems/containers/build-i
 
 You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-## Create an AKS to host your app
+## Create an AKS cluster to host your app
 
 1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 

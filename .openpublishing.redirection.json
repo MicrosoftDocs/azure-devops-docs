@@ -12099,6 +12099,11 @@
       "source_path": "docs/boards/sprints/sprint-burndown.md",
       "redirect_url": "/azure/devops/report/dashboards/configure-sprint-burndown",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/billing/index.md",
+      "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
     }
   ]
 }
