@@ -53,7 +53,7 @@ Each file follows the convention of inserting dashes for a space in the page tit
 
 The *.order* file is used to set the order of the Wiki pages in a particular hierarchy. With order files, you can set your own order for the Wiki pages according to the information flow on that hierarchy.
 
-For example, the images below shows the default order for an hierarchy which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
+For example, the images below show the default order for a hierarchy, which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
 
 > ![Wiki page hierarchy without order file](_img/wiki/without-order-file.png)
 > ![Wiki page hierarchy with order file](_img/wiki/with-order-file.png)

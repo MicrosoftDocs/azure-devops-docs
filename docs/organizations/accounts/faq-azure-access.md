@@ -171,15 +171,7 @@ or [added using B2B collaboration by your Azure AD administrator](https://azure.
 
 Before you start, make sure you have at least Basic access, not Stakeholder.
 
-**Complete the following steps to control organization access for external users added through Office 365 or Azure AD B2B collaboration.**
-
-1. Go to **Organization settings**.
-
-   ![Screenshot of project with gear icon highlighted](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-2. Select **Policy** and choose to allow or deny organization access for external users added as guests.
-
-   ![Screenshot of organization settings](_img/manage-work-access/guest-access.png)
+Complete the [prerequisites for adding external users](add-external-user.md#prerequisites), turning External guest access to **On**.
 
 ## Remove users or groups
 

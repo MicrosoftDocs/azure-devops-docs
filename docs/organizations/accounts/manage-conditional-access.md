@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -46,6 +46,24 @@ For more information, see the REST API reference article, section [API & TFS ver
 
 To enforce Conditional Access on your organization, you must enable the policy in Azure DevOps, as it's set to *off* by default. This setting only applies to alternate credentials, and doesn't apply if CAPs are set in Azure AD, regardless of the settings in Azure DevOps.
 
+> [!NOTE]   
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Policies** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
+
+   ![Enable Conditional Access policy](_img/_shared/enable-conditional-access-policy-preview.png)
+
+#### [Current page](#tab/current-page)
+
+
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
@@ -57,6 +75,8 @@ To enforce Conditional Access on your organization, you must enable the policy i
 3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
 
    ![Enable Conditional Access policy](_img/_shared/enable-conditional-access-policy.png)
+
+* * *
 
 ## Related articles
 
