@@ -6,11 +6,12 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.manager: mijacobs
-ms.author: dastahel
+ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 08/31/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
+author: vijayma
 ---
 
 # Build and test PHP apps

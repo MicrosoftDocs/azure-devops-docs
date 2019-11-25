@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: wismyth
-author: willsmythe
+ms.author: vijayma
+author: vijayma
 ms.date: 10/07/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Publish Pipeline Artifacts task
