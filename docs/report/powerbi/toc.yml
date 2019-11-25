@@ -66,7 +66,7 @@
       href: sample-boards-teamslicer.md
     - name: Test Plans - Overall execution status
       href: sample-testplans-overallexecution.md
-    - name: Test Plans - execution trend
+    - name: Test Plans - Execution trend
       href: sample-testplans-executiontrend.md
     - name: Test Plans - Suite level aggregation
       href: sample-testplans-aggregatedatlevel.md
