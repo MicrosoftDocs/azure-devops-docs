@@ -18,7 +18,7 @@ ms.date: 11/18/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution trend of one or more Test Plans in Power BI. This will be similar to the 'Outcome trend' widget shown in Progress report of Test Plans.
+This article shows you how to get the execution trend of one or more Test Plans in Power BI. This will be similar to the 'Outcome trend' widget shown in [Progress report](../../test/track-test-status.md) of Test Plans.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
