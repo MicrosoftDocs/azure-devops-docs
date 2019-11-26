@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,6 +20,8 @@ monikerRange: '>= tfs-2015'
 Choose a method to securely access the code in Azure Repos, Azure DevOps Server 2019, or Team Foundation Server (TFS) Git repositories.
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials when they're no longer needed.
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 
@@ -32,7 +34,7 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
 | Personal access tokens | You need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
 | SSH | You already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
-| Alternate credentials | You can't use personal access tokens or SSH |  Least secure | Easy | No |
+| Alternate credentials | You can't use personal access tokens or SSH |  Least secure | Easy | See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/) |
 
 ## Personal access tokens
 
