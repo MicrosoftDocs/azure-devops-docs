@@ -17,10 +17,6 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-<a name="alt-creds-deprecation"></a>
-
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
-
 ## General
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect
