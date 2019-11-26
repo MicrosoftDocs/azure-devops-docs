@@ -59,7 +59,7 @@ When deploying application updates, it's important that the technique that's use
 
 #### Descriptions of life cycle hooks:
 
-`preDeploy`: Used to run steps that intialize resources before application deployment starts. 
+`preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
 `deploy`: Used to run steps that deploy your application.
 
@@ -147,7 +147,7 @@ Canary deployment strategy supports the `preDeploy` life cycle hook (executed on
 #### The following variables are available in this strategy:
 `strategy.name`: Name of the strategy. E.g., canary.
 <br>`strategy.action`: The action to be performed on the Kubernetes cluster. E.g., deploy, promote, or reject.
-<br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
+<br>`strategy.increment`: The increment value used in the current interaction. This variable is only available in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
 
 
 
