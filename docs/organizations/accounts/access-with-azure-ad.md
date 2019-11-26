@@ -18,8 +18,6 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
-
 In this article, learn how to authenticate users and control access to
 your organization the same way you
 can do so with Microsoft services like Office 365 and Azure.
