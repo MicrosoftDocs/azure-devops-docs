@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1425,8 +1425,8 @@ environment: 'smarthotel-dev.bookings'
 ## Server
 
 `server` specifies a [server job](process/phases.md#server-jobs).
-Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
-or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+Only server tasks such as [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+<!-- some glorious day, [manual intervention](tasks/utility/manual-intervention.md) will work too -->
 
 # [Schema](#tab/schema)
 
