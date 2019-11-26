@@ -113,9 +113,9 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ## Uninstall extensions from the local gallery in TFS or Azure DevOps Server
 
-1. Navigate to the local gallery management portal, (```http://{server}/_gallery/manage```).
+1. Navigate to the local gallery management portal (```http://{server}/_gallery/manage```).
 
-2. For the desired extension, select the ellipses (**...**), and then select **Remove**.
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
    ![Remove extension](_img/remove-extension-TFS.png)
 
@@ -123,11 +123,11 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-## Uninstall extensions in a Team Foundation Server Collection
+## Uninstall extensions in a collection
 
-1. Navigate to the local gallery management portal, (```http://{server}:8080/tfs/_gallery/manage```).
+1. Navigate to the local gallery management portal (```http://{server}:8080/tfs/_gallery/manage```).
 
-2. For the desired extension, select the ellipses (**...**), and then select **Remove**.
+2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
    ![Remove extension](_img/remove-extension-TFS.png)
 

@@ -188,7 +188,6 @@ To block all access for these users, remove them from Azure AD groups in your or
 ### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
 A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
-
 <a name="faq-connect"></a>
 
 ## Connect, disconnect, or change Azure AD
