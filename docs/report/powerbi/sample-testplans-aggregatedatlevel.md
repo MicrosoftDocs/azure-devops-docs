@@ -18,12 +18,14 @@ ms.date: 11/18/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-Some scenarios have a hierarchical organization of test suites as per organization departments or modules. There may be level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
-
-For a sample test suite hierarchy in a test plan like below, you can configure this report.
+Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Test Plan structure for aggregated view](_img/odatapowerbi-aggregatedatlevel-plan.png)
+
+As shown above, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
+
+For a sample test suite hierarchy in a test plan like below, you can configure this report.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Test Suites Aggregated View - Report](_img/odatapowerbi-aggregatedatlevel.png)
