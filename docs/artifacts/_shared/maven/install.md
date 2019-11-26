@@ -20,7 +20,7 @@ The most common way to install a Maven artifact is as a dependency of another ar
 
 4. Run `mvn install` from the directory that contains your pom.xml file.
 
-See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
+See the [Maven CLI docs](https://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
 
 ::: moniker-end
 
@@ -43,6 +43,6 @@ See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/us
 
 5. Run `mvn install` from the directory that contains your pom.xml file.
 
-See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
+See the [Maven CLI docs](https://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
 
 ::: moniker-end

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Pipeline Automation Case Study for World Wide Time Keeping
 description: Automate build and release pipelines with Azure DevOps, a case study for World Wide Time Keeping
 ms.prod: devops
@@ -91,7 +91,7 @@ Code is compiled, environments are configured, many types of tests run, and fina
 considered "done". By done, we mean that the code is in production. Anything you successfully put 
 through the release pipeline should be something you would give to your customers. Here is a diagram 
 based on the one you will see on Jez Humble's
-[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
+[Continuous Delivery](https://continuousdelivery.com/) website. It is an example of what can 
 occur as code moves through a release pipeline.
 
 ![Pipeline for continuous delivery](./_img/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
