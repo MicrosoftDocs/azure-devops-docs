@@ -42,8 +42,6 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
 ## Trigger Jenkins
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
-
 ::: moniker range=">= azure-devops-2019"
 
 1. If you haven't already, enable alternate credentials in your Azure DevOps Services profile.
