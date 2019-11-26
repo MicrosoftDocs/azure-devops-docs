@@ -17,10 +17,6 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-<a name="alt-creds-deprecation"></a>
-
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
-
 ## General
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect
@@ -236,7 +232,7 @@ A: Your organization was connected to a directory when the organization Owner cr
 ### Q: My alternate credentials don't work anymore. What do I do?
 
 A: This happens after you connect your organization to a directory. 
-[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected. See [important information about alternate credentials](#alt-creds-deprecation).
+[Set up your credentials](https://support.microsoft.com/kb/2991274) again for the organization that you connected.
 
 ### Q: Some users are disconnected, but they have matching identities in Azure AD. What should I do?
 A: 
