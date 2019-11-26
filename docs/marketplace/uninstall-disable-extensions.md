@@ -181,7 +181,7 @@ az devops extension list [--include-built-in {false, true}]
 
 ### Example 
 
-The following command lists extensions in your organization. It excludes the disabled and built-in extensions, and shows the results in table format.  
+The following command lists extensions in your organization. It excludes the **disabled** and **built-in** extensions, and shows the results in table format.
 
 ```CLI 
 az devops extension list --include-built-in false --include-disabled false -output table
