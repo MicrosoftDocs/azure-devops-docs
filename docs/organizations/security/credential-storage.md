@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 ms.manager: mijacobs
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## Credential security
 

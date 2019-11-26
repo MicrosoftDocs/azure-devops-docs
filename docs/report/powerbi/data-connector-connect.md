@@ -11,12 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ---
 
 # Connect to Analytics with Power BI Data Connector
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
 

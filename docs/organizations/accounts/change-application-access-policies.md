@@ -10,13 +10,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # Change application access policies for your organization
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 You can change your application access policies for your organization in Azure DevOps. Azure DevOps offers the capability for other apps to integrate with its services and resources in your organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 
