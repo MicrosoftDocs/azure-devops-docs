@@ -23,8 +23,6 @@ Microsoft is committed to ensuring that your projects remain safe and secure, wi
 
 ## Alternate credentials (basic auth)
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
-
 * We store two values, a 16-byte password salt and a 32-byte password hash
 * Raw password is provided directly by the caller over SSL
 * Password salt is randomly generated in-memory on the server side using RNGCryptoServiceProvider each time a password is created or changed
