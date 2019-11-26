@@ -26,6 +26,8 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 > [!TIP]
 > Using Visual Studio? Team Explorer handles authentication with Azure Repos for you.
 
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+
 ## Authentication comparison
 
 | Authentication Type | When to use | Secure? | Ease of setup | Additional tools |   
