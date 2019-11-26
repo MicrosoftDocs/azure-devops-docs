@@ -58,9 +58,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	> [!div class="mx-imgBorder"] 
 	> ![Power BI desktop splash screen, Get data button](_img/data-connector/get-data-splash-screen.png)
 	
-	Or, you can find a similar button in the ribbon in the **Home** section. 
-	
-	![Power BI desktop ribbon, Get data button](_img/data-connector/get-data-azure-devops.png)  
+	Or, you can find a similar button in the ribbon in the **Home** section.
 
 2. Choose (1) **Online Services**, (2) **Azure DevOps (Beta)**, and then **Connect**.  
 
