@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,7 +34,7 @@ Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 |---------------------|:-------------:|:------------:|:---------------------|-------------|   
 | Personal access tokens | You need an easy to configure credential or need configurable access controls | Very secure (when using HTTPS) |  Easy | Optional ([Git credential managers](set-up-credential-managers.md)) |   
 | SSH | You already have SSH keys set up, or are on macOS or Linux | Very secure | Intermediate | Windows users will need the SSH tools included with [Git for Windows](https://git-for-windows.github.io/)  |
-| Alternate credentials | You can't use personal access tokens or SSH |  Least secure | Easy | No |
+| Alternate credentials | You can't use personal access tokens or SSH |  Least secure | Easy | See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/) |
 
 ## Personal access tokens
 
