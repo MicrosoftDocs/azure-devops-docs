@@ -17,20 +17,20 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-team-services](../_shared/version-team-services.md)]
 
 > [!NOTE]
->
-> To use deployment jobs, [make sure the Multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
+> To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
 
-In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that is a collection of steps to be run sequentially against the environment.
+
+In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment.
 
 ## Overview
 
-Using deployment job provides some benefits:
+Deployment jobs provide some benefits:
 
- - **Deployment history**: You get end-to-end deployment history across pipelines down to a specific resource and status of the deployments for auditing.
- - **Apply deployment strategy**: Define how your application is rolled-out.
+ - **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
+ - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > At the moment we offer only *runOnce* and *canary* strategy. Additional strategies like rolling, blue-green are on our roadmap.
+   > At the moment, we offer only the *runOnce* strategy and the *canary* strategy. Additional strategies like *rolling* and *blueGreen* are on our roadmap.
 
 ## Schema
 
@@ -55,25 +55,25 @@ jobs:
 
 ### Deployment strategies:
 
-When deploying application updates it is important that the technique used to deliver update enables initialization, deploying the update, routing traffic to the updated version, testing the updated version after routing traffic and in case of failure, running steps to restore to last known good version. We achieve this by using lifecycle hooks where you can run your steps during deployment. Each of the lifecycle hooks will be resolved into an agent job, or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This can be controlled by the `pool` attribute. By default the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
+When deploying application updates, it's important that the technique that's used to deliver the update enables initialization. This deploys the update, routing traffic to the updated version, testing the updated version after routing traffic, and, in case of failure, running steps to restore to the last known good version. We achieve this by using life cycle hooks where you can run your steps during deployment. Each of the life cycle hooks resolve into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This is controlled by the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
 
-#### Following are the descriptions of lifecycle hooks:
+#### Descriptions of life cycle hooks:
 
-**preDeploy** – Used to run steps that intialize resources before application deployment starts. 
+`preDeploy`: Used to run steps that intialize resources before application deployment starts. 
 
-**deploy** – Used to run steps that deploy your application.
+`deploy`: Used to run steps that deploy your application.
 
-**routeTraffic** – Used to run steps that serve the traffic to the updated version. 
+`routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
-**postRouteTraffic** - Used to run the steps after the traffic is routed. Typically these tasks monitor the health of the updated version for defined interval. 
+`postRouteTraffic`: Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for defined interval. 
 
-**on: failure or on: success** - Used to run steps that peform rollback actions or clean-up. 
+`on: failure` or `on: success`: Used to run steps that perform rollback actions or clean-up. 
 
 
 
 ### RunOnce deployment strategy:
 
-RunOnce is the simplest deployment strategy wherein all the life cycle hooks viz, `preDeploy` `deploy`, `routeTraffic`,`postRouteTraffic` are executed once and finally either `on:` `success` or `on:` `failure`is executed.  
+`RunOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
 
 ```YAML
 strategy: 
@@ -108,7 +108,7 @@ strategy:
 
 ### Canary deployment strategy:
 
-Canary deployment strategy is an advance deployment strategy which helps in mitigating the risk involved in rolling new version of application. Using this you can first roll out the changes to a small subset of users. As you gain more confidence in the new version, you can start releasing it to more servers in your infrastructure and routing more users to it.  Currently this is applicable to only kubernetes resources in an environment.
+Canary deployment strategy is an advance deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of users first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more users to it. Currently, this is applicable to only Kubernetes resources.
 
 
 ```YAML
@@ -141,21 +141,21 @@ strategy:
           steps:
           ...
 ```
-Canary deployment strategy supports following lifecycle hooks: `preDeploy` (executed once), iterates with `deploy`, `routeTraffic` and `postRouteTraffic` lifecycle hooks, and exits with either `success` or `failure` hooks.
+Canary deployment strategy supports the `preDeploy` life cycle hook (executed once) and iterates with the `deploy`, `routeTraffic` and `postRouteTraffic` life cycle hooks. It then exits with either the `success` or `failure` hook.
 
  
 #### The following variables are available in this strategy:
-`strategy.name`: Name of the strategy. Eg, canary.
-<br>`strategy.action`: The action to be performed on the Kubernetes cluster. Eg, deploy, promote or reject.
-<br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, `postRouteTraffic` lifecycle hooks.
+`strategy.name`: Name of the strategy. E.g., canary.
+<br>`strategy.action`: The action to be performed on the Kubernetes cluster. E.g., deploy, promote, or reject.
+<br>`strategy.increment`: The increment value used in the current interation. This variable is only available in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
 
 
 
 ## Examples
 
-### RunOnce Deployment strategy
+### RunOnce deployment strategy
 
-The following example YAML snippet showcases a simple use of a deploy job using runOnce deployment strategy - 
+The following example YAML snippet showcases a simple use of a deploy job by using the `runOnce` deployment strategy. 
 
 ```YAML
 jobs:
@@ -174,13 +174,13 @@ jobs:
         - script: echo my first deployment
 ```
 
-In the above example, with each run of this job, deployment history is recorded against the "smarthotel-dev" environment.
+With each run of this job, deployment history is recorded against the `smarthotel-dev` environment.
 
 > [!NOTE]
-> - Currently only Kubernetes resources are supported within an environment, with support for VMs and other resources on the roadmap.
-> - It is also possible to create an environment with empty resources and use that as an abstract shell to record deployment history as shown in the previous example.
+> - Currently, environments support only Kubernetes resources, with support for virtual machines and other resources on the roadmap.
+> - It's also possible to create an environment with empty resources and use that as an abstract shell to record deployment history, as shown in the previous example.
 
-The following example snippet demonstrates how a pipeline can refer an environment and a resource within the same to be used as the target for a deployment job.
+The next example snippet demonstrates how a pipeline can refer both an environment and a resource to be used as the target for a deployment job.
 
 ```YAML
 jobs:
@@ -209,16 +209,16 @@ jobs:
 ```
 
 This approach has the following benefits:
-- Records deployment history on a specific resource within the environment as opposed to recording the history on all resources within the environment.
-- Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a kubernetes namespace: `smarthotel-dev.bookings`), since the deployment job is linked to the environment. 
-This is particularly useful in the cases where the same connection detail is to be set for multiple steps of the job.
+- Records deployment history on a specific resource within the environment, as opposed to recording the history on all resources within the environment.
+- Steps in the deployment job **automatically inherit** the connection details of the resource (in this case, a Kubernetes namespace, `smarthotel-dev.bookings`), because the deployment job is linked to the environment. 
+This is particularly useful in the cases where the same connection detail is set for multiple steps of the job.
 
 
 
 
 ### Canary deployment strategy
 
-In the following example, the canary strategy for AKS will first deploy the changes with 10% pods followed by 20% while monitoring the health during postRouteTraffic. If all goes well, it will promote to 100%.  
+In the next example, the canary strategy for AKS will first deploy the changes with 10% pods, followed by 20%, while monitoring the health during `postRouteTraffic`. If all goes well, it will promote to 100%.  
 
 ```YAML
 jobs: 
