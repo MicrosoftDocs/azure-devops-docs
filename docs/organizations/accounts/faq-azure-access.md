@@ -9,13 +9,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/22/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot permissions and access with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## General
 
