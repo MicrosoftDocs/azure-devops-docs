@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -35,11 +35,7 @@ You must have [Project Collection Administrator or organization Owner permission
 
    ![Select Billing](_img/_shared/select-billing-organization-settings.png)
 
-4. Select **Start 30-day Test Plans trial**.
-
-    ![Select Start 30-day Test Plans trial](_img/try-additional-features/start-30-day-test-plans-trial.png)
-
-5. 5. Select **Start free trial**.
+4. Select **Start free trial**.
 
    ![Select Start free trial](_img/try-additional-features/start-free-trial.png)
 

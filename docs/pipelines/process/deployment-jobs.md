@@ -6,10 +6,10 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.manager: mijacobs
-ms.author: ronai
-author: RoopeshNair
+ms.author: jukullam
+author: juliakm
 ms.date: 5/2/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Deployment jobs
@@ -68,8 +68,6 @@ When deploying application updates, it's important that the technique that's use
 `postRouteTraffic`: Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for defined interval. 
 
 `on: failure` or `on: success`: Used to run steps that perform rollback actions or clean-up. 
-
-
 
 ### RunOnce deployment strategy:
 

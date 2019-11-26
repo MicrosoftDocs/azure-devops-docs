@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
@@ -40,16 +40,43 @@ You must have [Project Collection Administrator or organization Owner permission
 ## Manage users
 From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
-#### [Browser](#tab/browser)
- 
-### Manage users
-
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
 * See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
+
+> [!NOTE]   
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Users**.
+
+   ![.](../../_shared/_img/open-organization-settings-users-preview.png)
+
+4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
+
+    In the context menu, select one of the following options:
+
+   * **Change access level**
+   * **Manage user**
+   * **Resend invite**
+   * **Remove direct assignments**
+   * **Remove from organization** (deletes user)
+
+     ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-preview.png)
+
+5. **Save** your changes.
+
+#### [Current page](#tab/current-page)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -63,20 +90,15 @@ The Users view shows key information per user in a table. In this view, you can 
 
     In the context menu, select one of the following options:
 
-   * **Add to projects**
-   * **Remove from projects**
-   * **Change access levels**
+   * **Change access level**
+   * **Manage user**
+   * **Resend invite**
    * **Remove direct assignments**
    * **Remove from organization** (deletes user)
 
      ![Select Users, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
 5. **Save** your changes.
-
-#### How is *access* different from *permissions*?
-
-Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -140,6 +162,12 @@ ID                                    Display Name         Email                
 
 35b1952b-ca8c-45b5-a60c-d6b0086aa584  contoso@contoso.com  contoso@contoso.com  stakeholder     Stakeholder     active
 ```
+
+* * *
+
+#### How is *access* different from *permissions*?
+
+Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
 
 ## Related articles
 

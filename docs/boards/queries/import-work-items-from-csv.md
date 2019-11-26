@@ -21,9 +21,6 @@ ms.date: 08/26/2019
 
 Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product and the Excel plugin is no longer required.
 
-> [!NOTE]  
-> This feature is currently under private preview.
-
 ## Importing new work items
 
 1. Create a local ***import.csv*** file and open it in VS Code or Excel

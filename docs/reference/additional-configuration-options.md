@@ -110,7 +110,7 @@ Storyboarding
 <td>
 With this feature, you can <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[storyboard your ideas using the Storyboarding add-in to PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">storyboard your ideas using the Storyboarding add-in to PowerPoint</a>.<br/></td>
 <td>
-<strong>Required:</strong> <a href="http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300" data-raw-source="[Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)">Office PowerPoint 2007 or later</a><br/>
+<strong>Required:</strong> <a href="http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300" data-raw-source="[Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)">Office PowerPoint 2007 or later</a><br/>
 <strong>Required:</strong> Visual Studio Community (<a href="https://visualstudio.microsoft.com/free-developer-offers/" data-raw-source="[get your free download](https://visualstudio.microsoft.com/free-developer-offers/)">get your free download</a>) or other Visual Studio version installed. 
 </td>
 </tr>

@@ -51,9 +51,9 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Choose **Project settings** and then **Permissions**.
+2. Choose **Project settings**, and then **Permissions**. 
 
-	![Open Project settings, and then Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png)
+	![...](_img/permissions/project-settings-permissions.png)
 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .

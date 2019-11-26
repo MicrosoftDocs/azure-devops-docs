@@ -39,7 +39,7 @@ Copy the value from the <strong>Solution</strong> argument in your <a href="../.
 <tr>
 <td>Path to NuGet.config</td>
 <td>
-If you are using a package source other than NuGet.org, you must check in a <a href="http://docs.nuget.org/Consume/NuGet-Config-File" data-raw-source="[NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)">NuGet.config</a> file and specify the path to it here.
+If you are using a package source other than NuGet.org, you must check in a <a href="http://docs.nuget.org/Consume/NuGet-Config-File" data-raw-source="[NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File)">NuGet.config</a> file and specify the path to it here.
 </td>
 </tr>
 <tr>

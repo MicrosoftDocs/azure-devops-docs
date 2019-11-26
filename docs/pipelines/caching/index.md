@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: adandree
-ms.author: wismythe
-author: willsmythe
+ms.author: phwilson
+author: chasewilson
 ms.date: 07/05/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Pipeline caching
