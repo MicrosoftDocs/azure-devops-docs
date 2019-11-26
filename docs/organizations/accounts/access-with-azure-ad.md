@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -70,8 +70,7 @@ A: Add these users to the directory with new work or school accounts. Then, reas
 
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
-A: Alternate credentials won't work anymore for
-tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected.
+A: Alternate credentials won't work anymore for tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected. See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: What if I accidentally delete a user in Azure AD?
 
