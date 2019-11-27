@@ -139,7 +139,7 @@ use one of the following techniques:
 
 - If you want to authorize any pipeline to use the service connection,
   go to Azure Pipelines, open the Settings page, select Service connections,
-  and enable the setting **Allow all pipelines to use this connection** option for the connection.
+  and enable the setting **Allow all pipelines to use this connection** option for the connection, found under the **Policies** tab.
 
 - If you want to authorize a service connection for a specific pipeline, open the pipeline
   by selecting **Edit** and queue a build manually. You will see a resource authorization error
