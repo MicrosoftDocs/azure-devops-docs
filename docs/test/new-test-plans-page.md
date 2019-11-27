@@ -6,8 +6,8 @@ ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
 ms.manager: mijacobs
-ms.author: harishkragarwal
-author: harishkragarwal
+ms.author: ravishan-msft
+author: ravishan-msft
 ms.date: 11/05/2019
 monikerRange: '>= azure-devops'
 ---
@@ -61,6 +61,7 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 - Test suites tree:
     - Create and manage suites (static, requirement or query based)
     - Import (i.e. copy) suite from another test plan
+    - Drag and drop test cases across suites
     - Assign configurations
     - Order suites
     - Export
@@ -89,12 +90,10 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 **Capabilities from the following list will be added every 3 weeks:**
 
 - Test suites tree:
-	- Show all test cases and points from child suites
-	- Drag and drop test cases across suites
+	- Show all test cases and points from child suites	
 - Define tab	
 	- See linked items: requirements and bugs
 - General:
-	- Performance improvements
 	- Enable [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops)
 
 <a name="feedback"></a>
