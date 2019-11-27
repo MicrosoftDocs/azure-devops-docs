@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 11/05/2019
+ms.date: 11/27/2019
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
