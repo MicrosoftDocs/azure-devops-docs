@@ -40,7 +40,7 @@ You can also check your role using the Azure AD PowerShell module.
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select Azure Active Directory, and then switch the toggle to turn on the policy, restricting organization creation.
+3. Select **Azure Active Directory**, and then switch the toggle to turn on the policy, restricting organization creation.
    
    ![Turn on Azure AD policy](_img/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)
 

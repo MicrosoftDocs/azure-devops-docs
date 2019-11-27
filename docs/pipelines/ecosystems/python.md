@@ -6,10 +6,11 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: mijacobs
-ms.author: vtbassmatt
+ms.author: macoope
 ms.reviewer: vtbassmatt
 ms.date: 11/04/2019
 monikerRange: '>=azure-devops-2019'
+author: vtbassmatt
 ---
 
 # Build Python apps
@@ -327,5 +328,5 @@ You can also use Azure Pipelines to [build an image](containers/build-image.md) 
 
 - [PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
 - [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)
-- [Azure DevOps plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
+- [Azure DevOps plugin for PyCharm (IntelliJ)](https://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 - [Python in Visual Studio Code](https://code.visualstudio.com/docs/python) (Microsoft)  

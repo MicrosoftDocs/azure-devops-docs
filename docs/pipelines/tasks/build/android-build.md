@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -85,7 +85,7 @@ Name of the AVD to be started or created.
 <td>AVD ABI</td>
 <td>
 <p>The Application Binary Interface to use for the AVD.  The default value is <code>default/armeabi-v7a</code></p>
-<p>See <a href="http://developer.android.com/ndk/guides/abis.html" data-raw-source="[ABI Management](http://developer.android.com/ndk/guides/abis.html)">ABI Management</a>.</p>
+<p>See <a href="http://developer.android.com/ndk/guides/abis.html" data-raw-source="[ABI Management](https://developer.android.com/ndk/guides/abis.html)">ABI Management</a>.</p>
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ Name of the AVD to be started or created.
 <td>Create AVD Optional Arguments</td>
 <td>
 <p>Provide any options to pass to the <code>android create avd</code> command.</p>
-<p>See <a href="http://developer.android.com/tools/help/android.html" data-raw-source="[Android Command Line](http://developer.android.com/tools/help/android.html)">Android Command Line</a>.</p>
+<p>See <a href="http://developer.android.com/tools/help/android.html" data-raw-source="[Android Command Line](https://developer.android.com/tools/help/android.html)">Android Command Line</a>.</p>
 </td>
 </tr>
 <tr>

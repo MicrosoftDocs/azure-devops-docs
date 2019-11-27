@@ -10,6 +10,7 @@ ms.reviewer: steved0x
 ms.custom: seodec18
 ms.date: 11/13/2019
 monikerRange: '>= tfs-2015'
+author: steved0x
 ---
 
 # Troubleshoot Build and Release
@@ -272,7 +273,7 @@ macOS/Linux:
 
 #### Use full HTTP tracing - Windows
 
-1. Start [Fiddler](http://www.telerik.com/fiddler).
+1. Start [Fiddler](https://www.telerik.com/fiddler).
 
 2. We recommend you listen only to agent traffic. File > Capture Traffic off (F12)  
 

@@ -538,7 +538,7 @@ For more details, see
 
 **A:** The video recordings created by the Test &amp; Feedback extension can be
 viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the
-[VLC Video Player](http://www.videolan.org/vlc/download-windows.html).
+[VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
 ### Q: Does the extension support Team Foundation Server?
 

@@ -55,7 +55,7 @@ Make sure your machine has these prerequisites:
 
 ::: moniker-end
 
-If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](http://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
 (The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 <h2 id="permissions">Prepare permissions</h2>
