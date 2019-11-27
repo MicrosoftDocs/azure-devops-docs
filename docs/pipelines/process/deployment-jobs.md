@@ -55,7 +55,7 @@ jobs:
 
 ### Deployment strategies:
 
-When deploying application updates, it's important that the technique that's used to deliver the update enables initialization. This deploys the update, routing traffic to the updated version, testing the updated version after routing traffic, and, in case of failure, running steps to restore to the last known good version. We achieve this by using life cycle hooks where you can run your steps during deployment. Each of the life cycle hooks resolve into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This is controlled by the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+When deploying application updates, it's important that the technique that's used to deliver the update enables initialization, deploys the update, routes traffic to the updated version, tests the updated version after routing traffic, and, in case of failure, runs steps to restore to the last known good version. We achieve this by using life cycle hooks where you can run your steps during deployment. Each of the life cycle hooks resolve into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This is controlled by the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
 
 #### Descriptions of life cycle hooks:
 
@@ -73,7 +73,7 @@ When deploying application updates, it's important that the technique that's use
 
 ### RunOnce deployment strategy:
 
-`RunOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
+`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
 
 ```YAML
 strategy: 
@@ -108,7 +108,7 @@ strategy:
 
 ### Canary deployment strategy:
 
-Canary deployment strategy is an advance deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of users first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more users to it. Currently, this is applicable to only Kubernetes resources.
+Canary deployment strategy is an advance deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. Currently, this is applicable to only Kubernetes resources.
 
 
 ```YAML
