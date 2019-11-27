@@ -164,9 +164,9 @@ as part of the configuration:
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
 * [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/) (see [Java installation notes](#java-notes))
-* [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
+* [Markdowndeep](https://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
-* [ANTLR](http://www.antlr.org/) language recognition parser
+* [ANTLR](https://www.antlr.org/) language recognition parser
 
 **NOTES**:
  
@@ -190,7 +190,7 @@ Internet connectivity is required to download.
 If the target server doesn't have Internet connectivity, you must download 
 and install a JRE manually before attempting to install Search.
 
-> Versions of Search prior to Azure DevOps Server used the [Oracle Server Java Runtime Environment](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
+> Versions of Search prior to Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
 > In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/).
 
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
@@ -212,8 +212,8 @@ by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the JRE installation guide and then rerun the configuration wizard.
 
-* [Zulu OpenJDK installation guide](http://docs.azul.com/zulu/zuludocs/index.htm)
-* [Oracle JRE troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
+* [Zulu OpenJDK installation guide](https://docs.azul.com/zulu/zuludocs/index.htm)
+* [Oracle JRE troubleshooting guide](https://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
 
 If you can't install the version of Java required by Search due to other dependencies, you can:
 

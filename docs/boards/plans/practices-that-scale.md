@@ -82,7 +82,7 @@ You improve organizational effectiveness by attending to the culture you want to
   - **Release retrospectives** can help organizations identify areas to improve communications and internal practices and fuel improvement for the next release.
   - **Operational reviews**: are typically held monthly and include representatives from a whole value stream. Spanning a portfolio of projects and other initiatives and using objective, quantitative data, design these retrospectives to provoke discussions about the dynamics affecting performance between teams. 
 
-	See the [Agile Retrospective Resource Wiki](http://retrospectivewiki.org/index.php?title=Main_Page) for ideas, tips, and tools  for planning and conducting retrospectives. 
+	See the [Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=Main_Page) for ideas, tips, and tools  for planning and conducting retrospectives. 
 - **Improvement tracking board**: Good ideas to improve processes can arise from any one at any time. Capturing those ideas in order to discuss and decide on how to act on them in a timely manner is a key to support process improvement efforts.  
 
 	A white board provides any easy and visual means with which to capture ideas. Also, you can create an Improvement tracking team and capture ideas that you track on an electronic [Kanban board](../boards/kanban-basics.md).  
@@ -93,7 +93,7 @@ You improve organizational effectiveness by attending to the culture you want to
   - Hackathon weeks or 10% hack time  
   - Internal Agile support team to support teams adopt Agile practices  
 	
-	[The Culture Game](http://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) provides a good resource for Agile managers to help teams adopt Agile and share best practices. 
+	[The Culture Game](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) provides a good resource for Agile managers to help teams adopt Agile and share best practices. 
 
 - **Communities of practice**: Support internal common disciplines (e.g., DBAs, SW Architects, UX design)  
 
@@ -123,7 +123,7 @@ In addition to the above practices, you'll find additional guidance around scali
 - [Scaling Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
 ### Industry resources
-- [Agile manifesto](http://agilemanifesto.org)
+- [Agile manifesto](https://agilemanifesto.org)
 - [Agile Alliance](http://guide.agilealliance.org/)  
 - [Scaled Agile Lean Development - The Principles](http://scaledprinciples.org/)  
 

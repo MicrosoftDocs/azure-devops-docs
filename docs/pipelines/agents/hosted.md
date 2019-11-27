@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/20/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Microsoft-hosted agents

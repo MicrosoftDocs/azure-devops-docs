@@ -1,4 +1,4 @@
-﻿---
+---
 title: Tasks & concepts using Data & Analytics
 titleSuffix: Azure DevOps  
 description: Supported tasks and concepts to generate results using OData backed Analytics for Azure DevOps 
@@ -206,6 +206,6 @@ Use this quick reference to access information and sample queries using OData an
 ## Related articles
 - [PowerBI](../powerbi/overview.md)  
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
-- [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 
