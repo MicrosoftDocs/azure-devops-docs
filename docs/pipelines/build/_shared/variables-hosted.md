@@ -581,7 +581,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>System.PlanId</td>
-<td>A string-based identifier for a test plan under which a test must run.</td>
+<td>A string-based identifier for the orchestration.</td>
 </tr>
 
 
@@ -633,7 +633,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.TaskInstanceId</td>
-<td>A string representing the task instance identifier.</td>
+<td>A string representing the task instance identifier that is associated with a pipeline task.</td>
 </tr>
 
 <tr>
