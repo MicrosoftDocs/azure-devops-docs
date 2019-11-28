@@ -64,6 +64,8 @@
       href: sample-boards-leadcycletime.md
     - name: Boards - Add a team slicer
       href: sample-boards-teamslicer.md
+    - name: Stories Overview Report
+      href: sample-stories-overview.md
   - name: Use Analytics views
     items:
     - name: Active bugs report 
