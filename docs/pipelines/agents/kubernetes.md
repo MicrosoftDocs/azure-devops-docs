@@ -38,7 +38,7 @@ Next, we'll create the Dockerfile.
    
    Write-Host $packageUrl
    
-   Write-Host "2. Downloading and installing Azure Pipelines agent..." -ForegroundColor Cyan
+   Write-Host "Downloading and installing Azure Pipelines agent..." -ForegroundColor Cyan
    
    $wc = New-Object System.Net.WebClient
    $wc.DownloadFile($packageUrl, "$(Get-Location)\Dependencies\agent.zip")
@@ -231,7 +231,9 @@ Next let's create the kubernetes file
     ```shell
     kubectl apply -f kubernetes-deployment.yaml
     ```
-    
+
+That's it! you're good to go.
+
 ## Useful commands
    
   Get Azure Credentials for Kubernetes:
