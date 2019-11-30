@@ -28,38 +28,46 @@ If you want to see commit date, you can use one of the many command line options
 
 Let's look at a brief example to see these concepts in practice. First we will create a normal commit:
 
-    git init
-    echo test > file.txt
-    git add *
-    git commit -m "A normal commit message"
+```
+git init
+echo test > file.txt
+git add *
+git commit -m "A normal commit message"
+```
 
 Now let's amend our commit with a different message:
 
-    echo again > file.txt
-    git add *
-    git commit --amend -m "An amended commit"
-    
+```
+echo again > file.txt
+git add *
+git commit --amend -m "An amended commit"
+```
+
 If we look at our regular log history we would see something like the following:
 
-    git log
-    
-    commit 17232459f0ae25adeff21c9e21742ba22b7f3499
-    Author: Ross Brodbeck <robrodbe@microsoft.com>
-    Date:   Thu Feb 25 19:38:54 2016 -0500
+```
+git log
 
-        An amended commit
+commit 17232459f0ae25adeff21c9e21742ba22b7f3499
+Author: Ross Brodbeck <robrodbe@microsoft.com>
+Date:   Thu Feb 25 19:38:54 2016 -0500
+
+    An amended commit
+```
 
 Now let's view the same commit with the author date:
 
-    git log --pretty=fuller
-    
-    commit 17232459f0ae25adeff21c9e21742ba22b7f3499
-    Author:     Ross Brodbeck <robrodbe@microsoft.com>
-    AuthorDate: Thu Feb 25 19:38:54 2016 -0500
-    Commit:     Ross Brodbeck <robrodbe@microsoft.com>
-    CommitDate: Thu Feb 25 19:39:36 2016 -0500
+```
+git log --pretty=fuller
 
-        An amended commit
+commit 17232459f0ae25adeff21c9e21742ba22b7f3499
+Author:     Ross Brodbeck <robrodbe@microsoft.com>
+AuthorDate: Thu Feb 25 19:38:54 2016 -0500
+Commit:     Ross Brodbeck <robrodbe@microsoft.com>
+CommitDate: Thu Feb 25 19:39:36 2016 -0500
+
+    An amended commit
+```
 
 Note the (slight) difference between the author date and commit date above.
 The author date is my original, unedited, commit time. The commit date is the time at which I ran the `--amend` command.

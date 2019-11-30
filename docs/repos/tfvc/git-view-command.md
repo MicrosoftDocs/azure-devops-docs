@@ -22,13 +22,15 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf git view /collection:TeamProjectCollectionUrl
-                /teamproject:TeamProjectIdentifier
-                /repository:RepositoryIdentifier
-                (/blobId:blobId | /path:path [/commitId:commitId])
-                [/output:localfile]
-                [/console]
-                [/login:username,[password]]
+```
+tf git view /collection:TeamProjectCollectionUrl
+            /teamproject:TeamProjectIdentifier
+            /repository:RepositoryIdentifier
+            (/blobId:blobId | /path:path [/commitId:commitId])
+            [/output:localfile]
+            [/console]
+            [/login:username,[password]]
+```
 
 ## Parameters
 
