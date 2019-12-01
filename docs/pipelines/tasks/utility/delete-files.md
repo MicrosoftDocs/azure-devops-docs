@@ -54,10 +54,10 @@ None
 </p>
 <ul>
 <li><code>**/*</code> deletes all files and folders in the root folder.</li>
-  <li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li>
+<li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li>
 <li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with <em>temp</em>.</li>
-  <li><code>**/temp/*</code> deletes all files in any sub-folder named <em>temp</em>.</li>
-  <li><code>**/temp*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li>
+<li><code>**/temp/*</code> deletes all files in any sub-folder named <em>temp</em>.</li>
+<li><code>**/temp*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li>
 <li><code>!(*.vsix)</code> deletes all files in the root folder that do not have a <em>.vsix</em> extension.</li>
 </ul>
 </td>
