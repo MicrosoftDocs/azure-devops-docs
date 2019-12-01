@@ -15,7 +15,7 @@ In the **Sprint 135 Update** of Visual Studio Team Services (VSTS), we bring a n
 There are a number of other features across Work, Code, Build, Release, and even a few related to authentication. Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## What’s new in VSTS
 

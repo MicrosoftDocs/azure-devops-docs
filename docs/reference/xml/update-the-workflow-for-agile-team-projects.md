@@ -5,8 +5,9 @@ description: Update the workflow for agile projects to manually update the user 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<=tfs-2015'
 ms.date: 12/15/2017
 ---
@@ -63,7 +64,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
   
-0. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
+1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   
     ```  
     witadmin exportwitd /collection:CollectionURL /p:"ProjectName" /n:"User Story" /f:"DirectoryPath\FileName.xml"  
@@ -330,8 +331,8 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
    > <RequirementWorkItems category="Microsoft.RequirementCategory" plural="Stories">  
    >       <States>  
    >       <State type="Proposed" value="New"/>  
-   >       <State type="InProgress value="Active" />  
-   >       <State type="InProgress value="Resolved" />  
+   >       <State type="InProgress" value="Active" />  
+   >       <State type="InProgress" value="Resolved" />  
    >       <State type="Complete" value="Closed" />  
    >       </States>  
    > </RequirementWorkItems>  

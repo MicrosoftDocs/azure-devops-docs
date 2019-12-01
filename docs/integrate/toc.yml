@@ -1,15 +1,17 @@
-- name: Integrate Applications
+- name: Integrate applications
   href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Create a bug
-      href: quickstarts/create-bug-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: quickstarts/create-bug-quickstart.md
     - name: Query work items
-      href: quickstarts/work-item-quickstart.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: quickstarts/work-item-quickstart.md
 - name: Samples
   items:
-    - name: Samples
+    - name: .NET
       href: get-started/client-libraries/samples.md
+    - name: .NET (Legacy)
+      href: get-started/client-libraries/soapSamples.md
 - name: Concepts
   items:
     - name: Best practices
@@ -30,10 +32,10 @@
       href: ./concepts/wit-client-om-deprecation.md
     - name: Migration Guide
       href: ./concepts/migration-guide.md
-- name: How-to Guides
+- name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: get-started/authentication/pats.md
+      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
     - name: Authenticate with OAuth 2.0
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically

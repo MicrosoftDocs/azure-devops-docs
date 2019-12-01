@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Sep 9
 description: VSTS release notes for September 09 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: a58950a3-279f-4f24-bee4-7934e81d52f6
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -50,15 +50,8 @@ You can now create work items directly from [code comments](https://visualstudio
 
 ![Create a bug directly from code comments](_img/9_09_05.png)
 
-That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

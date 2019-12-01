@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: CloneOperation | REST API Reference for Team Foundation Server
 description: Work with cloning test plans and test suites programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: FF42473B-F1B6-45F2-89C8-A0F8169ACAC5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/17/2016
 ---
 

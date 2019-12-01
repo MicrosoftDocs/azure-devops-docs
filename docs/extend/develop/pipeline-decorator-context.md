@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
-ms.manager: jillfra
-ms.author: stfrance
-author: stephenmichaelf
+ms.manager: mijacobs
+ms.author: macoope
+author: vtbassmatt
 ms.date: 03/01/2019
 monikerRange: '>= azure-devops'
 ---
@@ -15,7 +15,9 @@ monikerRange: '>= azure-devops'
 # Pipeline decorator expression context
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
-As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior.
+As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
+
+[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
 ## Resources
 
@@ -28,6 +30,7 @@ Currently, there is only one key: `repositories`.
 
 In a designer build, the primary repo alias is `__designer_repo`.
 In a YAML pipeline, the primary repo is called `self`.
+In a release pipeline, repositories is not available. [Release artifact variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
 
 For example, to print the name of the `self` repo in a YAML pipeline:
 ```
@@ -38,7 +41,7 @@ steps:
 Repositories contain the following properties:
 
 ```javascript
-resources['repositories']['sef'] =
+resources['repositories']['self'] =
 {
 	"alias": "self",
 	"id": "<repo guid>",
@@ -93,7 +96,7 @@ job =
 For instance, to conditionally add a task only if it doesn't already exist:
 
 ```yaml
-- ${{ if not(containsValue(job.steps.*.task.id, 'f3ab91e7-bed6-436a-b651-399a66fe6c2a')) }}
+- ${{ if not(containsValue(job.steps.*.task.id, 'f3ab91e7-bed6-436a-b651-399a66fe6c2a')) }}:
   - script: echo conditionally inserted
 ```
 
@@ -120,5 +123,5 @@ Then, in a pipeline in the organization, the author can request that the decorat
 variables:
   skipInjecting: true
 steps:
-- script: echo This will be the only step. No decorator will be added.
+- script: echo This is the only step. No decorator is added.
 ```

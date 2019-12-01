@@ -5,7 +5,7 @@ description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart
@@ -28,18 +28,19 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 ## Download and install Azure CLI and add Azure DevOps extension
 1. [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
 
-1. Add the Azure DevOps Extension `az extension add --name azure-devops`
+2. Add the Azure DevOps Extension `az extension add --name azure-devops`
 
-2. Run the `az login` command.
+3. Run the `az login` command.
 
     If the CLI can open your default browser, it will do so and load a sign-in page. Otherwise, you need to open a
     browser page and follow the instructions on the command line to enter an authorization code after navigating to
     [https://aka.ms/devicelogin](https://aka.ms/devicelogin) in your browser. For more information, see the
     [Azure CLI login page](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
   
- 3. For seamless commanding, set the organization and project as defaults in configuration.
+4. For seamless commanding, set the organization and project as defaults in configuration.
  
     `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
+    
 ## Download and install Git
 
 * [Windows](#windows)
@@ -53,7 +54,7 @@ easily connect to Azure Repos.
 
 ### macOS
 
-Use [Homebrew](http://brew.sh/) to install and set up Git.
+Use [Homebrew](https://brew.sh/) to install and set up Git.
 
 ```
 brew install git

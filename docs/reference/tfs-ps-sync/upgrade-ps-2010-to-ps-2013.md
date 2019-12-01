@@ -4,8 +4,9 @@ titleSuffix: TFS
 description: Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013 when using Team Foundation Server & Project Server
 ms.technology: devops-agile
 ms.assetid: d28658f8-d503-4e67-95e3-ab304462daa9
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -18,8 +19,8 @@ You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 depl
 > [!NOTE]
 >  You cannot upgrade directly from Project Server 2007 to Project Server 2013. Instead, you first upgrade the app-tier and web-tier servers to Project Server 2010, then upgrade the required databases to Project Server 2013. For information about how to upgrade from Project Server 2007 to Project Server 2010, see the following resources on Microsoft TechNet:  
 > 
-> - [Upgrade and Migration for Project Server 2010 TechNet Resource Center](http://go.microsoft.com/fwlink/?LinkId=262119)  
->   -   [Microsoft Project Server 2010 Upgrade SuperFlow Center](http://go.microsoft.com/fwlink/p/?LinkId=253657)  
+> - [Upgrade and Migration for Project Server 2010 TechNet Resource Center](https://go.microsoft.com/fwlink/?LinkId=262119)  
+>   -   [Microsoft Project Server 2010 Upgrade SuperFlow Center](https://go.microsoft.com/fwlink/p/?LinkId=253657)  
   
 ## Upgrade process  
   

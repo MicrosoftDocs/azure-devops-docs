@@ -6,12 +6,12 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 07/19/2019
 ---
 
 
@@ -84,6 +84,7 @@ The specific set of formatting features differs depending on the client you use.
 
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range="azure-devops"
 
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
@@ -137,6 +138,7 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 <a id="team-explorer-rich-text" />
 
 From Team Explorer you can choose the font, font size, and text and background colors.
@@ -152,6 +154,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 
 #### [Team Explorer Everywhere](#tab/tee/)
+
 From Team Explorer Everywhere you can exercise only basic format operations.
 
 ![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png) 
@@ -164,6 +167,8 @@ You can use the following shortcut keys to format your text:
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts.
 
 * * *
+
+
 <a id="link-items"></a>
 
 ## Link items
@@ -188,15 +193,29 @@ Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) 
 <a id="attach-browser" />
 
 #### [Browser](#tab/browser/)
+
 ::: moniker range=">= azure-devops-2019"
 
 Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
 
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]  
+> Some features require upgrade to Azure DevOps Server 2019.1. 
+
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2019"
+
 You can continue viewing the attachments as a list or switch to a grid view to show a thumbnail preview. Double-click or right-click on the file to open a preview and cycle through them to quickly find the information you need. 
 
 ![Attachments tab, list or grid view](_img/share-plans/142_attachments.gif) 
+
+You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 > [!TIP]  
 > To get the URL of an image file you've attached, choose to preview it, right-click the image and choose the copy image address. Paste the address into a text editor and discard everything starting with **&download** to the end. 
@@ -217,10 +236,9 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 ![Attachment controls, web portal](_img/share-plans-attachment-tab-vsts.png)  
 
-> [!TIP]    
-> You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
-You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
+
+You can edit, open, save, or delete an attachment by choosing an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
 <img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
 
@@ -276,7 +294,7 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
 > [!NOTE]  
-> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
+> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
 
 By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 

@@ -6,32 +6,31 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 05/09/2019
+ms.date: 10/28/2019
 ---
 
-::: moniker range="azure-devops" 
-# About user, team, project, and organization-level settings 
+
+
+# About settings at the user, team, project, or organization-level 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
+::: moniker range="azure-devops"
+
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
-If you're just getting started as a project administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
-# About user, team, project, and collection-level settings
-
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 
@@ -96,7 +95,8 @@ Individual contributors can set their user preferences, enable features that are
 
 
 <a id="team" />
-## Team administrator role and managing teams
+
+## Team Administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
 
@@ -150,17 +150,19 @@ For a complete overview of all Agile tools that you can configure, see [Manage t
 
 <a id="project" />
 
-## Project administrator role and managing projects
+## Project Administrator role and managing projects
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
 
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 ::: moniker range=">= azure-devops-2019"
+
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
-![Project settings, new nav](_img/about/project-settings-new-nav.png) 
+> [!div class="mx-imgBorder"]  
+> ![Project settings, new nav](_img/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -174,8 +176,10 @@ From the administrative **Project settings** pages, you can configure settings a
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+
 ::: moniker-end
 
 
@@ -299,21 +303,25 @@ From the administrative **Project settings** pages, you can configure settings a
 </table>
 
 <a id="admin" />
-## Project collection administrator role and managing collections of projects 
+
+## Project Collection Administrator (PCA) role and managing collections of projects 
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
 
-::: moniker range=">= azure-devops-2019"   
+::: moniker range=">= azure-devops-2019"
+  
 **Organization settings**  
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
+> [!div class="mx-imgBorder"]  
+> ![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018"  
+::: moniker range="<= tfs-2018"
+
 **Project collection-level settings**  
 From the administrative pages for a collection, you can configure the settings shown in the following image. 
 
@@ -321,10 +329,12 @@ From the administrative pages for a collection, you can configure the settings s
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
 ![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+
 ::: moniker-end
 
 
-::: moniker range="azure-devops" 
+::: moniker range="azure-devops"
+
 For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>
@@ -354,7 +364,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><strong>Billing</strong></td>
 <td><ul>
 <li><a href="../billing/set-up-billing-for-your-organization-vs.md" data-raw-source="[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)">Set up billing</a></li>
-<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Start free trials for paid features and extensions](../billing/try-additional-features-vs.md)">Start free trials for paid features and extensions</a></li>
+<li><a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans](../billing/try-additional-features-vs.md)">Try Azure Test Plans for free</a></li>
 <li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)">Pay for users (Basic)</a></li>
 <li><a href="../billing/buy-more-build-vs.md" data-raw-source="[Buy CI/CD](../billing/buy-more-build-vs.md)">Buy CI/CD</a></li>
 <li><a href="../billing/add-backup-billing-managers.md" data-raw-source="[Add a user to make purchases](../billing/add-backup-billing-managers.md)">Add a user to make purchases</a></li>
@@ -384,7 +394,6 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../accounts/add-external-user.md" data-raw-source="[Add external users](../accounts/add-external-user.md)">Add external users</a></li>
 <li><a href="../accounts/manage-users-table-view.md" data-raw-source="[Manage user access levels](../accounts/manage-users-table-view.md)">Manage user access levels</a></li>
 <li><a href="../accounts/delete-organization-users.md" data-raw-source="[Remove users](../accounts/delete-organization-users.md)">Remove users</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
 </ul></td>
 <td>For large organizations with a sizable number of users, we recommend that you <a href="../accounts/access-with-azure-ad.md" data-raw-source="[manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md)">manage user access through Azure Active Directory</a>. For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level <strong>Users</strong> page, you can also <a href="../security/export-users-audit-log.md" data-raw-source="[export the set of users and their access levels](../security/export-users-audit-log.md)">export the set of users and their access levels</a>.  </td>
 </tr>
@@ -412,8 +421,6 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li><a href="../../marketplace/install-extension.md" data-raw-source="[Install and manage Marketplace extensions](../../marketplace/install-extension.md)">Install and manage Marketplace extensions</a></li>
 <li><a href="../../marketplace/approve-extensions.md" data-raw-source="[Approve extensions](../../marketplace/approve-extensions.md)">Approve extensions</a></li>
-<li><a href="../../marketplace/assign-paid-extensions.md" data-raw-source="[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)">Assign paid extension access to users</a></li>
-<li><a href="../billing/buy-basic-access-add-users.md" data-raw-source="[Change the number of paid users](../billing/buy-basic-access-add-users.md)">Change the number of paid users</a> </li>
 <li><a href="../../marketplace/how-to/grant-permissions.md" data-raw-source="[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)">Grant permissions to manage extensions</a></li>
 <li><a href="../../marketplace/uninstall-disable-extensions.md" data-raw-source="[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)">Uninstall or disable extensions</a></li>
 </ul></td>
@@ -451,6 +458,7 @@ For an overview of managing your organization, see [About organization managemen
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/config-tfs-resources).
 
 
@@ -533,6 +541,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
+
 For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/config-tfs-resources).
 
 
@@ -611,7 +620,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 <a id="admin" />
 
-## Server administrator role 
+## Server Administrator role 
 
 Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
 

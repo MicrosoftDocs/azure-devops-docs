@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -29,7 +29,9 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widgets t
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all Analytics widgets are disabled and won't appear in the widget catalog. To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).  
+> Widgets specific to a service are disabled if the service they depend on has been disabled. For example, if **Boards** is disabled, New Work item and all work tracking Analytics widgets are disabled and won't appear in the widget catalog. If Analytics is disabled or not installed, then all Analytics widgets are disabled. 
+> 
+> To re-enable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md). For Analytics, see [enable or install Analytics](analytics-extension.md)]. 
 
 ::: moniker-end
 
@@ -40,7 +42,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker range=">= azure-devops-2019"
 
-0. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
+1. Open a web browser, connect to your project, and choose **Overview>Dashboards**. The dashboard directory page opens.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
@@ -107,9 +109,9 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ## Add an Analytics widget
 
-This example shows how to add the Velocity widget available from the Analytics service to a dashboard. 
+This example shows how to add the Velocity widget available from Analytics to a dashboard. 
 
-0. Connect to the web portal for your project and choose **Overview>Dashboards**. 
+1. Connect to the web portal for your project and choose **Overview>Dashboards**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
@@ -291,8 +293,8 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 ## Related articles
 
 ::: moniker range=">= azure-devops-2019"
-- [Widgets based on the Analytics Service](../dashboards/analytics-widgets.md)
-- [What is the Analytics Service?](../powerbi/what-is-analytics.md)
+- [Analytics-based widgets](../dashboards/analytics-widgets.md)
+- [What is Analytics?](../powerbi/what-is-analytics.md)
 - [Burndown guidance](burndown-guidance.md)
 - [Cumulative flow & lead/cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md)
 - [Velocity guidance](velocity-guidance.md)

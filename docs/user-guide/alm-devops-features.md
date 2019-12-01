@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 04/05/2019
+ms.date: 05/28/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -562,6 +562,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Manage a <a href="../boards/plans/portfolio-management.md" data-raw-source="[portfolio of backlogs](../boards/plans/portfolio-management.md)">portfolio of backlogs</a> and gain insight into each team&#39;s progress as well as the progress of all programs.</p>
 
 ![Portfolio management](_img/features/alm-feature-portfolio-management.png)
+
 <br/>
 
 
@@ -1047,7 +1048,7 @@ pipelines\tasks\build\_img
 <p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
 <p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/_img/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true" alt=""/>&#160;&#160;<a href="http://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -1189,7 +1190,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p><a href="../test/index.md" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.md)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p><a href="../test/index.yml" data-raw-source="[Perform exploratory, manual, system, and user acceptance tests for any app, in any language](../test/index.yml)">Perform exploratory, manual, system, and user acceptance tests for any app, in any language</a>. Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create <a href="/visualstudio/test/create-unit-tests-menu" data-raw-source="[unit tests](/visualstudio/test/create-unit-tests-menu)">unit tests</a> and run them frequently to make sure your code is working properly.</p>
@@ -1208,7 +1209,7 @@ pipelines\tasks\build\_img
 <p>Use Visual Studio to create <a href="https://msdn.microsoft.com/library/dd286726.aspx" data-raw-source="[coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx)">coded UI tests</a> to test your application&#39;s user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to <a href="../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/languages/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
+<p>Use continuous integration builds to <a href="../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[run tests automatically](../pipelines/ecosystems/dotnet-core.md#run-your-tests)">run tests automatically</a>.</p>
 
 <p><b>Review automated test results after a build</b></p>
 <p><a href="../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Review your test results](../pipelines/test/review-continuous-test-results-after-build.md)">Review your test results</a> to analyze any problems that were found.</p>
@@ -1222,12 +1223,15 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using <a href="../test/index.md" data-raw-source="[Test Manager and exploratory testing](../test/index.md)">Test Manager and exploratory testing</a>.</p>
-<img src="_img/features/features-exploratory-testing.png" alt="Exploratory testing"/><br/><br/>
+<p>Explore user stories without test cases or test steps using <a href="../test/index.yml" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.yml)">Azure Test Plans and exploratory testing</a>.</p>
+
+![Exploratory testing](_img/features/features-exploratory-testing.png)
+
+<br/>
 <p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
@@ -1623,8 +1627,8 @@ pipelines\tasks\build\_img
 <p><b>Extensions</b></p>
 <p>You can <a href="../marketplace/get-vsts-extensions.md" data-raw-source="[get and quickly install extensions](../marketplace/get-vsts-extensions.md)">get and quickly install extensions</a> to add functionality to Visual Studio, Visual Studio Code, or Azure DevOps Services.</p>
 
-<p><b>Try extensions for free</b></p>
-<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[start a trial extension for free](../billing/try-additional-features-vs.md)">start a trial extension for free</a>.</p>
+<p><b>Try Azure Test Plans for free</b></p>
+<p>You can <a href="../billing/try-additional-features-vs.md" data-raw-source="[Try Azure Test Plans for free](../billing/try-additional-features-vs.md)">start a trial for Azure Test Plans for free</a>.</p>
 
 
 <p><b>Get extensions for...</b></p>
@@ -1778,7 +1782,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Visual Studio language pack</b></p>
-<p>Install the <a href="http://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](http://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
+<p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Brazilian Portuguese</a></li>
@@ -1890,7 +1894,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by <a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/)">adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows</a>. </p>
 
 <p><b>Simplified distribution </b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
+<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](https://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Azure DevOps Services and TFS</b></p>
@@ -1905,7 +1909,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Comprehensive dashboard </b></p>
 <p>Manage all your apps, users, and devices from a single dashboard. Monitor crashes and feedback as well. As an admin, you&#39;ll have full control over which user can see and install which app. </p>
 
-![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)  
+![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)
+
 <br/>
 
 
@@ -1915,19 +1920,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Invite or recruit testers</b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
+<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](https://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
-<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
+<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](https://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
  </p>
 
 
 <p><b>Webhooks</b></p>
-<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
+<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
 
 
 </td>
@@ -2632,7 +2637,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related articles
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](/../../release-notes.md)
+- [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 
 <br/>

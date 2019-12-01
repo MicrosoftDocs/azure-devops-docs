@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/10/2019
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
-Partners in the Cloud Solution Provider (CSP) program can enable their customers to [pay for Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
+Partners in the Cloud Solution Provider (CSP) program can enable their customers to [pay for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) by using a CSP-based Azure subscription.
 
 ## Prerequisites
 

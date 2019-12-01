@@ -3,10 +3,10 @@ title: Visual Studio Online updates - Mar 18
 description: VSTS release notes for March 18 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: b8c94e45-6582-474c-9fc9-2706dc40bc01
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -24,7 +24,7 @@ Today’s update also includes a new trace log search feature. If your applicati
 
 ![Search across trace logs](_img/3_18_02.png)
 
-We are anxious to hear your feedback. Let us know how we’re doing at [http://visualstudio.microsoft.com/support](https://visualstudio.microsoft.com/support).
+We are anxious to hear your feedback. Let us know how we’re doing at [https://visualstudio.microsoft.com/support](https://visualstudio.microsoft.com/support).
 
 Thanks,
 

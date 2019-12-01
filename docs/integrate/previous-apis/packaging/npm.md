@@ -2,10 +2,10 @@
 title: npm | REST API Reference for VSTS
 description: Work with npm packages programmatically using the REST APIs for VSTS.
 ms.assetid: 12059603-5562-4AB1-B028-CAC39BB81A51
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem

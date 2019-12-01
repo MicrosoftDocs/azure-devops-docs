@@ -3,10 +3,10 @@ title: Application Insights - save search page, pause export and alerts on expor
 description: VSTS release notes for March 27 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: dedb8bbf-6bf8-44c6-a101-9144f60d4781
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -47,7 +47,7 @@ If [Continuous Export](https://azure.microsoft.com/documentation/articles/app-in
 
 ## Feedback please!
 
-That’s a wrap for Sprint 80. Next update in three weeks. If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](http://stackoverflow.com/questions/tagged/ms-application-insights), bugs to [Connect](https://connect.microsoft.com/VisualStudio/Feedback/LoadSubmitFeedbackForm?FormID=6076) (select Application Insights), and suggestions to [User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+That’s a wrap for Sprint 80. Next update in three weeks. If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://stackoverflow.com/questions/tagged/ms-application-insights), bugs to [Connect](https://connect.microsoft.com/VisualStudio/Feedback/LoadSubmitFeedbackForm?FormID=6076) (select Application Insights), and suggestions to [User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
 
 Thanks,
 

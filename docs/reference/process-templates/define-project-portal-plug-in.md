@@ -1,11 +1,11 @@
----
-title: Define the project portal plug-in for a process template 
+﻿---
+title: Define project portal plug-in for process template
 titleSuffix: TFS
 description: Define the initial document libraries, library structure, and documents of a project's SharePoint portal for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

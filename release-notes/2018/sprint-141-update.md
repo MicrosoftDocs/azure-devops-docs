@@ -47,7 +47,7 @@ Administration:
 Read about the new features below and head over to Azure DevOps Services to try them for yourself.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps Services](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps Services](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## General
 
@@ -96,7 +96,7 @@ In this release, we added a new wizard to simplify the process of setting up con
 
 ### The Xcode task supports newly released Xcode 10
 
-Coinciding with Apple's release of Xcode 10, you can now set your projects to build or be tested specifically with Xcode 10. Your pipeline can also run jobs in parallel with a [matrix](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops#matrix-1) of Xcode versions. You can use the Microsoft-hosted macOS agent pool to run these builds. See the [guidance](https://docs.microsoft.com/azure/devops/pipelines/languages/xcode?view=azure-devops) for using Xcode in Azure Pipelines.
+Coinciding with Apple's release of Xcode 10, you can now set your projects to build or be tested specifically with Xcode 10. Your pipeline can also run jobs in parallel with a [matrix](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops#matrix-1) of Xcode versions. You can use the Microsoft-hosted macOS agent pool to run these builds. See the [guidance](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode?view=azure-devops) for using Xcode in Azure Pipelines.
 
 > [!div class="mx-imgBorder"]
 > ![Xcode 10](_img/141_01.png)

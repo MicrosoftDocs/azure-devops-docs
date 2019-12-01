@@ -3,9 +3,9 @@ title: Keep your OSS packages safe with upstream sources | Azure Artifacts
 description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: amullans
 ms.date: 12/04/2018
 monikerRange: '>= tfs-2017'
@@ -30,14 +30,14 @@ In this tutorial, you will:
 1. Navigate to **Azure Artifacts**:
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
    >![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub.png)
 
 ::: moniker-end
@@ -45,14 +45,14 @@ In this tutorial, you will:
 1. Select **+ New feed**:
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
    >![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![New feed button](../_shared/_img/new-feed-button.png)
 
 ::: moniker-end
@@ -60,14 +60,14 @@ In this tutorial, you will:
 1. In the dialog, provide a feed name and click _Create_. 
 
 ::: moniker range=">= azure-devops-2019"
-    
+
    > [!div class="mx-imgBorder"] 
-   >![New feed dialog](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+   >![New feed dialog](../_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-    
+
    ![New feed dialog](../_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
@@ -102,8 +102,7 @@ The next step is to update your configuration file to point to the new Azure Art
 1. Get your feed's URL
 2. Update the configuration file with the feed URL
 
-# [npm](#tab/npm)
-
+#### [npm](#tab/npm/)
 ::: moniker range=">= azure-devops-2019"
 
 1. From your **Packages** page, click _Connect to Feed_
@@ -111,7 +110,12 @@ The next step is to update your configuration file to point to the new Azure Art
    > [!div class="mx-imgBorder"] 
    >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
 
-2. Copy the "registry" text:
+2. Select the **npm** tab under the **npm** header
+
+> [!NOTE]
+> If you don't have **npm** or the **artifacts-credhelper** installed, select **Get the tools** in the top right and follow steps **1** and **2** to get the tools to continue.
+
+3. Follow the instructions under **Project setup** :
 
    > [!div class="mx-imgBorder"] 
    >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
@@ -132,41 +136,32 @@ The next step is to update your configuration file to point to the new Azure Art
 
 After you've got the feed URL, create a new text file named `.npmrc` in the root of your project (in the same folder as your `package.json` file). Open your new `.npmrc` file and paste the text that you copied in step 2 above.
 
-# [NuGet](#tab/nuget)
+#### [NuGet](#tab/nuget/)
 
-[!INCLUDE [get a NuGet URL](../_shared/nuget/nuget-consume-endpoint.md)]
+1. Go to your feed [or create a feed if you haven't](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops&tabs=new-nav#create-a-feed). 
 
-Now that we have the feed URL, we can add our feed as a package source by following these steps:
+2. Select **Connect to feed**:
 
-1. Create a new file named `nuget.config` in the root of your project.
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-nuget-exe-config-azure-devops-newnav.png)
+   >
 
-2. Copy and paste the template below into your new `nuget.config` file:
+3. Select the **NuGet.exe** tab under the **NuGet** header 
 
-   ```xml
-       <?xml version="1.0" encoding="utf-8"?>
-       <configuration>
-       </configuration>
-   ```
+> [!NOTE]
+> If you don't have **NuGet** or the **credential provider** installed, select **Get the tools** in the top right and follow steps **1**  and **2** to get the tools to continue.
 
-3. Run the following command with your feed name and feed URL:
+4. Copy the XML snippet under **Project Setup** to your clipboard.
 
-   ```
-   nuget sources add -Name "<feed_name>" -Source <feed_url> -configfile nuget.config
-   ```
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   >
 
-Now, we recommend a few steps to ensure that we use our feed instead of the public registry. To do so:
+5. Create a new file named `nuget.config` in the root of your project.
 
-1. Add a `<clear />` tag to the `<packageSources>` section your `nuget.config` file, which was created in the previous step. For example:
-
-   ```xml
-   ...
-   <packageSources>
-   <clear />
-   ...
-   </packageSources>
-   ```
-
----
+6. Paste the XML snippet from your clipboard to your `nuget.config` file.
+ 
+* * *
 
 ## Run an initial package restore to populate your feed
 
@@ -201,7 +196,6 @@ nuget restore
 ---
 
 The instructions above show the simplest way to populate your feed. In larger projects, you can also consider setting up a continuous integration (CI) build that has a clean cache on each build run. This build will then save any new packages from upstream sources as they're used.
-
 
 ## Check your feed to see the saved copy of everything you used from the public registry
 

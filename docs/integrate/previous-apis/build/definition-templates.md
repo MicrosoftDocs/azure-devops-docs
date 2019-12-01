@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Build Definition Templates | REST API Reference for Team Foundation Server
 description: Get build definition templates programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: E7D635DE-CDAB-449A-80C5-EC89610A5A5A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

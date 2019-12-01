@@ -1,12 +1,12 @@
----
-title: Link user stories, issues, bugs, and other work items  
+﻿---
+title: Link user stories, issues, and other work items
 titleSuffix: Azure Boards
 description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
 ms.custom: seodec18  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -49,7 +49,9 @@ For a list of all link types and supported link relationships, see [Linking, tra
 [!INCLUDE [temp](../_shared/prerequisites.md)] 
 
 <a id="link"> </a>  
+
 ## Link several work items 
+
 ::: moniker range=">= tfs-2018"
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
@@ -84,7 +86,8 @@ For a list of all link types and supported link relationships, see [Linking, tra
    ::: moniker-end
 
 <a id="link-existing"> </a>  
-## Link to an existing work item    
+
+## Link to an existing work item  
 
 When you link work items, you select a link type. In general, use the following link types as indicated. To learn more about each link type, see [Link type reference](../queries/link-type-reference.md). 
 
@@ -131,7 +134,7 @@ If you are working from the Query Results page, you'll need to bulk save the wor
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-> ![Query results page, multi-select items, bulk save modified work items](_img/bulk-modify-link-existing-bulk-save-ts.png) 
+![Query results page, multi-select items, bulk save modified work items](_img/bulk-modify-link-existing-bulk-save-ts.png) 
 ::: moniker-end 
 
 
@@ -151,7 +154,7 @@ You'll need to bulk save the work items you've modified.
 
 Here, we have selected to add a link to the selected work items.  
 
-0. Specify the link type, work item type, and title of the new work item. Choose **OK**.  
+1. Specify the link type, work item type, and title of the new work item. Choose **OK**.  
     ::: moniker range=">= tfs-2018"
     <img src="_img/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
     ::: moniker-end
@@ -159,17 +162,18 @@ Here, we have selected to add a link to the selected work items.
     <img src="_img/bulk-modify-link-new-ts.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" />
     ::: moniker-end
 
-1. A work item of the type selected opens. Enter additional information and save the work item.
+2. A work item of the type selected opens. Enter additional information and save the work item.
     ::: moniker range=">= tfs-2017"
     > [!div class="mx-imgBorder"]  
     > ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
     ::: moniker-end
-2. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
+3. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
 
 
 ::: moniker range="azure-devops"
 <a id="remote-link"> </a>  
+
 ## Link to a remote work item 
 
 You can link work items to objects defined in other Azure DevOps organizations as long as both organizations use the same Azure Active Directory to manage users. 
@@ -197,6 +201,7 @@ The following image shows an example of two remote links, indicated by the ![ ](
 
 
 ::: moniker range=">= tfs-2017"
+
 ## Link several work items to a new git branch 
 
 You can add a new git branch and link them to existing work items at the same time. 
@@ -219,7 +224,9 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="find-items"> </a>  
+
 ## Find work items to link to   
+
 From the Add link dialog you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../queries/using-queries.md) that you want to use. 
 
 1.  From the Add link dialog, choose the &hellip; context menu or **Browse** button (Visual Studio) to open the following dialog. 
@@ -236,18 +243,17 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
         > [!NOTE]
         >  To minimize the time required to run the query, narrow the filter criteria of the search.  
 
-6.  Click the **Find** button.
+1.  Click the **Find** button.
 
      Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
-    <!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
-
-        To expand or collapse a tree view list, choose the + or signs.    
+    <!-- You can change the display of the work items that are listed by using one of the following user interface controls:  
+      To expand or collapse a tree view list, choose the + or signs.    
       To resize a column, point your cursor at the edge of a column header and drag it to a new location.    
       To sort on a column field, choose the column title.    
       To move a column field, choose the column title and drag to another location. -->  
 
-7.  In the list of returned work items, select one or more work items.   
+1.  In the list of returned work items, select one or more work items.   
 
     -   From the web portal: To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key.   
 

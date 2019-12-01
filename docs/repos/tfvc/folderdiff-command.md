@@ -5,7 +5,7 @@ description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -48,11 +48,11 @@ To use the **folderdiff** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
+<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
-<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN</i>\<i>UserName</i> or <i>UserName.</i></p></td>
+<td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <i>DOMAIN\UserName</i> or <i>UserName.</i></p></td>
 </tr>
 </tbody>
 </table>

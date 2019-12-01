@@ -26,7 +26,7 @@ A new [notification type](#subscribe-to-package-update-notifications) and better
 
 ### Work
 
-- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-work-in-the-area-paths-of-a-team-with-the-new-teamareas-macro)
+- [Query work in the Area Paths of a Team with the new @TeamAreas macro](#query-macro)
 
 ### Build and Release
 
@@ -72,6 +72,8 @@ However, with this Update, the full phrase is returned and highlighted.
 > ![result including full search term](_img/133_02.png)
 
 ## Work
+
+<a id="query-macro" />
 
 ### Query work in the Area Paths of a Team with the new @TeamAreas macro
 
@@ -168,7 +170,7 @@ When you want to create a link to another wiki page, you can just type the stand
 > [!div class="mx-imgBorder"]
 > ![autosuggestion wiki page link](_img/132_07.png)
 
-This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19042909-enable-free-linking-in-the-wiki).
+This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19042909-enable-free-linking-in-the-wiki).
 
 ### Filter search results by Wiki name
 
@@ -186,7 +188,7 @@ Now you’ll be able to move your VSTS account between Azure subscriptions or re
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

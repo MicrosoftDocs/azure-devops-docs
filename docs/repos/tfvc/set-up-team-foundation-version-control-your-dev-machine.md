@@ -1,11 +1,11 @@
----
-title: Set up Team Foundation Version Control on your dev machine
+﻿---
+title: Team Foundation Version Control on your dev machine
 titleSuffix: Azure Repos
 description: Set up Team Foundation Version Control on your dev machine
 ms.assetid: 15428962-f5fc-4aa4-81dc-7d53a8e3a00c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -76,8 +76,8 @@ When your team decides to branch the codebase, you can convert the Main folder t
 If you've got an idea for a new app, you can use version control from the start. Create a new code project (Keyboard: Ctrl + Shift + N), and add it to TFVC version control:
 
 ![Create a new solution under version control](_img/set-up-team-foundation-version-control-your-dev-machine/IC696635.png)
->**Tip:**
-We suggest that you put your new project in **c:\Users\***YourName***\Source\Workspaces\**.
+> [!TIP]
+> We suggest that you put your new project in **c:\Users\\**<em>YourName</em>**\Source\Workspaces\\**.
 
 When the **Choose Source Control** dialog box appears, choose **Team Foundation Version Control**.
 

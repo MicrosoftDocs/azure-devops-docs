@@ -1,6 +1,6 @@
 ```YAML
 # Chef Knife
-# Run Scripts with knife commands on your chef workstation
+# Run scripts with Knife commands on your Chef workstation
 - task: ChefKnife@1
   inputs:
     connectedServiceName: 

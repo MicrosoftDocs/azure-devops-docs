@@ -6,7 +6,7 @@ description: Learn how to share code within a Git repo and new project
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 03/26/2019
@@ -131,7 +131,3 @@ In the following steps, we make a change to the files on your computer, commit t
 > [!div class="nextstepaction"]
 > [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 
-## Related articles
-
-- [Plan & track work](plan-track-work.md)
-- [Learn more about working with a Git repo](../repos/git/index.md).

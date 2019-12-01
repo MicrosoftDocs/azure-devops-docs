@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 034/05/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 # Add members to projects
@@ -19,14 +19,10 @@ monikerRange: 'azure-devops'
 
 Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Azure DevOps Server, see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
-When you add members to projects, one of the following permissions is automatically assigned:
+When you add members to projects and you don't have billing set up, [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) is automatically assigned, until you run out of seats available.
+When you add members to projects and you do have billing set up, [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) is assigned only if your [default access level](../security/access-levels.md) is set to Basic. Otherwise, project members are assigned Stakeholder permissions.
 
-* [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if you have seats available.
-* [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
-if you *don't* have available seats.
-
-When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features are provided with specific extensions, such as [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), they get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users.md). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
@@ -34,24 +30,24 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 ## Prerequisites
 
 * If you don't have a project yet, first [create your project](../projects/connect-to-projects.md).
-* To add members to projects, you need [*project administrator*](../security/set-project-collection-level-permissions.md), [*project collection administrator*, or *organization owner*](faq-add-team-members.md#find-pca-owner) permissions.
+* To add members to projects, you need [*Project Administrator*](../security/set-project-collection-level-permissions.md), [*Project Collection Administrator*, or *organization Owner*](faq-add-team-members.md#find-pca-owner) permissions.
 * If your new members don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
 ## Add members to your project
 
-1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *Project Administrator*, *Project Collection Administrator*, or *organization Owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the landing page, which is your Projects page, select  ![gear icon](../../_img/icons/gear-icon.png) **Project settings**.
+2. Open your project, and then select **Project settings > Teams**. Then, select your project.
 
-   ![The Projects page](../../_shared/_img/settings/open-project-settings-vert-brn.png)
+   ![The Projects page](_img/_shared/open-project-settings.png)
 
-3. Invite members to your project.
+3. Select **Add** to invite members to your project.
 
    ![On your project home page, select Invite a friend](_img/add-team-members/add-member-to-project.png)
 
-4. Add users or groups.
+4. Add users or groups, and then choose **Save**.
 
     ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
 

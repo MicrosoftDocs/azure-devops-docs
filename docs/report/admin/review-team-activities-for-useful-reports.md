@@ -6,7 +6,7 @@ ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -45,7 +45,7 @@ Build reports track the quality of software under development. By defining tests
 <ol>
 <li><a href="../../pipelines/agents/agents.md" data-raw-source="[Configure a build system](../../pipelines/agents/agents.md)">Configure a build system</a></li>
 <li><a href="../../pipelines/get-started-designer.md" data-raw-source="[Get started with CI/CD](../../pipelines/get-started-designer.md)">Get started with CI/CD</a></li>
-<li><a href="../../pipelines/languages/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/languages/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
+<li><a href="../../pipelines/ecosystems/dotnet-core.md#run-your-tests" data-raw-source="[Run tests in your build process](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)">Run tests in your build process</a></li>
 <li>(Optional) <a href="https://msdn.microsoft.com/library/ms181734.aspx" data-raw-source="[Rate completed builds](https://msdn.microsoft.com/library/ms181734.aspx)">Rate completed builds</a> to populate the Build Quality dimension.</li>
 </ol>
 </td>

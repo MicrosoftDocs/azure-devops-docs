@@ -1,11 +1,11 @@
----
-title: Use the Msdn Command to display a help topic from the MSDN library 
+﻿---
+title: Use the Msdn Command to display a help topic 
 titleSuffix: Azure Repos
 description: Display a help topic from the MSDN library using the Msdn Command
 ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

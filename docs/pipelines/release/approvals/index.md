@@ -6,9 +6,9 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ronai
-author: RoopeshNair
+ms.manager: mijacobs
+ms.author: shashban
+author: shashankbarsin
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---

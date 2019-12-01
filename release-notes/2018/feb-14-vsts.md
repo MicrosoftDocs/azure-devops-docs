@@ -6,7 +6,7 @@ ms.date: 2/14/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 description: In the Sprint 130 Update of Visual Studio Team Services (VSTS), we continue to improve our integration with tools and services that help you establish a full DevOps pipeline.
 hide_comments: true
 ---
@@ -54,7 +54,7 @@ When discussions about work items or pull requests include several people&#8212;
 
 VSTS Symbol Server, which enables you to host and share symbols with your organization, is now generally available. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/azure/devops/pipelines/symbols/) for more information.
 
-This feature was prioritized based on a top [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
+This feature was prioritized based on a top [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2564053-treat-tfs-as-an-enterprise-symbol-server).
 
 ### Filter branches for GitHub artifacts
 
@@ -117,7 +117,7 @@ Searching for a task in the build or release definition editor now lists relevan
 
 ### Seamlessly use public packages using upstream sources
 
-Upstream sources for [nuget.org](http://nuget.org) and [npmjs.com](https://npmjs.com) are now generally available. Benefits include the ability to manage (unlist, deprecate, unpublish, delete, etc.) packages saved from upstream sources as well as guaranteed saving of every upstream package you use.
+Upstream sources for [nuget.org](https://nuget.org) and [npmjs.com](https://npmjs.com) are now generally available. Benefits include the ability to manage (unlist, deprecate, unpublish, delete, etc.) packages saved from upstream sources as well as guaranteed saving of every upstream package you use.
 
 For now, these benefits apply only to feeds created after this announcement, unless you previously enabled the upstream sources preview toggle in your **Preview features** panel. If you enabled the preview toggle, any feed created after you enabled the toggle can use these benefits. In a later Update, you’ll be able to upgrade older feeds to take advantage of these improvements.
 
@@ -170,7 +170,7 @@ The Graph REST API resources allow developers to write applications that manage 
 
 ### Leave account
 
-In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you are no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there is now an option to leave the account. This feature was prioritized based on a [suggestion](http://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9581676-allow-a-user-to-remove-them-self-from-a-visual-stu).
+In the past, only account owners or administrators could remove users from an account. Now you can leave an account that you are no longer involved in on your own. To leave an account, navigate to your profile page and locate the account you wish to leave within your account list. Underneath the account actions section, there is now an option to leave the account. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/9581676-allow-a-user-to-remove-them-self-from-a-visual-stu).
 
 > [!div class="mx-imgBorder"]
 > ![Leave account](_img/130_06.png)
@@ -178,7 +178,7 @@ In the past, only account owners or administrators could remove users from an ac
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
 > [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)

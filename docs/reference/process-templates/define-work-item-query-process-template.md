@@ -5,7 +5,7 @@ description: Use Team Explorer to create a work item query, save as a .wiq file,
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2e035f4a-c542-487f-96f9-d730e4700af2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

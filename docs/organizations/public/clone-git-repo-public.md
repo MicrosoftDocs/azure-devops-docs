@@ -5,7 +5,7 @@ description: Create a local copy of a repo using Visual Studio or command line c
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual
@@ -61,7 +61,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 ### Prerequisites
 
-* Ensure you have installed the [Git command line package](http://git-scm.com/download) for your platform as well as the 
+* Ensure you have installed the [Git command line package](https://git-scm.com/download) for your platform as well as the 
 right [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.

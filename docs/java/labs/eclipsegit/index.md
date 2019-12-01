@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 05/13/2019
@@ -125,7 +125,8 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
     ![MyShuttle project](../_img/eclipsegit/eclipse-myshuttle.png)
 
-   > **Note**: The project will not currently compile and there may be build errors temporarily, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
+    > [!NOTE]
+    > The project will not currently compile and there may be build errors temporarily, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
 
 ## Clone MyShuttleCalc from Azure DevOps Services with Eclipse
 

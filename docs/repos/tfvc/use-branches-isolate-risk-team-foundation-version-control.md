@@ -1,11 +1,11 @@
----
+﻿---
 title: Use branches to isolate risk in Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use branches to isolate risk in Team Foundation Version Control
 ms.assetid: d74122a4-6a3d-45fb-82b7-3c1494ed4afd
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -66,4 +66,4 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 
  [Branch strategically](branch-strategically.md) 
 
-[Visual Studio TFS Branching Guide](http://go.microsoft.com/fwlink/?LinkId=191400)
+[Visual Studio TFS Branching Guide](https://go.microsoft.com/fwlink/?LinkId=191400)

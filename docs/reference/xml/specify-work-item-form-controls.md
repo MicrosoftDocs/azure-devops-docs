@@ -5,7 +5,7 @@ description: Provides a quick reference to the Control element, its child elemen
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'
@@ -122,7 +122,7 @@ Label="Preferred Start Time:" LabelPosition="Left" Format="Time" />
 |Attribute|Description|  
 |---------------|-----------------|  
 |`Format`|Specifies the format for the date-time field that corresponds to one value of the DateTimePickerFormat enum. Valid values are as follows: `Custom`, `Long`, `Short`, `Time`.<br /><br /> When you specify `Custom`, you must also set the `CustomFormat` attribute.|  
-|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](http://go.microsoft.com/fwlink/?LinkId=148757).|  
+|`CustomFormat`|Specifies the custom format that is used for the date-time field that corresponds to the syntax that is defined for the DateTimePicker.CustomFormat property. For example:<br /><br /> Format="Custom"<br /><br /> CustomFormat = "MMM dd, 'of the year' yyyy"<br /><br /> For more information, see the Microsoft Web site: [DateTimePicker.CustomFormat Property](https://go.microsoft.com/fwlink/?LinkId=148757).|  
 
 
 ## Add a rich-text (HTML) field  

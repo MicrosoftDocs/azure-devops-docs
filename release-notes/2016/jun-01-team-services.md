@@ -3,10 +3,10 @@ title: SSH connections to Git repos, Docker integration, and more – June 1
 description: VSTS release notes for June 1 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 97422998-d25a-4e10-a77a-28cca7641dd4
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -114,7 +114,7 @@ If you are a TeamCity user, you can now consume TeamCity builds as artifacts in 
 
 ### Release Management Client SDK
 
-If you need to work with Release Management REST APIs, we now have a [C# client SDK](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) available as a nuget package. A sample usage can be found here: [http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx)
+If you need to work with Release Management REST APIs, we now have a [C# client SDK](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/) available as a nuget package. A sample usage can be found here: [https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx)
 
 ## Dashboards
 

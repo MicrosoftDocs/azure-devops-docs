@@ -6,10 +6,10 @@ ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/05/2019
+ms.date: 6/11/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -86,8 +86,8 @@ Azure Pipelines runs the following steps as part of every deployment:
 
 ::: moniker range="< azure-devops-2019"
 
-Release pipelines and build pipelines have separate designer interfaces
-(separate UIs). The main differences in the pipelines are the support in release
+Release pipelines and build pipelines have separate UIs.
+The main differences in the pipelines are the support in release
 pipelines for different types of triggers, and the support for approvals and gates.
 
 ::: moniker-end
@@ -98,7 +98,7 @@ You start using Azure Pipelines releases by authoring a release pipeline for you
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Azure Pipelines releases can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Azure Pipelines build, Jenkins, or Team City.
 
-You define the **release pipeline** using [stages](../process/stages.md), and restrict deployments into or out of an stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release pipeline** using [stages](../process/stages.md), and restrict deployments into or out of a stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
@@ -111,7 +111,7 @@ and then forked to two QA stages in parallel. If the deployment succeeds in both
 
 ::: moniker range=">= tfs-2017"
 
-An example of how deployment automation can be modeled within an stage is shown below:
+An example of how deployment automation can be modeled within a stage is shown below:
 
 ![Artifacts in a pipeline and release](_img/definition-02.png)
 
@@ -134,8 +134,17 @@ After all those deployments are successful, a second job is used to switch traff
     
 * **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
 
+
 <a name="draftrelease"></a>
 ## What is a draft release?
+
+::: moniker range="azure-devops"
+
+Draft releases are deprecated in Azure Pipelines because you can change variables while you are [creating the release](#editvariables).
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 Creating a draft release allows you to edit some of the settings for the release and the tasks,
 depending on your role permissions, before starting the deployment.
@@ -153,6 +162,8 @@ After you finish editing the draft release, choose **Start** from the draft rele
 
 ![Start a draft release](_img/what-is-release-management/start-draft.png)
 
+::: moniker-end
+
 <a name="editvariables"></a>
 ## How do I specify variables I want to edit when a release is created?
 
@@ -161,7 +172,7 @@ you want to be able to edit when a release is created and queued.
 
 ![Specifying variables to be edited when a release is created and queued](_img/what-is-release-management/define-release-edit-variables.png)
 
-Then, when you create and queue a new release, you can edit the values for these variables.
+Then, when you create a new release, you can edit the values for these variables.
 
 ![Editing variables when a release is created and queued](_img/what-is-release-management/populate-release-edit-variables.png)
 
@@ -183,7 +194,7 @@ This improves the traceability from code commit to deployment.
 The deployment status is displayed in the following sections of Azure Repos:
 
 * **Files**: Indicates the status of the latest deployment for the selected branch.
-* **Commits**: Indicates the deployment status of the each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
+* **Commits**: Indicates the deployment status for each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
 * **Branches**: Indicates the status of the latest deployment for each branch.
 
 If a commit is deployed to multiple release pipelines (with multiple stages), each has an entry in the badge
@@ -192,9 +203,10 @@ posted for all stages. However, you can selectively choose the stages for which 
 displayed in the status badge (for example, show only the production stage). Your team members can click the
 status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
-**Note**: If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
-automatically publish the deployment status to your repository. However, you can still use the
-"Enable the Deployment status badge" option described below to show deployment status within your version control system.
+> [!NOTE]
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
+> automatically publish the deployment status to your repository. However, you can still use the
+> "Enable the Deployment status badge" option described below to show deployment status within your version control system.
 
 **Report deployment status to Work**
 

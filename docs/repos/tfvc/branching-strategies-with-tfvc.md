@@ -5,7 +5,7 @@ description: Learn about branching strategies for Team Foundation Version Contro
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
 ms.prod: devops
 ms.technology: devops-code-tfvc 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 04/25/2018
 ms.author: sdanie
 author: wpschaub
@@ -106,11 +106,11 @@ The Code Promotion strategy feels like a relic from the waterfall development er
 
 ### When merging **dev** to **main** branch, why are no changes detected?
 
-You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging development branch to main: there were no changes to merge](http://stackoverflow.com/questions/27590388/merging-development-branch-to-main-there-were-no-changes-to-merge) for details.
+You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging development branch to main: there were no changes to merge](https://stackoverflow.com/questions/27590388/merging-development-branch-to-main-there-were-no-changes-to-merge) for details.
 
 ### Are there similarities between TFVC and Git branch strategies?
 
-The TFVC Feature Isolation branching strategy is similar to the Git [topic branches](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches).
+The TFVC Feature Isolation branching strategy is similar to the Git [topic branches](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches).
 
 > Authors: Jesse Houwing, Marcus Fernandez, Mike Fourie, and Willy Schaub from the ALM | DevOps Rangers. You can contact them [here](https://github.com/ALM-Rangers/Guidance).
  

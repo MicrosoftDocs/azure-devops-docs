@@ -1,12 +1,12 @@
----
-title: Troubleshoot GitHub repository connection to a project in Azure DevOps Services  
+﻿---
+title: Troubleshoot GitHub repo connection to a project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project  
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -60,7 +60,7 @@ To resolve the problem, consider the following:
   - The Azure Boards application had it's access denied for one of the repositories.
   - GitHub might be unavailable/unreachable. This could be due to an outage in either service or an infrastructure/network issue on-prem. You can check service status from the following links:
       - [GitHub](https://status.github.com)  
-      - [Azure Devops](https://status.dev.azure.com/)
+      - [Azure DevOps](https://status.dev.azure.com/)
 
 	To resolve the first issue, delete and recreate the connection to the GitHub repository. This will cause GitHub to prompt to reauthorize Azure Boards.   
 
@@ -112,6 +112,22 @@ When updated, the section should appear as shown.
 >    </Control>  
 > </Group>  
 > ```
+
+<a id="ghe-dataimport" />
+
+## Resolve broken GitHub Enterprise Server connection after data import
+
+If you have migrated from Azure DevOps Server to Azure DevOps Services with an existing GitHub Enterprise Server connection, your existing connection will not work as expected. Work item mentions within GitHub may be delayed or never show up in Azure DevOps Services. This problem occurs because the callback url associated with GitHub is no longer valid. 
+
+To resolve the problem, consider the following:
+
+- **Remove and re-create the connection**:
+  Remove and re-create the connection to the GitHub Enterprise Server repository. Follow the sequence of steps provided in [Connect from Azure Boards](connect-to-github.md#github-ent-oauth-services) documentation.
+
+- **Fix the webhook url**:
+  Go to GitHub's repository settings page and edit the webhook url to point out to the migrated Azure DevOps Services organization url: ```https://dev.azure.com/{OrganizationName}/_apis/work/events?api-version=5.2-preview```
+
+  
 
 
 
