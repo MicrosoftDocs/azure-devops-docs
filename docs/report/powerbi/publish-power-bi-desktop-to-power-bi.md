@@ -1,12 +1,12 @@
 ---
 title: Publish a Power BI Desktop file to PowerBI.com  
 titleSuffix: Azure DevOps 
-description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics service for Azure DevOps 
+description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: C03A04EC-F011-4043-A38E-5C5394F777CE 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>=azure-devops-2019'
 author: KathrynEE
@@ -19,7 +19,7 @@ ms.date: 11/01/2018
 
 Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and the associated datasets, measures and charts, you can share those with others by creating a dashboard on PowerBI.com. This article shows you how.   
 
-1. If using an [Analytics View](what-are-analytics-views.md) , verify that the view is Shared and not Private.
+1. If using an [Analytics View](what-are-analytics-views.md), verify that the view is Shared and not Private.
 
 2. Open the **Power BI Desktop** file with your data.  
 
@@ -43,7 +43,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 9. Choose **Schedule Refresh**.  
 
-10. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
+11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
       <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
@@ -70,7 +70,7 @@ At this point, the data will update on your scheduled basis using the credential
 
 ## Related articles
 
-- [Analytics service](index.md)  
+- [About Power BI integration](overview.md)  
 - [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  

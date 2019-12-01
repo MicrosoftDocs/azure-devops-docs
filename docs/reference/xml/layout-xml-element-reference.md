@@ -5,7 +5,7 @@ description: Use the Layout element to define how the elements on the work item 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

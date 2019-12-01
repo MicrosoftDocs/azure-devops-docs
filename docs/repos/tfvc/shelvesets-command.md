@@ -5,7 +5,7 @@ description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -26,6 +26,7 @@ To use the **shelvesets** command, you must the have **Read** permission and the
 
     tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
 ## Parameters<table>
+
 |**Argument**|**Description**|
 |---|---|
 |*ownername*|Provides a value such as * or DOMAIN\john to the **/owner** option.|

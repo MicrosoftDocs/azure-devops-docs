@@ -5,10 +5,10 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
-ms.date: 02/27/2018
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -87,7 +87,7 @@ In the dialog box:
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![New feed dialog box](_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+>![New feed dialog box](_shared/_img/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -109,43 +109,61 @@ All Azure Artifacts feeds require authentication. You'll need to store credentia
 
 We recommend that you use two .npmrc files:
 
-* One .npmrc file should be at the root of your Git repo, adjacent to your project's package.json file. It should contain a "registry" line for your feed. It should not contain credentials, because it will be checked into Git. You can find the registry information for your feed from the **Connect to feed** button:
+1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
 
-  1. From **Azure Artifacts**, select **Connect to feed**.
+   1. From your **Artifacts** page, click _Connect to Feed_
 
-     ::: moniker range=">= azure-devops-2019"
+      ::: moniker range=">= azure-devops-2019"
+    
+      > [!div class="mx-imgBorder"] 
+      >![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed-azure-devops-newnav.png)
+      > 
 
-     > [!div class="mx-imgBorder"] 
-     >![Connect to feed button on the upper right of the page](_shared/_img/connect-to-feed-azure-devops-newnav.png)
+      ::: moniker-end
 
-     ::: moniker-end
+      ::: moniker range="<= tfs-2018"
 
-     ::: moniker range="<= tfs-2018"
+      ![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed.png)
 
-     ![Connect to feed button on the upper right of the page](_shared/_img/connect-to-feed.png)
+      ::: moniker-end
 
-     ::: moniker-end
+      ::: moniker range=">= tfs-2017 < azure-devops"
 
-  1. Copy the "registry" text:
+      ![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed.png)
 
-     ::: moniker range=">= azure-devops-2019"
+      ::: moniker-end
 
-     > [!div class="mx-imgBorder"] 
-     >![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
+   3. Select **npm**.
 
-     ::: moniker-end
+   4. Select **Get the tools** in the top right corner
 
-     ::: moniker range="<= tfs-2018"
+   5. Follow steps **1** and **2** to download Node.js, npm and the artifacts credential provider.
 
-     ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+   6. Select **Windows** if you are on a Windows Machine, or **Other** if you are on MacOs or Linux.
+   
+   7. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
-     ::: moniker-end
+      ::: moniker range=">= azure-devops-2019"
 
-  1. From your **Packages** page, select **Connect to feed**.
+      > [!div class="mx-imgBorder"] 
+      >![Connect to feed from Azure Artifacts](_shared/_img/npm-azure-devops-newnav.png)
+      > 
 
-     ![Connect to feed button on the upper right of the page](_shared/_img/connect-to-feed.png)
+      ::: moniker-end
 
-* On your development machine, you also have an .npmrc file in $home for Linux or Mac systems, or $env.HOME for Windows systems. This .npmrc file should contain credentials for all of the registries that you need to connect to. The npm client will look at your project's .npmrc file, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc. The next section will discuss credential acquisition.
+      ::: moniker range="<= tfs-2018"
+
+      ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+
+      ::: moniker-end
+
+      ::: moniker range=">= tfs-2017 < azure-devops"
+
+      ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+
+      ::: moniker-end
+        
+2. On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
 This enables you to share the project's .npmrc file with the whole team while keeping your credentials secure.
 
@@ -171,171 +189,6 @@ If you're developing on Windows, we recommend that you use `vsts-npm-auth` to fe
 If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recommend generating a token in the following manner for your $HOME/.npmrc file.
 
 [!INCLUDE [](./_shared/npm/npmrc.md)]
-
-### Set up authentication in a build task
-
-There are two options for setting up authentication in a build task:
-* [Without a task runner](#without-a-task-runner)
-* [With a task runner (for example, make Gulp work)](#with-a-task-runner-for-example-make-gulp-work)
-
-#### Without a task runner
-To set up npm authentication in a build task _without_ a task runner, use the following directions:
-
-1. Add a build pipeline in Azure DevOps Services under the **Pipelines** page.
-
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![builds-tab-mine-new-button](_shared/_img/build-definition/add-pipeline-azure-devops-newnav.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
-
-   ::: moniker-end
-
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
-
-1. Select **Empty job** at the top of the form.
-
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
-
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![Plus sign](_shared/_img/build-definition/add-task-build-definition-azure-devops-newnav.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![Plus sign](_shared/_img/build-definition/add-task-build-definition.png)
-
-   ::: moniker-end
-
-1. Select **Package** or search for **npm** on the search bar, select **npm**, and select **Add**:
-
-   ![Package tab](_shared/_img/build-definition/build-definition-npm-task.png)
-
-1. Select the **npm install** task under **Agent job 1**:
-
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![npm install task](_shared/_img/build-definition/build-definition-npm-install-azure-devops-newnav.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![npm install task](_shared/_img/build-definition/build-definition-npm-install.png)
-
-   ::: moniker-end
-
-1. Browse to and select your folder under **Working folder with package.json**:
-
-   ![Working folder](_shared/_img/build-definition/build-definition-working-folder.png)
-
-1. Expand **Custom registries and authentication**. Here you have a few options: 
-
-   * **Registries in my .npmrc**
-
-     ![Registries in my .npmrc option](_shared/_img/build-definition/registries-in-my-npmrc.png)
-
-     > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
-
-   * **Registry I select here**
-
-     ![Registry I select here option](_shared/_img/build-definition/registry-i-select-here.png)
-
-     When you choose this option, the task creates a temporary .npmrc file with credentials for the registry you've selected. The temporary file overrides the project's .npmrc file. This is useful when you want to publish to a specific feed. 
-
-
-#### With a task runner (for example, make Gulp work)
-
-When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This injects credentials into your project's .npmrc file and persists them for the lifespan of the build. This allows subsequent build steps to use the credentials in the .npmrc file.
-
-1. Add a build pipeline in Azure DevOps Services under the **Pipelines** page.
-    
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![builds-tab-mine-new-button](../pipelines/_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
-
-   ::: moniker-end
-
-1. Choose your source **Project**, **Repository**, and **Default branch**, and select **Continue**.
-
-1. Select **Empty process** at the top of the form.
-
-1. Add a task to **Agent job 1** of your build pipeline by selecting the plus sign (**+**):
-
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![Plus sign](_shared/_img/build-definition/add-task-build-definition-azure-devops-newnav.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![Plus sign](_shared/_img/build-definition/add-task-build-definition.png)
-
-   ::: moniker-end
-
-1. Select **Package** or search for **npm** in the search bar, select **npm Authenticate**, and select **Add**:
-
-   ![Package tab](_shared/_img/build-definition/build-definition-npm-auth-task.png)
-
-1. Select the **npm Authenticate** task under **Agent job 1**:
-
-   ::: moniker range=">= azure-devops-2019"
-
-   > [!div class="mx-imgBorder"] 
-   > ![npm Authenticate task](_shared/_img/build-definition/build-definition-npm-auth-task-phase-azure-devops-newnav.png)
-
-   ::: moniker-end
-
-   ::: moniker range="<= tfs-2018"
-
-   ![npm Authenticate task](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
-
-   ::: moniker-end
-
-1. Browse to and select your file under **.npmrc file to authenticate**:
-
-   ![Selecting the .npmrc file](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
-
-   > You can choose credentials to authenticate to outside your current organization or collection by setting up [service connections](../pipelines/library/service-endpoints.md#sep-npm).
-
-1. After setting up your **npm Authenticate** task, you can add other build tasks for your task runner, like **Gulp**.
-
-## Use packages from npmjs.com
-
-In addition to packages that you publish, you can use packages from [www.npmjs.com](https://www.npmjs.com/) through this feed via *upstream sources*. Because this feed was created with public registries enabled (see [Create a feed](#create-a-feed)), you should be able to use packages from an upstream source. To try it, run an `npm install` command (for example, `npm install lodash`) in a shell opened to your project's folder. Learn more about upstream sources on the [upstream sources concepts page](concepts/upstream-sources.md).
-
-You can choose to enable or disable upstream sources on the **Settings** > **Upstream sources** tab:
-
-::: moniker range=">= azure-devops-2019"
-
-> [!div class="mx-imgBorder"] 
-> ![Upstream sources](_shared/_img/upstream-sources-settings-azure-devops-newnav.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-![Upstream sources](_shared/_img/upstream-sources-settings.png)
-
-::: moniker-end
 
 ## Build your project
 

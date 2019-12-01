@@ -1,17 +1,17 @@
 ---
-title: Markdown syntax for files, widgets, and wikis in Azure DevOps
+title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2015'
-ms.date: 05/10/2019
+ms.date: 09/19/2019
 ---
 
 # Syntax guidance for basic Markdown usage
@@ -20,7 +20,7 @@ ms.date: 05/10/2019
 
 [!INCLUDE [version-selector](../../_shared/version-selector.md)]
 
-Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
+Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
 Having the right guidance at the right time is critical to success. Use [Markdown](https://en.wikipedia.org/wiki/Markdown) to add rich formatting, tables, and images to your project pages, README files, dashboards, and pull request comments.
 
@@ -76,7 +76,13 @@ You can provide guidance in the following areas using Markdown:
 
 ::: moniker-end
 
+> [!IMPORTANT]  
+> Not all Markdown syntax is supported across all features. Each section in this article identifies the features the syntax is supported with the **Supported in** line.
+
+
 ## Headers
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -96,6 +102,8 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 <img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
 ## Paragraphs and line breaks
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
@@ -142,7 +150,9 @@ Add two spaces prior to the end of the line.
 
 Space is added in between paragraphs.
 
-## Block quotes
+## Blockquotes
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 Quote previous comments or text to set the context for your comment or text.
 
@@ -163,6 +173,8 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 ![Quoting in Markdown](_img/markdown-guidance/markdown_quote2.jpg)
 
 ## Horizontal rules
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -185,7 +197,9 @@ above
 
 below    
 
-## Emphasis (bold, italics, strikethrough)  
+## Emphasis (bold, italics, strikethrough) 
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)] 
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
@@ -196,6 +210,7 @@ You can emphasize text by applying bold, italics, or strikethrough to characters
 Combine these elements to apply emphasis to text.
 
 ::: moniker range=">= azure-devops-2019"
+
 > [!NOTE]  
 > There is no Markdown syntax that supports underlining text. Within a wiki page, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
 
@@ -203,50 +218,80 @@ Combine these elements to apply emphasis to text.
 
 ::: moniker range="tfs-2018"
 
-> [!NOTE]  
-> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text`</u>.
-> 
+> [!NOTE]
+> There is no Markdown syntax that supports underlining text. Within a wiki page in TFS 2018.2 and later versions, you can use the HTML `<u>` tag to generate underlined text. For example, `<u>underlined text</u>` yields <u>underlined text</u>.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-> [!NOTE]  
+> [!NOTE]
 > There is no Markdown syntax that supports underlining text.
-> 
+
 ::: moniker-end
 
 **Example:**
 
 <pre>
-Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~
+Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~  
 **_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
 </pre>
 
 <br/>
+
 **Result:**  
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>
+
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>  
 **_Bold, italicized text_**
 **~~Bold, strike-through text~~**  
 
+
+::: moniker range=">= tfs-2017"
+
 ## Code highlighting
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+#### Supported in: Pull Requests | README files | Wikis
+
+::: moniker-end
+
+
+::: moniker range="tfs-2017"
+
+#### Supported in:  Pull Requests | README files
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Highlight suggested code segments using code highlight blocks.
 To indicate a span of code, wrap it with three backtick quotes (<code>&#96;&#96;&#96;</code>) on a new line at both the start and end of the block. To indicate code inline, wrap it with one backtick quote (<code>&#96;</code>).
 
+> [!NOTE] 
+> Code highlighting entered within the Markdown widget renders code as plain preformatted text.
+
+
 **Example:**
 
 <pre>&#96;&#96;&#96;
-$ sudo npm install vsoagent-installer -g  
+sudo npm install vsoagent-installer -g  
 &#96;&#96;&#96;
 </pre>  
 
 <br/>
+
 **Result:**
+
 ```
-$ sudo npm install vsoagent-installer -g
+sudo npm install vsoagent-installer -g
 ```
+
 <br/>
+
 **Example:**
 
 <pre>
@@ -254,13 +299,16 @@ To install the Microsoft Cross Platform Build & Release Agent, run the following
 </pre>
 
 <br/>
+
 **Result:**
-To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer`.  
+
+To install the Microsoft Cross Platform Build & Release Agent run the following command: `$ sudo npm install vsoagent-installer -g`.  
 
 <br/>
+
 Within a Markdown file, text with four spaces at the beginning of the line automatically converts to a code block.  
 
-Set a language identifier for the code block to enable syntax highlighting for any of the [supported languages](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
+Set a language identifier for the code block to enable syntax highlighting for any of the supported languages in [highlightjs](https://github.com/highlightjs/highlight.js/tree/9.10.0/src/languages), version v9.10.0.
 
 <pre>
 ``` language
@@ -269,6 +317,7 @@ code
 </pre>
 
 <br/>
+
 **Additional examples:**
 
 <pre>
@@ -282,6 +331,7 @@ const count = records.length;
 ```
 
 <br/>
+
 <pre>
 ``` csharp
 Console.WriteLine("Hello, World!");
@@ -292,7 +342,11 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hello, World!");
 ```
 
+::: moniker-end
+
 ## Tables
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
 a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
@@ -314,7 +368,7 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 ```
 
-<br/>
+
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -323,6 +377,9 @@ a clear name to description mapping. You can format tables in pull requests, wik
 | Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
 ## Lists
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
 
@@ -346,11 +403,11 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Example:**
 
-<pre>
+```
 - Item 1
 - Item 2
 - Item 3
-</pre>
+```
 
 **Result:**
 
@@ -361,7 +418,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 ### Nested lists
 
 **Example:**  
-<pre>
+```
 1. First item.
    - Item 1
    - Item 2
@@ -370,22 +427,25 @@ Ordered lists start with a number followed by a period for each list item. Unord
    - Nested item 1
    - Nested item 2
    - Nested item 3 
-</pre>
+```
 
 **Result:**  
 
 1. First item.
-	- Item 1
-	- Item 2
-	- Item 3
+    - Item 1
+    - Item 2
+    - Item 3
 2. Second item.
-	- Nested item 1
-	- Nested item 2
-	- Nested item 3
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 <a id="link-work-items" />
+
 ## Links
+
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
 
 In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
 
@@ -396,38 +456,38 @@ In Markdown files and widgets, you can set text hyperlinks for your URL using th
 ```markdown
 [Link Text](Link URL)
 ```
+
 When linking to another Markdown page in the same Git or TFVC repository, the link target can be a relative path or an absolute path in the repository.  
 
 **Supported links for Welcome pages:**
 
-<ul>
-<li>Relative path: ```[text to display](/target.md)```  </li>
-<li>Absolute path in Git: ```[text to display](/folder/target.md)``` </li>
-<li>Absolute path in TFVC: ```[text to display]($/project/folder/target.md)```</li>
-<li>URL: ```[text to display](http://address.com)```  </li>
-</ul>
+- Relative path: `[text to display](/target.md)` 
+- Absolute path in Git: `[text to display](/folder/target.md)`
+- Absolute path in TFVC: `[text to display]($/project/folder/target.md)`
+- URL: `[text to display](http://address.com)`
 
 **Supported links for Markdown widget:**
 
 <ul>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 **Supported links for Wiki:**  
 <ul>
-<li>Absolute path of Wiki pages: ```[text to display](/parent-page/child-page)``` </li>
-<li>URL: ```[text to display](http://address.com)```  </li>
+<li>Absolute path of Wiki pages: <code>[text to display](/parent-page/child-page)</code> </li>
+<li>URL: <code>[text to display](http://address.com)</code>  </li>
 </ul>
 
 > [!NOTE]  
 > Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
->For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
+> For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
 
 **Example:**  
-<pre>
-&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
-</pre>
+
+```
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
+```
 
 **Result:**
 
@@ -461,11 +521,13 @@ Within Markdown files, anchor IDs are assigned to all headings when rendered as 
 
 **Example:**
 
-<pre>
+```
 ###Link to a heading in the page
-</pre>
+```
 
 <br/>
+
+
 **Result:**
 
 The syntax for an anchor link to a section...
@@ -493,6 +555,8 @@ In wiki, you can also reference heading in another page:
 
 ## Images
 
+[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+
 To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
 
 - Comments
@@ -504,26 +568,32 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 **Example:**
 
 <pre>
+
 ![Illustration to use for new users](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
+
 </pre>
 
 <br/>
+
 **Result:**
+
 ![Illustration of linked image](https://azurecomcdn.azureedge.net/cvt-779fa2985e70b1ef1c34d319b505f7b4417add09948df4c5b81db2a9bad966e5/images/page/services/devops/hero-images/index-hero.jpg)
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
-<ul>
-<li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
-<li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
-<li>Absolute path in TFVC:<br/> ```![Image alt text]($/project/folder/_img/markdown-guidance/image.png)```  </li>
-<li>Resize image:<br/> ```![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)```  </li>
-</ul>
+
+- Relative path: `![Image alt text](./image.png)`  
+- Absolute path in Git: `![Image alt text](/_img/markdown-guidance/image.png)`  
+- Absolute path in TFVC: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png)`  
+- Resize image: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
 ## Checklist or task list
+
+#### Supported in: Pull Requests | Wikis
 
 Lightweight task lists are great ways to track progress on a list of todos as a pull request creator or reviewer in the PR description or in a wiki page. Select the Markdown toolbar to get started or apply the format to selected text.
 
@@ -552,8 +622,9 @@ After you've added a task list, you can check the boxes to mark items as complet
 </pre>
 
 <br/>
+
 **Result:**  
- 
+
 <img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]
@@ -569,13 +640,17 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 ::: moniker range=">= tfs-2018"
 
-In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+#### Supported in: Pull Requests | Wikis
+
+In pull request comments and wiki pages, you can use emojis to add character and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
+#### Supported in: Pull Requests
+
+In pull request comments, you can use emojis to add characters and react to comments in the request. Enter what you're feeling surrounded by `:` characters to get a matching emoji in your text. The [full set of emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) are supported.
 
 ::: moniker-end
 
@@ -587,6 +662,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 :smile:
 :angry:
 </pre>
+
 <br/>
 
 **Result:**  
@@ -607,41 +683,42 @@ To escape emojis, enclose them using the \` character.
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters
 
+[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+
+
 <table width="650px">
 <tbody valign="top">
 <tr>
 <th width="300px">Syntax</th>
 <th width="350px">Example/notes</th>
 </tr>
-
-
 <tr>
 <td>
-<p>To insert one of the following characters, prefix with a backslash:</p>
-
-<p style="margin-bottom:2px;">```\   backslash ``` </p>
-<p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
-<p style="margin-bottom:2px;">```_   underscore  ```</p>
-<p style="margin-bottom:2px;">```{}  curly braces  ``` </p>
-<p style="margin-bottom:2px;">```[]  square brackets ```</p>
-<p style="margin-bottom:2px;">```()  parentheses  ```</p>
-<p style="margin-bottom:2px;">```#   hash mark  ``` </p>
-<p style="margin-bottom:2px;">```+   plus sign  ```</p>
-<p style="margin-bottom:2px;">```-   minus sign (hyphen) ```</p>
-<p style="margin-bottom:2px;">```.   dot  ``` </p>
-<p style="margin-bottom:2px;">```!   exclamation mark  ```</p>
-
+<p>To insert one of the following characters, prefix with a <code>&#92;</code>(backslash).</p>
+<p style="margin-bottom:2px;"><code>&#92;</code>, backslash </p>
+<p style="margin-bottom:2px;"><code>&#96;</code>, backtick</p>
+<p style="margin-bottom:2px;"><code>&#95;</code>, underscore</p>
+<p style="margin-bottom:2px;"><code>{}</code>, curly braces </p>
+<p style="margin-bottom:2px;"><code>[]</code>, square brackets</p>
+<p style="margin-bottom:2px;"><code>()</code>, parentheses</p>
+<p style="margin-bottom:2px;"><code>#</code>, hash mark </p>
+<p style="margin-bottom:2px;"><code>+</code>, plus sign</p>
+<p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
+<p style="margin-bottom:2px;"><code>.</code>, period </p>
+<p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
 </td>
-<td>Some examples on inserting special characters
-<p>Enter ```\\``` to get \\ </p>
-<p>Enter ```\_``` to get _ </p>
-<p>Enter ```\#``` to get \# </p>
-<p>Enter ```\(``` to get \( </p>
-<p>Enter ```\.``` to get \. </p>
-<p>Enter ```\!``` to get \! </p>
+<td>
+<p>Some examples on inserting special characters:</p>
+
+<p>Enter <code>&#92;&#92;</code> to get \ </p>
+<p>Enter <code>&#92;&#95;</code> to get &#95; </p>
+<p>Enter <code>&#92;# </code> to get # </p>
+<p>Enter <code>&#92;(</code> to get ( </p> 
+<p>Enter <code>&#92;.</code> to get . </p>
+<p>Enter <code>&#92;!</code> to get ! </p>
+
 </td>
 </tr>
-
 </tbody>
 </table>
 
@@ -650,6 +727,18 @@ To escape emojis, enclose them using the \` character.
 <a name="attach"></a>
 
 ## Attachments
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+#### Supported in: Pull Requests | README files | Wikis
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+#### Supported in: Pull Requests | README files
 
 ::: moniker-end
 
@@ -709,6 +798,8 @@ Attachments support the following file formats.
 
 ## Mathematical notation and characters
 
+#### Supported in: Pull Requests | Wikis
+
 Both inline and block [KaTeX](https://khan.github.io/KaTeX/function-support.html) notation is supported in wiki pages and pull requests. The following supported elements are included:
 
 - Symbols
@@ -744,7 +835,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
 
 ### Example: Algebraic notation
 
@@ -756,12 +847,11 @@ And, the area of a triangle is:
 $$
 A_{triangle}=\frac{1}{2}({b}\cdot{h})
 $$
-
 ```
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+> ![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
 
 ### Example: Sums and Integrals
 
@@ -778,7 +868,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 
@@ -790,4 +880,4 @@ $$
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md)
 - [Add and edit Wiki pages](add-edit-wiki.md)
-  
+

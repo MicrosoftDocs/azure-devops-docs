@@ -5,7 +5,7 @@ description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -30,15 +30,15 @@ To use the **branch** command, you must have the **Read** permission for the sou
     tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]] [/recursive]
 ## Parameters
 
-|**Argument**|**Description**|
-|---|---|
-|*olditem*|Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.|
-|*newitem*|Specifies the name of the destination file or folder or the parent folder for the destination. If *newitem* already exists and is a Team Foundation version control server folder, Team Foundation creates the branched items within it. Otherwise, *newitem* specifies the name of the destination file or folder. Conflicts can occur during check-in if the destination already exists.|
-|*versionspec*|Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).|
-|*comment*|Provides a comment about the branch.|
-|*@commentfile*|Specifies the path of a file that contains the comment that is used for the branch.|
-|*authorname*|The user-provided value for the **/author** option.|
-|*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName* or *UserName*.|
+|     **Argument**      |                                                                                                                                                                                      **Description**                                                                                                                                                                                       |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       *olditem*       |                                                                                                                      Specifies the name of the source file or folder being branched. The *olditem* may also contain version information in the format *item;version*.                                                                                                                      |
+|       *newitem*       | Specifies the name of the destination file or folder or the parent folder for the destination. If *newitem* already exists and is a Team Foundation version control server folder, Team Foundation creates the branched items within it. Otherwise, *newitem* specifies the name of the destination file or folder. Conflicts can occur during check-in if the destination already exists. |
+|     *versionspec*     |                                                            Provides a value for the **/version** option. For more information about how Team Foundation parses a version specification to determine which items are within its scope, see [Command-Line Syntax (Version Control)](https://msdn.microsoft.com/library/56f7w6be).                                                            |
+|       *comment*       |                                                                                                                                                                            Provides a comment about the branch.                                                                                                                                                                            |
+| <em>@commentfile</em> |                                                                                                                                                    Specifies the path of a file that contains the comment that is used for the branch.                                                                                                                                                     |
+|     *authorname*      |                                                                                                                                                                    The user-provided value for the **/author** option.                                                                                                                                                                     |
+|      *username*       |                                                                                                                                 Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                                                  |
 
 <table><thead>
 <tr><th><p><strong>Option</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>

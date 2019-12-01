@@ -1,11 +1,15 @@
-#### Q:	How do I find a project collection administrator?
+#### Q: How do I find a Project Collection Administrator?
 
-A: If you have at least Basic access, you can find your [project collection administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your organization's security settings.
+A: If you have at least Basic access, you can find your [Project Collection Administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your organization's security settings.
 
-1.	Go to your organization's security settings. 
+::: moniker range=">= azure-devops-2019"
 
-	<img alt="Select the gear button, and then select Security" src="/azure/devops/_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+See [Show members of the Project Collection Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-collection-administrators-group).
 
-1.	Under **Security**, view your project collection administrators.
+::: moniker-end
 
-	<img alt="Go to Project Collection Administrators and then select Members" src="/azure/devops/_shared/_img/collection-manage-security-groups-new-ui.png" style="border: 1px solid #CCCCCC" />
+::: moniker range="<= tfs-2018"  
+
+See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
+
+::: moniker-end

@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -21,9 +21,10 @@ ms.date: 02/04/2019
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
-For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md).
+For a quick reference of query tasks and operators and macros supported for each data type, see [Query quick reference](query-index-quick-ref.md). See also [Guidance to create high-performing queries](high-performing-queries.md) for tips on constructing high-performing queries.
 
 <a id="field-values" /> 
+
 ## Query field data types and values
 
 The value you specify for a field must conform to the data type for that field. The following table lists the supported data types:
@@ -43,7 +44,6 @@ The value you specify for a field must conform to the data type for that field. 
     <td><p><strong>Boolean</strong><sup>1</sup> </p></td>
     <td><p>Specifies a field that takes on a True/False value. </p>
 </td></tr>
-
 <tr>
     <td><p><strong>DateTime</strong> or<br/><strong>Date/Time</strong></p></td>
     <td><p>A date field in which you can specify a variable, such as <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> or <strong><xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See <a href="../../organizations/settings/set-your-preferences.md" data-raw-source="[Set personal preferences](../../organizations/settings/set-your-preferences.md)">Set personal preferences</a> for details.) For query examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or@CurrentIteration](query-by-date-or-current-iteration.md)">Query by date or@CurrentIteration</a>. </p> <p>For WIQL queries, you can also specify the date in the Coordinated Universal Time (UTC) pattern. For details, see <a href="wiql-syntax.md" data-raw-source="[Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)">Syntax for the Work Item Query Language (WIQL)</a>. </td></tr>
@@ -83,9 +83,6 @@ The value you specify for a field must conform to the data type for that field. 
     <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
     <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
 <tr>
-    <td><p> <strong>String</strong> or<br/><strong>Text field (single line)</strong></p></td>
-    <td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support picklists or drop-down menus.  </p></td></tr>
-<tr>
     <td><p> <strong>TreePath</strong> </p></td>
     <td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;<a href="../../organizations/settings/set-area-paths.md" data-raw-source="[area paths](../../organizations/settings/set-area-paths.md)">area paths</a> and <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">iteration paths</a>&mdash;and then select the ones you want to associate with a team.</p> 
     <p>For more information on constructing queries, see <a href="query-by-area-iteration-path.md" data-raw-source="[Query by area or iteration path](query-by-area-iteration-path.md)">Query by area or iteration path</a> or <a href="query-by-area-iteration-path.md" data-raw-source="[Query by date or current iteration](query-by-area-iteration-path.md)">Query by date or current iteration</a>.</p></td>
@@ -100,6 +97,7 @@ The value you specify for a field must conform to the data type for that field. 
 
 
 <a id="operators" /> 
+
 ## Query operators
 
 You can use query operators in the following table to specify how each value in a clause must relate to the corresponding value in a work item. For information about the data type that is assigned to work item fields, see [Work item field reference](../work-items/guidance/work-item-field.md).
@@ -232,6 +230,7 @@ You can use query operators in the following table to specify how each value in 
 
 <a id="variables" /> 
 <a id="macros" /> 
+
 ## Query macros or variables
 
 You can use the macros described in the following table to filter your queries based on specific fields. 
@@ -346,11 +345,13 @@ You can use the macros described in the following table to filter your queries b
 1. The <strong><xref href="MyRecentActivity" data-throw-if-not-resolved="False" data-raw-source="@MyRecentActivity"></xref></strong>, <strong><xref href="RecentMentions" data-throw-if-not-resolved="False" data-raw-source="@RecentMentions"></xref></strong>, <strong><xref href="RecentProjectActivity" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity"></xref></strong> macros are supported for Azure Boards and TFS 2018.2 and later versions.
 1. The <strong><xref href="Project" data-throw-if-not-resolved="False" data-raw-source="@Project"></xref></strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see <a href="using-queries.md#across-projects" data-raw-source="[Query across projects](using-queries.md#across-projects)">Query across projects</a>. 
 1. The <strong><xref href="RecentProjectActivity**" data-throw-if-not-resolved="False" data-raw-source="@RecentProjectActivity**"></xref> macro is supported for Azure Boards (cloud service) only at this time.
-1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure Boards (cloud service) only at this time.<br/>1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
+1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
+1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
 
 
 <a id="full-text" /> 
+
 ## Full-text and partial word searches
 
 Specify **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Specify **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, **&#42;**. These operators use the full-text search index. You can only use the wildcard character at the end of a partial word or phrase.

@@ -5,7 +5,7 @@ description: Compare files
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -119,7 +119,7 @@ Merge more complex changes between two versions when you [resolve merge conflict
 
 If you need to merge two files with significant differences outside of TFVC conflict resolution, use the [vsdiffmerge command line tool](https://roadtoalm.com/2013/10/22/use-visual-studio-as-your-diff-and-merging-tool-for-local-files).
 The vsdiffmerge tool allows you to merge changes side-by-side and pick which contents you want to keep for each difference between the files.
-Run the command with four file parameters followed by the `/m` flag from the Visual Studio Developer Command Prompt to bring up the merge tool directly against any tow files. 
+Run the command with four file parameters followed by the `/m` flag from the Visual Studio Developer Command Prompt to bring up the merge tool directly against any two files. 
 
 The basic syntax for vsdiffmerge.exe is:
 

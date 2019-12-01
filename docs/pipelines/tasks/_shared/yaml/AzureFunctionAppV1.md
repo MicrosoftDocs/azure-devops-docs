@@ -1,6 +1,6 @@
 ```YAML
-# Azure Function
-# Update Azure Function on Windows, Function on Linux with built-in images, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications
+# Azure Functions
+# Update a function app with .NET, Python, JavaScript, PowerShell, Java based web applications
 - task: AzureFunctionApp@1
   inputs:
     azureSubscription: 

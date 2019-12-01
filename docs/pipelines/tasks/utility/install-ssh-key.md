@@ -5,12 +5,12 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 5c9af2eb-5fc5-42dc-9b91-dc234a8c4400
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 02/02/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Install SSH Key task
@@ -20,8 +20,11 @@ monikerRange: 'azure-devops'
 Use this task in a pipeline to install an SSH key prior to a build or release step.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/InstallSSHKeyV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -30,8 +33,10 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>Known Hosts Entry</td><td>(Required) The entry for this SSH key for the known_hosts file.</td></tr>
 <tr><td>SSH Public Key</td><td>(Required) The contents of the public SSH key.</td></tr>
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
-<tr><td>SSH Key</td><td>(Required) Select the SSH key that was uploaded to `Secure Files` to install on the agent.</td></tr>
+<tr><td>SSH Key (Secure File)</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
+
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
 </table>
 
 ## Example setup using GitHub
@@ -45,7 +50,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 You now have all necessary values for the "Install SSH Key" task:
 - 'Known Hosts Entry' - Enter the line copied in step 6
-- 'SSH Key', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
+- 'SSH Key (Secure File)', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
 
 ## Open source
 

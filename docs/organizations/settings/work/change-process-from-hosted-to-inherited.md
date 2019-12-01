@@ -5,7 +5,7 @@ description: Upgrade a project that uses a Hosted XML process model to an inheri
 ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -33,7 +33,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 
 After you've verified your customizations, you can now apply the inherited process to your existing project. 
 
-0. From **Process**, choose the original Hosted XML process, then choose the **Projects** page. 
+1. From **Process**, choose the original Hosted XML process, then choose the **Projects** page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)

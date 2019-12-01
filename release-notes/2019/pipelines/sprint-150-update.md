@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines - Sprint 150 Update
+description: See the Sprint 150 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
@@ -24,7 +25,7 @@ description: In the **Sprint 150 Update** of Azure DevOps, we added the ability 
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

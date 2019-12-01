@@ -5,7 +5,7 @@ ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -22,7 +22,9 @@ Use this task in a build or release pipeline to ensure the number of matching it
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -30,8 +32,11 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 None
 
 ::: moniker range="azure-devops"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
+
 ::: moniker-end
 
 ## Arguments

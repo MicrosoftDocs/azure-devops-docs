@@ -30,6 +30,14 @@
     href: custom-controls-process.md
   - name: Customize backlogs & boards
     href: customize-process-backlogs-boards.md
+  - name: Change project process
+    items:
+    - name: From Agile to Scrum
+      href: change-process-agile-to-scrum.md
+    - name: From Scrum to Agile
+      href: change-process-scrum-to-agile.md
+    - name: From Basic to Agile
+      href: change-process-basic-to-agile.md
 - name: Reference
   items:
   - name: Work tracking object limits

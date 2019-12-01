@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Jan 7
 description: VSTS release notes for January 7 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: f0935abb-f6e4-4301-9d04-397b1c83b246
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -60,17 +60,10 @@ Finally, in our last update on [December 10th](../2012/dec-10-team-services.md) 
 
 ![Collapsible left panel](_img/1_7_08.png)
 
-We’ve got a lot coming your way in the next few months. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+We’ve got a lot coming your way in the next few months. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Our next deployment is coming on January 21st so we’ll see you again in two weeks.
 
 Thanks,
 
 Aaron Bjork
-
-
-
-
-
-
-

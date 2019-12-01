@@ -3,16 +3,16 @@ title: Extensions, Previews, and more – Nov 18
 description: VSTS release notes for November 18 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: a3dd10a2-5d57-4168-9b5a-0a14e82ac9eb
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
 # Extensions, Previews, and more – Nov 18
 
-Today is our [Connect(); developer event](http://connect2015.visualstudio.com/) and we have a ton of news for VS Online…
+Today is our [Connect(); developer event](https://connect2015.visualstudio.com/) and we have a ton of news for VS Online…
 
 ## Visual Studio Team Services
 
@@ -46,7 +46,7 @@ For more information, and to get started, see the full documentation at [https:/
 
 ## Package Management public preview
 
-Today, we are announcing the public preview of a [new package management service](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) on Visual Studio Team Services. This initial preview supports NuGet, but we’ll be adding support additional packaging systems over time.
+Today, we are announcing the public preview of a [new package management service](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) on Visual Studio Team Services. This initial preview supports NuGet, but we’ll be adding support additional packaging systems over time.
 
 This new package management service allows you to create and host Nuget feeds for your organization with no effort. You can use the feeds to publish/manage OSS packages you use, or to publish private packages that you want to share within your organization. The Team Services build-and-release system has tasks that will both publish and restore any Nuget packages you host.
 
@@ -60,7 +60,7 @@ Today, we are announcing the public preview of Code Search in Visual Studio Team
 
 ## Test results in Build
 
-Testing is an important part of a DevOps process. Today we showed a new set of test experiences integrated into the CI/CD experience in Team Services that allows you to get actionable information about your test results. You can try out this new experience by opening the Tests tab on the Build summary page. The first thing you’ll notice is an aggregate summary of test results across all test runs in the build. Tests that were passing in the previous build, but have failed in the current build are flagged as “New failures,” helping you identify possible regressions. For tests that are continuing to fail, you can see how stale the failures are and navigate to the build in which the tests first failed. We have an improved experience to browse failed tests—you can group by different pivots like container, priority, and more. To help you debug a failed test, we show you the error message, stack trace, attachments, and bugs associated with the test in the details pane. Finally, you can find out if a test is flaky by looking at the trend of last ten outcomes of the test. We are releasing this experience as a preview feature on Visual Studio Team Services, and plan to add new features like trend charts, historical results, and more in the upcoming months. You can read more about this experience on the [Visual Studio devops blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/13/test-results-in-build.aspx).
+Testing is an important part of a DevOps process. Today we showed a new set of test experiences integrated into the CI/CD experience in Team Services that allows you to get actionable information about your test results. You can try out this new experience by opening the Tests tab on the Build summary page. The first thing you’ll notice is an aggregate summary of test results across all test runs in the build. Tests that were passing in the previous build, but have failed in the current build are flagged as “New failures,” helping you identify possible regressions. For tests that are continuing to fail, you can see how stale the failures are and navigate to the build in which the tests first failed. We have an improved experience to browse failed tests—you can group by different pivots like container, priority, and more. To help you debug a failed test, we show you the error message, stack trace, attachments, and bugs associated with the test in the details pane. Finally, you can find out if a test is flaky by looking at the trend of last ten outcomes of the test. We are releasing this experience as a preview feature on Visual Studio Team Services, and plan to add new features like trend charts, historical results, and more in the upcoming months. You can read more about this experience on the [Visual Studio devops blog](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/13/test-results-in-build.aspx).
 
 ![Reviewing build test results](_img/11_18_05.png)
 
@@ -68,7 +68,7 @@ Testing is an important part of a DevOps process. Today we showed a new set of t
 
 Since 2010, we’ve had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screen shots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Linux, macOS, or Windows)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
 
-Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/19/announcing-easy-to-use-web-based-exploratory-test-for-visual-studio-team-services.aspx).
+Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](https://blogs.msdn.com/b/visualstudioalm/archive/2015/11/19/announcing-easy-to-use-web-based-exploratory-test-for-visual-studio-team-services.aspx).
 
 ## Test Manager extension
 
@@ -77,13 +77,3 @@ We’re changing the way you purchase test case management capabilities with Vis
 Thanks,
 
 Brian Harry
-
-
-
-
-
-
-
-
-
-

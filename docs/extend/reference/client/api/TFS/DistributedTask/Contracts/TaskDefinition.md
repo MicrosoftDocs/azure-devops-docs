@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts TaskDefinition API | Extensions for Azure DevOps Services
+description: Data representation of a task definition.
 ms.assetid: b97e4da3-d37b-5440-e737-f454204b4d8b
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

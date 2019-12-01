@@ -1,17 +1,17 @@
 ---
-title: Query by numeric field
+title: Query by numeric fields
 titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018  
+ms.date: 10/03/2019
 ---
 
 # Query by numeric fields    
@@ -24,6 +24,7 @@ The most common numeric fields track effort for items in the Requirements catego
 
 
 ## Supported operators and macros 
+
 Query clauses that specify a numeric field can use the operators listed below.
 - = , <> , > , < , >= , <=  
 - =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field] 
@@ -40,6 +41,7 @@ Query clauses that specify a numeric field can use the operators listed below.
 For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
 
 ### Useful filters 
+
 <table width="100%">
 <tbody valign="top">
 <tr>
@@ -64,7 +66,6 @@ Items that are Active or Closed
 <td>
 <code>State <em> In </em> Active,Closed</code><br/></td>
 </tr>
-
 <tr>
 <td>
 Items in the Requirements category 
@@ -72,8 +73,6 @@ Items in the Requirements category
 <td>
 <code>Work Item Type <em> In Group </em> Microsoft.RequirementCategory</code><br/></td>
 </tr>
-
-
 <tr>
 <td>
 Unestimated user stories 
@@ -81,12 +80,12 @@ Unestimated user stories
 <td>
 <code>Story Points <em> &lt;&gt; </em> (leave Value field blank)</code><br/></td>
 </tr>
-
 </tbody>
 </table>  
 
 
 <a id="counts"/>
+
 ## Work item count queries and charts
 
 All queries show a count of items when you run the query. Here we define a flat-list query that filters for bugs in any state.  
@@ -122,10 +121,23 @@ Using the same flat-list query that filters for bugs shown in the previous secti
 ::: moniker-end
 
 
+<a id="undefined-value"/>
+
+## Undefined field value queries
+
+You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type User Stories whose Story Points field is blank.  
+
+> [!div class="mx-imgBorder"]  
+> ![Filter based on blank entries](_img/numeric/field-value-blank.png)
+
+To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
+
+
 <a id="effort"/>
+
 ## Effort or story point queries and charts  
 
-You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
+You can assign Story Points to user stories or bugs when you work in an Agile process. Or, Effort to product backlog items and bugs when you work in a Scrum process. For more information, see [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) work item types and workflow topics.  
 
 ### Sum of story points and their status   
 
@@ -170,6 +182,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 
 
 <a id="work"/>
+
 ## Remaining and completed work queries and charts  
 
 Based on the process your project references, you can assign the following fields to tasks or bugs. 
@@ -203,8 +216,10 @@ Add Remaining Work as a column option to the query and save. To view a sum of th
 > The **Sum** feature is supported for TFS 2013.4 and later versions.
 ::: moniker-end
 
-For information on system-defined sprint burndown charts, see [Sprint burndown](../sprints/sprint-burndown.md).
+For information on system-defined sprint burndown charts, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md).
 
+
+<a id="fields" />
 
 ## Fields used to estimate and track work
 
@@ -228,14 +243,12 @@ The following table describes the activity-based and numeric fields that you can
 <p>Reference name=Microsoft.VSTS.Common.Activity, Data type=String</p>
 </td>
     <td>Task, Bug<sup>4</sup> (Agile and Scrum)</td>
-
 </tr>
 <tr>
     <td><p>Business Value</p></td>
     <td><p>A subjective unit of measure that captures the relative business value of a product backlog item or feature compared to other items of the same type. An item that is assigned a higher number should be considered as having more business value than an item that is assigned a lower number.</p><p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=Integer</p>  </td>
     <td>Epic, Feature</td>
 </tr>
-
 <tr>
     <td><p>Completed Work</p></td>
     <td><p>The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
@@ -252,7 +265,6 @@ The following table describes the activity-based and numeric fields that you can
 </td>
 <td>Task, Bug <sup>4</sup> (CMMI)</td>
 </tr>
-
 <tr>
     <td><p>Effort</p></td>
     <td><p>A subjective unit of measure that captures the size of a bug or product backlog item. If you assign more effort to an item, you indicate that more work is required to implement it. </p><p>This field <sup>3</sup> is also used to calculate team velocity and forecasting. It is assigned to <code>type=&quot;Effort&quot;</code> in the ProcessConfiguration file.</p>
@@ -290,26 +302,20 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug<sup>4</sup></td>
 </tr>
-
 <tr>
     <td><p>Requires Review</p></td>
     <td><p>Indicates the task requires review. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-
 <p>Reference name=Microsoft.VSTS.CMMI.RequiresReview, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
-
 <tr>
     <td><p>Requires Test</p></td>
     <td><p>Indicates the task requires a test. You can specify <strong>Yes</strong> or <strong>No</strong> (default).</p>
-
 <p>Reference name=&quot;Microsoft.VSTS.CMMI.RequiresTest, Data type=String</p>
 </td>
     <td>Task (CMMI)</td>
 </tr>
-
-
 <tr>
     <td><p>Task Type<sup>1</sup></p></td>
     <td><p>Specifies the kind of task to implement. Allowed values are:</p><ul><li><p>Corrective Action</p></li><li><p>Mitigation Action</p></li><li><p>Planned</p></li></ul>
@@ -317,29 +323,25 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug<sup>4</sup> (CMMI process)</td>
 </tr>
-
-
-
 </tbody>
 </table>
 
-**Notes:**
+#### Notes:
 
-1.  To change the menu selection (on-premises deployments only), see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).   
-2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p>
-
-3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
-
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
+3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
 ## Related articles 
+
 For information on adding custom fields, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 The main tools you use to plan and track work are described here: 
 - [Create your backlog](../backlogs/create-your-backlog.md)
 - [Sprint planning](../sprints/assign-work-sprint.md)
 - [Capacity planning](../sprints/set-capacity.md)
-- [taskboard](../sprints/task-board.md)
+- [Taskboard](../sprints/task-board.md)
 - [Kanban board](../boards/kanban-basics.md)
 
 For more information on using work items and queries, see: 
@@ -352,14 +354,16 @@ For more information on using work items and queries, see:
 <a id="show-bugs"/>
 
 <a id="rollup"/>
+
 ### Rollup numeric values across work item types  
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard. For other rollup requirements, see the following topics: 
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
--[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
-- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
+- [Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
+- [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)  
 
 <a id="category"/>
+
 ### What items appear in the Requirement or Task categories? 
 
 The default assignments of work item types to each category are listed below for each process.  

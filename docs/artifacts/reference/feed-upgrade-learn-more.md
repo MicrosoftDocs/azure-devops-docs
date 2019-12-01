@@ -5,9 +5,9 @@ ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 5/10/2019
 monikerRange: '>= tfs-2018'
 ---

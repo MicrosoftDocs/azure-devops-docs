@@ -5,8 +5,9 @@ description: Edit or change permissions for a delivery plan
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ms.date: 12/19/2018
@@ -37,7 +38,7 @@ By default all members of an organization or project collection can view Deliver
 
 ## Edit permissions for a delivery plan
 
-0. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
+1. Open **Boards>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
 1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 
@@ -60,7 +61,7 @@ By default all members of an organization or project collection can view Deliver
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
+1. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
 1. To grant permissions to a group or user to manage or edit a specific plan, choose the ![ ](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 

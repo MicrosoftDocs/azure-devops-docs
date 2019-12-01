@@ -5,10 +5,10 @@ ms.assetid: 2762B459-BD46-493C-998F-A14EE1DA4C94
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/23/2016
 ---
 
@@ -459,7 +459,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems?ids=297,299,300&$e
         },
         {
           "rel": "Hyperlink",
-          "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+          "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
           "attributes": {
             "authorizedDate": "2014-12-29T20:49:27.98Z",
             "id": 65275,
@@ -1184,7 +1184,7 @@ Content-Type: application/json-patch+json
 | value             | string or int, depending on the field | New value to set.
 | Body - relation
 | op                | enum { add, replace, remove, test }   | The operation to perform on the relation.<br/>Use test to verify that the relation is valid without actually saving the work item.
-| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For a specific relation, use "relations/Id".<br/>For all relations, use "/relations/-".
+| path              | string                                | Path to the value you want to add, replace, remove, or test.<br/>For replacing, removing, or testing a specific relation, use "/relations/Id". Id is the 0 based 'index' of relation in the list of relations currently on this work item. <br/>For adding relations, use "/relations/-".
 | value.rel         | string                                | Type of the relationship. Examples include, work-item/hierarchy-forward, changeset, or attachment.<br/>Get the list of relations that a work item type supports using [relation types](./relation-types.md).
 | value.url         | string                                | URL of the item you are relating to the current work item.
 | value.attributes  | array of name/value pairs             | Additional attributes of the relationship (e.g. comment, isLocked, etc.)
@@ -1528,7 +1528,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2014-12-29T20:49:27.98Z",
         "id": 65275,
@@ -2121,7 +2121,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     "path": "/relations/-",
     "value": {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx"
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx"
     }
   }
 ]
@@ -2169,7 +2169,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/299?api-version=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2014-12-29T20:49:27.98Z",
         "id": 65275,
@@ -2277,7 +2277,7 @@ PATCH https://mytfsserver/DefaultCollection/_apis/wit/workitems/335?bypassRules=
     },
     {
       "rel": "Hyperlink",
-      "url": "http://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
+      "url": "https://blogs.msdn.com/b/bharry/archive/2014/05/12/a-new-api-for-visual-studio-online.aspx",
       "attributes": {
         "authorizedDate": "2015-03-06T21:34:22.32Z",
         "id": 135231,

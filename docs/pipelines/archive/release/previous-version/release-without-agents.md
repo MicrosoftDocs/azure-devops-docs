@@ -1,12 +1,12 @@
 ---
-title: Release without deployment agents in Release Management
+title: Release without deployment agents
 ms.custom: seodec18
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -21,7 +21,7 @@ If you want to use
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
 ([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
-or [Chef](http://www.getchef.com/) to deploy your app, 
+or [Chef](https://www.getchef.com/) to deploy your app, 
 follow these steps. If you are using deployment agents, 
 go **[here](release-with-agents.md)** 
 for instructions.
@@ -92,7 +92,7 @@ for any computer you plan on using in your environment.
 * Upload cookbooks to the Chef server.
 * Assign recipes to the target node.
 * Set up your Release Management Server as a Chef Workstation.
-  Instructions are **[here](http://learn.chef.io/)**.
+  Instructions are **[here](https://learn.chef.io/)**.
 * Release Management uses Knife to communicate with Chef. Run 
   the following commands to install the Windows plugin for Knife:
   - `gem install knife-windows --no-ri --no-rdoc`  
@@ -130,7 +130,7 @@ environment in Release Management.
    listed above for PowerShell and DSC are not yet met, 
    add the Visual Studio Release Management extension to meet 
    the prerequisites.
-   **[Learn how](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
+   **[Learn how](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
 
 1. Add the details for your Azure subscription to Release Management.
 
@@ -361,7 +361,7 @@ You also need a build definition that builds your app.
 
 **A**: Yes. `Set-DscLocalConfigurationManager` is not supported.
 
-###Q: What other differences are there between using a vNext release template and the deployment agent-based release template?
+### Q: What other differences are there between using a vNext release template and the deployment agent-based release template?
 
 **A**: Apart from not needing deployment agents, these are the other differences:
 

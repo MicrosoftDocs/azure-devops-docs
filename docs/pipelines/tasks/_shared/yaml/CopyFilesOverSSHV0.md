@@ -1,5 +1,5 @@
 ```YAML
-# Copy Files Over SSH
+# Copy files over SSH
 # Copy files or build artifacts to a remote machine over SSH
 - task: CopyFilesOverSSH@0
   inputs:

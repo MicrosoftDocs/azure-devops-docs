@@ -5,7 +5,7 @@ description: Understand how a conflict or failed synchronization occurs when usi
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: ce1d4951-e460-43d3-8852-a0f170012142
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -5,7 +5,7 @@ description: Generate flexible reports, and support increased integration across
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/04/2017
@@ -85,7 +85,7 @@ Process configuration defines the layout and fields used in the display of the p
 ## Related articles 
 - [Categories XML element reference](categories-xml-element-reference.md)  
 - [Import and export categories](../witadmin/witadmin-import-export-categories.md)
-- [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking).
+- [Visual Studio TFS forum for Project Management and Work item tracking](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking).
 
 ### Category names 
 Each category has a friendly name and a reference name that must be unique within the project. For more information, see [Categories XML element reference](categories-xml-element-reference.md).  

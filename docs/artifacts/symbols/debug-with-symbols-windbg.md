@@ -4,9 +4,9 @@ description: Debug with symbols in WinDbg using the Symbol Server in Azure Artif
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'

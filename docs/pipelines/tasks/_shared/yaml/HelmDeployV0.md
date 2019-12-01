@@ -1,6 +1,6 @@
 ```YAML
 # Package and deploy Helm charts
-# Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
+# Deploy, configure, update a Kubernetes cluster in Azure Container Service by running helm commands
 - task: HelmDeploy@0
   inputs:
     #connectionType: 'Azure Resource Manager' # Options: azure Resource Manager, kubernetes Service Connection, none

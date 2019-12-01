@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: alexn
 author: alexn
+ms.date: 08/04/2017
 ---
 
 # Visual Studio Team Services (VSTS) Sprint 121 Update
@@ -183,9 +184,9 @@ We’ve also released a new **dotnet Tool Installer** task that controls the ver
 
 ## Release
 ### Ansible Extension on Marketplace 
-We have released a new [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-ansible) that includes a build/release task to integrate with [Ansible](http://docs.ansible.com/ansible/latest/index.html) and execute a given **Playbook** on a specified list of **Inventory** nodes via command line interface.
-Ansible uses **[Playbooks](http://docs.ansible.com/ansible/latest/playbooks.html)** which express configurations, deployment, and orchestration steps in YAML format. Each **Playbook** maps a group of hosts to a set of roles. Each role is represented by calls to Ansible tasks.
-An **[Inventory](http://docs.ansible.com/ansible/latest/intro_inventory.html)** file is a description of the host nodes that can be accessed by Ansible. 
+We have released a new [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-ansible) that includes a build/release task to integrate with [Ansible](https://docs.ansible.com/ansible/latest/index.html) and execute a given **Playbook** on a specified list of **Inventory** nodes via command line interface.
+Ansible uses **[Playbooks](https://docs.ansible.com/ansible/latest/playbooks.html)** which express configurations, deployment, and orchestration steps in YAML format. Each **Playbook** maps a group of hosts to a set of roles. Each role is represented by calls to Ansible tasks.
+An **[Inventory](https://docs.ansible.com/ansible/latest/intro_inventory.html)** file is a description of the host nodes that can be accessed by Ansible. 
 
 The task requires that the **Playbook** and **Inventory** files be located either on a private Linux agent or on a remote machine where an Ansible automation engine has been installed. An SSH endpoint needs to be set up if the Ansible is located on a remote machine. **Inventory** can also be specified inline, as **Dynamic Inventory**, or as a **Host** list. 
 

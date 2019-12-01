@@ -6,7 +6,7 @@ ms.assetid: 82aa7c10-c304-400a-84c9-d5ed87d66180
 toc: show
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sancha
 author: apawast
 ms.topic: reference
@@ -77,10 +77,10 @@ The source explorer allows you to select a file or a folder to view changes asso
     ![Diff to parent](_img/commit-details/10DifftoParent.png)
  	
 * The file explorer view provides all the capabilities that we get in the file explorer view i.e. you can
-    * browse files in a side by side or inline diff view 
-    * use the navigation keys to browse the next set of changes
-    * preview the files
-    * compare file diff for previous commits
+  * browse files in a side by side or inline diff view 
+  * use the navigation keys to browse the next set of changes
+  * preview the files
+  * compare file diff for previous commits
 		
     ![Diff view](_img/commit-details/11SidebySide.png)
  	

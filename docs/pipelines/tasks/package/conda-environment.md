@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D97AA092-1F19-4729-B98F-E27615003C1E
 ms.manager: madhurig
-ms.author: brcrista
-author: brcrista
+ms.author: vijayma
+author: vijayma
 ms.reviewer: dastahel
 ms.date: 11/16/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Conda Environment task
@@ -18,6 +18,9 @@ monikerRange: 'azure-devops'
 **Azure Pipelines**
 
 Use this task in a build or release pipeline to create and activate a Conda environment.
+
+> [!NOTE]
+> This task has been deprecated. Use `conda` directly in the [bash task](../utility/bash.md) or [batch script task](../utility/batch-script.md) as an alternative.
 
 This task will create a Conda environment and activate it for subsequent build tasks.
 
@@ -45,8 +48,11 @@ None
 * If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV1.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -59,6 +65,7 @@ None
 | Update to the latest Conda | Update Conda to the latest version. This applies to the Conda installation found in `PATH` or at the path specified by the `CONDA` environment variable. |
 
 ### Advanced
+
 | Argument | Description |
 |----------|-------------|
 | Install options | Space-delimited list of additional arguments to pass to the `conda install` command. |

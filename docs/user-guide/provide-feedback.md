@@ -25,7 +25,7 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 
 Do you need to do any of the following?
 
-* **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](http://stackoverflow.com/questions/tagged/tfs).
+* **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
 
 * **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
@@ -110,7 +110,7 @@ A page similar to the following example opens showing the version number.
 
 <img src="../_img/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
 
->  [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]  
 > 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|

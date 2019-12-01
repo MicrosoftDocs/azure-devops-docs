@@ -5,12 +5,12 @@ description: Add custom security groups, change permissions for groups or indivi
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/25/2019
+ms.date: 11/20/2019
 ---
 
 
@@ -45,10 +45,28 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
+::: moniker range="azure-devops"
 
-::: moniker range=">= azure-devops-2019"
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
-1. Choose **Project Settings** > **Security**.
+#### [Preview page](#tab/preview-page) 
+
+1. Choose **Project settings > Permissions**.
+
+   ![Choose Project settings, and then the Permissions page](_img/permissions/choose-project-settings-permissions.png)  
+
+2. Choose **New group** to open the dialog for adding a group.
+
+   ![Select New group to open dialog for adding group](_img/permissions/permissions-select-new-group.png)
+
+3. Enter a name for the group, select users or groups for membership, optionally add a description, and then choose **Create**.
+
+   ![Create group dialog](_img/permissions/create-group-dialog.png)
+
+#### [Current page](#tab/current-page) 
+
+1. Choose **Project settings** > **Security**.
 
     *To see the full image, click to expand*.
 
@@ -66,8 +84,33 @@ To create a project-level security group, open the web portal and choose the pro
     ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
 
 4. Choose **Create group**.
+
+* * *
+
 ::: moniker-end
 
+::: moniker range="= azure-devops-2019"
+
+1. Choose **Project settings** > **Security**.
+
+    *To see the full image, click to expand*.
+
+    [![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)  
+
+2. Choose **Create group** to open the dialog for adding a group.
+
+    > [!div class="mx-imgBorder"]
+    > ![Create a custom security group](_img/change-individual-permissions/create-group-open-dialog.png)" 
+
+3. Enter a name for the group, and optionally a description.
+
+    For example, here we define a Team Admins group.
+
+    ![Security group dialog, Add a security group at the project level](_img/change-individual-permissions/create-project-level-group-dialog.png)
+
+4. Choose **Create group**.
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -110,12 +153,12 @@ To create a project-level security group, open the web portal and choose the pro
 
 You add members to a custom security group in the same way you add users to a built-in group. 
 
-0. Choose the security group, choose **Members**, and then choose **Add**.
+1. Choose the security group, choose **Members**, and then choose **Add**.
 
     > [!div class="mx-imgBorder"]
     > ![Security>Members page, Add member](_img/change-individual-permissions/team-admin-group-add-members.png)  
 
-1. Enter the user identity into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
+2. Enter the user identity into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meets your choice.
 
     ![Add users and group dialog](_img/project-level-permissions-add-a-user.png) 
 
@@ -188,7 +231,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 </tbody>
 </table>
 
-1. From the Security dialog, choose **Add**. 
+1. From the Security dialog, choose **Add**.  
 
     <img src="_img/change-individual-permissions/security-dialog-add-user-account-button.png" alt="Open the Add users or group permissions dialog" style="border: 1px solid #C3C3C3;" />
 

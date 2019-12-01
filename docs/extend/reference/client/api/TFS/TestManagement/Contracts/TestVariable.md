@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts TestVariable API | Extensions for Azure DevOps Services
+description: Data representation of a test variable.
 ms.assetid: 69bc738a-2ac5-f7dc-fa48-1263b24ca7ec
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

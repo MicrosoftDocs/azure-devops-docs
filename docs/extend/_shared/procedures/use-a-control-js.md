@@ -9,16 +9,16 @@
 	```javascript
     // Sets up the initial handshake with the host frame
     VSS.init({
-        // Our extension will explicitly notify the host when we're done loading
+        // Our extension explicitly notifies the host when we're done loading
         explicitNotifyLoaded: true,
 
-        // We are using some Azure DevOps Services APIs, so we will need the module loader to load them in
+        // We are using some Azure DevOps Services APIs, so we need the module loader to load them in
         usePlatformScripts: true,
         usePlatformStyles: true       
     });
 	```
 
-1. Create a grid and load it with data. (Replace your current call to ```VSS.notifyLoadSucceeded()``` with the following snippet)
+2. Create a grid and load it with data. (Replace your current call to ```VSS.notifyLoadSucceeded()``` with the following snippet)
 
 	```javascript
     // Load Azure DevOps Services controls

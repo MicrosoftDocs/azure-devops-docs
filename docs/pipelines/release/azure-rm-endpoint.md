@@ -6,7 +6,7 @@ ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 This topic will help you resolve issues you may encounter when creating
@@ -42,7 +44,7 @@ When you choose **OK**, the system:
 1. Creates an Azure Resource Manager service connection using this application's details
 
 <a name="troubleshoot"></a>
-## How to troubleshoot errors that may occur
+## How to troubleshoot errors that may occur while creating a connection?
 
 Errors that may occur when the system attempts to create the service connection include:
 
@@ -129,6 +131,11 @@ The directory administrator has permission to change this setting, as follows:
 
 1. In the **App registrations** section, change **Users can register applications** to **Yes**.
 
+
+#### Create the service principal manually with the user already having required permissions in Azure Active Directory
+
+You can also create the service principal with an existing user who already has the required permissions in Azure Active Directory. For more information, see [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
+
 <a name="sessionexpired"></a>
 ### Failed to obtain an access token or A valid refresh token was not found
 
@@ -154,5 +161,14 @@ the **Contributor** role.
 
 To resolve this issue, ask the subscription administrator to
 [configure your identity in an **Admin Access** role](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+
+## What authentication mechanisms are supported? How do Managed Identities work?
+
+Azure Resource Manager service connection can connect to a Microsoft Azure subscription using Service Principal Authentication (SPA) or  Managed Identity Authentication.
+Managed identities for Azure resources provides Azure services with an automatically managed identity in Azure Active Directory. You can use this identity to authenticate to any service that supports Azure AD authentication, without persisting credentials in code or in the service connection. [Learn more](/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm) about managed identities for virtual machines.  
+
+> [!NOTE]
+>
+> Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

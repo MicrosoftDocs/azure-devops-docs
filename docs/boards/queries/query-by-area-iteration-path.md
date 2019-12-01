@@ -6,7 +6,7 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -24,6 +24,7 @@ The Area Path and Iteration Path are two fields that appear on the work tracking
 To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
 
 ## Supported operators and macros 
+
 When creating queries and specifying the Area Path and Iteration Path fields, you can use the following operators: 
 
 > [!div class="mx-tdCol2BreakAll"]  
@@ -60,14 +61,14 @@ You can specify to filter for work items assigned to several area paths by using
 
 ## Node Name and keyword based queries  
 
-Using the **Node Name** field, you can filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the leaf node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
+Use the **Node Name** field to filter on work items assigned to area paths based on a keyword using the **Contains** operator. The **Node Name** specifies the last node of an **Area Path**, which corresponds to the last node in the tree hierarchy.  
 
 The following query yields the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
 > ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
 
-In this example, the filter will return any work items assigned to an area path whose leaf node contains the word "Azure".
+In this example, the filter will return any work items assigned to an area path whose last node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
 > ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
@@ -81,6 +82,7 @@ Here's another example which uses the **Node Name** and the **In** operator.
 
 ::: moniker range=">= azure-devops-2019"
 <a id="team-area-path" /> 
+
 ## Team area path queries  
 
 Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
@@ -91,6 +93,7 @@ Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the 
 ::: moniker-end
 
 <a name="field-reference"></a>
+
 ## Classification field reference 
 
 
@@ -113,12 +116,13 @@ The following fields do not appear on work item forms but are tracked for each w
 > |---|---|---|---|
 > |Area ID|The unique ID of the area to which this work item is assigned.|System.AreaId|Integer|
 > |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
-> |Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
+> |Node Name|The name of the last node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
 The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
 
 ## Related articles 
+
 - [Query quick reference](query-index-quick-ref.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
@@ -126,6 +130,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 ::: moniker range="<= azure-devops-2019"
 <a name="field-rules"></a>
+
 ### Supported field rules  
 
 For the On-premises XML process model, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 

@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Dec 10
 description: VSTS release notes for December 10 2012
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: ee451bdd-10c8-44cc-9d26-4b95a07035b2
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -39,10 +39,10 @@ As I mentioned, this is the first of a series of improvements to this area that 
 While the changes to the version control experience are the biggest UI change we’ve made this sprint, we’ve been busy elsewhere. In our ongoing attempt to keep the hosted build machine updated with the latest & greatest, we added the following to the hosted build machines this sprint:
 
 - [Azure SDK 1.8](https://www.windowsazure.com/develop/net/)
-- [TypeScript 0.8.1](http://typescript.codeplex.com/)
+- [TypeScript 0.8.1](https://typescript.codeplex.com/)
 - VS 2012 Update 1 - VS is installed on the build image to ensure you can build everything on the build machine that you can on your dev box using VS. We updated the VS image to the recently released Update 1.
 
-Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Happy holidays!! We’re not planning a deployment on New Year’s Eve (for obvious reasons) so we’ll see you again after the new year.
 

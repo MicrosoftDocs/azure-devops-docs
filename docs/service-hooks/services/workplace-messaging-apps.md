@@ -5,18 +5,36 @@ ms.topic: conceptual
 title: Workplace Messaging Apps with Azure DevOps Services
 description: Integrate workplace messaging apps like Microsoft Teams and Slack with your Azure DevOps Services organization
 ms.manager: bijuv
-ms.author: atinb
+ms.author: karrg
 author: atinb
-ms.date: 02/07/2019
+ms.date: 11/15/2019
 monikerRange: 'azure-devops'
 ---
 
 # Workplace Messaging Apps
 
-This integration allows users to receive notifications to Azure DevOps events within their workplace messaging apps like Slack. To configure this integration, 
-use one of the apps for Azure DevOps services from the Slack marketplace. 
-Here are the current integrations available at this time:
+The following integrations help users to receive notifications in response to events in Azure DevOps within their workplace messaging apps like 
+[Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) and [Slack](https://slack.com). 
+These integrations also help users to complete
+workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels.
 
-### Azure Pipelines app for Slack
+> [!NOTE]  
+> You can use these apps only with a project hosted on Azure DevOps Services at this time.  
 
-To learn how to configure integrations for this app, see [Azure Pipelines app for Slack](../../pipelines/integrations/slack.md)
+
+## Slack
+
+* [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
+
+* [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+
+* [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
+
+## Microsoft Teams
+
+* [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+
+* [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+
+* [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+

@@ -5,7 +5,3 @@
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
-    items:
-    - name: Queries
-      tocHref: /azure/devops/boards/queries/
-      topicHref: /azure/devops/boards/queries/index

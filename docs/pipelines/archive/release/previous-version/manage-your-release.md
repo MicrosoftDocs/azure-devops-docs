@@ -6,7 +6,7 @@ ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -72,9 +72,9 @@ that runs Release Management Server, too.
 
 ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
 a non-trial version, see 
-[How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+[How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
 or 
-[Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+[Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
 If you are an MSDN subscriber, you can download a non-trial version from the 
 [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._
 
@@ -115,7 +115,7 @@ With Visual Studio 2015, you can use
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
 ([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
-or [Chef](http://www.getchef.com/) to deploy to a server without a deployment agent.
+or [Chef](https://www.getchef.com/) to deploy to a server without a deployment agent.
 If you already deploy using any of these tools, 
 you can use the same scripts with Release Management. Or, you can use deployment agents 
 to deploy to a server.
@@ -240,7 +240,7 @@ you can remap these tag sequences to a different tag if you want.
 **[vNext release path](release-without-agents.md)**, 
 you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
-**[here](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
+**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
 
 ![Configure Apps tab; vNext Release Templates tab; Change Summary tab](_img/manage-release-16.png)
 
@@ -277,12 +277,12 @@ only to vNext environments based on Azure IaaS services.
 
 ### Q: Are there any hands-on labs to help me get started with Release Management?
 
-**A**: Yes. Go  **[here](http://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
+**A**: Yes. Go  **[here](https://blogs.msdn.com/b/briankel/archive/2013/08/02/visual-studio-2013-application-lifecycle-management-virtual-machine-and-hands-on-labs-demo-scripts.aspx)** 
 for hands-on labs to try Release Management and other devops products.
 
 ### Q: Is there a more detailed user guide?
 
-**A**: Yes, you can **[download this pdf file](http://go.microsoft.com/fwlink/?LinkId=398104)**.
+**A**: Yes, you can **[download this pdf file](https://go.microsoft.com/fwlink/?LinkId=398104)**.
 
 ## Related topics
 
