@@ -108,7 +108,10 @@ steps:
 In the above example, the tasks tries to find matches for the image foobar/demo in the image fields of manifest files. If a match is found, the value of *tagVariable* is appended as tag to the image name. Note that it is also possible to specify digests in the containers input for artifact substitution.
 
 > [!NOTE]
-> While it is possible to author deploy, promote and reject actions with deployment strategy related inputs in YAML, support for ManualIntervention task is currently not in place for build pipeline. It is thus advisable to use the deployment strategy related actions and inputs in release pipelines in the following sequence - 1. Deploy action with strategy: canary and percentage: $(someValue). 2. ManaulIntervention task so that one can pause the pipeline and compare the baseline with canary. 3. Promote (run if ManualIntervention is resumed) and reject actions (run if ManualIntervention is rejected)
+> While it is possible to author deploy, promote and reject actions with deployment strategy related inputs in YAML, support for ManualIntervention task is currently not in place for build pipeline. It is thus advisable to use the deployment strategy related actions and inputs in release pipelines in the following sequence:
+> 1. Deploy action with strategy: canary and percentage: $(someValue).
+> 1. ManualIntervention task so that one can pause the pipeline and compare the baseline with canary.
+> 1. Promote (run if ManualIntervention is resumed) and reject actions (run if ManualIntervention is rejected).
 
 ## Promote and reject actions
 <table>
@@ -239,12 +242,12 @@ steps:
     <td>(Required if action == bake and renderType == helm2) Path to the helm chart to be used for bake</td>
   </tr>
   <tr>
-    <td><code>overrideFiles</code><br/>Overridee files</td>
+    <td><code>overrideFiles</code><br/>Override files</td>
     <td>(Optional; Relevant if action == bake and renderType == helm2) Multiline input accepting path to the override files that are to be used when baking manifest files from helm charts</td>
   </tr>
   <tr>
     <td><code>overrides</code><br/>Override values</td>
-    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --set switch when baking manifest files using helm. If multiple overriding key-value pairs are to be used, each key-value pair is to be specified in a separate line (use newline as delimiter between different key-value pairs).</td>
+    <td>(Optional; Relevant if action == bake and renderType == helm2) Additional override values that are to be used via --set switch when baking manifest files using helm. If multiple overriding key-value pairs are to be used, each key-value pair is to be specified in a separate line (use newline as delimiter between different key-value pairs). Key value pairs are specified in the format key:value</td>
   </tr>
   <tr>
     <td><code>releaseName</code><br/>Release Name</td>
@@ -260,7 +263,8 @@ steps:
   </tr>
 </table>
 
-Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step - 
+Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step.
+
 ```YAML
 steps:
 - task: KubernetesManifest@0
