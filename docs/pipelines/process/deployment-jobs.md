@@ -57,13 +57,13 @@ jobs:
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
 
-* enable initialization
-* deploy the update
-* route traffic to the updated version
-* test the updated version after routing traffic
-* in case of failure, run steps to restore to the last known good version. 
+* Enable initialization.
+* Deploy the update.
+* Route traffic to the updated version.
+* Test the updated version after routing traffic.
+* In case of failure, run steps to restore to the last known good version. 
 
-We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
 
 #### Descriptions of life cycle hooks
 
@@ -154,7 +154,7 @@ The following variables are available in this strategy:
 
 `strategy.name`: Name of the strategy. For example, canary.
 <br>`strategy.action`: The action to be performed on the Kubernetes cluster. For example, deploy, promote, or reject.
-<br>`strategy.increment`: The increment value used in the current interaction. This variable is only available in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
+<br>`strategy.increment`: The increment value used in the current interaction. This variable is available only in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
 
 
 
