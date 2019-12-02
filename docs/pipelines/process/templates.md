@@ -17,11 +17,11 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Templates let you define logic and parameters that can be reused. There are two types of templates: includes templates and extends templates. 
+Templates let you define logic, variables, and parameters that can be reused. There are two types of templates: includes templates and extends templates. 
 
-An includes template contains reuseable content that can be inserted into multiple YAMLs. An includes template functions like an include directive in many programming languages where the contents of one file are inserted into another file. 
+An includes template contains reuseable content that can be inserted into multiple YAMLs. An includes template functions like an include directive in many programming languages where content from one file is inserted into another file. 
 
-An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it. An extends template works more like an object class. One extends template defines how other templates can be implemented. 
+An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it. An extends template works more like an object class in programming where an extends template defines how other templates can be implemented. 
 
 ## Includes templates
 Includes templates let you copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file includes template contains steps that are reused in `azure-pipeline.yml`.  
