@@ -55,7 +55,7 @@ jobs:
 
 ### Deployment strategies
 
-When deploying application updates, it's important that the technique that's used to deliver the update will: 
+When you're deploying application updates, it's important that the technique you use to deliver the update will: 
 
 * enable initialization
 * deploy the update
