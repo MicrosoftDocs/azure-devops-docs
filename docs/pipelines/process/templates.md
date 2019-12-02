@@ -17,7 +17,7 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Use templates to define logic and parameters that can be reused. There are two types of templates - includes and extends. An includes template contains re-useable content that can be inserted into multiple YAMLs. An extends template defines the outer structure allowed in a YAML.   
+Use templates to define logic and parameters that can be reused. There are two types of templates - includes and extends. An includes template contains re-useable content that can be inserted into multiple YAMLs. An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it.
 
 ## Includes templates
 Includes templates let you copy content from one YAML and re-use it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. This YAML include template contains npm steps that are re-used in `azure-pipeline.yml`.  
@@ -49,17 +49,14 @@ jobs:
 
 ## Extends templates
 
-Extends templates provide a framework that can be used to define additional YAMLs. You define child YAMLs from a parent YAML. 
+Extends templates provide a structure that can be used to define additional YAMLs. You define child YAMLs from a parent YAML. The `parent.yml` defines the parameter `buildSteps`, which is then used in the child template `azure-pipelines.yml`. In `parent.yml`, if a `buildStep` gets passed with a script value, then it is rejected and the build fails. 
 
 ```yaml
-# File: parent.yml (NEEDS WORK)
+# File: parent.yml
 parameters:
-- name: buildSteps
-  type: stepList
-  default: []
-- name: path
-  type: string
-  default: '**\*.sln'
+- name: buildSteps #name parameter
+  type: stepList #set type StepList: sequence of steps
+  default: [] #set default parameter value
 
 stages:
 - stage: secure_buildstage
@@ -68,7 +65,7 @@ stages:
   - job: secure_buildjob
     steps:
 
-    - script: echo This happens before user code
+    - script: echo This happens before code 
       displayName: 'Base: Pre-build'
 
     - script: echo Building
@@ -81,12 +78,12 @@ stages:
           ${{ if eq(pair.key, 'script') }}:
             'Rejecting Script: ${{ pair.value }}': error             
 
-    - script: echo Hello, world!
+    - script: echo This happens after code
       displayName: 'Base: Signing'
 ```
 
 ```yaml
-# File: azure-pipelines.yml (NEEDS WORK)
+# File: azure-pipelines.yml
 trigger:
 - master
 
@@ -94,11 +91,11 @@ extends:
   template: parent.yml
   parameters:
     buildSteps:  
-      - bash: echo Test
+      - bash: echo Test #Passes
         displayName: Test - Will Pass
       - bash: echo "Test"
         displayName: Test 2 - Will Pass
-      - script: echo "Script Test" # Will break script
+      - script: echo "Script Test" # Comment out to successfully pass
         displayName: Test 3 - Will Fail
 ```
 
@@ -214,6 +211,9 @@ The `parameters` section defines what parameters are available in the template a
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
 
 To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
+
+### Data types for template parameters
+
 
 ### Job, stage, and step templates with parameters
 
