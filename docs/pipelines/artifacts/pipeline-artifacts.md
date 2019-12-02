@@ -211,6 +211,10 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
    '**/*.js'
    ```
 
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
+
 ---
 
 #### Multiple artifacts
@@ -251,6 +255,10 @@ steps:
    ```
    '**/*.zip'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 
