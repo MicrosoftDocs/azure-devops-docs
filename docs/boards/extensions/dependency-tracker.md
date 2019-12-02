@@ -11,7 +11,7 @@ ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 11/22/2019
+ms.date: 12/02/2019
 ---
 
 # Plan and track dependencies using the Dependency Tracker extension
@@ -411,8 +411,29 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>queryFields
-<blockquote>TBD</blockquote></td>
-<td>Default: <pre>{TBD}</pre></td>
+<blockquote>Specifies the custom fields to use in place of the system fields used by the dependency tracker to return linked work item results. By default. system reference names are used to return values for the following fields:
+<ul>
+<li>areaPath - Area Path</li>
+<li>assignedTo - Assigned To</li>
+<li>id - ID</li>
+<li>areapath - IterationID</li>
+<li>areapath - Iteration Path</li>
+<li>areapath - Priority</li>
+<li>areapath - State</li>
+<li>areapath - Tags</li>
+<li>teamProject - Team Project</li>
+<li>title - Title</li>
+<li>workItemType - Work Item Type</li>
+</ul>
+</blockquote>
+</td>
+<td>
+If a custom field is used in place of one of the system fields, you specify the substitution by entering: 
+<pre>{
+    title: "Custom.Title",
+    assignedTo: "Custom.AssignedTo" 
+}</pre>
+</td>
 </tr>
 <tr>
 <td>dependencyWorkItemTypes
@@ -436,7 +457,7 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>selectedDependencyWorkItemTypes
-<blockquote>Restricts the work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. </blockquote></td>
+<blockquote>Restricts the  initial focus to just those work item types that the dependency tracker displays or lists. Based on the default "Any", any work item type that contains a dependency link type is displayed or listed. Users can change the focus through filtering. </blockquote></td>
 <td>Default: <pre>Any</pre><br/>
 <p>To restrict the work item types to just Epics and Features, specify:</p> 
 <pre>
@@ -448,7 +469,7 @@ The following table describes each of the property items specified in the config
 </tr>
 <tr>
 <td>selectedReleases
-<blockquote>Restricts the focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied.  </blockquote></td>
+<blockquote>Restricts the initial focus to just those work items that are assigned to those Iteration Paths equal to or under the specified releases. Based on the blank default, no restrictions are applied. Users can change the focus through filtering. </blockquote></td>
 <td>Default: <pre>[]</pre><br/>
 <p>To restrict the work item types to just Release 1 and Release 2 for the Fabrikam project, specify:</p> 
 <pre>[  
@@ -532,14 +553,12 @@ The following table describes each of the property items specified in the config
 <td>Default: <pre>["1-High", "2-Medium", "3-Low"]</pre></td>
 </tr>
 <tr>
-<td>releases
-<blockquote>TBD</blockquote></td>
-<td>Default: <pre>[]</pre></td>
-</tr>
-<tr>
 <td>partnerAccounts
-<blockquote>TBD </blockquote></td>
-<td>Default: <pre>[]</pre></td>
+<blockquote>Optional configuration that specifies which Azure DevOps organizations are selectable from the Dependency dialog when creating a Cross account dependency. If not specified it will generate a list based on previous organizations that the user has visited. 
+</blockquote></td>
+<td>Default: <pre>[]</pre>
+Example: <pre>["account-1", "account-2"]</pre>
+</td>
 </tr>
 <tr>
 <td>timelineEnabled
