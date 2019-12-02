@@ -167,7 +167,7 @@ parameters:
 
 steps:
     - script: echo This happens before code 
-    - script: echo {{ parameters.yesNo }}
+    - script: echo ${{ parameters.yesNo }}
 ```
 
 ```yaml
