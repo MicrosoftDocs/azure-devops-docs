@@ -53,11 +53,19 @@ jobs:
   strategy: [ deployment strategy ] # see deployment strategy schema
 ```
 
-### Deployment strategies:
+### Deployment strategies
 
-When deploying application updates, it's important that the technique that's used to deliver the update enables initialization, deploys the update, routes traffic to the updated version, tests the updated version after routing traffic, and, in case of failure, runs steps to restore to the last known good version. We achieve this by using life cycle hooks where you can run your steps during deployment. Each of the life cycle hooks resolve into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs), (*or a container or validation job in future*). This is controlled by the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+When deploying application updates, it's important that the technique that's used to deliver the update will: 
 
-#### Descriptions of life cycle hooks:
+* enable initialization
+* deploy the update
+* route traffic to the updated version
+* test the updated version after routing traffic
+* in case of failure, run steps to restore to the last known good version. 
+
+We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+
+#### Descriptions of life cycle hooks
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
@@ -69,7 +77,7 @@ When deploying application updates, it's important that the technique that's use
 
 `on: failure` or `on: success`: Used to run steps that perform rollback actions or clean-up. 
 
-### RunOnce deployment strategy:
+### RunOnce deployment strategy
 
 `runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
 
@@ -104,9 +112,9 @@ strategy:
 ```
 
 
-### Canary deployment strategy:
+### Canary deployment strategy
 
-Canary deployment strategy is an advance deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. Currently, this is applicable to only Kubernetes resources.
+Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. Currently, this is applicable to only Kubernetes resources.
 
 
 ```YAML
@@ -139,12 +147,13 @@ strategy:
           steps:
           ...
 ```
-Canary deployment strategy supports the `preDeploy` life cycle hook (executed once) and iterates with the `deploy`, `routeTraffic` and `postRouteTraffic` life cycle hooks. It then exits with either the `success` or `failure` hook.
+Canary deployment strategy supports the `preDeploy` life cycle hook (executed once) and iterates with the `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks. It then exits with either the `success` or `failure` hook.
 
  
-#### The following variables are available in this strategy:
-`strategy.name`: Name of the strategy. E.g., canary.
-<br>`strategy.action`: The action to be performed on the Kubernetes cluster. E.g., deploy, promote, or reject.
+The following variables are available in this strategy:
+
+`strategy.name`: Name of the strategy. For example, canary.
+<br>`strategy.action`: The action to be performed on the Kubernetes cluster. For example, deploy, promote, or reject.
 <br>`strategy.increment`: The increment value used in the current interaction. This variable is only available in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
 
 
@@ -216,7 +225,7 @@ This is particularly useful in the cases where the same connection detail is set
 
 ### Canary deployment strategy
 
-In the next example, the canary strategy for AKS will first deploy the changes with 10% pods, followed by 20%, while monitoring the health during `postRouteTraffic`. If all goes well, it will promote to 100%.  
+In the next example, the canary strategy for AKS will first deploy the changes with 10-percent pods, followed by 20 percent, while monitoring the health during `postRouteTraffic`. If all goes well, it will promote to 100 percent.  
 
 ```YAML
 jobs: 
