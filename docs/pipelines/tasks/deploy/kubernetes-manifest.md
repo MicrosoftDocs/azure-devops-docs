@@ -260,7 +260,8 @@ steps:
   </tr>
 </table>
 
-Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step 
+Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step.
+
 ```YAML
 steps:
 - task: KubernetesManifest@0
