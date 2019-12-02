@@ -51,7 +51,7 @@ Add epics to track significant features or requirements. Use issues to track use
 
 #### [Agile process](#tab/agile-process) 
 
-The Agile process provides several work item types&mdash;user stories, bugs, features, epics, and tasks&mdash;.  As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
+The Agile process provides several work item types&mdash;user stories, bugs, features, epics, and tasks. As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Workflow |
