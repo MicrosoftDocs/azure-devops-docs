@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/13/2019
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -118,6 +118,17 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
+            <td rowspan="8"><a href="2019/sprint-161-update.md" data-raw-source="[25 November 2019](2019/sprint-161-update.md)">25 November 2019</a></td>
+            <td>Use publish profile to deploy Azure WebApps for Windows from the Deployment Center</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
+        <tr>
             <td rowspan="22"><a href="2019/sprint-160-update.md" data-raw-source="[4 November 2019](2019/sprint-160-update.md)">4 November 2019</a></td>
             <td>Cross-repo branch policy administration</td><td>Repos</td><td>Future</td>
         </tr>
@@ -142,7 +153,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>A Sprint Burndown widget with everything you've been asking for</td><td>Reporting</td><td>Future</td></tr>
         <tr><td>Synchronous scroll for editing wiki pages</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Page visits for wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr>
         <tr>
             <td rowspan="17"><a href="2019/sprint-159-update.md" data-raw-source="[14 October 2019](2019/sprint-159-update.md)">14 October 2019</a></td>
             <td>Azure Boards app for Microsoft Teams</td><td>Boards</td><td>N/A</td>
