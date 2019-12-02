@@ -17,7 +17,11 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Use templates to define logic and parameters that can be reused. There are two types of templates - includes and extends. An includes template contains reuseable content that can be inserted into multiple YAMLs. An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it.
+Templates let you define logic and parameters that can be reused. There are two types of templates: includes templates and extends templates. 
+
+An includes template contains reuseable content that can be inserted into multiple YAMLs. An includes template functions like an include directive in many programming languages where the contents of one file are inserted into another file. 
+
+An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it. An extends template works more like an object class. One extends template defines how other templates can be implemented. 
 
 ## Includes templates
 Includes templates let you copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file includes template contains steps that are reused in `azure-pipeline.yml`.  
@@ -100,8 +104,7 @@ extends:
 
 ## Variable reuse
 
-Variables can be defined in one YAML and used in another with an include template. 
-
+Variables can be defined in one YAML and used in another template using an include template. 
 
 ```yaml
 # File: vars.yml
@@ -121,10 +124,9 @@ steps:
 
 ## Passing parameters
 
-You can pass also parameters to templates. The `parameters` section defines what parameters are available in the template and their default values. 
-Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. Parameters include an include a data type, which restricts what values can be passed to it. For example, a variable with a boolean data type will only accept the values `true` or `false`. 
+You can pass also parameters to templates. The `parameters` section defines what parameters are available in the template and their default values. To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
-To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
+Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. Parameters include an include a data type, which restricts what values can be passed to it. For example, a variable with a boolean data type will only accept the values `true` or `false`. 
 
 There are data types available for runtime and template parameters. 
 
@@ -156,7 +158,7 @@ There are data types available for runtime and template parameters.
 | `stageList` | sequence of stages
 
 
-You can define a parameter in one YAML and then reuse the parameter in a different YAML. When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+You can define a parameter in one YAML and then reuse the parameter in a different YAML. In `azure-pipeline.yml`, When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
 
 ```yaml
 # File: simple-param.yml
@@ -181,16 +183,13 @@ extends:
         yesNo: false # set to a non-boolean value to have the build fail
 ```
 
+## Step, job, and stage reuse with includes templates
 
-
-
-## Step, job, and stage reuse with include templates
-
-You can reuse steps, jobs, and stages across multiple jobs with include templates. 
+You can reuse steps, jobs, and stages across multiple jobs with includes templates. 
 
 ### Step reuse
 
-You can reuse one or more steps across several jobs with include templates.
+You can reuse one or more steps across several jobs with includes templates.
 In addition to the steps from the template, each job can define additional steps.
 
 ```yaml
@@ -227,7 +226,7 @@ jobs:
 
 ### Job reuse
 
-Much like steps, jobs can be reused with include templates.
+Much like steps, jobs can be reused with includes templates.
 
 ```yaml
 # File: templates/jobs.yml
@@ -250,7 +249,7 @@ jobs:
 
 ### Stage reuse
 
-Stages can also be reused with include templates.
+Stages can also be reused with includes templates.
 
 ```yaml
 # File: templates/stages.yml
