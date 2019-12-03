@@ -49,7 +49,6 @@ To publish code coverage results for Javascript with istanbul using YAML, see [J
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Code coverage tool</td><td>(Required) The tool with which code coverage results are generated. The supported formats include Cobertura and JaCoCo.</td></tr>
 <tr><td>Summary file</td><td>(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`</td></tr>
 <tr><td>Path to Source files</rd><td>(Optional) Path to source files is required when coverage XML reports do not contain absolute path to source files.
 For example, JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.
