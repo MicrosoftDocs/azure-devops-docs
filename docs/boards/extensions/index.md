@@ -36,12 +36,23 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - ::: moniker-end
 
-::: moniker range="> tfs-2018 < azure-devops"
+::: moniker range="tfs-2018"
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
  :: moniker-end
+
+
+
+::: moniker range="azure-devops-server"
+
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
+- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
+- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+::: moniker-end
 
 
 ::: moniker range="azure-devops"
@@ -51,23 +62,23 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Dependency Tracker](dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
-
-::: moniker-end
-
-
-
-::: moniker range=">= azure-devops-server"
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
 ::: moniker-end
 
 
 
+
+
+
 ## Customize work item types
 
-::: moniker range="> tfs-2017 <= tfs-2018"
+::: moniker range="> tfs-2017 <= tfs-2018"  
+
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-server"
 
@@ -76,7 +87,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization)
 - [Split!](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-extension-split-work)
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
-- 
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-server"
@@ -98,7 +109,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 - [Work Item Details Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
-- 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
