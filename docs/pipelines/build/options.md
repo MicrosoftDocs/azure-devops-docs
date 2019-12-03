@@ -113,7 +113,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
     ![Repository access](_img/options/allow-repo-access.png)
 
-2.  Choose the **+** icon and start to type in the name **SpaceGameWeb**.
+2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user](_img/options/add-build-service-user.png)
 
@@ -123,13 +123,9 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 #### Configure permissions to access other resources in the same project collection
 
-Example: Giving permissions to the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity in the `fabrikam-tailspin/FabrikamFiber` project.
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
 
-- To configure project-level permissions, navigate to Project
 
-In the FabrikamFiber project, navigate to Project settings, Repositories, Git repositories, FabrikamFiber, and choose the **+** icon. 
- 
-Example: Giving permissions to the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity in the `fabrikam-tailspin/FabrikamFiber` project:
 
 
 ## Build (run) number
