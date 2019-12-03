@@ -44,11 +44,7 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
     ![Get extension](_img/get-vsts-extensions/get-extension.png)
 
-5.  Select the number of users who need access.
-
-    ![Select number of users who need extension access](_img/get-vsts-extensions/select-paid-users.png)
-
-6.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
+5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
     ![Select organization for this extension](_img/get-vsts-extensions/select-install-extension.png)
 
@@ -121,64 +117,6 @@ version: 5.0.1.34507
 
 * * *
 
-## Assign extensions to users
-
-After you install an extension, assign it to your users so they can start using it.
-To assign extensions, you need [Project Collection Administrator or organization Owner permissions](./faq-extensions.md#find-owner).
-
-::: moniker range=">= azure-devops-2019"
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
-
-3. Select **Users**.
-
-    ![Users page](../_shared/_img/settings/open-organization-settings-users-vert.png)
-   
-4. Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
-
-    ![Check that users have required access to extension assignment](_img/user-access-level.png)
-
-   To find the access that your extension requires, see the extension's description in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
-
-5.	To assign the extension, highlight the user, choose **Manage projects**, and then select the **Extensions tab**.
-
-    ![Select Manage projects to manage extensions](_shared/_img/select-manage-projects-to-manage-extensions.png)
-
-6. Assign the extension and **Save changes**.
-
-    ![Assign](_img/assign-extension.png)
-
-Tell your team about this extension, so they can start using its capabilities.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1.	Sign in to your organization: ```https://dev.azure.com/{organization}```.
-
-2.	Go to **Users**.
-
-   <img alt="Go to Users" src="../_shared/_img/users-hub-updated-ui.png" style="border: 1px solid #CCCCCC" />
-
-3.	Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
-
-   <img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
-
-   To find the access that your extension requires, see the extension's description in the [Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab.
-
-4.	To assign the extension, right-click or select the ellipses (...) for the user you want to assign access to.
-
-   ![Manage extensions](_img/assign-extensions/manage-extensions.png)
-
-5.	Assign the extension and **Save changes**.
-
-   ![Assign](_img/assign-extensions/assign-extension.png)
-
-Tell your team about this extension, so they can start using its capabilities.
 
 ::: moniker-end
 
