@@ -109,9 +109,17 @@ A solution is to assign permissions directly to the project-scoped identity, if 
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
 
-1. In the FabrikamFiber project, navigate to Project settings, Repositories, Git repositories, FabrikamFiber
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
-2.  Choose the **+** icon. 
+    ![Repository access](_img/options/allow-repo-access.png)
+
+2.  Choose the **+** icon and start to type in the name **SpaceGameWeb**.
+
+    ![Add user](_img/options/add-build-service-user.png)
+
+3. Configure the desired permissions for that user.
+
+    ![Set permissions](_img/options/set-repo-permissions.png)
 
 #### Configure permissions to access other resources in the same project collection
 
