@@ -138,7 +138,7 @@ When you're filtering through audit events, it’s best to leverage the “area�
 ### Areas
 
 > [!Note]
-> While aduiting is in a public preview, we're working hard to get more areas auditied. New auditing events are being added monthly.
+> While aduiting is in a public preview, we're working hard to get more areas audited. New auditing events are being added monthly.
 >
 > If you can't find the auditing event you're looking for in the below table, be sure to check the REST API as well https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions. Just replace {YOUR_ORGANIZATION} with the name of your organization. The API will show a list of all audit events your organization could emit. 
 
