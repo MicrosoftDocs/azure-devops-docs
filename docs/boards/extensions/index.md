@@ -34,14 +34,14 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker range="tfs-2017"
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- ::: moniker-end
+::: moniker-end
 
 ::: moniker range="tfs-2018"
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
- :: moniker-end
+::: moniker-end
 
 
 
