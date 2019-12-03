@@ -10,7 +10,7 @@ ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops-2019' --TODO
+monikerRange: '> azure-devops-2019'
 ms.date: 11/18/2019
 ---
 
