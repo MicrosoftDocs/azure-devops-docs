@@ -544,7 +544,7 @@ Below are scenarios that won’t consume a parallel job:
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
 Learn more:
-[How a parallel job is consumed by a pipeline](a/zure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline)
+[How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline)
 [Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline)
 [Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs)
 [Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
