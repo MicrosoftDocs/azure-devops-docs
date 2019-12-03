@@ -17,6 +17,14 @@ monikerRange: 'azure-devops'
 
 This task can be used for installing a specific version of helm binary on agents.
 
+::: moniker range="> tfs-2018"
+
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/HelmInstallerV1.md)]
+
+::: moniker-end
+
 ## Task inputs
 
 <table>
@@ -28,7 +36,7 @@ This task can be used for installing a specific version of helm binary on agents
   </thead>
   <tr>
     <td><code>helmVersionToInstall</code><br/>Helm Version Spec</td>
-    <td>(Required) The version of helm to be installed on the agent. Acceptable values are 'latest' or any semver string like '2.13.1'<br/>Default value: latest</td>
+    <td>(Optional) The version of Helm to be installed on the agent. Acceptable values are <code>latest</code> or any semantic version string like <code>2.14.1</code><br/>Default value: <code>latest</code></td>
   </tr>
 </table>
 
@@ -47,7 +55,7 @@ The following YAML example demonstrates the use of an explicit version string ra
 - task: HelmInstaller@1
   displayName: Helm installer
   inputs: 
-    helmVersionToInstall: 2.13.0
+    helmVersionToInstall: 2.14.1
 ```
 
 ## Open source

@@ -5,11 +5,11 @@ ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 10/31/2019
 ---
 
 # Use the modal dialog control
@@ -18,12 +18,16 @@ This page shows different samples about the modal dialog control.
 
 **Go to [API Reference](../../reference/client/controls/modaldialog.md) for more details.**
 
+[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+
 <div class="alert alert-warning">
-When using this modal dialog, dialog overlay will cover only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see <a href="../using-host-dialog.md" data-raw-source="[Using host dialog](../using-host-dialog.md)">Using host dialog</a>.
+When using this modal dialog, dialog overlay covers only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see <a href="../using-host-dialog.md" data-raw-source="[Using host dialog](../using-host-dialog.md)">Using host dialog</a>.
 </div> 
 
 <a name="basic"></a>
+
 ## Simple modal dialog
+
 Below sample use the simplistic modal dialog usage where no button is displayed and `contextText` is specified.
 ``` typescript
 	import Dialogs = require("VSS/Controls/Dialogs");
@@ -38,7 +42,9 @@ Below sample use the simplistic modal dialog usage where no button is displayed 
 ```
 
 <a name="form"></a>
+
 ## Displaying a form in a modal dialog
+
 Below sample shows displaying a form in a modal dialog and getting the result when it is valid.
 
 ``` html
@@ -112,7 +118,9 @@ Below sample shows displaying a form in a modal dialog and getting the result wh
 ```
 
 <a name="confirmation"></a>
+
 ## Confirmation dialog
+
 Below sample displays how to use modal dialog as a confirmation dialog.
 
 ``` typescript

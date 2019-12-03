@@ -3,10 +3,10 @@ title: Team Foundation Service updates - July 10
 description: VSTS release notes for July 10 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: fb442da5-ffd1-4c26-9864-78fa94c32735
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -40,7 +40,7 @@ With today’s change, we’ve restricted these permissions to only team adminis
 
 ![Team permissions](_img/7_10_04.png)
 
-That’s it for sprint 50. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice)
+That’s it for sprint 50. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice)
 
 Thanks,
 

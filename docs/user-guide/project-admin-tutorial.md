@@ -1,26 +1,26 @@
 ---
-title: Get started as a project admin or organization owner
+title: Get started as a project admin or organization Owner
 titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/11/2019
+ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Manage your project 
+# Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
 With most Azure DevOps services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-That said, as an organization owner or a project administrator, there are a few tasks you might want to do once your created your project to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
+That said, as an organization Owner or a Project Administrator, there are a few tasks you might want to do once your created your project to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
 
 
 ## Add users to your project
@@ -190,7 +190,7 @@ To learn more, see the following articles:
   
 ## Install and manage extensions 
 
-An extension is an installable unit that adds new capabilities to your projects. You can find extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), Azure DevOps tab to support the following functions:
+An extension is an installable unit that adds new capabilities to your projects. You can find extensions in Azure DevOps to support the following functions:
 
 - Planning and tracking of work items, sprints, scrums, etc.  
 - Build and release flows.
@@ -206,7 +206,7 @@ For example, to support [code search](../project/search/code-search.md), install
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
-You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
+You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
 ::: moniker-end
 

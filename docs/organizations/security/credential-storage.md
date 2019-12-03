@@ -3,17 +3,19 @@ title: Azure DevOps Services - Stored Credentials
 description: Learn how Microsoft stores your credentials for Azure DevOps
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.manager: jillfra
-ms.date: 01/25/2019
+ms.manager: mijacobs
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # How we store your credentials for Azure DevOps Services
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## Credential security
 

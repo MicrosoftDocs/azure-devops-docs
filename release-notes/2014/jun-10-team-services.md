@@ -3,10 +3,10 @@ title: Visual Studio Online Updates - Jun 10
 description: VSTS release notes for June 10 2014
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: cf8a4f31-2f47-44ee-8014-6a435f273ebb
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -18,9 +18,8 @@ Pull Requests have been one of the top [customer requests](https://visualstudio.
 
 ![Pull Requests](_img/6_10_01.png)
 
-You can learn more about Pull Requests on the [Visual Studio devops blog](http://go.microsoft.com/fwlink/?prd=12493&pver=1.0&sbp=TFS&plcid=0x409&clcid=0x409&ar=VC&sar=Pull%20Request).
+You can learn more about Pull Requests on the [Visual Studio devops blog](https://go.microsoft.com/fwlink/?prd=12493&pver=1.0&sbp=TFS&plcid=0x409&clcid=0x409&ar=VC&sar=Pull%20Request).
 
 Thanks,
 
 Matt Mitrik
-

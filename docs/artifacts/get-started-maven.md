@@ -1,15 +1,15 @@
----
-title: Get started with Maven packages in Azure DevOps Services and TFS
+﻿---
+title: Get started with Maven packages
 description: Quickly start hosting Maven artifacts in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: jenp
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2018'
 
 ::: moniker range="tfs-2018"
 
-This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](license-azure-artifacts.md).
+This quickstart assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](start-using-azure-artifacts.md).
 
 > Azure Artifacts is an extension that comes pre-installed on TFS 2017 or newer (Maven is only available in 2018 or newer), if it was removed from your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
@@ -31,7 +31,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 1. Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
 
-1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
+2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 ## Create a feed
 

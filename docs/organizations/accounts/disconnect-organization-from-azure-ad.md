@@ -1,5 +1,5 @@
----
-title: Disconnect organization from Azure Active Directory
+﻿---
+title: Disconnect organization from Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/14/2019
@@ -25,7 +25,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 ## Prerequisites
 
-* Before you disconnect your organization from your directory, make sure to **change the organization owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
+* Before you disconnect your organization from your directory, make sure to **change the organization Owner to a Microsoft account** and not to a school or work account. You can't sign in to your organization unless your work or school account has the same email address as your Microsoft account.
 
 * Add your Microsoft account to the Project Collection Administrator group in Organization Settings and confirm that you have Global Administrator Permissions in your Azure AD for your Microsoft account. You need both because Azure AD users can't disconnect organizations from directories. You can add Microsoft accounts to a directory as external users.
 
@@ -64,3 +64,4 @@ For answers to frequently asked questions about connecting, disconnecting, or ch
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
 * [Access with Azure AD](access-with-azure-ad.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

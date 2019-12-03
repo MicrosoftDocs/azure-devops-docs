@@ -5,7 +5,7 @@ description: Understand lock types
 ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -56,7 +56,7 @@ A lock may be placed either as its own operation or as part of several other ope
 
 You can unlock an item explicitly by using the unlock command or implicitly when you check in. When you check in pending changes to a locked item, Team Foundation removes any locks.
 
-> **Note:**  
+> [!NOTE]
 > By default, the UnlockOther permission is granted to administrators only. If you have the UnlockOther permission, you can remove a lock from an item in the workspace of another user by using the [Lock Command](lock-command.md).
 
 ## See Also

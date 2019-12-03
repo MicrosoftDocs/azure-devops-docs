@@ -7,12 +7,12 @@ description: Understand the fundamental differences between Azure DevOps Service
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 06/02/2019 
+ms.date: 11/13/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
@@ -69,7 +69,7 @@ When you plan a move, a few fundamental differences between Azure DevOps Server 
 ### Azure DevOps Services scales by using organizations and projects
 
 Azure DevOps Services differs slightly from Azure DevOps Server. There are currently only two options for scoping and scaling
-data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always have exactly one project collection. Organizations can have many projects, such as project collections.
+data: organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```), and they always have exactly one project collection. Organizations can have many projects within a collection.
 
 <!--- Commenting out forward looking content for now 
 We are planning a third option for scoping and scaling data in Azure DevOps Services: a new entity called an Enterprise. Rather than adding support for multiple project collections within an organization, multiple
@@ -103,13 +103,13 @@ Project collections serve as containers for security and administration, and phy
 
 Finally, projects are used to encapsulate the assets of individual software projects, including source code, work items, and so on.
 
-To learn more, see [Plan your Azure DevOps organization structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure.md).
+Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 
 ## Authentication
 
-With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](http://www.microsoft.com/account) credentials or with
+With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis)  
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 

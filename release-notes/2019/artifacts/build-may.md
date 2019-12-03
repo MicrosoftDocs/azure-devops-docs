@@ -1,5 +1,6 @@
 ---
 title: Azure Artifacts - Microsoft Build Announcements
+description: See the Microsoft build announcements for Azure Artifacts, May 2019, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
@@ -21,7 +22,7 @@ description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

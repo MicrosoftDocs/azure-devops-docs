@@ -2,7 +2,8 @@ To create a publisher using the TFS Cross Platform Command Line Interface, simpl
 
 <pre>tfx extension publisher create</pre>
 
-**Note**: The `Publisher name` must match the publisher property in your extension manifest.
+> [!NOTE]
+> The `Publisher name` must match the publisher property in your extension manifest.
 
 #### Example
 

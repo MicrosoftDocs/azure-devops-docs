@@ -6,17 +6,21 @@ ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 06/02/2019
+ms.date: 11/26/2019
 ---
 
 # About security and identity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+
+For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
 Azure DevOps Services, our cloud-hosted application, is based on the capabilities of Azure DevOps Server 2019 (formerly known as Team Foundation Server), with additional cloud services. Both support software development projects, from planning through deployment. 
 Azure DevOps uses Microsoft Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. 
@@ -34,7 +38,7 @@ The main security concepts to understand are
 
 ## Authentication
 
-Authentication verifies a user's identify based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
+Authentication verifies a user's identity based on the credentials provided when they sign into Azure DevOps. These systems integrate with and rely upon the security features provided by these additional systems:
 - Azure Active Directory (Azure AD)
 - Microsoft account (MSA)
 - Active Directory (AD)
@@ -45,7 +49,7 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with Azure DevOps services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
+Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
 *	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
@@ -70,7 +74,7 @@ APIs support only OAuth.
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
-or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
+or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 

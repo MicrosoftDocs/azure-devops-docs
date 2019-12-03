@@ -6,11 +6,11 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: seodec18
-ms.manager: jillfra
-ms.author: ronai
-author: RoopeshNair
+ms.manager: mijacobs
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 03/21/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Check policy compliance with gates

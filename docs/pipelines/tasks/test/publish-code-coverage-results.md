@@ -5,7 +5,7 @@ ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -20,12 +20,14 @@ monikerRange: '>= tfs-2015'
 Use this task in a build pipeline to publish code coverage results produced when
 running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
 The task supports popular coverage result formats such as
-[Cobertura](http://cobertura.github.io/cobertura/) and [JaCoCo](http://www.eclemma.org/jacoco/).
+[Cobertura](https://cobertura.github.io/cobertura/) and [JaCoCo](https://www.eclemma.org/jacoco/).
 
-Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core.md),
-[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md), and [Xcode](../build/xcode.md)
+This task can only be used in Build pipelines and is not supported in Release pipelines.
+
+Tasks such as [Visual Studio Test](vstest.md), [.NET Core](../build/dotnet-core-cli.md),
+[Ant](../build/ant.md), [Maven](../build/maven.md), [Gulp](../build/gulp.md), [Grunt](../build/grunt.md)
 also provide the option to publish code coverage data to the pipeline.
-If you are using these tasks, you do not need a separate [Publish Test Results task](publish-test-results.md)
+If you are using these tasks, you do not need a separate [Publish Code Coverage Results task](publish-code-coverage-results.md)
 in the pipeline.
 
 ## Demands
@@ -33,12 +35,14 @@ in the pipeline.
 [none]
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
-To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../languages/javascript.md) in the Languages section of these topics, which also includes examples for other languages. 
+To publish code coverage results for Javascript with istanbul using YAML, see [JavaScript](../../ecosystems/javascript.md) in the Ecosystems section of these topics, which also includes examples for other languages. 
 
 ::: moniker-end
 
@@ -50,10 +54,13 @@ To publish code coverage results for Javascript with istanbul using YAML, see [J
 <tr><td>Path to Source files</rd><td>(Optional) Path to source files is required when coverage XML reports do not contain absolute path to source files.
 For example, JaCoCo reports do not use absolute paths and when publishing JaCoCo coverage for Java apps, the pattern would be similar to `$(System.DefaultWorkingDirectory)/MyApp/src/main/java/`.
 This input is also needed if tests are run in a docker container. This input should point to absolute path to source files on the host. For e.g., `$(System.DefaultWorkingDirectory)/MyApp/`</td></tr>
-<tr><td>Report directory</td><td>(Optional) Path of the code coverage HTML report directory. The report directory is published for later viewing as an artifact of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura`</td></tr>
-<tr><td>Additional files</td><td>(Optional) File path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/**/*.exec`</td></tr>
 <tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on Azure Pipelines and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+
+
+<tr>
+<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+</tr>
+
 </table>
 
 ## Docker
@@ -71,13 +78,10 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
 
-::: moniker range="< azure-devops"
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
+### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
+At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 
+If you use multiple publish code coverage tasks in the pipeline, the summary and report is shown for the last task. Any previously uploaded data is ignored.
 
 [!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
 

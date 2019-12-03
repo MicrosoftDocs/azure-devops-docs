@@ -1,14 +1,14 @@
 ```YAML
-# Download Package
-# Download a package from a Package Management feed in Azure Artifacts or TFS.  Requires the Package Management extension.
+# Download package
+# Download a package from a package management feed in Azure Artifacts
 - task: DownloadPackage@1
   inputs:
-    #packageType: 'NuGet' # Options: maven, npm, nuget, pypi
-    feed: 
+    #packageType: 'nuget' # Options: maven, npm, nuget, pypi, upack
+    feed: # <feedId> for organization-scoped feeds, <projectId>/<feedId> for project-scoped feeds.
     #view: ' ' # Optional
     definition: 
     version: 
-    #files: '*' # Optional
+    #files: '**' # Optional
     #extract: true # Optional
     #downloadPath: '$(System.ArtifactsDirectory)' 
 ```

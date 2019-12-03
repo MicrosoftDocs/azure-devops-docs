@@ -1,5 +1,6 @@
 ---
 title: Azure Pipelines - Sprint 151 Update
+description: See the Sprint 151 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
@@ -23,7 +24,7 @@ ms.date: 04/30/2019
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 

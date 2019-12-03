@@ -1,11 +1,11 @@
----
-title: Add files to version control using the TFVC Add command
+﻿---
+title: Add files to version control using TFVC Add command
 titleSuffix: Azure Repos
 description: Use the TFVC Add command to add files to version control in TFS
 ms.assetid: 0b61e4c6-a3da-48d6-bda0-7b14452049a4
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2015'
 
 Adds files and folders to version control.
 
->**Tip:**  
->Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
+> [!TIP]
+> Before you add files to version control, you should first set up the workspace on your dev machine. See [Workspace Command](workspace-command.md) or [Set up Team Foundation Version Control on your dev machine](set-up-team-foundation-version-control-your-dev-machine.md).  
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 

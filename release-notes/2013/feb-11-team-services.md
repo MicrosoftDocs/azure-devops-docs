@@ -3,10 +3,10 @@ title: Team Foundation Service updates - Feb 11
 description: VSTS release notes for February 11 2013
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 566cb23b-4e26-4e37-8494-8791fcce6317
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -66,11 +66,11 @@ Last sprint we added the ability in the web UI to track renames in the commit an
 
 ## Query Using OData
 
-Also of note, during this sprint [Brian Keller announced](http://blogs.msdn.com/b/briankel/archive/2013/01/24/bringing-odata-to-team-foundation-service.aspx) the launch of the [Team Foundation Service OData API (Beta)](https://tfsodata.visualstudio.com/). You can use this api to query over the data in TFS service account using the OData protocol. There is even a Windows 8 sample application (with source) that you can use to try it out.
+Also of note, during this sprint [Brian Keller announced](https://blogs.msdn.com/b/briankel/archive/2013/01/24/bringing-odata-to-team-foundation-service.aspx) the launch of the [Team Foundation Service OData API (Beta)](https://tfsodata.visualstudio.com/). You can use this api to query over the data in TFS service account using the OData protocol. There is even a Windows 8 sample application (with source) that you can use to try it out.
 
 ![Odata](_img/2_11_07.png)
 
-That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That's it for this sprint. See you again in 3 weeks. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

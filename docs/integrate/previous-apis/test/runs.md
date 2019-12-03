@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Runs | REST API Reference for Team Foundation Server
 description: Work with test runs programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: D2ABEFCD-11BE-4155-BA82-3B39A9593505
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

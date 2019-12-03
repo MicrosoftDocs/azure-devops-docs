@@ -4,11 +4,11 @@ description: Libraries for calling Azure DevOps Services REST APIs.
 ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
 ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+ms.date: 10/18/2019
 ---
 
 # REST Clients
@@ -17,6 +17,8 @@ ms.date: 08/04/2016
 
 A REST client simplifies calling [Azure DevOps Services REST APIs](/rest/api/vsts/) from your client-side (JavaScript/TypeScript) extension code.
 
+[!INCLUDE [rest-api-docs-rollout](../../../_shared/rest-api-docs-rollout.md)]
+
 ### Get started
 
 To get started with calling client methods from your extension, see [how to call a REST API](../../develop/call-rest-api.md). In general, the steps are:
@@ -24,7 +26,7 @@ To get started with calling client methods from your extension, see [how to call
 1. Construct or acquire an instance of a client
 2. Call the method on the client instance, passing any necessary parameters
 3. Wait for the response
-   * All REST client methods are non-blocking and return a Promise object. A promise represents a future return value (or exception). Typically you will call `then()` on the returned object, passing a function that you want to have called when the response is received.
+   * All REST client methods are non-blocking and return a Promise object. A promise represents a future return value (or exception). Typically you call `then()` on the returned object, passing a function that you want to have called when the response is received.
 
 ### Available clients
 

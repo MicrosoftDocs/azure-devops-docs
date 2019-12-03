@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 03/27/2019
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,9 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 To run your jobs, you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
@@ -31,21 +33,55 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 
 ## Check prerequisites
 
-::: moniker range="azure-devops"
+::: moniker range="> tfs-2018"
 
-**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/envlinux.md).
+The agent is based on .NET Core 2.1.
+You can run this agent on several Linux distributions.
+We support the following subset of .NET Core supported distributions:
+- x64
+  - CentOS 7, 6 (see note 1)
+  - Debian 9
+  - Fedora 30, 29
+  - Linux Mint 18, 17
+  - openSUSE 42.3 or later
+  - Oracle Linux 7
+  - Red Hat Enterprise Linux 8, 7, 6 (see note 1)
+  - SUSE Enterprise Linux 12 SP2 or later
+  - Ubuntu 18.04, 16.04
+- ARM32 (see note 2)
+  - Debian 9
+  - Ubuntu 18.04
+
+> [!NOTE]
+> Note 1: RHEL 6 and CentOS 6 require installing the specialized `rhel.6-x64` version of the agent.
+
+> [!NOTE]
+> Note 2: ARM instruction set [ARMv7](https://en.wikipedia.org/wiki/List_of_ARM_microarchitectures) or above is required.
+> Run `uname -a` to see your Linux distro's instruction set.
+
+Regardless of your platform, you will need to install Git 2.9.0 or higher.
+We strongly recommend installing the latest version of Git.
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
+
+The agent installer knows how to check for other dependencies.
+You can install those dependencies on supported Linux platforms by running `./bin/installdependencies.sh` in the agent directory.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-**TFS 2018 RTM and older**: The agent is based on CoreCLR 1.0. Make sure your machine is prepared with our prerequisites for either of the supported distributions:
+**TFS 2018 RTM and older**: The shipped agent is based on CoreCLR 1.0.
+We recommend that, if able, you should upgrade to a later agent version (2.125.0 or higher).
+See [Azure Pipelines agent prereqs](?view=azure-devops#check-prerequisites) for more about what's required to run a newer agent.
 
- * [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+If you must stay on the older agent, make sure your machine is prepared with our prerequisites for either of the supported distributions:
 
- * [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
+* [Ubuntu systems](https://aka.ms/vstsagentubuntusystem)
+* [Red Hat/CentOS systems](https://aka.ms/vstsagentredhatsystem)
 
- ::: moniker-end
+::: moniker-end
 
 ### Subversion
 
@@ -65,24 +101,47 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### Azure Pipelines
 
-<ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
-</li>
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<li>Click **Download agent**.</li>
+1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-<li>On the **Get agent** dialog box, click **Linux**.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
 
-<li>On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.</li>
+1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
-<li>On the right pane, click the **Download** button.
+1. On the **Get the agent** dialog box, click **Linux**.
 
-<li>Follow the instructions on the page.</li>
+1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
-</ol>
+1. On the right pane, click the **Download** button.
+
+1. Follow the instructions on the page.</li>
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+### Azure DevOps Server 2019
+
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
+
+1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
+
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+
+1. Click **Download agent**.</li>
+
+1. On the **Get agent** dialog box, click **Linux**.</li>
+
+1. On the left pane, select the specific flavor. We offer x64 or ARM for most Linux distributions. We also offer a specific build for Red Hat Enterprise Linux 6.
+
+1. On the right pane, click the **Download** button.
+
+1. Follow the instructions on the page.</li>
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.
 
 ::: moniker-end
 
@@ -90,22 +149,21 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2017 and TFS 2018
 
-<ol>
-<li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
-[!INCLUDE [include](_shared/agent-pools-tab.md)]
-</li>
+1. Log on to the machine using the account for which you've prepared permissions as explained above.
 
-<li>Click **Download agent**.</li>
+1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-<li>On the **Get agent** dialog box, click **Linux**.</li>
+   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
-<li>Click the **Download** button.
+1. Click **Download agent**.
 
-<li>Follow the instructions on the page.</li>
+1. On the **Get agent** dialog box, click **Linux**.
 
-<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.</li>
-</ol>
+1. Click the **Download** button.
+
+1. Follow the instructions on the page.
+
+1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
 
@@ -113,14 +171,15 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ### TFS 2015
 
-0. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
+1. Browse to the [latest release on GitHub](https://github.com/Microsoft/azure-pipelines-agent/releases/latest).
 
-0. Follow the instructions on that page to download the agent.
+1. Follow the instructions on that page to download the agent.
 
-0. Configure the agent.
- ```
-./config.sh
- ```
+1. Configure the agent.
+
+   ```
+   ./config.sh
+   ```
 
 ::: moniker-end
 
@@ -154,12 +213,13 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
 To run the agent interactively:
 
-0. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
+1. If you have been running the agent as a service, [uninstall the service](#service_uninstall).
 
-0. Run the agent.
- ```bash
-./run.sh
- ```
+1. Run the agent.
+
+   ```bash
+   ./run.sh
+   ```
 
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
@@ -170,6 +230,9 @@ If your agent is running on these operating systems you can run the agent as a s
 
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
+
+> [!IMPORTANT]
+> If you run your agent as a service, you cannot run the agent service as `root` user.
 
 We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
 
@@ -226,21 +289,11 @@ sudo ./svc.sh uninstall
 
 When you configure the service, it takes a snapshot of some useful environment variables for your current logon user such as PATH, LANG, JAVA_HOME, ANT_HOME, and MYSQL_PATH. If you need to update the variables (for example, after installing some new software):
 
-> [!div class="vscom-steps-container" ]
-> 0. &nbsp;
->  ```bash
-> ./env.sh
->  ```
-> 
-> 0. &nbsp;
->  ```bash
-> sudo ./svc.sh stop
->  ```
-> 
-> 0. &nbsp;
->  ```bash
-> sudo ./svc.sh start
->  ```
+```bash
+./env.sh
+sudo ./svc.sh stop
+sudo ./svc.sh start
+```
 
 The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
 
@@ -248,13 +301,13 @@ The snapshot of the environment variables is stored in `.env` file under agent r
 
 You can also run your own instructions and commands to run when the service starts.  For example, you could set up the environment or call scripts.
 
-0. Edit `runsvc.sh`.
+1. Edit `runsvc.sh`.
 
-0. Replace the following line with your instructions:
+1. Replace the following line with your instructions:
 
- ```bash
-# insert anything to setup env when running as a service
- ```
+   ```bash
+   # insert anything to setup env when running as a service
+   ```
 
 <h3 id="service-files">Service files</h3>
 
@@ -309,7 +362,9 @@ It's important to avoid situations in which the agent fails or become unusable b
 Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/azure-pipelines-agent/blob/master/src/Misc/layoutbin/systemd.svc.sh.template)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-firewall.md)]
+
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -321,15 +376,21 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 [Run the agent behind a web proxy](proxy.md)
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 [!INCLUDE [include](_shared/v2/qa-urls.md)]
+
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
+
 [!INCLUDE [include](../_shared/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

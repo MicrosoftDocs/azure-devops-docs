@@ -1,6 +1,6 @@
 ```YAML
 # Invoke Azure Function
-# Invoke an Azure Function as a part of your pipeline.
+# Invoke an Azure Function
 - task: AzureFunction@1
   inputs:
     function: 

@@ -3,10 +3,10 @@ title: Azure DevOps - data location
 description: Learn where your data is stored for Azure DevOps
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 03/25/2019
 monikerRange: 'azure-devops'
 ---
@@ -33,11 +33,11 @@ Your data is stored within the following locations:
 Azure DevOps stores information that is global in nature, such as user identities and profile information, in a data center located in the United States. All customer data, such as source code, work items, and test results, as well as the geo-redundant mirrors and offsite backups, are maintained within the selected geography.
 
 > [!NOTE]
-> Because there is only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](http://azuredatacentermap.azurewebsites.net/).
+> Because there is only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
 
 For builds and releases configured to run on Microsoft-provided macOS agents, Azure DevOps stores associated customer data in the United States in a data center that is owned and managed by a third party with reduced information security certification assurances.
 
-Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see the [Azure data center map](http://azuredatacentermap.azurewebsites.net/).
+Azure DevOps works with and uses many Microsoft Azure services. For details on customer data retention by location, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
 
 ## Transferring your data
 

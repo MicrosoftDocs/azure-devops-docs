@@ -5,7 +5,7 @@ description: Overview of Git version control in Azure DevOps Services and Team F
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -102,7 +102,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 </ul>
 
 </div>
-<div class="col-sm-6 col-md-6"> 
+<div class="col-sm-6 col-md-6">
 
 ![Manage your code and repos from the web](_img/overview/git-repos.png)
 

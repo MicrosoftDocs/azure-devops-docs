@@ -5,7 +5,7 @@ description: Learn to isolate code using forks in Azure DevOps Services & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -58,13 +58,14 @@ This will isolate their changes from yours until you've had a chance to vet the 
 5. [Sync your fork to the latest from upstream](#sync-fork)
 
 <a name="create-fork" />
+
 ### Create the fork
 
-0. Navigate to the repository to fork, and choose **Fork**.
+1. Navigate to the repository to fork, and choose **Fork**.
 
-1. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
+2. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
 
-2. Choose **Fork** to create the fork.
+3. Choose **Fork** to create the fork.
 
 ![Create new fork](_img/forks/create-new-fork.png)
 
@@ -73,6 +74,7 @@ This will isolate their changes from yours until you've had a chance to vet the 
 > We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
 
 <a name="clone-locally" />
+
 ### Clone your fork locally
 
 Once your fork is ready, clone it using the [command line](clone.md?tabs=command-line) or an IDE like [Visual Studio](clone.md).
@@ -118,6 +120,7 @@ On the command line, navigate to your repository, and type:
 
 
 <a name="push-changes" />
+
 ### Make and push changes
 
 It's possible to work directly in `master` - after all, this fork is your personal copy of the repo.
@@ -129,6 +132,7 @@ Make and commit your changes as you normally would.
 When you're done with the changes, push them to `origin` (your fork).
 
 <a name="create-pr" />
+
 ### Create and complete a PR
 
 Open a pull request from your fork to the upstream.
@@ -142,6 +146,7 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 > If a PR build pipeline is configured, the build will run against the code introduced in the fork.
 
 <a name="sync-fork" />
+
 ### Sync your fork to latest
 
 When you've gotten your PR accepted into upstream, you'll want to make sure your fork reflects the latest state of the repo.

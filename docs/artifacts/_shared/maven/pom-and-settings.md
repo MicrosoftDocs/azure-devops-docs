@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-To talk to Azure DevOps Services feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
+To talk to Azure Artifact feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
 
    ::: moniker range=">= azure-devops-2019"
 
@@ -22,7 +22,7 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
 
    ::: moniker-end
 
-3. Open the **Maven** tab, select **Generate Maven credentials**, and copy the generated credentials.
+3. Open the **Maven** tab under the maven header.
 
    * Maven pulls credentials from your **settings.xml** file.
    
@@ -34,31 +34,12 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
    
    * If the file doesn't exist, create one now.
 
-4. Inside the `<settings>` and `<servers>` elements in the file, paste the credentials that you copied in **Step 3**.
+4. If you haven't installed Maven on your machine, you can select **Get the tools** to download and install it.
 
-**Sample settings.xml:**
+5. Follow the **Project setup** section including generating a personal access token.
 
-```xml
-<settings>
-  <servers>
-    <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
-    <server>
-      <id>dev.azure.com-yourFeedName</id>
-      <configuration>
-        <httpHeaders>
-          <property>
-            <name>Authorization</name>
-            <!--The generated token expires on or before 7/19/2017-->
-            <value>Basic Y2Fqb...</value>
-          </property>
-        </httpHeaders>
-      </configuration>
-    </server>
-  </servers>
-</settings>
-```
-
-> [!IMPORTANT]
-> The `<id>` tags in the _settings.xml_ and the _pom.xml_ **must** match.
+   > [!div class="mx-imgBorder"] 
+   >![Set up Maven authentication](../_img/maven-azure-devops-newnav.png)
+   >
 
 You can find more information about the settings.xml file in the [settings.xml reference](https://maven.apache.org/settings.html).

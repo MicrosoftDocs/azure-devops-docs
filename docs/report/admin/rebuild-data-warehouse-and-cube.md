@@ -6,7 +6,7 @@ ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -177,7 +177,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
 
-For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](http://blogs.msdn.com/b/adamroot/archive/2009/06/12/working-with-deleted-build-data-in-team-foundation-server-2010-beta-1.aspx).
+For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](https://blogs.msdn.com/b/adamroot/archive/2009/06/12/working-with-deleted-build-data-in-team-foundation-server-2010-beta-1.aspx).
 
 Deleting builds doesn't remove all associated data from the database. To do that, you must destroy the builds. You use the **TFSBuild destroy** [command to destroy builds](https://msdn.microsoft.com/library/ee794689.aspx) and to save space in the data warehouse. 
 

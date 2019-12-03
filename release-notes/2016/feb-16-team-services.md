@@ -3,10 +3,10 @@ title: Search extensions on Marketplace, Flexible build policy for Git, SCVMM Su
 description: VSTS release notes for February 16 2016
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: 8356f67c-3c1a-4094-a8af-e1c63b3b39aa
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -117,20 +117,8 @@ You can now click a work item on the Kanban board and use keyboard shortcut keys
 
 That’s all :-)
 
-As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [User Voice site](http://visualstudio.uservoice.com/forums/330519-vso).
+As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [User Voice site](https://visualstudio.uservoice.com/forums/330519-vso).
 
 Thanks
 
 Anand Kamat
-
-
-
-
-
-
-
-
-
-
-
-

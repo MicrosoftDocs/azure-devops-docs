@@ -6,7 +6,7 @@ ms.date: 10/06/2017
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 description: Visual Studio Team Services (VSTS) release notes for Sprint 124 Update on October 6, 2017.
 ---
 
@@ -148,7 +148,7 @@ You can now edit the default properties of Git and GitHub artifact types even af
 ## Next steps and Feedback
 
 > [!div class="nextstepaction"]
-> [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

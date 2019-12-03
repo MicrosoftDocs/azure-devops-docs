@@ -5,10 +5,10 @@ ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.manager: jillfra
-ms.author: alewis
-author: juliobbv
-ms.date: 05/31/2019
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 07/09/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -104,7 +104,7 @@ Next, we'll create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if (Test-Path Env:AZP_WORK) {
+    if ($Env:AZP_WORK -and -not (Test-Path Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
@@ -222,7 +222,9 @@ Next, we'll create the Dockerfile.
             git \
             iputils-ping \
             libcurl3 \
-            libicu55
+            libicu55 \
+            libunwind8 \
+            netcat
 
     WORKDIR /azp
 
@@ -331,7 +333,7 @@ Next, we'll create the Dockerfile.
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    exec ./externals/node10/bin/node ./bin/AgentService.js interactive
+    exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
 6. Run the following command within that directory:
@@ -377,3 +379,9 @@ You can extend the Dockerfile to include additional tools and their dependencies
 - The `start.sh` script is called by the Dockerfile
 - The `start.sh` script is the last command that the Dockerfile
 - Ensure that derivative containers do not remove any of the dependencies stated by the Dockerfile
+
+## Using Docker within a Docker container
+
+In order to use Docker from within a Docker container, you need to bind-mount the Docker socket.
+This has very serious security implications - namely, code inside the container can now run as root on your Docker host.
+If you're sure you want to do this, see the [bind mount](https://docs.docker.com/storage/bind-mounts/) documentation on Docker.com.

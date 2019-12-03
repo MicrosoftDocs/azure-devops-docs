@@ -6,7 +6,9 @@ ms.prod: devops
 ms.technology: devops-release-notes
 author: alexcnichols
 ms.author: alexn
+ms.date: 07/23/2017
 ---
+
 
 # New Release Definition Editor and improved pull request workflows – July 14
 

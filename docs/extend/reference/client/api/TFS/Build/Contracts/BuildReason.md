@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts BuildReason API | Extensions for Azure DevOps Services
+description: Data representation of a build reason.
 ms.assetid: 0cd661f7-a32b-db9b-6039-81d41828635b
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

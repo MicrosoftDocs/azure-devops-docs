@@ -5,7 +5,7 @@ description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -37,8 +37,8 @@ In this tutorial you learn how to:
 
 To create a pull request in Azure Repos:
 
-0. [Push](pushing.md) your local branch.
-1. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
+1. [Push](pushing.md) your local branch.
+2. Create a pull request for the branch. You can do this in the **Code** view on the web from either the **Pull Requests** tab or the **Files** tab.
 
    ![Creating Pull Request through pushed branch in Azure DevOps Services](_img/pull-requests/create-pr-from-push.png)
 
@@ -52,14 +52,14 @@ To create a pull request in Azure Repos:
 
    ![Pull Requests](_img/pull-requests/new-pull-request.png)
 
-2. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
+3. Create the pull request. You should give a clear title for the pull request that describes the changes in the branch. In the description field give a clear explanation of how the changes are implemented along with any resources that might help reviewers understand the changes. You can include VSTS work items and hyperlinks to allow others to have as much context as possible when reviewing your changes. Add any team member who you would like to review the changes. 
 
    ![Adding detail to a pull request](_img/pull-request-detail.png)
 
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/boards/index.md) to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/queries/link-work-items-support-traceability.md#work-items-linked-to-git-code-development) to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 

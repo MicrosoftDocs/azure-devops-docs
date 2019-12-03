@@ -1,10 +1,10 @@
 ---
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
-description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Azure DevOps
+description: How to guide to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -12,11 +12,11 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 11/1/2018
 ---
 
-# Aggregate work tracking data using the Analytics service   
+# Aggregate work tracking data using Analytics   
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-You can get a sum of your work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
+You can get a sum of your work tracking data in one of two ways using Analytics with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
 In this article you'll learn: 
 
@@ -32,7 +32,7 @@ In this article you'll learn:
 
 ## What is the Aggregation Extension for OData?
 
-Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
+Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
 Use the following basic root URL as a prefix for all the examples provided in this article.
@@ -275,7 +275,7 @@ https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/Areas?
 
 ## Filter aggregated results
 
-You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. The analytics service evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
+You can also filter aggregated results, however they are applied slightly differently than when you are not using aggregation. Analytics evaluates filters along a pipe so it's always best to do the most discrete filtering first. 
 
 Filters look like the following:
 
@@ -381,5 +381,5 @@ When refreshing Power BI or Excel, the fewer rows required, the faster the refre
 
 ## Related articles 
 
-- [Query your work tracking data using the OData Analytics service](wit-analytics.md)  
-- [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+- [Query your work tracking data using OData Analytics](wit-analytics.md)  
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)

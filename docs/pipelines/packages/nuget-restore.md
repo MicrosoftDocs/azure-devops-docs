@@ -1,15 +1,16 @@
 ---
-title: Restore Package Management NuGet packages in Azure Pipelines
+title: Restore NuGet packages in Azure Pipelines
 ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: amullans
+ms.manager: mijacobs
+ms.author: phwilson
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
+author: chasewilson
 ---
 
 # Restore Package Management NuGet packages in Azure Pipelines
@@ -37,7 +38,7 @@ Next, configure these options:
 
 Then, select feeds to use:
 
-- If you've checked in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
+- If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
 ![A screenshot of the NuGet task configured as outlined above](_img/restore-pkgs-on-build.png)

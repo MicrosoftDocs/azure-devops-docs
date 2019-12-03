@@ -2,14 +2,14 @@
 title: Permissions | REST API Reference for VSTS
 description: Work with feeds programmatically using the REST APIs for VSTS .
 ms.assetid: 72a0f637-2b25-4532-a1d3-1e4d446b3aba
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/17/2016
 ---
 

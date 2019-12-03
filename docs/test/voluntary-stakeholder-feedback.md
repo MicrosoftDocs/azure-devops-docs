@@ -5,9 +5,9 @@ ms.assetid: 4E467527-62C6-4321-BA56-FF82F0FFFD69
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -83,6 +83,6 @@ voluntarily, even if you haven't received a specific
 * [Provide stakeholder feedback using the Test &amp; Feedback extension](provide-stakeholder-feedback.md#provide)
 * [Track stakeholder feedback using the Test &amp; Feedback extension](track-stakeholder-feedback.md#track)
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
-* [Overview of manual and exploratory testing](index.md)
+* [Overview of manual and exploratory testing](index.yml)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

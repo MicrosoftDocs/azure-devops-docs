@@ -3,10 +3,10 @@ title: Git and TFVC together, Package Management build tasks, and more – Nov 2
 description: VSTS release notes for November 24 2015
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: douge
+ms.manager: jillfra
 ms.assetid: cc94e94f-389a-493a-9044-3fb7e9ad2e27
 ms.date: 06/01/2016
-ms.author: douge
+ms.author: glmorale
 author: yukom
 ---
 
@@ -20,7 +20,7 @@ Big news! In this sprint, we’ve added the ability to add Git repositories to a
 
 ## Package Management build tasks
 
-At [Connect()](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/) last week, we launched the new [Package Management](http://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) preview for VSTS that enables you to share, host, secure, and release binary components across teams. You can get the preview from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+At [Connect()](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/) last week, we launched the new [Package Management](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/27/announcing-package-management-for-vso-tfs.aspx) preview for VSTS that enables you to share, host, secure, and release binary components across teams. You can get the preview from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 Package management is an important part of your continuous delivery workflow, and we’ve made it even easier to work with your Team Builds and releases. The NuGet Installer and NuGet Publisher build tasks have been updated to work seamlessly with the new Team Services feeds. You can now publish to any authenticated NuGet feed or package source using a service connection, and you’ll see an option to use an internal feed.
 
@@ -56,9 +56,8 @@ For all those keyboard users out there, you’ll love this announcement! Today, 
 
 ![Global shortcut keys](_img/11_24_06.png)
 
-Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](http://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
 
 Thanks,
 
 Karen Ng
-

@@ -1,6 +1,6 @@
 ```YAML
 # Docker
-# Build, tag, push, or run Docker images, or run a Docker command. Task can be used with Docker or Azure Container registry.
+# Build, tag, push, or run Docker images, or run a Docker command
 - task: Docker@1
   inputs:
     #containerregistrytype: 'Azure Container Registry' # Options: azure Container Registry, container Registry

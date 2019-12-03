@@ -6,7 +6,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 09/19/2017
@@ -43,5 +43,4 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 ## Resources 
 
 - [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)  
-- [UserVoice UI (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui)  
 
