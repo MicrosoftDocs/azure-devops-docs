@@ -26,7 +26,7 @@ https://microsoft.visualstudio.com/OS/_apps/hub/wdgeswm.dependencytracker.depend
 --> 
 
 
-The Dependency Tracker extension provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you  to track the state of the dependencies as well as their timing to help support you in assessing the risk of dependencies to deliverables. 
+The Dependency Tracker extension provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you to track the state and schedule of dependencies to support you in assessing the risk of dependencies to product deliverables. 
 
 > [!NOTE]   
 > The Dependency Tracker extension is only available on Azure DevOps Services at this time. You can download it from the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)
@@ -77,7 +77,7 @@ All teams across organizations can participate in tracking dependencies.
 	- The producer is responsible for maintaining the work item in Azure Boards
 	- The producer owns the state of the work item (is it going to be done) and iteration (when it will be done).  
 	- The consumer should not touch these values, once the work item has been handed off
-- The consumer is in charge of keeping tabs on the work they requested (the Dependency Tracker report is one way to do so), so that they are aware of any material changes and adjustments
+- The consumer is in charge of managing the work they requested  so that they are aware of any material changes and adjustments.
 
 
 
@@ -94,9 +94,9 @@ All teams across organizations can participate in tracking dependencies.
 > The default configuration for Dependency Tracker supports the Agile process. If your project(s) are based on a different process or you have customized your process, you may need to modify the configuration. See [Configure the Dependency Tracker](#configuration) later in this article. 
 
 In addition, the following configuration or customization tasks should be performed: 
-- Set up the area paths and teams that will participate in dependency tracking 
-- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking - this is essential for the Timeline view to yield meaningful data
-- Customize your process as needed to support any additional work items or fields 
+- Set up the area paths and teams that will participate in dependency tracking. 
+- Configure iteration paths/sprints for the project and assign them to work items participating in dependency tracking. This task is essential for the Timeline view to yield meaningful data.
+- Customize your process as needed to support any additional work items or fields. 
 - [Configure the Dependency Tracker](#configuration) to support your business needs and address any customizations you've made.
 
 
@@ -120,7 +120,7 @@ In addition, the following configuration or customization tasks should be perfor
 
 ## Filter options 
 
-You can filter each supported view by typing a keyword or using one or more of the fields provided, such as State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field.  
+You can filter each supported view by typing a keyword or using one or more of the fields. Provided field include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
 To show the filter toolbar, choose the ![ ](../../_img/icons/filter-icon.png) filter icon. 
 
@@ -147,7 +147,7 @@ Ability to drop dependencies within the selected area (usually used for excludin
 
 ## Drill-down options 
 
-Several views provide interactive visualizations through drilldowns. These are addressed in the description of each of the tabbed views later in this article. 
+Several views provide interactive visualizations through drill-downs. These features are addressed in the description of each of the tabbed views later in this article. 
 
 > [!div class="mx-imgBorder"]  
 > ![Consuming dependencies, drill-down into completed work in an area](_img/tracker/drill-down-completed-consuming.png) 
@@ -184,7 +184,7 @@ A dependency represents work where one team is dependent on another team. Both t
 	> [!div class="mx-imgBorder"]  
 	> ![Create a dependency, create new work items to link](_img/tracker/create-new-work-items-link-dependency.png)
 
-	If no work items exist for one half of the dependency it is possible to create a new work item also.
+	If no work items exist for one half of the dependency, you can create a new work item as needed.
 
 1.  Choose **Save**. The **Save** button becomes available only after you've chosen two work items to link.  	
 
@@ -249,7 +249,7 @@ The **Consuming Dependencies** view shows work that a team is dependent upon oth
 
 Each column on the bar chart represents another area path that is producing dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
-Within the table you can perform the following actions. 
+Within the table, you can perform the following actions. 
 
 - Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
 - Expand or collapse the list of work items to show the full list of dependent work items using the ![ ](../_img/icons/expand_icon.png) expand and ![ ](../_img/icons/collapse_icon.png) collapse icons 
@@ -272,7 +272,7 @@ The **Producing Dependencies** view shows work that other teams/area paths are d
 
 Each column on the bar chart represents another area path that is consuming dependencies by workflow state for the selected **Area View**. The table shows the number of unique dependencies and lists all work items participating in the filtered view of tracked dependencies. 
 
-Within the table you can perform the same actions as in the Consuming Dependencies view. 
+Within the table, you can perform the same actions as in the Consuming Dependencies view. 
  
  
 <a id="timeline" />
@@ -282,7 +282,7 @@ Within the table you can perform the same actions as in the Consuming Dependenci
 The **Timeline** tab provides a calendar view of dependencies. The Timeline view is in Beta. The Timeline view helps answering the following questions: 
 
 - *What is the sequence of dependencies within the time window.*
-- *What are all the deliverable dependencies against within the three month time window for a given team?*
+- *What are all the deliverable dependencies against within the three-month time window for a given team?*
 
 > [!IMPORTANT]   
 > In order for the Timeline to show meaningful data, you must have assigned the dependent work items to Iteration Paths, and the Iteration Paths must have start and end dates assigned.  
@@ -291,13 +291,13 @@ There are two versions of the Timeline view: **Correct Flow** and **Incorrect Fl
 
 #### Correct Flow
 
-This view shows those dependencies that are in the correct sequence where a successor work item is scheduled to be completed after it's predecessor work item.
+The Correct Flow view shows those dependencies that are in the correct sequence. Successor work items are scheduled to be completed after their predecessor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
 
 #### Incorrect Flow
-This view shows those dependencies that are out of order and a predecessor work item is scheduled to be completed after a successor work item.
+The Incorrect Flow  view shows those dependencies that are out of order. At least one predecessor work item is scheduled to be completed after it's successor work item.
 
 > [!div class="mx-imgBorder"]  
 > ![Timeline view, incorrect flow](_img/tracker/timeline-oc-word-2019-incorrect-flow.png)
@@ -312,7 +312,7 @@ The Risk Graph provides a visualization of how dependencies flow from Consumer t
 > [!div class="mx-imgBorder"]  
 > ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph.png)
 
-There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines in the indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
+There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
 #### Consuming From
 
@@ -349,8 +349,8 @@ The main properties you can modify are summarized as follows:
 	- Mapping of work item workflow states and colors
 - Default field columns in dependency list tables
 - Default filter selections:
-	- Default selected dependency work item types
-	- Default selected Iteration Paths
+	- Selected dependency work item types
+	- Selected Iteration Paths
 - Enabled options:
 	- Timeline
 	- New Dependency link 
@@ -445,7 +445,7 @@ If a custom field is used in place of one of the system fields, you specify the 
   "User Story",  
   "Bug"  
 ]</pre>
-<p>If using the Scrum process, you would change this to:</p>
+<p>If using the Scrum process, you would change the entry to:</p>
 <pre>
 [  
   "Epic",  
