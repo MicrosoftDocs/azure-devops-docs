@@ -43,17 +43,15 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 **Marketplace extension**: [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO). 
 
 <br/>
-<a id="ConnectALL-from-Go2Group" />
+<a id="ConnectALL" />
 
 ![Go2Group](_img/tfs-ps-sync-go2group-logo.png)
 
-## [ConnectALL from Go2Group](https://www.go2group.com/connectall/)
+## [ConnectALL](https://www.connectall.com/)
 
-ConnectALL is an application integration solution that connects multiple tools and applications, enabling a company's development and management teams to collaborate efficiently and flawlessly across multiple development platforms. Easy to buy, easy to install, and easy to use, ConnectALL meets strict enterprise governance requirements. It leverages Enterprise Service Bus (ESB) technology to achieve an enterprise-grade infrastructure with clustering, multi-tenancy architecture, multiple server support both in the cloud and on-premises, traceability, and audit trails. This type of deployment yields the highest operational efficiency and lowest ongoing maintenance efforts through a single server instance. The architecture encourages collaboration-at-scale between departments while ensuring secure communication.
+ConnectALL, an Orasi software company, is dedicated to helping companies achieve higher levels of agility and velocity. The company’s enterprise-level application integration platform — [ConnectALL integration platform](https://www.connectall.com) — helps with achieving effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts used during the software delivery process, like ALM, Agile and DevOps. With the ConnectALL Integration Platform, IT companies can accelerate software development and enhance collaboration. 
 
-The [ConnectALL integration platform](https://www.go2group.com/connectall/) offers a simple licensing model and affordable pricing for small to large installations. It is priced per application server instance, with unlimited users and unlimited projects accessing that application service.
- 
-ConnectALL is from Go2Group, a global provider of IT delivery solutions that help enterprises achieve businesses agility. Founded in 2002, the company provides products and services for ALM (Application Lifecycle Management), DevOps, cloud, and agile practices. It specializes in complex integration projects involving multiple platforms and multiple teams.
+Teams from software development and delivery, IT and business units across large and small enterprises worldwide use ConnectALL’s integration platform to unify people, processes, and applications from multiple ALM and DevOps providers, such as Tricentis, Cherwell, Atlassian, Micro Focus, Microsoft, IBM, Salesforce, BMC, ServiceNow, and more. ConnectALL helps companies rapidly create business value by bringing software innovation to market faster and increasing productivity through cross-team collaboration.
 
 **Marketplace extension**: [ConnectALL](https://marketplace.visualstudio.com/items?itemName=go2group.ConnectALL). 
 
