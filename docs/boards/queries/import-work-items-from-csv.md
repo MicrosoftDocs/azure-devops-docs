@@ -1,7 +1,7 @@
 ---
-title: Import or update work items from a csv file 
+title: Import or update work items from a CSV file 
 titleSuffix: Azure Boards
-description: Bulk import or update work items from a csv or excel file 
+description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
@@ -17,7 +17,7 @@ ms.date: 12/02/2019
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product and the Excel plugin is no longer required.
+Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
 
 [!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)]
@@ -148,3 +148,8 @@ Any problems with the formating of your CSV file appear in the Results page of t
 > ![CSV Error image](_img/import-csv/import-csv-error-1.png)
 
 Data errors for individual work items are shown to you from the work items results (see above). From there you can fix the data in the UI or fix the CSV file and try to import again.
+
+## Related articles
+
+- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)
