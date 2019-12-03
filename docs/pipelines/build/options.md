@@ -74,14 +74,16 @@ Specify the authorization scope for a build job. Select:
 * **Project Collection** if the build needs access to multiple projects.
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
 
+::: moniker range="azure-devops"
+
 ### Scoped build identities
 
-There are 2 built-in identities that we use to execute pipelines.
+Azure DevOps uses 2 built-in identities to execute pipelines.
 
 * A collection-scoped identity, which has access to all projects in the collection (or organization for Azure DevOps Services)
 * A project-scoped identity, which has access to a single project
 
- These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
+ These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and you may also manage your own permissions as needed.
  
 The collection-scoped identity name has the following format:
 - `Project Collection Build Service ({OrgName})`
@@ -102,7 +104,7 @@ One result for setting project-scoped access may be that the project-scoped iden
 A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
 
 > [!NOTE]
-> If you don't see the project-scoped identities, you must enable **Limit job authorization scope to current project** and then run a pipeline in that project.
+> If you don't see the project-scoped identities, you must first enable **Limit job authorization scope to current project** and then run a pipeline in that project.
 
 #### Configure permissions to access another repo in the same project project collection
 
@@ -135,6 +137,8 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 3. Configure the desired permissions for that user.
 
     ![Set permissions](_img/options/set-project-permissions.png)
+
+::: moniker-end
 
 ## Build (run) number
 
