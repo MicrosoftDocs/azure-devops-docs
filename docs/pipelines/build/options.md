@@ -105,6 +105,9 @@ One result for forcing project-scoped access may be that the project-scoped iden
  
 A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
 
+> [!NOTE]
+> If you don't see the project-scoped identities, you must enable **Limit job authorization scope to current project** and then run a pipeline in that project.
+
 #### Configure permissions to access another repo in the same project project collection
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
