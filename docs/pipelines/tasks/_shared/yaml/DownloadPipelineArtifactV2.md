@@ -5,13 +5,13 @@
   inputs:
     #source: 'current' # Options: current, specific
     #project: # Required when buildType == Specific
-    #definition: # Required when buildType == Specific
-    #specificBuildWithTriggering: false # Optional
-    #buildVersionToDownload: 'latest' # Required when buildType == Specific# Options: latest, latestFromBranch, specific
-    #branchName: 'refs/heads/master' # Required when buildType == Specific && RunVersion == LatestFromBranch
-    #pipelineId: # Required when buildType == Specific && RunVersion == Specific
+    #pipeline: # Required when buildType == Specific
+    #preferTriggeringPipeline: false # Optional
+    #runVersion: 'latest' # Required when buildType == Specific# Options: latest, latestFromBranch, specific
+    #runBranch: 'refs/heads/master' # Required when buildType == Specific && RunVersion == LatestFromBranch
+    #runId: # Required when buildType == Specific && RunVersion == Specific
     #tags: # Optional
-    #artifactName: # Optional
-    #itemPattern: '**' # Optional
-    #targetPath: '$(Pipeline.Workspace)' 
+    #artifact: # Optional
+    #patterns: '**' # Optional
+    #path: '$(Pipeline.Workspace)' 
 ```
