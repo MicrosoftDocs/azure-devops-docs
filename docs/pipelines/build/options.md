@@ -104,6 +104,22 @@ By default, the collection-scoped identity is used, unless the **Limit job autho
 One result for forcing project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
  
 A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
+
+#### Configure permissions to access another repo in the same project project collection
+
+In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permission to access the `FabrikamFiber` repository in the `fabrikam-tailspin/FabrikamFiber` project.
+
+1. In the FabrikamFiber project, navigate to Project settings, Repositories, Git repositories, FabrikamFiber
+
+2.  Choose the **+** icon. 
+
+#### Configure permissions to access other resources in the same project collection
+
+Example: Giving permissions to the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity in the `fabrikam-tailspin/FabrikamFiber` project.
+
+- To configure project-level permissions, navigate to Project
+
+In the FabrikamFiber project, navigate to Project settings, Repositories, Git repositories, FabrikamFiber, and choose the **+** icon. 
  
 Example: Giving permissions to the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity in the `fabrikam-tailspin/FabrikamFiber` project:
 
