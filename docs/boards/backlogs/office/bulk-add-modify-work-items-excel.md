@@ -18,7 +18,7 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you have a lot of work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
+When you have many work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
 In this article you'll learn:  
 
@@ -52,7 +52,7 @@ Integration of Microsoft Excel with the cloud service for Azure Boards is fully 
 - You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-- To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
 
@@ -64,7 +64,7 @@ Integration of Microsoft Excel with the cloud service for Azure Boards is fully 
 - You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 
 - [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-- To view or modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
 
@@ -109,13 +109,13 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	**Azure Boards**  
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, and (4) check that the preview matches the URL that you entered. Then choose **OK**. 
 
 	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
 
-	**TFS**  
+	**Azure DevOps Server or TFS**  
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a non-default port number. The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
     ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
 
@@ -303,7 +303,7 @@ If the Tree group commands are not available, your worksheet is configured as a 
 
 ### Convert a tree to a flat list
 
-First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. This will flatten the tree structure and change the query list to an input list.
+First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. These actions flatten the tree structure and change the query list to an input list.
 
 ### Remove a tree level
 
