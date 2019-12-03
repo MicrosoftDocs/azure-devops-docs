@@ -4,7 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 description: In the **Sprint 160 Update** of Azure DevOps, we added a new sprint burndown widget that supports burning down by story points, count of tasks and by summing custom fields.
 ---
 

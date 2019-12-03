@@ -5,7 +5,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 11/25/2019
+ms.date: 12/02/2019
 ---
 
 # General - Sprint 161 Update
