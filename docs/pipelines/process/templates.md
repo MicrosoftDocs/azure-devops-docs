@@ -21,7 +21,7 @@ Templates let you define logic, variables, and parameters that can be reused. Th
 
 An includes template contains reuseable content that can be inserted into multiple YAMLs. An includes template functions like an include directive in many programming languages where content from one file is inserted into another file. 
 
-An extends template allows you to have one template control the structure of a pipeline and have child templates implement of controlled sections of it. An extends template works more like an object class in programming where an extends template defines how other templates can be implemented. 
+An extends template allows you to have one template control the structure of a pipeline. An extends template takes in parameters, which let you configure how the pipeline runs. An extends template can contain includes templates. 
 
 ## Includes templates
 Includes templates let you copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file includes template contains steps that are reused in `azure-pipeline.yml`.  
@@ -53,10 +53,10 @@ jobs:
 
 ## Extends templates
 
-Extends templates provide a structure that can be used to define additional YAMLs. You define child YAMLs from a parent YAML. The `parent.yml` defines the parameter `buildSteps`, which is then used in the child template `azure-pipelines.yml`. In `parent.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
+Extends templates let you pass in parameters. The `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
 
 ```yaml
-# File: parent.yml
+# File: start.yml
 parameters:
 - name: buildSteps # the name of the parameter is buildSteps
   type: stepList # data type is StepList
@@ -78,8 +78,8 @@ stages:
       - ${{ each pair in step }}:
           ${{ if ne(pair.key, 'script') }}:
             ${{ pair.key }}: ${{ pair.value }}       
-          ${{ if eq(pair.key, 'script') }}:
-            'Rejecting Script: ${{ pair.value }}': error             
+          ${{ if eq(pair.key, 'script') }}: # checks for buildStep with script
+            'Rejecting Script: ${{ pair.value }}': error # rejects buildStep when script is found         
 
     - script: echo This happens after code
       displayName: 'Base: Signing'
@@ -91,7 +91,7 @@ trigger:
 - master
 
 extends:
-  template: parent.yml
+  template: start.yml
   parameters:
     buildSteps:  
       - bash: echo Test #Passes
@@ -124,7 +124,7 @@ steps:
 
 ## Passing parameters
 
-You can pass also parameters to templates. The `parameters` section defines what parameters are available in the template and their default values. To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
+You can pass also parameters to extends templates. The `parameters` section defines what parameters are available in the template and their default values. To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
 Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. Parameters include an include a data type, which restricts what values can be passed to it. For example, a variable with a boolean data type will only accept the values `true` or `false`. 
 
