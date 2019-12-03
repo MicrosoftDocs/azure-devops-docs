@@ -3,7 +3,7 @@
 # Download build and pipeline artifacts
 - task: DownloadPipelineArtifact@2
   inputs:
-    #buildType: 'current' # Options: current, specific
+    #source: 'current' # Options: current, specific
     #project: # Required when buildType == Specific
     #definition: # Required when buildType == Specific
     #specificBuildWithTriggering: false # Optional
