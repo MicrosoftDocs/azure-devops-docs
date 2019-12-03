@@ -125,8 +125,17 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity is granted permissions to access other resources in the `fabrikam-tailspin/FabrikamFiber` project.
 
+1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
 
+    ![Project settings](_img/options/project-permissions.png)
 
+2.  Choose **Users**, start to type in the name **SpaceGameWeb**, select **Expand search**, and select the **SpaceGameWeb Build Service** account..
+
+    ![Add user](_img/options/add-build-service-user-project-permissions.png)
+
+3. Configure the desired permissions for that user.
+
+    ![Set permissions](_img/options/set-project-permissions.png)
 
 ## Build (run) number
 
