@@ -1,11 +1,11 @@
----
+﻿---
 title: Develop your app in Team Foundation version control
 titleSuffix: Azure Repos
 description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -50,6 +50,6 @@ If so, we suggest you take a few minutes to walk step-by-step through a day in t
 
 -    [Improving Quality with Visual Studio Diagnostic Tools](https://msdn.microsoft.com/library/dd264943) 
 
--    [Testing the application](../../test/index.md) 
+-    [Testing the application](../../test/index.yml) 
 
 -    [Track work with Visual Studio devops and TFS](../../boards/get-started/what-is-azure-boards.md) 

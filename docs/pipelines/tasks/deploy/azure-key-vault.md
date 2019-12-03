@@ -5,7 +5,7 @@ ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -63,8 +63,11 @@ When you want to access secrets:
   - Choose **OK** to save the changes.<p />
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
+
 ::: moniker-end
 
 ## Arguments

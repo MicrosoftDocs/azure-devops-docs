@@ -1,6 +1,6 @@
 ```YAML
-# .NET Core SDK/Runtime Installer
-# Acquires a specific version of the .NET Core SDK from the internet or the local cache and adds it to the PATH. Use this task to change the version of .NET Core used in subsequent tasks.
+# .NET Core SDK/runtime installer
+# Acquire a specific version of the .NET Core SDK from the internet or local cache and add it to the PATH
 - task: DotNetCoreInstaller@0
   inputs:
     #packageType: 'sdk' # Options: runtime, sdk

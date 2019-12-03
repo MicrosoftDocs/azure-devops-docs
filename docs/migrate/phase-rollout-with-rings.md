@@ -3,16 +3,18 @@ title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
+ms.topic: conceptual
+ms.technology: devops-migrate
+ms.manager: mijacobs
 ms.date: 04/26/2018
-ms.author: sdanie
-author: wpschaub
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ---
 
 # Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
+
+[!INCLUDE [version-azure-devops](../_shared/version-vsts-tfs-all-versions.md)]
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
@@ -76,7 +78,6 @@ The extension topology is perfectly suited for the ring deployment model and to 
 *  A **public** production version for the Users ring
 
 > [!TIP]
->
 > By publishing your extension as private, you're effectively limiting and controlling their exposure for users you explicitly invite. 
 
 ## Moving changes through deployment rings
@@ -119,7 +120,7 @@ Using the [Team Project Health](https://marketplace.visualstudio.com/items?itemN
 
 ![High-level dashboard on Azure DevOps](./_img/phase-rollout-with-rings/phase-rollout-with-rings-dash.png)
 
-# What's the value?
+## What's the value?
 
 Using a ring-deployment strategy you can gather feedback to validate your hypothesis. You can decommission old releases and distribute new releases without the risk of affecting all users. 
 
@@ -151,7 +152,7 @@ No, rings and feature flags are symbiotic. Feature flags give you fine-grained c
 
 Now that you've covered the concepts of rings, you should be confident to explore ways to improve your CI/CD pipelines. While the use of rings adds a level of complexity, having a game plan to address feature management and rapid customer feedback is invaluable.
 
-## Q&A
+## Q & A
 
 ### How do you know that a change can be deployed to the next ring?
 
@@ -174,6 +175,7 @@ Refer to [Default and custom release variables](/azure/devops/pipelines/release/
 Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
 
 ## Reference information
+
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 * [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 * [DevOps @ Microsoft](https://aka.ms/devops)

@@ -5,25 +5,46 @@ description: Use Work Item Search to search across all work item fields over one
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
-ms.author: ahomer
-author: 
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: quickstart
-ms.date: 02/19/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
-# Search for work items defined in a public project
+# Quickstart: Search for work items defined in a public project
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-With work item search, you can quickly find work items defined within a public project.
+In this quickstart, you learn how to perform a work item search to quickly find work items defined within a public project.
 
 <a name="start-search"></a>
 
 ## Initiate a search
 
-1. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
+> [!NOTE]   
+> To enable the new user interface for Enable modern search, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Boards**, and then **Work items**.
+
+   ![Select Boards > Work items](_img/select-boards-work-items-preview.png)
+
+4. Enter your search.
+
+   ![Search work items](_img/search-work-items-modern.png)
+
+#### [Current page](#tab/current-page)
+
+1. Choose **Work > Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)
@@ -75,6 +96,9 @@ With work item search, you can quickly find work items defined within a public p
 4. Narrow your search to specific types
    and states, by using the drop-down selector lists at the top of the results page.
 
-## Related articles
+## Next steps
 
-* [Search the code base](code-search-public.md)
+> [!div class="nextstepaction"]
+> [Search the code base](code-search-public.md)
+
+

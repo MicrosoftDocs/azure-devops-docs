@@ -1,11 +1,11 @@
----
-title: Deploy apps and databases with Deployment Groups
+﻿---
+title: Deploy apps & databases with Deployment Groups
 description: Deploy an app to IIS servers using Deployment Groups in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -49,12 +49,12 @@ If you deploy releases to multiple stages, you can substitute configuration sett
 1. Define stage-specific configuration settings in the **Variables** tab of a stage in a release pipeline; for example,
    `<connectionStringKeyName> = <value>`.
 
-1. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
+2. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
 
    > If you prefer to manage stage configuration settings in
-   your own database or Azure KeyVault, add a task to the stage to read and emit those values using
-   `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
-
+   > your own database or Azure KeyVault, add a task to the stage to read and emit those values using
+   > `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
+   > 
    > At present, you cannot apply a different configuration to individual IIS servers.
 
 <a name="rolling"></a>

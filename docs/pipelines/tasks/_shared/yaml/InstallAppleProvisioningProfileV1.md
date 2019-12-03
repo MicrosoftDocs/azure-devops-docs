@@ -1,6 +1,6 @@
 ```YAML
-# Install Apple Provisioning Profile
-# Install an Apple provisioning profile required to build on a macOS agent
+# Install Apple provisioning profile
+# Install an Apple provisioning profile required to build on a macOS agent machine
 - task: InstallAppleProvisioningProfile@1
   inputs:
     #provisioningProfileLocation: 'secureFiles' # Options: secureFiles, sourceRepository

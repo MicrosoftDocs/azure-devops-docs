@@ -5,7 +5,7 @@ description: Proxy Command
 ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

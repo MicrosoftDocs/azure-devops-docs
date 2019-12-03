@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
+ms.date: 05/11/2017
 ---
 
 # VM deployment and Delivery Plans – May 11

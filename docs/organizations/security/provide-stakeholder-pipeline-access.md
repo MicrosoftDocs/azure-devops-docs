@@ -1,16 +1,16 @@
----
+﻿---
 title: Provide free access to pipelines for Stakeholders 
 titleSuffix: Azure DevOps Services
 description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 02/11/2019
+ms.date: 11/21/2019
 ---
 
 
@@ -41,13 +41,13 @@ Stakeholders are still subject to the permissions set for their security group. 
 
 After turning on the **Free access to Pipelines for Stakeholders** preview feature, you can limit access to select features or tasks by setting permissions. The general steps are: 
 
-1. Create a custom, project-level, security group in Azure DevOps 
+1. Create a custom, project-level, security group in Azure DevOps. 
 2. Add users to this group 
 3. Set permissions to **Deny** or **Not set** for those CI/CD features you want to limit access to. You can set permissions for these CI/CD artifacts:
 	- All build pipelines or select build pipelines
 	- All release pipelines or select release pipelines 
 	- Task groups
-0. Add the security group to a Library security role for these artifacts: 
+1. Add the security group to a Library security role for these artifacts: 
 	- Variable groups
 	- Secure files
 	- Deployment groups 
@@ -62,31 +62,53 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
+::: moniker range="azure-devops"
 
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
-0. Choose **Project Settings** in the sidebar.
+#### [Preview page](#tab/preview-page) 
+
+1. Choose **Project settings**, and then **Permissions**.
+
+	![Choose Project settings, and then Permissions](_img/permissions/choose-project-settings-permissions.png)
+
+2. Choose **New group** to open the dialog for adding a group.
+
+	![Choose New group](_img/permissions/permissions-select-new-group.png)
+
+3. Enter a name for the group, add users or groups, and optionally a description. Choose **Create**.
+
+    ![New group dialog](_img/permissions/create-group-dialog.png)
+
+#### [Current page](#tab/current-page)
+
+1. Choose **Project Settings** in the sidebar.
 
     > [!div class="mx-imgBorder"]  
 	> ![Web portal, open project admin context, vertical nav](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
-1. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
+2. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create security group](_img/stakeholder-security/create-group-option-vert.png)
 
-2. Enter a name for the group, and optionally a description.
+3. Enter a name for the group, and optionally a description.
 
     For example, here we define a *Stakeholder Access* group.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create group dialog](_img/stakeholder-security/create-group-dialog.png)   
 
-3. Choose **Create group**.
+4. Choose **Create group**.
 
+::: moniker-end
+
+* * *
 
 ## Add members to the custom security group 
 
-0. To add members to the group, choose the security group, choose **Members**, and then choose **Add**.
+1. To add members to the group, choose the security group, choose **Members**, and then choose **Add**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/stakeholder-security/choose-members-add.png) 
@@ -99,11 +121,12 @@ To create a project-level security group, open the web portal and choose the pro
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for build pipelines
 
 Open the Security dialog for all or a select build pipeline. 
 
-0. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../_img/icons/actions-icon.png)actions icon and select **Security**.
+1. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../_img/icons/actions-icon.png)actions icon and select **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build pipelines, vertical nav](_img/stakeholder-security/open-security-all-build-pipelines-new-nav.png)  
@@ -116,7 +139,7 @@ Open the Security dialog for all or a select build pipeline.
 
 ## Add and set permissions for the custom security group  
 
-0. Choose **Add** to add the *Stakeholder Access* group to the Permissions dialog. 
+1. Choose **Add** to add the *Stakeholder Access* group to the Permissions dialog. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add link to add a group](_img/stakeholder-security/choose-add-to-add-group.png)  
@@ -139,13 +162,14 @@ Open the Security dialog for all or a select build pipeline.
 
 
 <a id="build-permissions" /> 
+
 ## Set permissions for release definitions
 
 You can follow the steps provided in the previous two procedures to set permissions for release definitions. 
 
 Open the Security dialog for all or a select release pipeline. 
 
-0. To set the permissions for all release pipelines, open **Build and Release>Releases**, and then choose **Security**.
+1. To set the permissions for all release pipelines, open **Build and Release>Releases**, and then choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build definitions, vertical nav](_img/stakeholder-security/open-security-release-definitions-vert.png)  

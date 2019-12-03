@@ -1,4 +1,21 @@
+---
+title: Azure DevOps CLI in Azure Pipeline YAML
+titleSuffix: Azure DevOps 
+description: Use Azure DevOps CLI to create Azure Pipeline YAML
+ms.topic: reference 
+ms.manager: mijacobs
+ms.prod: devops 
+ms.technology: devops-ref
+ms.manager: mijacobs 
+ms.author: geverghe
+author: KathrynEE
+monikerRange: 'azure-devops'
+ms.date: 06/18/2019
+---
+
 # Azure DevOps CLI in Azure Pipeline YAML
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 
@@ -20,16 +37,18 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases yes
+- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
     az pipelines build list
     git pr list
   displayName: 'Show build list and PRs'
+
 ```
 
 ### For Linux: azure-pipelines-steps-linux.yml
+
 
 ```yaml
 steps:
@@ -58,7 +77,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |
@@ -67,7 +86,8 @@ steps:
     displayName: 'Show build list and PRs'
 ```
 
-For Windows: azure-pipelines-steps-win.yml
+#### For Windows: azure-pipelines-steps-win.yml
+
 
 ```yaml
 steps:
@@ -96,7 +116,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |
@@ -134,4 +154,4 @@ jobs:
     vmImage: 'vs2017-win2016'
   steps:
   - template: azure-pipelines-steps-win.yml
-
+```

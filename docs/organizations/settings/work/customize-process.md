@@ -6,7 +6,7 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -86,7 +86,7 @@ Locked ![ ](_img/process/locked-icon.png) fields and inherited ![ ](_img/process
 	- [Rich-text or HTML](customize-process-field.md#html)  
 	- [Checkbox (Boolean)](customize-process-field.md#boolean-field)
 
-0. To modify an existing field, you can exercise these choices: 
+1. To modify an existing field, you can exercise these choices: 
 
 	- [Change the field label](customize-process-field.md#rename-field)  
 	- [Show/Hide field on form](customize-process-field.md#show-hide-field)  
@@ -109,7 +109,7 @@ To learn more, see [Add a rule to a work item type](custom-rules.md).
 
 You use different WITs to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases.
 
-0. To begin, choose your inherited process, and then choose the WIT you want to customize. 
+1. To begin, choose your inherited process, and then choose the WIT you want to customize. 
 
 1. From the **Work Item Types** page, choose the ![ ](../../../_img/icons/blue-add-icon.png) **New work item type**.
 
@@ -130,11 +130,12 @@ You use different WITs to plan and track different types of work. The main reaso
 
 
 <a id="workflow" />
+
 ## Modify the workflow of a work item type 
 
 Workflow states allow you to track the status of a work item as it moves from new to completed. 
 
-0. To modify a workflow, choose your inherited process, the WIT, and then the **States** page.  
+1. To modify a workflow, choose your inherited process, the WIT, and then the **States** page.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
@@ -146,6 +147,7 @@ Workflow states allow you to track the status of a work item as it moves from ne
 	- [Remove a state](customize-process-workflow.md#remove-state)     
  
 <a id="custom-control" />
+
 ## Add a custom control    
 
 Custom controls provide additional functionality to a work item form. 
@@ -159,6 +161,7 @@ To learn more, see [Add extensions and custom controls to a work item type](cust
 
 
 <a id="extension" /> 
+
 ## Add an extension to a work item type
 
 An extension is an installable unit that contributes new capabilities to your project.
@@ -166,7 +169,7 @@ An extension is an installable unit that contributes new capabilities to your pr
 > [!NOTE]   
 > Group and Page extensions are automatically added to all WITs for all processes, both system and  inherited . You can choose to hide an extension for selected WITs within an  inherited process. 
 
-0. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
+1. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
  
 	> [!div class="mx-imgBorder"]  
 	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
@@ -192,7 +195,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 > [!div class="mx-imgBorder"]  
 > ![Changes made to the backlog levels](_img/process/process-backlog-boards-intro.png) 
 
-0. To modify the backlogs  and boards configuration, begin by choosing your inherited process, and then choose the **Backlog levels** page. 
+1. To modify the backlogs  and boards configuration, begin by choosing your inherited process, and then choose the **Backlog levels** page. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, open Backlog levels](_img/process/process-backlog-levels-open.png) 
@@ -208,6 +211,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 
 <a id="verify">  </a>
+
 ## Verify the customization you made 
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
@@ -215,9 +219,10 @@ We recommend that you create a test project and apply your customized inherited 
 - [Create a test organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
+
 ### Create a test project and copy of your customized process
 
-0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
@@ -235,6 +240,7 @@ We recommend that you create a test project and apply your customized inherited 
 3. Verify that the field(s) you added appear on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
+
 ### Create a test organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
@@ -249,6 +255,7 @@ You can also use the following steps to verify the customizations you've made to
 
 
 <a id="process-rest-api">  </a>
+
 ## Programmatically work with processes 
 
 You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](/rest/api/azure/devops/processes/processes).

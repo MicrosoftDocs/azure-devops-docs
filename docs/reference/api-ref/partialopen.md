@@ -5,7 +5,7 @@ description: Syntax and usage for the PartialOpen method to open a work item for
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 82920422-FCC2-4FF6-BDFB-E8E992736A5A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

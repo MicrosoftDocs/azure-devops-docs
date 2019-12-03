@@ -6,9 +6,9 @@ ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ronai
-author: RoopeshNair
+ms.manager: mijacobs
+ms.author: shashban
+author: shashankbarsin
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---

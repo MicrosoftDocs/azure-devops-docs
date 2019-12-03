@@ -1,6 +1,6 @@
 ```YAML
 # Azure Web App
-# Update Azure App Services on Windows, Web App on Linux with built-in images, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Mobile Apps, API applications
+# Deploy an Azure Web App for Linux or Windows
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a project
@@ -6,12 +6,12 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 08/12/2019
 ---
 
 # Add and manage fields for an inherited process   
@@ -55,7 +55,7 @@ Fields listed correspond to all those defined for the organization. For descript
 You can add fields and specify the group and page where they should appear. Also, once you've added a field, you can drag-and-drop it within a page to relocated it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
 
 > [!NOTE] 
-> You can only add fields within a page on a form. You can't add a field to the gray area within the form. 
+> You can only add fields within a page on a form. You can't add a field to the gray area within the form where the Assigned To, State, and Reason fields are located. 
 
 
 1. From the **Process** page of the selected inherited process, choose the work item type you want to add the custom field to. 
@@ -94,7 +94,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you haven't specified its layout location, it is added to the first group of fields on the layout form.  
 
@@ -107,13 +107,28 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
+
 ### Add a picklist  
 
-1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. Add the items in the order you want them to appear in the list.
+::: moniker range="azure-devops"
+
+You can add a new field and define a pick list or customize the pick list of an inherited field. 
+
+::: moniker-end
+
+1. Start by choosing ![add new field icon](_img/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press Enter to add another item. 
 
 	<img src="_img/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../_img/icons/delete_icon.png) delete icon.  
+
+	::: moniker range="azure-devops"
+	<a id="edit-picklist-inherited" />
+	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Priority field, Definition tab dialog](_img/field/edit-priority-picklist.png)   
+	::: moniker-end
 
 2. (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values. 
 
@@ -122,7 +137,7 @@ You can add fields and specify the group and page where they should appear. Also
 3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong>  tab). 
  
 <!---
-2. To reorder the list, simply drag the item to where you want it in the list. 
+2. To reorder the list, simply drag the item to where you want it in the list. Add the items in the order you want them to appear in the list.
 
 	![Add a custom picklist](_img/process/customize-field-reorder-list.png)
 -->
@@ -237,7 +252,7 @@ If you add the field back to the form, then the history for it is restored.To de
 
 	<img src="_img/process/customize-process-remove-field-confirm.png" alt="Confirm to remove field from the bug work item form" style="border: 1px solid #C3C3C3;" />   
 
-0. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
+1. To add a custom field that's been removed, choose **New field** and select **Use an existing field**.  
 
 
 <a id="revert">  </a>

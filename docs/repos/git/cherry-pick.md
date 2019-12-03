@@ -5,7 +5,7 @@ description: Copy and port changes from one branch to another in Git with cherry
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -34,9 +34,9 @@ In this tutorial you learn how to:
 ## Cherry-pick a commit
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
-1. Right-click the branch containing the changes you want and select **View History...**. 
-2. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
+1. Open up Team Explorer and checkout to the branch you want to cherry-pick changes into using the **Branches** view.
+2. Right-click the branch containing the changes you want and select **View History...**. 
+3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
     Visual Studio copies the changes made in that commit into a new one on your current branch.
     ![Cherry pick from inside Visual Studio](_img/vscherrypick.gif)

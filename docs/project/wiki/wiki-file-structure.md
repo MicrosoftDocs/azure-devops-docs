@@ -1,5 +1,5 @@
----
-title: Wiki repository files, structure, and conventions in Azure DevOps
+﻿---
+title: Wiki files, structure, and conventions
 titleSuffix: Azure DevOps 
 description: Understand the file conventions of the Git repository wiki in Azure DevOps
 ms.technology: devops-collab
@@ -7,12 +7,12 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 author: chcomley
 monikerRange: '>= tfs-2018'
-ms.date: 02/19/2019  
+ms.date: 09/19/2019  
 ---
 
 # Wiki Git repository files and file structure
@@ -43,7 +43,7 @@ The wiki repository has the following files and folders:
 
 ## File naming conventions
 
-Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name.  
+Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the wiki changes over time. 
 
 [!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
 
@@ -53,7 +53,7 @@ Each file follows the convention of inserting dashes for a space in the page tit
 
 The *.order* file is used to set the order of the Wiki pages in a particular hierarchy. With order files, you can set your own order for the Wiki pages according to the information flow on that hierarchy.
 
-For example, the images below shows the default order for an hierarchy which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
+For example, the images below show the default order for a hierarchy, which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
 
 > ![Wiki page hierarchy without order file](_img/wiki/without-order-file.png)
 > ![Wiki page hierarchy with order file](_img/wiki/with-order-file.png)

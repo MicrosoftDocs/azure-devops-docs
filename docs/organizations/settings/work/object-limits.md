@@ -6,11 +6,11 @@ ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'azure-devops'
+monikerRange: "azure-devops"
 ms.date: 06/02/2017
 ---
 
@@ -26,6 +26,7 @@ Below you find maximum number of objects in the Inheritance and Hosted XML proce
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
+| Number of processes you can have in an organization |          64 |         64 |
 | Work item types defined for a process               |          64 |         64 |
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |

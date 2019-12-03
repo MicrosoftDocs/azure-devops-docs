@@ -1,10 +1,11 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md", "**/*.yml"
+          "**/*.md", 
+          "**/*.yml"
         ],
         "group": "all",
         "exclude": [
@@ -53,12 +54,35 @@
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/vsts-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.team-services",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {
       "titleSuffix": {
+        "artifacts/**/**.md": "Azure Artifacts",
+        "boards/**/**.md": "Azure Boards",
+        "cli/**/**.md": "Azure DevOps",
+        "extend/**/**.md": "Azure DevOps",
+        "integrate/**/**.md": "Azure DevOps",
+        "java/**/**.md": "Azure DevOps",
+        "marketplace/**/**.md": "Azure DevOps",
+        "migrate/**/**.md": "Azure DevOps",
+        "notifications/**/**.md": "Azure DevOps",
+        "organizations/**/**.md": "Azure DevOps",
         "pipelines/**/**.md": "Azure Pipelines",
-        "test/**/**.md": "Azure Test Plans"
+        "project/**/**.md": "Azure DevOps",
+        "reference/**/**.md": "Azure DevOps",
+        "report/**/**.md": "Azure DevOps",
+        "repos/**/**.md": "Azure Repos",
+        "security-access-billing/**/**.md": "Azure DevOps",
+        "service-hooks/**/**.md": "Azure DevOps",
+        "test/**/**.md": "Azure Test Plans",
+        "user-guide/**/**.md": "Azure DevOps"
       },
       "monikerRange": {
         "report/admin/**": "<= azure-devops-2019",
@@ -66,9 +90,10 @@
         "report/excel/**": "<= tfs-2017",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sharepoint-dashboards/**": "<= tfs-2017",
         "report/sql-reports/**": "<= azure-devops-2019",
-        "work/tfs-ps-sync/**": "<= tfs-2015"
+        "reference/tfs-ps-sync/**": "<= tfs-2015",
+        "reference/witadmin/**": "<= azure-devops-2019",
+        "reference/mapping/**": "<= azure-devops-2019"
       },
       "ROBOTS":{
         "integrate/previous-apis/**": "NOINDEX,NOFOLLOW"

@@ -1,5 +1,5 @@
 ```YAML
-# Publish Code Coverage Results
+# Publish code coverage results
 # Publish Cobertura or JaCoCo code coverage results from a build
 - task: PublishCodeCoverageResults@1
   inputs:

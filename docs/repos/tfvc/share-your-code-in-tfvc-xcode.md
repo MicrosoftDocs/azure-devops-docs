@@ -5,7 +5,7 @@ description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart
@@ -22,7 +22,7 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 
 ## Download and configure Git-tf
 
-1. Download and extract [Git-tf](http://go.microsoft.com/fwlink/p/?LinkId=261658).
+1. Download and extract [Git-tf](https://go.microsoft.com/fwlink/p/?LinkId=261658).
 
 2. Add Git-tf and the Java runtime to your path.
 

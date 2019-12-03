@@ -5,9 +5,9 @@ ms.assetid: e7b48fb1-6511-4a2b-9eb1-f9e4488593c4
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/01/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -23,11 +23,11 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
->**The web portal or Microsoft Test Runner?** Use the web-based test runner
-in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
-Test Runner for desktop applications. You can 
-[launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
-from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
+> **The web portal or Microsoft Test Runner?** Use the web-based test runner
+> in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
+> Test Runner for desktop applications. You can 
+> [launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
+> from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
   
 ### Running test cases with Microsoft Test Runner  
   
@@ -123,7 +123,7 @@ see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-u
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 
-**A:** Yes, see [Automate system tests](../../pipelines/index.md).
+**A:** Yes, see [Automate system tests](../../pipelines/index.yml).
   
 ## See Also  
 

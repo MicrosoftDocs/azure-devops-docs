@@ -2,14 +2,14 @@
 title: Packages | REST API Reference for VSTS 
 description: Work with packages programmatically using the REST APIs for VSTS .
 ms.assetid: 1f8825e8-7916-488b-b71e-c807f1f5234d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -388,7 +388,7 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInter
 ```
 
 
-To construct the [NuGet v3](http://docs.nuget.org/) endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
+To construct the [NuGet v3](https://docs.nuget.org/) endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
 
 For example, the NuGet v3 endpoint for the feed shown above is `https://contoso.pkgs.visualstudio.com/DefaultCollection/_packaging/EngineeringInternal/nuget/v3/index.json`.
 

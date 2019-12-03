@@ -1,6 +1,6 @@
 ```YAML
-# IIS Web App Manage
-# Create or update a Website, Web App, Virtual Directories, and Application Pool
+# IIS web app manage
+# Create or update websites, web apps, virtual directories, or application pools
 - task: IISWebAppManagementOnMachineGroup@0
   inputs:
     #enableIIS: false # Optional

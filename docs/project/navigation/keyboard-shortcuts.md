@@ -1,5 +1,5 @@
 ---
-title: Web portal& Team Explorer keyboard shortcuts 
+title: Web portal Team Explorer keyboard shortcuts 
 titleSuffix: Azure DevOps
 description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
 ms.custom: Navigation
@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/18/2017

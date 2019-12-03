@@ -1,7 +1,7 @@
 *to be converted to typescript* 
 
-1. Create an object with a function that will handle the action.
-In this case, we'll open the Hello hub.
+1. Create an object with a function that handles the action.
+In this case, we open the Hello hub.
 
 	```
 	scripts/action.js

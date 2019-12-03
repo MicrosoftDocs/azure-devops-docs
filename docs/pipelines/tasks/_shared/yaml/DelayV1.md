@@ -1,6 +1,6 @@
 ```YAML
 # Delay
-# Delay further execution of the workflow by a fixed time.
+# Delay further execution of a workflow by a fixed time
 - task: Delay@1
   inputs:
     #delayForMinutes: '0' 

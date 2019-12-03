@@ -5,10 +5,10 @@ ms.assetid: C08EC3FB-6787-4956-86D3-B4085B69FCBA
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---

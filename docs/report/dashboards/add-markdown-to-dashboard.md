@@ -6,7 +6,7 @@ ms.custom: dashboards
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
@@ -19,9 +19,10 @@ ms.date: 11/19/2018
 
 
 <a id="markdown-widget">  </a> 
+
 Use the Markdown widget to support your team and stakeholders by adding information such as:  
 - Team goals  
-- Provide links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
+- Links to team backlogs or boards, metrics, or other items located in a network share such as a OneNote, SharePoint site or wiki pages   
 - Important dates or target deadlines  
 
 Here's an example:  
@@ -29,8 +30,33 @@ Here's an example:
 
 [!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
 
+## Supported Markdown syntax
+
+The Markdown widget supports CommonMark standard features, such as: 
+- Headings 
+- Paragraphs and line breaks
+- Blockquotes
+- Horizontal rule 
+- Emphasis (bold, italics, strikethrough)
+- Tables
+- Lists, both ordered and unordered  
+- Links
+- Images 
+- Escaping characters
+
+For details on usage, see [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md).
+
+For performance reasons, the Markdown widget doesn't add support for a number of extended features, many of which are supported in the wiki. Extended capabilities would impede widget load time. For example, the following extended markdown features aren't supported in the Markdown widget:
+- Emdedded HTML syntax  
+- Code highlighting (wiki/others support language-syntax aware color coding, CommonMark just renders code as plain preformatted text)
+- Checklists
+- Emoji characters  
+- Attachments
+- Math formulas
+
 
 ## Connect to your project 
+
 To add the markdown widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -65,7 +91,7 @@ If you need to add a dashboard, see [Add, rename, and delete dashboards](dashboa
 ::: moniker range=">= azure-devops-2019"
 To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  
 
-0. Add or drag the Markdown widget onto the dashboard where you want it located.  
+1. Add or drag the Markdown widget onto the dashboard where you want it located.  
 
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
@@ -106,7 +132,7 @@ To add the markdown widget to the dashboard, choose ![ ](_img/icons/edit-icon.pn
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-0. Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard.  
+1. Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard.  
 
 1. Choose ![add a widget icon](_img/add-widget-icon.png) to open the widget catalog.  
 

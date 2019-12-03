@@ -5,7 +5,7 @@ description: How dates work in Git
 ms.assetid: c5e233e2-cc84-4ca6-8ca3-8eb6d686533a
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -75,7 +75,7 @@ To learn more about the various formatting options, see the [git log man page](h
 When you're getting ready to commit your code, note that you have the ability to set both the author and commit dates. This isn't something you should do often.
 
 You can change the author date of a given commit by passing the `--date` flag to `git commit`.
-There are various articles regarding the formatting of this flag, but the gist is that it isn't well-documented. [This StackOverflow question](http://stackoverflow.com/questions/19742345/what-is-the-format-for-date-parameter-of-git-commit) does a great job of explaining the acceptable date formats.
+There are various articles regarding the formatting of this flag, but the gist is that it isn't well-documented. [This StackOverflow question](https://stackoverflow.com/questions/19742345/what-is-the-format-for-date-parameter-of-git-commit) does a great job of explaining the acceptable date formats.
 
 You can also use the environment variables `GIT_COMMITTER_DATE` and `GIT_AUTHOR_DATE` to set the corresponding dates, as documented in the [man page](https://git-scm.com/docs/git-commit). 
-If you need to go this route, use [this Stack Overflow question](http://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git) as a starting point.
+If you need to go this route, use [this Stack Overflow question](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git) as a starting point.

@@ -5,7 +5,7 @@ description: Enable the data to flow from work items in Team Foundation Server t
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ec7be08-78e4-40be-81ae-4d2d81c49cd0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 05/18/2017 
@@ -27,7 +27,7 @@ By installing Team Foundation Server Extensions for Project Server, project mana
 > [!NOTE]
 >  You can download a virtual machine that demonstrates how to integrate TFS and Project Server 2010 to allow teams to share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in TFS, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS.  
 >   
->  For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](http://go.microsoft.com/fwlink/?LinkID=196413). Some details might differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
+>  For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](https://go.microsoft.com/fwlink/?LinkID=196413). Some details might differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
   
 <a name="admintasks"></a> 
 
@@ -119,9 +119,9 @@ When the project manager rejects an update to a work item, you must address the 
 ###  Demonstration videos  
 The following videos, which are available from the Microsoft website, illustrate the flexibility that you have to manage the product lifecycle after you integrate the two server products.  
   
--   [Application Lifecycle Management: Microsoft Project Server 2010 and TFS 2010, Better Together](http://go.microsoft.com/fwlink/?LinkId=222614)    
--   [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222610)   
--   [Managing Project Details in an Enterprise Project Plan Mapped to a Team Project in Team Foundation Server](http://go.microsoft.com/fwlink/?LinkId=222611)  
--   [Making Agile Team Progress Visible to the Project Management Office](http://go.microsoft.com/fwlink/?LinkId=222612)   
--   [Managing Field Mappings for Integration of Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222613)  
+-   [Application Lifecycle Management: Microsoft Project Server 2010 and TFS 2010, Better Together](https://go.microsoft.com/fwlink/?LinkId=222614)    
+-   [Top-Down Planning of Business Requirements within an Enterprise Project using Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222610)   
+-   [Managing Project Details in an Enterprise Project Plan Mapped to a Team Project in Team Foundation Server](https://go.microsoft.com/fwlink/?LinkId=222611)  
+-   [Making Agile Team Progress Visible to the Project Management Office](https://go.microsoft.com/fwlink/?LinkId=222612)   
+-   [Managing Field Mappings for Integration of Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222613)  
   

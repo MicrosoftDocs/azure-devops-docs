@@ -5,10 +5,10 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Team Room Messages | REST API Reference for Team Foundation Server
 description: Work with messages in team rooms programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: FBA6437B-1A08-4762-A91C-B1F7777366E8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/04/2016
 ---
 

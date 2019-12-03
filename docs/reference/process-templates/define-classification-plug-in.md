@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 7c1284c6-9c03-41e9-94c1-923db90957be
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -206,4 +206,6 @@ Required child element of <strong>properties</strong>. Defines project-related d
 
 
 ## Related articles 
-*   <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Set project-level area paths](../../organizations/settings/set-area-paths.md)">Set project-level area paths</a><br/>*   <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Set project-level iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)">Set project-level iteration paths</a><br/> 
+
+- [Set project-level area paths](../../organizations/settings/set-area-paths.md)
+- [Set project-level iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)

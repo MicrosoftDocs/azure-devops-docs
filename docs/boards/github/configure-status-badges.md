@@ -1,27 +1,32 @@
----
-title: Enable Kanban board badge status for your GitHub repo  
+﻿---
+title: Enable Kanban board badge status for GitHub repo
 titleSuffix: Azure Boards
 description: Configure your Kanban board badge status to appear on your GitHub repo  
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/19/2019
 ---
 
 # Configure status badges to add to GitHub README files 
 
-[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
  
 You can add Markdown syntax to a GitHub repo README.md file to display the status of your Kanban board. You do this by adding the syntax you choose from your Kanban board settings.  
- 
-> [!NOTE]   
-> This syntax will work whether you have or haven't [connected your project to a GitHub.com or GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+The syntax shown works whether you have or haven't [connected your project to a GitHub.com or GitHub Enterprise Server repository](connect-to-github.md). For GitHub Enterprise Server, your server must be network accessible to Azure DevOps Services. 
 
 ## Prerequisites 
 

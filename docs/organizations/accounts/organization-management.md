@@ -1,5 +1,5 @@
----
-title: About creating and managing organization - Azure DevOps
+﻿---
+title: About creating and managing organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.
@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -24,7 +24,7 @@ With an organization, you gain access to the platform in which you can do the fo
 * Plan and track your work as well as code defects and issues.
 * Set up continuous integration and deployment.
 * Integrate with other services by using service hooks.
-* Obtain additional features through Azure Marketplace extensions.
+* Obtain additional features and extensions.
 
 ## Create your organization
 
@@ -84,3 +84,4 @@ your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.
+You can also [restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

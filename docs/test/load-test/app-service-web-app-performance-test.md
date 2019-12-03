@@ -5,9 +5,9 @@ ms.assetid: D39BF037-ADF1-41D7-BA6D-84AADA2A16DE
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
@@ -98,7 +98,7 @@ that represent an end-to-end user scenario by uploading a Visual
 Studio Web Test file. Some of the ways you can create a
 Visual Studio Web Test file are:
 
-* [Capture traffic using Fiddler and export as a Visual Studio Web Test file](http://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
+* [Capture traffic using Fiddler and export as a Visual Studio Web Test file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/VSWebTest)
 * [Create a load test file in Visual Studio](run-performance-tests-app-before-release.md)
 
 To upload and run a Visual Studio Web Test file:

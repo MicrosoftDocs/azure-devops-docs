@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,8 +18,10 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="< tfs-2018"
+
 > [!NOTE]
 > For TFS, this topic applies to only TFS 2017 Update 1 and later.
+
 ::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
@@ -134,6 +136,23 @@ use the following steps.
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
+::: moniker range=">= azure-devops-2019"
+
+## Setting up jobs for parallel testing in YAML pipelines
+
+Specify the `parallel` strategy in the `job` and indicate how many jobs should be dispatched. You can specify as many as 99 agents to scale up testing for large test suites.
+
+```YAML
+jobs:
+- job: ParallelTesting
+  strategy:
+    parallel: 2
+```
+
+For more information, see [YAML schema - Job](../yaml-schema.md#job).
+
+::: moniker-end
+
 ## Run tests in parallel in release pipelines
 
 Use the following steps if you have a large test suite or long-running functional tests
@@ -149,7 +168,7 @@ to validate the app functionality.
 
    ![DeployApp1Agent](_img/parallel-testing-vstest/deploy-app-1-agent.png)
 
-1. **Run tests in parallel using multiple agents**:
+2. **Run tests in parallel using multiple agents**:
 
    * Add an **agent job**
 
@@ -171,7 +190,7 @@ to validate the app functionality.
      > For example, web app binaries are not required to run Selenium tests and downloading these can be
      > skipped if the app and test artifacts are published separately by your build pipeline.
 
-   *  Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the

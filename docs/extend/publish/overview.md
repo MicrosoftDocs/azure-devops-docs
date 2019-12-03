@@ -5,10 +5,10 @@ title: Package, publish, & unpublish extensions | Azure DevOps Services
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/29/2016
 ---
 
@@ -17,7 +17,7 @@ ms.date: 08/29/2016
 After writing an Azure DevOps Services extension, the next step is to package it. After packaging, extensions are published, or uploaded, to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops), where they can be installed by users that the extensions are shared with. The Marketplace is a centralized, global repository for private and public extensions, integrations, and other offers from Microsoft.
 
 >[!NOTE]
->For information on the discovery properties available in your extension's manifest file that will help users discover and learn about your extension, 
+>For information on the discovery properties available in your extension's manifest file that helps users discover and learn about your extension, 
 >visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops)
 
 ## Publishing Requirements
@@ -37,7 +37,7 @@ To upload your extension, you need to package it as a VSIX 2.0-compatible .vsix 
 Microsoft provides a cross-platform command line interface (CLI) to package (and also publish) your extension. 
 
 ### Get the package tool (tfx-cli)
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](http://nodejs.org), from your command line.
+You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
@@ -51,7 +51,14 @@ tfx extension create --manifest-globs vss-extension.json
 
 >[!NOTE]
 >An extension/integration's version must be incremented on every update. <br>
->If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This will increment the *patch* version number of your extension and save the new version to your manifest.
+>If you haven't incremented your extension/integration in the manifest, you should pass the `--rev-version` command line switch. This increments the *patch* version number of your extension and saves the new version to your manifest.
+
+#### Check package size
+
+Check the size of the vsix after it is packaged. If greater than 50 MB then it needs to be optimized. To do so, consider the following:
+* De-duplicate the common dependences, if any, by stating them once in the extension package.
+* Fetch things at runtime or during install time rather than providing it within the package. Consider using the tool installer lib to pull tool dependencies at runtime. Using the lib offers benefits where the tool is cached by version so for private agents, it won't get downloaded every build. We made it a lib so it can be used outside of tool installer tasks. The one consideration, is the task will not work in disconnected scenarios (no internet).  That should just be in the description / docs for the task.
+* Some customers have had good success with WebPack to tree shake their dependencies in their tasks.
 
 <a id="upload"></a>
 ## Publish
@@ -59,14 +66,15 @@ tfx extension create --manifest-globs vss-extension.json
 [!INCLUDE [Package_extension](../_shared/procedures/publish.md)]
 
 ## Share
+
 <a name="shareextension" />
 
 Before an extension can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
 
 To share an extension so it can be installed:
 
-1. Click on the ellipses of an extension item to bring up the menu
-2. Click the **Share** button
+1. Select the ellipses of an extension item to bring up the menu
+2. Select the **Share** button
 
    ![Share Extensions](../_img/share-extension.png)
 
@@ -88,8 +96,8 @@ To install an extension that has been shared:
 
    ![Shared with me](_img/extensions-tab-shared.png)
 
-3. Click the card to open the item in the Marketplace
-4. From the item's details page, click the **Install** button
+3. Select the card to open the item in the Marketplace
+4. From the item's details page,select the **Install** button
 5. Choose the organization you shared the extension with and proceed through the installation process. 
   
 ## Update
@@ -101,6 +109,7 @@ To install an extension that has been shared:
 For information on making your extension public, visit [Make your listing public](publicize.md).
    
 ## Unpublish
+
 You can unpublish/delist free extensions, if you no longer want to offer them in the Marketplace or published by mistake. 
 
 Here are some scenarios where you might want to remove your extension from the Marketplace:
@@ -109,13 +118,14 @@ Here are some scenarios where you might want to remove your extension from the M
   * You published your extension as public by mistake.
 
 To unpublish, select the extension on your [publisher page](https://aka.ms/vsmarketplace-manage) and choose **Unpublish** on the menu. 
-Your extension will be unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension will stay intact. 
+Your extension is unpublished immediately from the Marketplace, and new users won't be able to install it. Ratings and reviews for your extension stays intact. 
 
 To offer your extension again in the Marketplace, choose **Publish** on the menu.
 
-You can also choose to remove your extension completely from the Marketplace if your extension has zero (0) installs. To do this, choose **Remove** on the menu. This action cannot be undone. 
+You can also choose to remove your extension completely from the Marketplace if your extension has zero (0) installs. To do this, choose **Remove** on the menu. This action can't be undone. 
 
 ### Unpublish/Remove requirements
+
 Certain criteria must be met for an extension to be unpublished or removed:
 
 | Action    | Requirements                                                  |
@@ -123,7 +133,7 @@ Certain criteria must be met for an extension to be unpublished or removed:
 | Unpublish | Only **free extensions** may be unpublished.                  |
 | Remove    | Your extension must have **zero (0)** installs to be removed. |
 
-**Important**: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension. 
+**Important**: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We review the request and manually delete the extension. 
 
 ## Contact
 
