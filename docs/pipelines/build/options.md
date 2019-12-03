@@ -130,7 +130,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
     ![Project settings](_img/options/project-permissions.png)
 
-2.  Choose **Users**, start to type in the name **SpaceGameWeb**, select **Expand search**, and select the **SpaceGameWeb Build Service** account.
+2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
     ![Add user](_img/options/add-build-service-user-project-permissions.png)
 
