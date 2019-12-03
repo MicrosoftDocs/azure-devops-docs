@@ -23,7 +23,7 @@ Find answers to frequently asked questions when using Microsoft Excel to add or 
 
 ## Connect and versioning support
 
-If you are having connection issues, make sure you meet the prerequistes as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
+If you are having connection issues, make sure you meet the prerequisites as listed in [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) and have reviewed the information in [Azure Boards and Office integration](track-work.md). 
 
 ### Q: What versions of Azure DevOps work with Excel?
 
@@ -39,7 +39,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: Can I use Excel on my Mac?
 
-**A:** No. macOS isn't supported. Excel must be installed on the same computer where Visual Studio or Team Explorer are inistalled. These applications require Windows.
+**A:** No. macOS isn't supported. Excel must be installed on the same computer where Visual Studio or Team Explorer are installed. These applications require Windows.
 
 ### Q: Can I open a query in Excel from the web portal?  
 
@@ -191,7 +191,7 @@ To drag a work item, select the work item or contiguous set of work items that y
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md) 
 - [Create your backlog](../../backlogs/create-your-backlog.md) 
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md) 
-- [Basic Excel tasks](https://support.office.com/en-us/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 ::: moniker-end  
 
 ::: moniker range="< azure-devops" 
@@ -199,7 +199,7 @@ To drag a work item, select the work item or contiguous set of work items that y
 - [Create your backlog](../../backlogs/create-your-backlog.md)
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
-- [Basic Excel tasks](https://support.office.com/en-us/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  
 
