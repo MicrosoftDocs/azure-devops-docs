@@ -297,6 +297,7 @@ The Correct Flow view shows those dependencies that are in the correct sequence.
 > ![Timeline view, correct flow](_img/tracker/timeline-oc-word-2019-correct-flow.png)
 
 #### Incorrect Flow
+
 The Incorrect Flow  view shows those dependencies that are out of order. At least one predecessor work item is scheduled to be completed after it's successor work item.
 
 > [!div class="mx-imgBorder"]  
@@ -310,7 +311,7 @@ The Incorrect Flow  view shows those dependencies that are out of order. At leas
 The Risk Graph provides a visualization of how dependencies flow from Consumer team to Producer team, or from Producer to Consumers. The graph allows a team to, at a glance, understand the magnitude of dependencies and level of risks associated. In addition, the risk graph view demonstrates the value of linking dependencies and laddering them up to Stories. 
 
 > [!div class="mx-imgBorder"]  
-> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph.png)
+> ![Dependency Tracker Risk Graph, Consuming From](_img/tracker/risk-graph-1.png)
 
 There are two views: **Consuming From** and **Producing For**. The workflow state color coding is configurable. The width of the lines indicate how many dependencies exist in that area, the thicker the link the more dependencies as indicated in the legend.
 
