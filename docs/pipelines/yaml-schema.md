@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 11/26/2019
+ms.date: 12/03/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -510,6 +510,15 @@ steps:
 See the schema references for [script](#script),
 [bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-templates) for more details about each.
+
+All steps, whether documented below or not, allow the following properties:
+- `displayName`
+- `name`
+- `condition`
+- `continueOnError`
+- `enabled`
+- `env`
+- `timeoutInMinutes`
 
 ## Variables
 
