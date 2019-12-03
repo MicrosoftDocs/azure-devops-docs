@@ -45,7 +45,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 
 
-::: moniker range="azure-devops-server"
+::: moniker range="azure-devops-2019"
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
@@ -73,14 +73,14 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Customize work item types
 
-::: moniker range="> tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [WSJF (Weighted Shortest Job First)](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension)
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-server"
+::: moniker range=">= azure-devops-2019"
 
 - [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control)
 - [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) 
@@ -90,7 +90,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-server"
+::: moniker range=">= azure-devops-2019"
 
 ## Query 
 
@@ -101,7 +101,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Dashboards
 
-::: moniker range="> tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 ::: moniker-end
 
