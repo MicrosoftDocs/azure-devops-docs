@@ -1,7 +1,7 @@
 ---
 title: Pick list queries
 titleSuffix: Azure Boards
-description: Create queries based on planning, ranking, and priority, integer and picklist fields in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Create queries based on planning, ranking, priority, and picklist fields in Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
@@ -21,7 +21,6 @@ ms.date: 11/19/2018
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
 You rank and prioritize work items when you [Create your backlog](../backlogs/create-your-backlog.md).
-
 
 ## Supported operators and macros 
 
@@ -70,7 +69,7 @@ Features and stories that address Architectural areas<br/>
 
 ## Fields used to plan and prioritize work  
 
-The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).
+The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).
 
 
 <table width="100%">
@@ -84,7 +83,7 @@ The following table describes the fields that you can use to plan and prioritize
 <tbody valign="top">
 <tr>
     <td><p>Backlog Priority <sup>1</sup></p></td>
-    <td><p>A number usually assigned by a background process used to track the list order of items on a backlog or board in the web portal.</p>
+    <td><p>A number usually assigned by a background process used to track the sequence of items on a backlog or board.</p>
 <p>Reference name=Microsoft.VSTS.Common.BacklogPriority, Data type=Double</p>
 </td><br/>
 <td><p>Bug, Epic, Feature, Product backlog item, Task (Scrum)</p></td>
@@ -92,19 +91,19 @@ The following table describes the fields that you can use to plan and prioritize
 
 <tr>
     <td><p>Blocked</p></td>
-    <td><p>Indicates whether a team member is prevented from making progress toward implementing a requirement or task or resolving a bug, change request, or risk. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
+    <td><p>Indicates that no further work can be perfomed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String</p>  </td><br/>    <td><p>Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)</p>
 </td>
 </tr>
 <tr>
     <td><p>Committed</p></td>
-    <td><p>Indicates whether the requirement is committed in the project or not. You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
+    <td><p>Indicates whether or not the requirement is committed in the project. You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Committed, Data type=String</p></td>
     <td><p>Requirement (CMMI)</p></td>
 </tr>
 <tr>
     <td><p>Escalate</p></td>
-    <td><p>Indicates whether the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p> 
+    <td><p>Indicates whether or not the issue is affecting the critical path of the project plan. You can specify <strong>Yes</strong> or <strong>No</strong>.</p> 
 <p>Reference name=Microsoft.VSTS.CMMI.Escalate, Data type=String</p></td>
     <td><p>Issue (CMMI)</p></td>
 </tr>
@@ -161,8 +160,8 @@ The following table describes the fields that you can use to plan and prioritize
 
 #### Notes:  
 
-1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
-1. The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+1. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
 ## Related articles 
