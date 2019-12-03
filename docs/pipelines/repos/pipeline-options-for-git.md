@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 08/28/2019
+ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -190,6 +190,9 @@ Please note that the checkout path value cannot be set to go up any directory le
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
+
+> [!NOTE]
+> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](../yaml-schema.md#checkout).
 
 The build pipeline will check out your Git submodules as long as they are:
 

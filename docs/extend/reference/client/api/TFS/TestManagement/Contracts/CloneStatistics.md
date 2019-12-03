@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts CloneStatistics API | Extensions for Azure DevOps Services
+description: Data representation of clone statistics.
 ms.assetid: 8c8d8154-7404-3593-320c-597c59f0bce3
 ms.prod: devops
 ms.technology: devops-ecosystem

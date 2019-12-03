@@ -443,7 +443,7 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
+[Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
 and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
@@ -772,14 +772,14 @@ To fix this problem, create another load test. Delete the failed test run.
 
 **Blogs and other references**
 
-* [Quick Reference Guide for VS Performance Testing](http://vsptqrg.codeplex.com/)
+* [Quick Reference Guide for VS Performance Testing](https://vsptqrg.codeplex.com/)
 * [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
 * [Ed Glas' blog](https://blogs.msdn.microsoft.com/edglas/archive/2007/12/17/content-index-for-web-tests-and-load-tests.aspx)
 * [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
 
 **Samples**
 
-* [Sample plugins](http://teamtestplugins.codeplex.com/)
+* [Sample plugins](https://teamtestplugins.codeplex.com/)
 * [Sample code for REST APIs (Test Execution)](https://code.msdn.microsoft.com/windowsdesktop/Cloud-Load-Testing-API-b333e778)
 * [Sample code for REST APIs (Importing Results)](https://code.msdn.microsoft.com/windowsdesktop/Importing-Load-Test-Results-b577864b)
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Resolve Team Foundation Version Control conflicts
 titleSuffix: Azure Repos
 description: Resolve Team Foundation Version Control conflicts

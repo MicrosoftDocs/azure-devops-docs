@@ -52,7 +52,7 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 4. [Adjust work to fit sprint capacity](adjust-work.md)  
 5. (Optional) [Share your sprint plan](share-plan.md)  
 6. [Update the Taskboard](task-board.md) 
-7. [Monitor your sprint burndown](sprint-burndown.md) 
+7. [Monitor your sprint burndown](../../report/dashboards/configure-sprint-burndown.md) 
 
 
 ## Sprint backlogs and taskboards

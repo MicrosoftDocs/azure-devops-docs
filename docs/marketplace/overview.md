@@ -8,7 +8,7 @@ ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2019
+ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -38,12 +38,55 @@ For information on purchasing, see the following articles:
 
 ## Add an extension
 
+#### [Browser](#tab/browser)
+
 You can quickly add extensions to your organization with the following steps:
 
 1. Search and find extensions for your organization in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
 2. Install the extension from the Marketplace and start using it in Azure DevOps.
 
 To upload, install, or assign extensions you need [Project Collection Administrator or organization Owner permissions](./faq-extensions.md#find-owner).
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="= azure-devops"
+
+Add an extension to your organization by first searching for and then installing the extension from the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
+
+[Search for extension](#search-extension) | [Install extension](install-extension.md#install-extension) 
+
+<a id="search-extension" /> 
+
+### Search for an extension
+
+You can search for extensions from the marketplace with the [az devops extension search](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-search) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```CLI
+az devops extension search --search-query
+```
+
+#### Parameters
+
+- **search-query**: Specify a term to search in the marketplace.
+
+#### Example
+
+The following command searches the marketplace for the term **Timetracker** and returns the *Publisher ID* and *Extension ID* in table format.  
+
+```CLI 
+az devops extension search --search-query Timetracker --output table
+
+Publisher Id    Extension Id    Name
+--------------  --------------  -----------
+7pace           Timetracker     Timetracker
+7pacelabs       kitten          Kitten
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../_shared/note-cli-not-supported.md)]
+
+* * *
 
 ## Get or build extensions
 

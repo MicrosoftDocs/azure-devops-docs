@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 12/02/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -23,7 +23,7 @@ Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be executed
 
 Tests that target the .NET core framework can be executed by specifying the appropriate target framework value.  
 
-Tests can be distributed on multiple agents using version 2 of this task. 
+Tests can be distributed on multiple agents using version 2 of this task. For more information, see [Run tests in parallel using the Visual Studio Test task](../../test/parallel-testing-vstest.md).
 
 ## Demands 
 
@@ -70,6 +70,17 @@ The vstest demand can be satisfied in two ways:
 <tr><td><b>runTestsInIsolation</b><br>Run tests in isolation</td><td>(Optional) Runs the tests in an isolated process. This makes vstest.console.exe process less likely to be stopped on an error in the tests, but tests might run slower. This option currently cannot be used when running with the multi-agent job setting.</td></tr>
 <tr><td><b>codeCoverageEnabled</b><br>Code coverage enabled</td><td>(Optional) Collect code coverage information from the test run.</td></tr>
 <tr><td><b>otherConsoleOptions</b><br>Other console options</td><td>(Optional) Other console options that can be passed to vstest.console.exe, as documented <a href="https://aka.ms/vstestotherconsoleoptions" target="_blank">here</a>. <p>These options are not supported and will be ignored when running tests using the ‘Multi agent’ parallel setting of an agent job or when running tests using ‘Test plan’ option. The options can be specified using a settings file instead.</p></td></tr>
+<tr><td><b>diagnosticsEnabled</b><br>Collect advanced diagnostics in case of catastrophic failures</td><td>(Optional) Use this option to turn on collection of diagnostic data to troubleshoot catastrophic failures such as test crash.<br><br>
+When this option is checked, a sequence XML file is generated and attached to the test run. The sequence file contains information about the sequence in which tests ran, so that a potentially culprit test can be identified.</td></tr>
+<tr><td><b>collectDumpOn</b><br>Collect process dump and attach to test run report</td><td>
+(Optional) Use this option to collect a mini-dump that can be used for further analysis.
+<br><br>
+<b>On abort only:</b> mini-dump will be collected only when test run is aborted.
+<br><br>
+<b>Always:</b> mini-dump will always be collected regardless of whether the test run completes or not.
+<br><br>
+<b>Never:</b> mini-dump will not be collected regardless of whether the test run completes or not. 
+</td></tr>
 <tr><td><b>distributionBatchType</b><br>Batch tests</td><td>(Optional) A batch is a group of tests. A batch of tests runs at a time and results are published for that batch. If the job in which the task runs is set to use multiple agents, each agent picks up any available batches of tests to run in parallel.<br><br><b>Based on number of tests and agents:</b> Simple batching based on the number of tests and agents participating in the test run.<br><br><b>Based on past running time of tests:</b> This batching considers past running time to create batches of tests such that each batch has approximately equal running time.<br><br><b>Based on test assemblies:</b> Tests from an assembly are batched together.</td></tr>
 <tr><td><b>batchingBasedOnAgentsOption</b><br>Batch options</td><td>(Optional) Simple batching based on the number of tests and agents participating in the test run. When the batch size is automatically determined, each batch contains <code>(total number of tests / number of agents)</code> tests. If a batch size is specified, each batch will contain the specified number of tests.</td></tr>
 <tr><td><b>customBatchSizeValue</b><br>Number of tests per batch</td><td>(Required) Specify batch size</td></tr>
@@ -80,6 +91,8 @@ The vstest demand can be satisfied in two ways:
 <tr><td><b>platform</b><br>Build platform</td><td>(Optional) Build platform against which the tests should be reported. If you have defined a variable for platform in your build task, use that here.</td></tr>
 <tr><td><b>configuration</b><br>Build configuration</td><td>(Optional) Build configuration against which the tests should be reported. If you have defined a variable for configuration in your build task, use that here.</td></tr>
 <tr><td><b>publishRunAttachments</b><br>Upload test attachments</td><td>(Optional) Opt in/out of publishing run level attachments.</td></tr>
+<tr><td><b>failOnMinTestsNotRun</b><br>Fail the task if a minimum number of tests are not run</td><td>(Optional) Use this option to fail the task if a minimum number of tests are not run. This may be useful if any changes to task inputs or underlying test adapter dependencies lead to only a subset of the desired tests to be found.</td></tr>
+<tr><td><b>minimumExpectedTests</b><br>Minimum # of tests</td><td>(Optional) Specify the minimum # of tests that should be run for the task to succeed. Total tests run is calculated as the sum of passed, failed and aborted tests.</td></tr>
 <tr><td><b>rerunFailedTests</b><br>Rerun failed tests</td><td>(Optional) Selecting this option will rerun any failed tests until they pass or the maximum # of attempts is reached.</td></tr>
 <tr><td><b>rerunType</b><br>Do not rerun if test failures exceed specified threshold</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures.<br>You can specify % failures with <code>basedOnTestFailurePercentage</code> or # of failed tests as a threshold with <code>basedOnTestFailureCount</code>.</td></tr>
 <tr><td><b>rerunFailedThreshold</b><br>% failure</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures and if <code>rerunType</code> is <code>basedOnTestFailurePercentage</code>.</td></tr>

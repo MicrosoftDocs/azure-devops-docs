@@ -126,7 +126,7 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
+The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
 like [Git blobs](git/blobs.md).
 
 Now you should be able to look around the specific API areas like [work item tracking](wit/overview.md) or [Git](git/overview.md) and get to the resources that you need. Keep reading to learn more about the general patterns that are used in these APIs.

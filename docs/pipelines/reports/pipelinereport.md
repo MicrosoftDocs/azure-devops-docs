@@ -5,10 +5,10 @@ ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.custom: "continuous-test, seodec18"
+ms.custom: continuous-test, seodec18
 ms.manager: mijacobs
-ms.author: admahesh
-author: additi
+ms.author: sdanie
+author: steved0x
 ms.date: 08/21/2019
 monikerRange: '>=azure-devops-2019'
 ---
@@ -23,7 +23,7 @@ Teams track their pipeline health and efficiency to ensure continuous delivery t
 
 ## Prerequisites
 
-Ensure that you have installed the [the Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
+Ensure that you have installed the [Analytics Marketplace extension](../../report/dashboards/analytics-extension.md) for Azure DevOps Server.
 
 ## View pipeline reports
 

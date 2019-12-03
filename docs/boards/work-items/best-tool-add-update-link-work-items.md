@@ -1,4 +1,4 @@
----
+﻿---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
 description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
@@ -169,7 +169,7 @@ Sprint tools provide teams a focused view of work items they've assigned to a sp
 - [Emailing or sharing a sprint plan](../sprints/share-plan.md)
 
 **Additional supported tasks**: 
-- [Monitoring sprint burndown](../sprints/sprint-burndown.md)  
+- [Monitoring sprint burndown](../../report/dashboards/configure-sprint-burndown.md)  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
 
 

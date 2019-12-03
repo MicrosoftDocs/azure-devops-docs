@@ -1,5 +1,5 @@
----
-title: Verify the synchronization process for TFS-Project Server integration
+﻿---
+title: Verify synch process for TFS-Project Server integration
 titleSuffix: TFS 
 description: Verify the synchronization process for the integration of Team Foundation Server & Project Server  
 ms.prod: devops

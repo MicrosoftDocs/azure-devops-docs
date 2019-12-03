@@ -33,7 +33,30 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem).
+::: moniker range=">= tfs-2018"
+
+Make sure your machine has these prerequisites:
+- macOS Sierra (10.12) or higher
+- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+
+These prereqs are required for agent version 2.125.0 and higher.
+
+::: moniker-end
+
+::: moniker range="< tfs-2018"
+
+These prereqs are required for agent version 2.124.0 and below.
+**If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
+
+Make sure your machine has these prerequisites:
+- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
+- Git 2.9.0 or higher (latest version strongly recommended)
+- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+
+::: moniker-end
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -69,7 +92,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 ::: moniker-end
 
-::: moniker range=azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 ### Azure DevOps Server 2019
 

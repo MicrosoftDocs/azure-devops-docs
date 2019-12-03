@@ -1,5 +1,5 @@
----
-title: Change the Azure subscription used for organization billing
+﻿---
+title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Unlink the Azure subscription that your organization uses for billing

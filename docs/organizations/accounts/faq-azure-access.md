@@ -1,6 +1,5 @@
----
-title: Troubleshoot permissions and access via Azure Active Directory
-titleSuffix: Azure DevOps Services
+﻿---
+title: Troubleshoot permissions and access via Azure AD
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, how to add users, or how to connect to, disconnect from, or switch your directory.
 ms.prod: devops
@@ -10,13 +9,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot permissions and access with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## General
 
@@ -54,7 +55,7 @@ Learn more about the differences in how you
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-## Understand Azure AD groups
+## Azure AD groups
 
 ### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
 
@@ -137,6 +138,10 @@ A: No, but you might be interested in our [process customization plans](https://
 
 [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
+### Q: Why did I get an error stating that my organization has multiple active identities with the same UPN?
+
+A: During the connect process, we map existing users to members of the Azure AD tenant, based on their UPN, which is often known as sign-in address. If we detect multiple users with the same UPN, we don’t know how to map these users. This can happen if a user changes their UPN to match one already existing in the organization.
+
 ### Q: Can I switch current users from Microsoft accounts to work accounts in Azure DevOps?
 
 A: No. Although you can add new work accounts to your organization, they're treated as new users. If you want to access all your work, including its history, you must use the same sign-in addresses that you used before your organization was connected to your Azure AD.
@@ -164,15 +169,7 @@ or [added using B2B collaboration by your Azure AD administrator](https://azure.
 
 Before you start, make sure you have at least Basic access, not Stakeholder.
 
-**Complete the following steps to control organization access for external users added through Office 365 or Azure AD B2B collaboration.**
-
-1. Go to **Organization settings**.
-
-   ![Screenshot of project with gear icon highlighted](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-2. Select **Policy** and choose to allow or deny organization access for external users added as guests.
-
-   ![Screenshot of organization settings](_img/manage-work-access/guest-access.png)
+Complete the [prerequisites for adding external users](add-external-user.md#prerequisites), turning External guest access to **On**.
 
 ## Remove users or groups
 
@@ -193,7 +190,6 @@ To block all access for these users, remove them from Azure AD groups in your or
 ### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
 A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
-
 <a name="faq-connect"></a>
 
 ## Connect, disconnect, or change Azure AD
@@ -306,6 +302,10 @@ A: If you have more than 100 users, you can still connect, however you may need 
 ### Q: I have more than 100 members in my Azure DevOps organization, how can I connect to an Azure AD?
 
 A: Currently, you can still connect, but the mapping and invite features that help resolve disconnected users post-connection won’t work beyond 100. Please [contact support](https://azure.microsoft.com/support/devops/).
+
+### Q: Why is git.exe/Visual Studio failing to authenticate after linking/unlinking from Azure Active Directory?
+
+A: The tenant cache needs to be cleared if you're using a GCM version prior to v1.15.0. Clearing the tenant cache is as easy as deleting the `%LocalAppData%\GitCredentialManager\tenant.cache` file on each machine returning a login error like below. The GCM will automatically recreate and populate the cache file as needed on subsequent login attempts.
 
 <a name="get-support"></a>
 

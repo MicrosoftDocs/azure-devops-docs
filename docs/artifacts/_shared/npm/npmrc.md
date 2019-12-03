@@ -12,9 +12,11 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 1. From **Azure Artifacts**, select **Connect to feed**.
 
-1. Select **npm**.
+2. Select **npm**.
 
-1. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
+3. Select **Other** in the **Project setup** section.
+
+4. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
 
    > [!div class="mx-imgBorder"] 
    >![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds-azure-devops-newnav.png)
@@ -26,9 +28,9 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 1. From the **Packages** page, select **Connect to feed**.
 
-1. Select **npm**.
+2. Select **npm**.
 
-1. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
+3. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
 
     ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
 
@@ -38,7 +40,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 1. Browse to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)."
 
-1. Base64 encode the PAT.
+2. Base64 encode the PAT.
 
     # [Windows](#tab/windows)
     ```powershell
@@ -50,7 +52,7 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
     echo -n "YOUR_PAT_GOES_HERE" | base64
     ```
 
-1. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
+3. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
 
    ```ini
    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY

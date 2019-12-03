@@ -418,6 +418,6 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 
 - [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
-- [OData v4.0 specification](http://www.odata.org/documentation/)  
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
+- [OData v4.0 specification](https://www.odata.org/documentation/)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
 

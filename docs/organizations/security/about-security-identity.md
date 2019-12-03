@@ -11,12 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 06/02/2019
+ms.date: 11/26/2019
 ---
 
 # About security and identity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
@@ -47,7 +49,7 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with Azure DevOps services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
+Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
 *	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
@@ -72,7 +74,7 @@ APIs support only OAuth.
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
-or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
+or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 

@@ -108,3 +108,6 @@ A solution is to assign permissions directly to the project-scoped identity, if 
 Example: Giving permissions to the `fabrikam-tailspin/SpaceGameWeb` project-scoped build identity in the `fabrikam-tailspin/FabrikamFiber` project:
 
 
+## Build (run) number
+
+This documentation has moved to [Build (run) number](../process/run-number.md).
