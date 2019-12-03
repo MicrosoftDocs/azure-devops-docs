@@ -19,7 +19,8 @@ ms.date: 10/24/2019
 
 If you don't see the **Team** ribbon in Microsoft Excel, as shown in the image below, you may be able to resolve the issue with the procedures provided in this article. 
 
-<img src="_img/tfs-office-issues-excel-team-ribbon.png" alt="Excel TFS-Office integration Team ribbon" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]
+> ![Excel TFS-Office integration Team ribbon](_img/tfs-office-issues-excel-team-ribbon.png)
 
 [!INCLUDE [temp](../../_shared/deprecate-project.md)]
 

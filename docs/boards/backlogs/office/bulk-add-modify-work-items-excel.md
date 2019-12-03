@@ -328,5 +328,5 @@ If you're working with a non-query input list, you can add work items by choosin
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.md)
-- [Basic Excel tasks](https://support.office.com/en-us/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
