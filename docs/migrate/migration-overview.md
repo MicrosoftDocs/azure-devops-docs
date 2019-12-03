@@ -1,6 +1,6 @@
 ---
-title: Migration overview from Azure DevOps Server to Azure DevOps Services | Azure DevOps 
-description: Overview of the high fidelity migration process from Azure DevOps Server to Azure DevOps Services
+title: Azure DevOps Server to Services Migration overview
+description: Overview of the high fidelity migration process from Server to Services
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
 
-# Migrate data from Azure DevOps Server to Azure DevOps Services 
+# Migrate data from Azure DevOps Server to Azure DevOps Services  
 
 [!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
@@ -30,6 +30,8 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 > [!IMPORTANT] 
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
+>
+> Support for importing from Azure DevOps Server 2019.0.1 will be removed on Monday, January 6, 2020. If you're currently on Azure DevOps Server 2019.0.1, you will need to complete your migration before this date or upgrade your on-premises server to a newer version.
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 

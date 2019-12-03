@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/05/2019
+ms.date: 10/28/2019
 ---
 
 
@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -157,6 +157,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 ::: moniker range=">= azure-devops-2019"
+
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 

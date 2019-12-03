@@ -354,7 +354,7 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > IF (
 >     ISBLANK ( 'View Name'[State Previous] ),
 >     'View Name'[Created Date].[Date] = 'View Name'[Date],
->     'View Name'[State Previous] <'View Name'[State]
+>     'View Name'[State Previous] = 'View Name'[State]
 > )
 > ```
 
@@ -365,14 +365,14 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 With *State Previous* and *State Changed* calculated columns, you can create a column that will help illustrate the State Flow for a given work item. Creating this column is optional for the purposes of this article.
 
 > [!IMPORTANT]  
-> Requires that you have added the [State Previous](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
+> Requires that you have added the [*State Previous*](#add-state-previous) and [*State Changed*](#state-changed) calculated columns to the table.
 
 From the **Modeling** tab, choose **New Column** and then replace the default text with the following code and click the ![ ](_img/checkmark.png) checkmark.
 
 > [!div class="tabbedCodeSnippets"]   
 > ```DAX 
 > State Flow = 
-> IF([State Changed], [State Previous], [State]) & " ž¡ " & [State]
+> IF([State Changed], [State Previous], [State]) & " => " & [State]
 > ```
 
 ## Add *State Change Count* 

@@ -1,6 +1,6 @@
 ---
 title: Install extensions
-description: Learn how to install extensions and assign paid extensions for Azure DevOps
+description: Learn how to install extensions and assign extensions for Azure DevOps
 ms.topic: quickstart
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -8,7 +8,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2019
+ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,10 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Add new features and capabilities to your organization by installing extensions.
 
-In this quickstart, learn how to do the following tasks:
-
-  - [Install extensions](#install-extension)
-  - [Assign paid extensions to users](#assign-paid-extensions-to-users)
+In this quickstart, learn how to [install extensions](#install-extension).
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
@@ -30,7 +27,11 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 * Only [Project Collection Administrators or organization Owners](faq-extensions.md#find-owner) can install extensions. If you don't have permissions, you can [request extensions](request-vsts-extension.md) instead.
 * Private extensions must be shared with your organization to be installed. Check out the [publishing documentation](../extend/publish/overview.md#upload) for information on how to share private extensions.
 
+<a id="install-extension" /> 
+
 ## Install extension
+
+#### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select the shopping bag icon, and then select **Browse Marketplace**.
@@ -43,12 +44,7 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
     ![Get extension](_img/get-vsts-extensions/get-extension.png)
 
-5.  For a paid extension, do the following tasks:
-    1.  Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) to use to pay for the extension access.
-	
-    ![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-subscription.png)
-
-    2. Select the number of users who need access.
+5.  Select the number of users who need access.
 
     ![Select number of users who need extension access](_img/get-vsts-extensions/select-paid-users.png)
 
@@ -60,13 +56,74 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
    * [Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
-Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities too.
+Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities.
 
 ![Extension installed](_img/get-vsts-extensions/you-are-all-set.png)
 
-## Assign paid extensions to users
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-After you install a paid extension, assign it to your users so they can start using it.
+::: moniker range="= azure-devops"
+
+You can install an extension with the [az devops extension install](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
+
+```CLI 
+az devops extension install --extension-name
+                            --publisher-name
+                            [--org]
+``` 
+
+#### Parameters 
+
+- **extension-name**: The name of the extension to install.
+- **publisher-name**: The name of the extension publisher.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+#### Example 
+
+The following command installs the **Timetracker** extension and shows the result in YAML format.  
+
+```CLI
+az devops extension install --extension-name Timetracker --publisher-name 7pace --output yaml
+
+baseUri: null
+constraints: null
+contributionTypes: null
+contributions: null
+demands: null
+eventCallbacks: null
+extensionId: Timetracker
+extensionName: Timetracker
+fallbackBaseUri: null
+files: null
+flags: null
+installState:
+  flags: none
+  installationIssues: null
+  lastUpdated: '2019-11-26T16:04:32.907000+00:00'
+language: null
+lastPublished: '2019-11-13T11:58:37.890000+00:00'
+licensing: null
+manifestVersion: null
+publisherId: 7pace
+publisherName: 7pace
+registrationId: null
+restrictedTo: null
+scopes: null
+serviceInstanceType: null
+version: 5.0.1.34507
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../_shared/note-cli-not-supported.md)] 
+
+* * *
+
+## Assign extensions to users
+
+After you install an extension, assign it to your users so they can start using it.
 To assign extensions, you need [Project Collection Administrator or organization Owner permissions](./faq-extensions.md#find-owner).
 
 ::: moniker range=">= azure-devops-2019"
@@ -93,9 +150,7 @@ To assign extensions, you need [Project Collection Administrator or organization
 
 6. Assign the extension and **Save changes**.
 
-    ![Assign extension](_img/assign-extension.png)
-
-   Assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
+    ![Assign](_img/assign-extension.png)
 
 Tell your team about this extension, so they can start using its capabilities.
 
@@ -121,9 +176,7 @@ Tell your team about this extension, so they can start using its capabilities.
 
 5.	Assign the extension and **Save changes**.
 
-   ![Assign extensions](_img/assign-extensions/assign-extension.png)
-
-   You can assign the extension to specific users up to the number allowed for free extensions or the number that you purchased for paid extensions.
+   ![Assign](_img/assign-extensions/assign-extension.png)
 
 Tell your team about this extension, so they can start using its capabilities.
 

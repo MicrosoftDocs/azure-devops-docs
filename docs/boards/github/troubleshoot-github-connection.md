@@ -1,5 +1,5 @@
----
-title: Troubleshoot GitHub repository connection to a project in Azure DevOps Services  
+﻿---
+title: Troubleshoot GitHub repo connection to a project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project  
 ms.assetid: 

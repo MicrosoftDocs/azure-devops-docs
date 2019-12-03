@@ -17,7 +17,7 @@ ms.date: 11/2/2018
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-Batch requests are part of the OData spec, and Analytics for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
+Batch requests are part of the OData spec, and Analytics for Azure DevOps provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

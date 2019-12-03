@@ -126,7 +126,7 @@ pool:
   vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema#pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
@@ -495,6 +495,9 @@ steps:
 # ...
 # do this near the end of your pipeline in most cases
 - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+- task: NuGetAuthenticate@0
+  input:
+    nuGetServiceConnections: '<Name of the NuGet service connection>'
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -502,16 +505,6 @@ steps:
     publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
     versionEnvVar: version
-```
-
-To publish a NuGet package as an Azure Artifacts feed, add this snippet:
-
-```yaml
-steps:
-- task: NuGetAuthenticate@0
-  #inputs:
-    #nuGetServiceConnections: MyOtherOrganizationFeed, MyExternalPackageRepository # Optional
-    #forceReinstallCredentialProvider: false # Optional
 ```
 
 For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  

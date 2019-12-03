@@ -1,5 +1,5 @@
----
-title: About creating and managing organization - Azure DevOps
+﻿---
+title: About creating and managing organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.
@@ -84,3 +84,4 @@ your organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
 Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.
+You can also [restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

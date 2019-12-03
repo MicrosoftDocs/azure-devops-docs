@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts AggregatedResultsByOutcome API | Extensions for Azure DevOps Services
+description: Data representation of aggregated results by outcome.
 ms.assetid: 7d936afc-907f-16f3-3f5d-d3a3776db64f
 ms.prod: devops
 ms.technology: devops-ecosystem

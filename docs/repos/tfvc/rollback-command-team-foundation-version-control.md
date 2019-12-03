@@ -1,4 +1,4 @@
----
+﻿---
 title: Rollback Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rollback Command (Team Foundation Version Control)

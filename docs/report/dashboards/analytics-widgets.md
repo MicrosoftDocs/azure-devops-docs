@@ -54,6 +54,19 @@ The Burnup widget lets you display a trend of completed work across multiple tea
 
 To learn more, see [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md).  
 
+
+## Sprint Burndown widget 
+
+The Analytics-based Sprint Burndown widget adds a team's burndown chart for a sprint to the dashboard. This widget supports several configuration options, including selecting a team, iteration, and time period. Teams use the burndown chart to mitigate risk and check for scope creep throughout the sprint cycle. 
+
+**Sprint Burndown widget**
+
+> [!div class="mx-imgBorder"] 
+> ![Sprint Burndown Widget - Sprint Burndown Example](_img/sprint-burndown/sprint-burndown-widget.png)
+
+To learn more, see [Configure and monitor sprint burndown ](configure-sprint-burndown.md).  
+
+
 ## Cumulative Flow Diagram (CFD)
 
 The CFD widget shows the count of work items (over time) for each column of a Kanban board. This allows you to see patterns in your team's development cycle over time. It will help you answer questions like: 

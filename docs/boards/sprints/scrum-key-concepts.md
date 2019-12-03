@@ -101,7 +101,7 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 
 ## Sprint burndown chart
 
-The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](sprint-burndown.md). 
+The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md). 
  
 ![Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
  

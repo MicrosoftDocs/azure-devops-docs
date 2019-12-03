@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts CustomTestFieldDefinition API | Extensions for Azure DevOps Services
+description: Data representation of a custom test filed definition.
 ms.assetid: 016a01c8-252d-918c-0469-f35e49d826b3
 ms.prod: devops
 ms.technology: devops-ecosystem

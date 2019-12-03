@@ -58,7 +58,7 @@ use to create an Azure Virtual Machine on demand.
    on your computer. Name the file **CreateVMTemplate.json**.
 
 1. Edit the **CreateVMTemplate.json** file as described in 
-   [this post](http://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
+   [this post](https://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
    on Tarun Arora's blog to configure it for Windows Remote
    Management (WinRM).
 
