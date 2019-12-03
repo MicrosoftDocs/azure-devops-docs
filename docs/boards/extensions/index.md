@@ -105,7 +105,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
 ::: moniker-end
 
-::: moniker range=">= azure-devops-server"
+::: moniker range=">= azure-devops-2019"
 
 - [Work Item Details Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemDetails)
 - [Roll-up Board Widget](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard)
