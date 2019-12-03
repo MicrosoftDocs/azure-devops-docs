@@ -72,11 +72,7 @@ Select the [pool](../agents/pools-queues.md) that's attached to the pool that co
 Specify the authorization scope for a build job. Select:
 
 * **Project Collection** if the build needs access to multiple projects.
-
 * **Current Project** if you want to restrict this build to have access only the resources in the current project.
-
-- [Scoped build identities](#scoped-build-identities)
-- [Managing Permissions](#managing-permissions)
 
 ### Scoped build identities
 
@@ -88,20 +84,20 @@ There are 2 built-in identities that we use to execute pipelines.
  These identities are allocated permissions necessary to perform build/release execution time activities when calling back to the Azure DevOps system. There are built-in default permissions, and customers may also manage their own permissions as needed.
  
 The collection-scoped identity name has the following format:
-- `Project Collection Build Service ({OrgName})
-- For example, if the organization name is `fabrikam-tailspin`, this account would has the name `Project Collection Build Service (fabrikam-tailspin)`.
+- `Project Collection Build Service ({OrgName})`
+- For example, if the organization name is `fabrikam-tailspin`, this account has the name `Project Collection Build Service (fabrikam-tailspin)`.
  
 The project-scoped identity name has the following format:
 - `{Project Name} Build Service ({Org Name})`
-- For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account would has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
+- For example, if the organization name is `fabrikam-tailspin` and the project name is `SpaceGameWeb`, this account has the name `SpaceGameWeb Build Service (fabrikam-tailspin)`.
 
-By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project** is set in **Project Settings**, **Settings**.
+By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project** is set in **Project Settings** > **Settings**.
 
 ![Limit job authorization scope](_img/options/limit-job-authorization-scope.png)
 
 ### Managing Permissions
 
-One result for forcing project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
+One result for setting project-scoped access may be that the project-scoped identity may not have permissions to a resource that the collection-scoped one did have.
  
 A solution is to assign permissions directly to the project-scoped identity, if required. These can be assigned cross-project within the same project collection. 
 
@@ -132,7 +128,7 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
     ![Project settings](_img/options/project-permissions.png)
 
-2.  Choose **Users**, start to type in the name **SpaceGameWeb**, select **Expand search**, and select the **SpaceGameWeb Build Service** account..
+2.  Choose **Users**, start to type in the name **SpaceGameWeb**, select **Expand search**, and select the **SpaceGameWeb Build Service** account.
 
     ![Add user](_img/options/add-build-service-user-project-permissions.png)
 
