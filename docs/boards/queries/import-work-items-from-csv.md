@@ -24,11 +24,11 @@ Learn how to import new work items or update existing items from a CSV file. Imp
 
 ## Import new work items
 
-All work items you import are created in a new state. This means that you can't specify field values that don't meet the field rules for the new state. For example, when you create a new user story with the Agile process, the State=New and the Reason=New. No other values can be specified.
+All work items you import are created in a new state. This rule means that you can't specify field values that don't meet the field rules for the new state. For example, when you create a new user story with the Agile process, the State=New and the Reason=New. No other values can be specified.
 
 1. Create a local ***import.csv*** file and open it in Visual Studio Code or Excel.
 
-2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In this example we also included the Priority field.
+2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In the following example, we include the Priority field.
 
    > [!div class="tabbedCodeSnippets"]
    ```CSV
@@ -50,12 +50,12 @@ All work items you import are created in a new state. This means that you can't 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Button Image](_img/import-csv/import-2.png)
 
-5. The import process loads the imported work items into the queries view in an **unsaved** state. Review the list to verify the results are as desired. Choose **Save Items** to save the work items.
+5. The import process loads the imported work items into the queries view in an **unsaved** state. Verify the results are what you want. Choose **Save Items** to save the work items.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Save imported work items](_img/import-csv/import-3.png)
 
-6. The system highlights those work items with data issues. You need to resolve them before you can save them. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, you can use the [bulk edit feature](../backlogs/bulk-modify-work-items.md) if you have many work items with the same issue.
+6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Save Image](_img/import-csv/import-error-1.png)
@@ -67,7 +67,7 @@ All work items you import are created in a new state. This means that you can't 
 	> [!div class="mx-imgBorder"]  
 	> ![Export work items, CSV](_img/import-csv/import-update-1.png)
 
-   The exported file should look similar to the following:
+   The exported file should look similar to the following syntax:
 
   > [!div class="tabbedCodeSnippets"]
    ```CSV
@@ -79,9 +79,9 @@ All work items you import are created in a new state. This means that you can't 
    "16508","Issue","Remove old test code",,"To Do","2",
    ```
 
-2. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields.Any additional fields you want to include are optional.
+2. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Any additional fields you want to include are optional.
 
-   In this example we are going to change several values on the existing working items.
+   In the following example we change several values on existing working items.
 
   > [!div class="tabbedCodeSnippets"]
    ```CSV
@@ -109,7 +109,7 @@ All work items you import are created in a new state. This means that you can't 
 
 ### Can I import new items and update existing items in the same CSV file?
 
-Absolutely! Leave the ID field empty for any new work items. In the example below, note the Epic item is missing the ID.
+Absolutely! Leave the ID field empty for any new work items. In the following example, the last entry for an Epic doesn't specify an ID.
 
 > [!div class="tabbedCodeSnippets"]
 ```CSV
@@ -124,7 +124,7 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 
 ### Can I import a CSV file that has a child parent relationship?
 
-Yes, child work items can be created by having indented title columns. The below example creates 3 child Issues under an Epic.
+Yes, child work items can be created by having indented title columns. The following example creates three child Issues under an Epic.
 
 > [!div class="tabbedCodeSnippets"]
 ```CSV
@@ -142,12 +142,12 @@ Here is a better visual in Excel
 
 ### How do I know if my imported file has errors?
 
-Any problems with the formating of your CSV file appear in the Results page of the import view. You won't be able to import the work items until the formatting and syntax is correct.
+Any problems with the formatting of your CSV file appear in the Results page of the import view. You can't import the work items until the formatting and syntax is correct.
 
 > [!div class="mx-imgBorder"]  
 > ![CSV Error image](_img/import-csv/import-csv-error-1.png)
 
-Data errors for individual work items are shown to you from the work items results (see above). From there you can fix the data in the UI or fix the CSV file and try to import again.
+The work items results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
 
 ## Related articles
 
