@@ -33,6 +33,8 @@ If you are having connection issues, make sure you meet the prerequistes as list
 
 **A:**  You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
 
+[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+
 Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: Can I use Excel on my Mac?
@@ -48,9 +50,9 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ::: moniker range="azure-devops" 
 
-### Q: Can I import work items without using Excel?  
+### Q: Can I import or update work items without using Excel?  
 
-**A:** Yes. You can do a bulk import of new work items without using Excel. See [Import work items](../../queries/import-work-items-from-csv.md).
+**A:** Yes. You can do a bulk import of new work items or update existing work items without using Excel. See [Import work items](../../queries/import-work-items-from-csv.md).
 
 ::: moniker-end  
 
