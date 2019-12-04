@@ -1,7 +1,10 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.author: kaelli
+author: KathrynEE
+ms.date: 12/03/2019  
 ---
-
 
 #### [Agile process](#tab/agile-process) 
 
