@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 10/21/2019
+ms.date: 12/03/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -498,6 +498,16 @@ See the schema references for [script](#script),
 [bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-templates) for more details about each.
 
+All steps, whether documented in this article or not, allow the following properties:
+
+- `displayName`
+- `name`
+- `condition`
+- `continueOnError`
+- `enabled`
+- `env`
+- `timeoutInMinutes`
+
 ## Variables
 
 Hard-coded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
@@ -579,9 +589,10 @@ variables:
 
 ::: moniker range="> azure-devops-2019"
 
-You can export reusable sections of your pipeline to a separate file.
+You can export reusable sections of your pipeline to separate files.
 These separate files are known as templates.
-Azure Pipelines supports four kinds of templates:
+Azure Pipelines supports these four kinds of templates:
+
 - [Stage](#stage-templates)
 - [Job](#job-templates)
 - [Step](#step-templates)
@@ -591,21 +602,22 @@ Azure Pipelines supports four kinds of templates:
 
 ::: moniker range="azure-devops-2019"
 
-You can export reusable sections of your pipeline to a separate file.
+You can export reusable sections of your pipeline to separate files.
 These separate files are known as templates.
-Azure DevOps Server 2019 supports two kinds of templates:
+Azure DevOps Server 2019 supports these two kinds of templates:
+
 - [Job](#job-templates)
 - [Step](#step-templates)
 
 ::: moniker-end
 
-Templates may themselves include other templates.
+Templates can themselves include other templates.
 Azure Pipelines supports a maximum of 50 unique template files in a single pipeline.
 
 ::: moniker range="> azure-devops-2019"
 ### Stage templates
 
-A set of stages can be defined in one file and used multiple places in other files.
+You can define a set of stages in one file and use them multiple times in other files.
 
 # [Schema](#tab/schema)
 
@@ -616,7 +628,7 @@ In the main pipeline:
   parameters: { string: any } # provided parameters
 ```
 
-And in the included template:
+In the included template:
 
 ```yaml
 parameters: { string: any } # expected parameters
@@ -626,7 +638,7 @@ stages: [ stage ]
 # [Example](#tab/example)
 
 In this example, a stage is repeated twice for two different testing regimes.
-The stage itself is only specified once.
+The stage itself is specified only once.
 
 ```yaml
 # File: stages/test.yml
@@ -672,7 +684,7 @@ stages:
 
 ### Job templates
 
-A set of jobs can be defined in one file and used multiple places in other files.
+You can define a set of jobs in one file and use them multiple times in other files.
 
 # [Schema](#tab/schema)
 
@@ -683,7 +695,7 @@ In the main pipeline:
   parameters: { string: any } # provided parameters
 ```
 
-And in the included template:
+In the included template:
 
 ```yaml
 parameters: { string: any } # expected parameters
@@ -693,7 +705,7 @@ jobs: [ job ]
 # [Example](#tab/example)
 
 In this example, a single job is repeated on three platforms.
-The job itself is only specified once.
+The job itself is specified only once.
 
 ```yaml
 # File: jobs/build.yml
@@ -743,7 +755,7 @@ See [templates](process/templates.md) for more about working with job templates.
 
 ### Step templates
 
-A set of steps can be defined in one file and used multiple places in another file.
+You can define a set of steps in one file and use them multiple times in another file.
 
 # [Schema](#tab/schema)
 
@@ -755,7 +767,7 @@ steps:
   parameters: { string: any } # provided parameters
 ```
 
-And in the included template:
+In the included template:
 
 ```yaml
 parameters: { string: any } # expected parameters
@@ -804,7 +816,7 @@ See [templates](process/templates.md) for more about working with templates.
 
 ### Variable templates
 
-A set of variables can be defined in one file and referenced several times in other files.
+You can define a set of variables in one file and use them multiple times in other files.
 
 # [Schema](#tab/schema)
 
@@ -815,7 +827,7 @@ In the main pipeline:
   parameters: { string: any } # provided parameters
 ```
 
-And in the included template:
+In the included template:
 
 ```yaml
 parameters: { string: any }   # expected parameters
@@ -825,7 +837,7 @@ variables: [ variable ]
 # [Example](#tab/example)
 
 In this example, a set of variables is repeated across multiple pipelines.
-The variables are only specified once.
+The variables are specified only once.
 
 ```yaml
 # File: variables/build.yml
@@ -863,7 +875,12 @@ steps:
 ::: moniker-end
 
 ## Resources
-Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.).
+
+A resource is any external service that is consumed as part of your pipeline. An example of a resource is another CI/CD pipeline that produces:
+
+- Artifacts like Azure pipelines or Jenkins.
+- Code repositories like GitHub, Azure Repos, or Git.
+- Container-image registries like ACR or Docker hub.
 
 Resources in YAML represent sources of types pipelines, repositories and containers.
 
@@ -1412,8 +1429,8 @@ environment: 'smarthotel-dev.bookings'
 ## Server
 
 `server` specifies a [server job](process/phases.md#server-jobs).
-Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
-or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+Only server tasks such as [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+<!-- some glorious day, [manual intervention](tasks/utility/manual-intervention.md) will work too -->
 
 # [Schema](#tab/schema)
 
