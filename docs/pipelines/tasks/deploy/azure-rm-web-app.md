@@ -96,6 +96,10 @@ Creates a .zip deployment package of the chosen Package or folder and deploys th
 
 Creates the same deployment package as Zip Deploy. However, instead of deploying files to the wwwroot folder, the entire package is mounted by the Functions runtime. With this option, files in the wwwroot folder become read-only. For more information, see [Run your Azure Functions from a package file](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package).
 
+## Troubleshooting
+
+[!INCLUDE [rm-app-service-troubleshoot-shared](../_shared/rm-app-service-troubleshoot-shared.md)]
+
 ## Open Source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
