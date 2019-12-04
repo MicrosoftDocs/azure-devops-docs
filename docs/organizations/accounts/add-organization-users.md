@@ -10,7 +10,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/16/2019
+ms.date: 12/04/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -112,10 +112,24 @@ az devops user add –-email-id
 
 #### Parameters
 
-- **email-id**: Enter the Microsoft account's email address for the user organization.
-- **license-type**: Leave the access level at **Basic** for users who contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+- **email-id**: Required. Enter the Microsoft account's email address for the user organization.
+- **license-type**: Required. Enter stakeholder, express, professional, or advanced based on the mapping provided in the following table. For Users who contribute to the code base require express or higher level of license-type. To learn more, see [About access levels](../../organizations/security/access-levels.md).
 - **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+
+The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic              | express  | none | 
+| Basic + Test Plans | advanced | none | 
+| Visual Studio subscriber | none | eligible | 
+| Visual Studio Enterprise | none | enterprise | 
+
+
+ > [!NOTE]   
+ > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
 
 
 #### Example

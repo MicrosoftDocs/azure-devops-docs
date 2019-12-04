@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/15/2019
+ms.date: 12/04/2019
 ---
 
 
@@ -853,7 +853,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 <a id="mapping" /> 
 
-::: moniker range=">= tfs-2018 
+::: moniker range=">= tfs-2018" 
 
 ## Programmatic mapping of access levels
 
