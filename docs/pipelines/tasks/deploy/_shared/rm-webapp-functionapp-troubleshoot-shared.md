@@ -2,17 +2,21 @@
 ms.topic: include
 ---
 
-### Error: Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.
-
-The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or does not have permissions to the App Service, the task fails with the specified error. Verify validity of the service principal used and that it is present in the app registration. For more details, see 
-   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
-   also contains more information about using service principal authentication.
-
-### SSL error
-
-To use a certificate in App Service, the certificate must be signed by a trusted certificate authority. If your web app gives you certificate validation errors, you're probably using a self-signed certificate. Set a variable named VSTS_ARM_REST_IGNORE_SSL_ERRORS to the value true in the build or release pipeline to resolve the error.
-
 ### Error: No package found with specified pattern
 
 Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.
+
+### Error: Publish using zip deploy option is not supported for msBuild package type
+
+Web packages created using MSBuild task (with default arguments) have a nested folder structure that can only be deployed correctly by Web Deploy. Publish to zip deploy option can not be used to deploy those packages. To convert the packaging structure, follow the below steps. 
+
+* In Build Solution task, change the MSBuild Arguments to
+/p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="$(System.DefaultWorkingDirectory)\\WebAppContent"
+
+* Add Archive Task and change the inputs as follows:
+  * Change *Root folder or file to archive* to
+    $(System.DefaultWorkingDirectory)\\WebAppContent
+    ![Root folder or file to archive](_img/azure-rm-web-app-deployment-03.png)
+ 
+   * Disable *Prepend root folder name to archive paths* option
+    ![Prepend root folder name to archive paths](_img/azure-rm-web-app-deployment-04.png)
