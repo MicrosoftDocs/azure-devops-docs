@@ -4,12 +4,12 @@
 - task: DownloadPipelineArtifact@2
   inputs:
     #source: 'current' # Options: current, specific
-    #project: # Required when buildType == Specific
-    #pipeline: # Required when buildType == Specific
+    #project: # Required when source == Specific
+    #pipeline: # Required when source == Specific
     #preferTriggeringPipeline: false # Optional
-    #runVersion: 'latest' # Required when buildType == Specific# Options: latest, latestFromBranch, specific
-    #runBranch: 'refs/heads/master' # Required when buildType == Specific && RunVersion == LatestFromBranch
-    #runId: # Required when buildType == Specific && RunVersion == Specific
+    #runVersion: 'latest' # Required when source == Specific# Options: latest, latestFromBranch, specific
+    #runBranch: 'refs/heads/master' # Required when source == Specific && RunVersion == LatestFromBranch
+    #runId: # Required when source == Specific && RunVersion == Specific
     #tags: # Optional
     #artifact: # Optional
     #patterns: '**' # Optional
