@@ -1,11 +1,11 @@
 ---
-title: Stories Overview Report 
+title: Requirements tracking, Stories overview report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate Stories Overview Report
+description: Power BI query to generate a report that tracks work progress and status of tests and bugs
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: pkuma
+ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -14,33 +14,64 @@ monikerRange: '> azure-devops-2019'
 ms.date: 11/28/2019
 ---
 
-# Sample - Stories Overview Report
+# Sample - Requirements tracking report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-This report covers given an area and iteration path, how to track the quality of requirement work items in terms of following aspects -
-- Percentage of hours completed of children work items.
-- Execution status of test cases lying under requirement-based test suites corresponding to the requirements.
-- Status of bugs linked to those requirements.
+This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
 
-This assumes that you have a setup like follows -
-- You have requirement work items present in correct area and iteration paths.
-- To get the percentage of hours completion, you need to fill in the 'Effort (hours)' fields in work items.
-- To get the execution status of test cases, you should have created requirement-based test suites in Test Plans corresponding to those requirements.
-- To get the status of bugs, you should have linked the bugs to requirements with 'Child' work item link.
+An example is shown in the following image. 
 
-You will get a report like this -
- 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Report](_img/odatapowerbi-storiesoverview.png)
+
+This report displays the following information for each requirement that it lists:
+
+- **Percent work completed**:  Progress bar that shows the percentage of completed work based on the rollup of completed hours for all tasks that are linked to the requirement.
+- **Passed tests**: The number of test cases run that have passed based on the most recent test run.  
+- **Failed tests**: The number of test cases run that have failed based on the most recent test run. 
+- **Run tests**:  The number of test runs that have executed.  
+- **Active bugs**: The number of linked bugs in an Active state. 
+- **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
+
+## Prerequisites
+
+For the report to generate useful data, you need to have performed the following tasks: 
+
+- You have define requirement work items and assigned them to the area and iteration paths of interest. For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) and [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
+- To get the percentage of hours completion, you need to fill in the 'Effort (hours)' fields of work items linked to requirements with the **Child** link type.
+- To get the execution status of test cases, you will have created requirement-based test suites in Test Plans corresponding to those requirements. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md)
+- To get the status of bugs, you will have created and linked bugs to requirements with the **Child** link type.
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 
+## Substitution strings
+
+[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+
+- {iterationSK} - Iteration SK of the iteration path you are interested in.
+- {areaSK} - Area SK of the area path you are interested in.
+
+
+## Query breakdown
+
+The following table describes each part of the query.
+
+<table>
+<tbody valign="top">
+<tr><td width="50%"><b>Query part</b></td><td><b>Description</b></td><tr>
+<tr><td width="50%"><code>Processes/any(p:p/BacklogType eq 'RequirementBacklog')</code></td><td>Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.</td><tr>
+<tr><td><code>Processes/all(p:p/IsBugType eq false)</code></td><td>Omit the bug type work items while getting requirements.</td><tr>
+</tbody>
+</table>
+
+
 ## Sample queries
 
-### Querying Area and Iteration paths
-In order to scope your report to a particular Area and Iteration path, you can query them as suggested [here](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to queries below.
+### Query Area and Iteration paths
+
+In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
 
 ### Query for percentage of hours completion for requirements
 
@@ -234,26 +265,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ***
 
-### Substitution strings
-
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
-- {iterationSK} - Iteration SK of the iteration path you are interested in.
-- {areaSK} - Area SK of the area path you are interested in.
-
-
-### Query breakdown
-
-The following table describes each part of the query.
-
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>Processes/any(p:p/BacklogType eq 'RequirementBacklog')</code></td><td>Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.</td><tr>
-<tr><td><code>Processes/all(p:p/IsBugType eq false)</code></td><td>Omit the bug type work items while getting requirements.</td><tr>
-</tbody>
-</table>
-
-
 ## Power BI transforms
 
 The transforms applied to Power BI queries are already added in query snippets.
@@ -268,8 +279,8 @@ Power BI shows you the fields you can report on.
 
 To create the report, perform the following steps:
 
-1. In the 'Model' view, go to 'Manage Relationships' and link the three query results by WorkItemId column.
-1. Create a PowerBI visualization **Table**.
+1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
+1. Create a Power BI visualization **Table**.
 1. Add the columns you are interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
@@ -282,7 +293,7 @@ Your report should look like this -
 
 ## One-level roll up for work items
 
-If you are tracking requirements with User Stories, you can have a one-level roll up (upto Features) with following queries -
+If you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.  
 
 ### Query for percentage of hours completion for requirements
 
@@ -471,9 +482,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Create the roll-up report
 
-Once you follow the above mentioned steps to create the report, your report should look like below. Here, 'Authentication scenarios' is a parent feature of two User Stories.
-
-Your report should look like this -
+Once you follow the above mentioned steps to create the report, your report should look similar to the following image. Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
