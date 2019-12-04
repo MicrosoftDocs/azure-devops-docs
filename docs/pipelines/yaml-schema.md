@@ -17,32 +17,34 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines**
 
-Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
+This article is a detailed reference guide to Azure Pipelines YAML pipelines. It includes a catalog of all supported YAML capabilities and the available options.
 
 ::: moniker range="azure-devops"
 > The best way to get started with YAML pipelines is through the
 [quickstart guide](create-first-pipeline.md).
-> After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+> After that, to learn how to configure your YAML pipeline for your needs, see conceptual articles such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-> To learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
+> To learn how to configure your YAML pipeline for your needs, see conceptual articles such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 ::: moniker-end
 
 ## Pipeline structure
 
 ::: moniker range="> azure-devops-2019"
 
-Pipelines are made of one or more stages describing a CI/CD process.
-Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages.
+Pipelines are one or more stages that describe a CI/CD process.
+Stages are the major divisions in a pipeline.
+The stages "build this app," "run these tests," and "deploy to preproduction" are good examples.
 
-Stages consist of one or more jobs, which are units of work assignable to a particular machine.
-Both stages and jobs may be arranged into dependency graphs: "run this stage before that one" or "this job depends on the output of that job".
+Stages are one or more jobs.
+A job is a unit of work assignable to a particular machine.
+You can arrange both stages and jobs into dependency graphs like "run this stage before that one" or "this job depends on the output of that job."
 
-Jobs consist of a linear series of steps.
+Jobs are a linear series of steps.
 Steps can be tasks, scripts, or references to external templates.
 
-This hierarchy is reflected in the structure of the YAML file.
+This hierarchy is reflected in the structure of a YAML file, as shown in this example:
 
 - Pipeline
   - Stage A
@@ -57,23 +59,20 @@ This hierarchy is reflected in the structure of the YAML file.
   - Stage B
     - ...
 
-For simpler pipelines, not all of these levels are required. For example,
-in a single-job build, you can omit the containers for "stages" and "jobs" since there
-are only steps. Also, many options shown here are optional and have good
-defaults, so your YAML definitions are unlikely to include all of them.
+For simple pipelines, not all of these levels are required. For example, in a single-job build you can omit the containers for stages and jobs because there are only steps. Also, because many options shown here are optional and have good defaults, your YAML definitions are unlikely to include all of them.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-Pipelines are made of one or more jobs describing a CI/CD process.
+Pipelines are one or more jobs that describe a CI/CD process.
 Jobs are units of work assignable to a particular machine.
-Jobs may be arranged into dependency graphs, for example: "this job depends on the output of that job".
+You can arrange jobs into dependency graphs like "this job depends on the output of that job."
 
-Jobs consist of a linear series of steps.
+Jobs are a linear series of steps.
 Steps can be tasks, scripts, or references to external templates.
 
-This hierarchy is reflected in the structure of the YAML file.
+This hierarchy is reflected in the structure of a YAML file, as shown in this example:
 
 - Pipeline
   - Job 1
@@ -85,7 +84,7 @@ This hierarchy is reflected in the structure of the YAML file.
     - Step 2.2
     - ...
 
-For single-job pipelines, you can omit the container "jobs" since there
+For single-job pipelines, you can omit the container for jobs because there
 are only steps. Also, many options shown here are optional and have good
 defaults, so your YAML definitions are unlikely to include all of them.
 
@@ -93,20 +92,19 @@ defaults, so your YAML definitions are unlikely to include all of them.
 
 ### Conventions
 
-Conventions used in this topic:
+Conventions used in this article:
+
 * To the left of `:` are literal keywords used in pipeline definitions.
-* To the right of `:` are data types. These can be primitives like **string** or references to rich structures defined elsewhere in this topic.
+* To the right of `:` are data types. These can be primitive types like **string** or references to rich structures defined elsewhere in this article.
 * `[` *datatype* `]` indicates an array of the mentioned data type. For instance, `[ string ]` is an array of strings.
 * `{` *datatype* `:` *datatype* `}` indicates a mapping of one data type to another. For instance, `{ string: string }` is a mapping of strings to strings.
-* `|` indicates there are multiple data types available for the keyword. For
-instance, `job | templateReference` means either a job definition or a
-template reference are allowed.
+* `|` indicates there are multiple data types available for the keyword. For instance, `job | templateReference` means either a job definition or a template reference is allowed.
 
 ### YAML basics
 
 This document covers the schema of an Azure Pipelines YAML file.
 To learn the basics of YAML, see [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/).
-Note: Azure Pipelines doesn't support all features of YAML, such as anchors, complex keys, and sets.
+Note that Azure Pipelines doesn't support all YAML features. Unsupported features include anchors, complex keys, and sets.
 
 ## Pipeline
 
@@ -131,7 +129,7 @@ If you have a single [stage](#stage), you can omit `stages` and directly specify
 jobs: [ job | templateReference ]
 ```
 
-If you have a single stage and a single job, you can omit those keywords and directly specify [steps](#steps):
+If you have a single stage and a single job, you can omit the `stages` and `jobs` keywords and directly specify [steps](#steps):
 
 ```yaml
 # ... other pipeline-level keywords
@@ -171,7 +169,7 @@ jobs:
 ```
 
 * * *
-Learn more about [multi-job pipelines](process/phases.md?tabs=yaml),
+Learn more about [pipelines with multiple jobs](process/phases.md?tabs=yaml),
 using [containers](#container-resource) and [repositories](#repository-resource) in pipelines,
 [triggers](#triggers), [variables](process/variables.md?tabs=yaml), and
 [build number formats](process/run-number.md).
@@ -180,18 +178,18 @@ using [containers](#container-resource) and [repositories](#repository-resource)
 ## Stage
 
 A stage is a collection of related jobs.
-By default, stages run sequentially, starting only after the stage ahead of them has completed.
+By default, stages run sequentially. Each stage starts only after the preceding stage is complete.
 
-You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
+You can manually control when a stage should run by using approval checks. These checks are commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline can consume a resource. As an owner of a resource like an environment, you can define checks that must be satisfied before a stage consuming that resource can start.
 
-Currently, manual approval checks are supported on [environments](#environment). 
+Currently, manual approval checks are supported on [environments](#environment).
 For more information, see [Approvals](process/approvals.md).
 
 # [Schema](#tab/schema)
 
 ```yaml
 stages:
-- stage: string  # name of the stage, A-Z, a-z, 0-9, and underscore
+- stage: string  # name of the stage: A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
@@ -201,8 +199,8 @@ stages:
 
 # [Example](#tab/example)
 
-This example will run three stages, one after another.
-The middle stage will run two jobs in parallel.
+This example runs three stages, one after another.
+The middle stage runs two jobs in parallel.
 
 ```yaml
 stages:
@@ -226,8 +224,8 @@ stages:
     - script: echo Deploying the code!
 ```
 
-This example will run two stages in parallel.
-(For brevity, the jobs and steps have been omitted.)
+This example runs two stages in parallel.
+For brevity, the jobs and steps have been omitted.
 
 ```yaml
 stages:
@@ -246,22 +244,19 @@ Learn more about [stages](process/stages.md), [conditions](process/conditions.md
 
 ## Job
 
-A [job](process/phases.md?tabs=yaml) is a collection of [steps](#steps) to be run by an
-[agent](agents/agents.md) or on the [server](#server). Jobs can be
-run [conditionally](process/phases.md?tabs=yaml#conditions), and they
-may [depend on earlier jobs](process/phases.md?tabs=yaml#dependencies).
+A [job](process/phases.md?tabs=yaml) is a collection of [steps](#steps) to be run by an [agent](agents/agents.md) or on the [server](#server). Jobs can be run [conditionally](process/phases.md?tabs=yaml#conditions), and they might [depend on earlier jobs](process/phases.md?tabs=yaml#dependencies).
 
 # [Schema](#tab/schema)
 
 ```yaml
 jobs:
-- job: string  # name of the job, A-Z, a-z, 0-9, and underscore
+- job: string  # name of the job: A-Z, a-z, 0-9, and underscore
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    parallel: # parallel strategy, see below
-    matrix: # matrix strategy, see below
+    parallel: # parallel strategy; see parallel schema
+    matrix: # matrix strategy; see parallel schema
     maxParallel: number # maximum number of matrix jobs to run simultaneously
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
@@ -275,7 +270,7 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
 ```
 
-For more information about workspace, including clean options, see the [workspace](process/phases.md#workspace) section in [Jobs](process/phases.md). 
+For more information about workspaces, including clean options, see the [workspace](process/phases.md#workspace) section in [Jobs](process/phases.md).
 
 # [Example](#tab/example)
 
@@ -296,12 +291,11 @@ Learn more about [variables](process/variables.md?tabs=yaml), [steps](#steps), [
 
 
 > [!Note]
-> If you have only one stage and one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
-> as a shorter way to describe the steps to run.
+> If you have only one stage and one job, you can use [single-job syntax](process/phases.md?tabs=yaml) as a shorter way to describe the steps to run.
 
 ### Container reference
 
-`container` is supported by jobs.
+A `container` is supported by jobs.
 
 # [Schema](#tab/schema)
 
@@ -351,12 +345,11 @@ jobs:
 
 ### Strategies
 
-`matrix` and `parallel` are mutually-exclusive strategies for duplicating a job.
+The keywords`matrix` and `parallel` are mutually exclusive strategies for duplicating a job.
 
 #### Matrix
 
-Matrixing generates copies of a job with different inputs. This is useful for
-testing against different configurations or platform versions.
+Use of matrices generates copies of a job with different inputs. This is useful for testing against different configurations or platform versions.
 
 #### [Schema](#tab/schema/)
 ```yaml
@@ -365,23 +358,20 @@ strategy:
   maxParallel: number
 ```
 
-For each `string1` in the matrix, a copy of the job will be generated. `string1`
-is the copy's name and will be appended to the name of the job. For each
-`string2`, a variable called `string2` with the value `string3` will be available 
-to the job.
+For each `string1` in the matrix, a copy of the job is generated. The name `string1` is the copy's name and is appended to the name of the job. For each `string2`, a variable called `string2` with the value `string3` is available to the job.
 
 > [!NOTE]
-> Matrix configuration names must contain only basic Latin alphabet letters (A-Z, a-z), numbers, and underscores (`_`).
+> Matrix configuration names must contain only basic Latin alphabet letters (A-Z, a-z), digits (0-9), and underscores (`_`).
 > They must start with a letter.
-> Also, they must be 100 characters or less.
+> Also, their length must be 100 characters or fewer.
 
 <a name="maximum-parallelism"></a>
 Optionally, `maxParallel` specifies the maximum number of simultaneous matrix legs to run at once.
 ::: moniker range="> azure-devops-2019"
-If not specified or set to 0, no limit will be applied.
+If `maxParallel` isn't specified or is set to 0, no limit is applied.
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-If not specified, no limit will be applied.
+If `maxParallel` isn't specified, no limit is applied.
 ::: moniker-end
 
 #### [Example](#tab/example/)
@@ -399,15 +389,12 @@ jobs:
     maxParallel: 2
 ```
 
-This matrix will create three jobs, "Build Python35", "Build Python36", and "Build Python37". Within
-each job, a variable PYTHON_VERSION will be available. In "Build Python35", it
-will be set to "3.5". Likewise, it will be "3.6" in "Build Python36".
-Only 2 jobs will run simultaneously.
+This matrix creates three jobs: "Build Python35," "Build Python36," and "Build Python37." Within each job, a variable named PYTHON_VERSION is available. In "Build Python35," the variable is set to "3.5". Likewise, it is set to "3.6" in "Build Python36." Only two jobs can run simultaneously.
 
 * * *
 #### Parallel
 
-This specifies how many duplicates of the job should run. This is useful for
+This strategy specifies how many duplicates of a job should run. It is useful for
 slicing up a large test matrix. The [VS Test task](tasks/test/vstest.md)
 understands how to divide the test load across the number of jobs scheduled.
 
@@ -513,11 +500,11 @@ and [step templates](#step-templates) for more details about each.
 
 ## Variables
 
-Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
-Variables may be specified at the pipeline, stage, or job level.
+Hard-coded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
+Variables can be specified at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
-For a simple set of hardcoded variables:
+For a simple set of hard-coded variables, use this syntax:
 
 ```yaml
 variables: { string: string }
@@ -534,7 +521,7 @@ variables:
 
 `name`/`value` pairs and `group`s can be repeated.
 
-Variables may also be included from [templates](#variable-templates).
+Variables can also be included from [templates](#variable-templates).
 
 #### [Example](#tab/example/)
 ::: moniker range="> azure-devops-2019"
@@ -578,7 +565,7 @@ jobs:
 
 ```yaml
 variables:
-- name: MY_VARIABLE           # hardcoded value
+- name: MY_VARIABLE           # hard-coded value
   value: some value
 - group: my-variable-group-1  # variable group
 - group: my-variable-group-2  # another variable group
