@@ -279,65 +279,11 @@ mounted by the Functions runtime and files in the **wwwroot** folder become read
 
 Creates a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
 
-## FAQs
-
-### How should I configure my service connection?
-
-This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
-
-> [!NOTE]
->
-> Publish profile based authentication is also supported for deployments to app service.
-
-### How should I configure Web Job Deployment with [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview)?
-
-When deploying to an App Service with Application Insights configured and you have enabled “Remove additional files at destination”, then you also need to enable “Exclude files from the App_Data folder” in order to keep the app insights extension in a safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
-
-### How should I configure my agent if it is behind a proxy while deploying to App Service?
-
-When your self-hosted agent requires a web proxy, you can inform the agent about the proxy during configuration. This allows your agent to connect to Azure Pipelines or TFS through the proxy. Learn more about [running a self-hosted agent behind a web proxy](/azure/devops/pipelines/agents/proxy?view=azure-devops&tabs=windows)
-
 ## Troubleshooting
 
-### Error: Could not fetch access token for Azure. Verify if the Service Principal used is valid and not expired.
+[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
 
-The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or does not have permissions to the App Service, the task fails with the specified error. Verify validity of the service principal used and that it is present in the app registration. For more details, see 
-   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
-   also contains more information about using service principal authentication.
-
-### SSL error
-
-To use a certificate in App Service, the certificate must be signed by a trusted certificate authority. If your web app gives you certificate validation errors, you're probably using a self-signed certificate. Set a variable named VSTS_ARM_REST_IGNORE_SSL_ERRORS to the value true in the build or release pipeline to resolve the error.
-
-### Error: No package found with specified pattern
-
-Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.
-
-### ERROR_FILE_IN_USE
-
-When deploying .NET apps to Web App on Windows, deployment may fail with error code *ERROR_FILE_IN_USE*. To resolve the error, ensure *Rename locked files* and *Take App Offline* options are enabled in the task. For zero downtime deployments, use slot swap.
-
-You can also use *Run From Package deployment* method to avoid resource locking.
-
-### Error: Publish using zip deploy option is not supported for msBuild package type
-
-Web packages created using MSBuild task (with default arguments) have a nested folder structure that can only be deployed correctly by Web Deploy. Publish to zip deploy option can not be used to deploy those packages. To convert the packaging structure, follow the below steps. 
-
-* In Build Solution task, change the MSBuild Arguments to
-/p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="$(System.DefaultWorkingDirectory)\\WebAppContent"
-
-* Add Archive Task and change the inputs as follows:
-  * Change *Root folder or file to archive* to
-    $(System.DefaultWorkingDirectory)\\WebAppContent
-    ![Root folder or file to archive](_img/azure-rm-web-app-deployment-03.png)
- 
-   * Disable *Prepend root folder name to archive paths* option
-    ![Prepend root folder name to archive paths](_img/azure-rm-web-app-deployment-04.png)
-
-### A release hangs for long time and then fails
-
-This may be because there is insufficient capacity on your App Service Plan. To resolve this, you can scale up the App Service instance to increase available CPU, RAM, and disk space or try with a different App Service plan.
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Web app deployment on Windows is successful but the app is not working
 
@@ -353,6 +299,16 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
+
+### ERROR_FILE_IN_USE
+
+When deploying .NET apps to Web App on Windows, deployment may fail with error code *ERROR_FILE_IN_USE*. To resolve the error, ensure *Rename locked files* and *Take App Offline* options are enabled in the task. For zero downtime deployments, use slot swap.
+
+You can also use *Run From Package deployment* method to avoid resource locking.
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
 
 ## Open source
 
