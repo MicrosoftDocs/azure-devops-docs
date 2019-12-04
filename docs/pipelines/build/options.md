@@ -78,7 +78,7 @@ Specify the authorization scope for a build job. Select:
 
 ### Scoped build identities
 
-Azure DevOps uses 2 built-in identities to execute pipelines.
+Azure DevOps uses two built-in identities to execute pipelines.
 
 * A **collection-scoped identity**, which has access to all projects in the collection (or organization for Azure DevOps Services)
 * A **project-scoped identity**, which has access to a single project
