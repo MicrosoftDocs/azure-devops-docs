@@ -16,7 +16,7 @@ Web packages created using MSBuild task (with default arguments) have a nested f
 * Add Archive Task and change the inputs as follows:
   * Change *Root folder or file to archive* to
     $(System.DefaultWorkingDirectory)\\WebAppContent
-    ![Root folder or file to archive](_img/azure-rm-web-app-deployment-03.png)
+    ![Root folder or file to archive](../_img/azure-rm-web-app-deployment-03.png)
  
    * Disable *Prepend root folder name to archive paths* option
-    ![Prepend root folder name to archive paths](_img/azure-rm-web-app-deployment-04.png)
+    ![Prepend root folder name to archive paths](../_img/azure-rm-web-app-deployment-04.png)
