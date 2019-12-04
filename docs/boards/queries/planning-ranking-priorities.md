@@ -91,7 +91,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 <tr>
     <td><p>Blocked</p></td>
-    <td><p>Indicates that no further work can be perfomed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
+    <td><p>Indicates that no further work can be performed on the work item. If an issue has been opened to track a blocking problem, a link should be made to the issue.</p><p>You can specify <strong>Yes</strong> or <strong>No</strong>.</p>
 <p>Reference name=Microsoft.VSTS.CMMI.Blocked, Data type=String</p>  </td><br/>    <td><p>Bug, Change Request, Requirement, Risk, Task (CMMI, Scrum)</p>
 </td>
 </tr>
