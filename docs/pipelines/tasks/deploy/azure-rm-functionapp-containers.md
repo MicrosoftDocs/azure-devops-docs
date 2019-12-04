@@ -54,6 +54,14 @@ steps:
     imageName: $(imageName)
 ```
 
+## Troubleshooting
+
+[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
+
 ## Open Source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.

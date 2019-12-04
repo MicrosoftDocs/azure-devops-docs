@@ -100,7 +100,7 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 [!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Web app deployment on Windows is successful but the app is not working
 
@@ -116,6 +116,10 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
 
 ## Open Source
 
