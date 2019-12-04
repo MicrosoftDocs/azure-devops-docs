@@ -98,7 +98,7 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](../_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](/_shared/rm-app-service-troubleshoot-shared.md)]
 
 ## Open Source
 
