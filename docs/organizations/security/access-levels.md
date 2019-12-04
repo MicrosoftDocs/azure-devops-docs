@@ -865,7 +865,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
 | Access level (user interface)| AccountLicenseType | msdnLicenseType| 
-| --------------------------|-----------------------------|
+| --------------------------|-----------------------------|-----------|
 | Stakeholder | stakeholder | none | 
 | Basic              | express  | none | 
 | Basic + Test Plans | advanced | none | 

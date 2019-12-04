@@ -45,7 +45,7 @@ You must be a member of these security groups or have the corresponding permissi
 
 * Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services 
 
-For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator-tfs).
+For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 

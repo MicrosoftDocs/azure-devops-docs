@@ -119,13 +119,12 @@ az devops user add –-email-id
 
 The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
-| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
-| --------------------------|-----------------------------|
+| Access level (user interface)| AccountLicenseType | 
+| --------------------------|---------------------|
 | Stakeholder | stakeholder | none | 
 | Basic              | express  | none | 
 | Basic + Test Plans | advanced | none | 
-| Visual Studio subscriber | none | eligible | 
-| Visual Studio Enterprise | none | enterprise | 
+
 
 
  > [!NOTE]   
