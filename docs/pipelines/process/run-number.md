@@ -104,7 +104,7 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How big can a run number be?
+### How large can a run number be?
 
 Runs may be up to 255 characters.
 
@@ -119,6 +119,25 @@ The time zone is UTC.
 ::: moniker range=">= tfs-2015 < azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### How can you reference the run number variable within a script?
+
+The run number variable can be called with `$(Build.BuildNumber)`. You can define a new variable that includes the run number or call the run number directly. In this example, `$(MyRunNumber)` is a new variable that includes the run number.
+
+```yaml
+# Set MyRunNumber
+variables: 
+  MyRunNumber: '1.0.0-CI-$(Build.BuildNumber)'
+
+
+steps:
+- script: echo $(MyRunNumber) # display MyRunNumber
+- script: echo $(Build.BuildNumber) #display Run Number
+```
 
 ::: moniker-end
 
