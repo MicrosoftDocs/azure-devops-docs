@@ -16,8 +16,3 @@ To use a certificate in App Service, the certificate must be signed by a trusted
 ### Error: No package found with specified pattern
 
 Check if the package mentioned in the task is published as an artifact in the build or a previous stage and downloaded in the current job.
-
-### A release hangs for long time and then fails
-
-This may be because there is insufficient capacity on your App Service Plan. To resolve this, you can scale up the App Service instance to increase available CPU, RAM, and disk space or try with a different App Service plan.
-
