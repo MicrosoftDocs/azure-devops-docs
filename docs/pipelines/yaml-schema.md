@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/03/2019
+ms.date: 12/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1763,6 +1763,24 @@ steps:
   submodules: true
   persistCredentials: true
 ```
+
+::: moniker range="> azure-devops-2019"
+
+### Multi-repo checkout
+
+You can specify more than one `checkout` step in your pipeline. The following combinations of `checkout` steps are supported.
+
+- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
+- If there is a single `checkout: none` step, no repositories are synced or checked out
+- If there is a single `checkout: self` step, the current repository is checked out.
+- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
+- If there are multiple `checkout` steps, each repository is checked out.
+
+#### Checkout directories
+
+Default directory or it can be specified, and self is in a different directory than before
+
+::: moniker-end
 
 # [Example](#tab/example)
 
