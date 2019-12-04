@@ -851,6 +851,61 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 -->
 
+<a id="mapping" /> 
+
+::: moniker range=">= tfs-2018 
+
+## Programmatic mapping of access levels
+
+::: moniker-end
+
+
+::: moniker range="azure-devops"
+
+You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic              | express  | none | 
+| Basic + Test Plans | advanced | none | 
+| Visual Studio subscriber | none | eligible | 
+| Visual Studio Enterprise | none | enterprise | 
+
+
+ > [!NOTE]   
+ > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019" 
+
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic              | express  | none | 
+| Basic + Test Plans | advanced | none | 
+| Visual Studio subscriber | none | eligible | 
+| Visual Studio Enterprise | none | enterprise | 
+
+::: moniker-end
+
+::: moniker range="tfs-2018" 
+
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic       | express  | none | 
+| Advanced | advanced | none | 
+| MSDN Platforms | none | platforms | 
+| VS Enterprise | none | enterprise | 
+
+::: moniker-end
+
 
 ::: moniker range="<= azure-devops-2019"
 
