@@ -1734,6 +1734,8 @@ You can configure or suppress this behavior with `checkout`.
 
 # [Schema](#tab/schema)
 
+::: moniker range="azure-devops-2019"
+
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
@@ -1744,6 +1746,23 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+```yaml
+steps:
+- checkout: self | none | repository name # self represents the repo where the initial Pipelines YAML file was found
+  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
+  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
+  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+```
+
+::: moniker-end
 
 Or to avoid syncing sources at all:
 
@@ -1775,6 +1794,16 @@ You can specify more than one `checkout` step in your pipeline. The following co
 - If there is a single `checkout: self` step, the current repository is checked out.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out.
+
+Brief intro
+
+Inline syntax
+
+Explicit syntax (repositories section)
+
+Path
+
+Ref
 
 #### Checkout directories
 
