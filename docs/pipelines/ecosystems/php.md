@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
+ms.date: 12/04/2018
 monikerRange: azure-devops
 author: vijayma
 ---
@@ -18,7 +18,7 @@ author: vijayma
 
 **Azure Pipelines**
 
-This guidance explains how to automatically build and test PHP projects.
+Use a pipeline to automatically build and test your PHP projects. 
 
 ## Example
 
