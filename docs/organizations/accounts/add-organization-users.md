@@ -117,7 +117,7 @@ az devops user add –-email-id
 - **send-email-invite**: Optional. Specify whether to send email invite for new user or not.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
-The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` parameter.
 
 | Access level (user interface)| AccountLicenseType | 
 | --------------------------|---------------------|
