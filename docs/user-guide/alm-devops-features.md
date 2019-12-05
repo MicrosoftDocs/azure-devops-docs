@@ -2202,7 +2202,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
-<li><a href="/azure/devops/server/admin/add-administrator-tfs" data-raw-source="[Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator-tfs)">Team Foundation Server Administrators</a>, who manage on-premises application servers </li>
+<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator)">Team Foundation Server Administrators</a>, who manage on-premises application servers </li>
 </ul>
 <br/>
 
