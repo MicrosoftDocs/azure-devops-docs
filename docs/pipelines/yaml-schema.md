@@ -1038,21 +1038,25 @@ resources:
   - repository: common
     type: github
     name: Contoso/CommonTools
+    endpoint: MyContosoServiceConnection
 ```
 
 ---
 
 #### Type
 
-Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+Pipelines support the following types of repositories: `git`, `github`, and `bitbucket`. `git` refers to
+Azure Repos Git repos. 
+
+- If you choose `git` as your type, then `name` refers to another
 repository in the same project. For example, `otherRepo`. To refer to a repo in
 another project within the same organization, prefix the name with that project's name.
 For example, `OtherProject/otherRepo`.
-
-If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. Also,
-GitHub repos require a [service connection](library/service-endpoints.md)
+- If you choose `github` as your type, then `name` is the full name of the GitHub
+repo including the user or organization. For example, `Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md#sep-github)
+for authorization.
+- If you choose `bitbucket` as your type, then `name` is the full name of the Bitbucket Cloud
+repo including the user or organization. For example, `MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket)
 for authorization.
 
 ## Triggers
@@ -1797,7 +1801,7 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out.
 
-Repositories can be specified in a repository resource, or inline. 
+Repositories can be specified in a [repository resource](#repository-resource), or inline. 
 
 - Use a repository resource if your repo requires a service connection or other extended resources field
 - Use a repository resource if you already have one defined, such as for templates in a different repository
@@ -1840,7 +1844,7 @@ The default branch is checked out unless you designate a specific ref using `@<r
 
 - `checkout: git://MyProject/MyRepo@features/tools` - checks out the `features/tools` branch
 - `checkout: git://MyProject/MyRepo@refs/head/features/tools` - also checks out the `features/tools` branch
-- `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit references by `MyTag`.
+- `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit referenced by `MyTag`.
 - SAD TODO - can you check out a commit ID? According to just before here, to use a commit ID you have to make a tag for it: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops#template-expressions
 
 #### Checkout path
