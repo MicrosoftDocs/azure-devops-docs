@@ -95,7 +95,9 @@ The following table describes each part of the query.
 In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
 
 ### Query for percentage of hours completion for requirements
-**Note:** Below query works for Agile process type since it defines 'Remaining work' and 'Completed work' fields in work items.
+
+> [!NOTE]   
+> The following query works for the Agile process since it defines `Remaining Work` and `Completed Work` fields in work items.
 
 #### [Power BI Query](#tab/powerbi/)
 
@@ -297,7 +299,7 @@ The transforms applied to Power BI queries are already added in query snippets.
 Power BI shows you the fields you can report on. 
 
 > [!NOTE]   
-> The example below assumes that no one renamed any columns. 
+> The following example assumes that no one renamed any columns. 
 
 To create the report, perform the following steps:
 
@@ -319,7 +321,8 @@ If you are tracking requirements with User Stories, you can have a one-level rol
 
 ### Query for percentage of hours completion for requirements
 
-**Note:** Change the WorkItemType as per the process template you are following. Scrum template has 'Feature' and Basic template has 'Epic' as the roll up work item respectively.
+> [!NOTE]   
+> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
 #### [Power BI Query](#tab/powerbi/)
 
@@ -449,7 +452,8 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 
 ### Query for status of bugs linked to the requirements
 
-**Note:** Change the WorkItemType as per the process template you are following. Scrum template has 'Feature' and Basic template has 'Epic' as the roll up work item respectively.
+> [!NOTE]   
+> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
 #### [Power BI Query](#tab/powerbi/)
 
