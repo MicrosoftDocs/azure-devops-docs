@@ -244,7 +244,7 @@ Values in parenthesis indicate the following:
 <br/>
 
 
-####Notes: 
+#### Notes: 
 
 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
