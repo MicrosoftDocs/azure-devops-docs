@@ -121,11 +121,9 @@ The following table provides a mapping of the access level selected through the 
 
 | Access level (user interface)| AccountLicenseType | 
 | --------------------------|---------------------|
-| Stakeholder | stakeholder | none | 
-| Basic              | express  | none | 
-| Basic + Test Plans | advanced | none | 
-
-
+| Stakeholder | stakeholder | 
+| Basic              | express  |  
+| Basic + Test Plans | advanced | 
 
  > [!NOTE]   
  > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
