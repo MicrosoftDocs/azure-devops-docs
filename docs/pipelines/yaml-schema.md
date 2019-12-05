@@ -1843,9 +1843,18 @@ The default branch is checked out unless you designate a specific ref using `@<r
 - `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit references by `MyTag`.
 - SAD TODO - can you check out a commit ID? According to just before here, to use a commit ID you have to make a tag for it: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops#template-expressions
 
-#### Checkout directories
+#### Checkout path
 
-Default directory or it can be specified, and self is in a different directory than before
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
+
+- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of `(Agent.BuildDirectory)`. If your repository is declared as a repository resource, the `repository` property value is used; otherwise, the repository name is ued. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+
+If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
+
+> [!NOTE]
+> If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
+
 
 ::: moniker-end
 
