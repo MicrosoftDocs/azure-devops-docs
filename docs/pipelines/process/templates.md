@@ -15,45 +15,28 @@ monikerRange: '>= azure-devops-2019'
 
 # Templates
 
-**Azure Pipelines**
+1. extends
+2. includes
+- steps
+- jobs 
+- stages
+- variables
 
-Templates let you define logic, variables, and parameters that can be reused. There are two types of templates: includes templates and extends templates. 
 
-An includes template contains reuseable content that can be inserted into multiple YAMLs. An includes template functions like an include directive in many programming languages where content from one file is inserted into another file. 
+Templates let you define logic, variables, and parameters that can be reused. Templates functions in two ways - you can insert reusable content with a template or you can use a template to control the structure of what is allowed in a pipeline. 
 
-An extends template allows you to have one template control the structure of a pipeline. An extends template takes in parameters, which let you configure how the pipeline runs. An extends template can contain includes templates. 
+When you use a template for including content, it functions like an include directive in many programming languages where content from one file is inserted into another file. In contrast, when you use a template to control the structure of a pipeline, in takes in parameters. By setting the data type for these parameters, you can configure how what is allowed in a YAML. 
 
-## Includes templates
-Includes templates let you copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file includes template contains steps that are reused in `azure-pipeline.yml`.  
+## Parameters
 
-```yaml
-# File: include-npm-steps.yml
+You can pass parameters to templates. The `parameters` section defines what parameters are available in the template. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
 
-steps:
-- script: npm install
-- script: yarn install
-- script: npm run compile
-```
+To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
-```yaml
-# File: azure-pipelines.yml
 
-jobs:
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-latest'
-  steps:
-  - template: templates/include-npm-steps.yml  # Template reference
-- job: Windows
-  pool:
-    vmImage: 'windows-latest'
-  steps:
-  - template: templates/include-npm-steps.yml  # Template reference
-```
+## Extending from a templates
 
-## Extends templates
-
-Extends templates let you pass in parameters. The `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
+You can also use templates to pass in parameters and define how they can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
 
 ```yaml
 # File: start.yml
@@ -102,94 +85,37 @@ extends:
         displayName: Test 3 - Will Fail
 ```
 
-## Variable reuse
-
-Variables can be defined in one YAML and used in another template using an include template. 
+## Inserting a template
+You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipeline.yml`.  
 
 ```yaml
-# File: vars.yml
-variables:
-  favoriteVeggie: 'brussels sprouts'
+# File: include-npm-steps.yml
+
+steps:
+- script: npm install
+- script: yarn install
+- script: npm run compile
 ```
 
 ```yaml
 # File: azure-pipelines.yml
 
-variables:
-- template: vars.yml  # Template reference
-
-steps:
-- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
 ```
-
-## Passing parameters
-
-You can pass also parameters to extends templates. The `parameters` section defines what parameters are available in the template and their default values. To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
-
-Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. Parameters include an include a data type, which restricts what values can be passed to it. For example, a variable with a boolean data type will only accept the values `true` or `false`. 
-
-There are data types available for runtime and template parameters. 
-
-### Runtime parameter data types
-
-| Data type | Notes |
-|-----------|-------|
-| `string` | default data type if none is specified
-| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
-| `boolean`
-| `object` | YAML serialization expected
-| `filePath`
-| `secureFile`
-| `pool`
-| `serviceConnection`
-| `environment`
-
-### Data types for template parameters
-
-| Data type | Notes |
-|------------------|-------|
-| `step` | a single step
-| `stepList` | sequence of steps
-| `job` | a single job
-| `jobList` | sequence of jobs
-| `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment jobs
-| `stage` | a single stage
-| `stageList` | sequence of stages
-
-
-You can define a parameter in one YAML and then reuse the parameter in a different YAML. In `azure-pipeline.yml`, When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
-
-```yaml
-# File: simple-param.yml
-parameters:
-- name: yesNo
-  type: boolean
-  default: false
-
-steps:
-    - script: echo This happens before code 
-    - script: echo ${{ parameters.yesNo }}
-```
-
-```yaml
-# File: azure-pipelines.yml
-trigger:
-- master
-
-extends:
-    template: simple-param.yml
-    parameters:
-        yesNo: false # set to a non-boolean value to have the build fail
-```
-
-## Step, job, and stage reuse with includes templates
-
-You can reuse steps, jobs, and stages across multiple jobs with includes templates. 
 
 ### Step reuse
 
-You can reuse one or more steps across several jobs with includes templates.
+You can insert a template to reuse one or more steps across several jobs.
 In addition to the steps from the template, each job can define additional steps.
 
 ```yaml
@@ -226,7 +152,7 @@ jobs:
 
 ### Job reuse
 
-Much like steps, jobs can be reused with includes templates.
+Much like steps, jobs can be reused with templates.
 
 ```yaml
 # File: templates/jobs.yml
@@ -249,7 +175,7 @@ jobs:
 
 ### Stage reuse
 
-Stages can also be reused with includes templates.
+Stages can also be reused with templates.
 
 ```yaml
 # File: templates/stages.yml
@@ -370,6 +296,28 @@ jobs:
 - job: build
   pool: ${{ parameters.pool }}
 ```
+
+### Variable reuse
+
+Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. 
+
+```yaml
+# File: vars.yml
+variables:
+  favoriteVeggie: 'brussels sprouts'
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+variables:
+- template: vars.yml  # Template reference
+
+steps:
+- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+```
+
+
 
 ## Using other repositories
 
@@ -754,3 +702,58 @@ jobs:
 ### Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+
+## Passing parameters
+
+Parameters need to contain a data type and a name. You can define a parameter in one YAML and then reuse the parameter in a different YAML. In `azure-pipeline.yml`, When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+
+```yaml
+# File: simple-param.yml
+parameters:
+- name: yesNo
+  type: boolean
+  default: false
+
+steps:
+    - script: echo This happens before code 
+    - script: echo ${{ parameters.yesNo }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+    template: simple-param.yml
+    parameters:
+        yesNo: false # set to a non-boolean value to have the build fail
+```
+
+```yaml
+parameters:
+- name: string          # name of the parameter; required
+  displayName: string   # string
+  type:                 # data type; required  
+  default: any          # default value
+  values: [ string ]    # allowed list of values
+  secret: bool          # whether to treat this value as a secret; defaults to false
+```
+
+### Parameter data types
+
+| Data type | Notes |
+|-----------|-------|
+| `string` | string
+| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
+| `boolean` | `true` or `false`
+| `object` | any YAML structure
+| `step` | a single step
+| `stepList` | sequence of steps
+| `job` | a single job
+| `jobList` | sequence of jobs
+| `deployment` | a single deployment job
+| `deploymentList` | sequence of deployment jobs
+| `stage` | a single stage
+| `stageList` | sequence of stages
+
