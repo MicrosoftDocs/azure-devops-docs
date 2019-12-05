@@ -8,7 +8,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 09/09/2019
+ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,13 +34,6 @@ Using run retention policies, you can control **how many days** you want to keep
 ::: moniker range="<= tfs-2018"
 
 Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be retained for each pipeline.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-> [!NOTE]
-> Ability to specify the number of runs to keep before removal is in development for Azure Pipelines. 
 
 ::: moniker-end
 
@@ -144,7 +137,14 @@ The following information is deleted when a build is deleted:
 
 ::: moniker range="> tfs-2018"
 
-In Azure Pipelines, the entire run is deleted. 
+The following information is deleted when a run is deleted:
+
+* Logs
+* [All artifacts](../tasks/utility/publish-build-artifacts.md)
+* [All symbols](../tasks/build/index-sources-publish-symbols.md)
+* Binaries
+* Test results
+* Run metadata
 
 ::: moniker-end
 
