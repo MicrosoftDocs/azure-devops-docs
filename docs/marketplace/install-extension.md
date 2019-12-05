@@ -65,15 +65,15 @@ You can install an extension with the [az devops extension install](/cli/azure/e
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 
 ```CLI 
-az devops extension install --extension-name
-                            --publisher-name
+az devops extension install --extension-id
+                            --publisher-id
                             [--org]
 ``` 
 
 #### Parameters 
 
-- **extension-name**: The name of the extension to install.
-- **publisher-name**: The name of the extension publisher.
+- **extension-id**: The name of the extension to install.
+- **publisher-id**: The name of the extension publisher.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example 
@@ -81,7 +81,7 @@ az devops extension install --extension-name
 The following command installs the **Timetracker** extension and shows the result in YAML format.  
 
 ```CLI
-az devops extension install --extension-name Timetracker --publisher-name 7pace --output yaml
+az devops extension install --extension-id Timetracker --publisher-id 7pace --output yaml
 
 baseUri: null
 constraints: null
