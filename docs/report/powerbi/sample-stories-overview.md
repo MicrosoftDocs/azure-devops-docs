@@ -11,10 +11,10 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 11/28/2019
+ms.date: 12/04/2019
 ---
 
-# Sample - Requirements tracking report
+# Sample: Requirements tracking report
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
@@ -34,13 +34,34 @@ This report displays the following information for each requirement that it list
 - **Active bugs**: The number of linked bugs in an Active state. 
 - **Closed bugs**: The number of linked bugs in a  Closed, Done, or Completed state. 
 
+## Questions the report answers
+
+Requirements tracking reports are useful for answering the following types of questions.
+
+**Work Progress**
+- *Does the amount of work that remains for each requirement correspond to your expectations?*
+- *Are top-ranked requirements being implemented first?*
+- *How many tests are defined for each requirement? How many tests are passing?*
+- *What requirements are being implemented that have no test cases defined for them?*
+
+**Quality Progress**
+- *How many test cases have run for each requirement, and how many have passed?*
+- *How many active bugs does each requirement have?*
+- *Are bugs being found for requirements that are being tested?*
+- *Are bugs being resolved or are they remaining active?*
+
+**Risk Assessment**
+- *Which requirements are at risk?*
+- *Which requirements aren't sufficiently stable for release?*
+- *Which requirements can we ship today?*
+
 ## Prerequisites
 
 For the report to generate useful data, you need to have performed the following tasks: 
 
-- You have define requirement work items and assigned them to the area and iteration paths of interest. For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) and [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
-- To get the percentage of hours completion, you need to fill in the 'Effort (hours)' fields of work items linked to requirements with the **Child** link type.
-- To get the execution status of test cases, you will have created requirement-based test suites in Test Plans corresponding to those requirements. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md)
+- You have define requirement work items and assigned them to the area and iteration paths of interest. For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) and [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md).
+- To get the percentage of hours completion, you need to fill in the [Complete Work](../../boards/queries/query-numeric.md#completed-work) and [Remaining Work](../../boards/queries/query-numeric.md#remaining-work) fields of tasks or bugs linked to requirements with the **Child** link type. 
+- To get the execution status of test cases, you will have created requirement-based test suites in Test Plans corresponding to those requirements. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 - To get the status of bugs, you will have created and linked bugs to requirements with the **Child** link type.
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
@@ -286,10 +307,10 @@ To create the report, perform the following steps:
     > [!div class="mx-imgBorder"] 
     > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
 
-Your report should look like this -
+Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Requirements tracking eport](_img/odatapowerbi-storiesoverview.png)
 
 ## One-level roll up for work items
 
