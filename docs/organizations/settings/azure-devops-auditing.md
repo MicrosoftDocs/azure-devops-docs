@@ -11,7 +11,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/04/2019
+ms.date: 12/05/2019
 ---
 
 # Quickstart: Access, export, and filter audit logs
@@ -156,7 +156,7 @@ When you're filtering through audit events, it’s best to leverage the “area�
 | Group          |  Group membership change, update, delete, create, and rename.          |
 | Release        |  Release create, delete, modiy, approval completed, and deployment completed.          |
 | OrganizationPolicy | Changes to organization policies (i.e. no basic authentication).           |
-| Organization   | Rename, change owner, link to AAD, and unlink from AAD.            |
+| Organization   | Rename, change owner, link to AAD, and unlink from Azure AD.            |
 
 
 
