@@ -116,6 +116,19 @@ steps:
     vstsPackageVersion: 1.0.0
     downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
+> Note: When using Azure Artifacts with the Azure DevOps extension 0.14.0 and up, you must provide the project id in the vstsFeed path. For example:
+
+```yaml
+steps:
+- task: UniversalPackages@0
+  displayName: 'Universal download'
+  inputs:
+    command: download
+    vstsFeed: '<insert project id>/fabrikamFeed'
+    vstsFeedPackage: 'fabrikam-package'
+    vstsPackageVersion: 1.0.0
+    downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
+```
 
 
 | Argument                       | Description                                                         |
