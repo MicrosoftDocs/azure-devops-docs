@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/19/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -256,7 +256,7 @@ Consider the following points when configuring Search:
 
 * If you don't set the checkbox to install the Code Search extension for all your project collections when 
   configuring Search, your project collection administrator can install it from the Local Gallery. Ensure you
-  navigate to the Local Gallery (`http://{Server}:8080/tfs/_gallery`) from your Azure DevOps Server or TFS portal page. 
+  navigate to the Local Gallery (`http://{Server}/_gallery`) from your Azure DevOps Server or TFS portal page. 
 
 * The search index folder should be on a separate fast hard drive, backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
