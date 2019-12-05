@@ -8,7 +8,7 @@ ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/25/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -134,11 +134,6 @@ To approve extensions, you must have [**edit collection-level information** perm
 ::: moniker-end
 
 Tell your team about installed extensions, so they can start using their capabilities.
-
-## Next steps
-
-  > [!div class="nextstepaction"]
-  > [Assign extension](install-extension.md#assign-extensions-to-users)]
 
 ## Related articles
 
