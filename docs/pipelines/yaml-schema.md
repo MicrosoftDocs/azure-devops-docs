@@ -1803,9 +1803,9 @@ The following combinations of `checkout` steps are supported.
 
 Repositories can be specified in a [repository resource](#repository-resource), or inline. 
 
-- Use a repository resource if your repo requires a service connection or other extended resources field
-- Use a repository resource if you already have one defined, such as for templates in a different repository
-- Use inline syntax if you don't need an endpoint and don't want to use repository resources
+- You must use a repository resource if your repo requires a service connection or other extended resources field
+- You may use a repository resource if desired, for example if you have one defined already for templates in a different repository
+- You may use inline syntax if your repository type doesn't require a service connection and you don't want to use repository resources
 
 Supported repositories are Azure Repos Git, GitHub, and BitBucket Cloud.
 
