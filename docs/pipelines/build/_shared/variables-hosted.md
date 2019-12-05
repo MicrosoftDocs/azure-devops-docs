@@ -580,12 +580,6 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
-<td>System.PlanId</td>
-<td>A string-based identifier for the orchestration.</td>
-</tr>
-
-
-<tr>
 <td>System.StageAttempt</td>
 <td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
 </tr>
@@ -632,11 +626,6 @@ Otherwise, it is set to <code>False</code>.</td>
 </tr>
 
 <tr>
-<td>System.TaskInstanceId</td>
-<td>A string representing the task instance identifier that is associated with a pipeline task.</td>
-</tr>
-
-<tr>
 <td>System.TeamFoundationCollectionUri</td>
 <td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
 <br/><br/>
@@ -651,11 +640,6 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>System.TeamProjectId</td>
 <td>The ID of the project that this build belongs to.</td>
-</tr>
-
-<tr>
-<td>System.TimelineId</td>
-<td>A string-based ID of a timeline record.</td>
 </tr>
 
 <tr>
