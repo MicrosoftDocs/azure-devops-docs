@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 11/13/2019
+ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -311,6 +311,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 ## Common issues and resolutions
 
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [My pipeline is failing on a checkout step](#my-pipeline-is-failing-on-a-checkout-step)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
 * [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
 * [Process hang](#process-hang)
@@ -334,6 +335,11 @@ For example, is the problem happening during the MSBuild part of your build pipe
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
+### My pipeline is failing on a checkout step
+
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md#scoped-build-identities) to ensure that your pipeline has access to the repository.
+
+When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 
 ### File or folder in use errors
 
