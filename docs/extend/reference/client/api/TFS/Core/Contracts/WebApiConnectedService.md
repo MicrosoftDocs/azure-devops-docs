@@ -30,7 +30,7 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnected
 
 * `kind`: string. The kind of service.
 
-* `project`: [TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The project associated with this service
+* `project`: [TeamProjectReference](../../../../../../../integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/TeamProjectReference.md). The project associated with this service
 
 * `serviceUri`: string. Optional uri to connect directly to the service such as https://windows.azure.com
 

@@ -42,7 +42,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 **A:** You'll need to add SQL Server Reporting Services to provide a report server for TFS. This can be added to the SQL Server instance that is supporting TFS, or to a different instance.
 
 #### Q: What permissions do I need?
-**A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](/azure/devops/server/admin/add-administrator-tfs).
+**A:** You need to be a member of the local administrators group on the server, the Team Foundation Administrators group in TFS, and the sysadmin group in SQL Server, or have the equivalent permissions. If you don't have them, [get those permissions now](/azure/devops/server/admin/add-administrator).
 
 #### Q: Can I add reporting if TFS is installed on a client operating system?
 **A:** No. You can't add reporting and analysis services on a client operating system. Your choices aren't easy. If you still want to add reporting, either [move the team project collection](/azure/devops/server/admin/move-project-collection) to a deployment of TFS that supports reporting, or [restore your entire deployment to a different server](/azure/devops/server/admin/backup/tut-single-svr-home) that is running a server operating system and a version of SQL Server that supports reporting.
@@ -193,7 +193,7 @@ You can learn more about installing and configuring SQL Server for use with on-p
 *  [Understanding how TFS, SQL Server, and Reporting all work together](/azure/devops/server/architecture/sql-server-databases)   
 
 ### Set permissions
-- [Set administrator permissions](/azure/devops/server/admin/add-administrator-tfs)  
+- [Set administrator permissions](/azure/devops/server/admin/add-administrator)  
 
 
 ### Change the data reader account  
