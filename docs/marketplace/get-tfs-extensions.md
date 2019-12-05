@@ -108,7 +108,7 @@ and then installing them in a project collection. You can't install extensions w
 
 ### Who can upload extensions?
 
-[Team Foundation Administrators](/azure/devops/server/admin/add-administrator-tfs#server) 
+[Team Foundation Administrators](/azure/devops/server/admin/add-administrator#server) 
 with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
 
