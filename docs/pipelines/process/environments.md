@@ -32,6 +32,9 @@ While environment at its core is a grouping of resources, the resources themselv
 <a name="creation"></a>
 ## Environment creation
 
+> [!NOTE]
+> To create an environment and deploy with a pipeline, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
+
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
 2. In your project, navigate to the Pipelines page. Then choose Environments and click on **Create Environment**.
