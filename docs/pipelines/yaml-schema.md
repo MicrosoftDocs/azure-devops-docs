@@ -1787,7 +1787,9 @@ steps:
 
 ### Multi-repo checkout
 
-You can specify more than one `checkout` step in your pipeline. The following combinations of `checkout` steps are supported.
+Introduced in [Sprint 161 Update - Checkout multiple repositories in Azure Pipelines](/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you can `checkout` multiple repositories in your pipeline.
+
+The following combinations of `checkout` steps are supported.
 
 - If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
 - If there is a single `checkout: none` step, no repositories are synced or checked out
@@ -1795,15 +1797,51 @@ You can specify more than one `checkout` step in your pipeline. The following co
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out.
 
-Brief intro
+Repositories can be specified in a repository resource, or inline. 
 
-Inline syntax
+- Use a repository resource if your repo requires a service connection or other extended resources field
+- Use a repository resource if you already have one defined, such as for templates in a different repository
+- Use inline syntax if you don't need an endpoint and don't want to use repository resources
 
-Explicit syntax (repositories section)
+Supported repositories are Azure Repos Git, GitHub, and BitBucket Cloud.
 
-Path
+#### Repository declared using a repository resource
 
-Ref
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo # The name used to reference this repository
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepoName
+  - repository: MyBitBucketRepo
+    type: bitbucket
+    endpoint: MyBitBucketServiceConnection
+    name: MyBitBucketOrgOrName/MyBitBucketRepo
+  - repository: MyAzureReposGitRepository
+    type: git
+    name: MyProject/MyRepo
+```
+
+#### Repository declared using inline syntax
+
+If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
+
+```yaml
+steps:
+- checkout: git://MyProject/MyRepo # Azure Repos Git repository
+- checkout: github://MyPublicGitHubOrg/MyPublicRepo # Public GitHub repository requiring no authentication
+- checkout: bitbucket://MyPublicBitBucketOrg/PublicBBRepo # Public BitBucket Cloud repository requiring no authentication
+```
+
+#### Checking a specific ref
+
+The default branch is checked out unless you designate a specific ref using `@<ref>`. For example:
+
+- `checkout: git://MyProject/MyRepo@features/tools` - checks out the `features/tools` branch
+- `checkout: git://MyProject/MyRepo@refs/head/features/tools` - also checks out the `features/tools` branch
+- `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit references by `MyTag`.
+- SAD TODO - can you check out a commit ID? According to just before here, to use a commit ID you have to make a tag for it: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/templates?view=azure-devops#template-expressions
 
 #### Checkout directories
 
