@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 11/06/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -184,13 +184,13 @@ Jobs can be of different types, depending on where they run.
 # [YAML](#tab/yaml)
 
 * **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps server.
+* **Server jobs** run on the Azure DevOps Server.
 * **Container jobs** run in a container on an agent in an agent pool. See [container jobs](container-phases.md) for more information.
 
 # [Classic](#tab/classic)
 
 * **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps server.
+* **Server jobs** run on the Azure DevOps Server.
 * **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline. See [deployment group jobs](deployment-group-phases.md) for more information.
 
 ---
@@ -202,12 +202,12 @@ Jobs can be of different types, depending on where they run.
 # [YAML](#tab/yaml)
 
 * **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps server.
+* **Server jobs** run on the Azure DevOps Server.
 
 # [Classic](#tab/classic)
 
 * **Agent pool jobs** run on an agent in an agent pool.
-* **Server jobs** run on the Azure DevOps server.
+* **Server jobs** run on the Azure DevOps Server.
 * **Deployment group jobs** run on machines in a deployment group. These jobs are only available in a release pipeline.
 
 ---
@@ -559,13 +559,13 @@ time the job is queued or is waiting for an agent.
 
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. When `0` is specified, the maximum limit is used (described above).
 
-The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
+The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time when the deployment task is set to keep running if a previous task has failed. When not specified, the default is 5 minutes.
 
 ```yaml
 jobs:
 - job: Test
-  timeoutInMinutes: 10
-  cancelTimeoutInMinutes: 2
+  timeoutInMinutes: 10 # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
 ```
 
 ::: moniker-end
@@ -576,7 +576,7 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 Select the job and then specify the timeout value.
 
-On the **Options** tab you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
+On the Options tab, you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 * * *
 ::: moniker range="azure-devops"
@@ -786,7 +786,7 @@ When you run an agent pool job, it creates a workspace on the agent. The workspa
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can do incremental builds and deployments, provided that tasks are implemented to make use of that. You can override this behavior using the `workspace` setting on the job.
 
 ```yaml
 - job: myJob
@@ -809,7 +809,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a results, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
+When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
 - [GitHub](../repos/github.md#getting-the-source-code)
 - [Azure Repos Git](../repos/azure-repos-git.md)
