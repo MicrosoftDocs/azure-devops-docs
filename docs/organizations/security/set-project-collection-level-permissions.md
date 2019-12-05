@@ -476,7 +476,7 @@ You can change a group name, description, add a group image, or delete a group.
 
 For on-premises deployments, see these additional topics: 
 
-- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator-tfs) 
+- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator) 
 - [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies-tfs)  
 
 ::: moniker-end  
