@@ -8,7 +8,7 @@ ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/26/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -117,8 +117,6 @@ version: 5.0.1.34507
 
 * * *
 
-
-::: moniker-end
 
 ## Next steps
 
