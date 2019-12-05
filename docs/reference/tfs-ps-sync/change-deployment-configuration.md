@@ -45,7 +45,7 @@ ms.date: 01/12/2017
   
 1.  Move or split the collection.  
 
-     For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
+     For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).  
   
 2.  Grant required permissions to the service account for the second instance of Team Foundation Server.  
   
@@ -70,7 +70,7 @@ ms.date: 01/12/2017
   
 2. Move or split the collection.  
 
-    For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
+    For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).  
   
 3. Assign all required permissions.  
   

@@ -681,7 +681,7 @@ Gets details for a build
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../TFS/Build/Contracts/Timeline.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../../../../../integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_getBuildWorkItemsRefs"></a>
 <h2 class='method'>getBuildWorkItemsRefs()</h2>
