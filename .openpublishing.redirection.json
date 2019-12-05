@@ -12104,6 +12104,11 @@
       "source_path": "docs/organizations/billing/index.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/index.md",
+      "redirect_url": "/azure/devops/organizations/settings/about-settings#project-administrator-role-and-managing-projects",
+      "redirect_document_id": false
     }
   ]
 }
