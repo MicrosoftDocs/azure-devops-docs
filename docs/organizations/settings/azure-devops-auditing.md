@@ -11,7 +11,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 11/04/2019
+ms.date: 12/05/2019
 ---
 
 # Quickstart: Access, export, and filter audit logs
@@ -136,6 +136,29 @@ When you're filtering through audit events, it’s best to leverage the “area�
 |Access     | Access refers to when an artifact is viewed or opened in an organization        |
  
 ### Areas
+
+> [!Note]
+> While aduiting is in a public preview, we're working hard to get more areas audited. New auditing events are being added monthly.
+>
+> If you can't find the auditing event you're looking for in the below table, be sure to check the REST API as well https://auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions. Just replace {YOUR_ORGANIZATION} with the name of your organization. The API will show a list of all audit events your organization could emit. 
+
+|Area            |Description |
+|----------------|------------|
+| Permissions    | Tracks permission changes made to groups and users throughout an Azure DevOps organization.           |
+| Project        | Project create, delete, rename, update, and visiblty changes. Create area path, updating area path, and deleting area path.          |
+| Auditing       | Viewing the audit log. |
+| Extensions     | Extension install, remove, enable/disable, and update           |
+| Licensing      | Licensing assigned, changed, and removed. Group licensing rules created, modified, and deleted.           |
+| Process        | Process (agile) create, delete, and modify.           |
+| Pipelines      | Pipeline created, deleted, and updated (designer UX pipelines only at this time)          |
+| Policy         |  Policy create, delete and udpate for a Git repo.       |
+| Git            |  Git repo create, delete, modify, bypass PR policy, and delete.          |
+| Group          |  Group membership change, update, delete, create, and rename.          |
+| Release        |  Release create, delete, modiy, approval completed, and deployment completed.          |
+| OrganizationPolicy | Changes to organization policies (i.e. no basic authentication).           |
+| Organization   | Rename, change owner, link to AAD, and unlink from Azure AD.            |
+
+
 
 
 |Area   |Description |
