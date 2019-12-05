@@ -83,7 +83,7 @@ The following table describes each part of the query.
 <tbody valign="top">
 <tr><td width="50%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td width="50%"><code>Processes/any(p:p/BacklogType eq 'RequirementBacklog')</code></td><td>Filter the work items in such a way that they should fall in 'requirements' category for at least one process associated with them.</td><tr>
-<tr><td><code>Processes/all(p:p/IsBugType eq false)</code></td><td>Omit the bug type work items while getting requirements.</td><tr>
+<tr><td><code>Processes/all(p:p/IsBugType eq false)</code></td><td>Omit the bug type work items while getting requirements. In Basic process template, Issue work items are also of bug type, so for Basic process remove this clause from your query.</td><tr>
 </tbody>
 </table>
 
@@ -95,6 +95,7 @@ The following table describes each part of the query.
 In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
 
 ### Query for percentage of hours completion for requirements
+**Note:** Below query works for Agile process type since it defines 'Remaining work' and 'Completed work' fields in work items.
 
 #### [Power BI Query](#tab/powerbi/)
 
@@ -318,6 +319,8 @@ If you are tracking requirements with User Stories, you can have a one-level rol
 
 ### Query for percentage of hours completion for requirements
 
+**Note:** Change the WorkItemType as per the process template you are following. Scrum template has 'Feature' and Basic template has 'Epic' as the roll up work item respectively.
+
 #### [Power BI Query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
@@ -445,6 +448,8 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 ***
 
 ### Query for status of bugs linked to the requirements
+
+**Note:** Change the WorkItemType as per the process template you are following. Scrum template has 'Feature' and Basic template has 'Epic' as the roll up work item respectively.
 
 #### [Power BI Query](#tab/powerbi/)
 
