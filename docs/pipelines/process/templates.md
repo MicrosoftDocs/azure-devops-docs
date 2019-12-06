@@ -15,17 +15,9 @@ monikerRange: '>= azure-devops-2019'
 
 # Templates
 
-1. extends
-2. includes
-- steps
-- jobs 
-- stages
-- variables
+Templates let you define logic, variables, and parameters that can be reused. Templates functions in two ways - you can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
-
-Templates let you define logic, variables, and parameters that can be reused. Templates functions in two ways - you can insert reusable content with a template or you can use a template to control the structure of what is allowed in a pipeline. 
-
-When you use a template for including content, it functions like an include directive in many programming languages where content from one file is inserted into another file. In contrast, when you use a template to control the structure of a pipeline, in takes in parameters. By setting the data type for these parameters, you can configure how what is allowed in a YAML. 
+When you use a template for including content, it functions like an include directive in many programming languages where content from one file is inserted into another file. When you use a template to control what is allowed in a pipeline, one template defines logic that another file must follow. You can use a template to define what parameter data types are allowed. By setting the data type for these parameters, you can configure how what is allowed in a YAML. 
 
 ## Parameters
 
@@ -34,9 +26,55 @@ You can pass parameters to templates. The `parameters` section defines what para
 To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
 
-## Extending from a templates
+### Passing parameters
 
-You can also use templates to pass in parameters and define how they can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
+Parameters can contain a name, data type, and default value. In `azure-pipeline.yml`, When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+
+```yaml
+# File: simple-param.yml
+parameters:
+- name: yesNo # name of the parameter; required
+  displayName: 'Yes or No'   # string
+  type: boolean
+  default: false
+
+steps:
+    - script: echo This happens before code 
+    - script: echo ${{ parameters.yesNo }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+    template: simple-param.yml
+    parameters:
+        yesNo: false # set to a non-boolean value to have the build fail
+```
+
+### Parameter data types
+
+| Data type | Notes |
+|-----------|-------|
+| `string` | string
+| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
+| `boolean` | `true` or `false`
+| `object` | any YAML structure
+| `step` | a single step
+| `stepList` | sequence of steps
+| `job` | a single job
+| `jobList` | sequence of jobs
+| `deployment` | a single deployment job
+| `deploymentList` | sequence of deployment jobs
+| `stage` | a single stage
+| `stageList` | sequence of stages
+
+
+## Extending from a template
+
+You can use templates to pass in parameters and define how they can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
 
 ```yaml
 # File: start.yml
@@ -702,58 +740,4 @@ jobs:
 ### Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
-
-## Passing parameters
-
-Parameters need to contain a data type and a name. You can define a parameter in one YAML and then reuse the parameter in a different YAML. In `azure-pipeline.yml`, When the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
-
-```yaml
-# File: simple-param.yml
-parameters:
-- name: yesNo
-  type: boolean
-  default: false
-
-steps:
-    - script: echo This happens before code 
-    - script: echo ${{ parameters.yesNo }}
-```
-
-```yaml
-# File: azure-pipelines.yml
-trigger:
-- master
-
-extends:
-    template: simple-param.yml
-    parameters:
-        yesNo: false # set to a non-boolean value to have the build fail
-```
-
-```yaml
-parameters:
-- name: string          # name of the parameter; required
-  displayName: string   # string
-  type:                 # data type; required  
-  default: any          # default value
-  values: [ string ]    # allowed list of values
-  secret: bool          # whether to treat this value as a secret; defaults to false
-```
-
-### Parameter data types
-
-| Data type | Notes |
-|-----------|-------|
-| `string` | string
-| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
-| `boolean` | `true` or `false`
-| `object` | any YAML structure
-| `step` | a single step
-| `stepList` | sequence of steps
-| `job` | a single job
-| `jobList` | sequence of jobs
-| `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment jobs
-| `stage` | a single stage
-| `stageList` | sequence of stages
 
