@@ -1,0 +1,116 @@
+---
+title: Checkout multiple repositories in your pipeline
+description: Learn how to check out multiple repositories in your pipeline
+ms.topic: reference
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 12/06/2019
+monikerRange: > azure-devops-2019
+---
+
+# Checkout multiple repositories in your pipeline
+
+[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+
+Introduced in [Sprint 161 Update - Checkout multiple repositories in Azure Pipelines](/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you can `checkout` multiple repositories in your pipeline.
+
+The following combinations of `checkout` steps are supported.
+
+- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
+- If there is a single `checkout: none` step, no repositories are synced or checked out.
+- If there is a single `checkout: self` step, the current repository is checked out.
+- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
+- If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
+
+Repositories can be specified in a [repository resource](#repository-resource), or inline with the `checkout` step. 
+
+- You must use a repository resource if your repository type requires a service connection or other extended resources field.
+- You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+- You may use inline syntax if your repository type doesn't require a service connection.
+
+Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
+
+## Repository declared using a repository resource
+
+In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](#repository-resource).
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+  - repository: MyBitBucketRepo
+    type: bitbucket
+    endpoint: MyBitBucketServiceConnection
+    name: MyBitBucketOrgOrUser/MyBitBucketRepo
+  - repository: MyAzureReposGitRepository
+    type: git
+    name: MyProject/MyAzureReposGitRepo
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: MyGitHubRepo
+- checkout: MyBitBucketRepo
+- checkout: MyAzureReposGitRepository
+
+- script: dir $(Build.SourcesDirectory)
+```
+
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
+
+## Repository declared using inline syntax
+
+If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
+
+> [!NOTE]
+> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for Azure Repos Git repositories in the same organization as the pipeline.
+
+```yaml
+steps:
+- checkout: git://MyProject/MyRepo # Azure Repos Git repository
+```
+
+## Checking out a specific ref
+
+The default branch is checked out unless you designate a specific ref.
+
+If you are using inline syntax, designate the ref by appending `@<ref>`. For example:
+
+- `checkout: git://MyProject/MyRepo@features/tools` - checks out the `features/tools` branch
+- `checkout: git://MyProject/MyRepo@refs/heads/features/tools` - also checks out the `features/tools` branch
+- `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit referenced by `MyTag`.
+
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubRepo
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubOrgOrUser/MyGitHubRepo
+    ref: features/tools
+```
+
+## Checkout path
+
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
+
+- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+
+If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
+
+> [!NOTE]
+> If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
