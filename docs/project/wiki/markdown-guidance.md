@@ -163,7 +163,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 <pre>
 > Single line quote
->> Nested
+>> Nested quote
 >> multiple line
 >> quote
 </pre>
