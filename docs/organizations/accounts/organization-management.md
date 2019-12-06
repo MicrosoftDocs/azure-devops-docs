@@ -66,18 +66,9 @@ Azure AD is optional, however, if your enterprise already uses a directory manag
 
 The process of adding users to projects when managing them through Azure AD is as follows: 
 
-1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) and sign in with your organization account.  
+1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
 2. [Add organization users to your Azure AD](add-users-to-azure-ad.md)
 3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
-]
-4. 
-5. 
-6.  (connect-organization-to-azure-ad)
-3. 
-4. 
-5. Add users to
-[use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
-
 
 Other related articles include: 
 - [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md) 
@@ -121,4 +112,5 @@ buy more services, and purchase extensions for your organization.
 - [Default permissions and access](../security/permissions-access.md) 
 - [Set permissions at the project- or collection-level](../security/(set-project-collection-level-permissions.md) 
 - [Add a user as a team administrator](../settings/add-team-administrator.md)
-- [Troubleshoot permissions and access with Azure Active Directory](faq-azure-access.md)
+- [Use Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+- [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
