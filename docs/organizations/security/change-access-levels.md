@@ -1,5 +1,5 @@
 ﻿---
-title: Change access levels for a user or group, manage feature access
+title: Access levels for users or groups
 titleSuffix: Azure DevOps 
 description: Provide access to web portal users based on their license 
 ms.technology: devops-security
@@ -61,7 +61,7 @@ You manage access levels for the collections defined on the application tier. Th
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Open Access levels dialog](_img/change-access-levels/open-access-levels-2019.png)
 
-	If you don't see **Access levels**, you aren't an administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
+	If you don't see **Access levels**, you aren't an administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator).
 
 1. Select the access level you want to manage.
 
@@ -89,7 +89,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 	<img src="_img/access-levels-2017-stakeholder-access.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
+	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator).
 
 2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 
@@ -109,7 +109,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see **Access levels**, you aren't an administrator and don't have permission. Learn more about [how to get permissions](/azure/devops/server/admin/add-administrator-tfs).
+	If you don't see **Access levels**, you aren't an administrator and don't have permission. Learn more about [how to get permissions](/azure/devops/server/admin/add-administrator).
 
 ::: moniker-end
 

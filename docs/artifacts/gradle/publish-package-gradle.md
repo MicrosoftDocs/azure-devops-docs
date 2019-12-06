@@ -1,5 +1,5 @@
 ---
-title: Publish a Maven artifact using Gradle and Azure DevOps Services
+title: Publish a Maven artifact using Gradle
 description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -21,7 +21,7 @@ This topic covers creating and publishing a Maven artifact with Gradle using Azu
 
 ## Prerequisites
 
-Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Before you start, [install the Gradle build tool](https://gradle.org/install/). Note that Gradle itself requires a prior installation of the Java JDK or JRE (version 7 or later). You can [get the Java JDK here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 From a command prompt, verify that you have the Java JDK or JRE version 7 or later:
 
@@ -132,6 +132,9 @@ repositories {
 ```
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
 publishing and downloading to use separate organizations, if you prefer.
+
+> [!NOTE]
+> You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
 
 Replace the following fields with your own values:
 

@@ -6,11 +6,12 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.manager: mijacobs
-ms.author: brcrista
+ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 10/10/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
+author: vijayma
 ---
 
 # Run pipelines with Anaconda environments

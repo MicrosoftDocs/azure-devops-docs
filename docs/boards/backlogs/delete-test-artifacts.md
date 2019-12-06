@@ -1,5 +1,5 @@
 ﻿---
-title: Delete test plans, cases, results, & other test artifacts
+title: Delete test plans, cases, & other test artifacts
 titleSuffix: Azure Boards  
 description: How to delete test plans, test cases, test results, & other test artifacts in Azure DevOps Services & TFS 
 ms.custom: seodec18

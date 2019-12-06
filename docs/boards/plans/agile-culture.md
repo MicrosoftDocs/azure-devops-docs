@@ -1,5 +1,5 @@
-﻿---
-title: 7 elements of Agile culture to support autonomy and alignment
+---
+title: Elements of Agile culture
 titleSuffix: Azure Boards 
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
@@ -164,10 +164,10 @@ For additional guidance, see these topics:
 ### Agile culture industry resources
 
 - [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
-- [Culture over process](http://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
-- [The Culture Game - Tools for the Agile Manager](http://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
-- [Scaled Agile Framework (SAFe)](http://www.scaledagileframework.com/)  
-- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](http://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
+- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
+- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
+- [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)  
+- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
 ### Scale with teams and not projects  
 Often times, organizations look at adding a project for each software development project. 

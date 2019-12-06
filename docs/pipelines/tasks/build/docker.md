@@ -9,6 +9,7 @@ ms.manager: shasb
 ms.author: shasb
 author: shashankbarsin
 ms.date: 02/12/2019
+ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
 ---
 
@@ -68,7 +69,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>arguments</code><br/>Arguments</td>
-    <td>(Optional) Additional arguments to be passed onto the docker client</td>
+    <td>(Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value 'buildandPush' for the command parameter, then the arguments property will be ignored.</td>
   </tr>
 </table>
 

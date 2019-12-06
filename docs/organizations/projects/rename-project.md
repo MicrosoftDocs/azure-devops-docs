@@ -12,7 +12,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 10/15/2019
+ms.date: 11/20/2019
 ---
 
 # Rename a project in Azure DevOps
@@ -238,3 +238,4 @@ The reporting and SharePoint server administrator can manually run these jobs to
      ```
 
 ::: moniker-end
+

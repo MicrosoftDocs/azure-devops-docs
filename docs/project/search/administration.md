@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/14/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -96,7 +96,7 @@ Non-administrative users can also request the extension is added.
 ### Installation
 
 Code Search is an opt-in feature, and can be installed later from the Local Gallery. 
-Go to **Local Gallery** (```https://{server}:8080/tfs/_gallery```) as an administrator.
+Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator.
 Non-administrative users can also request the extension be added to TFS or Azure DevOps Server. 
 
 For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 
@@ -164,9 +164,9 @@ as part of the configuration:
 * [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
 * [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/) (see [Java installation notes](#java-notes))
-* [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
+* [Markdowndeep](https://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
-* [ANTLR](http://www.antlr.org/) language recognition parser
+* [ANTLR](https://www.antlr.org/) language recognition parser
 
 **NOTES**:
  
@@ -190,7 +190,7 @@ Internet connectivity is required to download.
 If the target server doesn't have Internet connectivity, you must download 
 and install a JRE manually before attempting to install Search.
 
-> Versions of Search prior to Azure DevOps Server used the [Oracle Server Java Runtime Environment](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
+> Versions of Search prior to Azure DevOps Server used the [Oracle Server Java Runtime Environment](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
 > In Azure DevOps Server, the default JRE is [Azul Zulu OpenJDK](https://www.azul.com/products/zulu-community/).
 
 During installation, the wizard sets the **JAVA\_HOME** environment variable 
@@ -212,8 +212,8 @@ by Search, and it is not recognized by the configuration wizard, you
 must set the value of the **JAVA\_HOME** variable to that version as described in
 the JRE installation guide and then rerun the configuration wizard.
 
-* [Zulu OpenJDK installation guide](http://docs.azul.com/zulu/zuludocs/index.htm)
-* [Oracle JRE troubleshooting guide](http://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
+* [Zulu OpenJDK installation guide](https://docs.azul.com/zulu/zuludocs/index.htm)
+* [Oracle JRE troubleshooting guide](https://docs.oracle.com/javase/7/docs/webnotes/tsg/) 
 
 If you can't install the version of Java required by Search due to other dependencies, you can:
 
@@ -256,7 +256,7 @@ Consider the following points when configuring Search:
 
 * If you don't set the checkbox to install the Code Search extension for all your project collections when 
   configuring Search, your project collection administrator can install it from the Local Gallery. Ensure you
-  navigate to the Local Gallery (`http://{Server}:8080/tfs/_gallery`) from your Azure DevOps Server or TFS portal page. 
+  navigate to the Local Gallery (`http://{Server}/_gallery`) from your Azure DevOps Server or TFS portal page. 
 
 * The search index folder should be on a separate fast hard drive, backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
