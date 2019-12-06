@@ -1799,12 +1799,12 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout: none` step, no repositories are synced or checked out.
 - If there is a single `checkout: self` step, the current repository is checked out.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
-- If there are multiple `checkout` steps, each repository is checked out in its own folder, unless a different `path` is specified in the `checkout` step.
+- If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
 
 Repositories can be specified in a [repository resource](#repository-resource), or inline. 
 
 - You must use a repository resource if your repository type requires a service connection or other extended resources field.
-- You may use a repository resource if desired, for example if you have one defined already for templates in a different repository.
+- You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 - You may use inline syntax if your repository type doesn't require a service connection.
 
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
@@ -1850,7 +1850,7 @@ If the current repository is named `CurrentRepo`, the `script` command will prod
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax can only be used for Azure Repos Git repositories in the same organization.
+> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for Azure Repos Git repositories in the same organization.
 
 ```yaml
 steps:
@@ -1893,7 +1893,7 @@ steps:
 
 ::: moniker range="> azure-devops-2019"
 
-In this example, 3 repositories are checked out: `self`, a GitHub repository named `tools` declared in repository resources, and an Azure Repos Git repository named `resources` declared inline with the `checkout` step.
+In the following example, three repositories are checked out: a GitHub repository named `tools` declared in repository resources, an Azure Repos Git repository named `resources` declared inline with the `checkout` step, and `self`.
 
 ```yaml
 resources:
