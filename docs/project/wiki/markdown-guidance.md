@@ -513,7 +513,7 @@ For example:
 
 ### Anchor links
 
-Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions:
+Within Markdown files, anchor IDs are assigned to all headings when rendered as HTML. The ID is the heading text, with the spaces replaced by dashes (-) and all lower case. In general, the following conventions apply:
 
 - Punctuation marks and leading white spaces within a file name are ignored
 - Upper case letters are  converted to lower
