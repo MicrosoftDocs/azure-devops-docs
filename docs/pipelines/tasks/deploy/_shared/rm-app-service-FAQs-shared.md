@@ -6,10 +6,6 @@ ms.topic: include
 
 This task requires an [Azure Resource Manager service connection](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops).
 
-> [!NOTE]
->
-> Publish profile based authentication is also supported for deployments to app service.
-
 ### How should I configure Web Job Deployment with [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview)?
 
 When deploying to an App Service with Application Insights configured and you have enabled “Remove additional files at destination”, then you also need to enable “Exclude files from the App_Data folder” in order to keep the app insights extension in a safe state. This is required because App Insights continuous web job gets installed into the App_Data folder.
