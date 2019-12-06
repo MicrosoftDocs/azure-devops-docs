@@ -20,17 +20,17 @@ monikerRange: '>= tfs-2013'
 
 With an organization, you gain access to the platform in which you can do the following:
 
-* Collaborate with others to develop applications by using our cloud service.
-* Plan and track your work as well as code defects and issues.
-* Set up continuous integration and deployment.
-* Integrate with other services by using service hooks.
+* Collaborate with others to develop applications by using our cloud service
+* Plan and track your work as well as code defects and issues
+* Set up continuous integration and deployment
+* Integrate with other services by using service hooks
 * Obtain additional features and extensions.
 
 ## Create your organization
 
 Before you get started, read [Plan your organizational structure in Azure DevOps](../../user-guide/plan-your-azure-devops-org-structure.md). Then, you can [create your organization](create-organization.md) and invite others so they can access your organization.
 
-Choose Git or Team Foundation Server as your version control,
+Choose Git or Team Foundation version control (TFVC) as your version control,
 so that Azure DevOps can create your project for code and other assets,
 like builds, tests, and work items. If you're starting with Visual Studio
 as your development environment, you can create your organization when you
@@ -58,6 +58,7 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
+<a id="add-users">
 
 ## Add users and assign access
 
@@ -79,8 +80,9 @@ For details, see the following articles:
 - [Add users to your organization or project](add-organization-users.md)
 - [Add members to teams or projects](add-team-members.md) 
 
+<a id="access-azure-ad">
 
-## Access with Azure AD
+## Add users through Azure Active Directory
 
 You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
 
@@ -93,14 +95,11 @@ The process of adding users to projects when managing them through Azure AD is a
 3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
 4. [Perform bulk assignments of access levels to added users](add-organization-users.md). 
 
-Other related articles include: 
-- [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md) 
-- [Change your Azure AD instance](change-organization-location.md)
-- [Restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-
-### Implementation notes
+You can also add users through the steps outlined in the previous section, [Add users and assign access](#add-users).
 
 Using Azure AD, you can add all organizational members view access to all projects by adding them to the Project Collection Valid Users, or as contributors to all projects by adding them to a custom contributor group you create at the organization level. Or, you can segment access by adding select Azure AD groups to Contributors groups in select projects. 
+
+## Add users implementation notes
 
 Note the following implementation notes:
 
@@ -115,6 +114,70 @@ of services included with your organization,
 [set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md).
 You can then pay for more users with Basic access,
 buy more services, and purchase extensions for your organization.
+
+## Additional administrative tasks
+
+
+<table valign="top">
+<tbody valign="top">
+<tr>
+<td width="33%"> 
+<h4>Manage access</h4>
+<ul>
+<li><a href="add-external-user.md">Add external users</a></li>
+<li><a href="/visualstudio/subscriptions/vs-alternate-identity?toc=%2Fazure%2Fdevops%2Forganizations%2Ftoc.json&bc=%2Fazure%2Fdevops%2Forganizations%2Fbreadcrumb%2Ftoc.json" >Link work accounts to Visual Studio subscriptions</a></li>
+<li><a href="delete-organization-users.md">Remove users</a></li>
+<li><a href="change-application-access-policies.md">Change app access policies</a></li>
+<li><a href="use-personal-access-tokens-to-authenticate.md">Authenticate with personal access tokens</a></li>
+<li><a href="admin-revoke-user-pats.md">Revoke user PATs</a> 
+</ul>
+<h4>Manage Azure AD access</h4>
+<ul>
+<li><a href="add-external-user.md">Remove Azure DevOps users</a></li>
+<li><a href="disconnect-organization-from-azure-ad.md" >Disconnect from Azure AD</a></li>
+<li><a href="change-azure-ad-connection.md">Change your Azure AD tenant connection</a></li>
+<li><a href="azure-ad-tenant-policy-restrict-org-creation.md">Restrict organization creation with tenant policy</a></li>
+</ul>
+<h4>Manage group-based licensing</h4>
+<ul>
+<li><a href="assign-access-levels-and-extensions-by-group-membership.md">Add a group rule to assign access levels and extensions</a></li>
+<li><a href="remove-direct-assignments.md" >Remove direct assignments</a></li>
+</ul>
+</td>
+<td width="33%"> 
+<h4>Organization settings</h4>
+<ul>
+<li><a href="change-organization-ownership.md" >Change organization Owner</a></li>
+<li><a href="rename-organization.md">Rename organization</a></li>
+<li><a href="delete-your-organization.md">Delete an organization</a></li>
+<li><a href="organize-queries.md">Add a query folder</a></li>
+<li><a href="recover-your-organization.md">Recover a deleted organization</a></li>
+<li><a href="change-organization-location.md">Change location (region)</a></li>
+<li><a href="add-privacy-policy-url.md">Add privacy policy URL</a> 
+<li><a href="change-time-zone.md">Change time zone</a></li>
+</ul>
+<h4>Manage extensions</h4>
+<ul>
+<li><a href="../../marketplace/install-extension.md" >Install extensions</a></li>
+<li><a href="../../marketplace/approve-extensions.md">Approve requests for extensions</a></li>
+<li><a href="../../marketplace/uninstall-disable-extensions.md">Uninstall or disable extensions</a></li>
+</td>
+<td width="33%"> 
+<h4>Manage permissions</h4>
+<ul>
+<li><a href="../security/set-project-collection-level-permissions.md" >Add project or organization-level administrators </a></li>
+<li><a href="../settings/add-team-administrator.md">Add a team admin</a></li>
+<li><a href="../security/change-individual-permissions.md">Change individual permissions</a></li>
+<li><a href="../security/restrict-access.md">Grant or restrict permissions</a></li>
+<li><a href="../projects/resources-granted-to-project-members.md">Resources granted to project members</a></li>
+<li><a href="../settings/add-team-administrator.md">Add a team admin</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## Related articles
 
