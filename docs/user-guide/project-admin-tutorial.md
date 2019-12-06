@@ -228,7 +228,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ::: moniker range="azure-devops"  
 
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
@@ -237,7 +237,7 @@ All organizations can add up to five users with Basic access and unlimited users
 
 - [Manage projects](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [TFS administration](/azure/devops/server/index)
 

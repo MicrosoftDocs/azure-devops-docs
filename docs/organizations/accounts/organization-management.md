@@ -152,7 +152,6 @@ buy more services, and purchase extensions for your organization.
 <li><a href="change-organization-ownership.md" >Change organization Owner</a></li>
 <li><a href="rename-organization.md">Rename organization</a></li>
 <li><a href="delete-your-organization.md">Delete an organization</a></li>
-<li><a href="organize-queries.md">Add a query folder</a></li>
 <li><a href="recover-your-organization.md">Recover a deleted organization</a></li>
 <li><a href="change-organization-location.md">Change location (region)</a></li>
 <li><a href="add-privacy-policy-url.md">Add privacy policy URL</a> 
