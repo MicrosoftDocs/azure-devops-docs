@@ -103,7 +103,7 @@ Using Azure AD, you can add all organizational members view access to all projec
 
 ## Add users implementation notes
 
-Note the following implementation notes:
+The following notes address details specific to adding users at different levels&mdash;such as to a team, project, or organization.
 
 - All users that are added at the organization or collection level can be assigned to work items of all projects.  
 - All users that are added at the project level can be assigned to work items of the specific projects.  
