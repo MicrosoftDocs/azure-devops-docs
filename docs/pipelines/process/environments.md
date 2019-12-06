@@ -44,6 +44,9 @@ While environment at its core is a grouping of resources, the resources themselv
 > [!TIP]
 > It is possible to create an empty environment and reference the same from deployment jobs to record the deployment history against the environment.
 
+> [!NOTE]
+> You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
+
 <a name="target-from-deployment-job"></a>
 ## Targeting an environment from a deployment job
 
