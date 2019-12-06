@@ -19,6 +19,6 @@ This may be because there is insufficient capacity on your App Service Plan. To 
 
 ### 5xx Error Codes
 
-If you are seeing a 5xx error, then please [check the status of your Azure service](https://status.azure.com/status)
+If you are seeing a 5xx error, then [check the status of your Azure service](https://status.azure.com/status)
 
 
