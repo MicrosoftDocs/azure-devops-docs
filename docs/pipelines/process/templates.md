@@ -15,13 +15,13 @@ monikerRange: '>= azure-devops-2019'
 
 # Templates
 
-Templates let you define reusable logic, variables, and parameters. Templates functions in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
+Templates let you define reusable content, logic, and parameters. Templates functions in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you can use a template to define allowed parameter data types. By setting the data type for parameters, you can configure what is allowed in a YAML. 
 
 ## Parameters
 
-You can pass parameters to templates. The `parameters` section defines what parameters are available in the template. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. The `parameters` section defines what parameters are available. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the pipeline.
 
 To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
@@ -74,7 +74,7 @@ extends:
 
 ## Extending from a template
 
-You can use templates to pass in parameters and define how they can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the template `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the Pipeline build fails. 
+You can use templates to define how parameters can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
 
 ```yaml
 # File: start.yml
