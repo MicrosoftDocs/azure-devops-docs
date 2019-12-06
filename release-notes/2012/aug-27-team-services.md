@@ -38,7 +38,7 @@ We updated the build VM image on our hosted build service, adding some new compo
 
 ## Basic auth support
 
-A couple of weeks ago we [announced](https://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](http://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
+A couple of weeks ago we [announced](https://blogs.msdn.com/b/bharry/archive/2012/08/13/announcing-git-integration-with-tfs.aspx) support for bridging between local Git repositories and TFS servers. At the time I explained it didn’t work for Team Foundation Service but support would be coming soon. It’s here now! It’s worth noting that, in the short term Git-tf has been available, this rose to the [2nd top voted suggestion](https://gittf.codeplex.com/workitem/3). This makes it so that both of the top two suggestions have now been addressed.
 
 Part of today’s rollout is support for basic authentication which enables two important new scenarios:
 

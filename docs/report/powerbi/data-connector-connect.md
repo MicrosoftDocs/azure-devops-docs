@@ -11,12 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 11/26/2019
 ---
 
 # Connect to Analytics with Power BI Data Connector
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
 
@@ -58,9 +60,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	> [!div class="mx-imgBorder"] 
 	> ![Power BI desktop splash screen, Get data button](_img/data-connector/get-data-splash-screen.png)
 	
-	Or, you can find a similar button in the ribbon in the **Home** section. 
-	
-	![Power BI desktop ribbon, Get data button](_img/data-connector/get-data-azure-devops.png)  
+	Or, you can find a similar button in the ribbon in the **Home** section.
 
 2. Choose (1) **Online Services**, (2) **Azure DevOps (Beta)**, and then **Connect**.  
 
@@ -79,7 +79,7 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 
 4. **Sign in to the service**. Upon first-time access, you're required to sign in and have your credentials authenticated. Power BI Desktop saves your credentials so you will only have to do this once.
 
-	Choose between these two authentication options: 
+Choose between the following authentication options: 
    - Select *Organizational account* if your organization is using Azure Active Directory to manage users.  
    - Select *Personal Access Token* if you want to use a personal access token.
    - Select *Basic* if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.

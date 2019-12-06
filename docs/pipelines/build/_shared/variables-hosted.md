@@ -124,7 +124,7 @@ Note: This directory is not guaranteed to be writable by pipeline tasks (eg. whe
 <td>
 
 
-The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent\_work\1\a</code>
+The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
 A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
 <br><br>
@@ -144,7 +144,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.BuildNumber</td>
-<td>The name of the completed build. You can specify <a href="/azure/devops/pipelines/process/run-number" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
+<td>The name of the completed build, also known as the run number. You can specify <a href="/azure/devops/pipelines/process/run-number" data-raw-source="[what is included](../run-number.md)">what is included</a> in this value.<br><br>
 A typical use of this variable is to make it part of the label format, which you specify on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository tab](../repos/index.md)">repository tab</a>.
 <br><br>
 
@@ -235,7 +235,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -347,7 +347,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -382,7 +382,7 @@ Note: This variable is available in TFS 2015.4.
 <td>
 
 
-The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent\_work\1\a</code>
+The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: <code>c:\agent_work\1\a</code>
 <br><br>
 A typical way to use this folder is to publish your build artifacts with the <a href="/azure/devops/pipelines/tasks/utility/copy-files" data-raw-source="[Copy files](../../tasks/utility/copy-files.md)">Copy files</a> and <a href="/azure/devops/pipelines/tasks/utility/publish-build-artifacts" data-raw-source="[Publish build artifacts](../../tasks/utility/publish-build-artifacts.md)">Publish build artifacts</a> tasks.
 <br><br>
@@ -405,7 +405,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control.
-<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline.md#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
+<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>
@@ -518,6 +518,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
+<td>System.CollectionUri</td>
+<td>A string Team Foundation Server collection URI.</td>
+</tr>
+
+
+<tr>
 <td>System.DefaultWorkingDirectory</td>
 <td>
 
@@ -621,7 +627,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
+<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

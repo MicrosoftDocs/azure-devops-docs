@@ -1,5 +1,5 @@
 ﻿---
-title: Start using Azure Boards, sign up and invite teammates
+title: Start using Azure Boards
 titleSuffix: Azure Boards
 description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
 ms.custom: boards-get-started

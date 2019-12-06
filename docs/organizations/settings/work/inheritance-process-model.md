@@ -1,5 +1,5 @@
 ﻿---
-title: About process customization and inherited processes 
+title: Process customization and inherited processes
 titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
 ms-custom: inherited-process

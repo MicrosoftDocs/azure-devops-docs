@@ -41,10 +41,9 @@ Permissions are set at the collection, project, and object level as described in
 
 1. Choose **Project Settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Permissions](_img/view-permissions/open-security-project-level-vert-new.png) 
+	![Open Project settings > Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png) 
 
-1. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
+2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Find a user or group name](_img/view-permissions/search-user-name-s154.png) 

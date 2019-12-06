@@ -12,6 +12,6 @@ ms.topic: include
 
 ::: moniker range="< azure-devops"  
 
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. For more information, see [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. For more information, see [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
 
 ::: moniker-end  	

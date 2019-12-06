@@ -37,6 +37,8 @@
     #platform: # Optional
     #configuration: # Optional
     #publishRunAttachments: true # Optional
+    #failOnMinTestsNotRun: false # Optional
+    #minimumExpectedTests: '1' # Optional
     #diagnosticsEnabled: false # Optional
     #collectDumpOn: 'onAbortOnly' # Optional. Options: onAbortOnly, always, never
     #rerunFailedTests: False # Optional

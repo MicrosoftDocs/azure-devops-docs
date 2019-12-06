@@ -193,7 +193,7 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
+The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
 like [Git blobs](previous-apis/git/blobs.md).
 
 Now you should be able to look around the specific

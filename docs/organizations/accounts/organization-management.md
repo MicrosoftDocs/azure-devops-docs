@@ -1,5 +1,5 @@
----
-title: About creating and managing organization - Azure DevOps
+﻿---
+title: About creating and managing organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.

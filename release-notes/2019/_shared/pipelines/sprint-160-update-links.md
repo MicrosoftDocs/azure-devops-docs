@@ -11,6 +11,7 @@ ms.topic: include
 - [Simplified resource authorization in YAML pipelines](#simplified-resource-authorization-in-yaml-pipelines)
 - [Improve pipeline security by restricting the scope of access tokens](#improve-pipeline-security-by-restricting-the-scope-of-access-tokens)
 - [Evaluate artifact check](#evaluate-artifact-check)
+- [Markdown support in automated test error messages](#markdown-support-in-automated-test-error-messages)
 - [Diagnosing cron schedules in YAML](#diagnosing-cron-schedules-in-yaml)
 - [Updates to the ARM template deployment task](#updates-to-the-arm-template-deployment-task)
 - [Project level security for service connections](#project-level-security-for-service-connections)

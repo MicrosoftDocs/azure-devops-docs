@@ -11,7 +11,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 11/15/2019
+ms.date: 12/04/2019
 ---
 
 
@@ -851,6 +851,61 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../..
 
 -->
 
+<a id="mapping" /> 
+
+::: moniker range=">= tfs-2018" 
+
+## Programmatic mapping of access levels
+
+::: moniker-end
+
+
+::: moniker range="azure-devops"
+
+You can manage access levels programmatically using the [`az devops user add` (Azure DevOps Services only)](../accounts/add-organization-users.md) or the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|-----------|
+| Stakeholder | stakeholder | none | 
+| Basic              | express  | none | 
+| Basic + Test Plans | advanced | none | 
+| Visual Studio subscriber | none | eligible | 
+| Visual Studio Enterprise | none | enterprise | 
+
+
+ > [!NOTE]   
+ > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019" 
+
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic              | express  | none | 
+| Basic + Test Plans | advanced | none | 
+| Visual Studio subscriber | none | eligible | 
+| Visual Studio Enterprise | none | enterprise | 
+
+::: moniker-end
+
+::: moniker range="tfs-2018" 
+
+You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
+
+| Access level (user interface)| AccountLicenseType | msdnLicenseType| 
+| --------------------------|-----------------------------|
+| Stakeholder | stakeholder | none | 
+| Basic       | express  | none | 
+| Advanced | advanced | none | 
+| MSDN Platforms | none | platforms | 
+| VS Enterprise | none | enterprise | 
+
+::: moniker-end
+
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -860,7 +915,7 @@ If a user belongs to a group that has **Basic** access and another group that ha
 
 ## Service account access
 
-Azure DevOps Server [service accounts](/tfs/tfs-server/admin/service-accounts-dependencies-tfs) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
+Azure DevOps Server [service accounts](/tfs/tfs-server/admin/service-accounts-dependencies) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
 
 Service accounts don't require a CAL or other purchase.  
 

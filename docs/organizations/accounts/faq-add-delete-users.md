@@ -1,5 +1,5 @@
----
-title: Troubleshoot adding, removing users in an organization
+﻿---
+title: Troubleshoot adding/removing users in organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization Owner, manage Visual Studio subscriptions, and more.

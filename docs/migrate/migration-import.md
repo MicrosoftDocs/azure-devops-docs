@@ -1,5 +1,5 @@
----
-title: Migration import from Azure DevOps Server to Azure DevOps Services 
+﻿---
+title: Migrate from Azure DevOps Server to Azure DevOps
 titleSuffix: Azure DevOps
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
@@ -490,7 +490,7 @@ You only need to add an exception for the analytics IPs in your target import re
 |    Service                                     |    IP                                                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
 |    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
-|    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9                                                      |
+|    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9, 52.149.108.23                                       |
 |    Analytics service - Australia East          | 20.40.179.159                                                                     |
 |    Analytics service - Brazil South            | 20.40.113.248                                                                     |
 |    Analytics service - India South             | 40.81.73.58                                                                       |
@@ -549,7 +549,7 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#SSMSProcedure) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#SSMSProcedure) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the Import Specification File to Target the VM
 The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
