@@ -23,7 +23,7 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout: none` step, no repositories are synced or checked out.
 - If there is a single `checkout: self` step, the current repository is checked out.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
-- If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
+- If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
 ## Specify multiple repositories
 
@@ -85,6 +85,9 @@ steps:
 - checkout: github://Org/PublicGitHubRepo
 - checkout: bitbucket://Org/PublicBitbucketRepo
 ```
+
+> [!NOTE]
+> In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
 
 ## Checking out a specific ref
 
