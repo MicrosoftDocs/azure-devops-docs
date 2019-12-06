@@ -255,8 +255,8 @@ jobs:
   dependsOn: string | [ string ]
   condition: string
   strategy:
-    parallel: # parallel strategy; see parallel schema
-    matrix: # matrix strategy; see parallel schema
+    parallel: # parallel strategy; see the parallel schema later in this article
+    matrix: # matrix strategy; see the matrix schema later in this article
     maxParallel: number # maximum number of matrix jobs to run simultaneously
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   pool: pool # see pool schema
@@ -878,11 +878,11 @@ steps:
 
 A resource is any external service that is consumed as part of your pipeline. An example of a resource is another CI/CD pipeline that produces:
 
-- Artifacts like Azure pipelines or Jenkins.
+- Artifacts like Azure Pipelines or Jenkins.
 - Code repositories like GitHub, Azure Repos, or Git.
-- Container-image registries like ACR or Docker hub.
+- Container-image registries like Azure Container Registry or Docker hub.
 
-Resources in YAML represent sources of types pipelines, repositories and containers.
+Resources in YAML represent sources of pipelines, containers, repositories, and types.
 
 ### General schema
 
@@ -894,8 +894,9 @@ resources:
 ```
 
 ### Pipeline resource
-If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipeline` resource. 
-And you can also enable pipeline completion triggers.
+
+If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by defining a `pipeline` resource. 
+You can also enable pipeline completion triggers.
 
 # [Schema](#tab/schema)
 
@@ -910,7 +911,7 @@ resources:
     trigger:     # optional; Triggers are not enabled by default.
       branches:  
         include: [string] # branches to consider the trigger events, optional; defaults to all branches.
-        exclude: [string] # branches to discard the trigger events, optional; defaults to none. 
+        exclude: [string] # branches to discard the trigger events, optional; defaults to none.
 ```
 # [Example](#tab/example)
 
@@ -939,10 +940,11 @@ resources:
 ---
 
 >[!IMPORTANT]
->When you define the resource trigger, if the `pipeline` resource is from the same repo as the current pipeline, we will follow the same branch and commit on which the event is raised. However, if the `pipeline` resource is from a different repo, the current pipeline is triggered on the master branch.
+>When you define the resource trigger, if the `pipeline` resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised. However, if the `pipeline` resource is from a different repo, the current pipeline is triggered on the master branch.
 
-#### `pipeline` resource meta-data as pre-defined variables.
-In each run, the meta-data for `pipeline` resource is available to all the jobs as pre-defined variables.
+#### The `pipeline` resource metadata as predefined variables
+
+In each run, the metadata for a `pipeline` resource is available to all of the jobs as predefined variables.
 
 ```yaml
 resources.pipeline.<Alias>.projectName 
@@ -959,18 +961,14 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from pipeline resource using `download` task. See the [download](yaml-schema.md#download) keyword.
+Your pipeline can consume artifacts from a pipeline resource by using a `download` task. See the [download](yaml-schema.md#download) keyword for more.
 
 
 ### Container resource
 
-[Container jobs](process/container-phases.md) let you isolate your tools and
-dependencies inside a container. The agent will launch an instance of your
-specified container, then run steps inside it. The `container` resource lets
-you specify your container images.
+[Container jobs](process/container-phases.md) let you isolate your tools and dependencies inside a container. The agent launches an instance of your specified container then runs steps inside it. The `container` resource lets you specify your container images.
 
-[Service containers](process/service-containers.md) run alongside a job to
-provide various dependencies such as databases.
+[Service containers](process/service-containers.md) run alongside a job to provide various dependencies such as databases.
 
 # [Schema](#tab/schema)
 
@@ -1010,8 +1008,7 @@ resources:
 ### Repository resource
 
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
-let the system know about that repository. The `repository` resource lets you
-specify an external repository.
+let the system know about that repository. The `repository` resource lets you specify an external repository.
 
 # [Schema](#tab/schema)
 
@@ -1019,7 +1016,7 @@ specify an external repository.
 resources:
   repositories:
   - repository: string  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: enum  # see below
+    type: enum  # see the following "Type" section
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use, defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for non-Azure Repos types)
@@ -1039,36 +1036,26 @@ resources:
 
 #### Type
 
-Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
-repository in the same project. For example, `otherRepo`. To refer to a repo in
-another project within the same organization, prefix the name with that project's name.
-For example, `OtherProject/otherRepo`.
+Pipelines support two types of repositories, `git` and `github`. `git` refers to Azure Repos Git repos. If you choose `git` as your type, `name` refers to another repository in the same project. An example is `otherRepo`. To refer to a repo in another project within the same organization, prefix the name with that project's name. An example is `OtherProject/otherRepo`.
 
-If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. Also,
-GitHub repos require a [service connection](library/service-endpoints.md)
-for authorization.
+If you choose `github` as your type, `name` is the full name of the GitHub repo and includes the user or organization. An example is `Microsoft/vscode`. Also, GitHub repos require a [service connection](library/service-endpoints.md) for authorization.
 
 ## Triggers
 
 * [Push trigger](#push-trigger)
-* [PR trigger](#pr-trigger)
+* [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
 
 > [!NOTE]
-> Trigger blocks cannot contain variables or template expressions.
+> Trigger blocks can't contain variables or template expressions.
 
 ### Push trigger
 
-A trigger specifies what branches will cause a continuous integration build to
-run. If left unspecified, pushes to every branch will trigger a build.
-Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers)
-and how to specify them.
-Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
+A push trigger specifies what branches cause a continuous integration build to run. If no push trigger is specified, pushes to every branch trigger a build. Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers) and how to specify them. Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 #### [Schema](#tab/schema/)
-There are three distinct options for `trigger`: a list of branches to include, a way to disable CI triggering, and the full syntax for ultimate control.
+
+There are three distinct options for `trigger`: a list of branches to include, a way to disable continuous-integration triggering, and the full syntax for ultimate control.
 
 List syntax:
 
@@ -1118,9 +1105,10 @@ trigger:
 ::: moniker-end
 
 >[!IMPORTANT]
->When you specify a `trigger`, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+>When you specify a `trigger`, only branches that are explicitly configured to be included trigger a pipeline. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but don't specify any inclusions, nothing will trigger.
 
 #### [Example](#tab/example/)
+
 List syntax:
 
 ```yaml
@@ -1153,22 +1141,20 @@ trigger:
 * * *
 ### PR trigger
 
-A pull request trigger specifies what branches will cause a pull request build to
-run. If left unspecified, pull requests to every branch will trigger a build.
-Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pr-triggers)
+A pull request trigger specifies what branches will cause a pull request build to run. If no pull request trigger is specified, pull requests to every branch will trigger a build. Learn more about [pull request triggers](build/triggers.md?tabs=yaml#pr-triggers)
 and how to specify them.
 
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+> YAML PR triggers are supported only in GitHub and Bitbucket Cloud. If you use Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) to trigger your build pipeline for validation.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!IMPORTANT]
-> YAML PR triggers are only supported in GitHub. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+> YAML PR triggers are supported only in GitHub. If you use Azure Repos Git, you can configure a [branch policy for build validation](../repos/git/branch-policies.md#build-validation) to trigger your build pipeline for validation.
 
 ::: moniker-end
 
@@ -1182,7 +1168,7 @@ List syntax:
 pr: [ string ] # list of branch names
 ```
 
-Disable syntax:
+Disablement syntax:
 
 ```yaml
 pr: none # will disable PR builds entirely; will not disable CI triggers
@@ -1202,7 +1188,7 @@ pr:
 ```
 
 >[!IMPORTANT]
->When you specify a `pr` trigger, only branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+>When you specify a `pr` trigger, only branches that are explicitly configured to be included will trigger a pipeline. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but don't specify any inclusions, nothing will trigger.
 
 # [Example](#tab/example)
 
@@ -1214,7 +1200,7 @@ pr:
 - develop
 ```
 
-Disable syntax:
+Disablement syntax:
 
 ```yaml
 pr: none # will disable PR builds (but not CI builds)
@@ -1240,17 +1226,13 @@ pr:
 
 ::: moniker range="<= azure-devops-2019"
 
-YAML scheduled triggers are not available in this version of Azure DevOps Server or TFS. 
-You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+YAML scheduled triggers are not available in this version of Azure DevOps Server or Visual Studio Team Foundation Server. You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-A scheduled trigger specifies a schedule on which branches will be built. 
-If left unspecified, no scheduled builds will occur.
-Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers)
-and how to specify them.
+A scheduled trigger specifies a schedule on which branches are built. If no scheduled trigger is specified, no scheduled builds occur. Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers) and how to specify them.
 
 
 
@@ -1267,7 +1249,7 @@ schedules:
 ```
 
 >[!IMPORTANT]
->When you specify a scheduled trigger, only branches that are explicitly configured to be included are scheduled for a build. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, no branches will be built.
+>When you specify a scheduled trigger, only branches that are explicitly configured to be included are scheduled for a build. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but don't specify any inclusions, no branches will be built.
 
 # [Example](#tab/example)
 
@@ -1289,9 +1271,11 @@ schedules:
   always: true
 ```
 
-In this example, two schedules are defined. The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+In this example, two schedules are defined.
 
-The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last run. It runs the pipeline for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+
+The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches, regardless of whether the code has changed since the last run.
 
 ---
 
@@ -1299,8 +1283,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 ## Pool
 
-`pool` specifies which [pool](agents/pools-queues.md) to use for a job of the
-pipeline. It also holds information about the job's strategy for running.
+The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline. It also holds information about the job's strategy for running.
 
 # [Schema](#tab/schema)
 
@@ -1309,7 +1292,7 @@ Full syntax:
 ```yaml
 pool:
   name: string  # name of the pool to run this job in
-  demands: string | [ string ]  ## see below
+  demands: string | [ string ]  ## see the following "Demands" section
   vmImage: string # name of the vm image you want to use, only valid in the Microsoft-hosted pool
 ```
 
@@ -1534,8 +1517,8 @@ steps:
 - pwsh: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see below
-  ignoreLASTEXITCODE: boolean  # see below
+  errorActionPreference: enum  # see the "Error action preference" section later in this article
+  ignoreLASTEXITCODE: boolean  # see the "Ignore last exit code" section later in this article
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
   condition: string
@@ -1575,8 +1558,8 @@ steps:
 - powershell: string  # contents of the script to run
   displayName: string  # friendly name displayed in the UI
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
-  errorActionPreference: enum  # see below
-  ignoreLASTEXITCODE: boolean  # see below
+  errorActionPreference: enum  # see the "Error action preference" section later in this article
+  ignoreLASTEXITCODE: boolean  # see the "Ignore last exit code" section later in this article
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   workingDirectory: string  # initial working directory for the step
   condition: string
@@ -1605,6 +1588,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and
 [timeouts](process/phases.md?tabs=yaml#timeouts).
 
 ### Error action preference
+
 Unless specified, the task defaults the error action preference to `stop`. The
 line `$ErrorActionPreference = 'stop'` is prepended to the top of your script.
 
