@@ -27,7 +27,7 @@ The following combinations of `checkout` steps are supported.
 
 ## Specify multiple repositories
 
-Repositories can be specified in a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
 - [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
 - [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
@@ -77,7 +77,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> Private GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for public GitHub and Bitbucket Cloud repositories.
+> Private GitHub and Bitbucket Cloud repositories require a service connection and must be declared as a repository resource.
 
 ```yaml
 steps:
