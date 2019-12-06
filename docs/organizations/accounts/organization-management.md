@@ -1,4 +1,4 @@
-﻿---
+---
 title: About creating and managing organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
@@ -58,13 +58,52 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
+## Access with Azure AD
+
+You can manage your user base with Azure Active Directory (Azure AD). With Azure AD), you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
+
+Azure AD is optional, however, if your enterprise already uses a directory managed by Azure AD, you can [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md). Recommended practice for managing large user bases is to use Azure AD.  
+
+The process of adding users to projects when managing them through Azure AD is as follows: 
+
+1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/) and sign in with your organization account.  
+2. [Add organization users to your Azure AD](add-users-to-azure-ad.md)
+3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
+]
+4. 
+5. 
+6.  (connect-organization-to-azure-ad)
+3. 
+4. 
+5. Add users to
+[use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+
+
+Other related articles include: 
+- [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md) 
+- [Change your Azure AD instance](change-organization-location.md)
+- [Restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+
 ## Add users and assign access
 
-To share work with others,
-[add users and assign access](add-organization-users.md).
-That way, you control each user's access.
-Or [add users to your project](add-team-members.md),
-and let Azure DevOps assign the next available access to them.
+If you don't use Azure AD to manage your user base, then you can add them through the following ways to collaborate on your project. 
+
+- Add users to your organization from the **Organization Settings>Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level. Or, if a user has their **Edit instance-level permission** set to **Allow**. 
+
+	At this level, you specify the access level and the project(s) the user is added to. For details, see [Add users to your organization or project](add-organization-users.md).
+
+- Add users to one or more teams from the **Project>Summary** page or to a specific team from the **Project Settings>Teams>Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. Or, if a user has their **Edit project-level permission** set to **Allow**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Project Overview page, Invite new users dialog box](_img/org-manage/invite-members-dialog.png)
+  
+	Users added to teams which haven't been added to the organization are assigned the best available access level allowed, either Basic or Stakeholder. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the manage users interface. 
+
+For details, see the following articles: 
+
+- [Add users to your organization or project](add-organization-users.md)
+- [Add members to teams or projects](add-team-members.md) 
+
 
 ## Set up billing
 
@@ -74,14 +113,12 @@ of services included with your organization,
 You can then pay for more users with Basic access,
 buy more services, and purchase extensions for your organization.
 
-## Access with Azure AD
 
-Azure DevOps works with Azure Active Directory (Azure AD),
-so that you can control access the same way that you do
-with Microsoft services like Office 365 and Microsoft Azure.
-If your enterprise uses a directory managed by Azure AD,
-your organization can also
-[use your directory to authenticate access](access-with-azure-ad.md).
-Or [change your Azure AD instance](change-organization-location.md),
-if you're already connected to an existing directory.
-You can also [restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+
+## Related articles
+
+- [About access levels](../security/access-levels.md) 
+- [Default permissions and access](../security/permissions-access.md) 
+- [Set permissions at the project- or collection-level](../security/(set-project-collection-level-permissions.md) 
+- [Add a user as a team administrator](../settings/add-team-administrator.md)
+- [Troubleshoot permissions and access with Azure Active Directory](faq-azure-access.md)

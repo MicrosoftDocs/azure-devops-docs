@@ -10,10 +10,12 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 12/06/2019
 monikerRange: 'azure-devops'
 ---
-# Add members to projects
+
+
+# Add members to teams or projects
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 

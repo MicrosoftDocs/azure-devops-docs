@@ -34,6 +34,8 @@
     items:
     - name: Add users to your organization
       href: add-organization-users.md
+    - name: Add members to a team or project
+      href: add-team-members.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage Conditional Access
@@ -53,14 +55,14 @@
       items:
       - name: Connect organization to Azure AD
         href: connect-organization-to-azure-ad.md
+      - name: Manage groups
+        href: manage-azure-active-directory-groups.md
+      - name: Add users to Azure AD
+        href: add-users-to-azure-ad.md
       - name: Change Azure AD connection
         href: change-azure-ad-connection.md
       - name: Disconnect from Azure AD
         href: disconnect-organization-from-azure-ad.md
-      - name: Manage groups
-        href: manage-azure-active-directory-groups-vsts.md
-      - name: Add users to Azure AD
-        href: add-users-to-azure-ad.md
       - name: Delete users connected to Azure AD
         href: delete-users-from-services-aad.md
       - name: Restrict organization creation
