@@ -1014,9 +1014,21 @@ resources:
 
 ### Repository resource
 
+::: moniker range="azure-devops-2019"
+
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
 let the system know about that repository. The `repository` resource lets you
 specify an external repository.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must
+let the system know about that repository. The `repository` resource lets you
+specify an external repository.
+
+::: moniker-end
 
 # [Schema](#tab/schema)
 
