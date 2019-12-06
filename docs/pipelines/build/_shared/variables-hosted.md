@@ -518,6 +518,12 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 </tr>
 
 <tr>
+<td>System.CollectionUri</td>
+<td>A string Team Foundation Server collection URI.</td>
+</tr>
+
+
+<tr>
 <td>System.DefaultWorkingDirectory</td>
 <td>
 
@@ -621,7 +627,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>.
+<td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

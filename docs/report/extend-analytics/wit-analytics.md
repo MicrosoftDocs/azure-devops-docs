@@ -70,13 +70,13 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
 - `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
 - `{OrganizationName}` with your project collection name (default is DefaultCollection) 
 - `{ProjectName}` with the name of the project that you want to query. 
