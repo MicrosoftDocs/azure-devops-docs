@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Checkout multiple repositories in Azure Pipelines
 
-Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. Previously, you had to add these repositories as submodules or as manual scripts to run **git checkout**. Now you can fetch and checkout other repositories in addition to the one you use to store your YAML pipeline. 
+Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. Previously, you had to add these repositories as submodules or as manual scripts to run **git checkout**. Now you can fetch and check out other repositories, in addition to the one you use to store your YAML pipeline. 
 
 For example, if you have a repository called *MyCode* with a YAML pipeline and a second repository called *Tools*, your YAML pipeline will look like this:
 
@@ -23,13 +23,15 @@ steps:
 
 The third step will show two directories, *MyCode* and *Tools* in the sources directory.
 
+Azure Repos Git, GitHub, and Bitbucket Cloud repositories are supported. For more information, see [Multi-repo checkout](/azure/devops/pipelines/repos/multi-repo-checkout#multi-repo-checkout).
+
 ### Use GitHub Actions to trigger a run in Azure Pipelines
 
-We now have GitHub Actions for [Azure Pipelines (azure/pipelines)](https://github.com/Azure/pipelines) which lets you trigger a run in Azure Pipelines as part of your GitHub Actions workflow.
+We now have GitHub Actions for [Azure Pipelines (Azure/pipelines)](https://github.com/Azure/pipelines). You can use Azure/pipelines to trigger a run in Azure Pipelines as part of your GitHub Actions workflow.
 
-[GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-github-actions) makes it easy to build, test, and deploy your code right from GitHub. You can also use it to trigger external CI/CD tools and services. For example, you can use GitHub Actions for continuous integration, and [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/?nav=min) for continuous delivery to leverage features like Approvals, Environments and deep integration with Kubernetes.
+[GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-github-actions) makes it easy to build, test, and deploy your code right from GitHub. You can also use it to trigger external CI/CD tools and services. For example, you can use GitHub Actions for continuous integration, and [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/?nav=min) for continuous delivery to leverage features like Approvals, Environments and deep integration with Kubernetes.
 
-You can use this action to trigger a specific pipeline (YAML or classic release pipeline) in Azure DevOps. GitHub Actions will take the Project URL, pipeline name and a [Personal Access Token (PAT)](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) for your Azure DevOps account as inputs.
+You can use this action to trigger a specific pipeline (YAML or classic release pipeline) in Azure DevOps. GitHub Actions will take the Project URL, pipeline name, and a [Personal Access Token (PAT)](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page) for your Azure DevOps organization as inputs.
 
 You can find starter templates [here](https://github.com/Azure/actions-workflow-samples/tree/master/AzurePipelines).
 
@@ -46,7 +48,7 @@ The VSTest task discovers and runs tests using user inputs (test files, filter c
 
 ### UCS-4 support for Python 2.7 
 
-Python 2.7 is available on most of the hosted build agents. Previously, we were shipping Python 2.7 built with UCS-2 (2-octet universal character set) support. UCS-2 does not represent all Unicode characters this is why we've switched our Python 2.7 implementation to UCS-4 to represent all the characters available in Unicode. We expect this will have no impact to you since most packages are independent of the Unicode support built into Python.
+Python 2.7 is available on most of the hosted build agents. Previously, we were shipping Python 2.7 built with UCS-2 (2-octet universal character set) support. UCS-2 does not represent all Unicode characters. Because of this, we switched our Python 2.7 implementation to UCS-4 to represent all the characters available in Unicode. We expect that this won't affect you because most packages are independent of the Unicode support built into Python.
 
 ### Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams
 
