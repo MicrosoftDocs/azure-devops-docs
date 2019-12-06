@@ -58,7 +58,7 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
-<a id="add-users">
+<a id="add-users" />
 
 ## Add users and assign access
 
@@ -80,7 +80,7 @@ For details, see the following articles:
 - [Add users to your organization or project](add-organization-users.md)
 - [Add members to teams or projects](add-team-members.md) 
 
-<a id="access-azure-ad">
+<a id="access-azure-ad" />
 
 ## Add users through Azure Active Directory
 
@@ -98,6 +98,8 @@ The process of adding users to projects when managing them through Azure AD is a
 You can also add users through the steps outlined in the previous section, [Add users and assign access](#add-users).
 
 Using Azure AD, you can add all organizational members view access to all projects by adding them to the Project Collection Valid Users, or as contributors to all projects by adding them to a custom contributor group you create at the organization level. Or, you can segment access by adding select Azure AD groups to Contributors groups in select projects. 
+
+<a id="add-users-notes" />
 
 ## Add users implementation notes
 

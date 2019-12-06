@@ -1,5 +1,4 @@
-- name: Manage organizations
-- name: About managing organizations
+- name: About managing organizations 
   href: organization-management.md
 - name: Access with Azure AD
   href: access-with-azure-ad.md
