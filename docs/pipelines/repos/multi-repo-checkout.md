@@ -89,6 +89,18 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
 
+## Checkout path
+
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
+
+- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of`s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+
+If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
+
+> [!NOTE]
+> If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
+
 ## Checking out a specific ref
 
 The default branch is checked out unless you designate a specific ref.
@@ -113,14 +125,3 @@ resources:
     ref: features/tools
 ```
 
-## Checkout path
-
-Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
-
-- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
-- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
-
-If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
-
-> [!NOTE]
-> If you are using default paths, adding a second repository `checkout` step changes the default path of the code for the first repository. For example, the code for a repository named `tools` would be checked out to `C:\agent\_work\1\s` when `tools` is the only repository, but if a second repository is added, `tools` would then be checked out to `C:\agent\_work\1\s\tools`. If you have any steps that depend on the source code being in the original location, those steps must be updated.
