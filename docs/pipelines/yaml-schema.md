@@ -1891,6 +1891,32 @@ steps:
   path: PutMyCodeHere
 ```
 
+::: moniker range="> azure-devops-2019"
+
+In this example, 3 repositories are checked out: `self`, a GitHub repository named `tools` declared in repository resources, and an Azure Repos Git repository named `resources` declared inline with the `checkout` step.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubToolsRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubToolsOrg/tools
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: MyGitHubToolsRepo
+- checkout: git://MyResourcesProject/resources
+```
+
+::: moniker-end
+
 ---
 
 ## Task
