@@ -1864,7 +1864,6 @@ The default branch is checked out unless you designate a specific ref using `@<r
 - `checkout: git://MyProject/MyRepo@features/tools` - checks out the `features/tools` branch
 - `checkout: git://MyProject/MyRepo@refs/head/features/tools` - also checks out the `features/tools` branch
 - `checkout: git://MyProject/MyRepo@refs/tags/MyTag` - checks out the commit referenced by `MyTag`.
-- SAD TODO - can you check out a commit ID? According to just before here, to use a commit ID you have to make a tag for it: https://docs.microsoft.com/azure/devops/pipelines/process/templates?view=azure-devops#template-expressions
 
 #### Checkout path
 
