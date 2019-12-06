@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="> azure-devops-2019"
 At the beginning of each non-deployment pipeline job, the agent downloads files from your repository into a local sources directory.
-You can specify only one source repository for your entire pipeline.
+You can specify only one source repository for your pipeline but you can checkout multiple repositories by using multiple [checkout](../yaml-schema.md#checkout) steps.
 Deployment jobs do not automatically download sources.
 ::: moniker-end
 
