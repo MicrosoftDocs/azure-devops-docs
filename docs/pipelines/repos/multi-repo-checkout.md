@@ -32,11 +32,11 @@ Repositories can be specified in a [repository resource](../yaml-schema.md#repos
 - [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
 - [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
 
-You must use a repository resource if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository. You may use inline syntax if your repository type doesn't require a service connection.
-
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
 
 ### Repository declared using a repository resource
+
+You must use a repository resource if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
 In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](../yaml-schema.md#repository-resource).
 
