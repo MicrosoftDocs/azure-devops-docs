@@ -885,7 +885,7 @@ steps:
 ::: moniker-end
 
 ## Resources
-Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.).
+Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub, etc.).
 
 Resources in YAML represent sources of types pipelines, repositories and containers.
 
@@ -1726,7 +1726,7 @@ Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.
 
 ### Automatic download in deployment jobs
 
-All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifiying `download: none`.
+All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifying `download: none`.
 
 # [Example](#tab/example)
 
