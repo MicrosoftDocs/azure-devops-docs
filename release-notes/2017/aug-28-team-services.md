@@ -166,7 +166,7 @@ The email body is consistent with other emails, emphasizing why the email was se
 
 ### Complete Work Items settings
 
-The feature to [complete work items when completing pull requests](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#automatically-complete-work-items-when-completing-pull-requests) now has a new repository setting to control the default behavior. The new setting to **Remember user preferences for completing work items with pull requests** is enabled by default, and will honor the user’s last state when completing future PRs in the repo. If the new setting is disabled, then the **Complete linked work items after merging** option will default to disabled for all PRs in the repository. Users can still choose to transition linked work items when completing PRs, but they will need to opt-in each time.
+The feature to [complete work items when completing pull requests](../2017/jul-14-team-services.md#automatically-complete-work-items-when-completing-pull-requests) now has a new repository setting to control the default behavior. The new setting to **Remember user preferences for completing work items with pull requests** is enabled by default, and will honor the user’s last state when completing future PRs in the repo. If the new setting is disabled, then the **Complete linked work items after merging** option will default to disabled for all PRs in the repository. Users can still choose to transition linked work items when completing PRs, but they will need to opt-in each time.
 
 ### Find lost commits due to a Force Push
 
