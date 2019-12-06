@@ -70,7 +70,6 @@ For the report to generate useful data, you need to have performed the following
 ## Substitution strings
 
 [!INCLUDE [temp](_shared/sample-query-substitutions.md)]
-
 - {iterationSK} - Iteration SK of the iteration path you are interested in.
 - {areaSK} - Area SK of the area path you are interested in.
 
@@ -313,7 +312,7 @@ To create the report, perform the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Requirements tracking eport](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Requirements tracking report](_img/odatapowerbi-storiesoverview.png)
 
 ## One-level roll up for work items
 
