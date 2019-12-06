@@ -269,7 +269,7 @@ The final image will be published to Docker or Azure Container Registry
 1. Push the change to the master branch in your repository. 
 
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. Update your build pipeline with the following

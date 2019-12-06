@@ -26,7 +26,7 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `name`: string. 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `remoteUrl`: string. 
 

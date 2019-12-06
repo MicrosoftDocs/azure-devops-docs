@@ -459,7 +459,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker range="azure-devops-2019"
 
-For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/admin-quick-ref).
 
 
 <table>
@@ -542,7 +542,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 
 ::: moniker range="<= tfs-2018"
 
-For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/admin-quick-ref).
 
 
 <table>
@@ -626,7 +626,7 @@ Members of the [Team Foundation Server Administrators group](/azure/devops/serve
 
 The main task they perform from the web portal is to set access levels for a user or security group. See [Change access levels](../security/change-access-levels.md). 
 
-For additional information, see [Team Foundation Server Administration Documentation](/tfs/index).
+For additional information, see [Team Foundation Server Administration Documentation](/azure/devops/server/server).
 
 ::: moniker-end
 

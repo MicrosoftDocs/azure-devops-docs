@@ -68,8 +68,8 @@ to generate tokens for:
 	*	Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
 
 *	[OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/azure/devops/integrate/api/shared/accounts) 
-and [Profiles](/azure/devops/integrate/api/shared/profiles) 
+to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 

@@ -42,7 +42,7 @@ Choose Azure DevOps Services when you want quick setup, maintenance-free operati
 
 Choose on-premises when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore-tfs)
+[![Install TFS](_img/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore)
  
 <a id="add-code">  </a>
 
@@ -56,7 +56,7 @@ Depending on whether you use Git or TFVC as a repo, you can develop your code in
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](_img/overview/code-git-android-studio-1.png)](/../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/../java/download-intellij-plug-in.md)  
+[![Android Studio](_img/overview/code-git-android-studio-1.png)](../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](../java/download-intellij-plug-in.md)  
 
 <br/>
 <a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="_img/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="_img/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="_img/overview/code-git-xcode.png" alt="Xcode"/></a>  

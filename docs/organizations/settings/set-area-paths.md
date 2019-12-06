@@ -775,7 +775,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 ::: moniker range="azure-devops"
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
@@ -783,7 +783,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
 
 ::: moniker-end
