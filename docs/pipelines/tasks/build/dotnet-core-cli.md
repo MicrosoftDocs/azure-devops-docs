@@ -42,7 +42,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
 <tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
-<tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](http://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
+<tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](https://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
 
 If you choose &#39;Use an environment variable&#39;, you must select an environment variable and ensure it contains the version number you want to use.
 
@@ -79,9 +79,9 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>nugetConfigPath</code><br/>Path to NuGet.config</td><td>The NuGet.config in your repository that specifies the feeds from which to restore packages.</td></tr>
 <tr><td><code>externalEndpoints</code><br/>Credentials for feeds outside this organization/collection</td><td>Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically<br/>Argument aliases: <code>externalFeedCredentials</code></td></tr>
 <tr><td><code>versionEnvVar</code><br/>Environment variable</td><td>Enter the variable name without $, $env, or %</td></tr>
-<tr><td><code>requestedMajorVersion</code><br/>Major</td><td>The &#39;X&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>majorVersion</code></td></tr>
-<tr><td><code>requestedMinorVersion</code><br/>Minor</td><td>The &#39;Y&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>minorVersion</code></td></tr>
-<tr><td><code>requestedPatchVersion</code><br/>Patch</td><td>The &#39;Z&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](http://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>patchVersion</code></td></tr>
+<tr><td><code>requestedMajorVersion</code><br/>Major</td><td>The &#39;X&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](https://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>majorVersion</code></td></tr>
+<tr><td><code>requestedMinorVersion</code><br/>Minor</td><td>The &#39;Y&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](https://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>minorVersion</code></td></tr>
+<tr><td><code>requestedPatchVersion</code><br/>Patch</td><td>The &#39;Z&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](https://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>patchVersion</code></td></tr>
 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 
@@ -196,6 +196,28 @@ To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 Checking a NuGet.Config into source control ensures that a key piece of information needed to build your project-the location of its packages-is available to every developer that checks out your code.
 
 However, for situations where a team of developers works on a large range of projects, it's also possible to add an Azure Artifacts feed to the global NuGet.Config on each developer's machine. In these situations, using the "Feeds I select here" option in the NuGet task replicates this configuration.
+
+## Troubleshooting
+
+### File structure for output files is different from previous builds
+
+Azure DevOps hosted agents are configured with .Net Core 3.0, 2.1 and 2.2.
+CLI for .Net Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+
+```YAML
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish'
+  inputs:
+    command: publish
+    publishWebProjects: false
+    projects: '**/*.csproj'
+    arguments: '-o testpath'
+    zipAfterPublish: false
+    modifyOutputPath: true
+```
 
 ## Open Source
 

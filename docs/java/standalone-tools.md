@@ -1,5 +1,5 @@
 ﻿---
-title: Use standalone static analysis with Azure DevOps Services and TFS
+title: Use standalone static analysis
 description: Learn how to use PMD, Checkstyle, and FindBugs with Azure DevOps Services and TFS for Java development
 ms.prod: devops
 ms.technology: devops-cicd

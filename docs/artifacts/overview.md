@@ -1,5 +1,5 @@
----
-title: Azure Artifacts in Azure DevOps Services and Azure DevOps Server
+﻿---
+title: Azure Artifacts in Azure DevOps
 description: Overview of Azure Artifacts for hosting and sharing NuGet packages and npm modules with Azure DevOps Services or Azure DevOps Server
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
 ms.prod: devops

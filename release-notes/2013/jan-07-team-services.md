@@ -60,7 +60,7 @@ Finally, in our last update on [December 10th](../2012/dec-10-team-services.md) 
 
 ![Collapsible left panel](_img/1_7_08.png)
 
-We’ve got a lot coming your way in the next few months. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+We’ve got a lot coming your way in the next few months. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Our next deployment is coming on January 21st so we’ll see you again in two weeks.
 

@@ -36,12 +36,12 @@ Before you can change a private project, to a public project, you must enable an
 
 1. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project.
 
-2. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**.
+2. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
-3. Choose the **Policy** page, and select **On** for **Allow public projects**.
+3. Choose the **Policies** page, and select **On** for **Allow public projects**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/org-policies-change-anon.png)

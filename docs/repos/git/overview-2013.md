@@ -23,11 +23,11 @@ monikerRange: 'tfs-2013'
 <img src="_img/IC673340.png" alt="Changes page in Team Explorer"/>
 </td>
 <td>
-<p>You can begin using <a href="http://www.git-scm.com/" data-raw-source="[Git](http://www.git-scm.com/)">Git</a> distributed version control before you write your first line of code with virtually no cost or risk. You get many benefits, including being able to revert to a known good state whenever you get in trouble. When you need to switch contexts, you can quickly create a private local branch. Later, you can either publish the branch or dispose of it.</p>
+<p>You can begin using <a href="http://www.git-scm.com/" data-raw-source="[Git](https://www.git-scm.com/)">Git</a> distributed version control before you write your first line of code with virtually no cost or risk. You get many benefits, including being able to revert to a known good state whenever you get in trouble. When you need to switch contexts, you can quickly create a private local branch. Later, you can either publish the branch or dispose of it.</p>
 
 <p>All this is done on your local dev machine, with no server required. When you&#39;re ready, you can quickly share your code and begin collaborating in TFS or on a third-party Git service.</p>
 
-<p>You can use Visual Studio and Git to collaborate with your team using Azure DevOps Services or TFS, on <a href="http://www.codeplex.com/" data-raw-source="[CodePlex](http://www.codeplex.com/)">CodePlex</a>, or on a third-party service such as GitHub or Bitbucket.</p>
+<p>You can use Visual Studio and Git to collaborate with your team using Azure DevOps Services or TFS, on <a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a>, or on a third-party service such as GitHub or Bitbucket.</p>
 
 <ul>
 <li><a href="gitquickstart.md" data-raw-source="[Get started using Git](gitquickstart.md)">Get started using Git</a></li>

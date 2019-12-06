@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: sdanie
+author: steved0x
 ms.reviewer: macoope
-ms.date: 10/21/2019
+ms.date: 12/03/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -510,6 +510,15 @@ steps:
 See the schema references for [script](#script),
 [bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-templates) for more details about each.
+
+All steps, whether documented below or not, allow the following properties:
+- `displayName`
+- `name`
+- `condition`
+- `continueOnError`
+- `enabled`
+- `env`
+- `timeoutInMinutes`
 
 ## Variables
 
@@ -1052,6 +1061,9 @@ for authorization.
 * [PR trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
 
+> [!NOTE]
+> Trigger blocks cannot contain variables or template expressions.
+
 ### Push trigger
 
 A trigger specifies what branches will cause a continuous integration build to
@@ -1422,8 +1434,8 @@ environment: 'smarthotel-dev.bookings'
 ## Server
 
 `server` specifies a [server job](process/phases.md#server-jobs).
-Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
-or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+Only server tasks such as [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+<!-- some glorious day, [manual intervention](tasks/utility/manual-intervention.md) will work too -->
 
 # [Schema](#tab/schema)
 

@@ -1,5 +1,5 @@
 ﻿---
-title: Resolve problems with Excel workbooks or SharePoint Server
+title: Troubleshooting Excel workbooks or SharePoint
 titleSuffix: TFS
 description: Resolve an error that occurs with the integration of SharePoint, Team Foundation Server, and Excel workbooks 
 ms.prod: devops

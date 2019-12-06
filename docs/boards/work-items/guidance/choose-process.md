@@ -1,5 +1,5 @@
-﻿---
-title: Choose a process such as Basic, Agile, Scrum, or CMMI
+---
+title: Choose a process like Basic, Agile, Scrum, or CMMI
 titleSuffix: Azure Boards
 description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items 
@@ -95,7 +95,7 @@ Choose the process that provides the best fit for your team.
             and tracks development and test activities separately. This process works great if you want to track user stories and
             (optionally) bugs on the Kanban board, or track bugs and tasks on the taskboard.</p>
                 <p>You can learn more about Agile methodologies at the
-                <a href="http://www.agilealliance.org/">Agile Alliance</a>.
+                <a href="https://www.agilealliance.org/">Agile Alliance</a>.
                 </p>
              <p>Tasks support tracking Original Estimate, Remaining Work, and Completed Work.</p>
             </td>

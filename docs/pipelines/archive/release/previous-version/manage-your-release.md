@@ -115,7 +115,7 @@ With Visual Studio 2015, you can use
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
 ([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
-or [Chef](http://www.getchef.com/) to deploy to a server without a deployment agent.
+or [Chef](https://www.getchef.com/) to deploy to a server without a deployment agent.
 If you already deploy using any of these tools, 
 you can use the same scripts with Release Management. Or, you can use deployment agents 
 to deploy to a server.

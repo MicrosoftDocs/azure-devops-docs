@@ -8,7 +8,7 @@ ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2019
+ms.date: 11/25/2019
 monikerRange: '>= tfs-2015 < azure-devops'
 ---
 
@@ -28,13 +28,8 @@ install extensions from the
 ## Prerequisites
 
 - You must be a [Project Collection Administrator](../organizations/security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
+and have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection). 
 If you don't have permissions, you can [request extensions](request-extensions.md) instead.
-
-- For paid extensions, you need an 
-[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
-to bill your purchase. If you don't have an Azure subscription, 
-you can create a new subscription when you make your first purchase. 
 
 > [!NOTE]
 > To use an existing Azure subscription for billing,
@@ -59,7 +54,7 @@ for future Marketplace purchases.
 
 ::: moniker range="tfs-2017"
 
-* [Connect to TFS](#connected-tfs), so you can install [free, preview, and paid extensions](faq-extensions.md#difference).
+* [Connect to TFS](#connected-tfs), so you can install extensions.
 
 ::: moniker-end
 
@@ -87,33 +82,15 @@ for future Marketplace purchases.
 
    TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
-4. Based on the extension that you select, install or buy the extension.
-
-   *   For free or preview extensions, select **Install**.
-   *   For extensions that you haven't paid for access yet, select **Buy**.
-   *   For extensions that you've already [paid for access](faq-extensions.md#paid-access), 
-   expand **Buy**, and select **Install for paid users**.
-
-   <img alt="Install or buy the extension" src="./_img/get-tfs-extensions/connected/buy-test-manager-extension.png" style="border: 1px solid #CCCCCC" />
+4. Select **Install**.
 
 5. Confirm the project collection where you want to install this extension.
 
    <img alt="Select project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
 
-6. If you chose a paid extension, 
-   select the [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
-   that you'll use to pay for extension access.
+6. Finish installing your extension. 
 
-   <img alt="For paid extensions, select an Azure subscription for billing" src="./_img/get-tfs-extensions/connected/select-azure-subscription.png" style="border: 1px solid #CCCCCC" />
-
-   Select the number of users who need paid access to the extension.
-
-   <img alt="Select number of users who need paid extension access" src="./_img/get-tfs-extensions/connected/select-extension-users.png" style="border: 1px solid #CCCCCC" />
-
-7. Finish installing your extension. 
-
-8. If you installed a paid extension, 
-   make sure to [assign the extension to users who need access](install-extension.md#assign-paid-extensions-to-users). 
+7. Assign the extension to users who need access. 
    Otherwise, you can go to your project collection to use your extension. 
    Also, tell your team about this extension, 
    so they can start using its capabilities too. 
@@ -126,12 +103,12 @@ for future Marketplace purchases.
 
 ## Install TFS extensions when disconnected
 
-While you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
-and then installing them in a project collection. You can't install paid extensions when you're disconnected from TFS.
+When you're disconnected from TFS, you can install free and preview extensions by downloading them, uploading them to your TFS, 
+and then installing them in a project collection. You can't install extensions when you're disconnected from TFS.
 
 ### Who can upload extensions?
 
-[Team Foundation Administrators](/azure/devops/server/admin/add-administrator-tfs#server) 
+[Team Foundation Administrators](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group) 
 with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
 
@@ -225,7 +202,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 > This section is only for adding pre-installed extensions (first-party), if you're installing extensions that
 > aren't pre-installed with TFS, head to the [Disconnected TFS section](#disconnected-tfs).
 
-With first-party extensions that come pre-installed with TFS, there is an alternate method of installation that prevents compatibility issues.
+With first-party extensions that come pre-installed with TFS, there's an alternate method of installation that prevents compatibility issues.
 
 In this case, you can manage extensions in disconnected TFS by following the steps below:
 
@@ -239,9 +216,9 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 3. Scroll down until you see the Plan and track category, which includes **Delivery Plans**. Select **Delivery Plans**.
 
-   ![Delivery plans extension](./_img/get-tfs-extensions/standalone/delivery-plans.png)
+   ![Choose your extension](./_img/get-tfs-extensions/standalone/delivery-plans.png)
 
-4. You're redirected to a local extension page for Delivery Plans where you select **Install**. This works when you are both online and offline.
+4. You're redirected to a local extension page for Delivery Plans where you select **Install**. Installation works when you are both online and offline.
 
 	![Delivery plans extension gallery](./_img/get-tfs-extensions/standalone/delivery-plans-gallery.png)
 
@@ -263,13 +240,13 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
    ![Select an extension](_img/get-devops-extensions/install-devops-extension-02.png)
 
-4. Select the extension and choose **Get** if it is a paid extension, or **Get it free**.
+4. Select the extension and choose **Get** or **Get it free**.
    Or, for some third-party extensions, choose **Get Started** to show pricing information
    and extension-specific installation instructions.
 
    ![Get the extension](_img/get-devops-extensions/install-devops-extension-04.png)
 
-   If you do not have permission to install the extension, you can request an administrator
+   If you don't have permission to install the extension, you can request an administrator
    install it for you. Your request is [stored in Azure DevOps Server](#review-ext)
    ready for attention from an administrator.
 

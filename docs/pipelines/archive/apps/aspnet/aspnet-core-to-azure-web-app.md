@@ -1,5 +1,5 @@
----
-title: Quick Start - Build and Deploy a ASP.NET Core app | Azure Pipelines
+﻿---
+title: Build and Deploy an ASP.NET Core app
 description: Set up a continuous integration (CI) build for your ASP.NET Core app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd
@@ -23,7 +23,7 @@ ASP.NET Core apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET Core app
 to an Azure Web App.
-You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
+You create the web app using the Azure CLI, then set up CI/CD using Azure Pipelines.
 
 ![Screenshot showing ASP.NET Core web app](../../../apps/cd/azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
 

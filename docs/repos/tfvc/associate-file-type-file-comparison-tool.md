@@ -1,4 +1,4 @@
----
+﻿---
 title: Associate a file type with a file-comparison tool
 titleSuffix: Azure Repos
 description: Associate a file type with a file-comparison tool

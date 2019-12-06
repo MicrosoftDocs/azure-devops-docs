@@ -1,5 +1,5 @@
----
-title: Plan, code, collaborate, ship applications using cloud hosted or on-prem services
+﻿---
+title: Plan, code, collaborate, ship applications
 titleSuffix: Azure DevOps 
 ms.custom: seodec18
 description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
