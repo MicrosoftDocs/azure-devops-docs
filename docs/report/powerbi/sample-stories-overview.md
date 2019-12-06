@@ -38,19 +38,19 @@ This report displays the following information for each requirement that it list
 
 Requirements tracking reports are useful for answering the following types of questions.
 
-**Work Progress**
+**Work progress**
 - *Does the amount of work that remains for each requirement correspond to your expectations?*
 - *Are top-ranked requirements being implemented first?*
 - *How many tests are defined for each requirement? How many tests are passing?*
 - *What requirements are being implemented that have no test cases defined for them?*
 
-**Quality Progress**
+**Quality progress**
 - *How many test cases have run for each requirement, and how many have passed?*
 - *How many active bugs does each requirement have?*
 - *Are bugs being found for requirements that are being tested?*
 - *Are bugs being resolved or are they remaining active?*
 
-**Risk Assessment**
+**Risk assessment**
 - *Which requirements are at risk?*
 - *Which requirements aren't sufficiently stable for release?*
 - *Which requirements can we ship today?*
@@ -89,7 +89,7 @@ The following table describes each part of the query.
 
 ## Sample queries
 
-### Query Area and Iteration paths
+### Query area and iteration paths
 
 In order to scope your report to a particular Area and Iteration path, you can query them as described in [Query your work tracking data using OData Analytics](../extend-analytics/wit-analytics.md#query-a-single-entity-set) and use AreaSK and IterationSK values of interest to supply to the other queries provided in the sections provided later in this article.
 
