@@ -353,6 +353,8 @@
     - name: Pipeline options for Git
       href: repos/pipeline-options-for-git.md
       displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
+    - name: Multi-repo checkout
+      href: repos/multi-repo-checkout.md
   - name: Resources
     href: process/resources.md
   - name: Retention policy
