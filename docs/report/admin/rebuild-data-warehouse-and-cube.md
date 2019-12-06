@@ -89,7 +89,7 @@ By default, TCP/IP is disabled when you install SQL Server.
     </tr>
     </table>
 
-    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).
+    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
 2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements#accounts). 
 
