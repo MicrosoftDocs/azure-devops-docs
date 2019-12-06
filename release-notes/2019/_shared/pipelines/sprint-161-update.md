@@ -4,7 +4,7 @@ ms.topic: include
 
 ### Checkout multiple repositories in Azure Pipelines
 
-Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. Previously, you had to add these repositories as submodules or as manual scripts to run **git checkout**. Now you can fetch and `checkout` other repositories in addition to the one you use to store your YAML pipeline. 
+Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. Previously, you had to add these repositories as submodules or as manual scripts to run **git checkout**. Now you can fetch and checkout other repositories in addition to the one you use to store your YAML pipeline. 
 
 For example, if you have a repository called *MyCode* with a YAML pipeline and a second repository called *Tools*, your YAML pipeline will look like this:
 
