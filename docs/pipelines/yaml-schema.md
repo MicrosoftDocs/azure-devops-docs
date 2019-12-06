@@ -1811,7 +1811,7 @@ Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBu
 
 #### Repository declared using a repository resource
 
-In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](#repository-resource).
 
 ```yaml
 resources:
