@@ -199,7 +199,7 @@ Get project references with the specified state
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](../../distributedtask/contracts/teamprojectreference)[]&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.TeamProjectReference](../../distributedtask/contracts/teamprojectreference.md)[]&gt;
 
 <a name="method_getTeam"></a>
 <h2 class='method'>getTeam()</h2>
