@@ -152,7 +152,7 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
     > [!TIP]
     > Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
 
-3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](/azure/devops/server/admin/service-accounts-dependencies-tfs). 
+3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](/azure/devops/server/admin/service-accounts-dependencies). 
 
 	![You'll need to add the reader account information](_img/analysis-services.png)  
 
@@ -198,6 +198,6 @@ You can learn more about installing and configuring SQL Server for use with on-p
 
 ### Change the data reader account  
 - [Change the service account or password for SQL Server Reporting](/azure/devops/server/admin/change-service-account-or-password-sql-reporting)
-- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies-tfs) 
+- [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) 
 
 

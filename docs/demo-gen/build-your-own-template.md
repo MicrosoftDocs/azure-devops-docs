@@ -79,5 +79,5 @@ Setup an Azure DevOps project and make sure it is ready to be extracted. The ext
 
 -------------
 
-Previous: [Using the Generator](/About-Azure-DevOps-Demo-Generator/Using-the-Generator) 
+Previous: [Using the Generator](use-demo-generator-v2.md) 
 

@@ -405,7 +405,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control.
-<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline.md#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
+<br/><br/><br/>If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>

@@ -900,7 +900,7 @@ You manage collection-level permissions through the [web portal admin context](.
         <td id="make-requests-on-behalf-of-others">Make requests on behalf of others</td>
         <td>
             Can perform operations on behalf of other users or services.
-            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies-tfs" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs)">service accounts</a>.
+            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies)">service accounts</a>.
         </td>
     </tr>
     <tr>
@@ -1152,7 +1152,7 @@ You manage collection-level permissions through the [web portal admin context](.
         <td id="make-requests-on-behalf-of-others-permission">Make requests on behalf of others</td>
         <td>
             Can perform operations on behalf of other users or services.
-            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies-tfs" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs)">service accounts</a>.
+            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies)">service accounts</a>.
         </td>
     </tr>
     <tr>

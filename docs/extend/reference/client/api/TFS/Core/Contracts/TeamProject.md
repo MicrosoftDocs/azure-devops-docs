@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [TeamProjectReference](../../../../../../../integrate/extensions/reference/client/api/TFS/DistributedTask/Contracts/TeamProjectReference.md)
+Extends: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md)
 
 ### Members
 

@@ -626,7 +626,7 @@ Members of the [Team Foundation Server Administrators group](/azure/devops/serve
 
 The main task they perform from the web portal is to set access levels for a user or security group. See [Change access levels](../security/change-access-levels.md). 
 
-For additional information, see [Team Foundation Server Administration Documentation](/tfs/index).
+For additional information, see [Team Foundation Server Administration Documentation](/azure/devops/server/server).
 
 ::: moniker-end
 
