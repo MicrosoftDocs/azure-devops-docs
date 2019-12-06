@@ -1797,7 +1797,7 @@ To check out multiple repositories in your pipeline, use multiple `checkout` ste
 - checkout: MyGitHubRepo # Repo declared in a repository resource
 ```
 
-For more information, see [Check out multiple repositories in your pipeline](repos/muti-repo-checkout.md).
+For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
 
 
 

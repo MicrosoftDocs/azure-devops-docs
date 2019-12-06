@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/06/2019
-monikerRange: > azure-devops-2019
+monikerRange: "> azure-devops-2019"
 ---
 
 # Checkout multiple repositories in your pipeline
