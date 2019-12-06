@@ -77,7 +77,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for Azure Repos Git repositories in the same organization as the pipeline.
+> Private GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for public GitHub and Bitbucket Cloud repositories.
 
 ```yaml
 steps:
