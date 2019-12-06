@@ -1,7 +1,7 @@
 ---
 title: YAML schema
 ms.custom: seodec18
-description: An overview of all YAML features.
+description: An overview of all YAML syntax.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/03/2019
+ms.date: 12/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -518,6 +518,7 @@ All steps, whether documented below or not, allow the following properties:
 - `continueOnError`
 - `enabled`
 - `env`
+- `target`
 - `timeoutInMinutes`
 
 ## Variables
@@ -1472,8 +1473,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- script:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1486,8 +1497,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Bash
 
@@ -1506,8 +1517,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- bash:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1524,8 +1545,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Pwsh
 
@@ -1792,9 +1813,19 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- task:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1809,6 +1840,9 @@ steps:
 ```
 
 ---
+
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Syntax highlighting
 
