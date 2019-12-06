@@ -58,26 +58,10 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
-## Access with Azure AD
-
-You can manage your user base with Azure Active Directory (Azure AD). With Azure AD), you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
-
-Azure AD is optional, however, if your enterprise already uses a directory managed by Azure AD, you can [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md). Recommended practice for managing large user bases is to use Azure AD.  
-
-The process of adding users to projects when managing them through Azure AD is as follows: 
-
-1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
-2. [Add organization users to your Azure AD](add-users-to-azure-ad.md)
-3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
-
-Other related articles include: 
-- [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md) 
-- [Change your Azure AD instance](change-organization-location.md)
-- [Restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 ## Add users and assign access
 
-If you don't use Azure AD to manage your user base, then you can add them through the following ways to collaborate on your project. 
+If you don't use Azure Active Directory (Azure AD), as described in the next section, to manage your user base, then you can add them through the following ways to collaborate on your project. 
 
 - Add users to your organization from the **Organization Settings>Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level. Or, if a user has their **Edit instance-level permission** set to **Allow**. 
 
@@ -96,6 +80,34 @@ For details, see the following articles:
 - [Add members to teams or projects](add-team-members.md) 
 
 
+## Access with Azure AD
+
+You can manage your user base with Azure Active Directory (Azure AD). With Azure AD, you can control access the same way that you do with Microsoft services like Office 365 and Microsoft Azure. 
+
+Azure AD is optional, however, if your enterprise already uses a directory managed by Azure AD, you can [use your directory to authenticate access to Azure DevOps Services](access-with-azure-ad.md). Recommended practice for managing large user bases is to use Azure AD.  
+
+The process of adding users to projects when managing them through Azure AD is as follows: 
+
+1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
+2. [Add organization users to your Azure AD](add-users-to-azure-ad.md)
+3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
+4. [Perform bulk assignments of access levels to added users](add-organization-users.md). 
+
+Other related articles include: 
+- [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md) 
+- [Change your Azure AD instance](change-organization-location.md)
+- [Restrict organization creation with an Azure Active Directory tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
+
+### Implementation notes
+
+Using Azure AD, you can add all organizational members view access to all projects by adding them to the Project Collection Valid Users, or as contributors to all projects by adding them to a custom contributor group you create at the organization level. Or, you can segment access by adding select Azure AD groups to Contributors groups in select projects. 
+
+Note the following implementation notes:
+
+- All users that are added at the organization or collection level can be assigned to work items of all projects.  
+- All users that are added at the project level can be assigned to work items of the specific projects.  
+- When a valid user is invited to contribute to a project or a team, assigned a work item to a project or added to a security group, they are automatically added to the Project Valid Users group for that project. 
+
 ## Set up billing
 
 If you need more than the free users and amounts
@@ -103,8 +115,6 @@ of services included with your organization,
 [set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md).
 You can then pay for more users with Basic access,
 buy more services, and purchase extensions for your organization.
-
-
 
 ## Related articles
 
