@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/26/2019
+ms.date: 12/05/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -41,7 +41,7 @@ When you deny access to an authentication method, no app can use that method to 
 > To remove access for personal access tokens,
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-To continue, you'll need at least Basic access and organization Owner permissions.
+To continue, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
 [How do I find the organization Owner?](faq-change-app-access.md#find-owner)
 
 ## Change application access policies
