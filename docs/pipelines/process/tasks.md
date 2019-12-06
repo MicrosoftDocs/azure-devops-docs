@@ -9,7 +9,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/30/2019
+ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -26,7 +26,21 @@ abstracted with a set of inputs.
 
 When you add a task to your pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
+::: moniker range="> azure-devops-2019"
+
+When you run a [job](phases.md), all the tasks are run in sequence, one after the other.
+To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+
+By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
+You may optionally use [step targets](#step-target) to control context for an individual task.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 When you run a [job](phases.md), all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+
+::: moniker-end
 
 ## Custom tasks
 
@@ -117,6 +131,7 @@ Control options are available as keys on the `task` section.
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
   timeoutInMinutes: number  # how long to wait before timing out the task
+  target: string            # 'host' or the name of a container resource to target
 ```
 
 The timeout period begins when the task starts running. It does not include the
@@ -145,6 +160,27 @@ steps:
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
+### Step target
+
+Tasks run in an execution context, which is either the agent host or a container.
+An individual step may override its context by specifying a `target`.
+Available options are the word `host` to target the agent host plus any containers defined in the pipeline.
+For example:
+
+```yaml
+resources:
+  containers:
+  - container: pycontainer
+    image: python:3.8
+
+steps:
+- task: SampleTask@1
+  target: host
+- task: AnotherTask@1
+  target: pycontainer
+```
+
+Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
