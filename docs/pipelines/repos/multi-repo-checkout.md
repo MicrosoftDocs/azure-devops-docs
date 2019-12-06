@@ -1,5 +1,5 @@
 ---
-title: Checkout multiple repositories in your pipeline
+title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.date: 12/06/2019
 monikerRange: "> azure-devops-2019"
 ---
 
-# Checkout multiple repositories in your pipeline
+# Check out multiple repositories in your pipeline
 
 [!INCLUDE [version-team-services](../_shared/version-team-services.md)]
 
@@ -25,15 +25,18 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
 
+## Specify multiple repositories
+
 Repositories can be specified in a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
-- You must use a repository resource if your repository type requires a service connection or other extended resources field.
-- You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
-- You may use inline syntax if your repository type doesn't require a service connection.
+- [Repository declared using a repository resource](#repository-declared-using-a-repository-resource)
+- [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
+
+You must use a repository resource if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository. You may use inline syntax if your repository type doesn't require a service connection.
 
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
 
-## Repository declared using a repository resource
+### Repository declared using a repository resource
 
 In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](../yaml-schema.md#repository-resource).
 
@@ -69,7 +72,7 @@ steps:
 
 If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
-## Repository declared using inline syntax
+### Repository declared using inline syntax
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
