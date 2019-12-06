@@ -17,3 +17,8 @@ To use a certificate in App Service, the certificate must be signed by a trusted
 
 This may be because there is insufficient capacity on your App Service Plan. To resolve this, you can scale up the App Service instance to increase available CPU, RAM, and disk space or try with a different App Service plan.
 
+### 5xx Error Codes
+
+If you are seeing a 5xx error, then please [check the status of your Azure service](https://status.azure.com/status)
+
+
