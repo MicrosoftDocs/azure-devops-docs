@@ -88,9 +88,9 @@ The default branch is checked out unless you designate a specific ref.
 If you are using inline syntax, designate the ref by appending `@<ref>`. For example:
 
 ```yaml
-- checkout: git://MyProject/MyRepo@features/tools # checks out the `features/tools` branch
-- checkout: git://MyProject/MyRepo@refs/heads/features/tools # also checks out the `features/tools` branch
-- checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by `MyTag`.
+- checkout: git://MyProject/MyRepo@features/tools # checks out the features/tools branch
+- checkout: git://MyProject/MyRepo@refs/heads/features/tools # also checks out the features/tools branch
+- checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
 When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
