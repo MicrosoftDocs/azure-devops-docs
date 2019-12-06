@@ -341,6 +341,8 @@ If you are using a `checkout` step on an Azure Repos Git repository in your orga
 
 When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 
+If your pipeline is failing immediately with `Could not find a project that corresponds with the repository`, ensure that your project and repository name are correct in the `checkout` step or the repository resource declaration.
+
 ### File or folder in use errors
 
 File or folder in use errors are often indicated by error messages such as: 
