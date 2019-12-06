@@ -15,9 +15,9 @@ monikerRange: '>= azure-devops-2019'
 
 # Templates
 
-Templates let you define logic, variables, and parameters that can be reused. Templates functions in two ways - you can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
+Templates let you define reusable logic, variables, and parameters. Templates functions in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
-When you use a template for including content, it functions like an include directive in many programming languages where content from one file is inserted into another file. When you use a template to control what is allowed in a pipeline, one template defines logic that another file must follow. You can use a template to define what parameter data types are allowed. By setting the data type for these parameters, you can configure how what is allowed in a YAML. 
+If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow. For example, you can use a template to define allowed parameter data types. By setting the data type for parameters, you can configure what is allowed in a YAML. 
 
 ## Parameters
 
