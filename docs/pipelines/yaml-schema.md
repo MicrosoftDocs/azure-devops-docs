@@ -886,7 +886,7 @@ steps:
 ::: moniker-end
 
 ## Resources
-Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.).
+Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub, etc.).
 
 Resources in YAML represent sources of types pipelines, repositories and containers.
 
@@ -1015,9 +1015,21 @@ resources:
 
 ### Repository resource
 
+::: moniker range="azure-devops-2019"
+
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
 let the system know about that repository. The `repository` resource lets you
 specify an external repository.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must
+let the system know about that repository. The `repository` resource lets you
+specify an external repository.
+
+::: moniker-end
 
 # [Schema](#tab/schema)
 
@@ -1039,21 +1051,25 @@ resources:
   - repository: common
     type: github
     name: Contoso/CommonTools
+    endpoint: MyContosoServiceConnection
 ```
 
 ---
 
 #### Type
 
-Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+Pipelines support the following types of repositories: `git`, `github`, and `bitbucket`. `git` refers to
+Azure Repos Git repos. 
+
+- If you choose `git` as your type, then `name` refers to another
 repository in the same project. For example, `otherRepo`. To refer to a repo in
 another project within the same organization, prefix the name with that project's name.
 For example, `OtherProject/otherRepo`.
-
-If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. Also,
-GitHub repos require a [service connection](library/service-endpoints.md)
+- If you choose `github` as your type, then `name` is the full name of the GitHub
+repo including the user or organization. For example, `Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md#sep-github)
+for authorization.
+- If you choose `bitbucket` as your type, then `name` is the full name of the Bitbucket Cloud
+repo including the user or organization. For example, `MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket)
 for authorization.
 
 ## Triggers
@@ -1731,7 +1747,7 @@ Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.
 
 ### Automatic download in deployment jobs
 
-All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifiying `download: none`.
+All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifying `download: none`.
 
 # [Example](#tab/example)
 
@@ -1755,6 +1771,8 @@ You can configure or suppress this behavior with `checkout`.
 
 # [Schema](#tab/schema)
 
+::: moniker range="azure-devops-2019"
+
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
@@ -1765,6 +1783,23 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+```yaml
+steps:
+- checkout: self | none | repository name # self represents the repo where the initial Pipelines YAML file was found
+  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
+  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
+  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+```
+
+::: moniker-end
 
 Or to avoid syncing sources at all:
 
@@ -1785,6 +1820,22 @@ steps:
   persistCredentials: true
 ```
 
+::: moniker range="> azure-devops-2019"
+
+To check out multiple repositories in your pipeline, use multiple `checkout` steps.
+
+```yaml
+- checkout: self
+- checkout: git://MyProject/MyRepo
+- checkout: MyGitHubRepo # Repo declared in a repository resource
+```
+
+For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
+
+
+
+::: moniker-end
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1795,6 +1846,32 @@ steps:
   lfs: true
   path: PutMyCodeHere
 ```
+
+::: moniker range="> azure-devops-2019"
+
+In the following example, three repositories are checked out: a GitHub repository named `tools` declared in repository resources, an Azure Repos Git repository named `resources` declared inline with the `checkout` step, and `self`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubToolsRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubToolsOrg/tools
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: MyGitHubToolsRepo
+- checkout: git://MyResourcesProject/resources
+```
+
+::: moniker-end
 
 ---
 
