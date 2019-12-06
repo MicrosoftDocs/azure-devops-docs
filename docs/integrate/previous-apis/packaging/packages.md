@@ -388,7 +388,7 @@ GET https://mytfsserver/DefaultCollection/_apis/packaging/feeds/EngineeringInter
 ```
 
 
-To construct the [NuGet v3](http://docs.nuget.org/) endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
+To construct the [NuGet v3](https://docs.nuget.org/) endpoint URL, take the organization name *contoso* and feed name *EngineeringInternal* and insert them into this URL template: `https://{account}.pkgs.visualstudio.com/DefaultCollection/_packaging/{feedName}/nuget/v3/index.json`
 
 For example, the NuGet v3 endpoint for the feed shown above is `https://contoso.pkgs.visualstudio.com/DefaultCollection/_packaging/EngineeringInternal/nuget/v3/index.json`.
 

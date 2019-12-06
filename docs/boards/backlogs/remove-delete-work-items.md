@@ -1,5 +1,5 @@
 ﻿---
-title: Move, change, delete, restore stories, tasks, & other work items
+title: Move, change, and delete work items
 titleSuffix: Azure Boards
 description: How to remove, delete, change type, or move work items to another project in Azure Boards or TFS 
 ms.custom: "boards-backlogs, seodec18" 

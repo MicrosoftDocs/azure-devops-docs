@@ -126,7 +126,7 @@ pool:
   vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema#pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.

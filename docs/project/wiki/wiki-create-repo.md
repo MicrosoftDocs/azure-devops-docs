@@ -1,5 +1,5 @@
----
-title: Create a wiki for your project to share information in Azure DevOps 
+﻿---
+title: Create a project wiki to share information
 titleSuffix: Azure DevOps
 description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
 ms.technology: devops-collab
@@ -12,7 +12,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 11/12/2019  
+ms.date: 11/21/2019  
 ---
 
 # Quickstart: Create a Wiki for your project
@@ -88,7 +88,7 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 
 ### Why is the Git repository hidden?
 
-The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings>Code>repositories** or **Project Settings>Version Control** pages.  
+The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
 
 However, you can navigate to it from the following URL:
 

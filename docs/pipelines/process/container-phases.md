@@ -7,9 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: macoope
+ms.author: jukullam
 ms.date: 05/06/2019
 monikerRange: '>= azure-devops-2019'
+author: juliakm
 ---
 
 # Container jobs

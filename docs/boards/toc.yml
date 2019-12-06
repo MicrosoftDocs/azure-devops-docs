@@ -54,8 +54,10 @@
   items:
   - name: Work in Excel or Project
     href: backlogs/office/track-work.md
-  - name: Bulk add or modify (Excel)
+  - name: Bulk add or modify work items (Excel)
     href: backlogs/office/bulk-add-modify-work-items-excel.md
+  - name: Excel FAQs
+    href: backlogs/office/faqs.md
   - name: "Create backlog items & tasks (Project)"
     href: backlogs/office/create-your-backlog-tasks-using-project.md
   - name: Schedule projects using Project
@@ -76,14 +78,20 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md?
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-- name: Integrations
+- name: Azure Boards & GitHub
+  href: github/toc.yml 
+- name: Integrations and extensions
   items:
+  - name: Overview
+    href: ./extensions/index.md
   - name: Azure Boards with Slack
-    href: integrations/boards-slack.md
+    href: ./integrations/boards-slack.md
   - name: Azure Boards with Teams
-    href: integrations/boards-teams.md
+    href: ./integrations/boards-teams.md
+  - name: Dependency Tracker
+    href: ./extensions/dependency-tracker.md      
   - name: Project Server Integration (Deprecated)
-    href: /azure/devops/reference/tfs-ps-sync/index
+    href: ../reference/tfs-ps-sync/toc.yml
 - name: REST API Reference
   items:
   - name: Work Items

@@ -50,7 +50,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Project-scoped queries
 
-You construct a query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers).  
+You construct a query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers).  
 
 The base URL for project level queries is:
 

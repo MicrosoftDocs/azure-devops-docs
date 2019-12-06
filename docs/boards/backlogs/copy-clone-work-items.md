@@ -1,5 +1,5 @@
 ﻿---
-title: Copy or clone stories, issues, bugs, tasks, or other work items 
+title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  

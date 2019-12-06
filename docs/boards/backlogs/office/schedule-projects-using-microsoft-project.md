@@ -90,7 +90,7 @@ To learn more, see:
   
 ### Add fields to the task work item type
 
-To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command line tool to export and import the definition file for each work item type. 
+To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command-line tool to export and import the definition file for each work item type. 
  
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 

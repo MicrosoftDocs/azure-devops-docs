@@ -24,7 +24,7 @@ ms.date: 02/01/2019
 
 A default set of fields appears in the relational warehouse database or the cube. The following tables list those reportable fields defined in the default process templates. These fields have a `reportable` attribute value of `Detail`, `Dimension`, or `Measure`. See [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md).  
 
-For a complete list of fields that are defined in the default process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
+For a complete list of fields that are defined in the default process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). For descriptions of each data type, see [Query fields, operators, and macros](../../boards/queries/query-operators-variables.md). 
 
 <a name="detail"></a> 
 ## Detail fields  

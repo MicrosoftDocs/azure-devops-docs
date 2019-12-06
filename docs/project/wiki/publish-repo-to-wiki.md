@@ -1,5 +1,5 @@
----
-title: Publish Markdown files from a Git repository to a wiki in Azure DevOps 
+﻿---
+title: Publish Markdown files from Git repository to wiki
 titleSuffix: Azure DevOps  
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
 ms.technology: devops-collab

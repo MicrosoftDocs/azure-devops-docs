@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 11/14/2019
+ms.date: 12/02/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -91,6 +91,8 @@ When this option is checked, a sequence XML file is generated and attached to th
 <tr><td><b>platform</b><br>Build platform</td><td>(Optional) Build platform against which the tests should be reported. If you have defined a variable for platform in your build task, use that here.</td></tr>
 <tr><td><b>configuration</b><br>Build configuration</td><td>(Optional) Build configuration against which the tests should be reported. If you have defined a variable for configuration in your build task, use that here.</td></tr>
 <tr><td><b>publishRunAttachments</b><br>Upload test attachments</td><td>(Optional) Opt in/out of publishing run level attachments.</td></tr>
+<tr><td><b>failOnMinTestsNotRun</b><br>Fail the task if a minimum number of tests are not run</td><td>(Optional) Use this option to fail the task if a minimum number of tests are not run. This may be useful if any changes to task inputs or underlying test adapter dependencies lead to only a subset of the desired tests to be found.</td></tr>
+<tr><td><b>minimumExpectedTests</b><br>Minimum # of tests</td><td>(Optional) Specify the minimum # of tests that should be run for the task to succeed. Total tests run is calculated as the sum of passed, failed and aborted tests.</td></tr>
 <tr><td><b>rerunFailedTests</b><br>Rerun failed tests</td><td>(Optional) Selecting this option will rerun any failed tests until they pass or the maximum # of attempts is reached.</td></tr>
 <tr><td><b>rerunType</b><br>Do not rerun if test failures exceed specified threshold</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures.<br>You can specify % failures with <code>basedOnTestFailurePercentage</code> or # of failed tests as a threshold with <code>basedOnTestFailureCount</code>.</td></tr>
 <tr><td><b>rerunFailedThreshold</b><br>% failure</td><td>(Optional) Use this option to avoid rerunning tests when failure rate crosses the specified threshold. This is applicable if any environment issues leads to massive failures and if <code>rerunType</code> is <code>basedOnTestFailurePercentage</code>.</td></tr>

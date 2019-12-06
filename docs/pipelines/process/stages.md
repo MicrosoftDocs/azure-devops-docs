@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: vijayma
-author: vijayma
+ms.author: jukullam
+author: juliakm
 ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---
