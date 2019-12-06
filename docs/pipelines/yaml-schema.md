@@ -1801,7 +1801,7 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
 
-Repositories can be specified in a [repository resource](#repository-resource), or inline. 
+Repositories can be specified in a [repository resource](#repository-resource), or inline with the `checkout` step. 
 
 - You must use a repository resource if your repository type requires a service connection or other extended resources field.
 - You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
@@ -1811,7 +1811,7 @@ Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBu
 
 #### Repository declared using a repository resource
 
-In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](#repository-resource).
+In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](#repository-resource).
 
 ```yaml
 resources:
@@ -1843,14 +1843,14 @@ steps:
 - script: dir $(Build.SourcesDirectory)
 ```
 
-If the current repository is named `CurrentRepo`, the `script` command will produce the following output: `CurrentRepo MyAzureReposGitRepo MyBitBucketRepo  MyGitHubRepo`. For more information on folders, see the following [Checkout path](#checkout-path) section.
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
 #### Repository declared using inline syntax
 
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for Azure Repos Git repositories in the same organization.
+> GitHub and Bitbucket Cloud repositories require a service connection, so inline checkout syntax may only be used for Azure Repos Git repositories in the same organization as the pipeline.
 
 ```yaml
 steps:
