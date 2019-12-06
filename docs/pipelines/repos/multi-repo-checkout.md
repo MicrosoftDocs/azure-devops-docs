@@ -81,7 +81,9 @@ If your repository doesn't require a service connection, you can declare it inli
 
 ```yaml
 steps:
-- checkout: git://MyProject/MyRepo # Azure Repos Git repository
+- checkout: git://MyProject/MyRepo # Azure Repos Git repository in the same organization
+- checkout: github://Org/PublicGitHubRepo
+- checkout: bitbucket://Org/PublicBitbucketRepo
 ```
 
 ## Checking out a specific ref
