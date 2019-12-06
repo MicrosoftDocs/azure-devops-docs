@@ -25,7 +25,7 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each repository is checked out a folder named after the repository, unless a different `path` is specified in the `checkout` step.
 
-Repositories can be specified in a [repository resource](#repository-resource), or inline with the `checkout` step. 
+Repositories can be specified in a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
 
 - You must use a repository resource if your repository type requires a service connection or other extended resources field.
 - You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
@@ -35,7 +35,7 @@ Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBu
 
 ## Repository declared using a repository resource
 
-In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](#repository-resource).
+In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](../yaml-schema.md#repository-resource).
 
 ```yaml
 resources:
