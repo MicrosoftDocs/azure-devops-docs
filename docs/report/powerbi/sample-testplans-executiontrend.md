@@ -14,14 +14,46 @@ monikerRange: '> azure-devops-2019'
 ms.date: 12/09/2019
 ---
 
-# Sample - Manual Test Execution Trend
+# Sample - Manual test execution trend report
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution trend of one or more Test Plans in Power BI. This will be similar to the 'Outcome trend' widget shown in [Progress report](../../test/track-test-status.md) of Test Plans.
- 
+This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
+
+The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
+
+	- **Passed**: Number of test cases passing.  
+	- **Failed**: Number of test cases failing.  
+	- **NotApplicable**: Number of test cases 
+	- **Blocked**:  Number of test cases blocked from running.  
+	- **NotExecuted**: Number of test cases defined but not executed.  
+
+
+## Questions the report answers
+
+This report helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
+
+- *How much testing is complete?*
+- *What is the current status of tests passing, failing, or being blocked?*
+- *How many tests are passing and what does the trend indicate about software quality?*
+- *How many tests are failing?*
+- *How many tests are blocked and what does the trend indicate?*
+
+A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
+
+## Prerequisites
+
+For the report to generate useful data, the team must perform the following activities to manage test plans:
+
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. 
+- For manual tests, mark the results of each validation step in the test case as passed or failed.  
+
+	> [!NOTE]  
+	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
+
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -134,4 +166,6 @@ Your report should look like this -
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
+- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
+- [Analytics OData query quick reference](/azure/devops/report/powerbi/extend-analytics/quick-ref)
