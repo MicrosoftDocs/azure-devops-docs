@@ -73,13 +73,9 @@ Get started quickly with the following steps which embed the OData query in the 
 
     If you have never connected to your account, Power BI may require you to authenticate. For details, see [Client authentication options](client-authentication-options.md).
 
-
 ## Raw OData query
 
 The OData Query is provided in case you want to modify and test the OData query separately, before using it in Power BI. This method provides more flexibility, but involves additional steps before using the OData Query in Power BI as described in [Connect using Power BI and OData queries](odataquery-connect.md)
 
 For more information on how to write OData queries against Analytics, check out the [OData Query Quick Reference](../extend-analytics/quick-ref.md) 
 
-## Full list of sample reports
-
-[!INCLUDE [temp](_shared/sample-fulllist.md)]

@@ -1,7 +1,7 @@
 ---
-title: Manual test overall execution state sample Power BI report 
+title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate an overall execution state of manual tests
+description: Sample Power BI queries to generate an overall execution state or progress status of manual tests
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -23,11 +23,11 @@ This article shows you how to get the execution state of one or more Test Plans 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
 
-This report displays two pie charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
+This report displays two donut charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
 
 - **Executed vs Not executed** 
 	- **Executed**: The percentage of test plans defined which have run.  
-	- **NotExecuted**: The percentage of test plans defined which haven't  run.    
+	- **NotExecuted**: The percentage of test plans defined which haven't run.    
 - **Split by outcome** 
 	- **Blocked**:  Percentage of test cases that are currently blocked from running.  
 	- **Failed**: Percentage of test cases that failed.  
@@ -53,7 +53,6 @@ For the report to generate useful data, the team must perform the following acti
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.  
 
-- For automated tests, each test is automatically marked as passed or failed.  
 
 
 
@@ -158,7 +157,7 @@ To create the report, perform the following steps:
     - Create a Power BI visualization **Donut chart**.
     - Drag and drop outcome values like **Passed, Failed, Blocked, NotApplicable** etc. into **Values**.
 
-Your report should look like this -
+Your report should appear similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
@@ -169,4 +168,7 @@ Your report should look like this -
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+- [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
+- [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
+- [Analytics OData query quick reference](/azure/devops/report/powerbi/extend-analytics/quick-ref)
+
