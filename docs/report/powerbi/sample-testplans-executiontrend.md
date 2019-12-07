@@ -5,13 +5,13 @@ description: Sample Power BI queries to generate an execution trend of manual te
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: pkuma
+ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 11/18/2019
+ms.date: 12/09/2019
 ---
 
 # Sample - Manual Test Execution Trend
