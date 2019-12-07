@@ -5,13 +5,13 @@ description: Sample Power BI queries to generate a tester by outcome matrix repo
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: pkuma
+ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 11/18/2019
+ms.date: 12/09/2019
 ---
 
 # Sample - Tester by Outcome matrix
