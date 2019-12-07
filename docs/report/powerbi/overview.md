@@ -1,5 +1,4 @@
-﻿---
-title: Learn about Power BI integration
+title: Learn about Power BI integration and supported connection methods
 titleSuffix: Azure DevOps
 description: Describes the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
@@ -84,14 +83,6 @@ You can pull data from Analytics into Power BI in one of three ways. It is impor
 
 ## Sample Reports
 
-### Sample reports using OData Queries
-
-To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
-
-For specific examples, see one of the following articles: 
-
-[!INCLUDE [temp](_shared/sample-fulllist.md)].
-
 ### Sample reports using Analytics View
 
 - [Active bugs report](active-bugs-sample-report.md)  
@@ -99,6 +90,17 @@ For specific examples, see one of the following articles:
 - [Add a last refresh date](add-last-refresh-time.md)   
 - [Filter on teams](create-team-filter.md)   
 - [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)   
+
+### Sample reports using OData Queries
+
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
+
+For specific examples, see one of the following articles: 
+
+| Azure Boards reports | Azure Test Plans reports |
+|----------------------|--------------------------| 
+| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-fulllist-testplans.md)] | 
+
 
 
 ## Related articles

@@ -5,26 +5,59 @@ description: Sample Power BI queries to generate an overall execution state of m
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: pkuma
+ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 11/18/2019
+ms.date: 12/09/2019
 ---
 
-# Sample - Overall Execution State
+# Progress status sample report 
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. This will be similar to the 'Summary' widget shown in [Progress report](../../test/track-test-status.md) of Test Plans.
+This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+This report displays two pie charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
 
+- **Executed vs Not executed** 
+	- **Executed**: The percentage of test plans defined which have run.  
+	- **NotExecuted**: The percentage of test plans defined which haven't  run.    
+- **Split by outcome** 
+	- **Blocked**:  Percentage of test cases that are currently blocked from running.  
+	- **Failed**: Percentage of test cases that failed.  
+	- **NotApplicable**: Percentage of test cases that ???.  
+	- **Passed**: Percentage of test cases that passed.  
+ 
+
+## Questions the report answers
+
+The overall execution state report helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
+
+- *How much testing is complete?*
+- *What is the current status of tests passing, failing, or being blocked?*
+
+
+## Prerequisites
+
+For the report to generate useful data, the team must perform the following activities to manage test plans:
+
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. 
+- For manual tests, mark the results of each validation step in the test case as passed or failed.  
+
+	> [!NOTE]  
+	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.  
+
+- For automated tests, each test is automatically marked as passed or failed.  
+
+
+
+[!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 ## Sample queries
 
@@ -130,7 +163,7 @@ Your report should look like this -
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
 
-## Full list of sample reports for Test Plans
+## Full list of Test Plans sample reports 
 
 [!INCLUDE [temp](_shared/sample-fulllist-testplans.md)]
 
