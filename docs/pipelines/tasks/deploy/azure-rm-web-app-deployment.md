@@ -308,7 +308,7 @@ You can also use *Run From Package deployment* method to avoid resource locking.
 
 ### Web Deploy Error
 
-If you are using web deploy to deploy your app, in some error scemarios Web Deploy will show an error code in the log. To troubleshoot a web deploy error see [this](https://docs.microsoft.com/iis/publish/troubleshooting-web-deploy/web-deploy-error-codes).
+If you are using web deploy to deploy your app, in some error scenarios Web Deploy will show an error code in the log. To troubleshoot a web deploy error see [this](https://docs.microsoft.com/iis/publish/troubleshooting-web-deploy/web-deploy-error-codes).
 
 ## FAQs
 
