@@ -32,11 +32,17 @@ From the pipelines landing page you can create new pipelines, import pipelines, 
 
 ### View pipelines and pipeline runs
 
+Choose **Recent** to see recently run pipelines, or **All** to view all pipelines.
+
 ![View pipelines](_img/view-pipelines.png)
 
-![Pipeline context menu](_img/pipelines-overview-pipeline-content-menu.png)
+Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+
+![Pipeline context menu](_img/pipelines-overview-pipeline-context-menu.png)
 
 ![View pipeline runs](_img/all-pipeline-runs.png)
+
+Select a pipeline run to view information about that run.
 
 ![Pipeline run context menu](_img/pipeline-run-context-menu.png)
 
@@ -61,7 +67,7 @@ The details page for a pipeline allows you to view and manage that pipelines.
 
 ![Pipeline analytics](_img/pipeline-analytics.png)
 
-
+## Pipeline runs
 
 ### Run new
 
