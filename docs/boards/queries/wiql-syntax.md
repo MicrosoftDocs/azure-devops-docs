@@ -464,20 +464,20 @@ These macros accept a modifier string which has a format of `(+/-)nn(y|M|w|d|h|m
 This syntax allows you to nest modifiers and offset your query twice. For example, the following clause filters work items that have been closed last year and three months into the start of the current year.  
 
 ```WIQL
-[System.ClosedDate] >=@StartOfYear('+3M') - 1
+[Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
 ```
 
 
 The following examples assume that today is 4/5/19. 
 
 ```WIQL
-[System.CreatedDate] >= @StartOfMonth-3
+[Microsoft.VSTS.Common.CreatedDate] >= @StartOfMonth-3
 ```
 
 is the equivalent of:
 
 ```WIQL
-[System.CreatedDate] >= '1/1/19'
+[Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
 ```
 
 and
