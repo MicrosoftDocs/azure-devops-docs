@@ -66,6 +66,10 @@ Select **Analytics** to view pipeline metrics such as pass rate and run duration
 
 ## Pipeline runs
 
+### Cancel and re-run a pipeline
+
+### Download logs and artifacts
+
 ### Run new
 
 Run summary context menu
