@@ -108,6 +108,11 @@ The `conda create` command will create an environment with the arguments you pas
   displayName: Create Anaconda environment
 ```
 
+> [!NOTE]
+> To add specific conda channels you will need to add an extra line for conda config:
+> `conda config --add channels conda-forge`
+
+
 ---
 
 ### From YAML
