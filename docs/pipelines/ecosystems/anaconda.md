@@ -169,7 +169,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - bash: |
     source activate myEnvironment
-    pytest --junitxml=junit/unit-test.xml
+    python -m pytest --junitxml=junit/unit-test.xml
   displayName: pytest
 
 - task: PublishTestResults@2
