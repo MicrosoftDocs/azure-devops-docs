@@ -17,8 +17,8 @@ monikerRange: '> azure-devops-2019'
 The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. THis article shows you how to work with your pipelines using this new user experience.
 
 >[!div class="checklist"]      
-> * Navigate to pipelines
-> * Cancel and re-run pipelines
+> * Navigate to and view pipeline details
+> * Manage pipeline runs
 > * Download logs and artifacts
 > * View error cards on the summary page  
 
@@ -45,15 +45,6 @@ Select a pipeline to manage that pipeline and view its runs. Select the build nu
 Select a pipeline run to view information about that run.
 
 ![Pipeline run context menu](_img/pipeline-run-context-menu.png)
-
-### Create and manage pipelines
-
-
-### Create and manage pipelines
-
-## Per pipeline info
-
-### View runs, branches, and analytics
 
 ## Pipeline details
 
