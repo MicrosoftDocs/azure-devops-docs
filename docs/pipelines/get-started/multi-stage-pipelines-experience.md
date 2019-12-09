@@ -57,13 +57,19 @@ Select a pipeline run to view information about that run.
 
 ## Pipeline details
 
-The details page for a pipeline allows you to view and manage that pipelines.
+The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](_img/pipeline-overview.png)
 
+Select **Runs** to view the runs for that pipeline. You can optionally filter the displayed runs.
+
 ![Pipeline runs](_img/pipeline-runs.png)
 
+Select **Branches** to view the history or run for that branch. Hover over the **History** to view a summary for each run, and select a run to navigate to the details page for that run.
+
 ![Pipeline branches](_img/pipeline-branches.png)
+
+Select **Analytics** to view pipeline metrics such as pass rate and run duration. Choose **View full report** for more information on each metric.
 
 ![Pipeline analytics](_img/pipeline-analytics.png)
 
