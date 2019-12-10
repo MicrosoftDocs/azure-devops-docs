@@ -14,15 +14,15 @@ monikerRange: '> azure-devops-2019'
 
 # Multi-stage pipelines user experience
 
-The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. THis article shows you how to work with your pipelines using this new user experience.
+The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to work with your pipelines using this new user experience.
 
 >[!div class="checklist"]      
-> * Navigate to and view pipeline details
+> * Navigate to pipelines and view pipeline details
 > * Manage pipeline runs
 > * Download logs and artifacts
 > * View error cards on the summary page  
 
-## Navigate to pipelines
+## Pipelines landing page
 
 You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
 
@@ -33,8 +33,9 @@ From the pipelines landing page you can:
 * View pipelines and pipeline runs.
 * Create and import pipelines
 * Manage security options
+* Drill down into pipeline and run details
 
-### Breadcrumb navigation
+## Breadcrumb navigation
 
 At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back a step, for example when you are viewing pipeline runs, you can use the breadcrumb link to go back to the pipeline overview page.
 
@@ -64,7 +65,7 @@ Select **Runs** to view all pipeline runs. You can optionally filter the display
 
 Select a pipeline run to view information about that run.
 
-## Pipeline details
+## View pipeline details
 
 The details page for a pipeline allows you to view and manage that pipeline.
 
@@ -92,7 +93,7 @@ Select **Analytics** to view pipeline metrics such as pass rate and run duration
 
 ![Pipeline analytics](_img/pipeline-analytics.png)
 
-## Pipeline run summary
+## View pipeline run details
 
 From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
 
@@ -104,7 +105,7 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 
 ![Cancel pipeline run](_img/cancel-pipeline-run.png)
 
-From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run..
+From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run.
 
 ![Pipeline run summary context menu](_img/pipeline-run-summary-context-menu.png)
 
@@ -112,13 +113,13 @@ The jobs pane displays on overview of the status of your stages and jobs. This p
 
 ![Pipeline jobs](_img/pipeline-jobs-pane.png)
 
-Choose a job to see the tasks for that job.
+Choose a job to see the steps for that job.
 
-![Pipeline tasks](_img/pipeline-tasks-list.png)
+![Pipeline tasks](_img/pipeline-steps-list.png)
 
-From the tasks view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
+From the steps view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
 
-![Pipeline tasks context menu](_img/pipeline-tasks-context-menu.png)
+![Pipeline tasks context menu](_img/pipeline-steps-context-menu.png)
 
 
 
