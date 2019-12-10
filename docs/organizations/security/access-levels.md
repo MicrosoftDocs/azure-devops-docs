@@ -915,7 +915,7 @@ If a user belongs to a group that has **Basic** access and another group that ha
 
 ## Service account access
 
-Azure DevOps Server [service accounts](/tfs/tfs-server/admin/service-accounts-dependencies) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
+Azure DevOps Server [service accounts](/azure/devops/server/admin/service-accounts-dependencies) are added to the default access level. If you make Stakeholder the default access level, you must add the service accounts to Basic or Advanced/VS Enterprise access.  
 
 Service accounts don't require a CAL or other purchase.  
 
