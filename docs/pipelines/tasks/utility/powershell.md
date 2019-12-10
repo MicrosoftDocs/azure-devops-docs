@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 07/03/2019
+ms.date: 12/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -66,33 +66,18 @@ Both of these resolve to the `PowerShell@2` task.
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code></td></tr>
-<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the Powershell script.<br>
+<tr><td><code>targetType</code><br/>Type</td><td>(Optional) Sets whether this is an inline script or a path to a <code>.ps1</code> file. Defaults to <code>filepath</code><br/>Default value: filePath</td></tr>
+<tr><td><code>filePath</code><br/>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code></td></tr>
+<tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
   Ignored when Type is <code>inline</code>.</td></tr>
-<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code>.</td></tr>
-<tr><td>Working directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code><a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a></code>.</td></tr>
-<tr>
-<td>Fail on standard error</td>
-<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
-</tr>
-<tr>
-<td>errorActionPreference</td>
-<td>Set PowerShell&#39;s error action preference. One of: <code>stop</code>, <code>continue</code>, <code>silentlyContinue</code>. Defaults to <code>stop</code>.</td>
-</tr>
-<tr>
-<td>ignoreLASTEXITCODE</td>
-<td>By default, the last exit code returned from your script will be checked and, if non-zero, treated as a step failure. If you don&#39;t want this behavior, set this to <code>true</code>.</td>
-</tr>
-<tr>
-<td>pwsh</td>
-<td>If <code>true</code>, runs PowerShell Core. Otherwise, runs Windows PowerShell. Defaults to <code>false</code>.</td>
-</tr>
-<tr>
-<td>Environment variables</td>
-<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-
+<tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>.<br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
+<tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
+<tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
+<tr><td><code>ignoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td><td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td></tr>
+<tr><td><code>pwsh</code><br/>Use PowerShell Core</td><td>(Optional) If this is true, then on Windows the task will use pwsh.exe from your PATH instead of powershell.exe<br/>Default value: false</td></tr>
+<tr><td><code>workingDirectory</code><br/>Working directory</td><td>(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <code><a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a></code></td></tr>
+<tr><td>Environment variables</td><td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
 <pre>
 <code class="lang-yaml">
 - powershell: echo $env:MYSECRET
@@ -100,12 +85,8 @@ Both of these resolve to the `PowerShell@2` task.
     MySecret: $(Foo)
 </code>
 </pre>
-
 </td>
 </tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-
 </table>
 
 ## Examples
