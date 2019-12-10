@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 In this article, find answers to frequently asked questions about billing for your organization.
 
-For detailed pricing estimates, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## User assignment-based billing
 
