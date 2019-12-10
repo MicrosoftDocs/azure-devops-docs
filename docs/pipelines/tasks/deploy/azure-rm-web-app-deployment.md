@@ -312,7 +312,7 @@ If you are using web deploy to deploy your app, in some error scenarios Web Depl
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
 
 ## Open source
 
