@@ -193,7 +193,7 @@ Your report should look like this.
 > ![Sample - Pipelines task duration - Report](_img/odatapowerbi-pipelines-taskduration-report.png)
 
 
-## Full list of sample reports
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+## Full list of sample reports for Pipelines
+[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
