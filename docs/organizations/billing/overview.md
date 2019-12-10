@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -59,7 +59,7 @@ Enable paid usage via the **Billing** tab within **Organization settings** in Az
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
