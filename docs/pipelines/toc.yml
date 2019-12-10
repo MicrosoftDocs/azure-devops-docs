@@ -10,6 +10,8 @@
   href: get-started/pipelines-get-started.md
 - name: Key concepts
   href: get-started/key-pipelines-concepts.md
+- name: Multi-stage pipelines user experience
+  href: get-started/multi-stage-pipelines-experience.md
 - name: Quickstarts
   expanded: true
   items:
