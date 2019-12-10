@@ -69,9 +69,7 @@ For the report to generate useful data, you need to have performed the following
 
 ## Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
-- {iterationSK} - Iteration SK of the iteration path you are interested in.
-- {areaSK} - Area SK of the area path you are interested in.
+[!INCLUDE [temp](_shared/sample-query-substitutions-2.md)]
 
 
 ## Query breakdown
