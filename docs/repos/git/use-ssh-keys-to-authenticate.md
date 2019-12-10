@@ -215,22 +215,21 @@ When you are asked if you want to continue connecting, type `yes`. Git will clon
 >[!TIP]
 > Avoid trouble: Windows users will need to [run a command](use-ssh-keys-to-authenticate.md#rememberpassphrase) to have Git reuse their SSH key passphrase.
 
-## Questions and Troubleshooting
+## Questions and troubleshooting
 
 <a name="rememberpassphrase"></a>
 
-
-### After running git clone, I get the following error. What should I do?
+### Q: After running git clone, I get the following error. What should I do?
 
 Host key verification failed. 
 fatal: Could not read from remote repository.
 
-Manually record the SSH key by running:
+**A:** Manually record the SSH key by running:
 `ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
 
-### How can I have Git remember the passphrase for my key on Windows?
+### Q: How can I have Git remember the passphrase for my key on Windows?
 
-Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
+**A:** Run the following command included in Git for Windows to start up the `ssh-agent` process in Powershell or the Windows Command Prompt. `ssh-agent` will cache
 your passphrase so you don't have to provide it every time you connect to your repo.
 
 ```
@@ -243,15 +242,15 @@ If you are using the Bash shell (including Git Bash), start ssh-agent with:
 eval `ssh-agent`
 ```
 
-### I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
+### Q: I use [PuTTY](https://www.putty.org/) as my SSH client and generated my keys with PuTTYgen. Can I use these keys with Azure DevOps Services?
 
-Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
+**A:** Yes. Load the private key with PuTTYgen, go to **Conversions** menu and select **Export OpenSSH key**. 
 Save the private key file and then follow the steps to [set up non-default keys](use-ssh-keys-to-authenticate.md#newkeys).
 Copy your public key directly from the PuTTYgen window and paste into the **Key Data** field in your security settings.
 
-### How can I verify that the public key I uploaded is the same key as I have locally?
+### Q: How can I verify that the public key I uploaded is the same key as I have locally?
 
-  You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
+**A:** You can verify the fingerprint of the public key uploaded with the one displayed in your profile through the following `ssh-keygen` command run against your public key using
   the `bash` command line. You will need to change the path and the public key filename if you are not using the defaults.
   
 ```
@@ -263,9 +262,9 @@ pasting in the public key into the **Key Data** field when adding the key to Azu
 
 <a name="migrate"></a>
  
-### How can I start using SSH in a repository where I am currently using HTTPS?
+### Q: How can I start using SSH in a repository where I am currently using HTTPS?
  
-You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
+**A:** You'll need to update the `origin` remote in Git to change over from a HTTPS to SSH URL. Once you have the [SSH clone URL](#step-3-clone-the-git-repository-with-ssh), run the following command:
 
 ```
 git remote set-url origin git@ssh.dev.azure.com:v3/fabrikam-fiber/FabrikamFiber/FabrikamFiber
@@ -275,13 +274,13 @@ You can now run any Git command that connects to `origin`.
 
 <a name="newkeys"></a>
 
-### I'm using Git LFS with Azure DevOps Services and I get errors when pulling files tracked by Git LFS.
+### Q: I'm using Git LFS with Azure DevOps Services and I get errors when pulling files tracked by Git LFS.
 
-Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
+**A:** Azure DevOps Services currently doesn't support LFS over SSH. Use HTTPS to connect to repos with Git LFS tracked files.
  
-### How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
+### Q: How can I use a non default key location, i.e. not ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub?
 
-To use keys created with `ssh-keygen` in a different place than the default, you do two things:
+**A:** To use keys created with `ssh-keygen` in a different place than the default, you do two things:
 
 1. The keys must be in a folder that only you can read or edit. If the folder has wider permissions, SSH will not use the keys.
 2. You must let SSH know the location of the keys. You make SSH aware of keys through the `ssh-add` command, providing the full path to the private key. 
@@ -307,8 +306,8 @@ You can find `ssh-add` as part of the Git for Windows distribution and also run 
 On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
 takes care of starting `ssh-agent` for you.
 
-### I have multiple SSH keys.  How do I use different SSH keys for different SSH servers or repos?
-Generally, if you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
+### Q: I have multiple SSH keys.  How do I use different SSH keys for different SSH servers or repos?
+**A:** Generally, if you configure multiple keys for an SSH client and connect to an SSH server, the client can try the keys one at a time until the server accepts one.
 
 However, this doesn't work with Azure DevOps for technical reasons related to the SSH protocol and how our Git SSH URLs are structured.  Azure DevOps will blindly accept the first key that the client provides during authentication.  If that key is invalid for the requested repo, the request will fail with the following error:
 > ```
@@ -379,9 +378,9 @@ IdentitiesOnly yes
 Host *
 ```
 
-### What notifications may I receive regarding my SSH keys?
+### Q: What notifications may I receive regarding my SSH keys?
 
-Whenever you register a new SSH Key with Azure DevOps Services, you will receive an email notification informing you that a new SSH key has been added to your account.
+**A:** Whenever you register a new SSH Key with Azure DevOps Services, you will receive an email notification informing you that a new SSH key has been added to your account.
 
 ![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
 
