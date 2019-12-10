@@ -65,7 +65,47 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
 	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
-	At this point, if you choose **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and choose **Edit**. This brings up the Query Editor. For each column on which you want to filter, select it and set your filter. When this is complete choose **Close & Apply** in the upper left corner.  
+	Do not select **Load**, but select **Transform Data** instead. 
+
+8. For each entity that was selected, you must update the query using the Advanced Editor
+
+    For every entity you selected, PowerQuery will create a query. Each of these queries must be updated manually. **This is required for the following reasons**:
+    - **Prevent throttling errors** - Power Query will attempt to resolve null values as errors, by generating an additional query for every null it encounters. This can result in 1000's of queries, which will  quickly exceed the usage threshold where your user account will be throttled.
+    - Instruct Power BI to reference OData v4
+    - Instruct the Analytics Service to omit any values that are null, which improves query performance
+
+    For each entity:
+
+    A) Select the entity. In this example, we selected **Areas**
+      
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI - OData Feed - Select entity](_img/pbi5.png)  
+    
+    B) Select **Advanced Editor**.
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI - OData Feed - Select Advanced Editor](_img/AdvancedEditor.png)
+    
+    C) Scroll the view pane horizontally to the right, to view the "[Implementation='2.0']" parameter.
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor1.png)
+    
+    D) Replace the "[Implementation='2.0']" with the following string:
+    
+    ```
+    [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]
+    ``` 
+    
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor2.png)
+    
+
+
+    Repeat steps A-D for every entity you've selected.
+    
+
+At this point, you may select **Close & Apply** in the upper left corner. 
 
 ## Related articles
 
