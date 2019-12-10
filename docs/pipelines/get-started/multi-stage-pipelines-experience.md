@@ -14,7 +14,7 @@ monikerRange: '> azure-devops-2019'
 
 # Multi-stage pipelines user experience
 
-The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to work with your pipelines using this new user experience.
+The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to view and manage your pipelines using this new experience.
 
 >[!div class="checklist"]      
 > * Navigate to pipelines and view pipeline details
@@ -28,12 +28,7 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 
 ![View pipelines](_img/pipelines-overview.png)
 
-From the pipelines landing page you can:
-
-* [View pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs).
-* Create and import pipelines
-* [Manage pipeline security](#manage-security)
-* Drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details
+From the pipelines landing page you can [view pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs), create and import pipelines, [manage pipelines security](#manage-security), and drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details.
 
 At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back a step, for example when you are viewing pipeline runs, you can use the breadcrumb link to go back to the pipeline overview page.
 
@@ -49,9 +44,11 @@ Many pages also contain a back button that takes you to the previous page.
 
 ![Pipelines back button](_img/pipelines-back-button.png)
 
-### View pipelines
+## Pipelines landing page
 
-From the pipelines landing page, choose **Recent** to see recently run pipelines, or **All** to view all pipelines.
+From the pipelines landing page you can [view pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs), create and import pipelines, [manage pipelines security](#manage-security), and drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details.
+
+The default view is recently run pipelines, and you can choose **All** to view all pipelines.
 
 ![View pipelines](_img/view-pipelines.png)
 
