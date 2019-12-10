@@ -73,7 +73,7 @@ Select **Runs** to view the runs for that pipeline. You can optionally filter th
 
 ![Pipeline runs](_img/pipeline-runs.png)
 
-You can choose to **Retain** or **Delete** the run from the context menu. For more information on run retention, see [Build and release retention policies](../policies/retention.md).
+You can choose to **Retain** or **Delete** a run from the context menu. For more information on run retention, see [Build and release retention policies](../policies/retention.md).
 
 ![Pipeline run context menu](_img/pipeline-run-context-menu.png)
 
