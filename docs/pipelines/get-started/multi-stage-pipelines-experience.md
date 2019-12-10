@@ -48,15 +48,13 @@ Many pages also contain a back button that takes you to the previous page.
 
 From the pipelines landing page you can [view pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs), create and import pipelines, [manage pipelines security](#manage-security), and drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details.
 
-The default view is recently run pipelines, and you can choose **All** to view all pipelines.
+Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
 ![View pipelines](_img/view-pipelines.png)
 
 Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
 
 ![Pipeline context menu](_img/pipelines-overview-pipeline-context-menu.png)
-
-### View pipeline runs
 
 Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
 
