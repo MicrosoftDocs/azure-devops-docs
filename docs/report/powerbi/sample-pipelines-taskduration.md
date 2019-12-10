@@ -80,7 +80,6 @@ $apply=filter(
 ### Substitution strings
 
 [!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
-- {taskname} - The display name of the task for which the duration trend is needed
 
 ### Query breakdown
 
