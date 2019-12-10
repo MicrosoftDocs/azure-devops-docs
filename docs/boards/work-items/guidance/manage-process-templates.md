@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+monikerRange: '<= azure-devops'
+ms.date: 12/10/2019
 ---
 
 # Upload or download a process template
@@ -20,29 +20,115 @@ ms.date: 11/19/2018
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-::: moniker range="tfs-2018 || azure-devops-2019"
+::: moniker range="azure-devops"
 > [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
+> Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator).  
 >
-> If you want to use SQL Server Reporting with an on-premises TFS 2018 or Azure DevOps Server 2019, you'll have to add support after you create your project. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support).  
+> To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
+
+
 
 ::: moniker-end
 
-You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects. 
+::: moniker range="azure-devops-2019"
+You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
+
+Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator). To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects.
+::: moniker-end 
 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
+## Prerequisites
+
+If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
+
+
 ## To manage a process template 
 
-1. Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
+Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
 
-   You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2015-with-update-3-free).  
+You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).  
 
-   If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
+The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and Visual Studio 2019 opens the web portal **Collection Settings** or **Organization Settings**.  
 
-2. From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
+# [Visual Studio 2019](#tab/visual-studio-2019)
 
-   ![Open Process Template Manager](_img/open-process-template-manager.png)
+1. From, Visual Studio 2019, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
+2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Open Process Template Manager](_img/process-template/open-process-template-manager-ado-2019.png)
+
+	A web browser tab opens to the **Organization Settings>Process** page. 
+
+	> [!div class="mx-imgBorder"] 
+	> ![Open Process](_img/process-template/open-collection-process-ado-2019.png)
+
+3. To upload a process template, choose the ![ ](../../../_img/icons/blue-add-icon.png)**Upload Process Template** option.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Upload Process](_img/process-template/upload-process-ado-2019.png)
+
+	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
+
+	> [!div class="mx-imgBorder"] 
+	> ![Upload Process](_img/process-template/upload-process-dialog.png)
+
+4. To download or export a process template, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose the **Export** option.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Export Process](_img/process-template/export-process.png)
+
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Disable or Delete a Process](_img/process-template/disable-default-options.png)
+
+# [Visual Studio 2017](#tab/visual-studio-2017)
+
+1. From, Visual Studio 2017, connect to an on-premises TFS collection. 
+
+2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Open Process Template Manager](_img/process-template/open-process-template-manager-vs-2017.png)
+
+	A web browser tab opens to the **Organization Settings>Process** page. 
+
+	> [!div class="mx-imgBorder"] 
+	> ![Open Process](_img/process-template/open-collection-process-ado-2019.png)
+
+3. To upload a process template, choose the ![ ](../../../_img/icons/blue-add-icon.png)**Upload Process Template** option.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Upload Process](_img/process-template/upload-process-ado-2019.png)
+
+	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
+
+	> [!div class="mx-imgBorder"] 
+	> ![Upload Process](_img/process-template/upload-process-dialog.png)
+
+4. To download or export a process template, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose the **Export** option.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Export Process](_img/process-template/export-process.png)
+
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Disable or Delete a Process](_img/process-template/disable-default-options.png)
+
+# [Visual Studio 2015](#tab/visual-studio-2015)
+
+1. From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Open Process Template Manager](_img/open-process-template-manager.png)
 
    You'll see a list of each process template that has been uploaded to the project collection. 
 

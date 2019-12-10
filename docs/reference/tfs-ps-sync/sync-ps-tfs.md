@@ -45,7 +45,7 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 <br/>
 <a id="ConnectALL" />
 
-![Go2Group](_img/tfs-ps-sync-go2group-logo.png)
+![ConnectAll](_img/connectall.png)
 
 ## [ConnectALL](https://www.connectall.com/)
 
