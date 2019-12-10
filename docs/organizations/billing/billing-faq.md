@@ -34,7 +34,7 @@ A: With user assignment-based billing, you only pay for the users you assign an 
 
 In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. So, we don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
 
-[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you’ll find that [assignment errors](../accounts/assign-access-levels-and-extensions-by-group-membership.md#resolve-assignment-errors) are no longer common.
+[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you’ll find that assignment errors are no longer common.
 
 ### Q: How can new users get Basic instead of Stakeholder when added to a Project?
 
