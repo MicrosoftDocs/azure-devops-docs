@@ -22,9 +22,7 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 
 ![View pipelines](_img/pipelines-overview.png)
 
-From the pipelines landing page you can [view pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs), create and import pipelines, [manage pipelines security](#manage-security), and drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details.
-
-At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back a step, for example when you are viewing pipeline runs, you can use the breadcrumb link to go back to the pipeline overview page.
+At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back one or more steps. 
 
 ![Breadcrumb navigation](_img/breadcrumb-navigation.png)
 
