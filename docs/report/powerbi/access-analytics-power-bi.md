@@ -70,7 +70,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
 8. For each entity that was selected, you must update the query using the Advanced Editor
 
     For every entity you selected, PowerQuery will create a query. Each of these queries must be updated manually. **This is required for the following reasons**:
-    - **Prevent throttling errors** - Power Query will attempt to resolve null values as errors, by generating an additional query for every null it encounters. This can result in 1000's of queries, which will  quickly exceed the usage threshold where your user account will be throttled.
+    - **Prevent throttling errors** - Power Query will attempt to resolve null values as errors, by generating an additional query for every null it encounters. This can result in 1000s of queries, which will  quickly exceed the usage threshold where your user account will be throttled.
     - Instruct Power BI to reference OData v4
     - Instruct the Analytics Service to omit any values that are null, which improves query performance
 
