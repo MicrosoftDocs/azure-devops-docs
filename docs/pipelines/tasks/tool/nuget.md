@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: phwilson
 author: chasewilson
-ms.date: 12/07/2018
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -34,11 +34,14 @@ None
 
 ## Arguments
 
-| Argument | Description |
-|----------|-------------|
-| Version Spec | Specify which [NuGet version](https://dist.nuget.org/tools.json) you want to use. Examples: `4.1.0`, `3.x`, `>2.x`, `>=3.5` |
-| Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `3.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [the Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
-| Control options | See [Control options](../../process/tasks.md#controloptions). |
+<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
+<tr><td><code>versionSpec</code><br/>Version Spec</td><td>A version or version range that specifies the NuGet version to make available on the path. Use x as a wildcard. See the <a href=http://dist.nuget.org/tools.json>list of available NuGet versions</a>. If you want to match a pre-release version, the specification must contain a major, minor, patch, and pre-release version from the list above. Examples: 4.x, 3.3.x, 2.8.6, >=4.0.0-0. If unspecified, a version will be chosen automatically</td></tr>
+<tr><td><code>checkLatest</code><br/>Always check for new versions</td><td> Always check for and download the latest available version of NuGet.exe which satisfies the version spec. Enabling this option could cause unexpected build breaks when a new version of NuGet is released</td></tr>
+</table>
+
+> [!TIP]
+> If you're using [the Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.
+> 
 
 ## Open source
 
