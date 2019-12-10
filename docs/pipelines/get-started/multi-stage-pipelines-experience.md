@@ -22,7 +22,7 @@ The multi-stage pipelines experience brings improvements and ease of use to the 
 > * Download logs and artifacts
 > * View error cards on the summary page  
 
-## Pipelines landing page
+## Navigating pipelines
 
 You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
 
@@ -35,8 +35,6 @@ From the pipelines landing page you can:
 * [Manage pipeline security](#manage-security)
 * Drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details
 
-## Breadcrumb navigation
-
 At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back a step, for example when you are viewing pipeline runs, you can use the breadcrumb link to go back to the pipeline overview page.
 
 ![Breadcrumb navigation](_img/breadcrumb-navigation.png)
@@ -46,6 +44,10 @@ At the top of each page is a breadcrumb navigation bar. Select the different are
 3. The next level up is the [pipelines landing page](#navigate-to-pipelines).
 4. This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
 5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project that contains the pipeline.
+
+Many pages also contain a back button that takes you to the previous page.
+
+![Pipelines back button](_img/pipelines-back-button.png)
 
 ### View pipelines
 
