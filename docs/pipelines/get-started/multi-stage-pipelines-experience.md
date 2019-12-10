@@ -24,29 +24,15 @@ The multi-stage pipelines experience brings improvements and ease of use to the 
 
 ## Navigate to pipelines
 
-You can view and manage your pipelines by choosing Pipelines from the left-hand menu.
+You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
 
 ![View pipelines](_img/pipelines-overview.png)
 
-From the pipelines landing page you can create and import pipelines, manage security options, and view pipelines and pipeline runs.
+From the pipelines landing page you can:
 
-### View pipelines and pipeline runs
-
-Choose **Recent** to see recently run pipelines, or **All** to view all pipelines.
-
-![View pipelines](_img/view-pipelines.png)
-
-Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
-
-![Pipeline context menu](_img/pipelines-overview-pipeline-context-menu.png)
-
-Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
-
-![View pipeline runs](_img/all-pipeline-runs.png)
-
-Select a pipeline run to view information about that run.
-
-
+* View pipelines and pipeline runs.
+* Create and import pipelines
+* Manage security options
 
 ### Breadcrumb navigation
 
@@ -58,14 +44,31 @@ At the top of each page is a breadcrumb navigation bar. Select the different are
 2. One level up is a link to the [pipeline details](#pipeline-details) for that run.
 3. The next level up is the [pipelines landing page](#navigate-to-pipelines).
 4. This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
-5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project.
+5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project that contains the pipeline.
+
+### View pipelines
+
+From the pipelines landing page, choose **Recent** to see recently run pipelines, or **All** to view all pipelines.
+
+![View pipelines](_img/view-pipelines.png)
+
+Select a pipeline to manage that pipeline and view its runs. Select the build number for the last run to view the results of that build, select the branch name to view the branch for that run, or select the context menu to run the pipeline and perform other management actions.
+
+![Pipeline context menu](_img/pipelines-overview-pipeline-context-menu.png)
+
+### View pipeline runs
+
+Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
+
+![View pipeline runs](_img/all-pipeline-runs.png)
+
+Select a pipeline run to view information about that run.
 
 ## Pipeline details
 
 The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](_img/pipeline-overview.png)
-
 
 ### Runs
 
