@@ -64,6 +64,20 @@
       href: sample-boards-leadcycletime.md
     - name: Boards - Add a team slicer
       href: sample-boards-teamslicer.md
+    - name: Pipelines - Outcome summary
+      href: sample-pipelines-outcomesummary.md
+    - name: Pipelines - Pass rate trend
+      href: sample-pipelines-passratetrend.md
+    - name: Pipelines - Stage wise failures
+      href: sample-pipelines-stagewisefailures.md
+    - name: Pipelines - Duration
+      href: sample-pipelines-duration.md
+    - name: Pipelines - Duration trend
+      href: sample-pipelines-durationtrend.md
+    - name: Pipelines - Task duration
+      href: sample-pipelines-taskduration.md
+    - name: Pipelines - Task duration trend
+      href: sample-pipelines-taskdurationtrend.md
   - name: Use Analytics views
     items:
     - name: Active bugs report 
