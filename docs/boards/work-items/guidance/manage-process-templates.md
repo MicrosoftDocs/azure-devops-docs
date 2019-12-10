@@ -24,8 +24,7 @@ When you create a project, the Project Creation Wizard (PCW) reads the process t
 > [!IMPORTANT]  
 > Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator).  
 >
-> To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
-
+> To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). To manage Hosted XML processes, see [Hosted XML process model](../../../organizations/settings/work/hosted-xml-process-model.md).
 
 
 ::: moniker-end
@@ -43,10 +42,15 @@ You can upload, download, and delete process templates for a project collection.
 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
+::: moniker range="<= azure-devops-2019"
+
 ## Prerequisites
 
-If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
+- Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
 
+	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
+
+- If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
 
 ## To manage a process template 
 
@@ -54,15 +58,16 @@ Open the same version of Visual Studio, Visual Studio Community, or Team Explore
 
 You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).  
 
-The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and Visual Studio 2019 opens the web portal **Collection Settings** or **Organization Settings**.  
+> [!NOTE]  
+> The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and Visual Studio 2019 opens the web portal **Collection Settings** or **Organization Settings**.  
 
 # [Visual Studio 2019](#tab/visual-studio-2019)
 
-1. From, Visual Studio 2019, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
+1. From Visual Studio 2019, connect to an on-premises Azure DevOps Server collection that uses On-premises XML process model. 
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process Template Manager](_img/process-template/open-process-template-manager-ado-2019.png)
+	> ![Open Process Template Manager](_img/process-template/choose-process-template-manager-2019.png)
 
 	A web browser tab opens to the **Organization Settings>Process** page. 
 
@@ -91,7 +96,7 @@ The way the Process Template Manager works changed with the release of Visual St
 
 # [Visual Studio 2017](#tab/visual-studio-2017)
 
-1. From, Visual Studio 2017, connect to an on-premises TFS collection. 
+1. From Visual Studio 2017, connect to an on-premises TFS collection. 
 
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
@@ -125,7 +130,7 @@ The way the Process Template Manager works changed with the release of Visual St
 
 # [Visual Studio 2015](#tab/visual-studio-2015)
 
-1. From, Visual Studio, open the Process Template Manager from the **Team, Team Project Collection Settings** menu.
+1. From Visual Studio 2015 or earlier version, open the Process Template Manager from the **Team>Team Project Collection Settings>Process Template Manager** bar menu.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process Template Manager](_img/open-process-template-manager.png)
@@ -185,10 +190,13 @@ The way the Process Template Manager works changed with the release of Visual St
    </table>
 
 
+::: moniker-end
+
 <a id="wit_correlation"> </a>
 
 ## Process template correlation with an existing project
-<p>To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.</p>
+
+To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.
 
 <table>
 <tbody valign="top">
@@ -213,7 +221,10 @@ The way the Process Template Manager works changed with the release of Visual St
 
 <a id="restrictions"> </a>
 
+::: moniker range="<= azure-devops-2019"
+
 ## Process template restrictions and validation checks 
+
 Uploading a process template requires that it pass the following validation checks:  
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
@@ -228,6 +239,10 @@ For additional restrictions, see [Naming restrictions](../../../organizations/se
 >
 >See [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
 
+
+::: moniker-end
+
+
 ## Related articles  
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
@@ -239,12 +254,21 @@ Periodically, updates are made to the process templates to support new features.
 - [Customize your work tracking experience](../../../reference/customize-work.md)  
 
 
+
+::: moniker range="<= tfs-2017"
+
 ### Update a process template to enable new features 
+
 When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
 ### Add another project 
+
 You can add a project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../../reference/process-templates/overview-process-template-files.md#client-support). 
 
-
+::: moniker-end
 
 
