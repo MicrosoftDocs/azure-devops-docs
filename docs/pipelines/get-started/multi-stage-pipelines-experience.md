@@ -16,12 +16,6 @@ monikerRange: '> azure-devops-2019'
 
 The multi-stage pipelines experience brings improvements and ease of use to the Pipelines portal UI. This article shows you how to view and manage your pipelines using this new experience.
 
->[!div class="checklist"]      
-> * Navigate to pipelines and view pipeline details
-> * Manage pipeline runs
-> * Download logs and artifacts
-> * View error cards on the summary page  
-
 ## Navigating pipelines
 
 You can view and manage your pipelines by choosing **Pipelines** from the left-hand menu.
@@ -98,13 +92,19 @@ From the pipeline run summary you can view the status of your run, both while it
 
 From the summary pane you can download artifacts, and navigate to linked commits, test results, and work items.
 
+### Cancel and re-run a pipeline
+
 If the pipeline is running, you can cancel it by choosing **Cancel**. If the run has completed, you can re-run the pipeline by choosing **Run new**.
 
 ![Cancel pipeline run](_img/cancel-pipeline-run.png)
 
+### Download logs
+
 From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run.
 
 ![Pipeline run summary context menu](_img/pipeline-run-summary-context-menu.png)
+
+### Jobs and stages
 
 The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
 
