@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
-ms.date: 11/05/2019
+ms.date: 12/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -218,6 +218,15 @@ When you are asked if you want to continue connecting, type `yes`. Git will clon
 ## Questions and Troubleshooting
 
 <a name="rememberpassphrase"></a>
+
+
+### After running git clone, I get the following error. What should I do?
+
+Host key verification failed. 
+fatal: Could not read from remote repository.
+
+Manually record the SSH key by running:
+`ssh-keyscan -t rsa domain.com >> ~/.ssh/known_hosts`
 
 ### How can I have Git remember the passphrase for my key on Windows?
 
