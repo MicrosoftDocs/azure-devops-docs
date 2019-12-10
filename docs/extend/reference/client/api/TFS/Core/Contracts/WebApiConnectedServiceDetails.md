@@ -16,7 +16,7 @@ ms.date: 08/25/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md)
+Extends: [WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md)
 
 ### Members
 

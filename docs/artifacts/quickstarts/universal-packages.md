@@ -56,7 +56,7 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+   > ![New feed dialog box](../_shared/_img/new-feed-dialog.png)
 
 You can change these settings later by editing the feed. With your feed selected, select **Edit feed** (the gear icon).
 

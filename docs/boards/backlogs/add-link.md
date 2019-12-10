@@ -1,5 +1,5 @@
 ﻿---
-title: Link user stories, issues, bugs, and other work items  
+title: Link user stories, issues, and other work items
 titleSuffix: Azure Boards
 description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
 ms.custom: seodec18  

@@ -1,5 +1,5 @@
 ---
-title: Get started with the REST APIs for Azure DevOps and Team Foundation Server
+title: Get started with the REST APIs for Azure DevOps and TFS
 description: Learn the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
@@ -144,13 +144,13 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/).
+The response is [JSON](https://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
 like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
+[API areas](/rest/api/azure/devops/git/) like [work item tracking](/rest/api/azure/devops/wit/)
 or [Git](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 

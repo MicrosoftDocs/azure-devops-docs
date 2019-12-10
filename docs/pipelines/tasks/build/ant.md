@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -45,18 +45,18 @@ The build agent must have the following capability:
 <tr>
 <td>Ant Build File</td>
 <td><p>Relative path from the repository root to the Ant build file.</p>
-<p>For more information about build files, see <a href="http://ant.apache.org/manual/using.html#buildfile" data-raw-source="[Using Apache Ant](http://ant.apache.org/manual/using.html#buildfile)">Using Apache Ant</a>.</p></td>
+<p>For more information about build files, see <a href="http://ant.apache.org/manual/using.html#buildfile" data-raw-source="[Using Apache Ant](https://ant.apache.org/manual/using.html#buildfile)">Using Apache Ant</a>.</p></td>
 </tr>
 <tr>
 <td>Options</td>
 <td><p>Options that you want to pass to the Ant command line.</p>
 <p>You can provide your own properties (for example, <code>-DmyProperty=myPropertyValue</code>) and also use built-in variables (for example, <code>-DcollectionId=$(system.collectionId)</code>).  Alternatively, the built-in variables are already set as environment variables during the build and can be passed directly (for example, <code>-DcollectionIdAsEnvVar=%SYSTEM_COLLECTIONID%</code>).</p>
-<p>See <a href="http://ant.apache.org/manual/running.html#options" data-raw-source="[Running Apache Ant](http://ant.apache.org/manual/running.html#options)">Running Apache Ant</a>.</p></td>
+<p>See <a href="http://ant.apache.org/manual/running.html#options" data-raw-source="[Running Apache Ant](https://ant.apache.org/manual/running.html#options)">Running Apache Ant</a>.</p></td>
 </tr>
 <tr>
 <td>Target(s)</td>
 <td><p>Target(s) for Ant to execute for this build. </p>
-<p>See <a href="http://ant.apache.org/manual/targets.html#targets" data-raw-source="[Using Apache Ant Targets](http://ant.apache.org/manual/targets.html#targets)">Using Apache Ant Targets</a>.</p></td>
+<p>See <a href="http://ant.apache.org/manual/targets.html#targets" data-raw-source="[Using Apache Ant Targets](https://ant.apache.org/manual/targets.html#targets)">Using Apache Ant Targets</a>.</p></td>
 </tr>
 <tr>
 <th style="text-align: center" colspan="2">JUnit Test Results</th>
@@ -81,7 +81,7 @@ The build agent must have the following capability:
 <td><p>Select the code coverage tool you want to use.</p>
 <p>If you are using the <a href="../../agents/hosted.md" data-raw-source="[Microsoft-hosted agents](../../agents/hosted.md)">Microsoft-hosted agents</a>, then the tools are set up for you. If you are using on-premises <a href="../../agents/v2-windows.md" data-raw-source="[Windows agent](../../agents/v2-windows.md)">Windows agent</a>, then if you select:</p>
 <ul>
-<li>JaCoCo, make sure jacocoant.jar is available in lib folder of Ant installation. See <a href="http://www.eclemma.org/jacoco/trunk/doc/ant.html" data-raw-source="[JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/ant.html)">JaCoCo</a>.</li>
+<li>JaCoCo, make sure jacocoant.jar is available in lib folder of Ant installation. See <a href="http://www.eclemma.org/jacoco/trunk/doc/ant.html" data-raw-source="[JaCoCo](https://www.eclemma.org/jacoco/trunk/doc/ant.html)">JaCoCo</a>.</li>
 <li>Cobertura, set up an environment variable COBERTURA_HOME pointing to the Cobertura .jar files location. See <a href="https://github.com/cobertura/cobertura/wiki/Ant-Task-Reference" data-raw-source="[Cobertura](https://github.com/cobertura/cobertura/wiki/Ant-Task-Reference)">Cobertura</a>.</li>
 </ul>
 <p>After you select one of these tools, the following arguments appear.</p>

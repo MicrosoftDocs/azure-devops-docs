@@ -1,5 +1,5 @@
----
-title: Use Azure Functions to create custom branch policies
+﻿---
+title: Use Azure Functions to create custom branch policy
 titleSuffix: Azure Repos
 description: Create a serverless function to listen to pull request events and post status on the pull request status API.
 ms.assetid: 
