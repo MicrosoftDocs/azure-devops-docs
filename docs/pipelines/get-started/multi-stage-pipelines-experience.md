@@ -92,7 +92,33 @@ Select **Analytics** to view pipeline metrics such as pass rate and run duration
 
 ![Pipeline analytics](_img/pipeline-analytics.png)
 
-## Pipeline runs
+## Pipeline run summary
+
+From the pipeline run summary you can view the status of your run, both while it is running and when it is complete.
+
+![Pipeline run summary](_img/pipeline-run-summary.png)
+
+From the summary pane you can download artifacts, and navigate to linked commits, test results, and work items.
+
+If the pipeline is running, you can cancel it by choosing **Cancel**.
+
+![Cancel pipeline run](_img/cancel-pipeline-run.png)
+
+You can re-run the pipeline by choosing **Run new**, and from the context menu you can perform various actions.
+
+![Pipeline run summary context menu](_img/pipeline-run-summary-context-menu.png)
+
+The jobs pane displays on overview of the status of your stages and jobs. This pane may have multiple tabs depending on whether your pipeline has stages and jobs, or just jobs. In this example the pipeline has two stages named **Build** and **Deploy**. You can drill down into the pipeline steps by choosing the job from either the **Stages** or **Jobs** pane.
+
+![Pipeline jobs](_img/pipeline-jobs-pane.png)
+
+Choose a job to see the tasks for that job.
+
+![Pipeline tasks](_img/pipeline-tasks-list.png)
+
+From the tasks view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
+
+![Pipeline tasks context menu](_img/pipeline-tasks-list-context-menu.png)
 
 ### Cancel and re-run a pipeline
 
