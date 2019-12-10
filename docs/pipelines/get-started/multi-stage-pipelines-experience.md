@@ -100,11 +100,11 @@ From the pipeline run summary you can view the status of your run, both while it
 
 From the summary pane you can download artifacts, and navigate to linked commits, test results, and work items.
 
-If the pipeline is running, you can cancel it by choosing **Cancel**.
+If the pipeline is running, you can cancel it by choosing **Cancel**. If the run has completed, you can re-run the pipeline by choosing **Run new**.
 
 ![Cancel pipeline run](_img/cancel-pipeline-run.png)
 
-You can re-run the pipeline by choosing **Run new**, and from the context menu you can perform various actions.
+From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run..
 
 ![Pipeline run summary context menu](_img/pipeline-run-summary-context-menu.png)
 
@@ -118,15 +118,9 @@ Choose a job to see the tasks for that job.
 
 From the tasks view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
 
-![Pipeline tasks context menu](_img/pipeline-tasks-list-context-menu.png)
+![Pipeline tasks context menu](_img/pipeline-tasks-context-menu.png)
 
-### Cancel and re-run a pipeline
 
-### Download logs and artifacts
-
-### Run new
-
-Run summary context menu
 
 
 
