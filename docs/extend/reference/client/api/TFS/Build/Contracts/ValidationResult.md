@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts ValidationResult API | Extensions for Azure DevOps Services
+description: Data representation of a validation result.
 ms.assetid: 94d451f9-47d8-37b3-d3db-12824c543cfd
 ms.prod: devops
 ms.technology: devops-ecosystem

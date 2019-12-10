@@ -38,7 +38,7 @@ To use Git, you'll need to have the client tools installed on your computer.
 
 [//]: # (Fix the 2015 link)
 * Install [Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=309297) or [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/visual-studio-2015-downloads-vs)
-* Or, if you're not using Visual Studio, [install the latest command line tools](http://git-scm.com/downloads) 
+* Or, if you're not using Visual Studio, [install the latest command line tools](https://git-scm.com/downloads) 
 
 [//]: # (The walkthrough below shows the steps for getting started with Git using Visual Studio.  If you're not using Visual Studio, check out one of these topics:)
  

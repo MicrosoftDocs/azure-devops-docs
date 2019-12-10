@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 02/19/2019
+ms.date: 11/22/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -22,6 +22,27 @@ In this quickstart, you learn how to perform a work item search to quickly find 
 <a name="start-search"></a>
 
 ## Initiate a search
+
+> [!NOTE]   
+> To enable the new user interface for Enable modern search, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Boards**, and then **Work items**.
+
+   ![Select Boards > Work items](_img/select-boards-work-items-preview.png)
+
+4. Enter your search.
+
+   ![Search work items](_img/search-work-items-modern.png)
+
+#### [Current page](#tab/current-page)
 
 1. Choose **Work > Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/_img/_shared/start-search-icon.png) start search icon.
 

@@ -1,15 +1,15 @@
 ---
 title: YAML schema
 ms.custom: seodec18
-description: An overview of all YAML features.
+description: An overview of all YAML syntax.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: sdanie
+author: steved0x
 ms.reviewer: macoope
-ms.date: 10/21/2019
+ms.date: 12/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -115,6 +115,7 @@ Note: Azure Pipelines doesn't support all features of YAML, such as anchors, com
 ```yaml
 name: string  # build numbering format
 resources:
+  pipelines: [ pipelineResource ]
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
 variables: { string: string } | [ variable | templateReference ]
@@ -510,6 +511,16 @@ See the schema references for [script](#script),
 [bash](#bash), [pwsh](#pwsh), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-templates) for more details about each.
 
+All steps, whether documented below or not, allow the following properties:
+- `displayName`
+- `name`
+- `condition`
+- `continueOnError`
+- `enabled`
+- `env`
+- `target`
+- `timeoutInMinutes`
+
 ## Variables
 
 Hardcoded values can be added directly, or [variable groups](library/variable-groups.md) can be referenced.
@@ -875,6 +886,87 @@ steps:
 ::: moniker-end
 
 ## Resources
+Any external service that is consumed as part of your pipeline is a resource. An example of a resource can be another CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub, etc.).
+
+Resources in YAML represent sources of types pipelines, repositories and containers.
+
+### General schema
+
+```yaml
+resources:
+  pipelines: [ pipeline ]  
+  repositories: [ repository ]
+  containers: [ container ]
+```
+
+### Pipeline resource
+If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipeline` resource. 
+And you can also enable pipeline completion triggers.
+
+# [Schema](#tab/schema)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: string  # identifier for the pipeline resource
+    project:  string # project for the build pipeline; optional input for current project
+    source: string  # source pipeline definition name
+    branch: string  # branch to pick the artifact, optional; defaults to all branches
+    version: string # pipeline run number to pick artifact; optional; defaults to last successfully completed run
+    trigger:     # optional; Triggers are not enabled by default.
+      branches:  
+        include: [string] # branches to consider the trigger events, optional; defaults to all branches.
+        exclude: [string] # branches to discard the trigger events, optional; defaults to none. 
+```
+# [Example](#tab/example)
+
+```yaml
+resources: 
+  pipelines:
+  - pipeline: MyAppA 
+    source: MyCIPipelineA
+  - pipeline: MyAppB
+    source: MyCIPipelineB
+    trigger: true
+  - pipeline: MyAppC
+    project:  DevOpsProject 
+    source: MyCIPipelineC
+    branch: releases/M159  
+    version: 20190718.2 
+    trigger:
+      branches:  
+        include:  
+        - master
+        - releases/*
+        exclude:   
+        - users/*  
+```
+
+---
+
+>[!IMPORTANT]
+>When you define the resource trigger, if the `pipeline` resource is from the same repo as the current pipeline, we will follow the same branch and commit on which the event is raised. However, if the `pipeline` resource is from a different repo, the current pipeline is triggered on the master branch.
+
+#### `pipeline` resource meta-data as pre-defined variables.
+In each run, the meta-data for `pipeline` resource is available to all the jobs as pre-defined variables.
+
+```yaml
+resources.pipeline.<Alias>.projectName 
+resources.pipeline.<Alias>.projectID 
+resources.pipeline.<Alias>.pipelineName 
+resources.pipeline.<Alias>.pipelineID 
+resources.pipeline.<Alias>.runName 
+resources.pipeline.<Alias>.runID
+resources.pipeline.<Alias>.runURI
+resources.pipeline.<Alias>.sourceBranch 
+resources.pipeline.<Alias>.sourceCommit
+resources.pipeline.<Alias>.sourceProvider 
+resources.pipeline.<Alias>.requestedFor
+resources.pipeline.<Alias>.requestedForID
+```
+
+You can consume artifacts from pipeline resource using `download` task. See the [download](yaml-schema.md#download) keyword.
+
 
 ### Container resource
 
@@ -923,9 +1015,21 @@ resources:
 
 ### Repository resource
 
+::: moniker range="azure-devops-2019"
+
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must
 let the system know about that repository. The `repository` resource lets you
 specify an external repository.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must
+let the system know about that repository. The `repository` resource lets you
+specify an external repository.
+
+::: moniker-end
 
 # [Schema](#tab/schema)
 
@@ -947,21 +1051,25 @@ resources:
   - repository: common
     type: github
     name: Contoso/CommonTools
+    endpoint: MyContosoServiceConnection
 ```
 
 ---
 
 #### Type
 
-Pipelines support two types of repositories, `git` and `github`. `git` refers to
-Azure Repos Git repos. If you choose `git` as your type, then `name` refers to another
+Pipelines support the following types of repositories: `git`, `github`, and `bitbucket`. `git` refers to
+Azure Repos Git repos. 
+
+- If you choose `git` as your type, then `name` refers to another
 repository in the same project. For example, `otherRepo`. To refer to a repo in
 another project within the same organization, prefix the name with that project's name.
 For example, `OtherProject/otherRepo`.
-
-If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. Also,
-GitHub repos require a [service connection](library/service-endpoints.md)
+- If you choose `github` as your type, then `name` is the full name of the GitHub
+repo including the user or organization. For example, `Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md#sep-github)
+for authorization.
+- If you choose `bitbucket` as your type, then `name` is the full name of the Bitbucket Cloud
+repo including the user or organization. For example, `MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket)
 for authorization.
 
 ## Triggers
@@ -969,6 +1077,9 @@ for authorization.
 * [Push trigger](#push-trigger)
 * [PR trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+
+> [!NOTE]
+> Trigger blocks cannot contain variables or template expressions.
 
 ### Push trigger
 
@@ -1340,8 +1451,8 @@ environment: 'smarthotel-dev.bookings'
 ## Server
 
 `server` specifies a [server job](process/phases.md#server-jobs).
-Only server tasks such as [manual intervention](tasks/utility/manual-intervention.md)
-or [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+Only server tasks such as [invoking an Azure Function](tasks/utility/azure-function.md) can be run in a server job.
+<!-- some glorious day, [manual intervention](tasks/utility/manual-intervention.md) will work too -->
 
 # [Schema](#tab/schema)
 
@@ -1378,8 +1489,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- script:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1392,8 +1513,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Bash
 
@@ -1412,8 +1533,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- bash:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1430,8 +1561,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and
-[timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Pwsh
 
@@ -1598,26 +1729,36 @@ Learn more about [publishing artifacts](./artifacts/pipeline-artifacts.md#publis
 
 ## Download
 
-`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run to `$(Pipeline.Workspace)`. It can also be used to disable automatic downloading of artifacts in classic release and deployment jobs.
+`download` is a shortcut for the [Download Pipeline Artifact task](tasks/utility/download-pipeline-artifact.md). It will download one or more artifacts associated with the current run or from another Azure pipeline that is associated as a `pipeline` resource.
 
 # [Schema](#tab/schema)
 
 ```yaml
 steps:
-- download: [ current | none ] # disable automatic download if "none"
-  artifact: string # artifact name
-  patterns: string # patterns representing files to include
+- download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
+  artifact: string # artifact name; optional; downloads all the avaialable artifacts if not specified
+  patterns: string # patterns representing files to include; optional
 ```
+### Artifact download location
+
+Artifacts from the current pipeline are downloaded to `$(Pipeline.Workspace)/`.
+
+Artifacts from the associated `pipeline` resource are downloaded to `$(Pipeline.Workspace)/<pipeline resource identifier>/`.
+
+### Automatic download in deployment jobs
+
+All available artifacts from the current pipeline and from the associated pipeline resources are automatically downloaded in deployment jobs and made available for your deployment. However, you can choose to not download by specifying `download: none`.
 
 # [Example](#tab/example)
 
 ```yaml
 steps:
-- download: current
+- download: current  # refers to artifacts published by current pipeline
   artifact: WebApp
   patterns: '**/.js'
-```
+- download: MyAppA   # downloads artifacts available as part of the pipeline resource
 
+```
 ---
 
 Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts).
@@ -1630,6 +1771,8 @@ You can configure or suppress this behavior with `checkout`.
 
 # [Schema](#tab/schema)
 
+::: moniker range="azure-devops-2019"
+
 ```yaml
 steps:
 - checkout: self  # self represents the repo where the initial Pipelines YAML file was found
@@ -1640,6 +1783,23 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+```yaml
+steps:
+- checkout: self | none | repository name # self represents the repo where the initial Pipelines YAML file was found
+  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
+  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
+  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+```
+
+::: moniker-end
 
 Or to avoid syncing sources at all:
 
@@ -1660,6 +1820,22 @@ steps:
   persistCredentials: true
 ```
 
+::: moniker range="> azure-devops-2019"
+
+To check out multiple repositories in your pipeline, use multiple `checkout` steps.
+
+```yaml
+- checkout: self
+- checkout: git://MyProject/MyRepo
+- checkout: MyGitHubRepo # Repo declared in a repository resource
+```
+
+For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
+
+
+
+::: moniker-end
+
 # [Example](#tab/example)
 
 ```yaml
@@ -1670,6 +1846,32 @@ steps:
   lfs: true
   path: PutMyCodeHere
 ```
+
+::: moniker range="> azure-devops-2019"
+
+In the following example, three repositories are checked out: a GitHub repository named `tools` declared in repository resources, an Azure Repos Git repository named `resources` declared inline with the `checkout` step, and `self`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubToolsRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubToolsOrg/tools
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: MyGitHubToolsRepo
+- checkout: git://MyResourcesProject/resources
+```
+
+::: moniker-end
 
 ---
 
@@ -1688,9 +1890,19 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether or not to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- task:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1705,6 +1917,9 @@ steps:
 ```
 
 ---
+
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Syntax highlighting
 

@@ -18,7 +18,8 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
 Use a variable group to store values that you want to control and make available across
-multiple pipelines. Variable groups are defined and managed in the **Library** page under
+multiple pipelines. You can also use variable groups to store secrets and other values
+that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group). Variable groups are defined and managed in the **Library** page under
 **Pipelines**.
 
 ::: moniker range="< tfs-2018"

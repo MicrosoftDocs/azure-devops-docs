@@ -1,7 +1,7 @@
 ---
 title: Bulk modify work items using Microsoft Excel
 titleSuffix: Azure Boards  
-description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards or Team Foundation Server   
+description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/03/2019  
 ---
 
 
@@ -18,28 +18,61 @@ ms.date: 11/19/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you have a lot of work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
+When you have many work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
-You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
+::: moniker range="azure-devops"
+> [!NOTE]  
+> If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
 
-In this article you'll learn:  
+::: moniker-end
 
->[!div class="checklist"]    
+In this article you'll learn how to perform the following tasks:  
+
+> [!div class="checklist"]    
 > * Connect to a project from Excel 
-> * Add or edit work items and publish your changes to Azure Boards or TFS
+> * Add or edit work items and publish your changes to Azure Boards or Azure DevOps
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
 > * Add hierarchically linked backlog items and tasks   
 > * Work with different list types    
-  
+
+::: moniker range="azure-devops" 
+> [!NOTE]   
+> While the examples shown here primarily represent connecting to an on-premises Azure DevOps Server, you can connect to the cloud service Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
+> [!NOTE]   
+> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
+::: moniker-end  
+
+For answers to specific questions about the integration of Microsoft Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).
+
 
 ## Prerequisites 
 
-::: moniker range=">= tfs-2017" 
+::: moniker range="azure-devops" 
 
+Integration of Microsoft Excel with the cloud service for Azure Boards is fully supported. 
+
+- First you need to connect your Excel worksheet to a particular project, if you don't have an Azure Boards Project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).   
+- You'll need [permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2017 < azure-devops" 
+
+ - First you need to connect your Excel worksheet to a particular project, if you don't have an project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
 - Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
-- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
 
 ::: moniker-end  
 
@@ -61,8 +94,14 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409), you'll need to install one of these versions to connect to an Azure DevOps or TFS project. 
 	
+	::: moniker range=">= azure-devops-2019"
 	> [!NOTE]   
-	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	> The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or theAzure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.
+	::: moniker-end
+	::: moniker range="<= tfs-2018"
+	> [!NOTE]   
+	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+	::: moniker-end
 
 3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
 
@@ -82,52 +121,104 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	**Azure Boards**  
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, (4) check that the preview matches the URL that you entered, and then choose **OK**. 
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, and (4) check that the preview matches the URL that you entered. Then choose **OK**. 
 
 	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
 
-	**TFS**  
+	**Azure DevOps Server or TFS**  
 
-	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your TFS instance. As needed, change the Port number if your deployment uses a non-default port number.   The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a non-default port number. The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
     ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
+	> [!TIP]    
+	> You can use multiple worksheets within an Excel workbook to work with different input or query lists. However, you can only connect to one project per workbook.
+
 5. From the New List dialog, choose **Input list**.  
 
+	::: moniker range=">= tfs-2017"
+    ![Select input list](_img/excel/2019-input-list-dialog.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
+	::: moniker-end
+
+	If, instead, you want to work with a list of work items defined in a query, choose **Query list**.
 
 6.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Empty flat list connected to a project](_img/excel/2019-input-list.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
     ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
+	::: moniker-end
 
 7.  Specify the titles of the work items you want to add and their work item type.
 
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Add work items to Excel](_img/excel/2019-specify-titles.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
     ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
+	::: moniker-end
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
 8.  Publish your worksheet.
 
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Add work items to Excel](_img/excel/2019-publish.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
     ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
+	::: moniker-end
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
 
     Notice how IDs are now assigned to your work items.
 
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Published work item IDs show in Excel](_img/excel/2019-ids-assigned.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
     ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
+	::: moniker-end
 
 9.  Also, note how you can open a work item in the web portal to add more information.
 
-    ![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
+	::: moniker range=">= tfs-2017"
+	> [!div class="mx-imgBorder"]  
+	> ![Open a work item in the web portal from Excel](_img/excel/2019-open-in-web-access.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
+	![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
+	::: moniker-end
 
-    ![Work item displayed in the web portal](_img/bulk-modify-excel-user-story-web-access.png)
+::: moniker range=">= azure-devops" 
+
+You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. You can also make changes to work items using the [az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) command.
+
+::: moniker-end  
+
+::: moniker range="azure-devops-2019" 
+You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. 
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
 
 You can make changes to work items in Excel, Project, the web portal, or Visual Studio, or Team Explorer Everywhere.
 
+::: moniker-end  
+
 > [!TIP]
->**Follow these tips to keep your work in sync:**   
+> **Follow these tips to keep your work in sync:**   
 >- When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](_img/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.  
 >- Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](_img/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.  
 >- To avoid data conflicts, publish your additions and modifications often.  
@@ -135,6 +226,7 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 
 
 <a id="select-user"></a>
+
 ## Select user accounts 
 
 > [!NOTE]  
@@ -144,11 +236,11 @@ You can use the Select User feature to find user accounts and assign values to p
 
 1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
-2. Click a person-named field to activate the Select User feature in the team ribbon.  
+2. Choose a person-named field to activate the **Select User** feature in the Team ribbon.  
 
 	![Team ribbon, Select User](_img/bulk-add-excel-select-user-team-ribbon.png)  
 
-	A person-named field is any field whose ```syncnamechanges``` attribute has been set to [synchronize with Active Directory, Azure Active Directory, or a Workgroup](../../../reference/xml/field-definition-element-reference.md).  
+	A person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Azure Active Directory, Active Directory, or a Workgroup. Such fields are identified as those whose `syncnamechanges` attribute has been set to [synchronize](../../../reference/xml/field-definition-element-reference.md).  
 
 3. Begin typing the name of the user account and the Assign User dialog will automatically filter the results until you can select the account of interest.  
 
@@ -165,13 +257,22 @@ You can use the Select User feature to find user accounts and assign values to p
 
 <a id="tree-list"></a>
 
-## Add linked backlog items and tasks 
+## Add a hierarchy of linked work items
 
-You can bulk add a nested list of work items, such as a work break down structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
+You can bulk add a nested list of work items, such as a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
 
 Here's how a three-level nested tree of items appears in Excel:   
 
 ![Tree list of work items](_img/IC354953.png)
+
+> [!IMPORTANT]  
+> Note that only the Parent-Child link types are supported by the Tree list. 
+
+Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
+
+[!INCLUDE [temp](../../_shared/work-item-types-hierarchy.md)]
+
+To import a hierarchical list, perform the following steps: 
 
 1.  Follow steps 1 through 6 from the previous procedure.
 
@@ -261,7 +362,7 @@ If the Tree group commands are not available, your worksheet is configured as a 
 
 ### Convert a tree to a flat list
 
-First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. This will flatten the tree structure and change the query list to an input list.
+First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. These actions flatten the tree structure and change the query list to an input list.
 
 ### Remove a tree level
 
@@ -280,71 +381,21 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
-## Bulk edit test cases
-
-You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
 
 ## Related articles
 
-While the examples shown here represent connecting to an on-premises TFS, you can connect to Azure Boards and bulk add and modify work items. Once you've connected to the cloud server, you use the same procedures to work in Excel. 
-
+::: moniker range="azure-devops"
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
-- [Basic Excel tasks](https://support.office.com/Article/Basic-tasks-in-Excel-2013-363600c5-55be-4d6e-82cf-b0a41e294054) 
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
+- [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+::: moniker-end
 
-To bulk edit links, you can use these clients:  
--   Use Excel to edit parent-child or hierarchical links.  
--   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
--   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
--   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
-
-To resolve publishing errors, see one of these topics:   
-
-- [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)  
-- [Data validation errors](resolve-excel-data-validation-errors.md)  
-- [Invalid links](resolve-excel-invalid-links-tree-list.md)  
-
-### Delete work items
-
-You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
-
-### Direct link query converts to flat list
-
-When you open a direct links query in Excel, the Team Foundation add-in converts the list to a flat list. While you can modify values for the fields and add work items, you can't view nor modify link relationships. 
-
-### Multiple worksheets
-
-Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
-
-To bulk add or modify work items in a different project, open a new Excel workbook. 
-
-### Use Excel cut and paste functions
-
-You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to re-sequence items within a list and change link relationships among work items.
-
-To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
-
-> [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  
-
-### Web portal and Excel access
-
-To open Excel from a web portal query, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) marketplace extension. 
-
-To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
-
-Once you've installed Visual Studio, open Excel and look for the Team ribbon.
-
-### Disable the Team Foundation Add-in 
-
-If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/en-sg/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460).
-
-### Enable the Developer tab 
-
-See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon).
-
-### Excel for Mac 
-
-macOS is not supported. You need to use Excel on the same computer where you have installed Visual Studio or Team Explorer in order to get the Team Foundation add-in. These applications require Windows.
-
-
-
+::: moniker range="< azure-devops"
+- [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
+- [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md)
+- [Create Excel reports from a work item query](../../../report/excel/create-status-and-trend-excel-reports.md)
+- [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
+::: moniker-end

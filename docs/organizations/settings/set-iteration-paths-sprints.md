@@ -1,5 +1,5 @@
----
-title: Define iteration paths or sprints for a project or team 
+﻿---
+title: Define sprints for a project or team
 titleSuffix: Azure Boards 
 description: Define the iterations or sprints to use when assigning work items in Azure DevOps
 ms.technology: devops-agile
@@ -20,7 +20,7 @@ ms.date: 11/06/2019
 You add Iteration Paths to support teams who implement Scrum or use sprint planning to group work items based on a time-box interval or sprint. You define Iteration Paths at the project level and then each team selects the ones they want to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
 > [!NOTE] 
-> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes) or the Azure DevOps CLI commands, [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration) and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
+> Area Paths and Iteration Paths are also referred to as *Classification Nodes*. You can manage them programmatically via the [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) or the Azure DevOps CLI commands, [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration) and [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration).
 
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and selected Iteration Paths or sprints. Most teams choose one Area Path and several Iteration Paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several Area Paths to appear on their backlogs and boards. 
 
@@ -506,7 +506,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
+3. **Default iteration**. The default iteration defines the iteration used when a new work item is created from the team's context (Dashboard, Queries, Backlog). You can use an explicit value or use <strong>@CurrentIteration</strong> to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
 	For example, you might want all new work items to be added to a future iteration path which you use to triage and assign to specific sprints at periodic intervals.  
 
@@ -885,14 +885,14 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 ::: moniker range="azure-devops"
 - [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification-nodes)
+- [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
 
 ::: moniker-end

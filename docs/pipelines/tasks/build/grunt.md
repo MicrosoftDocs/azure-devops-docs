@@ -57,7 +57,7 @@ The build agent must have the following capability:
 <tr>
 <td>Arguments</td>
 <td>
-<p>Additional arguments passed to Grunt. See <a href="http://gruntjs.com/using-the-cli" data-raw-source="[Using the CLI](http://gruntjs.com/using-the-cli)">Using the CLI</a>.</p><p>Tip: <code>--gruntfile</code> is not needed. This argument is handled by the Grunt file path argument shown above.</p>
+<p>Additional arguments passed to Grunt. See <a href="http://gruntjs.com/using-the-cli" data-raw-source="[Using the CLI](https://gruntjs.com/using-the-cli)">Using the CLI</a>.</p><p>Tip: <code>--gruntfile</code> is not needed. This argument is handled by the Grunt file path argument shown above.</p>
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ The build agent must have the following capability:
 
 ## Example
 
-See [Sample Gruntfile](http://gruntjs.com/sample-gruntfile).
+See [Sample Gruntfile](https://gruntjs.com/sample-gruntfile).
 
 ## Open source
 

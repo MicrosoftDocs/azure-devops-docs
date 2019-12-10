@@ -147,7 +147,8 @@ You should not set secret variables in your YAML file. Instead, you should set t
 
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
-The following example shows how to pass a secret variable called `mySecret` set in the web interface to a script.
+The following example shows how to use a secret variable called `mySecret` from a script.
+Note that unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
 
 ```yaml
 steps:
@@ -185,7 +186,11 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
+Imagine you want to use a secret variable called `mySecret` from a script.
+Unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
 To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
+In the left column, give the variable a name to be used in the environment.
+In the right column, dereference the secret variable like this: `$(mySecret)`.
 
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
@@ -379,6 +384,37 @@ jobs:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:
   - script: "echo $(myVarFromJobsA1)"
+    name: echovar
+```
+
+The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
+
+```yaml
+jobs:
+
+# Set an output variable from a deployment
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job for the first slice
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
 

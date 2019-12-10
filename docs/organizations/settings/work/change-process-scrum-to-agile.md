@@ -1,5 +1,5 @@
 ---
-title: Change process from Scum to Agile
+title: Change process from Scrum to Agile
 titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Scrum to Agile

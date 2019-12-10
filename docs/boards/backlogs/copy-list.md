@@ -1,5 +1,5 @@
----
-title: Copy a list of user stories, issues, bugs, tasks, or other work items 
+﻿---
+title: Copy list of stories, issues, or other work items
 titleSuffix: Azure Boards   
 description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
 ms.custom: seodec18

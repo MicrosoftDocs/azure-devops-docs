@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
-ms.author: jobourne
-author: thejoebourneidentity
+ms.author: sdanie
+author: steved0x
 ms.date: 09/20/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Microsoft-hosted agents

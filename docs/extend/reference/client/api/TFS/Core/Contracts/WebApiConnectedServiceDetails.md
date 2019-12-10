@@ -1,5 +1,6 @@
 ---
 title: TFS/Core/Contracts WebApiConnectedServiceDetails API | Extensions for Azure DevOps Services
+description: Data representation of Web API connected service details.
 ms.assetid: c62f3d01-9ba3-3ec5-970a-124a9e27c2e0
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -15,7 +16,7 @@ ms.date: 08/25/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md)
+Extends: [WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md)
 
 ### Members
 
