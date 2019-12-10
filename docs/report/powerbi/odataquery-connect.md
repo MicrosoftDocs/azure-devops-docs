@@ -151,9 +151,11 @@ Replace the "[Implementation='2.0']" with the following string:
 > ![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor2.png)
 
 These steps accomplish the following actions: 
-- Instructs Power BI to reference OData v4
-- Instructs the Analytics Service to omit any values that are null.
-- 
+
+- **Prevent throttling errors** - Power Query will attempt to resolve null values as errors, by generating an additional query for every null it encounters. This can result in 1000's of queries, which will  quickly exceed the usage threshold where your user account will be throttled.
+- Instruct Power BI to reference OData v4
+- Instruct the Analytics Service to omit any values that are null, which improves query performance
+
 These actions are required for Power BI to successfully execute an OData query against the Azure DevOps Analytics service.
 
 Select **OK** to close the Advanced Editor and return to Power BI's Power Query editor. You can use the Power Query Editor to perform the optional actions:  
