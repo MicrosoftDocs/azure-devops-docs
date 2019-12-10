@@ -29,8 +29,8 @@ At the top of each page is a breadcrumb navigation bar. Select the different are
 ![Breadcrumb navigation](_img/breadcrumb-navigation.png)
 
 1. This area of the breadcrumb navigation shows you what page you're currently viewing. In this example, the page is the run summary for run number **20191209.3**.
-2. One level up is a link to the [pipeline details](#pipeline-details) for that run.
-3. The next level up is the [pipelines landing page](#navigate-to-pipelines).
+2. One level up is a link to the [pipeline details](#view-pipeline-details) for that run.
+3. The next level up is the [pipelines landing page](#pipelines-landing-page).
 4. This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
 5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project that contains the pipeline.
 
@@ -40,7 +40,7 @@ Many pages also contain a back button that takes you to the previous page.
 
 ## Pipelines landing page
 
-From the pipelines landing page you can [view pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs), create and import pipelines, [manage pipelines security](#manage-security), and drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details.
+From the pipelines landing page you can view pipelines and pipeline runs, create and import pipelines, manage security, and drill down into pipeline and run details.
 
 Choose **Recent** to view recently run pipelines (the default view), or choose **All** to view all pipelines.
 
