@@ -22,7 +22,7 @@ When you create a project, the Project Creation Wizard (PCW) reads the process t
 
 ::: moniker range="azure-devops"
 > [!IMPORTANT]  
-> Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator).  
+> Uploading and downloading Inherited processes isn't supported. However, you may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator).  
 >
 > To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md). To manage Hosted XML processes, see [Hosted XML process model](../../../organizations/settings/work/hosted-xml-process-model.md).
 
