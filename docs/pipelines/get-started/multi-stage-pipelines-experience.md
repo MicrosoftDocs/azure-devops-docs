@@ -28,7 +28,7 @@ You can view and manage your pipelines by choosing Pipelines from the left-hand 
 
 ![View pipelines](_img/pipelines-overview.png)
 
-From the pipelines landing page you can create new pipelines, import pipelines, manage security options, and view pipelines and pipeline runs.
+From the pipelines landing page you can create and import pipelines, manage security options, and view pipelines and pipeline runs.
 
 ### View pipelines and pipeline runs
 
@@ -45,6 +45,18 @@ Select a pipeline to manage that pipeline and view its runs. Select the build nu
 Select a pipeline run to view information about that run.
 
 ![Pipeline run context menu](_img/pipeline-run-context-menu.png)
+
+### Breadcrumb navigation
+
+At the top of each page is a breadcrumb navigation bar. Select the different areas of the bar to navigate to different areas of the portal. The breadcrumb navigation is a convenient way to go back a step, for example when you are viewing pipeline runs, you can use the breadcrumb link to go back to the pipeline overview page.
+
+![Breadcrumb navigation](_img/breadcrumb-navigation.png)
+
+1. This area of the breadcrumb navigation shows you what page you're currently viewing. In this example, the page is the run summary for run number **20191209.3**.
+2. One level up is a link to the [pipeline details](#pipeline-details) for that run.
+3. The next level up is the [pipelines landing page](#navigate-to-pipelines).
+4. This link is to the **FabrikamFiber** project, which contains the pipeline for this run.
+5. The root breadcrumb link is to the Azure DevOps **fabrikam-tailspin** organization, which contains the project.
 
 ## Pipeline details
 
