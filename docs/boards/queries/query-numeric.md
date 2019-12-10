@@ -250,7 +250,7 @@ The following table describes the activity-based and numeric fields that you can
     <td>Epic, Feature</td>
 </tr>
 <tr>
-    <td><p>Completed Work</p></td>
+    <td><a id="completed-work" /><p>Completed Work</p></td>
     <td><p>The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>Reference name=Microsoft.VSTS.Scheduling.CompletedWork, Data type=Double</p>
 </td>
@@ -293,7 +293,7 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug <sup>4</sup> (Agile and CMMI)</td>
 <tr>
-    <td><p>Remaining Work</p></td>
+    <td><a id="remaining-work" /><p>Remaining Work</p></td>
     <td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
