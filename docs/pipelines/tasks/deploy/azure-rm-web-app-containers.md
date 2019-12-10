@@ -61,7 +61,7 @@ steps:
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 
