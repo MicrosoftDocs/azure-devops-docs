@@ -158,7 +158,7 @@
       href: apps/cd/deploy-docker-webapp.md
     - name: Azure Kubernetes Service
       href: apps/cd/deploy-aks.md
-    - name: IoT edge
+    - name: IoT Edge
       href: release/deploy-iot-using-azure-pipelines.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
@@ -186,28 +186,29 @@
     items:
     - name: Test glossary
       href: test/test-glossary.md
+    - name: UI testing considerations
+      href: test/ui-testing-considerations.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
     - name: Review test results
       href: test/review-continuous-test-results-after-build.md
     - name: Analyze test results
-      href: test/test-analytics.md
+      href: test/test-analytics.md  
+    - name: Requirements traceability
+      href: test/requirements-traceability.md
     - name: Review code coverage
       href: test/review-code-coverage-results.md
     - name: Code coverage for pull requests
-      href: test/codecoverage-for-pullrequests.md    
-    - name: Requirements traceability
-      href: test/requirements-traceability.md
-    - name: Use Test Impact Analysis
-      href: test/test-impact-analysis.md
+      href: test/codecoverage-for-pullrequests.md  
     - name: Run tests in parallel
       href: test/parallel-testing-any-test-runner.md
     - name: Parallel test with VSTest
       href: test/parallel-testing-vstest.md
-    - name: Flaky test management
+    - name: Manage flaky tests
       href: test/flaky-test-management.md
-    - name: UI testing considerations
-      href: test/ui-testing-considerations.md
+    - name: Use Test Impact Analysis
+      href: test/test-impact-analysis.md
+
   - name: Package
     items:
     - name: NuGet
@@ -283,7 +284,7 @@
       href: artifacts/symbols.md
     - name: Universal 
       href: artifacts/universal-packages.md
-  - name: Caching (preview)
+  - name: Caching
     href: caching/index.md
   - name: Conditions
     href: process/conditions.md
@@ -352,6 +353,8 @@
     - name: Pipeline options for Git
       href: repos/pipeline-options-for-git.md
       displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
+    - name: Multi-repo checkout
+      href: repos/multi-repo-checkout.md
   - name: Resources
     href: process/resources.md
   - name: Retention policy

@@ -1,5 +1,5 @@
----
-title: Migration options for migrating from Azure DevOps Server to Azure DevOps Services
+﻿---
+title: Migrating from Azure DevOps Server to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Learn about migrating from Azure DevOps Server to Azure DevOps Services
 ms.prod: devops

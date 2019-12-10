@@ -1,5 +1,5 @@
----
-title: Troubleshoot adding, removing users in an organization
+﻿---
+title: Troubleshoot adding/removing users in organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like the permissions that are required to manage users and user access, find the organization Owner, manage Visual Studio subscriptions, and more.
@@ -99,7 +99,7 @@ If you don’t complete these steps by September 30, 2019, and your users are do
 
 ### Q: What does "Last Access" mean in the All Users view?
 
-The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 

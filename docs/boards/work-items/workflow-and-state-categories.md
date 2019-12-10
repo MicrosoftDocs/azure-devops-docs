@@ -1,5 +1,5 @@
----
-title: Understand how backlogs and boards use workflow states and state categories
+﻿---
+title: Backlogs/boards workflow states & state categories
 titleSuffix: Azure Boards   
 description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
 ms.custom: seodec18   

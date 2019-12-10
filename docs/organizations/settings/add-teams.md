@@ -1,4 +1,4 @@
----
+﻿---
 title: Add a team, move from one team to several teams
 titleSuffix: Azure DevOps 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
@@ -830,4 +830,4 @@ Once you've created a team, you'll want to configure your Agile tools to support
 - [About teams and Agile tools](about-teams-and-settings.md)
 - [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
-- [Work Items (REST API)](/rest/api/azure/devops/wit/work-items)
+- [Work Items (REST API)](/rest/api/azure/devops/wit)

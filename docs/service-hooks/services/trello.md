@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Trello
+title: Create a service hook with Trello
 description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 ms.manager: mijacobs
@@ -169,8 +169,8 @@ So ```{{workitem.fields["System.workItemType"]}}``` becomes ```{{workitem.workIt
 
 ### Placeholder expressions
 
-These placeholders use a [handlebars templates](http://handlebarsjs.com/)
-implementation that is largely compatible with [Mustache](http://mustache.github.io/mustache.5.html).
+These placeholders use a [handlebars templates](https://handlebarsjs.com/)
+implementation that is largely compatible with [Mustache](https://mustache.github.io/mustache.5.html).
 Some useful expressions include
 
 Type of expression         | examples
@@ -197,6 +197,6 @@ A: Yes, see details [here](../create-subscription.md).
 
 #### Q: Can I get more information about Trello?
 
-A: Yes, [trello.com](http://www.trello.com/).
+A: Yes, [trello.com](https://www.trello.com/).
 
 <!-- ENDSECTION -->

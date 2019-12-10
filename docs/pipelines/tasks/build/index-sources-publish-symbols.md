@@ -1,5 +1,5 @@
 ---
-title: Index Sources & Publish Symbols build and release task
+title: Index Sources & Publish Symbols
 ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
@@ -188,7 +188,7 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 [Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
 
-[Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
+[Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

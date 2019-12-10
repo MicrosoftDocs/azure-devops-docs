@@ -1,5 +1,5 @@
----
-title: View and configure team velocity based on Analytics data
+﻿---
+title: View and configure team velocity
 titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
 ms.custom: dashboards   

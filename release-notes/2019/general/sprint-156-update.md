@@ -1,5 +1,6 @@
 ---
 title: General - Sprint 156 Update
+description: See the Sprint 156 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

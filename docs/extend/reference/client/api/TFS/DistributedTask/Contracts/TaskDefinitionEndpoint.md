@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts TaskDefinitionEndpoint API | Extensions for Azure DevOps Services
+description: Data representation of a task definition endpoint.
 ms.assetid: f7aca1ca-9898-26b4-c0c0-538a23089553
 ms.prod: devops
 ms.technology: devops-ecosystem

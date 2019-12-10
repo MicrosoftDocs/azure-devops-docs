@@ -1,5 +1,5 @@
----
-title: Use the Lock Command to lock or unlock a TFVC file or folder
+﻿---
+title: Use Lock Command to lock/unlock a TFVC file/folder
 titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
@@ -33,7 +33,7 @@ To use the **lock** command, you must have the **Lock** permission set to **Allo
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>itemspec</em></p></td>
-	<td><p>Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
+	<td><p>Identifies the file or folder to lock or unlock. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
 <tr>
 	<td><p><em>workspacename</em></p></td>
 	<td><p>The user-provided value for the <strong>/workspace</strong> option.</p></td></tr>

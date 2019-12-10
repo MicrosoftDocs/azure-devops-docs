@@ -46,11 +46,11 @@ If you’ve been using the [new portfolio backlogs](https://visualstudio.microso
 
 ## Work Items from Code Discussion
 
-You can now create work items directly from [code comments](https://visualstudio.microsoft.com/articles/news/2013/jun-03-team-services). Just click the new work item button on the right side of the comment and you’re off and running. As you would expect, work items created through this experience are automatically linked to the changeset you’re working from.
+You can now create work items directly from [code comments](../2015/jun-03-team-services.md#mention-work-items). Just click the new work item button on the right side of the comment and you’re off and running. As you would expect, work items created through this experience are automatically linked to the changeset you’re working from.
 
 ![Create a bug directly from code comments](_img/9_09_05.png)
 
-That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
+That’s it for this sprint 53! As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,
 

@@ -25,7 +25,7 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 
 Do you need to do any of the following?
 
-* **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](http://stackoverflow.com/questions/tagged/tfs).
+* **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
 
 * **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
@@ -163,5 +163,5 @@ A page similar to the following example opens showing the version number.
 
 ## Related articles
 
-* [Azure DevOps features timeline](../extend/support/release-notes.md)
+* [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
 * [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

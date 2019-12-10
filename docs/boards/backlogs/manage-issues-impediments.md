@@ -26,7 +26,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="> tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
 > If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/plan-track-work.md).
 
@@ -36,7 +36,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="<= tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
 
 ::: moniker-end
 

@@ -1,5 +1,6 @@
 ---
 title: VSS/References/SDK.Interfaces ContextHostType API | Extensions for Azure DevOps Services
+description: Data representation of a context host type.
 ms.assetid: e73decd1-c79c-5c79-01bf-62f03ead0000
 ms.prod: devops
 ms.technology: devops-ecosystem

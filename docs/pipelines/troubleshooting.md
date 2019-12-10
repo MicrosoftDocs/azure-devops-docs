@@ -8,8 +8,9 @@ ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 10/25/2019
+ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
+author: steved0x
 ---
 
 # Troubleshoot Build and Release
@@ -122,7 +123,7 @@ If you are currently running other pipelines, you may not have any remaining par
 
 If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
-To check the capabilities and demands specified for your agents and pipelines, see [Capabilites](agents/agents.md#capabilities).
+To check the capabilities and demands specified for your agents and pipelines, see [Capabilities](agents/agents.md#capabilities).
 
 ::: moniker range="azure-devops"
 
@@ -272,7 +273,7 @@ macOS/Linux:
 
 #### Use full HTTP tracing - Windows
 
-1. Start [Fiddler](http://www.telerik.com/fiddler).
+1. Start [Fiddler](https://www.telerik.com/fiddler).
 
 2. We recommend you listen only to agent traffic. File > Capture Traffic off (F12)  
 
@@ -310,6 +311,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 ## Common issues and resolutions
 
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [My pipeline is failing on a checkout step](#my-pipeline-is-failing-on-a-checkout-step)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
 * [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
 * [Process hang](#process-hang)
@@ -317,6 +319,8 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Agent connection issues](#agent-connection-issues)
 * [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
+* [Job Time-Out](#job-time-out)
+* [Service Connection related issues](#service-connection-related-issues)
 
 ### My pipeline is failing on a command-line step such as MSBUILD
 
@@ -331,6 +335,13 @@ For example, is the problem happening during the MSBuild part of your build pipe
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
+### My pipeline is failing on a checkout step
+
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md#scoped-build-identities) to ensure that your pipeline has access to the repository.
+
+When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
+
+If your pipeline is failing immediately with `Could not find a project that corresponds with the repository`, ensure that your project and repository name are correct in the `checkout` step or the repository resource declaration.
 
 ### File or folder in use errors
 
@@ -517,10 +528,23 @@ macOS/Linux:
 ```bash
     export TFSPROXY=http://tfvcproxy:8081
 ```
+### Job Time-out
+
+A build or a release may run for a long time and then fail due to job time-out. 
+Job timeout closely depends on the agent being used. Free Microsoft hosted agents have a max timeout of 60 minutes per job for a private repository and 360 minutes for a public repository.
+To increase the max timeout for a job, you can opt for any of the following.
+* Buy a Microsoft hosted agent which will give you 360 minutes for all jobs, irrespective of the repository used
+* Use a self-hosted agent to rule out any timeout issues due to the agent
+
+Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts).
+
+### Service Connection related issues
+
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
-[Get subscription, billing, and technical support](https://visualstudio.microsoft.com/support-overview-vs)
+[Get subscription, billing, and technical support](https://azure.microsoft.com/support/devops/)
 
 Report any problems on [Developer Community](https://developercommunity.visualstudio.com/).
 

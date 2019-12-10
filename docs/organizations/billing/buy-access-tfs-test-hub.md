@@ -1,5 +1,5 @@
----
-title: Buy access to Azure DevOps Server, Azure Test Plans
+﻿---
+title: Buy access to Azure DevOps Server
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18
 description: Steps for how to buy monthly access to Azure DevOps Server or Azure Test Plans 

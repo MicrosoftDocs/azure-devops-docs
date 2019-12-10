@@ -69,7 +69,7 @@ To optimize the flow of value, you naturally want to identify and eliminate bott
 
 By monitoring your Kanban board over time, you can learn where bottlenecks occur. When several items sit in a column unworked for several days, a bottleneck has occurred. Bottlenecks typically occur when WIP limits are too high. On the other hand, no bottlenecks could indicate that WIP limits are too low. 
 
-The free eBook, [Kanban and Scrum - making the most of both](http://www.infoq.com/minibooks/kanban-scrum-minibook), provides this guidance:
+The free eBook, [Kanban and Scrum - making the most of both](https://www.infoq.com/minibooks/kanban-scrum-minibook), provides this guidance:
 
 *Too low WIP limit => idle people => bad productivity*
 *Too high WIP limit => idle tasks => bad lead time* 
@@ -107,7 +107,7 @@ Eliminating waste calls for team discussions to identify causes and solutions ac
 
 ## Set WIP limits
 
-With an understanding of how you'll use WIT limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
+With an understanding of how you'll use WIP limits, here's how you set them. If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
 ::: moniker range=">= azure-devops-2019"
 

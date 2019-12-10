@@ -1,5 +1,5 @@
----
-title: Resolve errors received when configuring features for TFS
+﻿---
+title: Resolve errors received configuring TFS features
 titleSuffix: TFS 
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
 ms.prod: devops
