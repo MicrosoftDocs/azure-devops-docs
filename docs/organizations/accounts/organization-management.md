@@ -24,7 +24,8 @@ With an organization, you gain access to the platform in which you can do the fo
 * Plan and track your work as well as code defects and issues
 * Set up continuous integration and deployment
 * Integrate with other services by using service hooks
-* Obtain additional features and extensions.
+* Obtain additional features and extensions
+* Create one or more projects to segment work. 
 
 ## Create your organization
 
@@ -58,22 +59,43 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
+## Add and manage user access to your organization
+
+You manage who can access your organization by adding them as users of your organization. You manage which features and tasks users can make through access levels and permissions. 
+
+In addition, If you manage your user base using Azure Active Directory (Azure AD), you can connect your organization to Azure AD and manage user access and access through Azure AD.    
+
+### *Access*, *access level*, and *permissions*
+
+Three key definitions to understand when managing your user base are as follows:
+
+- **Access** indicates a user can sign into your organization, and at a minimum view information about your organization.
+- **Access levels** grant or restrict access to select web portal features. Access levels enable administrators to provide their user base access to the features they need and only pay for those features.
+- **Permissions**, granted through security groups, provide or restrict users from performing specific tasks. 
+
+For an overview of default assignments, see [Default permissions and access for Azure DevOps](../security/permissions-access.md). 
+
+### Direct versus group rule assignments 
+
+You can add and assign an access level to users one-by-one. This is referred to as **Direct** assignment. Or, you can set up one or more **Group rules** and add and assign access levels to groups of users. This is referred to as a **Group Rule** assignment. 
+
 <a id="add-users" />
 
-## Add users and assign access
+## Add users and assign access: Direct assignment
 
 If you don't use Azure Active Directory (Azure AD), as described in the next section, to manage your user base, then you can add them through the following ways to collaborate on your project. 
 
-- Add users to your organization from the **Organization Settings>Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level. Or, if a user has their **Edit instance-level permission** set to **Allow**. 
+- Add users to your organization from the **Organization Settings>Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
 
 	At this level, you specify the access level and the project(s) the user is added to. For details, see [Add users to your organization or project](add-organization-users.md).
 
-- Add users to one or more teams from the **Project>Summary** page or to a specific team from the **Project Settings>Teams>Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. Or, if a user has their **Edit project-level permission** set to **Allow**.  
+- Add users to one or more teams from the **Project>Summary** page or to a specific team from the **Project Settings>Teams>Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Project Overview page, Invite new users dialog box](_img/org-manage/invite-members-dialog.png)
   
-	Users added to teams which haven't been added to the organization are assigned the best available access level allowed, either Basic or Stakeholder. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the manage users interface. 
+	unless users are granted an access level directly, or are granted an access level through a group rule, they’ll be assigned the best available access level. 
+	Users added to teams which haven't been granted an access level directly, or granted an access level through a group rule, are assigned the best available access level, either Basic or Stakeholder. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the manage users interface. 
 
 For details, see the following articles: 
 
@@ -97,17 +119,22 @@ The process of adding users to projects when managing them through Azure AD is a
 
 You can also add users through the steps outlined in the previous section, [Add users and assign access](#add-users).
 
-Using Azure AD, you can add all organizational members view access to all projects by adding them to the Project Collection Valid Users, or as contributors to all projects by adding them to a custom contributor group you create at the organization level. Or, you can segment access by adding select Azure AD groups to Contributors groups in select projects. 
+Using Azure AD, you can segment access by adding select Azure AD groups to Contributors groups in select projects. 
 
 <a id="add-users-notes" />
+
+## Add users through group rules 
+
+A best practice to use when managing users is to manage them through security groups. You can use the default security groups Azure DevOps provides, create custom security groups, or reference Azure AD groups. You can use any of these  groups to add and manage user access levels using group rules. To learn more, see [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md).
+
 
 ## Add users implementation notes
 
 The following notes address details specific to adding users at different levels&mdash;such as to a team, project, or organization.
 
-- All users that are added at the organization or collection level can be assigned to work items of all projects.  
-- All users that are added at the project level can be assigned to work items of the specific projects.  
-- When a valid user is invited to contribute to a project or a team, assigned a work item to a project or added to a security group, they are automatically added to the Project Valid Users group for that project. 
+- All users that are added at the organization or collection level can be assigned to work items of all projects. However, if the user doesn't have access to the project, then they won't be able to view or edit the work item.
+- All users that are invited or added as a member at the project level can be assigned to work items of the project. 
+
 
 ## Set up billing
 
