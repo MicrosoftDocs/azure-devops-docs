@@ -46,17 +46,11 @@ You can upload, download, and delete process templates for a project collection.
 
 ## Prerequisites
 
-- Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
-
-	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
+- Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).
 
 - If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
 
-## To manage a process template 
-
-Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises Azure DevOps Server that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. 
-
-You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/).  
+## To manage a process template  
 
 > [!NOTE]  
 > The way the Process Template Manager works changed with the release of Visual Studio 2017 and Visual Studio 2019. Opening the Process Template Manager from Visual Studio 2017 and Visual Studio 2019 opens the web portal **Collection Settings** or **Organization Settings**.  
@@ -198,6 +192,38 @@ You can always download a free version of Visual Studio Community from the [Visu
 
 To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.
 
+::: moniker range=">= azure-devops-2019"
+
+<table>
+<tbody valign="top">
+<tr>
+<th>Agile</th>
+<th>Basic</th>
+<th>CMMI</th>
+<th>Scrum</th>
+</tr>
+<tr>
+<td>
+<img src="_img/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
+</td>
+<td>
+<img src="_img/process-template/basic-work-items.png" alt="Basic work item types"/> 
+</td>
+<td>
+<img src="_img/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
+</td>
+<td>
+<img src="_img/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
+</td>
+<td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 <table>
 <tbody valign="top">
 <tr>
@@ -219,13 +245,46 @@ To determine the type of process template that was used to create your project, 
 </tbody>
 </table>
 
+::: moniker-end
+
+
+
 <a id="restrictions"> </a>
 
 ::: moniker range="<= azure-devops-2019"
 
 ## Process template restrictions and validation checks 
 
-Uploading a process template requires that it pass the following validation checks:  
+If you upload the process template through the web portal, you may encounter errors such as those shown in the following image. 
+
+> [!div class="mx-imgBorder"] 
+> ![Upload process template errors](_img/process-template/upload-process-template-errors.png)
+
+You must resolve each error and then retry the upload process. You may find additional information about resolving process template errors from [Resolve validation errors for process import](../../../organizations/settings/work/import-process/resolve-errors.md). 
+
+Uploading a process template requires that it pass the following validation checks.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+- Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
+Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
+For additional restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
+- Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
+- Process template total size should be 2 GB or less, or project creation will fail.
+- The upload process performs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Note that duplicate tags in an XML file can cause errors. If there is no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.
+- If XML definition files reference an extension, then the extension must be installed and enabled in the collection.
+
+> [!IMPORTANT]  
+>The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. 
+>
+>See [Process template plug-ins: Index to XML element definitions](../../../reference/process-templates/process-template-plug-ins-xml-elements-index.md).
+
+
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
