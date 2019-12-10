@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
-ms.date: 11/08/2019
+ms.date: 12/10/2019
 ---
 
 # Azure DevOps Services extensibility points
