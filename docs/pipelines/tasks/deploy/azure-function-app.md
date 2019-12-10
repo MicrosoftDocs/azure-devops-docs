@@ -121,7 +121,7 @@ This may be because web.config is not present in your app. You can either add a 
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-FAQs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 
