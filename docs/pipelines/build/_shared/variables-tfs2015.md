@@ -180,7 +180,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -276,7 +276,7 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>
 
 
-The local path on the agent where your source code files are downloaded. For example: <code>c:\agent\_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
+The local path on the agent where your source code files are downloaded. For example: <code>c:\agent_work\1\s</code><br><br>By default, new build pipelines update only the changed files. You can modify how files are downloaded on the <a href="/azure/devops/pipelines/repos/index" data-raw-source="[Repository tab](../repos/index.md)">Repository tab</a>.
 <br><br>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 
@@ -348,7 +348,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository](../repos/index.md)">repository</a> is Team Foundation Version Control.
 <br/><br/>
-If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline.md#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
+If you are running a <a href="/azure/devops/pipelines/build/triggers#gated" data-raw-source="[gated build](../triggers.md#gated)">gated build</a> or a <a href="/azure/devops/pipelines/create-first-pipeline#queueabuild" data-raw-source="[shelveset build](../../create-first-pipeline.md#queueabuild)">shelveset build</a>, this is set to the name of the <a href="/azure/devops/repos/tfvc/suspend-your-work-manage-your-shelvesets" data-raw-source="[shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md)">shelveset</a> you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>
@@ -401,22 +401,22 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.PullRequest.PullRequestId</td>
-<td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: <code>http://our-server:8080/tfs/DefaultCollection/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
+<td>The URL to the repo that contains the pull request. For example: <code>http://our-server:8080/tfs/DefaultCollection/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies.md#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
+<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
 </tr>
 
 <tr>

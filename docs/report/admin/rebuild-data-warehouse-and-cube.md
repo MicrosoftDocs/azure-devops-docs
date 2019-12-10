@@ -45,7 +45,7 @@ You must be a member of these security groups or have the corresponding permissi
 
 * Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services 
 
-For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator-tfs).
+For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
@@ -89,7 +89,7 @@ By default, TCP/IP is disabled when you install SQL Server.
     </tr>
     </table>
 
-    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).
+    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
 2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements#accounts). 
 
@@ -100,7 +100,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 ## 2. Rebuild the data warehouse and restart services
 
-1. [Open the Team Foundation administration console](/azure/devops/server/admin/config-tfs-resources).
+1. [Open the Team Foundation administration console](/azure/devops/server/admin/admin-quick-ref).
 
 2. Under **Application Tier>Reporting**, choose **Start Rebuild**.  
 
@@ -165,7 +165,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 * A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.  
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore-tfs).   
+* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).   
 
 #### Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.

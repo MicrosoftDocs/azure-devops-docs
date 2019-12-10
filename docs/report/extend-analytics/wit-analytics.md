@@ -70,13 +70,13 @@ All additional URL parts are specified as an additional part of the query string
 
 ::: moniker range="azure-devops"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, replace `{OrganizationName}` and `{ProjectName}` with your organization name and the name of the project that you want to query. 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-You construct a basic query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
+You construct a basic query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers). In the examples provided, make the following replacements:
 - `analytics.dev.azure.com` with `{ServerName}:{Port}/tfs/`
 - `{OrganizationName}` with your project collection name (default is DefaultCollection) 
 - `{ProjectName}` with the name of the project that you want to query. 
@@ -418,6 +418,6 @@ Analytics forces paging when query results exceed 10000 records. In that case, y
 
 - [Query guidelines](odata-query-guidelines.md) 
 - [Supported OData features](odata-supported-features.md)
-- [OData v4.0 specification](http://www.odata.org/documentation/)  
-- [OData v4.0 Part 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
+- [OData v4.0 specification](https://www.odata.org/documentation/)  
+- [OData v4.0 Part 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html)  
 

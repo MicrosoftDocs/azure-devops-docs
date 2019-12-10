@@ -46,7 +46,7 @@ The high-level workflow for migrating from SVN to Git is as follows:
 Configure a migration environment on a local workstation and install the following software:
 
 * [Git](https://git-for-windows.github.io/)
-* [Subversion](http://subversion.apache.org/packages.html)
+* [Subversion](https://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project

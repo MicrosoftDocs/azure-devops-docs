@@ -149,7 +149,7 @@ The widget also gets a custom visual cue on focus to help users who use the keyb
 
 ```html 
 <div class="widget clickable">
-    <a href="http://bing.com"  target="_blank">
+    <a href="https://bing.com"  target="_blank">
 		<h2 class="title">Counter widget</h2>
 		<div class="big-count">223</div>
 		<div>Click me!</div>

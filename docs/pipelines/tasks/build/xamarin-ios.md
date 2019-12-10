@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 00000000-0000-0000-0000-000000000000
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---

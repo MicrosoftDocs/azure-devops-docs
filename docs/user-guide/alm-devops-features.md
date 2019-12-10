@@ -42,7 +42,7 @@ If you're new to Azure DevOps, see our overview articles that are designed to gi
 
 <p><b>Integrated Development Environments (IDE)
 </b></p>
-Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="/../java/download-eclipse-plug-in" data-raw-source="[Eclipse (Team Explorer Everywhere)](/../java/download-eclipse-plug-in)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="/../java/download-android-studio-plug-in" data-raw-source="[Android Studio](/../java/download-android-studio-plug-in)">Android Studio</a><br/>- <a href="/../java/download-intellij-plug-in" data-raw-source="[IntelliJ](/../java/download-intellij-plug-in)">IntelliJ</a><br/>- <a href="/../java/vscode-extension" data-raw-source="[Visual Studio Code](/../java/vscode-extension)">Visual Studio Code</a><br/>
+Track work and integrate with your code, build, and test environments from the following clients:<br/>- <a href="../java/download-eclipse-plug-in.md" data-raw-source="[Eclipse (Team Explorer Everywhere)](../java/download-eclipse-plug-in.md)">Eclipse (Team Explorer Everywhere)</a><br/>- <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[Visual Studio](https://visualstudio.microsoft.com/downloads/)">Visual Studio</a><br/>- <a href="../java/download-android-studio-plug-in.md" data-raw-source="[Android Studio](../java/download-android-studio-plug-in.md)">Android Studio</a><br/>- <a href="../java/download-intellij-plug-in.md" data-raw-source="[IntelliJ](../java/download-intellij-plug-in.md)">IntelliJ</a><br/>- <a href="../java/vscode-extension.md" data-raw-source="[Visual Studio Code](../java/vscode-extension.md)">Visual Studio Code</a><br/>
 To learn how to connect, see <a href="../organizations/projects/connect-to-projects.md" data-raw-source="[Connect to a project](../organizations/projects/connect-to-projects.md)">Connect to a project</a>.<br/><br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.<br/>- <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a><br/>- <a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Project</a><br/>- <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[PowerPoint - Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">PowerPoint - Storyboarding</a><br/>
@@ -1894,7 +1894,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by <a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/)">adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows</a>. </p>
 
 <p><b>Simplified distribution </b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
+<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](https://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Azure DevOps Services and TFS</b></p>
@@ -1920,19 +1920,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Invite or recruit testers</b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
+<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](https://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
-<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
+<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](https://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
  </p>
 
 
 <p><b>Webhooks</b></p>
-<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
+<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
 
 
 </td>
@@ -2202,7 +2202,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <ul>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Administrators</a>, who manage shared features for a project </li>
 <li><a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)">Project Collection Administrators</a>, who manage collection-level features </li>
-<li><a href="/azure/devops/server/admin/add-administrator-tfs" data-raw-source="[Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator-tfs)">Team Foundation Server Administrators</a>, who manage on-premises application servers </li>
+<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Team Foundation Server Administrators](/azure/devops/server/admin/add-administrator)">Team Foundation Server Administrators</a>, who manage on-premises application servers </li>
 </ul>
 <br/>
 

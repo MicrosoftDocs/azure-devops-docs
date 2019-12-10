@@ -64,6 +64,12 @@ steps:
    $(System.DefaultWorkingDirectory)/bin/WebApp
    ```
 
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
+
 ---
 
 Keep in mind:
@@ -124,6 +130,12 @@ steps:
    ```
    WebApp
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
 
 ---
 
@@ -199,6 +211,10 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
    '**/*.js'
    ```
 
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
+
 ---
 
 #### Multiple artifacts
@@ -239,6 +255,10 @@ steps:
    ```
    '**/*.zip'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 

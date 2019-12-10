@@ -1,5 +1,5 @@
----
-title: Buy and manage Cloud Solution Provider customer VS App Center subscriptions
+﻿---
+title: Buy & manage CSP customer VS App Center subscriptions
 description: Partners in the cloud service provider (CSP) program can enable their customers to purchase Visual Studio App Center resources.
 ms.prod: devops
 ms.technology: devops-billing

@@ -20,5 +20,5 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `changeset`: [TfvcChangeset](../../../TFS/VersionControl/Contracts/TfvcChangeset.md). 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 

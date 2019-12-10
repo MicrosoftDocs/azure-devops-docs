@@ -9,7 +9,7 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 09/20/2019
+ms.date: 11/20/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -121,7 +121,11 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 > Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
 > You cannot use capabilities with hosted agents.
 
-You can view the system capabilities of an agent and manage its user capabilities by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
+### View agent details
+
+#### [Browser](#tab/browser)
+
+You can view the details of an agent, including its version and system capabilities, and manage its user capabilities, by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
 
 1. In your web browser, navigate to Agent pools:
 
@@ -130,6 +134,133 @@ You can view the system capabilities of an agent and manage its user capabilitie
 1. Navigate to the capabilities tab:
  
    [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"
+
+You can view the details of an agent, including its version, and system and user capabilities, by using the following [az pipelines agent](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest) Azure CLI methods.
+
+[List agents](#list-agents) | [Show agent details](#show-agent-details)
+
+> [!NOTE]
+> If this is your first time using [az pipelines](/cli/azure/ext/azure-devops/pipelines?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+### List agents
+
+You can list your agents using the [az pipelines agent list](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-list) command.
+
+```azurecli
+az pipelines agent list --pool-id
+                        [--agent-name]
+                        [--demands]
+                        [--detect {false, true}]
+                        [--include-assigned-request {false, true}]
+                        [--include-capabilities {false, true}]
+                        [--include-last-completed-request {false, true}]
+                        [--org]
+                        [--subscription]
+```
+
+#### Parameters
+
+- **pool-id**: (Required) The agent pool containing the agents.
+- **agent-name**: Filter on agent name.
+- **demands**: Filter by demands the agents can satisfy. Comma separated list.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+
+#### Example
+
+The following example lists all agents in pool `ID: 4` in table format. To retrieve the ID of pools, use [az pipelines pool list](pools-queues.md?view=azure-devops&tabs=yaml%2Cazure-devops-cli#list-agent-pools). This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines agent list --pool-id 4 --output table
+
+ID    Name          Is Enabled    Status    Version
+----  ------------  ------------  --------  ---------
+3     Hosted Agent  True          offline   2.155.1
+```
+
+### Show agent details
+
+You can retrieve agent details using the [az pipelines agent show](/cli/azure/ext/azure-devops/pipelines/agent?view=azure-cli-latest#ext-azure-devops-az-pipelines-agent-show) command.
+
+```azurecli
+az pipelines agent show --agent-id
+                        --pool-id
+                        [--detect {false, true}]
+                        [--include-assigned-request {false, true}]
+                        [--include-capabilities {false, true}]
+                        [--include-last-completed-request {false, true}]
+                        [--org]
+                        [--subscription]
+```
+
+#### Parameters
+
+- **agent-id** or **id**: (Required) The agent ID to get information about.
+- **pool-id**: (Required) The agent pool containing the agents.
+- **detect**: Automatically detect organization. Accepted values: **false**, **true**
+- **include-assigned-request**: Whether to include details about the agents' current work. Accepted values: **false**, **true**
+- **include-capabilities**: Whether to include the agents' capabilities in the response. Accepted values: **false**, **true**
+- **include-last-completed-request**: Whether to include details about the agents' most recent completed work. Accepted values: **false**, **true**
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **subscription**: Name or ID of subscription. You can configure the default subscription using az account set -s NAME_OR_ID.
+
+#### Example
+
+The following example displays agent details for the agent with the ID of `3`. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+
+```azurecli
+az pipelines agent show --agent-id 3 --pool-id 4 --include-capabilities true
+This command group is in preview. It may be changed/removed in a future release.
+{
+  "accessPoint": null,
+  "assignedAgentCloudRequest": null,
+ 
+  <Some properties omitted for space>
+
+  "status": "offline",
+  "statusChangedOn": null,
+  "systemCapabilities": {
+    "ANDROID_HOME": "",
+    "ANDROID_NDK_HOME": "",
+    "Agent.Name": "Hosted Agent",
+    "Agent.Version": "2.160.1",
+
+    <Some capabilities omitted for space>
+
+    "sh": "",
+    "subversion": "",
+    "svn": "",
+    "xcode": ""
+  },
+  "userCapabilities": null,
+  "version": "2.160.1"
+}
+}
+```
+
+You can also use `--output table` which returns an abbreviated version of the same information.
+
+```azurecli
+az pipelines pool show --id 4 --output table
+
+ID    Name                             Is Hosted    Pool Type
+----  -------------------------------  -----------  -----------
+4     Hosted Windows 2019 with VS2019  True         automation
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+
+* * *
 
 > [!TIP]
 >
@@ -367,15 +498,7 @@ Your pipelines won't run until they can target a compatible agent.
 
 ::: moniker-end
 
-You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent.
-
-1. In your web browser, navigate to Agent pools:
-
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
-
-1. Navigate to the capabilities tab:
- 
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
 
 ## Q & A
 
