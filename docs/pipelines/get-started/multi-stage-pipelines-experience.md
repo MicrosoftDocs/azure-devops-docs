@@ -30,10 +30,10 @@ You can view and manage your pipelines by choosing **Pipelines** from the left-h
 
 From the pipelines landing page you can:
 
-* View pipelines and pipeline runs.
+* [View pipelines](#view-pipelines) and [pipeline runs](#view-pipeline-runs).
 * Create and import pipelines
-* Manage security options
-* Drill down into pipeline and run details
+* [Manage pipeline security options](#pipeline-security-options)
+* Drill down into [pipeline](#view-pipeline-details) and [run](#view-pipeline-run-details) details
 
 ## Breadcrumb navigation
 
@@ -120,6 +120,8 @@ Choose a job to see the steps for that job.
 From the steps view, you can review the status and details of each step. From the context menu you can toggle timestamps or view a raw log of all steps in the pipeline.
 
 ![Pipeline tasks context menu](_img/pipeline-steps-context-menu.png)
+
+## Pipeline security options
 
 
 
