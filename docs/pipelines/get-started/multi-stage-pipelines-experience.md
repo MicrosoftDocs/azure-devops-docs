@@ -40,11 +40,13 @@ Select a pipeline to manage that pipeline and view its runs. Select the build nu
 
 ![Pipeline context menu](_img/pipelines-overview-pipeline-context-menu.png)
 
+Select **Runs** to view all pipeline runs. You can optionally filter the displayed runs.
+
 ![View pipeline runs](_img/all-pipeline-runs.png)
 
 Select a pipeline run to view information about that run.
 
-![Pipeline run context menu](_img/pipeline-run-context-menu.png)
+
 
 ### Breadcrumb navigation
 
@@ -64,13 +66,24 @@ The details page for a pipeline allows you to view and manage that pipeline.
 
 ![Pipeline details](_img/pipeline-overview.png)
 
+
+### Runs
+
 Select **Runs** to view the runs for that pipeline. You can optionally filter the displayed runs.
 
 ![Pipeline runs](_img/pipeline-runs.png)
 
+You can choose to **Retain** or **Delete** the run from the context menu. For more information on run retention, see [Build and release retention policies](../policies/retention.md).
+
+![Pipeline run context menu](_img/pipeline-run-context-menu.png)
+
+### Branches
+
 Select **Branches** to view the history or run for that branch. Hover over the **History** to view a summary for each run, and select a run to navigate to the details page for that run.
 
 ![Pipeline branches](_img/pipeline-branches.png)
+
+### Analytics
 
 Select **Analytics** to view pipeline metrics such as pass rate and run duration. Choose **View full report** for more information on each metric.
 
