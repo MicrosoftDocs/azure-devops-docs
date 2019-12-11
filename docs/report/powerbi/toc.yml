@@ -54,9 +54,9 @@
       href: create-timeinstate-report.md
   - name: OData query based reports
     items:
-    - name: Sample reports overview
+    - name: Sample OData reports overview
       href: sample-odata-overview.md
-    - name: Sample Boards reports
+    - name: Boards sample reports
       items:
       - name: Open bugs
         href: sample-boards-openbugs.md
@@ -81,7 +81,7 @@
         href: sample-boards-teamslicer.md
     - name: Requirements tracking
       href: sample-stories-overview.md
-    - name: Sample Test Plans reports
+    - name: Test Plans  sample reports
       items:
       - name: Progress status
         href: sample-test-plans-progress-status.md
@@ -93,7 +93,22 @@
         href: sample-test-plans-tester-by-outcome.md
       - name: Configuration by outcome matrix
         href: sample-test-plans-configuration-by-outcome.md
-- name: Troubleshooting
+    - name: Pipelines sample reports
+      items:
+      - name: Outcome summary
+        href: sample-pipelines-outcome-summary.md
+      - name: Pass rate trend
+        href: sample-pipelines-pass-rate-trend.md
+      - name: Stage wise failures
+        href: sample-pipelines-stagewise-failures.md
+      - name: Duration
+        href: sample-pipelines-duration.md
+      - name: Duration trend
+        href: sample-pipelines-duration-trend.md
+      - name: Task duration
+        href: sample-pipelines-task-duration.md
+      - name: Task duration trend
+        href: sample-pipelines-task-duration-trend.md- name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
     href: troubleshooting-views.md
