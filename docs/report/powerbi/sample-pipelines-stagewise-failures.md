@@ -21,7 +21,7 @@ ms.date: 12/10/2019
 This article shows you how to get the stage wise count of daily failures for the pipeline. This will be similar to the 'Failure trend' widget of the Pipeline pass rate report. The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Stage wise failure - Report](_img/odatapowerbi-pipelines-stagewisefailure-report.png)
+> ![Sample - Pipelines Stage wise failure - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -145,17 +145,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-stagewisefailure-expand1.png)
+    > ![Power BI + OData - Choose expand button](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-stagewisefailure-expand2.png)
+    > ![Power BI + OData - Select all columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-stagewisefailure-expand3.png)
+    > ![Power BI + OData - Expanded entity](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand3.png)
 
 
 ### Change column type
@@ -165,7 +165,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column FailedStageCount to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-stagewisefailure-changecolumntype1.png)
+    > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
     
 
 ### Rename fields and query, then Close & Apply
@@ -175,17 +175,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-stagewisefailure-renamerightclick.png)
+	> ![Power BI Rename Columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-renamequery.png)
+	> ![Power BI Rename Query](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-closeandapply.png)
+	> ![Power BI Close & Apply](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -195,7 +195,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines stage wise failures - Fields](_img/odatapowerbi-pipelines-stagewisefailure-fields.png)
+> ![Sample - Pipelines stage wise failures - Fields](_img/odatapowerbi-pipelines/stagewisefailure-fields.png)
 
 For a simple report, perform the following steps:
 
@@ -214,7 +214,7 @@ For a simple report, perform the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Stage wise failures - Report](_img/odatapowerbi-pipelines-stagewisefailure-report.png)
+> ![Sample - Pipelines Stage wise failures - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 
 ## Additional queries

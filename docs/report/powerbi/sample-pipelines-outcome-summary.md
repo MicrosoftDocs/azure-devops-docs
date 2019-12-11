@@ -22,7 +22,7 @@ This article shows you how to get the number of runs for different outcomes (Suc
  
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines-outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
@@ -133,7 +133,7 @@ The following table describes each part of the query.
 1. Change the type of column TotalCount to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-outcomesummary-changecolumntype.png)
+    > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
 
 ### Rename fields and query, then Close & Apply
 
@@ -142,17 +142,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-outcomesummary-renamerightclick.png)
+	> ![Power BI Rename Columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-renamequery.png)
+	> ![Power BI Rename Query](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines-closeandapply.png)
+	> ![Power BI Close & Apply](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -163,7 +163,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Fields](_img/odatapowerbi-pipelines-outcomesummary-fields.png)
+> ![Sample - Pipelines Outcome Summary - Fields](_img/odatapowerbi-pipelines/outcomesummary-fields.png)
 
 For a simple report, perform the following steps:
 
@@ -180,7 +180,7 @@ For a simple report, perform the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines-outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
@@ -351,9 +351,8 @@ aggregate(
 
 ***
 
-### Outcome Summary for all pipelines of a project
-
-You may want to view the pipeline outcome summary for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
+### Outcome aummary for all project pipelines 
+You may want to view the pipeline outcome summary for all the pipelines of the project in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
 
 - Expand BuildPipeline into  BuildPipeline.BuildPipelineName
 - Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
@@ -406,7 +405,10 @@ aggregate(
 
 ***
 
-## Full list of sample reports for Pipelines
+## Full list of Pipelines sample reports 
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
