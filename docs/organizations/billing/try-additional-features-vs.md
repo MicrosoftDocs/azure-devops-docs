@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -19,6 +19,8 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
 
 In this quickstart, learn how to try Azure Test Plans for free for 30 days.
+
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
