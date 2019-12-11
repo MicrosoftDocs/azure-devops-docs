@@ -109,7 +109,7 @@ The following table describes each part of the query.
 <tr>
 <tr>
 <td><code>and CanceledCount ne 1</code></td>
-<td>Omit the cancelled pipeline runs</td>
+<td>Omit the canceled pipeline runs</td>
 <tr>
 <tr><td><code>)</code></td>
 <td>Close filter()</td>
@@ -226,9 +226,9 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Line Chart**. 
 1. Add the field "CompletedOn.Date" to **Axis**.
-    - Right click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+    - Richt-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 1. Add the field "PassRate" to **Values**.
-	  - Right click "PassRate" field and ensure **Sum** is selected.
+	  - Richt-click "PassRate" field and ensure **Sum** is selected.
   
 
 Your report should look like this. 

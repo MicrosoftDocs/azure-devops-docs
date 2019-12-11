@@ -18,7 +18,7 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the day wise trend of pipeline duration. This will be similar to the 'Pipeline duration' widget of the Pipeline duration report. The following image shows an example of such a chart.
+This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the 'Pipeline duration trend' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines duration trend - Report](_img/odatapowerbi-pipelines/durationtrend-report.png)
@@ -121,31 +121,32 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand CompletedOn column
-
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such an entity is CompletedOn.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example such an entity is CompletedOn.
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
 
-1. Choose the expand button
+
+### Expand the BuildCompletedOn column 
+
+1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Choose expand button](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/passratetrend-expand1.png)
     
-1. Select the checkbox "(Select All Columns)" to expand
+1. Select the checkbox "(Select All Columns)" to expand.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Select all columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/passratetrend-expand2.png)
 
-1. The table now contains the expanded entity **CompletedOn.Date**
+1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Expanded entity](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/passratetrend-expand3.png)
 
 
-### Change column type
+### Change the column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown. 
 
 1. Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
 
@@ -153,7 +154,7 @@ The query doesn't return all the columns in the format in which you can directly
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/duration-changecolumntype1.png)
 
 
-### Rename fields and query, then Close & Apply
+### Rename fields and query
 
 When finished, you may choose to rename columns. 
 
@@ -188,11 +189,11 @@ For a simple report, perform the following steps:
 
 1. Add the field "CompletedOn.Date" to **Axis**.
 
-  - Right click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+  - Richt-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "Duration80thPercentileInSeconds" to **Values**.
 
-  - Right click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
+  - Richt-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 
 Your report should look like this. 

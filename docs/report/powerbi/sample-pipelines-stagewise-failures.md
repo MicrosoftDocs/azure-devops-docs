@@ -202,13 +202,13 @@ For a simple report, perform the following steps:
 1. Select Power BI Visualization **Stacked column chart**. 
 
 1. Add the field "BuildCompletedOn.Date" to **Axis**.
-    - Right click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Richt-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "FailedStageCount" to **Values**.
-	  - Right click "FailedStageCount" field and ensure **Sum** is selected.
+	  - Richt-click "FailedStageCount" field and ensure **Sum** is selected.
 
 1. Add the field "PipelineJob.StageName" to **Legend**.
-	  - Right click "PipelineJob.StageName" field and ensure **Sum** is selected.
+	  - Richt-click "PipelineJob.StageName" field and ensure **Sum** is selected.
   
 
 Your report should look like this. 

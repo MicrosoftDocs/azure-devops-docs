@@ -18,7 +18,7 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the number of runs for different outcomes (Succeeded / Failed / Cancelled / Partially Succeeded) of a pipeline. An example is shown in the following image.
+This article shows you how to get the number of runs for different outcomes (Succeeded / Failed / Canceled / Partially Succeeded) of a pipeline. An example is shown in the following image.
  
 
 > [!div class="mx-imgBorder"] 
@@ -79,7 +79,6 @@ $apply=filter(
 [!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
 
 
-
 ### Query breakdown
 
 The following table describes each part of the query.
@@ -117,7 +116,7 @@ The following table describes each part of the query.
 <td>Count the number of partially successful runs as PartiallySucceededCount</td>
 <tr>
 <tr><td><code>CanceledCount with sum as CanceledCount</code></td>
-<td>Count the number of cancelled runs as CanceledCount</td>
+<td>Count the number of canceled runs as CanceledCount</td>
 <tr>
 <tr><td><code>)</code></td>
 <td>Close aggregate()</td>
@@ -169,13 +168,13 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Donut Chart**. 
 1. Add the field "SucceededCount" to **Values**.
-    - Right click "SucceededCount" field and ensure **Sum** is selected.
+    - Richt-click "SucceededCount" field and ensure **Sum** is selected.
 1. Add the field "FailedCount" to **Values**.
-	  - Right click "FailedCount" field and ensure **Sum** is selected.
+	  - Richt-click "FailedCount" field and ensure **Sum** is selected.
 1. Add the field "CanceledCount" to **Values**.
-	  - Right click "CanceledCount" field and ensure **Sum** is selected.
+	  - Richt-click "CanceledCount" field and ensure **Sum** is selected.
 1. Add the field "PartiallySucceededCount " to **Values**.
-    - Right click "PartiallySucceededCount " field and ensure **Sum** is selected.
+    - Richt-click "PartiallySucceededCount " field and ensure **Sum** is selected.
     
 Your report should look like this. 
 
@@ -191,7 +190,7 @@ You can use the following additional queries to create different but similar rep
 
 ### Use Pipeline Id, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its Id can be obtained from the URL of the runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when a pipeline name is changed, use the pipeline ID rather than its name. For a pipeline, its ID can be obtained from the URL of the runs page.
 https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
 #### [Power BI Query](#tab/powerbi/)
@@ -238,9 +237,9 @@ $apply=filter(
 
 ***
 
-### Filter by Branch
+### Filter by branch
 
-You may want to view the outcome summary of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the outcome summary of a pipeline for a particular **branch**. To create the report, perform the following additional steps along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
@@ -351,12 +350,13 @@ aggregate(
 
 ***
 
-### Outcome aummary for all project pipelines 
-You may want to view the pipeline outcome summary for all the pipelines of the project in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
+### Outcome summary for all project pipelines 
 
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName
+You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
+
+- Expand BuildPipeline into BuildPipeline.BuildPipelineName
 - Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
-- Select the Build pipeline from the slicer for which you need to see the outcome summary
+- Select the Build pipeline from the slicer for which you need to see the outcome summary.
 
 
 #### [Power BI Query](#tab/powerbi/)

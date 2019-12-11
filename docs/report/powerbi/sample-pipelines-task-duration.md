@@ -104,7 +104,7 @@ The following table describes each part of the query.
 <td>Return task results from only the successful or partially successful pipeline runs</td>
 <tr>
 <td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>
-<td>Omit the pipeline runs that were cancelled, skipper or abandoned</td>
+<td>Omit the pipeline runs that were canceled, skipper or abandoned</td>
 <tr>
 <tr><td><code>)</code></td>
 <td>Close filter()</td>
@@ -181,11 +181,11 @@ For a simple report, perform the following steps:
 
 1. Add the field "BuildCompletedOn.Date" to **Axis**.
 
-    - Right click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Richt-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
 
-    - Right click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Richt-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 Your report should look like this. 
 

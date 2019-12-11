@@ -130,10 +130,10 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "CompletedDateSK" to **Axis**.
-    - Right click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
+    - Richt-click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
 1. Add the field "Priority" to legend.
 1. Add the field "LeadTimeDays" to **Values**.
-    - Right click "LeadTimeDays" field and ensure **Average** is selected.
+    - Richt-click "LeadTimeDays" field and ensure **Average** is selected.
 
 The example report:
 

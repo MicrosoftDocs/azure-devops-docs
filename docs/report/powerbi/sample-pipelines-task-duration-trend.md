@@ -77,8 +77,8 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
-- {taskname} - The display name of the task for which the duration trend is needed
+[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions-task-name.md)]
+
 
 ### Query breakdown
 
@@ -107,7 +107,7 @@ The following table describes each part of the query.
 <td>Return task results from only the successful or partially successful pipeline runs</td>
 <tr>
 <td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>
-<td>Omit the pipeline runs that were cancelled, skipper or abandoned</td>
+<td>Omit the pipeline runs that were canceled, skipper or abandoned</td>
 <tr>
 <tr><td><code>)</code></td>
 <td>Close filter()</td>
@@ -200,11 +200,11 @@ For a simple report, perform the following steps:
 
 1. Add the field "BuildCompletedOn.Date" to **Axis**.
 
-    - Right click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Richt-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
 
-    - Right click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Richt-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 Your report should look like this. 
 
@@ -219,11 +219,13 @@ You can use the following additional queries to create different but similar rep
 
 ### Use Pipeline Id, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its Id can be obtained from the URL of the runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. For a pipeline, its ID can be obtained from the URL of the runs page.
 https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
@@ -244,7 +246,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 	https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
 	$apply=filter(
@@ -265,10 +269,12 @@ in
 
 ### Get 50th and 90th percentile, along with 80th percentile duration trend
 
-You may want to view the task duration trend calculated using other percentile value. Below query gives 50th and 95th percentile task duration along with 80th percentile.
+You may want to view the task duration trend calculated using other percentile value. The following query gives 50th and 95th percentile task duration along with 80th percentile.
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
@@ -291,7 +297,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
 $apply=filter(
@@ -312,7 +320,7 @@ $apply=filter(
 
 ***
 
-### Filter by Branch
+### Filter by branch
 
 You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
@@ -321,7 +329,9 @@ You may want to view the duration trend of a task for a particular **branch** on
 - Select the branch from the slicer for which you need to see the task duration trend
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
@@ -341,8 +351,11 @@ let
 in
     Source
 ```
+
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
 $apply=filter(
@@ -361,16 +374,19 @@ $apply=filter(
 
 ***
 
-### Task duration trend for all tasks of a pipeline
+### Task duration trend for all pipeline tasks
 
-You may want to view the task duration trend for all the tasks of a pipeline in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the task duration trend for all the pipeline tasks in a single report. To create the report, perform the following additional steps along with those steps defined previously in this article.
 
-- Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**  
+
 - Select the task from the slicer for which you need to see the duration trend
  
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
@@ -390,7 +406,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
 $apply=filter(
@@ -410,8 +428,10 @@ $apply=filter(
 
 
 
-## Full list of sample reports for Pipelines
+## Full list of Pipelines sample reports
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
