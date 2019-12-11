@@ -462,12 +462,12 @@
     },
     {
       "source_path": "docs/tfs-server/admin/service-account-dependencies-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/service-accounts-dependencies-tfs",
+      "redirect_url": "/azure/devops/server/admin/service-accounts-dependencies",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/admin/config-tfs-resources.md",
-      "redirect_url": "/azure/devops/server/admin/config-tfs-resources",
+      "redirect_url": "/azure/devops/server/admin/admin-quick-ref",
       "redirect_document_id": false
     },
     {
@@ -552,7 +552,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/modify-remove-access-sharepoint-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/modify-remove-access-shareport-tfs",
+      "redirect_url": "/azure/devops/server/admin/modify-remove-access-sharepoint",
       "redirect_document_id": false
     },
     {
@@ -637,7 +637,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/stop-start-stuff.md",
-      "redirect_url": "/azure/devops/server/admin/stop-start-stuff",
+      "redirect_url": "/azure/devops/server/admin/stop-start-services-pools",
       "redirect_document_id": false
     },
     {
@@ -652,7 +652,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/add-administrator-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/add-administrator-tfs",
+      "redirect_url": "/azure/devops/server/admin/add-administrator",
       "redirect_document_id": false
     },
     {
@@ -672,12 +672,12 @@
     },
     {
       "source_path": "docs/tfs-server/admin/manage-team-project-collections.md",
-      "redirect_url": "/azure/devops/server/admin/manage-team-project-collections",
+      "redirect_url": "/azure/devops/server/admin/manage-project-collections",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/open-admin-console.md",
-      "redirect_url": "/azure/devops/server/ref/command-line/open-admin-console",
+      "redirect_url": "/azure/devops/server/admin/open-admin-console",
       "redirect_document_id": false
     },
     {
@@ -757,7 +757,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/backup/back-up-restore-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore-tfs",
+      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore",
       "redirect_document_id": false
     },
     {
@@ -1037,6 +1037,11 @@
     },
     {
       "source_path": "docs/accounts/add-account-users-assign-access-levels.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-organization-users-from-user-hub.md",
       "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
@@ -2287,7 +2292,7 @@
     },
     {
       "source_path": "docs/tfs-server/overview.md",
-      "redirect_url": "/azure/devops/server/admin/config-tfs-resources",
+      "redirect_url": "/azure/devops/server/admin/admin-quick-ref",
       "redirect_document_id": false
     },
     {
@@ -2467,12 +2472,12 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/backup-db-upgrade.md",
-      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore-tfs",
+      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/back-up-restore-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore-tfs",
+      "redirect_url": "/azure/devops/server/admin/backup/back-up-restore",
       "redirect_document_id": false
     },
     {
@@ -2527,7 +2532,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/.md",
-      "redirect_url": "/azure/devops/server/admin/config-tfs-resources",
+      "redirect_url": "/azure/devops/server/admin/admin-quick-ref",
       "redirect_document_id": false
     },
     {
@@ -2572,7 +2577,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/config-tfs-resources.md",
-      "redirect_url": "/azure/devops/server/admin/config-tfs-resources",
+      "redirect_url": "/azure/devops/server/admin/admin-quick-ref",
       "redirect_document_id": false
     },
     {
@@ -2582,12 +2587,12 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/manage-team-project-collections.md",
-      "redirect_url": "/azure/devops/server/admin/manage-team-project-collections",
+      "redirect_url": "/azure/devops/server/admin/manage-project-collections",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/modify-remove-access-shareport-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/modify-remove-access-shareport-tfs",
+      "redirect_url": "/azure/devops/server/admin/modify-remove-access-sharepoint",
       "redirect_document_id": false
     },
     {
@@ -2612,7 +2617,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/service-accounts-dependencies-tfs.md",
-      "redirect_url": "/azure/devops/server/admin/service-accounts-dependencies-tfs",
+      "redirect_url": "/azure/devops/server/admin/service-accounts-dependencies",
       "redirect_document_id": false
     },
     {
@@ -2637,7 +2642,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/stop-start-stuff.md",
-      "redirect_url": "/azure/devops/server/admin/stop-start-stuff",
+      "redirect_url": "/azure/devops/server/admin/stop-start-services-pools",
       "redirect_document_id": false
     },
     {
@@ -2687,7 +2692,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/open-admin-console.md",
-      "redirect_url": "/azure/devops/server/ref/command-line/open-admin-console",
+      "redirect_url": "/azure/devops/server/admin/open-admin-console",
       "redirect_document_id": false
     },
     {
@@ -3342,11 +3347,6 @@
     },
     {
       "source_path": "docs/integrate/extensions/support/help.md",
-      "redirect_url": "/azure/devops/extend/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/integrate/extensions/support/release-notes.md",
       "redirect_url": "/azure/devops/extend/overview",
       "redirect_document_id": false
     },
@@ -6676,6 +6676,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/pipelines/process/server-phases.md",
+      "redirect_url": "/azure/devops/pipelines/process/phases",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/concepts/process/tasks.md",
       "redirect_url": "/azure/devops/pipelines/process/tasks",
       "redirect_document_id": true
@@ -8267,6 +8272,11 @@
     },
     {
       "source_path": "docs/accounts/add-users-to-aad.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-users-to-aad.md",
       "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
       "redirect_document_id": false
     },
@@ -12101,8 +12111,48 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/extend/reference/client/api/TFS/build/Contracts/timelinerecord.md",
+      "redirect_url": "/azure/devops/extend/reference/client/api/TFS/DistributedTask/Contracts/timelinerecord",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/reference/client/api/TFS/Core/Contracts/webapiconnectedserviceref.md",
+      "redirect_url": "/azure/devops/extend/reference/client/api/TFS/DistributedTask/Contracts/webapiconnectedserviceref",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/reference/client/api/TFS/Core/Contracts/TeamProjectReference.md",
+      "redirect_url": "/azure/devops/extend/reference/client/api/TFS/DistributedTask/Contracts/TeamProjectReference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/reference/client/api/TFS/build/contracts/timeline.md",
+      "redirect_url": "/azure/devops/extend/reference/client/api/TFS/DistributedTask/Contracts/timeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/reference/client/api/vss/common/contracts/platform/webcontext.md",
+      "redirect_url": "/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/webcontext",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/extend/support/release-notes.md",
+      "redirect_url": "/azure/devops/release-notes/features-timeline",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/organizations/billing/index.md",
       "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/index.md",
+      "redirect_url": "/azure/devops/organizations/settings/about-settings#project-administrator-role-and-managing-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/remove-direct-assignments.md",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
     }
   ]

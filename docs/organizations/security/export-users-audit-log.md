@@ -39,7 +39,7 @@ You can get a list of users and groups that have access to your Team Foundation 
   ::: moniker-end    
 
   ::: moniker range="<= azure-devops-2019" 
-* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs).
+* You must be a member of the Team Foundation Administrators group. If you aren't a member, get added now. See [Add administrators to TFS](/azure/devops/server/admin/add-administrator).
   ::: moniker-end 
 
 ## Export a list of users

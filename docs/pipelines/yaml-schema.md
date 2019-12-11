@@ -1,7 +1,7 @@
 ---
 title: YAML schema
 ms.custom: seodec18
-description: An overview of all YAML features.
+description: An overview of all YAML syntax.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/03/2019
+ms.date: 12/06/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -519,6 +519,16 @@ All steps, regardless of whether they are documented in this article, support th
 - **env**
 - **timeoutInMinutes**
 
+All steps, whether documented below or not, allow the following properties:
+- `displayName`
+- `name`
+- `condition`
+- `continueOnError`
+- `enabled`
+- `env`
+- `target`
+- `timeoutInMinutes`
+
 ## Variables
 
 You can add hard-coded values directly or reference [variable groups](library/variable-groups.md). Specify variables at the pipeline, stage, or job level.
@@ -1011,7 +1021,17 @@ resources:
 
 ### Repository resource
 
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository. A repository resource as specified by the `repository` keyword lets you specify an external repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository. The `repository` keyword lets you specify an external repository.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must
+let the system know about that repository. The `repository` resource lets you
+specify an external repository.
+
+::: moniker-end
 
 # [Schema](#tab/schema)
 
@@ -1033,17 +1053,26 @@ resources:
   - repository: common
     type: github
     name: Contoso/CommonTools
+    endpoint: MyContosoServiceConnection
 ```
 
 ---
 
 #### Type
 
-Pipelines support two values for the repository type: `git` and `github`.
+Pipelines support the following types of repositories: `git`, `github`, and `bitbucket`. `git` refers to
+Azure Repos Git repos. 
 
-If you specify `type: git`, the `name` value refers to another Azure Repos Git repository in the same project. An example is `name: otherRepo`. To refer to a repo in another project within the same organization, prefix the name with that project's name. An example is `name: OtherProject/otherRepo`.
-
-If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization. An example is `name: Microsoft/vscode`. Also, GitHub repos require a [service connection](library/service-endpoints.md) for authorization.
+- If you choose `git` as your type, then `name` refers to another
+repository in the same project. For example, `otherRepo`. To refer to a repo in
+another project within the same organization, prefix the name with that project's name.
+For example, `OtherProject/otherRepo`.
+- If you choose `github` as your type, then `name` is the full name of the GitHub
+repo including the user or organization. For example, `Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md#sep-github)
+for authorization.
+- If you choose `bitbucket` as your type, then `name` is the full name of the Bitbucket Cloud
+repo including the user or organization. For example, `MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket)
+for authorization.
 
 ## Triggers
 
@@ -1447,8 +1476,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; values are the container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- script:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1461,7 +1500,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Bash
 
@@ -1479,8 +1519,18 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; values are the container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- bash:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1497,7 +1547,8 @@ steps:
 
 ---
 
-Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](process/phases.md?tabs=yaml#timeouts).
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Pwsh
 
@@ -1699,16 +1750,32 @@ Nondeployment jobs automatically check out source code. Use the `checkout` keywo
 
 # [Schema](#tab/schema)
 
+::: moniker range="azure-devops-2019"
+
 ```yaml
-steps:
-- checkout: self  # self represents the repo where the initial Azure Pipelines YAML file was found
-  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
   fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
   lfs: boolean  # whether to download Git LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called 's'
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+```yaml
+steps:
+- checkout: self | none | repository name # self represents the repo where the initial Pipelines YAML file was found
+  clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
+  fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
+  submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
+  path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
+  persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
+```
+
+::: moniker-end
 
 To avoid syncing sources at all, specify the following syntax:
 
@@ -1721,11 +1788,26 @@ steps:
 > If you're running the agent in Local Service Account and want to modify the current repository by using git operations or loading git submodules, give the proper permissions to the Project Collection Build Service Accounts user.
 
 ```yaml
-steps:
 - checkout: self
   submodules: true
   persistCredentials: true
 ```
+
+::: moniker range="> azure-devops-2019"
+
+To check out multiple repositories in your pipeline, use multiple `checkout` steps.
+
+```yaml
+- checkout: self
+- checkout: git://MyProject/MyRepo
+- checkout: MyGitHubRepo # Repo declared in a repository resource
+```
+
+For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
+
+
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1737,6 +1819,32 @@ steps:
   lfs: true
   path: PutMyCodeHere
 ```
+
+::: moniker range="> azure-devops-2019"
+
+In the following example, three repositories are checked out: a GitHub repository named `tools` declared in repository resources, an Azure Repos Git repository named `resources` declared inline with the `checkout` step, and `self`.
+
+```yaml
+resources:
+  repositories:
+  - repository: MyGitHubToolsRepo # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: MyGitHubServiceConnection
+    name: MyGitHubToolsOrg/tools
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+- checkout: MyGitHubToolsRepo
+- checkout: git://MyResourcesProject/resources
+```
+
+::: moniker-end
 
 ---
 
@@ -1754,9 +1862,19 @@ steps:
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean  # whether to run this step; defaults to 'true'
+  target:
+    container: string # where this step will run; values are the container name or the word 'host'
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add
+```
+
+If you aren't specifying a command mode, `target` can be shortened to:
+
+```yaml
+- task:
+  target: string  # container name or the word 'host'
 ```
 
 # [Example](#tab/example)
@@ -1771,6 +1889,9 @@ steps:
 ```
 
 ---
+
+Learn more about [conditions](process/conditions.md?tabs=yaml),
+[timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
 ## Syntax highlighting
 

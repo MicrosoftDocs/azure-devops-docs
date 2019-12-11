@@ -9,13 +9,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/14/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # Troubleshoot permissions and access with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 ## General
 
@@ -167,15 +169,7 @@ or [added using B2B collaboration by your Azure AD administrator](https://azure.
 
 Before you start, make sure you have at least Basic access, not Stakeholder.
 
-**Complete the following steps to control organization access for external users added through Office 365 or Azure AD B2B collaboration.**
-
-1. Go to **Organization settings**.
-
-   ![Screenshot of project with gear icon highlighted](../../_shared/_img/settings/open-admin-settings-vert.png)
-
-2. Select **Policy** and choose to allow or deny organization access for external users added as guests.
-
-   ![Screenshot of organization settings](_img/manage-work-access/guest-access.png)
+Complete the [prerequisites for adding external users](add-external-user.md#prerequisites), turning External guest access to **On**.
 
 ## Remove users or groups
 
@@ -196,7 +190,6 @@ To block all access for these users, remove them from Azure AD groups in your or
 ### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
 A: When users are disabled or removed from your directory, they can no longer access your organization by any mechanism including via PATs, SSH, or any other alternate credentials.
-
 <a name="faq-connect"></a>
 
 ## Connect, disconnect, or change Azure AD

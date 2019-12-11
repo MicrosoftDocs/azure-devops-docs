@@ -9,10 +9,12 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: phwilson
 author: chasewilson
-ms.date: 2/08/2019
+ms.date: 11/20/2019
 ---
 
 # Create a service hook for Azure DevOps Services and TFS with Jenkins
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 If you use Jenkins to build your apps, you can store your code in Azure DevOps Services
 and continue to use Jenkins for your continuous integration builds.
@@ -40,7 +42,7 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 
    <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
-## Trigger Jenkins from Azure DevOps Services 
+## Trigger Jenkins
 
 ::: moniker range=">= azure-devops-2019"
 

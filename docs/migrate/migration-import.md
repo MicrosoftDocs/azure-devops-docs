@@ -490,7 +490,7 @@ You only need to add an exception for the analytics IPs in your target import re
 |    Service                                     |    IP                                                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
 |    Analytics service - United States           | 20.41.43.22, 20.36.236.83, 20.41.40.50, 52.242.212.199, 13.86.33.148, 13.86.39.80 |
-|    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9                                                      |
+|    Analytics service - West Europe             | 52.236.146.143, 52.236.146.9, 52.149.108.23                                       |
 |    Analytics service - Australia East          | 20.40.179.159                                                                     |
 |    Analytics service - Brazil South            | 20.40.113.248                                                                     |
 |    Analytics service - India South             | 40.81.73.58                                                                       |

@@ -189,7 +189,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Review](../../queries/query-numeric.md)">Requires Review</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Test](../../queries/query-numeric.md)">Requires Test</a> (CMMI)</li>
-<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution]](../../queries/titles-ids-descriptions.md)">Resolution]</a> (Scrum)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution](../../queries/titles-ids-descriptions.md)">Resolution</a> (Scrum)</li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved By](../../queries/query-by-workflow-changes.md)">Resolved By</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Date](../../queries/query-by-workflow-changes.md)">Resolved Date</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Reason](../../queries/query-by-workflow-changes.md)">Resolved Reason</a></li>
@@ -244,7 +244,7 @@ Values in parenthesis indicate the following:
 <br/>
 
 
-####Notes: 
+#### Notes: 
 
 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 

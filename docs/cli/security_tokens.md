@@ -82,18 +82,19 @@ If the tokens have variable-length path parts, then a separator character is use
    Token format: 'vstfs:///Classification/Node/Iteration_Identifier/'
 
    Suppose, you have following iterations configured for your team.
-   ProjectIteration1
-    -TeamIteration1
-        -I1ChildIteration1
-        -I1ChildIteration2
-        -I1ChildIteration3
-    -TeamIteration2
-        -I2ChildIteration1
-        -I2ChildIteration2
+   
+   - ProjectIteration1
+   1. TeamIteration1
+        - TeamIteration1ChildIteration1
+        - TeamIteration1ChildIteration2
+        - TeamIteration1ChildIteration3
+   2. TeamIteration2
+        - TeamIteration2ChildIteration1
+        - TeamIteration2ChildIteration2
 
-   If you need to update permissions for ProjectIteration1\TeamIteration1\I1ChildIteration1, security token would like this:
+   If you need to update permissions for ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1, security token would look like this:
 
-   'vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/I1ChildIteration1_Identifier'
+   'vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier'
 
 ### Namespace name :  BuildAdministration
 
