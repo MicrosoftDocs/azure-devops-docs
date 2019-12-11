@@ -32,7 +32,7 @@ Use this task in a build or release pipeline to deploy to Chef environments by e
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Chef Connection</td><td>(Required) Name of the Chef subscription</td></tr>
 <tr><td>Environment</td><td>(Required) Name of the Chef Environment to be used for Deployment. The attributes of that environment will be edited.</td></tr>
-<tr><td>Environment Attributes</td><td>(Required) Specify the value of the leaf node attribute(s) to be updated. Example. { &quot;default_attributes.connectionString&quot; : &quot;$(connectionString)&quot;, &quot;override_attributes.buildLocation&quot; : &quot;<a href="https://sample.blob.core.windows.net/build" data-raw-source="https://sample.blob.core.windows.net/build">https://sample.blob.core.windows.net/build</a>&quot; }. Task fails if the leaf node does not exist.</td></tr>
+<tr><td>Environment Attributes</td><td>(Required) Specify the value of the leaf node attribute(s) to be updated. Example. { &quot;default_attributes.connectionString&quot; : &quot;$(connectionString)&quot;, &quot;override_attributes.buildLocation&quot; : &quot;https:\//sample.blob.core.windows.net/build&quot; }. Task fails if the leaf node does not exist.</td></tr>
 <tr><td>Wait Time</td><td>(Required) The amount of time (in minutes) to wait for this task to complete. Default value: 30 minutes</td></tr>
 
 
