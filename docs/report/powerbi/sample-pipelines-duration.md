@@ -18,7 +18,9 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-This article shows you how to get pipeline duration, or the time taken to run a pipeline. This will be similar to the duration summary metric in the 'Pipeline duration' widget of the Pipeline duration report. An example is shown in the following image.
+This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
+
+An example of the pipeline duration report is shown in the following image.
 
 
 > [!div class="mx-imgBorder"] 
@@ -137,7 +139,7 @@ The query doesn't return all the columns in the format in which you can directly
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/duration-changecolumntype1.png)
 
 
-### Rename fields and query, then Close & Apply
+### Rename fields and query 
 
 When finished, you may choose to rename columns. 
 
@@ -177,7 +179,7 @@ For a simple report, perform the following steps:
 1. Add the field "Duration95thPercentileInSeconds" to **Fields**.
 
 
-Your report should look like this. 
+Your report should appear similar to the following image.   
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Duration - Report](_img/odatapowerbi-pipelines/duration-report.png)
@@ -188,13 +190,16 @@ Your report should look like this.
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its Id can be obtained from the URL of the runs page.
-https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its ID can be obtained from the URL of the runs page.
+
+`https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -213,8 +218,11 @@ let
 in
     Source
 ```
+
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -232,15 +240,17 @@ $apply=filter(
 
 ***
 
-### Filter by Branch
+### Filter by branch
 
-You may want to view the duration of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
+You may want to view the duration of a pipeline for a particular **branch** only. To create the report, perform the following additional steps along with those steps defined previously in this article.
 
-- Expand Branch into Branch.BranchName
-- Add the field **Branch.BranchName** to **Axis**
+- Expand Branch into Branch.BranchName.  
+- Add the field **Branch.BranchName** to **Axis**.  
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -259,8 +269,11 @@ let
 in
     Source
 ```
+
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -278,15 +291,17 @@ $apply=filter(
 
 ***
 
-### Duration for all pipelines of a project
+### Duration for all project pipelines
 
 You may want to view the duration for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName
-- Add the field **BuildPIpeline.BuildPipelineName** to **Axis**
+- Expand BuildPipeline into  BuildPipeline.BuildPipelineName.
+- Add the field **BuildPIpeline.BuildPipelineName** to **Axis**.
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -304,8 +319,12 @@ let
 in
     Source
 ```
+
+
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -323,6 +342,9 @@ $apply=filter(
 ***
 
 ## Full list of sample reports for Pipelines
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

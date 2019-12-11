@@ -130,7 +130,7 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Richt-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "TotalStoryPoints" to **Values**
 1. Add the field "Count" to **Values**
 

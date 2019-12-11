@@ -181,11 +181,11 @@ For a simple report, perform the following steps:
 
 1. Add the field "BuildCompletedOn.Date" to **Axis**.
 
-    - Richt-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
 
-    - Richt-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
+    - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 Your report should look like this. 
 

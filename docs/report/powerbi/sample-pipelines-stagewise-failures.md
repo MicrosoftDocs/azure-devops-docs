@@ -18,7 +18,9 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the stage wise count of daily failures for the pipeline. This will be similar to the 'Failure trend' widget of the Pipeline pass rate report. The following image shows an example of such a chart.
+This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
+
+The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Stage wise failure - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
@@ -138,21 +140,21 @@ The following table describes each part of the query.
 
 ### Expand BuildCompletedOn and PipelineJob column
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such entities are BuildCompletedOn and PipelineJob
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are BuildCompletedOn and PipelineJob. 
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on both the entities.
+After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on both of these entities.
 
-1. Choose the expand button
+1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Choose expand button](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand1.png)
     
-1. Select the checkbox "(Select All Columns)" to expand
+1. Select the checkbox "(Select All Columns)" to expand.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Select all columns](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand2.png)
 
-1. The table now contains the expanded entity **CompletedOn.Date**
+1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - Expanded entity](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-expand3.png)
@@ -168,7 +170,7 @@ The query doesn't return all the columns in the format in which you can directly
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
     
 
-### Rename fields and query, then Close & Apply
+### Rename fields and query 
 
 When finished, you may choose to rename columns. 
 
@@ -194,6 +196,7 @@ Power BI shows you the fields you can report on.
 
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
+
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines stage wise failures - Fields](_img/odatapowerbi-pipelines/stagewisefailure-fields.png)
 
@@ -202,16 +205,16 @@ For a simple report, perform the following steps:
 1. Select Power BI Visualization **Stacked column chart**. 
 
 1. Add the field "BuildCompletedOn.Date" to **Axis**.
-    - Richt-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "FailedStageCount" to **Values**.
-	  - Richt-click "FailedStageCount" field and ensure **Sum** is selected.
+	  - Right-click "FailedStageCount" field and ensure **Sum** is selected.
 
 1. Add the field "PipelineJob.StageName" to **Legend**.
-	  - Richt-click "PipelineJob.StageName" field and ensure **Sum** is selected.
+	  - Right-click "PipelineJob.StageName" field and ensure **Sum** is selected.
   
 
-Your report should look like this. 
+Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Stage wise failures - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
@@ -268,7 +271,9 @@ $apply=filter(
 You may want to view the job wise failure trend, rather than stage wise failure trend.
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
@@ -290,7 +295,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
 $apply=filter(
@@ -311,6 +318,9 @@ $apply=filter(
 ***
 
 ## Full list of sample reports for Pipelines
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

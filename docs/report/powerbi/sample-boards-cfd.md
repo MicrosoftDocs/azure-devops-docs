@@ -114,7 +114,7 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Stacked Area Chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Richt-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "ColumnName" to **Legend**
 1. Add the field "Count" to **Values**
 1. On the Filter for "ColumnName", select only the values you want to appear on the chart. For example, you may want to unselect "New" and "Done"
