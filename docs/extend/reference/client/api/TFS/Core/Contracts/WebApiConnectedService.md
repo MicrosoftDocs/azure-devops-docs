@@ -16,7 +16,7 @@ ms.date: 08/25/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md)
+Extends: [WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md)
 
 ### Members
 
@@ -30,7 +30,7 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnected
 
 * `kind`: string. The kind of service.
 
-* `project`: [TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The project associated with this service
+* `project`: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project associated with this service
 
 * `serviceUri`: string. Optional uri to connect directly to the service such as https://windows.azure.com
 

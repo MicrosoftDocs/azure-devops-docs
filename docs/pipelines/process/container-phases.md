@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: jukullam
-ms.date: 05/06/2019
+ms.date: 12/06/2019
 monikerRange: '>= azure-devops-2019'
 author: juliakm
 ---
@@ -20,7 +20,7 @@ author: juliakm
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
-Over time, you may find that you want more control over the stage where your tasks run.
+Over time, you may find that you want more control over the context where your tasks run.
 
 <!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
 ::: moniker range=">= azure-devops-2019"
@@ -32,6 +32,10 @@ You can select the exact versions of operating systems, tools, and dependencies 
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
+
+::: moniker range="> azure-devops-2019"
+If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
+::: moniker-end
 
 ## Requirements
 
