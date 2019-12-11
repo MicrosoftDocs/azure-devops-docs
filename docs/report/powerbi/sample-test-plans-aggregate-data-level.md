@@ -14,7 +14,7 @@ monikerRange: '> azure-devops-2019'
 ms.date: 12/09/2019
 ---
 
-# Sample - Manual Test Suites Aggregated View
+# Manual test suites aggregated view sample report
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
@@ -126,7 +126,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand TestSuite, Rename fields and query, change column types, then Close & Apply
+In Power BI, perform the following steps.  
 
 When finished, you may choose to rename columns. 
 
@@ -176,7 +176,7 @@ Power BI shows you the fields you can report on.
 
 To create the report, perform the following steps:
 
-1. Create a PowerBI visualization **Table**.
+1. Create a Power BI visualization **Table**.
 1. Add the columns **TestSuite.TitleLevel3, NotRunCount, RunCount, PassedCount, TotalCount**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
@@ -189,10 +189,10 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-fulllist-testplans.md)]
+[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
 
 ## Related articles
 
 - [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
 - [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/powerbi/extend-analytics/quick-ref)
+- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
