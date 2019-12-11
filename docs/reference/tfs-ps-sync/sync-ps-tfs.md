@@ -18,16 +18,15 @@ ms.date: 12/10/2019
 <b>TFS 2017 | [TFS 2015 | TFS 2013](synchronize-tfs-project-server.md)</b>
 
 > [!IMPORTANT]  
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](synchronize-tfs-project-server.md).
+> TFS 2017 and later versions no longer support native integration with Office Project Server. If you work with on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](synchronize-tfs-project-server.md).
 
-If you are on a prior version of Team Foundation Server with the native integration installed and configured, the native integration will no longer work
-once you upgrade to TFS 2017 or later version.
+If you're using an earlier version of Team Foundation Server and native integration is installed and configured, native integration won't work after you upgrade to TFS 2017 or a later version.
 
-For more information on why we no longer support this integration, read this blog post, [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
+For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
 
 ## Synchronization support for TFS 2017 and Project Server
 
-If you are on TFS 2017 and want to integrate with Microsoft Project Server, you can do so by working with one of the following partners and their solutions.
+If you use TFS 2017 and want to integrate with Microsoft Project Server, you can do so by working with one of the following partners and their solutions.
 
 <br/>
 <a id="Project-Connect-from-Tivitie" />
@@ -49,7 +48,7 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 
 ## [ConnectALL](https://www.connectall.com/)
 
-ConnectALL, an Orasi software company, is dedicated to helping companies achieve higher levels of agility and velocity. The company’s enterprise-level application integration platform — [ConnectALL integration platform](https://www.connectall.com) — helps with achieving effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts used during the software delivery process, like ALM, Agile and DevOps. With the ConnectALL Integration Platform, IT companies can accelerate software development and enhance collaboration. 
+ConnectALL, an Orasi software company, is dedicated to helping companies achieve higher levels of agility and velocity. [ConnectALL integration platform](https://www.connectall.com) is the company's enterprise-level application integration platform. ConnectAll helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. With the ConnectALL Integration Platform, IT companies can accelerate software development and enhance collaboration. 
 
 Teams from software development and delivery, IT, and business units across large and small enterprises worldwide use ConnectALL’s integration platform to unify people, processes, and applications from multiple ALM and DevOps providers, such as Tricentis, Cherwell, Atlassian, Micro Focus, Microsoft, IBM, Salesforce, BMC, ServiceNow, and more. ConnectALL helps companies rapidly create business value by bringing software innovation to market faster and increasing productivity through cross-team collaboration.
 
