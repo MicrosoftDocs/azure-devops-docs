@@ -94,9 +94,6 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Required softwares on self-hosted agent
 
-If you are using a self-hosted agent, you might have to install `tar` else caching task will fail because it uses tarring by default. On Windows, installing `7zip` gives a better performance for cache restore. If you want to opt-out of tarring, you can set 
-`AZP_CACHING_CONTENT_FORMAT` variable to "Files" , however you might see some performance degradation where the cache content is large.
-
 |        | Windows | Linux | Mac |
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
