@@ -16,7 +16,7 @@ ms.date: 12/10/2019
 
 # Pipeline outcome summary sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 This article shows you how to get the number of runs for different outcomes (Succeeded / Failed / Cancelled / Partially Succeeded) of a pipeline. An example is shown in the following image.
  

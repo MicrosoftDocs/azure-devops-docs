@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-<strong>Azure DevOps Services</strong>
+**Azure DevOps Services**

@@ -14,9 +14,9 @@ monikerRange: '>= azure-devops'
 ms.date: 12/10/2019
 ---
 
-# Pipeline Task duration sample report 
+# Pipeline task duration sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 This article shows you how to get the time taken to execute different tasks of a pipeline. An example is shown in the following image.
 

@@ -16,7 +16,7 @@ ms.date: 12/10/2019
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 This article shows you how to get the stage wise count of daily failures for the pipeline. This will be similar to the 'Failure trend' widget of the Pipeline pass rate report. The following image shows an example of such a chart.
 
