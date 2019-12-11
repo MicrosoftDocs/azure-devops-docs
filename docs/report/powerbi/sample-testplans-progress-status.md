@@ -11,7 +11,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 12/09/2019
+ms.date: 12/10/2019
 ---
 
 # Progress status sample report 
