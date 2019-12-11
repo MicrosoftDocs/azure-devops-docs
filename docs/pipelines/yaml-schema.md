@@ -193,7 +193,7 @@ stages:
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
-  variables: { string: string } | [ variable | variableReference ] 
+  variables: { string: string } | [ variable | variableReference ]
   jobs: [ job | templateReference]
 ```
 
@@ -264,7 +264,7 @@ jobs:
   container: containerReference # container to run this job inside of
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ] 
+  variables: { string: string } | [ variable | variableReference ]
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
@@ -438,12 +438,12 @@ jobs:
   pool:                # see the following "Pool" schema
     name: string
     demands: string | [ string ]
-  dependsOn: string 
-  condition: string 
+  dependsOn: string
+  condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ]  
+  variables: { string: string } | [ variable | variableReference ]
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
   strategy:
     runOnce:
@@ -518,16 +518,6 @@ All steps, regardless of whether they are documented in this article, support th
 - **enabled**
 - **env**
 - **timeoutInMinutes**
-
-All steps, whether documented below or not, allow the following properties:
-- `displayName`
-- `name`
-- `condition`
-- `continueOnError`
-- `enabled`
-- `env`
-- `target`
-- `timeoutInMinutes`
 
 ## Variables
 
@@ -904,7 +894,7 @@ Resources in YAML represent sources of pipelines, containers, repositories, and 
 
 ```yaml
 resources:
-  pipelines: [ pipeline ]  
+  pipelines: [ pipeline ]
   repositories: [ repository ]
   containers: [ container ]
 ```
@@ -916,7 +906,7 @@ If you have an Azure pipeline that produces artifacts, your pipeline can consume
 # [Schema](#tab/schema)
 
 ```yaml
-resources: 
+resources:
   pipelines:
   - pipeline: string  # identifier for the pipeline resource
     project:  string # project for the build pipeline; optional input for current project
@@ -924,14 +914,14 @@ resources:
     branch: string  # branch to pick the artifact, optional; defaults to all branches
     version: string # pipeline run number to pick artifact; optional; defaults to last successfully completed run
     trigger:     # optional; Triggers are not enabled by default.
-      branches:  
+      branches:
         include: [string] # branches to consider the trigger events, optional; defaults to all branches.
         exclude: [string] # branches to discard the trigger events, optional; defaults to none.
 ```
 # [Example](#tab/example)
 
 ```yaml
-resources: 
+resources:
   pipelines:
   - pipeline: MyAppA
     source: MyCIPipelineA
@@ -941,15 +931,15 @@ resources:
   - pipeline: MyAppC
     project:  DevOpsProject
     source: MyCIPipelineC
-    branch: releases/M159  
+    branch: releases/M159
     version: 20190718.2
     trigger:
-      branches:  
-        include:  
+      branches:
+        include:
         - master
         - releases/*
         exclude:
-        - users/*  
+        - users/*
 ```
 
 ---
@@ -959,7 +949,7 @@ resources:
 
 #### The pipeline resource metadata as predefined variables
 
-In each run, the metadata for a pipeline resource is available to all of the jobs as predefined variables.
+In each run, the metadata for a pipeline resource is available to all of the jobs as these predefined variables:
 
 ```yaml
 resources.pipeline.<Alias>.projectName
@@ -1021,6 +1011,8 @@ resources:
 
 ### Repository resource
 
+::: moniker range="azure-devops-2019"
+
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository. The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1060,19 +1052,14 @@ resources:
 
 #### Type
 
-Pipelines support the following types of repositories: `git`, `github`, and `bitbucket`. `git` refers to
-Azure Repos Git repos. 
+Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`. The `git` type refers to
+Azure Repos Git repos.
 
-- If you choose `git` as your type, then `name` refers to another
-repository in the same project. For example, `otherRepo`. To refer to a repo in
-another project within the same organization, prefix the name with that project's name.
-For example, `OtherProject/otherRepo`.
-- If you choose `github` as your type, then `name` is the full name of the GitHub
-repo including the user or organization. For example, `Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md#sep-github)
-for authorization.
-- If you choose `bitbucket` as your type, then `name` is the full name of the Bitbucket Cloud
-repo including the user or organization. For example, `MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket)
-for authorization.
+- If you specify `type: git`, the `name` value refers to another repository in the same project. An example is `name: otherRepo`. To refer to a repo in another project within the same organization, prefix the name with that project's name. An example is `name: OtherProject/otherRepo`.
+
+- If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization. An example is `name: Microsoft/vscode`. GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
+
+- If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization. An example is `name: MyBitBucket/vscode`. Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
 ## Triggers
 
@@ -1280,8 +1267,8 @@ schedules:
   always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
 ```
 
->[!IMPORTANT]
->When you specify a scheduled trigger, only branches that you explicitly configure for includsion are scheduled for a build. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
+> [!IMPORTANT]
+> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled for a build. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
 
 # [Example](#tab/example)
 
@@ -1401,7 +1388,7 @@ environment:                # create environment and/or record deployments
         - script: echo Hello world
 ```
 
-If you specify an environment or one of its resources, and if don't need to specify other properties, you can shorten the syntax to:
+If you specify an environment or one of its resources, and if you don't need to specify other properties, you can shorten the syntax to:
 
 ```yaml
 environment: environmentName.resourceName
@@ -1414,11 +1401,11 @@ strategy:                 # deployment strategy
 
 # [Example](#tab/example)
 
-You can decrease the scope of the deployment target to a particular resource within the environment as shown in this example:
+You can scope down the deployment target to a particular resource within the environment as shown in this example:
 
 ```yaml
 environment: 'smarthotel-dev.bookings'
-  strategy: 
+  strategy:
     runOnce:
       deploy:
         steps:
@@ -1483,7 +1470,7 @@ steps:
   env: { string: string }  # list of environment variables to add
 ```
 
-If you aren't specifying a command mode, `target` can be shortened to:
+If you don't specify a command mode, you can shorten the `target` structure to:
 
 ```yaml
 - script:
@@ -1526,7 +1513,7 @@ steps:
   env: { string: string }  # list of environment variables to add
 ```
 
-If you aren't specifying a command mode, `target` can be shortened to:
+If you don't specify a command mode, you can shorten the `target` structure to:
 
 ```yaml
 - bash:
@@ -1722,7 +1709,7 @@ steps:
 
 Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/.
+Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<*pipeline resource identifier*\>/.
 
 ### Automatic download in deployment jobs
 
@@ -1785,7 +1772,7 @@ steps:
 ```
 
 > [!NOTE]
-> If you're running the agent in Local Service Account and want to modify the current repository by using git operations or loading git submodules, give the proper permissions to the Project Collection Build Service Accounts user.
+> If you're running the agent in the Local Service account and want to modify the current repository by using git operations or loading git submodules, give the proper permissions to the Project Collection Build Service Accounts user.
 
 ```yaml
 - checkout: self
@@ -1822,7 +1809,11 @@ steps:
 
 ::: moniker range="> azure-devops-2019"
 
-In the following example, three repositories are checked out: a GitHub repository named `tools` declared in repository resources, an Azure Repos Git repository named `resources` declared inline with the `checkout` step, and `self`.
+In the following example, three repositories are checked out:
+
+- A GitHub repository named `tools` declared in repository resources.
+- An Azure Repos Git repository named `resources` declared inline with the `checkout` step.
+- `self`.
 
 ```yaml
 resources:
@@ -1870,7 +1861,7 @@ steps:
   env: { string: string }  # list of environment variables to add
 ```
 
-If you aren't specifying a command mode, `target` can be shortened to:
+If you don't specify a command mode, you can shorten the `target` structure to:
 
 ```yaml
 - task:
