@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 05/28/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
 
-In this quickstart, you learn how to enable paid load testing in Azure DevOps.
+In this quickstart, learn how to enable paid load testing in Azure DevOps.
 
 Azure DevOps offers a cloud-based solution for [load testing your apps](../../test/load-test/index.md). You can create load tests by using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. Then you can run these tests in Azure DevOps.
 
@@ -28,7 +28,7 @@ Load tests are measured and billed in virtual user minutes (VUMs) as described i
 
 If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 <a name="buy-load-testing"></a>
 
