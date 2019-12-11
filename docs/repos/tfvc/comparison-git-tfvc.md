@@ -253,7 +253,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Visual Studio compatibility</td>
-<td>You can use all supported <a href="https://msdn.microsoft.com/library/dd997788" data-raw-source="[previous versions of Visual Studio](https://msdn.microsoft.com/library/dd997788)">previous versions of Visual Studio</a>.</td>
+<td>You can use all supported <a href="https://docs.microsoft.com/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](https://docs.microsoft.com/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
 <p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="https://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
 </tr>
