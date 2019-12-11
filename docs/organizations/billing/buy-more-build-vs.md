@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/07/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, you learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:
@@ -26,7 +26,7 @@ We offer a *free tier* for each. The *free tier* includes:
 - Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
 - One self-hosted CI/CD concurrent job
 
-To estimate costs for Azure DevOps, view the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Microsoft-hosted CI/CD
 

@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 11/21/2019
+ms.date: 12/10/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -52,9 +52,6 @@ Consistency is maintained in the formatting in TOC.
 ::: moniker range="azure-devops"
 
 ## Add Mermaid diagrams to a Wiki page
-
-> [!NOTE] 
-> Mermaid diagram support was added in the [Sprint 158 update (September 23, 2019) release](/azure/devops/release-notes/2019/sprint-158-update#mermaid-diagram-support-in-wiki) and is in the process of deployment. Until deployment is completed, the feature is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization.
 
 Wiki supports the following Mermaid diagram types:
 
