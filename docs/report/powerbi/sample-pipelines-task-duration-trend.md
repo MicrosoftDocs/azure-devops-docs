@@ -165,7 +165,7 @@ The query doesn't return all the columns in the format in which you can directly
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/taskduration-changecolumntype.png)
 
 
-### Rename fields and query, then Close & Apply
+### Rename fields and query 
 
 When finished, you may choose to rename columns. 
 
@@ -219,7 +219,7 @@ You can use the following additional queries to create different but similar rep
 
 ### Use Pipeline Id, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. For a pipeline, its ID can be obtained from the URL of the runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
 #### [Power BI Query](#tab/powerbi/)

@@ -192,7 +192,7 @@ You can use the following additional queries to create different but similar rep
 
 ### Use Pipeline ID, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its ID can be obtained from the URL of the runs page.
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 

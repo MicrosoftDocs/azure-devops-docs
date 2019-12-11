@@ -149,7 +149,7 @@ To pivot the report by Area Path (representing teams), add the field "Area.AreaP
 
 ## Additional queries
 
-Additional queries that can be used to create different, but similar reports. You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 

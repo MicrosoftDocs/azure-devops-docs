@@ -143,7 +143,7 @@ The example report, which displays burndown on both Story Points and Count of St
 
 ## Additional queries
 
-Additional queries that can be used to create different, but similar reports. You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 
