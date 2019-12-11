@@ -23,9 +23,6 @@ If a template is used to include content, it functions like an include directive
 
 You can specify parameters and their data types in a template and pass those parameters to a pipeline. The `parameters` section defines what parameters are available. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the pipeline.
 
-To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
-
-
 ### Passing parameters
 
 Parameters must contain a name and data type. In `azure-pipeline.yml`, when the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
