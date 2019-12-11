@@ -79,7 +79,7 @@ The following table describes each part of the query.
 <tr>
 <tr>
 <td><code>and StateCategory ne 'Completed'</code></td>
-<td>Filters out items that are completed. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td>
+<td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td>
 <tr>
 <tr>
 <td><code>and startswith(Area/AreaPath,'{areapath}')</code></td>

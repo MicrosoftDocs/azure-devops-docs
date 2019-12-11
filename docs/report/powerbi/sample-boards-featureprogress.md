@@ -94,7 +94,7 @@ The following table describes each part of the query.
 <tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
 <tr><td><code>&$expand=Descendants(</code></td><td>Expand Descendants.</td><tr>
 <tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>
-<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
+<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
 <tr><td><code>aggregate(StoryPoints with sum as TotalStoryPoints))</code></td><td>Aggregate sum of Story Points.</td><tr>
 <tr><td><code>)</code></td><td>Close Descendants().</td><tr>
 
