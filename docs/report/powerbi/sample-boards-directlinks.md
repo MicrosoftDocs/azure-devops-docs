@@ -160,10 +160,10 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Table**.
 1. Add columns "WorkItemID" to **Values**.
-    - Right click  "WorkItemID" and select **Don't summarize**.
+    - Richt-click  "WorkItemID" and select **Don't summarize**.
 1. Add column "Title" to **Values**.
 1. Add column "Link.TargetWorkItem.WorkItemID" to **Values**.
-    - Right click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
+    - Richt-click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
 1. Add column "Link.TargetWorkItem.Title" to **Values**.
 1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then click **Apply Filter**.
     - This action filters out any work items that don't have a link.

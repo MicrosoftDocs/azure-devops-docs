@@ -185,7 +185,7 @@ For a simple report, perform the following steps:
 1. Select Power BI Visualization **Clustered bar chart**. 
 1. Add the field "Title" to **Axis**.
 1. Add the field "PercentageComplete" to **Values**.
-    - Right click PercentageComplete and select **Sum**.
+    - Richt-click PercentageComplete and select **Sum**.
 
 The example report displays.
 
