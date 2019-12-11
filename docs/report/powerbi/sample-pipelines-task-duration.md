@@ -5,7 +5,7 @@ description: How-to guide to generate a pipeline task duration Power BI report
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: ravishan
+ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -138,7 +138,7 @@ The following table describes each part of the query.
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in PowerBI reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
 
 1. Change the type of column **TaskDuration80thPercentileInSeconds, TaskDuration80thPercentileInSeconds** and **TaskDuration95thPercentileInSeconds** to **Decimal Number**.
 
@@ -194,6 +194,6 @@ Your report should look like this.
 
 
 ## Full list of sample reports for Pipelines
-[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

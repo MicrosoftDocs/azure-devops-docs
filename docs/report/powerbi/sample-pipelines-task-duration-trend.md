@@ -5,7 +5,7 @@ description: How-to guide to generate a pipeline task duration trend Power BI re
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: ravishan
+ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -157,7 +157,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in PowerBI reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
 
 1. 1. Change the type of column **TaskDuration80thPercentileInSeconds** to **Decimal Number**.
 
@@ -317,7 +317,7 @@ $apply=filter(
 You may want to view the duration trend of a task for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
-- Select PowerBI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the branch from the slicer for which you need to see the task duration trend
 
 #### [Power BI Query](#tab/powerbi/)
@@ -365,7 +365,7 @@ $apply=filter(
 
 You may want to view the task duration trend for all the tasks of a pipeline in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Select PowerBI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field TaskDisplayName to the slicer's **Field**
 - Select the task from the slicer for which you need to see the duration trend
  
 
@@ -411,6 +411,6 @@ $apply=filter(
 
 
 ## Full list of sample reports for Pipelines
-[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

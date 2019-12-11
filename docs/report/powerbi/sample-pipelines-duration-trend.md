@@ -5,7 +5,7 @@ description: How-to guide to generate a pipeline duration trend Power BI report
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: ravishan
+ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -145,7 +145,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in PowerBI reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
 
 1. Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
 
@@ -298,7 +298,7 @@ $apply=filter(
 You may want to view the duration trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
 - Expand Branch into Branch.BranchName
-- Select PowerBI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the pipeline duration trend
 
 #### [Power BI Query](#tab/powerbi/)
@@ -343,7 +343,7 @@ $apply=filter(
 You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
 - Expand BuildPipeline into  BuildPipeline.BuildPipelineName
-- Select PowerBI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
 
 #### [Power BI Query](#tab/powerbi/)
@@ -382,6 +382,6 @@ $apply=filter(
 ***
 
 ## Full list of sample reports for Pipelines
-[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

@@ -1,7 +1,7 @@
 ---
-title: Add a time-in-state measure to a PowerBI report 
+title: Add a time-in-state measure to a Power BI report 
 titleSuffix: Azure DevOps
-description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on Analytics for Azure DevOps 
+description: Sample report that shows how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 

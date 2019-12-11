@@ -5,7 +5,7 @@ description: How-to guide to generate a pipeline stage wise failure Power BI rep
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: ravishan
+ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -160,7 +160,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in PowerBI reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports.
 
 1. Change the type of column FailedStageCount to **Whole Number**.
 
@@ -311,6 +311,6 @@ $apply=filter(
 ***
 
 ## Full list of sample reports for Pipelines
-[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
