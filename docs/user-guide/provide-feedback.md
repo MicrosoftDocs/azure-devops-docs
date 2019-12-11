@@ -163,5 +163,5 @@ A page similar to the following example opens showing the version number.
 
 ## Related articles
 
-* [Azure DevOps features timeline](../extend/support/release-notes.md)
+* [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
 * [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

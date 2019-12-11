@@ -40,31 +40,7 @@
     href: analytics-security.md
 - name: Samples
   items:
-  - name: Using OData Queries
-    items:
-    - name: Sample reports overview
-      href: sample-odata-overview.md
-    - name: Boards - Open bugs
-      href: sample-boards-openbugs.md
-    - name: Boards - Bug trend
-      href: sample-boards-bugtrend.md
-    - name: Boards - Rollup
-      href: sample-boards-rollup.md
-    - name: Boards - Feature progress
-      href: sample-boards-featureprogress.md
-    - name: Boards - Work Items and Direct Links
-      href: sample-boards-directlinks.md
-    - name: Boards - Release burndown
-      href: sample-boards-releaseburndown.md
-    - name: Boards - Sprint burndown
-      href: sample-boards-sprintburndown.md
-    - name: Boards - CFD
-      href: sample-boards-cfd.md
-    - name: Boards - Lead/Cycle time
-      href: sample-boards-leadcycletime.md
-    - name: Boards - Add a team slicer
-      href: sample-boards-teamslicer.md
-  - name: Use Analytics views
+  - name: Analytics views based reports
     items:
     - name: Active bugs report 
       href: active-bugs-sample-report.md
@@ -76,6 +52,47 @@
       href: create-team-filter.md  
     - name: Calculate time-in-state 
       href: create-timeinstate-report.md
+  - name: OData query based reports
+    items:
+    - name: Sample reports overview
+      href: sample-odata-overview.md
+    - name: Sample Boards reports
+      items:
+      - name: Open bugs
+        href: sample-boards-openbugs.md
+      - name: Bug trends
+        href: sample-boards-bugtrend.md
+      - name: Rollup
+        href: sample-boards-rollup.md
+      - name: Feature progress
+        href: sample-boards-featureprogress.md
+      - name: Work Items and Direct Links
+        href: sample-boards-directlinks.md
+      - name: Release burndown
+        href: sample-boards-releaseburndown.md
+      - name: Sprint burndown
+        href: sample-boards-sprintburndown.md
+      - name: Cumulative flow diagram
+        href: sample-boards-cfd.md
+        displayname: CFD 
+      - name: Lead/Cycle time
+        href: sample-boards-leadcycletime.md
+      - name: Add a team slicer
+        href: sample-boards-teamslicer.md
+    - name: Requirements tracking
+      href: sample-stories-overview.md
+    - name: Sample Test Plans reports
+      items:
+      - name: Progress status
+        href: sample-test-plans-progress-status.md
+      - name: Execution trends
+        href: sample-test-plans-execution-trend.md
+      - name: Suite-level aggregation
+        href: sample-test-plans-aggregate-data-level.md
+      - name: Tester by outcome matrix
+        href: sample-test-plans-tester-by-outcome.md
+      - name: Configuration by outcome matrix
+        href: sample-test-plans-configuration-by-outcome.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view

@@ -34,7 +34,7 @@ To use the **delete** command, you must have the **Check out** permission set to
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>itemspec</em></p></td>
-	<td><p>Identifies the file or folder to delete from the Team Foundation version control server. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
+	<td><p>Identifies the file or folder to delete from the Team Foundation version control server. For more information about how Team Foundation parses itemspecs to determine which items are within scope, see <a href="/previous-versions/visualstudio/visual-studio-2010/4y2ash30(v=vs.100)">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
 <tr>
 	<td><p><em>username</em></p></td>
     <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr></tbody>

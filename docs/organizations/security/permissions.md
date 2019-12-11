@@ -882,7 +882,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td><a id="view-audit-log-permission" />View audit log</td>
         <td>
-            Can view the <a href="/azure/devops/organization/settings/azure-devops-auditing">audit log</a>. 
+            Can view the <a href="/azure/devops/organizations/settings/azure-devops-auditing">audit log</a>. 
         </td>
     </tr>
     <tr>

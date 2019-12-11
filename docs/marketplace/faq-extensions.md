@@ -125,7 +125,7 @@ is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Se
 ### Q: Why can't I upload extensions to TFS?
 
 A: You must be a member of the 
-[Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#server). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
+[Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 for the Team Foundation Server where you want to upload extensions.
 
 <a name="extension-access"></a>
@@ -146,7 +146,7 @@ A: Depending on the support you need, choose from the following links:
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops-visual-studio-team-services)
+* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 * Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
 * General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
 

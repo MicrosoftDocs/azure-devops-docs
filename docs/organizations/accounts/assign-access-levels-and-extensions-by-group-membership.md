@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/15/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
@@ -56,13 +56,8 @@ A notification displays, showing the status and outcome of the rule. If the assi
 
 ![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
 
-## Resolve assignment errors
-
-As users sign in to your organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps notifies all **Project Collection Administrators** via email that they must make a purchase. To find users in an error state, the Project Collection Administrator can do the following steps:
-
-1. Go to the **Users** page in **Organization settings**. A notification on the page indicates there are users who are missing extensions or access levels.
-2. To see how many of each resource are missing, choose **Fix assignment errors**.
-3. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
+> [!IMPORTANT]
+> Group rules only apply to users without direct assignments and to users added to the group going forward. [Remove direct assignments](#remove-direct-assignments) so the group rules apply to those users.
 
 ## Manage group members
 
@@ -87,10 +82,67 @@ When the same access level or extension is assigned to the user, both directly a
 
 - Verify individual user resources. On the **Users** tab, look to the top right for the Summary.
 
-Your group rule is in effect.
+## Remove direct assignments
+
+To manage a user's resources only by the groups that they're in, you must remove the direct assignments. Resources that are directly assigned to a user via individual assignment stay assigned to the user, whether the resources are assigned or taken away from the user's groups.
+
+> [!NOTE]   
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select the **Users** tab.
+
+   ![Select the Users tab](../billing/_img/change-number-paid-extension-users/select-users-in-organization-settings.png)
+
+4. Select all users with resources that should be managed only by groups.
+
+   ![Select group rules for migration](_img/remove-direct-assignments/choose-remove-direct-assignments-preview.png)
+
+5. To confirm that you want to remove the direct assignments, select **Remove**.
+
+   ![Confirm removal of direct assignments](_img/remove-direct-assignments/confirm-removal-of-direct-assignments.png)
+
+Direct assignments are removed from the users.
+
+> [!Note]
+> If a user isn't a member of any groups, then the user isn't affected.
+
+#### [Current page](#tab/current-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select the **Users** tab.
+
+   ![Select the users tab
+](_img/remove-direct-assignments/users-tab-vert.png)
+
+4. Select all users with resources that should be managed only by groups.
+
+   ![Select group rules for migration](_img/remove-direct-assignments/choose-remove-direct-assignments-vert.png)
+
+5. To confirm that you want to remove the direct assignments, select **Remove**.
+
+Direct assignments are removed from the users.
+
+> [!Note]
+> If a user isn't a member of any groups, then the user isn't affected.
+
+* * *
 
 ## Related articles
 
 * [Buy and install extensions](../../marketplace/install-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
+
 

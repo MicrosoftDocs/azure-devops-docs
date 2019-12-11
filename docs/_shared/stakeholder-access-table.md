@@ -7,7 +7,8 @@ ms.topic: include
 > | Service, application, or setting | Private project | Public project|
 > |------------|-----------------|---------------|
 > |<strong>Dashboards</strong> | Partial access | Full access | 
-> |<strong>Wiki</strong>  | Partial access | Full access | 
+> |<strong>Wiki (Project wiki)</strong>  | Partial access | Full access | 
+> |<strong>Wiki (Code wiki)</strong>  | No access | Full access | 
 > |<strong>Azure Boards</strong>  | Partial access | Full access | 
 > |<strong>Azure Repos</strong> | No access | Full access | 
 > |<strong>Azure Pipelines</strong>  | Full access | Full access | 

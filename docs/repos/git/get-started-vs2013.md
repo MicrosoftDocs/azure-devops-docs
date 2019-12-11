@@ -49,7 +49,7 @@ To use Git, you'll need to have the client tools installed on your computer.
 ## Clone
 To get started, you'll first need to clone your repo to your local machine.  Once you have a local clone, you can start adding code to your repo.
 
-1. Go to your team's project page (`https://dev.azure/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
+1. Go to your team's project page (`https://dev.azure.com/{yourorganization}/{yourteamproject}`) and then open Visual Studio to connect to your project.  Click **Allow** if prompted to open Visual Studio.
 
 	![Click Home, then Open in Visual Studio](_img/get-started/GoHomeOpenInVisualStudio.png)
 
