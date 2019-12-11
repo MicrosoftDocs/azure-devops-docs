@@ -18,7 +18,7 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the number of runs for different outcomes (Succeeded / Failed / Canceled / Partially Succeeded) of a pipeline. An example is shown in the following image.
+This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). An example is shown in the following image.
  
 
 > [!div class="mx-imgBorder"] 
@@ -168,13 +168,13 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Donut Chart**. 
 1. Add the field "SucceededCount" to **Values**.
-    - Richt-click "SucceededCount" field and ensure **Sum** is selected.
+    - Right-click "SucceededCount" field and ensure **Sum** is selected.
 1. Add the field "FailedCount" to **Values**.
-	  - Richt-click "FailedCount" field and ensure **Sum** is selected.
+	  - Right-click "FailedCount" field and ensure **Sum** is selected.
 1. Add the field "CanceledCount" to **Values**.
-	  - Richt-click "CanceledCount" field and ensure **Sum** is selected.
+	  - Right-click "CanceledCount" field and ensure **Sum** is selected.
 1. Add the field "PartiallySucceededCount " to **Values**.
-    - Richt-click "PartiallySucceededCount " field and ensure **Sum** is selected.
+    - Right-click "PartiallySucceededCount " field and ensure **Sum** is selected.
     
 Your report should look like this. 
 
@@ -188,10 +188,11 @@ Your report should look like this.
 
 You can use the following additional queries to create different but similar reports using the same steps defined previously in this article.
 
-### Use Pipeline Id, rather than Pipeline Name
+### Use Pipeline ID, rather than Pipeline Name
 
 You can change your Pipeline name. To ensure that the Power BI reports don't break when a pipeline name is changed, use the pipeline ID rather than its name. For a pipeline, its ID can be obtained from the URL of the runs page.
-https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+
+`https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 
 #### [Power BI Query](#tab/powerbi/)
 

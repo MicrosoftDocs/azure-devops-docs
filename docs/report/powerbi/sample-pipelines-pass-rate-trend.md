@@ -18,7 +18,9 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the trend of daily pass rate of a pipeline. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This will be similar to the 'Pass rate trend' widget of the Pipeline pass rate report. The following image shows an example of such a trend.
+This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This is similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
+
+The following image shows an example of such a trend.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Pass rate trend - Report](_img/odatapowerbi-pipelines/passratetrend-report.png)
@@ -226,9 +228,9 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Line Chart**. 
 1. Add the field "CompletedOn.Date" to **Axis**.
-    - Richt-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 1. Add the field "PassRate" to **Values**.
-	  - Richt-click "PassRate" field and ensure **Sum** is selected.
+	  - Right-click "PassRate" field and ensure **Sum** is selected.
   
 
 Your report should look like this. 
@@ -244,11 +246,14 @@ You can use the following additional queries to create different but similar rep
 
 ### Use Pipeline Id, rather than Pipeline Name
 
-You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. For a pipeline, its Id can be obtained from the URL of the runs page.
-https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline Id from the URL of the pipelines runs page.
+
+`https://dev.azure.com/{organization}/{project}/_build?definitionId=**{pipelineid}**`
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -274,7 +279,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -298,7 +305,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ***
 
-### Filter by Branch
+### Filter by branch
 
 You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 - Expand Branch into Branch.BranchName
@@ -306,7 +313,9 @@ You may want to view the pass rate trend of a pipeline for a particular **branch
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -332,7 +341,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -357,12 +368,15 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ***
 
 ### Filter by Build Reason
-You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow the below additional steps along with what is defined previously in this article.
+
+You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow these additional steps along with what is defined previously in this article.
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
-- Select the pipeline from the slicer for which you need to see the outcome summary
+- Select the pipeline from the slicer for which you need to see the outcome summary.
 
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -389,6 +403,7 @@ in
 ```
 #### [OData Query](#tab/odata/)
 
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
@@ -413,14 +428,17 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ***
 
-### Pass rate trend for all pipelines of a project
+### Pass rate trend for all project pipelines
 
-You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName
-- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
+You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.  
+- Expand BuildPipeline into  BuildPipeline.BuildPipelineName  
+- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**  
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
+
 #### [Power BI Query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -445,7 +463,9 @@ in
     Source
 ```
 #### [OData Query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -469,6 +489,9 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ***
 
 ## Full list of sample reports for Pipelines
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

@@ -137,10 +137,10 @@ For a simple report, perform the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Richt-click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "State" to **Legend**
 1. Add the field "Count" to **Values**
-    - Richt-click WorkItemId field and ensure **Sum** is selected
+    - Right-click WorkItemId field and ensure **Sum** is selected
 
 The example report:
 

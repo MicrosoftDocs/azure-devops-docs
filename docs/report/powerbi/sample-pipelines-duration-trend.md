@@ -189,11 +189,11 @@ For a simple report, perform the following steps:
 
 1. Add the field "CompletedOn.Date" to **Axis**.
 
-  - Richt-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+  - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "Duration80thPercentileInSeconds" to **Values**.
 
-  - Richt-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
+  - Right-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 
 Your report should look like this. 

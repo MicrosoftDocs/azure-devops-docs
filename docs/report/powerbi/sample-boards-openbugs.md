@@ -117,7 +117,7 @@ For a simple report, perform the following steps:
 1. Add the field "State" to **Columns**.
 1. Add the field "AssignedTo.UserName" to **Rows**.
 1. Add the field "WorkItemId" to **Values**.
-    - Richt-click "WorkItemId" field and ensure **Count** is selected.
+    - Right-click "WorkItemId" field and ensure **Count** is selected.
 
 The example report displays. 
 
