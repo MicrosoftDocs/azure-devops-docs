@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cumulative Flow Diagram (CFD) sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Cumulative Flow Diagram (CFD) 
@@ -182,7 +182,7 @@ The report will now be sorted by correct column order:
 
 ### Pull in data from multiple teams
 
-If you are pulling in data from multiple teams, to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you are pulling in varying columns from every team. It is also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This allows quick filter of the report by team.
+If you are pulling data in from multiple teams to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you are pulling in varying columns from every team. It is also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This step allows quick filter of the report by team.
 
 
 ## Full list of sample reports

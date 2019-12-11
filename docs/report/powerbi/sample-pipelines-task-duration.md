@@ -146,7 +146,7 @@ The query doesn't return all the columns in the format in which you can directly
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/taskduration-changecolumntype.png)
 
 
-### Rename fields and query, then Close & Apply
+### Rename fields and query
 
 When finished, you may choose to rename columns. 
 
@@ -187,13 +187,17 @@ For a simple report, perform the following steps:
 
     - Right-click "TaskDuration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
-Your report should look like this. 
+Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines task duration - Report](_img/odatapowerbi-pipelines/taskduration-report.png)
 
 
 ## Full list of sample reports for Pipelines
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+

@@ -21,7 +21,7 @@ Using OData queries is the recommended approach for pulling data into Power BI. 
 
 Power BI can execute OData queries, which can return a filtered or aggregated set of data to Power BI. OData queries have two advantages: 
 1. All filtering is done server-side. Only the data you need is returned, which leads to shorter refresh times.
-1. You can pre-aggregate data server-side. An OData query can perform aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. This allows you to perform aggregations across large data sets, without needing to pull all the detail data into Power BI.
+1. You can pre-aggregate data server-side. An OData query can perform aggregations such as work item rollup and build failure rates. The aggregations are accomplished server-side, and only the aggregate values are returned to Power BI. Pre-aggregation allows you to perform aggregations across large data sets, without needing to pull all the detail data into Power BI.
 
 Use this article to learn how to:
 
