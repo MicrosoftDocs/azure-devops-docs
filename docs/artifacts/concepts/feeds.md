@@ -40,4 +40,26 @@ There some important things to note regarding public feeds:
 * Public feeds can't have upstream sources
 * Public users cannot currently download universal packages. All other package protocol types are supported for public access.
 
+## Restoring a deleted feed
+
+If you accidentally delete a feed, Azure Artifacts gives you the opportunity to recover the feed and return it to original state without side effects. The deleted feed will be available to recover for 30 days and then permanently deleted. During this time, the feed name will be reserved and unable to reuse. Also, packages cannot be downloaded from the feed and write access is suspended (you can't delete, promote, push etc...).
+
+You can view your your feeds pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
+
+![Go to Azure Artifacts](_img/deleted-feeds-dropdown.png)
+
+1. In the feed pending deletion, click **Feed Settings**
+
+2. Select **Restore feed**
+
+## Permanently deleting a feed
+
+A feed pending deletion will still use storage space. If you want to permanently delete your feed before the pending period is up, you can do this in the pending feeds settings. 
+
+1. In the feed pending deletion, click **Feed Settings**
+
+2. Select **Permanently delete** and confirm the deletion
+
+Once the feed is permanently deleted, the feed and all of its packages cannot be viewed or restored. The feed name will be available for reuse fifteen minutes after permanent deletion.
+
 ::: moniker-end

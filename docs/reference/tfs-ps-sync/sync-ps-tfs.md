@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-ms.date: 09/19/2017  
+ms.date: 12/10/2019  
 ---
 
 # Synchronize TFS with Project Server, third-party support  
@@ -18,16 +18,15 @@ ms.date: 09/19/2017
 <b>TFS 2017 | [TFS 2015 | TFS 2013](synchronize-tfs-project-server.md)</b>
 
 > [!IMPORTANT]  
-> TFS 2017 and later versions no longer support native integration with Office Project Server. If you're working with an on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](synchronize-tfs-project-server.md).
+> TFS 2017 and later versions no longer support native integration with Office Project Server. If you work with on-premises TFS 2015 or TFS 2013, see [Synchronize TFS with Project Server](synchronize-tfs-project-server.md).
 
-If you are on a prior version of Team Foundation Server with the native integration installed and configured, the native integration will no longer work
-once you upgrade to TFS 2017 or later version.
+If you're using an earlier version of Team Foundation Server and native integration is installed and configured, native integration won't work after you upgrade to TFS 2017 or a later version.
 
-For more information on why we no longer support this integration, please read this blog post, [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
+For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
 
 ## Synchronization support for TFS 2017 and Project Server
 
-If you are on TFS 2017 and want to integrate with Microsoft Project Server, you can do so by working with one of the following partners and their solutions.
+If you use TFS 2017 and want to integrate with Microsoft Project Server, you can do so by working with one of the following partners and their solutions.
 
 <br/>
 <a id="Project-Connect-from-Tivitie" />
@@ -43,17 +42,15 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 **Marketplace extension**: [Project Connect](https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO). 
 
 <br/>
-<a id="ConnectALL-from-Go2Group" />
+<a id="ConnectALL" />
 
-![Go2Group](_img/tfs-ps-sync-go2group-logo.png)
+![ConnectAll](_img/connectall.png)
 
-## [ConnectALL from Go2Group](https://www.go2group.com/connectall/)
+## [ConnectALL](https://www.connectall.com/)
 
-ConnectALL is an application integration solution that connects multiple tools and applications, enabling a company's development and management teams to collaborate efficiently and flawlessly across multiple development platforms. Easy to buy, easy to install, and easy to use, ConnectALL meets strict enterprise governance requirements. It leverages Enterprise Service Bus (ESB) technology to achieve an enterprise-grade infrastructure with clustering, multi-tenancy architecture, multiple server support both in the cloud and on-premises, traceability, and audit trails. This type of deployment yields the highest operational efficiency and lowest ongoing maintenance efforts through a single server instance. The architecture encourages collaboration-at-scale between departments while ensuring secure communication.
+ConnectALL, an Orasi software company, is dedicated to helping companies achieve higher levels of agility and velocity. [ConnectALL integration platform](https://www.connectall.com) is the company's enterprise-level application integration platform. ConnectAll helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. With the ConnectALL Integration Platform, IT companies can accelerate software development and enhance collaboration. 
 
-The [ConnectALL integration platform](https://www.go2group.com/connectall/) offers a simple licensing model and affordable pricing for small to large installations. It is priced per application server instance, with unlimited users and unlimited projects accessing that application service.
- 
-ConnectALL is from Go2Group, a global provider of IT delivery solutions that help enterprises achieve businesses agility. Founded in 2002, the company provides products and services for ALM (Application Lifecycle Management), DevOps, cloud, and agile practices. It specializes in complex integration projects involving multiple platforms and multiple teams.
+Teams from software development and delivery, IT, and business units across large and small enterprises worldwide use ConnectALL’s integration platform to unify people, processes, and applications from multiple ALM and DevOps providers, such as Tricentis, Cherwell, Atlassian, Micro Focus, Microsoft, IBM, Salesforce, BMC, ServiceNow, and more. ConnectALL helps companies rapidly create business value by bringing software innovation to market faster and increasing productivity through cross-team collaboration.
 
 **Marketplace extension**: [ConnectALL](https://marketplace.visualstudio.com/items?itemName=go2group.ConnectALL). 
 
@@ -66,13 +63,13 @@ ConnectALL is from Go2Group, a global provider of IT delivery solutions that hel
  
 Tasktop provides enterprise-grade integration between Microsoft Project Server and Azure DevOps Services and TFS, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. This integration automates the flow of artifacts (such as work items and tasks) across these tools, eliminating wasted time and bottlenecks while increasing velocity, collaboration and even employee satisfaction! In addition, Tasktop can automatically collect the activity data into a central database, enabling the creation of consolidated dashboards and reports, allowing for greater project visibility and artifact traceability. 
  
-[Tasktop's unique model-based integration approach](https://www.tasktop.com/product-overview) dramatically reduces the time and effort it takes to integrate tools; this is particularly important for larger organizations with many tools (and tool instances), hundreds of projects within those tools, thousands of users, and millions of work items and tasks.
+[Tasktop's unique model-based integration approach](https://www.tasktop.com/product-overview) dramatically reduces the time and effort it takes to integrate tools. This approach is especially important for larger organizations with many tools (and tool instances), hundreds of projects within those tools, thousands of users, and millions of work items and tasks.
 
 **Marketplace extension**: [Tasktop Integration Hub](https://marketplace.visualstudio.com/items?itemName=tasktop.tasktop-integration-hub). 
 
 
 ## Remove TFS-Project Server integration for a TFS instance upgraded to TFS 2017  
 
-When you upgrade TFS 2015 or earlier version which has the native TFS-Project Server integration configured, remnants of the integration remain. You may choose to ignore them, or you can remove them to avoid receiving error messages. See [Remove integration of TFS with Project Server](remove-tfs-ps-integration.md). 
+When you upgrade TFS 2015 or earlier version, which has the native TFS-Project Server integration configured, remnants of the integration remain. You may choose to ignore them, or you can remove them to avoid receiving error messages. See [Remove integration of TFS with Project Server](remove-tfs-ps-integration.md). 
   
  

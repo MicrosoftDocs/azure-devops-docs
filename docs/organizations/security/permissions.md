@@ -304,7 +304,7 @@ You can't remove or delete the default server level groups.
             </p>
             <blockquote>
                 If your deployment uses SharePoint or Reporting,
-                consider <a href="/azure/devops/server/admin/add-administrator-tfs" data-raw-source="[adding the members of this group](/azure/devops/server/admin/add-administrator-tfs)">adding the members of this group</a>
+                consider <a href="/azure/devops/server/admin/add-administrator" data-raw-source="[adding the members of this group](/azure/devops/server/admin/add-administrator)">adding the members of this group</a>
                 to the Farm Administrators and Site Collection Administrators groups in SharePoint
                 and the Team Foundation Content Managers groups in Reporting Services.
             </blockquote>
@@ -685,7 +685,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 
 ## Server-level permissions 
 
-You manage server-level permissions through the [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator-tfs) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
+You manage server-level permissions through the [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
 
 <table valign="top" width="100%">
@@ -882,7 +882,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td><a id="view-audit-log-permission" />View audit log</td>
         <td>
-            Can view the <a href="/azure/devops/organization/settings/azure-devops-auditing">audit log</a>. 
+            Can view the <a href="/azure/devops/organizations/settings/azure-devops-auditing">audit log</a>. 
         </td>
     </tr>
     <tr>
@@ -900,7 +900,7 @@ You manage collection-level permissions through the [web portal admin context](.
         <td id="make-requests-on-behalf-of-others">Make requests on behalf of others</td>
         <td>
             Can perform operations on behalf of other users or services.
-            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies-tfs" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs)">service accounts</a>.
+            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies)">service accounts</a>.
         </td>
     </tr>
     <tr>
@@ -1152,7 +1152,7 @@ You manage collection-level permissions through the [web portal admin context](.
         <td id="make-requests-on-behalf-of-others-permission">Make requests on behalf of others</td>
         <td>
             Can perform operations on behalf of other users or services.
-            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies-tfs" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies-tfs)">service accounts</a>.
+            You should assign this permission only to on-premises <a href="/azure/devops/server/admin/service-accounts-dependencies" data-raw-source="[service accounts](/azure/devops/server/admin/service-accounts-dependencies)">service accounts</a>.
         </td>
     </tr>
     <tr>
@@ -2887,7 +2887,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 - [About permissions](about-permissions.md)  
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
-- [Add users to an administrator role](/azure/devops/server/admin/add-administrator-tfs)   
+- [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
 

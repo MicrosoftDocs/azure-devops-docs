@@ -36,7 +36,7 @@ A project collection is the container for several projects that share resources.
 ::: moniker range="<= azure-devops-2019"
 
 > [!Note]  
-> The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
+> The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
 ::: moniker-end
 
@@ -476,8 +476,8 @@ You can change a group name, description, add a group image, or delete a group.
 
 For on-premises deployments, see these additional topics: 
 
-- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator-tfs) 
-- [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies-tfs)  
+- [Add a user as a TFS server administrator](/azure/devops/server/admin/add-administrator) 
+- [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies)  
 
 ::: moniker-end  
 
