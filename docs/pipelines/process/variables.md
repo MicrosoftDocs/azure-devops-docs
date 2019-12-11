@@ -554,7 +554,7 @@ Variables are expanded once when the run is started, and again, at the beginning
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   steps:
     - bash: |
         echo $(a)            # This will be 10
@@ -571,7 +571,7 @@ Since variables are expanded at the beginning of a job, you cannot use them in a
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   strategy:
     matrix:
       x:
