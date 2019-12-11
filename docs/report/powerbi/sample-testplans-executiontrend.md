@@ -25,11 +25,11 @@ This article shows you how to get the execution state of one or more Test Plans 
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
 
-	- **Passed**: Number of test cases passing.  
-	- **Failed**: Number of test cases failing.  
-	- **NotApplicable**: Number of test cases 
-	- **Blocked**:  Number of test cases blocked from running.  
-	- **NotExecuted**: Number of test cases defined but not executed.  
+- **Passed**: Number of test cases passing.  
+- **Failed**: Number of test cases failing.  
+- **NotApplicable**: Number of test cases 
+- **Blocked**:  Number of test cases blocked from running.  
+- **NotExecuted**: Number of test cases defined but not executed.  
 
 
 ## Questions the report answers
@@ -44,18 +44,18 @@ This report helps you track the team's progress with respect to planned testing 
 
 A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
 
+[!INCLUDE [temp](_shared/sample-required-reading.md)]
+
+
 ## Prerequisites
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
-- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. 
-- For manual tests, mark the results of each validation step in the test case as passed or failed.  
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-case.md). 
+- Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
 
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
-
-
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 
 ## Sample queries
@@ -111,7 +111,11 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+
+Each query contains the following strings that you must substitute with your values. Do not include brackets {} with your substitution. For example if your organization name is "Fabrikam", replace {organization} with **Fabrikam**, not {Fabrikam}. 
+
+- {organization} - Your organization name 
+- {project} - Your team project name, or omit "/{project}" entirely, for a cross-project query
 - {testPlanTitle} - Title of your test plan. Example: Fabrikam test plan.
 - {startDate} and {endDate} - Date range of interest. You can enter the dates in YYYYMMDD format. e.g. 20190822 for 22nd August 2019.
 
@@ -155,7 +159,7 @@ To create the report, perform the following steps:
 1. Drag and drop **DateSK** in **Axis**.
 1. Drag and drop **Passed, Failed, Blocked, NotApplicable** and **NotExecuted** in **Values**.
 
-Your report should look like this -
+Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
