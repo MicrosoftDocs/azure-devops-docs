@@ -84,7 +84,7 @@
     - name: Sample Test Plans reports
       items:
       - name: Progress status
-        href: sample-tes-tplans-progress-status.md
+        href: sample-test-plans-progress-status.md
       - name: Execution trends
         href: sample-test-plans-execution-trend.md
       - name: Suite-level aggregation
