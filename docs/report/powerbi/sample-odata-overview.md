@@ -22,7 +22,7 @@ In this section, we provide samples for the most popular reports:
 
 | Azure Boards reports | Azure Test Plans reports |
 |----------------------|--------------------------| 
-| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-fulllist-testplans.md)] | 
+| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] | 
 
 All sample report articles provide the following sections and information: 
 

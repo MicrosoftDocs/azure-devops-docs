@@ -84,15 +84,15 @@
     - name: Sample Test Plans reports
       items:
       - name: Progress status
-        href: sample-testplans-progress-status.md
+        href: sample-tes-tplans-progress-status.md
       - name: Execution trends
-        href: sample-testplans-executiontrend.md
-      - name: Suite level aggregation
-        href: sample-testplans-aggregatedatlevel.md
+        href: sample-test-plans-execution-trend.md
+      - name: Suite-level aggregation
+        href: sample-test-plans-aggregate-data-level.md
       - name: Tester by outcome matrix
-        href: sample-testplans-testerbyoutcome.md
+        href: sample-test-plans-tester-by-outcome.md
       - name: Configuration by outcome matrix
-        href: sample-testplans-configurationbyoutcome.md
+        href: sample-test-plans-configuration-by-outcome.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view

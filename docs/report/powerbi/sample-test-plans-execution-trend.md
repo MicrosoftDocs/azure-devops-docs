@@ -14,7 +14,7 @@ monikerRange: '> azure-devops-2019'
 ms.date: 12/09/2019
 ---
 
-# Sample - Manual test execution trend report
+# Manual test execution trend sample report
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
@@ -139,7 +139,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-testplans-finish-query.md)]
+[!INCLUDE [temp](_shared/sample-test-plans-finish-query.md)]
 
 
 ## Create the report
@@ -166,10 +166,10 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-fulllist-testplans.md)]
+[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
 
 ## Related articles
 
 - [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
 - [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/powerbi/extend-analytics/quick-ref)
+- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)

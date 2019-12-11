@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-### Rename fields and query, change column types, then Close & Apply
+In Power BI, perform the following steps.  
 
 When finished, you may choose to rename columns. 
 

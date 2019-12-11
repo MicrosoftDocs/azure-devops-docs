@@ -100,7 +100,7 @@ For specific examples, see one of the following articles:
 
 | Azure Boards reports | Azure Test Plans reports |
 |----------------------|--------------------------| 
-| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-fulllist-testplans.md)] | 
+| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] | 
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: Manual test Tester by Outcome matrix sample Power BI report 
+title: Manual test Configuration by Outcome history report sample Power BI report 
 titleSuffix: Azure DevOps
-description: Sample Power BI queries to generate a tester by outcome matrix report
+description: Sample Power BI queries to generate a Configuration by Outcome matrix report
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
@@ -14,14 +14,14 @@ monikerRange: '> azure-devops-2019'
 ms.date: 12/09/2019
 ---
 
-# Sample - Tester by Outcome matrix
+# Configuration by outcome matrix sample report
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
+When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Tester by Outcome matrix - Report](_img/odatapowerbi-testerbyoutcome.png)
+> ![Sample - Configuration by Outcome matrix - Report](_img/odatapowerbi-configurationbyoutcome.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -30,12 +30,13 @@ When multiple testers are executing test cases, it may be possible that few have
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
-- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create test plans and test suites](../../test/create-a-test-plan.md) and [Create manual test cases](../../test/create-test-cases.md). 
-- Assign test cases to specific testers.
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-cases.md). 
+- Define test configurations and assign then to  test cases. For details, see [Test different configurations](../../test/test-different-configurations.md).
 - Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
 
 	> [!NOTE]  
 	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
+
 
 ## Sample queries
 
@@ -47,8 +48,8 @@ For the report to generate useful data, the team must perform the following acti
 let 
     Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?" 
         &"$apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}'))" 
-        &"/groupby((Tester/UserName, LastResultOutcome)," 
-             &"aggregate($count as Count)" 
+        &"/groupby((TestConfiguration/Name, LastResultOutcome)," 
+            &"aggregate($count as Count)" 
         &")", null, [Implementation="2.0"]) 
 in 
     Source
@@ -61,8 +62,8 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?  
     $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) 
-    /groupby(
-        (Tester/UserName, LastResultOutcome),  
+    /groupby( 
+        (TestConfiguration/Name, LastResultOutcome),  
         aggregate($count as Count) 
     )
 ```
@@ -82,7 +83,7 @@ The following table describes each part of the query.
 <tbody valign="top">
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td><code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle}')) </code></td><td>Return data for only selected test plan. You can add multiple plans with a clause like <code>filter((TestSuite/TestPlanTitle eq '{testPlanTitle1}' or TestSuite/TestPlanTitle eq '{testPlanTitle2}'))</code>. You can also apply any other filters related to test suites, test configurations here.</td><tr>
-<tr><td><code>/groupby((Tester/UserName, LastResultOutcome),</code></td><td>Grouping the points by the user names of testers and their outcome.</td><tr>
+<tr><td><code>/groupby((TestConfiguration/Name, LastResultOutcome),</code></td><td>Grouping the points by the test configuration names and their outcome.</td><tr>
 <tr><td><code>/aggregate($count as Count)</code></td><td>Aggregate data across the filtered test points with having count as <code>Count</code>.</td><tr>
 </tbody>
 </table>
@@ -90,25 +91,25 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand Tester, Rename fields and query, change column types, then Close & Apply
+In Power BI, perform the following steps.  
 
 When finished, you may choose to rename columns. 
 
-1. Expand <code>Tester</code>
+1. Expand <code>TestConfiguration</code>
     - Choose the expand button.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI Expand Tester](/azure/devops/report/powerbi/_img/powerbi-expand-tester.png)
+	    > ![Power BI Expand Test configuration](/azure/devops/report/powerbi/_img/powerbi-expand-testconfiguration.png)
 
     - Select the fields to flatten.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI select fields to flatten](/azure/devops/report/powerbi/_img/powerbi-tester-flatten.png)
+	    > ![Power BI select fields to flatten](/azure/devops/report/powerbi/_img/powerbi-testconfiguration-flatten.png)
 
-    - The table now contains entity field of <code>Tester.UserName</code>.
+    - The table now contains entity field of <code>TestConfiguration.Name</code>.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI expanded tester](/azure/devops/report/powerbi/_img/powerbi-expanded-tester.png)
+	    > ![Power BI expanded test configuration](/azure/devops/report/powerbi/_img/powerbi-expanded-testconfiguration.png)
 
 1. Right-click a column header and select **Rename...**
 
@@ -140,8 +141,8 @@ Power BI shows you the fields you can report on.
 
 To create the report, perform the following steps:
 
-1. Create a PowerBI visualization **Matrix**.
-1. Add the field **Tester.UserName** to **Rows**.
+1. Create a Power BI visualization **Matrix**.
+1. Add the field **TestConfiguration.Name** to **Rows**.
 1. Add the field **LastResultOutcome** to **Columns**.
 1. Add the field **Count** to **Values**.
 1. Select **Sum** as aggregation for **Count**.
@@ -151,14 +152,14 @@ To create the report, perform the following steps:
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Tester by Outcome matrix - Report](_img/odatapowerbi-testerbyoutcome.png)
+> ![Sample - Configuration by Outcome matrix - Report](_img/odatapowerbi-configurationbyoutcome.png)
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-fulllist-testplans.md)]
+[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
 
 ## Related articles
 
 - [Overview of sample reports using OData queries](/azure/devops/report/powerbi/sample-odata-overview)
 - [Connect using Power BI and OData queries](/azure/devops/report/powerbi/odataquery-connect)
-- [Analytics OData query quick reference](/azure/devops/report/powerbi/extend-analytics/quick-ref)
+- [Analytics OData query quick reference](/azure/devops/report/extend-analytics/quick-ref)
