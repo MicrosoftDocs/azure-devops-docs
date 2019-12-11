@@ -10,7 +10,7 @@ ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops-2019'
+monikerRange: '>= azure-devops'  
 ms.date: 12/10/2019
 ---
 
@@ -18,7 +18,7 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-This article shows you how to get the day wise trend of the time taken to execute a task of a pipeline. The following image shows an example of such a chart.
+This article shows you how to get the daily trend report of the time taken to execute a pipeline task. The following image shows an example of such a chart.
 
 
 > [!div class="mx-imgBorder"] 
@@ -412,5 +412,6 @@ $apply=filter(
 
 ## Full list of sample reports for Pipelines
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
