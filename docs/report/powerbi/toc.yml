@@ -52,7 +52,7 @@
       href: create-team-filter.md  
     - name: Calculate time-in-state 
       href: create-timeinstate-report.md
-  - name: OData query based reports
+  - name: OData query-based reports
     items:
     - name: Sample OData reports overview
       href: sample-odata-overview.md

@@ -90,7 +90,7 @@ The following table describes each part of the query.
 <tbody valign="top">
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td><code>$apply=filter(WorkItemType eq 'User Story'</code></td><td>Include User Stories in burndown.</td><tr>
-<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</a></td><tr>
+<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</a></td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"</td><tr>
 <tr><td><code>and Tags/any(x:x/TagName eq '{tagname}')</code>.</td><td>Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.</td><tr>
 <tr><td><code>and DateValue ge {startdate}</code></td><td>Start burndown on or after the specified date. Example: <strong>2019-04-01Z</strong>represents 2019-April-01.</td><tr>
@@ -140,7 +140,7 @@ To pivot burndown by Area Path, perform the following steps:
 1. Select Power BI Visualization **Stacked barchart**. 
 1. Add the field "DateValue" to **Axis**.
     - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
-1. Add the field "TotalStoryPoints" or "Count" to **Values**. You cannot have 2 fields in Values.
+1. Add the field "TotalStoryPoints" or "Count" to **Values**. You cannot have two fields in Values.
 1. Add the field "Area.AreaPath" to **Legend**.
 
 The example report displays burndown pivoted by Area Path.
