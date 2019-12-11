@@ -5,7 +5,7 @@ description: How-to guide to generate a pipeline pass rate Power BI report
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: ravishan
+ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -180,7 +180,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 ### Change column type
 
-The query doesn't return all the columns in the format in which you can directly consume them in PowerBI reports. This section lists the columns whose type needs to be changed for creating reports.
+The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. This section lists the columns whose type needs to be changed for creating reports.
 
 1. Change the type of columns **PassRate, FailRate** and **PartiallySuccessfulRate** to **Decimal Number**.
 
@@ -302,7 +302,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 You may want to view the pass rate trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 - Expand Branch into Branch.BranchName
-- Select PowerBI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI Query](#tab/powerbi/)
@@ -358,7 +358,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 ### Filter by Build Reason
 You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow the below additional steps along with what is defined previously in this article.
-- Select PowerBI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI Query](#tab/powerbi/)
@@ -417,7 +417,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 
 You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 - Expand BuildPipeline into  BuildPipeline.BuildPipelineName
-- Select PowerBI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
 #### [Power BI Query](#tab/powerbi/)
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
@@ -469,6 +469,6 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ***
 
 ## Full list of sample reports for Pipelines
-[!INCLUDE [temp](_shared/sample-fulllist-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
 ## Related articles
-[!INCLUDE [temp](_shared/sample-relatedarticles-pipelines.md)]
+[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
