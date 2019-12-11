@@ -321,6 +321,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 * [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
 * [Job Time-Out](#job-time-out)
 * [Service Connection related issues](#service-connection-related-issues)
+* [Parallel jobs not running](#parallel-jobs-not-running)
 
 ### My pipeline is failing on a command-line step such as MSBUILD
 
@@ -541,6 +542,20 @@ Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+
+### Parallel jobs not running
+
+There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, the releases still sit in queue and run one after the other.
+
+Below are scenarios that won’t consume a parallel job:
+* If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+* When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
+
+Learn more:
+[How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
+[Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline),
+[Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
+[Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
