@@ -31,7 +31,7 @@ This report displays two donut charts that summarize Test Plans executed and not
 - **Split by outcome** 
 	- **Blocked**:  Percentage of test cases that are currently blocked from running.  
 	- **Failed**: Percentage of test cases that failed.  
-	- **NotApplicable**: Percentage of test cases that ???.  
+	- **NotApplicable**: Percentage of test cases that didn't run.  
 	- **Passed**: Percentage of test cases that passed.  
  
 
@@ -42,21 +42,19 @@ The overall execution state report helps you track the team's progress with resp
 - *How much testing is complete?*
 - *What is the current status of tests passing, failing, or being blocked?*
 
+[!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 ## Prerequisites
 
 For the report to generate useful data, the team must perform the following activities to manage test plans:
 
-- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. 
-- For manual tests, mark the results of each validation step in the test case as passed or failed.  
+- Define test plans, test suites, and test cases. Specify their state. For a Test Suite to run, it must be in the In Progress state. For a Test Case to run, it must be in the Ready state. For details, see [Create manual test cases](../../test/create-test-case.md). 
+- Run manual tests and verify the results. Mark the results of each validation step in the test case as passed or failed. For details, see [Run manual tests](../../test/run-manual-tests.md).
 
 	> [!NOTE]  
-	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.  
+	> Testers must mark a test step with a status if it is a validation test step. The overall result for a test reflects the status of all the test steps that were marked. Therefore, the test will have a status of failed if any test step is marked as failed or not marked.   
 
 
-
-
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 ## Sample queries
 
@@ -112,8 +110,8 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
-- {testPlanTitle} - Title of your test plan. Example: Fabrikam test plan.
+[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+
 
 
 ### Query breakdown
