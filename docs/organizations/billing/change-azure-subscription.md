@@ -11,7 +11,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 05/28/2019
+ms.date: 12/10/2019
 ---
 
 # Change or remove the Azure subscription that your organization uses for billing
@@ -20,7 +20,7 @@ ms.date: 05/28/2019
 
 In this article, learn how to change the Azure subscription that your organization uses for billing or remove your billing subscription at any time.   
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
