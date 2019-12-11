@@ -16,7 +16,7 @@ ms.date: 12/10/2019
 
 # Pipeline pass rate trend sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 This article shows you how to get the trend of daily pass rate of a pipeline. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This will be similar to the 'Pass rate trend' widget of the Pipeline pass rate report. The following image shows an example of such a trend.
 

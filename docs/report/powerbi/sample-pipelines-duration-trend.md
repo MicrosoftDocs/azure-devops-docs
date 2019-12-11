@@ -16,7 +16,7 @@ ms.date: 12/10/2019
 
 # Pipeline duration trend sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 This article shows you how to get the day wise trend of pipeline duration. This will be similar to the 'Pipeline duration' widget of the Pipeline duration report. The following image shows an example of such a chart.
 

@@ -81,7 +81,7 @@
         href: sample-boards-teamslicer.md
     - name: Requirements tracking
       href: sample-stories-overview.md
-    - name: Test Plans  sample reports
+    - name: Test Plans sample reports
       items:
       - name: Progress status
         href: sample-test-plans-progress-status.md
@@ -108,7 +108,8 @@
       - name: Task duration
         href: sample-pipelines-task-duration.md
       - name: Task duration trend
-        href: sample-pipelines-task-duration-trend.md- name: Troubleshooting
+        href: sample-pipelines-task-duration-trend.md
+- name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
     href: troubleshooting-views.md
