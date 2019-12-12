@@ -1,4 +1,4 @@
-﻿---
+---
 title: Process customization and inherited processes
 titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/18/2019
+ms.date: 12/12/2019
 ---
 
 # About process customization and inherited processes  
@@ -246,10 +246,17 @@ Picklists associated with person-name fields, such as Assigned To and Changed By
 
 <a id="rename-field">  </a>
 
-### Can a field be renamed or its field type changed?   
+### Can I rename a field or change its data type?   
 
-Renaming a field or changing the field type aren't supported actions.  
-However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
+Renaming a field or changing the data type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
+
+<a id="delete-restore>  </a>
+
+### Can I delete or restore a deleted field? 
+
+You can delete a field, and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
+
+Instead of deleting a field, you may want to instead hide or remove the field from a work item form. 
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
 
