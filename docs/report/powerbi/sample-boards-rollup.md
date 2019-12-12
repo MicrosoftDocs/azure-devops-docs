@@ -142,7 +142,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Boards - Rollup - Fields](_img/odatapowerbi-featurerollup-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Choose the Power BI Visualization **Table**. 
 1. Add the following fields to **Values**

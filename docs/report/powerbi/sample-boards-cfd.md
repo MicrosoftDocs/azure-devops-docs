@@ -110,7 +110,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample -Release Burndown - Fields](_img/odatapowerbi-cfd-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked Area Chart**. 
 1. Add the field "DateValue" to **Axis**
@@ -126,7 +126,7 @@ The example report:
 
 ### Sorting columns in correct order
 
-The above sample will display columns in alphabetical order. To sort the columns in the order specific on the board, perform the following steps:
+The above sample will display columns in alphabetical order. To sort the columns in the order specific on the board, do the following steps:
 
 1. Use the query below to create a new query in Power BI. When done, rename the query to "ColumnOrder" 
 

@@ -150,7 +150,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution - Fields](_img/odatapowerbi-overallexecution-fields.png)
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. To create donut chart of Executed v/s Not executed:
     - Create a Power BI visualization **Donut chart**.

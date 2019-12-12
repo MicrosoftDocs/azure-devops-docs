@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-In Power BI, perform the following steps.  
+In Power BI, do the following steps.  
 
 When finished, you may choose to rename columns. 
 

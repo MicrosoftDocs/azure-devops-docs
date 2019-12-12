@@ -51,7 +51,7 @@ From Visual Studio Code, create and save a file called "filename.odata". You may
 
 Write the OData query. For example queries, review the [Overview of sample reports using OData queries](sample-odata-overview.md). 
 
-The following query returns the top 10 work items under a specific area path. You will need to substitute {organization}, {project}, and {area path} with your values.
+The following query returns the top 10 work items under a specific area path. You'll need to substitute {organization}, {project}, and {area path} with your values.
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?

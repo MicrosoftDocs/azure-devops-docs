@@ -94,7 +94,7 @@ By default, when basic data is returned from Analytics, the data is related as s
 
 ![Entity relationships](_img/pbi-relationships.png)  
 
-You will note that **Tags**, **Teams**, and **Users** are not related to any of the other data. This is due to how those entities
+Note that **Tags**, **Teams**, and **Users** are not related to any of the other data. This is due to how those entities
 are related. They are related by either many-to-many relationships which are not easily handled in these models or 
 there are multiple relationships between the entities such as between users and work items (they are related by Assigned To,
 Created By, Changed By, and others).
