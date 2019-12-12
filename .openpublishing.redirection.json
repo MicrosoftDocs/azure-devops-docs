@@ -12151,6 +12151,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/organizations/accounts/index.md",
+      "redirect_url": "/azure/devops/organizations/accounts/organization-management",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/organizations/accounts/remove-direct-assignments.md",
       "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
