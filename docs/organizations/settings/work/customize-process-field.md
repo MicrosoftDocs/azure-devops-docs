@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields to the web form of a work item type for an Inheritance process model for a project
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 12/12/2019
 ---
 
 # Add and manage fields for an inherited process   
@@ -269,7 +269,7 @@ If you've made changes to an inherited field, and now want to discard those chan
 
 ## Delete a field  
 
-Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can't recover the data. 
+Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
 
 1. You delete the field from the **All processes>Fields** page.  
 
