@@ -20,6 +20,8 @@ ms.date: 12/10/2019
 
 This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This is similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
 The following image shows an example of such a trend.
 
 > [!div class="mx-imgBorder"] 

@@ -19,6 +19,10 @@ ms.date: 12/09/2019
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+An example of the configuration by outcome matrix report is shown in the following image.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Configuration by Outcome matrix - Report](_img/odatapowerbi-configurationbyoutcome.png)

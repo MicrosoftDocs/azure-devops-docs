@@ -20,6 +20,8 @@ ms.date: 12/10/2019
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
 The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
