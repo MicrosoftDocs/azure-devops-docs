@@ -67,9 +67,7 @@
         href: azure-ad-tenant-policy-restrict-org-creation.md
       - name: FAQ 
         href: faq-azure-access.md#faq-connect    
-  - name: Manage group-based licensing 
-    items:
-    - name: Assign access levels and extensions
+    - name: Manage group rules & group-based access 
       href: assign-access-levels-and-extensions-by-group-membership.md
   - name: Add and manage banners
     href: ../settings/manage-banners.md  
