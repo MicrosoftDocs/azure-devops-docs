@@ -18,8 +18,12 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
- 
+This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
+
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
 

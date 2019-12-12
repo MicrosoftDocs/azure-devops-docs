@@ -79,8 +79,8 @@
         href: sample-boards-leadcycletime.md
       - name: Add a team slicer
         href: sample-boards-teamslicer.md
-    - name: Requirements tracking
-      href: sample-stories-overview.md
+      - name: Requirements tracking
+        href: sample-stories-overview.md
     - name: Test Plans sample reports
       items:
       - name: Progress status

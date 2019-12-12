@@ -20,6 +20,8 @@ ms.date: 12/04/2019
 
 This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
 
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 

@@ -18,7 +18,11 @@ ms.date: 12/09/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+the 
+The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
@@ -30,7 +34,6 @@ The report displays a trend chart that summarizes the number and outcome states 
 - **NotApplicable**: Number of test cases 
 - **Blocked**:  Number of test cases blocked from running.  
 - **NotExecuted**: Number of test cases defined but not executed.  
-
 
 ## Questions the report answers
 

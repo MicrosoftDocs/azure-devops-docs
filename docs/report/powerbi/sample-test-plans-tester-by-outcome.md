@@ -19,6 +19,10 @@ ms.date: 12/09/2019
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+The report generated is similar to following image.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Tester by Outcome matrix - Report](_img/odatapowerbi-testerbyoutcome.png)

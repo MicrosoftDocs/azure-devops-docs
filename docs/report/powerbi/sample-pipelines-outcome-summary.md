@@ -18,8 +18,11 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). An example is shown in the following image.
- 
+This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)

@@ -18,7 +18,11 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the time taken to execute different tasks of a pipeline. An example is shown in the following image.
+This article shows you how to get the time taken to execute different tasks of a pipeline. 
+
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+An example is shown in the following image.
 
 
 > [!div class="mx-imgBorder"] 

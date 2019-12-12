@@ -20,8 +20,9 @@ ms.date: 12/10/2019
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
-An example of the pipeline duration report is shown in the following image.
+[!INCLUDE [temp](_shared/in-preview-note.md)]
 
+An example of the pipeline duration report is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines duration - Report](_img/odatapowerbi-pipelines/duration-report.png)

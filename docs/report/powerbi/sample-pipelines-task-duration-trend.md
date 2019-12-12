@@ -18,8 +18,11 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the daily trend report of the time taken to execute a pipeline task. The following image shows an example of such a chart.
+This article shows you how to get the daily trend report of the time taken to execute a pipeline task. 
 
+[!INCLUDE [temp](_shared/in-preview-note.md)]
+
+The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines task duration trend - Report](_img/odatapowerbi-pipelines/taskdurationtrend-report.png)
