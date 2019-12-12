@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # About organization management in Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-only.md)]
 
 With an organization, you gain access to the platform in which you can do the following:
 
@@ -26,6 +26,9 @@ With an organization, you gain access to the platform in which you can do the fo
 * Integrate with other services by using service hooks
 * Obtain additional features and extensions
 * Create one or more projects to segment work. 
+
+> [!NOTE]   
+> This article applies to the Azure DevOps cloud service. If you manage an on-premises Azure DevOps Server, refer to [Administrative tasks quick reference](https://docs.microsoft.com/en-us/azure/devops/server/admin/admin-quick-ref?view=azure-devops) for details on managing the server. 
 
 ## Create your organization
 
@@ -59,6 +62,8 @@ so you don't have to reenter them every time you push.
 Or if you don't want to use a credential manager, you can
 [create personal access tokens manually](use-personal-access-tokens-to-authenticate.md).
 
+<a id="add-users" />
+
 ## Add and manage user access to your organization
 
 You manage who can access your organization by adding them as users of your organization. You manage which features and tasks users can make through access levels and permissions. 
@@ -79,7 +84,7 @@ For an overview of default assignments, see [Default permissions and access for 
 
 You can add and assign an access level to users one-by-one. This is referred to as **Direct** assignment. Or, you can set up one or more **Group rules** and add and assign access levels to groups of users. This is referred to as a **Group Rule** assignment. 
 
-<a id="add-users" />
+<a id="add-users-direct" />
 
 ## Add users and assign access: Direct assignment
 
@@ -94,8 +99,7 @@ If you don't use Azure Active Directory (Azure AD), as described in the next sec
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Project Overview page, Invite new users dialog box](_img/org-manage/invite-members-dialog.png)
   
-	unless users are granted an access level directly, or are granted an access level through a group rule, they’ll be assigned the best available access level. 
-	Users added to teams which haven't been granted an access level directly, or granted an access level through a group rule, are assigned the best available access level, either Basic or Stakeholder. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the manage users interface. 
+	Unless users are granted an access level directly, or are granted an access level through a group rule, they’ll be assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization Settings>Users** page. 
 
 For details, see the following articles: 
 
