@@ -26,7 +26,7 @@ This article applies to managing access levels for project collections defined o
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
 > ![Content version selector](/azure/devops/_shared/_img/version-selector.png)
 
-For a simplified overview of the permissions that are assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
+For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
 ::: moniker range="<= azure-devops-2019"
 

@@ -216,7 +216,7 @@ buy more services, and purchase extensions for your organization.
 
 - [About access levels](../security/access-levels.md) 
 - [Default permissions and access](../security/permissions-access.md) 
-- [Set permissions at the project- or collection-level](../security/(set-project-collection-level-permissions.md) 
+- [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) 
 - [Add a user as a team administrator](../settings/add-team-administrator.md)
 - [Use Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
 - [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
