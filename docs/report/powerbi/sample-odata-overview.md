@@ -28,7 +28,7 @@ In this section, we provide samples for the most popular reports:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 [!INCLUDE [temp](_shared/sample-fulllist.md)] 
 
