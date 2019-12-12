@@ -177,7 +177,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Feature Progress - Fields](_img/odatapowerbi-featureprogress-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select the "PercentageComplete" field in the **Fields** list.
 1. Select **Modeling** menu.

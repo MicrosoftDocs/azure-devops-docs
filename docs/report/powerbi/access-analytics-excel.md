@@ -24,7 +24,7 @@ Analytics via Excel.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-1. To get started, Open Excel 2016 (this will work with earlier versions of Excel. You will need to have installed the Power Query add-in which you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
+1. To get started, Open Excel 2016 (this will work with earlier versions of Excel. You'll need to have installed the Power Query add-in which you can do from [Microsoft Power Query for Excel](https://www.microsoft.com/download/details.aspx?id=39379&CorrelationId=3f2bb5d7-8db9-4e8f-ad58-bfa2789c877c). 
 
 2. Create a blank workbook
 
@@ -99,7 +99,7 @@ By default, when basic data is returned from Analytics, the data is related as s
 
 ![Entity relationships](_img/pbi-relationships.png)  
 
-You will note that the Tags, Teams and Users are not related to any of the other data. This is due to how those entities
+Note that the Tags, Teams and Users are not related to any of the other data. This is due to how those entities
 are related. They are related by either many-to-many relationships which are not easily handled in these models or 
 there are multiple relationships between the entities such as between users and work items (they are related by Assigned To,
 Created By, Changed By, and others).

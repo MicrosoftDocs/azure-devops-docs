@@ -127,7 +127,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-sprintburndown-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
 1. Add the field "DateValue" to **Axis**

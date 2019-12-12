@@ -300,7 +300,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The following example assumes that no one renamed any columns. 
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. From the **Modeling** tab, choose **Manage Relationships** and link the three query results by WorkItemId column. 
 1. Create a Power BI visualization **Table**.

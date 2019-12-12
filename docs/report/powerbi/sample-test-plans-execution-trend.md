@@ -156,7 +156,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Fields](_img/odatapowerbi-executiontrend-fields.png)
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. Create a Power BI visualization **Stacked Area Chart**.
 1. Drag and drop **DateSK** in **Axis**.

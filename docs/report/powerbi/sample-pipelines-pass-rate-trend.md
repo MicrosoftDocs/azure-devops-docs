@@ -226,7 +226,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines pass rate trend - Fields](_img/odatapowerbi-pipelines/passratetrend-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**. 
 1. Add the field "CompletedOn.Date" to **Axis**.

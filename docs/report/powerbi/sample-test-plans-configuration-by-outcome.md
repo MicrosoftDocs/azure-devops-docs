@@ -95,7 +95,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-In Power BI, perform the following steps.  
+In Power BI, do the following steps.  
 
 When finished, you may choose to rename columns. 
 
@@ -143,7 +143,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. Create a Power BI visualization **Matrix**.
 1. Add the field **TestConfiguration.Name** to **Rows**.

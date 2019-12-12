@@ -111,7 +111,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Boards Open Bugs - Fields](_img/odatapowerbi-openbugs-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Matrix**. 
 1. Add the field "State" to **Columns**.

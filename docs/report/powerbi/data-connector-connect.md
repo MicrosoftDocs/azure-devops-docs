@@ -197,7 +197,7 @@ In the example below the most important part of the error message is:
 
 ### Q: How do I resolve: *Query result exceeds maximum size. Please reduce the number of records by applying additional filters*?
 
-**A:** You will get the following error if the number of records retrieved from Analytics exceeds 250,000.  
+**A:** You'll get the following error if the number of records retrieved from Analytics exceeds 250,000.  
 > Failed to save modifications to the server. Error returned: 'OLE DB or ODBC error: 
 > &#91;DataSource.Error&#93; VSTS: Request failed: The remote server returned an error: (400) Bad Request. 
 > (**Query result exceeds maximum size. Please reduce the number of records by applying additional filters**).'.

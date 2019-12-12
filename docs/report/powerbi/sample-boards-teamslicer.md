@@ -33,7 +33,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 
 ## Sample queries
 
-You will need to add an additional query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
+You'll need to add an additional query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
 
 #### [Power BI Query](#tab/powerbi/)
 

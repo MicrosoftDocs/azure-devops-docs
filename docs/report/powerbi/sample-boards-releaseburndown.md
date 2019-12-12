@@ -122,7 +122,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample -Release Burndown - Fields](_img/odatapowerbi-releaseburndown-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
 1. Add the field "DateValue" to **Axis**
@@ -135,7 +135,7 @@ The example report displays burndown on both Story Points and Count of Stories.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
 
-To pivot burndown by Area Path, perform the following steps:
+To pivot burndown by Area Path, do the following steps:
 
 1. Select Power BI Visualization **Stacked barchart**. 
 1. Add the field "DateValue" to **Axis**.
@@ -309,8 +309,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Burndown based off a custom field
 
 Some organizations use a custom field to mark Stories for a Release. For example, they may have a field called "Milestone". This query shows you how to select Stories by a custom field.
-You will need to replace both {customfield} and {releasevalue} in the query.
-To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You will use the Property Name as {customfield}.
+You'll need to replace both {customfield} and {releasevalue} in the query.
+To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as {customfield}.
 
 #### [Power BI Query](#tab/powerbi/)
 
