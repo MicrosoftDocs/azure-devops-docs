@@ -1,4 +1,4 @@
-﻿---
+---
 title: Query by account, user, workflow or board changes
 titleSuffix: Azure Boards
 description: List work items based on changes made to their assignment, state or Kanban board column or swimlane in Azure Boards, Azure DevOps, & Team Foundation Server 
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 12/11/2019
 ---
 
 # Query by assignment or workflow changes
@@ -511,7 +511,8 @@ For more information about field attributes, see [Work item fields and attribute
 2.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises TFS, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises TFS, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 4. This field applies to all work item types that appear on the Kanban board. This includes all WITs added to the Requirement Category and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
-    If you want to modify a board-related field, such as Board Column or Board Lane, from the work item form, you must add it to the form. For more information, see [Add and manage fields (Inheritance process model)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a work item field (On-premises XML process model)](../../reference/add-modify-field.md).
+	> [!NOTE]  
+	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 
 ::: moniker-end
 
