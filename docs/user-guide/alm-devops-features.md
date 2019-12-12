@@ -2265,7 +2265,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can <a href="https://visualstudio.microsoft.com/articles/adopting-vsts" data-raw-source="[migrate source code and work items](https://visualstudio.microsoft.com/articles/adopting-vsts)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
+<p>You can <a href="https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
 
 </td>
 <td width="33%">
