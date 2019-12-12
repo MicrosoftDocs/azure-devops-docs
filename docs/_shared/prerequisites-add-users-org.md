@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-::: moniker range="< azure-devops"  
+::: moniker range="azure-devops"  
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ You add users to a project or team. You add projects to organizations, and you a
 For an overview of the methods supported for adding users to an organization, see [About organization management, Add and manage user access](/azure/devops/organizations/accounts/organization-management#add-users). 
 
 > [!IMPORTANT]
-> If you're adding users to an organization in Azure DevOps Services and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
+> If you're adding users to an organization in Azure DevOps Services and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](/azure/devops/user-guide/sign-up-invite-teammates#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
 
 
 ::: moniker-end  
