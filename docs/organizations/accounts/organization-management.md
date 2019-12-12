@@ -116,10 +116,12 @@ Azure AD is optional, however, if your enterprise already uses a directory manag
 
 The process of adding users to projects when managing them through Azure AD is as follows: 
 
-1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
-2. [Add organization users to your Azure AD](add-users-to-azure-ad.md)
-3. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md)
-4. [Perform bulk assignments of access levels to added users](add-organization-users.md). 
+1. First,[connect your organization to Azure AD](connect-organization-to-azure-ad.md). If you need to set up Azure AD, do that now.  
+2. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
+3. [Add organization users to your Azure AD](add-users-to-azure-ad.md).  
+4. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
+5. [Perform bulk assignments of access levels to added users](add-organization-users.md), 
+6. Or, [define group rules and assign access levels](assign-access-levels-and-extensions-by-group-membership.md).    
 
 You can also add users through the steps outlined in the previous section, [Add users and assign access](#add-users).
 
