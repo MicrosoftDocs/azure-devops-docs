@@ -18,7 +18,7 @@ ms.date: 12/12/2019
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
 
-<a id=" inherited "> </a> 
+<a id="inherited" /> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
@@ -36,7 +36,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 You'll see two types of processes:
 
 - ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically updates your inherited process. 
+- ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
 
 ::: moniker range="azure-devops-2019"
 
@@ -49,7 +49,7 @@ In addition, all processes are shared. That is, one or more projects can use a s
 
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
 
-For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process.. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
+For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
 > ![Admin context, Organization settings, Project list and the process they use](_img/process/projects-list.png)
@@ -414,9 +414,9 @@ You can make the following customizations to a WIT form.
 
 The web form layout is organized into three columns as shown in the image below. 
 
-![3 column page layout](_img/process/cpform-3-column-layout.png)
+![3-column page layout](_img/process/cpform-3-column-layout.png)
 
-If you only add groups and fields to the first two columns, then the layout reflects a two column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one column layout. 
+If you only add groups and fields to the first two columns, then the layout reflects a two-column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one-column layout. 
 
 The web form resizes depending on the width available and the number of columns in the layout.  At maximum width, in most web browsers, each column within a page displays within its own column. As the display width decreases, each column resizes proportionally as follows: 
 
@@ -471,7 +471,7 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 - You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
 - You can't modify the state assigned to the *Completed* state category for any WIT, custom or inherited 
 - You can't change the name of a custom state 
-- You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop down list of a work item form)  
+- You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop-down list of a work item form)  
 - You can't specify a Reason for a state, instead, default reasons are defined such as *Moved to state Triaged*, *Moved out of state Triaged* 
 - You can't change the location of the State and Reason fields on the form
 - You can't restrict transitions, all transitions are defined from any state to another state.  
