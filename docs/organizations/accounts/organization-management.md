@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 12/11/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -28,7 +28,7 @@ With an organization, you gain access to the platform in which you can do the fo
 * Create one or more projects to segment work. 
 
 > [!NOTE]   
-> This article applies to the Azure DevOps cloud service. If you manage an on-premises Azure DevOps Server, refer to [Administrative tasks quick reference](https://docs.microsoft.com/en-us/azure/devops/server/admin/admin-quick-ref?view=azure-devops) for details on managing the server. 
+> This article applies to the Azure DevOps cloud service. If you manage an on-premises Azure DevOps Server, refer to [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref) for details on managing the server. 
 
 ## Create your organization
 
