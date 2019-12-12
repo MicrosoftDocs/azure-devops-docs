@@ -84,6 +84,8 @@
   items:
   - name: Overview
     href: ./extensions/index.md
+  - name: Migration and integration
+    href: ./extensions/migrate-to-boards.md
   - name: Azure Boards with Slack
     href: ./integrations/boards-slack.md
   - name: Azure Boards with Teams
