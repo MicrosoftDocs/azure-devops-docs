@@ -79,20 +79,6 @@
         href: sample-boards-leadcycletime.md
       - name: Add a team slicer
         href: sample-boards-teamslicer.md
-      - name: Requirements tracking
-        href: sample-stories-overview.md
-    - name: Test Plans sample reports
-      items:
-      - name: Progress status
-        href: sample-test-plans-progress-status.md
-      - name: Execution trends
-        href: sample-test-plans-execution-trend.md
-      - name: Suite-level aggregation
-        href: sample-test-plans-aggregate-data-level.md
-      - name: Tester by outcome matrix
-        href: sample-test-plans-tester-by-outcome.md
-      - name: Configuration by outcome matrix
-        href: sample-test-plans-configuration-by-outcome.md
     - name: Pipelines sample reports
       items:
       - name: Outcome summary
@@ -109,6 +95,20 @@
         href: sample-pipelines-task-duration.md
       - name: Task duration trend
         href: sample-pipelines-task-duration-trend.md
+    - name: Test Plans sample reports
+      items:
+      - name: Progress status
+        href: sample-test-plans-progress-status.md
+      - name: Requirements tracking
+        href: sample-stories-overview.md
+      - name: Execution trends
+        href: sample-test-plans-execution-trend.md
+      - name: Suite-level aggregation
+        href: sample-test-plans-aggregate-data-level.md
+      - name: Tester by outcome matrix
+        href: sample-test-plans-tester-by-outcome.md
+      - name: Configuration by outcome matrix
+        href: sample-test-plans-configuration-by-outcome.md
 - name: Troubleshooting
   items:
   - name: Resolve errors with an Analytics view
