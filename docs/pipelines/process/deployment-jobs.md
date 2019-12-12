@@ -30,7 +30,7 @@ Deployment jobs provide some benefits:
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > At the moment, we offer only the *runOnce* strategy and the *canary* strategy. Additional strategies like *rolling* and *blueGreen* are on our roadmap.
+   > At the moment, we support only the *runOnce*, *rolling*  and the *canary* strategies. Support for *blueGreen* strategy is on our roadmap.
 
 ## Schema
 
@@ -69,7 +69,7 @@ We achieve this by using life cycle hooks that can run steps during deployment. 
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application.
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none`
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -111,10 +111,56 @@ strategy:
           ...
 ```
 
+### Rolling deployment strategy
+
+A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of machines (rolling set) in each iteration. 
+
+Currently, we support rolling strategy to only Virtual machine resources.
+
+For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be aborted.
+
+Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+
+```YAML
+strategy:
+  rolling:
+    maxParallel: [ number ]
+    preDeploy:        
+        pool: [ server | pool ] # see pool schema        
+        steps:
+        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+    deploy:          
+      pool: [ server | pool ] # see pool schema        
+      steps:
+      ...
+    routeTraffic:         
+      pool: [ server | pool ]         
+      steps:
+      ...        
+    postRouteTraffic:          
+      pool: [ server | pool ]        
+      steps:
+      ...
+    on:
+      failure:         
+        pool: [ server | pool ]           
+        steps:
+        ...
+      success:          
+        pool: [ server | pool ]           
+        steps:
+        ...
+```
+All the life cycle hooks are supported, namely `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once per batch size defined by `maxParallel`. Lifecycle hook jobs are created to run on each Virtual Machine.
+Then, either `on: success` or `on: failure` is executed.
+
+With `maxParallel: <# of VMs>`, you can control the number of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place and reduce overall downtime.
 
 ### Canary deployment strategy
 
-Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. Currently, this is applicable to only Kubernetes resources.
+Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
+
+Currently, this is applicable to only Kubernetes resources.
 
 
 ```YAML
