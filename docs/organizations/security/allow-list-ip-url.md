@@ -10,7 +10,7 @@ ms.author: ChComley
 author: chcomley
 ms.manager: mijacobs
 monikerRange: '>= tfs-2015'
-ms.date: 10/24/2019
+ms.date: 12/12/2019
 ---
 
 # Allowed address lists and network connections   
@@ -19,11 +19,11 @@ ms.date: 10/24/2019
 
 If your organization use security measures, like a firewall or a proxy server, you need to add certain IP addresses and domain URLs to the **Allow list**. Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
 
-Also, for the best experience with Visual Studio and Azure Services, you'll want to open select ports and protocols. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
+For the best experience with Visual Studio and Azure Services, open select ports and protocols. For more information, see [Use Visual Studio and Azure Services - Install and use Visual Studio behind a firewall or proxy server](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server?view=vs-2017#use-visual-studio-and-azure-services).
 
 ## Domain URLs to allow
 
-If you are having network connection issues to Azure DevOps, using NuGet, or connecting from Visual Studio 2015 and later versions, it may be because your security appliances are blocking connections as Visual Studio uses TLS 1.2. To fix this issue, update the security appliances in order to support TLS 1.2 for the following connections.
+If you are having network connection issues to Azure DevOps, using NuGet, or connecting from Visual Studio 2015 and later versions, it may be because your security appliances are blocking connections as Visual Studio uses TLS 1.2. To fix this issue, update the security appliances to support TLS 1.2 for the following connections.
 
 ### Azure DevOps domains to allow
 
@@ -53,15 +53,15 @@ To ensure your organization works with any existing firewall or IP restrictions,
 * `https://app.vssps.dev.azure.com`
 * `https://app.vssps.visualstudio.com`
 * `https://vstsagentpackage.azureedge.net`
-* `https://cdn.vsassets.io` (hosts Azure DevOps CDN content)
+* `https://cdn.vsassets.io` (hosts Azure DevOps Content Delivery Networks (CDNs) content)
 * `https://gallerycdn.vsassets.io` (hosts Azure DevOps extensions)
-* `https://static2.sharepointonline.com`  (hosts some resources that Azure DevOps uses in "office fabric" UI kit (fonts, etc))
+* `https://static2.sharepointonline.com`  (hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on)
 * `https://*.vstmrblob.vsassets.io` (hosts Azure DevOps TCM log data)
 
 
 ## Additional domains
 
-Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content. Ensure the following CDNs are allowed.
+Azure DevOps leverages CDNs to serve static content. Ensure the following CDNs are allowed.
 
 - `*.vsassets.io` 
 - `*.vsassetscdn.azure.cn` 
@@ -70,6 +70,11 @@ Azure DevOps leverages Content Delivery Networks (CDNs) to serve static content.
 
 We recommend you open port 443 to all traffic on these IP addresses and domains. We also recommend you open port 22 to a smaller subset of targeted IP addresses.  
 
+### Azure Artifacts
+
+- `*.blob.core.windows.net`
+- all IP addresses in the "name": "Storage.{your region}" section of this file (updated weekly): Azure IP ranges and Service Tags - Public Cloud
+
 ## NuGet connections
 
 * `https://azurewebsites.net`
@@ -77,7 +82,6 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 
 > [!NOTE]
 > Privately owned NuGet server URLs may not be included in the list above. You can check the NuGet servers you are using by opening up `%APPData%\Nuget\NuGet.Config`.
-
 
 ## IP addresses and range restrictions
 
@@ -95,7 +99,7 @@ If you're currently allow-listing the `13.107.6.183` and `13.107.9.183` IP addre
 
 ## SSH connections
 
-If you need to connect to Git repositories on Azure DevOps with SSH, you need to allow requests to port 22 for the following:
+If you need to connect to Git repositories on Azure DevOps with SSH, you need to allow requests to port 22 for the following IP addresses:
 
 - `ssh.dev.azure.com`
 - `vs-ssh.visualstudio.com`
