@@ -136,7 +136,7 @@ When you map projects to business units, your company gets a single organization
 
 ## Structure repos and version control within a project
 
-Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
+Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https:\//dev.azure.com/{organization-name}/{project-name}.
 
 Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
@@ -182,7 +182,7 @@ The following image displays a sample of how "your company" could structure its 
 
 ### Choosing your organization admin account type
 
-When you create an organization, the identity that you sign in with defines the identity provider that the organization uses, such as your Azure Active Directory or Microsoft account. Your organization can be created by using a Microsoft account or with an Azure Active Directory account. This account provides the credentials to sign in as an admin to your new organization at https://dev.azure.com/{yourorganization}.
+When you create an organization, the identity that you sign in with defines the identity provider that the organization uses, such as your Azure Active Directory or Microsoft account. Your organization can be created by using a Microsoft account or with an Azure Active Directory account. This account provides the credentials to sign in as an admin to your new organization at https:\//dev.azure.com/{yourorganization}.
 
 #### Using your Microsoft account
 
@@ -208,7 +208,7 @@ Learn more about how to [manage users](../organizations/accounts/manage-users-ta
 
 Each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Set up projects](#what-is-a-project) within those individual organizations, as required, based on teams or ongoing work.
 
-For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
+For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https:\//dev.azure.com/Fabrikam-Marketing, https:\//dev.azure.com/Fabrikam-Engineering, and https:\//dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 
 ## Related articles  
 
