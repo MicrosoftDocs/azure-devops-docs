@@ -118,6 +118,9 @@ Also, you can quickly update a field or reassign ownership directly from the boa
 
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+
+
 ## 4. Monitor metrics and fine tune
 
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).

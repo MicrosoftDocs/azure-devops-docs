@@ -1,4 +1,4 @@
-﻿---
+---
 title: Expedite work with swimlanes, use swimlanes to differentiate work items on your Kanban board
 titleSuffix: Azure Boards
 ms.global_help.title: Add swimlanes
@@ -72,6 +72,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ::: moniker-end   
 
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
 	
 ## Add or remove a swimlane 
 
