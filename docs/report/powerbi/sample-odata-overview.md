@@ -24,7 +24,7 @@ In this section, we provide samples for the most popular reports:
 
 | Azure Boards | Azure Pipelines | Azure Test Plans | 
 |----------------------|--------------------------| 
-| [!INCLUDE [temp](_shared/sample-fulllist.md)] | !INCLUDE [temp](_shared/sample-full-list-pipelines.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] |
+| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] |
 
 ::: moniker-end
 
