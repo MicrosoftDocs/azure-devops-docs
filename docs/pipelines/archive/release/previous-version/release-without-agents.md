@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 If you want to use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
-([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
+([DSC](/powershell/scripting/dsc/configurations/configurations)), 
 or [Chef](https://www.getchef.com/) to deploy your app, 
 follow these steps. If you are using deployment agents, 
 go **[here](release-with-agents.md)** 
