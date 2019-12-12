@@ -16,7 +16,7 @@ ms.date: 12/11/2019
 
 # Azure Boards migration and integration overview
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
 
 This article provides links to tools that support migration and integration from other software applications to Azure Boards.  
 
