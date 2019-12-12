@@ -9,7 +9,7 @@ ms.topic: include
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015" <= tfs-2018"
+::: moniker range=">= tfs-2015 <= tfs-2018"
 
 > [!IMPORTANT]   
 > Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [Defining area paths and assign to a team](/azure/devops/organizations/settings/set-area-paths). Another option is to add custom workflow states which all teams can use. For details, see [Change the workflow for a work item type](/azure/devops/reference/xml/change-workflow-wit). 
