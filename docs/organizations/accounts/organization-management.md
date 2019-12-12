@@ -10,7 +10,7 @@ ms.topic: overview
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/11/2019
+ms.date: 12/12/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -174,7 +174,6 @@ buy more services, and purchase extensions for your organization.
 <h4>Manage group-based licensing</h4>
 <ul>
 <li><a href="assign-access-levels-and-extensions-by-group-membership.md">Add a group rule to assign access levels and extensions</a></li>
-<li><a href="remove-direct-assignments.md" >Remove direct assignments</a></li>
 </ul>
 </td>
 <td width="33%"> 
