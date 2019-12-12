@@ -1,4 +1,4 @@
-﻿---
+---
 title: Move, change, and delete work items
 titleSuffix: Azure Boards
 description: How to remove, delete, change type, or move work items to another project in Azure Boards or TFS 
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/14/2019
+ms.date: 12/12/2019
 ---
 
 # Move, change, or delete work items 

@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Service Status Documentation
-description: Description of how Azure DevOps Services status is monitored and available to users
+title: Azure DevOps Service status 
+description: Understand how Azure DevOps Services status is monitored and available to users
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-new-user
@@ -12,7 +12,7 @@ author: chcomley
 monikerRange: 'azure-devops'
 ---
 
-# Azure DevOps Service Status
+# Azure DevOps Services status
 
 ## Introduction
 
@@ -23,7 +23,7 @@ From time to time, like any online service, our service experiences performance
 slowdowns and stability issues. In these cases, we aim to respond quickly to 
 restore the service, and also make it a top priority to communicate the incident 
 status and our next steps to mitigate the issue on the
-[Azure DevOps Service Status Portal](https://status.dev.azure.com).
+[Azure DevOps Services status portal](https://status.dev.azure.com).
 
 If you are experiencing a problem with any of our Azure DevOps Services, you can check the 
 service health to determine if we are already working on the issue before you contact our 
@@ -89,7 +89,7 @@ we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to r
 ## Get Help
 
 If you're experiencing an issue with Azure DevOps and see a corresponding event communicated on the service health portal,be assured that we're working to restore normal operations of the service. You don't need to take any further 
-action to notify us. However, if you don't see your issue reported on the Azure DevOps service health page, refer 
+action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
 to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
 resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
    
