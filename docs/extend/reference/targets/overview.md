@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
-ms.date: 12/10/2019
+ms.date: 12/12/2019
 ---
 
 # Azure DevOps Services extensibility points
@@ -82,16 +82,28 @@ This example shows how to contribute a hub to the Code hub group:
 
 See [how to add an action](../../develop/add-action.md) for details on contributing an action to a menu or toolbar.
 
-<a name="menus_admin"></a>
+### Add an icon
 
-### Organization settings
+Add an icon properties, so it can be used directly by name.
 
-Name                              | Target ID                                           | Preview 
-----------------------------------|-----------------------------------------------------|-------------------
-Organization (collection) overview toolbar       | ![Organization overvew toolbar](vss/web/_img/organization-overview-toolbar.png)`ms.vss-admin-web.collection-overview-toolbar-menu` | 
-Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               |![Projects grid](vss/web/_img/projects-grid.png) 
-Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    |![Project overview toolbar](vss/web/_img/project-overview-toolbar.png) 
-Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  |![Project overvew teams grid](vss/web/_img/project-overview-teams-grid.png) 
+We recommend providing your own icon.
+Using your own icon example:
+
+ `"properties": {
+            "name": "Sample hub",
+            "uri": "dist/Hub/Hub.html",
+            "icon": "asset://static/sample-icon.png",
+            "supportsMobile": true
+        }`
+
+Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) example:
+
+`"properties": {
+            "iconName": "Code",
+            "name": "Code Hub",
+            "order": 30,
+            "uri": "/views/code/custom.html"
+        }`
 
 <a name="menus_build"></a>
 <a name="menu_release"></a>
@@ -131,7 +143,7 @@ Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu` 
 
 <a name="menus_test"></a>
 
-### Test Plans
+### Azure Test Plans
 
 Name                       | Target ID                                   | Preview 
 ---------------------------|---------------------------------------------|-------------------
