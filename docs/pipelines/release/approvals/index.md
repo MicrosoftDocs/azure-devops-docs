@@ -67,7 +67,7 @@ though service management methodologies such as ITIL. For more details, see [Rel
 * [ServiceNow release and deployment control](servicenow.md)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
-* [Release pipelines and releases](index.md)
+* [Release pipelines and releases](../releases.md)
 
 ## See also
 
