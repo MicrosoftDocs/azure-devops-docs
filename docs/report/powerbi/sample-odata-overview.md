@@ -62,7 +62,7 @@ Get started quickly with the following steps which embed the OData query in the 
 
     Depending on the sample query, there may be one or more additional strings to substitute, such as:
 
-    * {areapath} - Your Area Path. Format: Project\Level1\Level2
+    * {areapath} - Your Area path. Format: Project\Level1\Level2
     * {iterationpath} - Your Iteration path. Format: Project\Level1\Level2
     * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
