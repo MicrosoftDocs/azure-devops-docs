@@ -301,7 +301,7 @@ sudo ./svc.sh stop
 sudo ./svc.sh start
 ```
 
-The snapshot of the environment variables is stored in `.env` file (`PATH` is stored in `.path`) under agent root directory, you can also change that file directly to apply environment variable changes.
+The snapshot of the environment variables is stored in `.env` file (`PATH` is stored in `.path`) under agent root directory, you can also change these files directly to apply environment variable changes.
 
 ### Run instructions before the service starts
 
