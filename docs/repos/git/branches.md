@@ -98,13 +98,13 @@ You can delete a remote branch using the same method - locate the tree for the r
 Delete a local branch using `git branch -d` while checked out to a different branch.
 
 ```
-git branch -d
+git branch -d <branch_name>
 ```
 
 Deleting a remote branch requires use of the `git push` command using the `--delete` option.
 
 ```
-git push origin --delete
+git push origin --delete <branch_name>
 ```
 
 * * *
