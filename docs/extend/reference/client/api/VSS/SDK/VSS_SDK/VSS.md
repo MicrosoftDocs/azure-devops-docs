@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-# VSS SDK Reference 
+## VSS SDK Reference 
 
 ### Methods
 

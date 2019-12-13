@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-# Azure DevOps Services Host Dialog Service Example
+## Azure DevOps Services Host Dialog Service Example
 
 ```js
     VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {
