@@ -24,7 +24,7 @@ Use this task in a build or release pipeline to create and activate a Conda envi
 
 This task will create a Conda environment and activate it for subsequent build tasks.
 
-If the task finds an existing environment with the same name, the task will simply reactivate it. This is possible on self-hosted agents. To recreate the environment and reinstall any of its packages, set the "Clean the environmefnt" option.
+If the task finds an existing environment with the same name, the task will simply reactivate it. This is possible on self-hosted agents. To recreate the environment and reinstall any of its packages, set the "Clean the environment" option.
 
 Running with the "Update to the latest Conda" option will attempt to update Conda before creating or activating the environment.
 If you are running a self-hosted agent and have [configured a Conda installation to work with the task](#agent-config), this may result in your Conda installation being updated.
