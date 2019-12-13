@@ -41,7 +41,7 @@ This month we’re offering a preview of a new design aimed at making it easier 
 
 ![build editor switch](_img/01_25_build-editor-new-build-editor-switch.png)
 
-If you change your mind, you can toggle it off. However, eventually after we feel it’s ready for prime time, the preview editor will replace the current editor. So please give it a try and [give us feedback](https://visualstudio.uservoice.com/forums/330519-team-services).
+If you change your mind, you can toggle it off. However, eventually after we feel it’s ready for prime time, the preview editor will replace the current editor. So please give it a try and [give us feedback](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 The new editor has all the capabilities of the old editor along with several new capabilities and enhancements to existing features:
 
