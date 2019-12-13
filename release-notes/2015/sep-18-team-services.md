@@ -63,7 +63,7 @@ Earlier this month we blogged about improvements in the Visual Studio Online Pow
 
 And finally, we’ve added the ability to publish xUnit results natively through the **Publish Test Results** task.
 
-That’s it for sprint 88. Please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for sprint 88. Please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 
