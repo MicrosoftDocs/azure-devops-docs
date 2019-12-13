@@ -50,7 +50,7 @@ Runtime expression syntax can be used for variables that are expanded at runtime
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
 |runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
-When pipeline variables are turned into environment variables, variable names become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
+Variables are also injected into the enironment. This includes both variables defined at the step level and variables defined at the job or stage level, with the most locally scoped variable winning. When variables are turned into environment variables, variable names become uppercase and periods turn into underscores. For example, the variable `foo.bar` becomes `$FOO_BAR`.
 
 ## Set variables in pipeline
 
@@ -554,7 +554,7 @@ Variables are expanded once when the run is started, and again, at the beginning
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   steps:
     - bash: |
         echo $(a)            # This will be 10
@@ -571,7 +571,7 @@ Since variables are expanded at the beginning of a job, you cannot use them in a
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   strategy:
     matrix:
       x:

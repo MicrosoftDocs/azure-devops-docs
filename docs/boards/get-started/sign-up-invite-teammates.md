@@ -1,4 +1,4 @@
-﻿---
+---
 title: Start using Azure Boards
 titleSuffix: Azure Boards
 description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
@@ -188,7 +188,7 @@ For more information, see [Add organization users for Azure DevOps Services](../
 
 You can rename and delete your organization, or change the organization location. To learn more, see the following articles:
 
-- [Manage organizations](../../organizations/accounts/index.md)
+- [Manage organizations](../../organizations/accounts/organization-management.md)
 - [Rename an organization](../../organizations/accounts/rename-organization.md)
 - [Change the location of your organization](../../organizations/accounts/change-organization-location.md)
 

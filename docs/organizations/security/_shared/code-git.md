@@ -80,7 +80,7 @@ By default, the project-level Readers groups have read-only permissions.
 <td><img src="_img/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
+<td align="left"><strong>Contribute</strong>: At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[branch policies](/azure/devops/repos/git/branch-policies)">branch policies</a>. At the branch level, can push their changes to the branch and lock the branch.
 </td>
 <td><img src="_img/checkmark.png" alt="checkmark"/></td>
 <td><img src="_img/checkmark.png" alt="checkmark"/></td>
