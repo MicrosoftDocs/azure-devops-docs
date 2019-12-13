@@ -45,6 +45,8 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 4. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.
 
+   Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
+
 5. Copy the token. You'll use this token when you configure the agent.
 
 ::: moniker-end
