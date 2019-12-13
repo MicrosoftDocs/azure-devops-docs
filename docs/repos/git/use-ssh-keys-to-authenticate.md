@@ -30,8 +30,7 @@ Connect to your Git repos through SSH on macOS or Linux, or on Windows when you 
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
 ## How SSH key authentication works
-SSH public key authentication works with a pair of generated encryption keys. The _public_ key is shared and used to encrypt
-messages. The _private_ key is kept safe and secure on your system and is used to read messages encrypted with the public key. 
+SSH public key authentication works with an asymettric pair of generated encryption keys. The _public_ key is shared with Azure DevOps and used to verify the initial ssh connection. The _private_ key is kept safe and secure on your system.
 
 ## Set up SSH key authentication
 
@@ -96,35 +95,6 @@ compromised, attackers can use it to trick servers into thinking the connection 
 ### Step 2:  Add the public key to Azure DevOps Services/TFS
 
 Associate the public key generated in the previous step with your user ID.
-
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-
-#### [Preview page](#tab/preview-page) 
-
-1. Sign in to your organization in Azure DevOps (```https://dev.azure.com/{yourorganization}```)
-  
-2. From your home page, open your profile and select **Azure DevOps profile**.
-
-   ![My profile Team Services](_shared/_img/my-profile-team-services-preview.png)
-
-3. Under Security, select **SSH public keys**, and then select **+ New Key**.
-
-    ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key-preview.png)
-4. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
-
-   >[!IMPORTANT]
-   >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
-
-    ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
-
-4. Give the key a useful description (this will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
-
-
-::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
