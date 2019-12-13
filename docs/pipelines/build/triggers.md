@@ -111,6 +111,11 @@ trigger:
     - master
 ```
 
+To clarify this example, let us say that a push `A` to master caused the above pipeline to run. While that pipeline is running, additional pushes `B` and `C` occur into the repository. These updates do not start new independent runs immediately. But after the first run is completed, all pushes until that point of time are batched together and a new run is started. 
+
+>[!NOTE]
+> If the pipeline has multiple jobs and stages, then the first run should still reach a terminal state by completing or skipping all its jobs and stages before the second run can start. For this reason, you must exercise caution when using this feature in a pipeline with multiple stages or approvals. If you wish to batch your builds in such cases, it is recommended that you split your CI/CD process into two pipelines - one for build (with batching) and one for deployments.
+
 ### Paths
 
 You can specify file paths to include or exclude.
@@ -584,6 +589,23 @@ For more information on supported formats, see [Crontab Expression](https://gith
 > you can split your cron schedule into multiple cron schedules that each result in 
 > 100 or less pipeline runs per week.
 
+### Running even when there are no code changes
+
+By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the week days, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, yuu can use the `always` keyword.
+
+```yaml
+schedules:
+- cron: ...
+  ...
+  always: true
+```
+
+Using the `always` keyword does not still guarantee that your schedules run forever. If you do not interact with the Azure DevOps service for several days (through the UI or an API, or by pushing a change to the code), then the schedules stop running. This breaker has been put in place to prevent run-away schedules in unused Azure DevOps organizations.
+
+### Limits on the number of scheduled runs
+
+There are certain limits on how often you can schedule a pipeline to run in a day. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 100 runs per pipeline per day.
+
 ### Migrating from the classic editor
 
 The following examples show you how to migrate your schedules from the classic editor to YAML.
@@ -812,8 +834,64 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-Build completion triggers are not yet supported in YAML syntax.
-After you create your YAML build pipeline, you can use the classic editor to specify a build completion trigger.
+To trigger a pipeline upon the completion of another, specify the latter as a pipeline resource.
+
+> [!NOTE]
+> Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
+
+
+```yaml
+# this is being defined in app-ci pipeline
+resources:
+  pipelines:
+  - pipeline: security-lib
+    source: security-lib-ci
+    trigger: 
+      branches:
+      - releases/*
+      - master
+```
+
+In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically everytime a new version of the security library is built in master or a release branch.
+
+Similar to CI triggers, you can specify the branches to include or exclude:
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: security-lib
+    source: security-lib-ci
+    trigger: 
+      branches:
+        include: 
+        - releases/*
+        exclude:
+        - master
+```
+
+If you don't want to wait until all stages of a run are completed, you can trigger the second pipeline upon on the completion of a specific stage:
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: SmartHotel
+    source: SmartHotel-CI 
+    trigger: 
+      branches:
+        include: master
+      stages: 
+      - QA
+```
+
+If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is particularly helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
+
+When you specify both CI triggers and pipeline triggers, you can expect new runs to be started everytime (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
+
+- A new run of `A` is started.
+- At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
+- As `A` completes, it will trigger another run of `B`.
+
+To prevent triggering two runs of `B` in this example, you must remove its CI trigger or pipeline trigger.
 
 # [Classic](#tab/classic)
 
