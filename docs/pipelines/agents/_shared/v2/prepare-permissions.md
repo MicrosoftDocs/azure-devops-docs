@@ -34,6 +34,8 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"
+
 2. From your home page, open your profile. Go to your security details.
 
    ![test](/azure/devops/repos/git/_shared/_img/my-profile-team-services.png)
@@ -48,6 +50,8 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
 5. Copy the token. You'll use this token when you configure the agent.
+
+::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
