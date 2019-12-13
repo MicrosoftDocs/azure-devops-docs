@@ -25,9 +25,9 @@ An example is shown in the following image.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
 
-[!INCLUDE [stories-overview-info](../_shared/sample-stories-overview-info.md)]
+[!INCLUDE [stories-overview-info](_shared/sample-stories-overview-info.md)]
 
-[!INCLUDE [stories-overview-prereqs](../_shared/sample-stories-overview-prereqs.md)]
+[!INCLUDE [stories-overview-prereqs](_shared/sample-stories-overview-prereqs.md)]
 
 
 ## Sample queries
@@ -228,7 +228,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](../_shared/sample-stories-overview-sub-breakdown.md)]
+[!INCLUDE [stories-overview-substitutions-breakdown](_shared/sample-stories-overview-sub-breakdown.md)]
 
 
 ## Power BI transforms
