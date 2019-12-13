@@ -28,7 +28,7 @@ This article shows you how to display the burndown of User Stories for a release
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -51,7 +51,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -163,7 +163,7 @@ You can use the following additional queries to create different but similar rep
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -186,7 +186,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -211,7 +211,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -235,7 +235,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -262,7 +262,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Some organizations use Iteration Paths to mark Stories for a Release. For example, they may have an Iteration Path of MyProject\Release1. The following query shows how to select Stories by Iteration Path.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -285,7 +285,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -312,7 +312,7 @@ Some organizations use a custom field to mark Stories for a Release. For example
 You'll need to replace both {customfield} and {releasevalue} in the query.
 To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as {customfield}.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -335,7 +335,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

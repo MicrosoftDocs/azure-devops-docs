@@ -20,8 +20,8 @@ ms.date: 12/09/2019
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
-the 
+[!INCLUDE [temp](_shared/preview-note.md)]
+ 
 The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
@@ -63,7 +63,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -87,7 +87,7 @@ in
     Source 
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

@@ -20,7 +20,7 @@ ms.date: 12/10/2019
 
 This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the 'Pipeline duration trend' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 The following image shows an example of such a chart.
 
@@ -32,7 +32,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -54,7 +54,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -152,7 +152,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown. 
 
-1. Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
+- Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - change column type](/azure/devops/report/powerbi/_img/odatapowerbi-pipelines/duration-changecolumntype1.png)
@@ -192,12 +192,12 @@ For a simple report, do the following steps:
 1. Select Power BI Visualization **Line Chart**.
 
 1. Add the field "CompletedOn.Date" to **Axis**.
-
-  - Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
+	
+	- Right-click "CompletedOn.Date" and select "CompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "Duration80thPercentileInSeconds" to **Values**.
 
-  - Right-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
+	- Right-click "Duration80thPercentileInSeconds" field and ensure **Sum** is selected.
 
 
 Your report should look like this. 
@@ -216,8 +216,10 @@ You can use the following additional queries to create different but similar rep
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -235,8 +237,10 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -257,8 +261,10 @@ $apply=filter(
 
 You may want to view the duration trend calculated using other percentile value. Below query gives 50th and 90th percentile pipeline duration along with 80th percentile.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -278,8 +284,10 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -298,7 +306,7 @@ $apply=filter(
 
 ***
 
-### Filter by Branch
+### Filter by branch
 
 You may want to view the duration trend of a pipeline for a particular **branch** only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
@@ -306,8 +314,10 @@ You may want to view the duration trend of a pipeline for a particular **branch*
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the pipeline duration trend
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -325,8 +335,10 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -343,16 +355,18 @@ $apply=filter(
 
 ***
 
-### Duration trend for all pipelines of a project
+### Duration trend for all project pipelines 
 
 You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName
+- Expand BuildPipeline into BuildPipeline.BuildPipelineName
 - Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
+
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
@@ -369,8 +383,10 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
+
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
+
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
 $apply=filter(
@@ -387,6 +403,9 @@ $apply=filter(
 ***
 
 ## Full list of sample reports for Pipelines
+
 [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+
 ## Related articles
+
 [!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]

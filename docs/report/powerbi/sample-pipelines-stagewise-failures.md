@@ -20,7 +20,7 @@ ms.date: 12/10/2019
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 The following image shows an example of such a chart.
 
@@ -32,7 +32,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -57,7 +57,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -231,7 +231,7 @@ You can use the following additional queries to create different but similar rep
 
 You may want to view the task wise failure trend, rather than stage wise failure trend.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 ```
 let
@@ -250,7 +250,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
@@ -272,7 +272,7 @@ $apply=filter(
 
 You may want to view the job wise failure trend, rather than stage wise failure trend.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -296,7 +296,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

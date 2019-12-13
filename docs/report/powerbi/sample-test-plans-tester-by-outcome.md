@@ -20,7 +20,7 @@ ms.date: 12/09/2019
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 The report generated is similar to following image.
  
@@ -43,7 +43,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -58,7 +58,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

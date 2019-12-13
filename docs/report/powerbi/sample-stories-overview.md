@@ -20,7 +20,7 @@ ms.date: 12/04/2019
 
 This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 An example is shown in the following image. 
 
@@ -98,7 +98,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 > [!NOTE]   
 > The following query works for the Agile process since it defines `Remaining Work` and `Completed Work` fields in work items.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -132,7 +132,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -167,7 +167,7 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -198,7 +198,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -230,7 +230,7 @@ $apply=filter(
 
 ### Query for status of bugs linked to the requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -262,7 +262,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -323,7 +323,7 @@ If you are tracking requirements with User Stories, you can have a one-level rol
 > [!NOTE]   
 > Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -356,7 +356,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -388,7 +388,7 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -419,7 +419,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -454,7 +454,7 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 > [!NOTE]   
 > Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -484,7 +484,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
