@@ -13,4 +13,4 @@
 	});
 ```
 
-See [store and manage data](../../../../develop/data-storage.md) to learn more about storing user preferences and collections of documents.
+See [store and manage data](/azure/devops/extend/develop/data-storage) to learn more about storing user preferences and collections of documents.
