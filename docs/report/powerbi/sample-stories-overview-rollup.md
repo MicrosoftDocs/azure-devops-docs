@@ -1,5 +1,5 @@
 ---
-title: Requirements tracking, Stories overview report 
+title: Requirements tracking, Stories overview rollup report 
 titleSuffix: Azure DevOps
 description: Power BI query to generate a report that tracks work progress and status of tests and bugs
 ms.prod: devops
@@ -14,16 +14,16 @@ monikerRange: '> azure-devops-2019'
 ms.date: 12/04/2019
 ---
 
-# Sample: Requirements tracking report
+# Sample: Requirements tracking rollup report
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
+This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
 
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
 
 [!INCLUDE [stories-overview-info](../_shared/sample-stories-overview-info.md)]
 
@@ -39,7 +39,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 ### Query for percentage of hours completion for requirements
 
 > [!NOTE]   
-> The following query works for the Agile process since it defines `Remaining Work` and `Completed Work` fields in work items.
+> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
 #### [Power BI Query](#tab/powerbi/)
 
@@ -48,27 +48,26 @@ In order to scope your report to a particular Area and Iteration path, you can q
 ```
 let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
-    $filter=(
-        IterationSK eq {iterationSK}
-        and AreaSK eq {areaSK}
-        and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-        and Processes/all(p:p/IsBugType eq false)
-    )
-    &$expand=Descendants(
-        $apply=filter(
-            CompletedWork ne null 
-            or RemainingWork ne null
-        )
-        /aggregate(
-            iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
-            iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork
-        )/compute(
-            (SumCompletedWork add SumRemainingWork) as TotalWork, 
-            SumCompletedWork as SumCompleted
-        )/compute(
-            iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
-        )
-)&$select=WorkItemId, Title", null, [Implementation="2.0"]),
+$filter=( 
+    IterationSK eq {iterationSK}
+    and AreaSK eq {areaSK}
+    and WorkItemType eq 'Feature'
+)
+&$expand=Descendants( 
+    $apply=filter( CompletedWork ne null or RemainingWork ne null ) 
+    /aggregate( 
+        iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
+        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork 
+    ) 
+    /compute( 
+        (SumCompletedWork add SumRemainingWork) as TotalWork, 
+        SumCompletedWork as SumCompleted 
+    ) 
+    /compute( 
+        iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork 
+    ) 
+)
+&$select=WorkItemId, Title", null, [Implementation="2.0"]),
     #"Expanded Descendants" = Table.ExpandTableColumn(Source, "Descendants", {"SumCompletedWork", "SumRemainingWork", "TotalWork", "SumCompleted", "PercCompletedWork"}, {"Descendants.SumCompletedWork", "Descendants.SumRemainingWork", "Descendants.TotalWork", "Descendants.SumCompleted", "Descendants.PercCompletedWork"}),
     #"Changed Type" = Table.TransformColumnTypes(#"Expanded Descendants",{{"Descendants.SumCompletedWork", type number}, {"Descendants.SumRemainingWork", type number}, {"Descendants.TotalWork", type number}, {"Descendants.SumCompleted", type number}, {"Descendants.PercCompletedWork", type number}})
 in
@@ -81,29 +80,26 @@ in
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
-$filter=(
+$filter=( 
     IterationSK eq {iterationSK}
     and AreaSK eq {areaSK}
-    and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-    and Processes/all(p:p/IsBugType eq false)
+    and WorkItemType eq 'Feature'
 )
-&$expand=Descendants(
-    $apply=filter(
-        CompletedWork ne null 
-        or RemainingWork ne null
-    )
-    /aggregate(
+&$expand=Descendants( 
+    $apply=filter( CompletedWork ne null or RemainingWork ne null ) 
+    /aggregate( 
         iif(CompletedWork ne null, CompletedWork, 0) with sum as SumCompletedWork, 
-        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork
-    )
-    /compute(
+        iif(RemainingWork ne null, RemainingWork, 0) with sum as SumRemainingWork 
+    ) 
+    /compute( 
         (SumCompletedWork add SumRemainingWork) as TotalWork, 
-        SumCompletedWork as SumCompleted
-    )
-    /compute(
-        iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork
-    )
-)&$select=WorkItemId, Title
+        SumCompletedWork as SumCompleted 
+    ) 
+    /compute( 
+        iif(TotalWork gt 0,(SumCompleted div cast(TotalWork, Edm.Double) mul 100), 0) as PercCompletedWork 
+    ) 
+)
+&$select=WorkItemId, Title
 ```
 
 ***
@@ -115,28 +111,28 @@ $filter=(
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
 ```
-let 
-    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
-    $apply=filter(
-        (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK} 
-        and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
-        and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-        and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
-        )
-    )
-    /compute(TestSuite/RequirementWorkItem/WorkItemId as WorkItemId, TestSuite/RequirementWorkItem/Title as WorkItemTitle)
-    /groupby(
-        (WorkItemId, WorkItemTitle),
-        aggregate(
-            $count as TotalCount, 
-            cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as PassedCount, 
-            cast(LastResultOutcome eq 'Failed', Edm.Int32) with sum as FailedCount, 
+let
+    Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
+	$apply=filter(
+	    (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK}
+    and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
+    and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog')
+    and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
+	))
+	/compute(iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/Parent/WorkItemId, 0) as ParentWorkItemId, 
+	iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/Parent/Title, 'Unparented') as ParentWorkItemTitle
+	)/groupby(
+	    (ParentWorkItemId, ParentWorkItemTitle), 
+	    aggregate(
+	        $count as TotalCount, 
+	        cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as PassedCount, 
+	        cast(LastResultOutcome eq 'Failed', Edm.Int32) with sum as FailedCount, 
             cast(LastResultOutcome eq 'Blocked', Edm.Int32) with sum as BlockedCount,
             cast(LastResultOutcome eq 'NotApplicable', Edm.Int32) with sum as NotApplicableCount,
-            cast(LastResultOutcome eq 'None', Edm.Int32) with sum as NotRunCount, 
-            cast(LastResultOutcome ne 'None', Edm.Int32) with sum as RunCount)
+	        cast(LastResultOutcome eq 'None', Edm.Int32) with sum as NotRunCount, 
+	        cast(LastResultOutcome ne 'None', Edm.Int32) with sum as RunCount)
 )", null, [Implementation="2.0"]),
-    #"Changed Type" = Table.TransformColumnTypes(Source,{{"TotalCount", type number}, {"PassedCount", type number}, {"FailedCount", type number}, {"BlockedCount",type number}, {"NotApplicableCount", type number}, {"NotRunCount", type number}, {"RunCount", type number}})
+    #"Changed Type" = Table.TransformColumnTypes(#"Source",{{"TotalCount", type number}, {"PassedCount", type number}, {"FailedCount", type number}, {"BlockedCount", type number}, {"NotApplicableCount", type number}, {"NotRunCount", type number}, {"RunCount", type number}})
 in
     #"Changed Type"
 ```
@@ -148,15 +144,15 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
 $apply=filter(
-    (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK} 
-    and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
-    and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-    and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
-    )
-)
-/compute(TestSuite/RequirementWorkItem/WorkItemId as WorkItemId, TestSuite/RequirementWorkItem/Title as WorkItemTitle)
-/groupby(
-    (WorkItemId, WorkItemTitle),
+    (TestSuite/RequirementWorkItem/IterationSK eq {iterationSK}
+and TestSuite/RequirementWorkItem/AreaSK eq {areaSK}
+and TestSuite/RequirementWorkItem/Processes/any(p:p/BacklogType eq 'RequirementBacklog')
+and TestSuite/RequirementWorkItem/Processes/all(p:p/IsBugType eq false)
+))
+/compute(iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/Parent/WorkItemId, 0) as ParentWorkItemId, 
+iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/Parent/Title, 'Unparented') as ParentWorkItemTitle
+)/groupby(
+    (ParentWorkItemId, ParentWorkItemTitle), 
     aggregate(
         $count as TotalCount, 
         cast(LastResultOutcome eq 'Passed', Edm.Int32) with sum as PassedCount, 
@@ -173,6 +169,9 @@ $apply=filter(
 
 ### Query for status of bugs linked to the requirements
 
+> [!NOTE]   
+> Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
+
 #### [Power BI Query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
@@ -181,25 +180,23 @@ $apply=filter(
 let
     Source = OData.Feed("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=(
-        IterationSK eq {iterationSK} 
+        IterationSK eq {iterationSK}
         and AreaSK eq {areaSK}
-        and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-        and Processes/all(p:p/IsBugType eq false)
+        and WorkItemType eq 'Feature'
     )
-    &$expand=Links(
-        $apply=filter(
-            (LinkTypeName eq 'Child' or LinkTypeName eq 'Related')
-            and TargetWorkItem/WorkItemType eq 'Bug'
-        )
-        /groupby(
-            (TargetWorkItem/State),
-            aggregate($count as Count)
-        )
-    )&$select=WorkItemId,Title", null, [Implementation="2.0"]),
-    #"Expanded Links" = Table.ExpandTableColumn(Source, "Links", {"TargetWorkItem", "Count"}, {"Links.TargetWorkItem", "Links.Count"}),
-    #"Expanded Links.TargetWorkItem" = Table.ExpandRecordColumn(#"Expanded Links", "Links.TargetWorkItem", {"State"}, {"Links.TargetWorkItem.State"}),
-    #"Filtered Rows" = Table.SelectRows(#"Expanded Links.TargetWorkItem", each [Links.Count] <> null and [Links.Count] <> ""),
-    #"Pivoted Column" = Table.Pivot(#"Filtered Rows", List.Distinct(#"Filtered Rows"[Links.TargetWorkItem.State]), "Links.TargetWorkItem.State", "Links.Count", List.Sum),
+&$expand=Descendants(
+    $apply=filter(
+        WorkItemType eq 'Bug'
+    )
+    /groupby(
+        (State),
+        aggregate($count as Count)
+    )
+)
+&$select=WorkItemId,Title", null, [Implementation="2.0"]),
+    #"Expanded Descendants" = Table.ExpandTableColumn(Source, "Descendants", {"State", "Count"}, {"Descendants.State", "Descendants.Count"}),
+    #"Filtered Rows" = Table.SelectRows(#"Expanded Descendants", each [Descendants.Count] <> null and [Descendants.Count] <> ""),
+    #"Pivoted Column" = Table.Pivot(#"Filtered Rows", List.Distinct(#"Filtered Rows"[Descendants.State]), "Descendants.State", "Descendants.Count", List.Sum),
     #"Changed Type" = Table.TransformColumnTypes(#"Pivoted Column",{{"Active", type number}, {"Closed", type number}})
 in
     #"Changed Type"
@@ -212,21 +209,20 @@ in
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
     $filter=(
-        IterationSK eq {iterationSK}  
-        and AreaSK eq {areaSK} 
-        and Processes/any(p:p/BacklogType eq 'RequirementBacklog') 
-        and Processes/all(p:p/IsBugType eq false)
+        IterationSK eq {iterationSK}
+        and AreaSK eq {areaSK}
+        and WorkItemType eq 'Feature'
     )
-&$expand=Links(
+&$expand=Descendants(
     $apply=filter(
-        (LinkTypeName eq 'Child' or LinkTypeName eq 'Related')
-        and TargetWorkItem/WorkItemType eq 'Bug'
+        WorkItemType eq 'Bug'
     )
     /groupby(
-        (TargetWorkItem/State),
+        (State),
         aggregate($count as Count)
     )
-)&$select=WorkItemId,Title
+)
+&$select=WorkItemId,Title
 ```
 
 ***
@@ -238,7 +234,6 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ## Power BI transforms
 
 The transforms applied to Power BI queries are already added in query snippets.
-
 
 ## Create the report
 
@@ -256,11 +251,10 @@ To create the report, perform the following steps:
     > [!div class="mx-imgBorder"] 
     > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
 
-Your report should look similar to the following image. 
+Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Requirements tracking report](_img/odatapowerbi-storiesoverview.png)
-
+> ![Sample - Stories Overview Rollup Report](_img/odatapowerbi-storiesoverview-rollup.png)
 
 ## Related articles
 
