@@ -170,13 +170,13 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 ### Marketplace Q & A - CustomerQnASupport property
 
-All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the Customer Q & A Support property in the manifest. 
+All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
 
 **Default experience** (No changes to manifest are required)
 - For extension with GitHub repository, Marketplace redirects users in the Q&A section to the associated GitHub issues. 
 - For extension without GitHub repository, Marketplace Q&A is enabled. 
 
-For a different experience than one of the default options use the **Customer Q & A Support** property in the manifest.  
+For a different experience than one of the default options use the **CustomerQnASupport** property in the manifest.  
 
 
 ```json

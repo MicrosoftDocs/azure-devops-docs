@@ -2,7 +2,7 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 title: Extension Points | Extensions for Azure DevOps Services
-description: Browse through the places where your extension can extend Visual Studio Online.
+description: Browse through the places where your extension can extend Azure DevOps.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
 ms.manager: mijacobs
 ms.author: chcomley
