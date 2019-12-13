@@ -131,8 +131,8 @@ for a stage in a release pipeline. You can:
 * Edit the name of the stage here if required.
 * Designate a single user or a single
   group to be the stage owner. Stage owners are
-  notified whenever a deployment of a release is completed to that
-  stage. Stage owners are not automatically assigned
+  notified whenever a deployment to that
+  stage fails. Stage owners are not automatically assigned
   any additional permissions.
 * Delete the stage from the pipeline.
 * Change the order of stages.
@@ -283,7 +283,7 @@ When you specify **After release** or **After stage** triggers, you can also spe
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
-Queuing policies are not yet supported in YAML pipelines.
+Queuing policies are not yet supported in YAML pipelines. At present, each run of a pipeline is independent from and unaware of other runs. In other words, your two successive commits may trigger two pipelines, and both of them will execute the same sequence of stages without waiting for each other. While we work to bring queuing policies to YAML pipelines, we recommend that you use [manual approvals](approvals.md) in order to manually sequence and control the order the execution if this is of importance.
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
