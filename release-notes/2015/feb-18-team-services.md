@@ -46,7 +46,7 @@ Finally, we want to give everyone a heads up that new customers on-boarding apps
 
 Additional information is available here: [Application Insights: Moving from Visual Studio Online Portal to Azure Preview Portal](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/application-insights-moving-from-visual-studio-online-portal-to-azure-preview-portal.aspx)
 
-Feel free to reach out with feedback on [Twitter](https://twitter.com/VisualStudio) and don’t forget to share what you’d like to see us prioritize on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+Feel free to reach out with feedback on [Twitter](https://twitter.com/VisualStudio) and don’t forget to share what you’d like to see us prioritize on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

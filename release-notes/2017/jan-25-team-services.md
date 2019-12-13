@@ -162,7 +162,7 @@ The defaults can be overridden for all variable groups or for a specific one.
 ## Web app deployment history in Azure portal
 Release management now updates the deployment logs of Azure App Service when a deployment is done by using the App Service deployment task. Users can view deployment history in the Azure portal by selecting the __Continuous delivery__ option in the __App Service__ blade.
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

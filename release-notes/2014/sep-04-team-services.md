@@ -71,7 +71,7 @@ With the help of our community, we now have support for connecting Visual Studio
 
 ![Hubot](_img/9_04_06.png)
 
-That’s it for this sprint. Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+That’s it for this sprint. Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 
