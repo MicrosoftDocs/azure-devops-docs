@@ -22,26 +22,19 @@ In this quickstart, learn how to add users to a project or specific team. For an
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
 
-::: moniker range="azure-devops"
+[!INCLUDE [temp](../../_shared/prerequisites-add-users-org.md)]
 
-> [!IMPORTANT]
-> If you're adding users to an organization in Azure DevOps and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this article.
-
-::: moniker-end
+[!INCLUDE [temp](../../_shared/prerequisites-add-users-server.md)]
 
 Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 
-## Prerequisites
-
-* You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).
-* To add users to a project, you must be a member of the [Project Administrators group or have your **Edit project-level information** set to Allow](set-project-collection-level-permissions.md). You can add Stakeholders to the Project Administrators group and then they can add users to an organization or project. 
-* To add users to a team, you must be [added as a team administrator](../../organizations/settings/add-team-administrator.md), or you must be a member of the Project Administrators Group, or have your **Edit project-level information** set to Allow.
 
 <a name="add-users-team-project"></a>
 
 ## Add users to a project
 
 ::: moniker range="azure-devops"  
+
 If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json).
 
 > [!NOTE]   
