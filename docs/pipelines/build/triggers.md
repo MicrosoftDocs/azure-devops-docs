@@ -12,7 +12,7 @@ ms.date: 09/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Build pipeline triggers
+# Pipeline triggers
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -20,17 +20,22 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-On the Triggers tab, you specify the events that trigger the build. You can use the same build pipeline for both CI and scheduled builds.
+Use triggers to run a pipeline automatically. You can configure four types of triggers:
+
+- CI triggers
+- PR triggers
+- Scheduled triggers
+- Pipeline triggers
 
 <a name="ci"></a>
 ## CI triggers
 
-Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
+Continuous integration (CI) triggers cause a pipeline to run whenever a push is made to the specified branches or a specified tag is pushed.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-YAML builds are configured by default with a CI trigger on all branches.
+YAML pipelines are configured by default with a CI trigger on all branches.
 
 ::: moniker-end
 
@@ -92,10 +97,10 @@ trigger:
 >[!IMPORTANT]
 >When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
-### Batching CI builds
+### Batching CI runs
 
-If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
-If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
+If you have a lot of team members uploading changes often, you may want to reduce the number of runs you start.
+If you set `batch` to `true`, when a pipeline is running, the system waits until the run is completed, then starts another run with all changes that have not yet been built.
 
 ```yaml
 # specific branch build with batching
@@ -136,7 +141,7 @@ When you specify paths, you also need to explicitly specify branches to trigger 
 In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
 
 ```yaml
-# specific branch build
+# specific tag
 trigger:
   tags:
     include:
@@ -157,11 +162,11 @@ If you don't specify any tag triggers, then by default, tags will not trigger pi
 
 ::: moniker range=">= azure-devops-2019"
 
-### Opting out of CI builds
+### Opting out of CI
 
 #### Disabling the CI trigger
 
-You can opt out of CI builds entirely by specifying `trigger: none`.
+You can opt out of CI triggers entirely by specifying `trigger: none`.
 
 ```yaml
 # A pipeline with no CI trigger
@@ -169,7 +174,7 @@ trigger: none
 ```
 
 >[!IMPORTANT]
->When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
+>When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI run should be started.
 
 For more information, see [Triggers](../yaml-schema.md#triggers) in the [YAML schema](../yaml-schema.md).
 
@@ -197,7 +202,7 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+YAML pipelines are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -261,7 +266,7 @@ or when changes are pushed to such a pull request.
 ::: moniker range="azure-devops"
 
 > [!IMPORTANT]
-> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your build pipeline for validation.
+> YAML PR triggers are only supported in GitHub and Bitbucket Cloud. If you are using Azure Repos Git, you can configure a [branch policy for build validation](../../repos/git/branch-policies.md#build-validation) in order to trigger your pipeline for validation.
 
 ::: moniker-end
 
@@ -278,10 +283,10 @@ or when changes are pushed to such a pull request.
 
 ::: moniker range=">= azure-devops-2019"
 
-You can specify the target branches for your pull request builds.
-For example, to run pull request builds only for source branches in a PR that
+You can specify the target branches when validating your pull requests.
+For example, to validate pull requests that
 target `master` and `releases/*`, you can use the following `pr` trigger. 
-This configuration triggers a build upon creation of any pull request where the target branch 
+This configuration starts a new run upon creation of any pull request where the target branch 
 is set to the `master` or `releases/*` branches. 
 The pipeline also triggers once with any commit coming into the source branch when the target branch 
 is set to be `master` or `releases/*`, while the pull request is active.
@@ -317,7 +322,7 @@ See [Wildcards](#wildcards) for information on the wildcard syntax.
 You can specify branches to include and exclude. For example:
 
 ```yaml
-# specific branch build
+# specific branch
 pr:
   branches:
     include:
@@ -330,7 +335,7 @@ pr:
 You can specify file paths to include or exclude. For example:
 
 ```yaml
-# specific path build
+# specific path
 pr:
   branches:
     include:
@@ -360,10 +365,10 @@ pr:
     - master
 ```
 
-You can opt out of pull request builds entirely by specifying `pr: none`.
+You can opt out of pull request validation entirely by specifying `pr: none`.
 
 ```yaml
-# no PR builds
+# no PR triggers
 pr: none
 ```
 
@@ -372,7 +377,7 @@ pr: none
 ::: moniker range=">= azure-devops-2019"
 
 >[!IMPORTANT]
->When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if a PR build should be run.
+>When you create a pull request, or push a change to the source branch of a PR, the YAML file in the source branch is evaluated to determine if the PR should be validated and for the steps in the pipeline.
 
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
@@ -383,7 +388,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
+YAML pipelines are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
@@ -432,7 +437,7 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 > Once all UI scheduled triggers are removed, a push must be made in order for the YAML 
 > scheduled triggers to start running.
 
-Scheduled triggers cause a build to run on a schedule defined using [cron syntax](#supported-cron-syntax).
+Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 ```yaml
 schedules:
@@ -477,10 +482,10 @@ Scheduled triggers are evaluated for a branch when the following events occur.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
 * A new branch is created. 
 
-After one of these events occurs in a branch, any scheduled builds for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
+After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
 
 > [!IMPORTANT]
-> Scheduled builds for a branch are added only if the branch matches the branch filters for the 
+> Scheduled runs for a branch are added only if the branch matches the branch filters for the 
 > scheduled triggers in the YAML file **in that particular branch**.
 
 ### Example of scheduled triggers for multiple branches
@@ -683,7 +688,7 @@ After you create your YAML build pipeline, you can use pipeline settings to spec
 
 ::: moniker range="< azure-devops-2019"
 
-YAML builds are not yet available on TFS.
+YAML pipelines are not yet available on TFS.
 
 ::: moniker-end
 
@@ -798,7 +803,12 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 ::: moniker range=">= azure-devops-2019"
 
 <a name="BuildCompletion"></a>
-## Build completion triggers
+## Pipeline triggers
+
+Large products have several components that are dependent on each other.
+These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
+
+In situations like these, add a pipeline trigger to run your pipeline upon the successful completion of the **triggering pipeline**.
 
 # [YAML](#tab/yaml)
 
@@ -807,10 +817,7 @@ After you create your YAML build pipeline, you can use the classic editor to spe
 
 # [Classic](#tab/classic)
 
-Large products have several components that are dependent on each other.
-These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
-
-In situations like these, add a build completion trigger to run your build upon the successful completion of the **triggering build**. You can select any other build in the same project.
+In the classic editor, pipeline triggers are called **build completion triggers**. You can select any other build in the same project to be the triggering pipeline.
 
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
