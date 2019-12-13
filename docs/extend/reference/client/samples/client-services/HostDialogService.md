@@ -13,6 +13,6 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-## Azure DevOps Services Host Dialog Service Example
+# Azure DevOps Services Host Dialog Service Example
 
 [!INCLUDE [x](../../../../../includes/extend/reference/samples/client-services/HostDialogService.md)]

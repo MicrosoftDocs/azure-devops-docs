@@ -13,6 +13,6 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/17/2016
 ---
 
-## Azure DevOps Services Extension Host Navigation Service Example
+# Azure DevOps Services Extension Host Navigation Service Example
 
 [!INCLUDE [x](../../../../../includes/extend/reference/samples/client-services/HostNavigationService.md)]
