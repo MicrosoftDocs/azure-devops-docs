@@ -27,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/cacheV2.md)]
+[!INCLUDE [temp](../_shared/yaml/cachev2.md)]
 
 ::: moniker-end
 
