@@ -89,21 +89,23 @@ Add an icon properties, so it can be used directly by name.
 We recommend providing your own icon.
 Using your own icon example:
 
- `"properties": {
+ ```"properties": {
             "name": "Sample hub",
             "uri": "dist/Hub/Hub.html",
             "icon": "asset://static/sample-icon.png",
             "supportsMobile": true
-        }`
+        }
+```
 
 Using the [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/) example:
 
-`"properties": {
+```"properties": {
             "iconName": "Code",
             "name": "Code Hub",
             "order": 30,
             "uri": "/views/code/custom.html"
-        }`
+        }
+```
 
 <a name="menus_build"></a>
 <a name="menu_release"></a>
