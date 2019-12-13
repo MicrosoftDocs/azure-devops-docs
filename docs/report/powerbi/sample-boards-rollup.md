@@ -28,7 +28,7 @@ This article shows you how to generate the rollup count of User Stories and tota
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -50,7 +50,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -121,7 +121,7 @@ The following table describes each part of the query.
 
 ### Replace null values in rollup fields
 
-If a work item doesn't have ayn children, the rollup value may be null. For example, **Descendants.CountOfUserStories** is "null" if a Feature doesn't have any child User Stories.
+If a work item doesn't have any children, the rollup value may be null. For example, **Descendants.CountOfUserStories** is "null" if a Feature doesn't have any child User Stories.
 
 For easier reporting, replace all nulls with zero by following these steps.
 
@@ -168,7 +168,7 @@ You can use the following additional queries to create different but similar rep
 
 You can generate rollup reports filtering by Team Name rather than Area Path.  
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -190,7 +190,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

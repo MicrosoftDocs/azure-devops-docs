@@ -20,7 +20,7 @@ ms.date: 12/09/2019
 
 When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 An example of the configuration by outcome matrix report is shown in the following image.
  
@@ -44,7 +44,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -59,7 +59,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

@@ -20,7 +20,7 @@ ms.date: 12/10/2019
 
 This article shows you how to create a report that shows a pipeline's daily pass rate trend. Pass rate of a pipeline is defined as the percentage of successful pipeline runs to the total pipeline runs. This is similar to the 'Pass rate trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report).
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 The following image shows an example of such a trend.
 
@@ -32,7 +32,7 @@ The following image shows an example of such a trend.
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -61,7 +61,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -252,7 +252,7 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId=**{pipelineid}**`
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -280,7 +280,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -314,7 +314,7 @@ You may want to view the pass rate trend of a pipeline for a particular **branch
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -342,7 +342,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -375,7 +375,7 @@ You may want to view the pass rate trend of a pipeline for a particular **Build 
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -403,7 +403,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
@@ -437,7 +437,7 @@ You may want to view the pass rate trend for all the pipelines of the project in
 - Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**  
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -464,7 +464,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

@@ -20,7 +20,7 @@ ms.date: 12/10/2019
 
 This article shows you how to get the daily trend report of the time taken to execute a pipeline task. 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 The following image shows an example of such a chart.
 
@@ -32,7 +32,7 @@ The following image shows an example of such a chart.
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -56,7 +56,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -225,7 +225,7 @@ You can use the following additional queries to create different but similar rep
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use the pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
 https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -248,7 +248,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -274,7 +274,7 @@ in
 
 You may want to view the task duration trend calculated using other percentile value. The following query gives 50th and 95th percentile task duration along with 80th percentile.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -299,7 +299,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -331,7 +331,7 @@ You may want to view the duration trend of a task for a particular **branch** on
 - Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
 - Select the branch from the slicer for which you need to see the task duration trend
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -355,7 +355,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -386,7 +386,7 @@ You may want to view the task duration trend for all the pipeline tasks in a sin
 - Select the task from the slicer for which you need to see the duration trend
  
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -408,7 +408,7 @@ let
 in
     Source
 ```
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

@@ -23,11 +23,9 @@ Some scenarios have a hierarchical organization of test suites as per organizati
 > [!div class="mx-imgBorder"] 
 > ![Sample - Test Plan structure for aggregated view](_img/odatapowerbi-aggregatedatlevel-plan.png)
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
-
 As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 For a sample test suite hierarchy in a test plan like below, you can configure this report.
  
@@ -50,7 +48,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -79,7 +77,7 @@ in
     Source 
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

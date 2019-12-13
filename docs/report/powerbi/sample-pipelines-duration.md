@@ -20,7 +20,7 @@ ms.date: 12/10/2019
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
-[!INCLUDE [temp](_shared/in-preview-note.md)]
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 An example of the pipeline duration report is shown in the following image.
 
@@ -32,7 +32,7 @@ An example of the pipeline duration report is shown in the following image.
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -55,7 +55,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -197,7 +197,7 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 `https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**`
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -220,7 +220,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -248,7 +248,7 @@ You may want to view the duration of a pipeline for a particular **branch** only
 - Expand Branch into Branch.BranchName.  
 - Add the field **Branch.BranchName** to **Axis**.  
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -271,7 +271,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -299,7 +299,7 @@ You may want to view the duration for all the pipelines of the project in a sing
 - Expand BuildPipeline into  BuildPipeline.BuildPipelineName.
 - Add the field **BuildPIpeline.BuildPipelineName** to **Axis**.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -322,7 +322,7 @@ in
 ```
 
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
