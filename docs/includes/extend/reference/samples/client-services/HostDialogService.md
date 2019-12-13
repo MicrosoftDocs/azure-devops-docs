@@ -31,4 +31,4 @@ ms.date: 08/25/2016
     });
 ```
 
-See [Using host dialog](../../../../develop/using-host-dialog.md) for additional samples.
+See [Using host dialog](/azure/devops/extend/develop/using-host-dialog) for additional samples.
