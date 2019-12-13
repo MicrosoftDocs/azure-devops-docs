@@ -33,44 +33,14 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Key (unique identifier) for the cache</td>
-<td>
-<p>This should be a string that can be segmented using '|'. File paths can be absolute or relative to $(System.DefaultWorkingDirectory).</p>
-</td>
-</tr>
-<tr>
-<td>Path of the folder to cache</td>
-<td>
-<p>Can be fully qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. <a href="https://go.microsoft.com/fwlink/?LinkID=550988">Variables</a> are supported.</p>
-</td>
-</tr>
-<tr>
-<td>Cache hit variable</td>
-<td>
-<p>Variable to set to 'true' when the cache is restored (a cache hit), otherwise set to 'false'.</p>
-</td>
-</tr>
-<tr>
-<td>Additional restore key prefixes</td>
-<td>
-<p>Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes.</p>
-</td>
-</tr>
+| Argument | Description |
+|---|---|
+| Key (unique identifier) for the cache | This should be a string that can be segmented using '|'. File paths can be absolute or relative to $(System.DefaultWorkingDirectory). |
+| Path of the folder to cache | Can be fully qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported. |
+| Cache hit variable | Variable to set to 'true' when the cache is restored (a cache hit), otherwise set to 'false'. |
+| Additional restore key prefixes | Additional restore key prefixes that are used if the primary key misses. This can be a newline-delimited list of key prefixes. |
 
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+[**Control options**](../../process/tasks.md#controloptions)
 
 ## Open-source
 
