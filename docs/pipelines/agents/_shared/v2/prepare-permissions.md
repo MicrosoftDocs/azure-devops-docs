@@ -32,7 +32,7 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 1. Sign in with the user account you plan to use in your Azure DevOps organization (`https://dev.azure.com/{your_organization}`).
 
-::: momiker-end
+::: moniker-end
 
 2. From your home page, open your profile. Go to your security details.
 
