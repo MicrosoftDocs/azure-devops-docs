@@ -45,3 +45,9 @@ None
 ## Open-source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+## Next steps
+
+Learn more about pipeline caching:
+
+> [Pipeline Caching](../../caching/index.md)
