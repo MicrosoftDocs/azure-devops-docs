@@ -25,11 +25,13 @@ ms.date: 08/04/2016
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
+::: moniker range="azure-devops"
 * Pipelines
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
+::: moniker-end
 
 * Code
   * [Code checked in](#tfvc.checkin)
@@ -1184,6 +1186,7 @@ A deployment was started
 }
 ```
 
+::: moniker range="azure-devops"
 ## Pipelines
 
 > [!NOTE]
@@ -1528,6 +1531,7 @@ An approval completed for a run stage
   "createdDate": "2019-12-13T06:18:22.487Z"
 }
 ```
+::: moniker-end
 
 ## Code
 
