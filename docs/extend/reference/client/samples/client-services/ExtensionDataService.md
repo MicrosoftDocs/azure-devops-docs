@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/25/2016
 ---
 
-# Azure DevOps Services Extension Data Service Example
+## Azure DevOps Services Extension Data Service Example
 
 Azure DevOps Services extension data service sample -- getting the data service
 
