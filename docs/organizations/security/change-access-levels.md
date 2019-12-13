@@ -1,4 +1,4 @@
-﻿---
+---
 title: Access levels for users or groups
 titleSuffix: Azure DevOps 
 description: Provide access to web portal users based on their license 
@@ -26,7 +26,7 @@ This article applies to managing access levels for project collections defined o
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
 > ![Content version selector](/azure/devops/_shared/_img/version-selector.png)
 
-For a simplified overview of the permissions that are assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
+For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -40,7 +40,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 ## Prerequisites
 
 * You must be a member of the Administrators group. If you aren't a member, [get added now](https://docs.microsoft.com/azure/devops/server/admin/add-administrator?view=azure-devops).
-* <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
+* <a id="add-user" />If you're managing access for a large group of users, it's a best practice to first create either a [Windows group, a group in Active Directory, or Azure DevOps security group](/azure/devops/server/admin/setup-ad-groups), and then add individuals to those groups.
 
 > [!NOTE]  
 > The images you see from your web portal may differ from the images you see in this article. These differences result from updates made to your on-premises Azure DevOps. Make sure you have selected the version of this article using the content version selector. However, the basic functionality available to you remains the same unless explicitly mentioned.  
