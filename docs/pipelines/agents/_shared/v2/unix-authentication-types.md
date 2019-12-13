@@ -7,7 +7,7 @@ ms.topic: include
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](../../agents.md).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](../../agents.md#communication).
 
 #### TFS or Azure DevOps Server
 
