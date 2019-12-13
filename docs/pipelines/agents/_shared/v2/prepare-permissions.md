@@ -26,7 +26,7 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
 
-::: momiker-end
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -48,8 +48,6 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
    Select **Show all scopes** at the bottom of the **Create a new personal access token window** window to see the complete list of scopes.
 
 5. Copy the token. You'll use this token when you configure the agent.
-
-::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
