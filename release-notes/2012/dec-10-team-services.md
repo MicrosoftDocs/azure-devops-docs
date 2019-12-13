@@ -42,7 +42,7 @@ While the changes to the version control experience are the biggest UI change we
 - [TypeScript 0.8.1](https://typescript.codeplex.com/)
 - VS 2012 Update 1 - VS is installed on the build image to ensure you can build everything on the build machine that you can on your dev box using VS. We updated the VS image to the recently released Update 1.
 
-Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
+Besides a bunch of bug fixes, that’s it for sprint 40. As always, let us know how we’re doing on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Happy holidays!! We’re not planning a deployment on New Year’s Eve (for obvious reasons) so we’ll see you again after the new year.
 
