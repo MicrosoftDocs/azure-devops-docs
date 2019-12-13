@@ -65,19 +65,19 @@ we recommend that you create a local Windows user on each of your TFS applicatio
 
 Make sure the user account that you're going to use has permission to register the agent.
 
-Is the user an Azure DevOps organization owner or TFS server administrator? **Stop here**, you have permission.
+Is the user an Azure DevOps organization owner or TFS or Azure DevOps Server administrator? **Stop here**, you have permission.
 
 Otherwise:
 
-1. Open a browser and navigate to the **Agent pools** tab for your Azure Pipelines organization or TFS server:
+1. Open a browser and navigate to the **Agent pools** tab for your Azure Pipelines organization or Azure DevOps Server or TFS server:
 
    [!INCLUDE [agent-pools-tab](../agent-pools-tab.md)]
 
 1. Click the pool on the left side of the page and then click **Roles**.
 
-1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS server administrator](/azure/devops/server/admin/add-administrator).
+1. If the user account you're going to use is not shown, then get an administrator to add it. The administrator can be an agent pool administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
-   If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS server administrator](/azure/devops/server/admin/add-administrator).
+   If it's a [deployment group](/azure/devops/pipelines/release/deployment-groups/index) agent, the administrator can be an deployment group administrator, an [Azure DevOps organization owner](/azure/devops/organizations/accounts/faq-add-delete-users#find-owner), or a [TFS or Azure DevOps Server administrator](/azure/devops/server/admin/add-administrator).
 
    You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page in **Azure Pipelines**.
 
