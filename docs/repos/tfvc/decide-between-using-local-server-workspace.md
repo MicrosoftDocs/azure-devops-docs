@@ -41,7 +41,9 @@ Use a server workspace when the specific conditions are not met for using a loca
 -   You need to use the **Enable get latest on check-out** option.
 
 ### Working in a server workspace while disconnected
+
 You can still work in a server workspace if temporarily disconnected from the DevOps instance by taking a solution "offline". Later when the connection is available, you can take the solution "online" to return to the connected behavior. Visual Studio will detect the disconnected condition and take the solution offline automatically, but if you wish to do so manually, these are the steps.
+
 =======
 > [!TIP]
 > If working offline is important to you, then you should consider using a local workspace instead of a server workspace See [Local Workspaces](decide-between-using-local-server-workspace.md#local) earlier in this topic.
