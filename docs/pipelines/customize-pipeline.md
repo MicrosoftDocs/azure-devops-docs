@@ -219,7 +219,24 @@ You can use a `trigger:` to specify the events when you want to run the pipeline
 
     You can specify the full name of the branch (for example, `master`) or a prefix-matching wildcard (for example, `releases/*`).
 
-## Next Steps
+## Customize settings
+
+There are pipeline settings that you wouldn't want to manage in your YAML file. Follow these steps to view and modify these settings:
+1. From your web browser, open the project for your organization in Azure DevOps and choose Pipelines / Pipelines from the navigation sidebar.
+2. Select the pipeline you want to configure settings for from the list of pipelines.
+3. Open the overflow menu by clicking the action button with the vertical ellipsis and select Settings.
+
+### Processing of new run requests
+Sometimes you'll want to prevent new runs from starting on your pipeline. 
+
+* By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
+* **Paused** pipelines allow run requests to be processed, but those requests queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+* **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
+
+### Other settings
+* **YAML file path.** If you ever need to direct your pipeline to use a different YAMl file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+* **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
+* To get notifications when your runs fail, see how to [manage notifications for a team or group](notifications/howto-manage-team-notifications.md)
 
 You've just learned the basics of customizing your pipeline. Next we recommend that you learn more about customizing a pipeline for the language you use:
 
