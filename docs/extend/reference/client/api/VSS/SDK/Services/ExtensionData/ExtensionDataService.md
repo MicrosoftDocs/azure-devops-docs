@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 Provides a wrapper around the REST client for getting and saving extension setting values
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/ExtensionDataService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/ExtensionDataService.md)]
 
 ## Methods
 
