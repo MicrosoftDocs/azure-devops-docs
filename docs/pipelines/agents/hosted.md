@@ -64,7 +64,7 @@ jobs:
 
 ### Notes on choosing "Hosted macOS"
 
-This option affects where your data is stored. [Learn more](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location).
+This option affects where your data is stored. [Learn more](../../organizations/security/data-location.md).
 To disable the Microsoft-hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 To disable the Microsoft-hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 
