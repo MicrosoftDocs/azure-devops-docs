@@ -49,13 +49,13 @@ None
 <tr>
 <td>Path of the folder to cache</td>
 <td>
-<p>Can be fully-qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported.</p>
+<p>Can be fully qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported.</p>
 </td>
 </tr>
 <tr>
 <td>Cache hit variable</td>
 <td>
-<p>Variable to set to 'true' when the cache is restored (i.e. a cache hit), otherwise set to 'false'.</p>
+<p>Variable to set to 'true' when the cache is restored (a cache hit), otherwise set to 'false'.</p>
 </td>
 </tr>
 <tr>
@@ -72,6 +72,6 @@ None
 
 </table>
 
-## Open source
+## Open-source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
