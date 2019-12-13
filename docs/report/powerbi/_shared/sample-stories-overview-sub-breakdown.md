@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-2.md)]
+[!INCLUDE [temp](sample-query-substitutions-2.md)]
 
 ## Query breakdown
 

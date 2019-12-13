@@ -11,4 +11,4 @@ For the report to generate useful data, you need to have performed the following
 - To get the execution status of test cases, you will have created requirement-based test suites in Test Plans corresponding to those requirements. To learn more, see [Create test plans and test suites](../../test/create-a-test-plan.md).
 - To get the status of bugs, you will have created and linked bugs to requirements with the **Child** link type.
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](sample-required-reading.md)]
