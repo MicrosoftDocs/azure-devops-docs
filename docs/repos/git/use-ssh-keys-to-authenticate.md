@@ -30,7 +30,7 @@ Connect to your Git repos through SSH on macOS or Linux, or on Windows when you 
 > As of Visual Studio 2017, SSH can be used to connect to Git repos.
 
 ## How SSH key authentication works
-SSH public key authentication works with an asymettric pair of generated encryption keys. The _public_ key is shared with Azure DevOps and used to verify the initial ssh connection. The _private_ key is kept safe and secure on your system.
+SSH public key authentication works with an asymmetric pair of generated encryption keys. The _public_ key is shared with Azure DevOps and used to verify the initial ssh connection. The _private_ key is kept safe and secure on your system.
 
 ## Set up SSH key authentication
 
