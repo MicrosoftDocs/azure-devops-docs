@@ -55,12 +55,12 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>verbosityPack</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>pack</code> command.</td></tr>
 <tr><td><code>verbosityRestore</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>restore</code> command.</td></tr>
 <tr><td><code>workingDirectory</code><br/>Working Directory</td><td>Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
-<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;-:&ast;&ast;/&ast;.Tests.nupkg.</code><br/>Argument aliases: <code>packagesToPush</code></td></tr>
+<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;!&ast;&ast;/&ast;.Tests.nupkg.</code><br/>Argument aliases: <code>packagesToPush</code></td></tr>
 <tr><td><code>nuGetFeedType</code><br/>Target feed location</td><td>Specifies whether the target feed is internal or external.<br/>Options: <code>internal</code>, <code>external</code></td></tr>
 <tr><td><code>feedPublish</code><br/>Target feed</td><td>Select a feed hosted in your organization. You must have Package Management installed and licensed to select a feed here<br/>Argument aliases: <code>publishVstsFeed</code></td></tr>
 <tr><td><code>publishPackageMetadata</code><br/>Publish pipeline metadata</td><td>Associate this build/release pipeline’s metadata (run ID, source code information) with the package</td></tr>
 <tr><td><code>externalEndpoint</code><br/>NuGet server</td><td>The NuGet <a href="../../library/service-endpoints.md" data-raw-source="[service connection](../../library/service-endpoints.md)">service connection</a> that contains the external NuGet server’s credentials.<br/>Argument aliases: <code>publishFeedCredentials</code></td></tr>
-<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;-:&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
+<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;!&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
 <tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.<br/>Argument aliases: <code>configuration</code></td></tr>
 <tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.<br/>Argument aliases: <code>packDirectory</code></td></tr>
 <tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> command line parameter.</td></tr>
@@ -122,7 +122,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    searchPatternPush: '$(Build.ArtifactStagingDirectory)/*.nupkg;-:$(Build.ArtifactStagingDirectory)/*.Tests.nupkg'
+    searchPatternPush: '$(Build.ArtifactStagingDirectory)/*.nupkg;!$(Build.ArtifactStagingDirectory)/*.Tests.nupkg'
     feedPublish: 'FabrikamFeed'
 ```
 
