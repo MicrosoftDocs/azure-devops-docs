@@ -250,7 +250,7 @@ Picklists associated with person-name fields, such as Assigned To and Changed By
 
 Renaming a field or changing the data type aren't supported actions. However, you can change the label that appears for a field on the work item form from the Layout tab. When selecting the field in a query you need to select the field name and not the field label. 
 
-<a id="delete-restore>  </a>
+<a id="delete-restore" />
 
 ### Can I delete or restore a deleted field? 
 
