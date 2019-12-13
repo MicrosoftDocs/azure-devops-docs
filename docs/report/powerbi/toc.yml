@@ -81,6 +81,8 @@
         href: sample-boards-teamslicer.md
     - name: Requirements tracking
       href: sample-stories-overview.md
+    - name: Requirements tracking - Rollup
+      href: sample-stories-overview-rollup.md
     - name: Sample Test Plans reports
       items:
       - name: Progress status
