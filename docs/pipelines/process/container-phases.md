@@ -187,6 +187,8 @@ steps:
 - script: echo hello
 ```
 
+Running `docker create --help` will give you the list of supported options.
+
 ### Reusable container definition
 
 In the following example, the containers are defined in the resources section.
