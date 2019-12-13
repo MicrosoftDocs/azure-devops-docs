@@ -14,8 +14,25 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
 #### Authenticate with a personal access token (PAT)
 
-1. Sign in with the user account you plan to use in either your Azure DevOps organization (```https://dev.azure.com/{your_organization}```)
-   or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```).
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
+1. Sign in with the user account you plan to use in your Team Foundation Server web portal (`https://{your-server}:8080/tfs/`).
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Sign in with the user account you plan to use in you Azure DevOps Server web portal (`https://{your-server}/DefaultCollection/`).
+
+::: momiker-end
+
+::: moniker range="azure-devops"
+
+1. Sign in with the user account you plan to use in your Azure DevOps organization (`https://dev.azure.com/{your_organization}`).
+
+::: momiker-end
 
 2. From your home page, open your profile. Go to your security details.
 
