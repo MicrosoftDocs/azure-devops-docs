@@ -27,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CacheV2.md)]
+[!INCLUDE [temp](../_shared/yaml/cacheV2.md)]
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ None
 <tr>
 <td>Path of the folder to cache</td>
 <td>
-<p>Can be fully qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) are supported.</p>
+<p>Can be fully qualified or relative to $(System.DefaultWorkingDirectory). Wildcards are not supported. <a href="https://go.microsoft.com/fwlink/?LinkID=550988">Variables</a> are supported.</p>
 </td>
 </tr>
 <tr>
