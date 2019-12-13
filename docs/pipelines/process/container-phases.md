@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: jukullam
-ms.date: 12/06/2019
+ms.date: 12/13/2019
 monikerRange: '>= azure-devops-2019'
 author: juliakm
 ---
@@ -65,6 +65,10 @@ Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
 Docker must be installed. Be sure your pipelines agent has permission to access the Docker daemon.
+
+The Windows container must support running Node.js.
+A base Windows Nano Server container is missing dependencies required to run Node.
+See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-js-on-nano-server/) for more information about what it takes to run Node on Windows Nano Server.
 
 ### Hosted agents
 
