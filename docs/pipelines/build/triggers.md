@@ -99,7 +99,7 @@ trigger:
 
 ### Batching CI runs
 
-If you have a lot of team members uploading changes often, you may want to reduce the number of runs you start.
+If you have many team members uploading changes often, you may want to reduce the number of runs you start.
 If you set `batch` to `true`, when a pipeline is running, the system waits until the run is completed, then starts another run with all changes that have not yet been built.
 
 ```yaml
@@ -212,7 +212,7 @@ YAML pipelines are not yet available on TFS.
 
 ### Multiple pipelines triggered on the same repository
 
-It is common to configure multiple pipelines for the same repository. For instance, one pipeline may build the docs for your app, while another pipeline may build the source code. You may configure CI triggers with appropriate branch filters and path filters in each of these pipelines. Here is the behavior when you push a new branch (that matches the branch filters) to your repository:
+It is common to configure multiple pipelines for the same repository. For instance, you may have one pipeline to build the docs for your app and another to build the source code. You may configure CI triggers with appropriate branch filters and path filters in each of these pipelines. Here is the behavior when you push a new branch (that matches the branch filters) to your repository:
 
 - If your pipeline has path filters, it will be triggered only if the new branch has changes to files that match that path filter.
 - If your pipeline does not have path filters, it will be triggered even if there are no changes in the new branch.
@@ -266,7 +266,7 @@ Select the version control paths you want to include and exclude. In most cases,
 
 ### CI trigger for a remote Git repo or Subversion
 
-You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
+You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case, Azure Pipelines polls for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
 * * *
 ## PR triggers
@@ -419,7 +419,7 @@ If you choose to build fork pull requests, you may also choose whether or not to
 
 ### Azure Repos Git
 
-If your Git repo is hosted in Azure Repos, there won't be a **Pull request validation** trigger on the **Triggers** page. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+If your Git repo is hosted in Azure Repos, there won't be a **Pull request validation** trigger on the **Triggers** page. To enable PR validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
 ### Other Git
 
@@ -599,7 +599,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 <a name="always"></a>
 ### Running even when there are no code changes
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the week days, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, yuu can use the `always` keyword.
+By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
 ```yaml
 schedules:
@@ -859,7 +859,7 @@ resources:
       - master
 ```
 
-In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically everytime a new version of the security library is built in master or a release branch.
+In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
 Similar to CI triggers, you can specify the branches to include or exclude:
 
@@ -890,9 +890,9 @@ resources:
       - QA
 ```
 
-If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is particularly helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
+If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
 
-When you specify both CI triggers and pipeline triggers, you can expect new runs to be started everytime (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
+When you specify both CI triggers and pipeline triggers, you can expect new runs to be started every time (a) an update is made to the repository and (b) a run of the upstream pipeline is completed. Consider an example of a pipeline `B` that depends on `A`. Let us also assume that both of these pipelines use the same repository for the source code, and that both of them also have CI triggers configured. When you push an update to the repository, then:
 
 - A new run of `A` is started.
 - At the same time, a new run of `B` is started. This run will consume the previously produced artifacts from `A`.
@@ -979,7 +979,7 @@ If your code is in a Git repo on Azure Repos or Team Foundation Server, you can 
 
 * Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. You need to have the **Multi-stage pipelines** preview feature enabled to see this action. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
 
-* If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure taht you do not have any UI schedules.
+* If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure that you do not have any UI schedules.
 
 * There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
