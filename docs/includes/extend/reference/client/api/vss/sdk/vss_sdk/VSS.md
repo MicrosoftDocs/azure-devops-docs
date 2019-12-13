@@ -45,7 +45,7 @@ Initiates the handshake with the host window.
 
 ### Parameters
 
-* `options`: [IExtensionInitializationOptions](../../References/VSS_SDK_Interfaces/IExtensionInitializationOptions.md). Initialization options for the extension.
+* `options`: [IExtensionInitializationOptions](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioninitializationoptions). Initialization options for the extension.
 
 
 <a name="method_require"></a>
@@ -128,7 +128,7 @@ Get the web context from the parent host
 
 ### Returns
 
-* [WebContext](../../References/SDK_Interfaces/WebContext.md)
+* [WebContext](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/webcontext)
 
 <a name="method_getConfiguration"></a>
 <h2 class='method'>getConfiguration()</h2>
@@ -158,7 +158,7 @@ Get the context about the extension that owns the content that is being hosted
 
 ### Returns
 
-* [IExtensionContext](../../References/VSS_SDK_Interfaces/IExtensionContext.md)
+* [IExtensionContext](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iextensioncontext)
 
 <a name="method_getContribution"></a>
 <h2 class='method'>getContribution()</h2>
@@ -173,7 +173,7 @@ Gets the information about the contribution that first caused this extension to 
 
 ### Returns
 
-* [Contribution](../../References/SDK_Interfaces/Contribution.md)
+* [Contribution](/azure/devops/extend/reference/client/api/vss/references/sdk_interfaces/contribution)
 
 <a name="method_getService"></a>
 <h2 class='method'>getService&lt;T&gt;()</h2>
@@ -192,7 +192,7 @@ Get a contributed service from the parent host.
 
 ### Returns
 
-* [IPromise](../../References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;T&gt;
+* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;T&gt;
 
 <a name="method_getServiceContribution"></a>
 <h2 class='method'>getServiceContribution()</h2>
@@ -210,7 +210,7 @@ Get the contribution with the given contribution id. The returned contribution h
 
 ### Returns
 
-* [IPromise](../../References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[IServiceContribution](../../References/VSS_SDK_Interfaces/IServiceContribution.md)&gt;
+* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)&gt;
 
 <a name="method_getServiceContributions"></a>
 <h2 class='method'>getServiceContributions()</h2>
@@ -228,7 +228,7 @@ Get contributions that target a given contribution id. The returned contribution
 
 ### Returns
 
-* [IPromise](../../References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[IServiceContribution](../../References/VSS_SDK_Interfaces/IServiceContribution.md)[]&gt;
+* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[IServiceContribution](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/iservicecontribution)[]&gt;
 
 <a name="method_register"></a>
 <h2 class='method'>register()</h2>
@@ -278,7 +278,7 @@ Fetch an access token which allows calls to be made to other Azure DevOps Servic
 
 ### Returns
 
-* [IPromise](../../References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[ISessionToken](../../References/VSS_SDK_Interfaces/ISessionToken.md)&gt;
+* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
 
 <a name="method_getAppToken"></a>
 <h2 class='method'>getAppToken()</h2>
@@ -293,7 +293,7 @@ Fetch an token which can be used to identify the current user
 
 ### Returns
 
-* [IPromise](../../References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[ISessionToken](../../References/VSS_SDK_Interfaces/ISessionToken.md)&gt;
+* [IPromise](/azure/devops/extend/reference/client/api/vss/references/vss_webplatform_interfaces/ipromise)&lt;[ISessionToken](/azure/devops/extend/reference/client/api/vss/references/vss_sdk_interfaces/isessiontoken)&gt;
 
 <a name="method_resize"></a>
 <h2 class='method'>resize()</h2>
