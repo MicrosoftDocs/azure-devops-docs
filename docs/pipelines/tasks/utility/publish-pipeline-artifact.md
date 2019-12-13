@@ -35,7 +35,7 @@ None
 
 | Argument | Description |
 | -------- | ----------- |
-| targetPath | Path to the folder or file you want to publish. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
+| targetPath | Path to the folder or file you want to publish. Wildcards are not supported. The path must be a fully-qualified path or a valid path relative to the root directory of your repository. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). |
 | artifactName | Specify the name of the artifact that you want to create. It can be whatever you want. For example: `drop` |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
 
