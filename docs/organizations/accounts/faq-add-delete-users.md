@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshoot adding/removing users in organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ### Q: Why can't I manage users?
 
-A: To access and manage users, you must have Azure DevOps [Project Collection Administrator or organization Owner permissions](#find-owner).
+A: To access and manage users at the organization level, you must be a member of the Project Collection Administrators group or the [organization Owner](#find-owner). To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
 
 <a name="find-owner"></a>
 

@@ -42,7 +42,7 @@ Today’s update brings the ability to delete team projects directly from the ad
 
 ## Portfolio Backlog Sorting
 
-If you’ve been using the [new portfolio backlogs](https://visualstudio.microsoft.com/articles/news/2013/jun-19-team-services), you may have noticed some annoying behavior around sorting when using the Scrum process template. If you pivoted up to view features mapped to backlog items or bugs on your backlog, all the unmapped bugs were sorted to the top of the backlog. That gave a view that didn’t reflect the actual order of the backlog. Argh! I’m happy to report that this has been fixed. As you pivot up or down your backlog, order now always reflects the order of the backlog.
+If you’ve been using the [new portfolio backlogs](jun-19-team-services.md), you may have noticed some annoying behavior around sorting when using the Scrum process template. If you pivoted up to view features mapped to backlog items or bugs on your backlog, all the unmapped bugs were sorted to the top of the backlog. That gave a view that didn’t reflect the actual order of the backlog. Argh! I’m happy to report that this has been fixed. As you pivot up or down your backlog, order now always reflects the order of the backlog.
 
 ## Work Items from Code Discussion
 

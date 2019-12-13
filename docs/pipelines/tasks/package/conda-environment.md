@@ -59,7 +59,7 @@ None
 
 | Argument | Description |
 |----------|-------------|
-| Create custom environment | Setting this to `true` [creates](https://conda.io/docs/commands/conda-create.html) or reactivates a Conda environment instead of using the `base` environment. This is recommended for self-hosted agents. |
+| Create custom environment | Setting this to `true` [creates](https://docs.conda.io/projects/conda/en/latest/commands/create.html) or reactivates a Conda environment instead of using the `base` environment. This is recommended for self-hosted agents. |
 | Environment name | Name of the Conda environment to create and activate. |
 | Package specs | Space-delimited list of packages to install when creating the environment. |
 | Update to the latest Conda | Update Conda to the latest version. This applies to the Conda installation found in `PATH` or at the path specified by the `CONDA` environment variable. |
