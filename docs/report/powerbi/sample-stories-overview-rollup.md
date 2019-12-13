@@ -235,6 +235,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The transforms applied to Power BI queries are already added in query snippets.
 
+
 ## Create the report
 
 Power BI shows you the fields you can report on. 
