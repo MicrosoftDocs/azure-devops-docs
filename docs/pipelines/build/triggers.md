@@ -95,7 +95,7 @@ trigger:
 ```
 
 >[!IMPORTANT]
->When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+>When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list.
 
 ### Batching CI runs
 
@@ -209,6 +209,13 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 ::: moniker range="< azure-devops-2019"
 YAML pipelines are not yet available on TFS.
 ::: moniker-end
+
+### Multiple pipelines triggered on the same repository
+
+It is common to configure multiple pipelines for the same repository. For instance, one pipeline may build the docs for your app, while another pipeline may build the source code. You may configure CI triggers with appropriate branch filters and path filters in each of these pipelines. Here is the behavior when you push a new branch (that matches the branch filters) to your repository:
+
+- If your pipeline has path filters, it will be triggered only if the new branch has changes to files that match that path filter.
+- If your pipeline does not have path filters, it will be triggered even if there are no changes in the new branch.
 
 #### [Classic](#tab/classic/)
 Select this trigger if you want the build to run whenever someone checks in code.
@@ -589,6 +596,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 > you can split your cron schedule into multiple cron schedules that each result in 
 > 100 or less pipeline runs per week.
 
+<a name="always"></a>
 ### Running even when there are no code changes
 
 By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the week days, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, yuu can use the `always` keyword.
@@ -600,8 +608,7 @@ schedules:
   always: true
 ```
 
-Using the `always` keyword does not still guarantee that your schedules run forever. If you do not interact with the Azure DevOps service for several days (through the UI or an API, or by pushing a change to the code), then the schedules stop running. This breaker has been put in place to prevent run-away schedules in unused Azure DevOps organizations.
-
+<a name="limits"></a>
 ### Limits on the number of scheduled runs
 
 There are certain limits on how often you can schedule a pipeline to run in a day. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 100 runs per pipeline per day.
@@ -968,15 +975,31 @@ If your code is in a Git repo on Azure Repos or Team Foundation Server, you can 
 
 ::: moniker range="azure-devops"
 
-### My build didn't run. What happened?
+### I defined a schedule in the YAML file. But it didn't run. What happened?
 
-Someone must view a page in your organization regularly for CI and scheduled builds to run. It can be any page, including, for example, **Azure Pipelines**.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. You need to have the **Multi-stage pipelines** preview feature enabled to see this action. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
 
-Your organization goes dormant five minutes after the last user signed out of Azure DevOps. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+* If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure taht you do not have any UI schedules.
 
- * A nightly build of code in your organization will run only one night until someone signs in again.
+* There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
- * CI builds of an Other Git repo will stop running until someone signs in again.
+* If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
+
+### Schedules work for one branch but not the other.
+
+Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say features/X, then make sure that the YAML file in that branch has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in features/X branch should have the following in this example: 
+ 
+```yaml
+schedules: 
+- cron: "0 12 * * 0"   # replace with your schedule 
+  branches: 
+    include: 
+    - features/X  
+```
+
+### My build pipeline is using yaml file from branch2 even though I set it to use from branch1. 
+
+Pipelines are not associated with a branch. They are associated with the repositories they build, and with the location of the YAML file relative to the root of that repository. However, every time a pipeline runs, it uses the YAML file and the content from a specific branch. That branch is determined based on where the change is pushed to (in the case of CI builds), where the PR is targeted to (in the case of PR builds), or what you manually specify (in the case of manual runs). Each branch's YAML file independently determines whether the pipeline should be scheduled for that branch.  
 
 ::: moniker-end
 
