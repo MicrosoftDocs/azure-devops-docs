@@ -475,7 +475,7 @@ Security Service Group
         <td>
             <p>Has permissions to run build services for the collection.</p>
         </td>
-        <td>Limit this group to service accounts and groups that contain only service accounts.</td>
+        <td>Limit this group to service accounts and groups that contain only service accounts. This is a legacy group used for XAML builds.  Use the Project Collection Build Service ({your organization}) user for managing permissions for current builds</td>
     </tr>
     <tr>
         <td>Project Collection Proxy Service Accounts</td>
@@ -488,8 +488,7 @@ Security Service Group
             <p>
                 Contains the service account that was supplied during installation.
                 This group should contain only service accounts and groups that contain only service accounts.
-                By default, this group is a member of <strong>Team Foundation Administrators</strong>
-                and <strong>Team Foundation Service Accounts</strong>.
+                By default, this group is a member of the Administrators group.
             </p>
         </td>
     </tr>
