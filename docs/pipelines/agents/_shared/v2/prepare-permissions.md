@@ -40,7 +40,7 @@ Learn more about [how agents communicate](/azure/devops/pipelines/agents/agents#
 
    ![test](/azure/devops/repos/git/_shared/_img/my-profile-team-services.png)
 
-3. Create a personal access token.
+3. [Create a personal access token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
    ![test](/azure/devops/repos/git/_shared/_img/add-personal-access-token.png)
 
