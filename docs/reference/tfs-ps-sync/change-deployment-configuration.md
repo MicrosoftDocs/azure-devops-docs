@@ -119,7 +119,7 @@ ms.date: 01/12/2017
 ##  <a name="upgrading"></a> Upgrade from Project Server 2007 to Project Server 2010  
  If you have an instance of Project Web Access that is registered to TFS and the synchronization process is running for a collection, you must perform the following procedures before you upgrade the instance from Project Server 2007 to Project Server 2010:  
   
-1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=211859)  
+1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](https://blogs.msdn.microsoft.com/chrisfie/2010/05/27/how-to-upgrade-from-project-server-2007-to-project-server-2010-in-10min/)  
   
 2.  To enable the synchronization after the upgrade, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
