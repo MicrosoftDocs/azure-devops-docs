@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 07/16/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -69,6 +69,23 @@ None
 </tr>
 
 </table>
+
+## Examples
+
+### Delete several patterns
+
+This example will delete `some/file`, all files beginning with `test`, and all files in all subdirectories called `bin`.
+
+```yaml
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove unneeded files'
+  inputs:
+    contents: |
+      some/file
+      test*
+      **/bin/*
+```
 
 ## Open source
 
