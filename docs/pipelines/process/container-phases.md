@@ -46,6 +46,7 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
+- `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 - Ensure Docker is installed
