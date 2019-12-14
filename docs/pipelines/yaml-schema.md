@@ -1308,7 +1308,7 @@ Full syntax:
 ```yaml
 pool:
   name: string  # name of the pool to run this job in
-  demands: string | [ string ]  ## see the following "Demands" topic
+  demands: string | [ string ]  # see the following "Demands" topic
   vmImage: string # name of the VM image you want to use; valid only in the Microsoft-hosted pool
 ```
 
@@ -1459,10 +1459,10 @@ steps:
   failOnStderr: boolean  # if the script writes to stderr, should that be treated as the step failing?
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether or not to run this step; defaults to 'true'
+  enabled: boolean  # whether to run this step; defaults to 'true'
   target:
     container: string # where this step will run; values are the container name or the word 'host'
-    commands: enum  # whether or not to process all logging commands from this step; values are `any` (default) or `restricted`
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
 ```
@@ -1551,7 +1551,7 @@ steps:
   workingDirectory: string  # initial working directory for the step
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  ## whether or not to run this step; defaults to 'true'
+  enabled: boolean  # whether to run this step; defaults to 'true'
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
 ```
@@ -1590,7 +1590,7 @@ steps:
   workingDirectory: string  # initial working directory for the step
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether or not to run this step; defaults to 'true'
+  enabled: boolean  # whether to run this step; defaults to 'true'
   timeoutInMinutes: number
   env: { string: string }  # list of environment variables to add
 ```
@@ -1614,9 +1614,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](pr
 
 ### Error action preference
 
-If you leave a task's error action preference unspecified, the preference defaults to `errorActionPreference: stop`, and the line `$ErrorActionPreference = 'stop'` is prepended to the top of your script.
+Unless otherwise specified, the error action preference defaults to the value `stop`, and the line `$ErrorActionPreference = 'stop'` is prepended to the top of your script.
 
-When the error action preference is set to `stop`, errors cause PowerShell to terminate and return a nonzero exit code. The task is also marked as Failed.
+When the error action preference is set to stop, errors cause PowerShell to terminate and return a nonzero exit code. The task is also marked as Failed.
 
 # [Schema](#tab/schema)
 
@@ -1639,7 +1639,7 @@ steps:
 
 ### Ignore last exit code
 
-By default, the last exit code returned from your script is checked. If the code is nonzero, the code indicates a step failure, and the system appends your script with:
+By default, the last exit code returned from your script is checked. A nonzero code indicates a step failure. In that case, the system appends your script with:
 
 `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }`
 
@@ -1668,7 +1668,7 @@ Learn more about [conditions](process/conditions.md?tabs=yaml) and [timeouts](pr
 
 ## Publish
 
-The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). The task publishes or uploads a file or folder as a pipeline artifact that other jobs or pipelines can consume.
+The `publish` keyword is a shortcut for the [Publish Pipeline Artifact task](tasks/utility/publish-pipeline-artifact.md). The task publishes (uploads) a file or folder as a pipeline artifact that other jobs and pipelines can consume.
 
 # [Schema](#tab/schema)
 
@@ -1699,14 +1699,14 @@ The `download` keyword is a shortcut for the [Download Pipeline Artifact task](t
 ```yaml
 steps:
 - download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
-  artifact: string # artifact name; optional; downloads all the avaialable artifacts if not specified
+  artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
   patterns: string # patterns representing files to include; optional
 ```
 ### Artifact download location
 
 Artifacts from the current pipeline are downloaded to $(**Pipeline.Workspace**)/.
 
-Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<*pipeline resource identifier*\>/.
+Artifacts from the associated pipeline resource are downloaded to $(**Pipeline.Workspace**)/\<pipeline resource identifier\>/.
 
 ### Automatic download in deployment jobs
 
@@ -1738,7 +1738,7 @@ Nondeployment jobs automatically check out source code. Use the `checkout` keywo
 
 ```yaml
   fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
-  lfs: boolean  # whether or not to download Git LFS files; defaults to false
+  lfs: boolean  # whether to download Git LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called 's'
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
@@ -1753,7 +1753,7 @@ steps:
 - checkout: self | none | repository name # self represents the repo where the initial Pipelines YAML file was found
   clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
   fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
-  lfs: boolean  # whether or not to download Git-LFS files; defaults to false
+  lfs: boolean  # whether to download Git-LFS files; defaults to false
   submodules: true | recursive  # set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules; defaults to not checking out submodules
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
@@ -1761,7 +1761,7 @@ steps:
 
 ::: moniker-end
 
-To avoid syncing sources at all, specify the following syntax:
+To avoid syncing sources at all:
 
 ```yaml
 steps:
@@ -1810,7 +1810,7 @@ In the following example, three repositories are checked out:
 
 - A GitHub repository named `tools` declared in repository resources.
 - An Azure Repos Git repository named `resources` declared inline with the `checkout` step.
-- `self`.
+- The repository represented by `self`.
 
 ```yaml
 resources:
@@ -1849,10 +1849,10 @@ steps:
   name: string  # identifier for this step (A-Z, a-z, 0-9, and underscore)
   condition: string
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
-  enabled: boolean  # whether or not to run this step; defaults to 'true'
+  enabled: boolean  # whether to run this step; defaults to 'true'
   target:
     container: string # where this step will run; values are the container name or the word 'host'
-    commands: enum  # whether or not to process all logging commands from this step; values are `any` (default) or `restricted`
+    commands: enum  # whether to process all logging commands from this step; values are `any` (default) or `restricted`
   timeoutInMinutes: number
   inputs: { string: string }  # task-specific inputs
   env: { string: string }  # list of environment variables to add
