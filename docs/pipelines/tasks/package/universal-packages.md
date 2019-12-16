@@ -50,7 +50,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `publishDirectory`<br/>Path to file(s) to publish | Specifies the path to list of files to be published. |
 | `feedsToUsePublish`<br/>Feed location | You can either select a feed from this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
 | `publishFeedCredentials`<br/>organization/collection connection | Credentials to use for external feeds. |
-| `vstsFeedPublish`<br/>Destination Feed | Specifies the name of the feed to publish to. |
+| `vstsFeedPublish`<br/>Destination Feed | Specifies the name or ID of the feed to publish to. |
 | `publishPackageMetadata`<br/>Publish pipeline metadata | Associate this build/release pipeline’s metadata (run #, source code information) with the package. |
 | `vstsFeedPackagePublish`<br/>Package name | Select a package ID to publish or type a new package ID if you've never published a version of this package before. Package names must be lower case and can only use letters, numbers, and dashes(-). |
 | `feedPublishExternal`<br/>Feed | External feed name to publish to. |
@@ -121,7 +121,7 @@ Publish a custom version Universal Package to an external feed.
     externalFeedCredentials: MSENG2
     feedPublishExternal: 'fabrikamFeed-external'
     packagePublishExternal: 'fabrikam-package'
-    versionPublish: 'custom'
+    versionOption: 'custom'
     versionPublish: '1.2.3'
     packagePublishDescription: 'This is a custom version of my package.'
 ```
