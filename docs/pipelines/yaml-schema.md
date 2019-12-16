@@ -24,7 +24,7 @@ It includes a catalog of all supported YAML capabilities and the available optio
 
 > The best way to get started with YAML pipelines is to read the
 [quickstart guide](create-first-pipeline.md).
-After that, to learn how to configure your YAML pipeline for your needs, see conceptual topics like [Build variables](process/variables.md) and [Jobs](process/phases.md).
+> After that, to learn how to configure your YAML pipeline for your needs, see conceptual topics like [Build variables](process/variables.md) and [Jobs](process/phases.md).
 
 ::: moniker-end
 
@@ -761,7 +761,8 @@ jobs: [ job ]
 
 # [Example](#tab/example)
 
-In this example, a single job is repeated on three platforms. The job itself is specified only once.
+In this example, a single job is repeated on three platforms.
+The job itself is specified only once.
 
 ```yaml
 # File: jobs/build.yml
@@ -891,7 +892,7 @@ variables: [ variable ]
 ```
 
 > [!NOTE]
-> The `variables` keyword uses two forms of syntax: sequence and mapping.
+> The `variables` keyword uses two syntax forms: sequence and mapping.
 > In mapping syntax, all keys are variable names and their values are variable values.
 > To use variable templates, you must use sequence syntax.
 > Sequence syntax requires you to specify whether you're mentioning a variable (`name`), a variable group (`group`), or a template (`template`).
@@ -1083,8 +1084,7 @@ The `repository` keyword lets you specify an external repository.
 
 ::: moniker range="> azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must
-let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1201,7 +1201,8 @@ trigger:
 
 > [!IMPORTANT]
 > When you specify a trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
-> Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, nothing triggers.
+> Inclusions are processed first, and then exclusions are removed from that list.
+> If you specify an exclusion but no inclusions, nothing triggers.
 
 #### [Example](#tab/example/)
 
@@ -1287,8 +1288,8 @@ pr:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
->[!IMPORTANT]
->When you specify a pull request trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
+> [!IMPORTANT]
+> When you specify a pull request trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
 
@@ -1391,9 +1392,9 @@ It does so regardless of whether the code has changed since the last run.
 ## Pool
 
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
-It also holds information about the job's strategy for running.
-You can specify the pool at the pipeline, stage, or job level.
-The pool specified at the lowest level of the hierachy is used to run the job.
+A `pool` specification also holds information about the job's strategy for running.
+You can specify a pool at the pipeline, stage, or job level.
+The pool specified at the lowest level of the hierarchy is used to run the job.
 
 # [Schema](#tab/schema)
 
@@ -1836,7 +1837,8 @@ Learn more about [downloading artifacts](./artifacts/pipeline-artifacts.md#downl
 
 ## Checkout
 
-Nondeployment jobs automatically check out source code. Use the `checkout` keyword to configure or suppress this behavior.
+Nondeployment jobs automatically check out source code.
+Use the `checkout` keyword to configure or suppress this behavior.
 
 # [Schema](#tab/schema)
 
