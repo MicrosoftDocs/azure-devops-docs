@@ -69,7 +69,7 @@ We achieve this by using life cycle hooks that can run steps during deployment. 
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none`
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -120,11 +120,12 @@ Currently, we support rolling strategy to only Virtual machine resources.
 For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be aborted.
 
 Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+`strategy.name` variable is available in this strategy block which takes the name of the strategy. In this case, rolling.
 
 ```YAML
 strategy:
   rolling:
-    maxParallel: [ number ]
+    maxParallel: [ number or percentage ]
     preDeploy:        
         pool: [ server | pool ] # see pool schema        
         steps:
@@ -151,10 +152,15 @@ strategy:
         steps:
         ...
 ```
-All the life cycle hooks are supported, namely `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once per batch size defined by `maxParallel`. Lifecycle hook jobs are created to run on each Virtual Machine.
+All the life cycle hooks are supported and Lifecycle hook jobs are created to run on each Virtual Machine.
+
+`preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` are executed once per batch size defined by `maxParallel`. 
 Then, either `on: success` or `on: failure` is executed.
 
-With `maxParallel: <# of VMs>`, you can control the number of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place and reduce overall downtime.
+With `maxParallel: <# of VMs>`, you can control the number of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place on the rest of the machines which reduces overall downtime.
+
+ > [!NOTE]
+ > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. We are working to close these gaps in future updates.
 
 ### Canary deployment strategy
 
@@ -267,7 +273,48 @@ This approach has the following benefits:
 This is particularly useful in the cases where the same connection detail is set for multiple steps of the job.
 
 
+### Rolling deployment strategy
 
+In the next example, the rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+
+```YAML
+jobs: 
+- deployment: VMDeploy
+  displayName: web
+  pool: smarthotel-dev
+  environment:
+    name: smarthotel-dev
+    resourceType: VirtualMachine
+  strategy:
+    rolling:
+      maxParallel: 5  #for percentages, mention as x%
+      preDeploy:
+        steps:
+          - download: current
+            artifact: drop
+          - script: echo initialize, cleanup, backup, install certs
+      deploy:
+        steps:
+        - task: IISWebAppDeploymentOnMachineGroup@0
+          displayName: 'Deploy application to Website'
+          inputs:
+            WebSiteName: 'Default Web Site'
+            Package: '$(Pipeline.Workspace)/drop/**/*.zip'
+      routeTraffic:
+        steps:
+          - script: echo routing traffic
+      postRouteTraffic:
+        pool : server
+        steps:
+          - task: AzureMonitor
+      on:
+        failure:
+          steps:
+          - script: echo Restore from backup! This is on failure
+        success:
+          steps:
+          - script: echo Notify! This is on success
+```
 
 ### Canary deployment strategy
 
@@ -276,9 +323,9 @@ In the next example, the canary strategy for AKS will first deploy the changes w
 ```YAML
 jobs: 
 - deployment: 
-  environment: musicCarnivalProd 
+  environment: smarthotel-dev.bookings
   pool: 
-    name: musicCarnivalProdPool  
+    name: smarthotel-devPool
   strategy:                  
     canary:      
       increments: [10,20]  
