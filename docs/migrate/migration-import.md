@@ -742,5 +742,5 @@ Upon initiating an import, an email is sent to the user that queued the import. 
 
 ## Related articles
 
-- [Migrate options](migrate-overview.md) 
+- [Migrate options](migration-overview.md) 
 - [Post-import](migration-post-import.md)
