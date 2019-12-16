@@ -30,57 +30,56 @@ This page walks through how to perform all of the necessary preparation work req
 
 ## Validate a collection
 
-Now that you've confirmed you're on the latest version of Azure DevOps Server the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
-Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
-Running a validation is done through the data migration tool. To start, take a copy of the [data migration tool](https://aka.ms/AzureDevOpsImport) and copy it onto one of your 
-Azure DevOps Server Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without Azure DevOps Server installed as long as the PC can connect to the Azure DevOps Server instance's configuration database - example below.
+Now that you've confirmed you're on the latest version of Azure DevOps Server, your next step is to validate each collection that you want to migrate to Azure DevOps Services. 
+The validate step examines a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
+You run validation using the data migration tool. To start, copy the [data migration tool](https://aka.ms/AzureDevOpsImport) tool onto one of your 
+Azure DevOps Server application tiers (AT). Then, unzip the tool. You can also run the tool from a different machine without Azure DevOps Server installed as long as the PC can connect to the Azure DevOps Server instance's configuration database. An example is shown below.
 
+1. Open a command prompt on the server and CD to the path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
 
-To get started, open a command prompt on the server and CD to the path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
+	```cmdline
+	Migrator /help
+	```
 
-```cmdline
-Migrator /help
-```
+2. View the help text for the command:
 
-For this step, we'll be focusing on the validate command. To see the help text for that command simply run:
+	```cmdline
+	Migrator validate /help 
+	```
 
-```cmdline
-Migrator validate /help 
-```
+3. Since this is our first time validating a collection we'll keep it simple. Your command should have the following structure:
 
-Since this is our first time validating a collection we'll keep it simple. Your command should have the following structure:
+	```cmdline
+	Migrator validate /collection:{collection URL}
+	```
 
-```cmdline
-Migrator validate /collection:{collection URL}
-```
+	For example, to run against the default collection the command would look like:
 
-For example, to run against the default collection the command would look like:
+	```cmdline
+	Migrator validate /collection:http://localhost:8080/DefaultCollection
+	```
 
-```cmdline
-Migrator validate /collection:http://localhost:8080/DefaultCollection
-```
+4. Running the tool from a machine other than the Azure DevOps Server requires the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
 
-Running it from a machine other than the Azure DevOps Server requires the /connectionString parameter. The connection string parameter is a pointer to your Azure DevOps Server configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
+	```cmdline
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	```
 
-```cmdline
-Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
-```
+	It's important to note that the data migration tool **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
 
-It's important to note that the data migration tool **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
+5.	Once the validation is complete you'll be left with a set of log files and a set of results printed to the command prompt screen. 
 
-Once the validation is complete you'll be left with a set of log files and a set of results printed to the command prompt screen. 
+	![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
 
-![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
+If all of the validations pass, you can move onto the next step of the import process. If the data migration tool flagged any errors, you'll need to correct them before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
 
+### Import log files  
 
-If all of the validations pass, you are ready to move onto the next step of the import process. If the data migration tool flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
-
-
-When you open up the log directory you will notice that there are several logging files. 
+When you open up the log directory you'll notice that there are several logging files. 
 
 ![Logging files generated by the data migration tool](_img/migration-import/loggingFiles.png)
 
-The log titled ```DataMigrationTool.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
+The log file titled ```DataMigrationTool.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the "Validating Project Processes" step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
@@ -244,7 +243,7 @@ To import with all historical identities, simply follow the steps outlined in la
 
 The data migration tool will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
-### Visual Studio dubscriptions
+### Visual Studio subscriptions
 
 The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
@@ -276,7 +275,7 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 ### Generate a DACPAC
 
 > [!IMPORTANT]  
-> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC.
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detach-your-collection) prior to generating a DACPAC.
 
 > [!NOTE]   
 > If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on [Import large collections](#import-large-collections) later in this article.  
@@ -378,7 +377,7 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
 > [!NOTE]   
-> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac). The above guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#upload-the-dacpac). The above guidelines are for SQL Azure VMs only. 
 
 Below are some additional recommended configurations for your SQL Azure VM.
 
@@ -703,7 +702,7 @@ Rollback for the final production run is fairly simple. Before you queue the imp
 ### Queue an import
 
 > [!IMPORTANT] 
-> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detach-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
 
 You start an import by using the data migration tool's **import** command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your Azure DevOps Server instance. 
 
@@ -734,5 +733,5 @@ Upon initiating an import, an email is sent to the user that queued the import. 
 
 ## Related articles
 
-- [Migrate options](migrate-options.md) 
+- [Migrate options](migrate-overview.md) 
 - [Post-import](migration-post-import.md)

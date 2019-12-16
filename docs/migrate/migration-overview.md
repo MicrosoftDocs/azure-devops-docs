@@ -69,9 +69,9 @@ In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport
 
 ### Import process 
 
-* [Validating a collection for import](migration-import.md#validating-a-collection)
-* [Preparing a collection for import](migration-import.md#generating-import-files)
-* [Before import steps](migration-import.md#getting-ready-to-import)
+* [Validating a collection for import](migration-import.md#validate-a-collection)
+* [Preparing a collection for import](migration-import.md#generate-import-files)
+* [Before import steps](migration-import.md#prepare-to-import)
 * [Run an Import](migration-import.md#run-an-import)
 * [Post import steps](migration-post-import.md)
 
