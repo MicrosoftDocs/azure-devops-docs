@@ -39,7 +39,7 @@ By default, all contributors in a project are members of the User role on each h
 
 ## Agent pool security roles, project-level
 
-You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Agent Pools** page. For information on adding and managing agent queues, see  [Agent pools](../../pipelines/agents/pools-queues.md).    
+You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Agent Pools** page. For information on adding and managing agent pools, see  [Agent pools](../../pipelines/agents/pools-queues.md).    
 
 [!INCLUDE [temp](_shared/agent-queue-roles.md)]
 
@@ -47,7 +47,7 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Agent pool security roles, organization or collection-level
 
-You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the **Organization settings** or collection-level admin settings, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools and queues](../../pipelines/agents/pools-queues.md). 
+You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the **Organization settings** or collection-level admin settings, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools](../../pipelines/agents/pools-queues.md). 
 
 [!INCLUDE [temp](_shared/agent-pool-roles.md)]
 

@@ -15,21 +15,4 @@ ms.date: 08/25/2016
 
 # Azure DevOps Services Host Dialog Service Example
 
-```js
-    VSS.getService(VSS.ServiceIds.Dialog).then(function(dialogService) {
-        var extensionCtx = VSS.getExtensionContext();
-        // Build absolute contribution ID for dialogContent
-        var contributionId = extensionCtx.publisherId + "." + extensionCtx.extensionId + ".dialogContent";
-
-        // Show dialog
-        var dialogOptions = {
-            title: "My Dialog Title",
-            width: 800,
-            height: 600
-        };
-
-        dialogService.openDialog(contributionId, dialogOptions);
-    });
-```
-
-See [Using host dialog](../../../../develop/using-host-dialog.md) for additional samples.
+[!INCLUDE [x](../../../../../includes/extend/reference/samples/client-services/HostDialogService.md)]

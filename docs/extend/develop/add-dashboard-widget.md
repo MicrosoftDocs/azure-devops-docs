@@ -984,7 +984,7 @@ If you have not published your extension yet, then read [this section](#package-
 If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at https://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
+Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 

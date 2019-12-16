@@ -32,7 +32,7 @@ We also made a simple improvement to allow you to follow a hyperlink embedded in
 
 ## Work item performance improvements
 
-And last but not least, we made a few performance optimizations to ensure work items are loading fast. We changed our rendering logic to only load controls for the data present on screen, rather than rending and then hiding controls for data on additional tabs. We applied similar logic to the query tree folder. We now load the queries and folders progressively as you drill through, instead of loading the entire tree folder every time you navigate to the queries hub. If you have a very deep query folder tree with hundreds (if not thousands) or queries, you should notice a substantial improvement. That’s it for Sprint 71. Let us know what you think on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+And last but not least, we made a few performance optimizations to ensure work items are loading fast. We changed our rendering logic to only load controls for the data present on screen, rather than rending and then hiding controls for data on additional tabs. We applied similar logic to the query tree folder. We now load the queries and folders progressively as you drill through, instead of loading the entire tree folder every time you navigate to the queries hub. If you have a very deep query folder tree with hundreds (if not thousands) or queries, you should notice a substantial improvement. That’s it for Sprint 71. Let us know what you think on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

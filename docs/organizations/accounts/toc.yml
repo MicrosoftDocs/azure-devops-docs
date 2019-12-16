@@ -58,13 +58,13 @@
   - name: Manage your organization
     items:
     - name: Change organization Owner
-      href: change-organization-ownership-vs.md
+      href: change-organization-ownership.md
     - name: Rename organization
-      href: rename-vsts-organization.md
+      href: rename-organization.md
     - name: Delete organization
       href: delete-your-organization.md
     - name: Recover organization
-      href: recover-your-vsts-organization.md
+      href: recover-your-organization.md
     - name: Change organization location
       href: change-organization-location.md
     - name: Add privacy policy URL
