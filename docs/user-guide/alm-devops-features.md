@@ -2638,7 +2638,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
 - [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
-- [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
+- [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)  
 
 <br/>
 Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises TFS server](https://visualstudio.microsoft.com/downloads/)">on-premises TFS server</a>.  

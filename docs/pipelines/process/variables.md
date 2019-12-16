@@ -50,7 +50,7 @@ Runtime expression syntax can be used for variables that are expanded at runtime
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
 |runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
-Variables are also injected into the enironment. This includes both variables defined at the step level and variables defined at the job or stage level, with the most locally scoped variable winning. When variables are turned into environment variables, variable names become uppercase and periods turn into underscores. For example, the variable `foo.bar` becomes `$FOO_BAR`.
+Variables are also injected into the environment. This includes both variables defined at the step level and variables defined at the job or stage level, with the most locally scoped variable winning. When variables are turned into environment variables, variable names become uppercase and periods turn into underscores. For example, the variable `foo.bar` becomes `$FOO_BAR`.
 
 ## Set variables in pipeline
 
