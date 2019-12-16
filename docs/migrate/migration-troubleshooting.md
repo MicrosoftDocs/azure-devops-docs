@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshooting migration import from Azure DevOps Server to Services
 description: Guidance for fixing common DataMigratorTool validation errors.  
 ms.prod: devops
@@ -301,7 +301,7 @@ VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
 VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
-The DACPAC is not built off a detached collection. The collection database will need to be [detached](migration-import.md#detaching-your-collection) and the DACPAC generated again.
+The DACPAC is not built off a detached collection. The collection database will need to be [detached](migration-import.md#detach-your-collection) and the DACPAC generated again.
 
 **VS403243**
 
@@ -318,7 +318,7 @@ VS403260: The database is not detached.
 VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
-The database is not detached. It will need to be [detached](migration-import.md#detaching-your-collection) and the import queued again. 
+The database is not detached. It will need to be [detached](migration-import.md#detach-your-collection) and the import queued again. 
 
 **VS403261**
 
@@ -342,7 +342,7 @@ Please add "Integrated Security=False" to your SQL connection string.
 VS403263: The User ID {0} must be member of the database role {1}.
 ```
 
-This error means that your SQL login user does not have the required database role. Please make sure ['TFSEXECROLE'](migration-import.md#configuring-your-collection-for-import) is assigned to the login. 
+This error means that your SQL login user does not have the required database role. Please make sure ['TFSEXECROLE'](migration-import.md#configure-your-collection-for-import) is assigned to the login. 
 
 There is a known issue with using sp_addrolemember to add 'TFSEXECROLE' to an existing SQL login. The role membership is not applied until all open connections using that identity are closed. If you're hitting the above error and have confirmed your identity has this role, it's recommended that you create a new identity for your import. Details on how to create a new SQL login that's ready to be used for import can be found at https://aka.ms/AzureDevOpsImportLargeCollection.
 
