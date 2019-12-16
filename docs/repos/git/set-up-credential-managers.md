@@ -44,8 +44,10 @@ We recommend [using SSH keys](use-ssh-keys-to-authenticate.md) to authenticate t
 On macOS and Linux, there are [several install options](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/Install.md) that use native package managers to install the credential manager. After installing the package for your platform, run the following command to configure Git to use the credential manager:
 
 ```bash
-git-credential-manager install
+git credential-manager install
 ```
+
+Alternatively, you can try the [Git Credential Manager Core (Beta)](https://github.com/microsoft/Git-Credential-Manager-Core#download-and-install).
 
 ## Using the Git Credential Manager
 

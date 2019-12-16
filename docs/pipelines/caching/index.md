@@ -51,7 +51,7 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 * **Strings**: fixed value (like the name of the cache or a tool name) or taken from an environment variables (like the current OS or current job name)
 
-* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. This  could result in the task failing when this "file" does not exist. 
+* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This  could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 

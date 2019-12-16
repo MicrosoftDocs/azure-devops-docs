@@ -10,9 +10,11 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/22/2019
+ms.date: 12/06/2019
 monikerRange: 'azure-devops'
 ---
+
+
 # Access with Azure Active Directory groups
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]

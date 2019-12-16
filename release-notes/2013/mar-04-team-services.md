@@ -16,7 +16,7 @@ Before we get to the new capabilities in today’s update, I want to announce so
 
 **Saturday March 23rd we’ll be taking the service offline for 15 minutes sometime between 11:00 AM EST and 2:00 PM EST.**
 
-As we get closer to the event, we’ll be posting updates on our [service blog](https://blogs.msdn.com/b/tfservice/) with additional details. Please plan accordingly, and we apologize in advance for any inconvenience this causes.
+As we get closer to the event, we’ll be posting updates on our [service blog](https://devblogs.microsoft.com/devops/) with additional details. Please plan accordingly, and we apologize in advance for any inconvenience this causes.
 
 Now, let’s talk about some of the improvements in today's update…
 
@@ -74,6 +74,6 @@ Finally, this sprint we enabled support for scheduled builds with Git repositori
 > [!NOTE]
 > To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](/visualstudio/releasenotes/vs2012-update2-vs).
 
-That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
+That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,

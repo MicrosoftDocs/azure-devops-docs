@@ -132,7 +132,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Scale</td>
-<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace" data-raw-source="[local workspaces](decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace)">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
+<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#local">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
 <td>You can quickly begin small projects. You can scale up to very large projects, but you have to plan ahead to modularize your codebase. You can create multiple repositories in a project.
 </td>
 </tr>
@@ -253,7 +253,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Visual Studio compatibility</td>
-<td>You can use all supported <a href="https://msdn.microsoft.com/library/dd997788" data-raw-source="[previous versions of Visual Studio](https://msdn.microsoft.com/library/dd997788)">previous versions of Visual Studio</a>.</td>
+<td>You can use all supported <a href="https://docs.microsoft.com/azure/devops/server/requirements" data-raw-source="[previous versions of Visual Studio](https://docs.microsoft.com/azure/devops/server/requirements)">previous versions of Visual Studio</a>.</td>
 <td><p>Git is built in with Visual Studio 2017, 2015, and 2013.</p>
 <p>You can also use Visual Studio 2012 Update 4 (you must also install <a href="https://go.microsoft.com/fwlink/?LinkID=275845" data-raw-source="[Visual Studio Tools for Git](https://go.microsoft.com/fwlink/?LinkID=275845)">Visual Studio Tools for Git</a>).</p></td>
 </tr>
@@ -275,11 +275,7 @@ Need more help to make a choice? These charts might help.
 <td>Git</td>
 </tr>
 </thead>
-<tr>
-<td>CodePlex support</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
-</tr>
+
 <tr>
 <td>Migration path</td>
 <td><a href="https://github.com/git-tfs/git-tfs" data-raw-source="[Git-TFS](https://github.com/git-tfs/git-tfs)">Git-TFS</a></td>

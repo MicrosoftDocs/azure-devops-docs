@@ -29,7 +29,7 @@ The VSTS.AccountContents function is a replacement for Power Query M function [W
 
 Advanced function which returns the contents downloaded from the URL for Analytics as a binary value.
 
-The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Concents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
+The `VSTS.AccountContents` function has the same arguments, options and return value format as `Web.Contents`. For more information please refer to: [Power Query (M) Formula Reference - Web.Contents](https://msdn.microsoft.com/library/mt260892.aspx).
 
 If you are already using `Web.Contents` to access data from Analytics (REST API or OData), you can replace it with `VSTS.AccountContents` to leverage Data Connector authentication.
 This will also inform Power BI that these requests are referencing the same data source and you'll be able to combine the data without violating the single data source constraints in Power BI Service.

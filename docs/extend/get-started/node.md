@@ -20,7 +20,7 @@ This tutorial guides you through creating your first web extension, which includ
 
 > [!div class="checklist"]
 > * Install the required tools
-> * Ready a local directory for your extension
+> * Read a local directory for your extension
 > * Create an extension manifest file and hub contribution
 > * Package and publish your extension to the Marketplace
 > * Test your extension in an organization
