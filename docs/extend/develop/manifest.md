@@ -168,7 +168,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 
 <a name="CustomerQnASupport"></a>
 
-### Marketplace Q&A - CustomerQnASupport property
+### Marketplace Q & A - CustomerQnASupport property
 
 All extensions on the Visual Studio Marketplace have a Q&A section to allow one-on-one public conversations between extension users and publishers. Publishers can choose between Marketplace Q&A, GitHub issues, or custom Q&A URL for the Q&A section or disable Q&A in Marketplace using the CustomerQnASupport property in the manifest. 
 
@@ -190,15 +190,15 @@ For a different experience than one of the default options use the **CustomerQnA
 
 ### Properties
 
-Properties for the CustomerQnASupport section:
+Properties for the Customer Q & A Support section:
 
 - **enableqna** - boolean field, set to true for marketplace or custom Q&A; false for disabling Q&A
 - **url** - string, URL for custom Q&A
 
 
-### Examples showing usage of Q&A support
+### Examples showing usage of Q & A support
 
-#### Example 10: Extension using custom Q&A
+#### Example 10: Extension using custom Q & A
 
 ```json
 {
@@ -208,7 +208,7 @@ Properties for the CustomerQnASupport section:
     } 
 }
 ```
-#### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
+#### Example 11: Extension with GitHub repository but using Marketplace Q & A instead of GitHub issues
 
 ```json
 {
@@ -217,7 +217,7 @@ Properties for the CustomerQnASupport section:
     } 
 }
 ```
-#### Example 12: Extension disabling Q&A section
+#### Example 12: Extension disabling Q & A section
 
 ```json
 {
@@ -237,7 +237,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 [!INCLUDE [](../../integrate/_shared/scopes.md)] 
 
-### Changing a published extension's scopes
+### Changing scope of published extension
 
 The scopes of an extension can be changed after publishing. Customers that previously installed your extension (and authorized the previous set of scopes) remain on the previous version of the extension and need to authorize the new scopes before being upgraded to the newest version.
 

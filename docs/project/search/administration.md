@@ -550,7 +550,7 @@ You're prompted to enter:
 
 ### Resume indexing
 
-If indexing was paused, execute the script **StartSearchIndexing.ps1**
+If indexing was paused, execute the script **ResumeIndexing.ps1**
 with administrative privileges, to start indexing again. 
 You're prompted to enter:
 

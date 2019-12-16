@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: jukullam
-ms.date: 12/06/2019
+ms.date: 12/13/2019
 monikerRange: '>= azure-devops-2019'
 author: juliakm
 ---
@@ -46,6 +46,7 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
+- `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 - Ensure Docker is installed
@@ -65,6 +66,10 @@ Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
 Azure Pipelines can also run [Windows Containers](/virtualization/windowscontainers/about/).
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
 Docker must be installed. Be sure your pipelines agent has permission to access the Docker daemon.
+
+The Windows container must support running Node.js.
+A base Windows Nano Server container is missing dependencies required to run Node.
+See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-js-on-nano-server/) for more information about what it takes to run Node on Windows Nano Server.
 
 ### Hosted agents
 
@@ -167,6 +172,9 @@ steps:
 - script: echo hello
 ```
 
+Other container registries may also work.
+Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
+
 ### Options
 
 If you need to control container startup, you can specify `options`.
@@ -179,6 +187,8 @@ container:
 steps:
 - script: echo hello
 ```
+
+Running `docker create --help` will give you the list of supported options.
 
 ### Reusable container definition
 

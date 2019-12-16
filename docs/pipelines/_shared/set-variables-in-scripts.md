@@ -107,9 +107,8 @@ Script
 
 ```bash
 #!/bin/bash
-echo "No problem reading $1 or $SAUCE"
+echo "No problem reading $SAUCE"
 echo "But I cannot read $SECRET_SAUCE"
-echo "But I can read $2 (but the log is redacted so I do not spoil the secret)"
 ```
 
 ---

@@ -41,7 +41,7 @@ This month we’re offering a preview of a new design aimed at making it easier 
 
 ![build editor switch](_img/01_25_build-editor-new-build-editor-switch.png)
 
-If you change your mind, you can toggle it off. However, eventually after we feel it’s ready for prime time, the preview editor will replace the current editor. So please give it a try and [give us feedback](https://visualstudio.uservoice.com/forums/330519-team-services).
+If you change your mind, you can toggle it off. However, eventually after we feel it’s ready for prime time, the preview editor will replace the current editor. So please give it a try and [give us feedback](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 The new editor has all the capabilities of the old editor along with several new capabilities and enhancements to existing features:
 
@@ -162,7 +162,7 @@ The defaults can be overridden for all variable groups or for a specific one.
 ## Web app deployment history in Azure portal
 Release management now updates the deployment logs of Azure App Service when a deployment is done by using the App Service deployment task. Users can view deployment history in the Azure portal by selecting the __Continuous delivery__ option in the __App Service__ blade.
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 
