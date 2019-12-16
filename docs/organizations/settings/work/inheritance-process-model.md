@@ -256,7 +256,7 @@ Renaming a field or changing the data type aren't supported actions. However, yo
 
 You can delete a field, and later restore it. Deleting a field deletes all data associated with that field, including historical values. Once deleted, you can only restore the field and recover the data using the [Fields - Update REST API](/rest/api/azure/devops/wit/fields/update?view=azure-devops-rest-6.0). 
 
-Instead of deleting a field, you may want to instead hide or remove the field from a work item form. 
+Instead of deleting a field, you may want to instead hide or remove the field from a work item form. For details, see [Add and manage fields, Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 
 [!INCLUDE [temp](../_shared/field-reference.md)] 
 
