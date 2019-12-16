@@ -845,6 +845,13 @@ parameters: { string: any }   # expected parameters
 variables: [ variable ]
 ```
 
+> [!NOTE]
+> `variables` has two syntaxes, sequence and mapping.
+> In mapping syntax, all keys are variable names and their values are variable values.
+> In order to use variable templates, you must use sequence syntax.
+> Sequence syntax requires you to specify whether you're mentioning a variable (`name`), a variable group (`group`), or a template (`template`).
+> See the [variables](process/variables.md) topic for more.
+
 # [Example](#tab/example)
 
 In this example, a set of variables is repeated across multiple pipelines.
