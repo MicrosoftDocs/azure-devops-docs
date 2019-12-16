@@ -34,7 +34,7 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | --- | --- | --- | --- |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md)
 | Windows Server 2016 with Visual Studio 2017 | *vs2017-win2016* | `vs2017-win2016` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2016-Readme.md)
-| Windows Server 2012 R2 with Visual Studio 2015 | *vs2015-win2012r2* |  `vs2015-win2012r2` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/Vs2015-Server2012R2-Readme.md)
+| Windows Server 2012 R2 with Visual Studio 2015 | *vs2015-win2012r2* |  `vs2015-win2012r2` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md)
 | Windows Server Core 1803 (*for running Windows containers*) | *win1803* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
@@ -64,7 +64,9 @@ jobs:
 
 ### Notes on choosing "Hosted macOS"
 
+
 This option affects where your data is stored. [Learn more](../../organizations/security/data-location.md).
+
 To disable the Microsoft-hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 To disable the Microsoft-hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 

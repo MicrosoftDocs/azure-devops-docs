@@ -46,6 +46,7 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
+- `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 - Ensure Docker is installed
@@ -171,6 +172,9 @@ steps:
 - script: echo hello
 ```
 
+Other container registries may also work.
+Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
+
 ### Options
 
 If you need to control container startup, you can specify `options`.
@@ -183,6 +187,8 @@ container:
 steps:
 - script: echo hello
 ```
+
+Running `docker create --help` will give you the list of supported options.
 
 ### Reusable container definition
 

@@ -275,11 +275,7 @@ Need more help to make a choice? These charts might help.
 <td>Git</td>
 </tr>
 </thead>
-<tr>
-<td>CodePlex support</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
-<td><a href="http://www.codeplex.com/" data-raw-source="[CodePlex](https://www.codeplex.com/)">CodePlex</a> is supported.</td>
-</tr>
+
 <tr>
 <td>Migration path</td>
 <td><a href="https://github.com/git-tfs/git-tfs" data-raw-source="[Git-TFS](https://github.com/git-tfs/git-tfs)">Git-TFS</a></td>

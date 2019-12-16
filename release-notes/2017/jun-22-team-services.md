@@ -302,7 +302,7 @@ Publishers can also use the __Extension Statistics Power BI__ content pack to ga
 
 ![extension statistics Power BI content pack](_img/06_22_26.png)
 
-We would love to hear what you think about these features. Report any problems through [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) and get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) to add your idea or vote for an existing one.
+We would love to hear what you think about these features. Report any problems through [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) and get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/vs-team-services). As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

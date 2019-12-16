@@ -78,7 +78,7 @@ You can also “run” them, launching a simple web based manual test runner exp
 
 ![Run manual tests](./_img/1_30_11.png)
 
-Please check all these improvements out. As always, let us know what you think and how we’re doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
+Please check all these improvements out. As always, let us know what you think and how we’re doing on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice).
 
 Thanks,
 
