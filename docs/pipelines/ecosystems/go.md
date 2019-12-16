@@ -8,7 +8,7 @@ ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.reviewer: dastahel
+ms.reviewer: shashankbarsin
 ms.custom: seodec18
 ms.date: 12/16/2019
 monikerRange: 'azure-devops'
