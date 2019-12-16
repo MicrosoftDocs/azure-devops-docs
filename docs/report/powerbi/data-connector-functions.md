@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect using Power Query & Azure DevOps functions
 titleSuffix: Azure DevOps 
 description: Describes the available functions that the Power BI Data Connector and Analytics support for Azure DevOps 
@@ -18,12 +18,12 @@ ms.date: 8/1/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-The Data Connector for Azure DevOps includes Power Query M functions which can be used by query authors. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
+The Data Connector for Azure DevOps includes Power Query M functions which query authors can use. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
 
-The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](https://msdn.microsoft.com/query-bi/m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. It can be used to call [AzureDevOps REST APIs](/rest/api/azure/devops).
+The VSTS.AccountContents function is a replacement for Power Query M function [Web.Contents](/powerquery-m/web-contents). Intended for more advanced scenarios, VSTS.AccountContents returns the contents downloaded from the URL for Analytics as a binary value. You can use it to call [AzureDevOps REST APIs](/rest/api/azure/devops).
 
 > [!IMPORTANT]  
-> VSTS.AccountContents should only be used to access data not [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI Integration Overview](overview.md). 
+> You should only use VSTS.AccountContents to access data that isn't [available in Analytics](data-available-in-analytics.md). It pulls data directly from Azure DevOps and, to protect other Azure DevOps users, is susceptible to throttling. For information on other approaches, read the [Power BI integration overview](overview.md). 
 
 ## VSTS.AccountContents
 

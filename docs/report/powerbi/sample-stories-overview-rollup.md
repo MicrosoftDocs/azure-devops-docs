@@ -11,14 +11,16 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 12/04/2019
+ms.date: 12/16/2019
 ---
 
-# Sample: Requirements tracking rollup report
+# Requirements tracking rollup sample report
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
+
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 An example is shown in the following image. 
 
@@ -41,7 +43,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 > [!NOTE]   
 > Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -74,7 +76,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -106,7 +108,7 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -137,7 +139,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -172,7 +174,7 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 > [!NOTE]   
 > Change the `WorkItemType` based on the process you are using. The Scrum template supports **Feature** and the Basic template supports **Epic** as the roll up work item type, respectively.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -202,7 +204,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
