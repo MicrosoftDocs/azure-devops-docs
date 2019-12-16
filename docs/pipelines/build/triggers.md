@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 09/12/2019
+ms.date: 12/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -487,6 +487,10 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
+
+You can view upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline.
+
+
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
