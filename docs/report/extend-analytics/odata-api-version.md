@@ -35,7 +35,7 @@ The API version follows the _odata element in the request path and has value as 
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> https://{servername}:{port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}/$metadata
 > ```
 
 ::: moniker-end

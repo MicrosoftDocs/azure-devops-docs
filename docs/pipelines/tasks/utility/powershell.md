@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/10/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -70,7 +70,7 @@ Both of these resolve to the `PowerShell@2` task.
 <tr><td><code>filePath</code><br/>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code></td></tr>
 <tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
-  Ignored when Type is <code>inline</code>.</td></tr>
+  Note: unused when Type is <code>inline</code>.</td></tr>
 <tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>.<br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
 <tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
 <tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>

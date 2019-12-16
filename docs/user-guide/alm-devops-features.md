@@ -1044,11 +1044,11 @@ pipelines\tasks\build\_img
 <p><img src="../pipelines/tasks/build/_img/ant.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/ant.md" data-raw-source="[Build with Apache Ant](../pipelines/tasks/build/ant.md)">Build with Apache Ant</a> </p>
 <p><img src="../pipelines/tasks/build/_img/gradle.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)">Build using a Gradle wrapper script</a>  </p>
 <p><img src="../pipelines/tasks/build/_img/grunt.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/grunt.md" data-raw-source="[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)">Grunt: The JavaScript Task Runner</a> </p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
+<p><img src="../pipelines/tasks/build/_img/gulp.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
+<p><img src="../pipelines/tasks/build/_img/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
+<p><img src="../pipelines/tasks/build/_img/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/_img/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/_img/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/_img/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -2265,7 +2265,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can <a href="https://visualstudio.microsoft.com/articles/adopting-vsts" data-raw-source="[migrate source code and work items](https://visualstudio.microsoft.com/articles/adopting-vsts)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
+<p>You can <a href="https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs" data-raw-source="[migrate source code and work items](https://docs.microsoft.com/azure/devops/migrate/migrate-from-tfs)">migrate source code and work items</a> from an on-premises TFS to the cloud. </p>
 
 </td>
 <td width="33%">
@@ -2638,7 +2638,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
 - [Azure DevOps Services - Features update](https://aka.ms/azuredevops/releasenotes)
-- [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
+- [Azure DevOps Blog](https://devblogs.microsoft.com/devops/)  
 
 <br/>
 Get started today using our cloud offering, <a href="https://visualstudio.microsoft.com/team-services/" data-raw-source="[Azure DevOps Services](https://visualstudio.microsoft.com/team-services/)">Azure DevOps Services</a>, or our <a href="https://visualstudio.microsoft.com/downloads/" data-raw-source="[on-premises TFS server](https://visualstudio.microsoft.com/downloads/)">on-premises TFS server</a>.  

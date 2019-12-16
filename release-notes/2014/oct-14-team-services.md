@@ -32,7 +32,7 @@ It’s common to want to grab the results of a work item query and shoot them to
 
 ![Work item query results pasted directly into a new email](_img/10_14_03.png)
 
-That’s it for this deployment. Keep the feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+That’s it for this deployment. Keep the feedback coming on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 
