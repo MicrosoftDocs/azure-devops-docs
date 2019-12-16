@@ -138,6 +138,8 @@ variables:
 - template: myvariabletemplate.yml
 ```
 
+### Access variables through the environment
+
 [!INCLUDE [temp](_shared/access-variables-through-env.md)]
 
 ::: moniker-end
