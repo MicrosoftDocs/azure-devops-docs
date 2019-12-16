@@ -51,7 +51,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
    If you want to watch your pipeline in action, select the build job.
 
-   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template.
 
    You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
 
@@ -89,7 +89,7 @@ When an Azure Pipelines build fetches code from a remote repository, it places t
 ```yaml
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
-  GOROOT: '/usr/local/go1.11' # Go installation path
+  GOROOT: '/usr/local/go1.13' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
