@@ -84,7 +84,7 @@ Identity errors aren't common when validating a collection, but when they do com
 
 Guidance for resolving the most common identity errors is provided in the following sections.
 
-### ISVError: 100014
+### ISVError:100014
 
 This error indicates that a permission is missing from a system group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) will need to be run.
 
@@ -143,9 +143,9 @@ If you have multiple errors that need to be corrected, it's recommended that you
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the below commands to fix this error. 
 
-ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're uneditable groups that only contain other Azure DevOps Server groups as members. In the case of ISVError:300005, a non Azure DevOps Server group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
+ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members. In the case of ISVError:300005, a non-Azure DevOps security group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
 
-Since Valid Users groups can't be edited directly or through TFSSecurity.exe, correcting the invalid membership will need to be done by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) the data migration tool highlighted. You will need copy down the GroupSid, MemberId, and ScopeId as these values will need to be placed into the templated command below.
+Since you can't directly edit Valid Users groups or through TFSSecurity.exe, you need to correct the invalid membership by running a SQL statement against the configuration database to remove the offending identity. Carefully examine the error message(s) the data migration tool highlights. Copy down the GroupSid, MemberId, and ScopeId as you'll need to place these values into the templated command below.
 
 ```SQL
 DECLARE @p6 dbo.typ_GroupMembershipTable
@@ -180,19 +180,19 @@ Run the completed command against the Azure DevOps Server configuration database
 >
 > If you receive a -1 result from running the command, ensure that your collection database that produced the error is attached to your Azure DevOps Server instance and that you're running the command on the configuration database. 
 
-### AAD timeout exception
+### Azure Active Directory timeout exception
 
-On rare occasions some might receive an AAD timeout error when running the data migration tool prepare command. 
+On rare occasions, you may receive an Azure Active Directory (Azure AD) timeout error when running the data migration tool prepare command. 
 
 ```cmdline
 Exception Message: Request failed (type AadGraphTimeoutException)
 ```
 
-This error means that the requests to AAD to find the matching AAD identities for users in your collection timed out. Generally, this error can be resolved by waiting to run the prepare command at a less busy time of the day. Such as after regular business hours. 
+This error means that the requests to Azure AD to find the matching Azure AD identities for users in your collection timed out. Generally, this error can be resolved by waiting to run the prepare command at a less busy time of the day. Such as after regular business hours. 
 
-In the event that the error continues there are few troubleshooting steps which should be undertaken. First, you will want to test your connection to AAD from the machine running the prepare command. Follow the below steps and see if you can retrieve information on a user in your AAD. 
+In the event that the error continues there are few troubleshooting steps which should be undertaken. First, you will want to test your connection to Azure AD from the machine running the prepare command. Follow the below steps and see if you can retrieve information on a user in your Azure AD. 
 
-Open PowerShell in elevated mode and add replace 'someone@somecompany.com' below with a user you expect to be present in your company's AAD.
+Open PowerShell in elevated mode and add replace 'someone@somecompany.com' below with a user you expect to be present in your company's Azure AD.
 
 ```PowerShell
 //Install the AzureAD PowerShell module - ensuring to select Yes to All
@@ -208,7 +208,7 @@ Connect-MsolService
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
-If any of the above steps fail or you're unable to look up a users identity, that's a strong indication that there is a connection issue between the machine running the prepare command and AAD. You should run a network trace while executing the prepare command to ensure that nothing within your own network is stopping the calls from reaching AAD. If you've confirmed that the problem is not with your network then you will need reach out to Azure support for assistance with troubleshooting. 
+If any of the above steps fail or you're unable to look up a users identity, that's a strong indication that there is a connection issue between the machine running the prepare command and Azure AD. You should run a network trace while executing the prepare command to ensure that nothing within your own network is stopping the calls from reaching Azure AD. If you've confirmed that the problem is not with your network then you will need reach out to Azure support for assistance with troubleshooting. 
  
 If you are able to get information back on a user, open your log file from the prepare attempt and look for a line like the following. 
 
@@ -424,7 +424,10 @@ When an import fails, the individual that queued the import will receive an emai
 If the error is more complex then the email will provide instructions on how to file a customer [support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. This will allow your team members to continue working. It's recommended not to attempt the import again until the issue causing the failure has been resolved. 
  
 
+## Related articles
 
+- [Validate and import](migration-import.md) 
+- [Post-import](migration-post-import.md)
 
 
 
