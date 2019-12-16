@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 10/18/2019
+ms.date: 12/13/2019
 
 monikerRange: '>= tfs-2015'
 ---
@@ -36,7 +36,7 @@ Any variable that begins with one of these strings (regardless of capitalization
 
 ## Understand variable syntax
 
-Azure Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
+Azure Pipelines supports three different ways to dereference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
 Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
 
@@ -82,6 +82,8 @@ steps:
     platform: $(platform)
 ```
 
+### Variable scopes
+
 In the YAML file, you can set a variable at various scopes:
 
 - At the root level, to make it available to all jobs in the pipeline
@@ -115,6 +117,28 @@ jobs:
   - bash: echo $(job_variable2)
   - bash: echo $GLOBAL_VARIABLE
 ```
+
+### Specifying variables
+
+In the examples above, the `variables` keyword is followed by a list of key-value pairs.
+The keys are the variable names and the values are the variable values.
+There is another syntax, useful when you want to use [variable templates](templates.md) or [variable groups](../library/variable-groups.md).
+In this alternate syntax, the `variables` keyword takes a list of variable specifiers.
+The variable specifies are `name` for a regular variable, `group` for a variable group, and `template` to include a variable template.
+The following example demonstrates all three.
+
+```yaml
+variables:
+# a regular variable
+- name: myvariable
+  value: myvalue
+# a variable group
+- group: myvariablegroup
+# a reference to a variable template
+- template: myvariabletemplate.yml
+```
+
+### Access variables through the environment
 
 [!INCLUDE [temp](_shared/access-variables-through-env.md)]
 
