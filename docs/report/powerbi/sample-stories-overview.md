@@ -43,7 +43,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 > [!NOTE]   
 > The following query works for the Agile process since it defines `Remaining Work` and `Completed Work` fields in work items.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -77,7 +77,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -112,7 +112,7 @@ $filter=(
 
 ### Query for test execution status of requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -143,7 +143,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -175,7 +175,7 @@ $apply=filter(
 
 ### Query for status of bugs linked to the requirements
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -207,7 +207,7 @@ in
     #"Changed Type"
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
