@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting migration import from Azure DevOps Server to Services
-description: Guidance for fixing common DataMigratorTool validation errors.  
+title: Troubleshoot migration import from on-premises Azure DevOps Services
+description: Guidance for fixing common DataMigratorTool validation errors 
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
@@ -9,20 +9,20 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/13/2018
+ms.date: 12/16/2019
 ---
 
-# Troubleshooting
+# Troubleshoot import and migration errors
 
 [!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
 > [!NOTE]
-> It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
+> We recommended that you use the [Migration guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
 >
-> With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
+> With the release of Azure DevOps Server 2019, the TFS Database Import Service has been rebranded to become the data migration tool for Azure DevOps. This includes **TfsMigrator** becoming the data migration tool, or **migrator** for short. This service still works exactly the same as the old import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-The data migration tool could flag errors which need to be corrected prior to performing a migration. Below are the most common errors that are encountered when prepping 
-for a migration. After correcting each error you will need to run the data migration tool validate command again to ensure the error(s) is/are actually gone.
+The data migration tool flags errors which you need to correct prior to performing a migration. The most common errors that you may receive when prepping 
+for a migration are listed below. After correcting each error, run the data migration tool **validate** command again to ensure all errors are all resolved.
 
 ## Resolve size warnings
 
@@ -62,27 +62,29 @@ The collection database's collation '{collation}' is not natively supported in A
 
 Receiving this warning **does NOT** mean that you can't import your collection to Azure DevOps Services. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into Azure DevOps Services it is effectively transformed to the supported Azure DevOps Services collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after the import has completed. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
-This warning requires an acknowledgement from the user running the data migration tool command. Accepting the warning will allow the data migration tool to continue assisting you with preparing for your import. 
+This warning requires an acknowledgment from the user running the data migration tool command. Accepting the warning will allow the data migration tool to continue assisting you with preparing for your import. 
 
 ```cmdline
 The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during import to a supported Azure DevOps Services collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-If the data migration tool is unable to make a connection to the internet then it will be unable to validate that your collation can be converted to one of the supported version at import time. It's only a warning, so you will be able to make forward progress on your migration process. However, when you run the prepare command, an internet connection is required and your collation will be validated at that time.
+If the data migration tool can't connect to the internet, it can't validate that your collation can be converted to one of the supported versions at import time. It's only a warning, so you can continue on your migration process. However, when you run the **prepare** command, an internet connection is required and your collation is validated at that time.
 
-Generally a non-supported collation can be converted to one of the supported collations at import time. However, in extreme cases there are some collations which can't be converted. If your collection uses one of those collations then you will receive the below **error** message. 
+Generally you can convert a non-supported collation to one of the supported collations at import time. However, in extreme cases there are some collations which you can't convert. If your collection uses one of those collations, you'll receive the following **error** message. 
 
 ```cmdline
 The collection database's collation '{collation}' is not supported for import to Azure DevOps Services. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-In order to continue your collection's collation will need to be [changed](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
+In order to continue, you need to [change your collection's collation](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on Azure DevOps Services.
     
 ## Resolve identity errors
 
-Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
+Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in more recent versions. 
 
-### ISVError:100014
+Guidance for resolving the most common identity errors is provided in the following sections.
+
+### ISVError: 100014
 
 This error indicates that a permission is missing from a system group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) will need to be run.
 
@@ -228,7 +230,7 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
 
-Sometimes your local collection may have a field whose name may conflict with Azure DevOps Services system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+Sometimes your local collection may have a field whose name conflicts with an Azure DevOps Services system field. To resolve this error, you must change the name of your collection field. Use the **witadmin changefield** command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
