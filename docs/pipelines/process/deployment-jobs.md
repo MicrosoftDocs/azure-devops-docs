@@ -236,7 +236,6 @@ jobs:
 With each run of this job, deployment history is recorded against the `smarthotel-dev` environment.
 
 > [!NOTE]
-> - Currently, environments support only Kubernetes resources, with support for virtual machines and other resources on the roadmap.
 > - It's also possible to create an environment with empty resources and use that as an abstract shell to record deployment history, as shown in the previous example.
 
 The next example demonstrates how a pipeline can refer both an environment and a resource to be used as the target for a deployment job.
