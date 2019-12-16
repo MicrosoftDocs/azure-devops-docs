@@ -72,7 +72,7 @@
         href: sample-boards-releaseburndown.md
       - name: Sprint burndown
         href: sample-boards-sprintburndown.md
-      - name: Cumulative flow diagram
+      - name: Cumulative Flow Diagram 
         href: sample-boards-cfd.md
         displayname: CFD 
       - name: Lead/Cycle time
@@ -101,6 +101,8 @@
         href: sample-test-plans-progress-status.md
       - name: Requirements tracking
         href: sample-stories-overview.md
+      - name: Requirements tracking - Rollup
+        href: sample-stories-overview-rollup.md
       - name: Execution trends
         href: sample-test-plans-execution-trend.md
       - name: Suite-level aggregation
