@@ -1322,7 +1322,7 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 ## Pool
 
 `pool` specifies which [pool](agents/pools-queues.md) to use for a job of the
-pipeline. It also holds information about the job's strategy for running.
+pipeline. It also holds information about the job's strategy for running. It can be specified at the pipeline, stage, or job level. The pool specified at the lowest level of the hierachy is what would be used to run the job.
 
 # [Schema](#tab/schema)
 

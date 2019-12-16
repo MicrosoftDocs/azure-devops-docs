@@ -248,7 +248,7 @@ You must use YAML to consume output variables in a different job.
 
 <h2 id="set-in-script">Set variables in scripts</h2>
 
-A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. To set a variable from a script, you use a command syntax and print to stdout.
+A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. All variables set by this method are treated as strings. To set a variable from a script, you use a command syntax and print to stdout.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

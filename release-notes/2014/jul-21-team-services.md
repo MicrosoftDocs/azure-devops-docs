@@ -50,7 +50,7 @@ In this sprint we also added the ability for an account owner to [delete their a
 
 ![Delete your account](_img/7_21_04.png)
 
-That’s the list for sprint 68. As Brian mentioned in [his blog](https://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
+That’s the list for sprint 68. As Brian mentioned in [his blog](https://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) site to give us feedback on our priorities and investments.
 
 Thank you!
 
