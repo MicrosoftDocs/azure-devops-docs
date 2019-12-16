@@ -235,7 +235,7 @@ additionalContent:
             - text: Processes
               url: ./reference/index.md
             - text: Organizations
-              url: ./organizations/accounts/index.md
+              url: ./organizations/accounts/organization-management.md
             - text: Repos, pipelines, & test
               url: ./organizations/settings/index.md
             - text: Notifications

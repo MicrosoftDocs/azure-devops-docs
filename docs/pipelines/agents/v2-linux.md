@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 11/5/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -191,7 +191,13 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops-2019"
+
+Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 TFS 2017 and newer: `https://{your_server}/tfs`
 
@@ -295,7 +301,7 @@ sudo ./svc.sh stop
 sudo ./svc.sh start
 ```
 
-The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
+The snapshot of the environment variables is stored in `.env` file (`PATH` is stored in `.path`) under agent root directory, you can also change these files directly to apply environment variable changes.
 
 ### Run instructions before the service starts
 
@@ -321,9 +327,9 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* **Azure Pipelines**: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
-* TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
+* **TFS or Azure DevOps Server**: the name of your on-premises server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 
 `sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.service.template`
 
