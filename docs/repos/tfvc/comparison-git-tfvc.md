@@ -132,7 +132,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Scale</td>
-<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace" data-raw-source="[local workspaces](decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace)">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
+<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#local">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
 <td>You can quickly begin small projects. You can scale up to very large projects, but you have to plan ahead to modularize your codebase. You can create multiple repositories in a project.
 </td>
 </tr>
