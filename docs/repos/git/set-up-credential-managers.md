@@ -47,6 +47,8 @@ On macOS and Linux, there are [several install options](https://github.com/Micro
 git credential-manager install
 ```
 
+Alternatively, you can try the [Git Credential Manager Core (Beta)](https://github.com/microsoft/Git-Credential-Manager-Core#download-and-install).
+
 ## Using the Git Credential Manager
 
 When you connect to a Git repository from your Git client for the first time, the credential manager prompts for credentials. Provide your Microsoft account or Azure AD credentials. If your account has multi-factor authentication enabled, the credential manager prompts you to go through that process as well.
