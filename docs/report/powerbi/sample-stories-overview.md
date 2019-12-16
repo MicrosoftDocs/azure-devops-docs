@@ -11,14 +11,16 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 12/04/2019
+ms.date: 12/16/2019
 ---
 
-# Sample: Requirements tracking report
+# Requirements tracking sample report
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
 This article provides instructions on how to track the quality of work items that belong to the Requirements category. This includes work items such as User Stories (Agile), Product Backlog Items (Scrum) and Requirements (CMMI). 
+
+[!INCLUDE [temp](_shared/preview-note.md)]
 
 An example is shown in the following image. 
 
