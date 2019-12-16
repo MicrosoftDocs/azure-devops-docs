@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 12/16/2019
 ---
 
-# Import
+# Validate and import processes
 
 [!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
@@ -86,13 +86,18 @@ The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to i
 
 ## Generate import files
 
-By this point you will have run the data migration tool *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
+By this point you will have run the data migration tool **validate** against the collection and it is returning "All collection validations passed". Before you take a collection offline to migrate, you need to generate the import files. Upon running the prepare step, you generate two import files: 
+
+- `IdentityMapLog.csv` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD)
+- `import.json` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare command
 
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+The **prepare** command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company needs to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). 
 
-Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
+If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+
+Unlike the **validate** command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
 ```cmdline
 Migrator prepare /help
@@ -115,13 +120,13 @@ The connection string parameter is a pointer to your Azure DevOps Server instanc
 Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-Upon executing this command, the data migration tool will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
-If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an Azure AD login window will appear. 
-You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
+Upon executing the **prepare** command, the data migration tool runs a complete validation to ensure that nothing has changed with your collection since the last full validate. 
+If any new issues are detected, then no import files are generated. Shortly after the command has started running, an Azure AD login window appears. 
+You need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
 is the one you want your future organization to be backed with. For our Fabrikam example the user would enter something similar to what's shown in the below image.
 
 > [!IMPORTANT] 
-> Do NOT use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
+> Do **NOT** use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
 
 ![Azure AD login prompt](_img/migration-import/aadLogin.png)
 
@@ -248,6 +253,8 @@ The data migration tool will warn if it detects the complete historical identiti
 The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
 You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps Services. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
+
+<a id="prepare-import" />
 
 ## Prepare for import
 
@@ -685,6 +692,8 @@ Dry run imports help teams to test the migration of their collections. It's not 
 Most dry run organizations will have 15 days before they're deleted. Dry run organizations can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run organization will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run organization. 
 
 Be sure to check out the [post import](migration-post-import.md) article for additional details on post import activities. Should your import encounter any problems, review the [import troubleshooting](migration-troubleshooting.md#resolve-import-errors) steps. 
+
+<a id="run-an-import" />
 
 ## Run an import
 
