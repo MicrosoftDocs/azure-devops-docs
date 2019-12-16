@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
+ms.date: 12/16/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -103,7 +103,11 @@ A: They're billed for both Basic and Basic + Test Plans, which is a current limi
 ### Q: How can I get a list of all the users I’m paying for under multi-org billing?
 
 A: Export a list of users from **Organization settings > Users**. Then, remove duplicates based on email address. When multi-org billing goes into GA (general availability), we'll have a way to export the list of all users under an Azure subscription. 
- 
+
+### Q: Why are additional free user grants removed when multi-organization billing is enabled?
+
+A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't yet support multi-org billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that was applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), please [contact us](mailto:azdevgrant@microsoft.com?subject=Multi-org%20billing%20-%20free%20user%20grant%20request) to request that the grant be applied to your Azure subscription instead. 
+
 ## General billing
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
