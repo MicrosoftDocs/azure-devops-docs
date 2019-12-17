@@ -143,6 +143,8 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 > [!div class="mx-imgBorder"]
 > ![URL unfurling](./_img/integrations-teams/URL-Preview.png)
 
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a Team.
+
 ## Command reference
 
 The following table lists all the Azure repos commands you can use in your Teams channel.
