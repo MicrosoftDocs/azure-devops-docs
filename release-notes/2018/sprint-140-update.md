@@ -113,7 +113,7 @@ Now you can embed videos in a wiki page from online services such as Microsoft S
 > [!div class="mx-imgBorder"]
 > ![Embed video in wiki](_img/140_02.png)
 
-This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/34130218-microsoft-stream-video-s-need-to-be-supported-for).
+This feature was prioritized based on a suggestion.
 
 ### Rename a wiki
 

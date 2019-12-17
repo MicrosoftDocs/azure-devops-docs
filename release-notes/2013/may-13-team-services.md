@@ -60,7 +60,7 @@ The drop down gives you a filter and you can click **Manage repositories** to cr
 
 If you rename a repository then you will need to manually update the remote URL where you have cloned it. Right now you can only use the advanced Team Explorer integration when the repository is the default one (i.e. the repository with the same name as the team project). You can still clone, push and pull into the other repositories in your team project from Visual Studio, but you’ll need to do this by cloning manually from the remote URL. A future version of the Git integration in Visual Studio will help you get connected to them more easily.
 
-This was a [relatively new item](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3811952-allow-multiple-git-repositories-in-a-single-team-p) requested on UserVoice and we’re happy to mark it as done.
+This was a relatively new item requested on UserVoice and we’re happy to mark it as done.
 
 ## Branded login page
 

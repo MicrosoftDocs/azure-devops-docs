@@ -181,7 +181,7 @@ After a [public preview of Wiki search in December](https://blogs.msdn.microsoft
 
 ### Print Wiki pages
 
-**Wiki** can be used for a variety of content. Sometimes it can be useful to print content from **Wiki** to read in your spare time, add comments using pen and paper, or even share an offline PDF copy with those outside of your VSTS project. Now, simply click on the context menu of a page and select **Print page**. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20051455-print-or-export-document-from-wiki-functionality).
+**Wiki** can be used for a variety of content. Sometimes it can be useful to print content from **Wiki** to read in your spare time, add comments using pen and paper, or even share an offline PDF copy with those outside of your VSTS project. Now, simply click on the context menu of a page and select **Print page**. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki menu print page option](_img/129_04.png)
