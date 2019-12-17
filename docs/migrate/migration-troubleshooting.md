@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot migration import from on-premises Azure DevOps Services
-description: Guidance for fixing common DataMigratorTool validation errors 
+description: Resolve common DataMigratorTool validation errors 
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
@@ -21,54 +21,63 @@ ms.date: 12/16/2019
 >
 > With the release of Azure DevOps Server 2019, the TFS Database Import Service has been rebranded to become the data migration tool for Azure DevOps. This includes **TfsMigrator** becoming the data migration tool, or **migrator** for short. This service still works exactly the same as the old import service. If you're on an older version of on-premises with TFS as the branding, you can still use **migrator** to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-The data migration tool flags errors which you need to correct prior to performing a migration. The most common errors that you may receive when prepping 
-for a migration are listed below. After correcting each error, run the data migration tool **validate** command again to ensure all errors are all resolved.
+The data migration tool flags errors that you need to correct prior to performing a migration. The most common errors that you may receive when preparing to migrate are listed below. After correcting each error, run the **validate** command again to ensure all errors are resolved.
 
 ## Resolve size warnings
 
-If your collection is particularly large then you might receive one of the below messages after running the data migration tool. If you receive any of the below warnings or errors, it's always recommended that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
+Particularly large collections may generate one of the following messages after running the data migration tool. If you receive any of these warnings or errors, we recommend that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
+
+The following warning means you need to use the SQL Azure VM method to complete your import. Once a database reaches a certain size, it becomes faster to setup a SQL Azure VM to complete the import to Azure DevOps Services. To setup the VM and complete your import, follow the instructions linked from the warning message. This warning does **NOT** mean that your collection is too big to be imported. 
 
 ```cmdline
 The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
 ```
 
-This is a warning that means you will need to use the SQL Azure VM method to complete your import. Once a database reaches a certain size it becomes faster to setup a SQL Azure VM to complete the import to Azure DevOps Services. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
+Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
 
 ```cmdline
 The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
 ```
 
-Similar to the previous warning, this warning means you will have to use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
+The following warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/azure/devops/server/upgrade/clean-up-data).
 ```
 
-This warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
+Unlike the previous warnings, the following error **WILL** block you from moving forward with your migration to Azure DevOps Services. The volume of metadata in your collection is too large. You need to [reduce](/azure/devops/server/upgrade/clean-up-data) its size below the mentioned limit to proceed with the import.   
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the maximum supported size of {Metadata Limit}GBs.
 ```
 
-Unlike the previous warnings, this is an error that **WILL** block you from moving forward with your migration to Azure DevOps Services. The volume of metadata in your collection is too large and needs to be [reduced](/azure/devops/server/upgrade/clean-up-data) below the mentioned limit to proceed with the import.   
+
 
 ## Resolve collation warnings
 
-Collation in this case refers to the collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the two below **warning** messages.  
+Collation warnings refer to your collection database's collation. Collations control the way string values are sorted and compared. Collections that aren't using either SQL_Latin1_General_CP1_CI_AS or Latin1_General_CI_AS will generally receive one of the **warning** messages.  
+
+### No native support
+
+Receiving the following warning **does NOT** mean that you can't import your collection to Azure DevOps Services. Rather, it means that you need to think through some additional considerations before performing an import. 
 
 ```cmdline
 The collection database's collation '{collation}' is not natively supported in Azure DevOps Services. Importing your collection will result in your collation being converted to one of the supported Azure DevOps Services collations. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-Receiving this warning **does NOT** mean that you can't import your collection to Azure DevOps Services. Rather, it means that you will need to think through some additional considerations before performing an import. When a non-supported collation is imported into Azure DevOps Services it is effectively transformed to the supported Azure DevOps Services collation. While this generally works without issue, unexpected results could be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after the import has completed. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
+When a non-supported collation is imported into Azure DevOps Services it is effectively transformed to the supported Azure DevOps Services collation. While this generally works without issue, unexpected results can be observed post import or the import could fail if a unique collation translation issue is encountered. For instance, customers will notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after import. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
-This warning requires an acknowledgment from the user running the data migration tool command. Accepting the warning will allow the data migration tool to continue assisting you with preparing for your import. 
+This warning requires an acknowledgment from the user running the data migration tool command. Accepting the warning allows the data migration tool to continue assisting you with preparing for your import. 
+
+### No native support, no internet connection
+
+If the data migration tool can't connect to the internet, it can't validate that your collation can be converted to one of the supported versions at import time. It's only a warning, so you can continue on your migration process. However, when you run the **prepare** command, an internet connection is required and your collation is validated at that time.
 
 ```cmdline
 The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during import to a supported Azure DevOps Services collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
 
-If the data migration tool can't connect to the internet, it can't validate that your collation can be converted to one of the supported versions at import time. It's only a warning, so you can continue on your migration process. However, when you run the **prepare** command, an internet connection is required and your collation is validated at that time.
+### Unsupported database collation  
 
 Generally you can convert a non-supported collation to one of the supported collations at import time. However, in extreme cases there are some collations which you can't convert. If your collection uses one of those collations, you'll receive the following **error** message. 
 
@@ -80,35 +89,38 @@ In order to continue, you need to [change your collection's collation](/sql/rela
     
 ## Resolve identity errors
 
-Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in more recent versions. 
+Identity errors aren't common when validating a collection, but when they do come up you need to fix them prior to migration to avoid undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current Azure DevOps Server version. For example, while is was once allowed for some users to be members of a built-in valid users group, it isn't in the more recent versions. 
 
-Guidance for resolving the most common identity errors is provided in the following sections.
+Guidance is provided in the following sections for resolving the most common identity errors.
 
 ### ISVError:100014
 
-This error indicates that a permission is missing from a system group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and it's not possible to edit the permissions for these groups. What this error indicates is that somehow one or more of these groups is missing a permission that it's expected to have. In order to fix this, you will need to use TFSSecurity.exe to apply the expected permissions onto the flagged system groups. To get started you will need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) will need to be run.
+This error indicates that a permission is missing from a system security group. System groups are well known groups in Azure DevOps Server and Azure DevOps Services. For example, every collection that you create has "Project Collection Valid Users" and "Project Collection Administrators" groups. They're created by default and you can't edit edit the permissions for these groups. 
+
+This error indicates that one or more groups is missing a permission that it's expected to have. In order to fix this, you need to use **TFSSecurity.exe** to apply the expected permissions onto the flagged system groups. To get started you need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) you need to run.
 
 #### Project Collection Valid Users error message
 
-Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Valid Users" group. Run the below command against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection URL.
+Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-3**", such as in the example below, then you need to fix a missing permission for the "Project Collection Valid Users" group. Run the following command against **TFSSecurity.exe** after replacing the scope with the one from the error message and adding in your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
-In the below example you will need to take the scope and group SID from the error message, and add it the templated command above. 
+In the following example you need to take the scope and group SID from the error message, and add it the templated command above. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 for scope:397c326b-b97c-4510-8271-75aac13de7a9. Expected:1 and Actual:0 
 ```
 
-The final command will look like:
+The final command will look similar to the following:
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
+
 #### Project Collection Administrators error message
 
-Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the below commands against TFSSecurity.exe after replacing the scope with the one from the error message and adding in your collection.
+Carefully examine the error message(s) the data migration tool highlighted. If the group that was flagged ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the "Project Collection Administrators" group. Run the following commands against **TFSSecurity.exe** after replacing the scope with the one from the error message and adding in your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -119,7 +131,8 @@ TFSSecurity.exe /a+ Identity "{scope}\\" Delete sid:{Group SID} ALLOW /collectio
 
 TFSSecurity.exe /a+ Identity "{scope}\\" ManageMembership sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
-In the below example you will need to take the scope and group SID from the error message, and add it the templated command above. 
+
+In the following example you need to take the scope and group SID from the error message, and add it the templated command above. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 for scope:0c7c2216-fa4b-4107-a203-82b324a147ef. Expected:15 and Actual:0 
@@ -136,12 +149,13 @@ TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid
 
 TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
-If you have multiple errors that need to be corrected, it's recommended that you put all of the commands into a batch file to execute them against TFSSecurity in an automated fashion. Once the commands have been executed you will need to run the data migration tool validate again to ensure that the error(s) has\have been corrected. If the error(s) still persists, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+
+If you have multiple errors that need correcting, we recommend that you create a batch file to execute the commands against TFSSecurity in an automated fashion. Once the commands have been executed you need to rerun the data migration tool validate to ensure that the errors are resolved. If the error(s) still persists, please contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ### ISVError:300005
 
 > [!IMPORTANT]
-> Ensure that you have a backup of your collection and configuration databases before running the below commands to fix this error. 
+> Ensure that you have a backup of your collection and configuration databases before running the following commands to fix this error. 
 
 ISVError:300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members. In the case of ISVError:300005, a non-Azure DevOps security group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
 
