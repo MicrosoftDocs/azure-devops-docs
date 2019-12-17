@@ -28,6 +28,8 @@ ms.date: 12/16/2019
 
 This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
 
+<a id="validate-collection" />
+
 ## Validate a collection
 
 Now that you've confirmed you're on the latest version of Azure DevOps Server, your next step is to validate each collection that you want to migrate to Azure DevOps Services. 
