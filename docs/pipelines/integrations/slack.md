@@ -113,16 +113,16 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and pipelines from a channel
 
-- Many a time, users want to push notifications from different projects into separate channels. To help clean up a channel quickly, use the below command.
+- Many a time, users want to clean up their channel by removing pipelines and subscriptions. Use the below command to achieve the same.
 
 	```
-	/azpipelines removeAll [project url]
+	/azpipelines unsubscribe all [project url]
 	```
 
 	For example:
 
 	```
-	/azpipelines removeAll  https://dev.azure.com/myorg/myproject
+	/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
 	```
 This command will delete all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. Only project admins can run this command.
 
