@@ -292,7 +292,7 @@ let
             &"/groupby( "
                 &"(PipelineRunCompletedOn/Date, PipelineJob/JobName ), "
             &"aggregate "
-        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount)) "
+        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -315,7 +315,7 @@ $apply=filter(
 /groupby(
     (PipelineRunCompletedOn/Date, PipelineJob/JobName ),
     aggregate
-(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))
+(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount))
 ```
 
 ***
