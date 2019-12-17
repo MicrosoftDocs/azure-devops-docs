@@ -163,6 +163,18 @@ A Teams channel can only link to one Azure Boards project at a time. To link to 
 
 Unlinking a project deletes all the subscriptions along with added area paths from the channel. If the channel has no subscriptions, any user can unlink a project. However if a channel has subscriptions, only project admins can unlink a project from a channel.
 
+## Threaded notifications
+
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item will be linked together.
+
+### Compact view of threaded notifications
+
+> [!div class="mx-imgBorder"]
+> ![Compact thread](./_img/integrations-teams/threads-boards-compact-view.png)
+
+### Expanded view of threaded notifications
+> [!div class="mx-imgBorder"]
+> ![Expanded thread](./_img/integrations-teams/threads-boards-expanded-view.png)
 
 ## Command reference
 
