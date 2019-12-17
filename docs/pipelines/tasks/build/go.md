@@ -9,7 +9,7 @@ ms.assetid: 34B37FDD-BBF7-4EF1-B37C-9652CA7BB355
 ms.manager: mijacobs
 ms.author: shasb
 author: shashankbarsin
-ms.date: 05/04/2018
+ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -29,14 +29,30 @@ Use this task in a build or release pipeline to get, build, or test a go applica
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Command</td><td>(Required) Select a Go command to run. Select &#39;Custom&#39; to use a command not listed here.</td></tr>
-<tr><td>Custom command</td><td>(Required) Custom Go command for execution. For example: to execute go version, enter version.</td></tr>
-<tr><td>Arguments</td><td>(Optional) Arguments to the selected command. For example, build time arguments for go build command.</td></tr>
-<tr><td>Working Directory</td><td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-
+<table>
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>command</code><br/>Command</td>
+      <td>(Required) Select a Go command to run. Select &#39;Custom&#39; to use a command not listed here.<br/>Default value: get</td>
+   </tr>
+   <tr>
+      <td><code>customCommand</code><br/>Custom command</td>
+      <td>(Required) Custom Go command for execution. For example: to execute go version, enter version.</td>
+   </tr>
+   <tr>
+      <td><code>arguments</code><br/>Arguments</td>
+      <td>(Optional) Arguments to the selected command. For example, build time arguments for go build command.</td>
+   </tr>
+   <tr>
+      <td><code>workingDirectory</code><br/>Working Directory</td>
+      <td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td>
+   </tr>
+   [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Open source
