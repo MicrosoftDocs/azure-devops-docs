@@ -376,7 +376,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
+3. [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
@@ -626,7 +626,7 @@ After installing Storage Explorer you can complete the following steps to genera
 
 ![Connect a new storage account](_img/migration-import/StorageExplorerAddAccount.png)
 
-* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account#manage-your-storage-account-keys), and connect
+* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and connect
 
 ![Enter information about the storage account to connect](_img/migration-import/StorageExplorerConnectAccount.png)
 
