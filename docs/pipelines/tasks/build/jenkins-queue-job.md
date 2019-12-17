@@ -9,7 +9,7 @@ ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/30/2016
+ms.date: 12/17/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -40,62 +40,70 @@ None
 ## Arguments
 
 <table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tr>
-<td>Jenkins service connection</td>
-<td>
-<p>Select the service connection for your Jenkins instance.  To create one, click <strong>Manage</strong> and create a new Jenkins service connection.</p>
-</td>
-</tr>
-
-<tr>
-<td>Job name</td>
-<td>
-<p>The name of the Jenkins job to queue.  This must exactly match the job name on the Jenkins server.</p>
-</td>
-</tr>
-
-<tr>
-<td>Capture console output and wait for completion</td>
-<td>
-<p>If selected, this task will capture the Jenkins build console output, wait for the Jenkins build to complete, and succeed/fail based on the Jenkins build result.  Otherwise, once the Jenkins job is successfully queued, this task will successfully complete without waiting for the Jenkins build to run.</p>
-</td>
-</tr>
-
-<tr>
-<td>Capture pipeline output and wait for pipeline completion</td>
-<td>
-<p>This option is similar to capture console output except it will capture the output for the entire Jenkins pipeline, wait for completion for the entire pipeline, and succeed/fail based on the pipeline result.</p>
-</td>
-</tr>
-
-<tr>
-<td>Parameterized job</td>
-<td>
-<p>Select this option if the Jenkins job requires parameters.</p>
-</td>
-</tr>
-
-<tr>
-<td>Job parameters</td>
-<td>
-<p>This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b><p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b><p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.<p>Supported Jenkins parameter types are: <ul><li>Boolean</li><li>String</li><li>Choice</li><li>Password</li></ul></p>
-</td>
-</tr>
-
-<tr>
-<td>Trust server certificate</td>
-<td>
-<p>Selecting this option results in the Jenkins server&#39;s SSL certificate being trusted even if it is self-signed or cannot be validated by a Certificate Authority (CA).
-</td>
-</tr>
-
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>serverEndpoint</code><br/>Jenkins service connection</td>
+      <td>
+         <p>(Required) Select the service connection for your Jenkins instance.  To create one, click <strong>Manage</strong> and create a new Jenkins service connection.</p>
+      </td>
+   </tr>
+   <tr>
+      <td><code>jobName</code><br/>Job name</td>
+      <td>
+         <p>(Required) The name of the Jenkins job to queue.  This must exactly match the job name on the Jenkins server.</p>
+      </td>
+   </tr>
+   <tr>
+      <td><code>isMultibranchJob</code><br/>Job is of multibranch pipeline type</td>
+      <td>
+         <p>(Optional) This job is of multibranch pipeline type.  If selected, enter the appropriate branch name. Requires Team Foundation Server Plugin for Jenkins v5.3.4 or later</p><br/>Default value: false
+      </td>
+   </tr>
+   <tr>
+      <td><code>multibranchPipelineBranch</code><br/>Multibranch pipeline branch</td>
+      <td>
+         <p>(Required) Queue this multibranch pipeline job on the specified branch. This requires Team Foundation Server Plugin for Jenkins v5.3.4 or later</p>
+      </td>
+   </tr>
+   <tr>
+      <td><code>captureConsole</code><br/>Capture console output and wait for completion</td>
+      <td>
+         <p>(Required) If selected, this task will capture the Jenkins build console output, wait for the Jenkins build to complete, and succeed/fail based on the Jenkins build result.  Otherwise, once the Jenkins job is successfully queued, this task will successfully complete without waiting for the Jenkins build to run.</p><br/>Default value: true
+      </td>
+   </tr>
+   <tr>
+      <td><code>capturePipeline</code><br/>Capture pipeline output and wait for pipeline completion</td>
+      <td>
+         <p>(Required) This option is similar to capture console output except it will capture the output for the entire Jenkins pipeline, wait for completion for the entire pipeline, and succeed/fail based on the pipeline result.</p><br/>Default value: true
+      </td>
+   </tr>
+   <tr>
+      <td><code>parameterizedJob</code><br/>Parameterized job</td>
+      <td>
+         <p>(Required) Select if the Jenkins job accepts parameters. This should be selected even if all default parameter values are used and no parameters are actually specified.</p><br/>Default value: false
+      </td>
+   </tr>
+   <tr>
+      <td><code>jobParameters</code><br/>Job parameters</td>
+      <td>
+         <p>(Optional) This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b>
+         <p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b>
+         <p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.
+         <p>Supported Jenkins parameter types are: 
+         <ul>
+            <li>Boolean</li>
+            <li>String</li>
+            <li>Choice</li>
+            <li>Password</li>
+         </ul>
+         </p><br/>Argument aliases: <code>isParameterizedJob</code>
+      </td>
+   </tr>
 </table>
 
 ## Team Foundation Server Plug-in
