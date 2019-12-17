@@ -152,6 +152,21 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a Team.
 
+## Remove subscriptions and repositories from a channel
+
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+
+	```
+	@azure repos unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	@azure repos unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
+
 ## Command reference
 
 The following table lists all the Azure repos commands you can use in your Teams channel.
