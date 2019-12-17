@@ -47,7 +47,7 @@ The project URL can be to any page within your project (except URLs to pipelines
 For example:
 
 ```
-/azpipelines subscribe https://dev.azure.com/myorg/myproject/
+@azure pipelines subscribe https://dev.azure.com/myorg/myproject/
 ```
 
 You can also monitor a specific pipeline using the following command:
