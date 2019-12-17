@@ -7,7 +7,7 @@ description: Connect and monitor your pipelines in Azure Pipelines to Slack by s
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 09/24/2019
+ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
  
@@ -36,6 +36,7 @@ To start monitoring all pipelines in a project, use the following slash command 
 ```
 /azpipelines subscribe [project url]
 ```
+
 The project URL can be to any page within your project (except URLs to pipelines).
 
 For example:
@@ -50,7 +51,7 @@ You can also monitor a specific pipeline using the following command:
 /azpipelines subscribe [pipeline url]
 ```
 
-The pipeline URL can be to any page within your pipeline that has the `definitionId` or `buildId/releaseId`.  
+The pipeline URL can be to any page within your pipeline that has `definitionId` or `buildId/releaseId` in the URL.  
 
 For example:
 
@@ -126,7 +127,7 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and pipelines from a channel
 
-- Many a time, users want to clean up their channel by removing pipelines and subscriptions. Use the below command to achieve the same.
+- You want to clean up your channel by removing pipelines and subscriptions. Use the following commands to unsubscribe from all pipelines within a project.
 
 	```
 	/azpipelines unsubscribe all [project url]
@@ -137,12 +138,16 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 	```
 	/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
 	```
-This command will delete all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. Only project admins can run this command.
+
+This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
+
+> [!IMPORTANT] 
+> Only project administartors can run this command.
 
 
 ## Threaded notifications
 
-- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular run of a pipeline will be linked together.
+To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular run of a pipeline will be linked together.
 
 ### Compact view of threaded notifications
 
@@ -150,6 +155,7 @@ This command will delete all the subscriptions related to any pipeline in the pr
 > ![Compact thread](./_img/integrations-teams/threads-pipelines-compact-view.png)
 
 ### Expanded view of threaded notifications
+
 > [!div class="mx-imgBorder"]
 > ![Expanded thread](./_img/integrations-teams/threads-pipelines-expanded-view.png)
 
