@@ -138,6 +138,21 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
+## Remove subscriptions and repositories from a channel
+
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+
+	```
+	/azrepos unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	/azrepos unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
+
 ## Command reference
 
 The following table lists all the `/azrepos commands` you can use in your Slack channel.
