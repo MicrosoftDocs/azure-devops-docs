@@ -62,7 +62,7 @@ access policies for your organization](../../organizations/accounts/change-appli
     > [!div class="mx-imgBorder"]
     > ![Sign in prompt image ](./_img/integrations-slack/sign-in.png)
 
-2.	To start monitoring all repositories in a project, use the following slash command inside a channel:
+2.	To start monitoring all Git repositories in a project, use the following slash command inside a channel:
 
     ```
     /azrepos subscribe [project url]
