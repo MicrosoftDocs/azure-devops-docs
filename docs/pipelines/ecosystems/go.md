@@ -8,9 +8,9 @@ ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.reviewer: dastahel
+ms.reviewer: shashankbarsin
 ms.custom: seodec18
-ms.date: 04/24/2019
+ms.date: 12/16/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,17 +18,47 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-This guidance explains how to automatically build and test Go projects.
+Use a pipeline to automatically build and test your Go projects.
 
-## Example
+## Create your first pipeline
 
-The following code is a simple Go project. To get started, fork this repo in GitHub, or import it into Azure Repos.
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+Import this repo into your Git repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-go
 ```
 
-Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a pipeline for the sample app. When you're done with that topic, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that you can continue to modify by following the instructions in this topic. To learn more about YAML, see [YAML schema reference](../yaml-schema.md).
+## Sign in to Azure Pipelines
+
+[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](_shared/create-project.md)]
+
+## Create the pipeline
+
+[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Go**. 
+
+7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+
+8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Go](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/go.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+See the sections below to learn some of the more common ways to customize your pipeline.
+
 
 > [!Tip]
 > To make changes to the YAML file as described in this topic, select the pipeline in **Pipelines** page, and then select **Edit** to open an editor for the `azure-pipelines.yml` file.
@@ -41,7 +71,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest'
 ```
 
 Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact versions of Go that are pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md#software).
@@ -59,7 +89,7 @@ When an Azure Pipelines build fetches code from a remote repository, it places t
 ```yaml
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
-  GOROOT: '/usr/local/go1.11' # Go installation path
+  GOROOT: '/usr/local/go1.13' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
@@ -69,10 +99,22 @@ steps:
     mkdir -p '$(GOPATH)/pkg'
     mkdir -p '$(modulePath)'
     shopt -s extglob
+    shopt -s dotglob
     mv !(gopath) '$(modulePath)'
     echo '##vso[task.prependpath]$(GOBIN)'
     echo '##vso[task.prependpath]$(GOROOT)/bin'
   displayName: 'Set up the Go workspace'
+
+- script: |
+    go version
+    go get -v -t -d ./...
+    if [ -f Gopkg.toml ]; then
+        curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+        dep ensure
+    fi
+    go build -v .
+  workingDirectory: '$(modulePath)'
+  displayName: 'Get dependencies, then build'
 ```
 
 If your code is not in GitHub, change the `modulePath` variable's use of `github.com` to an appropriate value for your module.
