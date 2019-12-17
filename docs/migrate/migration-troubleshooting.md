@@ -87,13 +87,13 @@ This warning **DOES NOT** mean that you can't import your collection.
 
 This warning requires you to acknowledge acceptance of the warning. Accepting the warning allows the data migration tool to continue import preparations.  
 
-When a non-supported collation is imported into Azure DevOps Services, it is effectively transformed to the supported Azure DevOps Services collation. While this transform generally works without issue, unexpected results can be observed post import or the import could fail if the import encounters a unique collation translation issue. 
+When you import a non-supported collation into Azure DevOps Services, the collation is transformed to a supported collation. While this transform generally works without issue, unexpected results post import or import failures could occur.  
 
 For instance, customers may notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after import. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
 ### No native support, no internet connection
 
-If the data migration tool can't connect to the internet, it can't validate that your collation can be converted to one of the supported versions. It's only a warning, so you can continue with your migration process. However, when you run the **prepare** command, an internet connection is required and your collation is validated at that time.
+If the data migration tool can't connect to the internet, it can't validate conversion of your collation. It's only a warning, so you can continue with your migration process. However, when you run the **prepare** command, an internet connection is required and collation conversion is validated at that time.
 
 ```cmdline
 The collections database's collation '{collation}' is not natively supported in Azure DevOps Services. It could not be validated that the collation can be converted during import to a supported Azure DevOps Services collation, as there was no internet connection. Please run the command again from a machine with an internet connection. See more details at https://aka.ms/AzureDevOpsImportCollations
@@ -145,7 +145,7 @@ TFSSecurity.exe /a+ Identity "397c326b-b97c-4510-8271-75aac13de7a9\\" Read sid:S
 
 #### Project Collection Administrators error message
 
-Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe** after replacing the scope with the one from the error message and adding in your collection.
+Carefully examine the error message(s) the data migration tool highlighted. If the flagged group that ends with "**0-0-0-0-1**", such as in the example below, then you will need to fix a missing permission for the **Project Collection Administrators** group. Run the following commands against **TFSSecurity.exe**, replace the scope with the one from the error message and specify your collection.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
@@ -175,11 +175,11 @@ TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" Delete sid
 TFSSecurity.exe /a+ Identity "0c7c2216-fa4b-4107-a203-82b324a147ef\\" ManageMembership sid:S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-1 ALLOW /collection:https://localhost:8080/defaultcollection
 ```
 
-If you have multiple errors that need correcting, we recommend that you create a batch file to execute the commands against **TFSSecurity** in an automated fashion. Once you've executed the commands, you need to rerun the data migration **validate** tool to verify resolution. If some errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+When you need to correct  multiple errors, we recommend that you create a batch file to automate execution of the commands. Once you've executed the commands, you need to rerun the data migration **validate** tool to verify resolution. If some errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ### ISVError: 300005
 
-ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are created by default for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members. In the case of ISVError: 300005, a non-Azure DevOps security group identity, such as an AD group or user identity, has a direct membership in a Valid Users group. 
+ISVError: 300005 indicates that a non-group identity is a member of an everyone group, more commonly known as the Valid Users groups. Valid Users groups are default groups defined for all projects and collections. They're non-editable groups that only contain other Azure DevOps security groups as members.This error indicates that an AD group or user identity has a direct membership in a Valid Users group. 
 
 > [!IMPORTANT]
 > Ensure that you have a backup of your collection and configuration databases before running the following commands to resolve the error. 
@@ -227,11 +227,11 @@ On rare occasions, you may receive an Azure Active Directory (Azure AD) timeout 
 Exception Message: Request failed (type AadGraphTimeoutException)
 ```
 
-This error means that the requests to Azure AD to find the matching Azure AD identities for users in your collection timed out. Generally, this error can be resolved by waiting to run the prepare command at a less busy time of the day. Such as after regular business hours. 
+This error means that the requests to Azure AD to find the matching Azure AD identities for users in your collection timed out. Generally, you can resolve this error by waiting to run the **prepare** command at a less busy time of the day, such as after regular business hours. 
 
-In the event that the error continues there are few troubleshooting steps which should be undertaken. First, you will want to test your connection to Azure AD from the machine running the prepare command. Follow the below steps and see if you can retrieve information on a user in your Azure AD. 
+In the event that the error continues, you should undertake a few troubleshooting steps. First, you will want to test your connection to Azure AD from the machine running the **prepare** command. Execute the following steps to retrieve information on a user in your Azure AD. 
 
-Open PowerShell in elevated mode and add replace 'someone@somecompany.com' below with a user you expect to be present in your company's Azure AD.
+Open PowerShell in elevated mode and replace 'someone@somecompany.com' in the following command with your Azure AD user identity.  
 
 ```PowerShell
 //Install the AzureAD PowerShell module - ensuring to select Yes to All
@@ -247,15 +247,14 @@ Connect-MsolService
 Get-MsolUser -UserPrincipalName someone@somecompany.com
 ```
 
-If any of the above steps fail or you're unable to look up a user's identity, that's a strong indication that a connection issue exists between the machine running the prepare command and Azure AD. You should run a network trace while executing the **prepare** command to ensure that nothing within your network is intefering with calls  reaching Azure AD. If you've confirmed that the problem is not with your network, reach out to Azure support for assistance with troubleshooting. 
- 
-If you are able to retrieve user information, open your log file from the prepare attempt and look for a line similar to the following entry. 
+If any of the above steps fail or you're unable to look up a user's identity, a connection issue may exist between the machine running the **prepare** command and Azure AD. Run a network trace while executing the **prepare** command to ensure that nothing within your network is interfering with calls reaching Azure AD. If you've confirmed that the problem isn't with your network, contact Azure support for assistance with troubleshooting. 
+If you're able to retrieve user information, open your log file from the **prepare** attempt and look for a line similar to the following entry. 
 
 ```cmdline
 Number of active users is {Number of Users}.
 ```
 
-If this number is in the high five-digits or even six-digits ranges, it could indicate that the volume of identities being mapped require more time than the timeout limit provides. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
+If this number is in the high five-digits or even six-digits ranges, it may indicate that the volume of identities being mapped requires more time than the timeout limit provides. Inspect your collection for inclusions of large AD groups such as an 'everyone' group. If possible, remove these groups and try again. If you still can't resolve this error, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport).
 
 ## Resolve process errors
 
@@ -331,7 +330,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/DefaultCollect
 
 Hit a failure when running your import? Failures in the import space fall into one of two categories. 
 - Verification failures occur when the import fails to start. This failure indicates that the data migration tool attempted to queue an import, but returned an error instead. 
-- Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import received a failure email when this occurs. 
+- Import failures happen when the import was queued successfully in the data migration tool, but failed after that point. The individual that queued the import receives a failure email. 
 
 ### Verification failures
 
@@ -367,7 +366,7 @@ VS403250: The dacpac is not a detached Azure DevOps Server Collection database.
 VS403286: The dacpac is from a Azure DevOps Server Configuration database. You must use a detached Azure DevOps Server Collection database.
 ```
 
-You need to [detach](migration-import.md#detach-your-collection) your collection database and generate the DACPAC again.
+[Detach](migration-import.md#detach-your-collection) your collection database and generate the DACPAC again.
 
 **VS403243**
 
@@ -388,7 +387,7 @@ VS403260: The database is not detached.
 VS403351: The DACPAC or source database is missing an expected table. It's possible that the database was not correctly detached from Azure DevOps Server.
 ```
 
-You need to [detach](migration-import.md#detach-your-collection) your collection database and retry the import queue.  
+[Detach](migration-import.md#detach-your-collection) your collection database and retry the import queue.  
 
 **VS403261**
 
@@ -486,7 +485,7 @@ Inconsistencies were detected in some TFVC files within your collection.
 VS403316: An inconsistency was detected in some TFVC files for this collection. The inconsistency needs to be corrected prior to running an import to Azure DevOps Services. Please reach out to https://aka.ms/AzureDevOpsImportSupport for assistance with addressing this issue.
 ```
 
-You need to work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they'll work with you to resolve the error. 
+Work with Azure DevOps Services [customer support](https://aka.ms/AzureDevOpsImportSupport). Open a support ticket and they'll work with you to resolve the error. 
 
 **VS403366**
 
@@ -504,15 +503,15 @@ The IPs that the error message lists are for Azure DevOps Services. Azure DevOps
 
 **VS403373**
 
-The data migration tool doesn't support importing multiple copies of the **SAME** collection. However, it **DOES** support importing **split** copies of a collection. What you need to do is change the GUID for the **_DataImportCollectionID_**.
+The data migration tool doesn't support importing multiple copies of the **SAME** collection. However, it **DOES** support importing **split** copies of a collection. Change the GUID for the **_DataImportCollectionID_**.
 
-From SQL Server Management Studio (SSMS) open the extended properties for the split copies that you haven't  imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then re-run the **prepare** command and use the new **import.json** file to queue the import.
+From SQL Server Management Studio (SSMS), open the extended properties for the split copies that you haven't  imported yet. Add a newly generated GUID to the "TFS_DATAIMPORT_COLLECTIONID" property. Then rerun the **prepare** command and use the new **import.json** file to queue the import.
 
 ### Import failures
 
 When an import fails, the individual that queued the import receives an email notification. Most of the time this email includes a reason for the failure. If it does, use the troubleshooting steps provided in the email and this page to resolve the errors and retry your import. 
 
-If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. This allows your team members to continue working. It's recommended not to attempt the import again until the failure causing issue is resolved. 
+If the error is more complex, then the email you receive provides instructions on how to file a [customer support case](https://aka.ms/AzureDevOpsImportSupport). After submitting a customer support case, your team will need to roll back by bringing your Azure DevOps Server instance back online and reattach your collection. Your team members can then continue working. We recommended you not attempt the import again until the failure causing issue is resolved. 
  
 
 ## Related articles
