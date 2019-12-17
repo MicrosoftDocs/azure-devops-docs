@@ -144,11 +144,13 @@ The following table lists all the `/azrepos commands` you can use in your Slack 
 
 |Slash command	| Functionality |
 | -------------------- |----------------|
-| /azrepos subscribe [repository url]	| Subscribe to a repository to receive notifications |
+| /azrepos subscribe [repository url/ project url]	| Subscribe to a repository or all repositories in a project to receive notifications |
 | /azrepos subscriptions	| Add or remove subscriptions for this channel |
 | /azrepos signin	| Sign in to your Azure Repos organization |
 | /azrepos signout	| Sign out from your Azure Repos organization |
 | /azrepos feedback	| Report a problem or suggest a feature |
+| /azrepos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+
 
 ### Notifications in Private channels
 
