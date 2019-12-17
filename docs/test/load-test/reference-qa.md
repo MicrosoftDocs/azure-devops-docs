@@ -284,7 +284,7 @@ portal, one of the following criteria must be satisfied:
 ### Q: Where can I check how much test time I've used so far?
 
 **A**: You can check this in the Azure Portal. For details, see
-[Manage pricing and data volume in Application Insights](/azure/application-insights/app-insights-pricing#review-pricing-plans-and-estimate-costs).
+[Manage pricing and data volume in Application Insights](/azure/application-insights/app-insights-pricing#understand-your-usage-and-estimate-costs).
 
 ### Q: What is the default option and are my existing tests impacted?
 
