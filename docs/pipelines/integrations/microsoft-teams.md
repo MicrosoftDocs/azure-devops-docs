@@ -37,7 +37,20 @@ Once the app is installed in your team, you can connect the app to the pipelines
 > ![Sign in prompt image2 ](_img/integrations-teams/sign-in2-teams.png)
 
 
-To start monitoring a pipeline, use the following slash command inside a channel:
+To start monitoring all pipelines in a project, use the following slash command inside a channel:
+
+```
+@azure pipelines subscribe [project url]
+```
+The project URL can be to any page within your project (except URLs to pipelines).
+
+For example:
+
+```
+/azpipelines subscribe https://dev.azure.com/myorg/myproject/
+```
+
+You can also monitor a specific pipeline using the following command:
 
 ```
 @azure pipelines subscribe [pipeline url]
