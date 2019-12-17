@@ -116,7 +116,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#move" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move)">move the work item to a different project</a>. </p>
+<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/_img/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/_img/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -140,7 +140,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#change-type" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md#change-type)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
