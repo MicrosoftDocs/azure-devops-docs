@@ -127,7 +127,8 @@ The app supports all of the checks and approval scenarios present in the Azure P
 
 To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline id or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
-![Pic: URL unfurling](./_img/integrations-teams/compose-extension.png)
+> [!div class="mx-imgBorder"]
+> ![URL unfurling](./_img/integrations-teams/compose-extension.png)
 
 
 ## Previews of pipeline URLs
@@ -135,10 +136,10 @@ To help users search and share information about pipelines, Azure Pipelines app 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate. Users can choose between compact and expanded cards.
 
 > [!div class="mx-imgBorder"]
-![Pic: URL unfurling](./_img/integrations-teams/build-url-unfurling-teams.png)
+> ![URL unfurling](./_img/integrations-teams/build-url-unfurling-teams.png)
 
 > [!div class="mx-imgBorder"]
-![Pic: URL unfurling](./_img/integrations-teams/release-url-unfurling-teams.png)
+> ![URL unfurling](./_img/integrations-teams/release-url-unfurling-teams.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
 
