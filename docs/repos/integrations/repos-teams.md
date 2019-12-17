@@ -136,6 +136,13 @@ The following steps demonstrate how to customize subscriptions.
 > * All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
 > * For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
 
+## Search and share pipeline information using compose extension
+
+To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline id or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running @azure pipelines signin command or by signing into the compose extension directly.
+
+> [!div class="mx-imgBorder"]
+> ![Compose extension](./_img/integrations-teams/Teams Repos Compose Extension.png)
+
 ## Previews of pull request URLs
 
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
