@@ -66,7 +66,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
-2. To start monitoring all repositories in a project, use the following slash command inside a channel:
+2. To start monitoring all Git repositories in a project, use the following slash command inside a channel:
 
    ```
    @azure repos subscribe [project url]
