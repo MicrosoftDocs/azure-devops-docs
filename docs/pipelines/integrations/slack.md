@@ -165,7 +165,7 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/consent-page-slack.png)
 
-If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsSlackApps@microsoft.com`.
+If these steps don't resolve your authentication issue, please reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 - [Azure Boards with Slack](https://aka.ms/AzureBoardsSlackIntegration)
