@@ -52,6 +52,31 @@ These are the key benefits of this task:
 
 ## Deploy action
 
+<p>Test paragraph 1.</p>
+
+<p>Test paragraph 2.</p>
+
+<p>Test paragraph 3.</p>
+
+Test line 1.
+<br/>
+Test line 2.
+<br/>
+<br/>
+Test line 3.
+
+<pre>
+Test pre line 1.
+Test pre line 2.
+Test pre line 3.
+</pre>
+
+<code>Test code line 1.</code>
+<br/>
+<code>Test code line 2.</code>
+<br/>
+<code>Test code line 3.</code>
+
 <table>
   <thead>
     <tr>
@@ -86,12 +111,6 @@ These are the key benefits of this task:
     <td>
     Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
     <br/>
-    <p>
-    Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
-    </p>
-    <p>
-    Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
-    </p>
     <br/>
     Here's an example:
     <br/>
@@ -99,14 +118,6 @@ These are the key benefits of this task:
     <br/>
     <code>&nbsp&nbspcontosodemo.azurecr.io/bar:test2</code>
     <br/>
-    <br/>
-    Here's an example:
-    <br/>
-    <pre>
-    containers: |
-    &nbsp&nbspcontosodemo.azurecr.io/foo:test1
-    &nbsp&nbspcontosodemo.azurecr.io/bar:test2
-    </pre>
     <br/>
     In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For the matches found, the tags <code>test1</code> and <code>test2</code> are substituted.</td>
   </tr>
