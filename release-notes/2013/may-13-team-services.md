@@ -42,7 +42,7 @@ We also updated the site to use sentence casing (the first letter of the first w
 
 ## Navigation
 
-Three small updates were made to our navigation across the site. First, notice that the task board navigation hub has been moved from the top level down to the iteration. A side effect of this change is that you can now view a task board for past and future iterations, not just the current iteration (I can hear some of you cheering as you read this). This was a [very popular item](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2901542-ability-to-view-task-board-for-past-sprints) on our UserVoice site and I’m happy to report that it’s marked as completed!
+Three small updates were made to our navigation across the site. First, notice that the task board navigation hub has been moved from the top level down to the iteration. A side effect of this change is that you can now view a task board for past and future iterations, not just the current iteration (I can hear some of you cheering as you read this). This was a very popular item on our UserVoice site and I’m happy to report that it’s marked as completed!
 
 ![Navigation](_img/5_13_05.png)
 
