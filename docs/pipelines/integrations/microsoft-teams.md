@@ -129,6 +129,22 @@ When a user pastes a pipeline URL, a preview is shown similar to that in the fol
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
 
+
+## Remove subscriptions and pipelines from a channel
+
+- Many a time, users want to clean up their channel by removing pipelines and subscriptions. Use the below command to achieve the same.
+
+	```
+	@azure pipelines unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. Only project admins can run this command.
+
 ## Commands reference
 
 Here are all the commands supported by the Azure Pipelines app:
