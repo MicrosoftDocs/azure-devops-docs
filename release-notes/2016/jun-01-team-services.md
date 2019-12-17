@@ -76,7 +76,7 @@ In the Web runner when using Chrome, you can now take screenshots and annotate t
 
 ### Ordering of tests in Test Hub
 
-You can now order manual tests from within the Test Hub, irrespective of the type of suite in which they’re included. You can simply drag and drop one or more tests or use the context menu to reorder tests. Once the ordering is completed, you can sort your tests by the Order field and then run them in that order from the Web runner. You can also order the tests directly on a user story card on the Kanban board. This completes one of the long-pending [user voice items](https://visualstudio.uservoice.com/forums/330519-vso/suggestions/4147125-enable-changing-the-order-of-test-cases-on-the-web) (with 495 votes) under manual testing.
+You can now order manual tests from within the Test Hub, irrespective of the type of suite in which they’re included. You can simply drag and drop one or more tests or use the context menu to reorder tests. Once the ordering is completed, you can sort your tests by the Order field and then run them in that order from the Web runner. You can also order the tests directly on a user story card on the Kanban board. This completes one of the long-pending user voice items (with 495 votes) under manual testing.
 
 ![Ordering tests](_img/6_01_06.png)
 

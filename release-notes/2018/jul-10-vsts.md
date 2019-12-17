@@ -90,7 +90,7 @@ See the [Set branch permissions](/azure/devops/git/branch-permissions?view=azure
 
 ### Link to headings within a page
 
-Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/33012745-wiki-link-to-headings).
+Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki heading URL](_img/137_03.png)
@@ -104,7 +104,7 @@ All links in a wiki that are not linked properly will appear in a distinct red c
 
 ### Attach files and images in folders
 
-While editing wiki pages offline it can be easier to add file attachments and images in the same directory as the wiki page. Now, you can add an attachment or an image in any folder in the wiki and link it to your page. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/33308998-allow-attachments-in-folders-of-wiki).
+While editing wiki pages offline it can be easier to add file attachments and images in the same directory as the wiki page. Now, you can add an attachment or an image in any folder in the wiki and link it to your page. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki image in git repo folder](_img/137_08.png)
