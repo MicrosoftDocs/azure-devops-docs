@@ -9,16 +9,15 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 12/17/2019
 ---
 
 # Use the combo control
 
-This article shows different samples about the combo control. There are TypeScript and JavaScript examples. 
+This article shows samples about the combo control. There are TypeScript and JavaScript examples. 
 
-For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
-
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+> [!TIP]
+> Check out our newest developer site, [Formula Design System](https://developer.microsoft.com/azure-devops).
 
 ## How to organize your code
 
@@ -53,6 +52,8 @@ Ensure that the `VSS.SDK.js` file is inside the `sdk/scripts` folder so that the
 Put the following code snippets into a `main.js` file in a `scripts` folder, so that the path is `home/scripts/main.js`. 
 
 ## Combos
+
+For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
 
 <a name="list"></a>
 
@@ -379,3 +380,5 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 <div align="center" style="padding-top:15px">
 <img alt="Basic multivalue combo gif" src="_img/multivalue_combo.gif" /> 
 </div>
+
+
