@@ -751,7 +751,7 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
 * [Analyzing Load Test results](https://devblogs.microsoft.com/devops/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports/)
 * [Data driven Load Tests with VSO and SQL Azure](https://devblogs.microsoft.com/devops/data-driven-load-tests-using-visual-studio-online-and-sql-azure/)
-* [Driving Unit Tests from Cloud-based Load test](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/08/01/driving-unit-tests-from-cloud-load-test.aspx)
+* [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
 * [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
 * [A Web Performance Test primer](https://blogs.msdn.microsoft.com/edglas/archive/2010/03/24/web-test-authoring-and-debugging-techniques-for-visual-studio-2010.aspx)
 * [Managing Load Test results](https://blogs.msdn.microsoft.com/slumley/archive/2007/06/14/managing-load-test-results.aspx)
@@ -768,7 +768,7 @@ To fix this problem, create another load test. Delete the failed test run.
 **Case Studies**
 
 * [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
-* [NORAD Tracks Santa](https://blogs.msdn.microsoft.com/visualstudioalm/archive/2014/01/23/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website.aspx)
+* [NORAD Tracks Santa](https://devblogs.microsoft.com/devops/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website/)
 
 **Blogs and other references**
 
