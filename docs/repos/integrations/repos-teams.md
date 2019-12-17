@@ -180,6 +180,19 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 	```
 This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
 
+## Threaded notifications
+
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular run of a pipeline will be linked together.
+
+Compact view of threaded notifications
+
+> [!div class="mx-imgBorder"]
+> ![Compact thread](./_img/integrations-teams/threads-pipelines-compact-view.png)
+
+Expanded view of threaded notifications
+> [!div class="mx-imgBorder"]
+> ![Expanded thread](./_img/integrations-teams/threads-pipelines-expanded-view.png)
+
 ## Command reference
 
 The following table lists all the Azure repos commands you can use in your Teams channel.
