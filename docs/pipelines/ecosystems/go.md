@@ -175,7 +175,7 @@ Use `go test` to test your go module and its subdirectories (`./...`). Add the f
 
 ## Build an image and push to container registry
 
-For your Go app, you can also [build an image](containers/build-image.md) and [[push it to a container registry](containers/push-image.md).
+For your Go app, you can also [build an image](containers/build-image.md) and [push it to a container registry](containers/push-image.md).
 
 ## Related extensions
 
