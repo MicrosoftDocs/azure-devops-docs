@@ -142,7 +142,7 @@ The import specification, ```import.json```, is a JSON file which provides impor
 
 ![Newly generated import specification file](_img/migration-import/importSpecNotFilledOut.png)
 
-Here is the breakdown of the fields and what action needs to be taken:
+The following table describes the fields and actions you need to take.
 
 |    Field              |    Explanation                                                                                             |    Action                                                                                                                                                                                                                                 |
 |--------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ In this case, the user planning the Fabrikam import added the organization name 
 
 <a id="supported-azure-regions-for-import"></a>
 
-### Supported Azure Regions for Import
+### Supported Azure regions for import
 
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/). However, not all Azure regions that Azure DevOps Services is present in are supported for import. The following table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
  
@@ -236,7 +236,7 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 
 In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
 
-#### Historical identities (Small Teams) 
+#### Historical identities (small teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
 
@@ -393,6 +393,8 @@ Below are some additional recommended configurations for your SQL Azure VM.
 3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+
+<a id="ips" />
 
 #### Azure DevOps Services IPs 
 
