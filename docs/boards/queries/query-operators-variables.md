@@ -305,22 +305,22 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
     <td><strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&amp;gt;=<xref href="StartOfDay-7" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
+    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or with a plus/minus offset. For example, you can find all items closed in the last week with the clause <code>Closed Date&gt;=<xref href="StartOfDay-7" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
 <tr>
     <td><strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause <code>Created Date&amp;gt;=<xref href="StartOfMonth-3" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth-3"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
+    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current month or with a plus/minus offset. For example, you can find all items created in the last 3 months with the clause <code>Created Date&gt;=<xref href="StartOfMonth-3" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth-3"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
 <tr>
     <td><strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&amp;gt;=<xref href="StartOfWeek-2" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek-2"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
+    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current week or with a plus/minus offset. For example, you can find all items changed in the last two weeks with the clause <code>Changed Date&gt;=<xref href="StartOfWeek-2" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek-2"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
 <tr>
     <td><strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> <sup>7</sup> </td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&amp;gt;=<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
+    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current year or with a plus/minus offset. For example, you can find all features that have a Target Date scheduled within the current year with the clause <code>Target Date&gt;=<xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
 <tr>
@@ -330,7 +330,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
     <td><strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong></td>
-    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&amp;gt;=<xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
+    <td>Use with a <code>DateTime</code> field to filter for work items that relate to the current date or to an earlier date. You can also modify the <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> macro by subtracting days. For example, you can find all items created in the last week with the clause <code>Created Date&gt;=<xref href="Today-7" data-throw-if-not-resolved="False" data-raw-source="@Today-7"></xref></code>. For additional examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or current iteration](query-by-date-or-current-iteration.md)">Query by date or current iteration</a>.</td>
 </tr>
 
 
