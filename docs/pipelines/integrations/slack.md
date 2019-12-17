@@ -127,7 +127,7 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and pipelines from a channel
 
-- You want to clean up your channel by removing pipelines and subscriptions. Use the following commands to unsubscribe from all pipelines within a project.
+If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
 
 	```
 	/azpipelines unsubscribe all [project url]
