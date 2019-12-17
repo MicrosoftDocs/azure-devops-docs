@@ -311,9 +311,9 @@ let
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
                 &"    ) "
         &"/compute( "
-        &"percentile_cont(TotalDurationSeconds, 0.5, BuildPipelineId) as Duration50thPercentileInSeconds, "
-            &"percentile_cont(TotalDurationSeconds, 0.8, BuildPipelineId) as Duration80thPercentileInSeconds, "
-                &"percentile_cont(TotalDurationSeconds, 0.95, BuildPipelineId) as Duration95thPercentileInSeconds) "
+        &"percentile_cont(TotalDurationSeconds, 0.5, PipelineId) as Duration50thPercentileInSeconds, "
+            &"percentile_cont(TotalDurationSeconds, 0.8, PipelineId) as Duration80thPercentileInSeconds, "
+                &"percentile_cont(TotalDurationSeconds, 0.95, PipelineId) as Duration95thPercentileInSeconds) "
                 &"/groupby( "
             &"(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Pipeline/PipelineName)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -333,9 +333,9 @@ $apply=filter(
     and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
     )
 /compute(
-    percentile_cont(TotalDurationSeconds, 0.5, BuildPipelineId) as Duration50thPercentileInSeconds,
-    percentile_cont(TotalDurationSeconds, 0.8, BuildPipelineId) as Duration80thPercentileInSeconds,
-    percentile_cont(TotalDurationSeconds, 0.95, BuildPipelineId) as Duration95thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5, PipelineId) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8, PipelineId) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.95, PipelineId) as Duration95thPercentileInSeconds)
 /groupby(
 (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Pipeline/PipelineName))
 ```
