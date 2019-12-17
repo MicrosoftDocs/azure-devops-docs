@@ -53,10 +53,6 @@ If you created your project after about October 2018, then the above procedure i
    > [!div class="mx-imgBorder"]
    > ![Permissions dialog box for all builds in the project](_img/builds-permissions-dialog-box.png)
 
-<a id="deployment-group" />
-<a id="variable-group" />
-<a id="library" />
-
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -99,6 +95,10 @@ In addition to permission assignments, you manage security for several resources
 
 1. Save your changes.
 
+
+<a id="deployment-group" />
+<a id="variable-group" />
+<a id="library" />
 
 ::: moniker-end
 
