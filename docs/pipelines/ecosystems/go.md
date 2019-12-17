@@ -36,7 +36,7 @@ https://github.com/MicrosoftDocs/pipelines-go
 
 [!INCLUDE [include](_shared/create-project.md)]
 
-# Create the pipeline
+## Create the pipeline
 
 [!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
 
