@@ -16,20 +16,23 @@ monikerRange: 'azure-devops'
 If you use [Slack](https://slack.com), you can use the [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines) to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, 
 pending approvals and more from the app and get notifications for these events in your Slack channels.
 
-![Notifications image](_img/integrations-slack/notifications.png)
+> [!div class="mx-imgBorder"]
+> ![Notifications image](_img/integrations-slack/notifications.png)
 
 ## Add the Azure Pipelines app to your Slack workspace
 
 Navigate to [Azure Pipelines Slack app](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installslackapp) to install the Azure Pipelines app to your Slack workspace. Once added, 
 you will see a welcome message from the app as below. Use the `/azpipelines` handle to start interacting with the app.
 
-![Welcome message image](_img/integrations-slack/welcome-message.png)
+> [!div class="mx-imgBorder"]
+> ![Welcome message image](_img/integrations-slack/welcome-message.png)
 
 ## Connect the Azure Pipelines app to your pipelines
 
 Once the app has been installed in your Slack workspace, you can connect the app to the pipelines you want to monitor. The app will ask you to authenticate to Azure Pipelines before running any commands. 
 
-![Sign in prompt image ](_img/integrations-slack/sign-in.png)
+> [!div class="mx-imgBorder"]
+> ![Sign in prompt image ](_img/integrations-slack/sign-in.png)
 
 To start monitoring all pipelines in a project, use the following slash command inside a channel:
 
@@ -68,7 +71,8 @@ or:
 The subscribe command gets you started with a few subscriptions by default. For Build pipelines, the channel is subscribed to *Build completed* notification. For Release pipelines, 
 the channel will start receiving *Release deployment started*, *Release deployment completed* and *Release deployment approval pending* notifications. For YAML pipelines, subscriptions are created for the *Run stage state changed* and *Run stage waiting for approval* notifications.
 
-![Subscriptions added image](_img/integrations-slack/subscriptions-added-confirmation.png)
+> [!div class="mx-imgBorder"]
+> ![Subscriptions added image](_img/integrations-slack/subscriptions-added-confirmation.png)
 
 ## Manage subscriptions
 
@@ -78,7 +82,8 @@ To manage the subscriptions for a channel, use the following command:
 
 This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
 
-![Subscriptions list image](_img/integrations-slack/subscriptions-list.png)
+> [!div class="mx-imgBorder"]
+> ![Subscriptions list image](_img/integrations-slack/subscriptions-list.png)
 
 ## Using filters effectively to customize subscriptions
 
@@ -117,10 +122,10 @@ The app supports all the checks and approval scenarios present in Azure Pipeline
 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate.
 
-![Pic: URL unfurling](./_img/integrations-slack/build-url-unfurling.png)
+![URL unfurling](./_img/integrations-slack/build-url-unfurling.png)
 
 
-![Pic: URL unfurling](./_img/integrations-slack/release-url-unfurling.png)
+![URL unfurling](./_img/integrations-slack/release-url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
