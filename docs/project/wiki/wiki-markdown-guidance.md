@@ -11,7 +11,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 12/16/2019
+ms.date: 12/17/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -154,9 +154,9 @@ You can also select "@mention" from the edit toolbar.
 
 ## Page visits for wiki pages
 
-See how many page visits exist, for the last 30 days, for any wiki page. Automatically, you can see an aggregated page visits count for the last 30 days on every page.
+Automatically, you see an aggregated page visits count for the last 30 days on every page.
 
-Use the batch API `pagesBatch` to see the daily quantity of visits to all pages in a paginated way, however these page visits aren't sorted by number of visits. For data over 30 days old, you can get all page visits using the rest API. You can make a dashboard for the top 100 visited pages of a wiki, and then sort them based on the number of visits to get the top 100. Store these visits in your database if you need to sum up all 100 days of data to get views for last 100 days.
+Use the batch API `pagesBatch` to see the daily quantity of visits to all pages in a paginated way. They aren't sorted by number of visits, however. For data over 30 days old, you can get all page visits using the rest API. Sort these pages based on the number of visits to get the top 100. You can store these visits in a dashboard or database.
 
 ![Wiki page visits](_img/wiki/wiki-page-visits.png)
 
@@ -189,13 +189,6 @@ Enter the pound sign (`#`), and then enter a work item ID.
 
 In wiki pages, you can also create rich content using HTML tags.
 
-::: moniker range="tfs-2018"
-
-> [!NOTE]
-> Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
-> 
-::: moniker-end
-
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
@@ -208,7 +201,6 @@ In wiki pages, you can also create rich content using HTML tags.
 </video>
 ```
 
-**For example:**
 ```HTML
 <video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
 </video>
