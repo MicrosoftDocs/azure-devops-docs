@@ -27,35 +27,43 @@ The data migration tool flags errors that you need to correct prior to performin
 
 ## Resolve size warnings
 
-Particularly large collections may generate one of the following messages after running the data migration tool. If you receive any of these warnings or errors, we recommend that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
+Extra-large collections may generate one of the following messages after running the data migration tool. If you receive any of these warnings or errors, we recommend that you try to [reduce your database's size](/azure/devops/server/upgrade/clean-up-data). 
 
 ### Database size above recommended size
 
-The following warning means you need to use the SQL Azure VM method to complete your import. Once a database reaches a certain size, it becomes faster to setup a SQL Azure VM to complete the import to Azure DevOps Services. To setup the VM and complete your import, follow the instructions linked from the warning message. This warning does **NOT** mean that your collection is too big to be imported. 
+The following warning means you need to use the SQL Azure VM method to complete your import. Once a database reaches a certain size, it becomes faster to setup a SQL Azure VM to complete the import to Azure DevOps Services. To setup the VM and complete your import, follow the instructions linked from the warning message. 
 
 ```cmdline
 The database is currently {Database Size}GBs. This is above the recommended size of {DACPAC Size Limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection
 ```
 
+This warning **DOES NOT** mean that your collection is too large for import. 
+
 ### Table size above recommended size
 
-Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import. This warning does **NOT** mean that your collection is too big to be imported. 
+Similar to the previous warning, the following warning means you must use the SQL Azure VM method to complete the import. Follow the instructions linked from the warning message to setup the VM and complete your import.  
 
 ```cmdline
 The largest table size is currently {Table size}GBs. This is above the recommended size of {Size limit}GBs to use the DACPAC import method. Please see the following page to learn how to import using a SQL Azure VM: https://aka.ms/AzureDevOpsImportLargeCollection  
 ```
 
+This warning **DOES NOT** mean that your collection is too large for import. 
+
 ### Database metadata size above recommended size
 
-The following warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. The warning does **NOT** mean that your collection is too big for import, rather its metadata size is larger than the vast majority of other databases. It's strongly recommended that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
+The following warning means that your database is approaching the limit for total metadata size. Metadata size refers to the size of your database without including files, code, and other binary data. We recommend that you [reduce the size](/azure/devops/server/upgrade/clean-up-data) of your database before import. Reducing the size provides the additional benefit of speeding up your import.
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the recommended size of {Warning Size}GBs. It's recommended that you consider cleaning up older data as described in [Cleaning up old data](/azure/devops/server/upgrade/clean-up-data).
 ```
 
+The warning **DOES NOT** mean that your collection is too large for import, rather its metadata size is larger than the vast majority of other databases. 
+
 ### Database metadata size above maximum supported size
 
-Unlike the previous warnings, the following error **WILL** block you from moving forward with your migration. It indicates that the volume of metadata in your collection is too large. You need to [reduce](/azure/devops/server/upgrade/clean-up-data) its size below the mentioned limit to proceed with the import.   
+Unlike the previous warnings, the following error **WILL** block you from moving forward with your migration. 
+
+It indicates that the volume of metadata in your collection is too large. To proceed with the import, you need to [reduce](/azure/devops/server/upgrade/clean-up-data) the size below the indicated limit.   
 
 ```cmdline
 The database metadata size is currently {Metadata Size}GBs. This is above the maximum supported size of {Metadata Limit}GBs.
@@ -69,14 +77,17 @@ Collation warnings refer to your collection database's collation. Collations con
 
 ### No native support
 
-Receiving the following warning means that you need to think through some additional considerations before performing an import. It **DOES NOT** mean that you can't import your collection.  
+Receiving the following warning means that you need to consider collation implications before performing the import.  
 
 ```cmdline
 The collection database's collation '{collation}' is not natively supported in Azure DevOps Services. Importing your collection will result in your collation being converted to one of the supported Azure DevOps Services collations. See more details at https://aka.ms/AzureDevOpsImportCollations
 ```
-This warning requires an acknowledgment from the user running the data migration tool command. Accepting the warning allows the data migration tool to continue assisting you with preparing for your import. 
 
-When a non-supported collation is imported into Azure DevOps Services, it is effectively transformed to the supported Azure DevOps Services collation. While this generally works without issue, unexpected results can be observed post import or the import could fail if a unique collation translation issue is encountered. 
+This warning **DOES NOT** mean that you can't import your collection.  
+
+This warning requires you to acknowledge acceptance of the warning. Accepting the warning allows the data migration tool to continue import preparations.  
+
+When a non-supported collation is imported into Azure DevOps Services, it is effectively transformed to the supported Azure DevOps Services collation. While this transform generally works without issue, unexpected results can be observed post import or the import could fail if the import encounters a unique collation translation issue. 
 
 For instance, customers may notice different ordering for strings containing non-English characters. Non-English characters like 'é' may become equivalent to the English 'e' after import. It's important that you complete and verify a dry run import when importing a collection with a non-supported collation.
 
@@ -90,7 +101,7 @@ The collections database's collation '{collation}' is not natively supported in 
 
 ### Unsupported database collation  
 
-Generally you can convert a non-supported collation to one of the supported collations at import time. However, there are some collations which you can't convert. If your collection uses one of those collations, you'll receive the following **error** message. 
+Generally you can convert a non-supported collation to a supported collation at import time. However, some collations can't be converted. If your collection uses one of these collations, you'll receive the following **error** message. 
 
 ```cmdline
 The collection database's collation '{collation}' is not supported for import to Azure DevOps Services. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/AzureDevOpsImportCollations
@@ -108,17 +119,19 @@ The following sections provide guidance for resolving the most common identity e
 
 This error indicates that a permission is missing from a system security group. For example, every collection that you create has Project Collection Valid Users and Project Collection Administrators groups. The system creates them  by default. These groups don't support editing of their permissions. 
 
-This error indicates that one or more groups is missing a permission that it's expected to have. In order to fix this, you need to use the **TFSSecurity.exe** command to apply the expected permissions onto the flagged system groups. To get started you need to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) you need to run.
+This error indicates that one or more groups is missing a permission that it's expected to have. To resolve this error, use the **TFSSecurity.exe** command to apply the expected permissions onto the flagged system groups. Your first step is to identify which [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd) command(s) you need to run.
 
 #### Project Collection Valid Users error message
 
-Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the example below, then you need to fix a missing permission for the **Project Collection Valid Users** group. Run the following command against **TFSSecurity.exe** after replacing the scope with the one from the error message and specifying your collection URL.
+Examine the error message(s) the data migration tool highlighted. If the flagged group ends with "**0-0-0-0-3**", such as in the example below, you need to fix a missing permission for the **Project Collection Valid Users** group. 
+
+Run the following command, replace the scope with the one from the error message and specify your collection URL.
 
 ```cmdline
 TFSSecurity.exe /a+ Identity "{scope}\\" Read sid:{Group SID} ALLOW /collection:{collectionUrl}
 ```
 
-In the following example you need to take the scope and group SID from the error message, and add it the command above. 
+You determine the scope and group SID from the error message. 
 
 ```cmdline
 ISVError:100014 Missing permission for group:Microsoft.TeamFoundation.Identity;S-1-9-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-0-0-0-0-3 for scope:397c326b-b97c-4510-8271-75aac13de7a9. Expected:1 and Actual:0 
