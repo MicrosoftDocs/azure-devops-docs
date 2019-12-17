@@ -31,7 +31,20 @@ Once the app has been installed in your Slack workspace, you can connect the app
 
 ![Sign in prompt image ](_img/integrations-slack/sign-in.png)
 
-To start monitoring a pipeline, use the following slash command inside a channel:
+To start monitoring all pipelines in a project, use the following slash command inside a channel:
+
+```
+/azpipelines subscribe [project url]
+```
+The project URL can be to any page within your project (except URLs to pipelines).
+
+For example:
+
+```
+/azpipelines subscribe https://dev.azure.com/myorg/myproject/
+```
+
+You can also monitor a specific pipeline using the following command:
 
 ```
 /azpipelines subscribe [pipeline url]
