@@ -141,6 +141,7 @@ Here are all the commands supported by the Azure Pipelines app:
 | @azure pipelines help     | Get help on the slash commands |
 | @azure pipelines signin  | Sign in to your Azure Pipelines account |
 | @azure pipelines signout  | Sign out from your Azure Pipelines account |
+| @azure pipelines unsubscribe all [project url] | Remove all pipelines (belonging to a project) and their associated subscriptions from a channel |
 
 
 >[!NOTE]
