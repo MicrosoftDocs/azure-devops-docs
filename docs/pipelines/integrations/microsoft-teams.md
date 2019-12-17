@@ -164,7 +164,7 @@ Here are all the commands supported by the Azure Pipelines app:
 
 | Slash command        | Functionality  |
 | -------------------- |----------------|
-| @azure pipelines subscribe [pipeline url/ project url]      | Subscribe to a pipeline or all pipelines in a project to receive notifications| 
+| @azure pipelines subscribe [propect url/ pipeline url]      | Subscribe to a pipeline or all pipelines in a project to receive notifications| 
 | @azure pipelines subscriptions      | Add or remove subscriptions for this channel | 
 | @azure pipelines feedback | Report a problem or suggest a feature |
 | @azure pipelines help     | Get help on the slash commands |
