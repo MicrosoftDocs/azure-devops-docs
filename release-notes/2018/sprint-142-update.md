@@ -98,7 +98,7 @@ As you begin to manage several dependencies, use the new **Remote Link Count** f
  
 ### Open work items from search
 
-Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from [UserVoice](https://visualstudio.uservoice.com/forums/330519-azure-devops-formerly-visual-studio-team-services/suggestions/33988486-open-item-from-search).
+Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from UserVoice.
 
 ## Azure Repos
 

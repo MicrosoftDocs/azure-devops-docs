@@ -101,7 +101,7 @@ Deploy an Azure SQL Database to an existing Azure SQL Server. The Azure SQL Data
 
 #### Delete Test Plan
 
-You can now delete test plans directly from the Test Hub, which has been one of the top [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso/suggestions/5875605-visual-studio-online-add-ability-to-delete-a-tes) items for Test.
+You can now delete test plans directly from the Test Hub, which has been one of the top UserVoice items for Test.
 
 ##### mention
 
