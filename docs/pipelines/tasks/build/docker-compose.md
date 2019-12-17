@@ -8,7 +8,7 @@ ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/12/2019
+ms.date: 12/17/2019
 monikerRange: '> tfs-2018'
 ---
 
@@ -25,10 +25,25 @@ This task can be used with a Docker registry or an Azure Container Registry.
 
 ### Azure Container Registry
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection. See <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a> to manually set up the connection.</td></tr>
-<tr><td><code>azureContainerRegistry</code><br/>(Azure container registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>containerregistrytype</code><br/>(Container registry type)</td>
+      <td>(Optional) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td>
+   </tr>
+   <tr>
+      <td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td>
+      <td>(Required) Name of the Azure Service Connection. See <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a> to manually set up the connection.<br/>Argument aliases: <code>azureSubscription</code></td>
+   </tr>
+   <tr>
+      <td><code>azureContainerRegistry</code><br/>(Azure container registry)</td>
+      <td>(Required) Name of the Azure Container Registry.</td>
+   </tr>
 </table>
 
 This YAML example specifies the inputs for Azure Container Registry:
@@ -49,9 +64,21 @@ steps:
 
 The **containerregistrytype** value is required when using any container registry other than ACR. Use <code>containerregistrytype: Container Registry</code> in this case.
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>containerregistrytype</code><br/>(Container registry type)</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td><td>(Required) <a href="../../library/service-endpoints.md" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md)">Docker registry service connection</a>.</td></tr>
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>containerregistrytype</code><br/>(Container registry type)</td>
+      <td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td>
+   </tr>
+   <tr>
+      <td><code>dockerRegistryEndpoint</code><br/>(Docker registry service connection)</td>
+      <td>(Required) <a href="../../library/service-endpoints.md" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md)">Docker registry service connection</a>.</td>
+   </tr>
 </table>
 
 This YAML example specifies a container registry other than ACR where **Contoso**
@@ -67,21 +94,66 @@ is the name of the Docker registry service connection for the container registry
 
 ## Build service images
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>containerregistrytype</code><br/>(Container Registry Type)</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>azureSubscription</br>Endpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection.</td></tr>
-<tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
-<tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
-<tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the | operator in YAML to indicate that newlines should be preserved. <br/>Example: <pre>dockerComposeFileArgs: |
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>containerregistrytype</code><br/>(Container Registry Type)</td>
+      <td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td>
+   </tr>
+   <tr>
+      <td><code>azureSubscription</br>Endpoint</code><br/>(Azure subscription)</td>
+      <td>(Required) Name of the Azure Service Connection.</td>
+   </tr>
+   <tr>
+      <td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td>
+      <td>(Required) Name of the Azure Container Registry.</td>
+   </tr>
+   <tr>
+      <td><code>dockerComposeFile</code><br/>(Docker Compose File)</td>
+      <td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td>
+   </tr>
+   <tr>
+      <td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td>
+      <td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td>
+      <td>
+         (Optional) Environment variables to be set up during the command. Specify each name = value pair on a new line. You need to use the | operator in YAML to indicate that newlines should be preserved. <br/>Example: 
+         <pre>dockerComposeFileArgs: |
     firstArg=$(firstArg)
-    secondArg=$(secondArg)</pre></td></tr>
-<tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
-<tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
-<tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>
-<tr><td><code>additionalImage</br>Tags</code><br/>(Additional Image Tags)</td><td>(Optional) Additional tags for the Docker images being built or pushed.</td></tr>
-<tr><td><code>includeSourceTags</code><br/>(Include Source Tags)</td><td>(Optional) Include Git tags when building or pushing Docker images.<br/>Default value: false</td></tr>
-<tr><td><code>includeLatestTag</code><br/>(Include Latest Tag)</td><td>(Optional) Include the <b>latest</b> tag when building or pushing Docker images.<br/>Default value: false</td></tr>
+    secondArg=$(secondArg)</pre>
+      </td>
+   </tr>
+   <tr>
+      <td><code>projectName</code><br/>(Project Name)</td>
+      <td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td>
+   </tr>
+   <tr>
+      <td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td>
+      <td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td>
+   </tr>
+   <tr>
+      <td><code>action</code><br/>(Action)</td>
+      <td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td>
+   </tr>
+   <tr>
+      <td><code>additionalImage</br>Tags</code><br/>(Additional Image Tags)</td>
+      <td>(Optional) Additional tags for the Docker images being built or pushed.</td>
+   </tr>
+   <tr>
+      <td><code>includeSourceTags</code><br/>(Include Source Tags)</td>
+      <td>(Optional) Include Git tags when building or pushing Docker images.<br/>Default value: false</td>
+   </tr>
+   <tr>
+      <td><code>includeLatestTag</code><br/>(Include Latest Tag)</td>
+      <td>(Optional) Include the <b>latest</b> tag when building or pushing Docker images.<br/>Default value: false</td>
+   </tr>
 </table>
 
 This YAML example builds the image where the image name is qualified on the basis of the inputs related to Azure Container Registry:
@@ -101,19 +173,61 @@ This YAML example builds the image where the image name is qualified on the basi
 
 ## Push service images
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>containerregistrytype</code><br/>(Container Registry Type)</td><td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td></tr>
-<tr><td><code>azureSubscription</br>Endpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure Service Connection.</td></tr>
-<tr><td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td><td>(Required) Name of the Azure Container Registry.</td></tr>
-<tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
-<tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td></tr>
-<tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
-<tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
-<tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>
-<tr><td><code>additionalImage</br>Tags</code><br/>(Additional Image Tags)</td><td>(Optional) Additional tags for the Docker images being built or pushed.</td></tr>
-<tr><td><code>includeSourceTags</code><br/>(Include Source Tags)</td><td>(Optional) Include Git tags when building or pushing Docker images.<br/>Default value: false</td></tr>
-<tr><td><code>includeLatestTag</code><br/>(Include Latest Tag)</td><td>(Optional) Include the <b>latest</b> tag when building or pushing Docker images.<br/>Default value: false</td></tr>
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>containerregistrytype</code><br/>(Container Registry Type)</td>
+      <td>(Required) <b>Azure Container Registry</b> if using ACR or <b>Container Registry</b> if using any other container registry.<br/>Default value: Azure Container Registry</td>
+   </tr>
+   <tr>
+      <td><code>azureSubscription</br>Endpoint</code><br/>(Azure subscription)</td>
+      <td>(Required) Name of the Azure Service Connection.</td>
+   </tr>
+   <tr>
+      <td><code>azureContainerRegistry</code><br/>(Azure Container Registry)</td>
+      <td>(Required) Name of the Azure Container Registry.</td>
+   </tr>
+   <tr>
+      <td><code>dockerComposeFile</code><br/>(Docker Compose File)</td>
+      <td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td>
+   </tr>
+   <tr>
+      <td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td>
+      <td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td>
+      <td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>projectName</code><br/>(Project Name)</td>
+      <td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td>
+   </tr>
+   <tr>
+      <td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td>
+      <td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td>
+   </tr>
+   <tr>
+      <td><code>action</code><br/>(Action)</td>
+      <td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td>
+   </tr>
+   <tr>
+      <td><code>additionalImage</br>Tags</code><br/>(Additional Image Tags)</td>
+      <td>(Optional) Additional tags for the Docker images being built or pushed.</td>
+   </tr>
+   <tr>
+      <td><code>includeSourceTags</code><br/>(Include Source Tags)</td>
+      <td>(Optional) Include Git tags when building or pushing Docker images.<br/>Default value: false</td>
+   </tr>
+   <tr>
+      <td><code>includeLatestTag</code><br/>(Include Latest Tag)</td>
+      <td>(Optional) Include the <b>latest</b> tag when building or pushing Docker images.<br/>Default value: false</td>
+   </tr>
 </table>
 
 This YAML example pushes an image to a container registry:
@@ -133,15 +247,45 @@ This YAML example pushes an image to a container registry:
 
 ## Run service images
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
-<tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td></tr>
-<tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
-<tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
-<tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>
-<tr><td><code>buildImages</code><br/>(Build Images)</td><td>(Optional) Build images before starting service containers.<br/>Default value: true</td></tr>
-<tr><td><code>detached</code><br/>(Run in Background)</td><td>(Optional) Run the service containers in the background.<br/>Default value: true</td></tr>
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>dockerComposeFile</code><br/>(Docker Compose File)</td>
+      <td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td>
+   </tr>
+   <tr>
+      <td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td>
+      <td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td>
+      <td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>projectName</code><br/>(Project Name)</td>
+      <td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td>
+   </tr>
+   <tr>
+      <td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td>
+      <td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td>
+   </tr>
+   <tr>
+      <td><code>action</code><br/>(Action)</td>
+      <td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td>
+   </tr>
+   <tr>
+      <td><code>buildImages</code><br/>(Build Images)</td>
+      <td>(Optional) Build images before starting service containers.<br/>Default value: true</td>
+   </tr>
+   <tr>
+      <td><code>detached</code><br/>(Run in Background)</td>
+      <td>(Optional) Run the service containers in the background.<br/>Default value: true</td>
+   </tr>
 </table>
 
 This YAML example runs services:
@@ -163,20 +307,65 @@ This YAML example runs services:
 
 ## Run a specific service image
 
-<table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>dockerComposeFile</code><br/>(Docker Compose File)</td><td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td></tr>
-<tr><td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td><td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td></tr>
-<tr><td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td><td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td></tr>
-<tr><td><code>projectName</code><br/>(Project Name)</td><td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td></tr>
-<tr><td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td><td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td></tr>
-<tr><td><code>action</code><br/>(Action)</td><td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td></tr>
-<tr><td><code>serviceName</code><br/>(Service Name)</td><td>(Required) Name of the specific service to run.</td></tr>
-<tr><td><code>containerName</code><br/>(Container Name)</td><td>(Optional) Name of the specific service container to run.</td></tr>
-<tr><td><code>ports</code><br/>(Ports)</td><td>(Optional) Ports in the specific service container to publish to the host. Specify each host-port:container-port binding on a new line.</td></tr>
-<tr><td><code>workDir</code><br/>(Working Directory)</td><td>(Optional) The working directory for the specific service container.</td></tr>
-<tr><td><code>entrypoint</code><br/>(Entry Point Override)</td><td>(Optional) Override the default entry point for the specific service container.</td></tr>
-<tr><td><code>containerCommand</code><br/>(Command)</td><td>(Optional) Command to run in the specific service container. For example, if the image contains a simple Python Flask web application you can specify <b>python app.py</b> to launch the web application.</td></tr>
-<tr><td><code>detached</code><br/>(Run in Background)</td><td>(Optional) Run the service containers in the background.<br/>Default value: true</td></tr>
+<table>
+   <thead>
+      <tr>
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>dockerComposeFile</code><br/>(Docker Compose File)</td>
+      <td>(Required) Path to the primary Docker Compose file to use.<br/>Default value: **/docker-compose.yml</td>
+   </tr>
+   <tr>
+      <td><code>additionalDocker</br>ComposeFiles</code><br/>(Additional Docker Compose Files)</td>
+      <td>(Optional) Additional Docker Compose files to be combined with the primary Docker Compose file. Relative paths are resolved relative to the directory containing the primary Docker Compose file. If a specified file is not found, it is ignored. Specify each file path on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>dockerCompose</br>FileArgs</code><br/>(Environment Variables)</td>
+      <td>(Optional) Environment variables to be set up during the command. Specify each name=value pair on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>projectName</code><br/>(Project Name)</td>
+      <td>(Optional) Project name used for default naming of images and containers.<br/>Default value: $(Build.Repository.Name)</td>
+   </tr>
+   <tr>
+      <td><code>qualifyImage</br>Names</code><br/>(Qualify Image Names)</td>
+      <td>(Optional) Qualify image names for built services with the Docker registry service connection's hostname if not otherwise specified.<br/>Default value: true</td>
+   </tr>
+   <tr>
+      <td><code>action</code><br/>(Action)</td>
+      <td>(Required) Select a Docker Compose action.<br/>Default value: Run a Docker Compose command</td>
+   </tr>
+   <tr>
+      <td><code>serviceName</code><br/>(Service Name)</td>
+      <td>(Required) Name of the specific service to run.</td>
+   </tr>
+   <tr>
+      <td><code>containerName</code><br/>(Container Name)</td>
+      <td>(Optional) Name of the specific service container to run.</td>
+   </tr>
+   <tr>
+      <td><code>ports</code><br/>(Ports)</td>
+      <td>(Optional) Ports in the specific service container to publish to the host. Specify each host-port:container-port binding on a new line.</td>
+   </tr>
+   <tr>
+      <td><code>workDir</code><br/>(Working Directory)</td>
+      <td>(Optional) The working directory for the specific service container.<br/>Argument aliases: <code>workingDirectory</code></td>
+   </tr>
+   <tr>
+      <td><code>entrypoint</code><br/>(Entry Point Override)</td>
+      <td>(Optional) Override the default entry point for the specific service container.</td>
+   </tr>
+   <tr>
+      <td><code>containerCommand</code><br/>(Command)</td>
+      <td>(Optional) Command to run in the specific service container. For example, if the image contains a simple Python Flask web application you can specify <b>python app.py</b> to launch the web application.</td>
+   </tr>
+   <tr>
+      <td><code>detached</code><br/>(Run in Background)</td>
+      <td>(Optional) Run the service containers in the background.<br/>Default value: true</td>
+   </tr>
 </table>
 
 This YAML example runs a specific service:
