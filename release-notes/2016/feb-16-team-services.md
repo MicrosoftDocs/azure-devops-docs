@@ -111,13 +111,13 @@ When a user adds a comment with a #mention, the mentioned work item will be adde
 
 You can now click a work item on the Kanban board and use keyboard shortcut keys for common tasks. Here's a sample of what you can do:
 
--Create new work items
--Move work items within or across columns and swimlanes
--Expand and collapse work items
+- Create new work items
+- Move work items within or across columns and swimlanes
+- Expand and collapse work items
 
 That’s all :-)
 
-As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [User Voice site](https://visualstudio.uservoice.com/forums/330519-vso).
+As always, we welcome your feedback. For problems, let us know via Send-a-Smile in Visual Studio Team Services. For suggestions, let us know at the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks
 
