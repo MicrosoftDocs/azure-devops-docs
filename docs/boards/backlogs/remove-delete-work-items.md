@@ -502,7 +502,7 @@ You restore deleted work items from the web portal Recycle bin.
 
 <a id="restore-work-items" />
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 
 ## Restore or permanently delete work items   
 
