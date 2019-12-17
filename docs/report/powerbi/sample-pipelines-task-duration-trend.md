@@ -43,7 +43,7 @@ let
                 &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and TaskDisplayName eq '{taskname}' "
                 &"and PipelineRunCompletedOn/Date ge {startdate} "
-        &"and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded') "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &"    ) "
                 &"/compute( "
@@ -66,7 +66,7 @@ $apply=filter(
     Pipeline/PipelineName eq '{pipelinename}'
     and TaskDisplayName eq '{taskname}'
     and PipelineRunCompletedOn/Date ge {startdate}
-    and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded')
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
     and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
     )
 /compute(
@@ -195,7 +195,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/taskduration-fields.png)
+> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/taskdurationtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -212,7 +212,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration trend - Report](_img/odatapowerbi-pipelines/taskdurationtrend-fields.png)
+> ![Sample - Pipelines task duration trend - Report](_img/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## Additional queries
@@ -236,7 +236,7 @@ let
                 &"Pipeline/PipelineId eq {pipelineid} "
                 &"and TaskDisplayName eq '{taskname}' "
                 &"and PipelineRunCompletedOn/Date ge {startdate} "
-        &"and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded') "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &") "
                 &"/compute( "
@@ -258,7 +258,7 @@ $apply=filter(
     Pipeline/PipelineId eq {pipelineid}
     and TaskDisplayName eq '{taskname}'
     and PipelineRunCompletedOn/Date ge {startdate}
-    and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded')
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
     and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
     )
 /compute(
@@ -285,7 +285,7 @@ let
                 &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and TaskDisplayName eq '{taskname}' "
                 &"and PipelineRunCompletedOn/Date ge {startdate} "
-        &"and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded') "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &") "
                 &"/compute( "
@@ -309,7 +309,7 @@ $apply=filter(
 Pipeline/PipelineName eq '{pipelinename}'
 and TaskDisplayName eq '{taskname}'
 and PipelineRunCompletedOn/Date ge {startdate}
-and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded')
+and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
 and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
 )
 /compute(
@@ -342,7 +342,7 @@ let
                 &" Pipeline/PipelineName eq '{pipelinename}' "
                 &" and TaskDisplayName eq '{taskname}' "
                 &" and PipelineRunCompletedOn/Date ge {startdate} "
-        &" and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded') "
+        &" and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &" and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &" ) "
                 &"/compute( "
@@ -365,7 +365,7 @@ $apply=filter(
     Pipeline/PipelineName eq '{pipelinename}'
     and TaskDisplayName eq '{taskname}'
     and PipelineRunCompletedOn/Date ge {startdate}
-    and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded')
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
     and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
     )
 /compute(
@@ -396,7 +396,7 @@ let
         &"$apply=filter( "
                 &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and PipelineRunCompletedOn/Date ge {startdate} "
-                &"and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded') "
+                &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
         &") "
             &"/compute( "
@@ -417,7 +417,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Pip
 $apply=filter(
     Pipeline/PipelineName eq '{pipelinename}'
     and PipelineRunCompletedOn/Date ge {startdate}
-    and (PipelineRunOutcome eq 'Succeed' or PipelineOutcome eq 'PartiallySucceeded')
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
     and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
     )
 /compute(
