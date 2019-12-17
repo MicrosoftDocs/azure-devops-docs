@@ -158,11 +158,13 @@ The following table lists all the Azure repos commands you can use in your Teams
 
 |Command	| Functionality |
 | -------------------- |----------------|
-| @azure repos subscribe [repository url]	| Subscribe to a repository to receive notifications |
+| @azure repos subscribe [repository url/ project url]	| Subscribe to a repository or all repositories in a project to receive notifications |
 | @azure repos subscriptions	| Add or remove subscriptions for this channel |
 | @azure repos signin	| Sign in to your Azure Repos organization |
 | @azure repos signout	| Sign out from your Azure Repos organization |
 | @azure repos feedback	| Report a problem or suggest a feature |
+| @azure repos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+
 
 ## Troubleshooting
 
