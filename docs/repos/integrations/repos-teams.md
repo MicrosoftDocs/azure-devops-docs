@@ -66,7 +66,20 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
-2. To start monitoring a repository, use the following command inside a channel:
+2. To start monitoring all repositories in a project, use the following slash command inside a channel:
+
+   ```
+   @azure repos subscribe [project url]
+   ```
+   The project URL can be to any page within your project (except URLs to repositories).
+
+   For example:
+
+   ```
+   @azure repos subscribe https://dev.azure.com/myorg/myproject/
+   ```
+
+   You can also monitor a specific repository using the following command:
 
    ```
    @azure repos subscribe [repository url]
