@@ -132,13 +132,13 @@ Here are all the commands supported by the Azure Pipelines app:
 
 | Slash command        | Functionality  |
 | -------------------- |----------------|
-| /azpipelines subscribe [pipeline url]      | Subscribe to a pipeline to receive notifications | 
+| /azpipelines subscribe [pipeline url/ project url]      | Subscribe to a pipeline or all pipelines in a project to receive notifications | 
 | /azpipelines subscriptions      | Add or Remove subscriptions for this channel      | 
 | /azpipelines feedback | Report a problem or suggest a feature      |
 | /azpipelines help     | Get help on the slash commands |
 | /azpipelines signin  | Sign in to your Azure Pipelines account |
 | /azpipelines signout  | Sign out from your Azure Pipelines account |
-| /azpipelines removeAll [project url] | Remove all pipelines belonging to a project, including subscriptions, from a channel |
+| /azpipelines unsubscribe all [project url] | Remove all pipelines (belonging to a project) and their associated subscriptions from a channel |
 
 ### Notifications in Private channels
 
