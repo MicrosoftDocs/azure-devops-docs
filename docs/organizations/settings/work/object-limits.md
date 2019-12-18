@@ -18,7 +18,16 @@ ms.date: 06/02/2017
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+This article details the limits placed on the number of projects and work tracking objects you can define or import. , and work item  you define or import through an When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+
+## Work items
+
+- A long text field can contain 1M characters.
+- You can't assign more than 100 tags to a work item.
+- You can't add more than 1,000 links to a work item.
+- You can't add more than 100 attachments to a work item.
+- You can't add an attachment size larger than 60MB to a work item.
+
 
 ## Inheritance and Hosted XML process models
 
@@ -47,13 +56,6 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 > [!NOTE]  
 > For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
 
-## Work items
-
-- A long text field can contain 1M characters.
-- You can't assign more than 100 tags to a work item.
-- You can't add more than 1,000 links to a work item.
-- You can't add more than 100 attachments to a work item.
-- You can't add an attachment size larger than 60MB to a work item.
 
 ## Related articles
 
