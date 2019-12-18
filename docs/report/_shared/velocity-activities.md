@@ -3,8 +3,9 @@ ms.topic: include
 ---
 
 
-## Required and recommended activities   
-For your team to gain the greatest utility from the velocity chart, follow these required and recommended tasks.  
+## Required and recommended activities  
+ 
+For your team to gain the greatest utility from the velocity charts, follow these required and recommended tasks.  
 
 **Required:** 
 - [Define iteration paths (aka sprints) and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints) Sprints should be of the same duration. 
