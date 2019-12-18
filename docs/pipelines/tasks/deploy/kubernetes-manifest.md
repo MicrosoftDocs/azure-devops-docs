@@ -18,9 +18,9 @@ Use a Kubernetes manifest task in a build or release pipeline to bake and deploy
 
 ## Overview
 
-These are the key benefits of this task:
+The following list shows the key benefits of this task:
 
-- **Artifact substitution**: The deployment action takes as input a list of container images which can be specified along with their tags or digests. The same input is substituted into the nontemplatized version of manifest files before application to the cluster. This substitution ensures that the right version of the image is pulled by the cluster nodes.
+- **Artifact substitution**: The deployment action takes as input a list of container images that can be specified along with their tags or digests. The same input is substituted into the nontemplatized version of manifest files before application to the cluster. This substitution ensures that the right version of the image is pulled by the cluster nodes.
 
 - **Manifest stability**: The rollout status of the deployed Kubernetes objects is checked. The stability checks are incorporated to determine whether the task status is a success or a failure.
 
@@ -42,15 +42,108 @@ These are the key benefits of this task:
 
   - **Service Mesh Interface**: [Service Mesh Interface](https://smi-spec.io/) (SMI) abstraction allows configuration with service mesh providers like Linkerd and Istio. Also, the KubernetesManifest task maps SMI **TrafficSplit** objects to the stable, baseline, and canary services during the lifecycle of the deployment strategy.
 
-    Canary deployments based on a service mesh and using this task are more accurate. This is because service mesh providers enable the granular split of percentage traffic. The enabling is via service registry and sidecar containers injected into pods alongside application containers.
+    Canary deployments that are based on a service mesh and use this task are more accurate. This result comes because service mesh providers enable the granular split of percentage traffic. The enabling is via service registry and sidecar containers injected into pods alongside application containers.
   
-  - **Only Kubernetes with no service mesh**: In the absence of a service mesh, you might not get the exact percentage split you want at the request level. But you might be able to perform canary deployments by using baseline and canary workload variants next to the stable variant.
+  - **Only Kubernetes with no service mesh**: In the absence of a service mesh, you might not get the exact percentage split you want at the request level. But you can possibly do canary deployments by using baseline and canary workload variants next to the stable variant.
 
     The service routes requests to pods of all three workload variants as the selector-label constraints are met. The KubernetesManifest task honors these requests when creating baseline and canary variants. This routing behavior achieves the intended effect of routing only a portion of total requests to the canary.
     
   Compare the baseline and canary workloads by using either a [Manual Intervention task](../utility/manual-intervention.md) in release pipelines or a [Delay task](../utility/delay.md) in YAML pipelines. Perform the comparison before using the promote/reject action of the task.
 
 ## Deploy action
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tr>
+    <td><b>action</b>
+    <td><blockquote>Required</blockquote><br/>
+    Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
+  </tr>
+  <tr>
+    <td><b>kubernetesServiceConnection</b></td>
+    <td><blockquote>Required</blockquote><br/>
+    The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
+  </tr>
+  <tr>
+    <td><b>namespace</b></td>
+    <td><blockquote>Required</blockquote><br/>
+    The namespace within the cluster to deploy to.</td>
+  </tr>
+  <tr>
+    <td><b>manifests</b></td>
+    <td><blockquote>Required</blockquote><br/>
+    The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this parameter.</td>
+  </tr>
+  <tr>
+    <td><b>containers</b></td>
+    <td><blockquote>Optional</blockquote><br/>
+    Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.<br/>
+    <br/>
+    Here's an example:<br/>
+    <code>containers: |</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/foo:test1</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/bar:test2</code><br/>
+    <br/>
+    In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For each match found, the tags <code>test1</code> or <code>test2</code> replaces the matched reference.</td>
+  </tr>
+  <tr>
+    <td><b>imagePullSecrets</b></td>
+    <td><blockquote>Optional</blockquote><br/>
+    Multiline input where each line contains the name of a docker-registry secret that has already been set up within the cluster. Each of these secret names is added to the <b>imagePullSecrets</b> value for the workloads found in the input manifest files.</td>
+  </tr>
+  <tr>
+    <td><b>strategy</b></td>
+    <td><blockquote>Optional</blockquote><br/>
+    The deployment strategy used while applying manifest files on the cluster. Currently, <b>canary</b> is the only acceptable deployment strategy</td>
+  </tr>
+  <tr>
+    <td><b>trafficSplitMethod</b></td>
+    <td><blockquote>Optional</blockquote><br/>
+    Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/><br/>
+    For the value <b>smi</b>, the percentage traffic split is done at the request level using service mesh. Service mesh must be set up by a cluster admin. This task handles orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI.
+    <br/><br/>
+    For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary as a percentage of replicas specified in the input manifests for the stable variant.</td>
+  </tr>
+  <tr>
+    <td><b>percentage</b></td>
+    <td><blockquote>Required if the <b>strategy</b> parameter value is <b>canary</b> and optional otherwise</blockquote><br/>
+    The percentage that is used to compute the number of replicas of baseline and canary variants of the workloads found in manifest files.<br/>
+    <br/>
+    For the specified percentage input, calculate:<br/>
+    <br/>
+    (<i>percentage</i> <b>&times;</b><br/>
+    <i>number&nbsp;of&nbsp;replicas</i>) <b>/</b> 100<br/>
+    <br/>
+    If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.<br/>
+    <br/>
+    For example, assume deployment hello-world is in the input manifest file and that the following lines are in the task input:<br/>
+    <br/>
+    <code>replicas: 4</code><br/>
+    <code>strategy: canary</code><br/>
+    <code>percentage: 25</code><br/>
+    <br/>
+    In this case, the deployments hello-world-baseline and hello-world-canary are created with one replica each. The baseline variant is created with the same image and tag as the stable version, meaning the four-replica variant before deployment. And the canary variant is created with the image and tag corresponding to the newly deployed changes.</td>
+  </tr>
+  <tr>
+    <td><b>baselineAndCanaryReplicas</b></td>
+    <td><blockquote>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b></blockquote><br/>
+    When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.<br/>
+    <br/>
+    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:<br/>
+    <br/>
+    <code>strategy: canary</code><br/>
+    <code>trafficSplitMethod: smi</code><br/>
+    <code>percentage: 20</code><br/>
+    <code>baselineAndCanaryReplicas: 1</code><br/>
+    <br/>
+    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But instead baseline and canary variants with three replicas each being created, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
+  </tr>
+</table>
 
 <table>
   <thead>
@@ -107,9 +200,9 @@ These are the key benefits of this task:
     <td>Optional</td>
     <td>Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.
     <br/><br/>
-    For value <b>smi</b>, the percentage traffic split is done at the request level using service mesh. Service mesh has to be setup by a cluster admin. This task handles orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI.
+    For the value <b>smi</b>, the percentage traffic split is done at the request level using service mesh. Service mesh has to be set up by a cluster admin. This task handles orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI.
     <br/><br/>
-    For value <b>pod</b>, the percentage split isn't possible at the request level in the absence of service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary as a percentage of replicas specified in the input manifests for the stable variant.</td>
+    For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary as a percentage of replicas specified in the input manifests for the stable variant.</td>
   </tr>
   <tr>
     <td><b>percentage</b></td>
@@ -118,12 +211,16 @@ These are the key benefits of this task:
     <br/>
     For the specified percentage input, calculate:<br/>
     <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;(<i>percentage</i> <b>&times;</b><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<i>number&nbsp;of&nbsp;desired&nbsp;replicas</i>) <b>/</b> 100<br/>
+    (<i>percentage</i> <b>&times;</b><br/>
+    <i>number&nbsp;of&nbsp;desired&nbsp;replicas</i>) <b>/</b> 100<br/>
     <br/>
     If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.<br/>
     <br/>
-    For example, assume deployment hello-world is in the input manifest file and contains &quot;replicas: 4&quot;. Also assume &quot;strategy: canary&quot; and &quot;percentage: 25&quot; are given as task input.<br/>
+    For example, assume deployment hello-world is in the input manifest file and that the following lines are in the task input:<br/>
+    <br/>
+    <code>replicas: 4</code><br/>
+    <code>strategy: canary</code><br/>
+    <code>percentage: 25</code><br/>
     <br/>
     In this case, the deployments hello-world-baseline and hello-world-canary are created with one replica each. The baseline variant is created with the same image and tag as the stable version, meaning the four-replica variant prior to deployment. And the canary variant is created with the image and tag corresponding to the newly deployed changes.</td>
   </tr>
@@ -134,16 +231,16 @@ These are the key benefits of this task:
     <br/>
     For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:<br/>
     <br/>
-    <code>&nbsp;&nbsp;&nbsp;&nbsp;strategy: canary</code><br/>
-    <code>&nbsp;&nbsp;&nbsp;&nbsp;trafficSplitMethod: smi</code><br/>
-    <code>&nbsp;&nbsp;&nbsp;&nbsp;percentage: 20</code><br/>
-    <code>&nbsp;&nbsp;&nbsp;&nbsp;baselineAndCanaryReplicas: 1</code><br/>
+    <code>strategy: canary</code><br/>
+    <code>trafficSplitMethod: smi</code><br/>
+    <code>percentage: 20</code><br/>
+    <code>baselineAndCanaryReplicas: 1</code><br/>
     <br/>
-    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive 10% (half of the specified 20%). But instead of creating baseline and canary variants with three replicas each, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
+    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But instead baseline and canary variants with three replicas each being created, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
   </tr>
 </table>
 
-The following YAML snippet is an example of deploying to a Kubernetes namespace using manifest files: 
+The following YAML code is an example deployment to a Kubernetes namespace by use of manifest files:
 
 ```YAML
 steps:
@@ -161,13 +258,13 @@ steps:
       some-other-secret
 ```
 
-In the above example, the tasks tries to find matches for the image foobar/demo in the image fields of manifest files. If a match is found, the value of *tagVariable* is appended as tag to the image name. Note that it is also possible to specify digests in the containers input for artifact substitution.
+In the above example, the tasks tries to find matches for the images <code>foo/demo</code> and <code>bar/demo</code> in the image fields of manifest files. If a match is found, the values of <code>tagVariable1</code> and <code>tagVariable2</code> are appended as tags to the image name. You can is also specify digests in the containers input for artifact substitution.
 
 > [!NOTE]
-> While it is possible to author deploy, promote and reject actions with deployment strategy related inputs in YAML, support for ManualIntervention task is currently not in place for build pipeline. It is thus advisable to use the deployment strategy related actions and inputs in release pipelines in the following sequence:
-> 1. Deploy action with strategy: canary and percentage: $(someValue).
-> 1. ManualIntervention task so that one can pause the pipeline and compare the baseline with canary.
-> 1. Promote (run if ManualIntervention is resumed) and reject actions (run if ManualIntervention is rejected).
+> While you can author deploy, promote and reject actions with YAML input related to deployment strategy, support for a Manual Intervention task is currently unavailable for build pipelines. For release pipelines, we advise you to use actions and input related to deployment strategy in the following sequence:
+> 1. A deploy action with <code>strategy: canary</code> and <code>percentage: $(<i>someValue</i>)</code>.
+> 1. A Manual Intervention task so that you can pause the pipeline and compare the baseline variant with the canary variant.
+> 1. Promote actions that run if a Manual Intervention task is resumed and reject actions that run if a Manual Intervention task is rejected.
 
 ## Promote and reject actions
 
