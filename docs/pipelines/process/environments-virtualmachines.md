@@ -25,9 +25,10 @@ You can define environments in the “**Environments**” hub within the “**Pi
 3.	Choose “**Virtual Machines**” as a “**Resource**” to be added to the environment and click on “**Next**”
 4.	Choose Operating System (Windows/Linux), and **copy PS registration script**. 
 5.	Now run the copied script from an administrator PowerShell command prompt on each of the target VMs to be registered with this Environment.
-6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
     > [!NOTE]
-    > Personal Access Token of the logged in user is pre-inserted in the script which expires on the same day making the copied script unusable thereon.
+    > - Personal Access Token of the logged in user is pre-inserted in the script which expires on the same day making the copied script unusable thereon.
+    > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
+6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
 > [!div class="mx-imgBorder"]
 > ![VMcreation](_img/vm-creation.png)
 7.	For adding more VMs, you can view and copy the script again by clicking on “Add resource” and choosing “Virtual Machines” as resource. This script would remain same for all the VMs to be added to this environment. 
