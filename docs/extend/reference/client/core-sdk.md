@@ -20,5 +20,6 @@ The client SDK provides useful functions for web-based extensions.
 > While we progress our documentation here at docs.microsoft.com, follow our latest and greatest guidance here: https://developer.microsoft.com/en-us/azure-devops/develop/extensions. 10/28/2019
 > 
 
+## VSS SDK Reference 
 
-[!INCLUDE [apis](api/VSS/SDK/VSS_SDK/VSS.md)]
+[!INCLUDE [apis](../../../includes/extend/reference/client/api/VSS/SDK/VSS_SDK/VSS.md)]

@@ -39,7 +39,7 @@ By default, all contributors in a project are members of the User role on each h
 
 ## Agent pool security roles, project-level
 
-You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Agent Pools** page. For information on adding and managing agent queues, see  [Agent pools](../../pipelines/agents/pools-queues.md).    
+You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Agent Pools** page. For information on adding and managing agent pools, see  [Agent pools](../../pipelines/agents/pools-queues.md).    
 
 [!INCLUDE [temp](_shared/agent-queue-roles.md)]
 
@@ -47,13 +47,13 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Agent pool security roles, organization or collection-level
 
-You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the **Organization settings** or collection-level admin settings, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools and queues](../../pipelines/agents/pools-queues.md). 
+You [add users to the following security roles](../../pipelines/policies/set-permissions.md) from the **Organization settings** or collection-level admin settings, **Agent Pools** page. For information on adding and managing agent pools, see [Agent pools](../../pipelines/agents/pools-queues.md). 
 
 [!INCLUDE [temp](_shared/agent-pool-roles.md)]
 
 ## Deployment group security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
 
 [!INCLUDE [temp](_shared/deployment-group-roles.md)]
 
@@ -65,7 +65,7 @@ You [add users to the following roles](../../pipelines/policies/set-permissions.
 
 ## Library asset security roles: Variable groups and secure files
 
-You [add users to a library role](../../pipelines/policies/set-permissions.md#library) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
+You [add users to a library role](../../pipelines/policies/set-permissions.md) from **Pipelines** or **Build and Release**. To learn more about using these library assets, see [Variable groups](../../pipelines/library/variable-groups.md) and [Secure files](../../pipelines/library/secure-files.md)
 
 [!INCLUDE [temp](_shared/library-roles.md)]
 

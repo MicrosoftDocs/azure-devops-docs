@@ -94,7 +94,7 @@ Finally, at the [BUILD](https://buildwindows.com/) conference two weeks ago, we 
 
 ![Power BI integration](_img/5_15_09.png)
 
-That’s a wrap for sprint 82. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for sprint 82. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 
