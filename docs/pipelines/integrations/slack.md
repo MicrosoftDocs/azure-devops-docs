@@ -150,19 +150,7 @@ This command deletes all the subscriptions related to any pipeline in the projec
 > Only project administrators can run this command.
 
 
-## Threaded notifications
 
-To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular run of a pipeline will be linked together.
-
-The following example shows the compact view of linked notifications. 
-
-> [!div class="mx-imgBorder"]
-> ![Compact thread](./_img/integrations-teams/threads-pipelines-compact-view.png)
-
-When expanded, you can see all the of the linked notifications, as shown in the following example.
-
-> [!div class="mx-imgBorder"]
-> ![Expanded thread](./_img/integrations-teams/threads-pipelines-expanded-view.png)
 
 ## Commands reference
 
