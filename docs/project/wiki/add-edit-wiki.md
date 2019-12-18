@@ -45,13 +45,13 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 ## Commands
 
-|Commands  |description  |
+| Commands | Description |
 |---------|---------|
-|[az devops wiki show] #open-wiki  | Open a wiki
-|[az devops wiki page show](#view-a-wiki-page)    | Get the content of a page or open a page.        |
-|[az devops wiki page create](#add-a-wiki-page)   | Add a new page.        |
-|[az devops wiki page update](#edit-wiki-page)   |  Edit a page.       |
-|[az devops wiki page delete](#delete-wiki-page)   | Delete a page.        |
+| [az devops wiki show](#open-wiki) | Open a wiki |
+| [az devops wiki page show](#view-a-wiki-page) | Get the content of a page or open a page |
+| [az devops wiki page create](#add-a-wiki-page) | Add a new page |
+| [az devops wiki page update](#edit-wiki-page) | Edit a page |
+| [az devops wiki page delete](#delete-wiki-page) | Delete a page |
 
 ::: moniker-end
 
