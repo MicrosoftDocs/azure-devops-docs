@@ -40,22 +40,22 @@ These are the key benefits of this task:
 
 - **Deployment strategy**: Choosing the **canary** strategy with the **deploy** action leads to creation of workloads having names suffixed with "-baseline" and "-canary". The task supports two methods of traffic splitting:
 
-    - **Service Mesh Interface**: [Service Mesh Interface](https://smi-spec.io/) (SMI) abstraction allows configuration with service mesh providers like Linkerd and Istio. Also, the KubernetesManifest task maps SMI **TrafficSplit** objects to the stable, baseline, and canary services during the lifecycle of the deployment strategy.
-    
-           Canary deployments based on a service mesh and using this task are more accurate. This is because service mesh providers enable the granular split of percentage traffic. The enabling is via service registry and sidecar containers injected into pods alongside application containers.
+  - **Service Mesh Interface**: [Service Mesh Interface](https://smi-spec.io/) (SMI) abstraction allows configuration with service mesh providers like Linkerd and Istio. Also, the KubernetesManifest task maps SMI **TrafficSplit** objects to the stable, baseline, and canary services during the lifecycle of the deployment strategy.
+
+    Canary deployments based on a service mesh and using this task are more accurate. This is because service mesh providers enable the granular split of percentage traffic. The enabling is via service registry and sidecar containers injected into pods alongside application containers.
   
-    - **Only Kubernetes with no service mesh**: In the absence of a service mesh, you might not get the exact percentage split you want at the request level. But you might be able to perform canary deployments by using baseline and canary workload variants next to the stable variant.
+  - **Only Kubernetes with no service mesh**: In the absence of a service mesh, you might not get the exact percentage split you want at the request level. But you might be able to perform canary deployments by using baseline and canary workload variants next to the stable variant.
+
+    The service routes requests to pods of all three workload variants as the selector-label constraints are met. The KubernetesManifest task honors these requests when creating baseline and canary variants. This routing behavior achieves the intended effect of routing only a portion of total requests to the canary.
     
-           The service routes requests to pods of all three workload variants as the selector-label constraints are met. The KubernetesManifest task honors these requests when creating baseline and canary variants. This routing behavior achieves the intended effect of routing only a portion of total requests to the canary.
-    
-    Compare the baseline and canary workloads by using either a [Manual Intervention task](../utility/manual-intervention.md) in release pipelines or a [Delay task](../utility/delay.md) in YAML pipelines. Perform the comparison before using the promote/reject action of the task.
+  Compare the baseline and canary workloads by using either a [Manual Intervention task](../utility/manual-intervention.md) in release pipelines or a [Delay task](../utility/delay.md) in YAML pipelines. Perform the comparison before using the promote/reject action of the task.
 
 ## Deploy action
 
 <table>
   <thead>
     <tr>
-      <th>Parameter</th>
+      <th>Parameters</th>
       <th>Required or optional</th>
       <th>Description</th>
     </tr>
@@ -83,20 +83,19 @@ These are the key benefits of this task:
   <tr>
     <td><b>containers</b></td>
     <td>Optional</td>
-    <td>Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
-    <br/><br/>
-    Here's an example:
-    <pre>
-    containers: |
-      contosodemo.azurecr.io/foo:test1
-      contosodemo.azurecr.io/bar:test2
-    </pre>
+    <td>Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.<br/>
+    <br/>
+    Here's an example:<br/>
+    <code>containers: |</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/foo:test1</code><br/>
+    <code>&nbsp;&nbsp;contosodemo.azurecr.io/bar:test2</code><br/>
+    <br/>
     In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For the matches found, the tags <code>test1</code> and <code>test2</code> are substituted.</td>
   </tr>
   <tr>
     <td><b>imagePullSecrets</b></td>
     <td>Optional</td>
-    <td>Multiline input where each line contains the name of a docker-registry secret that has already been setup within the cluster. Each of these secret names is added under <b>imagePullSecrets</b> field for the workloads found in the input manifest files.</td>
+    <td>Multiline input where each line contains the name of a docker-registry secret that has already been setup within the cluster. Each of these secret names is added to the <b>imagePullSecrets</b> value for the workloads found in the input manifest files.</td>
   </tr>
   <tr>
     <td><b>strategy</b></td>
@@ -115,37 +114,31 @@ These are the key benefits of this task:
   <tr>
     <td><b>percentage</b></td>
     <td>Required if the <b>strategy</b> parameter value is <b>canary</b> and optional otherwise</td>
-    <td>The percentage used to compute the number of replicas of baseline and canary variants of the workloads found in manifest files.
+    <td>The percentage used to compute the number of replicas of baseline and canary variants of the workloads found in manifest files.<br/>
     <br/>
+    For the specified percentage input, calculate:<br/>
     <br/>
-    For the specified percentage input, calculate:
+    &nbsp;&nbsp;&nbsp;&nbsp;(<i>percentage</i> <b>&times;</b><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<i>number&nbsp;of&nbsp;desired&nbsp;replicas</i>) <b>/</b> 100<br/>
     <br/>
+    If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.<br/>
     <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;(<i>percentage</i> <b>&times;</b>
+    For example, assume deployment hello-world is in the input manifest file and contains &quot;replicas: 4&quot;. Also assume &quot;strategy: canary&quot; and &quot;percentage: 25&quot; are given as task input.<br/>
     <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<i>number&nbsp;of&nbsp;desired&nbsp;replicas</i>) <b>/</b> 100
-    <br/><br/>
-    If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.
-    <br/><br/>
-    For example, assume deployment hello-world is in the input manifest file and contains &quot;replicas: 4&quot;. Also assume &quot;strategy: canary&quot; and &quot;percentage: 25&quot; are given as task input.
-    <br/><br/>
     In this case, the deployments hello-world-baseline and hello-world-canary are created with one replica each. The baseline variant is created with the same image and tag as the stable version, meaning the four-replica variant prior to deployment. And the canary variant is created with the image and tag corresponding to the newly deployed changes.</td>
   </tr>
   <tr>
     <td><b>baselineAndCanaryReplicas</b></td>
     <td>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b> 
-    <td>When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.
-    <br/><br/>
-    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:
-    <blockquote>
-    strategy: canary
+    <td>When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.<br/>
     <br/>
-    trafficSplitMethod: smi
+    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:<br/>
     <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;percentage: 20
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;strategy: canary</code><br/>
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;trafficSplitMethod: smi</code><br/>
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;percentage: 20</code><br/>
+    <code>&nbsp;&nbsp;&nbsp;&nbsp;baselineAndCanaryReplicas: 1</code><br/>
     <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;baselineAndCanaryReplicas: 1
-    </blockquote>
     In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive 10% (half of the specified 20%). But instead of creating baseline and canary variants with three replicas each, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
   </tr>
 </table>
