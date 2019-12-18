@@ -3,7 +3,8 @@ ms.topic: include
 ---
 
 
-## Required and recommended activities   
+## Required and recommended activities  
+ 
 For your team to gain the greatest utility from the velocity chart, follow these required and recommended tasks.  
 
 **Required:** 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: View and configure team velocity
 titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
@@ -80,7 +80,6 @@ Use this article to learn:
 
 ## Open your backlog from the web portal
 
-
 ::: moniker range="azure-devops"
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
@@ -111,7 +110,7 @@ Use this article to learn:
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
+1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
