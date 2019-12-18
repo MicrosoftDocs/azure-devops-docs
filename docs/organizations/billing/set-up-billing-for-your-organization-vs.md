@@ -27,7 +27,7 @@ In this quickstart, learn to set up billing for your organization. Do so before 
 ## Prerequisites
 
 * If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
-* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
 > [!NOTE]
 > The Azure Free Trial isn't supported.
