@@ -60,6 +60,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 <a id="mitigate-risk">  </a>
 
 ## Mitigate risk through daily inspection
+
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
 <table>
