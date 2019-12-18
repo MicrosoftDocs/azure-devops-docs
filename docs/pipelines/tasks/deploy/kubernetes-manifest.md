@@ -52,31 +52,6 @@ These are the key benefits of this task:
 
 ## Deploy action
 
-<p>Test paragraph 1.</p>
-
-<p>Test paragraph 2.</p>
-
-<p>Test paragraph 3.</p>
-
-Test line 1.
-<br/>
-Test line 2.
-<br/>
-<br/>
-Test line 3.
-
-<pre>
-Test pre line 1.
-Test pre line 2.
-Test pre line 3.
-</pre>
-
-<code>Test code line 1.</code>
-<br/>
-<code>Test code line 2.</code>
-<br/>
-<code>Test code line 3.</code>
-
 <table>
   <thead>
     <tr>
@@ -108,17 +83,14 @@ Test pre line 3.
   <tr>
     <td><b>containers</b></td>
     <td>Optional</td>
-    <td>
-    Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
-    <br/>
-    <br/>
+    <td>Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.
+    <br/><br/>
     Here's an example:
-    <br/>
-    <code>containers: |</code><br/><code>&nbsp&nbspcontosodemo.azurecr.io/foo:test1</code>
-    <br/>
-    <code>&nbsp&nbspcontosodemo.azurecr.io/bar:test2</code>
-    <br/>
-    <br/>
+    <pre>
+    containers: |
+      contosodemo.azurecr.io/foo:test1
+      contosodemo.azurecr.io/bar:test2
+    </pre>
     In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For the matches found, the tags <code>test1</code> and <code>test2</code> are substituted.</td>
   </tr>
   <tr>
@@ -135,11 +107,9 @@ Test pre line 3.
     <td><b>trafficSplitMethod</b></td>
     <td>Optional</td>
     <td>Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.
-    <br/>
-    <br/>
+    <br/><br/>
     For value <b>smi</b>, the percentage traffic split is done at the request level using service mesh. Service mesh has to be setup by a cluster admin. This task handles orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI.
-    <br/>
-    <br/>
+    <br/><br/>
     For value <b>pod</b>, the percentage split isn't possible at the request level in the absence of service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary as a percentage of replicas specified in the input manifests for the stable variant.</td>
   </tr>
   <tr>
@@ -154,34 +124,28 @@ Test pre line 3.
     &nbsp;&nbsp;&nbsp;&nbsp;(<i>percentage</i> <b>&times;</b>
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;<i>number&nbsp;of&nbsp;desired&nbsp;replicas</i>) <b>/</b> 100
-    <br/>
-    <br/>
+    <br/><br/>
     If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.
-    <br/>
-    <br/>
+    <br/><br/>
     For example, assume deployment hello-world is in the input manifest file and contains &quot;replicas: 4&quot;. Also assume &quot;strategy: canary&quot; and &quot;percentage: 25&quot; are given as task input.
-    <br/>
-    <br/>
+    <br/><br/>
     In this case, the deployments hello-world-baseline and hello-world-canary are created with one replica each. The baseline variant is created with the same image and tag as the stable version, meaning the four-replica variant prior to deployment. And the canary variant is created with the image and tag corresponding to the newly deployed changes.</td>
   </tr>
   <tr>
     <td><b>baselineAndCanaryReplicas</b></td>
     <td>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b> 
     <td>When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.
-    <br/>
-    <br/>
+    <br/><br/>
     For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:
+    <blockquote>
+    strategy: canary
     <br/>
-    <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;strategy: canary
-    <br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;trafficSplitMethod: smi
+    trafficSplitMethod: smi
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;percentage: 20
     <br/>
     &nbsp;&nbsp;&nbsp;&nbsp;baselineAndCanaryReplicas: 1
-    <br/>
-    <br/>
+    </blockquote>
     In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive 10% (half of the specified 20%). But instead of creating baseline and canary variants with three replicas each, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
   </tr>
 </table>
