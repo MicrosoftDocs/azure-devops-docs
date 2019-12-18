@@ -182,7 +182,8 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
 
    ![Install Azure Pipelines extension on GitHub approval](../_img/python/github-pipelines-install-02.png)
 
-1. On the **Configure your pipeline** screen, select **Maven package Java project Web App to Linux on Azure**
+1. On the **Configure your pipeline** screen, select **Maven package Java project Web App to Linux on Azure**.
+
 Your new pipeline appears.
 
 When prompted, select the Azure subscription in which you created your Web App. 
@@ -191,27 +192,27 @@ When prompted, select the Azure subscription in which you created your Web App.
 
 Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of *stages*, *Jobs* and *steps*, where each step contains the details for different *tasks* and *scripts*. 
 
-The YAML file contains the following key elements:
-
-   - The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
-   - The `variables` which parameterize the YAML template
-      > [!Tip]
-      > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
-   - The `stages`
-      - Build `stage`, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
-      - Deploy `stage` that also creates an Environment with default name same as the Web App. You can choose to modify the environment name.
-   - Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
-   - The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands. 
-
 1. Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
 
-1. After you've looked at what the pipeline does, select Save and run, after which you're prompted for a commit message because Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select Save and run again to see your pipeline in action.
 
 ### YAML pipeline explained
 
-1. Let us understand the steps under Build stage further:
+The YAML file contains the following key elements:
 
-   ```yaml
+- The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
+- The `variables` which parameterize the YAML template
+   > [!Tip]
+   > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
+- The `stages`
+   - Build `stage`, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
+   - Deploy `stage` that also creates an Environment with default name same as the Web App. You can choose to modify the environment name.
+- Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
+- The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands. 
+
+- The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
+The we have script based task which creates a virtual environment and installs dependencies from file (requirements.txt).
+
+```yaml
    steps:
    - task: UsePythonVersion@0
       inputs:
@@ -226,10 +227,9 @@ The YAML file contains the following key elements:
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
    ```
-The first task in the  code is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
-The we have script based task which creates a virtual environment and installs dependencies from file (requirements.txt).
 
-1. This step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
+
+- Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
 
    ```yaml
    - task: ArchiveFiles@2
@@ -252,7 +252,7 @@ The we have script based task which creates a virtual environment and installs d
 
 Then we have the task to upload the artifacts.
 
-1. In the Deploy stage, we use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app-deployment.md?view=azure-devops) task to deploy the *.zip* file to the App Service you identified by the `ConnectedServiceName` and `WebAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+- In the Deploy stage, we use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app-deployment.md?view=azure-devops) task to deploy the *.zip* file to the App Service you identified by the `ConnectedServiceName` and `WebAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
     - task: AzureRMWebAppDeployment@4
