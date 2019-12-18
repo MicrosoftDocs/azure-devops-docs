@@ -155,9 +155,8 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
 > [!Tip]
 > If you need to use an Azure subscription from a different email account, follow the instructions on [Create an Azure Resource Manager service connection with an existing service principal](../library/connect-to-azure.md?view=azure-devops#create-an-azure-resource-manager-service-connection-with-an-existing-service-principal).
 
-## Create and run an initial pipeline
 
-In this section, you create a simple starter pipeline, to examine the general structure and familiarize yourself with the Azure Pipelines workflow. In the next section, you add specific steps to build and deploy your Python app.
+## Create a Python-specific pipeline to deploy to App Service
 
 1. From your project page left navigation, select **Pipelines**.
 
@@ -183,64 +182,54 @@ In this section, you create a simple starter pipeline, to examine the general st
 
    ![Install Azure Pipelines extension on GitHub approval](../_img/python/github-pipelines-install-02.png)
 
-1. On the **Configure your pipeline** screen, select **Starter pipeline**:
+1. On the **Configure your pipeline** screen, select **Maven package Java project Web App to Linux on Azure**
+Your new pipeline appears.
 
-   ![Selecting a pipeline configuration](../_img/python/select-configuration.png)
+When prompted, select the Azure subscription in which you created your Web App. 
+   - Select the Web App.
+   - Select Validate and configure.
 
-   Azure DevOps opens an editor for a file called *azure-pipelines.yml*:
+Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of *stages*, *Jobs* and *steps*, where each step contains the details for different *tasks* and *scripts*. 
 
-   ![A new azure-pipelines.yml file](../_img/python/review-yaml-pipeline.png)
-
-   This YAML file defines the pipeline as a series of *steps*, where each step contains the details for different *tasks* and *scripts*. The YAML file contains the following key elements:
+The YAML file contains the following key elements:
 
    - The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
-   - The `pool` element specifies one or more virtual machines (VMs) in which the pipeline runs. By default, this element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
-   - The `steps` element contains discrete pieces of the pipeline. The starter pipeline has only two simple scripts that echo messages to the console.
+   - The `variables` which parameterize the YAML template
+      > [!Tip]
+      > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
+   - The `stages`
+      - Build `stage`, which builds your project, and a Deploy stage, which deploys it to Azure as a Linux web app.
+      - Deploy `stage` that also creates an Environment with default name same as the Web App. You can choose to modify the environment name.
+   - Each stage has a `pool` element that specifies one or more virtual machines (VMs) in which the pipeline runs the `steps`. By default, the `pool` element contains only a single entry for an Ubuntu VM. You can use a pool to run tests in multiple environments as part of the build, such as using different Python versions for creating a package.
+   - The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands. 
 
-1. Select **Save and run** at upper right. 
-   
-1. You're prompted for a commit message, because Azure Pipelines adds the *azure-pipelines.yml* file to your repository. After editing the message, select **Save and run** again.
+1. Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
 
-Azure Pipelines displays a view of the pipeline's progress. For each step you see an output window:
+1. After you've looked at what the pipeline does, select Save and run, after which you're prompted for a commit message because Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select Save and run again to see your pipeline in action.
 
-![Output of a build in progress](../_img/python/build-output.png)
+### YAML pipeline explained
 
-Once the build is complete, you can select any of the tasks to review its output. Because the starter pipeline doesn't do anything except echo messages to the console, the only results to see at this point are the tasks outputs.
-
-To see a history of builds, their triggering commits, and their success or failure, select **Pipeline** > **Builds**.
-
-## Create a Python-specific pipeline to deploy to App Service
-
-In this section, you replace the steps in the starter pipeline with specific steps to deploy your app's code to Azure App Service. All the steps in the pipeline run on a computer called the *build agent*, which is different from the computer that runs your App Service. The agent's job is to follow the instructions in the pipeline, so the agent must be configured with any software that the instructions require.
-
-1. On the project page left navigation, select **Pipelines** > **Builds**. Select the build pipeline you want to configure, and then select **Edit** at upper right.
-
-   ![Edit button for a build pipeline](../_img/python/edit-pipeline.png)
-
-1. In *azure-pipelines.yml*, delete the opening comments, and then add the following lines that define the two variables `ConnectedServiceName` and `WebAppName`. Replace `<your-service-connection>` with the name you gave the Azure service connection, and `<your-appservice>` with your App Service name. These two values identify the exact App Service to use to deploy your code.
-
-   ```yaml
-   variables:
-     ConnectedServiceName: '<your-service-connection>'
-     WebAppName: '<your-appservice>'
-   ```
-
-   > [!Tip]
-   > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
-
-1. Replace the `steps` element, and the two `script` elements within it, with the following code:
+1. Let us understand the steps under Build stage further:
 
    ```yaml
    steps:
    - task: UsePythonVersion@0
-     inputs:
-       versionSpec: '3.6'
-       architecture: 'x64'
+      inputs:
+        versionSpec: '$(pythonVersion)'
+        displayName: 'Use Python $(pythonVersion)'
+   - script: |
+        python -m venv antenv
+        source antenv/bin/activate
+        python -m pip install --upgrade pip
+        pip install setup
+        pip install -r requirements.txt
+      workingDirectory: $(projectRoot)
+      displayName: "Install requirements"
    ```
+The first task in the  code is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
+The we have script based task which creates a virtual environment and installs dependencies from file (requirements.txt).
 
-   The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands. The task in the preceding code is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
-
-1. This step creates the *.zip* file that the last step in the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
+1. This step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
 
    ```yaml
    - task: ArchiveFiles@2
@@ -251,14 +240,19 @@ In this section, you replace the steps in the starter pipeline with specific ste
        archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
        replaceExistingArchive: true
        verbose: # (no value); this input is optional
+   - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+     displayName: 'Upload package'
+     artifact: drop
    ```
 
-   You use `$()` in a parameter value to reference variables. The built-in `Build.SourcesDirectory` variable contains the location on the build agent where the pipeline cloned the app code. The `archiveFile` parameter indicates where to place the *.zip* file. In this case, the `archiveFile` parameter uses the built-in variable `Build.ArtifactsStagingDirectory`.
+   You use `$()` in a parameter value to reference variables. The built-in `Build.SourcesDirectory` variable contains the location on the build agent where the pipeline cloned the app code. The `archiveFile` parameter indicates where to place the *.zip* file. In this case, the `archiveFile` parameter uses the built-in variable `Build.ArtifactsStagingDirectory`. 
 
    > [!Important]
    > When deploying to Azure App Service, be sure to use `includeRootFolder: false`. Otherwise, the contents of the *.zip* file are put in a folder named *s*, for "sources," which is replicated on the App Service. The App Service on Linux container then can't find the app code.
 
-1. Finally, use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app-deployment.md?view=azure-devops) task to deploy the *.zip* file to the App Service you identified by the `ConnectedServiceName` and `WebAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+Then we have the task to upload the artifacts.
+
+1. In the Deploy stage, we use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app-deployment.md?view=azure-devops) task to deploy the *.zip* file to the App Service you identified by the `ConnectedServiceName` and `WebAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
     - task: AzureRMWebAppDeployment@4
@@ -280,49 +274,6 @@ In this section, you replace the steps in the starter pipeline with specific ste
 
     Also, because the *python-vscode-flask-tutorial* repository contains the same startup command in a file named *startup.txt*, you could specify that file in the `StartupCommand` parameter rather than the command, by using `StartupCommand: 'startup.txt'`. 
 
-1. Your final *azure-pipelines.yml* file should appear as follows, using your values for `<your-service-connection>` and `<your-appservice>`. If you're using your own app code, you might have a different `StartupCommand` at the end, or none at all. 
-
-   ```yaml
-   variables:
-     ConnectedServiceName: '<your-service-connection>'
-     WebAppName: '<your-appservice>'
-
-   trigger:
-   - master
-
-   pool:
-     name: Hosted Ubuntu 1604
-
-   steps:
-   - task: UsePythonVersion@0
-     inputs:
-       versionSpec: '3.6'
-       architecture: 'x64'
-
-   - task: ArchiveFiles@2
-     inputs:
-       rootFolderOrFile: '$(Build.SourcesDirectory)'
-       includeRootFolder: false
-       archiveType: 'zip'
-       archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
-       replaceExistingArchive: true
-       verbose: # Optional
-
-   - task: AzureRMWebAppDeployment@4
-     displayName: Azure App Service Deploy
-     inputs:
-       appType: webAppLinux
-       RuntimeStack: 'PYTHON|3.6'
-       ConnectedServiceName: $(ConnectedServiceName)
-       WebAppName: $(WebAppName)
-       Package: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
-
-       # The following command is specific to the python-sample-vscode-flask-tutorial code.
-       # You may or may not need a startup command for your own app.
-
-       StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
-   ```
-
 ## Run the pipeline
 
 You're now ready to try it out! 
@@ -331,9 +282,7 @@ You're now ready to try it out!
    
 1. Select **Run** on the pipeline editor, and select **Run** again in the **Run pipeline** dialog box. Azure Pipelines queues another build, acquires an available build agent, and has that build agent run the pipeline.
    
-   The build takes a few minutes to complete, especially the deployment step. During deployment, the dependencies in *requirements.txt* should be deployed on App Service automatically. You should see green checkmarks next to each of the steps:
-   
-   ![Report for a completed build](../_img/python/build-complete.png)
+   The pipeline takes a few minutes to complete, especially the deployment step. During deployment, the dependencies in *requirements.txt* should be deployed on App Service automatically. You should see green checkmarks next to each of the steps.
    
    If there's an error in the build, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting **Edit pipeline**:
    
