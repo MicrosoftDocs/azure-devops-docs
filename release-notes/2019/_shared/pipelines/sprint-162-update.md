@@ -91,17 +91,18 @@ One of the most requested features in Environments was VM deployments. With this
 
 A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a set of machines (rolling set) in each iteration. 
 
-For example, a rolling deployment updates up to five targets in each iteration. `maxParallel` will determine the number of targets that can be deployed in parallel. The selection accounts for the percentage of targets that must remain available at any time, excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+For example, below rolling deployment updates up to five targets in each iteration. `maxParallel` will determine the number of targets that can be deployed in parallel. The selection accounts for the number of targets that must remain available at any time, excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
 ```yaml
 jobs:
 - deployment:
-  environment: musicCarnivalProd
-  pool:
-    name: musicCarnivalProdPool
+  displayName: web
+  environment:
+    name: musicCarnivalProd
+    resourceType: VirtualMachine
   strategy:                 
     rolling:
-      maxParallel: 5
+      maxParallel: 5 #for percentages, mention as x%
       preDeploy:
         steps:
         - script: echo initialize, cleanup, backup, install certs...
@@ -112,9 +113,8 @@ jobs:
         steps:
         - script: echo routing traffic...   
       postRouteTaffic:
-        pool: server
         steps:          
-        - task: AzureMonitor  
+        - script: echo health check post routing traffic...  
       on:
         failure:
           steps:

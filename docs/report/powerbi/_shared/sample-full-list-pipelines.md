@@ -2,10 +2,10 @@
 ms.topic: include
 ---
 
-- [Outcome summary](/azure/devops/report/powerbi/sample-pipelines-outcomesummary)  
-- [Pass rate trend](/azure/devops/report/powerbi/sample-pipelines-passratetrend)  
-- [Stage wise failures](/azure/devops/report/powerbi/sample-pipelines-stagewisefailures)  
+- [Outcome summary](/azure/devops/report/powerbi/sample-pipelines-outcome-summary)  
+- [Pass rate trend](/azure/devops/report/powerbi/sample-pipelines-pass-rate-trend)  
+- [Stage wise failures](/azure/devops/report/powerbi/sample-pipelines-stagewise-failures)  
 - [Duration](/azure/devops/report/powerbi/sample-pipelines-duration)  
-- [Duration trend](/azure/devops/report/powerbi/sample-pipelines-durationtrend)  
-- [Task duration](/azure/devops/report/powerbi/sample-pipelines-taskduration)  
-- [Task duration trend](/azure/devops/report/powerbi/sample-pipelines-taskdurationtrend)  
+- [Duration trend](/azure/devops/report/powerbi/sample-pipelines-duration-trend)  
+- [Task duration](/azure/devops/report/powerbi/sample-pipelines-task-duration)  
+- [Task duration trend](/azure/devops/report/powerbi/sample-pipelines-task-duration-trend)  
