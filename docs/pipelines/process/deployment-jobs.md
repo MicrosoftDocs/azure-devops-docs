@@ -125,30 +125,24 @@ Rolling deployments can be configured by specifying the keyword `rolling:` under
 ```YAML
 strategy:
   rolling:
-    maxParallel: [ number or percentage ]
+    maxParallel: [ number or percentage as x% ]
     preDeploy:        
-        pool: [ server | pool ] # see pool schema        
-        steps:
-        - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+      steps:
+      - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
     deploy:          
-      pool: [ server | pool ] # see pool schema        
       steps:
       ...
     routeTraffic:         
-      pool: [ server | pool ]         
       steps:
       ...        
     postRouteTraffic:          
-      pool: [ server | pool ]        
       steps:
       ...
     on:
       failure:         
-        pool: [ server | pool ]           
         steps:
         ...
       success:          
-        pool: [ server | pool ]           
         steps:
         ...
 ```
@@ -280,7 +274,6 @@ In the next example, the rolling strategy for Virtual machines updates upto 5 ta
 jobs: 
 - deployment: VMDeploy
   displayName: web
-  pool: smarthotel-dev
   environment:
     name: smarthotel-dev
     resourceType: VirtualMachine
@@ -289,9 +282,9 @@ jobs:
       maxParallel: 5  #for percentages, mention as x%
       preDeploy:
         steps:
-          - download: current
-            artifact: drop
-          - script: echo initialize, cleanup, backup, install certs
+        - download: current
+          artifact: drop
+        - script: echo initialize, cleanup, backup, install certs
       deploy:
         steps:
         - task: IISWebAppDeploymentOnMachineGroup@0
@@ -301,11 +294,10 @@ jobs:
             Package: '$(Pipeline.Workspace)/drop/**/*.zip'
       routeTraffic:
         steps:
-          - script: echo routing traffic
+        - script: echo routing traffic
       postRouteTraffic:
-        pool : server
         steps:
-          - task: AzureMonitor
+        - script: echo health check post-route traffic
       on:
         failure:
           steps:
