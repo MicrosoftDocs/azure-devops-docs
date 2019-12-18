@@ -220,7 +220,7 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-teams.png)
 
-If these steps don't resolve your authentication issue, please reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+If these steps don't resolve your authentication issue, please out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 
