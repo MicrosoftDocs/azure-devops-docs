@@ -62,7 +62,20 @@ access policies for your organization](../../organizations/accounts/change-appli
     > [!div class="mx-imgBorder"]
     > ![Sign in prompt image ](./_img/integrations-slack/sign-in.png)
 
-2.	To start monitoring a repository, use the following slash command inside a channel:
+2.	To start monitoring all Git repositories in a project, use the following slash command inside a channel:
+
+    ```
+    /azrepos subscribe [project url]
+    ```
+    The project URL can be to any page within your project (except URLs to repositories).
+
+    For example:
+
+    ```
+    /azrepos subscribe https://dev.azure.com/myorg/myproject/
+    ```
+
+    You can also monitor a specific repository using the following command:
 
     ```
     /azrepos subscribe [repository url]
@@ -138,17 +151,34 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
+## Remove subscriptions and repositories from a channel
+
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+
+	```
+	/azrepos unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	/azrepos unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
+
 ## Command reference
 
 The following table lists all the `/azrepos commands` you can use in your Slack channel.
 
 |Slash command	| Functionality |
 | -------------------- |----------------|
-| /azrepos subscribe [repository url]	| Subscribe to a repository to receive notifications |
+| /azrepos subscribe [repository url/ project url]	| Subscribe to a repository or all repositories in a project to receive notifications |
 | /azrepos subscriptions	| Add or remove subscriptions for this channel |
 | /azrepos signin	| Sign in to your Azure Repos organization |
 | /azrepos signout	| Sign out from your Azure Repos organization |
 | /azrepos feedback	| Report a problem or suggest a feature |
+| /azrepos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+
 
 ### Notifications in Private channels
 
@@ -169,7 +199,7 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-slack.png)
 
-If these steps don't resolve your authentication issue, contact us at `AzureDevOpsSlackApps@microsoft.com`.
+If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 
