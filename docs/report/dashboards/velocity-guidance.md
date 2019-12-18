@@ -22,6 +22,13 @@ Velocity metrics provide useful information to support the following team and pr
 - Forecasting future sprints and the backlog items that a team can complete   
 - A guide for determining how well the team estimates and meets their planned commitments 
 
+::: moniker range=">= azure-devops-2019"
+
+## Velocity chart types
+
+::: moniker-end
+
+
 ::: moniker range="azure-devops"
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:  
@@ -30,13 +37,6 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 - Work completed later than planned
 - Amount of work not completed   
 
-You can configure each chart in the following ways: 
-- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
-- Count of work items that appear on the backlog
-- Number of iterations.   
-
-The widget supports some additional configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
- 
 #### [In-context Velocity chart](#tab/in-context)
 
 ![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](_img/velocity/analytics-velocity-azure-devops.png)
@@ -47,9 +47,18 @@ The widget supports some additional configuration options. To configure or view 
 
 ---
 
+
+You can configure each chart in the following ways: 
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations.   
+
+The widget supports some additional configuration options. To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
+ 
+
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2019"
 
 You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With the velocity widget, you can quickly determine the following information:  
 - Planned velocity 
@@ -57,11 +66,7 @@ You have a choice of Velocity charts: the in-context Velocity chart you access f
 - Work completed later than planned
 - Amount of work not completed   
 
-Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration options: 
-- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
-- Count of work items that appear on the backlog
-- Number of iterations   
-- Advanced features.
+
 
 #### [In-context Velocity chart](#tab/in-context)
 
@@ -72,6 +77,12 @@ Both of these charts support visualizing team velocity for several sprints. The 
 ![Example Velocity widget, eight iterations](_img/commerce-team-velocity-eight-iterations.png) 
 
 ---
+
+Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration options: 
+- Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
+- Count of work items that appear on the backlog
+- Number of iterations   
+- Advanced features.
 
 ::: moniker-end
 
@@ -103,7 +114,7 @@ While velocity provides a measure of a team's ability to deliver work, you shoul
 
 Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
 
-::: moniker range="<= tfs-2018"
+::: moniker range="<= tfs-2017"
 
 ## Other types of velocity charts
 
