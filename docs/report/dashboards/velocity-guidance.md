@@ -18,15 +18,13 @@ ms.date: 12/17/2019
 [!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
-- Support sprint planning  
-- Forecast future sprints and the backlog items that a team can complete   
+- Sprint planning  
+- Forecasting future sprints and the backlog items that a team can complete   
 - A guide for determining how well the team estimates and meets their planned commitments 
-
-::: moniker-end
 
 ::: moniker range="azure-devops"
 
-You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following:  
+You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With both these charts, you can quickly determine the following information:  
 - Planned velocity 
 - Actual (completed) velocity 
 - Work completed later than planned
@@ -41,11 +39,11 @@ The widget supports some additional configuration options. To configure or view 
  
 #### [In-context Velocity chart](#tab/in-context)
 
-![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](_img/velocity/analytics-velocity-azure-devops.pn)
+![Web portal, in-context Velocity chart showing six sprints of in progress and completed work](_img/velocity/analytics-velocity-azure-devops.png)
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, 8 iterations](_img/commerce-team-velocity-eight-iterations.png) 
+![Example Velocity widget, eight iterations](_img/commerce-team-velocity-eight-iterations.png) 
 
 ---
 
@@ -53,13 +51,13 @@ The widget supports some additional configuration options. To configure or view 
 
 ::: moniker range="azure-devops"
 
-You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With the velocity widget, you can quickly determine the following:  
+You have a choice of Velocity charts: the in-context Velocity chart you access from a Backlogs page and the Velocity widget you add to a dashboard. With the velocity widget, you can quickly determine the following information:  
 - Planned velocity 
 - Actual (completed) velocity 
 - Work completed later than planned
 - Amount of work not completed   
 
-Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration ooptions: 
+Both of these charts support visualizing team velocity for several sprints. The Velocity widget, however, supports the following configuration options: 
 - Sum of [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md) or other supported numeric field assigned to backlog items.
 - Count of work items that appear on the backlog
 - Number of iterations   
@@ -71,7 +69,7 @@ Both of these charts support visualizing team velocity for several sprints. The 
 
 #### [Velocity widget](#tab/widget)
 
-![Example Velocity widget, 8 iterations](_img/commerce-team-velocity-eight-iterations.png) 
+![Example Velocity widget, eight iterations](_img/commerce-team-velocity-eight-iterations.png) 
 
 ---
 
@@ -101,7 +99,7 @@ By minimizing the size variability of your backlog items, you help strengthen th
 
 ## Velocity is not a KPI 
 
-While velocity provides a measure of a team's ability to deliver work over time, you shouldn't confuse it as a key performance indicator of the team. 
+While velocity provides a measure of a team's ability to deliver work, you shouldn't confuse it as a key performance indicator for the team. 
 
 Velocity simply provides an aid to determine team capacity. Nothing more, nothing less. Asking a team to increase their velocity, basically asks them to accomplish more with the same resources. This request will mostly likely lead to "Story points inflation" and lead to less desirable outcomes. 
 
@@ -117,15 +115,16 @@ For example, you can create a chart of the number of Product backlog items and b
 
 ::: moniker-end
 
-## Try this next
+## Next steps
+
 > [!div class="nextstepaction"]
-> [Configure or view velocity chart](team-velocity.md) 
+> [Forecast your sprints](../../boards/sprints/forecast.md)  
 
 ## Related articles  
 
-- [Forecast your sprints](../../boards/sprints/forecast.md) 
+- [Configure or view velocity chart](team-velocity.md) 
 - [Plan your sprint](../../boards/sprints/assign-work-sprint.md) 
 
 ### Add other teams
 
-If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those whose assigned area paths and iteration paths meet those set for the team. 
+If you work with several teams, and each team wants to work with their own backlog view, velocity chart, and forecast tool, you can [add teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those items assigned to area paths and iteration paths selected by the team. 
