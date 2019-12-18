@@ -192,7 +192,7 @@ When prompted, select the Azure subscription in which you created your Web App.
 
 Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of *stages*, *Jobs* and *steps*, where each step contains the details for different *tasks* and *scripts*. 
 
-1. Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
+Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
 
 
 ### YAML pipeline explained
