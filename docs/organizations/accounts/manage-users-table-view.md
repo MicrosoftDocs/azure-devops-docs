@@ -33,8 +33,6 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 
 To learn more, read [about access levels](../security/access-levels.md).
 
-## Prerequisites
-
 [!INCLUDE [prerequisites-add-users-org](../../_shared/prerequisites-add-users-org.md)]
 
 ## Manage users
