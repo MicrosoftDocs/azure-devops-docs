@@ -38,9 +38,9 @@ The following image shows an example of such a trend.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelineName}' "
+                &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedDate ge {startdate} "
                 &"and CanceledCount ne 1 "
         &") "
@@ -66,9 +66,9 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelineName}'
+	Pipeline/PipelineName eq '{pipelineName}'
 	and CompletedDate ge {startdate}
 	and CanceledCount ne 1
 	)
@@ -104,7 +104,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
@@ -258,9 +258,9 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipelineId eq {pipelineId} "
+                &"PipelineId eq {pipelineId} "
                 &"and CompletedDate ge {startdate} "
                 &"and CanceledCount ne 1 "
         &") "
@@ -285,9 +285,9 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipelineId eq {pipelineId}
+	PipelineId eq {pipelineId}
 	and CompletedDate ge {startdate}
 	and CanceledCount ne 1
 	)
@@ -320,9 +320,9 @@ You may want to view the pass rate trend of a pipeline for a particular **branch
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelineName}' "
+                &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedDate ge {startdate} "
                 &"and CanceledCount ne 1 "
         &") "
@@ -347,19 +347,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelineName}'
-	and CompletedDate ge {startdate}
-	and CanceledCount ne 1
-	)
+    Pipeline/PipelineName eq '{pipelineName}'
+    and CompletedDate ge {startdate}
+    and CanceledCount ne 1
+    )
 /groupby(
-	(Branch/BranchName, CompletedOn/Date),
-	aggregate
-	($count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount))
+    (Branch/BranchName, CompletedOn/Date),
+    aggregate
+    ($count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount))
 /compute(
 SucceededCount mul 100.0 div TotalCount as PassRate,
 FailedCount mul 100.0 div TotalCount as FailRate,
@@ -372,7 +372,7 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ### Filter by Build Reason
 
 You may want to view the pass rate trend of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow these additional steps along with what is defined previously in this article.
-- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
 
 #### [Power BI query](#tab/powerbi/)
@@ -381,14 +381,14 @@ You may want to view the pass rate trend of a pipeline for a particular **Build 
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelineName}' "
+                &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedDate ge {startdate} "
                 &"and CanceledCount ne 1 "
         &") "
         &"/groupby( "
-            &"(BuildReason, CompletedOn/Date), "
+            &"(RunReason, CompletedOn/Date), "
                 &"aggregate "
                 &"($count as TotalCount, "
             &"SucceededCount with sum as SucceededCount , "
@@ -408,19 +408,19 @@ in
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelineName}'
-	and CompletedDate ge {startdate}
-	and CanceledCount ne 1
-	)
+    Pipeline/PipelineName eq '{pipelineName}'
+    and CompletedDate ge {startdate}
+    and CanceledCount ne 1
+    )
 /groupby(
-	(BuildReason, CompletedOn/Date),
-	aggregate
-	($count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount))
+    (RunReason, CompletedOn/Date),
+    aggregate
+    ($count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount))
 /compute(
 SucceededCount mul 100.0 div TotalCount as PassRate,
 FailedCount mul 100.0 div TotalCount as FailRate,
@@ -433,8 +433,8 @@ PartiallySucceededCount mul 100.0 div TotalCount as PartiallySuccessfulRate)
 ### Pass rate trend for all project pipelines
 
 You may want to view the pass rate trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.  
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName  
-- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**  
+- Expand Pipeline into  Pipeline.PipelineName  
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**  
 - Select the Build pipeline from the slicer for which you need to see the outcome summary
 
 #### [Power BI query](#tab/powerbi/)
@@ -443,13 +443,13 @@ You may want to view the pass rate trend for all the pipelines of the project in
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
                 &"CompletedDate ge {startdate} "
                 &"and CanceledCount ne 1 "
                 &") "
         &"/groupby( "
-        &"(BuildPipeline/BuildPipelineName, CompletedOn/Date), "
+        &"(Pipeline/PipelineName, CompletedOn/Date), "
             &"aggregate "
                 &"($count as TotalCount, "
                 &"SucceededCount with sum as SucceededCount , "
@@ -469,18 +469,18 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	CompletedDate ge {startdate}
-	and CanceledCount ne 1
-	)
+    CompletedDate ge {startdate}
+    and CanceledCount ne 1
+    )
 /groupby(
-	(BuildPipeline/BuildPipelineName, CompletedOn/Date),
-	aggregate
-	($count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount))
+    (Pipeline/PipelineName, CompletedOn/Date),
+    aggregate
+    ($count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount))
 /compute(
 SucceededCount mul 100.0 div TotalCount as PassRate,
 FailedCount mul 100.0 div TotalCount as FailRate,

@@ -38,19 +38,19 @@ The following image shows an example of such a chart.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and TaskDisplayName eq '{taskname}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-        &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
-            &") "
+            &"    ) "
                 &"/compute( "
-                &"percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
+                &"percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
             &"/groupby( "
-                &"(TaskDuration80thPercentileInSeconds, BuildCompletedOn/Date)) "
-            &"&$orderby=BuildCompletedOn/Date asc "
+                &"(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date)) "
+            &"&$orderby=PipelineRunCompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -61,19 +61,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and TaskDisplayName eq '{taskname}'
-	and BuildCompletedOn/Date ge {startdate}
-	and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-	and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and TaskDisplayName eq '{taskname}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+    and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+    )
 /compute(
-	percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds)
+    percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)
 /groupby(
-	(TaskDuration80thPercentileInSeconds, BuildCompletedOn/Date))
-&$orderby=BuildCompletedOn/Date asc
+    (TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))
+&$orderby=PipelineRunCompletedOn/Date asc
 ```
 
 ***
@@ -94,7 +94,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return task results for a specific pipeline</td>
 <tr>
 <tr>
@@ -102,11 +102,11 @@ The following table describes each part of the query.
 <td>Return task results for a specific task</td>
 <tr>
 <tr>
-<td><code>and BuildCompletedOn/Date ge {startdate}</code></td>
+<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
 <td>Return task results for pipeline runs on or after the specified date</td>
 <tr>
 <tr>
-<td><code>and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')</code></td>
+<td><code>and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')</code></td>
 <td>Return task results from only the successful or partially successful pipeline runs</td>
 <tr>
 <td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>
@@ -118,16 +118,16 @@ The following table describes each part of the query.
 <tr><td><code>/compute(</code></td>
 <td>Start compute()</td>
 <tr>
-<tr><td><code>percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds)</code></td>
+<tr><td><code>percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)</code></td>
 <td>For each day, compute the 80th percentile of task durations of all tasks that match the filter criteria</td>
 <tr>
 <tr><td><code>/groupby(</code></td>
 <td>Start groupby()</td>
 <tr>
-<tr><td><code>(TaskDuration80thPercentileInSeconds, BuildCompletedOn/Date))</code></td>
+<tr><td><code>(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))</code></td>
 <td>Group by date of completion of pipeline run and calculated day wise 80th percentile task duration</td>
 <tr>
-<tr><td><code>&$orderby=BuildCompletedOn/Date asc</code></td>
+<tr><td><code>&$orderby=PipelineRunCompletedOn/Date asc</code></td>
 <td>Order the response by completed date</td>
 <tr>
 </tbody>
@@ -136,11 +136,11 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand BuildCompletedOn column
+### Expand PipelineRunCompletedOn column
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such an entity is BuildCompletedOn.
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. Here in this example, such an entity is PipelineRunCompletedOn.
 
-After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **BuildCompletedOn**.
+After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **PipelineRunCompletedOn**.
 
 1. Choose the expand button
 
@@ -195,15 +195,15 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/taskduration-fields.png)
+> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/taskdurationtrend-fields.png)
 
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line Chart**.
 
-1. Add the field "BuildCompletedOn.Date" to **Axis**.
+1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
 
-    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "TaskDuration80thPercentileInSeconds" to **Values**.
 
@@ -212,7 +212,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines task duration trend - Report](_img/odatapowerbi-pipelines/taskdurationtrend-fields.png)
+> ![Sample - Pipelines task duration trend - Report](_img/odatapowerbi-pipelines/taskdurationtrend-report.png)
 
 
 ## Additional queries
@@ -231,19 +231,19 @@ https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelinei
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineId eq {pipelineid} "
+                &"Pipeline/PipelineId eq {pipelineid} "
                 &"and TaskDisplayName eq '{taskname}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-        &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &") "
                 &"/compute( "
-                &"percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
+                &"percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
             &"/groupby( "
-                &"(TaskDuration80thPercentileInSeconds, BuildCompletedOn/Date)) "
-            &"&$orderby=BuildCompletedOn/Date asc "
+                &"(TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date)) "
+            &"&$orderby=PipelineRunCompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -253,19 +253,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-	https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
-	$apply=filter(
-		BuildPipeline/BuildPipelineId eq {pipelineid}
-		and TaskDisplayName eq '{taskname}'
-		and BuildCompletedOn/Date ge {startdate}
-		and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-		and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-		)
-	/compute(
-		percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds)
-	/groupby(
-		(TaskDuration80thPercentileInSeconds, BuildCompletedOn/Date))
-&$orderby=BuildCompletedOn/Date asc
+	https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
+$apply=filter(
+    Pipeline/PipelineId eq {pipelineid}
+    and TaskDisplayName eq '{taskname}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+    and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+    )
+/compute(
+    percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)
+/groupby(
+    (TaskDuration80thPercentileInSeconds, PipelineRunCompletedOn/Date))
+&$orderby=PipelineRunCompletedOn/Date asc
 ```
 
 ***
@@ -280,21 +280,21 @@ You may want to view the task duration trend calculated using other percentile v
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and TaskDisplayName eq '{taskname}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-        &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+        &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
             &") "
                 &"/compute( "
-                &"percentile_cont(ActivityDurationSeconds, 0.5, BuildCompletedDateSK) as TaskDuration50thPercentileInSeconds, "
-            &"percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds, "
-                &"percentile_cont(ActivityDurationSeconds, 0.95, BuildCompletedDateSK) as TaskDuration95thPercentileInSeconds) "
+                &"percentile_cont(ActivityDurationSeconds, 0.5, PipelineRunCompletedDateSK) as TaskDuration50thPercentileInSeconds, "
+            &"percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds, "
+                &"percentile_cont(ActivityDurationSeconds, 0.95, PipelineRunCompletedDateSK) as TaskDuration95thPercentileInSeconds) "
             &"/groupby( "
-        &"(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds, TaskDuration95thPercentileInSeconds, BuildCompletedOn/Date)) "
-    &"&$orderby=BuildCompletedOn/Date asc "
+        &"(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds, TaskDuration95thPercentileInSeconds, PipelineRunCompletedOn/Date)) "
+    &"&$orderby=PipelineRunCompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -304,21 +304,21 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and TaskDisplayName eq '{taskname}'
-	and BuildCompletedOn/Date ge {startdate}
-	and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-	and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-	)
+Pipeline/PipelineName eq '{pipelinename}'
+and TaskDisplayName eq '{taskname}'
+and PipelineRunCompletedOn/Date ge {startdate}
+and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+)
 /compute(
-	percentile_cont(ActivityDurationSeconds, 0.5, BuildCompletedDateSK) as TaskDuration50thPercentileInSeconds,
-	percentile_cont(ActivityDurationSeconds, 0.8, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds,
-	percentile_cont(ActivityDurationSeconds, 0.95, BuildCompletedDateSK) as TaskDuration95thPercentileInSeconds)
+percentile_cont(ActivityDurationSeconds, 0.5, PipelineRunCompletedDateSK) as TaskDuration50thPercentileInSeconds,
+percentile_cont(ActivityDurationSeconds, 0.8, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds,
+percentile_cont(ActivityDurationSeconds, 0.95, PipelineRunCompletedDateSK) as TaskDuration95thPercentileInSeconds)
 /groupby(
-	(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds, TaskDuration95thPercentileInSeconds, BuildCompletedOn/Date))
-&$orderby=BuildCompletedOn/Date asc
+(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds, TaskDuration95thPercentileInSeconds, PipelineRunCompletedOn/Date))
+&$orderby=PipelineRunCompletedOn/Date asc
 ```
 
 ***
@@ -337,19 +337,19 @@ You may want to view the duration trend of a task for a particular **branch** on
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and TaskDisplayName eq '{taskname}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-        &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
-        &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
-            &") "
+                &" Pipeline/PipelineName eq '{pipelinename}' "
+                &" and TaskDisplayName eq '{taskname}' "
+                &" and PipelineRunCompletedOn/Date ge {startdate} "
+        &" and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
+        &" and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
+            &" ) "
                 &"/compute( "
-                &"percentile_cont(ActivityDurationSeconds, 0.8, BranchSK, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
+                &" percentile_cont(ActivityDurationSeconds, 0.8, BranchSK, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
             &"/groupby( "
-                &"(TaskDuration80thPercentileInSeconds, Branch/BranchName, BuildCompletedOn/Date)) "
-            &"&$orderby=BuildCompletedOn/Date asc "
+                &" (TaskDuration80thPercentileInSeconds, Branch/BranchName, PipelineRunCompletedOn/Date)) "
+            &"&$orderby=PipelineRunCompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -360,19 +360,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and TaskDisplayName eq '{taskname}'
-	and BuildCompletedOn/Date ge {startdate}
-	and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-	and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and TaskDisplayName eq '{taskname}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+    and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+    )
 /compute(
-	percentile_cont(ActivityDurationSeconds, 0.8, BranchSK, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds)
+    percentile_cont(ActivityDurationSeconds, 0.8, BranchSK, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)
 /groupby(
-	(TaskDuration80thPercentileInSeconds, Branch/BranchName, BuildCompletedOn/Date))
-&$orderby=BuildCompletedOn/Date asc
+    (TaskDuration80thPercentileInSeconds, Branch/BranchName, PipelineRunCompletedOn/Date))
+&$orderby=PipelineRunCompletedOn/Date asc
 ```
 
 ***
@@ -392,18 +392,18 @@ You may want to view the task duration trend for all the pipeline tasks in a sin
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
         &") "
             &"/compute( "
-                &"percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
+                &"percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds) "
                 &"/groupby( "
-            &"(TaskDuration80thPercentileInSeconds, TaskDisplayName, BuildCompletedOn/Date)) "
-                &"&$orderby=BuildCompletedOn/Date asc "
+            &"(TaskDuration80thPercentileInSeconds, TaskDisplayName, PipelineRunCompletedOn/Date)) "
+                &"&$orderby=PipelineRunCompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -413,18 +413,18 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-	and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+    and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+    )
 /compute(
-	percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName, BuildCompletedDateSK) as TaskDuration80thPercentileInSeconds)
+    percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName, PipelineRunCompletedDateSK) as TaskDuration80thPercentileInSeconds)
 /groupby(
-	(TaskDuration80thPercentileInSeconds, TaskDisplayName, BuildCompletedOn/Date))
-&$orderby=BuildCompletedOn/Date asc
+    (TaskDuration80thPercentileInSeconds, TaskDisplayName, PipelineRunCompletedOn/Date))
+&$orderby=PipelineRunCompletedOn/Date asc
 ```
 
 ***

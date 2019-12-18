@@ -38,9 +38,9 @@ The following image shows an example of such a chart.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -59,16 +59,16 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -90,7 +90,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
@@ -130,7 +130,7 @@ The query returns some columns that you need to expand and flatten into its fiel
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
 
 
-### Expand the BuildCompletedOn column 
+### Expand the CompletedOn column 
 
 1. Choose the expand button.
 
@@ -222,9 +222,9 @@ https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelinei
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipelineId eq {pipelineId} "
+                &"PipelineId eq {pipelineId} "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -242,16 +242,16 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipelineId eq {pipelineId}
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    PipelineId eq {pipelineId}
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -267,9 +267,9 @@ You may want to view the duration trend calculated using other percentile value.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -289,18 +289,18 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5,CompletedDateSK) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.90,CompletedDateSK) as Duration90thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5,CompletedDateSK) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.90,CompletedDateSK) as Duration90thPercentileInSeconds)
 /groupby(
-	(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds, Duration90thPercentileInSeconds, CompletedOn/Date))
+    (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds, Duration90thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -320,9 +320,9 @@ You may want to view the duration trend of a pipeline for a particular **branch*
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -340,16 +340,16 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,BranchSK, CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,BranchSK, CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, Branch/BranchName, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, Branch/BranchName, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -359,8 +359,8 @@ $apply=filter(
 
 You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand BuildPipeline into BuildPipeline.BuildPipelineName
-- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
+- Expand Pipeline into Pipeline.PipelineName
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
 
 #### [Power BI query](#tab/powerbi/)
@@ -369,15 +369,15 @@ You may want to view the duration trend for all the pipelines of the project in 
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
                 &"CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
                 &") "
         &"/compute( "
-        &"percentile_cont(TotalDurationSeconds, 0.8,BuildPipelineId, CompletedDateSK) as Duration80thPercentileInSeconds) "
+        &"percentile_cont(TotalDurationSeconds, 0.8,PipelineId, CompletedDateSK) as Duration80thPercentileInSeconds) "
             &"/groupby( "
-                &"(Duration80thPercentileInSeconds, BuildPipeline/BuildPipelineName, CompletedOn/Date)) "
+                &"(Duration80thPercentileInSeconds, Pipeline/PipelineName, CompletedOn/Date)) "
                 &"&$orderby=CompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
@@ -388,15 +388,15 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,BuildPipelineId, CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,PipelineId, CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, BuildPipeline/BuildPipelineName, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, Pipeline/PipelineName, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
