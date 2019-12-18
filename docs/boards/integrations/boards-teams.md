@@ -140,8 +140,8 @@ Often, discussions in a channel necessitates creation of work items. You can use
 
 This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Pic: View subscriptions](./_img/integrations-teams/view-subscriptions.png)
+> [!div class="mx-imgBorder"]  
+> ![View subscriptions](./_img/integrations-teams/view-subscriptions.png)
 
 ## Search and share work items using compose extension
 
