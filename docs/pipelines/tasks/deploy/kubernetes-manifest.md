@@ -61,27 +61,27 @@ The following list shows the key benefits of this task:
   </thead>
   <tr>
     <td><b>action</b>
-    <td><blockquote>Required</blockquote><br/>
+    <td><blockquote>Required</blockquote>
     Acceptable values are <b>deploy</b>, <b>promote</b>, <b>reject</b>, <b>bake</b>, <b>scale</b>, <b>patch</b>, and <b>delete</b>.</td>
   </tr>
   <tr>
     <td><b>kubernetesServiceConnection</b></td>
-    <td><blockquote>Required</blockquote><br/>
+    <td><blockquote>Required</blockquote>
     The name of the <a href="../../library/service-endpoints.md#sep-kuber" data-raw-source="[Kubernetes service connection](../../library/service-endpoints.md#sep-kuber)">Kubernetes service connection</a>.</td>
   </tr>
   <tr>
     <td><b>namespace</b></td>
-    <td><blockquote>Required</blockquote><br/>
+    <td><blockquote>Required</blockquote>
     The namespace within the cluster to deploy to.</td>
   </tr>
   <tr>
     <td><b>manifests</b></td>
-    <td><blockquote>Required</blockquote><br/>
+    <td><blockquote>Required</blockquote>
     The path to the manifest files to be used for deployment. A <a href="../file-matching-patterns.md" data-raw-source="[file-matching pattern](../file-matching-patterns.md)"> file-matching pattern</a> is an acceptable value for this parameter.</td>
   </tr>
   <tr>
     <td><b>containers</b></td>
-    <td><blockquote>Optional</blockquote><br/>
+    <td><blockquote>Optional</blockquote>
     Fully qualified URLs of the images to be used for substitutions on the manifest files. This parameter accepts multiline values in newline-separated form for specifying multiple artifact substitutions.<br/>
     <br/>
     Here's an example:<br/>
@@ -93,17 +93,17 @@ The following list shows the key benefits of this task:
   </tr>
   <tr>
     <td><b>imagePullSecrets</b></td>
-    <td><blockquote>Optional</blockquote><br/>
+    <td><blockquote>Optional</blockquote>
     Multiline input where each line contains the name of a docker-registry secret that has already been set up within the cluster. Each of these secret names is added to the <b>imagePullSecrets</b> value for the workloads found in the input manifest files.</td>
   </tr>
   <tr>
     <td><b>strategy</b></td>
-    <td><blockquote>Optional</blockquote><br/>
+    <td><blockquote>Optional</blockquote>
     The deployment strategy used while applying manifest files on the cluster. Currently, <b>canary</b> is the only acceptable deployment strategy</td>
   </tr>
   <tr>
     <td><b>trafficSplitMethod</b></td>
-    <td><blockquote>Optional</blockquote><br/>
+    <td><blockquote>Optional</blockquote>
     Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/><br/>
     For the value <b>smi</b>, the percentage traffic split is done at the request level using service mesh. Service mesh must be set up by a cluster admin. This task handles orchestration of <a href="https://github.com/deislabs/smi-spec/blob/master/traffic-split.md" data-raw-source="TrafficSplit](https://github.com/deislabs/smi-spec/blob/master/traffic-split.md)">TrafficSplit</a> objects of SMI.
     <br/><br/>
@@ -111,13 +111,12 @@ The following list shows the key benefits of this task:
   </tr>
   <tr>
     <td><b>percentage</b></td>
-    <td><blockquote>Required if the <b>strategy</b> parameter value is <b>canary</b> and optional otherwise</blockquote><br/>
+    <td><blockquote>Required if the <b>strategy</b> parameter value is <b>canary</b> and optional otherwise</blockquote>
     The percentage that is used to compute the number of replicas of baseline and canary variants of the workloads found in manifest files.<br/>
     <br/>
     For the specified percentage input, calculate:<br/>
     <br/>
-    (<i>percentage</i> <b>&times;</b><br/>
-    <i>number&nbsp;of&nbsp;replicas</i>) <b>/</b> 100<br/>
+    (<i>percentage</i> <b>&times;</b> <i>number&nbsp;of&nbsp;replicas</i>) <b>/</b> 100<br/>
     <br/>
     If the result isn't an integer, the floor of the result is used when baseline and canary variants are created.<br/>
     <br/>
@@ -131,8 +130,8 @@ The following list shows the key benefits of this task:
   </tr>
   <tr>
     <td><b>baselineAndCanaryReplicas</b></td>
-    <td><blockquote>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b></blockquote><br/>
-    When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.<br/>
+    <td><blockquote>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b></blockquote>
+    When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane. But the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.<br/>
     <br/>
     For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:<br/>
     <br/>
@@ -182,6 +181,9 @@ The following list shows the key benefits of this task:
     <code>containers: |</code><br/>
     <code>&nbsp;&nbsp;contosodemo.azurecr.io/foo:test1</code><br/>
     <code>&nbsp;&nbsp;contosodemo.azurecr.io/bar:test2</code><br/>
+    <pre>containers: |
+      contosodemo.azurecr.io/foo:test1
+      contosodemo.azurecr.io/bar:test2</pre><br/>
     <br/>
     In this example, all references to <code>contosodemo.azurecr.io/foo</code> and <code>contosodemo.azurecr.io/bar</code> are searched for in the image field of the input manifest files. For the matches found, the tags <code>test1</code> and <code>test2</code> are substituted.</td>
   </tr>
@@ -229,14 +231,14 @@ The following list shows the key benefits of this task:
     <td>Optional, and relevant only if the <b>trafficSplitMethod</b> parameter value is <b>smi</b> 
     <td>When the <b>trafficSplitMethod</b> parameter value is <b>smi</b>, the percentage traffic split is controlled in the service mesh plane, but the actual number of replicas for canary and baseline variants can be controlled independently of the traffic split.<br/>
     <br/>
-    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant and that the following input is specified for the task:<br/>
+    For example, assume that the input deployment manifest specifies 30 replicas for the stable variant. Also assume that the following input is specified for the task:<br/>
     <br/>
     <code>strategy: canary</code><br/>
     <code>trafficSplitMethod: smi</code><br/>
     <code>percentage: 20</code><br/>
     <code>baselineAndCanaryReplicas: 1</code><br/>
     <br/>
-    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But instead baseline and canary variants with three replicas each being created, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
+    In this case, the stable variant receives 80% of the traffic, while the baseline and canary variants each receive half of the specified 20%. But instead, baseline and canary variants with three replicas each being created, the explicit count of baseline and canary replicas is honored. That is, only one replica is created for each of the baseline and canary variants.</td>
   </tr>
 </table>
 
@@ -258,7 +260,7 @@ steps:
       some-other-secret
 ```
 
-In the above example, the tasks tries to find matches for the images <code>foo/demo</code> and <code>bar/demo</code> in the image fields of manifest files. If a match is found, the values of <code>tagVariable1</code> and <code>tagVariable2</code> are appended as tags to the image name. You can is also specify digests in the containers input for artifact substitution.
+In the above example, the task tries to find matches for the images <code>foo/demo</code> and <code>bar/demo</code> in the image fields of manifest files. If a match is found, the values of <code>tagVariable1</code> and <code>tagVariable2</code> are appended as tags to the image name. You can also specify digests in the containers input for artifact substitution.
 
 > [!NOTE]
 > While you can author deploy, promote and reject actions with YAML input related to deployment strategy, support for a Manual Intervention task is currently unavailable for build pipelines. For release pipelines, we advise you to use actions and input related to deployment strategy in the following sequence:
@@ -293,15 +295,15 @@ In the above example, the tasks tries to find matches for the images <code>foo/d
   </tr>
   <tr>
     <td><code>containers</code><br/>Containers</td>
-    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files<br/>Example: contosodemo.azurecr.io/helloworld:test</td>
+    <td>(Optional) Fully qualified resource URL of the image to be used for substitutions on the manifest files<br/>Example: contosodemo.azurecr.io/helloworld: test</td>
   </tr>
   <tr>
     <td><code>imagePullSecrets</code><br/>Image pull secrets</td>
-    <td>(Optional) Multiline input where each line contains the name of a docker-registry secret that has already been setup within the cluster. Each of these secret names are added under imagePullSecrets field for the workloads found in the input manifest files</td>
+    <td>(Optional) Multiline input where each line contains the name of a docker-registry secret that has already been set up within the cluster. Each of these secret names is added under imagePullSecrets field for the workloads found in the input manifest files</td>
   </tr>
   <tr>
     <td><code>strategy</code><br/>Strategy</td>
-    <td>(Optional) Deployment strategy that was used in the deploy action prior to promote/reject. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
+    <td>(Optional) Deployment strategy that was used in the deploy action before promote/reject. Currently, &#39;canary&#39; is the only acceptable deployment strategy</td>
   </tr>
 </table>
 
@@ -320,7 +322,7 @@ In the above example, the tasks tries to find matches for the images <code>foo/d
   </tr>
   <tr>
     <td><code>secretType</code><br/>Secret type</td>
-    <td>(Required if action == secret) Acceptable values: dockerRegistry/generic. Set dockerRegistry option for creating/updating imagePullSecret in cluster to facilitate image pull from a private container registry<br/>Default value: dockerRegistry</td>
+    <td>(Required if action == secret) Acceptable values: dockerRegistry/generic. Set dockerRegistry option for creating/updating imagePullSecret in cluster to help image pull from a private container registry<br/>Default value: dockerRegistry</td>
   </tr>
   <tr>
     <td><code>secretName</code><br/>Secret name</td>
@@ -419,7 +421,7 @@ steps:
   </tr>
 </table>
 
-Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the subsequent deploy step for specifying path to the manifests that were produced by the bake step.
+Following is an example YAML snippet for baking manifest files from Helm charts. Note the usage of name input in the first task which is later referenced from the deploy step for specifying path to the manifests that were produced by the bake step.
 
 ```YAML
 steps:
@@ -505,7 +507,7 @@ steps:
   </tr>
   <tr>
     <td><code>resourceToPatch</code><br/>Resource to patch</td>
-    <td>(Required) Acceptablee values: file/name. Indicates whether a manifest file is to be used to identify the objects to be patched or if an individual object is to be identified by kind and name as the target for patch<br/>Default value: file</td>
+    <td>(Required) Acceptable values: file/name. Indicates whether a manifest file is to be used to identify the objects to be patched or if an individual object is to be identified by kind and name as the target for patch<br/>Default value: file</td>
   </tr>
   <tr>
     <td><code>resourceFiletoPatch</code><br/>File path</td>
