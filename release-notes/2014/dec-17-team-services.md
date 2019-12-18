@@ -60,12 +60,6 @@ The reparenting logic also works on the task board, making it easy to take a tas
 
 And, you might have noticed in the screenshot above that we made a small change to show a summary of all work not started and in progress on collapsed stories. All these changes came directly from your feedback. We’re happy to mark them as complete on UserVoice.
 
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2296825](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2296825)
-
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6769822](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6769822)
-
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087)
-
 ## New integrations: Slack and Azuqua
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](https://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](https://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.

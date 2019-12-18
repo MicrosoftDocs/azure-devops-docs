@@ -40,7 +40,7 @@ With today’s change, we’ve restricted these permissions to only team adminis
 
 ![Team permissions](_img/7_10_04.png)
 
-That’s it for sprint 50. As always let us know how we're doing on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice)
+That’s it for sprint 50. As always let us know how we're doing on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html), the [MSDN Forums](https://social.msdn.microsoft.com/Forums/TFService/threads), and [Twitter](https://twitter.com/search?q=%23tfservice)
 
 Thanks,
 

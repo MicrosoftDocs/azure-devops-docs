@@ -49,8 +49,6 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -101,8 +99,6 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -2758,7 +2754,7 @@ are denied all permissions except **View release pipeline** and
 
 ## Task group (Build and Release) permissions
 
-You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project
+You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
@@ -2779,7 +2775,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 ## Lab Management 
 
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
-You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd#permissions).
+You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
 
 By default, the project Readers groups have only View lab resources (Read) permissions.
 

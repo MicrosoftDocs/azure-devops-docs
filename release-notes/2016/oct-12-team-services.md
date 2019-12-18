@@ -41,7 +41,7 @@ You can revert changes on completed PRs.  Find the PR that introduced the bad ch
 
 ![revert](_img/10_12_06.png)
 
-If you have ideas on things you’d like to see, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services) to add your idea or vote for an existing one.
+If you have ideas on things you’d like to see, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 ## Commit page improvements
 We are making the user experience of the commit details page and commit history page modern and highly performant. You will be able to find and act on important information related to the commit at a bird’s-eye view. 
@@ -166,7 +166,7 @@ VSTS will now automatically recognize Visual Studio subscribers as they log into
 
 For this reason, there is no longer a need to assign users the Eligible Visual Studio/MSDN subscriber from the drop down menu.
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

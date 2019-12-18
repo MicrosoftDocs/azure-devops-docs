@@ -100,6 +100,18 @@ stages:
   - job: B2
 ```
 
+If you choose to specify a `pool` at the stage level, then all jobs defined in that stage will use that pool unless otherwise specified at the job-level.
+
+```yaml
+stages:
+- stage: A
+  pool: StageAPool
+  jobs:
+  - job: A1 # will run on "StageAPool" pool based on the pool defined on the stage
+  - job: A2 # will run on "JobPool" pool
+    pool: JobPool
+```
+
 The full syntax to specify a stage is:
 
 ```yaml
@@ -108,6 +120,7 @@ stages:
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
+  pool: string | pool
   variables: { string: string } | [ variable | variableReference ] 
   jobs: [ job | templateReference]
 ```
