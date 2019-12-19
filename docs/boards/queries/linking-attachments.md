@@ -289,7 +289,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="remote-link-count"/>
 <p>Remote Link Count</p></td>
-<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md#remote-link" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md#remote-link)">Add link to work items, Link to a remote work item</a>.</p>
+<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md)">Add link to work items, Link to a remote work item</a>.</p>
 <p>Reference Name=System.RemoteLinkCount, Data type=Integer</p></td>
 <td><p>All</p></td>
 </tr>
