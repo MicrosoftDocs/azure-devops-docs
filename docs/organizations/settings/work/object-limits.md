@@ -14,15 +14,17 @@ monikerRange: ">= tfs-2013"
 ms.date: 12/18/2019
 ---
 
-# Work tracking object limits
+# Work tracking operational, customization, and performance limits
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-This article details the limits placed on the number of projects and work tracking objects you can define or import. When customizing the work item types (WITs), be aware of the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+This article defines operational and object limits placed on work tracking and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-## Operations: Work items
+## Operations: Work items and queries 
 
-::: moniker range="<= azure-devops"
+::: moniker range="azure-devops"
+
+When defining work items or running queries, the following operational limits apply. 
 
 | Object | Limit |
 |--------|-------|
@@ -31,30 +33,19 @@ This article details the limits placed on the number of projects and work tracki
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
 | Attachment size | 60 MB | 
-| Work item links assigned to a work item | 1,000 | 
+| Queries  |  30 seconds | 
+| Query results | 20,000 items | 
+| Query length | 32,000 characters |
 
 #### Notes
 - If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). 
-
-
-## Operations: Backlogs and boards
-
-Default and maximum limits. 
-
-| User interface |  Limit | 
-|--------|-------|
-| Backlog | 999 work items | 
-| Board | ??? | 
-| Taskboard | 800 work items | 
-
-On-premises can update the backlog and taskboard limits through ProcessConfiguration.
-  
-Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
 ::: moniker-end
 
 
 ::: moniker range="<= azure-devops-2019" 
+
+When defining work items, the following operational limits apply. 
 
 | Object | Limit |
 |--------|-------|
@@ -64,9 +55,49 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 | Attachments added to a work item | 100 | 
 | Attachment size | 4 MB to 2 GB, see Note 1  | 
 
-
 #### Notes
 1. The default maximum size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
+
+
+::: moniker-end
+
+## Operations: Backlogs, boards, and teams
+
+::: moniker range="azure-devops"
+
+When working with teams, work item tags, backlogs, and boards, the following operational limits apply.  
+
+| User interface |  Limit | 
+|--------|-------|
+| Backlogs | 10,000 work items | 
+| Boards | ??? | 
+| Taskboard | 1000 tasks  | 
+| Teams | 5,000 per project | 
+| Work item tags | 150,000 tag definitions per project | 
+
+Each backlog can display up to 10,000 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
+When working with teams, work item tags, backlogs, and boards, the following operational limits apply.   Default and maximum limits. 
+
+| User interface |  Limit | 
+|--------|-------|
+| Backlogs | 999 work items | 
+| Boards | ??? | 
+| Taskboard | 800 work items | 
+| Teams | 5,000 per project | 
+| Work item tags | 150,000 tag definitions per project | 
+
+Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+
+For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md). 
+  
+::: moniker-end
+
 
 ::: moniker-end
 
@@ -74,7 +105,7 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 
 ::: moniker range="azure-devops" 
 
-The following table lists the maximum number of objects that you can define for the Inheritance and Hosted XML process models. While these represent hard limits, practical limits may 
+The following table lists the maximum number of objects that you can define for the Inheritance and Hosted XML process models. While these represent hard limits, practical limits may also apply. 
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
@@ -156,6 +187,8 @@ The following table lists the maximum number of objects that you can define for 
 
 ::: moniker-end
 
+
+
 ## Practical limits 
 
 Number of projects, 300 
@@ -165,12 +198,45 @@ Reportable fields
 
 Nesting of work items 
 
+
+## Import limits
+
+
 ## Related articles
 
-- [Customize your work tracking experience](../../../reference/customize-work.md)
-- [Customize a process when using Hosted XML](import-process/customize-process.md)
-- [Create an Inheritance process](manage-process.md)
 
+::: moniker range="azure-devops"
+
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [Create an Inheritance process](manage-process.md)
+- [Best practices](../../../integrate/concepts/integration-bestpractices.md)
+- [Naming restrictions and conventions](../naming-restrictions.md) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [About process customization and inherited processes](inheritance-process-model.md)
+- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Naming restrictions and conventions](../naming-restrictions.md) 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Naming restrictions and conventions](../naming-restrictions.md) 
+
+::: moniker-end
+
+
+## Related resources
+
+- [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview) 
+- [Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
 
 <!---
 
