@@ -50,7 +50,7 @@ You must also be a Project Contributor, or have the following permissions:
 * Edit release environment
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ## Set up your environment
@@ -228,7 +228,7 @@ You must be a Project Contributor, or have the following permissions:
 * Edit release stage
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
