@@ -32,19 +32,19 @@ A notification **subscription** is associated with a [supported event type](oob-
 
 Many useful email subscriptions are pre-defined and enabled by default in the system. These are known as **default subscriptions**. Default subscriptions are intended to provide out-of-box support for the most common notification scenarios. See the list of [available default subscriptions](oob-built-in-notifications.md).
 
-An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team notifications](howto-manage-team-notifications.md) or [manage organization level notifications](howto-manage-organization-notifications.md).
+An organization or team administrator can choose which of the default subscriptions to make available to their users. Learn how to [manage team notifications](manage-team-group-notifications.md) or [manage organization level notifications](manage-organization-notifications.md).
 
-Individual users can choose to opt out of any default subscription while other team members continue to be subscribed. Learn how to [manage personal notification subscriptions](howto-manage-personal-notifications.md).
+Individual users can choose to opt out of any default subscription while other team members continue to be subscribed. Learn how to [manage personal notification subscriptions](manage-your-personal-notifications.md).
 
 ### Custom email subscriptions
 
-**Custom email subscriptions** can be created by organization or team administrators which apply to all members of the organization or team. Learn how to [manage team notifications](howto-manage-team-notifications.md) or [manage organization notifications](howto-manage-organization-notifications.md).
+**Custom email subscriptions** can be created by organization or team administrators which apply to all members of the organization or team. Learn how to [manage team notifications](manage-team-notifications.md) or [manage organization notifications](manage-organization-notifications.md).
 
-Individuals can also create custom subscriptions which apply only to them. Learn how to [manage personal subscriptions](howto-manage-personal-notifications.md).
+Individuals can also create custom subscriptions which apply only to them. Learn how to [manage personal subscriptions](manage-your-personal-notifications.md).
 
 ### Custom service hook subscriptions
 
-**Service hooks subscriptions** can be used to integrate with third party services. When an Azure DevOps Services event matches a service hook subscription, a notification is delivered to the third party service. For example, when an Azure DevOps Services build completes, a notification can be delivered to a Slack channel with links back to the build artifact in Azure DevOps Services. To learn more, see [Integrating with third party services](howto-integrate-third-party-services.md).
+**Service hooks subscriptions** can be used to integrate with third party services. When an Azure DevOps Services event matches a service hook subscription, a notification is delivered to the third party service. For example, when an Azure DevOps Services build completes, a notification can be delivered to a Slack channel with links back to the build artifact in Azure DevOps Services. To learn more, see [Integrating with third party services](integrate-third-party-services.md).
 
 ## Notifications
 

@@ -125,4 +125,4 @@ Your group delivery settings are updated for notifications.
 
 ## Related articles
 
-* [Manage personal notification settings](howto-manage-personal-notifications.md)
+* [Manage personal notification settings](manage-your-personal-notifications.md)

@@ -413,12 +413,12 @@
     {
       "source_path": "docs/notifications/manage-personal-notifications.md",
       "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-notifications",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/install.md",
@@ -3272,7 +3272,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7892,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -12167,8 +12167,8 @@
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-notifications",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-manage-team-notifications-settings.md",

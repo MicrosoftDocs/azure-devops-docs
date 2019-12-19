@@ -55,11 +55,11 @@ An email is only generated if an Azure DevOps Services event matches _all_ of th
 
 ## Step 4: Check the "Skip initiator" option on the subscription
 
-The `Skip initiator` checkbox option on a subscription causes the initiator of the Azure DevOps Services event to be excluded from the recipient list of the generated email, while all others receive the event. For example, consider a subscription for a _work item changed_ event. You can choose `Skip initiator` to avoid being emailed for changes you make to the work item. [Learn more about excluding the initiator from notifications](howto-exclude-self-from-email.md).
+The `Skip initiator` checkbox option on a subscription causes the initiator of the Azure DevOps Services event to be excluded from the recipient list of the generated email, while all others receive the event. For example, consider a subscription for a _work item changed_ event. You can choose `Skip initiator` to avoid being emailed for changes you make to the work item. [Learn more about excluding the initiator from notifications](exclude-self-from-email.md).
 
 ## Step 5: Check "Do not deliver" setting for the organization
 
-Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](howto-manage-organization-notifications-settings.md). If the [delivery setting](#step-6-check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#step-6-check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
 
 ## Step 6: Check "Do not deliver" setting for your team or group
 
@@ -75,7 +75,7 @@ If a team or group subscription contains an @Me filter clause and the target ema
 
 ## Step 9: Do you have permission to see the event artifact?
 
-Recipients who don't have permission to view the artifact, don't receive an email, which contains event artifact data, such as a work item. The only way to know if an email was _filtered_ is to view notification delivery logs. Learn more about [enabling and retrieving subscription and delivery logging](howto-use-subscription-logging.md).
+Recipients who don't have permission to view the artifact, don't receive an email, which contains event artifact data, such as a work item. The only way to know if an email was _filtered_ is to view notification delivery logs. Learn more about [enabling and retrieving subscription and delivery logging](use-subscription-logging.md).
 
 ## Contact customer support
 

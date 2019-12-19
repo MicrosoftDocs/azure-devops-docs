@@ -19,7 +19,52 @@ monikerRange: '>= tfs-2015'
 You can change your preferred email address for notifications from your organization preferences profile page. Notifications are sent by default to the preferred email address for your organization profile. This is typically the email address you signed into Azure DevOps Services or Team Foundation Server (TFS) with.
 
 > [!NOTE]
-> Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
+> Your preferred email address applies across all of your organizations and can't be changed on a per-organization basis.
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. From your home page, open your user settings, and then select **Profile**.
+
+   ![Open Azure DevOps profile](_img/open-profile-user-settings-preview.png)
+
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+
+   ![Edit the About page](_img/edit-about-page-preview.png)
+
+
+
+#### [Current page](#tab/current-page) 
+
+1. To change your user preferences, open your profile menu, and then select **User settings**.
+
+   ![Open profile user settings](_img/open-profile-user-settings.png)
+
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+
+   ![Edit the About page](_img/edit-about-page.png)
+
+
+
+::: moniker-end
+
+* * *
+
+
+
+
+
+
+
+
+
+
+
+
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 
@@ -37,6 +82,6 @@ You can change your preferred email address for notifications from your organiza
 
 ## Related articles
 
-- [Manage personal notifications](howto-manage-personal-notifications.md)
-- [Manage team notifications](howto-manage-team-notifications.md)
-- [Manage organization notifications](howto-manage-organization-notifications.md)
+- [Manage personal notifications](manage-personal-notifications.md)
+- [Manage team notifications](manage-team-group-notifications.md)
+- [Manage organization notifications](manage-organization-notifications.md)

@@ -35,7 +35,7 @@ Please perform the following step to determine if it resolves the issue.
 
 ## Step 1: Check the notification statistics for unexpectedly high volume
 
-Poorly defined subscription filters or duplicate subscriptions might cause an unexpected high volume of notifications, causing a delay in the processing or delivery of emails. [Learn how to view and analyze notification statistics](howto-view-organization-notification-statistics.md)
+Poorly defined subscription filters or duplicate subscriptions might cause an unexpected high volume of notifications, causing a delay in the processing or delivery of emails. [Learn how to view and analyze notification statistics](view-organization-notification-statistics.md)
 
 ## Contact customer support
 
