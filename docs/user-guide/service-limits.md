@@ -46,6 +46,7 @@ Wikis defined for a project are limited to 1 GB per git repository.
 > To derive the size of a wiki/git repository, download the repo to your local computer, unzip the file, and then open the **Properties** for the corresponding folder.  
 
 ## Rate limiting
+
 Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked.
 
 See [Rate limits documentation](../integrate/concepts/rate-limits.md) for details
