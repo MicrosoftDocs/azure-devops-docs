@@ -12162,7 +12162,7 @@
     },
     {
       "source_path": "docs/notifications/howto-manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": true
     },
     {
@@ -12177,7 +12177,7 @@
     },
     {
       "source_path": "docs/notifications/howto-manage-organization-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
     "redirect_document_id": true
     },
     {
