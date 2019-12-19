@@ -47,6 +47,7 @@ For specific examples, choose one of the following articles listed under [Query 
 <ul>
 <li><a href="view-run-query.md#email-query" data-raw-source="[Email a query](view-run-query.md#email-query)">Email a query</a></li>
 <li><a href="using-queries.md#export-query" data-raw-source="[Export a query](using-queries.md#export-query)">Export a query</a></li>
+<li><a href="view-run-query.md" data-raw-source="[Favorite a query](view-run-query.md)">Favorite a query</a></li>	
 <li><a href="../backlogs/filter-backlogs.md" data-raw-source="[Filter a query](../backlogs/filter-backlogs.md)">Filter a query</a></li>
 <li><a href="using-queries.md#flat-list-query" data-raw-source="[Flat-list query](using-queries.md#flat-list-query)">Flat-list query</a></li>
 <li><a href="using-queries.md#group-clauses" data-raw-source="[Group a clause](using-queries.md#group-clauses)">Group a clause</a></li>
