@@ -14,11 +14,11 @@ monikerRange: ">= tfs-2013"
 ms.date: 12/18/2019
 ---
 
-# Work tracking operational, customization, and performance limits
+# Work tracking limits
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-This article defines operational and object limits placed on work tracking and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 ## Operations: Work items and queries 
 
@@ -199,7 +199,16 @@ Reportable fields
 Nesting of work items 
 
 
-## Import limits
+
+
+::: moniker range="azure-devops"
+
+## Rate limits
+
+
+## Migrate and import limits
+
+::: moniker-end
 
 
 ## Related articles
@@ -244,5 +253,10 @@ TBD
 
 - Naming restrictions 
 
+- persistence of work items - they don't delete 
+https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-about-usage-and-limits-for.html
+
+Usage limit warning -- can occur with a corrupt query 
+https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
 
 --> 

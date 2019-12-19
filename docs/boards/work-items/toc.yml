@@ -2,6 +2,8 @@
   href: about-work-items.md
 - name: Quick reference
   href: quick-ref.md
+- name: Work tracking limits
+  href: ../../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: "View & add work items"
@@ -9,26 +11,26 @@
     href: view-add-work-items.md 
   - name: "Add & update a work item"    
     displayName: follow, update status, Discussion  
-    href: ../backlogs/add-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/add-work-items.md?
   - name: Drive Git development
     displayName: create branch, new branch 
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../backlogs/connect-work-items-to-git-dev-ops.md
 - name: Tutorials
   items:
   - name: Follow work
     href: follow-work-items.md
   - name: Manage bugs
-    href: ../backlogs/manage-bugs.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/manage-bugs.md
   - name: Manage issues
-    href: ../backlogs/manage-issues-impediments.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/manage-issues-impediments.md
   - name: "Move, change, or delete"
-    href: ../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../backlogs/remove-delete-work-items.md
   - name: Link work items
-    href: ../backlogs/add-link.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/add-link.md?
   - name: Bulk modify (web)
-    href: ../backlogs/bulk-modify-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/bulk-modify-work-items.md
   - name: Copy/clone 
-    href: ../backlogs/copy-clone-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: ../backlogs/copy-clone-work-items.md
 - name: Concepts
   items:
   - name: Choose a process
@@ -39,7 +41,7 @@
     - name: Agile workflow
       href: guidance/agile-process-workflow.md
   - name: Basic process guidance
-    href: ../get-started/track-issues-tasks.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: ../get-started/track-issues-tasks.md
   - name: Scrum process guidance
     href: guidance/scrum-process.md
     items:
@@ -91,7 +93,7 @@
   - name: Agile glossary
     href: agile-glossary.md
   - name: Linking & traceability
-    href: ../queries/link-work-items-support-traceability.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
+    href: ../queries/link-work-items-support-traceability.md
   - name: "Workflow states & categories"
     href: workflow-and-state-categories.md
 - name: Samples
