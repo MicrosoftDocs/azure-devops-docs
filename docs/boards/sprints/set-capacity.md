@@ -123,7 +123,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 3. Now, set the **Activity** and **Capacity** per day for each team member. 
 
 	> [!NOTE]
-	> To change the **Activity** menu selection: see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited) for cloud services or an Inherited process, and [Add or modify a field, customize a picklist](../../reference/add-modify-field.md) for On-premises XML process. 
+	> To change the **Activity** menu selection: see [Add and manage fields](../../organizations/settings/work/customize-process-field.md) for cloud services or an Inherited process, and [Add or modify a field, customize a picklist](../../reference/add-modify-field.md) for On-premises XML process. 
 	> 
 	>The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the organization or project collection. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity" within the ProcessConfiguration file`. For Azure DevOps Services projects, that is **Activity** for Agile, Basic, or Scrum, and **Discipline** for CMMI. 
 
