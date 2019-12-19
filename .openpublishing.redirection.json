@@ -412,7 +412,7 @@
     },
     {
       "source_path": "docs/notifications/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": true
     },
     {
@@ -1177,7 +1177,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
@@ -3267,7 +3267,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7892,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
@@ -12171,14 +12171,14 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/notifications/howto-manage-organization-notifications-settings.md",
+      "source_path": "docs/notifications/howto-manage-team-notifications-settings.md",
       "redirect_url": "/azure/devops/notifications/manage-team-notifications-settings",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/notifications/howto-manage-organization-notifications.md",
-      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
-    "redirect_document_id": true
+      "redirect_url": "/azure/devops/notifications/manage-organization-notifications",
+    "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/howto-use-subscription-logging.md",
