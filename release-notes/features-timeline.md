@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/16/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -118,9 +118,10 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="11"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
+            <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
             <td>New web platform conversion landing pages</td><td>Repos</td><td>Future</td>
-        </tr>
+        </tr> 
+        <tr><td>Support for Kotlin language</td><td>Repos</td><td>Future</td></tr>
         <tr><td>Updated multi-stage pipelines UI</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>VSTest TestResultsDirectory option is available in the task UI</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Use extends keyword in pipelines</td><td>Pipelines</td><td>Future</td></tr>

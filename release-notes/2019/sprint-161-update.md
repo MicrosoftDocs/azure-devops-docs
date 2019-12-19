@@ -14,6 +14,10 @@ In the **Sprint 161 Update** of Azure DevOps, we are excited to announce [GitHub
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/IxwhIlT83LI]
+
 ## Features
 
 ### General:
