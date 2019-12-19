@@ -80,6 +80,8 @@ From your profile page, you can change your picture or other account preferences
 
 ::: moniker-end
 
+* * *
+
 ::: moniker range="azure-devops-2019"  
 
 1. To change your user preferences, open your profile menu, and then select **My profile**.
@@ -122,8 +124,6 @@ From your profile page, you can change your picture or other account preferences
 	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
-
-* * *
 
 ## Related articles
 

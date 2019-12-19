@@ -224,7 +224,7 @@ You can choose to not receive notifications for certain team subscriptions by op
 - [Set your preferences](../organizations/settings/set-your-preferences.md)
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](howto-manage-team-notifications.md)  
+- [Manage notifications for a team](manage-team-notifications.md)  
 - [Change your preferred email address](change-email-address.md)
 
 ### Limitations
