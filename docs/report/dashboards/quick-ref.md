@@ -175,6 +175,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a built-in chart to a dashboard](add-charts-to-dashboard.md)">Add a built-in chart to a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
 <li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
+<li><a href="add-widget-to-dashboard.md" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md)">Copy a widget to a dashboard</a>	
 <li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
 <li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
@@ -401,6 +402,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <ul>
 <li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a></li>
 <li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
+<li>Cumulative flow diagram</li>
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
 <li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
@@ -421,11 +423,13 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <ul>
 <li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
 <li><a href="widget-catalog.md#deployment-status-widget" data-raw-source="[Deployment status](widget-catalog.md#deployment-status-widget)">Deployment status</a></li>
+<li>Release pipeline overview</li>
 <li><a href="widget-catalog.md#requirements-quality-widget" data-raw-source="[Requirements quality](widget-catalog.md#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <strong>Test</strong>
 <li><a href="widget-catalog.md#chart-test-plan-widget" data-raw-source="[Chart for test plans](widget-catalog.md#chart-test-plan-widget)">Chart for test plans</a></li>
 <li><a href="widget-catalog.md#test-results-widget" data-raw-source="[Test results trend](widget-catalog.md#test-results-widget)">Test results trend</a></li>
+<li>Test results trend (Advanced)</li>
 </ul>
 </td>
 <td width="32%">
@@ -435,6 +439,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
 <li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> (Team)</li>
 <li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> (Team)</li>
+<li>Team room (Team)</li>
 <li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
 <li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
 </ul>
@@ -511,6 +516,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <td width="33%"> 
 <strong>Work</strong>
 <ul>
+<li>Assigned to me (User)</li>
 <li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
@@ -535,6 +541,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <td width="34%">
 <strong>Other</strong>
 <ul>
+<li>Embedded web page</li>
 <li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
 <li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> (Team)</li>
 <li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> (Team)</li>
