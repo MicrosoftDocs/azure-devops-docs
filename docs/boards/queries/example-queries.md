@@ -97,7 +97,7 @@ You can list work items based on the following criteria...
 
 - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
 - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
-- [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
+- [Empty or not empty HTML field queries](titles-ids-descriptions.md)
 - [Category based queries](titles-ids-descriptions.md#category)
 
 ### Work item count and numeric field queries 
