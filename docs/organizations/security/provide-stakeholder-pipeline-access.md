@@ -190,12 +190,12 @@ Open the Security dialog for all or a select release pipeline.
 
 ## Limit access to Library resources 
 
-To prevent Stakeholders from editing Library resources, add your custom security group to the Library reader role. To learn how, see [Manage Library roles for variable groups, secure files, and deployment groups](../../pipelines/policies/set-permissions.md#library).
+To prevent Stakeholders from editing Library resources, add your custom security group to the Library reader role. To learn how, see [Manage Library roles for variable groups, secure files, and deployment groups](../../pipelines/policies/set-permissions.md).
 
 
 ## Limit access to task group 
 
-To prevent Stakeholders from editing task groups, add your custom security group to the task group permissions and set all permissions to **Deny**. To learn how, see [Manage Library roles for variable groups, secure files, and deployment groups](../../pipelines/policies/set-permissions.md#task-group).
+To prevent Stakeholders from editing task groups, add your custom security group to the task group permissions and set all permissions to **Deny**. To learn how, see [Manage Library roles for variable groups, secure files, and deployment groups](../../pipelines/policies/set-permissions.md).
 
 
 ## Related articles
