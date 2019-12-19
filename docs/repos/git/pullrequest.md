@@ -59,7 +59,7 @@ To create a pull request in Azure Repos:
 ### Who reviews the pull request?
 
 When you create the pull request, you can add others who need to review your changes. You can add users and groups to the pull request after it is created if the scope of the
-review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/queries/link-work-items-support-traceability.md#work-items-linked-to-git-code-development) to let others working with the task know changes are ready for review.
+review needs to expand. You can also associate the pull request with a task in [Azure Boards](../../boards/queries/link-work-items-support-traceability.md) to let others working with the task know changes are ready for review.
 
 ### How does the code review work?
 
@@ -82,7 +82,7 @@ Complete your pull request after the reviewers approve of the changes by selecti
 ![Complete button on the pull request view with its drop-down options](_img/pull-requests/complete_pr_options.png)
 
 - **Complete**: Complete the pull request now and merge the changes to the target branch.
-- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. For more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](pull-requests.md#complete-automatically).
+- **Set auto-complete**: If you have branch policies, you can choose **Set auto-complete** to configure the pull request to close once all branch policies are met. For more information on auto-complete (and reasons why you might not see this option), see [Complete automatically](pull-requests.md).
 - **Abandon**: Choose **Abandon** to close the pull request without merging the changes. 
 
 Enter the message used for the [merge commit](merging.md) and update the pull request description as needed in the dialog that follows. 
