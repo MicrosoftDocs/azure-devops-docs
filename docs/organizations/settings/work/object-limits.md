@@ -10,8 +10,8 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: "azure-devops"
-ms.date: 06/02/2017
+monikerRange: ">= tfs-2013"
+ms.date: 12/18/2019
 ---
 
 # Work tracking object limits
@@ -20,24 +20,24 @@ ms.date: 06/02/2017
 
 This article details the limits placed on the number of projects and work tracking objects you can define or import. When customizing the work item types (WITs), be aware of the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-## Operational limits: Work items
+## Operations: Work items
 
 ::: moniker range="<= azure-devops"
 
 | Object | Limit |
 |--------|-------|
-| Long text field | 1M characters | 
+| Long text field | 1 M characters | 
 | Work item tags assigned to a work item | 100 | 
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
-| Attachment size | 60MB | 
+| Attachment size | 60 MB | 
 | Work item links assigned to a work item | 1,000 | 
 
 #### Notes
-- If you need a limit increased, [file a support ticket](https://developercommunity.visualstudio.com/content/problem/post.html?space=21). 
+- If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). 
 
 
-## Operational limits: Backlogs and boards
+## Operations: Backlogs and boards
 
 Default and maximum limits. 
 
@@ -47,7 +47,7 @@ Default and maximum limits.
 | Board | ??? | 
 | Taskboard | 800 work items | 
 
-On prem can update the backlog and taskboard limits through ProcessConfiguration.
+On-premises can update the backlog and taskboard limits through ProcessConfiguration.
   
 Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
@@ -58,21 +58,21 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 
 | Object | Limit |
 |--------|-------|
-| Long text field | 1M characters | 
+| Long text field | 1 M characters | 
 | Work item tags assigned to a work item | 100 | 
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
-| Attachment size | 4MB to 2GB, see Note 1  | 
-| Work item lings assigned to a work item | 1,000 | 
+| Attachment size | 4 MB to 2 GB, see Note 1  | 
+
 
 #### Notes
-1. The default maximum size is 4MB. You can [change the maximum size up to 2GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
+1. The default maximum size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
 
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+## Process customization
 
-## Inheritance and Hosted XML process models
+::: moniker range="azure-devops" 
 
 The following table lists the maximum number of objects that you can define for the Inheritance and Hosted XML process models. While these represent hard limits, practical limits may 
 
@@ -103,8 +103,6 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 
 ::: moniker range="azure-devops-2019" 
 
-## Inheritance and On-premises XML process models
-
 The following table lists the maximum number of objects that you can define for the Inheritance and On-premises XML process models. While these represent hard limits, practical limits may also apply. 
 
 | Object                                              | Inheritance | On-premises XML |
@@ -132,8 +130,6 @@ The following table lists the maximum number of objects that you can define for 
 
 
 ::: moniker range="<= tfs-2018" 
-
-## On-premises XML process models
 
 The following table lists the maximum number of objects that you can define for the ON-premises XML process model. While these represent hard limits, practical limits may apply. 
 
