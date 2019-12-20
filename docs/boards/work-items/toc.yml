@@ -2,8 +2,6 @@
   href: about-work-items.md
 - name: Quick reference
   href: quick-ref.md
-- name: Work tracking limits
-  href: ../../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: "View & add work items"

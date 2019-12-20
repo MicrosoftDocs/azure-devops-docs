@@ -28,15 +28,13 @@ Learn which service limits and rate limits that all projects and organizations a
 - You can't create more than 150,000 tag definitions per project
 
 ## Queries
-- The execution time limit for queries is 30 seconds. See [optimization best practices](../integrate/concepts/integration-bestpractices.md#optimize-queries) to improve query performance.
+- The execution time limit for queries is 30 seconds. See [Optimization best practices](../integrate/concepts/integration-bestpractices.md#optimize-queries) to improve query performance.
 - Query results are limited to 20,000
 - Queries are limited in length to 32,000 characters
 
 ## Process customization
 
-When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. 
-
-- See [Process related limits](../organizations/settings/work/object-limits.md) for details
+When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md).
  
 ## Wiki
 
@@ -51,11 +49,11 @@ Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-ten
 
 See [Rate limits documentation](../integrate/concepts/rate-limits.md) for details
 
-## Data Import
+## Data import
 - Limited to to 300 projects per collection
 - See [data import documentation](../migrate/index.md) for details
 
 ## Next steps 
 
 > [!div class="nextstepaction"]
-> - [Review work tracking object limits](../organizations/settings/work/object-limits.md)
+> - [Work tracking, process, and project limits](../organizations/settings/work/object-limits.md)
