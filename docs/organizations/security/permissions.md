@@ -49,6 +49,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -99,6 +101,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>

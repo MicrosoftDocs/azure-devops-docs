@@ -338,7 +338,7 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ### My pipeline is failing on a checkout step
 
-If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md#scoped-build-identities) to ensure that your pipeline has access to the repository.
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md) to ensure that your pipeline has access to the repository.
 
 When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 

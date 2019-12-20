@@ -71,7 +71,7 @@ Individual contributors can set their user preferences, enable features that are
 <li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)">Authorize access to REST APIs with OAuth 2.0</a></li>
 <li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)">Use SSH key authentication</a></li>
 </ul></td>
-<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md#alternate-credentials)">Authentication overview</a>.</td>
+<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md)">Authentication overview</a>.</td>
 </tr>
 <tr>
 <td><strong>Favorites</strong></td>
