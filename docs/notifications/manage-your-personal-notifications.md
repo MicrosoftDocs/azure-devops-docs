@@ -123,13 +123,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 1. From your Notifications page, select **New subscription**.
 
-::: moniker range=">= azure-devops-2019"
    <img src="_img/manage-personal-notifications-new-subscription-newnav.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-   <img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
-::: moniker-end
 
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
@@ -151,6 +145,29 @@ With custom personal subscriptions, you can define precise criteria for the even
 ::: moniker-end
 
 ***
+
+::: moniker range="<= tfs-2018"
+
+   <img src="_img/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
+
+2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
+
+	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.
+
+	<img src="_img/manage-personal-notifications-new-subscription-dialog.png" alt="New subscription dialog" style="border: 2px solid #C3C3C3;" />
+
+3. Modify the description to help you identify the subscription later. Also choose an email address for notifications to be delivered to. By default, your preferred email address is used. optionally, include one or more fields to further specify the event criteria.
+
+	<img src="_img/manage-personal-notifications-complete-pull-request-subscription.png" alt="Updated subscription dialog with field criteria" style="border: 2px solid #C3C3C3;" />
+
+	> [!NOTE]   
+	> The fields available for filtering event criteria differ depending on the category and template you select.   
+
+4. Select **Finish** when you're done. The subscription now appears in the list under the category you selected.
+
+	<img src="_img/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
+
+::: moniker-end
 
 ## Unsubscribe or opt out of a team or OOB subscription
 
