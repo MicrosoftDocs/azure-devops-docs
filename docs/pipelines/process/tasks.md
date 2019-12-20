@@ -143,7 +143,7 @@ In this YAML, `PublishTestResults@2` will run even if the previous step fails be
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: ''3.7'
+    versionSpec: '3.7'
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
