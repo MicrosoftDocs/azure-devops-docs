@@ -28,7 +28,8 @@ In addition to the information provided in this article, you may find the follow
 
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)  
 - [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  - [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
+- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
 
 <a id="nested" > </a>
 
