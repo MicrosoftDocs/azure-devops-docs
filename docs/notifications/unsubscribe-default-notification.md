@@ -20,9 +20,9 @@ If you want to stop receiving select email notifications, you can do so by unsub
 
 You start by opening your personal notification settings. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
 
-::: moniker range="=> azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
-1. From your home page, select the user settings icon ![user-settings-gear.png](../../_img/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, select the user settings icon ![user-settings-gear.png](../_img/icons/user-settings-gear.png), and then select **Profile**.
 
    ![Open Azure DevOps profile](../_shared/_img/open-user-settings-profile-preview.png)
 
@@ -66,5 +66,5 @@ The notifications you're subscribed to are indicated with the the blue toggle un
 
 	<img src="_img/unsubscribe-from-build-completes.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
 
-::: moniker end
+::: moniker-end
 

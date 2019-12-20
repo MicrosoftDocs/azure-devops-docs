@@ -24,29 +24,18 @@ You can change your preferred email address for notifications from your organiza
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager, see [Enable preview features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, open your user settings, and then select **Profile**.
+1. From your home page, open user settings ![user-settings-gear.png](../_img/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](_img/open-user-settings-profile-preview.png)
+   ![Open Azure DevOps profile](../_shared/_img/open-user-settings-profile-preview.png)
 
-2. Change your profile picture, display name, contact information, or country. Select **Save**.
+2. Change your contact information, and then select **Save**.
 
-   ![Edit the About page](_img/edit-about-page-preview.png)
+   ![Edit the About page](_img/edit-contact-info-preview.png)
 
-3. From your profile menu, select the ... next to Azure DevOps profile, and then select **Switch directory**. 
-
-   ![Switch your Azure Active Directory](_img/switch-directory-azure-ad.png)
-
-   Select a different directory, and then select **Switch**.
-
-   ![Select a different directory, and then select Switch](_img/select-directory-and-switch.png)
-
-4. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
-
-   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences-preview.png)
 
 #### [Current page](#tab/current-page) 
 

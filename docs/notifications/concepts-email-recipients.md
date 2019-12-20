@@ -52,7 +52,7 @@ Within Organization settings, select **Global notifications** > **Subscribers** 
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018'
+::: moniker range="<= tfs-2018"
 
 **Team delivery settings button under organization level settings**
 
