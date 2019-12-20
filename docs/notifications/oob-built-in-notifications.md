@@ -1,7 +1,7 @@
 ---
 title: Default and supported notifications
 titleSuffix: Azure DevOps
-description: Learn about out of the box or default notifications set in Azure DevOps Services or Team Foundation Server 
+description: Learn about out of the box or default notifications set in Azure DevOps or Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual

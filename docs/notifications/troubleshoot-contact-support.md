@@ -1,7 +1,7 @@
 ---
 title: Contacting support for notifications
 titleSuffix: Azure DevOps 
-description: Open a support ticket for notifications in Azure DevOps Services or Team Foundation Server  
+description: Open a support ticket for notifications in Azure DevOps or Team Foundation Server  
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: mijacobs
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 If you've reviewed the troubleshooting sections and can't resolve your issue, consider [opening a free support ticket](https://azure.microsoft.com/support/devops/).
 
 > [!NOTE]  
-> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 When you're contacting support for notification issues, it's good to have answers to the following questions:
 

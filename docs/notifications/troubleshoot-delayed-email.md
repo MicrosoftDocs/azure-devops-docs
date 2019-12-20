@@ -1,7 +1,7 @@
 ---
 title: Why are my notification emails delayed
 titleSuffix: Azure DevOps 
-description: Troubleshooting steps for delayed emails from notifications in Azure DevOps Services and Team Foundation Server (TFS)
+description: Troubleshooting steps for delayed emails from notifications in Azure DevOps and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: mijacobs
@@ -23,7 +23,7 @@ You might not receive an expected notification email. In this article, learn how
 An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
 > [!NOTE]  
-> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 
 

@@ -41,11 +41,11 @@ You can change your preferred email address for notifications from your organiza
 
 1. To change your user preferences, open your profile menu, and then select **User settings**.
 
-   ![Open profile user settings](_img/open-profile-new-nav.png)
+   ![Open profile user settings](_img/open-profile-newnav.png)
 
 2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
-   ![Edit the About page](_img/edit-about-page.png)
+   ![Edit the About page](../organizations/settings/_img/edit-about-page.png)
 
 ::: moniker-end
 

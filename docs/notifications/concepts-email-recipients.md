@@ -1,7 +1,7 @@
 ﻿---
 title: How notification email recipients are determined
 titleSuffix: Azure DevOps 
-description: Describes how email recipients are determined for notifications and events in Azure DevOps Services and Team Foundation Server (TFS)
+description: Describes how email recipients are determined for notifications and events in Azure DevOps and Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: mijacobs
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]
-> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Who receives an email notification when an event matches a subscription involves a number of factors. Not understanding these factors can result in your inbox receiving too many (or too few) emails. The following explains how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -35,9 +35,9 @@ The recipients for a custom personal subscription is the easiest to understand: 
 
 ![email-personal-other](_img/email-personal-other.png)
 
-## Delivery settings for teams and Azure DevOps Services groups
+## Delivery settings for teams and Azure DevOps groups
 
-Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and Azure DevOps Services groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
+Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and Azure DevOps groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
 
 > [!NOTE]
 > Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UI or at the organization level.
