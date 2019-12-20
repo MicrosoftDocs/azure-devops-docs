@@ -208,10 +208,10 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 ::: moniker range=">= azure-devops-2019"
 
 ### format
-* Evaluates the trailing parameters and inserts them into the leading parameter string.
+* Evaluates the trailing parameters and inserts them into the leading parameter string
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
-* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (yyyy, yy, MM, M, dd, d, HH, H, m, mm, ss, s, f, ff, ffff, K)
+* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
 * Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
@@ -405,7 +405,7 @@ jobs:
 
 ## Filtered arrays
 
-When operating on a collection of items you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
+When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
 
 As an example, consider an array of objects named `foo`. We want to get an array of the values of the `id` property in each object in our array.
 
