@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/14/2019 
+ms.date: 12/20/2019 
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Learn about navigating the notifications user interface.
 
@@ -90,11 +90,25 @@ Select **Project settings**, and then **Notifications**.
 
 Select the Notifications page under your profile.  
 
-   ::: moniker range=">= azure-devops-2019"  
+   ::: moniker range=" azure-devops"
+
+   ![Navigate to personal notifications page](_img/personal-notifications-preview.png)  
+
+   ![View personal notifications page](_img/personal-notifications-page.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">= azure-devops-2019" 
+
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
 
-   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)  
-   ::: moniker-end  
-   ::: moniker range="<= tfs-2018"  
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
-   ::: moniker-end  
+   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
+
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018"
+
+   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+
+   ::: moniker-end
+

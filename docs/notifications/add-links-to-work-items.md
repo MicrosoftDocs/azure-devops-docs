@@ -60,7 +60,7 @@ Enter **#** to trigger the **#ID** work item picker in your pull request comment
 
 Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
 
-<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
+<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, enter # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
 
 
 ## Link to work items in pull requests, comments, and commits
@@ -78,7 +78,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 Use the **#ID** control to link to a work item from within a Wiki page.
 
-To learn more about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
+For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
 
 ::: moniker-end
 

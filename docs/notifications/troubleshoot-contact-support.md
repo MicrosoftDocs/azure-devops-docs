@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/10/2018  
+ms.date: 12/19/2019 
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,10 +18,10 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 
-If you've reviewed the troubleshooting sections and can't resolve your issue, please consider [opening a free support ticket](https://azure.microsoft.com/support/devops/).
+If you've reviewed the troubleshooting sections and can't resolve your issue, consider [opening a free support ticket](https://azure.microsoft.com/support/devops/).
 
 > [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 When you're contacting support for notification issues, it's good to have answers to the following questions:
 
@@ -32,4 +32,7 @@ When you're contacting support for notification issues, it's good to have answer
 5. Can you supply IDs such as work item, build, or pull request IDs of recent events and an approximate time of the event?
 6. Can you forward a sample email of a delayed or unexpected email? If not, copy and provide the URL from the View Result button on an email.
 
-It's best to have a recent event for the email or service hook notification in question. Full details about the event and notification delivery are retained for a few days and are beneficial when resolving a notification issue. You might be asked to reproduce the issue with a new event and provide the time/date of the event and IDs (build, pull request, etc) associated with the event.
+It's best to have a recent event reference for the notification in question. Full details about the event and notification delivery are retained for a few days and are beneficial for resolution. You might be asked to reproduce the issue with a new event and provide the following information:
+- time/date of the event 
+- IDs (build, pull request, etc) associated with the event
+

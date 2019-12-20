@@ -9,22 +9,22 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/19/2019  
+ms.date: 12/19/2019  
 monikerRange: '>= tfs-2017'
 ---
 
-# Exclude yourself from notification emails from events you initiated
+# Exclude yourself from notification emails of events you started
 
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
-The option _Skip initiator_ is available when creating a team role-based notification subscription.  This option causes emails to be skipped for the initiator of the event which triggered the email.
+When you create a team role-based notification subscription, you can choose the option, _Skip initiator_. The initiator of the event that triggers the email doesn't receive the notification.
 
-For example, if your team has a subscription set up for a _pull request created_ event and a user creates a pull request in the project, that user doesn't receive the _pull request created_ notification email, but the other members of the team do.
+For example, if your team has a subscription for a _pull request created_ event, the user who creates the pull request in the project doesn't receive this notification email. Other members of the team receive the notification email.
 
-This option can be beneficial for users who don't want to be notified of events they just triggered, but has caused some users to feel they missed an email when their teammates received the email and they didn't. Leave it up to your team to decide which option is best.
+This option is good for users who don't want notifications of events that they trigger. However, some users may feel left out when their teammates receive the email and they didn't. Let your team decide which option is best.
 
 ![New subscription skip initiator](_img/new-sub-skip-initiator.png)
 

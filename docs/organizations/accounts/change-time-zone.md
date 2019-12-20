@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/18/2019
+ms.date: 12/20/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -43,17 +43,35 @@ If your Azure DevOps organization time zone is set to EST, but your user profile
 
 ## Change your user profile time zone
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+::: moniker range="azure-devops"
 
-2. Select your user profile icon, and then select **My profile**.
+> [!NOTE]   
+> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. From your home page, select the user settings icon ![user-settings-gear.png](../../_img/icons/user-settings-gear.png), and then select **Time and Locale**.
+
+   ![Select Sser settings icon and then Time and Locale](_img/change-time-zone/user-settings-time-locale.png)
+
+2. You can update your preferred language, date pattern, time pattern, and time zone. When you're done, select **Save**.
+
+   ![Select Time and Locale](_img/change-time-zone/edit-time-locale.png)
+
+#### [Current page](#tab/current-page) 
+
+1. From your home page, select your user profile icon, and then select **My profile**.
 
     ![Open your user profile settings](../settings/_img/open-profile-user-settings.png)
 
-3. Select **Edit profile**.
+2. Select **Edit profile**.
 
     ![Select Edit profile](_img/change-time-zone/select-edit-profile.png)
 
-4. Select **Preferences**, set your user profile time zone, and then select **Save changes**.
+3. Select **Preferences**, set your user profile time zone, and then select **Save changes**.
 
     ![Select Edit profile to change user preference time zone](_img/change-time-zone/change-user-preferences-time-zone.png)
 
+::: moniker-end
+
+***

@@ -10,7 +10,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/29/2019  
+ms.date: 12/20/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -57,7 +57,17 @@ A subscription lets you control what your team should be notified about and how 
 
 3. Select the type of activity you want your team to be notified of.
 
+   ::: moniker range="azure-devops"
+
+   ![Select event category and template](_img/new-sub-page-preview.png)
+
+   ::: moniker-end
+
+   ::: moniker range="<= azure-devops-2019"
+
     ![Select event category and template](_img/new-sub-page1.png)
+
+   ::: moniker-end
 
 4. Provide a description to help you identify the subscription later.
 

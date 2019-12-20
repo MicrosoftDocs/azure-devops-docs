@@ -1,7 +1,7 @@
 ﻿---
 title: Event types for notifications subscriptions
 titleSuffix: Azure DevOps
-description: List of supported event types to set up automatic notifications in Azure DevOps Services and TFS
+description: List of supported event types to set up automatic notifications in Azure DevOps and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -9,7 +9,7 @@ toc: show
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/11/2018
+ms.date: 12/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
-Learn the supported event types for notification subscriptions in Azure DevOps Services and Team Foundation Server (TFS) in the following table. Check out the [Events, subscriptions, and notifications concepts article](concepts-events-and-notifications.md) to learn more about events and event types.
+In this article, learn the supported event types for notification subscriptions in Azure DevOps and TFS.
 
 | Category  |  Type     |   Fields|   Roles|   |
 |-----------|-----------|---------|---|---|
@@ -31,3 +31,6 @@ Learn the supported event types for notification subscriptions in Azure DevOps S
 |Release|Release approval pending|Approval Type<br>Assigned To<br>Environment Name<br>Release Definition Name|Assigned to<br>Environment owner
 |Release|Deployment completed|Deployment request reason<br>Deployment requested for<br>Deployment Status<br>Environment Name<br>Environment Owner<br>Last Deployment Status<br>Release Definition Name<br>Release request reason<br>Release requested by|Deployment requested for<br>Environment owner<br>Release requested by<br>Approved by
 |Release|Deployment pending|Environment Name<br>Environment Owner<br>Release Definition Name|Manual intervention recipient<br>Environment owner
+
+For more information about events and event types, see [Events, subscriptions, and notifications](concepts-events-and-notifications.md).
+
