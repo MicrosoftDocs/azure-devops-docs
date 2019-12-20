@@ -38,6 +38,10 @@
     href: add-links-to-work-items.md
   - name: Send notifications to third-party services (Slack, Teams, etc)
     href: integrate-third-party-services.md
+  - name: Collaborate in a Team room
+    href: collaborate-in-a-team-room.md
+  - name: Unsubscribe from default notification
+    href: unsubscribe-default-notification.md
 - name: Troubleshooting
   items:
   - name: Why am I not getting an email

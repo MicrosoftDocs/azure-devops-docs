@@ -33,7 +33,7 @@ If you're not receiving an expected notification email, it could be for the foll
 
 Do the following step to determine if the issue resolves.
 
-## Step 1: Check the notification statistics for unexpectedly high volume
+## Check the notification statistics for unexpectedly high volume
 
 Poorly defined subscription filters or duplicate subscriptions might cause an unexpected high volume of notifications, causing a delay in the processing or delivery of emails. [Learn how to view and analyze notification statistics](view-organization-notification-statistics.md)
 
