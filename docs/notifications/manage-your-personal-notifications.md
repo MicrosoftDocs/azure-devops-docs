@@ -52,9 +52,11 @@ From the web portal, select the icon with your initials or picture, and then sel
 
 ***
 
-::: moniker range="<= azure-devops-2019"
+   ::: moniker range="<= azure-devops-2019"
+
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
-::: moniker-end
+   
+   ::: moniker-end
 
 ## View all subscriptions
 
@@ -77,13 +79,13 @@ This view shows all subscriptions that you've created or that have been created 
 
 ***
 
-::: moniker range="<= tfs-2018"
+::: moniker range="<= azure-devops-2019"
+
 <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
+
 ::: moniker-end
 
 A subscription can be just for you, or if you're a team admin, can be shared by everyone in the team.
-
-* * *
 
 ## Add a custom subscription
 
