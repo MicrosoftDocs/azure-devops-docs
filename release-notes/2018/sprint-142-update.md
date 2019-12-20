@@ -121,7 +121,7 @@ Build counters provide a way to uniquely number and label builds. Previously, yo
 * You can define multiple counters per definition.
 * You can query for the value of a counter outside of a build. For instance, you can count the number of builds that have run since last reset using a counter.
 
-See the documentation on [User-defined variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#user-defined-variables) for more information about build counters.
+See the documentation on [User-defined variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) for more information about build counters.
 
 ### Use YAML to specify branches to build for pull requests
 
