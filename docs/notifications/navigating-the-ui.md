@@ -39,33 +39,24 @@ Permissions to manage notifications at each page default are  as follows:
 
 ## Navigating to the organization-level notifications page
 
-Select **Organization settings**, and then **Notifications**.
-
-Personal:
-```
-https://dev.azure.com/{organization}/_notifications
-```
-
-Team:
-```
-https://dev.azure.com/{organization}/{project}/{team}/_admin/_notifications
-```
-
-Project:
-```
-https://dev.azure.com/{organization}/{project}/_admin/_notifications
-```
-
 Organization:
-```
-https://dev.azure.com/{organization}/_admin/_notifications
-```
 
-   ::: moniker range=">= azure-devops-2019"  
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)  
-   ::: moniker-end  
+   ::: moniker range=">= azure-devops-2019" 
 
-   ::: moniker range="<= tfs-2018"  
+    ```
+    https://dev.azure.com/{organization}/_settings/notifications
+    ```
+
+   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png) 
+
+   ::: moniker-end
+
+   ::: moniker range="<= tfs-2018" 
+
+    ```
+    https://dev.azure.com/{organization}/_admin/_notifications
+    ```
+
    ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
 
    ![View organization level notifications page](_img/view-organization-notification-hub.png)  
@@ -74,12 +65,23 @@ https://dev.azure.com/{organization}/_admin/_notifications
 
 ## Navigating to the team level notifications page
 
-Select **Project settings**, and then **Notifications**.
+ Project:
 
-   ::: moniker range=">= tfs-2018"  
+   ::: moniker range=">= tfs-2018" 
+
+    ```
+    https://dev.azure.com/{organization}/{project}/_settings/notifications
+    ```
+
+ 
    ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
-   ::: moniker-end  
+   ::: moniker-end
+
    ::: moniker range="<= tfs-2018"  
+
+    ```
+    https://dev.azure.com/{organization}/{project}/_admin/_notifications
+    ```
 
    ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
 
@@ -88,9 +90,13 @@ Select **Project settings**, and then **Notifications**.
 
 ## Navigating to the personal notifications page
 
-Select the Notifications page under your profile.  
+Personal:
 
    ::: moniker range=" azure-devops"
+
+       ```
+    https://dev.azure.com/{organization}/usersSettings/notifications
+    ```
 
    ![Navigate to personal notifications page](_img/personal-notifications-preview.png)  
 
@@ -98,7 +104,11 @@ Select the Notifications page under your profile.
 
    ::: moniker-end
 
-   ::: moniker range=">= azure-devops-2019" 
+   ::: moniker range=" azure-devops-2019"
+
+    ```
+    https://dev.azure.com/{organization}/_notifications
+    ```
 
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
 
@@ -107,6 +117,10 @@ Select the Notifications page under your profile.
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
+
+    ```
+    https://dev.azure.com/{organization}/_notifications
+    ```
 
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
 

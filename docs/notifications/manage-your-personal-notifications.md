@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
-In this article, you learn how to receive email notifications as changes occur to your code base, builds, work items, and other operations. Set an alert, for example, to get notified when you resolve a bug or when you get assigned to a work item.
+In this article, learn how to receive email notifications as changes occur to your code base, builds, work items, and other operations. Set an alert, for example, to get notified when you resolve a bug or when you get assigned to a work item.
 
 >[!NOTE]  
 >This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to  receive notifications.
@@ -42,14 +42,15 @@ From the web portal, select the icon with your initials or picture, and then sel
 
    ![Navigate to personal notifications page](_img/personal-notifications-preview.png)  
 
-::: moniker-end
-
 #### [Current page](#tab/current-page) 
 
 From the web portal, select the icon with your initials or picture, and then select **Notification settings** from the drop-down menu.
 ::: moniker range=">= azure-devops-2019"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
+
 ::: moniker-end
+
+***
 
 ::: moniker range="<= tfs-2018"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
@@ -70,13 +71,13 @@ This view shows all subscriptions that you've created or that have been created 
 
 ![Personal notification subscriptions](_img/unsubscribe-personal-notifications-preview.png)
 
-::: moniker-end
-
 #### [Current page](#tab/current-page) 
 
-::: moniker range=">= azure-devops-2019"
 <img src="_img/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
+
 ::: moniker-end
+
+***
 
 ::: moniker range="<= tfs-2018"
 <img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
@@ -117,8 +118,6 @@ With custom personal subscriptions, you can define precise criteria for the even
 4. Select **Finish** when you're done. The subscription now appears in the list under the category you selected.
 
 	<img src="_img/manage-personal-notifications-subscription-added-preview.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
-
-::: moniker-end
 
 #### [Current page](#tab/current-page) 
 
