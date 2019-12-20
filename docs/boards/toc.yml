@@ -6,6 +6,8 @@
   href: backlogs/backlogs-boards-plans.md 
 - name: Best tool for the job
   href: work-items/best-tool-add-update-link-work-items.md
+- name: Work tracking limits
+  href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub

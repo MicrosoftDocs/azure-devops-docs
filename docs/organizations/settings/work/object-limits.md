@@ -1,7 +1,7 @@
 ---
-title: Work tracking object limits
+title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
-description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Azure DevOps Services
+description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
 ms-custom: inherited-process
 ms.technology: devops-agile
 ms.prod: devops
@@ -40,6 +40,7 @@ When defining work items or running queries, the following operational limits ap
 
 #### Notes
 - If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). 
+- To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries) 
 
 ::: moniker-end
 
