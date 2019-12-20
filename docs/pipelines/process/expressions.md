@@ -9,7 +9,7 @@ ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 10/27/2019
+ms.date: 12/20/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -211,6 +211,8 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Evaluates the trailing parameters and inserts them into the leading parameter string.
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
+* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (yyyy, yy, MM, M, dd, d, HH, H, m, mm, ss, s, f, ff, ffff, K)
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
