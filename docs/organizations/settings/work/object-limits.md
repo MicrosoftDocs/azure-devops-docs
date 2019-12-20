@@ -20,7 +20,8 @@ ms.date: 12/18/2019
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-## Operations: Work items and queries 
+
+## Work items and queries 
 
 ::: moniker range="azure-devops"
 
@@ -61,7 +62,7 @@ When defining work items, the following operational limits apply.
 
 ::: moniker-end
 
-## Operations: Backlogs, boards, and teams
+## Backlogs, boards, and teams
 
 ::: moniker range="azure-devops"
 
@@ -70,12 +71,18 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | User interface |  Limit | 
 |--------|-------|
 | Backlogs | 10,000 work items | 
-| Boards | ??? | 
+| Boards | 400 cards  | 
 | Taskboard | 1000 tasks  | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per project | 
 
 Each backlog can display up to 10,000 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
+
+#### Additional notes:
+
+- Avoid nesting backlog items of the same type. To learn more, see [Fix re-ordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+
 
 ::: moniker-end
 
@@ -87,19 +94,29 @@ When working with teams, work item tags, backlogs, and boards, the following ope
 | User interface |  Limit | 
 |--------|-------|
 | Backlogs | 999 work items | 
-| Boards | ??? | 
+| Boards | 400 cards  |
 | Taskboard | 800 work items | 
 | Teams | 5,000 per project | 
 | Work item tags | 150,000 tag definitions per project | 
 
 Each backlog can display up to 999 work items. If your backlog exceeds this limit, then you may want to consider adding a team and moving some of the work items to the other team's backlog.
 
+
+#### Additional notes:
+
+- Avoid nesting backlog items of the same type. To learn more, see [Fix re-ordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
+- Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
+
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md). 
   
 ::: moniker-end
 
 
-::: moniker-end
+## Projects
+
+Azure DevOps Services limits each organization to 300 projects per organization. Above 300 projects certain experiences, such as connecting to the organization from Visual Studio, start to degrade. 
+
+For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If your on-premises collection has more than 300 projects, and you plan to migrate to Azure DevOps Services, you'll either need to split the collection or delete older projects to get below the 300 limit imposed by Azure DevOps Services.
 
 ## Process customization
 
@@ -143,15 +160,15 @@ The following table lists the maximum number of objects that you can define for 
 | Fields defined for a collection                     |        8192 |       1024 |
 | Fields defined for a process                        |        1024 |       1024 |
 | Fields defined for a work item type                 |        1024 |       1024 |
-| Picklists defined for a collection                  |        1024 |          - |
+| Picklists defined for a collection                  |        1024 |        N/A |
 | Picklist items defined for a list                   |        2048 |       2048 |
-| Picklist item character length                      |         256 |          - |
+| Picklist item character length                      |         256 |        N/A |
 | Workflow states defined for a work item type        |          32 |         16 |
 | Rules defined for a work item type                  |        1024 |       1024 |
 | Portfolio backlog levels defined for a process      |           5 |          5 |
-| Categories defined for a process                    |           - |         32 |
-| Global lists defined for a process                  |           - |        256 |
-| List items defined within a global list             |           - |       1024 |
+| Categories defined for a process                    |         N/A |         32 |
+| Global lists defined for a process                  |         N/A |        256 |
+| List items defined within a global list             |         N/A |       1024 |
 
 
 > [!NOTE]  
@@ -171,44 +188,74 @@ The following table lists the maximum number of objects that you can define for 
 | Fields defined for a collection                     |        1024 |  
 | Fields defined for a process                        |        1024 |  
 | Fields defined for a work item type                 |        1024 |  
-| Picklists defined for a collection                  |           - |  
+| Picklists defined for a collection                  |         N/A |  
 | Picklist items defined for a list                   |        2048 |  
-| Picklist item character length                      |           - |   
+| Picklist item character length                      |         N/A |   
 | Workflow states defined for a work item type        |          16 |   
 | Rules defined for a work item type                  |        1024 |   
 | Portfolio backlog levels defined for a process      |           5 |    
 | Categories defined for a process                    |          32 |
 | Global lists defined for a process                  |         256 |
 | List items defined within a global list             |        1024 |
-
+| Size of imported process template                   |        2 GB |
 
 > [!NOTE]  
 > For the On-premises XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs.
 
 ::: moniker-end
 
-
-
 ## Practical limits 
 
-Number of projects, 300 
-Number of WIT rules
-Number of WITs
-Reportable fields
+We recommend that you consider the following guidance in order to minimize performance issues.  
 
-Nesting of work items 
+::: moniker range="azure-devops" 
+
+- Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more. 
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when user add and modify work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
+- Minimize the number of custom WITs you define. 
+
+::: moniker-end
 
 
+
+::: moniker range="<= azure-devops-2019" 
+
+- Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more. 
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when user add and modify work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
+- Minimize the number of custom WITs you define.
+- Minimize the number of reportable fields you define. Reportable fields impact performance of your data warehouse. Work Item Rules Validation Exceeds SQL Limits
+
+
+::: moniker-end
+
+> [!NOTE]   
+> A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error. 
 
 
 ::: moniker range="azure-devops"
 
 ## Rate limits
 
+To reduce costs and to enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and reduce the liklihood of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
+
+Most rate limits are reached through REST API calls or non-optimized queries. To learn more, see the following articles: 
+
+- [Rate limits](../../../integrate/concepts/rate-limits.md)
+- [Best practices (to avoid hitting rate limits)](../../../integrate/concepts/integration-bestpractices.md)
+
+
+::: moniker-end
+
 
 ## Migrate and import limits
 
-::: moniker-end
+When determining to migrate from on-premises to Azure DevOps Services, there are several size limits that you may encounter. These limits include: 
+
+- Database size is above the recommended size
+- Largest table size is above the recommended size 
+- The database metadata size is above the supported size 
+
+To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md) and [Troubleshoot import and migration errors](../../../migrate/migration-troubleshooting.md).
 
 
 ## Related articles
@@ -216,6 +263,7 @@ Nesting of work items
 
 ::: moniker range="azure-devops"
 
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [Create an Inheritance process](manage-process.md)
 - [Best practices](../../../integrate/concepts/integration-bestpractices.md)
@@ -225,17 +273,21 @@ Nesting of work items
 
 ::: moniker range="azure-devops-2019"
 
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
+- [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
+- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
@@ -259,4 +311,8 @@ https://developercommunity.visualstudio.com/idea/849727/i-have-a-few-questions-a
 Usage limit warning -- can occur with a corrupt query 
 https://developercommunity.visualstudio.com/content/problem/778106/being-told-that-were-approaching-rate-limiting-thr.html
 
+
+
+
+  
 --> 
