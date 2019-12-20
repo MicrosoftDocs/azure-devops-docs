@@ -1,7 +1,7 @@
 ---
 title: Why am I not receiving notification emails?
 titleSuffix: Azure DevOps
-description: Discover why you aren't receiving emails from your Azure DevOps Services or TFS notification subscriptions and fix it
+description: Discover why you aren't receiving emails from your Azure DevOps Services or TFS notification subscriptions and fix it.
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: mijacobs
@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/26/2019
+ms.date: 12/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
-An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services, which matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
+An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
 Learn why you may not be receiving an expected subscription or notification email.
 
@@ -30,7 +30,7 @@ If you're not receiving an expected notification email, it could be for one of t
 * The organization level _do not deliver_ setting is impacting email delivery
 * The team or group level [_do not deliver_](#step-6-check-do-not-deliver-setting-for-your-team-or-group) setting is impacting email delivery
 * You're not a member of the group or team receiving the email
-* You're a member of an AD group and the subscription contains a @Me clause
+* You're a member of an Azure Directory (AD) group and the subscription contains a @Me clause
 * You don't have permission to view the event details, which are included in the email
 
 Complete the following steps to determine if any resolve the issue.
@@ -41,13 +41,13 @@ Ensure the email wasn't delivered to a different email folder.
 
 ## Step 2: Locate the subscription and ensure it's enabled
 
-Navigate to your personal subscriptions and locate the subscription, which you feel should have produced an email, but didn't. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#navigating-to-the-personal-notifications-page).
+Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#navigating-to-the-personal-notifications-page).
 
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
 ![subscription disabled](_img/subscription-disabled.png)
 
-A default subscription is disabled when an administrator opts out at the organization or team level, or if an individual opts out in their personal subscription settings. Custom subscriptions are disabled when an administrator disables the subscription at the organization or team level, or when an individual disables a personal custom subscription.
+A default subscription is disabled when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
 
 ## Step 3: Closely inspect the subscription filter conditions
 
@@ -59,7 +59,7 @@ The `Skip initiator` checkbox option on a subscription causes the initiator of t
 
 ## Step 5: Check "Do not deliver" setting for the organization
 
-Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#step-6-check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Continue with the next step to determine if a group or team delivery setting is inheriting this value and blocking delivery to your group or team.
+Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#step-6-check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
 
 ## Step 6: Check "Do not deliver" setting for your team or group
 
@@ -67,11 +67,11 @@ If the team or group defines a delivery setting for **Deliver to individual memb
 
 ## Step 7: Check your configured email address
 
-Check if your preferred email address is set to the address you're expecting the email.  This is a user profile setting.  Hover over profile icon to view your preferred email address. [Learn how to view the configured email address.](../organizations/settings/set-your-preferences.md).
+Check if your preferred email address is set to the address you're expecting the email, which is a user profile setting. Hover over profile icon to view your preferred email address. [Learn how to view the configured email address.](../organizations/settings/set-your-preferences.md).
 
 ## Step 8: Is this a team subscription, which contains a "@Me" filter clause?
 
-If a team or group subscription contains an @Me filter clause and the target email recipients that contains an AD group, no members of the AD group match the filter clause. AD groups are not expanded for filter matching.
+If a team or group subscription has an @Me filter clause and the target email recipients are in an AD group, no members of the AD group match the filter clause. AD groups aren't expanded for filter matching.
 
 ## Step 9: Do you have permission to see the event artifact?
 

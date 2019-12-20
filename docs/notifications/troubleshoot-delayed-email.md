@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/10/2018  
+ms.date: 12/19/2019 
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
-Learn why you may not be receiving an expected notification email, and how to check the notification statistics.
+You might not receive an expected notification email. In this article, learn how to check the notification statistics.
 
-An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services which matches a notification subscription. See the [notifications overview](about-notifications.md) for more information about notification subscriptions.
+An email is generated when an [event](oob-supported-event-types.md) occurs within Azure DevOps Services that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
 > [!NOTE]  
 > This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
@@ -29,9 +29,9 @@ An email is generated when an [event](oob-supported-event-types.md) occurs withi
 
 If you're not receiving an expected notification email, it could be for the following reason:
 
-* Your organization is creating a very large volume notifications
+* Your organization creates a high volume of notifications
 
-Please perform the following step to determine if it resolves the issue.
+Do the following step to determine if the issue resolves.
 
 ## Step 1: Check the notification statistics for unexpectedly high volume
 

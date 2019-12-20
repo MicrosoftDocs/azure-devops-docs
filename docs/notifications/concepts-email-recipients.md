@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 12/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Who receives an email notification when an event matches a subscription involves a number of factors. Not understanding these factors can result in your inbox receiving too many (or too few) emails. The following explains how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -42,9 +42,23 @@ Before we look at the recipients for team and group subscriptions, let's look at
 > [!NOTE]
 > Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UI or at the organization level.
 
+::: moniker range=">= azure-devops-2019"
+
+**Organization settings**
+
+Within Organization settings, select **Global notifications** > **Subscribers** > your **Team** > **Delivery settings**
+
+   ![Team Delivery settings](_img/team-delivery-settings-new-ui.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018'
+
 **Team delivery settings button under organization level settings**
 
 ![email-team-subscribers-view](_img/email-team-subscribers-view.png)
+
+::: moniker-end
 
 **Team Delivery settings dialog**
 
@@ -62,6 +76,21 @@ If a delivery setting is not explicitly set for a team or group, the value is de
 
 The recipients for a custom team or group subscription are controlled by the subscription, but with certain delivery options, the team's default delivery setting is used to determine the set of recipients.
 
+::: moniker range=">= azure-devops-2019"
+
+![email-team-delivery-options](_img/email-team-delivery-options-new.png)
+
+The following delivery options are available for a group or team subscription:
+
+* **Members of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
+* **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
+* **Custom email address:** recipient is the specified email address
+* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 ![email-team-delivery-options](_img/email-team-delivery-options.png)
 
 The following delivery options are available for a group or team subscription:
@@ -70,6 +99,8 @@ The following delivery options are available for a group or team subscription:
 * **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
 * **Custom email address:** recipient is the specified email address
 * **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
+
+::: moniker-end
 
 ### Option: Member of team by role
 
