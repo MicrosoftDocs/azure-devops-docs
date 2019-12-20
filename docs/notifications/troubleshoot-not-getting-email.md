@@ -28,7 +28,7 @@ If you're not receiving an expected notification email, it could be for one of t
 * The event doesn't match the specified subscription filter conditions
 * The subscription is defined to not send emails to the initiator of an event
 * The organization level _do not deliver_ setting is impacting email delivery
-* The team or group level [_do not deliver_](#step-6-check-do-not-deliver-setting-for-your-team-or-group) setting is impacting email delivery
+* The team or group level [_do not deliver_](#check-do-not-deliver-setting-for-your-team-or-group) setting is impacting email delivery
 * You're not a member of the group or team receiving the email
 * You're a member of an Azure Directory (AD) group and the subscription contains a @Me clause
 * You don't have permission to view the event details, which are included in the email
@@ -59,7 +59,7 @@ The `Skip initiator` checkbox option on a subscription causes the initiator of t
 
 ## Check "Do not deliver" setting for organization
 
-Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#step-6-check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
+Navigate to the organization level notifications page and select the `Settings` tab. [See how to manage notification settings](manage-organization-notifications-settings.md). If the [delivery setting](#check-do-not-deliver-setting-for-your-team-or-group) is set to `Do not deliver`, then all teams or groups that don't have explicit delivery settings inherit this value. This setting alone doesn't necessarily indicate an email isn't delivered, but it could contribute to the problem. Next, see if a group or team delivery setting inherits this value and blocks delivery to your group or team.
 
 ## Check "Do not deliver" setting for your team or group
 

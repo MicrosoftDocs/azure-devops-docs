@@ -45,18 +45,16 @@ From the web portal, select the icon with your initials or picture, and then sel
 #### [Current page](#tab/current-page) 
 
 From the web portal, select the icon with your initials or picture, and then select **Notification settings** from the drop-down menu.
-::: moniker range=">= azure-devops-2019"
+
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
 
-::: moniker-end
+   ::: moniker-end
 
 ***
 
-::: moniker range="<= tfs-2018"
+::: moniker range="<= azure-devops-2019"
    ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
 ::: moniker-end
-
-* * *
 
 ## View all subscriptions
 
@@ -150,7 +148,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 ::: moniker-end
 
-* * *
+***
 
 ## Unsubscribe or opt out of a team or OOB subscription
 
