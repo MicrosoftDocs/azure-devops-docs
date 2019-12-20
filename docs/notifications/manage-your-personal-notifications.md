@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 In this article, you learn how to receive email notifications as changes occur to your code base, builds, work items, and other operations. Set an alert, for example, to get notified when you resolve a bug or when you get assigned to a work item.
 
 >[!NOTE]  
->This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to  receive notifications.
+>This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to  receive notifications.
 
 In this tutorial, learn how to do the following tasks:
 
