@@ -18,3 +18,10 @@ Mobile experience:
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/162_13.png)
+
+### Support for Kotlin language 
+
+We're excited to announce that we now support Kotlin language highlighting in the file editor. Highlighting will improve the readability of your Kotlin text file and help you quickly scan to find errors. We prioritized this feature based on a suggestion from the [Developer Community](https://developercommunity.visualstudio.com/idea/365651/kotlin-language-highlighting-support.html).
+
+> [!div class="mx-imgBorder"]
+> ![Badge](../../_img/162_16.png)

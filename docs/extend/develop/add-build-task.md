@@ -177,7 +177,7 @@ Here is a description of some of the components of the `task.json` file:
 | `name`                | Name with no spaces |
 | `friendlyName`        | Descriptive name (spaces allowed) |
 | `description`         | Detailed description of what your task does |
-| `author`              | Short string describing the entity developing the build or release task, e.g. "Microsoft Corporation" | 
+| `author`              | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation" | 
 | `instanceNameFormat`  | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
 | `groups`              | Describes groups that task properties may be logically grouped by in the UI. |
 | `inputs`              | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring" |
@@ -301,12 +301,12 @@ describe('Sample task tests', function () {
 
 ### Create success test
 
-The success test validates that when the appropriate inputs are given to the tool, it succeeds with no errors
+The success test validates that when the tool has the appropriate inputs, it succeeds with no errors
 or warnings and returns the correct output.
 
-First, we create a file containing our task mock runner. This simulates running the task and mocks all calls to outside methods.
+First, we create a file containing our task mock runner. This  file creation simulates running the task and mocks all calls to outside methods.
 
-To do this, create a ```success.ts``` file in your test directory with the following contents:
+Create a ```success.ts``` file in your test directory with the following contents:
 
 ```typescript
 import ma = require('azure-pipelines-task-lib/mock-answer');
@@ -343,7 +343,7 @@ it('should succeed with simple inputs', function(done: MochaDone) {
 
 ### Create failure test
 
-The failure test validates that when bad or incomplete input is given to the tool, it fails in the expected way with helpful output.
+The failure test validates that when the tool gets bad or incomplete input, it fails in the expected way with helpful output.
 
 First, we create our task mock runner. To do so, create a ```failure.ts``` file in your test directory with the following contents:
 
@@ -413,7 +413,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 
 | Property     | Description            |
 |--------------|------------------------|
-| `id`          | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task, but typically the build or release task name is included in the ID of the contribution. | 
+| `id`          | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task, but typically the build or release task name is  in the ID of the contribution. | 
 | `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
 | `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
 | `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task pipeline. |
@@ -455,11 +455,11 @@ After you have your packaged extension in a .vsix file, you're ready to publish 
 
 ### Create your publisher
 
-All extensions, including those from Microsoft, are identified as being provided by a publisher.
+All extensions, including extensions from Microsoft, are identified as being provided by a publisher.
 If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
-2. If you aren't already a member of an existing publisher, you'll be prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
+2. If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
    * Specify an identifier for your publisher, for example: `mycompany-myteam`
      * This is used as the value for the `publisher` attribute in your extensions' manifest file.
    * Specify a display name for your publisher, for example: `My Team`
@@ -478,7 +478,7 @@ After creating a publisher, you can now upload your extension to the Marketplace
 You can also upload your extension via the command line by using the ```tfx extension publish``` command instead of ```tfx extension create```
 to package and publish your extension in one step.
 You can optionally use ```--share-with``` to share your extension with one or more accounts after publishing.
-You'll need a personal access token, too.
+You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#acquire-a-personal-access-token).
 
 ```no-highlight
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
