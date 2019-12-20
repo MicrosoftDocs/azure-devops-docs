@@ -14,11 +14,11 @@ monikerRange: ">= tfs-2013"
 ms.date: 12/18/2019
 ---
 
-# Work tracking limits
+# Work tracking, process, and project limits
 
 [!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
 
-This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
 
 ## Work items and queries 
@@ -80,7 +80,7 @@ Each backlog can display up to 10,000 work items. If your backlog exceeds this l
 
 #### Additional notes:
 
-- Avoid nesting backlog items of the same type. To learn more, see [Fix re-ordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
+- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
 
 
@@ -104,7 +104,7 @@ Each backlog can display up to 999 work items. If your backlog exceeds this limi
 
 #### Additional notes:
 
-- Avoid nesting backlog items of the same type. To learn more, see [Fix re-ordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
+- Avoid nesting backlog items of the same type. To learn more, see [Fix reordering and nesting issues](../../../boards/backlogs/resolve-backlog-reorder-issues.md). 
 - Avoid assigning the same area paths to more than one team. To learn more, see [Limitations of multi-team Kanban board views](../../../boards/boards/kanban-overview.md#limitations-of-multi-team-kanban-board-views).
 
 For the On-premises XML process model, you can modify the backlog and taskboard limits by editing the ProcessConfiguration.xml file. For details, see [Process configuration XML element reference](../../../reference/xml/process-configuration-xml-element.md). 
@@ -116,9 +116,14 @@ For the On-premises XML process model, you can modify the backlog and taskboard 
 
 Azure DevOps Services limits each organization to 300 projects per organization. Above 300 projects certain experiences, such as connecting to the organization from Visual Studio, start to degrade. 
 
-For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If your on-premises collection has more than 300 projects, and you plan to migrate to Azure DevOps Services, you'll either need to split the collection or delete older projects to get below the 300 limit imposed by Azure DevOps Services.
+For on-premises Azure DevOps Server, there are no hard limits to the number of projects. However, you may find performance issues if the number of projects approaches 300. If you plan to migrate your on-premises collection to Azure DevOps Services, you'll need to observe the maximum limit of 300 projects. If your collection has more than 300 projects, you'll either need to split the collection or delete older projects.
+
+For more information, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../../migrate/migration-overview.md).
 
 ## Process customization
+
+A number of limits are imposed on the number of objects that you can define for a process. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
+
 
 ::: moniker range="azure-devops" 
 
@@ -236,7 +241,7 @@ We recommend that you consider the following guidance in order to minimize perfo
 
 ## Rate limits
 
-To reduce costs and to enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and reduce the liklihood of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
+To reduce costs and to enhance scalability and performance, Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy. To ensure good performance and reduce the likelihood of outages, Azure DevOps Services limits the resources individuals can consume and the number of requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked. 
 
 Most rate limits are reached through REST API calls or non-optimized queries. To learn more, see the following articles: 
 
@@ -296,7 +301,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 ## Related resources
 
 - [Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2&ssr=false#overview) 
-- [Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [WIQL Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 - [Process Template Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.msdevlabs-pte)
 
 <!---
