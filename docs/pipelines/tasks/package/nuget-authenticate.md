@@ -18,9 +18,6 @@ monikerRange: 'azure-devops'
 
 Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories.
 
-> [!NOTE]
-> The NuGet Authenticate task in Azure Pipelines is currently in public preview.
-
 > [!IMPORTANT]
 > This task is only compatible with NuGet >= 4.8.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604
 

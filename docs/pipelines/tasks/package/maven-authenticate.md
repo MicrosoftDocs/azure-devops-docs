@@ -16,9 +16,6 @@ monikerRange: 'azure-devops'
 
 Provides credentials for Azure Artifacts feeds and external Maven repositories in the current user's settings.xml file.
 
-> [!NOTE]
-> The Maven Authenticate task in Azure Pipelines is currently in public preview.
-
 ## YAML snippet
 
 [!INCLUDE [temp](../includes/yaml/MavenAuthenticateV0.md)]
