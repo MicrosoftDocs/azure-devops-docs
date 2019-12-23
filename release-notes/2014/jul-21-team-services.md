@@ -16,7 +16,7 @@ We have lots to share with you in this week’s deployment. So let’s get into 
 
 ## Using corporate identities with existing accounts
 
-A [popular request](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2605763-adfs-federated-authentication-for-visual-studio-on) for the service has been corporate identity (Active Directory) support for accounts. A [couple of releases ago](may-20-team-services.md) we added the ability to create a new account and connect it to a directory. With this release you can now add a directory to your **existing** Visual Studio Online account.
+A popular request for the service has been corporate identity (Active Directory) support for accounts. A [couple of releases ago](may-20-team-services.md) we added the ability to create a new account and connect it to a directory. With this release you can now add a directory to your **existing** Visual Studio Online account.
 
 Some of the key benefits of connecting a directory to your account include the ability to: leverage centralized identity management, enable single sign-on across cloud services, enforce multi-factor authentication, and integrate with an on-premises Active Directory. When you connect your account to a directory, we preserve your team members’ work item history and links, team memberships, and user plan.
 

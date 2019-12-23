@@ -96,7 +96,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Library (Object, Role)</a></li>
+<li>Library (Object, Role)</li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
@@ -129,7 +129,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li>Secure files (Object, Role)</li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hooks](../../service-hooks/overview.md#subscription-permissions)">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>
@@ -245,7 +245,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Library (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md)">Library (Object, Role)</a></li>	
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
@@ -279,7 +279,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li>Secure files (Object, Role)</li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hooks](../../service-hooks/overview.md#subscription-permissions)">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>
@@ -306,7 +306,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>U-V-W</h3>
 <ul>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Use full Web Access features (Server)](permissions.md#server-permissions)">Use full Web Access features (Server)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Variable groups (Object, Role)</a></li>
+<li>Variable groups (Object, Role)</li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Work items (Project)](set-permissions-access-work-tracking.md)">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Workspaces (Collection)](set-project-collection-level-permissions.md)">Workspaces (Collection)</a></li> 
 </ul>
@@ -386,7 +386,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Feeds](../../artifacts/feeds/feed-permissions.md)">Feeds</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Field, delete (Collection)](set-project-collection-level-permissions.md)">Field, delete (Collection)</a></li>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch (Object)](../../repos/git/branch-permissions.md)">Git branch (Object)</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)">Inherited process (Object)</a></li>
+<li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Inherited process (Object)](set-permissions-access-work-tracking.md)">Inherited process (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
@@ -421,7 +421,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md)">Secure files (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hook](../../service-hooks/overview.md#subscription-permissions)">Service hook</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>

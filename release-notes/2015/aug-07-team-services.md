@@ -18,7 +18,7 @@ On the product backlog, many have wanted to select multiple items when performin
 
 ![Multi-select options in the context menu](_img/8_7_01.png)
 
-We are currently working on enabling drag operations on multiple items; for example, [drag/drop reordering](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2970520-drag-and-drop-reordering-for-multiple-consecutive) or dragging to an iteration. Look for this soon.
+We are currently working on enabling drag operations on multiple items; for example, drag/drop reordering or dragging to an iteration. Look for this soon.
 
 ## Reorder cards when changing columns
 

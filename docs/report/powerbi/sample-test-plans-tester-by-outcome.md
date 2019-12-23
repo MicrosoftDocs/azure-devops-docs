@@ -19,6 +19,10 @@ ms.date: 12/09/2019
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
+
+[!INCLUDE [temp](_shared/preview-note.md)]
+
+The report generated is similar to following image.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Tester by Outcome matrix - Report](_img/odatapowerbi-testerbyoutcome.png)
@@ -39,7 +43,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -54,7 +58,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -90,7 +94,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-In Power BI, perform the following steps.  
+In Power BI, do the following steps.  
 
 When finished, you may choose to rename columns. 
 
@@ -98,37 +102,37 @@ When finished, you may choose to rename columns.
     - Choose the expand button.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI Expand Tester](/azure/devops/report/powerbi/_img/powerbi-expand-tester.png)
+	    > ![Power BI Expand Tester](_img/powerbi-expand-tester.png)
 
     - Select the fields to flatten.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI select fields to flatten](/azure/devops/report/powerbi/_img/powerbi-tester-flatten.png)
+	    > ![Power BI select fields to flatten](_img/powerbi-tester-flatten.png)
 
     - The table now contains entity field of <code>Tester.UserName</code>.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI expanded tester](/azure/devops/report/powerbi/_img/powerbi-expanded-tester.png)
+	    > ![Power BI expanded tester](_img/powerbi-expanded-tester.png)
 
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](/azure/devops/report/powerbi/_img/powerbi-rename-columns.png)
+	> ![Power BI Rename Columns](_img/powerbi-rename-columns.png)
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Power BI Change Column Type](/azure/devops/report/powerbi/_img/powerbi-change-column-type.png)
+	> ![Power BI Change Column Type](_img/powerbi-change-column-type.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](/azure/devops/report/powerbi/_img/powerbi-rename-query.png)
+	> ![Power BI Rename Query](_img/powerbi-rename-query.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](/azure/devops/report/powerbi/_img/powerbi-close-apply.png)
+	> ![Power BI Close & Apply](_img/powerbi-close-apply.png)
 
 
 ## Create the report
@@ -138,7 +142,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. Create a Power BI visualization **Matrix**.
 1. Add the field **Tester.UserName** to **Rows**.
@@ -146,7 +150,7 @@ To create the report, perform the following steps:
 1. Add the field **Count** to **Values**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
+	> ![Power BI select Sum as aggregation](_img/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
