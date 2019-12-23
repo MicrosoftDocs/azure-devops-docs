@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 12/23/2019
 ---
 
 # Add a build or release task
@@ -41,7 +41,7 @@ To create extensions for Azure DevOps Services, you need the following prerequis
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A `home` directory for your project.
-    - The `home` directory of a build or release task extension should look like the following example:
+    - The `home` directory of a build or release task extension should look like the following example after following the steps in this tutorial:
 
 ```
 |--- README.md    
