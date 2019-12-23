@@ -20,9 +20,6 @@ monikerRange: 'azure-devops'
 
 Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the scope of the build. This enables you to publish Python packages to feeds with `twine` from your build. 
 
-> [!NOTE]
-> The Python Twine Upload Authenticate task in Azure Pipelines is currently in public preview.
-
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
