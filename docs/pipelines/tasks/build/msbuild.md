@@ -106,7 +106,8 @@ msbuild
       <td>
          <p>Set to False if you want to make this an incremental build. This setting might reduce your build time, especially if your codebase is large. This option has no practical effect unless you also set Clean repository to False.</p>
          <p>Set to True if you want to rebuild all the code in the code projects. This is equivalent to the MSBuild <code>/target:clean</code> argument.</p>
-         <p>See, <a href="~/devops/pipelines/repos/pipeline-options-for-git#clean-the-local-repo-on-the-agent">repo options</a></p> <br/>Default value: false
+         <p>See, <a href="~/devops/pipelines/repos/pipeline-options-for-git#clean-the-local-repo-on-the-agent">repo options</a></p>
+         <br/>Default value: false
       </td>
    </tr>
    <tr>
@@ -115,7 +116,7 @@ msbuild
    </tr>
    <tr>
       <td><code>restoreNugetPackages</code><br/>Restore NuGet Packages</td>
-      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="~/pipelines/tasks/package/nuget.md" data-raw-source="[NuGet Installer](../package/nuget.md)">NuGet Installer</a> build task.</td><br/>Default value: false
+      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="/docs/pipelines/tasks/package/nuget.md" data-raw-source="[NuGet Installer](../package/nuget.md)">NuGet Installer</a> build task. <br/>Default value: false</td>
    </tr>
    <tr>
       <th style="text-align: center" colspan="2">Advanced</th>
@@ -123,20 +124,20 @@ msbuild
    <tr>
       <td><code>logProjectEvents</code><br/>Record Project Details</td>
       <td>
-         Optionally record timeline details for each project (Windows only)
-      </td> <br/>Default value: false
+         Optionally record timeline details for each project (Windows only) <br/>Default value: false
+      </td> 
    </tr>
    <tr>
       <td><code>createLogFile</code><br/>Create Log File</td>
       <td>
-         <p>Optionally create a log file (Windows only)</p>
-      </td><br/>Default value: false
+         <p>Optionally create a log file (Windows only)</p><br/>Default value: false
+      </td>
    </tr>
    <tr>
       <td><code>logFileVerbosity</code><br/>Log File Verbosity</td>
       <td>
-         <p>Optional log file verbosity</p>
-      </td><br/>Default value: normal
+         <p>Optional log file verbosity</p> <br/>Default value: normal
+      </td>
    </tr>
    <tr>
       <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
@@ -170,54 +171,56 @@ In some cases you might need to use the MSBuild task. For example, you should us
 ### How do I build multiple configurations for multiple platforms?
 
 <ol>
-<li><p>
-On the Variables tab, make sure you&#39;ve got variables defined for your configurations and platforms. To specify multiple values, separate them with commas.
-</p>
-<p>For example, for a .NET app you could specify:</p>
-<table>
-<thead>
-<tr>
-<td>Name</td>
-<td>Value</td>
-</tr>
-</thead>
-<tr>
-<td>BuildConfiguration</td>
-<td>debug, release</td>
-</tr>
-<tr>
-<td>BuildPlatform</td>
-<td>any cpu</td>
-</tr>
-</table>
-
-<p>For example, for a C++ app you could specify:</p>
-<table>
-<thead>
-<tr>
-<td>Name</td>
-<td>Value</td>
-</tr>
-</thead>
-<tr>
-<td>BuildConfiguration</td>
-<td>debug, release</td>
-</tr>
-<tr>
-<td>BuildPlatform</td>
-<td>x86, x64</td>
-</tr>
-</table>
-</li>
-<li><p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
-<p>Select Parallel if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
-</li>
-<li><p>On the Build tab, select this step and specify the Platform and Configuration arguments. For example:</p>
-<ul>
-<li>Platform: <code>$(BuildPlatform)</code></li>
-<li>Configuration: <code>$(BuildConfiguration)</code></li>
-</ul>
-</li>
+   <li>
+      <p>
+         On the Variables tab, make sure you&#39;ve got variables defined for your configurations and platforms. To specify multiple values, separate them with commas.
+      </p>
+      <p>For example, for a .NET app you could specify:</p>
+      <table>
+         <thead>
+            <tr>
+               <td>Name</td>
+               <td>Value</td>
+            </tr>
+         </thead>
+         <tr>
+            <td>BuildConfiguration</td>
+            <td>debug, release</td>
+         </tr>
+         <tr>
+            <td>BuildPlatform</td>
+            <td>any cpu</td>
+         </tr>
+      </table>
+      <p>For example, for a C++ app you could specify:</p>
+      <table>
+         <thead>
+            <tr>
+               <td>Name</td>
+               <td>Value</td>
+            </tr>
+         </thead>
+         <tr>
+            <td>BuildConfiguration</td>
+            <td>debug, release</td>
+         </tr>
+         <tr>
+            <td>BuildPlatform</td>
+            <td>x86, x64</td>
+         </tr>
+      </table>
+   </li>
+   <li>
+      <p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
+      <p>Select Parallel if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
+   </li>
+   <li>
+      <p>On the Build tab, select this step and specify the Platform and Configuration arguments. For example:</p>
+      <ul>
+         <li>Platform: <code>$(BuildPlatform)</code></li>
+         <li>Configuration: <code>$(BuildConfiguration)</code></li>
+      </ul>
+   </li>
 </ol>
 
 ### Can I build TFSBuild.proj files?
