@@ -1,4 +1,4 @@
-﻿---
+---
 title: Cumulative Flow Diagram (CFD) sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Cumulative Flow Diagram (CFD) 
@@ -27,7 +27,7 @@ This article shows you how to display the Stories CFD for a specified team. An e
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -48,7 +48,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -110,11 +110,11 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample -Release Burndown - Fields](_img/odatapowerbi-cfd-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked Area Chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "ColumnName" to **Legend**
 1. Add the field "Count" to **Values**
 1. On the Filter for "ColumnName", select only the values you want to appear on the chart. For example, you may want to unselect "New" and "Done"
@@ -126,11 +126,11 @@ The example report:
 
 ### Sorting columns in correct order
 
-The above sample will display columns in alphabetical order. To sort the columns in the order specific on the board, perform the following steps:
+The above sample will display columns in alphabetical order. To sort the columns in the order specific on the board, do the following steps:
 
 1. Use the query below to create a new query in Power BI. When done, rename the query to "ColumnOrder" 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -148,7 +148,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -182,7 +182,7 @@ The report will now be sorted by correct column order:
 
 ### Pull in data from multiple teams
 
-If you are pulling in data from multiple teams, to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you are pulling in varying columns from every team. It is also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This allows quick filter of the report by team.
+If you are pulling data in from multiple teams to aggregate across teams, you must ensure every team in the report has exactly the same set of columns on their boards. Otherwise, you are pulling in varying columns from every team. It is also a good idea to add a **Slicer** Visualization to your report, with Team.TeamName as a field. This step allows quick filter of the report by team.
 
 
 ## Full list of sample reports

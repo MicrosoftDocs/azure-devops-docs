@@ -26,7 +26,7 @@ Data from your Kanban board, including the board column, column done indicator, 
 2. Board Column Done: False (Doing) or True (Done) value depending on whether the work item is in the Doing or Done split column on the Kanban board.
 3. Board Lane: current Kanban board swim lane.
 
-I’m happy to report that [UserVoice item #121579](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6590592-enable-kanban-column-field-to-be-used-in-work-item) has been marked as completed.
+I’m happy to report that UserVoice item #121579 has been marked as completed.
 
 ![Querying Kanban fields](_img/9_18_02.png)
 

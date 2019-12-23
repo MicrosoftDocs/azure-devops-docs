@@ -109,7 +109,7 @@ There are a number of in-context reports that you can access from the web portal
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
 - [Team velocity](../guidance/team-velocity.md)
 - [View/configure sprint burndown](configure-sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
-- [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md#cfd-widget)
+- [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md)
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ Each time a release is deployed, it logs information about the release to each o
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 > [!NOTE]  
-> You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md#release-definition-widget). Requires TFS 2017.1 or later versions.   
+> You can also add this chart to a team dashboard from the [widget catalog](widget-catalog.md). Requires TFS 2017.1 or later versions.   
 
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
 
@@ -187,7 +187,7 @@ Each time a release is deployed, it logs information about the release to each o
 As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../test/track-test-status.md).  
 
 > [!NOTE]  
-> You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
+> You can also add a [Chart for test plans widget](widget-catalog.md) to a dashboard. 
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md).  
 

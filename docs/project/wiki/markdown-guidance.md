@@ -481,7 +481,7 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 > [!NOTE]  
 > Links to documents on file shares using `file://` aren't supported on 2017.1 and later versions. This restriction has been implemented for security purposes.
 >
-> For information on how to specify relative links from a Welcome page or Markdown widget, see [Source control relative links](#relative-links).
+> For information on how to specify relative links from a Welcome page or Markdown widget, see **Source control relative links**.
 
 **Example:**  
 

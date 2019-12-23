@@ -265,7 +265,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 Additional features you can use to quickly link or change links that use the parent-child link type (some features are version dependent, see the linked topic for details):
 
-- To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md#reparent).  
+- To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md).  
 - To create and link tasks to backlog items, [use the sprint backlog page](../sprints/assign-work-sprint.md).  
 - To indent (![Indent](../queries/_img/IC588323.png)), outdent (![Outdent](../queries/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.  
 - To add or delete work items or change the link structure, you can use Excel or Project. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).  

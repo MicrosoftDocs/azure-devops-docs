@@ -33,9 +33,9 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 
 ## Sample queries
 
-You will need to add an additional query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
+You'll need to add an additional query to your Power BI report. The query below returns the mapping between Teams and Area Paths.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -50,7 +50,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -143,7 +143,7 @@ The example below shows the [Open Bugs](sample-boards-openbugs.md) report with a
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -158,7 +158,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

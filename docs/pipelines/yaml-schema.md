@@ -585,7 +585,7 @@ variables:
 
 You can repeat `name`/`value` pairs and `group`.
 
-You can also include variables from [templates](#variable-templates).
+You can also include variables from templates.
 
 #### [Example](#tab/example/)
 
@@ -1027,8 +1027,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-Your pipeline can consume artifacts from a pipeline resource by using a download task.
-See the [download](yaml-schema.md#download) keyword topic for more.
+You can consume artifacts from a pipeline resource by using a `download` task. See the download keyword.
 
 ### Container resource
 

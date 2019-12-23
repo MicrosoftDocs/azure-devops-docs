@@ -140,7 +140,7 @@ Choose between the following authentication options:
 
 ## Select the Analytics view
 
-1. **Select the view**. The Data Connector will present a list of available [Analytics Views](what-are-analytics-views.md). Each view represents a set of data that can be pulled into Power BI. 
+1. **Select the view**. The Data Connector presents a list of available [Analytics Views](what-are-analytics-views.md). Each view represents a set of data that you can pull into Power BI. 
 
 	Azure DevOps provides a set of [default Analytics Views](analytics-default-views.md). You can also [create custom Analytics Views](analytics-views-create.md). The image below shows the default Analytics views. Your list of views may differ.
 
@@ -148,7 +148,7 @@ Choose between the following authentication options:
 	> ![Navigator dialog, default views](_img/default-views/navigator-dialog-default-views.png)
 
 	> [!NOTE]
-	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and will not impact the full data refresh.
+	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and won't impact the full data refresh.
 
 	Choose **Work Items - Today** table and wait for the preview to load.
 	It represents the current state of all Work Items in the project.
@@ -182,8 +182,8 @@ Choose between the following authentication options:
 
 ### Q: How should I read error messages coming from the connector?
 
-**A:** Reading error messages coming from the connector can be challenging because they typically contain additional contextual information.
-If the load operation fails, then the message will start with *Failed to save modifications to the server...*.
+**A:** You may feel challenged reading error messages coming from the connector because they typically contain additional contextual information.
+If the load operation fails, then the message starts with *Failed to save modifications to the server...*.
 When you see it, then search for **&#91;DataSource.Error&#93; Azure DevOps...:**.
 The following text is the real error message returned from the connector.
 
@@ -197,7 +197,7 @@ In the example below the most important part of the error message is:
 
 ### Q: How do I resolve: *Query result exceeds maximum size. Please reduce the number of records by applying additional filters*?
 
-**A:** You will get the following error if the number of records retrieved from Analytics exceeds 250,000.  
+**A:** You'll get the following error if the number of records retrieved from Analytics exceeds 250,000.  
 > Failed to save modifications to the server. Error returned: 'OLE DB or ODBC error: 
 > &#91;DataSource.Error&#93; VSTS: Request failed: The remote server returned an error: (400) Bad Request. 
 > (**Query result exceeds maximum size. Please reduce the number of records by applying additional filters**).'.

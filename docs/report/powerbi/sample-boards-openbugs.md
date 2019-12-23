@@ -29,7 +29,7 @@ This article shows you how to display, for a given set of open Bugs, a breakdown
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -46,7 +46,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -79,7 +79,7 @@ The following table describes each part of the query.
 <tr>
 <tr>
 <td><code>and StateCategory ne 'Completed'</code></td>
-<td>Filters out items that are completed. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td>
+<td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td>
 <tr>
 <tr>
 <td><code>and startswith(Area/AreaPath,'{areapath}')</code></td>
@@ -111,13 +111,13 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Boards Open Bugs - Fields](_img/odatapowerbi-openbugs-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Matrix**. 
 1. Add the field "State" to **Columns**.
 1. Add the field "AssignedTo.UserName" to **Rows**.
 1. Add the field "WorkItemId" to **Values**.
-    - Right click "WorkItemId" field and ensure **Count** is selected.
+    - Right-click "WorkItemId" field and ensure **Count** is selected.
 
 The example report displays. 
 
@@ -134,7 +134,7 @@ You can use the following additional queries to create different but similar rep
 
 You can query for open bugs by Team Name rather than Area Path.  
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -151,7 +151,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -170,7 +170,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 You can query for open bugs by Area Path and a specific Iteration.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -187,7 +187,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

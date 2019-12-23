@@ -31,7 +31,7 @@ This article shows you how to display the percentage complete by rollup of Story
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -53,7 +53,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -94,7 +94,7 @@ The following table describes each part of the query.
 <tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
 <tr><td><code>&$expand=Descendants(</code></td><td>Expand Descendants.</td><tr>
 <tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>
-<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
+<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
 <tr><td><code>aggregate(StoryPoints with sum as TotalStoryPoints))</code></td><td>Aggregate sum of Story Points.</td><tr>
 <tr><td><code>)</code></td><td>Close Descendants().</td><tr>
 
@@ -177,7 +177,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Feature Progress - Fields](_img/odatapowerbi-featureprogress-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select the "PercentageComplete" field in the **Fields** list.
 1. Select **Modeling** menu.
@@ -185,7 +185,7 @@ For a simple report, perform the following steps:
 1. Select Power BI Visualization **Clustered bar chart**. 
 1. Add the field "Title" to **Axis**.
 1. Add the field "PercentageComplete" to **Values**.
-    - Right click PercentageComplete and select **Sum**.
+    - Right-click PercentageComplete and select **Sum**.
 
 The example report displays.
 
@@ -202,7 +202,7 @@ You can use the following additional queries to create different but similar rep
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -224,7 +224,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

@@ -22,7 +22,7 @@ When you locate an account in a region, all of the “account data” is limited
 
 Application Insights, which is still in preview, is not available in Europe, but will be by the time it officially releases.
 
-We plan to add additional regions around the world, but have not finalized the roadmap. Feel free to use [https://visualstudio.uservoice.com](https://visualstudio.uservoice.com/) to tell us where the next region should be.
+We plan to add additional regions around the world, but have not finalized the roadmap. Feel free to use [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html)) to tell us where the next region should be.
 
 ## Visual Studio Online REST API version 1.0 is here
 

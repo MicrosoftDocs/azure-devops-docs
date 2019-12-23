@@ -57,7 +57,7 @@ Back in June of this year, we rolled out the first iteration of our [new navigat
 
 ### Expanded search box
 
-We understand the importance of search and are bringing back the expanded search box on the product header. In addition, you can now invoke the search box by just clicking "/" on any service page in Azure DevOps. This feature was prioritized based on the following [user voice](https://visualstudio.uservoice.com/forums/330519/suggestions/34756084).
+We understand the importance of search and are bringing back the expanded search box on the product header. In addition, you can now invoke the search box by just clicking "/" on any service page in Azure DevOps. This feature was prioritized based on a user voice suggestion.
 
 Here is the default search box:
 

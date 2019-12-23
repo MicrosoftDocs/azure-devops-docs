@@ -66,7 +66,20 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
 
 
-2. To start monitoring a repository, use the following command inside a channel:
+2. To start monitoring all Git repositories in a project, use the following slash command inside a channel:
+
+   ```
+   @azure repos subscribe [project url]
+   ```
+   The project URL can be to any page within your project (except URLs to repositories).
+
+   For example:
+
+   ```
+   @azure repos subscribe https://dev.azure.com/myorg/myproject/
+   ```
+
+   You can also monitor a specific repository using the following command:
 
    ```
    @azure repos subscribe [repository url]
@@ -86,7 +99,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
 
-3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event. For TFVC repositories, the channel is subscribed to the **Code checked in** event.
+3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event (with target branch = master). For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
    > [!div class="mx-imgBorder"]
    > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
@@ -136,6 +149,13 @@ The following steps demonstrate how to customize subscriptions.
 > * All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then you will need to enter the values manually.
 > * For the TFVC **Code Checked in** event, the filter **Under path** must be of the format `$/myproject/path`.
 
+## Search and share pull request information using compose extension
+
+To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by id or  name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
+
+> [!div class="mx-imgBorder"]
+> ![Compose extension](./_img/integrations-teams/teams-repos-compose-extension.png)
+
 ## Previews of pull request URLs
 
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
@@ -143,17 +163,49 @@ When a user pastes the URL of a PR, a preview is shown like the one in the follo
 > [!div class="mx-imgBorder"]
 > ![URL unfurling](./_img/integrations-teams/URL-Preview.png)
 
+For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a Team.
+
+## Remove subscriptions and repositories from a channel
+
+- Many a time, users want to clean up their channel by removing repositories and subscriptions. Use the below command to achieve the same.
+
+	```
+	@azure repos unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	@azure repos unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+This command will delete all the subscriptions related to any repository in the project and removes the repositories from the channel. Only project admins can run this command.
+
+## Threaded notifications
+
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular pull request will be linked together.
+
+### Compact view of threaded notifications
+
+> [!div class="mx-imgBorder"]
+> ![Compact thread](./_img/integrations-teams/threads-repos-compact-view.png)
+
+### Expanded view of threaded notifications
+> [!div class="mx-imgBorder"]
+> ![Expanded thread](./_img/integrations-teams/threads-repos-expanded-view.png)
+
 ## Command reference
 
 The following table lists all the Azure repos commands you can use in your Teams channel.
 
 |Command	| Functionality |
 | -------------------- |----------------|
-| @azure repos subscribe [repository url]	| Subscribe to a repository to receive notifications |
+| @azure repos subscribe [repository url/ project url]	| Subscribe to a repository or all repositories in a project to receive notifications |
 | @azure repos subscriptions	| Add or remove subscriptions for this channel |
 | @azure repos signin	| Sign in to your Azure Repos organization |
 | @azure repos signout	| Sign out from your Azure Repos organization |
 | @azure repos feedback	| Report a problem or suggest a feature |
+| @azure repos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
+
 
 ## Troubleshooting
 
@@ -168,7 +220,7 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-teams.png)
 
-If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsTeamsApps@microsoft.com`.
+If these steps don't resolve your authentication issue, please out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Related articles
 

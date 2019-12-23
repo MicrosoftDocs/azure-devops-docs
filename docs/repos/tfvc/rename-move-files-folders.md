@@ -19,14 +19,14 @@ monikerRange: '>= tfs-2015'
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
 > [!IMPORTANT]
-> If you're not using TFVC for version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to
+> If you're not using TFVC for version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) to
 > move and rename files in your current open Visual Studio solutions or projects.
 
 ## Move an item in TFVC
 
 You can use [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) to move one file or folder at a time.
 You should not use Source Control Explorer to move folders or files that are referenced by a Visual Studio project or solution. 
-Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) instead and check in the move in a new changeset.
+Move these files with [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) instead and check in the move in a new changeset.
 
 1.  In Source Control Explorer, select the item that you want to move, open its shortcut menu, and choose **Move**.
 
