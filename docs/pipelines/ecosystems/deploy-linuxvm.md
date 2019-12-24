@@ -15,8 +15,6 @@ monikerRange: 'azure-devops'
 
 # Deploy to a Linux Virtual Machine
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
-
 Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to Virtual machines, both on-prem or on any cloud.
 
 Continuous integration (CI) and continuous deployment (CD) form a pipeline by which you can build, release, and deploy your code. This document contains the steps associated with setting up a CICD pipeline for doing multi-machine deployments.
@@ -28,7 +26,7 @@ quickstart for any app as long as your continuous integration pipeline publishes
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-projects/spring-petclinic
@@ -38,7 +36,7 @@ https://github.com/spring-projects/spring-petclinic
 
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
 ```
 https://github.com/azure-devops/fabrikam-node
@@ -121,12 +119,12 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 #### [Java](#tab/java)
 
 Select the **Maven** template that builds your Java project and runs tests with Apache Maven.
-For more guidance, follow the steps mentioned in [Build your Java app with Maven](../../ecosystems/java.md) for creating a build to deploy to Linux.
+For more guidance, follow the steps mentioned in [Build your Java app with Maven](java.md) for creating a build to deploy to Linux.
 
 #### [JavaScript](#tab/java-script)
 
 Select the **Node.js** template that builds a general Node.js project with npm.
-Follow the steps mentioned in [Build your Node.js app with gulp](../../ecosystems/javascript.md) for creating a build to deploy to Linux.
+Follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build to deploy to Linux.
 
  Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
@@ -139,22 +137,55 @@ Follow the steps mentioned in [Build your Node.js app with gulp](../../ecosystem
 * * * 
 
 ## Define CD steps to deploy to the Linux VM
-
-Include a [deployment job](../process/deployment-jobs.md) by referencing Environment and the VM resource in a pipeline YAML as below:
+1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the [Environment and the VM resource] in a pipeline YAML as below:
 ```YAML
 jobs:  
   - deployment: VMDeploy
     displayName: web
     environment:
-      name:  VMenv
+      name:  <environment name>
       resourceType: VirtualMachine
       tags: web1
     strategy:
 ```
-
-You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
+2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
+3. Below is an example of the YAML snippet that you can copy paste to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
-## Next steps
-
+```YAML
+jobs: 
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name: smarthotel-dev
+    resourceType: VirtualMachine
+  strategy:
+    rolling:
+      maxParallel: 5  #for percentages, mention as x%
+      preDeploy:
+        steps:
+        - download: current
+          artifact: drop
+        - script: echo initialize, cleanup, backup, install certs
+      deploy:
+        steps:
+        - task: IISWebAppDeploymentOnMachineGroup@0
+          displayName: 'Deploy application to Website'
+          inputs:
+            WebSiteName: 'Default Web Site'
+            Package: '$(Pipeline.Workspace)/drop/**/*.zip'
+      routeTraffic:
+        steps:
+        - script: echo routing traffic
+      postRouteTraffic:
+        steps:
+        - script: echo health check post-route traffic
+      on:
+        failure:
+          steps:
+          - script: echo Restore from backup! This is on failure
+        success:
+          steps:
+          - script: echo Notify! This is on success
+```
