@@ -304,6 +304,8 @@
       displayName: environments, deployment, approvals
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtualmachines.md
   - name: Expressions
     href: process/expressions.md
   - name: Jobs
