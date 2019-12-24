@@ -32,7 +32,7 @@ in the pipeline.
 
 ## Demands
 
-[none]
+To generate the HTML code coverage report you need dotnet 2.0.0 or later on the agent. The dotnet folder needs to be in the environment path. If there are multiple folders containing dotnet, the one with version 2.0.0. needs to be before any others in the path list.
 
 ::: moniker range="> tfs-2018"
 
