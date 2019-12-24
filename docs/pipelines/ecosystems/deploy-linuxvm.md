@@ -137,7 +137,7 @@ Follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) 
 * * * 
 
 ## Define CD steps to deploy to the Linux VM
-1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the [Environment and the VM resource] in a pipeline YAML as below:
+1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources which you have earlier using the YAML syntax below:
 ```YAML
 jobs:  
   - deployment: VMDeploy
