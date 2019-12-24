@@ -189,3 +189,11 @@ jobs:
           steps:
           - script: echo Notify! This is on success
 ```
+
+## Run your pipeline and get traceability views in environment
+Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
+> [!div class="mx-imgBorder"]
+> ![VMDeployments_view](_img/vm-deployments.png)
+  
+> [!div class="mx-imgBorder"]
+> ![VMjobs_view](_img/vm-jobsview.png)
