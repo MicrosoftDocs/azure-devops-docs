@@ -9,7 +9,7 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/23/2019
+ms.date: 12/26/2019
 ---
 
 # .NET client libraries for Azure DevOps and TFS
