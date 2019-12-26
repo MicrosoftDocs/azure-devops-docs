@@ -118,21 +118,60 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 
 #### [Java](#tab/java)
 
-Select the **Maven** template that builds your Java project and runs tests with Apache Maven.
-For more guidance, follow the steps mentioned in [Build your Java app with Maven](java.md) for creating a build to deploy to Linux.
+Select the **starter** template and copy the below YAML snippet that builds your Java project and runs tests with Apache Maven:
+```YAML
+- job: Build
+    displayName: Build Maven Project
+    steps:
+    - task: Maven@3
+      displayName: 'Maven Package'
+      inputs:
+        mavenPomFile: 'pom.xml'
+    - task: CopyFiles@2
+      displayName: 'Copy Files to artifact staging directory'
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**/target/*.?(war|jar)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+    - upload: $(Build.ArtifactStagingDirectory)
+      artifact: drop
+```
+For more guidance, follow the steps mentioned in [Build your Java app with Maven](java.md) for creating a build.
 
 #### [JavaScript](#tab/java-script)
 
-Select the **Node.js** template that builds a general Node.js project with npm.
-Follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build to deploy to Linux.
+Select the **starter** template and copy the below YAML snippet that builds a general Node.js project with npm.
+```YAML
+- stage: Build
+  displayName: Build stage
+  jobs:  
+  - job: Build
+    displayName: Build
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '10.x'
+      displayName: 'Install Node.js'
+    - script: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
+      displayName: 'npm install, build and test'
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: drop
+```
+For more guidance, follow the steps mentioned in [Build your Node.js app with gulp](javascript.md) for creating a build.
 
- Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+- Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
-
-[!INCLUDE [include](../_shared/get-status-badge.md)]
-
-[!INCLUDE [include](../_shared/create-first-pipeline-next-steps.md)]
+- A new run is started. Wait for the run to finish.
 
 * * * 
 
@@ -151,44 +190,68 @@ jobs:
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
-3. Below is an example of the YAML snippet that you can copy paste to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+3. You can specify eith `runOnce` or `rolling` as deployment strategy. 
+
+`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
+
+Below is the example YAML snippet for `runOnce` :
+```YAML
+jobs:
+- deployment: VMDeploy
+  displayName: web
+  pool:
+    vmImage: 'Ubuntu-16.04'
+  environment:
+    name: <environment name>
+    resourceType: VirtualMachine
+  strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo my first deployment
+```
+
+4. Below is an example of the YAML snippet that you can use to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
 ```YAML
 jobs: 
 - deployment: VMDeploy
   displayName: web
   environment:
-    name: smarthotel-dev
+    name: <environment name>
     resourceType: VirtualMachine
   strategy:
-    rolling:
-      maxParallel: 5  #for percentages, mention as x%
-      preDeploy:
-        steps:
-        - download: current
-          artifact: drop
-        - script: echo initialize, cleanup, backup, install certs
-      deploy:
-        steps:
-        - task: IISWebAppDeploymentOnMachineGroup@0
-          displayName: 'Deploy application to Website'
-          inputs:
-            WebSiteName: 'Default Web Site'
-            Package: '$(Pipeline.Workspace)/drop/**/*.zip'
-      routeTraffic:
-        steps:
-        - script: echo routing traffic
-      postRouteTraffic:
-        steps:
-        - script: echo health check post-route traffic
-      on:
-        failure:
+      rolling:
+        maxParallel: 2  #for percentages, mention as x%
+        preDeploy:
           steps:
-          - script: echo Restore from backup! This is on failure
-        success:
+          - download: current
+            artifact: drop
+          - script: echo initialize, cleanup, backup, install certs
+        deploy:
           steps:
-          - script: echo Notify! This is on success
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                # Modify deployment script based on the app type
+                echo "Starting deployment script run"
+                sudo java -jar '$(Pipeline.Workspace)/drop/**/target/*.jar'
+        routeTraffic:
+          steps:
+          - script: echo routing traffic
+        postRouteTraffic:
+          steps:
+          - script: echo health check post-route traffic
+        on:
+          failure:
+            steps:
+            - script: echo Restore from backup! This is on failure
+          success:
+            steps:
+            - script: echo Notify! This is on success
 ```
+With each run of this job, deployment history is recorded against the `<environment name>` environment that you have created and registered the VMs.
 
 ## Run your pipeline and get traceability views in environment
 Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
