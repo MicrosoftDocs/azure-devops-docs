@@ -69,7 +69,7 @@ If you don't already have a Linux VM with Nginx, create one now in Azure using t
 
 * * * 
 
-# Create an environment with virtual machines as resources
+## Create an environment with virtual machines as resources
 
 Virtual machines can be added as resources within [environments](../process/environments.md) and can be targeted for multi-machine deployments. 
 Deployment history views within environment provide traceability from VM to the pipeline and then to the commit.
