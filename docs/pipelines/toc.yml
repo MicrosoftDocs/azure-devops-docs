@@ -126,6 +126,8 @@
       href: ecosystems/python-webapp.md
     - name: PHP to web app
       href: ecosystems/php-webapp.md
+    - name: Java to Linux virtual machines
+      href: ecosystems/deploy-linuxvm.md
   - name: Build pipelines (classic)
     items:
     - name: Cross-platform scripts
