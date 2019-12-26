@@ -544,7 +544,7 @@ variables:
 
 `name`/`value` pairs and `group`s can be repeated.
 
-Variables may also be included from [templates](#variable-templates).
+Variables may also be included from templates.
 
 #### [Example](#tab/example/)
 ::: moniker range="> azure-devops-2019"
@@ -972,7 +972,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from pipeline resource using `download` task. See the [download](yaml-schema.md#download) keyword.
+You can consume artifacts from pipeline resource using `download` task. See the download keyword.
 
 
 ### Container resource
