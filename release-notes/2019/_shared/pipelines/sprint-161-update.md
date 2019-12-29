@@ -23,7 +23,7 @@ steps:
 
 The third step will show two directories, *MyCode* and *Tools* in the sources directory.
 
-Azure Repos Git, GitHub, and Bitbucket Cloud repositories are supported. For more information, see [Multi-repo checkout](/azure/devops/pipelines/repos/multi-repo-checkout#multi-repo-checkout).
+Azure Repos Git, GitHub, and Bitbucket Cloud repositories are supported. For more information, see [Multi-repo checkout](/azure/devops/pipelines/repos/multi-repo-checkout).
 
 ### Use GitHub Actions to trigger a run in Azure Pipelines
 
