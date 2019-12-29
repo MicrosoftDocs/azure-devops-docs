@@ -1,6 +1,6 @@
 ---
-title: Add a Build or Release Task | Extensions for Azure DevOps Services
-description: Add a custom build or release task in an extension for Azure DevOps Services
+title: Add a Build or Release Task | Extensions for Azure DevOps 
+description: Add a custom build or release task in an extension for Azure DevOps
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -9,17 +9,17 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 12/23/2019
 ---
 
 # Add a build or release task
 
 [!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
-Custom build or release tasks can be contributed by extensions discovered and installed by users into an organization in Azure DevOps Services. 
+Users can install extensions to their organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 
-![Build task catalog for extensions in Azure DevOps Services](_img/build-task-ext-choose-task.png)
+![Build task catalog for extensions in Azure DevOps](_img/build-task-ext-choose-task.png)
 
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
@@ -28,9 +28,9 @@ To learn more about the new cross-platform build/release system, see [Team Found
 
 ## Preparation and required setup for this tutorial
 
-To create extensions for Azure DevOps Services, you need the following prerequisite software and tools:
+To create extensions for Azure DevOps, you need the following prerequisite software and tools:
 
-- An **organization** in Azure DevOps Services, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
+- An **organization** in Azure DevOps, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
 
@@ -41,7 +41,7 @@ To create extensions for Azure DevOps Services, you need the following prerequis
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A `home` directory for your project.
-    - The `home` directory of a build or release task extension should look like the following example:
+    - The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
 
 ```
 |--- README.md    
@@ -119,7 +119,7 @@ tsc --init
 ```
 
 For example, we want to compile to the ES6 standard instead of ES5.
-To ensure this happens, open the newly generated ```tsconfig.json``` and update the ```target``` field to "es6".
+To ensure the ES6 standard happens, open the newly generated ```tsconfig.json``` and update the ```target``` field to "es6".
 
 >[!NOTE]
 >To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
@@ -188,7 +188,7 @@ Here is a description of some of the components of the `task.json` file:
 
 #### index.ts
 
-Create an ```index.ts``` file using the following code as a reference. This is the code that is run when the task is called.
+Create an ```index.ts``` file using the following code as a reference. This code runs when the task is called.
 
 ```typescript
 import tl = require('azure-pipelines-task-lib/task');
@@ -413,10 +413,10 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 
 | Property     | Description            |
 |--------------|------------------------|
-| `id`          | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task, but typically the build or release task name is  in the ID of the contribution. | 
+| `id`          | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. | 
 | `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
 | `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
-| `properties.name` | Name of the task. This must match the folder name of the corresponding self-contained build or release task pipeline. |
+| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline. |
 
 ### Files
 
@@ -432,7 +432,7 @@ Copy the .json code below and save it as your `vss-extension.json` file:
 ## Step 4: Package your extension
 
 Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
-as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command line interface (CLI) to package your extension. 
+as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
 
 Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command.
 
@@ -461,13 +461,13 @@ If you aren't already a member of an existing publisher, you'll create one.
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage)
 2. If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select <i>Publish Extensions</i> underneath <b>Related Sites</b>.
    * Specify an identifier for your publisher, for example: `mycompany-myteam`
-     * This is used as the value for the `publisher` attribute in your extensions' manifest file.
+     * This identifier is used as the value for the `publisher` attribute in your extensions' manifest file.
    * Specify a display name for your publisher, for example: `My Team`
 3. Review the [Marketplace Publisher Agreement](https://aka.ms/vsmarketplace-agreement) and select **Create**
 
-Now your publisher is defined. In a future release, you can grant permissions to view and manage your publisher's extensions.
-This makes it easy (and more secure) for teams and organizations to publish extensions under a common publisher,
-but without the need to share a set of credentials across a set of users.
+Your publisher is defined. In a future release, you can grant permissions to view and manage your publisher's extensions.
+It's easy, and more secure, for teams and organizations to publish extensions under a common publisher,
+but without the need to share a set of credentials across users.
 
 ### Upload your extension
 
@@ -508,7 +508,7 @@ Installing an extension that is shared with you is simple and can be done in a f
 
 If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
-If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
+If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 For build and release tasks for packaging and publishing Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
