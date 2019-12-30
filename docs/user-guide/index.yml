@@ -1,21 +1,19 @@
-### YamlMime:Landing
-
+### YamlMime:YamlDocument
+documentType: LandingData
 title: Start using Azure DevOps
-summary: Learn the basics of the Azure DevOps interface and how to do some common tasks.
-
 metadata:
   title: New user guide
   titleSuffix: Azure DevOps
   ms.custom: seodec18
   description: Learn the basics of the Azure DevOps interface and how to do some common tasks.
+  ms.date: 12/30/2019
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   ms.author: chcomley
   author: chcomley
-  manager: mijacobs
-  ms.date: 12/30/2019
-
+  manager: jillfra
+abstract:
   description: New to Azure DevOps? Welcome! We'll walk you through the basics and some common tasks.
   aside:
     image:
@@ -25,8 +23,7 @@ metadata:
       width: 48
       src: https://docs.microsoft.com/media/illustrations/biztalk-get-started-get-started.svg
     title:
-
-items:    
+sections:
 - title:
   items:
   - html: Note <a href=what-happened-vsts.md>Visual Studio Team Services (VSTS) is now Azure DevOps</a>. 
@@ -47,7 +44,6 @@ items:
           alt: Azure Pipelines logo
           src: ../_img/index/DevOpsIconPipelines40.svg
         title: Start using Azure Pipelines  
-
 - title: 5-minute quickstarts
   items:
   - type: list
@@ -329,6 +325,10 @@ items:
         html: <p></p>
         image:
           title: Visual Studio for Mac
+          alt: Visual Studio for Mac logo
+          src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
+        title: Visual Studio for Mac
+
           alt: Visual Studio for Mac logo
           src: https://docs.microsoft.com/media/logos/logo_vs-mac.svg
         title: Visual Studio for Mac
