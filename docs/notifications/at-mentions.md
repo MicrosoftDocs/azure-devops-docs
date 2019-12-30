@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/20/2019
+ms.date: 12/30/2019
 ---
 
 # Use &#64;mentions in work items and pull requests

@@ -9,7 +9,7 @@ ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/20/2019
+ms.date: 12/30/2019
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
 
@@ -115,7 +115,7 @@ Adding other rooms provides areas for improvised discussions, cross-team interac
 	
 	![New link on the Rooms page, New Room dialog box](_img/ALM_CT_NewRoom.png)
 
-2. Add members to the room as described earlier in This article.
+2. Add members to the room as described earlier in this article.
 
 ## Related articles
 A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).  
