@@ -1,6 +1,6 @@
 ---
-title: .NET Client Libraries for Azure DevOps Services (and TFS)
-description: Easily integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows.
+title: .NET Client Libraries
+description: Easily integrate with Azure DevOps and Team Foundation Server (TFS) from apps and services on Windows.
 ms.assetid: 474cdb4f-9a5e-49fb-84b2-9c540ebcf98b
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -9,17 +9,17 @@ ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 12/20/2019
+ms.date: 12/26/2019
 ---
 
-# .NET client libraries for Azure DevOps Services (and TFS)
+# .NET client libraries for Azure DevOps and TFS
 
 ## Overview
 
-Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps Services. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
+Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 > [!TIP]
-> For more information, see [Azure DevOps Services REST API Reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1).
+> For more information, see [Azure DevOps REST API Reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1).
 
 ### Dependency diagram...
 ![](../concepts/_img/dotnet-client-libraries-dependancy-diagram.jpg)
@@ -32,8 +32,8 @@ Client libraries are available for .NET developers who build Windows apps and se
 
 
 > [!NOTE]
-> REST-based clients only work with Azure DevOps Services and TFS 2015 (not previous versions of TFS)
-> To learn more about extending and integrating with  Azure DevOps Services and Team Foundation Server using the client libraries,
+> REST-based clients only work with Azure DevOps and TFS 2015 (not previous versions of TFS)
+> To learn more about extending and integrating with  Azure DevOps and Team Foundation Server using the client libraries,
 > see [Extending Team Foundation](https://msdn.microsoft.com/library/bb130146.aspx)
 
 ### Package and TFS version mapping table
@@ -90,7 +90,7 @@ PM> Install-Package Microsoft.TeamFoundationServer.ExtendedClient
 
 ## Pattern for use
 
-In general, you first create an authenticated connection to Azure DevOps Services or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
+In general, you first create an authenticated connection to Azure DevOps or TFS, then get an HttpClient for the service you want to work with, and finally call methods against that service.
 See the following examples:
 
 ```csharp
@@ -156,7 +156,7 @@ Further authentication samples can be found on our [.NET Samples Page](../get-st
 
 ## Reference
 
-You can find detailed, up-to-date reference documentation in the [Azure DevOps Services .NET SDK API Reference browser](https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet).
+You can find detailed, up-to-date reference documentation in the [Azure DevOps .NET SDK API Reference browser](https://docs.microsoft.com/dotnet/api/index?view=azure-devops-dotnet).
 
 ## Samples
 
@@ -187,7 +187,7 @@ async void InitAzureDevOps()
 
 ### Using NetStandard 2.0 versions of the Azure DevOps OM
 
-As of the released version 16.143.1 of our NuGet packages, we support NetStandard 2.0.  These packages correlate with Azure DevOps Server 2019 RTW and are fully compatible with the Azure DevOps service.
+As of the released version 16.143.1 of our NuGet packages, we support NetStandard 2.0.  These packages correlate with Azure DevOps Server 2019 RTW and are fully compatible with Azure DevOps.
 
 ### Microsoft.TeamFoundationServer.ExtendedClient package doesn't have NetStandard support
 
