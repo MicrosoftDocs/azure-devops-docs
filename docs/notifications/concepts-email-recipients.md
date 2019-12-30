@@ -29,8 +29,7 @@ The recipients for a custom personal subscription is the easiest to understand: 
 
 **Preferred email address on a personal subscription (the default)**
 
-<img src="_img/email-personal-preferred.png" alt="email-personal-preferred" style="border: 2px solid #C3C3C3;" />
-
+[!div class="mx-imgBorder"]  
 ![email-personal-preferred](_img/email-personal-preferred.png)
 
 **Custom email address on a personal subscription**
