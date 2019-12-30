@@ -58,7 +58,7 @@ You can perform the following tasks with the Hosted XML process model.
 <li><a href="../../security/add-users-team-project.md" data-raw-source="[Person-name field (add users)](../../security/add-users-team-project.md)">Person-name field (add users)</a></li>
 <li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Add a custom pick list](../../../reference/add-modify-field.md#picklist)">Add a custom pick list</a></li>
 <li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Predefined field](../../../reference/add-modify-field.md#picklist)">Predefined field</a></li>
-<li><a href="../../../reference/customize-work.md#test-experience" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md#test-experience)">Resolution State or Failure Type</a></li>
+<li><a href="../../../reference/customize-work.md" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md)">Resolution State or Failure Type</a></li>
 <li><a href="../../../reference/xml/define-global-lists.md" data-raw-source="[Define global lists](../../../reference/xml/define-global-lists.md)">Define global lists</a> </li>
 </ul>
 </td>
