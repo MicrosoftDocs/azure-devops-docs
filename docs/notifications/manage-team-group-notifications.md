@@ -35,12 +35,12 @@ A subscription lets you control what your team should be notified about and how 
 
     ::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 > [!div class="mx-imgBorder"] 
 >![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
 
-	::: moniker-end
+::: moniker-end
 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
