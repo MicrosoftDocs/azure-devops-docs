@@ -36,7 +36,8 @@ Complete the following steps to enable subscription logging:
 
 2. The option _Enable Diagnostics_ appears in the subscription context menu.
 
-    ![Enable subscription logging](_img/enable-subscription-logging.png)
+> [!div class="mx-imgBorder"] 
+>![Enable subscription logging](_img/enable-subscription-logging.png)
 
 ## View subscription diagnostic logs for event matching
 

@@ -57,9 +57,11 @@ Organization:
     https://dev.azure.com/{organization}/_admin/_notifications
     ```
 
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
+> [!div class="mx-imgBorder"] 
+>![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
 
-   ![View organization level notifications page](_img/view-organization-notification-hub.png)  
+> [!div class="mx-imgBorder"] 
+>![View organization level notifications page](_img/view-organization-notification-hub.png)  
 
    ::: moniker-end
 
@@ -73,8 +75,9 @@ Organization:
     https://dev.azure.com/{organization}/{project}/_settings/notifications
     ```
 
- 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+> [!div class="mx-imgBorder"]  
+>![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"  
@@ -83,9 +86,12 @@ Organization:
     https://dev.azure.com/{organization}/{project}/_admin/_notifications
     ```
 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+> [!div class="mx-imgBorder"] 
+>![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
 
-   ![View team level notifications page](_img/view-team-notification-hub.png)
+> [!div class="mx-imgBorder"] 
+>![View team level notifications page](_img/view-team-notification-hub.png)
+
    ::: moniker-end
 
 ## Navigating to the personal notifications page
@@ -110,9 +116,11 @@ Personal:
     https://dev.azure.com/{organization}/_notifications
     ```
 
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
+> [!div class="mx-imgBorder"] 
+>![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
 
-   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
+> [!div class="mx-imgBorder"] 
+>![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
 
    ::: moniker-end
 
@@ -122,7 +130,8 @@ Personal:
     https://dev.azure.com/{organization}/_notifications
     ```
 
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+> [!div class="mx-imgBorder"] 
+>![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
 
    ::: moniker-end
 

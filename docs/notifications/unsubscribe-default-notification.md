@@ -26,9 +26,9 @@ You start by opening your personal notification settings. If you don't have a pr
 
    ![Open Azure DevOps profile](../_shared/_img/open-user-settings-profile-preview.png)
 
-The notifications you're subscribed to are indicated with the the blue toggle under State. 
+> The notifications you're subscribed to are indicated with the the blue toggle under State. 
 
-   ![Notifications turned On](_img/notifications-turned-on.png)
+> ![Notifications turned On](_img/notifications-turned-on.png)
 
    The following image indicates a subscription is a default or out-of-the-box (OOB) subscription:
 
@@ -56,7 +56,8 @@ The notifications you're subscribed to are indicated with the the blue toggle un
 
 	The following image indicates a subscription is a default or out-of-the-box (OOB) subscription:
 
-	![OOB notification](_img/oob-notification.png)
+> [!div class="mx-imgBorder"] 
+>![OOB notification](_img/oob-notification.png)
 
 	You can't modify an OOB subscription, but you can view its definition from its context menu.
 
