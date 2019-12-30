@@ -26,5 +26,6 @@ For example, if your team has a subscription for a _pull request created_ event,
 
 This option is good for users who don't want notifications of events that they trigger. However, some users may feel left out when their teammates receive the email and they didn't. Let your team decide which option is best.
 
-![New subscription skip initiator](_img/new-sub-skip-initiator.png)
+> [!div class="mx-imgBorder"] 
+>![New subscription skip initiator](_img/new-sub-skip-initiator.png)
 

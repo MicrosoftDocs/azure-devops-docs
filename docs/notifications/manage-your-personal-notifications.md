@@ -54,7 +54,8 @@ From the web portal, select the icon with your initials or picture, and then sel
 
    ::: moniker range="<= azure-devops-2019"
 
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
+> [!div class="mx-imgBorder"] 
+>![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
    
    ::: moniker-end
 

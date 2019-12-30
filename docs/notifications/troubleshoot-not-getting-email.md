@@ -45,7 +45,8 @@ Go to your personal subscriptions and locate the subscription, which you feel sh
 
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
-![subscription disabled](_img/subscription-disabled.png)
+> [!div class="mx-imgBorder"] 
+>![subscription disabled](_img/subscription-disabled.png)
 
 A default subscription is disabled when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
 

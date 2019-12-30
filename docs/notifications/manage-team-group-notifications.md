@@ -37,7 +37,8 @@ A subscription lets you control what your team should be notified about and how 
 
     ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
+> [!div class="mx-imgBorder"] 
+>![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
 
 	::: moniker-end
 

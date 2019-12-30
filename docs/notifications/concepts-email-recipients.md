@@ -34,7 +34,8 @@ The recipients for a custom personal subscription is the easiest to understand: 
 
 **Custom email address on a personal subscription**
 
-![email-personal-other](_img/email-personal-other.png)
+> [!div class="mx-imgBorder"]  
+>![email-personal-other](_img/email-personal-other.png)
 
 ## Delivery settings for teams and Azure DevOps groups
 
