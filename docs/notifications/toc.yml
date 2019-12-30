@@ -13,7 +13,7 @@
   - name: "Follow work & pull requests"
     href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage personal notifications
-    href: manage-personal-notifications.md
+    href: manage-your-personal-notifications.md
   - name: Set alerts, get notified when changes occur
     href: ../boards/queries/alerts-and-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage team and group notifications
