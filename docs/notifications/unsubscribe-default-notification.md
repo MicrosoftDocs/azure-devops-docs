@@ -56,7 +56,6 @@ You start by opening your personal notification settings. If you don't have a pr
 
 	The following image indicates a subscription is a default or out-of-the-box (OOB) subscription:
 
-   [!div class="mx-imgBorder"] 
    ![OOB notification](_img/oob-notification.png)
 
 	You can't modify an OOB subscription, but you can view its definition from its context menu.
