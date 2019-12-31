@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/20/2019
+ms.date: 12/30/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -52,7 +52,7 @@ If your Azure DevOps organization time zone is set to EST, but your user profile
 
 1. From your home page, select the user settings icon ![user-settings-gear.png](../../_img/icons/user-settings-gear.png), and then select **Time and Locale**.
 
-   ![Select Sser settings icon and then Time and Locale](_img/change-time-zone/user-settings-time-locale.png)
+   ![Select User settings icon and then Time and Locale](_img/change-time-zone/user-settings-time-locale.png)
 
 2. You can update your preferred language, date pattern, time pattern, and time zone. When you're done, select **Save**.
 

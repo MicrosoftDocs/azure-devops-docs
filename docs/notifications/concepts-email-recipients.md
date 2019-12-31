@@ -72,7 +72,9 @@ The following delivery settings are available for a group or team:
 * **Deliver to individual members:** notifications are delivered to each member of the group or team. This is usually the default option. See the section on "team expansion" below for more details on how this option works.
 * **Do not deliver:** notifications are not delivered by default.
 
-If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_. Note: the delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
+If a delivery setting is not explicitly set for a team or group, the value is determined from the [organization-level delivery setting](manage-organization-notifications-settings.md) and is either _Deliver to individual members_ or _Do not deliver_. 
+> [!NOTE]
+> The delivery settings dialog does not indicate whether the current selection was explicitly set or if it was inherited.
 
 ## Recipients for custom team and group subscriptions
 
@@ -87,7 +89,10 @@ The following delivery options are available for a group or team subscription:
 * **Members of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
 * **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
 * **Custom email address:** recipient is the specified email address
-* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
+* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. 
+> [!NOTE]
+> The default delivery setting of each member is honored, including groups that are members of the team or group.
+
 
 ::: moniker-end
 
@@ -100,7 +105,10 @@ The following delivery options are available for a group or team subscription:
 * **Member of team by role:** recipients are members of the team or group that have one of the selected roles (e.g. work item assignee)
 * **Team preference:** recipients are determined by the delivery setting of the team or group (_Do not deliver_, _preferred email address_, or _members of team_) 
 * **Custom email address:** recipient is the specified email address
-* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. Note: the default delivery setting of each member is honored, including groups that are members of the team or group.
+* **Members of team:**: recipients are all members of the team or group, except members that have opted out of the subscription. 
+> [!NOTE]
+> The default delivery setting of each member is honored, including groups that are members of the team or group.
+
 
 ::: moniker-end
 
@@ -135,7 +143,10 @@ The team or group membership is expanded to determine the email recipients. In t
 
 ## Recipients for default subscriptions
 
-The delivery option for a default subscription is usually one or more roles. When viewing a default subscription, you'll notice these values can't be changed. The roles and the _Skip initiator_ option vary depending on the event type. See [supported event types](oob-supported-event-types.md) for a list of roles available for each event type. Note: the _Skip initiator_ option is not available for all event types.
+The delivery option for a default subscription is usually one or more roles. When viewing a default subscription, you'll notice these values can't be changed. The roles and the _Skip initiator_ option vary depending on the event type. See [supported event types](oob-supported-event-types.md) for a list of roles available for each event type. 
+
+> [!NOTE]
+> The _Skip initiator_ option is not available for all event types.
 
 ![email-delivery-default-subscription](_img/email-delivery-default-subscription.png)
 

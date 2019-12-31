@@ -34,5 +34,5 @@ When you're contacting support for notification issues, it's good to have answer
 
 It's best to have a recent event reference for the notification in question. Full details about the event and notification delivery are retained for a few days and are beneficial for resolution. You might be asked to reproduce the issue with a new event and provide the following information:
 - time/date of the event 
-- IDs (build, pull request, etc) associated with the event
+- IDs (build, pull request, etc.) associated with the event
 

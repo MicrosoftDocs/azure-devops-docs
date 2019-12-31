@@ -36,7 +36,7 @@
     href: at-mentions.md
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
-  - name: Send notifications to third-party services (Slack, Teams, etc)
+  - name: Send notifications to third-party services (Slack, Teams, etc.)
     href: integrate-third-party-services.md
   - name: Collaborate in a Team room
     href: collaborate-in-a-team-room.md
