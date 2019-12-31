@@ -42,7 +42,7 @@ resources:
 
 ## Resources: `pipelines`
 
-If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines.
+If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
 
 # [Schema](#tab/schema)
 
@@ -56,6 +56,10 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to master branch
     tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
+    trigger:     # Triggers are not enabled by default unless you add trigger section to the resource
+      branches:  # branch conditions to filter the events, optional; Defaults to all branches.
+        include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
+        exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
 ```
 
 # [Example](#tab/example)
@@ -80,6 +84,34 @@ resources:
     branch: releases/M142
 ```
 
+Pipeline resource with simple trigger enabled.
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: SmartHotel
+    project: DevOpsProject
+    source: SmartHotel-CI
+    trigger: true
+```
+
+Pipeline resource trigger with branch conditions.
+
+```yaml
+resources:
+  pipelines:
+  - pipeline: SmartHotel
+    project: DevOpsProject
+    source: SmartHotel-CI
+    trigger:
+      branches:
+      - releases/*
+      - master
+```
+> [!IMPORTANT]
+> When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch. 
+
 ### `download` for pipelines
 
 All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
@@ -98,6 +130,24 @@ Or to avoid downloading any of the artifacts at all:
 - download: none
 ```
 
+### pipeline resource variables
+In each run, the metadata for a pipeline resource is available to all jobs as these predefined variables:
+
+```yaml
+resources.pipeline.<Alias>.projectName
+resources.pipeline.<Alias>.projectID
+resources.pipeline.<Alias>.pipelineName
+resources.pipeline.<Alias>.pipelineID
+resources.pipeline.<Alias>.runName
+resources.pipeline.<Alias>.runID
+resources.pipeline.<Alias>.runURI
+resources.pipeline.<Alias>.sourceBranch
+resources.pipeline.<Alias>.sourceCommit
+resources.pipeline.<Alias>.sourceProvider
+resources.pipeline.<Alias>.requestedFor
+resources.pipeline.<Alias>.requestedForID
+```
+
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder; see [artifact download location](#artifact-download-location) for more details.
 
 ## Resources: `builds`
@@ -114,7 +164,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     connection: string   # service connection for your build service.
     source: string   # source definition of the build
     version: string   # the build number to pick the artifact, defaults to Latest successful build
-    branch: string   # branch to pick the artifact; defaults to master branch
+    trigger: boolean    # Triggers are not enabled by default and should be explicitly set
 ```
 
 `builds` is an extensible category. You can write an extension to consume artifacts from your builds service (CircleCI, TeamCity etc.) and introduce a new type of service to be part of `builds`. Currently, we are providing Jenkins resource as a type in `builds`.
@@ -128,7 +178,9 @@ resources:
     type: Jenkins
     connection: MyJenkinsServer 
     source: SpaceworkzProj   # name of the jenkins source project
+    trigger: true
 ```
+Note: Triggers are only supported for hosted Jenkins where Azure DevOps has line of sight with Jenkins server.
 
 ### `downloadBuild` for builds
 
@@ -155,19 +207,9 @@ You can customize the download behavior for each deployment or job.
 ```
 ## Resources: `repositories`
 
-::: moniker range="azure-devops-2019"
-
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
-
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository.
-The `repository` keyword lets you specify an external repository.
-
-::: moniker-end
 
 # [Schema](#tab/schema)
 
@@ -265,7 +307,7 @@ resources:
 ```
 # [Schema](#tab/schema)
 
-We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs.
+We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and enable automatic pipeline triggers.
 
 ```yaml
 resources:          # types: pipelines | repositories | containers | builds | packages
@@ -276,6 +318,10 @@ resources:          # types: pipelines | repositories | containers | builds | pa
     resourceGroup: string # resource group for your ACR
     registry: string: # registry for container images
     repository: string # name of the container image repository in ACR
+    trigger: # Triggers are not enabled by default and need to be set explicitly
+      tags:
+        include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
+        exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
 ### Examples
 
@@ -292,8 +338,19 @@ resources:
 ACR container resource enables you to use Azure service principal (ARM service connection) for authentication. 
 ACR container resource provides you with triggers experience.
 
-#### variables
+#### Container resource variables
 Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry and connection details are made accessible across all the jobs so that your kubernetes deploy tasks can extract the image pull secrets and pass it to the cluster.
+
+```yaml
+resources.container.<Alias>.type
+resources.container.<Alias>.registry
+resources.container.<Alias>.repository
+resources.container.<Alias>.tag 
+resources.container.<Alias>.digest
+resources.container.<Alias>.URI
+resources.container.<Alias>.location
+```
+Note: location variable is only applicable for `ACR` type of container resources.
 
 ## Traceability
 
