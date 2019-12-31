@@ -172,7 +172,7 @@ You should not set secret variables in your YAML file. Instead, you should set t
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
 The following example shows how to use a secret variable called `mySecret` from a script.
-Note that unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
+Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
 steps:
@@ -211,7 +211,7 @@ YAML is not supported in TFS.
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
 Imagine you want to use a secret variable called `mySecret` from a script.
-Unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
+Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
 In the left column, give the variable a name to be used in the environment.
 In the right column, dereference the secret variable like this: `$(mySecret)`.
