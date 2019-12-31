@@ -78,6 +78,13 @@ Modern versions of Go are pre-installed on [Microsoft-hosted agents](../agents/h
 
 ## Set up a Go workspace
 
+
+#### [Go 1.11+](#tab/go-current)
+
+TESTING 123
+
+#### [Go < 1.11](#tab/go-older)
+
 As the Go documentation [describes](https://golang.org/doc/code.html#Workspaces), a Go workspace consists of a root directory to which the `$GOPATH` environment variable points. Within that directory are standard subdirectories:
 
 * `bin` to contain executable commands
@@ -152,6 +159,8 @@ Use `dep ensure` if your project uses dep to download dependencies imported in y
   workingDirectory: '$(modulePath)'
   displayName: 'Download dep and run `dep ensure`'
 ```
+
+--- 
 
 ## Build
 
