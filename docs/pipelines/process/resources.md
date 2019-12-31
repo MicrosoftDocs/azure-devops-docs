@@ -37,7 +37,6 @@ resources:
   containers: [ container ]
   packages: [ package ]
 ```
-
 ---
 
 ## Resources: `pipelines`
@@ -56,7 +55,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to master branch
     tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
-    trigger:     # Triggers are not enabled by default unless you add trigger section to the resource
+    trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
@@ -64,7 +63,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
 
 # [Example](#tab/example)
 
-If you need to consume artifacts from another azure pipeline from the current project and if you don't require setting branch, version and tags etc., here is simple schema.
+If you need to consume artifacts from an azure pipeline within the current project, here is simple schema.
 
 ```yaml
 resources:
@@ -84,7 +83,7 @@ resources:
     branch: releases/M142
 ```
 
-Pipeline resource with simple trigger enabled.
+Pipeline resource with simple trigger.
 
 ```yaml
 resources:
@@ -129,9 +128,10 @@ Or to avoid downloading any of the artifacts at all:
 ```yaml
 - download: none
 ```
+Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder; see [artifact download location](#artifact-download-location) for more details.
 
 ### pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs as these predefined variables:
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables:
 
 ```yaml
 resources.pipeline.<Alias>.projectName
@@ -147,8 +147,6 @@ resources.pipeline.<Alias>.sourceProvider
 resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
-
-Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder; see [artifact download location](#artifact-download-location) for more details.
 
 ## Resources: `builds`
 
@@ -263,7 +261,7 @@ Note: Repos from `repository` resource are not automatically synced in your jobs
 
 ```yaml
 steps:
-- checkout: self  # identifier for your repository resource
+- checkout: string  # identifier for your repository resource
   clean: boolean  # if true, execute `execute git clean -ffdx && git reset --hard HEAD` before fetching
   fetchDepth: number  # the depth of commits to ask Git to fetch; defaults to no limit
   lfs: boolean  # whether to download Git-LFS files; defaults to false
@@ -294,7 +292,7 @@ resources:
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
 ```
-A generic container resource can be used as an image resource to be consumed as part of your job or it can also be used for [Container jobs](process/container-phases.md).
+A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](process/container-phases.md).
 
 # [Schema](#tab/example)
 
@@ -305,9 +303,11 @@ resources:
     endpoint: myDockerRegistry
     image: smartHotelApp 
 ```
-# [Schema](#tab/schema)
+---
 
-We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and enable automatic pipeline triggers.
+We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and also enable automatic pipeline triggers.
+
+# [Schema](#tab/schema)
 
 ```yaml
 resources:          # types: pipelines | repositories | containers | builds | packages
@@ -323,7 +323,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
-### Examples
+# [Schema](#tab/example)
 
 ```yaml
 resources:         
@@ -334,12 +334,14 @@ resources:
     resourceGroup: ContosoGroup
     registry: petStoreRegistry
     repository: myPets
+    trigger: 
+      tags:
+        include: 
+        - production* 
 ```
-ACR container resource enables you to use Azure service principal (ARM service connection) for authentication. 
-ACR container resource provides you with triggers experience.
 
 #### Container resource variables
-Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry and connection details are made accessible across all the jobs so that your kubernetes deploy tasks can extract the image pull secrets and pass it to the cluster.
+Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry and connection details are made accessible across all the jobs to be used in your container deploy tasks.
 
 ```yaml
 resources.container.<Alias>.type
@@ -353,5 +355,17 @@ resources.container.<Alias>.location
 Note: location variable is only applicable for `ACR` type of container resources.
 
 ## Traceability
+We provide full traceability about any resource consumed at a pipeline level and at the deployment-job level where it is deployed to Environment.
+
+### Pipeline traceability
+For every pipeline run, we show the info about the 
+1. The resource that has triggered the pipeline (if it is triggered by a resource).
+2. Version of the resource and the artifacts consumed.
+3. Commits associated with each resource.
+4. Work-items for each resource.
+
+### Environment traceability
+Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
+
 
 
