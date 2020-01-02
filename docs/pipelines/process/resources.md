@@ -360,16 +360,16 @@ We provide full traceability about any resource consumed at a pipeline level and
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
-![Commits in pipeline run](../_img/runs-resource-trigger.png)
+![Commits in pipeline run](./_img/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
- ![Consumed artifacts in pipeline run](../_img/runs-consumed-artifacts.png)
+ ![Consumed artifacts in pipeline run](./_img/runs-consumed-artifacts.png)
 3. Commits associated with each resource.
-![Commits in pipeline run](../_img/runs-commits.png)
+![Commits in pipeline run](./_img/runs-commits.png)
 4. Work-items for each resource.
 
 ### Environment traceability
 Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
-![Commits in environment](../_img/environments-commits.png)
+![Commits in environment](./_img/environments-commits.png)
 
 
 
