@@ -55,7 +55,7 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>
 <ul>
 <li><a href="add-modify-field.md" data-raw-source="[Add or modify a field](add-modify-field.md)">Add or modify a field</a></li>
-<li><a href="add-modify-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](add-modify-field.md)">Add a checkbox (Boolean) field (TFS 2017.2)</li>
+<li><a href="add-modify-field.md" data-raw-source="[Add a checkbox (Boolean) field](add-modify-field.md)">Add a checkbox (Boolean) field (TFS 2017.2)</li>
 <li><a href="add-modify-field.md#add-rules" data-raw-source="[Add rules to a field](add-modify-field.md#add-rules)">Add rules to a field</a></li>
 <li><a href="add-modify-field.md#change-label" data-raw-source="[Change a field label](add-modify-field.md#change-label)">Change a field label</a></li>
 <li><a href="add-modify-field.md#custom-control" data-raw-source="[Add a custom control field](add-modify-field.md#custom-control)">Add a custom control field</a></li>
