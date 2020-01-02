@@ -133,9 +133,7 @@ In the Query pane, scroll horizontally to view the `[Implementation="2.0"]` para
 
 Replace `[Implementation="2.0"]` with the following string:
 
-```
-[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]
-``` 
+`[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
 ![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor2.png)
 
