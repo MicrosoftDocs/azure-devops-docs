@@ -9,7 +9,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 05/10/2019  
+ms.date: 12/30/2019  
 monikerRange: '>= tfs-2018'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [version-vsts-tfs-2018](../_shared/version-vsts-tfs-2018.md)]
 
 > [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, are collected for the subscription.
 
@@ -36,7 +36,8 @@ Complete the following steps to enable subscription logging:
 
 2. The option _Enable Diagnostics_ appears in the subscription context menu.
 
-    ![Enable subscription logging](_img/enable-subscription-logging.png)
+> [!div class="mx-imgBorder"] 
+>![Enable subscription logging](_img/enable-subscription-logging.png)
 
 ## View subscription diagnostic logs for event matching
 

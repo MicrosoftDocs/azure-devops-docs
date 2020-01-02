@@ -10,7 +10,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 07/29/2019  
+ms.date: 12/30/2019  
 monikerRange: '>= tfs-2017'
 ---
 
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]  
-> This article applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
+> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
 
 As changes occur to work items, code reviews, pull requests, source control files, and builds, your team or group can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
 
@@ -35,11 +35,12 @@ A subscription lets you control what your team should be notified about and how 
 
     ::: moniker-end
 
-    ::: moniker range=">= tfs-2017 <= tfs-2018" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
+> [!div class="mx-imgBorder"] 
+>![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
 
-	::: moniker-end
+::: moniker-end
 
 2. Select **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
@@ -57,7 +58,17 @@ A subscription lets you control what your team should be notified about and how 
 
 3. Select the type of activity you want your team to be notified of.
 
+   ::: moniker range="azure-devops"
+
+   ![Select event category and template](_img/new-sub-page-preview.png)
+
+   ::: moniker-end
+
+   ::: moniker range="<= azure-devops-2019"
+
     ![Select event category and template](_img/new-sub-page1.png)
+
+   ::: moniker-end
 
 4. Provide a description to help you identify the subscription later.
 
@@ -125,4 +136,4 @@ Your group delivery settings are updated for notifications.
 
 ## Related articles
 
-* [Manage personal notification settings](howto-manage-personal-notifications.md)
+* [Manage personal notification settings](manage-your-personal-notifications.md)

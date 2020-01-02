@@ -9,7 +9,7 @@ ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2018
+ms.date: 12/30/2019
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
 
@@ -20,9 +20,9 @@ monikerRange: '>= tfs-2013 <=tfs-2017'
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms are deprecated for Azure DevOps Services and Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in Azure DevOps Services and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+> **Feature availability:** Team Rooms are deprecated for Azure DevOps and Team Foundation Server (TFS) 2018 and later versions as described in this blog post,  [Deprecation of the Team Rooms in Azure DevOps and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 >
-> Several solutions are available that integrate well with Azure DevOps Services and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](/microsoftteams/platform/).
+> Several solutions are available that integrate well with Azure DevOps and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](/microsoftteams/platform/).
 
 ![Team room with messages and links to events](_img/ALM_CT_Teamroom.png)
 
@@ -30,7 +30,7 @@ By using the team room instead of email threads, you automatically receive an au
 
 A team room is created for [each team that gets created](../organizations/settings/add-teams.md). Team administrators can create additional rooms and manage those team rooms.  
 
-Members of the Project Administrators group can create and administer team rooms that they have created. And, members of the Project Collection Administrators group can create and administer all team rooms.  
+Members of the Project Administrators group can create and administer team rooms that they've created. And, members of the Project Collection Administrators group can create and administer all team rooms.  
 
 ## Join the conversation
 
@@ -38,9 +38,9 @@ Members of the Project Administrators group can create and administer team rooms
 
 	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png)
 	
-	If you don't see the room tile, [(Azure DevOps Services) ask your organization administrator to grant you a Basic license](../organizations/accounts/add-organization-users.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(Azure DevOps Services) Add team members](../organizations/accounts/add-team-members.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [Add team members](../organizations/settings/add-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list.
 
@@ -83,7 +83,7 @@ You can invite others who have access to the organization or project to particip
 <a id="events"></a>
 
 ## Add events
-Adding events lets your team know when builds finish, source code is checked in, work items are updated, and requests for code reviews occur. 
+Adding events lets your team know when builds complete, when you check in source code, update work items, and request for code reviews. 
 
 1. Open **Configure Events**.
 	
@@ -97,7 +97,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 
 	Any change in status or assignment triggers an event to appear in the room.
 
-	You can enable the following events and choose if the event triggers only when initiated by a team room member or by anyone.  
+	You can enable the following events and choose if the event triggers only when started by a team room member or by anyone.  
 	
 | Event category | Event  |  
 | ---- | ------ |  
@@ -109,13 +109,13 @@ Adding events lets your team know when builds finish, source code is checked in,
   
 ## Add another room
 
-Adding other rooms provides areas for ad hoc discussions, cross-team interactions, virtual teams, or social discussions.
+Adding other rooms provides areas for improvised discussions, cross-team interactions, virtual teams, or social discussions.
 
-1. Add a room. If the **New** link is not active, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
+1. Add a room. If the **New** link isn't active, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
 	
 	![New link on the Rooms page, New Room dialog box](_img/ALM_CT_NewRoom.png)
 
-2. Add members to the room as described earlier in this topic.
+2. Add members to the room as described earlier in this article.
 
 ## Related articles
 A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).  
@@ -145,7 +145,7 @@ You can grant permissions to users to administer a team room.
 
 ### Permissions to open team room events
 
-Permissions on team room events are managed by their associated operational area. It is possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room.
+Permissions for team room events get managed by their associated operational area. It's possible for a team member to have permissions to collaborate within a team room, yet not be allowed to view work items, build definitions, or source code that have alerts enabled in the team room.
 
 ### How other teams use team rooms
 
@@ -153,7 +153,7 @@ Many teams use team rooms to support the following scenarios:
 
 * *Daily standup*: Capture the review of what happened the previous day and discuss any issues or blocking items based on real history. 
 
-* *Remote team members*: Geographically-dispersed team members can keep up with members in different time zones. This can be especially useful when there are different levels of language proficiency among team members.
+* *Remote team members*: Geographically dispersed team members can keep up with members in different time zones. It's especially useful when there are different levels of language capability among team members.
 
 * *Memory stream*: Configuring all events gives you an archive where you can review changesets, work item updates, and build progress all in one place.
 
