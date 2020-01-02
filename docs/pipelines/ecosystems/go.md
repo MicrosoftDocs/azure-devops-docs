@@ -164,9 +164,9 @@ This snippet does the following:
 4. Moves code that was fetched from the remote repository into the workspace's `src` directory
 5. Adds the version of Go and the workspace's `bin` directory to the path.
 
-## Install dependencies
+### Install dependencies
 
-### go get
+#### go get
 
 Use `go get` to download the source code for a Go project or to install a tool into the Go workspace. Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -176,7 +176,7 @@ Use `go get` to download the source code for a Go project or to install a tool i
   displayName: 'go get dependencies'
 ```
 
-### dep ensure
+#### dep ensure
 
 Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gopkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
 
