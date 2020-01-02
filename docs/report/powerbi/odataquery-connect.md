@@ -75,7 +75,7 @@ To test the OData query, place your cursor anywhere in the query text and select
 
 Select **OData: Open**. This action combines the multiline query into a one-line URL and opens it in your default browser. 
 
-The OData query result set is in JSON format. To view the results, install a JSON formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
+The OData query result set is in JSON format. To view the results, install the JSON Formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
 ![VS Code OData extension - JSON Output](_img/odataquery-jsonoutput.png)
 
