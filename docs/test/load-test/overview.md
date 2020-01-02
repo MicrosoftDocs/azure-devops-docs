@@ -18,7 +18,7 @@ monikerRange: '> tfs-2018'
 
 Web performance and load test functionality in Visual Studio is deprecated.
 Visual Studio 2019 will be the last version of Visual Studio containing web performance and load test features
-[(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#test-tools).
+[(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
 Cloud load testing (CLT) functionality in Azure DevOps is deprecated.
 The changes to cloud load testing functionality in Azure DevOps include all entry points for the load testing service:
