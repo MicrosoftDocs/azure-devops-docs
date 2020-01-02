@@ -74,13 +74,31 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 1. Select the service connection you want to manage.
 
 1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication type (like Token, Username/Password or OAuth etc.).
+![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
+
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
+![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
+
 1. To update the service connection, click on **Edit** at the top right corner of the page.
-1. **Approvals and checks** is part of the more options at the top right corner along with **Security**
+
+1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
+![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
 
 <a name="security"></a>
 
 ## Secure a service connection
+
+To manage the security for a connection:
+
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
+
+1. To manage user permissions at hub level, go to the more options at the top right corner and choose **Security**.
+![Service connection hub security](../release/_img/azure-rm-endpoint/service-connection-hub-security.png)
+
+1. To manage security for a service connection, open the service connection and go to more options at top right corner and choose **Security**.
+![Azure Resource Manager security](../release/_img/azure-rm-endpoint/azure-rm-security.png)
+
 Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KevVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
 1. User permissions
 1. Pipeline permissions
@@ -111,6 +129,8 @@ The project-level administrator have limited administrative capabilities as belo
 1. A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
 1. A project-level administrator can delete a service connection which removes the existence of service connection from the project.
 
+![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
+
 The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the ineritance is turned on.
 
 #### Organization level permissions
@@ -121,19 +141,9 @@ The organization-level administrator has all the administrative capabilities tha
 1. A organization-level administrator can edit all the fields of a service connection.
 1. A organization-level administrator can share/un-share a service connection with other projects.
 
+![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/azure-rm-organization-security.png)
+
 The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
-
-
-To modify the security for a connection:
-
-1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
-   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
-
-1. To manage user permissions at hub level, go to the more options at the top right corner and choose **Security**.
-
-1. To manage security for a service connection, open the service connection and go to more options at top right corner and choose **Security**.
-
-1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
 
 ### Pipeline permissions
@@ -143,6 +153,8 @@ You can either choose to open access for all pipelines to consume this service c
 
 Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
 
+![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
+
 ### Project permssions - Cross project sharing of service connections
 Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
@@ -151,6 +163,8 @@ Project permissions control which projects can use this service connection. By d
 1. The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
 1. The service connection name is appended with the project name and it can be renamed in the target project scope.
 1. Organization level administrator can un-share a service connection from any shared project.
+
+![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
 
 Note: Project permission feature is dependent on the new service connections UI and once we enable this feature, the old service connections UI is no longer usable.
 
