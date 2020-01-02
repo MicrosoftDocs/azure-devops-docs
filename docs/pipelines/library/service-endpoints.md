@@ -117,7 +117,9 @@ You can control who can create, view, use and manage the service connection with
 Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
 For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role which ensures there is no change in the behavior for existing service connections. 
 
-Note: This change is applicable only in Azure DevOps Services where new UI is available. Azure DevOps Server 2019 and older versions still follow the previous security model.
+> [!NOTE]
+> This change is applicable only in Azure DevOps Services where new UI is available. 
+> Azure DevOps Server 2019 and older versions still follow the previous security model.
 
 Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
 
@@ -166,7 +168,9 @@ Project permissions control which projects can use this service connection. By d
 
 ![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
 
-Note: Project permission feature is dependent on the new service connections UI and once we enable this feature, the old service connections UI is no longer usable.
+> [!NOTE]
+> Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service
+> connections UI is no longer usable.
 
 
 <a name="use-connection"></a>
