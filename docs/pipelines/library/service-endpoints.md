@@ -51,7 +51,7 @@ Service connections are created at project scope. A service connection created i
 1. Fill in the parameters for the service connection. The list of parameters differs for each type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
-   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/new-azure-rm-connection-01.png)
 
    > [!NOTE]
    > The connection dialog may appear different for the different types of service connections, 
@@ -66,9 +66,6 @@ Service connections are created at project scope. A service connection created i
 
 1. Choose **OK** to create the connection.
 
-> For more information about Azure Resource Manager service connections, see [Connect to Microsoft Azure](connect-to-azure.md).
-> You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
-
 ## Manage a service connection
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -76,43 +73,87 @@ Service connections are created at project scope. A service connection created i
 
 1. Select the service connection you want to manage.
 
-1. Choose from the list of **Actions** in the **Details** tab in the right pane.
-
-The actions available depend on the chosen type of connection. You can update only
-some properties of connections; for example, to change the selected subscription
-you must re-create the connection. Choose **Disconnect** to delete or remove a connection.
+1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication schema etc.
+1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
+1. To update the service connection, click on **Edit** at the top right corner of the page.
+1. **Approvals and checks** is part of the more options at the top right corner along with **Security**
 
 <a name="security"></a>
 
 ## Secure a service connection
+Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KevVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
+1. User permissions
+1. Pipeline permissions
+1. Project permissions
 
-You can control who can define new service connections in a library, and who can use an existing service connection.
-**Roles** are defined for  service connections, and **membership** in these roles governs the operations you can perform on those service connections.
+### User permissions
+You can control who can create, view, use and manage the service connection with user permissions. You have four roles i.e. Creator, Reader, User and Administrator roles to manage each of these actions. In the service connections tab, you can set the hub level permissions which are inherited and you can override the roles for each service connection. 
 
-| Role on a library service connection | Purpose |
+| Role on a service connection | Purpose |
 |------------------------------------|---------|
-| User | Members of this role can use the service connection when authoring build or release pipelines. |
-| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
+| Creator | Members of this role can create the service connection in the project. Contributors are added as members by default|
+| Reader | Members of this role can view the service connection. |
+| User | Members of this role can use the service connection when authoring build or release pipelines or authorize yaml pipelines. |
+| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection in the project. Project administrators are added as members by default |
 
-Two special groups for service connections, endpoint administrators and creators, are added to every project.
-Members of the administrators group can manage all service connections.
-By default, project administrators are added as members of this group.
-This group is also added as an administrator to every service connection created.
-Members of the creators group can create new service connections.
-By default, project contributors are added as members of this group.
+Previously, two special groups, Endpoint Creators and Endpoint Administrator groups were used to control who can create and manage service connections. Now, as part of service connection new UI, we are moving to pure RBAC model i.e. using roles.
+For backward compatibility, in the existing projects, Endpoint Administrators group is added as Administrator role and Endpoint creators group is assigned with creator role which ensures there is no change in the behavior for existing service connections. 
+
+Note: This change is applicable only in Azure DevOps Services where new UI is available. Azure DevOps Server 2019 and older versions still follow the previous security model.
+
+Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
+
+#### Project level permissions
+The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
+
+The project-level administrator have limited administrative capabilities as below:
+1. A project-level administrator can manage other users and roles at project scope.
+1. A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
+1. A project-level administrator can delete a service connection which removes the existence of service connection from the project.
+
+The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the ineritance is turned on.
+
+#### Organization level permissions
+Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. There is not inheritance for organization level permissions. Today we only have administrator role at organization level.
+
+The organization-level administrator has all the administrative capabilities that include:
+1. A organization-level administrator can manage organization level users.
+1. A organization-level administrator can edit all the fields of a service connection.
+1. A organization-level administrator can share/un-share a service connection with other projects.
+
+The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
+
 
 To modify the security for a connection:
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-1. Choose the **Roles** link to open the security tab.
+1. To manage user permissions at hub level, go to the more options at the top right corner and choose **Security**.
 
-   ![Editing the roles](_img/endpoint-roles.png)
+1. To manage security for a service connection, open the service connection and go to more options at top right corner and choose **Security**.
 
 1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
 
-> For more information about securing an Azure Resource Manager service connection, see [Connect to Microsoft Azure](connect-to-azure.md).
+
+### Pipeline permissions
+Pipeline permissions control which YAML pipelines are authorized to use this service connection. This is interlinked with 'Allow pipeline access' checkbox you find in service connection creation dialogue.
+
+You can either choose to open access for all pipelines to consume this service connection from the more options at top right corner of the **Pipeline permissions** section in security tab of a service connection.
+
+Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
+
+### Project permssions - Cross project sharing of service connections
+Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
+
+1. Only the organization-level administrators from **User permissions** can share the service connection with other projects.
+1. The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
+1. The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
+1. The service connection name is appended with the project name and it can be renamed in the target project scope.
+1. Organization level administrator can un-share a service connection from any shared project.
+
+Note: Project permission feature is dependent on the new service connections UI and once we enable this feature, the old service connections UI is no longer usable.
+
 
 <a name="use-connection"></a>
 
