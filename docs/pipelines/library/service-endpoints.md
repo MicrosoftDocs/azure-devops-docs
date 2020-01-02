@@ -73,7 +73,7 @@ Service connections are created at project scope. A service connection created i
 
 1. Select the service connection you want to manage.
 
-1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication schema etc.
+1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication type (like Token, Username/Password or OAuth etc.).
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
 1. To update the service connection, click on **Edit** at the top right corner of the page.
 1. **Approvals and checks** is part of the more options at the top right corner along with **Security**
