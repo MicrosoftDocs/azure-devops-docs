@@ -34,82 +34,20 @@ gulp
 
 ## Arguments
 
-<table>
-   <thead>
-      <tr>
-         <th>Argument</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tr>
-      <td><code>gulpFile</code><br/>gulp File Path</td>
-      <td>(Required) Relative path from the repo root of the gulp file script that you want to run. <br/>Default value: <code>gruntfile.js</code></td>
-   </tr>
-   <tr>
-      <td><code>targets</code><br/>gulp Task(s)</td>
-      <td>(Optional) Space delimited list of tasks to run. If not specified, the default task will run.</td>
-   </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Advanced</th>
-   </tr>
-   <tr>
-      <td><code>arguments</code><br/>Arguments</td>
-      <td>
-         <p>Additional arguments passed to gulp.</p>
-         <p>Tip: <code>--gulpfile</code> is not needed since already added via gulpFile input above</p>
-      </td>
-   </tr>
-   <tr>
-      <td><code>cwd</code><br/>Working Directory</td>
-      <td>(Optional) Current working directory when the script is run. Defaults to the folder where the script is located.<br/>Argument aliases: <code>workingDirectory</code></td>
-   </tr>
-   <tr>
-      <td><code>gulpjs</code><br/>gulp.js location</td>
-      <td>(Optional) Path to an alternative gulp.js, relative to the working directory.<br/>Argument aliases: <code>workingDirectory</code></td>
-   </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">JUnit Test Results</th>
-   </tr>
-   <tr>
-      <td><code>publishJUnitResults</code><br/>Publish to Azure Pipelines</td>
-      <td>Select this option to publish JUnit test results produced by the Grunt build to Azure Pipelines<br/>Default value: false
-      </td>
-   </tr>
-   <tr>
-      <td><code>testResultsFiles</code><br/>Test Results Files</td>
-      <td>(Required) Test results files path. Wildcards can be used. For example, <code>**/TEST-*.xml</code> for all XML files whose name starts with TEST-.<br/>Default value: **/TEST-*.xml
-      </td>
-   </tr>
-   <tr>
-      <td><code>testRunTitle</code><br/>Test Run Title</td>
-      <td>(Optional) Provide a name for the test run
-      </td>
-   </tr>
-   <tr>
-      <th style="text-align: center" colspan="2">Code Coverage</th>
-   </tr>
-   <tr>
-      <td><code>enableCodeCoverage</code><br/>Enable Code Coverage</td>
-      <td>(Optional) Select this option to enable Code Coverage using Istanbul<br/>Default value: false
-      </td>
-   </tr>
-   <tr>
-      <td><code>testFramework</code><br/>Test Framework</td>
-      <td>(Optional) Select your test framework <br/>Default value: Mocha
-      </td>
-   </tr>
-   <tr>
-      <td><code>srcFiles</code><br/>Source Files</td>
-      <td>(Optional) Provide the path to your source files which you want to hookRequire ()
-      </td>
-   </tr>
-   <tr>
-      <td><code>testFiles</code><br/>Test Script Files</td>
-      <td>(Required) Provide the path to your test script files <br/>Default value: test/*.js
-      </td>
-   </tr>
-   [!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
+|Argument|Description|
+|--- |--- |
+|`gulpFile` <br/>gulp File Path|(Required) Relative path from the repo root of the gulp file script that you want to run. <br/>Default value: gruntfile.js|
+|`targets` <br/>gulp Task(s)|(Optional) Space delimited list of tasks to run. If not specified, the default task will run.|
+|`arguments` <br/>Arguments|Additional arguments passed to gulp. <br/>Tip: --gulpfile is not needed since already added via gulpFile input above|
+|`cwd` <br/>Working Directory|(Optional) Current working directory when the script is run. Defaults to the folder where the script is located. <br/>Argument aliases: `workingDirectory`|
+|`gulpjs` <br/>gulp.js location|(Optional) Path to an alternative gulp.js, relative to the working directory. <br/>Argument aliases: `workingDirectory`|
+|`publishJUnitResults` <br/>Publish to Azure Pipelines|Select this option to publish JUnit test results produced by the Grunt build to Azure Pipelines <br/>Default value: false|
+|`testResultsFiles` <br/>Test Results Files|(Required) Test results files path. Wildcards can be used. For example, **/TEST-*.xml for all XML files whose name starts with TEST-. <br/>Default value: **/TEST-*.xml|
+|`testRunTitle` <br/>Test Run Title|(Optional) Provide a name for the test run|
+|`enableCodeCoverage` <br/>Enable Code Coverage|(Optional) Select this option to enable Code Coverage using Istanbul <br/>Default value: false|
+|`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
+|`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files which you want to hookRequire ()|
+|`testFiles` <br/>Test Script Files|(Required) Provide the path to your test script files <br/>Default value: test/*.js|
 
 ## Example
 
