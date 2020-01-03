@@ -55,7 +55,7 @@ None
    <tr>
       <td><code>jobName</code><br/>Job name</td>
       <td>
-         <p>(Required) The name of the Jenkins job to queue.  This must exactly match the job name on the Jenkins server.</p>
+         <p>(Required) The name of the Jenkins job to queue.  This job name must exactly match the job name on the Jenkins server.</p>
       </td>
    </tr>
    <tr>
@@ -67,7 +67,7 @@ None
    <tr>
       <td><code>multibranchPipelineBranch</code><br/>Multibranch pipeline branch</td>
       <td>
-         <p>(Required) Queue this multibranch pipeline job on the specified branch. This requires Team Foundation Server Plugin for Jenkins v5.3.4 or later</p>
+         <p>(Required) Queue this multibranch pipeline job on the specified branch. Requires Team Foundation Server Plugin for Jenkins v5.3.4 or later</p>
       </td>
    </tr>
    <tr>
@@ -85,15 +85,15 @@ None
    <tr>
       <td><code>parameterizedJob</code><br/>Parameterized job</td>
       <td>
-         <p>(Required) Select if the Jenkins job accepts parameters. This should be selected even if all default parameter values are used and no parameters are actually specified.</p><br/>Default value: false
+         <p>(Required) Select if the Jenkins job accepts parameters. This job should be selected even if all default parameter values are used and no parameters are specified.</p><br/>Default value: false
       </td>
    </tr>
    <tr>
       <td><code>jobParameters</code><br/>Job parameters</td>
       <td>
          <p>(Optional) This option is available for parameterized jobs.  Specify job parameters, one per line, in the form <b>parameterName=parameterValue</b>
-         <p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, e.g. specify <b>parameterName=</b>
-         <p>Variables are supported, e.g. to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.
+         <p>To set a parameter to an empty value (useful for overriding a default value) leave off the parameter value, for example, specify <b>parameterName=</b>
+         <p>Variables are supported, for example, to define the <b>commitId</b> parameter to be the <b>git commit ID</b> for the build, use: <b>commitId=$(Build.SourceVersion)</b>.
          <p>Supported Jenkins parameter types are: 
          <ul>
             <li>Boolean</li>
@@ -112,16 +112,13 @@ You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatic
 
 To set it up:
 
-<ol>
-<li>Install the <a href="https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin" data-raw-source="[Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin)">Team Foundation Server Plug-in</a> on the Jenkins server.
-</li>
-<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for Azure Pipelines/TFS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
-</li>
-<li>On the Jenkins Queue Job build task enable the <b>Capture console output and wait for completion</b> to collect results from the root level job, or the <b>Capture pipeline output and wait for pipeline completion</b> to collect results from all pipeline jobs.
-</ol>
+1. Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
 
-Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&lt;Job Name&gt;/team-results.zip</b> and extracted to this location.  Each set of result types collected by the plug-in, will be under the team-results directory, <b>$(Build.StagingDirectory)/jenkinsResults/&lt;Job Name&gt;/team-results/&lt;ResultType&gt;/</b>.  This is the directory where build results can be published by downstream tasks (e.g. Publish Test Results, and Publish Code Coverage Results).     
+2. On the Jenkins server, for each job you would like to collect results from, add the **Collect results for Azure Pipelines/TFS** post-build action and then configure it with one or more pairs of result type and include file pattern.
 
+3. On the Jenkins Queue Job, build task enable the **Capture console output and wait for completion** to collect results from the root level job, or the **Capture pipeline output and wait for pipeline completion** to collect results from all pipeline jobs. 
+
+Results will be downloaded to the **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results.zip** and extracted to this location. Each set of result types collected by the plug-in, will be under the team-results directory, **$(Build.StagingDirectory)/jenkinsResults/Job Name/team-results/ResultType/**. This is the directory where build results can be published by downstream tasks (for example, Publish Test Results, and Publish Code Coverage Results).                 
 
 ## Open source
 
