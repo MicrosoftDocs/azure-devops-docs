@@ -57,7 +57,7 @@ Variables are also injected into the environment. This includes both variables d
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here is an example that shows how to set two variables - `configuration` and `platform` - and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables cannot be used in the `repository` property. 
+In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here is an example that shows how to set two variables - `configuration` and `platform` - and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables cannot be used to define a `repository` in a YAML statement. 
 
 ```yaml
 # Set variables once
