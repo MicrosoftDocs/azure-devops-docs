@@ -24,9 +24,12 @@ The **view** command retrieves a specific version of a file to a temporary folde
 
 To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
-    [/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 
-    [/version:versionspec] [/login:username,[password]]
+```
+tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
+[/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 
+[/version:versionspec] [/login:username,[password]]
+```
+
 ## Parameters<table>
 <thead>
 <tr>
@@ -133,19 +136,27 @@ Finally, you can redirect the contents of a file to standard out using **|** or 
 ## Examples
 The following example displays the latest version of the file 314.c.
 
-    c:\projects>tf view 314.c
+```
+c:\projects>tf view 314.c
+```
 
 The following example displays the version of 314.c that was checked in with changeset 1999.
 
-    c:\projects>tf view /version:C1999 314.c
+```
+c:\projects>tf view /version:C1999 314.c
+```
 
 The following example retrieves version 5 of 314.c and writes it to the file 314.old.
 
-    c:\projects>tf view /version:5 314.c > 314.old
+```
+c:\projects>tf view /version:5 314.c > 314.old
+```
 
 The following example displays the latest version of each file that matches the wildcard "\*.cs".
 
-    c:\projects>tf view *.cs
+```
+c:\projects>tf view *.cs
+```
 
 ## See Also
 

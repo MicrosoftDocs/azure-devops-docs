@@ -23,9 +23,11 @@ Displays the version of one or more items in a workspace.
 **Required Permissions**  
 To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf localversions ItemSpec
-    [/recursive] [/format:brief|detailed]
-    [/workspace:WorkspaceName[;WorkspaceOwner]] [/collection:TeamProjectCollectionUrl]
+```
+tf localversions ItemSpec
+[/recursive] [/format:brief|detailed]
+[/workspace:WorkspaceName[;WorkspaceOwner]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 <table>
@@ -112,11 +114,15 @@ For more information about how to find and use the **tf** command-line utility, 
 ## Examples
 The following example displays the version of the `ControllerBase.cs` file in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\controller` folder.
 
-    c:\workspaces\FeatureA\catalog\controller>tf localversions ControllerBase.cs
+```
+c:\workspaces\FeatureA\catalog\controller>tf localversions ControllerBase.cs
+```
 
 The following example displays the versions of all files (including those in subfolders) in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\` folder. Because the **/format:detailed** option is specified, each file appears with its full path.
 
-    c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
+```
+c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
+```
 
 ## See Also
 
