@@ -78,8 +78,6 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md?
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-- name: Azure Boards & GitHub
-  href: github/toc.yml 
 - name: Integrations and extensions
   items:
   - name: Overview
@@ -145,7 +143,7 @@
   - name: Process Customization 
     href: ../reference/index.md
   - name: Client support for work tracking
-    href: ../user-guide/tools.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json 
+    href: ../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 
