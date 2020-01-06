@@ -275,7 +275,8 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <td>(Required only if <b>action</b> is set to <b>createSecret</b> and <b>secretType</b> is set is to <b>generic</b>)<br/>
     <br/>
     Multiline input that accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
-    <b>--from-literal=key1=value1</b> <b>--from-literal=key2=&quot;top secret&quot;</b>
+    <b>--from-literal=key1=value1</b>
+    <b>--from-literal=key2=&quot;top secret&quot;.&quot;</b>
     </td>
   </tr>
   <tr>
@@ -363,7 +364,7 @@ steps:
     <br/>
     Additional override values that are used via the command-line switch <b>--set</b> when manifest files using Helm are baked.<br/>
     <br/>
-    Specify override values as key-value pairs in the format <i>key</i><b>:</b><i>value</i>. If you use multiple overriding key-value pairs, you must specify each key-value pair in a separate line. Use a newline character as the delimiter between different key-value pairs.</td>
+    Specify override values as key-value pairs in the format <i>key</i><b>:</b><i>value</i>. If you use multiple overriding key-value pairs, specify each key-value pair in a separate line. Use a newline character as the delimiter between different key-value pairs.</td>
   </tr>
   <tr>
     <td><b>releaseName</b><br/>Release name</td>
