@@ -32,15 +32,15 @@
     href: /azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
     href: /azure/devops/java/download-intellij-plug-in
-- name: Status & security (Azure DevOps Services)
+- name: Status & security 
   items: 
   - name: Service status  
-    href: ../user-guide/service-status-info.md
-  - name: Azure DevOps data protection
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data protection
     href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Azure DevOps data location
+  - name: Data location
     href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Azure DevOps credential storage
+  - name: Credential storage
     href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Journey articles
   items:
