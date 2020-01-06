@@ -295,17 +295,15 @@ You're now ready to try it out!
 
 1. Select **Save** at upper right in the editor, and in the pop-up window, add a commit message and select **Save**. 
    
-1. Select **Run** on the pipeline editor, and select **Run** again in the **Run pipeline** dialog box. Azure Pipelines queues another build, acquires an available build agent, and has that build agent run the pipeline.
+1. Select **Run** on the pipeline editor, and select **Run** again in the **Run pipeline** dialog box. Azure Pipelines queues another pipeline run, acquires an available build agent, and has that build agent run the pipeline.
    
-   The pipeline takes a few minutes to complete, especially the deployment step. During deployment, the dependencies in *requirements.txt* should be deployed on App Service automatically. You should see green checkmarks next to each of the steps.
+   The pipeline takes a few minutes to complete, especially the deployment steps. You should see green checkmarks next to each of the steps.
    
-   If there's an error in the build, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting **Edit pipeline**:
+   If there's an error, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting **Edit pipeline**:
    
    ![Edit pipeline comment from a build report](../_img/python/edit-pipeline-command.png)
    
-1. From the build page, select the **Azure App Service Deploy** task to display its output. To visit the deployed site, hold down the **Ctrl** key and select the URL after **App Service Application URL**.
-   
-   ![Azure App Service Deploy task output](../_img/python/app-service-deploy-output.png)
+1. From the build page, select the **Azure Web App task** task to display its output. To visit the deployed site, hold down the **Ctrl** key and select the URL after **App Service Application URL**.
    
    If you're using the Flask example, the app should appear as follows:
 
