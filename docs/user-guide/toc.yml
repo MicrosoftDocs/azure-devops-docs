@@ -1,29 +1,27 @@
 - name: Start using Azure DevOps
-  href: index.yml?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json
-- name: Overview
   items:
   - name: What is Azure DevOps?
     href: what-is-azure-devops.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Overview of services
-    href: services.md
+    href: services.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Azure DevOps Services vs. Azure DevOps Server
-    href: about-azure-devops-services-tfs.md  
+    href: about-azure-devops-services-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json    
 - name: Quickstarts for users
   items:
   - name: Code with Git
-    href: code-with-git.md
+    href: code-with-git.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Set up continuous integration and delivery
     href: ../pipelines/get-started-designer.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: "Plan and track work"
     href: ../boards/get-started/plan-track-work.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: "Add and run manual tests"
-    href: add-run-manual-tests.md
+    href: add-run-manual-tests.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Quickstarts for admins
   items:
   - name: Sign up for Azure DevOps
-    href: sign-up-invite-teammates.md
+    href: sign-up-invite-teammates.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Create an organization or project collection
     href: ../organizations/accounts/create-organization.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Manage your project
@@ -49,13 +47,13 @@
 - name: Concepts
   items:
   - name: Plan your org structure
-    href: plan-your-azure-devops-org-structure.md
+    href: plan-your-azure-devops-org-structure.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Source control 
-    href: source-control.md
+    href: source-control.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Clients and tools
-    href: tools.md  
+    href: tools.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Software development roles
-    href: roles.md
+    href: roles.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Sign in to the web or a client
@@ -63,15 +61,15 @@
 - name: Reference
   items:
   - name: Features index
-    href: alm-devops-features.md
+    href: alm-devops-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Troubleshooting 
   items:
   - name: Troubleshoot connection
-    href: troubleshoot-connection.md
+    href: troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Troubleshoot network connections and lists of allowed addresses
     href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get support or provide feedback
-    href: provide-feedback.md
+    href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 

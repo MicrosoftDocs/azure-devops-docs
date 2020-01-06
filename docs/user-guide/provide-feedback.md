@@ -114,7 +114,8 @@ A page similar to the following example opens showing the version number.
 > 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|
-> |**Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
+> |**Azure DevOps Server 2019** | 2019.1  | 17.143.28511.3  |
+> |  | RTW  | 17.143.28511.3  |
 > |**Azure DevOps Server 2018** |2018.3 |16.131.28106.2 |
 > |  |2018.2 |16.131.27701.1 |
 > |  |2018.1 |16.122.27409.2 |
