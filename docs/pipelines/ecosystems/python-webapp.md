@@ -252,22 +252,37 @@ The we have script based task which creates a virtual environment and installs d
 
 Then we have the task to upload the artifacts.
 
-- In the Deploy stage, we use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app-deployment.md?view=azure-devops) task to deploy the *.zip* file to the App Service you identified by the `ConnectedServiceName` and `WebAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
+- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). Note that by using the template, an environment with same name as the Web app is automatically created if it does'nt already exist. Alternatively you can pre-create the environment and provide the `environmentName`
+- Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. 
+- We then use the [AzureRMWebAppDeployment](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
-    - task: AzureRMWebAppDeployment@4
-      displayName: Azure App Service Deploy
-      inputs:
-        appType: webAppLinux
-        RuntimeStack: 'PYTHON|3.6'
-        ConnectedServiceName: $(ConnectedServiceName)
-        WebAppName: $(WebAppName)
-        Package: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
+    jobs:
+  - deployment: DeploymentJob
+    pool:
+      vmImage: $(vmImageName)
+    environment: $(environmentName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          
+          - task: UsePythonVersion@0
+            inputs:
+              versionSpec: '$(pythonVersion)'
+            displayName: 'Use Python version'
 
-        # The following parameter is specific to the Flask example code. You may
-        # or may not need a startup command for your app.
+          - task: AzureWebApp@1
+            displayName: 'Deploy Azure Web App : {{ webAppName }}'
+            inputs:
+              azureSubscription: $(azureServiceConnectionId)
+              appName: $(webAppName)
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 
-        StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
+              # The following parameter is specific to the Flask example code. You may
+              # or may not need a startup command for your app.
+
+              StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
     ```
 
     The `StartupCommand` parameter shown here is specific to the *python-vscode-flask-tutorial* example code, which defines the app in the *startup.py* file. By default, Azure App Service looks for the Flask app object in a file named *app.py* or *application.py*. If your code doesn't follow this pattern, you need to customize the startup command. Django apps may not need customization at all. For more information, see [How to configure Python on Azure App Service - Customize startup command](/azure/app-service/containers/how-to-configure-python#customize-startup-command).
@@ -312,44 +327,28 @@ You're now ready to try it out!
 
 A post-deployment script can, for example, define environment variables expected by the app code. To avoid hard-coding specific variable values in your YAML file, you can instead define variables in the pipeline's web interface and then refer to the variable name in the script. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
 
-Within the `AzureRMWebAppDeployment` step of your pipeline YAML file, you can run a post-deployment script by using the following entries after the `StartupCommand` line:
+After the `AzureWebApp` deploy step of your pipeline YAML file, you can run a post-deployment script:
 
-- Inline script:
-
-  ```yaml
-  ScriptType: Inline Script
-  InlineScript:
-    echo '<Add your inline script steps here>'
-  ```
-
-- Script file:
-
-  ```yaml
-  ScriptType: File Path
-  ScriptPath: '<path-to-script-file-in-your-repository>'
+ ```yaml
+  - script: |
+        echo '<Add your inline script steps here>'
+      workingDirectory: $(projectRoot)
+      displayName: "Run a post-deployment script"
   ```
 
 ## Considerations for Django
 
 As noted earlier in this article, you can use Azure Pipelines to deploy Django apps to Azure App Service on Linux, provided that you're using a separate database. You can't use a simple SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect an external database.
 
-As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you need to customize the startup command in any way, use the `StartupCommand` parameter in the `AzureRMWebAppDeployment@4` step of your YAML pipeline file, as described in the previous section.
+As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you need to customize the startup command in any way, use the `StartupCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file, as described in the previous section.
 
 When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can use a post-deployment script for this purpose:
 
-- Inline script:
-
-  ```yaml
-  ScriptType: Inline Script
-  InlineScript: 
-  python3.6 manage.py migrate
-  ```
-
-- Script file, for a script file named *post-deployment.sh* that contains the `python3.6 manage.py migrate` command:
-
-  ```yaml
-  ScriptType: File Path
-  ScriptPath: 'post-deployment.sh'
+ ```yaml
+  - script: |
+        python3.6 manage.py migrate
+      workingDirectory: $(projectRoot)
+      displayName: "Run a post-deployment script"
   ```
 
 ## Run tests on the build agent
