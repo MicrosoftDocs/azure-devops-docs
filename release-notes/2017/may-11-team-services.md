@@ -234,7 +234,7 @@ Users can unsubscribe from any of these subscriptions by going to Notification s
 
 An account admin can disable one or more of these automatic subscriptions by navigating to the account-level __Notifications__ hub under the settings gear. Any of these subscriptions can be disabled by clicking __Disable__ under the "..." action. Once a subscription is disabled, it will no longer appear for users in their personal notification settings page.
 
-Learn more about [out-of-the-box notifications](/azure/devops/notifications/manage-personal-notifications#out-of-the-box-notifications).
+Learn more about [out-of-the-box notifications](/azure/devops/notifications/manage-personal-notifications).
 
 ## Enhanced publisher experience in the Marketplace
 Publishers of free extensions will now have access to new acquisition data, including aggregated acquisition in the selected time period to overall acquisition, daily trend on extension page views with acquisition, uptake on Team Services and TFS Connected, and conversion from page views to acquisition. This data is also available for download in XLS format to help you create your own custom reports. 

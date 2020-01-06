@@ -21,7 +21,8 @@ In the **Sprint 126 Update** of Visual Studio Team Services (VSTS), we debut man
 
 ## New feature highlights
 
-### Azure DevOps Project ![Release tag](_img/release-notes-tag_release.png)
+### Azure DevOps Project 
+![Release tag](_img/release-notes-tag_release.png)
 
 DevOps Project makes it easy to get started on Azure. It helps you launch an app on the Azure service of your choice in a few quick steps. DevOps Project sets you up with everything you need for developing, deploying and monitoring your app.
 

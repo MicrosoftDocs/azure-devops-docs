@@ -75,7 +75,7 @@ Queries you and others save under **Shared Queries** can be viewed by everyone w
 For details, see:
 - [Organize queries, add a query folder](organize-queries.md)
 - [Set query permissions](set-query-permissions.md)
-- [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
+- [Favorite a query](view-run-query.md) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
 
 <a id="examples"/>
 
@@ -97,7 +97,7 @@ You can list work items based on the following criteria...
 
 - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
 - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
-- [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
+- [Empty or not empty HTML field queries](titles-ids-descriptions.md)
 - [Category based queries](titles-ids-descriptions.md#category)
 
 ### Work item count and numeric field queries 

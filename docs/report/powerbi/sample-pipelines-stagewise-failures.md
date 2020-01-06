@@ -38,23 +38,24 @@ The following image shows an example of such a chart.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ), "
                 &"aggregate (FailedCount with sum as FailedCount)) "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, PipelineJob/StageName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineJob/StageName ), "
             &"aggregate "
         &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
+
 ```
 
 #### [OData query](#tab/odata/)
@@ -62,19 +63,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ),
-	aggregate (FailedCount with sum as FailedCount))
+    (PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),
+    aggregate (FailedCount with sum as FailedCount))
 /groupby(
-	(BuildCompletedOn/Date, PipelineJob/StageName ),
-	aggregate
+    (PipelineRunCompletedOn/Date, PipelineJob/StageName ),
+    aggregate
 (cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))
 ```
 
@@ -96,15 +97,15 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return task results for a specific pipeline</td>
 <tr>
 <tr>
-<td><code>and BuildCompletedOn/Date ge {startdate}</code></td>
+<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
 <td>Return task results for pipeline runs on or after the specified date</td>
 <tr>
 <tr>
-<td><code>and BuildOutcome eq 'Failed'</code></td>
+<td><code>and PipelineRunOutcome eq 'Failed'</code></td>
 <td>Return task results where build outcome is failed</td>
 <tr>
 <tr><td><code>and TaskOutcome eq 'Failed'</code></td>
@@ -116,7 +117,7 @@ The following table describes each part of the query.
 <tr><td><code>/groupby(</code></td>
 <td>Start groupby()</td>
 <tr>
-<tr><td><code>(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ),</code></td>
+<tr><td><code>(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),</code></td>
 <td>Group by date of completion of pipeline run, Build Id and stage name.</td>
 <tr>
 <tr><td><code>aggregate (FailedCount with sum as FailedCount))</code></td>
@@ -125,7 +126,7 @@ The following table describes each part of the query.
 <tr><td><code>/groupby(</code></td>
 <td>Start groupby()</td>
 <tr>
-<tr><td><code>(BuildCompletedOn/Date, PipelineJob/StageName ),</code></td>
+<tr><td><code>(PipelineRunCompletedOn/Date, PipelineJob/StageName ),</code></td>
 <td>Group by day and stage name.</td>
 <tr>
 <tr><td><code>aggregate</code></td>
@@ -140,9 +141,9 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand BuildCompletedOn and PipelineJob column
+### Expand PipelineRunCompletedOn and PipelineJob column
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are BuildCompletedOn and PipelineJob. 
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are PipelineRunCompletedOn and PipelineJob. 
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on both of these entities.
 
@@ -206,8 +207,8 @@ For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked column chart**. 
 
-1. Add the field "BuildCompletedOn.Date" to **Axis**.
-    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
+    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "FailedStageCount" to **Values**.
 	  - Right-click "FailedStageCount" field and ensure **Sum** is selected.
@@ -235,15 +236,15 @@ You may want to view the task wise failure trend, rather than stage wise failure
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, TaskDisplayName), "
+                &"(PipelineRunCompletedOn/Date, TaskDisplayName), "
                 &"aggregate "
             &"(FailedCount with sum as FailedCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -253,16 +254,16 @@ in
 #### [OData query](#tab/odata/)
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, TaskDisplayName),
-	aggregate
+    (PipelineRunCompletedOn/Date, TaskDisplayName),
+    aggregate
 (FailedCount with sum as FailedCount))
 ```
 
@@ -278,20 +279,20 @@ You may want to view the job wise failure trend, rather than stage wise failure 
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, BuildId, PipelineJob/JobName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/JobName ), "
                 &"aggregate (FailedCount with sum as FailedCount)) "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, PipelineJob/JobName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineJob/JobName ), "
             &"aggregate "
-        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount)) "
+        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -301,20 +302,20 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, BuildId, PipelineJob/JobName ),
-	aggregate (FailedCount with sum as FailedCount))
+    (PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/JobName ),
+    aggregate (FailedCount with sum as FailedCount))
 /groupby(
-	(BuildCompletedOn/Date, PipelineJob/JobName ),
-	aggregate
-(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))
+    (PipelineRunCompletedOn/Date, PipelineJob/JobName ),
+    aggregate
+(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount))
 ```
 
 ***

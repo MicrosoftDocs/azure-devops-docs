@@ -1,4 +1,4 @@
-﻿---
+---
 title: View and configure team velocity
 titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
@@ -80,7 +80,6 @@ Use this article to learn:
 
 ## Open your backlog from the web portal
 
-
 ::: moniker range="azure-devops"
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
@@ -111,7 +110,7 @@ Use this article to learn:
     > [!div class="mx-imgBorder"]  
     > ![Select another team](/azure/devops/boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. Or
+1. To view the in-context reports for the product backlog, check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](/azure/devops/boards/sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
@@ -212,7 +211,7 @@ Velocity reports are available for each backlog level, both product and portfoli
  
 3. The chart tracks your estimated backlog work (sum of Effort, Story Points, or Size) that your team has completed (green) in the previous sprints, or that are still in progress (blue).  
 
-   As this chart shows, velocity will fluctuate from sprint-to-sprint for a variety of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
+   As this chart shows, velocity tends to fluctuate from sprint-to-sprint for a variety of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
 
    ![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
 
@@ -313,7 +312,7 @@ You configure your velocity widget for a single team. If you want to view the ve
 
 3. Choose **Save** when done. The following image shows Velocity based on Story Points and 8 sprints of data. 
    
-	<img src="_img/commerce-team-velocity-eight-iterations.png" alt="Example Velocity widget, 8 iterations" style="border: 2px solid #C3C3C3;" />  
+	![Example Velocity widget, 8 iterations](_img/commerce-team-velocity-eight-iterations.png) 
 
 ::: moniker-end
 

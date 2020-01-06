@@ -84,7 +84,7 @@ See the [build public repositories](/azure/devops/pipelines/build/ci-public?toc=
 > To use this capability, you must have the **Build YAML pipelines** [preview feature](/azure/devops/project/navigation/preview-features) enabled on your organization.
 
 
-YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops#step-template), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-configuration).
+YAML-based build pipelines are now broadly available. Automate your continuous integration pipeline using a [YAML file checked into the repository](/azure/devops/pipelines/get-started-yaml?view=azure-devops) alongside the rest of your code. It's easy to get started with a single-job build. As your needs grow, easily scale out using [multiple jobs](/azure/devops/pipelines/process/multiple-phases?tabs=yaml&view=azure-devops), [external templates](/azure/devops/pipelines/yaml-schema?view=azure-devops), and [matrix execution](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#multi-configuration).
 
 ### Create YAML build pipelines using the new wizard
 
@@ -180,7 +180,7 @@ Environment | Stage | A logical and independent entity that represents where you
 Concurrent job/pipeline | Parallel job |  A parallel job gives you the ability to run a single build or release job at a time in your organization. With more parallel jobs available, you can run more build and release jobs at the same time.
 Service endpoint | Service connection | A group of settings, such as credentials, used to connect to external services to execute tasks in a build or release.
 
-See the [Concepts](/azure/devops/pipelines/?view=azure-devops#concepts) documentation for more information.
+See the [Concepts](/azure/devops/pipelines/?view=azure-devops) documentation for more information.
 
 ## Marketplace
 

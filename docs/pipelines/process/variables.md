@@ -9,7 +9,7 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 12/13/2019
+ms.date: 1/03/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -57,7 +57,7 @@ Variables are also injected into the environment. This includes both variables d
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here is an example that shows how to set two variables - `configuration` and `platform` - and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`.
+In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here is an example that shows how to set two variables - `configuration` and `platform` - and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables cannot be used to define a `repository` in a YAML statement. 
 
 ```yaml
 # Set variables once
@@ -172,7 +172,7 @@ You should not set secret variables in your YAML file. Instead, you should set t
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
 The following example shows how to use a secret variable called `mySecret` from a script.
-Note that unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
+Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
 steps:
@@ -211,7 +211,7 @@ YAML is not supported in TFS.
 [!INCLUDE [temp](_shared/set-secrets.md)]
 
 Imagine you want to use a secret variable called `mySecret` from a script.
-Unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
+Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
 In the left column, give the variable a name to be used in the environment.
 In the right column, dereference the secret variable like this: `$(mySecret)`.
