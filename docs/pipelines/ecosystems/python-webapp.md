@@ -282,7 +282,7 @@ Then we have the task to upload the artifacts.
               # The following parameter is specific to the Flask example code. You may
               # or may not need a startup command for your app.
 
-              StartupCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
+              startUpCommand: 'gunicorn --bind=0.0.0.0 --workers=4 startup:app'
     ```
 
     The `StartupCommand` parameter shown here is specific to the *python-vscode-flask-tutorial* example code, which defines the app in the *startup.py* file. By default, Azure App Service looks for the Flask app object in a file named *app.py* or *application.py*. If your code doesn't follow this pattern, you need to customize the startup command. Django apps may not need customization at all. For more information, see [How to configure Python on Azure App Service - Customize startup command](/azure/app-service/containers/how-to-configure-python#customize-startup-command).
@@ -325,16 +325,10 @@ You're now ready to try it out!
 
 ## Run a post-deployment script
 
-A post-deployment script can, for example, define environment variables expected by the app code. To avoid hard-coding specific variable values in your YAML file, you can instead define variables in the pipeline's web interface and then refer to the variable name in the script. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
+A post-deployment script can, for example, define environment variables expected by the app code. Add the script as part of the app code and execute it using startup command. 
 
-After the `AzureWebApp` deploy step of your pipeline YAML file, you can run a post-deployment script:
+To avoid hard-coding specific variable values in your YAML file, you can instead define variables in the pipeline's web interface and then refer to the variable name in the script. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
 
- ```yaml
-  - script: |
-        echo '<Add your inline script steps here>'
-      workingDirectory: $(projectRoot)
-      displayName: "Run a post-deployment script"
-  ```
 
 ## Considerations for Django
 
@@ -342,13 +336,10 @@ As noted earlier in this article, you can use Azure Pipelines to deploy Django a
 
 As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you need to customize the startup command in any way, use the `StartupCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file, as described in the previous section.
 
-When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can use a post-deployment script for this purpose:
+When using Django, you typically want to migrate the data models using `manage.py migrate` after deploying the app code. You can add `startUpCommand` with post-deployment script for this purpose:
 
  ```yaml
-  - script: |
-        python3.6 manage.py migrate
-      workingDirectory: $(projectRoot)
-      displayName: "Run a post-deployment script"
+      startUpCommand:  python3.6 manage.py migrate
   ```
 
 ## Run tests on the build agent
