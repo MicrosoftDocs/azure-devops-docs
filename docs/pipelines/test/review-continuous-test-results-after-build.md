@@ -88,9 +88,9 @@ Azure DevOps also provides other ways to surface the test information:
 * The [Dashboard](../../report/dashboards/dashboards.md) provides visibility of your team's progress.
   Add one or more widgets that surface test related information:
 
-  - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
-  - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
-  - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
+  - [Requirements quality](../../report/dashboards/widget-catalog.md)
+  - [Test results trend](../../report/dashboards/widget-catalog.md)
+  - [Deployment status](../../report/dashboards/widget-catalog.md)
   
 * [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
   It can help identify problematic areas in your test by providing data such as the top failing tests, and more.

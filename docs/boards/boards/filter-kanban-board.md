@@ -62,8 +62,8 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker range=">= tfs-2017"
 
 > [!TIP]
-> Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.
->For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
+> Type **Ctrl** + **Shift** + **f** to move your cursor to the filter box. To move the focus up or down within a column, use the **Tab** key.
+> For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
 
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards.
 

@@ -86,7 +86,7 @@ resources:
   - container: MyACR  #container resource alias
     type: ACR
     azureSubscription: RMPM  #ARM service connection
-    resourcegroup: contosoRG
+    resourceGroup: contosoRG
     registry: contosodemo
     repository: alphaworkz
     trigger: 

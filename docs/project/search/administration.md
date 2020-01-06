@@ -99,7 +99,7 @@ Code Search is an opt-in feature, and can be installed later from the Local Gall
 Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator.
 Non-administrative users can also request the extension be added to TFS or Azure DevOps Server. 
 
-For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 
+For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) 
 in the Local gallery documentation.
 
 <a name="config-tfs"></a>
@@ -550,7 +550,7 @@ You're prompted to enter:
 
 ### Resume indexing
 
-If indexing was paused, execute the script **StartSearchIndexing.ps1**
+If indexing was paused, execute the script **ResumeIndexing.ps1**
 with administrative privileges, to start indexing again. 
 You're prompted to enter:
 

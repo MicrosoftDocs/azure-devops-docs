@@ -69,6 +69,8 @@ Criteria that a team specifies for each stage of work to share and standardize o
 
 [!INCLUDE [temp](../../_shared/glossary-terms/kanban-board.md)] 
 
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+
 ## Kanban columns 
 
 A Kanban column maps to a stage of work. The default columns map to the workflow states of the work item types which appear on the Kanban board. You configure the columns to map [workflow states](#workflow-states) of your team. Learn more: [Kanban basics, Map the flow of work](kanban-basics.md#map-flow).

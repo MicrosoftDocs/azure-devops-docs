@@ -136,7 +136,7 @@ The process parameters that existed in build templates is now available for all 
 > [!div class="mx-imgBorder"]
 > ![Process parameters for deployment templates](_img/124_07.png)
 
-See the [documentation for the new build editor](/azure/devops/pipelines/archive/preview/2017-user-experience#parameters) for more information.
+See the [documentation for the new build editor](/azure/devops/pipelines/archive/preview/2017-user-experience) for more information.
 
 ### Default properties for Git and GitHub artifact types are now editable
 

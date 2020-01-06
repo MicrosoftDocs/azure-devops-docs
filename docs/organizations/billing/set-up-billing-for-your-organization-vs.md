@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/27/2019 
+ms.date: 12/18/2019 
 monikerRange: 'azure-devops'
 ---
 
@@ -18,20 +18,19 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this quickstart, learn to set up billing for your organization in advance of making purchases, so that you have this in place once you're ready to buy. During that process we prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+In this quickstart, learn to set up billing for your organization. Do so before making purchases, so you have it in place once you're ready to buy.
 
-*All services are billed via Azure*, and you're not required to use any other Azure services.
+*All services are billed via Azure*. You're not required to use any other Azure services.
 
-If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) before you begin. Please note that the Azure Free Trial is not supported.
-
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
-Ensure the following is true for the user who's setting up billing for the first time:
+* If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
+* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
-* User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
-* User has [an Azure subscription that you can use to set up billing](add-backup-billing-managers.md)
+> [!NOTE]
+> The Azure Free Trial isn't supported.
 
 ## Set up billing
 
@@ -60,4 +59,10 @@ Billing is set up.
 > [!div class="nextstepaction"]
 > [Pay for users](buy-basic-access-add-users.md)
 
+## Related articles
+
+* [Buy Azure Test Plans](buy-basic-access-add-users.md)
+* [Buy CI/CD](buy-more-build-vs.md)
+* [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
+* [Buy cloud-based load testing](buy-load-testing-vs.md).
 

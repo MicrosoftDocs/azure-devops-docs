@@ -103,7 +103,7 @@ You can also download any npm package using the __Download__ button in the comma
 ![npm readme](_img/03_29_13.png)
 
 ## Updated Package Management experience available to all accounts
-After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](https://visualstudio.microsoft.com/articles/news/2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](/azure/devops/release-notes/2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package experience](_img/03_29_14.png)
 
@@ -142,7 +142,7 @@ In the past, users have been unable to completely Sign out of their account when
 
 During sign-in, if you are redirected back to the sign-in page again, you are likely encountering this problem and you can either switch browsers or add an entry into your __Internet Options trusted sites zone__. In addition, organizations experiencing this can correct the group policy for their entire organization in a similar manner. More information can be found in the [KB article](https://support.microsoft.com/help/4013279/can-t-sign-in-to-visual-studio-team-services-through-internet-explorer).
 
-We think these features will help improve your workflows while addressing feedback, but we would love to hear what you think. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+We think these features will help improve your workflows while addressing feedback, but we would love to hear what you think. Please don’t hesitate to send a smile or frown through the web portal, or send other comments through the [Team Services Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

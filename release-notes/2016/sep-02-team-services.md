@@ -100,7 +100,7 @@ The Azure SQL Database Deployment task has been enhanced to run SQL scripts agai
 
 We made changes to better support securing access to your Team Service. Check out this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/23/user-lifecycle-management-improvements-in-visual-studio-team-services/) for all the details.
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

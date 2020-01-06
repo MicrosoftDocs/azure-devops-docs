@@ -16,7 +16,7 @@ monikerRange: '>= azure-devops'
 
 **Azure Pipelines | [Azure DevOps Server 2019](concurrent-pipelines-tfs.md) | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
-You can use a _parallel job_ in Azure Pipelines to run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
+For each _parallel job_ in Azure Pipelines, you can run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure.
 
 ## Microsoft-hosted CI/CD
 
@@ -25,7 +25,7 @@ If you want to run your jobs on machines that Microsoft manages, use _Microsoft-
 We provide a *free tier* of service by default in every organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
-- Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
+- Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
 
 When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 

@@ -41,7 +41,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>Command</td><td>The dotnet command to run. Select <code>custom</code> to add arguments or use a command not listed here.<br/>Options: <code>build</code>, <code>push</code>, <code>pack</code>, <code>restore</code>, <code>run</code>, <code>test</code>, <code>custom</code></td></tr>
-<tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a nuget.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
+<tr><td><code>selectOrConfig</code><br/>Feeds to use</td><td>You can either choose to select a feed from Azure Artifacts and/or NuGet.org here, or commit a NuGet.config file to your source code repository and set its path using the <code>nugetConfigPath</code> argument.<br/>Options: <code>select</code>, <code>config</code><br/>Argument aliases: <code>feedsToUse</code></td></tr>
 <tr><td><code>versioningScheme</code><br/>Automatic package versioning</td><td>Cannot be used with include referenced projects. If you choose &#39;Use the date and time&#39;, this will generate a <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[SemVer](https://semver.org/spec/v1.0.0.html)">SemVer</a>-compliant version formatted as <code>X.Y.Z-ci-datetime</code> where you choose X, Y, and Z.
 
 If you choose &#39;Use an environment variable&#39;, you must select an environment variable and ensure it contains the version number you want to use.
@@ -55,12 +55,12 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>verbosityPack</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>pack</code> command.</td></tr>
 <tr><td><code>verbosityRestore</code><br/>Verbosity</td><td>Specifies the amount of detail displayed in the output for the <code>restore</code> command.</td></tr>
 <tr><td><code>workingDirectory</code><br/>Working Directory</td><td>Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td></tr>
-<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;-:&ast;&ast;/&ast;.Tests.nupkg.</code><br/>Argument aliases: <code>packagesToPush</code></td></tr>
+<tr><td><code>searchPatternPush</code><br/>Path to NuGet package(s) to publish</td><td>The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.nupkg;!&ast;&ast;/&ast;.Tests.nupkg.</code><br/>Argument aliases: <code>packagesToPush</code></td></tr>
 <tr><td><code>nuGetFeedType</code><br/>Target feed location</td><td>Specifies whether the target feed is internal or external.<br/>Options: <code>internal</code>, <code>external</code></td></tr>
 <tr><td><code>feedPublish</code><br/>Target feed</td><td>Select a feed hosted in your organization. You must have Package Management installed and licensed to select a feed here<br/>Argument aliases: <code>publishVstsFeed</code></td></tr>
 <tr><td><code>publishPackageMetadata</code><br/>Publish pipeline metadata</td><td>Associate this build/release pipeline’s metadata (run ID, source code information) with the package</td></tr>
 <tr><td><code>externalEndpoint</code><br/>NuGet server</td><td>The NuGet <a href="../../library/service-endpoints.md" data-raw-source="[service connection](../../library/service-endpoints.md)">service connection</a> that contains the external NuGet server’s credentials.<br/>Argument aliases: <code>publishFeedCredentials</code></td></tr>
-<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>-:</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;-:&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
+<tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;!&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
 <tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.<br/>Argument aliases: <code>configuration</code></td></tr>
 <tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.<br/>Argument aliases: <code>packDirectory</code></td></tr>
 <tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> command line parameter.</td></tr>
@@ -72,7 +72,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>publishTestResults</code><br/>Publish test results</td><td>Enabling this option will generate a test results TRX file in <code>$(Agent.TempDirectory)</code> and results will be published to the server. <br>This option appends <code>--logger trx --results-directory $(Agent.TempDirectory)</code> to the command line arguments.</td></tr>
 <tr><td><code>testRunTitle</code><br/>Test run title</td><td>Provides a name for the test run</td></tr>
 <tr><td><code>custom</code><br/>Custom command</td><td>The command to pass to dotnet.exe for execution.<br/>For a full list of available commands, see the <a href="https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands" data-raw-source="[dotnet CLI documentation](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x#cli-commands)">dotnet CLI documentation</a></td></tr>
-<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
+<tr><td><code>feedRestore</code><br/>Use packages from this Azure Artifacts/TFS feed</td><td>Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.  Note that this is not supported for the test command.<br/>Argument aliases: <code>vstsFeed</code></td></tr>
 <tr><td><code>includeNuGetOrg</code><br/>Use packages from NuGet.org</td><td>Include NuGet.org in the generated NuGet.config000
 0.
 </td></tr>
@@ -122,7 +122,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    searchPatternPush: '$(Build.ArtifactStagingDirectory)/*.nupkg;-:$(Build.ArtifactStagingDirectory)/*.Tests.nupkg'
+    searchPatternPush: '$(Build.ArtifactStagingDirectory)/*.nupkg;!$(Build.ArtifactStagingDirectory)/*.Tests.nupkg'
     feedPublish: 'FabrikamFeed'
 ```
 
@@ -169,7 +169,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
   inputs:
     command: 'pack'
     selectOrConfig: 'config'
-    nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.Config'
+    nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
     externalEndpoints: $(externalFeedCredential)
 ```
 ## Test
@@ -185,17 +185,20 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 
 ## Q & A
 
-### Why is my build or publish step failing to restore packages?
+### Why is my build, publish, or test step failing to restore packages?
 
-Most `dotnet` commands, including `build` and `publish`, include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used.
+Most `dotnet` commands, including `build`, `publish`, and `test` include an implicit `restore` step. This will fail against authenticated feeds, even if you ran a successful `dotnet restore` in an earlier step, because the earlier step will have cleaned up the credentials it used.
 
 To fix this issue, add the `--no-restore` flag to the Arguments textbox.
 
-### Why should I check in a NuGet.Config?
+In addition, the `test` command does not recognize the `feedRestore` or `vstsFeed` arguments and feeds specified in this manner will not be included in the generated NuGet.config file when the implicit `restore` step runs.  It is recommended that an explicit `dotnet restore` step be used to restore packages.  The `restore` command respects the `feedRestore` and `vstsFeed` arguments.
 
-Checking a NuGet.Config into source control ensures that a key piece of information needed to build your project-the location of its packages-is available to every developer that checks out your code.
 
-However, for situations where a team of developers works on a large range of projects, it's also possible to add an Azure Artifacts feed to the global NuGet.Config on each developer's machine. In these situations, using the "Feeds I select here" option in the NuGet task replicates this configuration.
+### Why should I check in a NuGet.config?
+
+Checking a NuGet.config into source control ensures that a key piece of information needed to build your project-the location of its packages-is available to every developer that checks out your code.
+
+However, for situations where a team of developers works on a large range of projects, it's also possible to add an Azure Artifacts feed to the global NuGet.config on each developer's machine. In these situations, using the "Feeds I select here" option in the NuGet task replicates this configuration.
 
 ## Troubleshooting
 
@@ -218,6 +221,11 @@ steps:
     zipAfterPublish: false
     modifyOutputPath: true
 ```
+
+### Project using Entity Framework has stopped working on Hosted Agents
+
+The latest .NET Core: 3.0 does not have Entity Framework(EF) built-in. You will have to either install EF before beginning execution or add global.json to the project with required .NET Core SDK version. This will ensure that correct SDK is used to build EF project. If the required version is not present on the machine, add UseDotNetV2 task to your pipeline to install the required version.
+[Learn more about EF with .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-0-preview-4/)
 
 ## Open Source
 

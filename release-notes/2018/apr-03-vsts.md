@@ -78,7 +78,7 @@ Large products have several components that are dependent on each other. These c
 
 Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/azure/devops/pipelines/build/triggers#BuildCompletion) documentation for more information.
 
-This feature was prioritized based on what is currently the #2 highest voted [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu) with 1,129 votes.
+This feature was prioritized based on what is currently the #2 highest voted suggestion with 1,129 votes.
 
 > [!div class="mx-imgBorder"]
 > ![Setup build chaining](_img/132_03.png)
@@ -184,7 +184,7 @@ If you published the wrong repository, simply unpublish the wiki, which leaves t
 
 You can also change the ordering of the pages from the repository or even transform a folder to look like a wiki page.
 
-See the [product documentation blog post](https://go.microsoft.com/fwlink/?linkid=866310) for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20483269-wiki-viewing-and-editing-for-code-documentation-m).
+See the [product documentation blog post](https://go.microsoft.com/fwlink/?linkid=866310) for more information. This feature was prioritized based on a suggestion.
 
 ### Retain special characters in Wiki page titles
 
@@ -200,7 +200,7 @@ You can now create wiki pages with special characters such as `: < > * ? | -`. N
 |        \|         |        %7C          |
 |        -           |        %2D        |
 
-This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/31745275-allow-all-characters-in-wiki-page-title).
+This feature was prioritized based on a suggestion.
 
 ### Extend Wiki using REST APIs
 
@@ -220,7 +220,7 @@ When you install the [VSTS Analytics](https://marketplace.visualstudio.com/items
 > [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
-> [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
+> [Subscribe to Updates](https://azure.microsoft.com/updates/?product=azure-devops)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 
