@@ -31,9 +31,11 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
 ## Current rate limits
+
 Azure DevOps Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
 ### Global consumption limit
+
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
 
 - One of their shared resources is at risk of being overwhelmed, and 
@@ -42,6 +44,7 @@ Because this limit is focused exclusively on avoiding outages when shared resour
 The amount of the delay will depend on the user's sustained level of consumption. It may be as little as a few milliseconds per request or as much as thirty seconds. If their consumption goes to zero, or if their shared resources are no longer in danger of being overwhelmed, the delays will stop after a period of not more than five minutes. If their consumption remains high and their shared resources remain in danger of being overwhelmed, the delays may continue indefinitely.
 
 #### Azure DevOps Services Throughput Units (TSTUs)  
+
 Azure DevOps Services users consume many shared resources, and consumption depends on many factors. For example:
 
 - Uploading a large number of files to Team Foundation version control or Git typically creates a large amount of load on both an Azure SQL Database and an Azure Storage account.
@@ -68,7 +71,7 @@ be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 10
 We take a similar approach to rate limiting in Azure Pipelines. Since pipelines are not associated to a single user like other activities, each pipeline is treated as an individual entity with its own resource consumption tracked. Just like the global consumption limit for users, we apply a 200 TSTU limit for an individual pipeline in a sliding 5-minute window. Even if build agents are self-hosted, there could be load on Azure DevOps Services resources for operations such as git clone. If a pipeline is delayed or blocked due to rate limiting, a message will appear in the attached logs.
 
 <!---
-###Work item tracking request limits
+### Work item tracking request limits
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
@@ -90,7 +93,7 @@ As discussed above, we expect to add additional rate limits over time. And we al
 
 When an individual user's requests are delayed by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.  
 
-<img alt="Web UI warning banner" src="./_img/rate-limits/web-ui-warning-banner.png" style="border: 1px solid #CCCCCC" />
+![Web UI warning banner](./_img/rate-limits/web-ui-warning-banner.png)
 
 If the user does not have an email address - for example, if the "user" is actually a build service account - the notification email will be sent to the members of the project collection 
 administrators group. The warning banner and the notification email both include links to the Usage page, which can be used to investigate the usage that exceeded our thresholds, as well 
