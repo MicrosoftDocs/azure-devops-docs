@@ -30,7 +30,7 @@ Deployment jobs provide some benefits:
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > At the moment, we support only the *runOnce*, *rolling*  and the *canary* strategies. Support for *blueGreen* strategy is on our roadmap.
+   > We currently only support the *runOnce*, *rolling*, and the *canary* strategies. 
 
 ## Schema
 
@@ -113,14 +113,14 @@ strategy:
 
 ### Rolling deployment strategy
 
-A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of machines (rolling set) in each iteration. 
+A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
 
-Currently, we support rolling strategy to only Virtual machine resources.
+We currently only support the rolling strategy to VM resources.
 
-For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be aborted.
+For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
 
 Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
-`strategy.name` variable is available in this strategy block which takes the name of the strategy. In this case, rolling.
+The `strategy.name` variable is available in this strategy block which takes the name of the strategy. In this case, rolling.
 
 ```YAML
 strategy:
@@ -146,7 +146,7 @@ strategy:
         steps:
         ...
 ```
-All the life cycle hooks are supported and Lifecycle hook jobs are created to run on each Virtual Machine.
+All the lifecycle hooks are supported and lifecycle hook jobs are created to run on each VM.
 
 `preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` are executed once per batch size defined by `maxParallel`. 
 Then, either `on: success` or `on: failure` is executed.
@@ -268,7 +268,7 @@ This is particularly useful in the cases where the same connection detail is set
 
 ### Rolling deployment strategy
 
-In the next example, the rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+The rolling strategy for VMs updates up to 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
 ```YAML
 jobs: 
