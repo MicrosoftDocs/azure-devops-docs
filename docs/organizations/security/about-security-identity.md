@@ -51,7 +51,7 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
-*	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
+*	[Alternate credentials](../../repos/git/auth-overview.md) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 

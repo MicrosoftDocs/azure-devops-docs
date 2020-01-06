@@ -39,11 +39,11 @@ An example is shown in the following image.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded') "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded') "
         &"and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1) "
         &") "
             &"/compute( "
@@ -63,19 +63,19 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')
-	and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')
+    and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)
+    )
 /compute(
-	percentile_cont(ActivityDurationSeconds, 0.5, TaskDisplayName) as TaskDuration50thPercentileInSeconds,
-	percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName) as TaskDuration80thPercentileInSeconds,
-	percentile_cont(ActivityDurationSeconds, 0.95, TaskDisplayName) as TaskDuration95thPercentileInSeconds)
+    percentile_cont(ActivityDurationSeconds, 0.5, TaskDisplayName) as TaskDuration50thPercentileInSeconds,
+    percentile_cont(ActivityDurationSeconds, 0.8, TaskDisplayName) as TaskDuration80thPercentileInSeconds,
+    percentile_cont(ActivityDurationSeconds, 0.95, TaskDisplayName) as TaskDuration95thPercentileInSeconds)
 /groupby(
-	(TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds,TaskDuration95thPercentileInSeconds, TaskDisplayName))
+    (TaskDuration50thPercentileInSeconds, TaskDuration80thPercentileInSeconds,TaskDuration95thPercentileInSeconds, TaskDisplayName))
 &$orderby=TaskDuration50thPercentileInSeconds desc
 ```
 
@@ -96,15 +96,15 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
-<td><code>and BuildCompletedOn/Date ge {startdate}</code></td>
+<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
 <td>Return task results for pipeline runs on or after the specified date</td>
 <tr>
 <tr>
-<td><code>and (BuildOutcome eq 'Succeed' or BuildOutcome eq 'PartiallySucceeded')</code></td>
+<td><code>and (PipelineRunOutcome eq 'Succeed' or PipelineRunOutcome eq 'PartiallySucceeded')</code></td>
 <td>Return task results from only the successful or partially successful pipeline runs</td>
 <tr>
 <td><code>and (CanceledCount ne 1 and SkippedCount ne 1 and AbandonedCount ne 1)</code></td>

@@ -116,7 +116,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">move the work item to a different project</a>. </p>
+<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/_img/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/_img/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -140,7 +140,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -484,7 +484,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose the <img src="../boards/_img/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md#field-filter" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md#field-filter)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<p>Choose the <img src="../boards/_img/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
 <img src="_img/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter"/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
@@ -498,7 +498,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><a href="../boards/boards/customize-cards.md" data-raw-source="[Add fields to cards](../boards/boards/customize-cards.md)">Add fields to cards</a> that you can edit directly on your Kanban and task boards.</p><br/><img src="../boards/boards/_img/kanban-board-card-style-rule-example.png" alt="Customized card with added work item fields and styling rules"/><br/><br/>
 
 <p><b>Live updates </b></p>
-<p><a href="../boards/boards/kanban-basics.md#live-updates" data-raw-source="[Enable live updates](../boards/boards/kanban-basics.md#live-updates)">Enable live updates</a> to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
+<p><a href="../boards/boards/kanban-basics.md" data-raw-source="[Enable live updates](../boards/boards/kanban-basics.md)">Enable live updates</a> to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
 <img src="_img/features/alm-feature-live-updates.png" alt="Live updates"/><br/><br/>
 
 
@@ -1165,7 +1165,7 @@ pipelines\tasks\build\_img
 <br />
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
-<p><a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget)">Add a release summary chart</a> to a team dashboard. </p>
+<p><a href="../report/dashboards/widget-catalog.md" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md)">Add a release summary chart</a> to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
 <p><a href="../pipelines/release/index.md" data-raw-source="[Create workflows tailored to your process](../pipelines/release/index.md)">Create workflows tailored to your process</a> by customizing our tasks, or extend with your own custom tasks.</p>
@@ -1281,7 +1281,7 @@ pipelines\tasks\build\_img
 <img src="_img/features/alm-feature-test-chart.png" alt="Test run chart"/><br/> <br/>
 
 <p><b>Test quality trend charts</b></p>
-<p>Add <a href="../report/dashboards/add-charts-to-dashboard.md#test-quality" data-raw-source="[failure and duration charts for tests run as part of your build](../report/dashboards/add-charts-to-dashboard.md#test-quality)">failure and duration charts for tests run as part of your build</a> to your team dashboard. </p>
+<p>Add <a href="../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[failure and duration charts for tests run as part of your build](../report/dashboards/add-charts-to-dashboard.md)">failure and duration charts for tests run as part of your build</a> to your team dashboard. </p>
 <img src="_img/features/alm-dashboards-test-quality-failure-duration-charts.png" alt="Test quality failure and duration charts"/><br/> <br/>
 
 </td>
@@ -1309,7 +1309,7 @@ pipelines\tasks\build\_img
 <img src="_img/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/><br/>
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
-<p><a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget)">Add a release summary chart</a> to a team dashboard. </p>
+<p><a href="../report/dashboards/widget-catalog.md" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md)">Add a release summary chart</a> to a team dashboard. </p>
 
 </td>
 <td width="33%">
@@ -1479,7 +1479,7 @@ pipelines\tasks\build\_img
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
 <img src="_img/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
 <p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md#team-room-widget" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md#team-room-widget)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -1508,7 +1508,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Assigned to me widget  </b></p>
-<p>Provides quick access to <a href="../report/dashboards/widget-catalog.md#assigned-to-me-widget" data-raw-source="[work items assigned to the logged in user](../report/dashboards/widget-catalog.md#assigned-to-me-widget)">work items assigned to the logged in user</a>. </p>
+<p>Provides quick access to <a href="../report/dashboards/widget-catalog.md" data-raw-source="[work items assigned to the logged in user](../report/dashboards/widget-catalog.md)">work items assigned to the logged in user</a>. </p>
 
 
 <p><b>Chart for work items</b></p>
@@ -1532,7 +1532,7 @@ pipelines\tasks\build\_img
 <p>Adds a configurable <a href="../report/dashboards/widget-catalog.md#query-results-widget" data-raw-source="[query results list](../report/dashboards/widget-catalog.md#query-results-widget)">query results list</a> to a team dashboard. </p>
 
 <p><b>Requirements quality </b></p>
-<p>Displays a configurable widget that you can use to <a href="../report/dashboards/widget-catalog.md#requirements-quality-widget" data-raw-source="[track quality continuously from a build or release definition](../report/dashboards/widget-catalog.md#requirements-quality-widget)">track quality continuously from a build or release definition</a>.</p>
+<p>Displays a configurable widget that you can use to <a href="../report/dashboards/widget-catalog.md" data-raw-source="[track quality continuously from a build or release definition](../report/dashboards/widget-catalog.md)">track quality continuously from a build or release definition</a>.</p>
 
 </td>
 <td width="33%">
@@ -1568,14 +1568,14 @@ pipelines\tasks\build\_img
  </p>
 
 <p><b>Deployment status (Azure DevOps Services)</b></p>
-<p>Configurable tile that shows you a consolidated view of the <a href="../report/dashboards/widget-catalog.md#deployment-status-widget" data-raw-source="[deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md#deployment-status-widget)">deployment status and test pass rate across multiple environments for a recent set of builds</a>.<br/> </p>
+<p>Configurable tile that shows you a consolidated view of the <a href="../report/dashboards/widget-catalog.md" data-raw-source="[deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md)">deployment status and test pass rate across multiple environments for a recent set of builds</a>.<br/> </p>
 
 <p><b>Release definition overview</b></p>
-<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md#release-definition-widget)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
+<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
  </p>
 
 <p><b>Test trend results </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md#test-results-widget" data-raw-source="[trend of test results](../report/dashboards/widget-catalog.md#test-results-widget)">trend of test results</a>, such as passed or failed tests, for a selected build definition.</p>
+<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[trend of test results](../report/dashboards/widget-catalog.md)">trend of test results</a>, such as passed or failed tests, for a selected build definition.</p>
 <img src="../report/dashboards/_img/widgets-test-trend-results.png" alt="Test results trend widget"/>
 <br/>
 
@@ -2222,7 +2222,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <img src="_img/features/features-query-permissions.png" alt="Query permissions"/><br/><br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md)">granted explicit permissions to edit a specific process</a>.  </p>
 
 <p><b>Valid users</b></p>
 <p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
