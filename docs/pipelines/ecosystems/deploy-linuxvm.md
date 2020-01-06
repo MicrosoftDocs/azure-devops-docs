@@ -15,9 +15,9 @@ monikerRange: 'azure-devops'
 
 # Deploy to a Linux Virtual Machine
 
-Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to Virtual machines, both on-prem or on any cloud.
+Azure Pipelines provides a complete, fully featured set of CI/CD automation tools for deployments to virtual machines, both on-premises or on any cloud.
 
-Continuous integration (CI) and continuous deployment (CD) form a pipeline by which you can build, release, and deploy your code. This document contains the steps associated with setting up a CICD pipeline for doing multi-machine deployments.
+Continuous integration (CI) and continuous deployment (CD) form a pipeline by which you can build, release, and deploy your code. This document contains the steps associated with setting up a CI/CD pipeline for doing multi-machine deployments.
 We'll show you how to set up continuous deployment of your app to an web server running on Ubuntu using YAML based
 Azure Pipelines. You can use the steps in this 
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
@@ -42,7 +42,7 @@ https://github.com/spring-projects/spring-petclinic
 https://github.com/azure-devops/fabrikam-node
 ```
 > [!NOTE]
-> The app was built through [Yeoman](https://yeoman.io/learning/index.html). It uses Express, bower, and grunt. And it has some npm packages as dependencies.
+> The app was built with [Yeoman](https://yeoman.io/learning/index.html). It uses Express, Bower, and Grunt. The app also has npm package dependencies.
 > The sample also contains a script that sets up Nginx and deploys the app. It is executed on the virtual machines. Specifically, the script:
 > 1. Installs Node, Nginx, and PM2.
 > 2. Configures Nginx and PM2.
@@ -63,21 +63,19 @@ Follow the additional steps described below based on the runtime stack used for 
 
 #### [JavaScript](#tab/java-script)
 
-To install a javascript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
-If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
-[this example](/azure/virtual-machines/linux/quick-create-cli).
+- For installing a JavaScript or Node.js app, set up a Linux VM with Nginx in Azure using [this](/azure/virtual-machines/linux/quick-create-cli).
 
 * * * 
 
 ## Create an environment with virtual machines as resources
 
-Virtual machines can be added as resources within [environments](../process/environments.md) and can be targeted for multi-machine deployments. 
+Virtual machines can be added as resources within [environments](../process/environments.md) and can be targeted for multi-VM deployments. 
 Deployment history views within environment provide traceability from VM to the pipeline and then to the commit.
 
-You can create an environment in the “**Environments**” hub within the “**Pipelines**” section.
+You can create an environment in the **Environments** hub within the **Pipelines** section.
 1.	Sign into your Azure DevOps organization and navigate to your project.
-2.	In your project, navigate to the Pipelines page. Then choose Environments and click on **Create Environment**. Specify a **Name** (required) for the environment and a **Description**.
-3.	Choose “**Virtual Machines**” as a “**Resource**” to be added to the environment and click on “**Next**”
+2.	In your project, navigate to the Pipelines page. Then choose **Environments** and click **Create Environment**. Specify a **Name** (required) for the environment and a **Description**.
+3.	Choose **Virtual Machines** as a **Resource** to be added to the environment and click **Next**.
 4.	Choose Operating System (Windows/Linux), and **copy PS registration script**. 
 5.	Now run the copied script from an administrator PowerShell command prompt on each of the target VMs to be registered with this Environment.
     > [!NOTE]
@@ -87,7 +85,7 @@ You can create an environment in the “**Environments**” hub within the “**
 > [!div class="mx-imgBorder"]
 > ![VMcreation](_img/vm-creation.png)
 
-7.	For adding more VMs, you can view and copy the script again by clicking on “Add resource” and choosing “Virtual Machines” as resource. This script would remain same for all the VMs to be added to this environment. 
+7.	For adding more VMs, you can view and copy the script again. Click **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs to be added to this environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
 > [!div class="mx-imgBorder"]
 > ![VMresource_view](_img/vm-resourceview.png)
@@ -176,7 +174,7 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 * * * 
 
 ## Define CD steps to deploy to the Linux VM
-1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources which you have earlier using the YAML syntax below:
+1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources which you created earlier:
 ```YAML
 jobs:  
   - deployment: VMDeploy
@@ -190,7 +188,7 @@ jobs:
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
-3. You can specify eith `runOnce` or `rolling` as deployment strategy. 
+3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 
 `runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
 
