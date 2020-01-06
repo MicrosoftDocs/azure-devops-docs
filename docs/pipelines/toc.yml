@@ -10,6 +10,8 @@
   href: get-started/pipelines-get-started.md
 - name: Key concepts
   href: get-started/key-pipelines-concepts.md
+- name: Multi-stage pipelines user experience
+  href: get-started/multi-stage-pipelines-experience.md
 - name: Quickstarts
   expanded: true
   items:
@@ -158,7 +160,7 @@
       href: apps/cd/deploy-docker-webapp.md
     - name: Azure Kubernetes Service
       href: apps/cd/deploy-aks.md
-    - name: IoT edge
+    - name: IoT Edge
       href: release/deploy-iot-using-azure-pipelines.md
     - name: Azure Cosmos DB CI/CD
       href: targets/cosmos-db.md
@@ -353,6 +355,8 @@
     - name: Pipeline options for Git
       href: repos/pipeline-options-for-git.md
       displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
+    - name: Multi-repo checkout
+      href: repos/multi-repo-checkout.md
   - name: Resources
     href: process/resources.md
   - name: Retention policy
@@ -586,13 +590,13 @@
         - name: NuGet Installer 0.*
           href: tasks/package/prev-versions/nuget-installer-0.md
         - name: NuGet Restore 1.*
-          href: tasks/package/nuget.md#restore-nuget-packages
+          href: tasks/package/nuget.md
         - name: NuGet Packager 0.*
           href: tasks/package/prev-versions/nuget-packager-0.md
         - name: NuGet Publisher 0.*
           href: tasks/package/prev-versions/nuget-publisher-0.md
         - name: NuGet Command 0.*
-          href: tasks/package/nuget.md#custom-nuget-command
+          href: tasks/package/nuget.md
         - name: Pip Authenticate 0.*
           href: tasks/package/prev-versions/pip-authenticate-0.md
         - name: Twine Authenticate 0.*

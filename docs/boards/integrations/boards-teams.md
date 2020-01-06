@@ -140,14 +140,14 @@ Often, discussions in a channel necessitates creation of work items. You can use
 
 This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Pic: View subscriptions](./_img/integrations-teams/view-subscriptions.png)
+> [!div class="mx-imgBorder"]  
+> ![View subscriptions](./_img/integrations-teams/view-subscriptions.png)
 
 ## Search and share work items using compose extension
 
 To help users search and share work items, Azure Boards app for Microsoft Teams supports compose extension. You can now search for work items by work item id or by title. For compose extension to work, users will have to sign into Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
-![Pic: URL unfurling](./_img/integrations-teams/compose extension.png)
+![Pic: URL unfurling](./_img/integrations-teams/teams-boards-compose-extension.png)
 
 ## Preview work item URLs
 
@@ -163,6 +163,18 @@ A Teams channel can only link to one Azure Boards project at a time. To link to 
 
 Unlinking a project deletes all the subscriptions along with added area paths from the channel. If the channel has no subscriptions, any user can unlink a project. However if a channel has subscriptions, only project admins can unlink a project from a channel.
 
+## Threaded notifications
+
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item will be linked together.
+
+### Compact view of threaded notifications
+
+> [!div class="mx-imgBorder"]
+> ![Compact thread](./_img/integrations-teams/threads-boards-compact-view.png)
+
+### Expanded view of threaded notifications
+> [!div class="mx-imgBorder"]
+> ![Expanded thread](./_img/integrations-teams/threads-boards-expanded-view.png)
 
 ## Command reference
 
@@ -192,7 +204,7 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/boards-consent-page-teams.png)
 
-If these steps don't resolve your authentication issue, contact us at `AzureDevOpsTeamsApps@microsoft.com`.
+If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 
 ## Related articles

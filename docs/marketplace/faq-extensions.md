@@ -16,7 +16,7 @@ ms.topic: conceptual
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
 ::: moniker range="azure-devops"
 
@@ -146,7 +146,7 @@ A: Depending on the support you need, choose from the following links:
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops-visual-studio-team-services)
+* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 * Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
 * General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
 

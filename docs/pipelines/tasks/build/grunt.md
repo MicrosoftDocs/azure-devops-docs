@@ -35,39 +35,20 @@ The build agent must have the following capability:
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Grunt File Path</td>
-<td>Relative path from the repo root to the Grunt script that you want to run. The default value is <code>gruntfile.js</code>
-</td>
-</tr>
-<tr>
-<td>Grunt task(s)</td>
-<td>(Optional) Space delimited list of tasks to run. If you leave it blank, the default task will run.</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Arguments</td>
-<td>
-<p>Additional arguments passed to Grunt. See <a href="http://gruntjs.com/using-the-cli" data-raw-source="[Using the CLI](https://gruntjs.com/using-the-cli)">Using the CLI</a>.</p><p>Tip: <code>--gruntfile</code> is not needed. This argument is handled by the Grunt file path argument shown above.</p>
-</td>
-</tr>
-<tr>
-<td>Working directory</td>
-<td>Current working directory when the script is run.  If you leave it blank, the working directory is the folder where the script is located.</td>
-</tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`gruntFile` <br/>Grunt File Path|(Required) Relative path from the repo root to the Grunt script that you want to run. <br/>Default value: gruntfile.js|
+|`targets` <br/>Grunt task(s)|(Optional) Space delimited list of tasks to run. If you leave it blank, the default task will run.|
+|`arguments` <br/>Arguments|Additional arguments passed to Grunt. See [Using the CLI](http://gruntjs.com/using-the-cli). <br/>Tip: --gruntfile is not needed. This argument is handled by the Grunt file path argument shown above.|
+|`cwd` <br/>Working Directory|(Optional) Current working directory when the script is run.  If you leave it blank, the working directory is the folder where the script is located. <br/>Argument aliases: `workingDirectory`|
+|`gruntCli` <br/>grunt-cli location|(Required) grunt-cli to run when agent can't find global installed grunt-cli  Defaults to the grunt-cli under node_modules folder of the working directory. <br/>Default value: node_modules/grunt-cli/bin/grunt <br/>Argument aliases: `workingDirectory`|
+|`publishJUnitResults` <br/>Publish to Azure Pipelines|Select this option to publish JUnit test results produced by the Grunt build to Azure Pipelines <br/>Default value: false|
+|`testResultsFiles` <br/>Test Results Files|(Required) Test results files path. Wildcards can be used. For example, **/TEST-*.xml for all XML files whose name starts with TEST-. <br/>Default value: **/TEST-*.xml|
+|`testRunTitle` <br/>Test Run Title|(Optional) Provide a name for the test run|
+|`enableCodeCoverage` <br/>Enable Code Coverage|(Optional) Select this option to enable Code Coverage using Istanbul <br/>Default value: false|
+|`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
+|`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files which you want to hookRequire ()|
+|`testFiles` <br/>Test Script Files|(Required) Provide the path to your test script files <br/>Default value: test/*.js|
 
 ## Example
 

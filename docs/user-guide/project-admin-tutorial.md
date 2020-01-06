@@ -10,17 +10,17 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 06/14/2019
 monikerRange: '>= tfs-2013'
+ms.date: 06/14/2019
 ---
 
 # Manage your project 
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
 
-With most Azure DevOps services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
+With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-That said, as an organization Owner or a Project Administrator, there are a few tasks you might want to do once your created your project to ensure a smooth operational experience. If you own a large organization, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
+That said, as an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you're tasked with managing an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
 
 
 ## Add users to your project
@@ -28,14 +28,12 @@ That said, as an organization Owner or a Project Administrator, there are a few 
 ::: moniker range="azure-devops"  
 The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
 
-Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see the following articles:
-
-- [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users.md)
-- [Manage user access through Azure Active Directory](../organizations/accounts/access-with-azure-ad.md)
+Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="<= azure-devops-2019" 
+ 
 The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
@@ -43,13 +41,13 @@ The first task is to ensure that all members of your organization or group are a
 
 ::: moniker-end
 
-You can delegate the task to add users to an organization by adding a user with Stakeholder or higher access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
+To delegate the task of managing user access, add a user with Stakeholder or higher access to the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
 
 ## Grant or restrict permissions
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
-If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group or add them to a specific role. To learn more, see these articles:
+If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group. Or, add them to a specific role. To learn more, see the following articles:
 
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
 - [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
@@ -68,12 +66,13 @@ To learn more about permissions and security, review the following articles:
 ::: moniker-end
 
 ::: moniker range="azure-devops"  
-Each project has a summary page where you can share information through **README** files or by pointing to a project Wiki. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md).
+
+Each project has a summary page that's useful for sharing information through **README** files. Or, redirect users to a project Wiki. For users who are new to your project, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md) or [provision a Wiki](../project/wiki/wiki-create-repo.md). Use these features to share established processes and procedures for your project.
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"  
-Each project has a summary page where you can share information through **README files**. To orient users who are new to your project and share established processes and procedures, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md).
+Each project has a summary page that's useful for sharing information through **README files**. For users who are new to your project, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md). Use this feature to share established processes and procedures for your project. 
 
 ::: moniker-end
 
@@ -81,9 +80,9 @@ Each project has a summary page where you can share information through **README
 
 ## Remove unused services from the user interface
 
-To simplify the web portal user interface, you can disable select services. For example, if you use a project only to log bugs, then you can remove all services except for **Boards**.
+To simplify the web portal user interface, you can disable select services. For example, if you use a project only to log bugs, then disable all services except for **Boards**.
 
-This example shows that **Test Plans** has been disabled:
+This example shows that **Test Plans** is disabled:
 
 > [!div class="mx-imgBorder"]
 > ![Disable a service](_img/services/set-service-visibility.png)
@@ -91,9 +90,10 @@ This example shows that **Test Plans** has been disabled:
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
+
 ## Set code, test, and other policies 
 
-There are several policies you can set to support collaboration across your teams, secure your projects, and automatically remove files that are no longer needed. To set policies, review the following articles: 
+Set policies to support collaboration across your teams, secure your projects, and automatically remove obsolete files. To set policies, review the following articles: 
 
 ::: moniker-end  
 
@@ -115,7 +115,7 @@ There are several policies you can set to support collaboration across your team
 
 ## Define area and iteration paths for work tracking
 
-If you support several products or feature areas, you can assign work items by feature area by setting up [area paths](../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you'll want to configure [iteration paths](../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, and team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md).  
+If you support several products, you can assign work items by feature area by defining [area paths](../organizations/settings/set-area-paths.md). To assign work items to specific time intervals, also known as sprints, you configure [iteration paths](../organizations/settings/set-iteration-paths-sprints.md). To use the Scrum tools&mdash;sprint backlogs, taskboards, and team capacity&mdash;you need to configure several sprints. For an overview, see [About areas and iteration paths](../organizations/settings/about-areas-iterations.md).  
 
 
 > [!div class="mx-tdBreakAll"] 
@@ -124,14 +124,11 @@ If you support several products or feature areas, you can assign work items by f
 > |<img src="../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
 
-::: moniker range="azure-devops"
-  
 ## Customize work-tracking processes
 
-You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. Although you can customize the process easily through the user interface, you can establish a methodology for who manages the updates and evaluates requests.
-
-> [!NOTE]
-> By default, users granted Stakeholder and higher access are granted permission to create, edit, and manage processes used to customize the work-tracking experience. If you want to lock down who can perform these tasks, set permissions at the organization level to **Deny**.  
+::: moniker range="azure-devops"
+  
+All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
 To learn more, see the following articles:
 
@@ -143,9 +140,7 @@ To learn more, see the following articles:
 
 ::: moniker range="<= tfs-2018"
 
-## Customize work-tracking processes
-
-You and your teams can start using all work-tracking tools immediately after you create a project. But often, one or more users want to customize the experience to meet one or more business needs. You can establish a methodology for who manages the updates and evaluates requests.
+All work-tracking tools are available immediately after you create a project.  Often, one or more users may want to customize the experience to meet one or more business needs. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
 To learn more, see [On-premises XML process model](../reference/on-premises-xml-process-model.md).
 
@@ -160,7 +155,7 @@ A number of notifications are predefined for each project you add. Notifications
 - Project notifications, managed by a member of the Project Administrators group.
 - [Organization and collection level notifications](../notifications/howto-manage-organization-notifications.md), managed by a member of the Project Collection Administrators group.
 
-If users believe they're getting too many notifications, they can [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
+If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Personal notifications](_img/services/personal-notifications.png)   
@@ -176,7 +171,7 @@ In order for team members to receive notifications, [you must configure an SMTP 
 
 ## Add teams to scale your organization
 
-We recommend that you add teams as your organization grows. Each team gets [access to their own set of Agile tools](../organizations/settings/about-teams-and-settings.md) that they can customize.
+We recommend that you add teams as your organization grows. Each team gets [access to their own set of customizable Agile tools](../organizations/settings/about-teams-and-settings.md).
 
 ![Agile tools and team assets](../organizations/settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)
 
@@ -190,7 +185,7 @@ To learn more, see the following articles:
   
 ## Install and manage extensions 
 
-An extension is an installable unit that adds new capabilities to your projects. You can find extensions in Azure DevOps to support the following functions:
+An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
 
 - Planning and tracking of work items, sprints, scrums, etc.  
 - Build and release flows.
@@ -206,6 +201,7 @@ For example, to support [code search](../project/search/code-search.md), install
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015"  
+
 You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
 ::: moniker-end
@@ -228,7 +224,7 @@ All organizations can add up to five users with Basic access and unlimited users
 ::: moniker range="azure-devops"  
 
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
@@ -237,7 +233,7 @@ All organizations can add up to five users with Basic access and unlimited users
 
 - [Manage projects](../organizations/projects/index.md)
 - [Security & identity](../organizations/security/index.md)
-- [Organization management](../organizations/accounts/index.md)
+- [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 - [TFS administration](/azure/devops/server/index)
 

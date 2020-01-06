@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshoot adding/removing users in organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ### Q: Why can't I manage users?
 
-A: To access and manage users, you must have Azure DevOps [Project Collection Administrator or organization Owner permissions](#find-owner).
+A: To access and manage users at the organization level, you must be a member of the Project Collection Administrators group or the [organization Owner](#find-owner). To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
 
 <a name="find-owner"></a>
 
@@ -99,7 +99,7 @@ If you don’t complete these steps by September 30, 2019, and your users are do
 
 ### Q: What does "Last Access" mean in the All Users view?
 
-The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
+The value in **Last Access** is the last date a user accessed any resources or services. Accessing Azure DevOps includes using *organizationname*.visualstudio.com directly and using resources or services indirectly. For example, you might use the [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) extension, or you can push code to Azure DevOps from a Git command line or IDE.
 
 <a name="paid-basic-access-join-other-organizations"></a>
 

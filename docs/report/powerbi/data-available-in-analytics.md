@@ -79,7 +79,7 @@ Currently, you can access the following data from Analytics. This information wa
 > [!NOTE]   
 > Analytics doesn't support reporting on plain text and HTML fields at this time. 
 
-As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
+As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/tag/reporting/).
 
 
 ## Try this next

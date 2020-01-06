@@ -1,5 +1,3 @@
-- name: Inheritance Process  
-  href: index.md?toc=/azure/devops/organizations/settings/work/toc.json&bc=/azure/devops/organizations/settings/work/breadcrumb/toc.json
 - name: About the inheritance process 
   href: inheritance-process-model.md
 - name: Quickstarts

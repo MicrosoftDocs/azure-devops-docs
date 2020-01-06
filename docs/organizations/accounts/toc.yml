@@ -1,7 +1,5 @@
-- name: Manage organizations
-  href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
-- name: About managing organizations
-  href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+- name: About managing organizations 
+  href: organization-management.md
 - name: Access with Azure AD
   href: access-with-azure-ad.md
 - name: Create your organization or project collection
@@ -14,26 +12,12 @@
     href: resources-granted-to-project-members.md
 - name: How-to guides
   items:
-  - name: Manage your organization
-    items:
-    - name: Change organization Owner
-      href: change-organization-ownership-vs.md
-    - name: Rename organization
-      href: rename-vsts-organization.md
-    - name: Delete organization
-      href: delete-your-organization.md
-    - name: Recover organization
-      href: recover-your-vsts-organization.md
-    - name: Change organization location
-      href: change-organization-location.md
-    - name: Add privacy policy URL
-      href: add-privacy-policy-url.md
-    - name: Change time zone
-      href: change-time-zone.md
   - name: Manage access
     items:
     - name: Add users to your organization
       href: add-organization-users.md
+    - name: Add members to a team or project
+      href: add-team-members.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage Conditional Access
@@ -49,32 +33,44 @@
       href: delete-organization-users.md
     - name: Add external users
       href: add-external-user.md
-    - name: Access with Azure AD
-      items:
-      - name: Connect organization to Azure AD
-        href: connect-organization-to-azure-ad.md
-      - name: Change Azure AD connection
-        href: change-azure-ad-connection.md
-      - name: Disconnect from Azure AD
-        href: disconnect-organization-from-azure-ad.md
-      - name: Manage groups
-        href: manage-azure-active-directory-groups-vsts.md
-      - name: Add users to Azure AD
-        href: add-users-to-azure-ad.md
-      - name: Delete users connected to Azure AD
-        href: delete-users-from-services-aad.md
-      - name: Restrict organization creation
-        href: azure-ad-tenant-policy-restrict-org-creation.md
-      - name: FAQ 
-        href: faq-azure-access.md#faq-connect    
-  - name: Manage group-based licensing 
+  - name: Manage access with Azure AD
     items:
-    - name: Assign access levels and extensions
-      href: assign-access-levels-and-extensions-by-group-membership.md
-    - name: Remove direct assignments
-      href: remove-direct-assignments.md
+    - name: Connect organization to Azure AD
+      href: connect-organization-to-azure-ad.md
+    - name: Manage groups
+      href: manage-azure-active-directory-groups.md
+    - name: Add users to Azure AD
+      href: add-users-to-azure-ad.md
+    - name: Change Azure AD connection
+      href: change-azure-ad-connection.md
+    - name: Disconnect from Azure AD
+      href: disconnect-organization-from-azure-ad.md
+    - name: Delete users connected to Azure AD
+      href: delete-users-from-services-aad.md
+    - name: Restrict organization creation
+      href: azure-ad-tenant-policy-restrict-org-creation.md
+    - name: FAQ 
+      href: faq-azure-access.md#faq-connect    
+  - name: Manage access with group rules 
+    href: assign-access-levels-and-extensions-by-group-membership.md
   - name: Add and manage banners
-    href: ../settings/manage-banners.md  
+    href: ../settings/manage-banners.md 
+  - name: Manage your organization
+    items:
+    - name: Change organization Owner
+      href: change-organization-ownership.md
+    - name: Rename organization
+      href: rename-organization.md
+    - name: Delete organization
+      href: delete-your-organization.md
+    - name: Recover organization
+      href: recover-your-organization.md
+    - name: Change organization location
+      href: change-organization-location.md
+    - name: Add privacy policy URL
+      href: add-privacy-policy-url.md
+    - name: Change time zone
+      href: change-time-zone.md 
 - name: Troubleshooting
   items:
   - name: Create organization

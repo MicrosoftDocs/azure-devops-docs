@@ -57,7 +57,7 @@ A new version of the [VSTS Demo Generator](#vsts-demo-generator) is also availab
 
 ### Query for empty rich text fields
 
-Find work items that have an empty rich text field, such as Description, using the new **IsEmpty** query operator. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/3080939-introduce-is-empty-operator-in-tfs-wiql-for-rich).
+Find work items that have an empty rich text field, such as Description, using the new **IsEmpty** query operator. This feature was prioritized based on a suggestion.
 
 ## Build
 
@@ -188,7 +188,7 @@ Check out the [documentation](/azure/devops/demo-gen) for step-by-step instructi
 > [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
-> [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
+> [Subscribe to Updates](https://azure.microsoft.com/updates/?product=azure-devops)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

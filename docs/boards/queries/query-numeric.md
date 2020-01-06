@@ -250,7 +250,7 @@ The following table describes the activity-based and numeric fields that you can
     <td>Epic, Feature</td>
 </tr>
 <tr>
-    <td><p>Completed Work</p></td>
+    <td><a id="completed-work" /><p>Completed Work</p></td>
     <td><p>The amount of work that has been spent implementing a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>Reference name=Microsoft.VSTS.Scheduling.CompletedWork, Data type=Double</p>
 </td>
@@ -293,7 +293,7 @@ The following table describes the activity-based and numeric fields that you can
 </td>
     <td>Task, Bug <sup>4</sup> (Agile and CMMI)</td>
 <tr>
-    <td><p>Remaining Work</p></td>
+    <td><a id="remaining-work" /><p>Remaining Work</p></td>
     <td><p>The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field.</p>
 <p>This field <sup>3</sup> is also used to calculate burn down. It is assigned to <code>type=&quot;RemainingWork&quot;</code> in the ProcessConfiguration file.</p>
 <blockquote>
@@ -328,7 +328,7 @@ The following table describes the activity-based and numeric fields that you can
 
 #### Notes:
 
-1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
 2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
 3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
