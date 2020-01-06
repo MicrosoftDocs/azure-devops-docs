@@ -202,7 +202,7 @@ You can use any text editor or XML editor to modify XML files. Or, you can use t
 - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../process/new-work-item-experience.md). 
 - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
-Or, you can use the [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github.      
+Or, you can use the [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub.      
 
 The Process Editor provides a user interface that you can use to customize the following areas:  
   
