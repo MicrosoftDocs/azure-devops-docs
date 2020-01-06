@@ -38,9 +38,8 @@ When defining work items or running queries, the following operational limits ap
 | Query results | 20,000 items | 
 | Query length | 32,000 characters |
 
-#### Notes
-- If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). 
-- To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries) 
+
+If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ::: moniker-end
 
@@ -55,10 +54,9 @@ When defining work items, the following operational limits apply.
 | Work item tags assigned to a work item | 100 | 
 | Work item links assigned to a work item | 1,000 | 
 | Attachments added to a work item | 100 | 
-| Attachment size | 4 MB to 2 GB, see Note 1  | 
+| Attachment size | 4 MB to 2 GB | 
 
-#### Notes
-1. The default maximum size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
+The default maximum attachment size is 4 MB. You can [change the maximum size up to 2 GB](../../../reference/xml/change-maximum-attachment-size-work-items.md).
 
 
 ::: moniker-end
@@ -217,7 +215,7 @@ We recommend that you consider the following guidance in order to minimize perfo
 ::: moniker range="azure-devops" 
 
 - Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more. 
-- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when user add and modify work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
 - Minimize the number of custom WITs you define. 
 
 ::: moniker-end
@@ -227,15 +225,15 @@ We recommend that you consider the following guidance in order to minimize perfo
 ::: moniker range="<= azure-devops-2019" 
 
 - Minimize the number of custom fields you define. All custom fields contribute to the total allowed for a process, collection, or organization. Note that you can specify different behavior for the same field in a different WIT. That is, you can specify different rules, picklists, and more. 
-- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when user add and modify work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
+- Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate. 
 - Minimize the number of custom WITs you define.
-- Minimize the number of reportable fields you define. Reportable fields impact performance of your data warehouse. Work Item Rules Validation Exceeds SQL Limits
+- Minimize the number of reportable fields you define. Reportable fields impact performance of your data warehouse. 
 
 
 ::: moniker-end
 
 > [!NOTE]   
-> A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error. 
+> **Work Item Rules Validation Exceeds SQL Limits**: A single SQL expression is defined per project to validate work items whenever they are created or updated. This expression grows with the number of rules you specify for all work item types defined for the project. Each behavioral qualifier specified for a field results in an increase in the number of sub-expressions. Nested rules, rules that apply only on a transition or conditioned on the value of some other field, cause more conditions to be added to an IF statement. Once the expression reaches a certain size or complexity, SQL can't evaluate it any more and generates an error. Removing some WITs or eliminating some rules, can resolve the error. 
 
 
 ::: moniker range="azure-devops"
