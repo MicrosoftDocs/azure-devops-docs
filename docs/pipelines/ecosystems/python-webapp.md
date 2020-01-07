@@ -123,10 +123,8 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
    > [!Important]
    > To simplify the service connection, use the same email address for Azure DevOps as you use for Azure.
 
-1. Once you sign in, the browser displays your Azure DevOps dashboard, at the URL *https:\//dev.azure.com/\<your-organization-name>*. An Azure DevOps account can belong to one or more *organizations*, which are listed on the left side of the Azure DevOps dashboard. By default, Azure DevOps creates a new organization using the email alias you used to sign in. 
+1. Once you sign in, the browser displays your Azure DevOps dashboard, at the URL *https:\//dev.azure.com/\<your-organization-name>*. An Azure DevOps account can belong to one or more *organizations*, which are listed on the left side of the Azure DevOps dashboard. If more than one organization is listed, select the one you want to use for this walkthrough. By default, Azure DevOps creates a new organization using the email alias you used to sign in. 
    
-   If you have more than one organization in your Azure DevOps account, select the one you want to use for this walkthrough.
-
    A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps. If your organization doesn't have any projects, enter the project name *Flask Pipelines* under **Create a project to get started**, and then select **Create project**. 
 
    ![First view of Azure DevOps dashboard](../_img/python/azure-devops-dashboard.png)
@@ -190,9 +188,9 @@ When prompted, select the Azure subscription in which you created your Web App.
    - Select the Web App.
    - Select Validate and configure.
 
-Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of *stages*, *Jobs* and *steps*, where each step contains the details for different *tasks* and *scripts*. 
+Azure Pipelines creates an azure-pipelines.yml file that defines your CI/CD pipeline as a series of *stages*, *Jobs*, and *steps*, where each step contains the details for different *tasks* and *scripts*. 
 
-Take a look at the pipeline to see what it does. Make sure that all the default inputs are appropriate for your code.
+Take a look at the pipeline to see what it does. Make sure all the default inputs are appropriate for your code.
 
 
 ### YAML pipeline explained
@@ -200,7 +198,7 @@ Take a look at the pipeline to see what it does. Make sure that all the default 
 The YAML file contains the following key elements:
 
 - The `trigger` at the top indicates the commits that trigger the pipeline, such as commits to the `master` branch.
-- The `variables` which parameterize the YAML template
+- The `variables` that parameterize the YAML template
    > [!Tip]
    > To avoid hard-coding specific variable values in your YAML file, you can define variables in the pipeline's web interface instead. For more information, see [Variables - Secrets](../process/variables.md#secret-variables).
 - The `stages`
@@ -210,7 +208,7 @@ The YAML file contains the following key elements:
 - The `steps` element can contain children like `task`, which runs a specific task as defined in the Azure Pipelines [task reference](../tasks/index.md?view=azure-devops), and `script`, which runs an arbitrary set of commands. 
 
 - The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
-The we have script based task which creates a virtual environment and installs dependencies from file (requirements.txt).
+Then we have script-based task that creates a virtual environment and installs dependencies from file (requirements.txt).
 
    ```yaml
       steps:
@@ -252,7 +250,7 @@ The we have script based task which creates a virtual environment and installs d
 
 Then we have the task to upload the artifacts.
 
-- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). Note that by using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Alternatively you can pre-create the environment and provide the `environmentName`
+- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). By using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Alternatively you can pre-create the environment and provide the `environmentName`
 - Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. 
 - We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
@@ -303,7 +301,7 @@ You're now ready to try it out!
    
    ![Edit pipeline comment from a build report](../_img/python/edit-pipeline-command.png)
    
-1. From the build page, select the **Azure Web App task** task to display its output. To visit the deployed site, hold down the **Ctrl** key and select the URL after **App Service Application URL**.
+1. From the build page, select the **Azure Web App task** to display its output. To visit the deployed site, hold down the **Ctrl** key and select the URL after **App Service Application URL**.
    
    If you're using the Flask example, the app should appear as follows:
 
@@ -330,7 +328,7 @@ To avoid hard-coding specific variable values in your YAML file, you can instead
 
 ## Considerations for Django
 
-As noted earlier in this article, you can use Azure Pipelines to deploy Django apps to Azure App Service on Linux, provided that you're using a separate database. You can't use a simple SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect an external database.
+As noted earlier in this article, you can use Azure Pipelines to deploy Django apps to Azure App Service on Linux, provided that you're using a separate database. You can't use a SQLite database, because App Service locks the *db.sqlite3* file, preventing both reads and writes. This behavior doesn't affect an external database.
 
 As described in [Configure Python app on App Service - Container startup process](/azure/app-service/containers/how-to-configure-python#container-startup-process), App Service automatically looks for a *wsgi.py* file within your app code, which typically contains the app object. If you need to customize the startup command in any way, use the `StartupCommand` parameter in the `AzureWebApp@1` step of your YAML pipeline file, as described in the previous section.
 
