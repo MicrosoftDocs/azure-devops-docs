@@ -82,18 +82,18 @@ You can create an environment in the **Environments** hub within the **Pipelines
     > - Personal Access Token of the logged in user is pre-inserted in the script which expires on the same day making the copied script unusable thereon.
     > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
-> [!div class="mx-imgBorder"]
-> ![VMcreation](_img/vm-creation.png)
+    > [!div class="mx-imgBorder"]
+    > ![VMcreation](_img/vm-creation.png)
 
 7.	For adding more VMs, you can view and copy the script again. Click **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs to be added to this environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
-> [!div class="mx-imgBorder"]
-> ![VMresource_view](_img/vm-resourceview.png)
+    > [!div class="mx-imgBorder"]
+    > ![VMresource_view](_img/vm-resourceview.png)
 
 9. You can add tags to the VM as part of the interactive PS registration script (or) you can also add/remove the same from the resource view by clicking on the triple dots at the end of each VM resource in the resources view.
 The tags you assign allow you to limit deployment to specific virtual machines when the environment is used in a Deployment job. Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
-> [!div class="mx-imgBorder"]
-> ![VMtags](_img/vm-tags.png)
+    > [!div class="mx-imgBorder"]
+    > ![VMtags](_img/vm-tags.png)
 
 * * * 
 
@@ -175,16 +175,16 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 
 ## Define CD steps to deploy to the Linux VM
 1. Edit the above pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources which you created earlier:
-```YAML
-jobs:  
-  - deployment: VMDeploy
-    displayName: web
-    environment:
-      name:  <environment name>
-      resourceType: VirtualMachine
-      tags: web1
-    strategy:
-```
+    ```YAML
+    jobs:  
+      - deployment: VMDeploy
+        displayName: web
+        environment:
+          name:  <environment name>
+          resourceType: VirtualMachine
+          tags: web1
+        strategy:
+    ```
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.
 
@@ -193,63 +193,63 @@ jobs:
 `runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
 
 Below is the example YAML snippet for `runOnce` :
-```YAML
-jobs:
-- deployment: VMDeploy
-  displayName: web
-  pool:
-    vmImage: 'Ubuntu-16.04'
-  environment:
-    name: <environment name>
-    resourceType: VirtualMachine
-  strategy:
-      runOnce:
-        deploy:
-          steps:
-          - script: echo my first deployment
-```
+    ```YAML
+    jobs:
+    - deployment: VMDeploy
+      displayName: web
+      pool:
+        vmImage: 'Ubuntu-16.04'
+      environment:
+        name: <environment name>
+        resourceType: VirtualMachine
+      strategy:
+          runOnce:
+            deploy:
+              steps:
+              - script: echo my first deployment
+    ```
 
 4. Below is an example of the YAML snippet that you can use to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
-```YAML
-jobs: 
-- deployment: VMDeploy
-  displayName: web
-  environment:
-    name: <environment name>
-    resourceType: VirtualMachine
-  strategy:
-      rolling:
-        maxParallel: 2  #for percentages, mention as x%
-        preDeploy:
-          steps:
-          - download: current
-            artifact: drop
-          - script: echo initialize, cleanup, backup, install certs
-        deploy:
-          steps:
-          - task: Bash@3
-            inputs:
-              targetType: 'inline'
-              script: |
-                # Modify deployment script based on the app type
-                echo "Starting deployment script run"
-                sudo java -jar '$(Pipeline.Workspace)/drop/**/target/*.jar'
-        routeTraffic:
-          steps:
-          - script: echo routing traffic
-        postRouteTraffic:
-          steps:
-          - script: echo health check post-route traffic
-        on:
-          failure:
-            steps:
-            - script: echo Restore from backup! This is on failure
-          success:
-            steps:
-            - script: echo Notify! This is on success
-```
-With each run of this job, deployment history is recorded against the `<environment name>` environment that you have created and registered the VMs.
+    ```YAML
+    jobs: 
+    - deployment: VMDeploy
+      displayName: web
+      environment:
+        name: <environment name>
+        resourceType: VirtualMachine
+      strategy:
+          rolling:
+            maxParallel: 2  #for percentages, mention as x%
+            preDeploy:
+              steps:
+              - download: current
+                artifact: drop
+              - script: echo initialize, cleanup, backup, install certs
+            deploy:
+              steps:
+              - task: Bash@3
+                inputs:
+                  targetType: 'inline'
+                  script: |
+                    # Modify deployment script based on the app type
+                    echo "Starting deployment script run"
+                    sudo java -jar '$(Pipeline.Workspace)/drop/**/target/*.jar'
+            routeTraffic:
+              steps:
+              - script: echo routing traffic
+            postRouteTraffic:
+              steps:
+              - script: echo health check post-route traffic
+            on:
+              failure:
+                steps:
+                - script: echo Restore from backup! This is on failure
+              success:
+                steps:
+                - script: echo Notify! This is on success
+    ```
+    With each run of this job, deployment history is recorded against the `<environment name>` environment that you have created and registered the VMs.
 
 ## Run your pipeline and get traceability views in environment
 Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
