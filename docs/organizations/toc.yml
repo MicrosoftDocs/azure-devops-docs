@@ -88,7 +88,7 @@
 - name: Test
   items:
   - name: Set test retention policies
-    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Microsoft Project Mapping file (Deprecated)
   href: ../reference/mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
