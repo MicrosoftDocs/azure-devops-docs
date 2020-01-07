@@ -318,7 +318,7 @@ steps:
 
 If you want to make a variable available to future jobs, you must mark it as
 an output variable using `isOutput=true`. Then you can map it into future
-jobs using `$[]` syntax and including the step name which set the variable.
+jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage.
 
 ```yaml
 jobs:
