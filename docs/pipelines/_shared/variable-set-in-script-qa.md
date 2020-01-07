@@ -6,5 +6,4 @@ ms.topic: include
 
 [Define and modify your build variables in a script](../process/variables.md#set-a-multi-job-output-variable)
 
-[Define and modify your release variables in a script](../release/variables.md#set-a-multi-job-output-variable)
-
+[Define and modify your release variables in a script](../release/variables.md#using-custom-variables) 
