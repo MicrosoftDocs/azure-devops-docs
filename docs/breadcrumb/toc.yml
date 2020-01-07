@@ -66,7 +66,7 @@
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/marketplace-extensibility/index
   - name: Configure & customize
-    tocHref: /azure/devops/organizations/settings/
+    tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
     - name: User preferences
