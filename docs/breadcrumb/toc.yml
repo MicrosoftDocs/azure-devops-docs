@@ -52,19 +52,6 @@
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
-    items:
-    - name: Discover & manage extensions
-      tocHref: /azure/devops/marketplace/
-      topicHref: /azure/devops/marketplace-extensibility/index
-    - name: Develop extensions
-      tocHref: /azure/devops/extend/
-      topicHref: /azure/devops/marketplace-extensibility/index
-    - name: Integrate applications
-      tocHref: /azure/devops/integrate/
-      topicHref: /azure/devops/marketplace-extensibility/index
-    - name: Service Hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/marketplace-extensibility/index
   - name: Configure & customize
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
@@ -87,9 +74,6 @@
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
-    - name: Service hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/index
     - name: Pipelines (Build and Release)
       tocHref: /azure/devops/pipelines/
       topicHref: /azure/devops/pipelines/agents/pools-queues
