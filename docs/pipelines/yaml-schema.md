@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/06/2019
+ms.date: 12/16/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -645,14 +645,18 @@ variables:
 
 ::: moniker range="> azure-devops-2019"
 
-You can export reusable sections of your pipeline to separate files.
-These separate files are known as templates.
-Azure Pipelines supports these four kinds of templates:
+You can export reusable sections of your pipeline to a separate file. 
+These separate files are known as templates. 
+Azure Pipelines supports four kinds of templates:
 
+Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
 - [Job](#job-templates)
 - [Step](#step-templates)
 - [Variable](#variable-templates)
+
+You can also use templates to to control what is allowed in a pipeline and to define how parameters can be used.
+- [Parameter](#parameter-templates)
 
 ::: moniker-end
 
@@ -935,6 +939,57 @@ steps:
 ```
 
 ---
+
+### Parameter templates
+
+You can use templates to define how parameters can be used. 
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+parameters:
+- name: string          # name of the parameter; required
+  type:                 # data type
+  default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
+  values: [ string ]    # allowed list of values (for some data types)
+  secret: bool          # whether to treat this value as a secret; defaults to false
+```
+
+And in the extended template:
+
+```yaml
+parameters: { string: any }   # expected parameters
+```
+
+# [Example](#tab/example)
+
+In this example, a set of parameters is repeated across a second pipeline.
+
+```yaml
+# File: simple-param.yml
+parameters:
+- name: yesNo # name of the parameter; required
+  type: boolean # data type of the parameter; required
+  default: false
+
+steps:
+- script: echo ${{ parameters.yesNo }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+    template: simple-param.yml
+    parameters:
+        yesNo: false # set to a non-boolean value to have the build fail
+```
+
+See [templates](process/templates.md) for more about working with templates.
 
 ::: moniker-end
 
