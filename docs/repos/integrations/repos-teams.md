@@ -98,6 +98,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    ```
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
+   Note: You can subscribe only to public repositories. 
 
 3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event (with target branch = master). For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
