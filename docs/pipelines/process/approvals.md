@@ -12,7 +12,7 @@ ms.date: 10/21/2019
 monikerRange: azure-devops
 ---
 
-# Approvals and checks
+# Define approvals and checks
 
 [!INCLUDE [include](../_shared/version-team-services.md)]
 
