@@ -130,7 +130,7 @@ steps:
 
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-in-script). 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-a-multi-job-output-variable). 
 
 ```yaml
 jobs:
