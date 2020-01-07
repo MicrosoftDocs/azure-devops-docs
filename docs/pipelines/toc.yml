@@ -127,7 +127,7 @@
     - name: PHP to web app
       href: ecosystems/php-webapp.md
     - name: Java to Linux virtual machines
-      href: ecosystems/deploy-linuxvm.md
+      href: ecosystems/deploy-linux-vm.md
   - name: Build pipelines (classic)
     items:
     - name: Cross-platform scripts
@@ -307,7 +307,7 @@
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
     - name: Virtual machine resource
-      href: process/environments-virtualmachines.md
+      href: process/environments-virtual-machines.md
   - name: Expressions
     href: process/expressions.md
   - name: Jobs
