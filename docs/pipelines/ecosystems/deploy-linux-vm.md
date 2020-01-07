@@ -67,7 +67,7 @@ Follow the additional steps described below based on the runtime stack used for 
 
 * * * 
 
-## Create an environment with virtual machines as resources
+## Create an environment with virtual machines
 
 Virtual machines can be added as resources within [environments](../process/environments.md) and can be targeted for multi-VM deployments. 
 Deployment history views within environment provide traceability from VM to the pipeline and then to the commit.
@@ -251,10 +251,15 @@ Below is the example YAML snippet for `runOnce` :
     ```
     With each run of this job, deployment history is recorded against the `<environment name>` environment that you have created and registered the VMs.
 
-## Run your pipeline and get traceability views in environment
+## Pipeline traceability views in environment
 Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
 > [!div class="mx-imgBorder"]
 > ![VMDeployments_view](_img/vm-deployments.png)
   
 > [!div class="mx-imgBorder"]
 > ![VMjobs_view](_img/vm-jobsview.png)
+
+## Next Steps
+To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
