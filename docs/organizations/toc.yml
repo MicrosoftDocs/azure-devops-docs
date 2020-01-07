@@ -15,28 +15,38 @@
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    name: Manage authorizations
-    href: ./settings/manage-authorizations.md
+  - name: Security
+    items:
+    - name: Personal access tokens
+      href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: SSH public keys
+      href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Alternate credentials
+      href: ../repos/git/auth-overview.md#alternate-credentials?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+    - name: Manage authorizations
+      href: ./settings/manage-authorizations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
   items:
-  - name: How-to guides
+  - name: Overview
     items:
-    - name: Change organization Owner
-      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Rename organization
       href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Delete organization
-      href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Recover organization
-      href: ./accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization location
-      href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add privacy policy URL
       href: ./accounts/add-privacy-policy-url.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
       href: ./accounts/change-time-zone.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Add and manage banners
-      href: ./settings/manage-banners.md 
+    - name: Change organization location
+      href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Change organization Owner
+      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Delete organization
+      href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Recover organization
+      href: ./accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Global notifications
+    href: ../notifications/manage-organization-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Add and manage banners
+    href: ./settings/manage-banners.md 
   - name: Troubleshooting
     items:
     - name: Create organization
@@ -84,21 +94,21 @@
 - name: Configure Features Wizard (Deprecated)
   items:
   - name: Configure features after an upgrade
-    href: ../reference/configure-features-after-upgrade.md
+    href: ../reference/configure-features-after-upgrade.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
   - name: New features added through feature enablement
-    href: ../reference/new-features-added.md
+    href: ../reference/new-features-added.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
   - name: Add features manually
-    href: ../reference/add-features-manually.md
+    href: ../reference/add-features-manually.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
   - name: Additional configuration options
-    href: ../reference/additional-configuration-options.md
+    href: ../reference/additional-configuration-options.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
   - name: Update a customized process template to access new features
-    href: ../reference/update-customized-process-template.md
+    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
   - name: When upgrading from TFS 2008 or TFS 2010
-    href: ../reference/upgrade-tfs-2008-or-2010.md
+    href: ../reference/upgrade-tfs-2008-or-2010.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
 - name: Reference
   items:
   - name: Naming restrictions
-    href: ./settings/naming-restrictions.md
+    href: ./settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths
@@ -132,11 +142,6 @@
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
   - name: Public projects
-    href: ./public/about-public-projects.md
-  - name: Azure Boards
-    href: ../boards/index.yml
-  - name: Azure Repos
-    href: ../repos/index.yml
-  - name: Web portal navigation
-    href: ../project/navigation/index.md
+    href: ./public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.jsontoc.json
+
 
