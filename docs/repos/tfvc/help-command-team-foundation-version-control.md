@@ -20,7 +20,10 @@ monikerRange: '>= tfs-2015'
 
 Displays help on the command line that contains information about syntax for a Team Foundation version control command.
 
-    tf help commandname
+```
+tf help commandname
+```
+
 ## Parameters<table>
 <thead>
 <tr>
@@ -46,15 +49,21 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 ## Examples
 The following example displays a list of the version control commands.
 
-    c:\projects>tf help
+```
+c:\projects>tf help
+```
 
 The following example displays information about syntax for the **workspace** command.
 
-    c:\projects>tf help workspace
+```
+c:\projects>tf help workspace
+```
 
 The following example also displays the same information about syntax for the **workspace** command.
 
-    c:\projects>tf workspace /?
+```
+c:\projects>tf workspace /?
+```
 
 ## See Also
 

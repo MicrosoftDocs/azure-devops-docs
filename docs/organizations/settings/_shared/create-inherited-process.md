@@ -32,7 +32,7 @@ The first step is to create an inherited process that you can customize. The def
 	> [!div class="mx-imgBorder"]  
 	> ![Context menu, Choose Create inherited process](/azure/devops/organizations/settings/work/_img/process/create-inherited-process-menu-agile.png) 
 
-2.	Enter a name for your process and optionally a description. Process names must be unique and no more than 128 characters. For additional restrictions, see [Create and manage inheritance processes, Process name restrictions](/azure/devops/organizations/settings/work/manage-process#process-naming). Optionally, add a description.   
+2.	Enter a name for your process and optionally a description. Process names must be unique and no more than 128 characters. For additional restrictions, see [Create and manage inheritance processes, Process name restrictions](/azure/devops/organizations/settings/work/inheritance-process-model#process-naming). Optionally, add a description.   
 
 	![Create inherited process dialog](/azure/devops/organizations/settings/work/_img/process/create-inherited-process-dialog.png)  
 
