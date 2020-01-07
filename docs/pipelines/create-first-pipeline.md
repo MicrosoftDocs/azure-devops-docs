@@ -25,9 +25,9 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 [!INCLUDE [include](_shared/prerequisites.md)]
 
-## Get the sample code
+#### [Java](#tab/java)
 
-You can use Azure Pipelines to build an app written in any language. For this quickstart, we will use Java.
+## Get the Java sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -35,7 +35,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-## Get your first run
+## Get your first Java run
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -50,6 +50,47 @@ https://github.com/MicrosoftDocs/pipelines-java
 1. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
 1. A new run is started. Wait for the run to finish.
+
+#### [.Net](#tab/net)
+
+## Get the .Net sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
+```
+
+## Get your first .Net run
+
+
+#### [Python](#tab/python)
+
+## Get the Python sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+```
+
+## Get your first Python run
+
+
+#### [JavaScript](#tab/javascript)
+
+## Get the JavaScript sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
+
+
+## Get your first JavaScript run
+
+--- 
 
 [!INCLUDE [include](_shared/get-status-badge.md)]
 
