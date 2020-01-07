@@ -58,7 +58,7 @@ The quickest way to create an App Service instance is to use the Azure command-l
 
 1. Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
 
-   ![Azure Cloud Shell button on the Azure Portal toolbar](../_img/python/azure-cloud-shell-button.png)
+   ![Azure Cloud Shell button on the Azure portal toolbar](../_img/python/azure-cloud-shell-button.png)
 
 1. The Cloud Shell appears along the bottom of the browser. Select **Bash** from the dropdown:
 
@@ -212,21 +212,21 @@ The YAML file contains the following key elements:
 - The first task under Build stage is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. The `@<n>` suffix indicates the version of the task. The `@0` indicates preview version.
 The we have script based task which creates a virtual environment and installs dependencies from file (requirements.txt).
 
-```yaml
-   steps:
-   - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(pythonVersion)'
-        displayName: 'Use Python $(pythonVersion)'
-   - script: |
-        python -m venv antenv
-        source antenv/bin/activate
-        python -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
-      workingDirectory: $(projectRoot)
-      displayName: "Install requirements"
-   ```
+   ```yaml
+      steps:
+      - task: UsePythonVersion@0
+         inputs:
+           versionSpec: '$(pythonVersion)'
+           displayName: 'Use Python $(pythonVersion)'
+      - script: |
+           python -m venv antenv
+           source antenv/bin/activate
+           python -m pip install --upgrade pip
+           pip install setup
+           pip install -r requirements.txt
+         workingDirectory: $(projectRoot)
+         displayName: "Install requirements"
+      ```
 
 
 - Next step creates the *.zip* file that the steps under deploy stage of the pipeline deploys. To create the *.zip* file, add an [ArchiveFiles](../tasks/utility/archive-files.md?view=azure-devops) task to the end of the YAML file:
@@ -252,7 +252,7 @@ The we have script based task which creates a virtual environment and installs d
 
 Then we have the task to upload the artifacts.
 
-- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). Note that by using the template, an environment with same name as the Web app is automatically created if it does'nt already exist. Alternatively you can pre-create the environment and provide the `environmentName`
+- In the Deploy stage, we use the `deployment` keyword to define a [deployment job](../process/deployment-jobs.md) targeting an [environment](../process/environments.md). Note that by using the template, an environment with same name as the Web app is automatically created if it doesn't already exist. Alternatively you can pre-create the environment and provide the `environmentName`
 - Within the deployment job, first task is [UsePythonVersion](../tasks/tool/use-python-version.md?view=azure-devops), which specifies the version of Python to use on the build agent. 
 - We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
