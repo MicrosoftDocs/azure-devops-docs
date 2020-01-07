@@ -52,6 +52,7 @@ Many of these artifacts depend on WITs which are used to track work. For example
 If you work with only a single project, then you might consider simply creating the project and customizing one or more objects later.  
   
 ## How are process templates used?  
+
 The primary use of process templates is to create a project. For the Hosted XML process model, it is also used to update a project. A project provides the set of objects, artifacts, and configurations defined in the interdependent set of template files. You use your project to organize source code, track work and information, build software, and support test activities.  
   
  **Hosted XML process model**   
@@ -63,9 +64,10 @@ The primary use of process templates is to create a project. For the Hosted XML 
 
   
 ## Where should I start?  
+
  Before you start customizing a process template, you'll want to become familiar with what you can configure and customize and then plan your changes accordingly.  
   
--   If you're new to process templates, first [review the three default process templates](../../boards/work-items/guidance/choose-process.md).  
+-   If you're new to process templates, first [review the default process templates](../../boards/work-items/guidance/choose-process.md).  
   
 -   If you want to become familiar with the file structure of a process template, [review a description for each file](overview-process-template-files.md) or [download a process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
@@ -200,7 +202,7 @@ You can use any text editor or XML editor to modify XML files. Or, you can use t
 - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../process/new-work-item-experience.md). 
 - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
-Or, you can use the [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github.      
+Or, you can use the [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub.      
 
 The Process Editor provides a user interface that you can use to customize the following areas:  
   

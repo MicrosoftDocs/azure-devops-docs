@@ -27,7 +27,10 @@ The **branch** command copies an item or set of items, including metadata and ve
 
 To use the **branch** command, you must have the **Read** permission for the source item and the **Check out** and **Merge** permissions for the target folder set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]] [/recursive]
+```
+tf branch olditem newitem [/version:versionspec] [/noget] [/lock:(none|checkin|checkout)] [/noprompt] [/silent] [/checkin] [/comment:("comment"|@commentfile)] [/author:authorname] [/login:username, [password]] [/recursive]
+```
+
 ## Parameters
 
 |     **Argument**      |                                                                                                                                                                                      **Description**                                                                                                                                                                                       |
@@ -83,27 +86,39 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example creates a branch file that contains the latest workspace version of 314.cs, names it "314\_branch", and saves it to the current directory on disk and also to the Team Foundation version control server folder to which it maps.
 
-    c:\projects>tf branch 314.cs 314_branch
+```
+c:\projects>tf branch 314.cs 314_branch
+```
 
 The following example copies all the files without pending edits in the workspace version of 314.cs from its current Team Foundation version control server folder into the testdata Team Foundation version control server folder and from the current directory on disk to the working folder that maps to the testdata Team Foundation version control server folder.
 
-    c:\projects>tf branch C:\314.cs $/testdata
+```
+c:\projects>tf branch C:\314.cs $/testdata
+```
 
 The following example copies all the files without pending edits in the current workspace version of the testfiles folder and the files it contains for all items from its current Team Foundation version control server folder into the testfiles\_branch Team Foundation version control server folder and from c:\\testfiles into the local folder that maps to the testfiles\_branch Team Foundation version control server folder.
 
-    c:\projects>tf branch C:\testfiles $/testfiles_branch
+```
+c:\projects>tf branch C:\testfiles $/testfiles_branch
+```
 
 The following example creates a branch of 314.cs as it existed in changeset \#4 for the file. In the working folder on disk, as in the Team Foundation version control server, a branch file titled csharp\_branch is created.
 
-    c:\projects>tf branch C:\314.cs;C4 csharp_branch
+```
+c:\projects>tf branch C:\314.cs;C4 csharp_branch
+```
 
 The following example creates a new branch of 314.cs as it was on 12/12/03. In the working folder on disk as in the Team Foundation version control server, a branch file titled 314\_branch is created.
 
-    c:\projects>tf branch 314.cs;D12/12/03 314_branch
+```
+c:\projects>tf branch 314.cs;D12/12/03 314_branch
+```
 
 The following example branches the version of 314.cs to which the "Beta1" label was applied, names it "Beta1branch," and saves it to the current directory on disk in addition to the Team Foundation version control server folder to which the current directory maps.
 
-    c:\projects>tf branch 314.cs;LBeta1 314_Beta1branch
+```
+c:\projects>tf branch 314.cs;LBeta1 314_Beta1branch
+```
 
 ## See Also
 
