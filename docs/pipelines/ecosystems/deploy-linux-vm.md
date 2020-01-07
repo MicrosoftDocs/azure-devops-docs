@@ -260,6 +260,6 @@ Deployments view of the environment provides complete traceability of commits an
 > ![VMjobs_view](_img/vm-jobsview.png)
 
 ## Next Steps
-To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../pipelines/process/tasks.md), [Catalog of Tasks](../pipelines/tasks/index.md), [Variables](../process/variables.md), [Triggers](../pipelines/build/triggers.md), or [Troubleshooting](../pipelines/troubleshooting.md).
+To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting.md).
 
 To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
