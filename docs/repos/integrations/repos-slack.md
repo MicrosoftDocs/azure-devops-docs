@@ -94,6 +94,7 @@ access policies for your organization](../../organizations/accounts/change-appli
     ```
     /azrepos subscribe https://dev.azure.com/myorg/myproject/_versionControl
     ```
+    Note: You can subscribe only to public repositories. 
 
 3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** event (with target branch =  master), and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
