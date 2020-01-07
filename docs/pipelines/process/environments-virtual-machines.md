@@ -29,13 +29,13 @@ You can define environments in the **Environments** hub within the **Pipelines**
     > - Personal Access Token of the logged in user is pre-inserted in the script which expires on the same day making the copied script unusable thereon.
     > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
-> [!div class="mx-imgBorder"]
-> ![VMcreation](_img/vm-creation.png)
+    > [!div class="mx-imgBorder"]
+    > ![VMcreation](_img/vm-creation.png)
 
 7.	For adding more VMs, you can view and copy the script again by clicking on “Add resource” and choosing “Virtual Machines” as resource. This script would remain same for all the VMs to be added to this environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
-> [!div class="mx-imgBorder"]
-> ![VMresource_view](_img/vm-resourceview.png)
+    > [!div class="mx-imgBorder"]
+    > ![VMresource_view](_img/vm-resourceview.png)
 
 ## Adding and managing tags
 
@@ -46,9 +46,9 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 > [!div class="mx-imgBorder"]
 > ![VMtags](_img/vm-tags.png)
   
-## Reference environment & VM resources in pipelines
+## Reference VM resources in pipelines
 
-Create a new pipeline by referencing the environment and VM resource in a pipeline YAML:
+Create a new pipeline by referencing the environment and VM resources in a pipeline YAML:
 ```YAML
 jobs:  
   - deployment: VMDeploy
@@ -79,3 +79,8 @@ Deployments view of the environment provides complete traceability of commits an
   
 ## Known limitations
 There are a few known gaps in VM support. When you retry a stage, it will re-run the deployment on all VMs not just failed targets. 
+
+## Next steps
+Learn more about [deployment job](deployment-jobs.md) and [environment](environments.md).
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
