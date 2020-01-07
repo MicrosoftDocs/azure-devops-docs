@@ -28,7 +28,7 @@
 - name: Organizations
   items:
   - name: Plan your organization structure
-    href:  ./user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href:  ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Overview settings
     items:
     - name: Rename organization
