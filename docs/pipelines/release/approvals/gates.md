@@ -104,7 +104,12 @@ this case, after the timeout period expires, the deployment is rejected.
 
 ![Failed gates](_img/gate-results-fail.png)
 
-## Related topics
+
+## Video 
+
+> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]
+
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
@@ -113,9 +118,10 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-## See also
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
+## Additional resources
+
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)  
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
@@ -125,6 +131,3 @@ this case, after the timeout period expires, the deployment is rejected.
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
 
-## Videos 
-
-> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]

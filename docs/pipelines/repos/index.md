@@ -12,7 +12,7 @@ ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Build source repositories
+# Supported build source repositories
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 

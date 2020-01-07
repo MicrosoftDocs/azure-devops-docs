@@ -1,5 +1,5 @@
 ---
-title: Understand approvals and gates
+title: Understand approvals, gates, and checks
 ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
@@ -59,7 +59,7 @@ You can combine all three techniques within a release pipeline to fully achieve 
 In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
 though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
 
-## Related topics
+## Related articles
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
@@ -69,7 +69,7 @@ though Service Management methodologies such as ITIL. For more information, see 
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](../releases.md)
 
-## See also
+## Additional resources
 
 * [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)

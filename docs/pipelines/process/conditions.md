@@ -13,9 +13,11 @@ ms.date: 10/21/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Conditions
+# Specify conditions
 
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
+
+You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -51,6 +53,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
 you can specify the conditions under which the task or job will run:
 
@@ -147,7 +150,7 @@ jobs:
     - script: echo "Job Foo ran and doThing is true."
 ```
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -160,3 +163,9 @@ No. If you cancel a job while it's in the queue, then the entire job is canceled
 If you defined the pipelines using a YAML file, then this is supported. This scenario is not yet supported for release pipelines.
 
 <!-- ENDSECTION -->
+
+
+## Related articles
+
+- [Specify jobs in your pipeline](../process/phases.md)  
+- [Add stages, dependencies, & conditions](../process/stages.md)   
