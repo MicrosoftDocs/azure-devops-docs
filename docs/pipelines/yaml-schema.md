@@ -961,7 +961,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers.md).
+You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
 
 # [Schema](#tab/schema)
 

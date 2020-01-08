@@ -841,7 +841,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema#pipeline-resource).
+To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema.md#pipeline-resource).
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
