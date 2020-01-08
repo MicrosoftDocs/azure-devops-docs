@@ -32,6 +32,8 @@
     - name: Specify jobs in your pipeline
       href: process/phases.md
       displayName: phases, stages, job type, dependencies, conditions, timeouts, multi-configuration, slicing, job variables, artifact download, oauth token
+    - name: Define container jobs
+      href: process/container-phases.md
     - name: Add stages, dependencies & conditions
       href: process/stages.md
       displayName: stage, dependencies, conditions, queuing policies, approvals
@@ -150,6 +152,8 @@
     href: get-started-multiplatform.md
   - name: Run parallel jobs (licensing) 
     href: licensing/concurrent-jobs.md
+  - name: Use service containers
+    href: process/service-containers.md
   - name: Cross-platform scripts
     href: scripts/cross-platform-scripting.md
   - name: Run a PowerShell script
@@ -267,10 +271,6 @@
 - name: Deploy apps using containers 
   items: 
 #  - name: Orchestration overview (New)
-  - name: Service containers
-    href: process/service-containers.md
-  - name: Define container jobs (YAML)
-    href: process/container-phases.md
   - name: Build images
     href: ecosystems/containers/build-image.md
     displayName: docker, compose, docker-compose, arm, buildkit, image
