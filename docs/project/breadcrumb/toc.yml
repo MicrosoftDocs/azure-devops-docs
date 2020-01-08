@@ -5,3 +5,19 @@
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/user-guide/
+      topicHref: /azure/devops/user-guide/project-admin-tutorial
+    - name: Public projects
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/organizations/security/about-security-identity
+    - name: Notifications
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/about-notifications
+    - name: Search across Azure DevOps
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/overview
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
