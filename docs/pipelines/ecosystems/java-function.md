@@ -8,7 +8,7 @@ ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 4/23/2019
+ms.date: 1/8/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -97,7 +97,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
     azureSubscription: $(serviceConnectionToAzure)
     appType: functionApp
     appName: $(appName)
-    package: $(build.artifactstagingdirectory)/javafunctions
+    package: $(build.artifactstagingdirectory)/$(appName)
 ```
 
 ## Run the pipeline and check out your site
