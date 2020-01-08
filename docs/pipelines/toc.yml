@@ -203,15 +203,15 @@
     href: process/environments-kubernetes.md
   - name: Virtual machine resource
     href: process/environments-virtual-machines.md
-  - name: Deploy apps using virtual machines 
+  - name: Specify conditions 
+    href: process/conditions.md
+  - name: Specify demands 
+    href: process/demands.md
+    displayName: task demands, manually entered demands, capabilities
+  - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
       href: ecosystems/deploy-linux-vm.md
-    - name: Specify conditions 
-      href: process/conditions.md
-    - name: Specify demands 
-      href: process/demands.md
-      displayName: task demands, manually entered demands, capabilities
   - name: Deploy apps (Classic)
     items:
     - name: Use approvals and gates
