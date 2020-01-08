@@ -55,8 +55,6 @@
     href: assign-access-levels-and-extensions-by-group-membership.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Create organization
-    href: faq-create-organization.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add and delete organization users
     href: faq-add-delete-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add team members
@@ -67,10 +65,6 @@
     href: faq-change-app-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add administrators
     href: faq-add-administrators.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Change organization Ownership
-    href: faq-change-organization-ownership.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Delete and restore organization
-    href: faq-delete-restore-organization.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Set up Visual Studio
     href: faq-set-up-vs.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Manage group-based licensing
