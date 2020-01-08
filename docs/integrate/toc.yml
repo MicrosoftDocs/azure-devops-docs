@@ -1,5 +1,5 @@
 - name: Integrate applications
-  href: index.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+  href: index.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Quickstarts
   items:
     - name: Create a bug
@@ -35,21 +35,21 @@
 - name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md
+      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Authenticate with OAuth 2.0
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically
-      href: ../service-hooks/create-subscription.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: ../service-hooks/create-subscription.md
     - name: Create a PR status server
-      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
-      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
     - name: Service hooks consumers and actions
-      href: ../service-hooks/consumers.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: ../service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Service hooks events
-      href: ../service-hooks/events.md?toc=/azure/devops/integrate/toc.json&bc=/azure/devops/integrate/breadcrumb/toc.json
+      href: ../service-hooks/events.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: REST APIs for TFS 2015, 2017, and 2018
       items:
         - name: Overview

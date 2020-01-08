@@ -1,7 +1,7 @@
 - name: About notifications
-  href: about-notifications.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json
+  href: about-notifications.md
 - name: Navigating the UI
-  href: navigating-the-ui.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  href: navigating-the-ui.md
 - name: Concepts
   items:
   - name: Events and notifications
