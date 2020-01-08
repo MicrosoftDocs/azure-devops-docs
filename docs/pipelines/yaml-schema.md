@@ -447,12 +447,14 @@ jobs:
   dependsOn: string 
   condition: string 
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
   environment: string  # target environment name and optionally a resource-name to record the deployment history; format: <environment-name>.<resource-name>
   strategy:
-    runOnce:
+    runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
