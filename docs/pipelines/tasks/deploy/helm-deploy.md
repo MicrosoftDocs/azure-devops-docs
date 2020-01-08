@@ -91,7 +91,7 @@ This is used with one of the helm [commands](#commands) and the appropriate valu
 <a name="commands"></a>
 ## Command values
 
-The command input accepts one of the following [helm commands](https://docs.helm.sh/helm/helm): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
+The command input accepts one of the following [helm commands](https://v2-14-0.helm.sh/docs/helm/): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>

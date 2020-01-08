@@ -94,11 +94,11 @@ Xamarin Build Tasks
 
 We made some significant improvements to our Xamarin support: 
 
--The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports macOS and Linux
--The [Xamarin.iOS](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-ios) step now supports signing and packaging
--[Xamarin Test Cloud](https://msdn.microsoft.com/library/vs/alm/build/steps/test/xamarin-test-cloud) results can be displayed on the build summary page
--A new [Xamarin component restore](https://msdn.microsoft.com/library/vs/alm/build/steps/package/xamarin-component-restore) step
--The [NuGet Installer](https://msdn.microsoft.com/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
+- The [Xamarin.Android](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-android) step now supports macOS and Linux
+- The [Xamarin.iOS](https://msdn.microsoft.com/library/vs/alm/build/steps/build/xamarin-ios) step now supports signing and packaging
+- [Xamarin Test Cloud](https://msdn.microsoft.com/library/vs/alm/build/steps/test/xamarin-test-cloud) results can be displayed on the build summary page
+- A new [Xamarin component restore](/xamarin/cross-platform/troubleshooting/component-nuget) step
+- The [NuGet Installer](https://msdn.microsoft.com/library/vs/alm/build/steps/package/nuget-installer) step now supports macOS
 
 Finally, the Xamarin build definition templates were enhanced to use these new tasks. [Build your Xamarin app](https://msdn.microsoft.com/Library/vs/alm/Build/apps/xamarin).
 
@@ -144,7 +144,7 @@ Additional features have been added to the SCVMM extension in the Visual Studio 
 
 ![SCVMM](_img/4_13_11.png)
 
-As always, any ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio) to add your idea or vote for an existing one.
+As always, any ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 If you want to use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
-([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
+([DSC](/powershell/scripting/dsc/configurations/configurations)), 
 or [Chef](https://www.getchef.com/) to deploy your app, 
 follow these steps. If you are using deployment agents, 
 go **[here](release-with-agents.md)** 
@@ -62,12 +62,12 @@ If you haven't already done so,
 and **[add stages](manage-your-release.md#AddStages)** 
 for your release.
 
-* [Pre-requisites for computers](#prereq)
+* [Prerequisites for computers](#prereq)
 * [Set up Microsoft Azure environments](#SetupAzure)
 * [Set up on-premises (standard) environments](#SetupOnPrem)
 
 <a name="prereq"></a>
-### Pre-requisites for computers
+### Prerequisites for computers
 
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.

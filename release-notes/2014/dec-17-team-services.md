@@ -60,12 +60,6 @@ The reparenting logic also works on the task board, making it easy to take a tas
 
 And, you might have noticed in the screenshot above that we made a small change to show a summary of all work not started and in progress on collapsed stories. All these changes came directly from your feedback. We’re happy to mark them as complete on UserVoice.
 
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2296825](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2296825)
-
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6769822](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6769822)
-
-[https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/6569087)
-
 ## New integrations: Slack and Azuqua
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](https://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](https://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.
@@ -82,7 +76,7 @@ To learn more about these APIs, see [Visual Studio Online REST API Versions and 
 
 Finally, we turned on the CodeLens feature for all Visual Studio Online accounts with today’s deployment. If you’re not familiar with CodeLens, head over to our [devops blog](https://blogs.msdn.com/b/visualstudioalm/archive/2014/12/11/codelens-in-visual-studio-online-is-now-in-public-preview.aspx) to read about how you can start using it.
 
-That’s a wrap for this sprint and for the 2014 calendar year. If you’re ever interested in looking back over the changes we’ve made in the last year, visit our [features timeline](https://visualstudio.microsoft.com/articles/news/features-timeline), where we catalog all the updates to the service and map them to on-premises updates of Team Foundation Server. Thank you.
+That’s a wrap for this sprint and for the 2014 calendar year. If you’re ever interested in looking back over the changes we’ve made in the last year, visit our [features timeline](../features-timeline.md), where we catalog all the updates to the service and map them to on-premises updates of Team Foundation Server. Thank you.
 
 Thanks,
 

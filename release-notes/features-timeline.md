@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/02/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
@@ -117,6 +117,21 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
+            <td>New web platform conversion landing pages</td><td>Repos</td><td>Future</td>
+        </tr> 
+        <tr><td>Support for Kotlin language</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Updated multi-stage pipelines UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>VSTest TestResultsDirectory option is available in the task UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use extends keyword in pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Markdown support in automated test error messages</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Collect automatic and user-specified metadata from pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to service connections UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>VM deployments with Environments</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Skipping stages in a YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Inline sprint burndown thumbnail</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>Create a dashboard without a team</td><td>Reporting</td><td>Future</td></tr>
         <tr>
             <td rowspan="8"><a href="2019/sprint-161-update.md" data-raw-source="[2 December 2019](2019/sprint-161-update.md)">2 December 2019</a></td>
             <td>Use publish profile to deploy Azure WebApps for Windows from the Deployment Center</td><td>General</td><td>Future</td>
@@ -4197,6 +4212,11 @@ Versions in the “Server” column are linked to the appropriate download locat
 </thead>
 <tbody>
         <tr>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
+          <td>Dec. 10, 2019</td>
+          <td>17.153.29522.3</td>
+        </tr>
+        <tr>
           <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
           <td>17.153.29207.5</td>
@@ -4382,7 +4402,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> ["div class="mx-imgBorder"]
-> "[Make a suggestion](_img/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"]
+> ![Make a suggestion](_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

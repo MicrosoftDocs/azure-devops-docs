@@ -18,8 +18,12 @@ ms.date: 12/10/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
- 
+This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+
+[!INCLUDE [temp](_shared/preview-note.md)]
+
+The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
+
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
 
@@ -58,7 +62,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -82,7 +86,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -146,7 +150,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Overall Execution - Fields](_img/odatapowerbi-overallexecution-fields.png)
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. To create donut chart of Executed v/s Not executed:
     - Create a Power BI visualization **Donut chart**.

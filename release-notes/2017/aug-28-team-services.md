@@ -95,7 +95,7 @@ This same pivot is also available via our mobile experience, bringing consistenc
 
 ### Custom Fields and Tags in Notifications
 
-Notifications can now be defined using conditions on custom fields and tags; not only when they change but when certain values are met. This has been a top customer suggestion in UserVoice (see [6059328](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/6059328-use-tags-in-alerts) and [2436843](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2436843-custom-fields-in-work-item-alerts)), and will allow for a more robust set of notifications that can be set for work items.
+Notifications can now be defined using conditions on custom fields and tags; not only when they change but when certain values are met. This has been a top customer suggestion in UserVoice (see [6059328](https://social.msdn.microsoft.com/Forums/en-US/bc66cdb4-feb6-4df5-8182-7e0acaec4010/should-we-expect-an-alternate-for-buildquality-indicators-that-are-mising-in-the-new-build-tfs) and [2436843](https://social.msdn.microsoft.com/Forums/en-US/0bd11b87-1013-4507-8f90-001d5203b4c4/custom-fields-in-workitem-email-alerts)), and will allow for a more robust set of notifications that can be set for work items.
 
 > [!div class="mx-imgBorder"]
 > ![custom work item notification settings](_img/08_28_03.png)
@@ -215,7 +215,7 @@ Read more about the goals and usage on the [vsts-tasks repo page](https://github
 >
 > This capability is enabled through the **New Release Definition Editor** [preview feature](/azure/devops/project/navigation/preview-features) on your profile and/or account.
 
-Earlier last month we announced a [preview of the new release definition editor](https://visualstudio.microsoft.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the new release definition editor for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
+Earlier last month we announced a [preview of the new release definition editor](jul-14-team-services.md#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the new release definition editor for everyone by default. An administrator can disable it from the [Preview features option](/azure/devops/project/navigation/preview-features) in their account profile menu.
 
 ### Enhancements in new Release Definition editor
 

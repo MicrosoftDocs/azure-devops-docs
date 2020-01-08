@@ -60,7 +60,7 @@ We have no plans to bring a cloud version of our SQL Server Reporting story to A
 
 We currently support SQL Server Reporting through TFS 2018, and will continue to support it in Azure DevOps Server 2019.  
 
-We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This allows customers time to convert their reports to Analytics.
+We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This plan allows customers time to convert their reports to Analytics.
 
 ::: moniker-end  
 

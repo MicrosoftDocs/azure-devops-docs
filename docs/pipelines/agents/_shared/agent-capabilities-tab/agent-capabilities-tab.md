@@ -13,3 +13,6 @@ ms.topic: include
 1. Choose the **Capabilities** tab.
 
    ![Agent capabilities tab](../../_img/agent-capabilities-tab/capabilities.png)
+
+   > [!NOTE]
+   > Microsoft-hosted agents don't display system capabilities. For a list of software installed on Microsoft-hosted agents, see [Use a Microsoft-hosted agent](../../hosted.md#use-a-microsoft-hosted-agent).

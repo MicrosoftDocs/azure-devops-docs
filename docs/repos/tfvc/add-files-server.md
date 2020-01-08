@@ -204,21 +204,23 @@ The following rules apply to a .tfignore file:
 
 ### .tfignore file example
 
-    ######################################
-    # Ignore .cpp files in the ProjA sub-folder and all its subfolders
-    ProjA\*.cpp
-    #
-    # Ignore .txt files in this folder
-    \*.txt
-    #
-    # Ignore .xml files in this folder and all its sub-folders
-    *.xml
-    #
-    # Ignore all files in the Temp sub-folder
-    \Temp
-    #
-    # Do not ignore .dll files in this folder nor in any of its sub-folders
-    !*.dll
+```
+######################################
+# Ignore .cpp files in the ProjA sub-folder and all its subfolders
+ProjA\*.cpp
+#
+# Ignore .txt files in this folder
+\*.txt
+#
+# Ignore .xml files in this folder and all its sub-folders
+*.xml
+#
+# Ignore all files in the Temp sub-folder
+\Temp
+#
+# Do not ignore .dll files in this folder nor in any of its sub-folders
+!*.dll
+```
 
 ### Create and use a .tfignore file
 

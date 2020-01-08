@@ -18,7 +18,8 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Learn how to add users to your organization, and specify the level of features they can use, such as Basic or Stakeholder.
+This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
+
 The following types of users can join your organization for free:
 
 * Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control, tools for Agile, Java, build, release, and more
@@ -26,10 +27,6 @@ The following types of users can join your organization for free:
 * Unlimited [Visual Studio subscribers](https://azure.microsoft.com/services/devops/compare-features/) who also get Basic features. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
-
-## How *access* differs from *permissions*
-
-Features that are available to users are controlled by access levels  - the full set of organization resources that a user is entitled to access. Permissions control which of these organization resources the user can act on. To learn more, see [Default permissions and access for Azure DevOps](../../security/permissions-access.md).
 
 ## Prerequisites
 

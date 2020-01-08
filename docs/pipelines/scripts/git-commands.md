@@ -27,6 +27,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 
 <a name="enable"></a>
+
 ## Enable scripts to run Git commands
 
 > [!NOTE]
@@ -35,6 +36,8 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
 > ```
+
+<a name="version-control"></a>
 
 ### Grant version control permissions to the build service
 

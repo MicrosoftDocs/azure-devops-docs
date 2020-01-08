@@ -28,7 +28,7 @@ This article shows you how to display the burndown of User Stories for a release
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -51,7 +51,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -90,7 +90,7 @@ The following table describes each part of the query.
 <tbody valign="top">
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td><code>$apply=filter(WorkItemType eq 'User Story'</code></td><td>Include User Stories in burndown.</td><tr>
-<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</a></td><tr>
+<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</a></td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement "Teams/any(x:x/TeamName eq '{teamname})'"</td><tr>
 <tr><td><code>and Tags/any(x:x/TagName eq '{tagname}')</code>.</td><td>Specifies the Tag that represents the Release to burndown, and to include all work items tagged with {tagname} in the report.</td><tr>
 <tr><td><code>and DateValue ge {startdate}</code></td><td>Start burndown on or after the specified date. Example: <strong>2019-04-01Z</strong>represents 2019-April-01.</td><tr>
@@ -122,11 +122,11 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample -Release Burndown - Fields](_img/odatapowerbi-releaseburndown-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "TotalStoryPoints" to **Values**
 1. Add the field "Count" to **Values**
 
@@ -135,12 +135,12 @@ The example report displays burndown on both Story Points and Count of Stories.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
 
-To pivot burndown by Area Path, perform the following steps:
+To pivot burndown by Area Path, do the following steps:
 
 1. Select Power BI Visualization **Stacked barchart**. 
 1. Add the field "DateValue" to **Axis**.
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy.
-1. Add the field "TotalStoryPoints" or "Count" to **Values**. You cannot have 2 fields in Values.
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
+1. Add the field "TotalStoryPoints" or "Count" to **Values**. You cannot have two fields in Values.
 1. Add the field "Area.AreaPath" to **Legend**.
 
 The example report displays burndown pivoted by Area Path.
@@ -163,7 +163,7 @@ You can use the following additional queries to create different but similar rep
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -186,7 +186,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -211,7 +211,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -235,7 +235,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -262,7 +262,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Some organizations use Iteration Paths to mark Stories for a Release. For example, they may have an Iteration Path of MyProject\Release1. The following query shows how to select Stories by Iteration Path.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -285,7 +285,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -309,10 +309,10 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Burndown based off a custom field
 
 Some organizations use a custom field to mark Stories for a Release. For example, they may have a field called "Milestone". This query shows you how to select Stories by a custom field.
-You will need to replace both {customfield} and {releasevalue} in the query.
-To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You will use the Property Name as {customfield}.
+You'll need to replace both {customfield} and {releasevalue} in the query.
+To determine the name of your custom field, [explore the Analytics metadata](../extend-analytics/analytics-metadata.md). You'll use the Property Name as {customfield}.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -335,7 +335,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

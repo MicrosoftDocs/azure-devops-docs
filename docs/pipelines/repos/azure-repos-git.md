@@ -96,7 +96,7 @@ Be aware of the following access restrictions when you're running builds in Azur
 
 ::: moniker-end
 
-## Triggering a pipeline
+## Trigger a pipeline
 
 You can have a pipelines triggered when the following events occur in your repo:
 
@@ -219,9 +219,9 @@ trigger:
 
 When you specify paths, you also need to explicitly specify branches or tags to trigger on.
 
-### Opting out of CI builds
+### Opt out of CI builds
 
-#### Disabling the CI trigger
+#### Disable the CI trigger
 
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
@@ -237,7 +237,7 @@ For more information, see [Triggers](../yaml-schema.md#triggers) in the [YAML sc
 
 ::: moniker-end
 
-#### Skipping CI for individual commits
+#### Skip CI for individual commits
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -304,6 +304,8 @@ For example, you want your build to be triggered by changes in master and most, 
 ::: moniker-end
 
 * * *
+
+
 ### Pull request validation
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
@@ -327,7 +329,7 @@ To add a build badge to the `readme.md` file at the root of your repository, fol
 
 ::: moniker-end
 
-## Getting the source code
+## Get the source code
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
@@ -458,6 +460,7 @@ Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
 
 Use a secret variable in your project or build pipeline to store the basic auth token that you generated.
 Use that variable to populate the secret in the above Git command.
+
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
@@ -610,6 +613,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 * * *
+
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
