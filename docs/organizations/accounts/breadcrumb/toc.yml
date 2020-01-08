@@ -5,3 +5,17 @@
   - name: Security, access, & billing
     tocHref: /azure/devops/organizations/accounts/
     topicHref: /azure/devops/security-access-billing/index
+    items:
+    - name: Organizations
+      tocHref: /azure/devopsorganizations/accounts/
+      topicHref: /azure/devops/organizations/settings/set-your-preferences
+    - name: Billing
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/user-guide/plan-your-azure-devops-org-structure
+    - name: Audit
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/settings/azure-devops-auditing
+    - name: Authentication
+      tocHref: /azure/devops/integrate
+      topicHref: /azure/devops/integrate/get-started/authentication/authentication-guidance
+
