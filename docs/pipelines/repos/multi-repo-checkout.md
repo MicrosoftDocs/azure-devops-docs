@@ -15,7 +15,7 @@ monikerRange: "> azure-devops-2019"
 
 [!INCLUDE [version-team-services](../_shared/version-team-services.md)]
 
-Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipelines, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
+Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 [!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
 
