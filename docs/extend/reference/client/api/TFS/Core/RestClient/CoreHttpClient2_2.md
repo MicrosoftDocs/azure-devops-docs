@@ -12,8 +12,6 @@ ms.author: chcomley
 ms.date: 03/21/2019
 ---
 
-[!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
-
 # CoreHttpClient2_2
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
