@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/06/2019
+ms.date: 01/08/2019
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -15,17 +15,9 @@ monikerRange: "> azure-devops-2019"
 
 [!INCLUDE [version-team-services](../_shared/version-team-services.md)]
 
-Introduced in [Sprint 161 Update - Checkout multiple repositories in Azure Pipelines](/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you can `checkout` multiple repositories in your pipeline.
+Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
 [!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
-
-The following combinations of `checkout` steps are supported.
-
-- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
-- If there is a single `checkout: none` step, no repositories are synced or checked out.
-- If there is a single `checkout: self` step, the current repository is checked out.
-- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
-- If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
 ## Specify multiple repositories
 
@@ -35,6 +27,14 @@ Repositories can be specified as a [repository resource](../yaml-schema.md#repos
 - [Repository declared using inline syntax](#repository-declared-using-inline-syntax)
 
 Supported repositories are Azure Repos Git (`git`), GitHub (`github`), and BitBucket Cloud (`bitbucket`).
+
+The following combinations of `checkout` steps are supported.
+
+- If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.
+- If there is a single `checkout: none` step, no repositories are synced or checked out.
+- If there is a single `checkout: self` step, the current repository is checked out.
+- If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
+- If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
 ### Repository declared using a repository resource
 
