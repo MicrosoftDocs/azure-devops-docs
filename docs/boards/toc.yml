@@ -1,11 +1,11 @@
 - name: Azure Boards Documentation
   href: index.yml
 - name: "What is Azure Boards?"
-  href: get-started/what-is-azure-boards.md
+  href: get-started/what-is-azure-boards.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: "Backlogs, boards, & plans"
-  href: backlogs/backlogs-boards-plans.md 
+  href: backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Best tool for the job
-  href: work-items/best-tool-add-update-link-work-items.md
+  href: work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub
@@ -78,7 +78,7 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md?
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-- name: Integrations and extensions
+- name: Integrations & extensions
   items:
   - name: Overview
     href: ./extensions/index.md
@@ -128,22 +128,10 @@
   items:
   - name: "Rollup of work and other fields"
     href: ../reference/xml/support-rollup-of-work-and-other-fields.md
-  - name: "Default permissions (Security)"
-    href: ../organizations/security/permissions-access-work-tracking.md 
-  - name: Define area paths
-    href: ../organizations/settings/set-area-paths.md
-  - name: Define iteration paths (aka sprints)
-    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-  - name: Manage teams and configure team tools
-    href: ../organizations/settings/manage-teams.md 
-  - name: Dependency Tracker
-    href: /azure/devops/extensions/dependency-tracker/overview
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
-  - name: Process Customization 
+  - name: Process customization 
     href: ../reference/index.md
-  - name: Client support for work tracking
-    href: ../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 

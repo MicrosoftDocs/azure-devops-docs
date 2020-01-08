@@ -5,3 +5,52 @@
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
+    items: 
+    - name: Get started 
+      tocHref: /azure/devops/boards/get-started/
+      topicHref: /azure/devops/boards//get-started/index
+    - name: Azure Boards & GitHub 
+      tocHref: /azure/devops/boards/github/
+      topicHref: /azure/devops/boards/github/index
+    - name: Work Items
+      tocHref: /azure/devops/boards/work-items/
+      topicHref: /azure/devops/boards/work-items/about-work-items
+    - name: Boards 
+      tocHref: /azure/devops/boards/boards
+      topicHref: /azure/devops/boards/boards/kanban-overview
+    - name: Backlogs
+      tocHref: /azure/devops/boards/backlogs
+      topicHref: /azure/devops/boards/backlogs/backlogs-overview
+    - name: Sprints
+      tocHref: /azure/devops/boards/sprints/
+      topicHref: /azure/devops/boards/sprints/scrum-overview
+    - name: Queries
+      tocHref: /azure/devops/boards/queries/
+      topicHref: /azure/devops/boards/queries/example-queries
+    - name: Plans & Agile at Scale
+      tocHref: /azure/devops/boards/plans
+      topicHref: /azure/devops/boardsplans/index
+    - name: Sprints
+      tocHref: /azure/devops/boards/sprints
+      topicHref: /azure/devops/boards/index
+    - name: Queries
+      tocHref: /azure/devops/boards/queries
+      topicHref: /azure/devops/boards/index
+    - name: Plans & Agile at Scale
+      tocHref: /azure/devops/boards/plans
+      topicHref: /azure/devops/boards/index
+    - name: Add & manage teams
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/b/organizations/projects/about-projects
+    - name: Excel, Project, PowerPoint
+      tocHref: /azure/devops/boards/backlogs/office
+      topicHref: /azure/devops/boards/backlogs/office/track-work
+    - name: Add & manage teams
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/projects/about-projects
+    - name: Integrations & extensions
+      tocHref: /azure/devops/boards/extensions/
+      topicHref: /azure/devops/boards/extensions/index
+    - name: Integrations & extensions
+      tocHref: /azure/devops/boards/integrations/
+      topicHref: /azure/devops/boards/extensions/index
