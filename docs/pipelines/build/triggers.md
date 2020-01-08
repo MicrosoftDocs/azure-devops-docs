@@ -12,7 +12,7 @@ ms.date: 09/12/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Pipeline triggers
+# Specify events that trigger pipeline builds and releases
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -395,7 +395,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+> For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 
@@ -1013,7 +1013,7 @@ Pipelines are not associated with a branch. They are associated with the reposit
 
 ### My CI or PR trigger doesn't seem to fire
 
-Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 

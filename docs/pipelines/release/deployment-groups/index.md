@@ -13,7 +13,7 @@ ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# Deployment groups
+# Provision deployment groups
 
 [!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
 
