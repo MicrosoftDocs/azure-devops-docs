@@ -91,7 +91,7 @@ each approval step. Configure recipients and settings in the **Notifications** s
 The link in the email message opens the **Summary** page for the release
 where the user can approve or reject the release.
 
-## Related topics
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)

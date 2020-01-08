@@ -38,7 +38,7 @@ self-signed certificate.
 
 To dynamically deploy Azure Resource Groups that contain virtual machines, use the 
 [Azure Resource Group Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2)
-task. This task has a checkbox named **Enable Deployment Pre-requisites**. Select 
+task. This task has a checkbox named **Enable Deployment Prerequisites**. Select 
 this to automatically set up the WinRM HTTPS protocol on the virtual machines, 
 open port 5986 in the firewall, and install a test certificate. The virtual machines 
 are then ready for use in the deployment task.

@@ -14,7 +14,7 @@ ms.date: 1/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Variables
+# Define variables
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
@@ -225,7 +225,7 @@ To share variables across multiple pipelines in your project, you should set the
 
 ## Use output variables from tasks
 
-Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs using [dependencies](expressions.md#dependencies). 
 
 #### [YAML](#tab/yaml/)
 
@@ -262,7 +262,7 @@ jobs:
 ### Use outputs in the same job
 
 In the **Output variables** section, give the producing task a reference name.
-Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableName>)` to refer to output variables.
+Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableName>)` to refer to output variables. 
 
 ### Use outputs in a different job
 
@@ -270,7 +270,7 @@ You must use YAML to consume output variables in a different job.
 
 * * *
 
-<h2 id="set-in-script">Set variables in scripts</h2>
+## Set variables in scripts
 
 A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. All variables set by this method are treated as strings. To set a variable from a script, you use a command syntax and print to stdout.
 
@@ -317,8 +317,7 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable using `isOutput=true`. Then you can map it into future
-jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage. 
+an output variable using `isOutput=true`. Then you can map it into future jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage. 
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
@@ -500,7 +499,7 @@ jobs:
     - bash: echo $(a)
 ```
 
-For more information about counters and other expressions, see [expressions](expressions.md).
+For more information about counters, dependencies, and other expressions, see [expressions](expressions.md).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
