@@ -12,8 +12,6 @@ ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
-[!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
-
 # TestHttpClient2_2
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
