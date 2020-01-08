@@ -58,6 +58,14 @@
     href: ../organizations/projects/connect-to-projects.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: Reference
   items:
+  - name: Navigate in Team Explorer
+    href: work-team-explorer.md  
+  - name: FAQs
+    href: faqs.md
+  - name: Service status  
+    href: service-status-info.md
+  - name: Service limits  
+    href: service-limits.md
   - name: Features index
     href: alm-devops-features.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 - name: Troubleshooting 
@@ -66,8 +74,8 @@
     href: troubleshoot-connection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
     href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Troubleshoot network connections and lists of allowed addresses
-    href: ../organizations/security/faq-network-connections.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Allowed address lists and network connections
+    href: ../organizations/security/allow-list-ip-url.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get support or provide feedback
     href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 

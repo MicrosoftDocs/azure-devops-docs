@@ -6,20 +6,12 @@
   href: ../project/navigation/toc.yml 
 - name: Migrate & import
   href: ../migrate/toc.yml 
-- name: Reference
+- name: Resources
   items:
   - name: "Permissions and access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: About access levels
     href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Navigate in Team Explorer
-    href: ../user-guide/work-team-explorer.md  
-  - name: FAQs
-    href: ../user-guide/faqs.md
-  - name: Service status  
-    href: ../user-guide/service-status-info.md
-  - name: Service limits  
-    href: ../user-guide/service-limits.md
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
