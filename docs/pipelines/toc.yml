@@ -196,7 +196,7 @@
   - name: Define an approval 
     href: process/approvals.md
     displayName: approvals, checks
- - name: Create & target an environment 
+  - name: Create & target an environment 
     href: process/environments.md
     displayName: environments, deployment, approvals
   - name: Kubernetes resource
@@ -205,13 +205,13 @@
     href: process/environments-virtual-machines.md
   - name: Deploy apps using virtual machines 
     items: 
-  - name: Linux virtual machines
-    href: ecosystems/deploy-linux-vm.md
-- name: Specify conditions 
-    href: process/conditions.md
-  - name: Specify demands 
-    href: process/demands.md
-    displayName: task demands, manually entered demands, capabilities
+    - name: Linux virtual machines
+      href: ecosystems/deploy-linux-vm.md
+    - name: Specify conditions 
+      href: process/conditions.md
+    - name: Specify demands 
+      href: process/demands.md
+      displayName: task demands, manually entered demands, capabilities
   - name: Deploy apps (Classic)
     items:
     - name: Use approvals and gates
