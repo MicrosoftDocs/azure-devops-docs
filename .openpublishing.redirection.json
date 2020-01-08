@@ -12199,6 +12199,11 @@
       "source_path": "docs/notifications/howto-exclude-self-from-email.md",
       "redirect_url": "/azure/devops/notifications/exclude-self-from-email",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/user-guide/index.yml",
+      "redirect_url": "/azure/devops/get-started/index",
+      "redirect_document_id": false
     }
   ]
 }
