@@ -34,7 +34,7 @@ This article shows you how to display average lead time or cycle time for a give
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
@@ -52,7 +52,7 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}
@@ -161,7 +161,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
@@ -179,7 +179,7 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}

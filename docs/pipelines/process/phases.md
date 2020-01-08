@@ -13,7 +13,7 @@ ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Jobs
+# Specify jobs in your pipeline
 
 [!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
 
@@ -50,7 +50,7 @@ You can organize your release pipeline into jobs. Every release pipeline has at 
 
 ::: moniker-end
 
-## Specifying jobs
+## Define a single job
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -589,7 +589,7 @@ You can also set the timeout for each task individually - see [task control opti
 
 <a name="parallelexec"></a>
 
-## Multi-configuration
+## Multi-job configuration
 
 From a single job you author, you can run multiple jobs on multiple agents in parallel. Some examples include:
 
@@ -696,6 +696,7 @@ a maximum of four agents at any one time:
 With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
 * * *
+
 ## Slicing
 
 An agent job can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel.
@@ -811,7 +812,7 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
-- [GitHub](../repos/github.md#getting-the-source-code)
+- [GitHub](../repos/github.md#get-the-source-code)
 - [Azure Repos Git](../repos/azure-repos-git.md)
 - [TFVC](../repos/tfvc.md)
 
@@ -906,7 +907,7 @@ YAML is not yet supported in TFS.
 Select the **Allow scripts to access OAuth token** option in the control options for the job.
 
 * * *
-## Related topics
+## Related articles
 
 * [Deployment group jobs](deployment-group-phases.md)
 * [Conditions](conditions.md)
