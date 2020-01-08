@@ -12204,6 +12204,11 @@
       "source_path": "docs/user-guide/index.yml",
       "redirect_url": "/azure/devops/get-started/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/tfvc/index.md",
+      "redirect_url": "/azure/devops/repos/tfvc/overview",
+      "redirect_document_id": false
     }
   ]
 }
