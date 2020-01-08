@@ -1,29 +1,29 @@
 - name: Web portal navigation 
-  href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+  href: index.md
 - name: Open a service, page, or setting 
-  href: go-to-service-page.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json    
+  href: go-to-service-page.md   
 - name: Add an artifact or team artifacts
-  href: add-artifact-team.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+  href: add-artifact-team.md  
 - name: Use breadcrumbs, selectors, and directories
-  href: use-breadcrumbs-selectors.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+  href: use-breadcrumbs-selectors.md  
 - name: Open another project or repo  
-  href: go-to-project-repo.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json  
+  href: go-to-project-repo.md 
 - name: Work with favorites 
-  href: set-favorites.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+  href: set-favorites.md  
 - name: Work across projects
-  href: work-across-projects.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+  href: work-across-projects.md  
 - name: Filter basics 
-  href: filter-basics.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+  href: filter-basics.md
 - name: Search your repo, work items, or wiki 
-  href: search-basics.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json    
+  href: search-basics.md   
 - name: Enable a preview feature  
-  href: preview-features.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+  href: preview-features.md  
 - name: Reference
   items:
   - name: Glossary
-    href: glossary.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+    href: glossary.md  
   - name: Go mobile 
-    href: mobile-work.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json   
+    href: mobile-work.md  
   - name: Keyboard shortcuts
     href: keyboard-shortcuts.md  
  

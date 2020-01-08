@@ -1,7 +1,0 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Configure & customize
-    tocHref: /azure/devops/organizations/settings/
-    topicHref: /azure/devops/organizations/index

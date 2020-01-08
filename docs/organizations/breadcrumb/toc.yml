@@ -21,6 +21,9 @@
     - name: Process
       tocHref: /azure/devops/reference/
       topicHref: /azure/devops/organizations/index
+    - name: Process
+      tocHref: /azure/devops/settings/work/
+      topicHref: /azure/devops/organizations/index
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
