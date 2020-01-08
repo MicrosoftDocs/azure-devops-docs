@@ -37,6 +37,18 @@
       displayName: stage, dependencies, conditions, queuing policies, approvals
     - name: Deployment jobs
       href: process/deployment-jobs.md
+  - name: Environments
+    items:
+    - name: Create & target an environment 
+      href: process/environments.md
+      displayName: environments, deployments
+    - name: Define an approval 
+      href: process/approvals.md
+      displayName: approvals, checks
+    - name: Kubernetes resource
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md	      
   - name: Repositories & triggers
     items:
     - name: Specify pipeline triggers  
@@ -193,18 +205,6 @@
   items:
   - name: Approvals, checks, & gates 
     href: release/approvals/index.md
-  - name: Environments
-    items:
-    - name: Create & target an environment 
-      href: process/environments.md
-      displayName: environments, deployment, approvals
-    - name: Kubernetes resource
-      href: process/environments-kubernetes.md
-    - name: Virtual machine resource
-      href: process/environments-virtual-machines.md	      
-  - name: Define an approval 
-    href: process/approvals.md
-    displayName: approvals, checks
   - name: Specify conditions 
     href: process/conditions.md
   - name: Specify demands 
@@ -226,8 +226,6 @@
       href: library/government-cloud.md
     - name: Azure Resource Manager
       href: library/connect-to-azure.md
-    - name: Azure Linux virtual machines
-      href: ecosystems/deploy-linux-vm.md	      
     - name: Azure SQL database
       href: targets/azure-sqldb.md
     - name: Azure Stack
@@ -272,6 +270,10 @@
       href: targets/scvmm.md
     - name: VMware (Classic)
       href: targets/vmware.md
+- name: Deploy apps using virtual machines 
+  items: 
+  - name: Linux virtual machines
+    href: ecosystems/deploy-linux-vm.md
 - name: Deploy apps using containers 
   items: 
 #  - name: Orchestration overview (New)
