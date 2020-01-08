@@ -23,9 +23,12 @@
   - name: Reporting
     tocHref: /azure/devops/report/
     topicHref: /azure/devops/report/index
-  - name: Developer resources
-    tocHref: /azure/devops/developer-resources/
-    topicHref: /azure/devops/developer-resources/index
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
+  - name: Security, access, & billing
+    tocHref: /azure/devops/security-access-billing/
+    topicHref: /azure/devops/security-access-billing/index
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
@@ -45,15 +48,9 @@
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index
-  - name: Configure & customize
-    tocHref: /azure/devops/organizations/
-    topicHref: /azure/devops/organizations/index
-  - name: Security, access, & billing
-    tocHref: /azure/devops/security-access-billing/
-    topicHref: /azure/devops/security-access-billing/index
+  - name: Developer resources
+    tocHref: /azure/devops/developer-resources/
+    topicHref: /azure/devops/developer-resources/index
   - name: Azure DevOps Server Administration
     tocHref: /azure/devops/server/
     topicHref: /azure/devops/server/admin/admin-quick-ref
-  - name: Project Server Integration (Deprecated)
-    tocHref: /azure/devops/reference/tfs-ps-sync/
-    topicHref: /azure/devops/reference/tfs-ps-sync/index

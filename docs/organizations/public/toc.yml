@@ -3,7 +3,7 @@
 - name: Quickstarts
   items:
   - name: Build OSS repositories 
-    href: /azure/devops/pipelines/repos/index?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
+    href: ../../pipelines/repos/index.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
   - name: Create a public project
     href: create-public-project.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/public/breadcrumb/toc.json
   - name: Invite users to contribute 
