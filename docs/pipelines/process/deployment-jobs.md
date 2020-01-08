@@ -46,6 +46,8 @@ jobs:
   dependsOn: string 
   condition: string 
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
