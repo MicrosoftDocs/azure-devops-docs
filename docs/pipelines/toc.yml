@@ -191,14 +191,14 @@
       href: test/codecoverage-for-pullrequests.md 
 - name: Deploy apps to specific environments 
   items:
+  - name: Create & target an environment 
+    href: process/environments.md
+    displayName: environments, deployment, approvals
   - name: Approvals, checks, & gates 
     href: release/approvals/index.md
   - name: Define an approval 
     href: process/approvals.md
     displayName: approvals, checks
-  - name: Create & target an environment 
-    href: process/environments.md
-    displayName: environments, deployment, approvals
   - name: Kubernetes resource
     href: process/environments-kubernetes.md
   - name: Virtual machine resource
