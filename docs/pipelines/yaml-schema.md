@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/06/2019
+ms.date: 01/08/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -961,7 +961,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable pipeline-completion triggers.
+You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
 
 # [Schema](#tab/schema)
 
