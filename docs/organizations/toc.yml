@@ -15,22 +15,22 @@
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure personal notifications
     href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Security
-    items:
-    - name: Personal access tokens
-      href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: SSH public keys
-      href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Alternate credentials
-      href: ../repos/git/auth-overview.md#alternate-credentials?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
-    - name: Manage authorizations
-      href: ./settings/manage-authorizations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Personal access tokens
+    href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: SSH public keys
+    href: ../repos/git/use-ssh-keys-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Alternate credentials
+    href: ../repos/git/auth-overview.md#alternate-credentials?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  - name: Manage authorizations
+    href: ./settings/manage-authorizations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
   items:
   - name: About organizations
     href:  ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Overview settings
     items:
+    - name: Change organization Owner
+      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Rename organization
       href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add privacy policy URL
@@ -39,8 +39,6 @@
       href: ./accounts/change-time-zone.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization location
       href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization Owner
-      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete organization
       href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Recover organization
