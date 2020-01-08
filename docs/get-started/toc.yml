@@ -6,12 +6,22 @@
   href: ../project/navigation/toc.yml 
 - name: Migrate & import
   href: ../migrate/toc.yml 
-- name: Resources
+- name: Permissions & access
   items:
   - name: "Permissions and access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: About access levels
     href: ../organizations/security/access-levels.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+- name: Status & security 
+  items: 
+  - name: Service status  
+    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data protection
+    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Data location
+    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Credential storage
+    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
 - name: IDE Client Resources
   items:
   - name: Visual Studio IDE
@@ -24,24 +34,6 @@
     href: /azure/devops/java/download-eclipse-plug-in
   - name: IntelliJ IDEA
     href: /azure/devops/java/download-intellij-plug-in
-- name: Status & security 
-  items: 
-  - name: Service status  
-    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Data protection
-    href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Data location
-    href: ../organizations/security/data-location.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-  - name: Credential storage
-    href: ../organizations/security/credential-storage.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
-- name: Journey articles
-  items:
-    - name: Agile
-      href: /azure/devops/learn/agile/what-is-agile
-    - name: DevOps
-      href: /azure/devops/learn/what-is-devops
-    - name: Git at Scale
-      href: /azure/devops/learn/git/git-at-scale
 - name: Resources
   items:
   - name: Configure & customize 
@@ -54,5 +46,12 @@
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
   - name: Code search video
     href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
-
+- name: Journey articles
+  items:
+    - name: Agile
+      href: /azure/devops/learn/agile/what-is-agile
+    - name: DevOps
+      href: /azure/devops/learn/what-is-devops
+    - name: Git at Scale
+      href: /azure/devops/learn/git/git-at-scale
 
