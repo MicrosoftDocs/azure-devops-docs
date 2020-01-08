@@ -27,7 +27,7 @@ The advantages of using environments include the following.
 
 ## Resources
 
-While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, [Kubernetes resource](environments-kubernetes.md) and [Virtual machine resource](environments-virtual-machines.md) types are supported, with the roadmap of environments including support for other resources such as web apps, databases and more.
+While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
 <a name="creation"></a>
 
@@ -60,7 +60,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
   - deployment: DeployWeb
     displayName: deploy Web App
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'Ubuntu-latest'
     # creates an environment if it doesn't exist
     environment: 'smarthotel-dev'
     strategy:
