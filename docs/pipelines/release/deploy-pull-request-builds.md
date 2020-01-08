@@ -97,12 +97,14 @@ You can use branch policies to enforce successful deployment as a required crite
 
    ![Pull request page in GitHub highlighting a succeeded status check](_img/deploy-pull-request-builds/github-pr-status-check.png)
 
-## Learn more
+## Related articles
 
-- [Learn more about Azure Pipelines](../index.yml)
-- [Learn more about release triggers and stage triggers](triggers.md)
-- [Learn more about Azure Repos](../../repos/git/index.md)
-- [Learn more about branch policies](../../repos/git/branch-policies-overview.md)
-- [Learn more about configuring branch policy for an external service](../../repos/git/pr-status-policy.md)
+- [Release triggers](triggers.md)
+- [Supported build source repositories](../repos/index.md)
+
+## Additional resources 
+- [Azure Repos](../../repos/git/index.md)
+- [Branch policies](../../repos/git/branch-policies-overview.md)
+- [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
 
 If you encounter issues or have suggestions, please feel free to [post a comment or create a post on Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).

@@ -17,6 +17,8 @@ monikerRange: "> azure-devops-2019"
 
 Introduced in [Sprint 161 Update - Checkout multiple repositories in Azure Pipelines](/azure/devops/release-notes/2019/sprint-161-update#checkout-multiple-repositories-in-azure-pipelines), you can `checkout` multiple repositories in your pipeline.
 
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+
 The following combinations of `checkout` steps are supported.
 
 - If there are no `checkout` steps, the default behavior is as if `checkout: self` were the first step.

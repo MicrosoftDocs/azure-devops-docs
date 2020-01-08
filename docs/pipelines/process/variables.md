@@ -14,7 +14,7 @@ ms.date: 1/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Variables
+# Define variables
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 
