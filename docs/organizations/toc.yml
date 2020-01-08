@@ -13,8 +13,6 @@
     href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
     href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Configure personal notifications
-    href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Personal access tokens
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: SSH public keys
@@ -29,22 +27,20 @@
     href:  ../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Overview settings
     items:
-    - name: Change organization Owner
-      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Rename organization
-      href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add privacy policy URL
       href: ./accounts/add-privacy-policy-url.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
       href: ./accounts/change-time-zone.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization location
       href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Change organization Owner
+      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Rename organization
+      href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete organization
       href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Recover organization
       href: ./accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Global notifications
-    href: ../notifications/manage-organization-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add and manage banners
     href: ./settings/manage-banners.md 
   - name: Troubleshooting
@@ -60,7 +56,7 @@
 - name: Notifications
   href: ../notifications/toc.yml
 - name: Service hooks
-  href: ../service-hooks/toc.yml
+  href: ../service-hooks/overview.md
 - name: Projects
   href: projects/toc.yml
 - name: Process

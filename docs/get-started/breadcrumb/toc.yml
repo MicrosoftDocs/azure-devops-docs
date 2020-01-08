@@ -18,6 +18,9 @@
     - name: Web portal navigation
       tocHref: /azure/devops/project/navigation/
       topicHref: /azure/devops/project/navigation/index
-    - name: Resources
+    - name: Permissions & access
       tocHref: /azure/devops/organizations/security/
       topicHref: /azure/devops/organizations/security/permissions-access
+    - name: Status & security 
+      tocHref: /azure/devops/organizations/user-guide/
+      topicHref: /azure/devops/user-guide/service-status-info

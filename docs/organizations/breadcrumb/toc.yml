@@ -27,9 +27,6 @@
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
-    - name: Service hooks
-      tocHref: /azure/devops/service-hooks/
-      topicHref: /azure/devops/service-hooks/overview
     - name: Pipelines (Build and Release)
       tocHref: /azure/devops/pipelines/
       topicHref: /azure/devops/pipelines/agents/pools-queues
