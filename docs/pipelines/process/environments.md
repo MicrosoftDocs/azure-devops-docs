@@ -27,7 +27,7 @@ The advantages of using environments include the following.
 
 ## Resources
 
-While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, only [Kubernetes resource](environments-kubernetes.md) type is supported, with the roadmap of environments including support for other resources such as virtual machines, databases and more.
+While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, [Kubernetes resource](environments-kubernetes.md) and [Virtual machine resource](environments-virtual-machines.md) types are supported, with the roadmap of environments including support for other resources such as web apps, databases and more.
 
 <a name="creation"></a>
 ## Environment creation
