@@ -11,8 +11,6 @@ ms.author: chcomley
 ms.date: 07/03/2019
 ---
 
-[!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
-
 # GitHttpClient2_2
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
