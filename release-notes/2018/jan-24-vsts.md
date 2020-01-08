@@ -31,7 +31,7 @@ Other feature highlights include:
 
 ### View Analytics Widgets as a Stakeholder
 
-Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/azure/devops/organizations/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
+Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/azure/devops/organizations/security/get-started-stakeholder#related-articles) can view all the Analytics widgets too!
 
 To use the [Analytics OData endpoint](/azure/devops/report/extend-analytics/index) or [Power BI to connect to Analytics](/azure/devops/report/powerbi/index), a [Basic license](https://visualstudio.microsoft.com/team-services/compare-features/) is still required.
 
@@ -181,7 +181,7 @@ After a [public preview of Wiki search in December](https://blogs.msdn.microsoft
 
 ### Print Wiki pages
 
-**Wiki** can be used for a variety of content. Sometimes it can be useful to print content from **Wiki** to read in your spare time, add comments using pen and paper, or even share an offline PDF copy with those outside of your VSTS project. Now, simply click on the context menu of a page and select **Print page**. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/20051455-print-or-export-document-from-wiki-functionality).
+**Wiki** can be used for a variety of content. Sometimes it can be useful to print content from **Wiki** to read in your spare time, add comments using pen and paper, or even share an offline PDF copy with those outside of your VSTS project. Now, simply click on the context menu of a page and select **Print page**. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki menu print page option](_img/129_04.png)

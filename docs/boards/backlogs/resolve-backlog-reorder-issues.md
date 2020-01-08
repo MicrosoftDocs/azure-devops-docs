@@ -28,14 +28,16 @@ In addition to the information provided in this article, you may find the follow
 
 - [Set up your Backlogs and Boards](set-up-your-backlog.md)  
 - [About Boards and Kanban, Limitations of multi-team Kanban board views](../boards/kanban-overview.md#limits-multi-team)  
-- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  - [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
+- [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs-boards-plans.md)  
+- [Best tool to add, update, and link work items ](../work-items/best-tool-add-update-link-work-items.md)
 
 <a id="nested" > </a>
 
 ## Fix same-category nesting issue
 
-Same-category links are parent-child links among work items of the same type, such as bug-bug, or between work items that appear on the same backlog level. The category a work item belongs to is determined by your process backlog levels and your team's bug behavior. To understand more about same-category hierarchy, please see the next section [Recommended configuration](#recommended).
+Same-category links are parent-child links among work items of the same type, such as bug-bug, or between work items that appear on the same backlog level. The category a work item belongs to is determined by your process backlog levels and your team's bug behavior. To understand more about same-category hierarchy, see the section [Recommended configuration](#recommended).
 
+### Error message specifies work item IDs 
 You may see an error message similar to "You cannot reorder work items and some work items may not be shown. See work item(s) 7 to either remove the parent to child link or change the link type to 'Related'." or "Work item 3 can't be reordered because its parent is on the same category". 
 
 To fix this, take the following action: 
@@ -46,7 +48,7 @@ To fix this, take the following action:
 
 3. Remove the problem parent-child link. If you would like to keep these items associated, use 'Related' link type instead. 
 
-## Fix same-category nesting issue without work items ids
+### Error message doesn't specify work item IDs 
 
 You may see an error message such as "You cannot reorder work items and some work items may not be shown." 
 

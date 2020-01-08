@@ -20,9 +20,19 @@ ms.date: 08/07/2019
 
 In this section, we provide samples for the most popular reports:
 
-| Azure Boards reports | Azure Test Plans reports |
+::: moniker range="azure-devops"
+
+| Azure Boards | Azure Pipelines | Azure Test Plans | 
 |----------------------|--------------------------| 
-| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] | 
+| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] |
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+[!INCLUDE [temp](_shared/sample-fulllist.md)] 
+
+::: moniker-end
 
 All sample report articles provide the following sections and information: 
 
@@ -62,7 +72,7 @@ Get started quickly with the following steps which embed the OData query in the 
 
     Depending on the sample query, there may be one or more additional strings to substitute, such as:
 
-    * {areapath} - Your Area Path. Format: Project\Level1\Level2
+    * {areapath} - Your Area path. Format: Project\Level1\Level2
     * {iterationpath} - Your Iteration path. Format: Project\Level1\Level2
     * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 

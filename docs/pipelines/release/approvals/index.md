@@ -1,5 +1,5 @@
 ---
-title: Understand approvals and gates
+title: Understand approvals, gates, and checks
 ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
@@ -46,20 +46,20 @@ are useful include the following.
 | Scenario | Feature(s) to use |
 | --- | --- |
 | Some users must manually validate the change request and approve the deployment to a stage. | [Pre-deployment approvals](approvals.md) |
-| Some users must manually sign off the app after deployment before the release is promoted to other stages. | [Post-deployment approvals](approvals.md) |
+| Some users must manually sign out from the app after deployment before the release is promoted to other stages. | [Post-deployment approvals](approvals.md) |
 | You want to ensure there are no active issues in the work item or problem management system before deploying a build to a stage.  | [Pre-deployment gates](gates.md) |
 | You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
-| After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
-| During the deployment pipeline a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
-| During the deployment pipeline you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
-| During the deployment pipeline you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
+| After deployment, you want to wait for a specified time before prompting some users for a manual sign out.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
+| During the deployment pipeline, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
+| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
+| During the deployment pipeline, you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
-You can, of course, combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
+You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 
 In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
-though service management methodologies such as ITIL. For more details, see [Release deployment control using ServiceNow](servicenow.md).
+though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
 
-## Related topics
+## Related articles
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
@@ -67,9 +67,9 @@ though service management methodologies such as ITIL. For more details, see [Rel
 * [ServiceNow release and deployment control](servicenow.md)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
-* [Release pipelines and releases](index.md)
+* [Release pipelines and releases](../releases.md)
 
-## See also
+## Additional resources
 
 * [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)

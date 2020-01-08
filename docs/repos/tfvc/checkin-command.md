@@ -24,11 +24,15 @@ Almost every change that you make to the files on your dev machine is stored in 
 
 **Requirements**: See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf checkin [/author:author name] [/comment:("comment"|@comment file)] 
-    [/noprompt] [/notes:("Note Name"="note text"|@notefile)] 
-    [/override:(reason|@reasonfile)] [/recursive] [/saved] [/validate] [itemspec] [/bypass] [/force] [/noautoresolve]  [/login:username,[password]] [/new]
+```
+tf checkin [/author:author name] [/comment:("comment"|@comment file)] 
+[/noprompt] [/notes:("Note Name"="note text"|@notefile)] 
+[/override:(reason|@reasonfile)] [/recursive] [/saved] [/validate] [itemspec] [/bypass] [/force] [/noautoresolve]  [/login:username,[password]] [/new]
+```
 
-    tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/login:username,[password]] [/collection:TeamProjectCollectionUrl][/author:author name] [/force]
+```
+tf checkin /shelveset:shelvesetname[;shelvesetowner] [/bypass] [/noprompt] [/login:username,[password]] [/collection:TeamProjectCollectionUrl][/author:author name] [/force]
+```
 
 ## Parameters
 
@@ -158,19 +162,25 @@ Almost every change that you make to the files on your dev machine is stored in 
 
 ### Check in all pending changes in the current workspace
 
-    c:\code\SiteApp\Main>tf checkin
+```
+c:\code\SiteApp\Main>tf checkin
+```
 
 Displays the **Check In** dialog box, which displays all pending changes in the current workspace. You can use the **Check In** dialog box to select or clear the pending changes you want to check in, add a comment, associate work items, and perform other tasks and then choose the **Check In** button when you are ready to proceed.
 
 ### Check in all pending changes with a comment
 
-    c:\code\SiteApp\Main>tf checkin /comment:"Re-implemented Pi calculator"
+```
+c:\code\SiteApp\Main>tf checkin /comment:"Re-implemented Pi calculator"
+```
 
 Checks in all pending changes in the current workspace and provides a comment to help your teammates understand the purpose of your changes.
 
 ### Check in a change to a single item without using the Check In dialog box
 
-    c:\code\SiteApp\Main>tf checkin program.cs /noprompt
+```
+c:\code\SiteApp\Main>tf checkin program.cs /noprompt
+```
 
 Checks in your pending changes to program.cs. The **Check In** dialog box is not displayed, and if any conflicts block the check in, the system does not display the conflicts window.
 

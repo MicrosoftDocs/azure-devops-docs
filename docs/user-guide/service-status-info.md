@@ -1,6 +1,6 @@
 ---
-title: Azure DevOps Service Status Documentation
-description: Description of how Azure DevOps services status is monitored and available to users
+title: Azure DevOps Service status 
+description: Understand how Azure DevOps Services status is monitored and available to users
 ms.prod: devops
 ms.topic: article
 ms.technology: devops-new-user
@@ -12,7 +12,7 @@ author: chcomley
 monikerRange: 'azure-devops'
 ---
 
-# Azure DevOps Service Status
+# Azure DevOps Services status
 
 ## Introduction
 
@@ -23,9 +23,9 @@ From time to time, like any online service, our service experiences performance
 slowdowns and stability issues. In these cases, we aim to respond quickly to 
 restore the service, and also make it a top priority to communicate the incident 
 status and our next steps to mitigate the issue on the
-[Azure DevOps Service Status Portal](https://status.dev.azure.com).
+[Azure DevOps Services status portal](https://status.dev.azure.com).
 
-If you are experiencing a problem with any of our Azure DevOps services, you can check the 
+If you are experiencing a problem with any of our Azure DevOps Services, you can check the 
 service health to determine if we are already working on the issue before you contact our 
 support team or spend time troubleshooting. Many of the events we post here are based on our 
 Customer Impact Assessment (CIA). CIA is modeled on the same telemetry we use in our 
@@ -51,7 +51,7 @@ The [geographic region](https://azure.microsoft.com/global-infrastructure/geogra
 user's account is hosted in the cloud and the data residency, sovereignty, compliance,
 and resilience requirements are honored within the geographical boundaries.
 
-In addition to the list of specific Azure DevOps services, the matrix also displays two other 
+In addition to the list of specific Azure DevOps Services, the matrix also displays two other 
 categories: Core and Other. The Core category encompasses the set of features that are fundamental to 
 all five services, such as authentication or the web portal. The Other category is the 
 list of features that complement the suite, such as extensions.  
@@ -82,14 +82,14 @@ You can use [the RSS feed](https://status.dev.azure.com/_rss) to subscribe and r
 ## Using REST APIs
 
 For users who are looking to build an automated solution to [monitor the infrastructure incidents](https://docs.microsoft.com/azure/service-health/service-health-overview), 
-we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps services. 
+we [provide REST APIs](https://docs.microsoft.com/rest/api/resourcehealth/) to retrieve the current health status of each of the Azure DevOps Services. 
 
 [!INCLUDE [rest-api-docs-rollout](../_shared/rest-api-docs-rollout.md)] 
 
 ## Get Help
 
 If you're experiencing an issue with Azure DevOps and see a corresponding event communicated on the service health portal,be assured that we're working to restore normal operations of the service. You don't need to take any further 
-action to notify us. However, if you don't see your issue reported on the Azure DevOps service health page, refer 
+action to notify us. However, if you don't see your issue reported on the Azure DevOps Services health page, refer 
 to the resources available on [Azure DevOps support page](https://azure.microsoft.com/support/devops/). That page has 
 resources to report bugs, interact with a friendly support bot, and contact our support team for additional assistance.
    

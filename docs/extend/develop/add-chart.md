@@ -6,15 +6,15 @@ description: Add a chart to your extension in Azure DevOps Services
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
 ms.manager: mijacobs
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/08/2019
+ms.date: 12/31/2019
 ---
 
 # Add a chart
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
 
 This article demonstrates how you can add charts to your extensions. Charts can be added to any Azure DevOps Services extension. 
 
@@ -40,7 +40,7 @@ The extension contains sample chart widgets.
 
 ## How to organize your code 
 
-For the purposes of this tutorial, we create a widget and add a chart to it. 
+For this tutorial, we create a widget and add a chart to it. 
 To do so, in the `home` folder for your project, create a `chart.html` file with the following contents: 
 
 ### HTML file
@@ -142,9 +142,9 @@ Then, follow [the packaging and publishing instructions](../publish/overview.md)
 
 ## Charts
 
-### Pie chart
+### Chart
 
-This sample renders a pie chart. The `data` and `labelValues` have been hardcoded here, and would need to be changed to the data you want to visualize. 
+This sample renders a chart. The `data` and `labelValues` have been hardcoded here, and would need to be changed to the data you want to visualize. 
 
 ```JavaScript
 VSS.init({
@@ -158,7 +158,7 @@ VSS.require([
         ],
         function (WidgetHelpers, Services) {
         WidgetHelpers.IncludeWidgetStyles();
-        VSS.register("PieChart", function () { 
+        VSS.register("chart", function () { 
              return {
              load:function() {
                 return Services.ChartsService.getService().then(function(chartService){
@@ -191,15 +191,15 @@ VSS.require([
 });
 ```
 
-Here, the chart's size is defined in `hostOptions`. The series property is an array and contains a single object with data in it. The `xAxis` object contains `labelValues` which correspond to the `data`. 
+Here, the chart's size is defined in `hostOptions`. The series property is an array and contains a single object with data in it. The `xAxis` object contains `labelValues`, which correspond to the `data`. 
 For pie charts, we also have some special options that are defined by the `specializedOptions` property. Here, we're explicitly enabling data labels for the pie chart. 
 We also need to set the size of the pie chart by specifying its outer diameter. 
 
-Rendering the chart requires a container to render it in, the chart options, and a call to the Chart Service to get initialize the chart and render it. For more information on chart options, see [vss-web-extension-sdk/typings/charts](https://github.com/microsoft/vss-web-extension-sdk/blob/master/typings/charts.d.ts).
+The chart requires a container, the chart options, and a call to the Chart Service to initialize and render. For more information on chart options, see [vss-web-extension-sdk/typings/charts](https://github.com/microsoft/vss-web-extension-sdk/blob/master/typings/charts.d.ts).
 
 ### Stacked area chart
 
-This sample renders a stacked area chart.This chart type is ideal for comparing a relationship of parts to a whole and highlighting general trends across categories. It is commonly used to compare trends over time. 
+The following sample renders a stacked area chart. This chart type is ideal to compare a relationship of parts to a whole and highlight general trends across categories. It's commonly used to compare trends over time. 
 This sample also specifies a custom color for one of the series being rendered. 
 
 ```JavaScript

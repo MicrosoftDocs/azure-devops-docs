@@ -150,7 +150,7 @@ The Az module has a compatibility mode to help you use existing scripts while yo
 > [!NOTE]
 > You need to install the Az module on your agent machine if you are using private agents.
 
-For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#the-future-of-support-for-azurerm).
+For more information on the Azure PowerShell Az module, see the documentation [here](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-1.4.0&viewFallbackFrom=azps-1.3.0#continued-support-for-azurerm).
 
 ### Resource authorization improvements
 

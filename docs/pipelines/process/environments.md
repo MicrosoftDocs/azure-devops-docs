@@ -12,7 +12,7 @@ ms.date: 05/03/2019
 monikerRange: azure-devops
 ---
 
-# Environment
+# Create and target an environment
 
 [!INCLUDE [include](../_shared/version-team-services.md)]
 
@@ -30,7 +30,8 @@ The advantages of using environments include the following.
 While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, [Kubernetes resource](environments-kubernetes.md) and [Virtual machine resource](environments-virtual-machines.md) types are supported, with the roadmap of environments including support for other resources such as web apps, databases and more.
 
 <a name="creation"></a>
-## Environment creation
+
+## Create an environment
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -48,7 +49,8 @@ While environment at its core is a grouping of resources, the resources themselv
 > You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
 
 <a name="target-from-deployment-job"></a>
-## Targeting an environment from a deployment job
+
+## Target an environment from a deployment job
 
 A [deployment job](deployment-jobs.md) is a collection of steps to be run sequentially. A deployment job can be used to target an entire environment (group of resources) as shown in the following YAML snippet.
 
@@ -72,7 +74,8 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 > If the specified environment doesn't already exist, an empty environment is created using the environment name provided.
 
 <a name="target-resource-from-deployment-job"></a>
-## Targeting a specific resource within an environment from deployment job
+
+## Target a specific resource within an environment from deployment job
 
 It is possible to scope down the target of deployment to a particular resource within the environment as shown below. This allows for recording deployment history on a specific resource within the environment as opposed to recoding the history on all resources in the environment. Also, the steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job as shown in the following example. 
 
@@ -94,6 +97,7 @@ strategy:
 ```
 
 <a name="in-run-details"></a>
+
 ## Environment in run details
 
 All  environments targeted by deployment jobs of a specific run of a pipeline can be found under the *Environments* tab of pipeline run details.
@@ -109,6 +113,7 @@ Currently, manual approval checks are supported on environments.
 For more information, see [Approvals](approvals.md).
 
 <a name="deployment-history"></a>
+
 ## Deployment history within environments
 
 The deployment history view within environments provides the following advantages.

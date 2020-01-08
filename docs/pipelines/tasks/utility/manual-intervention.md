@@ -22,7 +22,7 @@ typically to perform some manual steps or actions, and then continue the automat
 
 ## Demands
 
-Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This task is not supported in a build pipeline.
+Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This task is supported only in classic release pipelines.
 
 ![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
 

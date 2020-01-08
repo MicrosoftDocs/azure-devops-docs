@@ -13,7 +13,7 @@ ms.date: 02/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Variable groups
+# Add & use variable groups
 
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 

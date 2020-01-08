@@ -35,7 +35,7 @@
 - name: Status & security (Azure DevOps Services)
   items: 
   - name: Service status  
-    href: ../user-guide/service-status-info.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+    href: ../user-guide/service-status-info.md
   - name: Azure DevOps data protection
     href: ../organizations/security/data-protection.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Azure DevOps data location

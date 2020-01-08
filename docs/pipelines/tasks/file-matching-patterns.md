@@ -9,7 +9,7 @@ ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 07/03/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -63,8 +63,9 @@ You must define an include pattern before an exclude one. See <a href="#characte
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
 
 ### Slash
-`/` is used as the path separator.
-Even on Windows, use `/` to ensure that the pattern works on any agent.
+`/` is used as the path separator on Linux and macOS.
+Most of the time, Windows agents accept `/`.
+Occasions where the Windows separator (`\`) must be used are documented.
 
 ## Examples
 

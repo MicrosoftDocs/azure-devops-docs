@@ -72,9 +72,9 @@ Some of the key features of the new Wiki include:
 
 ![Wiki menu](_img/08_04_28.png)
 
-- [Offline updates](/azure/devops/project/wiki/add-edit-wiki#clone-your-wiki-repo-and-edit-wiki-pages-offline) of Wiki for power users.
+- [Offline updates](/azure/devops/project/wiki/add-edit-wiki) of Wiki for power users.
 
-Learn more about [getting started with Wiki](/azure/devops/project/wiki/add-edit-wiki#create-your-wiki-and-first-wiki-page). 
+Learn more about [getting started with Wiki](/azure/devops/project/wiki/add-edit-wiki). 
 
 The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](/azure/devops/project/wiki/migrate-extension-wiki-pages).
 
@@ -112,7 +112,7 @@ If you attempt a web-edit in a project with web-editing disabled, you will be no
 
 ![Web editing dialog](_img/08_04_03.png)
 
-This has been developed based on a [related suggestion](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/9699246-quick-code-editing-switch-or-warning).
+This has been developed based on a related suggestion.
 
 ### Identify stale branches
 Keeping your repository clean by deleting branches you no longer need enables teams to find branches they care about and set favorites at the right granularity. However, if you have lots of branches in your repo, it can be hard to figure out which are inactive and can be deleted. We’ve now made it easier to identify “stale” branches (branches that point to commits older than 3 months). To see your stale branches, go to the **Stale** pivot on the **Branches** page.
@@ -172,7 +172,7 @@ Previously if you were using an extension that had build tasks and build summary
 View the sample included in the [Microsoft vsts-extension-samples repository](https://github.com/Microsoft/vsts-extension-samples/blob/master/build-results-enhancer/src/enhancer/status.ts).
 
 ### Variable group support
-Variable groups have been available to use in release definitions, and now they are ready to be used in build definitions too. Learn more about [creating a variable group](https://visualstudio.microsoft.com/docs/build/concepts/library/variable-groups). This has been developed and prioritized based on related suggestions for [project-level build/release variables](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/14515326-project-level-build-release-variables) and [variable groups in build definitions](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/17646697-make-library-variable-groups-available-for-use-in).
+Variable groups have been available to use in release definitions, and now they are ready to be used in build definitions too. Learn more about [creating a variable group](https://visualstudio.microsoft.com/docs/build/concepts/library/variable-groups). This has been developed and prioritized based on related suggestions for project-level build/release variables and variable groups in build definitions.
 
 ### dotnet task supports authenticated feeds, web projects
 The next major version of the __dotnet__ task (2.x) addresses many of your feedback requests and fixes a set of bugs we’ve tracked for a while.

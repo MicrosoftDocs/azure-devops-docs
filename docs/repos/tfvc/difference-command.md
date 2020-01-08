@@ -24,25 +24,27 @@ Compares, and if it is possible, displays differences between two files, files i
 
 To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf diff[erence] itemspec [/version:versionspec] [/type:filetype] 
-    [/format:format [/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] 
-    [/options][/noprompt][/login:username,[password]]
+```
+tf diff[erence] itemspec [/version:versionspec] [/type:filetype] 
+[/format:format [/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] 
+[/options][/noprompt][/login:username,[password]]
+```
 
-&nbsp;
+```
+tf diff[erence] itemspec itemspec2 [/type:filetype] [/format: format] 
+[/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] [/options] [/noprompt][/login:username,[password]]
+```
 
-    tf diff[erence] itemspec itemspec2 [/type:filetype] [/format: format] 
-    [/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] [/options] [/noprompt][/login:username,[password]]
+```
+tf diff[erence] [/shelveset:shelvesetname[;shelvesetowner]] 
+shelveset_itemspec [/type:filetype] 
+[/format: format] [/ignorespace] [/ignoreeol] [/ignorecase] 
+[/recursive] [/options] [/noprompt][/login:username,[password]]
+```
 
-&nbsp;
-
-    tf diff[erence] [/shelveset:shelvesetname[;shelvesetowner]] 
-    shelveset_itemspec [/type:filetype] 
-    [/format: format] [/ignorespace] [/ignoreeol] [/ignorecase] 
-    [/recursive] [/options] [/noprompt][/login:username,[password]]
-
-&nbsp;
-
-    tf diff[erence] /configure
+```
+tf diff[erence] /configure
+```
 
 ## Parameters
 
@@ -166,22 +168,25 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
   The **Unix** output format is constructed in the following way:
 
-          <metadataline>
-      "< " line prefix for lines from the first file
-      "---" line
-      "> " line prefix for lines from the second file
+    ```
+    <metadataline>
+    "< " line prefix for lines from the first file
+    "---" line
+    "> " line prefix for lines from the second file
 
-      <metadataline> can be one of these possibilities:
-      #a#,# -- add lines from line # in file1 into file2 at lines #->#
-      #,#d# -- delete lines from line # -> # in file 1 from file2 at line #
-      #,#c#,# -- change lines from line # -> # in file1 into the lines in file2 at line # -> #
+    <metadataline> can be one of these possibilities:
+    #a#,# -- add lines from line # in file1 into file2 at lines #->#
+    #,#d# -- delete lines from line # -> # in file 1 from file2 at line #
+    #,#c#,# -- change lines from line # -> # in file1 into the lines in file2 at line # -> #
 
-      # signs separated by commas indicate a line range.
-      # signs before the character indicate line numbers in the first file
-      # signs after the character indicate line numbers in the second file
+    # signs separated by commas indicate a line range.
+    # signs before the character indicate line numbers in the first file
+    # signs after the character indicate line numbers in the second file
 
-      /// No end of line marker at the end of the file:
-      /// \ No newline at end of file
+    /// No end of line marker at the end of the file:
+    /// \ No newline at end of file
+    ```
+
   ## Examples
   The following example displays the differences between the local version of 314.cs and the workspace version of 314.cs that is the version of the file that was checked out from the Team Foundation version control server.
 
@@ -189,27 +194,39 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
 The following example displays all files that have been changed in the src folder. Does not display files that have been changed in subfolders of src.
 
-    c:\projects>tf difference src /format:visual
+```
+c:\projects>tf difference src /format:visual
+```
 
 The following example displays the differences between changeset 3 and changeset 8 of 1254.cs.
 
-    c:\projects>tf difference /version:C3~C8 1254.cs
+```
+c:\projects>tf difference /version:C3~C8 1254.cs
+```
 
 The following examples display the differences between the version of 314.cs that belong to the label "release" and the version that belongs to changeset 3200.
 
-    c:\projects>tf difference 314.cs;Lrelease 314.cs;C3200
+```
+c:\projects>tf difference 314.cs;Lrelease 314.cs;C3200
+```
 
 -or-
 
-    c:\projects>tf difference 314.cs;Lrelease~C3200
+```
+c:\projects>tf difference 314.cs;Lrelease~C3200
+```
 
 The following example displays the difference between the versions of e271.cs that a user named Nadia shelved in shelveset PeerCodeReview8 and the *base shelveset version* that is the version upon which she based her changes. Also displays the types of changes pending against e271.cs when Nadia shelved.
 
-    c:\projects> tf difference /shelveset:PeerCodeReview8;Nadia e271.cs
+```
+c:\projects> tf difference /shelveset:PeerCodeReview8;Nadia e271.cs
+```
 
 The following example displays the differences between all files in the PeerCodeReview2 shelveset and the base shelveset version of those files.
 
-    c:\projects> tf difference /shelveset:PeerCodeReview2
+```
+c:\projects> tf difference /shelveset:PeerCodeReview2
+```
 
 ## See Also
 

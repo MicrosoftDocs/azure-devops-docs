@@ -43,7 +43,7 @@ Use this index to quickly access concepts related to work items and information 
 <li><a href="../../user-guide/tools.md" data-raw-source="[Client tools](../../user-guide/tools.md)">Client tools</a></li>
 <li><a href="guidance/cmmi-process.md" data-raw-source="[CMMI process](guidance/cmmi-process.md)">CMMI process</a></li>
 <li><a href="../../reference/customize-work.md" data-raw-source="[Customization process models](../../reference/customize-work.md)">Customization process models</a></li>
-<li><a href="../backlogs/backlogs-boards-plans.md#delivery-plans-display-team-deliverables" data-raw-source="[Delivery plans](../backlogs/backlogs-boards-plans.md#delivery-plans-display-team-deliverables)">Delivery plans</a></li>
+<li><a href="../backlogs/backlogs-boards-plans.md" data-raw-source="[Delivery plans](../backlogs/backlogs-boards-plans.md)">Delivery plans</a></li>
 <li><a href="../../organizations/settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)">Inheritance process model</a></li>
 <li><a href="../../organizations/settings/about-areas-iterations.md" data-raw-source="[Iteration Paths](../../organizations/settings/about-areas-iterations.md)">Iteration Paths</a></li>
 <li><a href="work-item-form-keyboard-shortcuts.md" data-raw-source="[Keyboard shortcuts](work-item-form-keyboard-shortcuts.md)">Keyboard shortcuts</a></li>
@@ -61,7 +61,7 @@ Use this index to quickly access concepts related to work items and information 
 <li><a href="../../reference/customize-work.md" data-raw-source="[Process models](../../reference/customize-work.md)">Process models</a></li>
 <br/>
 <li><a href="../queries/example-queries.md" data-raw-source="[Queries](../queries/example-queries.md)">Queries</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Recycle bin](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Recycle bin</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md#restore" data-raw-source="[Recycle bin](../backlogs/remove-delete-work-items.md#restore)">Recycle bin</a></li>
 <li><a href="../queries/share-plans.md#rich-text-fields" data-raw-source="[Rich text fields](../queries/share-plans.md#rich-text-fields)">Rich text fields</a></li>
 <li><a href="guidance/scrum-process.md" data-raw-source="[Scrum process](guidance/scrum-process.md)">Scrum process</a></li>
 <li><a href="workflow-and-state-categories.md" data-raw-source="[State categories](workflow-and-state-categories.md)">State categories</a></li>
@@ -260,7 +260,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items" data-raw-source="[Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback ](../../project/feedback/get-feedback.md)">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md#restore-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-work-items)">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
@@ -355,7 +355,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items"">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
@@ -439,7 +439,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items"">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
@@ -633,7 +633,7 @@ You customize work item types using the On-premises XML process model. For addit
 <tr>
 <td width="33%">
 <ul>
-<li><a href="../../reference/add-modify-field.md#boolean-field">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
+<li><a href="../../reference/add-modify-field.md">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
 <li><a href="../../reference/add-modify-field.md">Add a custom field </a></li>
 <li><a href="../../reference/add-modify-field.md#picklist">Add a custom pick list</a></li>
 <li><a href="../../reference/add-modify-field.md">Add or modify a field</a></li>

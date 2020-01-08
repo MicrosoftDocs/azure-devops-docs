@@ -68,7 +68,7 @@ To manage test artifacts, you must have the correct permissions and access level
 
 ### Manage test artifacts permissions
 
-You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-work-tracking.md#manage-test-artifacts).
+You must be a member of the Project Administrators group or have Manage Test Plans and Manage Test Suites [permissions](../organizations/security/set-permissions-access-work-tracking.md).
 
 ### Access level
 
