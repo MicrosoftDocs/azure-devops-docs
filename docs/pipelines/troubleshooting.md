@@ -52,7 +52,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ### Overridden YAML trigger setting
 
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#override-yaml-triggers).
 
 ### Using pull request triggers with Azure Repos
 
@@ -338,7 +338,7 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ### My pipeline is failing on a checkout step
 
-If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md#scoped-build-identities) to ensure that your pipeline has access to the repository.
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md) to ensure that your pipeline has access to the repository.
 
 When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 
@@ -478,7 +478,7 @@ VS30063: You are not authorized to access http://<SERVER>:8080/tfs
 
 If the above error is received while configuring the agent, log on to your TFS machine. Start the Internet Information Services (IIS) manager. Make sure **Anonymous Authentication** is enabled.
 
-![iis tfs anonymous authentication enabled](_img/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
+![is TFS anonymous authentication enabled](_img/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
 <h3 id="renew-lock">Agent lost communication</h3>

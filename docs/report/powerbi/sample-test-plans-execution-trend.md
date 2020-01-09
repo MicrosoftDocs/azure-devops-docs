@@ -18,7 +18,11 @@ ms.date: 12/09/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+
+[!INCLUDE [temp](_shared/preview-note.md)]
+ 
+The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
@@ -30,7 +34,6 @@ The report displays a trend chart that summarizes the number and outcome states 
 - **NotApplicable**: Number of test cases 
 - **Blocked**:  Number of test cases blocked from running.  
 - **NotExecuted**: Number of test cases defined but not executed.  
-
 
 ## Questions the report answers
 
@@ -60,7 +63,7 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -84,7 +87,7 @@ in
     Source 
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -153,7 +156,7 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Execution Trend - Fields](_img/odatapowerbi-executiontrend-fields.png)
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. Create a Power BI visualization **Stacked Area Chart**.
 1. Drag and drop **DateSK** in **Axis**.

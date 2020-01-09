@@ -13,7 +13,7 @@ ms.date: 07/30/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Demands
+# Specify demands
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

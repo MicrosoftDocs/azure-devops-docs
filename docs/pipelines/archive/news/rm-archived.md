@@ -815,7 +815,7 @@ to an environment based on the status of multiple
 environments (_join deployments_). Now you can, as
 this video demonstrates.
 
-For more details, see [Parallel forked and joined deployments](../../release/triggers.md#parallel-forked-and-joined-deployments)
+For more details, see [Parallel forked and joined deployments](../../release/triggers.md)
 
 <a name="update-mar15-16"></a>
 ### Mar 15, 2016 Update (Azure Pipelines)

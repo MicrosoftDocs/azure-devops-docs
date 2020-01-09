@@ -65,7 +65,7 @@ Examples:
 
 
 > [!NOTE]   
-> If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md#integrate-repo-to-several-organizations). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
+> If you have connected the same GitHub repo to projects defined in two or more Azure DevOps organizations, you may see unexpected **AB#** mention linking. For details, see [Troubleshoot GitHub & Azure Boards integration](troubleshoot-github-connection.md). For this reason, we recommend that you only connect a GitHub repo to projects defined in a single Azure DevOps organization. 
 
 
 <a id="link-existing"> </a> 

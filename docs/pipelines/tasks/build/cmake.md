@@ -9,7 +9,7 @@ ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.manager: mijacobs
 ms.author: whjenkin
 author: wnjenkin
-ms.date: 08/10/2016
+ms.date: 12/17/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -40,33 +40,30 @@ cmake
 ## Arguments
 
 <table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Working Directory</td>
-<td>
-<p>Working directory when CMake is run. The default value is <code>build</code>.</p>
-<p>If you specify a relative path, then it is relative to your repo. For example, if you specify <code>build</code>, the result is the same as if you specified <code>$(Build.SourcesDirectory)\build</code>.</p>
-<p>You can also specify a full path outside the repo, and you can use <a href="../../build/variables.md" data-raw-source="[variables](../../build/variables.md)">variables</a>. For example: <code>$(Build.ArtifactStagingDirectory)\build</code></p>
- <p>If the path you specify does not exist, CMake creates it.</p>
-</td>
-</tr>
-<tr>
-<td>cmakeArgs</td>
-<td>
-Arguments that you want to pass to CMake.
-</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
+   <thead>
+      <tr>
+         <th>Argument</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tr>
+      <td><code>cwd</code><br/>Working Directory</td>
+      <td>
+         <p>(Optional) Working directory when CMake is run. The default value is <code>build</code>.</p>
+         <p>If you specify a relative path, then it is relative to your repo. For example, if you specify <code>build</code>, the result is the same as if you specified <code>$(Build.SourcesDirectory)\build</code>.</p>
+         <p>You can also specify a full path outside the repo, and you can use <a href="../../build/variables.md" data-raw-source="[variables](../../build/variables.md)">variables</a>. For example: <code>$(Build.ArtifactStagingDirectory)\build</code></p>
+         <p>If the path you specify does not exist, CMake creates it.</p><br/>Default value: build<br/>Argument aliases: <code>workingDirectory</code>
+      </td>
+   </tr>
+   <tr>
+      <td><code>cmakeArgs</code><br/>Arguments</td>
+      <td>
+         (Optional) Arguments that you want to pass to CMake.
+      </td>
+   </tr>
+   <tr>
+      <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
+   </tr>
 </table>
 
 ## Open source

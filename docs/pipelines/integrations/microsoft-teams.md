@@ -7,17 +7,22 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: bijuv
 ms.author: atinb
 author: atinb
-ms.date: 09/19/2019
+ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
  
 # Azure Pipelines with Microsoft Teams
+
+[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+
 
 If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018)
  to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](_img/integrations-teams/notifications-teams.png)
+
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
 
 ## Add Azure Pipelines app to your team
 
@@ -37,7 +42,20 @@ Once the app is installed in your team, you can connect the app to the pipelines
 > ![Sign in prompt image2 ](_img/integrations-teams/sign-in2-teams.png)
 
 
-To start monitoring a pipeline, use the following slash command inside a channel:
+To start monitoring all pipelines in a project, use the following command inside a channel:
+
+```
+@azure pipelines subscribe [project url]
+```
+The project URL can be to any page within your project (except URLs to pipelines).
+
+For example:
+
+```
+@azure pipelines subscribe https://dev.azure.com/myorg/myproject/
+```
+
+You can also monitor a specific pipeline using the following command:
 
 ```
 @azure pipelines subscribe [pipeline url]
@@ -114,7 +132,8 @@ The app supports all of the checks and approval scenarios present in the Azure P
 
 To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline id or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
-![Pic: URL unfurling](./_img/integrations-teams/compose-extension.png)
+> [!div class="mx-imgBorder"]
+> ![URL unfurling](./_img/integrations-teams/compose-extension.png)
 
 
 ## Previews of pipeline URLs
@@ -122,12 +141,46 @@ To help users search and share information about pipelines, Azure Pipelines app 
 When a user pastes a pipeline URL, a preview is shown similar to that in the following image. This helps to keep pipeline related conversations relevant and accurate. Users can choose between compact and expanded cards.
 
 > [!div class="mx-imgBorder"]
-![Pic: URL unfurling](./_img/integrations-teams/build-url-unfurling-teams.png)
+> ![URL unfurling](./_img/integrations-teams/build-url-unfurling-teams.png)
 
 > [!div class="mx-imgBorder"]
-![Pic: URL unfurling](./_img/integrations-teams/release-url-unfurling-teams.png)
+> ![URL unfurling](./_img/integrations-teams/release-url-unfurling-teams.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
+
+
+## Remove subscriptions and pipelines from a channel
+
+If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
+
+	```
+	@azure pipelines unsubscribe all [project url]
+	```
+
+	For example:
+
+	```
+	@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
+	```
+
+This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
+
+> [!IMPORTANT] 
+> Only project administrators can run this command.
+
+## Threaded notifications
+
+To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular run of a pipeline will be linked together.
+
+The following example shows the compact view of linked notifications. 
+
+> [!div class="mx-imgBorder"]
+> ![Compact thread](./_img/integrations-teams/threads-pipelines-compact-view.png)
+
+When expanded, you can see all the of the linked notifications, as shown in the following example.
+
+> [!div class="mx-imgBorder"]
+> ![Expanded thread](./_img/integrations-teams/threads-pipelines-expanded-view.png)
 
 ## Commands reference
 
@@ -135,12 +188,13 @@ Here are all the commands supported by the Azure Pipelines app:
 
 | Slash command        | Functionality  |
 | -------------------- |----------------|
-| @azure pipelines subscribe [pipeline url]      | Subscribe to a pipeline to receive notifications | 
+| @azure pipelines subscribe [pipeline url/ project url]      | Subscribe to a pipeline or all pipelines in a project to receive notifications| 
 | @azure pipelines subscriptions      | Add or remove subscriptions for this channel | 
 | @azure pipelines feedback | Report a problem or suggest a feature |
 | @azure pipelines help     | Get help on the slash commands |
 | @azure pipelines signin  | Sign in to your Azure Pipelines account |
 | @azure pipelines signout  | Sign out from your Azure Pipelines account |
+| @azure pipelines unsubscribe all [project url] | Remove all pipelines (belonging to a project) and their associated subscriptions from a channel |
 
 
 >[!NOTE]
@@ -164,5 +218,8 @@ Select the `Sign in` button and you'll be redirected to a consent page like the 
 > [!div class="mx-imgBorder"]
 > ![Consent to the requested app permissions](_img/troubleshooting/consent-page-teams.png)
 
-If these steps don't resolve your authentication issue, please reach out to us at `AzureDevOpsTeamsApps@microsoft.com`.
+If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
+## Related articles
+- [Azure Boards with Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+- [Azure Repos with Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
