@@ -52,9 +52,6 @@
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
-    - name: Web portal navigation
-      tocHref: /azure/devops/project/navigation/
-      topicHref: /azure/devops/project/navigation/index
     - name: Status & security 
       tocHref: /azure/devops/organizations/user-guide/
       topicHref: /azure/devops/user-guide/service-status-info
@@ -76,7 +73,7 @@
     items:
     items:
     - name: User preferences
-      tocHref: /azure/devops/project/navigation/
+      tocHref: /azure/devops/organizations/user-guide/
       topicHref: /azure/devops/organizations/settings/set-your-preferences
     - name: Organizations
       tocHref: /azure/devops/organizations/accounts/
