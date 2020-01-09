@@ -18,7 +18,7 @@
   - name: SSH public keys
     href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Alternate credentials
-    href: /azure/devops/repos/git/auth-overview#alternate-credentials?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+    href: /azure/devops/repos/git/auth-overview?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json#ssh-key-authentication
   - name: Manage authorizations
     href: /azure/devops/organizations/settings/manage-authorizations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
@@ -40,9 +40,9 @@
     - name: Delete organization
       href: ./accounts/delete-your-organization.md
     - name: Recover organization
-      href: ./accounts/recover-your-vsts-organization.md
+      href: ./accounts/recover-your-organization.md
   - name: Add and manage banners
-    href: ./settings/manage-banners.md 
+    href: /azure/devops/organizations/settings/manage-banners?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Troubleshooting
     items:
     - name: Create organization

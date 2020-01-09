@@ -41,15 +41,15 @@
   - name: How-to Guides
     items:    
     - name: Configure team tools
-      href: ../organizations/settings/manage-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Select backlog levels
-      href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/select-backlog-navigation-levels?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Show bugs on backlogs & boards
-      href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/show-bugs-on-backlog?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Set working days
-      href: ../organizations/settings/set-working-days.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/set-working-days?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Set team favorites
-      href: ../project/navigation/set-favorites.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project

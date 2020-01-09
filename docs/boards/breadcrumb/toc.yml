@@ -30,15 +30,9 @@
     - name: Plans & Agile at Scale
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boardsplans/index
-    - name: Add & manage teams
-      tocHref: /azure/devops/organizations/settings/
-      topicHref: /azure/devops/b/organizations/projects/about-projects
     - name: Excel, Project, PowerPoint
       tocHref: /azure/devops/boards/backlogs/office/
       topicHref: /azure/devops/boards/backlogs/office/track-work
-    - name: Add & manage teams
-      tocHref: /azure/devops/organizations/settings/
-      topicHref: /azure/devops/organizations/projects/about-projects
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/
       topicHref: /azure/devops/boards/extensions/index
