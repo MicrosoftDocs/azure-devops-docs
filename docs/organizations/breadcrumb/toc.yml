@@ -30,9 +30,6 @@
     - name: Process
       tocHref: /azure/devops/boards/work-items/guidance/
       topicHref: /azure/devops/boards/work-items/guidance/choose-process
-    - name: Pipelines 
-      tocHref: /azure/devops/pipelines/
-      topicHref: /azure/devops/pipelines/agents/pools-queues
     - name: Repos (Code)
       tocHref: /azure/devops/repos/git/
       topicHref: /azure/devops/repos/git/create-new-repo
