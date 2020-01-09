@@ -264,7 +264,7 @@ ID    Name                             Is Hosted    Pool Type
 
 > [!TIP]
 >
-> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up.
+> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see [Restart Windows agent](), [RestartLinux agent](), and [Restart Mac agent]().
 
 <h2 id="communication">Communication</h2>
 
