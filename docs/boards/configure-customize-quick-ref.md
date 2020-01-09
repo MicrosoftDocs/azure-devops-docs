@@ -17,24 +17,19 @@ ms.date: 01/09/2020
 
 # Configuration and customization of Azure Boards 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
-
-::: moniker range="azure-devops"
+[!INCLUDE [temp](_shared/version-vsts-tfs-all-versions.md)]
 
 You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../user-guide/project-admin-tutorial.md).
 
-> [!NOTE]  
-> You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
+## Who can make changes? 
 
-::: moniker-end
+You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](..//organizations/security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../organizations/security/access-levels.md#stakeholder-access). 
 
-::: moniker range="<= azure-devops-2019"
 
 You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 
-::: moniker-end  
 
 Organized by functional services.  
 User - ![ ](_img/icons/profile.png)  
@@ -47,7 +42,7 @@ Collection/Organization
 
 ## Configuration 
 
-[!INCLUDE [team-configuration](.includes/team-configuration.md)]
+[!INCLUDE [team-configuration](includes/team-configuration.md)]
 
 
 ## Customization
