@@ -1,11 +1,13 @@
 - name: Azure Boards Documentation
   href: index.yml
 - name: "What is Azure Boards?"
-  href: get-started/what-is-azure-boards.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: get-started/what-is-azure-boards.md
 - name: "Backlogs, boards, & plans"
-  href: backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  href: backlogs/backlogs-boards-plans.md
 - name: Best tool for the job
-  href: work-items/best-tool-add-update-link-work-items.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: work-items/best-tool-add-update-link-work-items.md
+- name: Work tracking limits
+  href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub
@@ -25,19 +27,19 @@
 - name: Add and manage teams
   items:
   - name: When to add a team or project
-    href: ../organizations/projects/about-projects.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/organizations/projects/about-projects?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Quickstarts
     items:
     - name: Define area paths & assign to a team 
-      href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Define iteration (sprints) & configure team iterations 
-      href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add a team
-      href: ../organizations/settings/add-teams.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add a team administrator
-      href: ../organizations/settings/add-team-administrator.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/add-team-administrator?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add users to a project or team 
-      href: ../organizations/security/add-users-team-project.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/security/add-users-team-project?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: How-to Guides
     items:    
     - name: Configure team tools
@@ -88,6 +90,10 @@
     href: ./integrations/boards-teams.md
   - name: Dependency Tracker
     href: ./extensions/dependency-tracker.md      
+  - name: WIQL Editor 
+    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
+  - name: Enhanced Export 
+    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
   - name: Project Server Integration (Deprecated)
     href: ../reference/tfs-ps-sync/toc.yml
 - name: REST API Reference
