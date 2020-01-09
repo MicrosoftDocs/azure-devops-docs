@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/13/2019
+ms.date: 01/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -227,6 +227,8 @@ To run the agent interactively:
    ./run.sh
    ```
 
+  To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
+
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
@@ -380,6 +382,10 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 ### How do I run the agent behind a web proxy?
 
 [Run the agent behind a web proxy](proxy.md)
+
+### How do I restart the agent
+
+If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a systemd service, follow the steps to [Stop](#stop) and then [Start](#start) the agent.
 
 ::: moniker range="azure-devops"
 
