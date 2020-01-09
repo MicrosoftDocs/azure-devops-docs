@@ -213,9 +213,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 [!INCLUDE [include](_shared/v2/unix-authentication-types.md)]
 
-## Run the agent
-
-### Run interactively
+## Run interactively
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
@@ -229,10 +227,12 @@ To run the agent interactively:
    ./run.sh
    ```
 
+  To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
+
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
-### Run as a systemd service
+## Run as a systemd service
 
 If your agent is running on these operating systems you can run the agent as a systemd service:
 
@@ -382,6 +382,10 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 ### How do I run the agent behind a web proxy?
 
 [Run the agent behind a web proxy](proxy.md)
+
+### How do I restart the agent
+
+If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a systemd service, follow the steps to [Stop](#stop) and then [Start](#start) the agent.
 
 ::: moniker range="azure-devops"
 

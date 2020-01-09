@@ -264,7 +264,7 @@ ID    Name                             Is Hosted    Pool Type
 
 > [!TIP]
 >
-> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see [Run Windows agent](v2-windows.md#run-the-agent), [Run Linux agent](v2-linux.md#run-the-agent), and [Run Mac agent](v2-osx.md).
+> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see [Run Windows agent](v2-windows.md#run-the-agent), [Run Linux agent](v2-linux.md#how-do-i-restart-the-agent), and [Run Mac agent](v2-osx.md#how-do-i-restart-the-agent).
 
 <h2 id="communication">Communication</h2>
 
