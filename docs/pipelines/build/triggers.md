@@ -503,7 +503,7 @@ schedules:
     - master
 ```
 
-The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to navigate the Azure DevOps portal. 
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to navigate the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
 
 ![Scheduled runs](_img/triggers/scheduled-runs.png)
 
