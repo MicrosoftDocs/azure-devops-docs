@@ -490,6 +490,21 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. After you create or update your scheduled triggers, you can verify them using this view.
 
+![Scheduled runs menu](_img/triggers/scheduled-runs-menu.png)
+
+In this example, the scheduled runs for the following schedule is displayed.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+The **Scheduled runs** windows displays the times converted to your local time zone.
+
 ![Scheduled runs](_img/triggers/scheduled-runs.png)
 
 Scheduled triggers are evaluated for a branch when the following events occur.
