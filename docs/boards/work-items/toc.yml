@@ -113,7 +113,7 @@
     href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayName: rich text, attach files, storyboard, social tools
   - name: Go mobile
-    href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/project/navigation/mobile-work?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
     displayName: export, cvs 
