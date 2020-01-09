@@ -34,7 +34,7 @@
       tocHref: /azure/devops/pipelines/
       topicHref: /azure/devops/pipelines/agents/pools-queues
     - name: Repos (Code)
-      tocHref: /azure/devops/repos/
+      tocHref: /azure/devops/repos/git/
       topicHref: /azure/devops/repos/git/create-new-repo
     - name: Test
       tocHref: /azure/devops/test/
