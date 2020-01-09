@@ -279,6 +279,10 @@ The help provides information on authentication alternatives and unattended conf
 
 [Run the agent behind a web proxy](proxy.md)
 
+### How do I restart the agent
+
+If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, restart the agent by following the steps in [Run as a service](#run-as-a-service).
+
 ::: moniker range="azure-devops"
 ### How do I set different environment variables for each individual agent?
 
