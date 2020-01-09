@@ -34,7 +34,7 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 <tr><td>scriptType</td><td>(Optional) Type of the script: filePath or inlineScript</td></tr>
 <tr><td>scriptPath</td><td>(Optional) Path of the script. Should be fully qualified path or relative to the default working directory.</td></tr>
 <tr><td>inline</td><td>(Optional) Enter the script to execute.</td></tr>
-<tr><td>scriptArguments</td><td>(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters.</td></tr>
+<tr><td>scriptArguments</td><td>(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters. Not applicable for inline script option.</td></tr>
 <tr><td>errorActionPreference</td><td>(Optional) Select the value of the ErrorActionPreference variable for executing the script.</td></tr>
 <tr><td>failOnStandardError</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream.</td></tr>
 <tr><td>azurePowerShellVersion</td><td>(Required) In case of Microsoft-hosted agents, the supported Azure PowerShell version.
