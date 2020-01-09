@@ -23,8 +23,8 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
 
    `sudo apt-get install -y libunwind8 libcurl3`
 
-   The libraries this command installs are pre-requisites for installing the build and release agent
-   onto a Ubuntu 16.04 VM. Pre-requisites for other versions of Linux can be found [here](../../agents/v2-linux.md).
+   The libraries this command installs are Prerequisites for installing the build and release agent
+   onto a Ubuntu 16.04 VM. Prerequisites for other versions of Linux can be found [here](../../agents/v2-linux.md).
 
 1. Open the Azure Pipelines web portal, navigate to **Azure Pipelines**,
    and choose **Deployment groups**.

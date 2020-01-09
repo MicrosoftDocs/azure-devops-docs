@@ -19,12 +19,9 @@ monikerRange: azure-devops
 > [!NOTE]
 > To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
 
-
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment.
 
-## Overview
-
-Deployment jobs provide some benefits:
+Deployment jobs provide the following benefits:
 
  - **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
