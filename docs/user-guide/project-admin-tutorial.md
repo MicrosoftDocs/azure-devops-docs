@@ -126,7 +126,7 @@ If you support several products, you can assign work items by feature area by de
 
 ## Customize work-tracking processes
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
   
 All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
