@@ -56,8 +56,6 @@ This typically occurs when the service connection used in the pipeline has insuf
 
 To resolve this issue, ensure the service principle/ authentication credentials have the required permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
-   also contains more information about using service principal authentication.
 
 ## Samples
 
