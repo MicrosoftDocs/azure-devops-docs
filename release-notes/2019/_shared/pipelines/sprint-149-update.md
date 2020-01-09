@@ -55,7 +55,7 @@ Until now, source providers like GitHub, Azure Repos, and Bitbucket Cloud were s
 
 ### GitHub comments trigger optimizations
 
-We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#trigger-builds-using-github-pull-request-comments). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
+We improved the experience for teams who use GitHub pull request comments to trigger builds. Usually for security, these teams don’t want to automatically build pull requests. Instead, they want a team member to review the pull request and once it’s deemed safe, trigger the build with a [pull request comment](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops#comment-triggers). A new setting keeps this option while still allowing automatic pull request builds _only_ for team members.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../_img/149_07.png)

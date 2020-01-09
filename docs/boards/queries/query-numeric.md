@@ -328,7 +328,7 @@ The following table describes the activity-based and numeric fields that you can
 
 #### Notes:
 
-1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
+1.  To change the menu selection: for cloud services or an Inherited process, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md); and for On-premises XML process, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md).  
 2.  The values displayed in the [Capacity page](../sprints/set-capacity.md) for **Activity** (Agile or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.  
 3.  To change the ProcessConfiguration field assignment (on-premises only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 

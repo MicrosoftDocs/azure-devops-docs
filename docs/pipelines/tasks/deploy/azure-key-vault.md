@@ -26,7 +26,7 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
 ## Prerequisites
 
-The task has the following pre-requisites:
+The task has the following Prerequisites:
 
 * An Azure subscription linked to Azure Pipelines or Team Foundation Server using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 

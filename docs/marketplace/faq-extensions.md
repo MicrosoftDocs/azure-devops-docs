@@ -16,7 +16,7 @@ ms.topic: conceptual
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
 ::: moniker range="azure-devops"
 

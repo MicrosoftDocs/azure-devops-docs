@@ -18,19 +18,20 @@ ms.date: 08/07/2019
 
 [!INCLUDE [temp](../_shared/version-azure-devops.md)]
 
-This article shows you how to display the burndown of User Stories for the current sprint. The following image shows a burndown both by Story Points and User Stories count.
+This article shows you how to display the current sprint's burndown of User Stories. The following example shows a burndown of both a sum of Story Points and a count of User Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![sprint burndown by total story points and count of user stroies](_img/odatapowerbi-sprintburndown-report.png)
+> ![sprint burndown by total story points and count of user stories](_img/odatapowerbi-sprintburndown-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
 ## Goal
+
 Burndown User Stories in the current Sprint
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -55,7 +56,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -95,7 +96,7 @@ The following table describes each part of the query.
 <tr><td><code>$apply=filter(</code></td><td>Start filter()</td><tr>
 <tr><td><code>WorkItemType eq 'User Story'</code></td><td>Burndown on User Stories</td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code></td><tr>
-<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
+<tr><td><code>and StateCategory ne 'Completed'</code></td><td>Filters out items that are completed. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
 <tr><td><code>and DateValue ge Iteration/StartDate</code></td><td>Begin trend at Iteration start.</td><tr>
 <tr><td><code>and DateValue le Iteration/EndDate</code></td><td>End trend at Interation end.</td><tr>
 <tr><td><code>and Iteration/StartDate le now()</code></td><td>Select current Iteration.</td><tr>
@@ -126,30 +127,30 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-sprintburndown-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Clustered column chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "TotalStoryPoints" to **Values**
 1. Add the field "Count" to **Values**
 
 The example report, which displays burndown on both Story Points and Count of Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![sprint burndown by total story points and count of user stroies](_img/odatapowerbi-sprintburndown-report.png)
+> ![sprint burndown by total story points and count of user stories](_img/odatapowerbi-sprintburndown-report.png)
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
 
 ## Additional queries
 
-Additional queries that can be used to create different, but similar reports. You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -174,7 +175,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -201,7 +202,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 You may want to view a burndown of all the sprints in a single report. These queries pulls in sprint burndowns (by story points) for all the sprints since the beginning of the year 2019.
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -225,7 +226,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -252,7 +253,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Burndown by Tasks' Remaining Work
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -278,7 +279,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

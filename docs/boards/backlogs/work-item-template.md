@@ -136,7 +136,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
 
 4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
 
-    You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
+    You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
 ::: moniker-end
 
@@ -592,7 +592,7 @@ For example, the following syntax specifies a work item task with title *TaskTit
 > [!TIP] 
 > There is a 2000 character limit imposed by some browser clients. 
 
-You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
+You can save the URL as a text file or add the URL to a dashboard or web page as a hyperlink. 
 
 
 ## Q & A

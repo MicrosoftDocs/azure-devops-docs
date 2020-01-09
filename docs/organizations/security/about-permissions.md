@@ -191,7 +191,7 @@ You use the [web portal administration context](../../organizations/security/add
 |                        [Work item tags](permissions.md#tags)                        |                                     |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
 |                           [Alerts](permissions.md#alerts)                           |                                     |                                        | ![check mark](../../_img/check.png) |                                     |                                     |
 |                    [Releases](permissions.md#release_management)                    | ![check mark](../../_img/check.png) |                                        |                                     |                                     |                                     |
-|                        [Lab Management](permissions.md#lab)                         |                                     |                                        |                                     |                                     | ![check mark](../../_img/check.png) |
+|                        [Lab Management](permissions.md)                         |                                     |                                        |                                     |                                     | ![check mark](../../_img/check.png) |
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
 ## Setting permissions for SQL Server reports 

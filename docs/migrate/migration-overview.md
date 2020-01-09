@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/13/2018
+ms.date: 12/16/2019
 ---
 
 # Migrate data from Azure DevOps Server to Azure DevOps Services  
@@ -69,10 +69,10 @@ In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport
 
 ### Import process 
 
-* [Validating a collection for import](migration-import.md#validating-a-collection)
-* [Preparing a collection for import](migration-import.md#generating-import-files)
-* [Before import steps](migration-import.md#getting-ready-to-import)
-* [Run an Import](migration-import.md#run-an-import)
+* [Validate a collection for import](migration-import.md#validate-a-collection)
+* [Prepare a collection for import](migration-import.md#generate-import-files)
+* [Prepare for import](migration-import.md#prepare-import)
+* [Run an import](migration-import.md#run-an-import)
 * [Post import steps](migration-post-import.md)
 
 ### Troubleshooting 

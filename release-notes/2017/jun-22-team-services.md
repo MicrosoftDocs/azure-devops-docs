@@ -124,7 +124,7 @@ Read more about git tags at the [Microsoft DevOps blog](https://blogs.msdn.micro
 
 ## Export and import build definitions
 
-Build definitions are implemented internally as .json files, so you can see details on changes in the file’s history. You can already clone and make templates from your build definitions, but many users have wanted to take a copy of their CI build logic and reuse it in another team project. In fact it’s been a [top-ten request on UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145254-ci-build).
+Build definitions are implemented internally as .json files, so you can see details on changes in the file’s history. You can already clone and make templates from your build definitions, but many users have wanted to take a copy of their CI build logic and reuse it in another team project. In fact it’s been a top-ten request on UserVoice.
 
 We’re pleased to announce that now you can do it!
 
@@ -205,7 +205,7 @@ Package URLs now work with the package name and version, rather than using GUIDs
 
 ![Friendly URI](_img/06_22_04.png)
 
-You can now hide deleted package versions from all feed users (no more strikethrough packages!), in response to [this UserVoice suggestion](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/17719306-add-ui-toggle-to-hide-show-packages-that-have-been).
+You can now hide deleted package versions from all feed users (no more strikethrough packages!), in response to a UserVoice suggestion.
 
 ![hide](_img/06_22_05.png)
 

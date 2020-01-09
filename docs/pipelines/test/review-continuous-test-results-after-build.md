@@ -17,9 +17,6 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-<a name="prerequisites"></a>  
-<a name="testreporting"></a>
-
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
@@ -88,9 +85,9 @@ Azure DevOps also provides other ways to surface the test information:
 * The [Dashboard](../../report/dashboards/dashboards.md) provides visibility of your team's progress.
   Add one or more widgets that surface test related information:
 
-  - [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget)
-  - [Test results trend](../../report/dashboards/widget-catalog.md#test-results-widget)
-  - [Deployment status](../../report/dashboards/widget-catalog.md#deployment-status-widget)
+  - [Requirements quality](../../report/dashboards/widget-catalog.md)
+  - [Test results trend](../../report/dashboards/widget-catalog.md)
+  - [Deployment status](../../report/dashboards/widget-catalog.md)
   
 * [Test analytics](test-analytics.md) provides rich insights into test results measured over a period of time.
   It can help identify problematic areas in your test by providing data such as the top failing tests, and more.
@@ -296,7 +293,7 @@ The following features are not available for inferred test reports:
 > If you have configured a non-default console output for your test runner, or you are using a custom reporter,
 > Azure DevOps will not be able to infer the test results. It can only infer the results from the [default](https://mochajs.org/#spec) reporter. 
 
-## See also
+## Related articles 
 
 * [Analyze test results](test-analytics.md)
 * [Trace test requirements](requirements-traceability.md)

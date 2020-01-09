@@ -47,7 +47,7 @@ To add a user to the team administrator role, see <a href="../../organizations/s
 <li><a href="#set-permissions-area-path" data-raw-source="[Modify work items under an area path](#set-permissions-area-path)">Modify work items under an area path</a></li>
 <li><a href="#set-permissions-area-path" data-raw-source="[Create and edit nodes under an area path or iteration path](#set-permissions-area-path)">Create and edit nodes under an area path or iteration path</a></li>
 <li><a href="#work-item-queries" data-raw-source="[Define and edit queries or query folders](#work-item-queries)">Define and edit queries or query folders</a></li>
-<li><a href="#plan-permissions" data-raw-source="[Define and edit Delivery Plans](#plan-permissions)">Define and edit Delivery Plans</a></li>
+<li>Define and edit Delivery Plans</li>
 </ul>
 </td>
 </tr>
@@ -59,7 +59,7 @@ To add a user to the team administrator role, see <a href="../../organizations/s
 <li><a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[Delete and restore work items](../../boards/backlogs/remove-delete-work-items.md)">Delete and restore work items</a></li>
 <li><a href="#move-delete-permissions" data-raw-source="[Move work items out of a project](#move-delete-permissions)">Move work items out of a project</a></li>
 <li><a href="#move-delete-permissions" data-raw-source="[Permanently delete work items](#move-delete-permissions)">Permanently delete work items</a></li>
-<li><a href="#delete-test-permissions" data-raw-source="[Delete test artifacts](#delete-test-permissions)">Delete test artifacts</a></li>
+<li>Delete test artifacts</li>
 <li>Edit shared work item queries</li>
 <li>Add teams and team administrators</li>
 <li>Create and manage area and iteration paths</li>

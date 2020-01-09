@@ -120,7 +120,9 @@ The **Changeset Details** view in Team Explorer has links to perform the followi
 
 To find a changeset from the [command prompt](use-team-foundation-version-control-commands.md):
 
-    c:\users\jamal\workspaces\fabrikam>tf changeset
+```
+c:\users\jamal\workspaces\fabrikam>tf changeset
+```
 
 To view or modify changesets and to learn about other options, see [Changeset Command](changeset-command.md).
 

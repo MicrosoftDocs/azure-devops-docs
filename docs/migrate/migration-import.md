@@ -1,19 +1,19 @@
-﻿---
-title: Migrate from Azure DevOps Server to Azure DevOps
+---
+title: Import migrate process from on-premises to Azure DevOps
 titleSuffix: Azure DevOps
-description: Walks through the steps from preparing a collection to getting it uploaded for import
+description: How to guide for preparing an on-premises collection to importing it to the cloud
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
-ms.date: 04/13/2018
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
+ms.date: 12/16/2019
 ---
 
-# Import
+# Validate and import processes
 
 [!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
 
@@ -28,71 +28,78 @@ monikerRange: '>= tfs-2013'
 
 This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
 
-## Validating a collection
+<a id="validate-collection" />
 
-Now that you've confirmed you're on the latest version of Azure DevOps Server the next step is to validate each collection you wish to migrate to Azure DevOps Services. 
-Validate will examine a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
-Running a validation is done through the data migration tool. To start, take a copy of the [data migration tool](https://aka.ms/AzureDevOpsImport) and copy it onto one of your 
-Azure DevOps Server Application Tiers (AT). Once there you can unzip it. The tool can also be run from the a different machine without Azure DevOps Server installed as long as the PC can connect to the Azure DevOps Server instance's configuration database - example below.
+## Validate a collection
 
+Now that you've confirmed you're on the latest version of Azure DevOps Server, your next step is to validate each collection that you want to migrate to Azure DevOps Services. 
+The validate step examines a variety of aspects in your collection, including, but not limited to: size, collation, identity, and processes. 
+You run validation using the data migration tool. To start, copy the [data migration tool](https://aka.ms/AzureDevOpsImport) tool onto one of your 
+Azure DevOps Server application tiers (AT). Then, unzip the tool. You can also run the tool from a different machine without Azure DevOps Server installed as long as the PC can connect to the Azure DevOps Server instance's configuration database. An example is shown below.
 
-To get started, open a command prompt on the server and CD to the path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
+1. Open a command prompt on the server and CD to the path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the top level help and guidance:
 
-```cmdline
-Migrator /help
-```
+	```cmdline
+	Migrator /help
+	```
 
-For this step, we'll be focusing on the validate command. To see the help text for that command simply run:
+2. View the help text for the command:
 
-```cmdline
-Migrator validate /help 
-```
+	```cmdline
+	Migrator validate /help 
+	```
 
-Since this is our first time validating a collection we'll keep it simple. Your command should have the following structure:
+3. Since this is our first time validating a collection we'll keep it simple. Your command should have the following structure:
 
-```cmdline
-Migrator validate /collection:{collection URL}
-```
+	```cmdline
+	Migrator validate /collection:{collection URL}
+	```
 
-For example, to run against the default collection the command would look like:
+	For example, to run against the default collection the command would look like:
 
-```cmdline
-Migrator validate /collection:http://localhost:8080/DefaultCollection
-```
+	```cmdline
+	Migrator validate /collection:http://localhost:8080/DefaultCollection
+	```
 
-Running it from a machine other than the Azure DevOps Server requires the /connectionString parameter. The connection string parameter is a pointer to your Azure DevOps Server configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
+4. Running the tool from a machine other than the Azure DevOps Server requires the **/connectionString** parameter. The connection string parameter points to your Azure DevOps Server configuration database. As an example, if the validate command was being run by the Fabrikam corporation the command would look like:
 
-```cmdline
-Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
-```
+	```cmdline
+	Migrator validate /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
+	```
 
-It's important to note that the data migration tool **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
+	It's important to note that the data migration tool **DOES NOT** edit any data or structures in the collection. It only reads the collection to identify issues. 
 
-Once the validation is complete you'll be left with a set of log files and a set of results printed to the command prompt screen. 
+5.	Once the validation is complete you'll be left with a set of log files and a set of results printed to the command prompt screen. 
 
-![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
+	![The data migration tool validate output](_img/migration-import/tfsmigratorConsole.png)
 
+If all of the validations pass, you can move onto the next step of the import process. If the data migration tool flagged any errors, you'll need to correct them before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
 
-If all of the validations pass, you are ready to move onto the next step of the import process. If the data migration tool flagged any errors, they will need to be corrected before moving on. See [troubleshooting](migration-troubleshooting.md) for guidance on correcting validation errors. 
+### Import log files  
 
-
-When you open up the log directory you will notice that there are several logging files. 
+When you open up the log directory you'll notice that there are several logging files. 
 
 ![Logging files generated by the data migration tool](_img/migration-import/loggingFiles.png)
 
-The log titled ```DataMigrationTool.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
+The log file titled ```DataMigrationTool.log``` is going to be the main log which contains details on everything that was run. To make it easier to narrow down on specific areas, 
 a log is generated for each major validation operation. For example, if TfsMigrator had reported an error in the "Validating Project Processes" step, then one can 
 simply open the ```ProjectProcessMap.log``` file to see everything that was run for that step instead of having to scroll through the overall log. 
 The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to import your project processes to use the [inherited model](migration-processtemplates.md). If you don't want to use the new inherited model then the errors in this file will not prevent you from doing an import to Azure DevOps Services and can be ignored. 
 
-## Generating import files
-By this point you will have run the data migration tool *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
+## Generate import files
+
+By this point you will have run the data migration tool **validate** against the collection and it is returning "All collection validations passed". Before you take a collection offline to migrate, you need to generate the import files. Upon running the prepare step, you generate two import files: 
+
+- `IdentityMapLog.csv` which outlines your identity map between Active Directory (AD) and Azure Active Directory (Azure AD)
+- `import.json` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare command
 
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+The **prepare** command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to Azure AD to find each identity's match. Your company needs to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). 
 
-Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
+If directory synchronization is setup, the data migration tool should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+
+Unlike the **validate** command, prepare **DOES** require an internet connection as it needs to reach out to Azure AD in order to populate the identity map log file. If your Azure DevOps Server instance doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your Azure DevOps Server instance and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
 ```cmdline
 Migrator prepare /help
@@ -115,13 +122,13 @@ The connection string parameter is a pointer to your Azure DevOps Server instanc
 Migrator prepare /collection:http://fabrikam:8080/DefaultCollection /tenantDomainName:fabrikam.OnMicrosoft.com /region:{region} /connectionString:"Data Source=fabrikam;Initial Catalog=Configuration;Integrated Security=True"
 ```
 
-Upon executing this command, the data migration tool will run a complete validate to ensure that nothing has changed with your collection since the last full validate. 
-If any new issues are detected, then the import files will not be generated. Shortly after the command has started running, an Azure AD login window will appear. 
-You will need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
+Upon executing the **prepare** command, the data migration tool runs a complete validation to ensure that nothing has changed with your collection since the last full validate. 
+If any new issues are detected, then no import files are generated. Shortly after the command has started running, an Azure AD login window appears. 
+You need to sign in with an identity that belongs to the tenant domain specified in the command. It's important to make sure that the Azure AD tenant specified 
 is the one you want your future organization to be backed with. For our Fabrikam example the user would enter something similar to what's shown in the below image.
 
 > [!IMPORTANT] 
-> Do NOT use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
+> Do **NOT** use a test Azure AD tenant for a test import and your production Azure AD tenant for the production run. Using a test Azure AD tenant can result in identity import issues when you begin your production run with your organization's production Azure AD tenant.
 
 ![Azure AD login prompt](_img/migration-import/aadLogin.png)
 
@@ -137,7 +144,7 @@ The import specification, ```import.json```, is a JSON file which provides impor
 
 ![Newly generated import specification file](_img/migration-import/importSpecNotFilledOut.png)
 
-Here is the breakdown of the fields and what action needs to be taken:
+The following table describes the fields and actions you need to take.
 
 |    Field              |    Explanation                                                                                             |    Action                                                                                                                                                                                                                                 |
 |--------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -163,7 +170,7 @@ In this case, the user planning the Fabrikam import added the organization name 
 
 <a id="supported-azure-regions-for-import"></a>
 
-### Supported Azure Regions for Import
+### Supported Azure regions for import
 
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/). However, not all Azure regions that Azure DevOps Services is present in are supported for import. The following table details the Azure regions that can be selected for import. Also included is the value which needs to be placed in the import specification file to target that region for import.  
  
@@ -194,17 +201,17 @@ Active identities refer to identities that will be users in Azure DevOps Service
 These are identities that are mapped as 'historical' in the "Expected Import Status" column in the identity map log file. Also, identities that have no line entry present in the file will also become historical. An example of an identity with no entry would be an employee that no longer works at a company. 
 Historical Identities do **NOT** have access to an organization after migration, do **NOT** have a licenses, and do **NOT** show up as a user in the organization. All that is persisted is the notion of that identity's name in the organization. This way their history can be searched at a later date. It's recommended that historical identities be used for users that are no longer at the company or won't ever be needing access to the organization. Identities imported historically **CANNOT** be migrated later to become active identities. 
 
-### Understanding an Identity Map Log
+### Understand the identity map log file
 
-After opening the identity map log file, you will be presented with something similar to the below example. 
+The identity map log file is similar to the following example. 
 
 ![Identity map log file generated by the data migration tool](_img/migration-import/identityMapNewlyGenerated.png)
 
-The table below explains what each column is used for. 
+The following table explains what each column means. 
 
 
 > [!NOTE]   
-> Users marked as "No Match Found (Check Azure AD Sync)" who you wanted to be added as full organization members will need to be investigated with your Azure AD admin to see why they aren't part of your Azure AD Connect sync. 
+> You and your Azure AD admin will need to investigate those users marked as **No Match Found (Check Azure AD Sync)** to understand  why they aren't part of your Azure AD Connect sync. 
 
 
 |    Column                           |    Explanation                                                                                                                                                                                                                                               |
@@ -215,7 +222,7 @@ The table below explains what each column is used for.
 |    Expected Import Status               |    The expected user import status, either "Active" if there was a match between your AD and Azure AD or "Historical" if we could not match the AD identity in your Azure AD.                                                                                                                                                                                                        |
 |    Validation Date                  |    Last time the identity map log was validated.                                                                                                                                                                                                                 |
 
-Reading through the file you will notice the Expected Import Status column has either 'Active' or 'Historical'. Active indicates that it's expected that the identity on this row will map correctly on import and will become active. Historical will become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
+As you read through the file, notice the Expected Import Status column has either **Active** or **Historical**. **Active** indicates that it's expected that the identity on this row will map correctly on import and will become active. **Historical** become historical identities on import. It's important that you review the generated mapping file for completeness and correctness.
 
 > [!IMPORTANT]  
 > Your import will fail if major changes occur to your Azure AD Connect SID sync between import attempts. New users can be added between dry runs, and corrections to ensure previously imported historical identities become active are also OK. However, changing an existing user that was previously imported as active is not supported at this time. Doing so will cause your import to fail. For example, completing a dry run import, deleting an identity from your Azure AD that was imported actively, recreating a new user in Azure AD for that same identity, and attempt another import. In this case an active identity import will be attempted between the AD and newly created Azure AD identity, but it will cause an import failure as this isn't supported. 
@@ -231,7 +238,7 @@ Next, review the identities that are labeled as 'Historical'. This implies that 
 
 In the first three cases the desired on-premises Active Directory (AD) identity will need to be set up for sync with Azure AD. Check the [documentation](https://aka.ms/azureadconnect "Integrating your on-premises identities with Azure Active Directory") on setting a sync between your on-premises Active Directory (AD) and Azure AD. It's required that Azure AD Connect be setup and run for identities to be imported as active in Azure DevOps Services. The final case can generally be ignored as employees no longer at your company should be imported historically. 
 
-#### Historical Identities (Small Teams) 
+#### Historical identities (small teams) 
 
 > The identity import strategy proposed in this section should only be considered by small teams. 
 
@@ -243,12 +250,16 @@ To import with all historical identities, simply follow the steps outlined in la
 
 The data migration tool will warn if it detects the complete historical identities scenario. If you decide to go down this migration path you will need to consent in the tool to the limitations. 
 
-### Visual Studio Subscriptions
+### Visual Studio subscriptions
+
 The data migration tool is unable to detect Visual Studio subscriptions (formerly known as MSDN benefits) when generating the identity map log file. Instead, it's recommended that you leverage the auto license upgrade feature post import. As long as a user's work account is [linked](https://aka.ms/LinkVSSubscriptionToAADAccount) correctly, Azure DevOps Services will automatically apply their Visual Studio subscription benefits on their first login post import. You're never charged for licenses assigned during import, so this can be safely handled post import. 
 
 You don't need to repeat a dry run import if users don't automatically get upgraded to use their Visual Studio Subscription in Azure DevOps Services. Visual Studio Subscription linking is something that happens outside of the scope of an import. As long as the work account gets linked correctly before or after the import then the user will automatically have their license upgraded on the next sign in. Once they've been upgraded successfully, next time you import the user will be upgraded automatically on the first sign in to the organization.  
 
-## Getting Ready to Import
+<a id="prepare-import" />
+
+## Prepare for import
+
 By this point you will have everything ready to execute on your import. You will need to schedule downtime with your team to the take the collection offline for the migration. Once you have an agreed upon a time to run the import you need to get all of the required assets you have generated and a copy of the database uploaded to Azure. This process has five steps:
 
 1.	Take the collection offline and detach it.
@@ -261,7 +272,7 @@ By this point you will have everything ready to execute on your import. You will
 > [!NOTE]   
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
-### Detaching your Collection
+### Detach your collection
 
 [Detaching the collection](/azure/devops/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the Azure DevOps Server server's configuration database while the collection is attached and online. When a collection is detached from the Azure DevOps Server instance it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
@@ -270,13 +281,13 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 
 <a id="generating-a-dacpac" />
 
-### Generating a DACPAC
+### Generate a DACPAC
 
 > [!IMPORTANT]  
-> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC.
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detach-your-collection) prior to generating a DACPAC.
 
 > [!NOTE]   
-> If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/AzureDevOpsImportLargeCollection.
+> If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on [Import large collections](#import-large-collections) later in this article.  
 
 Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to Azure DevOps Services and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
@@ -332,7 +343,11 @@ SqlPackage.exe /sourceconnectionstring:"Data Source=localhost;Initial Catalog=Fo
 
 The output of the command will be a DACPAC that is generated from the collection database Foo called Foo.dacpac. 
 
-### Importing Large Collections
+
+
+<a id="import-large-collections" />
+
+### Import large collections
 
 > [!NOTE]   
 > If the data migration tool warns that you can't use the DACPAC method then you will have to import using the SQL Azure VM method outlined below. If the data migration tool didn't warn that your collection was too big, use the DACPAC method outlined above.
@@ -349,7 +364,8 @@ If you are under the DACPAC threshold, follow the instructions to [generate a DA
 4. Creating an identity to connect to the collection database
 5. Configuring your import specification file to use a SQL connection string 
 
-#### Creating the SQL Azure VM
+#### Create the SQL Azure VM
+
 Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-portal-sql-server-provision/) on how to setup and configure a SQL Azure VM. 
 
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
@@ -370,15 +386,17 @@ Use the table below to decide where you should create you SQL Azure VM if you're
 > While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new organizations. Customers will not be able to import their data into other United States Azure regions at this time. 
 
 > [!NOTE]   
-> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#uploading-the-dacpac). The above guidelines are for SQL Azure VMs only. 
+> DACPAC customers should consult the region table in the [uploading DACPAC and import files section](#upload-the-dacpac). The above guidelines are for SQL Azure VMs only. 
 
 Below are some additional recommended configurations for your SQL Azure VM.
 
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
+3. [Configure](/sql/relational-databases/databases/move-system-databases#Examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](migration-import.md#generating-a-dacpac).
 4. If your source database is still over 1TB after [reducing the size](/azure/devops/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
+
+<a id="ips" />
 
 #### Azure DevOps Services IPs 
 
@@ -499,7 +517,7 @@ You only need to add an exception for the analytics IPs in your target import re
 |    Analytics service - UK South                | 40.81.159.247                                                                     |
 
 
-#### Configuring IP Firewall Exceptions
+#### Configure IP firewall exceptions
 
 Granting exceptions for the necessary IPs is handled at the Azure networking layer for your SQL Azure VM. To get started you will need to navigate to your SQL Azure VM on the [Azure portal](https://ms.portal.azure.com). Then select 'Networking' from the settings. This will take you to the network interface page for your SQL Azure VM. The data migration tool requires the Azure DevOps Services IPs to be configured for inbound connections only on port 1433. Exceptions for the IPs can be made by selecting "Add inbound port rule" from the networking settings. 
 
@@ -515,11 +533,11 @@ Set the source to "IP Addresses", enter one of the IPs that need to be granted a
 
 You will need to repeat adding inbound port rules until all necessary Azure DevOps Services IPs have been granted an exception. Missing one IP could result in your import failing to start. 
 
-#### Restoring your Database on the VM
+#### Restore your database on the VM
 
 After setting up and configuring an Azure VM, you will need to take your detached backup from your Azure DevOps Server instance to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require Azure DevOps Server to be installed on the VM. 
 
-#### Configuring your Collection for Import
+#### Configure your collection for import
 
 Once your collection database has been restored onto your Azure VM, you will need to configure a SQL login to allow Azure DevOps Services to connect to the database to import the data. This login will only allow **read** access to a single database. Start by opening SQL Server Management Studio on the VM and open a new query window against the database that will be imported. 
 
@@ -551,7 +569,8 @@ EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 > [!NOTE]   
 > Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#SSMSProcedure) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
-#### Configure the Import Specification File to Target the VM
+#### Configure the import specification file to target the VM
+
 The import specification file will need to be updated to include information on how to connect to the SQL instance. Open your import specification file and make the following updates:
 
 Remove the DACPAC parameter from the source files object.
@@ -579,7 +598,7 @@ Following the Fabrikam example, the import specification would look like the fol
 
 Your import specification is now configured to use a SQL Azure VM for import! Proceed with the rest of preparation steps to import to Azure DevOps Services. Once the import has completed be sure to delete the SQL login or rotate the password. Microsoft does not hold onto the login information once the import has completed. 
 
-### Uploading the DACPAC
+### Upload the DACPAC
 
 > [!NOTE]   
 > If you're using the SQL Azure VM method then you only need to provide the connection string. You will not have to upload any files and can skip this step.  
@@ -600,17 +619,18 @@ Azure DevOps Services is available in multiple [regions](https://azure.microsoft
 
 While Azure DevOps Services is available in multiple regions in the United States, only the Central United States region is accepting new Azure DevOps Services. Customers will not be able to import their data into other United States Azure regions at this time.  
 
-[Creating a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
+[Create a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 * Collection DACPAC 
 
 After the import has been completed you can delete the blob container and accompanying storage account.
 
-This can be accomplished using tools like [AzCopy](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) or any other Azure storage explorer tool like [Microsoft Azure Storage Explorer](https://storageexplorer.com/). 
+You can accomplish this step using tools like [AzCopy](https://azure.microsoft.com/documentation/articles/storage-use-azcopy/) or any other Azure storage explorer tool like [Microsoft Azure Storage Explorer](https://storageexplorer.com/). 
 
 > [!NOTE]   
 > If your DACPAC is larger than 10GB then it's recommended that you use AzCopy. AzCopy has multi-threaded upload support for faster uploads.
 
-### Generating SAS Key
+### Generate SAS Key
+
 A Shared Access Signature ([SAS](https://azure.microsoft.com/documentation/articles/storage-dotnet-shared-access-signature-part-1/)) Key provides delegated access to resources in a storage account. This allows you to give Microsoft the lowest level of privilege required to access your data for executing the import. 
 
 The recommended way to generate a SAS Key is the [Microsoft Azure Storage Explorer](https://storageexplorer.com/). Storage Explorer allows you to easily create container level SAS Keys. This is essential as the data migration tool does NOT support account level SAS Keys. 
@@ -626,7 +646,7 @@ After installing Storage Explorer you can complete the following steps to genera
 
 ![Connect a new storage account](_img/migration-import/StorageExplorerAddAccount.png)
 
-* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account#manage-your-storage-account-keys), and connect
+* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account), and connect
 
 ![Enter information about the storage account to connect](_img/migration-import/StorageExplorerConnectAccount.png)
 
@@ -643,7 +663,8 @@ Copy and hold onto this SAS Key as you will need to place it in your import spec
 
 > Ensure that you treat this SAS Key as a secret. It provides access to your files in the storage container. 
 
-### Completing the Import Specification
+### Complete the import specification
+
 Earlier in the process you partially filled out the import specification file generally known as ```import.json```. At this point you have enough information to fill out all of the remaining fields expect for the import type. The import type will be covered in the import section below. Open your import specification file and fill out the following fields.
 
 * **Location** - Place the SAS Key generated from the script in the last step here.
@@ -653,19 +674,30 @@ Using the Fabrikam example, the final import specification file should look like
 
 ![Completed import specification file](_img/migration-import/ImportSpecFillOutNoType.png)
 
-### Determine the type of import 
-Imports can either be queued as a dry or production run. Dry runs are for testing and production runs are when your team intends to use the organization full time in Azure DevOps Services once the import completes. Determining which type of import to be run is based off the value you provide for the import type parameter. 
+<a id="determine-the-type-of-import" /> 
+<a id="import-type" /> 
 
-> It's always recommended that you complete a dry run import first.   
+### Determine the import type
+
+Imports can either be queued as a dry or production run. The **ImportType** parameter determines the import type: 
+
+- **DryRun**: Use for test purposes. The system deletes dry runs after 21 days.   
+- **ProductionRun**: Use when you want to keep the resulting import and use the organization full time in Azure DevOps Services once the import completes. 
+
+> [!TIP]  
+> We always recommended that you complete a dry run import first.   
 
 ![Completed import specification file with import type](_img/migration-import/importSpecCompleted.png)
 
-### Dry Run Organizations
+### Dry run organizations
+
 Dry run imports help teams to test the migration of their collections. It's not expected that these organizations will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run, any completed dry run organizations will need to be deleted. All dry run organizations have a **limited existence and will be automatically deleted after a set period of time**. When the organization will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. 
 
 Most dry run organizations will have 15 days before they're deleted. Dry run organizations can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run organization will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run organization. 
 
 Be sure to check out the [post import](migration-post-import.md) article for additional details on post import activities. Should your import encounter any problems, review the [import troubleshooting](migration-troubleshooting.md#resolve-import-errors) steps. 
+
+<a id="run-an-import" />
 
 ## Run an import
 
@@ -674,19 +706,18 @@ The great news is that your team is now ready to begin the process of running an
 > [!NOTE]
 > Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
-### Considerations for Roll Back Planning
+### Considerations for rollback plans
+
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the data migration tool for Azure DevOps.
 
-Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and have Team Foundation Server come back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
+Rollback for the final production run is fairly simple. Before you queue the import, you will be detaching the team project collection from Azure DevOps Server or Team Foundation Server which will make it unavailable to your team members. If for any reason, you need to roll back the production run and bring the on-premises server back online for your team members, you can simply attach the team project collection on-premises again and inform your team that they will continue to work as normal while your team regroups to understand any potential failures.
 
-### Queueing an Import
+### Queue an import
 
 > [!IMPORTANT] 
-> Before proceeding, ensure that your collection was [detached](migration-import.md#detaching-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. 
->
-> In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
+> Before proceeding, ensure that your collection was [detached](migration-import.md#detach-your-collection) prior to generating a DACPAC or uploading the collection database to a SQL Azure VM. If you didn't complete this step the import will fail. In the event your import fails, see the following [guidance](migration-troubleshooting.md). 
 
-Starting an import is done by using the data migration tool's import command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your Azure DevOps Server instance. 
+You start an import by using the data migration tool's **import** command. The import command takes an import specification file as input. It will parse through the file to ensure the values which have been provided are valid, and if successful, it will queue an import to Azure DevOps Services. The import command requires an internet connection, but does **NOT** require a connection to your Azure DevOps Server instance. 
 
 To get started, open a command prompt and CD to path where you have the data migration tool placed. Once there it's recommended that you take a second to review the help text provided with the tool. Run the following command to see the guidance and help for the import command:
 
@@ -709,6 +740,11 @@ Migrator import /importFile:C:\DataMigrationToolFiles\import.json
 Once the validation passes you will be asked to sign into to Azure AD. It's important that you sign in with an identity that is a member of the same Azure AD as the identity map log file was built against. The user that signs in will become the owner of the imported organization. 
 
 > [!NOTE]
-> Imports are limited to 5 against a single Azure AD tenant per 24 hour period. Only imports that are queued count against this cap.
+>  Each Azure AD tenant is limited to  five imports per 24 hour period. Only imports that are queued count against this cap.
 
-After the import starts the user that queued the import will receive an email. Around 5-10 minutes after queueing the import your team will be able to navigate to the organization to check on the status. Once the import completes your team will be directed to sign in. The owner of the organization will also receive an email when the import finishes. 
+Upon initiating an import, an email is sent to the user that queued the import. Around 5 to 10 minutes after queuing the import, your team can navigate to the organization to check on the status. Once the import completes, your team is directed to sign in. Also, when the import finishes, an email is sent to the organization owner. 
+
+## Related articles
+
+- [Migrate options](migration-overview.md) 
+- [Post-import](migration-post-import.md)

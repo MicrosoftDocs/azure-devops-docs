@@ -30,7 +30,7 @@ Other sample queries include listing bugs with a Duplicate link to another bug, 
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -53,7 +53,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -156,14 +156,14 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Direct Links - Fields](_img/odatapowerbi-directlinks-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Table**.
 1. Add columns "WorkItemID" to **Values**.
-    - Right click  "WorkItemID" and select **Don't summarize**.
+    - Right-click  "WorkItemID" and select **Don't summarize**.
 1. Add column "Title" to **Values**.
 1. Add column "Link.TargetWorkItem.WorkItemID" to **Values**.
-    - Right click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
+    - Right-click "Link.TargetWorkItem.WorkItemID" and select **Don't summarize**.
 1. Add column "Link.TargetWorkItem.Title" to **Values**.
 1. In **Filters**, for the column "Link.TargetWorkItem.WorkItemID", select **Show items when value** and select the option **is not blank**. Then click **Apply Filter**.
     - This action filters out any work items that don't have a link.
@@ -186,7 +186,7 @@ You can use the following additional queries to create different but similar rep
 
 The following query is the same as the one used previously in this article, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -209,7 +209,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -232,7 +232,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Return bugs with a Duplicate link to another bug
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -256,7 +256,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -280,7 +280,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Return bugs that don't have a Duplicate link to another bug
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -298,7 +298,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

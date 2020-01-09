@@ -78,7 +78,7 @@ instance that you used before for the database server.
    or specify alternates. For more information, see 
    [Ports required for installation of Team Foundation Server](/azure/devops/server/architecture/required-ports)
    and
-   [Accounts required for installation of Team Foundation Server](/azure/devops/server/requirements#accounts).
+   [Accounts required for installation of Team Foundation Server](/azure/devops/server/requirements).
    Release Management server uses the identity set here for its Application 
    Pools in IIS and the Release Management Monitor Windows service.
 

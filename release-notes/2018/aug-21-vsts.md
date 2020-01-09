@@ -45,7 +45,7 @@ Build and release:
 
 ### Create table of contents for wiki pages
 
-Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a [suggestion from UserVoice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/32366560-wiki-table-contents).
+Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/azure/devops/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a suggestion from UserVoice.
 
 > [!div class="mx-imgBorder"]
 > ![Wiki table of contents](_img/139_03.png)
@@ -77,7 +77,7 @@ In the latest improvement to our [Microsoft Teams integration](https://marketpla
 
 ### Standardize pull request descriptions using templates
 
-Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation (no one ever forgets to update the docs). Many of you have been [requesting](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/18132127-support-pull-request-template-in-vs-online-for-pr) that we add pull request templates to make it easier for teams to write great descriptions, and we've now added that feature.
+Writing good pull request descriptions is a great way to help reviewers know what to expect when reviewing code. They're also a great way to help track things that should be done for every change, such as testing, adding unit tests, and updating documentation (no one ever forgets to update the docs). Many of you have been requesting that we add pull request templates to make it easier for teams to write great descriptions, and we've now added that feature.
 
 In addition to supporting a default PR description template, teams can add multiple templates, which are presented to you in a menu on the create PR page. Simply click the **Add a template** button to choose from any template in the repository to append it to the PR description.
 

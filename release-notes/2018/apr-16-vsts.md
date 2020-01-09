@@ -77,7 +77,7 @@ However, with this Update, the full phrase is returned and highlighted.
 
 ### Query work in the Area Paths of a Team with the new @TeamAreas macro
 
-In the settings for a Team, you can associate one or more Area Paths, which helps you focus **Backlogs**, **Boards**, **Plans**, even **Dashboards** to just the work for that Team. If you wanted to write a query for a Team though, you had to list out the specific Area Paths for that team in the query clauses. Now, a new <strong>@TeamAreas</strong> macro is available for you to easily reference the Area Paths owned for the specified Team. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/10189299-add-a-defaultteamarea-and-or-teamareas-token-var).
+In the settings for a Team, you can associate one or more Area Paths, which helps you focus **Backlogs**, **Boards**, **Plans**, even **Dashboards** to just the work for that Team. If you wanted to write a query for a Team though, you had to list out the specific Area Paths for that team in the query clauses. Now, a new <strong>@TeamAreas</strong> macro is available for you to easily reference the Area Paths owned for the specified Team. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![team areas macro in query editor](_img/133_06.png)
@@ -146,7 +146,7 @@ Previously, the only way to know about new versions of packages you use was thro
 
 To set this up, hover on your profile picture in the upper right corner, choose **Notification settings**, and then click New subscription. In the dialog that appears, select the **Package** category.
 
-This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/11447610-allow-me-to-contact-the-consumers-of-my-package-fe).
+This feature was prioritized based on a suggestion.
 
 ### Use upstream NuGet packages from elsewhere in VSTS
 
@@ -170,7 +170,7 @@ When you want to create a link to another wiki page, you can just type the stand
 > [!div class="mx-imgBorder"]
 > ![autosuggestion wiki page link](_img/132_07.png)
 
-This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/19042909-enable-free-linking-in-the-wiki).
+This feature was prioritized based on a suggestion.
 
 ### Filter search results by Wiki name
 

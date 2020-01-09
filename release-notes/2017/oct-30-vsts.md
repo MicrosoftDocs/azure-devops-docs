@@ -36,7 +36,7 @@ The **Column options** dialog used to configure the columns of the work item gri
 
 ### Added support for Not In query operator
 
-Fields that support the “In” [query operator](/azure/devops/work/track/query-operators-variables#query-operators) now support “Not In”. Write queries for work items “Not In” a list of IDs, “Not In” a list of states, and much more, all without having to create many nested “Or” clauses. This feature was prioritized based on a [customer suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2772233--not-in-operator-for-work-item-queries). Keep submitting those ideas and voting up those most important to you.
+Fields that support the “In” [query operator](/azure/devops/work/track/query-operators-variables#query-operators) now support “Not In”. Write queries for work items “Not In” a list of IDs, “Not In” a list of states, and much more, all without having to create many nested “Or” clauses. This feature was prioritized based on a customer suggestion. Keep submitting those ideas and voting up those most important to you.
 
 > [!div class="mx-imgBorder"]
 > ![Not In query operator](_img/125_02.png)

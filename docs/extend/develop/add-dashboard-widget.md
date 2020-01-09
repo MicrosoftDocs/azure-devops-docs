@@ -1051,7 +1051,6 @@ Open the configuration mode for your widget, you should now be able to see the o
 ![Widget where name and size can be configured](../_shared/procedures/_img/add-dashboard-widget/sampleConfigureNameAndSize.png)
 
 Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
-doesn't
 
 > [!WARNING]  
 > If you remove an already supported size, then the widget fails to load properly. We are working on a fix for a future release.

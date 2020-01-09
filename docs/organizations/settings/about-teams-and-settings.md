@@ -35,6 +35,15 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
+
+::: moniker range="azure-devops"
+
+> [!NOTE] 
+> In addition to team dashboards, you can add a project dashboard which isn't specific to any one team. To learn how, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
+
+::: moniker-end
+
+
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets.png)
 ::: moniker-end
@@ -398,7 +407,7 @@ Several tools reference the team's default iteration and selected iteration path
 <tr valign="top" > 
 <td>Portfolio or product backlogs</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team&#39;s <a href="../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)">backlog iteration path</a></td>
+<td>Equal to or under team's <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)">backlog iteration path</a></td>
 <td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
 </tr>
 
@@ -406,7 +415,7 @@ Several tools reference the team's default iteration and selected iteration path
 <tr valign="top" > 
 <td>Kanban boards (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team&#39;s <a href="../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md#set-backlog-iteration)">backlog iteration path</a></td>
+<td>Equal to or under team's <a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[backlog iteration path](../../organizations/settings/set-iteration-paths-sprints.md)">backlog iteration path</a></td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 

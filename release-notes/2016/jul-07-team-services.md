@@ -114,7 +114,7 @@ In the Web runner when using Chrome, in addition to screenshots and screen recor
 
 ### Order tests in Test hub
 
-Test teams can now order the test suites as per their needs. Prior to this capability, the suites were only ordered alphabetically. Now, using the drag-and-drop capability in Test hub, suites can be reordered among the peer suites or moved to another suite in the hierarchy. This addresses the following [User Voice](https://visualstudio.uservoice.com/forums/330519-vso/suggestions/2726830-add-ability-to-order-test-suites) item under manual testing/test case management.
+Test teams can now order the test suites as per their needs. Prior to this capability, the suites were only ordered alphabetically. Now, using the drag-and-drop capability in Test hub, suites can be reordered among the peer suites or moved to another suite in the hierarchy. This addresses a User Voice suggestion item under manual testing/test case management.
 
 ![Drag-and-drop test reordering](_img/7_07_08.png)
 
