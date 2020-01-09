@@ -14,7 +14,7 @@ ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline artifacts in Azure Pipelines
+# Publish and download artifacts
 
 **Azure Pipelines**
 
@@ -24,6 +24,8 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 > Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
 
 ## Publishing artifacts
+
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 

@@ -30,7 +30,7 @@ the typical considerations for running UI tests.
 
 ::: moniker-end
 
-## Pre-requisites
+## Prerequisites
 
 Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/v2-windows.md). 
 

@@ -35,6 +35,15 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
+
+::: moniker range="azure-devops"
+
+> [!NOTE] 
+> In addition to team dashboards, you can add a project dashboard which isn't specific to any one team. To learn how, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
+
+::: moniker-end
+
+
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 ![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets.png)
 ::: moniker-end

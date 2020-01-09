@@ -13,7 +13,7 @@ ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Predefined variables
+# Use predefined variables
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
