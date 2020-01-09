@@ -8,13 +8,62 @@
   - name: Azure Boards 
     tocHref: /azure/devops/boards/
     topicHref: /azure/devops/boards/index
+    items: 
+    - name: Get started 
+      tocHref: /azure/devops/boards/get-started/
+      topicHref: /azure/devops/boards//get-started/index
+    - name: Azure Boards & GitHub 
+      tocHref: /azure/devops/boards/github/
+      topicHref: /azure/devops/boards/github/index
+    - name: Work Items
+      tocHref: /azure/devops/boards/work-items/
+      topicHref: /azure/devops/boards/work-items/about-work-items
+    - name: Boards 
+      tocHref: /azure/devops/boards/boards
+      topicHref: /azure/devops/boards/boards/kanban-overview
+    - name: Backlogs
+      tocHref: /azure/devops/boards/backlogs
+      topicHref: /azure/devops/boards/backlogs/backlogs-overview
+    - name: Sprints
+      tocHref: /azure/devops/boards/sprints/
+      topicHref: /azure/devops/boards/sprints/scrum-overview
+    - name: Queries
+      tocHref: /azure/devops/boards/queries/
+      topicHref: /azure/devops/boards/queries/example-queries
+    - name: Plans & Agile at Scale
+      tocHref: /azure/devops/boards/plans/
+      topicHref: /azure/devops/boardsplans/index
+    - name: Add & manage teams
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/b/organizations/projects/about-projects
+    - name: Excel, Project, PowerPoint
+      tocHref: /azure/devops/boards/backlogs/office/
+      topicHref: /azure/devops/boards/backlogs/office/track-work
+    - name: Add & manage teams
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/projects/about-projects
+    - name: Integrations & extensions
+      tocHref: /azure/devops/boards/extensions/
+      topicHref: /azure/devops/boards/extensions/index
   - name: Get started
     tocHref: /azure/devops/get-started/
     topicHref: /azure/devops/get-started/index
     items:
+    - name: Start using Azure DevOps
+      tocHref: /azure/devops/user-guide/
+      topicHref: /azure/devops/user-guide/what-is-azure-devops
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
+    - name: Web portal navigation
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/project/navigation/index
+    - name: Status & security 
+      tocHref: /azure/devops/organizations/user-guide/
+      topicHref: /azure/devops/user-guide/service-status-info
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -68,22 +117,6 @@
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
-    items:
-    - name: Security, access, & identity
-      tocHref: /azure/devops/organizations/security/
-      topicHref: /azure/devops/organizations/security/about-security-identity
-    - name: Organizations
-      tocHref: /azure/devops/organizations/accounts/
-      topicHref: /azure/devops/organizations/accounts/organization-management
-    - name: Billing
-      tocHref: /azure/devops/organizations/billing/
-      topicHref: /azure/devops/organizations/billing/overview
-    - name: Audit
-      tocHref: /azure/devops/organizations/settings/
-      topicHref: /azure/devops/organizations/settings/azure-devops-auditing
-    - name: Authentication
-      tocHref: /azure/devops/organizations/integrate/
-      topicHref: /azure/devops/integrate/get-started/authentication/authentication-guidance
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
@@ -125,3 +158,10 @@
   - name: Developer resources
     tocHref: /azure/devops/developer-resources/
     topicHref: /azure/devops/developer-resources/index
+    items: 
+    - name: Azure DevOps CLI
+      tocHref: /azure/devops/cli/
+      topicHref: /azure/devops/cli/index
+    - name: Demo Generator
+      tocHref: /azure/devops//demo-gen
+      topicHref: /azure/devops/demo-gen/index
