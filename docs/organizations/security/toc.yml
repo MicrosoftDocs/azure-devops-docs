@@ -1,4 +1,4 @@
-- name: About security and identity  
+- name: About security & identity  
   href: about-security-identity.md
 - name: Quickstarts
   items:
@@ -76,8 +76,6 @@
     href: set-sharepoint-permissions.md
   - name: Sign-in to the web or a client
     href: ../projects/connect-to-projects.md
-  - name: Authenticate access with personal access tokens
-    href: ../accounts/use-personal-access-tokens-to-authenticate.md
   - name: Revoke user PATs - for admins
     href: ../accounts/admin-revoke-user-pats.md
 - name: Troubleshooting
