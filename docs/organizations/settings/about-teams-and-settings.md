@@ -54,8 +54,6 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 
 These tools reference the team's default area path, iteration path, and selected sprints to filter automatically the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
 
-::: moniker range=">= tfs-2017"
-
 [!INCLUDE [team-configuration](../../boards/includes/team-configuration.md)]
 
 
