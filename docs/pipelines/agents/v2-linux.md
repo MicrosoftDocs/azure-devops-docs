@@ -9,7 +9,7 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/13/2019
+ms.date: 01/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -213,7 +213,9 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 [!INCLUDE [include](_shared/v2/unix-authentication-types.md)]
 
-## Run interactively
+## Run the agent
+
+### Run interactively
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#interactive-or-service).
 
@@ -230,7 +232,7 @@ To run the agent interactively:
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
-## Run as a systemd service
+### Run as a systemd service
 
 If your agent is running on these operating systems you can run the agent as a systemd service:
 
