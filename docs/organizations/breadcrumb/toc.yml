@@ -7,7 +7,7 @@
     topicHref: /azure/devops/organizations/index
     items:
     - name: User preferences
-      tocHref: /azure/devops/project/navigation/
+      tocHref: /azure/devops/organizations/user-guide/
       topicHref: /azure/devops/organizations/settings/set-your-preferences
     - name: Organizations
       tocHref: /azure/devops/organizations/accounts/
