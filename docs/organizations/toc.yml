@@ -8,7 +8,7 @@
 - name: User preferences
   items:
   - name: Set user preferences
-    href: settings/set-your-preferences.md
+    href: /azure/devops/settings/set-your-preferences?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Enable preview features
     href: /azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
