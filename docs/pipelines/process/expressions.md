@@ -82,6 +82,14 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
+You can also use a single-quote for multiline strings. 
+
+```yaml
+    msbuildArgs: '/p:DeployOnBuild=true
+                  /p:WebPublishMethod=Package 
+                  /p:PackageAsSingleFile=true'
+```
+
 ### Version
 A version number with up to four segments.
 Must start with a number and contain two or three period (`.`) characters.
