@@ -52,9 +52,6 @@
     - name: Migrate & import
       tocHref: /azure/devops/migrate/
       topicHref: /azure/devops/migrate/migration-overview
-    - name: Status & security 
-      tocHref: /azure/devops/organizations/user-guide/
-      topicHref: /azure/devops/user-guide/service-status-info
   - name: Azure Pipelines
     tocHref: /azure/devops/pipelines/
     topicHref: /azure/devops/pipelines/index
@@ -71,10 +68,6 @@
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
-    items:
-    - name: User preferences
-      tocHref: /azure/devops/organizations/user-guide/
-      topicHref: /azure/devops/organizations/settings/set-your-preferences
     - name: Organizations
       tocHref: /azure/devops/organizations/accounts/
       topicHref: /azure/devops/user-guide/plan-your-azure-devops-org-structure
@@ -96,12 +89,6 @@
     - name: Process
       tocHref: /azure/devops/boards/work-items/guidance/
       topicHref: /azure/devops/boards/work-items/guidance/choose-process
-    - name: Repos (Code)
-      tocHref: /azure/devops/repos/git/
-      topicHref: /azure/devops/repos/git/create-new-repo
-    - name: Test
-      tocHref: /azure/devops/test/
-      topicHref: /azure/devops/test/how-long-to-keep-test-results
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
