@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 11/05/2019
+ms.date: 01/09/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -191,16 +191,24 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ## Run the agent
 
+### Run interactively
+
  If you configured the agent to run interactively, to run it:
 
  ```ps
  .\run.cmd
  ```
 
+To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to restart it. 
+
+### Run as a service
+
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for one of:
 - "Azure Pipelines Agent (*name of your agent*)".
 - "VSTS Agent (*name of your agent*)".
 - "vstsagent.(*organization name*).(*name of your agent*)".
+
+To restart the agent, right-click the entry and choose **Restart**.
 
 > [!Note]
 > If you need to change the agent's logon account, don't do it from the Services
