@@ -488,11 +488,17 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
-You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. After you create or update your scheduled triggers, you can verify them using this view.
+### Scheduled runs view
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
 
 ![Scheduled runs menu](_img/triggers/scheduled-runs-menu.png)
 
-In this example, the scheduled runs for the following schedule is displayed.
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](_img/triggers/scheduled-runs.png)
+
+In this example, the scheduled runs for the following schedule are displayed.
 
 ```yaml
 schedules:
@@ -505,7 +511,7 @@ schedules:
 
 The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to navigate the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
 
-![Scheduled runs](_img/triggers/scheduled-runs.png)
+### Scheduled triggers evaluation
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
