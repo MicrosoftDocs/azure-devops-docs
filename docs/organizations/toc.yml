@@ -8,19 +8,19 @@
 - name: User preferences
   items:
   - name: Set user preferences
-    href: /azure/devops/settings/set-your-preferences?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/set-your-preferences?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Enable preview features
     href: /azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
     href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Personal access tokens
-    href: /azure/devops/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: SSH public keys
     href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Alternate credentials
     href: /azure/devops/repos/git/auth-overview#alternate-credentials?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
   - name: Manage authorizations
-    href: /azure/devops/settings/manage-authorizations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/manage-authorizations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
   items:
   - name: About organizations
@@ -90,21 +90,25 @@
 - name: Configure Features Wizard (Deprecated)
   items:
   - name: Configure features after an upgrade
-    href: ../reference/configure-features-after-upgrade.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/configure-features-after-upgrade.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: New features added through feature enablement
-    href: ../reference/new-features-added.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/new-features-added.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add features manually
-    href: ../reference/add-features-manually.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/add-features-manually.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Additional configuration options
-    href: ../reference/additional-configuration-options.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/additional-configuration-options.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Update a customized process template to access new features
-    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: When upgrading from TFS 2008 or TFS 2010
-    href: ../reference/upgrade-tfs-2008-or-2010.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../reference/upgrade-tfs-2008-or-2010.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Naming restrictions
-    href: ./settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ./settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: "Workflow states & categories"
+    href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Changes made to process templates
+    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths
@@ -138,6 +142,6 @@
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
   - name: Public projects
-    href: ./public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.jsontoc.json
+    href: ./public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
 
 
