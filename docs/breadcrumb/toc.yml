@@ -116,8 +116,8 @@
     topicHref: /azure/devops/project/index
     items:
     - name: Wikis
-      tocHref: /azure/devops/user-guide/
-      topicHref: /azure/devops/user-guide/project-admin-tutorial
+      tocHref: /azure/devops/project/wiki/
+      topicHref: /azure/devops/project/wiki/index
     - name: Public projects
       tocHref: /azure/devops/organizations/public/
       topicHref: /azure/devops/organizations/public/about-public-projects
