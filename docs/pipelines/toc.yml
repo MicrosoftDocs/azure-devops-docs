@@ -195,19 +195,27 @@
       href: test/codecoverage-for-pullrequests.md 
 - name: Deploy apps to specific environments 
   items:
-  - name: Approvals, checks, & gates 
-    href: release/approvals/index.md
   - name: Create & target an environment 
     href: process/environments.md
     displayName: environments, deployment, approvals
+  - name: Approvals, checks, & gates 
+    href: release/approvals/index.md
   - name: Define an approval 
     href: process/approvals.md
     displayName: approvals, checks
+  - name: Kubernetes resource
+    href: process/environments-kubernetes.md
+  - name: Virtual machine resource
+    href: process/environments-virtual-machines.md
   - name: Specify conditions 
     href: process/conditions.md
   - name: Specify demands 
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
+  - name: Deploy apps using VMs 
+    items: 
+    - name: Linux virtual machines
+      href: ecosystems/deploy-linux-vm.md
   - name: Deploy apps (Classic)
     items:
     - name: Use approvals and gates
@@ -282,8 +290,6 @@
     href: ecosystems/containers/content-trust.md
   - name: Kubernetes
     items:
-    - name: Kubernetes resource
-      href: process/environments-kubernetes.md
     - name: Deploy manifests
       href: ecosystems/kubernetes/deploy.md
       displayName: kubernetes, aks, gke, eks
