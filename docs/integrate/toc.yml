@@ -35,7 +35,7 @@
 - name: How-to guides
   items:
     - name: Authenticate with PATs
-      href: ../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+      href: /azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Authenticate with OAuth 2.0
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically

@@ -22,11 +22,11 @@
       tocHref: /azure/devops/organizations/settings/scale/
       topicHref: /azure/devops/organizations/settings/about-teams-and-settings
     - name: Process
-      tocHref: /azure/devops/reference/
-      topicHref: /azure/devops/organizations/index
+      tocHref: /azure/devops/organizations/settings/work/
+      topicHref: /azure/devops/reference/customize-work
     - name: Process
-      tocHref: /azure/devops/settings/work/
-      topicHref: /azure/devops/organizations/index
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/customize-work
     - name: Process
       tocHref: /azure/devops/boards/work-items/guidance/
       topicHref: /azure/devops/boards/work-items/guidance/choose-process

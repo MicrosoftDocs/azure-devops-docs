@@ -31,15 +31,75 @@
     tocHref: /azure/devops/organizations/
     topicHref: /azure/devops/organizations/index
     items:
+    items:
+    - name: User preferences
+      tocHref: /azure/devops/project/navigation/
+      topicHref: /azure/devops/organizations/settings/set-your-preferences
+    - name: Organizations
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/user-guide/plan-your-azure-devops-org-structure
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
+    - name: Projects
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/projects/about-projects
+    - name: Teams
+      tocHref: /azure/devops/organizations/settings/scale/
+      topicHref: /azure/devops/organizations/settings/about-teams-and-settings
+    - name: Process
+      tocHref: /azure/devops/organizations/settings/work/
+      topicHref: /azure/devops/reference/customize-work
+    - name: Process
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/customize-work
+    - name: Process
+      tocHref: /azure/devops/boards/work-items/guidance/
+      topicHref: /azure/devops/boards/work-items/guidance/choose-process
+    - name: Pipelines (Build and Release)
+      tocHref: /azure/devops/pipelines/
+      topicHref: /azure/devops/pipelines/agents/pools-queues
+    - name: Repos (Code)
+      tocHref: /azure/devops/repos/git/
+      topicHref: /azure/devops/repos/git/create-new-repo
+    - name: Test
+      tocHref: /azure/devops/test/
+      topicHref: /azure/devops/test/how-long-to-keep-test-results
   - name: Security, access, & billing
     tocHref: /azure/devops/security-access-billing/
     topicHref: /azure/devops/security-access-billing/index
+    items:
+    - name: Security, access, & identity
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/organizations/security/about-security-identity
+    - name: Organizations
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/organizations/accounts/organization-management
+    - name: Billing
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/organizations/billing/overview
+    - name: Audit
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/settings/azure-devops-auditing
+    - name: Authentication
+      tocHref: /azure/devops/organizations/integrate/
+      topicHref: /azure/devops/integrate/get-started/authentication/authentication-guidance
   - name: Collaborate
     tocHref: /azure/devops/project/
     topicHref: /azure/devops/project/index
+    items:
+    - name: Wikis
+      tocHref: /azure/devops/user-guide/
+      topicHref: /azure/devops/user-guide/project-admin-tutorial
+    - name: Public projects
+      tocHref: /azure/devops/organizations/public/
+      topicHref: /azure/devops/organizations/public/about-public-projects
+    - name: Search across Azure DevOps
+      tocHref: /azure/devops/project/search/
+      topicHref: /azure/devops/project/search/overview
+    - name: Feedback
+      tocHref: /azure/devops/project/feedback/
+      topicHref: /azure/devops/project/feedback/index
   - name: Marketplace & extensibility
     tocHref: /azure/devops/marketplace-extensibility/
     topicHref: /azure/devops/marketplace-extensibility/index

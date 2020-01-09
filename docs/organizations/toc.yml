@@ -14,7 +14,7 @@
   - name: Set personal favorites
     href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Personal access tokens
-    href: /azure/devops/accounts/use-personal-access-tokens-to-authenticate.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: SSH public keys
     href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Alternate credentials

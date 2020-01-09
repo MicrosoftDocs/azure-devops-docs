@@ -6,9 +6,6 @@
     tocHref: /azure/devops/organizations/security/
     topicHref: /azure/devops/security-access-billing/index
     items:
-    - name: Get started
-      tocHref: /azure/devops/user-guide/
-      topicHref: /azure/devops/user-guide/project-admin-tutorial
     - name: Security, access, & identity
       tocHref: /azure/devops/organizations/security/
       topicHref: /azure/devops/organizations/security/about-security-identity
