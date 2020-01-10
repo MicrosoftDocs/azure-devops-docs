@@ -1,5 +1,5 @@
 ---
-ms.technology: devops-settings
+ms.technology: devops-agile
 ms.prod: devops
 ms.topic: include
 ms.author: kaelli
@@ -15,8 +15,8 @@ ms.date: 01/09/2020
 <tbody valign="top">
 <tr>
 <th width="20%">Area</th>
-<th width="40%">Tool</th>
-<th width="40%">Team configuration tasks</th>
+<th width="30%">Tool</th>
+<th width="50%">Team configuration tasks</th>
 </tr>
 <tr>
 <td>Backlogs  </td>
