@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-In this article, find the following frequently asked questions and answers (FAQs) about finding the organization owner and removing yourself from the organization if the owner is unavailable or inactive.
+In this article, find the following frequently asked questions and answers (FAQs) about removing yourself from an organization if the owner is unavailable or inactive.
 
 #### Q: How do I remove myself from an organization when the owner isn't available to remove me?
 
@@ -31,8 +31,4 @@ A: To remove yourself from an organization, do the following steps:
 3. Confirm that you want to **Leave** the organization.
 
     ![confirm-removal-from-organization.png](_img/faq/confirm-removal-from-organization.png)
-
-<a name="find-owner"></a>
-
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
