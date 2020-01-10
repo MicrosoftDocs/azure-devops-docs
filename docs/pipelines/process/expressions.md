@@ -82,12 +82,13 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
-You can also use a single-quote for multiline strings. 
+You can use a pipe character (`|`) for multiline strings. 
 
 ```yaml
-    msbuildArgs: '/p:DeployOnBuild=true
-                  /p:WebPublishMethod=Package 
-                  /p:PackageAsSingleFile=true'
+myKey: |
+  one
+  two
+  three
 ```
 
 ### Version
