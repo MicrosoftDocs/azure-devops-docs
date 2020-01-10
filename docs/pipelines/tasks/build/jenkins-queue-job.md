@@ -83,7 +83,7 @@ None
       </td>
    </tr>
    <tr>
-      <td><code>parameterizedJob</code><br/>Parameterized job</td>
+      <td><code>isParameterizedJob</code><br/>Parameterized job</td>
       <td>
          <p>(Required) Select if the Jenkins job accepts parameters. This job should be selected even if all default parameter values are used and no parameters are specified.</p><br/>Default value: false
       </td>
