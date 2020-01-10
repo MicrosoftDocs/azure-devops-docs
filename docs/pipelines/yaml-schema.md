@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/16/2019
+ms.date: 1/10/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -951,7 +951,7 @@ In the main pipeline:
 ```yaml
 parameters:
 - name: string          # name of the parameter; required
-  type:                 # data type
+  type: enum            # data types, see below
   default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
   values: [ string ]    # allowed list of values (for some data types)
   secret: bool          # whether to treat this value as a secret; defaults to false
@@ -962,10 +962,11 @@ And in the extended template:
 ```yaml
 parameters: { string: any }   # expected parameters
 ```
+See all [parameter data types](process/templates.md#parameter-data-types). 
 
 # [Example](#tab/example)
 
-In this example, a set of parameters is repeated across a second pipeline.
+In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
