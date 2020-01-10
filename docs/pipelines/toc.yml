@@ -25,8 +25,6 @@
   - name: Pipeline run sequence
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
-  - name: Multi-stage CD pipeline  
-    href: release/define-multistage-release-process.md
   - name: Jobs & stages 
     items:
     - name: Specify jobs in your pipeline
@@ -79,12 +77,16 @@
       displayName: secrets, expressions, queue time, expansion
     - name: Use predefined variables
       href: build/variables.md
+    - name: Use classic RM variables
+      href: release/variables.md
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
     - name: Add & use variable groups 
       href: library/variable-groups.md
       displayName: Azure key vault, link secrets, expansion, expand variables
     - name: Secure files
       href: library/secure-files.md
+    - name: Manage service connections
+      href: library/service-endpoints.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
@@ -142,16 +144,12 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
-- name: Build & deploy apps
+- name: Build apps
   items:
-  - name: Build options
-    href: build/options.md
   - name: Build multiple branches
     href: build/ci-build-git.md
   - name: Build on multiple platforms
     href: get-started-multiplatform.md
-  - name: Run parallel jobs (licensing) 
-    href: licensing/concurrent-jobs.md
   - name: Use service containers
     href: process/service-containers.md
   - name: Cross-platform scripts
@@ -165,6 +163,8 @@
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
+  - name: Classic Build options
+    href: build/options.md
 - name: Run pipeline tests
   items:
   - name: About pipeline tests (New) 
@@ -212,6 +212,8 @@
   - name: Specify demands 
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
+  - name: Classic CD pipelines
+    href: release/define-multistage-release-process.md
   - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
@@ -340,9 +342,9 @@
     href: process/resources.md
   - name: Set retention policies
     href: policies/retention.md
-  - name: Manage service connections
-    href: library/service-endpoints.md
     displayName: service endpoints
+  - name: Paying for parallel jobs
+    href: licensing/concurrent-jobs.md
   - name: Manage permissions & security
     items: 
 #    - name: About security options and requirements (New)
