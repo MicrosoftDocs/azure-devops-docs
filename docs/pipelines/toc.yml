@@ -142,7 +142,7 @@
     href: ecosystems/xamarin.md
   - name: Xcode
     href: ecosystems/xcode.md
-- name: Build & deploy apps
+- name: Build apps
   items:
   - name: Build multiple branches
     href: build/ci-build-git.md
@@ -161,8 +161,6 @@
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
-  - name: Classic CD pipelines
-    href: release/define-multistage-release-process.md
   - name: Classic Build options
     href: build/options.md
 - name: Run pipeline tests
@@ -212,6 +210,8 @@
   - name: Specify demands 
     href: process/demands.md
     displayName: task demands, manually entered demands, capabilities
+  - name: Classic CD pipelines
+    href: release/define-multistage-release-process.md
   - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
