@@ -142,8 +142,6 @@
     href: ecosystems/xcode.md
 - name: Build & deploy apps
   items:
-  - name: Build options
-    href: build/options.md
   - name: Build multiple branches
     href: build/ci-build-git.md
   - name: Build on multiple platforms
@@ -165,6 +163,8 @@
     displayName: build number, run number, tokens, variables, 
   - name: Classic CD pipelines
     href: release/define-multistage-release-process.md
+  - name: Classic Build options
+    href: build/options.md
 - name: Run pipeline tests
   items:
   - name: About pipeline tests (New) 
