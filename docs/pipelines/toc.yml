@@ -83,6 +83,8 @@
       displayName: Azure key vault, link secrets, expansion, expand variables
     - name: Secure files
       href: library/secure-files.md
+    - name: Manage service connections
+      href: library/service-endpoints.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports
@@ -338,8 +340,6 @@
     href: process/resources.md
   - name: Set retention policies
     href: policies/retention.md
-  - name: Manage service connections
-    href: library/service-endpoints.md
     displayName: service endpoints
   - name: Paying for parallel jobs
     href: licensing/concurrent-jobs.md
