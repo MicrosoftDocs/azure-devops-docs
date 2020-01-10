@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 12/06/2019
+ms.date: 01/10/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -409,7 +409,17 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-The project must be in the same organization; cross-organization references are not supported.
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md) with access to the project and include that in YAML:
+
+```yaml
+resources:
+  repositories:
+  - repository: templates
+    name: Contoso/BuildTemplates
+    endpoint: myServiceConnection # Azure DevOps service connection
+jobs:
+- template: common.yml@templates
+```
 
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
