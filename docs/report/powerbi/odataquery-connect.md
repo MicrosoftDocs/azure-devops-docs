@@ -1,5 +1,5 @@
 ---
-title: with data by using OData queries
+title: Connect with data by using OData queries
 titleSuffix: Azure DevOps
 description: Write and test OData queries for use in Power BI integration
 ms.prod: devops
@@ -51,7 +51,7 @@ In Visual Studio Code, create and save a file called *filename.odata*. You may n
 
 Write the OData query. For example queries, review the [Overview of sample reports using OData queries](sample-odata-overview.md). 
 
-The following query returns the top 10 work items under a specific area path. You'll need to replace {organization}, {project}, and {area path} with your values.
+The following query returns the top 10 work items under a specific area path. Replace {organization}, {project}, and {area path} with your values.
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -92,7 +92,7 @@ After you've verified that the query works correctly, you can run it from Power 
 Before you use the query in Power BI, you must convert the multiline OData query into a single-line query. The simplest way to do this is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata) and use the **OData: Combine** command.
 
 > [!NOTE]
-> In your *filename.odata* file, you might want to first create a copy of the multiline query text and then run **OData: Combine** on the copy. You do this because there is no way to convert the single-line query back to a readable multiline query. 
+> In your *filename.odata* file, you might want to first create a copy of the multiline query text and then run **OData: Combine** on the copy. You do this because there's no way to convert the single-line query back to a readable multiline query. 
 
 In Visual Studio Code, place your query anywhere in the query text, and then select **View** > **Command Palette**. In the search box, type **odata** and then, in the results list, select **OData: Combine**.
 
@@ -104,9 +104,9 @@ Copy the entire line for use in the next section.
 
 ### 2. Run the query from Power BI
 
-Open Power BI, select **Get Data**, and then select the OData Feed connector. For more information, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
+Open Power BI, select **Get Data**, and then select the **OData feed** connector. For more information, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
 
-![Power BI - OData Feed connector](_img/ODataQuery.png)
+![Power BI - "OData feed" command](_img/ODataQuery.png)
 
 In the **OData feed** window, in the **URL** box, paste the OData query that you copied in the preceding section, and then select **OK**.
 
@@ -127,7 +127,7 @@ In the ribbon, select **Advanced Editor**.
 
 ![Power BI - OData Feed - Select Advanced Editor](_img/AdvancedEditor.png)
 
-In the Query pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
+In the **Query** pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
 
 ![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor1.png)
 
