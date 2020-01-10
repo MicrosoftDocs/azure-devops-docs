@@ -118,7 +118,9 @@ Link from these topics to this article:
 - About area paths and iteration paths
 - Define area paths
 - Define iteration paths
-
+- Choose a process 
+- Inherited process model
+- On-premises process model 
 
 --> 
 
