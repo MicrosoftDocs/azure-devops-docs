@@ -25,8 +25,6 @@
   - name: Pipeline run sequence
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
-  - name: Multi-stage CD pipeline  
-    href: release/define-multistage-release-process.md
   - name: Jobs & stages 
     items:
     - name: Specify jobs in your pipeline
@@ -165,6 +163,8 @@
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
+  - name: Classic CD pipelines
+    href: release/define-multistage-release-process.md
 - name: Run pipeline tests
   items:
   - name: About pipeline tests (New) 
