@@ -13,11 +13,16 @@ monikerRange: 'azure-devops'
  
 # Azure Pipelines with Slack
 
+[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+
 If you use [Slack](https://slack.com), you can use the [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines) to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, 
 pending approvals and more from the app and get notifications for these events in your Slack channels.
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](_img/integrations-slack/notifications.png)
+
+
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
 
 ## Add the Azure Pipelines app to your Slack workspace
 

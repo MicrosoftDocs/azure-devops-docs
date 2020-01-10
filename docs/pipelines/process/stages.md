@@ -13,7 +13,7 @@ ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Stages
+# Add stages, dependencies, & conditions  
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -58,7 +58,8 @@ and [queuing policies](#queuing-policies).
 ![stage](../release/_img/definition-02.png)
 
 * * *
-## Specifying stages
+* 
+## Specify stages
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
@@ -155,9 +156,11 @@ for a stage in a release pipeline. You can:
 ![Defining options and policies](../release/_img/environments-03.png)
 
 * * *
-## Dependencies
+
+## Specify dependencies
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file.
@@ -244,6 +247,7 @@ You control the dependencies by setting the triggers on each stage of the releas
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
 
 #### [YAML](#tab/yaml/)
+
 ::: moniker range="azure-devops"
 
 Example to run a stage based upon the status of running a previous stage:
@@ -288,11 +292,14 @@ YAML is not supported in this version of TFS.
 
 
 #### [Classic](#tab/classic/)
+
 When you specify **After release** or **After stage** triggers, you can also specify the branch filters for the artifacts that are consumed in the release. Only when the branch filters are satisfied will the release be deployed to the given stage.
 
 * * *
+
 <a name="queuing-policies"></a>
-## Queuing policies
+
+## Specify queuing policies
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -372,7 +379,7 @@ defined.
 
 * * *
 
-## Approvals
+## Specify approvals
 
 #### [YAML](#tab/yaml/)
 

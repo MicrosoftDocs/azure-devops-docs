@@ -13,19 +13,20 @@ monikerRange: '>= azure-devops-2019'
 author: juliakm
 ---
 
-# Container jobs
+# Define container jobs (YAML)
 
-**Azure Pipelines**
+[!INCLUDE [version-server-2019-rtm](../_shared/version-server-2019-rtm.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
 Over time, you may find that you want more control over the context where your tasks run.
 
-<!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
-::: moniker range=">= azure-devops-2019"
+
+> [!NOTE] 
+> The Classic editor doesn't support container jobs at this time.
+
 [!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
-::: moniker-end
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
@@ -75,8 +76,6 @@ See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-j
 
 The `win1803` and `ubuntu-16.04` pools support running containers.
 The Hosted macOS pool does not support running containers.
-
-# [YAML](#tab/yaml)
 
 ## Single job
 
@@ -142,9 +141,7 @@ steps:
   - script: printenv
 ```
 
-## Other settings
-
-### Endpoints
+## Endpoints
 
 Containers can be hosted on registries other than Docker Hub. To host
 an image on [Azure Container Registry](/azure/container-registry/) or
@@ -175,7 +172,7 @@ steps:
 Other container registries may also work.
 Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
 
-### Options
+## Options
 
 If you need to control container startup, you can specify `options`.
 
@@ -190,7 +187,7 @@ steps:
 
 Running `docker create --help` will give you the list of supported options.
 
-### Reusable container definition
+## Reusable container definition
 
 In the following example, the containers are defined in the resources section.
 Each container is then referenced later, by referring to its assigned alias.
@@ -228,8 +225,5 @@ jobs:
     - script: printenv
 ```
 
-# [Classic](#tab/classic)
 
-Container jobs are not yet supported in the classic editor.
 
----

@@ -82,6 +82,15 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
+You can use a pipe character (`|`) for multiline strings. 
+
+```yaml
+myKey: |
+  one
+  two
+  three
+```
+
 ### Version
 A version number with up to four segments.
 Must start with a number and contain two or three period (`.`) characters.
