@@ -17,9 +17,6 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
-<a name="prerequisites"></a>  
-<a name="testreporting"></a>
-
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
 in order to measure pipeline quality, review traceability, troubleshoot failures and drive failure ownership.
@@ -296,7 +293,7 @@ The following features are not available for inferred test reports:
 > If you have configured a non-default console output for your test runner, or you are using a custom reporter,
 > Azure DevOps will not be able to infer the test results. It can only infer the results from the [default](https://mochajs.org/#spec) reporter. 
 
-## See also
+## Related articles 
 
 * [Analyze test results](test-analytics.md)
 * [Trace test requirements](requirements-traceability.md)

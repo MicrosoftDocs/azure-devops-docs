@@ -19,7 +19,7 @@ Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple
 
 While it is possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the KubernetesManifest task and Kubernetes service connection can be used to do this in a simpler and more secure way. 
 
-## Kubernetes Manifest task
+## KubernetesManifest task
 
 [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) has the added benefits of being able to check for object stability before marking a task as success/failure, perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy rollouts.
 
@@ -86,6 +86,7 @@ Note that to allow image pull from private registries, prior to the `deploy` act
 > -  While YAML based pipeline currently supports triggers on a single Git repository, if triggers are required for manifest files stored in another Git repository or if triggers are required for Azure Container Registry or Docker Hub, usage of release pipelines instead of a YAML based pipeline is recommended for doing the Kubernetes deployments.
 
 ## Alternatives
+
 Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
 - [Kubectl task](../../tasks/deploy/kubernetes.md)
 - kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```

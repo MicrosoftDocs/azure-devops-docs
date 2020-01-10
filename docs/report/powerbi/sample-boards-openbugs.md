@@ -176,7 +176,7 @@ You can query for open bugs by Area Path and a specific Iteration.
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and startswith(Area/AreaPath,'{areapath}') "
             &"and startswith(Iteration/IterationPath,'{iterationpath}') "
@@ -192,7 +192,7 @@ in
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and startswith(Area/AreaPath,'{areapath}')
             and startswith(Iteration/IterationPath,'{iterationpath}')
