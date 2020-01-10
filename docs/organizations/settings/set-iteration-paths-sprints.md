@@ -777,7 +777,7 @@ You can rename, move, or delete an iteration path for a project, using the follo
 
 ### Rename or move a project iteration path 
 
-To rename or move an area path, use the `az boards area project update` command.
+To rename or move a project iteration path, use the `az boards area project update` command.
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
