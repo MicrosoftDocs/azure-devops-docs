@@ -48,8 +48,9 @@ You can access Analytics data through the Power BI Desktop OData feed.
     ![Enter OData Feed URL](_img/pbi3.png)  
 
    > [!NOTE]  
-   >Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following URL. Using this format will trim the results by the specified project across all entities related to that project. 
-   >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/` 
+   >Alternatively, you can enter the URL with the *ProjectName* specified, as shown in the following example:  
+   >`https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}/`
+   >Using this format trims the results by the specified project across all entities related to that project.
 
 1. At the prompt, authenticate against the service. If you have not already done so, see [Client Authentication Options](client-authentication-options.md). 
 
@@ -69,7 +70,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
    > - Instruct Power BI to reference OData v4.
    > - Instruct the Analytics service to omit any values that are null, which improves query performance.
 
-1. For each entity you've selected in the preceding steps, do the following:
+1. For each entity that you've selected in the preceding steps, do the following:
 
     a. In the **Queries** list, select an entity whose query you want to. In this example, **Areas** is selected.
       
@@ -79,7 +80,7 @@ You can access Analytics data through the Power BI Desktop OData feed.
     
     ![The Power BI OData Feed Advanced Editor button](_img/AdvancedEditor.png)
     
-    c. In the Query pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
+    c. In the **Query** pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
     
     ![The Advanced Editor Query pane](_img/odataquery-powerbi-advancededitor1.png)
     
