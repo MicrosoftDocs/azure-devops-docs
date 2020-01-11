@@ -150,7 +150,7 @@ Replace `[Implementation="2.0"]` with the following string:
 > The following action is required for Power BI to successfully run an OData query against the Azure DevOps Analytics Service.
 >
 > Select **OK** to close the Advanced Editor and return to the Power BI Power Query Editor. You can use Power Query Editor to perform these optional actions:  
-> - Rename the 'Query1" query as something more specific.
+> - Rename the "Query1" query as something more specific.
 > - Transform columns to a specific type. Power BI auto-detects the type, but you might want to convert column to a specific data type. 
 > - Add computed columns.
 > - Remove columns.
