@@ -21,12 +21,12 @@
     href: ../backlogs/manage-bugs.md
   - name: Manage issues
     href: ../backlogs/manage-issues-impediments.md
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md
   - name: "Move, change, or delete"
     href: ../backlogs/remove-delete-work-items.md
   - name: Link work items
     href: ../backlogs/add-link.md?
-  - name: Bulk modify (web)
-    href: ../backlogs/bulk-modify-work-items.md
   - name: Copy/clone 
     href: ../backlogs/copy-clone-work-items.md
 - name: Concepts
