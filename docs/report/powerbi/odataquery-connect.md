@@ -33,7 +33,7 @@ In this article, you learn how to:
 
 ## Use Visual Studio Code to write and test OData queries
 
-The easiest way to write and test OData is to use [Visual Studio Code (VS Code)](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). VS Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries. 
+The easiest way to write and test OData is to use [Visual Studio Code](https://aka.ms/vscode) with the [OData extension](https://marketplace.visualstudio.com/items?itemName=stansw.vscode-odata). Visual Studio Code is a free code editor available on Windows, Mac, and Linux. The OData extension provides syntax highlighting and other functions that are useful for writing and testing queries. 
 
 ### 1. Install Visual Studio Code
  
@@ -65,23 +65,23 @@ For more information about how to write OData queries against Analytics, see [OD
 
 After you've written the query in Visual Studio Code, you should see syntax highlighting:
 
-![VS Code OData extension - syntax highlighting](_img/odataquery-syntaxhighlighting.png)
+![Visual Studio Code OData extension - syntax highlighting](_img/odataquery-syntaxhighlighting.png)
 
 ### 5. Test the OData query
 
 To test the OData query, place your cursor anywhere in the query text and select **View** > **Command Palette**. In the search box, type **odata** to bring up all the OData commands:
 
-![VS Code OData extension - Command Palette](_img/odataquery-commandpallette.png)
+![Visual Studio Code OData extension - Command Palette](_img/odataquery-commandpallette.png)
 
 Select **OData: Open**. This action combines the multiline query into a one-line URL and opens it in your default browser. 
 
 The OData query result set is in JSON format. To view the results, install the JSON Formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
-![VS Code OData extension - JSON Output](_img/odataquery-jsonoutput.png)
+![Visual Studio Code OData extension - JSON output](_img/odataquery-jsonoutput.png)
 
 If the query has an error, the Analytics service returns an error in JSON format. For example, this error states that the query has selected a field that doesn't exist:
 
-> ![VS Code OData extension - JSON Error](_img/odataquery-jsonerror.png)
+> ![Visual Studio Code OData extension - JSON error](_img/odataquery-jsonerror.png)
 
 After you've verified that the query works correctly, you can run it from Power BI.
 
@@ -98,7 +98,7 @@ In Visual Studio Code, place your query anywhere in the query text, and then sel
 
 The multiline query is converted into a single-line query.
 
-![VS Code OData extension - Combine to single-line query](_img/odataquery-combineto1line.png)
+![Visual Studio Code OData extension - Combine to single-line query](_img/odataquery-combineto1line.png)
 
 Copy the entire line for use in the next section.
 
