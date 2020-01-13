@@ -63,7 +63,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
 
 # [Example](#tab/example)
 
-If you need to consume artifacts from an azure pipeline within the current project, here is simple schema.
+If you need to consume artifacts from an Azure pipeline within the current project, here is simple schema.
 
 ```yaml
 resources:
@@ -370,6 +370,5 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](./_img/environments-commits.png)
-
 
 
