@@ -30,7 +30,11 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
 ::: moniker-end  
 
-1. Make sure that you've [configured the permissions required to access Analytics](analytics-security.md).  
+::: moniker range="azure-devops"
+
+1. Make sure that you've [configured the permissions required to access Analytics](analytics-security.md).
+
+::: moniker-end
 
 1. Open Power BI Desktop. If you haven't already done so, [install Power BI Desktop now](https://powerbi.microsoft.com/desktop).  
 
