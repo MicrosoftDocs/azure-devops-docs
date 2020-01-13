@@ -24,13 +24,14 @@ You can use this command to roll back the effects of one or more changesets to o
 
 To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-	tf rollback /toversion:VersionSpec ItemSpec [/recursive] [/lock:none|checkin|checkout] [/version:versionspec] [/keepmergehistory] [/login:username,[password]] [/noprompt]
+```
+tf rollback /toversion:VersionSpec ItemSpec [/recursive] [/lock:none|checkin|checkout] [/version:versionspec] [/keepmergehistory] [/login:username,[password]] [/noprompt]
+```
 
-&nbsp;
-
-	tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:none|checkin|checkout] [/version:VersionSpec]
-	[/keepmergehistory] [/noprompt] [/login:username,[password]]
-
+```
+tf rollback /changeset:ChangesetFrom~ChangesetTo [ItemSpec] [/recursive] [/lock:none|checkin|checkout] [/version:VersionSpec]
+[/keepmergehistory] [/noprompt] [/login:username,[password]]
+```
 
 ## Parameters
 
@@ -112,19 +113,28 @@ The exit codes in the following table appear after you run the **tf rollback** c
 ## Examples
 The following example negates the effect of changeset **23** on all items that were changed in that changeset.
 
-    c:\workspace> tf rollback /changeset:C23
+```
+c:\workspace> tf rollback /changeset:C23
+```
 
 The following example negates the effect of changeset 23 on the file **a.txt**.
 
-    c:\workspace> tf rollback /changeset:C23 a.txt
+```
+c:\workspace> tf rollback /changeset:C23 a.txt
+```
 
 The following example changes the content of **a.txt** to match the version that was checked in with changeset 23.
 
-    c:\workspace> tf rollback /toversion:C23 a.txt
+```
+c:\workspace> tf rollback /toversion:C23 a.txt
+```
 
 The following example changes the content of **OurTeamProject** to match the last changeset that was applied on or before midnight on August 31, 2009.
 
-    c:\workspace> tf rollback /toversion:D08/31/2009 /recursive $/OurTeamProject/
+```
+c:\workspace> tf rollback /toversion:D08/31/2009 /recursive $/OurTeamProject/
+```
+
 ## Example: /keepmergehistory Option
 When you roll back a changeset that includes a branch or a merge change, you usually want future merges between the same source and the same target to include those changes. However, you can use the **/keepmergehistory** option if you want future merges between the same source and the same target to exclude changesets that were encompassed in a past merge operation.
 
@@ -132,7 +142,9 @@ For example, you can use this command in the following situation:
 
 1.  In On June 30, 2009, you perform a full merge of all items from **$/BranchA/** to **$/BranchB/**:
 
-		c:\workspace> tf merge $/BranchA $/BranchB
+    ```
+	c:\workspace> tf merge $/BranchA $/BranchB
+    ```
 
     You check in this merge as part of changeset 292.
 
@@ -140,7 +152,9 @@ For example, you can use this command in the following situation:
 
 3.  On August 1, 2009, you merge **$/BranchA/Util.cs** to **$/BranchB/Util.cs**:
 
-		c:\workspace> tf merge $/BranchA/Util.cs $/BranchB/Util.cs
+    ```
+	c:\workspace> tf merge $/BranchA/Util.cs $/BranchB/Util.cs
+    ```
 
     You check in the change as part of changeset 314. The result of this operation is that the edits that you made in changesets 297, 301, and 305 to **$/BranchA/Util.cs** are now also applied to **$/BranchB/Util.cs**.
 
@@ -148,15 +162,21 @@ For example, you can use this command in the following situation:
 
     -   If you want the changes that you made in July to **$/BranchA/Util.cs** to be re-applied to **$/BranchB/Util.cs** in future merges, you should type the following command:
 
-			c:\workspace> tf rollback /changeset:314
+        ```
+		c:\workspace> tf rollback /changeset:314
+        ```
 
     -   If you want the changes that you made in July to **$/BranchA/Util.cs** to never be re-applied to **$/BranchB/Util.cs** in future merges, you should type the following command:
 
-			c:\workspace> tf rollback /changeset:314 /keepmergehistory
+        ```
+    	c:\workspace> tf rollback /changeset:314 /keepmergehistory
+        ```
 
 5.  A few weeks later, you merge **$/BranchA/** into **$/BranchB/**:
 
-		c:\workspace> tf merge $/BranchA $/BranchB
+    ```
+	c:\workspace> tf merge $/BranchA $/BranchB
+    ```
 
     -   If you omitted the **/keepmergehistory** option, the **merge** change will apply to **$/BranchB/Util.cs** all changesets that were applied to **$/BranchA/Util.cs** since changeset 292, including changesets 297, 301, 305. In other words, a future merge will undo the **rollback** change.
 

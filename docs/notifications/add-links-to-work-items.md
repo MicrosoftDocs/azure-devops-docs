@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/30/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
 
-Use the **#ID** control to quickly link objects to work items. With this control, you can specify or select a work item ID and it is automatically linked to the object. 
+The **#ID** control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
 
-Use the **#ID**control within the following areas:
+Use the **#ID** control within the following areas:
 
 ::: moniker range="azure-devops"
 - A work item discussion or any rich-text field
@@ -56,11 +56,11 @@ Use the **#ID**control within the following areas:
 
 ## Link a pull request to a work item
 
-When you are leaving a code comment in a pull request, you can enter **#** to trigger the **#ID** work item picker. The picker displays a list of 50 work items that you have recently modified or that are assigned to you.
+Enter **#** to trigger the **#ID** work item picker in your pull request comment. See a list of 50 work items you've recently modified or are assigned to you.
 
-You can narrow the list of suggested work items by entering keywords that match the work item type, ID, or title, or you can enter the exact work item ID.
+Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
 
-<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, type # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
+<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, enter # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
 
 
 ## Link to work items in pull requests, comments, and commits
@@ -78,7 +78,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 Use the **#ID** control to link to a work item from within a Wiki page.
 
-To learn more about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
+For more information about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md).
 
 ::: moniker-end
 

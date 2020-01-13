@@ -166,7 +166,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
 <li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
 <li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
+<li><a href="set-permissions-access-work-tracking.md">Customize process</a></li>
 </ul>
 <h4>Reporting permissions</h4>
 <ul>
@@ -208,8 +208,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>

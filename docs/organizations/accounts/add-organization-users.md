@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](/organization-management.md).
+This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
 The following types of users can join your organization for free:
 

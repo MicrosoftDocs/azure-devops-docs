@@ -75,7 +75,7 @@ Queries you and others save under **Shared Queries** can be viewed by everyone w
 For details, see:
 - [Organize queries, add a query folder](organize-queries.md)
 - [Set query permissions](set-query-permissions.md)
-- [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
+- [Favorite a query](view-run-query.md) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
 
 <a id="examples"/>
 

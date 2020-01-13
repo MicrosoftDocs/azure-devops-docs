@@ -72,41 +72,44 @@ Now that his workspace is clean, Peter drags the new task from **Available Work 
 
 Peter opens and reads the bug work item. According to the description that has been written by a member of the test team, a paid invoice is sometimes incorrectly flagged as unpaid. There is a lab environment snapshot attached to the bug work item. Peter is able to open the virtual machines on which the test was run, see the incorrect invoice, and step back through the IntelliTrace log. He traces the fault to the following method:
 
-        public class LocalMath
-        {       
-            public static bool EqualTo(double a, double b)
-            {
-              return a == b;
-            }
+```csharp
+public class LocalMath
+{
+    public static bool EqualTo(double a, double b)
+    {
+        return a == b;
+    }
+```
 
 From the IntelliTrace log, Peter sees that sometimes the method returns false because the parameters differ by an extremely small amount. Peter knows that rounding errors of this kind are unavoidable in floating point arithmetic, and that it is bad practice to test floating point numbers for equality.
 
 ## Augment the tests to show the error
 When a bug is found, it shows that there was a gap in the unit tests, or that the test did not match the users' actual needs. Therefore, before fixing the bug, Peter adds a test that will demonstrate the presence of this error.
 
-     
-            // Added 2012-02-02 for bug 654321:
-            /// <summary>
-            /// Make sure that number equality test allows for 
-            /// small rounding errors.
-            /// </summary>
-            [TestMethod]
-            public void TestDoublesEqual()
-            {
-                // We allow a rounding error of 1 in 1000000:
-                TestEqual(1, 1e-7, true); // Less than allowed error
-                TestEqual(1, 1e-5, false); // More than allowed error
-                TestEqual(1000, 1e-7, true); // Less than allowed error
-                TestEqual(1000, 1e-5, false); // More than allowed error
-            }
-            private void TestEqual(double value, double error, bool result)
-            {
-                // Try different combinations of error and value:
-                Assert.IsTrue(result == LocalMath.EqualTo(value + error, value));
-                Assert.IsTrue(result == LocalMath.EqualTo(value, value + error));
-                Assert.IsTrue(result == LocalMath.EqualTo(value - error, value));
-                Assert.IsTrue(result == LocalMath.EqualTo(value, value - error));
-            }
+```csharp
+// Added 2012-02-02 for bug 654321:
+/// <summary>
+/// Make sure that number equality test allows for 
+/// small rounding errors.
+/// </summary>
+[TestMethod]
+public void TestDoublesEqual()
+{
+    // We allow a rounding error of 1 in 1000000:
+    TestEqual(1, 1e-7, true); // Less than allowed error
+    TestEqual(1, 1e-5, false); // More than allowed error
+    TestEqual(1000, 1e-7, true); // Less than allowed error
+    TestEqual(1000, 1e-5, false); // More than allowed error
+}
+private void TestEqual(double value, double error, bool result)
+{
+    // Try different combinations of error and value:
+    Assert.IsTrue(result == LocalMath.EqualTo(value + error, value));
+    Assert.IsTrue(result == LocalMath.EqualTo(value, value + error));
+    Assert.IsTrue(result == LocalMath.EqualTo(value - error, value));
+    Assert.IsTrue(result == LocalMath.EqualTo(value, value - error));
+}
+```
 
 He runs the test and it fails as expected.
 
@@ -115,14 +118,16 @@ He runs the test and it fails as expected.
 ## Make the tests pass
 Peter fixes the code:
 
-            public static bool EqualTo(double a, double b)
-            {
-                // Allow for rounding errors.
-                // For example, a == 2.0 and b = 1.99999999999
+```csharp
+public static bool EqualTo(double a, double b)
+{
+    // Allow for rounding errors.
+    // For example, a == 2.0 and b = 1.99999999999
 
-                const double allowedError = 1/1000000;
-                return System.Math.Abs(a - b) < allowedError;
-            }
+    const double allowedError = 1/1000000;
+    return System.Math.Abs(a - b) < allowedError;
+}
+```
 
 The test now passes:
 
@@ -159,12 +164,14 @@ Julia receives the code review request and accepts it. She reviews the code, wri
 
 In her comments, Julia points out that the test is wrong. The allowable error should be a specified fraction of the input values, not a constant quantity. So the test should multiply the error by the value.
 
-                // We allow a rounding error of 1 in 1000000
-                // as a fraction of the value:
-                TestEqual(1, 1e-7, true); // Less than allowed error
-                TestEqual(1, 1e-5, false); // More than allowed error
-                TestEqual(1000, 1000*1e-7, true); // Less than allowed error
-                TestEqual(1000, 1000*1e-5, false); // More than allowed error
+```csharp
+// We allow a rounding error of 1 in 1000000
+// as a fraction of the value:
+TestEqual(1, 1e-7, true); // Less than allowed error
+TestEqual(1, 1e-5, false); // More than allowed error
+TestEqual(1000, 1000*1e-7, true); // Less than allowed error
+TestEqual(1000, 1000*1e-5, false); // More than allowed error
+```
 
 > [!TIP]
 > Notice that the team members use the tests as a focus for discussion. If the tests are correct and sufficient, the code will be also. Unlike the code, each test represents a separate case. For this reason, the tests are often easier to discuss than the code.
@@ -225,16 +232,18 @@ Having read Julia's comments, Peter fixes his unit test as she suggests. The tes
 
 Peter fixes the code:
 
-            /// <summary>
-            /// Returns true if two numbers are equal.
-            /// </summary>
-            public static bool EqualTo(double a, double b)
-            {
-                // Allow for rounding errors.
-                const double allowedErrorMultiple = 1/1000000;
-                double allowedError = (System.Math.Abs(a) + System.Math.Abs(b)) * allowedErrorMultiple/2;
-                return System.Math.Abs(a - b) < allowedError;
-            }
+```csharp
+/// <summary>
+/// Returns true if two numbers are equal.
+/// </summary>
+public static bool EqualTo(double a, double b)
+{
+    // Allow for rounding errors.
+    const double allowedErrorMultiple = 1/1000000;
+    double allowedError = (System.Math.Abs(a) + System.Math.Abs(b)) * allowedErrorMultiple/2;
+    return System.Math.Abs(a - b) < allowedError;
+}
+```
 
 The test passes once again:
 

@@ -116,7 +116,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">move the work item to a different project</a>. </p>
+<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
 <p>Choose <img src="../boards/_img/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/_img/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
@@ -140,7 +140,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
@@ -1309,7 +1309,7 @@ pipelines\tasks\build\_img
 <img src="_img/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/><br/>
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
-<p><a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget)">Add a release summary chart</a> to a team dashboard. </p>
+<p><a href="../report/dashboards/widget-catalog.md" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md)">Add a release summary chart</a> to a team dashboard. </p>
 
 </td>
 <td width="33%">
@@ -1571,7 +1571,7 @@ pipelines\tasks\build\_img
 <p>Configurable tile that shows you a consolidated view of the <a href="../report/dashboards/widget-catalog.md" data-raw-source="[deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md)">deployment status and test pass rate across multiple environments for a recent set of builds</a>.<br/> </p>
 
 <p><b>Release definition overview</b></p>
-<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md#release-definition-widget)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
+<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
  </p>
 
 <p><b>Test trend results </b></p>
