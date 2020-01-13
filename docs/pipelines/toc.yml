@@ -13,18 +13,22 @@
     displayName: status badge, get started, first pipeline, import from github
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
-# - name: Publish build results (New)
+# - name: Publish build results 
 #   href: get-started/pipelines-get-started.md
   - name: Customize with scripts & tasks
     href: customize-pipeline.md
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
-# - name: Clean up pipeline steps (New)
+  - name: Multi-stage pipelines user experience
+    href: get-started/multi-stage-pipelines-experience.md
+# - name: Clean up pipeline steps 
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
   items:
   - name: Pipeline run sequence
     href: process/runs.md
     displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
+  - name: Key concepts
+    href: get-started/key-pipelines-concepts.md
   - name: Jobs & stages 
     items:
     - name: Specify jobs in your pipeline
@@ -167,7 +171,7 @@
     href: build/options.md
 - name: Run pipeline tests
   items:
-  - name: About pipeline tests (New) 
+  - name: About pipeline tests 
     href: test/test-glossary.md
   - name: Set up parallel testing (VSTest)
     href: test/parallel-testing-vstest.md
