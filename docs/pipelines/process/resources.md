@@ -43,7 +43,7 @@ resources:
 
 If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
 
-# [Resource Schema](#tab/resource-schema)
+# [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
@@ -61,7 +61,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
 ```
 
-# [YAML](#tab/yaml)
+# [Example](#tab/example)
 
 If you need to consume artifacts from an Azure pipeline within the current project, here is simple schema.
 
@@ -107,6 +107,7 @@ resources:
       - releases/*
       - master
 ```
+---
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
 > But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch. 
@@ -114,6 +115,17 @@ resources:
 ### `download` for pipelines
 
 All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
+
+# [Schema](#tab/schema)
+
+```yaml
+steps:
+- download: [ current | pipeline resource identifier | none ] # disable automatic download if "none"
+  artifact: string ## artifact name, optional; downloads all the available artifacts if not specified
+  patterns: string # patterns representing files to include; optional
+```
+
+# [Example](#tab/schema)
 
 ```yaml
 - job: deploy_windows_x86_agent
@@ -128,6 +140,7 @@ Or to avoid downloading any of the artifacts at all:
 ```yaml
 - download: none
 ```
+---
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder; see [artifact download location](#artifact-download-location) for more details.
 
 ### pipeline resource variables
@@ -167,7 +180,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
 
 `builds` is an extensible category. You can write an extension to consume artifacts from your builds service (CircleCI, TeamCity etc.) and introduce a new type of service to be part of `builds`. Currently, we are providing Jenkins resource as a type in `builds`.
 
-# [Schema](#tab/example)
+# [Example](#tab/example)
 
 ```yaml
 resources:
@@ -178,7 +191,10 @@ resources:
     source: SpaceworkzProj   # name of the jenkins source project
     trigger: true
 ```
-Note: Triggers are only supported for hosted Jenkins where Azure DevOps has line of sight with Jenkins server.
+---
+
+> [!IMPORTANT]
+> Triggers are only supported for hosted Jenkins where Azure DevOps has line of sight with Jenkins server.
 
 ### `downloadBuild` for builds
 
@@ -195,7 +211,7 @@ Note: `build` resource artifacts are not automatically downloaded in your jobs/d
   patterns: string | [ string ] # a minimatch path or list of [minimatch paths](tasks/file-matching-patterns.md) to download; if blank, the entire artifact is downloaded
 ```
 
-# [Schema](#tab/example)
+# [Example](#tab/example)
 You can customize the download behavior for each deployment or job.
 ```yaml
 - job: deploy_windows_x86_agent
@@ -203,11 +219,12 @@ You can customize the download behavior for each deployment or job.
   - downloadBuild: Spaceworkz   # build resource identifier.
     patterns: '**/*.zip'  # mini match pattern to download specific files, optional; defaults to all files.
 ```
+---
+
 ## Resources: `repositories`
 
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
-
 
 # [Schema](#tab/schema)
 
@@ -255,9 +272,10 @@ The `git` type refers to Azure Repos Git repos.
 
 ### `checkout` your repository
 
-Use `checkout` keyword to consume your repos defined as part of `repository` resource.
+Use `checkout` keyword to consume your repos defined as part of `repository` resource. 
 
-Note: Repos from `repository` resource are not automatically synced in your jobs and you need to explicitly use `checkout` to fetch your repos as part of your jobs.
+
+# [Schema](#tab/schema)
 
 ```yaml
 steps:
@@ -269,6 +287,8 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
+---
+Repos from `repository` resource are not automatically synced in your jobs and you need to explicitly use `checkout` to fetch your repos as part of your jobs.
 
 For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
 
@@ -294,7 +314,7 @@ resources:
 ```
 A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](process/container-phases.md).
 
-# [Schema](#tab/example)
+# [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -323,7 +343,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
-# [Schema](#tab/example)
+# [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -339,7 +359,7 @@ resources:
         include: 
         - production* 
 ```
-
+---
 #### Container resource variables
 Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry and connection details are made accessible across all the jobs to be used in your container deploy tasks.
 
