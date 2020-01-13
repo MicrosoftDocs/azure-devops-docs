@@ -19,7 +19,7 @@ monikerRange: azure-devops
 
 A resource is anything used by a pipeline that lives outside the pipeline. 
 
-An example of a resource can be another CI/CD pipeline that produces artifacts (say Azure pipelines, Jenkins etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker hub etc.) or package feeds (Azure Artifact feed, Artifactory package etc.).  
+A resource can be another CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker Hub, etc.) or package feeds (Azure Artifact feed, Artifactory package etc.).  
 
 ## Why resources?
 
