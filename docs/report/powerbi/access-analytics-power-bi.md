@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 09/10/2018
+ms.date: 01/13/2020
 ---
 
 # Connect to Analytics data by using the Power BI OData feed
@@ -26,7 +26,8 @@ You can access Analytics data through the Power BI Desktop OData feed.
 
 ::: moniker range="azure-devops-2019"
 
-1. Make sure that you've [enabled or installed Analytics](../dashboards/analytics-extension.md).  
+> [!IMPORTANT]  
+> Make sure that you've [enabled or installed Analytics](../dashboards/analytics-extension.md).  
 
 ::: moniker-end  
 
