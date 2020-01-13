@@ -24,12 +24,18 @@ Stores a set of pending changes, together with pending check-in notes, a comment
 
 If you want to use the **shelve** command to delete a shelveset, you must be a shelveset owner, or your **Administer shelved changes** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf shelve  [/replace] [/comment:("comment"|@commentfile)] [shelvesetname] [/validate][/noprompt] [/login:username,[password]]
+```
+tf shelve  [/replace] [/comment:("comment"|@commentfile)] [shelvesetname] [/validate][/noprompt] [/login:username,[password]]
+```
 
-    tf shelve [/move] [/replace] [/comment:("comment"|@commentfile)] 
-    [/recursive] [shelvesetname] itemspec [/validate] [/noprompt] [/login:username,[password]]
+```
+tf shelve [/move] [/replace] [/comment:("comment"|@commentfile)] 
+[/recursive] [shelvesetname] itemspec [/validate] [/noprompt] [/login:username,[password]]
+```
 
-    tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
+tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 
@@ -82,19 +88,27 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The following example creates a new shelveset on the Team Foundation Server called Reflector\_BuddyTest, assigns ownership to the user Hans, then returns all items in the current workspace to the latest version downloaded during the last **get** operation, and a sets a read-only state.
 
-    c:\projects> tf shelve Reflector_BuddyTest;Hans /move
+```
+c:\projects> tf shelve Reflector_BuddyTest;Hans /move
+```
 
 The following example deletes the existing shelveset, "new-feature" from the server, creates a new shelveset by that name, and retains all pending changes in the current workspace.
 
-    c:\projects> tf shelve new-feature /replace
+```
+c:\projects> tf shelve new-feature /replace
+```
 
 The following example creates a shelveset named HelloWorld\_TestMe that includes all pending changes to all .cs files in the C:\\projects working folder and its subfolders.
 
-    c:\projects> tf shelve HelloWorld_TestMe c:\projects\*.cs /recursive
+```
+c:\projects> tf shelve HelloWorld_TestMe c:\projects\*.cs /recursive
+```
 
 The following example deletes the HelloWorld\_24 shelveset.
 
-    c:\projects> tf shelve HelloWorld_24 /delete
+```
+c:\projects> tf shelve HelloWorld_24 /delete
+```
 
 ## See Also
 

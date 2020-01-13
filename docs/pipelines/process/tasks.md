@@ -1,4 +1,4 @@
-﻿---
+---
 title: Build and Release Tasks
 ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
@@ -13,7 +13,7 @@ ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Tasks
+# Task types & usage
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -337,7 +337,7 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
 
-## Related topics
+## Related articles
 
 * [Task jobs](phases.md)
 * [Task groups](../library/task-groups.md)

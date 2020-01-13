@@ -13,11 +13,16 @@ monikerRange: 'azure-devops'
  
 # Azure Pipelines with Microsoft Teams
 
+[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+
+
 If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018)
  to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, pending approvals and more from the app and get notifications for these events in your Teams channels.
 
 > [!div class="mx-imgBorder"]
 > ![Notifications image](_img/integrations-teams/notifications-teams.png)
+
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
 
 ## Add Azure Pipelines app to your team
 

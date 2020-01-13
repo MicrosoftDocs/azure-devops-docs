@@ -62,12 +62,12 @@ If you haven't already done so,
 and **[add stages](manage-your-release.md#AddStages)** 
 for your release.
 
-* [Pre-requisites for computers](#prereq)
+* [Prerequisites for computers](#prereq)
 * [Set up Microsoft Azure environments](#SetupAzure)
 * [Set up on-premises (standard) environments](#SetupOnPrem)
 
 <a name="prereq"></a>
-### Pre-requisites for computers
+### Prerequisites for computers
 
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.

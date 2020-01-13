@@ -8,11 +8,11 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 09/12/2019
+ms.date: 01/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Pipeline triggers
+# Specify events that trigger pipeline builds and releases
 
 [!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
 
@@ -395,7 +395,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+> For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 
@@ -487,6 +487,31 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
+
+### Scheduled runs view
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+
+![Scheduled runs menu](_img/triggers/scheduled-runs-menu.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](_img/triggers/scheduled-runs.png)
+
+In this example, the scheduled runs for the following schedule are displayed.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
+
+### Scheduled triggers evaluation
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
@@ -841,7 +866,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-To trigger a pipeline upon the completion of another, specify the latter as a pipeline resource.
+To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema.md#pipeline-resource).
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
@@ -851,7 +876,7 @@ To trigger a pipeline upon the completion of another, specify the latter as a pi
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: security-lib
+  - pipeline: securitylib
     source: security-lib-ci
     trigger: 
       branches:
@@ -866,7 +891,7 @@ Similar to CI triggers, you can specify the branches to include or exclude:
 ```yaml
 resources:
   pipelines:
-  - pipeline: security-lib
+  - pipeline: securitylib
     source: security-lib-ci
     trigger: 
       branches:
@@ -1013,7 +1038,7 @@ Pipelines are not associated with a branch. They are associated with the reposit
 
 ### My CI or PR trigger doesn't seem to fire
 
-Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 

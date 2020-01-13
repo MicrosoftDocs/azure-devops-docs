@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/06/2019
+ms.date: 01/08/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -481,12 +481,14 @@ jobs:
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]
   environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
   strategy:
-    runOnce:
+    runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
@@ -961,7 +963,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable pipeline-completion triggers.
+You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
 
 # [Schema](#tab/schema)
 
@@ -1076,14 +1078,14 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end

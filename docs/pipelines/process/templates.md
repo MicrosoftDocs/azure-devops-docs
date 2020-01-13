@@ -9,11 +9,11 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 12/06/2019
+ms.date: 01/10/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Templates
+# Template types & usage
 
 Templates let you define reusable content, logic, and parameters. Templates functions in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
@@ -67,9 +67,9 @@ extends:
 | `stageList` | sequence of stages
 
 
-## Extending from a template
+## Extend from a template
 
-You can use templates to define how parameters can be used.  The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
+You can use templates to define how parameters can be used. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
 
 ```yaml
 # File: start.yml
@@ -118,7 +118,8 @@ extends:
         displayName: Test 3 - Will Fail
 ```
 
-## Inserting a template
+## Insert a template
+
 You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipeline.yml`.  
 
 ```yaml
@@ -352,7 +353,7 @@ steps:
 
 
 
-## Using other repositories
+## Use other repositories
 
 You can keep your templates in other repositories.
 For example, suppose you have a core pipeline that you want all of your app pipelines to use.
@@ -408,7 +409,17 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-The project must be in the same organization; cross-organization references are not supported.
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md) with access to the project and include that in YAML:
+
+```yaml
+resources:
+  repositories:
+  - repository: templates
+    name: Contoso/BuildTemplates
+    endpoint: myServiceConnection # Azure DevOps service connection
+jobs:
+- template: common.yml@templates
+```
 
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
@@ -732,7 +743,7 @@ jobs:
       - script: echo This job depends on both Job A and on SomeSpecialTool.
 ```
 
-### Escaping
+### Escape a value
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 

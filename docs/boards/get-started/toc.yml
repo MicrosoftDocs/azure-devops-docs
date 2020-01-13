@@ -32,6 +32,8 @@
     href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: Default permissions & access (Security)
     href: permissions-access-boards.md
+  - name: Client support for work tracking
+    href: ../../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 
 
 
