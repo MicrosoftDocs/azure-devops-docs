@@ -276,7 +276,7 @@ In the above example, the task tries to find matches for the images <code>foo/de
     <br/>
     Multiline input that accepts keys and literal values to be used for creation and updating of secrets. Here's an example:<br/>
     <b>--from-literal=key1=value1</b>
-    <b>--from-literal=key2=&quot;top secret&quot;.&quot;</b>
+    <b>--from-literal=key2=&quot;top secret&quot;</b>
     </td>
   </tr>
   <tr>
