@@ -339,7 +339,7 @@ For a list of our tool installer tasks, see [Tool installer tasks](../tasks/inde
 
 ## Related articles
 
-* [Task jobs](phases.md)
+* [Jobs](phases.md)
 * [Task groups](../library/task-groups.md)
 * [Built-in task catalog](../tasks/index.md)
 
