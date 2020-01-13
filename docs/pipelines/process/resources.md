@@ -9,7 +9,7 @@ ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 5/23/2019
+ms.date: 1/8/2019
 monikerRange: azure-devops
 ---
 
@@ -370,4 +370,3 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](./_img/environments-commits.png)
-
