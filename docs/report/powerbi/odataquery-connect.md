@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 01/13/2020
 ---
 
 # Connect with data by using Power BI and OData queries
