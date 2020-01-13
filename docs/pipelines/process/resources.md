@@ -72,7 +72,7 @@ resources:
     source: SmartHotel-CI # name of the pipeline source definition
 ```
 
-In case you need to consume a Pipeline from other project, then you need to include the project name while providing source name.
+If you need to consume a pipeline from other project, then you need to include the project name while providing source name.
 
 ```yaml
 resources:
@@ -370,5 +370,4 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](./_img/environments-commits.png)
-
 
