@@ -61,7 +61,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
 ```
 
-# [Example](#tab/example)
+# [YAML](#tab/yaml)
 
 If you need to consume artifacts from an Azure pipeline within the current project, here is simple schema.
 
