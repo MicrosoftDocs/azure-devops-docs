@@ -43,7 +43,7 @@ resources:
 
 If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
 
-# [Schema](#tab/schema)
+# [Resource Schema](#tab/resource-schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
