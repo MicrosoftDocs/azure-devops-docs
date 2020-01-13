@@ -31,6 +31,8 @@ A project-scoped feed is scoped to a project instead of an organization. Here ar
 
 * All new feeds are recommended to be project-scoped, therefore, creating a new feed through the new create feed panel will always create a project-scoped feed.
 
+* When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed.
+
 ### What can I do if I'm concerned about my project-scoped feed's visibility
 
 There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md#change-application-access-policies).

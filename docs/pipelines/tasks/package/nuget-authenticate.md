@@ -38,15 +38,22 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 
 ### Restore and push NuGet packages within your organization
 
-If the only authenticated feeds you use are Azure Artifacts feeds in your organization, you can use the NuGetAuthenticate task without specifying any inputs.
+If the only authenticated feeds you use are Azure Artifacts feeds in your organization, you can use the NuGetAuthenticate task without specifying any inputs. For project scoped feeds that are in a different project than where the pipeline is running in, the project and the feed must allow access to the pipeline's project build service.
 
 #### nuget.config
 ```XML
 <configuration>
   <packageSources>
-    <!-- Any Azure Artifacts feeds within your organization will automatically be authenticated. Both dev.azure.com and visualstudio.com domains are supported. -->
-    <add key="MyOrganizationFeed1" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed1}/nuget/v3/index.json" />
-    <add key="MyOrganizationFeed2" value="https://{organization}.pkgs.visualstudio.com/_packaging/{feed2}/nuget/v3/index.json" />
+    <!-- 
+      Any Azure Artifacts feeds within your organization will automatically be authenticated. Both dev.azure.com and visualstudio.com domains are supported.
+      Project scoped feed URL includes the project, collection scoped feed URL does not.
+    -->
+    <add key="MyProjectFeed1" value="https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json" />
+    <add key="MyProjectFeed2" value="https://{organization}.pkgs.visualstudio.com/{project}/_packaging/{feed}/nuget/v3/index.json" />
+    <add key="MyOtherProjectFeed1" value="https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed@view}/nuget/v3/index.json" />
+    <add key="MyOtherProjectFeed2" value="https://{organization}.pkgs.visualstudio.com/{project}/_packaging/{feed@view}/nuget/v3/index.json" />
+    <add key="MyOrganizationFeed1" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
+    <add key="MyOrganizationFeed2" value="https://{organization}.pkgs.visualstudio.com/_packaging/{feed}/nuget/v3/index.json" />
   </packageSources>
 </configuration>
 ```
@@ -57,7 +64,7 @@ If the only authenticated feeds you use are Azure Artifacts feeds in your organi
 - task: NuGetToolInstaller@1 # Optional if nuget.exe is already on the path
 - script: nuget restore
 # ...
-- script: nuget push -ApiKey AzureArtifacts -Source https://pkgs.dev.azure.com/{organization}/_packaging/{feed1}/nuget/v3/index.json MyProject.*.nupkg
+- script: nuget push -ApiKey AzureArtifacts -Source "MyProjectFeed1" MyProject.*.nupkg
 ```
 
 #### dotnet
@@ -79,6 +86,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 <configuration>
   <packageSources>
     <!-- Any Azure Artifacts feeds within your organization will automatically be authenticated -->
+    <add key="MyProjectFeed1" value="https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json" />
     <add key="MyOrganizationFeed" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
     <!-- Any package source listed here whose URL matches the URL of a service connection in nuGetServiceConnections will also be authenticated.
          The key name here does not need to match the name of the service connection. -->
@@ -96,7 +104,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 - task: NuGetToolInstaller@1 # Optional if nuget.exe is already on the path
 - script: nuget restore
 # ...
-- script: nuget push -ApiKey AzureArtifacts -Source https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/nuget/v3/index.json MyProject.*.nupkg
+- script: nuget push -ApiKey AzureArtifacts -Source "MyProjectFeed1" MyProject.*.nupkg
 ```
 
 #### dotnet
@@ -107,7 +115,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 - task: UseDotNet@2 # Optional if the .NET Core SDK is already installed
 - script: dotnet restore
 # ...
-- script: dotnet nuget push --api-key AzureArtifacts --source https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/nuget/v3/index.json MyProject.*.nupkg
+- script: dotnet nuget push --api-key AzureArtifacts --source "MyProjectFeed1"  MyProject.*.nupkg
 ```
 where `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
