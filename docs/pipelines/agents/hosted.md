@@ -125,6 +125,22 @@ Currently, Service Tags is not something you can use for your hosted agents. If 
 
 ## Q & A
 
+### I have questions about the hosted agent images
+
+#### How can I see what software is included in an image?
+
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. 
+
+#### How does Microsoft choose the software and versions to put on the image?
+
+More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+
+#### When are the images updated?
+
+Images are typically updated weekly
+
+#### What can I do if software I need is removed or replaced with a newer version?
+
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
 By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent pool security](pools-queues.md#security).
