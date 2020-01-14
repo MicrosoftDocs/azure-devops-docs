@@ -23,4 +23,4 @@ Secrets are available on the agent for tasks and scripts to use **(so be careful
 > For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" will not be masked from the logs.
 
-Unlike a normal variable, they are not automatically decrypted into environment variables for scripts. Unlike a normal variable, they are not automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
+Unlike a normal variable, they are not automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.
