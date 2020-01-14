@@ -200,7 +200,7 @@ This works: ***
 
 It is recommended that you use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you would not want the log to include a secret that you passed in as an input.
 
-This example shows how to reference a variable group in your YAML file and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. The YAML makes a REST call to retrieve a list of Pipeline releases and outputs the result. 
+This example shows how to reference a variable group in your YAML file and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. This pipeline makes a REST call to retrieve a list of releases and outputs the result. 
 
 ```yaml
 variables: 
