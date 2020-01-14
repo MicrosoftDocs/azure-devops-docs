@@ -218,7 +218,7 @@ The following settings manage Git-related preferences in Visual Studio, and are 
 
 ### Enable download of author images from 3rd party source
 
-Enable download of author images from 3rd party source is a Visual Studio specific setting at global scope. When checked, author images are downloaded from the [Gravatar image service](http://en.gravatar.com/), if available, and displayed in the commit and history views.
+Enable download of author images from 3rd party source is a Visual Studio specific setting at global scope. When checked, author images are downloaded from the [Gravatar image service](https://en.gravatar.com/), if available, and displayed in the commit and history views.
 
 ![Enable download of author images from 3rd party source](_img/git-config/enable-download-of-author-images-from-3rd-party-source.png)
 

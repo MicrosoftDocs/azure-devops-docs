@@ -284,7 +284,7 @@ as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command
 
 #### Get the packaging tool
 
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](http://nodejs.org), from your command line.
+You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
@@ -640,7 +640,7 @@ If you have already published the extension before this point, you can repackage
 
 ### Step 7: Add Widget From the Catalog
 
-Now, go to your team dashboard at `https://dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
+Now, go to your team dashboard at `https:\//dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
@@ -984,7 +984,7 @@ If you have not published your extension yet, then read [this section](#package-
 If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at https://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
+Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
@@ -1051,7 +1051,6 @@ Open the configuration mode for your widget, you should now be able to see the o
 ![Widget where name and size can be configured](../_shared/procedures/_img/add-dashboard-widget/sampleConfigureNameAndSize.png)
 
 Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
-doesn't
 
 > [!WARNING]  
 > If you remove an already supported size, then the widget fails to load properly. We are working on a fix for a future release.

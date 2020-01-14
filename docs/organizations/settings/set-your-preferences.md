@@ -11,7 +11,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 10/23/2019
+ms.date: 12/20/2019
 ---
 
 # Set user preferences
@@ -23,25 +23,39 @@ From your profile page, you can change your picture or other account preferences
 - Change your picture
 - Change your display name
 - Change your preferred email
+- Change your directory
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 ## Change profile settings  
 
 ::: moniker range="azure-devops"
 
+> [!NOTE]   
+> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. From your home page, select the user settings icon ![user-settings-gear.png](../../_img/icons/user-settings-gear.png), and then select **Profile**.
+
+   ![Open Azure DevOps profile](../../_shared/_img/open-user-settings-profile-preview.png)
+
+2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+
+   ![Edit the About page](_img/edit-about-page-preview.png)
+
+#### [Current page](#tab/current-page) 
+
 1. To change your user preferences, open your profile menu, and then select **User settings**.
 
    ![Open profile user settings](_img/open-profile-user-settings.png)
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+2. You can change your profile picture, display name, contact information, and country. Select **Save**.
 
    ![Edit the About page](_img/edit-about-page.png)
 
-3. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
-
-   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences.png)
-
 ::: moniker-end
+
+* * *
 
 ::: moniker range="azure-devops-2019"  
 

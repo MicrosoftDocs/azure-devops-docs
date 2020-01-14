@@ -14,7 +14,7 @@ author: yukom
 
 ## Azure Active Directory Group support
 
-I’m excited to announce that we now have support for [Azure Active Directory](https://www.microsoft.com/server-cloud/products/azure-active-directory/) (Azure AD) Groups across Visual Studio Online, giving you an easier way to control who can access your team's resources and business assets. If you already use Microsoft services like Office 365 or Azure AD, you can use the same identities now with your VSO account. Azure AD [works with your VSO account](https://visualstudio.microsoft.com/get-started/setup/manage-organization-access-for-your-account-vs) to control access and authenticate users through your organization's directory.
+I’m excited to announce that we now have support for [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (Azure AD) Groups across Visual Studio Online, giving you an easier way to control who can access your team's resources and business assets. If you already use Microsoft services like Office 365 or Azure AD, you can use the same identities now with your VSO account. Azure AD [works with your VSO account](https://visualstudio.microsoft.com/get-started/setup/manage-organization-access-for-your-account-vs) to control access and authenticate users through your organization's directory.
 
 When you use [Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups) to organize directory members, you can reuse those groups to manage permissions in bulk for your VSO account. Just add the Azure AD group to the VSO group that you want, for example, built-in VSO groups like Project Collection Administrators or Contributors, or manually-created VSO groups like your project management team. Azure AD group members will inherit the same permissions from that VSO group, so you don't have to manage VSO group members one at a time. When you add an Azure AD group to a VSO group, we will also auto-assign the best available license when a member of that Azure AD group logs into the VSO account. You can learn more about adding Azure AD groups in VSO under [Manage account access with Azure AD groups](https://visualstudio.microsoft.com/get-started/setup/manage-organization-access-for-your-account-vs).
 
@@ -48,7 +48,7 @@ And finally, we’ve turned on a preview of our new work item experience that we
 
 Over the next few weeks we’ll be blogging about more of the upcoming changes; in the meantime we’d love to hear from you about your initial reaction to the new form. Know that we’ve already heard from early adopters that data density needs to be improved, so look for that to come very soon. As you’re evaluating for yourself, you can switch back and forth to the old form by clicking the ellipsis (…) in the command bar.
 
-Please reach out on [Twitter]((https://twitter.com/AzureDevOps)  if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+Please reach out on [Twitter]((https://twitter.com/AzureDevOps)  if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

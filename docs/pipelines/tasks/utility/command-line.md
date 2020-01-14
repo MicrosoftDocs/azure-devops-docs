@@ -86,10 +86,10 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 <tr>
 <td>Environment variables</td>
 <td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-<code>yaml
+<pre>yaml
 - script: echo %MYSECRET%
   env:
-    MySecret: $(Foo)</code>
+    MySecret: $(Foo)</pre>
 </td>
 </tr>
 
@@ -185,7 +185,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD  command line](https://ss64.com/nt/)
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 

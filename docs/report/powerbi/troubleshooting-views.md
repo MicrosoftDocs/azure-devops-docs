@@ -65,7 +65,7 @@ If the view no longer exists, you can still use the rest of your report in Power
 
 This error indicates that you have a custom field with the same display name as one of the Azure DevOps reserved fields.
 
-To resolve this collision, remove the duplicate column from the view's fields. You will need to customize your fields selection and remove the duplicate field from the [field list](analytics-views-create.md#select-fields). 
+To resolve this collision, remove the duplicate column from the view's fields. You'll need to customize your fields selection and remove the duplicate field from the [field list](analytics-views-create.md#select-fields). 
 
 ## Related articles
 - [Create an Analytics view](analytics-views-create.md) 

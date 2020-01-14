@@ -1,5 +1,5 @@
----
-title: Edit multiple user stories, bugs, issues, tasks, & other work items 
+﻿---
+title: Edit multiple user stories, & other work items
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
 ms.custom: "boards-backlogs, seodec18" 
@@ -225,7 +225,7 @@ All of the following actions can be performed by team members that belong to the
 <li><a href="#assign-to" data-raw-source="[Assign to](#assign-to)">Assign to</a></li>
 <li><a href="#move-iteration" data-raw-source="[Move to iteration](#move-iteration)">Move to iteration</a></li>
 <li><a href="create-your-backlog.md#move-items-priority-order" data-raw-source="[Change position](create-your-backlog.md#move-items-priority-order)">Change position</a></li>
-<li><a href="organize-backlog.md#reparent" data-raw-source="[Change parent](organize-backlog.md#reparent)">Change parent</a></li>
+<li><a href="organize-backlog.md" data-raw-source="[Change parent](organize-backlog.md)">Change parent</a></li>
 <li><a href="remove-delete-work-items.md#delete" data-raw-source="[Delete](remove-delete-work-items.md#delete)">Delete</a> <sup>1</sup></li>
 </ul>
 </td>

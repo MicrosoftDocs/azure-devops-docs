@@ -98,7 +98,7 @@ You start using Azure Pipelines releases by authoring a release pipeline for you
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Azure Pipelines releases can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Azure Pipelines build, Jenkins, or Team City.
 
-You define the **release pipeline** using [stages](../process/stages.md), and restrict deployments into or out of an stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release pipeline** using [stages](../process/stages.md), and restrict deployments into or out of a stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
@@ -111,7 +111,7 @@ and then forked to two QA stages in parallel. If the deployment succeeds in both
 
 ::: moniker range=">= tfs-2017"
 
-An example of how deployment automation can be modeled within an stage is shown below:
+An example of how deployment automation can be modeled within a stage is shown below:
 
 ![Artifacts in a pipeline and release](_img/definition-02.png)
 
@@ -194,7 +194,7 @@ This improves the traceability from code commit to deployment.
 The deployment status is displayed in the following sections of Azure Repos:
 
 * **Files**: Indicates the status of the latest deployment for the selected branch.
-* **Commits**: Indicates the deployment status of the each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
+* **Commits**: Indicates the deployment status for each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
 * **Branches**: Indicates the status of the latest deployment for each branch.
 
 If a commit is deployed to multiple release pipelines (with multiple stages), each has an entry in the badge

@@ -1,5 +1,6 @@
----
+﻿---
 title: TFS/DistributedTask/Contracts TaskOrchestrationPlanReference API | Extensions for Azure DevOps Services
+description: Data representation of a task orchestration plan reference.
 ms.assetid: 16d8a0be-a05c-73ad-fc43-4aa3c319f048
 ms.prod: devops
 ms.technology: devops-ecosystem

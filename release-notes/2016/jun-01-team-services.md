@@ -76,7 +76,7 @@ In the Web runner when using Chrome, you can now take screenshots and annotate t
 
 ### Ordering of tests in Test Hub
 
-You can now order manual tests from within the Test Hub, irrespective of the type of suite in which they’re included. You can simply drag and drop one or more tests or use the context menu to reorder tests. Once the ordering is completed, you can sort your tests by the Order field and then run them in that order from the Web runner. You can also order the tests directly on a user story card on the Kanban board. This completes one of the long-pending [user voice items](https://visualstudio.uservoice.com/forums/330519-vso/suggestions/4147125-enable-changing-the-order-of-test-cases-on-the-web) (with 495 votes) under manual testing.
+You can now order manual tests from within the Test Hub, irrespective of the type of suite in which they’re included. You can simply drag and drop one or more tests or use the context menu to reorder tests. Once the ordering is completed, you can sort your tests by the Order field and then run them in that order from the Web runner. You can also order the tests directly on a user story card on the Kanban board. This completes one of the long-pending user voice items (with 495 votes) under manual testing.
 
 ![Ordering tests](_img/6_01_06.png)
 
@@ -122,7 +122,7 @@ If you need to work with Release Management REST APIs, we now have a [C# client 
 
 You can now use REST APIs to programmatically add, delete and get information on a dashboard. The APIs also let you add, remove, update, replace, and get information on a widget or a list of widgets on a dashboard. The documentation is available on [Visual Studio online docs](https://aka.ms/dashboardapi).
 
-A number of features in this release are directly based on feedback that you submitted. If have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+A number of features in this release are directly based on feedback that you submitted. If have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

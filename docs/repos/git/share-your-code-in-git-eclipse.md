@@ -33,7 +33,7 @@ Share your Eclipse project with your team in an Azure DevOps Services/TFS Git re
 > [!NOTE]
 > The Team Explorer Everywhere plug-in works with Eclipse versions 4.2 (Juno) - 4.6 (Neon).
 
-1. [Install the Team Explorer Everywhere plug-in](/azure/devops/java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse).
+1. [Install the Team Explorer Everywhere plug-in](/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse).
 
 2. Add the Team Explorer Everywhere view in Eclipse. Go to **Window, Show View** and select **Other...** Search for **Team Explorer**, select the **Team Explorer** view, and select **OK**.   
 
@@ -90,7 +90,7 @@ Your project code is now in your Git repo.
 
 ### What if the Git views for commit and push don't show up?
 
-You can [download EGit](http://www.eclipse.org/egit/) to use Git with Eclipse.
+You can [download EGit](https://www.eclipse.org/egit/) to use Git with Eclipse.
 
 ## Next steps
 

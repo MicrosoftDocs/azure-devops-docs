@@ -1,5 +1,5 @@
----
-title: Publish and download Universal Packages in pipelines
+﻿---
+title: Publish & download Universal Packages
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publishing Universal Packages to Azure Artifacts feeds

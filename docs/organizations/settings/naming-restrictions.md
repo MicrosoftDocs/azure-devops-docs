@@ -219,7 +219,7 @@ Must not include commas (,)
 A project collection identifies a group of projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of projects within TFS.  
 
 Also, the collection name is part of the connection string used to connect team members to projects. The default assigned corresponds to *DefaultCollection*. 
-[Manage project collections](/azure/devops/server/admin/manage-team-project-collections) provides more information. 
+[Manage project collections](/azure/devops/server/admin/manage-project-collections) provides more information. 
 
 Names you assign to project collections must conform to the following restrictions.  
 

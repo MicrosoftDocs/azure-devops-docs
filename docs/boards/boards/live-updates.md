@@ -39,15 +39,17 @@ Choose the ![ ](../_img/icons/view-options-icon.png) view options icon and move 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-Choose the ![ ](../_img/icons/live-updates-icon.png) **Live updates** icon.  
+From the Kanban board, choose the ![ ](../_img/icons/live-updates-icon.png) **Live updates** icon.  
 
 ![Kanban board, live updates icon](/azure/devops/boards/_shared/_img/kanban-live-updates.png)  
+
 As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
 
 ![Live update](_img/kanban-live-updates.gif)  
 
 ::: moniker-end
 
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
 
 ## Related articles
 

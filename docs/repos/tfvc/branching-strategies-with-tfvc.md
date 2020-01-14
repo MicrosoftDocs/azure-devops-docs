@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 # Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-Do you plan to adopt Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
+Do you plan to adopt Team Foundation Version Control ([TFVC](overview.md)) with Team Foundation Server (TFS) or Azure DevOps Services? Are you wondering how to best use branches? This article will not delve deep into branching features, as they are well documented in the product [documentation](use-branches-isolate-risk-team-foundation-version-control.md) and [guidance](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/), but will explore a few common branching strategies to help you make the right decision.
 
 Unlike Git branches, which are repository scoped, TFVC branches are path scoped and not as lightweight. Set your bar for creating branches high and only branch when you have a need for code or release isolation.
 
@@ -106,11 +106,11 @@ The Code Promotion strategy feels like a relic from the waterfall development er
 
 ### When merging **dev** to **main** branch, why are no changes detected?
 
-You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging development branch to main: there were no changes to merge](http://stackoverflow.com/questions/27590388/merging-development-branch-to-main-there-were-no-changes-to-merge) for details.
+You have likely ignored changes in previous merges, for example, using the `keep source` conflict resolution option. See [merging development branch to main: there were no changes to merge](https://stackoverflow.com/questions/27590388/merging-development-branch-to-main-there-were-no-changes-to-merge) for details.
 
 ### Are there similarities between TFVC and Git branch strategies?
 
-The TFVC Feature Isolation branching strategy is similar to the Git [topic branches](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches).
+The TFVC Feature Isolation branching strategy is similar to the Git [topic branches](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches).
 
 > Authors: Jesse Houwing, Marcus Fernandez, Mike Fourie, and Willy Schaub from the ALM | DevOps Rangers. You can contact them [here](https://github.com/ALM-Rangers/Guidance).
  

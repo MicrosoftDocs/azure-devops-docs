@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts CoverageStatistics API | Extensions for Azure DevOps Services
+description: Data representation of coverage statistics.
 ms.assetid: 12758828-b44d-d223-8688-ec1f3641d777
 ms.prod: devops
 ms.technology: devops-ecosystem

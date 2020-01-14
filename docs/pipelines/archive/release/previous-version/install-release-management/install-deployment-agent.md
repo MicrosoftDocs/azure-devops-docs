@@ -1,5 +1,5 @@
----
-title: Install Microsoft Release Management deployment agent
+﻿---
+title: Install Release Management deployment agent
 ms.custom: seodec18
 description: Learn how you can install deployment agent and set up machines for an environment for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A

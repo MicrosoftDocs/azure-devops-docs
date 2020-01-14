@@ -1,5 +1,5 @@
----
-title: Connect a project in Azure DevOps with a GitHub repository  
+﻿---
+title: Connect a project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards 
 ms.assetid: 

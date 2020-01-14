@@ -23,7 +23,7 @@ Your Kanban board supports your ability to visualize the flow of work as it move
 
 For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked&mdash;to track high-priority work, standard work, and work that's currently blocked.  
 
-! [Kanban board showing three swimlanes](_img/ALM_EW_IntroChart_3C.png) 
+![Kanban board showing three swimlanes](_img/ALM_EW_IntroChart_3C.png) 
 
 > [!TIP]
 > Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows. For more tips, see [kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
@@ -72,6 +72,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ::: moniker-end   
 
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
 	
 ## Add or remove a swimlane 
 

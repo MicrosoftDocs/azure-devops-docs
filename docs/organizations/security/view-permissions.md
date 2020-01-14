@@ -41,10 +41,9 @@ Permissions are set at the collection, project, and object level as described in
 
 1. Choose **Project Settings** and then **Permissions**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Permissions](_img/view-permissions/open-security-project-level-vert-new.png) 
+	![Open Project settings > Permissions](../settings/_img/_shared/open-project-settings-permissions-preview.png) 
 
-1. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
+2. Choose **Users**. To filter the list, enter a name into the *Search groups or users* box.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Find a user or group name](_img/view-permissions/search-user-name-s154.png) 
@@ -216,7 +215,7 @@ From the web portal, open the Security dialog for the object whose permissions y
 <ul>
 <li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)">Area and iteration paths</a></li>
 <li><a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder](../../boards/queries/set-query-permissions.md)">Work item query and folder</a></li>
-<li><a href="set-permissions-access-work-tracking.md#plan-permissions" data-raw-source="[Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)">Plan permissions</a></li><br/></ul>
+<li>Plan permissions</li><br/></ul>
 </td>
 </tr>
 </tbody>

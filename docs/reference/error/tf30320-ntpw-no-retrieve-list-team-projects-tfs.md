@@ -5,7 +5,7 @@ description: Display an error when the New Team Project Wizard could not retriev
 ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobs7-ec21-465e-878c-1d303ee60284
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

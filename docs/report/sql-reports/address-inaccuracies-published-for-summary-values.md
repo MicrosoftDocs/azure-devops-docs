@@ -8,7 +8,7 @@ description: Corrects the reports with hours that are counted twice with this pr
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 10/31/2017
 ---
 

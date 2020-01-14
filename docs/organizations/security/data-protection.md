@@ -179,7 +179,7 @@ We want you to have confidence that your data is being handled appropriately and
 ### The General Data Protection Regulation (GDPR)
 
 The General Data Protection Regulation (GDPR) is the biggest change in data protection laws in Europe since the 1995 introduction of the European Union (EU) Data Protection Directive 95/46/EC. The GDPR's main objective is to strengthen the protection and security of your personal data and replaced the Directive and all local laws relating to it. Azure DevOps is relied upon as a system of record with strict integrity, traceability, and audit rules. We view all information within Azure DevOps to be business critical and therefore cannot be modified from its original state. These existing obligations affect our delete and retention obligations for GDPR.
-As such, we do not support GDPR delete requests from within Azure DevOps. We have ensured that when an entire organization is deleted that all associated data and telemetry about that organization and its members are removed from our system (after the requisite 30-day soft-delete period).
+As such, we do not support GDPR delete requests from within Azure DevOps. We have ensured that when an entire organization is deleted that all associated data and telemetry about that organization and its members are removed from our system (after the requisite 28-day soft-delete period).
 
 To learn more about how Azure DevOps honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
 To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).

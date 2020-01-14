@@ -1,5 +1,5 @@
----
-title: Filter a wiki TOC or print a wiki page in Azure DevOps
+﻿---
+title: Filter a wiki TOC or print a wiki page
 titleSuffix: Azure DevOps 
 description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps 
 ms.technology: devops-collab

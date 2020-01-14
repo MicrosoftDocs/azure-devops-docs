@@ -38,7 +38,7 @@ Before you start your load testing:
    ![Add load test information, then choose Run Test](_img/get-started-jmeter-test/JMeterLoadTestVSO-parameters.png)
 
    >For information about the scripts and supporting files used for JMeter
-   web tests, see [Build a Web Test Plan](http://jmeter.apache.org/usermanual/build-web-test-plan.html)
+   web tests, see [Build a Web Test Plan](https://jmeter.apache.org/usermanual/build-web-test-plan.html)
    on the Apache JMeter website.
  
 4. As the test runs, you see live information about the progress

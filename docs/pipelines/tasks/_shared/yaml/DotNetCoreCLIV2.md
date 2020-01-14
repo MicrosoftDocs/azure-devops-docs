@@ -17,8 +17,8 @@
     #includeNuGetOrg: true # Required when feedsToUse == Select
     #nugetConfigPath: # Required when feedsToUse == Config
     #externalFeedCredentials: # Optional
-    #noCache: false 
-    restoreDirectory: 
+    #noCache: false
+    restoreDirectory:
     #verbosityRestore: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
     #packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg' # Required when command == Push
     #nuGetFeedType: 'internal' # Required when command == Push# Options: internal, external
@@ -26,7 +26,6 @@
     #publishPackageMetadata: true # Optional
     #publishFeedCredentials: # Required when command == Push && NuGetFeedType == External
     #packagesToPack: '**/*.csproj' # Required when command == Pack
-    #configuration: '$(BuildConfiguration)' # Optional
     #packDirectory: '$(Build.ArtifactStagingDirectory)' # Optional
     #nobuild: false # Optional
     #includesymbols: false # Optional
@@ -38,5 +37,5 @@
     #patchVersion: '0' # Required when versioningScheme == ByPrereleaseNumber
     #buildProperties: # Optional
     #verbosityPack: 'Detailed' # Options: -, quiet, minimal, normal, detailed, diagnostic
-    workingDirectory: 
+    workingDirectory:
 ```

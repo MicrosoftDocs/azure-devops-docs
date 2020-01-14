@@ -50,7 +50,7 @@ You must also be a Project Contributor, or have the following permissions:
 * Edit release environment
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ## Set up your environment
@@ -228,7 +228,7 @@ You must be a Project Contributor, or have the following permissions:
 * Edit release stage
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
@@ -285,7 +285,7 @@ on-demand test execution.
 or [Selenium](../pipelines/test/continuous-test-selenium.md) tests,
 the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser.
-If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
+If you are using a headless browser such as [PhantomJS](https://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
 [Build and release agents](../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../pipelines/agents/v2-windows.md),

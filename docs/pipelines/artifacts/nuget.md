@@ -9,9 +9,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: amullans
+ms.author: phwilson
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
+author: chasewilson
 ---
 
 # Publish to NuGet feeds
@@ -56,7 +57,9 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-Add the **NuGet** task to your build in order to create a NuGet package. Make sure to add this task below the task that builds your application and above any tasks that require the packages you build.
+Add the **NuGetAuthenticate** and **NuGet** tasks to your build in order to create a NuGet package. Make sure to add these below the task that builds your application and above any tasks that require the packages you build.
+
+The NuGetAuthenticate task will use the build credentials by default so you won't need to add your build credentials. See the [task documentation](../tasks/package/nuget-authenticate.md) to learn more. If you need to, you can add service connections to connect to feeds outside your organization. See the full [service connection documentation](../library/service-endpoints.md) for more information on service connections. 
 
 The NuGet task supports a number of options. The following list describes some of the key ones. The [task documentation](../tasks/package/nuget.md) describes the rest.
 
@@ -140,6 +143,8 @@ To publish to an Azure Artifacts feed, set the **Project Collection Build Servic
 
 ```yaml
 steps:
+- task: NuGetAuthenticate@0
+  displayName: 'NuGet Authenticate'
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
@@ -153,11 +158,13 @@ To publish to an external NuGet feed, you must first create a service connection
 To publish a package to a NuGet feed, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
+- task: NuGetAuthenticate@0
+  inputs:
+    nuGetServiceConnections: '<Name of the NuGet service connection>'
 - task: NuGetCommand@2
   inputs:
     command: push
     nuGetFeedType: external
-    publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
     versionEnvVar: <VersionVariableName>
 ```
@@ -194,6 +201,7 @@ To publish to an external NuGet feed, you must first create a service connection
 ::: moniker-end
 
 * * *
+
 ## Publish symbols for your packages
 
 When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).

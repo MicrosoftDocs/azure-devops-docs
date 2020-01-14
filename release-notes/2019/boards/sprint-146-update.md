@@ -1,5 +1,6 @@
 ---
 title: Azure Boards - Sprint 146 Update
+description: See the Sprint 146 feature update for Azure Boards, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

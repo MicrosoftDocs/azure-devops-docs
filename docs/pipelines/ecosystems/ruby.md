@@ -6,12 +6,12 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.manager: mijacobs
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 08/31/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Build and test Ruby apps
@@ -104,7 +104,7 @@ To execute Rake in the context of the current bundle (as defined in your Gemfile
 
 ### Publish test results
 
-The sample code includes unit tests written using [RSpec](http://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
+The sample code includes unit tests written using [RSpec](https://rspec.info/). When Rake is run by the previous step, it runs the RSpec tests. The RSpec RakeTask in the Rakefile has been configured to produce JUnit style results using the RspecJUnitFormatter. 
 
 Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit style test results to the server. When you do this, you get a rich test reporting experience that can be used for easily troubleshooting any failed tests and for test timing analysis.
 

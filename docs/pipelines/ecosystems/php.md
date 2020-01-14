@@ -6,31 +6,35 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.manager: mijacobs
-ms.author: dastahel
+ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 08/31/2018
-monikerRange: 'azure-devops'
+ms.date: 12/04/2019
+monikerRange: azure-devops
+author: vijayma
 ---
 
 # Build and test PHP apps
 
 **Azure Pipelines**
 
-This guidance explains how to automatically build and test PHP projects.
+Use a pipeline to automatically build and test your PHP projects. 
 
-## Example
+## Create your first pipeline
 
-For a working example of how to build a PHP project, import (into Azure Repos) or fork (into GitHub) this repo:
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-php
 ```
 
-The sample code includes an `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the project.
+The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the project.
 
 Follow all the instructions in [Create your first pipeline](../create-first-pipeline.md) to create a build pipeline for the sample project.
+
+See the sections below to learn some of the more common ways to customize your pipeline.
 
 ## Build environment
 

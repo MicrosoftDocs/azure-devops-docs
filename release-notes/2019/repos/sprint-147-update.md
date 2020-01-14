@@ -1,5 +1,6 @@
 ---
-title: Azure repos - Sprint 147 Update
+title: Azure Repos - Sprint 147 Update
+description: See the Sprint 147 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

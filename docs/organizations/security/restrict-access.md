@@ -193,7 +193,7 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
-- Restict who can modify a specific field for a work item type 
+- Restrict who can modify a specific field for a work item type 
 
 For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
 

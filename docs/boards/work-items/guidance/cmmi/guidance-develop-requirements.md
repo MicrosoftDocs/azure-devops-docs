@@ -231,7 +231,7 @@ Requirements describe what the stakeholders expect from the product. You should 
 ## Additional resources  
  For more information, see the following Web resources:  
   
--   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
+-   [Modern Requirements Suite 4TFS](https://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
 -   [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   

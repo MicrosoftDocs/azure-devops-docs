@@ -1,5 +1,5 @@
----
-title: XML elements added to the definition for the work item type
+﻿---
+title: XML elements added to work item type definition
 titleSuffix: TFS
 description: Show the XML elements added to the definition for the work item type when using Team Foundation Server & Project Server integration
 ms.prod: devops

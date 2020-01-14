@@ -15,6 +15,8 @@ monikerRange: 'azure-devops'
 
 # Create your first pipeline from the CLI
 
+[!INCLUDE [temp](_shared/version-team-services.md)]
+
 This is a step-by-step guide to using Azure Pipelines from the Azure CLI (command-line interface) to build a GitHub repository.
 You can use Azure Pipelines to build an app written in any language. For this quickstart, you'll use Java.
 

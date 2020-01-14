@@ -1,5 +1,6 @@
 ---
 title: Azure Artifacts - Microsoft Build Announcements
+description: See the Microsoft build announcements for Azure Artifacts, May 2019, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

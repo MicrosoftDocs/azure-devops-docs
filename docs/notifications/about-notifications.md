@@ -8,15 +8,15 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 03/05/2019
+ms.date: 12/30/2019
 monikerRange: '>= tfs-2013'
 ---
 
 # About notifications
 
-[!INCLUDE [ ](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
-Notifications help you and your team stay informed about activity that occurs within your Azure DevOps projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds. You can be notified via email. For example,you can get notified whenever a bug that you opened is resolved or when a work item is assigned to you.
+Notifications help you and your team stay informed about activity that occurs within your Azure DevOps projects. You're notified when changes occur to work items, code reviews, pull requests, source control files, and builds. You can be notified via email. For example, you can get notified whenever you resolve a bug or are assigned a work item.
 
 You receive notifications based on rules or subscriptions. Subscriptions arise from the following instances:
 
@@ -32,7 +32,7 @@ You can manage your notifications, which you access from your organization menu.
 
 ## Preferred email address
 
-Notifications are sent by default to the preferred email address for your organization profile. This is typically the email address you signed into Azure DevOps with, but can be managed via your organization preferences profile page.
+The preferred email address for your organization profile gets notifications, by default. It's typically the email address you signed into Azure DevOps with. You can manage this email address via your organization preferences profile page.
 
 > [!NOTE]
 > Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis.
@@ -45,7 +45,7 @@ If your team uses an external service to collaborate&mdash;such as Campfire, Flo
 
 - [Campfire](../service-hooks/services/campfire.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
 - [Flowdock](../service-hooks/services/flowdock.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
-- [Hipchat](../service-hooks/services/hipchat.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
+- [HipChat](../service-hooks/services/hipchat.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
 - [Slack](../service-hooks/services/slack.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)  
 - [Microsoft Teams](../service-hooks/services/teams.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
 

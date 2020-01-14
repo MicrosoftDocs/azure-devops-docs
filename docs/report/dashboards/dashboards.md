@@ -11,16 +11,34 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 04/05/2019
+ms.date: 12/12/2019
 ---
 
 # Add, rename, and delete dashboards in Azure DevOps
 
 [!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
 
+::: moniker range="azure-devops"
+
+Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
+
+When you add a dashboard, you can choose to make it a project dashboard or one specific to a team. Use project dashboards to display information or status about the project or when you want to control who can edit the dashboard. Use team dashboards to focus information specific to a team. 
+
+> [!NOTE]  
+> Project dashboards are owned by the person that created the dashboard. The owner can set permissions as to who can edit the dashboard. Team dashboards are owned by team administrators and can be edited by any member of the team. All dashboards can be viewed by members of the project. All widgets available to team dashboards are available for project dashboards. For team-specific widgets, if you aren't able to select a team through the widget, then the team defaults to the default project team.
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
+
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
-The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
+::: moniker-end
+
+When a project is first created, a default team and default team dashboard is created. You can customize this default dashboard by adding widgets. Each widget provides access to one or more features or functions. To learn more about each widget, see [Widget catalog](widget-catalog.md).  
+
+
 
 
 ::: moniker range="tfs-2015"
@@ -78,6 +96,7 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 <a id="choose-dashboard" />
 
 ::: moniker range=">= azure-devops-2019"
+
 ## Select a dashboard 
 
 1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
@@ -115,7 +134,32 @@ If you need to switch to a different project, choose the ![ ](../../_img/icons/p
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open the create a dashboard dialog](_img/dashboards/open-new-dashboard-dialog.png)  
+
+	If you don't see the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option, then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
+
+2. Enter the name of the dashboard and other information you want to capture. 
+
+	Here we choose to create a Project dashboard. To create a team dashboard, choose **Team Dashboard** and then select a team. To add a team, see [Add a team](../../organizations/settings/add-teams.md). 
+	> [!div class="mx-imgBorder"]  
+	> ![Open the create a dashboard dialog](_img/dashboards/create-dashboard-project-dialog.png)  
+
+	Choose **Save**. 
+
+3.  The widget catalog opens. You can add one or more widgets to the dashboard. You can then configure and resize each widget as needed. 
+
+4.	You can move the widgets around the dashboard to place them where you want them. 
+
+5.  When you're done making changes, choose **Done Editing**. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 
@@ -136,10 +180,11 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 4.	You can move the widgets around the dashboard to place them where you want them. 
 
 5.  When you're done making changes, choose **Done Editing**. 
+
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
+
 From **Dashboards**, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
@@ -245,6 +290,7 @@ Note that you can drag and drop a widget from the catalog onto the dashboard.
 
 
 ## Try this next 
+
 As you can see, you can use team dashboards to provide guidance and keep your team in sync, providing visibility across your org about status, trends, and progress. 
 
 > [!div class="nextstepaction"]
@@ -252,8 +298,9 @@ As you can see, you can use team dashboards to provide guidance and keep your te
   
 ## Related articles
 
-- [Review the widget catalog](widget-catalog.md)
-- [Review Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
+- [Add a team](../../organizations/settings/add-teams.md)
+- [Widget catalog](widget-catalog.md)
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 
 
 ### Extensibility 

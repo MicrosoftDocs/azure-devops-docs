@@ -14,6 +14,6 @@ Rollup refers to the sum of Remaining Work, Story Points or other numeric field 
 
 ::: moniker range="< azure-devops"  
 
-Rollup refers to the sum of Remaining Work, Story Points or other numeric field of descendant work items within a hierarchy. Azure Boards supports some native rollup. Learn more, [Rollup of work and other fields](/azure/devops/reference/support-rollup-of-work-and-other-fields).  
+Rollup refers to the sum of Remaining Work, Story Points or other numeric field of descendant work items within a hierarchy. Azure Boards supports some native rollup. Learn more, [Rollup of work and other fields](/azure/devops/reference/xml/support-rollup-of-work-and-other-fields).  
 
 ::: moniker-end  

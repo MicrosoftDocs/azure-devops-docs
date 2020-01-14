@@ -145,7 +145,7 @@ The new, built-in [Conda Environment](/azure/devops/pipelines/tasks/package/cond
 
 ### Simplify definitions with multiple agentless tasks
 
-Tasks in an agentless phase are orchestrated by and executed on the server. Agentless phases do not require an agent or any target computers. Unlike agent phases, only one task could be added to each agentless phase in the definitions. This meant multiple phases had to be added when there were more than one agentless task in the process, making the definition bulky. We have relaxed this restriction, which allows you to maintain multiple tasks in an agentless phases. The tasks in the same phase would execute sequentially, just as they do for agent phases. See the [server phases](/azure/devops/pipelines/process/server-phases?view=azure-devops&tabs=yaml) documentation for more information.
+Tasks in an agentless phase are orchestrated by and executed on the server. Agentless phases do not require an agent or any target computers. Unlike agent phases, only one task could be added to each agentless phase in the definitions. This meant multiple phases had to be added when there were more than one agentless task in the process, making the definition bulky. We have relaxed this restriction, which allows you to maintain multiple tasks in an agentless phases. The tasks in the same phase would execute sequentially, just as they do for agent phases. See the [server phases](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml) documentation for more information.
 
 ### Manage limits on self-hosted, concurrent CI/CD jobs
 

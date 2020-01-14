@@ -1,7 +1,5 @@
-- name: Billing
-  href: index.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Billing overview 
-  href: overview.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+  href: overview.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Quickstarts
   items:
   - name: Set up billing
@@ -13,10 +11,10 @@
   - name: Buy CI/CD
     href: buy-more-build-vs.md
   - name: Buy Azure Artifacts
-    href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../../artifacts/start-using-azure-artifacts.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Buy cloud-based load testing
     href: buy-load-testing-vs.md
-- name: How-to guides
+- name: How-to Guides
   items:
   - name: Add user to make purchases
     href: add-backup-billing-managers.md
@@ -26,7 +24,7 @@
     href: buy-access-tfs-test-hub.md
   - name: Billing FAQ
     href: billing-faq.md
-  - name: Guidance for Cloud Solution Providers
+  - name: Cloud Solution Providers
     items:
     - name: "CSPs: Buy Azure DevOps"
       href: csp/buy-csp-azure-devops.md

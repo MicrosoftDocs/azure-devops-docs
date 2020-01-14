@@ -228,7 +228,7 @@ Open __Library__ tab in __Build &amp; Release__ hub and choose __+ Variable grou
 
 ![default artifact](_img/01_05_18.png)
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

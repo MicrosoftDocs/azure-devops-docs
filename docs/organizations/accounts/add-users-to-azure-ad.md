@@ -1,5 +1,5 @@
----
-title: Add organization users to Azure Active Directory tenant
+﻿---
+title: Add users to Azure Active Directory tenant
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Add users to your Azure Active Directory when Azure AD is connected to your organization

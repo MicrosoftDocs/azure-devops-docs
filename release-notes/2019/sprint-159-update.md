@@ -5,7 +5,7 @@ ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 10/14/2019
-description: In the **Sprint 159 Update** of Azure DevOps, description placeholder
+description: In the **Sprint 159 Update** of Azure DevOps, we are excited to announce the new Microsoft Teams app for Azure Boards and Azure Repos.
 ---
 
 #  New Azure Boards and Azure Repos app for Microsoft Teams - Sprint 159 Update
@@ -13,6 +13,10 @@ description: In the **Sprint 159 Update** of Azure DevOps, description placehold
 In the **Sprint 159 Update** of Azure DevOps, we are excited to announce the new Microsoft Teams app for Azure Boards and Azure Repos. The Azure Boards app will let you monitor work item activity and create work items from your Microsoft Teams channel. On the other hand, the Azure Repos app will allow you to monitor your repositories and get notified whenever code is pushed/checked in, pull requests (PR) are created, PRs are updated and much more in your Microsoft Teams channel.
 
 Check out the [Features](#features) list below for more.
+
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/WNomA4TBntw]
 
 ## Features
 

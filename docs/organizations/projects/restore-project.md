@@ -50,7 +50,7 @@ To restore a project, you must delete project permissions and have the "delete p
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
 
    ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select **Overview** and scroll down to "recently deleted projects."
+3. Select **Overview**, and then scroll down to "recently deleted projects."
 
    ![organization-settings-select-overview.png](../accounts/_img/_shared/organization-settings-select-overview.png)
 

@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: Troubleshooting
 ms.date: 10/22/2017
 ---

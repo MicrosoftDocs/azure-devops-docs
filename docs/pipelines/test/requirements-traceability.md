@@ -74,7 +74,7 @@ To link automated tests with requirements, visit [test report](review-continuous
    ![Group results by requirements](_img/requirements-traceability/groupby-requirements.png)
 
 4. Teams often want to pin the summarized view of requirements traceability to a dashboard.
-   Use the [Requirements quality](../../report/dashboards/widget-catalog.md#requirements-quality-widget) widget for this.
+   Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget for this.
 
    ![Create team dashboard](_img/requirements-traceability/team-dashboard.png)
 

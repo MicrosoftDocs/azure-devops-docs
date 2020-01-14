@@ -62,7 +62,7 @@ On November 12, we announced that Release Management is now available as a Visua
 
 ![Connecting Release Management to a VSO account](_img/12_02_07.png)
 
-That’s it for this sprint. Keep all the feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+That’s it for this sprint. Keep all the feedback coming on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

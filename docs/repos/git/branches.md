@@ -17,15 +17,15 @@ monikerRange: '>= tfs-2013'
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Git branches aren't much more than a small reference that keeps an exact history of commits, so they are very cheap to create.
+Git branches aren't much more than a small reference that keeps an exact history of commits, so they are cheap to create.
 [Committing](commits.md) changes to a branch will not affect other branches, and you can share branches with others without having to merge the changes into the main project.
 Create new branches to isolate changes for a feature or a bug fix from your master branch and other work. 
 
 Since the branches are lightweight, switching between branches is quick and easy. 
 Git does not create multiple copies of your source when working with branches&mdash;it uses the history information stored in commits to recreate the files on a branch when you start working on it.
-Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bugfixes.
+Your [Git workflow](gitworkflow.md) should create and use branches for managing features and bug fixes.
 The rest of the Git workflow, such as [sharing code](pushing.md) and [reviewing code with pull requests](pullrequest.md) all work through branches.
-Isolating work in branches makes it very simple to change what you are working on by simply changing your current branch.
+Isolating work in branches makes it simple to change what you are working on by changing your current branch.
 
 In this tutorial you learn:
 
@@ -43,7 +43,7 @@ In this tutorial you learn:
 
 Create branches using the `branch` command. `Branch` creates a reference in Git for the new branch and a pointer back to the parent commit so Git can keep a history of changes as you add commits to the branch. 
 When you are working with a branch that someone else shared, Git keeps an upstream tracking relationship to associate the branch on the local repo with the corresponding branch on the remote repo.
-This makes it very simple to sync changes with others using [push](pushing.md) and [pull](pulling.md).
+This makes it simple to sync changes with others using [push](pushing.md) and [pull](pulling.md).
 
 ![Visual of a branch off master in Git](_img/branch.png)
 
@@ -98,13 +98,13 @@ You can delete a remote branch using the same method - locate the tree for the r
 Delete a local branch using `git branch -d` while checked out to a different branch.
 
 ```
-git branch -d
+git branch -d <branch_name>
 ```
 
 Deleting a remote branch requires use of the `git push` command using the `--delete` option.
 
 ```
-git push origin --delete
+git push origin --delete <branch_name>
 ```
 
 * * *

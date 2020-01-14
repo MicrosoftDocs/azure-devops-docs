@@ -99,7 +99,7 @@
       href: manage-large-files.md
 - name: How-to Guides
   items:
-  - name: Authenticate with SSHAuthenticate with SSH
+  - name: Authenticate with SSH
     href: use-ssh-keys-to-authenticate.md
   - name: Authenticate with the Git Credential Manager
     href: set-up-credential-managers.md

@@ -158,7 +158,7 @@ We have a new and improved build history widget that you can add to your dashboa
 
 ### Manage billing for your organization directly through the Azure Portal
 
-As a Project Collection Administrator (PCA) you can now [set up billing](/azure/devops/billing/set-up-billing-for-your-organization-vs) or [remove billing](/azure/devops/billing/change-azure-subscription?view=azure-devops#remove-billing-subscription-and-purchase-again) for an organization directly through the Azure Portal. Look for the new **Setup billing** and **Remove billing** commands on your organization in the portal.
+As a Project Collection Administrator (PCA) you can now [set up billing](/azure/devops/billing/set-up-billing-for-your-organization-vs) or [remove billing](/azure/devops/billing/change-azure-subscription?view=azure-devops#remove-your-billing-subscription) for an organization directly through the Azure Portal. Look for the new **Setup billing** and **Remove billing** commands on your organization in the portal.
 
 ## Feedback
 

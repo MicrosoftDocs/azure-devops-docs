@@ -79,7 +79,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>
@@ -153,7 +153,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
+<td align="left"><a href="/azure/devops/project/feedback/give-feedback" data-raw-source="[Provide feedback](/azure/devops/project/feedback/give-feedback)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
@@ -161,7 +161,7 @@ ms.topic: include
 <td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><a href="/azure/devops/project/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/project/feedback/get-feedback)">Request feedback</a> 
+<td align="left"><a href="/azure/devops/project/feedback/get-feedback" data-raw-source="[Request feedback](/azure/devops/project/feedback/get-feedback)">Request feedback</a> 
 </td>
 <td> </td>
 <td> </td>

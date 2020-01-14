@@ -1,5 +1,6 @@
 ---
 title: Azure Repos - Sprint 153 Update
+description: See the Sprint 153 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

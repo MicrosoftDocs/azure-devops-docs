@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: ronai
-author: RoopeshNair
+ms.author: shashban
+author: shashankbarsin
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -91,7 +91,7 @@ each approval step. Configure recipients and settings in the **Notifications** s
 The link in the email message opens the **Summary** page for the release
 where the user can approve or reject the release.
 
-## Related topics
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)

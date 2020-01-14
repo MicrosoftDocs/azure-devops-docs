@@ -98,17 +98,53 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019"
 
-1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md), and for the template select **ASP.NET Core**. This template automatically adds the tasks you need to build the code in the sample repository.
+### YAML
+1. Add an `azure-pipelines.yml` file in your repository. Customize this snippet for your build. 
 
-2. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+```yaml
+trigger:
+- master
+
+pool: Default
+
+variables:
+  buildConfiguration: 'Release'
+
+# do this before all your .NET Core tasks
+steps:
+- task: DotNetCoreInstaller@2
+  inputs:
+    version: '2.2.402' # replace this value with the version that you need for your project
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
+```
+2. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+
+3. Set the **Agent pool** and **YAML file path** for your pipeline. 
+
+4. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+
+5. When you're ready to make changes to your pipeline, **Edit** it.
+
+6. See the sections below to learn some of the more common ways to customize your pipeline.
+
+::: moniker-end
+::: moniker range="< azure-devops" 
+### Classic
+
+1. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **Empty Pipeline**. 
+
+2. In the task catalog, find and add the **.NET Core** task. This task will run `dotnet build` to build the code in the sample repository.
+
+3. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
 
    You now have a working pipeline that's ready for you to customize!
 
-3. When you're ready to make changes to your pipeline, **Edit** it.
+4. When you're ready to make changes to your pipeline, **Edit** it.
 
-4. See the sections below to learn some of the more common ways to customize your pipeline.
+5. See the sections below to learn some of the more common ways to customize your pipeline.
 
 ::: moniker-end
 
@@ -126,7 +162,7 @@ pool:
   vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
 ```
 
-See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.
+See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema#pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
 They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
@@ -495,6 +531,9 @@ steps:
 # ...
 # do this near the end of your pipeline in most cases
 - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+- task: NuGetAuthenticate@0
+  input:
+    nuGetServiceConnections: '<Name of the NuGet service connection>'
 - task: NuGetCommand@2
   inputs:
     command: push
@@ -502,16 +541,6 @@ steps:
     publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
     versionEnvVar: version
-```
-
-To publish a NuGet package as an Azure Artifacts feed, add this snippet:
-
-```yaml
-steps:
-- task: NuGetAuthenticate@0
-  #inputs:
-    #nuGetServiceConnections: MyOtherOrganizationFeed, MyExternalPackageRepository # Optional
-    #forceReinstallCredentialProvider: false # Optional
 ```
 
 For more information about versioning and publishing NuGet packages, see [publish to NuGet feeds](../artifacts/nuget.md).  

@@ -1,5 +1,5 @@
----
-title: Use standalone static analysis with Azure DevOps Services and TFS
+﻿---
+title: Use standalone static analysis
 description: Learn how to use PMD, Checkstyle, and FindBugs with Azure DevOps Services and TFS for Java development
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,7 +19,7 @@ Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.ne
 
 ## Enabling analysis
 
-To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](/azure/devops/pipelines/tasks/build/maven) or [Gradle build task](/azure/devops/pipelines/tasks/build/gradle).
+To use these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](/azure/devops/pipelines/tasks/build/maven) or [Gradle build task](/azure/devops/pipelines/tasks/build/gradle).
 
 > [!div class="mx-imgBorder"]
 > ![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)

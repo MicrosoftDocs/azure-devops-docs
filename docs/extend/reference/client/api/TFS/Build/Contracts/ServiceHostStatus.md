@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts ServiceHostStatus API | Extensions for Azure DevOps Services
+description: Data representation of a service host status.
 ms.assetid: 4656c4b0-6a4c-91a3-8166-7a417db5f6ab
 ms.prod: devops
 ms.technology: devops-ecosystem

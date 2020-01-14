@@ -22,9 +22,11 @@ Discards one or more pending changes to files or folders.
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf undo [/workspace:workspacename[;workspaceowner]]
-    [/recursive] itemspec [/noprompt] [/login:username,[password]]
-    [/collection:TeamProjectCollectionUrl]
+```
+tf undo [/workspace:workspacename[;workspaceowner]]
+[/recursive] itemspec [/noprompt] [/login:username,[password]]
+[/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 
@@ -64,20 +66,26 @@ The **undo** command removes any [locks](work-version-control-locks.md) on the i
 
 ### Remove pending changes to a file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf undo program.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf undo program.cs
+```
 
 Removes all pending changes to program.cs.
 
 ### Recursively remove pending changes to all items in a folder
 
-    c:\code\SiteApp\Main>tf undo * /recursive
+```
+c:\code\SiteApp\Main>tf undo * /recursive
+```
 
 Removes all pending changes in the c:\\code\\SiteApp\\Main folder and all its subfolders.
 
 ### Remove pending changes to a file in a remote workspace
 
-    c:\>tf undo /collection:http://fabrikam-3:8080/tfs/DefaultCollection
-    /workspace:FABRIKAM-1;JuliaI $/SiteApp/Main/SolutionA/Project1/program.cs
+```
+c:\>tf undo /collection:http://fabrikam-3:8080/tfs/DefaultCollection
+/workspace:FABRIKAM-1;JuliaI $/SiteApp/Main/SolutionA/Project1/program.cs
+```
 
 Removes all pending changes to program.cs in the specified collection and workspace.
 

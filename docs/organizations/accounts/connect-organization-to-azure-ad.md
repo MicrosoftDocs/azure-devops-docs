@@ -144,5 +144,6 @@ For any of the organizations backed by your directory, complete the following st
 * [Change Azure AD connection](change-azure-ad-connection.md)
 * [Enforce Conditional Access policies](manage-conditional-access.md)
 * [Manage access with Azure AD groups](manage-azure-active-directory-groups-vsts.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 

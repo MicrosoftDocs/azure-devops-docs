@@ -1,4 +1,4 @@
----
+﻿---
 title: Release actions to deploy an app with Release Management
 ms.custom: seodec18
 description: Learn about the release actions to define the deployment sequence for an app in Azure Pipelines and Team Foundation Server (TFS).

@@ -6,11 +6,11 @@ ms.technology: devops-cicd
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
 ms.custom: seodec18
-ms.author: brcrista
-author: brcrista
+ms.author: macoope
+author: vtbassmatt
 ms.reviewer: dastahel
 ms.date: 04/25/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Use Python Version task
@@ -87,7 +87,7 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 
 ### How can I configure a self-hosted agent to use this task?
 
-Our image generation scripts are open-source [on GitHub](https://github.com/microsoft/azure-pipelines-image-generation).
+Our image generation scripts are open-source [on GitHub](https://github.com/actions/virtual-environments).
 Search the code for `AGENT_TOOLSDIRECTORY`.
 
 For details on how the task finds a particular Python version, see [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).

@@ -64,7 +64,7 @@ For those of you eager to get started writing [extensions](/azure/devops/integra
 
 Last sprint we released a preview of the new work item form. Since then, we’ve received feedback that the state field feels too much like a label, which causes discoverability issues. So we’ve enabled state coloring in the new work item form to differentiate the first, middle, and last states to create a visual language for this field.
 
-Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+Please reach out on Twitter ([@karenkayliu](https://twitter.com/karenkayliu)) if you have thoughts, comments, or questions about anything described here. And please help us prioritize by heading over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

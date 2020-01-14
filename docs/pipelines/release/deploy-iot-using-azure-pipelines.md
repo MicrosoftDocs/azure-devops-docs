@@ -6,10 +6,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.manager: mijacobs
-ms.author: puagarw
-author: pulkitaggarwl
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 04/25/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Automatically deploy to IoT edge devices 
@@ -34,7 +34,7 @@ In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) so
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-an-iot-edge-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
 
 1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
 

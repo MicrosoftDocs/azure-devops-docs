@@ -9,7 +9,7 @@ ms.technology: devops-new-user
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 03/26/2019
+ms.date: 12/23/2019
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ---
@@ -44,12 +44,12 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
    ```
-   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
+   git clone https://FabrikamFiber01@dev.azure.com/FabrikamFiber01/FabrikamFiber01-01/_git/FabrikamFiber01-01
    ```
   
    A copy of the code is downloaded in Git, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo. This copy is put into a new folder for you to work with.
 
-   Keep this command window open (you'll use it in the following steps).
+   Keep this command window open, as you'll use it in the following steps).
 
 ::: moniker-end
 

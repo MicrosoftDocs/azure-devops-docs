@@ -7,10 +7,10 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
 ms.manager: mijacobs
-ms.author: ethomson
-author: ethomson
+ms.author: phwilson
+author: chasewilson
 ms.date: 12/20/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Migrate from Travis to Azure Pipelines

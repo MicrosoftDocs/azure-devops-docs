@@ -28,7 +28,7 @@ This article shows you how to display, for a given set of open Bugs, the number 
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -50,7 +50,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -117,14 +117,14 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Boards Rollup - Fields](_img/odatapowerbi-bugtrend-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "DateValue" to **Axis**.
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy.
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy.
 1. Add the field "State" to **Legend**.
 1. Add the field "Count" to **Values**.
-    - Right click Count field and ensure **Sum** is selected.
+    - Right-click Count field and ensure **Sum** is selected.
 
 The example report displays. 
 
@@ -143,7 +143,7 @@ You can use the following additional queries to create different but similar rep
 You can query for bug trends by Team Name rather than Area Path.  
 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -165,7 +165,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -188,7 +188,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ### Bug trend with a snapshot every Friday
 
 Using a weekly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -211,7 +211,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
@@ -238,7 +238,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 Using a monthly snapshot reduces the amount of data pulled into Power BI, and increases query performance. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
@@ -261,7 +261,7 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 

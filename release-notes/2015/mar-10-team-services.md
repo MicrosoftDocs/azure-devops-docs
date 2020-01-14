@@ -20,7 +20,7 @@ Let’s start with an item that’s been on our backlog for quite some time—th
 
 There are some limitations with this new token that I want to explain. First, it doesn’t work in Excel. I know… I’m sure many of you will chastise me for this. The token relies on understanding your team context, and unfortunately Excel doesn’t have all the information needed to determine which iteration is current. We’ll work on improving this going forward, but didn’t want it to hold up the token's seeing the light of day. Support for the new token will exist in VS 2015 and VS 2013 Update 5.
 
-[User Voice #121579](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2293180-creating-queries-token-for-current-iteration) has been marked as done!
+User Voice #121579 has been marked as done!
 
 ## Reordering on the Kanban board
 
@@ -42,7 +42,7 @@ We made an adjustment to both the Kanban board and Taskboard to implement respon
 
 ## Bugs on the Taskboard
 
-Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](https://visualstudio.microsoft.com/articles/news/2014/nov-04-team-services) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
+Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](../2014/nov-04-team-services.md##bugs-on-the-backlog) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
 
 ![Bugs in the appropriate swim lanes on the Taskboard](_img/3_10_05.png)
 
@@ -56,7 +56,7 @@ The code editor in the web portal has been updated to support syntax highlightin
 
 And our last bit of news is that [CodeLens](https://msdn.microsoft.com/library/dn269218.aspx) is now in Public Preview for Visual Studio Online accounts in the West Europe region. You will need Visual Studio Ultimate 2013 Update 4 or Visual Studio 2015 Preview or later and your code should be checked into Team Foundation Version Control in Visual Studio Online.
 
-That’s it for Sprint 79. If you have questions about what we’ve shipped today, please reach out on [Twitter](https://twitter.com/AzureDevOps). And don’t forget to share what you’d like to see us prioritize on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso). See you again in three weeks.
+That’s it for Sprint 79. If you have questions about what we’ve shipped today, please reach out on [Twitter](https://twitter.com/AzureDevOps). And don’t forget to share what you’d like to see us prioritize on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). See you again in three weeks.
 
 Thanks,
 

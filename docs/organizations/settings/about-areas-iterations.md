@@ -135,6 +135,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 > | Path hierarchy depth | Must be fewer than 14 levels deep | 
 
 ## Related articles 
+
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 - [Define area paths and assign to a team](set-area-paths.md)
@@ -144,18 +145,23 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 
 <a name="export"></a>
+
 ### Export tree structures  
 
 You can't export the structure of tree paths for one project to use with another  project.  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 <a name="field-rules"></a>
+
 ### Supported field rules  
 
 You can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
 <a name="team-field"></a>
+
 ### Team field versus team area path  
+
 If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](../../reference/use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
 
 ::: moniker-end

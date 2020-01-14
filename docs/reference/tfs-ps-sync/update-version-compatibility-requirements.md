@@ -1,5 +1,5 @@
----
-title: Update an existing installation and version compatibility requirements
+﻿---
+title: Update existing version compatibility requirements
 titleSuffix: TFS 
 description: Update an existing installation and version compatibility requirements when using Team Foundation Server & Project Server
 ms.prod: devops

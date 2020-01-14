@@ -55,7 +55,7 @@ The management team creates the epics, and then they or their feature teams brea
 > [!TIP]
 >By breaking down large goals, epics, scenarios, or features into smaller ones, teams can make better estimates and identify risks and dependencies.
 
-Limiting the backlog levels for each team&#151;Epics for management teams and Features and Stories for feature teams&#151;helps each team to stay focused on monitoring the progress of their work. For details on managing team backlog levels, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md).
+Limiting the backlog levels for each team&mdash;Epics for management teams and Features and Stories for feature teams&mdash;helps each team to stay focused on monitoring the progress of their work. For details on managing team backlog levels, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md).
 
 With the multi-team portfolio backlog view, you can:
 - Review priorities with your team and reorder features to support current priorities

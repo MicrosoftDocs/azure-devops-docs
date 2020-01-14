@@ -24,7 +24,7 @@ You can use [Project to plan and schedule work items](create-your-backlog-tasks-
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
-> For version compatibility and Office clients, see [Requirements and compatibility, Office](/azure/devops/server/compatibility#office).  
+> For version compatibility and Office clients, see [Requirements and compatibility, Office](/azure/devops/server/compatibility#microsoft-office-integration).  
  
 **Project team tab ribbon** 
 
@@ -90,7 +90,7 @@ To learn more, see:
   
 ### Add fields to the task work item type
 
-To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command line tool to export and import the definition file for each work item type. 
+To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command-line tool to export and import the definition file for each work item type. 
  
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 

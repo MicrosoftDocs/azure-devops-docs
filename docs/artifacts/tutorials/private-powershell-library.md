@@ -59,7 +59,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 6. When you're done, make sure to *copy the token*, as this value will only be shown once. You'll use this token as your password, you can choose to store this value in whatever manner you prefer, but it should be treated as safely as a password. **You will need this value later in the tutorial**.
 
-> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-persona-access-tokens-to-authenticaate).
+> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
 ## Create the feed
 

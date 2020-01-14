@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts AgentPoolEvent API | Extensions for Azure DevOps Services
+description: Data representation of an agent pool event.
 ms.assetid: a1bc9195-a98d-8204-8eca-44ca3e5aa948
 ms.prod: devops
 ms.technology: devops-ecosystem

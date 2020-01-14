@@ -7,8 +7,8 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---

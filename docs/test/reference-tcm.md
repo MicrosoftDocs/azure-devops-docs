@@ -111,7 +111,7 @@ Team Foundation Server requires a report server that is dedicated only to its us
 
 Links:
 
-* [Installing Team Foundation Components](https://msdn.microsoft.com/library/dd631902.aspx)
+* [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
 * [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 
@@ -131,7 +131,7 @@ In addition, for Excel Reports, you also need to enable SharePoint on the Team F
 
 Links:
 
-* [Installing Team Foundation Components](https://msdn.microsoft.com/library/dd631902.aspx)
+* [Installing Team Foundation Components](/azure/devops/server/install/get-started)
 
 * [Configuring Resources to Support Team Projects](https://msdn.microsoft.com/library/dd386330.aspx)
 

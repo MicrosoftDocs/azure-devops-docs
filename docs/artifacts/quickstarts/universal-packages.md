@@ -22,7 +22,8 @@ This quickstart shows you how to publish your first Universal Package by using t
 
 1. Download and install the latest [build](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) of the Azure CLI.
 2. If you're using Linux, ensure you've installed the [.NET Core Linux prerequisites](/dotnet/core/linux-prerequisites).
-3. Install the Azure DevOps extension for the Azure CLI using the command ```az extension add --name azure-devops```
+3. Version 0.14.0 or greater of the Azure Devops extension for the Azure CLI is required. Install the Azure DevOps extension using the command `az extension add --name azure-devops`. 
+You can check what extension version you currently have installed with the command `az --version`, and upgrade to the latest Azure DevOps extension with the command `az extension update --name azure-devops`.
 
 ## Prepare files for publishing
 
@@ -55,7 +56,7 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+   > ![New feed dialog box](../_shared/_img/new-feed-dialog.png)
 
 You can change these settings later by editing the feed. With your feed selected, select **Edit feed** (the gear icon).
 

@@ -1,5 +1,5 @@
----
-title: Known issues and workarounds to support TFS-Project Server integration
+﻿---
+title: Known issues & workarounds for TFS-Project Server
 titleSuffix: TFS 
 description: Workaround known issues with the integration of Team Foundation Server & Project Server  
 ms.prod: devops

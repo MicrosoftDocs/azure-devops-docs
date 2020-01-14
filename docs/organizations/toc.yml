@@ -8,49 +8,55 @@
 - name: User preferences
   items:
   - name: Set user preferences
-    href: settings/set-your-preferences.md
+    href: /azure/devops/organizations/settings/set-your-preferences?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Enable preview features
-    href: ../project/navigation/preview-features.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/project/navigation/preview-features?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set personal favorites
-    href: ../project/navigation/set-favorites.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Configure personal notifications
-    href: ../notifications/howto-manage-personal-notifications.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    name: Manage authorizations
-    href: ./settings/manage-authorizations.md
+    href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Personal access tokens
+    href: /azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: SSH public keys
+    href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Alternate credentials
+    href: /azure/devops/repos/git/auth-overview?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json#ssh-key-authentication
+  - name: Manage authorizations
+    href: /azure/devops/organizations/settings/manage-authorizations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
   items:
-  - name: How-to guides
+  - name: About organizations
+    href:  /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Overview settings
     items:
-    - name: Change organization Owner
-      href: ./accounts/change-organization-ownership-vs.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Rename organization
-      href: ./accounts/rename-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Delete organization
-      href: ./accounts/delete-your-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Recover organization
-      href: ./accounts/recover-your-vsts-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization location
-      href: ./accounts/change-organization-location.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Add privacy policy URL
-      href: ./accounts/add-privacy-policy-url.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: ./accounts/add-privacy-policy-url.md
     - name: Change time zone
-      href: ./accounts/change-time-zone.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Add and manage banners
-      href: ./settings/manage-banners.md 
+      href: ./accounts/change-time-zone.md
+    - name: Change organization location
+      href: ./accounts/change-organization-location.md
+    - name: Change organization Owner
+      href: ./accounts/change-organization-ownership.md
+    - name: Rename organization
+      href: ./accounts/rename-organization.md
+    - name: Delete organization
+      href: ./accounts/delete-your-organization.md
+    - name: Recover organization
+      href: ./accounts/recover-your-organization.md
+  - name: Add and manage banners
+    href: /azure/devops/organizations/settings/manage-banners?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Troubleshooting
     items:
     - name: Create organization
-      href: ./accounts/faq-create-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: ./accounts/faq-create-organization.md
     - name: Change organization Ownership
-      href: ./accounts/faq-change-organization-ownership.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: ./accounts/faq-change-organization-ownership.md
     - name: Delete and restore organization
-      href: ./accounts/faq-delete-restore-organization.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: ./accounts/faq-delete-restore-organization.md
 - name: Teams
   href: settings/scale/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
 - name: Service hooks
-  href: ../service-hooks/toc.yml
+  href: ../service-hooks/overview.md
 - name: Projects
   href: projects/toc.yml
 - name: Process
@@ -58,19 +64,19 @@
 - name: Pipelines (Build and release)
   items:
   - name: Agent pools & queues
-    href: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/pipelines/agents/pools-queues?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Service endpoints
-    href: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/pipelines/library/service-endpoints?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Retention & limits
-    href: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/pipelines/policies/retention?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Deployment pools & groups
-    href: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/pipelines/release/deployment-groups/index?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
     href: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage Git branch policies
-    href: ..//repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage repository permissions
     href: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add TFVC Check-In Policies
@@ -78,27 +84,31 @@
 - name: Test
   items:
   - name: Set test retention policies
-    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.jsontoc.json
+    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Microsoft Project Mapping file (Deprecated)
   href: ../reference/mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
   items:
   - name: Configure features after an upgrade
-    href: ../reference/configure-features-after-upgrade.md
+    href: ../reference/configure-features-after-upgrade.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: New features added through feature enablement
-    href: ../reference/new-features-added.md
+    href: ../reference/new-features-added.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add features manually
-    href: ../reference/add-features-manually.md
+    href: ../reference/add-features-manually.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Additional configuration options
-    href: ../reference/additional-configuration-options.md
+    href: ../reference/additional-configuration-options.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Update a customized process template to access new features
-    href: ../reference/update-customized-process-template.md
+    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: When upgrading from TFS 2008 or TFS 2010
-    href: ../reference/upgrade-tfs-2008-or-2010.md
+    href: ../reference/upgrade-tfs-2008-or-2010.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Naming restrictions
-    href: ./settings/naming-restrictions.md
+    href: ./settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: "Workflow states & categories"
+    href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Changes made to process templates
+    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths
@@ -132,11 +142,6 @@
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
   - name: Public projects
-    href: ./public/about-public-projects.md
-  - name: Azure Boards
-    href: ../boards/index.yml
-  - name: Azure Repos
-    href: ../repos/index.yml
-  - name: Web portal navigation
-    href: ../project/navigation/index.md
+    href: ./public/about-public-projects.md?toc=/azure/devops/project/toc.json&bc=/azure/devops/project/breadcrumb/toc.json
+
 

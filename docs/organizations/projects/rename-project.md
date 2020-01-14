@@ -12,7 +12,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
-ms.date: 10/15/2019
+ms.date: 11/20/2019
 ---
 
 # Rename a project in Azure DevOps
@@ -23,7 +23,7 @@ In this article, learn how to rename a project. When you rename a project, it up
 Post rename, there might be some [actions](#more-work) required from team members. We recommend performing this action during off-hours to minimize any impact.
 
 > [!WARNING]
-> Renaming a project sends email notifications to everyone in the project, if there are less than 1,000 users. If there are greater than 1,000 users in your project, only PCAs receive email notifications.
+> Renaming a project sends email notifications to everyone in the project, if there are less than 1,000 users. If there are greater than 1,000 users in your project, only project collection administrators receive email notifications.
 
 ## Rename a project
 
@@ -238,3 +238,4 @@ The reporting and SharePoint server administrator can manually run these jobs to
      ```
 
 ::: moniker-end
+

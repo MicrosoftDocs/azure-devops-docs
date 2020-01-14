@@ -26,7 +26,7 @@ This sprint we tweaked the capacity planning experience to give you complete con
 
 ## Burndown with available capacity
 
-The burndown chart now has a line showing available capacity during a sprint, in addition to the existing ideal trend line. This view provides you and your team with a better idea of whether you're on track to finish all your work during the sprint. This line is built on the capacity data described above, including individual and team days off. We’ve marked [this suggestion](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/4381480-burndown-chart-should-use-the-capacity-of-the-team) on UserVoice as completed.
+The burndown chart now has a line showing available capacity during a sprint, in addition to the existing ideal trend line. This view provides you and your team with a better idea of whether you're on track to finish all your work during the sprint. This line is built on the capacity data described above, including individual and team days off. We’ve marked the suggestion on UserVoice as completed.
 
 ![Burndown chart showing available capacity](_img/8_26_03.png)
 
@@ -36,7 +36,7 @@ Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. B
 
 ![SonarQube build analysis settings](_img/8_26_04.png)
 
-That’s a wrap for our deployment this week. As always, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s a wrap for our deployment this week. As always, please reach out on [Twitter](https://twitter.com/AzureDevOps). If you have ideas on what you’d like to see us do next, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

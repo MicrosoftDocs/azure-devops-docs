@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -18,22 +18,28 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Conditional Access offers simple ways to help secure resources for organizations in Azure DevOps that are backed by an Azure Active Directory (Azure AD) tenant. Conditional Access policies (CAPs) like multi-factor authentication help protect against the risk of compromised credentials and help keep your organization's data safe. In addition to requiring credentials, you can have a policy that only devices that are connected to a corporate network can gain access. More generally, there are a few requirements and actions that you can implement for devices in a device management system. This system is security software that's used by IT departments to manage devices running various operating systems from various locations and networks.
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
-You can require conditions, such as security group membership, location and network identity, a specific OS, an enabled device in a management system, and so on.
+Secure resources for organizations in Azure DevOps that are backed by an Azure Active Directory (Azure AD) tenant, with Conditional Access. Conditional Access policies (CAPs), like multi-factor authentication, help protect against the risk of compromised credentials and keep your organization data safe. There's also a policy where only devices connected to a corporate network can gain access. Implement requirements and actions for devices in a device management system. A device management system is security software that's used by IT departments to manage devices running various operating systems (OSs), from various locations and networks.
 
-Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, or block access.
+You can require the following conditions, for example:
+- Security group membership
+- Location and network identity
+- Specific OS
+- Enabled device in a management system
+
+Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.
 
 Azure DevOps enforces the policy for usage of personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. See the following details of how and what we enforce.
 
    * For Web flows, CAP is honored 100%
-   * For third party client flow, like using a PAT with git.exe, we only support IP fencing policies - more specifically we don't support MFA policies. See the following examples:
-        * Policy 1 - Block all access from outside of IP range X, Y, and Z
-            * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or blocked if outside that list
-            * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z or blocked if outside that list
-        * Policy 2 - Require MFA when outside of IP range X, Y, and Z
-            * If a user is accessing Azure DevOps via the web, the user is allowed from IP X,Y,Z or prompted for MFA if outside that list
-            * If a user is accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y,Z blocked if outside that list
+   * For third-party client flow, like using a PAT with git.exe, we only support IP fencing policies - we don't support MFA policies. See the following examples:
+        * Policy 1 - Block all access from outside of IP range X, Y, and Z.
+            * If accessing Azure DevOps via the web, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
+            * If accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
+        * Policy 2 - Require MFA when outside of IP range X, Y, and Z.
+            * If accessing Azure DevOps via the web, the user is allowed from IP X,Y,and Z. The user is prompted for MFA if outside of that list.
+            * If accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
 
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
@@ -42,7 +48,25 @@ For more information, see the REST API reference article, section [API & TFS ver
 
 ## Enable Conditional Access for Azure DevOps
 
-To enforce Conditional Access policy on your organization, you must enable the policy in Azure DevOps, as it is set to *off* by default. This setting only applies to alternate credentials, and doesn't apply if CAPs are set in Azure AD, regardless of the settings in Azure DevOps.
+To enforce Conditional Access on your organization, enable the policy in Azure DevOps. This policy is set to *off* by default and only applies to alternate credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.
+
+> [!NOTE]   
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Policies** and from the **dropdown** next to "Enable Azure Active Directory Conditional Access Policy Validation" select **On**.
+
+   ![Select Policies, and then turn On](_img/_shared/enable-conditional-access-policy-preview.png)
+
+#### [Current page](#tab/current-page)
+
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -54,7 +78,9 @@ To enforce Conditional Access policy on your organization, you must enable the p
 
 3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
 
-   ![Enable Conditional Access policy](_img/_shared/enable-conditional-access-policy.png)
+   ![Select policy, and then turn On](_img/_shared/enable-conditional-access-policy.png)
+
+* * *
 
 ## Related articles
 

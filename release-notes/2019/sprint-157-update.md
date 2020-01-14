@@ -14,6 +14,10 @@ In the **Sprint 157 Update** of Azure DevOps, we added rollup columns to backlog
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/ID-AxX5NFPk]
+
 ## Features
 
 ### General:

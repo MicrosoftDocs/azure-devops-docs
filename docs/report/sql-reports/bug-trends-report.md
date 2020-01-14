@@ -8,7 +8,7 @@ description: Track the rate at which your team is discovering and resolving bugs
 ms.assetid: 631ec793-644f-4eff-8403-e48e746e369e
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 

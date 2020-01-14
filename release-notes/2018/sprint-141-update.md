@@ -57,7 +57,7 @@ Back in June of this year, we rolled out the first iteration of our [new navigat
 
 ### Expanded search box
 
-We understand the importance of search and are bringing back the expanded search box on the product header. In addition, you can now invoke the search box by just clicking "/" on any service page in Azure DevOps. This feature was prioritized based on the following [user voice](https://visualstudio.uservoice.com/forums/330519/suggestions/34756084).
+We understand the importance of search and are bringing back the expanded search box on the product header. In addition, you can now invoke the search box by just clicking "/" on any service page in Azure DevOps. This feature was prioritized based on a user voice suggestion.
 
 Here is the default search box:
 
@@ -96,7 +96,7 @@ In this release, we added a new wizard to simplify the process of setting up con
 
 ### The Xcode task supports newly released Xcode 10
 
-Coinciding with Apple's release of Xcode 10, you can now set your projects to build or be tested specifically with Xcode 10. Your pipeline can also run jobs in parallel with a [matrix](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops#matrix-1) of Xcode versions. You can use the Microsoft-hosted macOS agent pool to run these builds. See the [guidance](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode?view=azure-devops) for using Xcode in Azure Pipelines.
+Coinciding with Apple's release of Xcode 10, you can now set your projects to build or be tested specifically with Xcode 10. Your pipeline can also run jobs in parallel with a [matrix](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops#matrix) of Xcode versions. You can use the Microsoft-hosted macOS agent pool to run these builds. See the [guidance](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode?view=azure-devops) for using Xcode in Azure Pipelines.
 
 > [!div class="mx-imgBorder"]
 > ![Xcode 10](_img/141_01.png)

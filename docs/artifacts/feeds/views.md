@@ -79,4 +79,4 @@ In the edit feed dialog:
 
 ## Views for other scenarios
 
-In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Azure Artifacts UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).

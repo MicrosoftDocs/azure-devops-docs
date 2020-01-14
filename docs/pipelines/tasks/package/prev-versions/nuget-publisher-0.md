@@ -55,7 +55,7 @@ None
 <td>Feed type</td>
 <td>
 <ul>
-<li><strong>External NuGetFeed</strong> publishes to an external server such as <a href="https://www.nuget.org/" data-raw-source="[NuGet](https://www.nuget.org/)">NuGet</a> or <a href="http://www.myget.org/" data-raw-source="[MyGet](http://www.myget.org/)">MyGet</a>. After you select this option, you create and select a <strong>NuGet server endpoint</strong>.
+<li><strong>External NuGetFeed</strong> publishes to an external server such as <a href="https://www.nuget.org/" data-raw-source="[NuGet](https://www.nuget.org/)">NuGet</a> or <a href="http://www.myget.org/" data-raw-source="[MyGet](https://www.myget.org/)">MyGet</a>. After you select this option, you create and select a <strong>NuGet server endpoint</strong>.
 </li>
 <li><strong>Internal NuGet Feed</strong> publishes to an internal or Azure Artifacts feed. After you select this option, you specify the <strong>internal feed URL</strong>.
 </li>

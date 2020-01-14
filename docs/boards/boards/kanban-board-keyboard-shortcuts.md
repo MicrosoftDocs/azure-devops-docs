@@ -1,4 +1,4 @@
----
+﻿---
 title: Keyboard shortcuts available with Kanban boards
 titleSuffix: Azure Boards
 description: Use keyboard shortcuts to interact with product, portfolio, and sprint backlogs in Azure Boards, Azure DevOps, & Team Foundation Server   

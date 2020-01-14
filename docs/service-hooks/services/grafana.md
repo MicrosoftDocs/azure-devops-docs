@@ -1,8 +1,8 @@
----
+﻿---
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Grafana
+title: Create a service hook for Grafana
 description: Annotate Grafana dashboards upon completion of deployments in Azure Pipelines
 ms.assetid: d588f4a0-8081-4684-b87e-64d3140b8b1c
 ms.manager: shasb

@@ -27,9 +27,12 @@ The **merge** command applies changes from one branch into another.
 
 To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf merge [/recursive] [/force] [/candidate] [/discard] 
-    [/version:versionspec] [/lock:none|checkin|checkout] [/preview] 
-    [/baseless] [/nosummary] [/noimplicitbaseless] [/conservative] [/format:(brief|detailed)] [/noprompt] [/login:username,[password]] source destination
+```
+tf merge [/recursive] [/force] [/candidate] [/discard] 
+[/version:versionspec] [/lock:none|checkin|checkout] [/preview] 
+[/baseless] [/nosummary] [/noimplicitbaseless] [/conservative] [/format:(brief|detailed)] [/noprompt] [/login:username,[password]] source destination
+```
+
 ## Parameters
 
 |**Argument**|**Description**|
@@ -104,27 +107,39 @@ If you run **tf merge** with the **/noimplicitbaseless** option set, when Team F
 ## Examples
 The following example merges changes from MyFile\_beta1 that have not been merged into MyFile\_RTM.
 
-    c:\projects>tf merge MyFile_beta1 MyFile_RTM /recursive
+```
+c:\projects>tf merge MyFile_beta1 MyFile_RTM /recursive
+```
 
 The following example merges changeset 137 into branch2.
 
-    c:\projects>tf merge /version:C137~C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /version:C137~C137 branch1 branch2 /recursive
+```
 
 The following example merges all the changesets up to changeset 137 into branch2.
 
-    c:\projects>tf merge /version:C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /version:C137 branch1 branch2 /recursive
+```
 
 The following example prints a list of the changesets in branch1 that have not been merged into branch2.
 
-    c:\projects>tf merge /candidate branch1 branch2 /recursive
+```
+c:\projects>tf merge /candidate branch1 branch2 /recursive
+```
 
 The following example prints a list of changesets in branch2 that have not been merged back into branch1.
 
-    c:\projects>tf merge /candidate branch2 branch1 /recursive
+```
+c:\projects>tf merge /candidate branch2 branch1 /recursive
+```
 
 The following example discards changeset 137 as a candidate for merging into branch2.
 
-    c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
+```
+c:\projects>tf merge /discard /version:C137 branch1 branch2 /recursive
+```
 
 ## See Also
 

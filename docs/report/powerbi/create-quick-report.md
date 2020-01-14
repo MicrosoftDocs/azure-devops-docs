@@ -1,4 +1,4 @@
----
+﻿---
 title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
 description: Quick start helping users to create a trend report using an Analytics view

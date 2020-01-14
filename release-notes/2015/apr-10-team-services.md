@@ -25,7 +25,7 @@ The first thing I’ll highlight is that you now have configuration options for 
 
 ## Markdown editing for definition of done
 
-Last sprint we turned on a feature called Definition of Done giving you the ability to specify a shared definition of done for each column on your board. This sprint we’ve added [Markdown](http://daringfireball.net/projects/markdown/syntax) support to give you a great experience for formatted text (bullets, numbering, links, etc.) in your definitions.
+Last sprint we turned on a feature called Definition of Done giving you the ability to specify a shared definition of done for each column on your board. This sprint we’ve added [Markdown](https://daringfireball.net/projects/markdown/syntax) support to give you a great experience for formatted text (bullets, numbering, links, etc.) in your definitions.
 
 ![Definition of done with Markdown](_img/4_10_03.png)
 

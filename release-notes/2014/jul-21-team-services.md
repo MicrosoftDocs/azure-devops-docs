@@ -16,7 +16,7 @@ We have lots to share with you in this week’s deployment. So let’s get into 
 
 ## Using corporate identities with existing accounts
 
-A [popular request](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2605763-adfs-federated-authentication-for-visual-studio-on) for the service has been corporate identity (Active Directory) support for accounts. A [couple of releases ago](may-20-team-services.md) we added the ability to create a new account and connect it to a directory. With this release you can now add a directory to your **existing** Visual Studio Online account.
+A popular request for the service has been corporate identity (Active Directory) support for accounts. A [couple of releases ago](may-20-team-services.md) we added the ability to create a new account and connect it to a directory. With this release you can now add a directory to your **existing** Visual Studio Online account.
 
 Some of the key benefits of connecting a directory to your account include the ability to: leverage centralized identity management, enable single sign-on across cloud services, enforce multi-factor authentication, and integrate with an on-premises Active Directory. When you connect your account to a directory, we preserve your team members’ work item history and links, team memberships, and user plan.
 
@@ -50,7 +50,7 @@ In this sprint we also added the ability for an account owner to [delete their a
 
 ![Delete your account](_img/7_21_04.png)
 
-That’s the list for sprint 68. As Brian mentioned in [his blog](https://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
+That’s the list for sprint 68. As Brian mentioned in [his blog](https://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) site to give us feedback on our priorities and investments.
 
 Thank you!
 

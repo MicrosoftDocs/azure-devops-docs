@@ -22,11 +22,13 @@ Displays the revision history of one or more files or folders. The data is displ
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf hist[ory] itemspec [/version:versionspec] 
-    [/stopafter:number] [/recursive] [/user:username] 
-    [/format:(brief|detailed)] [/slotmode] [/itemmode] [/noprompt]
-    [/login:username,[password]] [/sort:ascending,descending]
-    [/collection:TeamProjectCollectionUrl]
+```
+tf hist[ory] itemspec [/version:versionspec] 
+[/stopafter:number] [/recursive] [/user:username] 
+[/format:(brief|detailed)] [/slotmode] [/itemmode] [/noprompt]
+[/login:username,[password]] [/sort:ascending,descending]
+[/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 
@@ -114,138 +116,172 @@ Displays the revision history of one or more files or folders. The data is displ
 
 ### Get history of a single file
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs
+```
 
 Displays all changes made to program.cs in the History window.
 
-    c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs /noprompt
+```
+c:\code\SiteApp\Main\SolutionA\Project1>tf history program2.cs /noprompt
+```
 
 Displays all changes made to program.cs in the command prompt window. For example:
 
-    Changeset Change                     User              Date       Comment
-    --------- -------------------------- ----------------- ---------- -------- 
-    29        edit                       Jamal Hartnett    4/23/2012  Fix bug
-    20        add                        Raisa Pokrovskaya 4/12/2012  Add new  
+```
+Changeset Change                     User              Date       Comment
+--------- -------------------------- ----------------- ---------- -------- 
+29        edit                       Jamal Hartnett    4/23/2012  Fix bug
+20        add                        Raisa Pokrovskaya 4/12/2012  Add new  
+```
 
 ### Get history of all items in a folder
 
-    c:\code\SiteApp\Main\SolutionA>tf history * /recursive
+```
+c:\code\SiteApp\Main\SolutionA>tf history * /recursive
+```
 
 Displays all changes made to all items in SolutionA (including those in subfolders) in the History window.
 
 ### Get history of the last five changes to all items in a folder
 
-    c:\code\SiteApp\Main\SolutionA>tf history * /noprompt /recursive /stopafter:5
+```
+c:\code\SiteApp\Main\SolutionA>tf history * /noprompt /recursive /stopafter:5
+```
 
 Displays the latest 5 changes made to items in SolutionA (including those in subfolders):
 
-    Changeset User              Date       Comment
-    --------- ----------------- ---------- ----------------------------------------
-    31        Raisa Pokrovskaya 5/15/2012
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to Proje
-    15        Raisa Pokrovskaya 4/8/2012
+```
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+31        Raisa Pokrovskaya 5/15/2012
+30        Raisa Pokrovskaya 4/23/2012
+29        Jamal Hartnett    4/23/2012  Fix bug in new method
+20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to Proje
+15        Raisa Pokrovskaya 4/8/2012
+```
 
 ### Get history from version x and earlier
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:30
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:30
+```
 
 Displays changes made to all items in SolutionA (including those in subfolders) in version 30 and earlier:
 
-    Changeset User              Date       Comment
-    --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+```
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+30        Raisa Pokrovskaya 4/23/2012
+29        Jamal Hartnett    4/23/2012  Fix bug in new method
+20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+```
 
 ### Get history from date D and earlier
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/24/2012
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/24/2012
+```
 
 -- or --
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D2012-04-24T12:00
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D2012-04-24T12:00
+```
 
 Displays changes made to all items in SolutionA (including those in subfolders) on 4/23/12 or earlier:
 
-    Changeset User              Date       Comment
-    --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+```
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+30        Raisa Pokrovskaya 4/23/2012
+29        Jamal Hartnett    4/23/2012  Fix bug in new method
+20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 15        Raisa Pokrovskaya 4/8/2012
+```
 
 ### Get history from version x to version y
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
 
 Displays changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
 
-    Changeset User              Date       Comment
-    --------- ----------------- ---------- ----------------------------------------
-    30        Raisa Pokrovskaya 4/23/2012
-    29        Jamal Hartnett    4/23/2012  Fix bug in new method
-    20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 
+```
+Changeset User              Date       Comment
+--------- ----------------- ---------- ----------------------------------------
+30        Raisa Pokrovskaya 4/23/2012
+29        Jamal Hartnett    4/23/2012  Fix bug in new method
+20        Raisa Pokrovskaya 4/12/2012  Add new method, add program2.cs to 
+```
 
 ### Get detailed history
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012 /format:detailed
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012 /format:detailed
+```
 
 Displays details about changes made to all items in SolutionA (including those in subfolders) between 4/12/2012 and 4/23/12:
 
-   -------------------------------------------------------------------------------
-    Changeset: 30
-    User: Raisa Pokrovskaya (Fabrikam)
-    Date: Monday, April 23, 2012 1:23:05 PM
+```
+-------------------------------------------------------------------------------
+Changeset: 30
+User: Raisa Pokrovskaya (Fabrikam)
+Date: Monday, April 23, 2012 1:23:05 PM
 
-    Comment:
-      Much better name for this file
+Comment:
+  Much better name for this file
 
-    Items:
-      rename                $/SiteApp/Main/SolutionA/Project1/programBig.cs
-      delete, source rename $/SiteApp/Main/SolutionA/Project1/program3.cs;X15
+Items:
+  rename                $/SiteApp/Main/SolutionA/Project1/programBig.cs
+  delete, source rename $/SiteApp/Main/SolutionA/Project1/program3.cs;X15
 
-    -------------------------------------------------------------------------------
-    Changeset: 29
-    User: Raisa Pokrovskaya (Fabrikam)
-    Date: Monday, April 23, 2012 1:03:13 PM
+-------------------------------------------------------------------------------
+Changeset: 29
+User: Raisa Pokrovskaya (Fabrikam)
+Date: Monday, April 23, 2012 1:03:13 PM
 
-    Comment:
-      Fix bug in new method
+Comment:
+  Fix bug in new method
 
-    Items:
-      edit $/SiteApp/Main/SolutionA/Project1/program1.cs
-      edit $/SiteApp/Main/SolutionA/Project1/program2.cs
+Items:
+  edit $/SiteApp/Main/SolutionA/Project1/program1.cs
+  edit $/SiteApp/Main/SolutionA/Project1/program2.cs
 
-    -------------------------------------------------------------------------------
-    Changeset: 20
-    User: Raisa Pokrovskaya (Fabrikam)
-    Date: Thursday, April 12, 2012 5:09:35 PM
+-------------------------------------------------------------------------------
+Changeset: 20
+User: Raisa Pokrovskaya (Fabrikam)
+Date: Thursday, April 12, 2012 5:09:35 PM
 
-    Comment:
-      Add new method, add program2.cs to Project1
+Comment:
+  Add new method, add program2.cs to Project1
 
-    Items:
-      add $/SiteApp/Main/SolutionA/Project1/program2.cs
+Items:
+  add $/SiteApp/Main/SolutionA/Project1/program2.cs
 
-    Check-in Notes:
-      Documentation:
-        An important new part of our codebase.
+Check-in Notes:
+  Documentation:
+    An important new part of our codebase.
 
-    Policy Warnings:
-      Override Reason:
-        Jamal agrees with me that we can bypass for this check-in.
-      Messages:
-        The Code Analysis Policy requires files to be checked in through Visual
-    Studio with an open solution.
+Policy Warnings:
+  Override Reason:
+    Jamal agrees with me that we can bypass for this check-in.
+  Messages:
+    The Code Analysis Policy requires files to be checked in through Visual
+Studio with an open solution.
+```
 
 ### Get the non-recursive history of a folder
 
-    c:\code\SiteApp\Main\SolutionA>tf history .
+```
+c:\code\SiteApp\Main\SolutionA>tf history .
+```
 
 Displays the history of the SolutionA folder in the History window, which enables you to explore earlier changes to the folder. For example, if the most recent change to the folder was a rename, you can expand the changeset to see changes that occurred before the rename.
 
-    c:\code\SiteApp\Main\SolutionA>tf history . /noprompt
+```
+c:\code\SiteApp\Main\SolutionA>tf history . /noprompt
+```
 
 Displays the most recent change to the SolutionA folder in the command prompt window.
 

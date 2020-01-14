@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts Timeline API | Extensions for Azure DevOps Services
+description: Data representation of a timeline.
 ms.assetid: ad5ee230-3486-4fd7-f01c-d4de7d100e6a
 ms.prod: devops
 ms.technology: devops-ecosystem

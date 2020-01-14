@@ -63,11 +63,11 @@ Any project pivot can now be sorted based on a variety of options, including tit
 
 ### Query work across the iteration schedule with +/- @CurrentIteration
 
-The @CurrentIteration macro that helps your team track work based on your iteration schedule now supports integer offset. Easily keep tabs on the work that didn’t get closed with @CurrentIteration - 1, or look ahead at the work planned for future iterations with @CurrentIteration + 1. See the [@CurrentIteration post](https://blogs.msdn.microsoft.com/devops/2018/03/01/currentiteration-team-parameter-offset) on the Microsoft DevOps Blog for more information. This feature was prioritized based on what is currently the #12 highest voted [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/13314216-vso-support-currentiteration-1-for-next-or-past) with 456 votes.
+The @CurrentIteration macro that helps your team track work based on your iteration schedule now supports integer offset. Easily keep tabs on the work that didn’t get closed with @CurrentIteration - 1, or look ahead at the work planned for future iterations with @CurrentIteration + 1. See the [@CurrentIteration post](https://blogs.msdn.microsoft.com/devops/2018/03/01/currentiteration-team-parameter-offset) on the Microsoft DevOps Blog for more information. This feature was prioritized based on what is currently the #12 highest voted suggestion with 456 votes.
 
 ### Clarify query iteration schedules with the @CurrentIteration Team parameter
 
-If you have been using the @CurrentIteration macro in queries in the past you may have noticed that results may vary if the Team context changes across Teams with different iteration schedules. Now, when you create or modify a query with the @CurrentIteration macro, you will be required to also select the Team with the iteration schedule that is relevant to the query. With the Team parameter, you can use the @CurrentIteration macro in the same query but across teams. One example may be a query for work items in two different team projects using different iteration names and even schedules. This means no more having to update queries as sprints change! See the [@CurrentIteration post](https://blogs.msdn.microsoft.com/devops/2018/03/01/currentiteration-team-parameter-offset) on the Microsoft DevOps Blog for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/4675453-allow-multiple-current-iterations-for-multiple-i).
+If you have been using the @CurrentIteration macro in queries in the past you may have noticed that results may vary if the Team context changes across Teams with different iteration schedules. Now, when you create or modify a query with the @CurrentIteration macro, you will be required to also select the Team with the iteration schedule that is relevant to the query. With the Team parameter, you can use the @CurrentIteration macro in the same query but across teams. One example may be a query for work items in two different team projects using different iteration names and even schedules. This means no more having to update queries as sprints change! See the [@CurrentIteration post](https://blogs.msdn.microsoft.com/devops/2018/03/01/currentiteration-team-parameter-offset) on the Microsoft DevOps Blog for more information. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Team parameter](_img/131_13.png)
@@ -83,7 +83,7 @@ The Azure DevOps Project enables you to setup a fully configured CI/CD pipeline 
 
 ### Improve release times by partially downloading artifacts
 
-Previously, as part of a deployment phase, you could choose to either download all the artifacts or skip them all. Now you can choose the artifacts that need to be downloaded. This can save time by ensuring the agent only has to download what it needs. See the [release artifacts](/azure/devops/pipelines/release/artifacts#download) documentation for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/13396200-only-download-artifacts-required-for-task-executio).
+Previously, as part of a deployment phase, you could choose to either download all the artifacts or skip them all. Now you can choose the artifacts that need to be downloaded. This can save time by ensuring the agent only has to download what it needs. See the [release artifacts](/azure/devops/pipelines/release/artifacts#download) documentation for more information. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
 > ![Partially download artifacts](_img/131_07.png)
@@ -156,7 +156,7 @@ Steps to add the alternate account to your subscription can be found in the [My 
 > [Go to VSTS](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 > [!div class="nextstepaction"]
-> [Subscribe to Updates](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed)
+> [Subscribe to Updates](https://azure.microsoft.com/updates/?product=azure-devops)
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize, through the feedback menu.
 

@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 06/06/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -21,7 +21,9 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 In this article, learn how to let a user [set up billing](set-up-billing-for-your-organization-vs.md) or [change billing](change-azure-subscription.md) for your organization. Go to the **Subscriptions** tab and
-add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**Service admin**](/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**Co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that your organization uses for Azure DevOps billing.
+add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**Service admin**](/azure/billing/billing-add-change-azure-subscription-administrator), or [**Co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator) roles to users in the Azure subscription that your organization uses for Azure DevOps billing.
+
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 

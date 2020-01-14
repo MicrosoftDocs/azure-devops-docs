@@ -14,18 +14,13 @@ The most common way to install a Maven artifact is as a dependency of another ar
    mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -DgroupId="MyGroup" -DartifactId="mySecondApp"
    ```
 
-2. From the **Connect to feed** dialog box in Azure DevOps Services or TFS, copy the `<repository>` information. Paste it into your pom.xml file twice (see the preceding sample file):
+2. In **Azure Artifacts**, browse to the artifact that you want to install and copy the contents of the `<dependency>` element.
 
-   * Between the `<repositories>` tags
-   * Between the `<distributionManagement>` tags 
+3. Paste the `<dependency>` element content inside the `<dependencies>` element of your pom.xml file.
 
-3. In **Azure Artifacts**, browse to the artifact that you want to install and copy the contents of the `<dependency>` element.
+4. Run `mvn install` from the directory that contains your pom.xml file.
 
-4. Paste the `<dependency>` element content inside the `<dependencies>` element of your pom.xml file.
-
-5. Run `mvn install` from the directory that contains your pom.xml file.
-
-See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
+See the [Maven CLI docs](https://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
 
 ::: moniker-end
 
@@ -48,6 +43,6 @@ See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/us
 
 5. Run `mvn install` from the directory that contains your pom.xml file.
 
-See the [Maven CLI docs](http://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
+See the [Maven CLI docs](https://maven.apache.org/plugins/maven-install-plugin/usage.html) for more installation options.
 
 ::: moniker-end
