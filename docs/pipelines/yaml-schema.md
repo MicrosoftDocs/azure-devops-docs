@@ -1107,6 +1107,7 @@ resources:
     env: { string: string }  # list of environment variables to add
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
 
 # [Example](#tab/example)
