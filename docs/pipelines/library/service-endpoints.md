@@ -157,7 +157,7 @@ Or you can choose to lock down the service connection and only allow selected YA
 
 ![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
 
-### Project permssions - Cross project sharing of service connections
+### Project permissions - Cross project sharing of service connections
 Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
 1. Only the organization-level administrators from **User permissions** can share the service connection with other projects.
