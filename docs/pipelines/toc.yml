@@ -46,6 +46,11 @@
     - name: Specify demands 
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
+    - name: Approvals, checks, & gates 
+      href: release/approvals/index.md
+    - name: Define an approval 
+      href: process/approvals.md
+      displayName: approvals, checks
   - name: Repositories & triggers
     items:
     - name: Specify pipeline triggers  
@@ -211,11 +216,6 @@
     href: process/environments-kubernetes.md
   - name: Virtual machine resource
     href: process/environments-virtual-machines.md
-  - name: Approvals, checks, & gates 
-    href: release/approvals/index.md
-  - name: Define an approval 
-    href: process/approvals.md
-    displayName: approvals, checks
   - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
