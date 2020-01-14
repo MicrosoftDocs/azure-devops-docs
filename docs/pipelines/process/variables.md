@@ -218,7 +218,7 @@ steps:
     targetType: 'inline'
     script: |
         # Encode the Personal Access Token (PAT)
-        # $env:USER is a public variable in the variable group
+        # $env:USER is a normal variable in the variable group
         # #env:MY_MAPPED_TOKEN is a mapped secret variable
         $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
         
