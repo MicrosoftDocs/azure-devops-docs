@@ -162,7 +162,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 [!INCLUDE [temp](_shared/access-variables-through-env.md)]
 
 * * *
-<h2 id="secret-variables">Secrets</h2>
+<h2 id="secret-variables">Set secret variables</h2>
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
