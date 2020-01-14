@@ -21,9 +21,9 @@ The Azure DevOps Services Plugin for Android Studio allows you to connect to you
 *The plugin is compatible with `Android Studio 1.2 and up`.*
 
 
-**Android Studio** is the official IDE for Android app development, based on IntelliJ IDEA. You can find out more about it at [http://developer.android.com/tools/studio/index.html](http://developer.android.com/tools/studio/index.html). 
+**Android Studio** is the official IDE for Android app development, based on IntelliJ IDEA. You can find out more about it at [https://developer.android.com/tools/studio/index.html](https://developer.android.com/tools/studio/index.html). 
 
-The Azure DevOps Services plugin for Android Studio is available in the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
+The Azure DevOps Services plugin for Android Studio is available in the [Android Studio Plugin Repository](https://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
 The plugin can be installed from Android Studio by browsing the Plugin Repository.
 
 1. In Android Studio, open plugin settings:
@@ -33,7 +33,7 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
 2. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
 3. Click the `Install plugin` button and restart Android Studio. 
 
-   You can also download the plugin to disk from the [Android Studio Plugin Repository](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
+   You can also download the plugin to disk from the [Android Studio Plugin Repository](https://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
 
 4. In Android Studio, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
@@ -54,7 +54,7 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
 
 **Q:  Is there support for TFVC repositories?**
 
-**A:** The plugin supports both Git and TFVC. For more information on TFVC support, see the TFVC specific features listed [here](http://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
+**A:** The plugin supports both Git and TFVC. For more information on TFVC support, see the TFVC specific features listed [here](https://plugins.jetbrains.com/plugin/7981?pr=androidstudio).
 
 **Q:  Is the source code for the plugin available?**
 

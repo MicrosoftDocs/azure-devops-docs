@@ -75,7 +75,7 @@ or immediately start a deployment. For example:
   and not to the production stage.   
 
 * There may be [queuing policies](../process/stages.md#queuing-policies)
-  defined for an stage, which specify which of multiple deployments will occur,
+  defined for a stage, which specify which of multiple deployments will occur,
   or the order in which releases are deployed.
 
 * There may be [pre-deployment approvers or gates](approvals/index.md)

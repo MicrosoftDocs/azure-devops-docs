@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Build and Deploy a ASP.NET app | Azure Pipelines
+title: Build and Deploy an ASP.NET app
 description: Set up a continuous integration (CI) build for your ASP.NET app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.prod: devops
 ms.technology: devops-cicd

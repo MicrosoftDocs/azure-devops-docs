@@ -22,7 +22,7 @@ The first change I want to highlight is that we’ve enabled the ability to quer
 
 ## Removing weekends from the Burndown
 
-We’ve added a new team configuration setting that enables you to specify the working days for your teams – effectively giving you the ability to remove those pesky weekend days from your burndown charts. If you follow us on [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) you know that this particular item is near the top of the list of things you’ve told us you can’t live without. Each team in your project controls this setting independently to enable teams in different geos to work more effectively in the same team project.
+We’ve added a new team configuration setting that enables you to specify the working days for your teams – effectively giving you the ability to remove those pesky weekend days from your burndown charts. If you follow us on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) you know that this particular item is near the top of the list of things you’ve told us you can’t live without. Each team in your project controls this setting independently to enable teams in different geos to work more effectively in the same team project.
 
 ![Screenshot of working days interface](_img/1_22_02.png)
 

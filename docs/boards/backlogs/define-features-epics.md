@@ -1,5 +1,5 @@
----
-title: Group/organize backlog items - define features and epics
+﻿---
+title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 

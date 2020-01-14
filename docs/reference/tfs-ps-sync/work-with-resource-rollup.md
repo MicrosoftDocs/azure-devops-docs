@@ -1,5 +1,5 @@
----
-title: Work with resource rollup in enterprise projects mapped to projects
+﻿---
+title: Resource rollup in project mapped enterprise projects
 titleSuffix: TFS 
 description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
 ms.technology: devops-agile

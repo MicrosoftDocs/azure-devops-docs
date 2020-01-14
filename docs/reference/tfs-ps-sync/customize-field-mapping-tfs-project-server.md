@@ -1,5 +1,5 @@
----
-title: Customize the field mapping between TFS and Project Server
+﻿---
+title: Customize field mapping between TFS & Project Server
 titleSuffix: TFS
 description: Associate the fields in Team Foundation Server with fields in Project Server 
 ms.prod: devops

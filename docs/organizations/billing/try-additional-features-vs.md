@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/23/2019
+ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -19,6 +19,8 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
 
 In this quickstart, learn how to try Azure Test Plans for free for 30 days.
+
+[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
@@ -35,11 +37,7 @@ You must have [Project Collection Administrator or organization Owner permission
 
    ![Select Billing](_img/_shared/select-billing-organization-settings.png)
 
-4. Select **Start 30-day Test Plans trial**.
-
-    ![Select Start 30-day Test Plans trial](_img/try-additional-features/start-30-day-test-plans-trial.png)
-
-5. 5. Select **Start free trial**.
+4. Select **Start free trial**.
 
    ![Select Start free trial](_img/try-additional-features/start-free-trial.png)
 

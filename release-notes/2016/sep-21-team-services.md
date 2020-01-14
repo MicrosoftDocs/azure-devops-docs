@@ -105,7 +105,7 @@ A build can be deployed and tested in different release environments across mult
 
 ![Deployment widget](_img/9_21_08.png)
 
-If you have ideas on things you’d like to see, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+If you have ideas on things you’d like to see, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

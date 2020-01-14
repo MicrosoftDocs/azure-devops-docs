@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 09/30/2017
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,12 +22,12 @@ All Azure Artifacts feeds require authentication, so you'll need to store creden
 
 Azure DevOps Services recommends using two **_.npmrc_** files:
 
-1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
+1. One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.
 
    1. From your **Packages** page, click _Connect to Feed_
 
       ::: moniker range=">= azure-devops-2019"
-
+    
       > [!div class="mx-imgBorder"] 
       >![Connect to feed button in Azure Artifacts](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
       > 
@@ -46,12 +46,18 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
       ::: moniker-end
 
-   2. Copy the "registry" text:
+   3. Select **npm**.
+
+   4. Select **Get the tools** in the top right corner
+
+   5. Follow steps **1** and **2** to download Node.js, npm and the artifacts credential provider.
+
+   6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
       ::: moniker range=">= azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry-azure-devops-newnav.png)
+      >![Connect to feed from Azure Artifacts](../_shared/_img/npm-azure-devops-newnav.png)
       > 
 
       ::: moniker-end

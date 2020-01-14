@@ -1,4 +1,4 @@
----
+﻿---
 title: View and configure the cumulative flow diagram (CFD) reports
 titleSuffix: Azure DevOps 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 

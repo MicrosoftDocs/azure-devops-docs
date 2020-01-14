@@ -95,7 +95,7 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State)&$filter=WorkItemId eq 105
 > ```
 
 **Response**
@@ -112,17 +112,13 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 >             "WorkItemId": 55,
 >             "Title": "Story 22",
 >             "State": "New",
->             "Parent": {
->                 "WorkItemId": 103,
->                 "Title": "Feature Y",
->                 "State": "New"
->             }
 >         }
 >     }]
 > }
 > ```
 
 ## Query for non-hierarchical links
+
 In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links

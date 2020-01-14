@@ -1,5 +1,6 @@
 ---
 title: Reporting - Sprint 149 Update
+description: See the Sprint 149 feature updates for Azure reporting, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops

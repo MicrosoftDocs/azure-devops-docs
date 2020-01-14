@@ -1,5 +1,5 @@
----
-title: Use a PowerShell script to customize your build pipeline
+﻿---
+title: Use PowerShell scripts to customize pipelines
 ms.custom: seodec18
 description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual

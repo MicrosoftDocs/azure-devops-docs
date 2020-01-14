@@ -1,5 +1,5 @@
----
-title: Manage permissions for READMEs and wiki pages in Azure DevOps
+﻿---
+title: Manage permissions for READMEs and wiki pages
 titleSuffix: Azure DevOps
 description: Learn how to set permissions to grant or secure access to README files and you team project built-in wiki
 ms.technology: devops-collab

@@ -170,7 +170,7 @@ For Azure DevOps Server 2019, you have a choice of process models. When you crea
 > [!IMPORTANT]  
 > The choice you make is not reversible. Once the collection is created, you'll only be able to customize work tracking objects using the model selected. Also, there is no way to migrate existing project collections that use the On-premises XML process model to the Inheritance process model. 
 
-To learn more about project collections, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).
+To learn more about project collections, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).
 
 ::: moniker-end
 
@@ -207,10 +207,10 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>
 <ul>
 <li><a href="../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path" data-raw-source="[Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)">Area path permissions</a></li>
-<li><a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">Process permissions</a></li>
+<li><a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Process permissions](../organizations/security/set-permissions-access-work-tracking.md)">Process permissions</a></li>
 <li><a href="../boards/queries/set-query-permissions.md" data-raw-source="[Work item query and folder permissions](../boards/queries/set-query-permissions.md)">Work item query and folder permissions</a></li>
 <li><a href="../report/dashboards/dashboard-permissions.md#set-permissions" data-raw-source="[Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)">Dashboard permissions</a></li>
-<li><a href="../organizations/security/set-permissions-access-work-tracking.md#plan-permissions" data-raw-source="[Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)">Plan permissions</a></li>
+<li><a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Plan permissions](../organizations/security/set-permissions-access-work-tracking.md)">Plan permissions</a></li>
 <li><a href="../organizations/security/permissions.md#tags" data-raw-source="[Tagging permissions](../organizations/security/permissions.md#tags)">Tagging permissions</a></li>
 <li><a href="../organizations/security/permissions.md#project_test" data-raw-source="[Test permissions](../organizations/security/permissions.md#project_test)">Test permissions</a></li>
 </ul>

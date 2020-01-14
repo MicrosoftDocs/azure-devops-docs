@@ -28,13 +28,13 @@ This article shows you how to display average lead time or cycle time for a give
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
@@ -47,12 +47,12 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}
@@ -79,7 +79,7 @@ The following table describes each part of the query.
 <tbody valign="top">
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
 <tr><td><code>$filter=WorkItemType eq 'User Story'</code></td><td>Return User Stories</td><tr>
-<tr><td><code>and StateCategory eq 'Completed'</code></td><td>Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
+<tr><td><code>and StateCategory eq 'Completed'</code></td><td>Return only completed items. Only completed items have Lead/Cycle Times calculated. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
 <tr><td><code>and CompletedDate ge {startdate}</code></td><td>Return items Closed after the specified date. Example: **2019-04-01Z** represents 2019-April-01</td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with "Area/AreaPath eq '{areapath}'" returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code></td><tr>
 <tr><td><code>&$select=WorkItemId, Title, WorkItemType, State, Priority, Severity, TagNames</code></td><td>Select fields to return</td><tr>
@@ -126,14 +126,14 @@ Power BI shows you the fields you can report on.
 > [!div class="mx-imgBorder"] 
 > ![Power BI + OData - Lead Cycle Fields](_img/odatapowerbi-leadcycle-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "CompletedDateSK" to **Axis**.
-    - Right click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
+    - Right-click "CompletedDateSK" and select "CompletedDateSK", rather than Date Hierarchy.
 1. Add the field "Priority" to legend.
 1. Add the field "LeadTimeDays" to **Values**.
-    - Right click "LeadTimeDays" field and ensure **Average** is selected.
+    - Right-click "LeadTimeDays" field and ensure **Average** is selected.
 
 The example report:
 
@@ -149,19 +149,19 @@ To pivot the report by Area Path (representing teams), add the field "Area.AreaP
 
 ## Additional queries
 
-Additional queries that can be used to create different, but similar reports. You can use these queries with the steps defined above.
+You can use the following additional queries to create different but similar reports.You can use these queries with the steps defined above.
 
 ### Filter by Teams, rather than Area Path
 
 This query is the same as the one used above, except it filters by Team Name rather than Area Path. 
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](_shared/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?"
         &"$filter=WorkItemType eq 'User Story' "
             &"and StateCategory eq 'Completed' "
             &"and CompletedDate ge {startdate} "
@@ -174,12 +174,12 @@ in
     Source
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
 [!INCLUDE [temp](_shared/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{account}/{project}/_odata/v3.0-preview/WorkItems?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
         $filter=WorkItemType eq 'User Story'
             and StateCategory eq 'Completed'
             and CompletedDate ge {startdate}

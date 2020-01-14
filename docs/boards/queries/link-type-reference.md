@@ -501,7 +501,7 @@ Link category: System-defined</p>
 <td><strong>Remote Related</strong><br/>
 <img src="_img/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
 </td>
-<td><p>System.LinkTypes.RemoteRelated</p>
+<td><p>System.LinkTypes.Remote.Related</p>
 <p>Topology type: Network<br/>
 Link category: System-defined</p>
 </td>

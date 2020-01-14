@@ -245,7 +245,7 @@ For example, if you grouped `WorkItemSnapshot` only by `AssignedTo` property and
 
 ### ❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing
 
-OData syntax provides a way to access a particular entity by including its keys directly in the URL segments as described in the specification, [OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340). Although OData allows such addressing, Analytics blocks it. Inclusion within a query results in the following error.
+OData syntax provides a way to access a particular entity by including its keys directly in the URL segments as described in the specification, [OData Version 4.0. Part 2: URL Conventions - 4.3 Addressing Entities](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752340). Although OData allows such addressing, Analytics blocks it. Inclusion within a query results in the following error.
 
 ><em>The query specified in the URI is not valid. Analytics doesn't support key or property navigation like WorkItems(Id) or WorkItem(Id)/AssignedTo. If you getting that error in PowerBI, please, rewrite your query to avoid incorrect folding that causes N+1 problem.</em>
 
@@ -336,7 +336,7 @@ Analytics doesn't support the `countdistinct` function, even though OData does. 
 
 ### ❌ AVOID aggregations that can result in arithmetic overflow
 
-In rare cases, an aggregation query may run into problems with arithmetic overflow. For example, this can happen when you sum some numeric properties which aren't intended for summing, such as `StackRank` in the work item entities. Since the [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html) standard does not provide a way to cast a property to a different type, the only way to solve this problem is to remove the problematic property from the aggregation.
+In rare cases, an aggregation query may run into problems with arithmetic overflow. For example, this can happen when you sum some numeric properties which aren't intended for summing, such as `StackRank` in the work item entities. Since the [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html) standard does not provide a way to cast a property to a different type, the only way to solve this problem is to remove the problematic property from the aggregation.
 
 <a id="restrict-do-use-batch-endpoint"> </a>
 
@@ -351,7 +351,7 @@ HTTP/1.1 404 Not Found
 Content-Length: 0
 ```
 
-To resolve this problem, use the OData batch endpoint as explained in the specification, [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primary designed to group multiple operations into a single `HTTP` request payload, but you can also use it as a workaround for the query length limitation. By sending an `HTTP POST` request you can pass a query of an arbitrary length and it will be correctly interpreted by the service. 
+To resolve this problem, use the OData batch endpoint as explained in the specification, [OData Version 4.0. Part 1: Protocol - 11.7 Batch Requests](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313). Batch capability was primary designed to group multiple operations into a single `HTTP` request payload, but you can also use it as a workaround for the query length limitation. By sending an `HTTP POST` request you can pass a query of an arbitrary length and it will be correctly interpreted by the service. 
 
 
 <a name="odata_batch_query_size_invalid"></a>
@@ -484,7 +484,7 @@ Regardless of your approach, you should run both queries multiple times (e.g. 30
 
 ### ✔️ DO use aggregation extensions
 
-By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, you can ask the service to summarize data server-side and return a much smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so please make use of it. 
+By far the best thing you can do to improve performance of your queries is to use aggregation extension - [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html). With the aggregation extension, you can ask the service to summarize data server-side and return a much smaller response than what you can fetch by applying the same function client-side. Finally, Analytics is optimized for this type of queries, so please make use of it. 
 
 To learn more, see [Aggregate data](aggregated-data-analytics.md).
 
@@ -575,7 +575,7 @@ You can achieve this with additional filter expressions to remove days which don
 > </EnumType>
 > ```
 
-Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as and enum with flags, use the OData [`has`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
+Since `Microsoft.VisualStudio.Services.Analytics.Model.Period` is defined as and enum with flags, use the OData [`has`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868681) operator and specify full type for the period literals.
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -674,7 +674,7 @@ OData has the capability to expand all the levels of a hierarchical structure. F
 
 ### ✔️ DO use server-driven paging
 
-If you ask for a set that is too large to be sent in a single response, Analytics will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
+If you ask for a set that is too large to be sent in a single response, Analytics will apply paging. The response will include only a partial set and a link that allows retrieving the next partial set of items. This strategy is described in the OData specification - [OData Version 4.0. Part 1: Protocol - Server-Driven Paging](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Server-Driven_Paging). By letting the service control the paging, you get the best performance as the `skiptoken` has been carefully design for each entity to be as efficient as possible.
 
 The link to the next page is included in the `@odata.nextLink` property.
 
@@ -825,7 +825,7 @@ For example, the following query returns the total number of work items.
 
 ### ✔️ CONSIDER using parameter aliases to separate volatile parts of the query
 
-Parameter aliases provide an elegant solution to extract volatile parts such as parameter values from the main query text. You can use them in expressions that evaluate a primitive value, a complex value, or a collection of primitive or complex values as explained in the specification, [OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740). Parameters are particularly useful when the query text is used as a template that can be instantiated with user supplied values.
+Parameter aliases provide an elegant solution to extract volatile parts such as parameter values from the main query text. You can use them in expressions that evaluate a primitive value, a complex value, or a collection of primitive or complex values as explained in the specification, [OData Version 4.0. Part 2: URL Conventions - 5.1.1.13 Parameter Aliases](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc444868740). Parameters are particularly useful when the query text is used as a template that can be instantiated with user supplied values.
 
 For example, the following query uses `@createdDateSK` parameter to separate the value from the filter expression.
 

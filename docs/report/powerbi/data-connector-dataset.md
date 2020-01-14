@@ -29,7 +29,7 @@ To learn more about Power BI and datasets, see [Power BI - basic concepts for Po
 
 The Analytics OData endpoint provides a normalized representation of Analytics data. The data is normalized primarily to support reporting on the "many-to-many" relationships that exist between the data, such as work items and  associated tags. 
 
-The Power BI Data Connector represents this data as a single table so that the relationships shown in our [Analytics data model](../extend-analytics/data-model-analytics-service.md) do not need to be recreated in Power BI. This allows you to filter immediately on complex fields, such as work item tags. 
+The Power BI Data Connector represents this data as a single table so that the relationships shown in our [Analytics data model](../extend-analytics/data-model-analytics-service.md) don't need to be recreated in Power BI. This representation allows you to filter immediately on complex fields, such as work item tags. 
 
 The process greatly simplifies getting your reports up and running. However, not all of the fields available through the Analytics OData endpoint are available for selection in an Analytics view. 
 
@@ -72,7 +72,7 @@ You can select the following Analytics-based fields in an Analytics view:
 > | Tags | Semicolon delimited list of Tags | 
 > | WorkItemRevisionSK | The Analytics unique key for the work item revision, used to join related entities | 
 
-For information about state categories, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories.md). For more detailed information on Analytics data model, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
+For information about state categories, see [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories). For more detailed information on Analytics data model, see [Data model for Analytics](../extend-analytics/data-model-analytics-service.md). 
 
 To access any additional fields available through [Analytics](../extend-analytics/analytics-metadata.md), include the corresponding Surrogate Keys(SK) or Work Item Id in the Analytics view and create the necessary mapping tables based on the Analytics Navigational Property. 
 
@@ -94,7 +94,7 @@ By default, when basic data is returned from Analytics, the data is related as s
 
 ![Entity relationships](_img/pbi-relationships.png)  
 
-You will note that **Tags**, **Teams**, and **Users** are not related to any of the other data. This is due to how those entities
+Note that **Tags**, **Teams**, and **Users** are not related to any of the other data. This is due to how those entities
 are related. They are related by either many-to-many relationships which are not easily handled in these models or 
 there are multiple relationships between the entities such as between users and work items (they are related by Assigned To,
 Created By, Changed By, and others).

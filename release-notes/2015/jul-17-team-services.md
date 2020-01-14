@@ -14,7 +14,7 @@ author: yukom
 
 ## Multiple activities per team member
 
-When planning capacity for a sprint, you can now assign multiple activities to a single team member. Just hover over or click on a row, then click the “…” menu to add a new activity. If you have someone who does both development and testing, you can fine tune the capacity to match your team’s skill sets. This has been a [popular request on UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/2308935) for quite a while, and we are excited to finally give you this feature. We expect better planned iterations from all of you now!
+When planning capacity for a sprint, you can now assign multiple activities to a single team member. Just hover over or click on a row, then click the “…” menu to add a new activity. If you have someone who does both development and testing, you can fine tune the capacity to match your team’s skill sets. This has been a popular request on UserVoice for quite a while, and we are excited to finally give you this feature. We expect better planned iterations from all of you now!
 
 ![Multiple activities per team member](_img/7_17_01.png)
 
@@ -61,7 +61,7 @@ The number of tools and services that integrate with Visual Studio Online contin
 
 If you have a tool or service that integrates with Visual Studio Online, we want to know about it! Send an e-mail to [vsointegration@microsoft.com](mailto:vsointegration@microsoft.com).
 
-There you have it. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+There you have it. If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). Ideas? Head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Enjoy!
 

@@ -1,5 +1,5 @@
 ---
-title: Get started with Python packages in Azure Artifacts - Azure DevOps Services
+title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -37,7 +37,7 @@ This quickstart guides you through using Azure Artifacts to consume and publish 
    
 4. Select **Create**.
 
-   ![New feed dialog box](../_shared/_img/new-feed-dialog-azure-devops-newnav.png)
+   ![New feed dialog box](../_shared/_img/new-feed-dialog.png)
 
 To edit your feed settings, select the gear icon at upper right on the feed page, and then select **Feed settings**. 
 
@@ -83,11 +83,16 @@ The Python Credential Provider is a manual interaction. If you want to set up au
 
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
-   ![Connect to feed](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
-   
-2. In the **Connect to feed** dialog box, select **Python** from the left menu. 
-   
-3. Follow the instructions to **Get packages with pip** or **Upload packages with twine**. 
+   > [!div class="mx-imgBorder"] 
+   >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   > 
+
+2. Choose either **pip** or **twine** under the Python header. 
+
+> [!NOTE]
+> You can use the **Get the tools** button to get **pip**, **twine** and the **artifacts keyring**.
+
+This will bring up instructions on how to publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/), and how to consume and download packages by using [pip](https://pypi.org/project/pip/).
 
 ## Next steps
 
@@ -95,4 +100,4 @@ To consume or publish Python packages as part of your continuous integration/con
 
 To learn more about how to create, configure, and use Python packages as part of your project or pipeline, see [Build Python apps](../../pipelines/ecosystems/python.md).
 
-If you’d like to learn more about how Python packages work, see [The Architecture of Open Source Applications: Python Packaging](http://www.aosabook.org/en/packaging.html), an excerpt from the book *Architecture of Open Source Applications*.
+If you’d like to learn more about how Python packages work, see [The Architecture of Open Source Applications: Python Packaging](https://www.aosabook.org/en/packaging.html), an excerpt from the book *Architecture of Open Source Applications*.

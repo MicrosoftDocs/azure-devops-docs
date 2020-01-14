@@ -51,6 +51,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 <a id="map-the-flow-of-work">  </a>
 
 ## Map the flow of work
+
 It's best if you involve the entire team to identify an initial set of workflow stages. Each team member provides useful perspectives to capture and further deepen team understanding of the end-to-end processes.
 
 To get started, ask your team these questions: 
@@ -90,6 +91,9 @@ Also, to handoff work to another team member, simply reassign it directly from t
 ![Kanban board, assign item](_img/ALM_AC_Reassign.png)
 
 And, team members receiving the handoff can [set alerts](../queries/alerts-and-notifications.md) to receive immediate email notifications of their newly assigned work. 
+
+[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+
 
 ## Change priorities
 

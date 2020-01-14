@@ -1,36 +1,37 @@
 ---
-title: Import work items from a csv file through the web
+title: Import or update work items from a CSV file 
 titleSuffix: Azure Boards
-ms.global_help.title: Import work items
-description: Import work items from a csv or excel file from the web using the import option from the queries hub
+description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
 ms.prod: devops
 ms.technology: devops-agile
-ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: "azure-devops"
-ms.date: 08/26/2019
+ms.date: 12/02/2019
 ---
 
-# Import work items
+# Bulk import or update work items using CSV files
 
 [!INCLUDE [temp](../_shared/version-vsts-only.md)]
 
-Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product and the Excel plugin is no longer required.
+Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
-> [!NOTE]  
-> This feature is currently under private preview.
 
-## Importing new work items
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)]
 
-1. Create a local ***import.csv*** file and open it in VS Code or Excel
+## Import new work items
 
-2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In this example we also included the Priority field.
+All work items you import are created in a new state. This rule means that you can't specify field values that don't meet the field rules for the new state. For example, when you create a new user story with the Agile process, the State=New and the Reason=New. No other values can be specified.
 
-   ```
+1. Create a local ***import.csv*** file and open it in Visual Studio Code or Excel.
+
+2. The file must contain the **Work Item Type** and the **Title** fields. You can include other columns as needed. In the following example, we include the Priority field.
+
+   > [!div class="tabbedCodeSnippets"]
+   ```CSV
    Work Item Type,Title,Priority
    Issue,Fix issues with code,1
    Issue,Merge testing modules,3
@@ -39,31 +40,37 @@ Learn how to import new work items or update existing items from a CSV file. Imp
    Issue,Remove old test code,2
    ```
 
-3. From the queries hub in Azure Boards, click on the "Import Work Items" option.
+3. From the web portal for your project, open **Boards>Queries** and choose the **Import Work Items** option.
 
-   ![Import Work Items Image](_img/import-csv/import-1.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Boards>Queries, Import Work Items](_img/import-csv/open-queries-import.png)
 
-4. Select your CSV file and click the "Import" button.
+4. Select your CSV file and then choose **Import**.
 
-   ![Import Work Items Button Image](_img/import-csv/import-2.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Import Work Items Button Image](_img/import-csv/import-2.png)
 
-5. The import process will load the imported work items into the queries view for review. The work items have **not** been saved yet. You must click "Save Items" to save the work items.
+5. The import process loads the imported work items into the queries view in an **unsaved** state. Verify the results are what you want. Choose **Save Items** to save the work items.
 
-   ![Import Work Items Save Image](_img/import-csv/import-3.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Save imported work items](_img/import-csv/import-3.png)
 
-6. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the priority field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
+6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
-   ![Import Work Items Save Image](_img/import-csv/import-error-1.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Import Work Items Save Image](_img/import-csv/import-error-1.png)
 
-## Updating existing work items
+## Update existing work items
 
-1. Create a query that contains all the columns you want to export and possibly edit. Save your query and select "Export to CSV" to save the data.csv file to your local machine.
+1. To update work items, create a query that contains all the columns you want to export and possibly edit. Save your query and select **Export to CSV** to save the data.csv file to your local machine.
 
-   ![Import Work Items Save Image](_img/import-csv/import-update-1.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Export work items, CSV](_img/import-csv/import-update-1.png)
 
-   If you open the exported file, it should look simular to the following
+   The exported file should look similar to the following syntax:
 
-   ```
+  > [!div class="tabbedCodeSnippets"]
+   ```CSV
    ID,Work Item Type,Title,Assigned To,State,Priority,Tags
    "16504","Issue","Fix issues with code",,"To Do","1",
    "16505","Issue","Merge testing modules",,"To Do","3",
@@ -72,11 +79,12 @@ Learn how to import new work items or update existing items from a CSV file. Imp
    "16508","Issue","Remove old test code",,"To Do","2",
    ```
 
-2. Make the edits to your work items. When editing work items, the CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Plus any optional fields.
+2. Make the edits to your work items. Your CSV file must contain the **ID**, **Work Item Type**, **Title**, and **State** fields. Any additional fields you want to include are optional.
 
-   In this example we are going to change several values on the existing working items.
+   In the following example we change several values on existing working items.
 
-   ```
+  > [!div class="tabbedCodeSnippets"]
+   ```CSV
    ID,Work Item Type,Title,Assigned To,State,Priority,Tags
    "16504","Issue","Fix issues with code",Dan Hellem,"Doing","1","Bug; High Priority"
    "16505","Issue","Merge testing modules",Dan Hellem,"Doing","3",
@@ -85,23 +93,26 @@ Learn how to import new work items or update existing items from a CSV file. Imp
    "16508","Issue","Remove old test code",,"To Do","3",
    ```
 
-3. Save the file and import (see steps 4-6 above)
+3. Save the file and import (see steps 4-6 from the previous import section.)
 
-4. Any work items with value changes will be highlighted in bold. Click "Save Items" to apply the changes.
+4. The results list with work items that contain value changes appear highlighted in bold. Choose **Save Items** to apply the changes.
 
-   ![Import Work Items Save Image](_img/import-csv/import-update-2.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Import Work Items Save Image](_img/import-csv/import-update-2.png)
 
-5. Work items with data issues will be highlighted and need to be resolved before they can be saved. In this example we have a bad value in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
+5. Work items with data issues are highlighted in red and need to be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
-   ![Import Work Items Save Image](_img/import-csv/import-update-error-1.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Import Work Items Save Image](_img/import-csv/import-update-error-1.png)
 
-## Q&A
+## Q & A
 
 ### Can I import new items and update existing items in the same CSV file?
 
-Absolutely! Leave the ID field empty for any new work items. In the example below, note the Epic item is missing the ID.
+Absolutely! Leave the ID field empty for any new work items. In the following example, the last entry for an Epic doesn't specify an ID.
 
-```
+> [!div class="tabbedCodeSnippets"]
+```CSV
 ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 "16504","Issue","Fix issues with code",,"To Do","1",
 "16505","Issue","Merge testing modules",,"To Do","3",
@@ -113,9 +124,10 @@ ID,Work Item Type,Title,Assigned To,State,Priority,Tags
 
 ### Can I import a CSV file that has a child parent relationship?
 
-Yes, child work items can be created by having indented title columns. The below example creates 3 child Issues under an Epic.
+Yes, child work items can be created by having indented title columns. The following example creates three child Issues under an Epic.
 
-```
+> [!div class="tabbedCodeSnippets"]
+```CSV
 ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
 "16509","Epic","Track Telementry for data imports",,,"To Do","2",
 "16504","Issue",,"Fix issues with code",,"To Do","1",
@@ -125,12 +137,19 @@ ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
 
 Here is a better visual in Excel
 
-![Excel view image](_img/import-csv/import-csv-directlinks-1.png)
+> [!div class="mx-imgBorder"]  
+> ![Excel view image](_img/import-csv/import-csv-directlinks-1.png)
 
 ### How do I know if my imported file has errors?
 
-Any problems with the formating of your CSV file will be shown to you on the import screen. You won't be able to import the work items untill the formatting and syntax is correct.
+Any problems with the formatting of your CSV file appear in the Results page of the import view. You can't import the work items until the formatting and syntax is correct.
 
-![CSV Error image](_img/import-csv/import-csv-error-1.png)
+> [!div class="mx-imgBorder"]  
+> ![CSV Error image](_img/import-csv/import-csv-error-1.png)
 
-Data errors will be shown to you from the work items results (see above). From there you can fix the data in the UI or fix the CSV file and try to import again.
+The work items results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
+
+## Related articles
+
+- [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [FAQs: Work in Excel connected to Azure Boards](../backlogs/office/faqs.md)

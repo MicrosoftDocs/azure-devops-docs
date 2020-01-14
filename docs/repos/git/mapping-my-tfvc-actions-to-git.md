@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 Do you plan to adopt Git, are familiar with [TFVC](../tfvc/index.md) actions, and wondering how they map to [Git](index.md)? Both are powerful and mature source control systems. However, mapping common actions you have grown accustomed to in the one to the other can be a confusing experience.
 
-This article will not delve deep into the [Git commands](http://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
+This article will not delve deep into the [Git commands](https://git-scm.com/book/commands), as they are well documented in the product documentation, but show examples to help you make the right decisions, while moving through a typical create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
 
 ## Start at the beginning by creating a new repo
 
@@ -92,7 +92,7 @@ In Visual Studio, choose **Team Explorer > Branches > right-click on branch > Ne
 
 Similar to the TFVC experience, new files in the working folder are not automatically part of the repository. You stage your new files with the `git add` command, which is synonymous to performing an `add Items to Folder` operation in TFVC.
 
-Here's a [sample](http://vsarguidance.codeplex.com/downloads/get/739947) project to try adding files to your repo.
+Here's a [sample](https://vsarguidance.codeplex.com/downloads/get/739947) project to try adding files to your repo.
 
 # [Command Line](#tab/command-line)
 
@@ -222,7 +222,7 @@ In the Azure DevOps Services web portal, choose **CODE > History** or **CODE > E
 
 ![Viewing Branch history in Azure Repos](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
 
-At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
+At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](https://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
 
 You also have the option of issuing a [pull request](pull-requests.md), to publish and stage your changes on the server/remote repo at this point.
 
@@ -293,7 +293,7 @@ Alternatively you can manually delete your local repo - after making a validated
 
 There are a lot more actions and options available to Git users. Here are some useful reference sites for further reading:
 
-* Git commands covered herein, refer to [git documentation](http://git-scm.com/documentation)
+* Git commands covered herein, refer to [git documentation](https://git-scm.com/documentation)
 * [Think like (a) Git](http://think-like-a-git.net), a Guide for the Perplexed.
 * [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git), by Joshua Wehner
 

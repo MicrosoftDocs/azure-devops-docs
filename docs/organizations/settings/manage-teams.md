@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 08/15/2019
+ms.date: 11/07/2019
 ---
 
 # Manage and configure team tools
@@ -124,18 +124,18 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
 
-1. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
-1. Choose the product or portfolio backlog from the board-selection menu. 
+3. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
 
-1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+4. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
 
-1. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+5. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
@@ -160,7 +160,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
 
-2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
+4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
@@ -414,7 +414,19 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Update team description and picture
 
-Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB. 
+::: moniker range="azure-devops" 
+
+Team settings also include the team name, description, and team profile image. To add a team picture, open the **Settings** tab, and then choose **Upload image**. The maximum file size is 2.5 MB.
+
+![Update team profile picture](_img/team-defaults/update-team-profile-pic-preview.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB.
+
+::: moniker-end
 
 ## Manage team notifications 
 

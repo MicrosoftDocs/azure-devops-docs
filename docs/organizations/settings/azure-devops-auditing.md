@@ -8,10 +8,10 @@ ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: mijacobs
 ms.author: chcomley
-author: roofers
+author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 06/12/2019
+ms.date: 12/05/2019
 ---
 
 # Quickstart: Access, export, and filter audit logs
@@ -21,7 +21,7 @@ ms.date: 06/12/2019
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this quickstart, learn how to access, export, and filter audit logs. Auditing contains numerous changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
+In this quickstart, learn how to access, export, and filter audit logs. Auditing contains many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. In some limited cases, it can also include accessing an artifact. Think permissions changes, resource deletion, branch policy changes, accessing the auditing feature, and much more. 
 
 When an audit-able event occurs, a log entry is recorded as an audit event. Events contain information such as IP, user who caused the event, what happened, and other useful pieces of data that help you answer the who, what, when, and where. 
 
@@ -32,6 +32,31 @@ Auditing is turned on by default for all Azure DevOps organizations. You can't t
 By default, Project Collection Administrators are the only group that can access the auditing feature. 
 
 ## Access auditing
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
+   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+3. Select **Auditing**.
+
+   ![Auditing](_img/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   If you don't see Auditing in organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
+4. Select **Permissions**, and then find the group or users to provide auditing access to.
+
+   ![Select Permissions to provide audit access](_img/azure-devops-auditing/select-permissions-preview.png)  
+
+5. Set **View audit log** to **allow**, and then select **Save changes**.
+   ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+
+The user or group members have access to view your organization audit events. 
+
+#### [Current page](#tab/current-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
@@ -45,6 +70,10 @@ By default, Project Collection Administrators are the only group that can access
    ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
 The user or group members have access to view your organization audit events. 
+
+::: moniker-end
+
+* * *
 
 ## Review audit log
 
@@ -107,6 +136,29 @@ When you're filtering through audit events, it’s best to leverage the “area�
 |Access     | Access refers to when an artifact is viewed or opened in an organization        |
  
 ### Areas
+
+> [!Note]
+> While auditing is in a public preview, we're working hard to get more areas audited. New auditing events are being added monthly.
+>
+> If you can't find the auditing event you're looking for in the below table, be sure to check the REST API as well https:\//auditservice.dev.azure.com/{YOUR_ORGANIZATION}/_apis/audit/actions. Just replace {YOUR_ORGANIZATION} with the name of your organization. The API will show a list of all audit events your organization could emit. 
+
+|Area            |Description |
+|----------------|------------|
+| Permissions    | Tracks permission changes made to groups and users throughout an Azure DevOps organization.           |
+| Project        | Project create, delete, rename, update, and visiblty changes. Create area path, updating area path, and deleting area path.          |
+| Auditing       | Viewing the audit log. |
+| Extensions     | Extension install, remove, enable/disable, and update           |
+| Licensing      | Licensing assigned, changed, and removed. Group licensing rules created, modified, and deleted.           |
+| Process        | Process (agile) create, delete, and modify.           |
+| Pipelines      | Pipeline created, deleted, and updated (designer UX pipelines only at this time)          |
+| Policy         |  Policy create, delete and udpate for a Git repo.       |
+| Git            |  Git repo create, delete, modify, bypass PR policy, and delete.          |
+| Group          |  Group membership change, update, delete, create, and rename.          |
+| Release        |  Release create, delete, modiy, approval completed, and deployment completed.          |
+| OrganizationPolicy | Changes to organization policies (i.e. no basic authentication).           |
+| Organization   | Rename, change owner, link to AAD, and unlink from Azure AD.            |
+
+
 
 
 |Area   |Description |

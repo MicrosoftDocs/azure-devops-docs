@@ -63,7 +63,7 @@ For more information, see [Add administrators, set permissions at the project-le
    witadmin changefield /collection:CollectionURL /n:System.RelatedLinkCount /name:"Related Link Count"  
    ```  
 
-    Use this format for *CollectionURL*: <strong>http://ServerName:Port/VirtualDirectoryName/CollectionName</strong>, for example: **<http://srvalm:8080/tfs/DefaultCollection>**.  
+    Use this format for *CollectionURL*: <strong>http://ServerName:Port/VirtualDirectoryName/CollectionName</strong>, for example: **<http:\//srvalm:8080/tfs/DefaultCollection>**.  
 
 
 ## 2. (Agile only) Rename the Scenario work item type  

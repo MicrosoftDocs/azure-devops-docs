@@ -32,7 +32,7 @@ To support your work tracking efforts, you can use Microsoft Excel and Microsoft
 ::: moniker-end
 
 > [!IMPORTANT]  
-> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads).
+> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
 
 ## Prerequisites 
 
@@ -99,9 +99,10 @@ One advantage of working in Excel or Project is that you can work offline and ad
   
 
 <a name="WorkingOffline"></a> 
-##  Disconnect  a document file from the network  
+
+##  Disconnect a document file from the network  
   
-To disconnect a an Excel or Project document file from the network:  
+To disconnect an Excel or Project document file from the network:  
   
 1.  Open the document that you want to change while you are offline.  
   
@@ -231,9 +232,6 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 - [Requirements and compatibility](/azure/devops/server/requirements) 
 
 
-### Can I open a query in Excel or Project from the web portal?  
-
-To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 <a name="CT_ResolvingPublishErrors"></a>
  

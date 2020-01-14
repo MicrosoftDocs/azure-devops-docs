@@ -73,34 +73,34 @@ This is the first unit test for the class library that he is testing, so he crea
 
 The unit test project provides a C\# file into which he can write his example. At this stage, he just wants to illustrate how one of his new methods will be invoked:
 
-**C\#**
+```csharp
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    using System;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    namespace Fabrikam.Math.UnitTest
+namespace Fabrikam.Math.UnitTest
+{
+    [TestClass]
+    public class UnitTest1
     {
-        [TestClass]
-        public class UnitTest1
+        [TestMethod]
+        // Demonstrates how to call the method.
+        public void SignatureTest()
         {
-            [TestMethod]
-            // Demonstrates how to call the method.
-            public void SignatureTest()
-            {
-                // Create an instance:
-                var math = new Fabrikam.Math.LocalMath();
+            // Create an instance:
+            var math = new Fabrikam.Math.LocalMath();
 
-                // Get a value to calculate:
-                double input = 0.0;
+            // Get a value to calculate:
+            double input = 0.0;
 
-                // Call the method:
-                double actualResult = math.SquareRoot(input);
+            // Call the method:
+            double actualResult = math.SquareRoot(input);
 
-                // Use the result:
-                Assert.AreEqual(0.0, actualResult);
-            }
+            // Use the result:
+            Assert.AreEqual(0.0, actualResult);
         }
     }
+}
+```
 
 He writes the example in a test method because, by the time he has written his code, he wants the example to work.
 
@@ -116,44 +116,44 @@ This procedure uses the Visual Studio Unit Test Framework, but you can also use 
 
     Each unit test must be prefixed by the `TestMethod` attribute, and the unit test method should have no parameters. You can use any name that you want for a unit test method:
 
-    **C\#**
+    ```csharp
+    [TestMethod]
+    public void SignatureTest()
+    {...}
+    ```
 
-                [TestMethod]
-                public void SignatureTest()
-                {...}
-
-	**VB**
-
-				<TestMethod()>
-    			Public Sub SignatureTest()
-    			...
-    			End Sub
+    ```vb
+    <TestMethod()>
+    Public Sub SignatureTest()
+    ...
+    End Sub
+    ```
 
 -   Each test method should call a method of the `Assert` class, to indicate whether it has passed or failed. Typically, you verify that the expected and actual results of an operation are equal:
 
-	**C\#**
+    ```csharp
+    Assert.AreEqual(expectedResult, actualResult);
+    ```
 
-        Assert.AreEqual(expectedResult, actualResult);
-
-	**VB**
-
-		Assert.AreEqual(expectedResult, actualResult)
+    ```vb
+    Assert.AreEqual(expectedResult, actualResult)
+    ```
 
 -   Your test methods can call other ordinary methods that do not have the `TestMethod` attribute.  
 -   You can organize your tests into more than one class. Each class must be prefixed by the `TestClass` attribute.
 
-    **C\#**
+    ```csharp
+    [TestClass]
+    public class UnitTest1
+    { ... }
+    ```
 
-        [TestClass]
-        public class UnitTest1
-        { ... }
-
-	**VB**
-
-		<TestClass()>
-		Public Class UnitTest1
-		...
-		End Class
+    ```vb
+    <TestClass()>
+    Public Class UnitTest1
+    ...
+    End Class
+    ```
 
 For more information about how to write unit tests in C++, see [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](https://msdn.microsoft.com/library/hh598953).
 
@@ -165,12 +165,12 @@ Next, Peter creates a class library project for his new code. There is now a pro
 
 In the new project, he adds the new class and a minimal version of the method that will at least allow the test to build successfully. The quickest way to do that is to generate a class and method stub from the invocation in the test.
 
-**C\#**
-
-            public double SquareRoot(double p)
-            {
-                throw new NotImplementedException();
-            }
+```csharp
+public double SquareRoot(double p)
+{
+    throw new NotImplementedException();
+}
+```
 
 ### To generate classes and methods from tests
 
@@ -193,12 +193,12 @@ Peter builds and runs the test by pressing CTRL+R, T. The test result shows a re
 
 He makes a simple change to the code:
 
-**C\#**
-
-           public double SquareRoot(double p)
-            {
-                return 0.0;
-            }
+```csharp
+public double SquareRoot(double p)
+{
+    return 0.0;
+}
+```
 
 He runs the test again and it passes:
 
@@ -240,26 +240,26 @@ Peter replies, "The first test is just to make sure that the name and parameters
 
 Together they write the following test:
 
-**C\#**
-      
-          [TestMethod]
-            public void QuickNonZero()
-            {
-                // Create an instance to test:
-                LocalMath math = new LocalMath();
+```csharp
+[TestMethod]
+public void QuickNonZero()
+{
+    // Create an instance to test:
+    LocalMath math = new LocalMath();
 
-                // Create a test input and expected value:
-                var expectedResult = 4.0;
-                var inputValue = expectedResult * expectedResult;
+    // Create a test input and expected value:
+    var expectedResult = 4.0;
+    var inputValue = expectedResult * expectedResult;
 
-                // Run the method:
-                var actualResult = math.SquareRoot(inputValue);
+    // Run the method:
+    var actualResult = math.SquareRoot(inputValue);
 
-                // Validate the result:
-                var allowableError = expectedResult/1e6;
-                Assert.AreEqual(expectedResult, actualResult, allowableError,
-                    "{0} is not within {1} of {2}", actualResult, allowableError, expectedResult);
-            }
+    // Validate the result:
+    var allowableError = expectedResult/1e6;
+    Assert.AreEqual(expectedResult, actualResult, allowableError,
+        "{0} is not within {1} of {2}", actualResult, allowableError, expectedResult);
+}
+```
 
 > [!TIP]
 > For this function, Peter is using Test First Development, in which he first writes the unit test for a feature, and then writes code that satisfies the test. In other cases, he finds that this practice is not realistic, so instead, he writes the tests after he writes the code. But he considers it very important to write unit tests-whether before or after the code-because they keep the code stable.
@@ -280,22 +280,22 @@ Another useful practice is to set **Run Tests after Build**. This option runs th
   
 Peter writes his first attempt at the code of the method that he is developing:
 
-**C\#**
-
-        public class LocalMath
+```csharp
+public class LocalMath
+{
+    public double SquareRoot(double x)
+    {
+        double estimate = x;
+        double previousEstimate = -x;
+        while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
         {
-            public double SquareRoot(double x)
-            {
-                double estimate = x;
-                double previousEstimate = -x;
-                while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
-                {
-                    previousEstimate = estimate;
-                    estimate = (estimate * estimate - x) / (2 * estimate);
-                }
-                return estimate;
-            }
-            
+            previousEstimate = estimate;
+            estimate = (estimate * estimate - x) / (2 * estimate);
+        }
+        return estimate;
+    }
+```
+
 
 Peter runs the tests again and all the tests pass:
 
@@ -305,20 +305,22 @@ Peter runs the tests again and all the tests pass:
   
 Now that the code performs its main function, Peter looks at the code to find ways of making it perform better, or to make it easier to change in the future. He realizes that he can reduce the number of calculations performed in the loop:
 
-    public class LocalMath
+```csharp
+public class LocalMath
+{
+    public double SquareRoot(double x)
+    {
+        double estimate = x;
+        double previousEstimate = -x;
+        while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
         {
-            public double SquareRoot(double x)
-            {
-                double estimate = x;
-                double previousEstimate = -x;
-                while (System.Math.Abs(estimate - previousEstimate) > estimate / 1000)
-                {
-                    previousEstimate = estimate; 
-                    estimate = (estimate + x / estimate) / 2;
-                    //was: estimate = (estimate * estimate - x) / (2 * estimate);
-                }
-                return estimate;
-            }
+            previousEstimate = estimate; 
+            estimate = (estimate + x / estimate) / 2;
+            //was: estimate = (estimate * estimate - x) / (2 * estimate);
+        }
+        return estimate;
+    }
+```
 
 He verifies that the tests still pass:
 
@@ -342,25 +344,25 @@ Peter continues his series of extension and refactoring steps, using his list of
 
 Sometimes he adds a test that requires no change to the code, but that adds to his confidence that his code works correctly. For example, he wants to make sure that the function works over a broad range of inputs. He writes more tests, such as this one:
 
-**C\#**
-
-            [TestMethod]
-            public void SqRtValueRange()
-            {
-                LocalMath math = new LocalMath();
-                for (double expectedResult = 1e-8;
-                    expectedResult < 1e+8;
-                    expectedResult = expectedResult * 3.2)
-                {
-                    VerifyOneRootValue(math, expectedResult);
-                }
-            }
-            private void VerifyOneRootValue(LocalMath math, double expectedResult)
-            {
-                double input = expectedResult * expectedResult;
-                double actualResult = math.SquareRoot(input);
-                Assert.AreEqual(expectedResult, actualResult, expectedResult / 1e6);
-            }
+```csharp
+[TestMethod]
+public void SqRtValueRange()
+{
+    LocalMath math = new LocalMath();
+    for (double expectedResult = 1e-8;
+        expectedResult < 1e+8;
+        expectedResult = expectedResult * 3.2)
+    {
+        VerifyOneRootValue(math, expectedResult);
+    }
+}
+private void VerifyOneRootValue(LocalMath math, double expectedResult)
+{
+    double input = expectedResult * expectedResult;
+    double actualResult = math.SquareRoot(input);
+    Assert.AreEqual(expectedResult, actualResult, expectedResult / 1e6);
+}
+```
 
 This test passes the first time it runs:
 
@@ -375,48 +377,50 @@ Just to make sure this result is not a mistake, he temporarily introduces a smal
   
 Peter now moves on to writing tests for exceptional inputs:
 
-    [TestMethod]
-            public void RootTestNegativeInput()
-            {
-                LocalMath math = new LocalMath();
-                try
-                {
-                    math.SquareRoot(-10.0);
-                }
-                catch (ArgumentOutOfRangeException)
-                {
-                    return;
-                }
-                catch
-                {
-                    Assert.Fail("Wrong exception on negative input");
-                    return;
-                }
-                Assert.Fail("No exception on negative input");
-            }
+```csharp
+[TestMethod]
+public void RootTestNegativeInput()
+{
+    LocalMath math = new LocalMath();
+    try
+    {
+        math.SquareRoot(-10.0);
+    }
+    catch (ArgumentOutOfRangeException)
+    {
+        return;
+    }
+    catch
+    {
+        Assert.Fail("Wrong exception on negative input");
+        return;
+    }
+    Assert.Fail("No exception on negative input");
+}
+```
 
 This test puts the code into a loop. He has to use the **Cancel** button in Test Explorer. This terminates the code within 10 seconds.
 
 Peter wants to make sure that an endless loop could not happen on the build server. Although the server imposes a timeout on a complete run, it is a very long timeout, and would cause substantial delay. Therefore, he adds an explicit timeout to this test:
 
-**C\#**
-
-            [TestMethod, Timeout(1000)]
-            public void RootTestNegativeInput()
-            {...
+```csharp
+[TestMethod, Timeout(1000)]
+public void RootTestNegativeInput()
+{...
+```
 
 The explicit timeout makes the test fail.
 
 Peter then updates the code to deal with this exceptional case:
 
-**C\#**
-
-           public double SquareRoot(double x)
-            {
-                if (x <= 0.0) 
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
+```csharp
+public double SquareRoot(double x)
+{
+    if (x <= 0.0) 
+    {
+        throw new ArgumentOutOfRangeException();
+    }
+```
 
 ### Regression
   
@@ -426,14 +430,14 @@ The new test passes, but there is a regression. A test that used to pass now fai
 
 Peter finds and fixes the mistake:
 
-**C\#**
-
-          public double SquareRoot(double x)
-            {
-                if (x < 0.0)  // not <=
-                {
-                    throw new ArgumentOutOfRangeException();
-                }
+```csharp
+public double SquareRoot(double x)
+{
+    if (x < 0.0)  // not <=
+    {
+        throw new ArgumentOutOfRangeException();
+    }
+```
 
 After it is fixed, all the tests pass:
 

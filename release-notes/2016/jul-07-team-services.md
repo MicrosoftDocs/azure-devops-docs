@@ -114,7 +114,7 @@ In the Web runner when using Chrome, in addition to screenshots and screen recor
 
 ### Order tests in Test hub
 
-Test teams can now order the test suites as per their needs. Prior to this capability, the suites were only ordered alphabetically. Now, using the drag-and-drop capability in Test hub, suites can be reordered among the peer suites or moved to another suite in the hierarchy. This addresses the following [User Voice](https://visualstudio.uservoice.com/forums/330519-vso/suggestions/2726830-add-ability-to-order-test-suites) item under manual testing/test case management.
+Test teams can now order the test suites as per their needs. Prior to this capability, the suites were only ordered alphabetically. Now, using the drag-and-drop capability in Test hub, suites can be reordered among the peer suites or moved to another suite in the hierarchy. This addresses a User Voice suggestion item under manual testing/test case management.
 
 ![Drag-and-drop test reordering](_img/7_07_08.png)
 
@@ -122,7 +122,7 @@ Test teams can now order the test suites as per their needs. Prior to this capab
 
 You can now pick the build you want to test with and then launch the Web runner, using “Run with options” in Test hub. Any bug filed during the run will be automatically associated with the build selected. In addition, the test outcome is also published against that specific build. Once we release the Microsoft Test Manager 2016 (MTM) client, you can use the same mechanism to specify the build and the data collectors to use with the Microsoft Test Runner (MTR) client, without having to configure them in MTM first. Stay tuned for more on this.
 
-That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+That’s it for this sprint. If you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

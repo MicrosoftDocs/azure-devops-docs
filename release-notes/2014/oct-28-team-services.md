@@ -22,7 +22,7 @@ When you locate an account in a region, all of the “account data” is limited
 
 Application Insights, which is still in preview, is not available in Europe, but will be by the time it officially releases.
 
-We plan to add additional regions around the world, but have not finalized the roadmap. Feel free to use [https://visualstudio.uservoice.com](https://visualstudio.uservoice.com/) to tell us where the next region should be.
+We plan to add additional regions around the world, but have not finalized the roadmap. Feel free to use [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html)) to tell us where the next region should be.
 
 ## Visual Studio Online REST API version 1.0 is here
 
@@ -46,7 +46,7 @@ Visual Studio Online supports 14 services out of the box, including Trello, User
 
 To learn more about service hooks and the services with which you can integrate out of the box, visit [Integrate with other services](/azure/devops/service-hooks/index?view=azure-devops).
 
-Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso).
+Keep all the great feedback coming on [Twitter](https://twitter.com/VisualStudio) and [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

@@ -25,7 +25,7 @@ Share your feedback and ideas with us, or join our communities. We're always wor
 
 Do you need to do any of the following?
 
-* **Get advice** Visit StackOverflow for [Azure DevOps Services](http://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](http://stackoverflow.com/questions/tagged/tfs).
+* **Get advice** Visit StackOverflow for [Azure DevOps Services](https://stackoverflow.com/questions/tagged/vsts) or [Azure DevOps Server](https://stackoverflow.com/questions/tagged/tfs).
 
 * **Report a bug** Submit it through our Developer Community for [Azure DevOps Services](https://developercommunity.visualstudio.com/spaces/21/index.html) or [Azure DevOps Server](https://developercommunity.visualstudio.com/spaces/22/index.html).
 
@@ -114,7 +114,8 @@ A page similar to the following example opens showing the version number.
 > 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|
-> |**Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
+> |**Azure DevOps Server 2019** | 2019.1  | 17.153.29522.3 |
+> |  | RTW  | 17.143.28511.3  |
 > |**Azure DevOps Server 2018** |2018.3 |16.131.28106.2 |
 > |  |2018.2 |16.131.27701.1 |
 > |  |2018.1 |16.122.27409.2 |
@@ -163,5 +164,5 @@ A page similar to the following example opens showing the version number.
 
 ## Related articles
 
-* [Azure DevOps features timeline](../extend/support/release-notes.md)
+* [Azure DevOps features timeline](/azure/devops/release-notes/features-timeline)
 * [Report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

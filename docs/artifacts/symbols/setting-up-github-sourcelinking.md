@@ -1,5 +1,5 @@
----
-title: Setting up GitHub Source Linking with Azure DevOps Services Build & Azure DevOps Services Symbol Server
+﻿---
+title: GitHub Source Linking with Build & Symbol Server
 description: Using build to index and publish symbols from an Azure DevOps Services-hosted Git repository works out of the gate, but with a little bit of extra work you can make it work on GitHub-hosted repositories as well.
 ms.prod: devops
 ms.technology: devops-artifacts

@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts BatchResponse API | Extensions for Azure DevOps Services
+description: Data representation of a batch response.
 ms.assetid: f0ac0a97-2752-a706-fe3c-274d86104705
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,4 +1,4 @@
----
+﻿---
 title: TF30082-Team Explorer encountered error... 
 description: Occurs when Team Explorer tries to open a document for editing with another application.
 titleSuffix: Azure DevOps & TFS

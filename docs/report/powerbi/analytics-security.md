@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/13/2017
+ms.date: 11/21/2019
 ---
 
 
@@ -26,9 +26,9 @@ If you are just adding an Analytics widget to a dashboard or viewing an Analytic
 
 ## Set permissions 
 
-You grant or restrict permissions to a user by setting one or more permissions for Analytics to **Allow** or **Deny** through the project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics data.  
+You grant or restrict permissions to a user by setting one or more permissions for Analytics to **Allow** or **Deny** through the project **Permissions** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics data.  
   
-1. Open **Project Settings>Security**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+1. Open **Project Settings > Permissions**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
   
 1. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
 
@@ -47,6 +47,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
 
 
 <a name="access-denied"></a>
+
 ## Access denied response 
 
 Analytics is designed to provide accurate data, not data trimmed by your security settings.  

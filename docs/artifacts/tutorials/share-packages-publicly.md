@@ -11,7 +11,7 @@ ms.date: 07/07/2019
 monikerRange: 'azure-devops'
 ---
 
-# Share your packages publicly (preview)
+# Share your packages publicly
 
 Azure Artifacts provides an easy way to share packages to users outside your organization using public feeds. Packages that are stored in public feeds can be restored, installed, or consumed by anyone on the Internet. 
 
@@ -32,7 +32,7 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
    >![Go to Azure Artifacts](../_img/goto-feed-hub-azure-devops-newnav.png)
    > 
 
-1. Select **+ New public feed (preview)**:
+1. Select **+ New public feed**:
 
    > [!div class="mx-imgBorder"] 
    >![New feed button](../_img/new-public-feed-button-azure-devops-newnav.png)
@@ -50,8 +50,8 @@ To learn more about feeds and their scopes, check out our [feeds documentation](
 
 Now that you have a public feed, it's time to populate it with packages! 
 
-> [!NOTE]
-> During the public preview, public feeds cannot store Universal Packages.
+> [!IMPORTANT]
+> Public feeds cannot store Universal Packages.
 
 If you're publishing using NuGet or Dotnet _and_ you're using a credential provider to authenticate, public feeds require you to use the new credential provider instead of the older `CredentialProvider.VSS.exe`. You can learn more about the new credential provider, including install and setup instructions in the [artifacts-credprovider GitHub repo](https://github.com/Microsoft/artifacts-credprovider).
 
@@ -77,7 +77,7 @@ The following articles cover publishing packages to feeds from builds within Azu
 ## Share your packages
 
 > [!NOTE]
-> Public feeds aren't intended to be a replacement for registries of record like NuGet.org or npmjs.com, and preview public feeds **cannot** have upstream sources.
+> Public feeds aren't intended to be a replacement for registries of record like NuGet.org or npmjs.com, and public feeds **cannot** have upstream sources.
 
 To start sharing your packages, simply post or send your feed URL wherever you wish:
 

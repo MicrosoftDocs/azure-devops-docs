@@ -20,8 +20,6 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-## TFVC options
-
 While editing a pipeline that uses a TFVC repo, you have the following options.
 
 | Feature | Azure Pipelines, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
@@ -33,11 +31,11 @@ While editing a pipeline that uses a TFVC repo, you have the following options.
 > [!NOTE]
 > **Azure Pipelines, TFS 2017.2 and newer:** Click **Advanced settings** to see some of the following options.
 
-### Repository name
+## Repository name
 
 Ignore this text box (**TFS 2017 RTM** or older).
 
-### Mappings (workspace)
+## Mappings (workspace)
 
 Include with a type value of **Map** only the folders that your build pipeline requires. If a subfolder of a mapped folder contains files that the build pipeline does not require, map it with a type value of **Cloak**.
 
@@ -51,7 +49,7 @@ If this is a CI build, in most cases you should make sure that these mappings ma
 
 For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
 
-### Clean the local repo on the agent
+## Clean the local repo on the agent
 
 [!INCLUDE [include](_shared/build-clean-intro.md)]
 
@@ -103,6 +101,7 @@ The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
+
 ## Q & A  
 
 <!-- BEGINSECTION class="md-qanda" -->
@@ -112,4 +111,5 @@ The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-
 Scorch is a TFVC power tool that ensures source control on the server and the local disk are identical. See [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power).
 
 <!-- ENDSECTION -->
+
 ::: moniker-end

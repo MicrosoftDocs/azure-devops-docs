@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts PropertyBag API | Extensions for Azure DevOps Services
+description: Data representation of a property bag.
 ms.contentid: c364fea1-285f-46bc-8f81-0f3b2beccada
 ms.prod: devops
 ms.technology: devops-ecosystem

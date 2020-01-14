@@ -43,5 +43,4 @@ To provide feedback about Azure DevOps Services or TFS, see [Provide product and
 ## Resources 
 
 - [Uservoice Integration (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice)  
-- [UserVoice UI (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui)  
 

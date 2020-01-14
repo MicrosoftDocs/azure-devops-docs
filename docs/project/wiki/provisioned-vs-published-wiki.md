@@ -1,5 +1,5 @@
----
-title: Differences between provisioned and published wikis
+﻿---
+title: Differences between provisioned and published wiki
 titleSuffix: Azure DevOps
 description: Understand the differences of updating a provisioned wiki for a team project versus files you publish from a Git repository in Azure DevOps 
 ms.technology: devops-collab

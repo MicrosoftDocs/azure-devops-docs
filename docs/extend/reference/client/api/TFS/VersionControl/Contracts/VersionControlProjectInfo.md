@@ -20,7 +20,7 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `defaultSourceControlType`: [TFS_Core_Contracts.SourceControlTypes](../../../TFS/Core/Contracts/SourceControlTypes.md). 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `supportsGit`: boolean. 
 

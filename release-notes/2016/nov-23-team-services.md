@@ -1,4 +1,4 @@
----
+﻿---
 title: Follow a PR, task versioning, and search for commits in branches – Nov 23
 description: VSTS release notes for Nov 23 2016
 ms.ContentId: 3ddd918f-81cd-4745-9b1c-4fb6f1dae6fd
@@ -102,7 +102,7 @@ Until now, release definitions could only link artifact sources from the current
 
 ![build artifacts](_img/11_23_09.png)
 
-As always, if you have ideas on things you’d like to see us prioritize, head over to [UserVoice](https://visualstudio.uservoice.com/forums/330519-vso) to add your idea or vote for an existing one.
+As always, if you have ideas on things you’d like to see us prioritize, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 
 Thanks,
 

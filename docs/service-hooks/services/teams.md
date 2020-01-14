@@ -1,5 +1,5 @@
----
-title: Create a service hook for Azure DevOps Services and TFS with Microsoft Teams
+﻿---
+title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Services, TFS 2017
 description: Use Microsoft Teams with your Azure DevOps organization
 ms.author: phwilson

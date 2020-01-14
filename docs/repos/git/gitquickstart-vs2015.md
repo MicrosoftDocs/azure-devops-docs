@@ -50,7 +50,7 @@ click **Connect**.
    ![Cloning a Git Repository from a connected organization in Azure DevOps](_shared/_img/cloneVsRepo.png)
 
 #### [Command Line](#tab/command-line/)
-1. [Download and install Git](http://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
+1. [Download and install Git](https://git-scm.com/download) and the [Git Credential Manager](set-up-credential-managers.md) for your platform.   
 2. Open the Azure DevOps Services web portal in your browser and find your Git repository. 
    Copy the command line instructions from the **Clone** pop-up.   
 

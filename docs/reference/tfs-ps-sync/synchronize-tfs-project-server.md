@@ -27,7 +27,7 @@ By installing Team Foundation Server Extensions for Project Server, project mana
 > [!NOTE]
 >  You can download a virtual machine that demonstrates how to integrate TFS and Project Server 2010 to allow teams to share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in TFS, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS.  
 >   
->  For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](https://go.microsoft.com/fwlink/?LinkID=196413). Some details might differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
+>  For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](https://www.microsoft.com/download/details.aspx?id=22267). Some details might differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
   
 <a name="admintasks"></a> 
 

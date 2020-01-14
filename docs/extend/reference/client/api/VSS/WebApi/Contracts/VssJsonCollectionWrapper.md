@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts VssJsonCollectionWrapper API | Extensions for Azure DevOps Services
+description: Data representation of a VSS JSON collection wrapper.
 ms.assetid: df3c3cb2-9bb0-de9c-c884-d41566dd7fdf
 ms.prod: devops
 ms.technology: devops-ecosystem

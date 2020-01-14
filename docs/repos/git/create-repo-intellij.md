@@ -1,5 +1,5 @@
----
-title: Azure Repos Plugin for IntelliJ IDEA and Android Studio
+﻿---
+title: Azure Repos Plugin for IntelliJ, IDEA, Android Studio
 titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:

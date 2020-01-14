@@ -5,7 +5,7 @@ description: Occurs when users save work items, check in code merges, or perform
 ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobs2-bbb2-4821-b5a4-dd5eb215d18a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

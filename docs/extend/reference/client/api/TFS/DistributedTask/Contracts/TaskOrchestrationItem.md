@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts TaskOrchestrationItem API | Extensions for Azure DevOps Services
+description: Data representation of a task orchestration item.
 ms.assetid: 48df8d73-91e4-aad4-af01-c602c58d2ca2
 ms.prod: devops
 ms.technology: devops-ecosystem

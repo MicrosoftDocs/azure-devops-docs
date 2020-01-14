@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/11/2019
+ms.date: 11/01/2019
 ---
 
 # Add a team administrator 
@@ -23,10 +23,11 @@ ms.date: 02/11/2019
 
 It's always a good idea to have more than one person with administration permissions for an area. You need to be a team administrator to [Manage teams and configure team tools](manage-teams.md). 
 
-As a team administrator, you can configure, customize, and manage all team-related activities for your team. These include being able to add team members, add team admins, and configure Agile tools and team assets. 
+As a team administrator, you can configure, customize, and manage all team-related activities for your team. These activities include adding team members and team admins, and configuring Agile tools and team assets. 
 
 
 <a name="permissions"></a>
+
 ## Prerequisites
 
 ::: moniker range="azure-devops"
@@ -41,23 +42,64 @@ As a team administrator, you can configure, customize, and manage all team-relat
 If you need to add a team, see [Add teams](add-teams.md).
 
 <a id="open-admin-context">  </a>
-## Open Project Settings>Team Profile and add an administrator
+
+## Add an administrator
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. Choose **Project settings** and choose **Teams**. 
+
+   ![Open Project settings, and then Teams](_img/_shared/open-project-settings-teams-preview.png)
+
+2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team profile, Add a team admin](_img/add-team-admin/settings-add-team-administrator-preview.png)  
+
+3. Enter the identities you want to add to the administrator role, and then select **Save**.     
+	    
+	> [!div class="mx-imgBorder"]
+	> ![Add team administrator dialog](_img/add-team-admin/add-team-administrator-dialog-preview.png)
+
+#### [Current page](#tab/current-page) 
 
 From the web portal, open the admin page for the team. 
 
-::: moniker range=">= azure-devops-2019"
+1. Choose **Project settings** and choose **Teams**. 
+
+   ![Open Project settings, and then Teams](_img/_shared/open-project-settings-team-new-nav.png)
+
+2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team profile, Add a team admin](_img/add-team-admin/settings-add-team-administrator.png)  
+
+3. Enter the identities you want to add to the administrator role, and then select **Save**.     
+	    
+	> [!div class="mx-imgBorder"]
+	> ![Add team administrator dialog](_img/add-team-admin/add-administrators-dialog.png)
+
+* * *
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 1. Choose **Project Settings** and choose **Teams**. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Open Code, new nav](_img/add-team/open-project-settings-teams-new-nav.png) 
+      ![Open Project settings, and then Teams](_img/_shared/open-project-settings-team-new-nav.png)
 
-1. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
+2. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team profile, Add a team admin](_img/add-team-admin/team-profile-choose-add-admin.png)  
 
-1. Enter the identities you want to add to the team administrator role.     
+3. Enter the identities you want to add to the team administrator role.     
 	    
 	> [!div class="mx-imgBorder"]
 	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
@@ -74,11 +116,11 @@ From the web portal, open the admin page for the team.
 
 	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
 
-1. Choose the **Add** link to open the dialog for adding user identities.  
+2. Choose the **Add** link to open the dialog for adding user identities.  
 
 	![Open team administrator context](_img/add-team/admin-link.png)  
    
-2. Enter the identities you want to add to the team administrator role.   
+3. Enter the identities you want to add to the team administrator role.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
@@ -94,18 +136,18 @@ From the web portal, open the admin page for the team.
 
 	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 
-1. Choose the **Add** link to open the dialog for adding user identities.    
+2. Choose the **Add** link to open the dialog for adding user identities.    
   
 	![Web portal, TFS 2015, Open team administration context](_img/add-team/add-account-as-team-admin.png)
 
-2. Enter the identities you want to add to the team administrator role.     
+3. Enter the identities you want to add to the team administrator role.     
 
 	![Add team administrator dialog](_img/add-team/team-admin-dialog.png)    
 	
 ::: moniker-end  
 
 
-## Try this next  
+## Try next  
 
 > [!div class="nextstepaction"]
 > [Manage teams and configure team tools](manage-teams.md) 

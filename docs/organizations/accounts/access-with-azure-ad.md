@@ -1,5 +1,5 @@
----
-title: Access your organization with Azure Active Directory
+﻿---
+title: Access your organization with Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to authenticate users and control access to your organization the same way you can with Microsoft services, like Office 365 and Azure
@@ -10,13 +10,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 08/06/2019
+ms.date: 11/26/2019
 monikerRange: 'azure-devops'
 ---
 
 # Access your organization with Azure Active Directory
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
 
 In this article, learn how to authenticate users and control access to
 your organization the same way you
@@ -70,8 +72,7 @@ A: Add these users to the directory with new work or school accounts. Then, reas
 
 ### Q: What happens to tools that use my credentials, like alternate credentials?
 
-A: Alternate credentials won't work anymore for
-tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected.
+A: Alternate credentials won't work anymore for tools that run outside a web browser, like the Git command-line tool. [Set up your credentials](https://support.microsoft.com/kb/2991274/) again for the organization that you connected. See [important information about alternate credentials](https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/).
 
 ### Q: What if I accidentally delete a user in Azure AD?
 

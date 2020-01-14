@@ -1,5 +1,5 @@
----
-title: Keyboard shortcuts for work item form and Work Items hub 
+﻿---
+title: Shortcuts for work item form and Work Items hub
 titleSuffix: Azure Boards
 description: Use keyboard shortcuts with work item forms and the Work Items hub
 ms.custom: work-items, seodec18

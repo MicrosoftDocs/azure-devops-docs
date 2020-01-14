@@ -1,5 +1,5 @@
 ---
-title: Move, change, delete, or restore user stories, bugs, tasks, and other work items 
+title: Move, change, and delete work items
 titleSuffix: Azure Boards
 description: How to remove, delete, change type, or move work items to another project in Azure Boards or TFS 
 ms.custom: "boards-backlogs, seodec18" 
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/14/2019
+ms.date: 01/10/2020
 ---
 
 # Move, change, or delete work items 
@@ -137,11 +137,21 @@ You can access the following actions for which you have permissions. If you are 
 1. You can change the work item type or move work items to another project within a project collection. These features require that the data warehouse is disabled. With the data warehouse disabled, you'll use the [Analytics Service](/azure/devops/report/powerbi/what-is-analytics) to support your reporting needs. To learn more about disabling the data warehouse, see [Disable the data warehouse and cube](../../report/admin/disable-data-warehouse.md). 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
-You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
+You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
 
 ::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
+
+Also, you can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. 
+
+::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -280,7 +290,7 @@ To learn more, see [Set permissions and access for work tracking](../../organiza
 Changing the work item type refreshes the work item form with the fields defined for the type selected. For example, you can change a bug to a task and the form will refresh with the fields defined for a task. 
 
 > [!NOTE]  
-> You can't change the work item type of work items associated with test management. Both Contributors and users assigned Stakeholder access can change the work item type.  
+> You can't change the work item type of work items associated with test management. Also, you can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. 
 
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 

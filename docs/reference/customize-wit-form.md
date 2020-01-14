@@ -1,4 +1,4 @@
----
+﻿---
 title: Customize the layout of the work item web form
 titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
@@ -88,7 +88,7 @@ See the following topics to make the indicated customizations:
     witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
     ```
 
-   An example of a <em>CollectionURL</em> for an organization is https://dev.azure.com/*OrganizationName*.
+   An example of a <em>CollectionURL</em> for an organization is https:\//dev.azure.com/*OrganizationName*.
 
 3. Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 

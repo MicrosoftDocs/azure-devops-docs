@@ -24,7 +24,7 @@ Code coverage is an important quality metric and helps you measure the percentag
 Typically, coverage gets measured for the entire codebase of a project. This is **full coverage**.
 However, in the context of pull requests, developers are focused on the changes they are making and want to know whether the specific lines of code they have added or changed are covered. This is **diff coverage**.
 
-## Pre-requisites
+## Prerequisites
 
 In order to get coverage metrics for a pull request, first configure a pipeline that validates pull requests. In this pipeline, configure the test tool you are using to collect code coverage metrics. Coverage results must then be published to the server for reporting. 
 

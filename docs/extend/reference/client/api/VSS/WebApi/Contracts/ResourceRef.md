@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts ResourceRef API | Extensions for Azure DevOps Services
+description: Data representation of a resource ref.
 ms.assetid: 9efb176f-d663-b70b-a3f1-285a6dd05710
 ms.prod: devops
 ms.technology: devops-ecosystem

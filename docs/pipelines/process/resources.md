@@ -7,15 +7,15 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: jukullam
+author: juliakm
 ms.date: 5/23/2019
-monikerRange: 'azure-devops'
 ---
 
-# Resources
+# About pipeline resources and infrastructure 
 
-**Azure Pipelines**
+
+[!INCLUDE [temp](../_shared/version-tfs-2017-rtm.md)] 
 
 A resource is anything used by a pipeline that lives outside the pipeline itself. Examples include:
 

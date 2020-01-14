@@ -54,7 +54,7 @@ You will:
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
-* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
+* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr).
 
 * An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
@@ -394,7 +394,7 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 You are now using Jenkins CI builds with an Azure Repos code repository and an Azure Pipelines release pipeline to perform CI/CD to **Azure Container Services (AKS)**.  You can easily track your code changes and deployments via the rich reporting capabilities of Azure Pipelines, and leverage Jenkins to execute CI builds.
 
 ## View the deployed sample app
-Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
+Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubernetes-cli).
 
 1. Use the following command for querying the external IP address for the deployed app:
 

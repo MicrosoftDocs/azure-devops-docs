@@ -1,5 +1,5 @@
----
-title: Resources granted to project members - Azure DevOps
+﻿---
+title: Resources granted to project members
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn about security and data access considerations and resources granted when you add members to a project or organization 

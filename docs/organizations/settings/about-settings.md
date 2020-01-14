@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/05/2019
+ms.date: 10/28/2019
 ---
 
 
@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 > [!NOTE]  
 > You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../security/access-levels.md#stakeholder-access). 
 
-::: moniker-end  
+::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -71,7 +71,7 @@ Individual contributors can set their user preferences, enable features that are
 <li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)">Authorize access to REST APIs with OAuth 2.0</a></li>
 <li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)">Use SSH key authentication</a></li>
 </ul></td>
-<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md#alternate-credentials)">Authentication overview</a>.</td>
+<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md)">Authentication overview</a>.</td>
 </tr>
 <tr>
 <td><strong>Favorites</strong></td>
@@ -157,6 +157,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 See also [Get started as an administrator](../../user-guide/project-admin-tutorial.md).
 
 ::: moniker range=">= azure-devops-2019"
+
 **Project settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
@@ -458,7 +459,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker range="azure-devops-2019"
 
-For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/admin-quick-ref).
 
 
 <table>
@@ -491,7 +492,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 <li><a href="../security/restrict-access.md" data-raw-source="[Grant or restrict access to select features ](../security/restrict-access.md)">Grant or restrict access to select features </a></li>
 <li><a href="../security/set-project-collection-level-permissions.md" data-raw-source="[Add collection-level administrators](../security/set-project-collection-level-permissions.md)">Add collection-level administrators</a></li>
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in Azure DevOps Server deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in Azure DevOps Server deployments</a></li>
-<li><a href="/azure/devops/server/admin/add-administrator-tfs" data-raw-source="[Add administrators to Azure DevOps Server](/azure/devops/server/admin/add-administrator-tfs)">Add administrators to Azure DevOps Server</a></li>
+<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to Azure DevOps Server](/azure/devops/server/admin/add-administrator)">Add administrators to Azure DevOps Server</a></li>
 </ul></td>
 <td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
@@ -541,7 +542,7 @@ For an overview of managing collections, see [Configure and manage Azure DevOps 
 
 ::: moniker range="<= tfs-2018"
 
-For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/config-tfs-resources).
+For an overview of managing collections, see [Configure and manage TFS resources](/azure/devops/server/admin/admin-quick-ref).
 
 
 <table>
@@ -574,7 +575,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li><a href="../security/restrict-access.md" data-raw-source="[Grant or restrict access to select features ](../security/restrict-access.md)">Grant or restrict access to select features </a></li>
 <li><a href="../security/set-project-collection-level-permissions.md" data-raw-source="[Add collection-level administrators](../security/set-project-collection-level-permissions.md)">Add collection-level administrators</a></li>
 <li><a href="/azure/devops/server/admin/setup-ad-groups" data-raw-source="[Set up groups for use in TFS deployments](/azure/devops/server/admin/setup-ad-groups)">Set up groups for use in TFS deployments</a></li>
-<li><a href="/azure/devops/server/admin/add-administrator-tfs" data-raw-source="[Add administrators to TFS](/azure/devops/server/admin/add-administrator-tfs)">Add administrators to TFS</a></li>
+<li><a href="/azure/devops/server/admin/add-administrator" data-raw-source="[Add administrators to TFS](/azure/devops/server/admin/add-administrator)">Add administrators to TFS</a></li>
 </ul></td>
 <td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
@@ -621,11 +622,11 @@ For an overview of managing collections, see [Configure and manage TFS resources
 
 ## Server Administrator role 
 
-Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
+Members of the [Team Foundation Server Administrators group](/azure/devops/server/admin/add-administrator) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
 
 The main task they perform from the web portal is to set access levels for a user or security group. See [Change access levels](../security/change-access-levels.md). 
 
-For additional information, see [Team Foundation Server Administration Documentation](/tfs/index).
+For additional information, see [Team Foundation Server Administration Documentation](/azure/devops/server/server).
 
 ::: moniker-end
 

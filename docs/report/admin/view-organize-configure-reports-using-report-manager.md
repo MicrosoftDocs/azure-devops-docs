@@ -1,5 +1,5 @@
----
-title: View, organize, and configure reports using Report Manager
+﻿---
+title: Manage reports with Report Manager
 titleSuffix: TFS
 description: Use the SQL Server Reporting Services' Report manager to view, organize, and configure reports 
 ms.prod: devops

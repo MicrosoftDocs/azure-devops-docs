@@ -1,4 +1,4 @@
----
+﻿---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
 description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
@@ -92,7 +92,7 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md#update-fields-from-the-card)  
+- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)  
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 ::: moniker-end  
 
@@ -304,7 +304,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </tbody>
 </table>
 
-<
+
 
 
 ## Other tools 

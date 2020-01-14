@@ -1,5 +1,5 @@
----
-title: Publish new wiki version, select version, or unpublish a wiki in Azure DevOps
+﻿---
+title: Publish, select, or unpublish a wiki version
 titleSuffix: Azure DevOps  
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
 ms.technology: devops-collab

@@ -26,7 +26,7 @@ A query defined using the Work Item Query Language (WIQL) consists of a `SELECT`
 The WIQL syntax is not case sensitive.
 
 > [!IMPORTANT] 
-> The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query-by-wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work%20items/list#get-list-of-work-items-for-specific-fields). 
+> The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work%20items/list#get-list-of-work-items-for-specific-fields). 
 
 
 ## Example queries 
@@ -464,20 +464,20 @@ These macros accept a modifier string which has a format of `(+/-)nn(y|M|w|d|h|m
 This syntax allows you to nest modifiers and offset your query twice. For example, the following clause filters work items that have been closed last year and three months into the start of the current year.  
 
 ```WIQL
-[System.ClosedDate] >=@StartOfYear('+3M') - 1
+[Microsoft.VSTS.Common.ClosedDate] >=@StartOfYear('+3M') - 1
 ```
 
 
 The following examples assume that today is 4/5/19. 
 
 ```WIQL
-[System.CreatedDate] >= @StartOfMonth-3
+[Microsoft.VSTS.Common.CreatedDate] >= @StartOfMonth-3
 ```
 
 is the equivalent of:
 
 ```WIQL
-[System.CreatedDate] >= '1/1/19'
+[Microsoft.VSTS.Common.CreatedDate] >= '1/1/19'
 ```
 
 and

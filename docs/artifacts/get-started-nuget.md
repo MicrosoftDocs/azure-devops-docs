@@ -1,5 +1,5 @@
----
-title: Get started with NuGet packages in Azure DevOps Services and TFS
+﻿---
+title: Get started with NuGet packages
 description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
