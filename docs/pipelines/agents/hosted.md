@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 09/20/2019
+ms.date: 01/14/2020
 monikerRange: azure-devops
 ---
 
@@ -41,6 +41,8 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
 | macOS X High Sierra 10.13 | *macOS-10.13* |   `macOS-10.13` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+
 Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
 ```yaml
@@ -63,7 +65,6 @@ jobs:
 ```
 
 ### Notes on choosing "Hosted macOS"
-
 
 This option affects where your data is stored. [Learn more](../../organizations/security/data-location.md).
 
@@ -123,7 +124,6 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 Currently, Service Tags is not something you can use for your hosted agents. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
 
 ## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
