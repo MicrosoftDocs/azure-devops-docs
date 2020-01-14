@@ -231,7 +231,7 @@ steps:
         # Output releases in JSON
         Write-Host $result.value
   env:
-    MY_MAPPED_TOKEN: $(token) # Mapping in the secret variable $(token) from my-var-group
+    MY_MAPPED_TOKEN: $(token) # Maps the secret variable $(token) from my-var-group
 
 ```
 
