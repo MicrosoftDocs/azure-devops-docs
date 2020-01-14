@@ -175,6 +175,39 @@ This works: ***
 
 It is recommended that you use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you would not want the log to include a secret that you passed in as an input.
 
+This example shows how to reference a variable group in your YAML file and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. 
+
+```yaml
+variables: 
+- group: 'my-var-group' # variable group
+- name: 'devopsAccount' # new variable defined in YAML
+  value: 'contoso'
+- name: 'projectName' # new variable defined in YAML
+  value: 'contosoads'
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+        # Encode the Personal Access Token (PAT)
+        # $env:USER is a public variable in the variable group
+        # #env:MY_MAPPED_TOKEN is a mapped secret variable
+        $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
+        
+        # Get a list of releases
+        $uri = "https://vsrm.dev.azure.com/$(devopsAccount)/$(projectName)/_apis/release/releases?api-version=5.1"
+
+        # Invoke the REST call
+        $result = Invoke-RestMethod -Uri $uri -Method Get -ContentType "application/json" -Headers @{Authorization=("Basic {0}" -f $base64AuthInfo)}
+        
+        # Output releases in JSON
+        Write-Host $result.value
+  env:
+    MY_MAPPED_TOKEN: $(token) # Mapping in the secret variable #(token) from my-var-group
+
+```
+
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 ::: moniker-end
