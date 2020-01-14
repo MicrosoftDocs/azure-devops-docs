@@ -58,7 +58,7 @@ Service connections are created at project scope. A service connection created i
 1. Choose **OK** to create the connection.
 For example, this is the default **Azure Resource Manager** connection dialog:
 
-   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/new-azure-rm-connection-01.png)
+   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/new-connection-01.png)
 
    > [!NOTE]
    > The connection dialog may appear different for the different types of service connections, 
@@ -74,15 +74,15 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 1. Select the service connection you want to manage.
 
 1. You will land in the **Overview** tab of the service connection where you can see the details of the service connection i.e. type, creator, authentication type (like Token, Username/Password or OAuth etc.).
-![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/azure-rm-overview-page.png)
+![Azure Resource Manager connection overview](../release/_img/azure-rm-endpoint/overview-page.png)
 
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
-![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/azure-rm-usage-history.png)
+![Azure Resource Manager usage history](../release/_img/azure-rm-endpoint/usage-history.png)
 
 1. To update the service connection, click on **Edit** at the top right corner of the page.
 
 1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
-![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/azure-rm-more-options.png)
+![Azure Resource Manager more options](../release/_img/azure-rm-endpoint/more-options.png)
 
 <a name="security"></a>
 
@@ -97,12 +97,12 @@ To manage the security for a connection:
 ![Service connection hub security](../release/_img/azure-rm-endpoint/service-connection-hub-security.png)
 
 1. To manage security for a service connection, open the service connection and go to more options at top right corner and choose **Security**.
-![Azure Resource Manager security](../release/_img/azure-rm-endpoint/azure-rm-security.png)
+![Azure Resource Manager security](../release/_img/azure-rm-endpoint/security.png)
 
 Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KevVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
-1. User permissions
-1. Pipeline permissions
-1. Project permissions
+* User permissions
+* Pipeline permissions
+* Project permissions
 
 ### User permissions
 You can control who can create, view, use and manage the service connection with user permissions. You have four roles i.e. Creator, Reader, User and Administrator roles to manage each of these actions. In the service connections tab, you can set the hub level permissions which are inherited and you can override the roles for each service connection. 
@@ -127,23 +127,23 @@ Along with the new service connections UI, we are introducing **Sharing of servi
 The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
 The project-level administrator have limited administrative capabilities as below:
-1. A project-level administrator can manage other users and roles at project scope.
-1. A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
-1. A project-level administrator can delete a service connection which removes the existence of service connection from the project.
+* A project-level administrator can manage other users and roles at project scope.
+* A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
+* A project-level administrator can delete a service connection which removes the existence of service connection from the project.
 
-![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
+![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/project-level-security.png)
 
-The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the ineritance is turned on.
+The user that created the service connection is automatically added to the project level Administrator role for that service connection. And users/groups assigned administrator role at hub level are inherited if the inheritance is turned on.
 
 #### Organization level permissions
 Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. There is not inheritance for organization level permissions. Today we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
-1. A organization-level administrator can manage organization level users.
-1. A organization-level administrator can edit all the fields of a service connection.
-1. A organization-level administrator can share/un-share a service connection with other projects.
+* A organization-level administrator can manage organization level users.
+* A organization-level administrator can edit all the fields of a service connection.
+* A organization-level administrator can share/un-share a service connection with other projects.
 
-![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/azure-rm-organization-security.png)
+![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/organization-security.png)
 
 The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
 
@@ -155,18 +155,18 @@ You can either choose to open access for all pipelines to consume this service c
 
 Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
 
-![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/azure-rm-pipeline-permissions.png)
+![Azure Resource Manager pipeline permissions](../release/_img/azure-rm-endpoint/pipeline-permissions.png)
 
 ### Project permssions - Cross project sharing of service connections
 Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
-1. Only the organization-level administrators from **User permissions** can share the service connection with other projects.
-1. The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
-1. The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
-1. The service connection name is appended with the project name and it can be renamed in the target project scope.
-1. Organization level administrator can un-share a service connection from any shared project.
+* Only the organization-level administrators from **User permissions** can share the service connection with other projects.
+* The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
+* The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
+* The service connection name is appended with the project name and it can be renamed in the target project scope.
+* Organization level administrator can unshare a service connection from any shared project.
 
-![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
+![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/project-permissions.png)
 
 > [!NOTE]
 > Project permissions feature is dependent on the new service connections UI and once we enable this feature, the old service
@@ -214,7 +214,7 @@ use one of the following techniques:
 Azure Pipelines and TFS support a variety of service connection types by default. Some of these are described below:
 
 * [Azure Classic service connection](#sep-azure-classic)
-* [Azure Resource Manager service connection](#sep-azure-rm)
+* [Azure Resource Manager service connection](#sep-azure-resource-manager)
 * [Azure Service Bus service connection](#sep-servbus)
 * [Bitbucket Cloud service connection](#sep-bbucket)
 * [Chef service connection](#sep-chef)
@@ -262,12 +262,12 @@ using Azure credentials or an Azure management certificate.
 
 *****
 
-<a name="sep-azure-rm-conditions"></a>
+<a name="sep-azure-resource-manager-conditions"></a>
 <a name="arm-auto-connect"></a>
 <a name="arm-manual-connect"></a>
-<a name="sep-azure-rm-existingsp"></a>
+<a name="sep-azure-resource-manager-existingsp"></a>
 
-<h3 id="sep-azure-rm">Azure Resource Manager service connection</h3>
+<h3 id="sep-azure-resource-manager">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
