@@ -41,14 +41,17 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 ### Download python distributions from Azure Artifacts feeds without consulting official python registry
 
-In this example, we are setting authentication for downloading from a private Azure Artifacts feed. The authenticate task create environment variables `PIP_INDEX_URL` and `PIP_EXTRA_INDEX_URL` which contain auth credentials required to download the distributions. 'HelloTestPackage' has to be present in either 'myTestFeed1' or 'myTestFeed2', otherwise install will hard fail.
+In this example, we are setting authentication for downloading from private Azure Artifacts feeds. The authenticate task creates environment variables `PIP_INDEX_URL` and `PIP_EXTRA_INDEX_URL` that are required to download the distributions. The task sets the variables with auth credentials the task generates for the provided Artifacts feeds. 'HelloTestPackage' has to be present in either 'myTestFeed1' or 'myTestFeed2', otherwise install will fail hard. 
+
+Note that to authenticate to project scoped feed from a different project than the one the pipeline is ran from, the pipeline's project build service must be given access to the feed's project.
 
 ```YAML
 - task: PipAuthenticate@1
   displayName: 'Pip Authenticate'
   inputs:
-    # Provide list of feed names which you want to authenticate
-    artifactFeeds: myTestFeed1, myTestFeed2
+    # Provide list of feed names which you want to authenticate.
+    # Project scoped feeds must include the project name in addition to the feed name.
+    artifactFeeds: project1/myTestFeed1, myTestFeed2
 
 # Use command line tool to 'pip install'.
 - script: |
@@ -59,12 +62,15 @@ In this example, we are setting authentication for downloading from a private Az
 
 In this example, we are setting authentication for downloading from private Azure Artifacts feed but [pypi](https://pypi.org) is consulted first. The authenticate task creates an environment variable `PIP_EXTRA_INDEX_URL` which contain auth credentials required to download the distributions. 'HelloTestPackage' will be downloaded from the authenticated feeds only if it's not present in [pypi](https://pypi.org).
 
+Note that to authenticate to project scoped feed from a different project than the one the pipeline is ran from, the pipeline's project build service must be given access to the feed's project.
+
 ```YAML
 - task: PipAuthenticate@1
   displayName: 'Pip Authenticate'
   inputs:
-    # Provide list of feed names which you want to authenticate
-    artifactFeeds: myTestFeed1, myTestFeed2
+    # Provide list of feed names which you want to authenticate.
+    # Project scoped feeds must include the project name in addition to the feed name.
+    artifactFeeds: project1/myTestFeed1, myTestFeed2
     # Setting this variable to "true" will force pip to get distributions from official python registry first and fallback to feeds mentioned above if distributions are not found there.
     onlyAddExtraIndex: true
 
