@@ -754,7 +754,7 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
 * [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
 * [A Web Performance Test primer](/archive/blogs/edglas/web-test-authoring-and-debugging-techniques-for-visual-studio-2010)
-* [Managing Load Test results](https://docs.microsoft.com/en-us/archive/blogs/slumley/managing-load-test-results)
+* [Managing Load Test results](https://docs.microsoft.com/archive/blogs/slumley/managing-load-test-results)
 * [Getting 90th and 95th percentile results in a Load Test](https://blogs.msdn.microsoft.com/slumley/archive/2007/07/06/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation.aspx)
 * [Understanding Load Test results schema](https://blogs.msdn.microsoft.com/billbar/archive/2006/02/10/what-is-the-data-in-the-vsts-load-test-results-store.aspx)
 * [Load Test plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/04/10/load-test-plug-ins.aspx)
