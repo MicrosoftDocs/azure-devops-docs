@@ -46,11 +46,19 @@
     - name: Specify demands 
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
-    - name: Approvals, checks, & gates 
+  - name: Approvals, checks, & gates
+    items:
+    - name: Release approval and gates overview 
       href: release/approvals/index.md
-    - name: Define an approval 
+    - name: Define approvals & checks
       href: process/approvals.md
       displayName: approvals, checks
+    - name: Define a gate
+      href: release/approvals/gates.md
+    - name: Use approvals and gates
+      href: release/deploy-using-approvals.md
+    - name: Use approvals for release deployment control
+      href: release/approvals/approvals.md
   - name: Repositories & triggers
     items:
     - name: Specify pipeline triggers  
@@ -244,12 +252,6 @@
       href: targets/webapp.md
 - name: Deploy apps (Classic) 
   items:
-  - name: Use approvals and gates
-    href: release/deploy-using-approvals.md
-  - name: Define an approval
-    href: release/approvals/approvals.md
-  - name: Define a gate
-    href: release/approvals/gates.md
   - name: Deploy pull request builds
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
