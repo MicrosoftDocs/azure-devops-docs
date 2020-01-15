@@ -23,7 +23,7 @@ Are you planning to build and deploy Azure DevOps extensions to production? You 
 * How do you mitigate the risk of deploying to production?
 * How do you automate the build and deployment?
 
-This topic aims to answer these questions and share learnings using rings with Azure DevOps extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/).
+This topic aims to answer these questions and share learnings using rings with Azure DevOps extensions. For an insight into the Microsoft guidelines, read [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/).
 
 ## One or more rings to rule your deployments
 
@@ -176,8 +176,8 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 
 ## Reference information
 
-* [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
-* [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
+* [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [DevOps @ Microsoft](https://aka.ms/devops)
 
 > Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)

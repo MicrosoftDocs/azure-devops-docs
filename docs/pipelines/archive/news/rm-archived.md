@@ -305,7 +305,7 @@ lets administrators deliberately trust the certificate.
 
 For more information about Jenkins integration
 capabilities, see
-[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 <a name="sep2-manualinter"></a>
 **Deployment manual intervention**
@@ -793,7 +793,7 @@ that is able to connect to your TFS machine and
 configure this agent in Azure Pipelines. The extension
 does not yet work for deploying XAML builds.
 
-For more information, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
+For more information, see [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
 **Email release summary**
 

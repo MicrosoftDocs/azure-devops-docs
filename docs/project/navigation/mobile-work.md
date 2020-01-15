@@ -117,7 +117,7 @@ The browser opens to the **Assigned to me** page. From there, you can choose **F
 
 ## Related articles  
 
-Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/24/the-mobile-work-item-form/).
+Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/).
   
 - [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)  
 - [Set team notifications](../../notifications/howto-manage-team-notifications.md)  
