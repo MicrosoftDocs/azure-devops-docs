@@ -1,4 +1,4 @@
-﻿---
+---
 title: Understand dashboards, charts, reports & widgets
 titleSuffix: Azure DevOps  
 description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
@@ -29,7 +29,7 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 ::: moniker range="azure-devops"
 
-- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team and display configurable charts and widgets to show information.
+- <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
 - <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
 - <strong>Widgets</strong> display configurable information and charts on dashboards. The widget catalog provides brief descriptions of those widgets available to you. In addition, you can add widgets provided through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops). 
 - <strong>In-context reports</strong> are system-generated charts that support specific services. Examples are team velocity, sprint burndown, and the Cumulative Flow Diagram (CFD), and the Test Failures Report. These reports are displayed on the **Analytics** tab for a specific service and derive data from Analytics.  

@@ -22,10 +22,13 @@ The **dir** command displays all or some of the contents of the server for Team 
 
 **Required Permissions**
 
-To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
+To use the **dir** command, you must have **Read** permission set to **Allow**. For more 
+information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf dir itemspec [/version:versionspec] [/recursive] 
-    [/folders] [/deleted] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
+tf dir itemspec [/version:versionspec] [/recursive] 
+[/folders] [/deleted] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters<table>
 <thead>
@@ -107,27 +110,39 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example displays a list of files, folders, subfolders, and the files therein in the Team Foundation version control server folder to which c:\\projects maps. The number of items is also listed. For more information about how to view and edit working folder mappings, see [Workspace Command](workspace-command.md) and [Workfold Command](workfold-command.md).
 
-    c:\projects>tf dir /recursive
+```
+c:\projects>tf dir /recursive
+```
 
 The following example displays all Team Foundation version control server files at that path. The "314dir" subfolder does not have to exist in the local folder.
 
-    c:\projects>tf dir 314dir
+```
+c:\projects>tf dir 314dir
+```
 
 The following example displays the version of files labeled "My label" in that Team Foundation version control server path. The "314dir" subfolder does not have to exist in the local folder.
 
-    c:\projects>tf dir /version:L"My label" 314dir
+```
+c:\projects>tf dir /version:L"My label" 314dir
+```
 
 The following example displays all folders in the root of the Team Foundation version control server. The local working folder is ignored because `$/` denotes a Team Foundation version control server path.
 
-    c:\projects>tf dir /folders $/
+```
+c:\projects>tf dir /folders $/
+```
 
 The following example lists every file and folder in the Team Foundation version control server.
 
-    c:\projects>tf dir /recursive $/
+```
+c:\projects>tf dir /recursive $/
+```
 
 The following example lists all items and deleted items in the current folder together with their deletion IDs.
 
-    c:\projects>tf dir /deleted
+```
+c:\projects>tf dir /deleted
+```
 
 ## See Also
 
