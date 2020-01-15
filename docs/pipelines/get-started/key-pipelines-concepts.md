@@ -16,6 +16,7 @@ monikerRange: 'azure-devops'
 
 Learn about the key concepts and components that are used in Azure Pipelines. Understanding the basic terms and parts of Azure Pipelines helps you further explore how it can help you deliver better code more efficiently and reliably.
 
+
 **Key concepts overview**
 
 ![key concepts overview](../_img/key_concepts_overview.svg)
