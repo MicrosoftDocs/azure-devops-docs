@@ -18,8 +18,7 @@ ms.date: 12/16/2019
 
 > [!NOTE]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
->
-> Customers looking to upgrade and use the data migration tool for Azure DevOps to migrate to Azure DevOps Server, should note that import support for Azure DevOps Server 2019.1.1 will be delayed. Normally it can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online. Due to the holiday season, we originally were targeting Monday, January 6th to bring support online. However, post holiday deployment delays have meant that we're now targeting Tuesday, January 21st. In the meantime, we’ll keep 2019.0.1 support going. It will end on Tuesday, January 21st when 2019.1.1 support comes online.
+
 
 
 ## Data migration tool for Azure DevOps
@@ -31,14 +30,10 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 > [!IMPORTANT] 
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
->
-> Customers looking to upgrade and use the data migration tool for Azure DevOps to migrate to Azure DevOps Server, should note that import support for Azure DevOps Server 2019.1.1 will be delayed. Normally it can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online. Due to the holiday season, we originally were targeting Monday, January 6th to bring support online. However, post holiday deployment delays have meant that we're now targeting Tuesday, January 21st. In the meantime, we’ll keep 2019.0.1 support going. It will end on Tuesday, January 21st when 2019.1.1 support comes online.
->
-> If you upgrade to 2019.1.1 before January 21st and want to migrate, you will either need to wait or downgrade to a supported version.
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
-* Azure DevOps Server 2019.0.1
+* Azure DevOps Server 2019.1.1
 * Azure DevOps Server 2019 Update 1
 
 > [!NOTE]
