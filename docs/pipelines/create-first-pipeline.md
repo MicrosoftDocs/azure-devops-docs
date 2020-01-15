@@ -72,7 +72,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](ecosystems/_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -104,7 +104,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](ecosystems/_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
 
 8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
