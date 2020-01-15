@@ -46,7 +46,7 @@ The Xamarin License step is no longer necessary and has been removed from the bu
 
 ## Jenkins with untrusted SSL certificates
 
-Jenkins connections can now be configured to accept untrusted SSL certificates of Jenkins servers. This is useful when Team Services service hooks or build/release processes integrate with Jenkins. For example, if a Jenkins server is configured to use SSL with a self-signed certificate or a certificate that cannot be verified by a Certificate Authority (CA), this setting will allow administrators to deliberately trust the certificate anyway. For more information about Jenkins integration capabilities, see [Team Services Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+Jenkins connections can now be configured to accept untrusted SSL certificates of Jenkins servers. This is useful when Team Services service hooks or build/release processes integrate with Jenkins. For example, if a Jenkins server is configured to use SSL with a self-signed certificate or a certificate that cannot be verified by a Certificate Authority (CA), this setting will allow administrators to deliberately trust the certificate anyway. For more information about Jenkins integration capabilities, see [Team Services Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 ![Adding a Jenkins connection with untrusted SSL certificates](_img/9_02_03.png)
 

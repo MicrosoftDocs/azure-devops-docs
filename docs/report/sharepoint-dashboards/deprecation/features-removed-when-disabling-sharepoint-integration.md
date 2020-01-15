@@ -30,7 +30,7 @@ Customers can create a SharePoint site using SharePoint's own interface. SharePo
 
 Additionally, Microsoft has introduced [Microsoft Teams](https://products.office.com/microsoft-teams) which allows teams to collaborate on a set of shared resources. Every Team gets a shared SharePoint site, OneNote, and Documents library. 
 
-We already offer [integration with Microsoft Teams](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/microsoft-teams-integration-with-team-services/) for both Azure DevOps Services and TFS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
+We already offer [integration with Microsoft Teams](https://devblogs.microsoft.com/premier-developer/integrating-visual-studio-team-services-with-microsoft-teams/) for both Azure DevOps Services and TFS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
  
 ## TFS web parts on Classic SharePoint sites
 SharePoint web parts display TFS data such as work item summary, recent builds, recent check-ins, and work item queries. These web parts display on classic SharePoint sites but will not display on the latest versions of SharePoint sites offered in SharePoint 2016 or SharePoint Online. Going forward, we will no longer support these SharePoint web parts.

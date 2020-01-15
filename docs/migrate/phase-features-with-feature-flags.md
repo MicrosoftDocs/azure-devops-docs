@@ -76,7 +76,7 @@ They chose the [LaunchDarkly](https://launchdarkly.com/index.html) solution for 
 
 ## Common scenarios
 
-You have a [CI/CD pipeline](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
+You have a [CI/CD pipeline](https://devblogs.microsoft.com/visualstudio/tag/cicd/) for every Azure DevOps extension you're hosting on the [marketplace](https://marketplace.visualstudio.com). You are using a ring deployment model and manual release approval checkpoints. The checkpoints are manual and time consuming, but necessary to minimize the chance of breaking the early-adopter and production user environments, forcing an expensive roll-back. You're looking for an engineering process, which enables you to:
 * Continuously deploy to production
 * Never roll back in production
 * Fine-tune the user experience in production
@@ -148,7 +148,7 @@ Buck’s [feature flags blog post](https://blogs.msdn.microsoft.com/buckh/2016/0
 
 ### How do the ALM | DevOps Rangers use feature flags?
 
-The Rangers use the [LaunchDarkly](https://www.launchdarkly.com/) SaaS solution. You can find their learnings in this [blog series](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/launchdarkly/).
+The Rangers use the [LaunchDarkly](https://www.launchdarkly.com/) SaaS solution. You can find their learnings in this [blog series](https://devblogs.microsoft.com/devops/effective-patterns-for-feature-flags/).
 
 ### When should you remove feature flags?
 
@@ -160,7 +160,7 @@ No, rings and feature flags are symbiotic. Read [Feature Flags or Rings](https:/
 
 ## Reference information
 
-* [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
+* [CI/CD pipeline examples](https://devblogs.microsoft.com/visualstudio/tag/cicd/)
 * [DevOps @ Microsoft](https://aka.ms/devops)
 * [How to implement feature flags and A|B testing](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/04/how-to-implement-feature-flags-and-ab-testing/)
 
