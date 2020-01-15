@@ -285,7 +285,7 @@ projects when linking to a build, but you can type
 this into the link dialog field.
 
 For more information about Jenkins integration capabilities, see
-[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 ----
 

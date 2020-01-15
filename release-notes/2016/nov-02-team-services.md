@@ -17,7 +17,7 @@ There are some exciting new features this sprint.
 Package Management is now available to Team Services accounts hosted in the South India and Brazil South Azure regions. To get started, [install the extension from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Microsoft Teams integration
-Microsoft Teams is a new chat-based workspace in Office365 that makes collaborating on software projects with Team Services a breeze. Team Services users can stay up to date with alerts for work items, pull requests, commits, and builds using the Connectors within Microsoft Teams. Starting November 9, users will also be able to bring their Kanban boards right into Microsoft Teams. For more information, see our [blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/microsoft-teams-integration-with-team-services/).
+Microsoft Teams is a new chat-based workspace in Office365 that makes collaborating on software projects with Team Services a breeze. Team Services users can stay up to date with alerts for work items, pull requests, commits, and builds using the Connectors within Microsoft Teams. Starting November 9, users will also be able to bring their Kanban boards right into Microsoft Teams. For more information, see our [blog](https://devblogs.microsoft.com/premier-developer/integrating-visual-studio-team-services-with-microsoft-teams/).
 
 ![Microsoft Teams](media/11_02_10.png)
 

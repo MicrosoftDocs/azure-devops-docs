@@ -103,9 +103,9 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 ## Related blog posts
 
-* [Visual Studio devops Blog: Deploying an Azure Red Hat Linux VM Running Apache Tomcat](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/deploying-an-azure-red-hat-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server)
+* [Visual Studio devops Blog: Deploying an Azure Red Hat Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-red-hat-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
 
-* [Visual Studio devops Blog: Deploying an Azure Ubuntu Linux VM Running Apache Tomcat](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/deploying-an-azure-ubuntu-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server)
+* [Visual Studio devops Blog: Deploying an Azure Ubuntu Linux VM Running Apache Tomcat](https://devblogs.microsoft.com/devops/deploying-an-azure-ubuntu-linux-vm-running-apache-tomcat-for-use-with-visual-studio-team-services-and-team-foundation-server/)
 
 ## Related topics
 
