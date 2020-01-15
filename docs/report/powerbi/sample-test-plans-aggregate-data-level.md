@@ -21,7 +21,7 @@ ms.date: 12/09/2019
 Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Plan structure for aggregated view](_img/odatapowerbi-aggregatedatlevel-plan.png)
+> ![Sample - Test Plan structure for aggregated view](media/odatapowerbi-aggregatedatlevel-plan.png)
 
 As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
 
@@ -30,7 +30,7 @@ As shown in the above image, there are level 3 test suites with same names under
 For a sample test suite hierarchy in a test plan like below, you can configure this report.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Suites Aggregated View - Report](_img/odatapowerbi-aggregatedatlevel.png)
+> ![Sample - Test Suites Aggregated View - Report](media/odatapowerbi-aggregatedatlevel.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -136,37 +136,37 @@ When finished, you may choose to rename columns.
     - Choose the expand button.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI Expand Test Suite](_img/powerbi-expand-testsuite.png)
+	    > ![Power BI Expand Test Suite](media/powerbi-expand-testsuite.png)
 
     - Select the fields to flatten.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI select fields to flatten](_img/powerbi-test-suite-flatten.png)
+	    > ![Power BI select fields to flatten](media/powerbi-test-suite-flatten.png)
 
     - The table now contains entity field of <code>TestSuite.IdLevel3</code> and <code>TestSuite.TitleLevel3</code>.
 
         > [!div class="mx-imgBorder"] 
-	    > ![Power BI expanded test suite](_img/powerbi-expanded-testsuite.png)
+	    > ![Power BI expanded test suite](media/powerbi-expanded-testsuite.png)
 
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/powerbi-rename-columns.png)
+	> ![Power BI Rename Columns](media/powerbi-rename-columns.png)
 
 1. Change the type of count columns to **Whole Number** and percentage fields to **Decimal Number**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Power BI Change Column Type](_img/powerbi-change-column-type.png)
+	> ![Power BI Change Column Type](media/powerbi-change-column-type.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/powerbi-rename-query.png)
+	> ![Power BI Rename Query](media/powerbi-rename-query.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/powerbi-close-apply.png)
+	> ![Power BI Close & Apply](media/powerbi-close-apply.png)
 
 
 ## Create the report
@@ -182,12 +182,12 @@ To create the report, do the following steps:
 1. Add the columns **TestSuite.TitleLevel3, NotRunCount, RunCount, PassedCount, TotalCount**.
 1. Select **Sum** as aggregation for **Count**.
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI select Sum as aggregation](_img/powerbi-sum-aggregation.png)
+	> ![Power BI select Sum as aggregation](media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Suites Aggregated View - Report](_img/odatapowerbi-aggregatedatlevel.png)
+> ![Sample - Test Suites Aggregated View - Report](media/odatapowerbi-aggregatedatlevel.png)
 
 ## Full list of sample reports for Test Plans
 

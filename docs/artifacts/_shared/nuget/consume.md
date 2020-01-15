@@ -20,7 +20,7 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 4. At the bottom of the dialog box, enter the feed's name and the URL that you got in the last step.
 5. Select **Update**.
 6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-   ![Add new NuGet source](../_img/vs-addsource.png)
+   ![Add new NuGet source](../media/vs-addsource.png)
 7. Select **OK**.
 8. [Go to the steps for consuming packages](#consume-packages).
 
@@ -36,7 +36,7 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
 7. Select **OK** again.
 
-   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../_img/vs-mac-settings.png)
+   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../media/vs-mac-settings.png)
 
 <a name="consume-packages"></a>
 
@@ -49,7 +49,7 @@ You can now discover and use packages in this feed. To add a package reference t
 3. Select **Manage NuGet Packages**.
 4. In the **Package source** drop-down list, select your feed.
 5. Look for your package in the list.
-   ![Select feed source](../_img/select-pkg-src.png)
+   ![Select feed source](../media/select-pkg-src.png)
 
 If you're using [upstream sources](../../nuget/upstream-sources.md), package versions in the upstream source that haven't yet been saved into your feed (by using them at least once) won't appear in the NuGet Package Manager search. To install these packages:
 

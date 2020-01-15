@@ -53,13 +53,13 @@ Use this to author a new test case that is similar to an existing one.
   
 1. Right click a test case and choose **Create copy**.  
   
-   ![Right-click a test case and choose Create copy](_img/copying-and-cloning-test-suites-and-test-cases/almt_mtm_copy1.png)  
+   ![Right-click a test case and choose Create copy](media/copying-and-cloning-test-suites-and-test-cases/almt_mtm_copy1.png)  
   
    The new test case opens.  
   
 1. Edit the new test. You must at least change its title. Under **Links**, you might want to delete the link to the old test case.  
   
-   ![Right-click a test case and choose Create copy](_img/copying-and-cloning-test-suites-and-test-cases/almt_mtm_copy2.png)  
+   ![Right-click a test case and choose Create copy](media/copying-and-cloning-test-suites-and-test-cases/almt_mtm_copy2.png)  
   
    The two tests can subsequently be edited independently of each other.  
   
@@ -68,13 +68,13 @@ Use this to author a new test case that is similar to an existing one.
 
 When you're creating the test plan for a new sprint, you often want to repeat some of the tests from the previous sprints, to make sure that the functionality you already implemented is still working.  
   
- ![Copying test suites](_img/copying-and-cloning-test-suites-and-test-cases/mtr_copy3.png)  
+ ![Copying test suites](media/copying-and-cloning-test-suites-and-test-cases/mtr_copy3.png)  
   
 1. Create the test plan for the new sprint.  
   
 1. Select the destination suite or plan and then get the suites you want to copy.  
   
-   ![Copy Test Suites From Another Test Plan](_img/copying-and-cloning-test-suites-and-test-cases/copytestsuites_anotherplan.png)  
+   ![Copy Test Suites From Another Test Plan](media/copying-and-cloning-test-suites-and-test-cases/copytestsuites_anotherplan.png)  
  
    The test suite and any suites it contains are copied, but they contain references to the same test cases. The source and destination test plans share the same test cases.  
   
@@ -84,13 +84,13 @@ After the copy, you can add or remove test cases from either plan without affect
 
 Cloning is useful if you want to branch your application into two versions: after copying, the tests for the two versions can be changed without affecting each other.  
   
-![Cloning test suites](_img/copying-and-cloning-test-suites-and-test-cases/mtr_clone3.png)  
+![Cloning test suites](media/copying-and-cloning-test-suites-and-test-cases/mtr_clone3.png)  
   
 1. On the context menu for the old test plan, choose **Clone plan**.  
   
 1. In the dialog, select the suites you want to copy and set the new area and iteration paths.  
   
-   ![Clone a test plan](_img/copying-and-cloning-test-suites-and-test-cases/mtm_testplanclone.png)  
+   ![Clone a test plan](media/copying-and-cloning-test-suites-and-test-cases/mtm_testplanclone.png)  
   
    Check **Clone Requirements** if you want to make new user stories or requirements that you will maintain separately. For example:  
   
@@ -109,26 +109,26 @@ When you clone a test suite, the following objects are copied from the source te
   
 |Test plan object|Copied|Notes|  
 |----------------------|------------|-----------|  
-|Test case|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|Each new test case retains its shared steps.<br /><br /> A link is made between the source and new test cases.<br /><br /> The new test cases do not have test runs, bugs, test results, and build information.|  
-|Shared steps referenced by cloned test cases|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
-|Test suite|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|The following data is retained:<br /><br /> -   Names and hierarchical structure of the test suites<br />-   Order of the test cases<br />-   Assigned testers<br />-   Configurations|  
-|Action Recordings linked from a cloned test case|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
-|Links and Attachments|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
-|Test configuration|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|The test configuration is reapplied in the destination test plan.|  
-|Test settings|![Topic does not apply](_img/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)|The test setting for the destination test plan is applied.|  
-|Test results|![Topic does not apply](_img/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)||  
-|Test runs and exploratory test sessions|![Topic does not apply](_img/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)|Because test runs are applicable only to the source test plan, they are not copied.|  
-|Requirements-based suites|![Topic does not apply](_img/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)<br /><br /> Without `/clonerequirements`|Requirements-based test suites are converted to static test suites in the destination test plan. Cloned test cases will be referenced under this static test suite.<br /><br /> Cloned test cases do not include links to their original requirements work items.|  
-|Requirements-based suites|![Topic applies](_img/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)<br /><br /> with `/clonerequirements`|Copied and linked to a new copy of the requirement work item.|  
+|Test case|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|Each new test case retains its shared steps.<br /><br /> A link is made between the source and new test cases.<br /><br /> The new test cases do not have test runs, bugs, test results, and build information.|  
+|Shared steps referenced by cloned test cases|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
+|Test suite|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|The following data is retained:<br /><br /> -   Names and hierarchical structure of the test suites<br />-   Order of the test cases<br />-   Assigned testers<br />-   Configurations|  
+|Action Recordings linked from a cloned test case|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
+|Links and Attachments|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)||  
+|Test configuration|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)|The test configuration is reapplied in the destination test plan.|  
+|Test settings|![Topic does not apply](media/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)|The test setting for the destination test plan is applied.|  
+|Test results|![Topic does not apply](media/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)||  
+|Test runs and exploratory test sessions|![Topic does not apply](media/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)|Because test runs are applicable only to the source test plan, they are not copied.|  
+|Requirements-based suites|![Topic does not apply](media/copying-and-cloning-test-suites-and-test-cases/doesnotapply.gif)<br /><br /> Without `/clonerequirements`|Requirements-based test suites are converted to static test suites in the destination test plan. Cloned test cases will be referenced under this static test suite.<br /><br /> Cloned test cases do not include links to their original requirements work items.|  
+|Requirements-based suites|![Topic applies](media/copying-and-cloning-test-suites-and-test-cases/doesapply.gif)<br /><br /> with `/clonerequirements`|Copied and linked to a new copy of the requirement work item.|  
 |Requirements work items (product backlog items or user stories)|with `/clonerequirements`|Requirements work items that are associated with a cloned requirements-based suite are cloned.|  
 |Bug work items<br /><br /> with `/clonerequirements`|with `/clonerequirements`|Cloned in a project that uses the Scrum process template, or any project in which the Bug work item type is in the Requirements work item category.<br /><br /> In other projects, bugs are not cloned.|  
   
 #### Example test suite cloned by using tcm.exe  
 
-![Source test plan](_img/copying-and-cloning-test-suites-and-test-cases/mtr_clonesourcetestplan.png)  
+![Source test plan](media/copying-and-cloning-test-suites-and-test-cases/mtr_clonesourcetestplan.png)  
 Source Test Plan  
 
-![Destination test plan](_img/copying-and-cloning-test-suites-and-test-cases/mtr_clonedestinationtestplan.png)  
+![Destination test plan](media/copying-and-cloning-test-suites-and-test-cases/mtr_clonedestinationtestplan.png)  
 Destination Test Plan  
   
 <a name="tcm"></a>

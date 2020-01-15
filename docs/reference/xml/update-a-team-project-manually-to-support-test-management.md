@@ -29,7 +29,7 @@ When you upgrade your existing on-premises deployment to Team Foundation Server 
   
    Data migration depends on a successful import of WIT definitions and updates. If the first activity fails, the second one will not occur. In the event that either activity is unsuccessful, the wizard logs one or more warnings or errors.  
   
-   ![TFS Upgrade Wizard showing Test Management error](_img/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
+   ![TFS Upgrade Wizard showing Test Management error](media/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
   
    When this occurs, you'll need to manually update your project. You won't be able to access existing test plans and test suites until you perform the manual updates.  
   

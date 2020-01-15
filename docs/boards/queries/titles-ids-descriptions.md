@@ -69,14 +69,14 @@ While the `Contains` operator performs a table scan, which is not only slower, b
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
-![Editor for flat list query for filtering key words](_img/example-work-item-queries/IC675039.png)   
+![Editor for flat list query for filtering key words](media/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
 
 For example, specify **Contains Words** and <strong>inform&#42;</strong> to filter on a text field that contains *inform* or *information* or *informational*. 
 
 > [!div class="mx-imgBorder"] 
-> ![Use wild card with Contains Words](_img/text-queries/contains-word-wildcard.png)
+> ![Use wild card with Contains Words](media/text-queries/contains-word-wildcard.png)
 
 [!INCLUDE [temp](../_shared/query-clause-tip.md)]
 
@@ -86,7 +86,7 @@ For example, specify **Contains Words** and <strong>inform&#42;</strong> to filt
 
 You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
 
-![Filter based on blank entries](_img/example-work-item-queries/IC736440.png)
+![Filter based on blank entries](media/example-work-item-queries/IC736440.png)
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
@@ -102,7 +102,7 @@ You can find work items where no **Description** has been entered. Using the **I
 For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
 
 > [!div class="mx-imgBorder"] 
-> ![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+> ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ For example, the following query filters will list all work items where some ent
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
-![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
+![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
 
 <a id="category"/>
 

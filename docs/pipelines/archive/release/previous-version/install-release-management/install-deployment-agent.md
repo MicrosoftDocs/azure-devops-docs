@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
 
-![Installing Release Management on TFS](_img/install-agent-01.png)
+![Installing Release Management on TFS](media/install-agent-01.png)
 
 You can install deployment agents to each of the machines that are required to 
 deploy your app with Release Management. Or you can use Windows PowerShell,
@@ -62,7 +62,7 @@ automatically added to Release Management.
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
-   ![Starting the installation of the agent](_img/install-agent-02.png)
+   ![Starting the installation of the agent](media/install-agent-02.png)
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
@@ -84,11 +84,11 @@ automatically added to Release Management.
    the agent, this must be in the form **domain\user**. Do not use the format 
    <strong>user@domain</strong>.</em>
 
-   ![Configuring the agent service account and server location](_img/install-agent-03.png)
+   ![Configuring the agent service account and server location](media/install-agent-03.png)
  
 6. Choose **Apply settings**.
 
-   ![Configuration summary page](_img/install-agent-04.png)
+   ![Configuration summary page](media/install-agent-04.png)
 
 7. After the success message appears, close the configuration summary. Repeat
    these steps as required on every computer in the environment.

@@ -25,11 +25,11 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 3. Choose **Publish** on the **Home** tab. 
 
-    <img src="_img/publish-1.png" alt="Publish Power BI Desktop file" style="border: 2px solid #C3C3C3;" /> 
+    <img src="media/publish-1.png" alt="Publish Power BI Desktop file" style="border: 2px solid #C3C3C3;" /> 
 
 4. Respond to the prompts to sign in. If you don't already have a Power BI account you will need to create one. Choose **Sign in**.
   
-     <img src="_img/publish-2.png" alt="Publishing successful" style="border: 1px solid #C3C3C3;" />
+     <img src="media/publish-2.png" alt="Publishing successful" style="border: 1px solid #C3C3C3;" />
 
 5. Choose the **Open 'file name' in Power BI** link.
 
@@ -39,23 +39,23 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 
 8. Choose the ellipsis next to the dataset that represents the report you just loaded (this is typically the file name.   
 
-     <img src="_img/publish-3.png" alt="Select the dataset" style="border: 2px solid #C3C3C3;" />
+     <img src="media/publish-3.png" alt="Select the dataset" style="border: 2px solid #C3C3C3;" />
 
 9. Choose **Schedule Refresh**.  
 
 11. Choose the **Edit credentials** link next to ODATA under Data source credentials as shown here:
 
-      <img src="_img/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
+      <img src="media/publish-4.png" alt="Update odata credentials" style="border: 1px solid #C3C3C3;" />
 
 11. Select the appropriate authentication option. 
 
 	* Use **oAuth2**  for Azure Active Directory (Azure AD) or Windows credentials.
 
-      ![Configure Areas dialog](_img/aad-auth-power-bi.png)
+      ![Configure Areas dialog](media/aad-auth-power-bi.png)
  
 	* Use **Basic** for PAT credentials.   
 
-      ![Configure Fabrikam Data dialog, Enter credentials](_img/publish-5.png)
+      ![Configure Fabrikam Data dialog, Enter credentials](media/publish-5.png)
 
       > [!IMPORTANT]  
       > If you are using a Personal Access Token, remember that the token expires on a set interval. When it expires you'll need to [update the credentials](client-authentication-options.md#update-credentials). Otherwise the report, while still displaying data, won't update with the latest data.

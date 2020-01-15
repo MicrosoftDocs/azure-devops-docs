@@ -27,27 +27,27 @@ When you [plan manual tests](../create-a-test-plan.md) there are some sequences 
  
 While you're editing a test case, select a sequence of steps that you want to share:  
   
-![Create shared steps](_img/share-steps-between-test-cases/almt_ws31createsharedsteps.png)  
+![Create shared steps](media/share-steps-between-test-cases/almt_ws31createsharedsteps.png)  
   
 The steps you selected are replaced with a link to the new shared steps work item:  
   
-![Resulting test case with a shared step.](_img/share-steps-between-test-cases/almt_ws34createsharedresult.png)  
+![Resulting test case with a shared step.](media/share-steps-between-test-cases/almt_ws34createsharedresult.png)  
   
 ## Use shared steps  
 
 Now you can use the shared steps in another test case:  
   
-![Use shared steps in test cases.](_img/share-steps-between-test-cases/almt_ws32usesharedsteps.png)  
+![Use shared steps in test cases.](media/share-steps-between-test-cases/almt_ws32usesharedsteps.png)  
   
 An Azure DevOps or TFS query opens. Run it to find the steps you want to insert:  
   
-![Run the query to find shared steps](_img/share-steps-between-test-cases/almt_ws33sharedstepquery.png)  
+![Run the query to find shared steps](media/share-steps-between-test-cases/almt_ws33sharedstepquery.png)  
   
 ## When you run a test with shared steps  
 
 When you [run a test](../run-manual-tests.md), you can either mark the whole shared sequence as passed or failed, or mark each step separately:  
   
-![Shared steps in Test Runner.](_img/share-steps-between-test-cases/almt_ws33runsharedsteps.png)  
+![Shared steps in Test Runner.](media/share-steps-between-test-cases/almt_ws33runsharedsteps.png)  
   
 ## See also
 

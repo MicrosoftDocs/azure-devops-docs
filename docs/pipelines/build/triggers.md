@@ -248,7 +248,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ::: moniker-end
 
@@ -256,7 +256,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](_img/triggers/ci-trigger-git-branches.png)
+![ci trigger git branches](media/triggers/ci-trigger-git-branches.png)
 
 ::: moniker-end
 
@@ -408,7 +408,7 @@ YAML pipelines are not yet available on TFS.
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-![Pull request trigger](_img/triggers/github-pr-validation-trigger.png)
+![Pull request trigger](media/triggers/github-pr-validation-trigger.png)
 
 You can specify branches to include and exclude.
 Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
@@ -492,11 +492,11 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
 
-![Scheduled runs menu](_img/triggers/scheduled-runs-menu.png)
+![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
 
 After you create or update your scheduled triggers, you can verify them using this view.
 
-![Scheduled runs](_img/triggers/scheduled-runs.png)
+![Scheduled runs](media/triggers/scheduled-runs.png)
 
 In this example, the scheduled runs for the following schedule are displayed.
 
@@ -651,11 +651,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
-    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 * Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
-    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -694,11 +694,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -763,11 +763,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
-    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 * Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
-    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
 ::: moniker-end
 
@@ -775,7 +775,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
@@ -783,7 +783,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones.png)
+![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
 ::: moniker-end
 
@@ -797,11 +797,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 ::: moniker-end
 
@@ -809,7 +809,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
@@ -817,7 +817,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies.png)
+![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 
@@ -834,7 +834,7 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 When developers try to check-in, they are prompted to build their changes.
 
-![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
+![Gated check-in prompt](media/triggers/tfvc-gated-check-in-prompt.png)
 
 The system then creates a shelveset and builds it.
 

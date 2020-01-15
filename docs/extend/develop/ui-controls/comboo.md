@@ -158,7 +158,7 @@ VSS.require(["VSS/Controls", "VSS/Controls/Combos"], function(Controls, Combos) 
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic list combo gif" src="_img/list_combo.gif" /> 
+<img alt="Basic list combo gif" src="media/list_combo.gif" /> 
 </div>
 
 <a name="searchTree"></a>
@@ -244,7 +244,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic tree combo gif" src="_img/tree_combo.gif" /> 
+<img alt="Basic tree combo gif" src="media/tree_combo.gif" /> 
 </div>
 
 <a name="date-time"></a>
@@ -308,7 +308,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic date time combo gif" src="_img/datetime_combo.gif" /> 
+<img alt="Basic date time combo gif" src="media/datetime_combo.gif" /> 
 </div>
 
 
@@ -378,7 +378,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic multivalue combo gif" src="_img/multivalue_combo.gif" /> 
+<img alt="Basic multivalue combo gif" src="media/multivalue_combo.gif" /> 
 </div>
 
 

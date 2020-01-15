@@ -26,27 +26,27 @@ at team or individual level, and for a specific period.
    - From the Test &amp; Feedback extension by choosing the "view" icon on 
      the **Session timeline** page.
  
-     ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)
+     ![Opening the insights page from the extension](media/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
    - From [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
-     ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
+     ![Opening the insights page](media/insights-exploratory-testing/insights-exploratory-testing-02.png)
 
 2. Explore the **Recent exploratory sessions** page. It contains three main sections:
 
    **Summary view** - shows a graphical breakdown of the work items explored, work items 
    created, session owners, and the total time for these sessions.
  
-   ![Summary view](_img/insights-exploratory-testing/insights-exploratory-testing-03.png)
+   ![Summary view](media/insights-exploratory-testing/insights-exploratory-testing-03.png)
  
    **Pivot view** - shows a collapsible nested and sortable list of items grouped in different ways. 
  
-   ![Pivot view](_img/insights-exploratory-testing/insights-exploratory-testing-03a.png)
+   ![Pivot view](media/insights-exploratory-testing/insights-exploratory-testing-03a.png)
  
    **Details view** - shows the work item selected in the Pivot
    view or a summary of information about a selection of items.
  
-   ![Details view](_img/insights-exploratory-testing/insights-exploratory-testing-03b.png)
+   ![Details view](media/insights-exploratory-testing/insights-exploratory-testing-03b.png)
 
 ## Get insights from your exploratory testing sessions:
 
@@ -61,7 +61,7 @@ app from the information collected during your exploratory testing sessions.
    - Use the **View** filter to scope the summary view to all sessions or just your own sessions.
    - Use the **Period** filter to scope the summary view to sessions in the period from the last 7 to the last 90 days.
  
-   ![Set the scope for the data](_img/insights-exploratory-testing/insights-exploratory-testing-04.png)
+   ![Set the scope for the data](media/insights-exploratory-testing/insights-exploratory-testing-04.png)
 
 1. **Pivot the data on the type of work item**.
    Pivot view lets you to focus on all the work items you created
@@ -74,7 +74,7 @@ app from the information collected during your exploratory testing sessions.
      by the session in which they were created, or by session owner.
    - Use the **Show** filter to show all items; or just bugs, tasks, or test cases.<p />  
 
-   ![Pivot the data on the type of work item](_img/insights-exploratory-testing/insights-exploratory-testing-06.png)
+   ![Pivot the data on the type of work item](media/insights-exploratory-testing/insights-exploratory-testing-06.png)
 
 1. **Get deep insights from Details view**.
    Details view gives insights into the items selected 
@@ -91,7 +91,7 @@ app from the information collected during your exploratory testing sessions.
      item and select a child bug, task, or test case to see
      the work item form for just that item.<p />
 
-   ![Get deep insights from Details view](_img/insights-exploratory-testing/insights-exploratory-testing-07.png)
+   ![Get deep insights from Details view](media/insights-exploratory-testing/insights-exploratory-testing-07.png)
 
 <a name="not-explored"></a>
 ## Discover work items not yet explored
@@ -111,25 +111,25 @@ Use a query to explore the work items that users have not yet explored.
    and the time span (from the last 7 to the last 90 days).
    Then open the **Query** list and choose **Select query**.
 
-   ![Set the View and Period filters](_img/insights-exploratory-testing/insights-exploratory-testing-08.png)
+   ![Set the View and Period filters](media/insights-exploratory-testing/insights-exploratory-testing-08.png)
 
 1. In the **Query selector** dialog, choose the shared query you created earlier.
 
-   ![Selecting the shared Query](_img/insights-exploratory-testing/insights-exploratory-testing-10.png)
+   ![Selecting the shared Query](media/insights-exploratory-testing/insights-exploratory-testing-10.png)
 
 1. View all the work items returned by the query in Summary view. You see
    a breakdown of explored and unexplored work items, work items filed, sessions, 
    and total session duration. 
 
-   ![Viewing the results in Summary view](_img/insights-exploratory-testing/insights-exploratory-testing-11.png)
+   ![Viewing the results in Summary view](media/insights-exploratory-testing/insights-exploratory-testing-11.png)
 
 1. Open the **Pivot** list and choose **Unexplored Work Item**.
 
-   ![Choosing the Unexplored Work Item option](_img/insights-exploratory-testing/insights-exploratory-testing-12.png)
+   ![Choosing the Unexplored Work Item option](media/insights-exploratory-testing/insights-exploratory-testing-12.png)
 
    The view now shows only the unexplored work items.   
 
-   ![Viewing the unexplored work items](_img/insights-exploratory-testing/insights-exploratory-testing-13.png)
+   ![Viewing the unexplored work items](media/insights-exploratory-testing/insights-exploratory-testing-13.png)
 
 ## See Also
 

@@ -38,7 +38,7 @@ With a Delivery Plan, you gain a tailor-made view across several teams and their
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
-<img src="_img/plans_move1.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
+<img src="media/plans_move1.png" alt="Interactive plan elements" style="border: 2px solid #C3C3C3;" />
 
 <a id="portfolio-backlogs">  </a>
 ## Use portfolio backlogs to track features and epics
@@ -67,10 +67,10 @@ With the multi-team portfolio backlog view, you can:
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker range=">= azure-devops-2019"
-Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics.png)   
+> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics.png)   
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -79,10 +79,10 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png).  
+Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](../backlogs/_img/multi-ownership/management-team-backlog-epics-pre-nav.png)  
+> ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
 
 > [!TIP]    
 > Add the **Node Name** field as a column to identify the area path/team associated with the work items. 
@@ -93,7 +93,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="_img/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" /> 
+<img src="media/visibility-management-team-epics.png" alt="Management teams, Epic portfolio backlog expanded" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker-end 
 
@@ -103,25 +103,25 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 
 ::: moniker range=">= azure-devops-2019"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
 
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](_img/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
 
 ::: moniker-end 
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-Items that are owned by other teams appear with an information icon, ![ ](../../_img/icons/info.png). 
+Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
    
 > [!div class="mx-imgBorder"]  
-> ![Backlog that shows parents and multi-team ownership](_img/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
+> ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   
 ::: moniker-end 
 
 ::: moniker range="<= tfs-2015" 
 Items that are owned by other teams appear with hollow-filled bars.  
 
-<img src="_img/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
+<img src="media/visibility-feature-team-backlog-show-parents.png" alt="Feature teams, Portfolio backlog with show parents" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end 
 
@@ -142,7 +142,7 @@ The two areas of most interest to management teams are project health and bug de
 
 For example, here we've added three query-based charts, one for each team, to a dashboard that shows the active and resolved bugs over the previous 4 weeks.
 
-<img src="_img/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 1px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 1px solid #C3C3C3;" />  <img src="_img/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
+<img src="media/visibility-bug-debt-email-team.png" alt="Bug debt, Email team" style="border: 1px solid #C3C3C3;" />  <img src="media/visibility-bug-debt-voice-team.png" alt="Bug debt, Voice team" style="border: 1px solid #C3C3C3;" />  <img src="media/visibility-bug-debt-web-team.png" alt="Bug debt, Web team" style="border: 2px solid #C3C3C3;" />
 
 
 When defining multi-team dashboards, consider the following:
@@ -216,7 +216,7 @@ Only when the work item state changes does the card column reflect the same on a
 
 
 <!---
-![Multi-team Kanban board view](_img/visibility-multi-team-kanban-board-features.png)
+![Multi-team Kanban board view](media/visibility-multi-team-kanban-board-features.png)
 
 With the multi-team Kanban board view, you can:
 - View and update the status of work items
@@ -231,7 +231,7 @@ Many project managers are interested in getting numeric rollup of estimates&mdas
 
 Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the taskboard.
 
-![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)
+![Rollup of remaining work](media/visibility-rollup-remaining-work.png)
 
 To learn about other methods available to you to support rollup, see [Support rollup of work and other fields](https://msdn.microsoft.com/library/dn217871.aspx).
 

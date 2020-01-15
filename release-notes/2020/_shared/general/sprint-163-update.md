@@ -14,10 +14,10 @@ We're excited to announce threaded notifications in the Microsoft Teams app for 
 Here all notifications related to a the pull request are threaded together in the Azure Repos app for Microsoft Teams.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../_img/163_01.png)
+> ![Badge](../../media/163_01.png)
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../_img/163_02.png)
+> ![Badge](../../media/163_02.png)
 
 ### Delete bulk subscriptions created in a Microsoft Teams or Slack channel
 

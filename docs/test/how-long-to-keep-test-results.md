@@ -40,7 +40,7 @@ your test results before you can analyze the data.
   
 1. In the **Test | Retention** page, select a limit for how long you want to keep manual test data. 
 
-   ![Select test data retention limits](_img/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
+   ![Select test data retention limits](media/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
 
 ## Automated test results 
 
@@ -55,11 +55,11 @@ you can specify how long to keep automated test results based on the branch.
 
 1. Go to your project. Find and edit your build pipeline.
 
-   ![Build pipeline](_img/how-long-to-keep-test-results/edit-build-def.png)
+   ![Build pipeline](media/how-long-to-keep-test-results/edit-build-def.png)
 
 1. Open the **Retention** page. Modify the default policies as required, or add new policies.
 
-   ![Delete test results by branch](_img/how-long-to-keep-test-results/vso-git-keep-test-data-builds.png)
+   ![Delete test results by branch](media/how-long-to-keep-test-results/vso-git-keep-test-data-builds.png)
 
    If you use Git, and have more than one branch, 
    set the branch filter to delete test results and builds

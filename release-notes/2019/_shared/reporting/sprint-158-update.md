@@ -12,4 +12,4 @@ From the Sprint hub select the Analytics tab. Then configure you report as follo
 2. Select to burndown on **Sum of Story Points**
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../_img/158_13.png)
+> ![Badge](../../media/158_13.png)

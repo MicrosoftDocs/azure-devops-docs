@@ -52,9 +52,9 @@ You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-wi
 
 2. Add a PowerShell build task.
 
-   ![Add task](_img/BldStepAddBegin.png)
+   ![Add task](media/BldStepAddBegin.png)
 
-   ![Add PowerShell task](_img/BldScriptPSAdd.png)
+   ![Add PowerShell task](media/BldScriptPSAdd.png)
 
 3. Drag the build task where you want it to run.
 
@@ -159,11 +159,11 @@ else
 
 Add the build task to your build pipeline.
 
-![Apply version to assemblies build task](_img/BldScriptPSExmpVerAssembliesBuildStep.png)
+![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
 
 Specify your build number with something like this:
 
-![Build number format](_img/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
 
 ```
 $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)

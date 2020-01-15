@@ -57,13 +57,13 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Policies** and from the **dropdown** next to "Enable Azure Active Directory Conditional Access Policy Validation" select **On**.
 
-   ![Select Policies, and then turn On](_img/_shared/enable-conditional-access-policy-preview.png)
+   ![Select Policies, and then turn On](media/_shared/enable-conditional-access-policy-preview.png)
 
 #### [Current page](#tab/current-page)
 
@@ -72,13 +72,13 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
 
-   ![Select policy, and then turn On](_img/_shared/enable-conditional-access-policy.png)
+   ![Select policy, and then turn On](media/_shared/enable-conditional-access-policy.png)
 
 * * *
 
