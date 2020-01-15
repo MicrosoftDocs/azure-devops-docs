@@ -33,7 +33,7 @@ You can use the Task Progress report to track how much work the team has complet
 
  You can use the Task Progress report to track how much work remains to be completed. This report is based on a PivotChart report that shows the last four weeks of data that is captured for Tasks and that is stored in the data warehouse.  
   
- ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")  
+ ![Task Progress Excel Report](media/procguid_exceltask.png "ProcGuid_ExcelTask")  
   
 ### Required activities for tracking tasks  
 

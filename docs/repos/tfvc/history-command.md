@@ -291,16 +291,16 @@ Displays the most recent change to the SolutionA folder in the command prompt wi
 
 ## Tips
 
--   ![Tip](_img/history-command/IC572374.png) For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
+-   ![Tip](media/history-command/IC572374.png) For information about how to use the **History** window, see [Get the history of an item](get-history-item.md).
 
--   ![Tip](_img/history-command/IC572374.png) To get more detailed information about a changeset (for example, you want to see associated work items):
+-   ![Tip](media/history-command/IC572374.png) To get more detailed information about a changeset (for example, you want to see associated work items):
 
     -   In the History window, double-click the changeset or open its context menu and choose **Changeset Details**.
 
     -   From the command prompt, use the [Changeset Command](changeset-command.md).
 
--   ![Tip](_img/history-command/IC572374.png) For more information about changesets, see [Find and view changesets](find-view-changesets.md).
+-   ![Tip](media/history-command/IC572374.png) For more information about changesets, see [Find and view changesets](find-view-changesets.md).
 
--   ![Tip](_img/history-command/IC572374.png) The **/collection** option is useful for running this command from a machine and user account that does not have a workspace mapped to the Project Collection that contains the items.
+-   ![Tip](media/history-command/IC572374.png) The **/collection** option is useful for running this command from a machine and user account that does not have a workspace mapped to the Project Collection that contains the items.
 
--   ![Tip](_img/history-command/IC572374.png) See [View and manage past versions](view-manage-past-versions.md).
+-   ![Tip](media/history-command/IC572374.png) See [View and manage past versions](view-manage-past-versions.md).

@@ -46,11 +46,11 @@ A: If you're a new user, you can change your profile details. You need to do thi
 
 1.	Confirm your profile details.
 
-	![Confirm profile details](_img/sign-up-visual-studio-team-services/create-profile-msa.png)
+	![Confirm profile details](media/sign-up-visual-studio-team-services/create-profile-msa.png)
 
 1.	Continue creating your organization.
 
-	![Create your organization](_img/sign-up-visual-studio-team-services/my-info-new-organization.png)
+	![Create your organization](media/sign-up-visual-studio-team-services/my-info-new-organization.png)
 
 <a name="organization-location"></a>
 
@@ -72,7 +72,7 @@ There's no limit to the number of organizations that you can join.
 
 A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-![Create your organization](_img/sign-up-visual-studio-team-services/my-info-organization-list.png)
+![Create your organization](media/sign-up-visual-studio-team-services/my-info-organization-list.png)
 
 <a name="another-team-project"></a>
 

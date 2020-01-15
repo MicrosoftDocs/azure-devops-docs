@@ -93,7 +93,7 @@ As discussed above, we expect to add additional rate limits over time. And we al
 
 When an individual user's requests are delayed by a significant amount, an email will be sent to that user and a warning banner will appear in the Web UI.  
 
-![Web UI warning banner](./_img/rate-limits/web-ui-warning-banner.png)
+![Web UI warning banner](./media/rate-limits/web-ui-warning-banner.png)
 
 If the user does not have an email address - for example, if the "user" is actually a build service account - the notification email will be sent to the members of the project collection 
 administrators group. The warning banner and the notification email both include links to the Usage page, which can be used to investigate the usage that exceeded our thresholds, as well 
@@ -106,13 +106,13 @@ For members of the project collection administrators group, this same page can b
 
 ::: moniker range=">= azure-devops-2019"
 
-   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca-newnav.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-   <img alt="Usage page for collection administrators" src="./_img/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Usage page for collection administrators" src="./media/rate-limits/usage-pca.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ By default, visiting the Usage page will display requests for the last hour. Cli
 30 minutes before and after the first delayed request. By default, the Usage page will default to showing the past hour. After arriving on the page, review the 
 request history leading up to delayed requests.
 
-<img alt="Usage page TSTU investigation" src="./_img/rate-limits/usage-tstu.png" style="border: 1px solid #CCCCCC" />
+<img alt="Usage page TSTU investigation" src="./media/rate-limits/usage-tstu.png" style="border: 1px solid #CCCCCC" />
 
 Commands consuming a high number of TSTUs (in the hundreds, for example) will be the ones responsible for the user exceeding the threshold. The User Agent and IP address columns can be helpful to see where these commands 
 are coming from. Common problems to look for are custom tools or build service accounts that might be making a large amount of calls in a short time window. To avoid these types of issues,

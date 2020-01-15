@@ -11,7 +11,7 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 1. Save the file, push/check-in the changes to the project:
     * If you're using Git in Visual Studio, click the changes icon on the status bar:
 
-        ![Location of the changes button on the Visual Studio status bar](./_img/commit-change-in-vs.png)
+        ![Location of the changes button on the Visual Studio status bar](./media/commit-change-in-vs.png)
 
         Then enter a commit message, click **Commit All**, click the **Sync** link, then click **Outgoing Commits > Push**. This will push the changes to a repository in Azure Repos.
 
@@ -20,10 +20,10 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 1. Once the push/check-in is complete, switch to Azure Pipelines in your browser.
 1. Navigate to **Builds** and click on your build pipeline. You should see a build in progress:
 
-    ![A continuous integration build running in Azure Pipelines](./_img/ci-build-running.png)
+    ![A continuous integration build running in Azure Pipelines](./media/ci-build-running.png)
 
 1. When the build has completed, navigate to **Releases** and you should see that a release has started for that build:
 
-    ![A continuous deployment release running in Azure Pipelines](./_img/cd-release-running.png)
+    ![A continuous deployment release running in Azure Pipelines](./media/cd-release-running.png)
 
 1. When the release has completed, browse to your web site, refresh the page, and see that the change has been deployed.

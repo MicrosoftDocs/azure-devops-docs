@@ -35,8 +35,8 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 You'll see two types of processes:
 
-- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
-- ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
+- ![locked icon](media/process/locked-icon.png) System processes &mdash;[Agile, Basic, Scrum, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
+- ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
 
 ::: moniker range="azure-devops-2019"
 
@@ -52,7 +52,7 @@ Once you've created an inherited process, you can customize it, create projects 
 For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
-> ![Admin context, Organization settings, Project list and the process they use](_img/process/projects-list.png)
+> ![Admin context, Organization settings, Project list and the process they use](media/process/projects-list.png)
 
 
 <a id="process-naming"></a>
@@ -88,22 +88,22 @@ Each inherited process you create inherits the WITs defined in the system proces
 
 #### [Agile process](#tab/agile-process) 
 
-![Agile work item types](../../../boards/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
+![Agile work item types](../../../boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)
 
 #### [Basic process](#tab/basic-process) 
 
-![Basic process work item hierarchy](../../../boards/get-started/_img/track-issues/basic-process-epics-issues-tasks.png)
+![Basic process work item hierarchy](../../../boards/get-started/media/track-issues/basic-process-epics-issues-tasks.png)
 
 > [!NOTE]  
 > The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
 
 #### [Scrum process](#tab/scrum-process) 
 
-![Scrum work item types](../../../boards/work-items/guidance/_img/ALM_PT_Scrum_WIT_Artifacts.png)
+![Scrum work item types](../../../boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)
 
 #### [CMMI process](#tab/cmmi-process) 
 
-![CMMI work item types](../../../boards/work-items/guidance/_img/ALM_PT_CMMI_WIT_Artifacts.png)
+![CMMI work item types](../../../boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)
 
 * * * 
 
@@ -114,7 +114,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 ## Field customizations 
 
-Fields defined in the system process appear with an ![ ](_img/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
+Fields defined in the system process appear with an ![ ](media/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
 Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process. 
 
@@ -127,7 +127,7 @@ Fields are defined for all projects and processes in the organization. That mean
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
 <td>
 <ul>
 <li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
@@ -170,7 +170,7 @@ Fields are defined for all projects and processes in the organization. That mean
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited fields</td>
 <td>
 <ul>
 <li><a href="customize-process-field.md#rename-field">Change the field label</a></li>
@@ -319,7 +319,7 @@ Here are your customization options for inherited and custom WITs.
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited WITs </td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited WITs </td>
 <td>
 <ul>
 <li><a href="custom-rules.md" data-raw-source="[Add custom rules to a WIT](custom-rules.md)">Add custom rules to a WIT</a></li>
@@ -366,7 +366,7 @@ You can make the following customizations to a WIT form.
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited groups  </td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited groups  </td>
 <td>
 <ul>
 <li><a href="customize-process-form.md#groups" data-raw-source="[Relabel](customize-process-form.md#groups)">Relabel</a></li>
@@ -386,7 +386,7 @@ You can make the following customizations to a WIT form.
 </td>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited pages  </td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited pages  </td>
 <td>
 <ul>
 <li><a href="customize-process-form.md#pages" data-raw-source="[Relabel](customize-process-form.md#pages)">Relabel</a></li>
@@ -414,7 +414,7 @@ You can make the following customizations to a WIT form.
 
 The web form layout is organized into three columns as shown in the image below. 
 
-![3-column page layout](_img/process/cpform-3-column-layout.png)
+![3-column page layout](media/process/cpform-3-column-layout.png)
 
 If you only add groups and fields to the first two columns, then the layout reflects a two-column layout. Likewise, if you only add groups and fields to the first column, then the layout reflects a one-column layout. 
 
@@ -441,7 +441,7 @@ You can customize the workflow of any WIT by hiding inherited states or adding c
 <th width="65%">Customization support</th>
 </tr>
 <tr>
-<td><img src="_img/process/inherited-icon.png" alt="Inherited icon"/> Inherited states   </td>
+<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited states   </td>
 <td>
 <ul>
 <li><a href="customize-process-workflow.md#hide-state" data-raw-source="[View workflow states](customize-process-workflow.md#hide-state)">View workflow states</a></li>
@@ -514,7 +514,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 
 When you change the default WIT for a backlog level, it causes that WIT to appear by default in the quick add panel. For example, *Customer Ticket* appears by default in the following quick add panel for the product backlog. 
 
-<img src="_img/process/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
 
 
 **What you can't customize**  

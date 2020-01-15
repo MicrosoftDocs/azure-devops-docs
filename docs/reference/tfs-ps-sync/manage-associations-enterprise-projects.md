@@ -71,7 +71,7 @@ ms.date: 01/12/2017
 ##  <a name="MapPlanToProject"></a> Associate an enterprise project plan with a project  
  You can map an enterprise project plan to a project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
- ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
+ ![Associate enterprise projects with a project](media/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
   
 #### To map an enterprise project plan to a project  
   

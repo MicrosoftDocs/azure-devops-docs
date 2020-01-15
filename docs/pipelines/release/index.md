@@ -36,7 +36,7 @@ You can **fully automate** the testing and delivery of your software
 in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
-![A release pipeline defines the stages for deployment](_img/what-is-release-management/understand-rm-01.1.png)
+![A release pipeline defines the stages for deployment](media/what-is-release-management/understand-rm-01.1.png)
 
 * **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
 
@@ -48,7 +48,7 @@ semi-automated processes with **approvals** and **on-demand deployments**.
 Release pipelines store the data about your pipelines,
 stages, tasks, releases, and deployments in Azure Pipelines or TFS.
 
-![Azure release pipeline components](_img/what-is-release-management/understand-rm-05.png)
+![Azure release pipeline components](media/what-is-release-management/understand-rm-05.png)
 
 Azure Pipelines runs the following steps as part of every deployment:
 
@@ -102,7 +102,7 @@ You define the **release pipeline** using [stages](../process/stages.md), and re
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
-![Artifacts in a pipeline and release](_img/definition-01.png)
+![Artifacts in a pipeline and release](media/definition-01.png)
 
 [What's the difference between a release pipeline and a release?](releases.md)
 
@@ -113,7 +113,7 @@ and then forked to two QA stages in parallel. If the deployment succeeds in both
 
 An example of how deployment automation can be modeled within a stage is shown below:
 
-![Artifacts in a pipeline and release](_img/definition-02.png)
+![Artifacts in a pipeline and release](media/definition-02.png)
 
 In this example, a [job](../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1.
 After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
@@ -152,15 +152,15 @@ The changes apply only to that release, and do not affect the settings of the or
 
 Create a draft release using the "..." ellipses link in the list of releases:
 
-![Create a draft release in the list of releases](_img/what-is-release-management/draft-release.png)
+![Create a draft release in the list of releases](media/what-is-release-management/draft-release.png)
 
 ... or the **Release** drop-down in the pipeline definition page: 
 
-![Create a draft release in the pipeline definition page](_img/what-is-release-management/new-draft-release.png)
+![Create a draft release in the pipeline definition page](media/what-is-release-management/new-draft-release.png)
 
 After you finish editing the draft release, choose **Start** from the draft release toolbar. 
 
-![Start a draft release](_img/what-is-release-management/start-draft.png)
+![Start a draft release](media/what-is-release-management/start-draft.png)
 
 ::: moniker-end
 
@@ -170,11 +170,11 @@ After you finish editing the draft release, choose **Start** from the draft rele
 In the **Variables** tab of a release pipeline, when you add new variables, set the **Settable at release time** option for those
 you want to be able to edit when a release is created and queued.
 
-![Specifying variables to be edited when a release is created and queued](_img/what-is-release-management/define-release-edit-variables.png)
+![Specifying variables to be edited when a release is created and queued](media/what-is-release-management/define-release-edit-variables.png)
 
 Then, when you create a new release, you can edit the values for these variables.
 
-![Editing variables when a release is created and queued](_img/what-is-release-management/populate-release-edit-variables.png)
+![Editing variables when a release is created and queued](media/what-is-release-management/populate-release-edit-variables.png)
 
 <a name="reportstatus"></a>
 ## How do I integrate and report release status?
@@ -182,7 +182,7 @@ Then, when you create a new release, you can edit the values for these variables
 The current status for a release can be reported back in the source repository.
 In the **Options** tab of a release pipeline, open the **Integrations** page.
 
-![Setting the options for reporting status](_img/what-is-release-management/report-options.png)
+![Setting the options for reporting status](media/what-is-release-management/report-options.png)
 
 **Report deployment status to the repository host**
 
@@ -249,7 +249,7 @@ If you do not intend to reuse the release, or want to prevent it being used to r
 you can abandon the release using the shortcut menu that opens from the ellipses (**...**) icon in the
 **Pipeline** view of the pipeline.
 
-![Abandoning a release](_img/what-is-release-management/abandon-release.png)
+![Abandoning a release](media/what-is-release-management/abandon-release.png)
 
 Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
 
@@ -259,7 +259,7 @@ Note that you cannot abandon a release when a deployment is in progress, you mus
 After a release is triggered and completed, you may want to email the summary to stakeholders.
 Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
 
-![Emailing a release summary](_img/what-is-release-management/email-release-summary.png)
+![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
 
 In the **Send release summary mail** window you can further customize the information to be sent in the email
 by selecting only certain sections of the release summary.

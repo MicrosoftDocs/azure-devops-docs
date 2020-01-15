@@ -134,7 +134,7 @@ For information about the syntax structure of the elements used to add Web conte
 <a name="Verify"></a> 
 ## Verify the Web page or HTML content appears in the form  
   
-1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the **Work Items** node is refreshed. Nodes that are still loading display the word **working**.  
   

@@ -26,23 +26,23 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./_img/add-devops-service-hook.png)
+	![Project administration page](./media/add-devops-service-hook.png)
 
 	Select **Create Subscription**.
 
 1.  Select and configure the Azure DevOps Services event:
 
-	![Configure the event dialog box](./_img/webhooks/configure-event.png)
+	![Configure the event dialog box](./media/webhooks/configure-event.png)
 
 1. Configure what to do when the event occurs:
 
 	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
-	![Configure the action dialog box](./_img/webhooks/configure-action.png)
+	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
 1. Test the service hook subscription and finish the wizard:
 
-	![Test it](./_img/webhooks/test.png)
+	![Test it](./media/webhooks/test.png)
 
 ::: moniker-end
 
@@ -52,29 +52,29 @@ For more information about the JSON payloads posted by this consumer, see [event
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./_img/add-service-hook.png)
+	![Project administration page](./media/add-service-hook.png)
 
 	Select **Create Subscription**.
 
 1.  Select and configure the Azure DevOps Services event:
 
-	![Configure the event dialog box](./_img/webhooks/configure-event.png)
+	![Configure the event dialog box](./media/webhooks/configure-event.png)
 
 1. Configure what to do when the event occurs:
 
 	See Q & A below for information on the **Resource details to send**, **Messages to send**, and **Detailed messages to send** settings.
 
-	![Configure the action dialog box](./_img/webhooks/configure-action.png)
+	![Configure the action dialog box](./media/webhooks/configure-action.png)
 
 1. Test the service hook subscription and finish the wizard:
 
-	![Test it](./_img/webhooks/test.png)
+	![Test it](./media/webhooks/test.png)
 
 ::: moniker-end
 
 Now the Web hook is set up. Go to the target service to view the JSON representation:
 
-![View the JSON representation](./_img/webhooks/request-bin.png)
+![View the JSON representation](./media/webhooks/request-bin.png)
 
 
 ## Pricing

@@ -61,19 +61,19 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Boards>Sprints>Backlog](../work-items/_img/view-add/view-sprint-backlogs.png)    
+> ![Boards>Sprints>Backlog](../work-items/media/view-add/view-sprint-backlogs.png)    
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ["Web portal, choose Boards>Backlogs, Sprint](../work-items/_img/view-add/view-sprint-backlog.png)
+> ["Web portal, choose Boards>Backlogs, Sprint](../work-items/media/view-add/view-sprint-backlog.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-![Boards>backlogs, TFS 2015, 2013 web portal](_img/IC795962.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](media/IC795962.png)
 ::: moniker-end
 
 ## How selected sprints show up on the backlog
@@ -84,10 +84,10 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 ::: moniker range=">= azure-devops-2019"
 
-1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. You can gain an overview of your sprint planning by turning the **Planning** view option on. From the product backlog or any sprint backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Backlogs>Planning pane](_img/overview/sprints-new-nav.png)
+	> ![Boards>Backlogs>Planning pane](media/overview/sprints-new-nav.png)
 
 	> [!NOTE]   
 	> The Planning pane will only show the current sprint and the next 10 future sprints in the list, even if more have been selected for the team. 
@@ -97,7 +97,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 1. To select a sprint backlog, you can choose one of the sprint links from the **Planning** pane, or from a Sprint backlog, choose a sprint from the sprint selector.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Boards>Sprints>Sprint selector](_img/overview/select-a-sprint-new-nav.png)
+	> ![Boards>Sprints>Sprint selector](media/overview/select-a-sprint-new-nav.png)
 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="media/define-sprints/selected-team-iterations-vsts.png" alt="Azure Boards and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end  
 
@@ -115,7 +115,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access to four sprint backlogs. They also get access to capacity planning tools and a taskboard for each sprint.  
 
-<img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="media/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end  
 

@@ -29,11 +29,11 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
    gpg --full-generate-key
    ```
    
-   ![Generate Key](_img/helm-provenance/generate-key.png)
+   ![Generate Key](media/helm-provenance/generate-key.png)
 
 3. You'll be prompted for the passphrase. Give the value and click ok.
 
-   ![Passphrase](_img/helm-provenance/passphrase.png)
+   ![Passphrase](media/helm-provenance/passphrase.png)
 
 4. After creating the key, you can see the list of keys which contains both private and public using the following command.
 
@@ -43,7 +43,7 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
      gpg --list-secret-keys
      ```
 
-     ![Private Keys](_img/helm-provenance/privatekeys.png)
+     ![Private Keys](media/helm-provenance/privatekeys.png)
 
      - To see the list of public keys
 
@@ -51,7 +51,7 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
        gpg --list-keys
        ```
 
-       ![Public Keys](_img/helm-provenance/publickeys.png)
+       ![Public Keys](media/helm-provenance/publickeys.png)
 
 5. Store the private and public keys in 2 different files with the extension **gpg** as shown below.
 

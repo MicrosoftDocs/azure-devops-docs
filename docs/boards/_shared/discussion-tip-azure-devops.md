@@ -8,20 +8,20 @@ ms.topic: include
 Use the **Discussion** section to add and review comments made about the work being performed. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section within a work item form](/azure/devops/boards/backlogs/_img/discussion-section.png)   
+> ![Discussion section within a work item form](/azure/devops/boards/backlogs/media/discussion-section.png)   
 
 
 The rich text editor tool bar displays below the text entry area when you click your cursor within each text box that can be formatted. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/_img/share-plans/discussion-rich-text-editor-toolbar.png)  
+> ![Discussion section, New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/discussion-rich-text-editor-toolbar.png)  
 
-### Mention someone, a group, work item, or pull request (![ ](/azure/devops/_img/icons/at-mention.png), ![ ](/azure/devops/_img/icons/work-id.png), or ![pull-request id icon](/azure/devops/_img/icons/pr-id.png))
+### Mention someone, a group, work item, or pull request (![ ](/azure/devops/media/icons/at-mention.png), ![ ](/azure/devops/media/icons/work-id.png), or ![pull-request id icon](/azure/devops/media/icons/pr-id.png))
 
-Choose one of these icons &mdash;![ ](/azure/devops/_img/icons/at-mention.png), ![ ](/azure/devops/_img/icons/work-id.png), or ![pull-request id icon](/azure/devops/_img/icons/pr-id.png)&mdash; to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or, you can simply type <strong>@</strong>, <strong>#</strong>, or <strong>!</strong> to open the same menu.   
+Choose one of these icons &mdash;![ ](/azure/devops/media/icons/at-mention.png), ![ ](/azure/devops/media/icons/work-id.png), or ![pull-request id icon](/azure/devops/media/icons/pr-id.png)&mdash; to open a menu of recent entries you've made to mention someone, link to a work item, or link to a pull request. Or, you can simply type <strong>@</strong>, <strong>#</strong>, or <strong>!</strong> to open the same menu.   
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, @mention drop-down menu](/azure/devops/boards/_shared/_img/discussion-at-mention.png)
+> ![Discussion section, @mention drop-down menu](/azure/devops/boards/_shared/media/discussion-at-mention.png)
 
 
 
@@ -36,10 +36,10 @@ Type a name, or enter a number and the menu list will filter to match your entry
 
 ### Edit or delete a comment 
 
-If you need to edit or delete any of your discussion comments, choose ![ ](/azure/devops/_img/icons/edit.png) <strong>Edit</strong> or choose the ![ ](/azure/devops/_img/icons/actions-icon.png) actions icon and then choose <strong>Delete</strong>. 
+If you need to edit or delete any of your discussion comments, choose ![ ](/azure/devops/media/icons/edit.png) <strong>Edit</strong> or choose the ![ ](/azure/devops/media/icons/actions-icon.png) actions icon and then choose <strong>Delete</strong>. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, Edit, Delete actions](/azure/devops/boards/_shared/_img/discussion-edit-delete.png)  
+> ![Discussion section, Edit, Delete actions](/azure/devops/boards/_shared/media/discussion-edit-delete.png)  
 
 ::: moniker range="azure-devops-2019"  
 
@@ -61,7 +61,7 @@ A full audit trail of all  edited and deleted comments is maintained in the <str
 You can add one or more reactions to any comment. Choose a smiley icon at the upper-right corner of any comment or choose from the icons at the bottom of a comment next to any existing reactions. To remove your reaction, click the reaction on the bottom of your comment. The following shows an example of the experience of adding a reaction, as well as the display of reactions on a comment.
 
 > [!div class="mx-imgBorder"]  
-> ![Add reactions to a comment](/azure/devops/release-notes/2019/_img/156_09.png)  
+> ![Add reactions to a comment](/azure/devops/release-notes/2019/media/156_09.png)  
 
 ::: moniker-end 
 

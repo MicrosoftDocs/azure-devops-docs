@@ -96,13 +96,13 @@ For information about viewing gate results and logs, see
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period and three sampling intervals, the deployment is approved.
 
-![Successful gates](_img/gate-results-pass.png)
+![Successful gates](media/gate-results-pass.png)
 
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period, not all gates have succeeded at each sampling interval. In
 this case, after the timeout period expires, the deployment is rejected.
 
-![Failed gates](_img/gate-results-fail.png)
+![Failed gates](media/gate-results-fail.png)
 
 
 ## Video 

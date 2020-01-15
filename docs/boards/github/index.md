@@ -28,7 +28,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 If you haven't yet signed up for Azure Boards, you can do that now. See [Sign up for free and invite others to collaborate on your project](../get-started/sign-up-invite-teammates.md). You can also sign up and sign in using your GitHub credentials. 
 
 > [!div class="mx-imgBorder"]  
-> ![GitHub signin](_img/sign-in.png)   
+> ![GitHub signin](media/sign-in.png)   
 
 In addition to accessing developer services such as Azure DevOps and Azure, you can use your GitHub account to access all Microsoft online services, from Excel Online to Xbox.
 

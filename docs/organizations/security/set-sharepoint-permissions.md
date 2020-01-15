@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
 2.  Choose **Share**, and add users or user groups to the appropriate SharePoint groups.
 
-    ![Choose the SharePoint group and add users](../accounts/_img/add-users-team-project/invite-people.png)
+    ![Choose the SharePoint group and add users](../accounts/media/add-users-team-project/invite-people.png)
 
     -   To add users who require minimal access to the project, choose **Readers**.
     -   To add users who contribute fully to this project, choose **Contributors**.
@@ -53,6 +53,6 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/_img/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/media/add-administrator-tfs/people-and-groups.png)
 
 

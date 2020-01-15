@@ -49,7 +49,7 @@ A: The following permissions are required:
 
 A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permissions, complete the following steps:
 
-1. From the team page, select the settings icon ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
+1. From the team page, select the settings icon ![Settings icon](media/admin-gear-icon.png) to go to the team administration page.
 
 2. Add the user to the **Project Administrators** group.
 

@@ -55,7 +55,7 @@ This error occurs when you try to refresh a view in Power BI that is no longer a
 - Your permissions to access the view were explicitly removed
 - The view has been modified from a **Shared** view to a **Private** view.  
 
-![Refresh fail - view does not exists](_img/editable-views/pbi-refresh-fail.png)
+![Refresh fail - view does not exists](media/editable-views/pbi-refresh-fail.png)
 
 To resolve this issue, check that you can access the view in Azure DevOps and that you have [permission to use the view](analytics-views-manage.md#manage-permissions).  
 

@@ -37,19 +37,19 @@ SharePoint web parts display TFS data such as work item summary, recent builds, 
 
 **TFS web parts - summary lists**
 
-![TFS SharePoint Web Parts](./_img/sharepointwebparts.png)
+![TFS SharePoint Web Parts](./media/sharepointwebparts.png)
 
 **TFS web parts - query-based lists**
 
-![TFS SharePoint Web Parts - Query lists](./_img/sharepointwebparts-query-lists.png)
+![TFS SharePoint Web Parts - Query lists](./media/sharepointwebparts-query-lists.png)
 
 After upgrading to TFS 2018 or to SharePoint 2016, your TFS SharePoint sites will look something like this:
 
-![Discontinued Features as part of disabling SharePoint integration - SharePoint Site After upgrade](./_img/sharepoint-2016-upgrade-after-upgrade-site-example.png)
+![Discontinued Features as part of disabling SharePoint integration - SharePoint Site After upgrade](./media/sharepoint-2016-upgrade-after-upgrade-site-example.png)
 
 Azure DevOps Services and TFS offer [built-in dashboards](../../dashboards.md). Each Azure DevOps Services and TFS team can create any number of dashboards to meet their needs. Here is an example:
 
-![TFS/Azure DevOps Services dashboards](./_img/tfsdashboard.jpg)
+![TFS/Azure DevOps Services dashboards](./media/tfsdashboard.jpg)
 
 We will continue to invest in our built-in dashboards solution. We continue to develop widgets to provide instant insights into your data. Additionally, you can find widgets developed by our partners in the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance). 
 
@@ -105,7 +105,7 @@ If you have [configured a SharePoint site for a team project](../../../report/sh
 
 Going forward, the Documents pane within Team Explorer will no longer be supported. 
 
-![Team Explorer Documents Pane](./_img/documentspane.png)
+![Team Explorer Documents Pane](./media/documentspane.png)
 
 We encourage customers to use [the OneDrive for Business sync client](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49), which works for both [SharePoint 2016](https://technet.microsoft.com/library/dn232145(v=office.16).aspx) and SharePoint Online. The OneDrive for Business sync client lets you select any SharePoint document library and sync the files to your local computer. The user can edit the files using Windows File Explorer, and changes are synced back to SharePoint. 
 
@@ -116,11 +116,11 @@ Additionally, if you are using [Microsoft Teams](https://products.office.com/mic
 ## Project portal settings
 Project portal settings that you configure from the Team Explorer pane allow you to configure the Project Portal link. It could point to a SharePoint site or any Web site. After disabling SharePoint integration, you will not be able to specify a SharePoint site. The Project Portal link only appeared on the Documents Pane. 
 
-![Discontinued Features as part of disabling SharePoint integration - Project Portal Settings](./_img/discontinued-features-project-portal-settings.png)
+![Discontinued Features as part of disabling SharePoint integration - Project Portal Settings](./media/discontinued-features-project-portal-settings.png)
 
 ## Process guidance settings
 Additionally, you could define the location of Process Guidance as a SharePoint site or any Web site. After disabling SharePoint integration, you will not be able to specify a SharePoint site. The Process Guidance link was used by Quick Links on the TFS SharePoint site. You may want to remove those links from your SharePoint sites or replace them with a hyperlink to your process guidance. 
 
-![Discontinued Features as part of disabling SharePoint integration - Process Guidance Settings](./_img/discontinued-features-process-guidance-settings.png)
+![Discontinued Features as part of disabling SharePoint integration - Process Guidance Settings](./media/discontinued-features-process-guidance-settings.png)
 
 

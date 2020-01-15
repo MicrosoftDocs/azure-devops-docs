@@ -15,15 +15,15 @@ ms.topic: include
   
 2. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](_img/my-profile-team-services-preview.png)
+   ![My profile Team Services](media/my-profile-team-services-preview.png)
 
 3. Under Security, select Personal access tokens, and then select **+ New Token**.
 
-   ![Select New Token to create](_img/select-new-token.png)
+   ![Select New Token to create](media/select-new-token.png)
 
 4. Name your token, select the organization where you want to use the token, and then choose a lifespan for your token.
 
-   ![Enter basic token information](_img/create-new-pat.png)
+   ![Enter basic token information](media/create-new-pat.png)
 
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
@@ -31,11 +31,11 @@ ms.topic: include
    For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, 
    limit your token's scope to **Agent Pools (Read & manage)**. To read audit log events, and manage and delete streams, select **Read Audit Log**, and then select **Create**. 
 
-   ![Select scopes for your PAT](_img/select-pat-scopes-preview.png)
+   ![Select scopes for your PAT](media/select-pat-scopes-preview.png)
 
 6. When you're done, make sure to copy the token. You'll use this token as your password.
 
-   ![Copy the token to your clipboard](_img/copy-token-to-clipboard.png)
+   ![Copy the token to your clipboard](media/copy-token-to-clipboard.png)
 
 #### [Current page](#tab/current-page) 
 
@@ -43,15 +43,15 @@ ms.topic: include
   
 2. From your home page, open your profile. Go to your security details.
 
-   ![My profile Team Services](_img/my-profile-team-services.png)
+   ![My profile Team Services](media/my-profile-team-services.png)
 
 3. Select **+ New Token**.
 
-   ![Select New Token to create](_img/select-new-token.png)
+   ![Select New Token to create](media/select-new-token.png)
 
 4. Name your token, select the organization where you want to use the token, and then choose a lifespan for your token.
 
-   ![Enter basic token information](_img/create-new-pat.png)
+   ![Enter basic token information](media/create-new-pat.png)
 
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
@@ -59,11 +59,11 @@ ms.topic: include
    For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to Azure DevOps Services, 
    limit your token's scope to **Agent Pools (Read & manage)**, and then select **Create**. 
 
-   ![Select scopes for your PAT](_img/select-pat-scopes.png)
+   ![Select scopes for your PAT](media/select-pat-scopes.png)
 
 6. When you're done, make sure to copy the token. You'll use this token as your password.
 
-   ![Copy the token to your clipboard](_img/copy-token-to-clipboard.png)
+   ![Copy the token to your clipboard](media/copy-token-to-clipboard.png)
 
 ::: moniker-end
 
@@ -73,18 +73,18 @@ ms.topic: include
 
 2. From your home page, open your profile. Go to your security details.
 
-   ![TFS home page, open your profile, go to Security](_img/my-profile-team-services.png)
+   ![TFS home page, open your profile, go to Security](media/my-profile-team-services.png)
 
 3. Create a personal access token.
 
-   ![Add a personal access token](_img/add-personal-access-token.png)
+   ![Add a personal access token](media/add-personal-access-token.png)
 
 4. Name your token. Select a lifespan for your token.
 
    If you're using Azure DevOps Services, and you have more than one organization,
    you can also select the organization where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="/azure/devops/repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="/azure/devops/repos/git/_shared/media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
@@ -94,7 +94,7 @@ ms.topic: include
 
 6. When you're done, make sure to *copy the token*. You'll use this token as your password. Select **Close**.
 
-   <img alt="Use a token as the password for your Git tools or apps" src="/azure/devops/repos/git/_shared/_img/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Use a token as the password for your Git tools or apps" src="/azure/devops/repos/git/_shared/media/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -133,25 +133,25 @@ When you don't need your token anymore, just revoke it to remove access.
 
 1. From your home page, open your user settings, and then select **Profile**.
 
-   ![My profile Team Services](_img/my-profile-team-services-preview.png)
+   ![My profile Team Services](media/my-profile-team-services-preview.png)
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 
-   ![Revoke a token or all tokens](/../../repos/git/_shared/_img/revoke-personal-access-tokens-preview.png)
+   ![Revoke a token or all tokens](/../../repos/git/_shared/media/revoke-personal-access-tokens-preview.png)
 
 3. Select Revoke in the confirmation dialog.
 
-   ![Confirm revoke](_img/revoke-token-confirmation-dialog-preview.png)
+   ![Confirm revoke](media/revoke-token-confirmation-dialog-preview.png)
 
 #### [Current page](#tab/current-page) 
 
 1. From your home page, open your profile. Go to your security details.
 
-   ![Go to the organization home page, open your profile, go to Security](_img/my-profile-team-services.png)  
+   ![Go to the organization home page, open your profile, go to Security](media/my-profile-team-services.png)  
 
 2. Revoke access.
    
-   <img alt="Revoke a token or all tokens" src="/azure/devops/repos/git/_shared/_img/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Revoke a token or all tokens" src="/azure/devops/repos/git/_shared/media/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 

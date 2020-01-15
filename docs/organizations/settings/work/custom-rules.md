@@ -55,7 +55,7 @@ As an example, you can make a field required based on the value assigned to the 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](_img/rules/when-condition-2.png) | ![list of actions](_img/rules/rule-actions.png)
+> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions.png)
 
 > [!NOTE]  
 > "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
@@ -68,7 +68,7 @@ As an example, you can make a field required based on the value assigned to the 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](_img/rules/when-condition-1.png) | ![list of actions](_img/rules/rule-actions.png)
+> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions.png)
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ You add fields to a selected work item type.
 1.  Select the WIT to which you want to add a rule, choose **Rules**, and then choose **New rule**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Process, WIT, Bug, Layout, New rule](_img/rules/custom-rule-create-rule.png)
+    > ![Process, WIT, Bug, Layout, New rule](media/rules/custom-rule-create-rule.png)
 
     If you can't fill out the New work item rule dialog, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
@@ -99,7 +99,7 @@ You add fields to a selected work item type.
 
     Here we define that the **Acceptance Criteria** field is required when the **State** changes to **Active** and it is currently empty.
 
-    <img src="_img/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
+    <img src="media/process/custom-rule-create-rule-form.png" alt="New rule form" style="border: 1px solid #C3C3C3;" />
 
     > [!TIP]  
     > You can specify the State field by entering System.State. While you'll see a message that indicates it isn't a valid field, if the Save button is active, then you can save the rule.
@@ -116,7 +116,7 @@ You can temporarily disable a rule or delete it altogether.
 
 You delete or disable the rule from the actions menu of the rule.
 
-<img src="_img/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
+<img src="media/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
 
 ## Restrict modification of closed work items
 
@@ -137,7 +137,7 @@ You can customize work item types to support these restriction requests:
 For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
 
 > [!div class="mx-imgBorder"]  
-> ![Custom rule](../../security/_img/grant-restrict/restrict-creating-work-items-inheritance.png)
+> ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
 
 ::: moniker-end
 

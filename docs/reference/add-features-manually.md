@@ -273,11 +273,11 @@ The quickest way to make many of these updates is to copy definition files from 
 
 2.  Open the Process Template Manager from the **Team>Team Project Collection Settings** menu. 
 
-     ![Open Process Template Manager](../boards/work-items/guidance/_img/open-process-template-manager.png)
+     ![Open Process Template Manager](../boards/work-items/guidance/media/open-process-template-manager.png)
 
     You'll see a list of each process template that has been uploaded to the project collection.  
 
-     ![Select process template to work with](../boards/work-items/guidance/_img/process-template-manager.png)
+     ![Select process template to work with](../boards/work-items/guidance/media/process-template-manager.png)
 
     The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
 

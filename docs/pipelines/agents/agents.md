@@ -287,11 +287,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Agent topologies](_img/agent-topologies-tfs.png)
+![Agent topologies](media/agent-topologies-tfs.png)
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-![Agent topologies](_img/agent-topologies-devops.png)
+![Agent topologies](media/agent-topologies-devops.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -337,7 +337,7 @@ manually configure a self-hosted agent on on-premises computer(s). The agents mu
 on-premises environments, and access to the Internet to connect to Azure Pipelines or Team Foundation Server,
 as shown in the following schematic.
 
-![Agent connectivity for on-premises environments](_img/agent-connections-devops.png)
+![Agent connectivity for on-premises environments](media/agent-connections-devops.png)
 ::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
@@ -379,9 +379,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
+![IIS TFS windows authentication with ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
 
 ### Negotiate
 
@@ -393,9 +393,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with negotiate and ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
+![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
 
 
 ### Alternate

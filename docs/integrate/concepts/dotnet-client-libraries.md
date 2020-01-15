@@ -22,7 +22,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 > For more information, see [Azure DevOps REST API Reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1).
 
 ### Dependency diagram...
-![](../concepts/_img/dotnet-client-libraries-dependancy-diagram.jpg)
+![](../concepts/media/dotnet-client-libraries-dependancy-diagram.jpg)
 
 ### Features
 

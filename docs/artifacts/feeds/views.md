@@ -34,7 +34,7 @@ To promote a package-version into the release view:
 1. Click the Promote button
 1. Select the view to promote to and select **Promote**
 
-![Promote button next to the package ID](_img/release-views-promote.png)
+![Promote button next to the package ID](media/release-views-promote.png)
 
 You can also promote using REST APIs. 
 
@@ -50,7 +50,7 @@ Once a package-version is in a release view, you can connect your package client
 
 <!-- 1. Optionally, select the view -->
 
-![Connect to view dialog with view URL](_img/connect-to-view.png)
+![Connect to view dialog with view URL](media/connect-to-view.png)
 
 For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md), [Install npm modules](../get-started-npm.md), or [Install Maven artifacts](../maven/install.md).
 

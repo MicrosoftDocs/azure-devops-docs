@@ -106,7 +106,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
   
 5.  **Configure the integration**. As the following illustration shows, you must perform six main steps when you configure the integration of the two server products.  
   
-     ![Provisioning Project Server&#45;Team Foundation Server](_img/pstfs_provisioning.png "PSTFS_Provisioning")  
+     ![Provisioning Project Server&#45;Team Foundation Server](media/pstfs_provisioning.png "PSTFS_Provisioning")  
   
      For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   

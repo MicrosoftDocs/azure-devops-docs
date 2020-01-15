@@ -31,13 +31,13 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Open column options](_img/columns/open-column-options-menu.png) 
+> ![Open column options](media/columns/open-column-options-menu.png) 
 ::: moniker-end 
 
 
  ::: moniker range="<= tfs-2018"
 
-![Open column options](_img/set-column-open-dialog-s125.png) 
+![Open column options](media/set-column-open-dialog-s125.png) 
 
 ::: moniker-end 
 
@@ -46,7 +46,7 @@ Start by opening the **Column Options** dialog. Each user can set their own colu
 
 ::: moniker range=">= tfs-2018"
 
-In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../_img/icons/delete_icon.png).
+In the Column options dialog, choose **Add a column** to add a field that isn't shown. To change the order of the fields, drag-and-drop the field where you want it within the set of selected fields. And, to remove a field, choose the ![delete icon](../media/icons/delete_icon.png).
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
-![Column options dialog](_img/set-column-options-s125.png)  
+![Column options dialog](media/set-column-options-s125.png)  
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -76,9 +76,9 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 
 ::: moniker range="<= tfs-2017"
 
-Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../_img/icons/Arrow_Up.png)/![down arrow](../_img/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
+Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../media/icons/Arrow_Up.png)/![down arrow](../media/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
-<img src="_img/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
 
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
 
