@@ -21,7 +21,7 @@ Depending on a field's data type, you can set various restrictions on what data 
 
 All of these rule elements can be defined within the **FIELD** definition of a work item type (WIT) definition, subject to some [restrictions for System fields](#system). And, with the exception of **HELPTEXT**, you can specify these rules to take affect during a workflow transition or as child elements within a **FIELD** (Global workflow) element.
 
-![Work item tracking XML element field rules](_img/apply-rule-work-item-field/IC757527.png) 
+![Work item tracking XML element field rules](media/apply-rule-work-item-field/IC757527.png) 
 
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 

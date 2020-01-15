@@ -30,17 +30,17 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 #### [Browser](#tab/browser)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**, and then select the extension that you want to uninstall or disable.
 
-   ![Select uninstall or disable for extension](_img/org-settings-select-extension.png)
+   ![Select uninstall or disable for extension](media/org-settings-select-extension.png)
 
 4. Select **Uninstall** or select the ellipses (**...**), and then select **Disable**.
 
-   ![Disable or uninstall extension](_img/disable-or-uninstall-extension.png)
+   ![Disable or uninstall extension](media/disable-or-uninstall-extension.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -117,7 +117,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
-   ![Remove extension](_img/remove-extension-TFS.png)
+   ![Remove extension](media/remove-extension-TFS.png)
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 
 2. For the wanted extension, select the ellipses (**...**), and then select **Remove**.
 
-   ![Remove extension](_img/remove-extension-TFS.png)
+   ![Remove extension](media/remove-extension-TFS.png)
 
 ::: moniker-end
 

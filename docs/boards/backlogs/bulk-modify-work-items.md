@@ -285,10 +285,10 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p><strong>Backlog menu</strong></p><br/><img src="_img/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu"/><br/></td>
+<p><strong>Backlog menu</strong></p><br/><img src="media/bulk-m-backlog-menu-options-ts.png" alt="Backlog multi-select menu"/><br/></td>
 
 <td>
-<p><strong>Query results multi-select menu</strong></p><br/><img src="_img/bulk-m-query-results-menu-options-ts.png" alt="Query results multi-select menu"/><br/></td>
+<p><strong>Query results multi-select menu</strong></p><br/><img src="media/bulk-m-query-results-menu-options-ts.png" alt="Query results multi-select menu"/><br/></td>
 </tr>
 </table>
 ::: moniker-end
@@ -300,9 +300,9 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p><strong>Backlog multi-select menu</strong> </p><br/><img src="_img/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Product backlog multi-select menu"/><br/></td>
+<p><strong>Backlog multi-select menu</strong> </p><br/><img src="media/bulk-m-backlog-r-tfs-2016-menu-options.png" alt="Product backlog multi-select menu"/><br/></td>
 <td>
-<p><strong>Query results multi-select menu</strong> </p><br/><img src="_img/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2017"/> 
+<p><strong>Query results multi-select menu</strong> </p><br/><img src="media/bulk-m-query-r-tfs-2016-menu-options.png" alt="Query results multi-select menu, TFS-2017"/> 
 </td>
 </tr>
 </table>
@@ -316,10 +316,10 @@ The menu options available to you change depending on the platform you work from
 <table valign="top">
 <tr valign="top">
 <td>
-<p><strong>Backlog multi-select menu</strong></p><br/><img src="_img/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015"/> 
+<p><strong>Backlog multi-select menu</strong></p><br/><img src="media/bulk-m-backlog-r-tfs-menu-options.png" alt="Backlog multi-select menu, TFS 2015"/> 
 </td>
 <td>
-<p><strong>Query results multi-select menu</strong></p><br/><img src="_img/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015"/><br/></td>
+<p><strong>Query results multi-select menu</strong></p><br/><img src="media/bulk-m-query-r-tfs-menu-options.png" alt="Query results multi-select menu, TFS 2015"/><br/></td>
 </tr>
 </table>
 
@@ -329,26 +329,26 @@ The menu options available to you change depending on the platform you work from
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint. 
 
-To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)) or (![context icon](../_img/icons/context_menu.png)), and then choose the option from the menu. 
+To open the context menu, click (![actions icon](../media/icons/actions-icon.png)) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Product backlog, Open context menu, Move several backlog items to a different iteration](_img/bulk-modify/move-iteration.png)
+> ![Product backlog, Open context menu, Move several backlog items to a different iteration](media/bulk-modify/move-iteration.png)
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-![Backlog page, multi-select items, Open context menu, Move to iteration](_img/bulk-modify-multi-select-ts.png)
+![Backlog page, multi-select items, Open context menu, Move to iteration](media/bulk-modify-multi-select-ts.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](_img/backlog-multi-select-non-sequential-items.png)  
+![TFS 2015, web portal, Backlog page, multi-select items, Open context menu, Move to iteration](media/backlog-multi-select-non-sequential-items.png)  
 
 ::: moniker-end
 
@@ -366,13 +366,13 @@ With work items selected, open the context menu for any selected item, and reass
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki view keyboard shortcuts popup](_img/bulk-modify/assign-from-query.png)  
+> ![Wiki view keyboard shortcuts popup](media/bulk-modify/assign-from-query.png)  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-![Assign to link from work item context menu](_img/IC700157.png)  
+![Assign to link from work item context menu](media/IC700157.png)  
  ::: moniker-end
 
 To learn more about the *Assign To* and *Iteration Path* fields, see [Query by assignment, workflow or Kanban board changes](../queries/query-by-workflow-changes.md#workflow-fields) and [Query by area or iteration path](../queries/query-by-area-iteration-path.md).
@@ -388,12 +388,12 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Edit work items dialog](_img/bulk-modify/edit-work-items-new-text-editor.png)  
+	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Query results page, save bulk modified items](_img/bulk-modify/query-results-bulk-save-items.png) 
+    > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
 
 ::: moniker-end
 
@@ -401,11 +401,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-    ![TFS 2017, Query results page, bulk edit fields](_img/bulk-modify-edit-fields-ts.png)  
+    ![TFS 2017, Query results page, bulk edit fields](media/bulk-modify-edit-fields-ts.png)  
 
 2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-    <img src="_img/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
+    <img src="media/bulk-modify-save-ts.png" alt="Azure Boards and TFS 2017, Query results page, save bulk modified items" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -415,11 +415,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
 
-    <img src="_img/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
+    <img src="media/IC666563.png" alt="TFS 2015, web portal, Query results page, Edit work items dialog, bulk modify fields" style="border: 2px solid #C3C3C3;" />
 
 2. Save all work items that you bulk-modified. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
 
-    ![TFS 2015, web portal, query results page, Bulk modify save results](_img/IC677240.png)  
+    ![TFS 2015, web portal, query results page, Bulk modify save results](media/IC677240.png)  
 
 ::: moniker-end
 
@@ -444,7 +444,7 @@ From the Edit work items dialog, select **Tags (Add)** or **Tags (Remove)**.
 Here we choose to add the *Service* tag to the selected work items. 
 
 > [!div class="mx-imgBorder"]
-> ![Edit work items dialog, Add tags](_img/bulk-modify/edit-tags-dialog.png)
+> ![Edit work items dialog, Add tags](media/bulk-modify/edit-tags-dialog.png)
 
 ::: moniker-end
 
@@ -452,7 +452,7 @@ Here we choose to add the *Service* tag to the selected work items.
 
 Here we choose to add the *Beta* tag to the selected work items. 
 
-![Edit work items - Add tags](../queries/_img/tags-bulk-add.png) 
+![Edit work items - Add tags](../queries/media/tags-bulk-add.png) 
 
 Bulk update of work items to add or remove tags from the web portal requires TFS 2015.2 or later version. To bulk edit work items when connecting to TFS 2015.1 or earlier versions, [use Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
  

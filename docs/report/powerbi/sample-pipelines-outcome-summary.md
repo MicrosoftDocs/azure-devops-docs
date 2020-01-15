@@ -25,7 +25,7 @@ This article shows you how to get the number of runs for different pipeline outc
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
@@ -136,7 +136,7 @@ The following table describes each part of the query.
 1. Change the type of column TotalCount to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](_img/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
 
 ### Rename fields and query, then Close & Apply
 
@@ -145,17 +145,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/odatapowerbi-pipelines/renamequery.png)
+	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/odatapowerbi-pipelines/closeandapply.png)
+	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -166,7 +166,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Fields](_img/odatapowerbi-pipelines/outcomesummary-fields.png)
+> ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/outcomesummary-fields.png)
 
 For a simple report, do the following steps:
 
@@ -183,7 +183,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]

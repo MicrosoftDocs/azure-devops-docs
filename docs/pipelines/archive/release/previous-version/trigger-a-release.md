@@ -42,7 +42,7 @@ Also, if you haven't yet set up your build system,
    **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
    that you want to work in (Keyboard: Ctrl + 0, C).
 
-1. On the ![Builds icon](_img/trigger-release-09.png)&nbsp;**Builds** page 
+1. On the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page 
    (Keyboard: Ctrl + 0, B), create or edit a build definition.
 
 1. On the **Process** tab of the build definition, choose the configuration 
@@ -51,7 +51,7 @@ Also, if you haven't yet set up your build system,
    to trigger for the release, or leave this field blank if you want to start 
    with the first stage.
 
-   ![Release build arguments](_img/trigger-release-01.png)
+   ![Release build arguments](media/trigger-release-01.png)
 
    If the **Release** section doesn't appear:
 
@@ -81,7 +81,7 @@ Also, if you haven't yet set up your build system,
    to trigger a build and select the check box to enable the build pipeline to 
    trigger a release.
 
-   ![Properties page for a release template ](_img/trigger-release-02.png)
+   ![Properties page for a release template ](media/trigger-release-02.png)
 
    If the **Build Definition** selection doesn't appear, then you need to add 
    your TFS connection to the Release Management client. (Add the connection 
@@ -139,7 +139,7 @@ with the corresponding release management process template.
    * **TFVC**: Add files to the server
    * **Git**: Manage files on your dev machine
 
-1. From the ![Builds icon](_img/trigger-release-09.png)&nbsp;**Builds** page, 
+1. From the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page, 
    (Keyboard Ctrl + 0, B), create or edit a build definition.
 
 1. From the **Process** tab, choose **New** to select the template to use for 
@@ -170,13 +170,13 @@ check it in. If you use Git, commit and push the build pipeline template.
 **A**: Yes, create components through the Release Management client and add 
 them to your release template. You can then add these components to your build.
 
-![Add component to release template](_img/trigger-release-05.png)
+![Add component to release template](media/trigger-release-05.png)
 
 When the **Components** window is displayed, double-click the component that you 
 want to add. Each component that you add must be configured as 
 **Builds with application** or **Builds externally**.
 
-![Components page, Source tab](_img/trigger-release-06.png)
+![Components page, Source tab](media/trigger-release-06.png)
 
 A backslash (**\\**) in the **Build Drop Location** indicates that the build is located at 
 the root of the drop folder.
@@ -188,7 +188,7 @@ the root of the drop folder.
 deploying this component. Go **[here](release-actions/release-action-tools.md)** 
 to learn more about each tool.
 
-![Component page, Deployment tab](_img/trigger-release-07.png)
+![Component page, Deployment tab](media/trigger-release-07.png)
 
 To use a custom tool, first add the tool through the **Inventory** 
 page, and then select it from the **Deployment** tab. Also make sure that 
@@ -251,7 +251,7 @@ Keep your local files and tokenized files synchronized.
 **A**: For each component you define, you can specify the file extension 
 filter on the **Configuration Variables** tab.
 
-![Component, Configuration Variables tab](_img/trigger-release-08.png)
+![Component, Configuration Variables tab](media/trigger-release-08.png)
                 
 The deployment agent you specified for the component uses pattern matching to 
 scan the set of files that need tokens replaced with variables. Separate two 

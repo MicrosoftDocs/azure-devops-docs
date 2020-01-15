@@ -23,7 +23,7 @@ Adding a team is the #1 way in which Agile tools support a growing organization.
 
 Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do so by defining teams and their associated area path(s). 
 
-![Each team has its own view of the work](../../boards/plans/_img/pm-team-structure.png) 
+![Each team has its own view of the work](../../boards/plans/media/pm-team-structure.png) 
 
 For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](../../boards/plans/portfolio-management.md). 
 
@@ -32,7 +32,7 @@ For example, each feature team can be associated with a single feature area path
 Each team you create gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to support how they work.  
 
 ::: moniker range=">= tfs-2018"
-![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-post-2018.png)
+![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-post-2018.png)
 ::: moniker-end
 
 
@@ -45,11 +45,11 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
-![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets.png)
+![Agile tools, team assets](media/agile-tools/agile-tools-team-assets.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-![Agile tools, team assets](_img/agile-tools/agile-tools-team-assets-2013.png)
+![Agile tools, team assets](media/agile-tools/agile-tools-team-assets-2013.png)
 ::: moniker-end
 
 These tools reference the team's default area path, iteration path, and selected sprints to filter automatically the set of work items they display. To learn more about each tool and the configuration settings for each tool, see the corresponding articles.
@@ -467,7 +467,7 @@ Also, the following articles walk you through the steps for configuring teams, a
 
 When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
-<img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../boards/plans/media/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker range=">= tfs-2017"
 
@@ -485,7 +485,7 @@ Yes. When you add user accounts to a project, you can add them as members of the
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
 
-![Default permissions assigned to team contributors](_img/add-team/default-permissions-assigned-to-team-contributors.png)  
+![Default permissions assigned to team contributors](media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 You can choose to limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
 

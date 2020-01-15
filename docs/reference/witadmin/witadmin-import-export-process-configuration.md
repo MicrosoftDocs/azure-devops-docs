@@ -76,7 +76,7 @@ The following values apply in each example:
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.  
 
-![Backlog panel with Business Value field added](_img/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
+![Backlog panel with Business Value field added](media/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
 
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).  
 
@@ -224,7 +224,7 @@ Other changes might require you to perform some manual operations when updating 
 
     Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
 
-    ![Application fault error message after TFS upgrade](_img/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
+    ![Application fault error message after TFS upgrade](media/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
 
 ### How do I resolve process configuration errors?  
 

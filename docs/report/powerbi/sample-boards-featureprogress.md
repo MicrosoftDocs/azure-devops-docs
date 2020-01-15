@@ -21,7 +21,7 @@ ms.date: 08/07/2019
 This article shows you how to display the percentage complete by rollup of Story Points  for a given set of active Features. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](_img/odatapowerbi-featureprogress-report.png)
+> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 > 
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
@@ -113,17 +113,17 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 1. Select the expand button on the Descendants column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
 
 2. Check all the fields and choose **OK**.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants2.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants2.png)
 
 3. Table now contains rollup fields.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants3.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants3.png)
 
 ### Pivot Descendants.StateCategory column
 
@@ -135,7 +135,7 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 	Power BI creates a column for every StateCategory value.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants4.png)
+	> ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants4.png)
 
 ### Replace Nulls in the pivoted columns
 
@@ -175,7 +175,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Fields](_img/odatapowerbi-featureprogress-fields.png)
+> ![Sample - Feature Progress - Fields](media/odatapowerbi-featureprogress-fields.png)
 
 For a simple report, do the following steps:
 
@@ -190,7 +190,7 @@ For a simple report, do the following steps:
 The example report displays.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](_img/odatapowerbi-featureprogress-report.png)
+> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
 

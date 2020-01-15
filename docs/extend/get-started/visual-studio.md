@@ -23,7 +23,7 @@ or it can be a complex and powerful custom UI experience that light up within th
 Get started now by creating your own hub that displays the results a query,
 and an action on the queries context menu to launch your hub.
 
-![hub](../_shared/procedures/_img/create-action/my-work-items.png)
+![hub](../_shared/procedures/media/create-action/my-work-items.png)
 
 
 **In this page:**
@@ -42,7 +42,7 @@ and an action on the queries context menu to launch your hub.
 Use a hub to surface your web app in an iframe in Azure DevOps Services.
 The one we're creating here show ups in the project's **Work** hub group.
 
-![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../_shared/procedures/media/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
@@ -54,7 +54,7 @@ Start by creating the web app with the page that is your hub.
 1. If you like, you can add a square image in the ```images``` folder that identifies your extension.
 We'll display it when someone installs your extension.
 
-	![installed extension](../_shared/procedures/_img/sample-extension-card.png)
+	![installed extension](../_shared/procedures/media/sample-extension-card.png)
 
 	You don't need to do this, though for your extension to work.
 
@@ -83,13 +83,13 @@ The extension manifest tells Azure DevOps Services about your extension.
 
 1. Enable https for your web app.
 
-	![Properties dialog with SSL enabled](../_shared/procedures/_img/create-hub-app-asp4/enable-ssl.png)
+	![Properties dialog with SSL enabled](../_shared/procedures/media/create-hub-app-asp4/enable-ssl.png)
 
 1. Start your app in Visual Studio so that Azure DevOps Services can access it.
 
 1. Go to your hub in the **Work** hub group.
 
-	![Hello hub in the Home hub group](./_img/hello-hub.png)
+	![Hello hub in the Home hub group](./media/hello-hub.png)
 
 <a id="control"></a>
 ### Add a grid control
@@ -183,7 +183,7 @@ with a callback that loads the grid control with the results.
 
 1. Refresh the page to see the data from your REST API call displayed in the grid.
 
-	![API results displayed in the grid](../_shared/procedures/_img/call-rest-api/query-results.png)
+	![API results displayed in the grid](../_shared/procedures/media/call-rest-api/query-results.png)
 
 <a id="action"></a>
 ## Add an action
@@ -278,7 +278,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 
 1. Run the action again from a query (not a folder) to see the results of that query in the Hello hub.
 
-	![Query results in the hello hub](../_shared/procedures/_img/create-action/my-work-items.png)
+	![Query results in the hello hub](../_shared/procedures/media/create-action/my-work-items.png)
 
 	Now when you use your action, the results of the selected query is displayed in your hub.
 

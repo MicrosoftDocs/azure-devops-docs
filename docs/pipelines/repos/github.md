@@ -46,17 +46,17 @@ GitHub and Azure Pipelines are two independent services that integrate well toge
 
 GitHub's structure consists of **organizations and user accounts** that contain **repositories**. See [GitHub's documentation](https://help.github.com/articles/differences-between-user-and-organization-accounts/).
 
-![GitHub organization structure](_img/github-org-structure.png)
+![GitHub organization structure](media/github-org-structure.png)
 
 Azure DevOps' structure consists of **organizations** that contain **projects**. See [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
-![Azure DevOps organization structure](_img/azure-devops-org-structure.png)
+![Azure DevOps organization structure](media/azure-devops-org-structure.png)
 
 Azure DevOps can reflect your GitHub structure with:
 * An Azure DevOps **organization** for your GitHub **organization or user account**
 * Azure DevOps **projects** for your GitHub **repositories**
 
-![GitHub structure mapped to Azure DevOps](_img/github-structure-mapped-to-azure-devops.png)
+![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
 To set up this mapping between GitHub and Azure DevOps:
 
@@ -458,7 +458,7 @@ You can specify the branches where you want to trigger builds. If you want to us
 
 For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ---
 
@@ -555,7 +555,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-![Pull request trigger](../build/_img/triggers/github-pr-validation-trigger.png)
+![Pull request trigger](../build/media/triggers/github-pr-validation-trigger.png)
 
 You can specify branches to include and exclude.
 Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
@@ -645,11 +645,11 @@ If you have the necessary repository permissions, but pipelines aren't getting t
 
 PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 Select either the **Continuous integration** trigger or the **Pull request validation** trigger, and configure your desired setting by enabling or disabling **Override the YAML ... trigger from here**.
 
-![Override YAML trigger](_img/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
+![Override YAML trigger](media/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
 
 ## Get the source code
 
@@ -718,7 +718,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -797,7 +797,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -831,7 +831,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -908,7 +908,7 @@ This gives the following clean options.
 #### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
- ![GitHub options](_img/github/github-clean-sources.png)
+ ![GitHub options](media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -931,17 +931,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** or **Variables** from the settings menu.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -981,7 +981,7 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
    For the status check, select the name of your pipeline in the **Status checks** list.
 
-   ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
+   ![GitHub pipeline status check](media/github/github-pipeline-status-check.png)
 
 >[!IMPORTANT]
 >If your pipeline doesn't show up in this list, please ensure the following:

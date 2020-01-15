@@ -42,7 +42,7 @@ In order to turn off history simplification, we need to use the command line swi
 
 This is all nice and theoretical, but let's create our own example of history simplification so we can see how it works. First, let's look at a diagram of the history we are going to create:
 
-![Git Branches](./_img/git-log-history-simplification/history-simplification-branches.png)
+![Git Branches](./media/git-log-history-simplification/history-simplification-branches.png)
 
 As you can see, we are going to:
 
@@ -178,7 +178,7 @@ Now, instead of panicking, you know that:
 **Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://devblogs.microsoft.com/devops/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
 What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you will be presented with the below history filter where you can specify simple or non-simple history views:
 
-![Git Filters](./_img/git-log-history-simplification/Filters.png)
+![Git Filters](./media/git-log-history-simplification/Filters.png)
 
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

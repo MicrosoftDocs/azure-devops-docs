@@ -20,7 +20,7 @@ Custom controls allow you to change how users view and interact with a field on 
 
 [!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
 
-<img alt="custom control in work item form" src="./_img/customcontrol.png" style="width: 600px;"/>
+<img alt="custom control in work item form" src="./media/customcontrol.png" style="width: 600px;"/>
 
 ## Add the custom control
 

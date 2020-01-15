@@ -23,7 +23,7 @@ During typical operations, the warehouse is processed within two minutes of chan
 
 You use the Warehouse Control Web Service to process the warehouse or cube or perform other maintenance operations. If you know that you want to perform a full rebuild of both databases, then use the [Administration console](rebuild-data-warehouse-and-cube.md) or the [TFSConfig RebuildWarehouse command](https://msdn.microsoft.com/library/ee349264.aspx). 
 
- ![Warehouse Control Web Services page](_img/web-services.png)
+ ![Warehouse Control Web Services page](media/web-services.png)
 
 > [!NOTE]  
 > Do not use SQL Server Management Studio (SSMS) to manually process the cube. Processing the cube using that tool is not supported. 
@@ -53,7 +53,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 Choose  **GetProcessingStatus**.
 
-![Get processing status](_img/IC714222.png)
+![Get processing status](media/IC714222.png)
 
 A new browser window opens. It indicates the following job's processing status:
 

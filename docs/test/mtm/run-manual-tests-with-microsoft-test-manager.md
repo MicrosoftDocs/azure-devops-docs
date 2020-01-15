@@ -44,7 +44,7 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
   
 1. Run a test case.  
   
-   ![Run a test case](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create07.png)  
+   ![Run a test case](media/run-manual-tests-with-microsoft-test-manager/almp_t_create07.png)  
   
    > **TIP**
    > If you are already looking at a test case in the web portal, you can start Test Runner directly from there by choosing **Run in Client**.  
@@ -53,27 +53,27 @@ Microsoft Test Runner sits at the side of the screen while you test your applica
   
 1. Create an action recording so that you can quickly repeat the test later.  
   
-   ![Start your application, then the test run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create08.png)  
+   ![Start your application, then the test run](media/run-manual-tests-with-microsoft-test-manager/almp_t_create08.png)  
   
 1. Follow the steps in the test. Mark each step as either Passed or Failed. When a step fails, add a comment to describe what was wrong. You can attach screenshots, too.  
   
-   ![Add comments and snapshots to the test run log](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create09.png)  
+   ![Add comments and snapshots to the test run log](media/run-manual-tests-with-microsoft-test-manager/almp_t_create09.png)  
   
-   If you have to attend to something else, ![Pause icon](_img/run-manual-tests-with-microsoft-test-manager/almp_t_runtestpauseicon.png)Pause the test. You don't want your emails or password included in the recording.  
+   If you have to attend to something else, ![Pause icon](media/run-manual-tests-with-microsoft-test-manager/almp_t_runtestpauseicon.png)Pause the test. You don't want your emails or password included in the recording.  
   
 1. Create a bug if you find a problem.  
   
-   ![Report a bug from the test run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create10.png)  
+   ![Report a bug from the test run](media/run-manual-tests-with-microsoft-test-manager/almp_t_create10.png)  
   
 1. Name the bug and describe the failure.  
   
-   ![Give the bug a title](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create11.png)  
+   ![Give the bug a title](media/run-manual-tests-with-microsoft-test-manager/almp_t_create11.png)  
   
    You can assign the bug if you know who'll fix it.  
   
 1. End the test and save the results.  
   
-   ![Complete the test run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_create12.png)  
+   ![Complete the test run](media/run-manual-tests-with-microsoft-test-manager/almp_t_create12.png)  
   
    Now the results are stored in Azure DevOps or TFS.  
   
@@ -84,18 +84,18 @@ If you ran a test before, you can repeat it quickly by replaying the same action
   
 1. Start the test. Don't overwrite the recording.  
   
-   ![Uncheck Overwrite recording. Click Start.](_img/run-manual-tests-with-microsoft-test-manager/alm_p_t78play.png)  
+   ![Uncheck Overwrite recording. Click Start.](media/run-manual-tests-with-microsoft-test-manager/alm_p_t78play.png)  
   
 1. **Play** your recorded actions. You have to verify the results of each step.  
   
-   ![Click Play](_img/run-manual-tests-with-microsoft-test-manager/almp_t79playstep.png)  
+   ![Click Play](media/run-manual-tests-with-microsoft-test-manager/almp_t79playstep.png)  
   
 ## Track the progress of your tests  
 
 Monitor the progress of your project by seeing how many tests have passed.  
 Tests begin in the Active state, meaning that they are ready to run. When a bug has been fixed, you can set the state of a failed test back to Active.  
   
-![View test results and reset a test ready to re&#45;run](_img/run-manual-tests-with-microsoft-test-manager/almp_t_run13.png)  
+![View test results and reset a test ready to re&#45;run](media/run-manual-tests-with-microsoft-test-manager/almp_t_run13.png)  
 
 
 ## FAQs

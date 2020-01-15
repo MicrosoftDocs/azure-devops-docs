@@ -24,7 +24,7 @@ or from the [user profile **Previews** panel](../../project/navigation/preview-f
 
 In [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], choose the **Test plans** link to access the new test plans view.
 
-![Opening the test plans view](_img/1.png)
+![Opening the test plans view](media/1.png)
 
 ## The "Mine" page
 
@@ -33,12 +33,12 @@ This includes plans for teams you are a member of, and test plans you have marke
 You can expand and hide the plans for each team to make it easier to locate or review specific team plans.
 Use the shortcut menu to edit or delete the selected plan.
 
-![Editing or deleting a test plan](_img/2.png)
+![Editing or deleting a test plan](media/2.png)
 
 Show the filter controls to help you find plans if you have a large number of plans in the list.
 Filter the plans by name, team, state, or iteration. 
 
-![Filtering the lits of test plans](_img/3.png)
+![Filtering the lits of test plans](media/3.png)
 
 
 ## The "All" page
@@ -47,11 +47,11 @@ The **All** page shows a list of all test plans.
 Filter test plans, and edit and delete plans using the shortcut menu, in the same way as in the **Mine** page.
 Use this page to add any test plan to your favorites list. 
 
-![The All list of test plans](_img/4.png)
+![The All list of test plans](media/4.png)
 
 You can also add a plan to your favorites list while you are viewing it.
 
-![Adding a plan to your favorites list](_img/5.png)
+![Adding a plan to your favorites list](media/5.png)
 
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

@@ -31,7 +31,7 @@ From your web browser, open the public project.
 To open the project home page, choose **Summary** from the sidebar.
 
 > [!div class="mx-imgBorder"]
-> ![Open the Project Home Page, anonymous user](_img/project-page-vert-brn.png)
+> ![Open the Project Home Page, anonymous user](media/project-page-vert-brn.png)
 
 You're invited to clone the project's main Git repository to your computer. To learn more about cloning, see [Clone a Git repository](clone-git-repo-public.md).
 
@@ -43,14 +43,14 @@ You're invited to clone the project's main Git repository to your computer. To l
 To view a dashboard, choose **Dashboards**. You see the set of dashboards defined for the default team. Choose one of the dashboards to open it.
 
 > [!div class="mx-imgBorder"]
-> ![Open Dashboards, anonymous user](_img/open-dashboards-vert.png)
+> ![Open Dashboards, anonymous user](media/open-dashboards-vert.png)
 
 ## Unavailable dashboard widgets
 
 Anonymous users won't be able to view or interact with select widgets. In place of the widget display, you'll see an image similar to the one as shown.  
 
 > [!div class="mx-imgBorder"]
-> ![Open Dashboards, anonymous user](_img/unavailable-widget-image.png)
+> ![Open Dashboards, anonymous user](media/unavailable-widget-image.png)
 
 The following dashboard widgets aren't available to anonymous users:
 

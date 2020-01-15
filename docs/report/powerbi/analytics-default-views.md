@@ -31,14 +31,14 @@ A default set of Analytics views are provided, as shown below.
 ::: moniker-end
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./_img/default-views/default-views.png)
+> ![Default Analytics views](./media/default-views/default-views.png)
 
 [!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure DevOps Power BI Data Connector - Default Analytics views](_img/default-views/navigator-dialog-default-views.png)
+> ![Azure DevOps Power BI Data Connector - Default Analytics views](media/default-views/navigator-dialog-default-views.png)
 
 
 Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
@@ -69,7 +69,7 @@ Default views automatically include the most common fields for the included work
 For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views common fields](_img/editable-views/common-fields.png)
+> ![Analytics views common fields](media/editable-views/common-fields.png)
 
 Two fields that are reported on are only available from Analytics data, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 

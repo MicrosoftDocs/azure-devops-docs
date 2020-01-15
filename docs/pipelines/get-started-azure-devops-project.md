@@ -27,7 +27,7 @@ If you don't have an Azure subscription, you can get one free through [Visual St
 
 1. Choose the **Create a resource** icon in the left navigation bar, then search for **DevOps project**.  Choose **Create**.
 
-   	![Starting Continuous Delivery configuration](_img/azure-devops-project/fullbrowser.png)
+   	![Starting Continuous Delivery configuration](media/azure-devops-project/fullbrowser.png)
 
 ## Select a sample application and Azure service
 
@@ -41,11 +41,11 @@ If you don't have an Azure subscription, you can get one free through [Visual St
 
 1. Create a **new** Azure DevOps organization or choose an **existing** organization.  Choose a **name** for your Azure DevOps project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
-   	![Enter Azure Pipelines info](_img/azure-devops-project/vstsazureinfo.png)
+   	![Enter Azure Pipelines info](media/azure-devops-project/vstsazureinfo.png)
 
 2. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your Azure DevOps organization, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **Azure Pipelines CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
 
-   	![Dashboard view](_img/azure-devops-project/dashboardnopreview.png) 
+   	![Dashboard view](media/azure-devops-project/dashboardnopreview.png) 
 	
 The Azure DevOps Project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD pipeline that automatically deploys your latest work to your web site.
 
