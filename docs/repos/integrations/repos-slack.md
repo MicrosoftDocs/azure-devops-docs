@@ -20,7 +20,7 @@ in and whenever a pull request (PR) is created, updated or a merge is attempted.
 Team Foundation Version Control (TFVC) events.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](_img/integrations-slack/notifications.png)
+> ![Notifications image](media/integrations-slack/notifications.png)
 
 Read this article to learn how to: 
 
@@ -50,7 +50,7 @@ access policies for your organization](../../organizations/accounts/change-appli
 2.	Once added, you'll see a welcome message from the app as shown in the following image.
    
     > [!div class="mx-imgBorder"]
-    > ![Welcome message](./_img/integrations-slack/welcome-message.png)
+    > ![Welcome message](./media/integrations-slack/welcome-message.png)
 
 3.	Use the `/azrepos` Slack handle to interact with the app. A full list of commands is provided in the [Command reference](#command-reference) section of this article.
 
@@ -60,7 +60,7 @@ access policies for your organization](../../organizations/accounts/change-appli
 1.	Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Repos using `/azrepos signin` command.
    
     > [!div class="mx-imgBorder"]
-    > ![Sign in prompt image ](./_img/integrations-slack/sign-in.png)
+    > ![Sign in prompt image ](./media/integrations-slack/sign-in.png)
 
 2.	To start monitoring all Git repositories in a project, use the following slash command inside a channel:
 
@@ -98,7 +98,7 @@ access policies for your organization](../../organizations/accounts/change-appli
 3. The subscribe command gets you started with a default subscription. For Git repositories, the channel is subscribed to the **Pull request created** event (with target branch =  master), and for TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
     > [!div class="mx-imgBorder"]
-    > ![Default subscriptions creation message](./_img/integrations-slack/subscriptions-added-confirmation.png)
+    > ![Default subscriptions creation message](./media/integrations-slack/subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
@@ -113,7 +113,7 @@ This command lists all the current subscriptions for the channel and allows you 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
 > [!div class="mx-imgBorder"]
-> ![View subscriptions](./_img/integrations-slack/subscriptions-list.png)
+> ![View subscriptions](./media/integrations-slack/subscriptions-list.png)
 
 ## Using filters effectively to customize subscriptions
 
@@ -131,12 +131,12 @@ The following steps demonstrate how to customize subscriptions.
 ### Example: Get notifications only when my team is in the reviewer list for a PR
 
 > [!div class="mx-imgBorder"]
-> ![Reviewer has my team](./_img/integrations-slack/reviewer-filters.png)
+> ![Reviewer has my team](./media/integrations-slack/reviewer-filters.png)
 
 ### Example: Tell me when merge attempts fail due to a policy violation
 
 > [!div class="mx-imgBorder"]
-> ![Merge attempt unsuccessful – due to policy violation](./_img/integrations-slack/merge-filters.png)
+> ![Merge attempt unsuccessful – due to policy violation](./media/integrations-slack/merge-filters.png)
 
 > [!NOTE]
 >* All the filters are typically drop-downs. However if the drop-down were to have greater than 100 items, then users are asked to enter the values manually.
@@ -147,7 +147,7 @@ The following steps demonstrate how to customize subscriptions.
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-slack/url-unfurling.png)
+> ![URL unfurling](./media/integrations-slack/url-unfurling.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a workspace.
 
@@ -197,7 +197,7 @@ In the **same browser**, start a new tab, navigate to `https://slack.com`, and s
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign in process.
 
 > [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-slack.png)
+> ![Consent to the requested app permissions](media/troubleshooting/repos-consent-page-slack.png)
 
 If these steps don't resolve your authentication issue, reach out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

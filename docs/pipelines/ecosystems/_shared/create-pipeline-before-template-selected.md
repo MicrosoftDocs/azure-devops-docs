@@ -5,7 +5,7 @@
 3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
    > [!div class="mx-imgBorder"]
-   > ![Select GitHub](../../_img/get-started-yaml/new-pipeline.png)
+   > ![Select GitHub](../../media/get-started-yaml/new-pipeline.png)
    > 
    > [!NOTE]
    > 

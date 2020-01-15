@@ -41,7 +41,7 @@ You can start viewing and adding work items once you connect to a project.
 (1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Work Items](_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items](media/view-add/open-work-items-agile.png)
 
 ::: moniker range="azure-devops-2019"
 
@@ -56,13 +56,13 @@ You can start viewing and adding work items once you connect to a project.
 Open Visual Studio 2019, Team Explorer, and then choose **Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Visual Studio, Team Explorer, Choose Work Items](_img/view-add/open-work-items-vs-te-complete.png) 
+> ![Visual Studio, Team Explorer, Choose Work Items](media/view-add/open-work-items-vs-te-complete.png) 
 
 
 If you don't see the **Work Items** option, you need to connect to a project and not just a repository. From the Connect to a Project dialog. Use **CTRL-Shift** to select your options and then choose **Connect**.
 
 > [!div class="mx-imgBorder"]  
-> ![Connect to a Project dialog, connect to a Project and Git repository](_img/view-add/connect-to-a-project-and-github.png)
+> ![Connect to a Project dialog, connect to a Project and Git repository](media/view-add/connect-to-a-project-and-github.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -86,7 +86,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-<img src="_img/view-add/view-menu.png" alt="Boards&gt;Work Items view"/>
+<img src="media/view-add/view-menu.png" alt="Boards&gt;Work Items view"/>
 </td>
 <td>
 <ul>
@@ -110,7 +110,7 @@ Using the drop-down menu, you can focus on relevant items inside a project using
 <tbody valign="top">
 <tr>
 <td>
-<img src="_img/view-add/pivot-menu-vs-te.png" alt="Boards&gt;Work Items"/>
+<img src="media/view-add/pivot-menu-vs-te.png" alt="Boards&gt;Work Items"/>
 </td>
 <td>
 <ul>
@@ -130,7 +130,7 @@ To view a work item, double-click the title or open the context menu for the wor
 <tbody valign="top">
 <tr>
 <td>
-<img src="_img/view-add/work-item-menu-options-vs.png" alt="Work item context menu"/>
+<img src="media/view-add/work-item-menu-options-vs.png" alt="Work item context menu"/>
 </td>
 <td>
 Additional menu options support the following tasks: 
@@ -194,7 +194,7 @@ Adding a work item is just one click away. Simply choose the work item type from
 For example, here we choose User Story. 
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
+> ![Boards>Work Items, Add a work item ](media/view-add/work-items-hub-new.png)
 
 <!---
 > [!TIP]    
@@ -202,7 +202,7 @@ For example, here we choose User Story.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
+![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 # [Visual Studio 2019](#tab/visual-studio)
 
@@ -211,7 +211,7 @@ For example, here we choose User Story.
 Choose **New Work Item** and select the work item type you want. 
 
 > [!div class="mx-imgBorder"]  
-> ![Work Items, Add User Story](_img/view-add/add-user-story-vs-te.png)
+> ![Work Items, Add User Story](media/view-add/add-user-story-vs-te.png)
 
 A browser window will open with the work item form to fill out. 
 
@@ -221,7 +221,7 @@ A browser window will open with the work item form to fill out.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-![Agile process, User story work item form](../backlogs/_img/add-new-work-item-vsts-user-story.png)  
+![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
@@ -244,12 +244,12 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 #### [Web portal](#tab/browser/)
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items, Filter to show Bugs ](_img/view-add/work-items-filter-bug.png)
+> ![Boards>Work Items, Filter to show Bugs ](media/view-add/work-items-filter-bug.png)
 
 #### [Visual Studio 2019](#tab/visual-studio/)
 
 > [!div class="mx-imgBorder"]
-> ![Team Explorer>Work Items, Filter based on a key word ](_img/view-add/filter-list-vs-te.png)
+> ![Team Explorer>Work Items, Filter based on a key word ](media/view-add/filter-list-vs-te.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -269,10 +269,10 @@ From the web portal, you can sort your view by one of the column fields that you
 
 ## Copy selected items to the clipboard or email them
 
-To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![ ](../_img/icons/actions-icon.png) actions icon), and then select an option from the menu. 
+To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![ ](../media/icons/actions-icon.png) actions icon), and then select an option from the menu. 
 
 > [!div class="mx-imgBorder"]
-> ![Boards>Work Items, Following view, Select work items, context menu](_img/view-add/following-context-menu.png)
+> ![Boards>Work Items, Following view, Select work items, context menu](media/view-add/following-context-menu.png)
 
 
 ## Open a view as a query  
@@ -298,9 +298,9 @@ Use the following three controls to manage your views in the web portal.
 > [!div class="mx-tdBreakAll"]
 > | Control                  | Function                      |
 > |--------------------------|-------------------------------|
-> | ![View options](../_img/icons/view-options-icon.png) | View/hide completed items | 
-> | ![Filter](../_img/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
-> | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
+> | ![View options](../media/icons/view-options-icon.png) | View/hide completed items | 
+> | ![Filter](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
+> | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
 ## Related articles
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  

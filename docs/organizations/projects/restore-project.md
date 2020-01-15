@@ -47,16 +47,16 @@ To restore a project, you must delete project permissions and have the "delete p
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Choose the gear icon, Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 3. Select **Overview**, and then scroll down to "recently deleted projects."
 
-   ![organization-settings-select-overview.png](../accounts/_img/_shared/organization-settings-select-overview.png)
+   ![organization-settings-select-overview.png](../accounts/media/_shared/organization-settings-select-overview.png)
 
 4. Highlight the project you want to restore, and then select **Restore**.
 
-   ![Highlight the project, and then select Restore](_img/restore-project/recently-deleted-projects.png)
+   ![Highlight the project, and then select Restore](media/restore-project/recently-deleted-projects.png)
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ To restore a project, you must delete project permissions and have the "delete p
    ```
 
     Something similar to the following screenshot appears:
-    ![PowerShell script return example for deleted projects](_img/restore-project/deleted-projects-powershell-script-2019.png)
+    ![PowerShell script return example for deleted projects](media/restore-project/deleted-projects-powershell-script-2019.png)
 
 2. Use the following script to restore a project. Be sure to update `$collectionUrl` and `$projectName`.
    ```

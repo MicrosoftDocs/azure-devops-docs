@@ -26,7 +26,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 ## Iterative development  
  Team Foundation together with the MSF for CMMI process template supports iterative work. Iterative development manages risk by delivering demonstrable and tested software at set intervals throughout the project.  
   
- ![Successive iterations](_img/msf_cmmi_iterations.png "MSF_CMMI_Iterations")  
+ ![Successive iterations](media/msf_cmmi_iterations.png "MSF_CMMI_Iterations")  
   
  The project schedule is organized into a series of iterations that are typically four to six weeks long. Each iteration ends with a demonstration of usable, tested software. To schedule sprints, see [Schedule sprints](../../../sprints/define-sprints.md).  
   
@@ -51,7 +51,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 ## Larger and smaller cycles  
  The project and the iteration are not the only cyclic aspects of software development. For example, in an iteration, team members start and complete tasks and check in code. The build system builds the product on a continuous or nightly basis. The team holds a brief daily review of progress on the iteration tasks.  
   
- ![Check&#45;in, daily build, iteration, project, program](_img/msf_cmmi_cycles.png "MSF_CMMI_Cycles")  
+ ![Check&#45;in, daily build, iteration, project, program](media/msf_cmmi_cycles.png "MSF_CMMI_Cycles")  
   
 ### Large projects  
  A project in which a team works through a series of iterations may be part of a larger project or program. A large project has several teams that work in parallel. Each team typically has four to 16 people.  

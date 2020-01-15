@@ -31,17 +31,17 @@ In this article, learn how to delete a project from Azure DevOps. Deleting a pro
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
 
-   :::image type="content" source="_img/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
+   :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
 
 4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
-    ![popup confirmation delete project screen](_img/delete-project/confirm-delete-project.png)
+    ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
 Your project is deleted and can be restored up to 28 days afterward.
 
@@ -68,11 +68,11 @@ Using the administration console, you can delete a project from a project collec
 
 2. Open the administration console for TFS and delete the project from its project collection.
 
-    ![project collection delete button](_img/delete-project/ic686856.png)
+    ![project collection delete button](media/delete-project/ic686856.png)
 
 3. Choose whether to delete external data associated with the project and then initiate the delete action.
 
-    ![delete projects dialog](_img/delete-project/ic687180.png)
+    ![delete projects dialog](media/delete-project/ic687180.png)
 
 4. (Optional) To review the status of the delete action, open the **Status** tab.
 
@@ -87,7 +87,7 @@ Using the administration console, you can delete a project from a project collec
 
 If your on-premises project used reporting, and you didn't choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
 
-![context menu with delete command](_img/delete-project/ic686857.png)
+![context menu with delete command](media/delete-project/ic686857.png)
 
 ::: moniker-end
 

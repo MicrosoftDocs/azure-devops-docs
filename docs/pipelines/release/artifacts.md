@@ -52,7 +52,7 @@ A single release pipeline can be linked to
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
-![Artifacts in a pipeline and release](_img/artifacts-01.png)
+![Artifacts in a pipeline and release](media/artifacts-01.png)
 
 Artifacts are central to a number of features in
 Azure Pipelines. Some of the features that depend
@@ -127,12 +127,12 @@ you can change this behavior by selecting one of the options to use the latest b
 branch by specifying the tags, a specific version, or allow the user to specify the version when the
 release is created from the pipeline.
 
-![Adding an artifact](_img/artifacts-02.png)
+![Adding an artifact](media/artifacts-02.png)
 
 If you link more than one set of artifacts, you can specify which is the primary
 (default).
 
-![Selecting a default version option](_img/artifacts-02a.png)
+![Selecting a default version option](media/artifacts-02a.png)
 
 The following sections describe how to work with the different types of artifact
 sources.
@@ -285,7 +285,7 @@ projects when linking to a build, but you can type
 this into the link dialog field.
 
 For more information about Jenkins integration capabilities, see
-[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 ----
 
@@ -512,7 +512,7 @@ pipeline when the tasks in that job do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
 
-![Selecting the artifacts to download](_img/select-artifacts.png)
+![Selecting the artifacts to download](media/select-artifacts.png)
 
 ::: moniker-end
 

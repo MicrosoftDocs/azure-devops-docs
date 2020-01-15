@@ -43,12 +43,12 @@ Here are the most common, Microsoft-provided hub groups that hubs can be contrib
 
 Name                | ID                                         | Level                           | Preview
 --------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Azure Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![azure repos](./vss/code/web/_img/azure-repos.png)
-Azure Boards               | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![azure boards](./vss/work/web/_img/azure-boards.png)
-Azure Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![azure pipelines](./vss/build/web/_img/azure-pipelines.png)
-Azure Test Plans                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![test plans](./vss/test/web/_img/azure-test-plans.png)
-Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](vss/test/web/_img/project-settings.png)
-Organization settings  | `ms.vss-web.collection-admin-hub-group`    | Organization (or collection)      | ![organization admin](vss/test/web/_img/organization-settings.png)
+Azure Repos                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![azure repos](./vss/code/web/media/azure-repos.png)
+Azure Boards               | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![azure boards](./vss/work/web/media/azure-boards.png)
+Azure Pipelines   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![azure pipelines](./vss/build/web/media/azure-pipelines.png)
+Azure Test Plans                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![test plans](./vss/test/web/media/azure-test-plans.png)
+Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](vss/test/web/media/project-settings.png)
+Organization settings  | `ms.vss-web.collection-admin-hub-group`    | Organization (or collection)      | ![organization admin](vss/test/web/media/organization-settings.png)
 
 ::: moniker-end
 
@@ -56,12 +56,12 @@ Organization settings  | `ms.vss-web.collection-admin-hub-group`    | Organizati
 
 Name                | ID                                         | Level                           | Preview
 --------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sources hub](./vss/code/web/_img/hubs-source.png)
-Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![work hub](./vss/work/web/_img/hubs-workitems.png)
-Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
-Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
-Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](./vss/web/_img/hubs-admin-project.png) 
-Account settings  | `ms.vss-web.collection-admin-hub-group`    | Account (or collection)      | ![project admin](./vss/web/_img/hubs-admin-collection.png) 
+Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sources hub](./vss/code/web/media/hubs-source.png)
+Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![work hub](./vss/work/web/media/hubs-workitems.png)
+Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/media/hubs-build-release.png)
+Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/media/hubs-testmanagement.png)
+Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![project admin](./vss/web/media/hubs-admin-project.png) 
+Account settings  | `ms.vss-web.collection-admin-hub-group`    | Account (or collection)      | ![project admin](./vss/web/media/hubs-admin-collection.png) 
 
 ::: moniker-end
 
@@ -149,15 +149,15 @@ Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`          
 
 Name                      | Target ID                                   | Preview 
 --------------------------|---------------------------------------------|-------------------
-Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/_img/completedBuildActions.png)
-Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
-Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../_img/extension_test_custom_action.png)
-Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../_img/extension_test_custom_tab.jpg)
-Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/_img/definitionExplorerContextMenu.png)
-Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/_img/definitionExplorerToolbarMenu.png)
-Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/_img/releaseSummaryToolbarMenu.png)
-Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/_img/releaseSummaryTab.png)
-Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![releaseSummarySection](./vss/release/web/_img/releaseSummarySection.png)
+Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/media/completedBuildActions.png)
+Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/media/buildDefinitionActions.png)
+Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../media/extension_test_custom_action.png)
+Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../media/extension_test_custom_tab.jpg)
+Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/media/definitionExplorerContextMenu.png)
+Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/media/definitionExplorerToolbarMenu.png)
+Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/media/releaseSummaryToolbarMenu.png)
+Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/media/releaseSummaryTab.png)
+Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![releaseSummarySection](./vss/release/web/media/releaseSummarySection.png)
 
 ::: moniker-end
 
@@ -167,10 +167,10 @@ Release summary section                  | `ms.vss-releaseManagement-web.release
 
 Name                      | Target ID                                   | Preview 
 --------------------------|---------------------------------------------|-------------------
-Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/_img/completedBuildActions.png)
-Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/_img/buildDefinitionActions.png)
-Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../_img/extension_test_custom_action.png)
-Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../_img/extension
+Completed build menu      | `ms.vss-build-web.completed-build-menu`     | ![completedBuildActions](./vss/build/web/media/completedBuildActions.png)
+Build definitions menu    | `ms.vss-build-web.build-definition-menu`    | ![buildDefinitionActions](./vss/build/web/media/buildDefinitionActions.png)
+Test results toolbar action    | `ms.vss-test-web.test-results-actions-menu`    | ![testResultsToolbarAction](../../media/extension_test_custom_action.png)
+Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    | ![testResultDetailsTab](../../media/extension
 
 ::: moniker-end
 
@@ -182,16 +182,16 @@ Test result details tab    | `ms.vss-test-web.test-result-details-tab-items`    
 
 Name                                | Target ID                                        | Preview 
 ------------------------------------|--------------------------------------------------|-------------------
-Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![sourceItemGridActions](./vss/code/web/_img/sourceGridItemActions.png)
-Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![sourceItemTreeActions](./vss/code/web/_img/sourceTreeItemActions.png)
+Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![sourceItemGridActions](./vss/code/web/media/sourceGridItemActions.png)
+Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![sourceItemTreeActions](./vss/code/web/media/sourceTreeItemActions.png)
 Source item (grid and tree) menu    | `ms.vss-code-web.source-item-menu`               |
 Change list item menu               | `ms.vss-code-web.change-list-item-menu`          |
 Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-menu`  |
-Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/_img/gitBranchesTreeActions.png)
-Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![gitPullRequestActions](./vss/code/web/_img/pullRequestActions.png)
-Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![gitPullRequestTab](./vss/code/web/_img/pullRequestTab.png)
-Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           |  ![gitCommitListMenu](../../_img/git-commit-list-menu.png)
-Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![gitCommitDetailMenu](../../_img/git-commit-detail-menu.png)
+Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/media/gitBranchesTreeActions.png)
+Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![gitPullRequestActions](./vss/code/web/media/pullRequestActions.png)
+Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![gitPullRequestTab](./vss/code/web/media/pullRequestTab.png)
+Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           |  ![gitCommitListMenu](../../media/git-commit-list-menu.png)
+Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![gitCommitDetailMenu](../../media/git-commit-detail-menu.png)
 
 ::: moniker-end
 
@@ -201,26 +201,26 @@ Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu` 
 
 Name                                     | Target ID                                                              | Preview 
 -----------------------------------------|-------------------------------------------------------------------------|-------------------
-Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/_img/definitionExplorerContextMenu.png)
-Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/_img/definitionExplorerToolbarMenu.png)
-Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/_img/releaseSummaryToolbarMenu.png)
-Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/_img/releaseSummaryTab.png)
+Release pipeline explorer context menu | `ms.vss-releaseManagement-web.release-definition-explorer-context-menu` | ![definitionExplorerContextMenu](./vss/release/web/media/definitionExplorerContextMenu.png)
+Release pipeline explorer toolbar menu | `ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu` | ![definitionExplorerToolbarMenu](./vss/release/web/media/definitionExplorerToolbarMenu.png)
+Release summary toolbar menu             | `ms.vss-releaseManagement-web.release-editor-tool-bar-menu`             | ![releaseSummaryToolbarMenu](./vss/release/web/media/releaseSummaryToolbarMenu.png)
+Release summary tab                      | `ms.vss-releaseManagement-web.release-details-view`                     | ![releaseSummaryTab](./vss/release/web/media/releaseSummaryTab.png)
 Release summary section                  | `ms.vss-releaseManagement-web.release-details-summary-tab`              | ![releaseSummarySection
 
 ### Code
 
 Name                                | Target ID                                        | Preview 
 ------------------------------------|--------------------------------------------------|-------------------
-Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![sourceItemGridActions](./vss/code/web/_img/sourceGridItemActions.png)
-Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![sourceItemTreeActions](./vss/code/web/_img/sourceTreeItemActions.png)
+Source item (grid) menu             | `ms.vss-code-web.source-grid-item-menu`          | ![sourceItemGridActions](./vss/code/web/media/sourceGridItemActions.png)
+Source item (tree) menu             | `ms.vss-code-web.source-tree-item-menu`          | ![sourceItemTreeActions](./vss/code/web/media/sourceTreeItemActions.png)
 Source item (grid and tree) menu    | `ms.vss-code-web.source-item-menu`               |
 Change list item menu               | `ms.vss-code-web.change-list-item-menu`          |
 Change list summary item menu       | `ms.vss-code-web.change-list-summary-item-menu`  |
-Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/_img/gitBranchesTreeActions.png)
-Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![gitPullRequestActions](./vss/code/web/_img/pullRequestActions.png)
-Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![gitPullRequestTab](./vss/code/web/_img/pullRequestTab.png)
-Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           |  ![gitCommitListMenu](../../_img/git-commit-list-menu.png)
-Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![gitCommitDetailMenu](../../_img/
+Git branches tree menu              | `ms.vss-code-web.git-branches-tree-menu`         | ![gitBranchesTree](./vss/code/web/media/gitBranchesTreeActions.png)
+Git pull request actions menu       | `ms.vss-code-web.pull-request-action-menu`       | ![gitPullRequestActions](./vss/code/web/media/pullRequestActions.png)
+Git pull request tabs (pivots)      | `ms.vss-code-web.pr-tabs`                        | ![gitPullRequestTab](./vss/code/web/media/pullRequestTab.png)
+Git commit listing menu             | `ms.vss-code-web.git-commit-list-menu`           |  ![gitCommitListMenu](../../media/git-commit-list-menu.png)
+Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu`        | ![gitCommitDetailMenu](../../media/
 
 ::: moniker-end
 
@@ -236,7 +236,7 @@ Test run toolbar           | `ms.vss-test-web.test-run-toolbar-menu`     |
 Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | 
 Test plan suites toolbar   | `ms.vss-test-web.test-plans-suites-toolbar` |
 Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |
-Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/_img/test-plan-hub-pivot-tab-preview.png)
+Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/media/test-plan-hub-pivot-tab-preview.png)
 
 ::: moniker-end
 
@@ -250,7 +250,7 @@ Test run toolbar           | `ms.vss-test-web.test-run-toolbar-menu`     |
 Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | 
 Test plan suites toolbar   | `ms.vss-test-web.test-plans-suites-toolbar` |
 Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |
-Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/_img/test-plan-hub-pivot-tab-preview.png)
+Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/media/test-plan-hub-pivot-tab-preview.png)
 
 <a name="menus_work"></a>
 
@@ -265,20 +265,20 @@ Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![tes
 
 Name                            | Target ID                                         | Preview 
 --------------------------------|---------------------------------------------------|-------------------
-Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![queryActions](./vss/work/web/_img/queryActions.png)
-Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![queryResultsToolbarMenu](./vss/work/web/_img/queryResultsToolbarMenu.png)
-Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![queryResultItemMenu](./vss/work/web/_img/queryResultsItemMenu.png)
-Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![queryResultsPivotTab](./vss/work/web/_img/queryResultsPivotTab.png)
-Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/_img/workItemToolbarActions.png)
-Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![backlogItemActions](./vss/work/web/_img/backlogItemActions.png)
-Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/_img/sprintBoardPivotFilterActions.png)
-Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/_img/backlogBoardPivotFilterActions.png)
+Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![queryActions](./vss/work/web/media/queryActions.png)
+Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![queryResultsToolbarMenu](./vss/work/web/media/queryResultsToolbarMenu.png)
+Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![queryResultItemMenu](./vss/work/web/media/queryResultsItemMenu.png)
+Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![queryResultsPivotTab](./vss/work/web/media/queryResultsPivotTab.png)
+Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/media/workItemToolbarActions.png)
+Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![backlogItemActions](./vss/work/web/media/backlogItemActions.png)
+Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/media/sprintBoardPivotFilterActions.png)
+Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/media/backlogBoardPivotFilterActions.png)
 Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    | 
-Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
-Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/_img/backlog-tab/iteration-backlog-tab.png)
-Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
-Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/_img/backlog-pane/product-backlog-pane.png)
-Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img/backlog-pane/iteration-backlog-pane.png)
+Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/media/backlog-tab/product-backlog-tab.png)
+Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/media/backlog-tab/iteration-backlog-tab.png)
+Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/media/backlog-pane/portfolio-backlog-pane.png)
+Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/media/backlog-pane/product-backlog-pane.png)
+Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/media/backlog-pane/iteration-backlog-pane.png)
 
 ::: moniker-end
 
@@ -288,20 +288,20 @@ Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`  
 
 Name                            | Target ID                                         | Preview 
 --------------------------------|---------------------------------------------------|-------------------
-Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![queryActions](./vss/work/web/_img/queryActions.png)
-Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![queryResultsToolbarMenu](./vss/work/web/_img/queryResultsToolbarMenu.png)
-Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![queryResultItemMenu](./vss/work/web/_img/queryResultsItemMenu.png)
-Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![queryResultsPivotTab](./vss/work/web/_img/queryResultsPivotTab.png)
-Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/_img/workItemToolbarActions.png)
-Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![backlogItemActions](./vss/work/web/_img/backlogItemActions.png)
-Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/_img/sprintBoardPivotFilterActions.png)
-Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/_img/backlogBoardPivotFilterActions.png)
+Work item query menu            | `ms.vss-work-web.work-item-query-menu`            | ![queryActions](./vss/work/web/media/queryActions.png)
+Work item query results toolbar menu | `ms.vss-work-web.work-item-query-results-toolbar-menu` | ![queryResultsToolbarMenu](./vss/work/web/media/queryResultsToolbarMenu.png)
+Work item query results menu item | `ms.vss-work-web.query-result-work-item-menu`   | ![queryResultItemMenu](./vss/work/web/media/queryResultsItemMenu.png)
+Work item query results tab     | `ms.vss-work-web.query-tabs`                      | ![queryResultsPivotTab](./vss/work/web/media/queryResultsPivotTab.png)
+Work item for context menu               | `ms.vss-work-web.work-item-toolbar-menu`          | ![workItemActions](./vss/work/web/media/workItemToolbarActions.png)
+Backlog item menu               | `ms.vss-work-web.backlog-item-menu`               | ![backlogItemActions](./vss/work/web/media/backlogItemActions.png)
+Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/media/sprintBoardPivotFilterActions.png)
+Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/media/backlogBoardPivotFilterActions.png)
 Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    | 
-Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
-Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/_img/backlog-tab/iteration-backlog-tab.png)
-Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
-Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/_img/backlog-pane/product-backlog-pane.png)
-Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img
+Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/media/backlog-tab/product-backlog-tab.png)
+Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/media/backlog-tab/iteration-backlog-tab.png)
+Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/media/backlog-pane/portfolio-backlog-pane.png)
+Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/media/backlog-pane/product-backlog-pane.png)
+Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/media
 
 ::: moniker-end
 

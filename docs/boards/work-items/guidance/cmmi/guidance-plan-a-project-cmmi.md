@@ -64,7 +64,7 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
   
   You can define the requirement in a work item by specifying a variety of information, as the following illustrations show:  
   
-  ![Requirement work item form](_img/procguid_cmmiform.png "ProcGuid_CMMIform")  
+  ![Requirement work item form](media/procguid_cmmiform.png "ProcGuid_CMMIform")  
   
 ### Some guidelines on prioritization  
  Many detailed schemes exist for prioritization. We will examine some of these when we consider iteration planning. For now, at the project level, we include some guidelines that may be useful to help manage risk and optimize added value.  

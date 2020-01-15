@@ -164,7 +164,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 * 6 - links
 * 7 - branding
 
-![card](./_img/extension-details-page.png)
+![card](./media/extension-details-page.png)
 
 <a name="CustomerQnASupport"></a>
 
@@ -243,11 +243,11 @@ The scopes of an extension can be changed after publishing. Customers that previ
 
 The **Action Required** section of the Extension settings hub shows a user which, if any, installed extensions require authorization:
 
-![scope-change](./_img/auth-new-scopes.png)
+![scope-change](./media/auth-new-scopes.png)
 
 An administrator can then review and authorize the new set of scopes:
 
-![scope-change-dialog](./_img/auth-new-scopes-dialog.png)
+![scope-change-dialog](./media/auth-new-scopes-dialog.png)
 
 ## Installation targets
 

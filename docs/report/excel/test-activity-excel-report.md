@@ -36,7 +36,7 @@ You can use the Test Activity report to help monitor the number of manual tests 
 
  You can use the Test Activity report to understand how well the team is completing tests. This report is based on a PivotChart that shows the most recent four weeks of data that was captured for test results and that is stored in the data warehouse.  
   
- ![Test Activity Excel Report](_img/procguid_testactivity.png "ProcGuid_TestActivity")  
+ ![Test Activity Excel Report](media/procguid_testactivity.png "ProcGuid_TestActivity")  
   
 ### Required activities for monitoring test activity  
 

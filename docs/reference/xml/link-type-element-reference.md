@@ -87,26 +87,26 @@ The topology types described in the following table determine the restrictions p
 </tr>
 <tr>
 <td><p><strong>Dependency</strong>: You can use dependency links to create relationships between work items that have directionality and to restrict circular relationships. The link name is different at the end points.</p><p><strong>Example usage</strong>: Use a dependency link to record the features that must be completed to deliver a user requirement. You can&#39;t create a dependent link between two work items that are linked to the same work items via dependent links. </p></td>
-<td><img src="_img/IC268537.png" alt="Dependency topology"/> </td>
+<td><img src="media/IC268537.png" alt="Dependency topology"/> </td>
 </tr>
 
 
 <tr>
 <td><p><strong>Directed Network</strong>: You can use directed network links to create relationships between work items that indicate directionality. The link name is different at the end points. Circular relationships are allowed.</p>
 <p><strong>Example usage</strong>: Use a directed network link to record a relationship between two features that might share dependencies and which you want to distinguish from each other in some way.  </p></td>
-<td><img src="_img/IC268536.png" alt="Directed network topology"/></td>
+<td><img src="media/IC268536.png" alt="Directed network topology"/></td>
 </tr>
 
 <tr>
 <td><p><strong>Network</strong>: You can use network links to create basic relationships between work items that are non-restrictive. The link is the same at both end points. Circular relationships are allowed.</p>
 <p><strong>Example usage</strong>: Use a network link, such as Related, to record a relationship between two features that might share dependencies.</p></td>
-<td><img src="_img/IC268535.png" alt="Network topology"/></td>
+<td><img src="media/IC268535.png" alt="Network topology"/></td>
 </tr>
 
 <tr>
 <td><p><strong>Tree</strong>: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the <strong>Tree of Work Items</strong> query. With Parent/Child links, you can&#39;t assign two parents to a child.</p>
 <p><strong>Example usage</strong>: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, <a href="../../boards/backlogs/organize-backlog.md" data-raw-source="[map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md)">map backlog items to features, and features to epics</a>. </p></td>
-<td><img src="_img/IC268538.png" alt="Tree topology"/></td>
+<td><img src="media/IC268538.png" alt="Tree topology"/></td>
 </tr>
 
 </tbody>

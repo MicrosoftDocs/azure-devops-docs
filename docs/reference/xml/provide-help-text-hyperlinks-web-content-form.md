@@ -89,7 +89,7 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
 ```  
 
 #### Example: hyperlink text label  
- ![Example of hyperlink applied to a standalone label](_img/wit_ss_hyperlinklabel.png "WIT_SS_HyperlinkLabel")  
+ ![Example of hyperlink applied to a standalone label](media/wit_ss_hyperlinklabel.png "WIT_SS_HyperlinkLabel")  
 Hyperlink Text Label  
 
  The following example illustrates how to add a hyperlink to displayed text in a work item form.  
@@ -106,7 +106,7 @@ Hyperlink Text Label
 ```  
 
 #### Example: combining text and hyperlinks in a single label  
- ![Example of two hyperlinks applied to text](_img/wit_ss_hyperlinkcombolabel.png "WIT_SS_HyperlinkComboLabel")  
+ ![Example of two hyperlinks applied to text](media/wit_ss_hyperlinkcombolabel.png "WIT_SS_HyperlinkComboLabel")  
 Combining Text and Hyperlinks in a Single Label  
 
  The following example illustrates how to add two hyperlinks to parts of a label on a work item form.  

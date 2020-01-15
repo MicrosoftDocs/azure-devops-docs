@@ -31,7 +31,7 @@ Organizations that aspire to be agile need to consider the twin obligations of c
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.  
 
-![Alignment enables autonomy](_img/alignment-enables-autonomy_725.png)
+![Alignment enables autonomy](media/alignment-enables-autonomy_725.png)
 
 With the right level of alignment across the organization and team autonomy, individuals are empowered to innovate and inspired to collaborate to meet business objectives. 
 
@@ -116,13 +116,13 @@ Beyond meeting the needs set by the organization, teams determine any additional
 <meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
 
 
-![Horizontal vs vertical teams](_img/horizontal-vs-vertical-teams.png)
+![Horizontal vs vertical teams](media/horizontal-vs-vertical-teams.png)
 
 However, with the adoption of Agile practices, vertical team structures that span the architecture have been shown to provide greater team autonomy. Vertical teams have the ability to deliver on the features they own by working across the software architecture. They also spread the knowledge needed to work at all architecture levels throughout all the teams.  
 
 Configure your teams along the value streams your organization wants to deliver. For example, Fabrikam Fiber, organizes their teams into the following seven feature teams.
 
-![Seven feature teams: Shopping cart, Customer profile, Service status, Email, Voice, Internet, and TV](_img/seven-feature-teams.png)  
+![Seven feature teams: Shopping cart, Customer profile, Service status, Email, Voice, Internet, and TV](media/seven-feature-teams.png)  
 
 
 Each team plans the features they'll deliver. They have the autonomy to determine how they'll structure the data, architect the services, and design of the web and mobile user interfaces. Of course, they do this in adherence with the quality standards set by the organization and to which all teams contribute. 

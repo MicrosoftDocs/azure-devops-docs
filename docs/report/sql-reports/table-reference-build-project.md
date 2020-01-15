@@ -25,7 +25,7 @@ You can query for data about the files and projects that were built and informat
  
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
-![Tables for Source Projects in a Build](_img/teamproj_factbuildproject.png "TeamProj_FactBuildProject")  
+![Tables for Source Projects in a Build](media/teamproj_factbuildproject.png "TeamProj_FactBuildProject")  
   
 FactBuildProject is associated with the following dimension tables:  
   

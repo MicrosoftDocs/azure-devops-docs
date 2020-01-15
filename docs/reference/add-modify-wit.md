@@ -90,7 +90,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 
 To add a custom WIT or modify an existing WIT, you define or modify the XML definition file for the WIT and then import it to your project [based on the process model you use](customize-work.md). You modify a WIT by specifying the elements defined within the three main sections of the WIT definition file: **FIELDS**, **WORKFLOW**, and **FORM**.  
 
-![Summary of WIT elements](_img/IC729919.png)
+![Summary of WIT elements](media/IC729919.png)
 
 The easiest way to add a new WIT is to copy an existing WIT and then modify the definition file. 
 
@@ -115,7 +115,7 @@ To learn more about defining fields, see [Add or modify a field](add-modify-fiel
 
 **STATES**  and **REASONS** sections within the **WORKFLOW** specify the pick list values in the **State** and **Reason** fields. They track the status of work items. The **TRANSITIONS** section specifies the valid transitions between states, as shown in the following illustration. You specify both forward and regressive transitions.
 
-![Example workflow state diagram, Agile user story](../boards/work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)
+![Example workflow state diagram, Agile user story](../boards/work-items/guidance/media/ALM_PT_Agile_WF_UserStory.png)
 
 You change the workflow to accomplish the following objectives:
 
@@ -165,11 +165,11 @@ The following illustrations highlight the most common elements on work item form
 
 **Web form with the new form enabled (VSTS, TFS 2017)**  
 
-![Header element within web form](xml/_img/weblayout-system-controls-details-page.png)
+![Header element within web form](xml/media/weblayout-system-controls-details-page.png)
  
 **Old web form in use (TFS 2015, TFS 2013)**  
 
-![WIT form controls ](_img/IC714121.png)
+![WIT form controls ](media/IC714121.png)
 
 You can customize the form to accomplish the following objectives:  
 
@@ -189,7 +189,7 @@ For example, you can add bugs from the product backlog page.
 
 [!INCLUDE [temp](../_shared/image-differences.md)]
 
-![](_img/add-modify-wit-quick-add-panel.png)
+![](media/add-modify-wit-quick-add-panel.png)
 
 
 To learn how to add or remove WITs from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new WIT to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
@@ -203,7 +203,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 > [!NOTE]    
 >**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
-<img src="_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Change the type of an existing work item  
@@ -212,7 +212,7 @@ See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-i
 
 When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
 
-![Clone a WIT](_img/IC710198.png)  
+![Clone a WIT](media/IC710198.png)  
 
 Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 

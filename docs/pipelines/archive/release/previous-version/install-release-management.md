@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
-![Install Release Management with Team Foundation Server](_img/install-rm-01.png)
+![Install Release Management with Team Foundation Server](media/install-rm-01.png)
 
 Release Management provides a continuous deployment solution that makes release
 cycles repeatable, visible, and more efficient by automating deployments 
@@ -92,7 +92,7 @@ ready to manage releases.
   **[adding team members to Release Management](add-users-and-groups.md)**, 
   or configuring an SMTP server for email notifications.
 
-   ![Set security for Release Management with Team Foundation Server](_img/install-rm-04.png)
+   ![Set security for Release Management with Team Foundation Server](media/install-rm-04.png)
 
 ## Related topics
 

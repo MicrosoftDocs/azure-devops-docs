@@ -29,23 +29,23 @@ add [**Owner**](/azure/role-based-access-control/built-in-roles#owner), [**Contr
 
 2. Enter *subscriptions* in the search box, and then select **Subscriptions** from the drop-down menu. If more than one subscription is listed, choose the subscription to modify.
 
-   ![Choose the subscription to modify for backup billing manager](_img/add-backup-billing-manager/choose-subscription-to-modify.png)
+   ![Choose the subscription to modify for backup billing manager](media/add-backup-billing-manager/choose-subscription-to-modify.png)
 
 3. Select **Access control (IAM)**.
 
-   ![Choose access control, and then add](_img/add-backup-billing-manager/choose-access-control.png)
+   ![Choose access control, and then add](media/add-backup-billing-manager/choose-access-control.png)
 
 4. Choose **Add**.
 
-   ![Add role assignment Azure portal](_img/add-backup-billing-manager/add-role-assignment.png)
+   ![Add role assignment Azure portal](media/add-backup-billing-manager/add-role-assignment.png)
 
 5. In the drop-down menu, select the *role* to add members to and select an *assignment* type.
 
-   ![Choose a role and assignment type](_img/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
+   ![Choose a role and assignment type](media/add-backup-billing-manager/choose-role-and-select-an-assignment-type.png)
 
 6. Select a user or group by entering their *name* or *email alias*. (Select a device by entering its *name*.)
 
-   ![Select a user, group, or device by the name or email alias](_img/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
+   ![Select a user, group, or device by the name or email alias](media/add-backup-billing-manager/add-permissions-select-member-choose-save.png)
 
 7. If your update is complete, choose **Save**.
 

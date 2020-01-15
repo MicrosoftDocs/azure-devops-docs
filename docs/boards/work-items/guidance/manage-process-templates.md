@@ -61,32 +61,32 @@ You can upload, download, and delete process templates for a project collection.
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process Template Manager](_img/process-template/choose-process-template-manager-2019.png)
+	> ![Open Process Template Manager](media/process-template/choose-process-template-manager-2019.png)
 
 	A web browser tab opens to the **Organization Settings>Process** page. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process](_img/process-template/open-collection-process-ado-2019.png)
+	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../_img/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](_img/process-template/upload-process-ado-2019.png)
+	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](_img/process-template/upload-process-dialog.png)
+	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose the **Export** option.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Export Process](_img/process-template/export-process.png)
-
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Disable or Delete a Process](_img/process-template/disable-default-options.png)
+	> ![Export Process](media/process-template/export-process.png)
+
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
 
 # [Visual Studio 2017](#tab/visual-studio-2017)
 
@@ -95,43 +95,43 @@ You can upload, download, and delete process templates for a project collection.
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process Template Manager](_img/process-template/open-process-template-manager-vs-2017.png)
+	> ![Open Process Template Manager](media/process-template/open-process-template-manager-vs-2017.png)
 
 	A web browser tab opens to the **Organization Settings>Process** page. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process](_img/process-template/open-collection-process-ado-2019.png)
+	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../_img/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](_img/process-template/upload-process-ado-2019.png)
+	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
 
 	In the Upload process template dialog, choose the .zip folder that contains the root file, ProcessTemplate.xml, for the process template that you want to upload. See also [Process template restrictions and validation checks](#restrictions).
 
 	> [!div class="mx-imgBorder"] 
-	> ![Upload Process](_img/process-template/upload-process-dialog.png)
+	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose the **Export** option.
-
-	> [!div class="mx-imgBorder"] 
-	> ![Export Process](_img/process-template/export-process.png)
-
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Disable or Delete a Process](_img/process-template/disable-default-options.png)
+	> ![Export Process](media/process-template/export-process.png)
+
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+
+	> [!div class="mx-imgBorder"] 
+	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
 
 # [Visual Studio 2015](#tab/visual-studio-2015)
 
 1. From Visual Studio 2015 or earlier version, open the Process Template Manager from the **Team>Team Project Collection Settings>Process Template Manager** bar menu.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Open Process Template Manager](_img/open-process-template-manager.png)
+	> ![Open Process Template Manager](media/open-process-template-manager.png)
 
    You'll see a list of each process template that has been uploaded to the project collection. 
 
-   ![Select process template to work with](_img/process-template-manager.png)
+   ![Select process template to work with](media/process-template-manager.png)
 	
    > [!TIP]   
    > For a comparison of the default process templates&mdash;Agile, CMMI, and Scrum&mdash;see [Choose a process](choose-process.md).  
@@ -204,16 +204,16 @@ To determine the type of process template that was used to create your project, 
 </tr>
 <tr>
 <td>
-<img src="_img/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
+<img src="media/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
 </td>
 <td>
-<img src="_img/process-template/basic-work-items.png" alt="Basic work item types"/> 
+<img src="media/process-template/basic-work-items.png" alt="Basic work item types"/> 
 </td>
 <td>
-<img src="_img/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
+<img src="media/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
 </td>
 <td>
-<img src="_img/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
+<img src="media/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
 </td>
 <td>
 </tr>
@@ -233,13 +233,13 @@ To determine the type of process template that was used to create your project, 
 </tr>
 <tr>
 <td>
-<img src="_img/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
+<img src="media/ALM_MPT_WIT_Scrum.png" alt="Scrum work item types"/> 
 </td>
 <td>
-<img src="_img/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
+<img src="media/ALM_MPT_WIT_Agile.png" alt="Agile work item types"/> 
 </td>
 <td>
-<img src="_img/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
+<img src="media/ALM_MPT_WIT_CMMI.png" alt="CMMI work item types"/> 
 </td>
 </tr>
 </tbody>
@@ -258,7 +258,7 @@ To determine the type of process template that was used to create your project, 
 If you upload the process template through the web portal, you may encounter errors such as those shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Upload process template errors](_img/process-template/upload-process-template-errors.png)
+> ![Upload process template errors](media/process-template/upload-process-template-errors.png)
 
 You must resolve each error and then retry the upload process. You may find additional information about resolving process template errors from [Resolve validation errors for process import](../../../organizations/settings/work/import-process/resolve-errors.md). 
 

@@ -55,7 +55,7 @@ Then you can re-create the template for use in that location.
 
 You can delete an existing custom template from the list of templates that is displayed when you add a new stage to our pipeline.
 
-![Delete custom template](_img/delete-custom-template.png)
+![Delete custom template](media/delete-custom-template.png)
 
 ### How do I update a custom stage template?
 

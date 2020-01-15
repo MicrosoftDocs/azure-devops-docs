@@ -12,7 +12,7 @@ You can use [Azure Container Registry](/azure/container-registry/) to host the D
 
 1. Enter a **Registry name**, **Resource Group**, and select a **Location**.    
 
-   ![Container Registry settings](_img/createacr.png)
+   ![Container Registry settings](media/createacr.png)
 
 1. For **Admin user**, choose **Enable** and then choose **Create**.
 

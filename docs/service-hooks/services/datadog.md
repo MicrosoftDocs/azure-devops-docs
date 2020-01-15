@@ -30,20 +30,20 @@ Create events and metrics in Datadog in response to events from Azure DevOps Ser
 
 2. Select **Create subscription**.
 
-   ![Select Create subscription from the Service hooks page](../_img/service-hooks-page-select-create-subscription.png)
+   ![Select Create subscription from the Service hooks page](../media/service-hooks-page-select-create-subscription.png)
 
 3. Select the Datadog service.
 
-   ![Select Datadog](../_img/select-datadog.png)
+   ![Select Datadog](../media/select-datadog.png)
 
     Configure the triggering event.
 
-   ![Datadog API Key](../_img/datadog-api-key.png)
+   ![Datadog API Key](../media/datadog-api-key.png)
 
 4. Paste (ctrl+v) your Datadog API Key into the required field.
 5. Indicate whether your Datadog account is US or EU.
 
-   ![Indicate whether your Datadog account is US or EU](../_img/datadog-US-or-EU.png)
+   ![Indicate whether your Datadog account is US or EU](../media/datadog-US-or-EU.png)
 
 7.	Test the service hook subscription and finish the wizard.
 8.	Repeat steps 2-5 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.

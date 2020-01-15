@@ -212,7 +212,7 @@ Also, by adding custom states to support those workflow states that several team
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR.  As shown in the following image, all you have to do is check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 
 
-![Complete pull request dialog, Autocomplete work items with completion of PR option](_img/workflow-states-complete-pr.png)
+![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
 
 In the following circumstances the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the WIT: 
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   

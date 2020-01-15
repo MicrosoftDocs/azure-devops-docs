@@ -95,7 +95,7 @@ The **project-scoped identity** name has the following format:
 
 By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project** is set in **Project Settings** > **Settings**.
 
-![Limit job authorization scope](_img/options/limit-job-authorization-scope.png)
+![Limit job authorization scope](media/options/limit-job-authorization-scope.png)
 
 ### Managing Permissions
 
@@ -112,15 +112,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Repositories**, **FabrikamFiber**.
 
-    ![Repository access](_img/options/allow-repo-access.png)
+    ![Repository access](media/options/allow-repo-access.png)
 
 2.  Choose the **+** icon, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account.
 
-    ![Add user](_img/options/add-build-service-user.png)
+    ![Add user](media/options/add-build-service-user.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Set permissions](_img/options/set-repo-permissions.png)
+    ![Set permissions](media/options/set-repo-permissions.png)
 
 #### Configure permissions to access other resources in the same project collection
 
@@ -128,15 +128,15 @@ In this example, the `fabrikam-tailspin/SpaceGameWeb` project-scoped build ident
 
 1. In the **FabrikamFiber** project, navigate to **Project settings**, **Permissions**.
 
-    ![Project settings](_img/options/project-permissions.png)
+    ![Project settings](media/options/project-permissions.png)
 
 2.  Choose **Users**, start to type in the name **SpaceGameWeb**, and select the **SpaceGameWeb Build Service** account. If you don't see any search results initially, select **Expand search**.
 
-    ![Add user](_img/options/add-build-service-user-project-permissions.png)
+    ![Add user](media/options/add-build-service-user-project-permissions.png)
 
 3. Configure the desired permissions for that user.
 
-    ![Set permissions](_img/options/set-project-permissions.png)
+    ![Set permissions](media/options/set-project-permissions.png)
 
 ::: moniker-end
 
