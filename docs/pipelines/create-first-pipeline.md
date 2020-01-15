@@ -39,17 +39,17 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your desired sample app repository.
+5. When the list of repositories appears, select your desired sample app repository.
 
-1. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+6. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
+7. A new run is started. Wait for the run to finish.
 
 #### [.Net](#tab/net)
 
@@ -63,7 +63,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ## Create your first .Net Core pipeline
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **ASP.NET Core**.
 
@@ -71,6 +71,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
    > [!div class="mx-imgBorder"] 
    > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -95,14 +96,14 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ## Create your first Python pipeline
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
 
 7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](ecosystems/_img/save-and-run-button-new-yaml-pipeline.png)
 
 8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
