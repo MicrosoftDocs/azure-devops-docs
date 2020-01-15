@@ -101,7 +101,7 @@ A: Yes. For a better experience,
 you can change your organization's location during sign-up
 so that your organization is closest to most users.
 
-![Change organization location](_img/set-up-vs/change-location.png)
+![Change organization location](media/set-up-vs/change-location.png)
 
 Your organization's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/regions) 

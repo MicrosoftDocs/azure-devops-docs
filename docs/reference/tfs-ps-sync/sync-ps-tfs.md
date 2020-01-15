@@ -31,7 +31,7 @@ If you use TFS 2017 and want to integrate with Microsoft Project Server, you can
 <br/>
 <a id="Project-Connect-from-Tivitie" />
 
-![Tivitie](_img/tivitie-Blue2.png)
+![Tivitie](media/tivitie-Blue2.png)
 
 ## [Project Connect from Tivitie](http://www.tivitie.com/projectconnect)
 
@@ -44,7 +44,7 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 <br/>
 <a id="ConnectALL" />
 
-![ConnectAll](_img/connectall.png)
+![ConnectAll](media/connectall.png)
 
 ## [ConnectALL](https://www.connectall.com/)
 
@@ -57,7 +57,7 @@ Teams from software development and delivery, IT, and business units across larg
 <br/>
 <a id="Tasktop" />
 
-![Tasktop](_img/tfs-ps-sync-tas-logo.png)
+![Tasktop](media/tfs-ps-sync-tas-logo.png)
 
 ## [Tasktop](https://www.tasktop.com/product-overview)
  

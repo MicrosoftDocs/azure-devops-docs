@@ -31,13 +31,13 @@ In this tutorial you learn how to:
 
 The following image shows a very basic example of how changes conflict in Git. Both the master and bugfix branch make updates to the same lines of source code.
 
-![Master and bugfix branch have changes that conflict](_img/merge-conflict.png)    
+![Master and bugfix branch have changes that conflict](media/merge-conflict.png)    
 
 If you try to merge the bugfix branch into master, Git can't determine which changes to use in the merged version. You may want to keep the changes
 in the master branch, the bugfix branch, or some combination of the two. Resolve this conflict with a merge commit on the master branch
 that reconciles the conflicting changes between the two branches.
 
-![Create a merge commit to resolve the conflict between the two branches](_img/merge-conflict-resolved.png)
+![Create a merge commit to resolve the conflict between the two branches](media/merge-conflict-resolved.png)
 
 The most common merge conflict situation is when you pull updates from a remote branch to your local branch, for example from `origin/bugfix` into your local `bugfix` branch.
 Resolve these conflicts in the same way - create a merge commit on your local branch reconciling the changes and complete the merge.
@@ -59,7 +59,7 @@ Rebased branches will merge into your main branch without conflicts.
 1. You'll be informed of the merge conflict(s) when you pull changes or attempt to merge two branches.   
 2. The conflict notification appears. Click the **Conflicts** link to start resolve file conflicts.   
 
-   ![Prompt when there is a merge conflict when you pull a change](_img/merge_prompt_vs.png)   
+   ![Prompt when there is a merge conflict when you pull a change](media/merge_prompt_vs.png)   
 
 3. This will bring up a list of files with conflicts. Selecting a file lets you accept the changes in the source branch you are merging from with the **Take Source** button or accept the changes in the branch you are merging into using **Keep Target**. 
    You can manually merge changes by selecting **Merge**, then entering the changes directly into the merge tool specified in your [Git settings](git-config.md#diff--merge-tools).
@@ -67,11 +67,11 @@ Rebased branches will merge into your main branch without conflicts.
 5. When done making changes, click **Accept Merge** . Repeat this for all conflicting files.
 6. Open the **Changes** view in Team Explorer and commit the changes to create the merge commit and resolve the conflict.
 
-   ![Resolving Merge Conflicts in Visual Studio](_img/vsmerge.gif)  
+   ![Resolving Merge Conflicts in Visual Studio](media/vsmerge.gif)  
 
     Compare the conflicting commits as well as the differences between the common history with the options in Visual Studio's merge tool.   
 
-    ![VSMergeTool comparison options](_img/vsmergeoptions.png)
+    ![VSMergeTool comparison options](media/vsmergeoptions.png)
 
 #### [Command Line](#tab/command-line/)
 Resolve merge conflicts on the command line:   

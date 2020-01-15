@@ -22,7 +22,7 @@ This new page is in public preview and is being made default for all Test Plans 
 1. Sign-in into your Azure DevOps Services organization
 2. Click on your Avatar on the top right and navigate to "Preview Features"
 3. Disable the 'New Test Plans Page' feature and navigate to Test Plans > Test Plans in your project of choice.
-![test plans preview](_img/new-test-plans-page/enable-preview-feature.png)
+![test plans preview](media/new-test-plans-page/enable-preview-feature.png)
 
 > Any action performed in either page will reflect on the other too since their backend store is the same.
 
@@ -35,7 +35,7 @@ The new Test Plans page has 5 sections:
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts which can also be pinned to dashboards.
 
-![test plans sneek peek](_img/new-test-plans-page/new-test-plans-page.png)
+![test plans sneek peek](media/new-test-plans-page/new-test-plans-page.png)
 
 > The Define tab and certain operations are only available to users with 'Basic + Test Plans' access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
 
@@ -46,7 +46,7 @@ Hence, test cases are reusable entities. By including them in a test plan or sui
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
 
-![test plans page](_img/new-test-plans-page/copy-test-plan.png)
+![test plans page](media/new-test-plans-page/copy-test-plan.png)
 
 <a name="journey"></a>
 ## Journey

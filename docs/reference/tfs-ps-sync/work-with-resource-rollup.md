@@ -42,7 +42,7 @@ ms.date: 01/12/2017
 ##  <a name="ViewingAvailability"></a> Viewing Resource Availability  
  Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](https://go.microsoft.com/fwlink/?LinkId=207284).  
   
- ![Assignment of work by resource in PWA](_img/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
+ ![Assignment of work by resource in PWA](media/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
   
  Before you view work estimates or resource availability, you should publish the enterprise project plan so that Project Server has the most recent updates. For resource rollup, a two-pass sequence is required to capture the allocation of work to resources in Project Server. The following sequence of actions must occur for resource rollup data to flow completely from Team Foundation to Project Server:  
   

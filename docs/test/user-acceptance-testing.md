@@ -54,7 +54,7 @@ suite and choosing **Assign testers to run all
 tests**. This option also enables the sending of
 emails to the testers assigned to the tests.
 
-![User acceptance testing email notification](_img/user-acceptance-testing/uat10.png)
+![User acceptance testing email notification](media/user-acceptance-testing/uat10.png)
 
 An important feature of user acceptance testing 
 is that the testers may in fact be the business 
@@ -85,7 +85,7 @@ you can use the chart views that make it much easier to
 track your test results. These views are accessible by all
 members of your team.   
 
-![Exploring test results](_img/user-acceptance-testing/uat8.png)
+![Exploring test results](media/user-acceptance-testing/uat8.png)
 
 > Note: The dashboard display shown here is also used
 for other types of testing such as continuous testing.

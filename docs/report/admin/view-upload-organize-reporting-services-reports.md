@@ -20,12 +20,12 @@ ms.date: 11/19/2018
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
   
- The ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** page in Team Explorer provides a tree view of the reports defined for your team project. To open a report, choose it and press Enter.  
+ The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page in Team Explorer provides a tree view of the reports defined for your team project. To open a report, choose it and press Enter.  
   
 > [!NOTE]
->  The ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** option appears only when the team project collection that contains your team project is provisioned with Reporting Services. For more information, see [Add a Report Server to a Team Project Collection](../admin/add-reports-to-a-team-project.md).  
+>  The ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** option appears only when the team project collection that contains your team project is provisioned with Reporting Services. For more information, see [Add a Report Server to a Team Project Collection](../admin/add-reports-to-a-team-project.md).  
   
- The ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports are based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](https://go.microsoft.com/fwlink/?LinkId=263963).  
+ The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page for your team project shows the reports and organizes them under a set of folders. The default set of reports are based on the process template that was used to create the team project. You can manage these reports using Report Manager. For more information, see [Report Server Content (Native Mode)](https://go.microsoft.com/fwlink/?LinkId=263963).  
   
  The reports that TFS provides with the default process templates provide a view of the current state of your project by aggregating and summarizing the metrics from such things as work items, version control, test results, and builds. You can use the default reports, or you can customize each report to fit your specific needs.  
   
@@ -33,7 +33,7 @@ You can analyze the progress and quality of your project by viewing the reports 
   
  Team project reports are stored in Reporting Services, and you can access them through Team Explorer or Report Manager. As the number of reports listed on the **Reports** page increases, you may want to create subfolders for grouping or organizing the reports.  
   
- You use Report Manager to manage reports and report folders. To access the team report site from Team Web Access, on the Home page, click ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports**.  
+ You use Report Manager to manage reports and report folders. To access the team report site from Team Web Access, on the Home page, click ![Report](media/icon_reportte.png "Icon_reportTE") **Reports**.  
   
  **Requirements**  
   
@@ -48,10 +48,10 @@ You can analyze the progress and quality of your project by viewing the reports 
   
 #### To view a report from Team Explorer  
   
-1.  From the ![Home icon](_img/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports**.  
+1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**.  
   
 > [!NOTE]
->  If a red X icon appears next to ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
+>  If a red X icon appears next to ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, you might not have permissions to access the reports, or Team Explorer might have lost communication with the server that hosts Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports and that the server that hosts Reporting Services is running.  
   
  Also, a red X icon might appear next to **Reports** if both of the following conditions are true:  
   
@@ -69,7 +69,7 @@ You can analyze the progress and quality of your project by viewing the reports 
   
 #### To view a report from Report Manager  
   
-1.  From the ![Home icon](_img/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose  ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports**, and then choose the **Go to site** link.  
+1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose  ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**, and then choose the **Go to site** link.  
   
      Or, choose **Team, Show Report Site** from the Visual Studio toolbar.  
   

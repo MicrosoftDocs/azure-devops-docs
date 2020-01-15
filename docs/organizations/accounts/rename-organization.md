@@ -35,17 +35,17 @@ To change your organization URL, you need at least Basic access and organization
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if wanted.
 
-   ![Rename you organization](_img/rename-vso-organization/rename-organization-new.png)
+   ![Rename you organization](media/rename-vso-organization/rename-organization-new.png)
 
 4. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
 
-   ![Enter new organization name and save changes](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
+   ![Enter new organization name and save changes](media/rename-vso-organization/vsoconfirmorganizationrename.png)
 
 Your organization is renamed.
 

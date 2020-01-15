@@ -22,7 +22,7 @@ Items are the files, folders, and submodules in a repository.
 Files are [blobs](./blobs.md) in the API and folders are [trees](./trees.md).
 If the repository contains [submodules](https://git-scm.com/docs/git-submodule), they will appear as [commits](./commits.md).
 
-![Items are blobs and trees](./_img/git-items.png)
+![Items are blobs and trees](./media/git-items.png)
 
 There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/ItemsSample.cs) available for this endpoint.
 

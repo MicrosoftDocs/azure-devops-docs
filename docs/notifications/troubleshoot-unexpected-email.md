@@ -36,7 +36,7 @@ Your email address or a group address is on this line. If you're receiving unexp
 All emails have a footer, which contains a link to view the subscription that triggered the email.  Select the link and view the subscription. You received the email because this subscription to which your are subscribed.  If it's an organization or team subscription, you can opt out of the subscription.
 
 > [!div class="mx-imgBorder"] 
->![Email footer](_img/email-footer-view.png)
+>![Email footer](media/email-footer-view.png)
 
 ## Contact customer support
 

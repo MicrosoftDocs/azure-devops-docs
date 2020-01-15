@@ -36,9 +36,9 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. Open the **Azure Repos** section in Azure DevOps, for more information, see [Web portal navigation](../navigation/index.md)).
 
 2. Enter a search string in the textbox, and then select _Enter_ (or choose the 
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon). 
+   ![start search icon](media/_shared/start-search-icon-new.png) icon). 
 
-   :::image type="content" source="_img/code-search-get-started/enter-search-string-start-search.png" alt-text="Enter your search string and then begin your search":::
+   :::image type="content" source="media/code-search-get-started/enter-search-string-start-search.png" alt-text="Enter your search string and then begin your search":::
 
 ::: moniker-end
 
@@ -47,9 +47,9 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. Open the **Azure Repos** section in Azure DevOps, for more information, see [Web portal navigation](../navigation/index.md)).
 
 2. Enter a search string in the textbox, and then select _Enter_ (or choose the 
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon). 
+   ![start search icon](media/_shared/start-search-icon-new.png) icon). 
 
-   :::image type="content" source="_img/code-search-get-started/title-bar-search-box-empty-new.png" alt-text="Enter your search string and then begin your search":::
+   :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-new.png" alt-text="Enter your search string and then begin your search":::
 
 ::: moniker-end
 
@@ -58,16 +58,16 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. In the search textbox at the top right of the window, check that the text says
    _Search code_. The search text box may say _Search work items_. In this case, use the drop-down selector to change it.
 
-   ![Switching between searching for code and work items](_img/code-search-get-started/title-bar-search-box-empty-outlined.png)
+   ![Switching between searching for code and work items](media/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
-   If you don't see the ![select search type](_img/_shared/search-select-type-icon.png)
+   If you don't see the ![select search type](media/_shared/search-select-type-icon.png)
    selector in the Search box, open the **Manage extensions** page 
    and check that Code Search is installed ([see Administer Search](administration.md)).
 
-   ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
 
 2. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search.
+   ![start search icon](media/_shared/start-search-icon.png) icon) to start your search.
 
 ::: moniker-end
 
@@ -78,17 +78,17 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted (only the first 100 hits are highlighted). 
 
-   ![Search results](_img/code-search-get-started/search-results-01.png)
+   ![Search results](media/code-search-get-started/search-results-01.png)
 
    If you see a list of work items, ensure that **Code** is selected in the top left.
 
 2. Sort the results as you need using the drop-down list of properties, or by relevance.
 
-   ![Sort drop-down list](_img/code-search-get-started/sort-order-azure-devops.png)    
+   ![Sort drop-down list](media/code-search-get-started/sort-order-azure-devops.png)    
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/_shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
@@ -96,7 +96,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list. Then, enter the criteria value.
 
-   ![Search from title bar](_img/code-search-get-started/title-bar-search-functions-azure-devops.png)    
+   ![Search from title bar](media/code-search-get-started/title-bar-search-functions-azure-devops.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -122,17 +122,17 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted (only the first 100 hits are highlighted). 
 
-   ![Search results](_img/code-search-get-started/search-results-01.png)
+   ![Search results](media/code-search-get-started/search-results-01.png)
 
    If you see a list of work items, ensure that **Code** is selected in the top left.
 
 2. Sort the results as you need using the drop-down list of properties, or by relevance.
 
-   ![Sort drop-down list](_img/code-search-get-started/sort-order.png)    
+   ![Sort drop-down list](media/code-search-get-started/sort-order.png)    
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/_shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
@@ -140,7 +140,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list. Then, enter the criteria value.
 
-   ![Search from title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
+   ![Search from title bar](media/code-search-get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -166,17 +166,17 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. The search page shows a list of the matching code files. The selected file has all
    instances of the search string highlighted (only the first 100 hits are highlighted). 
 
-   ![Search results](_img/code-search-get-started/search-results-01.png)
+   ![Search results](media/code-search-get-started/search-results-01.png)
 
    If you see a list of work items, ensure that **Code** is selected in the top left.
 
 2. Sort the results as you need using the drop-down list of properties, or by relevance.
 
-   ![Sort drop-down list](_img/code-search-get-started/sort-order-azure-devops.png)    
+   ![Sort drop-down list](media/code-search-get-started/sort-order-azure-devops.png)    
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/_shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
@@ -184,7 +184,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list. Then, enter the criteria value.
 
-   ![Search from title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
+   ![Search from title bar](media/code-search-get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -208,19 +208,19 @@ For more information, see [Install an extension](../../marketplace/install-exten
 4. Widen your search to all projects or your entire organization. Or narrow it to specific areas and types of code
    by selecting from the drop-down lists at the top of the page.
 
-   ![Use drop-down lists to widen or narrow your search](_img/code-search-get-started/select-projects.png)
+   ![Use drop-down lists to widen or narrow your search](media/code-search-get-started/select-projects.png)
 
 5. Use the tabs in the results page to view the history of the file and to compare versions of the file.
 
-   ![Use tabs to view history and compare files](_img/code-search-get-started/compare-tab.png)
+   ![Use tabs to view history and compare files](media/code-search-get-started/compare-tab.png)
 
 6. Choose the filename link at the top of this column to open the file in a new Code Explorer window.
 
-   ![Open the file in Code Explorer](_img/code-search-get-started/open-in-code-explorer.png)
+   ![Open the file in Code Explorer](media/code-search-get-started/open-in-code-explorer.png)
 
 7. Quickly [search for work items](work-item-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
-   ![Search for work items or wiki containing the same search string](_img/code-search-get-started/open-workitem.png)
+   ![Search for work items or wiki containing the same search string](media/code-search-get-started/open-workitem.png)
 
 ## How to search filters on a Multi Repo Multi branch environment
 

@@ -37,7 +37,7 @@ For a summary of the link restrictions that are defined within the process templ
  
 **Links control** 
  
- ![Example of links control added to a work item form](_img/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
+ ![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
  
   
 ```xml

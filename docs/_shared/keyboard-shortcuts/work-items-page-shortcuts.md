@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts when working from the **Repos>Work 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/_shared/_img/keyboard-shortcuts/work-items-shortcuts.png" alt="Work items page shortcuts"/></td>
+<td><img src="/azure/devops/_shared/media/keyboard-shortcuts/work-items-shortcuts.png" alt="Work items page shortcuts"/></td>
 <td>
 <p><strong>Work</strong></p>
 <br/>

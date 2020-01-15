@@ -48,7 +48,7 @@ There are three options for receiving events:
 3.Use [Zapier](https://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
 Services hooks can be found as a new hub in project administration.
 
-![Selecting a target service](_img/5_12_01.png)
+![Selecting a target service](media/5_12_01.png)
 
 [Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
 
@@ -66,7 +66,7 @@ Give it a try. We can’t wait to see what you come up with.
 
 Since we launched Visual Studio Online, many of our on-premises Team Foundation Server customers who have loved used TFS have wanted to start using Visual Studio Online. One of the things customers have asked us to help them with for that transition is to be able to migrate their work items, test cases, test results, and source code files in version control repositories. Today, we’re happy to announce a free migration utility that we have partnered with OpsHub to create that will help you with a one-way migration of the most commonly requested artifacts in TFS to bring them to your Visual Studio Online account. You can now find it on the [Visual Studio Gallery](https://aka.ms/OpsHubVSOMigrationUtility):
 
-![Service Migration Utility](_img/5_12_02.png)
+![Service Migration Utility](media/5_12_02.png)
 
 The migration utility will take you through a step-by-step process for mapping your team projects in Team Foundation Server on-premises to Visual Studio Online team projects. Team projects using standard process templates from TFS 2010, TFS 2012, and TFS 2013 are supported with this free migration utility, and you do not need to have upgraded the process templates used by the team projects or upgrade to the latest version of TFS 2013 to use the utility. Once you are finished migrating to Visual Studio Online, you’ll be on our latest version, able to take advantage of all of the latest features automatically!
 

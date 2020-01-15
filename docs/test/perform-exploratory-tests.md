@@ -35,31 +35,31 @@ quality of your product.
 1. Go to [Visual Studio Marketplace > Test &amp; Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web)
    and choose **Install**.
 
-   ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](_img/perform-exploratory-tests/getstarted-01.png)
+   ![Visual Studio Marketplace, Test &amp; Feedback extension, Install](media/perform-exploratory-tests/getstarted-01.png)
 
 1. Follow the instructions shown to install the Test &amp; Feedback extension in your browser:
 
    - If you are using Google Chrome, choose the **Install** link to open the 
      Google Chrome web store and follow the instructions to install the extension.
 
-     ![Install extension on Chrome](_img/perform-exploratory-tests/getstarted-02.png)
+     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-02.png)
 
-     ![Install extension on Chrome](_img/perform-exploratory-tests/getstarted-03.png)
+     ![Install extension on Chrome](media/perform-exploratory-tests/getstarted-03.png)
 
    - If you are using Mozilla Firefox 50.0 and higher, choose the **Download** link
      and save the file to a local folder on your computer. 
 
-     ![Install extension on Firefox](_img/perform-exploratory-tests/getstarted-07.png)
+     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-07.png)
 
      Select and drag the downloaded file and drop it on any tab in Firefox.
 
-     ![Install extension on Firefox](_img/perform-exploratory-tests/getstarted-08.png)
+     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-08.png)
 
      Choose **Install**.
 
-     ![Install extension on Firefox](_img/perform-exploratory-tests/getstarted-09.png)
+     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-09.png)
 
-     ![Install extension on Firefox](_img/perform-exploratory-tests/getstarted-10.png)
+     ![Install extension on Firefox](media/perform-exploratory-tests/getstarted-10.png)
 
 >You need to install the extension or add-on only once. Afterwards your browser will
 update it automatically.
@@ -68,13 +68,13 @@ update it automatically.
 ##  Select an exploratory testing mode
 
 1. Open the extension you installed in your browser by choosing the
-   ![Test and Feedback](_img/_shared/exp-test-icon.png) icon.
+   ![Test and Feedback](media/_shared/exp-test-icon.png) icon.
 
-   ![Open extension](_img/perform-exploratory-tests/open-extension.png)
+   ![Open extension](media/perform-exploratory-tests/open-extension.png)
  
 1. Decide if you want to use the extension in Connected or Standalone mode.
 
-   ![Choose connection mode](_img/perform-exploratory-tests/getstarted-06.png)
+   ![Choose connection mode](media/perform-exploratory-tests/getstarted-06.png)
 
    **[Connected mode](connected-mode-exploratory-testing.md)**  
    Available to all users of Azure DevOps and TFS 2015 or later:

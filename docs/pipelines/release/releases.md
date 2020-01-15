@@ -49,7 +49,7 @@ to that stage.
 
 The following schematic shows the relationship between release pipelines, releases, and deployments.
 
-![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
+![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
 
 Releases can be created from a release pipeline in several ways:
 

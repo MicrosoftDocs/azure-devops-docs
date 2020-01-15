@@ -27,7 +27,7 @@ Default subscriptions only send targeted notifications. That is, the recipient i
 
 The following events send notifications to all subscribers, by default. For more information about unsubscribing from a notification, see [Unsubscribe from a notification](unsubscribe-default-notification.md).  
 
-Within the personal notifications page, OOB subscriptions appear with the following image: ![Notification](_img/oob-notification.png).
+Within the personal notifications page, OOB subscriptions appear with the following image: ![Notification](media/oob-notification.png).
 
 
 | Category | 	Type| 	Build| 	Description

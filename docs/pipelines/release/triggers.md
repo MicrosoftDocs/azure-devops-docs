@@ -40,7 +40,7 @@ new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
 and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
 
-![Selecting a trigger for a release](_img/trigger-01.png)
+![Selecting a trigger for a release](media/trigger-01.png)
 
 If you have linked multiple Team Foundation Build artifacts to a release pipeline,
 you can configure continuous deployment for each of them.
@@ -72,7 +72,7 @@ If you want to create and start a release at specific times, define one or more
 scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
 pipeline and enable scheduled release triggers. You can configure multiple schedules.
 
-![Defining a scheduled release trigger](_img/trigger-04.png)
+![Defining a scheduled release trigger](media/trigger-04.png)
 
 See also [stage scheduled triggers](#stage-scheduled-triggers).
 
@@ -84,7 +84,7 @@ You can configure a pull request trigger that will create a new release when a p
 uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests
 that you want to activate this trigger. 
 
-![Selecting a trigger for a release](_img/trigger-01a.png)
+![Selecting a trigger for a release](media/trigger-01a.png)
 
 However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
 Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
@@ -114,14 +114,14 @@ when a release is created by a continuous deployment trigger, based on:
   stage. In addition, you can configure the trigger to fire
   for partially succeeded (but not failed) deployments.
 
-  ![The stage trigger conditions settings](_img/trigger-02a.png)
+  ![The stage trigger conditions settings](media/trigger-02a.png)
 
 * **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
   Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
 
-  ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
+  ![The artifact filter trigger conditions settings](media/trigger-02b.png)
 
   <a name="stage-scheduled-triggers"></a>
 
@@ -135,7 +135,7 @@ when a release is created by a continuous deployment trigger, based on:
   on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be
   available.
 
-  ![The scheduled trigger conditions settings](_img/trigger-02.png)
+  ![The scheduled trigger conditions settings](media/trigger-02.png)
 
 <a name="prtrigger"></a>
 
@@ -144,7 +144,7 @@ when a release is created by a continuous deployment trigger, based on:
   pull request deployment for the specific stages where you want the release to be deployed. 
   You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
-  ![The pull request trigger conditions settings](_img/trigger-02c.png)
+  ![The pull request trigger conditions settings](media/trigger-02c.png)
 
 * **Manually by a user**. Releases are
   not automatically deployed to the stage. To
@@ -183,7 +183,7 @@ stage succeeds. However, deployment to the
 **Production** stage occurs only after successful
 deployment to both the **QA** and **Pre-prod** stages.
 
-![Configuring a parallel (forked and joined) deployment pipeline](_img/trigger-03.png)
+![Configuring a parallel (forked and joined) deployment pipeline](media/trigger-03.png)
 
 In combination with the ability to define
 [pre- and post-deployment approvals](approvals/approvals.md),
