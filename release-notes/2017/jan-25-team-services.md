@@ -33,7 +33,7 @@ In future sprints, we will be working to make discussions mobile-friendly, so st
 
 ![mobile form feedback](_img/01_25_03.png)
 
-See our [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/24/the-mobile-work-item-form/) for more information.
+See our [blog post](https://devblogs.microsoft.com/devops/the-mobile-work-item-form/) for more information.
 
 ## Build editor preview
 

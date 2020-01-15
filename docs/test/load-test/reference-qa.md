@@ -433,7 +433,7 @@ when you set up the test, and it will be applied when the load test runs.
 
 **A**: Yes, you can in Azure DevOps, and in TFS 2015 and later.
 For more information, see
-[this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2015/08/24/cloud-load-test-support-in-mstest-exe-command-line-and-xaml-builds/).
+[this blog post](https://devblogs.microsoft.com/devops/cloud-load-test-support-in-mstest-exe-command-line-and-xaml-builds/).
 
 ### Q:  Can I debug a load test while it's running in the cloud?
 
@@ -516,7 +516,7 @@ API and the details required to create your test.
 
 **A**: No, you can use the 90-day trial version of Visual Studio Enterprise edition. This
 allows you to run cloud-based load tests. See 
-[this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/05/09/trying-out-the-cloud-load-testing-service-using-visual-studio-enterprise-trial/).
+[this blog post](https://devblogs.microsoft.com/devops/trying-out-the-cloud-load-testing-service-using-visual-studio-enterprise-trial/).
 
 ---
 
@@ -747,19 +747,19 @@ To fix this problem, create another load test. Delete the failed test run.
 
 **Tutorials**
 
-* [All about Load Test planning](https://blogs.msdn.microsoft.com/geoffgr/archive/2014/08/22/all-about-test-planning-part-1-introduction.aspx)
+* [All about Load Test planning](/archive/blogs/geoffgr/all-about-load-test-planning-part-1introduction)
 * [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
 * [Analyzing Load Test results](https://devblogs.microsoft.com/devops/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports/)
 * [Data driven Load Tests with VSO and SQL Azure](https://devblogs.microsoft.com/devops/data-driven-load-tests-using-visual-studio-online-and-sql-azure/)
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
 * [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
-* [A Web Performance Test primer](https://blogs.msdn.microsoft.com/edglas/archive/2010/03/24/web-test-authoring-and-debugging-techniques-for-visual-studio-2010.aspx)
-* [Managing Load Test results](https://blogs.msdn.microsoft.com/slumley/archive/2007/06/14/managing-load-test-results.aspx)
+* [A Web Performance Test primer](/archive/blogs/edglas/web-test-authoring-and-debugging-techniques-for-visual-studio-2010)
+* [Managing Load Test results](https://docs.microsoft.com/en-us/archive/blogs/slumley/managing-load-test-results)
 * [Getting 90th and 95th percentile results in a Load Test](https://blogs.msdn.microsoft.com/slumley/archive/2007/07/06/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation.aspx)
 * [Understanding Load Test results schema](https://blogs.msdn.microsoft.com/billbar/archive/2006/02/10/what-is-the-data-in-the-vsts-load-test-results-store.aspx)
 * [Load Test plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/04/10/load-test-plug-ins.aspx)
-* [Generating Excel reports for your Load Test runs](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/22/dev10-feature-load-test-excel-report-integration.aspx)
-* [Generating Run Comparison report in Excel](https://blogs.msdn.microsoft.com/slumley/archive/2009/11/07/vsts-2010-feature-load-testing-run-comparison-report-in-excel.aspx)
+* [Generating Excel reports for your Load Test runs](https://devblogs.microsoft.com/devops/generating-excel-reports-for-load-test-runs-done-in-between-0319-0331/)
+* [Generating Run Comparison report in Excel](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
 * [Understanding Virtual User Activity visualization](https://blogs.msdn.microsoft.com/slumley/archive/2009/06/09/vsts-2010-feature-load-test-virtual-user-activity-visualization.aspx)
 * [Using fiddler to create web tests](http://www.bugtrap.co.uk/2010/06/using-fiddler-with-visual-studio-team.html) 
 * [Creating web tests transactions from fiddler](https://blogs.msdn.microsoft.com/nexpert/archive/2009/05/04/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert.aspx)
@@ -774,7 +774,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 * [Quick Reference Guide for VS Performance Testing](https://vsptqrg.codeplex.com/)
 * [Geoff Gray's blog](https://blogs.msdn.microsoft.com/geoffgr/)
-* [Ed Glas' blog](https://blogs.msdn.microsoft.com/edglas/archive/2007/12/17/content-index-for-web-tests-and-load-tests.aspx)
+* [Ed Glas' blog](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
 * [Sean Lumley's blog](https://blogs.msdn.microsoft.com/slumley/)
 
 **Samples**

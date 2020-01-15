@@ -94,7 +94,7 @@ We now have a unified automation agent across build, release and test. This brin
 
 ![agent phases](_img/02_15_18.png)
 
-For more information, refer to the [this post](https://aka.ms/testingwithphases).
+For more information, refer to the [this post](https://devblogs.microsoft.com/devops/vstest-task-dons-a-new-avatar-testing-with-unified-agents-and-phases/).
 
 ## Multiple versions of Extension tasks
 Extension authors can now create extensions with multiple versions of a given task, which enables them to ship patches for each major version they have in production.

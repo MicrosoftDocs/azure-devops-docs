@@ -100,7 +100,7 @@ The Jenkins service hook has been enhanced to support Jenkins’ Cross-Site Requ
 
 ### Run SSH commands on remote machines from builds and releases
 
-The SSH task provides a way to run commands and scripts on remote machines via secure shell (SSH) as part of Team Services builds and releases. This enables deployment and validation scenarios such as installation of build artifacts on a Docker container or Linux virtual machine. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/).
+The SSH task provides a way to run commands and scripts on remote machines via secure shell (SSH) as part of Team Services builds and releases. This enables deployment and validation scenarios such as installation of build artifacts on a Docker container or Linux virtual machine. For more information, see [https://devblogs.microsoft.com/devops/ssh-build-task/](https://devblogs.microsoft.com/devops/ssh-build-task/).
 
 ### Create archives from builds and releases
 

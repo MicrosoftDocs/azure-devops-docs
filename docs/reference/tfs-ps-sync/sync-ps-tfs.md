@@ -22,7 +22,7 @@ ms.date: 12/10/2019
 
 If you're using an earlier version of Team Foundation Server and native integration is installed and configured, native integration won't work after you upgrade to TFS 2017 or a later version.
 
-For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
+For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://devblogs.microsoft.com/devops/microsoft-discontinuing-project-server-tfs-integration/).
 
 ## Synchronization support for TFS 2017 and Project Server
 
