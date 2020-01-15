@@ -29,21 +29,21 @@ When you're viewing a public project, you're able to browse and download the cod
 Choose **Repos > Files**.
 
 > [!div class="mx-imgBorder"]
-> ![Open Repos, anonymous user](_img/browse-code/open-code-vert-brn.png)
+> ![Open Repos, anonymous user](media/browse-code/open-code-vert-brn.png)
 
 ## Select the repository  
 
 Select the repository of interest from the repository selector.  
 
 > [!div class="mx-imgBorder"]
-> ![Choose repository, anonymous user](_img/browse-code/select-repository-vert.png)
+> ![Choose repository, anonymous user](media/browse-code/select-repository-vert.png)
 
 ## Download code
 
-Open the ![Repository actions](../../_img/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip** (or **Download** if you are downloading a single file). You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
+Open the ![Repository actions](../../media/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip** (or **Download** if you are downloading a single file). You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
 
 > [!div class="mx-imgBorder"]
-> ![Download code ](_img/download-code/download-zip-file.png)
+> ![Download code ](media/download-code/download-zip-file.png)
 
 ## View Files, Commits, Pushes, Branches, Tags, and Pull Requests  
 
@@ -52,7 +52,7 @@ Within a Git repository, you can view any of the following items: **Files**, **C
 In the following example, we view **Commits**.
 
 > [!div class="mx-imgBorder"]
-> ![Download code ](_img/browse-code/view-commits-vert.png)
+> ![Download code ](media/browse-code/view-commits-vert.png)
 
 ## Next steps
 

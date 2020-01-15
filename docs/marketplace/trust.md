@@ -22,7 +22,7 @@ The Marketplace provides you with the following resources to make an informed de
 
 | Activity | Implication |
 |:---------|:------------|
-| Look for the Top Publisher badge <img src="../extend/publish/_img/top-publisher.png" alt="Top Publisher badge" width="25"/> | The publisher has demonstrated commitment to its customers and the Marketplace through excellent policies, quality, reliability, and support. Note: the Top Publisher program is currently only applicable to publishers of Azure DevOps offerings (extensions/integrations).|
+| Look for the Top Publisher badge <img src="../extend/publish/media/top-publisher.png" alt="Top Publisher badge" width="25"/> | The publisher has demonstrated commitment to its customers and the Marketplace through excellent policies, quality, reliability, and support. Note: the Top Publisher program is currently only applicable to publishers of Azure DevOps offerings (extensions/integrations).|
 | Read the ratings and reviews | They tell you how others perceive the offering. |
 | Read the Q&A section | It may answer the questions you have and is a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. Use it to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. |
 | Read the privacy, license, and support policies | See if the publisher has provided them and if they meet your needs/concerns. |
@@ -41,7 +41,7 @@ Recommendation: Install an extension in an isolated organization or collection f
 
 The Top Publisher program is for publishers with one or more global Azure DevOps extensions or integrations. It isn't applicable for Visual Studio IDE and Visual Studio Code extension publishers.
 
-The Top Publisher program in Marketplace is designed to help consumers evaluate or acquire Azure DevOps extensions and integrations with confidence. The Top Publisher badge <img src="../extend/publish/_img/top-publisher.png" alt="Top Publisher badge" width="25"/> implies that the publisher has shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support.
+The Top Publisher program in Marketplace is designed to help consumers evaluate or acquire Azure DevOps extensions and integrations with confidence. The Top Publisher badge <img src="../extend/publish/media/top-publisher.png" alt="Top Publisher badge" width="25"/> implies that the publisher has shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support.
 
 Marketplace assigns the badge to a publisher after carefully reviewing the publisher across the following parameters:
 * Privacy policy

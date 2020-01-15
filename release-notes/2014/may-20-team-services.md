@@ -24,13 +24,13 @@ For a while now, one of the top customer requests for Visual Studio Online has b
 
 You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/get-started/connect-to-vs) on how to do it.
 
-![Logging into VS Online](_img/5_20_01.png)
+![Logging into VS Online](media/5_20_01.png)
 
 Once created, everything that you can do with a Visual Studio Online account works as you would expect including full clients support: i.e., clients and tools that support Visual Studio Online can connect to AAD-backed accounts. One nice thing about Azure Active Directory is that it supports linking to other AAD tenants and “external users” for enabling Microsoft account (Live ID) access to your AAD—meaning that it’s easy for you to work with people outside your organization by linking them to your AAD tenant but still maintaining central control.
 
 It’s also possible to create an Azure Active Directory–connected Visual Studio Online account from the Azure Management Portal:
 
-![Azure Management Portal](_img/5_20_02.png)
+![Azure Management Portal](media/5_20_02.png)
 
 If you want to find out more, head over to:
 
@@ -40,7 +40,7 @@ If you want to find out more, head over to:
 
 One benefit of an MSDN subscription is access to Visual Studio Online accounts. However, MSDN subscriptions require sign-in with a Microsoft account (Live ID). With the introduction of Azure Active Directory support for VS Online, we’ve added the ability to associate your Visual Studio Online MSDN benefit with work or school account, enabling you to get VS Online “credit” for your MSDN subscription when you log into VS Online with those credentials.
 
-![Accessing VS Online from My Account on MSDN Subscriptions](_img/5_20_03.png)
+![Accessing VS Online from My Account on MSDN Subscriptions](media/5_20_03.png)
 
 [Associating your Visual Studio Online benefit with a work account](https://msdn.microsoft.com/subscriptions/dn531048.aspx)
 
@@ -50,7 +50,7 @@ One benefit of an MSDN subscription is access to Visual Studio Online accounts. 
 
 With [Shared Parameters for Test Cases](apr-03-team-services.md), we introduced the ability to share test parameter data across test cases. You could get started with shared parameters by authoring new data or converting existing local parameters to shared parameters, but importing existing data from sources such as Excel was not possible. To enable the import scenario, with this deployment, we are enabling copy-paste functionality from Excel to shared parameter grid and vice versa. You can also copy-paste parameter data across grids.
 
-![Copying and pasting shared parameters in Excel](_img/5_20_04.png)
+![Copying and pasting shared parameters in Excel](media/5_20_04.png)
 
 ## End of data export period
 

@@ -28,12 +28,12 @@ You must be a [Project Collection Administrator or an organization Owner](faq-ch
 ## Add your privacy policy URL in Azure DevOps
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-  ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+  ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. In the **Overview** tab, add your privacy policy URL, and then select **Save**.
 
-   ![Screenshot showing where you can add your privacy policy URL in Organization settings](_img/add-privacy-url/privacy-url-in-organization-settings.png)
+   ![Screenshot showing where you can add your privacy policy URL in Organization settings](media/add-privacy-url/privacy-url-in-organization-settings.png)
 
 A link is added to your organization's privacy document. Your privacy policy URL is displayed only in **Organization settings** on the **Overview** page in Azure DevOps.
 

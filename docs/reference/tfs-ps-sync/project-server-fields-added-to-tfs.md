@@ -26,7 +26,7 @@ ms.date: 01/12/2017
 ##  <a name="defaulttab"></a> Default Project Server Tab  
  When you associate an enterprise project with a project, the **Project Server** tab, similar to the one in the following illustration, is added to the work item form. The tab is added only to those types of work items that you specify to participate in data synchronization. Fields are added only if their `displayTfsField` or `displayTfsMirror` attribute in the field mapping file is set to `true`.  
   
- ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
+ ![Project Server Tab default fields](media/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
  You can add or remove fields by customizing the field mappings for the project collection. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Field mapping reference](field-mapping-xml-element-reference.md).  
   

@@ -30,7 +30,7 @@ Analytics via Excel.
 
 3. In the **Data** tab, choose **New Query>From Other Sources>From OData Feed**.
 
-	![Excel Get Data ](_img/excel1.png) 
+	![Excel Get Data ](media/excel1.png) 
 
 
 4. Enter the URL in the format below and choose **OK**:  
@@ -42,7 +42,7 @@ Analytics via Excel.
 
 	If the *OrganizationName* is **fabrikam** and the *version* is **v1.0**, then the URL is `https://analytics.dev.azure.com/fabrikam/_odata/v1.0/`.
 
-	![Select OData Feed ](_img/pbi3.png)  
+	![Select OData Feed ](media/pbi3.png)  
 
 	> [!NOTE]  
 	> Alternatively, you can enter the URL with the *ProjectName* specified which will trim the results by the specified project across all entities related to that project. 
@@ -60,7 +60,7 @@ Analytics via Excel.
 	If the *CollectionName* is **fabrikam** and the *version* is **v1.0**, then the URL is 
 	`https://{ServerName}:{Port}/tfs/fabrikam/_odata/{v1.0}/`.
 
-	![Select OData Feed ](_img/pbi3-onprem.png)  
+	![Select OData Feed ](media/pbi3-onprem.png)  
 
 	> [!NOTE]  
 	> Alternatively, you can enter the URL with the *ProjectName* specified which will trim the results by the specified project across all entities related to that project. 
@@ -73,7 +73,7 @@ Analytics via Excel.
 
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return.
 
-    ![Excel Navigator](_img/excel2.png)
+    ![Excel Navigator](media/excel2.png)
 
 	At this point, if you click **Load**, Excel will load all of the data in each entity into Power Query. However, this may be more data than you want (or than Excel can handle). 
     To filter the data, select the entity to filter and choose **Edit**. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete choose **Close & Apply** in the upper left corner.
@@ -97,7 +97,7 @@ More information on these options can be found in the [Excel documentation](http
  
 By default, when basic data is returned from Analytics, the data is related as shown in the figure below:
 
-![Entity relationships](_img/pbi-relationships.png)  
+![Entity relationships](media/pbi-relationships.png)  
 
 Note that the Tags, Teams and Users are not related to any of the other data. This is due to how those entities
 are related. They are related by either many-to-many relationships which are not easily handled in these models or 

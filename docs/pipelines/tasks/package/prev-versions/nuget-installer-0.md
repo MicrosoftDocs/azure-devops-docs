@@ -83,7 +83,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 <tr>
 <td>
 
-<img src="../_img/nuget-installer.png" alt="Package: NuGet Installer"/>
+<img src="../media/nuget-installer.png" alt="Package: NuGet Installer"/>
 
 <br/><strong>Package: NuGet Installer</strong></td>
 <td>
@@ -97,7 +97,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 <tr>
 <td>
 
-<img src="../../build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="../../build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/></strong>Build: Visual Studio Build<strong></td>
 <td>

@@ -52,11 +52,11 @@ Follow these steps to sign your Android app while keeping your signing certifica
    - **key-alias**: The key alias for the signing certificate you generated.
    - **key-password**: The password for the key associated with the specified alias. _Again, be sure to click the **lock** icon._
 
-      ![Android signing variables](_img/secure-certs/android-signing-variables.png)
+      ![Android signing variables](media/secure-certs/android-signing-variables.png)
 
 1. Go back to the **Tasks** tab and reference the names of your newly-created variables in the signing options.
 
-      ![Android signing input values](_img/secure-certs/android-signing-input-values.png)
+      ![Android signing input values](media/secure-certs/android-signing-input-values.png)
 
 Save your build pipeline, and you are all set! Any build agent will now be able to securely sign your app without any certificate management on the build machine itself.
 
@@ -74,7 +74,7 @@ After creating your development or distribution signing certificate, export it t
 1. Click **View Details...**, right-click on the signing identity you wish to export, and click **Export...**.
 1. Enter a filename and password. Take note of the password as you will need it later.
 
-    ![Xcode Export Cert](_img/secure-certs/secure-certs-1.png)
+    ![Xcode Export Cert](media/secure-certs/secure-certs-1.png)
 
 1. Alternatively, follow a similar process using the **Keychain Access** app on macOS or generate a signing certificate on Windows. Use the procedure [described in this article](http://docs.phonegap.com/phonegap-build/signing/ios/) if you prefer this method.
 
@@ -85,7 +85,7 @@ You can download your app provisioning profile from the Apple Developer portal, 
 1. Right-click the provisioning profile you want to use and select **Show in Finder**.
 1. Copy the highlighted file from Finder to another location and give it a descriptive filename.
 
-    ![Xcode Show in Finder](_img/secure-certs/secure-certs-2.png)
+    ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
 
 ### Configure your build
 
@@ -161,7 +161,7 @@ Follow these steps:
 
     1. Open Xcode and go to **Xcode** &gt; **Preferences...** &gt; **Accounts** and select your Apple Developer account.
     1. Click **View Details...**, right-click the provisioning profile you want, and select **Show in Finder**.
-      ![Xcode Show in Finder](_img/secure-certs/secure-certs-2.png)
+      ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
     1. The name of the file that is highlighted in Finder is the UUID of your provisioning profile.
 
 1. Run the following command from a macOS Terminal window of the build agent machine to install the provisioning profile. Replace `<profile>` with the path to your provisioning profile file. Replace `<UUID>` with the UUID of the provisioning profile, obtained above.

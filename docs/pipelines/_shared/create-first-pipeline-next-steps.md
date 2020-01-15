@@ -25,7 +25,7 @@ If you created any test pipelines, they are easy to delete when you are done wit
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu at the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 
-![Delete pipeline](../_img/get-started-yaml/delete-pipeline.png)
+![Delete pipeline](../media/get-started-yaml/delete-pipeline.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

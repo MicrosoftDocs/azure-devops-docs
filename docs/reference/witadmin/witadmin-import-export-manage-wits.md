@@ -145,7 +145,7 @@ Changing the workflow or renaming a WIT might require you to perform some manual
 
 **A:** In the web portal, work items appear in query results and on the backlog and board pages of the Agile planning tools. To change the color associated with an existing WIT or add the color to use for a new WIT, [edit the process configuration](../xml/process-configuration-xml-element.md).  
   
- ![Color assignments to different work item types](_img/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
+ ![Color assignments to different work item types](media/alm_pc_colorconfig.png "ALM_PC_ColorConfig")  
   
 ### Q: How do I deactivate or disable a WIT? How do I restrict users from creating work items of a certain type?  
 **A:** If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.  

@@ -18,21 +18,21 @@ ms.topic: include
 <tr>
 <td align="left">View build and release pipelines 
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Define builds with continuous integration
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -40,39 +40,39 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Approve releases
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Azure Artifacts (5 users free)
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Queue builds, edit build quality
 </td>
 <td>  </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -81,8 +81,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -90,9 +90,9 @@ ms.topic: include
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -101,8 +101,8 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
 </tr>
 <tr>
@@ -112,18 +112,18 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create and edit task groups 
 </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Manage task group permissions
@@ -131,19 +131,19 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Use and manage library items such as variable groups 
@@ -151,9 +151,9 @@ ms.topic: include
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
 </table>

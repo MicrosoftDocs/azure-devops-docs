@@ -24,7 +24,7 @@ and determine the mitigation measures required to reduce the risks.
 Can be used only as a [gate](../../release/approvals/gates.md).
 This task is not supported in a build or release pipeline.
 
-![Using the task as a gate in a release pipeline](_img/gates.png)
+![Using the task as a gate in a release pipeline](media/gates.png)
 
 ## Arguments
 

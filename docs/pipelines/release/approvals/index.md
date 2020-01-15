@@ -35,7 +35,7 @@ deployment pipeline and prompt users to carry out manual tasks, then resume or r
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 
-![Schematic view of approvals and gates in a stage](_img/approvals-gates.png)
+![Schematic view of approvals and gates in a stage](media/approvals-gates.png)
 
 By using approvals, gates, and manual intervention you can take full control of your releases
 to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention

@@ -79,7 +79,7 @@ you specify determine how many cores and agents are used.
 
 **A**: You can do that here:
 
-![Update the agent count total cores](_img/LoadTestAgentsCores.png)
+![Update the agent count total cores](media/LoadTestAgentsCores.png)
 
 What do the values mean?
 
@@ -179,12 +179,12 @@ after each test completes, instead of having to wait for them to be acquired and
 provisioned for each test run. In Visual Studio Update 3
 and later, specify the retention time in your run settings properties.
 
-![Specify resource retention time in Visual Studio 2017 and Visual Studio 2015 Update 3 and higher](_img/resource-retain-time01.png)
+![Specify resource retention time in Visual Studio 2017 and Visual Studio 2015 Update 3 and higher](media/resource-retain-time01.png)
 
 In earlier versions of Visual Studio, add a context parameter named **ResourcesRetentionTimeInMinutes**
 to your run settings.
 
-![Specify resource retention time in Visual Studio 2015 pre Update 3](_img/resource-retain-time02.png)
+![Specify resource retention time in Visual Studio 2015 pre Update 3](media/resource-retain-time02.png)
 
 Note:
 
@@ -227,7 +227,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 ### Q: Can I analyze load tests that ran previously?
 
-**A**: Yes, to open and manage those results, click ![Manage results toolbar button](_img/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](https://msdn.microsoft.com/library/dd728091%28v=vs.140%29.aspx) to compare them.
+**A**: Yes, to open and manage those results, click ![Manage results toolbar button](media/run-performance-tests-app-before-release/manage-results.png) in the load test editor. You can have multiple tests open at the same time to compare runs, and [create trend analysis reports](https://msdn.microsoft.com/library/dd728091%28v=vs.140%29.aspx) to compare them.
 
 ### Q: Is there a difference between what I can analyze during a running test versus a completed test?
 
@@ -352,7 +352,7 @@ If you need more help, contact
 **A**:  When you set up your load test run, you can select the test agent location from any supported Azure datacenter, starting with Visual Studio Ultimate 2013 Update 5 and Visual Studio Enterprise 2015. 
 After your run finishes, your results are stored in the same location as your Azure DevOps subscription.
 
-![Edit load test to set location](_img/CLT_LoadTestSetLocation.png)
+![Edit load test to set location](media/CLT_LoadTestSetLocation.png)
 
 If you're using an earlier version of Visual Studio, 
 the agent location is based on the location that you chose 
@@ -378,7 +378,7 @@ edit the think time in the Properties view.
 **A**: Yes, your project can have multiple test settings files. Add another 
 test settings file to your Solution Items folder. 
 
-![Right-click test settings file, click Active Load and Web Test Settings](_img/LoadTestMultipleTestSettings.png)
+![Right-click test settings file, click Active Load and Web Test Settings](media/LoadTestMultipleTestSettings.png)
  
 Now you can use one settings file to run your tests locally and the 
 other settings file to run your load tests in the cloud. To switch between them, 
@@ -568,7 +568,7 @@ for your app there. If you see data collected there, report your issue to
   Also check that you can see the apps in **Application Insights** in the 
   Azure portal, as shown here:
   
-  ![Checking that the apps are listed in the Azure portal](_img/get-performance-data-for-load-tests/get-load-test-insights-05.png)
+  ![Checking that the apps are listed in the Azure portal](media/get-performance-data-for-load-tests/get-load-test-insights-05.png)
  
 * The Azure Resource Manager access token has expired. The token is valid for 12 hours 
   in the context of Azure DevOps. Sign out of Azure DevOps and then sign 
@@ -602,7 +602,7 @@ such as when a connection to the results database is lost.
 Test errors relate to the test. View both these messages from the 
 Details page on the progress graphs.
 
-![View status and error messages](_img/LoadTestInProgress.png)
+![View status and error messages](media/LoadTestInProgress.png)
 
 ### Q: I get an error when I try to import downloaded test results. What do I do?
 

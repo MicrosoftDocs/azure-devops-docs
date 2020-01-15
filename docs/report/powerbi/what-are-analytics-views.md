@@ -45,7 +45,7 @@ As set of default Analytics views are provided. The default views and are immedi
 Here we show the default views created for a project based on the Agile process. To learn how to open this view in your web portal, see [Manage Analytics views](analytics-views-manage.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./_img/default-views/default-views.png)
+> ![Default Analytics views](./media/default-views/default-views.png)
 
 [!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
@@ -53,13 +53,13 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker range="azure-devops"
 
-![Power BI Azure DevOps Connector (Beta)](_img/pbi-getstarted-123.png)
+![Power BI Azure DevOps Connector (Beta)](media/pbi-getstarted-123.png)
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-![Power BI Azure DevOps Server Connector (Beta)](_img/pbi-getstarted-123-onprem.png)
+![Power BI Azure DevOps Server Connector (Beta)](media/pbi-getstarted-123-onprem.png)
 
 ::: moniker-end
 

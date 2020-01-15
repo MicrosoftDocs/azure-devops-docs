@@ -46,17 +46,17 @@ Some examples are:
 
 1. Select the **Deployment** page and set the **Enable deployment** checkbox.
 
-   ![Enable deployment of artifacts](_img/install-certs-and-software/enable-deloyment.png)
+   ![Enable deployment of artifacts](media/install-certs-and-software/enable-deloyment.png)
 
 1. Choose **Add File**, browse to the location of your certificate, and add it to the deployment items list.
 
-   ![Add certificate to deploy](_img/install-certs-and-software/add-certificate.png)
+   ![Add certificate to deploy](media/install-certs-and-software/add-certificate.png)
 
 1. Select the **Setup and Cleanup Scripts** page in left-hand navigation bar.
 
 1. Choose the ellipsis (**...**), browse to the location of the file or other artifact you want to deploy, and add it to the deployment items list.
 
-   ![Add script to deploy](_img/install-certs-and-software/add-script.png)
+   ![Add script to deploy](media/install-certs-and-software/add-script.png)
 
 1. Choose **Apply** and then **Close**.
 

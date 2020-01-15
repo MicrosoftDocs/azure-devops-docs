@@ -46,7 +46,7 @@ If you accidentally delete a feed, Azure Artifacts gives you the opportunity to 
 
 You can view your your feeds pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
 
-![Go to Azure Artifacts](_img/deleted-feeds-dropdown.png)
+![Go to Azure Artifacts](media/deleted-feeds-dropdown.png)
 
 1. In the feed pending deletion, click **Feed Settings**
 

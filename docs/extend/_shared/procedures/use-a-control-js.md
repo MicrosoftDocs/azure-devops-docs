@@ -47,4 +47,4 @@
 
 1. Refresh the page to see the grid.
 
-	![Grid control on the hello world page](./_img/use-a-control/grid.png)
+	![Grid control on the hello world page](./media/use-a-control/grid.png)

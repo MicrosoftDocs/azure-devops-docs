@@ -29,7 +29,7 @@ Notification statistics show the top 10 most active subscriptions and top event 
 3. Analyze the most active subscriptions and top event initiators.
 
 > [!div class="mx-imgBorder"] 
->![Organization notification settings delivery option](_img/view-organization-notification-stats.png)
+>![Organization notification settings delivery option](media/view-organization-notification-stats.png)
 
 Notes:
 
