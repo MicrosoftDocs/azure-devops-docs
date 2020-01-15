@@ -19,7 +19,7 @@ Learn about the key concepts and components that are used in Azure Pipelines. Un
 
 **Key concepts overview**
 
-![key concepts overview](_img/key_concepts_overview.svg)
+![key concepts overview](../_img/key_concepts_overview.svg)
 
 - A [trigger](#trigger) tells a Pipeline to run. 
 - A [pipeline](#pipeline) is made up of one or more [stages](#stage). A pipeline can deploy to one or more [environments](#environment).
