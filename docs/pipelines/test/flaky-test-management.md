@@ -20,6 +20,8 @@ monikerRange: 'azure-devops'
 
 Productivity for developers relies on the ability of tests to find real problems with the code being developed or modified, in a timely and reliable fashion. Flaky tests are a barrier to finding real problems, since those failures often are not related to the changes being tested. Flaky tests also impact the quality of shipped code. 
 
+[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+
 A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. 
 The goal of bringing flaky test management in-product is to reduce developer pain cause by flaky tests and cater to the whole workflow. Flaky test management provides the following benefits.
 

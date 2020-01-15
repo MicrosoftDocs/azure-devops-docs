@@ -80,7 +80,7 @@ None
     </tr>
     <tr>
         <td><code>SymbolServerType</code><br/>Symbol server type</td>
-        <td>(Required) Choose where to publish symbols. Symbols published to the Azure Artifacts symbol server are accessible by any user with access to the organization/collection. Azure DevOps Server only supports the "File share" option. Follow <a href= "https://go.microsoft.com/fwlink/?linkid=846265">these instructions</a> to use Symbol Server in Azure Artifacts.<br/>
+        <td>(Required) Choose where to publish symbols. Symbols published to the Azure Artifacts symbol server are accessible by any user with access to the organization/collection. Azure DevOps Server only supports the "File share" option. Follow <a href="../../artifacts/symbols.md" data-raw-source="[these instructions](../../artifacts/symbols.md)">these instructions</a> to use Symbol Server in Azure Artifacts.<br/>
             <strong>TeamServices:</strong>
             <ul>
                 <li>Symbol Server in this organization/collection (requires Azure Artifacts)</li>

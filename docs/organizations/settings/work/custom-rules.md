@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/10/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -49,13 +49,29 @@ As an example, you can make a field required based on the value assigned to the 
 &nbsp;&nbsp;&nbsp;`(Condition) And when the value of *Value Area* = *Business*`  
 &nbsp;&nbsp;&nbsp;`(Action) Then make required *Story Points*`
 
+
+::: moniker range="azure-devops"
+
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
 > |![list of conditions](_img/rules/when-condition-2.png) | ![list of actions](_img/rules/rule-actions.png)
 
 > [!NOTE]  
-> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available in the Azure DevOps Service.
+> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](_img/rules/when-condition-1.png) | ![list of actions](_img/rules/rule-actions.png)
+
+::: moniker-end
+
 
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
@@ -106,6 +122,9 @@ You delete or disable the rule from the actions menu of the rule.
 
 [!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
 
+
+::: moniker range="azure-devops"
+
 ## Restrict modification of work items based on a user or group
 
 You can customize work item types to support these restriction requests:
@@ -119,6 +138,9 @@ For example, the following condition indicates that the State field, for the Ini
 
 > [!div class="mx-imgBorder"]  
 > ![Custom rule](../../security/_img/grant-restrict/restrict-creating-work-items-inheritance.png)
+
+::: moniker-end
+
 
 ## Related articles
 

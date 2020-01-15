@@ -1,5 +1,5 @@
 ---
-title: Pipeline runs
+title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 05/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Pipeline runs
+# Pipeline run sequence
 
 ![Pipeline overview](_img/run-overview.svg)
 
@@ -42,7 +42,7 @@ To turn a pipeline into a run, Azure Pipelines goes through several steps in thi
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
-4. For each job selected to run, expand [multi-configs](phases.md#multi-configuration) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
+4. For each job selected to run, expand [multi-configs](phases.md#parallelexec) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
 
@@ -161,11 +161,11 @@ A succeeding cleanup step cannot save the job from failing; jobs can never go ba
 Each job has a timeout.
 If the job has not completed in the specified time, the server will cancel the job.
 It will attempt to signal the agent to stop, and it will mark the job as canceled.
-On the agent side, this means cancelling all remaining steps and uploading any remaining [results](#report-and-collect-results).
+On the agent side, this means canceling all remaining steps and uploading any remaining [results](#report-and-collect-results).
 
 Jobs have a grace period known as the cancel timeout in which to complete any cancellation work.
 (Remember, steps can be marked to run [even on cancellation](#state-and-conditions).)
-After the timeout plus the cancel timout, if the agent has not reported that work has stopped, the server will mark the job as a failure.
+After the timeout plus the cancel timeout, if the agent has not reported that work has stopped, the server will mark the job as a failure.
 
 Because Azure Pipelines distributes work to agent machines, from time to time, agents may stop responding to the server.
 This can happen if the agent's host machine goes away (power loss, VM turned off) or if there's a network failure.

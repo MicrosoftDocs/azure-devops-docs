@@ -2,11 +2,11 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 12/19/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: jillfra
+ms.manager: mijacobs
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
@@ -117,6 +117,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="7"><a href="2020/sprint-163-update.md" data-raw-source="[13 January 2020](2020/sprint-163-update.md)">13 January 2020</a></td>
+            <td>Get compact and organized notifications in the Microsoft Teams app from Azure Boards, Azure Pipelines and Azure Repos</td><td>General</td><td>N/A</td>
+        </tr> 
+        <tr><td>Delete bulk subscriptions created in a Microsoft Teams or Slack channel</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Use pipeline decorators to inject steps automatically in a deployment job</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Allow repository references to other Azure Repos organizations</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Step targeting and command isolation</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Builds and releases auditing</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Enhancements to evaluate artifacts checks policy in pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr>
             <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
             <td>New web platform conversion landing pages</td><td>Repos</td><td>Future</td>
@@ -4402,7 +4412,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> ["div class="mx-imgBorder"]
-> "[Make a suggestion](_img/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"]
+> ![Make a suggestion](_img/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
