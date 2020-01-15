@@ -36,7 +36,6 @@ For example, `VSTS_AGENT_INPUT_PASSWORD` instead of specifying `--password`.
 root of the agent directory. The work directory is owned by a given
 agent and should not share between multiple agents.
 - `--acceptTeeEula` - accept the Team Explorer Everywhere End User License Agreement (macOS and Linux only)
-- `--once` - accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances)
 
 ### Windows-only startup
 - `--runAsService` - configure the agent to run as a Windows service (requires administrator permission)
