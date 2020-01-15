@@ -4,7 +4,7 @@
 Many developers like to show that they're keeping their code quality high by displaying a status badge in their repo.
 
 
-![Status badge shows Azure pipeline succeeded](_img/azure-pipelines-succeeded.png)
+![Status badge shows Azure pipeline succeeded](media/azure-pipelines-succeeded.png)
 
 To copy the status badge to your clipboard:
 

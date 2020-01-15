@@ -31,14 +31,14 @@ A subscription lets you control what your team should be notified about and how 
 
     ::: moniker range=">= azure-devops-2019"  
 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+   ![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
 
     ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
 > [!div class="mx-imgBorder"] 
->![Navigate to team notifications page](_img/nav-team-notifications-hub.png) 
+>![Navigate to team notifications page](media/nav-team-notifications-hub.png) 
 
 ::: moniker-end
 
@@ -46,13 +46,13 @@ A subscription lets you control what your team should be notified about and how 
 
     ::: moniker range=">= azure-devops-2019"
 
-    ![New subscription](_img/new-subscription-newnav.png) 
+    ![New subscription](media/new-subscription-newnav.png) 
 
 	::: moniker-end
 
     ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-   ![New subscription](_img/new-subscription.png)
+   ![New subscription](media/new-subscription.png)
 
 	::: moniker-end
 
@@ -60,23 +60,23 @@ A subscription lets you control what your team should be notified about and how 
 
    ::: moniker range="azure-devops"
 
-   ![Select event category and template](_img/new-sub-page-preview.png)
+   ![Select event category and template](media/new-sub-page-preview.png)
 
    ::: moniker-end
 
    ::: moniker range="<= azure-devops-2019"
 
-    ![Select event category and template](_img/new-sub-page1.png)
+    ![Select event category and template](media/new-sub-page1.png)
 
    ::: moniker-end
 
 4. Provide a description to help you identify the subscription later.
 
-    ![Select event category and template](_img/new-sub-description.png)
+    ![Select event category and template](media/new-sub-description.png)
 
 5. Choose which team members should receive a notification:
 
-    ![Select role](_img/new-sub-team-delivery-by-role.png)
+    ![Select role](media/new-sub-team-delivery-by-role.png)
 
    You can choose one of the following delivery options:
    * **Team members by role**: only certain team members associated with the event are notified. For example, for work item changes, you might only want the current assignee of the work item to receive a notification.
@@ -88,11 +88,11 @@ A subscription lets you control what your team should be notified about and how 
 
 6. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
-    ![Select scope](_img/new-sub-scope.png)
+    ![Select scope](media/new-sub-scope.png)
 
 7. Optionally configure additional filter criteria.
 
-    ![Select scope](_img/new-sub-filter-conditions.png)
+    ![Select scope](media/new-sub-filter-conditions.png)
 
 8. Select **Finish** to save the new subscription.
 
@@ -104,15 +104,15 @@ Choose the default method for your team to receive notifications by updating the
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)
+   ![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)
 
 2. Choose **Delivery settings**:
 
-   ![Delivery settings](_img/delivery-settings-newnav.png)
+   ![Delivery settings](media/delivery-settings-newnav.png)
 
 3. Choose which option best fits your team's needs:  
 
-    ![Delivery settings options](_img/delivery-settings-options.png)
+    ![Delivery settings options](media/delivery-settings-options.png)
 
 Your team delivery settings are updated for notifications.
 
@@ -121,16 +121,16 @@ Your team delivery settings are updated for notifications.
 Manage your group notifications by updating the group's **Delivery settings**.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../_img/icons/gear-icon.png) **Organization settings**.
-  ![Open Organization settings](../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
+  ![Open Organization settings](../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
 
-   ![Group notification settings](_img/group-notification-settings.png) 
+   ![Group notification settings](media/group-notification-settings.png) 
 
 4. Choose which option best fits your group's needs, and then select **Save**.  
 
-    ![Delivery settings options](_img/group-delivery-settings.png)
+    ![Delivery settings options](media/group-delivery-settings.png)
 
 Your group delivery settings are updated for notifications.
 

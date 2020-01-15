@@ -26,19 +26,19 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
-   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
    If you're not using the new navigation preview, select **Code**, **Branches**.
 
-   ![Open up the Branches page on the web](_img/branches/branches_nav.png)
+   ![Open up the Branches page on the web](media/branches/branches_nav.png)
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-   ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](media/branches/branches-page.png)
 
 3. Open the context menu by selecting the **...** icon next to the branch name. Select **Branch security** from the menu.
 
-   ![Open the branch permissions page from the branches context menu](_img/branches/branches_context_menu_permissions.png)
+   ![Open the branch permissions page from the branches context menu](media/branches/branches_context_menu_permissions.png)
 
 ## Add users or groups
 
@@ -52,7 +52,7 @@ Enter the sign-in address or group alias, then select **Save Changes**.
 Remove permissions for a user or group by selecting the user or Azure DevOps group, then selecting **Remove**. 
 The user or group will still exist in your Project and this change will not affect other permissions for the user or group.    
 
-![Remove branch permissions for a user in Azure DevOps Services or TFS](_img/branches/remove_permissions.png)
+![Remove branch permissions for a user in Azure DevOps Services or TFS](media/branches/remove_permissions.png)
  
 ## Set permissions 
 
@@ -64,7 +64,7 @@ Control branch permission settings from the branch permission view. Users and gr
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
-> ![Content version selector](../../_shared/_img/version-selector.png)
+> ![Content version selector](../../_shared/media/version-selector.png)
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 

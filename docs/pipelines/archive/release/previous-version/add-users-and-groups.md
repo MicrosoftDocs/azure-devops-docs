@@ -51,7 +51,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
 1. Open the New User page from the **Administration** | **Manage Users** tab.
 
-   ![Open the New User page](_img/add-users-01.png)
+   ![Open the New User page](media/add-users-01.png)
 
 1. Choose a user account using the ellipsis (**...**) button, and set the 
    user role.
@@ -73,7 +73,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. Choose the type of group you want to add from the **Administration** | 
    **Manage Groups** tab.
 
-   ![Add a user group](_img/add-users-02.png) 
+   ![Add a user group](media/add-users-02.png) 
 
    The **Manage Groups** tab is available only when you are connected to 
    Release Management Server. You cannot add groups when you are connected
@@ -82,7 +82,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. On the **Security** tab, select the permissions that you want to enable 
    for this group.
 
-   ![Select the permissions for a group ](_img/add-users-03.png)
+   ![Select the permissions for a group ](media/add-users-03.png)
 
 1. Under **Stages**, keep the default **All Stage Types** or add one or more 
    stages.
@@ -98,7 +98,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. If you create a Release Management group (one not associated with TFS or 
    AD), link existing user accounts to be members of this group.
 
-   ![Link existing user accounts as members of group ](_img/add-users-04.png)
+   ![Link existing user accounts as members of group ](media/add-users-04.png)
 
    Or, you can add a user account by choosing the **Create** button.
 

@@ -26,7 +26,7 @@ You can build your own Analytics widget to display in a [Dashboard](../dashboard
 > * How to build and publish the widget to the Azure DevOps marketplace
 With this information, you'll be able to create your own Analytics widget.
 
-![View of Configuration with Preview of Widget](./_img/extend-analytics-widget.png)  
+![View of Configuration with Preview of Widget](./media/extend-analytics-widget.png)  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

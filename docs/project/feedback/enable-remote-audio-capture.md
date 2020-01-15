@@ -49,7 +49,7 @@ To record audio as part of a feedback or testing session on a remote machine tha
   
     The **Remote Desktop Connection** dialog box opens.  
 
-	![Enable remote audio](_img/alm_rm_remoteaudio.png "ALM_RM_RemoteAudio")  
+	![Enable remote audio](media/alm_rm_remoteaudio.png "ALM_RM_RemoteAudio")  
 
 3.  In the **Computer** list, choose or enter the name of the computer to which you want to connect, and, in the **User name** box, enter your user name.  
   

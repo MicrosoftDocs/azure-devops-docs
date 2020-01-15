@@ -40,7 +40,7 @@ With semantic search, you search against a more fully indexed set of fields. Wit
 > [!TIP]   
 > If semantic search has been configured, you'll notice that the search box moves into the blue bar as shown in the following image.  
 > 
->![Search Work Items Text Box](_img/search-box/search-box-vsts.png)  
+>![Search Work Items Text Box](media/search-box/search-box-vsts.png)  
 ::: moniker-end     
 
 <a name="start-search"></a>
@@ -56,14 +56,14 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/_shared/start-search-icon.png) start search icon. 
 
     > [!div class="mx-imgBorder"]
-    > ![Work Item Search box](../../project/navigation/_img/search/work-item-search-vert.png)    
+    > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
@@ -73,7 +73,7 @@ Free text search easily searches across all work item fields, including custom f
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -84,14 +84,14 @@ Free text search easily searches across all work item fields, including custom f
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the title bar](../../project/search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work Item Search textbox in the title bar](../../project/search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon) to start your search. 
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../../project/search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
@@ -101,7 +101,7 @@ Free text search easily searches across all work item fields, including custom f
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -125,7 +125,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    to search for all items assigned to that user.
 
     > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/_img/search/search-work-vert.png)    
+    > ![Search from the title bar](../../project/navigation/media/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -136,7 +136,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
@@ -159,7 +159,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
    to search for all items assigned to that user.
 
     > [!div class="mx-imgBorder"]  
-    > ![Search from the title bar](../../project/navigation/_img/search/work-item-search-filters.png)    
+    > ![Search from the title bar](../../project/navigation/media/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 
@@ -170,7 +170,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](../../project/search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../../project/search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
@@ -215,34 +215,34 @@ Ad hoc search isn't available from Azure DevOps Services. Only [semantic search]
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)   
+> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 
 > [!div class="mx-imgBorder"]  
-> ![Search box shortcut menu (web portal)](_img/example-search-box-queries/IC588318.png)    
+> ![Search box shortcut menu (web portal)](media/example-search-box-queries/IC588318.png)    
 
 ::: moniker-end
 
 ### From Visual Studio Team Explorer
 
-Open the ![Context Menu Icon](_img/example-search-box-queries/IC533396.png) context menu and select an option.
+Open the ![Context Menu Icon](media/example-search-box-queries/IC533396.png) context menu and select an option.
 
 > [!div class="mx-imgBorder"]  
-> ![Search box menu (Team Explorer)](_img/example-search-box-queries/IC588319.png) 
+> ![Search box menu (Team Explorer)](media/example-search-box-queries/IC588319.png) 
 
 
 Finding work items using the search box (Team Explorer)
 
-![Find a work item using the search text box](_img/example-search-box-queries/IC552976.png)  
+![Find a work item using the search text box](media/example-search-box-queries/IC552976.png)  
 
 You can combine shortcuts and use search operators within the search box.
 
-Use the ![Search box clear icon (Team Explorer)](_img/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
+Use the ![Search box clear icon (Team Explorer)](media/example-search-box-queries/IC588317.png) **Clear** button to remove content from the search box. To switch your context to the search box from within Visual Studio, enter **Ctrl+'**.
 
 
 <a id="keywords" /> 

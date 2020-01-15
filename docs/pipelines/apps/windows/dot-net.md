@@ -82,7 +82,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
     
    Navigate to the **Files** tab of the **Repos** hub, and then click **Set up build**.
 
-   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-repos-hub.png)
+   ![Screenshot showing button to set up build for a repository](../_shared/media/set-up-first-build-from-repos-hub.png)
 
    You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
     
@@ -92,7 +92,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
    Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
-   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+   ![Screenshot showing button to set up build for a repository](../_shared/media/set-up-first-build-from-code-hub.png)
 
    You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 

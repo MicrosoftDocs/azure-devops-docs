@@ -100,18 +100,18 @@ Associate the public key generated in the previous step with your user ID.
 1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
    user interface. Select **Security** in the menu that appears.
 
-   ![Accessing User Profile in Azure DevOps Services](_img/use-ssh-authentication/ssh_profile_access.png)
+   ![Accessing User Profile in Azure DevOps Services](media/use-ssh-authentication/ssh_profile_access.png)
 
 2. Select **SSH public keys**, and then select **+ New Key**.
 
-    ![Accessing Security Configuration in Azure DevOps Services](_img/use-ssh-authentication/ssh_accessing_security_key.png)
+    ![Accessing Security Configuration in Azure DevOps Services](media/use-ssh-authentication/ssh_accessing_security_key.png)
 
 3. Copy the contents of the public key (for example, id_rsa.pub) that you generated into the **Public Key Data** field. 
 
    >[!IMPORTANT]
    >Avoid adding whitespace or new lines into the **Key Data** field, as they can cause Azure DevOps Services to use an invalid public key. When pasting in the key, a newline often is added at the end. Be sure to remove this newline if it occurs.
 
-    ![Configuring Public Key in Azure DevOps Services](_img/use-ssh-authentication/ssh_key_input.png)
+    ![Configuring Public Key in Azure DevOps Services](media/use-ssh-authentication/ssh_key_input.png)
 
 4. Give the key a useful description (this description will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
 
@@ -126,7 +126,7 @@ Associate the public key generated in the previous step with your user ID.
 
 1. Copy the SSH clone URL from the web portal. In this example, the SSL clone URL is for a repo in an organization named **fabrikam-fiber**, as indicated by the first part of the URL after `dev.azure.com`.
 
-   ![Azure Repos SSH Clone URL](_img/use-ssh-authentication/ssh_clone_URL.png)
+   ![Azure Repos SSH Clone URL](media/use-ssh-authentication/ssh_clone_URL.png)
 
    [!INCLUDE [project-urls](../../_shared/project-urls.md)]
  
@@ -351,7 +351,7 @@ Host *
 
 **A:** Whenever you register a new SSH Key with Azure DevOps Services, you will receive an email notification informing you that a new SSH key has been added to your account.
 
-![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
+![SSH notification example](media/use-ssh-authentication/ssh_notification.png)
 
 ### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
 

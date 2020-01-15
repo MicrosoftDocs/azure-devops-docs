@@ -44,7 +44,7 @@ troubleshoot failures, and drive failure ownership.
 
 The following example shows the task configured to publish test results.
 
-![Open the test history page](_img/publish-test-results.png)
+![Open the test history page](media/publish-test-results.png)
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 

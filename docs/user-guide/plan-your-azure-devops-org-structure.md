@@ -140,7 +140,7 @@ Consider the specific strategic work scoped to one of the organizations you crea
 
 Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
-![open-project-settings-vert-brn.png](../_shared/_img/settings/open-project-settings-vert-brn.png)
+![open-project-settings-vert-brn.png](../_shared/media/settings/open-project-settings-vert-brn.png)
 
 To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
 ## Managing version control
@@ -176,7 +176,7 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
-![azure-devops-org_project_team_visual.png](_img/azure-devops-org_project_team_visual.png)
+![azure-devops-org_project_team_visual.png](media/azure-devops-org_project_team_visual.png)
 
 ## More about organizational structure
 
@@ -188,7 +188,7 @@ When you create an organization, the identity that you sign in with defines the 
 
 Use your Microsoft account if you don't need to authenticate users for an organization with Azure AD. All users must sign in to your organization with a Microsoft account. If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
 
-   ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
+   ![Enter your password and sign in](../_shared/media/enter-password-sign-in.png)
 
 If you don't have an Azure Active Directory instance, create one for free from the [Azure portal](https://ms.portal.azure.com/) or use your Microsoft account to create an organization. Then, you can [connect the organization to Azure AD](../organizations/accounts/connect-organization-to-azure-ad.md).
 

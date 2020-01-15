@@ -6,4 +6,4 @@ ms.topic: include
 
 2. Go to the control panel.
 
-   ![Administer account](_img/control-panel-launch-icon.png)
+   ![Administer account](media/control-panel-launch-icon.png)

@@ -61,20 +61,20 @@ or [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/)
 
 1. [Select a test case and run it](run-manual-tests-with-microsoft-test-manager.md).
 
-   ![Start the test from Microsoft Test Manager.](_img/record-play-manual-tests/start-test.png)
+   ![Start the test from Microsoft Test Manager.](media/record-play-manual-tests/start-test.png)
 
 ## Record your actions during a test run
 
 1. In the **Start Test** window, 
    select **Create action recording**.
 
-   ![Create an action recording.](_img/record-play-manual-tests/create-recording.png)
+   ![Create an action recording.](media/record-play-manual-tests/create-recording.png)
 
 1. After each step, make sure to mark that step **Pass** or **Fail**.
 
 1. If you want to pause your test, choose **Pause**.  
 
-   ![Pause the recording](_img/record-play-manual-tests/pause-recording.png)
+   ![Pause the recording](media/record-play-manual-tests/pause-recording.png)
 
 1. After you finish your test run, choose **End Test**. 
    This makes sure the recording assigns your actions to the correct steps.
@@ -87,7 +87,7 @@ including passwords, emails, chat messages, and other sensitive data.
 Open the editing panel at the bottom of the test runner. 
 You can delete actions there:
 
-![Edit the recording inline](_img/record-play-manual-tests/delete-actions.png)
+![Edit the recording inline](media/record-play-manual-tests/delete-actions.png)
 
 Alternatively, you can run the test again and choose **Overwrite action recording**.
 
@@ -97,11 +97,11 @@ If you come to a sequence of shared steps,
 you might have already recorded them in an earlier test case. 
 You can either keep the earlier recording or record them now, like this:
 
-![Record a shared step](_img/record-play-manual-tests/rerecord-shared-steps.png)
+![Record a shared step](media/record-play-manual-tests/rerecord-shared-steps.png)
 
 You have to indicate when you finish recording the shared steps:
 
-![Record a shared step](_img/record-play-manual-tests/finish-rerecording-shared-steps.png)
+![Record a shared step](media/record-play-manual-tests/finish-rerecording-shared-steps.png)
 
 ### Capture parameter values
 
@@ -109,7 +109,7 @@ If a test step requires a parameter value that you must type as text,
 that text is recognized and bound into the recording. When you play the
 recording back with other parameter values, the new values are used instead.
 
-![Parameters are bound if you type them.](_img/record-play-manual-tests/text-parameters-bound.png)
+![Parameters are bound if you type them.](media/record-play-manual-tests/text-parameters-bound.png)
 
 Parameter values aren't bound if they're not typed as text, for example, 
 when values are selected instead. When you play the recording back, 
@@ -120,13 +120,13 @@ you'll have to manually perform that step.
 1. [Select your test and run it](run-manual-tests-with-microsoft-test-manager.md).
    Don't select the overwrite option in the **Start Test** dialog box.
 
-   ![Start the test without overwriting the recording](_img/record-play-manual-tests/start-test-no-overwrite.png)
+   ![Start the test without overwriting the recording](media/record-play-manual-tests/start-test-no-overwrite.png)
 
    You can play the whole test, or play individual steps. 
    The test runner will replay the keystrokes and mouse actions that you recorded.
 
 1. You have to check the result of each step. The recording doesn't check the outputs.
 
-   ![Play each step and then check the result.](_img/record-play-manual-tests/play-check-result.png)
+   ![Play each step and then check the result.](media/record-play-manual-tests/play-check-result.png)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

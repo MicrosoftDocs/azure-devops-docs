@@ -27,7 +27,7 @@ A development task is a small piece of development work that stems from a requir
   
  The form for task work items stores data in the fields and tabs that the following illustrations show:  
   
- ![CMMI Task work item form](_img/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
+ ![CMMI Task work item form](media/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
   
  After tasks have been created and estimated, use the Work Breakdown query to view the breakdown of all your requirements and tasks. For more information, see [CMMi process, List work items](../cmmi-process.md).  
   

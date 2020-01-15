@@ -55,7 +55,7 @@ The in-context CFD report shows the count of items in each Kanban column for the
 Cycle time is the time calculated for a work item from first entering an *In Progress* category state to entering a *Completed* [state category](#state-category). Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Lead time and cycle time](/azure/devops/report/dashboards/_img/cycle-lead-time-concept-intro.png)  
+> ![Lead time and cycle time](/azure/devops/report/dashboards/media/cycle-lead-time-concept-intro.png)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -113,7 +113,7 @@ Live updates is a Kanban board view option which when enabled automatically refr
 A swimlane is a configurable row on a Kanban board, usually used to support different service class levels of work. Learn more: [Expedite work with swimlanes](expedite-work.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)  
+> ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
 
 ::: moniker-end  
 
@@ -123,7 +123,7 @@ A swimlane is a configurable row on a Kanban board, usually used to support diff
 
 Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item. With split columns, your team knows exactly how many items sit idle, waiting for work to begin. Learn more: [Split columns](split-columns.md). 
 
-![Kanban board, Split columns](_img/kanban-board-split-columns-example-chart.png)
+![Kanban board, Split columns](media/kanban-board-split-columns-example-chart.png)
 
 ::: moniker-end  
 

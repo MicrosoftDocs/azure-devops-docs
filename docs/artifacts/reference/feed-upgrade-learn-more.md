@@ -28,7 +28,7 @@ All Azure DevOps Services feeds have been upgraded.
 
 You can check if your feed is using the legacy upstream sources feature by attempting to [add the nuget.org upstream source](../nuget/upstream-sources.md#existing-feed). You may also see a banner in your feed.
 
-![Feed upgrade banner at top of feed list](_img/feed-upgrade-banner.jpg)
+![Feed upgrade banner at top of feed list](media/feed-upgrade-banner.jpg)
 
 If you're unable to do so, your feed is a legacy feed. All feeds created using TFS 2018 RTM and earlier are legacy feeds.
 
@@ -36,7 +36,7 @@ If you're unable to do so, your feed is a legacy feed. All feeds created using T
 
 If you have a legacy feed, you can upgrade it by going to feed settings (the gear icon in the upper right of the feed page) and clicking the button to upgrade.
 
-![Feed upgrade button at the top of the feed details page in settings](_img/feed-upgrade-button.jpg)
+![Feed upgrade button at the top of the feed details page in settings](media/feed-upgrade-button.jpg)
 
 ## Behavior differences in legacy feeds
 
