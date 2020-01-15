@@ -47,6 +47,7 @@ For example, as a team member completes his coding task, he moves the item into 
 If you're new to Kanban, review [Kanban basics](kanban-basics.md)  to get an overview of how to access your board and implement Kanban.
 
 <a id="id-bottlenecks" />
+
 ## Identify bottlenecks, drive toward a perfect flow scenario
 How can you use split columns to improve workflow?  
 
