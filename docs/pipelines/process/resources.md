@@ -40,4 +40,4 @@ If you use YAML pipelines, then the pipeline must directly be authorized to use 
 
     In this case, on the Summary page, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
 
-    ![Resource authorization](_img/resource-auth.png)
+    ![Resource authorization](media/resource-auth.png)

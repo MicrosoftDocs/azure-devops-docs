@@ -7,7 +7,7 @@ ms.topic: include
 
 <a id="definitions-in-common"></a>
 
-The following fields and tabs appear in most work items. Each tab is used to track specific information, such as ![History tab icon](/azure/devops/boards/backlogs/_img/icon-history-tab-wi.png) history, ![Links tab icon](/azure/devops/boards/backlogs/_img/icon-links-tab-wi.png) links, or ![Attachment tab icon](/azure/devops/boards/backlogs/_img/icon-attachments-tab-wi.png) attachments. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
+The following fields and tabs appear in most work items. Each tab is used to track specific information, such as ![History tab icon](/azure/devops/boards/backlogs/media/icon-history-tab-wi.png) history, ![Links tab icon](/azure/devops/boards/backlogs/media/icon-links-tab-wi.png) links, or ![Attachment tab icon](/azure/devops/boards/backlogs/media/icon-attachments-tab-wi.png) attachments. These three tabs provide a history of changes, view of linked work items, and ability to view and attach files.  
 
 The only required field for all WITs is **Title**. When the work item is saved, the system assigns it a unique **ID**. The form highlights required field in yellow. For information about other fields, see [Work item field index](/azure/devops/boards/work-items/guidance/work-item-field).   
 
@@ -35,13 +35,13 @@ The only required field for all WITs is **Title**. When the work item is saved, 
     <td><p>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.</p><p>To change the drop-down list of iterations, see <a href="/azure/devops/organizations/settings/set-area-paths" data-raw-source="[Add and modify area and iteration paths](/azure/devops/organizations/settings/set-area-paths)">Add and modify area and iteration paths</a>.</p></td>
 </tr>
 <tr>
-    <td><p><img src="/azure/devops/boards/backlogs/_img/icon-history-tab-wi.png" alt="History tab icon"/><a href="/azure/devops/boards/queries/history-and-auditing" data-raw-source="[(History)](/azure/devops/boards/queries/history-and-auditing)">(History)</a></p></td>
+    <td><p><img src="/azure/devops/boards/backlogs/media/icon-history-tab-wi.png" alt="History tab icon"/><a href="/azure/devops/boards/queries/history-and-auditing" data-raw-source="[(History)](/azure/devops/boards/queries/history-and-auditing)">(History)</a></p></td>
 	<td><p>Review the audit trail that the system captures and capture additional information.</p><p>Every time that the work item is updated, information is appended to the history. History includes the date of the change, who made the change, and which fields were changed. You can also add formatted text to the history field.</p></td></tr>
 <tr>
-    <td><p><img src="/azure/devops/boards/backlogs/_img/icon-links-tab-wi.png" alt="Links tab icon"/> <a href="/azure/devops/boards/queries/link-work-items-support-traceability" data-raw-source="[(Links)](/azure/devops/boards/queries/link-work-items-support-traceability)">(Links)</a></p></td>
+    <td><p><img src="/azure/devops/boards/backlogs/media/icon-links-tab-wi.png" alt="Links tab icon"/> <a href="/azure/devops/boards/queries/link-work-items-support-traceability" data-raw-source="[(Links)](/azure/devops/boards/queries/link-work-items-support-traceability)">(Links)</a></p></td>
 	<td><p>Add all types of links, such as hyperlinks, changesets, source files, and so on.</p><p>This tab also lists all links defined for the work item.</p></td></tr>
 <tr>
-    <td><p><img src="/azure/devops/boards/backlogs/_img/icon-attachments-tab-wi.png" alt="Attachment tab icon"/><a href="/azure/devops/boards/queries/linking-attachments" data-raw-source="[(Attachments)](/azure/devops/boards/queries/linking-attachments)">(Attachments)</a> </p></td>
+    <td><p><img src="/azure/devops/boards/backlogs/media/icon-attachments-tab-wi.png" alt="Attachment tab icon"/><a href="/azure/devops/boards/queries/linking-attachments" data-raw-source="[(Attachments)](/azure/devops/boards/queries/linking-attachments)">(Attachments)</a> </p></td>
 	<td><p>Share more detailed information by adding files to the work item, such as email threads, documents, images, log files, or other file types.</p></td></tr>
 </tbody>
 </table>

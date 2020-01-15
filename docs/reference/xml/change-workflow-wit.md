@@ -22,7 +22,7 @@ The workflow determines the logical progression and regression of work that team
 
 **Workflow for Product Backlog Item (Scrum process template)**  
 
-![Product backlog item workflow, Scrum process](_img/scrum_pbistate.png "Scrum_PBIstate")  
+![Product backlog item workflow, Scrum process](media/scrum_pbistate.png "Scrum_PBIstate")  
 
 
 > [!NOTE]  
@@ -83,7 +83,7 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 
 **Example Workflow State Diagram &mdash; Agile Bug WIT**
 
-![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
+![Bug workflow states, Agile process template](media/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
 
 ```xml
 <WORKFLOW>

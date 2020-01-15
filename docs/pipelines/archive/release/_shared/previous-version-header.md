@@ -4,9 +4,9 @@ ms.topic: include
 
 **Visual Studio 2015 | Azure Pipelines | TFS 2015 | [Previous version](../overview-rm2013.md)**  
 
-![horizontal-line](../_img/horizontal-line.png)
+![horizontal-line](../media/horizontal-line.png)
 
-![information](../_img/info1.png)
+![information](../media/info1.png)
 **A newer version of is available**
 
 Release Management features have been integrated into **Azure Pipelines** and
@@ -23,5 +23,5 @@ If you are already using an earlier server and client
 version, you should be aware that no new features will
 be added to these versions.
  
-![horizontal-line](../_img/horizontal-line.png)
+![horizontal-line](../media/horizontal-line.png)
 

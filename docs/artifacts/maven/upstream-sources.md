@@ -40,5 +40,5 @@ To use Maven Central as an upstream source, either create a new feed or edit an 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-![Viewing your cached packages](_img/view-cached-packages.png)
+![Viewing your cached packages](media/view-cached-packages.png)
 

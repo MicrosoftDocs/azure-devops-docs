@@ -11,4 +11,4 @@
 To manage role settings for organization or collection-level agent pools, open **Organization settings**, choose **Agent Pools**, choose a pool, and then add a user and select their role.
 
 > [!div class="mx-imgBorder"]  
-> ![Agent pools security roles](/azure/devops/organizations/security/_shared/_img/agent-pool-roles-org.png) 
+> ![Agent pools security roles](/azure/devops/organizations/security/_shared/media/agent-pool-roles-org.png) 

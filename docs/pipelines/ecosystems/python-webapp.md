@@ -58,11 +58,11 @@ The quickest way to create an App Service instance is to use the Azure command-l
 
 1. Open the Azure CLI by selecting the Cloud Shell button on the portal's toolbar:
 
-   ![Azure Cloud Shell button on the Azure portal toolbar](../_img/python/azure-cloud-shell-button.png)
+   ![Azure Cloud Shell button on the Azure portal toolbar](../media/python/azure-cloud-shell-button.png)
 
 1. The Cloud Shell appears along the bottom of the browser. Select **Bash** from the dropdown:
 
-   ![Azure Cloud Shell appearance](../_img/python/azure-cloud-shell-interface.png)
+   ![Azure Cloud Shell appearance](../media/python/azure-cloud-shell-interface.png)
 
 1. In the Cloud Shell, clone your repository using `git clone`. For the example app, use:
 
@@ -127,17 +127,17 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
    
    A project is a grouping for boards, repositories, pipelines, and other aspects of Azure DevOps. If your organization doesn't have any projects, enter the project name *Flask Pipelines* under **Create a project to get started**, and then select **Create project**. 
 
-   ![First view of Azure DevOps dashboard](../_img/python/azure-devops-dashboard.png)
+   ![First view of Azure DevOps dashboard](../media/python/azure-devops-dashboard.png)
    
    If your organization already has projects, select **New project** on the organization page. In the **Create new project** dialog box, enter the project name *Flask Pipelines*, and select **Create**.
 
 1. From the new project page, select **Project settings** from the left navigation.
 
-   ![Project settings command on the project dashboard](../_img/python/project-settings.png)
+   ![Project settings command on the project dashboard](../media/python/project-settings.png)
 
 1. On the **Project Settings** page, select **Pipelines** > **Service connections**, then select **New service connection**, and then select **Azure Resource Manager** from the dropdown. 
 
-   ![Select Azure Resource Manager service connection](../_img/python/service-connection-01.png)
+   ![Select Azure Resource Manager service connection](../media/python/service-connection-01.png)
 
 1. In the **Add an Azure Resource Manager service connection** dialog box:
    1. Give the connection a name. Make note of the name to use later in the pipeline.
@@ -146,7 +146,7 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
    1. Under **Resource Group**, select your resource group from the dropdown. 
    1. Make sure the option **Allow all pipelines to use this connection** is selected, and then select **OK**.
 
-   ![New service connection dialog box](../_img/python/service-connection-02.png)
+   ![New service connection dialog box](../media/python/service-connection-02.png)
 
    The new connection appears in the **Service connections** list, and is ready for Azure Pipelines to use from the project.
 
@@ -158,27 +158,27 @@ To deploy to Azure App Service from Azure Pipelines, you need to establish a *se
 
 1. From your project page left navigation, select **Pipelines**.
 
-   ![Selecting Pipelines on the project dashboard](../_img/python/select-pipelines.png)
+   ![Selecting Pipelines on the project dashboard](../media/python/select-pipelines.png)
 
 1. Select **New pipeline**:
 
-   ![New pipeline button on the pipelines list](../_img/python/new-pipeline.png)
+   ![New pipeline button on the pipelines list](../media/python/new-pipeline.png)
 
 1. On the **Where is your code** screen, select **GitHub**. You may be prompted to sign into GitHub.
 
-   ![Where is your code prompt](../_img/python/where-is-your-code.png)
+   ![Where is your code prompt](../media/python/where-is-your-code.png)
 
 1. On the **Select a repository** screen, select the repository that contains your app, such as your fork of the example app. 
 
-   ![Select a repository](../_img/python/select-repository.png)
+   ![Select a repository](../media/python/select-repository.png)
 
 1. You may be prompted to enter your GitHub password again as a confirmation, and then GitHub prompts you to install the **Azure Pipelines** extension:
 
-   ![Install Azure Pipelines extension on GitHub](../_img/python/github-pipelines-install-01.png)
+   ![Install Azure Pipelines extension on GitHub](../media/python/github-pipelines-install-01.png)
 
    On this screen, scroll down to the **Repository access** section, choose whether to install the extension on all repositories or only selected ones, and then select **Approve and install**:
 
-   ![Install Azure Pipelines extension on GitHub approval](../_img/python/github-pipelines-install-02.png)
+   ![Install Azure Pipelines extension on GitHub approval](../media/python/github-pipelines-install-02.png)
 
 1. On the **Configure your pipeline** screen, select **Maven package Java project Web App to Linux on Azure**.
 
@@ -299,13 +299,13 @@ You're now ready to try it out!
    
    If there's an error, you can quickly return to the YAML editor by selecting the vertical dots at upper right and selecting **Edit pipeline**:
    
-   ![Edit pipeline comment from a build report](../_img/python/edit-pipeline-command.png)
+   ![Edit pipeline comment from a build report](../media/python/edit-pipeline-command.png)
    
 1. From the build page, select the **Azure Web App task** to display its output. To visit the deployed site, hold down the **Ctrl** key and select the URL after **App Service Application URL**.
    
    If you're using the Flask example, the app should appear as follows:
 
-   ![View of the Flask example code running on App Service](../_img/python/app-results.png)
+   ![View of the Flask example code running on App Service](../media/python/app-results.png)
 
 > [!IMPORTANT]
 > If your app fails because of a missing dependency, then your *requirements.txt* file was not processed during deployment. This behavior happens if you created the web app directly on the portal rather than using the `az webapp up` command as shown in this article.

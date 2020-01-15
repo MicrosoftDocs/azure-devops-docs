@@ -105,7 +105,7 @@ On the Build tab of a build pipeline, add this task:
    <tr>
       <td>
 
-![](_img/batch-script.png)
+![](media/batch-script.png)
 
 <br/>**Utility: Batch Script**</td>
 

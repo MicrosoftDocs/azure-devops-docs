@@ -29,15 +29,15 @@ As changes occur to work items, code reviews, source control files, and builds, 
 
 1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](/azure/devops/server/admin/setup-customize-alerts). 
 	
-	![Manage individual alerts from the web portal](_img/set-alerts-from-profile-menu.png)
+	![Manage individual alerts from the web portal](media/set-alerts-from-profile-menu.png)
 
 2. Enter one or more email addresses. Separate addresses with a semi-colon. 
 	
-	![Set email address for alerts](_img/personal/ALM_AN_Email.png)  
+	![Set email address for alerts](media/personal/ALM_AN_Email.png)  
 
 3.	Select the check box for each alert of interest. **My work items** and **My build** refer to work items and builds that you created.
 	
-	![Manage TFS alerts](_img/personal/ALM_AN_ManageAlerts.png)
+	![Manage TFS alerts](media/personal/ALM_AN_ManageAlerts.png)
 
 	Alert templates reference a customizable query. 
 	
@@ -51,21 +51,21 @@ As changes occur to work items, code reviews, source control files, and builds, 
 
 4.	For more options, open custom alerts and choose one of the options available. Also, you can open a basic alert and modify its settings, such as changing the email format from HTML to plain text or SOAP. 
 	
-	![Open custom alerts](_img/personal/ALM_AN_CustomAlerts.png)
+	![Open custom alerts](media/personal/ALM_AN_CustomAlerts.png)
 
 5.	Define alert filters in the same way you define query filters.
 	
-	![Fill out the custom alerts form](_img/personal/ALM_AN_DefiningAlerts.png)
+	![Fill out the custom alerts form](media/personal/ALM_AN_DefiningAlerts.png)
 	
 	For a list of available fields, see [Index of work item fields](../work-items/guidance/work-item-field.md).
 
 6.	For even more options, open the Select New Alert Template. 
 	
-	![Open all alert options](_img/personal/ALM_AN_Options.png)
+	![Open all alert options](media/personal/ALM_AN_Options.png)
 
 7.	Choose from one of the several alert types listed.
 	
-	![Choose an alert type from all options listed](_img/personal/ALM_AN_Templates.png)
+	![Choose an alert type from all options listed](media/personal/ALM_AN_Templates.png)
 
 
 <a id="team-alerts"></a>
@@ -76,19 +76,19 @@ As changes occur to work items, code reviews, source control files, and builds, 
 
 2. Open team alerts from Manage TFS Alerts.
 
-   ![Open team alerts](_img/team/ALM_AN_ManageTeamAlerts.png)
+   ![Open team alerts](media/team/ALM_AN_ManageTeamAlerts.png)
 
 3. Expand the team and open Select New Alert Template. 
 
-	![Work Item Alerts link on the Alerts admin page](_img/team/ALM_AN_TeamNewAlerts.png)
+	![Work Item Alerts link on the Alerts admin page](media/team/ALM_AN_TeamNewAlerts.png)
 
 4. Choose an alert type. 
 
-	![Choose an alert type for the team](_img/team/ALM_AN_TeamAlertTypes.png)
+	![Choose an alert type for the team](media/team/ALM_AN_TeamAlertTypes.png)
 
 5. Notice how the subscriber is set to the team context. Alerts are sent to each team member based on their preferred email address, which they set through their profile.
 	
-	![Subscriber set to team context](_img/team/ALM_AN_TeamSelector.png)
+	![Subscriber set to team context](media/team/ALM_AN_TeamSelector.png)
 
    > [!TIP]
    > For the team context, the alert query interprets the <strong>@Me</strong>  variable as anyone who is a member of the team.
@@ -105,27 +105,27 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 
 * From the web admin page for a project, open the Alerts tab and expand All alerts. 
 
-	![Expand All Alerts](_img/administer/ALM_AN_Administer.png)
+	![Expand All Alerts](media/administer/ALM_AN_Administer.png)
 
 ### Find alerts set for a team member or team
 
 * Choose the name of the team member from the drop down list, or type the name in the search box. 
 
-	![Choose the team member whose alerts you want to edit](_img/administer/ALM_AN_TeamMember.png)
+	![Choose the team member whose alerts you want to edit](media/administer/ALM_AN_TeamMember.png)
 
-	![Alerts listed for selected team member](_img/administer/ALM_AN_Result.png)
+	![Alerts listed for selected team member](media/administer/ALM_AN_Result.png)
 
 ### Create, edit, or delete an alert
 
 1. To create an alert for a team member, first find the alerts defined for that subscriber as described in the previous step. Then, create an alert in the same way that a team member creates alerts. 
 
-	![Create an alert for a team member](_img/administer/ALM_AN_AlertsForMember.png)
+	![Create an alert for a team member](media/administer/ALM_AN_AlertsForMember.png)
 
 	To create an alert for a team, first find the alerts assigned to that team, and then create an alert in the same way. The team should appear in the Subscriber field. 
 
 2. To edit or delete an alert, open it from the short cut menu.
 
-	![Open or delete an alert for a team member](_img/administer/ALM_AN_Shortcut.png)
+	![Open or delete an alert for a team member](media/administer/ALM_AN_Shortcut.png)
 
 ## Related articles
 

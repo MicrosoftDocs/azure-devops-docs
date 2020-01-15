@@ -41,33 +41,33 @@ By default, Project Collection Administrators are the only group that can access
 #### [Preview page](#tab/preview-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
-   ![Auditing](_img/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
+   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
    If you don't see Auditing in organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Permissions**, and then find the group or users to provide auditing access to.
 
-   ![Select Permissions to provide audit access](_img/azure-devops-auditing/select-permissions-preview.png)  
+   ![Select Permissions to provide audit access](media/azure-devops-auditing/select-permissions-preview.png)  
 
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
+   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox-preview.png)
 
 The user or group members have access to view your organization audit events. 
 
 #### [Current page](#tab/current-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**. 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
-   ![Auditing](_img/azure-devops-auditing/AccessAuditLogRedBox.png)
+   ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox.png)
    If you don't see Auditing in organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 4. Select **Security**, and then find the group or users to provide auditing access to.
 5. Set **View audit log** to **allow**, and then select **Save changes**.
-   ![Auditing access permission](_img/azure-devops-auditing/AuditLogPermissionRedBox.png)
+   ![Auditing access permission](media/azure-devops-auditing/AuditLogPermissionRedBox.png)
 
 The user or group members have access to view your organization audit events. 
 
@@ -97,13 +97,13 @@ Each audit event records additional pieces of information to what is viewable on
 
 To scope down the viewable audit events, select the time filter on the top-right-hand side of the page. 
 
-![Auditing entry filter by date & time](_img/azure-devops-auditing/AuditLogDateTimePicker.png)
+![Auditing entry filter by date & time](media/azure-devops-auditing/AuditLogDateTimePicker.png)
 
 You can select any time range over the last 90 days and scope it down to the minute. Once you’ve selected your wanted time range, select anywhere off the time range selector to start the search. By default, the top 200 results are returned for that time selection. If there are more results, then you can scroll down to load them onto the page. If you wish to further scope down the set of results returned, then you need to download the auditing data.
 
 Some audit events can contain multiple actions that took place at once, known as bulk audit events. You can distinguish these events from others with the information icon on the far right of the event. 
 
-![Auditing more information icon](_img/azure-devops-auditing/AuditLogMoreInformationHighRes.png)
+![Auditing more information icon](media/azure-devops-auditing/AuditLogMoreInformationHighRes.png)
 
 Clicking on the information icon will display a flyout that contains additional information about what happened in this audit event.
 

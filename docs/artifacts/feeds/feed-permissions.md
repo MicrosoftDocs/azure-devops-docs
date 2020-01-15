@@ -45,19 +45,19 @@ Select **Permissions**.
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![Editing a feed's permissions](_img/editfeeddialog-azure-devops-newnav.png)
+>![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Editing a feed's permissions](_img/editfeeddialog1.png)
+![Editing a feed's permissions](media/editfeeddialog1.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-![Editing a feed's permissions](_img/editfeeddialog1.png)
+![Editing a feed's permissions](media/editfeeddialog1.png)
 
 ::: moniker-end
 

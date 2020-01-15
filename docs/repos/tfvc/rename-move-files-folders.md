@@ -47,7 +47,7 @@ You should avoid renaming items managed by TFVC using your operating system (for
 > [!NOTE]
 > Git version control users can move and rename files from the command line or Windows Explorer without this concern. The changes will be reflected in Team Explorer.
 
-1.  In Visual Studio, in Team Explorer, choose ![Home icon](_img/rename-move-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
+1.  In Visual Studio, in Team Explorer, choose ![Home icon](media/rename-move-files-folders/IC547418.png) **Home**, and then choose **Pending Changes**.
 
 2.  In the **Excluded Changes** section, choose the **Detected:** link.
 

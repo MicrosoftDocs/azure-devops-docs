@@ -36,7 +36,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The Bug Reactivations report shows an area graph of the number of Bugs that the team has reactivated (**Reactivated and Still Active**) from a resolved or closed state and Bugs that the team has **Resolved**.  
   
-![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")  
+![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR")  
   
 This report is based on a PivotChart report that shows the most recent four weeks of data that was captured for Bugs and that is stored in the data warehouse.  
   

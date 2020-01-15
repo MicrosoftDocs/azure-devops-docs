@@ -34,7 +34,7 @@ You open the **Add Azure Resource Manager service connection** dialog,
 provide a connection name, and select a subscription from drop-down
 list of your subscriptions.  
 
-![The Add Azure Resource Manager service connection dialog](_img/azure-rm-endpoint/endpoint-01.png)
+![The Add Azure Resource Manager service connection dialog](media/azure-rm-endpoint/endpoint-01.png)
 
 When you choose **OK**, the system:
 

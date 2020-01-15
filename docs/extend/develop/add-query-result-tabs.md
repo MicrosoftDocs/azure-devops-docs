@@ -19,7 +19,7 @@ ms.date: 05/15/2018
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
-![Tab location on the Azure DevOps Services Query Results](../reference/targets/vss/work/web/_img/queryResultsPivotTab.png)
+![Tab location on the Azure DevOps Services Query Results](../reference/targets/vss/work/web/media/queryResultsPivotTab.png)
 
 ## Create your web page
 

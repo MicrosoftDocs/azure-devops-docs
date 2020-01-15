@@ -73,7 +73,7 @@ or the group management tools that your organization supports.
 
 A: On the group's identity card, check the group's source.
 
-![Screenshot of group identity card](_img/manage-azure-ad-groups/checkidentitysourceaad.png)
+![Screenshot of group identity card](media/manage-azure-ad-groups/checkidentitysourceaad.png)
 
 ### Q: Why doesn't Users show all Azure AD group members?
 
@@ -179,7 +179,7 @@ A: Go to your project collection or project. In the bar at the top, select the g
 
 Find the Azure AD group, and delete it from your organization.
 
-![Screenshot of project, with Delete option highlighted](_img/manage-azure-ad-groups/deleteaadgroupfromvso.png)
+![Screenshot of project, with Delete option highlighted](media/manage-azure-ad-groups/deleteaadgroupfromvso.png)
 
 ### Q: Why am I asked to remove a user from an Azure AD group when I delete that user from my organization?
 
@@ -240,18 +240,18 @@ A: This happens after you connect your organization to a directory.
 A: 
 * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
 
-   ![Select Azure AD and then Resolve](_img/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Azure AD and then Resolve](media/_shared/azure-ad-select-resolve-for-disconnected-users.png)
 
 * Match the identities. Select **Next** when you're done.
 
-   ![Resolve disconnected users](_img/_shared/resolve-disconnected-users.png)
+   ![Resolve disconnected users](media/_shared/resolve-disconnected-users.png)
 
 ### Q: I got an error message when I was resolving disconnections. What should I do?
 A: 
 * Try again.
 * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
 
-   ![guest-azure-ad-cannot-invite.png](_img/_shared/guest-azure-ad-cannot-invite.png)
+   ![guest-azure-ad-cannot-invite.png](media/_shared/guest-azure-ad-cannot-invite.png)
 
 * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
 
@@ -271,11 +271,11 @@ A: Clear your browser cache and delete any cookies for the session. Close your b
 A: 
 * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
 
-   ![Select Azure AD and then Resolve](_img/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Azure AD and then Resolve](media/_shared/azure-ad-select-resolve-for-disconnected-users.png)
 
 * Match the identities. Select **Next** when you're done.
 
-   ![Resolve disconnected users](_img/_shared/resolve-disconnected-users.png)
+   ![Resolve disconnected users](media/_shared/resolve-disconnected-users.png)
 
 ### Q: What if my work items are indicating that the users aren't valid?
 
@@ -289,11 +289,11 @@ A: Yes, all pieces in the system are updated with the new ID when a user’s ID 
 
 A: You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://azure.microsoft.com/support/devops/).
 
-![connection-warning.png](_img/_shared/connection-warning.png)
+![connection-warning.png](media/_shared/connection-warning.png)
 
 Select the bolded text to see which users are affected.
 
-![Show disconnected users](_img/_shared/show-disconnected-users.png)
+![Show disconnected users](media/_shared/show-disconnected-users.png)
 
 ### Q: What if I have over 200 users and want to connect to Azure AD?
 

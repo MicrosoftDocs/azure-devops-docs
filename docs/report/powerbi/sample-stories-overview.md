@@ -25,7 +25,7 @@ This article provides instructions on how to track the quality of work items tha
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Stories Overview Report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Stories Overview Report](media/odatapowerbi-storiesoverview.png)
 
 [!INCLUDE [stories-overview-info](_shared/sample-stories-overview-info.md)]
 
@@ -256,12 +256,12 @@ To create the report, perform the following steps:
 1. Add the columns you are interested in from the three Power BI queries.
 1. Select **Sum** as aggregation for additive columns like **Passed tests** etc.
     > [!div class="mx-imgBorder"] 
-    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/_img/powerbi-sum-aggregation.png)
+    > ![Power BI select Sum as aggregation](/azure/devops/report/powerbi/media/powerbi-sum-aggregation.png)
 
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Requirements tracking report](_img/odatapowerbi-storiesoverview.png)
+> ![Sample - Requirements tracking report](media/odatapowerbi-storiesoverview.png)
 
 
 ## Related articles

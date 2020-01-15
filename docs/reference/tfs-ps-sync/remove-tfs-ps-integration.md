@@ -213,7 +213,7 @@ Use the following commands to delete the TFS tables:
 > [!NOTE]
 > If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
 >
->![Sample screenshot of error message](_img/ps-tfs-integ-error-message.png)
+>![Sample screenshot of error message](media/ps-tfs-integ-error-message.png)
 
 
 ## 8. Delete enterprise fields and look-up tables from Project Server
@@ -232,7 +232,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Work Item Type (TFS)</li>
 </ul>
 <p>For example, delete the <code>IsTaskTypeInitialized (TFS)</code> field:</p> 
-<img src="_img/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
+<img src="media/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
 </li>
 <li>Also, delete all lookup tables that start with <code>Microsoft.VSTS</code>, for example: 
 <ul><li>Microsoft.VSTS.ProjSrv.SubmittedRevLT.DoNotDelete</li>
@@ -243,7 +243,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Microsoft.VSTS.ProjSrv.WorkItemIdLT.DoNotDelete</li>
 </ul>
 <p>For example, here we delete the <code>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</code> field:</p>
-<img src="_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
+<img src="media/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
 </li>
 </ol>
 
