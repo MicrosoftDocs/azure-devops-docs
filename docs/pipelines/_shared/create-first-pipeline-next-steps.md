@@ -1,13 +1,13 @@
 ## Next steps
 
-You've just learned how to create your first Azure Pipeline. Now you're ready to configure a pipeline for the language of your choice:
+You've just learned how to create your first Azure Pipeline. Learn more about configuring pipelines in the language of your choice:
 
 * [.NET Core](../ecosystems/dotnet-core.md)
-* [Containers](../ecosystems/containers/build-image.md)
 * [Go](../ecosystems/go.md)
 * [Java](../ecosystems/java.md)
 * [Node.js](../ecosystems/javascript.md)
 * [Python](../ecosystems/python.md)
+* [Containers](../ecosystems/containers/build-image.md)
 
 Or, you can proceed to [customize the pipeline](../customize-pipeline.md) you just created.
 

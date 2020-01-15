@@ -25,9 +25,11 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 [!INCLUDE [include](_shared/prerequisites.md)]
 
+## Create your first pipeline
+
 #### [Java](#tab/java)
 
-## Get the Java sample code
+### Get the Java sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -35,7 +37,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-## Create your first Java pipeline
+### Create your first Java pipeline
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
@@ -53,7 +55,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 #### [.Net](#tab/net)
 
-## Get the .Net Core sample code
+### Get the .Net Core sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -61,7 +63,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-## Create your first .Net Core pipeline
+### Create your first .Net Core pipeline
 
 [!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
@@ -86,7 +88,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 #### [Python](#tab/python)
 
-## Get the Python sample code
+### Get the Python sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -94,7 +96,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 ```
 
-## Create your first Python pipeline
+### Create your first Python pipeline
 
 [!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
 
@@ -118,7 +120,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 #### [JavaScript](#tab/javascript)
 
-## Get the JavaScript sample code
+### Get the JavaScript sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -126,7 +128,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
 
-## Create your first JavaScript pipeline
+### Create your first JavaScript pipeline
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
