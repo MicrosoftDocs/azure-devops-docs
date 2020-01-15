@@ -168,12 +168,12 @@ Synchronizes the workspace to match the items in the codebase that are [labeled]
 
 ## Tips
 
--   ![Tip](_img/get-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
+-   ![Tip](media/get-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to run `tf get` (you can do so from any directory in your workspace) to download the latest files from the server before you check out files and begin your work.
 
--   ![Tip](_img/get-command/IC572374.png) As needed, this command creates folders on disk to contain the child items that the command is downloading.
+-   ![Tip](media/get-command/IC572374.png) As needed, this command creates folders on disk to contain the child items that the command is downloading.
 
--   ![Tip](_img/get-command/IC572374.png) You can view information about the history of an item using the [History command](history-command.md) and the [Changeset Command](changeset-command.md).
+-   ![Tip](media/get-command/IC572374.png) You can view information about the history of an item using the [History command](history-command.md) and the [Changeset Command](changeset-command.md).
 
--   ![Tip](_img/get-command/IC572374.png) If you are concerned about what changes might occur to the files in the workspace, you can use the **/preview** option to see the changes that would occur without actually implementing them.
+-   ![Tip](media/get-command/IC572374.png) If you are concerned about what changes might occur to the files in the workspace, you can use the **/preview** option to see the changes that would occur without actually implementing them.
 
--   ![Tip](_img/get-command/IC572374.png) Conflicts could block your get. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve Command](resolve-command.md) to resolve these conflicts.
+-   ![Tip](media/get-command/IC572374.png) Conflicts could block your get. A typical cause of conflicts is trying to get an item on which you have pending changes. You can use the [Resolve Command](resolve-command.md) to resolve these conflicts.

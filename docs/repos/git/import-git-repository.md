@@ -53,17 +53,17 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 1. Select **Repos**, **Files**.
 
-   ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](media/repos-navigation/repos-files.png)
 
 2. From the repo drop-down, select **Import repository**.
 
-   ![Manage repositories](_img/repo-mgmt/import-repository.png)
+   ![Manage repositories](media/repo-mgmt/import-repository.png)
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
    If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
-   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+   ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -71,13 +71,13 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 From the repo drop-down, select **Import repository**.
 
-![Import Repository Option](_img/Import-Repo/ImportRepository.png)
+![Import Repository Option](media/Import-Repo/ImportRepository.png)
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
 If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
-![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ If the source repository is private but can be accessed using basic authenticati
 
 On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
 
-![Import Repository into an existing repository](_img/Import-Repo/ImportRepofromEmptyRepo.png)
+![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
 >[!NOTE]
 >The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)

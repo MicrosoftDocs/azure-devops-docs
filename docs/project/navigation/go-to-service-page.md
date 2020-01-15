@@ -52,7 +52,7 @@ You open a service by choosing the service from the sidebar and then selecting f
 For example, here we select **Boards>Backlogs**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open a service, vertical sidebar](_img/go-to-app/work-backlogs-selection.gif)
+> ![Open a service, vertical sidebar](media/go-to-app/work-backlogs-selection.gif)
 
 Within the page you may select a specific view or artifact, such as a team backlog or choose another page. 
 
@@ -65,7 +65,7 @@ You open a service by choosing it from the horizontal blue bar. Then, select fro
 
 For example, here we select **Work>Work Items**. 
 
-![Open a service, previous navigation gif](_img/go-to-app/project-app-page-horizontal-selection.png)
+![Open a service, previous navigation gif](media/go-to-app/project-app-page-horizontal-selection.png)
 
 ::: moniker-end
 
@@ -80,19 +80,19 @@ Select configurations are made to teams through the team settings pages. For an 
 1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
 
 1. Expand **Boards** and choose **Team configuration**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Team configuration](_img/go-to-app/team-configurations-new-nav.png)  
+	> ![Open Team configuration](media/go-to-app/team-configurations-new-nav.png)  
 
 1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
 1. If you need to switch to a different team, use the team selector within the breadcrumbs.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../../organizations/settings/_img/team-defaults/select-team-context.png) 
+	> ![Team Configuration, Team breadcrumb](../../organizations/settings/media/team-defaults/select-team-context.png) 
 
 1. To add a team administrator, add team members, or change the team profile, choose **Teams** from the vertical sidebar, and then choose the name of the team you want to configure. 
 
@@ -100,10 +100,10 @@ Select configurations are made to teams through the team settings pages. For an 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../_img/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
+You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../media/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](go-to-project-repo.md#switch-team-context).
 
 > [!div class="mx-imgBorder"]  
-> ![Open team settings](../../organizations/settings/_img/team-defaults/open-team-settings-horz.png)  
+> ![Open team settings](../../organizations/settings/media/team-defaults/open-team-settings-horz.png)  
 
 1. Choose one of the pages **General**, **Iterations**, **Areas**, or **Templates** to configure settings for the team. To learn more, see [Manage teams](../../organizations/settings/manage-teams.md). 
 
@@ -123,19 +123,19 @@ Administrators configure resources for a project and manage project-level permis
 1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
 
 1. From there, you can choose a page from the list. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards**, **Build and release**, **Code**, **Test**, and **Extensions** to select from the list. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Project settings](_img/go-to-app/project-setting-hubs.png)  
+	> ![Open Project settings](media/go-to-app/project-setting-hubs.png)  
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From a user context, open **Project settings** by choosing the ![ ](../../_img/icons/gear_icon.png) gear icon. 
+From a user context, open **Project settings** by choosing the ![ ](../../media/icons/gear_icon.png) gear icon. 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -143,9 +143,9 @@ From a user context, open **Project settings** by choosing the ![ ](../../_img/i
 <a id="admin-intro" />
 <a id="admin-intro-team-services" /> 
  
-Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
-![Project Settings](../../_shared/_img/settings/open-project-settings-horz.png) 
+![Project Settings](../../_shared/media/settings/open-project-settings-horz.png) 
 
 ::: moniker-end
 
@@ -153,21 +153,21 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_
 
 <a id="admin-intro-tfs-2017-1" />
 
-Open any admin page by choosing it's name. Choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
+Open any admin page by choosing it's name. Choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Home** or **Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
 **TFS 2017.2**
 
-![TFS 2017.2, Project Settings](_img/go-to-app/work-web-portal_admin-context-project-level-team-services.png)  
+![TFS 2017.2, Project Settings](media/go-to-app/work-web-portal_admin-context-project-level-team-services.png)  
 
 **TFS 2017.1**  
 
-![TFS 2017.1,Project Settings](_img/go-to-app/work-web-portal_admin-context-project-level-tfs-2017-1.png)  
+![TFS 2017.1,Project Settings](media/go-to-app/work-web-portal_admin-context-project-level-tfs-2017-1.png)  
  
 <a id="admin-intro-tfs-2017" /> 
 
 **TFS 2017**
 
-![TFS 2017, Project Settings](_img/go-to-app/web-portal-admin-project-settings-new-nav.png)
+![TFS 2017, Project Settings](media/go-to-app/web-portal-admin-project-settings-new-nav.png)
 
 ::: moniker-end
 
@@ -191,30 +191,30 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)  
 
 1. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Build and release** to select a page from the list. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Account settings, Projects](_img/go-to-app/admin-account-settings.png) 
+	> ![Account settings, Projects](media/go-to-app/admin-account-settings.png) 
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
+1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-organization-settings.png) 
+	> ![Organization settings, Policy page, Security policies](../../_shared/media/settings/open-organization-settings.png) 
 
 1. From there, you can choose a page. Settings are organized based on the service they support. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Account settings, Projects](_img/go-to-app/open-admin-settings-horizontal.png) 
+	> ![Account settings, Projects](media/go-to-app/open-admin-settings-horizontal.png) 
 
 ::: moniker-end
 
@@ -224,9 +224,9 @@ Members of the Project Collection Administrators group configure resources for a
 
 Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. <!---This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin). -->
 
-1. From the web portal home page for a project, choose or hover over the ![ ](../../_img/icons/gear_icon.png) gear icon and select **Server settings**. 
+1. From the web portal home page for a project, choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon and select **Server settings**. 
 
-	<img src="../../organizations/security/_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../organizations/security/media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
 1. Choose **Access levels**, to set access levels for a member or group. For details, see [Change access levels](../../organizations/security/change-access-levels.md).  
 

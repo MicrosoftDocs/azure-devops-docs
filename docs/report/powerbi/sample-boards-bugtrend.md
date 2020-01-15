@@ -21,7 +21,7 @@ ms.date: 08/07/2019
 This article shows you how to display, for a given set of open Bugs, the number of Bugs in each State, trended over a period of time. The following image shows an example of such a trend. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](_img/odatapowerbi-bugtrend-report.png)
+> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -115,7 +115,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Fields](_img/odatapowerbi-bugtrend-fields.png)
+> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -129,7 +129,7 @@ For a simple report, do the following steps:
 The example report displays. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](_img/odatapowerbi-bugtrend-report.png)
+> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
 

@@ -24,7 +24,7 @@ You can use change request work items to track and control all changes to the pr
   
  The change request and resultant new work items must contain details of all new work that is required and all existing work that is to be removed, modified, or obviated. You can create a change request from the home page of the web portal or from the Work page in Team Explorer as described in [Get started using work items](../../../work-items/view-add-work-items.md). You can specify the change that you are requesting in the Title field, the team member who owns the change, and other information about the request.  
   
- ![Change Request Work Item Form](_img/procguid_cmmi_form.png "ProcGuid_CMMI_form")  
+ ![Change Request Work Item Form](media/procguid_cmmi_form.png "ProcGuid_CMMI_form")  
   
  For more information about how to complete the work item, see [CMMI work items and workflow](../cmmi-process-workflow.md).  
   

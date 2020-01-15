@@ -20,7 +20,7 @@ ms.date: 01/11/2019
 
 As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. The built-in security groups&mdash;**Readers**, **Contributors**, and **Project Administrators**&mdash; and team administrator role grant permissions to specific features. 
 
-In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ![ ](/azure/devops/media/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. 
@@ -42,70 +42,70 @@ You can use work items to track anything you need to track. To learn more, see [
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View/open work items</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Add work items, add tags to work items<br/><em>(Stakeholders can assign existing tags to work items, but can&#39;t add new tags)</em></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Change work item type</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Move work item to another project</td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Email work items</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Apply a work item template</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Delete work items (able to restore from the Recycle bin)</td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Permanently delete work items</td>
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left"><a href="../../project/feedback/give-feedback.md" data-raw-source="[Provide feedback](../../project/feedback/give-feedback.md)">Provide feedback</a> (through the Microsoft Feedback client)
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -113,8 +113,8 @@ You can use work items to track anything you need to track. To learn more, see [
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -136,42 +136,42 @@ You can use work items to track anything you need to track. To learn more, see [
 <tbody valign="top" align="center">
 <tr>
 <td align="left">View boards and open work items</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a board; update status, reorder, or reparent child tasks through drag-and-drop; update a field on a card</td>
 <td></td>
 <td></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Add child tasks to a checklist</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Assign to a sprint (from card menu)
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Customize a board, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -192,26 +192,26 @@ You can use work items to track anything you need to track. To learn more, see [
 
 <tr>
 <td align="left">View backlogs and open work items</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Add work items to a backlog, Stakeholders can only add items to the bottom of the backlog</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Use bulk edit features
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -219,17 +219,17 @@ You can use work items to track anything you need to track. To learn more, see [
 <td align="left">Add child items to a backlog item; prioritize or reorder a backlog; parent items using the Mapping pane; Assign items to a sprint using the Planning pane </td>
 <td> </td>
 <td></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
 <tr>
 <td align="left">Customize a backlog, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -254,26 +254,26 @@ You can use work items to track anything you need to track. To learn more, see [
 
 <tr>
 <td align="left">View sprint backlogs, taskboards, and open work items</td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Add work items to a sprint backlog<br/><em>(Stakeholders can add backlog items to the bottom of a sprint backlog)</em></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">Add work items to a taskboard<br/><em>(Stakeholders can add backlog items but not tasks)</em></td>
 <td></td>
 <td></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -281,16 +281,16 @@ You can use work items to track anything you need to track. To learn more, see [
 <td align="left">Prioritize/reorder a sprint backlog or taskboard; add child items to a backlog item; reassign items to a sprint using the Planning pane </td>
 <td> </td>
 <td>  </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left">View team capacity (work details) </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -299,18 +299,18 @@ You can use work items to track anything you need to track. To learn more, see [
 <td align="left">Set team capacity</td>
 <td></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
 <tr>
 <td align="left">Use bulk edit features
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -319,16 +319,16 @@ You can use work items to track anything you need to track. To learn more, see [
 <td></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
 <tr>
 <td align="left">Customize a sprint backlog or taskboard, configure team settings<br/><em>(Stakeholders assigned as a team administrator or Project Administrator can configure team settings)</em></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 
 </tr>
 
@@ -355,20 +355,20 @@ You can use work items to track anything you need to track. To learn more, see [
 <tr>
 <td align="left">View and run managed queries 
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
 <td align="left">Create and save managed queries<br/><em>(Stakeholders can&#39;t save shared queries)</em>
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -376,9 +376,9 @@ You can use work items to track anything you need to track. To learn more, see [
 <td align="left">View query charts
 </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -387,18 +387,18 @@ You can use work items to track anything you need to track. To learn more, see [
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
 <tr>
 <td align="left">Powerful semantic work-tracking search.
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -424,27 +424,27 @@ You set project-level information permissions from **Project Settings**>**Securi
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -455,23 +455,23 @@ You set project-level information permissions from **Project Settings**>**Securi
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -480,7 +480,7 @@ You set project-level information permissions from **Project Settings**>**Securi
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -488,7 +488,7 @@ You set project-level information permissions from **Project Settings**>**Securi
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -503,7 +503,7 @@ You set project-level information permissions from **Project Settings**>**Securi
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -549,12 +549,12 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -567,12 +567,12 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>
@@ -587,12 +587,12 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 <td>
 
-![checkmark](../../_img/icons/checkmark.png)
+![checkmark](../../media/icons/checkmark.png)
 
 </td>
 </tr>

@@ -51,7 +51,7 @@ The Azure DevOps Server & Azure DevOps Services product team provides a high fid
 Guide is available at [https://aka.ms/AzureDevOpsImport](https://aka.ms/AzureDevOpsImport). 
 
 <a href="https://aka.ms/AzureDevOpsImport">
-<img alt="Migration Guide" src="_img/migration-import/VSTSMigrationGuideCover-227x300.png" align="middle" />
+<img alt="Migration Guide" src="media/migration-import/VSTSMigrationGuideCover-227x300.png" align="middle" />
 </a>
 
 Because the data migration tool operates at a database level, it can provide a very high fidelity migration. 

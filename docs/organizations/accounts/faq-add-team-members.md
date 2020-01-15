@@ -63,7 +63,7 @@ First, check to see if you're an Azure AD guest:
 1. Go to the **Settings** section of your organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your organization.
 2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
 
-    ![Check user type in the Azure portal](_img/faq/check-user-type-in-Azure-portal.png)
+    ![Check user type in the Azure portal](media/faq/check-user-type-in-Azure-portal.png)
 
 If you're an Azure AD guest, do one of the following:
 

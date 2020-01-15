@@ -299,7 +299,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/_img/node.png) Tool: Node.js Installer
+![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -307,7 +307,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/_img/command-line.png) Utility: Command Line
+![icon](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```

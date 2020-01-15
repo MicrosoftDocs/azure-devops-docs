@@ -54,7 +54,7 @@ Once your publisher is verified, you need to set the [public flag](../develop/ma
 ## Top Publisher 
 > The Top Publisher program is only available for publishers with one or more public Azure DevOps extensions or integrations. It is not applicable for Visual Studio IDE and Visual Studio Code extension publishers.
 
-The Top Publisher program <img src="_img/top-publisher.png" alt="Top Publisher badge" width="25"/> recognizes publishers who have shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once marked so, all of their public Azure DevOps offerings (extensions and integrations) display the Top Publisher badge. This helps customers feel more confident in evaluating and acquiring their offerings.
+The Top Publisher program <img src="media/top-publisher.png" alt="Top Publisher badge" width="25"/> recognizes publishers who have shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support. Once marked so, all of their public Azure DevOps offerings (extensions and integrations) display the Top Publisher badge. This helps customers feel more confident in evaluating and acquiring their offerings.
 
 ### Requirements
 
@@ -74,7 +74,7 @@ The Top Publisher program <img src="_img/top-publisher.png" alt="Top Publisher b
 
     * Sign in to https://marketplace.visualstudio.com/manage/publishers using the account with which you publish and manage your offerings in Marketplace
     * Select the publisher and fill in the About you section under the **Details** tab. Below is an example of the About you section for Microsoft (the publisher):       
-      <img src="_img/microsoft-about-you-section.png" alt="Microsoft Details" width="800" />
+      <img src="media/microsoft-about-you-section.png" alt="Microsoft Details" width="800" />
     * Save your changes and use the 'View profile' action towards the top of the page to see how your profile page appears to the consumers. You may use this profile page to evangelize your offering(s).
 
 

@@ -22,7 +22,7 @@ You can query for historical data about bugs, tasks, and other types of work ite
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Work Item History](_img/teamproj_itemhistory.png "TeamProj_ItemHistory")  
+ ![Fact Table for Work Item History](media/teamproj_itemhistory.png "TeamProj_ItemHistory")  
   
  FactWorkItemHistory is associated with the following dimension tables:  
   

@@ -26,7 +26,7 @@ A: No. Ask your users to sign out, and then from a fresh browser session, sign b
 
 A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.
 
-![Invite GitHub users policy](../../_shared/_img/invite-github-users-policy.png)
+![Invite GitHub users policy](../../_shared/media/invite-github-users-policy.png)
 
 ### Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
 

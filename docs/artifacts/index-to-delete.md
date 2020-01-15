@@ -29,7 +29,7 @@ featureFlags:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="../_img/index/DevOpsIconArtifacts40.svg" />
+                           <img src="../media/index/DevOpsIconArtifacts40.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ featureFlags:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="_img/index/logo_nuget.svg" alt="NuGet logo" />
+                            <img src="media/index/logo_nuget.svg" alt="NuGet logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -88,7 +88,7 @@ featureFlags:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="_img/index/logo_npm.svg" alt="npm logo" />
+                            <img src="media/index/logo_npm.svg" alt="npm logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -116,7 +116,7 @@ featureFlags:
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                           <img src="_img/index/logo_maven.svg" alt="Maven logo" />
+                           <img src="media/index/logo_maven.svg" alt="Maven logo" />
                         </div>
                     </div>
                     <div class="cardText">

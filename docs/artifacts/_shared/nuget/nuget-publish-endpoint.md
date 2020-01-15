@@ -9,7 +9,7 @@ ms.topic: include
 2. Select **Connect to feed**:
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../_img/connect-to-feed-azure-devops-newnav.png)
+   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
    > 
 
 3. Select **NuGet.exe** under the **NuGet** header
@@ -21,7 +21,7 @@ ms.topic: include
 6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.
 
    > [!div class="mx-imgBorder"] 
-   >![NuGet publish instructions in the Connect to feed](../_img/nuget-azure-devops-newnav.png)
+   >![NuGet publish instructions in the Connect to feed](../media/nuget-azure-devops-newnav.png)
    > 
 
 ::: moniker-end
@@ -32,11 +32,11 @@ ms.topic: include
 
 2. Select **Connect to feed**:
 
-   ![Connect to feed button on the upper right of the page](../_img/connect-to-feed.png)
+   ![Connect to feed button on the upper right of the page](../media/connect-to-feed.png)
 
 
 3. Follow steps 1 and 2 to get the tools, add the feed to your local NuGet configuration, and push the package.
 
-   ![NuGet publish instructions in the Connect to feed dialog](../_img/nugeturl.png)
+   ![NuGet publish instructions in the Connect to feed dialog](../media/nugeturl.png)
 
 ::: moniker-end

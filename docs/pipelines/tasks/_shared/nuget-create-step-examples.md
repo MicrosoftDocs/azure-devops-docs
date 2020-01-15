@@ -60,7 +60,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -76,7 +76,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/_img/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -91,7 +91,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/_img/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
@@ -122,7 +122,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -138,7 +138,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/_img/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -153,7 +153,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/_img/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
@@ -162,7 +162,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: External NuGet Feed</li>
 <li>
-<p>NuGet Server Endpoint: <img src="/azure/devops/tasks/_shared/_img/endpoint-manage.png" alt="endpoint manage"/></p>
+<p>NuGet Server Endpoint: <img src="/azure/devops/tasks/_shared/media/endpoint-manage.png" alt="endpoint manage"/></p>
 <ol>
 <li>Click &quot;New service connection&quot;, and then click Generic.</li>
 <li><p>On the Add New Generic Connection dialog box:</p>

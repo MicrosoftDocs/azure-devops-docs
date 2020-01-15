@@ -7,7 +7,7 @@ ms.topic: include
 When your project has been created, the welcome page appears.  
 
 > [!div class="mx-imgBorder"]  
-> ![Welcome to the project page](/azure/devops/_shared/_img/welcome-to-the-project.png)
+> ![Welcome to the project page](/azure/devops/_shared/media/welcome-to-the-project.png)
 
 > [!NOTE]   
 > Your first project was created by using a Git repository and the [Agile process](/azure/devops/boards/work-items/guidance/agile-process). If you want a project that uses the Team Foundation Version Control (TFVC) repository or the Scrum or CMMI process, see [Choose a process](/azure/devops/boards/work-items/guidance/choose-process) for a comparison of processes. Then, you can choose a process by [adding another project](/azure/devops/organizations/projects/create-project). 

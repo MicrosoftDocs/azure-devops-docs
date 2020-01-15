@@ -46,18 +46,18 @@ permissions. [How do I find the organization Owner?](faq-delete-restore-organiza
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 
 3. Select **Overview** > **Delete**.
 
-   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](media/delete-organization/organization-overview-settings.png)
 
 4. In the resulting dialog box, enter the name of the organization, and then select **Delete**.
 
-   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
+   ![Screenshot of Delete Account dialog box](media/delete-organization/delete-organization-popup.png)
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 

@@ -25,17 +25,17 @@ In this quickstart, you learn how to view the status of build and release pipeli
 
 To view the status of recent builds, select  **Pipelines > Builds**. To view a summary or history of any build, choose a build.
 
-> ![Pipelines>Recent Builds, new navigation ](_img/pipelines/view-build-vert-brn.png)
+> ![Pipelines>Recent Builds, new navigation ](media/pipelines/view-build-vert-brn.png)
 
 ## View active release pipelines
 
 To view active release pipelines, select **Pipelines > Releases**.
 
-> ![Pipelines, Recent Releases, new navigation ](_img/pipelines/view-releases-vert.png)
+> ![Pipelines, Recent Releases, new navigation ](media/pipelines/view-releases-vert.png)
 
 From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.
 
-> ![Pipelines, Build status page ](_img/pipelines/release-chart.png)
+> ![Pipelines, Build status page ](media/pipelines/release-chart.png)
 
 ## Next steps
 

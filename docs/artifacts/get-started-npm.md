@@ -64,7 +64,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 1. From any collection in TFS, hover over the settings menu and select the **Users** page. Then select **Package Management**.
 
-   ![Users page in TFS](_img/users-hub-tfs.png)
+   ![Users page in TFS](media/users-hub-tfs.png)
 
 1. Select **Assign**, enter the users you want to assign licenses, and then select **Ok**.
 
@@ -87,13 +87,13 @@ In the dialog box:
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![New feed dialog box](_shared/_img/new-feed-dialog.png)
+>![New feed dialog box](_shared/media/new-feed-dialog.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![New feed dialog box](_shared/_img/new-feed-dialog.png)
+![New feed dialog box](_shared/media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -116,20 +116,20 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= azure-devops-2019"
     
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed-azure-devops-newnav.png)
+      >![Connect to feed button in Azure Artifacts](_shared/media/connect-to-feed-azure-devops-newnav.png)
       > 
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
 
-      ![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed.png)
+      ![Connect to feed button in Azure Artifacts](_shared/media/connect-to-feed.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed button in Azure Artifacts](_shared/_img/connect-to-feed.png)
+      ![Connect to feed button in Azure Artifacts](_shared/media/connect-to-feed.png)
 
       ::: moniker-end
 
@@ -146,20 +146,20 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed from Azure Artifacts](_shared/_img/npm-azure-devops-newnav.png)
+      >![Connect to feed from Azure Artifacts](_shared/media/npm-azure-devops-newnav.png)
       > 
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
 
-      ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+      ![Connect to feed from Azure Artifacts](_shared/media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
+      ![Connect to feed from Azure Artifacts](_shared/media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
         

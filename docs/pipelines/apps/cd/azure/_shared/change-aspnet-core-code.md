@@ -12,7 +12,7 @@ Now that you have a completely automated CI/CD pipeline, any changes that you ma
 
    In the Azure Repos **Code** hub, edit the **Views/Home/Index.cshtml** file.
 
-   ![edit action in asp.net core view](_img/aspnet-core-code-edit-action.png)
+   ![edit action in asp.net core view](media/aspnet-core-code-edit-action.png)
 
    # [GitHub repo](#tab/github)
 
@@ -29,5 +29,5 @@ Now that you have a completely automated CI/CD pipeline, any changes that you ma
 3. **Commit** your changes to trigger a CI build. When the build completes, it triggers an automatic deployment.
 
 <!--
- ![change code in asp.net core view](_img/aspnet-core-code-change.png)
+ ![change code in asp.net core view](media/aspnet-core-code-change.png)
 -->

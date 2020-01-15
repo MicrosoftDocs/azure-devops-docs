@@ -29,11 +29,11 @@ A typical authorization flow might be similar to the following example:
 
 2. If you're not already signed in, Azure DevOps prompts you for your credentials.
    
-   ![IMAGE](../../service-hooks/_img/authorize/vso-sign-in.png)
+   ![IMAGE](../../service-hooks/media/authorize/vso-sign-in.png)
 
 3. After you've signed in, you get the authorization approval page.
 
-   ![IMAGE ](../../service-hooks/_img/authorize/vso-authorize.png)
+   ![IMAGE ](../../service-hooks/media/authorize/vso-authorize.png)
 
    Services can only request full access to all of the resources that are available to you through the REST APIs, so the authorization request may not be specific.
 
@@ -56,6 +56,6 @@ To ensure an authorization request is legitimate, do the following actions:
 View the services that you've authorized to access your organization. Go to **User settings**, and then select **Authorizations**. You can also go to [your profile view](https://app.vssps.visualstudio.com/Profile/View)
 and follow the **Azure DevOps profile** link.
 
-![User settings, authorizations tab](_img/user-settings-authorizations.png)
+![User settings, authorizations tab](media/user-settings-authorizations.png)
 
 You can revoke any authorizations so the service can no longer access your organization on your behalf.

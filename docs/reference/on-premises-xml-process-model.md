@@ -138,7 +138,7 @@ You can perform the following tasks when you work with the On-premises XML proce
 
 When you manage an on-premises deployment, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
 
-[![Export XML definition file](_img/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export XML definition file](media/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 In addition, you can use the **witadmin** tool to list objects, rename WITs, permanently remove WITs, and more.  
  

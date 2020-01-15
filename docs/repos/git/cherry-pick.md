@@ -39,7 +39,7 @@ In this tutorial you learn how to:
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
     Visual Studio copies the changes made in that commit into a new one on your current branch.
-    ![Cherry pick from inside Visual Studio](_img/vscherrypick.gif)
+    ![Cherry pick from inside Visual Studio](media/vscherrypick.gif)
 
 Repeat this process for each commit you need to bring over to your current branch.
 

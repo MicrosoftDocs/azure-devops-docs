@@ -41,7 +41,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
 <p>You <a href="../../organizations/settings/set-working-days.md" data-raw-source="[set recurring days off](../../organizations/settings/set-working-days.md)">set recurring days off</a>, such as weekends, through team settings.</p>
 </td>
 <td>
-<img src="_img/team-capacity-planning-tool.png" alt="Team capacity planning tool"/> 
+<img src="media/team-capacity-planning-tool.png" alt="Team capacity planning tool"/> 
 </td>
 </tr>
 <tr valign="top" > 
@@ -62,10 +62,10 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </li>
 </ul>
 <p>Here&#39;s how to interpret the capacity colors:</p>
-<img src="_img/capacity-planning-tool-color-chart.png" alt="These colors help you distinguish capacity"/>
+<img src="media/capacity-planning-tool-color-chart.png" alt="These colors help you distinguish capacity"/>
 </td>
 <td width="455px">
-<img src="_img/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/>
+<img src="media/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/>
 </td>
 </tr>
 </table>
@@ -84,7 +84,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>Updating tasks daily or several times a week yields a smoother burndown chart. </p>
 </td>
 <td width="520px">
-<img src="_img/ALM_DS_Task_board_S.png" alt="taskboard"/>
+<img src="media/ALM_DS_Task_board_S.png" alt="taskboard"/>
 </td>
 </tr>
 <tr valign="top" > 
@@ -96,7 +96,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>The ideal trend line always indicates a smooth and steady burndown. The blue area, however, represents what&#39;s actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks.</p>
 </td>
 <td>
-<img src="_img/ALM_DS_SprntBD_Chrt_S.png" alt="Sprint burndown chart"/>
+<img src="media/ALM_DS_SprntBD_Chrt_S.png" alt="Sprint burndown chart"/>
 </td>
 </tr>
 </table>
@@ -119,7 +119,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>By minimizing the variability of backlog item size&mdash;effort or story points&mdash;you gain more reliable velocity metrics.</p>
 </td>
 <td width="500px">
-<img src="_img/velocity-chart.png" alt="Velocity chart"/>
+<img src="media/velocity-chart.png" alt="Velocity chart"/>
 </td>
 </tr>
 <tr valign="top" > 
@@ -131,7 +131,7 @@ During a sprint, your team can use the taskboard and sprint burndown chart to tr
 <p>*By plugging in a velocity, you can see which items are within scope for the set of sprints the team has selected. As shown here, a velocity of 15 indicates that it will take three sprints to complete the work shown. *</p>
 </td>
 <td>
-<img src="_img/forecast-tool.png" alt="Forecast tool"/>
+<img src="media/forecast-tool.png" alt="Forecast tool"/>
 </td>
 </tr>
 </table>  

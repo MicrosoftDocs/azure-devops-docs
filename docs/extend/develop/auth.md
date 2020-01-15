@@ -47,7 +47,7 @@ Your extension's unique key (which is generated when the extension is published)
 
 To get this key, right-click a [published extension](../publish/overview.md) and select **Certificate**.
 
-![key](./_img/get-extension-key.png)
+![key](./media/get-extension-key.png)
 
 > [!WARNING]
 > Scope changes in an extension cause the certificate to change. If you make changes to the scope, you need a new extension key.
