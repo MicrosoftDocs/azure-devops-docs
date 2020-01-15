@@ -47,7 +47,7 @@ Organization:
     https://dev.azure.com/{organization}/_settings/notifications
     ```
 
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png) 
+   ![Navigate to organization notifications page](media/nav-organization-notifications-hub-newnav.png) 
 
    ::: moniker-end
 
@@ -58,10 +58,10 @@ Organization:
     ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
+>![Navigate to organization notifications page](media/nav-organization-notifications-hub.png)  
 
 > [!div class="mx-imgBorder"] 
->![View organization level notifications page](_img/view-organization-notification-hub.png)  
+>![View organization level notifications page](media/view-organization-notification-hub.png)  
 
    ::: moniker-end
 
@@ -76,7 +76,7 @@ Organization:
     ```
 
 > [!div class="mx-imgBorder"]  
->![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
+>![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
 
    ::: moniker-end
 
@@ -87,10 +87,10 @@ Organization:
     ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
+>![Navigate to team notifications page](media/nav-team-notifications-hub.png)
 
 > [!div class="mx-imgBorder"] 
->![View team level notifications page](_img/view-team-notification-hub.png)
+>![View team level notifications page](media/view-team-notification-hub.png)
 
    ::: moniker-end
 
@@ -104,9 +104,9 @@ Personal:
     https://dev.azure.com/{organization}/usersSettings/notifications
     ```
 
-   ![Navigate to personal notifications page](_img/personal-notifications-preview.png)  
+   ![Navigate to personal notifications page](media/personal-notifications-preview.png)  
 
-   ![View personal notifications page](_img/personal-notifications-page.png)
+   ![View personal notifications page](media/personal-notifications-page.png)
 
    ::: moniker-end
 
@@ -117,10 +117,10 @@ Personal:
     ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
+>![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
 
 > [!div class="mx-imgBorder"] 
->![View personal notifications page](_img/view-personal-notification-hub-newnav.png)
+>![View personal notifications page](media/view-personal-notification-hub-newnav.png)
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Personal:
     ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)
+>![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
 
    ::: moniker-end
 

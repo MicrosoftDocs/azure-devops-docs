@@ -45,11 +45,11 @@ Teams who are responsible for testing software can use the Build Quality report 
 
  **Build verification testing**  
 
- ![Build Quality Excel Report](_img/procg_buildqualitybvt.png "ProcG_BuildQualityBVT")  
+ ![Build Quality Excel Report](media/procg_buildqualitybvt.png "ProcG_BuildQualityBVT")  
 
  **Test activity per build**  
 
- ![Test Activity PerBuild Excel Report](_img/procg_testactperbuild.png "ProcG_TestActPerBuild")  
+ ![Test Activity PerBuild Excel Report](media/procg_testactperbuild.png "ProcG_TestActPerBuild")  
 
  The following table describes the report filters and fields that are used in the PivotTables that generate the Build Quality reports.  
 

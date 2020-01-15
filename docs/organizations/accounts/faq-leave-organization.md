@@ -26,9 +26,9 @@ A: To remove yourself from an organization, do the following steps:
 1. Go to [aex.dev.azure.com](https://aex.dev.azure.com).
 2. Select the organization, and then choose **Leave**.
 
-    ![Member removing their self from the organization](_img/faq/member-leave-organization.png)
+    ![Member removing their self from the organization](media/faq/member-leave-organization.png)
 
 3. Confirm that you want to **Leave** the organization.
 
-    ![confirm-removal-from-organization.png](_img/faq/confirm-removal-from-organization.png)
+    ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
 

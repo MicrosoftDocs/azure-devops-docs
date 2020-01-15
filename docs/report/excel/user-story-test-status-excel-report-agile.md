@@ -36,7 +36,7 @@ You can use the User Story Test Status report to help determine gaps in test cov
  
  The User Story Test Status report provides a horizontal bar chart that shows the count of results for each test case and test configuration combination that the team has defined for each user story. The chart groups the results according to their most recent test runs, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).  
   
- ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
+ ![User Story Test Status Excel Report](media/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
  The report is based on a PivotChart report that shows the most recent data that is stored in the data warehouse and that is captured for the results for the test cases that are linked to specific user stories.  
   

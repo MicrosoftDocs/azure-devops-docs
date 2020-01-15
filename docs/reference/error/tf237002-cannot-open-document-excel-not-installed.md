@@ -37,7 +37,7 @@ See [TFS-Office integration issues](../../boards/backlogs/office/tfs-office-inte
   
      Locate the .NET Programmability Support option under Microsoft Excel or other client in the Office suite.  
   
-     ![Install .NET Programmability Support option](_img/alm_em_netprogsupport.png "ALM_EM_NetProgSupport")  
+     ![Install .NET Programmability Support option](media/alm_em_netprogsupport.png "ALM_EM_NetProgSupport")  
   
 ### To repair your Office client  
   

@@ -204,7 +204,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <li>MSF Scrum 6.1: Bug, Task, Requirement</li>
 </ul>
 
-<img src="_img/tfs-vso-state-diagram-product-backlog-item.png" alt="State diagram for Product Backlog Item"/><br/>
+<img src="media/tfs-vso-state-diagram-product-backlog-item.png" alt="State diagram for Product Backlog Item"/><br/>
 <p>To apply the changes to your existing projects, you need to replace the <strong>WORKFLOW</strong> sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See <a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[Design the Workflow](../../../reference/xml/change-workflow-wit.md)">Design the Workflow</a> and <a href="../../../reference/witadmin/witadmin-import-export-manage-wits.md" data-raw-source="[Import, export, and manage Work Item Types](../../../reference/witadmin/witadmin-import-export-manage-wits.md
 )">Import, export, and manage Work Item Types</a> .</p>
 </td>

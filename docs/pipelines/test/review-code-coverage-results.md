@@ -45,7 +45,7 @@ code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 The code coverage summary can be viewed in the build timeline view.
 The summary shows the overall percentage of line coverage. 
 
-![View code coverage results](_img/review-code-coverage-results/view-code-coverage-summary.png)
+![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
 
 > [!NOTE]
 > Merging code coverage results from multiple [test runs](test-glossary.md) is
@@ -56,17 +56,17 @@ The summary shows the overall percentage of line coverage.
 The code coverage artifacts published during the build can be viewed under the
 **Build artifacts published** milestone in the timeline view.
 
-![View code coverage artifact](_img/review-code-coverage-results/view-code-coverage-artifact.png)
+![View code coverage artifact](media/review-code-coverage-results/view-code-coverage-artifact.png)
 
 * If you use the [Visual Studio Test](../tasks/test/vstest.md) task to collect coverage for .NET and .NET Core apps, the artifact contains
   **.coverage** files that can be downloaded and used for further analysis in Visual Studio.
 
-  ![View .coverage reports](_img/review-code-coverage-results/view-dot-coverage-report.png)
+  ![View .coverage reports](media/review-code-coverage-results/view-dot-coverage-report.png)
 
 * If you publish code coverage using Cobertura or JaCoCo coverage formats, the code coverage artifact contains
   an HTML file that can be viewed offline for further analysis.
 
-  ![View html reports](_img/review-code-coverage-results/view-html-report.png)
+  ![View html reports](media/review-code-coverage-results/view-html-report.png)
 
 > [!NOTE]
 > For .NET and .NET Core, the link to download the artifact is available by choosing the code coverage milestone in the build summary.

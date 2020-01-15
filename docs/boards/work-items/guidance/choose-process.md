@@ -85,7 +85,7 @@ Choose the process that provides the best fit for your team.
              <p>Tasks support tracking Remaining Work.</p>
             </td>
         <td>
-            <img src="../../get-started/_img/about-boards/basic-process-epics-issues-tasks-2.png" alt="Basic work item types"/>
+            <img src="../../get-started/media/about-boards/basic-process-epics-issues-tasks-2.png" alt="Basic work item types"/>
         </td>
         </tr>
             <tr valign="top">
@@ -100,7 +100,7 @@ Choose the process that provides the best fit for your team.
              <p>Tasks support tracking Original Estimate, Remaining Work, and Completed Work.</p>
             </td>
         <td>
-            <img src="_img/ALM_PT_Agile_WIT_Artifacts.png" alt="Agile work item types"/>
+            <img src="media/ALM_PT_Agile_WIT_Artifacts.png" alt="Agile work item types"/>
         </td>
         </tr>
     <tr valign="top">
@@ -114,7 +114,7 @@ Choose the process that provides the best fit for your team.
             <p>Tasks support tracking remaining work only.</p>
         </td>
             <td width="60%">
-            <img src="_img/ALM_PT_Scrum_WIT_Artifacts.png" alt="Scrum work item types"/>
+            <img src="media/ALM_PT_Scrum_WIT_Artifacts.png" alt="Scrum work item types"/>
             </td>
             </tr>
     <tr valign="top"> 
@@ -130,7 +130,7 @@ Choose the process that provides the best fit for your team.
             </p>
             </td>
             <td>
-            <img src="_img/ALM_PT_CMMI_WIT_Artifacts.png" alt="CMMI work item types"/>
+            <img src="media/ALM_PT_CMMI_WIT_Artifacts.png" alt="CMMI work item types"/>
             </td>
       </tr>
 </tbody>
@@ -384,11 +384,11 @@ Each image shows only the default reason associated with the transition.
 <tr>
 <td>
 <h4>Epic, Issue, Task hierarchy</h4>
-<img src="../../get-started/_img/track-issues/basic-process-epics-issues-tasks.png" alt="Basic process work item hierarchy"/>
+<img src="../../get-started/media/track-issues/basic-process-epics-issues-tasks.png" alt="Basic process work item hierarchy"/>
 </td>
 <td>
 <h4>Epic, Issue, Task workflow </h4>
-<img src="../../get-started/_img/track-issues/basic-process-workflow.png" alt="Basic process workflow"/>
+<img src="../../get-started/media/track-issues/basic-process-workflow.png" alt="Basic process workflow"/>
 </td>
 <td>   </td>
 </tr>
@@ -406,25 +406,25 @@ Each image shows only the default reason associated with the transition.
 <tr>
 <td>
 <h4>User story</h4>
-<img src="_img/ALM_PT_Agile_WF_UserStory.png" alt="User story workflow states, Agile process"/>
+<img src="media/ALM_PT_Agile_WF_UserStory.png" alt="User story workflow states, Agile process"/>
 </td>
 <td>
 <h4>Feature</h4>
-<img src="_img/ALM_PT_Agile_WF_Feature.png" alt="Feature workflow states, Agile process"/>
+<img src="media/ALM_PT_Agile_WF_Feature.png" alt="Feature workflow states, Agile process"/>
 </td>
 <td>
 <h4>Epic</h4>
-<img src="_img/ALM_PT_Agile_WF_Epic.png" alt="Epic workflow states, Agile process"/>
+<img src="media/ALM_PT_Agile_WF_Epic.png" alt="Epic workflow states, Agile process"/>
 </td>
 </tr>
 <tr>
 <td>
 <h4>Bug</h4>
-<img src="_img/ALM_PT_Agile_WF_Bug.png" alt="Bug workflow states, Agile process"/>
+<img src="media/ALM_PT_Agile_WF_Bug.png" alt="Bug workflow states, Agile process"/>
 </td>
 <td>
 <h4>Task</h4>
-<img src="_img/ALM_PT_Agile_WF_Task.png" alt="Task workflow states, Agile process"/>
+<img src="media/ALM_PT_Agile_WF_Task.png" alt="Task workflow states, Agile process"/>
 </td>
 <td>   </td>
 </tr>
@@ -439,25 +439,25 @@ Each image shows only the default reason associated with the transition.
 <tr>
 <td>
 <h4>Product backlog item</h4>
-<img src="_img/ALM_PT_Scrum_WF_PBI.png" alt="Product backlog item workflow states, Scrum process"/>
+<img src="media/ALM_PT_Scrum_WF_PBI.png" alt="Product backlog item workflow states, Scrum process"/>
 </td>
 <td>
 <h4>Feature</h4>
-<img src="_img/ALM_PT_Scrum_WF_Feature.png" alt="Feature workflow states, Scrum process"/>
+<img src="media/ALM_PT_Scrum_WF_Feature.png" alt="Feature workflow states, Scrum process"/>
 </td>
 <td>
 <h4>Epic</h4>
-<img src="_img/ALM_PT_Scrum_WF_Epic.png" alt="Epic workflow states, Scrum process"/>
+<img src="media/ALM_PT_Scrum_WF_Epic.png" alt="Epic workflow states, Scrum process"/>
 </td>
 </tr>
 <tr>
 <td>
 <h4>Bug</h4>
-<img src="_img/ALM_PT_Scrum_WF_Bug.png" alt="Bug workflow states, Scrum process"/>
+<img src="media/ALM_PT_Scrum_WF_Bug.png" alt="Bug workflow states, Scrum process"/>
 </td>
 <td>
 <h4>Task</h4>
-<img src="_img/ALM_PT_Scrum_WF_Task.png" alt="Task workflow states, Scrum process"/>
+<img src="media/ALM_PT_Scrum_WF_Task.png" alt="Task workflow states, Scrum process"/>
 </td>
 <td>  </td>
 </tr>
@@ -473,25 +473,25 @@ Each image shows only the default reason associated with the transition.
 <tr>
         <td>
 <h4>Requirement</h4>
-<img src="_img/ALM_PT_CMMI_WF_Requirement.png" alt="Requirement workflow states, CMMI process"/>
+<img src="media/ALM_PT_CMMI_WF_Requirement.png" alt="Requirement workflow states, CMMI process"/>
 </td>
 <td>
 <h4>Feature</h4>
-<img src="_img/ALM_PT_CMMI_WF_Feature.png" alt="Feature workflow states, CMMI process"/>
+<img src="media/ALM_PT_CMMI_WF_Feature.png" alt="Feature workflow states, CMMI process"/>
 </td>
 <td>
 <h4>Epic</h4>
-<img src="_img/ALM_PT_CMMI_WF_Epic.png" alt="Epic workflow states, CMMI process"/>
+<img src="media/ALM_PT_CMMI_WF_Epic.png" alt="Epic workflow states, CMMI process"/>
 </td>
 </tr>
 <tr>
 <td>
 <h4>Bug</h4>
-<img src="_img/ALM_PT_CMMI_WF_Bug.png" alt="Bug workflow states, CMMI process"/>
+<img src="media/ALM_PT_CMMI_WF_Bug.png" alt="Bug workflow states, CMMI process"/>
 </td>
 <td>
 <h4>Task</h4>
-<img src="_img/ALM_PT_CMMI_WF_Task.png" alt="Task workflow states, CMMI process"/>
+<img src="media/ALM_PT_CMMI_WF_Task.png" alt="Task workflow states, CMMI process"/>
 </td>
 <td>  </td>
 </tr>
@@ -531,7 +531,7 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 The following WITs are added to all processes except the Basic process.  
 
-  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](_img/ALM_PT_WITS_Shared.png)
+  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](media/ALM_PT_WITS_Shared.png)
 
 Teams create and work with these types using the corresponding tool: 
 
@@ -559,7 +559,7 @@ Work item types that are added to the Hidden Types category don't appear in the 
 
 WITs that support the test experience and work with Test Manager and the web portal are linked together using the link types shown in the following picture. 
 
-![Test management work item types](_img/ALM_PT_WITS_TestExperience.png)
+![Test management work item types](media/ALM_PT_WITS_TestExperience.png)
 
 From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
 and which test suites are defined for a test plan. 

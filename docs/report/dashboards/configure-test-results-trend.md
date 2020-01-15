@@ -24,7 +24,7 @@ With the test results trend widget, you can monitor test trends over a period of
 
 **Example Test Results Trend widget showing pass percentage and test failure for last 7 days**  
 
-![Test results trend (advanced) widget example](_img/test-results-trend-widget/Failed-test-pass.png) 
+![Test results trend (advanced) widget example](media/test-results-trend-widget/Failed-test-pass.png) 
 
 In this article you'll learn:
 
@@ -77,14 +77,14 @@ In order to configure the Test Results Trend widget, you must have the following
 
 You can configure your Test Results Trend (Advanced) widget to show results for either build or release pipelines. 
 
-1. From your team's dashboard, choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
+1. From your team's dashboard, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
 	
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
-	> ![Test Results Trend (Advanced) widget configuration panel](_img/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
+	> ![Test Results Trend (Advanced) widget configuration panel](media/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
-	Choose the ![ ](../../_img/icons/blue-add.png) plus icon to add one or more pipelines. 
+	Choose the ![ ](../../media/icons/blue-add.png) plus icon to add one or more pipelines. 
 
 1. Next, choose the **Period**, and then choose the metrics that you want to track. Optionally, apply filters for **Branch**, **Test file**, **Owner**, and **Test run**.   
 
@@ -92,7 +92,7 @@ You can configure your Test Results Trend (Advanced) widget to show results for 
 
 	The following image shows a chart with pass rate and test results for last 7 days. 
    
-	![Test widget configuration panel](_img/test-results-trend-widget/passed-bypriority-pass.png)
+	![Test widget configuration panel](media/test-results-trend-widget/passed-bypriority-pass.png)
 
 
 

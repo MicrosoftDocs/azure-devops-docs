@@ -21,7 +21,7 @@ We'll show you how to set up continuous deployment of your app to an nginx web s
 Azure Pipelines or Team Foundation Server (TFS) 2018 and higher. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/_shared/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will
 automatically show up on your site.
@@ -81,12 +81,12 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    * If you've just completed a CI build, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
-     ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release pipeline from the build summary](../_shared/media/release-from-build-summary.png)
 
    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
-     ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
+     ![Creating a new release pipeline in the Releases page](../_shared/media/release-from-release-page.png)
 
 1. Choose **Start with an Empty job**.
 
@@ -94,44 +94,44 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
    the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Checking or selecting the build pipeline and artifact](_img/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
+   ![Checking or selecting the build pipeline and artifact](media/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
    continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
 
-   ![Checking or setting the Continuous deployment trigger](_img/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](media/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
 
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
 1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
 
-   ![Removing the Agent job from the pipeline](_img/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
+   ![Removing the Agent job from the pipeline](media/deploy-linuxvm-deploygroups/remove-agent-phase-image.png)
 
 1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
 
-   ![Adding a Deployment group stage to the pipeline](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+   ![Adding a Deployment group stage to the pipeline](media/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
 1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
 
-   ![Selecting the deployment group](_img/deploy-linuxvm-deploygroups/select-deployment-group.png)
+   ![Selecting the deployment group](media/deploy-linuxvm-deploygroups/select-deployment-group.png)
 
     The tasks you add to this job will run on each of the machines in the deployment group you specified.
 
 1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
    **Bash** task.
 
-   ![Adding a Shell Script task to the pipeline](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)
+   ![Adding a Shell Script task to the pipeline](media/deploy-linuxvm-deploygroups/add-shellscript-task.png)
 
 1. In the properties of the **Bash** task, use the **Browse** button for the **Script Path** to select
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
    `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
 
-   ![Configuring the Shell Script task](_img/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
+   ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
 
 1. Save the release pipeline.
 
-   ![Saving the newly created release pipeline](_img/deploy-linuxvm-deploygroups/save-definition-image.png)
+   ![Saving the newly created release pipeline](media/deploy-linuxvm-deploygroups/save-definition-image.png)
 
 ## Create a release to deploy your app
 

@@ -40,5 +40,5 @@ Share with your team the reason for the locking of the branch and make sure your
 3. Lock the branch by selecting the **...** icon next to the branch name and then selecting **Lock** from the menu. A lock icon will appear next to the branch name.
    Unlock a locked branch by selecting **Unlock** from the same menu.
 
-   ![Lock a branch from the branches context menu](_img/branches/branches_context_menu_lock.png)
+   ![Lock a branch from the branches context menu](media/branches/branches_context_menu_lock.png)
 

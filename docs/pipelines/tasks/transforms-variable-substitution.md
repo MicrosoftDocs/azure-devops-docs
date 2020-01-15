@@ -130,7 +130,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 3. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
-   ![Release pipeline for XML transformation](_img/release-definition2.png)
+   ![Release pipeline for XML transformation](media/release-definition2.png)
 
 4. Save the release pipeline and start a new release.
 
@@ -232,7 +232,7 @@ As an example, consider the task of changing the following values in `Web.config
 
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
-   ![Release pipeline for XML variable substitution](_img/release-definition.png)
+   ![Release pipeline for XML variable substitution](media/release-definition.png)
 
 1. Define the required values in release pipeline variables:
 
@@ -354,7 +354,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 
-   ![Release pipeline for JSON variable substitution](_img/json-setting.png)
+   ![Release pipeline for JSON variable substitution](media/json-setting.png)
 
 3. Define the required substitution values in release pipeline or stage variables.
 

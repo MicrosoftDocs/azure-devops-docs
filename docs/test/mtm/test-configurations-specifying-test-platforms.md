@@ -25,7 +25,7 @@ Your users will probably install or run your app on a wide variety of configurat
 
 You might draw up a schematic matrix of the combinations that you want to test:
 
-![Test matrix of browser and operating system configurations](../_img/_shared/testing-configurations-schematic.png)
+![Test matrix of browser and operating system configurations](../media/_shared/testing-configurations-schematic.png)
 
 Use Microsoft Test Manager to specify test configurations. But you can still run the tests either with the web portal or with Microsoft Test Manager.
 
@@ -40,11 +40,11 @@ to your test project and open your test plan. Open your test plan by opening **T
 
 Select one or more tests, then choose **Configurations**.
 
-![Assign configurations to the test points](_img/test-configurations-specifying-test-platforms/mtmconfig-01.png)
+![Assign configurations to the test points](media/test-configurations-specifying-test-platforms/mtmconfig-01.png)
 
 Set the configurations you want to run the tests on.
 
-![Assign configurations to the test points](_img/test-configurations-specifying-test-platforms/mtmconfig-02.png)
+![Assign configurations to the test points](media/test-configurations-specifying-test-platforms/mtmconfig-02.png)
 
 Don't see the configurations you want? Choose **All configurations**. If you still don't see what you need, 
 [learn how to define your own configurations](#create-new).
@@ -58,17 +58,17 @@ Yes. The same test case can have different configuration settings in different t
 When you want to [run a test](run-manual-tests-with-microsoft-test-manager.md)
 that has multiple configurations, you'll see that it appears more than once in the run list. 
 
-![Required configurations in the lists of tests](_img/test-configurations-specifying-test-platforms/mtmconfig-03.png) 
+![Required configurations in the lists of tests](media/test-configurations-specifying-test-platforms/mtmconfig-03.png) 
 
 Set up a testing platform for a particular configuration, and then sort the list to show the tests to run on that configuration.
 
-![Sort test points by configuration](_img/test-configurations-specifying-test-platforms/mtmconfig-04.png) 
+![Sort test points by configuration](media/test-configurations-specifying-test-platforms/mtmconfig-04.png) 
 
 When you run a test, a reminder of the required configuration appears on the Test Runner window.
 
 | Web portal | Microsoft Test Manager |
 | --- | --- |
-| ![Team Web Access](_img/test-configurations-specifying-test-platforms/mtmconfig-05.png) | ![Team Web Access](_img/test-configurations-specifying-test-platforms/mtmconfig-05a.png) |
+| ![Team Web Access](media/test-configurations-specifying-test-platforms/mtmconfig-05.png) | ![Team Web Access](media/test-configurations-specifying-test-platforms/mtmconfig-05a.png) |
   
 Test Runner doesn't verify that you're actually running on the specified configuration. 
 However, if you use Microsoft Test Manager, system information is stored in the test log.
@@ -85,11 +85,11 @@ Choose **Testing Center**, **Organize**, **Test Configuration Manager**.
 
 To add your own configuration variables and values, choose **Manage configuration variables**:
 
-![Define configuration variables and values](_img/test-configurations-specifying-test-platforms/mtmconfig-06.png)
+![Define configuration variables and values](media/test-configurations-specifying-test-platforms/mtmconfig-06.png)
 
 Create new configurations that your tests can use:
 
-![Define configurations as combinations of values](_img/test-configurations-specifying-test-platforms/mtmconfig-07.png)
+![Define configurations as combinations of values](media/test-configurations-specifying-test-platforms/mtmconfig-07.png)
 
 **Are different test data a good use of a test configuration variable?**
 

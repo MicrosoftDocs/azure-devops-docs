@@ -113,7 +113,7 @@ On the [Build tab](../../index.yml) of a build pipeline, add this task:
 <tr>
 <td>
 
-![](_img/shell-script.png)
+![](media/shell-script.png)
 
 <br/>**Utility: Shell Script**</td>
 <td>

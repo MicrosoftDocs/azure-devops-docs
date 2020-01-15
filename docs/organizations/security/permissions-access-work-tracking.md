@@ -31,7 +31,7 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 ::: moniker-end
 
 
-In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ![ ](/azure/devops/media/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
@@ -120,11 +120,11 @@ You set project-level information permissions from **Project settings** > **Perm
 <tr>
 <td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -133,9 +133,9 @@ You set project-level information permissions from **Project settings** > **Perm
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
@@ -143,7 +143,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -152,7 +152,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -192,8 +192,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
@@ -202,17 +202,17 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
 <td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -223,7 +223,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -233,8 +233,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -268,7 +268,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
+![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 ::: moniker range="tfs-2018 < azure-devops"
 

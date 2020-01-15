@@ -34,15 +34,15 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 #### [Preview page](#tab/preview-page) 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-preview.png)  
+![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-preview.png)  
 
 #### [Current page](#tab/current-page) 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-new-nav.png)  
+![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)  
 
 ::: moniker-end
 
@@ -50,9 +50,9 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 ::: moniker range=">= tfs-2017 < azure-devops" 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](../../boards/plans/_img/capacity-planning-open-team-settings-tfs-15.png)  
+![Capacity page, Settings, Working days](../../boards/plans/media/capacity-planning-open-team-settings-tfs-15.png)  
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days. Your changes are automatically saved. 
 
-![Team settings page for default working days](../../boards/plans/_img/ALM_DS_WorkingDaysOff.png)  
+![Team settings page for default working days](../../boards/plans/media/ALM_DS_WorkingDaysOff.png)  
 
 ::: moniker-end
 

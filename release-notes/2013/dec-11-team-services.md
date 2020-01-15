@@ -20,7 +20,7 @@ In addition to working on reliability, we’ve got a few nice new features this 
 
 When trying to understand trends in your application’s performance, average request time is not very useful. Simple averages mask outliers and do not provide you with a clear picture of your customer’s experience. People typically use percentiles or a similar approach to better understand what’s really happening. In this update we have added a new way to analyze and understand performance trends that we call the Response Stacked Distribution tile. By visualizing the trend over time, you will be better able to see how code changes have changed your responsiveness.
 
-![Response Distribution tile](_img/12_11_01.png)
+![Response Distribution tile](media/12_11_01.png)
 
 This tile simultaneously allows visibility into the trend of the overall request rates and the distribution of response times between them.
 
@@ -30,7 +30,7 @@ In the initial release of Application Insights, we provided telemetry SDKs for w
 
 You can read more about emitting telemetry from your Windows Store apps on [MSDN](https://msdn.microsoft.com/library/). And, we published the SDK to [NuGet.org](https://www.nuget.org/packages/Microsoft.ApplicationInsights.Telemetry.WindowsPhone/) for consumption.
 
-![NuGet gallery screen](_img/12_11_02.png)
+![NuGet gallery screen](media/12_11_02.png)
 
 ## Asynchronous backlogs
 

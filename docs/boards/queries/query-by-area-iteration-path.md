@@ -56,7 +56,7 @@ In addition to these operators, you can use the following macros when you select
 You can specify to filter for work items assigned to several area paths by using the **In** operator as shown in the following example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query on Area Path for several areas](_img/query-area-iteration/query-with-in-operator.png)
+> ![Query on Area Path for several areas](media/query-area-iteration/query-with-in-operator.png)
 
 
 ## Node Name and keyword based queries  
@@ -66,17 +66,17 @@ Use the **Node Name** field to filter on work items assigned to area paths based
 The following query yields the same result as the previous example.  
 
 > [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
 In this example, the filter will return any work items assigned to an area path whose last node contains the word "Azure".
 
 > [!div class="mx-imgBorder"]
-> ![Query for several sprints](_img/query-area-iteration/query-filter-contains-node-name.png)
+> ![Query for several sprints](media/query-area-iteration/query-filter-contains-node-name.png)
 
 Here's another example which uses the **Node Name** and the **In** operator. 
 
 > [!div class="mx-imgBorder"]
-> ![Query on Node Name for several areas](_img/query-area-iteration/query-with-in-operator-node-name.png)
+> ![Query on Node Name for several areas](media/query-area-iteration/query-with-in-operator-node-name.png)
 
 
 
@@ -88,7 +88,7 @@ Here's another example which uses the **Node Name** and the **In** operator.
 Use the <strong>@TeamAreas</strong> macro to quickly find items assigned to the area paths assigned to a specific team. Specify the **=** operator. The Query Editor automatically prompts for you to enter the name of the team. You can add it by typing the name of the team and choosing the team value that appears in the search filter criteria.   
 
 > [!div class="mx-imgBorder"]
-> ![Query on area paths assigned to a team](_img/query-area-iteration/teamareas-macro-example.png)
+> ![Query on area paths assigned to a team](media/query-area-iteration/teamareas-macro-example.png)
 
 ::: moniker-end
 

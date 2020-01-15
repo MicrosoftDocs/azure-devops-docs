@@ -25,7 +25,7 @@ Unlike Git branches, which are repository scoped, TFVC branches are path scoped 
 
 The **Main Only** strategy can be folder-based or with the **main** folder [converted to a Branch](branch-folders-files.md), to enable additional visibility features. You commit your changes to the main branch and optionally indicate development and release milestones with labels.
 
-![Main Only branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-main-only.png)
+![Main Only branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-main-only.png)
 
 > RISK: The mutability and lack of history with TFVC labels can add risk of change control.
 
@@ -34,7 +34,7 @@ Start with the main only branching strategy, [branch strategically](branch-strat
 ## Development isolation
 When you need to maintain and protect a stable **main** branch, you can branch one or more **dev** branches from **main**. It enables isolation and concurrent development. Work can be isolated in development branches by feature, organization, or temporary collaboration.
 
-![Developer Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-developer-isolation.png)
+![Developer Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-developer-isolation.png)
 
 It's possible that there are changes in the **main** branch. Always forward integrate (FI) **main** to the **dev** branch and resolve merge conflicts. Then reverse integrate (RI) changes back to **main**. Maintain the same quality bar across branches. Build and run build verification tests (BVTs) on **dev** the same way you are doing on **main**.
 
@@ -44,7 +44,7 @@ It's possible that there are changes in the **main** branch. Always forward inte
 
 Feature isolation is a special derivation of the development isolation, allowing you to branch one or more **feature** branches from **main**, as shown, or from your **dev** branches. 
 
-![Feature Isolation branching strategy](./_img/branching-strategies-with-tfvc/Branching-Scenarios-Feature-Isolation.png)
+![Feature Isolation branching strategy](./media/branching-strategies-with-tfvc/Branching-Scenarios-Feature-Isolation.png)
 
 When you need to work on a particular feature, it might be a good idea to create a feature branch.
 
@@ -54,7 +54,7 @@ Keep the lifetime of feature work and the associated feature branch short-lived.
 
 Release isolation introduces one or more **release** branches from **main**. The strategy allows concurrent release management, multiple and parallel releases, and codebase snapshots at release time.
 
-![Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-release-isolation.png)
+![Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-release-isolation.png)
 
 When the release is ready to be locked down, it's time to create a new branch for the release.
 
@@ -66,7 +66,7 @@ Never forward integrate (FI) from **main**. Lock release branches using access p
 
 Servicing and Release Isolation strategy introduces **servicing** branches. This strategy allows concurrent service management of service packs, and codebase snapshots at release time.
 
-![Service Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-service-release-isolation.png)
+![Service Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-service-release-isolation.png)
 
 Use this strategy if you need a servicing model for customers to upgrade to the next major release and additional service packs per release.
 
@@ -78,7 +78,7 @@ Create new servicing and release branches for subsequent releases if you require
 
 Although not recommended, you can continue to evolve the strategies, by introducing additional **hotfix** branches and associated release scenarios.
 
-![Service HotFix Release Isolation branching strategy](./_img/branching-strategies-with-tfvc/branching-scenarios-service-hotfix-release-isolation.png)
+![Service HotFix Release Isolation branching strategy](./media/branching-strategies-with-tfvc/branching-scenarios-service-hotfix-release-isolation.png)
 
 At this point, you have successfully explored a few of the common TFVC branching scenarios. You can evolve them, or investigate other strategies such as [feature toggling](https://msdn.microsoft.com/magazine/dn683796.aspx), toggling features on and off to determine whether a feature is available at run time.
 

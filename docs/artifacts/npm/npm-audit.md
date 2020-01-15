@@ -42,7 +42,7 @@ steps:
 
 Adding the **npm** task and select _custom_ as the Command:
 
-![Custom npm task form with the audit command in the Command and Arguments field](_img/npm-audit-task.png)
+![Custom npm task form with the audit command in the Command and Arguments field](media/npm-audit-task.png)
 
 ---
 

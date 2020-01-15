@@ -81,7 +81,7 @@ For information about agents and pipelines, see:
 1. In the Azure portal, for each VM that will be included in the deployment group
    open the **Extension** blade, choose **+ Add** to open the **New resource** list, and select **Azure Pipelines Agent**.
 
-   ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
+   ![Installing the Azure Pipelines Agent extension](media/howto-provision-azure-vm-agents/azure-vm-create.png)
 
 1. In the **Install extension** blade, specify the name of the Azure Pipelines subscription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 

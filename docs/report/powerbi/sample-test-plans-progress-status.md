@@ -25,7 +25,7 @@ This article shows you how to get the execution state of one or more Test Plans 
 The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
+> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 This report displays two donut charts that summarize Test Plans executed and not executed, and the status of executed Test Plans.  
 
@@ -148,7 +148,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution - Fields](_img/odatapowerbi-overallexecution-fields.png)
+> ![Sample - Overall Execution - Fields](media/odatapowerbi-overallexecution-fields.png)
 
 To create the report, do the following steps:
 
@@ -162,7 +162,7 @@ To create the report, do the following steps:
 Your report should appear similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Overall Execution State - Report](_img/odatapowerbi-overallexecution.png)
+> ![Sample - Overall Execution State - Report](media/odatapowerbi-overallexecution.png)
 
 ## Full list of Test Plans sample reports 
 

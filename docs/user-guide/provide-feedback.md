@@ -91,7 +91,7 @@ To learn the version number, enter the following address in a web browser:
 
 A page similar to the following example opens showing the version number.
 
-![Learn the version number of Azure DevOps](_img/version-azure-devops.png)
+![Learn the version number of Azure DevOps](media/version-azure-devops.png)
 
 
 ### Azure DevOps Server 
@@ -108,7 +108,7 @@ https://ServerName:8080/tfs/_home/About
 
 A page similar to the following example opens showing the version number.
 
-<img src="../_img/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
+<img src="../media/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 

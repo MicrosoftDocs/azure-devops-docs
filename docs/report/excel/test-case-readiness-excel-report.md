@@ -35,7 +35,7 @@ You can use the Test Case Readiness report to help monitor the progress that the
 
 This report provides a stacked area graph that shows how many Test Cases have been in the **Design** or **Ready** state for the most recent four weeks.  
   
- ![Test Case Readiness Excel Report](_img/procguid_exceltestcase.png "ProcGuid_ExcelTestCase")  
+ ![Test Case Readiness Excel Report](media/procguid_exceltestcase.png "ProcGuid_ExcelTestCase")  
   
  The report is based on a PivotChart report that shows the data that is stored in the data warehouse for Test Cases.  
   

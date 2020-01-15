@@ -45,7 +45,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The User Story Status report indicates how many tests are passing or failing for each user story. It provides a horizontal bar chart that shows the count of test results for each test case and test configuration combination that the team has defined for each user story. The report presents the cumulative outcome of tests run for all test cases that are linked to user stories. The report displays results that are filtered by the following outcomes: **Passed** (green), **Failed** (red), **Never Run** (blue), or **Blocked** (yellow).  
   
- ![User Story Test Status Excel Report](_img/procg_userstorystatus.png "ProcG_UserStoryStatus")  
+ ![User Story Test Status Excel Report](media/procg_userstorystatus.png "ProcG_UserStoryStatus")  
   
  The User Story Status by Config report presents the test results for each user story, grouped by test configuration.  
   
