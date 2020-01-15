@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 6/30/2019
+ms.date: 1/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -87,7 +87,6 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
 
-
 ## Get your first JavaScript run
 
 --- 
@@ -97,16 +96,6 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 [!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
 
 ::: moniker-end
-
-
-
-
-
-
-
-
-
-
 
 
 ::: moniker range="<= azure-devops-2019"
