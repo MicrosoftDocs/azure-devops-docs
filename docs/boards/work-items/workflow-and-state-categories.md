@@ -1,4 +1,4 @@
-﻿---
+---
 title: Backlogs/boards workflow states & state categories
 titleSuffix: Azure Boards   
 description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
@@ -7,7 +7,6 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
-ms.manager: mijacobs
 ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
