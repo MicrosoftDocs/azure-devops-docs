@@ -23,7 +23,7 @@ ms.date: 12/16/2019
 
 ## Data migration tool for Azure DevOps
 
-The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 
 ## Supported Azure DevOps Server versions for import
@@ -55,7 +55,7 @@ The following features can be included with your import, but are currently in a 
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
-For a list of items not included with an import please see the [migration guide](https://aka.ms/AzureDevOpsImport).
+For a list of items not included with an import, see the [migration guide and tool](https://aka.ms/AzureDevOpsImport).
 
 ## Data migration tool for Azure DevOps resources
 
