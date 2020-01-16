@@ -119,6 +119,8 @@
       href: data-protection.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Data location
       href: data-location.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Data Subject Requests for the GDPR and CCPA
+      href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json 
     - name: Credential storage
       href: credential-storage.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json 
   - name: TFSSecurity command
