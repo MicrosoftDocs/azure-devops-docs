@@ -47,7 +47,7 @@ When you publish an enterprise project plan that is mapped to a project, the Tea
   
 1.  Choose the row that contains the **Invalid Work Item Type** issue, choose **Choose Values**, and then specify the type of work item that you want to associate with the task.  
   
-     ![Choose a valid work item type](_img/ps-tfs_proj_validresolut.png "PS-TFS_Proj_ValidResolut")  
+     ![Choose a valid work item type](media/ps-tfs_proj_validresolut.png "PS-TFS_Proj_ValidResolut")  
   
     > [!NOTE]
     >  The add-in for Project Server Integration validates the task field assignments against the work item type rules when they are published.  

@@ -19,7 +19,7 @@ ms.date: 04/10/2018
 
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
-When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services.  
+When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services.  
 
 > [!IMPORTANT]  
 > When you create a project from the web portal, the ReportsTasks.xml  
@@ -84,7 +84,7 @@ In the XML file, you specify one or more tasks and their dependencies. For an ex
 
 ##  Create the Reports site  
 
-The first task is to create the reporting site. The reporting site will have a link to it on the project portal home page, and the link will be labeled ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports**. Use the **site** element to create the site, as the following example shows:  
+The first task is to create the reporting site. The reporting site will have a link to it on the project portal home page, and the link will be labeled ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**. Use the **site** element to create the site, as the following example shows:  
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML 

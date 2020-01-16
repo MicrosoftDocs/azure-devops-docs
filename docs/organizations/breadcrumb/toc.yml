@@ -9,9 +9,6 @@
     - name: User preferences
       tocHref: /azure/devops/organizations/user-guide/
       topicHref: /azure/devops/organizations/settings/set-your-preferences
-    - name: Organizations
-      tocHref: /azure/devops/organizations/accounts/
-      topicHref: /azure/devops/user-guide/plan-your-azure-devops-org-structure
     - name: Notifications
       tocHref: /azure/devops/notifications/
       topicHref: /azure/devops/notifications/about-notifications
@@ -30,9 +27,4 @@
     - name: Process
       tocHref: /azure/devops/boards/work-items/guidance/
       topicHref: /azure/devops/boards/work-items/guidance/choose-process
-    - name: Repos (Code)
-      tocHref: /azure/devops/repos/git/
-      topicHref: /azure/devops/repos/git/create-new-repo
-    - name: Test
-      tocHref: /azure/devops/test/
-      topicHref: /azure/devops/test/how-long-to-keep-test-results
+

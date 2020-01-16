@@ -25,7 +25,7 @@ A [test case](./cases.md) describes the steps to take when you run a test.
 [Test points](./points.md) are the pairings of test cases with test configurations that need to be run for the test plan.
 A [test run](./runs.md) consists of a set of test points. The [results](./results.md) are the outcome of running the tests in the test run.
 
-![Test management resources](./_img/test-resources.png)
+![Test management resources](./media/test-resources.png)
 
 * [Attachments](./attachments.md)
 * [Cases](./cases.md)

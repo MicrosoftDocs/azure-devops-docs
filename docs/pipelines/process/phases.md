@@ -427,7 +427,7 @@ For example, the pipeline shown below divides the overall release
 execution into separate execution jobs by using two agent jobs
 and a [server job](#server-jobs).
 
-![Configuring a manual intervention step](_img/phases-02.png)
+![Configuring a manual intervention step](media/phases-02.png)
 
 In the example above:
 

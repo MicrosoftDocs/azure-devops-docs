@@ -27,7 +27,7 @@ monikerRange: '>= tfs-2017'
 1. In the list of shared queries, select **Feedback**. 
    This query displays a list of all the feedback responses received.
 
-   ![Viewing the feedback responses](_img/track-stakeholder-feedback/track-stakeholder-feedback-31.png)
+   ![Viewing the feedback responses](media/track-stakeholder-feedback/track-stakeholder-feedback-31.png)
 
 1. Open the response work item to see the details of the feedback.
 

@@ -83,7 +83,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 
    - In the dialog that opens, type the test case identifier and choose **Add Association**, then choose **Save**.
 
-   ![Associate Automation With Test Case](_img/associate-automated-test-with-test-case/test-explorer-associate.png)
+   ![Associate Automation With Test Case](media/associate-automated-test-with-test-case/test-explorer-associate.png)
 
    > The dialog shows a list of test cases currently associated with the selected test method.
    You cannot associate more than one test method with a test case, but you can associate a
@@ -128,7 +128,7 @@ You can also run tests using Microsoft Test Manager and a
 instead of the default Azure Pipelines or TFS UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio.
 
-![Change work item display mode](_img/work-item-compatibility.png)
+![Change work item display mode](media/work-item-compatibility.png)
 
 ## See Also
 

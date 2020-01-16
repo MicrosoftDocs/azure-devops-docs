@@ -65,23 +65,23 @@ For more information about how to write OData queries against Analytics, see [OD
 
 After you've written the query in Visual Studio Code, you should see syntax highlighting:
 
-![Visual Studio Code OData extension - syntax highlighting](_img/odataquery-syntaxhighlighting.png)
+![Visual Studio Code OData extension - syntax highlighting](media/odataquery-syntaxhighlighting.png)
 
 ### 5. Test the OData query
 
 To test the OData query, place your cursor anywhere in the query text and select **View** > **Command Palette**. In the search box, type **odata** to bring up all the OData commands:
 
-![Visual Studio Code OData extension - Command Palette](_img/odataquery-commandpallette.png)
+![Visual Studio Code OData extension - Command Palette](media/odataquery-commandpallette.png)
 
 Select **OData: Open**. This action combines the multiline query into a one-line URL and opens it in your default browser. 
 
 The OData query result set is in JSON format. To view the results, install the JSON Formatter extension for your browser. Several options are available for both Chrome and Microsoft Edge.
 
-![Visual Studio Code OData extension - JSON output](_img/odataquery-jsonoutput.png)
+![Visual Studio Code OData extension - JSON output](media/odataquery-jsonoutput.png)
 
 If the query has an error, the Analytics service returns an error in JSON format. For example, this error states that the query has selected a field that doesn't exist:
 
-> ![Visual Studio Code OData extension - JSON error](_img/odataquery-jsonerror.png)
+> ![Visual Studio Code OData extension - JSON error](media/odataquery-jsonerror.png)
 
 After you've verified that the query works correctly, you can run it from Power BI.
 
@@ -98,7 +98,7 @@ In Visual Studio Code, place your query anywhere in the query text, and then sel
 
 The multiline query is converted into a single-line query.
 
-![Visual Studio Code OData extension - Combine to single-line query](_img/odataquery-combineto1line.png)
+![Visual Studio Code OData extension - Combine to single-line query](media/odataquery-combineto1line.png)
 
 Copy the entire line for use in the next section.
 
@@ -106,36 +106,36 @@ Copy the entire line for use in the next section.
 
 Open Power BI, select **Get Data**, and then select the **OData feed** connector. For more information, see [Create a Power BI report with an OData query](create-quick-report-odataq.md).
 
-![Power BI - "OData feed" command](_img/ODataQuery.png)
+![Power BI - "OData feed" command](media/ODataQuery.png)
 
 In the **OData feed** window, in the **URL** box, paste the OData query that you copied in the preceding section, and then select **OK**.
 
-![Power BI - OData Feed - Paste in query](_img/odataquery-powerbi-odatafeed.png)
+![Power BI - OData Feed - Paste in query](media/odataquery-powerbi-odatafeed.png)
 
 Power BI displays a preview page:
 
-![Power BI - OData Feed - Power BI Data Preview](_img/odataquery-powerbi-preview.png)
+![Power BI - OData Feed - Power BI Data Preview](media/odataquery-powerbi-preview.png)
 
 
 ### 3. Specify query options
 
 On the preview page, select **Edit** to open the Power Query Editor.
 
-![Power BI - OData Feed - Power Query Editor](_img/odataquery-powerbi-queryeditor.png)
+![Power BI - OData Feed - Power Query Editor](media/odataquery-powerbi-queryeditor.png)
 
 In the ribbon, select **Advanced Editor**.
 
-![Power BI - OData Feed - Select Advanced Editor](_img/AdvancedEditor.png)
+![Power BI - OData Feed - Select Advanced Editor](media/AdvancedEditor.png)
 
 In the **Query** pane, scroll horizontally to view the `[Implementation="2.0"]` parameter.
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor1.png)
+![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor1.png)
 
 Replace `[Implementation="2.0"]` with the following string:
 
 `[Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]` 
 
-![Power BI - OData Feed - Advanced Editor - Scroll Right](_img/odataquery-powerbi-advancededitor2.png)
+![Power BI - OData Feed - Advanced Editor - Scroll Right](media/odataquery-powerbi-advancededitor2.png)
 
 > [!NOTE]
 > The following actions help accomplish this preventative measure: 
@@ -160,7 +160,7 @@ Replace `[Implementation="2.0"]` with the following string:
 
 Select **Close & Apply** to save your settings and pull the data into Power BI. After the data is refreshed, you can create a report as you would normally in Power BI.
 
-![Power BI "Close & Apply" button](_img/powerbi-close-apply.png)
+![Power BI "Close & Apply" button](media/powerbi-close-apply.png)
 
 ## Related articles
 

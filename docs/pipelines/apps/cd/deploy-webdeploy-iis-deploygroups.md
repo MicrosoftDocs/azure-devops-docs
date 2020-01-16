@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/_shared/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 

@@ -63,21 +63,21 @@ You can track your team's progress more easily by creating reports that aggregat
 
 1.  Choose the **Team System** cube, as the following illustration shows.  
 
-     ![Query Builder &#45; click the Team System cube](_img/reportdesignercube.png "ReportDesignerCube")  
+     ![Query Builder &#45; click the Team System cube](media/reportdesignercube.png "ReportDesignerCube")  
 
     > [!NOTE]
     >  If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through the dimensions and measures in the whole Team System cube. For this procedure, you can use the Work Item History perspective if it is available. For more information, see [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx).  
 
 2.  Expand **Measures**, expand the **Work Item History** measure group, and then drag the **Cumulative Count** measure into the data area, as the following illustration shows.  
 
-     ![Query Builder &#45; add Cumulative Count measure](_img/reportdesignmeasure.png "ReportDesignMeasure")  
+     ![Query Builder &#45; add Cumulative Count measure](media/reportdesignmeasure.png "ReportDesignMeasure")  
 
     > [!NOTE]
     >  Cumulative Count shows how many work items are selected. Because you have not yet applied any filters, the number that appears is the total number of work items. For more information about work item measures, see [Perspectives and measure groups provided in the Analysis Services cube](https://msdn.microsoft.com/library/ms244710.aspx).  
 
 3.  Expand the **Assigned To** dimension, and then drag the **Person** property into the data area, as the following illustration shows.  
 
-     ![Query Builder &#45; add Person dimension](_img/querybuilder.png "QueryBuilder")  
+     ![Query Builder &#45; add Person dimension](media/querybuilder.png "QueryBuilder")  
 
      The query now returns the number of work items that are assigned to each person.  
 

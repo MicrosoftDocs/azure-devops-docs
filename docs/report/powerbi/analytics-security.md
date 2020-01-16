@@ -35,7 +35,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
 	For example, here we set the permissions for Chuck Reinhart, denying him permission to delete or modify shared Analytics views, but allowing him to access Analytics data. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](_img/analytics-security-permissions.png) 
+	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](media/analytics-security-permissions.png) 
 
 	To learn more about working with permissions, see [Security & identity](../../organizations/security/index.md).
 

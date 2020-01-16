@@ -23,7 +23,7 @@ ms.date: 08/04/2016
 The service hook [publishers](./publishers.md) define a set of events. You create [subscriptions](./subscriptions.md) based on an event and select the 
 service hook [consumer](./consumers.md) and action to take in response to that event from the publisher.
 
-![service hook resources](./_img/service-hook-resources.png)
+![service hook resources](./media/service-hook-resources.png)
 
 * [Consumers](./consumers.md)
 * [Publishers](./publishers.md)

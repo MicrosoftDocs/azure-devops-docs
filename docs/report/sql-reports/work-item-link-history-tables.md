@@ -20,7 +20,7 @@ You can query for links between bugs, tasks, and other types of work items by us
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Links between Work Items](_img/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
+ ![Fact Table for Links between Work Items](media/teamproj_worklinkhistory.png "TeamProj_WorkLinkHistory")  
   
  FactWorkItemLinkHistory is associated with the following dimension tables:  
   

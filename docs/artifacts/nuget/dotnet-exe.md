@@ -21,7 +21,7 @@ monikerRange: 'azure-devops'
 2. Select **Connect to feed**:
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   >![Connect to feed button in the upper-right of the page](../_shared/media/connect-to-feed-azure-devops-newnav.png)
    > 
 
 3. Select **dotnet** under the **NuGet** header
@@ -33,7 +33,7 @@ monikerRange: 'azure-devops'
 6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.
 
    > [!div class="mx-imgBorder"] 
-   >![NuGet publish instructions in the Connect to feed](../_shared/_img/dotnet-azure-devops-newnav.png)
+   >![NuGet publish instructions in the Connect to feed](../_shared/media/dotnet-azure-devops-newnav.png)
    > 
 
    > [!NOTE]
