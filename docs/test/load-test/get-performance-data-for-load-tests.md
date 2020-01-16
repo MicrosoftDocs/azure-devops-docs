@@ -48,22 +48,22 @@ is causing performance problems.
    **Run Settings** section and select your active run settings. Open the
    shortcut menu and choose **Get Performance Data from Application Insights**.  
 
-   ![Choosing Get Performance Data from Application Insights](_img/get-performance-data-for-load-tests/get-load-test-insights-01.png)
+   ![Choosing Get Performance Data from Application Insights](media/get-performance-data-for-load-tests/get-load-test-insights-01.png)
 
 1. Select the apps you want to monitor and the performance counters 
    you want to view while your load test runs.
 
-   ![Select the apps to monitor and performance counters](_img/get-performance-data-for-load-tests/get-load-test-insights-02.png)
+   ![Select the apps to monitor and performance counters](media/get-performance-data-for-load-tests/get-load-test-insights-02.png)
 
    The counters you selected are shown in the load test project.
  
-   ![Performance counters shown in the load test project](_img/get-performance-data-for-load-tests/get-load-test-insights-03.png)
+   ![Performance counters shown in the load test project](media/get-performance-data-for-load-tests/get-load-test-insights-03.png)
  
 1. Queue a load test run and view the performance data from 
    Application Insights while your load test runs. The data might 
    take a few minutes to appear.
 
-   ![To view the performance counters when your load test runs, click Application](_img/get-performance-data-for-load-tests/get-load-test-insights-04.png)
+   ![To view the performance counters when your load test runs, click Application](media/get-performance-data-for-load-tests/get-load-test-insights-04.png)
 
    Application counters are correlated with user load so that you can 
    understand which issues might cause performance problems that you find.
@@ -74,7 +74,7 @@ is causing performance problems.
 1. To do a more detailed analysis for any performance issue, or to do a 
    quick root cause analysis, go to Application Insights.
 
-   ![To get more performance details, click Go to Application Insights](_img/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
+   ![To get more performance details, click Go to Application Insights](media/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
 
 [Can I define load tests once and then run them against different hosts?](reference-qa.md#inject-url-variables)
 

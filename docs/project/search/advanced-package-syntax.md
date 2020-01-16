@@ -24,7 +24,7 @@ free text search on title and description.
 You can also narrow your search by using Boolean operators and combine search criteria. 
 
 > [!div class="mx-imgBorder"]  
-> [Web portal package search](_img/_shared/pkg-srch-u2.png)
+> [Web portal package search](media/_shared/pkg-srch-u2.png)
 
 * **Search across all of your organization feeds**:
   Search in your and your team's feeds across the organization. Narrow your search by using feed, view 
@@ -32,7 +32,7 @@ You can also narrow your search by using Boolean operators and combine search cr
   Boolean operators to fine-tune it. 
 
 > [!div class="mx-imgBorder"]  
-> [Web portal package search across organization feeds](_img/_shared/pkg-srch-u1.png)
+> [Web portal package search across organization feeds](media/_shared/pkg-srch-u1.png)
 
 <a name="syntaxdetails"></a>
 

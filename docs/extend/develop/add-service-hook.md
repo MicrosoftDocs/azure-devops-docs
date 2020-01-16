@@ -25,7 +25,7 @@ as a more efficient way to drive activities when events happen in your projects.
 Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** to take based on the event. 
 Subscriptions also target **consumers**, which are external services that can perform their own actions, when an event occurs. 
 
-<center><img src="./_img/service-hooks.png" alt="Service Hooks Diagram"/></center>
+<center><img src="./media/service-hooks.png" alt="Service Hooks Diagram"/></center>
 
 ## Tutorial Overview - Custom Consumer Service
 
@@ -39,7 +39,7 @@ This tutorial walks through developing an extension that implements a **sample c
 
 > Note: This tutorial refers to the home directory for your project as "home". 
 
-<center><img src="./_img/consumer-service.png" alt="Sample Consumer Service"/></center>
+<center><img src="./media/consumer-service.png" alt="Sample Consumer Service"/></center>
 
 ## Create the extension
 ### Add an icon
@@ -51,10 +51,10 @@ but below is a sample image you can use along with how it looks with the extensi
 >NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
 <div style="vertical-align:middle;display:block;width:60%;margin-left:auto;margin-right:auto">
-<img alt="Sample logo" src="../get-started/_img/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="Sample logo" src="../get-started/media/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-<img alt="first sample extension example" src="../get-started/_img/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="first sample extension example" src="../get-started/media/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 
 ### Create the manifest file and populate it

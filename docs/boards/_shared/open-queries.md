@@ -7,7 +7,7 @@ ms.topic: include
 From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
 > [!div class="mx-imgBorder"]  
-> ![Open Boards>Queries, vertical nav](/azure/devops/boards/queries/_img/view-run-queries/open-queries-vert.png) 
+> ![Open Boards>Queries, vertical nav](/azure/devops/boards/queries/media/view-run-queries/open-queries-vert.png) 
 
 If it is your first time opening **Work**, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
@@ -21,6 +21,6 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 
 From your web browser, open **Boards>Queries**. 
 
-![Web portal, choose Boards>Queries](/azure/devops/boards/queries/_img/view-run-queries/open-hub-page.png)  
+![Web portal, choose Boards>Queries](/azure/devops/boards/queries/media/view-run-queries/open-hub-page.png)  
 
 ::: moniker-end

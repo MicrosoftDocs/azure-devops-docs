@@ -39,7 +39,7 @@ We recommend this simple approach if:
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Specify the following parameters.
 
@@ -83,11 +83,11 @@ or a [VM with a managed service identity](#use-msi).
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
 
-   ![Opening the full version of the service  dialog](_img/rm-endpoint-link.png)
+   ![Opening the full version of the service  dialog](media/rm-endpoint-link.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
@@ -141,11 +141,11 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Select the **Managed Identity Authentication** option.
 
-   ![Opening the managed service identity settings](_img/rm-endpoint-msi.png)
+   ![Opening the managed service identity settings](media/rm-endpoint-msi.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 

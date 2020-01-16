@@ -22,7 +22,7 @@ Azure Pipelines.
 
 For example, you can continuously deliver your app to a Windows VM hosted in Azure.
 
-![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/_shared/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 

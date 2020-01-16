@@ -99,7 +99,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />        
 
 ## Paragraphs and line breaks
 
@@ -170,7 +170,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 **Result:**  
 
-![Quoting in Markdown](_img/markdown-guidance/markdown_quote2.jpg)
+![Quoting in Markdown](media/markdown-guidance/markdown_quote2.jpg)
 
 ## Horizontal rules
 
@@ -582,9 +582,9 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 
 - Relative path: `![Image alt text](./image.png)`  
-- Absolute path in Git: `![Image alt text](/_img/markdown-guidance/image.png)`  
-- Absolute path in TFVC: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png)`  
-- Resize image: `![Image alt text]($/project/folder/_img/markdown-guidance/image.png =WIDTHxHEIGHT)`  
+- Absolute path in Git: `![Image alt text](/media/markdown-guidance/image.png)`  
+- Absolute path in TFVC: `![Image alt text]($/project/folder/media/markdown-guidance/image.png)`  
+- Resize image: `![Image alt text]($/project/folder/media/markdown-guidance/image.png =WIDTHxHEIGHT)`  
 
 
 ::: moniker-end
@@ -602,12 +602,12 @@ You can Use `[ ]` or `[x]` to support checklists. You need to precede the checkl
 **Example - Apply the task list Markdown to a highlighted list**
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png)
+> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-apply.png)
 
 After you've added a task list, you can check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown.
 
 > [!div class="mx-imgBorder"]  
-> ![Apply Markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png)
+> ![Apply Markdown task list format to a highlighted list in a PR](media/markdown-guidance/checklist-pr-applied-check.png)
 
 **Example - Format a list as a task list**
 
@@ -625,7 +625,7 @@ After you've added a task list, you can check the boxes to mark items as complet
 
 **Result:**  
 
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]
 > A checklist within a table cell isn't supported.
@@ -667,7 +667,7 @@ In pull request comments, you can use emojis to add characters and react to comm
 
 **Result:**  
 
-![Emojis in Markdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
+![Emojis in Markdown](../../repos/git/media/pull-requests/emoji-markdown.png)
 
 To escape emojis, enclose them using the \` character.
 
@@ -763,7 +763,7 @@ In pull request comments, you can attach files to illustrate your point or to gi
 
 ::: moniker range=">= tfs-2017"
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />        
+<img src="media/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />        
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it renders directly into your comment or wiki page.
 
@@ -835,7 +835,7 @@ $\Gamma,  \Delta,  \Theta, \Lambda, \Xi, \Pi, \Sigma, \Upsilon, \Phi, \Psi, \Ome
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](_img/markdown-guidance/mathematical-notation-greek-characters.png)
+> ![Greek letters](media/markdown-guidance/mathematical-notation-greek-characters.png)
 
 ### Example: Algebraic notation
 
@@ -851,7 +851,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Algebraic notation](_img/markdown-guidance/mathematical-notation-algebra.png)
+> ![Algebraic notation](media/markdown-guidance/mathematical-notation-algebra.png)
 
 ### Example: Sums and Integrals
 
@@ -868,7 +868,7 @@ $$
 
 **Result:**
 > [!div class="mx-imgBorder"]
-> ![Greek letters](_img/markdown-guidance/mathematical-notation-sums-integrals.png)
+> ![Greek letters](media/markdown-guidance/mathematical-notation-sums-integrals.png)
 
 ::: moniker-end
 

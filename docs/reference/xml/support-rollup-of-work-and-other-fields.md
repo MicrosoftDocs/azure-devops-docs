@@ -41,7 +41,7 @@ To learn more, see [Display rollup progress or totals](../../boards/backlogs/dis
 As you assign backlog items to a sprint using the Planning pane, the sprint window updates with a running tally of the number of backlog items and tasks, as well as the **Planned Effort**. 
 
 > [!div class="mx-imgBorder"]
-> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](../../boards/sprints/_img/assign-items-sprint/sprint-window-effort.png)   
+> ![Product backlog page, drag work items to sprint or assign to sprint through the context menu](../../boards/sprints/media/assign-items-sprint/sprint-window-effort.png)   
 
 *Planned Effort* provides a sum of all *Story Points* or *Effort* defined for backlog items assigned to the sprint. To learn more, see [Assign backlog items to a sprint](../../boards/sprints/assign-work-sprint.md).
 
@@ -62,20 +62,20 @@ From the sprint backlog, the sum of all **Remaining Work** defined for all tasks
 ::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/remaining-work-rollup-s155.png )
+> ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-s155.png )
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/remaining-work-rollup-2019.png )
+> ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-2019.png )
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Sprint backlog displays rollup of Remaining Work](_img/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
+![Sprint backlog displays rollup of Remaining Work](media/alm_rup_remworkiteration.png "ALM_RUP_RemWorkIteration")  
 
 ::: moniker-end
   
@@ -87,20 +87,20 @@ From a sprint task board, there are three types of rollup:
 ::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint Taskboard displays rollup of Remaining Work](_img/rollup/taskboard-remaining-work-s155.png )
+> ![Sprint Taskboard displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-s155.png )
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Sprint backlog displays rollup of Remaining Work](_img/rollup/taskboard-remaining-work-2019.png )
+> ![Sprint backlog displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-2019.png )
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Task board, collapsed backlog items](../../boards/sprints/_img/ALM_TB_Intro.png)
+![Task board, collapsed backlog items](../../boards/sprints/media/ALM_TB_Intro.png)
 
 ::: moniker-end
 
@@ -114,11 +114,11 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 |Method|Azure DevOps Services|On-premises Azure DevOps|  
 |------------|----------|----------------------|  
-|Work item query charts|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|
-|Marketplace extensions|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-| Analytics |![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
-|SQL Server Reporting Services report|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|Work item query charts|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|Microsoft Excel|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|
+|Marketplace extensions|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+| Analytics |![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
+|SQL Server Reporting Services report|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 
 ::: moniker-end
 
@@ -126,12 +126,12 @@ You can obtain rollup of additional data fields in Azure DevOps work tracking da
 
 |Method|TFS 2013|TFS 2015|TFS 2017|TFS 2018| 
 |------------|----------|----------------------|  
-|Work item query charts|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Microsoft Excel|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
-|Microsoft Project|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
-|Marketplace extensions|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|    
-|SQL Server Reporting Services report|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|TFS-Project Server integration|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](_img/icon_witerror.png "Icon_WITerror")|![Not supported](_img/icon_witerror.png "Icon_WITerror")|  
+|Work item query charts|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+|Microsoft Excel|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")| 
+|Microsoft Project|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|   
+|Marketplace extensions|![Not supported](media/icon_witerror.png "Icon_WITerror")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|    
+|SQL Server Reporting Services report|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|TFS-Project Server integration|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![Not supported](media/icon_witerror.png "Icon_WITerror")|![Not supported](media/icon_witerror.png "Icon_WITerror")|  
 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ You can create a flat list query that sums the values of a field you specify. To
 
 For example, here we show a pivot table that sums the story points for user stories by area path and work item state. 
  
-![Example rollup of story points by area and state](_img/support-rollup-chart.png)
+![Example rollup of story points by area and state](media/support-rollup-chart.png)
 
   
 ## Microsoft Excel and rollup of work tracking data 
@@ -163,7 +163,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
  
  Project natively supports rollup of summary tasks. With Project, you can round trip work tracking data to obtain rollup values.  
   
- ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
+ ![Task board displays round&#45;trip rollup from Project](media/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
  To learn how, see [Rollup estimated and actual work](../../boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
 
@@ -199,7 +199,7 @@ You can use the [Analytics Service](../../report/powerbi/what-is-analytics.md) t
 
  Several OOB reports provide rollup. Here's an example of rollup of completed and remaining work that the Stories Overview report provides. This report is part of the default TFS Agile process template.  
   
- ![Stories Overview example report](_img/procguid_agilereports.png "ProcGuid_AgileReports")  
+ ![Stories Overview example report](media/procguid_agilereports.png "ProcGuid_AgileReports")  
   
  If you have SQL Server Analysis Services deployed, you can get rollup for backlog items from these reports. The refresh frequency for these reports is 2 hours.  
   

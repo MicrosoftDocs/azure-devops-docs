@@ -66,18 +66,18 @@ Provision a new Git repository that stores all your wiki pages and related artif
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki, Git repo for your wiki or publish existing repo Markdown files](_img/wiki/create-wiki-or-publish-create-option.png)
+> ![Create wiki, Git repo for your wiki or publish existing repo Markdown files](media/wiki/create-wiki-or-publish-create-option.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Create wiki, Git repo for your wiki](_img/wiki/wiki-create.png)
+> ![Create wiki, Git repo for your wiki](media/wiki/wiki-create.png)
 ::: moniker-end
 
 If you don't have access to create a Wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 
 > [!div class="mx-imgBorder"]  
-> ![Insufficient permissions to create a Wiki repository](_img/wiki/wiki-security-no-contributor.png)
+> ![Insufficient permissions to create a Wiki repository](media/wiki/wiki-security-no-contributor.png)
 
 Your administrator can provision the Wiki Git repository or you can request that they elevate your permissions. Stakeholders can't create a wiki, as they have no permissions to work in **Repos** or **Code**.
 
@@ -102,7 +102,7 @@ However, you can navigate to it from the following URL:
 
 Choose **Clone Wiki** from the ellipsis near the wiki picker to access the Wiki URL.
 
-<img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
+<img align="top" src="media/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
 The URL of the wiki Git repository is exposed. Copy and paste it into your web browser to access the underlying Git repo.
 

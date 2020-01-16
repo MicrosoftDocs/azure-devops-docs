@@ -24,7 +24,7 @@ approvers to sign off that the app has successfully passed each stage.
 Start your release pipeline manually or automatically from a build. Then track your 
 releases as they move through your release path.
 
-![Overview of Release Management](_img/overview-01.png)
+![Overview of Release Management](media/overview-01.png)
 
 **Set up and start a release** 
 

@@ -40,7 +40,7 @@ This article covers:
    2. Click "View Details..." and then right click on the signing identity you wish to export, and click "Export...".
    3. Enter a filename and password. Take note of the password as you will need it later.
 
-      ![Xcode Export Cert](_img/secure-certs/secure-certs-1.png)
+      ![Xcode Export Cert](media/secure-certs/secure-certs-1.png)
 
       Alternatively you can follow a similar process using the "Keychain Access" app on macOS or even generate a signing certificate on Windows. Use the procedure [described in this article](http://docs.phonegap.com/phonegap-build/signing/ios/) if you prefer this method instead.
 
@@ -50,13 +50,13 @@ This article covers:
    2. First go to the same screen you used to get the .p12 file above.
    3. Next, right click the provisioning profile you want and select "Show in Finder".
    4. Copy the file highlighted to another location and give it a descriptive filename.
-      ![Xcode Show in Finder](_img/secure-certs/secure-certs-2.png)
+      ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
 
 3. At this point you can opt to add these two files directly to source control or add an extra layer of security by encrypting them first. **See the next section for details on this step.**
 
 4. Next, go to Azure Pipelines / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
    - **P12_PWD**: Password to the .p12 file in its unencrypted form. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
-	![Xcode Build settings](_img/secure-certs/secure-certs-10.png)
+	![Xcode Build settings](media/secure-certs/secure-certs-10.png)
 
 5. Finally, update your Xcode or Xamarin.iOS step with references to these two files. The build step will automatically determine the correct "signing identity" based on the contents of the .p12, create a temporary keychain with the .p12 in it and use that exclusively for this build, install the mobile provisioning profile, determine the correct UUID based on the contents of the .mobileprovision profile, and then remove everything after the build.
 
@@ -68,7 +68,7 @@ This article covers:
     - **Provisioning Profile File**: Path to the .mobileprovision file in the repository
     - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
 
-      ![Xcode Build settings](_img/secure-certs/secure-certs-11.png)
+      ![Xcode Build settings](media/secure-certs/secure-certs-11.png)
 
 You are now all set! Any build agent that is running will now be able to build your app without any certificate management on the build machine itself.  Simply repeat the process of adding different certificates and provisioning profiles to your source repository to enable separate dev, beta (ad hoc), and distribution builds.
 
@@ -96,7 +96,7 @@ You can add an extra layer of security by to your project by encrypting your .p1
       - **P12_PWD**: Password to the unencrypted .p12 file. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
       - **MOB_PROV**: Path to your encrypted mobile provisioning profile.
       - **ENC_PWD**: The passphrase you used to encrypt the .p12 and .mobileprovision files. If you used two different passphrase you'll need two variables.  Again, *be sure to click the "lock" icon.*
-      ![Variables](_img/secure-certs/secure-certs-3.png)
+      ![Variables](media/secure-certs/secure-certs-3.png)
 
    2. Under the **Build** tab in your build pipeline, add two **Decrypt File** (OpenSSL) steps and move these to the top of your build pipeline.
 
@@ -105,7 +105,7 @@ You can add an extra layer of security by to your project by encrypting your .p1
       - **Encrypted File**: $(P12) for one step and $(MOB_PROV) for the other
       - **Passphrase**: $(ENC_PWD)
       - **Decrypted File Path**: _build.p12 for one step and _build.mobileprovision for the other
-      ![Decrypt File settings](_img/secure-certs/secure-certs-4.png)
+      ![Decrypt File settings](media/secure-certs/secure-certs-4.png)
 
 4. Finally, update the Xcode Build step to reference the decrypted files.
 
@@ -114,7 +114,7 @@ You can add an extra layer of security by to your project by encrypting your .p1
     - **P12 Password**: $(P12_PWD)
     - **Provisioning Profile File**: _build.mobileprovision
     - **Remove Profile After Build**: Checked if you want the provisioning profile to be removed from the system after the build. Only check this if you will have one agent that only runs this build, as it is installed in a global location and could be accessed by other builds.
-      ![Xcode Build settings](_img/secure-certs/secure-certs-5.png)
+      ![Xcode Build settings](media/secure-certs/secure-certs-5.png)
 
    You are now all set! Any build agent that is running will now be able to securely build your app without any certificate management on the build machine itself. Simply repeat the process of adding different certificates and provisioning profiles to your source repository to enable separate dev, beta (ad hoc), and distribution builds.
 
@@ -140,7 +140,7 @@ Follow these steps:
       1. Open Xcode and go to Xcode &gt; Preferences... &gt; Accounts and select your Apple Developer account.
 
       2. Click "View Details..." and right click the provisioning profile you want and select "Show in Finder".
-      ![Xcode Show in Finder](_img/secure-certs/secure-certs-2.png)
+      ![Xcode Show in Finder](media/secure-certs/secure-certs-2.png)
 
    4. The name of the file that is highlighted is the UUID of your provisioning profile.
 
@@ -192,7 +192,7 @@ Follow these steps:
       - **KEY_PWD**: The password for the key associated with the specified alias. *Again, be sure to click the "lock" icon.*
       - **ENC_PWD**: The passphrase you used to encrypt the keystore file. *Be sure to click the "lock" icon.*
 
-      ![Android build vars](_img/secure-certs/secure-certs-8.png)
+      ![Android build vars](media/secure-certs/secure-certs-8.png)
 
    2. Under the **Build** tab in your build pipeline, add a **Decrypt File** (OpenSSL) step and move this to the top of your build pipeline.
 
@@ -203,7 +203,7 @@ Follow these steps:
     - **Passphrase**: $(ENC_PWD)
     - **Decrypted File Path**: _build.keystore
 
-      ![Decrypt keystore settings](_img/secure-certs/secure-certs-9.png)
+      ![Decrypt keystore settings](media/secure-certs/secure-certs-9.png)
 
 6. Finally, updating the actual build step to use these values you entered is simple regardless of your build system.
 
@@ -212,7 +212,7 @@ Follow these steps:
       ```
       -Pkey.store=_build.keystore -Pkey.store.password=$(KEYSTORE_PWD) -Pkey.alias=$(KEY) -Pkey.alias.password=$(KEY_PWD)
       ```     
-      ![Gradle Build settings](_img/secure-certs/secure-certs-6.png)
+      ![Gradle Build settings](media/secure-certs/secure-certs-6.png)
 
    2. If you are using the **Android Signing** task, you can add the following under **Jarsign Options**:
 

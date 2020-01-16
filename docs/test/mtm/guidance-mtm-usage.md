@@ -43,16 +43,16 @@ Comparison of [test planning with [!INCLUDE [test-hub-include-nolink](../_shared
 
 | Test planning capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
-| Create test plan | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Create/Manage suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Add/remove tests from test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Assign individual testers to test plan/test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Create/edit/assign configurations | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Copy/clone test plan/test suite  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Order manual tests within suites (RBS, QBS, Static) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| Export test plans and test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Create test plan | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Create/Manage suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Add/remove tests from test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Assign individual testers to test plan/test suite | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Create/edit/assign configurations | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Copy/clone test plan/test suite  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Order manual tests within suites (RBS, QBS, Static) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| Export test plans and test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| View test case references across test suites | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| Assign multiple testers to test plans and test suites for user acceptance testing | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
 
 The copy/clone capability is surfaced via the following APIs: [Copy/Clone a Test Plan](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and [Copy/Clone a Test Suite](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20suite%20clone?view=azure-devops-rest-5.1). We plan to expose this capability through the out-of-box UI in a future release.
 
@@ -64,11 +64,11 @@ Comparison of [test authoring with [!INCLUDE [test-hub-include-nolink](../_share
 
 | Test authoring capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
-| Create and edit test cases using WIT form | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Create and edit shared steps | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Bulk author and edit test cases | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [Inline tests on Kanban board](../../boards/boards/add-run-update-tests.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [Create and edit shared parameters](../repeat-test-with-different-data.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Create and edit test cases using WIT form | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Create and edit shared steps | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Bulk author and edit test cases | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| [Inline tests on Kanban board](../../boards/boards/add-run-update-tests.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| [Create and edit shared parameters](../repeat-test-with-different-data.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
 
 ### Test execution
 Test your web apps and your desktop apps.
@@ -80,16 +80,16 @@ Comparison of [test execution with web based Test Runner](../run-manual-tests.md
 
 | Test execution capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
-| Bulk mark tests without opening in Test Runner | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Pass or fail tests or test steps using Test Runner | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Inline changes to tests during execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Pause and resume tests | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| File bugs during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Capture screenshots, image action log, and screen recording during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Update existing bugs during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Verify bugs | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Assign a Build for the test run | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Assign test settings | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
+| Bulk mark tests without opening in Test Runner | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Pass or fail tests or test steps using Test Runner | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Inline changes to tests during execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Pause and resume tests | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| File bugs during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Capture screenshots, image action log, and screen recording during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Update existing bugs during test execution | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Verify bugs | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Assign a Build for the test run | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Assign test settings | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
 
 The test runners offered through the web-based hub does not support Action Recording (fast-forward test steps), Advanced Data collection (code coverage, IntelliTrace, and test impact) during your tests and Connecting to a machine in an environment. These 3 capabilities were not leveraged by our customers much and hence not being taken forward. You may however use the Microsoft Test Runner client, launched from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], for these requirements if really required.
 
@@ -101,10 +101,10 @@ You can also select a retention policy to specify how long you want to keep your
 
 | Test tracking capability | Web-based test features | Client-based Microsoft Test Manager |
 | --- | --- | --- |
-| Test run and results analysis | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| [Create, configure, and pin light-weight test result charts](../track-test-status.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| [Test run and results retention policy](../how-long-to-keep-test-results.md) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
-| View test results history across test suites and test plans | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Test run and results analysis | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| [Create, configure, and pin light-weight test result charts](../track-test-status.md)  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| [Test run and results retention policy](../how-long-to-keep-test-results.md) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
+| View test results history across test suites and test plans | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
 
 ## Exploratory Testing
 
@@ -121,11 +121,11 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 
 | Exploratory testing capability | Web-based extension for web apps | Client-based Exploratory runner for desktop apps |
 | --- | --- | --- |
-| Explore user stories | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| File bugs using screen capture and recording, and image action log | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Create test cases and tasks | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Exploratory testing session insights | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) |
-| Capture page load performance data | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
+| Explore user stories | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| File bugs using screen capture and recording, and image action log | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Create test cases and tasks | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Exploratory testing session insights | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) |
+| Capture page load performance data | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../media/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../media/table-no.png) |
 
 
 ## Conclusion

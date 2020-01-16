@@ -39,7 +39,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
-<img src="~/pipelines/_shared/_img/browse-to-team-project.png" alt="Browse to project">
+<img src="~/pipelines/_shared/media/browse-to-team-project.png" alt="Browse to project">
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
 <ul>
@@ -52,7 +52,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
-<img src="~/pipelines/_shared/_img/create-new-build-definition.png" alt="Build tab">
+<img src="~/pipelines/_shared/media/create-new-build-definition.png" alt="Build tab">
 <p>
 </div>
 </li>
@@ -73,9 +73,9 @@ Save the build pipeline and queue a new build by selecting the **Queue new build
 
 After you've run the build, you're ready to create a release pipeline to deploy your database to:
 
-* <a href="../../targets/azure-sqldb.md"><img src="../../tasks/deploy/_img/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
+* <a href="../../targets/azure-sqldb.md"><img src="../../tasks/deploy/media/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
 
-* <a href="../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../tasks/deploy/_img/sql-server-database-deployment-icon.png"/> SQL Server</a>
+* <a href="../cd/howto-webdeploy-iis-deploygroups.md#database"><img src="../../tasks/deploy/media/sql-server-database-deployment-icon.png"/> SQL Server</a>
 
 ## Q & A
 

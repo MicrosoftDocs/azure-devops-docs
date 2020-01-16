@@ -39,7 +39,7 @@ When you delete a task from Project Server that has been synchronized with a wor
 ##  <a name="removeintegration"></a> Remove integration and shut down synchronization  
  The following illustration shows the systematic sequence of steps that you take to shut down the synchronization engine and remove the integration of Team Foundation Server and Project Server. You can perform the sequence of steps as shown, or you can use the **/force** switch when you perform step 3 using the `TfsAdmin ProjectServer /UnMapPWAFromCollection` command option.  
   
- ![Workflow for removing mapping between PS and TFS](_img/pstfs_unmap_workflow.png "PSTFS_UnMap_Workflow")  
+ ![Workflow for removing mapping between PS and TFS](media/pstfs_unmap_workflow.png "PSTFS_UnMap_Workflow")  
   
 > [!NOTE]
 >  If you delete not only a mapped project collection but also all instances of PWA that were mapped to it, you will remove all mappings of work items that have been synchronized. However, the instance of PWA to Team Foundation Server will still be registered.  

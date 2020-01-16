@@ -59,7 +59,7 @@ When you're leaving a code comment in a pull request, you can enter **@** to tri
 
 To filter the list, enter the user name or alias until you've found a match.
 
-![Web portal, Pull Request, Type a user name or email alias to locate a match](_img/at-mention-pr-type-name.png)  
+![Web portal, Pull Request, Type a user name or email alias to locate a match](media/at-mention-pr-type-name.png)  
 
 ::: moniker range="azure-devops"
 You can also use group mentions. Enter the name of a team or a security group, choose the search icon, and then select from the options listed.
@@ -73,11 +73,11 @@ To <strong>@mention</strong> a user you've never selected previously, just conti
 
 Names of mentioned users appear in blue text. Choose the <strong>@mention link name</strong> to open the user's contact information. The contact information provides additional context for why they were added to the conversation.  
 
-![Web portal, At mention user contact information accessible](_img/at-mention-link-to-user-contact-card.png)  
+![Web portal, At mention user contact information accessible](media/at-mention-link-to-user-contact-card.png)  
 
 Upon completion of your selection and text entry, your <strong>@mention</strong> user receives an email alerting them about the mention.  
 
-![Email sent to at-mention user organization](_img/mail-to-at-mention-user.png)
+![Email sent to at-mention user organization](media/mail-to-at-mention-user.png)
 
 Use the <strong>@mention</strong> control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 

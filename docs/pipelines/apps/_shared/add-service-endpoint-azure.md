@@ -10,7 +10,7 @@ If a subscription is not available, then add a service connection:
 
 <li>
 
-![Manage](_img/azure-web-app-deployment-step-azure-subscription-manage.png)
+![Manage](media/azure-web-app-deployment-step-azure-subscription-manage.png)
 
 </li>
 
