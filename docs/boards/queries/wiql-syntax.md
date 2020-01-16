@@ -1,17 +1,17 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: Azure Boards 
-description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.custom: boards-queries
-ms.technology: devops-agile
-ms.prod: devops
-ms.topic: reference
+titleSuffix: Azure Boards   
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards, Azure DevOps, & Team Foundation Server  
+ms.custom: boards-queries  
+ms.technology: devops-agile  
+ms.prod: devops  
+ms.topic: reference  
 ms.assetid: 95DAF407-9208-473D-9F02-4B6E7F64AD0A   
 ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelli  
+author: KathrynEE  
 monikerRange: '>= tfs-2013'
-ms.date: 04/08/2019
+ms.date: 01/16/2020
 ---
 
 
@@ -27,6 +27,141 @@ The WIQL syntax is not case sensitive.
 
 > [!IMPORTANT] 
 > The WIQL syntax is used to execute the [Query By Wiql REST API](/rest/api/azure/devops/wit/wiql/query%20by%20wiql). Currently, there is no way to call the API to return the detailed work item information from a WIQL query directly. No matter which fields you include in the SELECT statement, the API only returns the work item IDs. To get the full information, you need to perform  two steps: (1) get the ID of the work items from a WIQL, and (2) get the work items via [Get a list of work items by ID and for specific fields](/rest/api/azure/devops/wit/work%20items/list#get-list-of-work-items-for-specific-fields). 
+
+## Prerequisties
+
+A query returns only those work items for which you have the **View work items** or **View work items in this node** permission. Typically, these permissions are granted to members of the **Readers** and **Contributors** groups for each team project. For more information, see [Permissions and groups](../../organizations/security/permissions.md).  
+
+## Query language
+
+The work item query language has five parts.
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+Select [State], [Title] 
+From WorkItems
+Where [Work Item Type] = 'User Story'
+Order By [State] Asc, [Changed Date] Desc
+AsOf '6/15/2010'
+Select [State], [Title]
+```
+
+| Part | Usage |
+| ----- |  -----  |
+| `Select` | Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods. <br/>
+> [!WARNING]  
+> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations. |
+| `From WorkItems` | Indicates whether you want the query to find work items or links between work items. <br/>
+- Use `From WorkItems` to return work items. <br/>
+- Use `From WorkItemLinks` to return links between work items. For more information, see [Queries for links between work items](#linked-work-items). |
+| `Where` | Specifies the filter criteria for the query. For more information, see Syntax of the Where Clause later in this topic. |
+| `Order By` | (Optional) Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example: <br/>
+`Order By [State] Asc, [Changed Date] Desc` |
+| `AsOf` | Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.<br/> 
+`AsOf '6/15/2019` <br/> 
+<br/>
+> [!NOTE] 
+> You can’t create `AsOf` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an AsOf clause, and then load that in Visual Studio, the AsOf clause will be ignored.
+ |
+
+## Where clause
+
+The `Where` clause specifies the filter criteria. The query returns only work items that satisfy these conditions. The following example query returns user stories that are active and that are assigned to you.
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+Where [Work Item Type] = 'User Story'
+AND [State] = ‘Active’
+AND ( [Assigned to] = @Me
+OR [Closed by] = @Me )
+```
+
+You can control the order in which logical operators are evaluated if you use parentheses to group search criteria. For example, to return work items that are either assigned to you or that you closed, change the query filter to match the following example:
+
+
+<!---
+The following table describes the syntax of the Where clause:
+
+
+
+Syntax
+
+Example
+
+Where clause
+
+Where FilterCondition [Group|{LogicalOperator FilterCondition}]
+
+Group
+
+(FilterCondition LogicalOperator FilterCondition [LogicalOperator Filter Condition]…)
+
+([Assigned to] = @Me OR [Created by = @Me])
+
+The logical grouping operators are AND and OR.
+
+FilterCondition
+
+Field ComparisonOperator Value
+
+[Work Item Type] = ‘Help Topic’
+
+You can specify either the reference name or the display name of a field. If the name contains spaces or periods, you must enclose it in square brackets ([]).
+
+The comparison operators are described in Comparison Operators later in this topic.
+
+For the value, you can specify either a literal value ('User Story') or a macro (@Me).
+
+Value
+
+LiteralValue|Variable|Field
+
+'User Story'
+
+Literal value
+The actual value to compare to the value of the field. For more information, see Literal Values later in this topic.
+
+Variable
+An expression that indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see Variables later in this topic.
+
+Field
+The name of another field. For example, you can use [Assigned to] = [Changed by]to find work items that are assigned to the person who changed the work item most recently.
+
+--> 
+
+
+
+## Historical queries (ASOF) 
+You can use an `ASOF` clause in a query to filter for work items that satisfy the specified condition on a specific date at a specific time.
+
+For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
+
+
+>[!NOTE]  
+>If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
+
+```WIQL
+SELECT [System.Title] 
+    FROM workitems 
+    WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
+    ASOF '3/16/16 12:30'
+```
+
+## Sorting results (ORDER BY) 
+
+You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
+
+>[!NOTE]  
+>The sorting preferences of the SQL server on the data tier determine the default sort order. However, you can use the `asc` or `desc` parameters to choose an explicit sort order. 
+
+The following example sorts work items first by **Priority** in ascending order, and then by **Created Date** in descending order.
+
+```WIQL
+SELECT [System.Title] 
+    FROM workitems 
+    WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
+    ORDER BY [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc
+```
 
 
 ## Example queries 
@@ -50,6 +185,7 @@ SELECT Select_List
 
 
 ### Date-time pattern
+
 You specify the date-time pattern according to one of two patterns: 
 - The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
 - The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
@@ -157,6 +293,7 @@ The following example statements show specific qualifying clauses.
 
 
 ## Fields  
+
 When specifying fields, you can use the reference name or friendly name. The following examples are valid WIQL syntax. 
 
 
@@ -364,7 +501,7 @@ WHERE [System.AssignedTo] ever 'joselugo'
 ```
 
 
-## Macros 
+## Macros or variables
 
 The following table lists the macros or variables you can use within a WIQL query. 
 
@@ -508,37 +645,40 @@ The context parameter contains key-value pairs for macros. For example, if the c
 
 
 
-## Historical queries (ASOF) 
-You can use an `ASOF` clause in a query to filter for work items that satisfy the specified condition on a specific date at a specific time.
+<a id="linked-work-items" />
 
-For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
+## Query for links between work items.
+
+You can also use queries to find links between work items. A condition in the `Where` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
 
 
->[!NOTE]  
->If no time is specified, WIQL uses midnight. If no time zone is specified, WIQL uses the time zone of the local client computer.
-
+> [!div class="tabbedCodeSnippets"]
 ```WIQL
-SELECT [System.Title] 
-    FROM workitems 
-    WHERE ([System.IterationPath] = 'MyProject\ProjArea' and [System.AssignedTo] = 'Mark Hanson') 
-    ASOF '3/16/16 12:30'
+SELECT [System.Id]
+FROM WorkItemLinks
+WHERE ([Source].[System.WorkItemType] = 'User Story')
+  And ([System.Links.LinkType] = 'Child')
+  And ([Target].[System.State] = 'Active')
+mode(MustContain)
 ```
 
-## Sorting results (ORDER BY) 
+The following table summarizes the differences between work item queries and queries for links between work items. 
 
-You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
-
->[!NOTE]  
->The sorting preferences of the SQL server on the data tier determine the default sort order. However, you can use the `asc` or `desc` parameters to choose an explicit sort order. 
-
-The following example sorts work items first by **Priority** in ascending order, and then by **Created Date** in descending order.
-
-```WIQL
-SELECT [System.Title] 
-    FROM workitems 
-    WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
-    ORDER BY [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc
-```
+|  | Work items| Links between work items |  
+|-----|----------|-----------------------------|  
+|**From clause** | `From WorkItems` | `From WorkItemLinks` | 
+|**Where clause** | `[FieldName] = Value` | One of the following:<br/>
+`[Source].[FieldName] = Value` <br/>
+`[Target].[FieldName] = Value`<br/>
+`[System.Links.LinkType] = 'LinkName'` | 
+|**Mode** |    | One of the following:<br/>
+`mode(MustContain)` <br/>
+(Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. <br/>
+`mode(MayContain)`<br/>
+Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.<br/>
+`mode(DoesNotContain)`<br/> 
+Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.| 
+|**Returns** | [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) | [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) | 
 
 
 <!---
