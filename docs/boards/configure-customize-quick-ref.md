@@ -31,12 +31,12 @@ If you're just getting started as a Project Administrator, see [Get started as a
 When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban. The main configurations that impact on most tools are described next.  
 
 
-### Area paths 
+## Area paths, product teams, and delivery plans 
 
-Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define an hierarchical set of area paths or a flat set. Typically, you define an hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
+Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define a hierarchical set of area paths or a flat set. Typically, you define a hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
 
 
-### Iteration paths, sprints, releases, and versioning
+## Iteration paths, sprints, releases, and versioning
 
 Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. 
 
@@ -49,7 +49,7 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 
 And other timeline or calendar view tools. 
 
-### Work item types and backlog levels 
+## Work item types and portfolio backlog levels 
 
 Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlogs. The defaults for each supported process is shown in the following tabs. 
 
@@ -63,7 +63,7 @@ Each project comes with a set hierarchy of work item types that support a produc
 
 ### Portfolio planning 
 
-
+## Analytics 
 
 
 ## Who can make changes? 
