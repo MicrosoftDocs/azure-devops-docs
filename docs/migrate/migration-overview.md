@@ -59,7 +59,7 @@ For a list of items not included with an import please see the [migration guide]
 
 ## Data migration tool for Azure DevOps resources
 
-In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
+In general you should use the [migration guide and tool](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the following articles. These articles offer deeper technical knowledge on various import topics. 
 
 ### Import process 
 
