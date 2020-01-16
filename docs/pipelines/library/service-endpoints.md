@@ -127,9 +127,9 @@ Along with the new service connections UI, we are introducing **Sharing of servi
 The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
 The project-level administrator have limited administrative capabilities as below:
-. A project-level administrator can manage other users and roles at project scope.
-. A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
-. A project-level administrator can delete a service connection which removes the existence of service connection from the project.
+* A project-level administrator can manage other users and roles at project scope.
+* A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
+* A project-level administrator can delete a service connection which removes the existence of service connection from the project.
 
 ![Azure Resource Manager project security](../release/_img/azure-rm-endpoint/azure-rm-project-level-security.png)
 
@@ -139,9 +139,9 @@ The user that created the service connection is automatically added to the proje
 Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. There is not inheritance for organization level permissions. Today we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
-. A organization-level administrator can manage organization level users.
-. A organization-level administrator can edit all the fields of a service connection.
-. A organization-level administrator can share/un-share a service connection with other projects.
+* A organization-level administrator can manage organization level users.
+* A organization-level administrator can edit all the fields of a service connection.
+* A organization-level administrator can share/un-share a service connection with other projects.
 
 ![Azure Resource Manager organization security](../release/_img/azure-rm-endpoint/azure-rm-organization-security.png)
 
@@ -160,11 +160,11 @@ Or you can choose to lock down the service connection and only allow selected YA
 ### Project permissions - Cross project sharing of service connections
 Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
-. Only the organization-level administrators from **User permissions** can share the service connection with other projects.
-. The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
-. The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
-. The service connection name is appended with the project name and it can be renamed in the target project scope.
-. Organization level administrator can un-share a service connection from any shared project.
+* Only the organization-level administrators from **User permissions** can share the service connection with other projects.
+* The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
+* The user who shares the service connection with a project becomes the project-level administrator for that service connection  and the project-level inheritance is turned on in the target project.
+* The service connection name is appended with the project name and it can be renamed in the target project scope.
+* Organization level administrator can un-share a service connection from any shared project.
 
 ![Azure Resource Manager project permissions](../release/_img/azure-rm-endpoint/azure-rm-project-permissions.png)
 
