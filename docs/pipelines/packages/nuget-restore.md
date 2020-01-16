@@ -41,7 +41,7 @@ Then, select feeds to use:
 - If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
-![A screenshot of the NuGet task configured as outlined above](_img/restore-pkgs-on-build.png)
+![A screenshot of the NuGet task configured as outlined above](media/restore-pkgs-on-build.png)
 
 Finally, save your build.
 
@@ -95,7 +95,7 @@ If you're using Azure Pipelines or TFS 2018, new template-based builds will work
 
 For existing builds, just add or update a NuGet Tool Installer task to select the version of NuGet for all the subsequent tasks. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
-![Build with NuGet Tool Installer task](_img/nuget-tool-installer.jpg)
+![Build with NuGet Tool Installer task](media/nuget-tool-installer.jpg)
 
 ::: moniker-end 
 

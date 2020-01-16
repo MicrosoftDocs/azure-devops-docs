@@ -203,7 +203,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 #### To verify changes imported to a single project  
   
-1.  In Team Explorer, choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1.  In Team Explorer, choose ![Refresh](media/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, which include the changes that you just made to the field name. Wait several seconds for the refresh to finish.  
   
@@ -217,7 +217,7 @@ You can change the friendly name of a work item field to meet the naming convent
   
 5.  Select **<>** in the **Operator** cell, and type **1** into the **Value** cell.  
   
-6.  On the **Query** toolbar, choose ![Run Query](_img/icon_runquery.png "Icon_runQuery")**Run**.  
+6.  On the **Query** toolbar, choose ![Run Query](media/icon_runquery.png "Icon_runQuery")**Run**.  
   
 7.  Open the shortcut menu for any row in the results and select **Column Options**. Scroll down in the **Available columns** list. Notice that the **Rank** field is no longer present but the **Important Rank** field is present.  
   

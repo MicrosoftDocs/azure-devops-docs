@@ -43,7 +43,7 @@ First, you'll need to run `pip install twine` to ensure the build agent has `twi
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
+![icon](../tasks/utility/media/powershell.png) **Utility: Powershell**
 
 * Type
 
@@ -77,7 +77,7 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/package/_img/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
+![icon](../tasks/package/media/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
 
 * My feeds 
 
@@ -103,7 +103,7 @@ Check out the [script YAML task reference](../yaml-schema.md#script) for the sch
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
+![icon](../tasks/utility/media/powershell.png) **Utility: Powershell**
 
 * Type:
 

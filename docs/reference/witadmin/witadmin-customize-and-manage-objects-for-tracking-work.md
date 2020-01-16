@@ -26,7 +26,7 @@ You can change how you track your team's progress by creating and customizing ob
 
 As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
-![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
+![Work Item Tracking Objects](media/pnt_wit_objects.png "PNT_WIT_Objects")  
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 

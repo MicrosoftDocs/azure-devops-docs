@@ -214,6 +214,6 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
 1. At this point, with **Deploy canary** stage having successfully completed (based on the change of `success_rate` from '10' to '20') and with the **Promote/reject canary** stage is waiting on manual intervention, one can compare the success rate (as determined by custom_status=good) of baseline and canary variants in the Grafana dashboard. It should look similar to the below image - 
 
     > [!div class="mx-imgBorder"]
-    > ![Compare baseline and canary metrics](../_img/k8s-baseline-canary.png)
+    > ![Compare baseline and canary metrics](../media/k8s-baseline-canary.png)
 
 1. Based on the observation that the success rate is higher for canary, promote the canary by clicking on **Resume** in the manual intervention task

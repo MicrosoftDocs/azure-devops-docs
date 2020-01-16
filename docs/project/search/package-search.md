@@ -26,15 +26,15 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
 
 1. Open the **Azure Artifacts** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+1. Choose the ![start search icon](media/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 
 	> [!div class="mx-imgBorder"]  
-	> ![The Work Item Search textbox in the title bar](_img/_shared/pkgsrch-bar.png)    
+	> ![The Work Item Search textbox in the title bar](media/_shared/pkgsrch-bar.png)    
 
 1. Enter a search string in the textbox, and press _Enter_ (or choose the 
 
 	> [!div class="mx-imgBorder"]  
-	> ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
+	> ![start search icon](media/_shared/start-search-icon-new.png) icon) to start your search. 
 
 
 ## View the results
@@ -42,14 +42,14 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
 1. Search results are displayed with matches to user query shown in bold.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search results](_img/_shared/pkgsrch-results.png)
+	> ![Search results](media/_shared/pkgsrch-results.png)
 
    This is a full text search that uses simple search strings for words or phrases. 
    Note that searches are _not_ case-sensitive.
 
    > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/_shared/start-search-icon-new.png) icon.
    In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -58,19 +58,19 @@ Learn more about packages here: [Azure Artifacts in Azure DevOps Services](../..
    Use the "filter" icon to show the selector lists.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Showing the filter lists](_img/_shared/pkgsrch-results-filtericon.png)    
+	> ![Showing the filter lists](media/_shared/pkgsrch-results-filtericon.png)    
 
 1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Selector drop-down lists](_img/_shared/pkgsrch-results-filters.png)    
+	> ![Selector drop-down lists](media/_shared/pkgsrch-results-filters.png)    
 
 1. By switching pivots, quickly search [code](code-search.md) containing the same search string, or 
     search for the same string in your [wikis](../wiki/search-wiki.md)
     or search for the same string in your [work items](work-item-search.md)
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search for code or wiki or work items containing the same search string](_img/_shared/pkgsrch-other.png)
+	> ![Search for code or wiki or work items containing the same search string](media/_shared/pkgsrch-other.png)
 
 ## Next step
 

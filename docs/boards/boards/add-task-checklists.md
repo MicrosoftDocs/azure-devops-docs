@@ -39,7 +39,7 @@ In this article, you'll learn:
 > * How to reorder and reparent tasks or reassign them to a sprint
 > * Keyboard shortcuts for working with the Kanban board 
 
-<img src="_img/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
+<img src="media/kanban-task-checklists.png" alt="Kanban board with several task checklists defined" style="border: 1px solid #C3C3C3;" />  
 
 
 [!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
@@ -51,23 +51,23 @@ In this article, you'll learn:
 
 1. To start adding tasks, open the menu for the work item.  
     ::: moniker range=">= tfs-2017"  
-    <img src="_img/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/add-tasks-menu-options-vs-ts.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
     ::: moniker-end
     ::: moniker range="tfs-2015"
-    <img src="_img/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-add-task-checklist.png" alt="Open the context menu of a backlog item to add a task" style="border: 1px solid #C3C3C3;" />  
     ::: moniker-end
 
 2. If you have a number of tasks to add, simply keep typing your task titles and click Enter.   
 
-    <img src="_img/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-task-checklists-added.png" alt="Work item with several tasks added" style="border: 1px solid #C3C3C3;" />  
 
-3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../_img/icons/icon-links-tab-wi.png) links icon/tab. 
+3. If you have details you want to add about a task, open the parent work item and then choose the ![ ](../media/icons/icon-links-tab-wi.png) links icon/tab. 
 
-   <img src="_img/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
+   <img src="media/add-task-checklist-open-task.png" alt="Open parent work item, Links tab" style="border: 1px solid #C3C3C3;" />  
 
 4. Double-click the task, or select and press the Enter key, to open it.   
 
-    <img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
+    <img src="media/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
     Tasks that you create from the Kanban board will show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) will show up within tasks checklists on the Kanban board.  
 
@@ -76,14 +76,14 @@ In this article, you'll learn:
 
 When you complete a task, simply click the checkbox to change its status to Done or Closed. 
 
-<img src="_img/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /><br/>
+<img src="media/kanban-check-done-tasks.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /><br/>
 The State of the work item is updated from To Do to Done for Scrum projects, and from Active to Closed for Agile and CMMI projects.  
 
 ## Expand or collapse the task checklist  
 
 Upon first opening the Kanban board, you'll see an unexpanded view of checklists.
 
-<img src="_img/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/kanban-board-first-open-collapsed-checklists.png" alt="Expand task checklist for a work item" style="border: 1px solid #C3C3C3;" /> 
 
 Simply click the task checklist summary to expand a collapsed task checklist. Click the same summary to collapse an expanded checklist. 
 
@@ -93,7 +93,7 @@ Tasks that you create from the Kanban board are automatically assigned to the sp
 
 You can drag a task within a work item to reorder it. Or, you can drag the task to another work item on the Kanban board to reparent it. 
 
-![Drag tasks to reorder them within the list](_img/task-checklist-reorder-tasks.png)  
+![Drag tasks to reorder them within the list](media/task-checklist-reorder-tasks.png)  
 
 > [!NOTE]   
 > Users with **Stakeholder** access can't drag-and-drop tasks or reorder and reparent tasks.

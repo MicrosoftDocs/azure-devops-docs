@@ -32,13 +32,13 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 - Prepare your mapping list for inviting users to Azure AD.
 
     1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-    2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+    2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
         
-        ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+        ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
     3. Select **Users**.
         
-        ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+        ![Open organization settings, users](../../_shared/media/settings/open-organization-settings-users-vert.png)
 
     4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who is in the Azure DevOps organization and NOT in the Azure AD. For any user that you don't create an Azure AD email address, be prepared to invite these users as guests to the Azure AD in future steps.
 	
@@ -49,21 +49,21 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 3. Select **Azure Active Directory**, and then select **Connect directory**.
 
-   ![Select Connect directory to connect your organization to Azure AD](_img/_shared/select-azure-ad-connect-directory.png)
+   ![Select Connect directory to connect your organization to Azure AD](media/_shared/select-azure-ad-connect-directory.png)
 
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
-   ![Select your Azure AD, and then Connect](_img/_shared/select-directory-connect.png)
+   ![Select your Azure AD, and then Connect](media/_shared/select-directory-connect.png)
    If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
 
-   ![Connect success dialog - select Sign out](_img/_shared/connect-success-dialog.png)
+   ![Connect success dialog - select Sign out](media/_shared/connect-success-dialog.png)
 
     Your organization is now connected to your Azure AD.
 
@@ -71,9 +71,9 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 
 7. If you have disconnected members, sign back in to Azure DevOps and map them to their Azure AD identities or invite them as guests into the Azure AD. See the [FAQ](faq-azure-access.md#connect-disconnect-or-change-azure-ad) for further information.
 
-   ![Select Resolve to invite unmapped users](_img/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Resolve to invite unmapped users](media/_shared/azure-ad-select-resolve-for-disconnected-users.png)
 
-   ![Mapping disconnected users](_img/_shared/resolve-disconnected-users.png)
+   ![Mapping disconnected users](media/_shared/resolve-disconnected-users.png)
 
 ## Inform users of the completed change
 
@@ -84,15 +84,15 @@ When you inform your users of the completed change, include the following tasks 
 
     a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
-     ![Select from your profile dropdown menu, Security](_img/_shared/select-security-profile-menu.png)
+     ![Select from your profile dropdown menu, Security](media/_shared/select-security-profile-menu.png)
 
     b. Select **Personal access tokens**, and then select **New Token**.
     
-     ![Select New Token button to create](_img/_shared/select-personal-access-tokens-new-token.png)
+     ![Select New Token button to create](media/_shared/select-personal-access-tokens-new-token.png)
 
     c. Complete the form, and then select **Create**.
 
-     ![Create new token](_img/_shared/create-new-personal-access-token.png)
+     ![Create new token](media/_shared/create-new-personal-access-token.png)
 
     d. When the token is created, copy it, as it can't be viewed again.
 
@@ -100,15 +100,15 @@ When you inform your users of the completed change, include the following tasks 
 
     a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
 
-     ![Select from your profile dropdown menu, Security](_img/_shared/select-security-profile-menu.png)
+     ![Select from your profile dropdown menu, Security](media/_shared/select-security-profile-menu.png)
 
     b. Select **SSH public keys**, and then select **Add**.
 
-     ![user-settings-security-ssh.png](_img/_shared/user-settings-security-ssh.png)
+     ![user-settings-security-ssh.png](media/_shared/user-settings-security-ssh.png)
 
     c. Enter a description and key data, and then select **Save**.
 
-     ![Add info to create SSH key](_img/_shared/add-ssh-public-key-info.png)
+     ![Add info to create SSH key](media/_shared/add-ssh-public-key-info.png)
 
     d. When the token is created, copy it, as it can't be viewed again.
 
@@ -130,13 +130,13 @@ For any of the organizations backed by your directory, complete the following st
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then **Download**.
 
-   :::image type="content" source="_img/_shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
+   :::image type="content" source="media/_shared/select-azure-ad-download.png" alt-text="Select Azure Active Directory, and then the Download button":::
 
 ## Related articles
 

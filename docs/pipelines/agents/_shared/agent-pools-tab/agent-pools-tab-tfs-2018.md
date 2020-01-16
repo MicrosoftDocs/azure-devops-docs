@@ -4,9 +4,9 @@ ms.topic: include
 
 1. Navigate to your project and choose **Settings** (gear icon) > **Agent Queues**. 
 
-   ![Choose settings, Agent Queues](../../_img/agent-pools-tab/settings-agent-queues-2018.png)
+   ![Choose settings, Agent Queues](../../media/agent-pools-tab/settings-agent-queues-2018.png)
 
 1. Choose **Manage pools**.
 
-   ![Choose Manage pools](../../_img/agent-pools-tab/manage-pools-2018.png)
+   ![Choose Manage pools](../../media/agent-pools-tab/manage-pools-2018.png)
 

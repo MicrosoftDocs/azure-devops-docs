@@ -8,13 +8,13 @@ Give team members access to your organization by adding their email addresses or
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![Organization settings](/azure/devops/_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![Organization settings](/azure/devops/media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](/azure/devops/_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Users** > **Add new users**.
 
-   :::image type="content" source="_img/add-new-users.png" alt-text="Select Add users":::
+   :::image type="content" source="media/add-new-users.png" alt-text="Select Add users":::
 
 4. Enter the following information:
 

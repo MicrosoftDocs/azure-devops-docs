@@ -31,7 +31,7 @@ By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work
   
 4.  Enter the size in bytes, and then choose **Invoke**.  
   
-     ![SetMaxAttachmentSize, ConfigurationSettingsService](_img/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
+     ![SetMaxAttachmentSize, ConfigurationSettingsService](media/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
 

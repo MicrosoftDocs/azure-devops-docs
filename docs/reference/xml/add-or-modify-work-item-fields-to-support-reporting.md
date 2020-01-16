@@ -192,7 +192,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
   As the following illustration shows, a folder is added for each prefix group of fields that share a common prefix:  
   
-  ![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders")  
+  ![Folder structure in OLAP data cube](media/rpt_workitem_folders.png "RPT_WorkItem_Folders")  
   
   The following table lists the fields whose reference names begin with "System" and that are listed in the PivotTable report with the prefix of "Work Item." These fields are put directly under the Work Item dimension. All other fields are put under folders whose names correspond to the prefixes in their reference names.  
   

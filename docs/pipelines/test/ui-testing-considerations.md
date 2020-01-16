@@ -126,7 +126,7 @@ Running the batch file from this shortcut disconnects from the remote desktop bu
 If you are provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
 through the [Agent artifact for DevTest Labs](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent).
 
-![agentArtifactDTL](_img/agentartifact-dtl.png)
+![agentArtifactDTL](media/agentartifact-dtl.png)
 
 ## Setting screen resolution
 
@@ -200,6 +200,6 @@ to the test result. For this, you must configure the
 [video data collector in a **.runsettings** file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 and this file must be specified in the task settings.
 
-![runSettings](_img/runsettings-in-vs-task.png)
+![runSettings](media/runsettings-in-vs-task.png)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]

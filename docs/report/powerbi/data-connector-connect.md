@@ -58,17 +58,17 @@ Follow the steps below to get started using the Azure DevOps Power BI Data Conne
 	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI desktop splash screen, Get data button](_img/data-connector/get-data-splash-screen.png)
+	> ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
 	
 	Or, you can find a similar button in the ribbon in the **Home** section.
 
 2. Choose (1) **Online Services**, (2) **Azure DevOps (Beta)**, and then **Connect**.  
 
-	![Get data dialog](_img/data-connector/get-data-azure-devops.png)  
+	![Get data dialog](media/data-connector/get-data-azure-devops.png)  
 
 3. **Specify the basic parameters to connect to your data**. 
 
-	![Azure DevOps dialog](_img/create-report/specify-account.png)
+	![Azure DevOps dialog](media/create-report/specify-account.png)
 
    - For *Organization*, enter the organization name in Azure DevOps (not the full URL). For example, use `fabrikam-fiber-inc` if the URL of your organization is "`https://dev.azure.com/fabrikam-fiber-inc./`".
    - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://dev.azure.com/fabrikam-fiber-inc./Fabrikam-Fiber`").
@@ -85,14 +85,14 @@ Choose between the following authentication options:
    - Select *Basic* if you are connecting to a personal organization. This option also supports alternate credentials, but it is not recommended as unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your data.
 
      > [!div class="mx-imgBorder"]  
-     > ![Sign in dialog](_img/powerbi-signin-organizational.png)
+     > ![Sign in dialog](media/powerbi-signin-organizational.png)
 
      If you select *Organizational account,* enter your username and password into the standard login page.  
 
 5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Connect dialog](_img/powerbi-successful-organizational-signin.png)  
+	> ![Connect dialog](media/powerbi-successful-organizational-signin.png)  
 
 ::: moniker-end  
 
@@ -104,19 +104,19 @@ Choose between the following authentication options:
 	You can either choose **Get Data** button in the splash screen that opens up when you launch *Power BI.* 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI desktop splash screen, Get data button](_img/data-connector/get-data-splash-screen.png)
+	> ![Power BI desktop splash screen, Get data button](media/data-connector/get-data-splash-screen.png)
 	
 	Or, you can find a similar button in the ribbon in the **Home** section. 
 	
-	![Power BI desktop ribbon, Get data button](_img/data-connector/get-data-azure-devops.png)  
+	![Power BI desktop ribbon, Get data button](media/data-connector/get-data-azure-devops.png)  
 
 2. Choose (1) **Online Services**, (2) **Azure DevOps Server (Beta)**, and then **Connect**.  
 
-	![Get data - Azure DevOps Server dialog](_img/data-connector/get-data-azure-devops-server.png)  
+	![Get data - Azure DevOps Server dialog](media/data-connector/get-data-azure-devops-server.png)  
 
 3. **Specify the basic parameters to connect to your data**. 
  
-	![Get data dialog](_img/create-report/specify-collection-project.png)
+	![Get data dialog](media/create-report/specify-collection-project.png)
 
    - For *Collection URL*, enter the URL where your Azure DevOps Server instance is hosted. For example, an example URL is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection`".
    - For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your Azure DevOps Server instance is "`http://fabrikam-server/AzureDevOpsServer/fabrikam-collection/Fabrikam-Fiber`").
@@ -132,7 +132,7 @@ Choose between the following authentication options:
    - Select *Personal Access Token* if you want to use a personal access token.
 
      > [!div class="mx-imgBorder"]
-     > ![Sign in dialog](_img/powerbi-windows-login-onprem.png) 
+     > ![Sign in dialog](media/powerbi-windows-login-onprem.png) 
 
 5. Choose **Connect** upon verification of your credentials. Upon successful login Power BI will verify if your user credentials have the right permissions to access the specified project. If any errors arise, refer to the [Q & A](#q-a) section as it covers the most common problems.  
 
@@ -145,7 +145,7 @@ Choose between the following authentication options:
 	Azure DevOps provides a set of [default Analytics Views](analytics-default-views.md). You can also [create custom Analytics Views](analytics-views-create.md). The image below shows the default Analytics views. Your list of views may differ.
 
 	> [!div class="mx-imgBorder"]
-	> ![Navigator dialog, default views](_img/default-views/navigator-dialog-default-views.png)
+	> ![Navigator dialog, default views](media/default-views/navigator-dialog-default-views.png)
 
 	> [!NOTE]
 	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset. The data is truncated only for the preview and won't impact the full data refresh.
@@ -162,7 +162,7 @@ Choose between the following authentication options:
 	the table name. Should you see any errors, refer to the [Q & A](#q-a) section.
 
 	> [!div class="mx-imgBorder"]
-	> ![Apply query changes loading dialog](./_img/power-bi-data-loading-onprem.png)
+	> ![Apply query changes loading dialog](./media/power-bi-data-loading-onprem.png)
 
 3. **Review the Data model**. While the model is being loaded please review the [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
 
@@ -170,7 +170,7 @@ Choose between the following authentication options:
 
 **Create reports based on the loaded data**. After the load operation finishes, you can explore the data by creating custom reports. For examples of common reports, see [Example Reports - using the Data Connector](data-connector-examples.md).
 
-![Power BI desktop report view](./_img/data-connector-visual.png)
+![Power BI desktop report view](./media/data-connector-visual.png)
 
 <a id="PowerBILimitations">  </a>
 
@@ -191,7 +191,7 @@ In the example below the most important part of the error message is:
 
 > Query result exceeds maximum size. Please reduce the number of records by applying additional filters.  
 > 
-> ![QueryExceedsPreferredMaxSizeException](./_img/QueryExceedsPreferredMaxSizeException.png)
+> ![QueryExceedsPreferredMaxSizeException](./media/QueryExceedsPreferredMaxSizeException.png)
 
 <a id="QueryExceedsPreferredMaxSizeException">  </a>
 
@@ -205,7 +205,7 @@ In the example below the most important part of the error message is:
 
 This error typically occurs when your project has a large number of work items. The size of the dataset must be reduced by [customizing the view](analytics-views-create.md) before using it in Power BI.  
 
-![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](_img/QueryExceedsPreferredMaxSizeException.png)
+![Query result exceeds maximum size. Please reduce the number of records by applying additional filters](media/QueryExceedsPreferredMaxSizeException.png)
 
 <a id="AccessDeniedError">  </a>
 
@@ -216,7 +216,7 @@ This error typically occurs when your project has a large number of work items. 
 **A:** You can encounter this error if you try to access a project to which you don't have permissions. To get access, see [Set permissions to access Analytics and Analytics views](analytics-security.md).
 
 > [!div class="mx-imgBorder"] 
-> ![The user was not authorized.](_img/AccessDeniedError.png)
+> ![The user was not authorized.](media/AccessDeniedError.png)
 
 <a id="AnalyticsAccessCheckException"></a>
 
@@ -228,7 +228,7 @@ This error typically occurs when your project has a large number of work items. 
 For more information about the security model, see [Analytics security](analytics-security.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Access to the resource is forbidden.](_img/AnalyticsAccessCheckException.png)
+> ![Access to the resource is forbidden.](media/AnalyticsAccessCheckException.png)
 
 <a id="ProjectNotFoundError">  </a>
 
@@ -241,7 +241,7 @@ For more information about the security model, see [Analytics security](analytic
 
 If the URL you use on a daily basis is "`https://dev.azure.com/fabrikam-fiber-inc/Fabrikam-Fiber-Git/Device`", then `Fabrikam-Fiber-Git` is the project name and it should be used in the parameter, whereas `Device` is the team name.
 
-![ProjectNotFoundError](_img/ProjecNotFoundError.png)
+![ProjectNotFoundError](media/ProjecNotFoundError.png)
 
 
 <!-- ENDSECTION -->
