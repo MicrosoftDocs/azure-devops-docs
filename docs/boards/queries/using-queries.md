@@ -150,8 +150,7 @@ For a quick reference of the operators available based on the field data type, s
 
 All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
 
-> [!TIP]
-> To view the WIQL syntax for a query, and how parenthesis are used to group clauses, install the [Marketplace Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). This extension supports viewing the WIQL syntax and exporting it to a WIQL file for use in REST API calls. To learn more, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
+[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
 ### Checklist for how to define a query clause
 
