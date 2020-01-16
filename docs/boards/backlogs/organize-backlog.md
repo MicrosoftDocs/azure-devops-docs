@@ -1,4 +1,4 @@
-﻿---
+---
 title: Organize product backlog into hierarchy of items
 titleSuffix: Azure Boards  
 description:  Map or parent backlog items to features, and features to epics in Azure Boards or TFS
@@ -248,6 +248,15 @@ You can re-parent an item using the mapping pane, or simply drag it within the h
 
 Also, to change an item's priority within a group, you can drag the item up or down within its hierarchical group. 
 This works the same as when you [moved items into priority order on your product backlog](create-your-backlog.md).   
+
+### Limitations on reordering backlog items owned by other teams
+
+If you find you can't reorder a backlog item, check whether the ![ ](../../media/icons/info.png) info icon appears in the first column as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Limitations on reordering multi-team backlog items](media/organize-backlog/multi-team-reorder-limitation.png) 
+
+You can re-parent items owned by other teams, but you can't re-order items owned by other teams. For additional details, see [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team). 
 
 ::: moniker-end
 
