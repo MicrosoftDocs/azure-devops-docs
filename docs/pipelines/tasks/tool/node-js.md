@@ -37,7 +37,7 @@ None
 
 | Argument | Description |
 |----------|-------------|
-| Version Spec | Specify which [Node.js version](https://nodejs.org/en/download/releases/) you want to use. Examples: `7.x`, `6.x`, `6.10.0`, `>=6.10.0` |
+| Version Spec | Specify which [Node.js version](https://nodejs.org/en/download/releases/) you want to use, using semver's version range syntax. Examples: `7.x`, `6.x`, `6.10.0`, `>=6.10.0` |
 | Check for Latest Version | Select if you want the agent to check for the latest available version that satisfies the version spec. For example, you select this option because you run this build on your [self-hosted agent](../../agents/agents.md#install) and you want to always use the latest `6.x` version. <div class="tip"><h5>TIP</h5><p>If you're using [the Microsoft-hosted agents](../../agents/hosted.md), you should leave this check box cleared. We update the Microsoft-hosted agents on a regular basis, but they're often slightly behind the latest version. So selecting this box will result in your build spending a lot of time updating to a newer minor version.</p></div>|
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
 
