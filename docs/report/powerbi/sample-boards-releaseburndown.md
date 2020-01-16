@@ -21,7 +21,7 @@ ms.date: 08/07/2019
 This article shows you how to display the burndown of User Stories for a release based on work items tagged with a release tag. The following image shows a burndown both by Story Points and User Stories count.
  
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -120,7 +120,7 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](_img/odatapowerbi-releaseburndown-fields.png)
+> ![Sample -Release Burndown - Fields](media/odatapowerbi-releaseburndown-fields.png)
 
 For a simple report, do the following steps:
 
@@ -133,7 +133,7 @@ For a simple report, do the following steps:
 The example report displays burndown on both Story Points and Count of Stories.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report.png)
 
 To pivot burndown by Area Path, do the following steps:
 
@@ -146,12 +146,12 @@ To pivot burndown by Area Path, do the following steps:
 The example report displays burndown pivoted by Area Path.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report2.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report2.png)
 
 To pivot the burndown by State, add the field "State" to **Values**, replacing "Area.AreaPath".
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-releaseburndown-report3.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-releaseburndown-report3.png)
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
 

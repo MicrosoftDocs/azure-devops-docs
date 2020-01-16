@@ -27,7 +27,7 @@ The Bugs by Assignment report shows the distribution of active Bugs, grouped by 
 
 You can use the Bugs by Assignment report to understand the distribution of Bugs to team members and determine whether to reassign some Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. This data is stored in the data warehouse.  
   
-![Bugs by Assignment chart](_img/procguid_byassignment.png "ProcGuid_ByAssignment")  
+![Bugs by Assignment chart](media/procguid_byassignment.png "ProcGuid_ByAssignment")  
   
 You can review the Bugs by Assignment report to determine the allocation of bugs to each team member. Specifically, you can find answers to the following questions:  
   

@@ -66,7 +66,7 @@ Prerequisite for using this command is that user should be aware of the request 
 It can be achived using the following steps:
 Create endpoint of same type from UI and capture its network trace (using tool of your preference like Fiddler, Chrome Developer tool)
 
-![Docker Create UI](_img/DockerServiceEndpointCreateUI.png)
+![Docker Create UI](media/DockerServiceEndpointCreateUI.png)
 
 Captured request will be a POST call to uri ending
 `apis/serviceendpoint/endpoints`

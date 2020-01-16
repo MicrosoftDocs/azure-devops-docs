@@ -24,7 +24,7 @@ Team rooms, like chat rooms, provide teams with a space to discuss work in progr
 >
 > Several solutions are available that integrate well with Azure DevOps and TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). Microsoft Teams also provides support for a [developer platform](/microsoftteams/platform/).
 
-![Team room with messages and links to events](_img/ALM_CT_Teamroom.png)
+![Team room with messages and links to events](media/ALM_CT_Teamroom.png)
 
 By using the team room instead of email threads, you automatically receive an audit trail of conversations and decisions. By reviewing the archive, you can quickly catch up with the team when you've been away or in a different time zone.
 
@@ -36,7 +36,7 @@ Members of the Project Administrators group can create and administer team rooms
 
 1. From your team's home page, open the room.  
 
-	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png)
+	![Team room tile on project home page](media/ALM_CT_TeamroomTile.png)
 	
 	If you don't see the room tile, [request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
@@ -44,7 +44,7 @@ Members of the Project Administrators group can create and administer team rooms
 
 2. To switch to another team room, open it from the **Rooms** list.
 
-	![List of team rooms on Rooms page](_img/ALM_CT_RoomsList.png)
+	![List of team rooms on Rooms page](media/ALM_CT_RoomsList.png)
 
 	You see all rooms that you have permission to enter.
 
@@ -56,11 +56,11 @@ Members of the Project Administrators group can create and administer team rooms
 
 * Open a linked object, such as a work item, changeset, build definition, and more.
 
-* Add an emoticon: choose: ![Emoticon image selection](_img/ALM_CT_SmileIcon.png).
+* Add an emoticon: choose: ![Emoticon image selection](media/ALM_CT_SmileIcon.png).
 
 * Review a previous day's message: select the day from the calendar.
 
-	![Date link to review team room archives](_img/ALM_CT_SelectDate.png)
+	![Date link to review team room archives](media/ALM_CT_SelectDate.png)
 
 <a id="addmembers"></a>
 
@@ -72,13 +72,13 @@ You can invite others who have access to the organization or project to particip
 
 2. Open **Manage Members**.
 	
-	![Select Manage users to add organizations to a team room](_img/ALM_CT_ManageMembers.png)
+	![Select Manage users to add organizations to a team room](media/ALM_CT_ManageMembers.png)
 	
 	Only team administrators can see the links for manage users and manage events.
 
 3. Add a user organization or group.
 	
-	![Add menu on the Manage Members dialog](_img/ALM_CT_AddMembers.png)
+	![Add menu on the Manage Members dialog](media/ALM_CT_AddMembers.png)
 
 <a id="events"></a>
 
@@ -87,13 +87,13 @@ Adding events lets your team know when builds complete, when you check in source
 
 1. Open **Configure Events**.
 	
-	![Manage events link on the team room page](_img/ALM_CT_ConfigureEvents.png) 
+	![Manage events link on the team room page](media/ALM_CT_ConfigureEvents.png) 
 	
 	If you don't see the **Manage events** link, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
 
 2. Add events.
 	
-	![Code changes tab on the Configure Events dialog box](_img/ALM_CT_AddEvents.png) 
+	![Code changes tab on the Configure Events dialog box](media/ALM_CT_AddEvents.png) 
 
 	Any change in status or assignment triggers an event to appear in the room.
 
@@ -113,7 +113,7 @@ Adding other rooms provides areas for improvised discussions, cross-team interac
 
 1. Add a room. If the **New** link isn't active, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
 	
-	![New link on the Rooms page, New Room dialog box](_img/ALM_CT_NewRoom.png)
+	![New link on the Rooms page, New Room dialog box](media/ALM_CT_NewRoom.png)
 
 2. Add members to the room as described earlier in this article.
 
@@ -121,7 +121,7 @@ Adding other rooms provides areas for improvised discussions, cross-team interac
 A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage teams and configure team tools](../organizations/settings/manage-teams.md).  
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
-- To mute the sound, select the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
+- To mute the sound, select the ![Audio icon on the Rooms page](media/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
 - For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)
 - To change your profile image, see [Set your preferences](../organizations/settings/set-your-preferences.md).  
 
@@ -134,11 +134,11 @@ You can grant permissions to users to administer a team room.
 
 1. From the context menu, open permissions for the team room.  
 
-	![Open team room permissions](_img/open-security-team-room.png)  
+	![Open team room permissions](media/open-security-team-room.png)  
 
 2. Add an organization, set the permissions for Administer to **Allow**, and save the changes.
 
-	![Add menu on Permissions page for a team room](../organizations/settings/_img/add-team/team-admin-dialog.png)
+	![Add menu on Permissions page for a team room](../organizations/settings/media/add-team/team-admin-dialog.png)
 
 
 <a id="team-room-event-permissions">  </a>

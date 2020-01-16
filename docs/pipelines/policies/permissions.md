@@ -100,11 +100,11 @@ and to lock down the production stage for an application at
 the other extreme.
 
 To set permissions at project level for all release
-definitions in a project, open the shortcut menu from the ![drop-down list](_img/drop-down-list-icon.png)
+definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 icon next to **All release pipelines** and choose **Security**.
 
 To set or override the permissions for a specific release
-pipeline, open the shortcut menu from the ![drop-down list](_img/drop-down-list-icon.png)
+pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 icon next to that pipeline name. Then choose **Security** to open the
 **Permissions** dialog.
 

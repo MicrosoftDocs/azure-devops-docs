@@ -40,19 +40,19 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing from Organization settings](_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing from Organization settings](media/_shared/select-billing-organization-settings.png)
 
 4. Select the dropdown menu for Cloud-based load testing, and then select **On**.
 
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
-   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](_img/_shared/paid-load-testing-limit.png)
+   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](media/_shared/paid-load-testing-limit.png)
 
 Cloud-based load testing is enabled for your organization.
 

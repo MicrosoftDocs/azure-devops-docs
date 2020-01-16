@@ -70,7 +70,7 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 The two types of Kanban boards, product backlog and portfolio backlogs, provide the quickest means for adding user stories and portfolio work item types. You can also quickly add and update the status of child items within a hierarchy. As shown in the following image for the Agile process, when you add tasks to user stories, users stories to features, or features to epics, you automatically create parent-child links between the work items.   
 
 > [!div class="mx-imgBorder"]  
-> ![Agile process, hierarchy of work items types](_img/best-tool/agile-process-plan-wits.png)
+> ![Agile process, hierarchy of work items types](media/best-tool/agile-process-plan-wits.png)
 
 [Product backlog board](../boards/kanban-quickstart.md) | [Features or Epics board](../boards/kanban-epics-features-stories.md) | [Customize cards](../boards/customize-cards.md)
 

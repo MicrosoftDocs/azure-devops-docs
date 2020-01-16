@@ -4413,6 +4413,6 @@ Versions in the “Server” column are linked to the appropriate download locat
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](_img/help-make-a-suggestion.png)
+> ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

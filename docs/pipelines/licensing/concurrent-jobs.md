@@ -101,7 +101,7 @@ For example, consider an organization that has only one Microsoft-hosted paralle
 > When you run a [server job](../process/phases.md#server-jobs) or deploy to a [deployment group](../process/deployment-group-phases.md) using release pipelines, you don't consume any parallel jobs.
 
 
-![Simple example of parallel jobs](_img/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
+![Simple example of parallel jobs](media/concurrent-pipelines-vsts/concurrent-pipelines-simple-example.png)
 
 1. FabrikamFiber CI Build 102 (master branch) starts first.
 2. Deployment of FabrikamFiber Release 11 is triggered by completion of FabrikamFiber CI Build 102.
@@ -144,7 +144,7 @@ In the following scenarios, you might need multiple parallel jobs:
 
 1. Browse to **Organization settings** > **Pipelines** > **Retention and parallel jobs** > **Parallel jobs**.
 
-   ![Location of parallel jobs in organization settings](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
+   ![Location of parallel jobs in organization settings](media/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
 
@@ -208,7 +208,7 @@ For example, a collection in a Team Foundation server has one parallel job. This
 
 A release requires a parallel job only when it is being actively deployed to a stage. Waiting for an approval does not consume a parallel job. However, waiting for a manual intervention in the middle of a deployment does consume a parallel job.
 
-![Parallel jobs simple example](_img/concurrent-pipelines-tfs/concurrent-pipelines-simple-example.png)
+![Parallel jobs simple example](media/concurrent-pipelines-tfs/concurrent-pipelines-simple-example.png)
 
 1. FabrikamFiber Release 10 is first to be deployed.
 2. Deployment of FabrikamFiber Release 11 starts after Release 10's deployment is complete.
@@ -225,13 +225,13 @@ Parallel processing within a single release does not require additional parallel
 
 For example, suppose your collection has three parallel jobs. You can have more than three agents running at the same time to perform parallel operations within releases. For instance, notice below that four or five agents are actively running jobs from three parallel jobs.
 
-![Parallel jobs with additional agents example](_img/concurrent-pipelines-tfs/concurrent-pipelines-with-additional-agents-example.png)
+![Parallel jobs with additional agents example](media/concurrent-pipelines-tfs/concurrent-pipelines-with-additional-agents-example.png)
 
 ## Parallel jobs in an organization
 
 For example, here's an organization that has multiple  Team Foundation Servers. Two of their users have Visual Studio Enterprise subscriptions that they can use at the same time across all their on-premises servers and in each collection so long as the customer adds them as users to both the servers as explained below.
 
-![Parallel jobs in an organization example](_img/concurrent-pipelines-tfs/concurrent-pipelines-in-an-organization-example.png)
+![Parallel jobs in an organization example](media/concurrent-pipelines-tfs/concurrent-pipelines-in-an-organization-example.png)
 
 ## Determine how many parallel jobs you need
 
@@ -255,7 +255,7 @@ Users who have Visual Studio Enterprise subscriptions are assigned to **VS Enter
 
 1. Browse to **Server settings**, **Access levels**.
 
-   ![control-panel-server-vs-enterprise-access-levels](_img/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
+   ![control-panel-server-vs-enterprise-access-levels](media/concurrent-pipelines-tfs/control-panel-server-vs-enterprise-access-levels.png)
 
    URL example: `http://{your_server}:8080/tfs/_admin/_licenses`
 
@@ -275,7 +275,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 1. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
-   ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
+   ![control-panel-account-build-and-release-resource-limits](media/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 
    URL example: `http://{your_server}:8080/tfs/DefaultCollection/_admin/_buildQueue?_a=resourceLimits`
 

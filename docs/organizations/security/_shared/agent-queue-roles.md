@@ -12,4 +12,4 @@ You control the security of all project agent pools from the **Security** tab. R
 To manage role settings for a project agent pool, open **Project settings**, choose **Agent Pools**, choose a pool, and then add a user and select their role.
 
 > [!div class="mx-imgBorder"]  
-> ![Agent pools security roles](/azure/devops/organizations/security/_shared/_img/agent-pool-roles-project.png) 
+> ![Agent pools security roles](/azure/devops/organizations/security/_shared/media/agent-pool-roles-project.png) 

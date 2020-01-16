@@ -35,7 +35,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-![TFS 2017 and TFS 2018 build system architecture](_img/build-system-architecture.png)
+![TFS 2017 and TFS 2018 build system architecture](media/build-system-architecture.png)
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 Agent pools are scoped to project collections.
 
-![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
+![TFS 2015 build system architecture](media/build-system-architecture-tfs-2015.png)
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ For more information, see the [YAML schema](../yaml-schema.md) for [pools](../ya
 
 To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
-![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
+![Select Agent pool and choose the desired agent](media/agent-pool-classic.png)
 
 * * *
 

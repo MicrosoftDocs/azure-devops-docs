@@ -77,7 +77,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 The **Test settings file** references any setup and cleanup 
 scripts required to execute the load test. For more details see:
-[Using Setup and Cleanup Script in Cloud Load Test](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/12/using-setup-and-cleanup-script-in-cloud-load-test/)
+[Using Setup and Cleanup Script in Cloud Load Test](https://devblogs.microsoft.com/devops/using-setup-and-cleanup-script-in-cloud-load-test/)
 
 #### When should I specify the number of permissible threshold violations?
 

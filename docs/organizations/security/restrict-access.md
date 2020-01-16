@@ -198,7 +198,7 @@ For the [Inheritance process model](../../organizations/settings/work/inheritanc
 For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New. 
 
 > [!div class="mx-imgBorder"]  
-> ![Custom rule](_img/grant-restrict/restrict-creating-work-items-inheritance.png)   
+> ![Custom rule](media/grant-restrict/restrict-creating-work-items-inheritance.png)   
 
 You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
 ::: moniker-end
