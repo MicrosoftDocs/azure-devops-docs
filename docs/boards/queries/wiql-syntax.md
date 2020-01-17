@@ -69,7 +69,7 @@ Select [State], [Title]
 </tr>
 <tr>
 <td><code>WHERE</code></td>
-<td>Specifies the filter criteria for the query. For more information, see <a href="#where-clause">Syntax of the Where Clause</a> later in this article. </td>
+<td>Specifies the filter criteria for the query. For more information, see <a href="#where-clause">Filter conditions (WHERE)</a> in the next section. </td>
 </tr>
 <tr>
 <td><code>ORDER BY</code></td>
@@ -79,7 +79,7 @@ Select [State], [Title]
 </tr>
 <tr>
 <td><code>ASOF</code></td>
-<td>Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.
+<td>Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.<br/>
 <code>ASOF '6/15/2019'</code></td>
 </tr>
 </tbody>
@@ -90,7 +90,7 @@ Select [State], [Title]
 
 <a id="where-clause" />
 
-## Where clause
+## Filter conditions (WHERE)
 
 The `Where` clause specifies the filter criteria. The query returns only work items that satisfy these conditions. The following example query returns user stories that are active and that are assigned to you.
 
@@ -115,10 +115,13 @@ OR [Closed by] = @Me )
 
 ### Logical groupings 
 
-You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate two clauses. You can group logical expressions and further conjoin them, as needed. Examples are shown below.
+You can use the terms `AND` and `OR` in the typical Boolean sense to evaluate two clauses. You can use the terms `AND EVER` and `OR EVER` when specifying a WAS EVER operator. You can group logical expressions and further conjoin them, as needed. Examples are shown below.  
 
+> [!div class="tabbedCodeSnippets"]
 ```WIQL
-WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([System.CreatedBy] = 'linaabola' 
+WHERE [System.State] =  'Active' 
+    AND [System.AssignedTo] = 'joselugo' 
+	AND ([System.CreatedBy] = 'linaabola' 
     OR [Adatum.CustomMethodology.ResolvedBy] = 'jeffhay') 
     AND [System.State] = 'Closed'
     WHERE [System.State] = 'Active'
@@ -127,9 +130,36 @@ WHERE [System.State] =  'Active' and [System.AssignedTo] = 'joselugo' and ([Syst
 
 You can negate the `contains, under,` and `in` operators by using `not`. You can't negate the `ever` operator. The examples below query for all work items that are not classified within the sub-tree of 'MyProject\Feature1'.
 
+> [!div class="tabbedCodeSnippets"]
 ```WIQL
 WHERE [System.AreaPath] not under 'MyProject\Feature1'
 WHERE [System.AssignedTo] ever 'joselugo'
+```
+
+#### Example query, Was Ever Assigned To
+
+The WIQL syntax is shown next for the following query constructed through the Query Editor. This example finds all work items that were ever assigned to *Jamal Hartnett*. 
+
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, flat list query, was ever assigned](media/wiql/flat-list-was-ever-query.png)   
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+SELECT
+    [System.Id],
+    [System.WorkItemType],
+    [System.Title],
+    [System.AssignedTo],
+    [System.State],
+    [System.Tags]
+FROM workitems
+WHERE
+    [System.WorkItemType] <> ''
+    AND (
+        [System.State] <> ''
+        OR EVER [System.AssignedTo] = 'Jamal Hartnett <fabrikamfiber4@hotmail.com>'
+    )
+ORDER BY [System.Id]
 ```
 
 
@@ -160,6 +190,7 @@ Queries use logical expressions to qualify result sets. These logical expression
 
 Some simple query operations are listed below.
 
+> [!div class="tabbedCodeSnippets"]
 ```WIQL
 WHERE [System.AssignedTo] = 'joselugo'  
 WHERE [Adatum.CustomMethodology.Severity] >= 2
@@ -231,54 +262,7 @@ The comparison operators are described in Comparison Operators later in this top
 
 For the value, you can specify either a literal value ('User Story') or a macro (@Me).
 
-
-<!---
-The following table describes the syntax of the Where clause:
-
-Syntax
-
-Example
-
-Where clause
-
-Where FilterCondition [Group|{LogicalOperator FilterCondition}]
-
-Group
-
-(FilterCondition LogicalOperator FilterCondition [LogicalOperator Filter Condition]…)
-
-([Assigned to] = @Me OR [Created by = @Me])
-
-The logical grouping operators are AND and OR.
-
-FilterCondition
-
-Field ComparisonOperator Value
-
-[Work Item Type] = ‘Help Topic’
-
-You can specify either the reference name or the display name of a field. If the name contains spaces or periods, you must enclose it in square brackets ([]).
-
-The comparison operators are described in Comparison Operators later in this topic.
-
-For the value, you can specify either a literal value ('User Story') or a macro (@Me).
-
-Value
-
-LiteralValue|Variable|Field
-
-'User Story'
-
-Literal value
-The actual value to compare to the value of the field. For more information, see Literal Values later in this topic.
-
-Variable
-An expression that indicates a certain value. For example, @Me indicates the person who is running the query. For more information, see Variables later in this topic.
-
-Field
-The name of another field. For example, you can use [Assigned to] = [Changed by]to find work items that are assigned to the person who changed the work item most recently.
-
---> 
+ 
 
 <a id="macros" />
 
@@ -428,7 +412,7 @@ The context parameter contains key-value pairs for macros. For example, if the c
 
 ## Historical queries (ASOF) 
 
-You can use an `ASOF` clause in a query to filter for work items that satisfy the specified condition on a specific date at a specific time.
+You can use an `ASOF` clause in a query to filter for work items that satisfy the specified filter conditions as they were defined on a specific date and time.
 
 For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
 
@@ -620,28 +604,21 @@ MODE (MustContain)
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
+> [!div class="tabbedCodeSnippets"]
 ```WIQL
-SELECT System.ID, System.Title from workitems 
-where Priority=1 order by System.ID asc
+SELECT System.ID, System.Title 
+FROM workitems 
+WHERE Priority=1 
+ORDER BY System.ID asc
 ```
-
-The general format of a query consists of a `SELECT` statement and a qualifying `WHERE` clause. The following examples illustrate the basic syntax.
-
-```WIQL
-SELECT Select_List
-   FROM workitems
-   [WHERE Conditions]
-   [ORDER BY Column_List]
-   [ASOF DateTimeConditions]
-```
-
 
 ### Date-time pattern
 
 You specify the date-time pattern according to one of two patterns: 
 - The Date Pattern and Time Pattern you set under your personal profile settings ([Set personal preferences](../../organizations/settings/set-your-preferences.md)).
-- The pattern specified by UTC which follows this pattern (with Z appended to the date-time): 
-    `AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
+- The pattern specified by UTC which follows this pattern (with Z appended to the date-time):  
+
+`AND System.ChangedDate >= '1/1/2019 00:00:00Z'`
 
 
 ### Example clauses
@@ -651,8 +628,8 @@ The following example statements show specific qualifying clauses.
 <table width="80%">
 <tbody valign="top">
 <tr>
-<th width="20%">Clause</th>
-<th width="80%">Example</th>
+<th width="10%">Clause</th>
+<th width="90%">Example</th>
 </tr>
 <tr>
 <td><code>AND</code></td>
