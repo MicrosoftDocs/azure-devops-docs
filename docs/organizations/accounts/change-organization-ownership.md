@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 01/16/2020
+ms.date: 01/17/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -20,7 +20,7 @@ monikerRange: 'azure-devops'
 
 As roles and responsibilities change, you can change the owner for your organization. In this article, learn how to update the organization owner in Azure DevOps.
 
-For organizations backed by Azure AD,  if your organization Owner and any other Project Collection Administrators have left the company, you can [transfer ownership to another user](#resolve-orphaned-organization-ownership).  
+For organizations backed by Azure AD,  if your organization Owner and any other Project Collection Administrators have left the company, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
 
 <a name="ChangeOwner"></a>
 
