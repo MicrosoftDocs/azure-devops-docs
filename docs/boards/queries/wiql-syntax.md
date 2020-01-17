@@ -44,7 +44,7 @@ ASOF '6/15/2010'
 Select [State], [Title]
 ```
 
-The WIQL syntax is not case sensitive.
+The WIQL syntax is not case-sensitive.
 
 ### Limits on WIQL length  
 
@@ -362,7 +362,7 @@ You can use the `@StartOf...` macros with any <strong>DateTime</strong> field. T
 
 ::: moniker range=">= azure-devops-2019"
 
-These macros accept a modifier string which has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the @Today macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function, e.g. `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
+These macros accept a modifier string that has a format of `(+/-)nn(y|M|w|d|h|m)`. Similar to the `@Today` macro, you can specify plus or minus integer offsets. If the time unit qualifier is omitted, it defaults to the natural period of the function, e.g. `@StartOfWeek("+1")` is the same as `@StartOfWeek("+1w")`. If the plus/minus (+/-) sign is omitted, plus is assumed.
 
 This syntax allows you to nest modifiers and offset your query twice. For example, the following clause filters work items that have been closed last year and three months into the start of the current year.  
 
@@ -495,7 +495,7 @@ The following table summarizes the differences between work item queries and que
 <li><code>MODE (MustContain)</code>: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. </li>
 <li><code>MODE (MayContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.</li>
 <li><code>MODE (DoesNotContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
-<li><code>MODE (Recursive)</code>: Use for Tree queries(`[System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'`). Link type must be Tree topology and forward direction. Returns WorkItemLinkInfo records for all work items that satisfy the source, recursively for target.  `ORDER BY` and `ASOF` aren;t compatible with tree queries.</li>
+<li><code>MODE (Recursive)</code>: Use for Tree queries(`[System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'`). Link type must be Tree topology and forward direction. Returns WorkItemLinkInfo records for all work items that satisfy the source, recursively for target.  `ORDER BY` and `ASOF` aren't compatible with tree queries.</li>
 </ul>
 </td>
 </tr>
@@ -560,12 +560,12 @@ WHERE
 MODE (Recursive)
 ```
 
-### Direct link query example
+### Direct-link query example
 
 The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Query Editor, direct link query, all work items and states](media/wiql/direct-link-query.png)   
+> ![Query Editor, direct-link query, all work items and states](media/wiql/direct-link-query.png)   
 
 
 The equivalent WIQL syntax is as shown. 
@@ -742,7 +742,7 @@ WHERE [System.Description] contains 'WIQL'
 
 ### Area and Iteration (TreePath) 
 
-You can use the `UNDER` operator for the Area and Iteration Path fields. under evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
+You can use the `UNDER` operator for the Area and Iteration Path fields. The `UNDER` operator evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
 
 ```WIQL
 WHERE [System.AreaPath] UNDER 'MyProject\Server\Administration'
