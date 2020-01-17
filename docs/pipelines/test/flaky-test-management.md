@@ -35,14 +35,14 @@ The goal of bringing flaky test management in-product is to reduce developer pai
 
 * **Close the loop** - Reset flaky test as a result of bug resolution / manual input
 
-![Flaky lifecycle](_img/flaky-test-management/flaky.png)
+![Flaky lifecycle](media/flaky-test-management/flaky.png)
 
 ## Enable flaky test management
 
 To configure flaky test management, choose **Project settings**, and select **Test Management** in the **Pipelines** section.
 
 > [!div class="mx-imgBorder"]
-> ![Flaky Setting](_img/flaky-test-management/flaky_setting.png)
+> ![Flaky Setting](media/flaky-test-management/flaky_setting.png)
 
 The default setting for all projects is to use flaky tests for troubleshooting. 
 
@@ -69,7 +69,7 @@ This setting is available in **Project settings** under *Flaky test options*.
 Note: Test summary will be updated only for [Visual Studio Test task](../tasks/test/vstest.md) and [Publish Test Results task](../tasks/test/publish-test-results.md?view=azure-devops&tabs=yaml). You might need to add a custom script to suppress flaky test failure for other scenarios. 
 
 > [!div class="mx-imgBorder"]
-> ![Flaky Setting](_img/flaky-test-management/flaky_reporting.png)
+> ![Flaky Setting](media/flaky-test-management/flaky_reporting.png)
 
 ## Resolution
 
@@ -78,19 +78,19 @@ Note: Test summary will be updated only for [Visual Studio Test task](../tasks/t
 You can mark or unmark a test as flaky based on analysis or context, by choosing **Flaky** (or **UnFlaky**, depending on whether the test is already marked as flaky.)
 
 > [!div class="mx-imgBorder"]
-> ![Mark flaky Bug](_img/flaky-test-management/mark-flaky-1.png)
+> ![Mark flaky Bug](media/flaky-test-management/mark-flaky-1.png)
 
 When a test is marked flaky or unflaky in a pipeline, no changes are made in the current pipeline. Only on future executions of that test will the changed flaky setting be evaluated. 
 Tests marked as flaky have the *Marked flaky* tag in the UI. 
 
 > [!div class="mx-imgBorder"]
-> ![Mark flaky Bug](_img/flaky-test-management/markflaky.png)
+> ![Mark flaky Bug](media/flaky-test-management/markflaky.png)
 
 
 <!---### Integration with manual bug creation
 You can create bugs to manage flaky test debt. If you create or add to bug for a flaky test, *flaky* tag is added and then on resolution of the bug the test is unmarked as flaky. 
 
-![Flaky Bug](_img/flaky-test-management/flaky_bug.png)-->
+![Flaky Bug](media/flaky-test-management/flaky_bug.png)-->
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
 

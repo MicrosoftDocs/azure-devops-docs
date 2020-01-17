@@ -36,7 +36,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 > The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your project&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
-![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
+![A view of three portfolio backlogs enabled](media/three-level-portfolio-backlog.png)
 
 You can add up to five levels of portfolio backlogs. And, each team can [choose which  backlogs appear for them to work on](../organizations/settings/select-backlog-navigation-levels.md).
 
@@ -257,7 +257,7 @@ witadmin importprocessconfig /collection:"CollectionURL" /p:"ProjectName" /f:"Di
 ## Related articles  
 We've just shown how to add another portfolio backlog level. You can add up to five portfolio backlogs. This includes the default backlogs of Feature and Epic. In total, this provides you with seven levels from the top-level portfolio backlog to task.  
 
-![Conceptual image of 5 levels of portfolio backlog](_img/five-levels-portfolio-backlogs.png)
+![Conceptual image of 5 levels of portfolio backlog](media/five-levels-portfolio-backlogs.png)
 
 If you want to add another WIT to your backlogs or boards, see [work item types to backlogs and boards](add-wits-to-backlogs-and-boards.md). 
 

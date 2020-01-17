@@ -31,16 +31,16 @@ Git repository or when you check in code to Team Foundation version control.
 
 1. In Jenkins, create a new item.
 
-   <img alt="New item link in Jenkins" src="./_img/jenkins/new-item.png" style="border: 1px solid #CCCCCC" />
+   <img alt="New item link in Jenkins" src="./media/jenkins/new-item.png" style="border: 1px solid #CCCCCC" />
 
 2. Create the type of build that's appropriate for your project.
 
-   <img alt="Build name and type in Jenkins" src="./_img/jenkins/my-build.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Build name and type in Jenkins" src="./media/jenkins/my-build.png" style="border: 1px solid #CCCCCC" />
 
 3. Set the URL for your Git repository in Azure DevOps Services.
 The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git/{projectName}```.
 
-   <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Source code management settings with Git selected" src="./media/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
 ## Trigger Jenkins
 
@@ -50,27 +50,27 @@ The URL is in the form ```https://dev.azure.com/{orgName}/DefaultCollection/_git
 Be sure to set a secondary user name because you can't use your email account
 to connect Azure DevOps Services to Jenkins.
 
-   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./media/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
 1. Go to your project Service Hooks page: 
 
 	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./_img/add-devops-service-hook.png)
+	![Project administration page](./media/add-devops-service-hook.png)
 
 	Select **Create Subscription**.
 
 1. Add Jenkins.
 
-   <img alt="Select target service dialog box, Jenkins selected" src="./_img/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
 1. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
 
-   <img alt="Configure event dialog box" src="./_img/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
 1. Configure the action to take in Jenkins.
 
-   <img alt="New service hook subscription dialog box" src="./_img/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
+   <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -80,27 +80,27 @@ to connect Azure DevOps Services to Jenkins.
 Be sure to set a secondary user name because you can't use your email account
 to connect Azure DevOps Services to Jenkins.
 
-   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./media/jenkins/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
 1. Go to your project Service Hooks page: 
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./_img/add-service-hook.png)
+	![Project administration page](./media/add-service-hook.png)
 
 	Select **Create Subscription**.
 
 1. Add Jenkins.
 
-   <img alt="Select target service dialog box, Jenkins selected" src="./_img/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select target service dialog box, Jenkins selected" src="./media/jenkins/target-service.png" style="border: 1px solid #CCCCCC" />
 
 1. Pick the event from Azure DevOps Services that you want to trigger a Jenkins build.
 
-   <img alt="Configure event dialog box" src="./_img/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Configure event dialog box" src="./media/jenkins/configure-event.png" style="border: 1px solid #CCCCCC" />
 
 1. Configure the action to take in Jenkins.
 
-   <img alt="New service hook subscription dialog box" src="./_img/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
+   <img alt="New service hook subscription dialog box" src="./media/jenkins/subscription.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 

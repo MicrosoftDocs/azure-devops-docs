@@ -36,7 +36,7 @@ same data.
 1. Create a parameter by typing a name preceded by "**@**" in the 
    actions and expected results of your test steps.
 
-   ![Creating a parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-01.png)
+   ![Creating a parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-01.png)
 
 1. Underneath the list of steps, add combinations of parameter values. 
    You might need to scroll down to see them.
@@ -46,13 +46,13 @@ same data.
 1. Convert existing parameters to shared parameters so that you 
    can use them and the associated data in other test cases.
 
-   ![Converting existing parameters to shared parameters](_img/repeat-test-with-different-data/repeat-test-with-different-data-02.png)
+   ![Converting existing parameters to shared parameters](media/repeat-test-with-different-data/repeat-test-with-different-data-02.png)
  
 1. After you've created a shared parameter set, open another 
    test case and add the shared parameter set to that test case. 
    You can search for the shared parameter set by name.
 
-   ![Adding the shared parameter set to a test case](_img/repeat-test-with-different-data/repeat-test-with-different-data-03.png)
+   ![Adding the shared parameter set to a test case](media/repeat-test-with-different-data/repeat-test-with-different-data-03.png)
  
    The shared parameter set is displayed in the **Parameter values**
    section after you add it. You can now use these parameters in 
@@ -62,7 +62,7 @@ same data.
    these shared parameters, map the shared parameters to 
    the local parameters to use the shared parameter data.
 
-   ![Mapping a shared parameter to a local parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-04.png)
+   ![Mapping a shared parameter to a local parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-04.png)
  
    When they are correctly mapped, the data associated with the 
    shared parameter is displayed. 
@@ -71,7 +71,7 @@ same data.
    **Parameters** page. View the test cases that reference 
    them in the **Test cases** pane.
 
-   ![Adding, editing, viewing, and renaming a shared parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-05.png)
+   ![Adding, editing, viewing, and renaming a shared parameter](media/repeat-test-with-different-data/repeat-test-with-different-data-05.png)
  
 1. Each shared parameter set is a work item. Open the **Properties**
    page to view or make changes to this work item. For example, 
@@ -86,17 +86,17 @@ containing all of the parameters - even though a few of the columns in the set w
 1. Select a test case with parameters and start it running.
 The Test Runner shows the first row of parameter values.
  
-   ![Test Runner showing the first row of parameter values](_img/repeat-test-with-different-data/repeat-test-with-different-data-06.png)
+   ![Test Runner showing the first row of parameter values](media/repeat-test-with-different-data/repeat-test-with-different-data-06.png)
 
 1. When you've completed the steps, mark the test passed or failed.
    Then go on to the next iteration of the test, which uses the next 
    row of parameter values.  
 
-   ![Going on to the next iteration of the test](_img/repeat-test-with-different-data/repeat-test-with-different-data-07.png)
+   ![Going on to the next iteration of the test](media/repeat-test-with-different-data/repeat-test-with-different-data-07.png)
 
 1. Use the drop down to navigate to other iterations.
 
-   ![Navigating to other iterations](_img/repeat-test-with-different-data/repeat-test-with-different-data-08.png)
+   ![Navigating to other iterations](media/repeat-test-with-different-data/repeat-test-with-different-data-08.png)
 
 1. If any of the parameter values are incorrect, fix them 
    without canceling the test by choosing **Edit** from step's
@@ -108,12 +108,12 @@ The outcome of the test is based on a precedence hierarchy of all the iteration 
 
 1. Check the test result by opening the details pane.
 
-   ![Checking the test result in the details pane](_img/repeat-test-with-different-data/repeat-test-with-different-data-09.png)
+   ![Checking the test result in the details pane](media/repeat-test-with-different-data/repeat-test-with-different-data-09.png)
  
 1. Double-click a test result to view the test run details, 
    and the test results for each iteration.
 
-   ![Viewing the test run details](_img/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
+   ![Viewing the test run details](media/repeat-test-with-different-data/repeat-test-with-different-data-10.png)
  
 ## Speed up test iterations by using record and playback
 

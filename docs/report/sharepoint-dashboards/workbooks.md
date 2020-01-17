@@ -40,14 +40,14 @@ You can open a workbook from the Documents page in Team Explorer. Or, you can op
   
  For Agile team projects, the Triage worksheet references the Triage shared query, which is configured to find all active bugs for the team project.  
   
- ![Example triage workbook](_img/procguid_workbooktriage.png "ProcGuid_WorkbookTriage")  
+ ![Example triage workbook](media/procguid_workbooktriage.png "ProcGuid_WorkbookTriage")  
   
  For CMMI team projects, the Triage worksheet references the Untriaged Work Items shared query, which is configured to find all requirements, change requests, tasks, bugs, and issues whose **Triage** field is not set to **Triaged** for the team project.  
   
 ## Issues workbook  
  You can use the Issues workbook to review and rank problems that might block team progress. The Issues worksheet references the Issues shared query, which is configured to find all issues that are defined for the team project.  
   
- ![Example of Issues Workbook](_img/procguid_workbookissues.png "ProcGuid_WorkbookIssues")  
+ ![Example of Issues Workbook](media/procguid_workbookissues.png "ProcGuid_WorkbookIssues")  
   
 ## Q & A  
   

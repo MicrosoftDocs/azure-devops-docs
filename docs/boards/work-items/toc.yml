@@ -21,12 +21,12 @@
     href: ../backlogs/manage-bugs.md
   - name: Manage issues
     href: ../backlogs/manage-issues-impediments.md
+  - name: Bulk modify (web)
+    href: ../backlogs/bulk-modify-work-items.md
   - name: "Move, change, or delete"
     href: ../backlogs/remove-delete-work-items.md
   - name: Link work items
     href: ../backlogs/add-link.md?
-  - name: Bulk modify (web)
-    href: ../backlogs/bulk-modify-work-items.md
   - name: Copy/clone 
     href: ../backlogs/copy-clone-work-items.md
 - name: Concepts
@@ -113,7 +113,7 @@
     href: ../queries/share-plans.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     displayName: rich text, attach files, storyboard, social tools
   - name: Go mobile
-    href: ../../project/navigation/mobile-work.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/project/navigation/mobile-work?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
     displayName: export, cvs 

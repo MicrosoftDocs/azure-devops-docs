@@ -33,10 +33,10 @@ Use this article to learn how to:
 Use the burndown chart to track completion of a predefined scope of work over a predefined period of time. For example, a sprint burndown tracks the sprint backlog completion by end of the sprint. A release burndown tracks the release backlog completion by the end of the release. You can define a bug burndown chart to track completion of a set of bugs by a certain date. 
 
 **Burndown widget configured to display a Release Burndown**
-![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-release-burndown.png)
+![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-release-burndown.png)
 
 **Burndown widget configured to display a Bug Burndown**
-![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-bug-burndown.png)
+![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-bug-burndown.png)
 
  
 ## Metrics 
@@ -66,7 +66,7 @@ Burndown charts also help teams understand risks to their release. If the projec
 
 As the following diagram shows, charts based on the Burndown and Burnup widgets provide a number of calculated elements. 
 
-![Burndown Widget - Release Burndown Example](./_img/burndown-widget/burndownup-release-burndown-with-markup.png)
+![Burndown Widget - Release Burndown Example](./media/burndown-widget/burndownup-release-burndown-with-markup.png)
 
 
 | Element | Description|  
@@ -91,13 +91,13 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 ::: moniker range="azure-devops"
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../_img/icons/actions-icon.png) actions icon and select the **Configure** option.  
+1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../_img/icons/actions-icon.png) actions icon and select the **Configure** option.   
+1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.   
 ::: moniker-end
 
 
@@ -106,9 +106,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 1. Modify the **Title** of the widget and select your preferred **Size**. The Burndown widget can scale up to 10x10.    
 1. Select the **Teams** you want to track.   
 	Select at least one **Project** and one **Team**.   
-	![Burndown Widget - Configuration - Select team](./_img/burndown-widget/burndownup-config-select-team.png)    
+	![Burndown Widget - Configuration - Select team](./media/burndown-widget/burndownup-config-select-team.png)    
 	If you want to track progress across teams, add more teams using the team selector. You may also select teams from other projects.  
-	![Burndown Widget - Configuration - Select multiple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
+	![Burndown Widget - Configuration - Select multiple teams](./media/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
 
    > [!NOTE]   
@@ -123,22 +123,22 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select the Stories backlog, you have an additional option:  **Include bugs on the Stories backlog**. Place a checkmark in the box to include bugs along with user stories in your burndown.
 
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
-	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
+	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-backlog.png)  
 
    > [!NOTE]   
    > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
    
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
-	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
+	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-work-item-type.png)  
 
    > [!NOTE]   
    > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../powerbi/analytics-historical-filtering.md) for more information.
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
 	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
-	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-field-criteria.png)  
+	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-field-criteria.png)  
 	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
-	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
+	![Burndown Widget - Configuration - Select field criteria](./media/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
 	> All field criteria are AND-ed together. That is, work items must match all the field criteria to be included in the burndown or burnup chart.
@@ -148,9 +148,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 1. Select how you want to calculate burndown or burnup: by **Count** of work items or by **Sum** based on a selected field.  
 	Here, we choose to base the burndown on a count of work items.   
-	![Burndown Widget - Configuration - Select burndown on count](./_img/burndown-widget/burndownup-config-select-burndown-on-count.png)  
+	![Burndown Widget - Configuration - Select burndown on count](./media/burndown-widget/burndownup-config-select-burndown-on-count.png)  
 	And, here we choose a sum based on Story Points.   
-	![Burndown Widget - Configuration - Select burndown on field](./_img/burndown-widget/burndownup-config-select-burndown-on-field.png)  
+	![Burndown Widget - Configuration - Select burndown on field](./media/burndown-widget/burndownup-config-select-burndown-on-field.png)  
 	
 	> [!NOTE]  
 	> Burndown works best when aggregating size fields like story points. If you choose to Burndown on fields that change during the sprint, like Remaining Work for Tasks, the calculation of "Items not Estimated" will grow as items are closed. 
@@ -170,14 +170,14 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	### Plot based on an iteration schedule
    
 	After selecting the **Start Date**, set **Plot burndown by** to **Iteration**. You can select iterations from your current project.  
-	![Burndown Widget - Configuration - select time period iterations](./_img/burndown-widget/burndownup-config-select-iterations.png)
+	![Burndown Widget - Configuration - select time period iterations](./media/burndown-widget/burndownup-config-select-iterations.png)
    
 	Add multiple iterations by selecting **Add iterations**.
    
-	![Burndown Widget - Configuration - Select iterations](./_img/burndown-widget/burndownup-config-select-iterations-search.png)
+	![Burndown Widget - Configuration - Select iterations](./media/burndown-widget/burndownup-config-select-iterations-search.png)
    
 	The iteration selection box supports search. Type a partial name of an iteration and the closest match appears.  
-	![Burndown Widget - Configuration - Select iterations search](./_img/burndown-widget/burndownup-config-select-iterations-search.png)
+	![Burndown Widget - Configuration - Select iterations search](./media/burndown-widget/burndownup-config-select-iterations-search.png)
 
 	Iterations you can select are based on the **current project**, even if you selected teams from other projects. The burndown chart plots remaining work based on the end date of the iteration. It calculates remaining work across all teams and projects, based on that iteration end date. For example, if an iteration ends on 11/10/2017, the burndown chart calculates remaining work as of 11/10/2017, counting or summing all work items for every team or project. Therefore, a cross-project burndown works when plotting by iterations, as long as all the teams have selected the same iteration schedule.
 
@@ -191,10 +191,10 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	### Plot based on a daily, weekly, or monthly interval
 	After selecting the **Start Date**, set **Plot burndown by** to **Date**. Specify the **End Date** for your burndown. 
 	You can set **Plot interval** to Days, Weeks, or Months.  
-	![Burndown Widget - Configuration - select time period daily](./_img/burndown-widget/burndownup-config-select-time-period-daily.png)
+	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-daily.png)
 
 	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.  
-	![Burndown Widget - Configuration - select time period daily](./_img/burndown-widget/burndownup-config-select-time-period-weekly.png)
+	![Burndown Widget - Configuration - select time period daily](./media/burndown-widget/burndownup-config-select-time-period-weekly.png)
 
 	If you select **Months**, then burndown will be calculated based the last day of each month.  
 
@@ -214,26 +214,26 @@ One of the most common burndowns is the sprint burndown. A Sprint burndown is us
 
 1. Select a single team that you want to burndown for.
 
-	![Sprint-Burndown - Configuration - Select team](./_img/burndown-widget/sprint-burndownup-config-select-team.png)    
+	![Sprint-Burndown - Configuration - Select team](./media/burndown-widget/sprint-burndownup-config-select-team.png)    
 
 2. Choose your work items. For this example, choose the story backlog.
 
-	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png) 
+	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-backlog.png) 
 
 3. Select the iteration path you want to create the sprint burndown for. Add a field criteria on "Iteration Path" to match your sprint. You can also choose to add other field criteria like Priority to filter your burndown.
 
-	![Burndown Widget - Configuration - Field criteria](./_img/burndown-widget/sprint-burndownup-config-filters.png)
+	![Burndown Widget - Configuration - Field criteria](./media/burndown-widget/sprint-burndownup-config-filters.png)
 
 4. Select how you want to calculate burndown. You can use Count of work items, or sum of any field.
 
-	![Sprint Burndown Widget - Configuration - Select plot by](./_img/burndown-widget/sprint-burndownup-config-wit-default.png) 
+	![Sprint Burndown Widget - Configuration - Select plot by](./media/burndown-widget/sprint-burndownup-config-wit-default.png) 
 
 4. Set the start date to be the first day of your sprint. For example, 10/22/2017.
 
 6. Set **Plot burndown by** to Date.
 7.	Set the end date to be the last day of your sprint. For example 11/9/2017.
 
-	![Sprint Burndown Widget - Configuration - Dates](./_img/burndown-widget/sprint-burndownup-config-dates.png) 
+	![Sprint Burndown Widget - Configuration - Dates](./media/burndown-widget/sprint-burndownup-config-dates.png) 
 
 8. Save your configuration. This widget now shows a daily burndown of the Fabrikam Fiber - Website team for Sprint 120. The burndown shows a count of work items completed per day. To change the sprint this widget is monitoring, for example Sprint 121, you will need to manually change the dates in the widget configuration.
 
@@ -244,7 +244,7 @@ Configuring the Burnup widget is exactly like configuring the Burndown widget, e
 
 **Burnup Widget displaying a Stories Burnup**
 
-![Burnup Widget - Stories Burnup Example](./_img/burndown-widget/burndownup-stories-burnup.png)
+![Burnup Widget - Stories Burnup Example](./media/burndown-widget/burndownup-stories-burnup.png)
 
 ## Next steps
 

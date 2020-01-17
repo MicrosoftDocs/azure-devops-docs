@@ -37,7 +37,7 @@ The Marketplace is a one-stop-shop for individuals and teams to find tools that 
 
 Publishing to the Marketplace is an iterative process that starts with creating a manifest file that defines your integration and key discovery characteristics (like screen shots, logos, and overview content). This information is used to present your integration to users on the Marketplace, for example:
 
-![example](./_img/integration-example.png)
+![example](./media/integration-example.png)
 
 [Jenkins for Azure DevOps Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
@@ -85,7 +85,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 * 6 - links
 * 7 - branding
 
-![card](../develop/_img/extension-details-page.png)
+![card](../develop/media/extension-details-page.png)
 
 <div class="alert alert-danger">
   Make sure the &quot;public&quot; attribute is set to &quot;false&quot; (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 

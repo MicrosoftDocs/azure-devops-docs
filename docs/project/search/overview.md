@@ -34,13 +34,13 @@ enable you to search across all the projects, teams and repositories to which yo
 
 ::: moniker range=">= azure-devops-2019"  
 
-![Search boxes in Azure DevOps](_img/_shared/title-bar-search-box-select-type-tfs.png)
+![Search boxes in Azure DevOps](media/_shared/title-bar-search-box-select-type-tfs.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"  
 
-![Search boxes in TFS 2018 and earlier](_img/_shared/title-bar-search-box-select-type.png)
+![Search boxes in TFS 2018 and earlier](media/_shared/title-bar-search-box-select-type.png)
 
 ::: moniker-end
 

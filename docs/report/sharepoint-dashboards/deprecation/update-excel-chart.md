@@ -32,19 +32,19 @@ Follow these steps to update the Data Connection string:
 
 1.	Click the Chart Title to open the Excel workbook. 
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-1-click-title.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-1-click-title.png)
 
 2.	Edit the workbook using Excel
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-2.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-2.png)
 
 3.	If the team project name has changed, update the "Team Project Hierarchy" filter:
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-3.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-3.png)
 
 4.	If the location or name of the TFS cube has changed, update the Data Connection string:
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-4.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-4.png)
 
     Update the connection string to match the new server location and/or name of your TFS cube:
 

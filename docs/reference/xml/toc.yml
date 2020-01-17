@@ -132,30 +132,6 @@
           href: categories-xml-element-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         - name: ProcessConfiguration XML reference
           href: process-configuration-xml-element.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: witAdmin commands
-      items:
-        - name: witAdmin command line reference
-          href: ../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export categories
-          href: ../witadmin/witadmin-import-export-categories.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export global workflow
-          href: ../witadmin/witadmin-import-export-global-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Import and export process configuration
-          href: ../witadmin/witadmin-import-export-process-configuration.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: "Import, export, and manage work item types"
-          href: ../witadmin/witadmin-import-export-manage-wits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage global lists for work item types
-          href: ../witadmin/manage-global-lists-for-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage link types
-          href: ../witadmin/manage-link-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Manage work item fields
-          href: ../witadmin/manage-work-item-fields.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Rebuild the client cache
-          href: ../witadmin/rebuild-client-cache.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Remove work items permanently
-          href: ../witadmin/remove-work-items-permanently.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-        - name: Customize and manage the test experience
-          href: ../witadmin/tcm-customize-manage-test-experience.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
     - name: Reporting
       items:
         - name: Reportable fields reference 

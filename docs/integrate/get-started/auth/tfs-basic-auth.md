@@ -41,7 +41,7 @@ Follow these steps to enable basic auth for your TFS:
 
 1. Install the `Basic Authentication` feature for IIS in Server Manager
    <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-   <img alt="Configure basic authentication feature" src="./_img/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
+   <img alt="Configure basic authentication feature" src="./media/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
    </div>
 2. Open IIS Manager and expand to the <code>Team Foundation Server</code> website, double click the <code>Authentication</code> tile in the Features view.
 

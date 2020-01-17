@@ -82,7 +82,7 @@ On the [Build](../../index.yml) tab:
 <tr>
 <td>
 
-![Package: npm](../package/_img/npm.png)
+![Package: npm](../package/media/npm.png)
 
 <br/>[Package: npm](../package/npm.md)</td>
 <td>
@@ -95,7 +95,7 @@ On the [Build](../../index.yml) tab:
 <tr>
 <td>
 
-![Build: gulp](_img/gulp.png)
+![Build: gulp](media/gulp.png)
 
 <br/>[Build: gulp](gulp.md)</td>
 <td>

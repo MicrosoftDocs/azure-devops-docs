@@ -35,7 +35,7 @@ deployment pipeline and prompt users to carry out manual tasks, then resume or r
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 
-![Schematic view of approvals and gates in a stage](_img/approvals-gates.png)
+![Schematic view of approvals and gates in a stage](media/approvals-gates.png)
 
 By using approvals, gates, and manual intervention you can take full control of your releases
 to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention
@@ -72,6 +72,6 @@ though Service Management methodologies such as ITIL. For more information, see 
 ## Additional resources
 
 * [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

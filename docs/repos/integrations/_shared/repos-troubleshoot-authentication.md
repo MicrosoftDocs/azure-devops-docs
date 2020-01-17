@@ -14,7 +14,7 @@ To enable this setting, navigate to **Organization Settings** > **Security** > *
  via OAuth for the organization** setting to **On**.
 
 > [!div class="mx-imgBorder"]
-> ![Enable the Third-party application access via OAuth for the organization setting](../_img/troubleshooting/third-party-app-consent.png)
+> ![Enable the Third-party application access via OAuth for the organization setting](../media/troubleshooting/third-party-app-consent.png)
 
 ### Configuration failed. Please make sure that the organization '{organization name}' exists and that you have sufficient permissions.
 
@@ -24,4 +24,4 @@ Open an **In private** or **incognito** browser window and navigate to `https://
 icon to the left, select the directory that contains the organization containing the repository to which you wish to subscribe.
 
 > [!div class="mx-imgBorder"]
-> ![Select the directory that contains the organization that contains the project](../_img/troubleshooting/profile-page.png)
+> ![Select the directory that contains the organization that contains the project](../media/troubleshooting/profile-page.png)

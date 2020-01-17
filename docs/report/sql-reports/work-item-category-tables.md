@@ -22,7 +22,7 @@ You can query for categories of work items by using the FactWorkItemToCategory a
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Tables for Work Item Category](_img/teamproj_factworkitemcategory.png "TeamProj_FactWorkItemCategory")  
+ ![Fact Tables for Work Item Category](media/teamproj_factworkitemcategory.png "TeamProj_FactWorkItemCategory")  
   
  FactWorkItemToCategory is associated with the following dimension tables:  
   

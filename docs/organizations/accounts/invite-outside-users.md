@@ -36,7 +36,7 @@ Project members have access to resources beyond the specific project. Those reso
 * All installed extensions.
 * [Process](../settings/work/manage-process.md) metadata from all processes in the organization, including the work item types, its fields, and picklist items. Picklist items can show sensitive information like release dates, as shown in this example:
 
-   ![Edit the private release dates field](../projects/_img/edit-field-release-in-feature.png)
+   ![Edit the private release dates field](../projects/media/edit-field-release-in-feature.png)
 
 * When the WIT Client object model is used, which includes the use of Microsoft Excel and Visual Studio integration with Azure DevOps, it stores sensitive information in a cache on the local disk. The cache includes the metadata of all processes in the organization and the identities and group memberships of all members of the organization.
 

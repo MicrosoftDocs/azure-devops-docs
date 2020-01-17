@@ -55,12 +55,12 @@ The *.order* file is used to set the order of the Wiki pages in a particular hie
 
 For example, the images below show the default order for a hierarchy, which is in alphabetical order and the order in which the content needs to be arranged for a logical information flow.
 
-> ![Wiki page hierarchy without .order file](_img/wiki/without-order-file.png)
-> ![Wiki page hierarchy with .order file](_img/wiki/with-order-file.png)
+> ![Wiki page hierarchy without .order file](media/wiki/without-order-file.png)
+> ![Wiki page hierarchy with .order file](media/wiki/with-order-file.png)
 
 To change the order of the Wiki pages in the hierarchy, the *.order* file is required at the same level of the pages.
 
-> ![Order file in repo](_img/wiki/order-file-in-repo.png)
+> ![Order file in repo](media/wiki/order-file-in-repo.png)
 
 The content of the *order* file contains the list of files in the required order (without the ".md" extension).
 In this case, it is as follows:

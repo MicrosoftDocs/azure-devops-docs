@@ -36,21 +36,21 @@ In this quickstart, learn to set up billing for your organization. Do so before 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-    ![Select Billing from Organization settings](_img/_shared/select-billing-organization-settings.png)
+    ![Select Billing from Organization settings](media/_shared/select-billing-organization-settings.png)
 
 4. Select **Set up billing**.
 
-   ![Select Set up billing](_img/_shared/set-up-billing.png)
+   ![Select Set up billing](media/_shared/set-up-billing.png)
 
 5. Select your Azure subscription, and then select **Save**.
 
-   ![Select your Azure subscription](_img/_shared/select-azure-subscription.png)
+   ![Select your Azure subscription](media/_shared/select-azure-subscription.png)
 
 Billing is set up.
 

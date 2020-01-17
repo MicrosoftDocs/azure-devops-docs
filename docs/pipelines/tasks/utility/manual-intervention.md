@@ -24,7 +24,7 @@ typically to perform some manual steps or actions, and then continue the automat
 
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline. This task is supported only in classic release pipelines.
 
-![Configuring a Manual Intervention task](_img/maninter-use-variables.png)
+![Configuring a Manual Intervention task](media/maninter-use-variables.png)
 
 ## Arguments
 

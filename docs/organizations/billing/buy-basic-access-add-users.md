@@ -55,17 +55,17 @@ To change the access level for new users added to projects, do the following tas
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   :::image type="content" source="_img/_shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
+   :::image type="content" source="media/_shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
 
 4. Change **Default access level for new users** to Basic.
 
-   :::image type="content" source="_img/_shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
+   :::image type="content" source="media/_shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
 
 ## Automate access level assignment with group rules
 
@@ -79,17 +79,17 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Users** and then sort by **Last Access**.
 
-   :::image type="content" source="_img/_shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
+   :::image type="content" source="media/_shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
  
 4. If you have users who've never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
 
-   :::image type="content" source="_img/_shared/export-users.png" alt-text="Export users":::
+   :::image type="content" source="media/_shared/export-users.png" alt-text="Export users":::
 
 ## Pay for a user once across multiple organizations
 

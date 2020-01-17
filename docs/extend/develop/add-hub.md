@@ -20,7 +20,7 @@ ms.date: 12/31/2019
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
-![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../_shared/procedures/media/hub-location.png)
 
 ## Structure of an extension
 ```no-highlight

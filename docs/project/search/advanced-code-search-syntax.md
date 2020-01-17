@@ -75,7 +75,7 @@ Search to index in the **Options** tab of the **Repositories** section in the
 
 ::: moniker range="azure-devops-2019"
 
-![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
+![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ You can use more than one `?` wildcard to match more than one character.
 
 ------------------
 
-![Warning](_img/_shared/Warning-hightop.png) **No results found for ...**  
+![Warning](media/_shared/Warning-hightop.png) **No results found for ...**  
 If there is a very large number of hits when using a wildcard search, such 
 as when using a very simple wildcard search string, you may see a message that no 
 matching files were found. In this case, narrow your search to reduce the number
@@ -305,7 +305,7 @@ Some more examples of search strings are:
 
 Open the search results in a new browser tab from either search box by
 pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](_img/_shared/start-search-icon.png) icon.
+![start search icon](media/_shared/start-search-icon.png) icon.
 In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 

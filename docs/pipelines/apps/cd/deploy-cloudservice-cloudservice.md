@@ -81,12 +81,12 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
+   ![Selecting the build artifact](../_shared/media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
    and add a filter to include the **master** branch.
 
-   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](../_shared/media/confirm-or-set-cd-trigger.png)
 
 1. Open the **Tasks** tab and select the **Stage 1** item. Configure the task variables as follows:
    

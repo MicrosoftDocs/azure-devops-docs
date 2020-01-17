@@ -64,7 +64,7 @@ If your deployment group consists of many IIS target servers, you can deploy to 
 This ensures that your application is available to your customers at all times.
 Simply select the **Deployment group job** and use the slider to configure the **Maximum number of targets in parallel**.
 
-![Configuring safe rolling deployment for the proportion of stages to update in parallel](_img/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
+![Configuring safe rolling deployment for the proportion of stages to update in parallel](media/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
 
 <a name="database"></a>
 ## Deploy a database with your app

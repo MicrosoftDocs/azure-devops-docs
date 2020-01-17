@@ -25,7 +25,7 @@ You can query for data about builds, such as the status and quality, by using Fa
 
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
- ![Tables for Builds](_img/teamproj_factbuilddetails.png "TeamProj_FactBuildDetails")  
+ ![Tables for Builds](media/teamproj_factbuilddetails.png "TeamProj_FactBuildDetails")  
   
  FactBuildDetails is associated with the following dimension tables:  
   

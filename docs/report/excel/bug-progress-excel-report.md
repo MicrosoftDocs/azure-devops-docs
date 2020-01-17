@@ -28,7 +28,7 @@ You can use the Bug Progress report in Office Excel to track the team's progress
 
  You can use the Bug Progress report to understand how well the team is finding, fixing, and closing Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for bugs. The data is stored in the data warehouse.  
   
- ![Bug Progress Excel Report](_img/procguid_excelbug.png "ProcGuid_ExcelBug")  
+ ![Bug Progress Excel Report](media/procguid_excelbug.png "ProcGuid_ExcelBug")  
   
 ### Required activities for tracking bugs  
 
