@@ -184,6 +184,10 @@ To do so, you can either:
   >**Caution:**  
   >The proxy settings (such as `http_proxy`) must be added to the user-level config. They will be ignored if specified in a different nuget.config file.
 
+### How do I debug if I have issues with this task?
+
+To get verbose logs from the pipeline, add a pipeline variable system.debug to true.
+
 ### How does this task work?
 
 This task installs the [Azure Artifacts Credential Provider](https://github.com/Microsoft/artifacts-credprovider) into the NuGet plugins directory if it is not already installed.  

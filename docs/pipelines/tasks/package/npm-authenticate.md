@@ -19,9 +19,6 @@ monikerRange: 'azure-devops'
 
 Use this task in a build or release pipeline to provide npm credentials to an .npmrc file in your repository for the scope of the build. This enables npm, as well as npm task runners like gulp and Grunt, to authenticate with private registries.
 
->[!NOTE]
-> If you are using the npm task, you do not need to use the npm authenticate task. Instead use the feed configuration parameters that are available in the npm task.
-
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
@@ -143,5 +140,9 @@ If your proxy requires authentication, you may need to add an additional build s
 - script: node -e "let u = url.parse(`$(agent.proxyurl)`); u.auth = `$(agent.proxyusername):$(agent.proxypassword)`; console.log(`##vso[task.setvariable variable=proxyAuthUri;issecret=true]` + url.format(u))"
 - script: npm publish --https-proxy $(proxyAuthUri)
 ```
+
+### How do I debug if I have issues with this task?
+
+To get verbose logs from the pipeline, add a pipeline variable system.debug to true.
 
 <!-- ENDSECTION -->
