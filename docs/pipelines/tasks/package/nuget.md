@@ -203,4 +203,8 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 
 ::: moniker-end
 
+### How do I debug if I have issues with this task?
+
+To get verbose logs from the pipeline, add a pipeline variable system.debug to true.
+
 <!-- ENDSECTION -->
