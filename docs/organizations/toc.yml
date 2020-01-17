@@ -28,29 +28,29 @@
   - name: Overview settings
     items:
     - name: Add privacy policy URL
-      href: ./accounts/add-privacy-policy-url.md
+      href: /azure/devops/organizations/accounts/add-privacy-policy-url?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
-      href: ./accounts/change-time-zone.md
+      href: /azure/devops/organizations/accounts/change-time-zone?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization location
-      href: ./accounts/change-organization-location.md
+      href: /azure/devops/organizations/accounts/change-organization-location?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Owner
-      href: ./accounts/change-organization-ownership.md
+      href: /azure/devops/organizations/accounts/change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Rename organization
-      href: ./accounts/rename-organization.md
+      href: /azure/devops/organizations/accounts/rename-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete organization
-      href: ./accounts/delete-your-organization.md
+      href: /azure/devops/organizations/accounts/delete-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Recover organization
-      href: ./accounts/recover-your-organization.md
+      href: /azure/devops/organizations/accounts/recover-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add and manage banners
     href: /azure/devops/organizations/settings/manage-banners?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Troubleshooting
     items:
     - name: Create organization
-      href: ./accounts/faq-create-organization.md
+      href: /azure/devops/organizations/accounts/faq-create-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Ownership
-      href: ./accounts/faq-change-organization-ownership.md
+      href: /azure/devops/organizations/accounts/faq-change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete and restore organization
-      href: ./accounts/faq-delete-restore-organization.md
+      href: /azure/devops/organizations/accounts/faq-delete-restore-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Teams
   href: settings/scale/toc.yml
 - name: Notifications
@@ -74,17 +74,17 @@
 - name: Repos (Code)
   items:
   - name: Create & manage Git repositories
-    href: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/repos/git/create-new-repo?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage Git branch policies
-    href: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/repos/git/branch-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage repository permissions
-    href: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/security/set-git-tfvc-repository-permissions?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add TFVC Check-In Policies
-    href: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/repos/tfvc/add-check-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Test
   items:
   - name: Set test retention policies
-    href: ../test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/test/how-long-to-keep-test-results?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Microsoft Project Mapping file (Deprecated)
   href: ../reference/mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
