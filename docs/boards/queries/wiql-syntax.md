@@ -46,22 +46,49 @@ AsOf '6/15/2010'
 Select [State], [Title]
 ```
 
-| Part | Usage |
-| ----- |  -----  |
-| `Select` | Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods. |
-| `From WorkItems` | Indicates whether you want the query to find work items or links between work items. <br/>
-- Use `From WorkItems` to return work items. <br/>
-- Use `From WorkItemLinks` to return links between work items. For more information, see [Queries for links between work items](#linked-work-items). |
-| `Where` | Specifies the filter criteria for the query. For more information, see Syntax of the Where Clause later in this topic. |
-| `Order By` | (Optional) Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example: <br/>
-`Order By [State] Asc, [Changed Date] Desc` |
-| `AsOf` | Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.<br/> 
-`AsOf '6/15/2019` <br/> |
 
+
+<table>
+<tr>
+<th width="30%">Clause</th>
+<th width="70%">Example</th>
+</tr>
+<tbody valign="top">
+<tr>
+<td><code>SELECT</code></td>
+<td>Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.</td>
+</tr>
+<tr>
+<td><code>FROM</code></td>
+<td>Indicates whether you want the query to find work items or links between work items.
+<ul>
+<li>Use <code>From WorkItems</code> to return work items.</li>  
+<li>Use <code>FROM workItemLinks</code> to return links between work items. For more information, see <a href="#linked-work-items">Queries for links between work items</a> later in this article. </li> 
+</ul>
+</td>
+</tr>
+<tr>
+<td><code>WHERE</code></td>
+<td>Specifies the filter criteria for the query. For more information, see <a href="#where-clause">Syntax of the Where Clause</a> later in this article. </td>
+</tr>
+<tr>
+<td><code>ORDER BY</code></td>
+<td>Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example: <br/>
+<code>ORDER BY [State] Asc, [Changed Date] Desc</code>
+</td>
+</tr>
+<tr>
+<td><code>ASOF</code></td>
+<td>Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.
+<code>ASOF '6/15/2019'</code></td>
+</tr>
+</tbody>
+</table>
 
 > [!WARNING]  
 > You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
 
+<a id="where-clause" />
 
 ## Where clause
 
@@ -167,7 +194,7 @@ SELECT [System.Title]
 
 ## Query for links between work items
 
-You can also use queries to find links between work items. A condition in the `Where` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
+To return links between work items, you specify `FROM WorkItemLinks`. Filter conditions in the `WHERE` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
 
 
 > [!div class="tabbedCodeSnippets"]
@@ -175,29 +202,109 @@ You can also use queries to find links between work items. A condition in the `W
 SELECT [System.Id]
 FROM WorkItemLinks
 WHERE ([Source].[System.WorkItemType] = 'User Story')
-  And ([System.Links.LinkType] = 'Child')
-  And ([Target].[System.State] = 'Active')
-mode(MustContain)
+  AND ([System.Links.LinkType] = 'Child')
+  AND ([Target].[System.State] = 'Active')
+MODE (MustContain)
 ```
 
 The following table summarizes the differences between work item queries and queries for links between work items. 
 
-| &nbsp;&nbsp;&nbsp; | Work items | Links between work items |  
-|-----|----------|-----------------------------|  
-| **From clause** | `From WorkItems` | `From WorkItemLinks` |  
-| **Where clause** | `[FieldName] = Value` | One of the following:<br/>
-`[Source].[FieldName] = Value` <br/>
-`[Target].[FieldName] = Value`<br/>
-`[System.Links.LinkType] = 'LinkName'` |  
-| **Mode** |    | One of the following:<br/>
-`mode(MustContain)` <br/>
-(Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. <br/>
-`mode(MayContain)`<br/>
-Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.<br/>
-`mode(DoesNotContain)`<br/> 
-Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.|  
-| **Returns** | [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) | [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) | 
 
+<table>
+<tr>
+<th width="20%">Work items</th>
+<th width="40%">Work items</th>
+<th width="40%">Links between work items</th>
+</tr>
+<tbody valign="top">
+<tr>
+<td><code>FROM</code> clause</td>
+<td><code>    </code></td>
+<td>Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.</td>
+</tr>
+<tr>
+<td><code>WHERE</code> clause</td>
+<td><code>    </code></td>
+<td><code>[FieldName] = Value</code><br/>Specify one or more of the following:<br/>
+<code>[Source].[FieldName] = Value</code><br/>
+<code>[Target].[FieldName] = Value</code><br/>
+<code>[System.Links.LinkType] = 'LinkName'</code> 
+</td>
+</tr>
+<tr>
+<td><code>MODE</code></td>
+<td>     </td>
+<td>Specifies one of the following:<br/>
+<ul>
+<li><code>MODE (MustContain)</code>: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. </li>
+<li><code>MODE (MayContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.</li>
+<li><code>MODE (DoesNotContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
+<li><code>MODE (Recursive)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><code>RETURNS</code></td>
+<td><a href="/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult"><code>WorkItemQueryResult</code></a> </td>
+<td> <a href="/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink"><code>WorkItemLink</code></a> 
+</td>
+</tr>
+</tbody>
+</table>
+
+
+::: moniker range="azure-devops"
+You can specify one of the following system link type names.  
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+You can specify one of the system link type names, listed below, or [a custom link type you've defined with the On-premises XML process](../../reference/xml/link-type-element-reference.md). 
+::: moniker-end
+
+- `System.LinkTypes.Hierarchy-Forward`
+- `System.LinkTypes.Hierarchy-Reverse`
+- `System.LinkTypes.Related`
+- `System.LinkTypes.Dependency-Predecessor`
+- `System.LinkTypes.Dependency-Successor`
+- `Microsoft.VSTS.Common.Affects-Forward` (CMMI process)
+- `Microsoft.VSTS.Common.Affects-Reverse` (CMMI process)
+
+For additional information, see [Link type reference](link-type-reference.md). 
+
+### Tree type query example
+
+The following query returns all work item types define in the current project. The query as shown in the QUery Editor appears as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, tree query, all work items and states](media/wiql/tree-query-all-work-items.png)   
+
+The equivalent WIQL syntax is shown below. 
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+SELECT
+    [System.Id],
+    [System.WorkItemType],
+    [System.Title],
+    [System.AssignedTo],
+    [System.State],
+    [System.Tags]
+FROM workitemLinks
+WHERE
+    (
+        [Source].[System.TeamProject] = @project
+        AND [Source].[System.WorkItemType] <> ''
+        AND [Source].[System.State] <> ''
+    )
+    AND (
+        [System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'
+    )
+    AND (
+        [Target].[System.TeamProject] = @project
+        AND [Target].[System.WorkItemType] <> ''
+    )
+MODE (Recursive)
+```
 
 
 ## Example queries 
@@ -399,46 +506,27 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <tr>
 <td>Boolean</td>
 <td>
-
-```
-= , <> , =[Field] , <>[Field]
-```
+<code>= , <> , =[Field] , <>[Field]</code>
 </td>
 </tr>
-
-<tr>
-<td>Double, GUID, Integer</td>
-<td>
-
-```
-= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever
-```
-</td>
-</tr>
-
-
-<tr>
-<td>Boolean</td>
-<td>
-<code>= , &lt;&gt; , =[Field] , &lt;&gt;[Field]</code>
-</td>
-</tr>
-
-
 <tr>
 <td>DateTime</td>
 <td>
 <code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever</code>
 </td>
 </tr>
-
+<tr>
+<td>Double, GUID, Integer</td>
+<td>
+<code>= , <> , > , < , >= , <= , =[Field], <>[Field], >[Field], <[Field], >=[Field], <=[Field], In, Not In, Was Ever</code>
+</td>
+</tr>
 <tr>
 <td>Identity</td>
 <td>
 <code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever</code>
 </td>
 </tr>
-
 <tr>
 <td>PlainText</td>
 <td>
@@ -451,16 +539,12 @@ Beyond these basic operators, there are some behaviors and operators specific to
 <code>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], Contains, Does Not Contain, In, Not In, In Group, Not In Group, Was Ever</code>
 </td>
 </tr>
-
-
 <tr>
 <td>TreePath</td>
 <td>
 <code>=, &lt;&gt;, In, Not In, Under, Not Under</code>
 </td>
 </tr>
-
-
 </tbody>
 </table>
 
