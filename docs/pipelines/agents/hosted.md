@@ -140,10 +140,6 @@ More information about the versions of software included on the images can be fo
 
 Images are typically updated weekly. You can check the [status badges](https://github.com/actions/virtual-environments) which are in the format `20200113.x` where the first part indicates the date the image was updated.
 
-#### Why are some of the images in different repos?
-
-Some of the Azure Pipelines VM Images are also used for GitHub Actions, and those images are now maintained by the GitHub Actions team. You can always see the list of installed software and versions for all of the images by following the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
-
 #### What can I do if software I need is removed or replaced with a newer version?
 
 You can let us know by filing a GitHub issue by choosing the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
