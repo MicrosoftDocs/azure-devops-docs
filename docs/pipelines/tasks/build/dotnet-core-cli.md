@@ -167,7 +167,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 # Publish package to an external endpoint with a stored NuGet config file and stored credentials.
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'pack'
+    command: 'publish'
     selectOrConfig: 'config'
     nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
     externalEndpoints: $(externalFeedCredential)
