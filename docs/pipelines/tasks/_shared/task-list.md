@@ -18,7 +18,7 @@ ms.topic: include
 | ![icon](../build/media/gradle.png) [Gradle build and release task](../build/gradle.md) - Gradle build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/media/grunt.png) [Grunt build and release task](../build/grunt.md) - Grunt build and release task | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](../build/media/gulp.png) [Gulp build and release task](../build/gulp.md) - Gulp build and release task | Azure Pipelines, TFS 2015 RTM and newer |
-| ![icon](../build/media/index-sources-publish-symbols.png) [Index Sources & Publish Symbols build and release task](../build/index-sources-publish-symbols.md) - Index Sources & Publish Symbols build and release task | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](../build/media/index-sources-publish-symbols.png) [Index Sources & Publish Symbols](../build/index-sources-publish-symbols.md) - Index Sources & Publish Symbols build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/media/jenkins-queue-job.png) [Jenkins Queue Job build and release task](../build/jenkins-queue-job.md) - Queue a job on a Jenkins server build and release task | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../build/media/maven.png) [Maven build and release task](../build/maven.md) - Maven build and release task | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../build/media/msbuild.png) [MSBuild build and release task](../build/msbuild.md) - MSBuild build and release task | Azure Pipelines, TFS 2015 RTM and newer |
@@ -41,6 +41,7 @@ ms.topic: include
 | ![icon](../utility/media/azure-policy.png) [Azure Policy task](../utility/azure-policy.md) - Security and compliance assessment with Azure policies | Azure Pipelines, Azure DevOps Server 2019 |
 | ![icon](../utility/media/bash.png) [Bash task](../utility/bash.md) - Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
 | ![icon](../utility/media/batch-script.png) [Batch Script task](../utility/batch-script.md) - Execute .bat or .cmd scripts when building your code | Azure Pipelines, TFS 2015 RTM and newer |
+| [Cache task](../utility/cache.md) - Improve build performance by caching files, like dependencies, between pipeline runs. | Azure Pipelines, TFS 2017 and newer |
 | ![icon](../utility/media/command-line.png) [Command Line task](../utility/command-line.md) - Execute tools from a command prompt when building code | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](../utility/media/copy-and-publish-build-artifacts.png) [Copy and Publish Build Artifacts task](../utility/copy-and-publish-build-artifacts.md) - Copy build artifacts to a staging folder and publish them | TFS 2015 RTM. Deprecated on Azure Pipelines and newer versions of TFS. |
 | ![icon](../utility/media/copy-files.png) [Copy Files task](../utility/copy-files.md) - Copy files between folders with match patterns when building code | Azure Pipelines, TFS 2015.3 and newer |
