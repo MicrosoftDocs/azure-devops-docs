@@ -48,9 +48,7 @@ Select [State], [Title]
 
 | Part | Usage |
 | ----- |  -----  |
-| `Select` | Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods. <br/>
-> [!WARNING]  
-> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations. |
+| `Select` | Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods. |
 | `From WorkItems` | Indicates whether you want the query to find work items or links between work items. <br/>
 - Use `From WorkItems` to return work items. <br/>
 - Use `From WorkItemLinks` to return links between work items. For more information, see [Queries for links between work items](#linked-work-items). |
@@ -58,11 +56,12 @@ Select [State], [Title]
 | `Order By` | (Optional) Specifies the sort order of the work items returned. You can specify Ascending (Asc) or Descending (Desc) for one or more fields. For example: <br/>
 `Order By [State] Asc, [Changed Date] Desc` |
 | `AsOf` | Specifies a historical query by indicating a date or point in time at which the filter is to be applied. For example, this query returns all user stories that existed on June 15, 2019.<br/> 
-`AsOf '6/15/2019` <br/> 
-<br/>
-> [!NOTE] 
-> You can’t create `AsOf` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an AsOf clause, and then load that in Visual Studio, the AsOf clause will be ignored.
- |
+`AsOf '6/15/2019` <br/> |
+
+
+> [!WARNING]  
+> You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+
 
 ## Where clause
 
@@ -81,8 +80,6 @@ You can control the order in which logical operators are evaluated if you use pa
 
 <!---
 The following table describes the syntax of the Where clause:
-
-
 
 Syntax
 
@@ -132,6 +129,7 @@ The name of another field. For example, you can use [Assigned to] = [Changed by]
 
 
 ## Historical queries (ASOF) 
+
 You can use an `ASOF` clause in a query to filter for work items that satisfy the specified condition on a specific date at a specific time.
 
 For example, suppose a work item was classified under an iteration path of MyProject\ProjArea and assigned to 'Mark Hanson' on 3/17/16. However, the work item was recently assigned to 'Roger Harui' and moved to a new iteration path of Release. The following example query will return this work item because the query is based on the state of work items as of a past date and time. 
@@ -147,7 +145,7 @@ SELECT [System.Title]
     ASOF '3/16/16 12:30'
 ```
 
-## Sorting results (ORDER BY) 
+## Sort results (ORDER BY) 
 
 You can use the `ORDER BY` clause to sort the results of a query by one or more fields in ascending or descending order. 
 
@@ -162,6 +160,44 @@ SELECT [System.Title]
     WHERE [System.State] =  'Active' and [System.AssignedTo] =  'joselugo' 
     ORDER BY [Microsoft.VSTS.Common.Priority] asc, [System.CreatedDate] desc
 ```
+
+
+
+<a id="linked-work-items" />
+
+## Query for links between work items
+
+You can also use queries to find links between work items. A condition in the `Where` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
+
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+SELECT [System.Id]
+FROM WorkItemLinks
+WHERE ([Source].[System.WorkItemType] = 'User Story')
+  And ([System.Links.LinkType] = 'Child')
+  And ([Target].[System.State] = 'Active')
+mode(MustContain)
+```
+
+The following table summarizes the differences between work item queries and queries for links between work items. 
+
+| &nbsp;&nbsp;&nbsp; | Work items | Links between work items |  
+|-----|----------|-----------------------------|  
+| **From clause** | `From WorkItems` | `From WorkItemLinks` |  
+| **Where clause** | `[FieldName] = Value` | One of the following:<br/>
+`[Source].[FieldName] = Value` <br/>
+`[Target].[FieldName] = Value`<br/>
+`[System.Links.LinkType] = 'LinkName'` |  
+| **Mode** |    | One of the following:<br/>
+`mode(MustContain)` <br/>
+(Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. <br/>
+`mode(MayContain)`<br/>
+Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.<br/>
+`mode(DoesNotContain)`<br/> 
+Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.|  
+| **Returns** | [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) | [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) | 
+
 
 
 ## Example queries 
@@ -645,54 +681,6 @@ The context parameter contains key-value pairs for macros. For example, if the c
 
 
 
-<a id="linked-work-items" />
-
-## Query for links between work items.
-
-You can also use queries to find links between work items. A condition in the `Where` clause may apply to the links or to any work item that is the source or the target of a link. For example, the following query returns the links between user stories and their active child nodes.
-
-
-> [!div class="tabbedCodeSnippets"]
-```WIQL
-SELECT [System.Id]
-FROM WorkItemLinks
-WHERE ([Source].[System.WorkItemType] = 'User Story')
-  And ([System.Links.LinkType] = 'Child')
-  And ([Target].[System.State] = 'Active')
-mode(MustContain)
-```
-
-The following table summarizes the differences between work item queries and queries for links between work items. 
-
-|  | Work items| Links between work items |  
-|-----|----------|-----------------------------|  
-|**From clause** | `From WorkItems` | `From WorkItemLinks` | 
-|**Where clause** | `[FieldName] = Value` | One of the following:<br/>
-`[Source].[FieldName] = Value` <br/>
-`[Target].[FieldName] = Value`<br/>
-`[System.Links.LinkType] = 'LinkName'` | 
-|**Mode** |    | One of the following:<br/>
-`mode(MustContain)` <br/>
-(Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. <br/>
-`mode(MayContain)`<br/>
-Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.<br/>
-`mode(DoesNotContain)`<br/> 
-Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.| 
-|**Returns** | [`WorkItemQueryResult`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemqueryresult) | [`WorkItemLink`](/rest/api/azure/devops/wit/wiql/query%20by%20wiql#workitemlink) | 
-
-
-<!---
-## Query for links between work items
-
-You can also use queries to find links between work items. A condition in the Where clause may apply to the links or to any work item that is the source or the target of a link. 
-
-The following table summarizes the differences between these types of queries and queries only for work items:
-
-
-https://msdn.microsoft.com/library/bb130306.aspx
-
--->
-
 ## Related articles 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
@@ -702,4 +690,16 @@ https://msdn.microsoft.com/library/bb130306.aspx
 ### Limits on WIQL length  
 
 For queries made against Azure Boards, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+
+
+<!---
+
+> [!NOTE] 
+> You can’t create `AsOf` queries in the query builder in Visual Studio. If you create a query file (.wiq) that includes an AsOf clause, and then load that in Visual Studio, the AsOf clause will be ignored.
+
+## Query for links between work items
+
+https://msdn.microsoft.com/library/bb130306.aspx
+
+-->
 
