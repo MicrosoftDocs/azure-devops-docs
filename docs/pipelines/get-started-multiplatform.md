@@ -103,7 +103,7 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 1. Select **GitHub** as the location of your source code.
 
-   ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
+   ![Select GitHub](media/get-started-yaml/new-pipeline.png)
 
 1. For **Repository**, select **Authorize** and then **Authorize with OAuth**. 
 

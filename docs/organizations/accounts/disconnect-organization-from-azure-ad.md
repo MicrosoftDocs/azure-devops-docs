@@ -40,21 +40,21 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then select **Disconnect directory**.
 
-   ![Organization settings, disconnect directory](_img/_shared/select-disconnect-directory.png)
+   ![Organization settings, disconnect directory](media/_shared/select-disconnect-directory.png)
 
 4. Enter the name of your organization, and then select **Disconnect**.
 
-   ![Disconnection confirmation](_img/_shared/disconnection-confirmation.png)
+   ![Disconnection confirmation](media/_shared/disconnection-confirmation.png)
 
 5. Select **Sign out**.
 
-   ![Select Sign out](_img/_shared/sign-out-azure-devops.png)
+   ![Select Sign out](media/_shared/sign-out-azure-devops.png)
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 

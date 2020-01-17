@@ -31,13 +31,13 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom, and then select **Restore**.
 
-   ![Restore your deleted organization](_img/_shared/visual-studio-profile-page.png)
+   ![Restore your deleted organization](media/_shared/visual-studio-profile-page.png)
 
 3. In the resulting popup, select **Restore** to confirm.
 
    * If your organization URL is still available, you can restore it.
 
-      ![Confirm restoration of your organization](_img/recover-your-organization/confirm-restore-organization.png)
+      ![Confirm restoration of your organization](media/recover-your-organization/confirm-restore-organization.png)
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 

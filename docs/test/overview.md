@@ -37,7 +37,7 @@ and gathering feedback from stakeholders.
 
 * **[Stakeholder feedback](#stakeholder-feedback)**. Testing carried out by stakeholders outside the development team, such as users from marketing and sales divisions.  
 
-![Holistic approach to manual testing, types of manual testing and personas involved](_img/manual-testing/schematic-01.png)  
+![Holistic approach to manual testing, types of manual testing and personas involved](media/manual-testing/schematic-01.png)  
 &nbsp; &nbsp; **Holistic approach to manual testing, types of manual testing, and personas involved**
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 
@@ -56,8 +56,8 @@ Learn how to create tests plans and test cases, and run them using the Azure Dev
 
 | | | |
 | --- | --- | --- |
-| ![icon](_img/testplan-icon.png)<br />[Create a test plan](create-a-test-plan.md) | ![icon](_img/testcases-icon.png)<br />[Create test cases](create-test-cases.md) | ![icon](_img/runtests2-icon.png)<br />[Run manual tests](run-manual-tests.md) |
-| ![icon](_img/marketplace-icon.png)<br />[Install the extension](perform-exploratory-tests.md) | ![icon](_img/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](_img/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
+| ![icon](media/testplan-icon.png)<br />[Create a test plan](create-a-test-plan.md) | ![icon](media/testcases-icon.png)<br />[Create test cases](create-test-cases.md) | ![icon](media/runtests2-icon.png)<br />[Run manual tests](run-manual-tests.md) |
+| ![icon](media/marketplace-icon.png)<br />[Install the extension](perform-exploratory-tests.md) | ![icon](media/connectedmode-icon.png)<br />[Test in Connected mode](connected-mode-exploratory-testing.md) | ![icon](media/standalonemode-icon.png)<br />[Test in Standalone mode](standalone-mode-exploratory-testing.md) |
 | | | |
 
 ## Videos
@@ -78,7 +78,7 @@ rich capabilities to simplify maximizing quality within their teams.
 In Azure DevOps, you need just [Basic access](../organizations/billing/buy-basic-access-add-users.md)
 to use these features. See more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
-![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
+![Managing manual tests from the Kanban board](media/manual-testing/kanban-board-01.png)
 
 ## Manual testing in Test Manager
 
@@ -97,7 +97,7 @@ Create static suites, requirement-based suites, or query-based suites.
 Export and share the test plans and test suites with your team.
 See more at [Create test plans](create-a-test-plan.md)
 
-![Creating manual test plans](_img/manual-testing/create-test-plans-01.png)
+![Creating manual test plans](media/manual-testing/create-test-plans-01.png)
 
 ### Test authoring
 
@@ -106,7 +106,7 @@ test cases to a test suite. Assign single or multiple testers to
 execute the tests. View test results and references to a test case
 across test suites. See more at [Create test cases](create-test-cases.md).
 
-![Creating manual test cases](_img/manual-testing/create-test-cases-01.png)
+![Creating manual test cases](media/manual-testing/create-test-cases-01.png)
 
 ### Testing applications
 
@@ -115,7 +115,7 @@ test runners to run tests for your web and desktop applications. Mark test steps
 diagnostic data such as system information, image action logs, screen recordings, and screen captures as you test. Bugs filed during the tests automatically include all the captured diagnostic data
 to help your developers reproduce the issues. See more at [Run tests for web apps](run-manual-tests.md#run-web) and [Run tests for desktop apps](run-manual-tests.md#run-desktop).
 
-![Testing web applications](_img/manual-testing/test-web-app-01.png)
+![Testing web applications](media/manual-testing/test-web-app-01.png)
 
 ## Test tracking
 
@@ -125,7 +125,7 @@ easily analyze these results. Choose a retention policy to control how
 long your manual testing results are retained.
 See more at [Track test status](track-test-status.md).
 
-![Test status tracking](_img/manual-testing/track-test-status-01.png)
+![Test status tracking](media/manual-testing/track-test-status-01.png)
 
 <a name="user-acceptance"></a>
 
@@ -140,7 +140,7 @@ execute these tests using test artifacts provided by the engineering team.
 Easily monitor UAT progress and results using lightweight charts.
 See more at [User acceptance testing](user-acceptance-testing.md).
 
-![Assigning testers to run all tests](_img/manual-testing/assign-testers-01.png)
+![Assigning testers to run all tests](media/manual-testing/assign-testers-01.png)
 
 <a name="exploratory-testing"></a>
 
@@ -157,11 +157,11 @@ anytime and anywhere, and is simple enough for everyone in the team to use.
 It helps to improve productivity by allowing you to spend more time
 finding issues, and less time filing them.
 
-![Exploratory testing your web apps](_img/manual-testing/exploratory-testing-01.png)
+![Exploratory testing your web apps](media/manual-testing/exploratory-testing-01.png)
 
 Using the extension is a simple, three step process:
 
-![Schematic showing process steps Capture, Create, Collaborate](_img/perform-exploratory-tests/getstarted-05.png)
+![Schematic showing process steps Capture, Create, Collaborate](media/perform-exploratory-tests/getstarted-05.png)
  
 * **Capture your findings** quickly and easily using the tools in the extension. 
   Capture notes, screenshots with annotations, and screen recordings 
@@ -204,7 +204,7 @@ data and filing bugs and tasks directly.
 See more at [Request stakeholder feedback](request-stakeholder-feedback.md) 
 and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
-![Requesting and providing stakeholder feedback](_img/manual-testing/stakeholder-feedback-01.png)
+![Requesting and providing stakeholder feedback](media/manual-testing/stakeholder-feedback-01.png)
 
 ## Key benefits
 

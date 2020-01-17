@@ -19,7 +19,7 @@ You can customize your project to support specific processes and practices that 
 
  This illustration shows that you can create or customize eight types of objects. For projects, you can customize categories, work item types, and process configuration. For project collections, you can customize global lists, link types, and work item fields. You can customize global workflow for a project or for a project collection. For a description of these objects and other customization options, see [Agile glossary](../../boards/work-items/agile-glossary.md) and [Customize your work tracking experience](../customize-work.md).  
 
- ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
+ ![Work Item Tracking Objects](media/pnt_wit_objects.png "PNT_WIT_Objects")  
 
 By using the index of elements in this topic, you can look up the syntax structure and find examples of how to use each element of the schema type definition for work item tracking. Elements are organized alphabetically and by the following four major groups:  
 

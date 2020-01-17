@@ -26,7 +26,7 @@ You can query for data about how thoroughly source code was covered by the tests
 
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
- ![Build Coverage Fact Table](_img/teamproj_factbuildcoverage.png "TeamProj_FactBuildCoverage")  
+ ![Build Coverage Fact Table](media/teamproj_factbuildcoverage.png "TeamProj_FactBuildCoverage")  
   
  FactBuildCoverage is associated with the following dimension tables:  
   

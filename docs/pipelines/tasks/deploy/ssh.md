@@ -57,7 +57,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 * [Copy Files Over SSH](copy-files-over-ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 

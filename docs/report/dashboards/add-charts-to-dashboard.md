@@ -86,19 +86,19 @@ To learn more, see [Default permissions and access for charts and dashboards](ch
 
 You can add each of the in-context Analytics reports to a dashboard. 
 
-1. Simply open the report, choose the ![ ](_img/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. Simply open the report, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/add-analytics-chart.png)  
+	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart.png)  
 
 	To open a report, see [Cumulate Flow Diagram](cumulative-flow.md#view-the-cfd-in-context-report), [Velocity](team-velocity.md#view-the-velocity-in-context-report), or [Sprint burndown](configure-sprint-burndown.md#view-context-report).
 
 1. Choose the dashboard and choose **OK**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Analytics in-context report, Copy to dashboard](_img/add-charts/select-a-dashboard-dialogue.png)  
+	> ![Analytics in-context report, Copy to dashboard](media/add-charts/select-a-dashboard-dialogue.png)  
 
-1. (Optional) Open the dashboard and choose the ![ ](_img/icons/actions-icon.png) actions icon for the widget to configure the size or change other report properties. 
+1. (Optional) Open the dashboard and choose the ![ ](media/icons/actions-icon.png) actions icon for the widget to configure the size or change other report properties. 
 
 ::: moniker-end
 
@@ -127,13 +127,13 @@ Each time a build is run, it logs information about the build, including the run
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) and then open **Pipelines>Builds** to add a build history chart to a team dashboard. (Requires TFS 2015.1 or later version).  
 
-	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
+	![Add a build summary chart to a dashboard](media/add-chart-build-summary.png)  
 
 	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
-	![Add a test plan chart to a dashboard](_img/add-a-dashboard-build-summary.png)  
+	![Add a test plan chart to a dashboard](media/add-a-dashboard-build-summary.png)  
 
 	Hover over a bar to view build information and run time. Choose a bar to go to the build summary page.   
 
@@ -155,11 +155,11 @@ Each time a release is deployed, it logs information about the release to each o
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Add a Release pipeline chart to a dashboard, new nav](_img/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
+	> ![Add a Release pipeline chart to a dashboard, new nav](media/add-charts/add-release-pipeline-to-dashboard-new-nav.png)   
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](_img/add-cd-release-definition-tile.png)  
+	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -171,11 +171,11 @@ Each time a release is deployed, it logs information about the release to each o
 
 1. Open **Pipelines>Releases** to add a release definition chart to a team dashboard.   
 
-    ![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
+    ![Add a Release pipeline chart to a dashboard](media/add-cd-release-definition.png)  
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release pipeline tile](_img/add-cd-release-definition-tile.png)  
+	![Release pipeline tile](media/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -193,7 +193,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 
 1. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
-	![Add a test plan chart to a dashboard](_img/add-a-chart-test-plan.png)  
+	![Add a test plan chart to a dashboard](media/add-a-chart-test-plan.png)  
    ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
@@ -220,11 +220,11 @@ Requires TFS 2017.2 or later version.
 
 2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and choose the bar chart for either Test failures or Test duration.    
 
-	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
+	![Add a test plan chart to a dashboard](media/add-chart-test-quality.png)  
 
-3. Open the ![ ](_img/icons/actions-icon.png) actions menu and choose the dashboard to add the chart to.  
+3. Open the ![ ](media/icons/actions-icon.png) actions menu and choose the dashboard to add the chart to.  
 
-	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
+	![Open Actions menu and select dashboard](media/add-chart-test-failures.png)  
 
 	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
@@ -248,7 +248,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 4. From the charts Actions menu, choose the team dashboard.  
 
-	![Chart context menu, add to a dashboard](_img/pin-chart-to-a-dashboard.png)  
+	![Chart context menu, add to a dashboard](media/pin-chart-to-a-dashboard.png)  
 
 	You can only add charts associated with shared queries. Charts associated with queries under My Queries folder won't display the add to dashboard option.  
 ::: moniker-end
@@ -269,7 +269,7 @@ Requires TFS 2015.2 or later version.
 
 ::: moniker range="> tfs-2015 <= tfs-2018"
 <!-- TODO: Update image - I don't think this is supported for latest version-->
-<img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/media/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end
 
 

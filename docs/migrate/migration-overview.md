@@ -18,28 +18,22 @@ ms.date: 12/16/2019
 
 > [!NOTE]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
->
-> Customers looking to upgrade and use the data migration tool for Azure DevOps to migrate to Azure DevOps Server, should note that import support for Azure DevOps Server 2019.1.1 will be delayed. Normally it can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online. However, due to the holiday season, this will be delayed. We’re targeting Monday, January 6th to bring 2019.1.1 migration support online. In the meantime, we’ll keep 2019.0.1 support going. It will end on Monday, January 6th to coincide with 2019.1.1 support coming online.  
->
-> If you upgrade to 2019.1.1 before January 6th and want to migrate, you will either need to wait or downgrade to a supported version.
+
+
 
 ## Data migration tool for Azure DevOps
 
-The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 
 ## Supported Azure DevOps Server versions for import
 
 > [!IMPORTANT] 
 > It can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online for that version. It's important to take this into consideration when choosing to upgrade shortly after a new RTW Azure DevOps Server release.
->
-> Customers looking to upgrade and use the data migration tool for Azure DevOps to migrate to Azure DevOps Server, should note that import support for Azure DevOps Server 2019.1.1 will be delayed. Normally it can take up to 2-3 weeks after a new RTW version of Azure DevOps Server is released for import support to come online. However, due to the holiday season, this will be delayed. We’re targeting Monday, January 6th to bring 2019.1.1 migration support online. In the meantime, we’ll keep 2019.0.1 support going. It will end on Monday, January 6th to coincide with 2019.1.1 support coming online.  
->
-> If you upgrade to 2019.1.1 before January 6th and want to migrate, you will either need to wait or downgrade to a supported version.
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
-* Azure DevOps Server 2019.0.1
+* Azure DevOps Server 2019.1.1
 * Azure DevOps Server 2019 Update 1
 
 > [!NOTE]
@@ -61,11 +55,11 @@ The following features can be included with your import, but are currently in a 
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
-For a list of items not included with an import please see the [migration guide](https://aka.ms/AzureDevOpsImport).
+For a list of items not included with an import, see the [migration guide and tool](https://aka.ms/AzureDevOpsImport).
 
 ## Data migration tool for Azure DevOps resources
 
-In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
+In general you should use the [migration guide and tool](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the following articles. These articles offer deeper technical knowledge on various import topics. 
 
 ### Import process 
 

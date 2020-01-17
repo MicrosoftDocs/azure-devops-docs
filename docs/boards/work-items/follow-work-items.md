@@ -28,7 +28,7 @@ On the other hand, if you want to subscribe to receive notifications automatical
 > [!NOTE]  
 > Notification subscriptions allow you to personalize the notifications you receive automatically based on additional criteria you specify for [yourself](../../notifications/howto-manage-personal-notifications.md), a team, or a project. For example, you can create a subscription and add field criteria to receive changes based on one or more of the following templates. 
 >
-> ![Work item notification templates](_img/follow-work/work-item-notifications.png) 
+> ![Work item notification templates](media/follow-work/work-item-notifications.png) 
 
 
 This article shows you how to:
@@ -68,17 +68,17 @@ follow-work-with-notifications
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
 ::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
+> ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
 
-If you want to specify conditions on when you'll get notified of changes, choose the ![ ](../_img/icons/gear_icon.png) gear icon and choose from the options provided. 
+If you want to specify conditions on when you'll get notified of changes, choose the ![ ](../media/icons/gear_icon.png) gear icon and choose from the options provided. 
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Notification settings dialog for follow](_img/follow-work/notification-settings-for-follow.png) 
+> ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
 
 By default, you are **Subscribed** to receive a notification when any change is made to the work item. Choose **Not Subscribed** to receive notification only when you are @mentioned. Or choose **Custom** to receive notifications when one of the checked fields changes, **State**, **Assigned To**, or **Iteration Path**. 
 
@@ -87,7 +87,7 @@ By default, you are **Subscribed** to receive a notification when any change is 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](_img/follow-work/follow-work-item.png) 
+> ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
 
 ::: moniker-end
 
@@ -102,21 +102,21 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
-To stop following changes, choose the ![ ](../_img/icons/following-icon.png) following icon.
+To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
  
 <a id="follow-pr"></a>
 
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the ![ ](../_img/icons/actions-icon.png) actions icon for the pull request, and select the ![ ](../_img/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the ![ ](../media/icons/actions-icon.png) actions icon for the pull request, and select the ![ ](../media/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
-<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
+<img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, open the PR context menu and choose the ![ ](../_img/icons/following-icon.png) Following icon. 
+To stop following changes, open the PR context menu and choose the ![ ](../media/icons/following-icon.png) Following icon. 
 
 ## Manage work items that you're following  
 
@@ -127,7 +127,7 @@ You can review and manage all the work items you've selected to follow.
 Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/following-work-items-vert.png)   
+> ![Boards>Queries>All>Followed work items, new nav](media/follow-work/following-work-items-vert.png)   
 
 From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
@@ -141,7 +141,7 @@ From this view, you can view all items you're following across all projects. Als
 You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/open-work-items-vert.png)   
+> ![Boards>Queries>All>Followed work items, new nav](media/follow-work/open-work-items-vert.png)   
 
 ::: moniker-end   
 
@@ -149,7 +149,7 @@ You can also view and manage work that you're following from **Boards>Work Items
 
 Open **Work>Queries** and choose **Followed work items**.  
 
-<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
+<img src="media/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
 
 From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view

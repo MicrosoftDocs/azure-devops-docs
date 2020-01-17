@@ -33,7 +33,7 @@ You can use the Requirements Excel report to track the rate at which the team is
 
  You can use the Requirements report to understand how well the team is completing the requirements that it defined for an iteration or release. This report is based on a PivotChart report that shows the last four weeks of data that was captured for requirements and that is stored in the data warehouse.  
   
- ![Requirements Progress report](_img/procguid_reqprogress.png "ProcGuid_ReqProgress")  
+ ![Requirements Progress report](media/procguid_reqprogress.png "ProcGuid_ReqProgress")  
   
 ### Required activities for tracking tequirements  
 

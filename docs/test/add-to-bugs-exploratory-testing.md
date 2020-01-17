@@ -28,7 +28,7 @@ your findings to an existing bug.
    and displays a link to the results. Choose this link to see the results that have 
    similar title keywords.
 
-   ![The link to view similar bugs](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
+   ![The link to view similar bugs](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-01.png)
  
    The form displays **0 Similar** if it does not find any matching bugs.
    In this case, or if you don't see a "similar" link, you can create a
@@ -39,20 +39,20 @@ your findings to an existing bug.
 
    - Select it in the list and choose **Edit**.
  
-     ![Editing a similar bug](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-02.png)
+     ![Editing a similar bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-02.png)
 
    - The extension appends all your screenshots, notes, and videos to 
      the existing bug. 
 
    - Save the updated bug.
 
-     ![Saving the updated bug](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
+     ![Saving the updated bug](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-03.png)
 
 1. If, instead, you decide not to update an existing bug, ignore the "similar" link and:
 
    - Choose the **New bug** link to return to the bug details form.
 
-     ![Returning to the bug details form](_img/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
+     ![Returning to the bug details form](media/add-to-bugs-exploratory-testing/add-to-existing-bugs-04.png)
 
    - Enter the details for the new bug and save it
      as described in [this topic](connected-mode-exploratory-testing.md).<p />

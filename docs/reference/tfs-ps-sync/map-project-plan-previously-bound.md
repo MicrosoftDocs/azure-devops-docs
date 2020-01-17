@@ -179,7 +179,7 @@ ms.date: 01/12/2017
   
      A list of status updates that require your approval should appear, similar to the following illustration:  
   
-     ![Approval Center with Status Update](_img/tfs-ps_pwa_approvalcenter.png "TFS-PS_PWA_ApprovalCenter")  
+     ![Approval Center with Status Update](media/tfs-ps_pwa_approvalcenter.png "TFS-PS_PWA_ApprovalCenter")  
   
 2.  For each work item that you want to accept into your plan, select the check box in the column next to the **Approval Type** column.  
   

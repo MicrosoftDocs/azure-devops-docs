@@ -21,7 +21,7 @@ ms.date: 08/07/2019
 This article shows you how to display the Stories CFD for a specified team. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](_img/odatapowerbi-cfd-report.png)
+> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -108,7 +108,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](_img/odatapowerbi-cfd-fields.png)
+> ![Sample -Release Burndown - Fields](media/odatapowerbi-cfd-fields.png)
 
 For a simple report, do the following steps:
 
@@ -122,7 +122,7 @@ For a simple report, do the following steps:
 The example report:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](_img/odatapowerbi-cfd-report.png)
+> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
 ### Sorting columns in correct order
 
@@ -175,7 +175,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 The report will now be sorted by correct column order:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-cfd-report2.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-cfd-report2.png)
 
 > [!NOTE]
 > If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report. 

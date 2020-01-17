@@ -88,15 +88,15 @@ tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administ
 2. Locate your existing branch. If you don't see it, you may need to look on the **All** tab.
 3. Choose its context menu (the `...` button) and choose **New branch**.
 
-   ![Create branch menu](_img/require-branch-folders/create-new-branch-menu.png)
+   ![Create branch menu](media/require-branch-folders/create-new-branch-menu.png)
 
 4. Type the new name of the branch, for example *users/frank/readme-fix*. Choose **Create branch**.
 
-   ![Create new branch](_img/require-branch-folders/create-new-branch.png)
+   ![Create new branch](media/require-branch-folders/create-new-branch.png)
 
 5. Choose the red trashcan icon next to the old branch name to delete it.
 
-   ![Delete old branch](_img/require-branch-folders/delete-old-branch.png)
+   ![Delete old branch](media/require-branch-folders/delete-old-branch.png)
 
 
 >[!NOTE] 

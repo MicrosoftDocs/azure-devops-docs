@@ -28,7 +28,7 @@ Drag a release action from the toolbox to add it to your deployment
 sequence. Use any of the predefined release actions listed in the 
 toolbox, or create your own **[custom release actions](#custom)**.
 
-![Configure Apps tab, Release Templates tab ](_img/release-actions-01.png)
+![Configure Apps tab, Release Templates tab ](media/release-actions-01.png)
 
 After adding a release action to the sequence, you can edit the 
 configuration variables as necessary. For details about predefined 
@@ -49,7 +49,7 @@ create a custom release action. You can't edit an existing release action.
 
 1. Copy the action you want to edit, or add a new action.
 
-   ![Copy a release action](_img/release-actions-02.png)
+   ![Copy a release action](media/release-actions-02.png)
 
 1. Select the tool that you want to use based on your requirements for 
    the action. Choose **New** to add your own custom tool if the 
@@ -77,7 +77,7 @@ them. Open the action from the **Inventory** page and choose the
 
 Open the **Inactive** list, open the action, and choose **Activate**.
 
-![Inactive list on Inventory page](_img/release-actions-03.png)
+![Inactive list on Inventory page](media/release-actions-03.png)
 
 ## Q & A
 

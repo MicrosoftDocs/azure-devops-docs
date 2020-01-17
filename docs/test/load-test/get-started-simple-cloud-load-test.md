@@ -36,13 +36,13 @@ You can run a load test on your web app or site directly using Azure DevOps.
 2. Go to [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
    from the **+ New** menu.
 
-   ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
+   ![Start a new load test from the New menu](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
 
 3. Type a name for the load test, then enter the URL you want to test
    in the center column and in the details pane on the right. For a simple
    load test, leave the **HTTP method** set to **GET**.
 
-   ![Add load test information](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO.png)
+   ![Add load test information](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO.png)
 
    You can add multiple URLs and select the method for each one, such as 
    **POST** or **PUT**. You can also add headers and querystring values
@@ -55,18 +55,18 @@ You can run a load test on your web app or site directly using Azure DevOps.
    more. To run the test near to your users, select a **Load location**.
    Then choose **Save**. 
 
-   ![Specify settings, then save the test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-settings-tab.png)
+   ![Specify settings, then save the test](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-settings-tab.png)
  
 5. When you have set up all the URLs and parameters for your test, start it by
    choosing **Run test**.
 
-   ![Start the test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-start-test.png)
+   ![Start the test](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-start-test.png)
 
 6. As the test runs, you see live information about the progress
    of the test. You can stop the test by using the **Abort** link on the
    toolbar.
 
-   ![Live information about the running load test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-progress.png)
+   ![Live information about the running load test](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-progress.png)
 
 <a name="viewresults"></a>
 ## View the results of the load test
@@ -78,12 +78,12 @@ You can run a load test on your web app or site directly using Azure DevOps.
    time, user load, requests per second, failed requests, any errors
    that might have occurred, and test usage.
 
-   ![Load test Summary page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-summary-tab.png)
+   ![Load test Summary page results](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-summary-tab.png)
  
    The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
    If there are any transaction tests, the page will also show the five slowest of these.
-   Use the ![down arrow](_img/_shared/SimpleLoadTestVSO-sort-column.png)
+   Use the ![down arrow](media/_shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
 1. Open the **Charts** page to see a graphical representation of 
@@ -92,27 +92,27 @@ You can run a load test on your web app or site directly using Azure DevOps.
    request. Hover your mouse pointer over a chart to 
    see more details. 
 
-   ![Load test Charts page results](_img/_shared/LoadTestVSO-charts.png)
+   ![Load test Charts page results](media/_shared/LoadTestVSO-charts.png)
 
 1. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
-   ![Load test Diagnostics page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-diagnostics-tab.png)
+   ![Load test Diagnostics page results](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-diagnostics-tab.png)
 
-   You can also use the ![arrow](_img/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
+   You can also use the ![arrow](media/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
    icon in the **Errors** section of the **Summary** page to go directly to the 
    **Diagnostics** page.
 
-   ![Opening the Diagnostics page from the Summary page](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
+   ![Opening the Diagnostics page from the Summary page](media/_shared/SimpleLoadTestVSO-summary-errors-link.png)
 
 1. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.
 
-   ![Load test Logs page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-logs-tab.png)
+   ![Load test Logs page results](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-logs-tab.png)
 
 1. To run the same test again, choose **Rerun**.
 
-   ![Rerunning the same test](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-rerun-test.png)
+   ![Rerunning the same test](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-rerun-test.png)
 
 ### Key metrics
 

@@ -20,7 +20,7 @@ You can query for data about how thoroughly a particular test run covered the co
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md).  
   
- ![Fact Table for Run Coverage](_img/teamproj_factruncoverage.png "TeamProj_FactRunCoverage")  
+ ![Fact Table for Run Coverage](media/teamproj_factruncoverage.png "TeamProj_FactRunCoverage")  
   
 > [!NOTE]
 >  You cannot aggregate these coverage values to determine code coverage for a build. To determine the code coverage in a build, you must use FactBuildCoverage. For more information, see [Build Coverage tables](table-reference-build-coverage.md).  

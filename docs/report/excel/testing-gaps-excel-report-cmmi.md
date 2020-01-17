@@ -45,7 +45,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 
  The Requirement Status report indicates how many tests are passing or failing for each requirement. It provides a horizontal bar chart that shows the count of test results for each test case and test configuration combination that the team has defined for each requirement. The report presents the cumulative outcome of tests that were run for all test cases that are linked to requirements. The report displays results that are filtered by the following outcomes: **Passed** (green), **Failed** (red), **Never Run** (blue), or **Blocked** (yellow).  
   
- ![Requirement Test Status Excel report](_img/procg_cmmi_testgaps.png "ProcG_CMMI_TestGaps")  
+ ![Requirement Test Status Excel report](media/procg_cmmi_testgaps.png "ProcG_CMMI_TestGaps")  
   
  The Requirement Status by Config report presents the test results for each requirement, grouped by test configuration.  
   

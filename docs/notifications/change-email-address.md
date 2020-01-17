@@ -28,24 +28,24 @@ You can change your preferred email address for notifications from your organiza
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, open user settings ![user-settings-gear.png](../_img/icons/user-settings-gear.png), and then select **Profile**.
+1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](../_shared/_img/open-user-settings-profile-preview.png)
+   ![Open Azure DevOps profile](../_shared/media/open-user-settings-profile-preview.png)
 
 2. Change your contact information, and then select **Save**.
 
-   ![Edit the About page](_img/edit-contact-info-preview.png)
+   ![Edit the About page](media/edit-contact-info-preview.png)
 
 
 #### [Current page](#tab/current-page) 
 
 1. To change your user preferences, open your profile menu, and then select **User settings**.
 
-   ![Open profile user settings](_img/open-profile-newnav.png)
+   ![Open profile user settings](media/open-profile-newnav.png)
 
 2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
-   ![Edit the About page](../organizations/settings/_img/edit-about-page.png)
+   ![Edit the About page](../organizations/settings/media/edit-about-page.png)
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ You can change your preferred email address for notifications from your organiza
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 
-   ![Azure DevOps, My Profile link on Organization menu](_img/open-profile-newnav.png)
+   ![Azure DevOps, My Profile link on Organization menu](media/open-profile-newnav.png)
 
 2. From your profile and information page, select **Edit profile**.
 
@@ -67,7 +67,7 @@ You can change your preferred email address for notifications from your organiza
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 
-   ![Azure DevOps, My Profile link on Organization menu](_img/open-profile-team-services.png)
+   ![Azure DevOps, My Profile link on Organization menu](media/open-profile-team-services.png)
 
 2. From your profile and information page, select **Edit profile**.
 

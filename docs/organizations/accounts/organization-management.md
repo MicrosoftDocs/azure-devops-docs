@@ -97,7 +97,7 @@ If you don't use Azure Active Directory (Azure AD), as described in the next sec
 - Add users to one or more teams from the **Project>Summary** page or to a specific team from the **Project Settings>Teams>Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Project Overview page, Invite new users dialog box](_img/org-manage/invite-members-dialog.png)
+	> ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
   
 	Unless users are granted an access level directly, or are granted an access level through a group rule, they’ll be assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization Settings>Users** page. 
 

@@ -56,7 +56,7 @@ As of version 0.150 of the task, version spec will also accept `pypy2` or `pypy3
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
-![output variable](_img/use_python_version_output_variable.png)
+![output variable](media/use_python_version_output_variable.png)
 
 ## Remarks
 

@@ -76,7 +76,7 @@ To share an extension so it can be installed:
 1. Select the ellipses of an extension item to bring up the menu
 2. Select the **Share** button
 
-   ![Share Extensions](../_img/share-extension.png)
+   ![Share Extensions](../media/share-extension.png)
 
 3. Specify the name of the organization to make this extension visible to
    - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
@@ -90,11 +90,11 @@ To install an extension that has been shared:
 
 1. From your organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 
-   ![Manage Extensions](_img/manage-extensions.png)
+   ![Manage Extensions](media/manage-extensions.png)
 
 2. Find the extension under the **Shared with this organization** category:
 
-   ![Shared with me](_img/extensions-tab-shared.png)
+   ![Shared with me](media/extensions-tab-shared.png)
 
 3. Select the card to open the item in the Marketplace
 4. From the item's details page,select the **Install** button

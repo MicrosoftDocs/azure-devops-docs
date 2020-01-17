@@ -32,21 +32,21 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**.
 
-    ![Extension settings hub](../_img/manage-permissions/extensions-settings.png)
+    ![Extension settings hub](../media/manage-permissions/extensions-settings.png)
 
 4. Select **Security** in the upper right of the Extension Security page:
 
-    ![Extension security button](../_img/manage-permissions/extensions-security-button.png)
+    ![Extension security button](../media/manage-permissions/extensions-security-button.png)
 
 5. Add users or update permission settings:
 
-    ![Extension security](../_img/manage-permissions/extensions-security.png)
+    ![Extension security](../media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
 
@@ -54,17 +54,17 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
 
-    ![Open Admin settings](../../_shared/_img/settings/open-admin-settings-server.png)
+    ![Open Admin settings](../../_shared/media/settings/open-admin-settings-server.png)
 
 3. Select **Extensions**, and then select **Security**.
 
-    ![Extension settings hub](../_shared/_img/select-extensions-and-security.png)
+    ![Extension settings hub](../_shared/media/select-extensions-and-security.png)
 
 4. Add users or update permission settings:
 
-    ![Extension security](../_img/manage-permissions/extensions-security.png)
+    ![Extension security](../media/manage-permissions/extensions-security.png)
 
 ::: moniker-end
 

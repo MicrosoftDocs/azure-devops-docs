@@ -46,7 +46,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 2. Choose **Project settings**, and then **Permissions**. 
 
-	![...](_img/permissions/project-settings-permissions.png)
+	![...](media/permissions/project-settings-permissions.png)
 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
@@ -56,7 +56,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group](_img/add-users/open-contributors-groups-s154-new.png) 
+	> ![Security page, Contributors group](media/add-users/open-contributors-groups-s154-new.png) 
 
 4. Next, choose the **Members** tab.
 
@@ -68,11 +68,11 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 5. Choose **Add** to add a user or a user group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Members page, Add button](_img/add-users/add-users-to-contributors-s154.png) 
+	> ![Security page, Contributors group, Members page, Add button](media/add-users/add-users-to-contributors-s154.png) 
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the match(es) that meet your requirements.
 
-	![Add users and group dialog](_img/add-users/invite-members-contributors-s154.png)  
+	![Add users and group dialog](media/add-users/invite-members-contributors-s154.png)  
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
@@ -94,7 +94,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 	*To see the full image, click to expand*.
 
-	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
@@ -106,18 +106,18 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
    Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
+	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
 
    By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
 
     > [!TIP]
     > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
 
-5. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
@@ -149,7 +149,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 	*To see the full image, click to expand*.
 
-	[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+	[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 3. Under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
@@ -161,18 +161,18 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
    Here we choose the **Contributors** group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
+	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
 
    By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
 
     > [!TIP]
     > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
 
-5. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. choose the match(es) that meet your requirements.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
@@ -192,9 +192,9 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-2. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
 
-   ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+   ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)  
 
 3. Choose **Security** and under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
@@ -206,18 +206,18 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
    Here we choose the Contributors group.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Security page, Contributors group, Membership page](_img/add-users/add-members-to-contributors-group.png)  
+	> ![Security page, Contributors group, Membership page](media/add-users/add-members-to-contributors-group.png)  
 
     > [!TIP]
     > Managing users is much easier [using groups](../../organizations/security/about-permissions.md), not individual users.
 
    By default, the default team group and any other teams you add to the project, are included as members of the **Contributors** group. Add a new user as a member of a team instead, and the user automatically inherits Contributor permissions. 
 
-5. Choose ![gear icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+5. Choose ![gear icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 6. Enter the name of the user account into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
    > [!NOTE]
    > The first time you add a user or group to Azure DevOps,
@@ -247,36 +247,36 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/_img/team-defaults/open-team-profile-choose-team-settings.png)  
+   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
 
 2. If you need to switch the team context, use the team selector within the breadcrumbs.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/_img/team-defaults/select-team-context.png) 
+	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add](_img/add-users/team-profile-choose-add-preview.png)   
+	> ![Team Profile, choose Add](media/add-users/team-profile-choose-add-preview.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](_img/add-users/team-page-remove-team-member-preview.png)   
+	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-preview.png)   
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
@@ -287,36 +287,36 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/_img/team-defaults/open-team-profile-choose-team-settings.png)  
+   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
 
 2. If you need to switch the team context, use the team selector within the breadcrumbs.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/_img/team-defaults/select-team-context.png) 
+	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add](_img/add-users/team-profile-choose-add.png)   
+	> ![Team Profile, choose Add](media/add-users/team-profile-choose-add.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](_img/add-users/team-page-remove-team-member-vert.png)   
+	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)   
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
@@ -409,36 +409,36 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../_img/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](../settings/_img/team-defaults/open-team-profile-choose-team-settings.png)  
+   > ![Work Backlog or Board, choose team profile icon](../settings/media/team-defaults/open-team-profile-choose-team-settings.png)  
 
 2. If you need to switch the team context, use the team selector within the breadcrumbs.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Configuration, Team breadcrumb](../settings/_img/team-defaults/select-team-context.png) 
+	> ![Team Configuration, Team breadcrumb](../settings/media/team-defaults/select-team-context.png) 
 
 3. Choose **Add**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Profile, choose Add](_img/add-users/team-profile-choose-add.png)   
+	> ![Team Profile, choose Add](media/add-users/team-profile-choose-add.png)   
 
 4. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile page, remove a team member, new nav](_img/add-users/team-page-remove-team-member-vert.png)   
+	> ![Team profile page, remove a team member, new nav](media/add-users/team-page-remove-team-member-vert.png)   
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 
@@ -451,22 +451,22 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 1. From the project admin context, open the **Overview** page, and then choose the team you want to add team members to.   
 
-	![Project Settings, Overview page, Choose team](_img/add-users/overview-page-select-team.png) 
+	![Project Settings, Overview page, Choose team](media/add-users/overview-page-select-team.png) 
 
-2. Choose the ![plus icon](../../_img/icons/add-light-icon.png)**Add** to add a user or a user group.
+2. Choose the ![plus icon](../../media/icons/add-light-icon.png)**Add** to add a user or a user group.
 
 3. Enter the sign-in addresses or display name for each user you want to add. Add them one at a time or all at the same time. You can enter several identities into the text box, separated by commas.
 
-	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)
+	![Add users and group dialog](media/project-level-permissions-add-a-user.png)
 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../_img/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
 
 4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
-	![Team profile page, remove a team member](_img/add-users/team-page-remove-team-member.png)
+	![Team profile page, remove a team member](media/add-users/team-page-remove-team-member.png)
 
    > [!NOTE]
    > To remove a team administrator as a team member, you must first remove them as an administrator. 

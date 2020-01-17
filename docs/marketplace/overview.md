@@ -28,7 +28,7 @@ In the Azure DevOps Marketplace you can do the following tasks:
 - Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
 - Purchase Visual Studio subscriptions
 
-![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
+![Extensions Marketplace](../organizations/billing/media/_shared/extensions-marketplace.png)
 
 Most extensions are available for free. 
 For information on purchasing, see the following articles:

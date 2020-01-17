@@ -37,16 +37,16 @@ When your customer gains access to the CSP-based Azure subscription, they can [s
 ### Customer steps
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing from Organization settings](../_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing from Organization settings](../media/_shared/select-billing-organization-settings.png)
 4. Select **Change billing**.
 
-   ![Change billing button](../_img/_shared/select-change-billing.png)
+   ![Change billing button](../media/_shared/select-change-billing.png)
 
 5. Select your CSP Azure subscription that you want to be billed with, and then select **Save**.
 

@@ -31,7 +31,7 @@ You can [delete the user from each organization](delete-organization-users.md) w
 
 2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your organization.
 
-   ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
+   ![Find the directory connected to your organization](media/manage-work-access/azurefindconnecteddirectory.png)
 
 3. Follow [these steps](/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 

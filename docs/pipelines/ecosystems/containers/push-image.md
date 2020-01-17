@@ -103,7 +103,7 @@ The following steps walk through the creation of Docker registry service connect
    Launch Code Editor by clicking the button in the upper-right corner of Cloud Shell:
 
    > [!div class="mx-imgBorder"]
-   > ![Badge](../_shared/_img/gcp-code-editor.png "GCP code editor")
+   > ![Badge](../_shared/media/gcp-code-editor.png "GCP code editor")
 
 8. Open the file `named azure-pipelines-publisher-oneline.json`. You'll need the content of this file in one of the following steps:
 

@@ -82,13 +82,13 @@ Follow these instructions to identify if you have Professional users, buy a mont
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Users** and filter by access level to show only Professional users.
 
-   ![Sort by Access Level - Professional](_img/_shared/sort-by-professional-access-level.png)
+   ![Sort by Access Level - Professional](media/_shared/sort-by-professional-access-level.png)
 
 4. Buy a [Visual Studio Professional monthly subscription](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms.vs-professional-monthly&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=items_2).
 5. Assign your Professional users to the subscription in the [Visual Studio subscriptions administration portal](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmanage.visualstudio.com%2FSubscribers&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=Subscribers).
@@ -177,12 +177,12 @@ The user making the UserType change must have the following:
 2. Go to the tenant that backs your Azure DevOps organization.
 3. Check the UserType. Confirm that the user is a guest.
 
-   ![Check UserType in Azure portal](_img/faq/check-user-type-in-azure-portal.png)
+   ![Check UserType in Azure portal](media/faq/check-user-type-in-azure-portal.png)
 
 4. Open an Administrative Windows PowerShell prompt.
 5. Execute `Install-Module -Name AzureAD`. The [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) downloads from the PowerShell Gallery. You may see prompts about installing NuGet and untrusted repository, as pictured below. If you run into issues, review the system requirements and information at the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) page.
 
-   ![Administrator action in Windows PowerShell](_img/faq/Administrator-action-Windows-PowerShell.png)
+   ![Administrator action in Windows PowerShell](media/faq/Administrator-action-Windows-PowerShell.png)
 
 6. Once the installation completes, execute `Connect-AzureAD`. You're prompted to sign in to the Azure AD. Be sure to use an ID that meets the criteria above.
 7. Execute `Get-AzureADuser -SearchString "<display_name>"`, where <display_name> is part of the entire display name for the user, as seen inside the Azure portal). The command returns four columns for the user found - ObjectId, DisplayName, UserPrincipalName, UserType - and the UserType should say *guest*.
