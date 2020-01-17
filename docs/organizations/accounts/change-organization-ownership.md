@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -21,7 +21,6 @@ monikerRange: 'azure-devops'
 As roles and responsibilities change, you can change the owner for your organization. In this article, learn how to update the organization owner in Azure DevOps.
 
 For organizations backed by Azure AD,  if your organization Owner and any other Project Collection Administrators have left the company, you can [transfer ownership to another user](#resolve-orphaned-organization-ownership).  
-
 
 <a name="ChangeOwner"></a>
 
@@ -56,26 +55,10 @@ Make sure the new owner has completed the following tasks:
 
    Your organization has a new owner.
 
-## Resolve orphaned organization ownership
+## Related articles
 
-### When there's an Azure DevOps Administrator
-
-Organization owner leaves the company 
-Concerned party notices that the organization is orphaned 
-Azure DevOps Administrator navigates to the orphaned organization and claims ownership. 
-A notification is sent to all Azure DevOps Administrators. 
-The Azure DevOps Administrator then transfers ownership to the appropriate user 
-
-### When there's no Azure DevOps Administrator
-
-Organization owner leaves the company 
-The AAD tenant has no assigned Azure DevOps Administrator, and escalates to his AAD Global Administrator or Privileged Role Administrator (as will be described in documentation) 
-The AAD Global Administrator/Privileged Role Administrator assigns the Azure DevOps Administrator role to the appropriate user(s). 
-The Azure DevOps Administrator navigates to the orphaned organization and claims ownership. 
-A notification is sent to all Azure DevOps Administrators. 
-The Azure DevOps Administrator then transfers ownership to the appropriate user 
-
-
- 
+- [Need help?](faq-change-organization-ownership.md)
+- [Change organization location](change-organization-location.md)
+- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
 
  
