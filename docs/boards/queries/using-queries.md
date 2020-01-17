@@ -245,7 +245,7 @@ Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query, tfs experience](media/view-run-queries/tree-query-view-tfs.png)  
+> ![Results List Showing a Tree Query](media/view-run-queries/tree-query-view-tfs.png)  
 
 ::: moniker-end  
 
