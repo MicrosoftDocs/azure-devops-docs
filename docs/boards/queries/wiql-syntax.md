@@ -46,6 +46,10 @@ Select [State], [Title]
 
 The WIQL syntax is not case sensitive.
 
+### Limits on WIQL length  
+
+The WIQL length of queries made against Azure Boards must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+
 <table>
 <tr>
 <th width="15%">Clause</th>
@@ -83,8 +87,14 @@ The WIQL syntax is not case sensitive.
 </tbody>
 </table>
 
+
+<!---
+
 > [!WARNING]  
 > You can use a WorkItem that was returned by a query to get the value of a Field, even if the query did not return the value. If you do this, another round trip to the server will occur. For more information, see Performance Considerations.
+
+-->
+
 
 <a id="where-clause" />
 
@@ -625,7 +635,6 @@ The following example statements show specific qualifying clauses.
 <tr>
 <td><code>AND</code></td>
 <td>
-
 <pre><code>SELECT [System.Id], [System.Title]
    FROM WorkItems
    WHERE [System.TeamProject] = @project
@@ -633,7 +642,6 @@ The following example statements show specific qualifying clauses.
 </code></pre>
 </td>
 </tr>
-
 <tr>
 <td><code>OR</code></td>
 <td>
@@ -645,7 +653,6 @@ The following example statements show specific qualifying clauses.
 </code></pre>
 </td>
 </tr>
-
 <tr>
 <td><code>NOT</code></td>
 <td>
@@ -657,7 +664,6 @@ The following example statements show specific qualifying clauses.
 </code></pre>
 </td>
 </tr>
-
 <tr>
 <td><code>EVER</code></td>
 <td>
@@ -736,7 +742,7 @@ WHERE [System.Description] contains 'WIQL'
 
 ### Area and Iteration (TreePath) 
 
-You can use the under operator for the Area and Iteration Path fields. under evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
+You can use the `UNDER` operator for the Area and Iteration Path fields. under evaluates whether a value is within the sub-tree of a specific classification node. For instance, the expression below would evaluate to true if the Area Path were 'MyProject\Server\Administration', 'MyProject\Server\Administration\Feature 1', 'MyProject\Server\Administration\Feature 2\SubFeature 5', or any other node within the sub-tree.
 
 ```WIQL
 WHERE [System.AreaPath] UNDER 'MyProject\Server\Administration'
@@ -746,14 +752,14 @@ WHERE [System.AreaPath] UNDER 'MyProject\Server\Administration'
 
 You can use some modifiers and special operators in a query expression.
 
-Use the `in` operator to evaluate whether a field value is equal to any of a set of values. This operator is supported for the String, Integer, Double, and DateTime field types. See the following example along with its semantic equivalent.
+Use the `IN` operator to evaluate whether a field value is equal to any of a set of values. This operator is supported for the String, Integer, Double, and DateTime field types. See the following example along with its semantic equivalent.
 
 ```WIQL
 WHERE [System.CreatedBy] IN ('joselugo', 'jeffhay', 'linaabola')
 WHERE [System.CreatedBy] = 'joselugo' OR [System.CreatedBy] = 'jeffhay' OR [System.CreatedBy] = 'linaabola'
 ```
 
-The ever operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the ever operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
+The `EVER` operator is used to evaluate whether a field value equals or has ever equaled a particular value throughout all past revisions of work items. The String, Integer, Double, and DateTime field types support this operator. There are alternate syntaxes for the `EVER` operator. For example, the snippets below query whether all work items were ever assigned to 'joselugo'.
 
 ```WIQL
 WHERE EVER ([Assigned To] =  'joselugo')
@@ -767,9 +773,7 @@ WHERE [Assigned To] EVER 'joselugo'
 - [Work item fields and attributes](../work-items/work-item-fields.md) 
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
-### Limits on WIQL length  
 
-For queries made against Azure Boards, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
 
 
 <!---
