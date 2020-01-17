@@ -280,9 +280,9 @@ The name of another field. For example, you can use [Assigned to] = [Changed by]
 
 --> 
 
+<a id="macros" />
 
-
-### Macros or variables
+## Macros or variables
 
 The following table lists the macros or variables you can use within a WIQL query. 
 
@@ -304,8 +304,8 @@ The following table lists the macros or variables you can use within a WIQL quer
 ::: moniker range="<= azure-devops-2019"
 
 
-|               Macro                |                                                                                                                                                                                          Usage                                                                                                                                                                                          |
-|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Macro     |                 Usage   |
+|-----------------|----------------|
 |        <strong>@Me</strong>        |                                       Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to <strong>@Me</strong>.                                       |
 | <strong>@CurrentIteration</strong> |                                                                                                                    Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.                                                                                                                    |
 |     <strong>@Project</strong>      |                                                  Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to <strong>@Project</strong>.                                                   |
@@ -483,20 +483,20 @@ The following table summarizes the differences between work item queries and que
 
 <table>
 <tr>
-<th width="20%">Work items</th>
-<th width="40%">Work items</th>
-<th width="40%">Links between work items</th>
+<th width="10%">Clause</th>
+<th width="35%">Work items</th>
+<th width="55%">Links between work items</th>
 </tr>
 <tbody valign="top">
 <tr>
 <td><code>FROM</code> clause</td>
-<td><code>    </code></td>
-<td>Identifies the fields to return for each work item returned by the query. You can specify either the friendly name or reference name. You must use square brackets ([]) if the name contains blanks or periods.</td>
+<td><code>FROM WorkItems</code></td>
+<td><code>FROM WorkItemLinks</code></td>
 </tr>
 <tr>
-<td><code>WHERE</code> clause</td>
-<td><code>    </code></td>
-<td><code>[FieldName] = Value</code><br/>Specify one or more of the following:<br/>
+<td><code>WHERE</code></td>
+<td><code>[FieldName] = Value</code></td>
+<td><code>Specify one or more of the following:<br/>
 <code>[Source].[FieldName] = Value</code><br/>
 <code>[Target].[FieldName] = Value</code><br/>
 <code>[System.Links.LinkType] = 'LinkName'</code> 
@@ -504,13 +504,13 @@ The following table summarizes the differences between work item queries and que
 </tr>
 <tr>
 <td><code>MODE</code></td>
-<td>     </td>
-<td>Specifies one of the following:<br/>
+<td>not applicable</td>
+<td>Specify one of the following:<br/>
 <ul>
 <li><code>MODE (MustContain)</code>: (Default) Returns only WorkItemLinkInfo records where the source, target, and link criteria are all satisfied. </li>
 <li><code>MODE (MayContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.</li>
 <li><code>MODE (DoesNotContain)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
-<li><code>MODE (Recursive)</code>: Returns WorkItemLinkInfo records for all work items that satisfy the source, only if no linked work item satisfies the link and target criteria.</li>
+<li><code>MODE (Recursive)</code>: Use for Tree queries(`[System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward'`). Link type must be Tree topology and forward direction. Returns WorkItemLinkInfo records for all work items that satisfy the source, recursively for target.  `ORDER BY` and `ASOF` aren;t compatible with tree queries.</li>
 </ul>
 </td>
 </tr>
@@ -533,12 +533,10 @@ You can specify one of the system link type names, listed below, or [a custom li
 ::: moniker-end
 
 - `System.LinkTypes.Hierarchy-Forward`
-- `System.LinkTypes.Hierarchy-Reverse`
 - `System.LinkTypes.Related`
 - `System.LinkTypes.Dependency-Predecessor`
 - `System.LinkTypes.Dependency-Successor`
 - `Microsoft.VSTS.Common.Affects-Forward` (CMMI process)
-- `Microsoft.VSTS.Common.Affects-Reverse` (CMMI process)
 
 For additional information, see [Link type reference](link-type-reference.md). 
 
@@ -577,8 +575,48 @@ WHERE
 MODE (Recursive)
 ```
 
+### Direct link query example
 
-## Example queries 
+The following query returns all work item types define in the current project. The query as shown in the Query Editor appears as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, direct link query, all work items and states](media/wiql/direct-link-query.png)   
+
+
+The equivalent WIQL syntax is as shown. 
+
+> [!div class="tabbedCodeSnippets"]
+```WIQL
+SELECT
+    [System.Id],
+    [System.WorkItemType],
+    [System.Title],
+    [System.AssignedTo],
+    [System.State],
+    [System.Tags]
+FROM workitemLinks
+WHERE
+    (
+        [Source].[System.TeamProject] = @project
+        AND [Source].[System.WorkItemType] <> ''
+        AND [Source].[System.State] <> ''
+    )
+    AND (
+        [System.Links.LinkType] = 'System.LinkTypes.Dependency-Reverse'
+        OR [System.Links.LinkType] = 'System.LinkTypes.Related-Forward'
+        OR [System.Links.LinkType] = 'System.LinkTypes.Dependency-Forward'
+    )
+    AND (
+        [Target].[System.TeamProject] = @project
+        AND [Target].[System.WorkItemType] <> ''
+        AND [Target].[System.ChangedDate] >= @today - 60
+    )
+ORDER BY [System.Id]
+MODE (MustContain)
+```
+
+
+## Additional example queries 
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
