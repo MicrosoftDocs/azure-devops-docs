@@ -281,7 +281,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
@@ -291,7 +291,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
