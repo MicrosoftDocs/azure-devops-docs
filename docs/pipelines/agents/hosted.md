@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/14/2020
+ms.date: 0117/2020
 monikerRange: azure-devops
 ---
 
@@ -137,9 +137,17 @@ More information about the versions of software included on the images can be fo
 
 #### When are the images updated?
 
-Images are typically updated weekly
+Images are typically updated weekly. You can check the [status badges](https://github.com/actions/virtual-environments) which are in the format `20200113.x` where the first part indicates the date the image was updated.
+
+### Why are some of the images in different repos?
+
+Some of the Azure Pipelines VM Images are also used for GitHub Actions, and those images are now maintained by the GitHub Actions team. You can always see the list of installed software and versions for all of the images by following the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
 
 #### What can I do if software I need is removed or replaced with a newer version?
+
+You can let us know by filing a GitHub issue by choosing the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
+
+You can also use a self-hosted agent that includes the exact versions of software that you need. For more information, see [Self-hosted agents](agents.md#install).
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
