@@ -25,6 +25,7 @@ monikerRange: azure-devops
 <a name="software"></a>
 
 ## Use a Microsoft-hosted agent
+
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
 
 > [!NOTE]
@@ -41,7 +42,7 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
 | macOS X High Sierra 10.13 | *macOS-10.13* |   `macOS-10.13` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
 
-You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the table.
 
 Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
