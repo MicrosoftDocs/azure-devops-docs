@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2019
+ms.date: 01/16/2019
 monikerRange: '>= tfs-2013'
 ---
 
@@ -50,6 +50,10 @@ A: Only the organization Owner can change the URL. If you're the organization Ow
 #### Q: How many organization Owners can I have?
 
 A: Your organization can have only one owner. Only organization Owners can [perform certain actions](#owner-differences), so make sure you keep your organization Owner updated.
+
+#### Q: Can I assign a new owner to my organization when the current owner is no longer active?
+
+A: Yes. For more information, see [Resolve orphaned organization ownership](resolve-orphaned-organization.md).
 
 #### Q: Why did you ask for extra information when I signed in?
 
