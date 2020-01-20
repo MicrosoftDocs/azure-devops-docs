@@ -83,16 +83,12 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 > | EntitySet | Description | v3.0-preview |
 > |-----------|-------------|------|
 > |Branches | Basic information about branches used in tests or pipelines |  ✔️ |
-> |BuildPipelines| Properties for a build pipeline |  ✔️ |
-> |BuildPipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
-> |BuildTaskResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
-> |Builds | Execution information for builds |  ✔️ |
-> |ReleaseEnvironments | Experimental, properties of the release environments |  ✔️ |
-> |ReleasePipelines| Experimental, properties for a release pipeline |  ✔️ |
-> |ReleaseStages |  Experimental, properties for stages defined within a release pipeline |  ✔️ |
-> |Releases | Experimental, execution information for releases  |  ✔️ |
+> |Pipelines| Properties for a pipeline |  ✔️ |
+> |PipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
+> |PipelineRunActivityResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
+> |PipelineRuns | Execution information for pipelines |  ✔️ |
 > |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
-> |TestRuns | Execution information for tests run under a build or release pipeline with aggregate TestResult |  ✔️ |
+> |TestRuns | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ |
 > |Tests | Properties for a test | ✔️ |
 > |TestsResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
 
