@@ -58,7 +58,7 @@ and [queuing policies](#queuing-policies).
 ![stage](../release/media/definition-02.png)
 
 * * *
-* 
+
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
