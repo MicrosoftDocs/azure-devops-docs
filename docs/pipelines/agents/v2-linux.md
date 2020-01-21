@@ -232,6 +232,16 @@ To run the agent interactively:
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+
+ ```bash
+./run.sh --once
+```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+
 ## Run as a systemd service
 
 If your agent is running on these operating systems you can run the agent as a systemd service:
