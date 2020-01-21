@@ -41,7 +41,7 @@ Use [work item tags](add-tags-to-work-items.md) to categorize your work items in
 Unlike matching or partial matching on a custom field, query with a `Tags Contains` predicate won't scan the entire work items tables. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter on tags](_img/high-perf/tag-contains-web.png)  
+> ![Filter on tags](media/high-perf/tag-contains-web.png)  
 
 
 ## Use `Contains words` for string matches

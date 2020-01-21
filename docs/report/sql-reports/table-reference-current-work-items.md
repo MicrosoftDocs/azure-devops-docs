@@ -21,7 +21,7 @@ You can query for data about the current state of bugs, tasks, and other types o
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Current Work Items](_img/teamproj_currentworkitem.png "TeamProj_CurrentWorkItem")  
+ ![Fact Table for Current Work Items](media/teamproj_currentworkitem.png "TeamProj_CurrentWorkItem")  
   
  FactCurrentWorkItem is associated with the following dimension tables:  
   

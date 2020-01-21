@@ -26,7 +26,7 @@ to an Azure Web App.
 You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
 In the CI pipeline, you build the Java app and run JUnit tests using Maven. In the CD pipeline, you deploy the build to an Azure Web App.
 
-![java web app](_img/quick-to-azure/java-web-app.png)
+![java web app](media/quick-to-azure/java-web-app.png)
 
 [!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
 
@@ -62,7 +62,7 @@ In the right panel, search for `java`, select **Maven**, and then click **Apply*
 
 Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **src/main/webapp/index.jsp** file. Make the following simple change to that file by selecting the edit action.
 
-![Screenshot showing update to code](_img/quick-to-azure/cicd-get-started-update-code.png)
+![Screenshot showing update to code](media/quick-to-azure/cicd-get-started-update-code.png)
 
 Change the following line of text:
 ```html

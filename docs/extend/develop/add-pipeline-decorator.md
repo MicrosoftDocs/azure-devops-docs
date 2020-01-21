@@ -104,7 +104,7 @@ Create and run a basic pipeline.
 The decorator automatically injects our `dir` script at the end of every job.
 A pipeline run looks similar to:
 
-![Pipeline decorator running a simple script](_img/mydecorator-runmyscript.png)
+![Pipeline decorator running a simple script](media/mydecorator-runmyscript.png)
 
 > [!NOTE] 
 > The decorator runs on every job in every pipeline in the organization.
@@ -173,7 +173,7 @@ Then, look at the pipeline summary page.
 
 You see something similar to the following image:
 
-![View pipeline decorator context](_img/system-debugcontext.png)
+![View pipeline decorator context](media/system-debugcontext.png)
 
 Select the task to see the logs, which report the available context is available and runtime values.
 

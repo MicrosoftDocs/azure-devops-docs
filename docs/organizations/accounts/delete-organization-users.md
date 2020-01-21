@@ -35,21 +35,21 @@ If users no longer require access to a project or your organization, you can rem
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings > Users](../../_shared/_img/open-organization-settings-users-preview.png)
+    ![Organization settings > Users](../../_shared/media/open-organization-settings-users-preview.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-preview.png)
+   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user-preview.png)
+   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
@@ -70,21 +70,21 @@ If users no longer require access to a project or your organization, you can rem
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+    ![Organization settings, users](../../_shared/media/settings/open-organization-settings-users-vert.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-new.png)
+   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-new.png)
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user.png)
+   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user.png)
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
@@ -136,7 +136,7 @@ az devops user remove --user contoso@contoso.com --org https://dev.azure.com/con
 
 To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. See [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
 
-![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
+![Remove a user from a security group, new navigation](media/delete-user/remove-user-vert.png)
 
 ## Related articles
 

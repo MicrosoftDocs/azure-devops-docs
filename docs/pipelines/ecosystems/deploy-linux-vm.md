@@ -83,17 +83,17 @@ You can create an environment in the **Environments** hub within the **Pipelines
     > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
     > [!div class="mx-imgBorder"]
-    > ![VMcreation](_img/vm-creation.png)
+    > ![VMcreation](media/vm-creation.png)
 
 7.	For adding more VMs, you can view and copy the script again. Click **Add resource** and choose **Virtual Machines**. This script is the same for all the VMs to be added to this environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
     > [!div class="mx-imgBorder"]
-    > ![VMresource_view](_img/vm-resourceview.png)
+    > ![VMresource_view](media/vm-resourceview.png)
 
 9. You can add tags to the VM as part of the interactive PS registration script (or) you can also add/remove the same from the resource view by clicking on the triple dots at the end of each VM resource in the resources view.
 The tags you assign allow you to limit deployment to specific virtual machines when the environment is used in a Deployment job. Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
     > [!div class="mx-imgBorder"]
-    > ![VMtags](_img/vm-tags.png)
+    > ![VMtags](media/vm-tags.png)
 
 * * * 
 
@@ -190,24 +190,24 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 
 3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 
-`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
+   `runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
 
-Below is the example YAML snippet for `runOnce` :
-    ```YAML
-    jobs:
-    - deployment: VMDeploy
-      displayName: web
-      pool:
-        vmImage: 'Ubuntu-16.04'
-      environment:
-        name: <environment name>
-        resourceType: VirtualMachine
-      strategy:
-          runOnce:
-            deploy:
-              steps:
-              - script: echo my first deployment
-    ```
+   Below is the example YAML snippet for `runOnce` :
+   ```YAML
+   jobs:
+   - deployment: VMDeploy
+     displayName: web
+     pool:
+       vmImage: 'Ubuntu-16.04'
+     environment:
+       name: <environment name>
+       resourceType: VirtualMachine
+     strategy:
+       runOnce:
+         deploy:
+           steps:
+           - script: echo my first deployment
+   ```
 
 4. Below is an example of the YAML snippet that you can use to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 
@@ -254,10 +254,10 @@ Below is the example YAML snippet for `runOnce` :
 ## Pipeline traceability views in environment
 Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
 > [!div class="mx-imgBorder"]
-> ![VMDeployments_view](_img/vm-deployments.png)
+> ![VMDeployments_view](media/vm-deployments.png)
   
 > [!div class="mx-imgBorder"]
-> ![VMjobs_view](_img/vm-jobsview.png)
+> ![VMjobs_view](media/vm-jobsview.png)
 
 ## Next Steps
 To learn more about the topics in this guide see [Jobs](../process/phases.md), [Tasks](../process/tasks.md), [Catalog of Tasks](../tasks/index.md), [Variables](../process/variables.md), [Triggers](../build/triggers.md), or [Troubleshooting](../troubleshooting.md).

@@ -24,7 +24,7 @@ You can query for data about the changesets that were incorporated in each build
 
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
- ![Tables for Changesets in a Build](_img/teamproj_factbuildchangeset.png "TeamProj_FactBuildChangeset")  
+ ![Tables for Changesets in a Build](media/teamproj_factbuildchangeset.png "TeamProj_FactBuildChangeset")  
   
  FactBuildChangeset is associated with the following dimension tables:  
   

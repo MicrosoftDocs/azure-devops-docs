@@ -62,7 +62,7 @@ A process is a zip file containing a set of interdependent files used to define 
 </table>
 
 
-![Supported process plug-ins and objects for process import](_img/ALM_IP_SupportedPlugins.png)
+![Supported process plug-ins and objects for process import](media/ALM_IP_SupportedPlugins.png)
 
 For a summary of differences between what's supported in Azure DevOps Services versus an on-premises TFS, see [Process template customizations differences](differences.md).  
 
@@ -81,7 +81,7 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 1. From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
 
-   <img src="_img/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
+   <img src="media/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
 
    Save the zip file and extract all files.
 

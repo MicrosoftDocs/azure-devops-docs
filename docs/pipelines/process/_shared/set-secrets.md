@@ -7,7 +7,7 @@ To set secrets in the web interface, follow these steps:
 - Navigate to **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
 - Locate the **Variables** for this pipeline.
 - Add or update the variable.
-- Select the ![Secret](../_img/variables/secret-variable-icon.png) lock icon to store the variable in an encrypted manner.
+- Select the ![Secret](../media/variables/secret-variable-icon.png) lock icon to store the variable in an encrypted manner.
 - Save the pipeline.
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
@@ -23,5 +23,4 @@ Secrets are available on the agent for tasks and scripts to use **(so be careful
 > For this reason, secrets should not contain structured data. If, for example, "{ "foo": "bar" }" is set as a secret,
 > "bar" will not be masked from the logs.
 
-Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
-You can explicitly map them in, though.
+Unlike a normal variable, they are not automatically decrypted into environment variables for scripts. You need to explicitly map secret variables.

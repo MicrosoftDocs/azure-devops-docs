@@ -21,7 +21,7 @@ ms.date: 12/20/2018
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
-![CMMI process work item types, conceptual image](_img/cmmi-process-plan-wits.png)
+![CMMI process work item types, conceptual image](media/cmmi-process-plan-wits.png)
 
 To gain insight into a portfolio of requirements, product owners can map requirements to features. When teams work in iterations, they define tasks that automatically link to requirements.
 
@@ -36,12 +36,12 @@ To support additional CMMI processes, teams can track change requests, risks, is
 
 Create requirements from the quick add panel on the [product backlog page](../../backlogs/create-your-backlog.md). Alternatively, you can bulk add requirements using [Excel](../../backlogs/office//bulk-add-modify-work-items-excel.md) or [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md).
 
-<img src="_img/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
+<img src="media/cmmi-quick-add-panel.png" alt="CMMI process, Quick add panel on the requirements backlog page" style="border: 2px solid #C3C3C3;" />
 
 
 Later, you can open each requirement to provide more details and estimate its size.
 
-![Requirement work item form](_img/cmmi-requirement-form.png)  
+![Requirement work item form](media/cmmi-requirement-form.png)  
 
 Requirements specify the functions and product elements that teams need to create. Product owners typically define and stack rank requirements on the product backlog page. The team then scopes the size of the effort to deliver the highest priority items.
 
@@ -289,7 +289,7 @@ Use the following guidance and that provided for [fields used in common across w
 
 As work progresses, you change the State field to update the status. Optionally, you can specify a reason. The state and reason fields appear on the work item form in the header area. 
 
-<img src="_img/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/agile-bug-form-state-reason.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 ### CMMI workflow states 
 
@@ -298,7 +298,7 @@ These diagrams show the main progression and regression states for the Requireme
 > [!div class="mx-tdBreakAll"]  
 > |Requirement  |Bug |Task |  
 > |-------------|----------|---------| 
-> |<img src="_img/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="_img/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="_img/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
+> |<img src="media/IC757081.png" title="Requirement workflow states, CMMI process" alt="Requirement workflow states, CMMI process" /> |<img src="media/IC757084.png" title="Bug workflow states, CMMI process" alt="Bug workflow states, CMMI process" /> |<img src="media/IC757087.png" title="Task workflow states, CMMI process" alt="Task workflow states, CMMI process" /> |
 
 The typical workflow progression for a requirement is:  
 -   The product owner creates a requirement in the **Proposed** state with the default reason, **New requirement**.  
@@ -310,7 +310,7 @@ The typical workflow progression for a requirement is:
 
 Teams can use the [Kanban board](../../boards/kanban-basics.md) to update the status of requirements, and the [sprint taskboard](../../sprints/task-board.md) to update the status of tasks. Dragging items to a new state column updates both the State and Reason fields.
 
-<img src="../../boards/_img/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/media/ALM_CC_MoveCard.png" alt="Web portal, Track progress on the Kanban board" style="border: 2px solid #C3C3C3;" />
 
 You can customize the Kanban board to support additional [swim lanes](../../boards/expedite-work.md) or [columns](../../boards/add-columns.md). For additional customization options, see [Customize your work tracking experience](#customize-work-tracking).
 
@@ -328,11 +328,11 @@ The feature work item contains similar fields provided for requirements and incl
 
 When your team manages their work in sprints, they can use the [sprint backlog page](../../sprints/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
-<img src="_img/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 2px solid #C3C3C3;" />
+<img src="media/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 2px solid #C3C3C3;" />
 
 Name the task and estimate the work it will take.
 
-![CMMI Task work item form](_img/cmmi-task-form.png)
+![CMMI Task work item form](media/cmmi-task-form.png)
 
 When teams estimate work they define tasks and estimate the hours or days to complete tasks. Teams forecast work and define tasks at the start of an iteration, and each team member performs a subset of those tasks. Tasks can include development, testing, and other kinds of work. For example, a developer can define tasks to implement requirements, and a tester can define tasks to write and run test cases. By linking tasks to requirements and bugs, they see the progress made on these items. For additional guidance, see [Iteration activities](cmmi/guidance-iteration-activities.md).
 
@@ -388,15 +388,15 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
 ### Test requirements
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab). 
 
-![Select the test suite and add a test case](_img/IC793453.png)  
+![Select the test suite and add a test case](media/IC793453.png)  
 
 The test case contains a number of fields, many of which are automated and integrated with Test Manager and the build process. For a description of each field, see [Query based on build and test integration fields](../../queries/build-test-integration.md).  
 
-<img src="_img/agile-test-case-form.png" alt="Web portal, Test case work item form" style="border: 2px solid #C3C3C3;" />
+<img src="media/agile-test-case-form.png" alt="Web portal, Test case work item form" style="border: 2px solid #C3C3C3;" />
 
-The ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../../report/sql-reports/requirements-overview-report-cmmi.md) report.
+The ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab) lists all the requirements and bugs in a test case. By using linking, the team can track the progress made in testing each item and supports information that appears in the [Requirements Overview Report](../../../report/sql-reports/requirements-overview-report-cmmi.md) report.
 
 ### Track code defects
 
@@ -414,7 +414,7 @@ In addition to the requirement, feature, task, and bug WITs, you can track infor
 <br/>
 You can add an issue from the  [New work item widget](../../../report/dashboards/widget-catalog.md#new-work-item-widget) added to a [team dashboard](../../../Report/dashboards.md), or from the **New** menu on the Queries page. 
 
-![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
+![Add work item from a New work item widget](media/cmmi-new-work-item-widget.png)  
 
 Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 

@@ -23,7 +23,7 @@ ms.date: 08/04/2016
 If you haven’t already, look at the information on getting started with these APIs and our documentation on [branch policies](https://go.microsoft.com/fwlink/?LinkID=615252). Use these APIs to define policies for your projects. 
 [Configurations](./configurations.md) associate a [type](./types.md), such as "Required reviewers", with specific [settings](./settings.md), such as  "For pull requests with files named *.dll targeting the master branch in the Fabrikam Git repository, add the Source-Controlled Binaries Team as a required reviewer". 
 
-![policy resources](./_img/policy-resources.png)
+![policy resources](./media/policy-resources.png)
 
 * [Types](./types.md)
 * [Configurations](configurations.md)

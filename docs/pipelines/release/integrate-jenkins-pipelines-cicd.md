@@ -39,7 +39,7 @@ A typical approach is to use Jenkins to build an app from source
 code hosted in a Git repository such as GitHub and then deploy it to
 Azure using Azure Pipelines.
 
-![Schematic of deployment from GitHub and Jenkins to Azure](_img/integrate-jenkins-vsts-cicd/schematic1.png)
+![Schematic of deployment from GitHub and Jenkins to Azure](media/integrate-jenkins-vsts-cicd/schematic1.png)
 
 ## Before you begin
 

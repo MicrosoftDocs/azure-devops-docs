@@ -32,15 +32,15 @@ At the start of a sprint, find out what you need to test. Discussing test cases 
   
 1. Add a manual test case to your test plan.  
   
-   ![Create a test case](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_create04.png)  
+   ![Create a test case](media/plan-manual-tests-with-microsoft-test-manager/almp_t_create04.png)  
   
 1. Name the test case.  
   
-   ![Give the test case a title](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_create05.png)  
+   ![Give the test case a title](media/plan-manual-tests-with-microsoft-test-manager/almp_t_create05.png)  
   
 1. Add the steps to perform during the test. Don't forget to include the expected results.  
   
-   ![Define test case steps](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_create06.png)  
+   ![Define test case steps](media/plan-manual-tests-with-microsoft-test-manager/almp_t_create06.png)  
   
    To add multiple lines in a step, press ALT + Enter.  
   
@@ -52,15 +52,15 @@ Test suites are folders inside a test plan that help you organize tests. When yo
   
 - Create a new test suite.  
   
-  ![Creating a new test suite](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite01.png)  
+  ![Creating a new test suite](media/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite01.png)  
   
 - Select a suite and then create new tests in the suite.  
   
-  ![Create a test case in a suite](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite02.png)  
+  ![Create a test case in a suite](media/plan-manual-tests-with-microsoft-test-manager/almp_t_newsuite02.png)  
   
 - Drag test cases from one suite to another, or cut and paste.  
   
-  ![Drag test cases from one suite to another](_img/plan-manual-tests-with-microsoft-test-manager/almp_t_dragsuites.png)  
+  ![Drag test cases from one suite to another](media/plan-manual-tests-with-microsoft-test-manager/almp_t_dragsuites.png)  
   
   CTRL + drag or copy and paste to make the same test case appear in more than one suite.  
   

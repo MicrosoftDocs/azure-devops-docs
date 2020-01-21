@@ -151,18 +151,18 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
+   ![Selecting the build artifact](../_shared/media/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
    and add a filter to include the **master** branch.
 
-   ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
+   ![Checking or setting the Continuous deployment trigger](../_shared/media/confirm-or-set-cd-trigger.png)
 
 1. On the **Variables** tab of the stage in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
 1. Configure the following tasks in the stage:
   
-   ![Windows Machine File Copy](../../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
+   ![Windows Machine File Copy](../../tasks/deploy/media/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
    
    - **Source**: Select the Web deploy package (zip file) from the artifact source.
    
@@ -174,7 +174,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
    
-   ![WinRM - IIS Web App Deployment](../../tasks/deploy/_img/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
    
    - **Machines**: `$(WebServers)`
    

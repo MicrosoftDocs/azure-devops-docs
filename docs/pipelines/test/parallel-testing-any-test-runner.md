@@ -69,13 +69,13 @@ If you represent all test files as a single dimensional array, each job can run 
 For example, if you have six test files and two parallel jobs, the first job (slice0) will run test files
 numbered 0, 2, and 4, and second job (slice1) will run test files numbered 1, 3, and 5.
 
-![6 tests in 2 slices](_img/run-tests-in-parallel/2slices.png)
+![6 tests in 2 slices](media/run-tests-in-parallel/2slices.png)
 
 If you use three parallel jobs instead, the first job (slice0) will run test files numbered 0 and 3,
 the second job (slice1) will run test files numbered 1 and 4, and the third job (slice2) will run
 test files numbered 2 and 5.
 
-![6 tests in 3 slices](_img/run-tests-in-parallel/3slices.png)
+![6 tests in 3 slices](media/run-tests-in-parallel/3slices.png)
 
 ## Sample code
 

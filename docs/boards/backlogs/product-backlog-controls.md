@@ -29,13 +29,13 @@ Once you've defined your product backlog, you can use the following controls to 
 
 | Icon  | Control                  | Function              |
 |---------|------------------------|--------------------|
-| ![backlogs](../../_img/icons/backlogs.png) | Backlog options  | [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](_img/backlogs-menu.png)    |  
-| ![view options](../../_img/icons/view-options-icon.png) | View options |- [Turn Parents on/off](organize-backlog.md)<br/>- [Turn Forecasting on/off](../sprints/forecast.md)<br/>- [Turn In Progress items on/off](../sprints/forecast.md)<br/>- [Show Mapping](organize-backlog.md)<br/>- [Show Planning](../sprints/assign-work-sprint.md)<br/>![view options](_img/view-options.png) |  
-| ![Filter](../_img/icons/filter-icon.png) |  Filter | [Turn filtering On/Off](filter-backlogs.md)  |   
-| ![Settings icon](../../_img/icons/blue-gear.png) | Settings   | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |  
-| ![full screen](../../_img/icons/full-screen-icon.png) / ![exit full screen](../../_img/icons/exit-full-screen-icon.png)  | Full screen | Enter or exit full screen mode  |  
-| ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png) | Expand/Collapse | Expand or collapse one level of the tree hierarchy |   
-| ![actions](../../_img/icons/actions-icon.png) | Actions options |- [Set column options](set-column-options.md)<br/>-[Create query](../queries/using-queries.md)<br/>- [Email](../work-items/email-work-items.md)  |  
+| ![backlogs](../../media/icons/backlogs.png) | Backlog options  | [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)    |  
+| ![view options](../../media/icons/view-options-icon.png) | View options |- [Turn Parents on/off](organize-backlog.md)<br/>- [Turn Forecasting on/off](../sprints/forecast.md)<br/>- [Turn In Progress items on/off](../sprints/forecast.md)<br/>- [Show Mapping](organize-backlog.md)<br/>- [Show Planning](../sprints/assign-work-sprint.md)<br/>![view options](media/view-options.png) |  
+| ![Filter](../media/icons/filter-icon.png) |  Filter | [Turn filtering On/Off](filter-backlogs.md)  |   
+| ![Settings icon](../../media/icons/blue-gear.png) | Settings   | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |  
+| ![full screen](../../media/icons/full-screen-icon.png) / ![exit full screen](../../media/icons/exit-full-screen-icon.png)  | Full screen | Enter or exit full screen mode  |  
+| ![expand icon](../media/icons/expand_icon.png) / ![collapse icon](../media/icons/collapse_icon.png) | Expand/Collapse | Expand or collapse one level of the tree hierarchy |   
+| ![actions](../../media/icons/actions-icon.png) | Actions options |- [Set column options](set-column-options.md)<br/>-[Create query](../queries/using-queries.md)<br/>- [Email](../work-items/email-work-items.md)  |  
 
 
 
@@ -45,7 +45,7 @@ Once you've defined your product backlog, you can use the following controls to 
 <!---
 | In progress items | [Show/Hide in progress items](../sprints/forecast.md)   |
 | Board    | [Switch to Kanban board view](../boards/kanban-quickstart.md)  |
-| ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
+| ![mail icon](../media/icons/mail_icon.png)  | Email a copy of your backlog      |
  
 -->
 
@@ -62,11 +62,11 @@ Once you've defined your product backlog, you can use the following controls to 
 | Mapping | [Turn mapping Off/On](organize-backlog.md)   |
 | Parents | [Show/Hide parents](organize-backlog.md) |
 | In progress items | [Show/Hide in progress items](../sprints/forecast.md)   |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |
-| ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
-| ![expand icon](../_img/icons/expand_icon.png) / ![collapse icon](../_img/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
-| ![mail icon](../_img/icons/mail_icon.png)  | Email a copy of your backlog      |
-| ![Filter](../_img/icons/filter-icon.png)  | [Turn filtering On/Off](filter-backlogs.md)  |  
+| ![Settings icon](../media/icons/team-settings-gear-icon.png)    | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |
+| ![full screen icon](../media/icons/fullscreen_icon.png) / ![exit full screen icon](../media/icons/exitfullscreen_icon.png)  | Enter or exit full screen mode      |
+| ![expand icon](../media/icons/expand_icon.png) / ![collapse icon](../media/icons/collapse_icon.png)   | Expand or collapse one level of the tree hierarchy    |
+| ![mail icon](../media/icons/mail_icon.png)  | Email a copy of your backlog      |
+| ![Filter](../media/icons/filter-icon.png)  | [Turn filtering On/Off](filter-backlogs.md)  |  
 
 
 > [!IMPORTANT]  
@@ -75,7 +75,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker-end
 
 
-Even if you have show parents turned on, the **Create query** and mail ![mail icon](../_img/icons/mail_icon.png) controls will only list items at the currently selected level. 
+Even if you have show parents turned on, the **Create query** and mail ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
  
 
 ## Related articles

@@ -25,12 +25,12 @@ The steps below show how to add a column to your model which will contain the la
 2. In the External Data section of the ribbon, choose **Edit Queries**.   
 
     > [!div class="mx-imgBorder"]  
-    > ![Power BI Desktop, Home tab, Edit Queries](_img/edit-queries.png) 
+    > ![Power BI Desktop, Home tab, Edit Queries](media/edit-queries.png) 
 
 3. Open **Advanced Editor**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Advanced Editor](_img/AdvancedEditor.png) 
+    > ![Advanced Editor](media/AdvancedEditor.png) 
 
     If you have not already modified the query you should see text below with specific table values matching your Analytics view.
 	 
@@ -62,17 +62,17 @@ The steps below show how to add a column to your model which will contain the la
 5. Choose **Close & Apply** to immediately refresh the dataset.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Home, Close & Apply](_img/powerbi-close-apply.png)   
+	> ![Power BI Desktop, Home, Close & Apply](media/powerbi-close-apply.png)   
 
 6. Identify the *Refresh Date* column under the field.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Fields, Refresh Date field](_img/RefreshDateField.png)  
+	> ![Power BI Desktop, Fields, Refresh Date field](media/RefreshDateField.png)  
 
 7. Add the field to a card to see the last refresh date on your reports.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Power BI Desktop, Card, Refresh Date Applied](_img/RefreshDateApplied.png)  
+	> ![Power BI Desktop, Card, Refresh Date Applied](media/RefreshDateApplied.png)  
 
 
  

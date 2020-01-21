@@ -57,11 +57,11 @@ A: Users receive two notifications during the lifetime of a PAT, one at creation
 
 The following notification is sent at PAT creation:
 
-![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
+![PAT creation notification](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
 The following notification is sent - a PAT is near expiration:
 
-![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
+![PAT near expiration notification](media/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
 ### Q: What does "Full Access" mean?
 

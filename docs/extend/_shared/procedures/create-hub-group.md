@@ -41,4 +41,4 @@
 
    Now your hub appears under your Samples hub group.
 
-   ![Hello hub in the Samples hub group](./_img/create-hub-group/hub-group.png)
+   ![Hello hub in the Samples hub group](./media/create-hub-group/hub-group.png)

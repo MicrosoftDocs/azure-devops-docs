@@ -13,14 +13,14 @@ ms.topic: include
 
 **Batch script**
 
-![icon](../../tasks/utility/_img/batch-script.png) Set the `sauce` and `secret.Sauce` variables
+![icon](../../tasks/utility/media/batch-script.png) Set the `sauce` and `secret.Sauce` variables
 
 ```bat
 @echo ##vso[task.setvariable variable=sauce]crushed tomatoes
 @echo ##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic
 ```
 
-![icon](../../tasks/utility/_img/batch-script.png) Read the variables
+![icon](../../tasks/utility/media/batch-script.png) Read the variables
 
 Arguments
 
@@ -44,7 +44,7 @@ set secretSauceArgument=%~2
 
 **PowerShell script**
 
-![icon](../../tasks/utility/_img/powershell.png) Set the `sauce` and `secret.Sauce` variables
+![icon](../../tasks/utility/media/powershell.png) Set the `sauce` and `secret.Sauce` variables
 
 ```powershell
 Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
@@ -52,7 +52,7 @@ Write-Host "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed t
             garlic"
 ```
 
-![icon](../../tasks/utility/_img/powershell.png) Read the variables
+![icon](../../tasks/utility/media/powershell.png) Read the variables
 
 Arguments
 
@@ -75,7 +75,7 @@ Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do
 
 # [Shell](#tab/shell)
 
-![icon](../../tasks/utility/_img/shell-script.png) Set the `sauce` and `secret.Sauce` variables
+![icon](../../tasks/utility/media/shell-script.png) Set the `sauce` and `secret.Sauce` variables
 
 ```bash
 #!/bin/bash
@@ -83,7 +83,7 @@ echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 echo "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic"
 ```
 
-![icon](../../tasks/utility/_img/shell-script.png) Read the variables
+![icon](../../tasks/utility/media/shell-script.png) Read the variables
 
 Arguments
 

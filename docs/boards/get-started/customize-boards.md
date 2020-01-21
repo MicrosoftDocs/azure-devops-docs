@@ -38,21 +38,21 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings](_img/customize-boards/open-settings-s155.png)  
+	> ![Open board settings](media/customize-boards/open-settings-s155.png)  
 	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings](_img/customize-boards/open-settings.png)  
+	> ![Open board settings](media/customize-boards/open-settings.png)  
 	::: moniker-end
 
 	The Settings dialog opens. 
 	
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Fields dialog](_img/customize-boards/settings-fields-dialog.png) 
+	> ![Settings,Fields dialog](media/customize-boards/settings-fields-dialog.png) 
 	
 3. Choose one of the following tabs based on what you want to customize:  
 
@@ -78,21 +78,21 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings](_img/customize-boards/open-settings-agile-s155.png)  
+	> ![Open board settings](media/customize-boards/open-settings-agile-s155.png)  
 	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings](_img/customize-boards/open-settings-agile.png)  
+	> ![Open board settings](media/customize-boards/open-settings-agile.png)  
 	::: moniker-end
 
 	The Settings dialog opens. 
 	
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Fields dialog](_img/customize-boards/settings-fields-agile-dialog.png) 
+	> ![Settings,Fields dialog](media/customize-boards/settings-fields-agile-dialog.png) 
 	
 3. Choose one of the following tabs based on what you want to customize:  
 
@@ -128,14 +128,14 @@ To quickly assign fields from the card without having to open the work item, add
 
 1. Check or uncheck those fields you want to display or not display on the board.
 
-2. To add a field, choose ![plus icon](../../_img/icons/green_plus_icon.png) **Field** to add a field. 
+2. To add a field, choose ![plus icon](../../media/icons/green_plus_icon.png) **Field** to add a field. 
 
 	For example, here we uncheck **Show ID** and add the **Priority** field. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, Fields dialog, Add Priority field](_img/customize-boards/settings-fields-change-priority.png) 
+	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
@@ -145,14 +145,14 @@ To quickly assign fields from the card without having to open the work item, add
 
 1. Check or uncheck those fields you want to display or not display on the board.
 
-2. To add a field, choose ![plus icon](../../_img/icons/green_plus_icon.png) **Field** to add a field. 
+2. To add a field, choose ![plus icon](../../media/icons/green_plus_icon.png) **Field** to add a field. 
 
 	For example, here we uncheck **Show ID**, remove the **State** field, and add the **Priority** field. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, Fields dialog, Add Priority field](_img/customize-boards/settings-fields-agile-change-priority.png) 
+	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-agile-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../_img/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
@@ -168,10 +168,10 @@ You can add columns or change column names.
 
 1. To add a column or change column settings, choose **Columns** tab.
 
-	Here we choose ![plus icon](../../_img/icons/green_plus_icon.png) **Column**, and then specify the name as **Research**.  
+	Here we choose ![plus icon](../../media/icons/green_plus_icon.png) **Column**, and then specify the name as **Research**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Columns dialog, Add Research column](_img/customize-boards/settings-columns-add-research-column.png) 
+	> ![Settings,Columns dialog, Add Research column](media/customize-boards/settings-columns-add-research-column.png) 
 
 1. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
 
@@ -180,10 +180,10 @@ You can add columns or change column names.
 
 1. To add a column or change column settings, choose **Columns** tab.
 
-	Here we choose ![plus icon](../../_img/icons/green_plus_icon.png) **Column**, and then specify the name as **Research**.  
+	Here we choose ![plus icon](../../media/icons/green_plus_icon.png) **Column**, and then specify the name as **Research**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Columns dialog, Add Research column](_img/customize-boards/settings-columns-agile-add-research-column.png) 
+	> ![Settings,Columns dialog, Add Research column](media/customize-boards/settings-columns-agile-add-research-column.png) 
 
 1. Choose **Save and close** when done. To learn more about column settings, see [Add columns to your Kanban board](../boards/add-columns.md). 
 
@@ -195,12 +195,12 @@ You can add columns or change column names.
 Swimlanes appear as rows within the Kanban board and provide yet another way to categorize work you want to track. 
 
 
-1. To add a swimlane, choose **Swimlanes** tab and choose ![plus icon](../../_img/icons/green_plus_icon.png) **Swimlane**, and then specify the name.  
+1. To add a swimlane, choose **Swimlanes** tab and choose ![plus icon](../../media/icons/green_plus_icon.png) **Swimlane**, and then specify the name.  
 
 	Here we label the swimlane **Expedite**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Swimlanes dialog, Add Expedite swimlane](_img/customize-boards/settings-swimlanes-dialog-expedite.png) 
+	> ![Settings,Swimlanes dialog, Add Expedite swimlane](media/customize-boards/settings-swimlanes-dialog-expedite.png) 
 
 1. Choose **Save and close** when done. To learn more about working with swimlanes , see [Expedite work with swimlanes](../boards/expedite-work.md). 
 
@@ -215,7 +215,7 @@ If you decide you don't want to use Epics to track work, you can turn it off and
 1. Choose **Backlogs** tab and uncheck the work item type you no longer want to track on backlogs and boards.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/settings-backlogs-dialog.png) 
+	> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/settings-backlogs-dialog.png) 
 
 1. Choose **Save and close** when done. 
 
@@ -227,7 +227,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 1. Choose the **Backlogs** tab and uncheck the work item type you no longer want to track on backlogs and boards.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings,Backlogs dialog, Turn Epics on ](_img/customize-boards/settings-backlogs-agile-dialog.png) 
+	> ![Settings,Backlogs dialog, Turn Epics on ](media/customize-boards/settings-backlogs-agile-dialog.png) 
 
 1. Choose **Save and close** when done. 
 
@@ -246,15 +246,15 @@ After you close the settings dialog, refresh (F5) your board to view your change
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view.png) 
+> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view-s155.png) 
+> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view-s155.png) 
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-customized-view.png) 
+> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
 ::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
@@ -263,11 +263,11 @@ Here we show the customizations made in this article. The following image also s
 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-agile-customized-view-s155.png)  
+> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Settings,Backlogs dialog, Turn Epics off ](_img/customize-boards/boards-agile-customized-view.png) 
+> ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view.png) 
 ::: moniker-end
 
 * * *

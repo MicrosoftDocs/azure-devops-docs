@@ -43,14 +43,14 @@ You always add a field to an existing work item type.
 	Here we choose the Bug WIT. Note the breadcrumb links that allow you to move back to the **All Processes** and **MyAgile** process page. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![All Processes-Process-WIT breadcrumb links](_img/field/breadcrumbs-bug-wit.png) 
+	> ![All Processes-Process-WIT breadcrumb links](media/field/breadcrumbs-bug-wit.png) 
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 	
-1. With the WIT selected, choose the ![ ](_img/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
+	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
 
 1. Name the field and select the field type from one of the supported data types. Field names must be unique and no more than 128 characters. For additional restrictions, see [What is a field? How are field names used?](inheritance-process-model.md#field-reference). Optionally, add a Description.  
 
@@ -59,14 +59,14 @@ You always add a field to an existing work item type.
 
 	Here we add an Integer field labeled Customer Ticket. 
 
-    <img src="_img/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
+    <img src="media/process/cpfield-add-field-to-bug-type-integer-up1.png" alt="Add a field to Bug, choose field type" style="border: 1px solid #C3C3C3;" /> 
 
 	Additional data types you can add include: [Picklist](customize-process-field.md#add-a-picklist)(customize-process-field.md#add-a-pick-list), [Identity](customize-process-field.md#add-an-identity-field), [Rich-text, HTML](customize-process-field.md#add-a-rich-text-html-field), [Checkbox](customize-process-field.md#add-a-checkbox-field).  
 
 	<a id="options">  </a>  
 1.	(Optional) On the **Options** tab, indicate if the field is required and specify a default value. Or leave these blank. 
 
-	<img src="_img/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-bug-customer-ticket-options.png" alt="Add a field to Use story, specify options" style="border: 1px solid #C3C3C3;" />  
 
 	By making a field Required, users must specify a value for the field in order to save it. The default value you specify is set when you create a work item as well as every time a work item is opened and the field is empty.
 
@@ -75,7 +75,7 @@ You always add a field to an existing work item type.
 
 	Here, we add the Customer Ticket field to a new group labeled Customer focus. 
 
-	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 1.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it is added to the first group of fields on the layout form.  
 
@@ -91,27 +91,27 @@ We recommend that you create a test project and apply your customized  inherited
 1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
+	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
 
 1. The Create new project page opens. Fill out the form. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project form](_img/process/create-test-project.png) 
+	> ![Create new project form](media/process/create-test-project.png) 
 
 1.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items](../../../boards/work-items/_img/view-add/open-work-items-agile.png)
+	> ![Open Work>Work Items](../../../boards/work-items/media/view-add/open-work-items-agile.png)
 
 1. Select the WIT you customized. Here we choose **Bug**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
+	> ![Work, Work Items Page, Add New Work Item, Bug](media/process/add-custom-field-verify-bug.png) 
 
-1.  Verify that the field you added appears on the form. Note that the ![ ](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+1.  Verify that the field you added appears on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
+	> ![Bug form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-bug-form.png) 
 	
 
 
