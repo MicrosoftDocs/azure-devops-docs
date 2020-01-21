@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Issue Trends Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Issue Trends report to track the rate at which the team is finding and resolving Issues. This report shows the average number of Issues in each state over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

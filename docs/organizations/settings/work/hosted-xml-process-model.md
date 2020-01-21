@@ -15,7 +15,7 @@ ms.date: 10/24/2019
 
 # Hosted XML process model  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 

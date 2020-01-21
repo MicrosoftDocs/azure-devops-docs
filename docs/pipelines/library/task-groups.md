@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
@@ -195,4 +195,4 @@ However, if your taskgroup update is not a breaking change but you would like to
 * [Tasks](../process/tasks.md)
 * [Task jobs](../process/phases.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

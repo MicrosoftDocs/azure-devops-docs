@@ -17,7 +17,7 @@ ms.date: 02/14/2019
 
 # Review team Delivery Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 

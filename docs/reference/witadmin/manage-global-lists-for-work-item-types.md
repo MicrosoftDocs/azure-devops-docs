@@ -15,7 +15,7 @@ ms.date: 02/26/2018
 # Manage global lists for work item types
 
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 Global lists are pick lists that you can include in one or more fields and types of work items. Use them to minimize the work that is required to update a list that is shared by multiple types of work items. Because global lists are defined for a project collection, they can be included in work item types for all projects within the collection.  
   
@@ -30,9 +30,9 @@ You can define a global list within its own definition file, in the definition f
   
 See [GLOBALLIST XML element reference](../xml/define-global-lists.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
-[!INCLUDE [temp](../../_shared/process-editor.md)] 
+[!INCLUDE [temp](../../includes/process-editor.md)] 
   
 ## Prerequisites  
   

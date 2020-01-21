@@ -16,13 +16,13 @@ ms.date: 04/05/2019
 
 # Manage Analytics views 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
-[!INCLUDE [temp](../_shared/boards-disabled.md)]
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
 Use this article to learn how to:
 
@@ -35,9 +35,9 @@ Use this article to learn how to:
 > * Manage permissions for a shared view
 > * Delete a view
 
-[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
+[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/analytics-open.md)] 
+[!INCLUDE [temp](../includes/analytics-open.md)] 
 
 ## Edit an existing view
 
@@ -82,9 +82,9 @@ To favorite a view, hover over the view and choose the ![star icon](../../media/
 > ![Favorite a view](media/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]: Couldn&#39;t find file _shared/manage-shared-view-permissions.md. -->
+<!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE [temp](includes/manage-shared-view-permissions.md)]: Couldn&#39;t find file includes/manage-shared-view-permissions.md. -->
 
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+[!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
 
 <!--END ERROR INCLUDE -->
 

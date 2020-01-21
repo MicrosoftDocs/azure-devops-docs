@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 ---
 # Deploy to Kubernetes
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
 

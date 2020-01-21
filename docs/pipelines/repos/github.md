@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Build GitHub repositories
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Azure Pipelines can automatically build and validate every pull request and commit to your GitHub repository. This article describes how to configure the integration between GitHub and Azure Pipelines.
 
@@ -860,7 +860,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Clean build
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.

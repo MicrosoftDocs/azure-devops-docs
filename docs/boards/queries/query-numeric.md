@@ -16,7 +16,7 @@ ms.date: 10/03/2019
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 
@@ -378,4 +378,4 @@ However, each team can determine if the Bug work item type appears in either the
 
 Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board](../../reference/add-modify-wit.md). 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]

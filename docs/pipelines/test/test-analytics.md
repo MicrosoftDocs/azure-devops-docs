@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Test Analytics
 
-[!INCLUDE [version-header-ap](../_shared/version-team-services.md)]
+[!INCLUDE [version-header-ap](../includes/version-team-services.md)]
 
 Tracking test quality over time and improving test collateral is key to maintaining a healthy DevOps pipeline.
 Test analytics provides near real-time visibility into your test data for builds and releases.
@@ -125,4 +125,4 @@ The source of information for test analytics is the set of [published test resul
 the build or release pipeline.
 These result are accrued over a period of time, and form the basis of the rich insights that test analytics provides. 
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

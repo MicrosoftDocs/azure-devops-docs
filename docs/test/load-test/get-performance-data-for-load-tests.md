@@ -14,11 +14,11 @@ monikerRange: '> tfs-2018'
 
 # Get app performance data with your load tests
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
 <a name="ApplicationInsights"></a>
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
@@ -87,4 +87,4 @@ is causing performance problems.
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

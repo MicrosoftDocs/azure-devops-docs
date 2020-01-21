@@ -45,7 +45,7 @@ The following steps provide support for the test experience available with TFS 2
   
    1. [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-   [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)] 
   
    1. Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
   

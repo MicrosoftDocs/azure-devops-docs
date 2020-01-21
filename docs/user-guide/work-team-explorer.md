@@ -355,9 +355,9 @@ If data doesn't appear as expected, the first thing to try is to refresh your cl
 - To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 - To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
-[!INCLUDE [temp](_shared/when-to-refresh-client.md)]
+[!INCLUDE [temp](includes/when-to-refresh-client.md)]
 
-[!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
+[!INCLUDE [temp](../includes/images-not-appearing-vs.md)] 
 
 
 ## Related articles

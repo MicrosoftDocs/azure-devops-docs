@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Agent pools
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -76,7 +76,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 
 
@@ -152,7 +152,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -162,7 +162,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -343,7 +343,7 @@ az pipelines queue show --id 14
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

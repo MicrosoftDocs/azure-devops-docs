@@ -17,7 +17,7 @@ ms.date: 04/02/2019
 
 # Follow a wiki page, get notifications
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 Follow a Wiki page and get notified by email whenever the page is edited, deleted, or renamed.
 

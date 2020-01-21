@@ -12,9 +12,9 @@ ms.date: 07/22/2019
 
 ## Features
 
-[!INCLUDE [sprint-155-update-links](../_shared/repos/sprint-155-update-links.md)]
+[!INCLUDE [sprint-155-update-links](../includes/repos/sprint-155-update-links.md)]
 
-[!INCLUDE [sprint-155-update](../_shared/repos/sprint-155-update.md)]
+[!INCLUDE [sprint-155-update](../includes/repos/sprint-155-update.md)]
 
 ## Next steps
 
@@ -37,4 +37,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-155](../_shared/signer/sprint-155.md)]
+[!INCLUDE [sprint-155](../includes/signer/sprint-155.md)]

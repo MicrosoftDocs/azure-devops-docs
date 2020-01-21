@@ -26,7 +26,7 @@ Use this task in a build or release pipeline to provide npm credentials to an .n
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NpmAuthenticateV0.md)]
+[!INCLUDE [temp](../includes/yaml/NpmAuthenticateV0.md)]
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Use this task in a build or release pipeline to provide npm credentials to an .n
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `workingFile`<br/>.npmrc file to authenticate   | Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder e.g. &quot;/packages/mypackage.npmrc&quot;. |
 | `customEndpoint`<br/>Credentials for registries outside this organization/collection | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-npm">npm service connection</a> names for registries outside this organization/collection. The specified .npmrc file must contain registry entries corresponding to the service connections. If you only need registries in this organization/collection, leave this blank; the build’s credentials are used automatically. |
-| [!INCLUDE [temp](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [temp](../includes/control-options-arguments-md.md)] | |
 
 
 ## Examples

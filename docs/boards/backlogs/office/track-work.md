@@ -16,7 +16,7 @@ ms.date: 10/30/2019
 
 # Azure Boards and Office integration 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 ::: moniker range=">= azure-devops-2019"

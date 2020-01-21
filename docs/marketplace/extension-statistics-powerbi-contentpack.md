@@ -15,7 +15,7 @@ ms.date: 11/25/2019
 
 # Extension Statistics Power BI content pack
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Gain insight and analyze the progress of your extension by using Extension Statistics Power BI content pack. All data elements in the extension hub are also available in Power BI content pack.
 The content pack has a complete analytic data model, (tables, relationships, and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model isn't.

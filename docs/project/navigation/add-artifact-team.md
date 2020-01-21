@@ -16,7 +16,7 @@ ms.date: 02/08/2019
 
 # Add an artifact or team artifacts
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 Select the service of interest to get started adding new artifacts or objects. For example, to add work items, choose **Boards** or **Work**. Some artifacts&mdash;such as a product backlog, Kanban board, portfolio backlogs&mdash;are added when you add a team.  
 

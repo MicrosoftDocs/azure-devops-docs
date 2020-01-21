@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Learn how to add continuous security validation to your CI/CD pipeline
 
-[!INCLUDE [version-azure-devops](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-azure-devops](../includes/version-ts-tfs-2015-2016.md)]
 
 
 Are you planning Azure DevOps continuous integration and deployment pipelines? You probably have a few questions, such as:

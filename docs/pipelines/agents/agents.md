@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Azure Pipelines agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Jobs can be run [directly on the host machine of the agent](../process/phases.md
 
 ## Microsoft-hosted agents
 
-[!INCLUDE [include](_shared/hosted-agent-intro.md)]
+[!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 [Learn more about Microsoft-hosted agents](hosted.md).
 
@@ -129,11 +129,11 @@ You can view the details of an agent, including its version and system capabilit
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab:
  
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -258,7 +258,7 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 
@@ -502,7 +502,7 @@ You can view the version of an agent by navigating to **Agent pools** and select
 
 ## Q & A
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 

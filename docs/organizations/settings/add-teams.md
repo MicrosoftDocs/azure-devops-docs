@@ -16,7 +16,7 @@ ms.date: 11/05/2019
 
 # Add a team, move from one default team to several teams
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 As your organization grows, make sure that you configure your Agile tools to support that growth. Each team needs their own set of team tools to enable the autonomy it needs to manage their backlog and plan their sprints. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
@@ -58,7 +58,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-   ![Open Project settings, and then Teams](media/_shared/open-project-settings-teams-preview.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
 
@@ -88,7 +88,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-   ![Open Project settings, and then Teams](media/_shared/open-project-settings-team-new-nav.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
 
@@ -281,7 +281,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-   ![Open Project settings, and then Teams](media/_shared/open-project-settings-team-new-nav.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
 
@@ -342,7 +342,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
-	<img src="../../_shared/media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
+	<img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 

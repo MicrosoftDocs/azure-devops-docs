@@ -178,7 +178,7 @@ The main method for adding a work item using a template is to open the template 
 1. Go to **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+    > ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
     Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
@@ -395,7 +395,7 @@ You manage templates from  team settings. All templates are defined for a team. 
     Choose **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+    > ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
     Expand **Boards** and choose **Team configuration**. If you need to switch to a different team, use the team selector.
 

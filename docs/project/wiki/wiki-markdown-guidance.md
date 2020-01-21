@@ -16,9 +16,9 @@ ms.date: 12/17/2019
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 In this article, find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
 

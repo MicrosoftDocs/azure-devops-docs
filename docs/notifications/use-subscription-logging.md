@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 
 # How to use subscription logging
 
-[!INCLUDE [version-vsts-tfs-2018](../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [version-vsts-tfs-2018](../includes/version-vsts-tfs-2018.md)]
 
 > [!NOTE]  
 > This article applies to Azure DevOps, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.

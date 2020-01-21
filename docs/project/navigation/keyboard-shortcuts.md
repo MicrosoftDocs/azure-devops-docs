@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 # Keyboard shortcuts for Azure DevOps and Team Explorer
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
 
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
@@ -62,13 +62,13 @@ Type **?** to access the Global and page-specific shortcuts.
 
 ::: moniker range=">= tfs-2015"
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/global-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
 ## Code  
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/code-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
 
 ::: moniker-end
 
@@ -76,27 +76,27 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Work Items 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
 ## Work item form shortcuts
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
 ::: moniker-end
 
 ## Backlogs 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
 ::: moniker range=">= tfs-2015"
 
 ## Boards 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
 
 ## Queries 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Test Plans, Parameters, and Runs  
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/test-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/test-shortcuts.md)]
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"  
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/wiki-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)] 
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-te-shortcuts.md)] 
 
 
 

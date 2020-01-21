@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 
 # Understand how updates to specific fields are managed
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You should review this topic if one or more fields are not synchronizing as you expect between Visual Studio Team Foundation Server and Microsoft Project Server. The data type of the affected field or fields, the `OnConflict` field mapping attribute, and task hierarchy affect how the synchronization engine updates specific fields. Tasks will not update correctly if the project manager rejects one or more submission updates or if the project plan was not published. If the plan was not published, nested child work items cannot flow into the approval queue.  
   

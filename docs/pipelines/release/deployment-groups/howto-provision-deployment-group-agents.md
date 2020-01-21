@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2018'
 
 # Provision agents for deployment groups
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
@@ -216,4 +216,4 @@ To use the template:
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

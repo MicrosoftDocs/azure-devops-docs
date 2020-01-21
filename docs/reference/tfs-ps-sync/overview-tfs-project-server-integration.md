@@ -14,7 +14,7 @@ ms.topic: overview
 
 # Overview of TFS-Project Server integration features  
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> How is data synchronized between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server? What are the differences in how TFS integrates with Project Server 2010 and Project Server 2013? This topic addresses these questions.  
   

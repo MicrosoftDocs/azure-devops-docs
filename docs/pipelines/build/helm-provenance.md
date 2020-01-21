@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Package and sign Helm charts
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 In this step-by-step guide you'll learn how to package and sign Helm charts in a pipeline.
 

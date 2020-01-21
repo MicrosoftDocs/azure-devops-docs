@@ -16,18 +16,18 @@ ms.date: 12/09/2019
 
 # Tester by outcome matrix sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 When multiple testers are executing test cases, it may be possible that few have completed the execution of tests assigned to them while others still have remaining tests to execute. You can see the distribution of test point outcomes across testers to figure out how the tests can be load-balanced. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The report generated is similar to following image.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Tester by Outcome matrix - Report](media/odatapowerbi-testerbyoutcome.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Prerequisites
@@ -45,7 +45,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -60,7 +60,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?  
@@ -75,7 +75,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
 
 ### Query breakdown
 
@@ -159,7 +159,7 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

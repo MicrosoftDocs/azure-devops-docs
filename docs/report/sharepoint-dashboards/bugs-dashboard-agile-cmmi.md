@@ -15,7 +15,7 @@ ms.date: 12/30/2016
 
 # Bugs dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 You can monitor Bug activity for a team project by using the Bugs dashboard, which shows the following charts:  

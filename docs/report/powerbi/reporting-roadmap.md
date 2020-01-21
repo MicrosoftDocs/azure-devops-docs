@@ -15,7 +15,7 @@ ms.date: 05/30/2019
 
 # Reporting roadmap for Azure DevOps 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 The future of reporting for Azure DevOps and Azure DevOps Server is Analytics. 
 

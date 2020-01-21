@@ -21,7 +21,7 @@ Choose a method to securely access the code in Azure Repos, Azure DevOps Server 
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials when they're no longer needed.
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 
