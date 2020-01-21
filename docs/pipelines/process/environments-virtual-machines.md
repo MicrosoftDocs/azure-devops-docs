@@ -30,12 +30,12 @@ You can define environments in the **Environments** hub within the **Pipelines**
     > - If your VM already has any agent running on it, provide a unique name for “agent” to register with environment.
 6.	Once VM is registered, it will start appearing as an environment resource under “resources” tab of the environment.
     > [!div class="mx-imgBorder"]
-    > ![VMcreation](_img/vm-creation.png)
+    > ![VMcreation](media/vm-creation.png)
 
 7.	For adding more VMs, you can view and copy the script again by clicking on “Add resource” and choosing “Virtual Machines” as resource. This script would remain same for all the VMs to be added to this environment. 
 8.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
     > [!div class="mx-imgBorder"]
-    > ![VMresource_view](_img/vm-resourceview.png)
+    > ![VMresource_view](media/vm-resourceview.png)
 
 ## Adding and managing tags
 
@@ -44,7 +44,7 @@ you can also add/remove the same from the resource view by clicking on the tripl
 
 The tags you assign allow you to limit deployment to specific virtual machines when the environment is used in a Deployment job. Tags are each limited to 256 characters, but there is no limit to the number of tags you can use.
 > [!div class="mx-imgBorder"]
-> ![VMtags](_img/vm-tags.png)
+> ![VMtags](media/vm-tags.png)
   
 ## Reference VM resources in pipelines
 
@@ -72,10 +72,10 @@ You can apply a deployment strategy to define how your application is rolled out
 
 Deployments view of the environment provides complete traceability of commits and work items, and a cross-pipeline deployment history per environment/resource.
 > [!div class="mx-imgBorder"]
-> ![VMDeployments_view](_img/vm-deployments.png)
+> ![VMDeployments_view](media/vm-deployments.png)
   
 > [!div class="mx-imgBorder"]
-> ![VMjobs_view](_img/vm-jobsview.png)
+> ![VMjobs_view](media/vm-jobsview.png)
   
 ## Known limitations
 There are a few known gaps in VM support. When you retry a stage, it will re-run the deployment on all VMs not just failed targets. 

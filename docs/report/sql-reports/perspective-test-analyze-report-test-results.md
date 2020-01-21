@@ -21,7 +21,7 @@ ms.date: 10/17/2017
 The Test measure group is based on the Test Results relational table, which enables reporting on test results as either a property of the tests or an independent outcome. For more information, see [Test Result tables](test-result-tables.md).  
   
  
-![Test Measure Group](_img/rpt_testmg.png "RPT_TestMG")
+![Test Measure Group](media/rpt_testmg.png "RPT_TestMG")
 
 By using the Test perspective, you can create reports that answer the following questions:
 
@@ -46,13 +46,13 @@ By using the Test perspective, you can create reports that answer the following 
 ##  Example: Progress report for testing user stories  
  By using PivotTable and PivotChart reports in Excel, you can create a status report that shows the test progress on user stories, similar to the report in the following illustration.  
   
- ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
+ ![User Story Test Status Excel Report](media/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
  The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
   
 ### Specify and filter pivot fields  
 
- ![Pivot Fields for User Stories Test Progress](_img/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
+ ![Pivot Fields for User Stories Test Progress](media/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
   
  By performing the following steps, you can create a progress report for testing user stories:  
   

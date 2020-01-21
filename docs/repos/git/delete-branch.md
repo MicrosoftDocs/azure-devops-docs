@@ -27,4 +27,4 @@ monikerRange: '>= tfs-2017'
 
 3. Select the trashcan icon next to the branch you want to delete. 
 
-    ![Delete your branch in the Azure DevOps Services/TFS web portal](_img/branches/delete_branch.png)
+    ![Delete your branch in the Azure DevOps Services/TFS web portal](media/branches/delete_branch.png)

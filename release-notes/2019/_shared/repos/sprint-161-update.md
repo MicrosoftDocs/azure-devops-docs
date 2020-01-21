@@ -13,7 +13,7 @@ Slash command: /azrepos subscribe [project url] ​
 Example: /azrepos subscribe `https://dev.azure.com/myorg/myproject`​
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../_img/161_04.png)
+> ![Badge](../../media/161_04.png)
 
 Microsoft Teams:
 

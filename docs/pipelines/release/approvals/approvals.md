@@ -86,7 +86,7 @@ Notifications such as an email message can be sent to the approver(s) defined fo
 each approval step. Configure recipients and settings in the **Notifications** section of the 
 [project settings page](../../../project/navigation/go-to-service-page.md#open-project-settings).
 
-![configuring notifications for manual approvals](_img/notifications.png)
+![configuring notifications for manual approvals](media/notifications.png)
   
 The link in the email message opens the **Summary** page for the release
 where the user can approve or reject the release.

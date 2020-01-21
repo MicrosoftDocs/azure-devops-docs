@@ -20,7 +20,7 @@ If you added SQL Server Reporting Services at installation, then your on-premise
 
 The reporting warehouse is a traditional data warehouse that consists of a relational database and an Analysis Services database. 
 
-![Data Warehouse Architecture](_img/IC777266.png)
+![Data Warehouse Architecture](media/IC777266.png)
 
 All reportable data from all team projects that are defined in all project collections for a TFS deployment is written to a single relational database (Tfs_Warehouse). Data from that warehouse is then processed and written to the Analysis Services cube (Tfs_Analysis). Collecting data into a single data warehouse supports reporting across team projects and project collections. To learn more, see [Components of the TFS data warehouse](https://msdn.microsoft.com/library/ms244687.aspx). 
 

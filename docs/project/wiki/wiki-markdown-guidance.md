@@ -31,7 +31,7 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 To create a table of contents, add a [\_TOC\_]. The TOC is generated when the tag is added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
-> ![Table of contents](_img/toc_sample.png)
+> ![Table of contents](media/toc_sample.png)
 
 The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
 Only Markdown headings are considered for TOC (HTML heading tags aren't).
@@ -40,7 +40,7 @@ All HTML and Markdown tags are stripped from the headings while adding it inside
 For example: Adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
-> ![Tags for TOC](_img/toc_tags.png)
+> ![Tags for TOC](media/toc_tags.png)
 
 Consistency is maintained in the formatting in TOC.
 
@@ -69,7 +69,7 @@ To add Mermaid diagrams to a wiki page, use the following syntax:
 
 There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
-![Mermaid diagram visual](_img/wiki/mermaid-diagram.png)
+![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
 > HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
@@ -108,7 +108,7 @@ title: Hello world
 ---
 ```
 
-![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+![YAML tag, basic example](media/wiki/yaml_basic_example.png)
 
 Tags with list:
 ```yaml
@@ -121,7 +121,7 @@ title: Hello world
 ---
 ```
 
-![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
 
 ## Embed Azure Boards query results in Wiki
 
@@ -134,19 +134,19 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 
 You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
 
-> ![Query Results Icon](_img/query_selector_icon.png)
+> ![Query Results Icon](media/query_selector_icon.png)
 >
-> ![Query Selector Pane](_img/query_selector_pane.png)
+> ![Query Selector Pane](media/query_selector_pane.png)
 
 ## @mention users and groups
 
 To @mention users or groups in wiki, key in "@" in the wiki editor. This @mention opens autosuggest, from which you can mention users or groups to get notified by email.
 
-> ![Mention Autosuggest](_img/mention-autosuggest.png)
+> ![Mention Autosuggest](media/mention-autosuggest.png)
 
 You can also select "@mention" from the edit toolbar.
 
-> ![Mention from edit toolbar](_img/mention-toolbar.png)
+> ![Mention from edit toolbar](media/mention-toolbar.png)
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Automatically, you see an aggregated page visits count for the last 30 days on e
 
 Use the batch API `pagesBatch` to see the daily quantity of visits to all pages in a paginated way. They aren't sorted by number of visits, however. For data over 30 days old, you can get all page visits using the rest API. Sort these pages based on the number of visits to get the top 100. You can store these visits in a dashboard or database.
 
-![Wiki page visits](_img/wiki/wiki-page-visits.png)
+![Wiki page visits](media/wiki/wiki-page-visits.png)
 
 > [!NOTE]
 > A page visit is defined as a page view by a given user in a 15-minute interval.
@@ -209,7 +209,7 @@ In wiki pages, you can also create rich content using HTML tags.
 </br>
 <strong>Result:</strong>
 </br>
-<video src="_img/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
+<video src="media/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
 </video>
 
 **Example - Rich text format**
@@ -228,9 +228,9 @@ In wiki pages, you can also create rich content using HTML tags.
 
 **Result:**
 
-![Light theme view](_img/wiki/green-red-light-theme.png)
+![Light theme view](media/wiki/green-red-light-theme.png)
 
-![Dark theme view](_img/wiki/green-red-dark-theme.png)
+![Dark theme view](media/wiki/green-red-dark-theme.png)
 
 <!---
 <p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>

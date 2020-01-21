@@ -9,7 +9,7 @@
   displayName: cards, columns, field, swimlanes, settings, backlog levels, 
   href: customize-boards.md 
 - name: Track work as a Stakeholder
-  href: ../../organizations/security/get-started-stakeholder.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  href: /azure/devops/organizations/security/get-started-stakeholder?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Manage your project
   displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
   href: manage-boards.md
@@ -20,9 +20,9 @@
     displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
     href: why-use-azure-boards.md
   - name: "Area & iteration paths"
-    href: ../../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "About teams & Agile tools"
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Key concepts
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
     href: key-concepts.md 
@@ -33,7 +33,7 @@
   - name: Default permissions & access (Security)
     href: permissions-access-boards.md
   - name: Client support for work tracking
-    href: ../../user-guide/tools.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    href: /azure/devops/user-guide/tools?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 
 
 

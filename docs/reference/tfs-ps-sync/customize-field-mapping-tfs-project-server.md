@@ -26,7 +26,7 @@ To synchronize data between an enterprise project plan and a project, you must a
   
  As the following illustration shows, you customize the mappings in five steps:  
   
- ![Workflow for Customizing PS&#45;TFS Field Mapping](_img/pstfs_fieldmapping_workflow.png "PSTFS_FieldMapping_Workflow")  
+ ![Workflow for Customizing PS&#45;TFS Field Mapping](media/pstfs_fieldmapping_workflow.png "PSTFS_FieldMapping_Workflow")  
 Customizing the Field Mappings Between Team Foundation Server and Project Server  
   
 > [!NOTE]
@@ -290,7 +290,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 ##  <a name="customizetab"></a> Customize the Project Server tab  
  When you associate an enterprise project plan with a project, the Project Server tab is added to the work item form, as the following illustration shows. The tab is added to only those types of work items that you specify to participate in data synchronization. You customize this tab by setting the `displayTfsField` or `displayTfsMirror` attributes to `true` for those fields that you want to have appear on the form.  
   
- ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
+ ![Project Server Tab default fields](media/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
 Project Server tab  
   
 > [!IMPORTANT]

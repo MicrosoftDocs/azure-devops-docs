@@ -16,18 +16,18 @@ ms.topic: include
 <tr>
 <td align="left">View and run managed queries 
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create and save managed My queries
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create and save managed Shared queries<br/><em>(Stakeholders can&#39;t save Shared queries even if granted permissions)</em>
@@ -35,31 +35,31 @@ ms.topic: include
 <td> </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">View query charts
 </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create query charts
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Powerful semantic work-tracking search
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
 </table>
@@ -82,34 +82,34 @@ ms.topic: include
 <tr>
 <td align="left">View and run managed queries 
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create and save managed queries<br/><em>(Stakeholders can&#39;t save shared queries)</em>
 </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">View query charts
 </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Create query charts
 </td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
 </table>

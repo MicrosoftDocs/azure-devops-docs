@@ -20,7 +20,7 @@ You can query for data about the changes in the code that is under version contr
   
  For a description of the measures and dimensions that are associated with these tables in the Analysis Services cube, see [Code churn and code coverage](perspective-code-analyze-report-code-churn-coverage.md).  
   
- ![Fact Table for Code Churn](_img/teamproj_factcodechurn.png "TeamProj_FactCodeChurn")  
+ ![Fact Table for Code Churn](media/teamproj_factcodechurn.png "TeamProj_FactCodeChurn")  
   
  FactCodeChurn is associated with the following dimension tables:  
   

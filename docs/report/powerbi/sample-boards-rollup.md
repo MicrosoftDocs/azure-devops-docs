@@ -21,7 +21,7 @@ ms.date: 08/07/2019
 This article shows you how to generate the rollup count of User Stories and total Story Points for a given set of Features. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Report](_img/odatapowerbi-featurerollup-report.png)
+> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
 
 [!INCLUDE [temp](_shared/sample-required-reading.md)]
 
@@ -107,17 +107,17 @@ The following table describes each part of the query.
 1. Choose the expand button, and select the columns to report on:
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
 
 2. Check all the columns and choose **OK**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding Descendants](_img/odatapowerbi-expandrollup.png)
+    > ![Power BI + OData - expanding Descendants](media/odatapowerbi-expandrollup.png)
 
 3. The Descendants entity is flattened to the selected columns:
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanded Descendants](_img/odatapowerbi-expandedrollup.png)
+    > ![Power BI + OData - expanded Descendants](media/odatapowerbi-expandedrollup.png)
 
 ### Replace null values in rollup fields
 
@@ -140,7 +140,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Fields](_img/odatapowerbi-featurerollup-fields.png)
+> ![Sample - Boards - Rollup - Fields](media/odatapowerbi-featurerollup-fields.png)
 
 For a simple report, do the following steps:
 
@@ -156,7 +156,7 @@ For a simple report, do the following steps:
 The example report displays:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards - Rollup - Report](_img/odatapowerbi-featurerollup-report.png)
+> ![Sample - Boards - Rollup - Report](media/odatapowerbi-featurerollup-report.png)
 
 [!INCLUDE [temp](_shared/sample-multipleteams.md)]
 

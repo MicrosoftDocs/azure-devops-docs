@@ -12,7 +12,7 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
 > The following shortcuts are available from the web portal for TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
 ::: moniker-end
 
-<img src="/azure/devops/_shared/_img/keyboard-shortcuts/delivery-plans.png" alt="Delivery plan keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
+<img src="/azure/devops/_shared/media/keyboard-shortcuts/delivery-plans.png" alt="Delivery plan keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
 
 
 <table width="100%">
@@ -36,16 +36,16 @@ i&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data
 <strong>Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item<br/>
 <strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/> 
 <strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New item<br/> 
-<strong>Ctrl+</strong><img src="/azure/devops/boards/_img/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;Move item up<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/_img/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;Move item down<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/_img/icons/Arrow_Next.png" alt="Left arrow"/>&nbsp;Move item left<br/>
-<strong>Ctrl+</strong><img src="/azure/devops/boards/_img/icons/Arrow_Previous.png" alt="Right arrow"/>&nbsp;Move item right
+<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;Move item up<br/>
+<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;Move item down<br/>
+<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Next.png" alt="Left arrow"/>&nbsp;Move item left<br/>
+<strong>Ctrl+</strong><img src="/azure/devops/boards/media/icons/Arrow_Previous.png" alt="Right arrow"/>&nbsp;Move item right
 </td>
 
 <td>
 
-**Shift+**![Left arrow](/azure/devops/boards/_img/icons/Arrow_Next.png)&nbsp;&nbsp;Pan timeline left<br/>
-**Shift+**![Right arrow](/azure/devops/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;Pan timeline right<br/>
+**Shift+**![Left arrow](/azure/devops/boards/media/icons/Arrow_Next.png)&nbsp;&nbsp;Pan timeline left<br/>
+**Shift+**![Right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)&nbsp;&nbsp;Pan timeline right<br/>
 **u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all backlogs<br/>
 **o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all backlogs<br/>  
 **Shift+pageup**&nbsp;&nbsp;&nbsp;&nbsp;Focus on previous team<br/>

@@ -42,6 +42,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 
 ### Additional URLs for signing into Azure DevOps and Azure
 
+* `https://amcdn.msftauth.net`
 * `https://windows.net`
 * `https://microsoftonline.com`
 * `https://visualstudio.com`

@@ -33,7 +33,7 @@ See the **UI** example in the [Azure DevOps Services Extension Samples](https://
 
 ## Add a group
 
-![toolbar item in work item form](./_img/add-workitem-extension-group.png)
+![toolbar item in work item form](./media/add-workitem-extension-group.png)
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -127,7 +127,7 @@ This sample shows how to register an object that is called when various events h
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
 
-![toolbar item in work item form](./_img/add-workitem-extension-page.png)
+![toolbar item in work item form](./media/add-workitem-extension-page.png)
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -170,7 +170,7 @@ In Azure DevOps Services, by default the group extensions appear in the end of t
 <a name="addmenuaction"></a>
 ## Add menu action
 
-![toolbar item in work item form](./_img/add-workitem-extension-toolbar.png)
+![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 

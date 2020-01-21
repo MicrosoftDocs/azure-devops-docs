@@ -44,7 +44,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The team can review the Build Status report to help determine the trend of build health over time and whether any builds need attention today. As the following illustration shows, the report provides a stacked column of the number of builds that were run with an outcome of failed, passed, or unknown during the most recent two weeks.  
   
- ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
+ ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")  
   
  The chart is based on a PivotTable from data that is stored in the Analysis Services database.  
   

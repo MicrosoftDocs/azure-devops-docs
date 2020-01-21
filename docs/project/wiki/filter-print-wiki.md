@@ -28,7 +28,7 @@ To print a wiki page, you can select a page and print it.
 Enter a title, keyword, or character string into the **Filter pages** box to quickly find pages whose title contains the keyword.
 
 > [!div class="mx-imgBorder"]  
-> ![Filter page by title](_img/wiki/filter-box.png)
+> ![Filter page by title](media/wiki/filter-box.png)
 
 <a id="print-page"></a>
 
@@ -37,7 +37,7 @@ Enter a title, keyword, or character string into the **Filter pages** box to qui
 The **Print page** menu option allows you to use your browser print function to send a page to a printer or save as a PDF. Currently, you can only print a single page at a time.
 
 > [!div class="mx-imgBorder"]  
-> ![Print page](_img/wiki/print-page.png)
+> ![Print page](media/wiki/print-page.png)
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  

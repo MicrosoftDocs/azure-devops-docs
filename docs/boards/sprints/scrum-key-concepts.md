@@ -39,7 +39,7 @@ Capacity correlates to actual task time, either hours or days, that an individua
 
 By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. Learn more: [Set sprint capacity](set-capacity.md). 
 
-![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
+![Team capacity planning tool](media/team-capacity-planning-tool.png) 
 
 ## Capacity bars 
 
@@ -50,7 +50,7 @@ With capacity bars, you can quickly see who is over, at, or under capacity. Capa
 
 |Capacity colors |Capacity bars |
 |----------------|--------------|
-|![These colors help you distinguish capacity](_img/capacity-planning-tool-color-chart.png) | ![Capacity bars](_img/ALM_DS_CapacityBars_S.png) | 
+|![These colors help you distinguish capacity](media/capacity-planning-tool-color-chart.png) | ![Capacity bars](media/ALM_DS_CapacityBars_S.png) | 
 
 Learn more: [Adjust work to fit sprint capacity](adjust-work.md). 
 
@@ -68,7 +68,7 @@ The forecast tool helps team plan their sprints by showing them the backlog item
 As shown here, a velocity of 20 indicates that it will take five sprints to complete the work shown.  Learn more: <a href="forecast.md" data-raw-source="[Forecast your product backlog](forecast.md)">Forecast your product backlog</a>.
 
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlog, Forecast results for 6 sprints](_img/forecast-s125.png)
+> ![Boards>Backlog, Forecast results for 6 sprints](media/forecast-s125.png)
 
 [!INCLUDE [temp](../../_shared/glossary-terms/issues.md)] 
 
@@ -103,7 +103,7 @@ Scrum Masters help build and maintain healthy teams by employing Scrum processes
 
 The sprint burndown chart reflects the progress made by a team in completing all the work they estimated during their sprint planning meeting. Team's monitor it to mitigate risk and check for scope creep throughout their sprint cycle. The ideal trend line always indicates a smooth and steady burndown. The blue area, as shown in the following chart, represents what's actually going on. It shows the buildup of work as team members add tasks and the reduction of work as team members complete those tasks. Learn more: [Monitor sprint burndown](../../report/dashboards/configure-sprint-burndown.md). 
  
-![Sprint burndown chart](_img/ALM_DS_SprntBD_Chrt_S.png)
+![Sprint burndown chart](media/ALM_DS_SprntBD_Chrt_S.png)
  
 ## Sprint goals
 
@@ -127,7 +127,7 @@ A type of work item used to track estimated and remaining work. In Scrum a task 
 
 A taskboard provides an interactive progress board for work required to complete a team&#39;s sprint backlog. During your sprint you&#39;ll want to update the status of tasks and the remaining work for each task. Updating tasks daily or several times a week yields a smoother <a href="#sbc" data-raw-source="[sprint burndown chart](#sbc)">sprint burndown chart</a>.  Learn more: <a href="task-board.md" data-raw-source="[Taskboard](task-board.md)">Taskboard</a>.
 
-![taskboard](_img/ALM_DS_Task_board_S.png)
+![taskboard](media/ALM_DS_Task_board_S.png)
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
@@ -156,7 +156,7 @@ Velocity is a measure of how much work a team can complete based on their sprint
 
 For example, in the chart shown below the green bar indicates the total estimated effort (story points) of the user stories completed within each sprint. Blue corresponds to the estimated effort of items not yet completed. Learn more: [View and work with the built-in team velocity chart](../../report/dashboards/team-velocity.md). 
 
-![Velocity chart](_img/velocity-chart.png)
+![Velocity chart](media/velocity-chart.png)
 
 ::: moniker range=">= azure-devops-2019"  
 In addition to the built-in Velocity chart, you can add a Velocity widget to your team dashboard. You can configure this widget to sum a count of work items or the sum of effort. Learn more: [Configure the Velocity widget](../../report/dashboards/team-velocity.md). 

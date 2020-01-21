@@ -31,7 +31,7 @@ You add all contributions by installing its extension from the [Visual Studio Ma
 
 For example, you can add the [**Who recently viewed a work item?** extension](https://marketplace.visualstudio.com/items?itemName=mmanela.vsts-workitem-recentlyviewed). This group-level contribution appears in your work item form as shown.
 
-<img src="_img/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
+<img src="media/process/custom-controls-group-extension-example-who-recently-viewed.png" alt="Work item form, group extension example, Who viewed this" style="border: 2px solid #C3C3C3;" />
 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
@@ -45,9 +45,9 @@ To add extensions or edit a process, you must be a member of the Project Collect
 
 ## Review installed Marketplace extensions   
 
-From the **Settings** context, **Extensions**, you can view the extensions that are already installed. You may need to choose ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
+From the **Settings** context, **Extensions**, you can view the extensions that are already installed. You may need to choose ![Refresh](media/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
 
-![Organization settings, Extensions page](_img/process/custom-controls-extensions-admin-page-ts.png)   
+![Organization settings, Extensions page](media/process/custom-controls-extensions-admin-page-ts.png)   
 
 To learn more about extensions, see [Install free extensions](../../../marketplace/install-extension.md).
 
@@ -59,14 +59,14 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 1. To add an extension to a work item type, choose your inherited process, the WIT, and then choose **Get extensions**.
  
 	> [!div class="mx-imgBorder"]  
-	> ![Process, WIT, Bug, Layout, Get extensions](_img/process/cprocess-choose-extensions.png) 
+	> ![Process, WIT, Bug, Layout, Get extensions](media/process/cprocess-choose-extensions.png) 
 
 1. Select the extension you want to add. Here we choose the Work item checklist.
 
 2. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Visual Studio Marketplace, install extension](_img/process/cprocess-install-extension.png) 
+	> ![Visual Studio Marketplace, install extension](media/process/cprocess-install-extension.png) 
 
 	> [!IMPORTANT]  
 	> Extensions you install are added to all WITs across all processes.
@@ -74,7 +74,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 3. Return to the process and WIT and verify the location of the extension is where you want it. Look for it at the bottom of the middle column and drag it to where you want it on the form. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Group extension on Bug work item form](_img/process/cpfield-add-checklist-extension.png) 
+	> ![Group extension on Bug work item form](media/process/cpfield-add-checklist-extension.png) 
 
 
 <a id="add-field-control"></a>
@@ -89,7 +89,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 3. With the WIT selected, choose **Add custom control**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process, WIT, Bug, Layout, New custom control](_img/process/cpcontrols-add-custom-control.png) 
+	> ![Process, WIT, Bug, Layout, New custom control](media/process/cpcontrols-add-custom-control.png) 
 
 	> [!NOTE]    
 	> If you don't see the **Add custom control** option, then you haven't installed a field-level extension. Or, you may need to refresh your browser to cause your browser to register any new extensions that have been recently installed. 
@@ -99,13 +99,13 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 	For example, here we choose the Toggle control that you can associate with a Boolean field.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add a  custom control dialog, Definition tab](_img/process/custom-control-add-field-level-control-to-bug.png) 
+	> ![Add a  custom control dialog, Definition tab](media/process/custom-control-add-field-level-control-to-bug.png) 
 
 5. Choose the **Options** tab and fill out the dialog box. The options you need to specify depend on the custom control you've selected.
 
 	For example, here we specify the custom field, Triaged, and indicate the toggle labels to appear on the form.
 
-	<img src="_img/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/process/custom-control-add-field-level-control-to-bug-options-tab.png" alt="Custom control dialog" style="border: 2px solid #C3C3C3;" />
 
 6. (Optional) Open the **Layout** tab and specify the label for the field. 
  
@@ -118,8 +118,8 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
    <table>
    <tr><th>Boolean field with checkbox</th>
    <th>Boolean field with toggle control</th></tr> 
-   <tr><td><img src="_img/process/boolean-checkbox.png" alt="Boolean field with checkbox"/></td>
-   <td><img src="_img/process/boolean-toggle.png" alt="Boolean field with toggle control"/></td>
+   <tr><td><img src="media/process/boolean-checkbox.png" alt="Boolean field with checkbox"/></td>
+   <td><img src="media/process/boolean-toggle.png" alt="Boolean field with toggle control"/></td>
    </tr> 
    </table>
 
@@ -137,7 +137,7 @@ Action-level contributions are added to the context menu of inherited and custom
 
 For example, the following image shows nine action-level contributions have been added and appear in the context menu for the user story.  
 
-![User story web form, context menu, Action-level options](_img/process/custom-control-web-form-user-story-action-level-menu-options.png) 
+![User story web form, context menu, Action-level options](media/process/custom-control-web-form-user-story-action-level-menu-options.png) 
 
 <a id="process-rest-api">  </a>
 ## Programmatically add custom controls 

@@ -59,17 +59,17 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the sprint Taskboard for a team](_img/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
+	> ![Open the sprint Taskboard for a team](media/add-tasks/open-sprint-backlog-taskboard-s155-co.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)
+	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
 
 1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
 
@@ -81,17 +81,17 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the sprint Taskboard for a team](_img/taskboard/open-taskboard-agile.png)
+	> ![Open the sprint Taskboard for a team](media/taskboard/open-taskboard-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png)
+	> ![Choose another team](media/add-tasks/team-selector-sprints-agile.png)
 
 1. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
 
@@ -102,19 +102,19 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 1. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png)
+	> ![Open the Boards>Backlogs page](media/assign-items-sprint/open-work-backlogs-standard.png)
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png)
+	> ![Choose another team](media/assign-items-sprint/team-selector-backlogs-standard.png)
 
 	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).
 
 1. Choose the sprint you want to plan, and then choose **Board**.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open taskboard for a sprint](_img/taskboard/open-taskboard-standard.png)
+	> ![Open taskboard for a sprint](media/taskboard/open-taskboard-standard.png)
 
 	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
 
@@ -194,27 +194,27 @@ With this view, you can quickly see which items are nearing completion and which
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To show cards based on their backlog-to-task groupings, choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
+1. To show cards based on their backlog-to-task groupings, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Backlog items** (for Scrum), **Stories** (for Agile) and **Requirements** (for CMMI).
 
 	> [!div class="mx-imgBorder"]
-	> ![Set view options](_img/taskboard/group-items-all-agile.png)
+	> ![Set view options](media/taskboard/group-items-all-agile.png)
 
-1. You can **Collapse All** or **Expand All** rows, and selectively expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
+1. You can **Collapse All** or **Expand All** rows, and selectively expand ![expand icon](../media/icons/expand_row_icon.png) and collapse ![collapse icon](../media/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
    > [!div class="mx-imgBorder"]
-   > ![taskboard, collapsed, show items](_img/taskboard/group-items-all-taskboard-agile.png)
+   > ![taskboard, collapsed, show items](media/taskboard/group-items-all-taskboard-agile.png)
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2015 <= tfs-2018" 
-You can expand ![expand icon](../_img/icons/expand_row_icon.png) and collapse ![collapse icon](../_img/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
+You can expand ![expand icon](../media/icons/expand_row_icon.png) and collapse ![collapse icon](../media/icons/collapse_row_icon.png) a row to focus on a particular item and its tasks.
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-![Group by backlog items, show All team members](_img/taskboard/group-items-all.png)
+![Group by backlog items, show All team members](media/taskboard/group-items-all.png)
 
 ::: moniker-end
 
@@ -227,10 +227,10 @@ With this view, you can focus on the work completed and the work remaining for e
 
 ::: moniker range=">= azure-devops-2019"
 
-To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
+To filter on the tasks for a specific team member, choose the ![ ](../../media/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 > [!div class="mx-imgBorder"]
-> ![taskboard, filter on a person](_img/taskboard/group-by-people.png)
+> ![taskboard, filter on a person](media/taskboard/group-by-people.png)
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ To filter on the tasks for a specific team member, choose the ![ ](../../_img/ic
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
-![Group by Backlog items, show Christie Church team member](_img/ALM_TB_GRP_Items_CC.png)
+![Group by Backlog items, show Christie Church team member](media/ALM_TB_GRP_Items_CC.png)
 ::: moniker-end
 
 
@@ -251,17 +251,17 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![ ](../../_img/icons/view-options-icon.png) view options icon and select **People**.
+1. Choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **People**.
 
 	Only those team members with tasks assigned to them are listed. All their tasks are shown as cards under their column state.
 
 	> [!div class="mx-imgBorder"]
-	> ![Group by people](_img/taskboard/group-by-people-agile.png)
+	> ![Group by people](media/taskboard/group-by-people-agile.png)
 
-1. To filter on the tasks for a specific team member, choose the ![ ](../../_img/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
+1. To filter on the tasks for a specific team member, choose the ![ ](../../media/icons/filter-icon.png) filter icon, and then select their name from the **Assigned to** filter box.
 
 	> [!div class="mx-imgBorder"]
-	> ![Choose another sprint](_img/taskboard/filter-by-a-team-member.png)
+	> ![Choose another sprint](media/taskboard/filter-by-a-team-member.png)
 
 ::: moniker-end
 
@@ -269,7 +269,7 @@ With this view, you can quickly see all the tasks associated with each team memb
 
 Choose the **Group by People** option, and then select a specific team member, or **All**.
 
-![Group by People, show All team member](_img/ALM_TB_GRP_People_All.png)
+![Group by People, show All team member](media/ALM_TB_GRP_People_All.png)
 
 ::: moniker-end
 
@@ -285,7 +285,7 @@ The **Taskboard** makes quick work of updating both task status and remaining wo
 
 Simply drag tasks to a downstream column to reflect if they are in progress or completed.
 
-![taskboard, update task status](_img/ALM_TB_Move_To_Done.png)
+![taskboard, update task status](media/ALM_TB_Move_To_Done.png)
 
 When you move a task to the Done or Completed column, the system automatically updates the *Remaining Work* field to 0. If you discover more work is remaining, change the State back to In progress or To do and enter a value for the remaining work.
 
@@ -297,11 +297,11 @@ Each team member can review the tasks they've worked on and estimate the work re
 
 ::: moniker range=">= azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> ![Update remaining work](_img/taskboard/update-hours.png)
+> ![Update remaining work](media/taskboard/update-hours.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-![taskboard, update task remaining work](_img/ALM_TB_UpdateRWork.png)
+![taskboard, update task remaining work](media/ALM_TB_UpdateRWork.png)
 ::: moniker-end
 
 <a id="close-sprint">  </a>
@@ -349,8 +349,8 @@ As you can see, the taskboard provides a lot of support for your Scrum activitie
 | Capacity              | [Switch to Capacity planning](assign-work-sprint.md#set-capacity)   |
 | Group by Stories/People   | Switch grouping of cards based on backlog items or team members                        |
 | Person                    | Filter tasks to show items assigned to All or a selected team member            |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |
-| ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
+| ![Settings icon](../media/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |
+| ![full screen icon](../media/icons/fullscreen_icon.png)/![exit full screen icon](../media/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
 See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md).
 
@@ -370,7 +370,7 @@ You can reduce the number of items on the taskboard by moving them to the backlo
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
-![multi-select items from the sprint backlog](_img/sprint-backlog-multi-select-non-sequential-items.png)
+![multi-select items from the sprint backlog](media/sprint-backlog-multi-select-non-sequential-items.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -378,7 +378,7 @@ Requires TFS 2015.1 or later version.
 - From the taskboard, drag the PBI or user story from the first column onto the backlog or future sprint. All child tasks automatically move with the parent item.
 - From the sprint backlog, multi-select the items to move and then click the context menu for an item and select the iteration to move them to.
 
-   <img src="_img/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
+   <img src="media/sprint-backlog-multi-select-non-sequential-items.png" alt="multi-select items from the sprint backlog" style="border: 1px solid #C3C3C3;" />
   ::: moniker-end
 
 ::: moniker range="tfs-2013"
@@ -386,7 +386,7 @@ Requires TFS 2015.1 or later version.
 
 - From the sprint backlog, drag an item back to the backlog or to another sprint.
 
-	<img src="_img/IC797613.png" alt="Drag items back to product backlog" style="border: 1px solid #C3C3C3;" />
+	<img src="media/IC797613.png" alt="Drag items back to product backlog" style="border: 1px solid #C3C3C3;" />
 
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
 ::: moniker-end

@@ -14,7 +14,7 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 
 4. In the **Register machine** section, make sure that **Windows** is selected, and that **Use a personal access token in the script for authentication** is also selected. Click **Copy script to clipboard**.
 
-   ![Screenshot showing update to code](../../../apps/_shared/_img/windows-deployment-group-setup.png)
+   ![Screenshot showing update to code](../../../apps/_shared/media/windows-deployment-group-setup.png)
 
    The script that you've copied to your clipboard will download and configure an agent on the VM so that it can receive new web deployment packages and apply them to IIS.
 
@@ -28,4 +28,4 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 
 9. On the **Deployment groups** page of Azure Pipelines, open the *myIIS* deployment group. On the **Machines** tab, verify that your VM is listed.
 
-   ![Screenshot showing update to code](../../../apps/_shared/_img/windows-deployment-group.png)
+   ![Screenshot showing update to code](../../../apps/_shared/media/windows-deployment-group.png)

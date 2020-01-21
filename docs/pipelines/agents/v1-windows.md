@@ -177,7 +177,7 @@ Prints usage information.
 
 Yes. If you are an existing customer with custom build processes you are not yet ready to migrate, you can continue to use XAML builds, controllers, and agents.
 
-![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
+![Configure XAML build controllers and agents](media/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
 ::: moniker range="< azure-devops"
 
