@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban. The following table summarizes the most common configurations and customizations you can make and the Azure Boards tools that are impacted by them. 
  
-[!INCLUDE [temp](_shared/config-and-customize.md)]
+[!INCLUDE [temp](includes/config-and-customize.md)]
 
 <!---
 
@@ -38,13 +38,13 @@ workflow customizations
 --> 
 
 
-### Tasks versus requirements 
+### Work tracking options and recommended usage  
 
-One of the main choices teams have is tracking their work primarily using tasks, requirements, or other portfolio work item type, such as features or epics. The main choices and recommended usage are described as follows.  
+One of the main choices teams have is choosing the work item types they use to track their work. The main choices and recommended usage are described as follows.  
 
-|Options | Recommended usage  |
+|Work item types | Recommended usage  |
 |-----------|----------------
-| Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog using the Product backlog  |
+| Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog |
 | Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work 
 | Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size,  and don't estimate or track time associated with work | 
 | Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams | 
@@ -66,7 +66,7 @@ The pros and cons of each option is summarized in the following table.
 <th width="43%">Cons</th>
 </tr>
 <tr>
-<td>Tasks only</td>
+<td>Requirements with child-dependent tasks</td>
 <td>
 <ul>
 <li>Supports Scrum methods</li>
@@ -87,7 +87,7 @@ The pros and cons of each option is summarized in the following table.
 </td>
 </tr>
 
-Requirements with child-dependent tasks
+
 
 
 <tr>
@@ -95,9 +95,11 @@ Requirements with child-dependent tasks
 </td>
 <td>
 <ul>
+<li>Supports Kanban and Scrumban methods </li>
+<li>Quickly define and prioritize backlog items </li>
+<li>Estimate work based on Story Points, Effort, or Size  </li>
 <li>Forecast sprints using team velocity </li>
-<li>Track estimated and remaining work </li>
-<li>Monitor sprint burndown based on remaining work such as hours or days </li>
+<li>Monitor sprint burndown based on Story Points, Effort, or Size or work item count </li>
 </ul>
 </td>
 <td>
@@ -130,6 +132,24 @@ Requirements with child-dependent tasks
 </tbody>
 </table>
 
+
+### Example team choices 
+
+Some examples of real-world teams who use Azure Boards to track work are described below. 
+
+- Product manage team uses features to prioritize their work with child-dependent user stories assigned to development team: 
+	- Product management team of ten PMs manages five development teams and their work
+	- Five development teams comprised of 8 to 12 developers manage their work using user stories with optional child-dependent tasks, no time estimates made 
+
+
+
+- Content development team of 50 writers uses tasks to track their work 
+	- 
+
+- Support operations team 
+
+
+-  
 
 
 ## Area paths, product teams, and delivery plans 
