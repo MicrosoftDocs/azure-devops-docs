@@ -193,13 +193,23 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
- If you configured the agent to run interactively, to run it:
+If you configured the agent to run interactively, to run it:
 
  ```ps
  .\run.cmd
  ```
 
 To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to restart it. 
+
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+
+ ```ps
+ .\run.cmd --once
+ ```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ### Run as a service
 
