@@ -19,7 +19,6 @@ ms.date: 01/21/2020
 <th width="20%">Analytics</th>
 <th width="20%">Portfolio planning tools</th>
 </tr>
-
 <tr>
 <td><a href="/azure/devops/organizations/settings/set-area-paths">Area paths, project configuration and team subscriptions</a></td>
 <td>
@@ -46,7 +45,6 @@ ms.date: 01/21/2020
 </ul>
 </td>
 </tr>
-
 <tr>
 <td><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints">Iteration paths, project configuration and team subscription</a></td>
 <td>
@@ -95,8 +93,7 @@ Custom work item types, Taskboard (Project)
 <li>Velocity</li>
 </ul>
 </td>
-<td>
-   
+<td>   
 </td>
 </tr>
 <tr>
@@ -117,8 +114,7 @@ Additional portfolio backlogs (Project)
 <li>Velocity</li>
 </ul>
 </td>
-<td>
-   
+<td>   
 </td>
 </tr>
 <tr>

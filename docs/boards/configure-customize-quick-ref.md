@@ -27,27 +27,18 @@ If you're just getting started as a Project Administrator, see [Get started as a
 ## What to consider?
 
 When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban. The following table summarizes the most common configurations and customizations you can make and the Azure Boards tools that are impacted by them. 
- 
-[!INCLUDE [temp](includes/config-and-customize.md)]
-
-<!---
-
-gannt chart
-workflow customizations 
-
---> 
 
 
 ### Work tracking options and recommended usage  
 
-One of the main choices teams have is choosing the work item types they use to track their work. The main choices and recommended usage are described as follows.  
+One of the main choices teams have is choosing the work item types they use to track their work. The work item type options and recommended usage are summarized as follows.  
 
 |Work item types | Recommended usage  |
 |-----------|----------------
 | Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog |
-| Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work 
-| Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size,  and don't estimate or track time associated with work | 
-| Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams | 
+| Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work | 
+| Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't estimate or track time associated with work | 
+| Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams (MORE)  | 
 
 Tracking work using tasks, supports work tracking ...   
 
@@ -86,10 +77,6 @@ The pros and cons of each option is summarized in the following table.
 </ul>
 </td>
 </tr>
-
-
-
-
 <tr>
 <td>Requirements only, such as user stories (Agile), issues (Basic), product backlog items (Scrum), requirements (CMMI)
 </td>
@@ -110,7 +97,6 @@ The pros and cons of each option is summarized in the following table.
 </ul>
 </td>
 </tr>
-
 <tr>
 <td>Requirements grouped under portfolio work item types, such as epics and features
 </td>
@@ -148,8 +134,17 @@ Some examples of real-world teams who use Azure Boards to track work are describ
 
 - Support operations team 
 
+## Configure and customization options 
+ 
+[!INCLUDE [temp](includes/config-and-customize.md)]
 
--  
+<!---
+
+gannt chart
+workflow customizations 
+
+--> 
+
 
 
 ## Area paths, product teams, and delivery plans 
