@@ -200,10 +200,10 @@ You configure resources either for yourself, your team, a project, or your proje
 
 
 Organized by functional services.  
-User - ![ ](_img/icons/profile.png)  
-Team - ![ ](_img/icons/team.png)  
-Project - ![ ](_img/icons/project.png)  
-Collection - ![ ](_img/icons/collection.png)  
+User - ![ ](media/icons/profile.png)  
+Team - ![ ](media/icons/team.png)  
+Project - ![ ](media/icons/project.png)  
+Collection - ![ ](media/icons/collection.png)  
  
 Collection/Organization 
 
