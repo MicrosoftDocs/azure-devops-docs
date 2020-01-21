@@ -11,7 +11,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/16/2020
+ms.date: 01/21/2020
 ---
 
 # Quickstart: Access, export, and filter audit logs
@@ -29,13 +29,6 @@ Audit events can be the following occurrences:
 - branch policy changes
 - accessing the auditing feature
 - and much more
-
-When an audit-able event occurs, Azure DevOps records a log entry. These events contain the following information:
-- IP address
-- the user who caused the event
-- what happened
-- when it happened   
-- where it happened
 
 Auditing is turned on by default for all Azure DevOps organizations. You can't turn auditing off, which ensures that you never miss an actionable event. Events get stored for 90 days and then they’re deleted. However, you can back up audit events to an external location to keep the data for longer than the 90-day period. 
 
@@ -101,7 +94,7 @@ See the following description of the information that's visible on the auditing 
 |IP    |  IP address of the individual that triggered the audit event.    |
 |Timestamp     | Time that the triggered event happened. Time is localized to your time zone.        |
 |Area     | Location in Azure DevOps where the event occurred.        |
-|Category     | Description of the type of action that occurred. For example, modify, rename, create, delete, remove, and access.   | 
+|Category     | Description of the type of action that occurred. For example, modify, rename, create, delete, remove, execute, and access.   | 
 |Details    | Brief description of what happened during the event.        |
 
 
