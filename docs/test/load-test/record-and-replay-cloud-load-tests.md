@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Record and replay cloud-based load tests
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 You can record and then replay cloud-based load tests on your web app or website directly
 using an HTTP Archive file and Azure DevOps.
@@ -132,7 +132,7 @@ web portal using an HTTP Archive (**.har**) file.
 
 1. Sign into Azure DevOps.
 
-2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../includes/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
    ![Selecting a HTTP archive test](media/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
@@ -251,4 +251,4 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 * [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

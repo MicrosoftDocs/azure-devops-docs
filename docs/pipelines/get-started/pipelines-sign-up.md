@@ -20,7 +20,7 @@ Sign up for an Azure DevOps organization and Azure Pipelines to begin managing C
 
 From the [Azure website](https://azure.microsoft.com/services/devops/pipelines/), select **Start free with Azure Pipelines**.
 
-![Start free with Azure Pipelines](../../_shared/media/start-free-with-azure-pipelines.png)
+![Start free with Azure Pipelines](../../media/start-free-with-azure-pipelines.png)
 
 If you already [signed up for Azure DevOps Services](../../user-guide/sign-up-invite-teammates.md), on your new project page, select **Azure Pipelines**.
 

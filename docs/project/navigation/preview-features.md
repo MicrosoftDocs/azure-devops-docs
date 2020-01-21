@@ -17,7 +17,7 @@ ms.date: 11/06/2019
 
 # Enable preview features 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 

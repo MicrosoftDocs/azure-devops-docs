@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # cURL Upload Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
 such as FTP, FTPS, SFTP, HTTP, and more.
@@ -28,7 +28,7 @@ curl
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.md)]
+[!INCLUDE [temp](../includes/yaml/CUrlUploaderV2.md)]
 
 ::: moniker-end
 
@@ -99,17 +99,17 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
 ### Where can I learn FTP commands?
 
 [List of raw FTP commands](https://www.nsftools.com/tips/RawFTP.htm)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

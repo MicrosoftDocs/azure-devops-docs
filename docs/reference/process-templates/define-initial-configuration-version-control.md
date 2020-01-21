@@ -16,7 +16,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Git and TFVC
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!NOTE]  
 >  For TFS 2017.3 and later versions, you create projects from the web 

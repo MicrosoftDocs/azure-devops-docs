@@ -17,7 +17,7 @@ ms.date: 11/01/2018
 
 # Widget catalog 
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
 

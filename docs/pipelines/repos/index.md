@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Supported build source repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ## Configure a repository
@@ -84,7 +84,7 @@ See details about building specific repository types:
 
 ## Options for Git repositories
 
-[!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
+[!INCLUDE [temp](includes/pipeline-options-for-git.md)]
 
 ## Q & A
 
@@ -98,10 +98,10 @@ When a pipeline uses a remote, 3rd-party repository host such as Bitbucket Cloud
 
 Reference directories using build variables such as `$(Build.SourcesDirectory)` and `$(Build.BinariesDirectory)`. To learn more, see [Build variables](../build/variables.md).
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

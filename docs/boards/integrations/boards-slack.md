@@ -15,7 +15,7 @@ ms.date: 10/24/2019
  
 # Azure Boards with Slack
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 If you use [Slack](https://slack.com), you can use the [Azure Boards app for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp) to create work items and monitor work item activity in your Azure Boards project from your Slack channel. 
 
@@ -196,7 +196,7 @@ The Azure Boards app for Slack can help you create work items and monitor the wo
 
 If you are experiencing the following errors when using the [Azure Boards App for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installboardsapp), follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](_shared/boards-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azboards signout` command followed by the `/azboards signin` command. 
 

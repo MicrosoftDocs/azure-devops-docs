@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Pipeline permissions and security roles
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
 
@@ -29,7 +29,7 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../organizations/security/_shared/build-release.md)]
+[!INCLUDE [temp](../../organizations/security/includes/build-release.md)]
 
 ## Security of agents and library entities
 
@@ -159,19 +159,19 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab in **Azure Pipelines**.
 
-[!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/library-roles.md)]
 
 ## Service connection security roles
 
 You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/service-endpoint-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
 You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/deployment-pool-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
 
 ## Related notes 

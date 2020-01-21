@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Trigger a release from a build in Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Start a release automatically when you build your app using Team Foundation 
 Build (TFBuild). You can choose which stage of your release pipeline to start 
@@ -266,6 +266,6 @@ or more file extensions using a semi-colon (**;**).
 * [Release with deployment agents](release-with-agents.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

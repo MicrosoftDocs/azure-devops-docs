@@ -126,14 +126,14 @@ Choose the package from the **Packages** page in the **Build and Release** page 
    ::: moniker range=">= azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button in the upper-right of the page](../_shared/media/connect-to-feed-azure-devops-newnav.png)
+   >![Connect to feed button in the upper-right of the page](../media/connect-to-feed-azure-devops-newnav.png)
    > 
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Connect to feed button in the upper-right of the page](../_shared/media/connect-to-feed.png)
+   ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
 
    ::: moniker-end
 
@@ -176,11 +176,11 @@ To configure retention policies:
 
 1. Navigate to Azure Artifacts:
 
-    ![Go to Azure Artifacts](../_shared/media/goto-feed-hub-azure-devops-newnav.png)
+    ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select the gear icon in your feed and select **Feed settings**:
 
-    ![Top right of screen, gear icon and then feed settings](../_shared/media/feed-settings-azure-devops-newnav.png)
+    ![Top right of screen, gear icon and then feed settings](../media/feed-settings-azure-devops-newnav.png)
 
 2. From the **Feed details** tab, in the **Retention policies** setting, enter the maximum number of versions per package to retain, and the number of days to keep recently downloaded packages:
 
@@ -194,7 +194,7 @@ To configure retention policies:
 
 1. Navigate to your feed from the **Packages** page in the **Build and Release** page group and select the gear icon: 
 
-    ![Edit an Azure DevOps Services feed in Package](../_shared/media/edit-feed-full.png)
+    ![Edit an Azure DevOps Services feed in Package](../media/edit-feed-full.png)
 
 2. From the **Retention** tab, enter the maximum number of versions per package to retain:
 
@@ -212,7 +212,7 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 
 1. Navigate to Azure Artifacts:
 
-    ![Go to Azure Artifacts](../_shared/media/goto-feed-hub-azure-devops-newnav.png)
+    ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select "Recycle Bin".
 

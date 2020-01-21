@@ -26,7 +26,7 @@ xcode
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/XcodeV5.md)]
+[!INCLUDE [temp](../includes/yaml/XcodeV5.md)]
 
 ::: moniker-end
 
@@ -242,6 +242,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

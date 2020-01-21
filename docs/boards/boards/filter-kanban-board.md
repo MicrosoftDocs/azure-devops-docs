@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Filter your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
 
 
 <a id="filter"></a>

@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Deployment jobs
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 > [!NOTE]
 > To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).

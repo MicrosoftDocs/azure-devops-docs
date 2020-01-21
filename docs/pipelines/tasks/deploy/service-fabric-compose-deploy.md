@@ -35,7 +35,7 @@ See [Docker Compose deployment support in Azure Service Fabric](/azure/service-f
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeployV0.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricComposeDeployV0.md)]
 
 ::: moniker-end
 
@@ -61,6 +61,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

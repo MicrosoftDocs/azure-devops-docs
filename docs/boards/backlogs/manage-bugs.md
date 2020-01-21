@@ -15,7 +15,7 @@ ms.date: 07/22/2019
 
 # Define, triage, and manage bugs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -31,9 +31,9 @@ In a nutshell, you manage bugs through the following tasks:
 
 Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]  
+[!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]    
 
 ## Define and list bugs  
 
@@ -63,7 +63,7 @@ You can review bugs defined for your project by creating a query and specifying 
 
 The bug work item form tracks similar information to the one shown for the Scrum process. 
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
 #### [New web form](#tab/new-web-form/)
 
@@ -193,7 +193,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../includes/discussion-tip.md)] 
 
 <a id="test-tools"> </a>
 
@@ -279,7 +279,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
-<img src="../_shared/media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
 
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
@@ -313,7 +313,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 
 ## Customize the bug form
 
-[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ## Try this next

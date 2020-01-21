@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Testing Microsoft Store apps
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   
@@ -27,7 +27,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 - Couple the device to your computer, and run the tests using Microsoft Test Manager. This option allows you to capture screenshots and [collect diagnostic data](collect-more-diagnostic-data-in-manual-tests.md) from the device.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ### Prepare the Windows device for testing  
   
@@ -97,4 +97,4 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
 
 Verify that the share location where the .appx file and certificates are stored is properly secured.
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

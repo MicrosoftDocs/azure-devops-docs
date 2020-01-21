@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Add reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By adding a report server to your TFS (on-premises) deployment, you can access a wealth of data about your team's projects, such as build quality, bug trends, burndown, and test progress. SQL Server Reporting Services (SSRS) reports provide insight to help teams manage work and improve processes.
 
@@ -27,7 +27,7 @@ The sequence of tasks is as follows:
 [![Review team activities](media/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 
-[!INCLUDE [temp](../_shared/tfs-header-17-15.md)]
+[!INCLUDE [temp](../includes/tfs-header-17-15.md)]
 
 
 If your reports don't appear as expected, review the checklists provided under [Review team activities](review-team-activities-for-useful-reports.md) for the necessary team activities to generate useful reports. Also, access information that describes healthy and unhealthy versions of each report.

@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 # Test Case Readiness report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team starts to define test cases, you can use the Test Case Readiness report to determine how many test cases have been defined and are ready to run.  
   

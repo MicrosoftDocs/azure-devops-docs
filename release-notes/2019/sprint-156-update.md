@@ -22,67 +22,67 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-156-update-links](_shared/general/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/general/sprint-156-update-links.md)]
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-156-update-links](_shared/boards/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/boards/sprint-156-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-156-update-links](_shared/repos/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/repos/sprint-156-update-links.md)]
 
 ### Azure Artifacts:
 
-[!INCLUDE [sprint-156-update-links](_shared/artifacts/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/artifacts/sprint-156-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-156-update-links](_shared/pipelines/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/pipelines/sprint-156-update-links.md)]
 
 ### Azure Test Plans:
 
-[!INCLUDE [sprint-156-update-links](_shared/testplans/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/testplans/sprint-156-update-links.md)]
 
 ### Reporting:
 
-[!INCLUDE [sprint-156-update-links](_shared/reporting/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/reporting/sprint-156-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-156-update-links](_shared/wiki/sprint-156-update-links.md)]
+[!INCLUDE [sprint-156-update-links](includes/wiki/sprint-156-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-156-update](_shared/general/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/general/sprint-156-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-156-update](_shared/boards/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/boards/sprint-156-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-156-update](_shared/repos/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/repos/sprint-156-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-156-update](_shared/artifacts/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/artifacts/sprint-156-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-156-update](_shared/pipelines/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/pipelines/sprint-156-update.md)]
 
 ## Azure Test Plans
 
-[!INCLUDE [sprint-156-update](_shared/testplans/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/testplans/sprint-156-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-156-update](_shared/reporting/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/reporting/sprint-156-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-156-update](_shared/wiki/sprint-156-update.md)]
+[!INCLUDE [sprint-156-update](includes/wiki/sprint-156-update.md)]
 
 ## Next steps
 
@@ -105,4 +105,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-156](_shared/signer/sprint-156.md)]
+[!INCLUDE [sprint-156](includes/signer/sprint-156.md)]

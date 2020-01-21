@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Project dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Project dashboard to track team progress toward completing an iteration. This dashboard displays data that helps you monitor task burndown, burn rate, and the product backlog.  
 

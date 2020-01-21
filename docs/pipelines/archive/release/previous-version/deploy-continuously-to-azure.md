@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Deploy continuously to Azure
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 With Visual Studio 2015 and Azure Pipelines you can easily 
 set up continuous deployment to Azure VMs.
@@ -123,6 +123,6 @@ Learn more **[here](release-without-agents.md)**.
 * [Release with deployment agents](release-with-agents.md)
 * [Trigger a release from a build](trigger-a-release.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

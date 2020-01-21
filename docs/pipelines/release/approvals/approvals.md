@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Release deployment control using approvals
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When a release is created from a release pipeline that defines
@@ -98,4 +98,4 @@ where the user can approve or reject the release.
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

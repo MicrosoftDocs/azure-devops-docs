@@ -16,11 +16,11 @@ ms.date: 10/23/2019
 
 # Dashboards, reports, & widgets quick reference 
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ## Tasks
 

@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4.md)]
+[!INCLUDE [temp](../includes/yaml/AzurePowerShellV4.md)]
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ To resolve this issue, ensure the service principle/ authentication credentials 
 
 ## Samples
 
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
+[!INCLUDE [temp](../includes/yaml/AzurePowerShellV4Sample.md)]
 
 ## Open source
 

@@ -19,7 +19,7 @@ ms.date: 2/14/2019
 
 # 5. Share your sprint plan
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
  
 <a id="share" >  </a>
 

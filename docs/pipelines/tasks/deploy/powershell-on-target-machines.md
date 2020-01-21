@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # PowerShell on Target Machines task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to execute PowerShell scripts on remote machine(s).
 
@@ -28,19 +28,19 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
 ## Prerequisites
 
-[!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
+[!INCLUDE[deploy-winrm-setup](../includes/deploy-winrm-setup.md)]
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.md)]
+[!INCLUDE [temp](../includes/yaml/PowerShellOnTargetMachinesV3.md)]
 
 ::: moniker-end
 
@@ -71,11 +71,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

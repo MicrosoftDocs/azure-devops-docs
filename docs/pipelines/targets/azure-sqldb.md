@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2017'
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 

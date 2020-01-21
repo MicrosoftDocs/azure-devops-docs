@@ -17,7 +17,7 @@ ms.date: 08/05/2019
 
 # Add comments to wiki pages
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 In this article, learn how to add comments to wiki pages, for better collaboration.
 

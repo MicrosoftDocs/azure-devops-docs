@@ -15,7 +15,7 @@ monikerRange: azure-devops
 
 # Check policy compliance with gates
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Azure Policy helps you manage and prevent IT issues by using policy definitions
 that enforce rules and effects for your resources. When you use Azure Policy,
@@ -76,4 +76,4 @@ about the policy and its conditions.
 ![Azure Policy Violations tab](media/azure-policy/azure-policy-04.png)
 -->
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If users no longer require access to a project or your organization, you can remove their access to the project or your organization.  
 
@@ -37,11 +37,11 @@ If users no longer require access to a project or your organization, you can rem
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings > Users](../../_shared/media/open-organization-settings-users-preview.png)
+    ![Organization settings > Users](../../media/open-organization-settings-users-preview.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
@@ -72,11 +72,11 @@ If users no longer require access to a project or your organization, you can rem
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings, users](../../_shared/media/settings/open-organization-settings-users-vert.png)
+    ![Organization settings, users](../../media/settings/open-organization-settings-users-vert.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 

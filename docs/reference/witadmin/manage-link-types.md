@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Manage link types
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
@@ -27,7 +27,7 @@ You manage the link types defined for a project collection by using the followin
 -   **listlinktypes**:  Lists the available set of link types on a server. 
 -   **reactivatelinktype**: Reactivates the specified link type, and optionally assigns it a new name.  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
 ## Prerequisites  
   

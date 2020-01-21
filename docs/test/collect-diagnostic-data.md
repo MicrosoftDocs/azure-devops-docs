@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Collect diagnostic data while testing
 
-[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
 
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
@@ -22,7 +22,7 @@ during the test. You can collect diagnostic data from
 web apps and from desktop apps, web apps and from desktop apps,
 and view it in Azure Test Plans or Team Foundation Server.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="collect-web"></a>
 ## Collect diagnostic data from web and desktop apps
@@ -45,7 +45,7 @@ Capture annotated screenshots from your app:
 1. Open Test Runner and choose the **Capture screenshot** icon. 
    Ensure that the app from which you want to capture data is selected.
 
-   ![Capturing a screenshot from the app](media/_shared/collect-diagnostic-data-01.png) 
+   ![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png) 
 
 1. Drag to select the area of the screen you want to 
    capture, or just capture the full screen.
@@ -69,7 +69,7 @@ Capture your interactions with the web or desktop app as an image action log tha
 1. Open or switch to the Test Runner and choose the **Capture user actions...** icon. 
    Ensure that the app from which you want to capture data is selected.
 
-   ![Capturing an image action log from the app](media/_shared/collect-diagnostic-data-06.png) 
+   ![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
 
 1. The Test Runner will now record all the actions you take
    on the app's browser tab or in the desktop app.
@@ -101,7 +101,7 @@ Capture screen recordings from your apps:
 
 1. Open or switch to the Test Runner and choose the **Record screen** icon. 
  
-   ![Capturing a screen recording from the app](media/_shared/collect-diagnostic-data-11.png) 
+   ![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
 
 1. Choose the entire screen, or choose an app to start recording.
  
@@ -155,4 +155,4 @@ tests using Microsoft Test Manager. For more details, see
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

@@ -17,7 +17,7 @@ ms.date: 10/14/2019
 
 # Start using Azure Boards    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this guide to sign up and start using Azure Boards. Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 

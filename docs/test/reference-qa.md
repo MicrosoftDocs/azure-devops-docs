@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -203,13 +203,13 @@ position. After reordering the tests, you can sort them by the
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](includes/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -301,7 +301,7 @@ is active. You can reset the state of a test to active if you want to rerun it.
 
 **A:** Yes, Choose **Run** and then select **Run with options**.
 
-![Starting a test with options](media/_shared/collect-diagnostic-data-16.png) 
+![Starting a test with options](media/shared/collect-diagnostic-data-16.png) 
 
 Select the build you want from the drop-down list.
 
@@ -331,7 +331,7 @@ the web runner to take screenshots of the web
 app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screenshot from the app](media/_shared/collect-diagnostic-data-01.png) 
+![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -342,7 +342,7 @@ the web runner capture your actions on the web
 app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
-![Capturing an image action log from the app](media/_shared/collect-diagnostic-data-06.png) 
+![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -353,7 +353,7 @@ the web runner to capture screen recordings of
 your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screen recording from the app](media/_shared/collect-diagnostic-data-11.png) 
+![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
@@ -597,4 +597,4 @@ b. To assign configuration to test case(s), navigate to test plan > test suite a
 
 *****
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

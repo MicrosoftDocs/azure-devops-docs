@@ -16,7 +16,7 @@ ms.date: 12/20/2019
 
 # Set user preferences
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
 From your profile page, you can change your picture or other account preferences. In this article, learn how to complete the following tasks:
 
@@ -37,7 +37,7 @@ From your profile page, you can change your picture or other account preferences
 
 1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](../../_shared/media/open-user-settings-profile-preview.png)
+   ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
 2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
@@ -81,22 +81,22 @@ From your profile page, you can change your picture or other account preferences
 
 1. To change your user preferences, open your profile menu.
 
-	![Open Profile menu](../../_shared/media/settings/open-profile-tfs-2017.png)
+	![Open Profile menu](../../media/settings/open-profile-tfs-2017.png)
 
 2. Choose **Edit profile**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/media/settings/profile-jamal-h.png)
+	> ![Choose Edit ](../../media/settings/profile-jamal-h.png)
 
 3. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/media/settings/edit-profile-about-dialog.png)
+	> ![Choose Edit ](../../media/settings/edit-profile-about-dialog.png)
 
 4. From the **Preferences** page, you can change your preferred language, date and time pattern, time zone, UI theme, and whether or not borders appear on work item forms for fields.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/media/settings/edit-profile-preferences-dialog.png)
+	> ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
 

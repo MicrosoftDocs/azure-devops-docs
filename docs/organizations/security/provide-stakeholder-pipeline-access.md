@@ -16,7 +16,7 @@ ms.date: 11/21/2019
 
 # Provide Stakeholders access to edit build and release pipelines
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
  
 To provide Stakeholders permissions to create, edit, and manage build and release pipelines, you can enable the **Free access to Pipelines for Stakeholders** account-level preview feature. This feature essentially enables an unlimited number of free users to manage and configure pipelines in your projects. 
 
@@ -86,7 +86,7 @@ To create a project-level security group, open the web portal and choose the pro
 1. Choose **Project Settings** in the sidebar.
 
     > [!div class="mx-imgBorder"]  
-	> ![Web portal, open project admin context, vertical nav](../../_shared/media/settings/open-project-settings-vert-brn.png)
+	> ![Web portal, open project admin context, vertical nav](../../media/settings/open-project-settings-vert-brn.png)
 
 2. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
 

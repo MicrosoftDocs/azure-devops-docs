@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot creating an organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 <a name="free-users"></a>
 
@@ -34,7 +34,7 @@ A: Azure DevOps is free for these users to join:
 
 <a name="browser-problems"></a>
 
-[!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
+[!INCLUDE [browser-problems](../../includes/qa-browser-problems.md)]
 
 #### Q:  Which Visual Studio subscriptions can I use with Azure DevOps?
 
@@ -54,7 +54,7 @@ A: If you're a new user, you can change your profile details. You need to do thi
 
 <a name="organization-location"></a>
 
-[!INCLUDE [organization-location-process-template](../../_shared/qa-organization-location-process-template.md)]
+[!INCLUDE [organization-location-process-template](../../includes/qa-organization-location-process-template.md)]
 
 #### Q: Why are some features not available in my organization?
 
@@ -76,17 +76,17 @@ A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 <a name="another-team-project"></a>
 
-[!INCLUDE [another-team-project](../../_shared/qa-another-team-project.md)]
+[!INCLUDE [another-team-project](../../includes/qa-another-team-project.md)]
 
-[!INCLUDE [delete-team-project](../../_shared/qa-delete-team-project.md)]
+[!INCLUDE [delete-team-project](../../includes/qa-delete-team-project.md)]
 
-[!INCLUDE [find-organization-name](../../_shared/qa-find-organization-name.md)]
+[!INCLUDE [find-organization-name](../../includes/qa-find-organization-name.md)]
 
-[!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
+[!INCLUDE [recover-password](../../includes/qa-recover-password.md)]
 
-[!INCLUDE [change-organization-name-owner](../../_shared/qa-change-organization-name-owner.md)]
+[!INCLUDE [change-organization-name-owner](../../includes/qa-change-organization-name-owner.md)]
 
-[!INCLUDE [delete-organization](../../_shared/qa-delete-organization.md)]
+[!INCLUDE [delete-organization](../../includes/qa-delete-organization.md)]
 
 <a name="SignInOrganizationDifferences"></a>
 
@@ -116,20 +116,20 @@ A: Yes, see [Disconnect your organization from Azure Active Directory](disconnec
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
 * Choose **Work or school account** if you want to use your directory to authenticate users and control organization access. This option limits access to members in your organization's directory. In this case, all other users also must sign in with work or school accounts. 
 
 * Choose **Personal account** if you want to use your Microsoft account with Azure DevOps. In this case, all other users also must sign in with Microsoft accounts.
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-[!INCLUDE [secure-protect-data](../../_shared/qa-secure-protect-data.md)]
+[!INCLUDE [secure-protect-data](../../includes/qa-secure-protect-data.md)]
 
-[!INCLUDE [team-services-sla](../../_shared/qa-vsts-sla.md)]
+[!INCLUDE [team-services-sla](../../includes/qa-vsts-sla.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [visual-studio-subscription-support](../../_shared/qa-visual-studio-subscription-support.md)]
+[!INCLUDE [visual-studio-subscription-support](../../includes/qa-visual-studio-subscription-support.md)]
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]

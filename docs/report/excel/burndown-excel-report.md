@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Burndown Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 You can use the Burndown report to help determine how much progress the team has made in completing work for an iteration or other interval of time. The report shows how many hours of work the team has completed and how many hours remain. For information about how to access this report, see [Excel reports](excel-reports.md).  

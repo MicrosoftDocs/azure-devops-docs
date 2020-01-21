@@ -16,11 +16,11 @@ monikerRange: 'azure-devops'
 
 # Manage flaky tests
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Productivity for developers relies on the ability of tests to find real problems with the code being developed or modified, in a timely and reliable fashion. Flaky tests are a barrier to finding real problems, since those failures often are not related to the changes being tested. Flaky tests also impact the quality of shipped code. 
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. 
 The goal of bringing flaky test management in-product is to reduce developer pain cause by flaky tests and cater to the whole workflow. Flaky test management provides the following benefits.
@@ -92,6 +92,6 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 
 ![Flaky Bug](media/flaky-test-management/flaky_bug.png)-->
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
 
 
