@@ -68,7 +68,7 @@ First, make sure you know what process your project started as. Is it Scrum, Agi
 Use the "ConformProject.ps1" script to conform a project of your choosing to the Agile system process. This will update the entire project to be Agile.
 
 ```
-.\ConformProjects.ps1 "<collection url>" "<project name>" "c:\process-customization-scripts\import\agile" 
+.\ConformProject.ps1 "<collection url>" "<project name>" "c:\process-customization-scripts\import\agile" 
 ```
 
 Make sure you do this for each and every project. 
