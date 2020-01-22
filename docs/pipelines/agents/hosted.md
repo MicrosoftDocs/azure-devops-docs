@@ -18,7 +18,7 @@ monikerRange: azure-devops
 **Azure Pipelines**
 
 > [!NOTE]
-> Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent pool today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.13), then select the 'Hosted macOS High Sierra' agent pool for your pipelines.
+> Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent VM image today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.13), then select the 'Hosted macOS High Sierra' VM image for your pipelines.
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
@@ -145,7 +145,7 @@ You can also use a self-hosted agent that includes the exact versions of softwar
 
 ### What if I need a bigger machine with more processing power, memory, or disk space?
 
-You can use a [self-hosted agent](agents.md#install) that is hosted on a machine that has your desired specifications.
+We can't increase the memory, processing power, or disk space for Microsoft-hosted agents, but you can use a [self-hosted agent](agents.md#install) that is hosted on a machine that has your desired specifications.
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
