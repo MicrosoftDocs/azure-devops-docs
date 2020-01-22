@@ -1,7 +1,7 @@
 ---
-title: Index to configuration & customization
+title: Understand options and choices for configuring and customizing work tracking  customization
 titleSuffix: Azure Boards
-description: Find how to customize or configure Azure Boards
+description: Learn about choices to customize or configure Azure Boards and the impact on tools available
 ms.technology: devops-agile
 ms.prod: devops
 ms.topic: overview
@@ -53,23 +53,23 @@ The primary tools available to use for each option are described in the followin
 <tbody valign="top">
 <tr>
 <th width="35%">Work tracking options</th>
-<th width="65%">Tools available</th>
+<th width="65%">Tasks and tools supported </th>
 </tr>
 <tr>
 <td>Requirements with child-dependent tasks</td>
 <td>
 <ul>
 <li>Supports Scrum methods</li>
-<li>Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md) </li>
-<li>Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)   </li>
-<li>Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)  </li>
-<li>Track estimated and remaining work: [Taskboard](sprints/adjust-work.md) </li>
-<li>Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  </li>
-<li>Update and monitor task status: [Sprint Taskboard](sprints/task-board.md)   </li>
-<li>Conduct daily scrums:  [Sprint Taskboard](sprints/task-board.md)  </li>
-<li>(Optional) Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)</li>
-<li>(Optional) Forecast sprints using team velocity: [Forecast](sprints/forecast.md) </li>
-
+<li>Quickly define and prioritize backlog items: <a href="backlogs/create-your-backlog.md">Product backlog</a></li>
+<li>Forecast sprints using team velocity: <a href="sprints/forecast.md">Forecast</a></li>
+<li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
+<li>Plan and track capacity: <a href="sprints/set-capacity.md">Sprint capacity tool</a></li>
+<li>Track estimated and remaining work: <a href="sprints/adjust-work.md">Taskboard </a></li>
+<li>Monitor sprint burndown based on remaining work such as hours or days: <a href="../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
+<li>Update and monitor task status: <a href="sprints/task-board.md">Sprint Taskboard </a></li>
+<li>Conduct daily scrums: <a href="sprints/task-board.md">Sprint Taskboard</a></li>
+<li>Estimate work: backlogs/create-your-backlog.md#add-details-and-estimates">Define Story Points, Effort, or Size </a></li>
+<li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
 </td>
 </tr>
@@ -79,12 +79,13 @@ The primary tools available to use for each option are described in the followin
 <td>
 <ul>
 <li>Supports Kanban and Scrumban methods </li>
-<li>Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md) </li>
-<li>Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)   </li>
-<li>Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)</li>
-<li>Forecast sprints using team velocity: [Forecast](sprints/forecast.md) </li>
-<li>Monitor sprint burndown based on requirement estimates: [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  </li>
-<li>Update requirement status: [Kanban board ](boards/kanban-quickstart.md)   </li>
+<li>Quickly define and prioritize backlog items:<a href="backlogs/create-your-backlog.md">Product backlog</a></li>
+<li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
+<li>Estimate work: <a href="backlogs/create-your-backlog.md#add-details-and-estimates">Define Story Points, Effort, or Size</a></li>
+<li>Forecast sprints using team velocity: <a href="sprints/forecast.md">Forecast</a></li>
+<li>Monitor sprint burndown based on requirement estimates: <a href="../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
+<li>Update requirement status: <a href="boards/kanban-quickstart.md">Kanban board</a></li>
+<li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
 </td>
 </tr>
@@ -94,13 +95,13 @@ The primary tools available to use for each option are described in the followin
 <td>
 <ul>
 <li>Supports calendar views and portfolio planning </li>
-<li>Quickly define and prioritize portfolio items: [Portfolio backlogs](backlogs/define-features-epics.md) </li>
-<li>Quickly define child user stories of portfolio items: [Portfolio checklists](boards/kanban-epics-features-stories.md) </li>
-<li>Map work items to features and epics: [Mapping tool](backlogs/organize-backlog.md)   </li>
-<li>View cross-team progress calendar view: [Delivery plans](plans/review-team-plans.md)   </li>
-<li>View calendar view of all team features: [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)    </li>
-<li>View calendar view of a specific epic: [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)     </li>
-<li>Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)   </li>
+<li>Quickly define and prioritize portfolio items: <a href="backlogs/define-features-epics.md">Portfolio backlogs</a></li>
+<li>Quickly define child user stories of portfolio items: <a href="boards/kanban-epics-features-stories.md">Portfolio checklists</a></li>
+<li>Map work items to features and epics: <a href="backlogs/organize-backlog.md">Mapping tool</a></li>
+<li>View cross-team progress calendar view: <a href="plans/review-team-plans.md">Delivery plans</a></li>
+<li>View calendar view of all team features: <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension">Feature Timeline</a></li>
+<li>View calendar view of a specific epic: <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension">Epic Roadmap</a></li>
+<li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
 </td>
 </tr>
@@ -116,7 +117,10 @@ Some examples of real-world teams who use Azure Boards to track work are describ
 	- Product management team of ten PMs manages five development teams and their work
 	- Five development teams comprised of 8 to 12 developers manage their work using user stories with optional child-dependent tasks, no time estimates made 
 
-
+- Open source project of 100+ members that manages projects they collaborate on:  
+	- Uses the Scrum process  
+	- Defines Features and product backlog items, each backlog item corresponds to an event or deliverable   
+	- Updates status via the Kanban board  
 
 - Content development team of 50 writers uses tasks to track their work 
 	- 
