@@ -8,8 +8,6 @@ ms.date: 01/21/2020
 ---
 
 
-::: moniker range=">= tfs-2013"
-
 
 <table width="100%">
 <tbody valign="top">
@@ -137,5 +135,4 @@ Custom workflow (Project)
 </tbody>
 </table>
 
-::: moniker-end
  

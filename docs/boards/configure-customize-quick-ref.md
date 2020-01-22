@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
+monikerRange: 'azure-devops'
 ms.date: 01/09/2020
 ---
 
@@ -17,12 +17,15 @@ ms.date: 01/09/2020
 
 # Configuration and customization of Azure Boards 
 
-[!INCLUDE [temp](_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](_shared/version-vsts-only.md)]
 
 This article provides guidance and links to all items that you can customize that impact work tracking tools. 
 
-
 If you're just getting started as a Project Administrator, see [Get started as an administrator](../user-guide/project-admin-tutorial.md).
+
+> [!NOTE]   
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article are only available for the cloud at this time. 
+
 
 ## What to consider?
 
@@ -61,10 +64,11 @@ The primary tools available to use for each recommended option are described in 
 <li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
 <li>Plan and track capacity: <a href="sprints/set-capacity.md">Sprint capacity tool</a></li>
 <li>Track estimated and remaining work: <a href="sprints/adjust-work.md">Taskboard </a></li>
-<li>Monitor sprint burndown based on remaining work such as hours or days: <a href="../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
+<li>Monitor sprint burndown based on remaining work such as hours or days: <a href="/azure/devops/report/dashboards/configure-sprint-burndown?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
 <li>Update and monitor task status: <a href="sprints/task-board.md">Sprint Taskboard </a></li>
 <li>Conduct daily scrums: <a href="sprints/task-board.md">Sprint Taskboard</a></li>
 <li>Estimate work: backlogs/create-your-backlog.md#add-details-and-estimates">Define Story Points, Effort, or Size </a></li>
+<li>View progress bars, counts, or sums of rollup on tasks: <a href="backlogs/display-rollup.md">Rollup</a></li>
 <li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
 </td>
@@ -79,7 +83,7 @@ The primary tools available to use for each recommended option are described in 
 <li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
 <li>Estimate work: <a href="backlogs/create-your-backlog.md#add-details-and-estimates">Define Story Points, Effort, or Size</a></li>
 <li>Forecast sprints using team velocity: <a href="sprints/forecast.md">Forecast</a></li>
-<li>Monitor sprint burndown based on requirement estimates: <a href="../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
+<li>Monitor sprint burndown based on requirement estimates: <a href="/azure/devops/report/dashboards/configure-sprint-burndown?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json">Sprint burndown</a></li>
 <li>Update requirement status: <a href="boards/kanban-quickstart.md">Kanban board</a></li>
 <li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
@@ -97,6 +101,7 @@ The primary tools available to use for each recommended option are described in 
 <li>View cross-team progress calendar view: <a href="plans/review-team-plans.md">Delivery plans</a></li>
 <li>View calendar view of all team features: <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension">Feature Timeline</a></li>
 <li>View calendar view of a specific epic: <a href="https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension">Epic Roadmap</a></li>
+<li>View progress bars, counts, or sums of rollup on child items: <a href="backlogs/display-rollup.md">Rollup</a></li>
 <li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
 </td>
@@ -125,7 +130,7 @@ Some examples of real-world teams who use Azure Boards to track work are describ
 
 ## Configure and customization options 
 
-The following table indicates the areas you can configure and customize and the tools impacted by those customizations. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md?view=azure-devops#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
+The following table indicates the areas you can configure and customize and the tools impacted by those customizations. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
  
 [!INCLUDE [temp](includes/config-and-customize.md)]
 
@@ -142,16 +147,35 @@ workflow customizations
 
 Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define a hierarchical set of area paths or a flat set. Typically, you define a hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
 
-A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. Prior to adding teams, we recommend you read the following articles: 
+A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. 
+
+Prior to adding teams, we recommend you read the following articles:  
+
 - [Portfolio management](plans/portfolio-management.md)
-- [About area paths](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [About area paths](/azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Agile culture](plans/agile-culture.md). 
+
+The two main ways to group work items is by area path or by parenting them under a portfolio work item type as described early is this article. So when you structure your teams and projects, you want to make sure you understand how you'll use these two main ways of grouping to support your business needs. For query and filter purposes, you can also assigned tags to work items that acts as a grouping. Your choices impact the use of portfolio planning tools. 
+
+Recommendations:
+- Consider what views upper management may want to view and how to best support them 
+- Consider how you want to use roll up 
+- Define epics and scenarios for large initiatives that will take two or more sprints to complete
+- Define requirements for work that can be accomplished in a single sprint and can be assigned to a single individual  
+- Define tasks to track more granular details or when you want to  
+
+
+> [!TIP]    
+> Work items can only be assigned to a single individual. So when defining work items, consider how many work items are needed to assign the work to those individuals who will be tasked to complete the work. 
+
+
+Most Azure Boards tools support a filtered view of work items based on area path and/or iteration path. Additional filters can also be applied based on keyword, assignment, work item type, and more. 
 
 
 <!---
 Area paths, portfolios, and rollup 
-
+Assignments 
 --> 
 
 
