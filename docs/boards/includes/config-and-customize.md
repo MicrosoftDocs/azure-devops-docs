@@ -72,7 +72,7 @@ ms.date: 01/21/2020
 </td>
 </tr>
 <tr>
-<td><a href="/azure/devops/organizations/settings/show-bugs-on-backlog" >Show bugs on backlogs &amp; boards (Team)</a><br/>
+<td><a href="/azure/devops/organizations/settings/show-bugs-on-backlog">Show bugs on backlogs &amp; boards (Team)</a><br/>
 Custom work item types, Product backlog (Project)<br/>
 Custom work item types, Taskboard (Project)
 </td>
@@ -83,8 +83,6 @@ Custom work item types, Taskboard (Project)
 <li>Backlogs> Mapping tool</li>
 <li>Sprints>Sprint backlogs</li>
 <li>Sprints>Taskboard</li>
-<td>
-</ul>
 </td>
 <td>
 <ul>
@@ -104,7 +102,6 @@ Additional portfolio backlogs (Project)
 <li>Boards>Portfolio boards</li>
 <li>Backlogs>Portfolio backlogs</li>
 <li>Backlogs> Mapping tool</li>
-<td>
 </ul>
 </td>
 <td>
@@ -124,8 +121,6 @@ Custom workflow (Project)
 <li>Boards>Product board</li>
 <li>Boards>Portfolio boards</li>
 <li>Sprints>Task board</li>
-</ul>
-<td>
 </ul>
 </td>
 <td>

@@ -35,18 +35,14 @@ One of the main choices teams have is choosing the work item types they use to t
 
 |Work item types | Recommended usage  |
 |-----------|----------------
-| Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog. In addition, there is no support for calendar views, cross-team views, or portfolio planning tools.   
+| Tasks only | **Not recommended** as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog. In addition, there is no support for calendar views, cross-team views, or portfolio planning tools.   
 | Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work. | 
 | Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work. | 
 | Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.   | 
 
-Tracking work using tasks, supports work tracking ...   
+Many teams starting out using Scrum methods track and plan their work using the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, then adding child-dependent tasks is optional. Developers might add them simply as a checklist of items they need to complete a user story or backlog requirement.  
 
-If you don't plan on tracking remaining work and using the Sprint tools such as Capacity planning and sprint burndown charts based on remaining work, using tasks as the primary 
-
-Combination of task, requirement, and portfolio .. 
-
-The primary tools available to use for each option are described in the following table. 
+The primary tools available to use for each recommended option are described in the following table. 
 
 
 <table width="100%">
@@ -58,8 +54,8 @@ The primary tools available to use for each option are described in the followin
 <tr>
 <td>Requirements with child-dependent tasks</td>
 <td>
+<strong>Supports Scrum methods</strong>
 <ul>
-<li>Supports Scrum methods</li>
 <li>Quickly define and prioritize backlog items: <a href="backlogs/create-your-backlog.md">Product backlog</a></li>
 <li>Forecast sprints using team velocity: <a href="sprints/forecast.md">Forecast</a></li>
 <li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
@@ -77,8 +73,8 @@ The primary tools available to use for each option are described in the followin
 <td>Requirements only, such as user stories (Agile), issues (Basic), product backlog items (Scrum), requirements (CMMI)
 </td>
 <td>
+<strong>Supports Kanban and Scrumban methods</strong>
 <ul>
-<li>Supports Kanban and Scrumban methods </li>
 <li>Quickly define and prioritize backlog items:<a href="backlogs/create-your-backlog.md">Product backlog</a></li>
 <li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
 <li>Estimate work: <a href="backlogs/create-your-backlog.md#add-details-and-estimates">Define Story Points, Effort, or Size</a></li>
@@ -93,8 +89,8 @@ The primary tools available to use for each option are described in the followin
 <td>Requirements grouped under portfolio work item types, such as epics and features
 </td>
 <td>
+<strong>Supports calendar views, cross-team views, and portfolio planning </strong>
 <ul>
-<li>Supports calendar views and portfolio planning </li>
 <li>Quickly define and prioritize portfolio items: <a href="backlogs/define-features-epics.md">Portfolio backlogs</a></li>
 <li>Quickly define child user stories of portfolio items: <a href="boards/kanban-epics-features-stories.md">Portfolio checklists</a></li>
 <li>Map work items to features and epics: <a href="backlogs/organize-backlog.md">Mapping tool</a></li>
@@ -146,19 +142,32 @@ workflow customizations
 
 Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define a hierarchical set of area paths or a flat set. Typically, you define a hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
 
+A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. Prior to adding teams, we recommend you read the following articles: 
+- [Portfolio management](plans/portfolio-management.md)
+- [About area paths](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Agile culture](plans/agile-culture.md). 
+
+
+<!---
+Area paths, portfolios, and rollup 
+
+--> 
+
+
+
 
 ## Iteration paths, sprints, releases, and versioning
 
-Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. 
+Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Each iteration or sprint corresponds to a regular time interval referred to as a sprint cadence. Typical sprint cadences are two week, three week or a month long. To learn more about Iteration paths, see [About area and iteration paths (aka sprints)](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).  
 
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
 
-- Sprint backlogs
-- Taskboard
-- Delivery plans
-- Feature timeline 
-
-And other timeline or calendar view tools. Gannt 
+- [Sprints> all tools](sprints/scrum-overview.md) 
+- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views
+- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team features 
+- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
+- And all other timeline or calendar view tools  
 
 
 ## Work item types and portfolio backlog levels 
