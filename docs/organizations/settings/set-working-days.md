@@ -15,12 +15,12 @@ ms.date: 11/04/2019
 
 # Set working days  
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page.  
 
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
   
 <a id="team-services-work-days" />  

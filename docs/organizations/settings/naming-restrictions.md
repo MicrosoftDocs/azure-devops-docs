@@ -16,7 +16,7 @@ ms.date: 6/21/2019
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
@@ -1393,7 +1393,7 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-[!INCLUDE [temp](../../../docs/project/wiki/_shared/wiki-naming-conventions.md)]
+[!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 

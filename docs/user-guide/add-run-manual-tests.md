@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Quickstart: Add, run, and update inline tests
 
-[!INCLUDE [version-tfs-2017-through-vsts](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../includes/version-tfs-2017-through-vsts.md)]
 
 In this quickstart, you learn how to add, run, update, and expand and collapse inline tests in Azure DevOps.
 

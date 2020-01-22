@@ -15,7 +15,7 @@ ms.date: 06/28/2019
 
 # Connect Azure Boards to GitHub  
 
-[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -37,7 +37,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ::: moniker-end
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 
 ## Prerequisites 

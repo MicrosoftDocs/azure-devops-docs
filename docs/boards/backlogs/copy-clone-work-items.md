@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Copy or clone work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
@@ -30,9 +30,9 @@ Use this article to learn how to:
 > * Copy a list of work items to email or share with others  
 > * Copy the URL of a work item  
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
+[!INCLUDE [temp](../includes/image-differences.md)] 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
 

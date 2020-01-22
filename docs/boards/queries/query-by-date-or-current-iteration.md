@@ -16,7 +16,7 @@ ms.date: 10/16/2019
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
 
@@ -167,7 +167,7 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tbody>
 </table>
 
-[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -471,6 +471,6 @@ To query for items based on text entered in the History field, see [History and 
 - [Query permissions](set-query-permissions.md)
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
  

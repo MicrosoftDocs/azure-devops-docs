@@ -15,11 +15,11 @@ ms.date: 11/22/2019
 
 # FAQs: Work in Excel connected to Azure Boards 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
-[!INCLUDE [temp](../../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../../includes/version-selector-minimize.md)]
 
 ## Connect and versioning support
 
@@ -33,7 +33,7 @@ If you are having connection issues, make sure you meet the prerequisites as lis
 
 **A:**  You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 

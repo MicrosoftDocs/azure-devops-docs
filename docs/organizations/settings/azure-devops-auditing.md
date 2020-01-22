@@ -16,7 +16,7 @@ ms.date: 12/05/2019
 
 # Quickstart: Access, export, and filter audit logs
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
@@ -42,7 +42,7 @@ By default, Project Collection Administrators are the only group that can access
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
    ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
@@ -60,7 +60,7 @@ The user or group members have access to view your organization audit events.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Auditing**.
 
    ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox.png)

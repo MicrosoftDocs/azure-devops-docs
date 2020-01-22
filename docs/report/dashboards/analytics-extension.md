@@ -14,7 +14,7 @@ ms.date: 06/24/2019
 
 # Enable or install Analytics
 
-[!INCLUDE [temp](../../_shared/version-azure-devops-2019.md)]
+[!INCLUDE [temp](../../includes/version-azure-devops-2019.md)]
 
 Analytics is currently in Preview. It is free to use while it remains in Preview. For Azure DevOps Server 2019, you [install the Analytics extension](#install-analytics) from your local marketplace. For Azure DevOps Server 2019.1, you [enable Analytics](#enable-analytics). You install or enable Analytics for each project collection for which you want to generate reports. 
 

@@ -15,7 +15,7 @@ ms.date: 05/06/2019
 
 # Process templates  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A process template defines the objects and processes available to you when you create a project. It contains a structured set of XML definition files. Process template customization is only supported for the [Hosted XML](../../organizations/settings/work/hosted-xml-process-model.md) and [On-premises XML](../on-premises-xml-process-model.md) process models.  
 

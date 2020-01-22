@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # CocoaPods task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 
@@ -29,7 +29,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.md)]
+[!INCLUDE [temp](../includes/yaml/CocoaPodsV0.md)]
 
 ::: moniker-end
 
@@ -55,13 +55,13 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../includes/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

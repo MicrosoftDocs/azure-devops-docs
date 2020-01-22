@@ -16,7 +16,7 @@ ms.date: 07/22/2019
 
 # Set up your Backlogs and Boards  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In most cases you can start using your product and portfolio backlogs once your project is created. A default team is created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
 
@@ -40,7 +40,7 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)]
+[!INCLUDE [temp](../includes/basic-process-note.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -101,7 +101,7 @@ For all processes except the Basic process, each team can manage the way bugs ar
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]
+[!INCLUDE [temp](../includes/basic-process-bug-note.md)]
 
 ::: moniker range="<= tfs-2018"
 

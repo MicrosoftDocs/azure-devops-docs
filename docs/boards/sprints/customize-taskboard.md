@@ -17,7 +17,7 @@ ms.date: 08/03/2019
 
 # Customize a sprint Taskboard  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
 
 ::: moniker range="azure-devops"
@@ -89,7 +89,7 @@ Information rich cards not only provide at-a-glance information of interest to y
 
 Each card corresponds to a work item which you use to share information, track status, and assign work. 
 
-[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
 In this example, the bug work item type (WIT) shows all the core fields, three additional fields, and tags. Also, To make severity 1 bugs stand out, a styling rule has been added to cause the card to display as yellow.  
 

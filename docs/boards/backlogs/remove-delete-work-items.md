@@ -16,7 +16,7 @@ ms.date: 01/10/2020
 
 # Move, change, or delete work items 
 
-[!INCLUDE [temp](../_shared/azure-boards.md)]
+[!INCLUDE [temp](../includes/azure-boards.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -26,7 +26,7 @@ Often times you find that someone created a work item of the wrong work item typ
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
 
@@ -48,7 +48,7 @@ In this article you'll learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -476,7 +476,7 @@ az boards work-item delete --id 864 --destroy --yes
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

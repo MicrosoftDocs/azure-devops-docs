@@ -16,11 +16,11 @@ ms.date: 12/10/2019
 
 # Progress status sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The report generated is similar to following image and the Summary chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
@@ -46,7 +46,7 @@ The overall execution state report helps you track the team's progress with resp
 - *How much testing is complete?*
 - *What is the current status of tests passing, failing, or being blocked?*
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -88,7 +88,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
@@ -114,7 +114,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
 
 
 
@@ -136,7 +136,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-test-plans-finish-query.md)]
+[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
 
 
 ## Create the report
@@ -166,7 +166,7 @@ Your report should appear similar to the following image.
 
 ## Full list of Test Plans sample reports 
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

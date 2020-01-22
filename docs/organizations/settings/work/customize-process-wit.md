@@ -16,20 +16,20 @@ ms.date: 04/22/2019
 
 # Add and manage work item types      
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 You can add custom work item types (WITs) or modify existing WITs to add fields, remove or hide fields, add custom rules, and more. For example, you may want to capture customer issues in a custom Ticket WIT.   
 
 > [!div class="mx-imgBorder"]  
 > ![Custom Ticket work item form](media/process/custom-wit-new-ticket-form.png) 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 <a id="add-wit">  </a>
 

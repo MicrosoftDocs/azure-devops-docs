@@ -91,7 +91,7 @@ As long as your project is public, anonymous and guest users will be greeted by 
 
 You can also [share individual packages with badges](../package-badges.md) which look like the example below. 
 
-![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](../_shared/media/package-badge.png)
+![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](../media/package-badge.png)
 
 
 

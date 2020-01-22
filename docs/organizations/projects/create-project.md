@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Create a project in Azure DevOps and TFS
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This article describes how to use Azure DevOps to create a project and establish a repository for source code. Teams and groups of developers can plan, track progress, and collaborate on building software solutions. Each project you create provides boundaries to isolate data from other projects. Managed and structured each project to support your business needs. To learn more about projects and when to create one, see [About projects and scaling your organization](about-projects.md).
 
@@ -185,7 +185,7 @@ ID                                    Name             Visibility    Process    
 be87c31a-fbb3-4377-b207-57a8caf65e31  MyFirstProject1  Private       Agile      Git
 ```
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 #### [Team Explorer](#tab/team-explorer)
 
@@ -477,7 +477,7 @@ ID                                    Name            Visibility    Process     
 
 ```
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 #### [Team Explorer](#tab/team-explorer)
 

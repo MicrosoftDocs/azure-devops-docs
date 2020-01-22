@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Manage the association of enterprise projects to projects
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> To support synchronization of data between an enterprise project plan and a project, you must map the plan to the project. You can map multiple plans to the same project. To map enterprise projects, you must have registered and mapped the instance of Project Web Access or Project Web App (PWA) that is associated with the enterprise project to a project collection.  
   

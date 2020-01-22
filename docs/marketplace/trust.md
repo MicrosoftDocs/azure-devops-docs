@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 # Trusting a publisher in the Marketplace 
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 ## Can I trust an offering in the Marketplace?
 

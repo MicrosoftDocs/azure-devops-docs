@@ -44,7 +44,7 @@ Customers with unique needs can copy [the package](https://www.nuget.org/package
 Perform the following steps one time in a repo containing your app's code.
 Anyone with the authority to make solution-wide changes can follow these steps.
 
-[!INCLUDE [vss-pm-bootstrap](../_shared/nuget/nuget-bootstrap.md)]
+[!INCLUDE [vss-pm-bootstrap](../includes/nuget/nuget-bootstrap.md)]
 
 >[!NOTE]
 >By default, the bootstrapper disables the public NuGet Gallery as a package source.

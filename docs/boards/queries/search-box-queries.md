@@ -17,7 +17,7 @@ ms.date: 03/26/2019
 
 # Perform a semantic or ad hoc work item search
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="search-box"/>
 
@@ -56,7 +56,7 @@ Free text search easily searches across all work item fields, including custom f
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon. 
 
     > [!div class="mx-imgBorder"]
     > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
@@ -73,7 +73,7 @@ Free text search easily searches across all work item fields, including custom f
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -87,7 +87,7 @@ Free text search easily searches across all work item fields, including custom f
    ![The Work Item Search textbox in the title bar](../../project/search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon) to start your search. 
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
@@ -101,7 +101,7 @@ Free text search easily searches across all work item fields, including custom f
 
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -113,7 +113,7 @@ Semantic search isn't supported for TFS 2017.1 and earlier versions. You can sti
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-[!INCLUDE [temp](../../_shared/previous-navigation-not-supported-azd.md)] 
+[!INCLUDE [temp](../../includes/previous-navigation-not-supported-azd.md)] 
 ::: moniker-end
 
 

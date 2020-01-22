@@ -16,7 +16,7 @@ ms.date: 12/11/2019
 
 # Query by assignment or workflow changes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
@@ -335,7 +335,7 @@ Items in any swimlane that contains &quot;Test&quot;
 
 <a id="kanban-query-results">  </a>
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ::: moniker-end
 
@@ -668,5 +668,5 @@ You can use the following fields to filter your queries or build reports. Some o
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

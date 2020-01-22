@@ -82,7 +82,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
    You may need to add an Azure DevOps Server where the repo is hosted.
    Select the **Add Azure DevOps Server** link.
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your PC and select **Clone**.
 

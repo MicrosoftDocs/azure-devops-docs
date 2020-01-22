@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Install Release Management server/client for VS 2015 and TFS 2015
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 ![Install Release Management with Team Foundation Server](media/install-rm-01.png)
 
@@ -104,6 +104,6 @@ ready to manage releases.
 * [Manage users, groups, and permissions](add-users-and-groups.md)
 * [Manage your release](manage-your-release.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

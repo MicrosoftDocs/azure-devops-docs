@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Customize and manage the test experience
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 
 > [!IMPORTANT]  

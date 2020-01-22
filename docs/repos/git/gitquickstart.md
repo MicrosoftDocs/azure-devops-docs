@@ -47,7 +47,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
    ![Cloning a Git Repository from a connected organization in Azure Repos](media/gitquickstart-vs2017/vs2019-connect-add-server.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your computer and select **Clone**.
 
@@ -60,7 +60,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
    ![Finding the Clone URL for your Git Repository in Azure Repos](media/gitquickstart-vs2017/clone-url.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. At the command prompt, go to the folder where you want the code stored on your local computer.
 

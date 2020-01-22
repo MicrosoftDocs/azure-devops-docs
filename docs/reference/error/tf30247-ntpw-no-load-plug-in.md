@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF30247: The New Team Project Wizard could not load the plug-in &quot;{0}&quot; for process template &quot;{1}&quot;. Select another process template or see the log file for more details
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
 
 This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a project](../../organizations/projects/create-project.md). Two conditions can cause this error:  
   

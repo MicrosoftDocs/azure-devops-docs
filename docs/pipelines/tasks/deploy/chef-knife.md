@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run scripts with Knife commands 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ChefKnifeV1.md)]
+[!INCLUDE [temp](../includes/yaml/ChefKnifeV1.md)]
 
 ::: moniker-end
 

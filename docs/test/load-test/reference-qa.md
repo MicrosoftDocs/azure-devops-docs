@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # FAQs for load testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 <a name="qageneral"></a>
 ## General
@@ -785,4 +785,4 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ---
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

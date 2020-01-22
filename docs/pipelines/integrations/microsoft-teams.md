@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
  
 # Azure Pipelines with Microsoft Teams
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 
 If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) is your choice for collaboration, you can use the [Azure Pipelines app built for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018)
@@ -22,7 +22,7 @@ If [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-soft
 > [!div class="mx-imgBorder"]
 > ![Notifications image](media/integrations-teams/notifications-teams.png)
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 ## Add Azure Pipelines app to your team
 
@@ -209,7 +209,7 @@ Here are all the commands supported by the Azure Pipelines app:
 If you are experiencing the following errors when using the
 [Azure Pipelines app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000055?src=wnblogmar2018), follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Pipelines signout` command and then run the `@Azure Pipelines signin` command in the channel where the Azure Pipelines app for Microsoft Teams is installed.
 

@@ -22,7 +22,7 @@ Use this task in a build or release pipeline to download fileshare artifacts.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadFileshareArtifactsV0.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadFileshareArtifactsV0.md)]
 
 ::: moniker-end
 
