@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy a virtual machine scale s
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureVmssDeploymentV0.md)]
+[!INCLUDE [temp](../includes/yaml/AzureVmssDeploymentV0.md)]
 
 ::: moniker-end
 

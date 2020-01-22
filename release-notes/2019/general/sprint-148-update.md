@@ -12,9 +12,9 @@ ms.date: 02/25/2019
 
 ## Features
 
-[!INCLUDE [sprint-148-update-links](../_shared/general/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](../includes/general/sprint-148-update-links.md)]
 
-[!INCLUDE [sprint-148-update](../_shared/general/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](../includes/general/sprint-148-update.md)]
 
 ## Next steps
 

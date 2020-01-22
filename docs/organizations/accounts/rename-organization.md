@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Rename your organization in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 You can change your organization name (URL) at any time in Azure DevOps. This article shows you how.
 
@@ -37,7 +37,7 @@ To change your organization URL, you need at least Basic access and organization
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, enter a new name for the organization, and then select **Save**. Move the toggle to use the new URL, if wanted.
 

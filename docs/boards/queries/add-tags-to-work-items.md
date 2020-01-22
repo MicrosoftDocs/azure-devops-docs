@@ -16,7 +16,7 @@ ms.date: 09/26/2019
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -31,7 +31,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 > [!NOTE]   
 > Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags.  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
@@ -116,7 +116,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 > ![Bulk add to several work items](media/add-tags/query-tags-add-or.png) 
 
 
-[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 
 <a id="show-tags"></a>

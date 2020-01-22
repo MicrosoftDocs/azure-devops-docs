@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 
 # Reactivations Report
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 As the team resolves and closes bugs, you can use the Reactivations report to determine how effectively the team is fixing bugs. Reactivations generally refer to bugs that have been resolved or closed prematurely and then reopened. The reactivation rate is also referred to as the fault feedback ratio.  
   

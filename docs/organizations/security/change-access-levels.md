@@ -16,7 +16,7 @@ ms.date: 06/02/2019
 
 # Change access levels
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 Users must be added to a group with the appropriate permissions, to connect and use the functions and features that Azure DevOps Server provides. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
 
@@ -24,7 +24,7 @@ This article applies to managing access levels for project collections defined o
 
 > [!IMPORTANT]  
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
-> ![Content version selector](/azure/devops/_shared/media/version-selector.png)
+> ![Content version selector](/azure/devops/media/version-selector.png)
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 

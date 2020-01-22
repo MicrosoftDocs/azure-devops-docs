@@ -14,7 +14,7 @@ ms.date: 08/31/2017
 
 # Give feedback using Microsoft Feedback Client
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Azure DevOps Services or an on-premises Team Foundation Server (TFS).  

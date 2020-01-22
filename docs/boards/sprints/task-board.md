@@ -15,7 +15,7 @@ ms.date: 2/14/2019
 
 # 6. Update and monitor your Taskboard
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint **Taskboard**.
 

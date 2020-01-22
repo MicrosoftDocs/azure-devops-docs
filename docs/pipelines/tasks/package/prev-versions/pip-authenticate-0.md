@@ -22,7 +22,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../../_shared/yaml/PipAuthenticateV0.md)]
+[!INCLUDE [temp](../../includes/yaml/PipAuthenticateV0.md)]
 
 ::: moniker-end
 
@@ -32,7 +32,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 | ------------------------------ | ------------------------------------------------------------------- |
 | artifactFeeds                  | List of Azure Artifacts feeds to authenticate with pip.           |
 | externalFeeds                  | List of service connections from external organizations to authenticate with pip. |
-| [!INCLUDE [temp](../../_shared/control-options-arguments.md)] | |
+| [!INCLUDE [temp](../../includes/control-options-arguments.md)] | |
 
 
 ## Open source

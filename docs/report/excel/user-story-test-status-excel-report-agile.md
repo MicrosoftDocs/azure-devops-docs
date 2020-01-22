@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # User Story Test Status Excel Report (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the User Story Test Status report to help determine gaps in test coverage and monitor test progress for each user story. This report indicates how many test cases are passing or failing for each user story. This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   

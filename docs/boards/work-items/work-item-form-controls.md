@@ -15,7 +15,7 @@ ms.date: 04/09/2019
 
 # Work item form  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -159,7 +159,7 @@ In addition, the Links control tab provides access to all links made to the work
 
 <a id="discussion">  </a>
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)]
+[!INCLUDE [temp](../includes/discussion-tip.md)]
 
 <a id="copy-url">  </a>
 

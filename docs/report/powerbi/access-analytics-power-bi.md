@@ -15,7 +15,7 @@ ms.date: 01/13/2020
 
 # Connect to Analytics data by using the Power BI OData feed
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)] 
+[!INCLUDE [temp](../includes/version-azure-devops.md)] 
 
 You can access Analytics data through the Power BI Desktop OData feed. 
 

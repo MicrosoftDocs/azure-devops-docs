@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Gradle task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to build using a Gradle wrapper script.
 
@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to build using a Gradle wrapper scr
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
+[!INCLUDE [temp](../includes/yaml/GradleV2.md)]
 
 ::: moniker-end
 
@@ -202,10 +202,10 @@ To fix errors such as `Read timed out` when downloading dependencies, users of G
    by adding to `Options` `-Dhttp.socketTimeout=60000 -Dhttp.connectionTimeout=60000`.  This increases  the timeout 
    from 10 seconds to 1 minute.
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -31,7 +31,7 @@ Service endpoints are a way for Azure DevOps Services to connect to external sys
 Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service. 
 Follow this guide to create a new Service Point contribution and leverage it in your extension.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Task overview
 

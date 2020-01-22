@@ -15,7 +15,7 @@ ms.date: 11/06/2019
 
 # Define Iteration Paths (aka sprints) and configure team iterations 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 You add Iteration Paths to support teams who implement Scrum or use sprint planning to group work items based on a time-box interval or sprint. You define Iteration Paths at the project level and then each team selects the ones they want to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
@@ -26,7 +26,7 @@ Each team has access to a number of Agile tools as described in [About teams and
 
 Newly created projects contain a single, root Area Path that corresponds to the project name. You add Area Paths under this root. Also, each project typically specifies a predefined set of Iteration Paths to help you get started tracking your work. All you need to do is specify the dates. 
 
-[!INCLUDE [temp](../../_shared/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 ## Prerequisites
 
@@ -159,7 +159,7 @@ ID     Identifier                            Name            Path               
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -182,7 +182,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
-![Open the project administration page](../../_shared/media/settings/open-project-settings-tfs-2015.png)
+![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
 
@@ -297,7 +297,7 @@ C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --star
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -442,7 +442,7 @@ dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -610,7 +610,7 @@ C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-73
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -819,7 +819,7 @@ ID     Identifier                            Name      Start Date            Fin
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

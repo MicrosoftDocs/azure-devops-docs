@@ -211,7 +211,7 @@ The following table lists all the Azure repos commands you can use in your Teams
 
 If you are experiencing the following errors when using the Azure Repos App, follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](./_shared/repos-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Repos signout` command and then run the `@Azure Repos signin` command in the channel where the Azure Repos app for Microsoft Teams is installed.
 

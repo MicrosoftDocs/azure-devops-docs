@@ -16,11 +16,11 @@ ms.date: 12/10/2019
 
 # Change or remove the Azure subscription that your organization uses for billing
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this article, learn how to change the Azure subscription that your organization uses for billing or remove your billing subscription at any time.   
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
@@ -35,19 +35,19 @@ In this article, learn how to change the Azure subscription that your organizati
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing in Organization settings](media/_shared/select-billing-organization-settings.png)
+   ![Select Billing in Organization settings](media/shared/select-billing-organization-settings.png)
 
 4. Select **Change Billing**.
 
-   ![Select Change billing](media/_shared/select-change-billing.png)
+   ![Select Change billing](media/shared/select-change-billing.png)
 
 5. Select your Azure subscription, and then select **Save**.
 
-   ![Select your Azure subscription](media/_shared/select-azure-subscription.png)
+   ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
 ## Remove your billing subscription 
 

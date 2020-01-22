@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Customize the field mapping between TFS and Project Server
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> 
 To synchronize data between an enterprise project plan and a project, you must associate the work-item fields in Visual Studio Team Foundation Server (TFS) with the fields in Microsoft Project Server. You can add fields and specify how they synchronize by customizing the field mappings. You can map both built-in and custom fields in Project. For example, you can share data that does not relate to schedules (such as cost centers, team names, or health status) if you add the fields that store these types of data to the mappings.  

@@ -15,7 +15,7 @@ ms.date: 03/26/2019
 
 # Quickstart: Share your project vision, view project activity
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
 In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  

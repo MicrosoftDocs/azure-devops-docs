@@ -16,21 +16,21 @@ ms.date: 08/07/2019
 
 # Lead/cycle time sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to display average lead time or cycle time for a given set of User Stories. The following image shows an example for average lead time. To learn more about lead and cycle time, see [Cumulative flow, lead time, and cycle time guidance](../dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
 > [!div class="mx-imgBorder"] 
 > ![Power BI + OData - Lead Cycle Report by Priority](media/odatapowerbi-leadcycle-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -49,7 +49,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -66,7 +66,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - {areapath} - Your Area Path. Example format: Project\Level1\Level2
 - {startdate} - Start your report for items completed on/after a given date. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
@@ -91,7 +91,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
 ### Change LeadTimeDays and CycleTimeDays to data type: Whole Number
 
@@ -113,7 +113,7 @@ The CompletedDateSK field is the integer version of the Completed Date field in 
 1. When the **Change Column Type** dialog appears, select **Add new step** (rather than **Replace current step**). This 2-step process is the easiest way to change it to a proper Date field in Power BI.
 
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -145,7 +145,7 @@ To pivot the report by Area Path (representing teams), add the field "Area.AreaP
 > [!div class="mx-imgBorder"] 
 > ![Power BI + OData - Lead Cycle Report by Teams](media/odatapowerbi-leadcycle-report2.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -157,7 +157,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -176,7 +176,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -193,8 +193,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and deploy your app
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../includes/version.md)]
 
 <!--- NOT INCLUDED IN TOC --> 
 
@@ -117,11 +117,11 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 
 ::: moniker-end
 

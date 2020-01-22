@@ -18,7 +18,7 @@ ms.date: 01/08/2018
 
 # Triage work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 
@@ -33,12 +33,12 @@ In this article you'll learn how to:
 > * Use triage query mode to update a list of work items   
 > * Bulk save work items that you've updated  
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 ::: moniker range=">= azure-devops-2019"
 

@@ -150,7 +150,7 @@ You can copy and paste HTML text or an image from another application directly i
 - *Italic*: **Ctrl+I**  
 - <u>Underscore</u>: **Ctrl+U** 
 
-[!INCLUDE [temp](../../_shared/images-not-appearing-vs.md)] 
+[!INCLUDE [temp](../../includes/images-not-appearing-vs.md)] 
 
 
 #### [Team Explorer Everywhere](#tab/tee/)

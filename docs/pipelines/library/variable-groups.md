@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Add & use variable groups
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Use a variable group to store values that you want to control and make available across
 multiple pipelines. You can also use variable groups to store secrets and other values
@@ -185,6 +185,6 @@ When you set a variable with the same name in multiple scopes, the following pre
 1. Variable set in the pipeline
 1. Variable set in the variable group
 
-[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+[!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
 * * *

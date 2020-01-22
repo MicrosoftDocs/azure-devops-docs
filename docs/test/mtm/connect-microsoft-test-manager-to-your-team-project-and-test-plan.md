@@ -14,15 +14,15 @@ monikerRange: '>= tfs-2015'
 
 # Connect Microsoft Test Manager to your project and test plan
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 
 Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results in Azure DevOps or Team Foundation Server (TFS).  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ### Connect Microsoft Test Manager to your project and test plan  
   
@@ -56,4 +56,4 @@ Signed in with the wrong user name? Choose **Home**&nbsp; ![Home button in Micro
   
 [Plan manual tests with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

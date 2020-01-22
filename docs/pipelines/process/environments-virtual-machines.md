@@ -13,7 +13,7 @@ monikerRange: azure-devops
 ---
 
 # Environment - virtual machine resource
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 Virtual machines can be added as resources within environments and can be targeted for multi-VM deployments. Deployment history views within the environment provide traceability from VM to the pipeline and then to the commit.
 

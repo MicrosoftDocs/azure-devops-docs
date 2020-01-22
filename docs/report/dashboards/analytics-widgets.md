@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Widgets based on Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 Analytics supports several dashboard widgets that take advantage of the power of the service. Using these widgets, you and your team can gain valuable insights into the health and status of your work. 
@@ -28,7 +28,7 @@ Analytics supports several dashboard widgets that take advantage of the power of
 
 You add an Analytics widget to a dashboard the same way you add any other type of widget. For details, see [Add a widget to your dashboard](add-widget-to-dashboard.md). 
 
-[!INCLUDE [temp](../_shared/boards-disabled.md)]
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
 ## Burndown
 

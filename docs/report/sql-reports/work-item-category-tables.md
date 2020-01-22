@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 
 # Work Item Category tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for categories of work items by using the FactWorkItemToCategory and DimWorkItemCategory tables. You can organize the results of other work item queries by category if you join these tables with the DimWorkItem by using `FactWorkItemToCategory.WorkItemTypeName = DimWorkItem.System_WorkItemType`.  
   

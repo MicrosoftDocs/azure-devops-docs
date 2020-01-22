@@ -17,7 +17,7 @@ ms.date: 05/30/2018
 
 # Supported operations when moving from Hosted XML to an inherited process   
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
@@ -65,7 +65,7 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 > | Identity fields with string values | Lists that contain an identity value in ALLOWEDVALUES or PROHIBITEDVALUES are automatically converted into the Identity field type. Any other string values in the list are ignored. | 
 
 
-[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](../includes/post-upgrade-steps.md)]
 
 
 ## Related articles

@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Design the work item form
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]  
 > This articles applies to project customization for the On-premises XML process model and for the old webform. For the new web form and for the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -36,7 +36,7 @@ When you design a work item form, you want to position fields on the form so tha
   For information about how to export, import, and verify work item form changes, see [Change the work item form layout](change-work-item-form-layout.md).    
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 
 <a name="LayoutElements"></a> 

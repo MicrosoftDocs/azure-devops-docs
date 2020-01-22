@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to download build artifacts.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifactsV0.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadBuildArtifactsV0.md)]
 
 ::: moniker-end
 

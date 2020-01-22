@@ -17,7 +17,7 @@ ms.date: 11/12/2019
 
 # Quickstart: Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 In this quickstart, you learn how to do the following tasks:
 
@@ -159,7 +159,7 @@ ID                                    Name         Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

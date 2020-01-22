@@ -16,7 +16,7 @@ ms.date: 07/17/2019
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
   
@@ -34,7 +34,7 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
  
 Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. 
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 #### [Basic process](#tab/basic-process) 
 

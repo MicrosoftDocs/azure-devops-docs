@@ -19,7 +19,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 
 # Additional configuration options post update
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). 

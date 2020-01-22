@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
  
 # Azure Pipelines with Slack
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 If you use [Slack](https://slack.com), you can use the [Azure Pipelines app for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines) to easily monitor the events for your pipelines. Set up and manage subscriptions for builds, releases, YAML pipelines, 
 pending approvals and more from the app and get notifications for these events in your Slack channels.
@@ -22,7 +22,7 @@ pending approvals and more from the app and get notifications for these events i
 > ![Notifications image](media/integrations-slack/notifications.png)
 
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 ## Add the Azure Pipelines app to your Slack workspace
 
@@ -187,7 +187,7 @@ Post that, you can set up and manage your notifications the same way as you woul
 
 If you are experiencing the following errors when using the [Azure Pipelines App for Slack](https://slack.com/apps/AFH4Y66N9-azure-pipelines), follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](_shared/troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](includes/troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azpipelines signout` command followed by the `/azpipelines signin` command. 
 

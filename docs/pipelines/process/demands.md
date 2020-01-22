@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 # Specify demands
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
@@ -76,11 +76,11 @@ Register each agent that has the capability.
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](../agents/_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](../agents/includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab for the agent:
  
-   [!INCLUDE [agent-capabilities](../agents/_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](../agents/includes/agent-capabilities-tab.md)]
 
 1. Add something like the following entry:
 

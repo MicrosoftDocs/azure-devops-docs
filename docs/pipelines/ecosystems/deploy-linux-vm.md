@@ -26,7 +26,7 @@ quickstart for any app as long as your continuous integration pipeline publishes
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-projects/spring-petclinic
@@ -36,7 +36,7 @@ https://github.com/spring-projects/spring-petclinic
 
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
 ```
 https://github.com/azure-devops/fabrikam-node

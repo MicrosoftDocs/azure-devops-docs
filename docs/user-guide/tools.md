@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 # Tools and clients that connect to Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In this article, learn about the tools and clients that connect to Azure DevOps.
 

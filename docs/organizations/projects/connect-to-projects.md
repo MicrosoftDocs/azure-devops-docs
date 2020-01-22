@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Connect to a project in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   

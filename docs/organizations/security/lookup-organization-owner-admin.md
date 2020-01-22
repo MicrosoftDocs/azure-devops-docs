@@ -17,7 +17,7 @@ ms.date: 11/22/2019
 
 # Look up administrators or an organization owner 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 An administrator or organization Owner can give you access to select features or functions, or change your permissions. In this article, learn how to look up administrators or organization Owners.
 
@@ -43,7 +43,7 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 2. Choose **Project settings**, and then **Permissions**.
 
-	![Choose Project settings > Permissions](../settings/media/_shared/open-project-settings-permissions-preview.png)
+	![Choose Project settings > Permissions](../settings/media/shared/open-project-settings-permissions-preview.png)
 
 3. Choose **Project Administrators** group, and then **Members**.  
 
@@ -104,7 +104,7 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Project Settings**.
 
-   ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)  
+   ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
 3. Choose the **Security** page, **Project Administrators** group, and then the **Members** tab.  
 
@@ -130,7 +130,7 @@ To find out who is a member of the Project Collection Administrators group, chec
 
 1. Choose the ![project-icon.png](../../media/icons/project-icon.png) Azure DevOps logo to open your projects, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.  
 
-	![Open Organization settings](../../_shared/media/open-organization-settings-preview.png)
+	![Open Organization settings](../../media/open-organization-settings-preview.png)
 
 2. Choose **Permissions** under the Security group, and then **Project Collection Administrators** > **Members** tab. 
 
@@ -159,7 +159,7 @@ To find out who is a member, check the **Security** settings at the collection l
 1. Choose the ![project-icon.png](../../media/icons/project-icon.png) settings icon and choose **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/_shared/media/settings/open-account-settings.png)  
+	> ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
 
 2. Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 
@@ -176,12 +176,12 @@ To find out who is a member, check the **Security** settings at the collection l
 
 1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
-	![Open organization settings](../../_shared/media/open-organization-settings-preview.png)  
+	![Open organization settings](../../media/open-organization-settings-preview.png)  
 
 2. Choose **Overview** and scroll down to show the **Organization owner**.
 
    > [!div class="mx-imgBorder"]  
-   > ![Organization settings, Organization owner](../../_shared/media/settings/organization-settings-info.png)
+   > ![Organization settings, Organization owner](../../media/settings/organization-settings-info.png)
 
    To change the owner, see [Change organization owner](../accounts/change-organization-ownership.md). 
 

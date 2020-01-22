@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
@@ -301,7 +301,7 @@ Also, from the web portal, you can view the following charts:
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 
-[!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 
 ### Fields that show up in the chart editor
 

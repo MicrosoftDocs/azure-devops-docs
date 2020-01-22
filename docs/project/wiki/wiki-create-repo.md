@@ -12,12 +12,12 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 11/21/2019  
+ms.date: 01/22/2020  
 ---
 
 # Quickstart: Create a Wiki for your project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
 
@@ -55,7 +55,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE [temp](includes/open-wiki-hub.md)]
 
 ## Provision a wiki Git repository
 
@@ -86,10 +86,9 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 > [!NOTE]
 > If you want to provision more wikis, then you must [publish code as a wiki](publish-repo-to-wiki.md). You can set up multiple wiki repos within a single project.
 
-### Why is the Git repository hidden?
+### How can I navigate to the Git repository?
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
-
 However, you can navigate to it from the following URL:
 
 ::: moniker range=">= azure-devops-2019"
@@ -150,7 +149,7 @@ ID                                    Name                 Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Review code coverage results
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 <a name="prerequisites"></a>  
 
@@ -30,7 +30,7 @@ over time by reducing the test debt.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -80,4 +80,4 @@ The code coverage artifacts published during the build can be viewed under the
   [Gulp](../tasks/build/gulp.md), [Grunt](../tasks/build/grunt.md), and [Gradle](../tasks/build/gradle.md)
   provide the option to publish code coverage data to the pipeline.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

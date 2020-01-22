@@ -30,7 +30,7 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.md)]
+[!INCLUDE [temp](../includes/yaml/VsTestPlatformToolInstallerV1.md)]
 
 ::: moniker-end
 

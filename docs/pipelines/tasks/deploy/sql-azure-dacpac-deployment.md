@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy to Azure SQL DB using a D
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeploymentV1.md)]
+[!INCLUDE [temp](../includes/yaml/SqlAzureDacpacDeploymentV1.md)]
 
 ::: moniker-end
 

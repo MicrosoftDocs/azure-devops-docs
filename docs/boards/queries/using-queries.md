@@ -17,7 +17,7 @@ ms.date: 10/16/2019
 
 # Create and save managed queries with the query editor
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
@@ -37,11 +37,11 @@ In this article you'll learn:
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 
 <a id="flat-list-query"/>
@@ -391,6 +391,6 @@ That's the basics about using queries. For an index of query examples, see [Crea
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
  
  

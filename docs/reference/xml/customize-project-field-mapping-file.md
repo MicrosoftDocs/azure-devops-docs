@@ -15,11 +15,11 @@ ms.date: 05/06/2019
 
 # Customize the Microsoft Project field mapping file
 
-[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2018-earlier.md)] 
 
 You can customize how data is published and refreshed by modifying the Microsoft Project mapping file. When publishing or refreshing tasks in Project, the mapping file determines how Project task fields map to Team Foundation Server (TFS) work item fields. Also, the mapping file controls the publishing behavior. You can control if fields are only published, or both published and refreshed.   
 
-[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+[!INCLUDE [temp](includes/project-integration-deprecated.md)]
 
 ::: moniker range="<= tfs-2015"
 

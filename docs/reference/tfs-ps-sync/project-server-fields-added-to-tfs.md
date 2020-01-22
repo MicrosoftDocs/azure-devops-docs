@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 
 # Project Server fields added to TFS to support data synchronization 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> When you specify a type of work item to participate in data synchronization between Visual Studio Team Foundation Server and Microsoft Project Server, more than 25 fields are added to the work item type. Several of these fields are also added to the work item form and appear on the **Project Server** tab. You can use these fields to build reports or to specify queries that find work items. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   

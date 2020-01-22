@@ -25,7 +25,7 @@ The Marketplace is a one-stop-shop for individuals and teams to find tools that 
 
 ## Publishing requirements
 
-[!INCLUDE [](_shared/before-publishing.md)]
+[!INCLUDE [](includes/before-publishing.md)]
 
 ## What you need
 
@@ -49,7 +49,7 @@ Note: The term, `extension`, is used in documentations referenced below. Extensi
 
 ### Create a publisher
 
-[!INCLUDE [](./_shared/create-publisher.md)]
+[!INCLUDE [](./includes/create-publisher.md)]
 
 ### Create a folder to contain your item manifest and other assets
 
@@ -72,8 +72,8 @@ Before you package your integration as an extension, you'll need to create a `ho
 
 2. Update the JSON using the following reference:
 
-[!INCLUDE [](../_shared/manifest-core.md)]
-[!INCLUDE [](../_shared/manifest-discovery.md)]
+[!INCLUDE [](../includes/manifest-core.md)]
+[!INCLUDE [](../includes/manifest-discovery.md)]
 
 #### Details page
 
@@ -114,7 +114,7 @@ tfx extension create --manifest-globs vss-extension.json
 
 ### Publish your integration to the Marketplace
 
-[!INCLUDE [Publish_extension](../_shared/procedures/publish.md)]
+[!INCLUDE [Publish_extension](../includes/procedures/publish.md)]
 
 ### Share your integration
 Before an integration can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
@@ -128,7 +128,7 @@ To share an integration so it can be installed:
 
 #### Update an item
 
-[!INCLUDE [Update_extension](../_shared/procedures/update.md)]
+[!INCLUDE [Update_extension](../includes/procedures/update.md)]
 
 ## Make your integration public (visible to everyone) 
 
