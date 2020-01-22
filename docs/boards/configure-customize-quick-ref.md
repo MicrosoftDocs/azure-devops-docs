@@ -274,5 +274,8 @@ Link from these topics to this article:
 Examples you can draw on and document in another topic: 
 - The way Agile features team managed their backlog (~10 PMs) 
 - The way Carmon mills content team (56) manages their backlog. Managing backlog via user stories+content feature area (highly granular) , 
+
+Information to provide your teams
+
 --> 
 

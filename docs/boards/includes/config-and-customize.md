@@ -12,10 +12,10 @@ ms.date: 01/21/2020
 <table width="100%">
 <tbody valign="top">
 <tr>
-<th width="40%">Configure or customize</th>
-<th width="20%">Standard tools</th>
-<th width="20%">Analytics</th>
-<th width="20%">Portfolio planning tools</th>
+<th width="25%">Configure or customize</th>
+<th width="25%">Standard tools</th>
+<th width="25%">Analytics</th>
+<th width="25%">Portfolio planning tools</th>
 </tr>
 <tr>
 <td><a href="/azure/devops/organizations/settings/set-area-paths">Area paths, project configuration and team subscriptions</a></td>
