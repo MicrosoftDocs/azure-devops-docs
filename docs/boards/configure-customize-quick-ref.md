@@ -17,15 +17,15 @@ ms.date: 01/09/2020
 
 # Configuration and customization of Azure Boards 
 
-[!INCLUDE [temp](_shared/version-vsts-only.md)]
+[!INCLUDE [temp](includes/version-vsts-only.md)]
 
 This article provides guidance and links to all items that you can customize that impact work tracking tools. 
-
-If you're just getting started as a Project Administrator, see [Get started as an administrator](../user-guide/project-admin-tutorial.md).
 
 > [!NOTE]   
 > This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article are only available for the cloud at this time. 
 
+
+If you're just getting started as a Project Administrator, see [Get started as an administrator](../user-guide/project-admin-tutorial.md).
 
 ## What to consider?
 
@@ -42,6 +42,16 @@ One of the main choices teams have is choosing the work item types they use to t
 | Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work. | 
 | Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work. | 
 | Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.   | 
+
+
+### Work item types and portfolio backlog levels 
+
+Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlogs. The defaults for each supported process is shown in the following tabs. 
+
+[!INCLUDE [hierarchy-work-item-types](includes/hierarchy-work-item-types.md)]
+
+
+### Supported tasks and tools  
 
 Many teams starting out using Scrum methods track and plan their work using the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, then adding child-dependent tasks is optional. Developers might add them simply as a checklist of items they need to complete a user story or backlog requirement.  
 
@@ -110,23 +120,6 @@ The primary tools available to use for each recommended option are described in 
 </table>
 
 
-### Example team choices 
-
-Some examples of real-world teams who use Azure Boards to track work are described below. 
-
-- Product manage team uses features to prioritize their work with child-dependent user stories assigned to development team: 
-	- Product management team of ten PMs manages five development teams and their work
-	- Five development teams comprised of 8 to 12 developers manage their work using user stories with optional child-dependent tasks, no time estimates made 
-
-- Open source project of 100+ members that manages projects they collaborate on:  
-	- Uses the Scrum process  
-	- Defines Features and product backlog items, each backlog item corresponds to an event or deliverable   
-	- Updates status via the Kanban board  
-
-- Content development team of 50 writers uses tasks to track their work 
-	- 
-
-- Support operations team 
 
 ## Configure and customization options 
 
@@ -143,7 +136,7 @@ workflow customizations
 
 
 
-## Area paths, product teams, and delivery plans 
+## Area paths, product teams, and portfolio management  
 
 Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define a hierarchical set of area paths or a flat set. Typically, you define a hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
 
@@ -156,7 +149,7 @@ Prior to adding teams, we recommend you read the following articles:
 - [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
 - [Agile culture](plans/agile-culture.md). 
 
-The two main ways to group work items is by area path or by parenting them under a portfolio work item type as described early is this article. So when you structure your teams and projects, you want to make sure you understand how you'll use these two main ways of grouping to support your business needs. For query and filter purposes, you can also assigned tags to work items that acts as a grouping. Your choices impact the use of portfolio planning tools. 
+The two main ways to group work items is by area path and by parenting them under a portfolio work item type as described early is this article. You can also assign tags to work items to group them for query and filter purposes. So when you structure your teams and projects, you want to make sure you understand how you'll use these grouping tools to support your business needs. Your choices impact the use of portfolio planning tools. 
 
 Recommendations:
 - Consider what views upper management may want to view and how to best support them 
@@ -194,11 +187,6 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 - And all other timeline or calendar view tools  
 
 
-## Work item types and portfolio backlog levels 
-
-Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlogs. The defaults for each supported process is shown in the following tabs. 
-
-[!INCLUDE [hierarchy-work-item-types](includes/hierarchy-work-item-types.md)]
 
 
 ### Basic tools 
@@ -243,15 +231,31 @@ Computer settings ---
 
 - Notifications
 - 
-## Configuration 
-
-[!INCLUDE [team-configuration](includes/team-configuration.md)]
 
 
 ## Customization
 
 
 ## Hierarchical guidance   
+
+
+### Example team choices 
+
+Some examples of real-world teams who use Azure Boards to track work are described below. 
+
+- Product manage team uses features to prioritize their work with child-dependent user stories assigned to development team: 
+	- Product management team of ten PMs manages five development teams and their work
+	- Five development teams comprised of 8 to 12 developers manage their work using user stories with optional child-dependent tasks, no time estimates made 
+
+- Open source project of 100+ members that manages projects they collaborate on:  
+	- Uses the Scrum process  
+	- Defines Features and product backlog items, each backlog item corresponds to an event or deliverable   
+	- Updates status via the Kanban board  
+
+- Content development team of 50 writers uses tasks to track their work 
+	- 
+
+- Support operations team 
 
 
 ## Related articles
