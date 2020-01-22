@@ -12,9 +12,9 @@ ms.date: 05/20/2019
 
 ## Features
 
-[!INCLUDE [sprint-152-update-links](../_shared/administration/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](../includes/administration/sprint-152-update-links.md)]
 
-[!INCLUDE [sprint-152-update](../_shared/administration/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](../includes/administration/sprint-152-update.md)]
 
 ## Next steps
 

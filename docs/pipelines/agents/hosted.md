@@ -20,7 +20,7 @@ monikerRange: azure-devops
 > [!NOTE]
 > Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent VM image today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.13), then select the 'Hosted macOS High Sierra' VM image for your pipelines.
 
-[!INCLUDE [include](_shared/hosted-agent-intro.md)]
+[!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 <a name="software"></a>
 

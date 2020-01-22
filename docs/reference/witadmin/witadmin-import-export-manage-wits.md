@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Import, export, and manage work item types
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You can manage work item types for a project by using the following **witadmin** commands:  
 -   **destroywitd**:  Destroys a work item type, and destroys every work item of that type permanently without recovery.    
@@ -25,9 +25,9 @@ You can manage work item types for a project by using the following **witadmin**
 -   **renamewitd**:  Changes the display name of a work item type within a specific project. After you run this command, work items of this type show the new name.  
   
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
  
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  

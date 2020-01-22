@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Manage project details in an enterprise project plan mapped to a project
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager, you can manage both business requirements and implementation tasks in Microsoft Project Professional. As work progresses, development teams can update their tasks as they work in Team Foundation. Both project managers and development teams can manage their workflows independently while collaborating fully and communicating more easily when changes that affect the schedule occur. The synchronization engine for Visual Studio Team Foundation Server and Microsoft Project Server maintains scheduling data for the requirements and tasks in the mapped enterprise project plan and project.  
   

@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 # Customize a process template
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
  
 Process templates define the objects and processes available to you when you create a project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   

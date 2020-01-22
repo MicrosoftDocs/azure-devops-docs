@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 ---
 
 # Release (Scrum) dashboard
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 The Release dashboard shows how much work remains in the release and how quickly your team is working through the product backlog. It displays the Release Burndown report, along with additional charts and quick access links.  
   

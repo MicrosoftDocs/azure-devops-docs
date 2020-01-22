@@ -15,16 +15,16 @@ ms.date: 11/07/2019
 
 # Add users to a project or team
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
 
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
 
-[!INCLUDE [temp](../../_shared/prerequisites-add-users-org.md)]
+[!INCLUDE [temp](../../includes/prerequisites-add-users-org.md)]
 
-[!INCLUDE [temp](../../_shared/prerequisites-add-users-server.md)]
+[!INCLUDE [temp](../../includes/prerequisites-add-users-server.md)]
 
 Once users have been added to a project, you can browse for their display name or user name (email alias). Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 
@@ -137,7 +137,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 
@@ -194,7 +194,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
 
-   ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)  
+   ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
 3. Choose **Security** and under **Groups**, choose one of the following options:
    - **Readers**: To add users who require read-only access to the project, choose .
@@ -401,7 +401,7 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 ::: moniker-end 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

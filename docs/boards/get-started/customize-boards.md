@@ -17,7 +17,7 @@ ms.date: 01/11/2019
 
 # Customize your boards
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 
@@ -34,7 +34,7 @@ You can configure your Kanban board in several ways to support specific tracking
 
 Each team can customize their Issues and Epics boards and sprint Taskboards.  
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 

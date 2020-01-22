@@ -17,13 +17,13 @@ ms.date: 08/23/2019
 
 # Plan and track work  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
 Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -472,7 +472,7 @@ In addition to the fields you can define for a user story, you can specify the f
 * * *
 
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)]
+[!INCLUDE [temp](../includes/discussion-tip.md)]
 
 
 ## Try this next  

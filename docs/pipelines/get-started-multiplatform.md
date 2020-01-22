@@ -21,7 +21,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Get the sample code
 

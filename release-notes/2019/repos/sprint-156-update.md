@@ -12,12 +12,12 @@ ms.date: 09/02/2019
 
 ## Features
 
-[!INCLUDE [sprint-157-update-links](../_shared/repos/sprint-157-update-links.md)]
+[!INCLUDE [sprint-157-update-links](../includes/repos/sprint-157-update-links.md)]
 
-[!INCLUDE [sprint-157-update](../_shared/repos/sprint-157-update.md)]
+[!INCLUDE [sprint-157-update](../includes/repos/sprint-157-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 
-[!INCLUDE [sprint-157](../_shared/signer/sprint-157.md)]
+[!INCLUDE [sprint-157](../includes/signer/sprint-157.md)]

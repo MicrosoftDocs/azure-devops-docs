@@ -15,7 +15,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Run tests in parallel for any test runner
 
-[!INCLUDE [include](../_shared/version-server-2019-rtm.md)]
+[!INCLUDE [include](../includes/version-server-2019-rtm.md)]
 
 Running tests to validate changes to code is key to maintaining quality.
 For continuous integration practice to be successful, it is essential you have a good test suite
@@ -115,4 +115,4 @@ Most test runners provide the capability to run tests in parallel on a single ma
 The two types of parallelism can be combined for massively parallel testing,
 which makes testing in pipelines extremely efficient.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

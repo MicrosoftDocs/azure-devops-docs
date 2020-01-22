@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # About inviting external users to Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Learn about security and data access considerations when you're adding guest users to Azure DevOps.
 

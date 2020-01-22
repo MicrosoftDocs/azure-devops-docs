@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 #  Marketplace extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Extensions are simple add-ons that can be used to customize and extend your experience with Azure DevOps. The [Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions that can be installed to help with the following tasks:
 
@@ -28,7 +28,7 @@ In the Azure DevOps Marketplace you can do the following tasks:
 - Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
 - Purchase Visual Studio subscriptions
 
-![Extensions Marketplace](../organizations/billing/media/_shared/extensions-marketplace.png)
+![Extensions Marketplace](../organizations/billing/media/shared/extensions-marketplace.png)
 
 Most extensions are available for free. 
 For information on purchasing, see the following articles:
@@ -84,7 +84,7 @@ Publisher Id    Extension Id    Name
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../includes/note-cli-not-supported.md)]
 
 * * *
 

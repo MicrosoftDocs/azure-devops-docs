@@ -229,7 +229,7 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopes table](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../includes/scopes.md)]
 
 When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.

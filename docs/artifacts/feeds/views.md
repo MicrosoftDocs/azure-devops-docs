@@ -70,7 +70,7 @@ Today, the **NuGet Publisher** build task uses the `-prerelease` part of a SemVe
 
 You can create your own views and rename and delete existing views in the feed settings dialog.
 
-[!INCLUDE [edit-feed](../_shared/edit-feed.md)]
+[!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
 In the edit feed dialog:
 - Select **Release views**

@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Resolve validation errors for data synchronization 
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 When you publish an enterprise project plan that is mapped to a project, the Team Foundation add-in for Microsoft Project Professional performs several data validation checks. A data validation error occurs if you define or modify the values for a task that is set to publish to Team Foundation Server (TFS) and one or more values violate a rule that is defined for the type of work item that is associated with the task.  
   

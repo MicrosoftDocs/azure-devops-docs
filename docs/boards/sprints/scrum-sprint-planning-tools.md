@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 <!--- ADD WIDGET INFO AS WELL --> 
 

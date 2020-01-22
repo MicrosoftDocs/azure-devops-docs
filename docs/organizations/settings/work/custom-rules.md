@@ -16,11 +16,11 @@ ms.date: 01/10/2020
 
 # Add a rule to a work item type (Inheritance process)
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 Custom rules provide support for a number of business use cases, allowing you to go beyond setting a default value for a field or make it required. Rules allow you to clear the value of a field, copy a value into a field, and apply values based on dependencies between different fields' values.
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 With a custom rule, you can define a number of actions based on specific conditions. For example, you can apply a rule to support these types of scenarios:
 
@@ -73,13 +73,13 @@ As an example, you can make a field required based on the value assigned to the 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)]
+[!INCLUDE [temp](../includes/process-prerequisites.md)]
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/automatic-update-project.md)]
+[!INCLUDE [temp](../includes/automatic-update-project.md)]
 
 ## Add a custom rule
 
@@ -120,7 +120,7 @@ You delete or disable the rule from the actions menu of the rule.
 
 ## Restrict modification of closed work items
 
-[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 
 ::: moniker range="azure-devops"

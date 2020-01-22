@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # View and compare your load test runs
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two

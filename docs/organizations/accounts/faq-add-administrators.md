@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot adding administrators to projects and project collections
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 #### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
 

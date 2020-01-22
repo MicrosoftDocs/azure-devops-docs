@@ -15,7 +15,7 @@ ms.date: 12/17/2019
 
 # Velocity metrics and usage guidance  
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
  
 Velocity metrics provide useful information to support the following team and product management activities:  
 - Sprint planning  
@@ -98,7 +98,7 @@ To configure or view Velocity charts, see [Configure and view Velocity charts](t
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/velocity-activities.md)] 
+[!INCLUDE [temp](../includes/velocity-activities.md)] 
 
 <a id="minimize-variability" >    </a>
 

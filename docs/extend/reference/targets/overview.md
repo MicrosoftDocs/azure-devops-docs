@@ -14,7 +14,7 @@ ms.date: 12/12/2019
 
 # Azure DevOps extensibility points
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../../../boards/includes/version-vsts-tfs-2017-on.md)]
 
 Extensions enhance the Azure DevOps user experience by contributing new capabilities. In this article, we highlight the most common extensibility points that your extension can target.
 
@@ -274,11 +274,11 @@ Backlog item menu               | `ms.vss-work-web.backlog-item-menu`           
 Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/media/sprintBoardPivotFilterActions.png)
 Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/media/backlogBoardPivotFilterActions.png)
 Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    | 
-Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/media/backlog-tab/product-backlog-tab.png)
-Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/media/backlog-tab/iteration-backlog-tab.png)
-Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/media/backlog-pane/portfolio-backlog-pane.png)
-Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/media/backlog-pane/product-backlog-pane.png)
-Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/media/backlog-pane/iteration-backlog-pane.png)
+Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../media-procedures/backlog-tab/product-backlog-tab.png)
+Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../media-procedures/backlog-tab/iteration-backlog-tab.png)
+Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../media-procedures/backlog-pane/portfolio-backlog-pane.png)
+Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../media-procedures/backlog-pane/product-backlog-pane.png)
+Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../media-procedures/backlog-pane/iteration-backlog-pane.png)
 
 ::: moniker-end
 
@@ -297,11 +297,11 @@ Backlog item menu               | `ms.vss-work-web.backlog-item-menu`           
 Sprint board pivot filter menu  | `ms.vss-work-web.sprint-board-pivot-filter-menu`  | ![sprintBoardPivotFilterActions](./vss/work/web/media/sprintBoardPivotFilterActions.png)
 Board pivot filter menu         | `ms.vss-work-web.backlog-board-pivot-filter-menu` | ![backlogBoardPivotFilterActions](./vss/work/web/media/backlogBoardPivotFilterActions.png)
 Card menu                       | `ms.vss-work-web.backlog-board-card-item-menu`    | 
-Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../_shared/procedures/media/backlog-tab/product-backlog-tab.png)
-Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../_shared/procedures/media/backlog-tab/iteration-backlog-tab.png)
-Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../_shared/procedures/media/backlog-pane/portfolio-backlog-pane.png)
-Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/media/backlog-pane/product-backlog-pane.png)
-Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/media
+Product backlog tab             | `ms.vss-work-web.product-backlog-tabs`            | ![productBacklogTab](../../media-procedures/backlog-tab/product-backlog-tab.png)
+Iteration backlog tab           | `ms.vss-work-web.iteration-backlog-tabs`          | ![iterationBacklogTab](../../media-procedures/backlog-tab/iteration-backlog-tab.png)
+Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`      | ![portfolioBacklogPane](../../media-procedures/backlog-pane/portfolio-backlog-pane.png)
+Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../media-procedures/backlog-pane/product-backlog-pane.png)
+Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../includes/procedures/media
 
 ::: moniker-end
 

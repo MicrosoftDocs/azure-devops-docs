@@ -15,7 +15,7 @@ ms.date: 06/28/2019
 
 # Change column options 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="column-options">  </a>
 

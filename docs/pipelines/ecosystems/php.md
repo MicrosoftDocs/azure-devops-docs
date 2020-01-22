@@ -24,7 +24,7 @@ Use a pipeline to automatically build and test your PHP projects.
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-php

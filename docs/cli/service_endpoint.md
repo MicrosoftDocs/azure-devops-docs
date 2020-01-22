@@ -15,7 +15,7 @@ ms.date: 07/31/2019
 
 # Azure DevOps CLI Service Endpoint
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 ## Creating GitHub Service Endpoint
 

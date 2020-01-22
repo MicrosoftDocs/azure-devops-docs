@@ -16,11 +16,11 @@ ms.date: 12/10/2019
 
 # Pipeline outcome summary sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image.
 
@@ -28,14 +28,14 @@ An example is shown in the following image.
 > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -58,7 +58,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -80,7 +80,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -186,7 +186,7 @@ Your report should look like this.
 > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -200,7 +200,7 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -223,7 +223,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -253,7 +253,7 @@ You may want to view the outcome summary of a pipeline for a particular **branch
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -278,7 +278,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -309,7 +309,7 @@ You may want to view the outcome summary of a pipeline for a particular **Build 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -334,7 +334,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -366,7 +366,7 @@ You may want to view the pipeline outcome summary for all project pipelines in a
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -390,7 +390,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
@@ -412,8 +412,8 @@ aggregate(
 
 ## Full list of Pipelines sample reports 
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

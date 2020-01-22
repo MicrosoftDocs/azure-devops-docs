@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Change your preferred email address for notifications
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 You can change your preferred email address for notifications from your organization preferences profile page. Notifications are sent by default to the preferred email address for your organization profile. It's typically the email address you signed into Azure DevOps or TFS with.
 
@@ -30,7 +30,7 @@ You can change your preferred email address for notifications from your organiza
 
 1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](../_shared/media/open-user-settings-profile-preview.png)
+   ![Open Azure DevOps profile](../media/open-user-settings-profile-preview.png)
 
 2. Change your contact information, and then select **Save**.
 

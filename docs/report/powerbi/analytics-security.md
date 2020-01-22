@@ -16,7 +16,7 @@ ms.date: 11/21/2019
 
 # Set permissions to access Analytics and Analytics views
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 To use [Power BI for Azure DevOps](overview.md) or to exercise an OData query for Analytics, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
@@ -43,7 +43,7 @@ You grant or restrict permissions to a user by setting one or more permissions f
 > Analytics does not support security at the area path level. Therefore, if a user has access to a project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through Analytics. Therefore, to protect your data, the best practice is to not allow reporting against Analytics for any user who does not have access to all data within a project.  
 
 
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+[!INCLUDE [temp](includes/manage-shared-view-permissions.md)]
 
 
 <a name="access-denied"></a>

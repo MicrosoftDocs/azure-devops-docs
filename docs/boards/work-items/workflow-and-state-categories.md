@@ -15,7 +15,7 @@ ms.date: 07/22/2019
 
 # How workflow states and state categories are used in Backlogs and Boards
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 All workflows consist of states, transitions, and reasons. Workflows are defined for a work item type (WIT). A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
@@ -29,7 +29,7 @@ Workflow states define how a work item progresses upon its creation to closure. 
 
 The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown. 
  
-[!INCLUDE [temp](../_shared/four-process-workflow.md)] 
+[!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
 
 <a id="state-categories">  </a>  
@@ -43,7 +43,7 @@ Here's how the default, inherited states map to the state categories for all thr
 
 #### [Basic process](#tab/basic-process) 
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 <table valign="top" width="100%">
 <tr>

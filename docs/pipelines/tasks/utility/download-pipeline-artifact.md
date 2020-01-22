@@ -21,7 +21,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadPipelineArtifactV2.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadPipelineArtifactV2.md)]
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 | `runVersion`<br/>Build version to download | Specifies which build version to download. Options: `latest`, `latestFromBranch`, `specific` |
 | `runBranch`<br/>Branch Name | Specify to filter on branch/ref name, for example: `refs/heads/develop`. |
 | `runId`<br/>Build | The build from which to download the artifacts. For example: `1764` |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ## Examples
 
