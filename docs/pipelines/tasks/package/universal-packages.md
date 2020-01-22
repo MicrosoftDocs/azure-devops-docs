@@ -121,7 +121,7 @@ Publish a custom version Universal Package to an external feed.
     externalFeedCredentials: MSENG2
     feedPublishExternal: 'fabrikamFeed-external'
     packagePublishExternal: 'fabrikam-package'
-    versionPublish: 'custom'
+    versionOption: 'custom'
     versionPublish: '1.2.3'
     packagePublishDescription: 'This is a custom version of my package.'
 ```

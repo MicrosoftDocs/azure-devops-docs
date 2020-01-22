@@ -162,7 +162,7 @@ Anyone who has write access to a project can assign work items, including users 
 
 **Note the following:**
 
-- You can assign a work item only to users that have been [added a project or team](../../organizations/security/add-users-team-project.md)  
+- You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)  
 - You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed  
 - Over time, the drop-down menu of person-name fields will display the names you have most recently selected  
 - Some drop-down menus that support assignment from a team backlog or board are automatically limited to users assigned to the team   
