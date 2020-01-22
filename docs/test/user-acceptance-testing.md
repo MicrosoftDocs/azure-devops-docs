@@ -93,6 +93,6 @@ for other types of testing such as continuous testing.
 If you don't see the data or information you expect in
 the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
-For details see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/10/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
+For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

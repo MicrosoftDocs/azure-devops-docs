@@ -532,7 +532,7 @@ Defines a connection to the Jenkins service.
 
 [How do I create a new service connection?](#create-new)
 
-Also see [Azure Pipelines Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
+Also see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 *****

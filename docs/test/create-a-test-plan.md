@@ -85,7 +85,7 @@ To create and edit a test artifact, you must have one of the following access le
 
 - [Basic + Test plans](../organizations/security/access-levels.md)
 - [Visual Studio Enterprise](../organizations/security/access-levels.md)
-- [Basic](../organizations/security/access-levels.md) to create and edit test cases, but not the other types of test artifacts
+- [Basic](../organizations/security/access-levels.md) edit test cases, but not create them or other types of test artifacts
 
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
