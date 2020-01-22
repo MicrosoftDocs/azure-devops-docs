@@ -22,8 +22,9 @@ ms.date: 01/09/2020
 This article provides guidance and links to all items that you can customize that impact work tracking tools. 
 
 > [!NOTE]   
-> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article are only available for the cloud at this time. 
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup and some portolio planning tools, are only available for the cloud at this time. 
 
+<!--- Mention about first choice is the process selected for your project --> 
 
 If you're just getting started as a Project Administrator, see [Get started as an administrator](../user-guide/project-admin-tutorial.md).
 
@@ -31,6 +32,26 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban, you can gain the most advantage of the Azure Boards tools by understanding how you can configure and customize them. 
 
+The primary items to consider as you structure your project are: 
+- How you'll use your product backlog to plan and prioritize your work 
+- Whether you'll track bugs as requirements or as tasks, or not use bugs at all
+- Whether or not you'll use tasks to track time and capacity  
+- How you'll use portfolio backlog levels and keep upper management informed of progress, risks, status  
+- What you want to track and how you want to track it 
+- How many teams you want to define 
+- Workflow customizations 
+
+<!--- team or project level??)  
+
+Once you determine how you'll use the work tracking building blocks and tools, you'll want to make any necessary configurations and customizations to support your business and communicate to your teams how they should use the tools. 
+
+## Work item types and portfolio backlog levels 
+
+Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlog(s). The defaults for each supported process are shown in the following tabs. 
+
+[!INCLUDE [hierarchy-work-item-types](includes/work-item-types.md)]
+
+The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
 
 ## Work tracking options and recommended usage  
 
@@ -42,14 +63,6 @@ One of the main choices teams have is choosing the work item types they use to t
 | Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work. | 
 | Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work. | 
 | Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.   | 
-
-
-### Work item types and portfolio backlog levels 
-
-Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlogs. The defaults for each supported process is shown in the following tabs. 
-
-[!INCLUDE [hierarchy-work-item-types](includes/hierarchy-work-item-types.md)]
-
 
 ### Supported tasks and tools  
 
@@ -134,7 +147,7 @@ workflow customizations
 
 --> 
 
-
+<a id="area-path" />
 
 ## Area paths, product teams, and portfolio management  
 
@@ -153,26 +166,33 @@ The two main ways to group work items is by area path and by parenting them unde
 
 Recommendations:
 - Consider what views upper management may want to view and how to best support them 
-- Consider how you want to use roll up 
+- Consider how you want to use rollup,   
 - Define epics and scenarios for large initiatives that will take two or more sprints to complete
 - Define requirements for work that can be accomplished in a single sprint and can be assigned to a single individual  
-- Define tasks to track more granular details or when you want to  
+- Define tasks to track more granular details or when you want to track time spent working 
 
 
 > [!TIP]    
-> Work items can only be assigned to a single individual. So when defining work items, consider how many work items are needed to assign the work to those individuals who will be tasked to complete the work. 
-
+> - Work items can only be assigned to a single individual. So when defining work items, consider how many work items are needed to assign the work to those individuals who will be tasked to complete the work. \
+> - Choose the Node Name field as a column option to view the leaf area node in a backlog list or board card.
+> - Don't create parent-child links among work items of the same type, such as story-story, bug-bug, task-task.
 
 Most Azure Boards tools support a filtered view of work items based on area path and/or iteration path. Additional filters can also be applied based on keyword, assignment, work item type, and more. 
 
+<a id="hierarchy" />
 
+
+### Hierarchical guidance 
 <!---
 Area paths, portfolios, and rollup 
 Assignments 
 --> 
 
+<a id="rollup" />
 
+### Rollup 
 
+<a id="iteration-path" />
 
 ## Iteration paths, sprints, releases, and versioning
 
@@ -187,16 +207,13 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 - And all other timeline or calendar view tools  
 
 
+## Treat bugs as requirements or tasks
 
+## Custom work item types and custom backlogs 
 
-### Basic tools 
+## Custom workflow 
 
-
-
-
-### Portfolio planning 
-
-## Analytics 
+## Custom fields
 
 
 ## Who can make changes? 
@@ -231,10 +248,7 @@ Computer settings ---
 
 - Notifications
 - 
-
-
-## Customization
-
+ 
 
 ## Hierarchical guidance   
 

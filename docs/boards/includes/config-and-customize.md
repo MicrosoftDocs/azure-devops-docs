@@ -13,8 +13,8 @@ ms.date: 01/21/2020
 <tbody valign="top">
 <tr>
 <th width="25%">Configure or customize</th>
-<th width="25%">Standard tools</th>
-<th width="25%">Analytics</th>
+<th width="30%">Standard tools</th>
+<th width="20%">Analytics</th>
 <th width="25%">Portfolio planning tools</th>
 </tr>
 <tr>
@@ -130,6 +130,25 @@ Custom workflow (Project)
 <ul>
 <li>Dependency Tracker</li>
 </ul>
+</td>
+</tr>
+<tr>
+<td>
+Custom field (Organization)
+</td>
+<td>
+<ul>
+<li>Boards>Product board</li>
+<li>Boards>Portfolio boards</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Rollup progress bars, sum, or count</li>
+</ul>
+</td>
+<td>
+   
 </td>
 </tr>
 </tbody>
