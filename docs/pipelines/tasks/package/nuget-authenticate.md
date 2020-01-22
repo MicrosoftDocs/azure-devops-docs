@@ -38,7 +38,7 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 
 ### Restore and push NuGet packages within your organization
 
-If the only authenticated feeds you use are Azure Artifacts feeds in your organization, you can use the NuGetAuthenticate task without specifying any inputs. For project scoped feeds that are in a different project than where the pipeline is running in, the project and the feed must allow access to the pipeline's project build service.
+If all of the Azure Artifacts feeds you use are in the same organization as your pipeline, you can use the NuGetAuthenticate task without specifying any inputs. For project scoped feeds that are in a different project than where the pipeline is running in, you must manually give the project and the feed access to the pipeline's project's build service.
 
 #### nuget.config
 ```XML
