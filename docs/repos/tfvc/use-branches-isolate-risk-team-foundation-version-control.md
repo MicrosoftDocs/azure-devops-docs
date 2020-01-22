@@ -1,4 +1,4 @@
-﻿---
+---
 title: Use branches to isolate risk in Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use branches to isolate risk in Team Foundation Version Control
@@ -62,6 +62,6 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 
 ## See Also
 
-#### Other Resources
-
- [Branch strategically](branch-strategically.md) 
+[Branch strategically](branch-strategically.md)
+ 
+[Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](branching-strategies-with-tfvc.md)
