@@ -26,19 +26,19 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 ## What to consider?
 
-When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban. The following table summarizes the most common configurations and customizations you can make and the Azure Boards tools that are impacted by them. 
+When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban, you can gain the most advantage of the Azure Boards tools by understanding how you can configure and customize them. 
 
 
-### Work tracking options and recommended usage  
+## Work tracking options and recommended usage  
 
 One of the main choices teams have is choosing the work item types they use to track their work. The work item type options and recommended usage are summarized as follows.  
 
 |Work item types | Recommended usage  |
 |-----------|----------------
-| Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog |
-| Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work | 
-| Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't estimate or track time associated with work | 
-| Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams (MORE)  | 
+| Tasks only | Not recommended as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog. In addition, there is no support for calendar views, cross-team views, or portfolio planning tools.   
+| Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work. | 
+| Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work. | 
+| Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.   | 
 
 Tracking work using tasks, supports work tracking ...   
 
@@ -46,34 +46,30 @@ If you don't plan on tracking remaining work and using the Sprint tools such as 
 
 Combination of task, requirement, and portfolio .. 
 
-The pros and cons of each option is summarized in the following table. 
+The primary tools available to use for each option are described in the following table. 
 
 
 <table width="100%">
 <tbody valign="top">
 <tr>
-<th width="14%">Option</th>
-<th width="43%">Pros</th>
-<th width="43%">Cons</th>
+<th width="35%">Work tracking options</th>
+<th width="65%">Tools available</th>
 </tr>
 <tr>
 <td>Requirements with child-dependent tasks</td>
 <td>
 <ul>
 <li>Supports Scrum methods</li>
-<li>Plan sprints using sprint capacity charts and sprint  </li>
-<li>Plan sprints using Backlog Planning tool   </li>
-<li>Track estimated and remaining work </li>
-<li>Monitor sprint burndown based on remaining work such as hours or days </li>
-<li>Update task status using sprint Taskboard  </li>
-<li>Conduct daily scrums using sprint Taskboard </li>
-</ul>
-</td>
-<td>
-<ul>
-<li>No supported calendar view tools </li>
-<li>No cross team views </li>
-<li>No support for any portfolio planning tools, except Dependency Tracker </li>
+<li>Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md) </li>
+<li>Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)   </li>
+<li>Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)  </li>
+<li>Track estimated and remaining work: [Taskboard](sprints/adjust-work.md) </li>
+<li>Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  </li>
+<li>Update and monitor task status: [Sprint Taskboard](sprints/task-board.md)   </li>
+<li>Conduct daily scrums:  [Sprint Taskboard](sprints/task-board.md)  </li>
+<li>(Optional) Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)</li>
+<li>(Optional) Forecast sprints using team velocity: [Forecast](sprints/forecast.md) </li>
+
 </ul>
 </td>
 </tr>
@@ -83,17 +79,12 @@ The pros and cons of each option is summarized in the following table.
 <td>
 <ul>
 <li>Supports Kanban and Scrumban methods </li>
-<li>Quickly define and prioritize backlog items </li>
-<li>Estimate work based on Story Points, Effort, or Size  </li>
-<li>Forecast sprints using team velocity </li>
-<li>Monitor sprint burndown based on Story Points, Effort, or Size or work item count </li>
-</ul>
-</td>
-<td>
-<ul>
-<li>No supported calendar view tools </li>
-<li>No cross team views </li>
-<li>No support for any portfolio planning tools </li>
+<li>Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md) </li>
+<li>Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)   </li>
+<li>Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)</li>
+<li>Forecast sprints using team velocity: [Forecast](sprints/forecast.md) </li>
+<li>Monitor sprint burndown based on requirement estimates: [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)  </li>
+<li>Update requirement status: [Kanban board ](boards/kanban-quickstart.md)   </li>
 </ul>
 </td>
 </tr>
@@ -102,16 +93,14 @@ The pros and cons of each option is summarized in the following table.
 </td>
 <td>
 <ul>
-<li>Plan sprints using sprint capacity charts </li>
-<li>Track estimated and remaining work </li>
-<li>Monitor sprint burndown based on remaining work such as hours or days </li>
-</ul>
-</td>
-<td>
-<ul>
-<li>No supported calendar view tools </li>
-<li>No cross team views </li>
-<li>No support for any portfolio planning tools </li>
+<li>Supports calendar views and portfolio planning </li>
+<li>Quickly define and prioritize portfolio items: [Portfolio backlogs](backlogs/define-features-epics.md) </li>
+<li>Quickly define child user stories of portfolio items: [Portfolio checklists](boards/kanban-epics-features-stories.md) </li>
+<li>Map work items to features and epics: [Mapping tool](backlogs/organize-backlog.md)   </li>
+<li>View cross-team progress calendar view: [Delivery plans](plans/review-team-plans.md)   </li>
+<li>View calendar view of all team features: [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)    </li>
+<li>View calendar view of a specific epic: [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)     </li>
+<li>Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)   </li>
 </ul>
 </td>
 </tr>
@@ -135,6 +124,8 @@ Some examples of real-world teams who use Azure Boards to track work are describ
 - Support operations team 
 
 ## Configure and customization options 
+
+The following table indicates the areas you can configure and customize and the tools impacted by those customizations. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](../report/dashboards/overview.md?view=azure-devops#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
  
 [!INCLUDE [temp](includes/config-and-customize.md)]
 

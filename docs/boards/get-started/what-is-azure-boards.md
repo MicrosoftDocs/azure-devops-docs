@@ -272,7 +272,8 @@ Boards, Backlogs, Sprints rely on team configurations. For example, if you want 
 
 ## Manage work across projects
 
-Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md). 
+Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). 
+
 
 To track work across several projects, you can: 
 - [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
