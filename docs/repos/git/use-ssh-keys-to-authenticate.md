@@ -128,7 +128,7 @@ Associate the public key generated in the previous step with your user ID.
 
    ![Azure Repos SSH Clone URL](media/use-ssh-authentication/ssh_clone_URL.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
  
 2. Run `git clone` from the command prompt. 
 

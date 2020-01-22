@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when Team Explorer can't display the list of projects defined in the collection. The specific error message that TFS returns should help you determine the cause of the problem.  
   

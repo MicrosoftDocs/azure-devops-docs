@@ -15,7 +15,7 @@ ms.date: 06/16/2017
 
 # Specify work item form controls
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2015.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2015.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md).

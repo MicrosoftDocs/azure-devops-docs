@@ -16,7 +16,7 @@ ms.date: 03/21/2019
 
 # Tutorial: Set personal or team favorites    
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 Favorite ![start icon](../../media/icons/icon-favorite-star.png) those views that you frequently access. You can favorite all sorts of Azure DevOps features and tools&mdash;such as a project, repository, build pipeline, dashboard, backlog, board, or query. You can set favorites for yourself or your team. 
 
@@ -95,7 +95,7 @@ Access views that you have favorited by choosing the ![ ](../../media/icons/inbo
 1. Access views that you have favorited by choosing the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Projects page](../../_shared/media/settings/open-project-hub-horz.png)   
+	> ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
 
 2. Choose **My Favorites** to quickly access any view or item that you've marked as a favorite. 
 

@@ -17,7 +17,7 @@ ms.date: 01/22/2020
 
 # Quickstart: Create a Wiki for your project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
 
@@ -55,7 +55,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE [temp](includes/open-wiki-hub.md)]
 
 ## Provision a wiki Git repository
 
@@ -149,7 +149,7 @@ ID                                    Name                 Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 

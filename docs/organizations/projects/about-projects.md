@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # About projects and scaling your organization
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps.
 
@@ -94,7 +94,7 @@ You can view the projects defined for your organization by opening the **Project
 1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](../../_shared/media/settings/open-project-hub-horz.png)
+    > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)
 
 2. From there, you can choose a project from the set of projects listed.
 

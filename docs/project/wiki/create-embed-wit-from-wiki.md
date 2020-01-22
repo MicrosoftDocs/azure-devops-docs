@@ -17,7 +17,7 @@ ms.date: 09/18/2019
 
 # Create and embed a work item from wiki
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 
 Learn how to create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.

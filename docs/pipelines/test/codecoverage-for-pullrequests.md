@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Code coverage for pull requests
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), it is essential that new code being brought into the system is well tested. This means that when developers raise pull requests, knowing whether their changes are covered by tests would help plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
 
@@ -95,4 +95,4 @@ Support for other coverage tools and result formats will be added in future mile
 If multiple pipelines are triggered when a pull request is raised, code coverage will not be merged. The capability is currently designed for a single pipeline that collects and publishes code coverage for pull requests. 
 If you need the ability to merge coverage data across pipelines, please file a feature request on [developer community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

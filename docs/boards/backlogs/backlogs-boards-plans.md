@@ -18,7 +18,7 @@ ms.date: 10/17/2019
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -446,7 +446,7 @@ The following table indicates those elements or tasks associated with each type 
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md#past-sprints).
 
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 
 ## Product backlog "In Progress" filter

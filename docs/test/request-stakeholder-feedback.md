@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
+[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
 <a name="request"></a>
 ## Request feedback from stakeholders
@@ -49,5 +49,5 @@ Request feedback from stakeholders directly from an Azure DevOps or TFS work ite
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
 

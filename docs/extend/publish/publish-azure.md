@@ -20,4 +20,4 @@ ms.date: 08/04/2016
 
 After you've [created an extension](../get-started/node.md), you can publish it to Azure so that it's available in the cloud.
 
-[!INCLUDE [Publish](../_shared/procedures/publish-azure.md)]
+[!INCLUDE [Publish](../includes/procedures/publish-azure.md)]

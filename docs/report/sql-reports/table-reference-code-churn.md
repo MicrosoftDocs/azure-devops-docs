@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 # Code Churn tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about the changes in the code that is under version control by using FactCodeChurn and the associated dimension tables. The fact table contains one record for each revision of a file in each changeset.  
   

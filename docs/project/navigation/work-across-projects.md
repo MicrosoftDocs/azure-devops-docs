@@ -17,7 +17,7 @@ ms.date: 02/08/2019
 
 # Work across projects
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 When you work on several projects, you can use select pages to support your cross-project work. These pages provide quick access and filter functions to support your work within a single project or work you're doing across several projects.  
 
@@ -74,7 +74,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Projects page](../../_shared/media/settings/open-project-hub-horz.png)   
+> ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
 
 ::: moniker-end
 

@@ -25,17 +25,17 @@ Also, if you have not done so, you need to set up a Publisher in the Gallery.
 
 ### Acquire the TFS Cross Platform Command Line Interface
 
-[!INCLUDE [Control](../_shared/procedures/acquire-tfx-cli.md)]
+[!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 
 ### Acquire a personal access token
 
-[!INCLUDE [Control](../_shared/procedures/acquire-pat.md)]
+[!INCLUDE [Control](../includes/procedures/acquire-pat.md)]
 
 ### Create a publisher
 
 If you haven't already created a publisher, you can do so using the command line tool.
 
-[!INCLUDE [Control](../_shared/procedures/command-line-create-publisher.md)]
+[!INCLUDE [Control](../includes/procedures/command-line-create-publisher.md)]
 
 ## Publish from the command line
 

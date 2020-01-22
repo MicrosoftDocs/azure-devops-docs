@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Manage notifications for a team or group
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 > [!NOTE]  
 > This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
@@ -122,7 +122,7 @@ Manage your group notifications by updating the group's **Delivery settings**.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
-  ![Open Organization settings](../_shared/media/settings/open-admin-settings-vert.png)
+  ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Global notifications** > **Subscribers**, enter and find your group, and then select **Delivery settings**.
 

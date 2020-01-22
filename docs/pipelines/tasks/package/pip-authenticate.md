@@ -27,7 +27,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PipAuthenticateV1.md)]
+[!INCLUDE [temp](../includes/yaml/PipAuthenticateV1.md)]
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 | `artifactFeeds`<br/>My feeds| (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with pip. |
 | `pythonDownloadServiceConnections`<br/>Feeds from external organizations| (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-python-download" data-raw-source="[pip service connection](~/pipelines/library/service-endpoints.md#sep-python-download)">pip service connection</a> names from external organizations to authenticate with pip. |
 | `onlyAddExtraIndex`<br/>Don't set primary index URL | (Optional) Boolean value, if set to `true` will force pip to get distributions from official python registry first. By default, it's `false` |
-| [!INCLUDE [temp](../_shared/control-options-arguments.md)] |
+| [!INCLUDE [temp](../includes/control-options-arguments.md)] |
 
 ## Examples
 

@@ -12,7 +12,7 @@ ms.date: 01/12/2017
 ---
 
 # Work with resource rollup in enterprise projects mapped to projects
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager or resource manager, you can track work that is allocated to resources in either Microsoft Project Professional or Team Foundation. The synchronization engine for Visual Studio Team Foundation Server and Microsoft Project Server supports the flow of rollup calculations and resource data, referred to as resource rollup, between the two server products. You can view the assignment of work by resources in Project Professional or from Project Web Access or Project Web App (PWA). Regardless of the method that you use to manage your project plan, you can use resource rollup to view resource allocation and work estimates, perform resource leveling, and determine whether a resource is over-allocated within a single project or across multiple projects.  
   

@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../includes/version-vsts-only.md)]
 
 This article guides you through the sign-up process for Azure Artifacts. Azure Artifacts is a service where you can create package feeds to publish and consume Maven, npm, NuGet, Python, and universal packages. Azure Artifacts is billed on a consumption basis, and is free up until 2 GB of storage. In the case that your organization needs more storage, you need to set up billing.
 
@@ -79,15 +79,15 @@ See and manage what your overall storage use is for Azure Artifacts.
  
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**. 
  
-   ![Open Organization settings](../_shared/media/settings/open-admin-settings-vert.png) 
+   ![Open Organization settings](../media/settings/open-admin-settings-vert.png) 
  
 3. Select **Billing**. 
  
-   ![Select Billing from Organization settings](../organizations/billing/media/_shared/select-billing-organization-settings.png)
+   ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
  
 4. Find Artifacts and review your current usage.
 
-   ![View storage for Azure Artifacts](_shared/media/azure-artifacts-view-storage-used.png)
+   ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
 
 ## Pay for Artifacts
 
@@ -99,7 +99,7 @@ Each organization gets Azure Artifacts for free, up until they hit 2 GB of stora
  
 3. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You're only charged for the storage you use, up to the limit. 
 
-   ![Increase artifacts beyond the free tier with the dropdown menu](_shared/media/increase-artifacts-beyond-free-tier.png)
+   ![Increase artifacts beyond the free tier with the dropdown menu](media/increase-artifacts-beyond-free-tier.png)
 
 > [!NOTE]
 > If you have reached your storage limit and are blocked from making additional uploads, it can take up to 1 hour after increasing your limit for uploads to be re-enabled. 

@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF31004: Team Foundation encountered an unexpected error while connecting to Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This is a generic error message displayed when the instance of Team Foundation on the local computer cannot connect to a Team Foundation Server and no error message was returned by a specific component within Team Foundation Server.  
   

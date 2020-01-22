@@ -13,7 +13,7 @@ ms.date: 04/11/2019
 
 # Configure features after an upgrade
 
-[!INCLUDE [temp](../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [temp](../includes/version-tfs-2018-earlier.md)]
 
 
 After upgrading your Team Foundation Server (TFS), you'll want to use the new features that were installed. Some of these features might require updates to your project. The Configure Features wizard is the easiest way to make this happen. 

@@ -13,9 +13,9 @@ description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
 
 ## Features
 
-[!INCLUDE [build-may-links](../_shared/artifacts/build-may-links.md)]
+[!INCLUDE [build-may-links](../includes/artifacts/build-may-links.md)]
 
-[!INCLUDE [build-may](../_shared/artifacts/build-may.md)]
+[!INCLUDE [build-may](../includes/artifacts/build-may.md)]
 
 ## Next steps
 

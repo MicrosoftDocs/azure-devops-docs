@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Push an image
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Azure Pipelines can be used to push images to container registries such as Azure Container Registry (ACR), Docker Hub, Google Container Registries, and others.
 
@@ -103,7 +103,7 @@ The following steps walk through the creation of Docker registry service connect
    Launch Code Editor by clicking the button in the upper-right corner of Cloud Shell:
 
    > [!div class="mx-imgBorder"]
-   > ![Badge](../_shared/media/gcp-code-editor.png "GCP code editor")
+   > ![Badge](../media/gcp-code-editor.png "GCP code editor")
 
 8. Open the file `named azure-pipelines-publisher-oneline.json`. You'll need the content of this file in one of the following steps:
 

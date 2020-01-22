@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Excel reports (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Excel reports to display information from the data warehouse for your team project. this article describes reports that are provided with the [CMMI process template](../../boards/work-items/guidance/cmmi-process.md).  
   

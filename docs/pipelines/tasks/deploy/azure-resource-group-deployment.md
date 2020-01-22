@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy, start, stop, and delete 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.md)]
+[!INCLUDE [temp](../includes/yaml/AzureResourceGroupDeploymentV2.md)]
 
 ::: moniker-end
 

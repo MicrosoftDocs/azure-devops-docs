@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Manage paid access for users
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]
 > We’ve recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
@@ -25,7 +25,7 @@ In this quickstart, learn how to manage paid access to [Azure Boards](https://az
 
 Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
@@ -57,15 +57,15 @@ To change the access level for new users added to projects, do the following tas
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   :::image type="content" source="media/_shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
+   :::image type="content" source="media/shared/select-billing-organization-settings.png" alt-text="Select Billing settings":::
 
 4. Change **Default access level for new users** to Basic.
 
-   :::image type="content" source="media/_shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
+   :::image type="content" source="media/shared/default-access-level-basic.png" alt-text="Default access level for new users to Basic":::
 
 ## Automate access level assignment with group rules
 
@@ -81,15 +81,15 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users** and then sort by **Last Access**.
 
-   :::image type="content" source="media/_shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
+   :::image type="content" source="media/shared/last-access.png" alt-text="Select Users and then sort by Last Access":::
  
 4. If you have users who've never signed in, you can find out how recently they were added by exporting the list of users and checking the **Date Created** column. 
 
-   :::image type="content" source="media/_shared/export-users.png" alt-text="Export users":::
+   :::image type="content" source="media/shared/export-users.png" alt-text="Export users":::
 
 ## Pay for a user once across multiple organizations
 

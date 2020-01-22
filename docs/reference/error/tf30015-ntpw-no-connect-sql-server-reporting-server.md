@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # TF30015: The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server {0}.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 The New Team Project Wizard was unable to connect to {*name*}, the server that hosts SQL Server Reporting Services. The reason for the failed connection cannot be determined at this time.  

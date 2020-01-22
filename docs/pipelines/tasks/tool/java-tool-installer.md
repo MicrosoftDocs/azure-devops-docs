@@ -29,7 +29,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
+[!INCLUDE [temp](../includes/yaml/JavaToolInstallerV0.md)]
 
 ::: moniker-end
 
@@ -93,6 +93,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

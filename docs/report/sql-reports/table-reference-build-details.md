@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 
 # Build Details tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about builds, such as the status and quality, by using FactBuildDetails and the associated dimension tables.  
 

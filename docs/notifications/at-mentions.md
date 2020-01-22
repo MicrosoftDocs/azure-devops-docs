@@ -16,7 +16,7 @@ ms.date: 12/30/2019
 
 # Use &#64;mentions in work items and pull requests
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 The <strong>@mention</strong> control allows you to quickly add someone into a work item or pull request discussion. You select a project member from the search list and they get notified of the comment you entered. 
 

@@ -15,7 +15,7 @@ ms.date: 01/08/2018
 
 # Kanban basics
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
 
@@ -40,10 +40,10 @@ Review this article to gain an understanding of how to configure and start worki
 User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 
-[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
+[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 
-[!INCLUDE [temp](../_shared/open-kanban-board.md)] 
+[!INCLUDE [temp](../includes/open-kanban-board.md)] 
 
 <a id="map-flow" />
 
@@ -118,7 +118,7 @@ Also, you can quickly update a field or reassign ownership directly from the boa
 
 Updating your Kanban board as work progresses helps keep you and your team in sync. Also, you'll be able to see and share the value stream your team is delivering to customers.
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 
 ## 4. Monitor metrics and fine tune
@@ -188,7 +188,7 @@ If you're new to tracking work with Agile tools and want to understand what you 
 
 ::: moniker range=">= tfs-2017"
 
-[!INCLUDE [temp](../_shared/live-updates.md)]  
+[!INCLUDE [temp](../includes/live-updates.md)]  
 
 ::: moniker-end
 

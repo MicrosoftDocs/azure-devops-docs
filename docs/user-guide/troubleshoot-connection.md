@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot connecting to a project
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 

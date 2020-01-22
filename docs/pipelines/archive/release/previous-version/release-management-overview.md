@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Automate deployments with Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Support a rapid release cadence and manage simultaneous releases. Set up 
 release paths that represent your stages from development to production.
@@ -50,6 +50,6 @@ To read a detailed user guide,
 * [Release your app without deployment agents](release-without-agents.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

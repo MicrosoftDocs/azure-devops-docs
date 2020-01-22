@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Locate reports after the upgrade to TFS 2010
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Upgrading your Team Foundation deployment to Visual Studio Team Foundation Server 2010 introduces several changes that affect the location and operations of reports that are accessed through SQL Server Reporting Services. Specifically, you will have access to both pre-existing or pre-upgrade reports, and new or post-upgrade reports that are based on the data warehouse schema for Team Foundation Server 2010.
 

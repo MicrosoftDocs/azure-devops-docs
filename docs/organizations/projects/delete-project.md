@@ -16,7 +16,7 @@ ms.date: 10/15/2019
 
 # Delete a project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
 
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are only in use.
 
@@ -33,7 +33,7 @@ In this article, learn how to delete a project from Azure DevOps. Deleting a pro
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
 
@@ -52,7 +52,7 @@ Your project is deleted and can be restored up to 28 days afterward.
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
+[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
 
 ## Delete a project from TFS
 
@@ -148,7 +148,7 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 

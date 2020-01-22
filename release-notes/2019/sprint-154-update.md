@@ -24,60 +24,60 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [sprint-154-update-links](_shared/general/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/general/sprint-154-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-154-update-links](_shared/boards/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/boards/sprint-154-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-154-update-links](_shared/pipelines/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/pipelines/sprint-154-update-links.md)]
 
 Azure Test Plans:
 
-[!INCLUDE [sprint-154-update-links](_shared/testplans/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/testplans/sprint-154-update-links.md)]
 
 
 Azure Repos:
 
-[!INCLUDE [sprint-154-update-links](_shared/repos/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/repos/sprint-154-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-154-update-links](_shared/artifacts/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/artifacts/sprint-154-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-154-update-links](_shared/wiki/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](includes/wiki/sprint-154-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-154-update](_shared/general/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/general/sprint-154-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-154-update](_shared/boards/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/boards/sprint-154-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-154-update](_shared/pipelines/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/pipelines/sprint-154-update.md)]
 
 ## Azure Test Plans
 
-[!INCLUDE [sprint-154-update](_shared/testplans/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/testplans/sprint-154-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-154-update](_shared/repos/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/repos/sprint-154-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-154-update](_shared/artifacts/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/artifacts/sprint-154-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-154-update](_shared/wiki/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](includes/wiki/sprint-154-update.md)]
 
 
 ## Next steps

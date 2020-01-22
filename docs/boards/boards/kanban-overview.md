@@ -17,7 +17,7 @@ ms.date: 10/14/2019
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -161,7 +161,7 @@ To learn more, see the following articles:
 
 ## Display of leaf node work items  
 
-[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
+[!INCLUDE [temp](../includes/display-leaf-nodes.md)]
 
 <a id="limits-multi-team" />
 
@@ -170,7 +170,7 @@ To learn more, see the following articles:
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
 Only when the work item state changes does the card column reflect the same on all boards.
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 
 ## Permissions and access

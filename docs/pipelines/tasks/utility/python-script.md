@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run a Python script.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PythonScriptV0.md)]
+[!INCLUDE [temp](../includes/yaml/PythonScriptV0.md)]
 
 ::: moniker-end
 

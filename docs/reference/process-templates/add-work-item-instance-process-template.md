@@ -16,7 +16,7 @@ ms.date: 04/13/2017
 
 # Add a work item instance to a process template
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]  
