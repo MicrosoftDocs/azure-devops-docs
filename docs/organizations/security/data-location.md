@@ -7,7 +7,7 @@ ms.technology: devops-security
 ms.author: chcomley
 author: chcomley
 ms.manager: mijacobs
-ms.date: 01/16/2019
+ms.date: 01/22/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -52,7 +52,7 @@ Azure DevOps stores information that's global in nature, such as user identities
 - Users from all other countries: profile data is in US data center 
 
 ### Mac builds 
-For builds and releases running on Microsoft-provided macOS agents, your data is in the United States. This data center is owned and managed by a third party with reduced information security certification assurances. 
+Builds and releases that are running on Microsoft-provided macOS agents, your data resides in the United States. This data center is owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 report. 
 
 ## Transferring your data
 
