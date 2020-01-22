@@ -293,7 +293,7 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 ## Import a WIT 
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]  
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]  
 
 1. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 

@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Build pipeline history
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../includes/version.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 From the **History** tab you can see a list of changes that includes who made the change and when the change occurred.
@@ -55,10 +55,10 @@ After you've viewed the history, if you want details about a change, select it a
 
 No
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

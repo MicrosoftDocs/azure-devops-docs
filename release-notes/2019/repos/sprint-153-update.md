@@ -12,9 +12,9 @@ ms.date: 06/10/2019
 
 ## Features
 
-[!INCLUDE [sprint-153-update-links](../_shared/repos/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](../includes/repos/sprint-153-update-links.md)]
 
-[!INCLUDE [sprint-153-update](../_shared/repos/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](../includes/repos/sprint-153-update.md)]
 
 ### Next steps
 

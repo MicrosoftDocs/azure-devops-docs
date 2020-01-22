@@ -16,7 +16,7 @@ ms.date: 10/31/2019
 
 # Restore a project
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 
@@ -49,10 +49,10 @@ To restore a project, you must delete project permissions and have the "delete p
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Overview**, and then scroll down to "recently deleted projects."
 
-   ![organization-settings-select-overview.png](../accounts/media/_shared/organization-settings-select-overview.png)
+   ![organization-settings-select-overview.png](../accounts/media/shared/organization-settings-select-overview.png)
 
 4. Highlight the project you want to restore, and then select **Restore**.
 

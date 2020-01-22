@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Invite users to your public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, learn how to enable public users to contribute to your project.
 
@@ -37,11 +37,11 @@ You must have [Project Collection Administrator or organization Owner permission
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
 
-   [:::image type="content" source="../../_shared/media/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
+   [:::image type="content" source="../../media/add-new-users.png" alt-text="Select the Users tab, and then select Add users":::]
 
 4. Complete the form based on the following guidance, and then select **Add**.
 

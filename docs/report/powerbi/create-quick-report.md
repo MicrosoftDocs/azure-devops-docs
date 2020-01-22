@@ -15,11 +15,11 @@ ms.date: 12/04/2018
 
 # Create a Power BI report with a default Analytics view
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 If you don't have Power BI Desktop, you can [download](/power-bi/desktop-what-is-desktop) and install it for free.
 
@@ -68,7 +68,7 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/analytics-open.md)]
+[!INCLUDE [temp](../includes/analytics-open.md)]
 
 
 ## Verify the default Analytics view for your data 

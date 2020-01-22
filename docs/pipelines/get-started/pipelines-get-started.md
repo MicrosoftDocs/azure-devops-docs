@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

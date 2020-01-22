@@ -14,7 +14,7 @@ ms.date: 10/28/2019
 
 # Configure a hierarchy of teams
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In [Portfolio management](portfolio-management.md) we showed how management teams and feature teams can use their backlogs to focus on the work that's most important to them. In this article, we show how to configure teams that best supports the different backlog views of management and feature teams. 
 
@@ -56,7 +56,7 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
-  ![Open Project settings, and then Teams](../../organizations/settings/media/_shared/open-project-settings-team-new-nav.png)
+  ![Open Project settings, and then Teams](../../organizations/settings/media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
 
@@ -88,7 +88,7 @@ The first step is to add a team for each feature team and management area. You c
 
 1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
 
-    <img src="../../_shared/media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
+    <img src="../../media/settings/open-admin-page-tfs2015.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
@@ -151,7 +151,7 @@ You do this by opening each area path associated with a feature team and changin
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"] 
-    > ![Open Project Settings, horz nav](../../_shared/media/settings/open-project-settings-horz.png)
+    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)
 
 1. Choose **Work**.  
 
@@ -170,7 +170,7 @@ You do this by opening each area path associated with a feature team and changin
 
 1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
-    ![Open the project administration page](../../_shared/media/settings/open-project-settings-tfs-2015.png)
+    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 1. Next, choose the ![ ](../media/icons/context_menu.png) context icon for one of the area paths associated with a feature team and select **Edit**. Then change the Location to move it under it's corresponding management team area path.  
 

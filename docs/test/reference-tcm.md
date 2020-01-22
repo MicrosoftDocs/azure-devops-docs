@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for Test Case Management Reporting
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 ## I am using Microsoft Test Manager (MTM) for my testing activities - what type of reports can I see within MTM?
 
@@ -279,4 +279,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

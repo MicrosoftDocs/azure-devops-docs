@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # What is Azure DevOps?
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
 
@@ -104,7 +104,7 @@ You can still use `visualstudio.com` to access Azure DevOps Services. We've move
 This content supports a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
 
    > [!div class="mx-imgBorder"]  
-   > ![Documentation version selector](../_shared/media/version-selector.png)
+   > ![Documentation version selector](../media/version-selector.png)
 
 ## Next steps  
 

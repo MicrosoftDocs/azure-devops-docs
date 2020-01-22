@@ -53,7 +53,7 @@ Once the task is added, you need to set the config file path, docker registory s
 > ![YAML file](media/yaml-file.png)
 
 Sample YAML
-[!INCLUDE [temp](../_shared/yaml/ContainerStructureTestV1.md)]
+[!INCLUDE [temp](../includes/yaml/ContainerStructureTestV1.md)]
 
 # [Classic](#tab/classic)
 

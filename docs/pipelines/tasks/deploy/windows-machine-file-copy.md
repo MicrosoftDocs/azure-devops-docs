@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Windows Machine File Copy task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 
@@ -24,7 +24,7 @@ command-line utility built for fast copying of data.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -32,7 +32,7 @@ command-line utility built for fast copying of data.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/WindowsMachineFileCopyV2.md)]
+[!INCLUDE [temp](../includes/yaml/WindowsMachineFileCopyV2.md)]
 
 ::: moniker-end
 
@@ -66,11 +66,11 @@ This may be due to a firewall blocking the necessary ports for file and printer 
 or an invalid path specification. For more details, see
 [Error 53](https://technet.microsoft.com/library/cc940100.aspx) on TechNet.
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

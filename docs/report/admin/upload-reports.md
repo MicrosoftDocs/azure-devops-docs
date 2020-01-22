@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Upload reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the second task in the four-task sequence to add reports to your team project. You can use the procedures in this article to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 

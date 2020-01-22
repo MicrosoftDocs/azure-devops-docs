@@ -17,7 +17,7 @@ ms.date: 08/02/2019
 
 # Configure the Test Results Trend (Advanced) widget 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 Teams track their test collateral health&mdash;for example, test pass percentage, test failures, and test duration&mdash;to ensure effective continuous testing in a pipeline. 
 With the test results trend widget, you can monitor test trends over a period of time, detect patterns around test failures, test duration, and more, and generate actionable insights.

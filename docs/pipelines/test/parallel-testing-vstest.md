@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="< tfs-2018"
 
@@ -39,7 +39,7 @@ This article discusses how you can configure the
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -239,4 +239,4 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
      Execution on the agent then conforms to the parallelism described in **1** and **2** above.
      However, **2** may not occur if an agent receives only one assembly to run.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

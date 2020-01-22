@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Map Project Server components to Team Foundation components
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must first configure several points of integration between the two server products. You define each point of integration by defining the association or mappings between server products, project plans, and projects. Each association that you define adds software logic and processes to support the data synchronization between the two servers.  
   

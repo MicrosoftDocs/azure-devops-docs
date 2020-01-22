@@ -17,7 +17,7 @@ ms.date: 10/17/2017
 
 # Build Summary Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The Build Summary lists builds and provides information about test results, test coverage, code churn, and quality notes for each build. 

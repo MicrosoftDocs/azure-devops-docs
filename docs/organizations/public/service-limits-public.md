@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Review rate and service limits 
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn which service limits and rate that your public projects are subject to. 
 

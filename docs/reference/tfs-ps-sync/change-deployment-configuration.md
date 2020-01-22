@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Change your deployment configuration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> After you have configured Visual Studio Team Foundation Server (TFS) and Microsoft Project Server to support data synchronization, you might need to perform additional administrative tasks when you change your deployment. For example, you might need to remove, re-register, or re-map a component before or after you move or delete a project, a project collection, or an application-tier server. Before you change your deployment or perform maintenance operations, you should consider the impact that these operations have on the synchronization process.  
   

@@ -14,7 +14,7 @@ ms.date: 06/18/2019
 ---
 
 # Auto detect configuration and git aliases
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 The Azure DevOps CLI has been optimized to allow developers to use Azure Repos and work well with their git workflows.
 

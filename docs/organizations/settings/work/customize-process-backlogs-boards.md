@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Customize your backlogs or boards (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]    
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
@@ -25,7 +25,7 @@ You can customize your backlogs to add more levels or add custom work item types
 
 Your project defines two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
@@ -35,11 +35,11 @@ To learn more about what you can customize, see [About process customization and
 > [!NOTE]   
 > You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog.   
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 
 <a id="portfolio-backlogs">  </a>

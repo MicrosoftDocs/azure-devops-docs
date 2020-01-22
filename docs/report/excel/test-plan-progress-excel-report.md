@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Test Plan Progress Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Test Plan Progress report to monitor test activities and report on the team's overall test progress. This report shows a burndown chart of the test results for all tests the team has defined for the team project for the most recent four weeks.  
   

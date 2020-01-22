@@ -16,16 +16,16 @@ monikerRange: '>= tfs-2015'
 
 # Use Visual Studio to automatically generate a CI/CD pipeline to deploy your ASP.NET web app to Azure
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) pipeline to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/).
 
-[!INCLUDE [include](../../../apps/aspnet/_shared/ci-cd-description.md)]
+[!INCLUDE [include](../../../apps/aspnet/includes/ci-cd-description.md)]
 
 > [!TIP]
 > If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
 
-[!INCLUDE [include](../../../apps/aspnet/_shared/setup.md)]
+[!INCLUDE [include](../../../apps/aspnet/includes/setup.md)]
 
 ## Install the Continuous Delivery Tools extension
 
@@ -39,7 +39,7 @@ To install the extension within Visual Studio, select **Tools > Extensions and U
 
 To create both the build (CI) and release (CD) pipelines for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
-[!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
+[!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
 ## Q&A
 
@@ -70,9 +70,9 @@ To create both the build (CI) and release (CD) pipelines for a project, in Visua
 All solution files must be checked into the server to run a build. One known cause of missing files is in cases where you populate an empty repo by creating a new project in Visual Studio 2015 Update 3. We recommend that you update your [.gitignore file](../../../../repos/git/ignore-files.md) with the latest copy from [GitHub: VisualStudio.gitignore](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore).
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

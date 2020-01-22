@@ -18,7 +18,7 @@ ms.date: 07/22/2019
 
 # View or configure team velocity
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -45,7 +45,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
-[!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
 Use this article to learn: 
 
@@ -75,7 +75,7 @@ Use this article to learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ## Open your backlog from the web portal
@@ -316,9 +316,9 @@ You configure your velocity widget for a single team. If you want to view the ve
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/velocity-activities.md)] 
+[!INCLUDE [temp](../includes/velocity-activities.md)] 
 
-[!INCLUDE [temp](../_shared/add-teams.md)] 
+[!INCLUDE [temp](../includes/add-teams.md)] 
 
 ## Try this next
 

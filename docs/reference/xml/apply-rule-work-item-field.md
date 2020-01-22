@@ -15,7 +15,7 @@ ms.date: 05/10/2017
 
 # Add a rule to a work item type  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
@@ -36,7 +36,7 @@ Field rules are one component you have to customize work item tracking. To learn
 For information on modifying fields or adding field rules to a WIT definition file, see [Add or modify a field](../add-modify-field.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 <a id="help-text" /> 
 

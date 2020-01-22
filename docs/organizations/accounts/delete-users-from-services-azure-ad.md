@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Delete users from your organization connected to Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) about how to use Azure Active Directory (Azure AD) with Azure DevOps.
 

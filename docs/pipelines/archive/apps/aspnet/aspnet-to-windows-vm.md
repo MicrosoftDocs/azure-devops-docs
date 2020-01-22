@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Implement a CI/CD pipeline to build and deploy your ASP.NET app to Azure
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your
 ASP.NET apps.
@@ -27,33 +27,33 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 ![Screenshot showing ASP.NET web app](media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-sample.png)
 
-[!INCLUDE [temp](../_shared/vsts-and-azure-setup.md)]
+[!INCLUDE [temp](../includes/vsts-and-azure-setup.md)]
 
 On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
 
-[!INCLUDE [temp](../_shared/create-azure-windows-vm.md)]
+[!INCLUDE [temp](../includes/create-azure-windows-vm.md)]
 
-[!INCLUDE [temp](../_shared/create-deployment-group.md)]
+[!INCLUDE [temp](../includes/create-deployment-group.md)]
 
-[!INCLUDE [temp](../_shared/import-code-1.md)]
+[!INCLUDE [temp](../includes/import-code-1.md)]
 
 ```bash
 https://github.com/adventworks/aspnet4-sample
 ```
 
-[!INCLUDE [temp](../_shared/import-code-2.md)]
+[!INCLUDE [temp](../includes/import-code-2.md)]
 
-[!INCLUDE [temp](../_shared/set-up-ci-1.md)]
+[!INCLUDE [temp](../includes/set-up-ci-1.md)]
 
 In the right panel, select **ASP.NET**, and then click **Apply**.
 
 ![Screenshot showing ASP.NET template](./media/aspnet-from-vsts-to-windows-vm/cicd-get-started-apply-template.png)
 
-[!INCLUDE [temp](../_shared/set-up-ci-2.md)]
+[!INCLUDE [temp](../includes/set-up-ci-2.md)]
 
-[!INCLUDE [temp](../_shared/set-up-ci-3.md)]
+[!INCLUDE [temp](../includes/set-up-ci-3.md)]
 
-[!INCLUDE [temp](../_shared/set-up-cd-1.md)]
+[!INCLUDE [temp](../includes/set-up-cd-1.md)]
 
 ![Screenshot showing build summary](media/aspnet-from-vsts-to-windows-vm/cicd-get-started-aspnet-build-summary.png)
 
@@ -73,7 +73,7 @@ Select the **IIS Web App Deploy** task to configure your IIS instance settings a
 
 ![Screenshot showing release pipeline](media/aspnet-from-vsts-to-windows-vm/cicd-get-started-release-definition.png)
 
-[!INCLUDE [temp](../_shared//set-up-cd-3.md)]
+[!INCLUDE [temp](../includes//set-up-cd-3.md)]
 
 ## Update to redeploy the code
 
@@ -98,4 +98,4 @@ http://<publicIpAddress>
 
 **Congratulations!** You've deployed changes to your application using CI/CD.
 
-[!INCLUDE [temp](../_shared/clean-up-resources.md)]
+[!INCLUDE [temp](../includes/clean-up-resources.md)]

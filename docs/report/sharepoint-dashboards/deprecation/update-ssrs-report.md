@@ -15,7 +15,7 @@ ms.date: 09/28/2017
 
 # Update SSRS Report after SharePoint is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
 Displaying SSRS Reports on a SharePoint will continue to work, even after disabling SharePoint integration. Displaying SSRS Reports in SharePoint is based on SharePoint and SQL Server Reporting Services technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 

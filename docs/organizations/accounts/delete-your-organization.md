@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Delete your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 28 days, your organization and data are permanently deleted.
@@ -48,7 +48,7 @@ permissions. [How do I find the organization Owner?](faq-delete-restore-organiza
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 
 3. Select **Overview** > **Delete**.

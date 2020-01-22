@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="azure-devops"
 
@@ -23,7 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Get the sample code
 
@@ -51,9 +51,9 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. A new run is started. Wait for the run to finish.
 
-[!INCLUDE [include](_shared/get-status-badge.md)]
+[!INCLUDE [include](includes/get-status-badge.md)]
 
-[!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker range="<= azure-devops-2019"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 

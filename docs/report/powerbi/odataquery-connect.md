@@ -15,7 +15,7 @@ ms.date: 01/13/2020
 
 # Connect with data by using Power BI and OData queries
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Using OData queries is the recommended approach for pulling data into Power BI. To get started quickly, check out the [Overview of sample reports that use OData queries](sample-odata-overview.md). For information about other approaches, see [Power BI integration overview](overview.md). 
 
@@ -29,7 +29,7 @@ In this article, you learn how to:
 > * Write and test OData queries.
 > * Run an OData query from Power BI.
 
-[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
+[!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
 
 ## Use Visual Studio Code to write and test OData queries
 
