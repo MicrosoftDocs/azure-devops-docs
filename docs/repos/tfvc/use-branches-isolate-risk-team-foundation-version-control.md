@@ -65,5 +65,3 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 #### Other Resources
 
  [Branch strategically](branch-strategically.md) 
-
-[Visual Studio TFS Branching Guide](https://go.microsoft.com/fwlink/?LinkId=191400)
