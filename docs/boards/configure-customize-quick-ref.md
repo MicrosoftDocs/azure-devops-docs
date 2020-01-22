@@ -41,7 +41,7 @@ The primary items to consider as you structure your project are:
 - How many teams you want to define 
 - Workflow customizations 
 
-<!--- team or project level??)  
+<!--- team or project level??)  --> 
 
 Once you determine how you'll use the work tracking building blocks and tools, you'll want to make any necessary configurations and customizations to support your business and communicate to your teams how they should use the tools. 
 
@@ -49,7 +49,7 @@ Once you determine how you'll use the work tracking building blocks and tools, y
 
 Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlog(s). The defaults for each supported process are shown in the following tabs. 
 
-[!INCLUDE [hierarchy-work-item-types](includes/work-item-types.md)]
+[!INCLUDE [work-item-types](includes/work-item-types.md)]
 
 The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
 
