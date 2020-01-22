@@ -1,5 +1,5 @@
 ---
-title: How to use subscription logging
+title: How to enable subscription logging
 titleSuffix: Azure DevOps 
 description: How to use subscription logging to troubleshoot Azure DevOps Services notifications
 ms.technology: devops-collab
@@ -9,12 +9,12 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019  
+ms.date: 01/22/2020  
 monikerRange: '>= tfs-2018'
 ---
 
 
-# How to use subscription logging
+# How to enable subscription logging for troubleshooting
 
 [!INCLUDE [version-vsts-tfs-2018](../_shared/version-vsts-tfs-2018.md)]
 
