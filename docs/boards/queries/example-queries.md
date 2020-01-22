@@ -77,6 +77,8 @@ For details, see:
 - [Set query permissions](set-query-permissions.md)
 - [Favorite a query](view-run-query.md) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
 
+[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
+
 <a id="examples"/>
 
 ## Example queries 
