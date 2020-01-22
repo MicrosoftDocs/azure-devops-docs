@@ -11,7 +11,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/21/2020
+ms.date: 01/22/2020
 ---
 
 # Quickstart: Access, export, and filter audit logs
