@@ -14,7 +14,7 @@ ms.topic: overview
 
 # Synchronization process overview for TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 You can manage the integration of Visual Studio Team Foundation Server 2013 and Microsoft Project Server more effectively if you understand how the synchronization engine manages the flow of data between the two server products. The synchronization engine supports the independent workflows of project managers who work in Project Professional and team leads and team members who work in Team Foundation. Deliverables and tasks can evolve independently in each area.  
 

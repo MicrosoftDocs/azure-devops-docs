@@ -16,11 +16,11 @@ monikerRange: 'azure-devops'
 
 # Quickstart: View and filter work items  
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]
+[!INCLUDE [temp](includes/version-public-projects.md)]
 
 In this quickstart, you learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
 ## View work items
 

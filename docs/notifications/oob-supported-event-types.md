@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Supported event types
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 In this article, learn the supported event types for notification subscriptions in Azure DevOps and TFS.
 

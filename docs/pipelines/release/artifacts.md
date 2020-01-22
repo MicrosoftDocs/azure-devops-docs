@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -572,4 +572,4 @@ information about each of these. For a list of all pre-defined artifact variable
 * [Release pipelines](index.md)
 * [Stages](../process/stages.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

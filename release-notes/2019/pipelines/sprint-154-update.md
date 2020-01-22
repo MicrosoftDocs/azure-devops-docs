@@ -12,11 +12,11 @@ ms.date: 07/01/2019
 
 ## Features
 
-[!INCLUDE [sprint-154-update-links](../_shared/pipelines/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](../includes/pipelines/sprint-154-update-links.md)]
 
-[!INCLUDE [sprint-154-update](../_shared/pipelines/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](../includes/pipelines/sprint-154-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 

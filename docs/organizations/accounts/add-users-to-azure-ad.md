@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 # Add organization users to your Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 <a name="SetUpCurrentUsers"></a>
 

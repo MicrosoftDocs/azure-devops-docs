@@ -12,9 +12,9 @@ ms.date: 07/01/2019
 
 ## Features
 
-[!INCLUDE [sprint-154-update-links](../_shared/general/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](../includes/general/sprint-154-update-links.md)]
 
-[!INCLUDE [sprint-154-update](../_shared/general/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](../includes/general/sprint-154-update.md)]
 
 ## Next steps
 

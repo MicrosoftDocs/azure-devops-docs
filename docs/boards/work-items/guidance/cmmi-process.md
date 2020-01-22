@@ -18,7 +18,7 @@ ms.date: 04/11/2019
  
 <meta name="keywords" content="CMMI tools" />
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 
@@ -26,7 +26,7 @@ The CMMI process supports the following work item types (WITs) to plan and track
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
-[!INCLUDE [temp](../../_shared/process-customize.md)] 
+[!INCLUDE [temp](../../includes/process-customize.md)] 
 
 <a id="start-using" />
 
@@ -52,7 +52,7 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 You can use work item queries to list work items based on their type, such as change requests, bugs, tasks, and requirements.  
 
-[!INCLUDE [temp](../../_shared/shared-queries.md)] 
+[!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 
 ::: moniker range="<= tfs-2018"
@@ -65,7 +65,7 @@ Or, use one of the shared queries that the CMMI process provides.
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
+[!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
 ## Monitor progress  
 
@@ -78,7 +78,7 @@ To get started, you can open a shared query and create a chart based on your tra
 [![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
-[!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
+[!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
 ::: moniker range="<= azure-devops-2019"
@@ -105,7 +105,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ## Related notes  
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]
 
 
 ### CMMI process versions  

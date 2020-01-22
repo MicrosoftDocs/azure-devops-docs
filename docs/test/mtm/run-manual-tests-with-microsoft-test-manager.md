@@ -14,20 +14,20 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests with Microsoft Test Manager
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 > **The web portal or Microsoft Test Runner?** Use the web-based test runner
-> in [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
+> in [!INCLUDE [test-hub-include-nolink](../includes/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
 > Test Runner for desktop applications. You can 
 > [launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
-> from [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
+> from [!INCLUDE [test-hub-include-nolink](../includes/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
   
 ### Running test cases with Microsoft Test Runner  
   
@@ -133,4 +133,4 @@ see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-u
 * [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)   
 * [Testing Microsoft Store apps](testing-microsoft-store-apps.md)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

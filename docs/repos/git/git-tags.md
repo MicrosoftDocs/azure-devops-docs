@@ -30,7 +30,7 @@ This article provides an overview of working with Git tags in Azure DevOps Servi
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
-[!INCLUDE [project-urls](../../_shared/project-urls.md)]
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 ### View tags in the Tags view
 
@@ -56,7 +56,7 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
-[!INCLUDE [project-urls](../../_shared/project-urls.md)]
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 ### View tags in the Tags view
 

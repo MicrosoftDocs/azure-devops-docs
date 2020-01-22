@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # User Story Progress Excel Report (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the User Stories Progress report to track the rate at which the team is implementing user stories. This report shows the distribution of active, resolved, and closed User Stories over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

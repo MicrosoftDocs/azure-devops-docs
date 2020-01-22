@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Release variables and debugging
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -93,12 +93,12 @@ variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
-[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+[!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
 You can use custom variables to prompt for values during the execution of a release.
 For more details, see [Approvals](approvals/index.md#scenarios).
  
-[!INCLUDE [set-variables-in-scripts](../_shared/set-variables-in-scripts.md)]
+[!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
 
 ## Default variables
 
@@ -307,4 +307,4 @@ release stage, in debug mode. This can help you resolve issues and failures.
 >If you get an error related to an Azure RM service connection,
 see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

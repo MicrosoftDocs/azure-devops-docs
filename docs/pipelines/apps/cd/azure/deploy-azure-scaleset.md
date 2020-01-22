@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-[!INCLUDE [version-tfs-2017-rtm](../../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The **Build Machine Image** task makes it easy for users who are new to immutable
@@ -127,11 +127,11 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]
 

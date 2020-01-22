@@ -14,7 +14,7 @@ ms.date: 03/16/2017
 
 # Assign permissions to support TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Assigning permissions is the first step in configuring Team Foundation Server and Project Server to support data synchronization. You must grant permissions to several accounts&mdash;administrators, service accounts, and team members. You must also make sure that specific service accounts have access as a Shared Services Provider (SSP) for the server that hosts SharePoint Products for Project Server.  
 

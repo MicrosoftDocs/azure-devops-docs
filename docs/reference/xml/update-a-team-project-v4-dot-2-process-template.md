@@ -51,7 +51,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
  Perform this task for each project collection defined on the application-tier server you've upgraded.  
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
 
 1. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
 

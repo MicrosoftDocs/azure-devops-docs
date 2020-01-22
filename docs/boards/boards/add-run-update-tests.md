@@ -16,7 +16,7 @@ ms.date: 02/14/2019
 
 # Add, run, and update inline tests
 
-[!INCLUDE [temp](../../_shared/dev15-and-ts-version-header.md)]  
+[!INCLUDE [temp](../../includes/dev15-and-ts-version-header.md)]  
 
 Similar to [task checklists](add-task-checklists.md), you can quickly define inline tests, or a set of manual tests, for a backlog item from your Kanban board. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban basics](kanban-basics.md). 
 
@@ -31,7 +31,7 @@ In this article, you'll learn:
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
 
-[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
+[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal
@@ -57,7 +57,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](media/kanban-quickstart-reduced-screensize.png)   
 

@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines provides integration with Jenkins so that you can:

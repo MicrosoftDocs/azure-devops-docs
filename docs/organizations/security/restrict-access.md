@@ -15,7 +15,7 @@ ms.date: 08/15/2019
 
 # Grant or restrict access
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
@@ -225,7 +225,7 @@ You  restrict access to work tracking objects in one of two ways:
 
 ## Restrict modification of closed work items 
 
-[!INCLUDE [temp](../../_shared/restrict-modification-closed-wi.md)]
+[!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
 
 
 ## Next steps

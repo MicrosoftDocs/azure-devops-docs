@@ -66,7 +66,7 @@ When you want to access secrets:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV1.md)]
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->
 

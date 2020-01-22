@@ -16,7 +16,7 @@ ms.date: 04/22/2019
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 
 ::: moniker range="azure-devops"
@@ -33,7 +33,7 @@ Each project is based on a process that defines the building blocks for tracking
 
 You can only customize inherited processes. Any changes you make to the inherited process automatically appears in the projects that use that process. 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 
 
@@ -59,13 +59,13 @@ Learn how to perform these tasks:
 > * Change the process used by a project 
  
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
  
-[!INCLUDE [temp](../_shared/create-inherited-process.md)] 
+[!INCLUDE [temp](../includes/create-inherited-process.md)] 
 
 
 ## Add or modify a field 
@@ -251,7 +251,7 @@ You can also use the following steps to verify the customizations you've made to
 4. Use the import/export process tool again to import the modified process to the production organization.  
 
 
-[!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
+[!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
 
 <a id="process-rest-api">  </a>

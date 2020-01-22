@@ -15,7 +15,7 @@ author: juliakm
 
 # Define container jobs (YAML)
 
-[!INCLUDE [version-server-2019-rtm](../_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
@@ -26,7 +26,7 @@ Over time, you may find that you want more control over the context where your t
 > [!NOTE] 
 > The Classic editor doesn't support container jobs at this time.
 
-[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
+[!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.

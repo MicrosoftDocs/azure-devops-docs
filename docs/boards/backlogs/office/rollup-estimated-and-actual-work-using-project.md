@@ -14,11 +14,11 @@ ms.date: 08/15/2019
 
 # Rollup estimated and actual work using Project
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
  There are a few items to be aware of, however, to make it work correctly. You may have to add fields to work item types (WITs) and update the Microsoft Project Mapping file. You can work in Project or TFS to structure the breakdown of work items and move seamlessly back and forth from each tool by publishing and refreshing data. After setting a baseline schedule in Project, you publish your rollup values to TFS.  
   

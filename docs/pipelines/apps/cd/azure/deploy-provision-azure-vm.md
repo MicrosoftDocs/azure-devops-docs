@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # CD of an Azure virtual machine using a Resource Manager template
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 In just a few steps, you can provision Azure virtual machines (VMs)

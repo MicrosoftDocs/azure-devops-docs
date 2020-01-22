@@ -281,9 +281,9 @@ Creates a .war deployment package and deploys the file content to the **wwwroot*
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
-[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Web app deployment on Windows is successful but the app is not working
 
@@ -312,7 +312,7 @@ If you are using web deploy to deploy your app, in some error scenarios Web Depl
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open source
 

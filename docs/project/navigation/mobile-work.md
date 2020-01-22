@@ -16,7 +16,7 @@ ms.date: 08/02/2019
 
 #  View and update work items via the mobile browser   
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)] 
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)] 
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  

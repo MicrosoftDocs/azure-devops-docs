@@ -15,7 +15,7 @@ ms.date: 5/23/2019
 # About pipeline resources and infrastructure 
 
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-rtm.md)] 
+[!INCLUDE [temp](../includes/version-tfs-2017-rtm.md)] 
 
 A resource is anything used by a pipeline that lives outside the pipeline itself. Examples include:
 

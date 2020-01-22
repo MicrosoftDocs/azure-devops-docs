@@ -16,7 +16,7 @@ ms.date: 06/11/2019
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
@@ -38,7 +38,7 @@ Use this article to learn how to:
 
 With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## What comprises a feature or epic?  
 
@@ -188,7 +188,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]  
 
 > [!div class="mx-imgBorder"]  
 > ![Feature work item form, Agile process, Add details to a feature](media/features-epics/feature-work-item-form.png)
@@ -292,11 +292,11 @@ The work item types you'll see depends on the [process you selected to create yo
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
 
-[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+[!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 ## Try this next  
 

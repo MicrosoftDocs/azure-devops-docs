@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ If you're building a standard .NET app, you're probably using one of the out-of-
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
-<img src="~/pipelines/_shared/media/browse-to-team-project.png" alt="Browse to project">
+<img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
 <ul>
@@ -82,7 +82,7 @@ If you're building a standard .NET app, you're probably using one of the out-of-
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
-<img src="~/pipelines/_shared/media/create-new-build-definition.png" alt="Build tab">
+<img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
 <p>
 </div>
 </li>

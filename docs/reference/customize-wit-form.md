@@ -15,7 +15,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
+[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
 
 
 > [!IMPORTANT]  
@@ -105,7 +105,7 @@ See the following topics to make the indicated customizations:
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 <a id="resizing"></a>  
 ## Layout and resizing 

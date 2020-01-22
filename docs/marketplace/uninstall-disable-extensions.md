@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
  
 # Uninstall or disable extensions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 In this article, learn how to uninstall or disable an extension you no longer need.
 
@@ -32,7 +32,7 @@ You must be a [Project Collection Administrator](../organizations/security/set-p
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../media/icons/gear-icon.png) **Organization settings**.
    
-   ![Open Organization settings](../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**, and then select the extension that you want to uninstall or disable.
 
@@ -103,7 +103,7 @@ Publisher Id    Extension Id    Name         Version      Last Updated     State
 7pace           Timetracker     Timetracker  5.0.1.34507  2019-11-13       disabled
 ```
 
-[!INCLUDE [temp](../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
 

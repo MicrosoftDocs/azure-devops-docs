@@ -193,7 +193,7 @@ using `/invite @azrepos`. Post that, you can set up and manage your notification
 
 If you are experiencing the following errors when using the [Azure Repos App for Slack](https://azchatopprodcus1.azchatops.visualstudio.com/_slack/installreposapp), follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](./_shared/repos-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab, navigate to `https://slack.com`, and sign in to your work space (**use web client**). Run the `/azrepos signout` command followed by the `/azrepos signin` command. 
 

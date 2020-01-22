@@ -15,7 +15,7 @@ ms.date: 10/28/2019
 
 # Configure and monitor sprint burndown 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 
 ::: moniker range="azure-devops"
@@ -175,7 +175,7 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
