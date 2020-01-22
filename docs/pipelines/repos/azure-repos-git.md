@@ -118,8 +118,10 @@ You can control which branches get CI triggers with a simple syntax:
 
 ```yaml
 trigger:
-- master
-- releases/*
+  branches:
+    include:
+    - master
+    - releases/*
 ```
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
