@@ -270,7 +270,7 @@ Here's how a three-level nested tree of items appears in Excel:
 
 Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
 
-[!INCLUDE [temp](../../includes/work-item-types-hierarchy.md)]
+[!INCLUDE [temp](../../includes/work-item-types.md)]
 
 To import a hierarchical list, perform the following steps: 
 
