@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/17/2020
+ms.date: 01/22/2020
 monikerRange: azure-devops
 ---
 
@@ -142,6 +142,10 @@ Images are typically updated weekly. You can check the [status badges](https://g
 You can let us know by filing a GitHub issue by choosing the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
 
 You can also use a self-hosted agent that includes the exact versions of software that you need. For more information, see [Self-hosted agents](agents.md#install).
+
+### What if I need a bigger machine with more processing power, memory, or disk space?
+
+You can use a [self-hosted agent](agents.md#install) that is hosted on a machine that has your desired specifications.
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
