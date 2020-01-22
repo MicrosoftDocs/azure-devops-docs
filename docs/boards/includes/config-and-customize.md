@@ -49,13 +49,11 @@ ms.date: 01/21/2020
 <td><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints">Iteration paths, project configuration and team subscription</a></td>
 <td>
 <ul>
-<li>Backlogs> Sprint planning</li>
+<li>Backlogs>Sprint planning</li>
 <li>Sprints>Sprint backlogs</li>
 <li>Sprints>Sprint capacity</li>
 <li>Sprints>Taskboard</li>
 <li>Sprints>Sprint capacity</li>
-<td>
-</ul>
 </td>
 <td>
 <ul>
