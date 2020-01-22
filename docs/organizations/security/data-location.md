@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Azure DevOps operates in the following geographical locations (“geos”). During initial sign-up and creation of the organization, you can choose the location for your data.
+You can choose the location for your data during initial sign-up and creation of your organization. Azure DevOps operates in the following geographical locations (“geos”). 
 
 ## Data locations
 
@@ -52,7 +52,7 @@ Azure DevOps stores information that's global in nature, such as user identities
 - Users from all other countries: profile data is in US data center 
 
 ### Mac builds 
-Builds and releases that are running on Microsoft-provided macOS agents, your data resides in the United States. This data center is owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 report. 
+For builds and releases running on Microsoft-provided macOS agents, your data resides in the United States. This data center is owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 report. 
 
 ## Transferring your data
 
