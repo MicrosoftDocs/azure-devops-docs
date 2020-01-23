@@ -114,7 +114,7 @@ resources:
 
 ### `download` for pipelines
 
-All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
+All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](../artifacts/pipeline-artifacts.md) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
 
 ## [Schema](#tab/schema)
 
@@ -203,7 +203,7 @@ You can consume artifacts from the `build` resource as part of your jobs using `
 Artifacts from the `build` resource are downloaded to `$(PIPELINE.WORKSPACE)/<build-identifier>/` folder. 
 Note: `build` resource artifacts are not automatically downloaded in your jobs/deploy-jobs and you need to explicitly add `downloadBuild` task for consuming the artifacts.
 
-## [Schema](#tab/schema)
+# [Schema](#tab/schema)
 
 ```yaml
 - downloadBuild: string # identifier for the resource from which to download artifacts
@@ -211,7 +211,7 @@ Note: `build` resource artifacts are not automatically downloaded in your jobs/d
   patterns: string | [ string ] # a minimatch path or list of [minimatch paths](tasks/file-matching-patterns.md) to download; if blank, the entire artifact is downloaded
 ```
 
-## [Example](#tab/example)
+# [Example](#tab/example)
 You can customize the download behavior for each deployment or job.
 ```yaml
 - job: deploy_windows_x86_agent
@@ -223,10 +223,10 @@ You can customize the download behavior for each deployment or job.
 
 ## Resources: `repositories`
 
-If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
+If your pipeline has [templates in another repository](../process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
-## [Schema](#tab/schema)
+# [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -263,11 +263,11 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
+  GitHub repos require a [GitHub service connection](../library/service-endpoints.md) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.
-  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
+  Bitbucket Cloud repos require a [Bitbucket Cloud service connection](../library/service-endpoints.md#sep-bbucket) for authorization.
 
 
 ### `checkout` your repository
@@ -275,7 +275,7 @@ The `git` type refers to Azure Repos Git repos.
 Use `checkout` keyword to consume your repos defined as part of `repository` resource. 
 
 
-## [Schema](#tab/schema)
+# [Schema](#tab/schema)
 
 ```yaml
 steps:
@@ -290,7 +290,7 @@ steps:
 ---
 Repos from `repository` resource are not automatically synced in your jobs and you need to explicitly use `checkout` to fetch your repos as part of your jobs.
 
-For more information, see [Check out multiple repositories in your pipeline](repos/multi-repo-checkout.md).
+For more information, see [Check out multiple repositories in your pipeline](../repos/multi-repo-checkout.md).
 
 ## Resources: `containers`
 
@@ -299,7 +299,7 @@ If you need to consume a container image as part of your CI/CD pipeline, you can
 
 If you need to consume images from Docker registry as part of your pipeline, you can define a generic container resource (not `type` keyword required). 
 
-## [Schema](#tab/schema)
+# [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -312,9 +312,9 @@ resources:
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
 ```
-A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](process/container-phases.md).
+A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](../process/container-phases.md).
 
-## [Example](#tab/example)
+# [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -327,7 +327,7 @@ resources:
 
 We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and also enable automatic pipeline triggers.
 
-## [Schema](#tab/schema)
+# [Schema](#tab/schema)
 
 ```yaml
 resources:          # types: pipelines | repositories | containers | builds | packages
