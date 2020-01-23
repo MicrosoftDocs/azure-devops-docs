@@ -945,11 +945,15 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 > In many cases, you probably would want to edit the release pipeline so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
 <a name="next-steps"></a>
 
 ## Next steps
 
-You've learned the basics of using the classic editor to create and run a pipeline.
+You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
@@ -979,8 +983,6 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 ### What kinds of version control can I use
 
-We've used a Git repository in Azure Repos to keep things focused on CI/CD for this tutorial.
-
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
 * Clients
@@ -1004,7 +1006,7 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
 > ![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions-newnav.png)
@@ -1029,6 +1031,7 @@ After you create a template, your team members can use it to follow the pattern 
 > [!TIP]
 >
 > If you're using the **New Build Editor**, then your custom templates are shown at the bottom of the list.
+
 
 ### How do I work with drafts?
 
@@ -1094,10 +1097,18 @@ When you're ready you can publish the draft to merge the changes into your build
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
+::: moniker-end
+
+
+::: moniker range=">=tfs-2013"
+
 ### How can I delete a pipeline?
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
@@ -1124,6 +1135,10 @@ When you manually queue a build, you can, for a single run of the build:
 
   - Run a private build of a [shelveset](https://msdn.microsoft.com/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
+::: moniker-end
+
+::: moniker range=">=tfs-2013"
+
 ### Where can I learn more about build pipeline settings?
 
 To learn more about build pipeline settings, see:
@@ -1135,6 +1150,10 @@ To learn more about build pipeline settings, see:
 * [Options](build/options.md)
 * [Retention](policies/retention.md)
 * [History](build/history.md)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 ### How do I programmatically create a build pipeline?
 
