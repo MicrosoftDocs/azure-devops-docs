@@ -30,7 +30,7 @@ as early as possible. Here, we'll show you how to get started with
 Git, a distributed system. If you want to work in a centralized system, 
 you can instead use [TFVC with Azure Repos](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
-[!INCLUDE [temp](_shared/open-team-project-in-vs.md)]
+[!INCLUDE [temp](includes/open-team-project-in-vs.md)]
 
 ## Clone your repository
 
@@ -123,9 +123,9 @@ When the code you've written on your dev machine is ready, you can push your cha
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/open-team-project-in-vs-qa.md)]
+[!INCLUDE [temp](includes/open-team-project-in-vs-qa.md)]
 
-[!INCLUDE [temp](_shared/qa-vs-launch-fail.md)]
+[!INCLUDE [temp](includes/qa-vs-launch-fail.md)]
 
 
 #### Q: How can I see what I've changed?

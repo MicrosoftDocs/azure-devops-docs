@@ -29,7 +29,7 @@ you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-gi
 
 Is your code in another place? [Learn how to migrate it here](#migrate).
 
-[!INCLUDE [open-team-project-in-vs](_shared/open-team-project-in-vs.md)]
+[!INCLUDE [open-team-project-in-vs](includes/open-team-project-in-vs.md)]
 
 <a name="workspace"></a>
 ## Configure your workspace

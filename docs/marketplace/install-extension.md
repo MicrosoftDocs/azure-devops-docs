@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Quickstart: Install extensions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Add new features and capabilities to your organization by installing extensions.
 
@@ -113,7 +113,7 @@ version: 5.0.1.34507
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
 

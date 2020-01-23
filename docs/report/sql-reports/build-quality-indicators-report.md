@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 
 # Build Quality Indicators Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  

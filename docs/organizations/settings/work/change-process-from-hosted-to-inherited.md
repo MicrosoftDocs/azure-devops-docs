@@ -15,7 +15,7 @@ ms.date: 05/30/2018
 
 # Change a project from Hosted XML to an inherited process 
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 Once you've [cloned your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
 
@@ -25,7 +25,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 ## Prerequisites 
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 
 <a id="change-inherited-process"></a>

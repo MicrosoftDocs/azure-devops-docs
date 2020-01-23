@@ -13,9 +13,9 @@ description: In the **Sprint 150 Update** of Azure DevOps, we added the ability 
 
 ## Features
 
-[!INCLUDE [sprint-150-update-links](../_shared/pipelines/sprint-150-update-links.md)]
+[!INCLUDE [sprint-150-update-links](../includes/pipelines/sprint-150-update-links.md)]
 
-[!INCLUDE [sprint-150-update](../_shared/pipelines/sprint-150-update.md)]
+[!INCLUDE [sprint-150-update](../includes/pipelines/sprint-150-update.md)]
 
 ## Next steps
 

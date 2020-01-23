@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # Access with Azure Active Directory groups
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Do you want an easier way to control who can access your team's critical resources and key business assets in Azure DevOps Services?
 If you already use Microsoft services like Office 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.
@@ -48,7 +48,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Permissions**, and then select the group you want to add a member to.
 
@@ -72,7 +72,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 

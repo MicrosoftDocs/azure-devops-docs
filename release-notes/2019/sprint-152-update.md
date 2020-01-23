@@ -18,43 +18,43 @@ Check out the [Features](#features) list below for more.
 
 General: 
 
-[!INCLUDE [sprint-152-update-links](_shared/general/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](includes/general/sprint-152-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-152-update-links](_shared/pipelines/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](includes/pipelines/sprint-152-update-links.md)]
 
 Azure Repos:
 
-[!INCLUDE [sprint-152-update-links](_shared/repos/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](includes/repos/sprint-152-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-152-update-links](_shared/artifacts/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](includes/artifacts/sprint-152-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-152-update-links](_shared/wiki/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](includes/wiki/sprint-152-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-152-update](_shared/general/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](includes/general/sprint-152-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-152-update](_shared/pipelines/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](includes/pipelines/sprint-152-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-152-update](_shared/repos/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](includes/repos/sprint-152-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-152-update](_shared/artifacts/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](includes/artifacts/sprint-152-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-152-update](_shared/wiki/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](includes/wiki/sprint-152-update.md)]
 
 
 ## Next steps

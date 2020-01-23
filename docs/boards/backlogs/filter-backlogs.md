@@ -17,7 +17,7 @@ ms.date: 10/16/2019
 
 # Filter backlogs or queries based on keywords, tags, or other fields  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 <a id="filter"></a>
  

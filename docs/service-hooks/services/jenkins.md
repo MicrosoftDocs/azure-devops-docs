@@ -14,7 +14,7 @@ ms.date: 11/20/2019
 
 # Create a service hook for Azure DevOps Services and TFS with Jenkins
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 If you use Jenkins to build your apps, you can store your code in Azure DevOps Services
 and continue to use Jenkins for your continuous integration builds.

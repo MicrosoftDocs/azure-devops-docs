@@ -15,7 +15,7 @@ ms.date: 12/19/2018
 
 # Edit or manage Delivery Plan permissions 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>

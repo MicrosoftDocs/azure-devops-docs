@@ -15,7 +15,7 @@ ms.date: 10/19/2017
 
 # Process template and plug-in files
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You customize the initial configuration of projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all projects that are created from the process template.  
 

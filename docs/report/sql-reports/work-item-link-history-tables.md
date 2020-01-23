@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 
 # Work Item Link History tables
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for links between bugs, tasks, and other types of work items by using FactWorkItemLinkHistory and the associated dimension tables. To include details about the linked work items, you join SourceWorkItemID and TargetWorkItemID to Dim.System_ID.  
   

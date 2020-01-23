@@ -16,7 +16,7 @@ ms.date: 08/07/2019
 
 # Overview of sample reports using OData queries
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 In this section, we provide samples for the most popular reports:
 
@@ -24,13 +24,13 @@ In this section, we provide samples for the most popular reports:
 
 | Azure Boards | Azure Pipelines | Azure Test Plans | 
 |----------------------|--------------------------| 
-| [!INCLUDE [temp](_shared/sample-fulllist.md)] | [!INCLUDE [temp](_shared/sample-full-list-pipelines.md)] | [!INCLUDE [temp](_shared/sample-full-list-test-plans.md)] |
+| [!INCLUDE [temp](includes/sample-fulllist.md)] | [!INCLUDE [temp](includes/sample-full-list-pipelines.md)] | [!INCLUDE [temp](includes/sample-full-list-test-plans.md)] |
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)] 
+[!INCLUDE [temp](includes/sample-fulllist.md)] 
 
 ::: moniker-end
 

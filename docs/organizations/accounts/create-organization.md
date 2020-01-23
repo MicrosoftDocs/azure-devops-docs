@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Create an organization or project collection
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -52,7 +52,7 @@ In this quickstart, learn how to create an organization. An organization is used
 
 ::: moniker range="= azure-devops"
 
-[!INCLUDE [create-organization](../../_shared/create-organization.md)]
+[!INCLUDE [create-organization](../../includes/create-organization.md)]
 
 ::: moniker-end
 

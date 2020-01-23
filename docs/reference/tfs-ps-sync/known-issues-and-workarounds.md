@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Known issues and workarounds to support TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> This topic describes known issues with the integration between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server. To support this integration, you must have installed Team Foundation Server Extensions for Project Server on the App Tiers for Project Server. For more information, see [System and setup requirements](system-and-setup-requirements.md).  
   

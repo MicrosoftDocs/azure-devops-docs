@@ -15,13 +15,13 @@ ms.date: 10/16/2019
 
 # What is Analytics?
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Analytics provides the reporting platform for Azure DevOps and Azure DevOps Server. Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over Azure DevOps. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations.
 
 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 ::: moniker range="azure-devops"
 

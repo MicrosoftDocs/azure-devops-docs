@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # TF30321: The name you typed is already used for another project on the Team Foundation Server.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when you type a name for the new project that duplicates the name already being used by another project in the same collection.  There are two likely causes for this problem:  
   

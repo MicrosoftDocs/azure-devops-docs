@@ -15,7 +15,7 @@ ms.date: 10/25/2019
 
 # About teams and Agile tools
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 <a id="teams"></a>
 

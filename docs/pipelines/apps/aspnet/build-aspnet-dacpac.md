@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Build your SQL server database
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../includes/version.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Here we'll show you how to define your continuous integration (CI) pipeline for your SQL server database project.
@@ -39,7 +39,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
-<img src="~/pipelines/_shared/media/browse-to-team-project.png" alt="Browse to project">
+<img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
 <ul>
@@ -52,7 +52,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
-<img src="~/pipelines/_shared/media/create-new-build-definition.png" alt="Build tab">
+<img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
 <p>
 </div>
 </li>
@@ -92,7 +92,7 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 4. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

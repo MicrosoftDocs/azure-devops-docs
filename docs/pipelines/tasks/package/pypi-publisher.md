@@ -47,7 +47,7 @@ A generic service connection for a PyPI index.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
+[!INCLUDE [temp](../includes/yaml/PyPIPublisherV0.md)]
 
 ::: moniker-end
 
@@ -66,6 +66,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

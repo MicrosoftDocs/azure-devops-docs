@@ -15,7 +15,7 @@ ms.date: 07/08/2019
 
 # Configure a Burndown or Burnup widget 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 The Burndown and Burnup widgets provide the flexibility to create charts for any type of scope, any number of teams, and within specified time periods. Burndown charts focus on remaining work within a specific time period, while burnup charts focus on completed work. 
 
@@ -83,7 +83,7 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
 |**Burndown**|Represents the burndown. The burndown line tells you how fast you are burning down the work. For past data points, the plotted burndown represents actual burndown as of the end of each interval/iteration. For future data points, the plotted burndown represents a projected burndown, based on past burndown.
 
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 ## Add the widget to your dashboard  
  

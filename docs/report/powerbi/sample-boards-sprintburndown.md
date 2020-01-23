@@ -16,14 +16,14 @@ ms.date: 08/07/2019
 
 # Sprint burndown sample reports
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to display the current sprint's burndown of User Stories. The following example shows a burndown of both a sum of Story Points and a count of User Stories.
 
 > [!div class="mx-imgBorder"] 
 > ![sprint burndown by total story points and count of user stories](media/odatapowerbi-sprintburndown-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Goal
 
@@ -33,7 +33,7 @@ Burndown User Stories in the current Sprint
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -58,7 +58,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
@@ -81,7 +81,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * {areapath} - Your Area Path. Example format: Project\Level1\Level2 
 
 
@@ -112,9 +112,9 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -140,7 +140,7 @@ The example report, which displays burndown on both Story Points and Count of St
 > [!div class="mx-imgBorder"] 
 > ![sprint burndown by total story points and count of user stories](media/odatapowerbi-sprintburndown-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -152,7 +152,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -177,7 +177,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
@@ -204,7 +204,7 @@ You may want to view a burndown of all the sprints in a single report. These que
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -228,7 +228,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
@@ -255,7 +255,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 Doc-ready Power BI Query (anonomized)
@@ -281,7 +281,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItemSnapshot? 
@@ -304,8 +304,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

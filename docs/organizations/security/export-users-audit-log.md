@@ -16,7 +16,7 @@ ms.date: 09/18/2019
 
 # Export a list of users and their access levels
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="export-audit-log" >  </a>
 
@@ -52,7 +52,7 @@ From your web browser or the Azure DevOps CLI command, you can get a list of the
 1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
 
 1. Choose **Users**, and then **Export users**. 
 
@@ -169,7 +169,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

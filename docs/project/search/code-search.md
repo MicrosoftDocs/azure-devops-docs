@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Search your code
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
@@ -36,7 +36,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. Open the **Azure Repos** section in Azure DevOps, for more information, see [Web portal navigation](../navigation/index.md)).
 
 2. Enter a search string in the textbox, and then select _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon-new.png) icon). 
+   ![start search icon](media/shared/start-search-icon-new.png) icon). 
 
    :::image type="content" source="media/code-search-get-started/enter-search-string-start-search.png" alt-text="Enter your search string and then begin your search":::
 
@@ -47,7 +47,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 1. Open the **Azure Repos** section in Azure DevOps, for more information, see [Web portal navigation](../navigation/index.md)).
 
 2. Enter a search string in the textbox, and then select _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon-new.png) icon). 
+   ![start search icon](media/shared/start-search-icon-new.png) icon). 
 
    :::image type="content" source="media/code-search-get-started/title-bar-search-box-empty-new.png" alt-text="Enter your search string and then begin your search":::
 
@@ -60,14 +60,14 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
    ![Switching between searching for code and work items](media/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
-   If you don't see the ![select search type](media/_shared/search-select-type-icon.png)
+   If you don't see the ![select search type](media/shared/search-select-type-icon.png)
    selector in the Search box, open the **Manage extensions** page 
    and check that Code Search is installed ([see Administer Search](administration.md)).
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
 2. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon.png) icon) to start your search.
+   ![start search icon](media/shared/start-search-icon.png) icon) to start your search.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
@@ -132,7 +132,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 
@@ -176,7 +176,7 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
    > Open the search results in a new browser tab from either search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/shared/start-search-icon-new.png) icon.
    In Google Chrome and Firefox press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 

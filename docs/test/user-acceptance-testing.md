@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Perform user acceptance testing
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
@@ -30,7 +30,7 @@ requirement work item type. However, today's
 agile teams often prefer to work from User Stories 
 or Product Backlog items as their requirements.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 ## Before you start
 
@@ -95,4 +95,4 @@ the dashboard charts, verify that the columns in your
 data have been added to the Tests view.
 For details see [this blog post](https://devblogs.microsoft.com/devops/visual-studio-team-services-manual-testing-tips-charts-iterations-and-runs/).
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

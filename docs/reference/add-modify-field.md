@@ -15,7 +15,7 @@ ms.date: 01/24/2019
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
@@ -67,7 +67,7 @@ To change a field attribute or rename a field, use the **witadmin** command line
 
 To add rules or add a custom field, export, edit, and then import the WIT definition file.
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
@@ -325,7 +325,7 @@ To get added as an administrator, [Add administrators](../organizations/security
 
 <a id="field-reference"></a>
 
-[!INCLUDE [temp](../_shared/field-reference.md)]
+[!INCLUDE [temp](../includes/field-reference.md)]
 
 <a id="list-fields"></a> 
 ### List or review fields  

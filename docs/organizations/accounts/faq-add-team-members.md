@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot adding members to projects
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a name="cant-add-users"></a>
 
@@ -38,7 +38,7 @@ If you're an Azure AD administrator, you can add users to the directory. If you'
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../../includes/qa-no-access-existing-features.md)]
 
 #### Q: Why did some users lose access to certain features?
 
@@ -46,7 +46,7 @@ A: Loss of access might happen for [different reasons](faq-add-delete-users.md#s
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-organization-use-azuread](../../_shared/qa-does-organization-use-azuread.md)]
+[!INCLUDE [does-organization-use-azuread](../../includes/qa-does-organization-use-azuread.md)]
 
 <a name="RemovePeople"></a>
 
@@ -100,22 +100,22 @@ If you're an Azure AD guest, do one of the following:
 
 <a name="users-delay"></a>
 
-[!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
+[!INCLUDE [user-delay](../../includes/qa-user-delay.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="find-pca-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../../includes/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]

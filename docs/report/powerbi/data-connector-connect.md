@@ -16,13 +16,13 @@ ms.date: 11/26/2019
 
 # Connect to Analytics with Power BI Data Connector
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 The Power BI Data Connector uses [Analytics Views](what-are-analytics-views.md). 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 ## Prerequisites
 

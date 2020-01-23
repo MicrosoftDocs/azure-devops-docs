@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2015'
 
 # Track test status
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 View the status of your planned testing using an out-of-the-box Progress Report and lightweight charts.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 ## Progress Report
 To track the progress of more than one test plan or test suite, use the Progress Report. It helps you track the team's progress with respect to planned testing of your product or service by answering the following questions:
