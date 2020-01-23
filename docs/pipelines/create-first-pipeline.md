@@ -985,6 +985,8 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
+::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
 
 * Clients
