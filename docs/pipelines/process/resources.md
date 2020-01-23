@@ -380,6 +380,7 @@ We provide full traceability about any resource consumed at a pipeline level and
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
+
 ![Commits in pipeline run](media/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
  ![Consumed artifacts in pipeline run](media/runs-consumed-artifacts.png)
