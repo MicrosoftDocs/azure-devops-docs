@@ -13,12 +13,12 @@ ms.date: 01/21/2020
 <tbody valign="top">
 <tr>
 <th width="25%">Configure or customize</th>
-<th width="30%">Standard tools</th>
-<th width="20%">Analytics</th>
+<th width="28%">Standard tools</th>
+<th width="22%">Analytics</th>
 <th width="25%">Portfolio planning tools</th>
 </tr>
 <tr>
-<td><a href="/azure/devops/organizations/settings/set-area-paths">Area paths, project configuration and team subscriptions</a></td>
+<td><a href="/azure/devops/organizations/settings/set-area-paths">Area paths, project configuration and team subscriptions</a> (Project, Team)</td>
 <td>
 <ul>
 <li>Boards>All tools</li>
@@ -44,14 +44,13 @@ ms.date: 01/21/2020
 </td>
 </tr>
 <tr>
-<td><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints">Iteration paths, project configuration and team subscription</a></td>
+<td><a href="/azure/devops/organizations/settings/set-iteration-paths-sprints">Iteration paths, project configuration and team subscription</a> (Project, Team)</td>
 <td>
 <ul>
 <li>Backlogs>Sprint planning</li>
 <li>Sprints>Sprint backlogs</li>
 <li>Sprints>Sprint capacity</li>
 <li>Sprints>Taskboard</li>
-<li>Sprints>Sprint capacity</li>
 </td>
 <td>
 <ul>
@@ -148,7 +147,7 @@ Custom field (Organization)
 </ul>
 </td>
 <td>
-   
+
 </td>
 </tr>
 </tbody>
