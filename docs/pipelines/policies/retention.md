@@ -41,7 +41,7 @@ As an author of a run pipeline, you can customize retention policies on the **Se
 
 You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. 
 
-The [Copy Files task](../tasks/utility/copy-files.md) is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) will get periodically cleaned up and deleted. 
+The Copy Files task is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the Publish Build Artifacts task will get periodically cleaned up and deleted. 
 
 # [YAML](#tab/yaml)
 
