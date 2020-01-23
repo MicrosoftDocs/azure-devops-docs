@@ -1004,7 +1004,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 ::: moniker-end
 
-::: moniker range= "azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 * Clients
 
@@ -1019,8 +1019,8 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
   * Git service providers such as GitHub and Bitbucket Cloud
   * Subversion
-::: moniker-end
 
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
