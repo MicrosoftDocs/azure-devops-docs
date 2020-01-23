@@ -319,7 +319,7 @@ Create a build pipeline that prints "Hello world."
    > ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
    >
 
-   For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
+   For new Azure DevOps users, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
 
    ![Click settings in top right of screen and click preview features](media/preview-features.png)
 
@@ -659,7 +659,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
 ## You've got a build pipeline. What's next?
 
-You've just created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
+You've created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point, you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
 
 ## Create a release pipeline
 
@@ -840,7 +840,7 @@ Run the script in each stage.
 
    When **Create new release** appears, select **Create**.
 
-2. Open the release that you just created.
+2. Open the release that you created.
 
    > [!div class="mx-imgBorder"] 
    > ![release created](media/get-started-designer/release-created-azure-devops-newnavon.png)
@@ -862,7 +862,7 @@ Run the script in each stage.
 
    When **Create new release** appears, select **Create** (TFS 2018.2) or **Queue** (TFS 2018 RTM).
 
-5. Open the release that you just created.
+5. Open the release that you created.
 
    ![release created](media/get-started-designer/release-created-tfs-2018-2.png)
 
@@ -878,7 +878,7 @@ Run the script in each stage.
 
    ![create release](media/get-started-designer/create-release.png)
 
-8. Open the release that you just created.
+8. Open the release that you created.
 
    ![release created](media/get-started-designer/release-created.png)
 
@@ -949,7 +949,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ## Next steps
 
-You've just learned the basics of using the classic editor to create and run a pipeline.
+You've learned the basics of using the classic editor to create and run a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
