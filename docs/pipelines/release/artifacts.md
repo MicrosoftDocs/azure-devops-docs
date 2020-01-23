@@ -317,8 +317,6 @@ The following features are available when using Azure Container Registry, Docker
 
 <h3 id="artifactsource">Azure Artifacts</h3>
 
-To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/start-using-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
-
 Scenarios where you may want to consume these artifacts are:
 
 1.  You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package to Azure Artifacts and you want to consume the artifact in a release.
@@ -348,6 +346,8 @@ When obtaining Maven artifacts and the artifact is a snapshot build, multiple ve
 Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
 ```
 ----
+
+For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 <a name="externaltfs"></a>
 
