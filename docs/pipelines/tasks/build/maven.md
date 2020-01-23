@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Maven task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to build your Java code.
 
@@ -30,7 +30,7 @@ The build agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/MavenV3.md)]
+[!INCLUDE [temp](../includes/yaml/MavenV3.md)]
 
 ::: moniker-end
 
@@ -175,11 +175,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

@@ -25,7 +25,7 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 
 ## Publishing artifacts
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 
@@ -52,7 +52,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -125,7 +125,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -193,7 +193,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -250,7 +250,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Matching patterns:
 

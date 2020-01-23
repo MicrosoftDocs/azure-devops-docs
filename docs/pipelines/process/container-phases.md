@@ -8,14 +8,14 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: jukullam
-ms.date: 12/13/2019
+ms.date: 01/21/2020
 monikerRange: '>= azure-devops-2019'
 author: juliakm
 ---
 
 # Define container jobs (YAML)
 
-[!INCLUDE [version-server-2019-rtm](../_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
@@ -26,7 +26,7 @@ Over time, you may find that you want more control over the context where your t
 > [!NOTE] 
 > The Classic editor doesn't support container jobs at this time.
 
-[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
+[!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
@@ -225,5 +225,52 @@ jobs:
     - script: printenv
 ```
 
+## Non glibc-based containers
 
+The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts.
+The version of Node.js is compiled against the C runtime we use in our hosted cloud, typically glibc.
+Some variants of Linux use other C runtimes.
+For instance, Alpine Linux uses musl.
 
+If you want to use a non-glibc-based container as a job container, you will need to arrange a few things on your own.
+First, you must supply your own copy of Node.js.
+Second, you must add a label to your image telling the agent where to find the Node.js binary.
+Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines depends on:
+bash, sudo, which, and groupadd.
+
+### Bring your own Node.js
+You are responsible for adding a Node LTS binary to your container.
+Node 10 LTS is a safe choice.
+You can start from the `node:10-alpine` image.
+
+### Tell the agent about Node.js
+The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
+If this label exists, it must be the path to the Node.js binary.
+For example, in an image based on `node:10-alpine`, add this line to your Dockerfile:
+```
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+```
+
+### Add requirements
+Azure Pipelines assumes a Bash-based system with common administration packages installed.
+Alpine Linux in particular doesn't come with several of the packages needed.
+Installing `bash`, `sudo`, and `shadow` will cover the basic needs.
+```
+RUN apk add bash sudo shadow
+```
+
+If you depend on any in-box or Marketplace tasks, you'll also need to supply the binaries they require.
+
+### Full example of a Dockerfile
+
+```
+FROM node:10-alpine
+
+RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
+  && apk add bash sudo shadow \
+  && apk del .pipeline-deps
+
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+
+CMD [ "node" ]
+```

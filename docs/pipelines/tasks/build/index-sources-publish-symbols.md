@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Index Sources & Publish Symbols task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
@@ -41,7 +41,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishSymbolsV2.md)]
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ None
         <td>(Optional) Specify the artifact name to use for the Symbols artifact.  The default is Symbols_$(BuildConfiguration). <br/>Default value: Symbols_$(BuildConfiguration)</td>
     </tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 
@@ -185,7 +185,7 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How long are Symbols retained?
 

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Not getting emails from subscriptions or notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
@@ -46,7 +46,7 @@ Go to your personal subscriptions and locate the subscription, which you feel sh
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 
 > [!div class="mx-imgBorder"] 
->![subscription disabled](_img/subscription-disabled.png)
+>![subscription disabled](media/subscription-disabled.png)
 
 A default subscription is disabled when an administrator opts out at the organization or team level, or if you opt out in your personal subscription settings. Custom subscriptions get disabled when an administrator disables the subscription at the organization or team level, or if you disable a personal custom subscription.
 

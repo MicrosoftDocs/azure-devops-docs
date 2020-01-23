@@ -16,11 +16,11 @@ ms.date: 10/17/2017
 
 # Backlog overview (Scrum)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Backlog Overview report lists all product backlog items (PBIs), both active and completed. It doesn't include bugs. The report presents a snapshot of the work that has been performed for the filtered set of PBIs.  
   
- ![Backlog Overview report](_img/alm_pg_agile_addbug.png "ALM_PG_Agile_AddBug")  
+ ![Backlog Overview report](media/alm_pg_agile_addbug.png "ALM_PG_Agile_AddBug")  
   
  To learn how to open the report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -32,7 +32,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
   
  **Requirements**  
   
--   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+-   This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 -   To view the report, you must be assigned or belong to a group that has been assigned a **Browser** or **Content Manager** role in Reporting Services. For more information, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).  
   

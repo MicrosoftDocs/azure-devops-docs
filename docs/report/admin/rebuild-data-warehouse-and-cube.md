@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Rebuild the data warehouse and cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
 
@@ -170,7 +170,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 #### Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.
 
-![Edit the information to configure reporting](_img/IC665021.png)
+![Edit the information to configure reporting](media/IC665021.png)
 
 #### Q: What happens to data that has been purged or destroyed before a rebuild?
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 

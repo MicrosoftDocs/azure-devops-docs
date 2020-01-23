@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to decrypt files using OpenSSL.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DecryptFileV1.md)]
+[!INCLUDE [temp](../includes/yaml/DecryptFileV1.md)]
 
 ::: moniker-end
 

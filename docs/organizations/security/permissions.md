@@ -16,7 +16,7 @@ ms.date: 12/18/2019
 
 # Permissions, users, and groups in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
@@ -285,7 +285,7 @@ SharePoint Web Application Services
 
 When you install Azure DevOps Server or TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
-![ADMIN_GROUPS_PERMISSIONS](_img/permissions/server-groups-and-permissions.png)
+![ADMIN_GROUPS_PERMISSIONS](media/permissions/server-groups-and-permissions.png)
 
 
 You can't remove or delete the default server level groups.
@@ -433,14 +433,14 @@ Security Service Group
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts-new.png)
+> ![Project collection groups](media/permissions/collection-admin-permissions-vsts-new.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts.png)
+> ![Project collection groups](media/permissions/collection-admin-permissions-vsts.png)
 
 ::: moniker-end
 
@@ -572,13 +572,13 @@ For each project that you create, the system creates the followings project-leve
 
 #### [Preview page](#tab/preview-page) 
 
-![Choose Project settings, and then Permissions](_img/permissions/open-project-settings-permissions-preview.png)
+![Choose Project settings, and then Permissions](media/permissions/open-project-settings-permissions-preview.png)
 
 #### [Current page](#tab/current-page) 
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 * * * 
 
@@ -589,7 +589,7 @@ For each project that you create, the system creates the followings project-leve
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
 
@@ -813,7 +813,7 @@ You manage collection-level permissions through the [web portal admin context](.
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](_img/permissions/collection-level-permissions-new.png)   
+> ![Collection level permissions and groups](media/permissions/collection-level-permissions-new.png)   
 
 ::: moniker-end
 
@@ -821,7 +821,7 @@ You manage collection-level permissions through the [web portal admin context](.
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
+> ![Collection level permissions and groups](media/permissions/collection-level-permissions.png)   
 
 ::: moniker-end
 
@@ -1236,12 +1236,12 @@ You manage project-level permissions from the [web portal admin context](set-pro
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-permissions-contributors-s154.png)
+> ![Project-level permissions dialog](media/permissions/project-permissions-contributors-s154.png)
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
 
 * * *  
 
@@ -1250,7 +1250,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
 
 ::: moniker-end
 
@@ -1675,7 +1675,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Manage permissions](../../report/powerbi/_img/editable-views/view-permissions.png)  
+> ![Manage permissions](../../report/powerbi/media/editable-views/view-permissions.png)  
 
 The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views](../../report/powerbi/what-are-analytics-views.md)?  
 
@@ -1716,7 +1716,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
 > [!div class="mx-imgBorder"]  
-> ![Build object-level permissions dialog](_img/permissions/build-permissions-vsts.png)
+> ![Build object-level permissions dialog](media/permissions/build-permissions-vsts.png)
 
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
@@ -1872,14 +1872,14 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 ::: moniker range="azure-devops" 
 
 > [!div class="mx-imgBorder"]  
-> ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
+> ![Git repository permissions dialog](media/permissions/git-repo-permissions-vsts.png)
 
 ::: moniker-end 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018" 
 
 > [!div class="mx-imgBorder"]  
-> ![Git repository permissions dialog, TFS](_img/permissions/git-repo-permissions-tfs.png) 
+> ![Git repository permissions dialog, TFS](media/permissions/git-repo-permissions-tfs.png) 
 
 ::: moniker-end 
 
@@ -2017,7 +2017,7 @@ You manage the security of each TFVC branch from the [web portal](set-git-tfvc-r
 These permissions appear only for a project set up to use Team Foundation Version Control as the source control system.
 
 > [!div class="mx-imgBorder"]  
-> ![TFVC permissions dialog](_img/permissions/tfvc-repo-permissions-vsts.png)
+> ![TFVC permissions dialog](media/permissions/tfvc-repo-permissions-vsts.png)
 
 In version control permissions, explicit deny takes precedence over administrator group permissions.
 
@@ -2213,7 +2213,7 @@ Members of the Project Administrators group are automatically granted permission
 > that configure the team's agile planning tools.
 
 > [!div class="mx-imgBorder"]  
-> ![Area path permissions dialog](_img/permissions/area-path-permissions-vsts.png)  
+> ![Area path permissions dialog](media/permissions/area-path-permissions-vsts.png)  
 
 
 <table valign="top" width="100%">
@@ -2324,7 +2324,7 @@ You manage the security of each iteration path from the [web portal](../../organ
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
 
 > [!div class="mx-imgBorder"]  
-> ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
+> ![Iteration Path permissions dialog](media/permissions/iteration-path-permissions-vsts.png)
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -2388,7 +2388,7 @@ Members of the Project Administrators group are automatically granted these perm
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
 > [!div class="mx-imgBorder"]  
-> ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
+> ![Query folder permissions dialog](media/permissions/query-folder-permissions-vsts.png)
 
 Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
@@ -2888,10 +2888,10 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 > [!div class="mx-tdBreakAll"]  
 > |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
 > |---|---|---|:---:|
-> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
-> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
-> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
-> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
+> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](media/checkmark.png)|
+> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](media/checkmark.png)|
+> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](media/checkmark.png)|
+> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](media/checkmark.png)|
 
 
 ## Related articles

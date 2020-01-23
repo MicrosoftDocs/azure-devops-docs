@@ -12,7 +12,7 @@ ms.date: 01/12/2017
 ---
 
 # Upgrade Microsoft Project Server 2010  to Microsoft Project Server 2013
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 You can upgrade to Microsoft Project Server 2013 from a Project Server 2010 deployment that integrates with Visual Studio Team Foundation Server 2013 (TFS) by following the instructions provided in this topic.  
   

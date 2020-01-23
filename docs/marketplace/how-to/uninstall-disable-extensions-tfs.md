@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 # Uninstall or disable extensions in Team Foundation Server
 
-[!INCLUDE [version-tfs-2018-earlier](../../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [version-tfs-2018-earlier](../../includes/version-tfs-2018-earlier.md)]
 
 When you no longer need an extension, you can uninstall or disable it. This article shows you how.
 
@@ -33,15 +33,15 @@ can uninstall or disable extensions.
 
    **TFS 2015 Update 3**
 
-   <img alt="Manage extensions" src="../_shared/_img/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="../media/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 	
    **TFS 2017**
 
-   <img alt="Manage extensions" src="../_shared/_img/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="../media/manage-extensions2-new.png" style="border: 1px solid #CCCCCC" />
 
 3. On the extensions tab, select the extension, and then uninstall or disable it.
 
-	<img alt="Uninstall or disable an extension" src="../_shared/_img/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Uninstall or disable an extension" src="../media/uninstall-disable.png" style="border: 1px solid #CCCCCC" />
 
    [[Need help?](../faq-extensions.md#q-how-do-i-get-support-for-the-visual-studio-marketplace)]
 

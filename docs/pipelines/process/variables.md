@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Define variables
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
 As the name suggests, the value of a variable may change from run to run or job to job of your pipeline.
@@ -140,7 +140,7 @@ variables:
 
 ### Access variables through the environment
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -159,17 +159,17 @@ You can set a variable for a build pipeline by following these steps:
 Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
 To use a variable as an input to a task, wrap it in `$()`.
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 * * *
-<h2 id="secret-variables">Secrets</h2>
+<h2 id="secret-variables">Set secret variables</h2>
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
 You should not set secret variables in your YAML file. Instead, you should set them in the pipeline editor using the web interface. These variables are scoped to the pipeline in which you set them.
 
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
 The following example shows how to use a secret variable called `mySecret` from a script.
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
@@ -200,6 +200,43 @@ This works: ***
 
 It is recommended that you use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you would not want the log to include a secret that you passed in as an input.
 
+### Reference secret variables in variable groups
+
+This example shows how to reference a variable group in your YAML file and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. 
+
+This YAML makes a REST call to retrieve a list of releases and outputs the result. 
+
+```yaml
+variables: 
+- group: 'my-var-group' # variable group
+- name: 'devopsAccount' # new variable defined in YAML
+  value: 'contoso'
+- name: 'projectName' # new variable defined in YAML
+  value: 'contosoads'
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+        # Encode the Personal Access Token (PAT)
+        # $env:USER is a normal variable in the variable group
+        # #env:MY_MAPPED_TOKEN is a mapped secret variable
+        $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
+        
+        # Get a list of releases
+        $uri = "https://vsrm.dev.azure.com/$(devopsAccount)/$(projectName)/_apis/release/releases?api-version=5.1"
+
+        # Invoke the REST call
+        $result = Invoke-RestMethod -Uri $uri -Method Get -ContentType "application/json" -Headers @{Authorization=("Basic {0}" -f $base64AuthInfo)}
+        
+        # Output releases in JSON
+        Write-Host $result.value
+  env:
+    MY_MAPPED_TOKEN: $(token) # Maps the secret variable $(token) from my-var-group
+
+```
+
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 ::: moniker-end
@@ -208,7 +245,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
 Imagine you want to use a secret variable called `mySecret` from a script.
 Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
@@ -317,8 +354,8 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable using `isOutput=true`. Then you can map it into future
-jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage. You can access variables across jobs using [dependencies](expressions.md#dependencies). 
+an output variable using `isOutput=true`. Then you can map it into future jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage. 
+When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
 jobs:
@@ -454,7 +491,7 @@ To set a variable from a script, you use the `task.setvariable` logging command.
 This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
-[!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+[!INCLUDE [include](includes/set-variables-in-scripts.md)]
 
 ### Using variables as task inputs
 

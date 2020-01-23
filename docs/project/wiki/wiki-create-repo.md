@@ -12,12 +12,12 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 11/21/2019  
+ms.date: 01/22/2020  
 ---
 
 # Quickstart: Create a Wiki for your project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 In this quickstart, learn how to open a wiki and provision a Git repo for your wiki.
 
@@ -55,7 +55,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE [temp](includes/open-wiki-hub.md)]
 
 ## Provision a wiki Git repository
 
@@ -66,18 +66,18 @@ Provision a new Git repository that stores all your wiki pages and related artif
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki, Git repo for your wiki or publish existing repo Markdown files](_img/wiki/create-wiki-or-publish-create-option.png)
+> ![Create wiki, Git repo for your wiki or publish existing repo Markdown files](media/wiki/create-wiki-or-publish-create-option.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 > [!div class="mx-imgBorder"]  
-> ![Create wiki, Git repo for your wiki](_img/wiki/wiki-create.png)
+> ![Create wiki, Git repo for your wiki](media/wiki/wiki-create.png)
 ::: moniker-end
 
 If you don't have access to create a Wiki Git repository or if you don't have access to any of the existing wikis, the following message appears.
 
 > [!div class="mx-imgBorder"]  
-> ![Insufficient permissions to create a Wiki repository](_img/wiki/wiki-security-no-contributor.png)
+> ![Insufficient permissions to create a Wiki repository](media/wiki/wiki-security-no-contributor.png)
 
 Your administrator can provision the Wiki Git repository or you can request that they elevate your permissions. Stakeholders can't create a wiki, as they have no permissions to work in **Repos** or **Code**.
 
@@ -86,10 +86,9 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 > [!NOTE]
 > If you want to provision more wikis, then you must [publish code as a wiki](publish-repo-to-wiki.md). You can set up multiple wiki repos within a single project.
 
-### Why is the Git repository hidden?
+### How can I navigate to the Git repository?
 
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
-
 However, you can navigate to it from the following URL:
 
 ::: moniker range=">= azure-devops-2019"
@@ -102,7 +101,7 @@ However, you can navigate to it from the following URL:
 
 Choose **Clone Wiki** from the ellipsis near the wiki picker to access the Wiki URL.
 
-<img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
+<img align="top" src="media/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
 The URL of the wiki Git repository is exposed. Copy and paste it into your web browser to access the underlying Git repo.
 
@@ -150,7 +149,7 @@ ID                                    Name                 Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 

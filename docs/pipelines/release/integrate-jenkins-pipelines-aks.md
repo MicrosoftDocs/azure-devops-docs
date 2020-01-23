@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines provides integration with Jenkins so that you can:
@@ -231,7 +231,7 @@ You create a Jenkins build job to use the source code stored in your Azure Repos
 1. Choose **Maven project**.  Select **OK**.
 
 1. In the **Source Code Management** tab, select **Git** and enter the **clone URL** you saved earlier for the Azure Repos **Repository URL** and the branch containing your app code. If you are using Team Foundation Server, you can choose the option for **Team Foundation Version Control (TFVC)**.   
-    ![Add a repo to your build](_img/integrate-jenkins-vsts-cicd/jenkins-git.png)
+    ![Add a repo to your build](media/integrate-jenkins-vsts-cicd/jenkins-git.png)
 
 1. Select the **Credentials** drop down and choose the credential you created earlier.  You should successfully authenticate to your Azure Repos repository and not receive errors before continuing.  If you see errors, you likely have an issue with your credentials and Azure DevOps **PAT**.
 
@@ -264,7 +264,7 @@ You configure a Jenkins service connection to allow Azure Pipelines to connect t
 
 1. Open the **Services** page in Azure Pipelines, open the **New service connection** list, and choose **Jenkins**.
 
-     ![Add a Jenkins connection](_img/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
+     ![Add a Jenkins connection](media/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
 
 1. Enter a name for the connection.
 

@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Add stages, dependencies, & conditions  
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
@@ -55,10 +55,10 @@ The deployment of a release to a stage is controlled through
 [approvals and gates](../release/approvals/index.md), [deployment conditions and triggers](../release/triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).
 
-![stage](../release/_img/definition-02.png)
+![stage](../release/media/definition-02.png)
 
 * * *
-* 
+
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
@@ -153,7 +153,7 @@ for a stage in a release pipeline. You can:
 * Save a copy of the stage as a template.
 * Manage the security settings for the stage.
 
-![Defining options and policies](../release/_img/environments-03.png)
+![Defining options and policies](../release/media/environments-03.png)
 
 * * *
 
@@ -318,7 +318,7 @@ for deployment of different artifacts. In such cases, it's useful to
 be able to control how multiple releases are queued into a
 stage. **Queuing policies** give you that control.
 
-![Defining queuing policies](../release/_img/environments-02.png)
+![Defining queuing policies](../release/media/environments-02.png)
 
 The options you can choose for a queuing policy are:
 

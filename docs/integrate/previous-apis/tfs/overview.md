@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 
 A VSTS organization has one or more [projects](./projects.md). Each project has one or more [teams](./teams.md) that contribute to that project.
 
-![Project and team resources](./_img/projects-and-teams.png)
+![Project and team resources](./media/projects-and-teams.png)
 
 * [Project Collections](./project-collections.md)
 * [Projects](./projects.md)

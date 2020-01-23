@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Code with Git
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, you learn how to share your code with others. After you create a new organization and project in Azure DevOps, you can begin coding with Git.
 
@@ -35,11 +35,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the project for your organization, and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
-   ![Screenshot of project with Repos highlighted](_img/project-select-repos-vert.png)
+   ![Screenshot of project with Repos highlighted](media/project-select-repos-vert.png)
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
   
-   ![Screenshot of project with Copy icon highlighted](_img/code-with-git-clone-repo.png)
+   ![Screenshot of project with Copy icon highlighted](media/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
@@ -59,7 +59,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 2. Select **Clone** in the upper-right corner of the Code window, and copy the URL.
 
-   ![Screenshot of project in web browser, with Copy icon highlighted](_img/code-with-git-clone-repo-prev.png)
+   ![Screenshot of project in web browser, with Copy icon highlighted](media/code-with-git-clone-repo-prev.png)
 
 3. Open the Git command window (Git Bash on Git for Windows). Go to the folder where you want the code from the repo stored on your computer, and run `git clone`, followed by the path copied from **Clone URL** in the previous step. See the following example:
 
@@ -106,11 +106,11 @@ In the following steps, we make a change to the files on your computer, commit t
 
 1. Switch back to the web portal, and select **History** from the Code page to view your new commit.
 
-   ![Screenshot of web portal, with History highlighted](_img/code-history-vert.png)
+   ![Screenshot of web portal, with History highlighted](media/code-history-vert.png)
 
 2. Switch to the **Files** tab, and select the README file to view your changes.
 
-   ![Screenshot of README file](_img/first-edit-readme-file.png)
+   ![Screenshot of README file](media/first-edit-readme-file.png)
 
 ::: moniker-end
 
@@ -118,11 +118,11 @@ In the following steps, we make a change to the files on your computer, commit t
 
 1. Switch back to the web portal, and select **History** from the **Code** tab to view your new commit. Two commits appear: the first commit, where the README and .gitignore were added upon repo creation, and the commit you just made.
 
-   ![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
+   ![View commit history](../repos/git/media/repo-mgmt/commit-push.png)
 
 2. Switch to the **Files** tab, and select the README file to view your changes.
 
-   ![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
+   ![View changed file](../repos/git/media/repo-mgmt/readme-changed-file.png)  
 
 ::: moniker-end
 

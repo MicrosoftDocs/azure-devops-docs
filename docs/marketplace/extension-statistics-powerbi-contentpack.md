@@ -15,7 +15,7 @@ ms.date: 11/25/2019
 
 # Extension Statistics Power BI content pack
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Gain insight and analyze the progress of your extension by using Extension Statistics Power BI content pack. All data elements in the extension hub are also available in Power BI content pack.
 The content pack has a complete analytic data model, (tables, relationships, and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model isn't.
@@ -30,36 +30,36 @@ The content pack has a complete analytic data model, (tables, relationships, and
 
 3. In the lower left corner, select **Get Data**.
 
-   ![Power BI get data](_img/power-bi-get-data.png)
+   ![Power BI get data](media/power-bi-get-data.png)
 
 4. Select **Get** under **Services** on the Get Data page.
 
-    ![get-data-final.png](_img/get-data-final.png)
+    ![get-data-final.png](media/get-data-final.png)
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and **Get it now**.
 
-    ![connector](_img/search.png)
-    ![connector](_img/content-pack-details.png)
+    ![connector](media/search.png)
+    ![connector](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher ID that you want data for, and then select **Next**.
 
-    ![Enter the publisher ID used in Marketplace](_img/addpublisherid.png)  
+    ![Enter the publisher ID used in Marketplace](media/addpublisherid.png)  
 
     **Important**: Sign in to Power BI using the same credentials you use on the Marketplace, and you have access to the Publisher ID. 
 
 7. Specify the authentication method. Only oAuth2 is supported. Choose **Sign in** to continue.
 
-    ![Sign in with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+    ![Sign in with oAuth2](media/connect-to-vs-team-services-auth.png)  
 
     **Important**: You can't connect if your organization administrator disabled third-party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
-    ![Third-party oAuth enabled](_img/Screen5.png)  
+    ![Third-party oAuth enabled](media/Screen5.png)  
 
     Contact your organization administrator to determine if it needs to be enabled.
 
 8. Successful authorization displays the following authorization dialog, which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select **Accept**.
 
-    ![Azure DevOpsAuthorization page](_img/Screen6.png)  
+    ![Azure DevOpsAuthorization page](media/Screen6.png)  
 
 9. You're presented with a loading screen until the data is loaded. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded.
 

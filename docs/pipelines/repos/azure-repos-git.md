@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
@@ -291,7 +291,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ::: moniker-end
 
@@ -299,7 +299,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches.png)
 
 ::: moniker-end
 
@@ -396,7 +396,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -487,7 +487,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -521,7 +521,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -550,7 +550,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Clean build
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
@@ -598,7 +598,7 @@ This gives the following clean options.
 #### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
- ![GitHub options](_img/github/github-clean-sources.png)
+ ![GitHub options](media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -622,17 +622,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** or **Variables** from the settings menu.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![Git options](_img/github/github-options.png)
+ ![Git options](media/github/github-options.png)
 
 ---
 

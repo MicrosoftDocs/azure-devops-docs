@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Manual testing permissions and access 
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Azure Test Plans uses an access level called [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web),
 which is available from Azure DevOps.
@@ -62,16 +62,16 @@ To learn more, see [About access levels](../organizations/security/access-levels
 
 | Task | Stakeholders | Readers | Contributors | Account Owner &amp;<br/>Project Admins |
 | --- |:---:|:---:|:---:|:---:| 
-| Exploratory testing, view test runs | | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Exploratory testing, create and delete test runs |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Provide feedback using the Test & Feedback extension | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Request feedback using the Test & Feedback extension |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Manage test configurations and test environments |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Manage test plans and test suites |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Run automated tests from test plans |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
-| Test Manager (purchased separately) |  |  | ![checkmark](_img/checkmark.png) | ![checkmark](_img/checkmark.png) |
+| Exploratory testing, view test runs | | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Exploratory testing, create and delete test runs |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Provide feedback using the Test & Feedback extension | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Request feedback using the Test & Feedback extension |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Manage test configurations and test environments |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Manage test plans and test suites |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Run automated tests from test plans |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+| Test Manager (purchased separately) |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
 
 Permissions can be applied at [Project level](../organizations/security/permissions.md#project-level)
 and at [Area path level](../organizations/security/permissions.md#area-path-object-level). 
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

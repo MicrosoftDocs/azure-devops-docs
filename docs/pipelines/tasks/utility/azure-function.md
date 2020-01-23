@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2017'
 
 # Invoke Azure Function task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to invoke a HTTP triggered function in an Azure function app and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureFunctionV1.md)]
 
 ::: moniker-end
 
