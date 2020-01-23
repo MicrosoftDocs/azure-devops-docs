@@ -116,7 +116,7 @@ resources:
 
 All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](./artifacts/pipeline-artifacts.md#downloading-artifacts) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 steps:
@@ -125,7 +125,7 @@ steps:
   patterns: string # patterns representing files to include; optional
 ```
 
-# [Example](#tab/schema)
+## [Example](#tab/schema)
 
 ```yaml
 - job: deploy_windows_x86_agent
@@ -165,7 +165,7 @@ resources.pipeline.<Alias>.requestedForID
 
 If you have any external CI build system that produces artifacts, you can consume the artifacts by defining a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI etc.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
@@ -180,7 +180,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
 
 `builds` is an extensible category. You can write an extension to consume artifacts from your builds service (CircleCI, TeamCity etc.) and introduce a new type of service to be part of `builds`. Currently, we are providing Jenkins resource as a type in `builds`.
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 
 ```yaml
 resources:
@@ -203,7 +203,7 @@ You can consume artifacts from the `build` resource as part of your jobs using `
 Artifacts from the `build` resource are downloaded to `$(PIPELINE.WORKSPACE)/<build-identifier>/` folder. 
 Note: `build` resource artifacts are not automatically downloaded in your jobs/deploy-jobs and you need to explicitly add `downloadBuild` task for consuming the artifacts.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 - downloadBuild: string # identifier for the resource from which to download artifacts
@@ -211,7 +211,7 @@ Note: `build` resource artifacts are not automatically downloaded in your jobs/d
   patterns: string | [ string ] # a minimatch path or list of [minimatch paths](tasks/file-matching-patterns.md) to download; if blank, the entire artifact is downloaded
 ```
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 You can customize the download behavior for each deployment or job.
 ```yaml
 - job: deploy_windows_x86_agent
@@ -226,7 +226,7 @@ You can customize the download behavior for each deployment or job.
 If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -238,7 +238,7 @@ resources:
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
 ```
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 ```yaml
 
 resources:
@@ -275,7 +275,7 @@ The `git` type refers to Azure Repos Git repos.
 Use `checkout` keyword to consume your repos defined as part of `repository` resource. 
 
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 steps:
@@ -299,7 +299,7 @@ If you need to consume a container image as part of your CI/CD pipeline, you can
 
 If you need to consume images from Docker registry as part of your pipeline, you can define a generic container resource (not `type` keyword required). 
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -314,7 +314,7 @@ resources:
 ```
 A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](process/container-phases.md).
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -327,7 +327,7 @@ resources:
 
 We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and also enable automatic pipeline triggers.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:          # types: pipelines | repositories | containers | builds | packages
