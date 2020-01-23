@@ -39,7 +39,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
 
-You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The Copy Files task is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the Publish Build Artifacts task will get periodically cleaned up and deleted. 
+You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
 # [YAML](#tab/yaml)
 
@@ -54,10 +54,10 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
 
 # [Classic](#tab/classic)
 
-1. Add the Copy Files task](../tasks/utility/copy-files.md) to your Pipeline.  
+1. Add the **Copy Files task** to your Pipeline.  
 ![copy files](media/copy_files_classic_task.png)
 
-2. Configure the Copy Files task. 
+2. Configure the **Copy Files task**. 
 ![configure Copy Files](media/copy_files_classic_config.png)
 ---
 
