@@ -27,7 +27,7 @@ Resources are defined at one place and can be consumed anywhere in your pipeline
 
 Resources in YAML represent sources of types pipelines, builds, repositories, containers and packages. 
 
-#### [Schema](#tab/schema/)
+### Schema
 
 ```yaml
 resources:
@@ -43,7 +43,7 @@ resources:
 
 If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
@@ -61,7 +61,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
         exclude: [ string ]  # branches to discard the trigger events, optional; Defaults to none.
 ```
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 
 If you need to consume artifacts from an Azure pipeline within the current project, here is simple schema.
 
@@ -125,7 +125,7 @@ steps:
   patterns: string # patterns representing files to include; optional
 ```
 
-## [Example](#tab/schema)
+## [Example](#tab/example)
 
 ```yaml
 - job: deploy_windows_x86_agent
@@ -141,7 +141,7 @@ Or to avoid downloading any of the artifacts at all:
 - download: none
 ```
 ---
-Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder; see [artifact download location](#artifact-download-location) for more details.
+Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### pipeline resource variables
 In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables:
@@ -203,7 +203,7 @@ You can consume artifacts from the `build` resource as part of your jobs using `
 Artifacts from the `build` resource are downloaded to `$(PIPELINE.WORKSPACE)/<build-identifier>/` folder. 
 Note: `build` resource artifacts are not automatically downloaded in your jobs/deploy-jobs and you need to explicitly add `downloadBuild` task for consuming the artifacts.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 - downloadBuild: string # identifier for the resource from which to download artifacts
@@ -211,7 +211,7 @@ Note: `build` resource artifacts are not automatically downloaded in your jobs/d
   patterns: string | [ string ] # a minimatch path or list of [minimatch paths](tasks/file-matching-patterns.md) to download; if blank, the entire artifact is downloaded
 ```
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 You can customize the download behavior for each deployment or job.
 ```yaml
 - job: deploy_windows_x86_agent
@@ -223,10 +223,10 @@ You can customize the download behavior for each deployment or job.
 
 ## Resources: `repositories`
 
-If your pipeline has [templates in another repository](../process/templates.md#using-other-repositories), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
+If your pipeline has [templates in another repository](../process/templates.md#use-other-repositories), or if you want to use [multi-repo checkout](../repos/multi-repo-checkout.md) with a repository that requires a service connection, you must let the system know about that repository. 
 The `repository` keyword lets you specify an external repository.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -251,7 +251,7 @@ resources:
 
 ---
 
-#### Type
+### Type
 
 Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
@@ -275,7 +275,7 @@ The `git` type refers to Azure Repos Git repos.
 Use `checkout` keyword to consume your repos defined as part of `repository` resource. 
 
 
-# [Schema](#tab/schema)
+### Schema
 
 ```yaml
 steps:
@@ -287,7 +287,7 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1); defaults to a directory called `s`
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
----
+
 Repos from `repository` resource are not automatically synced in your jobs and you need to explicitly use `checkout` to fetch your repos as part of your jobs.
 
 For more information, see [Check out multiple repositories in your pipeline](../repos/multi-repo-checkout.md).
@@ -299,7 +299,7 @@ If you need to consume a container image as part of your CI/CD pipeline, you can
 
 If you need to consume images from Docker registry as part of your pipeline, you can define a generic container resource (not `type` keyword required). 
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:
@@ -314,7 +314,7 @@ resources:
 ```
 A generic container resource can be used as an image consumed as part of your job or it can also be used for [Container jobs](../process/container-phases.md).
 
-# [Example](#tab/example)
+## [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -327,7 +327,7 @@ resources:
 
 We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and also enable automatic pipeline triggers.
 
-# [Schema](#tab/schema)
+## [Schema](#tab/schema)
 
 ```yaml
 resources:          # types: pipelines | repositories | containers | builds | packages
@@ -343,7 +343,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
         include: [ string ]  # image tags to consider the trigger events, optional; defaults to any new tag
         exclude: [ string ]  # image tags on discard the trigger events, optional; defaults to none
 ```
-# [Example](#tab/example)
+## [Example](#tab/example)
 
 ```yaml
 resources:         
@@ -380,7 +380,6 @@ We provide full traceability about any resource consumed at a pipeline level and
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
 1. The resource that has triggered the pipeline (if it is triggered by a resource).
-
 ![Commits in pipeline run](media/runs-resource-trigger.png)
 2. Version of the resource and the artifacts consumed.
  ![Consumed artifacts in pipeline run](media/runs-consumed-artifacts.png)
