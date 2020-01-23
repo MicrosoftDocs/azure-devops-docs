@@ -65,7 +65,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ### Create your first .Net Core pipeline
 
-[!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **ASP.NET Core**.
 
@@ -94,7 +94,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ### Create your first Python pipeline
 
-[!INCLUDE [include](ecosystems/_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
 
@@ -143,9 +143,9 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 --- 
 
-[!INCLUDE [include](_shared/get-status-badge.md)]
+[!INCLUDE [include](includes/get-status-badge.md)]
 
-[!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
 
 ::: moniker-end
 
