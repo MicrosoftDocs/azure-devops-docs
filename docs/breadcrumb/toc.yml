@@ -32,7 +32,7 @@
       topicHref: /azure/devops/boards/queries/example-queries
     - name: Plans & Agile at Scale
       tocHref: /azure/devops/boards/plans/
-      topicHref: /azure/devops/boardsplans/index
+      topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
       tocHref: /azure/devops/boards/backlogs/office/
       topicHref: /azure/devops/boards/backlogs/office/track-work
@@ -109,8 +109,8 @@
       tocHref: /azure/devops/pipelines/integrations/
       topicHref: /azure/devops/pipelines/integrations/slack
   - name: Developer resources
-    tocHref: /azure/devops/developer-resources/
-    topicHref: /azure/devops/developer-resources/index
+    tocHref: /azure/devops/dev-resources/
+    topicHref: /azure/devops/dev-resources/index
     items: 
     - name: Azure DevOps CLI
       tocHref: /azure/devops/cli/
