@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Cache task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Improve build performance by caching files, like dependencies, between pipeline runs.
 
@@ -27,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/cache-v2.md)]
+[!INCLUDE [temp](../includes/yaml/cache-v2.md)]
 
 ::: moniker-end
 

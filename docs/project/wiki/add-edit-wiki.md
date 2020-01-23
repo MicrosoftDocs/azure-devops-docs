@@ -17,7 +17,7 @@ ms.date: 10/14/2019
 
 # Quickstart: Add and edit wiki pages
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
@@ -34,12 +34,12 @@ In this quickstart, learn how to do the following tasks:
 While you author pages using [Markdown format](../../reference/markdown-guidance.md), you can also use the format pane for rich-text formatting and inserting images, attachments, and links.  
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki home page](_img/wiki/wiki-edit.png)
+> ![Wiki home page](media/wiki/wiki-edit.png)
 
 As you edit the page, save it by entering **Ctrl+S**. To save with a custom revision message, select the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Save page with a custom message](_img/wiki/wiki-save-with-message.png)
+> ![Save page with a custom message](media/wiki/wiki-save-with-message.png)
 
 ::: moniker range="= azure-devops"
 
@@ -72,7 +72,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 <a id="open-wiki">  </a>
 
-[!INCLUDE  [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE  [temp](includes/open-wiki-hub.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -122,7 +122,7 @@ To add another page, choose **New page**. Or, to add a subpage, open the context
 Specify a unique title of 235 characters or less. Page titles are case-sensitive. For other title restrictions, see [Wiki Git repository files and file structure, File naming conventions](wiki-file-structure.md#file-naming).
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki and first page](_img/wiki/add-new-page.png)
+> ![Create wiki and first page](media/wiki/add-new-page.png)
 
 You can also use keyboard shortcuts to add a new page by pressing **n** or add a subpage by pressing **c**. For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 
@@ -175,7 +175,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 
@@ -185,7 +185,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 ### Wiki page title naming restrictions
 
-[!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
+[!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
 ## Edit and delete wiki pages
 
@@ -196,7 +196,7 @@ To edit an existing Wiki page, open the page and select **Edit**, or open the co
 For code wikis, you can edit wiki pages in Repos hub also by using the option **Edit in Repos**
 
 > [!div class="mx-imgBorder"]  
-> ![Create wiki and first page](_img/wiki/edit-in-repos.png)
+> ![Create wiki and first page](media/wiki/edit-in-repos.png)
 
 > [!NOTE]  
 > If you have branch policies in your code wiki, use "Edit in Repos" to create a branch and continue editing.
@@ -276,7 +276,7 @@ az devops wiki page delete --path
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Do not prompt for confirmation.
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ### Example
 
@@ -291,7 +291,7 @@ az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 
@@ -311,7 +311,7 @@ You can also use keyboard shortcuts to reorder pages. Select a page and press **
 To change the parent-child relationship of a page, open its context menu and select **Move**. The **Move page** dialog opens. Select a parent page under which you can move the current page.
 
 > [!div class="mx-imgBorder"]  
-> ![Move wiki page in the hierarchy](_img/wiki/wiki-move-page.png)
+> ![Move wiki page in the hierarchy](media/wiki/wiki-move-page.png)
 
 For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 

@@ -15,7 +15,7 @@ ms.date: 10/17/2017
 
 # Build Changeset tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about the changesets that were incorporated in each build by using FactBuildChangeset and the associated dimension tables.  
   
@@ -24,7 +24,7 @@ You can query for data about the changesets that were incorporated in each build
 
 For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Builds](perspective-build-analyze-report-build-details-coverage.md).  
   
- ![Tables for Changesets in a Build](_img/teamproj_factbuildchangeset.png "TeamProj_FactBuildChangeset")  
+ ![Tables for Changesets in a Build](media/teamproj_factbuildchangeset.png "TeamProj_FactBuildChangeset")  
   
  FactBuildChangeset is associated with the following dimension tables:  
   

@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Filter your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
 
 
 <a id="filter"></a>
@@ -34,13 +34,13 @@ For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or 
 
 ::: moniker range=">= tfs-2018"
 
-![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
+![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-ts.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
-![Kanban board, customize card fields](_img/filter-kb-card-field-settings.png)
+![Kanban board, customize card fields](media/filter-kb-card-field-settings.png)
 
 ::: moniker-end
 
@@ -50,12 +50,12 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 ::: moniker range=">= tfs-2017"
 
-![Kanban board, Filter using keyword search](../boards/_img/filter/filter-options-web.png)
+![Kanban board, Filter using keyword search](../boards/media/filter/filter-options-web.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-![Kanban board, Filter using keyword search](../boards/_img/filter-kb-filter-text-web.png)
+![Kanban board, Filter using keyword search](../boards/media/filter-kb-filter-text-web.png)
 
 ::: moniker-end
 
@@ -90,9 +90,9 @@ The filter criteria ignores the following characters when the field value starts
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
-To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon.
+To start filtering, click the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon.
 
-![Enable kanban field-based filtering](_img/filter/filter-kb-choose-filter.png)
+![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter.png)
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
@@ -107,7 +107,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 
 For example, here we filter for all items assigned to Jamal and Raisa.
 
-![Kanban board, Filter on assignment field](../boards/_img/filter-kb-filters-chosen.png)
+![Kanban board, Filter on assignment field](../boards/media/filter-kb-filters-chosen.png)
 
 Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
 
@@ -127,11 +127,11 @@ You can use this feature only when you've created features or epics and linked t
 > [!NOTE]
 > The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
 
-To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
+To start filtering, click the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
 
 Here, we choose two features on which to filter the board.
 
-![Kanban board, Filter on parent work items](_img/filter-kb-choose-parent-work-items.png)
+![Kanban board, Filter on parent work items](media/filter-kb-choose-parent-work-items.png)
 
 The final board displays just those stories linked as child work items to the selected features.
 

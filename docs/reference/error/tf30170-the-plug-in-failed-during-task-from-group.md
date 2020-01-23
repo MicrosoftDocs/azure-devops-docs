@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF30170: The plug-in {0} failed during task {1} from group {2}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when a third-party plug-in does not operate in the manner the New Team Project Wizard expected it to operate, and the plug-in does not return a meaningful error message about the problem.  
   

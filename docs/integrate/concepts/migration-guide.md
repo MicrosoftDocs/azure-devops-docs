@@ -17,7 +17,7 @@ monikerRange: "azure-devops"
 
 # Migration guide
 
-[!INCLUDE [version](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version](../../includes/version-vsts-only.md)]
 
 This guide is to help you migrate your .NET code from using [WIT Client OM](https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient) to our REST based [.Net Client Libraries](dotnet-client-libraries.md). Below is table of the common work item tracking scenarios with links back to its respected API documentation.
 

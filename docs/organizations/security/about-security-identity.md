@@ -16,9 +16,9 @@ ms.date: 11/26/2019
 
 # About security and identity
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
@@ -154,7 +154,7 @@ Azure DevOps is pre-configured with default security groups. Default permissions
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
-![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) 
+![Conceptual image of permissions and access levels](media/permissions/permissions-overview.png) 
 
 Azure DevOps controls access through these three inter-connected functional areas:
 
@@ -166,7 +166,7 @@ Azure DevOps controls access through these three inter-connected functional area
 
 Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
 
-<img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
+<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
 You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
 
@@ -174,7 +174,7 @@ You can create local groups or Active Directory (AD) [groups to manage your user
 
 The following image shows the default permission assignments made to the Contributors group.
 
-![Contributor role default permissions](_img/contributor-permissions.png)
+![Contributor role default permissions](media/contributor-permissions.png)
 
 To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).

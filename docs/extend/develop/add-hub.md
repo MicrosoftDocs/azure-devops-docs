@@ -14,13 +14,13 @@ ms.date: 12/31/2019
 
 # Add a hub
 
-[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
-![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
 
 ## Structure of an extension
 ```no-highlight

@@ -15,7 +15,7 @@ ms.date: 12/30/2016
 
 # Bugs by Priority Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 The Bugs by Priority report in Office Excel shows the distribution of active Bugs, grouped by priority. For information about how to access this report, see [Excel reports](excel-reports.md).  
@@ -29,7 +29,7 @@ The Bugs by Priority report in Office Excel shows the distribution of active Bug
 
  You can use the Bugs by Priority report to understand the distribution of active Bugs by priority. As the following illustration shows, this report is based on a PivotChart report that shows the last four weeks of the data captured for Bugs. This data is stored in the data warehouse.  
   
- ![Bugs by priority chart](_img/procguid_bypriority.png "ProcGuid_ByPriority")  
+ ![Bugs by priority chart](media/procguid_bypriority.png "ProcGuid_ByPriority")  
   
  You can review the Bugs by Priority report to determine the overall distribution of Bugs by priority. Specifically, you can find answers to the following questions:  
   

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="azure-devops"
 
@@ -23,7 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Get the sample code
 
@@ -51,9 +51,9 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 1. A new run is started. Wait for the run to finish.
 
-[!INCLUDE [include](_shared/get-status-badge.md)]
+[!INCLUDE [include](includes/get-status-badge.md)]
 
-[!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker range="<= azure-devops-2019"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -111,11 +111,11 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
-   ![Repos files](../repos/get-started/_img/clone-repo/repos-files.png)
+   ![Repos files](../repos/get-started/media/clone-repo/repos-files.png)
 
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
-   ![Initialize repository](_img/initialize-repo.png)
+   ![Initialize repository](media/initialize-repo.png)
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 2. If your project is empty, you will be greeted with a screen to help you add code to your repository. Choose the bottom choice to **initialize** your repo with a `readme` file: 
 
-   ![Initialize repository](_img/initialize-repo.png)
+   ![Initialize repository](media/initialize-repo.png)
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Create a PowerShell script that prints `Hello world`.
 2. Add a file.
 
    > [!div class="mx-imgBorder"] 
-   >![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-newnav-tfs-2018-2.png)
+   >![On the Files tab, from the repo node, select the 'New -> File' option](media/get-started-designer/add-a-file-newnav-tfs-2018-2.png)
    > 
 
 3. In the dialog box, name your new file and create it.
@@ -174,10 +174,10 @@ Create a PowerShell script that prints `Hello world`.
    ::: moniker range="tfs-2018"
 
    #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018-2.png) 
+   ![On the Files tab, from the repo node, select the 'New -> File' option](media/get-started-designer/add-a-file-tfs-2018-2.png) 
 
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018.png) 
+   ![On the Files tab, from the repo node, select the 'New -> File' option](media/get-started-designer/add-a-file-tfs-2018.png) 
 
    * * * 
 
@@ -185,7 +185,7 @@ Create a PowerShell script that prints `Hello world`.
 
    ::: moniker range="tfs-2017"
 
-   ![On the Files tab, from the repo node, select the 'Add file' option](_img/get-started-designer/add-a-file.png)
+   ![On the Files tab, from the repo node, select the 'Add file' option](media/get-started-designer/add-a-file.png)
 
    ::: moniker-end
 
@@ -222,20 +222,20 @@ Create a build pipeline that prints "Hello world."
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
    > [!div class="mx-imgBorder"] 
-   > ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   > ![navigate to builds tab](media/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
    >
 
 2. Create a new pipeline.
 
    > [!div class="mx-imgBorder"] 
-   > ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   > ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
    >
 
    For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
 
-   ![Click settings in top right of screen and click preview features](_img/preview-features.png)
+   ![Click settings in top right of screen and click preview features](media/preview-features.png)
 
-   ![Click toggle to turn yaml preview feature off](_img/yaml-preview-feature-off.png)
+   ![Click toggle to turn yaml preview feature off](media/yaml-preview-feature-off.png)
 
 3. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
@@ -246,14 +246,14 @@ Create a build pipeline that prints "Hello world."
 6. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
    > [!div class="mx-imgBorder"] 
-   > ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
+   > ![builds-tab-add-task-to-job](media/get-started-designer/builds-tab-add-task-azure-devops-newnavon.png)
    
 7. On the left side, select your new **PowerShell** script task.
 
 8. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
    > [!div class="mx-imgBorder"] 
-   > ![PowerShell task](_img/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
+   > ![PowerShell task](media/get-started-designer/powershell-task-1-azure-devops-newnavon.png)
  
 9. Select **Save & queue**, and then select **Save**.
 
@@ -263,11 +263,11 @@ Create a build pipeline that prints "Hello world."
 
 10. Select **Build and Release**, and then choose **Builds**.
 
-    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+    ![navigate to builds tab](media/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
 11. Create a new pipeline.
 
-    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+    ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
 12. Start with an **empty pipeline**
 
@@ -275,13 +275,13 @@ Create a build pipeline that prints "Hello world."
 
 14. On the left side, select **+ Add Task** to add a task to the job, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
-    ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018.png)
+    ![builds-tab-add-task-to-job](media/get-started-designer/builds-tab-add-task-tfs-2018.png)
 
 15. On the left side, select your new **PowerShell** script task.
 
 16. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-    ![PowerShell task](_img/get-started-designer/powershell-task-1-tfs-2018.png)
+    ![PowerShell task](media/get-started-designer/powershell-task-1-tfs-2018.png)
 
 17. Select **Save & queue**, and then select **Save**.
 
@@ -291,11 +291,11 @@ Create a build pipeline that prints "Hello world."
 
 1. Select **Azure Pipelines**, and then the **Builds** tab.
 
-   ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab.png)
+   ![navigate to builds tab](media/get-started-designer/navigate-to-builds-tab.png)
 
 2. Create a new pipeline.
 
-   ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button.png)
+   ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button.png)
 
 3. Start with an **empty pipeline**.
 
@@ -311,7 +311,7 @@ Create a build pipeline that prints "Hello world."
 
 9. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
-   ![PowerShell task](_img/get-started-designer/powershell-task-1.png)
+   ![PowerShell task](media/get-started-designer/powershell-task-1.png)
 
 10. Select **Save & queue**, and then select **Save**.
 
@@ -333,7 +333,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 1. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
-   ![publish artifact task](_img/get-started-designer/publish-artifact-task-tfs-2018-2.png)
+   ![publish artifact task](media/get-started-designer/publish-artifact-task-tfs-2018-2.png)
 
    **Path to publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -350,7 +350,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 2. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
-   ![publish artifact task](_img/get-started-designer/publish-artifact-task.png)
+   ![publish artifact task](media/get-started-designer/publish-artifact-task.png)
 
    **Path to Publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
@@ -391,17 +391,17 @@ Save and queue a build manually and test your build pipeline.
 1. You see a link to the new build on the top of the page.
 
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/build-console-link-to-new-build-azure-devops-newnavon.png)
+   > ![build console](media/get-started-designer/build-console-link-to-new-build-azure-devops-newnavon.png)
 
    Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/build-console-azure-devops-newnavon.png)
+   > ![build console](media/get-started-designer/build-console-azure-devops-newnavon.png)
 
 1. Go to the build summary. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/artifacts-explorer-azure-devops-newnavon.png)
+   > ![build console](media/get-started-designer/artifacts-explorer-azure-devops-newnavon.png)
 
 ::: moniker-end
 
@@ -415,25 +415,25 @@ Save and queue a build manually and test your build pipeline.
    
 3. You see a link to the new build on the top of the page.
 
-   ![build console](_img/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
+   ![build console](media/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
 
    Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
    #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![build console](_img/get-started-designer/build-console.png)
+   ![build console](media/get-started-designer/build-console.png)
 
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![build console](_img/get-started-designer/build-console-vsts.png)
+   ![build console](media/get-started-designer/build-console-vsts.png)
 
    * * *
 
 4. Go to the build summary.
 
-   ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
+   ![build console link to build summary](media/get-started-designer/build-console-link-to-build-summary.png)
 
 5. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
+   ![artifacts explorer](media/get-started-designer/artifacts-explorer.png)
 
 > You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Azure Pipelines**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
@@ -447,15 +447,15 @@ Save and queue a build manually and test your build pipeline.
 
    This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
-   ![build console](_img/get-started-designer/build-console.png)
+   ![build console](media/get-started-designer/build-console.png)
 
 1. Go to the build summary.
 
-   ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
+   ![build console link to build summary](media/get-started-designer/build-console-link-to-build-summary.png)
 
 1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
-   ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
+   ![artifacts explorer](media/get-started-designer/artifacts-explorer.png)
 
 > You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in **Build and Release**. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
@@ -478,17 +478,17 @@ We'll pass some build variables to the script to make our pipeline a bit more in
    ::: moniker range="azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   > ![build console](_img/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
+   > ![build console](media/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
 
    ::: moniker-end
 
    ::: moniker range="tfs-2018"
 
    #### [TFS 2018.2](#tab/tfs-2018-2)
-   ![PowerShell task](_img/get-started-designer/powershell-task-2-tfs-2018-2.png)
+   ![PowerShell task](media/get-started-designer/powershell-task-2-tfs-2018-2.png)
 
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
-   ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
+   ![PowerShell task](media/get-started-designer/powershell-task-2.png)
 
    * * *
 
@@ -496,7 +496,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    ::: moniker range="tfs-2017"
 
-   ![PowerShell task](_img/get-started-designer/powershell-task-2.png)
+   ![PowerShell task](media/get-started-designer/powershell-task-2.png)
 
    ::: moniker-end
 
@@ -554,14 +554,14 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
    ::: moniker range="azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
+   > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
    > [!div class="mx-imgBorder"]
-   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
+   > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log.png)
 
    ::: moniker-end
 
@@ -594,7 +594,7 @@ Define the process for running the script in two stages.
 1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
 
    > [!div class="mx-imgBorder"] 
-   > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-azure-devops-newnavon.png)
+   > ![trigger continuous deployment](media/get-started-designer/trigger-continuous-deployment-release-environment-azure-devops-newnavon.png)
    >   
 
 1. Select the **Tasks** tab and select your **QA** stage.
@@ -616,7 +616,7 @@ Define the process for running the script in two stages.
 1. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
 
    > [!div class="mx-imgBorder"] 
-   > ![clone-release-environment](_img/get-started-designer/clone-release-environment-azure-devops-newnavon.png)
+   > ![clone-release-environment](media/get-started-designer/clone-release-environment-azure-devops-newnavon.png)
    >   
 
 1. Rename the cloned stage **Production**.
@@ -624,7 +624,7 @@ Define the process for running the script in two stages.
 1. Rename the release pipeline **Hello world**.
 
    > [!div class="mx-imgBorder"] 
-   > ![rename release pipeline](_img/get-started-designer/rename-release-pipeline-azure-devops-newnavon.png)
+   > ![rename release pipeline](media/get-started-designer/rename-release-pipeline-azure-devops-newnavon.png)
    >
 
 1. Save the release pipeline.
@@ -647,11 +647,11 @@ Define the process for running the script in two stages.
   
    #### [TFS 2018.2](#tab/tfs-2018-2)
    > [!div class="mx-imgBorder"] 
-   > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
+   > ![trigger continuous deployment](media/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
 
    #### [TFS 2018 RTM](#tab/tfs-2018-rtm)
    > [!div class="mx-imgBorder"] 
-   > ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-rtm-new-editor.png)
+   > ![trigger continuous deployment](media/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-rtm-new-editor.png)
 
    * * *
 
@@ -674,7 +674,7 @@ Define the process for running the script in two stages.
 13. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
 
     > [!div class="mx-imgBorder"] 
-    > ![clone-release-environment](_img/get-started-designer/clone-release-environment-tfs-2018-2.png)
+    > ![clone-release-environment](media/get-started-designer/clone-release-environment-tfs-2018-2.png)
     >
    
 14. Rename the cloned stage **Production**.
@@ -682,7 +682,7 @@ Define the process for running the script in two stages.
 15. Rename the release pipeline **Hello world**.
 
     > [!div class="mx-imgBorder"] 
-    > ![rename release pipeline](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
+    > ![rename release pipeline](media/get-started-designer/rename-release-definition-tfs-2018-2.png)
     >   
 
 16. Save the release pipeline.
@@ -713,11 +713,11 @@ Define the process for running the script in two stages.
 
 9. Rename the stage **QA**.
 
-   ![rename release environment](_img/get-started-designer/rename-release-environment.png)
+   ![rename release environment](media/get-started-designer/rename-release-environment.png)
 
 10. **Clone** the **QA** stage.
 
-    ![clone-release-environment](_img/get-started-designer/clone-release-environment.png)
+    ![clone-release-environment](media/get-started-designer/clone-release-environment.png)
 
     Leave **Automatically approve** and **Deploy automatically...** selected, and select **Create**.
 
@@ -725,7 +725,7 @@ Define the process for running the script in two stages.
 
 12. Rename the release pipeline **Hello world**.
 
-    ![rename release pipeline](_img/get-started-designer/rename-release-definition.png)
+    ![rename release pipeline](media/get-started-designer/rename-release-definition.png)
 
 13. Save the release pipeline.
 
@@ -748,20 +748,20 @@ Run the script in each stage.
 1. Create a new release.
 
    > [!div class="mx-imgBorder"] 
-   > ![create release](_img/get-started-designer/create-release-azure-devops-newnavon.png)
+   > ![create release](media/get-started-designer/create-release-azure-devops-newnavon.png)
 
    When **Create new release** appears, select **Create**.
 
 2. Open the release that you just created.
 
    > [!div class="mx-imgBorder"] 
-   > ![release created](_img/get-started-designer/release-created-azure-devops-newnavon.png)
+   > ![release created](media/get-started-designer/release-created-azure-devops-newnavon.png)
    >
  
 3. View the logs to get real-time data about the release.
 
    > [!div class="mx-imgBorder"] 
-   > ![release logs](_img/get-started-designer/release-logs-azure-devops-newnavon.png)
+   > ![release logs](media/get-started-designer/release-logs-azure-devops-newnavon.png)
    >
 
    ::: moniker-end
@@ -770,17 +770,17 @@ Run the script in each stage.
 
 4. Create a new release.
 
-   ![create release](_img/get-started-designer/create-release-tfs-2018-2.png)
+   ![create release](media/get-started-designer/create-release-tfs-2018-2.png)
 
    When **Create new release** appears, select **Create** (TFS 2018.2) or **Queue** (TFS 2018 RTM).
 
 5. Open the release that you just created.
 
-   ![release created](_img/get-started-designer/release-created-tfs-2018-2.png)
+   ![release created](media/get-started-designer/release-created-tfs-2018-2.png)
 
 6. View the logs to get real-time data about the release.
 
-   ![release logs](_img/get-started-designer/release-logs-tfs-2018-2.png)
+   ![release logs](media/get-started-designer/release-logs-tfs-2018-2.png)
 
    ::: moniker-end
 
@@ -788,15 +788,15 @@ Run the script in each stage.
 
 7. Create a new release.
 
-   ![create release](_img/get-started-designer/create-release.png)
+   ![create release](media/get-started-designer/create-release.png)
 
 8. Open the release that you just created.
 
-   ![release created](_img/get-started-designer/release-created.png)
+   ![release created](media/get-started-designer/release-created.png)
 
 9. View the logs to get real-time data about the release.
 
-   ![release logs](_img/get-started-designer/release-logs.png)
+   ![release logs](media/get-started-designer/release-logs.png)
 
    ::: moniker-end
 
@@ -833,7 +833,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![release script step final log](_img/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
+> ![release script step final log](media/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
 >
 
 ::: moniker-end
@@ -841,14 +841,14 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"] 
-> ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
+> ![release script step final log](media/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
 >
    
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-![release script step final log](_img/get-started-designer/release-script-step-final-log.png)
+![release script step final log](media/get-started-designer/release-script-step-final-log.png)
 
 ::: moniker-end
 
@@ -919,14 +919,14 @@ If your pipeline has a pattern that you want to replicate in other pipelines, cl
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions-newnav.png)
+> ![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions-newnav.png)
 >
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
+![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
 ::: moniker-end
 
@@ -951,14 +951,14 @@ If you're editing a build pipeline and you want to test some changes that are no
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![save-as-draft](_img/get-started-designer/save-as-draft-newnav.png)
+> ![save-as-draft](media/get-started-designer/save-as-draft-newnav.png)
 >
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![save-as-draft](_img/get-started-designer/save-as-draft.png)
+![save-as-draft](media/get-started-designer/save-as-draft.png)
 
 ::: moniker-end
 
@@ -971,14 +971,14 @@ You can edit and test your draft as needed.
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![edit draft](_img/get-started-designer/edit-draft-newnav.png)
+> ![edit draft](media/get-started-designer/edit-draft-newnav.png)
 >
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-![edit draft](_img/get-started-designer/edit-draft.png)
+![edit draft](media/get-started-designer/edit-draft.png)
 
 ::: moniker-end
 
@@ -991,14 +991,14 @@ When you're ready you can publish the draft to merge the changes into your build
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![publish draft](_img/get-started-designer/publish-draft-newnav.png)
+> ![publish draft](media/get-started-designer/publish-draft-newnav.png)
 >
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![publish draft](_img/get-started-designer/publish-draft.png)
+![publish draft](media/get-started-designer/publish-draft.png)
 
 ::: moniker-end
 

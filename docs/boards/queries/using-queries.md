@@ -17,7 +17,7 @@ ms.date: 10/16/2019
 
 # Create and save managed queries with the query editor
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
@@ -37,11 +37,11 @@ In this article you'll learn:
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 
 <a id="flat-list-query"/>
@@ -57,21 +57,21 @@ The following example shows how to find all closed bugs by modifying the
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
    > [!div class="mx-imgBorder"]  
-   > ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
+   > ![Run Active bugs query](media/view-run-queries/run-active-bugs.png)  
 
    > [!TIP]  
    > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
 1. Edit the query to find closed bugs and then run the query. 
-   Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects). 
 
    > [!div class="mx-imgBorder"]
-   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
+   > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png) 
 
 2. Save the query to your **My Queries** folder.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Save As query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+   > ![Save As query dialog, new experience](media/view-run-queries/save-as-new-exp.png)  
 
    To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
 
@@ -81,19 +81,19 @@ The following example shows how to find all closed bugs by modifying the
 
 1. Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
 
-   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
+   ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)  
 
    > [!TIP]  
    > If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
 1. Edit the query to find closed bugs and then run the query. 
-   Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
+   Use ![Insert new filter line](media/3.png) to insert a clause above the current clause. Use ![Remove this filter line](media/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).      
 	
-   ![Web portal, Queries page, Editor view of a Flat List Query](_img/query-active-bugs-editor-vso.png)  
+   ![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)  
 
 2. Save the query to your **My Queries** folder.  
 	
-   ![Save Query As](_img/6.png)  
+   ![Save Query As](media/6.png)  
 
    To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
 
@@ -108,13 +108,13 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Add new query, new experience](_img/view-run-queries/new-query-new-exp.png)  
+> ![Add new query, new experience](media/view-run-queries/new-query-new-exp.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-![Queries page, Choose New query from the drop down menu](_img/using-queries-new-query-ts.png)  
+![Queries page, Choose New query from the drop down menu](media/using-queries-new-query-ts.png)  
 
 ::: moniker-end  
 
@@ -126,7 +126,7 @@ You can start a fresh, new query from the **Queries** tab in the web portal or t
 You create a query by defining one or more clauses. Each clause defines a filter criteria for a single field. Choose **Add new clause** to add another clause and then choose the **Field**, **Operator**, and **Value** for that clause.  
 
 > [!div class="mx-imgBorder"]  
-> ![Add new query, new experience](_img/using-queries/define-clause.png)  
+> ![Add new query, new experience](media/using-queries/define-clause.png)  
 
 For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the <strong>@Me</strong> macro which represents your user identity.
 
@@ -150,8 +150,7 @@ For a quick reference of the operators available based on the field data type, s
 
 All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
 
-> [!TIP]
-> To view the WIQL syntax for a query, and how parenthesis are used to group clauses, install the [Marketplace Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). This extension supports viewing the WIQL syntax and exporting it to a WIQL file for use in REST API calls. To learn more, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
+[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
 ### Checklist for how to define a query clause
 
@@ -169,7 +168,7 @@ All clauses you add are added as an **And** statement. Choose **Or** to change t
 
 5. To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
 
-	You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](_img/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](_img/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](_img/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](_img/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
+	You can add a clause to the end of the query, insert a clause after an existing clause (![insert clause icon](media/query-fields-operators-values-variables/IC588311.png)), and remove (![remove clause icon](media/query-fields-operators-values-variables/IC588312.png)), group (![group clause icon](media/query-fields-operators-values-variables/IC588313.png)), and ungroup (![ungroup clause icon](media/query-fields-operators-values-variables/IC588314.png)) clauses as needed.
 
 <a id="and-or" /> 
 
@@ -195,9 +194,9 @@ As the following examples show, the grouped clauses are translated to the corres
 > [!div class="mx-tdCol2BreakAll"]
 > |Query | Grouped clauses|Logical expression|
 > |---|---|---|
-> |1| ![ ](_img/using-queries/and-or-clause-no-grouping.png)|![ ](_img/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |2| ![ ](_img/using-queries/and-or-clause-with-grouping.png)|![ ](_img/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |3| ![ ](_img/using-queries/and-or-clause-reverse-grouping.png)|![ ](_img/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+> |1| ![ ](media/using-queries/and-or-clause-no-grouping.png)|![ ](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |2| ![ ](media/using-queries/and-or-clause-with-grouping.png)|![ ](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |3| ![ ](media/using-queries/and-or-clause-reverse-grouping.png)|![ ](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
 - **Query 1**: AND State=Active OR Assigned to @Me  
@@ -205,15 +204,15 @@ These queries return work items that are type Bug and meet the following logical
 - **Query 3**: OR (State=Active AND Assigned to @Me)  
 
 
-To group one or more clauses, select them and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
 
 > [!div class="mx-imgBorder"]  
-> ![Web portal, Group Selected Query Clauses](_img/view-run-queries/group-clauses.png)  
+> ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../_img/icons/group-clauses-icon.png) group clauses icon.
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
 
 > [!div class="mx-imgBorder"]  
-> ![Group multiple query clauses](_img/using-queries/multiple-clauses.png)
+> ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
 
 
 If your query results don't return expected results, follow these steps: 
@@ -228,31 +227,31 @@ If your query results don't return expected results, follow these steps:
 
 ## Ungroup a clause
 
-To ungroup a clause, choose the ![ ](../_img/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+To ungroup a clause, choose the ![ ](../media/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 
 ## Use a tree query to view hierarchies  
 
-Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) nodes to focus on different parts of the tree.  
+Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](media/13.png)) or collapse (![Collapse node, web portal](media/14.png)) nodes to focus on different parts of the tree.  
 
 ::: moniker range=">= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query, new experience](_img/view-run-queries/tree-query-new-exp.png)  
+> ![Results List Showing a Tree Query, new experience](media/view-run-queries/tree-query-new-exp.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query, tfs experience](_img/view-run-queries/tree-query-view-tfs.png)  
+> ![Results List Showing a Tree Query](media/view-run-queries/tree-query-view-tfs.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-![Results List Showing a Tree Query](_img/12.png)  
+![Results List Showing a Tree Query](media/12.png)  
 
 ::: moniker-end  
 
@@ -261,13 +260,13 @@ Define the filter criteria for both parent and child work items. To find linked 
 ::: moniker range=">= tfs-2017"  
 
 > [!div class="mx-imgBorder"]  
-> ![Tree Query, editor](_img/view-run-queries/tree-query-editor-s136.png)  
+> ![Tree Query, editor](media/view-run-queries/tree-query-editor-s136.png)  
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2015"  
 
-![Tree Query, editor](_img/15.png)  
+![Tree Query, editor](media/15.png)  
 
 ::: moniker-end  
 
@@ -279,22 +278,22 @@ Define the filter criteria for both parent and child work items. To find linked 
 
 ## Use direct links to view dependencies
 
-Use the direct links query (![Direct Links Query](_img/16.png)) to track work items that depend on other tracked work, such as tasks, bugs, issues, or features. For example, you can view backlog items that depend on other items being implemented or a bug being fixed. 
+Use the direct links query (![Direct Links Query](media/16.png)) to track work items that depend on other tracked work, such as tasks, bugs, issues, or features. For example, you can view backlog items that depend on other items being implemented or a bug being fixed. 
 
-![Direct Links Query Results](_img/17.png)
+![Direct Links Query Results](media/17.png)
 
 Use the direct links query to track dependencies your team has that other teams work on, or manage commitments your team has made to other teams. Specify the filter criteria for both top and linked work items, and select the types of links used to filter the dependencies. 
 
 ::: moniker range=">= tfs-2017"  
 
 > [!div class="mx-imgBorder"]  
-> ![Direct Links Query, editor](_img/view-run-queries/direct-query-editor-s136.png)  
+> ![Direct Links Query, editor](media/view-run-queries/direct-query-editor-s136.png)  
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-![Direct Links Query Editor](_img/18.png)  
+![Direct Links Query Editor](media/18.png)  
 
 ::: moniker-end  
 
@@ -319,7 +318,7 @@ By default, shared queries and new queries are scoped to the current project. Ho
 
 To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
@@ -334,7 +333,7 @@ To list work items defined in two or more projects, checkmark **Query across pro
 
 With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries-query-across-select-projects.png" alt="Azure Boards and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
@@ -347,7 +346,7 @@ The *Team Project* field becomes available only after you check  **Query across 
 
 To find all features created in all projects within the last 30 days, remove the <strong>Team Project=@Project</strong> clause from the query.  
 
-<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="media/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
 
@@ -392,6 +391,6 @@ That's the basics about using queries. For an index of query examples, see [Crea
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
  
  

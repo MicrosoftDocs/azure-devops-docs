@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 12/06/2019
+ms.date: 1/10/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -481,12 +481,14 @@ jobs:
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]
   environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
   strategy:
-    runOnce:
+    runOnce:    #rolling, canary are the other strategies that are supported
       deploy:
         steps:
         - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
@@ -645,14 +647,18 @@ variables:
 
 ::: moniker range="> azure-devops-2019"
 
-You can export reusable sections of your pipeline to separate files.
-These separate files are known as templates.
-Azure Pipelines supports these four kinds of templates:
+You can export reusable sections of your pipeline to a separate file. 
+These separate files are known as templates. 
+Azure Pipelines supports four kinds of templates:
 
+Azure Pipelines supports four kinds of templates:
 - [Stage](#stage-templates)
 - [Job](#job-templates)
 - [Step](#step-templates)
 - [Variable](#variable-templates)
+
+You can also use templates to to control what is allowed in a pipeline and to define how parameters can be used.
+- [Parameter](#parameter-templates)
 
 ::: moniker-end
 
@@ -936,6 +942,58 @@ steps:
 
 ---
 
+### Parameter templates
+
+You can use templates to define how parameters can be used. 
+
+# [Schema](#tab/schema)
+
+In the main pipeline:
+
+```yaml
+parameters:
+- name: string          # name of the parameter; required
+  type: enum            # data types, see below
+  default: any          # default value; if no default, then the parameter MUST be given by the user at runtime
+  values: [ string ]    # allowed list of values (for some data types)
+  secret: bool          # whether to treat this value as a secret; defaults to false
+```
+
+And in the extended template:
+
+```yaml
+parameters: { string: any }   # expected parameters
+```
+See all [parameter data types](process/templates.md#parameter-data-types). 
+
+# [Example](#tab/example)
+
+In this example, the pipeline using the template supplies the values to fill into the template.
+
+```yaml
+# File: simple-param.yml
+parameters:
+- name: yesNo # name of the parameter; required
+  type: boolean # data type of the parameter; required
+  default: false
+
+steps:
+- script: echo ${{ parameters.yesNo }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+    template: simple-param.yml
+    parameters:
+        yesNo: false # set to a non-boolean value to have the build fail
+```
+
+See [templates](process/templates.md) for more about working with templates.
+
 ::: moniker-end
 
 ## Resources
@@ -961,7 +1019,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable pipeline-completion triggers.
+You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
 
 # [Schema](#tab/schema)
 
@@ -1027,7 +1085,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the download keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
 
 ### Container resource
 

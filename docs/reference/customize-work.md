@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Customize your work tracking experience 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize projects, which impacts all teams, depends on the process model you use.  
 
@@ -39,13 +39,13 @@ Each project provides a number of shared resources that support all teams added 
 > [!div class="mx-tdCol2BreakAll"]
 > | Area path pick lists | Sprint/iteration pick lists |
 > |-------------|----------| 
-> |Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../boards/sprints//define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../user-guide/_img/features/alm-feature-define-sprints.png) |
+> |Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../user-guide/media/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../boards/sprints//define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../user-guide/media/features/alm-feature-define-sprints.png) |
  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Shared queries | Tags | 
 > |-------------|----------| 
-> |Open shared queries or create your own<br/>query using the [query editor](../boards/queries/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
+> |Open shared queries or create your own<br/>query using the [query editor](../boards/queries/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](media/customize-work-shared-queries-min.png) |[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](media/alm-feature-tags.png) |   
  
 
 <a id="process-models"></a>
@@ -72,79 +72,79 @@ The following table summarizes the differences between the three supported proce
 <tbody valign="top" align="center">
 <tr>
 <td align="left">WYSIWYG editing</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create inherited custom processes</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td></td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Create custom process templates (see note 1)</td>
 <td> </td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Inherit changes in system processes (Agile, Scrum, CMMI)</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Updated process changes automatically apply to projects</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 </tr>
 <tr>
 <td align="left">Basic customizations supported (fields, workflow, work item types, backlog levels)</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Global lists</td>
 <td>Picklists</td>
 <td>(see note 2)</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Advanced customizations supported (custom link types, team fields, global worflow)</td>
 <td> </td>
 <td> </td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Use the <a href="witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md" data-raw-source="[**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)"><strong>witadmin</strong> command-line tools</a> to edit projects</td>
 <td> </td>
 <td> </td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">REST API (read)</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left">REST API (write)</td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td> </td>
 <td> </td>
 </tr>
@@ -165,7 +165,7 @@ The following table summarizes the differences between the three supported proce
 For Azure DevOps Server 2019, you have a choice of process models. When you create a project collection, you&#39;ll need to choose between <strong>XML</strong> (On-premises XML process model) and <strong>Inheritance</strong> (Inheritance process model), as shown in the following dialog. 
 
 > [!div class="mx-imgBorder"]  
-> ![Create Team Project Collection wizard, Collection Name dialog](_img/azd-2019/configure-new-collection-inheritance.png)   
+> ![Create Team Project Collection wizard, Collection Name dialog](media/azd-2019/configure-new-collection-inheritance.png)   
 
 > [!IMPORTANT]  
 > The choice you make is not reversible. Once the collection is created, you'll only be able to customize work tracking objects using the model selected. Also, there is no way to migrate existing project collections that use the On-premises XML process model to the Inheritance process model. 
@@ -241,7 +241,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 
 Several WITs support the test experience within the web portal **Test** pages and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
-  ![Test management work item types](../boards/work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
+  ![Test management work item types](../boards/work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
 See the following resources for additional usage and customization information:
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2019
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 
@@ -60,12 +60,12 @@ To fix this, take the following actions:
     For example, the following shows that a user story is a child of another user story. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Nested user stories](_img/resolve/nested-user-stories.png)  
+	> ![Nested user stories](media/resolve/nested-user-stories.png)  
 	
 	As another example, the following shows that a bug is a child of a user story. Because the team has configured their backlog to display user stories and bugs at the same level (Requirements category), this corresponds to a nested item that disables the ordering feature.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Nested user story and bug](_img/resolve/nested-user-story-bug.png)  
+	> ![Nested user story and bug](media/resolve/nested-user-story-bug.png)  
 	
 3.	Remove all parent-child links that exist among nested items of the same work item type or same category, or change the link to 'Related'
 
@@ -83,7 +83,7 @@ Instead of nesting requirements, bugs, and tasks, we recommend that you maintain
 
 Use the Feature work item type when you want to group user stories (Agile), issues (Basic), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](organize-backlog.md), which creates parent-child links in the background.
 
-![Create work items using different hierarchy](../../reference/_img/create-hierarchy-with-different-wits.png) 
+![Create work items using different hierarchy](../../reference/media/create-hierarchy-with-different-wits.png) 
 
 <a id="nested" > </a>
 
@@ -97,12 +97,12 @@ As mentioned previously, [each team can choose how they want to track bugs](../.
 If you choose to track bugs as requirements, bugs should only be nested under the Feature level.
 
 > [!div class="mx-imgBorder"]  
-> ![Link bugs like requirements](_img/resolve/bugs-as-requirements.png)  
+> ![Link bugs like requirements](media/resolve/bugs-as-requirements.png)  
 
 If you choose to track bugs as tasks, bugs should only be nested under the requirements level.
 
 > [!div class="mx-imgBorder"]  
-> ![Link bugs like tasks](_img/resolve/bugs-as-tasks.png)  
+> ![Link bugs like tasks](media/resolve/bugs-as-tasks.png)  
 
 <a id="leaf-nodes" > </a>  
 
@@ -127,11 +127,11 @@ As shown in the following images, the third user story, *Interim save on long fo
 
 **All bugs and requirements appear on the backlog**  
 
-![Child bug appears on backlog ](_img/resolve/bugs-appear-on-backlog.png)  
+![Child bug appears on backlog ](media/resolve/bugs-appear-on-backlog.png)  
 
 **Only leaf nodes appear on the Kanban board**  
 
-![Kanban board, leaf node bug appears](_img/resolve/bugs-appear-on-board.png)  
+![Kanban board, leaf node bug appears](media/resolve/bugs-appear-on-board.png)  
 
 ::: moniker-end
 
@@ -144,14 +144,14 @@ However, if you create parent-child links between a requirement and a bug, and t
 
 **Hierarchy of items assigned to a sprint backlog**  
 
-![Sprint backlog query shows linked bug and task ](_img/resolve/sprint-backlog-hierarchy.png)   
+![Sprint backlog query shows linked bug and task ](media/resolve/sprint-backlog-hierarchy.png)   
 
 **Only leaf nodes appear on sprint backlogs**  
 
-![Sprint backlog, leaf node task ](_img/resolve/sprint-backlog-leaf-only.png)  
+![Sprint backlog, leaf node task ](media/resolve/sprint-backlog-leaf-only.png)  
 
 **Only leaf nodes appear on taskboards**   
-![Sprint board, leaf node task appears](_img/resolve/bugs-appear-on-taskboard.png)  
+![Sprint board, leaf node task appears](media/resolve/bugs-appear-on-taskboard.png)  
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 
 
 

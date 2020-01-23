@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Rebuild the client cache
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 
 > [!NOTE]    
@@ -28,7 +28,7 @@ To prevent workspace errors from occurring during version control or build opera
 > [!IMPORTANT]
 > To avoid server performance issues, you should not run this command during normal operating hours.  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
   
  **Requirements**  
   

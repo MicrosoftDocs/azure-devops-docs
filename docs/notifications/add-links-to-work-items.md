@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use #ID to link to work items  
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 The **#ID** control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
 
@@ -60,7 +60,7 @@ Enter **#** to trigger the **#ID** work item picker in your pull request comment
 
 Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
 
-<img src="_img/ALM_PRD_ID_PR.png" alt="Pull request comment area, enter # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
+<img src="media/ALM_PRD_ID_PR.png" alt="Pull request comment area, enter # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
 
 
 ## Link to work items in pull requests, comments, and commits

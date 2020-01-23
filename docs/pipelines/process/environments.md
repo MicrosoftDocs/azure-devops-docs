@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Create and target an environment
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 Environment represents a collection of resources such as namespaces within Kubernetes clusters, Azure Web Apps, virtual machines, databases, which can be targeted by deployments from a pipeline. Typical examples of environments include *Dev, Test, QA, Staging and Production.*
 
@@ -27,7 +27,7 @@ The advantages of using environments include the following.
 
 ## Resources
 
-While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. Currently, only [Kubernetes resource](environments-kubernetes.md) type is supported, with the roadmap of environments including support for other resources such as virtual machines, databases and more.
+While environment at its core is a grouping of resources, the resources themselves represent actual deployment targets. The [Kubernetes resource](environments-kubernetes.md) and [virtual machine resource](environments-virtual-machines.md) types are currently supported.
 
 <a name="creation"></a>
 
@@ -38,7 +38,7 @@ While environment at its core is a grouping of resources, the resources themselv
 2. In your project, navigate to the Pipelines page. Then choose Environments and click on **Create Environment**.
 
    > [!div class="mx-imgBorder"]
-   > ![Environments](_img/environments-nav.png)
+   > ![Environments](media/environments-nav.png)
 
 3. After keying in the name of an environment (required) and the description (optional), one can choose to either create an environment with no resources or create an environment with a Kubernetes resource. Note that resources can be added to an existing environment later as well.
 
@@ -60,7 +60,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
   - deployment: DeployWeb
     displayName: deploy Web App
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'Ubuntu-latest'
     # creates an environment if it doesn't exist
     environment: 'smarthotel-dev'
     strategy:
@@ -103,7 +103,7 @@ strategy:
 All  environments targeted by deployment jobs of a specific run of a pipeline can be found under the *Environments* tab of pipeline run details.
 
   > [!div class="mx-imgBorder"]
-  > ![Environments in run details](_img/environments-run.png)
+  > ![Environments in run details](media/environments-run.png)
 
 ## Approvals
 
@@ -121,13 +121,13 @@ The deployment history view within environments provides the following advantage
 1. View jobs from all pipelines that are targeting a specific environment. Consider the scenario where two microservices, each having its own pipeline, are deploying to the same environment. In that case, the deployment history listing helps identify all pipelines that are impacting this environment and also helps visualize the sequence of deployments by each of these pipelines.
 
    > [!div class="mx-imgBorder"]
-   > ![Deployment history](_img/environments-deployment-history.png)
+   > ![Deployment history](media/environments-deployment-history.png)
 
 
 2. Drilldown into the job details reveals the listing of commits and work items that were newly deployed to the environment.
 
    > [!div class="mx-imgBorder"]
-   > ![Commits under deployment history](_img/environments-deployment-history-commits.png)
+   > ![Commits under deployment history](media/environments-deployment-history-commits.png)
 
 ## Security
 

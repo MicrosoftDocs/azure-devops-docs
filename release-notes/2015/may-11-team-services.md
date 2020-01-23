@@ -26,23 +26,23 @@ The latest release of the SDK for Java (version 0.9.3) collects performance coun
 
 From the Overview blade, click Servers to see performance counters.
 
-![Performance counters for Java apps](_img/5_11_01.png)
+![Performance counters for Java apps](media/5_11_01.png)
 
 If you want to see other performance counters, you can edit the Application Insights configuration file and choose from any counters exposed by the JMV or Windows. The information about these performance counters will be visible as custom metrics in Metric Explorer.
 
-![Custom metrics for performance counters](_img/5_11_02.png)
+![Custom metrics for performance counters](media/5_11_02.png)
 
 ## Unhandled exceptions in Java apps
 
 Unhandled exceptions are displayed in the same way as custom exceptions. To see them, click Failures on the Overview blade.
 
-![Unhandled exceptions in Java apps](_img/5_11_03.png)
+![Unhandled exceptions in Java apps](media/5_11_03.png)
 
 ## Drag-across to select a time range
 
 You can now drag to select a specific time range within a chart on the ASP.NET overview blade. Grab the small triangles near the x-axis:
 
-![Fine time selection process](_img/5_11_04.png)
+![Fine time selection process](media/5_11_04.png)
 
 A zoomed-in view of this region appears in a child Metrics Explorer blade.
 
