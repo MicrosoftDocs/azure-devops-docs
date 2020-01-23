@@ -329,14 +329,14 @@ The two main ways to group work items is by area path and by parenting them unde
 - 
 To use the following tools, teams must subscribe to area paths. 
 
-- [Boards> all tools](boards/kanban-overview.md) 
-- [Backlogs> all tools](backlogs/backlogs-overview.md) 
-- [Sprints> all tools](sprints/scrum-overview.md) 
-- [Analytics> all](#analytics) and [Rollup](#rollup) 
-- Portfolio planning tools
-	- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views
-	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items 
-	- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of a selected team epic and features with the ability to drill down into child items 
+- [Boards> all tools](boards/kanban-overview.md)  
+- [Backlogs> all tools](backlogs/backlogs-overview.md)  
+- [Sprints> all tools](sprints/scrum-overview.md)  
+- [Analytics> all](#analytics) and [Rollup](#rollup)  
+- Portfolio planning tools   
+	- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views  
+	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items  
+	- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of a selected team epic and features with the ability to drill down into child items  
 	- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
   
 - You create hiearchical area paths to support sub categories of features and product areas 
