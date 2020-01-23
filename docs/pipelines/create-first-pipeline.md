@@ -53,9 +53,11 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 7. A new run is started. Wait for the run to finish.
 
-#### [.Net](#tab/net)
+Learn more about [working with Java](ecosystems/java.md) in your pipeline.
 
-### Get the .Net Core sample code
+#### [.NET](#tab/net)
+
+### Get the .NET Core sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -63,7 +65,7 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-### Create your first .Net Core pipeline
+### Create your first .NET Core pipeline
 
 [!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
 
@@ -81,6 +83,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
+Learn more about [working with .NET Core](ecosystems/dotnet-core.md) in your pipeline.
 
 #### [Python](#tab/python)
 
@@ -110,6 +113,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
 
+Learn more about [working with Python](ecosystems/python.md) in your pipeline.
 
 #### [JavaScript](#tab/javascript)
 
@@ -140,6 +144,8 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 8. A new run is started. Wait for the run to finish.
 
 When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
 --- 
 
