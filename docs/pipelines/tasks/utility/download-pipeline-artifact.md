@@ -44,7 +44,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 | `path`<br/>Destination Directory | (Required) Directory to download the artifact files. Can be relative to the pipeline workspace directory or absolute. If multi-download option is applied (by leaving an empty artifact name), a sub-directory will be created for each. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). <br/>Default value: $(Pipeline.Workspace) <br/>Argument aliases: `targetPath`, `downloadPath` |
 
 > [!NOTE]
-> The keyword shortcuts can be found [here](../../yaml-schema.md#Download).
+> The keyword shortcuts can be found [here](../../yaml-schema.md#download).
 
 ## Examples
 
