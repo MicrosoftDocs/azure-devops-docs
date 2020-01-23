@@ -22,7 +22,7 @@ Use this task in a build or release pipeline to build a machine image using Pack
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PackerBuildV1.md)]
+[!INCLUDE [temp](../includes/yaml/PackerBuildV1.md)]
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Use this task in a build or release pipeline to build a machine image using Pack
 <tr><td>Skip temporary file cleanup during deprovision</td><td>(Optional) During deprovisioning of VM, skip clean-up of temporary files uploaded to VM. Refer <a href="https://www.packer.io/docs/builders/azure.html#skip_clean" data-raw-source="[here](https://www.packer.io/docs/builders/azure.html#skip_clean)">here</a></td></tr>
 <tr><td>Image URL</td><td>(Optional) Provide a name for the output variable which will store generated machine image url.</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 

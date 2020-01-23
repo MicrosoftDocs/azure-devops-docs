@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Review team activities to support useful reports 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 > [!IMPORTANT]

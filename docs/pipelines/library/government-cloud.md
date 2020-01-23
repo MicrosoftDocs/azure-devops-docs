@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2017  | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 [Azure Government Clouds](https://azure.microsoft.com/overview/clouds/government/)
@@ -41,4 +41,4 @@ You can then use the service connection in your [build and release pipeline task
 * [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -16,7 +16,7 @@ ms.date: 08/07/2019
 
 # Feature progress rollup sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
  
 This article shows you how to display the percentage complete by rollup of Story Points  for a given set of active Features. An example is shown in the following image. 
 
@@ -24,7 +24,7 @@ This article shows you how to display the percentage complete by rollup of Story
 > ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 > 
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 
@@ -33,7 +33,7 @@ This article shows you how to display the percentage complete by rollup of Story
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -55,7 +55,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -75,7 +75,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 
@@ -104,7 +104,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
 ### Expand Descendants column
 
@@ -141,7 +141,7 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 
 Some of the new Pivoted StateCategory columns will have null values. For easier reporting, replace the nulls with zeroes. 
 
-[!INCLUDE [temp](_shared/sample-replace-nulls.md)]
+[!INCLUDE [temp](includes/sample-replace-nulls.md)]
 
 Repeat for every Pivoted StateCategory column.
 
@@ -164,7 +164,7 @@ Repeat for every Pivoted StateCategory column.
 1. Select **Transform** menu.
 1. Select **Data Type** and select Percentage.
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -192,7 +192,7 @@ The example report displays.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -204,7 +204,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -226,7 +226,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -246,8 +246,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

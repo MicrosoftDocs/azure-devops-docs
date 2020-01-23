@@ -16,11 +16,11 @@ ms.date: 02/11/2019
 
 # Add a custom work item type (Inheritance process)     
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 You use different work item types (WITs) to plan and track different types of work. The main reason you add a custom WIT is to customize the web form and workflow states to meet specific business use cases. Or, you can customize an existing WIT. Your project contains 9 or more WITs that you can customize, based on the process used to create your project.  
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 For example, you may want to capture customer issues in a custom WIT labeled Ticket.   
 
@@ -34,11 +34,11 @@ To learn more about what you can customize, see [About process customization and
 > To customize a single project, always start by [creating an inherited process and migrating project(s) to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/create-inherited-process.md)] 
+[!INCLUDE [temp](../includes/create-inherited-process.md)] 
 
 <a id="add-wit">  </a>
 ## Add a work item type
@@ -120,7 +120,7 @@ We recommend that you create a test project and apply your customized  inherited
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png)  
 
 
-[!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
+[!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
 
 ## Try this next

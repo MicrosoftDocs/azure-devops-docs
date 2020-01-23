@@ -24,7 +24,7 @@ In just a few steps you can build and deploy your Java app to Azure. This works 
 
 Upload your code to Azure Pipelines or your on-premises Team Foundation Server. Either push your code to Git or check in your code to TFVC.
 
-[!INCLUDE [temp](_shared/java-web-app-sample-link.md)]
+[!INCLUDE [temp](includes/java-web-app-sample-link.md)]
 
 ## Enable Java, Apache Tomcat, and FTP for your Azure Web App
 
@@ -34,7 +34,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 3. Click the deployment credentials part (outlined in red below). Create a user name and password. Click Save. If you previously enabled publishing for a web app, you don't need to do this step.
 
-   ![Create FTP deployment credentials](_shared/media/deployment-credentials.png)
+   ![Create FTP deployment credentials](media/deployment-credentials.png)
 
 ## Create the pipeline
 
@@ -43,7 +43,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
-<img src="~/pipelines/_shared/media/browse-to-team-project.png" alt="Browse to project">
+<img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
 <ul>
@@ -56,7 +56,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
-<img src="~/pipelines/_shared/media/create-new-build-definition.png" alt="Build tab">
+<img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
 <p>
 </div>
 </li>
@@ -116,7 +116,7 @@ On the Build tab, add these tasks:
         </tr>
 </table>
 
-[!INCLUDE [temp](../_shared/definition-finish-and-test.md)]
+[!INCLUDE [temp](../includes/definition-finish-and-test.md)]
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 
@@ -124,7 +124,7 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/java-web-app-sample-qa.md)]
+[!INCLUDE [temp](includes/java-web-app-sample-qa.md)]
 
 <a name="azure_site_ftp"></a>
 ### I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure Web App?
@@ -148,12 +148,12 @@ A: Yes.
 [Learn about Azure Pipelines](../../../release/index.md)
 
 
-[!INCLUDE [temp](../../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../../includes/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

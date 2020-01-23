@@ -12,9 +12,9 @@ ms.date: 01/14/2018
 
 ## Features
 
-[!INCLUDE [sprint-146-update-links](../_shared/wiki/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](../includes/wiki/sprint-146-update-links.md)]
 
-[!INCLUDE [sprint-146-update](../_shared/wiki/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](../includes/wiki/sprint-146-update.md)]
 
 ## Next steps
 

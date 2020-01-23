@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 # Stories Overview Report (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Stories Overview report lists all user stories, filtered by area and iteration and in order of importance. For information about how to open this report, refresh the data, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   

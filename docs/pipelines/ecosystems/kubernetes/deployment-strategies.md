@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 ---
 
 # Deployment strategies for Kubernetes in Azure Pipelines
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) currently supports canary deployment strategy. This document explains the guidelines and best practices around the usage of this task for setting up canary deployments to Kubernetes.
 

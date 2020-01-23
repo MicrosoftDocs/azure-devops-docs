@@ -15,13 +15,13 @@ author: steved0x
 
 # Troubleshoot Build and Release
 
-[!INCLUDE [temp](_shared/version.md)]
+[!INCLUDE [temp](includes/version.md)]
 
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 

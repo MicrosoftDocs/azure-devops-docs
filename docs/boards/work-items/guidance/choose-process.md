@@ -16,7 +16,7 @@ ms.date: 09/18/2019
 
 # Choose a process 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
@@ -32,7 +32,7 @@ For details on creating a project using the process of your choice, see [Create 
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
 
 The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
@@ -531,7 +531,7 @@ If you need to permanently delete work items, see [Remove or delete work items](
 
 The following WITs are added to all processes except the Basic process.  
 
-  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](media/ALM_PT_WITS_Shared.png)
+  ![Work item types used by Test Plans, Microsoft Test Managers, My Work, and Feedback](media/ALM_PT_WITS_shared.png)
 
 Teams create and work with these types using the corresponding tool: 
 

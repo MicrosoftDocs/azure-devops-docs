@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
@@ -51,7 +51,7 @@ To update the process configuration for a project, you export the XML definition
 
 [![Export ProcessConfig definition file](media/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](media/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](media/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](media/export-process-step-4.png)  
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]  
+[!INCLUDE [temp](../../includes/process-editor.md)]  
 
 <a id="backlog_page">  </a>
 

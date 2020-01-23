@@ -29,20 +29,20 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
       ::: moniker range=">= azure-devops-2019"
     
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed button in Azure Artifacts](../_shared/media/connect-to-feed-azure-devops-newnav.png)
+      >![Connect to feed button in Azure Artifacts](../media/connect-to-feed-azure-devops-newnav.png)
       > 
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
 
-      ![Connect to feed button in Azure Artifacts](../_shared/media/connect-to-feed.png)
+      ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed button in Azure Artifacts](../_shared/media/connect-to-feed.png)
+      ![Connect to feed button in Azure Artifacts](../media/connect-to-feed.png)
 
       ::: moniker-end
 
@@ -57,20 +57,20 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
       ::: moniker range=">= azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed from Azure Artifacts](../_shared/media/npm-azure-devops-newnav.png)
+      >![Connect to feed from Azure Artifacts](../media/npm-azure-devops-newnav.png)
       > 
 
       ::: moniker-end
 
       ::: moniker range="<= tfs-2018"
 
-      ![Connect to feed from Azure Artifacts](../_shared/media/connect-to-feed-npm-registry.png)
+      ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
 
       ::: moniker range=">= tfs-2017 < azure-devops"
 
-      ![Connect to feed from Azure Artifacts](../_shared/media/connect-to-feed-npm-registry.png)
+      ![Connect to feed from Azure Artifacts](../media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
         
@@ -100,7 +100,7 @@ If you are developing on Windows, we recommend that you use `vsts-npm-auth` to f
 
 If you are developing on Linux or Mac, `vsts-npm-auth` is not supported and we recommend generating a token in the following manner for your **_$HOME/.npmrc_**
 
-[!INCLUDE [](../_shared/npm/npmrc.md)]
+[!INCLUDE [](../includes/npm/npmrc.md)]
 
 `vsts-npm-auth` is not supported on TFS or Azure DevOps Server.
 
@@ -142,20 +142,20 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
 
    > [!div class="mx-imgBorder"] 
-   > ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-install-newnav.png)
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-install-newnav.png)
    >
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
    * Registries in my **_.npmrc_**
 
-     ![Add task to build pipeline](../_shared/media/build-definition/registries-in-my-npmrc.png)
+     ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
      > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
    * Registry I select here
 
-     ![Add task to build pipeline](../_shared/media/build-definition/registry-i-select-here.png)
+     ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
    
@@ -183,19 +183,19 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. Select the **npm install** task, then browse to and select your **Working folder with package.json**:
 
-   ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-install.png)
+   ![Add task to build pipeline](../media/build-definition/build-definition-npm-install.png)
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
    * Registries in my **_.npmrc_**
 
-     ![Add task to build pipeline](../_shared/media/build-definition/registries-in-my-npmrc.png)
+     ![Add task to build pipeline](../media/build-definition/registries-in-my-npmrc.png)
 
      > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
    * Registry I select here
 
-     ![Add task to build pipeline](../_shared/media/build-definition/registry-i-select-here.png)
+     ![Add task to build pipeline](../media/build-definition/registry-i-select-here.png)
 
      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
    
@@ -232,12 +232,12 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
    > [!div class="mx-imgBorder"] 
-   > ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
+   > ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase-newnav.png)
    >
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
-   ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-auth-task-file.png)
+   ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
 
    > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 
@@ -265,11 +265,11 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
-    ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-auth-task-phase.png)
+    ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-phase.png)
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
-    ![Add task to build pipeline](../_shared/media/build-definition/build-definition-npm-auth-task-file.png)
+    ![Add task to build pipeline](../media/build-definition/build-definition-npm-auth-task-file.png)
 
     > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../../pipelines/library/service-endpoints.md#sep-npm)
 

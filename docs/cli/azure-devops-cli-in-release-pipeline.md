@@ -16,7 +16,7 @@ ms.date: 06/18/2019
 
 # Azure DevOps CLI in a release pipeline
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 

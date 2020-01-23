@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="azure-devops"
 
@@ -23,7 +23,7 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Create your first pipeline
 
@@ -152,7 +152,7 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ::: moniker range="<= azure-devops-2019"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 

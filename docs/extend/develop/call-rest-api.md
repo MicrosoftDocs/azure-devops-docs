@@ -16,7 +16,7 @@ ms.date: 10/18/2019
 
 To call a REST API from your extension, get the client service first, and then use that to call the API.
 
-[!INCLUDE [rest-api-docs-rollout](../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../includes/rest-api-docs-rollout.md)]
 
 ## Client services
 
@@ -26,7 +26,7 @@ You can find the [full list of available REST clients and their references here]
 
 > You'll have to add the scope `"scopes": ["vso.work"],` to your `vss-extension.json` to use the work item tracking client.
 
-[!INCLUDE [REST](../_shared/procedures/call-rest-api-js.md)]
+[!INCLUDE [REST](../includes/procedures/call-rest-api-js.md)]
 
 ## Try this next
 

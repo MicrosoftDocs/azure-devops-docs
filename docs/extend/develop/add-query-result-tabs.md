@@ -14,7 +14,7 @@ ms.date: 05/15/2018
 
 # Add tabs on query result pages
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
@@ -23,7 +23,7 @@ In this example, we'll add a simple Hello World tab on query results.
 
 ## Create your web page
 
-[!INCLUDE [Web_page](../_shared/procedures/create-web-page.md)]
+[!INCLUDE [Web_page](../includes/procedures/create-web-page.md)]
 
 ## Update your extension manifest
 Update your [extension manifest](../develop/manifest.md) file with the following code:

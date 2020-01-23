@@ -311,7 +311,7 @@ az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

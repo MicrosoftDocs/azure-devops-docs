@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Manual testing permissions and access 
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Azure Test Plans uses an access level called [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web),
 which is available from Azure DevOps.
@@ -74,4 +74,4 @@ To learn more, see [About access levels](../organizations/security/access-levels
 Permissions can be applied at [Project level](../organizations/security/permissions.md#project-level)
 and at [Area path level](../organizations/security/permissions.md#area-path-object-level). 
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

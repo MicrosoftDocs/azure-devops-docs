@@ -15,7 +15,7 @@ ms.date: 12/12/2019
 
 # Allowed address lists and network connections   
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 If your organization use security measures, like a firewall or a proxy server, you need to add certain IP addresses and domain URLs to the **Allow list**. Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot adding and deleting organization users
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ## Permissions
 
@@ -26,13 +26,13 @@ A: To access and manage users at the organization level, you must be a member of
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../../includes/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
 <a name="users-delay"></a>
 
-[!INCLUDE [user-delay](../../_shared/qa-user-delay.md)]
+[!INCLUDE [user-delay](../../includes/qa-user-delay.md)]
 
 ## Visual Studio subscriptions
 
@@ -84,11 +84,11 @@ Follow these instructions to identify if you have Professional users, buy a mont
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users** and filter by access level to show only Professional users.
 
-   ![Sort by Access Level - Professional](media/_shared/sort-by-professional-access-level.png)
+   ![Sort by Access Level - Professional](media/shared/sort-by-professional-access-level.png)
 
 4. Buy a [Visual Studio Professional monthly subscription](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dms.vs-professional-monthly&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=items_2).
 5. Assign your Professional users to the subscription in the [Visual Studio subscriptions administration portal](https://azure.microsoft.com/email/?destination=https%3A%2F%2Fmanage.visualstudio.com%2FSubscribers&m=00000000-0000-0000-0000-000000000000&u=aeo-preview&l=Subscribers).
@@ -103,11 +103,11 @@ The value in **Last Access** is the last date a user accessed any resources or s
 
 <a name="paid-basic-access-join-other-organizations"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-organizations](../../_shared/qa-can-paid-basic-users-join-other-organizations.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-organizations](../../includes/qa-can-paid-basic-users-join-other-organizations.md)]
 
 <a name="feature-access"></a>
 
-[!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
+[!INCLUDE [no-access-existing-features](../../includes/qa-no-access-existing-features.md)]
 
 <a name="stopped-features"></a>
 
@@ -137,7 +137,7 @@ If you're a directory administrator, you can [add users to the directory](https:
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-organization-use-azuread](../../_shared/qa-does-organization-use-azuread.md)]
+[!INCLUDE [does-organization-use-azuread](../../includes/qa-does-organization-use-azuread.md)]
 
 <a name="DeleteFromDirectory"></a>
 
@@ -192,12 +192,12 @@ While not the norm, we have seen it take several hours or even days before this 
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 ## More support
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]

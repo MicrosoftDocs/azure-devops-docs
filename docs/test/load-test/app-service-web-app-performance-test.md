@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Load test with the Azure portal
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Check your web app's performance before you launch it or deploy updates to production by running load tests. 
 That way, you can better assess whether your app is ready for release. Feel more

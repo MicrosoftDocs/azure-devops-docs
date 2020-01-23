@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to start, stop, restart, slot swap,
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureAppServiceManageV0.md)]
+[!INCLUDE [temp](../includes/yaml/AzureAppServiceManageV0.md)]
 
 ::: moniker-end
 

@@ -15,7 +15,7 @@ ms.date: 04/14/2017
 
 # Use team fields instead of area paths to support teams
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 > **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
@@ -30,7 +30,7 @@ Many features available through the web portal for TFS are scoped to a team. Tea
 
 When you customize your project to support team fields, the Team field tab appears in the administration page for the project and each team.
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
+[!INCLUDE [temp](../includes/image-differences.md)] 
 
 <img src="media/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
 
@@ -43,7 +43,7 @@ When you customize your project to support team fields, the Team field tab appea
 
 1. If you aren't a member of the **Project Administrators** group, [get those permissions](../organizations/security/set-project-collection-level-permissions.md).
 
-    [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+    [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]
 
 1. Export the global list for the project collection.
 

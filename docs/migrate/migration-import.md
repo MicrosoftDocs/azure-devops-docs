@@ -15,7 +15,7 @@ ms.date: 12/16/2019
 
 # Validate and import processes
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!Note]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)

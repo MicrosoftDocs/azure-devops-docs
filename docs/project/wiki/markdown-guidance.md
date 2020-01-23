@@ -16,9 +16,9 @@ ms.date: 09/19/2019
 
 # Syntax guidance for basic Markdown usage
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 Here you can find some basic Markdown syntax guidance and specific guidance for using Markdown in Azure DevOps features. You can use both common [Markdown conventions](https://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
 
@@ -82,7 +82,7 @@ You can provide guidance in the following areas using Markdown:
 
 ## Headers
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
@@ -103,7 +103,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 ## Paragraphs and line breaks
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 Make your text easier to read by breaking it up with paragraphs or line breaks.  
 
@@ -152,7 +152,7 @@ Space is added in between paragraphs.
 
 ## Blockquotes
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 Quote previous comments or text to set the context for your comment or text.
 
@@ -174,7 +174,7 @@ Quote blocks of lines of text by using the same level of `>` across many lines.
 
 ## Horizontal rules
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 To add a horizontal rule, add a line that's a series of dashes `---`. The line above the line containing the `---` must be blank.
 
@@ -199,7 +199,7 @@ below
 
 ## Emphasis (bold, italics, strikethrough) 
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)] 
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)] 
 
 You can emphasize text by applying bold, italics, or strikethrough to characters:
 
@@ -346,7 +346,7 @@ Console.WriteLine("Hello, World!");
 
 ## Tables
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning-no-dod.md)]
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has
 a clear name to description mapping. You can format tables in pull requests, wiki, and Markdown files such as README files and Markdown widgets.  
@@ -378,7 +378,7 @@ a clear name to description mapping. You can format tables in pull requests, wik
 
 ## Lists
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 
 Organize related items with lists. You can add ordered lists with numbers, or unordered lists with just bullets.
@@ -445,7 +445,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 In pull request comments and wikis, HTTP and HTTPS URLs are automatically formatted as links. You can link to work items by entering the *#* key and a work item ID, and then choosing the work item from the list.
 
@@ -555,7 +555,7 @@ In wiki, you can also reference heading in another page:
 
 ## Images
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning-no-dod.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning-no-dod.md)]
 
 To highlight issues or make things more interesting, you can add images and animated GIFs to the following in your pull requests:
 
@@ -683,7 +683,7 @@ To escape emojis, enclose them using the \` character.
 
 ## Ignore or escape Markdown syntax to enter specific or literal characters
 
-[!INCLUDE [version-selector](_shared/markdown-support-versioning.md)]
+[!INCLUDE [version-selector](includes/markdown-support-versioning.md)]
 
 
 <table width="650px">

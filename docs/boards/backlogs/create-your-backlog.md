@@ -16,7 +16,7 @@ ms.date: 03/21/2019
 
 # Create your product backlog 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
 
@@ -30,7 +30,7 @@ and more. Because the most important work appears at the top of the list, your t
 > Your product backlog is one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). If you're not seeing the work items you expect on your backlog, review [Setup your backlogs and boards](set-up-your-backlog.md).   
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Open your backlog from the web portal
 
@@ -117,7 +117,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
-[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]
+[!INCLUDE [temp](../includes/basic-process-bug-note.md)]
 
 If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 

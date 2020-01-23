@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Use predefined variables
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of your pipeline.
 This is the comprehensive list of predefined variables.
@@ -82,31 +82,31 @@ For more detailed logs to debug pipeline problems, define `System.Debug` and set
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/variables-hosted.md)]
+[!INCLUDE [include](includes/variables-hosted.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-[!INCLUDE [include](_shared/variables-server2019.md)]
+[!INCLUDE [include](includes/variables-server2019.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
-[!INCLUDE [include](_shared/variables-tfs2018.md)]
+[!INCLUDE [include](includes/variables-tfs2018.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 
-[!INCLUDE [include](_shared/variables-tfs2017.md)]
+[!INCLUDE [include](includes/variables-tfs2017.md)]
 
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
 
-[!INCLUDE [include](_shared/variables-tfs2015.md)]
+[!INCLUDE [include](includes/variables-tfs2015.md)]
 
 ::: moniker-end
 

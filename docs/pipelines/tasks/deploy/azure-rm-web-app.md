@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Azure Web App task
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Use this task to deploy web applications to Azure App service.
 
@@ -98,9 +98,9 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
-[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Web app deployment on Windows is successful but the app is not working
 
@@ -119,7 +119,7 @@ This may be because web.config is not present in your app. You can either add a 
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

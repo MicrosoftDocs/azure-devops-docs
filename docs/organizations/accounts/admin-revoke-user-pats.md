@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Revoke personal access tokens for organization users
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 If an organization user's personal access token (PAT) has been compromised, we recommend taking immediate action. Revoke their access tokens, as a precaution to protect your organization. In this article, we show you how administrators of Azure DevOps organizations can revoke PATs for users. Disabling a user also revokes their PAT, however there is latency (up to an hour) before the PAT stops working, once the disable or delete function completes in Azure AD. 
 

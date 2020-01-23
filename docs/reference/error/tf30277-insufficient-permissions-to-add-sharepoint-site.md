@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # TF30277: You do not have sufficient permissions on the Windows SharePoint Services at {0} to create a new site
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the permissions granted your user account on the Windows SharePoint Services server {*name*} are not sufficient to allow you to create the new SharePoint Services site. A SharePoint site is used as the project portal. You must be granted specific permission by the Windows SharePoint Services administrator.  
   

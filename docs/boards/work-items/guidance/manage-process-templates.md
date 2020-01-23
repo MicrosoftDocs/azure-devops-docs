@@ -16,7 +16,7 @@ ms.date: 12/10/2019
 
 # Upload or download a process template
 
-[!INCLUDE [temp](../../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
@@ -40,7 +40,7 @@ Support for uploading and downloading Inherited processes isn't supported throug
 You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects.
 ::: moniker-end 
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
 ::: moniker range="<= azure-devops-2019"
 

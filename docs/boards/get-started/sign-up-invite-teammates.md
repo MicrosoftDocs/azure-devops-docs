@@ -19,7 +19,7 @@ ms.date: 12/13/2019
 
 # Sign up for free and invite others to collaborate on your project
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. This sequence walks you through the sign-up process for users located in the United States and that sign up through [azure.com/boards](https://azure.microsoft.com/services/devops/boards/?nav=min). In the end, you'll have a project the uses the [Basic process for work tracking](what-is-azure-boards-basic-process.md).
 
@@ -79,12 +79,12 @@ If you have a Microsoft account, follow these steps to sign up for Azure Boards.
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](/azure/devops/_shared/media/enter-password-sign-in.png)
+   ![Enter your password and sign in](/azure/devops/media/enter-password-sign-in.png)
 
 4. To get started with Azure Boards, select **Continue**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Continue to sign up for Azure DevOps](/azure/devops/_shared/media/sign-up-azure-devops.png)
+	> ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
 
@@ -106,15 +106,15 @@ If you have a GitHub account, follow these steps to sign up for Azure Boards.
 
 2. Enter your GitHub account credentials, and then select **Sign in**.
 
-   ![Enter GitHub credentials](../../_shared/media/enter-github-credentials.png)
+   ![Enter GitHub credentials](../../media/enter-github-credentials.png)
 
 4. Select **Authorize Microsoft corporation**.
 
-   ![Authorize Microsoft](../../_shared/media/authorize-Microsoft-corp.png)
+   ![Authorize Microsoft](../../media/authorize-Microsoft-corp.png)
 
 5. Choose **Continue**.
 
-   ![Choose Continue to sign up for Azure DevOps](../../_shared/media/sign-up-azure-devops.png)
+   ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
 	An organization is created based on the account you used to sign in. Use the following URL to sign in to your organization at any time:
 
@@ -153,11 +153,11 @@ You can add and invite others to work on your project by adding their email addr
 
 1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert-2.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
 2. Select **Users** > **Add new users**.
 
-   :::image type="content" source="../../_shared/media/add-new-users.png" alt-text="Select Add users":::]
+   :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users":::]
 
 3. Complete the form by entering or selecting the following information:
 	<ul>

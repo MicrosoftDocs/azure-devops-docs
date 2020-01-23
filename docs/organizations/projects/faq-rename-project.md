@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot renaming a project
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ### Q: What permission do I need to rename a project?
 

@@ -15,7 +15,7 @@ ms.date: 11/21/2019
 
 # Set permissions at the project- or collection-level
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Several permissions are set at the project or at the organization/project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.
 
@@ -163,7 +163,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)  
+	> ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
 2. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
 
@@ -293,7 +293,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/media/settings/open-admin-settings-vert-2.png)  
+	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert-2.png)  
 
 1. Under **Security**, choose **Permissions**, and then choose **New group** to open the dialog for adding a group. 
 
@@ -329,7 +329,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/media/settings/open-admin-settings-vert-2.png)  
+	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert-2.png)  
 
 1. Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
 
@@ -362,7 +362,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 1. Choose the ![ ](/azure/devops/media/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
 	
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/azure/devops/_shared/media/settings/open-account-settings.png)  
+	> ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
 
 1. Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
 

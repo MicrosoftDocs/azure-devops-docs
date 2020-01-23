@@ -15,7 +15,7 @@ ms.date: 11/07/2019
 
 # Manage and configure team tools
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
 In this article, learn how to configure team tools and manage teams in Azure DevOps.
 
@@ -115,7 +115,7 @@ You can configure most of your team settings from the common configuration dialo
 > The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
-[!INCLUDE [temp](../../boards/_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -146,7 +146,7 @@ You can configure most of your team settings from the common configuration dialo
 
 1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
-	![Choose another team from the project menu](../../_shared/media/work-web-portal-ts-switch-team-focus.png)
+	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
 2. Open **Work>Backlogs>Board**. 
 
@@ -171,7 +171,7 @@ You can configure most of your team settings from the common configuration dialo
 
 1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
-	![Choose another team from the project menu](../../_shared/media/work-web-portal-ts-switch-team-focus.png)
+	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
 2. Open **Work>Backlogs>Board**. 
 
