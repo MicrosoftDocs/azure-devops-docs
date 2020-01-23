@@ -48,16 +48,16 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
   displayName: 'Copy Files to: \\mypath\storage\$(Build.BuildNumber)'
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '_buildOutput/**' #replace with file path if needed
+    Contents: '_buildOutput/**'
     TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
 ```
 
 # [Classic](#tab/classic)
 
-1. Add the [Copy Files task](../tasks/utility/copy-files.md) to your Pipeline.  
+1. Add the Copy Files task](../tasks/utility/copy-files.md) to your Pipeline.  
 ![copy files](media/copy_files_classic_task.png)
 
-2. Configure the [Copy Files task](../tasks/utility/copy-files.md). 
+2. Configure the Copy Files task. 
 ![configure Copy Files](media/copy_files_classic_config.png)
 ---
 
