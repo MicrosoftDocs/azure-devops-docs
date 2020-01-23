@@ -985,6 +985,8 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
+::: moniker range="<= azure-devops-2019"
+
 * Clients
 
   * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
@@ -1000,13 +1002,31 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * Git service providers such as GitHub and Bitbucket Cloud
   * Subversion
 
+::: moniker-end
+
+::: moniker range= "azure-devops-2019"
+
+* Clients
+
+  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
+  * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+  * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
+  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
+  * [IntelliJ](../java/download-intellij-plug-in.md)
+  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
+
+* Services
+  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
+  * Git service providers such as GitHub and Bitbucket Cloud
+  * Subversion
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019"
+
 ### How do I replicate a pipeline?
 
 If your pipeline has a pattern that you want to replicate in other pipelines, clone it, export it, or save it as a template.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
 > ![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions-newnav.png)
