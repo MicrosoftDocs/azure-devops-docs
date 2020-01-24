@@ -15,7 +15,7 @@ monikerRange: azure-devops
 # Environment - virtual machine resource
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-Virtual machines can be added as resources within environments and can be targeted for multi-VM deployments. Deployment history views within the environment provide traceability from VM to the pipeline and then to the commit.
+Virtual machines can be added as resources within environments and can be targeted for multi-VM deployments. Deployment history views within the environment provide traceability from the VM to the pipeline and then to the commit.
 
 ## Virtual machine resource creation
 
@@ -23,8 +23,8 @@ You can define environments in **Environments** under **Pipelines**.
 1. Click **Create Environment**.  
 2. Specify a **Name** (required) for the environment and a **Description**.
 3.	Choose **Virtual Machines** as a  **Resource** to be added to the environment and click **Next**.
-4.	Choose **Operating System (Windows/Linux)**.
-5.  Select **copy PS registration script**. 
+4.	Choose Windows or Linux for the **Operating System**.
+5.  Copy the  registration script. 
 6.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
     > [!NOTE]
     > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
@@ -66,7 +66,7 @@ You can select specific sets of virtual machines from the environment to receive
 
 ## Apply deployment strategy 
 
-You can apply a deployment strategy to define how your application is rolled out. We currently support the `runOnce` strategy and the `rolling` strategy for VMs.
+You can apply a deployment strategy to define how your application is rolled out. The `runOnce` strategy and the `rolling` strategy for VMs are both supported.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#deployment-strategies) is the reference documentation for deployment strategies and the details about various life-cycle hooks.
 
 ## Deployment history views
