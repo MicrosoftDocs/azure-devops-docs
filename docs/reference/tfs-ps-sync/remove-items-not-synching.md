@@ -5,7 +5,7 @@ description: Remove work items that aren't synchronizing between Team Foundation
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 18f3e8d1-12ae-4cc6-a95b-357450a9ba81
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Delete tasks and remove work items that are no longer participating in synchronization
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 When you delete a task from Microsoft Project Professional that has been synchronized with a work item in Team Foundation, you remove the association between the task and the work item. This removal occurs after you publish the plan to Microsoft Project Server and the synchronization process completes to update the changes. However, the synchronization process does not delete the corresponding work item from the project. Work items remain stored in the database for Team Foundation. Team members can set the state of the work item to Closed.  
 

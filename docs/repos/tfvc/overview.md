@@ -5,7 +5,7 @@ description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -44,6 +44,23 @@ Team Foundation Version Control (TFVC) is a centralized version control system. 
 
 TFVC lets you apply [granular permissions](../../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
+
+### Quickstarts 
+
+Get started by creating a project, configuring your workspace, and reviewing and sharing your code. You can use any one of these clients or IDEs: 
+
+<!--- All images are Placeholder --> 
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
+
+
+### Step-by-step tutorials  
+
+Learn the basics of working in TFVC with the following tutorial which shows a day in the life of a devops developer using Visual Studio and TFVC.
+
+* [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
+* [Visual Studio: Review Code](get-code-reviewed-vs.md)
+* 
 ## What do you want to do?
 
 - [Set up your dev machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    
@@ -88,7 +105,7 @@ TFVC lets you apply [granular permissions](../../organizations/security/permissi
 
   When you need to prevent a file or folder from being checked out and altered, you can lock it.
 
-## Related Sections
+## Related sections
 
 - [Build and test the app in your automated build system](../../pipelines/overview.md)    
 
@@ -105,3 +122,10 @@ TFVC lets you apply [granular permissions](../../organizations/security/permissi
 We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
 
 - [Administering Team Foundation Version Control](administering-team-foundation-version-control.md) 
+
+## Related articles 
+
+- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
+
+

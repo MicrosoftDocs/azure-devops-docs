@@ -1,3 +1,3 @@
 ---
-redirect_url: /azure/devops/pipelines/languages/dotnet-core#run-your-tests
+redirect_url: /azure/devops/pipelines/ecosystems/dotnet-core#run-your-tests
 ---

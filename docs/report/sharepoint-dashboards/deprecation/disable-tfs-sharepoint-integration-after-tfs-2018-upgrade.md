@@ -4,15 +4,17 @@ description: TFS SharePoint integration - Disable SharePoint integration after T
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
 # Disable SharePoint integration after TFS 2018 upgrade
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read [Discontinuing the pre-TFS 2018 SharePoint integration](./discontinue-pre-tfs-2017-sharepoint-integration.md).
 
@@ -43,11 +45,11 @@ After upgrading the TFS server, you must uninstall the prior version of the TFS 
 
 After uninstalling the TFS, the TFS SharePoint sites will fail to load. This is because they reference TFS artifacts that no longer exist. 
 
-![TFS 2018 Upgrade - Disable SharePoint Integration - Uninstall TFS errors](./_img/tfs-2018-upgrade-uninstall-tfs-errors.png)
+![TFS 2018 Upgrade - Disable SharePoint Integration - Uninstall TFS errors](./media/tfs-2018-upgrade-uninstall-tfs-errors.png)
 
 The solution is to install the **TFS Disconnector for SharePoint** on the SharePoint 2013 server. 
 
-![TFS 2018 Upgrade - Disable SharePoint Integration - Install TFS Disconnector for SharePoint](./_img/tfs-2018-upgrade-install-tfs-disconnector.png)
+![TFS 2018 Upgrade - Disable SharePoint Integration - Install TFS Disconnector for SharePoint](./media/tfs-2018-upgrade-install-tfs-disconnector.png)
 
 The **TFS Disconnector for SharePoint** installs all the required references for TFS sites to display properly, while disabling TFS-SharePoint integration. 
 
@@ -80,4 +82,4 @@ The **TFS Disconnector for SharePoint** installs all the required references for
 
 After the upgrade, your TFS SharePoint sites will display, but all integration functionality is disabled. The following image shows what the site will look like after you upgrade and disable SharePoint integration.
 
-![TFS 2018 Upgrade - Disable SharePoint Integration - Install TFS Disconnector for SharePoint](./_img/tfs-2018-upgrade-after-upgrade-site-example.png)
+![TFS 2018 Upgrade - Disable SharePoint Integration - Install TFS Disconnector for SharePoint](./media/tfs-2018-upgrade-after-upgrade-site-example.png)

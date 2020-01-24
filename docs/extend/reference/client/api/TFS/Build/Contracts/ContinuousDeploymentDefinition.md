@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts ContinuousDeploymentDefinition API | Extensions for Azure DevOps Services
+description: Data representation of a continuous deployment definition.
 ms.assetid: a16c38cd-8daf-4825-c086-30e3b0b117b2
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,7 +19,7 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `connectedService`: [TFS_Core_Contracts.WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md). The connected service associated with the continuous deployment
+* `connectedService`: [TFS_Core_Contracts.WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md). The connected service associated with the continuous deployment
 
 * `definition`: [ShallowReference](./ShallowReference.md). The definition associated with the continuous deployment
 
@@ -26,7 +27,7 @@ Module path: `TFS/Build/Contracts`
 
 * `hostedServiceName`: string. 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `repositoryId`: string. 
 

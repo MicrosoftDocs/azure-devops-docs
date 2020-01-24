@@ -6,7 +6,7 @@ ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -35,7 +35,7 @@ Team Explorer and the Git command line work great together. When you make update
 
 While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
-![Open a command prompt to a repo from inside Visual Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
+![Open a command prompt to a repo from inside Visual Studio](media/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
 > Some commands require having [specific Git permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) in Azure Repos to complete.
@@ -44,16 +44,16 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
 
 | How do I ? | Git command line | Visual Studio
 |------------|-------------|---------------|
-| Create a repo in a new folder | git init *foldername* | Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](_img/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
+| Create a repo in a new folder | git init *foldername* | Select the **Connect** button ( ![Team Explorer plug icon to open the Connect page](media/command-prompt/te_connect_icon.png) ) in Team Explorer to open the **Connect** view, then select **New** under **Local Git repositories**  
 | Create a repo with code in an existing folder | git init *foldername*<br>git add --all<br>git commit -m "Initial commit" | Create the repo from the command line, then open Team Explorer's **Connect** view and select **Add** under **Local Git repositories**
-| Create a repo from an existing Visual Studio solution | git init *foldername*<br>cd *foldername*<br>git add --all<br>git commit -m "Initial commit" | Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](_img/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right. 
+| Create a repo from an existing Visual Studio solution | git init *foldername*<br>cd *foldername*<br>git add --all<br>git commit -m "Initial commit" | Open the solution and select **Publish** ( ![Publish button on the status bar in Visual Studio 2015 Update 2](media/share-your-code-in-git-vs/publish_status_bar.png)  ) from the status bar in the lower right. 
 | Create a new repo in your Project | Not applicable | From the web, select **Repos** (or **Code** if you haven't enabled the new navigation preview), then select the drop-down next to the current repo name and choose **New Repository...**    
 | Clone a repo into a local folder | git clone *URL* *foldername* | Select **Clone** under **Local Git repositories** in Team Explorer's **Connect** view 
 | Clone a repo in your Project | git clone *URL* *foldername* | Open the **Connect** view in Team Explorer and right click the Git repo in your Project under the account name. Select **Clone...**    
 | Add an existing repo to Visual Studio | Not applicable | Open the solution file in Visual Studio (this will automatically add the repo to Team Explorer) or select **Add** under **Local Git repositories** in the **Connect** view 
 | Delete the Git repo and history, but keep the current version of the files | Delete the hidden .git folder created at the root of the repo | Delete the hidden .git folder created at the root of the repo from Windows Explorer or the command line
 | Delete a local repo and all files | Delete the folder containing your repo from your computer's filesystem |  Close any open solutions using files in the repo, then delete the folder containing your repo from your computer's filesystem. 
-| Delete a repo in your Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in Azure DevOps Services](_img/command-prompt/settings_icon.png) ) in Azure DevOps Services/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
+| Delete a repo in your Project | Not applicable |  Select the settings icon ( ![Gear icon on the top navigation bar in Azure DevOps Services](media/command-prompt/settings_icon.png) ) in Azure DevOps Services/TFS, then select the **Version Control** tab. Find the Git repository to delete and select the **...** next to the name. Choose **Delete Repository** from the options.
 | Add a remote | git remote add *name* *url* | Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Add** under **Remotes** 
 | Update a remote | git remote set-url *name* *url* |  Open the repository using the **Connect** view in Team Explorer, then open the **Settings** view in Team Explorer. Select **Repository Settings**, and select **Edit** under **Remotes** 
 
@@ -77,7 +77,7 @@ Learn more:
 | Delete a local branch | git branch -d *branchname* | Open the **Branches** view in Team Explorer, then right-click the branch and select **Delete**. You must be checked out to a different branch than the one you want to delete.
 | Delete a remote branch | git push origin --delete *branchname* | Open the **Branches** view in Team Explorer, expand the remote that has the branch you want to delete. Right-click the remote and select **Delete Branch from Remote**
 | Lock a branch, preventing updates to it  | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Lock**. Unlock the branch with **Unlock** | Same as command line
-| Set a default branch in your Azure DevOps Services/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](_img/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
+| Set a default branch in your Azure DevOps Services/TFS repo | Select the settings icon on the web ( ![Gear icon on the top navigation bar in Azure DevOps Services](media/command-prompt/settings_icon.png) ), then select the **Version Control** tab. Select your Git repository, then select the **...** next to the branch name and choose **Set as default branch** | Same as command line 
 | Set a compare branch for pull requests in your Azure DevOps Services/TFS repo | From the web, select the **Branches** tab while viewing your repo. Select the **...** next to the branch you want to lock and choose **Compare branch** | Same as command line
 
 Learn more:  

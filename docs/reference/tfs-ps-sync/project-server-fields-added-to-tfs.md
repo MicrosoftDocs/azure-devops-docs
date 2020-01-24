@@ -5,7 +5,7 @@ description: Add fields to a work item form through export, modify, and import o
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05912b54-10f4-4ba2-947d-0c856daafdf0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 
 # Project Server fields added to TFS to support data synchronization 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> When you specify a type of work item to participate in data synchronization between Visual Studio Team Foundation Server and Microsoft Project Server, more than 25 fields are added to the work item type. Several of these fields are also added to the work item form and appear on the **Project Server** tab. You can use these fields to build reports or to specify queries that find work items. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
@@ -26,7 +26,7 @@ ms.date: 01/12/2017
 ##  <a name="defaulttab"></a> Default Project Server Tab  
  When you associate an enterprise project with a project, the **Project Server** tab, similar to the one in the following illustration, is added to the work item form. The tab is added only to those types of work items that you specify to participate in data synchronization. Fields are added only if their `displayTfsField` or `displayTfsMirror` attribute in the field mapping file is set to `true`.  
   
- ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
+ ![Project Server Tab default fields](media/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
  You can add or remove fields by customizing the field mappings for the project collection. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md) and [Field mapping reference](field-mapping-xml-element-reference.md).  
   

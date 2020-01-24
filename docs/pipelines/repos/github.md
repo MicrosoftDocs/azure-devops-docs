@@ -5,16 +5,16 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
-ms.manager: jillfra
-ms.author: dastahel
-author: davidstaheli
-ms.date: 05/17/2019
-monikerRange: 'azure-devops'
+ms.manager: mijacobs
+ms.author: vijayma
+author: vijayma
+ms.date: 10/21/2019
+monikerRange: azure-devops
 ---
 
 # Build GitHub repositories
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Azure Pipelines can automatically build and validate every pull request and commit to your GitHub repository. This article describes how to configure the integration between GitHub and Azure Pipelines.
 
@@ -46,17 +46,17 @@ GitHub and Azure Pipelines are two independent services that integrate well toge
 
 GitHub's structure consists of **organizations and user accounts** that contain **repositories**. See [GitHub's documentation](https://help.github.com/articles/differences-between-user-and-organization-accounts/).
 
-![GitHub organization structure](_img/github-org-structure.png)
+![GitHub organization structure](media/github-org-structure.png)
 
 Azure DevOps' structure consists of **organizations** that contain **projects**. See [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 
-![Azure DevOps organization structure](_img/azure-devops-org-structure.png)
+![Azure DevOps organization structure](media/azure-devops-org-structure.png)
 
 Azure DevOps can reflect your GitHub structure with:
 * An Azure DevOps **organization** for your GitHub **organization or user account**
 * Azure DevOps **projects** for your GitHub **repositories**
 
-![GitHub structure mapped to Azure DevOps](_img/github-structure-mapped-to-azure-devops.png)
+![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
 To set up this mapping between GitHub and Azure DevOps:
 
@@ -77,7 +77,7 @@ Your GitHub users do not automatically get access to Azure Pipelines. You must a
 
 GitHub permissions on GitHub organizations, user accounts, and repositories can be reflected in Azure DevOps.
 
-#### Mapping GitHub organization roles
+#### Map GitHub organization roles
 
 GitHub organization member roles are found at `https://github.com/orgs/your-organization/people` (replace `your-organization`).
 
@@ -91,7 +91,7 @@ GitHub organization roles map to Azure DevOps organization permissions as follow
 | Billing manager          | Member of `Project Collection Administrators` |
 | Member                   | Member of `Project Collection Valid Users`. By default, this group lacks permission to create new projects. To change this, set the group's `Create new projects` permission to `Allow`, or create a new group with permissions you need. |
 
-#### Mapping GitHub user account roles
+#### Map GitHub user account roles
 
 A GitHub user account has one role, which is ownership of the account.
 
@@ -103,7 +103,7 @@ The GitHub user account role maps to Azure DevOps organization permissions as fo
 | ------------------------ | --------------------------------------------- |
 | Owner                    | Member of `Project Collection Administrators` |
 
-#### Mapping GitHub repository permissions
+#### Map GitHub repository permissions
 
 GitHub repository permissions are found at `https://github.com/your-organization/your-repository/settings/collaboration` (replace `your-organization` and `your-repository`).
 
@@ -229,7 +229,7 @@ Once the GitHub App is installed, pipelines can be created for the organization'
 
 To use OAuth, click **Choose a different connection** below the list of repositories while creating a pipeline. Then, click **Authorize** to sign into GitHub and authorize with OAuth. An OAuth connection will be saved in your Azure DevOps project for later use, as well as used in the pipeline being created.
 
-#### Revoking OAuth access
+#### Revoke OAuth access
 
 After authorizing Azure Pipelines to use OAuth, to later revoke it and prevent further use, visit [OAuth Apps](https://github.com/settings/developers) in your GitHub settings. You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
@@ -292,11 +292,11 @@ The PAT must have the required access scopes under [Personal access tokens](http
 1. The PAT must have the required access scopes under [Personal access tokens](https://github.com/settings/tokens): `repo`, `admin:repo_hook`, `read:user`, and `user:email`.
 2. You must be added as a collaborator, or your team must be added, in the repository's settings under "Collaborators and teams". Accept the invitation to be a collaborator using the link that is emailed to you.
 
-#### Revoking PAT access
+#### Revoke PAT access
 
 After authorizing Azure Pipelines to use a PAT, to later delete it and prevent further use, visit [Personal access tokens](https://github.com/settings/tokens) in your GitHub settings. You can also delete it from the list of GitHub [service connections](../library/service-endpoints.md) in your Azure DevOps project settings.
 
-## Triggering a pipeline
+## Trigger a pipeline
 
 You can have a pipeline triggered when the following events occur in GitHub:
 
@@ -379,7 +379,7 @@ trigger:
 
 If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
 
-#### Batching CI builds
+#### Batch CI builds
 
 If you have multiple team members uploading changes often, you may want to reduce the number of builds you're running.
 If you set `batch` to `true`, if commits are made when a build is already running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
@@ -411,13 +411,13 @@ trigger:
     - docs/README.md
 ```
 
-#### Opting out of CI builds
+#### Opt out of CI builds
 
-You can opt-out of CI builds either by [disabling the CI trigger](#disabling-the-ci-trigger), or by [skipping CI builds for individual commits](#skipping-ci-for-individual-commits)).
+You can opt-out of CI builds either by [disable the CI trigger](#disable-the-ci-trigger), or by [skip CI builds for individual commits](#skip-ci-for-individual-commits)).
 
-You can also override the YAML CI trigger in the classic editor and disable it there. For more information, see [Overriding YAML triggers](#overriding-yaml-triggers).
+You can also override the YAML CI trigger in the pipeline editor and disable it there. For more information, see [Override YAML triggers](#override-yaml-triggers).
 
-#### Disabling the CI trigger
+#### Disable the CI trigger
 
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
@@ -431,7 +431,7 @@ trigger: none
 
 For more information, see [Trigger](../yaml-schema.md#triggers) in the [YAML schema](../yaml-schema.md).
 
-#### Skipping CI for individual commits
+#### Skip CI for individual commits
 
 You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
 
@@ -458,7 +458,7 @@ You can specify the branches where you want to trigger builds. If you want to us
 
 For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ---
 
@@ -470,7 +470,7 @@ Pull request (PR) triggers cause a build to run whenever a pull request is opene
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in the classic editor by following the steps in [Overriding YAML triggers](#overriding-yaml-triggers).
+> To opt into YAML-based control, you must disable a setting on the **Triggers** tab in pipelines settings by following the steps in [Override YAML triggers](#override-yaml-triggers).
 
 You can specify the target branches for your pull request builds.
 For example, to run pull request builds only for branches that target: `master` and `releases/*`:
@@ -494,8 +494,8 @@ pr:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
 
->[!IMPORTANT]
->When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
+> [!IMPORTANT]
+> When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`). See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
@@ -555,7 +555,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-![Pull request trigger](../build/_img/triggers/github-pr-validation-trigger.png)
+![Pull request trigger](../build/media/triggers/github-pr-validation-trigger.png)
 
 You can specify branches to include and exclude.
 Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
@@ -641,17 +641,17 @@ To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline
 
 If you have the necessary repository permissions, but pipelines aren't getting triggered by your comments, make sure that your membership is **public** in the repository's organization, or directly add yourself as a repository collaborator. Azure Pipelines cannot see private organization members unless they are direct collaborators or belong to a team that is a direct collaborator. You can change your GitHub organization membership from private to public here (replace `Your-Organization` with your organization name): `https://github.com/orgs/Your-Organization/people`.
 
-### Overriding YAML triggers
+### Override YAML triggers
 
-PR and CI triggers that are configured in YAML pipelines can be overridden in the classic editor, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
+PR and CI triggers that are configured in YAML pipelines can be overridden in the pipeline settings, and by default, new pipelines automatically override YAML PR triggers. To configure this setting, select **Triggers** from the settings menu while editing your YAML pipeline.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 Select either the **Continuous integration** trigger or the **Pull request validation** trigger, and configure your desired setting by enabling or disabling **Override the YAML ... trigger from here**.
 
-![Override YAML trigger](_img/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
+![Override YAML trigger](media/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
 
-## Getting the source code
+## Get the source code
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the GitHub repository. You can control various aspects of how this happens.
 
@@ -665,7 +665,9 @@ This setting is always true on non-Windows agents.
 
 ### Checkout path
 
-By default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+
+If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code will be checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
@@ -716,7 +718,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -726,9 +728,11 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same GitHub organization as the Git repo specified above.
+  - Contained in the same GitHub organization as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. 
+    - For example, this one would be checked out: `git submodule add ../../submodule.git mymodule` 
+	- This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
 
 
 #### Authenticated submodules
@@ -755,12 +759,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -793,7 +797,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -827,7 +831,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -856,13 +860,12 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Clean build
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 You can configure the `clean` setting in the [Checkout](..//yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -902,17 +905,16 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
- ![GitHub options](_img/github/github-clean-sources.png)
+ ![GitHub options](media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -920,8 +922,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
----
-
+* * *
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
@@ -930,17 +931,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** or **Variables** from the settings menu.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -958,7 +959,7 @@ Some build variables might yield a value that is not a valid label. For example,
 
 After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
 
-## Posting status
+## Post status
 
 You've got the option to give your team a view of the build status from your remote source repository, by publishing the status of your build to GitHub using GitHub [Checks](https://developer.github.com/v3/checks/) or [Status](https://developer.github.com/v3/repos/statuses/) APIs. If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull requests page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
 
@@ -966,7 +967,7 @@ You've got the option to give your team a view of the build status from your rem
 
 To add a build badge to the `README.md` file at the root of your repository, follow the steps in [Get the status badge](../create-first-pipeline.md#get-the-status-badge).
 
-## Protecting branches
+## Protect branches
 
 If you're using [GitHub app authentication](#github-app-authentication) for your Azure Pipelines integration with GitHub, you can use your pipeline's build results with [GitHub Checks](https://developer.github.com/v3/checks/) to help protect your branches.
 
@@ -976,11 +977,11 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 
 1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
 
-1. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
 
-  For the status check, select the name of your pipeline in the **Status checks** list.
+   For the status check, select the name of your pipeline in the **Status checks** list.
 
-  ![GitHub pipeline status check](_img/github/github-pipeline-status-check.png)
+   ![GitHub pipeline status check](media/github/github-pipeline-status-check.png)
 
 >[!IMPORTANT]
 >If your pipeline doesn't show up in this list, please ensure the following:
@@ -989,9 +990,11 @@ To configure mandatory validation builds for a GitHub repository, you must be it
 >* Your pipeline has run at least once in the last week
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 <a name="missing-repo"></a>
+
 ### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?
 
 Depending on the authentication type and ownership of the repository, specific permissions are required.

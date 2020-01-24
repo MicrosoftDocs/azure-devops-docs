@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Type Categories | REST API Reference for Team Foundation Server
 description: Work with categories of work item types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 5DACB173-F971-4288-8EBD-29B4EF98237C
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

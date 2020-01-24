@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: reference
 ms.date: 09/08/2017
 ---
 
 # Configure initial groups, teams, members, and permissions
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   
@@ -196,12 +196,12 @@ The following table describes the project-level permissions that you can assign 
   
 |**Permission**|**Description**|Readers|Contributors|Build Administrators|  
 |--------------------|---------------------|-------------|------------------|--------------------------|  
-|**GENERIC_READ**|**View project-level information**. Can view membership of project-level groups and the permissions of those members.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**VIEW_TEST_RESULTS**|**View test runs**. Can view test plans in this node.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**MANAGE_TEST_CONFIGURATIONS**|**Manage test configurations**. Can create and delete test configurations for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**MANAGE_TEST_ENVIRONMENTS**|**Manage test environments**. Can create and delete test environments for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**PUBLISH_TEST_RESULTS**|**Create test runs**. Can add and remove test results and add or modify test runs for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**DELETE_TEST_RESULTS**|**Delete test runs**. Can delete a scheduled test for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**GENERIC_READ**|**View project-level information**. Can view membership of project-level groups and the permissions of those members.|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**VIEW_TEST_RESULTS**|**View test runs**. Can view test plans in this node.|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**MANAGE_TEST_CONFIGURATIONS**|**Manage test configurations**. Can create and delete test configurations for the project.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**MANAGE_TEST_ENVIRONMENTS**|**Manage test environments**. Can create and delete test environments for the project.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**PUBLISH_TEST_RESULTS**|**Create test runs**. Can add and remove test results and add or modify test runs for the project.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**DELETE_TEST_RESULTS**|**Delete test runs**. Can delete a scheduled test for the project.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**DELETE**|**Delete project**. Can delete from Team Foundation Server the project for which the user has this permission.||||  
 |**GENERIC_WRITE**|**Edit project-level information**. Can edit project-level permissions for users and groups in Team Foundation Server.||||  
   
@@ -230,10 +230,10 @@ The following table describes the project-level permissions that you can assign 
   
 |**Permission**|**Description**|Readers|Contributors|Build Administrators|  
 |--------------------|---------------------|-------------|------------------|--------------------------|  
-|**GENERIC_READ**|**View this node**. Can view the security settings for an area node.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**WORK_ITEM_READ**|**View work items in this node**. Can view, but not change, work items that are assigned to an area node.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**WORK_ITEM_WRITE**|**Edit work items in this node**. Can edit work items that are assigned to an area node.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**MANAGE_TEST_PLANS**|**Manage test plans**. Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**GENERIC_READ**|**View this node**. Can view the security settings for an area node.|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**WORK_ITEM_READ**|**View work items in this node**. Can view, but not change, work items that are assigned to an area node.|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**WORK_ITEM_WRITE**|**Edit work items in this node**. Can edit work items that are assigned to an area node.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**MANAGE_TEST_PLANS**|**Manage test plans**. Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.||![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](media/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**CREATE_CHILDREN**|**Create and order child nodes**. Can create area nodes. Users who have both this permission and the GENERIC_WRITE permission can move or re-order any child area node.||||  
 |**DELETE**|**Delete this node**. Can delete area nodes.<br /><br /> Users who have both this permission and the GENERIC_WRITE permission for another node can delete area nodes and reclassify existing work items from the deleted node. If the deleted node has child nodes, those nodes are also deleted.||||  
 |**GENERIC_WRITE**|**Edit this node**. Can set permissions for and rename area nodes.||||  

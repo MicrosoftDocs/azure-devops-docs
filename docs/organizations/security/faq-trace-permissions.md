@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/23/2018
@@ -25,15 +25,15 @@ If one of your users is having permissions issues and you make use of default se
 
 2. Enter their name into the box in the upper left-hand corner.
 
-   ![Enter user name to view permissions](_img/security-page-enter-user-name.png)
+   ![Enter user name to view permissions](media/security-page-enter-user-name.png)
 
 3. You should now have a user-specific view which shows what permissions they have. To trace why a user does or does not have any of the listed permissions, hover over the permission and choose **Why**.
 
-   ![Choose Why in permissions list view for project level information](_img/permissions-list-view-project-level-information.png)
+   ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information.png)
 
 4. The resulting trace lets you know how they are inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups which they are in.
 
-   ![Trace showing inherited permissions](_img/trace-permission-group-member-inheritance.png)
+   ![Trace showing inherited permissions](media/trace-permission-group-member-inheritance.png)
 
 A 2: Their permissions haven't propagated yet
 

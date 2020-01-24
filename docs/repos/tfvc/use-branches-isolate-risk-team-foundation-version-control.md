@@ -5,7 +5,7 @@ description: Use branches to isolate risk in Team Foundation Version Control
 ms.assetid: d74122a4-6a3d-45fb-82b7-3c1494ed4afd
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -62,8 +62,6 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 
 ## See Also
 
-#### Other Resources
-
- [Branch strategically](branch-strategically.md) 
-
-[Visual Studio TFS Branching Guide](http://go.microsoft.com/fwlink/?LinkId=191400)
+[Branch strategically](branch-strategically.md)
+ 
+[Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](branching-strategies-with-tfvc.md)

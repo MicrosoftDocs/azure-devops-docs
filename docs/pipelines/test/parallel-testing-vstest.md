@@ -6,20 +6,22 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
-ms.date: 12/07/2018
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="< tfs-2018"
+
 > [!NOTE]
 > For TFS, this topic applies to only TFS 2017 Update 1 and later.
+
 ::: moniker-end
 
 Running tests to validate changes to code is key to maintaining quality.
@@ -37,7 +39,7 @@ This article discusses how you can configure the
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -58,7 +60,7 @@ The task can be configured to create test slices to suit different requirements 
 batching based on the number of tests and agents, the previous test running times, or the location
 of tests in assemblies.
 
-![Batching options](_img/parallel-testing-vstest/batching-options.png)
+![Batching options](media/parallel-testing-vstest/batching-options.png)
 
 These options are explained in the following sections.
 
@@ -109,17 +111,17 @@ use the following steps.
    Build Visual Studio projects and publish build artifacts using the tasks shown in the following image.
    This uses the default job settings (single agent, no parallel jobs).
 
-   ![buildJobSingleAgent](_img/parallel-testing-vstest/build-job-1-agent.png)
+   ![buildJobSingleAgent](media/parallel-testing-vstest/build-job-1-agent.png)
 
 1. **Run tests in parallel using multiple agents**:
 
    * Add an **agent job**
 
-     ![AddAgentJobBuild](_img/parallel-testing-vstest/add-agent-job-build.png)
+     ![AddAgentJobBuild](media/parallel-testing-vstest/add-agent-job-build.png)
 
    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
-     ![ParallelTestJobBuild](_img/parallel-testing-vstest/parallel-test-job-build.png)
+     ![ParallelTestJobBuild](media/parallel-testing-vstest/parallel-test-job-build.png)
 
      > [!TIP]
      > For massively parallel testing, you can specify as many as 99 agents.
@@ -130,9 +132,26 @@ use the following steps.
      Ensure that the task is set to download artifacts produced by the 'Current build' and the artifact name
      is the same as the artifact name used in the **Publish Build Artifacts** task in the build job.
 
-     ![DownloadBuildArtifacts](_img/parallel-testing-vstest/download-build-artifacts.png)
+     ![DownloadBuildArtifacts](media/parallel-testing-vstest/download-build-artifacts.png)
 
    * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+
+::: moniker range=">= azure-devops-2019"
+
+## Setting up jobs for parallel testing in YAML pipelines
+
+Specify the `parallel` strategy in the `job` and indicate how many jobs should be dispatched. You can specify as many as 99 agents to scale up testing for large test suites.
+
+```YAML
+jobs:
+- job: ParallelTesting
+  strategy:
+    parallel: 2
+```
+
+For more information, see [YAML schema - Job](../yaml-schema.md#job).
+
+::: moniker-end
 
 ## Run tests in parallel in release pipelines
 
@@ -147,17 +166,17 @@ to validate the app functionality.
 1. **Deploy app using a single agent**. Use the tasks shown in the image below to deploy a web app to Azure App Services.
    This uses the default job settings (single agent, no parallel jobs).
 
-   ![DeployApp1Agent](_img/parallel-testing-vstest/deploy-app-1-agent.png)
+   ![DeployApp1Agent](media/parallel-testing-vstest/deploy-app-1-agent.png)
 
-1. **Run tests in parallel using multiple agents**:
+2. **Run tests in parallel using multiple agents**:
 
    * Add an **agent job**
 
-     ![AddAgentJobRM](_img/parallel-testing-vstest/add-agent-job-rm.png)
+     ![AddAgentJobRM](media/parallel-testing-vstest/add-agent-job-rm.png)
 
    * Configure the job to use **multiple agents in parallel**. The example here uses three agents.
 
-     ![ParallelTestJobRM](_img/parallel-testing-vstest/parallel-test-job-rm.png)
+     ![ParallelTestJobRM](media/parallel-testing-vstest/parallel-test-job-rm.png)
 
      > [!TIP]
      > For massively parallel testing, you can specify as many as 99 agents.
@@ -171,7 +190,7 @@ to validate the app functionality.
      > For example, web app binaries are not required to run Selenium tests and downloading these can be
      > skipped if the app and test artifacts are published separately by your build pipeline.
 
-   *  Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
+   * Add the **Visual Studio Test** task and configure it to use the required [slicing strategy](#strategy).
 
      > [!TIP]
      > If the test machines do not have Visual Studio installed, you can use the
@@ -220,4 +239,4 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
      Execution on the agent then conforms to the parallelism described in **1** and **2** above.
      However, **2** may not occur if an agent receives only one assembly to run.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

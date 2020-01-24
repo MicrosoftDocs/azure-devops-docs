@@ -5,16 +5,16 @@ ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: jillfra
-ms.author: puagarw
-author: pulkitaggarwl
+ms.manager: mijacobs
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 04/25/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Automatically deploy to IoT edge devices 
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) solution, push the created module images to your Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT edge devices.
 
@@ -34,7 +34,7 @@ In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) so
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-an-iot-edge-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
 
 1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
 
@@ -105,35 +105,36 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 1. Navigate to your team project on Azure DevOps.
 
-1. Navigate to **Pipelines | Builds**. From the **New** drop-down menu, select **New build pipeline** to create a new one.
+2. Navigate to **Pipelines | Builds**. From the **New** drop-down menu, select **New build pipeline** to create a new one.
 
-1. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
+3. The default option for build pipelines involves using YAML to define the process. For this lab, select **use the classic editor**.
 
-1. The first thing you’ll need to do is to configure the source repository. This build will use the **master** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
+4. The first thing you’ll need to do is to configure the source repository. This build will use the **master** branch of the **IoT Edge module** repo. Leave the defaults and select **Continue**.
 
-1. Select **Empty job**.
+5. Select **Empty job**.
 
-1. Select the Agent pool **Hosted Ubuntu 1604** from the drop down.
+6. Select the Agent pool **Hosted Ubuntu 1604** from the drop down.
 
-1. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below -
+7. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below -
 
    <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
-   <tr><td>Azure subscription</td><td>(Required) Name of [Azure Resource Manager service connection](../library/connect-to-azure.md)</td></tr>
+   <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
    <tr><td>Action</td><td>(Required) Action to perform. Leave the default value as is</td></tr>
    <tr><td>Resource group</td><td>(Required) Provide the name of a resource group</td></tr>
    <tr><td>Location</td><td>(Required) Provide the location for deploying the resource group</td></tr>
    <tr><td>Template location</td><td>(Required) Set the template location to <b>URL of the file</b></td></tr>
-   <tr><td>Template link</td><td>(Required) https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json</td></tr>
-   <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku "Basic" -registryLocation "YOUR LOCATION"</td></tr>
+   <tr><td>Template link</td><td>(Required) <a href="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json" data-raw-source="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json">https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-acr.json</a></td></tr>
+   <tr><td>Override template parameters</td><td><b>-registryName YOUR_REGISTRY_NAME -registrySku &quot;Basic&quot; -registryLocation &quot;YOUR LOCATION&quot;</td></tr>
    </table>
 
-   **Note**: Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
+   > [!NOTE]
+   > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
-   ![ARM](_img/Iot-devops-using-azure-pipelines/arm.png)
+   ![ARM](media/Iot-devops-using-azure-pipelines/arm.png)
 
-1. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
+8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
 
-1. Select **+** and search for the **Azure IoT Edge** task. Select **add**. Configure the task as shown below -
+9. Select **+** and search for the **Azure IoT Edge** task. Select **add**. Configure the task as shown below -
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Action</td><td>Select an Azure IoT Edge action to <b>Push module images</b></td></tr>
@@ -142,11 +143,11 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    <tr><td>Azure Container Registry</td><td>Select an Azure Container Registry from the dropdown which was created in the step 5</td></tr>
    </table>
 
-1. Select **+** and search for **Publish Build Artifacts** task. Select **add**. Set the path to publish to **$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
+10. Select **+** and search for **Publish Build Artifacts** task. Select **add**. Set the path to publish to **$(Build.ArtifactStagingDirectory)/deployment.amd64.json**.
 
-1. Save the pipeline and queue the build.
+11. Save the pipeline and queue the build.
 
-    ![Build Pipeline](_img/Iot-devops-using-azure-pipelines/build-pipeline.png)
+     ![Build Pipeline](media/Iot-devops-using-azure-pipelines/build-pipeline.png)
 
 ## Create a release pipeline
 
@@ -154,67 +155,68 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
 1. Navigate to the **Pipelines | Releases**.
 
-1. From the **New** drop-down menu, select **New release pipeline** to create a new release pipeline. 
+2. From the **New** drop-down menu, select **New release pipeline** to create a new release pipeline. 
 
-1. Select **Empty job** to create the pipeline.
+3. Select **Empty job** to create the pipeline.
 
-1. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below. 
+4. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below. 
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
-   <tr><td>Azure subscription</td><td>(Required) Name of [Azure Resource Manager service connection](../library/connect-to-azure.md)</td></tr>
+   <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
    <tr><td>Action</td><td>(Required) Action to perform. Leave the default value as is</td></tr>
    <tr><td>Resource group</td><td>(Required) Provide the name of a resource group</td></tr>
    <tr><td>Location</td><td>(Required) Provide the location for deploying the resource group</td></tr>
    <tr><td>Template location</td><td>(Required) Set the template location to <b>URL of the file</b></td></tr>
-   <tr><td>Template link</td><td>(Required) https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json</td></tr>
-   <tr><td>Override template parameters</td><td><b>-iotHubName IoTEdge -iotHubSku "S1"</td></tr>
+   <tr><td>Template link</td><td>(Required) <a href="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json" data-raw-source="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json">https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-iothub.json</a></td></tr>
+   <tr><td>Override template parameters</td><td><b>-iotHubName IoTEdge -iotHubSku &quot;S1&quot;</td></tr>
    </table>
 
-1. Select **+** and search for **Azure CLI** task. Select **add** and configure the task as shown below. 
+5. Select **+** and search for **Azure CLI** task. Select **add** and configure the task as shown below. 
 
-    - **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
+   - **Azure subscription**: Select the Azure Resource Manager subscription for the deployment
 
-    - **Script Location**: Set the type to **Inline script** and copy paste the below script
+   - **Script Location**: Set the type to **Inline script** and copy paste the below script
     
-    ```CLI
-    (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
-    ```
+     ```CLI
+     (az extension add --name azure-cli-iot-ext && az iot hub device-identity show --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME) || (az iot hub device-identity create --hub-name YOUR_HUB_NAME --device-id YOUR_DEVICE_ID --edge-enabled && TMP_OUTPUT="$(az iot hub device-identity show-connection-string --device-id YOUR_DEVICE_ID --hub-name YOUR_HUB_NAME)" && RE="\"cs\":\s?\"(.*)\"" && if [[ $TMP_OUTPUT =~ $RE ]]; then CS_OUTPUT=${BASH_REMATCH[1]}; fi && echo "##vso[task.setvariable variable=CS_OUTPUT]${CS_OUTPUT}")
+     ```
 
-    In the above script, replace the following with your details -
+     In the above script, replace the following with your details -
 
-    - hub name
+   - hub name
 
-    - device id
+   - device id
 
-    **Note**: Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
+     > [!NOTE]
+     > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
 
-    ![Release Pipeline](_img/Iot-devops-using-azure-pipelines/release-pipeline.png)
+     ![Release Pipeline](media/Iot-devops-using-azure-pipelines/release-pipeline.png)
 
-1. Edit the pipeline and select **+** and search for the **Azure IoT Edge** task. Select **add**. This step will Deploy the module images to IoT Edge devices. Configure the task as shown below.
+6. Edit the pipeline and select **+** and search for the **Azure IoT Edge** task. Select **add**. This step will Deploy the module images to IoT Edge devices. Configure the task as shown below.
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
    <tr><td>Action</td><td>Select an Azure IoT Edge action to <b>Deploy to IoT Edge devices</b></td></tr>
-   <tr><td>Deployment file</td><td>$(System.DefaultWorkingDirectory)/**/*.json</b></td></tr>
+   <tr><td>Deployment file</td><td>$(System.DefaultWorkingDirectory)/<em>*/</em>.json</b></td></tr>
    <tr><td>Azure subscription contains IoT Hub</td><td>Select an Azure subscription that contains IoT Hub</td></tr>
    <tr><td>Iot Hub name</td><td>Select the IoT Hub</td></tr>
    <tr><td>Choose single/multiple device</td><td>Select Single Device</td></tr>
    <tr><td>IoT Edge device ID</td><td>Input the IoT Edge device ID</td></tr>
    </table>
 
-1. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below.
+7. Select **+** and search for **Azure Resource Group Deployment** task. Select **add**. Configure the task as shown below.
 
     <table><thead><tr><th>Field</th><th>Values</th></tr></thead>
-   <tr><td>Azure subscription</td><td>(Required) Name of [Azure Resource Manager service connection](../library/connect-to-azure.md)</td></tr>
+   <tr><td>Azure subscription</td><td>(Required) Name of <a href="../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
    <tr><td>Action</td><td>(Required) Action to perform. Leave the default value as is</td></tr>
    <tr><td>Resource group</td><td>(Required) Provide the name of a resource group</td></tr>
    <tr><td>Location</td><td>(Required) Provide the location for deploying the resource group</td></tr>
    <tr><td>Template location</td><td>(Required) Set the template location to <b>URL of the file</b></td></tr>
-   <tr><td>Template link</td><td>(Required) https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-linux-vm.json</td></tr>
-   <tr><td>Override template parameters</td><td><b>-edgeDeviceConnectionString $(CS_OUTPUT) -virtualMachineName "YOUR_VM_NAME" -adminUsername "devops" -adminPassword "$(vmPassword)" -appInsightsLocation "" -virtualMachineSize "Standard_A0" -location "YOUR_LOCATION" </td></tr>
+   <tr><td>Template link</td><td>(Required) <a href="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-linux-vm.json" data-raw-source="https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-linux-vm.json">https://raw.githubusercontent.com/Azure-Samples/devops-iot-scripts/12d60bd513ead7c94aa1669e505083beaef8a480/arm-linux-vm.json</a></td></tr>
+   <tr><td>Override template parameters</td><td><b>-edgeDeviceConnectionString $(CS_OUTPUT) -virtualMachineName &quot;YOUR_VM_NAME&quot; -adminUsername &quot;devops&quot; -adminPassword &quot;$(vmPassword)&quot; -appInsightsLocation &quot;&quot; -virtualMachineSize &quot;Standard_A0&quot; -location &quot;YOUR_LOCATION&quot; </td></tr>
    </table>
 
-1. Disable the first 2 tasks in the pipeline. Save and queue.
+8. Disable the first 2 tasks in the pipeline. Save and queue.
 
-    ![Edit Pipeline](_img/Iot-devops-using-azure-pipelines/edit-release-pipeline.png)
+    ![Edit Pipeline](media/Iot-devops-using-azure-pipelines/edit-release-pipeline.png)
 
-1. Once the release is complete, go to IoT hub in the Azure portal to view more information.
+9. Once the release is complete, go to IoT hub in the Azure portal to view more information.

@@ -5,8 +5,8 @@ ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: jenp
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.date: 01/31/2018
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 
 **Azure DevOps Services** | **TFS 2018**
 
-[!INCLUDE [](../_shared/maven/install.md)]
+[!INCLUDE [](../includes/maven/install.md)]
 
 	
 **Sample `pom.xml`:**

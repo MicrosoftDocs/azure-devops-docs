@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 753f0afd-3852-4724-ae3e-a1644f304e00
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Code Churn Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 With the Code Churn report, you can analyze how source files are changing over time. This report shows how many lines of code the team added, deleted, or modified during the most recent four weeks.  
   
@@ -32,7 +32,7 @@ With the Code Churn report, you can analyze how source files are changing over t
 ##  <a name="Data"></a> Data in the Report  
  The team can review the Code Churn report to determine how volatile the code base is and how many lines of code were modified in the previous week. As the following illustration shows, the report provides a stacked area graph of the lines of code that the team added, deleted, or modified in the most recent four weeks.  
   
- ![Code Churn Report](_img/procguid_codechurn.png)  
+ ![Code Churn Report](media/procguid_codechurn.png)  
   
  This report is based on a PivotChart report that shows the most recent four weeks of data that were captured for code changes and that is stored in the data warehouse. All lines are counted, even lines that contain comments or that are blank.  
   
@@ -88,4 +88,4 @@ With the Code Churn report, you can analyze how source files are changing over t
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

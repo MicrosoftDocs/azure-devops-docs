@@ -1,11 +1,11 @@
----
+﻿---
 title: Rename Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Rename Command (Team Foundation Version Control)
 ms.assetid: 5d754d91-41b0-40bd-a57a-aa22518deb23
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -20,14 +20,16 @@ monikerRange: '>= tfs-2015'
 
 The **rename** command changes the name or the path of a file or folder. You can use the **rename** command or the aliases **move** or **ren**, to move a file or folder to a new location.
 
->**Note:**
->  The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not reflected in the Team Foundation version control server until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 
 To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
+```
+tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
+```
 
 ## Parameters<table>
 <thead>
@@ -109,15 +111,21 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example changes the name of 314.c to 1254.c.
 
-    c:\projects>tf rename  314.c  1254.c
+```
+c:\projects>tf rename  314.c  1254.c
+```
 
 The following example renames 314.c to 1254.c and moves it to the newdir folder.
 
-    c:\projects>tf rename 314.c ..\newdir\1254.c
+```
+c:\projects>tf rename 314.c ..\newdir\1254.c
+```
 
 The following example changes the name of Form1.vb to MainPage.vb and applies a lock to it.
 
-    c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
+```
+c:\projects>tf rename Form1.vb MainPage.vb /lock:checkin
+```
 
 ## See Also
 

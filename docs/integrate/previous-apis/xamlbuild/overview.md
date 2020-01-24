@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: XAML Build Overview | REST API Reference for Team Foundation Server
 description: Work with xaml builds programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: f92b9363-6b36-4576-98ad-6c2fbf09d536
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -21,7 +21,7 @@ ms.date: 08/04/2016
 A [build request](./requests.md) references a [build definition](./definitions.md) to add a new [build](./builds.md) to a [build queue](./queues.md).
 Completed builds are assigned a [build quality](./qualities.md).
 
-![Build resources](./_img/build-resources.png)
+![Build resources](./media/build-resources.png)
 
 * [Builds](./builds.md)
 * [Definitions](./definitions.md)

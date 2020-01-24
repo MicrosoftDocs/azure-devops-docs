@@ -4,8 +4,8 @@ description: Learn to manage branching strategies with a DevOps mindset in Team 
 ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
-ms.manager: jillfra
+ms.technology: devops-code-tfvc
+ms.manager: mijacobs
 ms.date: 04/25/2018
 ms.author: sdanie
 author: wpschaub
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore how to manage branching strategies with a DevOps mindset in Team Foundation Version Control (TFVC)
 
-Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](index.md)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
+Are you planning to embrace [DevOps](http://donovanbrown.com/post/what-is-devops) using the Team Foundation Version Control ([TFVC](overview.md)) with Team Foundation Server (TFS) or Azure DevOps Services? You probably have a few questions, such as:
 
 - How do I decide on the right branching strategy? 
 - Is there an effective strategy for DevOps?
@@ -58,7 +58,7 @@ You typically start with having to support only one production version, with par
 
 Start with the simple **main-only** branching strategy.
 
-![initial branch diagram](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-initial.png)
+![initial branch diagram](media/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-initial.png)
 
 Automate your build to trigger with every checkin to the main branch, run automated tests, and if successful, deploy the release to a development (dev) environment.
 
@@ -68,7 +68,7 @@ Automate your build to trigger with every checkin to the main branch, run automa
 
 When you complete a release cycle, create a **release** branch. Use the release branch to stabilize the release, and continue development for your next version in main. Reverse integrate (RI) and merge validated bug fixes with your main branch frequently, to minimize your overall technical debt.
 
-![Version 1.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-vnext.png)
+![Version 1.0 is released](media/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-vnext.png)
 
 Automate your build and release to:
 - Trigger with every checkin to the release branch 
@@ -94,7 +94,7 @@ When the need arises to support more than one production version, for example a 
 
 For every completed release cycle you need to support, create a new release branch and continue next version development in main, using [feature isolation](./effective-feature-isolation-on-tfvc.md). Note the reverse integration (RI) merges from v1.0 and v2.0 to **main**. They represent bug fixes that are released to production.
 
-![Version 2.0 is released](_img/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-complex.png)
+![Version 2.0 is released](media/effective-tfvc-branching-strategies-for-devops/effective-tfvc-branching-strategies-for-devops-complex.png)
 
 By using a **simple** branching strategy and adopting a **consistent naming convention**, you'll be able to support:
 - Applications that have one or more supported releases
@@ -119,7 +119,7 @@ By using a **simple** branching strategy and adopting a **consistent naming conv
 - Avoid using **cherry-picking** to get your code to production
 - Do not attempt to solve **people** or **process** problems with tools
 
-# Reference information
+## Reference information
 - [Continuous Integration](/azure/devops/learn/what-is-continuous-integration)
 - [Interview with Abel Wang and Steve St Jean](https://channel9.msdn.com/Blogs/DevOps-Interviews/Interview-with-Abel-Wang-and-Steven-St-Jean)
 - [Team Foundation Version Control (TFVC)](overview.md)

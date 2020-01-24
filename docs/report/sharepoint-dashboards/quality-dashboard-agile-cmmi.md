@@ -5,14 +5,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: eaae1890-73e5-4324-9df4-634281621d2a
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 12/30/2016
 ---
 
 # Quality dashboard (Agile and CMMI)
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Quality dashboard to obtain an overview of progress occurring in the test, development, and build areas as they relate to the quality of the software under development. The team can use the Quality dashboard to learn and make decisions that support team goals around product quality.  
   
@@ -30,27 +31,27 @@ You can use the Quality dashboard to obtain an overview of progress occurring in
   
  To learn about the Web Parts that are displayed on the Quality dashboard, refer to the illustration and the table that follow.  
   
- ![Product Quality Dashboard](_img/procguid_dashboard_productquality.png "ProcGuid_Dashboard_ProductQuality")  
+ ![Product Quality Dashboard](media/procguid_dashboard_productquality.png "ProcGuid_Dashboard_ProductQuality")  
   
 > [!NOTE]
 >  The **Test Plan Progress** report is available only when the team [creates test plans](../../test/create-test-cases.md) and runs tests.  
 >   
->  Progress, build, and code charts, reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 6](_img/procguid_6a.png "ProcGuid_6a"), do not appear when the data warehouse for the team project is not available.  
+>  Progress, build, and code charts, reports ![Step 1](media/procguid_1.png "ProcGuid_1") through ![Step 6](media/procguid_6a.png "ProcGuid_6a"), do not appear when the data warehouse for the team project is not available.  
   
  To learn more about how to interpret, update, or customize the charts that appear in the Quality dashboard, see the topics in the following table.  
   
 |Web Part|Data displayed|Related topic|  
 |--------------|--------------------|-------------------|  
-|![Step 1](_img/procguid_1.png "ProcGuid_1")|Stacked area graph of the test results of all Test cases grouped by their most recent recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - during the most recent four weeks.<br /><br /> ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
-|![Step 2](_img/procguid_2.png "ProcGuid_2")|Stacked columns that show how many builds **Failed** or **Succeeded** during the most recent four weeks.<br /><br /> ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")|[Build Status](../excel/build-status-excel-report.md)|  
-|![Step 3](_img/procguid_3.png "ProcGuid_3")|A stacked area graph of the cumulative count of all Bugs, grouped by state, during the most recent four weeks.<br /><br /> ![Bug Progress Excel Report](_img/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](../excel/bug-progress-excel-report.md)|  
-|![Step 4](_img/procguid_4.png "ProcGuid_4")|A stacked area graph of how many bugs the team has reactivated from the resolved or closed state during the most recent four weeks.<br /><br /> ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")|[Bug Reactivations](../excel/bug-reactivations-excel-report.md)|  
-|![Step 5](_img/procguid_6.png "ProcGuid_6")|Line chart that shows the percentage of code tested by build verification tests (BVT) and other tests during the most recent four weeks.<br /><br /> ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](../excel/code-coverage-excel-report.md)|  
-|![Step 6](_img/procguid_6a.png "ProcGuid_6a")|Stacked area graph that shows how many lines of code the team added, removed, and changed in the check-ins before the build during the most recent four weeks.<br /><br /> ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](../excel/code-churn-excel-report.md)|  
-|![Step 7](_img/procguid_7.png "ProcGuid_7")|List of upcoming events. This list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|Not applicable|  
-|![Step 8](_img/procguid_8.png "ProcGuid_8")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
-|![9](_img/procguid_9.png "ProcGuid_9")|List of recent builds and their status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially Succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
-|![10](_img/procguid_10.png "ProcGuid_10")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
+|![Step 1](media/procguid_1.png "ProcGuid_1")|Stacked area graph of the test results of all Test cases grouped by their most recent recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - during the most recent four weeks.<br /><br /> ![Test Plan Progress Excel Report](media/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
+|![Step 2](media/procguid_2.png "ProcGuid_2")|Stacked columns that show how many builds **Failed** or **Succeeded** during the most recent four weeks.<br /><br /> ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")|[Build Status](../excel/build-status-excel-report.md)|  
+|![Step 3](media/procguid_3.png "ProcGuid_3")|A stacked area graph of the cumulative count of all Bugs, grouped by state, during the most recent four weeks.<br /><br /> ![Bug Progress Excel Report](media/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](../excel/bug-progress-excel-report.md)|  
+|![Step 4](media/procguid_4.png "ProcGuid_4")|A stacked area graph of how many bugs the team has reactivated from the resolved or closed state during the most recent four weeks.<br /><br /> ![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR")|[Bug Reactivations](../excel/bug-reactivations-excel-report.md)|  
+|![Step 5](media/procguid_6.png "ProcGuid_6")|Line chart that shows the percentage of code tested by build verification tests (BVT) and other tests during the most recent four weeks.<br /><br /> ![Code Coverage Report](media/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](../excel/code-coverage-excel-report.md)|  
+|![Step 6](media/procguid_6a.png "ProcGuid_6a")|Stacked area graph that shows how many lines of code the team added, removed, and changed in the check-ins before the build during the most recent four weeks.<br /><br /> ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](../excel/code-churn-excel-report.md)|  
+|![Step 7](media/procguid_7.png "ProcGuid_7")|List of upcoming events. This list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](media/sharepoint_dashboard.png "SharePoint_Dashboard")|Not applicable|  
+|![Step 8](media/procguid_8.png "ProcGuid_8")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](media/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
+|![9](media/procguid_9.png "ProcGuid_9")|List of recent builds and their status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](media/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](media/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](media/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](media/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](media/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](media/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](media/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially Succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
+|![10](media/procguid_10.png "ProcGuid_10")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](media/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md)|  
   
 ##  <a name="Activities"></a> Required activities for monitoring quality  
  For the Quality Dashboard to be useful and accurate, the team must perform the activities that this section describes.  

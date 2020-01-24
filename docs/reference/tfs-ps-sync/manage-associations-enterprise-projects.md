@@ -1,19 +1,20 @@
----
-title: Manage the association of enterprise projects to projects
+﻿---
+title: Manage association of enterprise projects to projects
 titleSuffix: TFS 
 description: Understand how to map enterprise projects using Team Foundation Server & Project Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b759773e-1c79-4e2e-abdf-522e1a34fdfb
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
 # Manage the association of enterprise projects to projects
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> To support synchronization of data between an enterprise project plan and a project, you must map the plan to the project. You can map multiple plans to the same project. To map enterprise projects, you must have registered and mapped the instance of Project Web Access or Project Web App (PWA) that is associated with the enterprise project to a project collection.  
   
@@ -70,7 +71,7 @@ ms.date: 01/12/2017
 ##  <a name="MapPlanToProject"></a> Associate an enterprise project plan with a project  
  You can map an enterprise project plan to a project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
- ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
+ ![Associate enterprise projects with a project](media/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
   
 #### To map an enterprise project plan to a project  
   
@@ -114,9 +115,9 @@ ms.date: 01/12/2017
   
 #### For information about how to add users to the enterprise resource pool, see the following pages on the Microsoft website:  
   
-- [Add resources to the enterprise resource pool](http://go.microsoft.com/fwlink/?LinkId=203356)  
+- [Add resources to the enterprise resource pool](https://go.microsoft.com/fwlink/?LinkId=203356)  
   
-- [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](http://go.microsoft.com/fwlink/?LinkId=203359)  
+- [Manage Enterprise Resource Pool synchronization with Active Directory in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=203359)  
   
   In addition, you must grant users in Team Foundation access to sign in to Project Server. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   

@@ -5,10 +5,10 @@ title: Create a consumer service for service hooks | Extensions for Azure DevOps
 description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps Services.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/22/2016
 ---
 
@@ -18,40 +18,43 @@ Service hooks enable you to perform tasks on other services when events happen i
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 ## How service hooks work
+
 Service hook **publishers** define a set of *events*. **Subscriptions** listen for the *events* and define **actions** to take based on the event. 
 Subscriptions also target **consumers**, which are external services that can perform their own actions, when an event occurs. 
 
-<center><img src="./_img/service-hooks.png" alt="Service Hooks Diagram"/></center>
+<center><img src="./media/service-hooks.png" alt="Service Hooks Diagram"/></center>
 
 ## Tutorial Overview - Custom Consumer Service
 
 This tutorial walks through developing an extension that implements a **sample consumer service** that includes:
--	Supported events that trigger actions to be taken
+- Supported events that trigger actions to be taken
     - Code pushed
     - Pull request created
     - Pull request updated
 -   Supported actions to take when events occur
     - Perform action
 
-> Note: This tutorial will refer to the home directory for your project as "home". 
+> Note: This tutorial refers to the home directory for your project as "home". 
 
-<center><img src="./_img/consumer-service.png" alt="Sample Consumer Service"/></center>
+<center><img src="./media/consumer-service.png" alt="Sample Consumer Service"/></center>
 
 ## Create the extension
 ### Add an icon
 
 Add a square image in the ```images``` folder that identifies your extension.
-It will displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
-but below is a sample image you can use along with how it will look with the extension.
+It'a displayed in the Marketplace, and when someone installs your extension. You don't need to do this for your extension to work, 
+but below is a sample image you can use along with how it looks with the extension.
 
 >NOTE: Name the image ```logo.png```, or remove the "icons" sections from the manifest file if you wish to skip this step.
 
 <div style="vertical-align:middle;display:block;width:60%;margin-left:auto;margin-right:auto">
-<img alt="Sample logo" src="../get-started/_img/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="Sample logo" src="../get-started/media/logo.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-<img alt="first sample extension example" src="../get-started/_img/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
+<img alt="first sample extension example" src="../get-started/media/first-sample-extension.png" style="display:block;padding-bottom:10px;margin-left:auto;margin-right:auto">
 </div>
 
 ### Create the manifest file and populate it
@@ -135,7 +138,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
     ]
 }
 ```
-> Note: You will need to update the `publisher` property.
+> Note: You must update the `publisher` property.
 
 The `icons` stanza specifies the path to your extension's icon in your manifest.
 

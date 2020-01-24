@@ -5,10 +5,10 @@ ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.manager: jillfra
-ms.author: juliobv
-author: juliobbv
-ms.date: 06/14/2019
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 01/09/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -104,7 +104,7 @@ Next, we'll create the Dockerfile.
     
     Remove-Item Env:AZP_TOKEN
     
-    if (Test-Path Env:AZP_WORK) {
+    if ($Env:AZP_WORK -and -not (Test-Path Env:AZP_WORK)) {
       New-Item $Env:AZP_WORK -ItemType directory | Out-Null
     }
     
@@ -143,6 +143,9 @@ Next, we'll create the Dockerfile.
         --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
         --replace
       
+      # remove the administrative token before accepting work
+      Remove-Item $Env:AZP_TOKEN_FILE
+
       Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
       
       .\run.cmd
@@ -222,7 +225,9 @@ Next, we'll create the Dockerfile.
             git \
             iputils-ping \
             libcurl3 \
-            libicu55
+            libicu55 \
+            libunwind8 \
+            netcat
 
     WORKDIR /azp
 
@@ -326,12 +331,15 @@ Next, we'll create the Dockerfile.
       --work "${AZP_WORK:-_work}" \
       --replace \
       --acceptTeeEula & wait $!
+    
+    # remove the administrative token before accepting work
+    rm $AZP_TOKEN_FILE
 
     print_header "4. Running Azure Pipelines agent..."
 
     # `exec` the node runtime so it's aware of TERM and INT signals
     # AgentService.js understands how to handle agent self-update and restart
-    exec ./externals/node10/bin/node ./bin/AgentService.js interactive
+    exec ./externals/node/bin/node ./bin/AgentService.js interactive
     ```
 
 6. Run the following command within that directory:

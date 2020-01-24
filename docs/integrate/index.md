@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Integrating custom apps and third party services with Azure DevOps Services and Team Foundation Server
 description: Overview of integrating with Azure DevOps Services and Team Foundation Server
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: ">= tfs-2013"
 ms.author: chcomley
 author: chcomley
@@ -44,7 +44,7 @@ Check out the quick starts to get you started:
 
 ## How-to guides
 
-- [Authenticate with PATs](./get-started/authentication/pats.md)
+- [Authenticate with PATs](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
 - [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/azure/devops/integrate/toc.json)
 

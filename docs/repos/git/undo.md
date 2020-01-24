@@ -5,7 +5,7 @@ description: Undoing Changes with Git in Azure Repos using reset and revert
 ms.assetid: 02cdccb4-373d-4bd0-8053-6432f859e495
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -44,11 +44,11 @@ Restore file contents back to a known good version, removing unwanted changes.
 #### [Visual Studio](#tab/visual-studio/)
 Visual Studio 2015 &amp; 2017
 
-0. Open up the **Changes** view in Team Explorer.
-1. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
-2. Right-click that file and select **Undo Changes**.
+1. Open up the **Changes** view in Team Explorer.
+2. Under the **Changes** section, find the file that you want to restore to the previous version. If your change is staged, remove it from the **Staged Changes** section by right-clicking and selecting **Unstage**.
+3. Right-click that file and select **Undo Changes**.
 
-    ![Reset a single file with Git in Visual Studio](_img/vs_reset_single_file.gif)
+    ![Reset a single file with Git in Visual Studio](media/vs_reset_single_file.gif)
 
 #### [Command Line](#tab/command-line/)
 You can use the `checkout` command and give it the filename(s) to change. Use wildcards for undoing changes to multiple files.
@@ -79,7 +79,7 @@ in a `revert`, making it safe to use when working with others.
 Open up the **Changes** view in Team Explorer. Select **Actions** and choose **View History** from the drop-down. In the history window that appears, right-click the commit to undo and
 select **Revert** from the context menu.
 
-![Reset a branch from Visual Studio](_img/vs_revert_changes.png)
+![Reset a branch from Visual Studio](media/vs_revert_changes.png)
 
 # [Command Line](#tab/command-line)
 
@@ -102,12 +102,12 @@ to simply discard all changed files since the last commit and return the files t
 > Don't use `reset` on branches shared with others. Use [revert](undo.md#revert) instead.
 
 #### [Visual Studio](#tab/visual-studio/)
-0. Open up the **Changes** view in Team Explorer. 
-1. Select **Actions** and choose **View History** from the drop-down. 
-2. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
-3. Choose **Reset and delete changes...**.
+1. Open up the **Changes** view in Team Explorer. 
+2. Select **Actions** and choose **View History** from the drop-down. 
+3. In the history window that appears, right-click the commit to reset the repo to and select **Reset** from the context menu. 
+4. Choose **Reset and delete changes...**.
 
-    ![Reset a branch from Visual Studio](_img/vs_reset_branch.png)
+    ![Reset a branch from Visual Studio](media/vs_reset_branch.png)
 
 #### [Command Line](#tab/command-line/)
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">

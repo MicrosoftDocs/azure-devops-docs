@@ -5,15 +5,17 @@ description: TFS SharePoint integration - Update an Excel chart on a SharePoint 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
 # Update Excel Chart after SharePoint integration is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
 Excel charts continue to work, even after disabling SharePoint integration. Displaying Excel Charts on SharePoint is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 
@@ -30,19 +32,19 @@ Follow these steps to update the Data Connection string:
 
 1.	Click the Chart Title to open the Excel workbook. 
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-1-click-title.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-1-click-title.png)
 
 2.	Edit the workbook using Excel
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-2.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-2.png)
 
 3.	If the team project name has changed, update the "Team Project Hierarchy" filter:
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-3.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-3.png)
 
 4.	If the location or name of the TFS cube has changed, update the Data Connection string:
 
-    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./_img/update-excel-chart-step-4.png)
+    ![TFS/SharePoint Integration - Update Excel Chart - Step 1](./media/update-excel-chart-step-4.png)
 
     Update the connection string to match the new server location and/or name of your TFS cube:
 

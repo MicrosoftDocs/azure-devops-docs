@@ -1,5 +1,5 @@
----
-title: Filter a wiki TOC or print a wiki page in Azure DevOps
+﻿---
+title: Filter a wiki TOC or print a wiki page
 titleSuffix: Azure DevOps 
 description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps 
 ms.technology: devops-collab
@@ -7,17 +7,17 @@ ms.custom: wiki
 ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.reviewer: sancha
+ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
 ms.date: 11/19/2018  
 ---
 
 # Filter the contents of a wiki or print a page
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 To focus on a single page or several pages, use the Filter pages feature in the TOC. Or, to find pages containing a phrase or keyword, you can use the [Search wiki in this project](search-wiki.md).
 
@@ -28,7 +28,7 @@ To print a wiki page, you can select a page and print it.
 Enter a title, keyword, or character string into the **Filter pages** box to quickly find pages whose title contains the keyword.
 
 > [!div class="mx-imgBorder"]  
-> ![Filter page by title](_img/wiki/filter-box.png)
+> ![Filter page by title](media/wiki/filter-box.png)
 
 <a id="print-page"></a>
 
@@ -37,7 +37,7 @@ Enter a title, keyword, or character string into the **Filter pages** box to qui
 The **Print page** menu option allows you to use your browser print function to send a page to a printer or save as a PDF. Currently, you can only print a single page at a time.
 
 > [!div class="mx-imgBorder"]  
-> ![Print page](_img/wiki/print-page.png)
+> ![Print page](media/wiki/print-page.png)
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  

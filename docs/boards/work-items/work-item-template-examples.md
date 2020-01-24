@@ -5,7 +5,7 @@ description: Sample work item templates to pre-populate fields and provide guida
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.date: 04/24/2019
 
 # Sample work item templates  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following objectives:
 
@@ -27,7 +27,7 @@ Work item templates can help save time and provide guidance to your team when de
 Review this article for examples of defining specific values of work item templates. For guidance on adding, managing, and applying work item templates, see [Use templates to add and update work items](../backlogs/work-item-template.md).
 
 > [!NOTE]  
-> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/track-issues-tasks.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
+> Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
 <a id="area-path"> </a> 
@@ -39,7 +39,7 @@ As an organization grows, the number of product or feature areas and number of t
 In this example, the Voice team sets the <strong>Area Path</strong>=`Fabrikam Fiber/Voice`. 
 
 > [!div class="mx-imgBorder"]  
-> ![Capture template dialog](_img/template/area-path.png) 
+> ![Capture template dialog](media/template/area-path.png) 
 
 To learn more about area paths, see [About area and iteration paths (aka sprints)](../../organizations/settings/about-areas-iterations.md). 
 
@@ -58,12 +58,12 @@ For example, here we add the following syntax into the <strong>Repos Steps</stro
 > ```
 > 
 > [!div class="mx-imgBorder"]  
-> ![Capture template dialog](_img/template/repo-steps.png) 
+> ![Capture template dialog](media/template/repo-steps.png) 
 
 The work item form renders this as shown. 
 
 > [!div class="mx-imgBorder"]  
-> ![Capture template dialog](_img/template/repo-steps-rendered.png) 
+> ![Capture template dialog](media/template/repo-steps-rendered.png) 
 
 
 For more information about rich-text fields, see [Share information within work items and social tools](../queries/share-plans.md). 
@@ -81,7 +81,7 @@ To add two or more tags, add them all within a single <strong>Tags (Add)</strong
 For example, here we add Web and Sept Release.
 
 > [!div class="mx-imgBorder"]  
-> ![Capture template dialog](_img/template/add-tags.png) 
+> ![Capture template dialog](media/template/add-tags.png) 
 
 To learn more about tags, see [Add work item tags to categorize and filter lists and boards](../queries/add-tags-to-work-items.md). 
 
@@ -94,7 +94,7 @@ You can pre-populate a custom field that has been added to the work item type. P
 For example, the <strong>Triage</strong> custom field can be set to `False`, indicating the bug needs to be triaged. 
 
 > [!div class="mx-imgBorder"]  
-> ![Capture template dialog](_img/template/custom-field.png) 
+> ![Capture template dialog](media/template/custom-field.png) 
 
 
 ## Access additional features through extensions  

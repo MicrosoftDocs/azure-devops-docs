@@ -6,18 +6,18 @@ description: Understand how permissions and roles are used to securely manage bu
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 02/12/18
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/12/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Pipeline permissions and security roles
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
 
@@ -29,7 +29,7 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../organizations/security/_shared/build-release.md)]
+[!INCLUDE [temp](../../organizations/security/includes/build-release.md)]
 
 ## Security of agents and library entities
 
@@ -76,13 +76,11 @@ The following permissions are defined for pipelines. All of these can be set at 
 <p />
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
-**Project Collection Administrators**, **Project Administrators**, and
-**Build Administrators** are given all of the above permissions by
+<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
+<strong>Build Administrators</strong> are given all of the above permissions by
 default.
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
-
-* By default, contributors in a project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
 
 * In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
@@ -102,11 +100,11 @@ and to lock down the production stage for an application at
 the other extreme.
 
 To set permissions at project level for all release
-definitions in a project, open the shortcut menu from the ![drop-down list](_img/drop-down-list-icon.png)
+definitions in a project, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 icon next to **All release pipelines** and choose **Security**.
 
 To set or override the permissions for a specific release
-pipeline, open the shortcut menu from the ![drop-down list](_img/drop-down-list-icon.png)
+pipeline, open the shortcut menu from the ![drop-down list](media/drop-down-list-icon.png)
 icon next to that pipeline name. Then choose **Security** to open the
 **Permissions** dialog.
 
@@ -128,19 +126,19 @@ The following permissions are defined for releases. The scope column explains wh
 > | **Edit release stage** | Can edit stage(s) in release pipeline(s). To save the changes to the release pipeline, the user also needs **Edit release pipeline** permission. This permission also controls whether a user can edit the configuration inside the stage of a specific release instance. The user also needs **Manage releases** permission to save the modified release. | Project, Release pipeline, Stage |
 > | **Manage deployments** | Can initiate a direct deployment of a release to a stage. This permission is only for direct deployments that are manually initiated by selecting the **Deploy** or **Redeploy** actions in a release. If the condition on a stage is set to any type of automatic deployment, the system automatically initiates deployment without checking the permission of the user that created the release. | Project, Release pipeline, Stage |
 > | **Manage release approvers** | Can add or edit approvers for stage(s) in release pipeline(s). This permissions also controls whether a user can edit the approvers inside the stage of a specific release instance. | Project, Release pipeline, Stage |
-> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific stage in a release instance, the user also needs **Edit release stage** permission. | Project, Release pipeline |
+> | **Manage releases** | Can edit the configuration in releases. To edit the configuration of a specific stage in a release instance (including variables marked as `settable at release time`), the user also needs **Edit release stage** permission. | Project, Release pipeline |
 > | **View release pipeline** | Can view release pipeline(s). | Project, Release pipeline |
 > | **View releases** | Can view releases belonging to release pipeline(s). | Project, Release pipeline |
 
 <p />
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
-**Project Collection Administrators**, **Project Administrators**, and
-**Release Administrators** are given all of the above permissions by
-default. **Contributors** are given all permissions except
-**Administer release permissions**. **Readers**, by default,
-are denied all permissions except **View release pipeline** and
-**View releases**.
+<strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
+<strong>Release Administrators</strong> are given all of the above permissions by
+default. <strong>Contributors</strong> are given all permissions except
+<strong>Administer release permissions</strong>. <strong>Readers</strong>, by default,
+are denied all permissions except <strong>View release pipeline</strong> and
+<strong>View releases</strong>.
 
 ## Task group permissions
 Task group permissions follow a hierarchical model.
@@ -161,19 +159,19 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab in **Azure Pipelines**.
 
-[!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/library-roles.md)]
 
 ## Service connection security roles
 
 You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/service-endpoint-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
 You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/deployment-pool-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
 
 ## Related notes 

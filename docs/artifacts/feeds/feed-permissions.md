@@ -4,9 +4,9 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
@@ -38,26 +38,26 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 ## Editing permissions for a feed
 
-[!INCLUDE [edit-feed](../_shared/edit-feed.md)]
+[!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
 Select **Permissions**.
 
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![Editing a feed's permissions](_img/editfeeddialog-azure-devops-newnav.png)
+>![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Editing a feed's permissions](_img/editfeeddialog1.png)
+![Editing a feed's permissions](media/editfeeddialog1.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
-![Editing a feed's permissions](_img/editfeeddialog1.png)
+![Editing a feed's permissions](media/editfeeddialog1.png)
 
 ::: moniker-end
 
@@ -77,3 +77,11 @@ To use packages from a feed in Azure Pipelines, the appropriate build identity m
 ## Sharing packages with everyone in your organization
 
 If you want to make the packages in a feed available to all users in your organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.
+
+::: moniker range="azure-devops"
+
+## Sharing packages publicly with anonymous users
+
+You can also make your packages available to anonymous users with limited access by [creating a public feed](../tutorials/share-packages-publicly.md).
+
+::: moniker-end

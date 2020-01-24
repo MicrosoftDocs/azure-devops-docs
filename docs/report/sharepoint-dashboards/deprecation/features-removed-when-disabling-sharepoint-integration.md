@@ -5,16 +5,17 @@ description: TFS SharePoint integration - Features removed when disabling ShareP
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
-ms.author: kaelliauthor: KathrynEE
-monikerRange: '>=tfs-2013 <= tfs-2017'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
 # Features removed when disabling SharePoint integration
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
 
 With TFS 2018, we  no longer offer the TFS Extension for SharePoint. For more information, read the [Discontinuing the pre-TFS 2018 SharePoint integration model](./discontinue-pre-tfs-2017-sharepoint-integration.md)
@@ -29,26 +30,26 @@ Customers can create a SharePoint site using SharePoint's own interface. SharePo
 
 Additionally, Microsoft has introduced [Microsoft Teams](https://products.office.com/microsoft-teams) which allows teams to collaborate on a set of shared resources. Every Team gets a shared SharePoint site, OneNote, and Documents library. 
 
-We already offer [integration with Microsoft Teams](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/02/microsoft-teams-integration-with-team-services/) for both Azure DevOps Services and TFS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
+We already offer [integration with Microsoft Teams](https://devblogs.microsoft.com/premier-developer/integrating-visual-studio-team-services-with-microsoft-teams/) for both Azure DevOps Services and TFS. As we look to the future, we are looking for more opportunities to integrate with both Microsoft Teams and SharePoint.
  
 ## TFS web parts on Classic SharePoint sites
 SharePoint web parts display TFS data such as work item summary, recent builds, recent check-ins, and work item queries. These web parts display on classic SharePoint sites but will not display on the latest versions of SharePoint sites offered in SharePoint 2016 or SharePoint Online. Going forward, we will no longer support these SharePoint web parts.
 
 **TFS web parts - summary lists**
 
-![TFS SharePoint Web Parts](./_img/sharepointwebparts.png)
+![TFS SharePoint Web Parts](./media/sharepointwebparts.png)
 
 **TFS web parts - query-based lists**
 
-![TFS SharePoint Web Parts - Query lists](./_img/sharepointwebparts-query-lists.png)
+![TFS SharePoint Web Parts - Query lists](./media/sharepointwebparts-query-lists.png)
 
 After upgrading to TFS 2018 or to SharePoint 2016, your TFS SharePoint sites will look something like this:
 
-![Discontinued Features as part of disabling SharePoint integration - SharePoint Site After upgrade](./_img/sharepoint-2016-upgrade-after-upgrade-site-example.png)
+![Discontinued Features as part of disabling SharePoint integration - SharePoint Site After upgrade](./media/sharepoint-2016-upgrade-after-upgrade-site-example.png)
 
 Azure DevOps Services and TFS offer [built-in dashboards](../../dashboards.md). Each Azure DevOps Services and TFS team can create any number of dashboards to meet their needs. Here is an example:
 
-![TFS/Azure DevOps Services dashboards](./_img/tfsdashboard.jpg)
+![TFS/Azure DevOps Services dashboards](./media/tfsdashboard.jpg)
 
 We will continue to invest in our built-in dashboards solution. We continue to develop widgets to provide instant insights into your data. Additionally, you can find widgets developed by our partners in the [VSTS Marketplace](https://marketplace.visualstudio.com/search?term=widgets&target=VSTS&category=All%20categories&sortBy=Relevance). 
 
@@ -100,11 +101,11 @@ Quick links are listed on the left side navigation pane of a TFS SharePoint site
 These links will no longer work after you disable the SharePoint integration. You will need to either edit the links to point to the correct location, or delete them.
 
 ## Manage a Documents library using the Team Explorer Documents pane
-If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/sharepoint-dashboards/toc.json&bc=/azure/devops/report/sharepoint-dashboards/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
+If you have [configured a SharePoint site for a team project](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), Team Explorer displays a Documents pane to allow you to manage the Documents libraries on that SharePoint site. 
 
 Going forward, the Documents pane within Team Explorer will no longer be supported. 
 
-![Team Explorer Documents Pane](./_img/documentspane.png)
+![Team Explorer Documents Pane](./media/documentspane.png)
 
 We encourage customers to use [the OneDrive for Business sync client](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49), which works for both [SharePoint 2016](https://technet.microsoft.com/library/dn232145(v=office.16).aspx) and SharePoint Online. The OneDrive for Business sync client lets you select any SharePoint document library and sync the files to your local computer. The user can edit the files using Windows File Explorer, and changes are synced back to SharePoint. 
 
@@ -115,11 +116,11 @@ Additionally, if you are using [Microsoft Teams](https://products.office.com/mic
 ## Project portal settings
 Project portal settings that you configure from the Team Explorer pane allow you to configure the Project Portal link. It could point to a SharePoint site or any Web site. After disabling SharePoint integration, you will not be able to specify a SharePoint site. The Project Portal link only appeared on the Documents Pane. 
 
-![Discontinued Features as part of disabling SharePoint integration - Project Portal Settings](./_img/discontinued-features-project-portal-settings.png)
+![Discontinued Features as part of disabling SharePoint integration - Project Portal Settings](./media/discontinued-features-project-portal-settings.png)
 
 ## Process guidance settings
 Additionally, you could define the location of Process Guidance as a SharePoint site or any Web site. After disabling SharePoint integration, you will not be able to specify a SharePoint site. The Process Guidance link was used by Quick Links on the TFS SharePoint site. You may want to remove those links from your SharePoint sites or replace them with a hyperlink to your process guidance. 
 
-![Discontinued Features as part of disabling SharePoint integration - Process Guidance Settings](./_img/discontinued-features-process-guidance-settings.png)
+![Discontinued Features as part of disabling SharePoint integration - Process Guidance Settings](./media/discontinued-features-process-guidance-settings.png)
 
 

@@ -5,7 +5,7 @@ description: Provides the list of errors when the New Team Project Wizard unable
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6fda9d67-bbdc-432d-949a-2814e499b2c3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 # TF30169: The New Team Project Wizard was unable to download the process template {0}.
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the project. This error can occur due to one of the following conditions:  
   

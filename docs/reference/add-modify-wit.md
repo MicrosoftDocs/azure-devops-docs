@@ -5,7 +5,7 @@ description: Modify or add a work item type to support queries, reports, and wor
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 01/24/2019
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Your project contains a number of work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 
@@ -65,21 +65,21 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
-   [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
-1. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
+2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
     `witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"`  
 
     An example of a *CollectionURL* is `http://MyServer:8080/tfs/TeamProjectCollectionName`.  
 
-2. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
+3. Edit the file. For details, see [Index to XML element definitions](xml/xml-element-reference.md).  
 
-3. Import the WIT definition file.  
+4. Import the WIT definition file.  
 
    `witadmin importwitd /collection:CollectionURL /p:ProjectName /f:"DirectoryPath/FileName.xml"`  
 
-4. Open the web portal or refresh the page to view the changes.  
+5. Open the web portal or refresh the page to view the changes.  
 
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
@@ -90,7 +90,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 
 To add a custom WIT or modify an existing WIT, you define or modify the XML definition file for the WIT and then import it to your project [based on the process model you use](customize-work.md). You modify a WIT by specifying the elements defined within the three main sections of the WIT definition file: **FIELDS**, **WORKFLOW**, and **FORM**.  
 
-![Summary of WIT elements](_img/IC729919.png)
+![Summary of WIT elements](media/IC729919.png)
 
 The easiest way to add a new WIT is to copy an existing WIT and then modify the definition file. 
 
@@ -104,7 +104,9 @@ You add fields and field rules to the **FIELDS** section. For the field to appea
 
 For example, to add the work item ID to a form, specify the following XML syntax within the `FORM` section.
 
-    <Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```xml
+<Control FieldName="System.ID" Type="FieldControl" Label="ID" LabelPosition="Left" />
+```
 
 To learn more about defining fields, see [Add or modify a field](add-modify-field.md).
 
@@ -113,7 +115,7 @@ To learn more about defining fields, see [Add or modify a field](add-modify-fiel
 
 **STATES**  and **REASONS** sections within the **WORKFLOW** specify the pick list values in the **State** and **Reason** fields. They track the status of work items. The **TRANSITIONS** section specifies the valid transitions between states, as shown in the following illustration. You specify both forward and regressive transitions.
 
-![Example workflow state diagram, Agile user story](../boards/work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)
+![Example workflow state diagram, Agile user story](../boards/work-items/guidance/media/ALM_PT_Agile_WF_UserStory.png)
 
 You change the workflow to accomplish the following objectives:
 
@@ -163,11 +165,11 @@ The following illustrations highlight the most common elements on work item form
 
 **Web form with the new form enabled (VSTS, TFS 2017)**  
 
-![Header element within web form](xml/_img/weblayout-system-controls-details-page.png)
+![Header element within web form](xml/media/weblayout-system-controls-details-page.png)
  
 **Old web form in use (TFS 2015, TFS 2013)**  
 
-![WIT form controls ](_img/IC714121.png)
+![WIT form controls ](media/IC714121.png)
 
 You can customize the form to accomplish the following objectives:  
 
@@ -185,9 +187,9 @@ The Agile planning tools&mdash;product backlog, sprint backlog, and task board p
 
 For example, you can add bugs from the product backlog page.
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../includes/image-differences.md)]
 
-![](_img/add-modify-wit-quick-add-panel.png)
+![](media/add-modify-wit-quick-add-panel.png)
 
 
 To learn how to add or remove WITs from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new WIT to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).
@@ -201,7 +203,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 > [!NOTE]    
 >**Feature availability:** <!---For Hosted XML process model, you can customize the WIT color, icon, and workflow state color. -->For On-premises XML, you can customize the workflow state color for TFS 2015.2 or later versions, and you can customize the WIT icon for TFS 2017.2 and later versions.  
  
-<img src="_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Change the type of an existing work item  
@@ -210,7 +212,7 @@ See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-i
 
 When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
 
-![Clone a WIT](_img/IC710198.png)  
+![Clone a WIT](media/IC710198.png)  
 
 Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 
@@ -237,20 +239,24 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 
 -   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
-        <TRANSITION from=" " to="New">
-           <FIELDS>
-              <FIELD refname="System.CreatedBy">
-                <VALIDUSER for="Allowed Group" not="Disallowed Group" />
-              </FIELD>
-           </FIELDS>
-        </TRANSITION> 
+    ```xml
+    <TRANSITION from=" " to="New">
+        <FIELDS>
+            <FIELD refname="System.CreatedBy">
+            <VALIDUSER for="Allowed Group" not="Disallowed Group" />
+            </FIELD>
+        </FIELDS>
+    </TRANSITION> 
+    ```
 
 <a id="delete-wit">  </a>
 ## Delete a WIT (On-premises XML) 
 
 To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
-    witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
+witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
+```
 
 When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
 
@@ -267,7 +273,7 @@ Other related topics or resources:
 - [**witadmin** command-line tools](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  
 - [Customize cards on boards](../boards/boards/customize-cards.md)  
-- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+- [Team Foundation Server - Project Management & Work Item forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 
 
 ## Rename a WIT (On-premises XML) 

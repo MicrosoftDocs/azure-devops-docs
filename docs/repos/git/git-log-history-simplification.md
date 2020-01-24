@@ -3,9 +3,9 @@ title: Version Control - How to Simply Git Log History
 description: How git log history simplification works, and why it can lead to confusion.
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-whitepapers
+ms.technology: devops-code-git
 ms.assetid: 663ea04b-ee1e-41f9-8c5b-dfc269b093c2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 06/01/2016
 ms.author: mlearned
 author: mlearned
@@ -42,7 +42,7 @@ In order to turn off history simplification, we need to use the command line swi
 
 This is all nice and theoretical, but let's create our own example of history simplification so we can see how it works. First, let's look at a diagram of the history we are going to create:
 
-![Git Branches](./_img/git-log-history-simplification/history-simplification-branches.png)
+![Git Branches](./media/git-log-history-simplification/history-simplification-branches.png)
 
 As you can see, we are going to:
 
@@ -175,10 +175,10 @@ Now, instead of panicking, you know that:
 * History simplification for files is turned on by default
 * The `--full-history` flag will give you a more comprehensive file history
 
-**Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/10/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
+**Update**: Since I wrote this article, [Azure DevOps Services has introduced a number of awesome history viewing options on the web](https://devblogs.microsoft.com/devops/announcing-git-graph-and-advanced-filters-to-visualize-commit-history/). 
 What this means is that if you don't want to go slogging through the command line, you can simply pull up the file you wish to view history for in our explorer and you will be presented with the below history filter where you can specify simple or non-simple history views:
 
-![Git Filters](./_img/git-log-history-simplification/Filters.png)
+![Git Filters](./media/git-log-history-simplification/Filters.png)
 
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

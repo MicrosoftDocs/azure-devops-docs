@@ -5,16 +5,16 @@ ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Associate automated tests with test cases
 
-[!INCLUDE [version-header](_shared/version-vs-only.md)] 
+[!INCLUDE [version-header](includes/version-vs-only.md)] 
 
 Consider using Visual Studio to associate automated tests with a test case when:
 
@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
-  Automated tests can also be run from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+  Automated tests can also be run from [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
   If you are using XAML builds you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 
@@ -69,7 +69,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 1. Open your solution in Visual Studio Enterprise or Professional 2017 or a later version.
 
 2. If you don't know the identifier of the work item for the test case,
-   locate the test case in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
+   locate the test case in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
 3. When you know the identifier of the work item for the test case:
 
@@ -83,7 +83,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 
    - In the dialog that opens, type the test case identifier and choose **Add Association**, then choose **Save**.
 
-   ![Associate Automation With Test Case](_img/associate-automated-test-with-test-case/test-explorer-associate.png)
+   ![Associate Automation With Test Case](media/associate-automated-test-with-test-case/test-explorer-associate.png)
 
    > The dialog shows a list of test cases currently associated with the selected test method.
    You cannot associate more than one test method with a test case, but you can associate a
@@ -128,7 +128,7 @@ You can also run tests using Microsoft Test Manager and a
 instead of the default Azure Pipelines or TFS UI in your web browser,
 change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio.
 
-![Change work item display mode](_img/work-item-compatibility.png)
+![Change work item display mode](media/work-item-compatibility.png)
 
 ## See Also
 
@@ -136,4 +136,4 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

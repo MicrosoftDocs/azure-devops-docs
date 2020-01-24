@@ -7,14 +7,14 @@ ms.technology: devops-agile
 ms.assetid: 04f1daff-fe12-4c1f-8625-e884f0fb2c7c
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: conceptual
 ms.date: 04/05/2017
 ---
 
 # Combine list types
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]  
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
   

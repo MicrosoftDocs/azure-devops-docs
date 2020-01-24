@@ -5,7 +5,7 @@ description: Upload or download the Microsoft Project mapping file using the TFS
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2018'
@@ -15,11 +15,11 @@ ms.date: 01/28/2019
 
 # Upload or download the Microsoft Project Mapping file
 
-[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
+[!INCLUDE [temp](../../includes/version-tfs-2018-earlier.md)]  
   
 Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
 
-[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+[!INCLUDE [temp](includes/project-integration-deprecated.md)]
 
 You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   

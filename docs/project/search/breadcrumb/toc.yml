@@ -5,7 +5,4 @@
   - name: Get Started
     tocHref: /azure/devops/project/search/
     topicHref: /azure/devops/get-started/index
-    items: 
-    - name: Search
-      tocHref: /azure/devops/project/search/
-      topicHref: /azure/devops/project/search/index
+

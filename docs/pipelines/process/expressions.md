@@ -6,10 +6,10 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 05/23/2019
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 12/20/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,10 +18,10 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Expressions can be used wherever you need to specify a string, boolean, or number value when authoring a pipeline.
+Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
 The most common use of expressions is in [conditions](conditions.md) to determine whether a job or step should run. 
 
 ::: moniker range=">= azure-devops-2019"
@@ -34,6 +34,7 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
+Compile-time expressions can be used anywhere; runtime expressions are more limited.
 
 ```yaml
 # Two examples of expressions used to define variables
@@ -57,6 +58,15 @@ An expression can be a literal, a reference to a variable, a reference to a depe
 
 As part of an expression, you can use boolean, null, number, string, or version literals.
 
+```yaml
+# Examples
+variables:
+  someBoolean: ${{ true }} # case insensitive, so True or TRUE also works
+  someNumber: ${{ -1.2 }}
+  someString: ${{ 'a b c' }}
+  someVersion: ${{ 1.2.3 }}
+```
+
 ### Boolean
 `True` and `False` are boolean literal expressions.
 
@@ -71,6 +81,15 @@ Must be single-quoted. For example: `'this is a string'`.
 
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
+
+You can use a pipe character (`|`) for multiline strings. 
+
+```yaml
+myKey: |
+  one
+  two
+  three
+```
 
 ### Version
 A version number with up to four segments.
@@ -91,7 +110,7 @@ In order to use property dereference syntax, the property name must:
 Depending on the execution context, different variables are available.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
-- If you create release pipelines using classic editor, then [release variables](../release/variables.md) variables are available.
+- If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
 ## Functions
 
@@ -102,12 +121,14 @@ The following built-in functions can be used in expressions.
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `False`
+* Example: `and(eq(variables.letters, 'ABC'), eq(variables.numbers, 123))`
 
 ::: moniker range=">= azure-devops-2019"
 
 ### coalesce
 * Evaluates the parameters in order, and returns the value that does not equal null or empty-string.
 * Min parameters: 2. Max parameters: N
+* Example: `coalesce(variables.couldBeNull, variables.couldAlsoBeNull, 'literal so it always works')`
 
 ::: moniker-end
 
@@ -116,6 +137,7 @@ The following built-in functions can be used in expressions.
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `contains('ABCDE', 'BCD')` (returns True)
 
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
@@ -123,6 +145,11 @@ The following built-in functions can be used in expressions.
 * If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
+
+> [!NOTE]
+> There is no literal syntax in a YAML pipeline for specifying an array.
+> This function is of limited use in general pipelines.
+> It's intended for use in the [pipeline decorator context](../../extend/develop/pipeline-decorator-context.md) with system-provided arrays such as the list of steps.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -178,19 +205,23 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `endsWith('ABCDE', 'DE')` (returns True)
 
 ### eq
 * Evaluates `True` if parameters are equal
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Returns `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `eq(variables.letters, 'ABC')`
 
 ::: moniker range=">= azure-devops-2019"
 
 ### format
-* Evaluates the trailing parameters and inserts them into the leading parameter string.
+* Evaluates the trailing parameters and inserts them into the leading parameter string
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
+* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
@@ -200,12 +231,14 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `ge(5, 5)` (returns True)
 
 ### gt
 * Evaluates `True` if left parameter is greater than the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `gt(5, 2)` (returns True)
 
 ### in
 * Evaluates `True` if left parameter is equal to any right parameter
@@ -213,6 +246,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
+* Example: `in('B', 'A', 'B', 'C')` (returns True)
 
 ::: moniker range="> azure-devops-2019"
 
@@ -229,23 +263,27 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `le(2, 2)` (returns True)
 
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Errors if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `lt(2, 5)` (returns True)
 
 ### ne
 * Evaluates `True` if parameters are not equal
 * Min parameters: 2. Max parameters: 2
 * Converts right parameter to match type of left parameter. Returns `True` if conversion fails.
 * Ordinal ignore-case comparison for Strings
+* Example: `ne(1, 2)` (returns True)
 
 ### not
 * Evaluates `True` if parameter is `False`
 * Min parameters: 1. Max parameters: 1
 * Converts value to Boolean for evaluation
+* Example: `not(eq(1, 2))` (returns True)
 
 ### notIn
 * Evaluates `True` if left parameter is not equal to any right parameter
@@ -253,23 +291,27 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts right parameters to match type of left parameter. Equality comparison evaluates `False` if conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after first match
+* Example: `notIn('D', 'A', 'B', 'C')` (returns True)
 
 ### or
 * Evaluates `True` if any parameter is `true`
 * Min parameters: 2. Max parameters: N
 * Casts parameters to Boolean for evaluation
 * Short-circuits after first `True`
+* Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
 ### startsWith
 * Evaluates `true` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
+* Example: `startsWith('ABCDE', 'AB')` (returns True)
 
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to Boolean for evaluation
+* Example: `xor(True, False)` (returns True)
 
 
 <h2 id="job-status-functions">Job status check functions</h2>
@@ -277,7 +319,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 You can use the following status check functions as expressions in conditions, but not in variable definitions.
 
 <h3 id="always">always</h3>
-* Always evaluates to `True` (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
+* Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled
 * Evaluates to `True` if the pipeline was canceled.
@@ -285,22 +327,22 @@ You can use the following status check functions as expressions in conditions, b
 ### failed
 * For a step, equivalent to `eq(variables['Agent.JobStatus'], 'Failed')`.
 * For a job:
- * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
- * With job names as arguments, evaluates to `True` only if any of those jobs failed.
+  * With no arguments, evaluates to `True` only if any previous job in the dependency graph failed.
+  * With job names as arguments, evaluates to `True` only if any of those jobs failed.
 
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
- * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
- * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
 ### succeededOrFailed
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
 * For a job:
- * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
- * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
+  * With no arguments, evaluates to `True` regardless of whether any jobs in the dependency graph succeeded or failed.
+  * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
 
- > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+  > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
 ## Dependencies
 
@@ -372,7 +414,7 @@ jobs:
 
 ## Filtered arrays
 
-When operating on a collection of items you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
+When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
 
 As an example, consider an array of objects named `foo`. We want to get an array of the values of the `id` property in each object in our array.
 
@@ -444,4 +486,38 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 
 * To Boolean: `True`
 * To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
+
+## Q&A
+
+<!-- BEGINSECTION class="md-qanda" -->
+
+### I want to do something that is not supported by expressions. What options do I have for extending Pipelines functionality?
+
+You can customize your Pipeline with a script that includes an expression. For example, this snippet takes the `BUILD_BUILDNUMBER` variable and splits it with Bash. This script outputs two new variables, `$MAJOR_RUN` and `$MINOR_RUN`, for the major and minor run numbers.
+The two variables are then used to create two pipeline variables, `$MAJOR` and `$MINOR` with [task.setvariable](../scripts/logging-commands.md#task-commands). These variables are available to downstream steps. To share variables across pipelines see [Variable groups](../../pipelines/library/variable-groups.md).
+
+```yaml
+trigger:
+    batch: true
+    branches:
+        include:
+        - master
+steps:
+- bash: |
+    MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
+    echo "This is the major run number: $MAJOR_RUN"
+    
+    MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
+    echo "This is the major run number: $MINOR_RUN"
+    
+    # create pipeline variables
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
+    echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
+
+- bash: |
+    echo My pipeline variable for major run is $MAJOR
+    echo My pipeline variable for minor run is $MINOR
+```
+
+<!-- ENDSECTION -->
 

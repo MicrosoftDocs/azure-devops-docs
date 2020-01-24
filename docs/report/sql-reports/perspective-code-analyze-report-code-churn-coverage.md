@@ -6,30 +6,30 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
 # Analyze and report on code churn and coverage using the code churn and run coverage perspectives
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can report on the software quality by using the Code Churn and Run Coverage perspectives from the SQL Server Analysis Services cube for Visual Studio Team Foundation Server.  By using these perspectives, you can view just the measures, dimensions, and attributes that are associated with the changes in lines of codes and the extent to which code is covered in builds and test runs.  
   
  These perspectives are based on the relational tables that you can use to report on code changes and coverage as a property of the build, the build assembly or platform, the test run, or the changeset. For more information, see [Code Churn tables](table-reference-code-churn.md) and [Run Coverage tables](run-coverage-tables.md).  
   
  
-![Code Churn Measure Group](_img/rpt_codechurn.png "RPT_CodeChurn")
+![Code Churn Measure Group](media/rpt_codechurn.png "RPT_CodeChurn")
 
 By using the Code Churn perspective, you can create reports that answer the following questions:
 - How many files with a specific file name extension changed in a particular build?
 - How many lines of code are in the source base for a particular build?
 - Which changesets have been submitted, and what are the details of each change? (For example, who made the change, which files were changed, and on what date was the change made)?
 
-![Code Coverage Measure Group](_img/rpt_codecoverage.png "RPT_CodeCoverage")
+![Code Coverage Measure Group](media/rpt_codecoverage.png "RPT_CodeCoverage")
 
 By using the Run Coverage perspective, you can create reports that answer the following questions:
 Which assemblies have the least test coverage?<br />-   Which test runs cover the most code?
@@ -43,12 +43,12 @@ Which architectures or build types have the most test coverage?
 ##  Example: Code Churn Report  
 By using a PivotChart report in Excel, you can create a trend report that displays the code churn over time, similar to the report that the following illustration shows.  
   
- ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")  
+ ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")  
   
  The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](../excel/code-churn-excel-report.md).  
   
 ### Select and filter pivot fields  
- ![Pivot Fields for Code Churn Report](_img/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  
+ ![Pivot Fields for Code Churn Report](media/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  
   
  You can create a code churn report by performing the following steps:  
   
@@ -132,7 +132,7 @@ The following table describes the measures in the Run Coverage measure group. By
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
 ||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
@@ -146,7 +146,7 @@ The following table describes the measures in the Run Coverage measure group. By
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)  
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)  
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 -   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  

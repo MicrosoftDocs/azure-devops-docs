@@ -1,12 +1,12 @@
----
-title: Describes work item fields, attributes and how to list them
+﻿---
+title: Work item fields, attributes and how to list them
 titleSuffix: Azure Boards
 description: Understand how fields are defined and modified 
 ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.date: 02/04/2019
 
 # Work item fields and attributes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Work item fields are used to track information. Each work item type (WIT) definition specifies the fields defined for that WIT. Each field is associated with a number of attributes, many of which are set by the system and cannot be changed. 
 
@@ -78,7 +78,7 @@ When you add a custom field to an inherited process, Azure DevOps assigns a refe
 You can view the data type of fields defined for your organization by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields).
 
 > [!div class="mx-imgBorder"]  
-> ![Process>Fields page](../../organizations/settings/work/_img/process/list-fields.png)  
+> ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ You can view the data type of fields defined for your organization by [opening t
 When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). 
 
 > [!div class="mx-imgBorder"]  
-> ![Process>Fields page](../../organizations/settings/work/_img/process/list-fields.png)  
+> ![Process>Fields page](../../organizations/settings/work/media/process/list-fields.png)  
 
 If the On-premises XML process model is used, you can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes. For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
@@ -343,7 +343,7 @@ The following table describes each attribute.
 
 <a id="reportable-attributes" />
   
-::: moniker range="< azure-devops" 
+::: moniker range="< azure-devops"
 
 ## Reportable attributes
 
@@ -388,47 +388,47 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 **Returned data:**
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-"name": "Iteration Path",
-"referenceName": "System.IterationPath",
-"description": "The iteration within which this bug will be fixed",
-"type": "treePath",
-"usage": "workItem",
-"readOnly": false,
-"canSortBy": true,
-"isQueryable": true,
-"supportedOperations": [
-{
-"referenceName": "SupportedOperations.Under",
-"name": "Under"
-},
-{
-"referenceName": "SupportedOperations.NotUnder",
-"name": "Not Under"
-},
-{
-"referenceName": "SupportedOperations.Equals",
-"name": "="
-},
-{
-"referenceName": "SupportedOperations.NotEquals",
-"name": "<>"
-},
-{
-"referenceName": "SupportedOperations.In",
-"name": "In"
-},
-{
-"name": "Not In"
-}
-],
-"isIdentity": false,
-"isPicklist": false,
-"isPicklistSuggested": false,
-"url": "https://dev.azure.com/mseng/_apis/wit/fields/System.IterationPath"
-}
-```
+> ```JSON
+> {
+> "name": "Iteration Path",
+> "referenceName": "System.IterationPath",
+> "description": "The iteration within which this bug will be fixed",
+> "type": "treePath",
+> "usage": "workItem",
+> "readOnly": false,
+> "canSortBy": true,
+> "isQueryable": true,
+> "supportedOperations": [
+> {
+> "referenceName": "SupportedOperations.Under",
+> "name": "Under"
+> },
+> {
+> "referenceName": "SupportedOperations.NotUnder",
+> "name": "Not Under"
+> },
+> {
+> "referenceName": "SupportedOperations.Equals",
+> "name": "="
+> },
+> {
+> "referenceName": "SupportedOperations.NotEquals",
+> "name": "<>"
+> },
+> {
+> "referenceName": "SupportedOperations.In",
+> "name": "In"
+> },
+> {
+> "name": "Not In"
+> }
+> ],
+> "isIdentity": false,
+> "isPicklist": false,
+> "isPicklistSuggested": false,
+> "url": "https://dev.azure.com/mseng/_apis/wit/fields/System.IterationPath"
+> }
+> ```
 
 ::: moniker-end
 
@@ -437,9 +437,9 @@ https://dev.azure.com/fabrikam/_apis/wit/fields/System.IterationPath
 You can list the attributes assigned to a field by using the [**Fields - Get** REST API](/rest/api/azure/devops/wit/fields/get). Enter your organization name for *OrganizationName*. To get started using REST, see [Azure DevOps Services REST API Reference](/rest/api/azure/devops/?view=vsts-rest-tfs-4.1)
 
 > [!div class="tabbedCodeSnippets"]
-```REST
-https://{ServerName:Port}/tfs/{Collection}/_apis/wit/fields/FieldReferenceName?api-version={version}
-```
+> ```REST
+> https://{ServerName:Port}/tfs/{Collection}/_apis/wit/fields/FieldReferenceName?api-version={version}
+> ```
 
 For example, here we list the attributes for the Iteration Path, specifying the reference name, `System.IterationPath`, for the fabrikam server. 
 
@@ -450,47 +450,47 @@ https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPat
 **Returned data:**
 
 > [!div class="tabbedCodeSnippets"]
-```JSON
-{
-"name": "Iteration Path",
-"referenceName": "System.IterationPath",
-"description": "The iteration within which this bug will be fixed",
-"type": "treePath",
-"usage": "workItem",
-"readOnly": false,
-"canSortBy": true,
-"isQueryable": true,
-"supportedOperations": [
-{
-"referenceName": "SupportedOperations.Under",
-"name": "Under"
-},
-{
-"referenceName": "SupportedOperations.NotUnder",
-"name": "Not Under"
-},
-{
-"referenceName": "SupportedOperations.Equals",
-"name": "="
-},
-{
-"referenceName": "SupportedOperations.NotEquals",
-"name": "<>"
-},
-{
-"referenceName": "SupportedOperations.In",
-"name": "In"
-},
-{
-"name": "Not In"
-}
-],
-"isIdentity": false,
-"isPicklist": false,
-"isPicklistSuggested": false,
-"url": "https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=4.1"
-}
-```
+> ```JSON
+> {
+> "name": "Iteration Path",
+> "referenceName": "System.IterationPath",
+> "description": "The iteration within which this bug will be fixed",
+> "type": "treePath",
+> "usage": "workItem",
+> "readOnly": false,
+> "canSortBy": true,
+> "isQueryable": true,
+> "supportedOperations": [
+> {
+> "referenceName": "SupportedOperations.Under",
+> "name": "Under"
+> },
+> {
+> "referenceName": "SupportedOperations.NotUnder",
+> "name": "Not Under"
+> },
+> {
+> "referenceName": "SupportedOperations.Equals",
+> "name": "="
+> },
+> {
+> "referenceName": "SupportedOperations.NotEquals",
+> "name": "<>"
+> },
+> {
+> "referenceName": "SupportedOperations.In",
+> "name": "In"
+> },
+> {
+> "name": "Not In"
+> }
+> ],
+> "isIdentity": false,
+> "isPicklist": false,
+> "isPicklistSuggested": false,
+> "url": "https://fabrikam:8080/tfs/DefaultCollection/_apis/wit/fields/System.IterationPath?api-version=4.1"
+> }
+> ```
 
 ::: moniker-end
 
@@ -510,14 +510,14 @@ For example, you can enter the following command to list the attributes defined 
 Field and attribute information appears for the named field, as shown in this example.  
 
 > [!div class="tabbedCodeSnippets"]
-```CMD
-Field: Microsoft.VSTS.Common.Issue  
-Name: Issue  
-Type: String  
-Reportable As: dimension  
-Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
-Indexed: False  
-```  
+> ```CMD
+> Field: Microsoft.VSTS.Common.Issue  
+> Name: Issue  
+> Type: String  
+> Reportable As: dimension  
+> Use: Adventure Works (Shared Steps), AW Future (Shared Steps), AW Current (Shared Steps)  
+> Indexed: False  
+> ```  
 
 The **Use** parameter indicates the name of each project and the work item type where the field is used. 
 
@@ -530,7 +530,7 @@ The **Use** parameter indicates the name of each project and the work item type 
 
 You can look up the assignments of field attributes using the Work Item Field Explorer tool.  
 
-![Work item field explorer](_img/fields/work-item-field-explorer.png)
+![Work item field explorer](media/fields/work-item-field-explorer.png)
 
 ::: moniker range=">= tfs-2017" 
 
@@ -591,7 +591,7 @@ You can change the field name, the index, and the report attributes for any fiel
 ::: moniker range="azure-devops-2019"  
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
-- [Choose the process model for your project collection](/azure/devops/reference/customize-work#choose-process-model&view=azure-devops-2019)
+- [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
 ::: moniker-end  

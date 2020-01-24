@@ -1,22 +1,23 @@
 ---
-title: Secure files for Azure Pipelines and Team Foundation Server
+title: Secure files for Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand secure files for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: dastahel
-ms.author: madhurig
+ms.manager: mijacobs
+ms.author: vijayma
 ms.date: 12/18/2018
 monikerRange: '>= tfs-2015'
+author: vijayma
 ---
 
 # Secure files
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Use the **Secure Files** library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your source repository. Secure files are defined and managed in the **Library** tab in **Azure Pipelines**.
@@ -50,11 +51,12 @@ Make sure your agent is running version of 2.116.0 or higher. See [Agent version
 
 Make sure [IIS Basic Authentication]( /iis/configuration/system.webserver/security/authentication/basicauthentication) is disabled on the TFS or Azure DevOps Server. 
 
+<a name="secure-file-authorization"></a>
 ### How do I authorize a secure file for use in all pipelines?
 
- 1. Navigate to the **Library** tab in **Azure Pipelines**.
+ 1. In **Azure Pipelines**, select the **Library** tab.
  1. Select the **Secure files** tab at the top. 
  1. Select the secure file you want to authorize. 
- 1. In the details view, below the "Properties" section, select **Authorize for use in all pipelines**, and then select **Save**.
+ 1. In the details view under **Properties**, select **Authorize for use in all pipelines**, and then select **Save**.
 
 <!-- ENDSECTION -->

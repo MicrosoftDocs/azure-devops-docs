@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/RestClient BuildHttpClient2_1 API | Extensions for Azure DevOps Services
+description: Data representation of a build http client 2_1.
 ms.assetid: b90c7972-d5ca-2966-3542-878d86467051
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -680,7 +681,7 @@ Gets details for a build
 
 ### Returns
 
-* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../../TFS/Build/Contracts/Timeline.md)&gt;
+* [IPromise](../../../VSS/References/VSS_WebPlatform_Interfaces/IPromise.md)&lt;[Contracts.Timeline](../../DistributedTask/Contracts/Timeline.md)&gt;
 
 <a name="method_getBuildWorkItemsRefs"></a>
 <h2 class='method'>getBuildWorkItemsRefs()</h2>

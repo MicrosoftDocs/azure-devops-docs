@@ -7,9 +7,9 @@ ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 10/12/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -17,11 +17,11 @@ monikerRange: '>= tfs-2015'
 # Artifacts in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
-> We recommend upgrading from build artifacts to [pipeline artifacts (preview)](pipeline-artifacts.md) for faster output storage speeds. 
+> We recommend upgrading from build artifacts to [pipeline artifacts](pipeline-artifacts.md) for faster output storage speeds. 
 
 Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app.
 
@@ -31,8 +31,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 
 ## Example: Publish a text file as an artifact
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
@@ -48,14 +47,13 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 > [!TIP]
 > If you want to try this and you don't already have a Git repo with an **environment-variables.txt** file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
 
 
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -71,12 +69,10 @@ YAML is not supported in TFS.
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
----
-
+* * *
 ## Example: Publish two sets of artifacts
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
@@ -97,11 +93,10 @@ YAML is not supported in TFS.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 You can create multiple artifact items. For example:
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -117,7 +112,7 @@ You can create multiple artifact items. For example:
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -135,16 +130,14 @@ You can create multiple artifact items. For example:
 
 The completed build delivers two sets of artifacts.
 
-![Artifacts tab of a build with two artifacts](_img/build-with-two-artifacts.png)
+![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
 
 > You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
 
----
-
+* * *
 ## Example: Assemble C++ artifacts into one location and publish as an artifact
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
@@ -153,6 +146,7 @@ The completed build delivers two sets of artifacts.
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
@@ -165,9 +159,8 @@ The completed build delivers two sets of artifacts.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
-![icon](../tasks/utility/_img/copy-files.png) **Utility: Copy Files**
+#### [Classic](#tab/classic/)
+![icon](../tasks/utility/media/copy-files.png) **Utility: Copy Files**
 
 * Source folder:
 
@@ -187,7 +180,7 @@ YAML is not supported in TFS.
    $(Build.ArtifactStagingDirectory)
    ```
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -203,8 +196,7 @@ YAML is not supported in TFS.
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
----
-
+* * *
 ## How do I consume artifacts?
 
 ### Consume artifacts in release pipelines
@@ -219,8 +211,7 @@ You can consume an artifact produced by one job in a subsequent job of the pipel
 
 You can download an artifact directly from a pipeline for use in debugging.
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 ```yaml
 - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/environment-variables.txt
@@ -239,9 +230,8 @@ You can download an artifact directly from a pipeline for use in debugging.
 YAML is not supported in TFS.
 ::: moniker-end
 
-# [Classic](#tab/classic)
-
-![icon](../tasks/utility/_img/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
+#### [Classic](#tab/classic/)
+![icon](../tasks/utility/media/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
 
 * Download artifacts produced by: Current build
 
@@ -259,8 +249,7 @@ YAML is not supported in TFS.
    $(System.ArtifactsDirectory)
    ```
 
----
-
+* * *
 ## Tips
 
 * **Artifact publish location** argument: **Azure Pipelines/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Pipelines or TFS. But if you're using a private Windows agent, you've got the option to [drop to a UNC file share](#unc-file-share).
@@ -279,9 +268,9 @@ YAML is not supported in TFS.
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* ![icon](../tasks/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
+* ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+* ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+* ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
@@ -289,7 +278,7 @@ Use these tasks to publish artifacts:
 
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
-![Artifacts tab of a build with one artifact](_img/build-artifact-tab-current.png)
+![Artifacts tab of a build with one artifact](media/build-artifact-tab-current.png)
 
 ::: moniker-end
 
@@ -297,7 +286,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
-![Artifacts tab of a build with one artifact](_img/build-artifact-tab.png)
+![Artifacts tab of a build with one artifact](media/build-artifact-tab.png)
 
 ::: moniker-end
 

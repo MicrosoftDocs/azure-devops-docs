@@ -5,7 +5,7 @@ description: Overview of public project user roles and access
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Default roles & access for public projects
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 Public projects enable anyone to view its contents. Access is limited when the user is not signed in. These users are also referred to as anonymous users or public users. In addition, there are users, ones who are signed in to Azure DevOps, but aren't a member of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.  
 
@@ -145,9 +145,9 @@ You [add project members](../accounts/add-organization-users.md) in the same way
 From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
 > [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![](/vsts/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![](/vsts/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
 
-[!INCLUDE [temp](../security/_shared/pipelines.md)]
+[!INCLUDE [temp](../security/includes/pipelines.md)]
 
 ## Related articles 
 

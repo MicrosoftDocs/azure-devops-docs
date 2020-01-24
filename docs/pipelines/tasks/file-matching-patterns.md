@@ -1,21 +1,21 @@
----
-title: File matching patterns reference for Azure Pipelines and TFS
+﻿---
+title: File matching patterns reference
 ms.custom: seodec18
 description: A reference guide that can help you to understand the file matching patterns for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8A92C09C-3EE2-48EF-A2C0-3B2005AACFD7
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 06/14/2019
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # File matching patterns reference
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ## Pattern syntax
 
@@ -51,16 +51,21 @@ Note, extended globs cannot span directory separators. For example, `+(hello/wor
 Patterns that begin with `#` are treated as comments.
 
 ### Exclude patterns
-Leading `!` changes the meaning of an include pattern to exclude. Interleaved exclude patterns are supported.
+Leading `!` changes the meaning of an include pattern to exclude.
+You can include a pattern, exclude a subset of it, and then re-include a subset of that:
+this is known as an "interleaved" pattern.
 
 Multiple `!` flips the meaning. See <a href="#doubleexcl_examples">examples</a>.
+
+You must define an include pattern before an exclude one. See <a href="#character_set_examples">examples</a>.
 
 ### Escaping
 Wrapping special characters in `[]` can be used to escape literal glob characters in a file name. For example the literal file name `hello[a-z]` can be escaped as `hello[[]a-z]`.
 
 ### Slash
-`/` is used as the path separator.
-Even on Windows, use `/` to ensure that the pattern works on any agent.
+`/` is used as the path separator on Linux and macOS.
+Most of the time, Windows agents accept `/`.
+Occasions where the Windows separator (`\`) must be used are documented.
 
 ## Examples
 
@@ -172,6 +177,22 @@ SampleE.dat
 SampleG.dat
 ```
 
+#### Recursive wildcard examples
+
+Given the pattern `**/*.ext` and files:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+sample2/D.not
+```
+The pattern would match:
+```
+sample1/A.ext
+sample1/B.ext
+sample2/C.ext
+```
+
 ### Exclude pattern examples
 
 Given the pattern:
@@ -220,4 +241,27 @@ ConsoleHost.pdb
 Fabrikam.dll
 Fabrikam.pdb
 Fabrikam.xml
+```
+
+<h4 id="doubleexcl_examples">Folder exclude</h4>
+
+Given the pattern:
+```
+**
+!sample/**
+```
+and files:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
+sample/Fabrikam.dll
+sample/Fabrikam.pdb
+sample/Fabrikam.xml
+```
+The pattern would match:
+```
+ConsoleHost.exe
+ConsoleHost.pdb
+ConsoleHost.xml
 ```

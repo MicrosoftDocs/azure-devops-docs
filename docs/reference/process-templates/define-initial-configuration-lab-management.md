@@ -5,8 +5,9 @@ description: Customize the project's initial security configuration for Lab Mana
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 09/08/2017
 ---
@@ -14,7 +15,7 @@ ms.date: 09/08/2017
 
 # Define the initial configuration of Lab Management
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can customize a project's initial security configuration for activities that are performed by using Visual Studio Lab Management. The lab.xml plug-in file specifies the security permissions for lab management activities of all projects that are created with the same process template. It also specifies the task to upload the default template file for Lab Management, which is named LabDefaultTemplate.xaml. This file is uploaded to the database for the project.  
   

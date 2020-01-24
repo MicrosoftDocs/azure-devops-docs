@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Security namespace reference | REST API Reference for Team Foundation Server
 description: Security namespace reference fpr integrating with VSTS
 ms.assetid: c5b4c4b9-8d80-43a4-92c5-8ecdd335ac49
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

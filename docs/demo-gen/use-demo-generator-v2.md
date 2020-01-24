@@ -3,31 +3,36 @@ title: Use Azure DevOps Demo Generator
 description: Use the Azure DevOps Services Demo Generator V2 to create and populate a demo project
 ms.prod: devops  
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 05/09/2018
+ms.date: 10/10/2019
 ---
-# Get started creating and populating demo Azure DevOps Services projects with the Azure DevOps Demo Generator
+# Get started creating and populating demo Azure DevOps Services projects
 
 1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
 2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator V2 login](_img/homepage.png)
+    > ![Image of VSTS Demo Generator V2 login](media/homepage.png)
 
+    > [!NOTE]
+    > If you are a member of multiple tenants and the desired tenant isn't the selected one,
+    > close your browser windows and then open a new browser and navigate to 
+    > `https://aka.ms/vssignout`. Close this browser, open a new browser and navigate to
+    > `https://aex.dev.azure.com/me`, and sign-in using the desired tenant.
 
 1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps account.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator V2 permissions screen](_img/2.png)
+    > ![Image of VSTS Demo Generator V2 permissions screen](media/2.png)
 
 1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of VSTS Demo Generator template selection screen](_img/templateselection.png)
+    > ![Image of VSTS Demo Generator template selection screen](media/templateselection.png)
 
     The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. 
 
@@ -44,16 +49,17 @@ ms.date: 05/09/2018
 2. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
 
     > [!div class="mx-imgBorder"]
-   > ![Image of Azure DevOps Demo Generator project created screen](_img/projectcreated.png)
+   > ![Image of Azure DevOps Demo Generator project created screen](media/projectcreated.png)
 
 1. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Azure DevOps Demo Generator provision confirmation screen](_img/projecthomepage.png)
+    > ![Image of Azure DevOps Demo Generator provision confirmation screen](media/projecthomepage.png)
 
 > [!NOTE]
 > You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
 
+Next: [Learn how you can build your own template](build-your-own-template.md)
 
 ## Common Issues and workarounds:
 
@@ -69,7 +75,7 @@ Tasks with versions 'ARM Outputs:4.*' are not valid for deploy job 'Agent job' i
 
 **Cause:** In Azure DevOps, users have different access levels - Basic, Stakeholder and Visual Studio Subscriber. Access levels determine what features are available to user. In order to provion projects using the demo generator, you need at least a **Basic** access level. This error indicates the user has a *stakeholder* license which does not grant permissions to writing shared queries
 
-**Fix:** You should change the access level, from basic to stakeholder. Please refer to this article on docs:  [Add users to your organization or project](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/add-organization-users?view=azure-devops) for more information on how to add users to your organization, and specify the level of features they can use
+**Fix:** You should change the access level, from basic to stakeholder. Please refer to this article on docs:  [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops) for more information on how to add users to your organization, and specify the level of features they can use
 
 -------------
 

@@ -5,7 +5,7 @@ description: Address rule errors that occur when publishing a list from Excel or
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # Resolve data validation errors (publish and refresh)
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A data validation error occurs when a change in the work item list or project plan violates a rule of the work item type. The following examples show common data validation errors:  
   

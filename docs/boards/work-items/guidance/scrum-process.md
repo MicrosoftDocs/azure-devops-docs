@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,15 +17,15 @@ ms.date: 04/11/2019
 
 # Scrum process   
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
-![Scrum process work item types, conceptual image](_img/scrum-process-work-tracking-wits.png)  
+![Scrum process work item types, conceptual image](media/scrum-process-work-tracking-wits.png)  
 
 In addition to the WITs, teams have access to a set of work item queries to track information, analyze progress, and make decisions.  
 
-[!INCLUDE [temp](../../_shared/process-customize.md)] 
+[!INCLUDE [temp](../../includes/process-customize.md)] 
 
 <a id="start-using-scrum" />
 
@@ -37,7 +37,7 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 *Click one of the following images to go to the linked article.*
 
-[![Define stories](../../backlogs/_img/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/_img/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/_img/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/_img/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
+[![Define stories](../../backlogs/media/overview/gs-planning-define-stories.png)](../../backlogs/create-your-backlog.md)[![Organize backlog](../../backlogs/media/overview/gs-planning-organize-backlog.png)](../../backlogs/organize-backlog.md)[![Manage bugs](../../backlogs/media/overview/gs-planning-manage-bugs.png)](../../backlogs/manage-bugs.md)[![Manage issues](../../backlogs/media/overview/gs-planning-manage-issues.png)](../../backlogs/manage-issues-impediments.md)
 
 > [!NOTE]  
 > A work item is a database record that contains the definition, assignment, priority, and state of work. Work item types define the template of fields, workflow, and form for each type. Work items can be linked to each other to support tracking dependencies, roll up of work, and reports.  
@@ -51,13 +51,13 @@ The essential flow for getting started is as shown. To get started using Scrum o
 
 Define work item queries to list work items for a current sprint or the product backlog.  
 
-[!INCLUDE [temp](../../_shared/shared-queries.md)] 
+[!INCLUDE [temp](../../includes/shared-queries.md)] 
 
 ::: moniker range="<= tfs-2018"
 
 Or, use the shared queries that the Scrum process provides.
 
-![Shared queries (Scrum process)](_img/IC665405.png)  
+![Shared queries (Scrum process)](media/IC665405.png)  
 
 [Descriptions of predefined queries](#predefined-queries) are listed later in this article.   
 
@@ -66,7 +66,7 @@ Or, use the shared queries that the Scrum process provides.
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/quick-tips-shared-query.md)] 
+[!INCLUDE [temp](../../includes/quick-tips-shared-query.md)] 
 
 ## Monitor progress  
 
@@ -76,10 +76,10 @@ All processes&mdash;Agile, Scrum, and CMMI&mdash;support [building status and tr
 
 To get started, you can open a shared query and create a chart based on your tracking interests. Chart types include status&mdash;pie, bar, column, stacked bar, and pivot&mdash;and trend&mdash;stacked area, line, and area&mdash;charts.   
 
-[![Edit query](../../../report/dashboards/_img/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/_img/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/_img/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
+[![Edit query](../../../report/dashboards/media/gs-chart-query.png)](../../queries/using-queries.md)[![Create chart](../../../report/dashboards/media/gs-chart-create.png)](../../../report/charts.md)[![Manage bugs](../../../report/dashboards/media/gs-chart-add-dashboard.png)](../../../report/add-charts-to-dashboard.md)  
 
 
-[!INCLUDE [temp](../../_shared/powerbi-reports-links.md)] 
+[!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
 <a id="reports"></a>
@@ -109,7 +109,7 @@ To access this dashboard, your project must have a [project portal configured an
 
 ## Related articles 
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]
 
 
 ### Scrum process versions  
