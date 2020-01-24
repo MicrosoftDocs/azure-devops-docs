@@ -1,8 +1,8 @@
 ---
-title: Resolve orphaned organization ownership
+title: Resolve innactive organization ownership
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to assign a new owner to an organization, when the owner's inactive.
+description: Learn how to assign a new owner to an organization, when the current owner is inactive.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Assign a new owner to your orphaned organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 For organizations connected to Azure Active Directory (Azure AD),  if your organization Owner or any other Project Collection Administrators are inactive, you can transfer ownership to another user.
 
