@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 01/23/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -19,13 +19,10 @@ monikerRange: '>= tfs-2013'
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications.md).
 
-::: moniker range="tfs-2017"
-
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
-::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 
 In this tutorial, learn how to do the following tasks:
 
@@ -34,11 +31,11 @@ In this tutorial, learn how to do the following tasks:
 > * Add a custom subscription
 > * Unsubscribe or opt out of a team or project subscription
 
-::: moniker-end
+::: moniker-end  
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 
 ## View your personal notifications
 
@@ -59,16 +56,17 @@ From the web portal, select the icon with your initials or picture, and then sel
 
 ***
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 
 > [!div class="mx-imgBorder"] 
 >![Navigate to personal notifications page](media/nav-personal-notifications-hub.png) 
-::: moniker-end
+::: moniker-end  
 
 
-::: moniker range="< tfs-2017"
+::: moniker range="< tfs-2017"  
 
 ## Set alerts just for yourself
 
@@ -112,17 +110,17 @@ From the web portal, select the icon with your initials or picture, and then sel
 	
 	![Choose an alert type from all options listed](media/personal/ALM_AN_Templates.png)
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 
 ## View all subscriptions
 
 This view shows all subscriptions that you've created or that have been created by an administrator. Subscriptions let you control what you are notified about. Subscribed notifications are indicated with the State as **On**.
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
@@ -137,33 +135,31 @@ This view shows all subscriptions that you've created or that have been created 
 > [!div class="mx-imgBorder"]  
 > ![Personal notification subscriptions](media/unsubscribe-personal-notifications-newnav.png)
 
-::: moniker-end
-
 ***
 
+::: moniker-end  
 
-
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 
 <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"   
 
 A subscription can be just for you, or if you're a team admin, can be shared by everyone in the team.
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 
 ## Add a custom subscription
 
 With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications. A custom subscription can notify you about any event. Default subscriptions differ, as they only notify users or groups directly associated with an event.
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops"  
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
@@ -214,13 +210,13 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 	<img src="media/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
-::: moniker-end
+::: moniker-end  
 
 ***
 
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= tfs-2018"  
 
    <img src="media/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -241,12 +237,12 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 	<img src="media/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
-::: moniker-end
+::: moniker-end  
 
 
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 
 ## Unsubscribe or opt out of a team or OOB subscription
 
@@ -261,7 +257,23 @@ For example, here we turn off the Build completes subscription.
 > [!NOTE]  
 > Whether you are an administrator or not, toggling a shared team subscription from your notification settings only impacts you and not other team members.
 
-::: moniker-end
+::: moniker-end  
+
+
+## Related articles
+
+- [Set your preferences](../organizations/settings/set-your-preferences.md)
+- [Default and supported notifications](oob-built-in-notifications.md)
+- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Manage notifications for a team](manage-team-group-notifications.md)  
+- [Change your preferred email address](change-email-address.md)
+
+### Limitations
+
+* The user interface no longer supports creating plain text email subscriptions.
+
+
+
 
 <!--- TFS 2017 Update 1 settings 
 
@@ -314,15 +326,3 @@ You can choose to not receive notifications for certain team subscriptions by op
     ![Opt'ed out of a shared sub](../project/wiki/media/shared-sub-opt-out.png)
 
 -->
-
-## Related articles
-
-- [Set your preferences](../organizations/settings/set-your-preferences.md)
-- [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](manage-team-group-notifications.md)  
-- [Change your preferred email address](change-email-address.md)
-
-### Limitations
-
-* The user interface no longer supports creating plain text email subscriptions.
