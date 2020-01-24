@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications).
+As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications.md).
 
 ::: moniker range="tfs-2017"
 
@@ -25,6 +25,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"
 
 In this tutorial, learn how to do the following tasks:
 
@@ -32,6 +33,8 @@ In this tutorial, learn how to do the following tasks:
 > * View your notifications
 > * Add a custom subscription
 > * Unsubscribe or opt out of a team or project subscription
+
+::: moniker-end
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
@@ -134,9 +137,11 @@ This view shows all subscriptions that you've created or that have been created 
 > [!div class="mx-imgBorder"]  
 > ![Personal notification subscriptions](media/unsubscribe-personal-notifications-newnav.png)
 
+::: moniker-end
+
 ***
 
-::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
@@ -209,9 +214,11 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 	<img src="media/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
+::: moniker-end
+
 ***
 
-::: moniker-end
+
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -313,7 +320,7 @@ You can choose to not receive notifications for certain team subscriptions by op
 - [Set your preferences](../organizations/settings/set-your-preferences.md)
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  
-- [Manage notifications for a team](manage-team-notifications.md)  
+- [Manage notifications for a team](manage-team-group-notifications.md)  
 - [Change your preferred email address](change-email-address.md)
 
 ### Limitations
