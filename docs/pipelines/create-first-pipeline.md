@@ -1210,7 +1210,6 @@ To learn more about build pipeline settings, see:
 * [Tasks](tasks/index.md)
 * [Variables](build/variables.md)
 * [Triggers](build/triggers.md)
-* [Options](build/options.md)
 * [Retention](policies/retention.md)
 * [History](build/history.md)
 
