@@ -49,6 +49,10 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 </table>
 
+## Samples
+
+[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
+
 ## Troubleshooting
 ### Script worked locally, but failed in the pipeline
 
@@ -70,10 +74,6 @@ Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with A
 
 ### Service Connection Issues
 To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
-
-## Samples
-
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
 
 ## Open source
 
