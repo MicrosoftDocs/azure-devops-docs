@@ -113,7 +113,7 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Advanced customizations supported (custom link types, team fields, global worflow)</td>
+<td align="left">Advanced customizations supported (custom link types, team fields, global workflow)</td>
 <td> </td>
 <td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
