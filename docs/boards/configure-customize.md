@@ -323,6 +323,8 @@ The two main ways to group work items is by area path and by parenting them unde
 
 You can also assign tags to work items to group them for query and filter purposes. So when you structure your teams and projects, you want to make sure you understand how you'll use these grouping tools to support your business needs. Your choices impact the use of portfolio planning tools.
 
+### Area path-dependent tools 
+
 To use the following tools, teams must subscribe to area paths. 
 
 - [Boards> all tools](boards/kanban-overview.md)  
@@ -336,14 +338,14 @@ To use the following tools, teams must subscribe to area paths.
 	- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
 	
 
-### Add teams 
+### Area paths and team assignments 
 
 A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. 
 
 Here is an example of area paths and their assignment to teams which support portfolio management views for the Account Management and Service Delivery teams. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> ![Area paths and team assignments](media/area-path-team-assignments.png)  
+> ![Area paths and team assignments](media/config-custom/area-path-team-assignments.png)  
 
 - You create hiearchical area paths to support sub categories of features and product areas 
 - To provide portfolio views, you assign two or more area paths and include sub-areas to a portfolio management team 
@@ -385,6 +387,12 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
+<!---
+
+
+Consider how your selection impacts rollup
+If your development team uses tasks 
+--> 
 
 <a id="iteration-path" />
 
@@ -435,16 +443,46 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 
 ::: moniker-end
 
+## Time tracking 
+
+Most organizations following Scrum processes use time estimates for Sprint capacity planning. Azure Boards tools fully support tracking time for this purpose. The main field used is the task Remaining Work field, which typically zeros out at the end of the sprint. 
+
+However, other organizations require time tracking to support other purposes, such as for billing or maintaining time allocation records. Time values for estimated work and completed work are of interest. The Agile and CMMI process provide these fields&mdash;[Original Estimate, Completed Work, Remaining Work](queries/query-numeric.md#fields)&mdash;for use in tracking time. You can use them for that purpose. However, Azure Boards tools provide limited native support for time tracking. Instead, you may want to consider using a [Marketplace extension](https://marketplace.visualstudio.com/search?term=time%20tracking&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) to support these needs.  
+
+> [!NOTE]   
+> The Original Estimate, Completed Work, Remaining Work fields were designed to support integration with Microsoft Project. Integration support with Microsoft Project is deprecated for Azure DevOps Server 2019 and later versions, including the cloud service. 
 
 
-Consider how your selection impacts rollup
-If your development team uses tasks 
+## Process changes that impact all teams 
 
-## Custom work item types and custom backlogs 
+Any changes made to a process applied to a project impacts all teams in that project. Many changes won't cause much disruption to the teams they support. However a few do, and those are described in this section.  
 
-## Custom workflow 
+### Custom fields
 
-## Custom fields
+Adding custom fields to a work item type doesn't impact any specific tool. The fields simply appear in the corresponding work items. If you add a custom numeric field, however, you can use it to support rollup on backlogs as well as the following tools: 
+- [In-context Velocity report](../report/dashboards/team-velocity.md)
+- [In-context Sprint Burndown report](../report/dashboards/configure-sprint-burndown.md)
+- [Dashboard Velocity widget](../report/dashboards/team-velocity.md)
+- [Dashboard Burndown widget](/report/dashboards/configure-burndown-burnup-widgets.md)
+- [Dashboard Burnup widget](/report/dashboards/configure-burndown-burnup-widgets.md)
+- [Dashboard Sprint Burnup widget](../report/dashboards/configure-sprint-burndown.md)
+
+
+> [!NOTE]   
+> All default and custom fields are shared across all projects in a collection or organization. There is a limit of 1024 fields that you can define for a process. 
+
+### Custom work item types and custom backlogs 
+
+
+
+### Custom workflow 
+
+Each process supports a default workflow. This workflow defines the default columns that appear on the Kanban boards and sprint Taskboards. 
+
+[!INCLUDE [temp](includes/four-process-workflow.md)] 
+
+When you add workflow states to a requirement work item type, each team will need to update their Kanban board. 
+
 
 
 ## Who can make changes? 
@@ -489,34 +527,16 @@ Computer settings ---
 - 
  
 
-## Hierarchical guidance   
 
-
-### Example team choices 
-
-Some examples of real-world teams who use Azure Boards to track work are described below. 
-
-- Product manage team uses features to prioritize their work with child-dependent user stories assigned to development team: 
-	- Product management team of ten PMs manages five development teams and their work
-	- Five development teams comprised of 8 to 12 developers manage their work using user stories with optional child-dependent tasks, no time estimates made 
-
-- Open source project of 100+ members that manages projects they collaborate on:  
-	- Uses the Scrum process  
-	- Defines Features and product backlog items, each backlog item corresponds to an event or deliverable   
-	- Updates status via the Kanban board  
-
-- Content development team of 50 writers uses tasks to track their work 
-	- 
-
-- Support operations team 
+## Try this next
+> [!div class="nextstepaction"]
+> [Get started as an administrator](../user-guide/project-admin-tutorial.md)
 
 
 ## Related articles
 
 - [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)
-- [Resources granted to project members](../organizations/accounts/resources-granted-to-project-members.md) 
-- [Permissions and groups reference](../organizations/security/permissions.md) 
-- [Rate limits](../organizations/settings/work/object-limits.md)
+
 
 
 <!---
@@ -542,6 +562,10 @@ The easiest way to group work items into a hierarchy is by mapping them, or addi
 --> 
 
 <!---
+
+
+Minimize disruption to your team's processes 
+
 
 gannt chart
 workflow customizations 
