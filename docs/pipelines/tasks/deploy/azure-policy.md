@@ -38,6 +38,6 @@ This task is not supported in a build or release pipeline.
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td>Azure subscription<td>(Required) Select the Azure Resource Manager subscription on which to enforce the policies.</td></tr>
-<tr><td>Resource group</td><td>(Required) Select the Resource Group or specify a variable name.</td></tr>
+<tr><td>Resource group</td><td>Select the Resource Group or specify a variable name.</td></tr>
 <tr><td>Resource name</td><td>Select the name of the Azure resources for which you want to check policy compliance.</td></tr>
 </table>

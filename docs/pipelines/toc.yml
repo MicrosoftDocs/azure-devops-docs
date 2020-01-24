@@ -535,8 +535,6 @@
       href: tasks/utility/azure-monitor.md
     - name: Query Work Items
       href: tasks/utility/work-item-query.md
-    - name: Security and Compliance Assessment
-      href: tasks/utility/azure-policy.md
     - name: Service Fabric PowerShell
       href: tasks/utility/service-fabric-powershell.md
     - name: Shell script
