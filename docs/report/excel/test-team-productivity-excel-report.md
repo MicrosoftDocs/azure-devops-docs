@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cd899058-1200-4b1f-8fb2-4cecec8b0c05
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # Test Team Productivity Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Test Team Productivity report to help track the overall activity of the team and individual team members in testing the product and finding and reporting bugs. The Test Team Productivity report provides four reports that show test and bug activity:  
   
@@ -46,11 +47,11 @@ Teams who are responsible for testing software can use the Test Team Productivit
 
 The Test Activity report provides a line graph that shows the number of individual tests that were run each day. If a particular test case was run three times in one day, it is counted three times for that day.  
   
- ![Test Activity Excel Report](_img/procg_testactivity.png "ProcG_TestActivity")  
+ ![Test Activity Excel Report](media/procg_testactivity.png "ProcG_TestActivity")  
   
  The Test Activity per User report provides a bar chart that indicates how many tests each test team member ran each week.  
   
- ![Test Activity Per User Excel Report](_img/procg_actperuser.png "ProcG_ActPerUser")  
+ ![Test Activity Per User Excel Report](media/procg_actperuser.png "ProcG_ActPerUser")  
   
  The following table describes the report filters and fields that are used in the PivotTables that generate the test activity reports.  
   
@@ -62,11 +63,11 @@ The Test Activity report provides a line graph that shows the number of individu
 
 The Bugs Created by User report provides a bar chart that indicates how many bugs each test team member created each week.  
   
- ![Bugs Per User Excel Report](_img/procg_bugsperuser.png "ProcG_BugsPerUser")  
+ ![Bugs Per User Excel Report](media/procg_bugsperuser.png "ProcG_BugsPerUser")  
   
  The Bug Effectiveness report provides a bar chart that indicates the count of resolved bugs that were created by each test team member, grouped by their bug resolution.  
   
- ![Bug Effectiveness Excel Report](_img/procg_bugeffectiveness.png "ProcG_BugEffectiveness")  
+ ![Bug Effectiveness Excel Report](media/procg_bugeffectiveness.png "ProcG_BugEffectiveness")  
   
  The following table describes the report filters and fields that are used in the PivotTables that generate the bug activity reports.  
   
@@ -112,4 +113,4 @@ You can update the Test Team Productivity report by opening it in Office Excel a
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

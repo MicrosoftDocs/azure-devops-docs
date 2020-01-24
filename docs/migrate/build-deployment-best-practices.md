@@ -1,14 +1,14 @@
 ---
-title: Azure DevOps - A Pipeline Automation Case Study for World Wide Time Keeping
+title: Pipeline Automation Case Study for World Wide Time Keeping
 description: Automate build and release pipelines with Azure DevOps, a case study for World Wide Time Keeping
 ms.prod: devops
-ms.topic: article
-ms.technology: devops-whitepapers
+ms.topic: conceptual
+ms.technology: devops-migrate
 ms.assetid: 3cb56371-3ef2-4bd9-871b-ec6cfa93bedf
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 06/01/2016
-ms.author: mlearned
-author: mlearned
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2015'
 ---
 
@@ -91,10 +91,10 @@ Code is compiled, environments are configured, many types of tests run, and fina
 considered "done". By done, we mean that the code is in production. Anything you successfully put 
 through the release pipeline should be something you would give to your customers. Here is a diagram 
 based on the one you will see on Jez Humble's
-[Continuous Delivery](http://continuousdelivery.com/) website. It is an example of what can 
+[Continuous Delivery](https://continuousdelivery.com/) website. It is an example of what can 
 occur as code moves through a release pipeline.
 
-![Pipeline for continuous delivery](./_img/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
+![Pipeline for continuous delivery](./media/build-deployment-best-practices/continuous-delivery-release-pipeline.png)
 
 ### Use Release Management
 
@@ -158,7 +158,7 @@ needs of deployment. It also defines the sequence in which the RM components are
 to integrate your build pipeline from Team Foundation Server (TFS) with the release template to enable 
 continuous delivery. You can either pick up the latest build or select the build.
 
-	![Release template](./_img/build-deployment-best-practices/release-template.png)
+	![Release template](./media/build-deployment-best-practices/release-template.png)
 
 ##	Conclusion
 

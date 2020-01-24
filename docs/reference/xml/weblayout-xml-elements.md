@@ -5,7 +5,7 @@ description: Syntax and usage of all elements used in the new web form layout fo
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +15,7 @@ ms.date: 11/28/2017
 
 # WebLayout and Control elements  
 
-[!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../../includes/version-header-hosted-plus-tfs.md)]
 
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
@@ -56,13 +56,15 @@ The **WebLayout** and updated **Control** elements introduce several new element
 > The **Page** element is similar to the deprecated **Tab** element. However, a **Page** element can't be grouped or nested. One page defines one tab within the web form.  
 
 <a id="header-customization" />
+
+
 ## Header customization
 
 In the new web form layout, the system manages several header elements within the **SystemControls** element. These include: 
 - **Fields**: Work item ID, Title, Assigned To, State, Reason, Area Path, Iteration Path, and tags
-- **Pages**: ![History page icon](../../boards/_img/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/_img/icons/icon-attachments-tab-wi.png) Attachments.  
+- **Pages**: ![History page icon](../../boards/media/icons/icon-history-tab-wi.png) History, ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links, and ![Attachments page icon](../../boards/media/icons/icon-attachments-tab-wi.png) Attachments.  
 
-<img src="_img/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
+<img src="media/weblayout-system-controls-details-page.png" alt="Header element within web form" style="border: 2px solid #C3C3C3;" />
 
 When you export a WIT definition, you'll see a **SystemControls** section at the beginning of the **WebLayout** section, similar to the following:
 
@@ -523,7 +525,7 @@ You use the **Control** element to define a work item field, text, hyperlink, or
 Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 </code></pre>
 <p>Use <code>DateTimeControl</code> to provide a calendar picker to select a date for a field, as shown in the following illustration.</p>
-<img src="_img/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
+<img src="media/weblayout-date-time-control.png" alt="Date-Time control, Calendar field"/><br/><pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
 <blockquote><strong>Note:</strong>The date-time format displayed matches the <a href="/azure/devops/organizations/settings/set-your-preferences" data-raw-source="[user profile user profile](/azure/devops/organizations/settings/set-your-preferences)">user profile user profile</a>. The WebLayout section doesn&#39;t not accept the <strong>Layout</strong> element <code>CustomFormat</code> property.<br/></blockquote>
 </td>
@@ -537,7 +539,7 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 <blockquote>
 <strong>Feature availability:</strong> The Boolean data type field is only supported for TFS 2017 and later versions. Within a client work item form, such as Visual Studio or Eclipse, a value of True or False will display.</blockquote>
 <p>A Boolean field displays as a checkbox within the web work item form.</p>
-<img src="_img/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
+<img src="media/weblayout-ref-checkbox-control-boolean-field.png" alt="Boolean field display in web work item form"/>
 
 </td>
 </tr>
@@ -545,7 +547,7 @@ Label=&quot;Milestone&quot; Name=&quot;Milestone&quot; LabelPosition=&quot;Left&
 <tr>
 <td><strong>HTMLFieldControl</strong></td>
 <td>Use to display multi-line, rich-text formatted control. Specify this control type for fields of <code>Type=HTML</code>.<br/>
-<img src="_img/html-field-control.png" alt="HTML field shown on work item form"/><br/>
+<img src="media/html-field-control.png" alt="HTML field shown on work item form"/><br/>
 For example:<br/><pre><code>&lt;Control Type=&quot;HtmlFieldControl&quot; FieldName=&quot;FabrikamFiber.ReleaseNotes&quot; 
 Label=&quot;Release Notes&quot; Dock=&quot;Fill&quot; /&gt;
 </code></pre>
@@ -603,74 +605,72 @@ Once the extensions have been installed, you add the <b>Contribution</b> element
 
 When you export the XML definition, it will contain a comment section that lists the installed extensions, their IDs, and any required inputs. For example: 
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <!--**********************Work Item Extensions**********************
-> Extension:
->     Name: color-control-dev
->     Id: mariamclaughlin.color-control-dev
->     Control contribution:
->         Id: mariamclaughlin.color-control-dev.color-control-contribution
->         Description: 
->         Inputs:
->             Id: FieldName
->             Description: The field associated with the control.
->             Type: Field
->             IsRequired: true
->             Id: Labels
->             Description: The list of values to select from.
->             Type: String
->             IsRequired: false
->             Id: Colors
->             Description: The field associated with the control.
->             Type: String
->             IsRequired: false  
-> Extension:
->     Name: vsts-workitem-recentlyviewed
->     Id: mmanela.vsts-workitem-recentlyviewed  
->     Group contribution:
->         Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
->         Description: Recently viewed work item form group  
-> Extension:
->     Name: vsts-extensions-multi-values-control
->     Id: ms-devlabs.vsts-extensions-multi-values-control   
->     Control contribution:
->         Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
->         Description: Multi Values Selection Control.
->         Inputs:
->             Id: FieldName
->             Description: The field associated with the control.
->             Type: Field
->             IsRequired: true
->             Id: Values
->             Description: The list of values to select from.
->             Type: String
->             IsRequired: false
-> Extension:
->     Name: vsts-extension-workitem-activities
->     Id: ms-devlabs.vsts-extension-workitem-activities   
-> Extension:
->     Name: vsts-uservoice-ui
->     Id: ms-devlabs.vsts-uservoice-ui   
->     Group contribution:
->         Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
->         Description: Shows User Voice details on the work item form
-> --> 
-> ```
+```XML
+<!--**********************Work Item Extensions**********************
+Extension:
+    Name: color-control-dev
+    Id: mariamclaughlin.color-control-dev
+    Control contribution:
+        Id: mariamclaughlin.color-control-dev.color-control-contribution
+        Description: 
+        Inputs:
+            Id: FieldName
+            Description: The field associated with the control.
+            Type: Field
+            IsRequired: true
+            Id: Labels
+            Description: The list of values to select from.
+            Type: String
+            IsRequired: false
+            Id: Colors
+            Description: The field associated with the control.
+            Type: String
+            IsRequired: false  
+Extension:
+    Name: vsts-workitem-recentlyviewed
+    Id: mmanela.vsts-workitem-recentlyviewed  
+    Group contribution:
+        Id: mmanela.vsts-workitem-recentlyviewed.recently-viewed-form-group
+        Description: Recently viewed work item form group  
+Extension:
+    Name: vsts-extensions-multi-values-control
+    Id: ms-devlabs.vsts-extensions-multi-values-control   
+    Control contribution:
+        Id: ms-devlabs.vsts-extensions-multi-values-control.multi-values-form-control
+        Description: Multi Values Selection Control.
+        Inputs:
+            Id: FieldName
+            Description: The field associated with the control.
+            Type: Field
+            IsRequired: true
+            Id: Values
+            Description: The list of values to select from.
+            Type: String
+            IsRequired: false
+Extension:
+    Name: vsts-extension-workitem-activities
+    Id: ms-devlabs.vsts-extension-workitem-activities   
+Extension:
+    Name: vsts-uservoice-ui
+    Id: ms-devlabs.vsts-uservoice-ui   
+    Group contribution:
+        Id: ms-devlabs.vsts-uservoice-ui.vsts-uservoice-ui-wi-group
+        Description: Shows User Voice details on the work item form
+-->
+```
 
 
 Given the above example, you can add the following code snippet to your work item type definition to turn on the user voice group ```vsts-uservoice-ui``` extension by specifying the extension Id:
 
-> [!div class="tabbedCodeSnippets"]
-> ```XML
-> <WebLayout>
-> ... 
->  <Extensions>
->      <Extension Id="ms-devlabs.vsts-uservoice-ui" /> 
->  </Extensions> 
-> ...
-> </WebLayout> 
-> ```
+```XML
+<WebLayout>
+... 
+ <Extensions>
+     <Extension Id="ms-devlabs.vsts-uservoice-ui" />
+ </Extensions>
+...
+</WebLayout> 
+```
 
 Upon import of the updated WIT definition, the group extension will automatically appear on your work item form.
 

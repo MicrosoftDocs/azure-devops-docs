@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 7deef86f-987f-4b77-8acc-e31d436b48cf
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # Task Progress Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Task Progress report to track how much work the team has completed and how much remains. This report shows the distribution of active and closed Tasks over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -32,7 +33,7 @@ You can use the Task Progress report to track how much work the team has complet
 
  You can use the Task Progress report to track how much work remains to be completed. This report is based on a PivotChart report that shows the last four weeks of data that is captured for Tasks and that is stored in the data warehouse.  
   
- ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")  
+ ![Task Progress Excel Report](media/procguid_exceltask.png "ProcGuid_ExcelTask")  
   
 ### Required activities for tracking tasks  
 
@@ -73,4 +74,4 @@ You can use the Task Progress report to track how much work the team has complet
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

@@ -5,7 +5,7 @@ description: Controls and restrict the link relationships that the team members 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 994c90ad-e61c-41ca-ae78-96fdb59c7312
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017
@@ -37,7 +37,7 @@ For a summary of the link restrictions that are defined within the process templ
  
 **Links control** 
  
- ![Example of links control added to a work item form](_img/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
+ ![Example of links control added to a work item form](media/wit_ss_linkscontrol.png "WIT_SS_LinksControl")  
  
   
 ```xml

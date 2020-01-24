@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bea12f89-1bfa-40db-b8c8-c44e54372538
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # User Story Progress Excel Report (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the User Stories Progress report to track the rate at which the team is implementing user stories. This report shows the distribution of active, resolved, and closed User Stories over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -33,7 +34,7 @@ You can use the User Stories Progress report to track the rate at which the team
 
 You can use the User Stories Progress report to understand how well the team is completing the stories that it defined for an iteration or release. This report is based on a PivotChart report that shows the last four weeks of data that was captured for User Stories and that is stored in the data warehouse.  
   
-![Example User Stories report](_img/procguid_excelreport.png "ProcGuid_ExcelReport")  
+![Example User Stories report](media/procguid_excelreport.png "ProcGuid_ExcelReport")  
   
 ### Required activities for tracking user stories  
 
@@ -67,4 +68,4 @@ You can update the User Stories Progress report by opening the report in Office 
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

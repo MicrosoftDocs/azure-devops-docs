@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Areas and Iterations | REST API Reference for Team Foundation Server
 description: Work with work item areas and iterations programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 8AD3C764-692D-440D-8133-311CD6A0FC94
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -728,7 +728,7 @@ DELETE https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/classi
 ### Getting Started
 <a name="samples-getting-started" />
 
-If this is your first time using the REST API's or .Net Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first.
+If this is your first time using the REST API's or .NET Libraries, check out the [getting started sample](../../get-started/rest/samples.md) first.
 
 >All sample source code can be found in [our GitHub repo](https://github.com/Microsoft/vsts-restapi-samplecode).
 

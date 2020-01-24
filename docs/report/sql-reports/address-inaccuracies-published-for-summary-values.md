@@ -6,15 +6,16 @@ ms.technology: devops-analytics
 ms.topic: troubleshooting
 description: Corrects the reports with hours that are counted twice with this procedure - Team Foundation Server 
 ms.assetid: 09e8e02d-9ecb-4012-9ee0-cebb89372096
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.date: 10/31/2017
 ---
 
 
 # Address inaccuracies published for summary values
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 If you see that hours are counted twice in reports that contain task hours, you can correct the problem with the procedure in this article. The Progress dashboard and the Burndown and Burn Rate and Remaining Work reports may show double-counting of work hours.  
   
@@ -35,11 +36,11 @@ If you see that hours are counted twice in reports that contain task hours, you 
   
 2.  Run the query.  
   
-3.  Select ![Collapse all](_img/icon_collapseall.png "Icon_CollapseAll") (Collapse All) so that only parent or summary work items appear in the query results.  
+3.  Select ![Collapse all](media/icon_collapseall.png "Icon_CollapseAll") (Collapse All) so that only parent or summary work items appear in the query results.  
   
 4.  Press CTRL+A to highlight the parent work items that are listed.  
   
-5.  Open the context menu for one of the work items, and then choose ![Open in Microsoft Excel](_img/icon_openinexcel.png "Icon_openInExcel")**Open in Microsoft Excel**.  
+5.  Open the context menu for one of the work items, and then choose ![Open in Microsoft Excel](media/icon_openinexcel.png "Icon_openInExcel")**Open in Microsoft Excel**.  
   
     > [!IMPORTANT]  
     >  Export the query results to Office Excel with the rows collapsed. This condition exports only the parent or summary tasks.  

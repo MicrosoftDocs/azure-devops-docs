@@ -1,11 +1,11 @@
 ---
-title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps and TFS
+description: Learn the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -96,7 +96,7 @@ Here's how to get a list of projects from TFS using the default port and collect
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
-The examples above use personal access tokens, which requires that you [create a personal access token](../get-started/Authentication/PATs.md).
+The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 
 ## Responses
@@ -144,14 +144,14 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/).
+The response is [JSON](https://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/blobs).
+like [Git blobs](/rest/api/azure/devops/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
-or [Git](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) and get to the resources that you need.
+[API areas](/rest/api/azure/devops/git/) like [work item tracking](/rest/api/azure/devops/wit/)
+or [Git](/rest/api/azure/devops/git/) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs

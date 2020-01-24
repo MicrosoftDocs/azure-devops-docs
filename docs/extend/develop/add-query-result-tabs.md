@@ -5,23 +5,25 @@ ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 05/15/2018
 ---
 
 # Add tabs on query result pages
 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 If you have a web page that can be hosted in an iframe, it can be hosted in Azure DevOps Services as a tab on the query result pages.
 In this example, we'll add a simple Hello World tab on query results.
 
-![Tab location on the Azure DevOps Services Query Results](../reference/targets/vss/work/web/_img/queryResultsPivotTab.png)
+![Tab location on the Azure DevOps Services Query Results](../reference/targets/vss/work/web/media/queryResultsPivotTab.png)
 
 ## Create your web page
 
-[!INCLUDE [Web_page](../_shared/procedures/create-web-page.md)]
+[!INCLUDE [Web_page](../includes/procedures/create-web-page.md)]
 
 ## Update your extension manifest
 Update your [extension manifest](../develop/manifest.md) file with the following code:
@@ -85,7 +87,7 @@ It includes the [scopes](./manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 ### Files
-Include all of the files your extension will access. <br>
+Include all of the files your extension accesses. <br>
 For your files, set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 	
 ## Example

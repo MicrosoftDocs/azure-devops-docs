@@ -4,9 +4,9 @@ description: Use npm scopes for private packages in Azure DevOps Services
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
@@ -26,7 +26,7 @@ e.g. `@fabrikam/fiber-core` and configuring your .npmrc file to only use a Azure
 ## Set up
 To use a Azure Artifacts feed with a scope, follow the instructions below, but append your scope to both lines in the project .npmrc file.
 
-[!INCLUDE [](../_shared/npm/npmrc.md)]
+[!INCLUDE [](../includes/npm/npmrc.md)]
 
  Then, replace:
 - `registry=<your feed URL>` with

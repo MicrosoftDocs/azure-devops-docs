@@ -1,11 +1,11 @@
----
+﻿---
 title: Control Access to Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Control Access to Team Foundation Version Control
 ms.assetid: cccf50be-5503-4155-974b-c75b57888603
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -42,15 +42,15 @@ To complete this task, you must have the **Manipulate security settings** permis
 
     2.  If you selected **Windows User or Group**, the **Select Users or Groups** dialog box opens. Enter the user or group for whom you want to set permissions, and then click **OK**. The user or group appears in the **User and Groups** box of the **Properties** dialog box.
 
-		>**Note**
-		>To view a ToolTip that provides information about the controls in the **Select Users or Groups** dialog box, click the Help icon on the title bar, and then click the control.
+    > [!NOTE]
+    > To view a ToolTip that provides information about the controls in the **Select Users or Groups** dialog box, click the Help icon on the title bar, and then click the control.
 
 6.  In the **Users and Groups** box of the **Properties** dialog box, select the user or group for which you want to set permissions.
 
 7.  In the **Permission** box, select either **Allow** or **Deny** for each permission.
 
-    >**Note**
-    >If you select the **Inherit security settings** box, the security settings of the containing folder are selected automatically. You can override these inherited settings by selecting or clearing the **Deny** box.
+    > [!NOTE]
+    > If you select the **Inherit security settings** box, the security settings of the containing folder are selected automatically. You can override these inherited settings by selecting or clearing the **Deny** box.
 
 8.  Click **OK** to close the **Properties** dialog box.
 

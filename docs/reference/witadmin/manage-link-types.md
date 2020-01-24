@@ -6,15 +6,16 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
 ---
 
 # Manage link types
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
@@ -26,7 +27,7 @@ You manage the link types defined for a project collection by using the followin
 -   **listlinktypes**:  Lists the available set of link types on a server. 
 -   **reactivatelinktype**: Reactivates the specified link type, and optionally assigns it a new name.  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
 ## Prerequisites  
   
@@ -38,7 +39,7 @@ You manage the link types defined for a project collection by using the followin
 For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
->  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   

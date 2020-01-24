@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops  
 ms.assetid: B7FD5B66-CECC-48F6-B8A8-FF5D11B19D8B  
 toc: show
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -210,9 +210,10 @@ Use the following commands to delete the TFS tables:
 `DROP TABLE [dbo].[TFS_mapped_projects]`   
 `DROP TABLE [dbo].[TFS_status_approvals]`   
 
->**Note:** If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
+> [!NOTE]
+> If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
 >
->![Sample screenshot of error message](_img/ps-tfs-integ-error-message.png)
+>![Sample screenshot of error message](media/ps-tfs-integ-error-message.png)
 
 
 ## 8. Delete enterprise fields and look-up tables from Project Server
@@ -231,7 +232,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Work Item Type (TFS)</li>
 </ul>
 <p>For example, delete the <code>IsTaskTypeInitialized (TFS)</code> field:</p> 
-<img src="_img/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
+<img src="media/ps-tfs-integ-enterprise-custom-fields.png" alt="Enterprise custom fields"/>
 </li>
 <li>Also, delete all lookup tables that start with <code>Microsoft.VSTS</code>, for example: 
 <ul><li>Microsoft.VSTS.ProjSrv.SubmittedRevLT.DoNotDelete</li>
@@ -242,7 +243,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 <li>Microsoft.VSTS.ProjSrv.WorkItemIdLT.DoNotDelete</li>
 </ul>
 <p>For example, here we delete the <code>Microsoft.VSTS.ProjSrv.TfsAssnLT.DoNotDelete</code> field:</p>
-<img src="_img/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
+<img src="media/ps-tfs-integ-delete-custom-fields-from-lookup-table.png" alt="Enterprise custom fields"/>
 </li>
 </ol>
 
@@ -273,5 +274,5 @@ DELETE FROM <TFS Configuration Database>.dbo.tbl_CatalogResource
 - [Synchronize TFS with Project Server (TFS 2015 | TFS 2013)](synchronize-tfs-project-server.md)    
 - [witAdmin: Customize and manage objects for tracking work](../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
 - [Map integration components (TFSAdmin command line tool)](map-integration-components.md)  
-- [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/09/16/microsoft-discontinuing-project-server-tfs-integration/)
+- [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://devblogs.microsoft.com/devops/microsoft-discontinuing-project-server-tfs-integration/)
 

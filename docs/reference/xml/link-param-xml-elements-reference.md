@@ -5,15 +5,16 @@ description: Adds a hyperlink to a field or a standalone label on a work item fo
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 04/05/2017
 ---
 
 # Link and Param XML elements reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can add a hyperlink to a field or a standalone label on a work item form by using the `Link` element. You use the `Link` element in the following instances to:  
   

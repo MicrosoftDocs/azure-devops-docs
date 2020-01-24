@@ -7,17 +7,17 @@ ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'  
-ms.date: 01/19/2019
+ms.date: 11/21/2019
 ---
 
 # Turn a service on or off
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../../includes/version-azure-devops.md)]
 
 You can control which services are available through the web portal by turning a service on or off. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on.  
 
@@ -37,24 +37,27 @@ You can control which services are available through the web portal by turning a
 
 ## Change the visibility for a service  
 
-1. 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
+::: moniker range=">= azure-devops-2019"
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and select a project.
 2. Choose **Project settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/_img/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
 3. Select **Overview**, and then choose the slider for the service that you want to enable or disable.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>General>Services](_img/services/set-service-visibility.png)  
+	> ![Project Settings > Overview to services](media/services/set-service-visibility.png)  
 
 4. Confirm that you want to disable the service.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Disable a service confirmation dialog](_img/services/remove-test-service.png)
+	> ![Disable a service confirmation dialog](media/services/remove-test-service.png)
 
 5. Refresh your web browser to view the updates.
 
+::: moniker-end
 
 ## Disabled objects and features
 

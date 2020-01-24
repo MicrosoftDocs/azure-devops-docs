@@ -5,7 +5,7 @@ ms.topic: conceptual
 title: Basic Authentication for Team Foundation Server
 description: Use the TFS Cross Platform (tfx) command line interface against TFS using basic authentication.
 ms.assetid: 6dc7f977-4b62-4bd6-b77a-1c6cade1ffa8
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -41,7 +41,7 @@ Follow these steps to enable basic auth for your TFS:
 
 1. Install the `Basic Authentication` feature for IIS in Server Manager
    <div style="vertical-align:middle;display:block;width:60;margin-left:auto;margin-right:auto">
-   <img alt="Configure basic authentication feature" src="./_img/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
+   <img alt="Configure basic authentication feature" src="./media/configureBasicAuthFeature.png" style="display:block;padding-bottom:10px;padding-top:10px;margin-left:auto;margin-right:auto">
    </div>
 2. Open IIS Manager and expand to the <code>Team Foundation Server</code> website, double click the <code>Authentication</code> tile in the Features view.
 

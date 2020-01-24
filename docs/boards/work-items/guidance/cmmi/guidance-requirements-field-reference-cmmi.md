@@ -6,15 +6,16 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c2c4f0c8-0d7f-4087-b115-2ca10cf3c998
 ms.topic: reference
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/24/2017
 ---
 
 # Requirements field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 When you create a project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
   

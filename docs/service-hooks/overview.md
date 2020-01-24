@@ -5,10 +5,10 @@ ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/08/2019
 ---
 
@@ -27,7 +27,7 @@ define **actions** to take based on the event.
 Subscriptions also target **consumers**, which are external services that can run their own actions, 
 when an event occurs.
 
-![Service Hooks Diagram](./_img/service-hooks.png)
+![Service Hooks Diagram](./media/service-hooks.png)
 
 ## Available services
 
@@ -37,7 +37,7 @@ integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](http
 Build and release                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate
 -------------------		           |  -------------	                    | ----------------		                | ---------		                 | -------
 [AppVeyor](https://www.appveyor.com/docs/) | [Flowdock](https://www.flowdock.com/api/integration-getting-started) | [UserVoice](https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration)  | [Trello](./services/trello.md) | [Azure Service Bus](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/en-us/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+[Bamboo](https://confluence.atlassian.com/bamboo/enabling-webhooks-946626050.html)	   |	HipChat (No longer supported)	|	[Zendesk](https://support.zendesk.com/hc/articles/204890268-Creating-webhooks-with-the-HTTP-target) 		|			|	[Azure Storage](https://docs.microsoft.com/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 [Jenkins](./services/jenkins.md)   |	[Hubot](https://hubot.github.com/docs/)	|											|			|	[Grafana](./services/grafana.md) |
 [MyGet](https://docs.myget.org/docs/reference/webhooks)	   |	[Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#start-a-subscription)	|											|			|	[Web Hooks](./services/webhooks.md) |
 [Slack](./services/slack.md)	   |		|			|			| [Zapier](https://zapier.com/apps/webhook/integrations)
@@ -53,32 +53,32 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
     
-    <img alt="Open the admin page" src="./_img/devops-service-hooks.png" />
+    <img alt="Open the admin page" src="./media/devops-service-hooks.png" />
 
 2. 	Create a subscription by running the wizard.
 
-    <img alt="Click the link to run the subscription wizard" src="./_img/devops-create-subscription.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Click the link to run the subscription wizard" src="./media/devops-create-subscription.png" style="border: 1px solid #CCCCCC" />
  
 3.	Select the service you want to integrate with.
 
-    <img alt="Select the service to integrate" src="./_img/selectservice.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select the service to integrate" src="./media/selectservice.png" style="border: 1px solid #CCCCCC" />
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    <img alt="Select the event to trigger on and any filters" src="./_img/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select the event to trigger on and any filters" src="./media/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    <img alt="Select an action to perform on the target service" src="./_img/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select an action to perform on the target service" src="./media/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    <img alt="Test notification 1" src="./_img/test1.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Test notification 1" src="./media/test1.png" style="border: 1px solid #CCCCCC" />
 	
-    <img alt="Test notification 2" src="./_img/test2.png" style="border: 1px solid #CCCCCC" />	
+    <img alt="Test notification 2" src="./media/test2.png" style="border: 1px solid #CCCCCC" />	
  
 ::: moniker-end
 
@@ -86,32 +86,32 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
 
-    <img alt="Open the admin page" src="./_img/openadmin.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Open the admin page" src="./media/openadmin.png" style="border: 1px solid #CCCCCC" />
 
 2. 	Create a subscription by running the wizard.
 
-    <img alt="Click the link to run the subscription wizard" src="./_img/createfirst.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Click the link to run the subscription wizard" src="./media/createfirst.png" style="border: 1px solid #CCCCCC" />
  
 3.	Select the service you want to integrate with.
 
-    <img alt="Select the service to integrate" src="./_img/selectservice.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select the service to integrate" src="./media/selectservice.png" style="border: 1px solid #CCCCCC" />
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    <img alt="Select the event to trigger on and any filters" src="./_img/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select the event to trigger on and any filters" src="./media/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    <img alt="Select an action to perform on the target service" src="./_img/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select an action to perform on the target service" src="./media/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    <img alt="Test notification 1" src="./_img/test1.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Test notification 1" src="./media/test1.png" style="border: 1px solid #CCCCCC" />
 	
-    <img alt="Test notification 2" src="./_img/test2.png" style="border: 1px solid #CCCCCC" />	
+    <img alt="Test notification 2" src="./media/test2.png" style="border: 1px solid #CCCCCC" />	
  
 ::: moniker-end
 
@@ -162,20 +162,20 @@ A: Yes. For more information, see [Create a service hooks subscription](create-s
 
 A: Yes. You can revoke authorizations from your profile.
 
-1. 	Go to your profile page from http://visualstudio.com. 
+1. 	Go to your profile page from https://visualstudio.com. 
 
-	Make sure you start from the Visual Studio site (http://visualstudio.com) 
+	Make sure you start from the Visual Studio site (https://visualstudio.com) 
 	instead of your organization (```https://dev.azure.com/{orgName}```) because, right now, 
 	your profile accessed from your organization will take you to the wrong implementation 
 	of the authorizations management feature.
 
 2.	Manage your authorizations.
 	
-	<img alt="Click Manage applications to manage authorizations" src="./_img/Profile-manage-applications.png" style="border: 1px solid #CCCCCC" />	
+	<img alt="Click Manage applications to manage authorizations" src="./media/Profile-manage-applications.png" style="border: 1px solid #CCCCCC" />	
 	
 3.	Revoke any authorizations you no longer want to allow.
 
-	<img alt="Click Revoke to revoke authorizations" src="./_img/authorizations.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Click Revoke to revoke authorizations" src="./media/authorizations.png" style="border: 1px solid #CCCCCC" />
 	
 #### Q: Why can't we setup Service Hooks for HipChat anymore?
 
@@ -183,3 +183,13 @@ A: Atlassian officially dropped support for HipChat. See more on that announceme
 
 
 <!-- ENDSECTION -->
+
+
+
+## Related articles
+
+* [Troubleshoot service hooks and FAQs](troubleshoot.md)
+* [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops)
+* [Billing information](../organizations/billing/index.md)
+
+

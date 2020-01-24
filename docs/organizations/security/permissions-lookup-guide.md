@@ -5,7 +5,7 @@ description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
 ms.prod: devops
 ms.assetid:  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Permissions lookup guide for Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md). 
 
@@ -42,6 +42,10 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
+<li><a href="permissions.md#view-audit-log-permission">Audit log</a></li>
+
+
+
 </ul>
 <h3>B</h3>
 <ul>
@@ -70,7 +74,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#delete-test-permissions" data-raw-source="[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)">Delete test artifacts</a></li>
 <li><a href="set-permissions-access-work-tracking.md#move-delete-permissions" data-raw-source="[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)">Delete work items</a></li>
 <li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)">Delivery plans (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#deployment-group" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)">Deployment groups (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md)">Deployment groups (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Deployment pools (Collection, Role)</a></li>
 </ul>
 </td>
@@ -92,7 +96,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Library (Object, Role)</a></li>
+<li>Library (Object, Role)</li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
@@ -125,7 +129,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li>Secure files (Object, Role)</li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hooks](../../service-hooks/overview.md#subscription-permissions)">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>
@@ -137,7 +141,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Tags, Git (Object)](../../repos/git/branch-permissions.md)">Tags, Git (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Tags, work items (Project)](set-permissions-access-work-tracking.md)">Tags, work items (Project)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)">Task groups (Object)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md)">Task groups (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Team projects (Collection)](set-project-collection-level-permissions.md)">Team projects (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#delete-test-permissions" data-raw-source="[Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)">Test artifacts, delete</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test configurations (Project)](set-project-collection-level-permissions.md)">Test configurations (Project)</a></li>
@@ -149,7 +153,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>V-W</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Variable groups (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md)">Variable groups (Object, Role)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Work items (Project)](set-permissions-access-work-tracking.md)">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Workspaces (Collection)](set-project-collection-level-permissions.md)">Workspaces (Collection)</a></li> 
 </ul>
@@ -218,7 +222,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#delete-test-permissions" data-raw-source="[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)">Delete test artifacts</a></li>
 <li><a href="set-permissions-access-work-tracking.md#move-delete-permissions" data-raw-source="[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)">Delete work items</a></li>
 <li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)">Delivery plans (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#deployment-group" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)">Deployment groups (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md)">Deployment groups (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Deployment pools (Collection, Role)</a></li>
 </ul>
 </td>
@@ -241,7 +245,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Library (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md)">Library (Object, Role)</a></li>	
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
@@ -275,7 +279,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li>Secure files (Object, Role)</li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hooks](../../service-hooks/overview.md#subscription-permissions)">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>
@@ -288,7 +292,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Tags, Git (Object)](../../repos/git/branch-permissions.md)">Tags, Git (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Tags, work items (Project)](set-permissions-access-work-tracking.md)">Tags, work items (Project)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)">Task groups (Object)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md)">Task groups (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Team projects (Collection)](set-project-collection-level-permissions.md)">Team projects (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#delete-test-permissions" data-raw-source="[Test artifacts, delete](set-permissions-access-work-tracking.md#delete-test-permissions)">Test artifacts, delete</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test configurations (Project)](set-project-collection-level-permissions.md)">Test configurations (Project)</a></li>
@@ -302,7 +306,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>U-V-W</h3>
 <ul>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Use full Web Access features (Server)](permissions.md#server-permissions)">Use full Web Access features (Server)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Variable groups (Object, Role)</a></li>
+<li>Variable groups (Object, Role)</li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Work items (Project)](set-permissions-access-work-tracking.md)">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Workspaces (Collection)](set-project-collection-level-permissions.md)">Workspaces (Collection)</a></li> 
 </ul>
@@ -362,10 +366,10 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
 <li><a href="../settings/work/customize-process-field.md" data-raw-source="[Delete field from account](../settings/work/customize-process-field.md)">Delete field from account</a></li>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Delete project collection (Server)](permissions.md#server-permissions)">Delete project collection (Server)</a></li>
-<li><a href="set-permissions-access-work-tracking.md#delete-test-permissions" data-raw-source="[Delete test artifacts](set-permissions-access-work-tracking.md#delete-test-permissions)">Delete test artifacts</a></li>
+<li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Delete test artifacts](set-permissions-access-work-tracking.md)">Delete test artifacts</a></li>
 <li><a href="set-permissions-access-work-tracking.md#move-delete-permissions" data-raw-source="[Delete work items](set-permissions-access-work-tracking.md#move-delete-permissions)">Delete work items</a></li>
 <li><a href="../../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[Delivery plans (Object)](../../organizations/security/set-permissions-access-work-tracking.md)">Delivery plans (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#deployment-group" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md#deployment-group)">Deployment groups (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment groups (Object, Role)](../../pipelines/policies/set-permissions.md)">Deployment groups (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Deployment pools (Collection, Role)](../../pipelines/policies/set-permissions.md)">Deployment pools (Collection, Role)</a></li>
 </ul>
 </td>
@@ -382,11 +386,11 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Feeds](../../artifacts/feeds/feed-permissions.md)">Feeds</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Field, delete (Collection)](set-project-collection-level-permissions.md)">Field, delete (Collection)</a></li>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Git branch (Object)](../../repos/git/branch-permissions.md)">Git branch (Object)</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[Inherited process (Object)](set-permissions-access-work-tracking.md#process-permissions)">Inherited process (Object)</a></li>
+<li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Inherited process (Object)](set-permissions-access-work-tracking.md)">Inherited process (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Iteration paths (Object)](set-permissions-access-work-tracking.md)">Iteration paths (Object)</a></li>
 <li><a href="../../organizations/settings/manage-teams.md" data-raw-source="[Kanban board, customize (Team)](../../organizations/settings/manage-teams.md)">Kanban board, customize (Team)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Labels, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Labels, TFVC (Object)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Library (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Library (Object, Role)](../../pipelines/policies/set-permissions.md)">Library (Object, Role)</a></li>
 <li><a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Locks, TFVC (Object)](set-git-tfvc-repository-permissions.md)">Locks, TFVC (Object)</a></li>
 </ul>
 <h3>M-N</h3>
@@ -417,7 +421,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li><a href="../../pipelines/policies/set-permissions.md#library" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md#library)">Secure files (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Secure files (Object, Role)](../../pipelines/policies/set-permissions.md)">Secure files (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Service endpoints (Collection, Role)](../../pipelines/policies/set-permissions.md)">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions" data-raw-source="[Service hook](../../service-hooks/overview.md#subscription-permissions)">Service hook</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Shelvesets, TFVC (Collection)](set-project-collection-level-permissions.md)">Shelvesets, TFVC (Collection)</a></li>
@@ -430,7 +434,7 @@ Values in parenthesis indicate what level the permission is managed:
 <ul>
 <li><a href="../../repos/git/branch-permissions.md" data-raw-source="[Tags, Git (Object)](../../repos/git/branch-permissions.md)">Tags, Git (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Tags, work items (Project)](set-permissions-access-work-tracking.md)">Tags, work items (Project)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md#task-group)">Task groups (Object)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Task groups (Object)](../../pipelines/policies/set-permissions.md)">Task groups (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Team projects (Collection)](set-project-collection-level-permissions.md)">Team projects (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test configurations (Project)](set-project-collection-level-permissions.md)">Test configurations (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Test controllers (Project)](set-project-collection-level-permissions.md)">Test controllers (Project)</a></li>
@@ -443,7 +447,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>U-V-W</h3>
 <ul>
 <li><a href="permissions.md#server-permissions" data-raw-source="[Use full Web Access features (Server)](permissions.md#server-permissions)">Use full Web Access features (Server)</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md#variable-group)">Variable groups (Object, Role)</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Variable groups (Object, Role)](../../pipelines/policies/set-permissions.md)">Variable groups (Object, Role)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Work items (Project)](set-permissions-access-work-tracking.md)">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md" data-raw-source="[Workspaces (Collection)](set-project-collection-level-permissions.md)">Workspaces (Collection)</a></li> 
 </ul>

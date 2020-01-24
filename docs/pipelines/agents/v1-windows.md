@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 9FD46361-985B-4886-A042-9C322CE3CD92
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 03/15/2019
@@ -20,17 +20,17 @@ monikerRange: 'tfs-2015'
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 
 > Before you begin:
- * If you use [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
- * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/azure/devops/server/install/single-server).
- *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
+>  * If you use [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
+>  * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/azure/devops/server/install/single-server).
+>  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
 Before you begin, make sure your agent machine is prepared with these prerequisites:
 
-* An [operating system that is supported by Visual Studio 2013](http://visualstudio.microsoft.com/products/visual-studio-2013-compatibility-vs) or newer
+* An [operating system that is supported by Visual Studio 2013](https://visualstudio.microsoft.com/products/visual-studio-2013-compatibility-vs) or newer
 
 * Visual Studio 2013 or Visual Studio 2015
 
@@ -47,9 +47,9 @@ Before you begin, make sure your agent machine is prepared with these prerequisi
 4. Unzip the .zip file into the folder on disk from which you would like to run the agent.  To avoid "path too long" issues on the file system, keep the path short. For example: `C:\Agent\`
 
 5. Run Command Prompt as Administrator, and then run:
- ```
-ConfigureAgent.cmd
- ```
+   ```
+   ConfigureAgent.cmd
+   ```
 
 6. Respond to the prompts.
 
@@ -154,15 +154,15 @@ Prints usage information.
 
 ---
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/qa-windows-agent-powershell-version.md)]
+[!INCLUDE [temp](includes/qa-windows-agent-powershell-version.md)]
 
-[!INCLUDE [temp](_shared/qa-no-agent-with-capabilities.md)]
+[!INCLUDE [temp](includes/qa-no-agent-with-capabilities.md)]
 
 ### What version of the agent runs with my version of TFS?
 
@@ -177,10 +177,12 @@ Prints usage information.
 
 Yes. If you are an existing customer with custom build processes you are not yet ready to migrate, you can continue to use XAML builds, controllers, and agents.
 
-![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
+![Configure XAML build controllers and agents](media/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+
+[!INCLUDE [temp](../includes/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

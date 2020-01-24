@@ -1,12 +1,13 @@
 ---
 title: VSS/References/SDK.Interfaces ExtendedHostContext API | Extensions for Azure DevOps Services
+description: Data representation of extended host context.
 ms.assetid: 149e2bd4-a8c9-09da-9c61-09e65c880d62
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: chcomley
+author: chcomley
 ms.topic: article
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016

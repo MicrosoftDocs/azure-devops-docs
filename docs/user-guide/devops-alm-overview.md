@@ -6,7 +6,7 @@ description: Guide to getting started using DevOps and Agile tools provided by A
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.date: 06/02/2019
 monikerRange: '>= tfs-2013'
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2013'
 
 # DevOps tools overview for Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Learn how to use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  
-![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
+![Continuous planning and delivery](media/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
 Azure DevOps Services and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
@@ -36,13 +36,13 @@ Whether you work in the cloud, on-premises, or a hybrid of each, you have a comp
 
 Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to continuous testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 
-[![Sign up for Azure DevOps Services](_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](code-with-git.md)   
+[![Sign up for Azure DevOps Services](media/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](media/overview/vsts-setup-4.png)](code-with-git.md)   
 
 ### Work on-premises
 
 Choose on-premises when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore-tfs)
+[![Install TFS](media/overview/tfs-setup-1.png)](/azure/devops/server/install/single-server)[![Create a project](media/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](media/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](media/overview/tfs-setup-4.png)](/azure/devops/server/admin/backup/back-up-restore)
  
 <a id="add-code">  </a>
 
@@ -56,10 +56,10 @@ Depending on whether you use Git or TFVC as a repo, you can develop your code in
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](_img/overview/code-git-android-studio-1.png)](/../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/../java/download-intellij-plug-in.md)  
+[![Android Studio](media/overview/code-git-android-studio-1.png)](../java/download-android-studio-plug-in.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](media/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](media/overview/code-git-intellij-3.png)](../java/download-intellij-plug-in.md)  
 
 <br/>
-<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="_img/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="_img/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="_img/overview/code-git-xcode.png" alt="Xcode"/></a>  
+<a href="../repos/git/share-your-code-in-git-vs.md" data-raw-source="[![Visual Studio](media/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)"><img src="media/overview/code-git-visual-studio.png" alt="Visual Studio"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="https://code.visualstudio.com/docs/editor/versioncontrol" data-raw-source="[![Visual Studio Code](media/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)"><img src="media/overview/code-git-visual-studio-code.png" alt="Visual Studio Code"/></a>&#160;&#160;&#160;&#160;&#160;&#160;<a href="../repos/git/share-your-code-in-git-xcode.md" data-raw-source="[![Xcode](media/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)"><img src="media/overview/code-git-xcode.png" alt="Xcode"/></a>  
 
 ### TFVC
 
@@ -67,7 +67,7 @@ TFVC is a centralized version control system that lets you apply granular permis
 
 You can use TFVC to scale from small to large projects, and by using server work spaces, you can scale up to very large code bases with millions of files per branch and large binary files. And with compare and annotate you can identify the exact changes that they made.
 
-[![Eclipse](_img/overview/code-tfvc-eclipse.png)](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio](_img/overview/code-tfvc-visualstudio.png)](../repos/tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-tfvc-xcode.png)](../repos/tfvc/share-your-code-in-tfvc-xcode.md)  
+[![Eclipse](media/overview/code-tfvc-eclipse.png)](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio](media/overview/code-tfvc-visualstudio.png)](../repos/tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](media/overview/code-tfvc-xcode.png)](../repos/tfvc/share-your-code-in-tfvc-xcode.md)  
 
 
 ### Package management and code search 
@@ -85,7 +85,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](_img/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../boards/boards/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
+[![Define stories](media/overview/ov-agile-plan-1.png)](../boards/backlogs/create-your-backlog.md)[![Plan sprints](media/overview/ov-agile-plan-2.png)](../boards/sprints/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](media/overview/ov-agile-plan-3.png)](../boards/boards/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](media/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
 
 You also gain access to a [rich set of customization capabilities](../reference/customize-work.md).
  
@@ -93,7 +93,7 @@ You also gain access to a [rich set of customization capabilities](../reference/
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
+[![Build your software](media/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](media/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](media/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 
 <!---
 
@@ -102,7 +102,7 @@ Agile methodologies speed up the development and test cycle and make sure that y
 No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
 -->
 
-In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.md), and [run unit tests](/visualstudio/test/developer-testing-scenarios). 
+In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.yml), and [run unit tests](/visualstudio/test/developer-testing-scenarios). 
 
 Azure Pipelines, and Build &amp; Release in TFS, help you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 
@@ -111,7 +111,7 @@ Azure Pipelines, and Build &amp; Release in TFS, help you automate the deploymen
 
 As your team grows, your tools grow. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](_img/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
+[![Add teams](media/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](media/overview/ov-scale-2.png)](../organizations/settings/set-area-paths.md)[![Manage teams and configure team tools](media/overview/ov-scale-3.png)](../organizations/settings/manage-teams.md)  
 
  
 ## Related articles
@@ -159,6 +159,6 @@ Monitor your web and device apps to gain actionable insight to improve performan
 
 [Use Application Insights](https://azure.microsoft.com/documentation/services/application-insights/) to understand how your app is being used and to make sure it is performing well. Detect issues, diagnose crashes and track usage of your mobile apps, and web apps hosted from Azure, or your own IIS or Java EE servers.  
 
-[Use HockeyApp](http://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
+[Use HockeyApp](https://hockeyapp.net/features/) to distribute beta versions of your apps on Android, iOS, macOS, and Windows, collect live crash reports, get feedback from users, recruit new testers, and analyze test coverage.
  
  

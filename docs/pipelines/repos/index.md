@@ -5,28 +5,37 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 03/06/2019
+ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Build source repositories
+# Supported build source repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ## Configure a repository
 
-At the beginning of a pipeline, the agent downloads files from your repository into a local sources directory.
-
-::: moniker range=">= tfs-2018"
-If your pipeline consists of multiple jobs, the agent downloads source files at the beginning of each job. You can specify only one source repository for your entire pipeline.
+::: moniker range="> azure-devops-2019"
+At the beginning of each non-deployment pipeline job, the agent downloads files from your repository into a local sources directory.
+You can specify only one source repository for your pipeline but you can checkout multiple repositories by using multiple [checkout](../yaml-schema.md#checkout) steps.
+Deployment jobs do not automatically download sources.
 ::: moniker-end
+
+::: moniker range=">= tfs-2018 <= azure-devops-2019"
+At the beginning of each pipeline job, the agent downloads files from your repository into a local sources directory.
+You can specify only one source repository for your entire pipeline.
+::: moniker-end
+
+::: moniker range="< tfs-2018"
+At the beginning of a pipeline, the agent downloads files from your repository into a local sources directory.
+:::moniker-end
 
 ::: moniker range="azure-devops"
 **Azure Pipelines:** To specify the source repository, while editing your pipeline, click the **YAML** or **Tasks** tab, then click **Get sources**, and then select the type of repo that contains your source files.
@@ -75,7 +84,7 @@ See details about building specific repository types:
 
 ## Options for Git repositories
 
-[!INCLUDE [temp](_shared/pipeline-options-for-git.md)]
+[!INCLUDE [temp](includes/pipeline-options-for-git.md)]
 
 ## Q & A
 
@@ -89,10 +98,10 @@ When a pipeline uses a remote, 3rd-party repository host such as Bitbucket Cloud
 
 Reference directories using build variables such as `$(Build.SourcesDirectory)` and `$(Build.BinariesDirectory)`. To learn more, see [Build variables](../build/variables.md).
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts TestOutcome API | Extensions for Azure DevOps Services
+description: Data representation of a test outcome.
 ms.assetid: a2a15ae6-687e-a316-0278-64f117011a86
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,7 +19,7 @@ Module path: `TFS/TestManagement/Contracts`
 ### Values
 
 * `Unspecified` Only used during an update to preserve the existing value.
-* `None` Test has not been completed, or the test type does not report pass/failure.
+* `None` Test has not been completed, or the test type doesn't report pass/failure.
 * `Passed` Test was executed w/o any issues.
 * `Failed` Test was executed, but there were issues. Issues may involve exceptions or failed assertions.
 * `Inconclusive` Test has completed, but we can&#x27;t say if it passed or failed. May be used for aborted tests...

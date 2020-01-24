@@ -1,12 +1,12 @@
----
-title: System requirements for Microsoft Release Management
+﻿---
+title: System requirements for Release Management
 ms.custom: seodec18
 description: Learn about the system requirements for Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 5B39B13E-166B-48DF-B8CB-45725355F644
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # System requirements for Release Management server/client for VS 2015 and TFS 2015
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
 Before you install Release Management Server, its client, or the Microsoft 
 Deployment Agent, make sure your system meets the operating system and 
@@ -124,7 +124,7 @@ These are the software requirements for all the agents in your environment.
 * Windows Server 2012 R2
 * Windows Server 2012
 * Windows Server 2008 R2, Service Pack 1 
-* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](http://support.microsoft.com/kb/968930)
+* Windows Server 2008, Service Pack 2 and [PowerShell 2.0](https://support.microsoft.com/kb/968930)
 
 **The .NET Framework:**
 
@@ -150,6 +150,6 @@ These are the hardware requirements for all the agents in your environment.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

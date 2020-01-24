@@ -1,11 +1,11 @@
 ---
 title: Analytics basic queries
 titleSuffix: Azure DevOps  
-description: Examples of how to create queries of work item tracking from the Analytics service for Azure DevOps
+description: Examples of how to create queries of work item tracking from Analytics for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -15,14 +15,14 @@ ms.date: 11/1/2018
 
 # Query work tracking data using Analytics  
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)] 
+[!INCLUDE [temp](../includes/version-azure-devops.md)] 
 
-You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of the
-Analytics service. You can adapt most of these queries to meet your needs.
+You can query your Azure DevOps work tracking data using the basic queries provided in this article. These queries address everyday needs while demonstrating various capabilities of 
+Analytics. You can adapt most of these queries to meet your needs.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
-For prerequisites and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project on Azure DevOps Services. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md).
+For prerequisites and other information for getting started, see [Query your work tracking data using OData Analytics](wit-analytics.md). All examples are scoped to a project on Azure DevOps Services. For examples of organization-level scoping or Azure DevOps Server, see [Project and organization-scoped queries](account-scoped-queries.md).
 
 <a id="history" />
 
@@ -33,7 +33,7 @@ https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version
   $filter=WorkItemId eq {Id}
   &$select=WorkItemId, Title, State
 ```
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 <a id="iteration" />
 

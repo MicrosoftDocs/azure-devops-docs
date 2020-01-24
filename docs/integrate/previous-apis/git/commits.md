@@ -5,11 +5,11 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Commits | REST API Reference for Team Foundation Server
 description: Work with Git commits programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: DD768682-3DC8-4E00-85E8-699633A93EB2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
-ms.date: 08/23/2016
+ms.date: 10/31/2019
 ---
 
 # Git commits
@@ -34,8 +34,8 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 | repository | string   |         | ID of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | Version of the API to use.
-| branch     | string   |         | The name of a branch in the repository. (Cannot combine with commit parameter.)
-| commit     | string   |         | The id of a commit in the repository. (Cannot combine with branch parameter.)
+| branch     | string   |         | The name of a branch in the repository. (Can't combine with commit parameter.)
+| commit     | string   |         | The ID of a commit in the repository. (Can't combine with branch parameter.)
 | itemPath   | string   | /       | Path of an item in the repository.
 | committer  | string   |         | Name of the person who committed the change.
 | author     | string   |         | Name of the author.
@@ -48,7 +48,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/
 
 ### By repository ID
 
-If you do not specify any optional parameters, then we return all commits in the repository, regardless of reachability from branches.
+If you don't specify optional parameters, then we return all commits in the repository, whatever the reachability from branches.
 
 #### Sample request
 
@@ -1536,7 +1536,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 
 ### From a push
 
-Get the commits that were introduced to the repo by a push. This does not include commits which already existed in the repo, for instance on another branch. 
+Get the commits that were introduced to the repo by a push. It doesn't include commits that already existed in the repo, for instance on another branch. 
 
 #### Sample request
 
@@ -1588,7 +1588,7 @@ GET https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-4
 ## Get a batch of commits
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commitsBatch?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commitsBatch?api-version={version}
 ```
 
 | Parameter  | Type     | Default | Notes
@@ -1965,7 +1965,7 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 ## Get a single commit
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
 ```
 
 | Parameter   | Type    | Default | Notes
@@ -2201,7 +2201,7 @@ For instance, it's used in VSTS to surface build status in the web UI.
 ### Add status
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 ```
 {
@@ -2273,7 +2273,7 @@ POST https://mytfsserver/DefaultCollection/_apis/git/repositories/278d5cd2-584d-
 ### Get statuses
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 
 

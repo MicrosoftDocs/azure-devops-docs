@@ -5,16 +5,16 @@ ms.assetid: C9467223-4513-4F46-812C-44FFE2B27F28
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 04/24/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # FAQs for manual testing
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 <a name="testplans"></a>
 ## Creating manual test plans
@@ -25,13 +25,13 @@ monikerRange: '>= tfs-2015'
 
 **A:** Yes, open the test plan from the shortcut menu and rename it.
 
-![Rename a test plan](_img/create-a-test-plan/rename-test-plan.png)
+![Rename a test plan](media/create-a-test-plan/rename-test-plan.png)
 
 ### Q: Can I permanently delete my test plan?
 
 **A:** Yes, do this from the shortcut menu for the test plan.
 
-![Delete a test plan](_img/create-a-test-plan/delete-test-plan.png)
+![Delete a test plan](media/create-a-test-plan/delete-test-plan.png)
 
 See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
@@ -42,7 +42,7 @@ contain any type of test suites - just like folders.
 Drag test suites to group them in a static test plan.
 Drag and drop tests to reorder them.
 
-![Use static test suites like folders](_img/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
+![Use static test suites like folders](media/create-a-test-plan/AddRequirementSuitesToTestPlan4.png)
 
 <a name="query-based-suites"></a>
 ### Q: What are query-based test suites ?
@@ -62,7 +62,7 @@ every test case that is returned by the query that you define.
 **A:** Yes, you can export test plans, test suites, and test cases. Select the details 
 that you want in the report. Then email or print this report for review.
 
-![Right-click a test suite, and choose Export](_img/create-a-test-plan/ExportTestPlanHTML.png)
+![Right-click a test suite, and choose Export](media/create-a-test-plan/ExportTestPlanHTML.png)
 
 Change the test case fields in the report by adding or removing columns from 
 the list view of the test suite.
@@ -97,15 +97,15 @@ For example, adding and removing test cases from a test suite are tracked in thi
 
 **A:** Yes. Open the test case from its shortcut menu.
 
-![Open a test case for editing](_img/create-test-cases/open-test-case.png)
+![Open a test case for editing](media/create-test-cases/open-test-case.png)
 
 Then rename it.
 
-![Rename a test case](_img/create-test-cases/rename-test-case.png)
+![Rename a test case](media/create-test-cases/rename-test-case.png)
 
 Or permanently delete it.
 
-![Delete a test case](_img/create-test-cases/delete-test-case.png)
+![Delete a test case](media/create-test-cases/delete-test-case.png)
 
 See also [Delete test artifacts](../boards/backlogs/delete-test-artifacts.md)
 
@@ -126,19 +126,20 @@ above the selected step.
 **A:** Yes, use the grid view when you add test cases to 
 the test suite.
 
-![Create new test cases using the grid](_img/create-test-cases/NewTestCasesUsingGrid.png)
+![Create new test cases using the grid](media/create-test-cases/NewTestCasesUsingGrid.png)
 
 On the grid shortcut menu, you can add, delete, or clear rows.
 
-![Use the grid's shortcut menu to insert, delete, or clear rows](_img/create-test-cases/GridContextMenu.png)
+![Use the grid's shortcut menu to insert, delete, or clear rows](media/create-test-cases/GridContextMenu.png)
 
 Switch between Grid and List views using the View menu at the right of the window.
 
-![Use the View menu to switch between List and Grid views](_img/create-test-cases/GridViewSwitch.png)
+![Use the View menu to switch between List and Grid views](media/create-test-cases/GridViewSwitch.png)
 
-> **Note**: Do not use the Team plugin for Excel to add or update test case work items.
-  Excel cannot parse the format used to store test steps, and in some cases
-  this may affect the formatting of the test case work items. 
+> [!NOTE]
+> Do not use the Team plugin for Excel to add or update test case work items.
+> Excel cannot parse the format used to store test steps, and in some cases
+> this may affect the formatting of the test case work items. 
 
 ### Q: Can I bulk edit multiple test cases?
 
@@ -148,12 +149,12 @@ test steps for those cases. This is a helpful view if you
 want to review your test cases with other team members. 
 When you review, you can update and add new test cases.
 
-![To change from list to grid view, choose List ](_img/create-test-cases/ChangeToGridView.png)
+![To change from list to grid view, choose List ](media/create-test-cases/ChangeToGridView.png)
 
 Or, you can filter and sort the test cases in list view. Then select 
 just the ones that you want to bulk edit using the grid.
 
-![Select test cases in listview to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
+![Select test cases in listview to bulk edit in grid view](media/create-test-cases/GridEditSelected.png)
 
 To return to the test suite view, switch the view 
 from Grid back to List.
@@ -167,7 +168,7 @@ worksheet. Paste these columns into the grid view,
 edit if necessary, and save them. (This is supported only with 
 Internet Explorer and Chrome browsers.)
 
-![Save copied test cases in grid view](_img/create-test-cases/SaveTestCasesInGrid.png)
+![Save copied test cases in grid view](media/create-test-cases/SaveTestCasesInGrid.png)
 
 ### Q: Can I copy test cases from the grid to an Excel worksheet?
 
@@ -181,7 +182,7 @@ with Internet Explorer and Chrome browsers.)
 **A:** Yes, in List view use the column options to select the fields in the test 
 case work item.
 
-![Use column options to select fields to edit](_img/create-test-cases/UseColumnOptions.png)
+![Use column options to select fields to edit](media/create-test-cases/UseColumnOptions.png)
 
 You can then view and edit these fields when you switch to 
 the grid view.
@@ -195,34 +196,34 @@ Or open the shortcut menu for a test to move it to the top or to another
 position. After reordering the tests, you can sort them by the 
 **Order** field and then run them in that order with the web runner. 
 
-![Order test cases](_img/create-test-cases/OrderTestCases.png)
+![Order test cases](media/create-test-cases/OrderTestCases.png)
 
 ### Q: Can I tag test cases so that I can see only tests with specific tags?
 
 **A:** Yes, you can tag test cases in a suite with any tag that 
 you want. For example, tag all the tests related to login so that 
 you can rerun these tests if a bug is fixed for the login page. 
-Then you can filter on that tag from [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. 
+Then you can filter on that tag from [!INCLUDE [test-hub-include](includes/test-hub-include.md)]. 
 
 You can add and edit tags when you edit a test case, or bulk edit tags 
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](media/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
 **A:** Yes, choose the steps that you want to share. Find out more about 
 [sharing test steps](mtm/share-steps-between-test-cases.md).
 
-![Create shared test steps](_img/create-test-cases/CreateSharedSteps.png)
+![Create shared test steps](media/create-test-cases/CreateSharedSteps.png)
 
 ### Q: Can I add parameters to a test case so it can run multiple times with different data?
 
 **A:** Yes, choose a test step, and then add the parameter. Find out more about
 [repeating test steps with different data](repeat-test-with-different-data.md).
 
-![Add parameter to test step](_img/create-test-cases/AddParameters1.png)
+![Add parameter to test step](media/create-test-cases/AddParameters1.png)
 
 ### Q: Can I share parameter data between test cases?
 
@@ -230,7 +231,7 @@ you use tags.
 so you get consistent results. To share parameter data, convert your existing
 parameters to shared parameters.
 
-![In the Parameters section, choose Convert to shared parameters](_img/create-test-cases/ConvertSharedParameters.png)
+![In the Parameters section, choose Convert to shared parameters](media/create-test-cases/ConvertSharedParameters.png)
 
 After you create a shared parameter set, open another test case, 
 and add the shared parameter set to that test case. Find out more about 
@@ -239,7 +240,7 @@ and add the shared parameter set to that test case. Find out more about
 Add, edit, and rename your shared parameter sets on the Parameters page. 
 In the test cases pane, view the test cases that use those parameters.
 
-![On the Parameters page, turn on the test cases pane to view tests cases with shared parameters](_img/create-test-cases/ManageSharedParameters.png)
+![On the Parameters page, turn on the test cases pane to view tests cases with shared parameters](media/create-test-cases/ManageSharedParameters.png)
 
 Each shared parameter set is a work item. On the Properties page, 
 you can view or make changes to this work item. For example, 
@@ -260,7 +261,7 @@ this test case. This includes all projects.
 Click the associated test suite to view it. To view the project and the test 
 plan for that test suite, move your pointer over the test suite.
 
-![On Tests Plans page, click details pane. Select test suites in the test details pane](_img/create-test-cases/TestSuites.png) 
+![On Tests Plans page, click details pane. Select test suites in the test details pane](media/create-test-cases/TestSuites.png) 
 
 ### Q: What happens when I delete a test case from a requirement-based test suite?
 
@@ -294,17 +295,17 @@ again to see the correct test suite and tests.
 tests in the test suite. If you haven't run a test yet, its state 
 is active. You can reset the state of a test to active if you want to rerun it.  
 
-![Select and run all active tests in a test suite](_img/run-manual-tests/RunTestsRunSuite.png)
+![Select and run all active tests in a test suite](media/run-manual-tests/RunTestsRunSuite.png)
 
 ### Q: Can I choose a build to run tests against?
 
 **A:** Yes, Choose **Run** and then select **Run with options**.
 
-![Starting a test with options](_img/_shared/collect-diagnostic-data-16.png) 
+![Starting a test with options](media/shared/collect-diagnostic-data-16.png) 
 
 Select the build you want from the drop-down list.
 
-![Selecting the build to include a link to in the results](_img/run-manual-tests/select-build-for-webrunner.png) 
+![Selecting the build to include a link to in the results](media/run-manual-tests/select-build-for-webrunner.png) 
 
 Any bug filed during the run will automatically be associated 
 with the selected build, and the test outcome will be published
@@ -317,11 +318,11 @@ You can insert, move, or delete steps.
 Or you can edit the text itself. Use the edit icon next to the test 
 step number to do this.
     
-![Select the edit icon to edit test steps](_img/run-manual-tests/RunTest_11.png) 
+![Select the edit icon to edit test steps](media/run-manual-tests/RunTest_11.png) 
 
 The tool to edit the test steps is shown.
     
-![Fix test steps when you run a test](_img/run-manual-tests/RunTest_9.png) 
+![Fix test steps when you run a test](media/run-manual-tests/RunTest_9.png) 
 
 ### Q: Can I add a screenshot to the test results when I am running a test?
 
@@ -330,7 +331,7 @@ the web runner to take screenshots of the web
 app while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screenshot from the app](_img/_shared/collect-diagnostic-data-01.png) 
+![Capturing a screenshot from the app](media/shared/collect-diagnostic-data-01.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-screenshot).
 
@@ -341,7 +342,7 @@ the web runner capture your actions on the web
 app as image logs while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
  
-![Capturing an image action log from the app](_img/_shared/collect-diagnostic-data-06.png) 
+![Capturing an image action log from the app](media/shared/collect-diagnostic-data-06.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-log).
 
@@ -352,7 +353,7 @@ the web runner to capture screen recordings of
 your web and desktop apps while testing. For Microsoft Internet Explorer or Microsoft Edge browsers,
 or for desktop app testing, you can download and use the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload).
 
-![Capturing a screen recording from the app](_img/_shared/collect-diagnostic-data-11.png) 
+![Capturing a screen recording from the app](media/shared/collect-diagnostic-data-11.png) 
 
 For more information, see [Collect diagnostic data](collect-diagnostic-data.md#web-recording).
 
@@ -371,7 +372,7 @@ For more information, see [Collect diagnostic data](collect-diagnostic-data.md#w
 ### Q: Can I opt out of telemetry for the Test Runner client? 
 
 **A:** No. The Test Runner desktop client does not collect any user-identifiable data and so,
-in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/en-us/PrivacyStatement),
+in adherence to the [Microsoft Privacy policy](https://privacy.microsoft.com/PrivacyStatement),
 no opt-out mechanism is provided. 
 
 <a name="runoffline"></a>
@@ -391,11 +392,11 @@ no opt-out mechanism is provided.
 **A:**  Yes, select the test case within a test suite and then 
 choose to view the test details pane.
 
-![From test suite, select test case. On toolbar, click test details icon to view the test details pane](_img/track-test-status/ShowDetailsPane.png)
+![From test suite, select test case. On toolbar, click test details icon to view the test details pane](media/track-test-status/ShowDetailsPane.png)
 
 View the recent test results for this test case.
 
-![In test details pane, open the Pane list, choose Test Results](_img/track-test-status/TestResultsPane.png)
+![In test details pane, open the Pane list, choose Test Results](media/track-test-status/TestResultsPane.png)
 
 ### Q: How is data shown in the charts for test cases that are in multiple test suites?
 
@@ -474,7 +475,7 @@ Test results are often deleted before you can analyze them.
 
 **A**: Like this:
 
-![Keep a build indefinitely](_img/how-long-to-keep-test-results/build-keep-indefinitely.png)
+![Keep a build indefinitely](media/how-long-to-keep-test-results/build-keep-indefinitely.png)
 
 *****
 
@@ -537,7 +538,7 @@ For more details, see
 
 **A:** The video recordings created by the Test &amp; Feedback extension can be
 viewed in [Google Chrome](https://www.google.com/chrome/) browser and in the
-[VLC Video Player](http://www.videolan.org/vlc/download-windows.html).
+[VLC Video Player](https://www.videolan.org/vlc/download-windows.html).
 
 ### Q: Does the extension support Team Foundation Server?
 
@@ -560,6 +561,40 @@ For more details, see [Add findings to existing bugs with exploratory testing](a
 2. Search for 'Use Blink's zoom for device scale factor'
 3. Change it to **Disabled**
 
+## FAQ on New Test Plans Page
+
+### Q: How can I assign configurations to my test cases?
+**A:** You can assign configurations in two ways: 
+
+a. To assign configuration to whole suite, go to test suite tree, select the test suite and open the in-context menu bar to assign configurations.
+![FAQ1.1](media/FAQ1.1.png)
+
+b. To assign configuration to test case(s), navigate to test plan > test suite and click on the in-context menu bar of the test case.
+
+
+### Q: How can I see the configurations assigned to my test cases?
+**A:** Once you assign the configurations to the test cases in Define tab, the corresponding test points are created in the Execute tab. Navigate to Execute tab and see the configurations assigned to all the test points.
+![FAQ2](media/FAQ2.png)
+
+### Q: How can I edit the test case?
+**A:** If you have Basic Access Level, you can edit the test case by navigating to test plan > test suite > Execute  > Test Point and clicking on In-context menu bar. If you have Basic + Test Plans Access Level, in addition to editing in Execute tab, you can also navigate to Define tab and double click on test case to edit it.
+![FAQ3](media/FAQ3.png)
+
+### Q: How can I see the outcome of each test case?
+**A:** The executable unit of a test case is called the test point. Hence, outcome is linked to each test point and not the test case. You can view it by navigating to test plan > test suite > Execute and see outcome.
+![FAQ4](media/FAQ4.png)
+
+### Q: How can I assign testers?
+**A:** You can assign testers to your test cases by navigating to test plan > test suite > Execute  and clicking on In-context menu bar.
+![FAQ5](media/FAQ5.png)
+
+### Q: How can I view the execution history of the test case?
+**A:** You can view the execution history by navigating to Test Plan > Test Suite > Execute and right click on In-Context Menu bar. Initially, it will show the history of all the test points for that test case in that test suite. You can clear filters to view the execution history of that test case across all the test suites.
+
+
+### Q: Can I select more than 1 work item while creating a requirement based suite?
+**A:** No, the requirement based suite is linked to one work item.
+
 *****
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

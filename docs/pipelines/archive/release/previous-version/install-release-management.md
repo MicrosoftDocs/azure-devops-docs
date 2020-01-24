@@ -6,7 +6,7 @@ ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2013'
 
 # Install Release Management server/client for VS 2015 and TFS 2015
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
-![Install Release Management with Team Foundation Server](_img/install-rm-01.png)
+![Install Release Management with Team Foundation Server](media/install-rm-01.png)
 
 Release Management provides a continuous deployment solution that makes release
 cycles repeatable, visible, and more efficient by automating deployments 
@@ -73,9 +73,9 @@ ready to manage releases.
 
   ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
   a non-trial version, see 
-  [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+  [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
   or 
-  [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+  [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
   If you are an MSDN subscriber, you can download a non-trial version from the 
   [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
 
@@ -92,7 +92,7 @@ ready to manage releases.
   **[adding team members to Release Management](add-users-and-groups.md)**, 
   or configuring an SMTP server for email notifications.
 
-   ![Set security for Release Management with Team Foundation Server](_img/install-rm-04.png)
+   ![Set security for Release Management with Team Foundation Server](media/install-rm-04.png)
 
 ## Related topics
 
@@ -104,6 +104,6 @@ ready to manage releases.
 * [Manage users, groups, and permissions](add-users-and-groups.md)
 * [Manage your release](manage-your-release.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

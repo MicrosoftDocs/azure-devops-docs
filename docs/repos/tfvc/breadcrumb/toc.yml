@@ -3,9 +3,9 @@
   topicHref: /azure/devops/index
   items:
   - name: Azure Repos
-    tocHref: /azure/devops/repos/tfvc/
+    tocHref: /azure/devops/repos/
     topicHref: /azure/devops/repos/index
     items:
     - name: TFVC
       tocHref: /azure/devops/repos/tfvc/
-      topicHref: /azure/devops/repos/tfvc/index
+      topicHref: /azure/devops/repos/tfvc/overview

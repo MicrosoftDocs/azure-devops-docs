@@ -6,7 +6,7 @@ ms.custom: boards-kanban
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F7E22503-8E8F-4AD0-9E0E-AFE9F24D72B5
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Kanban best practices
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 
 Having worked through the four configuration steps provided in [Kanban basics](../boards/kanban-basics.md), you're well on your way to implementing most of Kanban's six core practices.
@@ -68,7 +68,7 @@ After a team has worked with WIP limits for several weeks, discuss the challenge
 
 ## Your team, working software and the Definition of Done  
 
-One of the [12 principles of Agile software development](http://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
+One of the [12 principles of Agile software development](https://agilemanifesto.org/principles.html) is to "deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale."
 
 > *All agile teams must establish what they mean when they say "working software," which is frequently known as the definition of done. At a high level, a piece of functionality is complete only when its features pass all tests and can be operated by an end user. At a minimum, teams must go beyond the unit test level and test at the system level. The best teams also include integration testing, performance testing, and customer acceptance testing in their definition of what it means to be done with a piece of functionality.* &mdash; Jeff Sutherland
 
@@ -145,7 +145,7 @@ Acceptance criteria corresponds to what a customer should expect when a user sto
 
 Acceptance criteria defines when a feature is shippable. Capture the criteria for each backlog item in the Acceptance Criteria field (for Scrum product backlog items) or the Description field (for Agile user stories and CMMI requirements).
 
-<img src="_img/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />  
+<img src="media/vso-product-backlog-work-item-form-acceptance-criteria.png" alt="Acceptance criteria field on work item form]" style="border: 1px solid #C3C3C3;" />  
 
 The Definition of Done, on the other hand, is about delivering an incremental piece of a feature as it moves from not started to complete. Agile teams meet with greater success when each handoff made is in a ready state for the recipient to begin their work. 
 
@@ -157,6 +157,6 @@ The Definition of Done, on the other hand, is about delivering an incremental pi
 - [DoD Goes Agile](https://www.scruminc.com/dod-goes-agile/) 
 - [Walking Through a Definition of Done](https://www.scrum.org/resources/blog/walking-through-definition-done)
 - [Agile Culture](/azure/devops/learn/agile/agile-culture)
-- [What is Kanban?](http://kanbanblog.com/explained/) 
-- [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](http://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
-- [Agile Project Management with Kanban by Eric Brechner](http://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)
+- [What is Kanban?](https://kanbanblog.com/explained/) 
+- [Kanban: Successful Evolutionary Change for Your Technology Business by David J. Anderson](https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402/)
+- [Agile Project Management with Kanban by Eric Brechner](https://www.amazon.com/Project-Management-Kanban-Developer-Practices/dp/0735698953/)

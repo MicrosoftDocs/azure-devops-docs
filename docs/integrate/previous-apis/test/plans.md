@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Test Plans | REST API Reference for Team Foundation Server
 description: Work with test plans programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B07716A0-0420-49F8-95B9-880105FADDA3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

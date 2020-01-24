@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Code coverage | REST API Reference for Team Foundation Server
 description: Work with code coverage programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 459B4485-EAFB-445D-BAA1-EF7A913BD282
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

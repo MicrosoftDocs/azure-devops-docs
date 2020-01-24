@@ -6,15 +6,16 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4947c45a-c6a4-4865-9e3a-677740a0a1bc
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 04/28/2017
 ---
 
 # Develop requirements
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 Requirements describe what the stakeholders expect from the product. You should express your requirements in terms that allow them to be easily discussed with the business stakeholders, using the vocabulary and concepts of the business domain. Requirements should neither discuss nor depend on the implementation. Requirements include not only the behavioral and quality of service expectations of the users but also statutory constraints and commercial standards.  
   
@@ -146,7 +147,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  The following illustration shows a simple example of an activity diagram.  
   
- ![Activity with three actions and a loop.](_img/uc_reqmwfact.png "UC_ReqmWFAct")  
+ ![Activity with three actions and a loop.](media/uc_reqmwfact.png "UC_ReqmWFAct")  
   
  Where the interchange of messages is important, it might be more effective to use a sequence diagram that includes a lifeline for each actor and major product component.  
   
@@ -154,7 +155,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  The following illustration shows a simple example of a use case diagram.  
   
- ![Use cases for previous actions](_img/uml_reqmwfuc.png "UML_ReqmWFUC")  
+ ![Use cases for previous actions](media/uml_reqmwfuc.png "UML_ReqmWFUC")  
   
 ### Modeling concepts  
  Draw domain class diagrams to describe the important entities and their relationships that are mentioned in the scenarios. For example, the DinnerNow model shows Restaurant, Menu, Order, Menu Item, and so on. For more information, see [UML Class Diagrams: Guidelines](https://msdn.microsoft.com/library/dd409389).  
@@ -165,7 +166,7 @@ Requirements describe what the stakeholders expect from the product. You should 
   
  The following illustration shows a simple example of a class diagram.  
   
- ![Rule in Comment attached to Order class.](_img/uml_reqmcd2.png "UML_ReqmCD2")  
+ ![Rule in Comment attached to Order class.](media/uml_reqmcd2.png "UML_ReqmCD2")  
   
 ### Static constraints  
  Add to the class diagrams constraints that govern the attributes and relationships. For example, the items on an order must all come from the same restaurant. These types of rules are important for the design of the product.  
@@ -230,14 +231,14 @@ Requirements describe what the stakeholders expect from the product. You should 
 ## Additional resources  
  For more information, see the following Web resources:  
   
--   [Modern Requirements Suite 4TFS](http://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
+-   [Modern Requirements Suite 4TFS](https://www.modernrequirements.com/), a requirement management software platform that bi-directionally connects Microsoft Office technologies with Azure Boards and TFS to increase stakeholder engagement and provide end-to-end traceability.  
     
--   [A Practical Guide to Feature Driven Development](http://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
+-   [A Practical Guide to Feature Driven Development](https://go.microsoft.com/fwlink/?LinkId=179031), Stephen R. Palmer and Malcolm J. Felsing; Prentice-Hall PTR, 2002.  
   
--   [Streamlined Object Modeling: Patterns, Rules and Implementation](http://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
+-   [Streamlined Object Modeling: Patterns, Rules and Implementation](https://go.microsoft.com/fwlink/?LinkId=179032), Jill Nicola, Mark Mayfield, and Mike Abney; Prentice Hall PTR, 2001.  
   
--   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](http://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
+-   [Agile Modeling: Effective Practices for Extreme Programming and the Unified Process, Scott Ambler](https://go.microsoft.com/fwlink/?LinkId=179033); Wiley, 2002.  
   
--   [Domain Driven Design: Tackling Complexity in the Heart of Software](http://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
+-   [Domain Driven Design: Tackling Complexity in the Heart of Software](https://go.microsoft.com/fwlink/?LinkId=179034), Eric Evans; Addison Wesley Professional, 2003.  
   
--   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](http://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.
+-   [Object Design: Roles, Responsibilities and Collaborations, Rebecca Wirfs-Brock and Alan McKean](https://go.microsoft.com/fwlink/?LinkId=179035); Addison Wesley Professional, 2002.

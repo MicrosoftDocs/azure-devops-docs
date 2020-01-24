@@ -6,19 +6,19 @@ ms.custom: boards-queries
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c0b1fcb1-c4f4-4651-a401-171fa4372518
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 02/07/2019
+ms.date: 10/16/2019
 ---
 
 # Query by titles, IDs, and rich-text fields
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-When you want to find work items based on a keyword or phrase, you can do so by using single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. 
+When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
 ## Supported operators and macros 
 
@@ -51,8 +51,16 @@ Query clauses that specify a text or rich-text field can use the operators and m
 </table>
 
 #### Notes:  
+
 1. The **Is Empty** and **Is Not Empty** operators are supported for Azure DevOps Server 2019 RC2 and later versions
 2. The <strong>@Project</strong> macro is supported for Azure Boards and TFS 2015.1 and later versions. The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+
+
+## Use `Contains words` for string matches
+ 
+When you want to filter on a string match, try using the `Contains Words` operator instead of `Contains`. The `Contains Words` operator performs a full-text search on the specified field, which is faster in most cases. 
+
+While the `Contains` operator performs a table scan, which is not only slower, but also consumes more CPU cycles. These CPU cycles contribute towards your resource consuming rate limit. 
 
 
 <a id="keyword"/>
@@ -61,10 +69,16 @@ Query clauses that specify a text or rich-text field can use the operators and m
 
 Use **Contains** or **Contains Words** to list items that partially or exactly match the words or phrase that you enter.  
 
-![Editor for flat list query for filtering key words](_img/example-work-item-queries/IC675039.png)   
+![Editor for flat list query for filtering key words](media/example-work-item-queries/IC675039.png)   
 
 Choose **Contains** or **Does Not Contain** to search against exact or partial matches of a word or phrase. Choose **Contains Words** or **Does Not Contain Words** to search against an exact phrase or to use the wildcard character, <b>*</b>. These operators use the full-text search index.
 
+For example, specify **Contains Words** and <strong>inform&#42;</strong> to filter on a text field that contains *inform* or *information* or *informational*. 
+
+> [!div class="mx-imgBorder"] 
+> ![Use wild card with Contains Words](media/text-queries/contains-word-wildcard.png)
+
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 <a id="undefined-value"/>
 
@@ -72,7 +86,7 @@ Choose **Contains** or **Does Not Contain** to search against exact or partial m
 
 You can find work items that have an undefined field value by using the equals operator (=) and leaving the Value for the field blank. For example, the following filters will list all work items of type Task whose Activity field is blank.  
 
-![Filter based on blank entries](_img/example-work-item-queries/IC736440.png)
+![Filter based on blank entries](media/example-work-item-queries/IC736440.png)
 
 To list work items based on a field that isn't blank, use the not operator (<>) and leave the Value blank.
 
@@ -88,7 +102,7 @@ You can find work items where no **Description** has been entered. Using the **I
 For example, the following query filters will list all work items where some entries have been made into the **Description** field.  
 
 > [!div class="mx-imgBorder"] 
-> ![Filter based non-empty HTML fields](_img/example-queries/is-not-empty-query.png)
+> ![Filter based non-empty HTML fields](media/example-queries/is-not-empty-query.png)
 
 ::: moniker-end
 
@@ -98,7 +112,7 @@ For example, the following query filters will list all work items where some ent
 
 To filter work items based on the category they belong to, use the **In Group** operator. For example, the following filter criteria will return all work items that are in the current project, assigned to the team member, and defined as belonging to the Bug Category.
 
-![Query clause to find work items by category](_img/example-work-item-queries/IC720125.png)
+![Query clause to find work items by category](media/example-work-item-queries/IC720125.png)
 
 <a id="category"/>
 
@@ -176,7 +190,6 @@ System Info<sup>1</sup>
   </td>
   <td>
     <p>Information about the software and system configuration that is relevant to the bug, code review, or feedback. </p>
-
     <p>Reference name=Microsoft.VSTS.TCM.SystemInfo, Data type=HTML</p>
   </td>
   <td>Bug, Code Review Request, Feedback Request<br/>  </td>
@@ -229,7 +242,7 @@ Work Item Type
 - [Create managed queries](example-queries.md)   
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 
 

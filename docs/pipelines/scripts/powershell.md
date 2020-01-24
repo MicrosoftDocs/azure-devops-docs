@@ -1,15 +1,15 @@
----
-title: Use a PowerShell script to customize your build pipeline
+﻿---
+title: Use PowerShell scripts to customize pipelines
 ms.custom: seodec18
 description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7D184F55-18BC-40E5-8BE7-283A0DB8E823
-ms.manager: jillfra
-ms.author: alewis
-author: andyjlewis
-ms.date: 01/28/2019
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
+ms.date: 07/03/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,33 +18,55 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
-You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+::: moniker range=">= azure-devops-2019"
 
-0. Push your script into your repo.
+You can run Windows PowerShell on a [Windows build agent](../agents/v2-windows.md).
+PowerShell Core runs on any platform.
 
-0. Add a PowerShell build task.
+1. Push your script into your repo.
 
- ![Add task](_img/BldStepAddBegin.png)
+2. Add a `pwsh` or `powershell` step:
 
- ![Add PowerShell task](_img/BldScriptPSAdd.png)
+```yaml
+# for PowerShell Core
+steps:
+- pwsh: ./my-script.ps1
 
-0. Drag the build task where you want it to run.
+# for Windows PowerShell
+steps:
+- powershell: .\my-script.ps1
+```
 
-0. Specify the name of the script.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+You can run Windows PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
+
+1. Push your script into your repo.
+
+2. Add a PowerShell build task.
+
+   ![Add task](media/BldStepAddBegin.png)
+
+   ![Add PowerShell task](media/BldScriptPSAdd.png)
+
+3. Drag the build task where you want it to run.
+
+4. Specify the name of the script.
+
+::: moniker-end
 
 ## Example: Version your assemblies
 
 For example, to version to your assemblies, copy and upload this script to your project:
 
 ```ps
-##-----------------------------------------------------------------------
-## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
-##-----------------------------------------------------------------------
 # Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
@@ -137,11 +159,11 @@ else
 
 Add the build task to your build pipeline.
 
-![Apply version to assemblies build task](_img/BldScriptPSExmpVerAssembliesBuildStep.png)
+![Apply version to assemblies build task](media/BldScriptPSExmpVerAssembliesBuildStep.png)
 
 Specify your build number with something like this:
 
-![Build number format](_img/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
+![Build number format](media/BldScriptPSExmpVerAssembliesBuildNumFormat.png)
 
 ```
 $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
@@ -172,7 +194,7 @@ Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 
 [Use variables](../build/variables.md)
 
-[!INCLUDE [include](../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../includes/variable-set-in-script-qa.md)]
 
 ### Which branch of the script does the build run?
 
@@ -183,7 +205,7 @@ The build runs the script same branch of the code you are building.
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

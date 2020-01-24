@@ -2,6 +2,19 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Process Customization
-    tocHref: /azure/devops/reference/
-    topicHref: /azure/devops/reference/index
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
+    items: 
+    - name: On-premises XML
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/on-premises-xml-process-model
+    - name: On-premises XML
+      tocHref: /azure/devops/reference/xml
+      topicHref: /azure/devops/reference/index
+    - name: Process templates
+      tocHref: /azure/devops/reference/process-templates/
+      topicHref: /azure/devops/reference/process-templates/index
+    - name: witadmin Reference
+      tocHref: /azure/devops/reference/witadmin/
+      topicHref: /azure/devops/reference/witadmin/index

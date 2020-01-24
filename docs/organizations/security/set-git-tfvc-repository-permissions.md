@@ -6,7 +6,7 @@ ms.assetid:
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,9 +16,9 @@ ms.date: 06/24/2019
 
 # Set repository permissions for Git or TFVC
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manager permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
+By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ For a description of each security group and permission level, see [Permissions 
 
 You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/overview.md).
 
-[!INCLUDE [temp](_shared/code-git.md)]
+[!INCLUDE [temp](includes/code-git.md)]
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](includes/code-tfvc.md)]
 
 <a id="git-repository">  </a>
 
@@ -80,7 +80,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	*To see the full image, click to expand*.
 
-	[![Project Settings>Code>Repositories>Git repositories>Security](_img/git-tfvc-perm/open-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
+	[![Project Settings>Code>Repositories>Git repositories>Security](media/git-tfvc-perm/open-repository-security-vert-reduced.png)](media/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
@@ -95,10 +95,10 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+	> ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 	
 2. Choose **Version Control**.
 
@@ -110,7 +110,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	Here we grant permissions to the Contributors group to (3) create repositories. 
 
-	![Security dialog for all Git repositories, Contributors group](_img/set-repo-git-permissions.png)  
+	![Security dialog for all Git repositories, Contributors group](media/set-repo-git-permissions.png)  
 
 5. When done, choose **Save changes**. 
 
@@ -130,7 +130,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	*To see the full image, click to expand*.
 
-	[![Project Settings>Code>Repositories>TFVC repositories>Security](_img/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](_img/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
+	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](media/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
 
 	> [!NOTE]  
 	> If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
@@ -142,7 +142,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ::: moniker range="<= tfs-2018"
 
-1. From the web portal, open the admin context by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
+1. From the web portal, open the admin context by choosing the ![ ](../../boards/media/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 
@@ -150,7 +150,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	For example, here we change the **Manage branch** permission to Allow for all members of the Contributors group. 
 
-	![Security dialog for the TFVC repository, Contributors group](_img/set-repo-tfvc-permissions.png)  
+	![Security dialog for the TFVC repository, Contributors group](media/set-repo-tfvc-permissions.png)  
 
 3. Save your changes. 
 

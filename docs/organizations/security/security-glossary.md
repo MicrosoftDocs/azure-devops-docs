@@ -5,7 +5,7 @@ ms.technology: devops-security
 ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -14,7 +14,7 @@ ms.date: 12/04/2018
 
 # Security glossary
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The Microsoft Security glossary is a short dictionary of terms used in authenticating users and managing permissions on the Azure DevOps Services and Team Foundation Server platforms.
 
@@ -47,7 +47,7 @@ Authorization refers to the operations performed to verify that the identity whi
 
 A user account that has been granted membership to an organization in Azure DevOps instance with Basic access. To learn more, see [About access levels](access-levels.md).
 
-[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)]
+[!INCLUDE [temp](../../includes/glossary-terms/collections.md)]
 
 ## Conditional access
 

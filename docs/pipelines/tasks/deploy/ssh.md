@@ -5,7 +5,7 @@ ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,13 +15,15 @@ monikerRange: '>= tfs-2017'
 
 # SSH Deployment task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to run shell commands or a script on a remote machine using SSH.
 This task enables you to connect to a remote machine using SSH and run commands or a script.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Prerequisites
@@ -30,8 +32,11 @@ This task enables you to connect to a remote machine using SSH and run commands 
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/SshV0.md)]
+
+[!INCLUDE [temp](../includes/yaml/SshV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -52,7 +57,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 * [Copy Files Over SSH](copy-files-over-ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
@@ -61,12 +66,14 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+[!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

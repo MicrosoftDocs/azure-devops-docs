@@ -1,17 +1,18 @@
----
-title: Work with resource rollup in enterprise projects mapped to projects
+﻿---
+title: Resource rollup in project mapped enterprise projects
 titleSuffix: TFS 
 description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
 ms.technology: devops-agile
 ms.assetid: 72efdffb-ea99-4b89-b681-53bc1dcb2ac9
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
 # Work with resource rollup in enterprise projects mapped to projects
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager or resource manager, you can track work that is allocated to resources in either Microsoft Project Professional or Team Foundation. The synchronization engine for Visual Studio Team Foundation Server and Microsoft Project Server supports the flow of rollup calculations and resource data, referred to as resource rollup, between the two server products. You can view the assignment of work by resources in Project Professional or from Project Web Access or Project Web App (PWA). Regardless of the method that you use to manage your project plan, you can use resource rollup to view resource allocation and work estimates, perform resource leveling, and determine whether a resource is over-allocated within a single project or across multiple projects.  
   
@@ -39,9 +40,9 @@ ms.date: 01/12/2017
 - Tracking work per resource based on work items that are successively assigned to multiple team members.  When team members reassign a work item with actual work, Team Foundation credits the person to whom the item is assigned currently with all work that has been completed so far. To track accurately the work that each team member performed, you must create separate tasks for each team member.  
   
 ##  <a name="ViewingAvailability"></a> Viewing Resource Availability  
- Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](http://go.microsoft.com/fwlink/?LinkId=207284).  
+ Because Team Foundation supports resource rollup, you can view the Assignment Work by Resource report as the following illustration shows. You can access this report from the instance of PWA. For more information, see the following page on the Microsoft website: [View resource workloads and availability](https://go.microsoft.com/fwlink/?LinkId=207284).  
   
- ![Assignment of work by resource in PWA](_img/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
+ ![Assignment of work by resource in PWA](media/ps-tfs_pwa_asswrkavailability.png "PS-TFS_PWA_AssWrkAvailability")  
   
  Before you view work estimates or resource availability, you should publish the enterprise project plan so that Project Server has the most recent updates. For resource rollup, a two-pass sequence is required to capture the allocation of work to resources in Project Server. The following sequence of actions must occur for resource rollup data to flow completely from Team Foundation to Project Server:  
   

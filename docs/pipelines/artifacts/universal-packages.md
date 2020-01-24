@@ -1,5 +1,5 @@
----
-title: Publish and download Universal Packages in pipelines
+﻿---
+title: Publish & download Universal Packages
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publishing Universal Packages to Azure Artifacts feeds
@@ -8,19 +8,16 @@ ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
-ms.date: 08/06/2018
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
+ms.date: 08/16/2019
 monikerRange: 'azure-devops'
 ---
 
 # Publish and download Universal Packages in Azure Pipelines
 
 **Azure Pipelines**
-
-> [!NOTE]
-> Universal Packages are currently in public preview.
 
 When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 
@@ -48,7 +45,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 
 ```
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [personal access token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
@@ -62,9 +59,9 @@ To publish the files that you assembled previously as a Universal Package, add t
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-![Example Publish Universal Packages build step screenshot](_img/universal-packages/publish.png)
+![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Azure Repos/Team Foundation Server** option for the service connection. Fill in the feed URL and a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
@@ -105,9 +102,8 @@ In the **Universal Packages** task that you configured previously, choose the ap
 
 You can also download a Universal Package from your pipeline.
 
-# [YAML](#tab/yaml)
-
-To download a Universal Package from a feed in your organization, use the following snippet: 
+#### [YAML](#tab/yaml/)
+To download a Universal Package from a feed in your organization to a specified destination, use the following snippet: 
 
 ```yaml
 steps:
@@ -118,14 +114,17 @@ steps:
     vstsFeed: 'fabrikamFeed'
     vstsFeedPackage: 'fabrikam-package'
     vstsPackageVersion: 1.0.0
+    downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | vstsFeed                       | Feed that the package will be downloaded from.     |
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
-| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+| downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
+| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -137,10 +136,11 @@ steps:
     command: download
     feedsToUse: external
     externalFeedCredentials: MSENG2
-    feedDownloadExternal: `fabrikamFeedExternal`
-    packageDownloadExternal: `fabrikam-package`
+    feedDownloadExternal: 'fabrikamFeedExternal'
+    packageDownloadExternal: 'fabrikam-package'
     versionDownloadExternal: 1.0.0
 ```
+
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
@@ -149,10 +149,9 @@ steps:
 | feedDownloadExternal           | Feed that the package will be downloaded from.        |
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
-| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
 
 - **Command:** Download
@@ -163,12 +162,20 @@ To download a Universal Package, add the **Universal Package** task and configur
 - **Version:** Select the version of the package that you want to download.
 
 
-![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
+![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
 
----
+* * *
+
+### Downloading the latest version
+
+You can use a wildcard expression as the version to get the latest (highest) version of a package. For more information, see [Downloading the latest version](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) in the quickstart guide.
 
 ## Q&A
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
+
+### In what versions of Azure DevOps/TFS are Universal Packages available? 
+
+Universal Packages are only available for Azure DevOps Services.

@@ -2,7 +2,7 @@
 title: NuGet | REST API Reference for VSTS 
 description: Work with NuGet packages programmatically using the REST APIs for VSTS.
 ms.assetid: 8D402655-CA86-4673-B091-244C0B2B673B
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 6f1a7509-2c47-411f-b033-ebd72b9c51d3
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Testing Gaps Excel reports (Agile)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Testing Gaps report to help determine where there are deficiencies in their test plans, test configurations, and test coverage. The Testing Gaps report provides the following five reports based on test results and builds that have been defined and run for a team project.  
   
@@ -45,7 +45,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The User Story Status report indicates how many tests are passing or failing for each user story. It provides a horizontal bar chart that shows the count of test results for each test case and test configuration combination that the team has defined for each user story. The report presents the cumulative outcome of tests run for all test cases that are linked to user stories. The report displays results that are filtered by the following outcomes: **Passed** (green), **Failed** (red), **Never Run** (blue), or **Blocked** (yellow).  
   
- ![User Story Test Status Excel Report](_img/procg_userstorystatus.png "ProcG_UserStoryStatus")  
+ ![User Story Test Status Excel Report](media/procg_userstorystatus.png "ProcG_UserStoryStatus")  
   
  The User Story Status by Config report presents the test results for each user story, grouped by test configuration.  
   
@@ -112,4 +112,4 @@ The Code Coverage report lists the lines of code that are covered, not covered, 
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
