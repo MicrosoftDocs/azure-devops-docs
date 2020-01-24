@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 09/20/2019
+ms.date: 01/22/2020
 monikerRange: azure-devops
 ---
 
@@ -18,13 +18,14 @@ monikerRange: azure-devops
 **Azure Pipelines**
 
 > [!NOTE]
-> Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent pool today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.13), then select the 'Hosted macOS High Sierra' agent pool for your pipelines.
+> Support for macOS X Mojave (10.14) is here! If you're using the 'Hosted macOS' agent VM image today, your pipelines are running on Mojave. If you'd like to remain on High Sierra (10.13), then select the 'Hosted macOS High Sierra' VM image for your pipelines.
 
-[!INCLUDE [include](_shared/hosted-agent-intro.md)]
+[!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 <a name="software"></a>
 
 ## Use a Microsoft-hosted agent
+
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers 7 virtual machine images to choose from, each including a broad range of tools and software:
 
 > [!NOTE]
@@ -40,6 +41,8 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
 | macOS X High Sierra 10.13 | *macOS-10.13* |   `macOS-10.13` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
+
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the table.
 
 Pipelines will default to the Microsoft-hosted agent pool. You simply need to specify which virtual machine image you want to use.
 
@@ -64,11 +67,7 @@ jobs:
 
 ### Notes on choosing "Hosted macOS"
 
-
 This option affects where your data is stored. [Learn more](../../organizations/security/data-location.md).
-
-To disable the Microsoft-hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
-To disable the Microsoft-hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS** and **Admin settings** > **Agent pools** > **Hosted macOS High Sierra**.
 
 You can manually select from tool versions on macOS images. [See below](#mac-pick-tools).
 
@@ -123,7 +122,30 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 Currently, Service Tags is not something you can use for your hosted agents. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
 
 ## Q & A
-<!-- BEGINSECTION class="md-qanda" -->
+
+### I have questions about the hosted agent images
+
+#### How can I see what software is included in an image?
+
+You can see the installed software for each hosted agent by choosing the **Included Software** link in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table. 
+
+#### How does Microsoft choose the software and versions to put on the image?
+
+More information about the versions of software included on the images can be found at [Guidelines for what's installed](https://github.com/actions/virtual-environments#guidelines-for-whats-installed). 
+
+#### When are the images updated?
+
+Images are typically updated weekly. You can check the [status badges](https://github.com/actions/virtual-environments) which are in the format `20200113.x` where the first part indicates the date the image was updated.
+
+#### What can I do if software I need is removed or replaced with a newer version?
+
+You can let us know by filing a GitHub issue by choosing the **Included Software** links in the [Use a Microsoft-hosted agent](#use-a-microsoft-hosted-agent) table.
+
+You can also use a self-hosted agent that includes the exact versions of software that you need. For more information, see [Self-hosted agents](agents.md#install).
+
+### What if I need a bigger machine with more processing power, memory, or disk space?
+
+We can't increase the memory, processing power, or disk space for Microsoft-hosted agents, but you can use a [self-hosted agent](agents.md#install) that is hosted on a machine that has your desired specifications.
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 

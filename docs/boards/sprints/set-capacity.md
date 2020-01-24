@@ -20,7 +20,7 @@ ms.date: 10/03/2019
 
 <a id="set-capacity">  </a>
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 <a id="set-capacity">  </a>
 

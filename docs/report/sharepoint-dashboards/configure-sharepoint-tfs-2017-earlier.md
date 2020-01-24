@@ -15,7 +15,7 @@ ms.date: 11/16/2017
 
 # Configure TFS-SharePoint integration
 
-[!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](./includes/about-sharepoint-deprecation.md)]
 
 By adding one or more servers running SharePoint Products to your Team Foundation Server (TFS) deployment, you can add Web publishing and project collaboration features to Team Foundation. These features can improve communication and increase sharing ideas among users who are assigned tasks in team projects. 
 

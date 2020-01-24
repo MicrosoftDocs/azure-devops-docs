@@ -16,20 +16,20 @@ ms.date: 12/16/2019
 
 # Requirements tracking rollup sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This report builds on the [Requirements tracking report](sample-stories-overview.md) report and does a one level roll-up to provide aggregated metrics. For example, if you are tracking requirements with User Stories, you can have a one-level roll up (up to Features) with the queries provided in this section.
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
 > ![Sample - Stories Overview Rollup Report](media/odatapowerbi-storiesoverview-rollup.png)
 
-[!INCLUDE [stories-overview-info](_shared/sample-stories-overview-info.md)]
+[!INCLUDE [stories-overview-info](includes/sample-stories-overview-info.md)]
 
-[!INCLUDE [stories-overview-prereqs](_shared/sample-stories-overview-prereqs.md)]
+[!INCLUDE [stories-overview-prereqs](includes/sample-stories-overview-prereqs.md)]
 
 
 ## Sample queries
@@ -45,7 +45,7 @@ In order to scope your report to a particular Area and Iteration path, you can q
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -78,7 +78,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems? 
@@ -110,7 +110,7 @@ $filter=(
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -141,7 +141,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints? 
@@ -176,7 +176,7 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -206,7 +206,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -230,7 +230,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 ***
 
 
-[!INCLUDE [stories-overview-substitutions-breakdown](_shared/sample-stories-overview-sub-breakdown.md)]
+[!INCLUDE [stories-overview-substitutions-breakdown](includes/sample-stories-overview-sub-breakdown.md)]
 
 
 ## Power BI transforms
@@ -261,4 +261,4 @@ Here, **Authentication scenarios** is a parent feature of two User Stories.
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

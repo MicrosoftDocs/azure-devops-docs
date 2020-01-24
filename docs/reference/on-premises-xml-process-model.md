@@ -16,7 +16,7 @@ ms.date: 05/06/2019
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
@@ -143,7 +143,7 @@ When you manage an on-premises deployment, you perform most customizations using
 In addition, you can use the **witadmin** tool to list objects, rename WITs, permanently remove WITs, and more.  
  
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 
 <a id="before-you-customize"></a>

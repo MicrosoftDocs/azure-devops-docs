@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # Add members to projects or teams
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Azure DevOps Server, see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
@@ -28,7 +28,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users.md). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
 
-[!INCLUDE [temp](../../_shared/prerequisites-add-users-org.md)]
+[!INCLUDE [temp](../../includes/prerequisites-add-users-org.md)]
 
 ## Add members to your project
 
@@ -38,7 +38,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
 2. Open your project, and then select **Project settings > Teams**. Then, select your project.
 
-   ![The Projects page](media/_shared/open-project-settings.png)
+   ![The Projects page](media/shared/open-project-settings.png)
 
 3. Select **Add** to invite members to your project.
 

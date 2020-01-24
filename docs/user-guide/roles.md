@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Software development roles supported by Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 If you're a sole developer or you work on a small team, you likely do tasks that are associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 

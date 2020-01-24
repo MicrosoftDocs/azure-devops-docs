@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Create manual test cases
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
@@ -24,7 +24,7 @@ the tests.
 
 [What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 > [!NOTE]
 > Stakeholders cannot create or manage test cases. You must have at least Basic access.

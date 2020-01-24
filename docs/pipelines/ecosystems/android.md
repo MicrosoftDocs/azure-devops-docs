@@ -148,7 +148,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ::: moniker range="> tfs-2018"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterTestV1.md)]
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ or promote the app to Intune or Google Play. A free [App Center](https://appcent
 
 ::: moniker range="> tfs-2018"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterDistributeV1.md)]
 
 ::: moniker-end
 

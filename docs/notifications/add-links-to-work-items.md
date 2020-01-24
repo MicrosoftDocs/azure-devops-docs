@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Use #ID to link to work items  
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 The **#ID** control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
 

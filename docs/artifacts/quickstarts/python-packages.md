@@ -37,7 +37,7 @@ This quickstart guides you through using Azure Artifacts to consume and publish 
    
 4. Select **Create**.
 
-   ![New feed dialog box](../_shared/media/new-feed-dialog.png)
+   ![New feed dialog box](../media/new-feed-dialog.png)
 
 To edit your feed settings, select the gear icon at upper right on the feed page, and then select **Feed settings**. 
 
@@ -84,7 +84,7 @@ The Python Credential Provider is a manual interaction. If you want to set up au
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../_shared/media/connect-to-feed-azure-devops-newnav.png)
+   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
    > 
 
 2. Choose either **pip** or **twine** under the Python header. 

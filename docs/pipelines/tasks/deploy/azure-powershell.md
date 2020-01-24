@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run a PowerShell script within a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4.md)]
+[!INCLUDE [temp](../includes/yaml/AzurePowerShellV4.md)]
 
 ::: moniker-end
 
@@ -49,6 +49,10 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 </table>
 
+## Samples
+
+[!INCLUDE [temp](../includes/yaml/AzurePowerShellV4Sample.md)]
+
 ## Troubleshooting
 ### Script worked locally, but failed in the pipeline
 
@@ -57,9 +61,19 @@ This typically occurs when the service connection used in the pipeline has insuf
 To resolve this issue, ensure the service principle/ authentication credentials have the required permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
-## Samples
+### Error: Could not find the modules: '<module name>' with Version: '<version>'. If the module was recently installed, retry after restarting the Azure Pipelines task agent
 
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
+Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with Azure Subscription. This issue occurs when the PowerShell module is not available on the Hosted Agent. Hence, for a particular task version, *Preferred Azure PowerShell version* must be specified in the **Azure PowerShell version options** from the following available list of versions. 
+
+<table><thead><tr><th>Task Version</th><th>Available versions of PowerShell Modules</th></tr></thead>
+<tr><td>2.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
+<tr><td>3.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
+<tr><td>4.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
+<tr><td>5.* (preview)</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
+</table>
+
+### Service Connection Issues
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
 
 ## Open source
 

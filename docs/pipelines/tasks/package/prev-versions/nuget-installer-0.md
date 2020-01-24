@@ -56,9 +56,9 @@ Additional arguments passed to <a href="https://docs.nuget.org/consume/command-l
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 
-[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 </table>
 

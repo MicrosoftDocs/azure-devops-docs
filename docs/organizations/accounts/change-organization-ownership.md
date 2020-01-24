@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Change the organization owner
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 As roles and responsibilities change, you can change the owner for your organization. In this article, learn how to update the organization owner in Azure DevOps.
 
@@ -43,7 +43,7 @@ Make sure the new owner has completed the following tasks:
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Select "Organization settings"](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, and then **Change owner**.  
 

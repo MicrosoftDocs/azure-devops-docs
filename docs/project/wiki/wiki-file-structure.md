@@ -17,7 +17,7 @@ ms.date: 12/12/2019
 
 # Wiki Git repository files and file structure
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 When you create a team project, a Wiki Git repo isn't created by default. To start using a Wiki, you must first [provision it](wiki-create-repo.md). Each Wiki is powered by a Git repository in the back-end. This repository stores the Markdown pages, images, attachments, and the sequence of pages and subpages.  
 
@@ -45,7 +45,7 @@ The Wiki repository has the following files and folders:
 
 Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to the **How-to-contribute.md** file name. The page name is added to the URL, ensuring that links you share remain intact as the Wiki changes over time. 
 
-[!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
+[!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
 <a id="order-file" ></a>
 

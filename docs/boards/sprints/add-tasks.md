@@ -19,7 +19,7 @@ ms.date: 2/14/2019
 
 # 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -37,7 +37,7 @@ In this article you'll learn how to:
 
 Add as many tasks as needed to capture the work required to complete each item. Tasks can represent different work to be performed - such as design, code, test, content, sign off. Usually, each team member adds their own tasks and sets estimates for the work. However, a development lead could define the initial tasks for a story or requirement.
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 
 ## Open a Sprint backlog for a team 

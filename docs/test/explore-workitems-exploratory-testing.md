@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Explore work items with the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
@@ -31,7 +31,7 @@ You can explore:
 You can explore a work item from the [Kanban board](#kanban) or from the [extension](#extension).
 You can also explore [multiple work items in the same session](#multipleitems).
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="kanban"></a>
 ## Explore work items from the Kanban board
@@ -109,4 +109,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

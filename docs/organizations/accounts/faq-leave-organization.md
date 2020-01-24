@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot leaving your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this article, find the following frequently asked questions and answers (FAQs) about removing yourself from an organization if the owner is unavailable or inactive.
 

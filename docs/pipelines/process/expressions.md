@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.

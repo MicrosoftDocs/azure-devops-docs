@@ -18,7 +18,7 @@ ms.date: 02/08/2019
 
 # Search across your code base, work items, or wiki
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -36,7 +36,7 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box](../../organizations/public/media/search/code-search-vert.png) 
@@ -50,7 +50,7 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
    ![Switching between searching for code and work items](../search/media/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
 2. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/media/_shared/start-search-icon.png) icon) to start your search.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box](media/search/work-item-search-vert.png)    
@@ -110,7 +110,7 @@ To learn more, see [Search code](../search/code-search.md).
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/media/_shared/start-search-icon.png) icon.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -123,7 +123,7 @@ To learn more, see [Search code](../search/code-search.md).
    ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/media/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search. 
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
@@ -137,7 +137,7 @@ To learn more, see [Search code](../search/code-search.md).
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/media/_shared/start-search-icon.png) icon.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 

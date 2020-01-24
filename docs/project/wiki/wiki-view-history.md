@@ -17,7 +17,7 @@ ms.date: 12/17/2018
 
 # View wiki page history and revert changes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 You can see details of the changes made to a wiki page and revert to an earlier version, if needed.
 

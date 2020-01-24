@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # About organization management in Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-only.md)]
 
 With an organization, you gain access to the platform in which you can do the following:
 
@@ -203,7 +203,6 @@ buy more services, and purchase extensions for your organization.
 <li><a href="../security/change-individual-permissions.md">Change individual permissions</a></li>
 <li><a href="../security/restrict-access.md">Grant or restrict permissions</a></li>
 <li><a href="../projects/resources-granted-to-project-members.md">Resources granted to project members</a></li>
-<li><a href="../settings/add-team-administrator.md">Add a team admin</a></li>
 </ul>
 </td>
 </tr>

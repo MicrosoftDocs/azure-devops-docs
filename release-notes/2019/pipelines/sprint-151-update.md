@@ -12,9 +12,9 @@ ms.date: 04/30/2019
 
 ## Features
 
-[!INCLUDE [sprint-151-update-links](../_shared/pipelines/sprint-151-update-links.md)]
+[!INCLUDE [sprint-151-update-links](../includes/pipelines/sprint-151-update-links.md)]
 
-[!INCLUDE [sprint-151-update](../_shared/pipelines/sprint-151-update.md)]
+[!INCLUDE [sprint-151-update](../includes/pipelines/sprint-151-update.md)]
 
 ## Next steps
 

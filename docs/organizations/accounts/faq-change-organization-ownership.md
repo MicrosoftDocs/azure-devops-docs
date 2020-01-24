@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot changing the organization Owner
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a name="find-owner-pca"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../../includes/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
 ::: moniker range="azure-devops"
 
@@ -37,7 +37,7 @@ A: This might happen for one of the following reasons:
 * If you recently added this person to your organization, you might experience a delay before the user appears in the possible organization Owners list.  
 * If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization Owners list until they meet the requirements described in this article.
 
-[!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
+[!INCLUDE [recover-password](../../includes/qa-recover-password.md)]
 
 #### Q: Can I reverse an organization Owner change?
 
@@ -80,16 +80,16 @@ Project collection administrators can manage user access and change the organiza
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-[!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
+[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
 
 ::: moniker-end

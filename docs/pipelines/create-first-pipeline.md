@@ -9,13 +9,13 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 6/30/2019
+ms.date: 1/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Create your first pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="azure-devops"
 
@@ -23,11 +23,13 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
-## Get the sample code
+## Create your first pipeline
 
-You can use Azure Pipelines to build an app written in any language. For this quickstart, we will use Java.
+#### [Java](#tab/java)
+
+### Get the Java sample code
 
 To get started, fork the following repository into your GitHub account.
 
@@ -35,42 +37,128 @@ To get started, fork the following repository into your GitHub account.
 https://github.com/MicrosoftDocs/pipelines-java
 ```
 
-## Get your first run
+### Create your first Java pipeline
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 
-1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-1. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select your desired sample app repository.
+5. When the list of repositories appears, select your desired sample app repository.
 
-1. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+6. Azure Pipelines will analyze your repository and recommend a Maven pipeline template. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
 
-1. A new run is started. Wait for the run to finish.
+7. A new run is started. Wait for the run to finish.
 
-[!INCLUDE [include](_shared/get-status-badge.md)]
+Learn more about [working with Java](ecosystems/java.md) in your pipeline.
 
-[!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
+#### [.NET](#tab/net)
+
+### Get the .NET Core sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
+```
+
+### Create your first .NET Core pipeline
+
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **ASP.NET Core**.
+
+1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [ASP.NET Core](https://github.com/Microsoft/azure-pipelines-yaml/blob/master/templates/asp.net-core.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+3. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+Learn more about [working with .NET Core](ecosystems/dotnet-core.md) in your pipeline.
+
+#### [Python](#tab/python)
+
+### Get the Python sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+```
+
+### Create your first Python pipeline
+
+[!INCLUDE [include](ecosystems/includes/create-pipeline-before-template-selected.md)]
+
+> When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
+
+7. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
+
+8. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
+
+   If you want to watch your pipeline in action, select the build job.
+
+   > You just created and ran a pipeline that we automatically created for you, because your code appeared to be a good match for the [Python package](https://github.com/microsoft/azure-pipelines-yaml/blob/master/templates/python-package.yml) template.
+
+   You now have a working YAML pipeline (`azure-pipelines.yml`) in your repository that's ready for you to customize!
+
+9. When you're ready to make changes to your pipeline, select it in the **Pipelines** page, and then **Edit** the `azure-pipelines.yml` file.
+
+Learn more about [working with Python](ecosystems/python.md) in your pipeline.
+
+#### [JavaScript](#tab/javascript)
+
+### Get the JavaScript sample code
+
+To get started, fork the following repository into your GitHub account.
+
+```
+https://github.com/MicrosoftDocs/pipelines-javascript
+```
+
+### Create your first JavaScript pipeline
+
+1. Sign in to your Azure DevOps organization and navigate to your project.
+
+2. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
+
+3. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
+
+4. You might be redirected to GitHub to sign in. If so, enter your GitHub credentials.
+
+5. When the list of repositories appears, select your Node.js sample repository.
+
+6. Azure Pipelines will analyze the code in your repository and recommend `Node.js` template for your pipeline. Select that template.
+
+7. Azure Pipelines will generate a YAML file for your pipeline. Select **Save and run**, then select **Commit directly to the master branch**, and then choose **Save and run** again.
+
+8. A new run is started. Wait for the run to finish.
+
+When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in your repository that's ready for you to customize.
+
+Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
+
+--- 
+
+[!INCLUDE [include](includes/get-status-badge.md)]
+
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
 
 ::: moniker-end
 
 
-
-
-
-
-
-
-
-
-
-
 ::: moniker range="<= azure-devops-2019"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -231,7 +319,7 @@ Create a build pipeline that prints "Hello world."
    > ![builds-tab-mine-new-button](media/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
    >
 
-   For new Azure DevOps accounts, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
+   For new Azure DevOps users, this will automatically take you to the _YAML pipeline creation experience_. To get to the classic editor and complete this guide, you must turn off the **preview feature** for the _New YAML pipeline creation experience_:
 
    ![Click settings in top right of screen and click preview features](media/preview-features.png)
 
@@ -571,7 +659,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
 ## You've got a build pipeline. What's next?
 
-You've just created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
+You've created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point, you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
 
 ## Create a release pipeline
 
@@ -752,7 +840,7 @@ Run the script in each stage.
 
    When **Create new release** appears, select **Create**.
 
-2. Open the release that you just created.
+2. Open the release that you created.
 
    > [!div class="mx-imgBorder"] 
    > ![release created](media/get-started-designer/release-created-azure-devops-newnavon.png)
@@ -774,7 +862,7 @@ Run the script in each stage.
 
    When **Create new release** appears, select **Create** (TFS 2018.2) or **Queue** (TFS 2018 RTM).
 
-5. Open the release that you just created.
+5. Open the release that you created.
 
    ![release created](media/get-started-designer/release-created-tfs-2018-2.png)
 
@@ -790,7 +878,7 @@ Run the script in each stage.
 
    ![create release](media/get-started-designer/create-release.png)
 
-8. Open the release that you just created.
+8. Open the release that you created.
 
    ![release created](media/get-started-designer/release-created.png)
 
@@ -861,7 +949,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ## Next steps
 
-You've just learned the basics of using the classic editor to create and run a pipeline.
+You've learned the basics of using the classic editor to create and run a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 

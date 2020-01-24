@@ -16,7 +16,7 @@ ms.date: 02/14/2019
 
 # Quickstart: Change the project visibility, public or private
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn how to change the visibility of your project to and from public or private.
 You can easily switch a private project to a public project, and vice-versa.  Before you do so, review the notes provided in [Private-to-public migration checklist](migration-checklist.md).
@@ -39,7 +39,7 @@ Before you can change a private project, to a public project, you must enable an
 2. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 3. Choose the **Policies** page, and select **On** for **Allow public projects**.
 

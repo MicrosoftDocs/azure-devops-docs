@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017 < azure-devops'
 
 # Troubleshoot Search
 
-[!INCLUDE [version-header-tfs-only](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [version-header-tfs-only](../../includes/version-header-tfs-only.md)]
 
 <a name="no-search-box"></a>
 
@@ -108,7 +108,7 @@ If not, then run [this script](https://github.com/microsoft/Code-Search/blob/mas
 
 I see a **Showing partial code results** banner in code search.
 
- ![Showing partial code results](media/_shared/faq-partialresult.png)
+ ![Showing partial code results](media/shared/faq-partialresult.png)
 
 ### Explanation
 
@@ -129,11 +129,11 @@ For example, while looking for methods like App_App1/ App_App2 etc., instead of 
 
 You may see different results while doing a wildcard search for the term ```ge*``` as compared to a wildcard search for the term ```get*```. For example, in the image below you see ```ge*``` shows **7509** results.
 
-![Wildcard search for ge*](media/_shared/faq-wildcard1.png)
+![Wildcard search for ge*](media/shared/faq-wildcard1.png)
 
 while ```get*``` shows **109,134** results.
 
-![Wildcard search for get*](media/_shared/faq-wildcard2.png)
+![Wildcard search for get*](media/shared/faq-wildcard2.png)
 
 ### Explanation
 

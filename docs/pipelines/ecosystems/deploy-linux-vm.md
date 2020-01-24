@@ -26,7 +26,7 @@ quickstart for any app as long as your continuous integration pipeline publishes
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-projects/spring-petclinic
@@ -36,7 +36,7 @@ https://github.com/spring-projects/spring-petclinic
 
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
 ```
 https://github.com/azure-devops/fabrikam-node
@@ -190,24 +190,24 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 
 3. You can specify either `runOnce` or `rolling` as a deployment strategy. 
 
-`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
+   `runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.
 
-Below is the example YAML snippet for `runOnce` :
-    ```YAML
-    jobs:
-    - deployment: VMDeploy
-      displayName: web
-      pool:
-        vmImage: 'Ubuntu-16.04'
-      environment:
-        name: <environment name>
-        resourceType: VirtualMachine
-      strategy:
-          runOnce:
-            deploy:
-              steps:
-              - script: echo my first deployment
-    ```
+   Below is the example YAML snippet for `runOnce` :
+   ```YAML
+   jobs:
+   - deployment: VMDeploy
+     displayName: web
+     pool:
+       vmImage: 'Ubuntu-16.04'
+     environment:
+       name: <environment name>
+       resourceType: VirtualMachine
+     strategy:
+       runOnce:
+         deploy:
+           steps:
+           - script: echo my first deployment
+   ```
 
 4. Below is an example of the YAML snippet that you can use to define a rolling strategy for Virtual machines updates upto 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
 

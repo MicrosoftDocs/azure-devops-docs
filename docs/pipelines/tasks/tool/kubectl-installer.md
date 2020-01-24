@@ -21,7 +21,7 @@ This task can be used for installing a specific version of kubectl binary on age
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/KubectlInstallerV0.md)]
+[!INCLUDE [temp](../includes/yaml/KubectlInstallerV0.md)]
 
 ::: moniker-end
 

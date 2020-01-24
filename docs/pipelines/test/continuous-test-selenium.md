@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -207,7 +207,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you don't have an existing release pipeline that deploys your web app:
 
-   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](_shared/pipelines-hub-include.md)] and choose the **+** icon, then choose
+   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](includes/pipelines-hub-include.md)] and choose the **+** icon, then choose
      **Create release pipeline**.
      
      ![Creating a new release pipeline](media/continuous-test-selenium/continuous-test-selenium-06.png)

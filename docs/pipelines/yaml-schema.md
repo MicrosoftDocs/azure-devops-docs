@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 1/10/2020
+ms.date: 1/24/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1085,7 +1085,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the download keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
 
 ### Container resource
 
@@ -1107,6 +1107,7 @@ resources:
     env: { string: string }  # list of environment variables to add
     ports: [ string ] # ports to expose on the container
     volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
 
 # [Example](#tab/example)
@@ -1532,11 +1533,11 @@ environment:                # create environment and/or record deployments
   resourceId: number        # resource identifier
   resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
   tags: string | [ string ] # tag names to filter the resources in the environment
-  strategy:                 # deployment strategy
-    runOnce:                # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+strategy:                 # deployment strategy
+  runOnce:                # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 If you specify an environment or one of its resources but don't need to specify other properties, you can shorten the syntax to:

@@ -15,7 +15,7 @@ ms.date: 06/28/2019
 
 # Install and configure the Azure Boards app for GitHub  
 
-[!INCLUDE[temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE[temp](../includes/version-vsts-only.md)] 
 
 By installing the Azure Boards app for GitHub, you can configure and manage the connections of your Azure Boards projects (hosted service only) with your GitHub.com repositories. By connecting your Azure Boards projects with GitHub.com repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub for software development while using Azure Boards to plan and track your work. 
 
