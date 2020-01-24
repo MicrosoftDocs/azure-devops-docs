@@ -17,15 +17,28 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-> [!NOTE] 
-> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 In this article, learn about managing notifications for your organization. 
 
+
+[!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
+
+::: moniker range="azure-devops"
+
+> [!TIP]
+> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. Also, you can generate a banner with the [**az devops banner command**](../organizations/settings/manage-banners.md) that all users see when they sign in.
+ 
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
+
 > [!TIP]
 > We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. 
+> 
+::: moniker-end
 
-## Organization level notifications page
+## Organization-level notifications page
 
 See [Navigating the UI](navigating-the-ui.md) to learn how to locate this page.
 
@@ -35,6 +48,9 @@ The organization notifications page consists of the following sections:
 * Subscribers - view notification subscriptions for a specific group, team, or individual
 * Statistics - view the most active subscriptions and top event initiators
 * Settings - manage organization level settings such as delivery preferences
+
+
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ## Organization notifications page: Default subscriptions
 
