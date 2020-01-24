@@ -42,7 +42,7 @@ gulp
 |`cwd` <br/>Working Directory|(Optional) Current working directory when the script is run. Defaults to the folder where the script is located. <br/>Argument aliases: `workingDirectory`|
 |`gulpjs` <br/>gulp.js location|(Optional) Path to an alternative gulp.js, relative to the working directory. <br/>Argument aliases: `workingDirectory`|
 |`publishJUnitResults` <br/>Publish to Azure Pipelines|Select this option to publish JUnit test results produced by the Grunt build to Azure Pipelines <br/>Default value: false|
-|`testResultsFiles` <br/>Test Results Files|(Required) Test results files path. Wildcards can be used. For example, **/TEST-*.xml for all XML files whose name starts with TEST-. <br/>Default value: **/TEST-*.xml|
+|`testResultsFiles` <br/>Test Results Files|(Required) Test results files path. Wildcards can be used. For example, \*\*/TEST-\*.xml for all XML files whose name starts with TEST-. <br/>Default value: \*\*/TEST-\*.xml|
 |`testRunTitle` <br/>Test Run Title|(Optional) Provide a name for the test run|
 |`enableCodeCoverage` <br/>Enable Code Coverage|(Optional) Select this option to enable Code Coverage using Istanbul <br/>Default value: false|
 |`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
