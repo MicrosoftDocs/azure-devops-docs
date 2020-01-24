@@ -19,15 +19,15 @@ Virtual machines can be added as resources within environments and can be target
 
 ## Virtual machine resource creation
 
-You can define environments in the **Environments** hub within the **Pipelines** section.
-1.	Sign into your Azure DevOps organization and navigate to your project.
-2.	Go to the Pipelines page. Select **Environments** and click **Create Environment**.  Specify a **Name** (required) for the environment and a **Description**.
+You can define environments in **Environments** under **Pipelines**.
+1. Click **Create Environment**.  
+2. Specify a **Name** (required) for the environment and a **Description**.
 3.	Choose **Virtual Machines** as a  **Resource** to be added to the environment and click **Next**.
 4.	Choose **Operating System (Windows/Linux)**.
 5.  Select **copy PS registration script**. 
 6.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
     > [!NOTE]
-    > - The Personal Access Token (PAT) of the logged in user is pre-inserted in the script.  The PAT expires on the day you generate the script.
+    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
     > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
 7.	Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
     > [!div class="mx-imgBorder"]
