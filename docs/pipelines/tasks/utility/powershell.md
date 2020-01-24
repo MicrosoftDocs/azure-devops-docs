@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # PowerShell task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ Use this task in a build or release pipeline to run a PowerShell script.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
+[!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
 The Powershell task also has two shortcuts in YAML:
 
@@ -160,15 +160,15 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [PowerShell.org](https://powershell.org/)
 
-[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../includes/variable-set-in-script-qa.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

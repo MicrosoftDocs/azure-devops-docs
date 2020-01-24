@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Build TFVC repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 While editing a pipeline that uses a TFVC repo, you have the following options.
@@ -51,7 +51,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 ## Clean the local repo on the agent
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 ::: moniker range="azure-devops"
 > [!NOTE]
@@ -80,7 +80,7 @@ If you want to clean the repo, then select **true**, and then select one of the 
 
 If you select **True** then the build pipeline performs an undo of any changes and scorches the workspace.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ Select **true** to delete the repository folder.
 
 ## Label sources
 
-[!INCLUDE [include](_shared/label-sources.md)]
+[!INCLUDE [include](includes/label-sources.md)]
 
 The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
 

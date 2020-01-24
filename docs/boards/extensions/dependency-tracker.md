@@ -16,7 +16,7 @@ ms.date: 12/02/2019
 
 # Plan and track dependencies using the Dependency Tracker extension
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
 <!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency 

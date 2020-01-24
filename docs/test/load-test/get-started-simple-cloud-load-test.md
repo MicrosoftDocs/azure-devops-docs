@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Run URL-based load tests with Azure DevOps
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 You can run a load test on your web app or site directly using Azure DevOps.
 
@@ -33,7 +33,7 @@ You can run a load test on your web app or site directly using Azure DevOps.
 
 1. Sign into Azure DevOps.
 
-2. Go to [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
+2. Go to [!INCLUDE [test-hub-include-adsonly](../includes/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
    from the **+ New** menu.
 
    ![Start a new load test from the New menu](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
@@ -83,7 +83,7 @@ You can run a load test on your web app or site directly using Azure DevOps.
    The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
    If there are any transaction tests, the page will also show the five slowest of these.
-   Use the ![down arrow](media/_shared/SimpleLoadTestVSO-sort-column.png)
+   Use the ![down arrow](media/shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
 1. Open the **Charts** page to see a graphical representation of 
@@ -92,18 +92,18 @@ You can run a load test on your web app or site directly using Azure DevOps.
    request. Hover your mouse pointer over a chart to 
    see more details. 
 
-   ![Load test Charts page results](media/_shared/LoadTestVSO-charts.png)
+   ![Load test Charts page results](media/shared/LoadTestVSO-charts.png)
 
 1. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
    ![Load test Diagnostics page results](media/get-started-simple-cloud-load-test/SimpleLoadTestVSO-diagnostics-tab.png)
 
-   You can also use the ![arrow](media/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
+   You can also use the ![arrow](media/shared/SimpleLoadTestVSO-summary-errors-icon.png)
    icon in the **Errors** section of the **Summary** page to go directly to the 
    **Diagnostics** page.
 
-   ![Opening the Diagnostics page from the Summary page](media/_shared/SimpleLoadTestVSO-summary-errors-link.png)
+   ![Opening the Diagnostics page from the Summary page](media/shared/SimpleLoadTestVSO-summary-errors-link.png)
 
 1. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.

@@ -15,14 +15,14 @@ monikerRange: '>= tfs-2015'
 
 # Azure File Copy task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
 Use this task in a build or release pipeline to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureFileCopyV3.md)]
+[!INCLUDE [temp](../includes/yaml/AzureFileCopyV3.md)]
 
 ::: moniker-end
 
@@ -190,11 +190,11 @@ A suitable account can be easily created for use in a service connection:
 1. Sign into the Azure portal with this user account and change the password.
 1. Use the username and password of this account in the service connection. Deployments will be processed using this account.
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

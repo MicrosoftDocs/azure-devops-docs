@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Enter client credentials in Power BI or Excel 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -30,7 +30,7 @@ When connecting from Power BI or Excel to Analytics using the OData feed, choose
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 #### Why use a Personal Access Token over an Alternate Access Credential? 
 
@@ -77,7 +77,7 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
 
-	![User Profile, My Security menu option](../../_shared/media/open-security.png)  
+	![User Profile, My Security menu option](../../media/open-security.png)  
 
 1. Enter the required information: 
    - Add a description  
@@ -234,5 +234,5 @@ the **oAuth2** option.
 <!---
 From the Personal access tokens page, choose **Add**:  
 
-<img src="../../_shared/media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
 -->

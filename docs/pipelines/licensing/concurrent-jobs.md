@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 # Run parallel jobs 
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="azure-devops"
 

@@ -15,7 +15,7 @@ ms.date: 10/28/2019
 
 # Select backlog navigation levels for your team
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-2015-on.md)]  
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
@@ -37,7 +37,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 > **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
 

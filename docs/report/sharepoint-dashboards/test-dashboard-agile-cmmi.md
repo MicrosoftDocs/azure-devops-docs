@@ -13,7 +13,7 @@ ms.date: 12/30/2016
 ---
 
 # Test dashboard (Agile and CMMI)
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 By using the test dashboard, you can monitor test activities, report on progress, find gaps in test coverage, and identify test areas that might require additional investigation. This dashboard displays five reports that provide information about testing that has occurred in the most recent four weeks.  
   

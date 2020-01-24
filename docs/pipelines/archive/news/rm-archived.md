@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
 > Release Management has now been combined with the Build features

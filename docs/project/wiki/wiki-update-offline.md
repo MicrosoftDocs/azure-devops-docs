@@ -17,7 +17,7 @@ ms.date: 12/20/2018
 
 # Clone and update wiki content offline
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 You can update your wiki pages offline the same way you develop code in a Git repo.
 

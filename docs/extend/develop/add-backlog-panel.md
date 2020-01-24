@@ -16,10 +16,10 @@ ms.date: 08/22/2016
 
 In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <!---
-![panel extension on the Azure DevOps Services Portfolio backlog page](../_shared/procedures/media/backlog-pane/portfolio-backlog-pane.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](../media-procedures/backlog-pane/portfolio-backlog-pane.png)
 -->
 
 ![Open panel extension on the Azure DevOps Services Stories backlog page](media/add-panel-intro-show-mapping-hello-world.png)
@@ -32,7 +32,7 @@ The custom panel opens in the same space that the mapping panel opens if it were
 There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
 
 <!---
-![backlog panel contribution point breakdown](../_shared/procedures/media/backlog-pane/backlogPaneContributionPointBreakdown.png)
+![backlog panel contribution point breakdown](../media-procedures/backlog-pane/backlogPaneContributionPointBreakdown.png)
 -->
 
 ![backlog panel contribution point breakdown](media/add-panel-show-three-types.png)

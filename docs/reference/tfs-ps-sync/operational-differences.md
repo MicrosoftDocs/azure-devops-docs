@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Operational differences in managing projects using TFS and Project
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> You can schedule projects by using the features that are available in Microsoft Project or Microsoft Project Professional, while maintaining the data and tracking work in Visual Studio Team Foundation Server (TFS). If you have Project Server deployed, you can best manage your enterprise project plans by installing Team Foundation Server Extensions for Project Server.  
   

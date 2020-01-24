@@ -16,7 +16,7 @@ ms.date: 10/16/2019
 
 # Query by titles, IDs, and rich-text fields
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 
@@ -78,7 +78,7 @@ For example, specify **Contains Words** and <strong>inform&#42;</strong> to filt
 > [!div class="mx-imgBorder"] 
 > ![Use wild card with Contains Words](media/text-queries/contains-word-wildcard.png)
 
-[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 <a id="undefined-value"/>
 
@@ -242,7 +242,7 @@ Work Item Type
 - [Create managed queries](example-queries.md)   
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 
 

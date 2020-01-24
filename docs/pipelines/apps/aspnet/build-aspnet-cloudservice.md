@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Build your Azure Cloud Service
 
-[!INCLUDE [temp](../../_shared/version.md)]
+[!INCLUDE [temp](../../includes/version.md)]
 
 Here we'll show you how to define your continuous integration (CI) pipeline for your Azure Cloud Service project.
 
@@ -32,7 +32,7 @@ For the instructions in this topic, you need an Azure Cloud Service project in V
 
 <ol>
 
-[!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
+[!INCLUDE [include](../../includes/begin-create-build-definition.md)]
 
 <li>Select the <strong>Azure Cloud Service</strong> template.</li>
 

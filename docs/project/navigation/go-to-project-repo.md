@@ -16,7 +16,7 @@ ms.date: 02/08/2019
 
 # Switch project, repository, team 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 
 Several features depend on the project, repository, or team that you have selected. For example, dashboards, backlogs, and board views will change depending on the project and team you select.
@@ -32,7 +32,7 @@ From the **Projects** page you can quickly navigate to a project that you have p
 1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, Azure DevOps logo](../../_shared/media/settings/open-projects-page-vert-brn.png)
+	> ![web portal, Azure DevOps logo](../../media/settings/open-projects-page-vert-brn.png)
 
 	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
 
@@ -60,7 +60,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, Azure DevOps logo](../../_shared/media/settings/open-project-hub-horz.png)
+	> ![web portal, Azure DevOps logo](../../media/settings/open-project-hub-horz.png)
 
 	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
 
@@ -134,7 +134,7 @@ From a **Project Settings>Work>Team configuration** page, you select a team from
 ::: moniker range="tfs-2018"
 You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
 
-![Choose another team from the project menu](../../_shared/media/work-web-portal-ts-switch-team-focus.png)
+![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 ::: moniker-end
 
 ::: moniker range="tfs-2017" 
@@ -142,7 +142,7 @@ You can switch your team focus to one that you've recently viewed from the proje
 ### TFS 2017.1 
 To switch your team focus to a project or team you've recently viewed, hover over the ![ ](../../media/icons/project-icon.png) Azure DevOps logo and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
 
-![Choose another team from the project menu](../../_shared/media/work-web-portal-tfs-2017-1-switch-team-focus.png) 
+![Choose another team from the project menu](../../media/work-web-portal-tfs-2017-1-switch-team-focus.png) 
 
 
 ### TFS 2017
@@ -150,7 +150,7 @@ To switch your team focus to a project or team you've recently viewed, hover ove
 
 Open the project/team drop-down menu and select the project/team that you've recently visited. If you don't see the team or project you want, choose **Browse all** to browse all projects and teams. 
 
-![Choose another team from the project menu](../../_shared/media/switch-context-tfs-2017.png)   
+![Choose another team from the project menu](../../media/switch-context-tfs-2017.png)   
 
 ::: moniker-end
 

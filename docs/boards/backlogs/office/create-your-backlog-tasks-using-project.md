@@ -16,11 +16,11 @@ ms.date: 08/15/2019
 
 # Create your backlog and tasks using Microsoft Project 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 If Microsoft Project is your preferred tool for tracking projects, you can use it to create and update work items. Create your backlog, schedule tasks, assign resources, and track work in Project and have it also tracked in Azure Boards or Azure DevOps Server. You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 

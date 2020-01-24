@@ -16,7 +16,7 @@ ms.date: 11/01/2018
 
 # Cumulative flow, lead time, and cycle time guidance 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 ::: moniker range=">= tfs-2013" 
 

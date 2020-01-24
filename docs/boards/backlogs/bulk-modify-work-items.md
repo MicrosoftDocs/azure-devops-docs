@@ -15,7 +15,7 @@ ms.date: 01/08/2018
 
 # Bulk modify work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use bulk modify when you need to quickly make the same change to a number of work items. For example, you might want to change the priority of several bugs or reassign several tasks to the same team member. Use the web portal to quickly modify one or more fields for work items that will contain the same value.  
 
@@ -43,7 +43,7 @@ In this article you'll learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Supported tasks
 
@@ -425,7 +425,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker range=">= tfs-2015"
 
-[!INCLUDE [temp](../_shared/assign-to-sprint.md)]
+[!INCLUDE [temp](../includes/assign-to-sprint.md)]
 
 ::: moniker-end
 

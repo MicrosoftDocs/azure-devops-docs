@@ -22,27 +22,27 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-161-update-links](_shared/general/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/general/sprint-161-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-161-update-links](_shared/pipelines/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/pipelines/sprint-161-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-161-update-links](_shared/repos/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/repos/sprint-161-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-161-update](_shared/general/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/general/sprint-161-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-161-update](_shared/pipelines/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/pipelines/sprint-161-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-161-update](_shared/repos/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/repos/sprint-161-update.md)]
 
 ## Next steps
 
@@ -65,4 +65,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-161](_shared/signer/sprint-161.md)]
+[!INCLUDE [sprint-161](includes/signer/sprint-161.md)]

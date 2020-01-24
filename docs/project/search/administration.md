@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Install and manage Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -615,13 +615,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range="azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -665,13 +665,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range=">= azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -705,4 +705,4 @@ Search for Azure DevOps Server and TFS has the following limitation:
 
 <a name="support"></a>
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Define your multi-stage continuous deployment (CD) pipeline
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
    or a different set of tags within the same deployment group.
 
-[!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
+[!INCLUDE [edit-template-vars-in-environment](../apps/includes/edit-template-vars-in-environment.md)]
 
 <a name="add-approvals"></a>
 

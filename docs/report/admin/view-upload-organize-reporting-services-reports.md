@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # View, upload, and organize Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
   

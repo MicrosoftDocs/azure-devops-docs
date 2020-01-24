@@ -42,7 +42,7 @@ The vstest demand can be satisfied in two ways:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VsTestV2.md)]
+[!INCLUDE [temp](../includes/yaml/VsTestV2.md)]
 
 ::: moniker-end
 

@@ -15,7 +15,7 @@ ms.date: 10/24/2019
  
 # Azure Boards with Microsoft Teams
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to create work items and monitor work item activity in your Azure Boards project from your Teams channel. 
 
@@ -195,7 +195,7 @@ The following table lists all the `@azure boards` commands you can use in your M
 
 If you are experiencing the following errors when using the [Azure Boards App for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview), follow the procedures in this section.
 
-[!INCLUDE [troubleshooting](_shared/boards-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](includes/boards-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab, navigate to `https://teams.microsoft.com/`. Run the `@azure boards signout` command and then run the `@azure boards signin` command in the channel where the Azure Boards app for Microsoft Teams is installed. 
 

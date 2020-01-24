@@ -19,7 +19,7 @@ ms.date: 02/14/2019
 
 # Product backlog controls  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="backlog-controls">  </a>
 

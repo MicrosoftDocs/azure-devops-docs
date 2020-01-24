@@ -16,7 +16,7 @@ ms.date: 07/22/2019
 
 # Start using your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Your Kanban board turns your backlog into an interactive signboard, which provides a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage. Each card represents a backlog item, user story, or bug at that stage of work. 
 
@@ -25,7 +25,7 @@ Your Kanban board turns your backlog into an interactive signboard, which provid
 
 User stories and bugs correspond to types of work items. You use [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
-[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
+[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 ## Add a Kanban board
 
@@ -45,7 +45,7 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 ::: moniker-end   
 
-[!INCLUDE [temp](../_shared/open-kanban-board.md)] 
+[!INCLUDE [temp](../includes/open-kanban-board.md)] 
 
 
 <a id="add-work-items"> </a>

@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # Command Line task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
+[!INCLUDE [temp](../includes/yaml/CmdLineV2.md)]
 
 The CmdLine task also has a shortcut syntax in YAML:
 
@@ -187,11 +187,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [An A-Z Index of the Windows CMD  command line](https://ss64.com/nt/)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

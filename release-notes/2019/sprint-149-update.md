@@ -20,43 +20,43 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [sprint-149-update-links](_shared/general/sprint-149-update-links.md)]
+[!INCLUDE [sprint-149-update-links](includes/general/sprint-149-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-149-update-links](_shared/boards/sprint-149-update-links.md)]
+[!INCLUDE [sprint-149-update-links](includes/boards/sprint-149-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-149-update-links](_shared/pipelines/sprint-149-update-links.md)]
+[!INCLUDE [sprint-149-update-links](includes/pipelines/sprint-149-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-149-update-links](_shared/artifacts/sprint-149-update-links.md)]
+[!INCLUDE [sprint-149-update-links](includes/artifacts/sprint-149-update-links.md)]
 
 Reporting:
 
-[!INCLUDE [sprint-149-update-links](_shared/reporting/sprint-149-update-links.md)]
+[!INCLUDE [sprint-149-update-links](includes/reporting/sprint-149-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-149-update](_shared/general/sprint-149-update.md)]
+[!INCLUDE [sprint-149-update](includes/general/sprint-149-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-149-update](_shared/boards/sprint-149-update.md)]
+[!INCLUDE [sprint-149-update](includes/boards/sprint-149-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-149-update](_shared/pipelines/sprint-149-update.md)]
+[!INCLUDE [sprint-149-update](includes/pipelines/sprint-149-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-149-update](_shared/artifacts/sprint-149-update.md)]
+[!INCLUDE [sprint-149-update](includes/artifacts/sprint-149-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-149-update](_shared/reporting/sprint-149-update.md)]
+[!INCLUDE [sprint-149-update](includes/reporting/sprint-149-update.md)]
 
 ## Next steps
 

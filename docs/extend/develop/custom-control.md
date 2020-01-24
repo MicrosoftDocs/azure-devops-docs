@@ -14,11 +14,11 @@ ms.date: 10/10/2017
 
 # Add a custom control to the work item form
 
-[!INCLUDE [version-vsts-tfs-2017-on](../../boards/_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../../boards/includes/version-vsts-tfs-2017-on.md)]
 
 Custom controls allow you to change how users view and interact with a field on the work item form.  The screenshot below shows a sample custom work item control for the *Priority* field. The following article walks you through how this sample custom control was built.  In this article, learn how to build your own custom control.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <img alt="custom control in work item form" src="./media/customcontrol.png" style="width: 600px;"/>
 

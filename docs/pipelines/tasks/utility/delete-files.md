@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Delete Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
 Use this task in a build or release pipeline to delete files or folders from the agent working directory.
 
@@ -27,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.md)]
+[!INCLUDE [temp](../includes/yaml/DeleteFilesV1.md)]
 
 ::: moniker-end
 
@@ -105,15 +105,15 @@ A: See:
 
 * http://man7.org/linux/man-pages/man3/fnmatch.3.html
 
-<!-- [!INCLUDE [temp](../_shared/build-step-common-qa.md)] -->
+<!-- [!INCLUDE [temp](../includes/build-step-common-qa.md)] -->
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

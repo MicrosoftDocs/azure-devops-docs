@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # CMake task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to build with the CMake cross-platform build system.
 
@@ -33,7 +33,7 @@ cmake
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CMakeV1.md)]
+[!INCLUDE [temp](../includes/yaml/CMakeV1.md)]
 
 ::: moniker-end
 
@@ -86,11 +86,11 @@ The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed alrea
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](../../agents/includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab:
  
-   [!INCLUDE [agent-capabilities](../../agents/_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](../../agents/includes/agent-capabilities-tab.md)]
 
 1. Click **Add capability** and set the fields to `cmake` and `yes`.
 
@@ -104,10 +104,10 @@ The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed alrea
 [CMake Documentation](https://cmake.org/documentation/)
 
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

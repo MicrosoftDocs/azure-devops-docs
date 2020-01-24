@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Scrum process work item types and workflow  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To plan a software project and track software defects using Scrum, teams use the product backlog item (PBI) and bug work item types (WITs). To gain insight into a portfolio of features, scenarios, or user experiences, product owners and program managers can map PBIs and bugs to features. When teams work in sprints, they define tasks which automatically link to PBIs and bugs.
 
@@ -28,7 +28,7 @@ To plan a software project and track software defects using Scrum, teams use the
 Using the web portal or Microsoft Test Manager, testers can create and run test cases and create bugs to track code defects. Impediments track blocking issues. 
 
 
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)]   
+[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)]   
 
 ## Define PBIs and bugs  
 
@@ -76,7 +76,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
 ## Track progress
 
@@ -167,14 +167,14 @@ The ![Links tab icon](../../backlogs/media/icon-links-tab-wi.png) (links tab) ca
 
 You can [create bugs from the web portal web portal, Visual Studio, or when testing with Test Manager](../../backlogs/manage-bugs.md). 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
 
 ## Customize work item types
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
 ## Related articles
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]  
 
 
 
@@ -290,4 +290,4 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 
 
 
-[!INCLUDE [temp](../../../_shared/help-support-shared.md)]
+[!INCLUDE [temp](../../../includes/help-support-shared.md)]
