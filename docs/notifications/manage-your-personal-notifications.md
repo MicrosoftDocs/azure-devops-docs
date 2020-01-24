@@ -10,17 +10,22 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 ms.date: 12/30/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2013'
 ---
 
 # Manage your notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-In this article, learn how to receive email notifications as changes occur to your code base, builds, work items, and other operations. Set an alert, for example, to get notified when you resolve a bug or when you get assigned to a work item.
+As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications).
 
->[!NOTE]  
->This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to  receive notifications.
+::: moniker range="tfs-2017"
+
+[!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
+
+
+::: moniker-end
+
 
 In this tutorial, learn how to do the following tasks:
 
@@ -29,9 +34,11 @@ In this tutorial, learn how to do the following tasks:
 > * Add a custom subscription
 > * Unsubscribe or opt out of a team or project subscription
 
-## View your personal notifications
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker range="azure-devops"
+
+## View your personal notifications
 
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
@@ -48,20 +55,70 @@ From the web portal, select the icon with your initials or picture, and then sel
 
    ![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
 
-   ::: moniker-end
-
 ***
+::: moniker-end
 
-   ::: moniker range="<= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
 >![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)  
    
-   ::: moniker-end
+::: moniker-end
+
+
+::: moniker range="< tfs-2017"
+
+## Set alerts just for yourself
+
+1. Open alerts management (My alerts from your profile menu). If you don't see this option, then you must [configure an SMTP server to support TFS](/azure/devops/server/admin/setup-customize-alerts). 
+	
+	![Manage individual alerts from the web portal](media/set-alerts-from-profile-menu.png)
+
+2. Enter one or more email addresses. Separate addresses with a semi-colon. 
+	
+	![Set email address for alerts](media/personal/ALM_AN_Email.png)  
+
+3.	Select the check box for each alert of interest. **My work items** and **My build** refer to work items and builds that you created.
+	
+	![Manage TFS alerts](media/personal/ALM_AN_ManageAlerts.png)
+
+	Alert templates reference a customizable query. 
+	
+	The following alert types appear when your project is provisioned with Git for version control:  
+	- **A commit is pushed to this project**  
+	- **A pull request I've participated in is created or updated**  
+	- **A build quality changes** 
+
+	> [!TIP]    
+	> When you clear an alert, you also clear all email addresses defined for the alert.  
+
+4.	For more options, open custom alerts and choose one of the options available. Also, you can open a basic alert and modify its settings, such as changing the email format from HTML to plain text or SOAP. 
+	
+	![Open custom alerts](media/personal/ALM_AN_CustomAlerts.png)
+
+5.	Define alert filters in the same way you define query filters.
+	
+	![Fill out the custom alerts form](media/personal/ALM_AN_DefiningAlerts.png)
+	
+	For a list of available fields, see [Index of work item fields](../work-items/guidance/work-item-field.md).
+
+6.	For even more options, open the Select New Alert Template. 
+	
+	![Open all alert options](media/personal/ALM_AN_Options.png)
+
+7.	Choose from one of the several alert types listed.
+	
+	![Choose an alert type from all options listed](media/personal/ALM_AN_Templates.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ## View all subscriptions
 
 This view shows all subscriptions that you've created or that have been created by an administrator. Subscriptions let you control what you are notified about. Subscribed notifications are indicated with the State as **On**.
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -70,27 +127,37 @@ This view shows all subscriptions that you've created or that have been created 
 
 #### [Preview page](#tab/preview-page) 
 
-![Personal notification subscriptions](media/unsubscribe-personal-notifications-preview.png)
+> [!div class="mx-imgBorder"]  
+> ![Personal notification subscriptions](media/unsubscribe-personal-notifications-preview.png)
 
 #### [Current page](#tab/current-page) 
 
-<img src="media/unsubscribe-personal-notifications-newnav.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
-
-::: moniker-end
+> [!div class="mx-imgBorder"]  
+> ![Personal notification subscriptions](media/unsubscribe-personal-notifications-newnav.png)
 
 ***
 
-::: moniker range="<= azure-devops-2019"
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"
+
 A subscription can be just for you, or if you're a team admin, can be shared by everyone in the team.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ## Add a custom subscription
 
 With custom personal subscriptions, you can define precise criteria for the events you want to receive notifications. A custom subscription can notify you about any event. Default subscriptions differ, as they only notify users or groups directly associated with an event.
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -143,11 +210,11 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 	<img src="media/manage-personal-notifications-subscription-added.png" alt="New subscription added" style="border: 2px solid #C3C3C3;" />
 
-::: moniker-end
-
 ***
 
-::: moniker range="<= tfs-2018"
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
 
    <img src="media/manage-personal-notifications-new-subscription.png" alt="Open the new subscription dialog" style="border: 2px solid #C3C3C3;" />
 
@@ -170,6 +237,11 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 ::: moniker-end
 
+
+
+
+::: moniker range=">= tfs-2017"
+
 ## Unsubscribe or opt out of a team or OOB subscription
 
 You can choose to not receive notifications for certain team subscriptions by opting out of the subscription.
@@ -180,12 +252,13 @@ For example, here we turn off the Build completes subscription.
 
 <img src="media/unsubscribe-from-build-completes-preview.png" alt="Unsubscribe from Build completes subscription" style="border: 2px solid #C3C3C3;" />
 
->[!NOTE]  
->Whether you are an administrator or not, toggling a shared team subscription from your notification settings only impacts you and not other team members.
+> [!NOTE]  
+> Whether you are an administrator or not, toggling a shared team subscription from your notification settings only impacts you and not other team members.
 
-
+::: moniker-end
 
 <!--- TFS 2017 Update 1 settings 
+
 To manage your notification settings, select the Notifications option under the profile menu:
 	
 ![Access personal notifications settings via the profile menu](../project/wiki/media/personal-profile-menu.png)
