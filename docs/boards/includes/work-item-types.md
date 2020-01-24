@@ -14,7 +14,7 @@ The following image shows the Agile process backlog work item hierarchy. User St
 > [!div class="mx-tdCol2BreakAll"]
 > ![Agile work item types, conceptual image](/azure/devops/boards/work-items/guidance/media/ALM_PT_Agile_WIT_Artifacts.png)  
 
-Each team can configure how they manage Bugs&mdash;at the same level as User Stories or Tasks&mdash; by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [Agile process](/azure/devops/boards/work-items/guidance/agile-process).
+Each team can configure how they manage Bugs&mdash;at the same level as User Stories or Tasks&mdash;by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [Agile process](/azure/devops/boards/work-items/guidance/agile-process).
 
 #### [Basic process](#tab/basic-process) 
 
@@ -33,13 +33,13 @@ The following image shows the Scrum process backlog work item hierarchy. Product
 > ![Scrum work item types, conceptual image](/azure/devops/boards/work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png) 
 
 
-Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks&mdash; by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [Scrum process](/azure/devops/boards/work-items/guidance/scrum-process).  
+Each team can configure how they manage bugs&mdash;at the same level as Product Backlog Items or Tasks&mdash;by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [Scrum process](/azure/devops/boards/work-items/guidance/scrum-process).  
 
 #### [CMMI process](#tab/cmmi-process) 
 
 The following image shows the CMMI process backlog work item hierarchy. Requirements and Tasks are used to track work, Bugs track code defects, and Epics and Features are used to group work under larger scenarios. 
 
 > [!div class="mx-tdCol2BreakAll"]
-> ![CMMI work item types, conceptual image](/azure/devops/boards/work-items/guidance/media/
+> ![CMMI work item types, conceptual image](/azure/devops/boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)  
 
-Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks&mdash; by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. > To learn more about using these work item types, see [CMMI process](/azure/devops/boards/work-items/guidance/cmmi-process). 
+Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks&mdash;by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [CMMI process](/azure/devops/boards/work-items/guidance/cmmi-process). 

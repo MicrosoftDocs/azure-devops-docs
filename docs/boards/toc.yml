@@ -7,7 +7,7 @@
 - name: Best tool for the job
   href: work-items/best-tool-add-update-link-work-items.md
 - name: Configure & customize
-  href: configure-customize-quick-ref.md
+  href: configure-customize.md
   displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, 
 - name: Work tracking limits
   href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 

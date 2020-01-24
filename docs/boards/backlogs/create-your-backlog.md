@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plan product backlog of stories, issues, & more
 titleSuffix: Azure Boards
 description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
@@ -21,6 +21,8 @@ ms.date: 03/21/2019
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
 
 After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
+
+[!INCLUDE [temp](../includes/note-config-customize.md)]
 
 Your backlog consists of a list of [work items](../work-items/about-work-items.md). 
 You use work items to share information, assign work to team members, track dependencies, organize work, 
@@ -117,30 +119,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
-[!INCLUDE [temp](../includes/basic-process-bug-note.md)]
-
-If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
-
-Talk with your team to determine how they want to manage bugs. Then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
-
-> [!NOTE]    
-> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
-
-
-::: moniker range="<= tfs-2018"
-
-> [!TIP]  
-> After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on the Kanban or sprint taskboards.  
-
-::: moniker-end
-
-
-::: moniker range="> tfs-2018"
-
-> [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
-
-::: moniker-end
+Before deciding, review [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md) for guidance. 
 
 <a id="convert-ideas" />
 
