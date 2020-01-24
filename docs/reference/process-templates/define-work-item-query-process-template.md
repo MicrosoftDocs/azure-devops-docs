@@ -14,7 +14,7 @@ ms.date: 02/24/2017
 
 # Define a work item query to add to a process template
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 <a name="top"></a> You can create a work item query (.wiq) file most easily in Team Explorer. In an existing project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  
   

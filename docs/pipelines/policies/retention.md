@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ For example, your team may want to keep:
 The following example retention policy for a build pipeline
 meets the above requirements:
 
-![define git retention policies](_img/define-git-retention-policies.png)
+![define git retention policies](media/define-git-retention-policies.png)
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
@@ -101,7 +101,7 @@ If you [protect your Git branches with pull request builds](../../repos/git/bran
 refs/pull/*
 ```
 
-![retention-policy-for-pull-request-builds](_img/retention-policy-for-pull-request-builds.png)
+![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
@@ -113,7 +113,7 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-![define git retention policy max shown in pipeline](_img/define-git-retention-policy-max-shown-in-definition.png)
+![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ For example, your team may want to keep:
 
 The following example retention policy for a release pipeline meets the above requirements:
 
-![Configuring the release retention setting for a release pipeline](_img/retention-policy-01.png)
+![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
 
 In this example, if a release that is deployed to Dev is not
 promoted to QA for 10 days, it is a potential candidate for
@@ -280,8 +280,8 @@ Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
 governed by the retention settings of the release they belong to.
 
-<!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-agents.md)] -->
 
-<!-- [!INCLUDE [temp](../_shared/qa-versions.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-versions.md)] -->
 
 <!-- ENDSECTION -->

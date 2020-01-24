@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # What are the features in Azure DevOps?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
@@ -56,7 +56,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 <p><b>Add team members </b></p>
 <p>To share and contribute to your project, add users to <a href="../organizations/accounts/add-team-members.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-team-members.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
-<img src="_img/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
+<img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 <p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
 <p>Control who can access your team&#39;s critical resources and key business assets by <a href="../organizations/accounts/manage-azure-active-directory-groups.md" data-raw-source="[managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups.md)">managing access with Azure Active Directory groups</a>. </p>
@@ -95,7 +95,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Create your backlog</b></p>
 <p>Plan your project by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[adding a work item for each user story or requirement](../boards/backlogs/create-your-backlog.md)">adding a work item for each user story or requirement</a> you plan to develop.  </p>
-<img src="_img/features/features-quick-add-panel.png" alt="Build your backlog of user stories and requirements"/><br/> <br/>
+<img src="media/features/features-quick-add-panel.png" alt="Build your backlog of user stories and requirements"/><br/> <br/>
 
 
 <p><b>Organize your backlog</b></p>
@@ -116,15 +116,15 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="320">
 <p><b>Move work item to a different project (Azure DevOps Services)</b></p>
-<p>Choose the <img src="../boards/_img/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#move" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md#move)">move the work item to a different project</a>. </p>
+<p>Choose the <img src="../boards/media/icons/change-team-project-icon.png" alt="Change project icon"/> Change project menu option, <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move the work item to a different project](../boards/backlogs/remove-delete-work-items.md)">move the work item to a different project</a>. </p>
 
 <p><b>Full screen mode</b></p>
-<p>Choose <img src="../boards/_img/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/_img/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
+<p>Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to enter or exit full screen mode.  </p>
 
 
 <p><b>Backlog and board settings</b></p>
-<p>Choose <img src="../boards/_img/icons/team-settings-gear-icon.png" alt="Settings icon"/>  to configure team backlogs and boards, including <a href="../organizations/settings/show-bugs-on-backlog.md" data-raw-source="[show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md)">show bugs on backlogs and boards</a> and <a href="../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md)">set team backlog levels</a>.  </p>
-<img src="_img/features/alm-feature-team-settings-gear-icon.png" alt="Backlog and board settings"/><br/><br/>
+<p>Choose <img src="../boards/media/icons/team-settings-gear-icon.png" alt="Settings icon"/>  to configure team backlogs and boards, including <a href="../organizations/settings/show-bugs-on-backlog.md" data-raw-source="[show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md)">show bugs on backlogs and boards</a> and <a href="../organizations/settings/select-backlog-navigation-levels.md" data-raw-source="[set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md)">set team backlog levels</a>.  </p>
+<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Backlog and board settings"/><br/><br/>
 
 
 
@@ -140,16 +140,16 @@ Use features supported by these familiar clients to manage your project and illu
 
 <td width="30%">
 <p><b>Change work item type (Azure DevOps Services)</b></p>
-<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/_img/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/_img/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md#change-type" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md#change-type)">change the work item type</a>. </p>
+<p>If you added a task instead of a bug and want to change the work item type to bug, you can. Choose the <img src="../boards/media/icons/change-type-icon.png" alt="Change type icon"/> Change type option from the <img src="../boards/media/icons/actions-icon.png" alt="Actions icon"/> Actions menu in a work item form to <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[change the work item type](../boards/backlogs/remove-delete-work-items.md)">change the work item type</a>. </p>
 
 <p><b>Filter your backlog</b></p>
 <p>Use <strong>Show/Hide in progress</strong> to only show or hide items which have moved from the new or proposed state to active or in progress state.     </p>
 <p>Additionally, you can list a subset of items based on keywords <a href="../boards/backlogs/filter-backlogs.md" data-raw-source="[keywords](../boards/backlogs/filter-backlogs.md)">keywords</a> or <a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[tags](../boards/queries/add-tags-to-work-items.md)">tags</a>. </p>
-<img src="_img/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
+<img src="media/features/alm-feature-filter-backlog.png" alt="Filter based on keywords or tags"/><br/> <br/>
 
 <p><b>Request feedback</b></p>
 <p><a href="../project/feedback/get-feedback.md" data-raw-source="[Request feedback on working software](../project/feedback/get-feedback.md)">Request feedback on working software</a> and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
-<img src="_img/features/feature-request-feedback.png" alt="Request feedback"/><br/> <br/>
+<img src="media/features/feature-request-feedback.png" alt="Request feedback"/><br/> <br/>
 
 <p><b>Feedback client</b></p>
 <p>Provide the free <a href="../project/feedback/give-feedback.md" data-raw-source="[Microsoft feedback client](../project/feedback/give-feedback.md)">Microsoft feedback client</a> to capture their responses to your feedback requests. </p>
@@ -172,7 +172,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Track issues and other types of work</b></p>
 <p>Different types of work items <a href="../boards/backlogs/add-work-items.md" data-raw-source="[track different types of work](../boards/backlogs/add-work-items.md)">track different types of work</a> - such as bugs, test cases, risks, issues, and more. </p>
-<img src="_img/features/alm-feature-new-work-item-widget.png" alt="Add new work item widget"/><br/>
+<img src="media/features/alm-feature-new-work-item-widget.png" alt="Add new work item widget"/><br/>
  <br/>
 
 <p><b>Bulk modify</b></p>
@@ -180,18 +180,18 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Copy or clone a work item</b></p>
 <p><a href="../boards/backlogs/copy-clone-work-items.md#copy-clone" data-raw-source="[Copy an existing work item](../boards/backlogs/copy-clone-work-items.md#copy-clone)">Copy an existing work item</a> or bulk copy several using <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Excel</a>.</p>
-<img src="_img/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
+<img src="media/features/alm-index-copy-clone-work-item.png" alt="Copy or clone a work item"/><br/> <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/_img/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/_img/icons/following-icon.png" alt="Following icon"/> Follow/Following icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
-<img src="_img/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
+<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> Follow/Following icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/_img/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/_img/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area. </p>
+<p>Describe and comment on work using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>. Choose <img src="../boards/media/icons/fullscreen_icon.png" alt="full screen icon"/> or <img src="../boards/media/icons/exitfullscreen_icon.png" alt="exit full screen icon"/>  to expand or contract the viewing area. </p>
 
 
 <p><b>Clear HTML formatting </b></p>
-<p>Use the <img src="../boards/_img/icons/remove-formatting-icon.png" alt="Remove format"/> icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
+<p>Use the <img src="../boards/media/icons/remove-formatting-icon.png" alt="Remove format"/> icon or CTRL+Spacebar to remove formatting from highlighted text.</p>
 
 
 
@@ -226,11 +226,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Remove or delete a work item</b></p>
 <p>Remove work items from the backlog by changing their State to Removed. Or, <a href="../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move them to the recycle bin or permanently delete them](../boards/backlogs/remove-delete-work-items.md)">move them to the recycle bin or permanently delete them</a>.</p>
-<img src="../boards/backlogs/_img/recycle-bin-icon.png" alt="Recycle bin icon"/><br/> <br/>
+<img src="../boards/backlogs/media/recycle-bin-icon.png" alt="Recycle bin icon"/><br/> <br/>
 
 <p><b>Tags</b></p>
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Bulk update work items](../boards/backlogs/bulk-modify-work-items.md#tags)">Bulk update work items</a> or <a href="../boards/backlogs/work-item-template.md" data-raw-source="[use work item templates](../boards/backlogs/work-item-template.md)">use work item templates</a> to add or remove tags. </p>
-<img src="_img/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
+<img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
 <p><b>Work item templates</b></p>
 <p>Quickly add new work items based on templates <a href="../boards/backlogs/work-item-template.md" data-raw-source="[with  pre-populate values for your team&#39;s commonly used fields](../boards/backlogs/work-item-template.md)">with  pre-populate values for your team&#39;s commonly used fields</a>. </p>
@@ -244,12 +244,12 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/_img/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development done to support the specific work item.  </p>
-<img src="_img/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
+<img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
 
 
 <p><b>Verify a bug, rerun test case</b></p>
@@ -258,7 +258,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Link work items  </b></p>
 <p>Track related work, dependencies, and changes made over time by <a href="../boards/queries/link-work-items-support-traceability.md" data-raw-source="[linking work items](../boards/queries/link-work-items-support-traceability.md)">linking work items</a>. </p>
-<img src="_img/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
+<img src="media/features/alm-feature-links-control.png" alt="Link control, web portal"/><br/><br/>
 
 <p><b>Add or modify a field </b></p>
 <p>Add a custom field (<a href="../organizations/settings/work/customize-process.md" data-raw-source="[Azure DevOps Services](../organizations/settings/work/customize-process.md)">Azure DevOps Services</a> | <a href="../reference/add-modify-field.md" data-raw-source="[TFS](../reference/add-modify-field.md)">TFS</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
@@ -292,7 +292,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Create an inherited process</b></p>
 <p>The first step in customizing a project is to <a href="../organizations/settings/work/manage-process.md#create-inherited-process" data-raw-source="[create an inherited process](../organizations/settings/work/manage-process.md#create-inherited-process)">create an inherited process</a>. You can only customize inherited processes.  </p>
-<img src="_img/features/customize-vsts-process.png" alt="Customize process"/><br/><br/>
+<img src="media/features/customize-vsts-process.png" alt="Customize process"/><br/><br/>
 
 <p><b>New work item experience </b></p>
 <p>The <a href="../reference/process/new-work-item-experience.md" data-raw-source="[new work item experience](../reference/process/new-work-item-experience.md)">new work item experience</a> provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
@@ -321,18 +321,18 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Add or modify a field</b></p>
 <p><a href="../organizations/settings/work/customize-process-field.md" data-raw-source="[Add a custom field](../organizations/settings/work/customize-process-field.md)">Add a custom field</a> to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
-<img src="_img/features/index-add-field.png" alt="Add field"/><br/><br/>
+<img src="media/features/index-add-field.png" alt="Add field"/><br/><br/>
 
 <p><b>Remove a field from a form</b></p>
 <p>You can <a href="../organizations/settings/work/customize-process-field.md#remove-field" data-raw-source="[remove a custom field and select inherited fields from a work item form](../organizations/settings/work/customize-process-field.md#remove-field)">remove a custom field and select inherited fields from a work item form</a>. You can also <a href="../organizations/settings/work/customize-process-field.md#rename-field" data-raw-source="[relabel the fields](../organizations/settings/work/customize-process-field.md#rename-field)">relabel the fields</a> that appear on the form.   </p>
 
 <p><b>Area path pick lists</b></p>
 <p>Change the <a href="../organizations/settings/set-area-paths.md" data-raw-source="[pick list of area paths](../organizations/settings/set-area-paths.md)">pick list of area paths</a> to support grouping work items by team, product, or feature area. </p>
-<img src="_img/features/alm-feature-area-paths.png" alt="Hierarchical area paths"/><br/><br/>
+<img src="media/features/alm-feature-area-paths.png" alt="Hierarchical area paths"/><br/><br/>
 
 <p><b>Sprint/iteration pick lists</b></p>
 <p>Change the <a href="../boards/sprints/define-sprints.md" data-raw-source="[pick list of iteration paths](../boards/sprints/define-sprints.md)">pick list of iteration paths</a> to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team. </p>
-<img src="_img/features/alm-feature-define-sprints.png" alt="Iterations or sprints"/><br/><br/>
+<img src="media/features/alm-feature-define-sprints.png" alt="Iterations or sprints"/><br/><br/>
 </td>
 
 
@@ -351,7 +351,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Customize the web form</b></p>
 <p>For each work item type, you can <a href="../organizations/settings/work/customize-process-form.md" data-raw-source="[add custom pages to group additional custom fields](../organizations/settings/work/customize-process-form.md)">add custom pages to group additional custom fields</a> and you can organize your forms by placing logically related groups and HTML fields on separate pages within a form.    </p>
-<img src="_img/features/index-add-group.png" alt="Add custom group"/><br/><br/>
+<img src="media/features/index-add-group.png" alt="Add custom group"/><br/><br/>
 
 <p><b>Add a custom work item type</b></p>
 <p>You can <a href="../organizations/settings/work/customize-process-wit.md" data-raw-source="[add and modify a custom work item type](../organizations/settings/work/customize-process-wit.md)">add and modify a custom work item type</a>.    </p>
@@ -446,19 +446,19 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Kanban basics</b></p>
 <p>Use your Kanban board to <a href="../boards/boards/kanban-basics.md" data-raw-source="[visualize and track the flow of work](../boards/boards/kanban-basics.md)">visualize and track the flow of work</a> from idea to completion as well as quickly update work item fields</p>
-<img src="../boards/boards/_img/ALM_KB_UpdateFieldOnCard.png" alt="Update fields on cards"/><br/><br/>
+<img src="../boards/boards/media/ALM_KB_UpdateFieldOnCard.png" alt="Update fields on cards"/><br/><br/>
 
 <p><b>Drag-n-drop</b></p>
 <p><a href="../boards/boards/reorder-cards.md" data-raw-source="[Drag and drop items](../boards/boards/reorder-cards.md)">Drag and drop items</a> on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with <a href="../boards/boards/add-task-checklists.md" data-raw-source="[lightweight tasks checklists](../boards/boards/add-task-checklists.md)">lightweight tasks checklists</a>. </p>
-<img src="../boards/backlogs/_img/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
+<img src="../boards/backlogs/media/overview/kanban-task-checklist.png" alt="Track tasks with a checklist"/><br/><br/>
 
 <p><b>Filter</b></p>
 <p><a href="../boards/boards/filter-kanban-board.md#text-filter" data-raw-source="[Use key words to filter and find items](../boards/boards/filter-kanban-board.md#text-filter)">Use key words to filter and find items</a> on the Kanban board.</p>
 
-<img src="_img/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
+<img src="media/features/alm-feature-kanban-filter.png" alt="Kanban board filter"/><br/><br/>
 
 
 
@@ -475,7 +475,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Map your workflow</b></p>
 <p><a href="../boards/boards/add-columns.md" data-raw-source="[Customize columns to support your team&#39;s workflow](../boards/boards/add-columns.md)">Customize columns to support your team&#39;s workflow</a> and track work from start to finish. </p>
-<img src="_img/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
+<img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
 
 <p><b>Expedite work with swimlanes </b></p>
 <p>Use <a href="../boards/boards/expedite-work.md" data-raw-source="[swimlanes](../boards/boards/expedite-work.md)">swimlanes</a> to track work at different service-level classes. </p>
@@ -484,8 +484,8 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Definition of done</b></p>
 <p>Support your team to be in sync by <a href="../boards/boards/definition-of-done.md" data-raw-source="[specifying requirements to fulfill prior to handoff of items to a downstream work stage](../boards/boards/definition-of-done.md)">specifying requirements to fulfill prior to handoff of items to a downstream work stage</a>.</p><br/>
 <p><b>Filter by field values or parent work items</b></p>
-<p>Choose the <img src="../boards/_img/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md#field-filter" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md#field-filter)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
-<img src="_img/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter"/><br/><br/>
+<p>Choose the <img src="../boards/media/icons/kanban-filter-icon.png" alt="Kanban field filter icon"/> field filter icon to <a href="../boards/boards/filter-kanban-board.md" data-raw-source="[filter the board based on assignment, iteration, work item type, or tags](../boards/boards/filter-kanban-board.md)">filter the board based on assignment, iteration, work item type, or tags</a>. </p>
+<img src="media/features/alm-feature-kanban-filter-fields.png" alt="Kanban board filter"/><br/><br/>
 
 <p><b>Cumulative Flow Diagram </b></p>
 <p>With the CFD, you can <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[monitor the count of work items as they progressively move through various states which you define](../report/dashboards/cumulative-flow.md)">monitor the count of work items as they progressively move through various states which you define</a>.  </p>
@@ -495,11 +495,11 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Customize cards</b></p>
-<p><a href="../boards/boards/customize-cards.md" data-raw-source="[Add fields to cards](../boards/boards/customize-cards.md)">Add fields to cards</a> that you can edit directly on your Kanban and task boards.</p><br/><img src="../boards/boards/_img/kanban-board-card-style-rule-example.png" alt="Customized card with added work item fields and styling rules"/><br/><br/>
+<p><a href="../boards/boards/customize-cards.md" data-raw-source="[Add fields to cards](../boards/boards/customize-cards.md)">Add fields to cards</a> that you can edit directly on your Kanban and task boards.</p><br/><img src="../boards/boards/media/kanban-board-card-style-rule-example.png" alt="Customized card with added work item fields and styling rules"/><br/><br/>
 
 <p><b>Live updates </b></p>
-<p><a href="../boards/boards/kanban-basics.md#live-updates" data-raw-source="[Enable live updates](../boards/boards/kanban-basics.md#live-updates)">Enable live updates</a> to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
-<img src="_img/features/alm-feature-live-updates.png" alt="Live updates"/><br/><br/>
+<p><a href="../boards/boards/kanban-basics.md" data-raw-source="[Enable live updates](../boards/boards/kanban-basics.md)">Enable live updates</a> to automatically refresh your Kanban board when changes are made by others or to the board settings. </p>
+<img src="media/features/alm-feature-live-updates.png" alt="Live updates"/><br/><br/>
 
 
 <p><b>Add inline tests </b></p>
@@ -535,7 +535,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 <p><b>Add another team</b></p>
 <p><a href="../organizations/settings/add-teams.md" data-raw-source="[Add and structure teams](../organizations/settings/add-teams.md)">Add and structure teams</a> and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
-<img src="_img/features/alm-feature-multiple-teams.png" alt="Multiple teams"/><br/><br/>
+<img src="media/features/alm-feature-multiple-teams.png" alt="Multiple teams"/><br/><br/>
 <p><b>Set team defaults</b></p>
 <p>Several Agile tools reference the team&#39;s default area path, iteration path, and activated sprints to automatically filter the set of work items they display. <a href="../organizations/settings/about-teams-and-settings.md" data-raw-source="[Understand how defaults are used](../organizations/settings/about-teams-and-settings.md)">Understand how defaults are used</a>.</p>
 
@@ -561,7 +561,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Portfolio management</b></p>
 <p>Manage a <a href="../boards/plans/portfolio-management.md" data-raw-source="[portfolio of backlogs](../boards/plans/portfolio-management.md)">portfolio of backlogs</a> and gain insight into each team&#39;s progress as well as the progress of all programs.</p>
 
-![Portfolio management](_img/features/alm-feature-portfolio-management.png)
+![Portfolio management](media/features/alm-feature-portfolio-management.png)
 
 <br/>
 
@@ -609,11 +609,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Velocity &amp; forecasting</b></p>
 <p>Use <a href="../report/dashboards/team-velocity.md" data-raw-source="[velocity charts](../report/dashboards/team-velocity.md)">velocity charts</a> and <a href="../boards/sprints/forecast.md" data-raw-source="[forecast](../boards/sprints/forecast.md)">forecast</a> tools  to estimate work that can be completed in future sprints. </p>
-<img src="_img/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/><br/>
+<img src="media/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/><br/>
 
 <p><b>Sprint burndown charts</b></p>
 <p>Monitor progress and review team patterns from <a href="../boards/sprints/sprint-burndown.md" data-raw-source="[sprint burndown charts](../boards/sprints/sprint-burndown.md)">sprint burndown charts</a>.</p>
-<img src="_img/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/>
+<img src="media/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/>
 
 
 </td>
@@ -623,7 +623,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Manage resources</b></p>
 <p>Use <a href="../boards/sprints/set-capacity.md" data-raw-source="[capacity planning tools](../boards/sprints/set-capacity.md)">capacity planning tools</a> to track individual, team, and activity over and under capacity for a sprint.</p>
-<img src="../boards/sprints/_img/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/><br/>
+<img src="../boards/sprints/media/ALM_DS_CapacityBars_S.png" alt="Capacity bars"/><br/>
 
 
 </td>
@@ -647,7 +647,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>What is workflow? </b></p>
 <p>You use workflow to track the progress of work as it moves from new, active, to complete or closed. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.  </p>
-<img src="../boards/work-items/guidance/_img/ALM_PT_Agile_WF_Bug.png" alt="User story workflow"/><br/>
+<img src="../boards/work-items/guidance/media/ALM_PT_Agile_WF_Bug.png" alt="User story workflow"/><br/>
 <br/>
 
 
@@ -663,7 +663,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Kanban workflow</b></p>
 <p>You can fully customize your Kanban board to map the workflow your team uses by <a href="../boards/boards/add-columns.md" data-raw-source="[adding and renaming columns](../boards/boards/add-columns.md)">adding and renaming columns</a></p>
-<img src="_img/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
+<img src="media/features/alm-feature-kanban-flow.png" alt="Add columns to map your workflow"/><br/><br/>
 
 <p><b>Customize the workflow</b></p>
 <p>For Azure DevOps Services: <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.  For TFS: <a href="https://msdn.microsoft.com/library/ms194981.aspx" data-raw-source="[Design your custom workflow](https://msdn.microsoft.com/library/ms194981.aspx)">Design your custom workflow</a> by adding states, transitions, reasons, and optional actions.</p>
@@ -718,35 +718,35 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Personal and team notifications or alerts</b></p>
 <p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting <a href="../notifications/howto-manage-personal-notifications.md" data-raw-source="[personal notifications](../notifications/howto-manage-personal-notifications.md)">personal notifications</a> or <a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[team notifications](../notifications/howto-manage-team-notifications.md)">team notifications</a>.</p>
-<img src="_img/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
+<img src="media/features/features-notifications-option.png" alt="Open Notifications from Organization menu"/><br/><br/>
 
 <p><b>Share queries and sprint plans</b></p>
 <p>Email a query or <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[sprint plan](../boards/sprints/assign-work-sprint.md)">sprint plan</a>.  </p>
-<img src="_img/features/alm-feature-email-control.png" alt="Share queries, backlogs, and sprint plans with the email control"/><br/><br/>
+<img src="media/features/alm-feature-email-control.png" alt="Share queries, backlogs, and sprint plans with the email control"/><br/><br/>
 <p><b>Quick alerts to team members  </b></p>
 <p>Use the <strong><xref href="mention" data-throw-if-not-resolved="False" data-raw-source="@mention"></xref></strong> control to send email to team members to bring them into a discussion around work changes, pull requests, or other items.  </p>
-<img src="_img/features/alm-feature-at-mention-control_305.png" alt="@mentions control sends email to team members with links"/><br/>
+<img src="media/features/alm-feature-at-mention-control_305.png" alt="@mentions control sends email to team members with links"/><br/>
 
 <p><b>Client feature flag updates</b></p>
 <p>Alert flag within the IDE automatically notifies you of the latest client changes.</p>
-<img src="_img/features/alm-feature-notifications-in-vs.png" alt="Visual Studio feature notification flag"/><br/><br/>
+<img src="media/features/alm-feature-notifications-in-vs.png" alt="Visual Studio feature notification flag"/><br/><br/>
 
 
 </td>
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Choose the <img src="../boards/_img/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/_img/icons/following-icon.png" alt="Following icon"/> icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
-<img src="_img/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
+<p>Choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/>/<img src="../boards/media/icons/following-icon.png" alt="Following icon"/> icons to quickly <a href="../boards/work-items/follow-work-items.md" data-raw-source="[start or stop tracking changes made to a work item](../boards/work-items/follow-work-items.md)">start or stop tracking changes made to a work item</a>.  </p>
+<img src="media/features/alm-feature-follows.png" alt="Follow a work item control"/><br/><br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose the <img src="../boards/_img/icons/follow-icon.png" alt="Follow icon"/> option from the context menu. </p>
-<img src="_img/features/features-follow-pull-request.png" alt="Follow a pull request"/><br/><br/>
+<p>To <a href="../boards/work-items/follow-work-items.md" data-raw-source="[track the progress of a single pull request](../boards/work-items/follow-work-items.md)">track the progress of a single pull request</a>, choose the <img src="../boards/media/icons/follow-icon.png" alt="Follow icon"/> option from the context menu. </p>
+<img src="media/features/features-follow-pull-request.png" alt="Follow a pull request"/><br/><br/>
 
 <p><b>Manage work items you follow  </b></p>
 <p>From the <strong>Work&gt;Queries</strong> page you can view the list of work items that you&#39;re following.  </p>
-<img src="_img/features/alm-feature-followed-work-items.png" alt="Followed work items list"/><br/><br/>
+<img src="media/features/alm-feature-followed-work-items.png" alt="Followed work items list"/><br/><br/>
 
 
 <p><b>Frequent on-line feature updates</b></p>
@@ -777,14 +777,14 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Get started with Git in Visual Studio </b></p>
 <p>To get started working with Git, <a href="../repos/git/create-new-repo.md" data-raw-source="[clone a repository, add code, and create branches in Azure DevOps Services](../repos/git/create-new-repo.md)">clone a repository, add code, and create branches in Azure DevOps Services</a> or <a href="../repos/git/gitquickstart.md" data-raw-source="[Visual Studio](../repos/git/gitquickstart.md)">Visual Studio</a>. Learn how to commit, publish, and conduct a pull request of your changes. </p>
-<img src="_img/features/features-git-vs-ui.png" alt="Visual Studio Git UI pages"/><br/><br/>
+<img src="media/features/features-git-vs-ui.png" alt="Visual Studio Git UI pages"/><br/><br/>
 
 <p><b>Clone repositories</b></p>
 <p>To work locally, you <a href="../repos/git/clone.md" data-raw-source="[clone a repository](../repos/git/clone.md)">clone a repository</a>. </p>
 
 <p><b>Commit changes</b></p>
 <p>Enter commit messages and <a href="../repos/git/pushing.md" data-raw-source="[quickly push your local changes to the shared repo](../repos/git/pushing.md)">quickly push your local changes to the shared repo</a>.</p>
-<img src="_img/features/alm-feature-git-dev-commit-push.png" alt="Commit and push changes"/><br/><br/>
+<img src="media/features/alm-feature-git-dev-commit-push.png" alt="Commit and push changes"/><br/><br/>
 
 <p><b>Pull requests</b></p>
 <p>Use <a href="../repos/git/pull-requests.md" data-raw-source="[pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md)">pull requests to review and merge branch code to a master branch</a>.   </p>
@@ -800,7 +800,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Add reviewers to get feedback </b></p>
 <p>Use the <a href="../notifications/at-mentions.md" data-raw-source="[**@mention** control to add reviewers](../notifications/at-mentions.md)"><strong>@mention</strong> control to add reviewers</a> to your pull request to get their feedback about your changes.  </p>
-<img src="_img/features/alm-feature-at-mention-control_305.png" alt="@mentions control sends email to team members with links"/><br/><br/>
+<img src="media/features/alm-feature-at-mention-control_305.png" alt="@mentions control sends email to team members with links"/><br/><br/>
 
 
 <p><b>Resolve Git merge conflicts</b></p>
@@ -808,7 +808,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Code search</b></p>
 <p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
-<img src="_img/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
+<img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 
 <p><b>Get notified about pull requests</b></p>
 <p>Subscribe to email alerts to get notified about <a href="../repos/git/pull-requests.md#notifications" data-raw-source="[new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications)">new pull requests, changes, approvals, and rejections</a>.</p>
@@ -831,7 +831,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Integrate Git development with work tracking  </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
-<img src="_img/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
+<img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
 
 
 <p><b>Quickly link work items to pull requests </b></p>
@@ -876,7 +876,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
 <p><a href="../repos/tfvc/share-your-code-in-tfvc-vs.md" data-raw-source="[Develop and share your code](../repos/tfvc/share-your-code-in-tfvc-vs.md)">Develop and share your code</a>. Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
-<img src="_img/features/features-tfvc-ui-vs.png" alt="Visual Studio Git UI pages"/><br/><br/>
+<img src="media/features/features-tfvc-ui-vs.png" alt="Visual Studio Git UI pages"/><br/><br/>
 
 <p><b>Set up local or server workspaces</b></p>
 <p><a href="https://msdn.microsoft.com/library/ms181384.aspx" data-raw-source="[Create a local workspace](https://msdn.microsoft.com/library/ms181384.aspx)">Create a local workspace</a> that maps to the code base of interest. </p>
@@ -922,7 +922,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Code search</b></p>
 <p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using <a href="../project/search/overview.md" data-raw-source="[filters, preview code, view history, compare versions, and more](../project/search/overview.md)">filters, preview code, view history, compare versions, and more</a> </p>
-<img src="_img/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
+<img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 
 
 
@@ -1038,20 +1038,20 @@ Use features supported by these familiar clients to manage your project and illu
 <p><b>Specify your build steps</b></p>
 <p>Add steps to specify what you <a href="../pipelines/tasks/index.md#build" data-raw-source="[want to build](../pipelines/tasks/index.md#build)">want to build</a>, the <a href="../pipelines/tasks/index.md#test" data-raw-source="[tests to run](../pipelines/tasks/index.md#test)">tests to run</a>, and <a href="../pipelines/tasks/index.md" data-raw-source="[all the other steps](../pipelines/tasks/index.md)">all the other steps</a> needed to complete the process.</p>
 
-pipelines\tasks\build\_img
-<p><img src="../pipelines/tasks/build/_img/android-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)">Build an Android app using Gradle</a></p>
-<p><img src="../pipelines/tasks/build/_img/android-signing.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/android-signing.md" data-raw-source="[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)">Sign and align Android APK files</a></p>
-<p><img src="../pipelines/tasks/build/_img/ant.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/ant.md" data-raw-source="[Build with Apache Ant](../pipelines/tasks/build/ant.md)">Build with Apache Ant</a> </p>
-<p><img src="../pipelines/tasks/build/_img/gradle.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)">Build using a Gradle wrapper script</a>  </p>
-<p><img src="../pipelines/tasks/build/_img/grunt.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/grunt.md" data-raw-source="[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)">Grunt: The JavaScript Task Runner</a> </p>
-<p><img src="../pipelines/tasks/build/_img/gulp.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
-<p><img src="../pipelines/tasks/build/_img/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
-<p><img src="../pipelines/tasks/build/_img/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
-<p><img src="../pipelines/tasks/build/_img/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/_img/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/_img/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/_img/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
-<p><img src="../pipelines/tasks/build/_img/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
+pipelines\tasks\build\media
+<p><img src="../pipelines/tasks/build/media/android-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)">Build an Android app using Gradle</a></p>
+<p><img src="../pipelines/tasks/build/media/android-signing.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/android-signing.md" data-raw-source="[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)">Sign and align Android APK files</a></p>
+<p><img src="../pipelines/tasks/build/media/ant.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/ant.md" data-raw-source="[Build with Apache Ant](../pipelines/tasks/build/ant.md)">Build with Apache Ant</a> </p>
+<p><img src="../pipelines/tasks/build/media/gradle.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gradle.md" data-raw-source="[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)">Build using a Gradle wrapper script</a>  </p>
+<p><img src="../pipelines/tasks/build/media/grunt.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/grunt.md" data-raw-source="[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md)">Grunt: The JavaScript Task Runner</a> </p>
+<p><img src="../pipelines/tasks/build/media/gulp.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/gulp.md" data-raw-source="[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)">Gulp: Node.js task-based build system</a></p>
+<p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
+<p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
+<p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
+<p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
 
 
 <p><b>Build variables</b></p>
@@ -1068,7 +1068,7 @@ pipelines\tasks\build\_img
 
 <p><b>Build summary charts</b></p>
 <p>View real-time build status and <a href="../report/add-widget-to-dashboard.md" data-raw-source="[add build summary charts to your dashboards](../report/add-widget-to-dashboard.md)">add build summary charts to your dashboards</a>.  </p>
-<img src="_img/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/><br/>
+<img src="media/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/><br/>
 
 
 <p><b>Code coverage charts </b></p>
@@ -1102,7 +1102,7 @@ pipelines\tasks\build\_img
 
 <p><b>Automate deployments</b></p>
 <p>Reduce time-to-market and respond to customer feedback with greater agility by <a href="../pipelines/overview.md" data-raw-source="[automating your release process](../pipelines/overview.md)">automating your release process</a>. Deploy applications across platforms to all environments of the pipeline with just one selection.</p>
-<img src="_img/features/alm-feature-release-1.png" alt="Release Manager"/><br/><br />
+<img src="media/features/alm-feature-release-1.png" alt="Release Manager"/><br/><br />
 
 
 <p><b>When to use Azure Pipelines or Build &amp; Release in TFS?</b></p>
@@ -1161,15 +1161,15 @@ pipelines\tasks\build\_img
 
 <p><b>View test results</b></p>
 <p>Open the <strong>Tests</strong> tab to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
-<img src="_img/features/devops-feature-release-view-tests.png" alt="View test results for a release"/>
+<img src="media/features/devops-feature-release-view-tests.png" alt="View test results for a release"/>
 <br />
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
-<p><a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget)">Add a release summary chart</a> to a team dashboard. </p>
+<p><a href="../report/dashboards/widget-catalog.md" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md)">Add a release summary chart</a> to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
 <p><a href="../pipelines/release/index.md" data-raw-source="[Create workflows tailored to your process](../pipelines/release/index.md)">Create workflows tailored to your process</a> by customizing our tasks, or extend with your own custom tasks.</p>
-<img src="_img/features/alm-feature-release-3.png" alt="Customize release definition process"/><br/><br />
+<img src="media/features/alm-feature-release-3.png" alt="Customize release definition process"/><br/><br />
 
 <p><b>Manage permissions</b></p>
 <p>Grant or deny permissions to <a href="../pipelines/policies/permissions.md#release-permissions" data-raw-source="[manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions)">manage release definitions, environments approvers, or release permissions</a>. Set permissions for users, groups, or per release definition. </p>
@@ -1194,7 +1194,7 @@ pipelines\tasks\build\_img
 
 <p><b>Unit testing with Git</b></p>
 <p>Create <a href="/visualstudio/test/create-unit-tests-menu" data-raw-source="[unit tests](/visualstudio/test/create-unit-tests-menu)">unit tests</a> and run them frequently to make sure your code is working properly.</p>
-<img src="_img/features/alm-feature-test-unittests.png" alt="view tests in test explorer"/><br/><br />
+<img src="media/features/alm-feature-test-unittests.png" alt="view tests in test explorer"/><br/><br />
 
 <p><b>Manual test plans and test cases</b></p>
 <p>Get started by <a href="../test/create-test-cases.md" data-raw-source="[creating test plans and test cases](../test/create-test-cases.md)">creating test plans and test cases</a> to track manual testing for sprints or milestones.</p>
@@ -1216,7 +1216,7 @@ pipelines\tasks\build\_img
 
 <p><b>Quickly assign configurations to test plan, test suite, or test case  </b></p>
 <p>From the context menu of a test plan, test suite, or test case, you can assign a configuration.  </p>
-<img src="_img/features/alm-features-test-configuration.png" alt="Assign configuration to test object"/><br/><br/>
+<img src="media/features/alm-features-test-configuration.png" alt="Assign configuration to test object"/><br/><br/>
 
 
 </td>
@@ -1225,7 +1225,7 @@ pipelines\tasks\build\_img
 <p><b>Exploratory testing</b></p>
 <p>Explore user stories without test cases or test steps using <a href="../test/index.yml" data-raw-source="[Azure Test Plans and exploratory testing](../test/index.yml)">Azure Test Plans and exploratory testing</a>.</p>
 
-![Exploratory testing](_img/features/features-exploratory-testing.png)
+![Exploratory testing](media/features/features-exploratory-testing.png)
 
 <br/>
 <p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
@@ -1237,7 +1237,7 @@ pipelines\tasks\build\_img
 
 <p><b>Track test status and test results</b></p>
 <p>Quickly <a href="../test/track-test-status.md" data-raw-source="[view the status](../test/track-test-status.md)">view the status</a> of your testing using lightweight charts.</p>
-<img src="_img/features/features-test-results.png" alt="Test charts"/><br/><br />
+<img src="media/features/features-test-results.png" alt="Test charts"/><br/><br />
 
 
 <p><b>Test environments</b></p>
@@ -1267,22 +1267,22 @@ pipelines\tasks\build\_img
 
 <p><b>Multiple team dashboards</b></p>
 <p>Each team can create several <a href="../report/dashboards/dashboards.md" data-raw-source="[team dashboards](../report/dashboards/dashboards.md)">team dashboards</a> to help keep both the team and Stakeholders in sync. Each dashboard tile provides quick access to the progress of builds, status of work items, or latest code changes. </p>
-<img src="_img/features/alm-feature-add-a-dashboard.png" alt="Add a dashboard control"/><br/> <br/>
+<img src="media/features/alm-feature-add-a-dashboard.png" alt="Add a dashboard control"/><br/> <br/>
 
 
 <p><b>Build history charts</b></p>
 <p><a href="../report/dashboards/add-charts-to-dashboard.md#build-history" data-raw-source="[Add build history charts to your dashboards](../report/dashboards/add-charts-to-dashboard.md#build-history)">Add build history charts to your dashboards</a>.  </p>
-<img src="_img/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/> <br/>
+<img src="media/features/alm-feature-build-summary-widget.png" alt="build summary chart"/><br/> <br/>
 
 
 
 <p><b>Test charts</b></p>
 <p>Track the status of your <a href="../test/track-test-status.md" data-raw-source="[test progress and test runs](../test/track-test-status.md)">test progress and test runs</a>. Optionally add these charts to a dashboard.  </p>
-<img src="_img/features/alm-feature-test-chart.png" alt="Test run chart"/><br/> <br/>
+<img src="media/features/alm-feature-test-chart.png" alt="Test run chart"/><br/> <br/>
 
 <p><b>Test quality trend charts</b></p>
-<p>Add <a href="../report/dashboards/add-charts-to-dashboard.md#test-quality" data-raw-source="[failure and duration charts for tests run as part of your build](../report/dashboards/add-charts-to-dashboard.md#test-quality)">failure and duration charts for tests run as part of your build</a> to your team dashboard. </p>
-<img src="_img/features/alm-dashboards-test-quality-failure-duration-charts.png" alt="Test quality failure and duration charts"/><br/> <br/>
+<p>Add <a href="../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[failure and duration charts for tests run as part of your build](../report/dashboards/add-charts-to-dashboard.md)">failure and duration charts for tests run as part of your build</a> to your team dashboard. </p>
+<img src="media/features/alm-dashboards-test-quality-failure-duration-charts.png" alt="Test quality failure and duration charts"/><br/> <br/>
 
 </td>
 <td width="33%">
@@ -1293,7 +1293,7 @@ pipelines\tasks\build\_img
 
 <p><b>Capacity planning and tracking</b></p>
 <p>Easily track how much work your team has completed and has left to do in a sprint by adding the <a href="../report/dashboards/widget-catalog.md#sprint-capacity-widget" data-raw-source="[sprint capacity chart widget](../report/dashboards/widget-catalog.md#sprint-capacity-widget)">sprint capacity chart widget</a> to your dashboard.  </p>
-<img src="_img/features/alm-feature-capacity-widget.png" alt="Sprint capacity chart"/><br/><br/>
+<img src="media/features/alm-feature-capacity-widget.png" alt="Sprint capacity chart"/><br/><br/>
 
 
 <p><b>Share dashboards with Stakeholders</b></p>
@@ -1301,21 +1301,21 @@ pipelines\tasks\build\_img
 
 <p><b>Velocity charts</b></p>
 <p><a href="../report/dashboards/team-velocity.md" data-raw-source="[Team velocity](../report/dashboards/team-velocity.md)">Team velocity</a> tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
-<img src="_img/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/>
+<img src="media/features/alm-feature-team-velocity-chart.png" alt="Team velocity chart"/><br/>
 <br/>
 
 <p><b>Sprint burndown charts</b></p>
 <p>Monitor progress and review team patterns from <a href="../boards/sprints/sprint-burndown.md" data-raw-source="[sprint burndown charts](../boards/sprints/sprint-burndown.md)">sprint burndown charts</a></p>
-<img src="_img/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/><br/>
+<img src="media/features/alm-index-sprint-burndown-widget.png" alt="Sprint burndown chart"/><br/><br/>
 
 <p><b>Add release summary to dashboard (Azure DevOps Services) </b></p>
-<p><a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget)">Add a release summary chart</a> to a team dashboard. </p>
+<p><a href="../report/dashboards/widget-catalog.md" data-raw-source="[Add a release summary chart](../report/dashboards/widget-catalog.md)">Add a release summary chart</a> to a team dashboard. </p>
 
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
 <p>Add, remove, move, and configure widgets by <a href="../report/dashboards/dashboards.md" data-raw-source="[choosing the Edit dashboard icon](../report/dashboards/dashboards.md)">choosing the Edit dashboard icon</a>. Choose the checkmark icon to exit.  </p>
-<img src="../report/dashboards/_img/edit-dashboard-icon.png" alt="Edit dashboard icon"/> | <img src="../report/dashboards/_img/exit-edit-dashboard-mode-icon.png" alt="Exit dashboard edit mode icon"/><br/><br/>
+<img src="../report/dashboards/media/edit-dashboard-icon.png" alt="Edit dashboard icon"/> | <img src="../report/dashboards/media/exit-edit-dashboard-mode-icon.png" alt="Exit dashboard edit mode icon"/><br/><br/>
 
 <p><b>Auto-refresh dashboards </b></p>
 <p>You can <a href="../report/dashboards/dashboards.md#manage" data-raw-source="[enable auto-refresh for any team dashboard](../report/dashboards/dashboards.md#manage)">enable auto-refresh for any team dashboard</a>, and it automatically updates every five minutes. This is a useful feature for when your dashboard serves as a team wallboard.   </p>
@@ -1323,7 +1323,7 @@ pipelines\tasks\build\_img
 
 <p><b>Widget catalog</b></p>
 <p>Add <a href="../report/dashboards/widget-catalog.md" data-raw-source="[widgets](../report/dashboards/widget-catalog.md)">widgets</a> to your dashboard to provide  information and monitor the data your team needs.</p>
-<img src="../report/dashboards/_img/add-widget-icon.png" alt="add a widget icon"/><br/><br/>
+<img src="../report/dashboards/media/add-widget-icon.png" alt="add a widget icon"/><br/><br/>
 
 <p><b>Work item query charts</b></p>
 <p>View the status of work in progress by <a href="../report/dashboards/charts.md" data-raw-source="[charting the results of a flat-list query](../report/dashboards/charts.md)">charting the results of a flat-list query</a>. You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query. Optionally add these charts to a dashboard.</p>
@@ -1472,14 +1472,14 @@ pipelines\tasks\build\_img
 
 <p><b>Markdown widget</b></p>
 <p>Adds a configurable tile to your dashboard to <a href="../report/dashboards/widget-catalog.md#markdown-widget" data-raw-source="[display any type of information, guidance, or links](../report/dashboards/widget-catalog.md#markdown-widget)">display any type of information, guidance, or links</a> that you want using markdown syntax.   </p>
-<img src="_img/features/alm-feature-markdown-widget.png" alt="Markdown widget"/><br/><br/>
+<img src="media/features/alm-feature-markdown-widget.png" alt="Markdown widget"/><br/><br/>
 
 
 <p><b>Team member </b></p>
 <p>Opens the team&#39;s quick dialog to <a href="../report/dashboards/widget-catalog.md#team-members-widget" data-raw-source="[add or remove team members](../report/dashboards/widget-catalog.md#team-members-widget)">add or remove team members</a>.</p>
-<img src="_img/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
+<img src="media/features/alm-feature-manage-members-widget.png" alt="Team member widget"/><br/>
 <p><b>Team rooms </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md#team-room-widget" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md#team-room-widget)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
+<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[status and access to a team room](../report/dashboards/widget-catalog.md)">status and access to a team room</a>, an archived space to discuss work in progress, ask questions, share status, and clarify issues that arise.  </p>
 
 <p><b>Visual Studio widget</b></p>
 <p><a href="../report/dashboards/widget-catalog.md#visual-studio-widget" data-raw-source="[Provides links to open or download Visual Studio](../report/dashboards/widget-catalog.md#visual-studio-widget)">Provides links to open or download Visual Studio</a>. The Visual Studio IDE client comes with the Team Explorer plug-in which provides quick access to several features (some of which aren&#39;t available through the web portal). </p>
@@ -1487,7 +1487,7 @@ pipelines\tasks\build\_img
 
 <p><b>Welcome widget</b></p>
 <p>Provides quick access to <a href="../report/dashboards/widget-catalog.md#how-to-widget" data-raw-source="[getting started info on how to track work, code, build, and test](../report/dashboards/widget-catalog.md#how-to-widget)">getting started info on how to track work, code, build, and test</a>. </p>
-<img src="../report/dashboards/_img/widget-how-to.png" alt="How to links widget"/><br/><br/>
+<img src="../report/dashboards/media/widget-how-to.png" alt="How to links widget"/><br/><br/>
 
 <h4><i>Code widgets</i></h4>
 
@@ -1497,7 +1497,7 @@ pipelines\tasks\build\_img
 
 <p><b>Pull request </b></p>
 <p>Adds a configurable tile to display <a href="../report/dashboards/widget-catalog.md#pull-request-widget" data-raw-source="[active pull requests requested by the team, or assigned to or requested by the person logged in](../report/dashboards/widget-catalog.md#pull-request-widget)">active pull requests requested by the team, or assigned to or requested by the person logged in</a>. You select the Git repository for the pull requests of interest.  </p>
-<img src="_img/features/feature-widget-pull-request.png" alt="Pull request widget"/>
+<img src="media/features/feature-widget-pull-request.png" alt="Pull request widget"/>
 
 
 </td>
@@ -1508,31 +1508,31 @@ pipelines\tasks\build\_img
 
 
 <p><b>Assigned to me widget  </b></p>
-<p>Provides quick access to <a href="../report/dashboards/widget-catalog.md#assigned-to-me-widget" data-raw-source="[work items assigned to the logged in user](../report/dashboards/widget-catalog.md#assigned-to-me-widget)">work items assigned to the logged in user</a>. </p>
+<p>Provides quick access to <a href="../report/dashboards/widget-catalog.md" data-raw-source="[work items assigned to the logged in user](../report/dashboards/widget-catalog.md)">work items assigned to the logged in user</a>. </p>
 
 
 <p><b>Chart for work items</b></p>
 <p>Adds a configurable tile to display the <a href="../report/dashboards/widget-catalog.md#chart-wit-widget" data-raw-source="[chart for a shared query](../report/dashboards/widget-catalog.md#chart-wit-widget)">chart for a shared query</a>.  </p>
-<img src="_img/features/alm-feature-chart-work.png" alt="Chart work widget"/><br/><br/>
+<img src="media/features/alm-feature-chart-work.png" alt="Chart work widget"/><br/><br/>
 
 <p><b>New work item </b></p>
 <p><a href="../report/dashboards/widget-catalog.md#new-work-item-widget" data-raw-source="[Add work items](../report/dashboards/widget-catalog.md#new-work-item-widget)">Add work items</a> pre-scoped to your team&#39;s default area and iteration paths.</p>
-<img src="_img/features/alm-feature-new-work-item-widget.png" alt="Add new work item widget"/><br/><br/>
+<img src="media/features/alm-feature-new-work-item-widget.png" alt="Add new work item widget"/><br/><br/>
 
 
 <p><b>Other links widget</b></p>
 <p>Provides quick access links from a team dashboard to <a href="../report/dashboards/widget-catalog.md#other-links-widget" data-raw-source="[request feedback, define sprints, and modify your team&#39;s area paths](../report/dashboards/widget-catalog.md#other-links-widget)">request feedback, define sprints, and modify your team&#39;s area paths</a>.</p>
-<img src="_img/features/alm-feature-widget-other-links.png" alt="Request feedback"/><br/><br/>
+<img src="media/features/alm-feature-widget-other-links.png" alt="Request feedback"/><br/><br/>
 
 <p><b>Query tile </b></p>
 <p>Configurable tile to display the <a href="../report/dashboards/widget-catalog.md#query-tile-widget" data-raw-source="[results and link to a shared query](../report/dashboards/widget-catalog.md#query-tile-widget)">results and link to a shared query</a>. </p>
-<img src="_img/features/alm-feature-widget-query-tile.png" alt="Query tile widget"/><br/><br/>
+<img src="media/features/alm-feature-widget-query-tile.png" alt="Query tile widget"/><br/><br/>
 
 <p><b>Query results </b></p>
 <p>Adds a configurable <a href="../report/dashboards/widget-catalog.md#query-results-widget" data-raw-source="[query results list](../report/dashboards/widget-catalog.md#query-results-widget)">query results list</a> to a team dashboard. </p>
 
 <p><b>Requirements quality </b></p>
-<p>Displays a configurable widget that you can use to <a href="../report/dashboards/widget-catalog.md#requirements-quality-widget" data-raw-source="[track quality continuously from a build or release definition](../report/dashboards/widget-catalog.md#requirements-quality-widget)">track quality continuously from a build or release definition</a>.</p>
+<p>Displays a configurable widget that you can use to <a href="../report/dashboards/widget-catalog.md" data-raw-source="[track quality continuously from a build or release definition](../report/dashboards/widget-catalog.md)">track quality continuously from a build or release definition</a>.</p>
 
 </td>
 <td width="33%">
@@ -1552,7 +1552,7 @@ pipelines\tasks\build\_img
 
 <p><b>Sprint capacity </b></p>
 <p>Adds <a href="../report/dashboards/widget-catalog.md#sprint-capacity-widget" data-raw-source="[a chart for tracking remaining capacity](../report/dashboards/widget-catalog.md#sprint-capacity-widget)">a chart for tracking remaining capacity</a> when tracking a team&#39;s Scrum progress for the current sprint. </p>
-<img src="_img/features/alm-feature-capacity-widget.png" alt="Sprint capacity chart"/><br/><br/>
+<img src="media/features/alm-feature-capacity-widget.png" alt="Sprint capacity chart"/><br/><br/>
 
 <p><b>Sprint overview </b></p>
 <p>Displays a visual overview of the <a href="../report/dashboards/widget-catalog.md#sprint-overview-widget" data-raw-source="[current sprint progress](../report/dashboards/widget-catalog.md#sprint-overview-widget)">current sprint progress</a> for tracking a team&#39;s Scrum progress for the current sprint, indicating the number of backlog items in progress, completed, or not started.</p>
@@ -1568,15 +1568,15 @@ pipelines\tasks\build\_img
  </p>
 
 <p><b>Deployment status (Azure DevOps Services)</b></p>
-<p>Configurable tile that shows you a consolidated view of the <a href="../report/dashboards/widget-catalog.md#deployment-status-widget" data-raw-source="[deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md#deployment-status-widget)">deployment status and test pass rate across multiple environments for a recent set of builds</a>.<br/> </p>
+<p>Configurable tile that shows you a consolidated view of the <a href="../report/dashboards/widget-catalog.md" data-raw-source="[deployment status and test pass rate across multiple environments for a recent set of builds](../report/dashboards/widget-catalog.md)">deployment status and test pass rate across multiple environments for a recent set of builds</a>.<br/> </p>
 
 <p><b>Release definition overview</b></p>
-<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md#release-definition-widget" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md#release-definition-widget)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
+<p>Configurable tile to view and track the status of a release definition. The widget <a href="../report/dashboards/widget-catalog.md" data-raw-source="[shows the release as a series of environments, with the name of the release and the date or time it was started](../report/dashboards/widget-catalog.md)">shows the release as a series of environments, with the name of the release and the date or time it was started</a>.
  </p>
 
 <p><b>Test trend results </b></p>
-<p>Provides <a href="../report/dashboards/widget-catalog.md#test-results-widget" data-raw-source="[trend of test results](../report/dashboards/widget-catalog.md#test-results-widget)">trend of test results</a>, such as passed or failed tests, for a selected build definition.</p>
-<img src="../report/dashboards/_img/widgets-test-trend-results.png" alt="Test results trend widget"/>
+<p>Provides <a href="../report/dashboards/widget-catalog.md" data-raw-source="[trend of test results](../report/dashboards/widget-catalog.md)">trend of test results</a>, such as passed or failed tests, for a selected build definition.</p>
+<img src="../report/dashboards/media/widgets-test-trend-results.png" alt="Test results trend widget"/>
 <br/>
 
 
@@ -1615,7 +1615,7 @@ pipelines\tasks\build\_img
 <p><b>What is the Marketplace?</b></p>
 <p>From the <a href="https://marketplace.visualstudio.com/" data-raw-source="[Marketplace](https://marketplace.visualstudio.com/)">Marketplace</a>, you can extend the functionality available to you by installing free extensions or purchasing a subscription or paid extension. Extensions support adding new capabilities to Visual Studio, Visual Studio Code, Azure DevOps Services, or TFS.  </p>
 
-![Featured extensions for Azure DevOps Services](_img/features/featured-extensions.png)
+![Featured extensions for Azure DevOps Services](media/features/featured-extensions.png)
 
 </td>
 <td width="45%">
@@ -1719,7 +1719,7 @@ using <a href="../service-hooks/overview.md" data-raw-source="[service hooks](..
 
 <td width="33%">
 
-![service hooks](_img/features/alm-feature-service-hooks.png)
+![service hooks](media/features/alm-feature-service-hooks.png)
 
 </td>
 <td width="33%">
@@ -1745,7 +1745,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Web portal preferences </b></p>
 <p><p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a> and set your web portal preferences which include language (currently only English is supported for Azure DevOps), date and time pattern, and time zone.</p>
-<img src="_img/features/features-global-profile.png" alt="Profile drop down menu"/><br/><br/>
+<img src="media/features/features-global-profile.png" alt="Profile drop down menu"/><br/><br/>
 
 
 <p><b>Language Interface Packs (LIPs)</b></p>
@@ -1847,7 +1847,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Dashboard</b></p>
 <p>Get the full picture with <a href="/azure/application-insights/app-insights-overview" data-raw-source="[customizable dashboards that track application health alongside usage metrics and app crashes](/azure/application-insights/app-insights-overview)">customizable dashboards that track application health alongside usage metrics and app crashes</a>. Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
-<img src="_img/features/features-app-insights-dashboard-blades.png" alt="Application insight dashboard blades"/><br/><br/>
+<img src="media/features/features-app-insights-dashboard-blades.png" alt="Application insight dashboard blades"/><br/><br/>
 
 
 
@@ -1909,7 +1909,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Comprehensive dashboard </b></p>
 <p>Manage all your apps, users, and devices from a single dashboard. Monitor crashes and feedback as well. As an admin, you&#39;ll have full control over which user can see and install which app. </p>
 
-![Hockeyapp dashboard](_img/features/features-hockeyapp-dashboard.png)
+![Hockeyapp dashboard](media/features/features-hockeyapp-dashboard.png)
 
 <br/>
 
@@ -1958,23 +1958,23 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Operational hubs</b></p>
 <p>Each hub&mdash;<a href="../project/navigation/index.md" data-raw-source="[Home, Code, Work, build, and Test](../project/navigation/index.md)">Home, Code, Work, build, and Test</a>&mdash;supports specialized functions to share information, view and create dashboards, collaborate on code, plan and track work, build and test your applications, plus much, much more.</p>
-<img src="_img/features/alm-feature-op-hubs-2.png" alt="Operational hubs"/><br/><br/>
+<img src="media/features/alm-feature-op-hubs-2.png" alt="Operational hubs"/><br/><br/>
 
 <p><b>Project page </b></p>
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
 
 <p><b>Your profile and preferences</b></p>
 <p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[set alerts](../boards/queries/alerts-and-notifications.md)">set alerts</a>, and log-in or out.</p>
-<img src="_img/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
+<img src="media/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
 
 <p><b>Switch team context</b></p>
 <p>Navigate to a different team or project from the top row.</p>
-<img src="_img/features/alm-feature-switch-team-context.png" alt="Switch team context"/><br/><br/>
+<img src="media/features/alm-feature-switch-team-context.png" alt="Switch team context"/><br/><br/>
 
 
 <p><b>Change team settings</b></p>
 <p>Customize features to meet your team needs by <a href="../organizations/settings/manage-teams.md" data-raw-source="[configuring your team assets](../organizations/settings/manage-teams.md)">configuring your team assets</a>.</p>
-<img src="_img/features/alm-feature-team-settings-gear-icon.png" alt="Switch team context"/><br/><br/>
+<img src="media/features/alm-feature-team-settings-gear-icon.png" alt="Switch team context"/><br/><br/>
 
 
 <p><b>Keyboard shortcuts</b></p>
@@ -2009,10 +2009,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Code search</b></p>
 <p><a href="../project/search/overview.md" data-raw-source="[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md)">Search within your code branches (TFVC) and repositories (Git)</a> to find files, commits, and more using powerful filters to obtain rich results. </p>
-<img src="_img/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
+<img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/><br/>
 <p><b>Find work items</b></p>
 <p>When in the Work hub, <a href="../boards/queries/using-queries.md" data-raw-source="[enter IDs or keywords to start a query](../boards/queries/using-queries.md)">enter IDs or keywords to start a query</a> to find  work items that you want to review, triage, or update.</p>
-<img src="_img/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
+<img src="media/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
 
 
 
@@ -2022,7 +2022,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The <a href="../organizations/projects/about-projects.md" data-raw-source="[collection-project-team structure](../organizations/projects/about-projects.md)">collection-project-team structure</a> provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-<img src="_img/web-portal-organization-project-team-concept.png" alt="Single collection-project-team conceptual image"/>
+<img src="media/web-portal-organization-project-team-concept.png" alt="Single collection-project-team conceptual image"/>
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2031,17 +2031,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team favorites</b></p>
 <p>From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. </p>
-<img src="_img/features/alm-index-team-favorites.png" alt="Drag items to team favorites"/><br/><br/>
+<img src="media/features/alm-index-team-favorites.png" alt="Drag items to team favorites"/><br/><br/>
 
 
 
 <p><b>Project admin context</b></p>
-<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)">manage permissions</a>. From any project hub, choose the <img src="../boards/_img/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context.</p>
-<img src="_img/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
+<p>Open the admin context to <a href="../organizations/settings/add-teams.md" data-raw-source="[add teams](../organizations/settings/add-teams.md)">add teams</a> and <a href="../organizations/security/change-individual-permissions.md" data-raw-source="[manage permissions](../organizations/security/change-individual-permissions.md)">manage permissions</a>. From any project hub, choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context.</p>
+<img src="media/features/alm-feature-admin-context.png" alt="Admin context"/><br/><br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose the <img src="../boards/_img/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context, and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can <a href="../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md)">manage collection-level permissions</a>, and set build policies, and <a href="../extend/overview.md" data-raw-source="[manage extensions](../extend/overview.md)">manage extensions</a>. Choose the <img src="../boards/media/icons/gear_icon.png" alt="gear icon"/> gear icon to open the admin context, and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2062,12 +2062,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Quick work item search</b></p>
 <p>Find work items based on <a href="https://msdn.microsoft.com/library/cc668120.aspx" data-raw-source="[ID, assignment, changed date, or keyword](https://msdn.microsoft.com/library/cc668120.aspx)">ID, assignment, changed date, or keyword</a>. </p>
-<img src="_img/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
+<img src="media/features/alm-index-search-work-items-vsts.png" alt="Search work item box"/><br/><br/>
 
 
 <p><b>Code search</b></p>
 <p><a href="../project/search/overview.md" data-raw-source="[Find code based on keywords and semantic search filters](../project/search/overview.md)">Find code based on keywords and semantic search filters</a> across your Git repositories.</p>
-<img src="_img/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
+<img src="media/features/features-index-code-search-vsts.png" alt="Search code box"/><br/>
 <p><b>CodeLens search</b></p>
 <p><a href="https://msdn.microsoft.com/library/dn269218.aspx" data-raw-source="[Find references and changes to your code, linked bugs, work items, code reviews, and unit tests](https://msdn.microsoft.com/library/dn269218.aspx)">Find references and changes to your code, linked bugs, work items, code reviews, and unit tests</a>.</p>
 
@@ -2089,12 +2089,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Charts</b></p>
 <p><a href="../report/dashboards/charts.md" data-raw-source="[Turn your queries into a status or trend chart](../report/dashboards/charts.md)">Turn your queries into a status or trend chart</a> and share them with your team, organization, and Stakeholders.</p>
-<img src="_img/features/alm-feature-test-chart.png" alt="Create status and trend charts from flat list queries"/><br/><br/>
+<img src="media/features/alm-feature-test-chart.png" alt="Create status and trend charts from flat list queries"/><br/><br/>
 
 
 <p><b>Tags</b></p>
 <p><a href="../boards/queries/add-tags-to-work-items.md" data-raw-source="[Add tags to work items](../boards/queries/add-tags-to-work-items.md)">Add tags to work items</a> to filter backlogs and queries. Bulk update work items to add or remove tags: <a href="../boards/backlogs/bulk-modify-work-items.md#tags" data-raw-source="[Azure DevOps Services](../boards/backlogs/bulk-modify-work-items.md#tags)">Azure DevOps Services</a> | <a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[TFS](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">TFS</a>. </p>
-<img src="_img/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
+<img src="media/features/alm-feature-tags.png" alt="Add tags to filter backlogs, boards, and queries"/><br/><br/>
 
 &lt;p
 </td>
@@ -2148,7 +2148,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Permission states</b></p>
 <p>Understand how <a href="../organizations/security/about-permissions.md" data-raw-source="[Allow, Deny, Not set and other permissions states](../organizations/security/about-permissions.md)">Allow, Deny, Not set and other permissions states</a> control access to features and objects. </p>
-<img src="_img/features/alm-feature-permission-states.png" alt="permission states"/><br/><br/>
+<img src="media/features/alm-feature-permission-states.png" alt="permission states"/><br/><br/>
 
 <p><b>Manage work access (Azure DevOps Services)</b></p>
 <p><a href="../organizations/accounts/manage-azure-active-directory-groups.md" data-raw-source="[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups.md)">Control user access with a directory</a> to enforce policies about accessing company resources.  </p>
@@ -2219,10 +2219,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to <a href="../boards/queries/set-query-permissions.md" data-raw-source="[create shared queries and query folders](../boards/queries/set-query-permissions.md)">create shared queries and query folders</a>.</p>
-<img src="_img/features/features-query-permissions.png" alt="Query permissions"/><br/><br/>
+<img src="media/features/features-query-permissions.png" alt="Query permissions"/><br/><br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md#process-permissions" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)">granted explicit permissions to edit a specific process</a>.  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be <a href="../organizations/security/set-permissions-access-work-tracking.md" data-raw-source="[granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md)">granted explicit permissions to edit a specific process</a>.  </p>
 
 <p><b>Valid users</b></p>
 <p>Understand how <a href="../organizations/security/about-permissions.md#validusers" data-raw-source="[valid user groups are populated and the permissions they&#39;re granted](../organizations/security/about-permissions.md#validusers)">valid user groups are populated and the permissions they&#39;re granted</a>.</p>
@@ -2325,7 +2325,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Agile process </b></p>
 <p>Choose <a href="../boards/work-items/guidance/agile-process.md" data-raw-source="[Agile](../boards/work-items/guidance/agile-process.md)">Agile</a> when your team uses Agile planning methods, including Scrum, and tracks development and test activities separately. With Agile, you can track user stories and bugs on the Kanban board, or track bugs and tasks on the task board.</p>
-<img src="_img/features/features-agile-wits.png" alt="Agile process work item types"/><br/><br/>
+<img src="media/features/features-agile-wits.png" alt="Agile process work item types"/><br/><br/>
 
 <p><b>Customize a process (Azure DevOps Services) </b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your project as follows:</p>
@@ -2352,7 +2352,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Scrum process</b></p>
 <p>Choose <a href="../boards/work-items/guidance/scrum-process.md" data-raw-source="[Scrum](../boards/work-items/guidance/scrum-process.md)">Scrum</a> when your team practices Scrum and you want to track product backlog items (PBIs) and bugs on the Kanban board, or break PBIs and bugs down into tasks on the task board. </p>
-<img src="_img/features/features-scrum-wits.png" alt="Scrum process work item types"/><br/><br/>
+<img src="media/features/features-scrum-wits.png" alt="Scrum process work item types"/><br/><br/>
 
 <p><b>Scrum work items and workflow process guidance</b></p>
 <p>Plan and track your work using the <a href="../boards/work-items/guidance/scrum-process-workflow.md" data-raw-source="[work item types and workflow supported by the Scrum process](../boards/work-items/guidance/scrum-process-workflow.md)">work item types and workflow supported by the Scrum process</a>.  </p>
@@ -2375,7 +2375,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>CMMI process</b></p>
 <p>Choose <a href="../boards/work-items/guidance/cmmi-process.md" data-raw-source="[CMMI](../boards/work-items/guidance/cmmi-process.md)">CMMI</a> when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
-<img src="_img/features/features-cmmi-wits.png" alt="CMMI work item types"/><br/><br/>
+<img src="media/features/features-cmmi-wits.png" alt="CMMI work item types"/><br/><br/>
 
 
 <p><b>CMMI work items and workflow process guidance</b></p>
@@ -2466,7 +2466,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The <a href="../organizations/projects/about-projects.md" data-raw-source="[collection-project-team structure](../organizations/projects/about-projects.md)">collection-project-team structure</a> provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-<img src="_img/web-portal-organization-project-team-concept.png" alt="Single collection-project-team conceptual image"/>
+<img src="media/web-portal-organization-project-team-concept.png" alt="Single collection-project-team conceptual image"/>
 <br/>
 
 <p><b>Change the process (Azure DevOps Services) </b></p>
@@ -2511,7 +2511,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Add team members</b></p>
 <p>Add organizations-<a href="../organizations/accounts/add-team-members.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-team-members.md)">Azure DevOps Services</a> | <a href="../organizations/security/add-users-team-project.md" data-raw-source="[TFS](../organizations/security/add-users-team-project.md)">TFS</a>--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
-<img src="_img/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
+<img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 
 <p><b>Add a team</b></p>
@@ -2529,7 +2529,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Team dashboards</b></p>
 <p>Share progress, status, and guidance with your team using <a href="../report/dashboards/dashboards.md" data-raw-source="[configurable team dashboards](../report/dashboards/dashboards.md)">configurable team dashboards</a>.  </p>
-<img src="_img/features/alm-feature-add-a-dashboard-2.png" alt="Team dashboards"/><br/><br/>
+<img src="media/features/alm-feature-add-a-dashboard-2.png" alt="Team dashboards"/><br/><br/>
 
 <p><b>Team welcome page</b></p>
 <p>Provide in-project guidance through the <a href="../project/wiki/markdown-guidance.md" data-raw-source="[Welcome page and other pages you format using Markdown](../project/wiki/markdown-guidance.md)">Welcome page and other pages you format using Markdown</a>.  </p>
@@ -2545,7 +2545,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Select team sprints</b></p>
 <p><a href="../boards/sprints/define-sprints.md" data-raw-source="[Select your team&#39;s sprints](../boards/sprints/define-sprints.md)">Select your team&#39;s sprints</a> to gain access to sprint backlogs and task boards.</p>
-<img src="_img/features/features-team-sprints-2.png" alt="Set start and end dates for a sprint"/><br/><br/>
+<img src="media/features/features-team-sprints-2.png" alt="Set start and end dates for a sprint"/><br/><br/>
 </td>
 <td width="33%">
 
@@ -2591,15 +2591,15 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Manage risks and dependencies</b></p>
 <p>Link work items to <a href="../boards/queries/link-work-items-support-traceability.md" data-raw-source="[track related work, dependencies, and changes made over time](../boards/queries/link-work-items-support-traceability.md)">track related work, dependencies, and changes made over time</a>. <a href="../boards/queries/using-queries.md" data-raw-source="[Create queries](../boards/queries/using-queries.md)">Create queries</a> based on link type to monitor dependencies.</p>
-<img src="_img/features/features-wit-link-tab.png" alt="Links control"/><br/><br/>
+<img src="media/features/features-wit-link-tab.png" alt="Links control"/><br/><br/>
 
 
 <p><b>Rich text comments</b></p>
 <p>Describe and comment on work to perform using <a href="../boards/backlogs/add-work-items.md" data-raw-source="[formatted text, hyperlinks, and inline images](../boards/backlogs/add-work-items.md)">formatted text, hyperlinks, and inline images</a>.  </p>
 
 <p><b>Discussion (Azure DevOps Services) </b></p>
-<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/_img/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
-<img src="_img/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
+<p><a href="../boards/backlogs/add-work-items.md" data-raw-source="[Add or review comments](../boards/backlogs/add-work-items.md)">Add or review comments</a> added to a work item. Start by choosing the <img src="../boards/backlogs/media/icon-discussions-wi.png" alt="Discussions icon"/> discussion icon.  </p>
+<img src="media/features/alm-feature-add-work-items-discussion.png" alt="Discussion section"/><br/><br/>
 
 
 <p><b>Storyboard</b></p>
@@ -2614,7 +2614,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Integrate Git development with work tracking (Azure DevOps Services) </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the <a href="../boards/backlogs/connect-work-items-to-git-dev-ops.md" data-raw-source="[Git Development section](../boards/backlogs/connect-work-items-to-git-dev-ops.md)">Git Development section</a>. Add branches, create pull requests, and view all development performed to support the specific work item.  </p>
-<img src="_img/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
+<img src="media/features/alm-feature-git-dev-section.png" alt="Work item form Development section"/><br/><br/>
 <p><b>TFVC code changes </b></p>
 <p><a href="https://msdn.microsoft.com/library/ms245475.aspx" data-raw-source="[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx)">Get detailed information about what changes have been made to your files</a>, compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 

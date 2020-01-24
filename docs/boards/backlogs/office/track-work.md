@@ -16,7 +16,7 @@ ms.date: 10/30/2019
 
 # Azure Boards and Office integration 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -81,11 +81,11 @@ You can start work from Excel, Project, or Team Explorer. Your worksheet or proj
   
 To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).  
 
-![Open Query Results in Excel](_img/excelseq_1.png "ExcelSeq_1")  
+![Open Query Results in Excel](media/excelseq_1.png "ExcelSeq_1")  
   
 To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
 
-![Exporting Work Items to Project](_img/officeprojseq_1.png "OfficeProjSeq_1")
+![Exporting Work Items to Project](media/officeprojseq_1.png "OfficeProjSeq_1")
 
 
  When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
@@ -161,18 +161,18 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
-    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+    ![Create a list connection between Excel and the data store](media/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
 4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
 
-    ![Connect to server](_img/IC680074.png)
+    ![Connect to server](media/IC680074.png)
 
     If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
 
-    ![Add organization or server](_img/IC658167.png)
+    ![Add organization or server](media/IC658167.png)
 
 5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
 

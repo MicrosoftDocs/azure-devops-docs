@@ -16,9 +16,9 @@ ms.date: 08/04/2016
 
 The HostNavigationService provides APIs for interacting with the parent host frame, including refreshing it and accessing the hash of the URL:
 
-![example](./_img/hash-browser.png)
+![example](./media/hash-browser.png)
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ### Get the current hash value
 

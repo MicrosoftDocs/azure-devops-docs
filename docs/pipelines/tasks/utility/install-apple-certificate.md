@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Install Apple Certificate task
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install an Apple certificate that is required to build on a macOS agent.
 You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server.
@@ -28,7 +28,7 @@ xcode
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/InstallAppleCertificateV2.md)]
+[!INCLUDE [temp](../includes/yaml/InstallAppleCertificateV2.md)]
 
 ::: moniker-end
 

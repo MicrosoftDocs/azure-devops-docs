@@ -16,20 +16,20 @@ ms.date: 08/07/2019
 
 # Cumulative Flow Diagram (CFD)  sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to display the Stories CFD for a specified team. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](_img/odatapowerbi-cfd-report.png)
+> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -50,7 +50,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/WorkItemBoardSnapshot?
@@ -68,7 +68,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * {teamname} - The name of the team to display the CFD for
 * {startdate} - The date to start the CFD chart from. Format: YYYY-MM-DDZ. Example: 2019-04-01Z represents 2019-April-01. Do not enclose in quotes.
 
@@ -95,9 +95,9 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -108,7 +108,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample -Release Burndown - Fields](_img/odatapowerbi-cfd-fields.png)
+> ![Sample -Release Burndown - Fields](media/odatapowerbi-cfd-fields.png)
 
 For a simple report, do the following steps:
 
@@ -122,7 +122,7 @@ For a simple report, do the following steps:
 The example report:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - CFD - Report](_img/odatapowerbi-cfd-report.png)
+> ![Sample - CFD - Report](media/odatapowerbi-cfd-report.png)
 
 ### Sorting columns in correct order
 
@@ -132,7 +132,7 @@ The above sample will display columns in alphabetical order. To sort the columns
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -150,7 +150,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/BoardLocations?
@@ -175,7 +175,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/V3.0-preview/Boa
 The report will now be sorted by correct column order:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Release Burndown - Report](_img/odatapowerbi-cfd-report2.png)
+> ![Sample - Release Burndown - Report](media/odatapowerbi-cfd-report2.png)
 
 > [!NOTE]
 > If any work items were in a column that has since been deleted, they will appear as "Blank" in the above report. 
@@ -187,8 +187,8 @@ If you are pulling data in from multiple teams to aggregate across teams, you mu
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

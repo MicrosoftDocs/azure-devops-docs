@@ -19,7 +19,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 
 # Additional configuration options post update
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). 
@@ -189,7 +189,7 @@ If you have updated a project based on v5.0 of MSF for Agile, do the manual upda
 ### Test case management and custom workflow states 
 If you add or change the workflow states for the test plan or test suite type definitions, and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions, you must also update the process configuration for the project as well. Otherwise, you'll encounter an **Application detected an unexpected fault** error when you connect to your project. 
 
-![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
+![Application fault error message after TFS upgrade](media/ALM_CF_AppFaultErrMsg.png)  
 
 To resolve this error, see [Import and export process configuration [witadmin]](witadmin/witadmin-import-export-process-configuration.md).  
 

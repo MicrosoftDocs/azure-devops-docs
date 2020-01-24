@@ -16,32 +16,32 @@ ms.date: 12/10/2019
 
 # Pipeline outcome summary sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the number of runs for different pipeline outcomes (Succeeded / Failed / Canceled / Partially Succeeded). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelineName}' "
                 &"and CompletedDate ge {startdate} "
                 &") "
         &"/aggregate( "
@@ -58,12 +58,12 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelineName}'
+	Pipeline/PipelineName eq '{pipelineName}'
 	and CompletedDate ge {startdate}
 	)
 /aggregate(
@@ -73,13 +73,14 @@ $apply=filter(
 	PartiallySucceededCount with sum as PartiallySucceededCount ,
 	CanceledCount with sum as CanceledCount
 	)
+
 ```
 
 ***
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -93,7 +94,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
@@ -135,7 +136,7 @@ The following table describes each part of the query.
 1. Change the type of column TotalCount to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](_img/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/outcomesummary-changecolumntype.png)
 
 ### Rename fields and query, then Close & Apply
 
@@ -144,17 +145,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/outcomesummary-renamerightclick.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/odatapowerbi-pipelines/renamequery.png)
+	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
 
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/odatapowerbi-pipelines/closeandapply.png)
+	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -165,7 +166,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Fields](_img/odatapowerbi-pipelines/outcomesummary-fields.png)
+> ![Sample - Pipelines Outcome Summary - Fields](media/odatapowerbi-pipelines/outcomesummary-fields.png)
 
 For a simple report, do the following steps:
 
@@ -182,10 +183,10 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Outcome Summary - Report](_img/odatapowerbi-pipelines/outcomesummary-report.png)
+> ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/outcomesummary-report.png)
 
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -199,13 +200,13 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipelineId eq {pipelineId} "
+                &"PipelineId eq {pipelineId} "
                 &"and CompletedDate ge {startdate} "
                 &") "
         &"/aggregate( "
@@ -222,20 +223,20 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipelineId eq {pipelineId}
-	and CompletedDate ge {startdate}
-	)
+    PipelineId eq {pipelineId}
+    and CompletedDate ge {startdate}
+    )
 /aggregate(
-	$count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount ,
-	CanceledCount with sum as CanceledCount
+    $count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount ,
+    CanceledCount with sum as CanceledCount
 )
 ```
 
@@ -252,13 +253,13 @@ You may want to view the outcome summary of a pipeline for a particular **branch
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &") "
         &"/groupby( "
@@ -277,23 +278,23 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    )
 /groupby(
 (Branch/BranchName),
 aggregate(
-	$count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount ,
-	CanceledCount with sum as CanceledCount
-	))
+    $count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount ,
+    CanceledCount with sum as CanceledCount
+    ))
 ```
 
 ***
@@ -302,23 +303,23 @@ aggregate(
 
 You may want to view the outcome summary of a pipeline for a particular **Build Reason** (Manual / BatchedCI, Pull Request etc.) only. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Select Power BI Visualization **Slicer** and add the field Branch.BranchName to the slicer's **Field**
+- Select Power BI Visualization **Slicer** and add the field RunReason to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary
 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &") "
         &"/groupby( "
-        &"(BuildReason), "
+        &"(RunReason), "
             &"aggregate( "
                 &"$count as TotalCount, "
                 &"SucceededCount with sum as SucceededCount , "
@@ -333,22 +334,22 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    )
 /groupby(
-(BuildReason),
+(RunReason),
 aggregate(
-	$count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount ,
-	CanceledCount with sum as CanceledCount
+    $count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount ,
+    CanceledCount with sum as CanceledCount
 ))
 ```
 
@@ -358,23 +359,23 @@ aggregate(
 
 You may want to view the pipeline outcome summary for all project pipelines in a single report. To create the report, perform the following additional steps along with those provided previously in this article.
 
-- Expand BuildPipeline into BuildPipeline.BuildPipelineName
-- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
-- Select the Build pipeline from the slicer for which you need to see the outcome summary.
+- Expand Pipeline into Pipeline.PipelineName
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
+- Select the pipeline from the slicer for which you need to see the outcome summary.
 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
                 &"CompletedDate ge {startdate} "
                 &") "
                 &"/groupby( "
-        &"(BuildPipeline/BuildPipelineName), "
+        &"(Pipeline/PipelineName), "
         &"aggregate( "
             &"$count as TotalCount, "
                 &"SucceededCount with sum as SucceededCount , "
@@ -389,30 +390,30 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	CompletedDate ge {startdate}
-	)
+    CompletedDate ge {startdate}
+    )
 /groupby(
-(BuildPipeline/BuildPipelineName),
+(Pipeline/PipelineName),
 aggregate(
-	$count as TotalCount,
-	SucceededCount with sum as SucceededCount ,
-	FailedCount with sum as FailedCount,
-	PartiallySucceededCount with sum as PartiallySucceededCount ,
-	CanceledCount with sum as CanceledCount
-	))
+    $count as TotalCount,
+    SucceededCount with sum as SucceededCount ,
+    FailedCount with sum as FailedCount,
+    PartiallySucceededCount with sum as PartiallySucceededCount ,
+    CanceledCount with sum as CanceledCount
+    ))
 ```
 
 ***
 
 ## Full list of Pipelines sample reports 
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

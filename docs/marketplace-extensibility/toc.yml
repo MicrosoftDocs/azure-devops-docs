@@ -6,7 +6,7 @@
   href: ../extend/toc.yml 
 - name: Integrate applications
   href: ../integrate/toc.yml 
-- name: Service Hooks
+- name: Service hooks
   href: ../service-hooks/toc.yml
 - name: Additional integrations
   items:

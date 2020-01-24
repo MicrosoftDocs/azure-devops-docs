@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # FAQs about signing up and getting started
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Signing up for Azure DevOps is now easier than ever - it's a two-minute process. See the following FAQs, which contain links for getting started.
 

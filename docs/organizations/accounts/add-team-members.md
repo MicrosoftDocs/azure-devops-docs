@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # Add members to projects or teams
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Add members to your project in Azure DevOps, so you can share code and work with your team, track their status, coordinate dev, build, test, and release activities, and more. For Azure DevOps Server, see [Add users to a team or project](../../organizations/security/add-users-team-project.md).
 
@@ -28,7 +28,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 > [!NOTE]
 > To manually assign access levels, [add members to your organization](add-organization-users.md). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
 
-[!INCLUDE [temp](../../_shared/prerequisites-add-users-org.md)]
+[!INCLUDE [temp](../../includes/prerequisites-add-users-org.md)]
 
 ## Add members to your project
 
@@ -38,15 +38,15 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
 2. Open your project, and then select **Project settings > Teams**. Then, select your project.
 
-   ![The Projects page](_img/_shared/open-project-settings.png)
+   ![The Projects page](media/shared/open-project-settings.png)
 
 3. Select **Add** to invite members to your project.
 
-   ![On your project home page, select Invite a friend](_img/add-team-members/add-member-to-project.png)
+   ![On your project home page, select Invite a friend](media/add-team-members/add-member-to-project.png)
 
 4. Add users or groups, and then choose **Save**.
 
-    ![Project members list](_img/add-team-members/add-user-or-group-to-project.png)
+    ![Project members list](media/add-team-members/add-user-or-group-to-project.png)
 
    Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
 
@@ -60,7 +60,7 @@ When [Visual Studio subscribers sign in](https://visualstudio.microsoft.com/prod
 
 * If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
 
-![Add members' sign in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
+![Add members' sign in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
 
 After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
 

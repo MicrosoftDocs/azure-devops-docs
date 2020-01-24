@@ -15,11 +15,11 @@ ms.date: 04/04/2018
 
 # Resolve errors associated with an Analytics view
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. Analytics provides the reporting platform for Azure DevOps. You manage Analytics views in the web portal for Azure DevOps and then access them with the [Power BI Connector](data-connector-connect.md). 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 ## Resolve size warnings
 
@@ -55,7 +55,7 @@ This error occurs when you try to refresh a view in Power BI that is no longer a
 - Your permissions to access the view were explicitly removed
 - The view has been modified from a **Shared** view to a **Private** view.  
 
-![Refresh fail - view does not exists](_img/editable-views/pbi-refresh-fail.png)
+![Refresh fail - view does not exists](media/editable-views/pbi-refresh-fail.png)
 
 To resolve this issue, check that you can access the view in Azure DevOps and that you have [permission to use the view](analytics-views-manage.md#manage-permissions).  
 

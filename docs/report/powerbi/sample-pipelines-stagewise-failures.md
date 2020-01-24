@@ -16,65 +16,66 @@ ms.date: 12/10/2019
 
 # Pipeline stage wise failures sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to create a report of a pipeline's daily stage failures. This report is similar to the 'Failure trend' chart of the [Pipeline pass rate report](../../pipelines/reports/pipelinereport.md#pipeline-pass-rate-report). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Stage wise failure - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
+> ![Sample - Pipelines Stage wise failure - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ), "
                 &"aggregate (FailedCount with sum as FailedCount)) "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, PipelineJob/StageName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineJob/StageName ), "
             &"aggregate "
         &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
+
 ```
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ),
-	aggregate (FailedCount with sum as FailedCount))
+    (PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),
+    aggregate (FailedCount with sum as FailedCount))
 /groupby(
-	(BuildCompletedOn/Date, PipelineJob/StageName ),
-	aggregate
+    (PipelineRunCompletedOn/Date, PipelineJob/StageName ),
+    aggregate
 (cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))
 ```
 
@@ -82,7 +83,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -96,15 +97,15 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return task results for a specific pipeline</td>
 <tr>
 <tr>
-<td><code>and BuildCompletedOn/Date ge {startdate}</code></td>
+<td><code>and PipelineRunCompletedOn/Date ge {startdate}</code></td>
 <td>Return task results for pipeline runs on or after the specified date</td>
 <tr>
 <tr>
-<td><code>and BuildOutcome eq 'Failed'</code></td>
+<td><code>and PipelineRunOutcome eq 'Failed'</code></td>
 <td>Return task results where build outcome is failed</td>
 <tr>
 <tr><td><code>and TaskOutcome eq 'Failed'</code></td>
@@ -116,7 +117,7 @@ The following table describes each part of the query.
 <tr><td><code>/groupby(</code></td>
 <td>Start groupby()</td>
 <tr>
-<tr><td><code>(BuildCompletedOn/Date, BuildId, PipelineJob/StageName ),</code></td>
+<tr><td><code>(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/StageName ),</code></td>
 <td>Group by date of completion of pipeline run, Build Id and stage name.</td>
 <tr>
 <tr><td><code>aggregate (FailedCount with sum as FailedCount))</code></td>
@@ -125,7 +126,7 @@ The following table describes each part of the query.
 <tr><td><code>/groupby(</code></td>
 <td>Start groupby()</td>
 <tr>
-<tr><td><code>(BuildCompletedOn/Date, PipelineJob/StageName ),</code></td>
+<tr><td><code>(PipelineRunCompletedOn/Date, PipelineJob/StageName ),</code></td>
 <td>Group by day and stage name.</td>
 <tr>
 <tr><td><code>aggregate</code></td>
@@ -140,26 +141,26 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-### Expand BuildCompletedOn and PipelineJob column
+### Expand PipelineRunCompletedOn and PipelineJob column
 
-The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are BuildCompletedOn and PipelineJob. 
+The query returns some columns that you need to expand and flatten into its fields before you can use them in Power BI. In this example, such entities are PipelineRunCompletedOn and PipelineJob. 
 
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on both of these entities.
 
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](_img/odatapowerbi-pipelines/stagewisefailure-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/stagewisefailure-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](_img/odatapowerbi-pipelines/stagewisefailure-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/stagewisefailure-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](_img/odatapowerbi-pipelines/stagewisefailure-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/stagewisefailure-expand3.png)
 
 
 ### Change column type
@@ -169,7 +170,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of column FailedStageCount to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](_img/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/stagewisefailure-changecolumntype1.png)
     
 
 ### Rename fields and query 
@@ -179,17 +180,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/odatapowerbi-pipelines/stagewisefailure-renamerightclick.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/stagewisefailure-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/odatapowerbi-pipelines/renamequery.png)
+	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/odatapowerbi-pipelines/closeandapply.png)
+	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -200,14 +201,14 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines stage wise failures - Fields](_img/odatapowerbi-pipelines/stagewisefailure-fields.png)
+> ![Sample - Pipelines stage wise failures - Fields](media/odatapowerbi-pipelines/stagewisefailure-fields.png)
 
 For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Stacked column chart**. 
 
-1. Add the field "BuildCompletedOn.Date" to **Axis**.
-    - Right-click "BuildCompletedOn.Date" and select "BuildCompletedOn.Date", rather than Date Hierarchy.
+1. Add the field "PipelineRunCompletedOn.Date" to **Axis**.
+    - Right-click "PipelineRunCompletedOn.Date" and select "PipelineRunCompletedOn.Date", rather than Date Hierarchy.
 	
 1. Add the field "FailedStageCount" to **Values**.
 	  - Right-click "FailedStageCount" field and ensure **Sum** is selected.
@@ -219,7 +220,7 @@ For a simple report, do the following steps:
 Your report should look similar to the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Stage wise failures - Report](_img/odatapowerbi-pipelines/stagewisefailure-report.png)
+> ![Sample - Pipelines Stage wise failures - Report](media/odatapowerbi-pipelines/stagewisefailure-report.png)
 
 
 ## Additional queries
@@ -232,18 +233,18 @@ You can use the following additional queries to create different but similar rep
 You may want to view the task wise failure trend, rather than stage wise failure trend.
 
 #### [Power BI query](#tab/powerbi/)
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, TaskDisplayName), "
+                &"(PipelineRunCompletedOn/Date, TaskDisplayName), "
                 &"aggregate "
             &"(FailedCount with sum as FailedCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
@@ -251,18 +252,18 @@ in
     Source
 ```
 #### [OData query](#tab/odata/)
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, TaskDisplayName),
-	aggregate
+    (PipelineRunCompletedOn/Date, TaskDisplayName),
+    aggregate
 (FailedCount with sum as FailedCount))
 ```
 
@@ -274,55 +275,55 @@ You may want to view the job wise failure trend, rather than stage wise failure 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
-                &"and BuildCompletedOn/Date ge {startdate} "
-                &"and BuildOutcome eq 'Failed' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
+                &"and PipelineRunCompletedOn/Date ge {startdate} "
+                &"and PipelineRunOutcome eq 'Failed' "
         &"and TaskOutcome eq 'Failed' "
         &") "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, BuildId, PipelineJob/JobName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/JobName ), "
                 &"aggregate (FailedCount with sum as FailedCount)) "
             &"/groupby( "
-                &"(BuildCompletedOn/Date, PipelineJob/JobName ), "
+                &"(PipelineRunCompletedOn/Date, PipelineJob/JobName ), "
             &"aggregate "
-        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount)) "
+        &"(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/BuildTaskResults?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRunActivityResults?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and BuildCompletedOn/Date ge {startdate}
-	and BuildOutcome eq 'Failed'
-	and TaskOutcome eq 'Failed'
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and PipelineRunCompletedOn/Date ge {startdate}
+    and PipelineRunOutcome eq 'Failed'
+    and TaskOutcome eq 'Failed'
+    )
 /groupby(
-	(BuildCompletedOn/Date, BuildId, PipelineJob/JobName ),
-	aggregate (FailedCount with sum as FailedCount))
+    (PipelineRunCompletedOn/Date, PipelineRunId, PipelineJob/JobName ),
+    aggregate (FailedCount with sum as FailedCount))
 /groupby(
-	(BuildCompletedOn/Date, PipelineJob/JobName ),
-	aggregate
-(cast(FailedCount gt 0, Edm.Int32) with sum as FailedStageCount))
+    (PipelineRunCompletedOn/Date, PipelineJob/JobName ),
+    aggregate
+(cast(FailedCount gt 0, Edm.Int32) with sum as FailedJobCount))
 ```
 
 ***
 
 ## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

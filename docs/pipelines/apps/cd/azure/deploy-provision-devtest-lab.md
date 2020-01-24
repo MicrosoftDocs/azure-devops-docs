@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Manage a virtual machine in Azure DevTest Labs
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)
@@ -147,7 +147,7 @@ release pipeline in Azure Pipelines.
 
 1. Configure the **Azure DevTest Labs Create VM** task as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
@@ -166,7 +166,7 @@ release pipeline in Azure Pipelines.
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
-   ![Azure PowerShell](../../../tasks/deploy/_img/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
+   ![Azure PowerShell](../../../tasks/deploy/media/azure-powershell-icon.png) [Deploy: Azure PowerShell](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV3) - Execute the script to collect the details of the DevTest Labs VM.
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
@@ -201,7 +201,7 @@ release pipeline in Azure Pipelines.
    and add an **Azure DevTest Labs Create Custom Image** task
    from the **Deploy** tab. Configure it as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
@@ -223,7 +223,7 @@ release pipeline in Azure Pipelines.
    **+ Add tasks** and add an **Azure DevTest Labs Delete VM** task
    from the **Deploy** tab. Configure it as follows:
 
-   ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
+   ![Azure DevTest Labs Tasks](media/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
@@ -249,9 +249,9 @@ release pipeline in Azure Pipelines.
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

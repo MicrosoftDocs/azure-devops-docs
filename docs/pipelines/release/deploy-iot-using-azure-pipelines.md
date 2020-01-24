@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 # Automatically deploy to IoT edge devices 
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) solution, push the created module images to your Azure Container Registry (ACR), create a deployment manifest, and then deploy the modules to targeted IoT edge devices.
 
@@ -34,7 +34,7 @@ In this tutorial, you'll learn how to build an Azure Internet of Things (IoT) so
 
 ## Create an IoT Edge project
 
-The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-an-iot-edge-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
+The following steps creates an [IoT Edge](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module#create-a-module-project) module project that's based on .NET Core SDK by using VS Code and Azure IoT tools.
 
 1. In the VS Code, select **View > Command Palette** to open the VS Code command palette.
 
@@ -130,7 +130,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
    > [!NOTE]
    > Save the pipeline and queue the build. The above step will create an Azure Container Registry. This is required to push the IoT module images.
 
-   ![ARM](_img/Iot-devops-using-azure-pipelines/arm.png)
+   ![ARM](media/Iot-devops-using-azure-pipelines/arm.png)
 
 8. Edit the pipeline, and select **+**, and search for the **Azure IoT Edge** task. Select **add**. This step will build the module images.  
 
@@ -147,7 +147,7 @@ You can use Azure Pipelines to build your projects on Windows, Linux, or macOS w
 
 11. Save the pipeline and queue the build.
 
-     ![Build Pipeline](_img/Iot-devops-using-azure-pipelines/build-pipeline.png)
+     ![Build Pipeline](media/Iot-devops-using-azure-pipelines/build-pipeline.png)
 
 ## Create a release pipeline
 
@@ -190,7 +190,7 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
      > [!NOTE]
      > Save the pipeline and queue the release. The above 2 steps will create an IoT Hub.
 
-     ![Release Pipeline](_img/Iot-devops-using-azure-pipelines/release-pipeline.png)
+     ![Release Pipeline](media/Iot-devops-using-azure-pipelines/release-pipeline.png)
 
 6. Edit the pipeline and select **+** and search for the **Azure IoT Edge** task. Select **add**. This step will Deploy the module images to IoT Edge devices. Configure the task as shown below.
 
@@ -217,6 +217,6 @@ The build pipeline has already built a Docker image and pushed it to an Azure Co
 
 8. Disable the first 2 tasks in the pipeline. Save and queue.
 
-    ![Edit Pipeline](_img/Iot-devops-using-azure-pipelines/edit-release-pipeline.png)
+    ![Edit Pipeline](media/Iot-devops-using-azure-pipelines/edit-release-pipeline.png)
 
 9. Once the release is complete, go to IoT hub in the Azure portal to view more information.

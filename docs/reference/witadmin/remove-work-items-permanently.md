@@ -15,7 +15,7 @@ ms.date: 07/12/2018
 
 # Remove work items permanently
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 You can permanently remove one or more work items from the on-premises Team Foundation database for a project collection by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Permanently removed work items are removed from the database and cannot be restored nor reactivated.  
   
@@ -23,7 +23,7 @@ You can permanently remove one or more work items from the on-premises Team Foun
   
  You can run **witadmin destroywi** against an on-premises TFS only. 
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]    
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
  **Requirements**  
   
@@ -40,7 +40,7 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
 
 ::: moniker range="tfs-2018"
 > [!NOTE]
-> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work%20items/delete).
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../boards/backlogs/remove-delete-work-items.md#restore) to permanently delete work items, or use [REST API `DELETE`](/rest/api/azure/devops/wit/work%20items/delete).
 ::: moniker-end
 
 #### Parameters  

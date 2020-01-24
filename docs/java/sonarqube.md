@@ -36,7 +36,7 @@ To use your SonarQube server, you need to setup an endpoint connection under the
 After setting up a [Maven build task](/azure/devops/pipelines/tasks/build/maven) or a [Gradle build task](/azure/devops/pipelines/tasks/build/gradle) for your repository, you can enable SonarQube analysis by selecting the option under the **Code Analysis** option in the task. Both build tasks will require you to select a SonarQube endpoint which you should have already configured. Additional information such as project name and project key may be needed depending on the task.
 
 > [!div class="mx-imgBorder"]
-> ![Azure DevOps Services VSCode extension login indicator](_img/sonarqube-menu.png)
+> ![Azure DevOps Services VSCode extension login indicator](media/sonarqube-menu.png)
 > 
 > [!NOTE]
 > SonarQube support for Maven is currently available for Azure DevOps Services or TFS 2015 Update 1 or later.

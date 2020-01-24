@@ -17,7 +17,7 @@ ms.date: 08/05/2019
 
 # Add comments to wiki pages
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 In this article, learn how to add comments to wiki pages, for better collaboration.
 
@@ -25,19 +25,19 @@ In this article, learn how to add comments to wiki pages, for better collaborati
 
 Add a comment at the bottom of any wiki page.
 
-![Create comment on wiki page](_img/wiki/add-wiki-comment.png)
+![Create comment on wiki page](media/wiki/add-wiki-comment.png)
 
 ### View markdown and preview tabs
 
 When you add a markdown-based comment, there's a markdown editor and preview tab. Use these tabs to view and change how the comment will be rendered before you add it. You can also @mention users and groups. This @mention sends an email notification to each user or group, with a link to the wiki page.
 
-![Wiki comments in markdown and preview tabs](_img/wiki/wiki-comments-markdown-preview-tabs.png)
+![Wiki comments in markdown and preview tabs](media/wiki/wiki-comments-markdown-preview-tabs.png)
 
 ## Edit or delete comment
 
 Edit or delete any comments that you've added to a wiki.
 
-![Edit or delete wiki comment](_img/wiki/wiki-comment.png)
+![Edit or delete wiki comment](media/wiki/wiki-comment.png)
 
 ## Related articles
 

@@ -15,13 +15,13 @@ author: steved0x
 
 # Troubleshoot Build and Release
 
-[!INCLUDE [temp](_shared/version.md)]
+[!INCLUDE [temp](includes/version.md)]
 
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ### Overridden YAML trigger setting
 
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#override-yaml-triggers).
 
 ### Using pull request triggers with Azure Repos
 
@@ -99,15 +99,15 @@ If you are currently running other pipelines, you may not have any remaining par
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
-![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
+![Pipelines concurrent jobs](media/troubleshooting/concurrent-pipeline-limits.png)
 
 You can view the count of in-progress jobs by selecting **View in-progress jobs**.
 
-![View in-progress jobs](_img/troubleshooting/view-in-progress-jobs.png)
+![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
 
 You can view all jobs, including queued jobs, by selecting **Agent pools** from the **Project settings**.
 
-![View queued jobs](_img/troubleshooting/agent-pools-jobs.png)
+![View queued jobs](media/troubleshooting/agent-pools-jobs.png)
 
 In this example, the concurrent job limit is one, with one job running and one queued up. When all agents are busy running jobs, as in this example, the following message is displayed when additional jobs are queued: `The agent request is not running because all potential agents are running other requests. Current position in queue: 1`. In this example the job is next in the queue so its position is one.
 
@@ -174,7 +174,7 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
 
-  ![Enable system diagnostics](_img/troubleshooting/enable-system-diagnostics.png)
+  ![Enable system diagnostics](media/troubleshooting/enable-system-diagnostics.png)
 
 * To configure verbose logs for all runs, you can add a variable named `system.debug` and set its value to `true`. 
 
@@ -194,11 +194,11 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 To view individual logs for each step, navigate to the build results for the run, and select the job and step. 
 
-![Task log](_img/troubleshooting/job-task-logs.png)
+![Task log](media/troubleshooting/job-task-logs.png)
 
 To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)).
 
-![Download logs](_img/troubleshooting/download-logs.png)
+![Download logs](media/troubleshooting/download-logs.png)
 
 ::: moniker-end
 
@@ -338,7 +338,7 @@ Keep in mind, some differences are in effect when executing a command on a local
 
 ### My pipeline is failing on a checkout step
 
-If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md#scoped-build-identities) to ensure that your pipeline has access to the repository.
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md) to ensure that your pipeline has access to the repository.
 
 When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
 
@@ -478,7 +478,7 @@ VS30063: You are not authorized to access http://<SERVER>:8080/tfs
 
 If the above error is received while configuring the agent, log on to your TFS machine. Start the Internet Information Services (IIS) manager. Make sure **Anonymous Authentication** is enabled.
 
-![iis tfs anonymous authentication enabled](_img/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
+![is TFS anonymous authentication enabled](media/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
 <h3 id="renew-lock">Agent lost communication</h3>
