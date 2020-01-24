@@ -1182,7 +1182,23 @@ When you manually queue a build, you can, for a single run of the build:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013"
+::: moniker range=">=tfs-2013 <= tfs-2018"
+
+### Where can I learn more about build pipeline settings?
+
+To learn more about build pipeline settings, see:
+
+* [Getting sources](repos/index.md)
+* [Tasks](tasks/index.md)
+* [Variables](build/variables.md)
+* [Triggers](build/triggers.md)
+* [Options](build/options.md)
+* [Retention](policies/retention.md)
+* [History](build/history.md)
+
+::: moniker-end
+
+::: moniker range= "azure-devops"
 
 ### Where can I learn more about build pipeline settings?
 
