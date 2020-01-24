@@ -28,7 +28,7 @@ This option is good for users who don't want notifications of events that they t
 
 [!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
-## Related articles
+#### Related articles
 
 - [Manage personal notification settings](manage-your-personal-notifications.md)
 - [Follow a specific work item](../boards/work-items/follow-work-items.md)  

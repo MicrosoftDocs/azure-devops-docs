@@ -1089,7 +1089,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="create-new-team-projects-permission">Create new projects (formerly Create new team projects)</td>
         <td>
-            Can <a href="../projects/create-project.md" >add a projecs</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+            Can <a href="../projects/create-project.md" >add a projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
         </td>
     </tr>
     <tr>
