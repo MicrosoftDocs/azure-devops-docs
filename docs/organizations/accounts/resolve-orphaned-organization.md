@@ -1,5 +1,5 @@
 ---
-title: Resolve innactive organization ownership
+title: Resolve inactive organization owner
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a new owner to an organization, when the current owner is inactive.
