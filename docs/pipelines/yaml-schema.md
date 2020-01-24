@@ -1532,11 +1532,11 @@ environment:                # create environment and/or record deployments
   resourceId: number        # resource identifier
   resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
   tags: string | [ string ] # tag names to filter the resources in the environment
-  strategy:                 # deployment strategy
-    runOnce:                # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+strategy:                 # deployment strategy
+  runOnce:                # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 If you specify an environment or one of its resources but don't need to specify other properties, you can shorten the syntax to:
