@@ -113,7 +113,7 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Advanced customizations supported (custom link types, team fields, global worflow)</td>
+<td align="left">Advanced customizations supported (custom link types, team fields, global workflow)</td>
 <td> </td>
 <td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
@@ -220,7 +220,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>Shared resources </td>
 <td>
 <ul>
-<li><a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[Alerts](../boards/queries/alerts-and-notifications.md)">Alerts</a></li>
+<li><a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[Alerts](../notifications/manage-your-personal-notifications.md)">Alerts</a></li>
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Area paths](../organizations/settings/set-area-paths.md)">Area paths</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)">Iteration paths</a></li>
 <li><a href="../boards/queries/using-queries.md" data-raw-source="[Queries](../boards/queries/using-queries.md)">Queries</a></li>
