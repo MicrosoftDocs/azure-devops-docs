@@ -14,4 +14,6 @@
     #artifact: # Optional
     #patterns: '**' # Optional
     #path: '$(Pipeline.Workspace)' 
+    #includeRootFolder: true
+    #replaceExistingArchive: true
 ```
