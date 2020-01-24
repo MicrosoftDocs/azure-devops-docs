@@ -92,7 +92,7 @@ The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories 
 However, you can navigate to it from the following URL:
 
 ::: moniker range=">= azure-devops-2019"
-`https://dev.azure.com/<AccountName>/<TeamProjectName>/_git/<WikiName>` 
+`https://dev.azure.com/<OrgName>/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
