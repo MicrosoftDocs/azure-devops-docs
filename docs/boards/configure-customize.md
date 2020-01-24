@@ -24,6 +24,7 @@ This article provides guidance to configure and customize Azure Boards. You shou
 - Support portfolio management views 
 - View calendar views to update status and progress  
 - Track dependencies across teams or projects 
+- Track time estimates or actual work completed 
 
 > [!NOTE]   
 > This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup and some portolio planning tools, are only available for the cloud at this time. 
@@ -34,16 +35,19 @@ If you're just getting started as a Project Administrator, see also [Get started
 
 ## What to consider?
 
-When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban, you can gain the most advantage of the Azure Boards tools by understanding how you can configure and customize them. 
+When configuring or customizing work tracking tools, you'll want to consider the tools your teams use and how they will use them. Whether your teams follow Scrum, Kanban, or some combination of Scrumban, you can gain the most advantage of the Azure Boards tools by understanding the dependencies they have on configurations and customizations.  
 
 The primary items to consider as you structure your project are: 
 
-At a project level: 
+**At a project level**: 
 - How many teams you want to define 
-- Workflow customizations 
+- How to structure area paths to support portfolio management views
 - Field customizations 
+- Work item type customizations or custom work item types
+- Portfolio backlog customizations 
+- Workflow customizations 
 
-At a team level: 
+**At a team level**: 
 - How you'll use your product backlog to plan and prioritize your work 
 - Whether you'll track bugs as requirements or as tasks, or not use bugs at all
 - Whether or not you'll use tasks to track time and capacity  
@@ -55,31 +59,25 @@ At a team level:
 
 Once you determine how you'll use the work tracking building blocks and tools, you'll want to make any necessary configurations and customizations to support your business and communicate to your teams how they should use the tools. 
 
-## Work item types and portfolio backlog levels 
+## Work item types and portfolio backlogs
 
-Each project comes with a set hierarchy of work item types that support a product backlog and portfolio backlog(s). The defaults for each supported process are shown in the following tabs. 
+The first choice made in work tracking is the process selected when creating a project.For a comparison of each process, see [Choose a process](work-items/guidance/choose-process.md).  Each process&mdash;Agile, Basic, Scrum, and CMMI&mdash;supports a set hierarchy of work item types.  This hierarchy supports a product backlog and portfolio backlog(s).  
+
+The default work item types for each supported process are shown in the following tabs. Backlog work item types correspond to the Requirements category. Tasks correspond to the Task category. 
 
 [!INCLUDE [work-item-types](includes/work-item-types.md)]
 
-The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
+You can add custom work item types at each level, and even add additional custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as additional portfolio backlogs and work item types to the Scrum process. 
+
+
+> [!div class="mx-tdCol2BreakAll"]
+> ![Objectives and Key Results as additional portfolio backlogs](media/portfolio-backlogs-objectives-results.png)  
+
+
 
 ## Work tracking options and recommended usage  
 
-One of the main choices teams have is choosing the work item types they use to track their work. The work item type options and recommended usage are summarized as follows.  
-
-|Work item types | Recommended usage  |
-|-----------|----------------
-| Tasks only | **Not recommended** as there is no way to quickly enter new tasks in a backlog nor prioritize a backlog. In addition, there is no support for calendar views, cross-team views, or portfolio planning tools.   
-| Requirements with child-dependent tasks | For teams that follow Scrum methods and want to track time associated with work. | 
-| Requirements only | For teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work. | 
-| Requirements grouped under portfolio work item types, such as epics and features | For organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.   | 
-
-### Supported tasks and tools  
-
-Many teams starting out using Scrum methods track and plan their work using the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, then adding child-dependent tasks is optional. Developers might add them simply as a checklist of items they need to complete a user story or backlog requirement.  
-
-The primary tools available to use for each recommended option are described in the following table. 
-
+One of the main choices teams have is choosing the work item types they use to track their work. The following table summarizes the main options, recommended usage, and  supported tasks and tools.  
 
 <table width="100%">
 <tbody valign="top">
@@ -88,9 +86,17 @@ The primary tools available to use for each recommended option are described in 
 <th width="65%">Tasks and tools supported </th>
 </tr>
 <tr>
+<td>Tasks only</td>
+<td>
+<strong>Not recommended</strong><br/>
+There is no way to quickly enter new tasks in a backlog nor prioritize a backlog of tasks. In addition, there is no support for calendar views, cross-team views, or portfolio planning tools.   
+</td>
+</tr>
+<tr>
 <td>Requirements with child-dependent tasks</td>
 <td>
-<strong>Supports Scrum methods</strong>
+<strong>Supports Scrum methods</strong><br/>
+Recommended for teams that follow Scrum methods and want to track time associated with work.
 <ul>
 <li>Quickly define and prioritize backlog items: <a href="backlogs/create-your-backlog.md">Product backlog</a></li>
 <li>Forecast sprints using team velocity: <a href="sprints/forecast.md">Forecast</a></li>
@@ -104,13 +110,15 @@ The primary tools available to use for each recommended option are described in 
 <li>View progress bars, counts, or sums of rollup on tasks: <a href="backlogs/display-rollup.md">Rollup</a></li>
 <li>Track dependencies across teams and projects: <a href="extensions/dependency-tracker.md">Dependency Tracker</a></li>
 </ul>
+Many teams start out using Scrum methods to track and plan their work using the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, then adding child-dependent tasks is optional. Developers might add them simply as a checklist of items they need to complete a user story or backlog requirement. 
 </td>
 </tr>
 <tr>
 <td>Requirements only, such as user stories (Agile), issues (Basic), product backlog items (Scrum), requirements (CMMI)
 </td>
 <td>
-<strong>Supports Kanban and Scrumban methods</strong>
+<strong>Supports Kanban and Scrumban methods</strong><br/>
+Recommended for teams that follow Kanban or Scrumban methods, estimate work using Story Points, Effort, or Size, and don't track time associated with work.
 <ul>
 <li>Quickly define and prioritize backlog items:<a href="backlogs/create-your-backlog.md">Product backlog</a></li>
 <li>Plan sprints: <a href="sprints/assign-work-sprint.md">Backlog Planning tool</a></li>
@@ -126,7 +134,8 @@ The primary tools available to use for each recommended option are described in 
 <td>Requirements grouped under portfolio work item types, such as epics and features
 </td>
 <td>
-<strong>Supports calendar views, cross-team views, and portfolio planning </strong>
+<strong>Supports calendar views, cross-team views, and portfolio planning </strong><br/>
+Recommended for organizations with several teams that want to view rollups and calendar views associated with multiple teams, and take advantage of all portfolio planning tools.
 <ul>
 <li>Quickly define and prioritize portfolio items: <a href="backlogs/define-features-epics.md">Portfolio backlogs</a></li>
 <li>Quickly define child user stories of portfolio items: <a href="boards/kanban-epics-features-stories.md">Portfolio checklists</a></li>
@@ -142,20 +151,19 @@ The primary tools available to use for each recommended option are described in 
 </tbody>
 </table>
 
-
+ 
 
 ## Configure and customization options 
 
 The following table indicates the areas you can configure and customize and the tools impacted by those customizations. Each area is customized either at the Organization, Project, or Team level as noted, or a combination of two. For a description of the Standard tools, Analytics tools, and Portfolio planning tools, see [What is Azure Boards](get-started/what-is-azure-boards.md), [In-context reports: Work tracking](/azure/devops/report/dashboards/overview#in-context-reports-work-tracking), and [Plans (Agile at scale)](plans/index.md). 
- 
 
 
 <table width="100%">
 <tbody valign="top">
 <tr>
-<th width="25%">Configure or customize</th>
+<th width="23%">Configure or customize</th>
 <th width="28%">Standard tools</th>
-<th width="22%">Analytics</th>
+<th width="24%">Analytics</th>
 <th width="25%">Portfolio planning tools</th>
 </tr>
 <tr>
@@ -293,40 +301,28 @@ Custom field (Organization)
 </tbody>
 </table>
 
- 
-
 
 
 > [!NOTE]   
 > While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
 
 
-<!---
-
-gannt chart
-workflow customizations 
-
---> 
 
 <a id="area-path" />
 
-## Area paths and product teams, and portfolio management  
+## Area paths, product teams, and portfolio management  
 
 Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. You can define a hierarchical set of area paths or a flat set. Typically, you define a hierarchical set of area paths when you want to support a business hierarchy that wants to track progress of several teams.  
 
-A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. 
 
-Prior to adding teams, we recommend you read the following articles:  
-
-- [Portfolio management](plans/portfolio-management.md)
-- [About area paths](/azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [Agile culture](plans/agile-culture.md). 
+### Area paths and hierarchical grouping 
 
 The two main ways to group work items is by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. The two main items to understand are:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
-- 
+
+You can also assign tags to work items to group them for query and filter purposes. So when you structure your teams and projects, you want to make sure you understand how you'll use these grouping tools to support your business needs. Your choices impact the use of portfolio planning tools.
+
 To use the following tools, teams must subscribe to area paths. 
 
 - [Boards> all tools](boards/kanban-overview.md)  
@@ -338,14 +334,28 @@ To use the following tools, teams must subscribe to area paths.
 	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items  
 	- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of a selected team epic and features with the ability to drill down into child items  
 	- [Dependency Tracker](extensions/dependency-tracker.md), provides list and calendar views of dependencies being produced or consumed by teams  
-  
+	
+
+### Add teams 
+
+A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. 
+
+Here is an example of area paths and their assignment to teams which support portfolio management views for the Account Management and Service Delivery teams. 
+
+> [!div class="mx-tdCol2BreakAll"]
+> ![Area paths and team assignments](media/area-path-team-assignments.png)  
+
 - You create hiearchical area paths to support sub categories of features and product areas 
 - To provide portfolio views, you assign two or more area paths and include sub-areas to a portfolio management team 
 - Area paths assigned to a team determine what work items are filtered in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool  
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a calendar view such as Feature Timeline and Epic Roadmap  
 
+Prior to adding teams, we recommend you read the following articles:  
 
-You can also assign tags to work items to group them for query and filter purposes. So when you structure your teams and projects, you want to make sure you understand how you'll use these grouping tools to support your business needs. Your choices impact the use of portfolio planning tools. 
+- [Portfolio management](plans/portfolio-management.md)
+- [About area paths](/azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Agile culture](plans/agile-culture.md). 
 
 Recommendations:
 - Consider what views upper management may want to view and how to best support them 
@@ -366,7 +376,7 @@ Most Azure Boards tools support a filtered view of work items based on area path
 
 <a id="rollup" />
 
-## Rollup, hiierarchical guidance, and portfolio management  
+## Rollup, hierarchy, and portfolio management  
 
 Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. 
 
@@ -375,14 +385,17 @@ Here we show **Progress by all Work Items** which displays progress bars for asc
 > [!div class="mx-imgBorder"]  
 > ![Progress bars showing rollup by work items](media/config-custom/progress-by-work-items.png)  
 
-In addition to the rollup columns you can view in a backlog .... 
-
 
 <a id="iteration-path" />
 
 ## Iteration paths, sprints, releases, and versioning
 
 Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Each iteration or sprint corresponds to a regular time interval referred to as a sprint cadence. Typical sprint cadences are two week, three week or a month long. To learn more about Iteration paths, see [About area and iteration paths (aka sprints)](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).  
+
+Iteration paths can be a simple flat list, or grouped under release milestones as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
 
@@ -394,12 +407,36 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 
 
 > [!TIP]    
-> If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view or portfolio planning tool.   
+> If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view, tool, or portfolio planning tool.   
 
 
 <a id="show-bugs" />
 
 ## Treat bugs as requirements or tasks
+
+Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
+
+[!INCLUDE [temp](includes/basic-process-bug-note.md)]
+
+If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
+
+Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
+
+::: moniker range="<= tfs-2018"
+
+> [!TIP]  
+> After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlopgs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on the Kanban or sprint taskboards.  
+
+::: moniker-end
+::: moniker range="> tfs-2018"
+
+> [!TIP]  
+> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+
+::: moniker-end
+
+
+
 Consider how your selection impacts rollup
 If your development team uses tasks 
 
@@ -428,6 +465,14 @@ Project - ![ ](media/icons/project.png)
 Collection - ![ ](media/icons/collection.png)  
  
 Collection/Organization 
+
+<!---
+
+> [!NOTE]    
+> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../organizations/settings/add-team-administrator.md).
+--> 
+
+
 
 ## User settings 
 
@@ -468,6 +513,7 @@ Some examples of real-world teams who use Azure Boards to track work are describ
 
 ## Related articles
 
+- [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)
 - [Resources granted to project members](../organizations/accounts/resources-granted-to-project-members.md) 
 - [Permissions and groups reference](../organizations/security/permissions.md) 
 - [Rate limits](../organizations/settings/work/object-limits.md)
@@ -487,7 +533,20 @@ Examples you can draw on and document in another topic:
 - The way Agile features team managed their backlog (~10 PMs) 
 - The way Carmon mills content team (56) manages their backlog. Managing backlog via user stories+content feature area (highly granular) , 
 
+
 Information to provide your teams
+
+
+The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
 
 --> 
 
+<!---
+
+gannt chart
+workflow customizations 
+
+> [!NOTE]    
+> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../organizations/settings/add-team-administrator.md).
+> 
+--> 
