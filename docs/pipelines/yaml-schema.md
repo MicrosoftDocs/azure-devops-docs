@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 1/10/2020
+ms.date: 1/24/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
