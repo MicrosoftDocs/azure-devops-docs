@@ -17,10 +17,11 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-> [!NOTE]  
-> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Learn about navigating the notifications user interface.
+
+> [!NOTE]  
+> This article applies to Azure DevOps, TFS 2017 Update 1 and later versions. For information on TFS 2017 and earlier versions, see [Manage personal notifications](manage-your-personal-notifications.md) and select the TFS 2015 content version. 
 
 ## The notifications pages
 
@@ -30,6 +31,13 @@ There are the following notifications pages:
 * Team
 * Project
 * Organization or collection (organization for the cloud and project collection for on-premises)
+
+::: moniker range="< azure-devops"
+
+> [!NOTE]
+> For on-premises Azure DevOps Server, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization or user profile menu and to receive notifications.
+
+::: moniker-end
 
 Permissions to manage notifications at each page default are  as follows:
 
