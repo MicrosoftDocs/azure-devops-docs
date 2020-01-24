@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 01/16/2019
+ms.date: 01/24/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -38,6 +38,11 @@ A: This might happen for one of the following reasons:
 * If your organization uses Azure Active Directory to control access, directory members don't appear in the possible organization Owners list until they meet the requirements described in this article.
 
 [!INCLUDE [recover-password](../../includes/qa-recover-password.md)]
+
+
+#### Q: What if the owner of my organization has left the company/isn't active?
+
+A: An Azure DevOps Administrator can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the backing Azure AD tenant. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
 
 #### Q: Can I reverse an organization Owner change?
 
