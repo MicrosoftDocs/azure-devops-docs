@@ -26,6 +26,14 @@ This task is not supported in a build or release pipeline.
 
 ![Using the task as a gate in a release pipeline](media/gates.png)
 
+::: moniker range="> tfs-2018"
+
+## YAML snippet
+
+[!INCLUDE [temp](../includes/yaml/AzurePolicyV0.md)]
+
+::: moniker-end
+
 ## Arguments
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
