@@ -987,6 +987,24 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+* Clients
+
+  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
+  * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+  * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
+  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
+  * [IntelliJ](../java/download-intellij-plug-in.md)
+  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
+
+* Services
+  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
+  * Git service providers such as GitHub and Bitbucket Cloud
+  * Subversion
+
+::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
 
 * Clients
@@ -1006,25 +1024,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-* Clients
-
-  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
-  * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-  * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
-  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
-  * [IntelliJ](../java/download-intellij-plug-in.md)
-  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
-
-* Services
-  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
-  * Git service providers such as GitHub and Bitbucket Cloud
-  * Subversion
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 ### How do I replicate a pipeline?
 
@@ -1130,10 +1130,14 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops"
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 You can queue builds [automatically](build/triggers.md) or manually.
 
@@ -1156,6 +1160,25 @@ When you manually queue a build, you can, for a single run of the build:
   - Specify the source version as a [label](https://msdn.microsoft.com/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/library/ms181408.aspx).
 
   - Run a private build of a [shelveset](https://msdn.microsoft.com/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+You can queue builds [automatically](build/triggers.md) or manually.
+
+When you manually queue a build, you can, for a single run of the build:
+
+* Specify the [pool](agents/pools-queues.md) into which the build goes.
+
+* Add and modify some [variables](build/variables.md).
+
+* Add [demands](process/demands.md).
+
+* In a Git repository
+
+  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+  - Build a [commit](../repos/git/commits.md).
 
 ::: moniker-end
 
