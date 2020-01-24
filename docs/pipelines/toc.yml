@@ -631,7 +631,7 @@
       href: tasks/deploy/azure-monitor-alerts.md
     - name: Azure MySQL Deployment
       href: tasks/deploy/azure-mysql-deployment.md
-    - name: Azure Policy Security and Compliance Assessment
+    - name: Azure Policy
       href: tasks/deploy/azure-policy.md
     - name: Azure PowerShell
       href: tasks/deploy/azure-powershell.md
