@@ -23,7 +23,7 @@ Notification statistics show the top 10 most active subscriptions and top event 
 
 ## View notification statistics for organization
 
-1. [Navigate to the organization notifications settings page](navigating-the-ui.md#navigating-to-the-organization-level-notifications-page).
+1. [Open organization notifications settings](navigating-the-ui.md#open-org-level).
 2. Select the **Statistics** tab.
 3. Analyze the most active subscriptions and top event initiators.
 
