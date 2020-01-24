@@ -60,8 +60,6 @@ It is often required to build your app in multiple configurations. The following
 
 2. Select **Tasks** and click on the **agent job**. From the **Execution plan** section, select **Multi-configuration** to change the options for the job:
 
-   * Select **Multi-configuration**.
-
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
    * Specify **Maximum number of agents**
