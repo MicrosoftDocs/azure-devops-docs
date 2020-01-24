@@ -16,7 +16,7 @@ ms.date: 12/12/2019
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -51,7 +51,7 @@ When a project is first created, a default team and default team dashboard is cr
 > For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 
 

@@ -16,6 +16,6 @@ monikerRange: '>= tfs-2015'
 
 # Prepare permissions
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [include](_shared/v2/prepare-permissions.md)]
+[!INCLUDE [include](includes/v2/prepare-permissions.md)]

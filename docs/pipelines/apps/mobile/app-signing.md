@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2018'
 **Azure Pipelines | TFS 2018 | [TFS 2017.2](secure-certs.md)**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
@@ -198,10 +198,10 @@ Save your build pipeline, and you are all set! The build agent will now be able 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

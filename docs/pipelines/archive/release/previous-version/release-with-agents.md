@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Release your app to environments with deployment agents
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 If you want to use PowerShell, DSC or Chef to deploy your app, you must 
 use vNext environments; go 
@@ -119,6 +119,6 @@ and use its shortcut menu to **Paste Deployment Sequence**.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

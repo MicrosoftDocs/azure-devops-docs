@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Add stages, dependencies, & conditions  
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
@@ -58,7 +58,7 @@ and [queuing policies](#queuing-policies).
 ![stage](../release/media/definition-02.png)
 
 * * *
-* 
+
 ## Specify stages
 
 #### [YAML](#tab/yaml/)

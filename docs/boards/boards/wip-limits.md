@@ -17,7 +17,7 @@ ms.date: 02/14/2019
 
 # Work in Progress limits
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
@@ -27,7 +27,7 @@ You define WIP limits for each work stage, corresponding to each intermediate co
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 <a id="Initial WIP" />
 

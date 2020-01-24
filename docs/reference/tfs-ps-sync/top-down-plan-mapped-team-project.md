@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 ---
 
 # Top-down planning of business requirements within an enterprise project plan mapped to a project
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager, you can manage the high-level business requirements in Microsoft Project Server while the development team manages task details in Visual Studio Team Foundation Server. You can define requirements and view the rollup of resources and effort, and you can also view the impact on the schedule as the development team defines, estimates, and updates its detailed tasks. The synchronization engine for Team Foundation Server and Project Server maintains scheduling data and resource usage for requirements in the mapped enterprise project plan and project.  
   

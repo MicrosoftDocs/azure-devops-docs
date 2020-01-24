@@ -20,27 +20,27 @@ Check out the [Features](#features) list below for more.
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-162-update-links](_shared/repos/sprint-162-update-links.md)]
+[!INCLUDE [sprint-162-update-links](includes/repos/sprint-162-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-162-update-links](_shared/pipelines/sprint-162-update-links.md)]
+[!INCLUDE [sprint-162-update-links](includes/pipelines/sprint-162-update-links.md)]
 
 ### Reporting:
 
-[!INCLUDE [sprint-162-update-links](_shared/reporting/sprint-162-update-links.md)]
+[!INCLUDE [sprint-162-update-links](includes/reporting/sprint-162-update-links.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-162-update](_shared/repos/sprint-162-update.md)]
+[!INCLUDE [sprint-162-update](includes/repos/sprint-162-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-162-update](_shared/pipelines/sprint-162-update.md)]
+[!INCLUDE [sprint-162-update](includes/pipelines/sprint-162-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-162-update](_shared/reporting/sprint-162-update.md)]
+[!INCLUDE [sprint-162-update](includes/reporting/sprint-162-update.md)]
 
 ## Next steps
 
@@ -63,4 +63,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-162](_shared/signer/sprint-162.md)]
+[!INCLUDE [sprint-162](includes/signer/sprint-162.md)]

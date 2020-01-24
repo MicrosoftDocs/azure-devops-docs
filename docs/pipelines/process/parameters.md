@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Process parameters
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
 > 

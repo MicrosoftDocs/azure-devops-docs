@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 
 # Update an existing installation and version compatibility requirements
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You should follow the guidelines in this topic when you update an existing deployment to Visual Studio Team Foundation Server 2013 (TFS). Updating a deployment requires upgrading the instances of TFS, Microsoft Project Server, and Visual Studio clients.  
   

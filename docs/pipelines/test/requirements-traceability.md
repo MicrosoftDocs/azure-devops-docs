@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Requirements traceability
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 **Requirements traceability** is the ability to relate and document two or more phases of 
 a development process, which can then be traced both forward or backward from its origin.
@@ -27,7 +27,7 @@ A fundamental aspect of requirements traceability is association of the requirem
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -165,4 +165,4 @@ Referred to as **Planned testing**, automated tests can be [associated to the te
 in a test plan and executed from **Azure Test Plans**.
 Once associated, these tests contribute towards the quality metrics of the corresponding requirements.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

@@ -15,7 +15,7 @@ ms.date: 10/24/2019
 
 # Data available from Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and in preview for Azure DevOps Server 2019. 
 

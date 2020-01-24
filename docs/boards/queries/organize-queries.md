@@ -18,7 +18,7 @@ ms.date: 10/16/2019
 
 # Organize queries, add a query folder    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -26,11 +26,11 @@ Organize your personal or shared queries by adding a query folder. You can then 
 > To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
  
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 
 ## Add a query folder, move items into a folder 

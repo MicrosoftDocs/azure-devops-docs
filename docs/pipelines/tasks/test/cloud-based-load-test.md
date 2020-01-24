@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Cloud-based Load Test task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [loadtest-deprecated-include](../../../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
 Use this task in a build or release pipeline to run a load test in the cloud, to understand, test, and validate your app's performance. 
 The task uses the Cloud-based Load Test Service based in
@@ -26,7 +26,7 @@ performance by generating load on it.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ The agent must have the following capability:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.md)]
+[!INCLUDE [temp](../includes/yaml/RunLoadTestV1.md)]
 
 ::: moniker-end
 
@@ -87,14 +87,14 @@ with information about how many violations will cause
 a failure to be reported. For more details, see: 
 [How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/library/ff426917.aspx).
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

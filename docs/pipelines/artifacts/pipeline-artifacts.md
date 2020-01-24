@@ -25,7 +25,7 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 
 ## Publishing artifacts
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 

@@ -38,7 +38,7 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 ## Editing permissions for a feed
 
-[!INCLUDE [edit-feed](../_shared/edit-feed.md)]
+[!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
 Select **Permissions**.
 

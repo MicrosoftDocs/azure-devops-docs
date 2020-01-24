@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Download GitHub Release task
 
-[!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
 Use this task in your pipeline to download assets from your [GitHub release](https://help.github.com/categories/releases/) as part of your CI/CD pipeline.
 
@@ -26,7 +26,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadGitHubReleaseV0.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadGitHubReleaseV0.md)]
 
 ::: moniker-end
 

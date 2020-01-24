@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Define variables
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
 As the name suggests, the value of a variable may change from run to run or job to job of your pipeline.
@@ -140,7 +140,7 @@ variables:
 
 ### Access variables through the environment
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -159,7 +159,7 @@ You can set a variable for a build pipeline by following these steps:
 Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
 To use a variable as an input to a task, wrap it in `$()`.
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 * * *
 <h2 id="secret-variables">Set secret variables</h2>
@@ -169,7 +169,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 You should not set secret variables in your YAML file. Instead, you should set them in the pipeline editor using the web interface. These variables are scoped to the pipeline in which you set them.
 
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
 The following example shows how to use a secret variable called `mySecret` from a script.
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
@@ -245,7 +245,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
 Imagine you want to use a secret variable called `mySecret` from a script.
 Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
@@ -491,7 +491,7 @@ To set a variable from a script, you use the `task.setvariable` logging command.
 This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
-[!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+[!INCLUDE [include](includes/set-variables-in-scripts.md)]
 
 ### Using variables as task inputs
 

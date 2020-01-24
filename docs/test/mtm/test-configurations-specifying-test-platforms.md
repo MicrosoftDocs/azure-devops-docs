@@ -14,10 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Test configurations: specifying test platforms
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 **For Azure DevOps and TFS, see [Test different configurations](../test-different-configurations.md).**
 
@@ -25,7 +25,7 @@ Your users will probably install or run your app on a wide variety of configurat
 
 You might draw up a schematic matrix of the combinations that you want to test:
 
-![Test matrix of browser and operating system configurations](../media/_shared/testing-configurations-schematic.png)
+![Test matrix of browser and operating system configurations](../media/shared/testing-configurations-schematic.png)
 
 Use Microsoft Test Manager to specify test configurations. But you can still run the tests either with the web portal or with Microsoft Test Manager.
 
@@ -106,4 +106,4 @@ and then play them back on another.
 If you play back on a different browser, choose the **Change browser for playback** option under the play menu in test runner. 
 However, be aware that record/playback doesn't work for all browsers and applications. In some cases you might have to play back some steps manually.
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

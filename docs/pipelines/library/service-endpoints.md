@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -532,7 +532,7 @@ Defines a connection to the Jenkins service.
 
 [How do I create a new service connection?](#create-new)
 
-Also see [Azure Pipelines Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
+Also see [Azure Pipelines Integration with Jenkins](https://devblogs.microsoft.com/devops/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 *****
@@ -834,4 +834,4 @@ available through extensions are:
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

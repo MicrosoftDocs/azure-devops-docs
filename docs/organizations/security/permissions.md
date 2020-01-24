@@ -16,7 +16,7 @@ ms.date: 12/18/2019
 
 # Permissions, users, and groups in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 

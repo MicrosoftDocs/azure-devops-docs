@@ -15,7 +15,7 @@ ms.date: 11/20/2019
 
 # Add AD/Azure AD users or groups to a built-in security group
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
 
@@ -168,7 +168,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Project Settings**.
 
-   ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)   
+   ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)   
 
 3. Open **Security** and under the **Groups** section, choose one of the following:
     - To add users who require read-only access to the project, choose **Readers**.

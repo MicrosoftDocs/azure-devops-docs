@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Build and deploy to Azure Kubernetes Service
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
  Azure Kubernetes Service manages your hosted Kubernetes environment, making it quicker and easier for you to deploy and manage containerized applications. This service also eliminates the burden of ongoing operations and maintenance by provisioning, upgrading, and scaling resources on demand, without taking your applications offline.
 
@@ -22,9 +22,9 @@ In this step-by-step guide, you'll learn how to create a pipeline that continuou
 
 ## Prerequisites
 
-[!INCLUDE [include](../../_shared/prerequisites.md)]
+[!INCLUDE [include](../../includes/prerequisites.md)]
 
-[!INCLUDE [include](../../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../../includes/azure-prerequisites.md)]
 
 ## Get the code
 
@@ -36,7 +36,7 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 
 ## Create the Azure resources
 
-[!INCLUDE [include](../_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](../includes/sign-in-azure-cli.md)]
 
 ### Create a container registry
 
@@ -57,14 +57,14 @@ az aks create \
 ```
 
 ## Sign in to Azure Pipelines
-[!INCLUDE [include](../_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../_shared/create-project.md)]
+[!INCLUDE [include](../includes/create-project.md)]
 
 
 ## Create the pipeline
 ### Connect and select repository
-[!INCLUDE [include](../_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Deploy to Azure Kubernetes Service**. 
 
@@ -194,7 +194,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
 ```
 
 
-[!INCLUDE [include](../_shared/clean-up-resources.md)]
+[!INCLUDE [include](../includes/clean-up-resources.md)]
 
 ```azurecli-interactive
 az group delete --name MC_myapp-rg_myapp_eastus

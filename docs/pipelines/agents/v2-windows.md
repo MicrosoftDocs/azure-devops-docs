@@ -31,7 +31,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you'll nee
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
@@ -59,7 +59,7 @@ running 4 self-hosted agents apiece.
 
 <h2 id="permissions">Prepare permissions</h2>
 
-[!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
+[!INCLUDE [permissions](includes/v2/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -72,7 +72,7 @@ running 4 self-hosted agents apiece.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -98,7 +98,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
 
 1. Click **Download agent**.</li>
 
@@ -124,7 +124,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -193,13 +193,23 @@ If you choose to run as a service (which we recommend), the username you run as 
 
 ### Run interactively
 
- If you configured the agent to run interactively, to run it:
+If you configured the agent to run interactively, to run it:
 
  ```ps
  .\run.cmd
  ```
 
 To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to restart it. 
+
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+
+ ```ps
+ .\run.cmd --once
+ ```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ### Run as a service
 
@@ -217,7 +227,7 @@ To restart the agent, right-click the entry and choose **Restart**.
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
-[!INCLUDE [include](_shared/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v2/replace-agent.md)]
 
 ## Remove and re-configure an agent
 
@@ -234,7 +244,7 @@ After you've removed the agent, you can [configure it again](#download-configure
 The agent can be set up from a script with no human intervention.
 You must pass `--unattended` and the answers to all questions.
 
-[!INCLUDE [unattend](./_shared/v2/unattended-config.md)]
+[!INCLUDE [unattend](./includes/v2/unattended-config.md)]
 
 `.\config --help` always lists the latest required and optional responses.
 
@@ -248,13 +258,13 @@ To learn about other options:
 
 The help provides information on authentication alternatives and unattended configuration.
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 ::: moniker range="tfs-2017"
 
@@ -268,7 +278,7 @@ The help provides information on authentication alternatives and unattended conf
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v2/qa-firewall.md)]
 ::: moniker-end
 
 ### How do I run the agent with self-signed certificate?
@@ -298,15 +308,15 @@ MyEnv4=MyEnvValue4
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-[!INCLUDE [include](_shared/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v2/qa-urls.md)]
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [include](../_shared/qa-versions.md)]
+[!INCLUDE [include](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

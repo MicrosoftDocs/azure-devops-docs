@@ -18,59 +18,59 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [sprint-147-update-links](_shared/general/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/general/sprint-147-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-147-update-links](_shared/boards/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/boards/sprint-147-update-links.md)]
 
 Azure Repos:
 
-[!INCLUDE [sprint-147-update-links](_shared/repos/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/repos/sprint-147-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-147-update-links](_shared/pipelines/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/pipelines/sprint-147-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-147-update-links](_shared/artifacts/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/artifacts/sprint-147-update-links.md)]
 
 Reporting:
 
-[!INCLUDE [sprint-147-update-links](_shared/reporting/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/reporting/sprint-147-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-147-update-links](_shared/wiki/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](includes/wiki/sprint-147-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-147-update](_shared/general/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/general/sprint-147-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-147-update](_shared/boards/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/boards/sprint-147-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-147-update](_shared/repos/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/repos/sprint-147-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-147-update](_shared/pipelines/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/pipelines/sprint-147-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-147-update](_shared/artifacts/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/artifacts/sprint-147-update.md)]
 
 Reporting
 
-[!INCLUDE [sprint-147-update](_shared/reporting/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/reporting/sprint-147-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-147-update](_shared/wiki/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](includes/wiki/sprint-147-update.md)]
 
 ## Next steps
 

@@ -16,11 +16,11 @@ ms.date: 12/20/2018
 
 # Index to system field descriptions 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 Use this index to look up a description of a field used to track an issue, task, or epic. This reference includes all fields defined for the Basic process. If you use another process&mdash;such as Agile, CMMI, or Scrum&mdash;see [Work item field index](work-item-field.md) for additional field definitions.
  
-[!INCLUDE [temp](../../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../../includes/basic-process-note.md)] 
 
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md). 
 

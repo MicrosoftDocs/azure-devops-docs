@@ -15,7 +15,7 @@ ms.date: 03/15/2019
 
 # Set permissions and access for work tracking
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 > [!NOTE]
@@ -163,7 +163,7 @@ You define both areas and iterations for a project from the **Project Settings>W
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horz nav](../../_shared/media/settings/open-project-settings-horz.png)  
+    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)  
 
 2. Choose **Work** and then **Areas**.  
 
@@ -177,7 +177,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
 
-    ![Open the project administration page](../../_shared/media/settings/open-project-settings-tfs-2015.png)
+    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 1. Choose the context menu for the node you want to manage.  
 

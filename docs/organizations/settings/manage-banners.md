@@ -15,7 +15,7 @@ ms.date: 08/15/2019
 
 # Add and manage information banners
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
 
 A quick and effective way to communicate with your organization is through information banners. You can specify one of three types of banners: error, information, and warning. Only one banner, the last one added or updated, is displayed at a time. Banners remain in effect until their expiration date. 
 

@@ -16,11 +16,11 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy JavaScript and Node.js apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="tfs-2017"
 
@@ -50,9 +50,9 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ### Create the pipeline
 

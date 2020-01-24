@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Review test results
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 Automated tests can be configured to run as part of a build or release for various [languages](../ecosystems/javascript.md).
 Test reports provide an effective and consistent way to view the tests results executed using different test frameworks,
@@ -42,7 +42,7 @@ Read the [glossary](./test-glossary.md) to understand test report terminology.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -299,4 +299,4 @@ The following features are not available for inferred test reports:
 * [Trace test requirements](requirements-traceability.md)
 * [Review code coverage results](review-code-coverage-results.md)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

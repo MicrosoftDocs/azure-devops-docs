@@ -20,14 +20,14 @@ monikerRange: '>= tfs-2017'
 You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 You can specify conditions under which a step, job, or stage will run.
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * Custom conditions
 
 By default, steps, jobs, and stages run if all previous steps/jobs have succeeded.
@@ -57,7 +57,7 @@ YAML is not yet supported in TFS.
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
 you can specify the conditions under which the task or job will run:
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * Custom conditions
 
 * * *

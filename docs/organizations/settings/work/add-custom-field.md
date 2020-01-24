@@ -16,22 +16,22 @@ ms.date: 08/12/2019
 
 # Add a custom field to a work item type (Inheritance process)    
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and updating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/create-inherited-process.md)]
+[!INCLUDE [temp](../includes/create-inherited-process.md)]
 
 <a id="add-wit">  </a>
 ## Add a field 
@@ -115,7 +115,7 @@ We recommend that you create a test project and apply your customized  inherited
 	
 
 
-[!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
+[!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
 
 ## Try this next

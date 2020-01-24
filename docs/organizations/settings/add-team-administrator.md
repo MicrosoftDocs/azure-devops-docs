@@ -16,7 +16,7 @@ ms.date: 11/01/2019
 
 # Add a team administrator 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 <a id="add-team-admin">  </a>  
@@ -54,7 +54,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 
 1. Choose **Project settings** and choose **Teams**. 
 
-   ![Open Project settings, and then Teams](media/_shared/open-project-settings-teams-preview.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
 2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
 
@@ -72,7 +72,7 @@ From the web portal, open the admin page for the team.
 
 1. Choose **Project settings** and choose **Teams**. 
 
-   ![Open Project settings, and then Teams](media/_shared/open-project-settings-team-new-nav.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
 
@@ -92,7 +92,7 @@ From the web portal, open the admin page for the team.
 
 1. Choose **Project Settings** and choose **Teams**. 
 
-      ![Open Project settings, and then Teams](media/_shared/open-project-settings-team-new-nav.png)
+      ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
 
@@ -132,7 +132,7 @@ From the web portal, open the admin page for the team.
 1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, TFS, Open Admin context, project level](../../_shared/media/settings/open-admin-page-tfs2015.png)
+	> ![Web portal, TFS, Open Admin context, project level](../../media/settings/open-admin-page-tfs2015.png)
 
 	If you choose the ![ ](../../media/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 

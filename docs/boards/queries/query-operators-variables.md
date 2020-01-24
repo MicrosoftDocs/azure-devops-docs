@@ -17,7 +17,7 @@ ms.date: 02/04/2019
 
 # Query fields, operators, and macros
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
@@ -383,7 +383,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
+[!INCLUDE [temp](../includes/rest-apis-queries.md)] 
 
 
 <!---

@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Visual Studio Build task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ msbuild, visualstudio
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VSBuildV1.md)]
+[!INCLUDE [temp](../includes/yaml/VSBuildV1.md)]
 
 ::: moniker-end
 
@@ -160,13 +160,13 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/msbuild_qa.md)]
+[!INCLUDE [temp](../includes/msbuild_qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

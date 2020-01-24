@@ -15,10 +15,10 @@ monikerRange: '>=tfs-2017'
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 You can build every commit and pull request to your Git repository using Azure Pipelines or TFS. In this tutorial, we will discuss additional considerations when building multiple branches in your Git repository. You will learn how to:

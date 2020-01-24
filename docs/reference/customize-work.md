@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Customize your work tracking experience 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize projects, which impacts all teams, depends on the process model you use.  
 

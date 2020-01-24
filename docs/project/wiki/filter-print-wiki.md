@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 # Filter the contents of a wiki or print a page
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 To focus on a single page or several pages, use the Filter pages feature in the TOC. Or, to find pages containing a phrase or keyword, you can use the [Search wiki in this project](search-wiki.md).
 

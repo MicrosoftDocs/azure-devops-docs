@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Configure run or build numbers
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`.
 
