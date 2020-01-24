@@ -51,7 +51,7 @@ For self-hosted agents you can specify preferred version of Azure PowerShell usi
 
 ## Samples
 
-[!INCLUDE [temp](../_shared/yaml/AzurePowerShellV4Sample.md)]
+[!INCLUDE [temp](../includes/yaml/AzurePowerShellV4Sample.md)]
 
 ## Troubleshooting
 ### Script worked locally, but failed in the pipeline
