@@ -173,7 +173,7 @@ Run ID    Number      Status      Result    Pipeline ID    Pipeline Name        
 
 ### Update a pipeline
 
-You can update an existing pipeline with the [az pipelines update](/cli/azure/ext/azure-devops/pipelinest#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+You can update an existing pipeline with the [az pipelines update](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
 ```CLI 
 az pipelines update [--branch]
