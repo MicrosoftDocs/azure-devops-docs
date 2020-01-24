@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task based build system.
+Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task-based build system.
 
 ## Demands
 
@@ -37,7 +37,7 @@ gulp
 |Argument|Description|
 |--- |--- |
 |`gulpFile` <br/>gulp File Path|(Required) Relative path from the repo root of the gulp file script that you want to run. <br/>Default value: gruntfile.js|
-|`targets` <br/>gulp Task(s)|(Optional) Space delimited list of tasks to run. If not specified, the default task will run.|
+|`targets` <br/>gulp Task(s)|(Optional) Space-delimited list of tasks to run. If not specified, the default task will run.|
 |`arguments` <br/>Arguments|Additional arguments passed to gulp. <br/>Tip: --gulpfile is not needed since already added via gulpFile input above|
 |`cwd` <br/>Working Directory|(Optional) Current working directory when the script is run. Defaults to the folder where the script is located. <br/>Argument aliases: `workingDirectory`|
 |`gulpjs` <br/>gulp.js location|(Optional) Path to an alternative gulp.js, relative to the working directory. <br/>Argument aliases: `workingDirectory`|
@@ -46,7 +46,7 @@ gulp
 |`testRunTitle` <br/>Test Run Title|(Optional) Provide a name for the test run|
 |`enableCodeCoverage` <br/>Enable Code Coverage|(Optional) Select this option to enable Code Coverage using Istanbul <br/>Default value: false|
 |`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
-|`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files which you want to hookRequire ()|
+|`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files, that you want to hookRequire ()|
 |`testFiles` <br/>Test Script Files|(Required) Provide the path to your test script files <br/>Default value: test/*.js|
 
 ## Example
