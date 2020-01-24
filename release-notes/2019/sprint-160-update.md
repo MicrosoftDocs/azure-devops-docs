@@ -22,43 +22,43 @@ Check out the [Features](#features) list below for more.
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-160-update-links](_shared/repos/sprint-160-update-links.md)]
+[!INCLUDE [sprint-160-update-links](includes/repos/sprint-160-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-160-update-links](_shared/pipelines/sprint-160-update-links.md)]
+[!INCLUDE [sprint-160-update-links](includes/pipelines/sprint-160-update-links.md)]
 
 ### Azure Artifacts:
 
-[!INCLUDE [sprint-160-update-links](_shared/artifacts/sprint-160-update-links.md)]
+[!INCLUDE [sprint-160-update-links](includes/artifacts/sprint-160-update-links.md)]
 
 ### Reporting:
 
-[!INCLUDE [sprint-160-update-links](_shared/reporting/sprint-160-update-links.md)]
+[!INCLUDE [sprint-160-update-links](includes/reporting/sprint-160-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-160-update-links](_shared/wiki/sprint-160-update-links.md)]
+[!INCLUDE [sprint-160-update-links](includes/wiki/sprint-160-update-links.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-160-update](_shared/repos/sprint-160-update.md)]
+[!INCLUDE [sprint-160-update](includes/repos/sprint-160-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-160-update](_shared/pipelines/sprint-160-update.md)]
+[!INCLUDE [sprint-160-update](includes/pipelines/sprint-160-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-160-update](_shared/artifacts/sprint-160-update.md)]
+[!INCLUDE [sprint-160-update](includes/artifacts/sprint-160-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-160-update](_shared/reporting/sprint-160-update.md)]
+[!INCLUDE [sprint-160-update](includes/reporting/sprint-160-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-160-update](_shared/wiki/sprint-160-update.md)]
+[!INCLUDE [sprint-160-update](includes/wiki/sprint-160-update.md)]
 
 ## Next steps
 
@@ -81,4 +81,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-160](_shared/signer/sprint-160.md)]
+[!INCLUDE [sprint-160](includes/signer/sprint-160.md)]

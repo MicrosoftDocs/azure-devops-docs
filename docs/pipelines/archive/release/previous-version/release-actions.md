@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Release actions to deploy an app
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You add release actions to define the deployment sequence for each stage 
 of your release. Each action uses a specific tool to run a command with 
@@ -298,6 +298,6 @@ about this tool, go **[here](release-actions/release-action-tools.md)**.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

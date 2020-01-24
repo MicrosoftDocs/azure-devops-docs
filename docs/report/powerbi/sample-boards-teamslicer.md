@@ -17,7 +17,7 @@ ms.date: 08/07/2019
 
 # Add a Team slicer to a Power BI report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Often Power BI reports include data from multiple teams for aggregation and comparison. This article shows you how to add a Team slicer to an existing Power BI report. The Team slicer allows you to filter the report data by Teams, rather than Area Path.
 
@@ -26,7 +26,7 @@ Often Power BI reports include data from multiple teams for aggregation and comp
 > All of the queries provided in the sample reports already include **"AreaSK"**. 
 > If you have created your own query, make sure it returns "AreaSK" in either the $select or groupby() clauses.
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 
@@ -37,7 +37,7 @@ You'll need to add an additional query to your Power BI report. The query below 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -52,7 +52,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
@@ -65,7 +65,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 * {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 
@@ -104,7 +104,7 @@ The following table describes each part of the query.
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - expanding team column](media/odatapowerbi-expandteam3.png)
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 ## Create a Relationship using "AreaSK"
 
@@ -145,7 +145,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -160,7 +160,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
@@ -173,8 +173,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v1.0/Areas?
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

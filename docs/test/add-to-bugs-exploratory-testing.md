@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2015'
 
 # Add findings to existing bugs with exploratory testing
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
  
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title,
 as you file a new bug. You can choose to continue creating a new bug or add
 your findings to an existing bug.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 1. As you type the title for a new bug, in the background the extension 
    searches for similar bugs that might be related to the issue you've found
@@ -74,4 +74,4 @@ After you file bugs, create tasks, or create test cases, all these show up in th
 * [Exploratory testing with Microsoft Test Manager](mtm/exploratory-testing-using-microsoft-test-manager.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

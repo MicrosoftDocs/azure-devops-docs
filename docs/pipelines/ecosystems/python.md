@@ -53,9 +53,9 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
 

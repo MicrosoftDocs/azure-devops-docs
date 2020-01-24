@@ -16,7 +16,7 @@ ms.date: 08/15/2019
 
 # Add columns to your Kanban board
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 Kanban's number one practice is to visualize the flow of work. Accordingly, your number one task is to visualize your team's workflow. You do this by identifying the types of work and handoffs that occur regularly as your team moves items off the backlog and into a shippable state.
 
@@ -46,7 +46,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 <a id="map-the-flow-of-work">  </a>
 
@@ -92,7 +92,7 @@ Also, to handoff work to another team member, simply reassign it directly from t
 
 And, team members receiving the handoff can [set alerts](../queries/alerts-and-notifications.md) to receive immediate email notifications of their newly assigned work. 
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 
 ## Change priorities

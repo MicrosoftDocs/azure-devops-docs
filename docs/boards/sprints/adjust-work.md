@@ -18,7 +18,7 @@ ms.date: 2/14/2019
 
 # 4. Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 <a id="adjust-work">  </a>
 
@@ -35,7 +35,7 @@ Use this article to learn how to:
 > * Quickly reassign tasks to another team member    
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## Open a Sprint backlog for a team 
 

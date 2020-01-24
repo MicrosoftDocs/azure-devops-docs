@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD) groups and Azure DevOps groups. You can add a group rule to assign an access level or extension to a group. Resources in Azure DevOps are assigned to all members of the group. Group rules can also be used to add users to team projects and other specific groups, like Contributors, Readers, and Administrators.
 
@@ -34,7 +34,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Go to the **Permissions** tab, and then check the membership of the **Project Collection Administrators** group.
 
@@ -95,7 +95,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 
@@ -120,7 +120,7 @@ Direct assignments are removed from the users.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 

@@ -18,7 +18,7 @@ ms.date: 02/14/2019
 ---
 
 # Split columns
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
 You use your Kanban board to visualize the flow of work, and monitor how items are or aren't progressing. Because each column corresponds to a stage of work, you can quickly see the number of items in progress at any each stage.  
 
@@ -32,7 +32,7 @@ Split columns lets your team implement a pull mechanism within the workflow proc
 
 By contrast, with split columns, your team knows exactly how many items sit idle, waiting for work to begin. You now have greater visibility into the quantity of items that sit idle at each stage throughout your workflow process. 
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 ## Push items into Done, pull items into Doing 
 

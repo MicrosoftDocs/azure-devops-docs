@@ -17,7 +17,7 @@ ms.date: 03/15/2019
 
 # Expedite work with swimlanes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
 Your Kanban board supports your ability to visualize the flow of work as it moves from just defined to completed. When you add swimlanes, you can also visualize the status of work that supports different service-level classes. You can create a swimlane to represent any other dimension that supports your tracking needs.    
 
@@ -28,7 +28,7 @@ For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked
 > [!TIP]
 > Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../media/icons/Arrow_Up.png)![ ](../media/icons/Arrow_Down.png) up/down arrows. For more tips, see [kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 ## Types of swimlanes  
 
@@ -72,7 +72,7 @@ You can also focus on a single swimlane by collapsing all other lanes.
 
 ::: moniker-end   
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 	
 ## Add or remove a swimlane 
 

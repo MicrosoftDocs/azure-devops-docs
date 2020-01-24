@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Change the time zone in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this article, learn how to change the time zone for your organization or your user profile.
 
@@ -33,7 +33,7 @@ If your Azure DevOps organization time zone is set to EST, but your user profile
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Go to **Overview**, and then select the time zone from the dropdown menu.
 

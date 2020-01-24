@@ -17,7 +17,7 @@ ms.date: 12/17/2018
 
 # Search  Wiki
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 With wiki search, you can search within a project wiki or across all wikis created for your organization.
 

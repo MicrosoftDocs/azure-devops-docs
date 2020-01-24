@@ -14,7 +14,7 @@ ms.date: 09/28/2018
 
 # TF237002: Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Error message TF237002 or TF400593 appears when a Team Foundation add-in has been disabled in an Office client, or Office Primary Interop Assemblies are not installed or were damaged after they were installed.  
 

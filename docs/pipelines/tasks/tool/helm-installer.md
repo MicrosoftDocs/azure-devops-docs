@@ -21,7 +21,7 @@ This task can be used for installing a specific version of helm binary on agents
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/HelmInstallerV1.md)]
+[!INCLUDE [temp](../includes/yaml/HelmInstallerV1.md)]
 
 ::: moniker-end
 

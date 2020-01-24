@@ -16,7 +16,7 @@ ms.date: 10/14/2019
 
 # Backlogs, portfolios, and Agile project management 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 
 ::: moniker range=">= tfs-2017"
@@ -62,7 +62,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ::: moniker-end 
 
-[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
 ## Product and portfolio backlogs 
 
@@ -164,9 +164,9 @@ For example, here the Customer Service team has organized several backlog items 
 
 ::: moniker-end 
 
-[!INCLUDE [temp](../_shared/velocity-section.md)]
+[!INCLUDE [temp](../includes/velocity-section.md)]
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 <a id="multi-team">  </a>
 
@@ -288,7 +288,7 @@ To learn more about hierarchical team and backlog structures, see [Portfolio man
 
 For TFS 2018 and earlier versions, the Kanban board only shows the leaf node with nested items of a same-category hierarchy. For all versions, sprint backlogs and taskboards only show the last node in a same-category hierarchy, called the leaf node. 
 
-[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]  
+[!INCLUDE [temp](../includes/display-leaf-nodes.md)]  
 
 To learn more, see [Fix re-ordering and nesting issues, How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes).
 
@@ -301,7 +301,7 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add users to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+[!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 ## Try this next  
 

@@ -19,7 +19,7 @@ Use this task in a build or release pipeline to create a NuGet package from eith
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -31,7 +31,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../../_shared/yaml/NuGetPackagerV0.md)]
+[!INCLUDE [temp](../../includes/yaml/NuGetPackagerV0.md)]
 
 ::: moniker-end
 
@@ -104,12 +104,12 @@ Semicolon delimited list of properties used to build the package. For example, y
 </td>
 </tr>
 
-[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 </table>
 
 ## Examples
 
-[!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
+[!INCLUDE [temp](../../includes/nuget-create-step-examples.md)]

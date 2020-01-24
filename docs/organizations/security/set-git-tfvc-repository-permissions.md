@@ -16,7 +16,7 @@ ms.date: 06/24/2019
 
 # Set repository permissions for Git or TFVC
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
@@ -46,7 +46,7 @@ For a description of each security group and permission level, see [Permissions 
 
 You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/overview.md).
 
-[!INCLUDE [temp](_shared/code-git.md)]
+[!INCLUDE [temp](includes/code-git.md)]
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](includes/code-tfvc.md)]
 
 <a id="git-repository">  </a>
 
@@ -98,7 +98,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Project Settings, horizontal nav](../../_shared/media/settings/open-project-settings-horz.png)  
+	> ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 	
 2. Choose **Version Control**.
 

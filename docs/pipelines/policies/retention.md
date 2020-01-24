@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -280,8 +280,8 @@ Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
 governed by the retention settings of the release they belong to.
 
-<!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-agents.md)] -->
 
-<!-- [!INCLUDE [temp](../_shared/qa-versions.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-versions.md)] -->
 
 <!-- ENDSECTION -->

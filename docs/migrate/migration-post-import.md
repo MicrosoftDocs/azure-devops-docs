@@ -15,7 +15,7 @@ ms.date: 10/21/2019
 
 # Post import
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.

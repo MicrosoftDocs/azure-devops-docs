@@ -12,12 +12,12 @@ ms.date: 01/13/2020
 
 ## Features
 
-[!INCLUDE [sprint-163-update-links](../_shared/general/sprint-163-update-links.md)]
+[!INCLUDE [sprint-163-update-links](../includes/general/sprint-163-update-links.md)]
 
-[!INCLUDE [sprint-163-update](../_shared/general/sprint-163-update.md)]
+[!INCLUDE [sprint-163-update](../includes/general/sprint-163-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 
-[!INCLUDE [sprint-163](../_shared/signer/sprint-163.md)]
+[!INCLUDE [sprint-163](../includes/signer/sprint-163.md)]

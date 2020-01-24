@@ -16,13 +16,13 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Set up billing for your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this quickstart, learn to set up billing for your organization. Do so before making purchases, so you have it in place once you're ready to buy.
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
@@ -38,19 +38,19 @@ In this quickstart, learn to set up billing for your organization. Do so before 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-    ![Select Billing from Organization settings](media/_shared/select-billing-organization-settings.png)
+    ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
 
 4. Select **Set up billing**.
 
-   ![Select Set up billing](media/_shared/set-up-billing.png)
+   ![Select Set up billing](media/shared/set-up-billing.png)
 
 5. Select your Azure subscription, and then select **Save**.
 
-   ![Select your Azure subscription](media/_shared/select-azure-subscription.png)
+   ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
 Billing is set up.
 

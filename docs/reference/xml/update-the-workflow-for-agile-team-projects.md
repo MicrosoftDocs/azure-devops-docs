@@ -62,7 +62,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 #### To update the workflow states and transitions for User Story  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
   
 1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   

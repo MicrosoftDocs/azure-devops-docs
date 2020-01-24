@@ -15,7 +15,7 @@ ms.date: 10/10/2019
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 By using Code Search you can do the following tasks:
 
@@ -133,7 +133,7 @@ You can use more than one `?` wildcard to match more than one character.
 
 ------------------
 
-![Warning](media/_shared/Warning-hightop.png) **No results found for ...**  
+![Warning](media/shared/Warning-hightop.png) **No results found for ...**  
 If there is a very large number of hits when using a wildcard search, such 
 as when using a very simple wildcard search string, you may see a message that no 
 matching files were found. In this case, narrow your search to reduce the number
@@ -305,8 +305,8 @@ Some more examples of search strings are:
 
 Open the search results in a new browser tab from either search box by
 pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/_shared/start-search-icon.png) icon.
+![start search icon](media/shared/start-search-icon.png) icon.
 In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

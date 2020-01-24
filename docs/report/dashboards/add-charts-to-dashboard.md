@@ -15,7 +15,7 @@ ms.date: 08/30/2019
 
 # Add charts to a dashboard
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 
 ::: moniker range="tfs-2013"

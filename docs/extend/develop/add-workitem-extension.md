@@ -27,7 +27,7 @@ If you're just getting started and haven't created an extension, refer to the [C
 
 See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <a name="addagroup"></a>
 
@@ -120,7 +120,7 @@ This sample shows how to register an object that is called when various events h
     });
 ```     
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="addapage"></a>
 ## Add a page
@@ -159,7 +159,7 @@ To add a page to the work item form, add a contribution to your extension manife
 
 See the JavaScript sample in the form group section. The name of the registered object should match the `id` of the contribution.
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="showcontributions"></a>
 
@@ -233,7 +233,7 @@ To add an observer to the work item which listens to the work item events, add t
 |--------------|-----------------------|
 | uri          | URI to a page that hosts the scripts listening to events |
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 ### HTML/JavaScript sample
 

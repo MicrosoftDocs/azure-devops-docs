@@ -14,7 +14,7 @@ ms.date: 03/31/2017
 
 # Change the workflow for a work item type
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work&mdash;requirements, tasks, code defects&mdash;to support software development.  
 
@@ -31,7 +31,7 @@ The workflow determines the logical progression and regression of work that team
 > For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 
 To customize the workflow, follow these two steps:   

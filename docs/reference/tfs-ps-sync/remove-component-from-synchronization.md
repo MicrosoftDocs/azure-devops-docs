@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Remove a component from participating in data synchronization
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You can remove components that you have configured to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server. To permanently shut down synchronization, you must unmap each project collection that is mapped and unregister each instance of Project Web Access or Project Web App (PWA) that is registered to TFS.  
   

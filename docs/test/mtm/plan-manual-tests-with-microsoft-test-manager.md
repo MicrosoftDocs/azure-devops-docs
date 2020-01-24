@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2015'
 
 # Plan manual tests with Microsoft Test Manager
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 At the start of a sprint, find out what you need to test. Discussing test cases is a great way to help the team understand the detail of what your users need. Tests planned in this way provide a clear target for the development team.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 > **TIP**
 > You can also use [the web portal to plan manual tests](../create-a-test-plan.md). It is generally more convenient for creating test cases.  
@@ -79,4 +79,4 @@ Test suites are folders inside a test plan that help you organize tests. When yo
   
 - [Test different configurations](../test-different-configurations.md)  
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

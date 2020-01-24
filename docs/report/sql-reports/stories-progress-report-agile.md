@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 
 # Stories Progress Report (Agile)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Stories Progress report lists all user stories, filtered by product area and iteration in order of importance.  
   

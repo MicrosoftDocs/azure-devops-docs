@@ -15,7 +15,7 @@ ms.date: 02/26/2018
 
 # Update a customized process template to access new features
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). To update a project that uses the Hosted XML process, see [Import process](../organizations/settings/work/import-process/import-process.md).

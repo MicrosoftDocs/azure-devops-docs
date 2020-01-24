@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Applying filters to historical data
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]. 
+[!INCLUDE [temp](../includes/version-azure-devops.md)]. 
 
 It's important to understand how filters are applied to historical revisions of the work item. This is especially relevant when reporting on trends. For example, tracking over time the number of Active Bugs or the number of Features with the tag "Customer". 
 

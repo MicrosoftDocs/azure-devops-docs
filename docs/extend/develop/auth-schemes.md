@@ -21,7 +21,7 @@ in any custom endpoint & support connecting to the external service.
 
 See the following authentication schemes that are part of the closed set.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Basic authentication
 

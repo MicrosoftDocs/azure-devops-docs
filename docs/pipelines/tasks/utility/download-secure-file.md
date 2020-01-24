@@ -29,7 +29,7 @@ It is unnecessary to use this task with the [Install Apple Certificate](install-
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadSecureFileV1.md)]
 
 ::: moniker-end
 

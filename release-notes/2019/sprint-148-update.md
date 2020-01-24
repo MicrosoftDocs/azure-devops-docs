@@ -20,43 +20,43 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [sprint-148-update-links](_shared/general/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](includes/general/sprint-148-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-148-update-links](_shared/boards/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](includes/boards/sprint-148-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-148-update-links](_shared/pipelines/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](includes/pipelines/sprint-148-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-148-update-links](_shared/artifacts/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](includes/artifacts/sprint-148-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-148-update-links](_shared/wiki/sprint-148-update-links.md)]
+[!INCLUDE [sprint-148-update-links](includes/wiki/sprint-148-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-148-update](_shared/general/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](includes/general/sprint-148-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-148-update](_shared/boards/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](includes/boards/sprint-148-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-148-update](_shared/pipelines/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](includes/pipelines/sprint-148-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-148-update](_shared/artifacts/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](includes/artifacts/sprint-148-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-148-update](_shared/wiki/sprint-148-update.md)]
+[!INCLUDE [sprint-148-update](includes/wiki/sprint-148-update.md)]
 
 ## Next steps
 

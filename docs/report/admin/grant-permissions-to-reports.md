@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Grant permissions to view or create SQL Server reports in TFS
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
 

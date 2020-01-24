@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 
 # Sprint Burndown (Scrum)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By reviewing a sprint burndown report, you can track how much work remains in a sprint backlog, understand how quickly your team has completed tasks, and predict when your team will achieve the goal or goals of the sprint.  
   
