@@ -43,12 +43,12 @@ A subscription lets you control what your team should be notified about and how 
 
 3. Select the type of activity you want your team to be notified of.
 ::: moniker-end
-   ::: moniker range="azure-devops"
-   ![Select event category and template](media/new-sub-page-preview.png)
-   ::: moniker-end
-   ::: moniker range="azure-devops-2019"
-    ![Select event category and template](media/new-sub-page1.png)
-   ::: moniker-end
+	::: moniker range="azure-devops"
+	![Select event category and template](media/new-sub-page-preview.png)
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
+	![Select event category and template](media/new-sub-page1.png)
+	::: moniker-end
 ::: moniker range=">= azure-devops-2019"
 4. Provide a description to help you identify the subscription later.
 

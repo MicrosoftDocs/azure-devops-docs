@@ -168,7 +168,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 1. From your Notifications page, select **New subscription**.
 
-![Open the new subscriptions dialog](media/manage-personal-notifications-new-subscription-preview.png)
+	![Open the new subscriptions dialog](media/manage-personal-notifications-new-subscription-preview.png)
 
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
