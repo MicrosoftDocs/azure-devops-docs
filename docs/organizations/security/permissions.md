@@ -1089,7 +1089,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="create-new-team-projects-permission">Create new projects (formerly Create new team projects)</td>
         <td>
-            Can <a href="../projects/create-project.md" >add a projecs</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+            Can <a href="../projects/create-project.md" >add a projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
         </td>
     </tr>
     <tr>
@@ -2872,7 +2872,7 @@ By default, the project Readers groups have only View lab resources (Read) permi
 
 ## Notifications or alerts
 
-There are no UI permissions associated with [managing email notifications or alerts](../../boards/queries/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+There are no UI permissions associated with [managing email notifications or alerts](../../notifications/manage-your-personal-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
