@@ -1215,7 +1215,7 @@ To learn more about build pipeline settings, see:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops"
 
 ### How do I programmatically create a build pipeline?
 
