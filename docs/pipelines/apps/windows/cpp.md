@@ -8,7 +8,7 @@ ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
 ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
-ms.date: 3/1/2019
+ms.date: 1/24/2020
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -58,11 +58,11 @@ It is often required to build your app in multiple configurations. The following
 
    * `BuildPlatform` = `x86, x64`
 
-2. Select **Tasks** and click on the **agent job** to change the options for the job:
-
-   * Select **Multi-configuration**.
+2. Select **Tasks** and click on the **agent job**. From the **Execution plan** section, select **Multi-configuration** to change the options for the job:
 
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
+
+   * Specify **Maximum number of agents**
 
 3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
 
