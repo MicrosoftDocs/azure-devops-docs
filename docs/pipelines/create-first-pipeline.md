@@ -1121,7 +1121,6 @@ Or, if you decide to discard the draft, you can delete it from the **All Pipelin
 
 ::: moniker-end
 
-
 ::: moniker range=">=tfs-2013"
 
 ### How can I delete a pipeline?
@@ -1164,6 +1163,7 @@ When you manually queue a build, you can, for a single run of the build:
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
 You can queue builds [automatically](build/triggers.md) or manually.
 
 When you manually queue a build, you can, for a single run of the build:
@@ -1182,9 +1182,13 @@ When you manually queue a build, you can, for a single run of the build:
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2013 <= tfs-2018"
+::: moniker range=">=tfs-2013"
 
 ### Where can I learn more about build pipeline settings?
+
+::: moniker-end
+
+::: moniker range=">=tfs-2013 <= tfs-2018"
 
 To learn more about build pipeline settings, see:
 
@@ -1198,9 +1202,7 @@ To learn more about build pipeline settings, see:
 
 ::: moniker-end
 
-::: moniker range= "azure-devops"
-
-### Where can I learn more about build pipeline settings?
+::: moniker range="azure-devops"
 
 To learn more about build pipeline settings, see:
 
