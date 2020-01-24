@@ -48,7 +48,6 @@ gulp
 |`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
 |`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files which you want to hookRequire ()|
 |`testFiles` <br/>Test Script Files|(Required) Provide the path to your test script files <br/>Default value: test/*.js|
-=======
 
 ## Example
 
