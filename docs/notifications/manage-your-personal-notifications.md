@@ -23,7 +23,6 @@ As changes occur to work items, code reviews, source control files, and builds, 
 
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
 
-
 ::: moniker-end
 
 
@@ -56,13 +55,13 @@ From the web portal, select the icon with your initials or picture, and then sel
    ![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
 
 ***
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)  
-   
+>![Navigate to personal notifications page](media/nav-personal-notifications-hub.png) 
 ::: moniker-end
 
 
@@ -100,7 +99,7 @@ From the web portal, select the icon with your initials or picture, and then sel
 	
 	![Fill out the custom alerts form](media/personal/ALM_AN_DefiningAlerts.png)
 	
-	For a list of available fields, see [Index of work item fields](../work-items/guidance/work-item-field.md).
+	For a list of available fields, see [Index of work item fields](../boards/work-items/guidance/work-item-field.md).
 
 6.	For even more options, open the Select New Alert Template. 
 	
