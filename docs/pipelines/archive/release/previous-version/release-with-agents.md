@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Release your app to environments with deployment agents
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 If you want to use PowerShell, DSC or Chef to deploy your app, you must 
 use vNext environments; go 
@@ -38,16 +38,16 @@ for your release.
    check that the service for the deployment agent (Microsoft Deployment Agent) 
    is started on that machine.
 
-   ![Scan for servers](_img/release-with-agents-01.png)
+   ![Scan for servers](media/release-with-agents-01.png)
 
 1. Register the servers to use for your environments. You will deploy your app to 
    the servers in an environment as part of your release pipeline.
 
-   ![Register your server to use in the release pipeline](_img/release-with-agents-02.png)
+   ![Register your server to use in the release pipeline](media/release-with-agents-02.png)
 
 1. Create environments for each of your stages. Link the servers to your environments.
 
-   ![Add an environment](_img/release-with-agents-03.png)
+   ![Add an environment](media/release-with-agents-03.png)
 
    An environment can contain multiple servers.
 
@@ -59,21 +59,21 @@ You also need a build definition that builds your app.
 
 1. Create a release path to represent the stages that your release must go through.
 
-   ![Create a release path](_img/release-with-agents-04.png)
+   ![Create a release path](media/release-with-agents-04.png)
 
    Choose the environment and approvers to use for each stage of your release.
    You can add multiple final approvers for each stage if you want to.
 
-   ![Add the stages and approvers for your release pipeline](_img/release-with-agents-05.png)
+   ![Add the stages and approvers for your release pipeline](media/release-with-agents-05.png)
 
 1. Create a release template and use the release path that you just added.
    Link your build definition to this release template to have access to the build.
    
-   ![Add a release template](_img/release-with-agents-06.png)
+   ![Add a release template](media/release-with-agents-06.png)
 
    Next you define the sequence of actions that deploys your app for each stage.
    
-   ![From the Release Templates page add the deployment sequence](_img/release-with-agents-07.png)
+   ![From the Release Templates page add the deployment sequence](media/release-with-agents-07.png)
 
    The deployment agent must have sufficient permissions to perform 
    any of the actions in your sequence.
@@ -91,12 +91,12 @@ You also need a build definition that builds your app.
 
 **A**: Yes, you can create components with separate deployment information.
 
-![Configure Apps tab, Components](_img/release-with-agents-08.png)
+![Configure Apps tab, Components](media/release-with-agents-08.png)
 
 Add the component to the release template. Now you can add this 
 component to any stage that needs it.
 
-![Configure Apps tab, Release Templates, right-click Components and choose Add](_img/release-with-agents-09.png)
+![Configure Apps tab, Release Templates, right-click Components and choose Add](media/release-with-agents-09.png)
 
 ### Q: What release actions can I add to the deployment sequence?
 
@@ -108,7 +108,7 @@ component to any stage that needs it.
 Select the sequence where you want to paste it, 
 and use its shortcut menu to **Paste Deployment Sequence**.  
 
-![Release template with deployment sequence selected](_img/release-with-agents-10.png)
+![Release template with deployment sequence selected](media/release-with-agents-10.png)
 
 ## Related topics
 
@@ -119,6 +119,6 @@ and use its shortcut menu to **Paste Deployment Sequence**.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

@@ -15,7 +15,7 @@ ms.date: 02/22/2017
 
 # TF30034: You do not have permission to create a new project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error may occur under the following conditions:  
   

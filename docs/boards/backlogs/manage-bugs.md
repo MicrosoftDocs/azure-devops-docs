@@ -15,7 +15,7 @@ ms.date: 07/22/2019
 
 # Define, triage, and manage bugs
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -31,9 +31,9 @@ In a nutshell, you manage bugs through the following tasks:
 
 Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-[!INCLUDE [temp](../_shared/basic-process-bug-note.md)]  
+[!INCLUDE [temp](../includes/basic-process-bug-note.md)]  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]    
 
 ## Define and list bugs  
 
@@ -63,14 +63,14 @@ You can review bugs defined for your project by creating a query and specifying 
 
 The bug work item form tracks similar information to the one shown for the Scrum process. 
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)] 
 
 #### [New web form](#tab/new-web-form/)
 
 ::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
-![Scrum bug work item form](_img/manage-bugs-scrum-bug-from-ts.png)  
+![Scrum bug work item form](media/manage-bugs-scrum-bug-from-ts.png)  
 
 > [!TIP]
 > Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
@@ -89,7 +89,7 @@ The old web form is only available for TFS 2017 and earlier versions.
 ::: moniker range=">= tfs-2013 <= tfs-2017"  
 To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items.md).  
 
-![Scrum bug work item form, TFS 2015 or earlier versions](_img/scrum-bug-wi-form.png)  
+![Scrum bug work item form, TFS 2015 or earlier versions](media/scrum-bug-wi-form.png)  
 ::: moniker-end  
 
 
@@ -193,7 +193,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../includes/discussion-tip.md)] 
 
 <a id="test-tools"> </a>
 
@@ -251,7 +251,7 @@ Once you fix a bug, you should update its workflow State. State choices vary dep
 
 | Agile | Scrum | CMMI | 
 |------------|------------|-----------| 
-| ![Bug workflow states, Agile process template](../work-items/guidance/_img/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/_img/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/_img/ALM_PT_CMMI_WF_Bug.png) |  
+| ![Bug workflow states, Agile process template](../work-items/guidance/media/ALM_PT_Agile_WF_Bug.png) | ![Bug workflow states, Scrum process template](../work-items/guidance/media/ALM_PT_Scrum_WF_Bug.png) |  ![Bug workflow states, CMMI process template](../work-items/guidance/media/ALM_PT_CMMI_WF_Bug.png) |  
 
 For Scrum bugs, you simply change the State from Committed (similar to Active) to Done. For Agile and CMMI, you first resolve the bug, indicating that the bug has been fixed. Typically, the person who created the bug then verifies the fix and updates the State from Resolved to Closed. If more work has been found after a bug has been resolved or closed, it can be reactivated by setting the State to Committed or Active. 
 
@@ -279,7 +279,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
-<img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
 
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
@@ -305,7 +305,7 @@ You can track the bug status, assignments, and trends using queries which you ca
 
 For example, here are two examples showing active bugs by priority trend and a snapshot of bugs by priority.
 
-![Bug trend chart from query](_img/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](_img/manage-bugs-priority-chart.png)   
+![Bug trend chart from query](media/manage-bugs-trend-chart.png)   ![Bug snapshot by priority](media/manage-bugs-priority-chart.png)   
 
 To learn more about queries, charts, and dashboards; see [Create managed queries](../queries/example-queries.md) and [Charts](../../report/dashboards/charts.md), and [Dashboards](../../report/dashboards/dashboards.md).    
 
@@ -313,7 +313,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 
 ## Customize the bug form
 
-[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ## Try this next

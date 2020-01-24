@@ -14,7 +14,7 @@ ms.date: 10/04/2019
 
 # Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The SQL Server reporting solution is based on a [data warehouse and OLAP cube](components-data-warehouse.md) coupled with a SQL Server Reporting server to host reports.
@@ -97,7 +97,7 @@ Build reports track the quality of software under development. By defining tests
 
 ### Sample build success over time report
 
-![Sample build summary report](../admin/_img/IC665009.png)  
+![Sample build summary report](../admin/media/IC665009.png)  
 
 ## Monitor progress
 
@@ -151,7 +151,7 @@ Project management reports provide insight into how much work the team is tackli
 
 **Sample stories overview report**  
 
-![Sample stories overview report](../admin/_img/IC665011.png)  
+![Sample stories overview report](../admin/media/IC665011.png)  
 
 
 ## Monitor test plans and bug tracking
@@ -184,7 +184,7 @@ Test planning reports support monitoring the test progress and coverage of backl
 
 **Sample test plan progress report**   
 
-![Sample test plan progress report](../admin/_img/IC665012.png)  
+![Sample test plan progress report](../admin/media/IC665012.png)  
 
 <a name="Accessing"></a> 
 
@@ -194,11 +194,11 @@ Test planning reports support monitoring the test progress and coverage of backl
   
  Open the report site from the **Reports** page in Team Explorer.  
   
- ![Open the team project report site](_img/alm_uprp_te_scrumreports.png "ALM_UPRP_TE_ScrumReports")  
+ ![Open the team project report site](media/alm_uprp_te_scrumreports.png "ALM_UPRP_TE_ScrumReports")  
   
  Here's a view of reports for a Scrum project in Report Manager.  
   
- ![Open a Scrum report in Report Manager](_img/alm_uprp_rm_scrumreports.png "ALM_UPRP_RM_ScrumReports")  
+ ![Open a Scrum report in Report Manager](media/alm_uprp_rm_scrumreports.png "ALM_UPRP_RM_ScrumReports")  
   
 > [!NOTE]  
 >  If a red X icon appears on the **Reports** node in Team Explorer, you might not have permissions to access the reports or Team Explorer might have lost communication with the server that hosts SQL Server Reporting Services. In these instances, check with your project administrator to make sure that you have permissions to access the reports node and that the server that hosts Reporting Services is running.  
@@ -221,7 +221,7 @@ All data captured for work items is written to the WIT data store, but only sele
 |Option|Result|  
 |------------|------------|  
 |Refresh button on the browser window|Refreshes the display with the report that is stored in the session cache. A session cache is created when a user opens a report. Reporting Services uses browser sessions to maintain a consistent viewing experience when a report is open.|  
-|![Refresh report](_img/procguid_refresh_icon.png "ProcGuid_Refresh_Icon")|Causes the server that is running Reporting Services to rerun the query and update report data if the report runs on-demand. If the report is cached or a snapshot, the report that is stored in the report server database appears.|  
+|![Refresh report](media/procguid_refresh_icon.png "ProcGuid_Refresh_Icon")|Causes the server that is running Reporting Services to rerun the query and update report data if the report runs on-demand. If the report is cached or a snapshot, the report that is stored in the report server database appears.|  
 |CTRL+F5 keyboard combination|Produces the same result as choosing **Refresh** on the report toolbar.|  
   
 <a name="Managing"></a>

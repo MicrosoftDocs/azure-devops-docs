@@ -34,7 +34,7 @@ These steps are:
 
 ---
 
-![The Git feature branch workflow](_img/gitworkflow.png)
+![The Git feature branch workflow](media/gitworkflow.png)
 
 Git has a version of this workflow using terminology and commands unique to Git. Throughout this tutorial you'll learn about repositories, branches, commits, and pull requests. 
 These terms might sound familiar if you've used a version control system like Team Foundation Version Control or Subversion, but they behave differently in Git.

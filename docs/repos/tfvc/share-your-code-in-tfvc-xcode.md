@@ -85,8 +85,8 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 
     Use git tf help to learn about the Git-tf commands.
 
-    ![git tf help](./_img/share-your-code-in-tfvc-xcode/git-tf-help.png)
-    ![git tf help checkin](./_img/share-your-code-in-tfvc-xcode/git-tf-help-checkin.png)
+    ![git tf help](./media/share-your-code-in-tfvc-xcode/git-tf-help.png)
+    ![git tf help checkin](./media/share-your-code-in-tfvc-xcode/git-tf-help-checkin.png)
 
 
 

@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 # Define a query as a hyperlink  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="define-query-hyperlink" />  
 

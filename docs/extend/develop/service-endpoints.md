@@ -31,7 +31,7 @@ Service endpoints are a way for Azure DevOps Services to connect to external sys
 Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service. 
 Follow this guide to create a new Service Point contribution and leverage it in your extension.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Task overview
 
@@ -164,10 +164,10 @@ Add the following `contributions` array underneath the `targets` array of the ba
 
 
 If you have successfully added the service contribution correctly, you see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
-<img alt= "Service endpoint picker" src="./_img/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+<img alt= "Service endpoint picker" src="./media/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.
-<img alt="Service endpoint setup" src="./_img/service-endpoint-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+<img alt="Service endpoint setup" src="./media/service-endpoint-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 <a name="buildtask" />
 
@@ -280,12 +280,12 @@ This is the second field. It's a picklist
   - The REST call is chosen by the dataSourceName
 
 If you've added the Build Task successfully, you should now see the Build Task when adding tasks to a build pipeline
-<img alt="Service endpoint build task selector" src="./_img/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+<img alt="Service endpoint build task selector" src="./media/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Once you've added the Build Task to your pipeline, confirm that it can see the Fabrikam endpoint you created. 
 The projects dropdown in this tutorial is blank since we are not using a real service. 
 Once you replace Fabrikam with your service, replace the Projects call with your own REST api call to leverage dynamic data inside your build task
-<img alt="Service endpoint build task setup" src="./_img/service-endpoint-build-task-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
+<img alt="Service endpoint build task setup" src="./media/service-endpoint-build-task-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 ## Authentication Documentation
 The authentication scheme in a service endpoint determines the credentials that would be used to connect to the external service. Check out the

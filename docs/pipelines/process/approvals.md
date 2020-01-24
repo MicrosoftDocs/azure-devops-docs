@@ -12,9 +12,9 @@ ms.date: 10/21/2019
 monikerRange: azure-devops
 ---
 
-# Approvals and checks
+# Define approvals and checks
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining [conditions](conditions.md) on the stage. Another way to control if and when a stage should run is through **approvals and checks**. 
 
@@ -38,7 +38,7 @@ To define an approval on an environment:
 2. Navigate to **Approvals and Checks** for the environment.
 
    > [!div class="mx-imgBorder"]
-   > ![approvals-and-checks on environment](_img/checks/approvals-and-checks.png)
+   > ![approvals-and-checks on environment](media/checks/approvals-and-checks.png)
 
 3. Select **Create**, provide the approvers and an optional message, and select **Create** again to to complete addition of the manual approval check.
 
@@ -59,43 +59,43 @@ To define a custom policy evaluation over the artifact(s), follow the below step
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
     
    > [!div class="mx-imgBorder"]
-   > ![environments](_img/checks/environments.png)
+   > ![environments](media/checks/environments.png)
 
 2. Navigate to **Approvals and checks** for the environment.
 
    > [!div class="mx-imgBorder"]
-   > ![approvals-and-checks on environment](_img/checks/approvals-and-checks.png)
+   > ![approvals-and-checks on environment](media/checks/approvals-and-checks.png)
 
 3. Select **Evaluate artifact**.
     
    > [!div class="mx-imgBorder"]
-   > ![evaluate-artifact](_img/checks/evaluate-artifact.png)
+   > ![evaluate-artifact](media/checks/evaluate-artifact.png)
 
 4. Paste the policy definition and click **Save**. [See more](artifact-policy.md) about writing policy definitions.
 
     > [!div class="mx-imgBorder"]
-    > ![policy-definition](_img/checks/policy-definition.png)
+    > ![policy-definition](media/checks/policy-definition.png)
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. The specified policy is evaluated against the available image metadata. The check passes when the policy is successful and fails otherwise. The stage is marked failed if the check fails.
 
 ### [Passed](#tab/check-pass)
 
 > [!div class="mx-imgBorder"]
-> ![checks-passed](_img/checks/checks-passed.png)
+> ![checks-passed](media/checks/checks-passed.png)
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
 > [!div class="mx-imgBorder"]
-> ![checks-passed](_img/checks/policy-check-pass-logs.png)
+> ![checks-passed](media/checks/policy-check-pass-logs.png)
 
 ### [Failed](#tab/check-failed)
 
 > [!div class="mx-imgBorder"]    
-> ![checks-passed](_img/checks/checks-failed.png)
+> ![checks-passed](media/checks/checks-failed.png)
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
 > [!div class="mx-imgBorder"]
-> ![checks-passed](_img/checks/policy-check-failed-logs.png)
+> ![checks-passed](media/checks/policy-check-failed-logs.png)
 
 * * *

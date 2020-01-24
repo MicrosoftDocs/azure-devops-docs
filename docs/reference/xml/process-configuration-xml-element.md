@@ -14,13 +14,13 @@ ms.date: 12/15/2017
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
-<img src="_img/process-config-xml-element-groups.png" alt="Process configuration XML elements" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process-config-xml-element-groups.png" alt="Process configuration XML elements" style="border: 1px solid #C3C3C3;" /> 
 
 For a summary of what you can configure through the user interface, see [Customize work tracking, Add teams and configure their Scrum and Kanban tools](../customize-work.md).
 
@@ -49,9 +49,9 @@ Areas that you can customize through ProcessConfiguration:
 
 To update the process configuration for a project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../../organizations/settings/work/import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](../witadmin/witadmin-import-export-process-configuration.md).
 
-[![Export ProcessConfig definition file](_img/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](_img/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](_img/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](_img/export-process-step-4.png)  
+[![Export ProcessConfig definition file](media/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](media/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](media/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](media/export-process-step-4.png)  
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]  
+[!INCLUDE [temp](../../includes/process-editor.md)]  
 
 <a id="backlog_page">  </a>
 
@@ -250,7 +250,7 @@ You can only assign the <strong>Resolved</strong> state category to a workflow s
 
 Specify which fields you want displayed on each backlog within the **Columns** section. Changes you make through the **Column Options** dialog persist until you change them again.
 
-![Default columns and sequence for backlog page](_img/process-configuration-xml-element-reference/IC660915.png)  
+![Default columns and sequence for backlog page](media/process-configuration-xml-element-reference/IC660915.png)  
 
 Here's the default configuration defined by the Scrum process template for the product backlog.
 
@@ -300,7 +300,7 @@ The column headings that appear on the task board correspond to the workflow sta
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.
 
-![Backlog panel with Business Value field added](_img/process-configuration-xml-element-reference/IC660916.png)  
+![Backlog panel with Business Value field added](media/process-configuration-xml-element-reference/IC660916.png)  
 
 The panel only displays fields that are included in the **FIELDS** section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, because Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category as described  in [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).
 
@@ -615,7 +615,7 @@ You must specify the day of a week in English, regardless of the installed langu
 
 At a glance, you can differentiate WITs when viewing a query result or backlog based on the color and icon assigned to the WIT. The system applies the color defined for the work item type to the [icon specified for the WIT](#wit-icons).  
 
-<img src="../_img/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/add-modiy-wit-color-icon-state-color.png" alt="Query results showing wit color, icon, and state color" style="border: 1px solid #C3C3C3;" />  
 
 The Scrum process template defines the following color assignments. Similar ones are made for the Agile and CMMI templates.
 
@@ -768,7 +768,7 @@ The color you associate with your work item states will appear across the produc
 
 Here we show how it appears in the work item form:  
 
-<img src="_img/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-state-colors.png" alt="Bug work item form header, State color shown" style="border: 1px solid #C3C3C3;" />  
 
 > [!NOTE]    
 >No colors are displayed in the client work item forms or within the old links control within the client form. 
@@ -790,7 +790,7 @@ Here we show how it appears in the work item form:
 
 The supported set of icons you can specify for a work item type are shown below. 
 
-![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](_img/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](_img/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](_img/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](_img/processconfig-wit-icons-four.png)
+![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
 
 > [!NOTE]    
 > Icons noted with an asterisk are supported on Azure DevOps Services and TFS 2017.3 and later versions.
@@ -800,11 +800,11 @@ The system applies the color defined for the work item type to the icon. Colors 
 
 For example, here you see a list view&hellip; 
 
-<img src="_img/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/processconfig-list-wi-with-icons.png" alt="Web portal, list of work items with icons" style="border: 1px solid #C3C3C3;" /> 
 
 and, here the icon is shown within the work item form.
 
-<img src="_img/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
+<img src="media/process-config-bug-form-header-bug-icon.png" alt="Bug work item form header, Work item type icon shown" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Related articles

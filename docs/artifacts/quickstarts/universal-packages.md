@@ -39,12 +39,12 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
 1. Go to **Azure Artifacts**:
 
    > [!div class="mx-imgBorder"] 
-   > ![Go to Azure Artifacts](../_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+   > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 1. Select **+ New feed**:
 
    > [!div class="mx-imgBorder"] 
-   > ![New feed button](../_shared/_img/new-feed-button-azure-devops-newnav.png)
+   > ![New feed button](../media/new-feed-button-azure-devops-newnav.png)
 
 1. In the dialog box:
 
@@ -56,12 +56,12 @@ If you don't already have an Azure Artifacts feed, create one now and note its n
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling [upstream sources](../concepts/upstream-sources.md) to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
 
    > [!div class="mx-imgBorder"] 
-   > ![New feed dialog box](../_shared/_img/new-feed-dialog.png)
+   > ![New feed dialog box](../media/new-feed-dialog.png)
 
 You can change these settings later by editing the feed. With your feed selected, select **Edit feed** (the gear icon).
 
 > [!div class="mx-imgBorder"] 
-> ![Edit feed button](../_shared/_img/editfeed-azure-devops-newnav.png)
+> ![Edit feed button](../media/editfeed-azure-devops-newnav.png)
 
 
 ## Log in to Azure DevOps
@@ -124,7 +124,7 @@ az artifacts universal publish --organization https://fabrikam.visualstudio.com 
 To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Artifacts** icon on the left side naviation.
 
 > [!div class="mx-imgBorder"] 
-> ![Universal Package listing in a sample feed](_img/universal-in-feed.png)
+> ![Universal Package listing in a sample feed](media/universal-in-feed.png)
 
 ## Download a Universal Package
 

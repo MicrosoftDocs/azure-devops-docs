@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Enter client credentials in Power BI or Excel 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 ::: moniker range="azure-devops"
 
@@ -30,7 +30,7 @@ When connecting from Power BI or Excel to Analytics using the OData feed, choose
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 #### Why use a Personal Access Token over an Alternate Access Credential? 
 
@@ -48,7 +48,7 @@ Azure Active Directory is also known as "Organizational Credential" in Power BI 
 
 1. When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Organizational account as shown here:
 
-	![Organizational account prompt](_img/power-bi-organizational.png) 
+	![Organizational account prompt](media/power-bi-organizational.png) 
 
 2. Choose <strong>Sign in</strong> and enter your Azure AD credentials. After that, you're done.
 
@@ -64,7 +64,7 @@ You can use Windows authentication in [PowerBI.com](https://powerbi.microsoft.co
 
 1. When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Windows as shown here:
 
-	![Windows authentication prompt](_img/power-bi-windowsauth.png)
+	![Windows authentication prompt](media/power-bi-windowsauth.png)
 
 2. Enter your Windows credentials and choose <strong>Connect</strong>.
 
@@ -77,7 +77,7 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
 
 1. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
 
-	![User Profile, My Security menu option](../../_shared/_img/open-security.png)  
+	![User Profile, My Security menu option](../../media/open-security.png)  
 
 1. Enter the required information: 
    - Add a description  
@@ -89,11 +89,11 @@ To change an existing URL to use Windows instead of a PAT, see [Change authentic
      And, then choose **Create Token**.  
 
      > [!div class="mx-imgBorder"]  
-     > ![Create personal access token](_img/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
+     > ![Create personal access token](media/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
 
 2. Copy the token that displays. If you navigate away from the page, you won't be able to retrieve it later.  
 
-	![Copy Personal Access Token dialog](_img/client-authentication/copy-personal-access-token.png)  
+	![Copy Personal Access Token dialog](media/client-authentication/copy-personal-access-token.png)  
 
 3. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
 	
@@ -114,13 +114,13 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 	::: moniker range="azure-devops"
 
-	<img src="_img/authentication-6.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-6.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
 	
 	::: moniker-end  
 
 	::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-6-onprem.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-6-onprem.png" alt="OData Feed URL" style="border: 2px solid #C3C3C3;" />
 
 	::: moniker-end
 
@@ -130,13 +130,13 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
      ::: moniker range="azure-devops"
 
-     <img src="_img/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="media/authentication-7.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
      ::: moniker-end
 
      ::: moniker range="azure-devops-2019"
 
-     <img src="_img/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
+     <img src="media/authentication-7-onprem.png" alt="Authentication information" style="border: 2px solid #C3C3C3;" />  
 
      ::: moniker-end
 
@@ -153,13 +153,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="_img/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
 	::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
@@ -167,13 +167,13 @@ If you receive an access denied message, you may need to change your authenticat
 
 	::: moniker range="azure-devops"
 
-	<img src="_img/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
 
 	::: moniker-end
 
 	::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
 
 	::: moniker-end
 
@@ -185,19 +185,19 @@ If you receive an access denied message, you may need to change your authenticat
 
 2. Click **New Query** > **Data Source Settings...**
 
-	<img src="_img/client-auth-excel-open-data-source-settings.png" alt="Excel, Open Data source settings" style="border: 2px solid #C3C3C3;" />
+	<img src="media/client-auth-excel-open-data-source-settings.png" alt="Excel, Open Data source settings" style="border: 2px solid #C3C3C3;" />
 
 3. Select the correct URL to the OData Feed and click **Edit**.  
 
 	::: moniker range="azure-devops"
 
-	<img src="_img/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
 	::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
+	<img src="media/authentication-8-onprem.png" alt="Data source settings" style="border: 2px solid #C3C3C3;" />   
 
 	::: moniker-end
 
@@ -205,13 +205,13 @@ If you receive an access denied message, you may need to change your authenticat
  
 	::: moniker range="azure-devops"
 
-	<img src="_img/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
+	<img src="media/authentication-9.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" />
 
 	::: moniker-end
 
 	::: moniker range="azure-devops-2019"
 
-	<img src="_img/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/authentication-9-onprem.png" alt="Data source settings, 2nd dialog" style="border: 2px solid #C3C3C3;" /> 
 
 	::: moniker-end
 
@@ -234,5 +234,5 @@ the **oAuth2** option.
 <!---
 From the Personal access tokens page, choose **Add**:  
 
-<img src="../../_shared/_img/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+<img src="../../media/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
 -->

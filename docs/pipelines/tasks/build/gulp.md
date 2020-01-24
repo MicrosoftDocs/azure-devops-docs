@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Gulp task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task based build system.
 
@@ -28,7 +28,7 @@ gulp
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GulpV1.md)]
+[!INCLUDE [temp](../includes/yaml/GulpV1.md)]
 
 ::: moniker-end
 
@@ -48,6 +48,7 @@ gulp
 |`testFramework` <br/>Test Framework|(Optional) Select your test framework <br/>Default value: Mocha|
 |`srcFiles` <br/>Source Files|(Optional) Provide the path to your source files which you want to hookRequire ()|
 |`testFiles` <br/>Test Script Files|(Required) Provide the path to your test script files <br/>Default value: test/*.js|
+=======
 
 ## Example
 
@@ -59,7 +60,7 @@ On the [Build](../../index.yml) tab:
 <tr>
 <td>
 
-![Package: npm](../package/_img/npm.png)
+![Package: npm](../package/media/npm.png)
 
 <br/>[Package: npm](../package/npm.md)</td>
 <td>
@@ -72,7 +73,7 @@ On the [Build](../../index.yml) tab:
 <tr>
 <td>
 
-![Build: gulp](_img/gulp.png)
+![Build: gulp](media/gulp.png)
 
 <br/>[Build: gulp](gulp.md)</td>
 <td>
@@ -97,11 +98,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

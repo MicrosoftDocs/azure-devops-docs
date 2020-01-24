@@ -14,9 +14,9 @@ monikerRange: 'azure-devops'
 
 # Run cloud-based load tests using your own machines
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 When you run a cloud-based load test, the Cloud Load Test (CLT) service automatically provisions
 the necessary machines (load agents) to generate the load on your application.
@@ -134,4 +134,4 @@ A build template to help with this configuration is under development.
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

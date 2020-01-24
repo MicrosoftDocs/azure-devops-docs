@@ -24,7 +24,7 @@ tools cache and add it to the PATH. Use the task to change the version of Go Lan
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GoToolV0.md)]
+[!INCLUDE [temp](../includes/yaml/GoToolV0.md)]
 
 ::: moniker-end
 

@@ -96,15 +96,20 @@ For information about viewing gate results and logs, see
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period and three sampling intervals, the deployment is approved.
 
-![Successful gates](_img/gate-results-pass.png)
+![Successful gates](media/gate-results-pass.png)
 
 The following diagram illustrates the flow of gate evaluation where, after the
 initial stabilization delay period, not all gates have succeeded at each sampling interval. In
 this case, after the timeout period expires, the deployment is rejected.
 
-![Failed gates](_img/gate-results-fail.png)
+![Failed gates](media/gate-results-fail.png)
 
-## Related topics
+
+## Video 
+
+> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]
+
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
@@ -113,18 +118,16 @@ this case, after the timeout period expires, the deployment is rejected.
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-## See also
 
-* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+## Additional resources
+
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)  
+* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 
-## Videos 
-
-> [!VIDEO https://www.youtube.com/embed/7WLcqwhTZ_4?start=0]

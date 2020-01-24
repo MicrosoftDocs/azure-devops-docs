@@ -30,7 +30,7 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.md)]
+[!INCLUDE [temp](../includes/yaml/VsTestPlatformToolInstallerV1.md)]
 
 ::: moniker-end
 
@@ -50,11 +50,11 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 
 * The **Visual Studio Test Platform Installer** task must appear before the **Visual Studio Test** task in the build or release pipeline.
 
-  ![Order of tasks](_img/tpinstaller1.png)
+  ![Order of tasks](media/tpinstaller1.png)
 
 * The **Test platform version** option in the **Visual Studio Test** task must be set to **Installed by Tools Installer**. 
 
-  ![Task setting](_img/tpinstaller2.png)
+  ![Task setting](media/tpinstaller2.png)
 
 See [Run automated tests from test plans](../../../test/run-automated-tests-from-test-hub.md)
 

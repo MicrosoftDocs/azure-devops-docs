@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Code Churn Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 With the Code Churn report, you can analyze how source files are changing over time. This report shows how many lines of code the team added, deleted, or modified during the most recent four weeks.  
   
@@ -32,7 +32,7 @@ With the Code Churn report, you can analyze how source files are changing over t
 ##  <a name="Data"></a> Data in the Report  
  The team can review the Code Churn report to determine how volatile the code base is and how many lines of code were modified in the previous week. As the following illustration shows, the report provides a stacked area graph of the lines of code that the team added, deleted, or modified in the most recent four weeks.  
   
- ![Code Churn Report](_img/procguid_codechurn.png)  
+ ![Code Churn Report](media/procguid_codechurn.png)  
   
  This report is based on a PivotChart report that shows the most recent four weeks of data that were captured for code changes and that is stored in the data warehouse. All lines are counted, even lines that contain comments or that are blank.  
   

@@ -16,9 +16,9 @@ monikerRange: 'azure-devops'
 
 # Manage Conditional Access to Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Secure resources for organizations in Azure DevOps that are backed by an Azure Active Directory (Azure AD) tenant, with Conditional Access. Conditional Access policies (CAPs), like multi-factor authentication, help protect against the risk of compromised credentials and keep your organization data safe. There's also a policy where only devices connected to a corporate network can gain access. Implement requirements and actions for devices in a device management system. A device management system is security software that's used by IT departments to manage devices running various operating systems (OSs), from various locations and networks.
 
@@ -57,13 +57,13 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Policies** and from the **dropdown** next to "Enable Azure Active Directory Conditional Access Policy Validation" select **On**.
 
-   ![Select Policies, and then turn On](_img/_shared/enable-conditional-access-policy-preview.png)
+   ![Select Policies, and then turn On](media/shared/enable-conditional-access-policy-preview.png)
 
 #### [Current page](#tab/current-page)
 
@@ -72,13 +72,13 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
 
-   ![Select policy, and then turn On](_img/_shared/enable-conditional-access-policy.png)
+   ![Select policy, and then turn On](media/shared/enable-conditional-access-policy.png)
 
 * * *
 
