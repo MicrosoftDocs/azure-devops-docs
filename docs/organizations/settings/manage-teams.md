@@ -19,11 +19,13 @@ ms.date: 11/07/2019
 
 In this article, learn how to configure team tools and manage teams in Azure DevOps.
 
+[!INCLUDE [temp](../../boards/includes/note-config-customize.md)]
+
 Most permissions are governed by security groups or defined at the object level. Team settings are managed by the team administrator role. Users assigned as a team administrator can configure and manage all team tools. Specifically, when a team is added to a project, a project admin should [add one or more team administrators](add-team-administrator.md). 
 
 Then, those team admins should look at doing the following specific tasks: 
 - Add team members 
-- Configure area and iteration paths
+- Subscribe to area and iteration paths
 - Configure backlogs and other common team settings
 - Configure Kanban boards 
 

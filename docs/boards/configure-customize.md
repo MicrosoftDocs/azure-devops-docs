@@ -27,7 +27,7 @@ This article provides guidance to configure and customize Azure Boards. You shou
 - Track time estimates or actual work completed 
 
 > [!NOTE]   
-> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup and some portolio planning tools, are only available for the cloud at this time. 
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portolio planning tools, are only available for the cloud at this time. 
 
 <!--- Mention about first choice is the process selected for your project --> 
 
@@ -61,7 +61,7 @@ Once you determine how you'll use the work tracking building blocks and tools, y
 
 ## Work item types and portfolio backlogs
 
-The first choice made in work tracking is the process selected when creating a project.For a comparison of each process, see [Choose a process](work-items/guidance/choose-process.md).  Each process&mdash;Agile, Basic, Scrum, and CMMI&mdash;supports a set hierarchy of work item types.  This hierarchy supports a product backlog and portfolio backlog(s).  
+The first choice made in work tracking is the process selected when creating a project. For a comparison of each process, see [Choose a process](work-items/guidance/choose-process.md).  Each process&mdash;Agile, Basic, Scrum, and CMMI&mdash;supports a set hierarchy of work item types.  This hierarchy supports a product backlog and portfolio backlog(s).  
 
 The default work item types for each supported process are shown in the following tabs. Backlog work item types correspond to the Requirements category. Tasks correspond to the Task category. 
 
@@ -167,7 +167,7 @@ The following table indicates the areas you can configure and customize and the 
 <th width="25%">Portfolio planning tools</th>
 </tr>
 <tr>
-<td><a href="#area-path">Area paths, project configuration and team subscriptions</a> (Project, Team)</td>
+<td><a href="#area-path">Area paths, project configuration, and team subscriptions</a> (Project, Team)</td>
 <td>
 <ul>
 <li>Boards>All tools</li>
@@ -193,7 +193,7 @@ The following table indicates the areas you can configure and customize and the 
 </td>
 </tr>
 <tr>
-<td><a href="#iteration-path">Iteration paths, project configuration and team subscription</a> (Project, Team)</td>
+<td><a href="#iteration-path">Iteration paths, project configuration, and team subscription</a> (Project, Team)</td>
 <td>
 <ul>
 <li>Backlogs>Sprint planning</li>
@@ -219,8 +219,8 @@ The following table indicates the areas you can configure and customize and the 
 </tr>
 <tr>
 <td><a href="/azure/devops/organizations/settings/show-bugs-on-backlog">Show bugs on backlogs &amp; boards (Team)</a><br/>
-Custom work item types, Product backlog (Project)<br/>
-Custom work item types, Taskboard (Project)
+Custom work item types, Product backlog (Process)<br/>
+Custom work item types, Taskboard (Process)
 </td>
 <td>
 <ul>
@@ -240,8 +240,8 @@ Custom work item types, Taskboard (Project)
 </tr>
 <tr>
 <td>
-Custom work item types, Portfolio backlog (Project)<br/>
-Additional portfolio backlogs (Project)
+Custom work item types, Portfolio backlog (Process)<br/>
+Additional portfolio backlogs (Process)
 </td>
 <td>
 <ul>
@@ -317,7 +317,7 @@ Area paths are used to group work items by product, feature, or business areas a
 
 ### Area paths and hierarchical grouping 
 
-The two main ways to group work items is by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. The two main items to understand are:  
+The two main ways to group work items are by area path and by parenting them under a portfolio work item type as described early is this article. The two are not mutually exclusive. Note the distinctions between the two usages:  
 - Area paths assigned to a team determine what work items appear in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool 
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a portfolio planning tool   
 
@@ -340,11 +340,11 @@ To use the following tools, teams must subscribe to area paths.
 
 ### Area paths and team assignments 
 
-A default team and default area path is defined for each project. For small teams, this is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and and sprints. 
+A default team and default area path are defined for each project. For small teams, a single team is sufficient to begin planning and tracking work. As organizations grow, however, it's useful to add teams to support their ability to manage their backlog and sprints. 
 
-Here is an example of area paths and their assignment to teams which support portfolio management views for the Account Management and Service Delivery teams. 
+Here is an example of area paths and their assignment to teams, which support portfolio management views for the Account Management and Service Delivery teams. 
 
-> [!div class="mx-tdCol2BreakAll"]
+> [!div class="mx-imgBorder"] 
 > ![Area paths and team assignments](media/config-custom/area-path-team-assignments.png)  
 
 - You create hiearchical area paths to support sub categories of features and product areas 
@@ -398,7 +398,7 @@ If your development team uses tasks
 
 ## Iteration paths, sprints, releases, and versioning
 
-Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Each iteration or sprint corresponds to a regular time interval referred to as a sprint cadence. Typical sprint cadences are two week, three week or a month long. To learn more about Iteration paths, see [About area and iteration paths (aka sprints)](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).  
+Iteration paths support Scrum and Scrumban processes where work is assigned to a set time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Each iteration or sprint corresponds to a regular time interval referred to as a sprint cadence. Typical sprint cadences are two weeks, three weeks, or a month long. To learn more about Iteration paths, see [About area and iteration paths](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).  
 
 Iteration paths can be a simple flat list, or grouped under release milestones as shown in the following image. 
 
@@ -430,24 +430,14 @@ If you use the Scrum process, your default setup is to track bugs along with pro
 
 Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
-::: moniker range="<= tfs-2018"
-
-> [!TIP]  
-> After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlopgs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on the Kanban or sprint taskboards.  
-
-::: moniker-end
-::: moniker range="> tfs-2018"
-
 > [!TIP]  
 > After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
-
-::: moniker-end
 
 ## Time tracking 
 
 Most organizations following Scrum processes use time estimates for Sprint capacity planning. Azure Boards tools fully support tracking time for this purpose. The main field used is the task Remaining Work field, which typically zeros out at the end of the sprint. 
 
-However, other organizations require time tracking to support other purposes, such as for billing or maintaining time allocation records. Time values for estimated work and completed work are of interest. The Agile and CMMI process provide these fields&mdash;[Original Estimate, Completed Work, Remaining Work](queries/query-numeric.md#fields)&mdash;for use in tracking time. You can use them for that purpose. However, Azure Boards tools provide limited native support for time tracking. Instead, you may want to consider using a [Marketplace extension](https://marketplace.visualstudio.com/search?term=time%20tracking&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) to support these needs.  
+However, some organizations require time tracking to support other purposes, such as for billing or maintaining time allocation records. Time values for estimated work and completed work are of interest. The Agile and CMMI processes provide these fields&mdash;[Original Estimate, Completed Work, Remaining Work](queries/query-numeric.md#fields)&mdash;for use in tracking time. You can use them for that purpose. However, Azure Boards provides limited native support for time tracking. Instead, you may want to consider using a [Marketplace extension](https://marketplace.visualstudio.com/search?term=time%20tracking&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) to support your additional time tracking requirements.  
 
 > [!NOTE]   
 > The Original Estimate, Completed Work, Remaining Work fields were designed to support integration with Microsoft Project. Integration support with Microsoft Project is deprecated for Azure DevOps Server 2019 and later versions, including the cloud service. 
@@ -455,24 +445,37 @@ However, other organizations require time tracking to support other purposes, su
 
 ## Process changes that impact all teams 
 
-Any changes made to a process applied to a project impacts all teams in that project. Many changes won't cause much disruption to the teams they support. However a few do, and those are described in this section.  
+Any change made to a process applied to a project impacts all teams in that project. Many changes won't cause much disruption to the teams they support. However a few do, and those are described in this section.  
 
 ### Custom fields
 
-Adding custom fields to a work item type doesn't impact any specific tool. The fields simply appear in the corresponding work items. If you add a custom numeric field, however, you can use it to support rollup on backlogs as well as the following tools: 
-- [In-context Velocity report](../report/dashboards/team-velocity.md)
-- [In-context Sprint Burndown report](../report/dashboards/configure-sprint-burndown.md)
-- [Dashboard Velocity widget](../report/dashboards/team-velocity.md)
-- [Dashboard Burndown widget](/report/dashboards/configure-burndown-burnup-widgets.md)
-- [Dashboard Burnup widget](/report/dashboards/configure-burndown-burnup-widgets.md)
-- [Dashboard Sprint Burnup widget](../report/dashboards/configure-sprint-burndown.md)
-
+Adding custom fields to a work item type doesn't impact any specific tool. The fields simply appear in the corresponding work items. If you add a custom numeric field, however, you can use it to support rollup on backlogs as well as the following reporting tools: 
+- [In-context Velocity report and dashboard widget](../report/dashboards/team-velocity.md)
+- [In-context Sprint Burndown report and dashboard widget](../report/dashboards/configure-sprint-burndown.md)
+- [Dashboard Burndown and Burnup widget](/report/dashboards/configure-burndown-burnup-widgets.md)
 
 > [!NOTE]   
 > All default and custom fields are shared across all projects in a collection or organization. There is a limit of 1024 fields that you can define for a process. 
 
-### Custom work item types and custom backlogs 
+### Custom work item types 
 
+When you make one or more of the following customizations, you impact the team tools as indicated. 
+- Add a custom work item type to the Requirement category: 
+- Add a custom work item type to the Task category: 
+- Add a custom work item type to the Epic or Feature category: 
+- Add a custom portfolio backlog level 
+
+When you add a custom work item type (WIT) to one of the following work tracking categories, you impact team tools in the following ways: 
+- Task category:
+	- Child work items of the new WIT appear on the product backlog
+	- Work items based on the new WIT appear on the sprint backlogs and Taskboards
+- Requirement category:
+	- Work items based on the new WIT appear on the product backlog and Kanban board
+	- Each team must configure the Kanban board to support the new WIT 
+- Epic or Feature category:
+	- Work items based on the new WIT appear on the corresponding portfolio backlogs and Kanban boards
+	- Each team must configure the Kanban boards to support the new WIT
+	- The new WITs may not appear on one or more of the portfolio planning tools  
 
 
 ### Custom workflow 
@@ -481,28 +484,55 @@ Each process supports a default workflow. This workflow defines the default colu
 
 [!INCLUDE [temp](includes/four-process-workflow.md)] 
 
-When you add workflow states to a requirement work item type, each team will need to update their Kanban board. 
+When you add workflow states to a WIT that belongs to the Requirement, Epic, or Feature category, each team needs to update the corresponding Kanban boards. 
 
-
+Cumulative flow diagram
 
 ## Who can make changes? 
 
-You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+Because process-level, project-level and team-level settings can have a wide impact, changes are restricted to the following people who have the required permissions. 
+
+### Process-level changes 
+
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+
+For additional information, see the following articles:  
+
+- [About the inheritance process](../organizations/settings/work/inheritance-process-model.md)  
+- [Customize a project](../organizations/settings/work/customize-process.md)  
+- [Create and manage a process](../organizations/settings/work/manage-process.md)  
+
+### Project-level changes 
+
+To add Area Paths or Iteration Paths, you must be a member of the [Project Administrators or Project Collection Administrators groups](../security/set-project-collection-level-permissions.md). 
+
+Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, you must have been granted one or more of the following permissions set to **Allow**:
+
+    - **Create child nodes**
+    - **Delete this node**
+    - **Edit this node**
+    - **View permissions in this node**
+
+For additional information, see the following articles:  
+- [Define area paths & assign to a team](../organizations/settings/set-area-paths.md)  
+- [Define iteration paths (sprints) & assign team iterations ](../organizations/settings/set-iteration-paths-sprints.md)  
 
 
-You can delegate several tasks to a user with Stakeholder or Basic access by adding them to the [Project Collection Administrators group](..//organizations/security/set-project-collection-level-permissions.md). To learn more about Stakeholder access, see [About access levels, Stakeholder access](../organizations/security/access-levels.md#stakeholder-access). 
+- Ensure you're [added as a team administrator] or are a member of the **Project Administrators** group to set team Area Paths.  
 
+### Team-level changes
 
-You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
-
-
-Organized by functional services.  
-User - ![ ](media/icons/profile.png)  
-Team - ![ ](media/icons/team.png)  
-Project - ![ ](media/icons/project.png)  
-Collection - ![ ](media/icons/collection.png)  
+All team tools can be configured by a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [Project Administrators or Project Collection Administrators groups](../organizations/settings/security/set-project-collection-level-permissions.md).  
  
-Collection/Organization 
+Team administrators are tasked with performing the following operations:  
+- Add team members 
+- Subscribe to area and iteration paths
+- Configure backlogs and other common team settings 
+- Configure Kanban boards 
+- Manage team notifications
+
+For details on configuring backlogs and boards, see [Manage and configure team tools](../organizations/settings/manage-teams.md).
+
 
 <!---
 
@@ -511,7 +541,7 @@ Collection/Organization
 --> 
 
 
-
+<!--- 
 ## User settings 
 
 The following user settings can impact on work tracking. 
@@ -522,10 +552,8 @@ The following user settings can impact on work tracking.
 Impacts queries? 
 
 Computer settings --- 
-
-- Notifications
-- 
  
+--> 
 
 
 ## Try this next
@@ -535,9 +563,9 @@ Computer settings ---
 
 ## Related articles
 
-- [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)
-
-
+- [Set up your Backlogs and Boards](backlogs/set-up-your-backlog.md)  
+- [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
+-  [Manage and configure team tools](../organizations/settings/manage-teams.md)  
 
 <!---
 Link from these topics to this article: 
@@ -548,29 +576,20 @@ Link from these topics to this article:
 - Inherited process model
 - On-premises process model 
 
-
-Examples you can draw on and document in another topic: 
-- The way Agile features team managed their backlog (~10 PMs) 
-- The way Carmon mills content team (56) manages their backlog. Managing backlog via user stories+content feature area (highly granular) , 
-
-
 Information to provide your teams
-
-
 The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
 
 --> 
 
 <!---
-
-
 Minimize disruption to your team's processes 
 
-
-gannt chart
-workflow customizations 
-
-> [!NOTE]    
-> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../organizations/settings/add-team-administrator.md).
-> 
+Organized by functional services.  
+User - ![ ](media/icons/profile.png)  
+Team - ![ ](media/icons/team.png)  
+Project - ![ ](media/icons/project.png)  
+Collection - ![ ](media/icons/collection.png)  
+ 
+ 
+ 
 --> 
