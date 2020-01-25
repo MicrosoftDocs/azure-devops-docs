@@ -21,6 +21,9 @@ ms.date: 10/25/2019
 
 Adding a team is the #1 way in which Agile tools support a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
 
+[!INCLUDE [temp](../../boards/includes/note-config-customize.md)]
+
+
 Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do so by defining teams and their associated area path(s). 
 
 ![Each team has its own view of the work](../../boards/plans/media/pm-team-structure.png) 

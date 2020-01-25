@@ -30,6 +30,7 @@ There are a number of customizations you can make. The primary ones are adding c
 <a id="what-you-can-customize">  </a>
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
 
+[!INCLUDE [temp](../../../boards/includes/note-config-customize.md)]
 
 ## System versus inherited processes 
 
