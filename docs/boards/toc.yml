@@ -121,7 +121,7 @@
     href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
   - name: Enhanced Export 
     href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
-- name: Azure DevOps Learn Resources
+- name: Azure DevOps Learn
   items:
   - name: What is Agile?
     href: /azure/devops/agile/what-is-agile

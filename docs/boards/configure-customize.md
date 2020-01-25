@@ -71,7 +71,7 @@ You can add custom work item types at each level, and even add additional custom
 
 
 > [!div class="mx-tdCol2BreakAll"]
-> ![Objectives and Key Results as additional portfolio backlogs](media/portfolio-backlogs-objectives-results.png)  
+> ![Objectives and Key Results as additional portfolio backlogs](media/config-custom/portfolio-backlogs-objectives-results.png)  
 
 
 
@@ -330,7 +330,7 @@ To use the following tools, teams must subscribe to area paths.
 - [Boards> all tools](boards/kanban-overview.md)  
 - [Backlogs> all tools](backlogs/backlogs-overview.md)  
 - [Sprints> all tools](sprints/scrum-overview.md)  
-- [Analytics> all](#analytics) and [Rollup](#rollup)  
+- [Analytics> all](../report/dashboards/overview.md#in-context-reports-work-tracking) and [Rollup](#rollup)  
 - Portfolio planning tools   
 	- [Delivery plans](plans/review-team-plans.md), provides individual team and cross-team progress calendar views  
 	- [Feature Timeline](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension), provides a calendar view of team epics and features with the ability to drill down into child items  
@@ -422,16 +422,16 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 
 ## Treat bugs as requirements or tasks
 
-Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
+Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](sprints/task-board.md).
 
 [!INCLUDE [temp](includes/basic-process-bug-note.md)]
 
-If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
+If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
 Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
 
 ## Time tracking 
 
@@ -522,7 +522,7 @@ For additional information, see the following articles:
 
 ### Team-level changes
 
-All team tools can be configured by a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [Project Administrators or Project Collection Administrators groups](../organizations/settings/security/set-project-collection-level-permissions.md).  
+All team tools can be configured by a [team administrator](../organizations/settings/add-team-administrator.md) or a member of the [Project Administrators or Project Collection Administrators groups](../organizations/security/set-project-collection-level-permissions.md).  
  
 Team administrators are tasked with performing the following operations:  
 - Add team members 
