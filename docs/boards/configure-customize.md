@@ -67,7 +67,7 @@ The default work item types for each supported process are shown in the followin
 
 [!INCLUDE [work-item-types](includes/work-item-types.md)]
 
-You can add custom work item types at each level, and even add additional custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as additional portfolio backlogs and work item types to the Scrum process. 
+You can add custom work item types at each level, and even add custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as custom work item types and corresponding portfolio backlogs to the Scrum process. 
 
 
 > [!div class="mx-tdCol2BreakAll"]
@@ -82,8 +82,8 @@ One of the main choices teams have is choosing the work item types they use to t
 <table width="100%">
 <tbody valign="top">
 <tr>
-<th width="35%">Work tracking options</th>
-<th width="65%">Tasks and tools supported </th>
+<th width="30%">Work tracking options</th>
+<th width="70%">Tasks and tools supported </th>
 </tr>
 <tr>
 <td>Tasks only</td>
@@ -260,13 +260,13 @@ Additional portfolio backlogs (Process)
 </tr>
 <tr>
 <td>
-Custom workflow (Project)
+Custom workflow (Process)
 </td>
 <td>
 <ul>
 <li>Boards>Product board</li>
 <li>Boards>Portfolio boards</li>
-<li>Sprints>Task board</li>
+<li>Sprints>Taskboard</li>
 </ul>
 </td>
 <td>
@@ -282,7 +282,7 @@ Custom workflow (Project)
 </tr>
 <tr>
 <td>
-Custom field (Organization)
+Custom field (Process)
 </td>
 <td>
 <ul>
@@ -300,13 +300,6 @@ Custom field (Organization)
 </tr>
 </tbody>
 </table>
-
-
-
-> [!NOTE]   
-> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
-
-
 
 <a id="area-path" />
 
@@ -374,6 +367,23 @@ Recommendations:
 
 Most Azure Boards tools support a filtered view of work items based on area path and/or iteration path. Additional filters can also be applied based on keyword, assignment, work item type, and more. 
 
+
+<a id="show-bugs" />
+
+## Treat bugs as requirements or tasks
+
+Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](sprints/task-board.md).
+
+[!INCLUDE [temp](includes/basic-process-bug-note.md)]
+
+If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
+
+Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
+
+> [!TIP]  
+> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
+
+
 <a id="hierarchy" />
 
 <a id="rollup" />
@@ -405,6 +415,12 @@ Iteration paths can be a simple flat list, or grouped under release milestones a
 > [!div class="mx-imgBorder"]  
 > ![Iteration paths, grouped](media/config-custom/iteration-paths-flat-or-grouped.png)  
 
+
+
+> [!NOTE]   
+> While Iteration Paths don't impact Kanban board tools, you can use Iteration Paths as a filter on boards. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md).
+
+
 To use the following tools, teams must subscribe to iteration paths and set sprint dates. 
 
 - [Sprints> all tools](sprints/scrum-overview.md) 
@@ -417,21 +433,6 @@ To use the following tools, teams must subscribe to iteration paths and set spri
 > [!TIP]    
 > If a team hasn't subscribed or selected the iteration path, then that iteration path won't appear in a team view, tool, or portfolio planning tool.   
 
-
-<a id="show-bugs" />
-
-## Treat bugs as requirements or tasks
-
-Each team can choose how they want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](sprints/task-board.md).
-
-[!INCLUDE [temp](includes/basic-process-bug-note.md)]
-
-If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
-
-Talk with your team to determine how they want to manage bugs. Then [change your team settings](../organizations/settings/show-bugs-on-backlog.md) accordingly.
-
-> [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
 
 ## Time tracking 
 
@@ -484,9 +485,19 @@ Each process supports a default workflow. This workflow defines the default colu
 
 [!INCLUDE [temp](includes/four-process-workflow.md)] 
 
-When you add workflow states to a WIT that belongs to the Requirement, Epic, or Feature category, each team needs to update the corresponding Kanban boards. 
+Sometimes, teams want to track the status of their work that go beyond these default states. Support is provided for this in one of two ways: 
+- Add custom workflow states to the work item type\
+	- This option impacts all teams and requires that they update their Kanban board configuration 
+- Add columns to a Kanban board 
+	- This option only impacts the team that adds the columns
 
-Cumulative flow diagram
+Both workflow states and Kanban columns appear in the Cumulative Flow diagram for a team. Individuals can choose which columns appear in the chart. 
+
+> [!div class="mx-imgBorder"]  
+> ![Cumulative flow diagram](media/config-custom/cumulative-flow-diagram.png)  
+
+To learn more, see [Cumulative flow diagram](../report/dashboards/cumulative-flow.md). 
+
 
 ## Who can make changes? 
 
@@ -508,17 +519,14 @@ To add Area Paths or Iteration Paths, you must be a member of the [Project Admin
 
 Or, to add, edit, and manage Area Paths or Iteration Paths under a specific node, you must have been granted one or more of the following permissions set to **Allow**:
 
-    - **Create child nodes**
-    - **Delete this node**
-    - **Edit this node**
-    - **View permissions in this node**
+- **Create child nodes**  
+- **Delete this node**  
+- **Edit this node**  
+- **View permissions in this node**  
 
 For additional information, see the following articles:  
 - [Define area paths & assign to a team](../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../organizations/settings/set-iteration-paths-sprints.md)  
-
-
-- Ensure you're [added as a team administrator] or are a member of the **Project Administrators** group to set team Area Paths.  
 
 ### Team-level changes
 
