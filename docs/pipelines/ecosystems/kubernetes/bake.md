@@ -58,7 +58,7 @@ The baked manifest files are intended to be consumed downstream (subsequent task
 steps:
 - task: KubernetesManifest@0
   name: bake
-  displayName: Bake K8s manifests from Helm chart
+  displayName: Bake K8s manifests from kustomization path
   inputs:
     action: bake
     renderType: kustomize
@@ -77,7 +77,7 @@ steps:
 steps:
 - task: KubernetesManifest@0
   name: bake
-  displayName: Bake K8s manifests from Helm chart
+  displayName: Bake K8s manifests from Docker Compose
   inputs:
     action: bake
     renderType: kompose
