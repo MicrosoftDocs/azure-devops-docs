@@ -1344,7 +1344,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
     </tr>
     <tr>
         <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Stakeholder access for a public project are granted this permission by default.
+        <td><p>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. For on-premises server, requires the collection to be configured to support Inherited process model.</p><blockquote>Users granted Stakeholder access for a public project are granted this permission by default.</blockquote>
         </td>
     </tr>
     <tr>
@@ -1715,9 +1715,19 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Build object-level permissions dialog](media/permissions/edit-build-pipeline-object-level-permissions-s163.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
 > [!div class="mx-imgBorder"]  
 > ![Build object-level permissions dialog](media/permissions/build-permissions-vsts.png)
 
+::: moniker-end
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
 
@@ -1749,10 +1759,18 @@ The following permissions are defined in Build. All of these can be set at both 
         <td id="destroy-builds-permission">Destroy builds</td>
         <td>Can permanently delete a completed build.</td>
     </tr>
+
     <tr>
-        <td id="edit-build-definition-permission">Edit build definition</td>
+        <td id="edit-build-pipeline-permission">Edit build pipeline</td>
+        <td>Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. </td>
+    </tr>
+
+    <tr>
+	<a id="edit-build-pipeline-permission" />
+        <td id="edit-build-definition-permission">Edit build pipeline</br>Edit build definition</td>
         <td>
-            Can create and modify build definitions for this project.
+            <strong>Edit build pipeline</strong> Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. <br/>
+			 <strong>Edit build definition</strong> Can create and modify build definitions for this project.
             <blockquote>
                 <p>
                     You turn Inheritance Off for a build definition
