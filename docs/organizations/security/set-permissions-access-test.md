@@ -15,7 +15,7 @@ ms.date: 11/07/2019
 
 # Set permissions and access for manual testing
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You grant or restrict access to various manual test features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 > [!NOTE]
@@ -81,11 +81,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 [Open the **Security** page for area paths](set-permissions-access-work-tracking.md#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
+![Open Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-open-area-permissions.png)  
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
+![Set Area path permissions for the project](../../boards/backlogs/media/delete-test-artifacts-area-path-permissions.png)  
 
 <a id="delete-test-artifacts"></a>
 
@@ -102,7 +102,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 <!--- UPDATE IMAGE --> 
 
 > [!div class="mx-imgBorder"]  
-> ![Set project-level permissions for a custom group, Team Admin](_img/set-permissions-project-level-dialog.png)  
+> ![Set project-level permissions for a custom group, Team Admin](media/set-permissions-project-level-dialog.png)  
 
 ::: moniker-end    
 
