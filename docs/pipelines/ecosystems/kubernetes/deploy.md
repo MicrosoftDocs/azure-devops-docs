@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
