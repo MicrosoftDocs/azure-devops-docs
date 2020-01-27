@@ -5,10 +5,10 @@ ms.topic: conceptual
 title: Create a service hook for Grafana
 description: Annotate Grafana dashboards upon completion of deployments in Azure Pipelines
 ms.assetid: d588f4a0-8081-4684-b87e-64d3140b8b1c
-ms.manager: shasb
+ms.manager: atulmal
 monikerRange: 'azure-devops'
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 03/24/2019
 ---
 
