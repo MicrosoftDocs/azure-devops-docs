@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Configuration variables and system variables
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Often when you deploy your app, you need access to configuration or system 
 settings for your script. That way you don't have to hardcode values in 
@@ -62,14 +62,14 @@ and **Resource Variables**.
 The **Configuration Variables** tab shows the configuration variables in 
 effect for the action, for each stage.
 
-![The Configuration variables tab ](_img/config-system-vars-01.png)
+![The Configuration variables tab ](media/config-system-vars-01.png)
 
 The **Resource Variables** tab shows the configuration variables and values 
 that are set globally, for servers, and for components. (These are current 
 values, not a snapshot from a previous time.) Changes to resource variables
 will be in effect by in-flight releases that start a new deployment.
 
-![The Resource variables tab ](_img/config-system-vars-02.png)
+![The Resource variables tab ](media/config-system-vars-02.png)
 
 To add a configuration variable within an action, in the **Release Templates**
 designer, open an activity, click the dropdown arrow in the **Custom 
@@ -77,17 +77,17 @@ configuration** section, and specify **Standard** or **Encrypted** for the
 type of configuration variable. (If using **Encrypted**, ensure the HTTPS 
 listener is configured on the server where you deploy your app.)
 
-![Add a configuration variable within an action ](_img/config-system-vars-03.png)
+![Add a configuration variable within an action ](media/config-system-vars-03.png)
 
 Type in the name of the new variable, and provide its value.
 
-![Type the name of the new variable and its value ](_img/config-system-vars-04.png)
+![Type the name of the new variable and its value ](media/config-system-vars-04.png)
 
 To override a value in a resource variable, click the **+** sign and then 
 click the dropdown arrow in the **Custom configuration** section. Select 
 the variable to customize and provide a value.
 
-![Override a value in a resource variable ](_img/config-system-vars-05.png)
+![Override a value in a resource variable ](media/config-system-vars-05.png)
 
 ## System variables
  
@@ -144,6 +144,6 @@ variable will be unassigned.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

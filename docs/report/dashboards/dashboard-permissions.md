@@ -17,7 +17,7 @@ ms.date: 02/08/2018
 
 # Set dashboard permissions    
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)] 
 
 <a id="set-permissions">  </a>
 
@@ -64,7 +64,7 @@ By default, all team members have permissions to edit dashboards defined for the
 1. Choose **Project Settings** and then **Dashboards**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](_img/set-permissions/project-setting-permissions.png)
+	> ![Web portal, open Dashboards](media/set-permissions/project-setting-permissions.png)
 
 1. Check or uncheck those permissions you want to grant or restrict. Your changes are automatically saved by the system.
 
@@ -74,17 +74,17 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ## Set individual dashboard permissions for team members
 
-1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, open Dashboards](_img/set-permissions/open-dashboard-security.png)
+	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
 
 1. Change **Allow** or **Deny** to grant or restrict a permission. 
  
 	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
 
  	> [!div class="mx-imgBorder"]  
-	> ![Permissions for Analytics dashboard dialog](_img/set-permissions/dashboard-permission-dialog.png)
+	> ![Permissions for Analytics dashboard dialog](media/set-permissions/dashboard-permission-dialog.png)
 
 	> [!NOTE]   
 	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time.  
@@ -103,11 +103,11 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ::: moniker range="tfs-2018"
 
-1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
+1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](media/icons/configure-icon.png) wrench icon for the dashboard.
 
 	For example, here we open the Manage Dashboards dialog for the Fabrikam Fiber Web team's Test dashboard. 
 
-	![Open Manage dashboards dialog](_img/dashboards-configure-ts.png) 
+	![Open Manage dashboards dialog](media/dashboards-configure-ts.png) 
 
 2. Choose the **Permissions** tab and check those checkboxes to grant or restrict permissions to your team members to edit and manage team dashboards. The default settings, as shown in the illustration, provide all team members permissions to edit and manage dashboards.  
 
@@ -115,7 +115,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> The dashboard security dialog doesn't support granting permissions to other users or groups.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](_img/dashboards-permissions.png)   
+	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](media/dashboards-permissions.png)   
 
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 
@@ -124,11 +124,11 @@ By default, all team members have permissions to edit dashboards defined for the
 
 
 ::: moniker range="tfs-2017"
-1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
+1. To change the permissions for a specific dashboard, open the dashboard and then choose the ![configure icon](media/icons/configure-icon.png) wrench icon for the dashboard.
 
 	For example, here we open the Manage Dashboards dialog for the Fabrikam Fiber Web team's Test dashboard. 
 
-	![Open Manage dashboards dialog](_img/dashboards-configure-ts.png) 
+	![Open Manage dashboards dialog](media/dashboards-configure-ts.png) 
 
 2. Choose the **Permissions** tab and check those checkboxes to grant or restrict permissions to your team members to edit and manage team dashboards. The default settings, as shown in the illustration, provide all team members permissions to edit and manage dashboards.  
 
@@ -138,7 +138,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	Requires TFS 2017.1 or later version.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, 2017.1](_img/dashboards-permissions-tfs.png) 
+	> ![Manage dashboards - permissions dialog, 2017.1](media/dashboards-permissions-tfs.png) 
  
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 

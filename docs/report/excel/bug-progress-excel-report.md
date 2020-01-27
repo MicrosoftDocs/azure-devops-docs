@@ -8,13 +8,13 @@ ms.topic: reference
 ms.assetid: 471fb90b-9815-4d26-aa01-7ee293682717
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
 # Bug Progress Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 You can use the Bug Progress report in Office Excel to track the team's progress toward resolving Bugs. This report shows the number of Bugs in each state over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
@@ -28,7 +28,7 @@ You can use the Bug Progress report in Office Excel to track the team's progress
 
  You can use the Bug Progress report to understand how well the team is finding, fixing, and closing Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for bugs. The data is stored in the data warehouse.  
   
- ![Bug Progress Excel Report](_img/procguid_excelbug.png "ProcGuid_ExcelBug")  
+ ![Bug Progress Excel Report](media/procguid_excelbug.png "ProcGuid_ExcelBug")  
   
 ### Required activities for tracking bugs  
 

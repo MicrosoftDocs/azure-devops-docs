@@ -1,5 +1,6 @@
 ---
 title: VSS/References/SDK.Interfaces GlobalizationContext API | Extensions for Azure DevOps Services
+description: Data representation of globalization context.
 ms.assetid: b399ed9b-d635-e26b-abe4-c34c6009917c
 ms.prod: devops
 ms.technology: devops-ecosystem

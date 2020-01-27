@@ -9,23 +9,25 @@ ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 10/21/2019
+ms.date: 1/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Conditions
+# Specify conditions
 
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
+You can specify the conditions under which each job runs. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded. You can customize this behavior by forcing a job to run even if a previous job fails or by specifying a custom condition.
+
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
 You can specify conditions under which a step, job, or stage will run.
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * Custom conditions
 
 By default, steps, jobs, and stages run if all previous steps/jobs have succeeded.
@@ -51,10 +53,11 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
+
 Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
 you can specify the conditions under which the task or job will run:
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * Custom conditions
 
 * * *
@@ -117,7 +120,7 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 ### Use a template parameter as part of a condition
 
-Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions.
+Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is false.
 
 ```yaml
 parameters:
@@ -125,11 +128,12 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', 'true'))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', false))
 ```
+
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](variables.md#set-in-script). 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable). 
 
 ```yaml
 jobs:
@@ -146,7 +150,7 @@ jobs:
     - script: echo "Job Foo ran and doThing is true."
 ```
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -159,3 +163,9 @@ No. If you cancel a job while it's in the queue, then the entire job is canceled
 If you defined the pipelines using a YAML file, then this is supported. This scenario is not yet supported for release pipelines.
 
 <!-- ENDSECTION -->
+
+
+## Related articles
+
+- [Specify jobs in your pipeline](../process/phases.md)  
+- [Add stages, dependencies, & conditions](../process/stages.md)   

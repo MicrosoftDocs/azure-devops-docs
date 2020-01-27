@@ -17,7 +17,7 @@ ms.date: 04/22/2019
 
 # Plan your organizational structure
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Your business structure should act as a guide to the number of organizations, projects, and teams that you create in Azure DevOps. This article helps you plan for different structures and scenarios for Azure DevOps.  
 
@@ -48,9 +48,9 @@ Each organization gets its own *free tier* of services (up to five users for eac
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Unlimited Stakeholders
-  [!INCLUDE [free-tier](../_shared/free-tier.md)]
+  [!INCLUDE [free-tier](../includes/free-tier.md)]
 
-[!INCLUDE [loadtest-deprecated-include](../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../test/includes/loadtest-deprecated-include.md)]
 
 ## How many organizations do you need?
 
@@ -77,7 +77,7 @@ A project in Azure DevOps contains the following set of features:
 
 In the following image, the Contoso company has four projects within their Contoso-Manufacturing organization.
 
-![Image of an organization with four projects](_shared/contoso-organization-with-projects.png)
+![Image of an organization with four projects](media/contoso-organization-with-projects.png)
 
 ## How many projects do you need?
 
@@ -122,13 +122,13 @@ When you map projects to business units, your company gets a single organization
 <a id="mapping-guidance-table" >  </a>
 
 
-|                                                |                                                                                 **One project, many teams**                                                                                  |                                               **One organization, many projects and teams**                                                |                                                                     **Many organizations**                                                                      |
+|                                                |                                                                                 **One project, many teams**                                                                                  |                                               **One organization, many projects, and teams**                                                |                                                                     **Many organizations**                                                                      |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |              **General guidance**              |                                                      Best for smaller organizations or larger organizations with highly aligned teams.                                                       |                                          Good when different efforts require different processes.                                          | Useful as part of TFS legacy migrations and for hard security boundaries between organizations. Used with multiple projects and teams within each organization. |
 |                   **Scale**                    |                                Supports tens of thousands of users and hundreds of teams, but best at this scale if all teams are working on related efforts.                                |                                         Same as with one project, but many projects may be easier.                                         |                                                                                                                                                                 |
 |                  **Process**                   |                                                 Aligned processes across teams; team flexibility to customize boards, dashboards, and so on.                                                 |                 Independent processes for each project. For example, different work item types, custom fields, and so on.                  |                                                                     Same as many projects.                                                                      |
 |               **Collaboration**                |                                                       Highest default visibility and reuse between work and assets of different teams.                                                       |                Good visibility and reuse are possible, but it's easier to hide assets between projects whether intentional.                |                                                Poor visibility, collaboration, and reuse between organizations.                                                 |
-| **Roll-up reporting and portfolio management** |                                                              Best ability to roll-up across teams and coordinate between teams.                                                              |                 Good reporting possible across projects.  More difficult for cross-project roll-up and team coordination.                  |                                                        No roll-up or coordination between organizations.                                                        |
+| **Roll-up reporting and portfolio management** |                                                              Best ability to roll up across teams and coordinate between teams.                                                              |                 Good reporting possible across projects.  More difficult for cross-project roll-up and team coordination.                  |                                                        No roll-up or coordination between organizations.                                                        |
 |             **Security/isolation**             |                                                   Can lock down assets at a team level, but default is open visibility and collaboration.                                                    |  Better ability to lock down between projects.  By default, provides good visibility within projects and good isolation across projects.   |                          Hard boundaries across organizations; excellent isolation and minimal ability to share across organizations.                           |
 |             **Context switching**              |                                                         Easiest for teams to work together and for users to switch between efforts.                                                          |                              Relatively easy for users to work together and switch contexts between efforts.                               |                                             More difficult for users having to work across different organizations.                                             |
 |            **Information overload**            |                               By default, all assets are visible to users will make use of “favorites” and similar mechanisms to avoid “information overload.”                               |                        Reduced risk of information overload; most project assets hidden across project boundaries.                         |                                        Assets across organizations are isolated, reducing risk of information overload.                                         |
@@ -136,11 +136,11 @@ When you map projects to business units, your company gets a single organization
 
 ## Structure repos and version control within a project
 
-Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https://dev.azure.com/{organization-name}/{project-name}.
+Consider the specific strategic work scoped to one of the organizations you created previously and who should have access. Use this information to name and [create a project](../organizations/projects/create-project.md). This project has a URL defined under the organization you created it in and can be accessed at https:\//dev.azure.com/{organization-name}/{project-name}.
 
-Configure your project by visiting its URL and select the **Project settings** button at the lower right of the page.
+Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
-![open-project-settings-vert-brn.png](../_shared/_img/settings/open-project-settings-vert-brn.png)
+![open-project-settings-vert-brn.png](../media/settings/open-project-settings-vert-brn.png)
 
 To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
 ## Managing version control
@@ -161,7 +161,7 @@ Do you need to set up multiple repos within a single project or have a repo set 
 
 Starting with a single project containing multiple repos is reasonable, especially if the products/services are working on a coordinated release schedule. If developers are frequently working with multiple repos, keeping them in a single project encourages the processes to remain shared and consistent. Administering repo access is simpler in a single project, as access controls and options like case enforcement and max file size can be set at the project level. Repos can have these access controls and settings managed individually, even if they're in a single project.
 
-If the products stored in multiple repos are working on independent schedules or processes, you can split them into multiple projects. Git repo portability makes it easy to move a repo between projects and still keep full-fidelity commit history. Other history, such as pull requests or build history. are not easily migrated.
+If the products stored in multiple repos are working on independent schedules or processes, you can split them into multiple projects. Git repo portability makes it easy to move a repo between projects and still keep full-fidelity commit history. Other history, such as pull requests or build history, aren't easily migrated.
 
 Your decision for one vs. many repos should be largely based on code dependencies and architecture. A good first rule to apply is to put each independently deploy-able product or service in its own repo. Don't separate a codebase into many repos if you expect to make coordinated code changes across those repos, as there are no tools to assist in coordinating those changes. If your codebase is already a monolith, keep it in one repo. For more information about monolithic repos, see [Git at Scale](https://docs.microsoft.com/azure/devops/learn/git/git-at-scale) articles. If you have many disconnected services, one repo per service can be a good strategy.  
 
@@ -176,19 +176,19 @@ Forks can be useful when you're working with vendor teams that shouldn't have di
 
 The following image displays a sample of how "your company" could structure its organizations, projects, work items, teams, and repos.
 
-![azure-devops-org_project_team_visual.png](_img/azure-devops-org_project_team_visual.png)
+![azure-devops-org_project_team_visual.png](media/azure-devops-org_project_team_visual.png)
 
 ## More about organizational structure
 
 ### Choosing your organization admin account type
 
-When you create an organization, the identity that you sign in with defines the identity provider that the organization uses, such as your Azure Active Directory or Microsoft account. Your organization can be created by using a Microsoft account or with an Azure Active Directory account. This account provides the credentials to sign in as an admin to your new organization at https://dev.azure.com/{yourorganization}.
+When you create an organization, the identity that you sign in with defines the identity provider that the organization uses, such as your Azure Active Directory or Microsoft account. Your organization can be created by using a Microsoft account or with an Azure Active Directory account. This account provides the credentials to sign in as an admin to your new organization at https:\//dev.azure.com/{yourorganization}.
 
 #### Using your Microsoft account
 
 Use your Microsoft account if you don't need to authenticate users for an organization with Azure AD. All users must sign in to your organization with a Microsoft account. If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
 
-   ![Enter your password and sign in](../_shared/_img/enter-password-sign-in.png)
+   ![Enter your password and sign in](../media/enter-password-sign-in.png)
 
 If you don't have an Azure Active Directory instance, create one for free from the [Azure portal](https://ms.portal.azure.com/) or use your Microsoft account to create an organization. Then, you can [connect the organization to Azure AD](../organizations/accounts/connect-organization-to-azure-ad.md).
 
@@ -208,7 +208,7 @@ Learn more about how to [manage users](../organizations/accounts/manage-users-ta
 
 Each business unit within your company gets its own organization in Azure DevOps, along with its own Azure Active Directory tenant. [Set up projects](#what-is-a-project) within those individual organizations, as required, based on teams or ongoing work.
 
-For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https://dev.azure.com/Fabrikam-Marketing, https://dev.azure.com/Fabrikam-Engineering, and https://dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
+For a larger company, you can create multiple organizations using different user accounts (most likely Azure Active Directory accounts). Consider what groups and users share strategies and work, and group them into specific organizations. For example, the (fictional) Fabrikam company might create three organizations: Fabrikam-Marketing, Fabrikam-Engineering, and Fabrikam-Sales. Each organization has a separate URL, such as https:\//dev.azure.com/Fabrikam-Marketing, https:\//dev.azure.com/Fabrikam-Engineering, and https:\//dev.azure.com/Fabrikam-Sales. The organizations are all for the same company but are mostly isolated from each other. You don't need to have anything separated, however you should only create boundaries when it makes sense to your business. You can more easily partition an existing organization with projects, than combine different organizations.
 
 ## Related articles  
 

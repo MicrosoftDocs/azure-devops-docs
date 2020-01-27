@@ -1,5 +1,6 @@
 ---
 title: VSS/WebApi/Contracts ExtensionLicenseData API | Extensions for Azure DevOps Services
+description: Data representation of extension license data.
 ms.assetid: 8385bb5c-a687-be64-0e52-60288b265e35
 ms.prod: devops
 ms.technology: devops-ecosystem

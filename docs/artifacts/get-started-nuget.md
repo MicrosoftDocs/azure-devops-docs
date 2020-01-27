@@ -1,5 +1,5 @@
----
-title: Get started with NuGet packages in Azure DevOps Services and TFS
+﻿---
+title: Get started with NuGet packages
 description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -37,17 +37,17 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 *Already have a feed? [Skip to the next step](#publish-a-package).*
 
-[!INCLUDE [](_shared/create-feed.md)]
+[!INCLUDE [](includes/create-feed.md)]
 
 <a name="publish-a-package"></a>
 ## Publish a package
 
-[!INCLUDE [](_shared/nuget/publish.md)]
+[!INCLUDE [](includes/nuget/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
 ## Consume your package in Visual Studio
 
-[!INCLUDE [](_shared/nuget/consume.md)]
+[!INCLUDE [](includes/nuget/consume.md)]
 
 <a name="automate-with-continuous-integration"></a>
 ## Automate the process with continuous integration

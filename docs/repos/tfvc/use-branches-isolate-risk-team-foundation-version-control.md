@@ -62,8 +62,6 @@ Lists topics about how to resolve merges, check in procedures, and get retrieve 
 
 ## See Also
 
-#### Other Resources
-
- [Branch strategically](branch-strategically.md) 
-
-[Visual Studio TFS Branching Guide](https://go.microsoft.com/fwlink/?LinkId=191400)
+[Branch strategically](branch-strategically.md)
+ 
+[Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy](branching-strategies-with-tfvc.md)

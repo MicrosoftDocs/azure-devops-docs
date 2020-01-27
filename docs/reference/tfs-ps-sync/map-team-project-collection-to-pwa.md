@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Map a project collection to an instance of PWA
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server and Microsoft Project Server, you must perform several tasks that include mapping a project collection to an instance of Project Web Access or Project Web App (PWA). You can manage this mapping by using the following options of the **TFSAdmin** command-line tool:  
   

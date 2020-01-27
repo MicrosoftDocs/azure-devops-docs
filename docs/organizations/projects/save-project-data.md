@@ -16,24 +16,24 @@ monikerRange: '>= tfs-2013'
 
 # Save project data
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When you delete a project, you cannot recover its data later. Therefore, you should save project data.
 
 You can use the following procedures to save data that users most care about, such as source code, build data, and work items.
 
-* **Source code and custom build templates:** You can download your files as a zip file. Open the ![Repository actions](../../_img/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip**. You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
+* **Source code and custom build templates:** You can download your files as a zip file. Open the ![Repository actions](../../media/icons/actions-icon.png) actions icon for the repository, file, or folder and choose **Download as Zip**. You can also choose the **Download** icon at the right side of the screen to download either all of the files in the currently selected folder, or the currently selected file.
 
   ::: moniker range=">= tfs-2017"
 
   > [!div class="mx-imgBorder"]
-  > ![Download code ](../public/_img/download-code/download-zip-file.png)
+  > ![Download code ](../public/media/download-code/download-zip-file.png)
 
   ::: moniker-end
 
   ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-  ![context menu with download as zip menu item](_img/delete-project/ic760345.png)
+  ![context menu with download as zip menu item](media/delete-project/ic760345.png)
 
   ::: moniker-end
 

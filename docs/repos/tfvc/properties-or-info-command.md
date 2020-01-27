@@ -24,8 +24,11 @@ Displays information about items under version control.
 
 To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
-    itemspec [/version:versionspec] [/workspace] 
+```
+tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
+itemspec [/version:versionspec] [/workspace] 
+```
+
 ## Parameters
 
 <table><thead>
@@ -104,11 +107,15 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example displays properties information about the file 314.cs.
 
-    c:\projects>tf properties 314.cs
+```
+c:\projects>tf properties 314.cs
+```
 
 The following example displays the properties of the working folder c:\\projects\\objects.
 
-    c:\projects>tf properties objects
+```
+c:\projects>tf properties objects
+```
 
 ## See Also
 

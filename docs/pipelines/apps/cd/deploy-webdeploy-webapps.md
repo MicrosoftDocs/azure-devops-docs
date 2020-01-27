@@ -33,7 +33,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 You'll also need an Azure Web App where you will deploy the app.
 
-[!INCLUDE [create-release](../_shared/create-release.md)]
+[!INCLUDE [create-release](../includes/create-release.md)]
 
 ## Next step
 

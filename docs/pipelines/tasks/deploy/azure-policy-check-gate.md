@@ -23,7 +23,7 @@ Security and compliance assessment with Azure policies on resources that belong 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzurePolicyV0.md)]
+[!INCLUDE [temp](../includes/yaml/AzurePolicyV0.md)]
 
 ::: moniker-end
 

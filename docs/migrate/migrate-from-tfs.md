@@ -1,5 +1,5 @@
----
-title: Migration options for migrating from Azure DevOps Server to Azure DevOps Services
+﻿---
+title: Migrating from Azure DevOps Server to Azure DevOps Services
 titleSuffix: Azure DevOps
 description: Learn about migrating from Azure DevOps Server to Azure DevOps Services
 ms.prod: devops
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Migration options
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 When you decide to make the move from Azure DevOps Server to Azure DevOps Services, you might start fresh with an empty organization. Often, however,
 you will have existing code, work items, and other assets that you want to move. There are many approaches to doing this
@@ -51,7 +51,7 @@ The Azure DevOps Server & Azure DevOps Services product team provides a high fid
 Guide is available at [https://aka.ms/AzureDevOpsImport](https://aka.ms/AzureDevOpsImport). 
 
 <a href="https://aka.ms/AzureDevOpsImport">
-<img alt="Migration Guide" src="_img/migration-import/VSTSMigrationGuideCover-227x300.png" align="middle" />
+<img alt="Migration Guide" src="media/migration-import/VSTSMigrationGuideCover-227x300.png" align="middle" />
 </a>
 
 Because the data migration tool operates at a database level, it can provide a very high fidelity migration. 

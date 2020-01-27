@@ -7,15 +7,15 @@ ms.technology: devops-cicd
 ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # App Center Distribute task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
@@ -24,7 +24,7 @@ Use this task in a build or release pipeline to distribute app builds to testers
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -32,7 +32,7 @@ Use this task in a build or release pipeline to distribute app builds to testers
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AppCenterDistributeV3.md)]
+[!INCLUDE [temp](../includes/yaml/AppCenterDistributeV3.md)]
 
 ::: moniker-end
 

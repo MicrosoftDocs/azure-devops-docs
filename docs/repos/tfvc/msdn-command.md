@@ -1,5 +1,5 @@
----
-title: Use the Msdn Command to display a help topic from the MSDN library 
+﻿---
+title: Use the Msdn Command to display a help topic 
 titleSuffix: Azure Repos
 description: Display a help topic from the MSDN library using the Msdn Command
 ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
@@ -20,7 +20,10 @@ monikerRange: '>= tfs-2015'
 
 Displays a help topic from the MSDN library that contains detailed information about a Team Foundation version control command.
 
-    tf msdn commandname
+```
+tf msdn commandname
+```
+
 ## Parameters
 | **Argument** | **Description** |
 |---|---|
@@ -36,11 +39,15 @@ For more information about how to find the **tf** command-line utility, see [Tf 
 ## Examples
 The following example displays a help topic that lists all the version control commands, including a brief explanation of syntax.
 
-    c:\projects>tf msdn
+```
+c:\projects>tf msdn
+```
 
 The following example displays a help topic about the **workspace** command.
 
-    c:\projects>tf msdn workspace
+```
+c:\projects>tf msdn workspace
+```
 
 ## See Also
 

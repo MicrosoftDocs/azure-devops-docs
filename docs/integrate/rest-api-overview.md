@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
+title: REST APIs for Azure DevOps and Team Foundation Server
+description: Read an overview of the basic patterns for using the REST APIs for Azure DevOps and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -66,7 +66,7 @@ There are many ways to authenticate your application or service with Azure DevOp
 |---------------------|-------------|---------|-------------------------|--------|
 | Interactive client-side  | GUI based client side application | Windows app enumerating bugs for a user | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
 | Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying work items for a user | [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) | sample (coming soon) |
-| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
+| Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](/samples/azure-samples/active-directory-dotnetcore-devicecodeflow-v2/invoke-protected-api-text/) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | [Azure DevOps Services Extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
@@ -193,7 +193,7 @@ You should get a response like this.
 }
 ```
 
-The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
+The response is [JSON](https://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
 like [Git blobs](previous-apis/git/blobs.md).
 
 Now you should be able to look around the specific

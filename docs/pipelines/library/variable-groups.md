@@ -13,12 +13,13 @@ ms.date: 02/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Variable groups
+# Add & use variable groups
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Use a variable group to store values that you want to control and make available across
-multiple pipelines. Variable groups are defined and managed in the **Library** page under
+multiple pipelines. You can also use variable groups to store secrets and other values
+that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group). Variable groups are defined and managed in the **Library** page under
 **Pipelines**.
 
 ::: moniker range="< tfs-2018"
@@ -47,7 +48,7 @@ Choose **+ Variable group**.
 
 1. When you're finished adding variables, choose **Save**.
 
-   ![Saving a variable group](_img/save-variable-group.png) 
+   ![Saving a variable group](media/save-variable-group.png) 
 
 > Variable groups follow the [library security model](index.md#security).
 
@@ -106,7 +107,7 @@ tab, select **Variable groups**, and then choose **Link variable group**.
 In a build pipeline, you see a list of available groups. In a release pipeline (as shown below), you
 also see a drop-down list of stages in the pipeline - you can link the variable group to one or more of these stages.
 
-![Linking a variable group](_img/link-variable-group.png)
+![Linking a variable group](media/link-variable-group.png)
 
 * In a **build pipeline**, the variable group is linked to the pipeline and all the variables in the group are available for use within this pipeline.
 * In a **release pipeline**, you can link a variable group to the pipeline itself, or to a specific stage of the release pipeline.
@@ -134,7 +135,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
    You'll need an existing key vault containing your secrets. You can create a 
    key vault using the [Azure portal](https://portal.azure.com).
 
-   ![Variable group with Azure key vault integration](_img/link-azure-key-vault-variable-group.png)
+   ![Variable group with Azure key vault integration](media/link-azure-key-vault-variable-group.png)
 
 1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
@@ -184,6 +185,6 @@ When you set a variable with the same name in multiple scopes, the following pre
 1. Variable set in the pipeline
 1. Variable set in the variable group
 
-[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+[!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
 * * *

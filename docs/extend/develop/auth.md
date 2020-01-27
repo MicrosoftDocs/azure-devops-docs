@@ -17,7 +17,7 @@ ms.date: 08/29/2016
 > [!NOTE]
 > This page pertains only to _web extensions_, and not Pipelines task extensions or service endpoint extensions. For those tasks, you can use the [Publish to Azure Service Bus Task](../../pipelines/tasks/utility/publish-to-azure-service-bus.md).
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Calling REST APIs from your extension
 
@@ -47,7 +47,7 @@ Your extension's unique key (which is generated when the extension is published)
 
 To get this key, right-click a [published extension](../publish/overview.md) and select **Certificate**.
 
-![key](./_img/get-extension-key.png)
+![key](./media/get-extension-key.png)
 
 > [!WARNING]
 > Scope changes in an extension cause the certificate to change. If you make changes to the scope, you need a new extension key.

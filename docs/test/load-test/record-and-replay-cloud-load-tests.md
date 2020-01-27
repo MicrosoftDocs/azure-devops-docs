@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Record and replay cloud-based load tests
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 You can record and then replay cloud-based load tests on your web app or website directly
 using an HTTP Archive file and Azure DevOps.
@@ -76,7 +76,7 @@ Edge, Internet Explorer, or
 [Firefox](https://www.mozilla.org/firefox/new/). For example, 
 [this video](https://msdnshared.blob.core.windows.net/media/2016/05/HARCreationVideo.mp4)
 shows how to create an HTTP Archive with different browsers and with 
-[Fiddler](http://www.telerik.com/fiddler).
+[Fiddler](https://www.telerik.com/fiddler).
  
 ## Create an HTTP Archive file
 
@@ -96,7 +96,7 @@ using your browser.
      you reload the current page or load a different page - which means 
      that an end-to-end scenario may not be captured.
 
-   ![Configuring Chrome to record HTTP traffic](_img/record-and-replay-cloud-load-tests/01-chrome-settings.png)
+   ![Configuring Chrome to record HTTP traffic](media/record-and-replay-cloud-load-tests/01-chrome-settings.png)
 
 1. Exercise your user scenario. Enter the URL in the address bar 
    and go through the sequence of actions a typical user would 
@@ -115,15 +115,15 @@ using your browser.
    **Save as HAR with content**. Enter a name for the file 
    and save it on your computer.
 
-   ![Saving the HTTP traffic as a .har file](_img/record-and-replay-cloud-load-tests/02-save-as-har.png)
+   ![Saving the HTTP traffic as a .har file](media/record-and-replay-cloud-load-tests/02-save-as-har.png)
 
    You can also create an HTTP Archive using tools other
-   than a browser. For example, [Fiddler](http://www.telerik.com/fiddler)
+   than a browser. For example, [Fiddler](https://www.telerik.com/fiddler)
    is a popular tool for viewing and troubleshooting traffic. 
    Use Fiddler to record traffic in the same way and export sessions 
    as an HTTP Archive.
 
-   ![Creating a .har file in Fiddler](_img/record-and-replay-cloud-load-tests/03-fiddler-export.png)
+   ![Creating a .har file in Fiddler](media/record-and-replay-cloud-load-tests/03-fiddler-export.png)
  
 ## Create a load test using the HTTP Archive file
 
@@ -132,15 +132,15 @@ web portal using an HTTP Archive (**.har**) file.
 
 1. Sign into Azure DevOps.
 
-2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../includes/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.
 
-   ![Selecting a HTTP archive test](_img/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
+   ![Selecting a HTTP archive test](media/record-and-replay-cloud-load-tests/05-start-http-archive-import.png)
 
 3. In the **Import HTTP Archive file** dialog, select the **.har**
    file that you recorded in the earlier steps and choose **OK**.
 
-   ![Selecting the HTTP archive file](_img/record-and-replay-cloud-load-tests/06-select-har-file.png)
+   ![Selecting the HTTP archive file](media/record-and-replay-cloud-load-tests/06-select-har-file.png)
 
    The HTTP Archive file is uploaded and read, the URLs are 
    extracted, and all the details (the HTTP method, headers, 
@@ -149,12 +149,12 @@ web portal using an HTTP Archive (**.har**) file.
    for each request in the center **Add URL** pane. This will
    help you easily identify each request.
 
-   ![Uploading the HTTP archive file](_img/record-and-replay-cloud-load-tests/07a-har-import.png)
+   ![Uploading the HTTP archive file](media/record-and-replay-cloud-load-tests/07a-har-import.png)
 
     The right-hand section of this page shows details of the selected 
     request URL. 
 
-   ![Details of the selected request URL](_img/record-and-replay-cloud-load-tests/07b-har-import.png)
+   ![Details of the selected request URL](media/record-and-replay-cloud-load-tests/07b-har-import.png)
 
    >Some dynamic information such as ASP.NET viewstate, 
    event validation, and more that varies from session 
@@ -166,22 +166,22 @@ web portal using an HTTP Archive (**.har**) file.
 4. Open the **Settings** page to view and change any 
    load test settings.
 
-   ![Editing the test settings](_img/record-and-replay-cloud-load-tests/07c-har-import.png)
+   ![Editing the test settings](media/record-and-replay-cloud-load-tests/07c-har-import.png)
 
 5. Enter a name for your load test, then choose **Save**.
 
-   ![Saving the test settings](_img/record-and-replay-cloud-load-tests/07f-har-save-test.png)
+   ![Saving the test settings](media/record-and-replay-cloud-load-tests/07f-har-save-test.png)
 
 6. Choose the **Run test** link to execute your load test.
    A progress bar shows the current status of the test run. 
 
-   ![Running the test](_img/record-and-replay-cloud-load-tests/07d-har-import.png)
+   ![Running the test](media/record-and-replay-cloud-load-tests/07d-har-import.png)
 
 7. As the load test runs, you see a rich set of metrics
    that indicate how your app is performing under load.
    When the test is complete, you can explore the results.
 
-   ![The test results](_img/record-and-replay-cloud-load-tests/07e-har-import.png)
+   ![The test results](media/record-and-replay-cloud-load-tests/07e-har-import.png)
 
    For more information about the results and reports, see 
    [URL-based load testing with Azure DevOps](get-started-simple-cloud-load-test.md#viewresults).
@@ -198,24 +198,24 @@ The **Diagnostics** section provides insights into any test errors and important
 from the load test service that occurred during the load test run. For failing requests, you can 
 see the error type, the specific error subtype, the number of times the failure occurred, and more.
 
-![Viewing diagnostics information](_img/record-and-replay-cloud-load-tests/08a-diagnostics-tab.png)
+![Viewing diagnostics information](media/record-and-replay-cloud-load-tests/08a-diagnostics-tab.png)
 
 This page also lists the requests that were tested, and 
 the test you executed.
  
-![The list of request URLs dn tests](_img/record-and-replay-cloud-load-tests/08b-diagnostics-tab.png)
+![The list of request URLs dn tests](media/record-and-replay-cloud-load-tests/08b-diagnostics-tab.png)
 
 The **Logs** section gives you access to logs from all of the load-generating agents. If requests 
 in your test are failing, these logs will help you figure out what went wrong. The test logs are 
 available in HTTP Archive (**.har**) format, the same format as you used to record the user scenario 
 and create the test. You can download these logs and view them in a HAR viewer such as 
-[Fiddler](http://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
+[Fiddler](https://www.telerik.com/fiddler), [HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/),
 or any other viewer that you prefer. You can then inspect the details of each request 
 and its response in order to troubleshoot any failures in your test.
 
 This screenshot shows how you can import the log into Fiddler.
 
-![Importing the HTTP archive into Fiddler](_img/record-and-replay-cloud-load-tests/11-fiddler-import.png)
+![Importing the HTTP archive into Fiddler](media/record-and-replay-cloud-load-tests/11-fiddler-import.png)
 
 <a name="exportvs"></a> 
 ### Export the test to Visual Studio
@@ -234,7 +234,7 @@ However, dynamic parameters may also appear elsewhere in requests such as query 
 collections. At present, the load test mechanism does not support these types of dynamic parameters.
 If you find that this is the cause of your test failures, you can export and run the test in Visual Studio.
  
-![Exporting the test to Visual Studio](_img/record-and-replay-cloud-load-tests/12-export-to-vs.png)
+![Exporting the test to Visual Studio](media/record-and-replay-cloud-load-tests/12-export-to-vs.png)
 
 This export mechanism downloads a Visual Studio load test project containing the required web performance 
 test and load test for your application. See 
@@ -251,4 +251,4 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 * [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

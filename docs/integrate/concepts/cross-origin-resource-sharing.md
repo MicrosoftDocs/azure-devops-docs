@@ -1,4 +1,4 @@
----
+﻿---
 title: Cross-origin resource sharing (CORS) with Azure DevOps Services REST APIs
 description: Learn about using CORS with Azure DevOps Services and TFS REST APIs
 ms.assetid: d7e3c119-5678-40e6-9c11-55a57c171278

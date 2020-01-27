@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to create or update a Website, Web 
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/IISWebAppManagementOnMachineGroupV0.md)]
+[!INCLUDE [temp](../includes/yaml/IISWebAppManagementOnMachineGroupV0.md)]
 
 ::: moniker-end
 

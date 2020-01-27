@@ -1,5 +1,6 @@
 ---
 title: TFS/Core/Contracts WebApiTeamRef API | Extensions for Azure DevOps Services
+description: Data representation of a Web API team ref.
 ms.assetid: 1f451417-066f-3ea9-9ed4-0bcc3895c6bf
 ms.prod: devops
 ms.technology: devops-ecosystem

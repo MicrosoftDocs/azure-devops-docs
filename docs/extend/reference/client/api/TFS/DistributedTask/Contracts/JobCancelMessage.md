@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts JobCancelMessage API | Extensions for Azure DevOps Services
+description: Data representation of job cancel message.
 ms.assetid: fb6ee09c-a536-d216-e266-4d3950b9faa1
 ms.prod: devops
 ms.technology: devops-ecosystem

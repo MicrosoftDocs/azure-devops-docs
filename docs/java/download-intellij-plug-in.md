@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 *Compatible with `IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE` and `CLion`.*
 
 
-The plugin is available in the [IntelliJ Plugin Repository](http://plugins.jetbrains.com/plugin/7981).
+The plugin is available in the [IntelliJ Plugin Repository](https://plugins.jetbrains.com/plugin/7981).
 
 The plugin can be installed from IntelliJ by browsing the Plugin Repository.
 1. In IntelliJ, open plugin settings:
@@ -30,7 +30,7 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
 
 
- You can also download the plugin to disk from the [Plugin Repository](http://plugins.jetbrains.com/plugin/7981) and install the downloaded JAR file.
+ You can also download the plugin to disk from the [Plugin Repository](https://plugins.jetbrains.com/plugin/7981) and install the downloaded JAR file.
 1. In IntelliJ, open plugin settings:
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`

@@ -15,10 +15,10 @@ monikerRange: '>=tfs-2017'
 
 # Build multiple branches
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 You can build every commit and pull request to your Git repository using Azure Pipelines or TFS. In this tutorial, we will discuss additional considerations when building multiple branches in your Git repository. You will learn how to:
@@ -112,7 +112,7 @@ YAML builds are not yet available on TFS.
 3. Select **Control Options** for the task on the bottom right hand part of your screen.
 4. Select the dropdown for **Run this task** and choose **Custom conditions**.
 
-   ![Custom condition](_img/ci-build-git/customconditions.png)
+   ![Custom condition](media/ci-build-git/customconditions.png)
 
 5. Enter the following snippet:
    ```
@@ -190,7 +190,7 @@ Retention policies allow you to control and automate the cleanup of your various
 3.  Select **Edit** at the top right of your screen.
 4.  Under the build pipeline name, Select the **Retention** tab.  Select **Add** to add a new retention policy.
 
-    ![Retention menu](_img/ci-build-git/retentionpolicy.png)
+    ![Retention menu](media/ci-build-git/retentionpolicy.png)
 
 5.  Type **feature/*** in the **Branch specification** dropdown.  This ensures any feature branches matching the wildcard will use the policy.
 6.  Set **Days to keep** to 1 and **Minimum to keep** to 1.

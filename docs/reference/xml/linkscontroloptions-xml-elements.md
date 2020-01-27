@@ -1,4 +1,4 @@
----
+﻿---
 title: LinksControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
@@ -31,7 +31,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
-<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/_img/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
+<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/media/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
 
 ## Summary of what's changed
 
@@ -85,7 +85,7 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 <tr>
 <td>Composite display of link information</td>
 <td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called <em>Link</em> as shown:<br/>
-<img src="_img/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
+<img src="media/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
 </td>
 <td>Not supported</td>
 </tr>
@@ -101,13 +101,13 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 
 ### Add links through a scoped links control 
 
-From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
+From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
 
 - To open an associated item or object, click the linked item  
-- To delete a link, highlight it and click the ![delete icon](../../boards/_img/icons/delete_icon.png) delete icon   
+- To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="dynamic-sizing"></a>
@@ -125,7 +125,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
-<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response

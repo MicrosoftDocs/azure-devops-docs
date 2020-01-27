@@ -62,7 +62,7 @@
     href: set-query-permissions.md
   - name: Define a query as a hyperlink 
     href: define-query-hyperlink.md 
-  - name: Import work items from CSV 
+  - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
 - name: Reference
   items:

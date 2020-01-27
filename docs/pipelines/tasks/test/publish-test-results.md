@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Publish Test Results task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ You can use the test runner of your choice that supports the results format
 you require. Supported results formats include [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html),
 [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd)
 (including [PHPUnit](https://phpunit.readthedocs.io/en/8.0/configuration.html#logging)),
-[NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
+[NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
 
 Other built-in tasks such as [Visual Studio Test task](vstest.md) and [Dot NetCore CLI task](../build/dotnet-core-cli.md) automatically publish
@@ -44,12 +44,12 @@ troubleshoot failures, and drive failure ownership.
 
 The following example shows the task configured to publish test results.
 
-![Open the test history page](_img/publish-test-results.png)
+![Open the test history page](media/publish-test-results.png)
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
-The task supports popular coverage result formats such as [Cobertura](http://cobertura.github.io/cobertura/)
-and [JaCoCo](http://www.eclemma.org/jacoco/).
+The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
+and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 <a name="demands"></a>
 
@@ -63,7 +63,7 @@ and [JaCoCo](http://www.eclemma.org/jacoco/).
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishTestResultsV2.md)]
 
 The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
@@ -88,7 +88,7 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 | Argument | Description |
 | -------- | ----------- |
-| **Test result formats** | Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) |
+| **Test result formats** | Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) |
 | **Test results files** | Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
 | **Search folder** | Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly.  |
@@ -269,7 +269,7 @@ The final image will be published to Docker or Azure Container Registry
 1. Push the change to the master branch in your repository. 
 
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. Update your build pipeline with the following
@@ -399,4 +399,4 @@ All test sub-result published will only have the test case name and the data of 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

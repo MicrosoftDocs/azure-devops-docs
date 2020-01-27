@@ -1,4 +1,4 @@
----
+﻿---
 title: Customize the layout of the work item web form
 titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
@@ -15,7 +15,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
+[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
 
 
 > [!IMPORTANT]  
@@ -36,13 +36,13 @@ You customize transformed WITs in much the same way as you have previously.  The
 
 Use this sequence when you use the On-premises XML process model, i.e., you manage your TFS work tracking customization  through import of individual XML definition files. 
 
-[![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export WIT definition file](media/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 ## Import/export process zip files 
 Use this sequence when you use the Hosted XML process model, i.e., when you manage your work tracking customization by importing a process or process template. 
 
-[![Export process](_img/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export process](media/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 The main difference is that there are now two main layout sections within the **FORM** node. The first section, contained within the **Layout** element, defines the form layout when viewed through a client such as Visual Studio. The second section, contained within the **WebLayout** element, defines the form layout when viewed through a web browser. 
@@ -88,7 +88,7 @@ See the following topics to make the indicated customizations:
     witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
     ```
 
-   An example of a <em>CollectionURL</em> for an organization is https://dev.azure.com/*OrganizationName*.
+   An example of a <em>CollectionURL</em> for an organization is https:\//dev.azure.com/*OrganizationName*.
 
 3. Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 
@@ -105,7 +105,7 @@ See the following topics to make the indicated customizations:
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 <a id="resizing"></a>  
 ## Layout and resizing 

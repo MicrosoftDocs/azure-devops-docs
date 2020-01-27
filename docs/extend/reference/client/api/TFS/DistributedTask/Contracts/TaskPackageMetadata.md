@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts TaskPackageMetadata API | Extensions for Azure DevOps Services
+description: Data representation of task package metadata. 
 ms.assetid: 9d9e8c3d-3a0f-4fc9-0a59-b0f8d8dad1f1
 ms.prod: devops
 ms.technology: devops-ecosystem

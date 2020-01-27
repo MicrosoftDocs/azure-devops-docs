@@ -1,5 +1,5 @@
 - name: TFS-Project Server Integration
-  href: index.md?toc=/azure/devops/reference/tfs-ps-sync/toc.json&bc=/azure/devops/reference/tfs-ps-sync/breadcrumb/toc.json 
+  href: index.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Third-party support for synchronization
@@ -93,15 +93,9 @@
   items:
   - name: Resolve validation errors
     href: resolve-validation-errors.md
-  - name: Resolve TFS-Office integration issues
-    href: ../../boards/backlogs/office/tfs-office-integration-issues.md
   - name: View error messages
     href: view-synch-error-messages.md
   - name: Verify synchronization
     href: verify-synch-process.md
   - name: Known issues and workarounds
     href: known-issues-and-workarounds.md
-- name: Resources
-  items:
-  - name: Project Connect Marketplace extension
-    href: https://marketplace.visualstudio.com/items?itemName=TVT.TVT-PjO

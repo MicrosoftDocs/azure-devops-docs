@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestSuite API | Extensions for Azure DevOps Services
+description: Data representation of a test suite.
 ms.assetid: 8d90cf9a-86d2-8d74-ea8b-931b7ba060a4
 ms.prod: devops
 ms.technology: devops-ecosystem

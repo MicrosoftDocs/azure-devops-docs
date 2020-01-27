@@ -1,6 +1,6 @@
 ---
-title: Build and deploy to a Java web app on Linux
-description: Continuous integration and deployment (CI/CD) to a Java web app on Linux
+title: Build and deploy a Java web app to Azure Functions
+description: Learn about continuous integration and deployment (CI/CD) to a Java web app on Linux.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
@@ -8,24 +8,24 @@ ms.assetid: 3156B628-1DEA-4F92-84E5-6C3E18B4DAC1
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 4/23/2019
+ms.date: 1/8/2020
 monikerRange: 'azure-devops'
 ---
 
 # Build and deploy Java to Azure Functions
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 You can use Azure Functions to run small pieces of code in the cloud without the overhead of running a server. In this step-by-step guide you'll learn how to create a pipeline that continuously builds and deploys a your Java function app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to Azure Functions.
 
 ## Prerequisites
 
-[!INCLUDE [include](../_shared/prerequisites.md)]
-[!INCLUDE [include](../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../includes/prerequisites.md)]
+[!INCLUDE [include](../includes/azure-prerequisites.md)]
 
 ## Get the code
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-java-function
@@ -33,7 +33,7 @@ https://github.com/MicrosoftDocs/pipelines-java-function
 
 ## Create an Azure Functions app
 
-[!INCLUDE [include](_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](includes/sign-in-azure-cli.md)]
 
 Create an Azure App Service on Linux. Select the runtime you want to use.
 
@@ -51,19 +51,19 @@ az functionapp create --resource-group myapp-rg --consumption-plan-location west
 
 ## Sign in to Azure Pipelines and connect to Azure
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
-[!INCLUDE [include](_shared/create-service-connection.md)]
+[!INCLUDE [include](includes/create-service-connection.md)]
 
 ## Create the pipeline
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **Maven**. Your new pipeline appears.
 
-[!INCLUDE [include](_shared/create-pipeline-after-maven-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-after-maven-template-selected.md)]
 
 ## Edit the pipeline
 
@@ -71,7 +71,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 
 ### Set some variables for your deployment
 
-[!INCLUDE [include](_shared/deployment-variables.md)]
+[!INCLUDE [include](includes/deployment-variables.md)]
 
 ### Deploy to Azure Functions
 
@@ -97,12 +97,12 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
     azureSubscription: $(serviceConnectionToAzure)
     appType: functionApp
     appName: $(appName)
-    package: $(build.artifactstagingdirectory)/javafunctions
+    package: $(build.artifactstagingdirectory)/$(appName)
 ```
 
 ## Run the pipeline and check out your site
 
-[!INCLUDE [include](_shared/run-pipeline.md)]
+[!INCLUDE [include](includes/run-pipeline.md)]
 
 After the pipeline has run, test the function app running on Azure. For example, in bash or from a command prompt enter:
 
@@ -112,4 +112,4 @@ Your function then returns:
 
 `Hello PipelineCreator`
 
-[!INCLUDE [include](_shared/clean-up-resources.md)]
+[!INCLUDE [include](includes/clean-up-resources.md)]

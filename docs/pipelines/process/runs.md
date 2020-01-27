@@ -1,20 +1,20 @@
 ---
-title: Pipeline runs
+title: Pipeline run sequence
 description: Learn how Azure Pipelines runs your jobs, tasks, and scripts
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 0d207cb2-fcef-49f8-b2bf-ddb4fcf5c47a
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: jukullam
+author: juliakm
 ms.date: 05/29/2019
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Pipeline runs
+# Pipeline run sequence
 
-![Pipeline overview](_img/run-overview.svg)
+![Pipeline overview](media/run-overview.svg)
 
 When you run a pipeline, a lot of things happen under the covers.
 While you often won't need to know about them, once in a while it's useful to have the big picture.
@@ -36,13 +36,13 @@ Let's break down each action one by one.
 
 ## Process the pipeline
 
-![Expand YAML templates](_img/run-expansion.svg)
+![Expand YAML templates](media/run-expansion.svg)
 
 To turn a pipeline into a run, Azure Pipelines goes through several steps in this order:
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md#template-expressions).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
-4. For each job selected to run, expand [multi-configs](phases.md#multi-configuration) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
+4. For each job selected to run, expand [multi-configs](phases.md#parallelexec) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
 
@@ -72,7 +72,7 @@ Conceptually, the Microsoft-hosted pool is one giant, global pool of machines.
 (In reality, it's a number of different physical pools split by geography and operating system type.)
 Based on the `vmImage` (in YAML) or pool name (in the classic editor) requested, an agent is selected.
 
-![Pool selection](_img/run-select-pool.svg)
+![Pool selection](media/run-select-pool.svg)
 
 All agents in the Microsoft pool are fresh, new virtual machines which haven't run any pipelines before.
 When the job completes, the agent VM will be discarded.
@@ -104,7 +104,7 @@ Then it begins [running steps](#run-each-step).
 Steps are run sequentially, one after another.
 Before a step can start, all the previous steps must be finished (or skipped).
 
-![Run each task](_img/run-tasks.svg)
+![Run each task](media/run-tasks.svg)
 
 Steps are implemented by [tasks](tasks.md).
 Tasks themselves are implemented as Node.js or PowerShell scripts.
@@ -135,7 +135,7 @@ Errors and warnings are reported to the pipeline summary page, marking the task 
 Failures are also reported to the summary page, but they mark the task as "failed".
 A step is a failure if it either explicitly reports failure (using a `##vso` command) or ends the script with a non-zero exit code.
 
-![Logs and results flow from agent to service](_img/run-logging.svg)
+![Logs and results flow from agent to service](media/run-logging.svg)
 
 As steps run, the agent is constantly sending output lines to the service.
 That's why you can see a live feed of the console.
@@ -161,11 +161,11 @@ A succeeding cleanup step cannot save the job from failing; jobs can never go ba
 Each job has a timeout.
 If the job has not completed in the specified time, the server will cancel the job.
 It will attempt to signal the agent to stop, and it will mark the job as canceled.
-On the agent side, this means cancelling all remaining steps and uploading any remaining [results](#report-and-collect-results).
+On the agent side, this means canceling all remaining steps and uploading any remaining [results](#report-and-collect-results).
 
 Jobs have a grace period known as the cancel timeout in which to complete any cancellation work.
 (Remember, steps can be marked to run [even on cancellation](#state-and-conditions).)
-After the timeout plus the cancel timout, if the agent has not reported that work has stopped, the server will mark the job as a failure.
+After the timeout plus the cancel timeout, if the agent has not reported that work has stopped, the server will mark the job as a failure.
 
 Because Azure Pipelines distributes work to agent machines, from time to time, agents may stop responding to the server.
 This can happen if the agent's host machine goes away (power loss, VM turned off) or if there's a network failure.

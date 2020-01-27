@@ -1,5 +1,6 @@
 ---
 title: General - Sprint 155 Update
+description: See the Sprint 155 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
@@ -11,9 +12,9 @@ ms.date: 07/22/2019
 
 ## Features
 
-[!INCLUDE [sprint-155-update-links](../_shared/general/sprint-155-update-links.md)]
+[!INCLUDE [sprint-155-update-links](../includes/general/sprint-155-update-links.md)]
 
-[!INCLUDE [sprint-155-update](../_shared/general/sprint-155-update.md)]
+[!INCLUDE [sprint-155-update](../includes/general/sprint-155-update.md)]
 
 ## Next steps
 
@@ -30,10 +31,10 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../../_img/make-a-suggestion.png)
+> ![Make a suggestion](../../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
 Thanks,
 
-[!INCLUDE [sprint-155](../_shared/signer/sprint-155.md)]
+[!INCLUDE [sprint-155](../includes/signer/sprint-155.md)]

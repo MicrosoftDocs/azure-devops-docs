@@ -17,7 +17,7 @@ ms.date: 11/06/2019
 
 # Enable preview features 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
@@ -88,22 +88,28 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 <a id="account-manager" />
 
-1. To access the Preview features options, open your profile menu, choose the ![ ](../../_img/icons/actions-icon.png) actions icon, and choose **Preview features**. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
+1. To access the Preview features options, open your profile menu. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
 
 	#### New Account Manager enabled
+
+	Choose your profile menu, then choose the ![ ](../../media/icons/actions-icon.png) actions icon, **User settings**, and then **Preview features**. 
+
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](_img/preview-features/open-preview-features.png)
+	> ![Open User settings](media/preview-features/open-preview-features-s161.png)  ![Open Preview Features](media/preview-features/user-settings-menu.png) 
 
 	Choose **Azure DevOps profile** to access your personal Azure DevOps settings, notifications, usage, and security settings.  
 
 	#### New Account Manager not enabled
+
+	Choose your profile menu and then choose **Preview features**. 
+
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](_img/preview-features/open-preview-features-old-account-manager.png)
+	> ![Open Preview Features](media/preview-features/open-preview-features-old-account-manager.png)
 
 1. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](_img/preview-features/user-level-s160.png) 
+	> ![Preview features options for yourself](media/preview-features/user-level-s160.png) 
 
 <a id="account-level">  </a>
 
@@ -115,7 +121,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the account](_img/preview-features/org-level-s160.png)
+> ![Preview features options for the account](media/preview-features/org-level-s160.png)
 
 
 ## Features now enabled for all Azure DevOps Services 

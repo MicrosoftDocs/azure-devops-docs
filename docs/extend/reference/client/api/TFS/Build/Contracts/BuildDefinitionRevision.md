@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildDefinitionRevision API | Extensions for Azure DevOps Services
+description: Data representation of a build definition revision.
 ms.assetid: 034ae70d-27d7-f9e3-af1e-f20aac9d35f9
 ms.prod: devops
 ms.technology: devops-ecosystem

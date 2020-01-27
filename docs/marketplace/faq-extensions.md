@@ -7,16 +7,16 @@ ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/18/2019
+ms.date: 11/25/2019
 monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
 
 # FAQs - getting extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
 ::: moniker range="azure-devops"
 
@@ -27,13 +27,13 @@ you can [request extensions](request-extensions.md) instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../includes/qa-find-organization-owner.md)]
 
-[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../includes/qa-find-project-collection-administrator.md)]
 
 <a name="no-organizations"></a>
 
-[!INCLUDE [no-organizations](../organizations/billing/_shared/qa-no-organizations.md)]
+[!INCLUDE [no-organizations](../organizations/billing/includes/qa-no-organizations.md)]
 
 ### Q: Why can't I install extensions for Azure DevOps?
 
@@ -55,41 +55,17 @@ or organization Owner, and ask them to assign the extension to you.
 
 <a name="difference"></a>
 
-### Q: What's the difference between free, preview, and paid extensions? 
-
-A: Extensions that are available during preview don't incur charges, 
-aren't fully supported, and have no financially backed service level agreements. 
-
-Paid extensions require that you buy and assign them to users 
-who need access but don't have it already, for example, 
-through subscription benefits. You'll use an 
-[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
-to pay for an extension. If you don't have an Azure subscription, 
-you can create a new subscription when you install your extension. 
-If you have multiple subscriptions, you can select the Azure subscription that you want to use.
-
 ### Q: How do I get other help or support for Azure subscriptions and billing?
 
 A: Check these [articles about Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing), 
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
-[!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
+[!INCLUDE [what-happened-preview-extensions](../includes/qa-what-happened-preview-extensions.md)]
 
 <!-- ENDSECTION --> 
 
 <!-- BEGINSECTION class="m-qanda" -->
-
-<a name="paid-access"></a>
-
-### Q: When do I choose Install for paid extensions? 
-
-A: You can just choose **Install** when: 
-
-*	You want to install a free or preview extension. 
-*	You paid for access, uninstalled the extension, and want to reinstall the extension. 
-*	You just need the extension for [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions) 
-who have access for that extension included with their subscriptions. These subscribers get specific extensions included with their subscriptions as benefits. They can use these extensions after they're installed without paid access and assignment. You only have to buy and assign extensions for users who need access.
 
 <a name="no-install"></a>
 
@@ -113,7 +89,7 @@ Follow these steps to check your identity that you use
 to sign in to the Marketplace. 
 
 1. On your TFS web portal home page (```https://{server}:8080/tfs/```), 
-   go to the top right corner of the page, and select your user name to view your profile. 
+   go to the top-right corner of the page, and select your user name to view your profile. 
 2. On the left side of your profile, make sure that your email address and directory are correct.
 3. Close all browser windows.
 4. Open a private or incognito browsing session.
@@ -149,19 +125,18 @@ is available only for Azure DevOps Services (targets = Microsoft.Visualstudio.Se
 ### Q: Why can't I upload extensions to TFS?
 
 A: You must be a member of the 
-[Team Foundation Administrators group](/azure/devops/server/admin/add-administrator-tfs#server) 
-with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
+[Team Foundation Administrators group](/azure/devops/server/admin/add-administrator#add-a-user-to-the-server-administrators-group). You must also have [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 for the Team Foundation Server where you want to upload extensions.
 
 <a name="extension-access"></a>
 
-[!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
+[!INCLUDE [no-access-extension-features](../includes/qa-no-access-extension-features.md)]
 
 <!-- ENDSECTION --> 
 
 <a name="get-support"></a>
 
-[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](includes/qa-marketplace-support.md)]
 
 ::: moniker-end
 
@@ -171,7 +146,7 @@ A: Depending on the support you need, choose from the following links:
 
 * Billing questions - [Azure billing support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)
 * Visual Studio subscriptions - [subscriptions support](https://visualstudio.microsoft.com/subscriptions/support)
-* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops-visual-studio-team-services)
+* Help with Azure DevOps - [Azure DevOps support](https://azure.microsoft.com/support/devops/)
 * Help with Team Foundation Server - [TFS support](https://visualstudio.microsoft.com/team-services/tfs_support)
 * General Marketplace help - [Contact the Marketplace team](mailto:vsmarketplace@microsoft.com)
 

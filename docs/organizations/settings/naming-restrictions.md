@@ -16,7 +16,7 @@ ms.date: 6/21/2019
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
@@ -219,7 +219,7 @@ Must not include commas (,)
 A project collection identifies a group of projects and the resources that are associated with those projects. It provides an organizing structure that you can use to define and control a group of projects within TFS.  
 
 Also, the collection name is part of the connection string used to connect team members to projects. The default assigned corresponds to *DefaultCollection*. 
-[Manage project collections](/azure/devops/server/admin/manage-team-project-collections) provides more information. 
+[Manage project collections](/azure/devops/server/admin/manage-project-collections) provides more information. 
 
 Names you assign to project collections must conform to the following restrictions.  
 
@@ -1393,7 +1393,7 @@ Workspace names must conform to the following restrictions.
 <a id="page-title-names"></a>
 ## Wiki page title naming conventions
 
-[!INCLUDE [temp](../../../docs/project/wiki/_shared/wiki-naming-conventions.md)]
+[!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 

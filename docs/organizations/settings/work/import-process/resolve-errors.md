@@ -27,7 +27,7 @@ ms.date: 03/20/2018
 During process import, the process is validated to ensure the system works as expected for the custom process. 
 You'll receive a list of error messages if the process fails validation.  
 
-![Process successfully imported](_img/ALM_IP_ValidationErrors_list_775.png)  
+![Process successfully imported](media/ALM_IP_ValidationErrors_list_775.png)  
 
 If you've received a validation error when you tried [import process](import-process.md), you'll need to resolve the error before retrying the import. 
 Each error has a link to learn more about the specific validation failure and guidance on how to correct it.

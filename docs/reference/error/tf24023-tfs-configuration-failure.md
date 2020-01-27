@@ -1,4 +1,4 @@
----
+﻿---
 title: TF24023-Team Foundation Server configuration... 
 titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a project 
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # TF24023: Team Foundation Server Configuration Failure. The New Team Project Wizard work item component could not connect to the Team Foundation Server {0}.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server {*name*} while creating a project. Possible causes of this error include:  
   

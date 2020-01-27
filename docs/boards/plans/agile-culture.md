@@ -1,5 +1,5 @@
 ---
-title: 7 elements of Agile culture to support autonomy and alignment
+title: Elements of Agile culture
 titleSuffix: Azure Boards 
 description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Agile culture  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE] 
 > Are you new to Agile? Learn more about [Agile Culture](/azure/devops/learn/agile/agile-culture) and [Scaling Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams).
@@ -31,7 +31,7 @@ Organizations that aspire to be agile need to consider the twin obligations of c
 
 Too much alignment with insufficient team autonomy leads doesn't support innovation or agility of teams to get things done. Too little alignment with each team running their own program as they want doesn't provide the insight and coordination required to meet business objectives.  
 
-![Alignment enables autonomy](_img/alignment-enables-autonomy_725.png)
+![Alignment enables autonomy](media/alignment-enables-autonomy_725.png)
 
 With the right level of alignment across the organization and team autonomy, individuals are empowered to innovate and inspired to collaborate to meet business objectives. 
 
@@ -116,13 +116,13 @@ Beyond meeting the needs set by the organization, teams determine any additional
 <meta name="keywords" content="Agile culture,feature teams,agile teams, horizontal team structure" /><br/>As you scale, one of the most important tasks to consider is how you structure your teams. Traditionally, horizontal team structures divide teams according to the software architecture: user interface, service-oriented architecture, and data teams.  
 
 
-![Horizontal vs vertical teams](_img/horizontal-vs-vertical-teams.png)
+![Horizontal vs vertical teams](media/horizontal-vs-vertical-teams.png)
 
 However, with the adoption of Agile practices, vertical team structures that span the architecture have been shown to provide greater team autonomy. Vertical teams have the ability to deliver on the features they own by working across the software architecture. They also spread the knowledge needed to work at all architecture levels throughout all the teams.  
 
 Configure your teams along the value streams your organization wants to deliver. For example, Fabrikam Fiber, organizes their teams into the following seven feature teams.
 
-![Seven feature teams: Shopping cart, Customer profile, Service status, Email, Voice, Internet, and TV](_img/seven-feature-teams.png)  
+![Seven feature teams: Shopping cart, Customer profile, Service status, Email, Voice, Internet, and TV](media/seven-feature-teams.png)  
 
 
 Each team plans the features they'll deliver. They have the autonomy to determine how they'll structure the data, architect the services, and design of the web and mobile user interfaces. Of course, they do this in adherence with the quality standards set by the organization and to which all teams contribute. 
@@ -164,10 +164,10 @@ For additional guidance, see these topics:
 ### Agile culture industry resources
 
 - [Nexus, the Exoskeleton of Scaled Scrum](https://www.scrum.org/resources/nexus-guide)  
-- [Culture over process](http://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
-- [The Culture Game - Tools for the Agile Manager](http://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
-- [Scaled Agile Framework (SAFe)](http://www.scaledagileframework.com/)  
-- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](http://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
+- [Culture over process](https://blog.crisp.se/wp-content/uploads/2013/09/culture-over-process.pdf) by Henrik Kniberg  
+- [The Culture Game - Tools for the Agile Manager](https://www.amazon.com/The-Culture-Game-Tools-Manager/dp/0984875301) by Daniel Mezick   
+- [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/)  
+- [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](https://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
 ### Scale with teams and not projects  
 Often times, organizations look at adding a project for each software development project. 

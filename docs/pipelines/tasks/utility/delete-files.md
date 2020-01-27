@@ -9,13 +9,13 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 07/16/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Delete Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
 Use this task in a build or release pipeline to delete files or folders from the agent working directory.
 
@@ -27,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.md)]
+[!INCLUDE [temp](../includes/yaml/DeleteFilesV1.md)]
 
 ::: moniker-end
 
@@ -54,11 +54,11 @@ None
 </p>
 <ul>
 <li><code>**/*</code> deletes all files and folders in the root folder.</li>
-<li><code>temp</code> deletes the temp folder in the root folder.</li>
-<li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with temp.</li>
-<li><code>**/temp/*<em></code> deletes all files in any sub-folder named temp.</li>
-<li><code>**/temp*</em></code> deletes any file or folder with a name that begins with temp.</li>
-<li><code>**/temp/*</strong></code> deletes files in any sub-folder that begins with the name temp.</li>
+<li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li>
+<li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with <em>temp</em>.</li>
+<li><code>**/temp/*</code> deletes all files in any sub-folder named <em>temp</em>.</li>
+<li><code>**/temp*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li>
+<li><code>!(*.vsix)</code> deletes all files in the root folder that do not have a <em>.vsix</em> extension.</li>
 </ul>
 </td>
 </tr>
@@ -69,6 +69,23 @@ None
 </tr>
 
 </table>
+
+## Examples
+
+### Delete several patterns
+
+This example will delete `some/file`, all files beginning with `test`, and all files in all subdirectories called `bin`.
+
+```yaml
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove unneeded files'
+  inputs:
+    contents: |
+      some/file
+      test*
+      **/bin/*
+```
 
 ## Open source
 
@@ -86,15 +103,17 @@ A: See:
 
 * https://realguess.net/tags/minimatch/
 
-<!-- [!INCLUDE [temp](../_shared/build-step-common-qa.md)] -->
+* http://man7.org/linux/man-pages/man3/fnmatch.3.html
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+<!-- [!INCLUDE [temp](../includes/build-step-common-qa.md)] -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
+
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

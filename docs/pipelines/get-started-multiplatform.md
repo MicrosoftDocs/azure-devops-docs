@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
+ms.author: sdanie
+author: steved0x
 ms.date: 07/03/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Create a multi-platform pipeline
@@ -21,7 +21,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Get the sample code
 
@@ -103,7 +103,7 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 1. Select **GitHub** as the location of your source code.
 
-   ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
+   ![Select GitHub](media/get-started-yaml/new-pipeline.png)
 
 1. For **Repository**, select **Authorize** and then **Authorize with OAuth**. 
 

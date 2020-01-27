@@ -13,13 +13,13 @@ ms.date: 01/12/2017
 
 # Configure TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must first configure several points of integration between them.  
   
  As the following illustration shows, you integrate these products in six steps.  
   
- ![Provisioning Project Server&#45;Team Foundation Server](_img/pstfs_provisioning.png "PSTFS_Provisioning")  
+ ![Provisioning Project Server&#45;Team Foundation Server](media/pstfs_provisioning.png "PSTFS_Provisioning")  
 Configuring the Integration of Team Foundation Server and Project Server  
   
 > [!NOTE]
@@ -51,7 +51,7 @@ Configuring the Integration of Team Foundation Server and Project Server
 |Names of the projects that contain work items to synchronize with an enterprise project plan.|MyTeamProject or "My Team Project"|You may associate multiple enterprise project plans with the same project.|  
 |Names of the types of work items to synchronize.|You can specify any type of work item that is defined in your project to synchronize with tasks in the project plan. If you have customized any field that is required to support synchronization, you must customize the field mappings to reflect your changes. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).<br /><br /> User stories and tasks are most often synchronized in projects that are based on the process template for agile projects from the Microsoft Solutions Framework (MSF). Requirements and tasks are most often synchronized in projects that are based on the process template for Capability Maturity Model Integration (CMMI) from MSF.|For each enterprise project plan that you map to a project, you can specify the types of work items to synchronize. Tasks in Project Server are synchronized with types of work items in Team Foundation.<br /><br /> After you have made your initial configuration, you can change the types that are mapped. For more information, see [Specify work item types](specify-wits-to-synchronize.md).|  
 |(Optional) Name of the field in PWA to display the name of the work item type.|pjTaskText10|The default value is pjTaskText30. You can specify a different field to display the name of the work item type.|  
-|(Optional) Support for fixed work.|`/noFixedWork` option|When you associate an enterprise project plan with a project, you can allow or restrict the assignment of **Fixed Work** to tasks in Project Professional that are synchronized to Team Foundation. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](https://go.microsoft.com/fwlink/?LinkId=203354).|  
+|(Optional) Support for fixed work.|`/noFixedWork` option|When you associate an enterprise project plan with a project, you can allow or restrict the assignment of **Fixed Work** to tasks in Project Professional that are synchronized to Team Foundation. Fixed work is one of three types of tasks that you can use in Project. For more information, see [Change the task type Project uses to calculate task duration](../error/tf237002-cannot-open-document-excel-not-installed.md).|  
 |(Optional) Additional fields to synchronize.|For example, you can add fields such a cost center, team name, or health status.|By default, the following seven fields in Team Foundation are synchronized:<br /><br /> 1.  Title<br />2.  Assigned To<br />3.  Completed Work<br />4.  Remaining Work<br />5.  Original Estimate<br />6.  Start Date<br />7.  Finish Date<br /><br /> Only mapped fields are synchronized. To synchronize additional fields, you must customize the field mappings.  For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).|  
 |Accounts to grant administrative permissions|Names of administrators who will synchronize data from their plans with data in projects|You must grant **Administer Project Server integration** permissions to administrators who will use the `TFSAdmin` command-line tool to manage the mappings of enterprise project plans to projects.|  
 |Team Foundation users|User names or security distribution groups|You must add members of projects who are assigned to tasks in Team Foundation to the enterprise resource pool and to the resource pool of each enterprise project plan. You must also grant these users permission to sign in to Project Server.|  
@@ -70,7 +70,7 @@ Configuring the Integration of Team Foundation Server and Project Server
   
  As the first step in configuring integration, you must register each instance of PWA that supports the project plans with the application-tier server that hosts the project collection that hosts the project. You should register all instances of PWA that are used by enterprise projects that must synchronize their data with TFS. As the following illustration shows, you can register multiple instances of PWA to the same server that is running TFS.  
   
- ![Register PWAs to Team Foundation Server](_img/pstfs_registerpwas.png "PSTFS_RegisterPWAs")  
+ ![Register PWAs to Team Foundation Server](media/pstfs_registerpwas.png "PSTFS_RegisterPWAs")  
   
 #### To register an instance of PWA  
   
@@ -157,7 +157,7 @@ Configuring the Integration of Team Foundation Server and Project Server
 ##  <a name="EnterpriseProject"></a> Associate an enterprise project with a project  
  As the third step in configuring integration, you must map each enterprise project to the project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
- ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
+ ![Associate enterprise projects with a project](media/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
   
 #### To associate an enterprise project plan with a project  
   

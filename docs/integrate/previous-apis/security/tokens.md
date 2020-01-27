@@ -83,7 +83,7 @@ Input characters are C# strings, which means they are UTF-16 little-endian.
 For instance, in UTF-16 the character "m" is represented by the bytes `0x6d00`.
 Thus, when encoding the branch "master", the first four characters are "6d00".
 
-Check out the [Git repo token blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/14/git-repo-tokens-for-the-security-service/) for more information on ref name encoding, including Python and C# code samples.
+Check out the [Git repo token blog post](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/) for more information on ref name encoding, including Python and C# code samples.
 
 ### Token examples
 

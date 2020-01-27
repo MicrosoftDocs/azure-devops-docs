@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts AgentPoolQueue API | Extensions for Azure DevOps Services
+description: Data representation of an agent pool queue.
 ms.assetid: f28d1c93-dc54-cfcb-4659-90a9c2a6f33b
 ms.prod: devops
 ms.technology: devops-ecosystem
