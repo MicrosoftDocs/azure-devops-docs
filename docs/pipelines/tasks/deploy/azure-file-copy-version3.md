@@ -52,10 +52,6 @@ in the firewall, and install the test certificate.
   you must use **Version 2** or higher of the task in order to preserve the **$web**
   container name.
 
-## Demands
-
-None
-
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
