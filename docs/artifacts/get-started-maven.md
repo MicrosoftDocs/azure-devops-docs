@@ -1,5 +1,5 @@
----
-title: Get started with Maven packages in Azure DevOps Services and TFS
+﻿---
+title: Get started with Maven packages
 description: Quickly start hosting Maven artifacts in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -9,7 +9,7 @@ ms.manager: jenp
 ms.author: phwilson
 author: chasewilson
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -31,31 +31,31 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 
 1. Apache Maven installed. You can download it from the [Apache Maven site](https://maven.apache.org/download.cgi).
 
-1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
+2. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your organization.
 
 ## Create a feed
 
 *Already have a feed? [Skip to the next step](#setup-your-POM-and-settings-.xml).*
 
-[!INCLUDE [](_shared/create-feed.md)]
+[!INCLUDE [](includes/create-feed.md)]
 
 <a name="setup-your-POM-and-settings-.xml"></a>
 
 ## Set up authentication
 
-[!INCLUDE [](_shared/maven/pom-and-settings.md)]
+[!INCLUDE [](includes/maven/pom-and-settings.md)]
 
 <a name="publish-a-package"></a>
 
 ## Publish an artifact
 
-[!INCLUDE [](_shared/maven/publish.md)]
+[!INCLUDE [](includes/maven/publish.md)]
 
 <a name="consume-in-visual-studio"></a>
 
 ## Install an artifact from your feed
 
-[!INCLUDE [](_shared/maven/install.md)]
+[!INCLUDE [](includes/maven/install.md)]
 
 <a name="automate-with-continuous-integration"></a>
 

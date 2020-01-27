@@ -1,5 +1,5 @@
----
-title: Copy or clone user stories, issues, bugs, tasks, or other work items 
+﻿---
+title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  
@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Copy or clone work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
@@ -30,9 +30,9 @@ Use this article to learn how to:
 > * Copy a list of work items to email or share with others  
 > * Copy the URL of a work item  
 
-[!INCLUDE [temp](../_shared/image-differences.md)] 
+[!INCLUDE [temp](../includes/image-differences.md)] 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 <a id="copy-clone"></a>
 
@@ -47,11 +47,11 @@ Clone a work item when you want to create another instance of it. This action op
 <!---#### Azure Boards and TFS 2018-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
-    <img src="_img/copy-wi-copy-clone-ts.png" alt="web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-clone-ts.png" alt="web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    <img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-clone-ts-dialogue.png" alt="web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 
 ::: moniker-end
 
@@ -61,11 +61,11 @@ Clone a work item when you want to create another instance of it. This action op
 <!---#### TFS 2017-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
 
-    <img src="_img/copy-wi-copy-clone-2017.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-clone-2017.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    <img src="_img/copy-wi-copy-clone-2017-dialogue.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-clone-2017-dialogue.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
    ::: moniker-end
 
 ::: moniker range="tfs-2015"
@@ -73,7 +73,7 @@ Clone a work item when you want to create another instance of it. This action op
 <!---#### TFS 2015-->
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
-    <img src="_img/copy-wi-copy-clone-2015.png" alt="TFS 2015, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-clone-2015.png" alt="TFS 2015, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type. 
 ::: moniker-end
@@ -84,7 +84,7 @@ Clone a work item when you want to create another instance of it. This action op
 
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type. 
 
-    <img src="_img/IC712055.png" alt="TFS 2013, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/IC712055.png" alt="TFS 2013, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
 
 2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
@@ -116,7 +116,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
     Here we multi-select from the product backlog and choose <b>Copy to clipboard</b>.
 
-    <img src="_img/copy-wi-copy-to-clipboard-ts-1.png" alt="backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-to-clipboard-ts-1.png" alt="backlog page, multi-select items, open context menu, Copy to clipboard" style="border: 1px solid #CCCCCC;" /> 
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
     Here we multi-select from the backlog page. 
 
-    <img src="_img/bulk-modify-copy-as-html.png" alt="TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/bulk-modify-copy-as-html.png" alt="TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option" style="border: 1px solid #CCCCCC;" /> 
    ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -137,11 +137,11 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 
-2. Open the ![context icon](../_img/icons/context_menu.png) context menu of one of the selected work items, and then choose **Copy as HTML**. 
+2. Open the ![context icon](../media/icons/context_menu.png) context menu of one of the selected work items, and then choose **Copy as HTML**. 
 
     Here we multi-select from the backlog page.
 
-    <img src="_img/copy-wi-copy-as-html-2015.png" alt="TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option" style="border: 1px solid #CCCCCC;" /> 
+    <img src="media/copy-wi-copy-as-html-2015.png" alt="TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option" style="border: 1px solid #CCCCCC;" /> 
    ::: moniker-end 
 
 ## Paste the contents into your email client
@@ -150,7 +150,7 @@ Paste the contents of the clipboard into your email client or other application.
 
 The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided. 
 
-<img src="_img/bulk-modify-copy-as-html-table-results.png" alt=" Copy as HTML paste results" style="border: 1px solid #CCCCCC;" />
+<img src="media/bulk-modify-copy-as-html-table-results.png" alt=" Copy as HTML paste results" style="border: 1px solid #CCCCCC;" />
 
 
 
@@ -159,22 +159,22 @@ The formatted table contains a link to each work item included in your selected 
 
 #### [Browser](#tab/browser/)
 ::: moniker range=">= tfs-2017"
-Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](_img/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
+Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
-<img src="_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />
+<img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 Right click the link ID to open the browser copy link option.
 
-<img src="_img/copy-wi-url-2015.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" /> 
+<img src="media/copy-wi-url-2015.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" /> 
 ::: moniker-end
 
 
 #### [Visual Studio](#tab/visual-studio/)
 In Visual Studio, right-click the work item tab to copy the URL. The URL opens the work item in the web portal.  
 
-![Copy full path hyperlink for a work item from Visual Studio](_img/add-work-items-copy-url-for-a-work-item.png)
+![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
 ## Related topics

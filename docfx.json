@@ -41,8 +41,8 @@
     "globalMetadata": {
       "brand": "azure-devops",
       "searchScope": ["Azure DevOps", "VSTS", "Team Services"],
-      "author": "erickson-doug",
-      "ms.author": "jillfra",
+      "author": "mijacobs",
+      "ms.author": "mijacobs",
       "ms.topic": "conceptual",
       "ms.prod": "devops",
       "ms.technology": "conceptual"

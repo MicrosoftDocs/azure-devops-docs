@@ -126,27 +126,27 @@ In order to receive the service hook notifications, you'll need to expose a port
 
 4. From the navigation menu, hover over the **gear** and select **Service Hooks**.
 
-    ![Choose Service hooks from the admin menu](_img/create-pr-status-server/service-hooks-menu.png)
+    ![Choose Service hooks from the admin menu](media/create-pr-status-server/service-hooks-menu.png)
 
 5. If this is your first service hook, select **+ Create subscription**. 
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create-first-service-hook.png)
+    ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create-first-service-hook.png)
 
     If you already have other service hooks configured, select the green plus `(+)` to create a new service hook subscription.
 
-    ![Select Create a new subscription from the toolbar](_img/create-pr-status-server/service-hooks-create.png)
+    ![Select Create a new subscription from the toolbar](media/create-pr-status-server/service-hooks-create.png)
 
 6. On the New Service Hooks Subscription dialog, select **Web Hooks** from the list of services, then select **Next**.
 
-    ![Select web hooks from the list of services](_img/create-pr-status-server/service-hooks-web-hook.png)
+    ![Select web hooks from the list of services](media/create-pr-status-server/service-hooks-web-hook.png)
 
 7. Select **Pull request created** from the list of event triggers, then select **Next**.
 
-    ![Select pull request created from the list of event triggers](_img/create-pr-status-server/service-hooks-trigger.png)
+    ![Select pull request created from the list of event triggers](media/create-pr-status-server/service-hooks-trigger.png)
 
 8. In the Action page, enter the URL from ngrok in the **URL** box. Select **Test** to send a test event to your server.
 
-    ![Enter the URL and select Test to test the service hook](_img/create-pr-status-server/service-hooks-action.png)
+    ![Enter the URL and select Test to test the service hook](media/create-pr-status-server/service-hooks-action.png)
 
     In the ngrok console window, you'll see an incoming `POST` that returned a `200 OK`, indicating your server received the service hook event.
 
@@ -159,7 +159,7 @@ In order to receive the service hook notifications, you'll need to expose a port
 
     In the Test Notification window, select the Response tab to see the details of the response from your server. You should see a content length of 17 that matches the length of the string from your POST handler (i.e. "Received the POST").
 
-    ![Select the response tab to see the results of the test](_img/create-pr-status-server/test-notification.png)
+    ![Select the response tab to see the results of the test](media/create-pr-status-server/test-notification.png)
 
 9. Close the Test Notification window, and select **Finish** to create the service hook.  
 
@@ -317,27 +317,27 @@ Now that your server is running and listening for service hook notifications, cr
 
 1. Start in the files view. Edit the readme.md file in your repo (or any other file if you don't have a readme.md).
 
-    ![Select Edit from the context menu](_img/create-pr-status-server/edit-readme.png)
+    ![Select Edit from the context menu](media/create-pr-status-server/edit-readme.png)
 
 2. Make an edit and commit the changes to the repo.
 
-    ![Edit the file and select Commit from the toolbar](_img/create-pr-status-server/commit-changes.png)
+    ![Edit the file and select Commit from the toolbar](media/create-pr-status-server/commit-changes.png)
 
 3. Be sure to commit the changes to a new branch so you can create a PR in the next step.
 
-    ![Enter a new branch name and select Commit](_img/create-pr-status-server/commit-to-branch.png)
+    ![Enter a new branch name and select Commit](media/create-pr-status-server/commit-to-branch.png)
 
 4. Select the **Create a pull request** link.
 
-    ![Select Create a pull request from the suggestion bar](_img/create-pr-status-server/create-pr.png)
+    ![Select Create a pull request from the suggestion bar](media/create-pr-status-server/create-pr.png)
 
 5. Add **WIP** in the title to test the functionality of the app. Select **Create** to create the PR.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/new-pr-wip.png)
+    ![Add WIP to the default PR title](media/create-pr-status-server/new-pr-wip.png)
 
 6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
-    ![Add WIP to the default PR title](_img/create-pr-status-server/pr-with-status.png)
+    ![Add WIP to the default PR title](media/create-pr-status-server/pr-with-status.png)
 
 7. Update the PR title and remove the **WIP** text and note that the status changes from **Work in progress** to **Ready for review**.
 

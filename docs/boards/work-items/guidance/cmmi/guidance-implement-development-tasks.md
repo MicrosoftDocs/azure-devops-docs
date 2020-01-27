@@ -1,4 +1,4 @@
----
+﻿---
 title: CMMI process guidance, Implement development tasks
 titleSuffix: Azure Boards
 description:  Implements the development task that involves adding the appropriate new functionality to your software
@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # Implement development tasks
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 A development task is a small piece of development work that stems from a requirement. Implementing a development task involves adding the appropriate new functionality to your software. After you complete a development task, it should be unit tested, reviewed, code analyzed, and integrated into the existing code base.  
    
@@ -27,7 +27,7 @@ A development task is a small piece of development work that stems from a requir
   
  The form for task work items stores data in the fields and tabs that the following illustrations show:  
   
- ![CMMI Task work item form](_img/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
+ ![CMMI Task work item form](media/procguid_cmmi_wtask.png "ProcGuid_CMMI_WTask")  
   
  After tasks have been created and estimated, use the Work Breakdown query to view the breakdown of all your requirements and tasks. For more information, see [CMMi process, List work items](../cmmi-process.md).  
   

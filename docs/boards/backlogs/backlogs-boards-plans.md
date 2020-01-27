@@ -1,4 +1,4 @@
----
+﻿---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
 description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
@@ -18,7 +18,7 @@ ms.date: 10/17/2019
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -69,25 +69,25 @@ You access your backlogs and boards from a web portal. When you work from the St
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
     To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint//select-product-backlog-agile-s155.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-column-options-s155.png) 
+	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
 ::: moniker-end
 
@@ -96,25 +96,25 @@ You access your backlogs and boards from a web portal. When you work from the St
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+	![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+	> ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
@@ -124,19 +124,19 @@ You access your backlogs and boards from a web portal. When you work from the St
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Boards>Backlogs page](../sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Boards>Backlogs page](../sprints/media/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 	
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 From your web browser, open your team's product backlog. Select **Boards>Backlogs**. 
 
-![Boards>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](media/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -446,7 +446,7 @@ The following table indicates those elements or tasks associated with each type 
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md#past-sprints).
 
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 
 ## Product backlog "In Progress" filter
@@ -474,7 +474,7 @@ Delivery Plans is available for TFS 2017.2 and later versions.
 ::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../plans/review-team-plans.md). 
 
-<img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
 
 

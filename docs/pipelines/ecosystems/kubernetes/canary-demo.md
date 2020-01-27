@@ -6,18 +6,18 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Canary deployment strategy for Kubernetes deployments
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Canary deployment strategy involves deploying new versions of application next to stable production versions to see how the canary version compares against the baseline before promoting or rejecting the deployment. This step-by-step guide covers usage of [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy support for setting up canary deployments for Kubernetes and the associated workflow in terms of instrumenting code and using the same for comparing baseline and canary before taking a manual judgment on promotion/rejection of the canary.
 
-## Pre-requisites
+## Prerequisites
 - A repository in Azure Container Registry or Docker Hub (Azure Container Registry, Google Container Registry, Docker Hub) with push privileges.
 - Any Kubernetes cluster (Azure Kubernetes Service, Google Kubernetes Engine, Amazon Elastic Kubernetes Service).
 
@@ -95,7 +95,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Default version**: Latest from the default branch
     - **Source alias**: azure-pipelines-canary-k8s
     - Confirm your inputs by choosing **Add**.
-1. Select **Add an artifact**, choose **Azure container registry** or **Docker Hub** depending on the container registry you had chosen under pre-requisites. Provide appropriate values for the input dropdowns to locate your container registry, provide `image` as the alias for this artifact, and confirm the inputs by choosing **Add**. Once the artifact has been added, click on the lightning bolt icon on the artifact card to enable continuous deployment trigger.
+1. Select **Add an artifact**, choose **Azure container registry** or **Docker Hub** depending on the container registry you had chosen under Prerequisites. Provide appropriate values for the input dropdowns to locate your container registry, provide `image` as the alias for this artifact, and confirm the inputs by choosing **Add**. Once the artifact has been added, click on the lightning bolt icon on the artifact card to enable continuous deployment trigger.
 1. In **Deploy Canary** stage that you just created, click on **1 job, 0 task** link to be navigated to the window for adding jobs and stages
 1. Click on **Agent job**. In the configuration window, in the **Agent pool** dropdown window, choose **Hosted Ubuntu 1604**
 1. Click on the '+' on the agent job row to add a new task. Add **Deploy Kubernetes manifests** task with the following configuration -
@@ -214,6 +214,6 @@ kubectl exec -it $FORTIO_POD -c fortio /usr/bin/fortio -- load -allow-initial-er
 1. At this point, with **Deploy canary** stage having successfully completed (based on the change of `success_rate` from '10' to '20') and with the **Promote/reject canary** stage is waiting on manual intervention, one can compare the success rate (as determined by custom_status=good) of baseline and canary variants in the Grafana dashboard. It should look similar to the below image - 
 
     > [!div class="mx-imgBorder"]
-    > ![Compare baseline and canary metrics](../_img/k8s-baseline-canary.png)
+    > ![Compare baseline and canary metrics](../media/k8s-baseline-canary.png)
 
 1. Based on the observation that the success rate is higher for canary, promote the canary by clicking on **Resume** in the manual intervention task

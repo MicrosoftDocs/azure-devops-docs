@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts WebApiConnectedService API | Extensions for Azure DevOps Services
+description: Data representation of a Web API connected service
 ms.assetid: 9a53b63d-2324-7f74-80c0-2c492a8fd588
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -31,5 +32,5 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/DistributedTask/Contracts/WebA
 
 * `project`: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project associated with this service
 
-* `serviceUri`: string. Optional uri to connect directly to the service such as https://windows.azure.com
+* `serviceUri`: string. Optional uri to connect directly to the service such as https:\//windows.azure.com
 

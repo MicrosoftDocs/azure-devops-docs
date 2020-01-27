@@ -19,7 +19,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 
 # Additional configuration options post update
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). 
@@ -110,7 +110,7 @@ Storyboarding
 <td>
 With this feature, you can <a href="../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md" data-raw-source="[storyboard your ideas using the Storyboarding add-in to PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)">storyboard your ideas using the Storyboarding add-in to PowerPoint</a>.<br/></td>
 <td>
-<strong>Required:</strong> <a href="http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300" data-raw-source="[Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)">Office PowerPoint 2007 or later</a><br/>
+<strong>Required:</strong> <a href="http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300" data-raw-source="[Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)">Office PowerPoint 2007 or later</a><br/>
 <strong>Required:</strong> Visual Studio Community (<a href="https://visualstudio.microsoft.com/free-developer-offers/" data-raw-source="[get your free download](https://visualstudio.microsoft.com/free-developer-offers/)">get your free download</a>) or other Visual Studio version installed. 
 </td>
 </tr>
@@ -189,7 +189,7 @@ If you have updated a project based on v5.0 of MSF for Agile, do the manual upda
 ### Test case management and custom workflow states 
 If you add or change the workflow states for the test plan or test suite type definitions, and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions, you must also update the process configuration for the project as well. Otherwise, you'll encounter an **Application detected an unexpected fault** error when you connect to your project. 
 
-![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
+![Application fault error message after TFS upgrade](media/ALM_CF_AppFaultErrMsg.png)  
 
 To resolve this error, see [Import and export process configuration [witadmin]](witadmin/witadmin-import-export-process-configuration.md).  
 

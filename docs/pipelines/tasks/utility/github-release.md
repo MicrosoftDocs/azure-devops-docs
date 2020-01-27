@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # GitHub Release task
@@ -28,7 +28,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GitHubReleaseV0.md)]
+[!INCLUDE [temp](../includes/yaml/GitHubReleaseV0.md)]
 
 ::: moniker-end
 

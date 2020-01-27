@@ -16,13 +16,13 @@ ms.date: 10/16/2019
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
 
 For example, you can find work items that were modified in the last 3 days with the following query.
 
-![Editor query filter based on recent changes](_img/query-by-date-example.png)  
+![Editor query filter based on recent changes](media/query-by-date-example.png)  
 
 ::: moniker range=">= azure-devops-2019"
 In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to create queries based on a sliding window of team iterations. 
@@ -118,7 +118,7 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
     <p>Items created in the last 30 days</p>
   </td>
   <td>
-    <img src="_img/q-by-date-last-30-days.png" alt="Clause for finding items created in the last 30 days"/> 
+    <img src="media/q-by-date-last-30-days.png" alt="Clause for finding items created in the last 30 days"/> 
   </td>
 </tr>
 <tr>
@@ -126,48 +126,48 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
     <p>Items modified on a specific date</p>
   </td>
   <td>
-     <img src="_img/q-by-specific-date.png" alt="Clause for finding items changed on a specific date"/>
+     <img src="media/q-by-specific-date.png" alt="Clause for finding items changed on a specific date"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items resolved today</p>
   </td>
-  <td><img src="_img/q-by-resolved-today.png" alt="Clause for finding items resolved today"/>
+  <td><img src="media/q-by-resolved-today.png" alt="Clause for finding items resolved today"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items closed within a specified time period</p>
   </td>
-  <td><img src="_img/q-by-closed-time-period.png" alt="Clause for finding items closed within a specified time period"/>
+  <td><img src="media/q-by-closed-time-period.png" alt="Clause for finding items closed within a specified time period"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items that haven't been closed (Closed Date is null)</p>
   </td>
-  <td><img src="_img/q-closed-date-null.png" alt="Clause for finding items whose Closed Date is empty or null"/>
+  <td><img src="media/q-closed-date-null.png" alt="Clause for finding items whose Closed Date is empty or null"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items whose status was updated within the last week</p>
   </td>
-  <td><img src="_img/q-by-state-changed-within-last-week.png" alt="Clause for finding items whose status was updated within the last week"/>
+  <td><img src="media/q-by-state-changed-within-last-week.png" alt="Clause for finding items whose status was updated within the last week"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Items closed during the current sprint (the <code><xref href="CurrentIteration" data-throw-if-not-resolved="False" data-raw-source="@CurrentIteration"></xref></code> macro references the sprint defined for the current team context) </p>
   </td>
-  <td><img src="_img/q-by-done-current-iteration.png" alt="Clause for finding items closed during the current sprint"/>
+  <td><img src="media/q-by-done-current-iteration.png" alt="Clause for finding items closed during the current sprint"/>
   </td>
 </tr>
 </tbody>
 </table>
 
-[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -201,7 +201,7 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
     <p>Bugs closed in the last 2 weeks</p>
   </td>
   <td>
-    <img src="_img/example-queries/close-date-last-2-weeks.png" alt="Clauses for finding bugs closed in the last two weeks"/> 
+    <img src="media/example-queries/close-date-last-2-weeks.png" alt="Clauses for finding bugs closed in the last two weeks"/> 
   </td>
 </tr>
 <tr>
@@ -209,14 +209,14 @@ The following examples show how to use the <strong>StartOf...</strong> macros to
     <p>Items modified in the last 10 days</p>
   </td>
   <td>
-     <img src="_img/example-queries/changed-date-last-10-days.png" alt="Clause for finding items changed in the last 10 days"/>
+     <img src="media/example-queries/changed-date-last-10-days.png" alt="Clause for finding items changed in the last 10 days"/>
   </td>
 </tr>
 <tr>
   <td>
     <p>Features scheduled to be completed in the next 3 months</p>
   </td>
-  <td><img src="_img/example-queries/start-month-target-date-3.png" alt="Clauses for features scheduled to be completed in the next 3 months"/>
+  <td><img src="media/example-queries/start-month-target-date-3.png" alt="Clauses for features scheduled to be completed in the next 3 months"/>
   </td>
 </tr>
 </tbody>
@@ -245,7 +245,7 @@ Any item assigned to a sprint which corresponds to the current iteration path fo
 Azure Boards adds a team parameter when you select the <strong>@CurrentIteration</strong> or <b>@CurrentIteration +/- <i>n</i></b> macros. The team parameter is derived from your current [team context](#team_view). 
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro with team parameter](_img/query-date-iteration/at-current-with-team-parameter.png)  
+> ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
 > If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it]((../../organizations/settings/set-iteration-paths-sprints.md#activate). 
@@ -253,7 +253,7 @@ Azure Boards adds a team parameter when you select the <strong>@CurrentIteration
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 
 > [!div class="mx-imgBorder"]
-> ![Choose team parameter](_img/query-date-iteration/choose-team-parameter.png)
+> ![Choose team parameter](media/query-date-iteration/choose-team-parameter.png)
 
 ::: moniker-end
 
@@ -262,7 +262,7 @@ To change the team parameter the system automatically sets, you choose it by typ
 Prior to creating or updating a query to use the <strong>@CurrentIteration</strong> macro, make sure you [select your team](#team_view). The <strong>@CurrentIteration</strong> macro references the current team selected in the web portal.  
 
 > [!div class="mx-imgBorder"]
-> ![Query filter using the @CurrentIteration macro](_img/query-date-iteration/at-current-no-team-specified.png)  
+> ![Query filter using the @CurrentIteration macro](media/query-date-iteration/at-current-no-team-specified.png)  
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 Here we show how to list all User Stories and Bugs assigned to the sliding window that spans the last two, the current, and the next two sprints selected for the *Cloud Admin and Tools* team. 
 
 > [!div class="mx-imgBorder"]
-> ![CurrentIteration plus and minus clauses](_img//query-date-iteration/sliding-window-iterations.png)
+> ![CurrentIteration plus and minus clauses](media//query-date-iteration/sliding-window-iterations.png)
 
 To use this macro, the specified team must have [selected a set of sprints](../../organizations/settings/set-iteration-paths-sprints.md) that span the <b>+/- <i>n</i></b> value entered for the macro.  
 
@@ -471,6 +471,6 @@ To query for items based on text entered in the History field, see [History and 
 - [Query permissions](set-query-permissions.md)
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
  

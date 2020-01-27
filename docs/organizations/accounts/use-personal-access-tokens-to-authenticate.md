@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/05/2019
+ms.date: 11/13/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Authenticate access with personal access tokens
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATs.
 
@@ -26,7 +26,7 @@ Azure DevOps uses enterprise-grade authentication to help protect and secure you
 
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
-[!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
+[!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
 ## Related articles
 
@@ -38,13 +38,13 @@ For non-Microsoft tools that integrate into Azure DevOps but don't support Micro
 
 ### Q: What is my Azure DevOps Services URL?
 
-A: https://dev.azure.com/{yourorganization}
+A: https:\//dev.azure.com/{yourorganization}
 
 ### Q: Can I regenerate a PAT?
 
 A: No, but you can extend a PAT or modify its scope.
 
-## Q: Is there a way to renew a PAT via rest API?
+### Q: Is there a way to renew a PAT via rest API?
 A: No, we don’t have a rest API to renew a PAT. It has to be done within the user interface (UI).
 
 ### Q: Where can I learn more about how to use PATs?
@@ -57,11 +57,11 @@ A: Users receive two notifications during the lifetime of a PAT, one at creation
 
 The following notification is sent at PAT creation:
 
-![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
+![PAT creation notification](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
 The following notification is sent - a PAT is near expiration:
 
-![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
+![PAT near expiration notification](media/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
 ### Q: What does "Full Access" mean?
 
@@ -78,7 +78,7 @@ A: An administrator or a tool might have created a PAT on your behalf. See the f
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](admin-revoke-user-pats.md#revoke-pats). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
 
-## Q: How can I use a PAT in my code?
+### Q: How can I use a PAT in my code?
 
 A: See the following sample that gets a list of builds using curl.
 <br/>

@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestCaseResult2 API | Extensions for Azure DevOps Services
+description: Data representation of a test case result 2.
 ms.assetid: 7e4a847f-9055-6826-28a4-ff2e7dc2bba8
 ms.prod: devops
 ms.technology: devops-ecosystem

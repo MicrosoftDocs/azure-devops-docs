@@ -15,13 +15,15 @@ monikerRange: 'azure-devops'
 
 # Create your first pipeline from the CLI
 
+[!INCLUDE [temp](includes/version-team-services.md)]
+
 This is a step-by-step guide to using Azure Pipelines from the Azure CLI (command-line interface) to build a GitHub repository.
 You can use Azure Pipelines to build an app written in any language. For this quickstart, you'll use Java.
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
-[!INCLUDE [include](_shared/prerequisites-cli.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites-cli.md)]
 
 ## Get your first run
 
@@ -119,6 +121,6 @@ You can use Azure Pipelines to build an app written in any language. For this qu
 
 1. A new run is started. Wait for the run to finish.
 
-[!INCLUDE [include](_shared/get-status-badge.md)]
+[!INCLUDE [include](includes/get-status-badge.md)]
 
-[!INCLUDE [include](_shared/create-first-pipeline-next-steps.md)]
+[!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]

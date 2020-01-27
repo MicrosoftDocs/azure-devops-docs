@@ -1,5 +1,5 @@
 ---
-title: Restore Package Management NuGet packages in Azure Pipelines
+title: Restore NuGet packages in Azure Pipelines
 ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
@@ -7,17 +7,18 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: amullans
+ms.author: phwilson
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
+author: chasewilson
 ---
 
 # Restore Package Management NuGet packages in Azure Pipelines
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
@@ -37,10 +38,10 @@ Next, configure these options:
 
 Then, select feeds to use:
 
-- If you've checked in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
+- If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
-![A screenshot of the NuGet task configured as outlined above](_img/restore-pkgs-on-build.png)
+![A screenshot of the NuGet task configured as outlined above](media/restore-pkgs-on-build.png)
 
 Finally, save your build.
 
@@ -94,7 +95,7 @@ If you're using Azure Pipelines or TFS 2018, new template-based builds will work
 
 For existing builds, just add or update a NuGet Tool Installer task to select the version of NuGet for all the subsequent tasks. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
-![Build with NuGet Tool Installer task](_img/nuget-tool-installer.jpg)
+![Build with NuGet Tool Installer task](media/nuget-tool-installer.jpg)
 
 ::: moniker-end 
 

@@ -9,17 +9,17 @@ ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 09/26/2019
+ms.date: 01/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Self-hosted macOS agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,11 +29,34 @@ To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a self-hosted macOS agent.
 > *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem).
+::: moniker range=">= tfs-2018"
+
+Make sure your machine has these prerequisites:
+- macOS Sierra (10.12) or higher
+- Git 2.9.0 or higher (latest version strongly recommended - you can easily install with [Homebrew](https://brew.sh/))
+
+These prereqs are required for agent version 2.125.0 and higher.
+
+::: moniker-end
+
+::: moniker range="< tfs-2018"
+
+These prereqs are required for agent version 2.124.0 and below.
+**If you're able, we recommend upgrading to a newer macOS (10.12+) and upgrading to the newest agent.**
+
+Make sure your machine has these prerequisites:
+- OS X Yosemite (10.10), El Capitan (10.11), or macOS Sierra (10.12)
+- Git 2.9.0 or higher (latest version strongly recommended)
+- Meets all prereqs for [.NET Core 1.x](https://dotnet.microsoft.com/download/dotnet-core/1.0)
+
+::: moniker-end
+
+If you'll be using TFVC, you will also need the [Oracle Java JDK 1.6](https://www.oracle.com/technetwork/java/javaseproducts/downloads/index.html) or higher.
+(The Oracle JRE and OpenJDK are not sufficient for this purpose.)
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -42,7 +65,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 You should run agent setup manually the first time.
 After you get a feel for how agents work, or if you want to automate setting up many agents, consider using [unattended config](#unattended-config).
 
-[!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
+[!INCLUDE [permissions](includes/v2/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -55,7 +78,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -77,7 +100,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
 
 1. Click **Download agent**.
 
@@ -99,7 +122,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2017.md)]
 
 1. Click **Download agent**.
 
@@ -151,7 +174,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 ### Authentication type
 
-[!INCLUDE [include](_shared/v2/unix-authentication-types.md)]
+[!INCLUDE [include](includes/v2/unix-authentication-types.md)]
 
 ## Run interactively
 
@@ -167,8 +190,20 @@ To run the agent interactively:
    ./run.sh
    ```
 
+  To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
+
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
+
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+
+ ```bash
+./run.sh --once
+```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ## Run as a launchd service
 
@@ -345,19 +380,19 @@ We provide the `./svc.sh` script as a convenient way for you to run and manage y
 
 You can use the template described above as to facilitate generating other kinds of service files. For example, you modify the template to generate a service that runs as a launch daemon if you don't need UI tests and don't want to configure automatic log on and lock. See [Apple Developer Library: Creating Launch Daemons and Agents](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html).
 
-[!INCLUDE [include](_shared/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v2/replace-agent.md)]
 
-[!INCLUDE [include](_shared/v2/remove-and-reconfigure-unix.md)]
+[!INCLUDE [include](includes/v2/remove-and-reconfigure-unix.md)]
 
-[!INCLUDE [include](_shared/v2/configure-help-unix.md)]
+[!INCLUDE [include](includes/v2/configure-help-unix.md)]
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 ### Where can I learn more about how the launchd service works?
 
@@ -365,7 +400,7 @@ You can use the template described above as to facilitate generating other kinds
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v2/qa-firewall.md)]
 
 ::: moniker-end
 
@@ -377,21 +412,25 @@ You can use the template described above as to facilitate generating other kinds
 
 [Run the agent behind a web proxy](proxy.md)
 
+### How do I restart the agent
+
+If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a service, follow the steps to [Stop](#stop) and then [Start](#start) the agent.
+
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v2/qa-urls.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [include](../_shared/qa-versions.md)]
+[!INCLUDE [include](../includes/qa-versions.md)]
 
 ::: moniker-end
 

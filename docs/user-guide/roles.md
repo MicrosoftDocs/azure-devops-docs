@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Software development roles supported by Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 If you're a sole developer or you work on a small team, you likely do tasks that are associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
@@ -36,7 +36,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md)
 	- [Share your code in Git by using Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 	- [Share your code in Git by using Xcode](../repos/git/share-your-code-in-git-xcode.md)
-	- [Share your code in Git by using IntelliJ](/../java/download-intellij-plug-in.md)
+	- [Share your code in Git by using IntelliJ](../java/download-intellij-plug-in.md)
 	- [Get started with using Git and Azure DevOps Services](../repos/git/gitquickstart.md)
 - To get started with using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC by using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)

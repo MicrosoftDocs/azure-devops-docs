@@ -15,14 +15,14 @@ monikerRange: '>= tfs-2017'
 
 # Service Fabric Application Deployment task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to deploy a Service Fabric application to a cluster.
 This task deploys an Azure Service Fabric application to a cluster 
 according to the settings defined in the publish profile.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ## Prerequisites
@@ -35,7 +35,7 @@ deploy to a Service Fabric cluster.
 
 ::: moniker range=">= azure-devops-2019"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricDeployV1.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricDeployV1.md)]
 
 ## Task Inputs
 

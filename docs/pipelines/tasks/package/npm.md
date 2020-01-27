@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # npm task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to install and publish npm packages.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Use this task in a build or release pipeline to install and publish npm packages
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NpmV1.md)]
+[!INCLUDE [temp](../includes/yaml/NpmV1.md)]
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Use this task in a build or release pipeline to install and publish npm packages
             <ul>
                 <li><strong>Registry I select here</strong> publishes to an Azure Artifacts registry in the same organization/collection as the build. After you select this option, select the target registry from the dropdown.
                 </li>
-                <li><strong>External npm registry (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.npmjs.com/" data-raw-source="[npm](https://www.npmjs.com/)">npm</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](http://www.myget.org/)">MyGet</a>, or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a>.
+                <li><strong>External npm registry (including other organizations/collections)</strong> publishes to an external server such as <a href="https://www.npmjs.com/" data-raw-source="[npm](https://www.npmjs.com/)">npm</a>, <a href="http://www.myget.org/" data-raw-source="[MyGet](https://www.myget.org/)">MyGet</a>, or an Azure Artifacts feed in another Azure DevOps organization or TFS collection. After you select this option, create and select an <a href="../../library/service-endpoints.md#sep-npm" data-raw-source="[npm service connection](../../library/service-endpoints.md#sep-npm)">npm service connection</a>.
                 </li>
             </ul>
         </td>
@@ -229,11 +229,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

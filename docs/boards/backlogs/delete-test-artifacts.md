@@ -1,5 +1,5 @@
----
-title: Delete test plans, test cases, test results, & other test artifacts
+﻿---
+title: Delete test plans, cases, & other test artifacts
 titleSuffix: Azure Boards  
 description: How to delete test plans, test cases, test results, & other test artifacts in Azure DevOps Services & TFS 
 ms.custom: seodec18
@@ -66,7 +66,7 @@ To delete test artifacts, the following restrictions and operations apply:
 
 The following image illustrates the set of work item types that support the test experience and work with Microsoft Test Manager. These work item types are linked together using the link types shown. 
 
-  ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
+  ![Test management work item types](../work-items/guidance/media/ALM_PT_WITS_TestExperience.png)
 
 From the web portal or Microsoft Test Manager, you can view which test cases are defined for a test suite, 
 and which test suites are defined for a test plan. 
@@ -77,22 +77,22 @@ However, these objects aren't connected to each other through link types. For de
 
 1. To delete a test case, open it from the web portal and choose the** Permanently delete** option from the actions menu. (Bulk deletion is not supported from a query results page.)     
  
-	![Delete a test case and associated test artifacts from the web form](_img/move-change-delete/delete-test-artifacts-form.png)  
+	![Delete a test case and associated test artifacts from the web form](media/move-change-delete/delete-test-artifacts-form.png)  
 
 	> [!NOTE] 
 	>You'll only see the **Permanently delete** option if you have the necessary permissions and access. 
 
 2. Confirm you want to actually delete the item.  
   
-	![Confirm delete of test artifacts](_img/move-change-delete/perm-delete-test-artifacts-dialog.png)  
+	![Confirm delete of test artifacts](media/move-change-delete/perm-delete-test-artifacts-dialog.png)  
  
 3. You can also delete test plans and test suites directly from **Test**. 
 
-	![Delete test plans and artifacts from Test pages](_img/move-change-delete/delete-test-plans.png)  
+	![Delete test plans and artifacts from Test pages](media/move-change-delete/delete-test-plans.png)  
 
 4.	To delete shared steps and shared parameters you need to first manually remove all references to them before you can delete them. 
 	
-	![Delete shared steps from form](_img/delete-test-shared-steps-remove-link.png)  
+	![Delete shared steps from form](media/delete-test-shared-steps-remove-link.png)  
 
 ## Related articles   
 

@@ -26,7 +26,7 @@ You can create [feeds](./feeds.md) and store [packages](./packages.md) in those 
 Feeds have [permissions](./permissions.md) which control who can read from, push to, and manage feeds.
 
 
-![Packaging resources](./_img/packaging-resources.png)
+![Packaging resources](./media/packaging-resources.png)
 
 You can also access [NuGet specific operations](./nuget.md) such as delete and delist.
 

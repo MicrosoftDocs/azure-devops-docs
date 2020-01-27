@@ -1,5 +1,6 @@
 ---
 title: VSS/References/SDK.Interfaces TeamContext API | Extensions for Azure DevOps Services
+description: Data representation of a team context.
 ms.assetid: 514e2694-2028-7bc9-98fd-7e012bc0564a
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,16 +1,14 @@
 ---
-title: Learn how to build and deploy your apps 
+title: Learn how to build and deploy your apps
 titleSuffix: Azure Pipelines
 description: Use Azure Pipelines to build and deploy your apps
 ms.prod: devops
 ms.technology: devops-cicd
-ms.assetid:  
+ms.assetid: 
 ms.manager: mijacobs
 ms.author: sdanie
-author: elbatk
-ms.topic: overview
-ms.manager: mijacobs
 author: steved0x
+ms.topic: overview
 monikerRange: '>= tfs-2017'
 ms.date: 09/26/2019
 ---
@@ -18,7 +16,7 @@ ms.date: 09/26/2019
 
 # Get started with Azure Pipelines
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]  
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]  
 
 Azure Pipelines is a fully featured continuous integration (CI) and continuous delivery (CD) service. It works with your preferred Git provider and can deploy to most major cloud services, which include Azure services. Start with your code on GitHub, GitHub Enterprise Server, GitLab, Bitbucket Cloud, or [Azure Repos](/azure/devops/repos/index). Then you can automate the build, testing, and deployment of your code to Microsoft Azure, Google Cloud Platform, or Amazon Web Services.
 

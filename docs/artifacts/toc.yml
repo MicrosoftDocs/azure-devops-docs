@@ -22,7 +22,7 @@
   items:
   - name: Create a private PowerShell repository
     href: tutorials/private-powershell-library.md
-  - name: Share packages publicly (preview)
+  - name: Share packages publicly
     href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
@@ -68,7 +68,7 @@
     items:
     - name: Publish a NuGet package
       href: nuget/publish.md
-    - name: Consume NuGet packages
+    - name: Consume NuGet packages in Visual Studio
       href: nuget/consume.md
     - name: Use NuGet with Azure DevOps Services # kill this with new connect to feed
       href: nuget/nuget-exe.md

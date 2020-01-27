@@ -8,13 +8,13 @@ ms.topic: reference
 ms.assetid: ac299174-7f32-4867-8efb-c7bb50cdbd51
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
 # Burndown Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 You can use the Burndown report to help determine how much progress the team has made in completing work for an iteration or other interval of time. The report shows how many hours of work the team has completed and how many hours remain. For information about how to access this report, see [Excel reports](excel-reports.md).  
@@ -35,7 +35,7 @@ You can use the Burndown report to help determine how much progress the team has
 
 The Burndown report shows a stacked area chart of the **Completed Work** and **Remaining Work** hours that have been tracked for all Tasks during the time interval set for the report. The default interval is the current week through the next three weeks.  
   
- ![Burndown chart](_img/procguid_agileburn.png "ProcGuid_AgileBurn")  
+ ![Burndown chart](media/procguid_agileburn.png "ProcGuid_AgileBurn")  
   
  The **Ideal Trend** line calculates a slope or trajectory for when the team will complete work based on the amount of work that remains and the end date of the report. A healthy Burndown chart shows that the team is making steady progress toward finishing the work. The line is drawn from the remaining work on the start date and intersects the x-axis on the end date.  
   
@@ -78,7 +78,7 @@ You can update the Burndown report by opening the report in Office Excel and cha
 |----------|------------|  
 |Burndown for an iteration|Change the filter for **Iteration** (default=All)|  
 |Burndown for a product area|Change the filter for **Area** (default=All)|  
-|Burndown for a specific time interval|In the **Reports** worksheet, perform the following steps:<br /><br /> 1.  In the cell under **Date**, specify the start date of the time interval in either mm/dd or mm/dd/yyyy format.<br />2.  Click the cell that contains the start date that you just specified, and then drag the fill handle![A small square in the cell's lower&#45;right corner.](_img/icon_fillhandle.png "Icon_FillHandle") across the cells that you want to fill.<br />3.  (Optional) Use the **Auto Fill Options** button ![Auto Fill Options button image](_img/icon_autofilloptions.png "Icon_AutoFillOptions") to specify how to fill the selection. For example, you can specify **Fill Series** or **Fill Weekdays**.<br />     For more information, see the following page on the Microsoft Web site: [Fill data in worksheet cells](https://go.microsoft.com/fwlink/?LinkID=165808).<br />4.  On the **Data** tab, in the **Connections** group, click **Refresh All.**|  
+|Burndown for a specific time interval|In the **Reports** worksheet, perform the following steps:<br /><br /> 1.  In the cell under **Date**, specify the start date of the time interval in either mm/dd or mm/dd/yyyy format.<br />2.  Click the cell that contains the start date that you just specified, and then drag the fill handle![A small square in the cell's lower&#45;right corner.](media/icon_fillhandle.png "Icon_FillHandle") across the cells that you want to fill.<br />3.  (Optional) Use the **Auto Fill Options** button ![Auto Fill Options button image](media/icon_autofilloptions.png "Icon_AutoFillOptions") to specify how to fill the selection. For example, you can specify **Fill Series** or **Fill Weekdays**.<br />     For more information, see the following page on the Microsoft Web site: [Fill data in worksheet cells](https://support.office.com/article/fill-data-automatically-in-worksheet-cells-74e31bdd-d993-45da-aa82-35a236c5b5db).<br/>4.  On the **Data** tab, in the **Connections** group, click **Refresh All.**|  
   
 
 ## Related articles

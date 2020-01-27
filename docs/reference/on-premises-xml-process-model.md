@@ -16,7 +16,7 @@ ms.date: 05/06/2019
 
 # On-premises XML process customization
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
@@ -55,7 +55,7 @@ You can perform the following tasks when you work with the On-premises XML proce
 <td>
 <ul>
 <li><a href="add-modify-field.md" data-raw-source="[Add or modify a field](add-modify-field.md)">Add or modify a field</a></li>
-<li><a href="add-modify-field.md#boolean-field" data-raw-source="[Add a checkbox (Boolean) field](add-modify-field.md#boolean-field)">Add a checkbox (Boolean) field</a> (TFS 2017.2)</li>
+<li><a href="add-modify-field.md" data-raw-source="[Add a checkbox (Boolean) field](add-modify-field.md)">Add a checkbox (Boolean) field (TFS 2017.2)</li>
 <li><a href="add-modify-field.md#add-rules" data-raw-source="[Add rules to a field](add-modify-field.md#add-rules)">Add rules to a field</a></li>
 <li><a href="add-modify-field.md#change-label" data-raw-source="[Change a field label](add-modify-field.md#change-label)">Change a field label</a></li>
 <li><a href="add-modify-field.md#custom-control" data-raw-source="[Add a custom control field](add-modify-field.md#custom-control)">Add a custom control field</a></li>
@@ -138,12 +138,12 @@ You can perform the following tasks when you work with the On-premises XML proce
 
 When you manage an on-premises deployment, you perform most customizations using the following sequence. This sequence supports updating the XML definition for WIT, global lists, process configuration, and categories. This sequence supports individual updates through the import of their respective modified XML definition files. We recommend that you maintain your XML definition files in a repository for version control.  
 
-[![Export XML definition file](_img/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export XML definition file](media/cust-wit-form-export-def-file.png)](customize-wit-form.md#witadmin)[![Edit XML definition file](media/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](media/cust-wit-form-import-def-file.png)](customize-wit-form.md#witadmin)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 In addition, you can use the **witadmin** tool to list objects, rename WITs, permanently remove WITs, and more.  
  
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 
 <a id="before-you-customize"></a>

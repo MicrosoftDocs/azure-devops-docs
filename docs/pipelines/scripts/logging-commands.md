@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
 ms.manager: mijacobs
 ms.author: phwilson
-ms.date: 09/24/2019
+ms.date: 12/04/2019
 ---
 
 # Logging commands
@@ -158,8 +158,6 @@ Finish the timeline record for the current task, set task result and current ope
   - `Succeeded` The task succeeded.
   - `SucceededWithIssues` The task ran into problems. The build will be completed as partially succeeded at best.
   - `Failed` The build will be completed as failed. (If the **Control Options: Continue on error** option is selected, the build will be completed as partially succeeded at best.)
-  - `Cancelled` Cancels the build.
-  - `Skipped` Logs the task outcome as skipped.
    
 #### Example
 
@@ -191,7 +189,7 @@ The logging system will keep tracking the GUID for each timeline records that be
 * `finishtime` = `Datetime`
 * `progress` = percentage of completion 
 * `state` = `Unknown` | `Initialized` | `InProgress` | `Completed` 
-* `result` = `Succeeded` | `SucceededWithIssues` | `Failed` | `Cancelled` | `Skipped`
+* `result` = `Succeeded` | `SucceededWithIssues` | `Failed`
 
 #### Examples
 

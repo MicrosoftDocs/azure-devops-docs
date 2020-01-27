@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildOptionInputDefinition API | Extensions for Azure DevOps Services
+description: Data representation of a build option input definition.
 ms.assetid: da6762df-8c64-0975-2f7a-d5dd60f908fa
 ms.prod: devops
 ms.technology: devops-ecosystem

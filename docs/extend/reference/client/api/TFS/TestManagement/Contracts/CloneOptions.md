@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts CloneOptions API | Extensions for Azure DevOps Services
+description: Data representation of clone options.
 ms.assetid: a5e290f2-37f2-791c-b735-3fd9934e845b
 ms.prod: devops
 ms.technology: devops-ecosystem

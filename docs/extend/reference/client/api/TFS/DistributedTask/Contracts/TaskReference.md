@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts TaskReference API | Extensions for Azure DevOps Services
+description: Data representation of a task reference.
 ms.assetid: 9fc7f5f0-ec7c-438e-3cbe-c8d4f543bb61
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -21,7 +21,7 @@ ms.date: 08/04/2016
 A [build request](./requests.md) references a [build definition](./definitions.md) to add a new [build](./builds.md) to a [build queue](./queues.md).
 Completed builds are assigned a [build quality](./qualities.md).
 
-![Build resources](./_img/build-resources.png)
+![Build resources](./media/build-resources.png)
 
 * [Builds](./builds.md)
 * [Definitions](./definitions.md)

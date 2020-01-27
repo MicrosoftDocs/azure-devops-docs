@@ -2,7 +2,7 @@
 title: Change the owner of an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to assign a different user as the owner for your organization, and what permissions are required to make updates
+description: Learn how to assign a different user as the owner for your organization. Also learn what permissions are required to make updates.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
@@ -10,18 +10,15 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 07/02/2019
+ms.date: 11/20/2019
 monikerRange: 'azure-devops'
 ---
 
-# Change the organization Owner in Azure DevOps
+# Change the organization owner
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, you can assign a different user as the owner for your organization. In this article, we show you what permissions are required and the steps to make this update in Azure DevOps.
-
-> [!NOTE]
-> When you remove an owner, they are also removed from the Project Collection Administrator group.
+As roles and responsibilities change, you can change the owner for your organization. In this article, learn how to update the organization owner in Azure DevOps.
 
 <a name="ChangeOwner"></a>
 
@@ -36,22 +33,22 @@ Make sure the new owner has completed the following tasks:
 * Signed in to your organization, created a profile, and agreed to the Terms of Service.
 * Accessed the organization at least once after creating an initial profile.
 
-   ![Last access date](_img/change-organization-ownership/user-last-access.png)
+   ![Last access date](media/change-organization-ownership/user-last-access.png)
 
 ## Change organization Owner
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings** .
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Select "Organization settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, and then **Change owner**.  
 
-   ![Select Overview, and then Change owner](_img/change-organization-ownership/change-organization-owner.png)
+   ![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
 
 4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-   ![Enter and save a new organization Owner](_img/change-organization-ownership/save-new-organization-owner.png)
+   ![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
 
    Your organization has a new owner.

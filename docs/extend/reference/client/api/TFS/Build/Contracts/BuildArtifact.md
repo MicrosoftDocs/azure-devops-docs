@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildArtifact API | Extensions for Azure DevOps Services
+description: Data representation of a build artifact.
 ms.assetid: af50a2e2-9683-8a0d-13e4-ebe2142d61d2
 ms.prod: devops
 ms.technology: devops-ecosystem

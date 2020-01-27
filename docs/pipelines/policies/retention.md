@@ -8,7 +8,7 @@ ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 09/09/2019
+ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,18 +33,35 @@ Using run retention policies, you can control **how many days** you want to keep
 
 ::: moniker range="<= tfs-2018"
 
-Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be retained for each pipeline.
+Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be kept for each pipeline.
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
 
-> [!NOTE]
-> Ability to specify the number of runs to keep before removal is in development for Azure Pipelines. 
+You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
-::: moniker-end
+# [YAML](#tab/yaml)
 
-As an author of a run pipeline, you can customize retention policies for runs of your pipeline on the **Settings** tab in your project's settings.
+```yaml
+- task: CopyFiles@2
+  displayName: 'Copy Files to: \\mypath\storage\$(Build.BuildNumber)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '_buildOutput/**'
+    TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
+```
+
+# [Classic](#tab/classic)
+
+1. Add the **Copy Files task** to your Pipeline.  
+![copy files](media/copy_files_classic_task.png)
+
+2. Configure the **Copy Files task**. 
+![configure Copy Files](media/copy_files_classic_config.png)
+---
+
+
 
 ::: moniker range="<= tfs-2018"
 
@@ -96,7 +113,7 @@ For example, your team may want to keep:
 The following example retention policy for a build pipeline
 meets the above requirements:
 
-![define git retention policies](_img/define-git-retention-policies.png)
+![define git retention policies](media/define-git-retention-policies.png)
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
@@ -108,7 +125,7 @@ If you [protect your Git branches with pull request builds](../../repos/git/bran
 refs/pull/*
 ```
 
-![retention-policy-for-pull-request-builds](_img/retention-policy-for-pull-request-builds.png)
+![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
@@ -120,7 +137,7 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-![define git retention policy max shown in pipeline](_img/define-git-retention-policy-max-shown-in-definition.png)
+![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
 
 ::: moniker-end
 
@@ -144,7 +161,14 @@ The following information is deleted when a build is deleted:
 
 ::: moniker range="> tfs-2018"
 
-In Azure Pipelines, the entire run is deleted. 
+The following information is deleted when a run is deleted:
+
+* Logs
+* [All artifacts](../tasks/utility/publish-build-artifacts.md)
+* [All symbols](../tasks/build/index-sources-publish-symbols.md)
+* Binaries
+* Test results
+* Run metadata
 
 ::: moniker-end
 
@@ -153,7 +177,7 @@ In Azure Pipelines, the entire run is deleted.
 
 ::: moniker range="> tfs-2018"
 
-Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
+Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
 
 ::: moniker-end
 
@@ -183,7 +207,7 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* Azure Pipelines: `https://dev.azure.com/{organizaion}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
+* Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
@@ -210,7 +234,7 @@ For example, your team may want to keep:
 
 The following example retention policy for a release pipeline meets the above requirements:
 
-![Configuring the release retention setting for a release pipeline](_img/retention-policy-01.png)
+![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
 
 In this example, if a release that is deployed to Dev is not
 promoted to QA for 10 days, it is a potential candidate for
@@ -280,8 +304,8 @@ Foundation or Azure Pipelines Build, and are still
 publishing test results, the retention of these results is
 governed by the retention settings of the release they belong to.
 
-<!-- [!INCLUDE [temp](../_shared/qa-agents.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-agents.md)] -->
 
-<!-- [!INCLUDE [temp](../_shared/qa-versions.md)] -->
+<!-- [!INCLUDE [temp](../includes/qa-versions.md)] -->
 
 <!-- ENDSECTION -->

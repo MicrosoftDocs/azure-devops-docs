@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,4 +16,4 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-[!INCLUDE [](../_shared/npm/publish.md)]
+[!INCLUDE [](../includes/npm/publish.md)]

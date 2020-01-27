@@ -1,5 +1,5 @@
----
-title: Quickstart guide to plan and track work for either the Basic or Agile process
+﻿---
+title: Plan & track work for Basic or Agile process
 titleSuffix: Azure Boards 
 description: Plan and track work in your new team project on Azure Boards
 ms.custom: boards-get-started
@@ -17,13 +17,13 @@ ms.date: 08/23/2019
 
 # Plan and track work  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
 Choose either the **Basic process** or **Agile process** for guidance depending on what process was selected for your project.
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -32,7 +32,7 @@ The Basic process provides three work item types&mdash;epics, issues, and tasks&
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Basic process work item types, conceptual image](_img/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](_img/about-boards/hierarchy-2.png) |
+> |![Basic process work item types, conceptual image](media/about-boards/basic-process-epics-issues-tasks-2.png) | ![Hierarchical backlog](media/about-boards/hierarchy-2.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -46,7 +46,7 @@ The Agile process provides several work item types&mdash;for example, user stori
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Hierarchical backlog](_img/about-boards/agile-hierarchy.png) |
+> |![Agile process work item types, conceptual image](media/about-boards/agile-process-wits.png) | ![Hierarchical backlog](media/about-boards/agile-hierarchy.png) |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -78,25 +78,25 @@ A Kanban board is provisioned with the addition of each project and each team. Y
 #### [Basic process](#tab/basic-process) 
 
 The Issues Kanban board is the best tool for quickly adding issues and child tasks. To open, choose **Boards>Boards**.  
-![Open your Kanban board](_img/track-issues/open-kanban-board-issues.png)  
+![Open your Kanban board](media/track-issues/open-kanban-board-issues.png)  
 
 The Epics Kanban board is the best tool for quickly adding epics and issues that are children of those epics. 
 To open the Epics board from the Issues board, choose **Epics** from the board selector. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open the epics board](_img/track-issues/choose-epics-board.png)  
+> ![Open the epics board](media/track-issues/choose-epics-board.png)  
 
 #### [Agile process](#tab/agile-process) 
 
 The User Stories Kanban board is the best tool for quickly adding user stories and child tasks. To open, choose **Boards>Boards**.  
 
-![Open your Kanban board](_img/plan-track-work/open-kanban-board-user-stories.png)  
+![Open your Kanban board](media/plan-track-work/open-kanban-board-user-stories.png)  
 
 The Features Kanban board is the best tool for quickly adding features and user stories that are children of those features. 
 To open the Features board from the User Stories board, choose **Features** from the board selector. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open the features board](_img/plan-track-work/choose-features-board.png)  
+> ![Open the features board](media/plan-track-work/choose-features-board.png)  
 
 * * *
 
@@ -108,12 +108,12 @@ To open the Features board from the User Stories board, choose **Features** from
 1. From the Issues board, choose **New item** and start adding those issues you want to track. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add new item](_img/track-issues/issues-board-new-item.png) 
+	> ![Add new item](media/track-issues/issues-board-new-item.png) 
 
 2. Enter return and the system assigns a work item ID to the issue. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Added item](_img/track-issues/issues-board-added-item.png) 
+	> ![Added item](media/track-issues/issues-board-added-item.png) 
 
 3. To track the work you want to manage, add as many issues that you need.  
 
@@ -124,12 +124,12 @@ To open the Features board from the User Stories board, choose **Features** from
 1. From the User Stories board, choose **New item** and start adding those stories you want to track. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add new item](_img/plan-track-work/new-user-story-kanban-board.png) 
+	> ![Add new item](media/plan-track-work/new-user-story-kanban-board.png) 
 
 1. Enter return and the system assigns a work item ID to the user story. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Added item](_img/plan-track-work/users-stories-board-added-item.png) 
+	> ![Added item](media/plan-track-work/users-stories-board-added-item.png) 
 
 2. To track the work you want to manage, add as many user stories that you need.  
 
@@ -138,7 +138,7 @@ To open the Features board from the User Stories board, choose **Features** from
 
 ## Add details to an issue or user story
 
-Choose the issue or user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../_img/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
+Choose the issue or user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
 
 #### [Basic process](#tab/basic-process) 
@@ -146,7 +146,7 @@ Choose the issue or user story title to open it. Change one or more field values
 For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
 > [!div class="mx-imgBorder"]
-> ![Issues work item form, add details ](_img/track-issues/issue-form-add-details.png)
+> ![Issues work item form, add details ](media/track-issues/issue-form-add-details.png)
 
 > [!NOTE]  
 > You can only assign work to a user who has been added to the project. 
@@ -212,7 +212,7 @@ Provide a relative estimate of the amount of work required to complete an issue.
 For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
 > [!div class="mx-imgBorder"]
-> ![User Story work item form, add details](_img/plan-track-work/user-story-form-add-details.png)
+> ![User Story work item form, add details](media/plan-track-work/user-story-form-add-details.png)
 
 > [!NOTE]  
 > You can only assign work to a user who has been added to the project. 
@@ -306,7 +306,7 @@ Provide a relative estimate of the amount of work required to complete an issue.
 As work starts, drag the issue from the **To Do** column to the **Doing** column. Once completed, move to the **Done** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](_img/track-issues/update-status.png) 
+> ![Update status on Kanban board](media/track-issues/update-status.png) 
 
 You can add or rename columns as needed, see [Customize your board](customize-boards.md).
 
@@ -317,7 +317,7 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it is reviewed and accepted, move to the **Closed** column. 
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](_img/plan-track-work/update-status.png) 
+> ![Update status on Kanban board](media/plan-track-work/update-status.png) 
 
 You can add or rename columns as needed, see [Customize your board](customize-boards.md).
 
@@ -332,27 +332,27 @@ You can add or rename columns as needed, see [Customize your board](customize-bo
 
 Task checklists provide a quick and easy way to track elements of work which are important to support completing an issue. 
 
-1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Add Task from Issues menu](_img/track-issues/add-tasks.png) 
+	> ![Choose Add Task from Issues menu](media/track-issues/add-tasks.png) 
 
 	Enter a title for the task and type Enter when done.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add first task](_img/track-issues/enter-first-task.png) 
+	> ![Add first task](media/track-issues/enter-first-task.png) 
 
 1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Several tasks added](_img/track-issues/add-several-tasks.png)  
+	> ![Several tasks added](media/track-issues/add-several-tasks.png)  
 
 2. You can mark a task as done, expand or collapse the task checklist, or reorder and reparent tasks. 
 
 	> [!div class="mx-tdCol2BreakAll"]  
 	> |Mark a task as done |Reorder and reparent tasks | Expand or collapse the checklist| 
 	> |------------------|--------------|--------------|  
-	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/track-issues/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/track-issues/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](_img/track-issues/collapse-task-list.png) |  
+	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](media/track-issues/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](media/track-issues/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](media/track-issues/collapse-task-list.png) |  
 
 
 
@@ -361,27 +361,27 @@ Task checklists provide a quick and easy way to track elements of work which are
 
 Task checklists provide a quick and easy way to track elements of work which are important to support completing a user story. In addition, you can assign individual tasks to different team members. 
 
-1. To start adding tasks, choose the ![](../../_img/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../_img/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Add Task from Issues menu](_img/plan-track-work/add-child-task.png) 
+	> ![Choose Add Task from Issues menu](media/plan-track-work/add-child-task.png) 
 
 	Enter a title for the task and type Enter when done.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add first task](_img/plan-track-work/prep-images-task.png) 
+	> ![Add first task](media/plan-track-work/prep-images-task.png) 
 
 1. If you have a number of tasks to add, simply keep typing your task titles and type Enter.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Several tasks added](_img/plan-track-work/add-several-tasks.png)  
+	> ![Several tasks added](media/plan-track-work/add-several-tasks.png)  
 
 2. You can mark a task as done, expand or collapse the task checklist, or reorder and reparent tasks. 
 
 	> [!div class="mx-tdCol2BreakAll"]  
 	> |Mark a task as done |Reorder and reparent tasks | Expand or collapse the checklist| 
 	> |------------------|--------------|--------------|  
-	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](_img/plan-track-work/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](_img/plan-track-work/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](_img/plan-track-work/collapse-task-list.png) |  
+	> |To mark a task as complete, check the task checkbox. The task State changes to **Done**.<br/>![Mark task as done](media/plan-track-work/mark-tasks-as-done.png) |To reorder a task, drag it within the checklist. To reparent a the task, drag it to another issue on the board.<br/>![Drag tasks to reorder them within the list](media/plan-track-work/reorder-task.png)  |To expand or collapse a task checklist, simply choose the task annotation.<br/>![Collapse task checklist](media/plan-track-work/collapse-task-list.png) |  
 
 
 * * *
@@ -397,7 +397,7 @@ If you have details you want to add about a task, choose the title, to open it. 
 Here we assign the task to Jamal.   
 
 > [!div class="mx-imgBorder"]  
-> ![Task form](_img/track-issues/basic-process-task-form.png)  
+> ![Task form](media/track-issues/basic-process-task-form.png)  
 
 ### Field descriptions
 
@@ -431,7 +431,7 @@ In addition to the fields you can define for an issue, you can specify the follo
 Here we assign the task to Christie Church.   
 
 > [!div class="mx-imgBorder"]  
-> ![Task form](_img/plan-track-work/task-form.png)  
+> ![Task form](media/plan-track-work/task-form.png)  
 
 
 ### Field descriptions
@@ -472,7 +472,7 @@ In addition to the fields you can define for a user story, you can specify the f
 * * *
 
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)]
+[!INCLUDE [temp](../includes/discussion-tip.md)]
 
 
 ## Try this next  
