@@ -33,11 +33,35 @@ Using run retention policies, you can control **how many days** you want to keep
 
 ::: moniker range="<= tfs-2018"
 
-Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be retained for each pipeline.
+Along with defining how many days to retain runs, you can also decide the minimum number of runs that should be kept for each pipeline.
 
 ::: moniker-end
 
-As an author of a run pipeline, you can customize retention policies for runs of your pipeline on the **Settings** tab in your project's settings.
+As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
+
+You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
+
+# [YAML](#tab/yaml)
+
+```yaml
+- task: CopyFiles@2
+  displayName: 'Copy Files to: \\mypath\storage\$(Build.BuildNumber)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '_buildOutput/**'
+    TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
+```
+
+# [Classic](#tab/classic)
+
+1. Add the **Copy Files task** to your Pipeline.  
+![copy files](media/copy_files_classic_task.png)
+
+2. Configure the **Copy Files task**. 
+![configure Copy Files](media/copy_files_classic_config.png)
+---
+
+
 
 ::: moniker range="<= tfs-2018"
 
@@ -153,7 +177,7 @@ The following information is deleted when a run is deleted:
 
 ::: moniker range="> tfs-2018"
 
-Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
+Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load-balancing purposes. There is no option to change this process.
 
 ::: moniker-end
 
