@@ -60,19 +60,10 @@ assigned to built-in groups, see [Default permissions and access](../organizatio
 Stakeholders have limited access to manual testing features.
 To learn more, see [About access levels](../organizations/security/access-levels.md).
 
-| Task | Stakeholders | Readers | Contributors | Account Owner &amp;<br/>Project Admins |
-| --- |:---:|:---:|:---:|:---:| 
-| Exploratory testing, view test runs | | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Exploratory testing, create and delete test runs |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Provide feedback using the Test & Feedback extension | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Request feedback using the Test & Feedback extension |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Manage test configurations and test environments |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Manage test plans and test suites |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Run automated tests from test plans |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
-| Test Manager (purchased separately) |  |  | ![checkmark](media/checkmark.png) | ![checkmark](media/checkmark.png) |
+[!INCLUDE [test](../organizations/security/includes/test.md)] 
 
-Permissions can be applied at [Project level](../organizations/security/permissions.md#project-level)
-and at [Area path level](../organizations/security/permissions.md#area-path-object-level). 
+
+Permissions can be applied on area paths and at the project-level. To learn how, see [Set permissions and access for testing](../organizations/security/set-permissions-access-test.md). 
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
 
