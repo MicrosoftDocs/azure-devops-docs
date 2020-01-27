@@ -13,16 +13,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 01/27/2020
 ---
 
-# Set permissions and access for manual testing
+# Set permissions and access for testing
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-You grant or restrict access to various manual test features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
+You grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project.  
 
-> [!NOTE]
-> For public projects, Stakeholder access gives users greater access to work tracking features and full access to Azure Pipelines. To learn more, see [About access levels, Stakeholder access](access-levels.md#stakeholder-access).
-
-Test permissions can be set at these levels/and should address these tasks: 
+You set manual test permissions for area paths and at the project-level. You set permissions to manage test controllers at the organization or collection level. Test controllers are used in performing load tests.   
 
 ::: moniker range=">= tfs-2017"
 
@@ -46,7 +43,7 @@ Test permissions can be set at these levels/and should address these tasks:
 	- Manage test suites
 - **Project-level** 
 	- Manage test configurations 
-	- Manage test  environments
+	- Manage test environments
 	- Create test runs
 - **Organization or collection-level** 
 	- Manage test controllers 
@@ -94,6 +91,7 @@ When you delete test artifacts, the following actions occur:
 2.	Runs a job to delete all the child items both from the TCM side and the underlying work items. This action may take time (up to a few minutes) depending on the number of artifacts to be deleted. 
 3.	Causes all information in the work item tracking data store and TCM data store to be deleted and cannot be reactivated nor restored. 
 
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
