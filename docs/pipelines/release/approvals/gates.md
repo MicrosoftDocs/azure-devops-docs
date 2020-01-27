@@ -8,7 +8,7 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2017'
 ---

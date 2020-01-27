@@ -5,9 +5,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
-ms.manager: shasb
-ms.author: shasb
-author: shashankbarsin
+ms.manager: atulmal
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
 ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
