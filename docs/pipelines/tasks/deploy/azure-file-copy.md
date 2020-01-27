@@ -30,6 +30,9 @@ The task is used to copy application files and other
 artifacts that are required in order to install the 
 app; such as PowerShell scripts, PowerShell-DSC modules,
 and more.
+
+> [!NOTE]
+> If you are using Azure File copy task version 3 or below refer to [this](./azure-file-copy-version3.md).
  
 When the target is Azure VMs, the files are first copied
 to an automatically generated Azure blob container 
@@ -64,9 +67,6 @@ The task supports authentication based on Azure Active Directory. Authentication
 [!INCLUDE [temp](../includes/yaml/AzureFileCopyV4.md)]
 
 ::: moniker-end
-
-> [!NOTE]
-> If you are using Azure File copy task version 3 or below refer to [this](./azure-file-copy-version3.md).
 
 ## Arguments
 
@@ -153,15 +153,15 @@ Since AzCopy V10 does not support journal files, the task cannot resume the copy
 
 The log and plan files are not deleted by the task. To explicitly clean up the files you can add a CLI step in the workflow using [this command](/azure/storage/common/storage-ref-azcopy-jobs-clean).
 
-## Open source
-
-This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
-
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [qa-versions](../../includes/qa-versions.md)]
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
 ::: moniker-end
 
