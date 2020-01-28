@@ -147,7 +147,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 > [!NOTE]   
 >  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![](/vsts/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
 
-[!INCLUDE [temp](../security/includes/pipelines-bcloud.md)]
+[!INCLUDE [temp](../security/includes/pipelines-cloud.md)]
 
 
 ## Related articles 
