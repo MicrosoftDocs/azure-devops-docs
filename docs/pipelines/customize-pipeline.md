@@ -77,7 +77,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "macos-10.13"
+      vmImage: "macos-latest"
     ```
     
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
@@ -122,7 +122,7 @@ You can build and test your project on multiple platforms. One way to do it is w
         linux:
           imageName: "ubuntu-16.04"
         mac:
-          imageName: "macos-10.13"
+          imageName: "macos-10.14"
         windows:
           imageName: "vs2017-win2016"
       maxParallel: 3

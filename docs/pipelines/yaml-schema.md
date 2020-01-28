@@ -721,7 +721,7 @@ stages:
     - script: npm test -- --file=${{ parameters.testFile }}
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.13
+      vmImage: macos-10.14
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
@@ -796,7 +796,7 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.13'
+      vmImage: 'macOS-10.14'
 
 - template: jobs/build.yml  # Template reference
   parameters:
@@ -853,7 +853,7 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - template: steps/build.yml # Template reference
 
