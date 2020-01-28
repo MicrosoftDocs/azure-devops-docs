@@ -171,7 +171,7 @@ jobs:
 
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
@@ -265,7 +265,7 @@ jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: macOS
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:

@@ -163,7 +163,7 @@ strategy:
     win:
       vm: vs2017-win2016
     mac:
-      vm: macos-10.13
+      vm: macos-10.14
     linux:
       vm: ubuntu-16.04
 
