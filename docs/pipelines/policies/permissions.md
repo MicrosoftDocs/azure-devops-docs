@@ -27,9 +27,42 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 ## Default permissions assigned to built-in security groups
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
+Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../organizations/security/includes/build-release.md)]
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+
+::: moniker-end  
+  
+::: moniker range=">= azure-devops-2019"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
+
+### Task groups  
+
+[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/build.md)]
+
+### Release  
+
+[!INCLUDE [temp](../../organizations/security/includes/release.md)]
+
+::: moniker-end    
 
 ## Security of agents and library entities
 
@@ -73,7 +106,7 @@ The following permissions are defined for pipelines. All of these can be set at 
 > | **Manage build qualities** | _Only applies to XAML builds_ |
 > | **Manage build queue** | _Only applies to XAML builds_ |
 
-<p />
+
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
 <strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
@@ -141,6 +174,7 @@ are denied all permissions except <strong>View release pipeline</strong> and
 <strong>View releases</strong>.
 
 ## Task group permissions
+
 Task group permissions follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group pipeline.
