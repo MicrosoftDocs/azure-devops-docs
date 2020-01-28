@@ -50,7 +50,7 @@ To learn more, see [Clean the local repo on the agent](../repos/pipeline-options
 
 # [YAML](#tab/yaml)
 
-In YAML, you must explicitly map System.AccessToken into the pipeline using a
+In YAML, you must explicitly map `System.AccessToken` into the pipeline using a
 variable. You can do this at the step or task level:
 
 ```yaml
@@ -62,6 +62,8 @@ steps:
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
 
 # [Classic](#tab/classic)
 
