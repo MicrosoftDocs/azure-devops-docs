@@ -795,10 +795,10 @@ If you can build your project on your development machine but are having trouble
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
 
-* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool**](#use-a-specific-version of-node-js) task instead.
+* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
 (`nvm` is installed for historical reasons on the macOS image.)
 `nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
-The **Node Tool** task handles this model correctly.
+The **Node Tool Installer** task handles this model correctly.
 However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
 ```yaml
 steps:
