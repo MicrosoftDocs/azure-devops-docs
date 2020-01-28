@@ -1087,7 +1087,7 @@ The Scrum process specifies the following `TypeField` elements. If any of these 
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
     <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-    <TypeField refname=" Microsoft.VSTS.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.VSTS.Common.BacklogPriority" type="Order" />
     <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
     <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
     <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />
