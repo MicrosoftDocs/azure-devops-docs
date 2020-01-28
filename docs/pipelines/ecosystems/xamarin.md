@@ -43,7 +43,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xamarin
 pool:
-  vmImage: 'macOS-10.13' # For Windows, use 'vs2017-win2016'
+  vmImage: 'macOS-10.14' # For Windows, use 'vs2017-win2016'
 ```
 
 ## Build a Xamarin.Android app
@@ -174,7 +174,7 @@ jobs:
 
 - job: iOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   variables:
     buildConfiguration: 'Release'
   steps:
