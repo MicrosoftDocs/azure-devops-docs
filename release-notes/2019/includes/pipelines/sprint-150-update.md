@@ -124,7 +124,7 @@ vmImage: 'macOS-10.14'
 * Image label that will specifically target mac OS 10.3 if you want to be sure your pipeline runs against High Sierra
 
 ```yaml
-vmImage: 'macOS-10.13'
+vmImage: 'macOS-10.14'
 ```
 
 We also made updates to the Windows Server 2019 image for your Hosted Azure Pipelines. The latest releases can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/releases). This update includes new versions of the VS2019 Preview, Docker, PowerShell Core, Node.js, npm, and others.
