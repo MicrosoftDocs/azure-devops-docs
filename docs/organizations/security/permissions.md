@@ -1759,12 +1759,10 @@ The following permissions are defined in Build. All of these can be set at both 
         <td id="destroy-builds-permission">Destroy builds</td>
         <td>Can permanently delete a completed build.</td>
     </tr>
-
     <tr>
         <td id="edit-build-pipeline-permission">Edit build pipeline</td>
         <td>Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. </td>
     </tr>
-
     <tr>
 	<a id="edit-build-pipeline-permission" />
         <td id="edit-build-definition-permission">Edit build pipeline</br>Edit build definition</td>
