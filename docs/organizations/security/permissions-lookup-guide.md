@@ -196,7 +196,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li>Secure files (Object, Role)</li>
+<li><a href="../../pipelines/policies/set-permissions.md">Secure files (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md">Shelvesets, TFVC (Collection)</a></li>
@@ -438,7 +438,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>S</h3>
 <ul>
-<li>Secure files (Object, Role)</li>
+<li><a href="../../pipelines/policies/set-permissions.md">Secure files (Object, Role)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Service endpoints (Collection, Role)</a></li>
 <li><a href="../../service-hooks/overview.md#subscription-permissions">Service hooks</a></li>
 <li><a href="set-project-collection-level-permissions.md">Shelvesets, TFVC (Collection)</a></li>
