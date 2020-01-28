@@ -1085,7 +1085,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
 
 ### Container resource
 
