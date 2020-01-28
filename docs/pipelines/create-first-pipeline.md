@@ -947,7 +947,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 <a name="next-steps"></a>
 
@@ -966,6 +966,10 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [Java](ecosystems/java.md) | Gradle |
 | [JavaScript](ecosystems/javascript.md) | Node.js |
 | [Xcode](ecosystems/xcode.md) | Xcode |
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ## Q & A
 
