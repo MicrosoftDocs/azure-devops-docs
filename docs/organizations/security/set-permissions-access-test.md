@@ -103,7 +103,7 @@ You must be a member of the Project Administrators group or have the [**Delete t
 
 You must be a member of the Project Administrators group or have the [**Delete test runs** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Basic+Test Plans or Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
-For more information, see [Delete test artifacts](../..boards/backlogs/delete-test-artifacts.md). 
+For more information, see [Delete test artifacts](../../boards/backlogs/delete-test-artifacts.md). 
 
 As a project admin you can grant a user, team group, or other group you've created to have these permissions. Open the Security page for the project and choose the user or group you want to grant permissions. (To learn how to access project-level **Security**, see [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).)
 

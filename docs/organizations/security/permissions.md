@@ -279,7 +279,7 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="< azure-devops"
 
 ## Server-level groups 
 

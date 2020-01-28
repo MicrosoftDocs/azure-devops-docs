@@ -209,6 +209,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end    
 
+<a id= "project-level" />
+
 ## Change the permission level for a project-level group 
 
 ::: moniker range="azure-devops"
