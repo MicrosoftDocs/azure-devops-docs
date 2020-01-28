@@ -3006,7 +3006,7 @@ There are no UI permissions associated with [managing email notifications or ale
 You can manage alert permissions using [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd).
 
 > [!div class="mx-tdBreakAll"]  
-> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
+> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators &<<br/>Project Collection Service Accounts|
 > |---|---|---|:---:|
 > |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](media/checkmark.png)|
 > |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](media/checkmark.png)|
