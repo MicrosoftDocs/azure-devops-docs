@@ -9,7 +9,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 11/05/2019
+ms.date: 01/28/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -28,18 +28,12 @@ Learn more about [working with variables](../process/variables.md).
 > [!NOTE]
 > You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
 
-## Build.Clean 
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
-::: moniker range="> tfs-2017"
+## Build.Cleanup
 
-This is a deprecated variable that modifies how the build agent cleans up source.
-To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
+Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
 
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <= tfs-2017"
-
-This variable modifies how the build agent cleans up source.
 To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
 
 ::: moniker-end
