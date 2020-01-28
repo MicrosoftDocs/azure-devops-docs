@@ -61,7 +61,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md">backlog</a> and <a href="../../boards/sprints/scrum-overview.md">sprint planning</a> tools</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -73,7 +73,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
+<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md">Kanban board</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -118,7 +118,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md"> manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -286,13 +286,13 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to<a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md">query charts</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>

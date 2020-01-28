@@ -283,12 +283,105 @@ SharePoint Web Application Services
 
 ## Server-level groups 
 
-When you install Azure DevOps Server or TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
+When you install Azure DevOps Server, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-20191.1.png) 
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 ![ADMIN_GROUPS_PERMISSIONS](media/permissions/server-groups-and-permissions.png)
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 You can't remove or delete the default server level groups.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr valign="top">
+        <th width="20%">Group name</th>
+        <th width="30%">Permissions</th>
+        <th width="50%">Membership</th>
+    </tr>
+    <tr>
+        <td>Azure DevOps Service Accounts</td>
+        <td><p>Has service-level permissions for the server instance.</p></td>
+        <td>
+            <p>
+                Contains the service account that was supplied during installation
+            </p>
+            <p>
+                This group should contain only service accounts
+                and not user accounts or groups that contain user accounts.
+                By default, this group is a member of <strong>Team Foundation Administrators</strong>.
+            </p>
+            <p>
+                If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
+                the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
+                The command to do this is <code>TFSSecurity /g+ &quot;[TEAM FOUNDATION]\Team Foundation Service Accounts&quot; n:domain\username /server:http(s)://tfsservername</code>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>Azure DevOps Valid Users</td>
+        <td>
+            Has permission to view server instance-level information.
+            <blockquote>
+                If you set the <strong>View instance-level information</strong>
+                permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+                no users will be able to access the deployment.
+            </blockquote>
+        </td>
+        <td>
+            Contains all users known to exist in the server instance.
+            You can&#39;t modify the membership of this group.
+        </td>
+    </tr>
+    <tr>
+        <td>Team Foundation Administrators</td>
+        <td>
+            Has permissions to perform all server-level operations.
+        </td>
+        <td>
+            <p>
+                <strong>Local Administrators</strong> group (BUILTIN\Administrators)
+                for any server that hosts Azure DevOPs/Team Foundation application services.
+            </p>
+            <p>
+                <em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
+                and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
+            </p>
+            <p>
+                This group should be restricted to the smallest possible number of users
+                who need total administrative control over server-level operations.
+            </p>
+            <blockquote>
+                If your deployment uses SharePoint or Reporting,
+                consider <a href="/azure/devops/server/admin/add-administrator" data-raw-source="[adding the members of this group](/azure/devops/server/admin/add-administrator)">adding the members of this group</a>
+                to the Farm Administrators and Site Collection Administrators groups in SharePoint
+                and the Team Foundation Content Managers groups in Reporting Services.
+            </blockquote>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -403,6 +496,10 @@ You can't remove or delete the default server level groups.
     </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 > The full name of each of these groups is **[Team Foundation]\\{group name}**.
 > So the full name of the server level administrators group is
@@ -693,11 +790,15 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Server-level permissions 
 
 You manage server-level permissions through the [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
+
+
+> [!div class="mx-imgBorder"]  
+> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-20191.1.png) 
 
 
 <table valign="top" width="100%">
@@ -775,7 +876,7 @@ You manage server-level permissions through the [Team Foundation Administration 
     <tr>
         <td id="use-full-web-access-features-permission">Use full Web Access features</td>
         <td>
-            Can use all on-premises Web portal features.
+            Can use all on-premises Web portal features. This permission has been deprecated with Azure DevOps Server 2019 and later versions. 
             <blockquote>
                 If the <strong>Use full Web Access</strong> features permission is set to Deny, the user will only see
                 those features permitted for the <strong>Stakeholder</strong> group
