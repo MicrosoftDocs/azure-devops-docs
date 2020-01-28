@@ -58,7 +58,7 @@ ms.topic: include
 <tr>
 <td>Agent.TempDirectory</td>
 <td>
-A temporary folder that is cleaned after each pipeline run. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.
+A temporary folder that is cleaned after each pipeline job. This directory is used by tasks such as <a href="/azure/devops/pipelines/tasks/build/dotnet-core-cli">.NET Core CLI task</a> to hold temporary items like test results before they are published.
 </td>
 </tr>
 
