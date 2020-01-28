@@ -244,7 +244,7 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 ### Task groups  
 
-You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. Task group permissions follow a hierarchical model. You can set defaults for all  permissions at the project-level and over-write on an individual task group pipeline. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab in **Azure Pipelines**.
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. Task group permissions follow a hierarchical model. You can set defaults for all  permissions at the project-level and over-write on an individual task group pipeline. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab in **Azure Pipelines**.
 
 [!INCLUDE [temp](includes/task-groups.md)]
 

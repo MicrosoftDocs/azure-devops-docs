@@ -142,9 +142,9 @@ To learn how to add users to a group or set a specific permission that you can m
 <ul>
 <li>
 <li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<a href=&quot;set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
+<a href="set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href=&quot;../settings/add-team-administrator.md>Make a user a team admin</a></li>
+<li><a href="../settings/add-team-administrator.md>Make a user a team admin</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>
@@ -334,7 +334,7 @@ You can't remove or delete the default server level groups.
             <p>
                 If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
                 the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
-                The command to do this is <code>TFSSecurity /g+ &quot;[TEAM FOUNDATION]\Team Foundation Service Accounts&quot; n:domain\username /server:http(s)://tfsservername</code>
+                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
             </p>
         </td>
     </tr>
@@ -448,7 +448,7 @@ You can't remove or delete the default server level groups.
             <p>
                 If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
                 the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
-                The command to do this is <code>TFSSecurity /g+ &quot;[TEAM FOUNDATION]\Team Foundation Service Accounts&quot; n:domain\username /server:http(s)://tfsservername</code>
+                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
             </p>
         </td>
     </tr>
@@ -1423,7 +1423,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
         <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
     </tr>
     <tr>
@@ -1442,8 +1442,8 @@ You manage project-level permissions from the [web portal admin context](set-pro
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
@@ -1531,8 +1531,8 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
@@ -1673,8 +1673,8 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
