@@ -55,7 +55,7 @@ variable. You can do this at the step or task level:
 
 ```yaml
 steps:
-  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+ - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
   - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
