@@ -1,39 +1,39 @@
 ---
-title: Release and pipelines events available in the audit logs - Sprint 163 Update
+title: Improved pipelines security with read-only variables
 author: gloridelmorales
 ms.author: glmorale
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.date: 01/13/2020
-description: In the **Sprint 163 Update** of Azure DevOps, we've added release and pipelines events to the audit logs..
+ms.date: 01/28/2020
+description: In the **Sprint 164 Update** of Azure DevOps, we are improving pipelines security with read-only variables.
 ---
 
-# Release and pipelines events available in the audit logs - Sprint 163 Update
+# Improved pipelines security with read-only variables
 
-In the **Sprint 163 Update** of Azure DevOps, we've added release and pipelines events to the audit logs. In addition, you can now use service connections to reference repositories in another organization in a YAML pipeline. 
+With this update, we are improving pipelines security with read-only variables. In addition, you can now define output variables in your tasks within any lifecycle hook of a deployment job and consume it in downstream steps and jobs within the same stage. 
 
-Check out the [Features](#features) list below for more.
+Check out the [Features](#features) list below for details.
 
 ## Features
 
 ### General:
 
-[!INCLUDE [sprint-163-update-links](includes/general/sprint-163-update-links.md)]
+[!INCLUDE [sprint-164-update-links](includes/general/sprint-164-update-links.md)]
 
 ### Azure Pipelines:
 
 > [!NOTE]
 > Installing .NET 4.6.2 or higher is required for VSTest task to work properly on build agents.
 
-[!INCLUDE [sprint-163-update-links](includes/pipelines/sprint-163-update-links.md)]
+[!INCLUDE [sprint-164-update-links](includes/pipelines/sprint-164-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-163-update](includes/general/sprint-163-update.md)]
+[!INCLUDE [sprint-164-update](includes/general/sprint-164-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-163-update](includes/pipelines/sprint-163-update.md)]
+[!INCLUDE [sprint-164-update](includes/pipelines/sprint-164-update.md)]
 
 ## Next steps
 
@@ -56,4 +56,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-163](includes/signer/sprint-163.md)]
+[!INCLUDE [sprint-164](includes/signer/sprint-164.md)]
