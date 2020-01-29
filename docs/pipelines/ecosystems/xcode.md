@@ -41,7 +41,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 ```
 
 ## Build an app with Xcode

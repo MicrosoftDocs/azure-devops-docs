@@ -36,6 +36,8 @@
     href: access-levels.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Active Directory groups 
     href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Security key concepts
+    href: security-glossary.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Add users to Azure DevOps Services
@@ -127,7 +129,6 @@
       href: credential-storage.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json 
   - name: TFSSecurity command
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Security glossary 
-    href: security-glossary.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+
 
 
