@@ -23,7 +23,9 @@
     href: /azure/devops/organizations/settings/manage-authorizations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Organizations
   items:
-  - name: About organizations
+  - name: About organization management
+    href: /azure/devops/organizations/accounts/organization-management?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: Plan your organization structure
     href:  /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Overview settings
     items:

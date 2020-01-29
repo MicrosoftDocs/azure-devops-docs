@@ -58,6 +58,7 @@ Make sure the new owner has completed the following tasks:
 ## Related articles
 
 - [Need help?](faq-change-organization-ownership.md)
+- [Assign a new owner to your orphaned organization](resolve-orphaned-organization.md)
 - [Change organization location](change-organization-location.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
 
