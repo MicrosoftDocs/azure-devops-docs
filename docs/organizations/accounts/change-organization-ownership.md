@@ -41,17 +41,17 @@ Make sure the new owner has completed the following tasks:
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
+	![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**, and then **Change owner**.  
+1. Select **Overview**, and then **Change owner**.  
 
-   ![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
+	![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
 
-4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
+1. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-   ![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
+	![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
 
    Your organization has a new owner.
 
