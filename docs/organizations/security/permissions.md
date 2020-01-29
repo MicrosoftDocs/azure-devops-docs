@@ -293,7 +293,7 @@ When you install Azure DevOps Server, the system creates default groups that hav
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-20191.1.png) 
+> ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-2019-update1.png) 
 
 ::: moniker-end
 
@@ -801,7 +801,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 
 > [!div class="mx-imgBorder"]  
-> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-20191.1.png) 
+> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-2019-update-1.png) 
 
 
 <table valign="top" width="100%">
