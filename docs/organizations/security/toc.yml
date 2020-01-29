@@ -48,8 +48,10 @@
     href: export-users-audit-log.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json   
   - name: Set permissions for an object or role
     items: 
-    - name: Set dashboard permissions
-      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Set work tracking and plan permissions 
+      href: set-permissions-access-work-tracking.md
+    - name: Set permissions and access for testing
+      href: set-permissions-access-test.md
     - name: Set Git branch permissions
       href: ../../repos/git/branch-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set pipeline permissions
@@ -58,10 +60,10 @@
       href: provide-stakeholder-pipeline-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set package feed permissions
       href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Set dashboard permissions
+      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set Wiki permissions
       href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-    - name: Set work tracking and plan permissions 
-      href: set-permissions-access-work-tracking.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set feedback permissions
       href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set permissions to manage extensions
