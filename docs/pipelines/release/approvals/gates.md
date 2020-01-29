@@ -83,7 +83,7 @@ The evaluation options that apply to all the gates you've added are:
   For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
   This saves the system from evaluating the gate functions if the release is rejected by the user.
   For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
- This ensures the approvers have all the information required to sign off.
+ This ensures the approvers have all the information required to approve.
    
 For information about viewing gate results and logs, see
 [View the logs for approvals](../deploy-using-approvals.md#view-approvals) and
