@@ -17,9 +17,7 @@ ms.date: 12/04/2018
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-The Microsoft Security glossary is a short dictionary of terms used in authenticating users and managing permissions for Azure DevOps.
-
-
+This article provides definitions for select terms used to manage authentication and permissions for Azure DevOps.
  
 ## Access control entries (ACE)
 
@@ -28,8 +26,6 @@ An access control entry is an entry in an access control list (ACL) that grants 
 ## Access control list (ACL)
 
 An access-control list is a list of permissions attached to an Azure DevOps object, such as . An ACL specifies which users or system processes can view, create, modify, delete, or otherwise manage objects. You can manage ACLs and ACEs with the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions).
-
-
 
 ## Access level
 
