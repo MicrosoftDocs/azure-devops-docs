@@ -22,6 +22,9 @@ Check out the [Features](#features) list below for more.
 
 ### Azure Pipelines:
 
+> [!NOTE]
+> Installing .NET 4.6.2 or higher is required for VSTest task to work properly on build agents.
+
 [!INCLUDE [sprint-163-update-links](includes/pipelines/sprint-163-update-links.md)]
 
 ## General
