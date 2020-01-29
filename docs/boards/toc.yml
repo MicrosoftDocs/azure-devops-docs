@@ -32,7 +32,7 @@
   - name: Choose a process
     href: work-items/guidance/choose-process.md
   - name: Manage process templates
-    href: guidance/manage-process-templates.md
+    href: work-items/guidance/manage-process-templates.md
   - name: Agile process guidance
     href: work-items/guidance/agile-process.md
   - name: Agile workflow
