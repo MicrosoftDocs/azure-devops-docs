@@ -264,7 +264,7 @@
       href: apps/cd/deploy-docker-webapp.md
     - name: Azure Kubernetes Service (Classic)
       href: apps/cd/deploy-aks.md
-    - name: IoT edge (Classic)
+    - name: Azure IoT Edge (Classic)
       href: release/deploy-iot-using-azure-pipelines.md
     - name: Azure Cosmos DB CI/CD (Classic)
       href: targets/cosmos-db.md
@@ -641,7 +641,7 @@
       href: tasks/deploy/sql-azure-dacpac-deployment.md
     - name: Azure Web App
       href: tasks/deploy/azure-rm-web-app.md
-    - name: Azure VM Scale Set Deployment
+    - name: Azure virtual machine scale set deployment
       href: tasks/deploy/azure-vmss-deployment.md
     - name: Azure Web App for Container
       href: tasks/deploy/azure-rm-web-app-containers.md

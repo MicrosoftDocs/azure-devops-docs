@@ -129,7 +129,7 @@ ms.topic: include
 | ![icon](../deploy/media/azure-powershell-icon.png) [Azure PowerShell task](../deploy/azure-powershell.md) - Run a PowerShell script within an Azure environment | Azure Pipelines |
 | ![icon](../deploy/media/azure-resource-group-deployment-icon.png) [Azure Resource Group Deployment task](../deploy/azure-resource-group-deployment.md) - Deploy, start, stop, or delete Azure Resource Groups | Azure Pipelines |
 | ![icon](../deploy/media/sqlazuredacpacdeployment.png) [Azure SQL Database Deployment task](../deploy/sql-azure-dacpac-deployment.md) - Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD | Azure Pipelines |
-| ![icon](../deploy/media/azurevmssdeployment.png) [Azure VM Scale Set Deployment task](../deploy/azure-vmss-deployment.md) - Deploy Virtual Machine scale set image | Azure Pipelines |
+| ![icon](../deploy/media/azurevmssdeployment.png) [Azure virtual machine scale set deployment task](../deploy/azure-vmss-deployment.md) - Deploy virtual machine scale set image | Azure Pipelines |
 | ![icon](../deploy/media/azure-rm-web-app-containers.png) [Azure Web App for Container task](../deploy/azure-rm-web-app-containers.md) - Deploy Web Apps, Functions, and WebJobs to Azure App Services | Azure Pipelines |
 | ![icon](../deploy/media/azure-rm-web-app.png) [Azure Web App task](../deploy/azure-rm-web-app.md) - The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs. | Azure Pipelines |
 | ![icon](../deploy/media/packerbuild.png) [Build Machine Image task](../deploy/packer-build.md) - Build a machine image using Packer to use for Azure Virtual machine scale set deployment | Azure Pipelines |
