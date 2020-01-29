@@ -26,6 +26,10 @@ You must have *Azure DevOps Administrator* permissions in the [Azure portal](htt
 
 ## Transfer to new owner
 
+> [!div class="mx-imgBorder"]  
+> ![Change owner dialog](media/resolve-org-owner/change-owner-dialog.png)
+
+
 ### When you have an Azure DevOps Administrator
 
 When your Azure AD tenant has an assigned Azure DevOps Administrator, complete the following steps.
