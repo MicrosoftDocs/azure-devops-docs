@@ -225,38 +225,50 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+
+[!INCLUDE [temp](includes/pipelines-cloud.md)]
+
+::: moniker-end  
+  
+::: moniker range="azure-devops-2019"
+
+### Build  
+
+[!INCLUDE [temp](includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](includes/pipelines-release.md)]
+
+### Task groups  
+
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. Task group permissions follow a hierarchical model. You can set defaults for all  permissions at the project-level and over-write on an individual task group pipeline. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab in **Azure Pipelines**.
+
+[!INCLUDE [temp](includes/task-groups.md)]
+
+::: moniker-end   
+
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 ## Build and Release
 
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
-::: moniker-end
 
-::: moniker range=">= tfs-2015"  
+### Build  
 
-From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+[!INCLUDE [temp](includes/build.md)]
 
-::: moniker-end
+### Release  
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
-
-::: moniker-end  
-  
-::: moniker range="azure-devops"
-
-[!INCLUDE [temp](includes/pipelines.md)]
+[!INCLUDE [temp](includes/release.md)]
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
-
-[!INCLUDE [temp](includes/build-release.md)]
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
