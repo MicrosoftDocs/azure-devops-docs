@@ -37,13 +37,13 @@ For organizations connected to Azure Active Directory (Azure AD), if your organi
 
 If you don't know who the Azure DevOps Administrator is for your organization, you can determine who it is by following these steps. 
 
-1. To find your Azure DevOps Administrator, navigate to the [Azure portal](https://portal.azure.com/), as described [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
+1. To find your Azure DevOps Administrator, navigate to the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
 2. The Azure DevOps Administrator can then follow the instructions below to claim ownership of the target Azure DevOps organization.  
 
 ## When your company doesn't have an Azure DevOps Administrator
 
 When your Azure AD tenant hasn't assigned a Azure DevOps Administrator, complete the following steps:  
-1. Find your Azure AD Global Administrator or Privileged Role Administrator. These administrators can be found in the [Azure portal](https://portal.azure.com/), as described [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).  To learn more about Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
+1. Find your Azure AD Global Administrator or Privileged Role Administrator. These administrators can be found in the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
 2. Ask the Azure AD Global Administrator or Privileged Role Administrator to assign the Azure DevOps Administrator role to the appropriate user(s). 
 
 	> [!NOTE]   
