@@ -1,6 +1,6 @@
 ---
-title: Azure VM Scale Set Deployment task
-description: Deploy Virtual Machine scale set image
+title: Azure VM scale set Deployment task
+description: Deploy virtual machine scale set image
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,7 @@ ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
 
-# Azure VM Scale Set Deployment task
+# Azure VM scale set Deployment task
 
 **Azure Pipelines**
 
