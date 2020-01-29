@@ -57,18 +57,20 @@ When your Azure AD tenant hasn't assigned a Azure DevOps Administrator, complete
 
 1. Select **Organization settings**.
 
-> [!div class="mx-imgBorder"]  
-> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 1. Choose **Overview**, and then the **Change owner** link that appears in the yellow message bar. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Change owner dialog](media/resolve-org-owner/warning-orphan-ownership.png)
 
-1. Select a user from the dropdown menu, or search for a user by entering the user's name, and then choose **Change**. You are required to provide a short justification. All Azure DevOps Administrators in your Azure Active Directory will receive a notification of the ownership transfer with your provided justification.  
+1. Select a user from the dropdown menu, or search for a user by entering the user's name. Enter a short justification, which is required, and then choose **Change**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Change owner dialog](media/resolve-org-owner/change-owner-dialog.png)  
+	> ![Change owner dialog](media/resolve-org-owner/change-owner-dialog.png) 
+
+	A notification of the ownership transfer with your provided justification is then sent to all Azure DevOps Administrators in your Azure Active Directory.  
 
 ## Related articles
 
