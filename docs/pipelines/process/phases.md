@@ -357,7 +357,7 @@ jobs:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - script: echo hello from macOS
 - job: Linux

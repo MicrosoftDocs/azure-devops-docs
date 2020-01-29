@@ -199,7 +199,7 @@ keyword. For example, to select a macOS build:
 
 ``` yaml
 pool:
-  vmimage: macOS-10.13
+  vmimage: macOS-10.14
 ```
 
 Additionally, you can specify a `container` and specify a docker image
