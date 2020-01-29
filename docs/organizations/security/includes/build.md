@@ -2,7 +2,8 @@
 ms.topic: include
 ---
 
-<!--- Azure DevOps Server and TFS version only -->
+<!--- TFS version only build-->
+
 
 <table>
 <tr valign="bottom">
@@ -12,88 +13,25 @@ ms.topic: include
 <th>Contributors</th>
 <th>Build<br/>Admins</th>
 <th>Project Admins</th>
-<th>Release Admins</th>
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View build and release pipelines 
+<td align="left">View builds
 </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Define builds with continuous integration
+<td align="left">View build definition 
 </td>
 <td>  </td>
-<td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-<tr>
-<td align="left">Define releases and manage deployments
-</td>
-<td>  </td>
-<td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Approve releases
-</td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Azure Artifacts (5 users free)
-</td>
-<td>  </td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Queue builds, edit build quality
-</td>
-<td>  </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-<tr>
-<td align="left">Manage build queues and build qualities
-</td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
-</tr>
-<tr>
-<td align="left">Manage build retention policies, delete and destroy builds
-</td>
-<td>  </td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
 </tr>
 <tr>
 <td align="left">Administer build permissions
@@ -103,32 +41,10 @@ ms.topic: include
 <td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td>  </td>
 </tr>
 <tr>
-<td align="left">Manage release permissions
+<td align="left">Delete or Edit build definitions 
 </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Create and edit task groups 
-</td>
-<td>  </td>
-<td>  </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left">Manage task group permissions
-</td>
-<td>  </td>
 <td>  </td>
 <td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -136,23 +52,84 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Can view library items such as variable groups 
+<td align="left">Delete or Destroy builds
 </td>
+<td>  </td>
+<td>  </td>
 <td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Edit build quality 
+</td>
+<td>  </td>
+<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Use and manage library items such as variable groups 
+<td align="left">Manage build qualities
 </td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Manage build queue
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Override check-in validation by build
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Queue builds
+</td>
+<td>  </td>
+<td>  </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Retain indefinitely
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Stop builds
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Update build information
+</td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+<td>  </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>

@@ -2,7 +2,27 @@
 ms.topic: include
 ---
 
-<!--- Updated to support Azure DevOps Services Pipelines only -->
+<!--- Updated to support Azure DevOps Services + Azure DevOps Services Build and Release 
+
+Administer build permissions
+Delete build pipeline
+Delete builds
+Destroy builds
+Edit build pipeline
+Edit build quality
+Manage build qualities
+Manage build queue
+Override check-in validation by build
+Queue builds
+Retain indefinitely
+Stop builds
+Update build information
+
+View build pipeline
+View builds
+
+
+-->
 
 <table>
 <tr valign="bottom">
@@ -156,7 +176,5 @@ ms.topic: include
 </tr>
 </tbody>
 </table>
-
-
-
-
+ 
+ 
