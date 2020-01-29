@@ -12219,6 +12219,11 @@
       "source_path": "docs/pipelines/tasks/utility/azure-policy.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-policy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/alerts-and-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications?view=tfs-2015",
+      "redirect_document_id": false
     }
   ]
 }

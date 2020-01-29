@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
@@ -161,7 +161,7 @@ The deployment job uses the _Kubernetes manifest task_ to create the `imagePullS
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
-    environment: 'shashankbarsinpipelinesjavascriptdocker.aksnamespace'
+    environment: 'azooinmyluggagepipelinesjavascriptdocker.aksnamespace'
     strategy:
       runOnce:
         deploy:

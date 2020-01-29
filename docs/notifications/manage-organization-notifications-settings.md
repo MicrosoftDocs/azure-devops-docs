@@ -17,14 +17,13 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
-> [!NOTE]  
-> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) for team members to see the Notifications option from their organization menu and to receive notifications.
-
 Choose to allow or block delivery of emails for all subscriptions owned by a team or a group. It's a default setting which applies only if the team or group hasn't explicitly set the option.
+
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ## Manage the default delivery setting
 
-1. [Navigate to the organization notifications settings page](navigating-the-ui.md#navigating-to-the-organization-level-notifications-page).
+1. [Open organization notifications settings](navigating-the-ui.md#open-org-level).
 2. Select the **Settings** tab.
 3. Configure the default the delivery setting.
 

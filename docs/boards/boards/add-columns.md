@@ -90,7 +90,7 @@ Also, to handoff work to another team member, simply reassign it directly from t
 
 ![Kanban board, assign item](media/ALM_AC_Reassign.png)
 
-And, team members receiving the handoff can [set alerts](../queries/alerts-and-notifications.md) to receive immediate email notifications of their newly assigned work. 
+And, team members receiving the handoff can [set alerts](../../notifications/manage-your-personal-notifications.md) to receive immediate email notifications of their newly assigned work. 
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 

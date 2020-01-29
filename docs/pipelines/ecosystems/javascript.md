@@ -10,7 +10,7 @@ author: juliakm
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019
-ms.date: 10/30/2019
+ms.date: 01/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -164,7 +164,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.14', 'vs2017-win2016'
 ```
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process.
@@ -794,6 +794,30 @@ If you can build your project on your development machine but are having trouble
   networking problems between the Azure datacenter and the registry. These factors are not under our control, and you might
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
+
+* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
+(`nvm` is installed for historical reasons on the macOS image.)
+`nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
+The **Node Tool Installer** task handles this model correctly.
+However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
+```yaml
+steps:
+- script: |
+    NODE_VERSION=12  # or whatever your preferred version is
+    npm config delete prefix  # avoid a warning
+    . ${NVM_DIR}/nvm.sh
+    nvm use ${NODE_VERSION}
+    nvm alias default ${NODE_VERSION}
+    VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
+    echo "##vso[task.prependPath]$VERSION_PATH"
+```
+Then `node` and other command line tools will work for the rest of the pipeline job.
+In each step where you need to use the `nvm` command, you'll need to start the script with:
+```yaml
+- script: |
+    . ${NVM_DIR}/nvm.sh
+    nvm <command>
+```
 
 ## Q&A
 
