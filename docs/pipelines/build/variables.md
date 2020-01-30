@@ -9,7 +9,7 @@ ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 01/28/2020
+ms.date: 11/05/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -27,6 +27,22 @@ Learn more about [working with variables](../process/variables.md).
 
 > [!NOTE]
 > You can use [release variables](../release/variables.md) in your deploy tasks to share the common information (e.g. — Environment Name, Resource Group, etc)
+
+## Build.Clean 
+
+::: moniker range="> tfs-2017"
+
+This is a deprecated variable that modifies how the build agent cleans up source.
+To learn how to clean up source, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2017"
+
+This variable modifies how the build agent cleans up source.
+To learn more, see [Clean the local repo on the agent](../repos/pipeline-options-for-git.md#clean-the-local-repo-on-the-agent).
+
+::: moniker-end
 
 <h2 id="systemaccesstoken">System.AccessToken</h2>
 
