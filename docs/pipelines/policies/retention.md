@@ -263,6 +263,11 @@ for the associated build will determine when that build is deleted.
 
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
+
+## Artifact retention
+
+When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool as the cleanup agents. Only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
+
 ::: moniker-end
 
 ## Q&A
