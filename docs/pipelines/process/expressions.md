@@ -258,6 +258,27 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ::: moniker-end
 
+### if 
+* Conditionally assign the value of a variable
+* Conditionally set inputs 
+* Only works with template syntax. See [conditional insertion](templates.md#conditional-insertion) 
+
+#### Conditionally assign a variable
+```yml
+variables:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    stageName: prod
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo ${{variables.stageName}}
+```
+
+#### Conditionally set a task input
+
+
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter
 * Min parameters: 2. Max parameters: 2
