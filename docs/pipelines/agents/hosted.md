@@ -25,15 +25,6 @@ monikerRange: azure-devops
 
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers several virtual machine images to choose from, each including a broad range of tools and software.
 
-> [!IMPORTANT]
-> On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
->
-> - Windows Server 2012R2 with Visual Studio 2015 (vs2015-win2012r2)
-> - macOS X High Sierra 10.13 (macOS-10.13)
-> - Windows Server Core 1803 (win1803)
->
-> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
-
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
 | Windows Server 2019 with Visual Studio 2019 | *windows-2019* |  `windows-latest` OR `windows-2019` | [Link](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md)
@@ -42,9 +33,22 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
 
-> [!NOTE]
-> The previous `vs2015-win2012r2`, `macOS-10.13`, and `win1803` images are sunsetting in March 2020.
+> [!IMPORTANT]
+> On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
+>
+> - Windows Server 2012R2 with Visual Studio 2015 - `vs2015-win2012r2`
+> - macOS X High Sierra 10.13 - `macOS-10.13`
+> - Windows Server Core 1803 - `win1803`
+>
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
+>
+> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
+
+| Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
+| --- | --- | --- | --- |
+| Windows Server 2012 R2 with Visual Studio 2015 | *vs2015-win2012r2* |  `vs2015-win2012r2` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md)
+| Windows Server Core 1803 (*for running Windows containers*) | *win1803* |  `win1803` | [Link](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md)
+| macOS X High Sierra 10.13 | *macOS-10.13* |   `macOS-10.13` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md)
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
