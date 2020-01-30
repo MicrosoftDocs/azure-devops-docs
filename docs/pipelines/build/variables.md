@@ -34,18 +34,20 @@ Learn more about [working with variables](../process/variables.md).
 
 # [YAML](#tab/yaml)
 
-In YAML, you must explicitly map System.AccessToken into the pipeline using a
+In YAML, you must explicitly map `System.AccessToken` into the pipeline using a
 variable. You can do this at the step or task level:
 
 ```yaml
 steps:
-  - bash: echo This is a script that could use $SYSTEM_ACCESSTOKEN
+ - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
   - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 ```
+
+You can configure the default scope for `System.AccessToken` using [build job authorization scope](options.md#build-job-authorization-scope). 
 
 # [Classic](#tab/classic)
 
