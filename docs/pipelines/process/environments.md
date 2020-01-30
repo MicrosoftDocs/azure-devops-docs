@@ -146,8 +146,8 @@ You can control who can create, view, use and manage the environments with user 
 | Administrator | In addition to using the environment, members of this role can manage membership of all other roles for the environment in the project. Creators are added as members by default. |
 
 > [!NOTE]
-> In case auto created environments from YAML, contributors and project administrators will be granted **Administrator** role. Typically used in provisioning Dev/Test environments.
-> In case the environment is created from UI, only the creator will be granted the **Administrator** role. Hence it is reccommended to create protected environments such as production from UI.
+> - In case of auto created environments from YAML, contributors and project administrators will be granted **Administrator** role. Typically used in provisioning Dev/Test environments.
+> - In case the environment is created from UI, only the creator will be granted the **Administrator** role. Hence it is reccommended to create protected environments such as production from UI.
 
 ### Pipeline permissions
 
