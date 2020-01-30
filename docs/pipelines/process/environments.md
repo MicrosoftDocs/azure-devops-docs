@@ -132,12 +132,22 @@ The deployment history view within environments provides the following advantage
 ## Security
 
 ### User permissions
-
-Set appropriate user permissions to ensure that the users are pre-authorized to define a pipeline that targets the environment.
+You can control who can create, view, use and manage the environments with user permissions. You have four roles i.e. Creator (scope: all environments), Reader, User and Administrator roles to manage each of these actions. In the specific environment's **user permissions** panel, you can set the permissions which are inherited and you can override the roles for each environment. 
 
 -  Navigate to the specific **environment** that you would like to authorize. 
 -  Click on overflow menu button located at the top right part of the page next to "Add resource" and choose **Security** to view the settings.
 -  In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**. 
+
+| Role on an environment | Purpose |
+|------------------------------------|---------|
+| Creator | Global role, available from enviroments hub security option. Members of this role can create the environment in the project. Contributors are added as members by default. Not applicable for environments auto created from YAML pipeline.|
+| Reader | Members of this role can view the environment. |
+| User | Members of this role can use the environment when authoring yaml pipelines. |
+| Administrator | In addition to using the environment, members of this role can manage membership of all other roles for the environment in the project. Creators are added as members by default. |
+
+> [!NOTE]
+> In case auto created environments from YAML, contributors and project administrators will be granted **Administrator** role. Typically used in provisioning Dev/Test environments.
+> In case the environment is created from UI, only the creator will be granted the **Administrator** role. Hence it is reccommended to create protected environments such as production from UI.
 
 ### Pipeline permissions
 
