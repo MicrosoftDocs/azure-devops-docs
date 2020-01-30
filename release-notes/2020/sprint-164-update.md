@@ -8,7 +8,7 @@ ms.date: 01/28/2020
 description: In the **Sprint 164 Update** of Azure DevOps, we are improving pipelines security with read-only variables.
 ---
 
-# Improved pipelines security with read-only variables
+# Improved pipelines security with read-only variables - Sprint 164 Update
 
 With this update, we are improving pipelines security with read-only variables. In addition, you can now define output variables in your tasks within any lifecycle hook of a deployment job and consume it in downstream steps and jobs within the same stage. 
 
