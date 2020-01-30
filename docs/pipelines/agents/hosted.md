@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/28/2020
+ms.date: 01/30/2020
 monikerRange: azure-devops
 ---
 
@@ -24,6 +24,15 @@ monikerRange: azure-devops
 ## Use a Microsoft-hosted agent
 
 Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines** that offers several virtual machine images to choose from, each including a broad range of tools and software.
+
+> [!IMPORTANT]
+> On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
+>
+> - Windows Server 2012R2 with Visual Studio 2015 (vs2015-win2012r2)
+> - macOS X High Sierra 10.13 (macOS-10.13)
+> - Windows Server Core 1803 (win1803)
+>
+> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 | Image | Classic Editor Agent Specification | YAML VM Image Label | Included Software |
 | --- | --- | --- | --- |
