@@ -61,7 +61,12 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 #### nuget.exe
 ```YAML
 - task: NuGetAuthenticate@0
-- task: NuGetToolInstaller@1 # Optional if nuget.exe is already on the path
+  inputs:
+    nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
+- task: NuGetToolInstaller@1 # Optional if nuget.exe >= 4.8.5385 is already on the path
+  inputs:
+    versionSpec: '*'
+    checkLatest: true
 - script: nuget restore
 # ...
 - script: nuget push -ApiKey AzureArtifacts -Source "MyProjectFeed1" MyProject.*.nupkg
@@ -70,6 +75,8 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 #### dotnet
 ```YAML
 - task: NuGetAuthenticate@0
+  inputs:
+    nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
 - task: UseDotNet@2 # Optional if the .NET Core SDK is already installed
 - script: dotnet restore
 # ...
@@ -101,7 +108,10 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 - task: NuGetAuthenticate@0
   inputs:
     nuGetServiceConnections: OtherOrganizationFeedConnection, ThirdPartyRepositoryConnection
-- task: NuGetToolInstaller@1 # Optional if nuget.exe is already on the path
+- task: NuGetToolInstaller@1 # Optional if nuget.exe >= 4.8.5385 is already on the path
+  inputs:
+    versionSpec: '*'
+    checkLatest: true
 - script: nuget restore
 # ...
 - script: nuget push -ApiKey AzureArtifacts -Source "MyProjectFeed1" MyProject.*.nupkg
@@ -141,7 +151,7 @@ However, upgrading to the latest stable version is recommended if you encounter 
 
 ### I get "A task was canceled" errors during a package restore. What should I do?
 
-Known issues in NuGet and in the Azure Artifacts Credential Provider can cause this type of error.  
+Known issues in NuGet and in the Azure Artifacts Credential Provider can cause this type of error and updating to the latest nuget may help.  
 
 A [known issue](https://github.com/NuGet/Home/issues/8198) in some versions of nuget/dotnet can cause this error, especially during large restores on resource constrained machines. This issue is fixed in [NuGet 5.2](https://docs.microsoft.com/nuget/release-notes/nuget-5.2-rtm), as well as .NET Core SDK 2.1.80X and 2.2.40X. If you are using an older version, try upgrading your version of NuGet or dotnet. The [.NET Core Tool Installer](~/pipelines/tasks/tool/dotnet-core-tool-installer.md) task can be used to install a newer version of the .NET Core SDK.  
 
