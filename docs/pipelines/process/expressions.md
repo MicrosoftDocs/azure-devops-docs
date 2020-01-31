@@ -258,27 +258,6 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 
 ::: moniker-end
 
-### if 
-* Conditionally assign the value of a variable
-* Conditionally set inputs 
-* Only works with template syntax. See [conditional insertion](templates.md#conditional-insertion) 
-
-#### Conditionally assign a variable
-```yml
-variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    stageName: prod
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo ${{variables.stageName}}
-```
-
-#### Conditionally set a task input
-
-
 ### le
 * Evaluates `True` if left parameter is less than or equal to the right parameter
 * Min parameters: 2. Max parameters: 2
@@ -364,6 +343,41 @@ You can use the following status check functions as expressions in conditions, b
   * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
 
   > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+
+### Conditional insertion
+
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
+
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md#conditional-insertion). 
+
+#### Conditionally assign a variable
+```yml
+variables:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+    stageName: prod
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo ${{variables.stageName}}
+```
+
+#### Conditionally set a task input
+```yml
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'prod'
+    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'dev'
+    publishLocation: 'pipeline'
+```
 
 ## Dependencies
 
