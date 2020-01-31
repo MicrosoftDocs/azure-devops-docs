@@ -30,3 +30,5 @@ We recommend you turn this setting on.
 Unlike variables, pipeline parameters cannot be changed by a pipeline while it's running.
 Parameters have data types such as `number` and `string`, and they can be restricted to a subset of values.
 This is useful when a user-configurable part of the pipeline should only take a value from a constrained list, ensuring it won't take arbitrary data. 
+
+After you've secured your inputs, you also need to secure your [shared infrastructure](infrastructure.md).

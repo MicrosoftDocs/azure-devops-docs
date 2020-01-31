@@ -744,7 +744,7 @@
       href: security/templates.md
     - name: Variables and parameters
       href: security/inputs.md
-    - name: Secure pipelines infrastructure
+    - name: Shared infrastructure
       href: security/infrastructure.md
     - name: Other security considerations
       href: security/misc.md
