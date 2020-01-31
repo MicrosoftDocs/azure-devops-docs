@@ -83,10 +83,10 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 > | EntitySet | Description | v3.0-preview |
 > |-----------|-------------|------|
 > |Branches | Basic information about branches used in tests or pipelines |  ✔️ |
-> |Pipelines| Properties for a build pipeline |  ✔️ |
+> |Pipelines| Properties of a pipeline |  ✔️ |
 > |PipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
 > |PipelineRunActivityResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
-> |PipelineRuns | Execution information for builds |  ✔️ |
+> |PipelineRuns | Execution information for pipeline runs |  ✔️ |
 > |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
 > |TestRuns | Execution information for tests run under a build or release pipeline with aggregate TestResult |  ✔️ |
 > |Tests | Properties for a test | ✔️ |
