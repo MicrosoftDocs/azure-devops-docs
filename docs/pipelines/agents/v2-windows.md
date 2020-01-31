@@ -9,7 +9,7 @@ ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/09/2019
+ms.date: 01/31/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -39,10 +39,14 @@ Make sure your machine has these prerequisites:
 - Windows 7, 8.1, or 10 (if using a client OS)
 - Windows 2008 R2 SP1 or higher (if using a server OS)
 - [PowerShell 3.0](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell) or higher
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+
+> [!IMPORTANT]
+> Starting December 2019, the minimum required .NET version for build agents is 4.6.2 or higher.
 
 Recommended:
 - [Visual Studio build tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (2015 or higher)
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.5 or higher
+
 
 If you're building from a Subversion repo, you must install the [Subversion client](https://subversion.apache.org/) on the machine.
 
