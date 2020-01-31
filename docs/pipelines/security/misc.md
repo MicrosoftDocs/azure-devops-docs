@@ -20,7 +20,9 @@ There are a handful of other things you should consider when securing pipelines.
 The topics in this section have complex interdependencies.
 Your precise security posture will depend heavily on which recommendations you choose to implement.
 That in turn depends on the particular concerns of your DevOps team, your security team, and the policies & practices of your organization.
+
 You may choose to tighten up security in a critical area, and accept a different trade-off in favor of convenience for another area.
+For example, if you use `extends` templates to enforce that all builds run in containers, you may not need a physically separate agent pool per project.
 
 ## Relying on PATH
 

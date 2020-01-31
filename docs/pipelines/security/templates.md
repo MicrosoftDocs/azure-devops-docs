@@ -49,6 +49,8 @@ extends:
     - script: echo This is my second step
 ```
 
+TODO: mention pointing to a specific ref or commit
+
 ## Security features enforced through YAML
 
 There are several protections built into the YAML syntax, and an extends template can enforce the usage of any or all of them.

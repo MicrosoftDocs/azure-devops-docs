@@ -32,6 +32,7 @@ It also covers the places where you can make trade-offs between security and fle
 They assume familiarity with [Azure Pipelines](../overview.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
 Topics covered:
+- [Incremental approach to improving secutity](approach.md)
 - [Project structure](projects.md)
 - [Repository protection](repos.md)
 - [Protected resources](resources.md)
