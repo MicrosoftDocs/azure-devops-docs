@@ -20,7 +20,7 @@ ms.date: 01/30/2020
 
 Find answers to frequently asked questions when using Azure Boards. For FAQs specific to Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 
 
-You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](../../release-notes/features-timeline.md). 
+You can view a list of features that are on our roadmap for Azure Boards from the [Features Timeline](/azure/devops/release-notes/features-timeline). 
 
 To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea).
  
@@ -51,7 +51,7 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 
 ## GitHub integration
 
-## Is it possible to specify the status when linking a work item to a GitHub commit or PR?
+### Is it possible to specify the status when linking a work item to a GitHub commit or PR?
 
 **A:** No. This feature is not supported at this time. 
 
@@ -67,7 +67,7 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 
 ### Q: Can I upload my own custom work item type icons?  
 
-**Example request**: *When I create a new work item type I get an option to choose an icon, this icon set is limited and does not support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type? * 
+**Example request**: *When I create a new work item type I get an option to choose an icon, this icon set is limited and does not support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?* 
 
 **A:** No. This is not a supported feature at this time.   
 
