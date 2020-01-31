@@ -41,7 +41,6 @@ FROM WorkItems
 WHERE [Work Item Type] = 'User Story'
 ORDER BY [State] Asc, [Changed Date] Desc
 ASOF '6/15/2010'
-Select [State], [Title]
 ```
 
 The WIQL syntax is not case-sensitive.
