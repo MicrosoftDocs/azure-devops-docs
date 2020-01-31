@@ -363,6 +363,8 @@ You may want to view the pipeline outcome summary for all project pipelines in a
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
 
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps. 
+
 
 #### [Power BI query](#tab/powerbi/)
 
