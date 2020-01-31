@@ -299,6 +299,8 @@ You may want to view the duration for all the pipelines of the project in a sing
 - Expand Pipeline into  Pipeline.PipelineName.
 - Add the field **PIpeline.PipelineName** to **Axis**.
 
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]
