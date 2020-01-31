@@ -37,5 +37,5 @@ Topics covered:
 - [Protected resources](resources.md)
 - [Security through templates](templates.md)
 - [Variables and parameters](inputs.md)
-- [Secure pipelines infrastructure](infrastructure.md)
+- [Shared infrastructure](infrastructure.md)
 - [Other security considerations](misc.md)
