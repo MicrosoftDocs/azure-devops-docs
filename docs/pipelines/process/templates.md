@@ -610,9 +610,9 @@ jobs:
 
 ### Conditional insertion
 
-If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
+If you want to conditionally insert into a sequence or a mapping in a template, use insertions and expression evaluation. You can also use `if` statements [outside of templates](expressions.md) as long as you use template syntax.  
 
-For example, to insert into a sequence:
+For example, to insert into a sequence in a template:
 
 ```yaml
 # File: steps/build.yml
@@ -645,7 +645,7 @@ steps:
     toolset: dotnet
 ```
 
-For example, to insert into a mapping:
+For example, to insert into a mapping in a template:
 
 ```yaml
 # File: steps/build.yml
