@@ -11,6 +11,8 @@ ms.date: 1/31/2020
 monikerRange: '> azure-devops-2019'
 ---
 
+# Securing Azure Pipelines
+
 Azure Pipelines service poses unique security challenges, as you can use a pipeline to run scripts or deploy code to production environments.
 You want to ensure that your CI/CD pipelines do not become avenues to run malicious code.
 You also want to ensure that only code you intend to deploy is deployed.
