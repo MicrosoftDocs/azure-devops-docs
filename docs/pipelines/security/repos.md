@@ -24,8 +24,12 @@ Since pipelines are associated with a repository and not with specific branches,
 
 ## Forks
 
+If you build public repositories from GitHub, you must consider your stance on fork builds.
 Forks are particularly dangerous since they come from outside your organization.
 To protect your products from contributed code, consider the following recommendations.
+
+> [!NOTE]
+> The following recommendations apply primarily to building public repos from GitHub.
 
 ### Don't provide secrets to fork builds
 
