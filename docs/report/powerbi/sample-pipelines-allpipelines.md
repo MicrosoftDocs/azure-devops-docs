@@ -44,17 +44,17 @@ As shown in the above image, you can select any pipeline from the "Pipeline Name
 ```
 let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
-        &"$apply=filter( "
-                &"Pipeline/PipelineName eq '{pipelineName}' "
-                &"and CompletedDate ge {startdate} "
-                &") "
-        &"/aggregate( "
-        &"$count as TotalCount, "
-            &"SucceededCount with sum as SucceededCount , "
+               &"$apply=filter( "
+	       &"CompletedDate ge {startdate} "
+                &"/groupby( "
+        &"(Pipeline/PipelineName), "
+        &"aggregate( "
+            &"$count as TotalCount, "
+                &"SucceededCount with sum as SucceededCount, "
                 &"FailedCount with sum as FailedCount, "
-                &"PartiallySucceededCount with sum as PartiallySucceededCount , "
-            &"CanceledCount with sum as CanceledCount "
-                &") "
+            &"PartiallySucceededCount with sum as PartiallySucceededCount, "
+                &"CanceledCount with sum as CanceledCount "
+            &")) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -218,3 +218,11 @@ Your report should look like this.
 > [!div class="mx-imgBorder"] 
 > ![Sample - Pipelines Outcome Summary - Report](media/odatapowerbi-pipelines/allpipelines-report1.png)
 
+
+## Full list of Pipelines sample reports 
+
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+
+## Related articles
+
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]
