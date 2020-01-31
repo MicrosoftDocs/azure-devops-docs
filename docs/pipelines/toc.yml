@@ -742,6 +742,8 @@
       href: security/resources.md
     - name: Security through templates
       href: security/templates.md
+    - name: Variables and parameters
+      href: security/inputs.md
     - name: Secure pipelines infrastructure
       href: security/infrastructure.md
     - name: Other security considerations
