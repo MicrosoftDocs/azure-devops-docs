@@ -1,4 +1,4 @@
-﻿---
+---
 title: Service connections in Azure Pipelines & TFS
 ms.custom: seodec18
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
