@@ -218,7 +218,7 @@ az pipelines runs list [--branch]
 
 #### Example 
 
-The following command lists the first three pipeline runs whose status is **completed** and whose result is **succeeded**, and returns the result in table format.  
+The following command lists the first three pipeline runs which have a status of **completed** and a result of **succeeded**, and returns the result in table format.  
 
 ```CLI 
 az pipelines runs list --status completed --result succeeded --top 3 --output table
