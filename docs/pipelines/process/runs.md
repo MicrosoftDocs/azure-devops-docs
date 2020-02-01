@@ -172,3 +172,176 @@ This can happen if the agent's host machine goes away (power loss, VM turned off
 To help detect these conditions, the agent sends a heartbeat message once per minute to let the server know it's still operating.
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent will not come back.
 The job is marked as a failure, letting the user know they should re-try the pipeline.
+
+::: moniker range="azure-devops"
+## Manage runs through the CLI
+
+Using the Azure DevOps CLI, you can list the pipeline runs in your project and view details about a specific run. You can also add and delete tags in your pipeline run. 
+
+### Prerequisites
+
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+
+### List pipeline runs
+
+List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az pipelines runs list [--branch]
+                       [--org]
+                       [--pipeline-ids]
+                       [--project]
+                       [--query-order {FinishTimeAsc, FinishTimeDesc, QueueTimeAsc, QueueTimeDesc, StartTimeAsc, StartTimeDesc}]
+                       [--reason {all, batchedCI, buildCompletion, checkInShelveset, individualCI, manual, pullRequest, schedule, triggered, userCreated, validateShelveset}]
+                       [--requested-for]
+                       [--result {canceled, failed, none, partiallySucceeded, succeeded}]
+                       [--status {all, cancelling, completed, inProgress, none, notStarted, postponed}]
+                       [--tags]
+                       [--top]
+``` 
+
+#### Optional parameters 
+
+- **branch**: Filter by builds for this branch.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-ids**: Space-separated IDs of definitions for which to list builds.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **query-order**: Define the order in which pipeline runs are listed. Accepted values are *FinishTimeAsc*, *FinishTimeDesc*, *QueueTimeAsc*, *QueueTimeDesc*, *StartTimeAsc*, and *StartTimeDesc*.
+- **reason**: Only list builds for this specified reason. Accepted values are *batchedCI*, *buildCompletion*, *checkInShelveset*, *individualCI*, *manual*, *pullRequest*, *schedule*, *triggered*, *userCreated*, and *validateShelveset*.
+- **requested-for**: Limit to the builds requested for a specified user or group.
+- **result**: Limit to the builds with a specified result. Accepted values are *canceled*, *failed*, *none*, *partiallySucceeded*, and *succeeded*.
+- **status**: Limit to the builds with a specified status. Accepted values are *all*, *cancelling*, *completed*, *inProgress*, *none*, *notStarted*, and *postponed*.
+- **tags**: Limit to the builds with each of the specified tags. Space separated.
+- **top**: Maximum number of builds to list.
+
+#### Example 
+
+The following command lists the first three pipeline runs whose status is **completed** and whose result is **succeeded**, and returns the result in table format.  
+
+```CLI 
+az pipelines runs list --status completed --result succeeded --top 3 --output table
+
+Run ID    Number      Status     Result     Pipeline ID    Pipeline Name               Source Branch    Queued Time                 Reason
+--------  ----------  ---------  ---------  -------------  --------------------------  ---------------  --------------------------  ------
+125       20200124.1  completed  succeeded  12             Githubname.pipelines-java  master           2020-01-23 18:56:10.067588  manual
+123       20200123.2  completed  succeeded  12             Githubname.pipelines-java  master           2020-01-23 11:55:56.633450  manual
+122       20200123.1  completed  succeeded  12             Githubname.pipelines-java  master           2020-01-23 11:48:05.574742  manual
+``` 
+
+
+### Show pipeline run details
+
+Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az pipelines runs show --id
+                       [--open]
+                       [--org]
+                       [--project]
+``` 
+
+#### Parameters 
+
+- **id**: Required. ID of the pipeline run.
+- **open**: Optional. Opens the build results page in your web browser.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example 
+
+The following command shows details for the pipeline run with the ID **123** and returns the results in table format. It also opens your web browser to the build results page.
+
+```CLI 
+az pipelines runs show --id 122 --open --output table
+
+Run ID    Number      Status     Result     Pipeline ID    Pipeline Name               Source Branch    Queued Time                 Reason
+--------  ----------  ---------  ---------  -------------  --------------------------  ---------------  --------------------------  --------
+123       20200123.2  completed  succeeded  12             Githubname.pipelines-java  master           2020-01-23 11:55:56.633450  manual
+```
+
+### Add tag to pipeline run
+
+Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az pipelines runs tag add --run-id
+                          --tags
+                          [--org]
+                          [--project]
+``` 
+
+#### Parameters 
+
+- **run-id**: Required. ID of the pipeline run.
+- **tags**: Required. Tags to be added to the pipeline run (comma-separated values).
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example 
+
+The following command adds the tag **YAML** to the pipeline run with the ID **123** and returns the result in JSON format.  
+
+```CLI 
+az pipelines runs tag add --run-id 123 --tags YAML --output json
+
+[
+  "YAML"
+]
+```
+
+### List pipeline run tags
+
+List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az pipelines runs tag list --run-id
+                           [--org]
+                           [--project]
+``` 
+
+#### Parameters 
+
+- **run-id**: Required. ID of the pipeline run.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example 
+
+The following command lists the tags for the pipeline run with the ID **123** and returns the result in table format.  
+
+```CLI
+az pipelines runs tag list --run-id 123 --output table
+
+Tags
+------
+YAML
+```
+
+### Delete tag from pipeline run
+
+Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az pipelines runs tag delete --run-id
+                             --tag
+                             [--org]
+                             [--project]
+``` 
+
+#### Parameters 
+
+- **run-id**: Required. ID of the pipeline run.
+- **tag**: Required. Tag to be deleted from the pipeline run.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example 
+
+The following command deletes the **YAML** tag from the pipeline run with ID **123**.  
+
+```CLI 
+az pipelines runs tag delete --run-id 123 --tag YAML
+```
+::: moniker-end
