@@ -730,7 +730,7 @@
     href: process/artifact-policy.md
 - name: Case studies & best practices
   items:
-  - name: Pipelines security
+  - name: Pipelines security walkthrough
     items:
     - name: Overview
       href: security/overview.md
@@ -750,8 +750,8 @@
       href: security/infrastructure.md
     - name: Other security considerations
       href: security/misc.md
-    - name: Add continuous security validation 
-      href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+  - name: Add continuous security validation 
+    href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Build & deploy automation 
     href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
   - name: Progressively expose releases using deployment rings 
