@@ -14,7 +14,7 @@ monikerRange: '> azure-devops-2019'
 # Project structure
 
 The first question that you face is about how to organize your team projects in Azure DevOps.
-For that, it is important to understand what resources your pipeline has default access to.
+It's important to understand what resources your pipeline has access to.
 [Resources](resources.md) are covered in another topic.
 
 For now, it's enough to know that a pipeline can access two types of resources:
@@ -29,16 +29,16 @@ What makes them protected is that:
   b. You can run additional manual or automated checks every time a pipeline uses one of these resources.
 2. **Open resources**.
 All the other resources in a project - repositories, artifacts, pipelines, test plans, work items, etc. - are considered *open* resources.
-Every job in your pipeline has an auto-generated access token which has permissions to read open resources, and in some cases, to make updates to them.
-In other words, while your user account may not have access to some of these open resources, scripts and tasks running in your pipeline do.
+Every job in your pipeline receives an access token which has permissions to read open resources.
+In some cases, pipelines may also update those resources.
+In other words, while your user account may not have access a certain resource, scripts and tasks running in your pipeline do.
 The security model in Azure DevOps also allows access to these resources from other projects in the organization.
 If you choose to shut off pipeline access to some of these resources, you will only be able to do so for all pipelines in a project.
 You cannot selectively grant access for an open resource to a specific pipeline.
 
 Given the nature of open resources, you should consider managing each product and team in a separate project.
-This ensures that a pipeline from one product cannot access open resources from another product, thereby preventing lateral exposure.
+This practice ensures that a pipeline from one product cannot access open resources from another product, thereby preventing lateral exposure.
 When multiple teams or products share a project, their resources cannot be granularly isolated from one another.
-This is a good example of a tradeoff between security and sharing.
 
 If your Azure DevOps organization was created prior to August 2019, the access token generated for each run may be able to access open resources in all projects of your organization.
 Your organization administrator must review a key security setting in Azure Pipelines that turns off this access and enables project isolation for pipelines.
