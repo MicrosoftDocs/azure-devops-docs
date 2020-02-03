@@ -6,19 +6,19 @@
 
 1. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
-    ![Image of Azure DevOps Demo Generator V2 login](_img/homepage.png)
+    ![Image of Azure DevOps Demo Generator V2 login](media/homepage.png)
 
 
 1. After you sign in, select **Accept** to grant the Demo Generator permissions to access your Azure DevOps account.
 
 1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. 
 
-    ![Image of the generator main page](_img/mainpage.png)
+    ![Image of the generator main page](media/mainpage.png)
 
 
     Lastly, select the demo project template you want to provision by clicking **Choose template**  button.
 
-    ![Image of Azuer DevOps Demo Generator template selection screen](_img/templateselection.png)
+    ![Image of Azuer DevOps Demo Generator template selection screen](media/templateselection.png)
 
 
    >The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. Other templates include **MyHealthClinic**, which defines a team project for an ASP.NET Core app that deploys to Azure App Service; **PartsUnlimited**, which defines an ASP.NET app with customized CI/CD pipelines; and **MyShuttle**, which defines a Java app and Azure App service deployment.
@@ -31,11 +31,11 @@
 
 1. Your project may take a couple of minutes for the Demo Generator to provision. When it completes, you will be provided with a link to the demo project.
 
-    ![Image of Azure DevOps Demo Generator project created screen](_img/projectcreated.png)
+    ![Image of Azure DevOps Demo Generator project created screen](media/projectcreated.png)
 
 1. Select the link to go to the new demo Azure DevOps Services project and confirm it was successfully provisioned.
 
-    ![Image of Azure DevOps Demo Generator provision confirmation screen](_img/projectscreen.png)
+    ![Image of Azure DevOps Demo Generator provision confirmation screen](media/projectscreen.png)
 
 
     > You must provide your own information such as URLs, logins, password, and others for the configuration of demo endpoints that use Azure resources. 
