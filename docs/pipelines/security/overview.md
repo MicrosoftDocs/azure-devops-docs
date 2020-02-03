@@ -13,20 +13,25 @@ monikerRange: '> azure-devops-2019'
 
 # Securing Azure Pipelines
 
-Azure Pipelines service poses unique security challenges, as you can use a pipeline to run scripts or deploy code to production environments.
-You want to ensure that your CI/CD pipelines don't become avenues to run malicious code.
-You also want to ensure that only code you intend to deploy is deployed.
-This must be balanced with giving teams the flexibility and power they need to run their own pipelines.
+Azure Pipelines poses unique security challenges.
+You can use a pipeline to run scripts or deploy code to production environments.
+But you want to ensure your CI/CD pipelines don't become avenues to run malicious code.
+You also want to ensure only code you intend to deploy is deployed.
+Security must be balanced with giving teams the flexibility and power they need to run their own pipelines.
 
 > [!NOTE]
 > Azure Pipelines is one among a collection of Azure DevOps services, all built on the same secure infrastructure in Azure.
 > To understand the main concepts around security for all of Azure DevOps services, see [Azure DevOps Data Protection Overview](../../organizations/security/data-protection.md) and [Azure DevOps Security and Identity](../../organizations/security/about-security-identity.md).
 
-One way for organizations to secure their code, pipelines, and production environments is to have severe restrictions and policies on who can access those assets.
-In small organizations with one or two projects and a small number of users, this is relatively easy to manage.
-However, that is not the case with larger organizations where many users have contributor access to code.
-One must operate under the assumption that an adversary may have gained contributor access to some (if not all) of the repositories.
-The goal in this case is to prevent that adversary from running malicious code in the pipeline, which can in turn steal secrets or corrupt production environments.
+Traditionally, organizations implemented security through draconian lock-downs.
+Code, pipelines, and production environments had severe restrictions on access and use.
+In small organizations with a small number of users and projects, this stance was relatively easy to manage.
+However, that's not the case in larger organizations.
+Where many users have contributor access to code, one must "assume breach".
+Assuming breach means behaving as if an adversary has contributor access to some (if not all) of the repositories.
+
+The goal in this case is to prevent that adversary from running malicious code in the pipeline.
+Malicious code may steal secrets or corrupt production environments.
 Another goal is to prevent lateral exposure to other projects, pipelines, and repositories from the compromised pipeline.
 
 This series of topics outlines recommendations to help you put together a secure YAML-based CI/CD pipeline.
