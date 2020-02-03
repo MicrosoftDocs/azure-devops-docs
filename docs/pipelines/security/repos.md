@@ -14,18 +14,18 @@ monikerRange: '> azure-devops-2019'
 # Repository protection
 
 Source code, the pipeline's YAML file, and necessary scripts & tools are all stored in a version control repository.
-While we won't go deep on the topic of access control for repositories, this is clearly of paramount importance.
-Permissions and branch policies must be employed in order to ensure that changes to the code and pipeline are safe.
+Permissions and branch policies must be employed to ensure changes to the code and pipeline are safe.
+Also, you should review [default access control](../../organizations/security/default-git-permissions.md) for repositories.
 
-Due to Git's design, protection at a branch level can only carry you so far.
-Users with push access to a repo can generally create new branches.
-If you use GitHub open source projects, anyone with a GitHub account can fork your repository and propose contributions back.
-Since pipelines are associated with a repository and not with specific branches, you must assume that the code and YAML files are untrusted. 
+Because of Git's design, protection at a branch level will only carry you so far.
+Users with push access to a repo can usually create new branches.
+If you use GitHub open-source projects, anyone with a GitHub account can fork your repository and propose contributions back.
+Since pipelines are associated with a repository and not with specific branches, you must assume the code and YAML files are untrusted. 
 
 ## Forks
 
 If you build public repositories from GitHub, you must consider your stance on fork builds.
-Forks are particularly dangerous since they come from outside your organization.
+Forks are especially dangerous since they come from outside your organization.
 To protect your products from contributed code, consider the following recommendations.
 
 > [!NOTE]
@@ -47,7 +47,7 @@ Don't turn off this latter protection.
 ### Consider manually triggering fork builds
 
 You can turn off automatic fork builds and instead use pull request comments as a way to manually building these contributions.
-This will give you an opportunity to review the code before triggering a build.
+This setting will give you an opportunity to review the code before triggering a build.
 
 ### Use Microsoft-hosted agents for fork builds
 
@@ -60,7 +60,7 @@ Use Microsoft-hosted agents or some form of network isolation for your self-host
 Users in your organization with the right permissions can create new branches containing new or updated code.
 That code can run through the same pipeline as your protected branches.
 Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline.
-While this allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
+While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
 
 <!-- Coming Q1 CY20
 One way to solve this problem is by keeping the YAML file for your pipeline in a different repository than your source code.
