@@ -14,9 +14,9 @@ monikerRange: '> azure-devops-2019'
 # Protected resources
 
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
-When pipelines run, access to protected resources goes through a system called [checks](TODO).
+When pipelines run, access to protected resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.
-As a reminder, protected resources are [agent pools](TODO), [variable groups](TODO), [secure files](TODO), [service connections](TODO), and [environments](TODO).
+As a reminder, protected resources are [agent pools](../agents/agents.md), [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), [service connections](../library/service-endpoints.md), and [environments](../process/environments.md).
 
 ## User permissions
 
