@@ -738,7 +738,7 @@
       href: security/approach.md
     - name: Repository protection
       href: security/repos.md
-    - name: Protected resources
+    - name: Pipeline resources
       href: security/resources.md
     - name: Project structure
       href: security/projects.md
