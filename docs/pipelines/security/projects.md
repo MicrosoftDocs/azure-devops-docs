@@ -32,13 +32,20 @@ In Azure Pipelines, all of the following are considered *protected* resources:
 - environments
 
 "Protected" means:
-a. They can be made accessible to specific users and specific pipelines within the project.
+- They can be made accessible to specific users and specific pipelines within the project.
 They cannot be accessed by users and pipelines outside of a project.
-b. You can run additional manual or automated checks every time a pipeline uses one of these resources.
+- You can run additional manual or automated checks every time a pipeline uses one of these resources.
 
 ## Open resources
 
-All the other resources in a project - repositories, artifacts, pipelines, test plans, work items, and so on - are considered *open* resources.
+All the other resources in a project are considered *open* resources.
+Open resources include:
+- repositories
+- artifacts
+- pipelines
+- test plans
+- work items
+
 Every job in your pipeline receives an access token, which has permissions to read open resources.
 In some cases, pipelines may also update those resources.
 In other words, while your user account may not have access a certain resource, scripts and tasks running in your pipeline do.
