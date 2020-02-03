@@ -12,8 +12,14 @@ monikerRange: '> azure-devops-2019'
 ---
 
 # Shared infrastructure
+
 Protected resources in Azure Pipelines are an abstraction of real infrastructure.
 Follow these recommendations to protect the underlying infrastructure.
+
+## Use Microsoft-hosted pools if possible
+
+Microsoft-hosted pools offer isolation and a clean VM for each run of a pipeline.
+If possible, prefer Microsoft-hosted pools over self-hosted pools.
 
 ## Separate agents for each project
 

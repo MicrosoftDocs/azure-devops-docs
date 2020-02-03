@@ -42,7 +42,7 @@ This is a good example of a tradeoff between security and sharing.
 
 If your Azure DevOps organization was created prior to August 2019, the access token generated for each run may be able to access open resources in all projects of your organization.
 Your organization administrator must review a key security setting in Azure Pipelines that turns off this access and enables project isolation for pipelines.
-This setting can be found in **Azure DevOps** / **Organization settings** / **Pipelines** / **Settings**.
+This setting can be found in **Azure DevOps** / **Organization settings** / **Pipelines** / **Settings** or by visiting `https://dev.azure.com/ORG-NAME/_settings/pipelinessettings`.
 
 ![Screenshot of job authorization scope UI](media/job-auth-scope.png)
 
