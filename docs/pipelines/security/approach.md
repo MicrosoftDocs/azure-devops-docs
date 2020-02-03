@@ -33,6 +33,4 @@ A good place to start is by enforcing extension from a nearly-empty template.
 This way, as you start to implement security practices, you have a centralized place that already catches every pipeline.
 See the topic on [templates](templates.md) for details.
 
---
-
 Once you've planned your approach, start looking at [project structure](projects.md).
