@@ -159,7 +159,7 @@ If you are building a solution, in most cases you should use the [Visual Studio 
 
 * Specifies the MSBuild version argument.
 
-In some cases you might need to use the MSBuild task. For example, you should use it if you are building code projects apart from a solution.
+In some cases, you might need to use the MSBuild task. For example, you should use it if you are building code projects apart from a solution.
 
 ### Where can I learn more about MSBuild?
 
@@ -211,7 +211,7 @@ In some cases you might need to use the MSBuild task. For example, you should us
       </table>
    </li>
    <li>
-      <p>On the Options tab select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
+      <p>On the Options tab, select <strong>MultiConfiguration</strong> and specify the Multipliers, separated by commas. For example: <code>BuildConfiguration, BuildPlatform</code></p>
       <p>Select Parallel if you want to distribute the jobs (one for each combination of values) to multiple agents in parallel if they are available.</p>
    </li>
    <li>
