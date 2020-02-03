@@ -734,7 +734,7 @@
     items:
     - name: Overview
       href: security/overview.md
-    - name: Approach to securing pipelines
+    - name: Approach to securing YAML pipelines
       href: security/approach.md
     - name: Project structure
       href: security/projects.md

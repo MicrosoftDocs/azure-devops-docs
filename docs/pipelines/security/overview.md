@@ -7,14 +7,14 @@ ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
 ms.manager: mijacobs
 ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 1/31/2020
+ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'
 ---
 
 # Securing Azure Pipelines
 
 Azure Pipelines service poses unique security challenges, as you can use a pipeline to run scripts or deploy code to production environments.
-You want to ensure that your CI/CD pipelines do not become avenues to run malicious code.
+You want to ensure that your CI/CD pipelines don't become avenues to run malicious code.
 You also want to ensure that only code you intend to deploy is deployed.
 This must be balanced with giving teams the flexibility and power they need to run their own pipelines.
 
@@ -34,7 +34,7 @@ It also covers the places where you can make trade-offs between security and fle
 They assume familiarity with [Azure Pipelines](../overview.md), the core [Azure DevOps security constructs](../../organizations/security/about-security-identity.md), and [Git](https://git-scm.com).
 
 Topics covered:
-- [Incremental approach to improving secutity](approach.md)
+- [Incremental approach to improving security](approach.md)
 - [Project structure](projects.md)
 - [Repository protection](repos.md)
 - [Protected resources](resources.md)
