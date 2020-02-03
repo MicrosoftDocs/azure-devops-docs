@@ -14,11 +14,11 @@ monikerRange: '> azure-devops-2019'
 # Security through templates
 
 [Checks on protected resources](resources.md) are the basic building block of security for Azure Pipelines.
-These work no matter the structure - the stages and jobs - of your pipeline.
+Checks work no matter the structure - the stages and jobs - of your pipeline.
 If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).
 
 Azure Pipelines offers two kinds of templates: **includes** and **extends**.
-Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file which references it.
+Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file, which references it.
 To continue the C++ metaphor, `extends` templates are more like inheritance: the template provides the outer structure of the pipeline and a set of places where the template consumer can make targeted alterations.
 
 ## Use extends templates
@@ -41,15 +41,24 @@ steps:
 
 ```yaml
 # azure-pipelines.yml
+resources:
+  repositories:
+  - repository: templates
+    type: git
+    name: MyProject/MyTemplates
+    ref: tags/v1
+
 extends:
-  template: template.yml
+  template: template.yml@templates
   parameters:
     usersteps:
     - script: echo This is my first step
     - script: echo This is my second step
 ```
 
-TODO: mention pointing to a specific ref or commit
+When you set up `extends` templates, consider anchoring them to a particular Git branch or tag.
+That way, if breaking changes need to be made, existing pipelines won't be affected.
+The examples above use this feature. 
 
 ## Security features enforced through YAML
 
@@ -57,8 +66,8 @@ There are several protections built into the YAML syntax, and an extends templat
 
 ### Step targets
 Restrict some steps to run in a container instead of the host.
-Without access to the agent's host, user steps cannot modify agent configuration or leave malicious code for later execution.
-Additionally, since you can run code on the host first, you can alter the container to make it even more secure.
+Without access to the agent's host, user steps can't modify agent configuration or leave malicious code for later execution.
+Run code on the host first to make the container more secure.
 For instance, we recommend limiting access to network.
 Without open access to the network, user steps will be unable to access packages from unauthorized sources, or upload code and secrets to a network location.
 
@@ -91,7 +100,7 @@ In restricted mode, most of the agent's services such as uploading artifacts and
 ### Conditional insertion of stages or jobs
 
 Restrict stages and jobs to run under specific conditions.
-This can help, for example, to ensure that you are only building certain branches.
+Conditions can help, for example, to ensure that you are only building certain branches.
 
 ```yaml
 jobs:
@@ -107,7 +116,7 @@ jobs:
 ### Require certain syntax with extends templates
 
 Templates can iterate over and alter/disallow any YAML syntax.
-This can be used to force the use of the above features as well as any other YAML available.
+Iteration can force the use of particular YAML syntax including the above features.
 
 A template can rewrite user steps and only allow certain approved tasks to run.
 You can, for example, prevent inline script execution.
@@ -142,7 +151,7 @@ extends:
 
 ### Type-safe parameters
 
-Templates and their parameters are completely compiled away into constants before the pipeline runs.
+Templates and their parameters are turned into constants before the pipeline runs.
 Template parameters provide type safety to input parameters.
 For instance, it can restrict which pools can be used in a pipeline by offering an enumeration of possible options rather than a freeform string.
 
@@ -153,7 +162,7 @@ TODO
 ### Additional steps
 
 A template can add steps without the pipeline author having to include them.
-These can be used to run credential scanning or static code checks.
+These steps can be used to run credential scanning or static code checks.
 
 ```yaml
 # template to insert a step before and after user steps in every job
