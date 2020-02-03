@@ -21,7 +21,7 @@ in or when a pull request (PR) is created, updated or merged. The app supports m
 Team Foundation Version Control (TFVC) repositories.
 
 > [!div class="mx-imgBorder"]
-> ![Notifications image](_img/integrations-teams/NotificationsCards.png)
+> ![Notifications image](media/integrations-teams/NotificationsCards.png)
 
 Read this article to learn how to: 
 
@@ -49,7 +49,7 @@ Visit the App store in Microsoft Teams and search for the Azure Repos app. Upon 
 displays as shown in the following image. Use the `@azure repos` handle to start interacting with the app.
    
 > [!div class="mx-imgBorder"]
-> ![Welcome message](./_img/integrations-teams/welcome.png)
+> ![Welcome message](./media/integrations-teams/welcome.png)
 
 
 ## Connect the Azure Repos app to your repositories
@@ -57,13 +57,13 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command.
    
    > [!div class="mx-imgBorder"]
-   > ![Sign in prompt image ](./_img/integrations-teams/SignIn.png)
+   > ![Sign in prompt image ](./media/integrations-teams/SignIn.png)
 
    > [!div class="mx-imgBorder"]
-   > ![Sign in prompt image ](./_img/integrations-teams/SignIn1.png)
+   > ![Sign in prompt image ](./media/integrations-teams/SignIn1.png)
 
    > [!div class="mx-imgBorder"]
-   > ![Sign in prompt image ](./_img/integrations-teams/SignIn-Complete.png)
+   > ![Sign in prompt image ](./media/integrations-teams/SignIn-Complete.png)
 
 
 2. To start monitoring all Git repositories in a project, use the following slash command inside a channel:
@@ -98,11 +98,14 @@ displays as shown in the following image. Use the `@azure repos` handle to start
    ```
    @azure repos subscribe https://dev.azure.com/myorg/myproject/_versionControl
    ```
+   
+   > [!NOTE]
+   > You can subscribe only to public repositories. 
 
 3. The `subscribe` command gets you started with a default subscription. For Git repositories, the channel gets subscribed to the **Pull request created** event (with target branch = master). For TFVC repositories, the channel is subscribed to the **Code checked in** event.
 
    > [!div class="mx-imgBorder"]
-   > ![Default subscriptions creation message](./_img/integrations-teams/Subscriptions-added-confirmation.png)
+   > ![Default subscriptions creation message](./media/integrations-teams/Subscriptions-added-confirmation.png)
 
 
 ## Manage subscriptions
@@ -117,7 +120,7 @@ The `subscription` command lists all the current subscriptions for the channel a
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
 > [!div class="mx-imgBorder"]
-> ![View subscriptions](./_img/integrations-teams/Subscriptions.png)
+> ![View subscriptions](./media/integrations-teams/Subscriptions.png)
 
 ## Using filters to get only notifications that you want
 
@@ -136,13 +139,13 @@ The following steps demonstrate how to customize subscriptions.
 ### Example: Get notifications only when my team is in the reviewer list for a PR
 
 > [!div class="mx-imgBorder"]
-> ![Add subscription screen 1](./_img/integrations-teams/Filters-1.png)
+> ![Add subscription screen 1](./media/integrations-teams/Filters-1.png)
 
 > [!div class="mx-imgBorder"]
-> ![Add subscription screen 2](./_img/integrations-teams/Filters-2.png)
+> ![Add subscription screen 2](./media/integrations-teams/Filters-2.png)
 
 > [!div class="mx-imgBorder"]
-> ![Add subscription screen 3 with filters](./_img/integrations-teams/Filters-3.png)
+> ![Add subscription screen 3 with filters](./media/integrations-teams/Filters-3.png)
     
     
 > [!NOTE]
@@ -154,14 +157,14 @@ The following steps demonstrate how to customize subscriptions.
 To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by id or  name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
-> ![Compose extension](./_img/integrations-teams/teams-repos-compose-extension.png)
+> ![Compose extension](./media/integrations-teams/teams-repos-compose-extension.png)
 
 ## Previews of pull request URLs
 
 When a user pastes the URL of a PR, a preview is shown like the one in the following image. This helps to keep PR-related conversations contextual and accurate.
 
 > [!div class="mx-imgBorder"]
-> ![URL unfurling](./_img/integrations-teams/URL-Preview.png)
+> ![URL unfurling](./media/integrations-teams/URL-Preview.png)
 
 For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a Team.
 
@@ -187,11 +190,11 @@ This command will delete all the subscriptions related to any repository in the 
 ### Compact view of threaded notifications
 
 > [!div class="mx-imgBorder"]
-> ![Compact thread](./_img/integrations-teams/threads-repos-compact-view.png)
+> ![Compact thread](./media/integrations-teams/threads-repos-compact-view.png)
 
 ### Expanded view of threaded notifications
 > [!div class="mx-imgBorder"]
-> ![Expanded thread](./_img/integrations-teams/threads-repos-expanded-view.png)
+> ![Expanded thread](./media/integrations-teams/threads-repos-expanded-view.png)
 
 ## Command reference
 
@@ -211,14 +214,14 @@ The following table lists all the Azure repos commands you can use in your Teams
 
 If you are experiencing the following errors when using the Azure Repos App, follow the procedures in this section. 
 
-[!INCLUDE [troubleshooting](./_shared/repos-troubleshoot-authentication.md)]
+[!INCLUDE [troubleshooting](./includes/repos-troubleshoot-authentication.md)]
 
 In the **same browser**, start a new tab and sign in to `https://teams.microsoft.com/`. Run the `@Azure Repos signout` command and then run the `@Azure Repos signin` command in the channel where the Azure Repos app for Microsoft Teams is installed.
 
 Select the `Sign in` button and you'll be redirected to a consent page like the one in the following example. Ensure that the directory shown beside the email is same as what was chosen in the previous step. Accept and complete the sign-in process.
 
 > [!div class="mx-imgBorder"]
-> ![Consent to the requested app permissions](_img/troubleshooting/repos-consent-page-teams.png)
+> ![Consent to the requested app permissions](media/troubleshooting/repos-consent-page-teams.png)
 
 If these steps don't resolve your authentication issue, please out to us at [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Manage mappings between an enterprise project and a  project
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must perform several tasks that include associating an enterprise project plan with a project. For an overview of how to integrate these two products, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   

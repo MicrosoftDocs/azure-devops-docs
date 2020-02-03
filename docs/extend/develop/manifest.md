@@ -16,7 +16,7 @@ ms.date: 10/09/2019
 
 Every extension has a JSON manifest file which defines basic info about the extension and how it can extend and enhance the experience. This article shows you how to create a manifest for your extensions to Azure DevOps.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 Start by creating a file named `vss-extension.json` at the root of your extension folder. This file contains required attributes, like the extension's ID and its installation targets (where it can run). It also defines the contributions being made by your extension.
 
@@ -28,7 +28,7 @@ Here is an example of what a typical manifest will look like:
 
 <a id="core-properties" />
 
-[!INCLUDE [](../_shared/manifest-core.md)]
+[!INCLUDE [](../includes/manifest-core.md)]
 
 ### Examples of required attributes
 
@@ -37,7 +37,7 @@ Here is an example of what a typical manifest will look like:
 ## Optional attributes
 
 ### Runtime attributes
-[!INCLUDE [](../_shared/manifest-extension-runtime.md)]
+[!INCLUDE [](../includes/manifest-extension-runtime.md)]
 
 [!code-json[](../_data/extension-runtime.json)]
 
@@ -45,7 +45,7 @@ Here is an example of what a typical manifest will look like:
 
 ### Discovery attributes
 
-[!INCLUDE [](../_shared/manifest-discovery.md)]
+[!INCLUDE [](../includes/manifest-discovery.md)]
 
 <a id="public-flag" />
 
@@ -164,7 +164,7 @@ If your paid BYOL extension offers a trial period (we recommend so), then you ca
 * 6 - links
 * 7 - branding
 
-![card](./_img/extension-details-page.png)
+![card](./media/extension-details-page.png)
 
 <a name="CustomerQnASupport"></a>
 
@@ -235,7 +235,7 @@ If no scopes are specified, extensions are only provided access to user profile 
 
 ### Supported scopes
 
-[!INCLUDE [](../../integrate/_shared/scopes.md)] 
+[!INCLUDE [](../../integrate/includes/scopes.md)] 
 
 ### Changing scope of published extension
 
@@ -243,11 +243,11 @@ The scopes of an extension can be changed after publishing. Customers that previ
 
 The **Action Required** section of the Extension settings hub shows a user which, if any, installed extensions require authorization:
 
-![scope-change](./_img/auth-new-scopes.png)
+![scope-change](./media/auth-new-scopes.png)
 
 An administrator can then review and authorize the new set of scopes:
 
-![scope-change-dialog](./_img/auth-new-scopes-dialog.png)
+![scope-change-dialog](./media/auth-new-scopes-dialog.png)
 
 ## Installation targets
 

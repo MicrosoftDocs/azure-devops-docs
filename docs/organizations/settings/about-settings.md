@@ -17,7 +17,7 @@ ms.date: 10/28/2019
 
 # About settings at the user, team, project, or organization-level 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 
@@ -162,7 +162,7 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Project settings, new nav](_img/about/project-settings-new-nav.png) 
+> ![Project settings, new nav](media/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -172,7 +172,7 @@ From the administrative **Project settings** pages, you can configure settings a
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Project settings, conceptual](_img/about/project-settings-prev-nav.png)  
+![Project settings, conceptual](media/about/project-settings-prev-nav.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -315,7 +315,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
 > [!div class="mx-imgBorder"]  
-> ![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
+> ![Organization settings, new nav](media/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -328,7 +328,7 @@ From the administrative pages for a collection, you can configure the settings s
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
-![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+![Collection settings, TFS, conceptual](media/about/collection-settings-tfs-nav.png) 
 
 ::: moniker-end
 

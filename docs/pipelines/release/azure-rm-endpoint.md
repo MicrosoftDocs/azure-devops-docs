@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot Azure Resource Manager service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -34,7 +34,7 @@ You open the **Add Azure Resource Manager service connection** dialog,
 provide a connection name, and select a subscription from drop-down
 list of your subscriptions.  
 
-![The Add Azure Resource Manager service connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+![The Add Azure Resource Manager service connection dialog](media/azure-rm-endpoint/endpoint-01.png)
 
 When you choose **OK**, the system:
 
@@ -70,7 +70,7 @@ This is a permission issue that may be due to the following causes:
 The best approach to resolve this issue, while granting only the minimum additional permissions
 to the user, is to increase the Guest user permissions as follows.
 
-1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
+1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
    [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or
    [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
@@ -92,13 +92,14 @@ to the user, is to increase the Guest user permissions as follows.
 Alternatively, if you are prepared to give the user additional (administrator-level) permissions,
 you can make the user a member of the **Global administrator** role as follows.
 
-> **WARNING**: Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities such as Exchange Online, SharePoint Online, and Skype for Business Online. 
+> [!WARNING]
+> Users with this role have access to all administrative features in Azure Active Directory, as well as services that use Azure Active Directory identities such as Exchange Online, SharePoint Online, and Skype for Business Online. 
 
 
-1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
+1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator).
+   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator--company-administrator), or
+   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-administrator-permissions).
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -143,14 +144,13 @@ These errors typically occur when your session has expired.
 
 To resolve these issues:
 
-* Sign out of Azure Pipelines or TFS.
-* Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
-* If you are prompted to sign out, do so.
-* Sign in using the appropriate credentials.
-* Choose the organization you want to use from the list.
-* Select the project you want to add the service connection to.
-* Create the service connection you need by opening the **Settings** page, selecting the **Services** tab,
-  choosing **New service connection**, and selecting **Azure Resource Manager**.
+1. Sign out of Azure Pipelines or TFS.
+1. Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
+1. If you are prompted to sign out, do so.
+1. Sign in using the appropriate credentials.
+1. Choose the organization you want to use from the list.
+1. Select the project you want to add the service connection to.
+1. Create the service connection you need by opening the **Settings** page. Then, select **Services** > **New service connection** > **Azure Resource Manager**.
 
 <a name="contributorrole"></a>
 ### Failed to assign Contributor role
@@ -171,4 +171,4 @@ Managed identities for Azure resources provides Azure services with an automatic
 >
 > Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

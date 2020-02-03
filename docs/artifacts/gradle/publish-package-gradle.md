@@ -54,7 +54,7 @@ Give your token a name, duration, and select the **Packaging (read and write)** 
 
 > You may have to choose "Show all scopes" at the bottom to see the Packaging area.
 
-![Create packaging personal access token](../_shared/_img/create-packaging-pat.png)
+![Create packaging personal access token](../media/create-packaging-pat.png)
 
 Click **Create**.
 
@@ -66,13 +66,13 @@ Navigate to `https://dev.azure.com/{yourOrganization}/_usersSettings/tokens`, wh
 
 Click **Add**.
 
-![Add a personal access token](_img/add-pat.png)
+![Add a personal access token](media/add-pat.png)
 
 Give your new token a name and a duration. 
 
 Select the **Packaging (read and write)** scope.
 
-![Select a token scope](_img/select-scope.png)
+![Select a token scope](media/select-scope.png)
 
 ::: moniker-end
 

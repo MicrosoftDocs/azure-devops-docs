@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Underlying connection was closed
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When users save work items, check in code merges, or perform other Team Foundation operations on a large number of files, a dialog box might appear that contains the phrase "The underlying connection was closed." The problem might be intermittent and difficult to reproduce.  
   

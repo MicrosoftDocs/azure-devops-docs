@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy to Chef environments by e
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ChefV1.md)]
+[!INCLUDE [temp](../includes/yaml/ChefV1.md)]
 
 ::: moniker-end
 

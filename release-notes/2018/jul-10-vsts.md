@@ -93,28 +93,28 @@ See the [Set branch permissions](/azure/devops/git/branch-permissions?view=azure
 Now you can click the link icon next to any section heading in a wiki page to generate a URL directly to that section. You can then copy that URL and share it with team members to link them directly to that section. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Wiki heading URL](_img/137_03.png)
+> ![Wiki heading URL](media/137_03.png)
 
 ### View broken links
 
 All links in a wiki that are not linked properly will appear in a distinct red color and broken link icon, giving you a visual clue of all broken links in a wiki page. 
 
 > [!div class="mx-imgBorder"]
-> ![Wiki broken links](_img/137_02.png)
+> ![Wiki broken links](media/137_02.png)
 
 ### Attach files and images in folders
 
 While editing wiki pages offline it can be easier to add file attachments and images in the same directory as the wiki page. Now, you can add an attachment or an image in any folder in the wiki and link it to your page. This feature was prioritized based on a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Wiki image in git repo folder](_img/137_08.png)
+> ![Wiki image in git repo folder](media/137_08.png)
 
 ### Open page in new tab
 
 Now you can right click on a wiki page and open it in new tab or simply press CTRL + left click on a wiki page to open it in a new tab.
 
 > [!div class="mx-imgBorder"]
-> ![Wiki new tab](_img/137_04.png)
+> ![Wiki new tab](media/137_04.png)
 
 ## Build and Release
 
@@ -130,18 +130,18 @@ The Microsoft-hosted Linux and macOS agents are now out of preview and generally
 Previously, when new targets were added to a deployment group, a manual deployment was required to ensure all targets have the same release. You can now configure the environment to automatically deploy the last successful release to the new targets. We plan to add additional trigger events and actions to the auto redeploy configuration in coming sprints. See the [Deployment Groups](/azure/devops/pipelines/release/deployment-groups/) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![Deployment groups](_img/137_05.png)
+> ![Deployment groups](media/137_05.png)
 
 ### Hold deployments until gates succeed consistently
 
 Release gates enable automatic evaluation of health criteria before a release is promoted to the next environment. By default, the release progresses after one successful sample for all gates has been received. Even if a gate is erratic and the successful sample received is noise, the release progresses. To avoid these types of issues, you can now configure the release to verify consistency of the health for a minimum duration before progressing. At run time, the release would ensure consecutive evaluations of the gates are successful before allowing the promotion. The total time for evaluation depends on "time between reevaluation" and would typically be more than the configured minimum duration. See the [Release deployment control using gates](/azure/devops/pipelines/release/approvals/gates?view=azure-devops) documentation for more information.
 
 > [!div class="mx-imgBorder"]
-> ![Gates hold setting](_img/137_07.png)
+> ![Gates hold setting](media/137_07.png)
 
 ### Azure DevOps Projects now generally available
 
-Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project-release-tagimgrelease-notes-tagreleasepng) we introduced DevOps Projects, which helps ou get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-project) we introduced DevOps Projects, which helps you get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 
@@ -150,7 +150,7 @@ Back in [November](/azure/devops/release-notes/2017/nov-28-vsts#azure-devops-pro
 The Package Management extension is pre-installed into all organizations. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each organization comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Soon you'll also be able to toggle the visibility of this service in your organization using the Services admin page within the new navigation as you can with the others.
 
 > [!div class="mx-imgBorder"]
-> ![Packages service](_img/137_06.png)
+> ![Packages service](media/137_06.png)
 
 ## Administration
 
@@ -177,7 +177,7 @@ We've made a change to our terminology when it comes to referring to a collectio
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Feedback menu](../2017/_img/125_00.png)
+> ![Feedback menu](../2017/media/125_00.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/vsts).
 

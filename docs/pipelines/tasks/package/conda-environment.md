@@ -51,7 +51,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV1.md)]
+[!INCLUDE [temp](../includes/yaml/CondaEnvironmentV1.md)]
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <a name="agent-config"></a>
 

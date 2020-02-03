@@ -16,7 +16,7 @@ ms.date: 08/22/2016
 
 In this example, we add an action to the query context menu in the work item queries hub.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Prerequisites for this article
 

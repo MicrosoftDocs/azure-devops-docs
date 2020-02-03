@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run a Bash script on macOS, Linu
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/BashV3.md)]
+[!INCLUDE [temp](../includes/yaml/BashV3.md)]
 
 The Bash task also has a shortcut syntax in YAML:
 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Authenticate access with personal access tokens
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATs.
 
@@ -26,7 +26,7 @@ Azure DevOps uses enterprise-grade authentication to help protect and secure you
 
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
-[!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
+[!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
 ## Related articles
 
@@ -57,11 +57,11 @@ A: Users receive two notifications during the lifetime of a PAT, one at creation
 
 The following notification is sent at PAT creation:
 
-![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
+![PAT creation notification](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
 The following notification is sent - a PAT is near expiration:
 
-![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
+![PAT near expiration notification](media/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
 ### Q: What does "Full Access" mean?
 

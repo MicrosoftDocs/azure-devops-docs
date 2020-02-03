@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for Test Case Management Reporting
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 ## I am using Microsoft Test Manager (MTM) for my testing activities - what type of reports can I see within MTM?
 
@@ -24,7 +24,7 @@ You can view basic reporting information within Microsoft Test Manager:
 
   This provides a status of all the tests that have been run, along with their current outcomes, within that specific test plan. This data is aggregated across all suites within the Test Plan. You can view this from the Test Plan Properties page.
 
-  ![clip_image001](_img/tcm-reporting/tcm-01.png)
+  ![clip_image001](media/tcm-reporting/tcm-01.png)
 
 * Test Run status at a Test Suite Level:
 
@@ -33,7 +33,7 @@ You can view basic reporting information within Microsoft Test Manager:
   > [!NOTE]
   > The data shown at a suite level includes the tests that are explicitly within that suite node only - it does not include all the child suites within that suite.
 
-  ![clip_image002](_img/tcm-reporting/tcm-02.png)
+  ![clip_image002](media/tcm-reporting/tcm-02.png)
 
 ## I would like to create reports in Excel using Work Item Queries, but I cannot do so for all the Test artifacts such as Test Suites, Test Runs etc? Why?
 
@@ -43,7 +43,7 @@ You can use the above method to query for any TFS "Work Items". So, you should b
 
 However, all the other Test artifacts, such as Test Plan, Test Settings, Test Configurations, Test Suites, Test Points etc are not "work items". Hence, you cannot use the work item queries for them.
 
-![clip_image003](_img/tcm-reporting/tcm-03.png)
+![clip_image003](media/tcm-reporting/tcm-03.png)
 
 All the test artifacts which are enclosed within the black box (in above diagram) are not work items but they are stored directly within the Test Case Management store.
 
@@ -55,7 +55,7 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
 1. Excel Reports: These reports use Excel to connect to the TFS warehouse or Analysis cube to display the reporting data. The figure below shows the list of all Excel reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
-   ![clip_image004](_img/tcm-reporting/tcm-04.png)
+   ![clip_image004](media/tcm-reporting/tcm-04.png)
 
    All the test specific reports are highlighted in the above diagram.
 
@@ -87,7 +87,7 @@ There are two types of reports that can be viewed from Team Explorer - Excel Rep
 
 2. Reporting Services based Reports: The figure below shows the list of all Reporting Services based reports that ship out of the box. Depending upon the process template (Agile, CMMI) you used at the time of creation of the project, the respective reports are created at project creation time.
 
-   ![clip_image005](_img/tcm-reporting/tcm-05.png)
+   ![clip_image005](media/tcm-reporting/tcm-05.png)
 
    All the test specific reports are highlighted in the above diagram.
 
@@ -153,19 +153,19 @@ For changing the Data source on the Excel reports [Dev10-Agile-ExcelReports.zip 
 
 1. Open one of the Excel Reports file, go to the "Data" tab in Excel, then click on "Connections"
 
-   ![clip_image006](_img/tcm-reporting/tcm-06.jpg)
+   ![clip_image006](media/tcm-reporting/tcm-06.jpg)
 
 2. It should open up the following window, Click on "Properties"
 
-   ![clip_image007](_img/tcm-reporting/tcm-07.jpg)
+   ![clip_image007](media/tcm-reporting/tcm-07.jpg)
 
 3. Connection Properties window opens up, click on "Definition" tab
 
-   ![clip_image008](_img/tcm-reporting/tcm-08.jpg)
+   ![clip_image008](media/tcm-reporting/tcm-08.jpg)
 
 4. In the Definition tab, update the connection string and then keep clicking on OK all the way back.
 
-   ![clip_image009](_img/tcm-reporting/tcm-09.jpg)
+   ![clip_image009](media/tcm-reporting/tcm-09.jpg)
 
    Change the Connection String
 
@@ -189,27 +189,27 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
   1. From "Data" tab, click on "From Other Sources->From Analysis Services" option
 
-     ![clip_image010](_img/tcm-reporting/tcm-10.jpg)
+     ![clip_image010](media/tcm-reporting/tcm-10.jpg)
 
   1. Provide the name of your TFS server.
 
-     ![clip_image011](_img/tcm-reporting/tcm-11.jpg)
+     ![clip_image011](media/tcm-reporting/tcm-11.jpg)
 
   1. This should connect you to the TFS_Analysis database. If your Azure DevOps data warehouse uses SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube. Choose the CUBE or the TEST perspective to create test related reports.
 
-     ![clip_image012](_img/tcm-reporting/tcm-12.jpg)
+     ![clip_image012](media/tcm-reporting/tcm-12.jpg)
 
   1. Save the connection information locally or it can also be saved on a SharePoint.
 
-     ![clip_image013](_img/tcm-reporting/tcm-13.jpg)
+     ![clip_image013](media/tcm-reporting/tcm-13.jpg)
 
   1. Select where you want to create the PivotTable Report or PivotChart
 
-     ![clip_image014](_img/tcm-reporting/tcm-14.jpg)
+     ![clip_image014](media/tcm-reporting/tcm-14.jpg)
 
   1. Drag and drop various dimensions and measures from Pivot table field list to construct your custom report.
 
-     ![clip_image015](_img/tcm-reporting/tcm-15.jpg)
+     ![clip_image015](media/tcm-reporting/tcm-15.jpg)
 
 * **Use existing out-of-the-box Excel reports as a starting point**
 
@@ -221,7 +221,7 @@ There are two ways of doing this, start from scratch or use one of the existing 
 
 All the test related measures present in the Analysis Services cube are shown below:
 
-![clip_image016](_img/tcm-reporting/tcm-16.png)
+![clip_image016](media/tcm-reporting/tcm-16.png)
 
 Description for each of above measures can be found here:
 
@@ -235,7 +235,7 @@ A list of all the perspectives and measure groups present in Team Foundation Ser
 
 All the dimensions present in the Analysis Services cube are shown below:
 
-![clip_image017](_img/tcm-reporting/tcm-17.png)
+![clip_image017](media/tcm-reporting/tcm-17.png)
 
 Description for all the Test specific dimensions can be found here:
 
@@ -279,4 +279,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

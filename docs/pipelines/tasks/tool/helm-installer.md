@@ -6,9 +6,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: ed0fe761-60c2-4bbe-b027-819569b56a3d
-ms.manager: shasb
-ms.author: shasb
-author: shashankbarsin
+ms.manager: atulmal
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 04/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -21,7 +21,7 @@ This task can be used for installing a specific version of helm binary on agents
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/HelmInstallerV1.md)]
+[!INCLUDE [temp](../includes/yaml/HelmInstallerV1.md)]
 
 ::: moniker-end
 
