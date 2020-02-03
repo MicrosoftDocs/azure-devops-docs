@@ -53,7 +53,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     project: string # project for the source; optional for current project
     source: string  # source definition of the pipeline
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
-    branch: string  # branch to pick the artifact, optional; defaults to master branch
+    branch: string  # branch to pick the artifact, optional; defaults to all branches
     tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
