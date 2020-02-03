@@ -17,22 +17,27 @@ The first question that you face is about how to organize your team projects in 
 It's important to understand what resources your pipeline can access.
 [Resources](resources.md) are covered in another topic.
 
-For now, it's enough to know that a pipeline can access two types of resources:
-1. **Protected resources**.
+For now, it's enough to know that a pipeline can access two types of resources, protected and open.
+
+## Protected resources
+
 Your pipelines often have access to secrets.
 For instance, to sign your build, you need a signing certificate.
 To deploy to a production environment, you need a credential to that environment.
 In Azure Pipelines, all of the following are considered *protected* resources:
-  - service connections
-  - variable groups
-  - secure files
-  - agent pools
-  - environments
+- service connections
+- variable groups
+- secure files
+- agent pools
+- environments
+
 "Protected" means:
-  a. They can be made accessible to specific users and specific pipelines within the project.
-  They cannot be accessed by users and pipelines outside of a project.
-  b. You can run additional manual or automated checks every time a pipeline uses one of these resources.
-2. **Open resources**.
+a. They can be made accessible to specific users and specific pipelines within the project.
+They cannot be accessed by users and pipelines outside of a project.
+b. You can run additional manual or automated checks every time a pipeline uses one of these resources.
+
+## Open resources
+
 All the other resources in a project - repositories, artifacts, pipelines, test plans, work items, and so on - are considered *open* resources.
 Every job in your pipeline receives an access token, which has permissions to read open resources.
 In some cases, pipelines may also update those resources.

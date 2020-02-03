@@ -156,7 +156,27 @@ Template parameters provide type safety to input parameters.
 For instance, it can restrict which pools can be used in a pipeline by offering an enumeration of possible options rather than a freeform string.
 
 ```yaml
-TODO
+# template.yml
+parameters:
+- name: userpool
+  type: string
+  default: Azure Pipelines
+  values:
+  - Azure Pipelines
+  - private-pool-1
+  - private-pool-2
+
+pool: ${{ parameters.userpool }}
+steps:
+- script: # ... removed for clarity
+```
+
+```yaml
+# azure-pipelines.yml
+extends:
+  template: template.yml
+  parameters:
+    userpool: private-pool-1
 ```
 
 ### Additional steps
