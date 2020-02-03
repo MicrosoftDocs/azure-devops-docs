@@ -15,7 +15,7 @@ monikerRange: '> azure-devops-2019'
 
 [Checks on protected resources](resources.md) are the basic building block of security for Azure Pipelines.
 These work no matter the structure - the stages and jobs - of your pipeline.
-If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](TODO).
+If several pipelines in your team or organization have the same structure, you can further simplify security using [templates](../process/templates.md).
 
 Azure Pipelines offers two kinds of templates: **includes** and **extends**.
 Included templates behave like `#include` in C++: it's as if you paste the template's code right into the outer file which references it.
