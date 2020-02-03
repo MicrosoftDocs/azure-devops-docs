@@ -14,14 +14,38 @@ monikerRange: '> azure-devops-2019'
 # Protected resources
 
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
-When pipelines run, access to protected resources goes through a system called [checks](../process/approvals.md).
+When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).
 Checks can suspend or even fail a pipeline run in order to keep resources safe.
-As a reminder, protected resources are:
+A pipeline can access two types of resources, protected and open.
+
+## Protected resources
+
+Your pipelines often have access to secrets.
+For instance, to sign your build, you need a signing certificate.
+To deploy to a production environment, you need a credential to that environment.
+In Azure Pipelines, all of the following are considered *protected* resources:
 - [agent pools](../agents/agents.md)
 - [variable groups](../library/variable-groups.md)
 - [secure files](../library/secure-files.md)
 - [service connections](../library/service-endpoints.md)
 - [environments](../process/environments.md)
+
+"Protected" means:
+- They can be made accessible to specific users and specific pipelines within the project.
+They cannot be accessed by users and pipelines outside of a project.
+- You can run additional manual or automated checks every time a pipeline uses one of these resources.
+
+## Open resources
+
+All the other resources in a project are considered *open* resources.
+Open resources include:
+- repositories
+- artifacts
+- pipelines
+- test plans
+- work items
+
+You'll learn more about which pipelines can access what resources in the section on [projects](projects.md).
 
 ## User permissions
 
@@ -66,4 +90,4 @@ For instance, your logic could ensure that the code has been reviewed by a certa
 
 ![Screenshot of configuring checks](media/configure-checks.png)
 
-Runtime security can be enhanced through [template-based security](templates.md).
+Also consider [project structure](projects.md), which deals in how you group resources.
