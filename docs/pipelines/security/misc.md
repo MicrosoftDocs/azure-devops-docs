@@ -15,17 +15,20 @@ monikerRange: '> azure-devops-2019'
 
 There are a handful of other things you should consider when securing pipelines.
 
-## Recommendations depend on each other
-
-The topics in this section have complex interdependencies.
-Your precise security posture will depend heavily on which recommendations you choose to implement.
-That in turn depends on the particular concerns of your DevOps team, your security team, and the policies & practices of your organization.
-
-You may choose to tighten up security in a critical area, and accept a different trade-off in favor of convenience for another area.
-For example, if you use `extends` templates to enforce that all builds run in containers, you may not need a physically separate agent pool per project.
-
 ## Relying on PATH
 
 Relying on the agent's `PATH` setting is dangerous.
 It may not point where you think it does, since a previous script or tool could have altered it.
 For security-critical scripts and binaries, always use a fully qualified path to the program.
+
+## Logging of secrets
+
+Azure Pipelines attempts to scrub secrets from logs wherever possible.
+This filtering is on a best-effort basis and cannot catch every way that secrets can be leaked.
+Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
+
+## Use the Auditing service
+
+A number of pipeline events are recorded in the Auditing service.
+Review the audit log periodically to ensure no malicious changes have slipped past.
+Visit `https://dev.azure.com/ORG-NAME/_settings/audit` to get started.

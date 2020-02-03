@@ -41,9 +41,10 @@ Instead, explicitly granted access to specific pipelines that you trust.
 
 ## Checks
 
-A combination of user and pipeline permissions is still not enough to secure your protected resources.
+In YAML, a combination of user and pipeline permissions is not enough to fully secure your protected resources.
 If your pipeline already has permission to access one such resource, nothing prevents an adversary from creating another branch in your repository, injecting malicious code, and using the same pipeline to access that resource.
-In order to prevent this, you need one or more of the following checks configured on your protected resource:
+Also, even without malicious intent, it's often good practice to have a second set of eyes look over changes (especially to the pipeline itself) before deploying to production.
+**Checks** allow you to pause the pipeline run until certain conditions are met:
 - **Manual approval check**.
 Every run that uses a project protected resource is blocked for your manual approval before proceeding.
 This gives you the opportunity to review the code and ensure that it is coming from the right branch.
