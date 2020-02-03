@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 01/29/2019
+ms.date: 02/03/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -19,9 +19,9 @@ monikerRange: 'azure-devops'
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 
-An Azure DevOps orphaned organization occurs when the organization owner and all Project Collection Administrators are inactive or have left the company. This causes the organization to be without an administrator and no way of transferring administrator rights to another person. 
+An Azure DevOps orphaned organization occurs when the organization owner and all Project Collection Administrators are inactive in Azure Active Directory (Azure AD) or have left the company. This causes the organization to be without an administrator and no way of transferring administrator rights to another user. 
 
-For organizations connected to Azure Active Directory (Azure AD), if your organization owner or all other Project Collection Administrators are inactive, you can transfer ownership to another user.
+For organizations connected to Azure Active Directory (Azure AD), if your organization owner or all other Project Collection Administrators are inactive in Azure AD, you can transfer ownership to another user.
 
 > [!NOTE]   
 > If you simply want to change the organization owner and aren't under the banner of orphaned organization, then see [Change organization owner](change-organization-ownership.md). 
