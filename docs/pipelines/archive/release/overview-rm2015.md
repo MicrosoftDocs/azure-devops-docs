@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release Management 2015 (server and client version)
 
-[!INCLUDE [previous-version-header](_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](includes/previous-version-header.md)]
 
 Improve the process of managing the release of your app.
 Deploy your app to a specific environment for each separate stage.
@@ -37,5 +37,5 @@ Manage the tasks in the process with approvals for each task.
     * [Tools for release actions](previous-version/release-actions/release-action-tools.md)
   - [Configuration variables and system variables](previous-version/config-and-system-variables.md)
 
-[!INCLUDE [wpfver-support-shared](_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](includes/wpfver-support-shared.md)]
 

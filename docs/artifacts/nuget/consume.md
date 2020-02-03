@@ -16,4 +16,4 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-[!INCLUDE [](../_shared/nuget/consume.md)]
+[!INCLUDE [](../includes/nuget/consume.md)]

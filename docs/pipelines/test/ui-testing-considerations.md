@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # UI testing considerations
 
-[!INCLUDE [version-header-vsts-tfs2017](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-header-vsts-tfs2017](../includes/version-tfs-2017-rtm.md)]
 
 When running automated tests in the CI/CD pipeline, you may need a special configuration
 in order to run UI tests such as Selenium, Appium or Coded UI tests. This topic describes
@@ -26,11 +26,11 @@ the typical considerations for running UI tests.
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later.
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
-## Pre-requisites
+## Prerequisites
 
 Familiarize yourself with [agents](../agents/agents.md) and [deploying an agent on Windows](../agents/v2-windows.md). 
 
@@ -126,7 +126,7 @@ Running the batch file from this shortcut disconnects from the remote desktop bu
 If you are provisioning virtual machines (VMs) on Azure, agent configuration for UI testing is available
 through the [Agent artifact for DevTest Labs](https://github.com/Azure/azure-devtestlab/tree/master/Artifacts/windows-vsts-build-agent).
 
-![agentArtifactDTL](_img/agentartifact-dtl.png)
+![agentArtifactDTL](media/agentartifact-dtl.png)
 
 ## Setting screen resolution
 
@@ -200,6 +200,6 @@ to the test result. For this, you must configure the
 [video data collector in a **.runsettings** file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 and this file must be specified in the task settings.
 
-![runSettings](_img/runsettings-in-vs-task.png)
+![runSettings](media/runsettings-in-vs-task.png)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

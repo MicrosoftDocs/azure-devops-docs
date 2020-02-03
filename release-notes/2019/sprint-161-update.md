@@ -22,27 +22,27 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-161-update-links](_shared/general/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/general/sprint-161-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-161-update-links](_shared/pipelines/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/pipelines/sprint-161-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-161-update-links](_shared/repos/sprint-161-update-links.md)]
+[!INCLUDE [sprint-161-update-links](includes/repos/sprint-161-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-161-update](_shared/general/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/general/sprint-161-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-161-update](_shared/pipelines/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/pipelines/sprint-161-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-161-update](_shared/repos/sprint-161-update.md)]
+[!INCLUDE [sprint-161-update](includes/repos/sprint-161-update.md)]
 
 ## Next steps
 
@@ -59,10 +59,10 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/make-a-suggestion.png)
+> ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 
 Thanks,
 
-[!INCLUDE [sprint-161](_shared/signer/sprint-161.md)]
+[!INCLUDE [sprint-161](includes/signer/sprint-161.md)]

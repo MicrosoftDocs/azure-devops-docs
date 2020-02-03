@@ -16,7 +16,7 @@ ms.date: 04/10/2019
 
 # Work items quick reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -260,7 +260,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items" data-raw-source="[Remove work items](../backlogs/remove-delete-work-items.md#remove-work-items)">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md" data-raw-source="[Request feedback ](../../project/feedback/get-feedback.md)">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items)">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md#restore-work-items" data-raw-source="[Restore deleted work items](../backlogs/remove-delete-work-items.md#restore-work-items)">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
@@ -355,7 +355,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items"">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding ](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>
@@ -439,7 +439,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
 <li><a href="../../project/feedback/get-feedback.md">Request feedback </a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items"">Restore deleted work items</a></li>
+<li><a href="../backlogs/remove-delete-work-items.md">Restore deleted work items</a></li>
 <br/>
 <li><a href="../queries/share-plans.md#storyboard" data-raw-source="[Start storyboarding](../queries/share-plans.md#storyboard)">Start storyboarding </a></li>
 <li><a href="../queries/triage-work-items.md" data-raw-source="[Triage work items](../queries/triage-work-items.md)">Triage work items</a></li>

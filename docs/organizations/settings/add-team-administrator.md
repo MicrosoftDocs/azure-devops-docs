@@ -16,7 +16,7 @@ ms.date: 11/01/2019
 
 # Add a team administrator 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 <a id="add-team-admin">  </a>  
@@ -54,17 +54,17 @@ If you need to add a team, see [Add teams](add-teams.md).
 
 1. Choose **Project settings** and choose **Teams**. 
 
-   ![Open Project settings, and then Teams](_img/_shared/open-project-settings-teams-preview.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
 2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, Add a team admin](_img/add-team-admin/settings-add-team-administrator-preview.png)  
+	> ![Team profile, Add a team admin](media/add-team-admin/settings-add-team-administrator-preview.png)  
 
 3. Enter the identities you want to add to the administrator role, and then select **Save**.     
 	    
 	> [!div class="mx-imgBorder"]
-	> ![Add team administrator dialog](_img/add-team-admin/add-team-administrator-dialog-preview.png)
+	> ![Add team administrator dialog](media/add-team-admin/add-team-administrator-dialog-preview.png)
 
 #### [Current page](#tab/current-page) 
 
@@ -72,17 +72,17 @@ From the web portal, open the admin page for the team.
 
 1. Choose **Project settings** and choose **Teams**. 
 
-   ![Open Project settings, and then Teams](_img/_shared/open-project-settings-team-new-nav.png)
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Select the team to configure, select **Settings**, and then select **Add** to open the dialog for adding user identities. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, Add a team admin](_img/add-team-admin/settings-add-team-administrator.png)  
+	> ![Team profile, Add a team admin](media/add-team-admin/settings-add-team-administrator.png)  
 
 3. Enter the identities you want to add to the administrator role, and then select **Save**.     
 	    
 	> [!div class="mx-imgBorder"]
-	> ![Add team administrator dialog](_img/add-team-admin/add-administrators-dialog.png)
+	> ![Add team administrator dialog](media/add-team-admin/add-administrators-dialog.png)
 
 * * *
 
@@ -92,57 +92,57 @@ From the web portal, open the admin page for the team.
 
 1. Choose **Project Settings** and choose **Teams**. 
 
-      ![Open Project settings, and then Teams](_img/_shared/open-project-settings-team-new-nav.png)
+      ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
 
 2. Choose the team to configure, and then choose the **Add** link to open the dialog for adding user identities. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, Add a team admin](_img/add-team-admin/team-profile-choose-add-admin.png)  
+	> ![Team profile, Add a team admin](media/add-team-admin/team-profile-choose-add-admin.png)  
 
 3. Enter the identities you want to add to the team administrator role.     
 	    
 	> [!div class="mx-imgBorder"]
-	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
+	> ![Add team administrator dialog](media/add-team-admin/add-team-admin-dialog.png)
    
 ::: moniker-end    
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open **Team Settings**.
+1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open **Team Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Team Settings](_img/add-team-admin/open-team-settings-horz.png)
+	> ![Open Team Settings](media/add-team-admin/open-team-settings-horz.png)
 
-	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose the ![ ](../../media/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.  
 
-	![Open team administrator context](_img/add-team/admin-link.png)  
+	![Open team administrator context](media/add-team/admin-link.png)  
    
 3. Enter the identities you want to add to the team administrator role.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team administrator dialog](_img/add-team-admin/add-team-admin-dialog.png)
+	> ![Add team administrator dialog](media/add-team-admin/add-team-admin-dialog.png)
    
 ::: moniker-end     
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal and team context, choose the ![ ](../../_img/icons/gear_icon.png) gear icon to open the administration page.
+1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, TFS, Open Admin context, project level](../../_shared/_img/settings/open-admin-page-tfs2015.png)
+	> ![Web portal, TFS, Open Admin context, project level](../../media/settings/open-admin-page-tfs2015.png)
 
-	If you choose the ![ ](../../_img/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose the ![ ](../../media/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.    
   
-	![Web portal, TFS 2015, Open team administration context](_img/add-team/add-account-as-team-admin.png)
+	![Web portal, TFS 2015, Open team administration context](media/add-team/add-account-as-team-admin.png)
 
 3. Enter the identities you want to add to the team administrator role.     
 
-	![Add team administrator dialog](_img/add-team/team-admin-dialog.png)    
+	![Add team administrator dialog](media/add-team/team-admin-dialog.png)    
 	
 ::: moniker-end  
 

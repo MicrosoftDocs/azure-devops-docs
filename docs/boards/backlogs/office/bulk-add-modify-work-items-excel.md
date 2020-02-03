@@ -16,7 +16,7 @@ ms.date: 12/03/2019
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
@@ -108,14 +108,14 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	(1) Choose Team tab, (2) place your cursor in Cell A1, and then (3) choose **New List**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Choose New List](_img/bulk-modify-excel-blank-list.png)
+	> ![Team Ribbon, Choose New List](media/bulk-modify-excel-blank-list.png)
 
     > [!TIP]  
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](tfs-office-integration-issues.md). 
 
 4.  Connect to your project where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
-    ![New List](_img/excel/team-ribbon.png)
+    ![New List](media/excel/team-ribbon.png)
 
     If it is your first time connecting from Excel, you might have to add the URL to the list of recognized servers.
 
@@ -123,13 +123,13 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, and (4) check that the preview matches the URL that you entered. Then choose **OK**. 
 
-	![Connect to Team Foundation Server dialog](_img/connect/4-steps-connect-to-cloud.png)
+	![Connect to Team Foundation Server dialog](media/connect/4-steps-connect-to-cloud.png)
 
 	**Azure DevOps Server or TFS**  
 
 	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a non-default port number. The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
 
-    ![Connect to Team Foundation Server dialog](_img/create-your-backlog-tasks-using-project/IC658167.png)
+    ![Connect to Team Foundation Server dialog](media/create-your-backlog-tasks-using-project/IC658167.png)
 
 	Choose **Close** to close the Add/Remove servers dialog. From the Select a Team Foundation Server dialog, make sure the server you added is selected, and then choose **Connect**. 
 
@@ -139,10 +139,10 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 5. From the New List dialog, choose **Input list**.  
 
 	::: moniker range=">= tfs-2017"
-    ![Select input list](_img/excel/2019-input-list-dialog.png)
+    ![Select input list](media/excel/2019-input-list-dialog.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-    ![Select input list](_img/bulk-modify-excel-new-input-list.png)
+    ![Select input list](media/bulk-modify-excel-new-input-list.png)
 	::: moniker-end
 
 	If, instead, you want to work with a list of work items defined in a query, choose **Query list**.
@@ -151,20 +151,20 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Empty flat list connected to a project](_img/excel/2019-input-list.png)
+	> ![Empty flat list connected to a project](media/excel/2019-input-list.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-    ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
+    ![Empty flat list connected to a project](media/bulk-modify-excel-connected-list.png)
 	::: moniker-end
 
 7.  Specify the titles of the work items you want to add and their work item type.
 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](_img/excel/2019-specify-titles.png)
+	> ![Add work items to Excel](media/excel/2019-specify-titles.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-    ![Add work items to Excel](_img/bulk-modify-excel-connected-list-user-stories.png)
+    ![Add work items to Excel](media/bulk-modify-excel-connected-list-user-stories.png)
 	::: moniker-end
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
@@ -173,10 +173,10 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](_img/excel/2019-publish.png)
+	> ![Add work items to Excel](media/excel/2019-publish.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-    ![Publish work items from Excel to the data store](_img/bulk-modify-excel-publish.png)
+    ![Publish work items from Excel to the data store](media/bulk-modify-excel-publish.png)
 	::: moniker-end
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
@@ -185,20 +185,20 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Published work item IDs show in Excel](_img/excel/2019-ids-assigned.png)
+	> ![Published work item IDs show in Excel](media/excel/2019-ids-assigned.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-    ![Published work item IDs show in Excel](_img/bulk-modify-excel-notice-ids.png)
+    ![Published work item IDs show in Excel](media/bulk-modify-excel-notice-ids.png)
 	::: moniker-end
 
 9.  Also, note how you can open a work item in the web portal to add more information.
 
 	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Open a work item in the web portal from Excel](_img/excel/2019-open-in-web-access.png)
+	> ![Open a work item in the web portal from Excel](media/excel/2019-open-in-web-access.png)
 	::: moniker-end
 	::: moniker range="< tfs-2017"
-	![Open a work item in the web portal from Excel](_img/bulk-modify-excel-open-web-access.png)
+	![Open a work item in the web portal from Excel](media/bulk-modify-excel-open-web-access.png)
 	::: moniker-end
 
 ::: moniker range=">= azure-devops" 
@@ -219,8 +219,8 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 
 > [!TIP]
 > **Follow these tips to keep your work in sync:**   
->- When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](_img/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.  
->- Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](_img/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.  
+>- When you first open a saved worksheet, use ![Refresh icon in Excel on Team ribbon](media/bulk-modify-excel-refresh-inline.png) (**Refresh**) to download the latest data from the data store.  
+>- Enter data for additional fields by adding columns to the worksheet using ![Choose Column icon in Excel on Team ribbon](media/bulk-modify-excel-choose-columns-inline.png) <strong>Choose Columns</strong>.  
 >- To avoid data conflicts, publish your additions and modifications often.  
 >- To prevent loss of data before you publish or refresh, save your workbook periodically.  
 
@@ -238,19 +238,19 @@ You can use the Select User feature to find user accounts and assign values to p
 
 2. Choose a person-named field to activate the **Select User** feature in the Team ribbon.  
 
-	![Team ribbon, Select User](_img/bulk-add-excel-select-user-team-ribbon.png)  
+	![Team ribbon, Select User](media/bulk-add-excel-select-user-team-ribbon.png)  
 
 	A person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Azure Active Directory, Active Directory, or a Workgroup. Such fields are identified as those whose `syncnamechanges` attribute has been set to [synchronize](../../../reference/xml/field-definition-element-reference.md).  
 
 3. Begin typing the name of the user account and the Assign User dialog will automatically filter the results until you can select the account of interest.  
 
-	![Assign User dialog](_img/bulk-add-excel-assign-user.png)  
+	![Assign User dialog](media/bulk-add-excel-assign-user.png)  
 
 	Enter a letter to tab to the start of names beginning with that letter. Enter only user names as account aliases aren't recognized.   
 
 	You'll notice that as you select user names, Excel remembers your recent selections and you can select those user accounts directly from the field.   
 
-	![Assigned to field, Drop-down menu shows most recently used values](_img/bulk-add-excel-assign-to-field.png)  
+	![Assigned to field, Drop-down menu shows most recently used values](media/bulk-add-excel-assign-to-field.png)  
 
 > [!TIP]  
 > Without the Select User feature active, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
@@ -263,14 +263,14 @@ You can bulk add a nested list of work items, such as a work breakdown structure
 
 Here's how a three-level nested tree of items appears in Excel:   
 
-![Tree list of work items](_img/IC354953.png)
+![Tree list of work items](media/IC354953.png)
 
 > [!IMPORTANT]  
 > Note that only the Parent-Child link types are supported by the Tree list. 
 
 Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
 
-[!INCLUDE [temp](../../_shared/work-item-types-hierarchy.md)]
+[!INCLUDE [temp](../../includes/work-item-types-hierarchy.md)]
 
 To import a hierarchical list, perform the following steps: 
 
@@ -278,19 +278,19 @@ To import a hierarchical list, perform the following steps:
 
 2.  Convert your flat list to a tree list by adding a tree level.
 
-    ![Convert flat list to tree list](_img/bulk-modify-excel-convert-to-tree-composite.png)
+    ![Convert flat list to tree list](media/bulk-modify-excel-convert-to-tree-composite.png)
 
     Notice how the list type is now labeled **Tree**, and an additional **Title 2** column has been inserted.
 
-    ![Empty tree list connected to data store](_img/bulk-modify-excel-tree-list-type.png)
+    ![Empty tree list connected to data store](media/bulk-modify-excel-tree-list-type.png)
 
 3.  Enter titles for backlog items under **Title 1** and for tasks, under **Title 2**. Also, select the corresponding work item type for each. Here we specify Task.
 
-    ![Tree list of work items to publish](_img/bulk-modify-excel-tree-list-with-tasks.png)
+    ![Tree list of work items to publish](media/bulk-modify-excel-tree-list-with-tasks.png)
 
 4.  Just as before, publish your worksheet and notice how IDs are assigned to the new work items.
 
-    ![Publish a tree list of work items](_img/bulk-modify-excel-published-tree-list.png)
+    ![Publish a tree list of work items](media/bulk-modify-excel-published-tree-list.png)
 
     In the background, parent-child links are created for each task listed under a user story.
 
@@ -304,7 +304,7 @@ To import a hierarchical list, perform the following steps:
 	- Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row.
 	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
 - To resolve an error, see [Resolve invalid links in an Excel tree list](resolve-excel-invalid-links-tree-list.md).
-- You can use the ![indent item in tree](_img/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](_img/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
+- You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
 - A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
 - If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
 - When you move a work item, make sure that you select the entire table row. 
@@ -378,7 +378,7 @@ On the **Team** ribbon, choose **Configure**, **List**, and then select the quer
 
 ### Add existing work items to a list
 
-If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](_img/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
+If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
 

@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 # TF30169: The New Team Project Wizard was unable to download the process template {0}.
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the project. This error can occur due to one of the following conditions:  
   

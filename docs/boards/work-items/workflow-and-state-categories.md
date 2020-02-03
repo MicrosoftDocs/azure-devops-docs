@@ -1,4 +1,4 @@
-﻿---
+---
 title: Backlogs/boards workflow states & state categories
 titleSuffix: Azure Boards   
 description: Understand how workflow states map to state categories and are used in boards and backlogs in Azure Boards & TFS
@@ -8,7 +8,6 @@ ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 07/22/2019
@@ -16,7 +15,7 @@ ms.date: 07/22/2019
 
 # How workflow states and state categories are used in Backlogs and Boards
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 All workflows consist of states, transitions, and reasons. Workflows are defined for a work item type (WIT). A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
@@ -30,7 +29,7 @@ Workflow states define how a work item progresses upon its creation to closure. 
 
 The natural progressions and regressions of the user story, product backlog item, and requirement WITs are as shown. 
  
-[!INCLUDE [temp](../_shared/four-process-workflow.md)] 
+[!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
 
 <a id="state-categories">  </a>  
@@ -44,7 +43,7 @@ Here's how the default, inherited states map to the state categories for all thr
 
 #### [Basic process](#tab/basic-process) 
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 <table valign="top" width="100%">
 <tr>
@@ -212,7 +211,7 @@ Also, by adding custom states to support those workflow states that several team
 
 When you link a work item to a pull request (PR), you have the option to automatically complete those work items when you successfully complete the PR.  As shown in the following image, all you have to do is check the box to **Complete linked work items after merging**. The system defaults to your selection for future PRs. 
 
-![Complete pull request dialog, Autocomplete work items with completion of PR option](_img/workflow-states-complete-pr.png)
+![Complete pull request dialog, Autocomplete work items with completion of PR option](media/workflow-states-complete-pr.png)
 
 In the following circumstances the system won't automatically update the work item state to Done, Closed, or the state that belongs to the Closed category for the WIT: 
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   

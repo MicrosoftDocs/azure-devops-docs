@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Release variables and debugging
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -75,7 +75,7 @@ Using custom variables at project, release pipeline, and stage scope helps you t
   all occurrences as one operation.
 
 * Store sensitive values in a way that they cannot be seen
-  or changed by users of the release pipelines. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](_img/padlock-icon.png) (padlock) icon next to the variable.
+  or changed by users of the release pipelines. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](media/padlock-icon.png) (padlock) icon next to the variable.
 
   >The values of hidden (secret) variables are stored securely on
   the server and cannot be viewed by users after they are saved.
@@ -93,12 +93,12 @@ variable name in parentheses and precede it with a **$** character. For example,
 if you have a variable named **adminUserName**, you can insert the current
 value of that variable into a parameter of a task as `$(adminUserName)`.
 
-[!INCLUDE [variable-collision](../_shared/variable-collision.md)]
+[!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
 You can use custom variables to prompt for values during the execution of a release.
 For more details, see [Approvals](approvals/index.md#scenarios).
  
-[!INCLUDE [set-variables-in-scripts](../_shared/set-variables-in-scripts.md)]
+[!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
 
 ## Default variables
 
@@ -260,13 +260,13 @@ You can directly use a default variable as an input to a task.
 For example, to pass `Release.Artifacts.{Artifact alias}.DefinitionName` for the artifact source whose alias is **ASPNET4.CI** to a task,
 you would use `$(Release.Artifacts.ASPNET4.CI.DefinitionName)`.
 
-![Using artifact variables in arguments to a PowerShell Script task](_img/variables-01.png)
+![Using artifact variables in arguments to a PowerShell Script task](media/variables-01.png)
 
 To use a default variable in your script, you must first replace the `.` in the default variable names with `_`.
 For example, to print the value of artifact variable `Release.Artifacts.{Artifact alias}.DefinitionName` for the artifact source whose alias is **ASPNET4.CI** in a Powershell script,
 you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 
-![Using artifact variables in an inline PowerShell script](_img/variables-02.png)
+![Using artifact variables in an inline PowerShell script](media/variables-02.png)
 
 Note that the original name of the artifact source alias, `ASPNET4.CI`, is replaced by `ASPNET4_CI`.
 
@@ -277,11 +277,11 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 1. Open the pipelines view of the summary for the release, and choose the stage you are interested in.
    In the list of steps, choose **Initialize job**.
 
-   ![Opening the log for a release](_img/view-variable-values-link.png)
+   ![Opening the log for a release](media/view-variable-values-link.png)
 
 1. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
 
-   ![Viewing the values of the variables in a release](_img/view-variable-values.png)
+   ![Viewing the values of the variables in a release](media/view-variable-values.png)
 
 <a name="debug-mode"></a>
 
@@ -307,4 +307,4 @@ release stage, in debug mode. This can help you resolve issues and failures.
 >If you get an error related to an Azure RM service connection,
 see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

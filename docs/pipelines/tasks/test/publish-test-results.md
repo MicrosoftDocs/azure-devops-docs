@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Publish Test Results task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ troubleshoot failures, and drive failure ownership.
 
 The following example shows the task configured to publish test results.
 
-![Open the test history page](_img/publish-test-results.png)
+![Open the test history page](media/publish-test-results.png)
 
 You can also use this task in a build pipeline to **publish code coverage results**
 produced when running tests to Azure Pipelines or TFS in order to obtain coverage reporting. 
@@ -63,7 +63,7 @@ and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishTestResultsV2.md)]
 
 The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
@@ -399,4 +399,4 @@ All test sub-result published will only have the test case name and the data of 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

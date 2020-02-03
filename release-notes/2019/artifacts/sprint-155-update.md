@@ -12,12 +12,12 @@ ms.date: 07/22/2019
 
 ## Features
 
-[!INCLUDE [sprint-155-update-links](../_shared/artifacts/sprint-155-update-links.md)]
+[!INCLUDE [sprint-155-update-links](../includes/artifacts/sprint-155-update-links.md)]
 
-[!INCLUDE [sprint-155-update](../_shared/artifacts/sprint-155-update.md)]
+[!INCLUDE [sprint-155-update](../includes/artifacts/sprint-155-update.md)]
 
-[!INCLUDE [nextsteps](../_shared/nextsteps.md)]
+[!INCLUDE [nextsteps](../includes/nextsteps.md)]
 
 Thanks,
 
-[!INCLUDE [sprint-155](../_shared/signer/sprint-155.md)]
+[!INCLUDE [sprint-155](../includes/signer/sprint-155.md)]

@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2018'
 
 # Invoke REST API task
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ This task can be used in only an [agentless job](../../process/phases.md#server-
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
+[!INCLUDE [temp](../includes/yaml/InvokeRestApiV1.md)]
 
 ::: moniker-end
 
@@ -64,7 +64,7 @@ The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
 pipeline and, optionally, wait for it to be completed.
 
-![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
+![Configuring an Invoke REST API task](media/invoke-rest-api-task.png)
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 

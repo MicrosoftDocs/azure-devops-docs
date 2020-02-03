@@ -74,11 +74,11 @@ for future Marketplace purchases.
 2. From your project collection, 
    go to the Marketplace.
 
-   <img alt="Browse Marketplace in new navigation" src="_shared/_img/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Browse Marketplace in new navigation" src="media/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
 
 3. Find and select the extension that you want to install.
 
-   <img alt="Select a TFS extension" src="_img/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select a TFS extension" src="media/get-tfs-extensions/connected/marketplace-select-extension.png" style="border: 1px solid #CCCCCC" />
 
    TFS is connected to the Marketplace, so the Marketplace automatically filters and shows on-premises extensions only.
 
@@ -86,7 +86,7 @@ for future Marketplace purchases.
 
 5. Confirm the project collection where you want to install this extension.
 
-   <img alt="Select project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Select project collection" src="./media/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
 
 6. Finish installing your extension. 
 
@@ -95,7 +95,7 @@ for future Marketplace purchases.
    Also, tell your team about this extension, 
    so they can start using its capabilities too. 
 
-   <img alt="Extension installed" src="./_img/get-tfs-extensions/connected/assign-extension-to-users.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Extension installed" src="./media/get-tfs-extensions/connected/assign-extension-to-users.png" style="border: 1px solid #CCCCCC" />
 
    [Need help?](faq-extensions.md) 
 
@@ -126,13 +126,13 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 2. Find the extension that you want to install.
 
-   <img alt="View" src="_img/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />    
+   <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension.png" style="border: 1px solid #CCCCCC" />    
 
-   <img alt="View" src="_img/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
+   <img alt="View" src="media/get-tfs-extensions/standalone/marketplace-find-extension2.png" style="border: 1px solid #CCCCCC" />   
 
 3. Download and save your extension.
 
-   <img alt="Download and save your extension" src="./_img/get-tfs-extensions/standalone/download-extension.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Download and save your extension" src="./media/get-tfs-extensions/standalone/download-extension.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
    **TFS 2015 Update 3**
 
-   <img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-for-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Browse TFS extensions" src="./media/get-tfs-extensions/standalone/browse-for-extensions.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 1. Browse for your downloaded TFS extensions (```https://{server}:8080/tfs/_gallery```).
 
-   <img alt="Browse TFS extensions" src="./_img/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Browse TFS extensions" src="./media/get-tfs-extensions/standalone/browse-tfs-extensions-new.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -172,11 +172,11 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 2. Manage your extensions.
 
-   <img alt="Manage extensions" src="./_img/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Manage extensions" src="./media/get-tfs-extensions/standalone/manage-extensions.png" style="border: 1px solid #CCCCCC" />
 
 3. Upload the extension that you downloaded.
 
-	<img alt="Find and upload your downloaded extension" src="./_img/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Find and upload your downloaded extension" src="./media/get-tfs-extensions/standalone/upload-extension.png" style="border: 1px solid #CCCCCC" />
 
 	[[Why can't I upload extensions?](faq-extensions.md#q-why-cant-i-upload-extensions-to-tfs)]
 
@@ -184,15 +184,15 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 1. Select and install the extension that you just uploaded. 
 
-	<img alt="Select extension, then select Install" src="./_img/get-tfs-extensions/standalone/install-extension.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select extension, then select Install" src="./media/get-tfs-extensions/standalone/install-extension.png" style="border: 1px solid #CCCCCC" />
 
 1. Choose the project collection where you want to install the extension.
 
-	<img alt="Select project collection, select Continue" src="./_img/get-tfs-extensions/standalone/choose-collection.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select project collection, select Continue" src="./media/get-tfs-extensions/standalone/choose-collection.png" style="border: 1px solid #CCCCCC" />
 
 2. Review the permissions that the extension gets when it's installed. Finish installing your extension.
 
-	<img alt="Review the permissions granted to this extension" src="./_img/get-tfs-extensions/standalone/confirm.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Review the permissions granted to this extension" src="./media/get-tfs-extensions/standalone/confirm.png" style="border: 1px solid #CCCCCC" />
 
    You can now go to your project collection to use your extension. Also, remember to tell your team about this extension, so they can start using its capabilities too. 
 
@@ -208,19 +208,19 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 1. Hover over the shopping bag icon and select **Manage extensions**
 
-	![Manage extensions](./_img/get-tfs-extensions/standalone/manage-extensions.png)
+	![Manage extensions](./media/get-tfs-extensions/standalone/manage-extensions.png)
 
 2. Once on the Extensions page, select **Browse local extensions**
 
-	![Browse local extensions](./_img/get-tfs-extensions/standalone/browse-local-extensions.png)
+	![Browse local extensions](./media/get-tfs-extensions/standalone/browse-local-extensions.png)
 
 3. Scroll down until you see the Plan and track category, which includes **Delivery Plans**. Select **Delivery Plans**.
 
-   ![Choose your extension](./_img/get-tfs-extensions/standalone/delivery-plans.png)
+   ![Choose your extension](./media/get-tfs-extensions/standalone/delivery-plans.png)
 
 4. You're redirected to a local extension page for Delivery Plans where you select **Install**. Installation works when you are both online and offline.
 
-	![Delivery plans extension gallery](./_img/get-tfs-extensions/standalone/delivery-plans-gallery.png)
+	![Delivery plans extension gallery](./media/get-tfs-extensions/standalone/delivery-plans-gallery.png)
 
 ::: moniker-end
 
@@ -234,17 +234,17 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 2. Open the extensions menu and choose **Browse Marketplace**.
 
-   ![Browse Marketplace](_img/get-devops-extensions/install-devops-extension-01.png)
+   ![Browse Marketplace](media/get-devops-extensions/install-devops-extension-01.png)
 
 3. Find the extension that you want to install. Use the search box to filter the list of extensions.
 
-   ![Select an extension](_img/get-devops-extensions/install-devops-extension-02.png)
+   ![Select an extension](media/get-devops-extensions/install-devops-extension-02.png)
 
 4. Select the extension and choose **Get** or **Get it free**.
    Or, for some third-party extensions, choose **Get Started** to show pricing information
    and extension-specific installation instructions.
 
-   ![Get the extension](_img/get-devops-extensions/install-devops-extension-04.png)
+   ![Get the extension](media/get-devops-extensions/install-devops-extension-04.png)
 
    If you don't have permission to install the extension, you can request an administrator
    install it for you. Your request is [stored in Azure DevOps Server](#review-ext)
@@ -252,11 +252,11 @@ In this case, you can manage extensions in disconnected TFS by following the ste
 
 5. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](_img/get-devops-extensions/install-devops-extension-06.png)
+   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
 
 6. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
-   ![Installation done](_img/get-devops-extensions/install-devops-extension-07.png)
+   ![Installation done](media/get-devops-extensions/install-devops-extension-07.png)
 
 <a name="disconnected-devops"></a>
 
@@ -271,23 +271,23 @@ Users can install these extensions without requiring an external connection to M
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
+   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. In the Extensions page, choose **Browse local extensions**
 
-   ![Browse local extensions](_img/get-devops-extensions/install-devops-extension-09.png)
+   ![Browse local extensions](media/get-devops-extensions/install-devops-extension-09.png)
 
 3. Choose the extension you want to install.
 
-   ![Choose a local extension](_img/get-devops-extensions/install-devops-extension-10.png)
+   ![Choose a local extension](media/get-devops-extensions/install-devops-extension-10.png)
 
 4. Select the project collection where you want to install this extension and choose **Install**.
 
-   ![Select project collection](_img/get-devops-extensions/install-devops-extension-06.png)
+   ![Select project collection](media/get-devops-extensions/install-devops-extension-06.png)
 
 5. After installation is complete, go to the project collection or return to the Marketplace to find other extensions. 
 
-   ![Installation done](_img/get-devops-extensions/install-devops-extension-07.png)
+   ![Installation done](media/get-devops-extensions/install-devops-extension-07.png)
 
 ## Manage Azure DevOps Server extensions
 
@@ -297,11 +297,11 @@ Use the **Extensions** page to manage installed extensions.
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
+   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
 
 1. In the **Manage** tab, open the shortcut menu for the extension.
 
-   ![Disable or uninstall an extension](_img/get-devops-extensions/install-devops-extension-12.png)
+   ![Disable or uninstall an extension](media/get-devops-extensions/install-devops-extension-12.png)
 
 2. Choose **Disable** or **Uninstall**, as required.
 
@@ -311,12 +311,12 @@ Use the **Extensions** page to manage installed extensions.
 
 1. Open the extensions menu and choose **Manage Extensions**.
 
-   ![Manage extensions](_img/get-devops-extensions/install-devops-extension-13.png)
+   ![Manage extensions](media/get-devops-extensions/install-devops-extension-13.png)
 
 2. Open the **Requested** tab, review requests, and approve or reject them, as appropriate.
 
 3. Filter the list of requests by using the **Status** drop-down list at the right end of the tabs bar.
 
-   ![Filtering the list of extensions](_img/get-devops-extensions/install-devops-extension-15.png)
+   ![Filtering the list of extensions](media/get-devops-extensions/install-devops-extension-15.png)
 
 ::: moniker-end

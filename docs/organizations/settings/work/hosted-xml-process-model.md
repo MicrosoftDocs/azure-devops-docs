@@ -15,7 +15,7 @@ ms.date: 10/24/2019
 
 # Hosted XML process model  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
@@ -58,7 +58,7 @@ You can perform the following tasks with the Hosted XML process model.
 <li><a href="../../security/add-users-team-project.md" data-raw-source="[Person-name field (add users)](../../security/add-users-team-project.md)">Person-name field (add users)</a></li>
 <li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Add a custom pick list](../../../reference/add-modify-field.md#picklist)">Add a custom pick list</a></li>
 <li><a href="../../../reference/add-modify-field.md#picklist" data-raw-source="[Predefined field](../../../reference/add-modify-field.md#picklist)">Predefined field</a></li>
-<li><a href="../../../reference/customize-work.md#test-experience" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md#test-experience)">Resolution State or Failure Type</a></li>
+<li><a href="../../../reference/customize-work.md" data-raw-source="[Resolution State or Failure Type](../../../reference/customize-work.md)">Resolution State or Failure Type</a></li>
 <li><a href="../../../reference/xml/define-global-lists.md" data-raw-source="[Define global lists](../../../reference/xml/define-global-lists.md)">Define global lists</a> </li>
 </ul>
 </td>
@@ -133,7 +133,7 @@ This syntax has been been added to the following work item type definitions of t
 
 Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
-[![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
+[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
 
 
 

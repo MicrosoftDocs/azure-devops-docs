@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # Manage wikis
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../../includes/version-azure-devops.md)]
 
 In this article, find the following CLI commands for managing wikis.
 

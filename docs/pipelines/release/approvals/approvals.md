@@ -8,17 +8,17 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release deployment control using approvals
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When a release is created from a release pipeline that defines
@@ -86,16 +86,16 @@ Notifications such as an email message can be sent to the approver(s) defined fo
 each approval step. Configure recipients and settings in the **Notifications** section of the 
 [project settings page](../../../project/navigation/go-to-service-page.md#open-project-settings).
 
-![configuring notifications for manual approvals](_img/notifications.png)
+![configuring notifications for manual approvals](media/notifications.png)
   
 The link in the email message opens the **Summary** page for the release
 where the user can approve or reject the release.
 
-## Related topics
+## Related articles
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../deploy-using-approvals.md#configure-maninter)
 * [Stages](../../process/stages.md)
 * [Triggers](../triggers.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
