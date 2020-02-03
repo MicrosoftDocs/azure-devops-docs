@@ -16,7 +16,7 @@ monikerRange: '> azure-devops-2019'
 We recommend an incremental approach to securing your pipelines.
 Ideally you would implement all of the guidance we offer.
 But don't be daunted by the number of recommendations.
-And certainly, don't hold off making some improvements, even if you can't make all the changes at once.
+And certainly, don't hold off making *some* improvements just because you can't make all the changes at once.
 
 ## Recommendations depend on each other
 
