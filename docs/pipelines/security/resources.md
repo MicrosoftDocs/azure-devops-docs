@@ -1,5 +1,5 @@
 ---
-title: Protected resources
+title: Pipeline resources
 description: Permissions and approvals on important resources.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,7 +11,7 @@ ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'
 ---
 
-# Protected resources
+# Pipeline resources
 
 Azure Pipelines offers security mechanisms beyond just protecting the YAML file and source code.
 When pipelines run, access to resources goes through a system called [checks](../process/approvals.md).

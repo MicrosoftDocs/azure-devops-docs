@@ -41,7 +41,7 @@ The series also assumes familiarity with [Azure Pipelines](../overview.md), the 
 Topics covered:
 - [Incremental approach to improving security](approach.md)
 - [Repository protection](repos.md)
-- [Protected resources](resources.md)
+- [Pipeline resources](resources.md)
 - [Project structure](projects.md)
 - [Security through templates](templates.md)
 - [Variables and parameters](inputs.md)
