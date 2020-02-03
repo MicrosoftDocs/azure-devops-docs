@@ -112,21 +112,21 @@ A: The most common reason customers have received extra free user license grants
 
 ### Q: How do I pay for Azure DevOps support?
  
-Keep in mind that if you’re already using Azure, the chances are you already have an Azure support plan, so you can create a support request.
-If you need to report a service outage or get billing support, you don’t need to pay for support.
+Keep in mind that if you’re already using Azure, the chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request).
+If you need to [report a service outage](https://status.dev.azure.com/) or [get billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), you don’t need to pay for support.
  
-A: If you need technical support with Azure DevOps and don’t have an Azure support plan already, complete the following steps:
+A: If you need technical support with Azure DevOps and don’t have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
  
 1. Create an Azure subscription.
-  - Consider your purchase options and decide whether you’ll set up payment. direct with Azure, through a partner, or through a Microsoft representative.
-  - The simplest option is to Pay for Azure directly. It's free to create an Azure subscription, you’ll only pay for what you use.
+  - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you’ll set up payment. direct with Azure, through a partner, or through a Microsoft representative.
+  - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you’ll only pay for what you use.
  
 2. Pick a support plan.
-  - As part of signing up for an Azure subscription, you can pick a support plan.
+  - As part of signing up for an Azure subscription, you can pick a [support plan](https://azure.microsoft.com/support/plans/).
   - All support plans let you create unlimited support requests for a fixed monthly price.
   - All paid plans, including the Developer plan, offer technical support for Azure DevOps.
 3. Submit a support ticket.
-  - Now you can open a request via the Azure portal or learn how to create a support request. 
+  - Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). 
 
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
