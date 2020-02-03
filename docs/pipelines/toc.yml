@@ -736,12 +736,12 @@
       href: security/overview.md
     - name: Approach to securing YAML pipelines
       href: security/approach.md
-    - name: Project structure
-      href: security/projects.md
     - name: Repository protection
       href: security/repos.md
     - name: Protected resources
       href: security/resources.md
+    - name: Project structure
+      href: security/projects.md
     - name: Security through templates
       href: security/templates.md
     - name: Variables and parameters

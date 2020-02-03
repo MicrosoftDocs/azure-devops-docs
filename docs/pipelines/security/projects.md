@@ -13,38 +13,9 @@ monikerRange: '> azure-devops-2019'
 
 # Project structure
 
-The first question that you face is about how to organize your team projects in Azure DevOps.
-It's important to understand what resources your pipeline can access.
-[Resources](resources.md) are covered in another topic.
-
-For now, it's enough to know that a pipeline can access two types of resources, protected and open.
-
-## Protected resources
-
-Your pipelines often have access to secrets.
-For instance, to sign your build, you need a signing certificate.
-To deploy to a production environment, you need a credential to that environment.
-In Azure Pipelines, all of the following are considered *protected* resources:
-- service connections
-- variable groups
-- secure files
-- agent pools
-- environments
-
-"Protected" means:
-- They can be made accessible to specific users and specific pipelines within the project.
-They cannot be accessed by users and pipelines outside of a project.
-- You can run additional manual or automated checks every time a pipeline uses one of these resources.
-
-## Open resources
-
-All the other resources in a project are considered *open* resources.
-Open resources include:
-- repositories
-- artifacts
-- pipelines
-- test plans
-- work items
+Zooming out above the level of individual resources, you should also consider groups of resources.
+Resources are grouped by team projects in Azure DevOps.
+It's important to understand what resources your pipeline can access based on project settings and containment.
 
 Every job in your pipeline receives an access token, which has permissions to read open resources.
 In some cases, pipelines may also update those resources.
@@ -63,4 +34,4 @@ This setting can be found in **Azure DevOps** / **Organization settings** / **Pi
 
 ![Screenshot of job authorization scope UI](media/job-auth-scope.png)
 
-Once you have the right project structure in place, the next area to consider is how your [repositories](repos.md) provide protection.
+Once you have the right project structure in place, enhance runtime security using [templates](templates.md).
