@@ -29,7 +29,6 @@ This article provides guidance to configure and customize Azure Boards. You shou
 > [!NOTE]   
 > This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portolio planning tools, are only available for the cloud at this time. 
 
-<!--- Mention about first choice is the process selected for your project --> 
 
 If you're just getting started as a Project Administrator, see also [Get started as an administrator](../user-guide/project-admin-tutorial.md).
 
@@ -54,9 +53,6 @@ The primary items to consider as you structure your project are:
 - How you'll use portfolio backlog levels 
 - How you'll inform upper management of progress, status, and risks 
  
-
-<!--- team or project level??) , widgets  --> 
-
 Once you determine how you'll use the work tracking building blocks and tools, you'll want to make any necessary configurations and customizations to support your business and communicate to your teams how they should use the tools. 
 
 ## Work item types and portfolio backlogs
@@ -69,10 +65,8 @@ The default work item types for each supported process are shown in the followin
 
 You can add custom work item types at each level, and even add custom portfolio backlogs. Here, for example, is a project that added Objectives and Key Results as custom work item types and corresponding portfolio backlogs to the Scrum process. 
 
-
 > [!div class="mx-tdCol2BreakAll"]
 > ![Objectives and Key Results as additional portfolio backlogs](media/config-custom/portfolio-backlogs-objectives-results.png)  
-
 
 
 ## Work tracking options and recommended usage  
@@ -542,27 +536,6 @@ Team administrators are tasked with performing the following operations:
 For details on configuring backlogs and boards, see [Manage and configure team tools](../organizations/settings/manage-teams.md).
 
 
-<!---
-
-> [!NOTE]    
-> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../organizations/settings/add-team-administrator.md).
---> 
-
-
-<!--- 
-## User settings 
-
-The following user settings can impact on work tracking. 
-- Date Pattern
-- Time Pattern
-- Time Zone
-
-Impacts queries? 
-
-Computer settings --- 
- 
---> 
-
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -575,29 +548,3 @@ Computer settings ---
 - [Inherited process model](../organizations/settings/work/inheritance-process-model.md)  
 -  [Manage and configure team tools](../organizations/settings/manage-teams.md)  
 
-<!---
-Link from these topics to this article: 
-- About area paths and iteration paths
-- Define area paths
-- Define iteration paths
-- Choose a process 
-- Inherited process model
-- On-premises process model 
-
-Information to provide your teams
-The easiest way to group work items into a hierarchy is by mapping them, or adding them to the parent item on a Kanban board. To learn more, see [Organize your backlog, map child work items to parents](/azure/devops/boards/backlogs/organize-backlog#map-items-to-group-them-under-a-feature-or-epic) and [Kanban board features and epics](/azure/devops/boards/boards/kanban-epics-features-stories).
-
---> 
-
-<!---
-Minimize disruption to your team's processes 
-
-Organized by functional services.  
-User - ![ ](media/icons/profile.png)  
-Team - ![ ](media/icons/team.png)  
-Project - ![ ](media/icons/project.png)  
-Collection - ![ ](media/icons/collection.png)  
- 
- 
- 
---> 

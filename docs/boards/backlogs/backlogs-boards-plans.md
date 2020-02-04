@@ -148,7 +148,7 @@ To manage work, you have access to three classes of backlogs (portfolio, product
 
 You use work items to share information, assign work to team members, track dependencies, organize work, and more. You can apply different filters to your backlogs and boards to just show those items of interest. 
 
-[!INCLUDE [temp](../includes/note-config-customize.md)]
+[!INCLUDE [temp](../includes/note-configure-customize.md)]
 
 ### Portfolio, product, and sprint backlogs 
 
