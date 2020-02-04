@@ -52,8 +52,42 @@ Use this task in a build or release pipeline to get, build, or test a go applica
       <td><code>workingDirectory</code><br/>Working Directory</td>
       <td>(Required) Current working directory where the script is run. Empty is the root of the repo (build) or artifacts (release), which is $(System.DefaultWorkingDirectory)</td>
    </tr>
-   [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Example
+
+```yml
+variables:
+  GOBIN:  '$(GOPATH)/bin' # Go binaries path
+  GOROOT: '/usr/local/go1.11' # Go installation path
+  GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
+  modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
+
+steps:
+- task: GoTool@0
+  displayName: 'Use Go 1.10'
+
+- task: Go@0
+  displayName: 'go get'
+  inputs:
+    arguments: '-d'
+
+- task: Go@0
+  displayName: 'go build'
+  inputs:
+    command: build
+    arguments: '-o "$(System.TeamProject).exe"'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive files'
+  inputs:
+    rootFolderOrFile: '$(Build.Repository.LocalPath)'
+    includeRootFolder: False
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact'
+  condition: succeededOrFailed()
+```
 
 ## Open source
 
