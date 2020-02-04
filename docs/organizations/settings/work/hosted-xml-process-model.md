@@ -25,7 +25,7 @@ ms.date: 10/24/2019
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
-[!INCLUDE [temp](../../../boards/includes/note-config-customize.md)]
+[!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
 
 ## Supported customizations
 

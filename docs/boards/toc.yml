@@ -157,6 +157,8 @@
   items:
   - name: Set up your backlogs and boards
     href: backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+  - name: Fix "Ordering backlog items is disabled"
+    href: backlogs/resolve-backlog-reorder-issues.md
 - name: Reference
   items:
   - name: Work item form controls
