@@ -38,7 +38,7 @@ Any references to the latest versions of WIT Client OM will result in an obsolet
 
 **CS0618: 'WorkItemType' is obsolete: 'for more information please see documentation at <https://aka.ms/witclientom>'**
 
-![warning message in Visual Studio](_img/wit-client-om-deprecation-vs.png)
+![warning message in Visual Studio](media/wit-client-om-deprecation-vs.png)
 
 ## Q&A
 

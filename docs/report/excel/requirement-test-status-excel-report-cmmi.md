@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Requirement Test Status Excel Report (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Requirement Test Status report to help determine gaps in test coverage and monitor test progress for each requirement. This report indicates how many tests are passing or failing for each requirement. This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
@@ -35,7 +35,7 @@ You can use the Requirement Test Status report to help determine gaps in test co
 
  The Requirement Test Status report provides a horizontal bar chart that shows the count of results for each test case and test configuration combination that the team has defined for each requirement. The chart groups the results according to their most recent test runs, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).  
   
- ![Requirement Test Status Excel report](_img/procg_reqteststatus.png "ProcG_ReqTestStatus")  
+ ![Requirement Test Status Excel report](media/procg_reqteststatus.png "ProcG_ReqTestStatus")  
   
  The report is based on a PivotChart report that shows the most recent data that is stored in the data warehouse and that is captured for the results for the test cases that are linked to specific requirements.  
   

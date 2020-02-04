@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # npm task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to install and publish npm packages.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Use this task in a build or release pipeline to install and publish npm packages
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NpmV1.md)]
+[!INCLUDE [temp](../includes/yaml/NpmV1.md)]
 
 ::: moniker-end
 
@@ -229,11 +229,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

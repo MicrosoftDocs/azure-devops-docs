@@ -25,7 +25,7 @@ The Marketplace is a one-stop-shop for individuals and teams to find tools that 
 
 ## Publishing requirements
 
-[!INCLUDE [](_shared/before-publishing.md)]
+[!INCLUDE [](includes/before-publishing.md)]
 
 ## What you need
 
@@ -37,7 +37,7 @@ The Marketplace is a one-stop-shop for individuals and teams to find tools that 
 
 Publishing to the Marketplace is an iterative process that starts with creating a manifest file that defines your integration and key discovery characteristics (like screen shots, logos, and overview content). This information is used to present your integration to users on the Marketplace, for example:
 
-![example](./_img/integration-example.png)
+![example](./media/integration-example.png)
 
 [Jenkins for Azure DevOps Services](https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-jenkins)
 
@@ -49,7 +49,7 @@ Note: The term, `extension`, is used in documentations referenced below. Extensi
 
 ### Create a publisher
 
-[!INCLUDE [](./_shared/create-publisher.md)]
+[!INCLUDE [](./includes/create-publisher.md)]
 
 ### Create a folder to contain your item manifest and other assets
 
@@ -72,8 +72,8 @@ Before you package your integration as an extension, you'll need to create a `ho
 
 2. Update the JSON using the following reference:
 
-[!INCLUDE [](../_shared/manifest-core.md)]
-[!INCLUDE [](../_shared/manifest-discovery.md)]
+[!INCLUDE [](../includes/manifest-core.md)]
+[!INCLUDE [](../includes/manifest-discovery.md)]
 
 #### Details page
 
@@ -85,7 +85,7 @@ Before you package your integration as an extension, you'll need to create a `ho
 * 6 - links
 * 7 - branding
 
-![card](../develop/_img/extension-details-page.png)
+![card](../develop/media/extension-details-page.png)
 
 <div class="alert alert-danger">
   Make sure the &quot;public&quot; attribute is set to &quot;false&quot; (or not set at all) to avoid your extension or integration from becoming prematurely visible to all users on the Marketplace. 
@@ -114,7 +114,7 @@ tfx extension create --manifest-globs vss-extension.json
 
 ### Publish your integration to the Marketplace
 
-[!INCLUDE [Publish_extension](../_shared/procedures/publish.md)]
+[!INCLUDE [Publish_extension](../includes/procedures/publish.md)]
 
 ### Share your integration
 Before an integration can be installed into an organization in Azure DevOps Services, it must be shared with that organization. Sharing is a requirement during development and testing of an integration, as it is the only way to run an integration.
@@ -128,7 +128,7 @@ To share an integration so it can be installed:
 
 #### Update an item
 
-[!INCLUDE [Update_extension](../_shared/procedures/update.md)]
+[!INCLUDE [Update_extension](../includes/procedures/update.md)]
 
 ## Make your integration public (visible to everyone) 
 

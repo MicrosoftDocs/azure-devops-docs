@@ -21,7 +21,7 @@ Choose a method to securely access the code in Azure Repos, Azure DevOps Server 
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials when they're no longer needed.
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 
@@ -55,7 +55,7 @@ The credential manager creates the token in Azure DevOps and saves it locally fo
 >[!NOTE]
 >Current versions of [Git for Windows](https://git-for-windows.github.io/) include the Git credential manager as an optional feature during installation.
 >
->![Select Enable Git Credential Manager during Git for Windows install](_img/install-git-with-git-credential-manager.png)
+>![Select Enable Git Credential Manager during Git for Windows install](media/install-git-with-git-credential-manager.png)
 
 ## SSH key authentication
 
@@ -63,7 +63,7 @@ Key authentication with SSH works through a public and private key pair that you
 You associate the public key with your username from the web. Azure DevOps will encrypt the data sent to you with that key when you work with Git.
 You decrypt the data on your computer with the private key, which is never shared or sent over the network.
 
-![Animated GIF showing adding of a SSH public key to Azure DevOps](_img/ssh_add_public_key.gif)
+![Animated GIF showing adding of a SSH public key to Azure DevOps](media/ssh_add_public_key.gif)
 
 SSH is a great option if you've already got it set up on your system&mdash;just add a public key to Azure DevOps and clone your repos using SSH. 
 If you don't have SSH set up on your computer, you should use PATs and HTTPS instead - it's secure and easier to set up.

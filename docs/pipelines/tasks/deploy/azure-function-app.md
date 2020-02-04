@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Azure Function App task
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Use the Azure Function App task to deploy [Functions](/azure/azure-functions/) to Azure. 
 
@@ -100,9 +100,9 @@ Creates the same deployment package as Zip Deploy. However, instead of deploying
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
-[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Function app deployment on Windows is successful but the app is not working
 
@@ -110,18 +110,18 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](_img/azure-rm-function-app-01.png)
+![Generate web.config parameters Dialog](media/azure-rm-function-app-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](_img/azure-rm-web-app-deployment-02.png)
+![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

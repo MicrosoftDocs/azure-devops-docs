@@ -78,7 +78,7 @@ The benefit of Git LFS is that your team can use the familiar end to end Git wor
 LFS files can be as big as you need them to be.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
-Git LFS is [is fully supported and free in Azure DevOps Services](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
+Git LFS is [is fully supported and free in Azure DevOps Services](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/).
 To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](/visualstudio/releasenotes/vs2017-relnotes).
 Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to Azure Repos.
 
@@ -95,7 +95,7 @@ Git LFS has some drawbacks that you should consider before adopting:
    Git LFS provides [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help.
    Users must still take care to always pull the latest copy of a binary asset before beginning work.
 4. Azure Repos currently does not support using SSH in repos with Git LFS tracked files.   
-5. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, [the binary will be committed to the repo](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/34265377-drag-and-drop-lfs-files-into-web-gui) and not the pointers that would be committed via the Git LFS client.
+5. If a user drags and drops a binary file via the web interface into a repo which is configured for Git LFS, the binary will be committed to the repo and not the pointers that would be committed via the Git LFS client.
 
 ### File format
 

@@ -15,7 +15,7 @@ ms.date: 10/28/2019
 
 # Select backlog navigation levels for your team
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-2015-on.md)]  
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
@@ -37,7 +37,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 > **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 <a id="activate-backlogs"></a>
 
@@ -51,14 +51,14 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
+	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
 
 4. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
-	![Team settings dialog, Backlogs tab](_img/select-nav-backlog-levels-config-ts.png)  
+	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
 5. When done with your changes, choose **Save and close**.  
 
@@ -70,14 +70,14 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
+	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
 
 2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
-	![Team settings dialog, Backlogs tab](_img/select-nav-backlog-levels-config-ts.png)  
+	![Team settings dialog, Backlogs tab](media/select-nav-backlog-levels-config-ts.png)  
 
 3. When done with your changes, choose **Save**.  
 
@@ -89,15 +89,15 @@ You can change the setting from a backlog or board view. Here we show how to cha
 
 Requires TFS 2015.1 or later version. 
 
-1. From your web portal, choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
+1. From your web portal, choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administration page. 
 
-	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)  
+	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)  
 
 1. From **Overview**, choose the team whose settings you want to configure, and then choose **Settings**. 
 
 2. Check the boxes of those backlog levels you want your team to manage. 
 
-	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../boards/backlogs/_img/ALM_OB_BacklogSettings.png)  
+	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../boards/backlogs/media/ALM_OB_BacklogSettings.png)  
 
 3. To see the changes, open or refresh your team's [backlog](../../boards/backlogs/create-your-backlog.md). 
 

@@ -19,11 +19,14 @@ monikerRange: 'azure-devops'
 
 Use this task in a build or release pipeline to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
 
+> [!IMPORTANT]
+> This task is supported only on Windows environment
+
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeploymentV1.md)]
+[!INCLUDE [temp](../includes/yaml/SqlAzureDacpacDeploymentV1.md)]
 
 ::: moniker-end
 

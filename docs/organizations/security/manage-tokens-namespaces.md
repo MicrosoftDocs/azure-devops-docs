@@ -16,7 +16,7 @@ ms.date: 11/20/2019
 
 # Manage tokens and namespaces
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
 
 Security namespaces are used to store access control lists (ACLs) on tokens. Data stored in security namespaces are used to determine whether a user has permissions to perform a specific action on a specific resource.
 

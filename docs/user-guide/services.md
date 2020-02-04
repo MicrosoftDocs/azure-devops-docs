@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # What features and services do I get with Azure DevOps?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 With Azure DevOps, you gain an integrated set of services and tools to manage your software projects, from planning and development through testing and deployment. Services are delivered through a client/server model. Many of them are delivered through an easy-to-use web interface that you can access from all major browsers. Some services, such as source control, build pipelines, and work tracking, can also be managed through a client.  
 
@@ -24,13 +24,13 @@ Access web services through the following areas, as shown in the following image
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](_img/services-hubs-vert.png)
+![Azure DevOps Services, main](media/services-hubs-vert.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Azure DevOps Services, main](../_img/services-hubs.png)  
+![Azure DevOps Services, main](../media/services-hubs.png)  
 
 ::: moniker-end
 
@@ -49,13 +49,13 @@ From **Dashboards**, you gain access to user-configurable dashboards.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Azure DevOps Services, main](_img/dashboard-overview.png)
+![Azure DevOps Services, main](media/dashboard-overview.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-<img src="../report/dashboards/_img/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
+<img src="../report/dashboards/media/dashboard-view-with-widgets.png" alt="Dashboard, Overview" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ With TFVC, developers have only one version of each file on their dev machines. 
 
 From **Repos**, you gain access to your source control Git-based or Team Foundation Version Control (TFVC) repositories to support version control of your software projects. These repositories are private.
 
-![Azure Repos, Git files page](_img/repos-git-hub.png)
+![Azure Repos, Git files page](media/repos-git-hub.png)
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ From **Repos**, you gain access to your source control Git-based or Team Foundat
 
 From **Code**, you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
-<img src="_img/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/code-git-hub.png" alt="Code, Git, files page" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Project managers and developers share information by tracking work items on the 
 
 From **Boards**, you gain access to Agile tools to support planning and tracking work.
 
-![Azure Boards backlogs](_img/boards-backlogs.png)
+![Azure Boards backlogs](media/boards-backlogs.png)
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ From **Boards**, you gain access to Agile tools to support planning and tracking
 
 From **Work**, you gain access to Agile tools to support planning and tracking work.
 
-<img src="_img/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/work-hub-backlogs.png" alt="Work, Backlogs page" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Azure Pipelines page](_img/builds-pipelines-page.png)
+![Builds, Azure Pipelines page](media/builds-pipelines-page.png)
 
 ::: moniker-end
 
@@ -170,7 +170,7 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-<img src="_img/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/build-release-hub.png" alt="Build-Release, Build pipelines page" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -189,7 +189,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 **Test Plans** supports creating and managing manual tests.
 
-![Test Plans](_img/test-plans-vert.png)
+![Test Plans](media/test-plans-vert.png)
 
 ::: moniker-end
 
@@ -197,7 +197,7 @@ Test features support manual and exploratory testing, and continuous testing.
 
 **Test** supports creating and managing manual tests.
 
-<img src="_img/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
+<img src="media/services/test-hub.png" alt="Test" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -309,13 +309,13 @@ There are features and tasks associated with administering a collaborative softw
 
 ::: moniker range=">= azure-devops-2019"
 
-![Project settings](_img/project-settings.png)
+![Project settings](media/project-settings.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-<img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
+<img src="media/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

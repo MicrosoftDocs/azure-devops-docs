@@ -56,11 +56,11 @@ steps:
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

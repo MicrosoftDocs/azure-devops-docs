@@ -15,7 +15,7 @@ monikerRange: ">= azure-devops-2019"
 
 # Customize your pipeline
 
-[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-server-2019-rtm](includes/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
@@ -77,7 +77,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "macos-10.13"
+      vmImage: "macos-latest"
     ```
     
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
@@ -122,7 +122,7 @@ You can build and test your project on multiple platforms. One way to do it is w
         linux:
           imageName: "ubuntu-16.04"
         mac:
-          imageName: "macos-10.13"
+          imageName: "macos-10.14"
         windows:
           imageName: "vs2017-win2016"
       maxParallel: 3
@@ -230,7 +230,7 @@ There are pipeline settings that you wouldn't want to manage in your YAML file. 
 Sometimes you'll want to prevent new runs from starting on your pipeline. 
 
 * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
-* **Paused** pipelines allow run requests to be processed, but those requests queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+* **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
 * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 
 ### Other settings
