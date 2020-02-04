@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Excel reports
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Microsoft Excel reports to display information from the data warehouse for your team project. this article describes reports that are provided with the [Agile](../../boards/work-items/guidance/agile-process.md) process template. For a summary of reports provided with the CMMI process template, see [Excel reports (CMMI)](excel-reports-cmmi.md).
 
@@ -33,7 +33,7 @@ You can track your team project's burn rate, bug backlog, software quality, test
 
 Here are examples of two of the Excel reports.
 
-![Bug trends example report](_img/ALM_PG_Excel_BugTrends.png)   ![Build status example report](_img/ALM_PG_Excel_BuildStatus.png)
+![Bug trends example report](media/ALM_PG_Excel_BugTrends.png)   ![Build status example report](media/ALM_PG_Excel_BuildStatus.png)
 
 Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](create-status-and-trend-excel-reports.md) or by connecting to the Analysis Services cube. 
 
@@ -102,53 +102,53 @@ Default Excel reports require that your team project is configured with SharePoi
 
 |Data in the report|Report name and related topic|  
 |------------------------|-----------------------------------|  
-|A visual representation of the cumulative count of all hours for all tasks for the past four weeks.<br /><br /> ![Burndown chart](_img/procguid_agileburn.png "ProcGuid_AgileBurn")|[Burndown](burndown-excel-report.md)|  
-|A visual representation of the cumulative count of all active and closed tasks for the past four weeks.<br /><br /> ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")|[Task Progress](task-progress-excel-report.md)|  
-|A visual representation of the cumulative count of all user stories, grouped by their state, for the past four weeks.<br /><br /> ![Example User Stories report](_img/procguid_excelreport.png "ProcGuid_ExcelReport")|[User Story Progress](user-story-progress-excel-report-agile.md)|  
-|Line chart that shows the rolling average of the number of issues that the team has opened and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![7&#45;Day Issue Trend Excel Report](_img/procguid_7day.png "ProcGuid_7Day")|[Issue Trends](issue-trends-excel-report.md)|  
+|A visual representation of the cumulative count of all hours for all tasks for the past four weeks.<br /><br /> ![Burndown chart](media/procguid_agileburn.png "ProcGuid_AgileBurn")|[Burndown](burndown-excel-report.md)|  
+|A visual representation of the cumulative count of all active and closed tasks for the past four weeks.<br /><br /> ![Task Progress Excel Report](media/procguid_exceltask.png "ProcGuid_ExcelTask")|[Task Progress](task-progress-excel-report.md)|  
+|A visual representation of the cumulative count of all user stories, grouped by their state, for the past four weeks.<br /><br /> ![Example User Stories report](media/procguid_excelreport.png "ProcGuid_ExcelReport")|[User Story Progress](user-story-progress-excel-report-agile.md)|  
+|Line chart that shows the rolling average of the number of issues that the team has opened and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![7&#45;Day Issue Trend Excel Report](media/procguid_7day.png "ProcGuid_7Day")|[Issue Trends](issue-trends-excel-report.md)|  
 
 ##  <a name="Bugs"></a> Bug backlog management  
  Team members can use the reports in the following table to help track the bugs that the team finds and the progress that the team makes toward fixing them. These reports appear in the Bugs dashboard. For more information, see [Bugs](../sharepoint-dashboards/bugs-dashboard-agile-cmmi.md).  
 
 |Data in the report|Report name and related topic|  
 |------------------------|-----------------------------------|  
-|A visual representation of the cumulative count of all bugs, grouped by their state for the past four weeks.<br /><br /> ![Bug Progress Excel Report](_img/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](bug-progress-excel-report.md)|  
-|Line chart that shows the rolling average of the number of bugs that the team has opened, resolved, and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")|[Bug Trends](bug-trends-excel-report.md)|  
-|A visual representation of the cumulative count of all bugs, grouped by their priority for the past four weeks.<br /><br /> ![Bugs by priority chart](_img/procguid_bypriority.png "ProcGuid_ByPriority")|[Bugs by Priority](bugs-by-priority-excel-report.md)|  
-|A horizontal bar chart with the total count of Bugs that each team member has currently assigned to them in the active state, grouped by priority.<br /><br /> ![Bugs by Assignment chart](_img/procguid_byassignment.png "ProcGuid_ByAssignment")|[Bugs by Assignment](bugs-by-assignment-excel-report.md)|  
-|A stacked area graph of the number of bugs that have been reactivated from the resolved or closed state within the past four weeks.<br /><br /> ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR") <br/>**Note:**  The Bug Reactivations report appears on the Quality dashboard. For more information, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).|[Bug Reactivations](bug-reactivations-excel-report.md)|  
+|A visual representation of the cumulative count of all bugs, grouped by their state for the past four weeks.<br /><br /> ![Bug Progress Excel Report](media/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](bug-progress-excel-report.md)|  
+|Line chart that shows the rolling average of the number of bugs that the team has opened, resolved, and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![Bug Trends report](media/procguid_bugtrends.png "ProcGuid_BugTrends")|[Bug Trends](bug-trends-excel-report.md)|  
+|A visual representation of the cumulative count of all bugs, grouped by their priority for the past four weeks.<br /><br /> ![Bugs by priority chart](media/procguid_bypriority.png "ProcGuid_ByPriority")|[Bugs by Priority](bugs-by-priority-excel-report.md)|  
+|A horizontal bar chart with the total count of Bugs that each team member has currently assigned to them in the active state, grouped by priority.<br /><br /> ![Bugs by Assignment chart](media/procguid_byassignment.png "ProcGuid_ByAssignment")|[Bugs by Assignment](bugs-by-assignment-excel-report.md)|  
+|A stacked area graph of the number of bugs that have been reactivated from the resolved or closed state within the past four weeks.<br /><br /> ![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR") <br/>**Note:**  The Bug Reactivations report appears on the Quality dashboard. For more information, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).|[Bug Reactivations](bug-reactivations-excel-report.md)|  
 
 ##  <a name="Build"></a> Build management  
  Team members can use the reports in the following table to help track how source files are changing over time and how well the source code is being tested over time. These reports appear in the Build dashboard. For more information, see [Build](../sharepoint-dashboards/build-dashboard-agile-cmmi.md).  
 
 |Data in the report|Report name and related topic|  
 |------------------------|-----------------------------------|  
-|Line chart that depicts the percentage of code that was tested under Build Verification Test over the last four weeks.<br /><br /> ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](code-coverage-excel-report.md)|  
-|Stacked area chart that depicts the number of lines of code that the team added, removed, and changed in the checkins before the build within the last four weeks.<br /><br /> ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](code-churn-excel-report.md)|  
-|Stacked column that shows the count of builds that **Failed** or **Succeeded** within the last four weeks.<br /><br /> ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")<br/>**Note:**  The Builds Status report appears on the Quality dashboard. For more information, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).|[Build Status](build-status-excel-report.md)|  
+|Line chart that depicts the percentage of code that was tested under Build Verification Test over the last four weeks.<br /><br /> ![Code Coverage Report](media/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](code-coverage-excel-report.md)|  
+|Stacked area chart that depicts the number of lines of code that the team added, removed, and changed in the checkins before the build within the last four weeks.<br /><br /> ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](code-churn-excel-report.md)|  
+|Stacked column that shows the count of builds that **Failed** or **Succeeded** within the last four weeks.<br /><br /> ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")<br/>**Note:**  The Builds Status report appears on the Quality dashboard. For more information, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).|[Build Status](build-status-excel-report.md)|  
 
 ##  <a name="Test"></a> Test management  
  Team members can use the reports in the following table to help monitor test activities, report on progress, find gaps in test coverage, and identify test areas that may require further investigation. These reports appear in the Test dashboard. For more information, see [Test](../sharepoint-dashboards/test-dashboard-agile-cmmi.md).  
 
 |Data in the report|Report name and related topic|  
 |------------------------|-----------------------------------|  
-|Stacked area graph of the test results grouped into their last recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - within the past four weeks.<br /><br /> ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
-|Stacked area graph that shows how many test cases are in the **Design** or **Ready** state for the past four weeks.<br /><br /> ![Test Case Readiness Excel Report](_img/procguid_exceltestcase.png "ProcGuid_ExcelTestCase")|[Test Case Readiness](../sql-reports/test-case-readiness-report.md)|  
-|Horizontal bar chart that shows the count of test results for each test case and test configuration combination that is defined for each user story. The chart groups the test results according to their most recent test run, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).<br /><br /> ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")|[User Story Test Status](user-story-test-status-excel-report-agile.md)|  
-|Line chart that shows the cumulative count of all results run for manual tests during the past four weeks.<br /><br /> ![Test Activity Excel Report](_img/procguid_testactivity.png "ProcGuid_TestActivity")|[Test Activity](test-activity-excel-report.md)|  
-|Stacked area graph that shows the cumulative count of all failed outcome results for tests, according to their failure type of **Regression**, **New Issue**, or **Known Issue**, during the past four weeks.<br /><br /> ![Failure Analysis Excel Report](_img/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")|[Failure Analysis](failure-analysis-excel-report.md)|  
+|Stacked area graph of the test results grouped into their last recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - within the past four weeks.<br /><br /> ![Test Plan Progress Excel Report](media/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
+|Stacked area graph that shows how many test cases are in the **Design** or **Ready** state for the past four weeks.<br /><br /> ![Test Case Readiness Excel Report](media/procguid_exceltestcase.png "ProcGuid_ExcelTestCase")|[Test Case Readiness](../sql-reports/test-case-readiness-report.md)|  
+|Horizontal bar chart that shows the count of test results for each test case and test configuration combination that is defined for each user story. The chart groups the test results according to their most recent test run, where the options are **Passed** (green), **Failed** (red), **Blocked** (purple), or **Not Run** (gray).<br /><br /> ![User Story Test Status Excel Report](media/procguid_exruserstore.png "ProcGuid_ExRUserStore")|[User Story Test Status](user-story-test-status-excel-report-agile.md)|  
+|Line chart that shows the cumulative count of all results run for manual tests during the past four weeks.<br /><br /> ![Test Activity Excel Report](media/procguid_testactivity.png "ProcGuid_TestActivity")|[Test Activity](test-activity-excel-report.md)|  
+|Stacked area graph that shows the cumulative count of all failed outcome results for tests, according to their failure type of **Regression**, **New Issue**, or **Known Issue**, during the past four weeks.<br /><br /> ![Failure Analysis Excel Report](media/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")|[Failure Analysis](failure-analysis-excel-report.md)|  
 
 ##  <a name="Quality"></a> Software quality and release management  
  Team members can use the reports in the following table to obtain an overview of progress occurring in the test, development, and build areas. These reports appear in the Quality dashboard. For more information, see [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md).  
 
 |Data in the report|Report name and related topic|  
 |------------------------|-----------------------------------|  
-|Stacked area graph of the test results grouped into their last recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - within the past four weeks.<br /><br /> ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
-|Stacked column that shows the count of builds that **Failed** or **Succeeded** within the last four weeks.<br /><br /> ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")|[Build Status](build-status-excel-report.md)|  
-|A stacked area graph of the cumulative count of all Bugs, grouped by their state for the past four weeks.<br /><br /> ![Bug Progress Excel Report](_img/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](bug-progress-excel-report.md)|  
-|A stacked area graph of the number of bugs that have been reactivated from the resolved or closed state within the past four weeks.<br /><br /> ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")|[Bug Reactivations](bug-reactivations-excel-report.md)|  
-|Line chart that depicts the percentage of code that was tested under Build Verification Test over the last four weeks.<br /><br /> ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](code-coverage-excel-report.md)|  
-|Stacked area chart that depicts the number of lines of code that the team added, removed, and changed in the checkins before the build within the last four weeks.<br /><br /> ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](code-churn-excel-report.md)|  
+|Stacked area graph of the test results grouped into their last recorded outcome - **Never Run**, **Blocked**, **Failed**, or **Passed** - within the past four weeks.<br /><br /> ![Test Plan Progress Excel Report](media/procguid_agiletest.png "ProcGuid_AgileTest")|[Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
+|Stacked column that shows the count of builds that **Failed** or **Succeeded** within the last four weeks.<br /><br /> ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")|[Build Status](build-status-excel-report.md)|  
+|A stacked area graph of the cumulative count of all Bugs, grouped by their state for the past four weeks.<br /><br /> ![Bug Progress Excel Report](media/procguid_excelbug.png "ProcGuid_ExcelBug")|[Bug Progress](bug-progress-excel-report.md)|  
+|A stacked area graph of the number of bugs that have been reactivated from the resolved or closed state within the past four weeks.<br /><br /> ![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR")|[Bug Reactivations](bug-reactivations-excel-report.md)|  
+|Line chart that depicts the percentage of code that was tested under Build Verification Test over the last four weeks.<br /><br /> ![Code Coverage Report](media/procguid_codecoverage.png "ProcGuid_CodeCoverage")|[Code Coverage](code-coverage-excel-report.md)|  
+|Stacked area chart that depicts the number of lines of code that the team added, removed, and changed in the checkins before the build within the last four weeks.<br /><br /> ![Code Churn Report](media/procguid_codechurn.png "ProcGuid_CodeChurn")|[Code Churn](code-churn-excel-report.md)|  
 
 ## Related notes  
 - [Charts](../charts.md)   

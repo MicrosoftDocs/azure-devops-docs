@@ -14,23 +14,20 @@ monikerRange: azure-devops
 
 # Deployment jobs
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 > [!NOTE]
 > To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
 
-
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment.
 
-## Overview
-
-Deployment jobs provide some benefits:
+Deployment jobs provide the following benefits:
 
  - **Deployment history**: You get end-to-end deployment history across pipelines, down to a specific resource and status of the deployments for auditing.
  - **Apply deployment strategy**: You define how your application is rolled out.
 
    > [!NOTE] 
-   > At the moment, we offer only the *runOnce* strategy and the *canary* strategy. Additional strategies like *rolling* and *blueGreen* are on our roadmap.
+   > We currently only support the *runOnce*, *rolling*, and the *canary* strategies. 
 
 ## Schema
 
@@ -46,6 +43,8 @@ jobs:
   dependsOn: string 
   condition: string 
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
+  container: containerReference # container to run this job inside
+  services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
   variables: { string: string } | [ variable | variableReference ]  
@@ -69,7 +68,7 @@ We achieve this by using life cycle hooks that can run steps during deployment. 
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application.
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -111,10 +110,56 @@ strategy:
           ...
 ```
 
+### Rolling deployment strategy
+
+A rolling deployment replaces instances of the previous version of an application with instances of the new version of the application on a fixed set of virtual machines (rolling set) in each iteration. 
+
+We currently only support the rolling strategy to VM resources.
+
+For example, a rolling deployment typically waits for deployments on each set of virtual machines to complete before proceeding to the next set of deployments. You could do a health check after each iteration and if a significant issue occurs, the rolling deployment can be stopped.
+
+Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node. 
+The `strategy.name` variable is available in this strategy block which takes the name of the strategy. In this case, rolling.
+
+```YAML
+strategy:
+  rolling:
+    maxParallel: [ number or percentage as x% ]
+    preDeploy:        
+      steps:
+      - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+    deploy:          
+      steps:
+      ...
+    routeTraffic:         
+      steps:
+      ...        
+    postRouteTraffic:          
+      steps:
+      ...
+    on:
+      failure:         
+        steps:
+        ...
+      success:          
+        steps:
+        ...
+```
+All the lifecycle hooks are supported and lifecycle hook jobs are created to run on each VM.
+
+`preDeploy`, `deploy`, `routeTraffic`, and `postRouteTraffic` are executed once per batch size defined by `maxParallel`. 
+Then, either `on: success` or `on: failure` is executed.
+
+With `maxParallel: <# or % of VMs>`, you can control the number/percentage of virtual machine targets to deploy to in parallel. This ensures that the app is running on these machines and is capable of handling requests while the deployment is taking place on the rest of the machines which reduces overall downtime.
+
+ > [!NOTE]
+ > There are a few known gaps in this feature. For example, when you retry a stage, it will re-run the deployment on all VMs not just failed targets. 
 
 ### Canary deployment strategy
 
-Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. Currently, this is applicable to only Kubernetes resources.
+Canary deployment strategy is an advanced deployment strategy that helps mitigate the risk involved in rolling out new versions of applications. By using this strategy, you can roll out the changes to a small subset of servers first. As you gain more confidence in the new version, you can release it to more servers in your infrastructure and route more traffic to it. 
+
+Currently, this is applicable to only Kubernetes resources.
 
 
 ```YAML
@@ -184,7 +229,6 @@ jobs:
 With each run of this job, deployment history is recorded against the `smarthotel-dev` environment.
 
 > [!NOTE]
-> - Currently, environments support only Kubernetes resources, with support for virtual machines and other resources on the roadmap.
 > - It's also possible to create an environment with empty resources and use that as an abstract shell to record deployment history, as shown in the previous example.
 
 The next example demonstrates how a pipeline can refer both an environment and a resource to be used as the target for a deployment job.
@@ -221,7 +265,46 @@ This approach has the following benefits:
 This is particularly useful in the cases where the same connection detail is set for multiple steps of the job.
 
 
+### Rolling deployment strategy
 
+The rolling strategy for VMs updates up to 5 targets in each iteration. `maxParallel` will determine the number of targets that can be deployed to, in parallel. The selection accounts for absolute number or percentage of targets that must remain available at any time excluding the targets that are being deployed to. It is also used to determine the success and failure conditions during deployment.
+
+```YAML
+jobs: 
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name: smarthotel-dev
+    resourceType: VirtualMachine
+  strategy:
+    rolling:
+      maxParallel: 5  #for percentages, mention as x%
+      preDeploy:
+        steps:
+        - download: current
+          artifact: drop
+        - script: echo initialize, cleanup, backup, install certs
+      deploy:
+        steps:
+        - task: IISWebAppDeploymentOnMachineGroup@0
+          displayName: 'Deploy application to Website'
+          inputs:
+            WebSiteName: 'Default Web Site'
+            Package: '$(Pipeline.Workspace)/drop/**/*.zip'
+      routeTraffic:
+        steps:
+        - script: echo routing traffic
+      postRouteTraffic:
+        steps:
+        - script: echo health check post-route traffic
+      on:
+        failure:
+          steps:
+          - script: echo Restore from backup! This is on failure
+        success:
+          steps:
+          - script: echo Notify! This is on success
+```
 
 ### Canary deployment strategy
 
@@ -230,9 +313,9 @@ In the next example, the canary strategy for AKS will first deploy the changes w
 ```YAML
 jobs: 
 - deployment: 
-  environment: musicCarnivalProd 
+  environment: smarthotel-dev.bookings
   pool: 
-    name: musicCarnivalProdPool  
+    name: smarthotel-devPool
   strategy:                  
     canary:      
       increments: [10,20]  

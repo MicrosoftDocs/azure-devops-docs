@@ -14,9 +14,9 @@ ms.topic: conceptual
 
 # FAQs - getting extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
 ::: moniker range="azure-devops"
 
@@ -27,13 +27,13 @@ you can [request extensions](request-extensions.md) instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../includes/qa-find-organization-owner.md)]
 
-[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
+[!INCLUDE [find-project-collection-administrator](../includes/qa-find-project-collection-administrator.md)]
 
 <a name="no-organizations"></a>
 
-[!INCLUDE [no-organizations](../organizations/billing/_shared/qa-no-organizations.md)]
+[!INCLUDE [no-organizations](../organizations/billing/includes/qa-no-organizations.md)]
 
 ### Q: Why can't I install extensions for Azure DevOps?
 
@@ -61,7 +61,7 @@ A: Check these [articles about Azure billing and subscriptions](https://azure.mi
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
-[!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
+[!INCLUDE [what-happened-preview-extensions](../includes/qa-what-happened-preview-extensions.md)]
 
 <!-- ENDSECTION --> 
 
@@ -130,13 +130,13 @@ for the Team Foundation Server where you want to upload extensions.
 
 <a name="extension-access"></a>
 
-[!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
+[!INCLUDE [no-access-extension-features](../includes/qa-no-access-extension-features.md)]
 
 <!-- ENDSECTION --> 
 
 <a name="get-support"></a>
 
-[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](includes/qa-marketplace-support.md)]
 
 ::: moniker-end
 

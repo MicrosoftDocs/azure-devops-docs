@@ -18,7 +18,7 @@ Search robots or web tests that monitor availability generate some of the traffi
 
 Beginning from this release Application Insights differentiates telemetry collected from real end-users from telemetry originated by various synthetic sources. By using filtering and grouping in Diagnostic Search and Metrics Explorer, you can now choose to see data only from real end-users, only from synthetic traffic, or both:
 
-![Filtering for real user traffic](_img/4_22_01.png)
+![Filtering for real user traffic](media/4_22_01.png)
 
 You’ll now see these labels:
 
@@ -26,7 +26,7 @@ You’ll now see these labels:
 - In Usage analytics: ‘(Excluding synthetic traffic)’
 - In drill-in experiences, the filter is turned on by default:
 
-![Filtering for real traffic turned on by default in drill-in experiences](_img/4_22_02.png)
+![Filtering for real traffic turned on by default in drill-in experiences](media/4_22_02.png)
 
 ## New Usage experience for ASP.NET, Java and other applications
 
@@ -38,11 +38,11 @@ Usage content and drill-in experiences are designed to support two main scenario
 
     The four controls under Usage analytics show counts over 24 hours, and the trend in comparison to the previous 24 hours. Clicking these controls provides more detail:
 
-    ![Daily activity review: usage analytics control panel](_img/4_22_03.png)
+    ![Daily activity review: usage analytics control panel](media/4_22_03.png)
 
 2. Deeper analysis of activity and trends over a longer time period (7 days default). From the Overview blade, click Usage:
 
-    ![Accessing usage analytics for longer time periods](_img/4_22_04.png)
+    ![Accessing usage analytics for longer time periods](media/4_22_04.png)
 
   This takes you to the Usage analytics blade, which answers questions about adoption, engagement, interaction and environment.
 
@@ -53,7 +53,7 @@ A new calculation for Daily Active Users (DAU) has been added to the usage repor
 
 ## Feedback please!
 
-That’s a wrap for Sprint 81. Next update immediately after [Build 2015](https://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](https://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+That’s a wrap for Sprint 81. Next update immediately after [Build 2015](https://www.buildwindows.com/). If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights), bugs to [Connect](https://connect.microsoft.com/VisualStudio) (select Application Insights), and suggestions to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

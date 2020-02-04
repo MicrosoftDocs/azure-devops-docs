@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # Shell Script task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run a shell script using bash.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -113,7 +113,7 @@ On the [Build tab](../../index.yml) of a build pipeline, add this task:
 <tr>
 <td>
 
-![](_img/shell-script.png)
+![](media/shell-script.png)
 
 <br/>**Utility: Shell Script**</td>
 <td>
@@ -141,15 +141,15 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [Awesome Bash](https://github.com/alebcay/awesome-shell#awesome-bash) to go deeper.
 
-[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../includes/variable-set-in-script-qa.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

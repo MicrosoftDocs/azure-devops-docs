@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to get, build, or test a go applica
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GoV0.md)]
+[!INCLUDE [temp](../includes/yaml/GoV0.md)]
 
 ::: moniker-end
 

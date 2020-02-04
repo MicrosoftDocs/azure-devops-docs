@@ -1,4 +1,4 @@
-﻿---
+---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
 ms.prod: devops
@@ -10,15 +10,15 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/14/2019 
+ms.date: 12/18/2019 
 ---
 
 
-# Permissions and groups in Azure DevOps
+# Permissions, users, and groups in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-This article provides a comprehensive reference for each built-in group and permission. It's a lot of information describing each built-in security group as well as each permission. 
+This article provides a comprehensive reference for each built-in user, group, and permission. It's a lot of information describing each built-in security user and group as well as each permission. 
 
 For a quick reference to default assignments, see [Default permissions and access](permissions-access.md). For an overview of how permissions and security are managed, see [About permissions and groups](about-permissions.md). In addition to security groups, there are also [security roles](about-security-roles.md) which provide permissions for select areas. 
 
@@ -31,6 +31,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
+<ul>
 <li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
 <li><a href="../accounts/add-team-members.md">Add users to an organization</a></li> 
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
@@ -49,8 +50,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -83,6 +84,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
+<ul>
 <li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
 <li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
@@ -101,8 +103,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -137,9 +139,12 @@ To learn how to add users to a group or set a specific permission that you can m
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
-<li>&lt;a href=&quot;set-project-collection-level-permissions.md&gt;Add users to an administrator role</a></li>
+<ul>
+<li>
+<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
+<a href="set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li>&lt;a href=&quot;../settings/add-team-administrator.md&gt;Make a user a team admin</a></li>
+<li><a href="../settings/add-team-administrator.md>Make a user a team admin</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>
@@ -166,7 +171,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-permissions-access-work-tracking.md">Area and iteration paths</a></li>
 <li><a href="../../boards/queries/set-query-permissions.md">Work item queries and folders</a></li>
 <li><a href="../../boards/plans/edit-delivery-plan-permissions.md">Plan permissions</a></li>
-<li><a href="set-permissions-access-work-tracking.md#process-permissions">Customize process</a></li>
+<li><a href="set-permissions-access-work-tracking.md">Customize process</a></li>
 </ul>
 <h4>Reporting permissions</h4>
 <ul>
@@ -190,13 +195,11 @@ To learn how to add users to a group or set a specific permission that you can m
 <tr>
 <td width="33%">
 <h4>Users and groups</h4>
+<ul>
+<li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
 <li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
 <li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
-</ul>
-<h4>Wiki</h4>
-<ul>
-<li><a href="../../project/wiki/manage-readme-wiki-permissions.md">README & Wiki</a></li>
 </ul>
 </td>
 <td width="33%">
@@ -208,8 +211,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#task-group">Task groups</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md#variable-group">Variable groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -240,6 +243,19 @@ To learn how to add users to a group or set a specific permission that you can m
 > The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
+<a name="user-accounts"></a>
+
+## User accounts
+
+There are a few user accounts that are generated by the system to support specific operations. These include those described in the following table. These user accounts are added at the organization or collection level. 
+
+| User name | Description |  
+| ----------| ----------- |  
+| Agent Pool Service | Has permission to listen to the message queue for the specific pool to receive work. In most cases you should not have to manage members of this group. The agent registration process takes care of it for you. The service account you specify for the agent (commonly Network Service) is automatically added when you register the agent.  |  
+| PipelinesSDK | Added as needed to support the Pipelines policy service scope tokens. This user account is similar to the build service identities but supports locking down permissions separately. In practice, the tokens that involve this identity are granted read-only permissions to pipeline resources and the one-time ability to approve policy requests. This account should be treated in the same way that the build service identities are treated.   |  
+| *ProjectName* Build Service | Has permissions to run build services for the project. This is a legacy user used for XAML builds. It is added to the Security Service Group which is used to store users who have been granted permissions, but not added to any other security group.  |  
+| Project Collection Build Service | Has permissions to run build services for the collection. It is added to the Security Service Group which is used to store users who have been granted permissions, but not added to any other security group.  |  
+
 
 <a name="groups"></a>
 
@@ -266,16 +282,109 @@ SharePoint Web Application Services
 
 <a name="server"></a>
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="< azure-devops"
 
 ## Server-level groups 
 
-When you install Azure DevOps Server or TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
+When you install Azure DevOps Server, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
-![ADMIN_GROUPS_PERMISSIONS](_img/permissions/server-groups-and-permissions.png)
+::: moniker-end
 
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Project Settings>Work>Project Configuration](media/permissions/server-level-groups-azdo-2019-update1.png) 
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+![ADMIN_GROUPS_PERMISSIONS](media/permissions/server-groups-and-permissions.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 You can't remove or delete the default server level groups.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+
+<table valign="top" width="100%">
+<tbody valign="top">
+    <tr valign="top">
+        <th width="20%">Group name</th>
+        <th width="30%">Permissions</th>
+        <th width="50%">Membership</th>
+    </tr>
+    <tr>
+        <td>Azure DevOps Service Accounts</td>
+        <td><p>Has service-level permissions for the server instance.</p></td>
+        <td>
+            <p>
+                Contains the service account that was supplied during installation
+            </p>
+            <p>
+                This group should contain only service accounts
+                and not user accounts or groups that contain user accounts.
+                By default, this group is a member of <strong>Team Foundation Administrators</strong>.
+            </p>
+            <p>
+                If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
+                the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
+                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>Azure DevOps Valid Users</td>
+        <td>
+            Has permission to view server instance-level information.
+            <blockquote>
+                If you set the <strong>View instance-level information</strong>
+                permission to <strong>Deny</strong> or <strong>Not set</strong> for this group,
+                no users will be able to access the deployment.
+            </blockquote>
+        </td>
+        <td>
+            Contains all users known to exist in the server instance.
+            You can&#39;t modify the membership of this group.
+        </td>
+    </tr>
+    <tr>
+        <td>Team Foundation Administrators</td>
+        <td>
+            Has permissions to perform all server-level operations.
+        </td>
+        <td>
+            <p>
+                <strong>Local Administrators</strong> group (BUILTIN\Administrators)
+                for any server that hosts Azure DevOPs/Team Foundation application services.
+            </p>
+            <p>
+                <em>Server</em> <strong>\Team Foundation Service Accounts</strong> group
+                and the members of the <strong>\Project Server Integration Service Accounts</strong> group.
+            </p>
+            <p>
+                This group should be restricted to the smallest possible number of users
+                who need total administrative control over server-level operations.
+            </p>
+            <blockquote>
+                If your deployment uses SharePoint or Reporting,
+                consider <a href="/azure/devops/server/admin/add-administrator" data-raw-source="[adding the members of this group](/azure/devops/server/admin/add-administrator)">adding the members of this group</a>
+                to the Farm Administrators and Site Collection Administrators groups in SharePoint
+                and the Team Foundation Content Managers groups in Reporting Services.
+            </blockquote>
+        </td>
+    </tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -339,7 +448,7 @@ You can't remove or delete the default server level groups.
             <p>
                 If you need to add an account to this group after you install Azure DevOps Server or TFS, you can do so using
                 the TFSSecurity.exe utility in the <strong>Tools</strong> subfolder of your TFS installation directory.
-                The command to do this is <code>TFSSecurity /g+ &quot;[TEAM FOUNDATION]\Team Foundation Service Accounts&quot; n:domain\username /server:http(s)://tfsservername</code>
+                The command to do this is <code>TFSSecurity /g+ "[TEAM FOUNDATION]\Team Foundation Service Accounts" n:domain\username /server:http(s)://tfsservername</code>
             </p>
         </td>
     </tr>
@@ -391,6 +500,10 @@ You can't remove or delete the default server level groups.
 </tbody>
 </table>
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 > The full name of each of these groups is **[Team Foundation]\\{group name}**.
 > So the full name of the server level administrators group is
 > **[Team Foundation]\\Team Foundation Administrators**.
@@ -420,14 +533,14 @@ Security Service Group
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts-new.png)
+> ![Project collection groups](media/permissions/collection-admin-permissions-vsts-new.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Project collection groups](_img/permissions/collection-admin-permissions-vsts.png)
+> ![Project collection groups](media/permissions/collection-admin-permissions-vsts.png)
 
 ::: moniker-end
 
@@ -559,13 +672,13 @@ For each project that you create, the system creates the followings project-leve
 
 #### [Preview page](#tab/preview-page) 
 
-![Choose Project settings, and then Permissions](_img/permissions/open-project-settings-permissions-preview.png)
+![Choose Project settings, and then Permissions](media/permissions/open-project-settings-permissions-preview.png)
 
 #### [Current page](#tab/current-page) 
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 * * * 
 
@@ -576,7 +689,7 @@ For each project that you create, the system creates the followings project-leve
 
 *To see the full image, click to expand*.
 
-[![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+[![Project Settings>Security](media/view-permissions/open-security-project-level-vert.png)](media/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
 
 ::: moniker-end
 
@@ -680,11 +793,15 @@ The system manages permissions at different levels&mdash;server, collection, pro
 <a id="server">  </a>
 <a id="server-permissions">  </a>
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Server-level permissions 
 
 You manage server-level permissions through the [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) or [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
+
+
+> [!div class="mx-imgBorder"]  
+> ![Project Settings>Work>Project Configuration](media/permissions/global-security-azdo-server-2019-update-1.png) 
 
 
 <table valign="top" width="100%">
@@ -762,7 +879,7 @@ You manage server-level permissions through the [Team Foundation Administration 
     <tr>
         <td id="use-full-web-access-features-permission">Use full Web Access features</td>
         <td>
-            Can use all on-premises Web portal features.
+            Can use all on-premises Web portal features. This permission has been deprecated with Azure DevOps Server 2019 and later versions. 
             <blockquote>
                 If the <strong>Use full Web Access</strong> features permission is set to Deny, the user will only see
                 those features permitted for the <strong>Stakeholder</strong> group
@@ -800,7 +917,7 @@ You manage collection-level permissions through the [web portal admin context](.
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](_img/permissions/collection-level-permissions-new.png)   
+> ![Collection level permissions and groups](media/permissions/collection-level-permissions-new.png)   
 
 ::: moniker-end
 
@@ -808,7 +925,7 @@ You manage collection-level permissions through the [web portal admin context](.
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Collection level permissions and groups](_img/permissions/collection-level-permissions.png)   
+> ![Collection level permissions and groups](media/permissions/collection-level-permissions.png)   
 
 ::: moniker-end
 
@@ -831,13 +948,13 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="create-new-team-projects">Create new projects (formerly Create new team projects)</td>
         <td>
-            Can <a href="../projects/create-project.md" data-raw-source="[add Azure DevOps projects](../projects/create-project.md)">add Azure DevOps projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+            Can <a href="../projects/create-project.md">add a project</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
         </td>
     </tr>
     <tr>
         <td id="delete-team-project">Delete team project</td>
         <td>
-            Can <a href="../projects/delete-project.md" data-raw-source="[delete Azure DevOps projects](../projects/delete-project.md)">delete Azure DevOps projects</a>.
+            Can <a href="../projects/delete-project.md">delete a project</a>.
             <blockquote>
                 Deleting a project will delete all data that is associated with the project.
                 You cannot undo the deletion of a project except
@@ -1076,7 +1193,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="create-new-team-projects-permission">Create new projects (formerly Create new team projects)</td>
         <td>
-            Can <a href="../projects/create-project.md" data-raw-source="[add Azure DevOps projects](../projects/create-project.md)">add Azure DevOps projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
+            Can <a href="../projects/create-project.md" >add a projects</a> to an organization or project collection. Additional permissions may be required depending on your on-premises deployment. 
         </td>
     </tr>
     <tr>
@@ -1100,9 +1217,9 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="delete-team-project-permission">Delete team project</td>
         <td>
-            Can <a href="../projects/delete-project.md" data-raw-source="[delete Azure DevOps projects](../projects/delete-project.md)">delete Azure DevOps projects</a>.
+            Can <a href="../projects/delete-project.md">delete a project</a>.
             <blockquote>
-                Deleting a project will delete all data that is associated with the project.
+                Deleting a project deletes all data that is associated with the project.
                 You cannot undo the deletion of a project except
                 by restoring the collection to a point
                 before the project was deleted.
@@ -1223,12 +1340,12 @@ You manage project-level permissions from the [web portal admin context](set-pro
 #### [Preview page](#tab/preview-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-permissions-contributors-s154.png)
+> ![Project-level permissions dialog](media/permissions/project-permissions-contributors-s154.png)
 
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
 
 * * *  
 
@@ -1237,7 +1354,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 ::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]
-> ![Project-level permissions dialog](_img/permissions/project-level-permissions.png)
+> ![Project-level permissions dialog](media/permissions/project-level-permissions.png)
 
 ::: moniker-end
 
@@ -1306,7 +1423,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
     </tr>
     <tr>
         <td id="bypass-rules-permission">Bypass rules on work item updates</td>
-        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don&#39;t want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
+        <td><p>Users with this permission can save a work item that ignores rules, such as <a href="../../reference/xml/apply-rule-work-item-field.md" data-raw-source="[assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md)">assign value rules or conditional rules</a>, defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the <a href="/rest/api/azure/devops/wit/work%20items/update" data-raw-source="[Work Items - update REST API](/rest/api/azure/devops/wit/work%20items/update)">Work Items - update REST API</a> and setting the <code>bypassRules</code> parameter to <code>true</code>. The second is through the client object model, by initializing in bypassrules mode (initialize <code>WorkItemStore</code> with <code>WorkItemStoreFlags.BypassRules</code>).</p>
         <p>Users granted Basic and Stakeholder access are granted this permission by default. </p></td>
     </tr>
     <tr>
@@ -1325,13 +1442,13 @@ You manage project-level permissions from the [web portal admin context](set-pro
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
         <td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-        <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. Users granted Stakeholder access for a public project are granted this permission by default.
+        <td><p>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[move a work item from one project to another project](../../boards/backlogs/remove-delete-work-items.md)">move a work item from one project to another project</a> within the collection. Applies to Azure DevOps Services and Azure DevOps Server 2019. For on-premises server, requires the collection to be configured to support Inherited process model.</p><blockquote>Users granted Stakeholder access for a public project are granted this permission by default.</blockquote>
         </td>
     </tr>
     <tr>
@@ -1414,8 +1531,8 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
@@ -1556,8 +1673,8 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
         <td>Can <a href="../../boards/backlogs/remove-delete-work-items.md" data-raw-source="[mark work items in the project as deleted](../../boards/backlogs/remove-delete-work-items.md)">mark work items in the project as deleted</a>. Azure DevOps Services users granted Stakeholder access for a public project are granted this permission by default.
 <ul>
-<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to &quot;Allow&quot; by default.</li> 
-<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to &quot;Not set&quot; by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has <strong>Delete and restore work items</strong> at the project-level set to <strong>Allow</strong> by default.</li> 
+<li>For TFS 2015 and earlier versions, the Contributors group has <strong>Delete work items in this project</strong> at the project-level set to <strong>Not set</strong> by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li><br/></ul>
 </td>
     </tr>
     <tr>
@@ -1662,7 +1779,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Manage permissions](../../report/powerbi/_img/editable-views/view-permissions.png)  
+> ![Manage permissions](../../report/powerbi/media/editable-views/view-permissions.png)  
 
 The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views](../../report/powerbi/what-are-analytics-views.md)?  
 
@@ -1702,9 +1819,19 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 You manage build permissions [for each build defined in the web portal](../../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/azure/devops/server/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
-> [!div class="mx-imgBorder"]  
-> ![Build object-level permissions dialog](_img/permissions/build-permissions-vsts.png)
+::: moniker range=">= azure-devops-2019"
 
+> [!div class="mx-imgBorder"]  
+> ![Build object-level permissions dialog](media/permissions/edit-build-pipeline-object-level-permissions-s163.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Build object-level permissions dialog](media/permissions/build-permissions-vsts.png)
+
+::: moniker-end
 
 Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build definition.
 
@@ -1737,9 +1864,15 @@ The following permissions are defined in Build. All of these can be set at both 
         <td>Can permanently delete a completed build.</td>
     </tr>
     <tr>
-        <td id="edit-build-definition-permission">Edit build definition</td>
+        <td id="edit-build-pipeline-permission">Edit build pipeline</td>
+        <td>Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. </td>
+    </tr>
+    <tr>
+	<a id="edit-build-pipeline-permission" />
+        <td id="edit-build-definition-permission">Edit build pipeline</br>Edit build definition</td>
         <td>
-            Can create and modify build definitions for this project.
+            <strong>Edit build pipeline</strong> Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. <br/>
+			 <strong>Edit build definition</strong> Can create and modify build definitions for this project.
             <blockquote>
                 <p>
                     You turn Inheritance Off for a build definition
@@ -1859,14 +1992,14 @@ You manage the security of each [Git repository](set-git-tfvc-repository-permiss
 ::: moniker range="azure-devops" 
 
 > [!div class="mx-imgBorder"]  
-> ![Git repository permissions dialog](_img/permissions/git-repo-permissions-vsts.png)
+> ![Git repository permissions dialog](media/permissions/git-repo-permissions-vsts.png)
 
 ::: moniker-end 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018" 
 
 > [!div class="mx-imgBorder"]  
-> ![Git repository permissions dialog, TFS](_img/permissions/git-repo-permissions-tfs.png) 
+> ![Git repository permissions dialog, TFS](media/permissions/git-repo-permissions-tfs.png) 
 
 ::: moniker-end 
 
@@ -2004,7 +2137,7 @@ You manage the security of each TFVC branch from the [web portal](set-git-tfvc-r
 These permissions appear only for a project set up to use Team Foundation Version Control as the source control system.
 
 > [!div class="mx-imgBorder"]  
-> ![TFVC permissions dialog](_img/permissions/tfvc-repo-permissions-vsts.png)
+> ![TFVC permissions dialog](media/permissions/tfvc-repo-permissions-vsts.png)
 
 In version control permissions, explicit deny takes precedence over administrator group permissions.
 
@@ -2200,7 +2333,7 @@ Members of the Project Administrators group are automatically granted permission
 > that configure the team's agile planning tools.
 
 > [!div class="mx-imgBorder"]  
-> ![Area path permissions dialog](_img/permissions/area-path-permissions-vsts.png)  
+> ![Area path permissions dialog](media/permissions/area-path-permissions-vsts.png)  
 
 
 <table valign="top" width="100%">
@@ -2311,7 +2444,7 @@ You manage the security of each iteration path from the [web portal](../../organ
 Members of the Project Administrators group are automatically granted these permissions for each iteration defined for a project. Consider granting team administrators, scrum masters, or team leads permissions to create, edit, or delete iteration nodes.  
 
 > [!div class="mx-imgBorder"]  
-> ![Iteration Path permissions dialog](_img/permissions/iteration-path-permissions-vsts.png)
+> ![Iteration Path permissions dialog](media/permissions/iteration-path-permissions-vsts.png)
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -2375,7 +2508,7 @@ Members of the Project Administrators group are automatically granted these perm
 You manage query and query folder permissions through the [web portal](../../boards/queries/set-query-permissions.md). Project Administrators are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project.
 
 > [!div class="mx-imgBorder"]  
-> ![Query folder permissions dialog](_img/permissions/query-folder-permissions-vsts.png)
+> ![Query folder permissions dialog](media/permissions/query-folder-permissions-vsts.png)
 
 Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the project. To learn more, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).
 
@@ -2744,7 +2877,7 @@ are denied all permissions except **View release pipeline** and
 
 ## Task group (Build and Release) permissions
 
-You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project
+You manage permissions [for task groups from the **Build and Release** hub](../../pipelines/policies/set-permissions.md) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group definition.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
@@ -2765,7 +2898,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 ## Lab Management 
 
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
-You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd#permissions).
+You can set these permissions by using the [TFSLabConfig permissions command-line tool](/azure/devops/server/command-line/tfslabconfig-cmd).
 
 By default, the project Readers groups have only View lab resources (Read) permissions.
 
@@ -2859,7 +2992,7 @@ By default, the project Readers groups have only View lab resources (Read) permi
 
 ## Notifications or alerts
 
-There are no UI permissions associated with [managing email notifications or alerts](../../boards/queries/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
+There are no UI permissions associated with [managing email notifications or alerts](../../notifications/manage-your-personal-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
 
 - By default, members of the project level **Contributors** group can subscribe to alerts for themselves.
@@ -2873,12 +3006,12 @@ There are no UI permissions associated with [managing email notifications or ale
 You can manage alert permissions using [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd).
 
 > [!div class="mx-tdBreakAll"]  
-> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators and Project Collection Service Accounts|
+> |TFSSecurity Action|TFSSecurity Namespace|Description|Project Collection Administrators &<<br/>Project Collection Service Accounts|
 > |---|---|---|:---:|
-> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](_img/checkmark.png)|
-> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](_img/checkmark.png)|
-> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](_img/checkmark.png)|
-> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](_img/checkmark.png)|
+> |CREATE_SOAP_SUBSCRIPTION|EventSubscription|Can create a SOAP-based web service subscription.|![checkmark](media/checkmark.png)|
+> |GENERIC_READ|EventSubscription|Can view subscription events defined for a project.|![checkmark](media/checkmark.png)|
+> |GENERIC_WRITE|EventSubscription|Can create alerts for other users or for a team.|![checkmark](media/checkmark.png)|
+> |UNSUBSCRIBE|EventSubscription|Can unsubscribe from an event subscription.|![checkmark](media/checkmark.png)|
 
 
 ## Related articles

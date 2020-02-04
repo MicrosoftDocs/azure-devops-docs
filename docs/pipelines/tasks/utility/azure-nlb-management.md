@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to connect or disconnect an Azure v
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureNLBManagementV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureNLBManagementV1.md)]
 
 ::: moniker-end
 

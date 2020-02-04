@@ -16,31 +16,31 @@ ms.date: 12/10/2019
 
 # Pipeline duration sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 This article shows you how to get pipeline duration, or the time taken to run a pipeline. This report is similar to the duration summary metric in the 'Pipeline duration' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example of the pipeline duration report is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines duration - Report](_img/odatapowerbi-pipelines/duration-report.png)
+> ![Sample - Pipelines duration - Report](media/odatapowerbi-pipelines/duration-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -57,19 +57,19 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)
 /groupby(
 (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))
 ```
@@ -78,7 +78,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -92,7 +92,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
@@ -137,7 +137,7 @@ The query doesn't return all the columns in the format in which you can directly
 1. Change the type of columns **Duration50thPercentileInSeconds, Duration80thPercentileInSeconds** and **Duration95thPercentileInSeconds** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](_img/odatapowerbi-pipelines/duration-changecolumntype1.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/duration-changecolumntype1.png)
 
 
 ### Rename fields and query 
@@ -147,17 +147,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/odatapowerbi-pipelines/duration-renamerightclick.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/duration-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/odatapowerbi-pipelines/renamequery.png)
+	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/odatapowerbi-pipelines/closeandapply.png)
+	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -167,7 +167,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/duration-fields.png)
+> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/duration-fields.png)
 
 For a simple report, do the following steps:
 
@@ -183,7 +183,7 @@ For a simple report, do the following steps:
 Your report should appear similar to the following image.   
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Report](_img/odatapowerbi-pipelines/duration-report.png)
+> ![Sample - Pipelines Duration - Report](media/odatapowerbi-pipelines/duration-report.png)
 
 
 ## Additional queries
@@ -199,13 +199,13 @@ You can change your Pipeline name. To ensure that the Power BI reports don't bre
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipelineId  eq {pipelineid} "
+                &"PipelineId  eq {pipelineid} "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -222,19 +222,19 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipelineId  eq {pipelineid}
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    PipelineId  eq {pipelineid}
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.95) as Duration95thPercentileInSeconds)
 /groupby(
 (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds))
 ```
@@ -250,13 +250,13 @@ You may want to view the duration of a pipeline for a particular **branch** only
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -273,19 +273,19 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5, BranchSK) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8, BranchSK) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.95, BranchSK) as Duration95thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5, BranchSK) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8, BranchSK) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.95, BranchSK) as Duration95thPercentileInSeconds)
 /groupby(
 (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Branch/BranchName))
 ```
@@ -296,26 +296,26 @@ $apply=filter(
 
 You may want to view the duration for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand BuildPipeline into  BuildPipeline.BuildPipelineName.
-- Add the field **BuildPIpeline.BuildPipelineName** to **Axis**.
+- Expand Pipeline into  Pipeline.PipelineName.
+- Add the field **PIpeline.PipelineName** to **Axis**.
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
                 &"CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
-                &") "
+                &"    ) "
         &"/compute( "
-        &"percentile_cont(TotalDurationSeconds, 0.5, BuildPipelineId) as Duration50thPercentileInSeconds, "
-            &"percentile_cont(TotalDurationSeconds, 0.8, BuildPipelineId) as Duration80thPercentileInSeconds, "
-                &"percentile_cont(TotalDurationSeconds, 0.95, BuildPipelineId) as Duration95thPercentileInSeconds) "
+        &"percentile_cont(TotalDurationSeconds, 0.5, PipelineId) as Duration50thPercentileInSeconds, "
+            &"percentile_cont(TotalDurationSeconds, 0.8, PipelineId) as Duration80thPercentileInSeconds, "
+                &"percentile_cont(TotalDurationSeconds, 0.95, PipelineId) as Duration95thPercentileInSeconds) "
                 &"/groupby( "
-            &"(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, BuildPipeline/BuildPipelineName)) "
+            &"(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Pipeline/PipelineName)) "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
     Source
@@ -324,28 +324,28 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5, BuildPipelineId) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8, BuildPipelineId) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.95, BuildPipelineId) as Duration95thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5, PipelineId) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8, PipelineId) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.95, PipelineId) as Duration95thPercentileInSeconds)
 /groupby(
-(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, BuildPipeline/BuildPipelineName))
+(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds,Duration95thPercentileInSeconds, Pipeline/PipelineName))
 ```
 
 ***
 
 ## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

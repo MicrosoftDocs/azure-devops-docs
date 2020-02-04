@@ -18,7 +18,7 @@ This page shows different samples about the splitter control.
 
 **Go to [API Reference](../../reference/client/controls/splitter.md) for more details.**
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 

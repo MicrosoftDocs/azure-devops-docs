@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Buy CI/CD for Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
@@ -26,7 +26,7 @@ We offer a *free tier* for each. The *free tier* includes:
 - Free tier of Microsoft-hosted CI/CD (one concurrent job, up to 30 hours per month)
 - One self-hosted CI/CD concurrent job
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Microsoft-hosted CI/CD
 
@@ -66,30 +66,30 @@ Ensure the following is true:
 ## Increase quantity of CI/CD
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing tab in Organization settings](_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing tab in Organization settings](media/shared/select-billing-organization-settings.png)
 
 4. Enter the amount of Microsoft-hosted CI/CD or Self-hosted CI/CD, and then select **Save**.
 
-   ![Enter amount and then select Save](_img/_shared/enter-amount-ms-self-hosted-cicd.png)
+   ![Enter amount and then select Save](media/shared/enter-amount-ms-self-hosted-cicd.png)
 
 5. Select **Confirm purchase**.
 
 ## Decrease quantity of CI/CD
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing tab in Organization settings](_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing tab in Organization settings](media/shared/select-billing-organization-settings.png)
 
 4. Enter a lesser quantity of **Microsoft-hosted CI/CD** or **Self-hosted CI/CD**, and then select **Save**.
 
@@ -98,13 +98,13 @@ Ensure the following is true:
 To view your current CI/CD capacity details and consumption, complete the following steps.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
    go to your organization toolbar, and then go to **Parallel jobs** under **Pipelines**.
 
-   ![Pipelines, Parallel jobs](_img/_shared/pipelines-parallel-jobs.png)
+   ![Pipelines, Parallel jobs](media/shared/pipelines-parallel-jobs.png)
 
 ## XAML build
 

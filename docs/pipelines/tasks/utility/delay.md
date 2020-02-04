@@ -27,7 +27,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DelayV1.md)]
+[!INCLUDE [temp](../includes/yaml/DelayV1.md)]
 
 ::: moniker-end
 
@@ -49,6 +49,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

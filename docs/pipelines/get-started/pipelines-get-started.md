@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -35,7 +35,7 @@ Follow these basic steps:
 
 Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-![Pipelines YAML intro image ](../_img/pipelines-image-yaml.png)
+![Pipelines YAML intro image ](../media/pipelines-image-yaml.png)
 
 [Create your first pipeline](../create-first-pipeline.md).
 
@@ -62,7 +62,7 @@ The build creates an artifact that's used by the rest of your pipeline to run ta
 
 Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-![Pipelines designer intro image](../_img/pipelines-image-designer.png)
+![Pipelines designer intro image](../media/pipelines-image-designer.png)
 
 [Create your first pipeline](../create-first-pipeline.md).
 

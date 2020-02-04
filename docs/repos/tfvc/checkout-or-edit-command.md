@@ -22,7 +22,9 @@ Checks out a file and changes its pending change status to Edit. You can call th
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
+```
+tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
+```
 
 ## Parameters
 
@@ -38,13 +40,17 @@ Checks out a file and changes its pending change status to Edit. You can call th
 
 ### Check out a single item
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program.cs
+```
 
 Checks out program.cs.
 
 ### Check out two items
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 Checks out the files program1.cs and program2.c.
 
@@ -54,18 +60,18 @@ Checks out the files program1.cs and program2.c.
 
 ## Tips
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to download the latest files from the server before you check out files and begin your work. See [Get command](get-command.md).
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) If you are beginning a new task, it's probably a good idea for you to download the latest files from the server before you check out files and begin your work. See [Get command](get-command.md).
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) When you begin editing a file in a [local workspace](decide-between-using-local-server-workspace.md), it is automatically checked out for you.
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) When you begin editing a file in a [local workspace](decide-between-using-local-server-workspace.md), it is automatically checked out for you.
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) You can view a list of your pending changes:
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) You can view a list of your pending changes:
 
     -   And work with related data such as Comments and Associated Work Items in the **Check In** dialog box using the [Checkin command](checkin-command.md).
 
     -   At the command prompt by using the [Status command](status-command.md).
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) When you are ready to check in your changes to the team's codebase on the server, use the [Checkin command](checkin-command.md).
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) When you are ready to check in your changes to the team's codebase on the server, use the [Checkin command](checkin-command.md).
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) If you need to set aside changes (and perhaps also want to clean your workspace for another task), use the [Shelve Command](shelve-command.md).
 
--   ![Tip](_img/checkout-or-edit-command/IC572374.png) If you use a [server workspace](decide-between-using-local-server-workspace.md), files that you have not checked out are read-only.
+-   ![Tip](media/checkout-or-edit-command/IC572374.png) If you use a [server workspace](decide-between-using-local-server-workspace.md), files that you have not checked out are read-only.

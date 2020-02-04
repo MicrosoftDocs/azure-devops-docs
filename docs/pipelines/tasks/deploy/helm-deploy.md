@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.manager: mijacobs
-ms.author: shasb
+ms.author: atulmal
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---
@@ -91,7 +91,7 @@ This is used with one of the helm [commands](#commands) and the appropriate valu
 <a name="commands"></a>
 ## Command values
 
-The command input accepts one of the following [helm commands](https://docs.helm.sh/helm/helm): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
+The command input accepts one of the following [helm commands](https://v2-14-0.helm.sh/docs/helm/): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>

@@ -16,31 +16,31 @@ ms.date: 12/10/2019
 
 # Pipeline duration trend sample report 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to create a report that shows how long your pipeline typically takes to complete successfully. The daily trend of pipeline duration report is similar to the 'Pipeline duration trend' chart of the [Pipeline duration report](../../pipelines/reports/pipelinereport.md#pipeline-duration-report). 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 The following image shows an example of such a chart.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines duration trend - Report](_img/odatapowerbi-pipelines/durationtrend-report.png)
+> ![Sample - Pipelines duration trend - Report](media/odatapowerbi-pipelines/durationtrend-report.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Sample queries
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -56,19 +56,19 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -76,7 +76,7 @@ $apply=filter(
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/pipelines-sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/pipelines-sample-query-substitutions.md)]
 
 
 ### Query breakdown
@@ -90,7 +90,7 @@ The following table describes each part of the query.
 <td>Start filter()</td>
 <tr>
 <tr>
-<td><code>BuildPipeline/BuildPipelineName eq '{pipelinename}'</code></td>
+<td><code>Pipeline/PipelineName eq '{pipelinename}'</code></td>
 <td>Return pipeline runs for the specified pipeline</td>
 <tr>
 <tr>
@@ -130,22 +130,22 @@ The query returns some columns that you need to expand and flatten into its fiel
 After closing the Advanced Editor and while remaining in the Power Query Editor, select the expand button on **CompletedOn**.
 
 
-### Expand the BuildCompletedOn column 
+### Expand the CompletedOn column 
 
 1. Choose the expand button.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](_img/odatapowerbi-pipelines/passratetrend-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odatapowerbi-pipelines/passratetrend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](_img/odatapowerbi-pipelines/passratetrend-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odatapowerbi-pipelines/passratetrend-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](_img/odatapowerbi-pipelines/passratetrend-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odatapowerbi-pipelines/passratetrend-expand3.png)
 
 
 ### Change the column type
@@ -155,7 +155,7 @@ The query doesn't return all the columns in the format in which you can directly
 - Change the type of column **Duration80thPercentileInSeconds** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](_img/odatapowerbi-pipelines/duration-changecolumntype1.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-pipelines/duration-changecolumntype1.png)
 
 
 ### Rename fields and query
@@ -165,17 +165,17 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](_img/odatapowerbi-pipelines/duration-renamerightclick.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-pipelines/duration-renamerightclick.png)
   
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Query](_img/odatapowerbi-pipelines/renamequery.png)
+	> ![Power BI Rename Query](media/odatapowerbi-pipelines/renamequery.png)
   
 1. Once done, choose **Close & Apply** to save the query and return to Power BI.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Close & Apply](_img/odatapowerbi-pipelines/closeandapply.png)
+	> ![Power BI Close & Apply](media/odatapowerbi-pipelines/closeandapply.png)
   
   
 ## Create the report
@@ -185,7 +185,7 @@ Power BI shows you the fields you can report on.
 > [!NOTE]   
 > The example below assumes that no one renamed any columns. 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration - Fields](_img/odatapowerbi-pipelines/durationtrend-fields.png)
+> ![Sample - Pipelines Duration - Fields](media/odatapowerbi-pipelines/durationtrend-fields.png)
 
 For a simple report, do the following steps:
 
@@ -203,7 +203,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Pipelines Duration trend - Report](_img/odatapowerbi-pipelines/durationtrend-report.png)
+> ![Sample - Pipelines Duration trend - Report](media/odatapowerbi-pipelines/durationtrend-report.png)
 
 
 ## Additional queries
@@ -214,17 +214,17 @@ You can use the following additional queries to create different but similar rep
 ### Use Pipeline Id, rather than Pipeline Name
 
 You can change your Pipeline name. To ensure that the Power BI reports don't break when the pipeline name is changed, use pipeline ID rather than pipeline name. You can obtain the pipeline ID  from the URL of the pipeline runs page.
-https://dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
+https:\//dev.azure.com/{organization}/{project}/_build?definitionId= **{pipelineid}**
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipelineId eq {pipelineId} "
+                &"PipelineId eq {pipelineId} "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -239,19 +239,19 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipelineId eq {pipelineId}
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    PipelineId eq {pipelineId}
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -263,13 +263,13 @@ You may want to view the duration trend calculated using other percentile value.
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -286,21 +286,21 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.5,CompletedDateSK) as Duration50thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds,
-	percentile_cont(TotalDurationSeconds, 0.90,CompletedDateSK) as Duration90thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.5,CompletedDateSK) as Duration50thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.8,CompletedDateSK) as Duration80thPercentileInSeconds,
+    percentile_cont(TotalDurationSeconds, 0.90,CompletedDateSK) as Duration90thPercentileInSeconds)
 /groupby(
-	(Duration50thPercentileInSeconds, Duration80thPercentileInSeconds, Duration90thPercentileInSeconds, CompletedOn/Date))
+    (Duration50thPercentileInSeconds, Duration80thPercentileInSeconds, Duration90thPercentileInSeconds, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -316,13 +316,13 @@ You may want to view the duration trend of a pipeline for a particular **branch*
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
-                &"BuildPipeline/BuildPipelineName eq '{pipelinename}' "
+                &"Pipeline/PipelineName eq '{pipelinename}' "
                 &"and CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
         &") "
@@ -337,19 +337,19 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	BuildPipeline/BuildPipelineName eq '{pipelinename}'
-	and CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    Pipeline/PipelineName eq '{pipelinename}'
+    and CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,BranchSK, CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,BranchSK, CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, Branch/BranchName, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, Branch/BranchName, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -359,25 +359,25 @@ $apply=filter(
 
 You may want to view the duration trend for all the pipelines of the project in a single report. To create the report, follow the below additional steps along with what is defined previously in this article.
 
-- Expand BuildPipeline into BuildPipeline.BuildPipelineName
-- Select Power BI Visualization **Slicer** and add the field BuildPipeline.BuildPipelineName to the slicer's **Field**
+- Expand Pipeline into Pipeline.PipelineName
+- Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
-   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?"
+   Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
         &"$apply=filter( "
                 &"CompletedDate ge {startdate} "
                 &"and (SucceededCount eq 1 or PartiallySucceededCount eq 1) "
                 &") "
         &"/compute( "
-        &"percentile_cont(TotalDurationSeconds, 0.8,BuildPipelineId, CompletedDateSK) as Duration80thPercentileInSeconds) "
+        &"percentile_cont(TotalDurationSeconds, 0.8,PipelineId, CompletedDateSK) as Duration80thPercentileInSeconds) "
             &"/groupby( "
-                &"(Duration80thPercentileInSeconds, BuildPipeline/BuildPipelineName, CompletedOn/Date)) "
+                &"(Duration80thPercentileInSeconds, Pipeline/PipelineName, CompletedOn/Date)) "
                 &"&$orderby=CompletedOn/Date asc "
     ,null, [Implementation="2.0",OmitValues = ODataOmitValues.Nulls,ODataVersion = 4]) 
 in
@@ -385,18 +385,18 @@ in
 ```
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
-https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Builds?
+https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?
 $apply=filter(
-	CompletedDate ge {startdate}
-	and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
-	)
+    CompletedDate ge {startdate}
+    and (SucceededCount eq 1 or PartiallySucceededCount eq 1)
+    )
 /compute(
-	percentile_cont(TotalDurationSeconds, 0.8,BuildPipelineId, CompletedDateSK) as Duration80thPercentileInSeconds)
+    percentile_cont(TotalDurationSeconds, 0.8,PipelineId, CompletedDateSK) as Duration80thPercentileInSeconds)
 /groupby(
-	(Duration80thPercentileInSeconds, BuildPipeline/BuildPipelineName, CompletedOn/Date))
+    (Duration80thPercentileInSeconds, Pipeline/PipelineName, CompletedOn/Date))
 &$orderby=CompletedOn/Date asc
 ```
 
@@ -404,8 +404,8 @@ $apply=filter(
 
 ## Full list of sample reports for Pipelines
 
-[!INCLUDE [temp](_shared/sample-full-list-pipelines.md)]
+[!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-related-articles-pipelines.md)]
+[!INCLUDE [temp](includes/sample-related-articles-pipelines.md)]

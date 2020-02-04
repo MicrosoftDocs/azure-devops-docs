@@ -25,7 +25,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../../_shared/yaml/NuGetPublisherV0.md)]
+[!INCLUDE [temp](../../includes/yaml/NuGetPublisherV0.md)]
 
 ::: moniker-end
 
@@ -70,12 +70,12 @@ None
 </td>
 </tr>
 
-[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 </table>
 
 ## Examples
 
-[!INCLUDE [temp](../../_shared/nuget-create-step-examples.md)]
+[!INCLUDE [temp](../../includes/nuget-create-step-examples.md)]

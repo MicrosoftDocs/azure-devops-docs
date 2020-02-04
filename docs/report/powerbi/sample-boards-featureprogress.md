@@ -16,15 +16,15 @@ ms.date: 08/07/2019
 
 # Feature progress rollup sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
  
 This article shows you how to display the percentage complete by rollup of Story Points  for a given set of active Features. An example is shown in the following image. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](_img/odatapowerbi-featureprogress-report.png)
+> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 > 
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 
@@ -33,7 +33,7 @@ This article shows you how to display the percentage complete by rollup of Story
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -55,7 +55,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -75,7 +75,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions.md)]
 - {areapath} - Your Area Path. Example format: Project\Level1\Level2
 
 
@@ -104,7 +104,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
 ### Expand Descendants column
 
@@ -113,17 +113,17 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 1. Select the expand button on the Descendants column.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants.png)
 
 2. Check all the fields and choose **OK**.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants2.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants2.png)
 
 3. Table now contains rollup fields.
  
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants3.png)
+    > ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants3.png)
 
 ### Pivot Descendants.StateCategory column
 
@@ -135,13 +135,13 @@ The Descendants column contains a table with two fields: State and TotalStoryPoi
 	Power BI creates a column for every StateCategory value.
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI + OData - expanding an entity column](_img/odatapowerbi-expanddescendants4.png)
+	> ![Power BI + OData - expanding an entity column](media/odatapowerbi-expanddescendants4.png)
 
 ### Replace Nulls in the pivoted columns
 
 Some of the new Pivoted StateCategory columns will have null values. For easier reporting, replace the nulls with zeroes. 
 
-[!INCLUDE [temp](_shared/sample-replace-nulls.md)]
+[!INCLUDE [temp](includes/sample-replace-nulls.md)]
 
 Repeat for every Pivoted StateCategory column.
 
@@ -164,7 +164,7 @@ Repeat for every Pivoted StateCategory column.
 1. Select **Transform** menu.
 1. Select **Data Type** and select Percentage.
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -175,7 +175,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Fields](_img/odatapowerbi-featureprogress-fields.png)
+> ![Sample - Feature Progress - Fields](media/odatapowerbi-featureprogress-fields.png)
 
 For a simple report, do the following steps:
 
@@ -190,9 +190,9 @@ For a simple report, do the following steps:
 The example report displays.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Feature Progress - Report](_img/odatapowerbi-featureprogress-report.png)
+> ![Sample - Feature Progress - Report](media/odatapowerbi-featureprogress-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 ## Additional queries
 
@@ -204,7 +204,7 @@ This query is the same as the one used above, except it filters by Team Name rat
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let
@@ -226,7 +226,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/WorkItems?
@@ -246,8 +246,8 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 ## Full list of sample reports
 
-[!INCLUDE [temp](_shared/sample-fulllist.md)]
+[!INCLUDE [temp](includes/sample-fulllist.md)]
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

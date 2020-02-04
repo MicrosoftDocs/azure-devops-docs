@@ -82,7 +82,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [FileTransformV1](../_shared/yaml/FileTransformV1.md)]
+[!INCLUDE [FileTransformV1](../includes/yaml/FileTransformV1.md)]
 
 ## Arguments
 

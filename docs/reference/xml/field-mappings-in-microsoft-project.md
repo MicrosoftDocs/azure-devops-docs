@@ -14,11 +14,11 @@ ms.date: 01/28/2019
 
 # Field mappings in Microsoft Project
 
-[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
+[!INCLUDE [temp](../../includes/version-tfs-2018-earlier.md)]  
 
 You can customize how data is mapped between Microsoft Project and Team Foundation Server (TFS) by modifying the Microsoft Project Field Mapping File. The mapping file associates the reference name of a work item tracking field  with a Project field. Before you change the Microsoft Project field mappings, you should review the information provided later in this topic to understand how TFS copies data from Project to the work item tracking database.  
 
-[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+[!INCLUDE [temp](includes/project-integration-deprecated.md)]
 
 > [!NOTE]  
 >  The supported set of Project field names may be different for different versions of Project.  

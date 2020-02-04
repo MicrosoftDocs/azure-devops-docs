@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Assign conditional-based values and rules
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define rules that are run conditionally by using the **WHEN**, **WHENNOT**, **WHENCHANGED**, and **WHENNOTCHANGED** elements. You use these rules to define which elements are run when the defined clause is `True`. You can define conditions that are based on what value is assigned to a specific field or whether a user modifies a specific field. For example, you can create a dependent pick list to provide detailed security or custom behavior.  
 
