@@ -10,13 +10,13 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= tfs-2013'
-ms.date: 07/17/2019
+monikerRange: '>= azure-devops-2019'
+ms.date:02/05/2020
 ---
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
   
@@ -26,9 +26,10 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
 
 > [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player]
 
-<!---
-<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A105/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
--->
+
+> [!NOTE]  
+> This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Most of the guidance is valid for earlier on-premises versions. However, images show only examples for the latest versions. Also, the Basic process is only available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. 
+
 
 ## Work item types 
  
@@ -100,16 +101,18 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 
 **Update the status of requirements**
 
-Add and update the status from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+Add and update the status from **Proposed**, **Active**, and **Resolved**. Add tasks as child items to requirements. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md).   
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/track-issues/update-status.png)  
+> ![Update status on Kanban board](media/about-boards/cmmi-update-status.png)  
+
+
 **Prioritize your backlog of requirements**
 
 Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-backlog.png)  
+> ![Reorder work items](media/about-boards/cmmi-reprioritize.png)  
 
 
 * * * 
@@ -171,12 +174,10 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
-> [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
 
@@ -187,12 +188,10 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 **Assign backlog items to a sprint**
 
 ::: moniker range="azure-devops"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -203,12 +202,10 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 **Assign backlog items to a sprint**
 
 ::: moniker range="azure-devops"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/scrum-assign-sprint.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -219,14 +216,12 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 **Assign backlog items to a sprint**
 
 ::: moniker range="azure-devops"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-> [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint-on-prem.png)  
 ::: moniker-end
 
 
@@ -253,29 +248,54 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
+> ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)
+> ![Backlogs, show parents](media/about-boards/agile-hierarchy-cloud.png)
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]  
+> ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)  
+::: moniker-end
 
 #### [Basic process](#tab/basic-process) 
 
 **Group items to create a hierarchy**
 
+> ::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> ![Backlogs, show parents](media/about-boards/hierarchy-cloud.png) 
+::: moniker-end
+::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy.png) 
+::: moniker-end
 
 #### [Srum process](#tab/scrum-process) 
 
 **Group items to create a hierarchy**
 
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
+> ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png) 
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]  
+> ![Backlogs, show parents](media/about-boards/scrum-hierarchy-on-prem.png)  
+::: moniker-end
 
 #### [CMMI process](#tab/cmmi-process) 
 
 **Group items to create a hierarchy**
 
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
+> ![Backlogs, show parents](media/about-boards/cmmi-hierarchy.png) 
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]  
+> ![Backlogs, show parents](media/about-boards/cmmi-hierarchy-on-prem.png)  
+::: moniker-end
+
 
 * * * 
 
