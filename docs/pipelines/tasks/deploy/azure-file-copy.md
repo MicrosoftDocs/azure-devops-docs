@@ -32,7 +32,7 @@ app; such as PowerShell scripts, PowerShell-DSC modules,
 and more.
 
 > [!NOTE]
-> The latest version on the Azure File Copy task uses AzCopy V10. If you are using Azure File copy task version 3 or below, which uses AzCopy V7 refer to [this](./azure-file-copy-version3.md). 
+> If you are using Azure File copy task version 3 or below refer to [this](./azure-file-copy-version3.md). 
  
 When the target is Azure VMs, the files are first copied
 to an automatically generated Azure blob container 
@@ -40,7 +40,7 @@ and then downloaded into the VMs. The container is deleted
 after the files have been successfully copied to the VMs.
 
 The task uses **AzCopy**, the command-line utility 
-built for fast copying of data from and into Azure storage accounts.
+built for fast copying of data from and into Azure storage accounts. The latest version on the Azure File Copy task uses [AzCopy V10](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
 
 To dynamically deploy Azure Resource Groups that 
 contain virtual machines, use the 
