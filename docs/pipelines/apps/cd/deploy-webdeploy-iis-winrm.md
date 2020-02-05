@@ -174,7 +174,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Destination Folder**: Specify a folder on the target server where the files should be copied to.<p />
    
-   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://github.com/Microsoft/vsts-rm-extensions/blob/master/Extensions/IISWebAppDeploy/Src/Tasks/IISWebAppDeploy/README_IISAppDeploy.md) - Deploy the package.
+   ![WinRM - IIS Web App Deployment](../../tasks/deploy/media/iis-web-application-deployment-icon.png) [Deploy: WinRM - IIS Web App Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp) - Deploy the package.
    
    - **Machines**: `$(WebServers)`
    
