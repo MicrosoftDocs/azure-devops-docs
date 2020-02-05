@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 01/24/2020
 ---
 
