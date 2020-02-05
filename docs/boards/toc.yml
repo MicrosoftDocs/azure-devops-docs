@@ -155,8 +155,10 @@
     href: ../reference/tfs-ps-sync/toc.yml
 - name: Troubleshooting
   items:
+  - name: FAQs 
+    href: boards-faqs.md 
   - name: Set up your backlogs and boards
-    href: backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+    href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
 - name: Reference
