@@ -40,7 +40,7 @@ and then downloaded into the VMs. The container is deleted
 after the files have been successfully copied to the VMs.
 
 The task uses **AzCopy**, the command-line utility 
-built for fast copying of data from and into Azure storage accounts. The latest version on the Azure File Copy task uses [AzCopy V10](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
+built for fast copying of data from and into Azure storage accounts. The version 4 of the Azure File Copy task uses [AzCopy V10](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
 
 To dynamically deploy Azure Resource Groups that 
 contain virtual machines, use the 
