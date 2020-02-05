@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date:02/05/2020
+ms.date: 02/05/2020
 ---
 
 # What is Azure Boards?
@@ -20,7 +20,7 @@ ms.date:02/05/2020
 
 With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
   
-You can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You do this by adding work items based on the process and work item types available to your project. 
+You can quickly and easily start tracking user stories, backlog items, task, features, and bugs associated with your project. You track work by adding work items based on the process and work item types available to your project. 
 
 ### Video: Plan your work with Azure Boards
 
@@ -33,7 +33,7 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
 
 ## Work item types 
  
-Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. If you want a project that uses the Scrum or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
+Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. If you want a project that uses the Scrum or CMMI process, you can [add another project](../../organizations/projects/create-project.md) and specify the process. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
 
 [!INCLUDE [temp](../includes/four-process-work-item-types-workflow.md)] 
 
@@ -83,18 +83,17 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 
 **Update the status of product backlog items**
 
-Add and update the status from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+Add and update the status of work items by drag-and-drop to a new column. Add tasks as child items to product backlog items. To learn more, see [Start using your Kanban board](../boards/kanban-quickstart.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/track-issues/update-status.png)  
+> ![Update status on Kanban board](media/plan-track-work/update-status.png) 
 
 **Prioritize your backlog of product backlog items**
 
 Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-backlog.png)  
-
+> ![Reorder work items](media/about-boards/reorder-agile-backlog.png)  
 
 
 #### [CMMI process](#tab/cmmi-process) 
@@ -270,7 +269,7 @@ You'll find you can work more effectively through these actions:
 > ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 ::: moniker-end
 
-#### [Srum process](#tab/scrum-process) 
+#### [Scrum process](#tab/scrum-process) 
 
 **Group items to create a hierarchy**
 
