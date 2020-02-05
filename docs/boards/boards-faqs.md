@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 01/30/2020
+ms.date: 02/04/2020
 ---
 
 # Azure Boards FAQs 
@@ -33,6 +33,19 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 
 **Q:** Is this feature on the roadmap? No, this isn't on the roadmap. 
 
+<!---   
+
+### Q: What's the recommended method to group work? 
+
+**A:** 
+
+
+### Q: How can I best track dependencies?
+
+**A:** 
+--> 
+
+
 ### Q: Can I copy a work item including its subtasks? 
 
 **A:** No. Cloning doesn't copy work item subtasks.  
@@ -48,22 +61,62 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
 
+## Backlogs and boards
+
+### Q: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
+
+**A:** Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
+- **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.  
+- **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items. 
+- **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**. 
+To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md).
+
+### Q: How do I create a backlog or Kanban board? 
+
+**A:** You create a backlog or Kanban board by adding a team. Each team gets their own backlog, Kanban board, sprint schedule with sprint backlogs and taskboards. Each team can customize these Agile tools. To learn more, see [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md). 
+
+### Q: Can I define sprints and use with my Kanban board? 
+
+**A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+
+<!--- 
+
+### Q: How do I make H for hours or D for days appear on my Sprint backlogs and Taskboards? 
+
+### Q: How do I migrate my existing backlog to Azure Boards?  
+
+**A:** 
+
+--> 
+
+::: moniker range=">= azure-devops-2019"
 
 ## GitHub integration
+
+Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](boards/github/index.md).
+
 
 ### Is it possible to specify the status when linking a work item to a GitHub commit or PR?
 
 **A:** No. This feature is not supported at this time. 
 
-## Customizations 
+::: moniker-end 
+
+## Configuration and customizations  
+
+### Q: What can I customize?  
+
+**A:** Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
+
 
 ### Q: Is it possible to change the Azure DevOps brand? 
 
 **A:** No. This is not customizable.
 
-### Q: Can sub hubs within the Azure Boards hub be disabled? 
+### Q: Can sub hubs within Azure Boards be disabled? 
 
-**A:** No. Individual pages cannot be disabled. 
+**A:** No. While you can disable an entire service, you can't disable Individual pages within a service. To learn more, see [Turn a service on or off](../organizations/settings/set-services.md). 
 
 ### Q: Can I upload my own custom work item type icons?  
 
@@ -72,19 +125,13 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 **A:** No. This is not a supported feature at this time.   
 
 
+## Integrations & extensions
+
+
 
 ## Related articles
 
+- [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md)
 - [Azure Boards extensions](extensions/index.md)
 - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
 
-
-<!--- Report FAQs
-Can we set permissions to hide a dashboard? 
-Granular level authorization seems to be not possible for example we can make dashboards read only for Reader Only user but can’t hide it completely. Would you recommend doing this in PowerBI?
-Custom work process and custom dashboard versioning support for operations is not available off the shelf. Is this feature on the roadmap? 
-
-Extensions:
-Some of the extensions are not downloadable, we could have installations where the VM that hosts the DevOps server may not have internet connection. Is there a way to deploy extensions on such VMs?
-
--->
