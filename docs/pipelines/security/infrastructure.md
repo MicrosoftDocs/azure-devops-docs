@@ -26,7 +26,7 @@ If possible, use Microsoft-hosted pools rather than self-hosted pools.
 An agent can be bound to only one pool.
 You might want to share agents across projects by sharing the pool with multiple projects.
 In other words, multiple projects might run jobs on the same agent, one after another.
-Although this practice saves infrastructure costs, it can cause lateral movement.
+Although this practice saves infrastructure costs, it can allow lateral movement.
 
 To eliminate that form of lateral movement and to prevent one project from "poisoning" an agent for another project, keep separate agent pools with separate agents for each project.
 
@@ -47,7 +47,8 @@ Often, these agents use privileged accounts to access secrets or production envi
 But if adversaries run a compromised pipeline on one of these build agents, then they can access those secrets.
 Then the adversaries can move laterally through other systems that are accessible through those accounts.
 
-To keep your systems secure, use the lowest-privilege account to run self-hosted agents. For example, use your machine account or a managed service identity.
+To keep your systems secure, use the lowest-privilege account to run self-hosted agents. 
+For example, use your machine account or a managed service identity.
 Let Azure Pipelines manage access to secrets and environments.
 
 ## Minimize the scope of service connections

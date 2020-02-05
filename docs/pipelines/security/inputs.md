@@ -17,7 +17,8 @@ This article discusses how to securely use variables and parameters to gather in
 
 ## Variables
 
-Variables can be a convenient way to collect information from the user up front. You can also use variables to pass data from step to step within a pipeline.
+Variables can be a convenient way to collect information from the user up front. 
+You can also use variables to pass data from step to step within a pipeline.
 
 But use variables with caution.
 Newly created variables, whether they're defined in YAML or written by a script, are read-write by default.
@@ -44,8 +45,10 @@ variables:
 ```
 
 Queue-time variables are exposed to the end user who manually runs a pipeline.
-As originally designed, this concept was only for the UI. The underlying API would accept user overrides of any variable, even variables that weren't designated queue-time.
-This arrangement was confusing and insecure. So we've added a setting that allows you to enforce the "queue-time settable" flag on the API as well.
+As originally designed, this concept was only for the UI. 
+The underlying API would accept user overrides of any variable, even variables that weren't designated as queue-time variables.
+This arrangement was confusing and insecure. 
+So we've added a setting that makes the API accept only variables that can be set at queue time.
 We recommend that you turn on this setting. 
 
 ## Parameters

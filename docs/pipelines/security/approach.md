@@ -22,7 +22,8 @@ And don't hold off making *some* improvements just because you can't make all th
 
 Security recommendations have complex interdependencies.
 Your security posture depends heavily on which recommendations you choose to implement.
-The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams. They also depend on the policies and practices of your organization.
+The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams. 
+They also depend on the policies and practices of your organization.
 
 You might choose to tighten security in one critical area and accept less security but more convenience in another area.
 For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](infrastructure.md#separate-agents-for-each-project).
