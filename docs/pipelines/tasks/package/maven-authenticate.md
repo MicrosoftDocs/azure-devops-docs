@@ -66,10 +66,11 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
 
 #### pom.xml 
 
+Project scoped feed
 ```XML
  <repository>
    <id>MyFeedInOrg1</id>
-   <url>https://pkgs.dev.azure.com/OrganzationName/_packaging/MyFeed1/Maven/v1</url>
+   <url>https://pkgs.dev.azure.com/OrganzationName/ProjectName/_packaging/MyProjectScopedFeed1/Maven/v1</url>
    <releases>
      <enabled>true</enabled>
    </releases>
@@ -79,6 +80,21 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
  </repository>
 ```
 
+Organization scoped feed
+```XML
+ <repository>
+   <id>MyFeedInOrg1</id>
+   <url>https://pkgs.dev.azure.com/OrganzationName/_packaging/MyOrgScopedFeed1/Maven/v1</url>
+   <releases>
+     <enabled>true</enabled>
+   </releases>
+   <snapshots>
+     <enabled>true</enabled>
+   </snapshots>
+ </repository>
+```
+
+Note that the Artifacts feed URL may or may not contain the project. An URL for a project scoped feed must contain the project and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Authenticate Maven feeds outside your organization.
 

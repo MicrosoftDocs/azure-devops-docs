@@ -46,14 +46,12 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
   <packageSources>
     <!-- 
       Any Azure Artifacts feeds within your organization will automatically be authenticated. Both dev.azure.com and visualstudio.com domains are supported.
-      Project scoped feed URL includes the project, collection scoped feed URL does not.
+      Project scoped feed URL includes the project, organization scoped feed URL does not.
     -->
     <add key="MyProjectFeed1" value="https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/nuget/v3/index.json" />
     <add key="MyProjectFeed2" value="https://{organization}.pkgs.visualstudio.com/{project}/_packaging/{feed}/nuget/v3/index.json" />
     <add key="MyOtherProjectFeed1" value="https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed@view}/nuget/v3/index.json" />
-    <add key="MyOtherProjectFeed2" value="https://{organization}.pkgs.visualstudio.com/{project}/_packaging/{feed@view}/nuget/v3/index.json" />
     <add key="MyOrganizationFeed1" value="https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/nuget/v3/index.json" />
-    <add key="MyOrganizationFeed2" value="https://{organization}.pkgs.visualstudio.com/_packaging/{feed}/nuget/v3/index.json" />
   </packageSources>
 </configuration>
 ```
@@ -82,6 +80,9 @@ If all of the Azure Artifacts feeds you use are in the same organization as your
 # ...
 - script: dotnet nuget push --api-key AzureArtifacts --source https://pkgs.dev.azure.com/{organization}/_packaging/{feed1}/nuget/v3/index.json MyProject.*.nupkg
 ```
+where `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
+
+Note that the package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Restore and push NuGet packages outside your organization
 
@@ -129,6 +130,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 ```
 where `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
+Note that the package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ## Open source
 
