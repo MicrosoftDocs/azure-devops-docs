@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-monikerRange: '>= azure-devops-2019'
+monikerRange: '>= tfs-2013'
 ms.date:02/05/2020
 ---
 
@@ -176,7 +176,7 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
@@ -191,7 +191,7 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -205,7 +205,7 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/scrum-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
@@ -219,7 +219,7 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint.png)  
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/cmmi-assign-sprint-on-prem.png)  
 ::: moniker-end
@@ -248,11 +248,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-> ::: moniker range="azure-devops"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-cloud.png)
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)  
 ::: moniker-end
@@ -261,11 +261,11 @@ You'll find you can work more effectively through these actions:
 
 **Group items to create a hierarchy**
 
-> ::: moniker range="azure-devops"
+::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy-cloud.png) 
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 ::: moniker-end
@@ -278,7 +278,7 @@ You'll find you can work more effectively through these actions:
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png) 
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/scrum-hierarchy-on-prem.png)  
 ::: moniker-end
@@ -291,7 +291,7 @@ You'll find you can work more effectively through these actions:
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy.png) 
 ::: moniker-end
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!div class="mx-imgBorder"]  
 > ![Backlogs, show parents](media/about-boards/cmmi-hierarchy-on-prem.png)  
 ::: moniker-end
