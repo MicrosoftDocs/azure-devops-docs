@@ -117,6 +117,12 @@ This may be because web.config is not present in your app. You can either add a 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
 
+### Web app deployment on App Service Environment (ASE) is not working
+* Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
+* If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
+* If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
+* When configuring the build agent, it needs to know the DNS configuration of the Web App it is to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, you need to add the information to the hosts file on the agent machine.
+
 ## FAQs
 
 [!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
