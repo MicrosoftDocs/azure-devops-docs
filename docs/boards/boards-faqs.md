@@ -31,7 +31,7 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 
 **A:** No. Work items can only be assigned to a single user. 
 
-**Q:** Is this feature on the roadmap? No, this isn't on the roadmap. 
+Is this feature on the roadmap? No, this isn't on the roadmap. 
 
 <!---   
 
@@ -50,7 +50,7 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 
 **A:** No. Cloning doesn't copy work item subtasks.  
 
-**Q:** Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194)
+Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194)
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
@@ -68,7 +68,8 @@ To request a feature or up-vote a feature, go to our [Developer Community page](
 **A:** Each backlog lists a filtered set of work items based on the team's selected area path, iteration paths, and work item types.  
 - **Product backlog**: By default lists User Stories (Agile), Issues (Basic), Product Backlog Items and Bugs (Scrum), or Requirements (CMMI). Provides options to show **Parents**, **Forecast**, and **In Progress** or **Completed** child items.  
 - **Portfolio backlog**: By default lists Features (all process models) for the Features backlog, and Epics (Agile, Scrum, and CMMI) for the Epic backlog. Provides options to show **Parents** and **In Progress** or **Completed** child items. 
-- **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**. 
+- **Sprint backlog**: By default lists all product backlog items assigned to the selected iteration, regardless of status. Provides options to show **Work details**.   
+
 To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](backlogs/backlogs-boards-plans.md).
 
 ### Q: How do I create a backlog or Kanban board? 
@@ -97,7 +98,7 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
 
 
-### Is it possible to specify the status when linking a work item to a GitHub commit or PR?
+### Q: Can I specify the status when linking a work item to a GitHub commit or PR?
 
 **A:** No. This feature is not supported at this time. 
 
@@ -110,10 +111,6 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 **A:** Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
 
 
-### Q: Is it possible to change the Azure DevOps brand? 
-
-**A:** No. This is not customizable.
-
 ### Q: Can sub hubs within Azure Boards be disabled? 
 
 **A:** No. While you can disable an entire service, you can't disable Individual pages within a service. To learn more, see [Turn a service on or off](../organizations/settings/set-services.md). 
@@ -122,7 +119,17 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 **Example request**: *When I create a new work item type I get an option to choose an icon, this icon set is limited and does not support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?* 
 
-**A:** No. This is not a supported feature at this time.   
+**A:** No. Uploading your custom icons isn't a supported feature at this time.   
+
+
+
+::: moniker range="azure-devops"
+
+### Q: Is it possible to change the Azure DevOps brand? 
+
+**A:** No. Branding changes aren't supported.  
+
+::: moniker-end 
 
 
 ## Integrations & extensions
