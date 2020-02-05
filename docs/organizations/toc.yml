@@ -37,6 +37,8 @@
       href: /azure/devops/organizations/accounts/change-organization-location?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Owner
       href: /azure/devops/organizations/accounts/change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+   - name: Turn a service on or off
+      href: /azure/devops/organizations/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Resolve orphaned organization
       href: /azure/devops/organizations/accounts/resolve-orphaned-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Rename organization
