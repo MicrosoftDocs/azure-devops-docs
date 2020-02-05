@@ -65,7 +65,7 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 
 You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -85,6 +85,8 @@ You access your backlogs and boards from a web portal. When you work from the St
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
+	[!INCLUDE [temp](../../includes/note-basic-process.md)]
+
 2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
@@ -93,7 +95,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 

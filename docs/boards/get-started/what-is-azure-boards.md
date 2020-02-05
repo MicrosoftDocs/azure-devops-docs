@@ -32,39 +32,11 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
 
 ## Work item types 
  
-Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. 
+Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. If you want a project that uses the Scrum or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md). 
 
-[!INCLUDE [temp](../includes/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/four-process-work-item-types-workflow.md)] 
 
-#### [Basic process](#tab/basic-process) 
-
-Basic provides three work item types&mdash;epics, issues, and tasks&mdash;and a very simple workflow. As works progresses from not started to completed, you update the State workflow field from **To Do**, **Doing**, and **Done**.
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Work item types| Workflow |
-> |------|---------|
-> |![Basic process work item types, conceptual image](media/track-issues/basic-process-epics-issues-tasks.png) | ![Basic process workflow, conceptual image](media/track-issues/basic-process-workflow.png) 
-
-When you add an issue, task, or epic, you create a work item. Each work item represents an object stored in the work item data store. Each work item is assigned an identifier. The IDs are unique within your projects.
-
-Add epics to track significant features or requirements. Use issues to track user stories, bugs, or other smaller items of work. And, use tasks to track even smaller amounts of work for which you want to track time either in hours or days.
-
-#### [Agile process](#tab/agile-process) 
-
-The Agile process provides several work item types&mdash;user stories, bugs, features, epics, and tasks. As works progresses from not started to completed, you update the State workflow field from **New**, **Active**, **Resolved**, and **Closed**.
-
-> [!div class="mx-tdCol2BreakAll"]
-> |Work item types| Workflow |
-> |------|---------|
-> |![Agile process work item types, conceptual image](media/about-boards/agile-process-wits.png) | ![Agile process workflow, conceptual image](media/about-boards/agile-process-workflow.png)
-
-When you add a user story, bug, task, or feature, you create a work item. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier (ID) within your projects. 
-
-Add epics to track significant business initiatives. Add features to track specific applications or set of work. Define user stories to track work that you'll assign to specific team members, and bugs to track code defects. Lastly, use tasks to track even smaller amounts of work for which you want to track time either in hours or days.
-
-* * * 
-
-If you want a project that uses the Scrum or CMMI process, then you can [add another project](../../organizations/projects/create-project.md) and specify the process through advanced setting options. See [Choose a process for a comparison of processes](../work-items/guidance/choose-process.md).
+Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier (ID) within your projects.
 
 ## Track work on interactive backlogs and boards
 
@@ -72,21 +44,6 @@ If you want a project that uses the Scrum or CMMI process, then you can [add ano
 Quickly add and update the status of work using the Kanban board. You can also assign work to team members and tag with labels to support queries and filtering. Share information through descriptions, attachments, or links to network shared content. Prioritize work through drag-and-drop.  
 
 
-#### [Basic process](#tab/basic-process) 
-
-**Update the status of issues**
-
-Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
-
-> [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](media/track-issues/update-status.png)  
-
-**Prioritize your backlog of issues**
-
-Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
-
-> [!div class="mx-imgBorder"]  
-> ![Reorder work items](media/about-boards/reorder-backlog.png)  
 
 #### [Agile process](#tab/agile-process) 
 
@@ -105,6 +62,56 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 > ![Reorder work items](media/about-boards/reorder-agile-backlog.png)  
 
 
+#### [Basic process](#tab/basic-process) 
+
+**Update the status of issues**
+
+Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+
+> [!div class="mx-imgBorder"]  
+> ![Update status on Kanban board](media/track-issues/update-status.png)  
+
+**Prioritize your backlog of issues**
+
+Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+
+> [!div class="mx-imgBorder"]  
+> ![Reorder work items](media/about-boards/reorder-backlog.png)  
+
+#### [Scrum process](#tab/scrum-process) 
+
+**Update the status of product backlog items**
+
+Add and update the status from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+
+> [!div class="mx-imgBorder"]  
+> ![Update status on Kanban board](media/track-issues/update-status.png)  
+
+**Prioritize your backlog of product backlog items**
+
+Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+
+> [!div class="mx-imgBorder"]  
+> ![Reorder work items](media/about-boards/reorder-backlog.png)  
+
+
+
+#### [CMMI process](#tab/cmmi-process) 
+
+**Update the status of requirements**
+
+Add and update the status from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+
+> [!div class="mx-imgBorder"]  
+> ![Update status on Kanban board](media/track-issues/update-status.png)  
+**Prioritize your backlog of requirements**
+
+Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
+
+> [!div class="mx-imgBorder"]  
+> ![Reorder work items](media/about-boards/reorder-backlog.png)  
+
+
 * * * 
 
 
@@ -114,6 +121,13 @@ Collaborate with others through the **Discussion** section of the work item form
 
 Create dashboards that track status and trends of work being accomplished.  Set notifications to get alerted when an issue is created or changed. 
 
+#### [Agile process](#tab/agile-process) 
+
+**Get updated when a work item is updated**
+
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](media/about-boards/user-story-form-follow.png)  
+
 #### [Basic process](#tab/basic-process) 
 
 **Get updated when a work item is updated**
@@ -121,13 +135,20 @@ Create dashboards that track status and trends of work being accomplished.  Set 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/about-boards/issue-form-follow.png)  
 
-
-#### [Agile process](#tab/agile-process) 
+#### [Scrum process](#tab/scrum-process) 
 
 **Get updated when a work item is updated**
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](media/about-boards/user-story-form-follow.png)  
+> ![Work item form, Follow icon control](media/about-boards/scrum-work-item-follow.png)  
+
+
+#### [CMMI process](#tab/cmmi-process) 
+
+**Get updated when a work item is updated**
+
+> [!div class="mx-imgBorder"]  
+> ![Work item form, Follow icon control](media/about-boards/cmmi-work-item-follow.png)  
 
 
 * * * 
