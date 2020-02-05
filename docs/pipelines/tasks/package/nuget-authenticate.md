@@ -19,7 +19,7 @@ monikerRange: 'azure-devops'
 Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories.
 
 > [!IMPORTANT]
-> This task is only compatible with NuGet >= 4.8.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604
+> This task is only compatible with NuGet >= 4.8.0.5385, dotnet >= 2.1.400, or MSBuild >= 15.8.166.59604
 
 ## YAML snippet
 
