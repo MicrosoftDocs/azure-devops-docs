@@ -706,6 +706,7 @@ To escape emojis, enclose them using the \` character.
 <p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
 <p style="margin-bottom:2px;"><code>.</code>, period </p>
 <p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
+<p style="margin-bottom:2px;"><code>*</code>, asterisk</p>
 </td>
 <td>
 <p>Some examples on inserting special characters:</p>
@@ -716,6 +717,7 @@ To escape emojis, enclose them using the \` character.
 <p>Enter <code>&#92;(</code> to get ( </p> 
 <p>Enter <code>&#92;.</code> to get . </p>
 <p>Enter <code>&#92;!</code> to get ! </p>
+<p>Enter <code>&#92;*</code> to get * </p>
 
 </td>
 </tr>

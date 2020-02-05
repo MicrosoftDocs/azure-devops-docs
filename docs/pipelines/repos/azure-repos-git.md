@@ -125,6 +125,8 @@ trigger:
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
 
+For more complex triggers that use `exclude` or `batch`, you must use the full syntax as described in the following sections.
+
 You can specify branches to include and exclude. For example:
 
 ```yaml

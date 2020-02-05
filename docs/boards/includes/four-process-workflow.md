@@ -3,6 +3,15 @@ ms.topic: include
 ---
  
 
+
+#### [Agile process](#tab/agile-process) 
+
+**Workflow states: User Story, Agile process**
+
+> [!div class="mx-imgBorder"]  
+> ![User Story workflow states, Agile process](/azure/devops/boards/work-items/guidance/media/ALM_PT_Agile_WF_UserStory.png)
+
+
 #### [Basic process](#tab/basic-process) 
 
 **Workflow states: Issue, Basic process**
@@ -12,13 +21,6 @@ ms.topic: include
 
 > [!NOTE]  
 > The Basic process is available when you create a new project from Azure DevOps Services or [Azure DevOps Server 2019.1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
-
-#### [Agile process](#tab/agile-process) 
-
-**Workflow states: User Story, Agile process**
-
-> [!div class="mx-imgBorder"]  
-> ![User Story workflow states, Agile process](/azure/devops/boards/work-items/guidance/media/ALM_PT_Agile_WF_UserStory.png)
 
 #### [Scrum process](#tab/scrum-process) 
 
