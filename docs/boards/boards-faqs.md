@@ -94,7 +94,7 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 ## GitHub integration
 
-Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](boards/github/index.md).
+Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
 
 
 ### Is it possible to specify the status when linking a work item to a GitHub commit or PR?
