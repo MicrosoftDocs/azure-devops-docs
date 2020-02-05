@@ -119,9 +119,7 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 **Example request**: *When I create a new work item type I get an option to choose an icon, this icon set is limited and does not support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?* 
 
-**A:** No. Uploading your custom icons isn't a supported feature at this time.   
-
-
+**A:** No. Uploading your custom icons isn't a supported feature at this time. 
 
 ::: moniker range="azure-devops"
 
@@ -132,9 +130,13 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 ::: moniker-end 
 
 
+<!--- 
+
 ## Integrations & extensions
 
 
+
+-->
 
 ## Related articles
 
