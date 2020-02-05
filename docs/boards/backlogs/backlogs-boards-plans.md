@@ -1,4 +1,4 @@
-﻿---
+---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
 description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
@@ -61,6 +61,7 @@ With list backlogs you can quickly develop your project plan; group and prioriti
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 ::: moniker-end
 
+## Access a backlog or board
 
 You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
@@ -146,6 +147,8 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 To manage work, you have access to three classes of backlogs (portfolio, product, and sprint) and two types of boards (Kanban and Taskboards). Backlogs list work items, boards display work items as cards. Backlog and board views provide similar and distinct features to support planning and tracking. 
 
 You use work items to share information, assign work to team members, track dependencies, organize work, and more. You can apply different filters to your backlogs and boards to just show those items of interest. 
+
+[!INCLUDE [temp](../includes/note-configure-customize.md)]
 
 ### Portfolio, product, and sprint backlogs 
 
