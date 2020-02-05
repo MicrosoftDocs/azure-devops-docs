@@ -1,35 +1,41 @@
 ---
-title: Variables and parameters
-description: Safely accepting input from pipeline users.
+title: Recommendations to secure variables and parameters in a pipeline
+description: Find out how to safely accept input from pipeline users.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
 ms.manager: mijacobs
 ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 02/04/2020
 monikerRange: '> azure-devops-2019'
 ---
 
-# Variables and parameters
+# How to securely use variables and parameters in your pipeline
 
-Variables can be a convenient way to collect information from the user up front or to pass data along from step to step within a pipeline.
-Use with caution, however.
-Newly-created variables, whether defined in YAML or output by a script, are read-write by default.
-A downstream step can change the value of a variable in a way you don't expect.
+This article discusses how to securely use variables and parameters to gather input from pipeline users.
+
+## Variables
+
+Variables can be a convenient way to collect information from the user up front. You can also use variables to pass data from step to step within a pipeline.
+
+But use variables with caution.
+Newly created variables, whether they're defined in YAML or written by a script, are read-write by default.
+A downstream step can change the value of a variable in a way that you don't expects.
 
 For instance, imagine your script reads:
 ```batch
 msbuild.exe myproj.proj -property:Configuration=$(MyConfig)
 ```
 A preceding step could set `MyConfig` to `Debug & deltree /y c:`.
-While this example would only delete the contents of your build agent, you can imagine how this could easily escalate into something far more dangerous.
+Although this example would only delete the contents of your build agent, you can imagine how this setting could easily become far more dangerous.
 
-Variables can be made read-only.
+You can make variables read-only.
 System variables like `Build.SourcesDirectory`, task output variables, and queue-time variables are always read-only.
-Variables created in YAML or created at runtime by a script can be designated read-only.
+Variables that are created in YAML or created at run time by a script can be designated as read-only.
 When a script or task creates a new variable, it can pass the `isReadonly=true` flag in its logging command to make the variable read-only.
-In YAML, you can specify read-only variables using a specific key:
+
+In YAML, you can specify read-only variables by using a specific key:
 ```yaml
 variables:
 - name: myReadOnlyVar
@@ -37,13 +43,17 @@ variables:
   readonly: true
 ```
 
-Queue-time variables are exposed to the end user who is manually running a pipeline.
-As originally designed, this was a UI-only concept and the underlying API would accept user overrides of any variable, even those not designated queue-time.
-This was confusing and insecure, so we have added a setting which allows you to enforce the "queue-time settable" flag on the API as well.
-We recommend you turn this setting on. 
+Queue-time variables are exposed to the end user who manually runs a pipeline.
+As originally designed, this concept was only for the UI. The underlying API would accept user overrides of any variable, even variables that weren't designated queue-time.
+This arrangement was confusing and insecure. So we've added a setting that allows you to enforce the "queue-time settable" flag on the API as well.
+We recommend that you turn on this setting. 
 
-Unlike variables, pipeline parameters cannot be changed by a pipeline while it's running.
+## Parameters
+
+Unlike variables, pipeline parameters can't be changed by a pipeline while it's running.
 Parameters have data types such as `number` and `string`, and they can be restricted to a subset of values.
-This is useful when a user-configurable part of the pipeline should only take a value from a constrained list, ensuring it won't take arbitrary data. 
+Restricting the parameters is useful when a user-configurable part of the pipeline should take a value only from a constrained list. The setup ensures that the pipeline won't take arbitrary data. 
 
-After you've secured your inputs, you also need to secure your [shared infrastructure](infrastructure.md).
+## Next steps
+
+After you secure your inputs, you also need to secure your [shared infrastructure](infrastructure.md).
