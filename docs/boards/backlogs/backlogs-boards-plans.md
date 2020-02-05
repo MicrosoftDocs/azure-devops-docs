@@ -85,7 +85,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-	[!INCLUDE [temp](../../includes/note-basic-process.md)]
+	[!INCLUDE [temp](../includes/note-basic-process.md)]
 
 2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 

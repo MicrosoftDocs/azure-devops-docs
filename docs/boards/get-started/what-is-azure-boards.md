@@ -163,20 +163,6 @@ To learn more, see:
 
 Plan sprints by assigning work to current or future sprints. Forecast work that can get completed based on effort estimates. Determine how much work can be done within a sprint. Bulk assign issues and tasks to team members and sprints. 
 
-#### [Basic process](#tab/basic-process) 
-
-**Assign backlog items to a sprint**
-
-::: moniker range="azure-devops"
-> [!div class="mx-imgBorder"]
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
-::: moniker-end
-::: moniker range="azure-devops-2019"
-> [!div class="mx-imgBorder"]
-> [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
-::: moniker-end
 
  
 #### [Agile process](#tab/agile-process) 
@@ -193,6 +179,56 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 > [!div class="mx-imgBorder"]  
 > ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
+
+
+
+#### [Basic process](#tab/basic-process) 
+
+**Assign backlog items to a sprint**
+
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
+::: moniker-end
+
+
+#### [Scrum process](#tab/scrum-process) 
+
+**Assign backlog items to a sprint**
+
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
+::: moniker-end
+
+
+#### [CMMI process](#tab/cmmi-process) 
+
+**Assign backlog items to a sprint**
+
+::: moniker range="azure-devops"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
+::: moniker-end
+
 
 * * * 
 
@@ -212,12 +248,6 @@ You'll find you can work more effectively through these actions:
 - Create work item templates to help contributors quickly add and define open meaningful issues and tasks.  
 - Quickly find work items that are assigned to you. Pivot or filter your work items based on other criteria, such as work items that you follow, that you're mentioned in, or that you viewed or updated.  
 
-#### [Basic process](#tab/basic-process) 
-
-**Group items to create a hierarchy**
-
-> [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 
 #### [Agile process](#tab/agile-process) 
 
@@ -225,6 +255,27 @@ You'll find you can work more effectively through these actions:
 
 > [!div class="mx-imgBorder"]
 > ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)
+
+#### [Basic process](#tab/basic-process) 
+
+**Group items to create a hierarchy**
+
+> [!div class="mx-imgBorder"]
+> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
+
+#### [Srum process](#tab/scrum-process) 
+
+**Group items to create a hierarchy**
+
+> [!div class="mx-imgBorder"]
+> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
+
+#### [CMMI process](#tab/cmmi-process) 
+
+**Group items to create a hierarchy**
+
+> [!div class="mx-imgBorder"]
+> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 
 * * * 
 
