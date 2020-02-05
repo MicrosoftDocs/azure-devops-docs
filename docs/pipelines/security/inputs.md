@@ -22,7 +22,7 @@ You can also use variables to pass data from step to step within a pipeline.
 
 But use variables with caution.
 Newly created variables, whether they're defined in YAML or written by a script, are read-write by default.
-A downstream step can change the value of a variable in a way that you don't expects.
+A downstream step can change the value of a variable in a way that you don't expect.
 
 For instance, imagine your script reads:
 ```batch
