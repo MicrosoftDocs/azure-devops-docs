@@ -64,11 +64,12 @@ Registries within your Azure Artifacts organization will also be automatically a
 
 #### .npmrc
 ```
-registry=https://pkgs.dev.azure.com/{organization}/_packaging/{feed}/npm/registry/
+registry=https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/npm/registry/
 @{scope}:registry=https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/npm/registry/
 @{otherscope}:registry=https://{thirdPartyRepository}/npm/registry/
 always-auth=true
 ```
+Note that the registry URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and the URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 #### npm
 ```YAML
@@ -140,9 +141,5 @@ If your proxy requires authentication, you may need to add an additional build s
 - script: node -e "let u = url.parse(`$(agent.proxyurl)`); u.auth = `$(agent.proxyusername):$(agent.proxypassword)`; console.log(`##vso[task.setvariable variable=proxyAuthUri;issecret=true]` + url.format(u))"
 - script: npm publish --https-proxy $(proxyAuthUri)
 ```
-
-### How do I debug if I have issues with this task?
-
-To get verbose logs from the pipeline, add a pipeline variable system.debug to true.
 
 <!-- ENDSECTION -->
