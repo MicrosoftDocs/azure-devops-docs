@@ -22,12 +22,13 @@ In some cases, pipelines might also update those resources.
 In other words, your user account might not have access to a certain resource, but scripts and tasks that run in your pipeline might have access to that resource.
 The security model in Azure DevOps also allows access to these resources from other projects in the organization.
 If you choose to shut off pipeline access to some of these resources, then your decision applies to all pipelines in a project.
-An open resource can't be granted access to a specific pipeline.
+A specific pipeline can't be granted access to an open resource.
 
 ## Separate projects
 
 Given the nature of open resources, you should consider managing each product and team in a separate project.
-This practice ensures that a pipeline from one product can't access open resources from another product. In this way, you prevent lateral exposure.
+This practice ensures that a pipeline from one product can't access open resources from another product. 
+In this way, you prevent lateral exposure.
 When multiple teams or products share a project, you can't granularly isolate their resources from one another.
 
 If your Azure DevOps organization was created before August 2019, then runs might be able to access open resources in all of your organization's projects.
