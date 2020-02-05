@@ -1,36 +1,39 @@
 ---
-title: Approach to securing YAML pipelines
-description: Incremental improvements add up.
+title: Plan an approach to secure your YAML pipelines
+description: Apply security recommendations incrementally in your YAML pipelines. Incremental improvements add up.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a506a55a-2379-4d14-a52c-f4c28abae0ec
 ms.manager: mijacobs
 ms.author: jukullam
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 02/04/2020
 monikerRange: '> azure-devops-2019'
 ---
 
-# Approach to securing YAML pipelines
+# Plan how to secure your YAML pipelines
 
-We recommend an incremental approach to securing your pipelines.
-Ideally you would implement all of the guidance we offer.
+We recommend that you use an incremental approach to secure your pipelines.
+Ideally, you would implement all of the guidance that we offer.
 But don't be daunted by the number of recommendations.
-And certainly, don't hold off making *some* improvements just because you can't make all the changes at once.
+And don't hold off making *some* improvements just because you can't make all the changes right now.
 
-## Recommendations depend on each other
+## Security recommendations depend on each other
 
 Security recommendations have complex interdependencies.
-Your precise security posture will depend heavily on which recommendations you choose to implement.
-That in turn depends on the particular concerns of your DevOps team, your security team, and the policies & practices of your organization.
+Your security posture depends heavily on which recommendations you choose to implement.
+The recommendations that you choose, in turn, depend on the concerns of your DevOps and security teams. They also depend on the policies and practices of your organization.
 
-You may choose to tighten up security in a critical area while accepting more convenience for another area.
-For example, if you use [`extends` templates](templates.md#step-targets) to enforce that all builds run in containers, you may not need a [separate agent pool per project](infrastructure.md#separate-agents-for-each-project).
+You might choose to tighten security in one critical area and accept less security but more convenience in another area.
+For example, if you use [`extends` templates](templates.md#step-targets) to require all builds to run in containers, then you might not need a [separate agent pool for each project](infrastructure.md#separate-agents-for-each-project).
 
-## Begin with an (almost) empty template
+## Begin with a nearly empty template
 
-A good place to start is by enforcing extension from a nearly-empty template.
-This way, as you start to implement security practices, you have a centralized place that already catches every pipeline.
-See the topic on [templates](templates.md) for details.
+A good place to start is by enforcing extension from a nearly empty template.
+This way, as you start to apply security practices, you have a centralized place that already catches every pipeline.
 
-Once you've planned your approach, start looking at how your [repositories](repos.md) provide protection.
+For more information, see [Templates](templates.md).
+
+## Next steps
+
+After you plan your security approach, consider how your [repositories](repos.md) provide protection.
