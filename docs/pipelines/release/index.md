@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 6/11/2019
+ms.date: 02/06/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -37,6 +37,8 @@ in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
 ![A release pipeline defines the stages for deployment](media/what-is-release-management/understand-rm-01.1.png)
+
+[What's the difference between a release pipeline and a release?](releases.md)
 
 * **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
 
@@ -103,8 +105,6 @@ You define the **release pipeline** using [stages](../process/stages.md), and re
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
 ![Artifacts in a pipeline and release](media/definition-01.png)
-
-[What's the difference between a release pipeline and a release?](releases.md)
 
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage
 and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
