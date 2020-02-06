@@ -283,7 +283,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 </tr>
 <tr>
-<td>Cutomize cards</td>
+<td>Customize cards</td>
 <td>n/a</td>
 <td>n/a</td>
 <td><a href="../../boards/boards/customize-cards.md">Customize: cards</a></td></td>
