@@ -12,7 +12,7 @@ ms.date: 01/20/2017
 ---
 
 # Work item save is slow to complete
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 This problem might occur when you save a work item. The problem might be intermittent and difficult to reproduce.  
   

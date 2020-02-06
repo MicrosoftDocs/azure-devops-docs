@@ -15,7 +15,7 @@ ms.date: 08/02/2019
 
 # Create a Power BI report with an OData Query
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 
@@ -65,17 +65,17 @@ Create a Power BI Query to pull the data into Power BI as follows:
 1. Choose **Get Data**, and then **Blank Query**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Blank Query](_img/BlankQuery.png)
+    > ![Power BI - Blank Query](media/BlankQuery.png)
 
 2. From the Power BI Query editor, choose **Advanced Editor**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Select Advanced Editor](_img/AdvancedEditor.png)
+    > ![Power BI - Select Advanced Editor](media/AdvancedEditor.png)
 
 3. The Advanced Editor window opens.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor](_img/odatapowerbi-advancededitor.png)
+    > ![Power BI - Advanced Editor](media/odatapowerbi-advancededitor.png)
 
 4. Replace the contents with the following query.
  
@@ -98,7 +98,7 @@ Create a Power BI Query to pull the data into Power BI as follows:
     ```
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Pasted Query](_img/odatapowerbi-advancededitor-pasted.png)
+    > ![Power BI - Advanced Editor - Pasted Query](media/odatapowerbi-advancededitor-pasted.png)
 
 5. Substitute your values within the sample query.
 
@@ -110,7 +110,7 @@ Create a Power BI Query to pull the data into Power BI as follows:
     * {startdate} - The date to start your trend report on. Format: YYYY-MM-DDZ. Example: 2019-07-01Z represents 2019-July-01. Do not enclose in quotes.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI - Advanced Editor - Replace strings in query](_img/odatapowerbi-advancededitor-replaced.png)
+    > ![Power BI - Advanced Editor - Replace strings in query](media/odatapowerbi-advancededitor-replaced.png)
 
 6. Choose **Done** to execute the query.
 
@@ -118,9 +118,9 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
 ## Create Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -131,23 +131,23 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Fields](_img/odatapowerbi-bugtrend-fields.png)
+> ![Sample - Boards Rollup - Fields](media/odatapowerbi-bugtrend-fields.png)
 
-For a simple report, perform the following steps:
+For a simple report, do the following steps:
 
 1. Select Power BI Visualization **Line chart**. 
 1. Add the field "DateValue" to **Axis**
-    - Right click "DateValue" and select "DateValue", rather than Date Hierarchy
+    - Right-click "DateValue" and select "DateValue", rather than Date Hierarchy
 1. Add the field "State" to **Legend**
 1. Add the field "Count" to **Values**
-    - Right click WorkItemId field and ensure **Sum** is selected
+    - Right-click WorkItemId field and ensure **Sum** is selected
 
 The example report:
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Boards Rollup - Report](_img/odatapowerbi-bugtrend-report.png)
+> ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 <a id="q-a">  </a>
 ## Try this next
@@ -157,4 +157,4 @@ The example report:
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

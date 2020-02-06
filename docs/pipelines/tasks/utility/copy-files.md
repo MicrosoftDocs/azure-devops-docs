@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # Copy Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
 Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
+[!INCLUDE [temp](../includes/yaml/CopyFilesV2.md)]
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ None
 If no files are matched, the task will still report success.
 If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
 
-[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
+[!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
 ## Examples
 
@@ -181,7 +181,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](_img/copy-files.png) **Utility: Copy Files**
+![icon](media/copy-files.png) **Utility: Copy Files**
 
 * Source folder
 
@@ -263,7 +263,7 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](_img/copy-files.png) **Utility: Copy Files**
+![icon](media/copy-files.png) **Utility: Copy Files**
 
 * Source folder
 
@@ -295,19 +295,19 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
 ### How do I use this task to publish artifacts?
 
 See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

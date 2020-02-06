@@ -38,7 +38,7 @@ However, any workflow that publishes malformed packages will break when moving t
 
 ### NuGet 4.8+ is recommended
 
-[!INCLUDE [nuget-recommended-version](../_shared/nuget/nuget-recommended-version.md)]
+[!INCLUDE [nuget-recommended-version](../includes/nuget/nuget-recommended-version.md)]
 
 ### Authentication and authorization
 

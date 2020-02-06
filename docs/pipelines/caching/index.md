@@ -51,7 +51,7 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 * **Strings**: fixed value (like the name of the cache or a tool name) or taken from an environment variables (like the current OS or current job name)
 
-* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. This  could result in the task failing when this "file" does not exist. 
+* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This  could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
@@ -91,6 +91,17 @@ On the first run after the task is added, the cache step will report a "cache mi
 #### Restore keys
 
 `restoreKeys` can be used if one wants to query against multiple exact keys or key prefixes. This is used to fallback to another key in the case that a `key` does not yield a hit. A restore key will search for a key by prefix and yield the latest created cache entry as a result. This is useful if the pipeline is unable to find an exact match but wants to use a partial cache hit instead. To insert multiple restore keys, simply delimit them by using a new line to indicate the restore key (see the example for more details). The order of which restore keys will be tried against will be from top to bottom.
+
+#### Required software on self-hosted agent
+
+|        | Windows | Linux | Mac |
+|--------|-------- |------ |-------|
+|GNU Tar | Required| Required | No |
+|BSD Tar | No | No | Required |
+|7zip    | Recommended | No | No |
+
+The above executables need to be in a folder listed in the PATH environment variable.
+Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
 
 #### Example
 

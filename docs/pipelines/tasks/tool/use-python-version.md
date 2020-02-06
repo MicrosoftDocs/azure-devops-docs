@@ -36,7 +36,7 @@ This task will fail if no Python versions are found in Agent.ToolsDirectory. Ava
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]
+[!INCLUDE [temp](../includes/yaml/UsePythonVersionV0.md)]
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ As of version 0.150 of the task, version spec will also accept `pypy2` or `pypy3
 
 If the task completes successfully, the task's output variable will contain the directory of the Python installation:
 
-![output variable](_img/use_python_version_output_variable.png)
+![output variable](media/use_python_version_output_variable.png)
 
 ## Remarks
 
@@ -83,11 +83,11 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How can I configure a self-hosted agent to use this task?
 
-Our image generation scripts are open-source [on GitHub](https://github.com/microsoft/azure-pipelines-image-generation).
+Our image generation scripts are open-source [on GitHub](https://github.com/actions/virtual-environments).
 Search the code for `AGENT_TOOLSDIRECTORY`.
 
 For details on how the task finds a particular Python version, see [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).

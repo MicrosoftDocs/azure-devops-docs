@@ -9,17 +9,17 @@ ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 11/5/2019
+ms.date: 01/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Self-hosted Linux agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
 > *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
@@ -92,7 +92,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 <h2 id="permissions">Prepare permissions</h2>
 
-[!INCLUDE [include](_shared/v2/prepare-permissions.md)]
+[!INCLUDE [include](includes/v2/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -105,7 +105,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -129,7 +129,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
 
 1. Click **Download agent**.</li>
 
@@ -153,7 +153,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -191,7 +191,13 @@ Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
+::: moniker range="azure-devops-2019"
+
+Azure DevOps Server 2019: `https://{your_server}/DefaultCollection`
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 TFS 2017 and newer: `https://{your_server}/tfs`
 
@@ -205,7 +211,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 ### Authentication type
 
-[!INCLUDE [include](_shared/v2/unix-authentication-types.md)]
+[!INCLUDE [include](includes/v2/unix-authentication-types.md)]
 
 ## Run interactively
 
@@ -221,8 +227,20 @@ To run the agent interactively:
    ./run.sh
    ```
 
+  To restart the agent, press Ctrl+C and then run `run.sh` to restart it.
+
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
+
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+
+ ```bash
+./run.sh --once
+```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
 
 ## Run as a systemd service
 
@@ -295,7 +313,7 @@ sudo ./svc.sh stop
 sudo ./svc.sh start
 ```
 
-The snapshot of the environment variables is stored in `.env` file under agent root directory, you can also change that file directly to apply environment variable changes.
+The snapshot of the environment variables is stored in `.env` file (`PATH` is stored in `.path`) under agent root directory, you can also change these files directly to apply environment variable changes.
 
 ### Run instructions before the service starts
 
@@ -321,9 +339,9 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* **Azure Pipelines**: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
-* TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
+* **TFS or Azure DevOps Server**: the name of your on-premises server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 
 `sudo ./svc.sh install` generates this file from this template: `./bin/vsts.agent.service.template`
 
@@ -341,19 +359,19 @@ You can use the template described above as to facilitate generating other kinds
 
 It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
-[!INCLUDE [include](_shared/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v2/replace-agent.md)]
 
-[!INCLUDE [include](_shared/v2/remove-and-reconfigure-unix.md)]
+[!INCLUDE [include](includes/v2/remove-and-reconfigure-unix.md)]
 
-[!INCLUDE [include](_shared/v2/configure-help-unix.md)]
+[!INCLUDE [include](includes/v2/configure-help-unix.md)]
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 ### Why is sudo needed to run the service commands?
 
@@ -363,7 +381,7 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v2/qa-firewall.md)]
 
 ::: moniker-end
 
@@ -375,21 +393,25 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 [Run the agent behind a web proxy](proxy.md)
 
+### How do I restart the agent
+
+If you are running the agent interactively, see the restart instructions in [Run interactively](#run-interactively). If you are running the agent as a systemd service, follow the steps to [Stop](#stop) and then [Start](#start) the agent.
+
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v2/qa-urls.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [include](../_shared/qa-versions.md)]
+[!INCLUDE [include](../includes/qa-versions.md)]
 
 ::: moniker-end
 

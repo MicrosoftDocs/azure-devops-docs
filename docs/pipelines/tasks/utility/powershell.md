@@ -9,19 +9,19 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/10/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # PowerShell task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ Use this task in a build or release pipeline to run a PowerShell script.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
+[!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
 The Powershell task also has two shortcuts in YAML:
 
@@ -70,7 +70,7 @@ Both of these resolve to the `PowerShell@2` task.
 <tr><td><code>filePath</code><br/>Script Path</td><td>(Required) Path of the script to execute. Must be a fully qualified path or relative to <code>$(System.DefaultWorkingDirectory)</code>. Required if Type is <code>filePath</code></td></tr>
 <tr><td><code>arguments</code><br/>Arguments</td><td>(Optional) Arguments passed to the Powershell script.<br>
   For example, <code>-Name someName -Path -Value "Some long string value"</code><br/><br/>
-  Ignored when Type is <code>inline</code>.</td></tr>
+  Note: unused when Type is <code>inline</code>.</td></tr>
 <tr><td><code>script</code><br/>Script</td><td>(Required) Contents of the script. Required if targetType is <code>inline</code>.<br/>Default value: # Write your PowerShell commands here.<br/> Write-Host "Hello World"</td></tr>
 <tr><td><code>errorActionPreference</code><br/>ErrorActionPreference</td><td>(Optional) Prepends the line <code>$ErrorActionPreference = 'VALUE'</code> at the top of your script<br/>Default value: stop</td></tr>
 <tr><td><code>failOnStderr</code><br/>Fail on Standard Error</td><td>(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. Otherwise the task will rely on the exit code to determine failure<br/>Default value: false</td></tr>
@@ -111,7 +111,7 @@ On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](_img/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
+| ![](media/powershell.png)<br/>**Utility: PowerShell** | Run test.ps1.<br /><br />**Script filename**: `test.ps1` |
 
 ### Write a warning
 
@@ -160,15 +160,15 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [PowerShell.org](https://powershell.org/)
 
-[!INCLUDE [include](../../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../../includes/variable-set-in-script-qa.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

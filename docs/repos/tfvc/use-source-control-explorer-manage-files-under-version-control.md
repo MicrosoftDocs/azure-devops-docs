@@ -21,10 +21,10 @@ monikerRange: '>= tfs-2015'
 Use Source Control Explorer to browse file versions and work with your codebase under Team Foundation version control (TFVC). 
 
 > [!NOTE]
-> If you're using Git for version control, manage your Visual Studio project files in [Team Explorer](../../user-guide/work-team-explorer.md) and [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer). Learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
+> If you're using Git for version control, manage your Visual Studio project files in [Team Explorer](../../user-guide/work-team-explorer.md) and [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer). Learn more about using Git with Visual Studio in the [Azure Repos Git tutorial](../../repos/git/gitworkflow.md). 
 
 > [!TIP]
-> If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer).
+> If you need to work with your Visual Studio solution files outside of version control, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer).
 > Source Code Explorer is for managing changes made in your project when using TFVC.
 
 ## Open Source Control Explorer
@@ -35,7 +35,7 @@ Source Control Explorer is available in both Visual Studio 2013 and 2015, but is
 
 -   From the menu bar. Select **View**, **Other Windows**, **Source Control Explorer**.
 
-![Source Control Explorer](_img/use-source-control-explorer-manage-files-under-version-control/IC612245.png)
+![Source Control Explorer](media/use-source-control-explorer-manage-files-under-version-control/IC612245.png)
 
 ## Use the command prompt
 
@@ -49,7 +49,7 @@ You can also use the command prompt to manage your files in TFVC. See [Use Team 
 
 ### Q: How do I change the local path?
 
-![Editing workspaces from Source Control Explorer](_img/use-source-control-explorer-manage-files-under-version-control/IC698934.png)
+![Editing workspaces from Source Control Explorer](media/use-source-control-explorer-manage-files-under-version-control/IC698934.png)
      
 See [Create and work with workspaces](create-work-workspaces.md)
 
@@ -71,4 +71,4 @@ See [Create and work with workspaces](create-work-workspaces.md)
 
 ### Q: Why do I see this error message: "Team Foundation Server is not your current Source Control plug-in. Click here to set the current Source Control plug-in"?
 
-**A:** You might have connected to a Git repository in your project. Use [Team Explorer](../../user-guide/work-team-explorer.md) and [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to manage your files in Git repos.
+**A:** You might have connected to a Git repository in your project. Use [Team Explorer](../../user-guide/work-team-explorer.md) and [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-explorer) to manage your files in Git repos.

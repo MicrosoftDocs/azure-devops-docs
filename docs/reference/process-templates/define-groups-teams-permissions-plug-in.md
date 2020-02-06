@@ -15,7 +15,7 @@ ms.date: 09/08/2017
 
 # Define groups, teams, and permissions using the Groups and Permissions Plug-in
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can define security groups to control access to functional areas within a project. In addition to the [default security groups](../../organizations/security/permissions.md), you can configure a project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   

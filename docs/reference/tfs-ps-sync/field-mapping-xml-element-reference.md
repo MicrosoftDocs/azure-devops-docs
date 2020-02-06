@@ -15,7 +15,7 @@ ms.date: 01/12/2017
 
 # Field mapping XML element reference for TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> By customizing the field mappings, you can define which fields in Visual Studio Team Foundation Server (TFS) and Microsoft Project Server should be kept synchronized and which fields are updated in the status queue for Project Server and in Team Foundation.  
   

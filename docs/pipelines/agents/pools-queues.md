@@ -9,17 +9,17 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 09/20/2019
+ms.date: 12/13/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Agent pools
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-![TFS 2017 and TFS 2018 build system architecture](_img/build-system-architecture.png)
+![TFS 2017 and TFS 2018 build system architecture](media/build-system-architecture.png)
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ To share an agent pool with multiple projects, in each of those projects, you cr
 
 Agent pools are scoped to project collections.
 
-![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
+![TFS 2015 build system architecture](media/build-system-architecture-tfs-2015.png)
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -76,7 +76,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 
 
@@ -136,7 +136,7 @@ For more information, see the [YAML schema](../yaml-schema.md) for [pools](../ya
 
 To choose a pool and agent in the classic editor, navigate to the pipeline settings, select the desired **Agent pool**, and then the desired image from the **Agent Specification** drop-down. For more information about the software installed on the Microsoft-hosted images, see the corresponding entry in the **Classic Editor Pool** column from [this](hosted.md#use-a-microsoft-hosted-agent) table.
 
-![Select Agent pool and choose the desired agent](_img/agent-pool-classic.png)
+![Select Agent pool and choose the desired agent](media/agent-pool-classic.png)
 
 * * *
 
@@ -152,7 +152,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -162,7 +162,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -343,7 +343,7 @@ az pipelines queue show --id 14
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 
@@ -390,7 +390,7 @@ Understanding how security works for agent pools helps you control sharing and u
 | Service Account | Members of this role can use the organization agent pool to create a project agent pool in a project. If you follow the guidelines above for creating new project agent pools, you typically do not have to add any members here. |
 | Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the organization agent pool. They can also refer to the organization agent pool when creating a project agent pool in a project. Finally, they can also manage membership for all roles of the organization agent pool. The user that created the organization agent pool is automatically added to the Administrator role for that pool. |
 
-The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. By default, TFS administrators are also administrators of the 'All agent pools' node.
+The **All agent pools** node in the Agent Pools tab is used to control the security of _all_ organization agent pools. Role memberships for individual organization agent pools are automatically inherited from those of the 'All agent pools' node. When using TFS or Azure DevOps Server, by default, TFS and Azure DevOps Server administrators are also administrators of the 'All agent pools' node.
 
 Roles are also defined on each project agent pool, and memberships in these roles govern what operations you can perform on an agent pool at the project level.
 

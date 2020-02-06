@@ -22,12 +22,14 @@ Displays information about pending changes to files and folders in one or more w
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
-    [/login:username,[password]]
-    ([/workspace:workspacename[;workspaceowner]] 
-    | [/shelveset:shelvesetname[;shelvesetowner]])
-    [/format:(brief|detailed)] [/recursive][/user:(*|username)]
-    [/nodetect]
+```
+tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
+[/login:username,[password]]
+([/workspace:workspacename[;workspaceowner]] 
+| [/shelveset:shelvesetname[;shelvesetowner]])
+[/format:(brief|detailed)] [/recursive][/user:(*|username)]
+[/nodetect]
+```
 
 ## Parameters
 
@@ -81,19 +83,25 @@ In all the following examples, assume that `$/SiteApp/Main/` is mapped to `c:\\c
 
 ### List all changes in the current workspace
 
-    c:\code\SiteApp\Main\SolutionA\>tf stat
+```
+c:\code\SiteApp\Main\SolutionA\>tf stat
+```
 
 Lists all pending changes in the workspace.
 
 ### List all changes in a folder
 
-    c:\code\SiteApp\Main>tf stat SolutionA\*
+```
+c:\code\SiteApp\Main>tf stat SolutionA\*
+```
 
 Lists all pending changes to all items in the SolutionA folder.
 
 ### List all changes in a folder and its subfolders
 
-    c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
+```
+c:\code\SiteApp\Main>tf stat SolutionA\* /recursive
+```
 
 Lists pending changes to all items in the SolutionA folder, including those in its subfolders).
 
