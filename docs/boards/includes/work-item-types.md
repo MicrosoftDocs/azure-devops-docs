@@ -18,7 +18,7 @@ Each team can configure how they manage Bugs&mdash;at the same level as User Sto
 
 #### [Basic process](#tab/basic-process) 
 
-The following image shows the Basic process backlog work item hierarchy. Issues and Tasks are used to track work, while Epics are used to group work under larger scenarios. 
+The following image shows the Basic process backlog work item hierarchy. Issues and Tasks are used to track work, while Epics are used to group work under larger scenarios. The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. 
 
 > [!div class="mx-imgBorder"]  
 > ![Basic work item types, conceptual image](/azure/devops/boards/get-started/media/about-boards/basic-process-epics-issues-tasks-2.png) 
@@ -43,3 +43,5 @@ The following image shows the CMMI process backlog work item hierarchy. Requirem
 > ![CMMI work item types, conceptual image](/azure/devops/boards/work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png)  
 
 Each team can configure how they manage bugs&mdash;at the same level as Requirements or Tasks&mdash;by configuring the [Working with bugs](/azure/devops/organizations/settings/show-bugs-on-backlog) setting. To learn more about using these work item types, see [CMMI process](/azure/devops/boards/work-items/guidance/cmmi-process). 
+
+* * *
