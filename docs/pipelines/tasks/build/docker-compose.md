@@ -8,7 +8,7 @@ ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
 ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 12/17/2019
+ms.date: 02/06/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -29,13 +29,13 @@ This task can be used with a Docker registry or an Azure Container Registry.
 |--- |--- |
 |`containerregistrytype` <br/>(Container registry type)|(Optional) Azure Container Registry if using ACR or Container Registry if using any other container registry. <br/>Default value: Azure Container Registry|
 |`azureSubscriptionEndpoint` <br/>(Azure subscription)|(Required) Name of the Azure Service Connection. See [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection. <br/>Argument aliases: `azureSubscription`|
-|`azureContainerRegistry` <br/>(Azure container registry)|(Required) Name of the Azure Container Registry.|
+|`azureContainerRegistry` <br/>(Azure container registry)|(Required) Name of the Azure Container Registry. <br/>Example: `Contoso.azurecr.io`|
 
 This YAML example specifies the inputs for Azure Container Registry:
 
 ```YAML
 variables:
-    azureContainerRegistry: Contoso
+    azureContainerRegistry: Contoso.azurecr.io
     azureSubscriptionEndpoint: Contoso
 steps:
 - task: DockerCompose@0
