@@ -251,7 +251,7 @@ you can abandon the release using the shortcut menu that opens from the ellipses
 
 ![Abandoning a release](media/what-is-release-management/abandon-release.png)
 
-Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
+You cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
 
 <a name="sendemail"></a>
 ## How do I send release summaries by email?
@@ -261,7 +261,7 @@ Use the **Send Email** option on the menu that opens from the ellipses (**...**)
 
 ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
 
-In the **Send release summary mail** window you can further customize the information to be sent in the email
+In the **Send release summary mail** window, you can further customize the information to be sent in the email
 by selecting only certain sections of the release summary.
 
 <a name="numbering"></a>
@@ -298,11 +298,10 @@ You can customize how long releases of this pipeline must be retained. For more 
 
 Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This allows you to compare the changes at a later point, especially when you are debugging a deployment failure.
 
-
 <a name="getstartednow"></a>
 ## Get started now!
 
-Simply follow these steps:
+Follow these steps:
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     
