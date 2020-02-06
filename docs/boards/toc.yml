@@ -32,7 +32,7 @@
   - name: Set work tracking and plan permissions 
     href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Grant or restrict permissions to select tasks
-    href: /azure/devops/organizations/security/estrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Process guidance
   items:
   - name: Choose a process
