@@ -37,7 +37,7 @@ landingContent:
           - text: Choose a process
             url: ./work-items/guidance/choose-process.md
           - text: Configure and customize Boards 
-            url: ./boards/configure-customize.md
+            url: configure-customize.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
           - text: About work items
