@@ -55,6 +55,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Configure and customize Boards 
+            url: ./boards/configure-customize.md
           - text: About projects and scaling up
             url: ./projects/about-projects.md
       - linkListType: quickstart

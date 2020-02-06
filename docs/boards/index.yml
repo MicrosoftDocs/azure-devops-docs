@@ -36,6 +36,8 @@ landingContent:
         links:
           - text: Choose a process
             url: ./work-items/guidance/choose-process.md
+          - text: Configure and customize Boards 
+            url: ./boards/configure-customize.md
           - text: Agile process workflow
             url: ./work-items/guidance/agile-process-workflow.md
           - text: About work items
@@ -114,6 +116,8 @@ landingContent:
             url: ./backlogs/resolve-backlog-reorder-issues.md
           - text: Set up your Backlogs and Boards
             url: ./backlogs/set-up-your-backlog.md
+          - text: FAQs 
+            url: ./boards/boards-faqs.md
   - title: Configure
     linkLists:
       - linkListType: tutorial

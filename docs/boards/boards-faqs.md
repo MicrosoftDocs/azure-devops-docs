@@ -33,22 +33,23 @@ As a member of an Azure Boards project, you can use the majority of features to 
 
 ::: moniker range="azure-devops"
 
-**A:** For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users, ones who don't sign into the project, can view all work items. To learn more, see [About access levels](../organizations/security/access-levels.md) and [About public projects](../organizations/public/about-public-projects.md). 
+**A:** For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [About access levels](../organizations/security/access-levels.md) and [About public projects](../organizations/public/about-public-projects.md).
+ 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-**A:** You can grant access to an unlimited number of users by assigning them Stakeholder access. To learn more, see [About access levels](../organizations/security/access-levels.md)
+**A:** You can grant access to an unlimited number of users by assigning them Stakeholder access. To learn more, see [About access levels](../organizations/security/access-levels.md).
 
 ::: moniker-end
 
 ### Q: How can I restrict viewing or modifying select work items?  
 
 You can restrict access by setting permissions for an area path. To learn more, see the following articles: 
-- [Set work tracking and plan permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
-- [Grant or restrict permissions to select tasks](/azure/devops/organizations/security/estrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
+- [Set work tracking and plan permissions](../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Grant or restrict permissions to select tasks](../organizations/security/restrict-access.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
 
-### Q: What are all the supported client IDEs? 
+### Q: What client tools support work tracking with Azure Boards? 
 
 **A:** See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
 
@@ -62,8 +63,6 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 > *Is this feature on the roadmap? No, this isn't on the roadmap.* 
 
-
-
 ### Q: What's the recommended method to group work? 
 
 **A:** The main method to group work is to assign it to the same area path. Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. In addition, you can group work under a parent work item using parent-child links. This is referred to as hierarchical grouping. 
@@ -76,12 +75,6 @@ For a discussion of these two usages and the tools they support, see [Configurat
 **A:** You can track dependencies between work items by linking them using a related or other link type. See [Link work items](backlogs/add-link.md) and [Linking, traceability, and managing dependencies](queries/link-work-items-support-traceability.md). 
 
 If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
-
-<!---   
-
-### Q: Historical snapshot of work items? 
-
---> 
 
 
 ### Q: Can I copy a work item including its subtasks? 
@@ -101,7 +94,7 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 
 ## Backlogs and boards 
 
-Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).
+Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
 
 ### Q: How do I migrate my existing backlog to Azure Boards?  
 
@@ -124,26 +117,6 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
 
-
-<!--- 
-
-### Q: How do I make H for hours or D for days appear on my Sprint backlogs and Taskboards? 
-
-## Queries
-
-slow queries
-
-## Cross-team and project tracking
-
-### Q: How can I best manage cross-team dependencies?  
-
-### Q: How best to track product investment themes? 
-
-### Q: How get a master board view? 
-
---> 
-
-
 ::: moniker range=">= azure-devops-2019"
 
 ## GitHub integration
@@ -159,9 +132,13 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 ## Configuration and customizations  
 
-### Q: What can I customize?  
+Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
 
-**A:** Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
+### Q: Can I add or rename a portfolio backlog?  
+
+**A:** Yes. You can add up to a total of five portfolio backlogs. And, you can rename a portfolio backlog and add custom work item types to a portfolio backlog. 
+
+To learn how, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md) or [Add a portfolio backlog level (On-premises XML process)](../reference/add-portfolio-backlogs.md).
 
 
 ### Q: Can sub hubs within Azure Boards be disabled? 
@@ -183,13 +160,6 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 ::: moniker-end 
 
 
-<!--- 
-
-## Integrations & extensions
-
-
-
--->
 
 ## Related articles
 
