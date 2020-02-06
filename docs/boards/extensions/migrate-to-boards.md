@@ -10,50 +10,75 @@ ms.manager: mijacobs
 ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2018'
-ms.date: 12/11/2019
+monikerRange: '>= tfs-2013'
+ms.date: 02/06/2020
 ---
 
-# Azure Boards migration and integration overview
+# Azure Boards migration and integration 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-This article provides links to tools that support migration and integration from other software applications to Azure Boards.  
-
-
-- [Jira to Azure DevOps work item migration tool](https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration) 
+You have a choice of tools to support migration of your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes.  
 
 
-Increase visibility of Migrate content for Azure Boards
-Migration -> documentation (Martina/Linda) follow-up with Rogan on-prem to service
- Jira extension to help migration
-Integration-Atlassian,
-add to TOC 
-add linking 
-How to Migrate 
-Migration -> documentation (Martina/Linda)
-https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration
-https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/01/16/importing-from-jira-to-vsts/
-https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-trello
-TOC - visibility 
-Integration: 
-https://marketplace.atlassian.com/apps/42296/tfs4jira-azure-devops-integration?hosting=cloud&tab=overview
-https://www.opshub.com/jira-integration/jira-azure-devops-integration/
+## Migrate from an on-premises Azure DevOps Server
+
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
+
+## Migrate data between Azure DevOps projects
+
+The Azure DevOps Migration Tools marketplace extension allows you to bulk edit and migrate data between Azure DevOps projects on both on-premises and the cloud. This tool provides support for the following tasks:  
+
+- Migrate work items from one project to another project and synchronize changes after a migration
+- Merge many projects into a single project
+- Split one project into many projects
+- Assist changing process templates
+- Bulk edit work items
+- Migrate test suites and test plans 
+
+To learn more, see [Azure DevOps Migration Tools](https://nkdagility.github.io/azure-devops-migration-tools/) and the markeplace extension, [Azure DevOps Migration Tools](https://marketplace.visualstudio.com/items?itemName=nkdagility.vsts-sync-migration). 
+
+## Migrate process models between Azure DevOps organizations
+
+The Process Tools for Azure DevOps marketplace extension provides support to perform the following tasks:  
+
+- Migrate Inherited Process(s) between Organizations
+- Upload an On-premises XML process model from an export 
+
+To get the extension, go to [Process Tools for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=nkdagility.processtemplate).  
+
+For constraints on process template definitions that you can import, see [Resolve validation errors for process import](../../organizations/settings/work/import-process/resolve-errors.md).
+
+## Tools to support export/import of work tracking data
+
+The main tool you can use to import work tracking data you've exported from elsewhere is Excel. Excel supports publishing a flat list of work items or a hierarchical tree of parent-child linked work items. To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+If you want to migrate from Jira to Azure Boards, consider using the Marketplace extension, [Jira to Azure DevOps work item migration tool](https://marketplace.visualstudio.com/items?itemName=solidify.jira-devops-migration). This tool provides support for the following tasks:  
+- Export Jira issues from Jira queries  
+- Map users from Jira to users in Azure DevOps 
+- Migrate work item field data  
+- Migrate links and attachments 
+- Migrate history  
+ 
+
+## Integrate with third-party tools using service hooks
+
+You can integrate Azure Boards with other third-party tools such as Jenkins and Trello. Using service hooks you can generate actions based on Azure DevOps events. To learn more, review one of the following articles: 
+-  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
+-  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
 
 
+## Integrate with GitHub
+
+Azure Boards and Azure DevOps Server 2019 integrate with GitHub. By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
+
+To learn how, see [Connect Azure Boards to GitHub](../github/connect-to-github.md).
  
 
 ## Related articles
 
-- [Migrate](..//work-items/guidance/work-item-field.md)
-- [Review team delivery plans](../plans/review-team-plans.md)
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
-- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
+- [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md)
+- [Integrate with service hooks](../../service-hooks/overview.md)
 
-
-## Related Marketplace extensions
-
-- [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 
  
