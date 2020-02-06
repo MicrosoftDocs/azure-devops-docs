@@ -67,7 +67,7 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 
 **Update the status of issues**
 
-Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
+Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues. To learn more, see [Track issues and tasks](plan-track-work.md).   
 
 > [!div class="mx-imgBorder"]  
 > ![Update status on Kanban board](media/track-issues/update-status.png)  
@@ -155,11 +155,11 @@ Create dashboards that track status and trends of work being accomplished.  Set 
 
 * * * 
 
-To learn more, see:
-- [Discussion section](plan-track-work.md#discussion). 
-- [Follow a work item](../work-items/follow-work-items.md)
-- [Add and manage dashboards](../../report/dashboards/dashboards.md)
-- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)
+To learn more, see one of the following articles:  
+- [Discussion section](plan-track-work.md#discussion)  
+- [Follow a work item](../work-items/follow-work-items.md)  
+- [Add and manage dashboards](../../report/dashboards/dashboards.md)  
+- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md).  
 
 ## Work in sprints, implement Scrum
 
@@ -226,8 +226,8 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 
 * * * 
 
-To learn more, see:
-- [Assign work to sprints](../sprints/assign-work-sprint.md)
+To learn more, see one of the following articles:  
+- [Assign work to sprints](../sprints/assign-work-sprint.md)  
 - [Forecast work](../sprints/forecast.md)  
 - [Set team capacity](../sprints/set-capacity.md)  
 - [Bulk modify work items](../backlogs/bulk-modify-work-items.md).  
@@ -298,12 +298,12 @@ You'll find you can work more effectively through these actions:
 
 * * * 
 
-To learn more, see:
-- [Organize your backlog](../backlogs/organize-backlog.md)
-- [View and run queries](../queries/view-run-query.md) 
-- [Triage work](../queries/triage-work-items.md)
-- [Use work item templates](../backlogs/work-item-template.md)
-- [View and add work items](../work-items/view-add-work-items.md)
+To learn more, see one of the following articles:  
+- [Organize your backlog](../backlogs/organize-backlog.md)  
+- [View and run queries](../queries/view-run-query.md)  
+- [Triage work](../queries/triage-work-items.md)  
+- [Use work item templates](../backlogs/work-item-template.md)  
+- [View and add work items](../work-items/view-add-work-items.md).  
 
 
 
@@ -322,7 +322,7 @@ To learn more, see [GitHub & Azure Boards](../github/index.md).
 
 ## Best tool for the job
 
-Azure Boards provides the following interactive lists and signboards. Each tool provides a filtered set of work items. All tools support viewing and defining work items. To learn more about effective use of these tools, see  [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
+Azure Boards provides the following interactive lists and signboards. Each tool provides a filtered set of work items. All tools support viewing and defining work items. To learn more about effective use of these tools, see [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md).   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -376,6 +376,6 @@ Extensions provide support for additional tools. An extension is an installable 
 
 ## Related articles
 
-- [Agile culture](../plans/agile-culture.md)
-- [Practices that scale](../plans/practices-that-scale.md)
-- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
+- [Agile culture](../plans/agile-culture.md)  
+- [Practices that scale](../plans/practices-that-scale.md)  
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)  
