@@ -61,11 +61,11 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 **A:** No. Work items can only be assigned to a single user. 
 
-> *Is this feature on the roadmap? No, this isn't on the roadmap.* 
+> *Is this feature on the roadmap? No, it isn't on the roadmap.* 
 
 ### Q: What's the recommended method to group work? 
 
-**A:** The main method to group work is to assign it to the same area path. Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. In addition, you can group work under a parent work item using parent-child links. This is referred to as hierarchical grouping. 
+**A:** The main method to group work is to assign it to the same area path. Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. In addition, you can group work under a parent work item using parent-child links, referred to as a hierarchical grouping. 
 
 For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
@@ -85,9 +85,9 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
-**Example request**: *When creating a template I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user defined selection?*
+**Example request**: *When creating a template, I would like the Parent User Story to be defaulted. There is not a pre-determined field in the template. Would/could this be under a user-defined selection?*
 
-**A:** No, there is no native support for creating hierarchy templates.  In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:  
+**A:** No, there is no native support for creating hierarchy templates. In particular, you can't specify a default parent work item. However, you may find a solution To creating child work items by installing one of the following Marketplace extensions:  
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
@@ -126,7 +126,7 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 ### Q: Can I specify the status when linking a work item to a GitHub commit or PR?
 
-**A:** No. This feature is not supported at this time. 
+**A:** No. This feature isn't supported at this time. 
 
 ::: moniker-end 
 
@@ -147,7 +147,7 @@ To learn how, see [Customize your backlogs or boards (Inheritance process)](../o
 
 ### Q: Can I upload my own custom work item type icons?  
 
-**Example request**: *When I create a new work item type I get an option to choose an icon, this icon set is limited and does not support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?* 
+**Example request**: *When I create a new work item type, I get an option to choose an icon. The icon set is limited and doesn't support the icons that we would prefer for our use case. Is there a way to associate custom icon to new work item type?* 
 
 **A:** No. Uploading your custom icons isn't a supported feature at this time. 
 
