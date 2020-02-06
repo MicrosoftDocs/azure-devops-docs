@@ -10,17 +10,17 @@ author: juliakm
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019
-ms.date: 10/30/2019
+ms.date: 01/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Build, test, and deploy JavaScript and Node.js apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="tfs-2017"
 
@@ -50,9 +50,9 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ### Create the pipeline
 
@@ -85,8 +85,38 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="azure-devops-2019" 
+### YAML
+1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
+    ```
+    https://github.com/MicrosoftDocs/pipelines-javascript
+
+2. Add an `azure-pipelines.yml` file in your repository. This YAML assumes that you have Node.js with npm installed on your server. 
+
+```yaml
+trigger:
+- master
+
+pool: Default
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+```
+3. Create a pipeline (if you don't know how, see [Create your first pipeline](../create-first-pipeline.md)), and for the template select **YAML**.
+
+4. Set the **Agent pool** and **YAML file path** for your pipeline. 
+
+5. Save the pipeline and queue a build. When the **Build #nnnnnnnn.n has been queued** message appears, select the number link to see your pipeline in action.
+
+6. When you're ready to make changes to your pipeline, **Edit** it.
+
+7. See the sections below to learn some of the more common ways to customize your pipeline.
+::: moniker-end
+::: moniker range="< azure-devops" 
+### Classic
 1. The following code is a simple Node server implemented with the Express.js framework. Tests for the app are written through the Mocha framework. To get started, fork this repo in GitHub.
 
     ```
@@ -134,7 +164,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.14', 'vs2017-win2016'
 ```
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process.
@@ -764,6 +794,30 @@ If you can build your project on your development machine but are having trouble
   networking problems between the Azure datacenter and the registry. These factors are not under our control, and you might
   need to explore whether using Azure Artifacts with an npm registry as an upstream source improves the reliability
   of your builds.
+
+* If you're using [`nvm`](https://github.com/nvm-sh/nvm) to manage different versions of Node.js, consider switching to the [**Node Tool Installer**](#use-a-specific-version-of-nodejs) task instead.
+(`nvm` is installed for historical reasons on the macOS image.)
+`nvm` manages multiple Node.js versions by adding shell aliases and altering `PATH`, which interacts poorly with the way [Azure Pipelines runs each task in a new process](../process/runs.md).
+The **Node Tool Installer** task handles this model correctly.
+However, if your work requires the use of `nvm`, you can add the following script to the beginning of each pipeline:
+```yaml
+steps:
+- script: |
+    NODE_VERSION=12  # or whatever your preferred version is
+    npm config delete prefix  # avoid a warning
+    . ${NVM_DIR}/nvm.sh
+    nvm use ${NODE_VERSION}
+    nvm alias default ${NODE_VERSION}
+    VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
+    echo "##vso[task.prependPath]$VERSION_PATH"
+```
+Then `node` and other command line tools will work for the rest of the pipeline job.
+In each step where you need to use the `nvm` command, you'll need to start the script with:
+```yaml
+- script: |
+    . ${NVM_DIR}/nvm.sh
+    nvm <command>
+```
 
 ## Q&A
 

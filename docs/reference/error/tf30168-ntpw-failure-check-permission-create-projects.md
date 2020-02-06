@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF30168: The New Team Project Wizard experienced a failure checking your permissions to create projects.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard starts and then checks to see whether your user account has permission set to create a project. An active connection cannot be made because of one of the following conditions:  
   

@@ -16,7 +16,7 @@ ms.date: 07/17/2019
 
 # Key concepts and terms used for Azure Boards 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Here are definitions of key concepts and artifacts used in Azure Boards. For more information, see also: 
 - [Kanban key concepts](../boards/kanban-key-concepts.md)
@@ -32,23 +32,23 @@ The goal of Agile engineering best processes is to rapidly deliver high-quality 
 
 This suite of web-based tools is used to track work and support Agile methodologies. Agile tools support Scrum and Kanban, the core Agile methods that are used by software development teams today. To learn more, see [What is Azure Boards?](what-is-azure-boards.md).
 
-[!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/area-paths.md)] 
 
 ## Bug 
 
 A bug is a type of work item that records a potential source of dissatisfaction with the product. Bug is the common name of a work item type that's used to track code defects. The Bug work item type is available with the Agile, Scrum, and CMMI processes.
 
-[!INCLUDE [temp](../../_shared/glossary-terms/collections.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/collections.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/dashboards.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/favorites.md)] 
 
 ## Field 
 
 Fields are used to track a piece of information about the work to perform. Values you assign to a field are stored in the work-tracking data store. You can use the data store to query and generate charts to view status and trends. Your project contains 100 or more data fields. To update data, you [modify the data field within a work item](plan-track-work.md). Each work item is associated with a work item type (WIT). The data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](../work-items/guidance/work-item-field.md). 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/follow.md)] 
 
 ## Inheritance process model 
 
@@ -60,52 +60,52 @@ The Inheritance process model is used to customize work-tracking objects and Agi
 
 **Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It is defined for the Basic process and appears on the product backlog and [Issues Kanban board](plan-track-work.md). 
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/iterations.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/iterations.md)] 
 
 ## Kanban board 
 
 A Kanban board is an interactive, electronic signboard that supports visualization of the flow of work from concept to completion and lean methods. To learn more, see [Kanban basics](../boards/kanban-quickstart.md).
 
  
-[!INCLUDE [temp](../../_shared/glossary-terms/links-and-link-types.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/links-and-link-types.md)] 
 
 ## Pick list
 
 A picklist specifies an enumerated set of values that appear within a drop-down menu in a work item form. Values also appear in the **Value** column within the query editor. The method you use to customize a picklist varies. It depends on the field and the process model. To learn more, see [Customize work](../../reference/customize-work.md). 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/plans.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/portfolio-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/portfolio-backlog.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/process.md)]  
+[!INCLUDE [temp](../../includes/glossary-terms/process.md)]  
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/projects.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/queries.md)]  
+[!INCLUDE [temp](../../includes/glossary-terms/queries.md)]  
 
-[!INCLUDE [temp](../../_shared/glossary-terms/remote-linking.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/remote-linking.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/rollup.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/rollup.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/sprints.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/sprint-backlogs.md)]  
+[!INCLUDE [temp](../../includes/glossary-terms/sprint-backlogs.md)]  
 
-[!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/taskboard.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/teams.md)] 
 
 ## User story
 
 A user story is a type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. A user story is defined with the Agile process. To learn more, see [Agile process work item types and workflow](../work-items/guidance/agile-process-workflow.md). 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/widgets.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/work-item-types.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/work-item-types.md)] 
 
 ## Workflow 
 

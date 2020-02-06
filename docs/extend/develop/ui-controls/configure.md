@@ -14,7 +14,7 @@ ms.date: 10/31/2019
 
 # Configure UI Controls
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 This example shows the steps before you can add a control to the hub that we created in [Add a hub](../add-hub.md).
 
@@ -33,7 +33,7 @@ This example shows the steps before you can add a control to the hub that we cre
 	</head>
 	```
 
-[!INCLUDE [Control](../../_shared/procedures/use-a-control-js.md)]
+[!INCLUDE [Control](../../includes/procedures/use-a-control-js.md)]
 
 ## Try these next
 * [Use the grid control](./grido.md)

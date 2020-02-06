@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy to SQL Server Database us
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/SqlDacpacDeploymentOnMachineGroupV0.md)]
+[!INCLUDE [temp](../includes/yaml/SqlDacpacDeploymentOnMachineGroupV0.md)]
 
 ::: moniker-end
 

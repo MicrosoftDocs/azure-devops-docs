@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # TF30017: Team Explorer cannot connect to Team Foundation Server {0}. The security certificate is either not installed, misconfigured, or expired.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A security certificate associates an identity with a public key, and only the owner of the certificate knows the corresponding private key. The private key enables the owner to make a digital signature or decrypt information encrypted with the corresponding public key. A certification authority (CA) issues server and client authentication certificates to the servers and clients that request them.  
   

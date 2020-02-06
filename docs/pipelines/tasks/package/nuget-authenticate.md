@@ -26,7 +26,7 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NuGetAuthenticateV0.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetAuthenticateV0.md)]
 
 ## Arguments
 
@@ -35,7 +35,7 @@ Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repos
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `nuGetServiceConnections`<br/>Service connection credentials for feeds outside this organization   | (Optional) Comma-separated list of [NuGet service connection](~/pipelines/library/service-endpoints.md#sep-nuget) names for feeds outside this organization/collection to additionally set up. If you only need feeds in this organization/collection, leave this blank; the build’s credentials are used automatically. |
 | `forceReinstallCredentialProvider`<br/>Reinstall the credential provider even if already installed | (Optional) Reinstall the credential provider to the user profile directory even if already installed. This may upgrade (or potentially downgrade) the credential provider. |
-| [!INCLUDE [temp](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [temp](../includes/control-options-arguments-md.md)] | |
 
 ## Examples
 

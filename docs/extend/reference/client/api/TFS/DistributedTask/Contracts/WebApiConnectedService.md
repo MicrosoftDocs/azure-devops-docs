@@ -32,5 +32,5 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/DistributedTask/Contracts/WebA
 
 * `project`: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project associated with this service
 
-* `serviceUri`: string. Optional uri to connect directly to the service such as https://windows.azure.com
+* `serviceUri`: string. Optional uri to connect directly to the service such as https:\//windows.azure.com
 

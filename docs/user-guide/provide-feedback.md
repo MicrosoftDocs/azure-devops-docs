@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Get support and provide feedback
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 > [!Important]
 > Having problems? We can help. We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country from the dropdown menu, and then select **Live Chat (English)**.
@@ -91,7 +91,7 @@ To learn the version number, enter the following address in a web browser:
 
 A page similar to the following example opens showing the version number.
 
-![Learn the version number of Azure DevOps](_img/version-azure-devops.png)
+![Learn the version number of Azure DevOps](media/version-azure-devops.png)
 
 
 ### Azure DevOps Server 
@@ -108,13 +108,14 @@ https://ServerName:8080/tfs/_home/About
 
 A page similar to the following example opens showing the version number.
 
-<img src="../_img/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
+<img src="../media/version-tfs.png" alt="Azure DevOps Server About page, version number" style="border: 1px solid #CCCCCC;" />
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 
 > |On-premises release | Update | Version number |
 > |-------------|--------|----------------|
-> |**Azure DevOps Server 2019** | RTW  | 17.143.28511.3 (Dev17.M143) |
+> |**Azure DevOps Server 2019** | 2019.1  | 17.153.29522.3 |
+> |  | RTW  | 17.143.28511.3  |
 > |**Azure DevOps Server 2018** |2018.3 |16.131.28106.2 |
 > |  |2018.2 |16.131.27701.1 |
 > |  |2018.1 |16.122.27409.2 |

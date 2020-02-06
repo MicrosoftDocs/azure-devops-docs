@@ -10,12 +10,14 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/22/2019
+ms.date: 12/06/2019
 monikerRange: 'azure-devops'
 ---
+
+
 # Access with Azure Active Directory groups
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Do you want an easier way to control who can access your team's critical resources and key business assets in Azure DevOps Services?
 If you already use Microsoft services like Office 365 or [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/), you can use the same identities with your organization.
@@ -46,21 +48,21 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Permissions**, and then select the group you want to add a member to.
 
-   ![Add a member to your selected group](_img/user-hub/choose-permissions-select-group.png)
+   ![Add a member to your selected group](media/user-hub/choose-permissions-select-group.png)
 
 4. Select **Members**, and then select **Add**.
 
-    ![Select Members, and then Add](_img/user-hub/select-members-add.png)
+    ![Select Members, and then Add](media/user-hub/select-members-add.png)
 
-    You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
+    You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
 5. Add users or groups, and then choose **Save** when you're done.
 
-   ![Save add users or groups](_img/user-hub/save-add-users-groups.png)
+   ![Save add users or groups](media/user-hub/save-add-users-groups.png)
 
 #### [Current page](#tab/current-page)
 
@@ -70,16 +72,16 @@ and differences in how you [control organization access with Microsoft accounts 
 
 2.  Go to **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Choose **Security**, select the group you want to add a member to, select **Members**, and then select **Add**.
 
-   ![Add a member to your selected group](_img/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
+   ![Add a member to your selected group](media/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
 4. Add groups, and then save your changes.
 
-    ![Bulk add members to a group](_img/manage-azure-ad-groups/bulk-add-groups.png)
+    ![Bulk add members to a group](media/manage-azure-ad-groups/bulk-add-groups.png)
 
-    You [invite guests into Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
+    You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
 5. Add more users or groups, or save your changes if you're done.
 

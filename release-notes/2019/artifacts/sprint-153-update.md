@@ -12,9 +12,9 @@ ms.date: 06/10/2019
 
 ## Features
 
-[!INCLUDE [sprint-153-update-links](../_shared/artifacts/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](../includes/artifacts/sprint-153-update-links.md)]
 
-[!INCLUDE [sprint-153-update](../_shared/artifacts/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](../includes/artifacts/sprint-153-update.md)]
 
 ## Next steps
 
@@ -31,7 +31,7 @@ Head over to Azure DevOps and take a look.
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../../_img/make-a-suggestion.png)
+> ![Make a suggestion](../../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 

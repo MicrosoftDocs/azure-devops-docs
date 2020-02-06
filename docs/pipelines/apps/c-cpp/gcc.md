@@ -18,7 +18,7 @@ author: juliakm
 **Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C/C++ application compiled with GCC/g++.
@@ -31,7 +31,7 @@ Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable c
 
 ## Get sample app code
 
-[!INCLUDE [include](../_shared/get-sample-code-intro.md)]
+[!INCLUDE [include](../includes/get-sample-code-intro.md)]
 
 ```
 https://github.com/adventworks/cpp-gpp-sample
@@ -39,17 +39,17 @@ https://github.com/adventworks/cpp-gpp-sample
 
 # [Azure Repos or TFS repo](#tab/vsts)
 
-[!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
+[!INCLUDE [include](../includes/get-sample-code-vsts-tfs-2017-update-2.md)]
 
 # [GitHub repo](#tab/github)
 
-[!INCLUDE [include](../_shared/get-sample-code-github.md)]
+[!INCLUDE [include](../includes/get-sample-code-github.md)]
 
 ---
 
 ## Set up continuous integration
 
-[!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
+[!INCLUDE [include](../../includes/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
@@ -59,7 +59,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
    Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
-   ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
+   ![Screenshot showing button to set up build for a repository](../media/set-up-first-build-from-code-hub.png)
 
    You are taken to **Azure Pipelines** and asked to **Select a template** for the new build pipeline.
 
@@ -133,7 +133,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
 ## View the build summary
 
-[!INCLUDE [include](../_shared/view-build-summary.md)]
+[!INCLUDE [include](../includes/view-build-summary.md)]
 
 ## Publish your build output
 
@@ -141,4 +141,4 @@ Add the [Copy Files](../../tasks/utility/copy-files.md) and [Publish Build Artif
 
 ## Next steps
 
-[!INCLUDE [include](../_shared/ci-web-app-next-steps.md)]
+[!INCLUDE [include](../includes/ci-web-app-next-steps.md)]

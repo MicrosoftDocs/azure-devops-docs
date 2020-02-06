@@ -23,13 +23,17 @@ Displays information about workspaces in the system and updates cached informati
 **Required Permissions**  
 To use the **workspaces** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf workspaces [/owner:ownername] [/computer:computername] 
-    [/collection:TeamProjectCollectionUrl] [/format:(brief|detailed)] 
-    [/updateUserName:oldUserName] [/updateComputerName:oldComputerName] 
-    [workspacename][/login:username,[password]]
+```
+tf workspaces [/owner:ownername] [/computer:computername] 
+[/collection:TeamProjectCollectionUrl] [/format:(brief|detailed)] 
+[/updateUserName:oldUserName] [/updateComputerName:oldComputerName] 
+[workspacename][/login:username,[password]]
+```
 
-    tf workspaces /remove:(*|workspace1[,workspace2,...]) 
-    /collection:(*|TeamProjectCollectionUrl)
+```
+tf workspaces /remove:(*|workspace1[,workspace2,...]) 
+/collection:(*|TeamProjectCollectionUrl)
+```
 
 ## Parameters
 
@@ -124,23 +128,33 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example displays a list of all workspaces for the current user on the current computer.
 
-    c:\projects>tf workspaces
+```
+c:\projects>tf workspaces
+```
 
 The following example displays the list of all workspaces for all users on all computers that have been created in the following project collection at the address http://myserver:8080/tfs/DefaultCollection.
 
-    c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 The following example displays detailed information about all workspaces that the current user has created in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
 
-    c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 The following example displays detailed information including a list of workspace mappings about the workspace "WS1," which is owned by the current user and is located on the current computer.
 
-    c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
+```
+c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
+```
 
 The following example removes all cached workspaces from the cache in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
 
-    c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
+c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection
+```
 
 ## See Also
 

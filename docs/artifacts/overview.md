@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # What is Azure Artifacts? 
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]  
 
 With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
 add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  

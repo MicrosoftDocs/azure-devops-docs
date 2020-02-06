@@ -33,7 +33,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt=".NET Core" src="../_img/index/logo_aspnetcore.svg">
+                                        <img alt=".NET Core" src="../media/index/logo_aspnetcore.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -51,7 +51,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Anaconda" src="../_img/index/logo_anaconda.png">
+                                        <img alt="Anaconda" src="../media/index/logo_anaconda.png">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -87,7 +87,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="ASP.NET" src="../_img/index/logo_net.svg">
+                                        <img alt="ASP.NET" src="../media/index/logo_net.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -141,7 +141,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Docker logo" src="../_img/index/logo_dockercontainer.svg">
+                                        <img alt="Docker logo" src="../media/index/logo_dockercontainer.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -159,7 +159,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Go logo" src="../_img/index/logo_go.svg">
+                                        <img alt="Go logo" src="../media/index/logo_go.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -195,7 +195,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Node.js logo" src="../_img/index/logo_nodejs.svg">
+                                        <img alt="Node.js logo" src="../media/index/logo_nodejs.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -267,7 +267,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="UWP logo" src="../_img/index/logo_uwp.svg">
+                                        <img alt="UWP logo" src="../media/index/logo_uwp.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -327,7 +327,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Kubernetes logo" src="../_img/index/logo_kubernetes.svg">
+                                        <img alt="Kubernetes logo" src="../media/index/logo_kubernetes.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -534,7 +534,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt=".NET Core logo" src="../_img/index/logo_aspnetcore.svg">
+                                        <img alt=".NET Core logo" src="../media/index/logo_aspnetcore.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -570,7 +570,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="ASP.NET logo" src="../_img/index/logo_net.svg">
+                                        <img alt="ASP.NET logo" src="../media/index/logo_net.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -624,7 +624,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Docker logo" src="../_img/index/logo_dockercontainer.svg">
+                                        <img alt="Docker logo" src="../media/index/logo_dockercontainer.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -642,7 +642,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Go logo" src="../_img/index/logo_go.svg">
+                                        <img alt="Go logo" src="../media/index/logo_go.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -678,7 +678,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="Node.js logo" src="../_img/index/logo_nodejs.svg">
+                                        <img alt="Node.js logo" src="../media/index/logo_nodejs.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -750,7 +750,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img alt="UWP logo" src="../_img/index/logo_uwp.svg">
+                                        <img alt="UWP logo" src="../media/index/logo_uwp.svg">
                                     </div>
                                 </div>
                                 <div class="cardText">

@@ -24,7 +24,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you may ne
 >  * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/azure/devops/server/install/single-server).
 >  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
@@ -154,15 +154,15 @@ Prints usage information.
 
 ---
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/qa-windows-agent-powershell-version.md)]
+[!INCLUDE [temp](includes/qa-windows-agent-powershell-version.md)]
 
-[!INCLUDE [temp](_shared/qa-no-agent-with-capabilities.md)]
+[!INCLUDE [temp](includes/qa-no-agent-with-capabilities.md)]
 
 ### What version of the agent runs with my version of TFS?
 
@@ -177,11 +177,11 @@ Prints usage information.
 
 Yes. If you are an existing customer with custom build processes you are not yet ready to migrate, you can continue to use XAML builds, controllers, and agents.
 
-![Configure XAML build controllers and agents](_img/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
+![Configure XAML build controllers and agents](media/v1-windows/tfs-on-premises-xaml-build-system-configure-start.png)
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 
 ::: moniker-end
 

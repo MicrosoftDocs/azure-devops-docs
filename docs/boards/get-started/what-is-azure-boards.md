@@ -16,7 +16,7 @@ ms.date: 07/17/2019
 
 # What is Azure Boards?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 With the Azure Boards web service, teams can manage their software projects. It provides a rich set of capabilities including native support for Scrum and Kanban, customizable dashboards, and integrated reporting. These tools can scale as your business grows. 
   
@@ -34,7 +34,7 @@ You can quickly and easily start tracking user stories, backlog items, task, fea
  
 Two of the most popular processes used are Basic and Agile. A process determines the work item types and workflow available in Azure Boards. 
 
-[!INCLUDE [temp](../_shared/basic-process-note.md)] 
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 #### [Basic process](#tab/basic-process) 
 
@@ -43,7 +43,7 @@ Basic provides three work item types&mdash;epics, issues, and tasks&mdash;and a 
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Workflow |
 > |------|---------|
-> |![Basic process work item types, conceptual image](_img/track-issues/basic-process-epics-issues-tasks.png) | ![Basic process workflow, conceptual image](_img/track-issues/basic-process-workflow.png) 
+> |![Basic process work item types, conceptual image](media/track-issues/basic-process-epics-issues-tasks.png) | ![Basic process workflow, conceptual image](media/track-issues/basic-process-workflow.png) 
 
 When you add an issue, task, or epic, you create a work item. Each work item represents an object stored in the work item data store. Each work item is assigned an identifier. The IDs are unique within your projects.
 
@@ -56,7 +56,7 @@ The Agile process provides several work item types&mdash;user stories, bugs, fea
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Workflow |
 > |------|---------|
-> |![Agile process work item types, conceptual image](_img/about-boards/agile-process-wits.png) | ![Agile process workflow, conceptual image](_img/about-boards/agile-process-workflow.png)
+> |![Agile process work item types, conceptual image](media/about-boards/agile-process-wits.png) | ![Agile process workflow, conceptual image](media/about-boards/agile-process-workflow.png)
 
 When you add a user story, bug, task, or feature, you create a work item. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier (ID) within your projects. 
 
@@ -79,14 +79,14 @@ Quickly add and update the status of work using the Kanban board. You can also a
 Add and update the status  from **To Do**, **Doing**, and **Done**. Add tasks as child items to issues.  To learn more, see [Track issues and tasks](plan-track-work.md).   
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](_img/track-issues/update-status.png)  
+> ![Update status on Kanban board](media/track-issues/update-status.png)  
 
 **Prioritize your backlog of issues**
 
 Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Reorder work items](_img/about-boards/reorder-backlog.png)  
+> ![Reorder work items](media/about-boards/reorder-backlog.png)  
 
 #### [Agile process](#tab/agile-process) 
 
@@ -95,14 +95,14 @@ Prioritize work through drag-and-drop on your team backlog. To learn more, see [
 Add and update the status of work from **New**, **Active**, **Resolved**, and **Closed** using the Kanban board. Add tasks as child items to user stories. To learn more, see [Track user stories, features, and tasks](plan-track-work.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Update status on Kanban board](_img/plan-track-work/update-status.png)  
+> ![Update status on Kanban board](media/plan-track-work/update-status.png)  
 
 **Prioritize your backlog of user stories**
 
 Prioritize work through drag-and-drop on your team backlog. To learn more, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Reorder work items](_img/about-boards/reorder-agile-backlog.png)  
+> ![Reorder work items](media/about-boards/reorder-agile-backlog.png)  
 
 
 * * * 
@@ -119,7 +119,7 @@ Create dashboards that track status and trends of work being accomplished.  Set 
 **Get updated when a work item is updated**
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](_img/about-boards/issue-form-follow.png)  
+> ![Work item form, Follow icon control](media/about-boards/issue-form-follow.png)  
 
 
 #### [Agile process](#tab/agile-process) 
@@ -127,7 +127,7 @@ Create dashboards that track status and trends of work being accomplished.  Set 
 **Get updated when a work item is updated**
 
 > [!div class="mx-imgBorder"]  
-> ![Work item form, Follow icon control](_img/about-boards/user-story-form-follow.png)  
+> ![Work item form, Follow icon control](media/about-boards/user-story-form-follow.png)  
 
 
 * * * 
@@ -149,12 +149,12 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/sprint-planning-issues-s155.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/sprint-planning-issues.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/sprint-planning-issues.png)  
 ::: moniker-end
 
  
@@ -165,12 +165,12 @@ Plan sprints by assigning work to current or future sprints. Forecast work that 
 ::: moniker range="azure-devops"
 > [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint-s155.png)  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]
 > [!div class="mx-imgBorder"]  
-> ![Boards>Backlogs>Drag-drop items onto sprint](_img/about-boards/drag-drop-backlog-items-to-sprint.png)  
+> ![Boards>Backlogs>Drag-drop items onto sprint](media/about-boards/drag-drop-backlog-items-to-sprint.png)  
 ::: moniker-end
 
 * * * 
@@ -196,14 +196,14 @@ You'll find you can work more effectively through these actions:
 **Group items to create a hierarchy**
 
 > [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](_img/about-boards/hierarchy.png) 
+> ![Backlogs, show parents](media/about-boards/hierarchy.png) 
 
 #### [Agile process](#tab/agile-process) 
 
 **Group items to create a hierarchy**
 
 > [!div class="mx-imgBorder"]
-> ![Backlogs, show parents](_img/about-boards/agile-hierarchy-with-header.png)
+> ![Backlogs, show parents](media/about-boards/agile-hierarchy-with-header.png)
 
 * * * 
 
@@ -272,7 +272,8 @@ Boards, Backlogs, Sprints rely on team configurations. For example, if you want 
 
 ## Manage work across projects
 
-Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md). 
+Most work is tracked within a project. However, many enterprises create several projects to support their business needs as described in [Plan your organizational structure](../..//user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json). 
+
 
 To track work across several projects, you can: 
 - [Create work item queries that list work items across projects](../queries/using-queries.md#query-across-projects)
