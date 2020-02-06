@@ -1,4 +1,4 @@
-﻿---
+---
 title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
@@ -30,13 +30,15 @@ Use your backlogs to plan your project and to:
 *   Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
 Use this article to learn how to: 
->[!div class="checklist"]      
+> [!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
 
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
+
+[!INCLUDE [temp](../includes/work-item-types.md)] 
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
