@@ -26,6 +26,9 @@ Anytime you create a project, you must choose a process or process template base
 
 For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
+
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -33,11 +36,6 @@ For details on creating a project using the process of your choice, see [Create 
 > To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
-
-
-The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
 
 
 <a id="template_intro"></a>
@@ -53,10 +51,9 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
-> [!NOTE]   
-> The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.  
+[!INCLUDE [temp](../../includes/note-basic-process.md)]
 
 ::: moniker-end
 
