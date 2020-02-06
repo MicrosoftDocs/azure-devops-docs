@@ -9,8 +9,6 @@
 - name: Configure & customize
   href: configure-customize.md
   displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, 
-- name: Work tracking limits
-  href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Get started
   href: get-started/toc.yml
 - name: Azure Boards & GitHub
@@ -27,6 +25,14 @@
   href: queries/toc.yml 
 - name: Plans & Agile at Scale
   href: plans/toc.yml
+- name: Permissions & access
+  items:
+  - name: Default permissions & access (Security)
+    href: get-started/permissions-access-boards.md
+  - name: Set work tracking and plan permissions 
+    href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Grant or restrict permissions to select tasks
+    href: /azure/devops/organizations/security/estrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Process guidance
   items:
   - name: Choose a process
@@ -83,6 +89,8 @@
       href: work-items/guidance/cmmi/track-bugs.md
 - name: Add and manage teams
   items:
+  - name: About teams & Agile tools
+    href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: When to add a team or project
     href: /azure/devops/organizations/projects/about-projects?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Quickstarts
@@ -90,7 +98,7 @@
     - name: Define area paths & assign to a team 
       href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Define iteration (sprints) & configure team iterations 
-      href: /azure/devops/organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+      href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add a team
       href: /azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Add a team administrator
@@ -129,12 +137,12 @@
     items:
     - name: Office integration issues
       href: backlogs/office/tfs-office-integration-issues.md
-    - name: "Rollup estimated & actual work using Project"
+    - name: Rollup work using Project
       href: backlogs/office/rollup-estimated-and-actual-work-using-project.md
     - name: Resolve Excel data conflicts
       href: backlogs/office/resolve-excel-data-conflicts-publish-refresh.md
     - name: Resolve Excel data validation errors
-      href: backlogs/office/resolve-excel-data-validation-errors.md?
+      href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
 - name: Integrations & extensions
@@ -187,6 +195,8 @@
       href: work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md
     - name: Review meeting fields
       href: work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+  - name: Work tracking limits
+    href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: REST API Reference
   items:
   - name: Work Items
