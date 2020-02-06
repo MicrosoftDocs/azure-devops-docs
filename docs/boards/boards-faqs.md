@@ -25,24 +25,62 @@ You can view a list of features that are on our roadmap for Azure Boards from th
 To request a feature or up-vote a feature, go to our [Developer Community page](https://developercommunity.visualstudio.com/spaces/21/visual-studio-team-services.html?type=idea).
  
 
-## Work items and work item templates
+## Access and permissions
+
+As a member of an Azure Boards project, you can use the majority of features to track work. Limitations to select features are based on the access level and security group to which a user is assigned. To learn more, see [Default permissions and access for Azure Boards](get-started/permissions-access-boards.md).
+
+### Q: How can I provide access to non-contributors to view or modify work items?  
+
+::: moniker range="azure-devops"
+
+**A:** For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users, ones who don't sign into the project, can view all work items. To learn more, see [About access levels](../organizations/security/access-levels.md) and [About public projects](../organizations/public/about-public-projects.md). 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+**A:** You can grant access to an unlimited number of users by assigning them Stakeholder access. To learn more, see [About access levels](../organizations/security/access-levels.md)
+
+::: moniker-end
+
+### Q: How can I restrict viewing or modifying select work items?  
+
+You can restrict access by setting permissions for an area path. To learn more, see the following articles: 
+- [Set work tracking and plan permissions](/azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+- [Grant or restrict permissions to select tasks](/azure/devops/organizations/security/estrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json) 
+
+### Q: What are all the supported client IDEs? 
+
+**A:** See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
+
+## Work items and work item templates 
+
+For an introduction to work items, see [About work items](work-items/about-work-items.md). To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
 
 ### Q: Can a work item be assigned to several users or a user group? 
 
 **A:** No. Work items can only be assigned to a single user. 
 
-Is this feature on the roadmap? No, this isn't on the roadmap. 
+> *Is this feature on the roadmap? No, this isn't on the roadmap.* 
 
-<!---   
+
 
 ### Q: What's the recommended method to group work? 
 
-**A:** 
+**A:** The main method to group work is to assign it to the same area path. Area paths are used to group work items by product, feature, or business areas and to support teams responsible for work assigned to those areas. In addition, you can group work under a parent work item using parent-child links. This is referred to as hierarchical grouping. 
+
+For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
 
 ### Q: How can I best track dependencies?
 
-**A:** 
+**A:** You can track dependencies between work items by linking them using a related or other link type. See [Link work items](backlogs/add-link.md) and [Linking, traceability, and managing dependencies](queries/link-work-items-support-traceability.md). 
+
+If you are tracking dependencies across one or more organizations, you may want to use the [Dependency Tracker](extensions/dependency-tracker.md).
+
+<!---   
+
+### Q: Historical snapshot of work items? 
+
 --> 
 
 
@@ -61,7 +99,13 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
 
-## Backlogs and boards
+## Backlogs and boards 
+
+Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).
+
+### Q: How do I migrate my existing backlog to Azure Boards?  
+
+**A:** See [Azure Boards migration and integration](extensions/migrate-to-boards.md).
 
 ### Q: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
 
@@ -85,11 +129,20 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 ### Q: How do I make H for hours or D for days appear on my Sprint backlogs and Taskboards? 
 
-### Q: How do I migrate my existing backlog to Azure Boards?  
+## Queries
 
-**A:** 
+slow queries
+
+## Cross-team and project tracking
+
+### Q: How can I best manage cross-team dependencies?  
+
+### Q: How best to track product investment themes? 
+
+### Q: How get a master board view? 
 
 --> 
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -113,7 +166,7 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 
 ### Q: Can sub hubs within Azure Boards be disabled? 
 
-**A:** No. While you can disable an entire service, you can't disable Individual pages within a service. To learn more, see [Turn a service on or off](../organizations/settings/set-services.md). 
+**A:** No. While you can disable an entire service, you can't disable individual pages within a service. To learn more, see [Turn a service on or off](../organizations/settings/set-services.md). 
 
 ### Q: Can I upload my own custom work item type icons?  
 
@@ -144,3 +197,5 @@ Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](
 - [Azure Boards extensions](extensions/index.md)
 - [About teams and Agile tools](../organizations/settings/about-teams-and-settings.md)
 
+
+*Have a question that didn't get answered? Feel free to ask it through one of the feedback links provided below.*
