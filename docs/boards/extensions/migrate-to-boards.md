@@ -19,7 +19,6 @@ ms.date: 02/06/2020
 
 You have a choice of tools to support migration of your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. In addition, you can integrate Azure Boards with a number of third-party tools. 
 
-
 ## Migrate from an on-premises Azure DevOps Server
 
 The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Services](../../migrate/migration-overview.md).
@@ -55,7 +54,6 @@ If you want to migrate from Jira to Azure Boards, consider using the Marketplace
 - Migrate links and attachments 
 - Migrate history  
 
-
 ## Integrate with GitHub
 
 Azure Boards and Azure DevOps Server 2019 integrate with GitHub. By connecting Azure Boards with GitHub repositories, you enable linking between GitHub commits, pull requests, and issues to work items. You can use GitHub for software development while using Azure Boards to plan and track your work.
@@ -67,6 +65,15 @@ To learn how, see [Connect Azure Boards to GitHub](../github/connect-to-github.m
 You can integrate Azure Boards with other third-party tools such as Jenkins and Trello. Using service hooks you can generate actions based on Azure DevOps events. To learn more, review one of the following articles: 
 -  [Create a service hook for Azure DevOps with Jenkins](../../service-hooks/services/jenkins.md) 
 -  [Create a service hook for Azure DevOps with Trello](../../service-hooks/services/trello.md)
+
+## Project and portfolio management  
+
+The following tools support integration and synchronization with Azure DevOps with one or more project and portfolio management tools. The last three tools support integration between Azure Boards and Microsoft Project Online or Microsoft Project Server. 
+
+- [AgileCraft](https://marketplace.visualstudio.com/items?itemName=agilecraft.AgileCraft) enables organizations scaling Agile to the enterprise by connecting business strategy to technical execution.
+- [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
+- [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
+- [Tasktop](https://www.tasktop.com/product-overview) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
 ## Related articles
