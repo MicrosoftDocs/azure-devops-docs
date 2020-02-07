@@ -161,6 +161,141 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 [!INCLUDE [temp](includes/access-variables-through-env.md)]
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
+
+[Create a variable](#create-variable) | [Update a variable](#update-variable) | [Delete a variable](#delete-variable) 
+
+### Prerequisites
+
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+
+<a id="create-variable" />
+
+### Create a variable
+
+You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable create --name
+                             [--allow-override {false, true}]
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--secret {false, true}]
+                             [--value]
+``` 
+
+#### Parameters
+
+- **name**: Required. Name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are *false* and *true*.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
+- **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+
+#### Example
+
+The following command creates a variable named **MyVariable** with the value **platform** in the pipeline with ID **12**. It shows the result in table format.
+
+```azurecli
+az pipelines variable create --name MyVariable --pipeline-id 12 --value platform --output table
+
+Name        Allow Override    Is Secret    Value
+----------  ----------------  -----------  --------
+MyVariable  False             False        platform
+```
+
+<a id="update-variable" />
+
+### Update a variable
+
+You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable update --name
+                             [--allow-override {false, true}]
+                             [--new-name]
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--prompt-value {false, true}]
+                             [--secret {false, true}]
+                             [--value]
+``` 
+
+#### Parameters 
+
+- **name**: Required. Original name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are *false* and *true*.
+- **new-name**: Optional. Specify to change the name of the variable.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **prompt-value**: Set to **true** to update the value of a secret variable using environment variable or prompt via standard input. Accepted values are *false* and *true*.
+- **secret**: Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
+- **value**: Updates the value of the variable. For secret variables, use the **prompt-value** parameter to be prompted to enter it via standard input. For non-interactive consoles, it can be picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_`. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+
+#### Example
+
+The following command updates the **Configuration** variable with the new value **config.debug** in the pipeline with ID **12**. It specifies that the variable is not a **secret** and shows the result in table format.
+
+```azurecli
+az pipelines variable update --name Configuration --pipeline-id 12 --secret false --value config.debug --output table
+
+Name           Allow Override    Is Secret    Value
+-------------  ----------------  -----------  ------------
+Configuration  False             False        config.debug
+```
+
+<a id="delete-variable" />
+
+### Delete a variable
+
+You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable delete --name
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--yes]
+``` 
+
+#### Parameters 
+
+- **name**: Required. Name of the variable you want to delete.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Does not prompt for confirmation.
+
+#### Example
+
+The following command deletes the **Configuration** variable from the pipeline with ID **12** and does not prompt for confirmation.
+
+```azurecli
+az pipelines variable delete --name Configuration --pipeline-id 12 --yes
+
+Deleted variable 'Configuration' successfully.
+```
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
 * * *
 <h2 id="secret-variables">Set secret variables</h2>
 
@@ -252,6 +387,10 @@ Remapping is done in each task that needs to use the secret as an environment va
 
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
+
 * * *
 ## Share variables across pipelines
 
@@ -302,7 +441,47 @@ Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableNam
 
 You must use YAML to consume output variables in a different job.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to sharing variables across pipelines. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+
 * * *
+
+::: moniker range="azure-devops"  
+
+## List variables
+
+You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable list [--org]
+                           [--pipeline-id]
+                           [--pipeline-name]
+                           [--project]
+``` 
+
+#### Parameters 
+
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example
+
+The following command lists all of the variables in the pipeline with ID **12** and shows the result in table format.
+
+```azurecli
+az pipelines variable list --pipeline-id 12 --output table
+
+Name           Allow Override    Is Secret    Value
+-------------  ----------------  -----------  ------------
+MyVariable     False             False        platform
+NextVariable   False             True         platform
+Configuration  False             False        config.debug
+```
+
+::: moniker-end
 
 ## Set variables in scripts
 
@@ -507,6 +686,10 @@ The output variable `newworkdir` can be referenced in the input of a downstream 
 
 You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+
 * * *
 ## Set variables using expressions
 
@@ -547,6 +730,10 @@ You can use any of the supported expressions for setting a variable. Here is an 
 
 For more information about counters and other expressions, see [expressions](expressions.md).
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+
 * * *
 ## Allow at queue time
 
@@ -566,6 +753,10 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
 To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 
 * * *
 ## Expansion of variables
@@ -696,4 +887,7 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will be 20, since the variables are expanded just before the step
    ```
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 
