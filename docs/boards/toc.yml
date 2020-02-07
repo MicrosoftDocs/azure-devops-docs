@@ -142,7 +142,7 @@
   - name: Overview
     href: ./extensions/index.md
   - name: Migration and integration
-    href: ./extensions/migrate-to-boards.md
+    href: ./extensions/migrate-integrate.md
     displayname: project management, portfolio management, AgileCraft, ConnectAll, TaskTop, Jira, GitHub, service hooks, process model
   - name: Azure Boards with Slack
     href: ./integrations/boards-slack.md
