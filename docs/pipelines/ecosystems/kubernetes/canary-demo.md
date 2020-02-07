@@ -8,7 +8,7 @@ ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 08/28/2019
+ms.date: 02/06/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -148,7 +148,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Run this job**: Only when a previous job has failed
 1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Reject canary** job -
     - **Display name**: Reject canary
-    - **Action**: promote
+    - **Action**: reject
     - **Kubernetes service connection**: azure-pipelines-canary-k8s
     - **Namespace**: namespace within the cluster you want to deploy to
     - **Strategy**: Canary
