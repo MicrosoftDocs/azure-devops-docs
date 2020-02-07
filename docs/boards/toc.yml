@@ -149,6 +149,9 @@
   items:
   - name: Overview
     href: ./extensions/index.md
+  - name: Migration and integration
+    href: ./extensions/migrate-integrate.md
+    displayname: project management, portfolio management, AgileCraft, ConnectAll, TaskTop, Jira, GitHub, service hooks, process model
   - name: Azure Boards with Slack
     href: ./integrations/boards-slack.md
   - name: Azure Boards with Teams
@@ -213,12 +216,6 @@
     href: /rest/api/vsts/boards/plans 
   - name: Wiql
     href: /rest/api/vsts/wit/wiql 
-- name: Marketplace Extensions
-  items:
-  - name: WIQL Editor 
-    href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
-  - name: Enhanced Export 
-    href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export
 - name: Azure DevOps Learn
   items:
   - name: What is Agile?

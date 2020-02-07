@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '<= azure-devops'
 ms.date: 01/24/2020
 ---
 
@@ -334,7 +334,7 @@ Here is an example of area paths and their assignment to teams, which support po
 > [!div class="mx-imgBorder"] 
 > ![Area paths and team assignments](media/config-custom/area-path-team-assignments.png)  
 
-- You create hiearchical area paths to support sub categories of features and product areas 
+- You create hierarchical area paths to support sub categories of features and product areas 
 - To provide portfolio views, you assign two or more area paths and include sub-areas to a portfolio management team 
 - Area paths assigned to a team determine what work items are filtered in a team view: product backlog, portfolio backlog, delivery plans, or other portfolio planning tool  
 - Grouping work items under a parent feature or epic determine what rollup views are supported and how work appears in a calendar view such as Feature Timeline and Epic Roadmap  

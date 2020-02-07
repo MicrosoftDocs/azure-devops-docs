@@ -1009,7 +1009,7 @@ An example of a resource is another CI/CD pipeline that produces:
 - Code repositories like GitHub, Azure Repos, or Git.
 - Container-image registries like Azure Container Registry or Docker hub.
 
-Resources in YAML represent sources of pipelines, containers, repositories, and types.
+Resources in YAML represent sources of pipelines, containers, repositories, and types. For more information on Resources, [see here](process/resources.md).
 
 ### General schema
 
