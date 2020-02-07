@@ -389,7 +389,11 @@ Remapping is done in each task that needs to use the secret as an environment va
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Share variables across pipelines
@@ -756,7 +760,11 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Expansion of variables
