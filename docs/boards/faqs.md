@@ -1,6 +1,5 @@
 ---
 title: Azure Boards FAQs 
-titleSuffix: Azure Boards
 description: Answers to frequently asked questions about Azure Boards 
 ms.technology: devops-agile
 ms.prod: devops
@@ -10,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2020
+ms.date: 02/07/2020
 ---
 
 # Azure Boards FAQs 
@@ -53,15 +52,13 @@ You can restrict access by setting permissions for an area path. To learn more, 
 
 **A:** See [Tools and clients that connect to Azure DevOps](../user-guide/tools.md).
 
-## Work items and work item templates 
+## Work items and templates 
 
 For an introduction to work items, see [About work items](work-items/about-work-items.md). To define work item templates to specify defaults for select fields, see [Use templates to add and update work items](backlogs/work-item-template.md).
 
 ### Q: Can a work item be assigned to several users or a user group? 
 
 **A:** No. Work items can only be assigned to a single user. 
-
-> *Is this feature on the roadmap? No, it isn't on the roadmap.* 
 
 ### Q: What's the recommended method to group work? 
 
@@ -81,7 +78,7 @@ If you are tracking dependencies across one or more organizations, you may want 
 
 **A:** No. Cloning doesn't copy work item subtasks.  
 
-Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194)
+Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194).
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
