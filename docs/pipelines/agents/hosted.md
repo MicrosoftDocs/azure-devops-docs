@@ -32,6 +32,7 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
+| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md)
 
 > [!IMPORTANT]
 > On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:

@@ -221,7 +221,7 @@ steps:
     script: |
         # Encode the Personal Access Token (PAT)
         # $env:USER is a normal variable in the variable group
-        # #env:MY_MAPPED_TOKEN is a mapped secret variable
+        # $env:MY_MAPPED_TOKEN is a mapped secret variable
         $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
         
         # Get a list of releases
@@ -247,11 +247,8 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-Imagine you want to use a secret variable called `mySecret` from a script.
-Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
-To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
-In the left column, give the variable a name to be used in the environment.
-In the right column, dereference the secret variable like this: `$(mySecret)`.
+Remapping is done in each task that needs to use the secret as an environment variable. If you want to use a secret variable called `mySecret` from a script, use the **Environment** section of the scripting task's input variables. Set the environment variable name to `MYSECRET` and the value to `$(mySecret)`.
+
 
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 

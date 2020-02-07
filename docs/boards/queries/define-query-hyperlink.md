@@ -34,7 +34,7 @@ The easiest way to define a hyperlink is to create a query that matches what you
 You must encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
 ```  
-https://dev.azure.com/OrganizationName/ProjectName/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
+https://dev.azure.com/OrganizationName/ProjectName/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
 ```
 For example, the following hyperlink lists the ID and title of all active bugs defined under the FabrikamFiber/Web area path for the fabrikam.visualstudio.com account.
 
@@ -62,7 +62,7 @@ SELECT [System.ID], [System.Title]
 ::: moniker range=">= tfs-2017"  
 
 ```  
-https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
+https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
 ```
 
 For example, the following hyperlink lists the ID, title, and state of all bugs under the FabrikamFiber/Web area path hosted on the fabrikam server.
@@ -87,7 +87,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ::: moniker range="tfs-2015"  
 
 ```  
-https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage]
+https://{ServerName}/{CollectionName}/{TeamProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}
 ```
 
 The ```_workitems?``` entry has replaced the ```q.aspx?``` entry used in the syntax for TFS 2013 and previous versions.  
@@ -114,7 +114,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ::: moniker range="tfs-2013"    
 
 ```  
-https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
+https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage}
 ```
 For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber project hosted on the fabrikam server. 
 
