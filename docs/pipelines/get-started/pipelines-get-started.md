@@ -30,18 +30,15 @@ Azure Pipelines supports continuous integration (CI) and continuous delivery (CD
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-## Use CI and CD to automate tests, builds, and delivery
+## Automate tests, builds, and delivery
 
-Continuous integration is used to automate tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
+Continuous integration automates tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
 
-Continuous delivery is used to automatically deploy and test code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
+Continuous delivery automatically deploys and tests code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-| Increase code coverage.                             | Automatically deploy code to production.        |
-| Build faster by splitting test and build runs.      | Ensure deployment targets have latest code.     |
-| Automatically ensure you don&#39;t ship broken code.| Use tested code from CI process.                |
-| Run tests continually.                              |                                                 |
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>Run tests continually. |-Automatically deploy code to production.<br/>- Ensure deployment targets have latest code.<br/>- Use tested code from CI process.|
 
 
 ## Define pipelines using YAML syntax
@@ -97,14 +94,14 @@ Certain pipeline features are only available when defining builds or releases, a
 | Feature | Build | Release | YAML | Classic |  Notes| 
 |---------|---------|---------|---------|---------|---------|---------|
 | [Agents](../agents/agents.md) | Yes | Yes | Yes | Yes | Required to build or deploy software.|
-| [Approvals](../release/approvals.md) |  | Yes |  | Yes |  |
+| [Approvals](../release/approvals/index.md) |  | Yes |  | Yes |  |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes |  |  |Publish or consume different package types. |
-| [Caching](../caching.md) | Yes |  | Yes |  | In Preview, available with Azure Pipelines only.| 
+| [Caching](../caching/index.md) | Yes |  | Yes |  | In Preview, available with Azure Pipelines only.| 
 | [Conditions](../process/conditions.md) |  | Yes |  | Yes | Apply conditions on when a job runs.     |
 | [Container jobs](../process/container-phases.md) | Yes | Yes | Yes | No | Specify jobs to run in a container.  |
-| [Demands](../process/demands.md) | Yes | Yes |  |  |  | Ensure pipeline requirements are met before running. Requires self-hosted agents. |
-| [Dependencies](../process/stages.md) |  | Yes | Yes | Yes |  |
-| [Deployment groups](../release/deployment-groups.md) |  | Yes |  | Yes | Defines a logical set of deployment target machines. | 
+| [Demands](../process/demands.md) | Yes | Yes |  |  |Ensure pipeline requirements are met before running. Requires self-hosted agents. |
+| [Dependencies](../process/stages.md) | Yes | Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
+| [Deployment groups](../release/deployment-groups/index.md) |  | Yes |  | Yes | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)|  | Yes |  | Yes | Specifies a job to release to a deployment group. | 
 | [Deployment jobs](../process/deployment-group-phases.md) |  | Yes | Yes |  | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
 | [Environment](../process/environments.md) |  | Yes | Yes |  | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
