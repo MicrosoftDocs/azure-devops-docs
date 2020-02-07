@@ -16,12 +16,41 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
+::: moniker range=">= azure-devops-2019"
+
+Azure Pipelines supports continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target. You accomplish this by defining a pipeline. You define pipelines using the YAML syntax or through the user interface (Classic). 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+Azure Pipelines supports continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target. You accomplish this by defining a pipeline using the user interface, also referred to as _Classic_. 
+
+::: moniker-end
+
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-#### [YAML](#tab/yaml/)
+## Use CI and CD to automate tests, builds, and delivery
+
+Continuous integration is used to automate tests and builds for your project. CI helps to catch bugs or issues early in the development cycle, when they're easier and faster to fix. Items known as artifacts are produced from CI systems. They're used by the continuous delivery release pipelines to drive automatic deployments.
+
+Continuous delivery is used to automatically deploy and test code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which includes infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
+
+| Continuous integration (CI)                         |  Continuous delivery (CD)                       |
+| ----------------------------------------------------|-------------------------------------------------|
+| Increase code coverage.                             | Automatically deploy code to production.        |
+| Build faster by splitting test and build runs.      | Ensure deployment targets have latest code.     |
+| Automatically ensure you don&#39;t ship broken code.| Use tested code from CI process.                |
+| Run tests continually.                              |                                                 |
+
+
+## Define pipelines using YAML syntax
+
 ::: moniker range=">= azure-devops-2019"
 
 You define your pipeline in a YAML file called `azure-pipelines.yml` with the rest of your app.
+
+![Pipelines YAML intro image](../media/pipelines-image-yaml.png)
 
 * The pipeline is versioned with your code. It follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
 * Every branch you use can modify the build policy by modifying the `azure-pipelines.yml` file.
@@ -35,22 +64,20 @@ Follow these basic steps:
 
 Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-![Pipelines YAML intro image ](../media/pipelines-image-yaml.png)
-
-[Create your first pipeline](../create-first-pipeline.md).
-
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-YAML pipelines aren't available in TFS.
+YAML pipelines aren't available in TFS 2018 and earlier versions.
 
 ::: moniker-end
 
-#### [Classic](#tab/classic/)
-
+## Define pipelines using Classic  
+ 
 Create and configure pipelines in the [Azure DevOps Services web portal](https://dev.azure.com/) with the classic editor.
 You define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
+
+![Pipelines designer intro image](../media/pipelines-image-designer.png)
 
 Follow these basic steps:
 
@@ -62,8 +89,43 @@ The build creates an artifact that's used by the rest of your pipeline to run ta
 
 Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-![Pipelines designer intro image](../media/pipelines-image-designer.png)
 
-[Create your first pipeline](../create-first-pipeline.md).
+## Feature availability 
 
-* * *
+Certain pipeline features are only available when defining builds or releases, and some only when using YAML or Classic. The following table indicates which features are supported and for which tasks and methods. 
+
+| Feature | Build | Release | YAML | Classic |  Notes| 
+|---------|---------|---------|---------|---------|---------|---------|
+| [Agents](../agents/agents.md) | Yes | Yes | Yes | Yes | Required to build or deploy software.|
+| [Approvals](../release/approvals.md) |  | Yes |  | Yes |  |
+| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes |  |  |Publish or consume different package types. |
+| [Caching](../caching.md) | Yes |  | Yes |  | In Preview, available with Azure Pipelines only.| 
+| [Conditions](../process/conditions.md) |  | Yes |  | Yes | Apply conditions on when a job runs.     |
+| [Container jobs](../process/container-phases.md) | Yes | Yes | Yes | No | Specify jobs to run in a container.  |
+| [Demands](../process/demands.md) | Yes | Yes |  |  |  | Ensure pipeline requirements are met before running. Requires self-hosted agents. |
+| [Dependencies](../process/stages.md) |  | Yes | Yes | Yes |  |
+| [Deployment groups](../release/deployment-groups.md) |  | Yes |  | Yes | Defines a logical set of deployment target machines. | 
+| [Deployment group jobs](../process/deployment-group-phases.md)|  | Yes |  | Yes | Specifies a job to release to a deployment group. | 
+| [Deployment jobs](../process/deployment-group-phases.md) |  | Yes | Yes |  | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
+| [Environment](../process/environments.md) |  | Yes | Yes |  | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
+| [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
+| [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Yes |A connection to a remote service required to execute tasks in a job.   |
+| [Service containers](../process/service-containers.md) | Yes |Yes  |  |No  |Enables you to manage the lifecycle of a containerized service.   |
+| [Stages](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Organizes jobs within a pipeline. |
+| [Task groups](../library/task-groups.md) | Yes | Yes | No | Yes | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
+| [Tasks](../process/tasks.md) | Yes | Yes | Yes | Yes |  Defines the building blocks that make up a pipeline.  |
+| [Templates](../process/templates.md) | Yes | Yes | Yes | No |Defines reusable content, logic, and parameters.   |
+| [Triggers](../build/triggers.md) | Yes |Yes  | Yes |Yes  |Defines the event that causes a pipeline to run.  |
+| [Variables](../process/variables.md) | Yes | Yes | Yes | Yes |A value that represents data to be passed to the pipeline.    |
+| [Variable groups](../library/variable-groups.md) | Yes | Yes | Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Create your first pipeline](../create-first-pipeline.md)
+
+## Related articles
+
+- [Key concepts for new Azure Pipelines users](key-pipelines-concepts.md) 
+
+
