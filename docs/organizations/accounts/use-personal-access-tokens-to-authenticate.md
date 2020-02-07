@@ -130,7 +130,8 @@ public static async void GetBuilds()
 
 > [!TIP]
 > When you're using variables, add a "$" at the beginning of the string, like the following example.
-> ```cs
+
+```cs
 public static async void GetBuilds()
 {
     try
