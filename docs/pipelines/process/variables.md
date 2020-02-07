@@ -447,7 +447,11 @@ You must use YAML to consume output variables in a different job.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -692,7 +696,11 @@ You cannot pass a variable from one job to another job of a build pipeline unles
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Set variables using expressions
@@ -736,7 +744,11 @@ For more information about counters and other expressions, see [expressions](exp
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Allow at queue time
@@ -897,5 +909,8 @@ Variables are expanded once when the run is started, and again, at the beginning
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
