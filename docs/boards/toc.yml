@@ -167,7 +167,7 @@
 - name: Troubleshooting
   items:
   - name: FAQs 
-    href: boards-faqs.md 
+    href: faqs.md 
   - name: Set up your backlogs and boards
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"

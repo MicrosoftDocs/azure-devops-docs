@@ -98,7 +98,7 @@ Each backlog and board represents a filtered list of work items based on area pa
 
 ### Q: How do I migrate my existing backlog to Azure Boards?  
 
-**A:** See [Azure Boards migration and integration](extensions/migrate-to-boards.md).
+**A:** See [Azure Boards migration and integration](extensions/migrate-integrate.md).
 
 ### Q: How do the three types of backlogs&mdash;product, portfolio, and sprint backlogs&mdash;differ?
 
