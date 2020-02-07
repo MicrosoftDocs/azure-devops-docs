@@ -57,18 +57,17 @@ Learn more about how the pricing works based on [parallel jobs](../licensing/con
 
 ## Why should I use Azure Pipelines?
 
-Implementing CI and CD pipelines helps to ensure consistent and quality code that's readily available to users.
+Implementing CI and CD pipelines helps to ensure consistent and quality code that's readily available to users. 
+And, Azure Pipelines provides a quick, easy, and safe way to automate building your projects and making them available to users.
 
-Azure Pipelines is a quick, easy, and safe way to automate building your projects and making them available to users.
+Use Azure Pipelines because it supports the following scenarios:  
 
-There are several reasons to use Azure Pipelines for your CI and CD solution. You can use it to:
-
-* Work with any language or platform.
-* Deploy to different types of targets at the same time.
-* Integrate with Azure deployments.
-* Build on Windows, Linux, or Mac machines.
-* Integrate with GitHub.
-* Work with open-source projects.
+* Works with any language or platform 
+* Deploys to different types of targets at the same time 
+* Integrates with Azure deployments 
+* Builds on Windows, Linux, or Mac machines 
+* Integrates with GitHub 
+* Works with open-source projects.
 
 ## Try this next
 
