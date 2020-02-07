@@ -117,7 +117,7 @@ Keep in mind that if you’re already using Azure, chances are you already have 
 A: If you need technical support with Azure DevOps and don’t have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
  
 1. Create an Azure subscription.
-  - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you’ll set up payment. direct with Azure, through a partner, or through a Microsoft representative.
+  - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you’ll set up payment direct with Azure, through a partner, or through a Microsoft representative.
   - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you’ll only pay for what you use.
  
 2. Pick a support plan.
