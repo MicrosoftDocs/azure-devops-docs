@@ -129,7 +129,7 @@ public static async void GetBuilds()
 <br/>
 
 > [!TIP]
-> When you're using variables, add an "$" at the beginning of the string, like the following example.
+> When you're using variables, add a "$" at the beginning of the string, like the following example.
 > ```cs
 public static async void GetBuilds()
 {
