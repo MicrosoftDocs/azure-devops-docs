@@ -443,7 +443,7 @@ You must use YAML to consume output variables in a different job.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to sharing variables across pipelines. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 
 * * *
 
