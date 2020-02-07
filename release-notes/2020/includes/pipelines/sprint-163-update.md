@@ -10,7 +10,7 @@ In addition, deployment jobs can be run as a [container job](https://docs.micros
 
 ### Allow repository references to other Azure Repos organizations
 
-Previously, when you referenced repositories in a YAML pipeline, all Azure Repos repositories had to be in the same organization as the pipeline. Now, you can point to repositories in otherrepo organizations using a service connection. For example:
+Previously, when you referenced repositories in a YAML pipeline, all Azure Repos repositories had to be in the same organization as the pipeline. Now, you can point to repositories in other organizations using a service connection. For example:
 
 ```yaml
 resources:

@@ -129,7 +129,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 ### Push NuGet packages to external feed
 
 ```YAML
-# Push all NuGet packages from a build to internal organization Feed
+# Push all NuGet packages from a build to external Feed
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
