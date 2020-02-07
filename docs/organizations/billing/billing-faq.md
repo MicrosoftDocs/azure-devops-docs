@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -112,8 +112,7 @@ A: The most common reason customers have received extra free user license grants
 
 ### Q: How do I pay for Azure DevOps support?
  
-Keep in mind that if you’re already using Azure, the chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request).
-If you need to [report a service outage](https://status.dev.azure.com/) or [get billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview), you don’t need to pay for support.
+Keep in mind that if you’re already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). Also, you don’t need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
  
 A: If you need technical support with Azure DevOps and don’t have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
  
