@@ -93,13 +93,13 @@ Certain pipeline features are only available when defining build or release pipe
 
 | Feature | Build | Release | YAML | Classic |  Notes| 
 |---------|---------|---------|---------|---------|---------|---------|
-| [Agents](../agents/agents.md) | Yes | Yes | Yes | Yes | Required resource to build or deploy software.|
+| [Agents](../agents/agents.md) | Yes | Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) |  | Yes |  | Yes | Defines a set of validations required prior to completing a deployment stage. |
-| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Yes | Publish or consume different package types. |
+| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Yes | Supports publishing or consuming different package types. |
 | [Caching](../caching/index.md) | Yes | Yes | Yes | No  | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
-| [Conditions](../process/conditions.md) | Yes | Yes | Yes | Yes | Apply conditions on when a job runs.     |
-| [Container jobs](../process/container-phases.md) | Yes | Yes | Yes | No | Specify jobs to run in a container.  |
-| [Demands](../process/demands.md) | Yes | Yes | Yes | Yes | Ensure pipeline requirements are met before running. Requires self-hosted agents. |
+| [Conditions](../process/conditions.md) | Yes | Yes | Yes | Yes | Specifies conditions to be met prior to running a job.     |
+| [Container jobs](../process/container-phases.md) | Yes | Yes | Yes | No | Specifies jobs to run in a container.  |
+| [Demands](../process/demands.md) | Yes | Yes | Yes | Yes | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
 | [Dependencies](../process/stages.md) | Yes | Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
 | [Deployment groups](../release/deployment-groups/index.md) | No | Yes | No | Yes | Defines a logical set of deployment target machines. | 
 | [Deployment group jobs](../process/deployment-group-phases.md)| No | Yes | No | Yes | Specifies a job to release to a deployment group. | 
@@ -107,14 +107,14 @@ Certain pipeline features are only available when defining build or release pipe
 | [Environment](../process/environments.md) | No | Yes | Yes | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
 | [Gates](../release/approvals/gates.md) | No | Yes | Yes | No  | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
 | [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
-| [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Yes | A connection to a remote service required to execute tasks in a job.   |
+| [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
 | [Service containers](../process/service-containers.md) | Yes |Yes  | Yes |No  |Enables you to manage the lifecycle of a containerized service.   |
 | [Stages](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Organizes jobs within a pipeline. |
 | [Task groups](../library/task-groups.md) | Yes | Yes | No | Yes | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
 | [Tasks](../process/tasks.md) | Yes | Yes | Yes | Yes |  Defines the building blocks that make up a pipeline.  |
 | [Templates](../process/templates.md) | Yes | Yes | Yes | No | Defines reusable content, logic, and parameters.   |
 | [Triggers](../build/triggers.md) | Yes |Yes  | Yes |Yes  |Defines the event that causes a pipeline to run.  |
-| [Variables](../process/variables.md) | Yes | Yes | Yes | Yes |A value that represents data to be passed to the pipeline.    |
+| [Variables](../process/variables.md) | Yes | Yes | Yes | Yes |Represents a value to be replaced by data to pass to the pipeline.    |
 | [Variable groups](../library/variable-groups.md) | Yes | Yes | Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
 
 ## Try this next
