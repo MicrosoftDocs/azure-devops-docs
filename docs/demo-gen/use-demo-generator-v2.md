@@ -19,6 +19,9 @@ ms.date: 10/10/2019
     > [!div class="mx-imgBorder"]
     > ![Image of Azure DevOps Demo Generator V2 login](media/homepage.png)
 
+    > [!div class="mx-imgBorder"]
+    > [![](media/homepage.png "Azure DevOps Demo Generator V2 login")](media/homepage.png#lightbox)
+
     > [!NOTE]
     > If you are a member of multiple tenants and the desired tenant isn't the selected one,
     > close your browser windows and then open a new browser and navigate to 
