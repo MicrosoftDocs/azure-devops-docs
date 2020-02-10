@@ -45,7 +45,7 @@ Continuous delivery automatically deploys and tests code in multiple stages to h
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>Run tests continually. |- Automatically deploy code to production.<br/>- Ensure deployment targets have latest code.<br/>- Use tested code from CI process.|
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>- Run tests continually. |- Automatically deploy code to production<br/>- Ensure deployment targets have latest code<br/>- Use tested code from CI process.|
 
 
 ## Define pipelines using YAML syntax
@@ -96,7 +96,10 @@ Your code is now updated, built, tested, and packaged. It can be deployed to any
 
 ## Feature availability 
 
-Certain pipeline features are only available when defining build or release pipelines, and some only when using YAML or Classic. The following table indicates which features are supported and for which tasks and methods. 
+::: moniker range=">= azure-devops-2019"
+
+Certain pipeline features are only available when using YAML or when defining build or release pipelines with the Classic interface. The following table indicates which features are supported and for which tasks and methods. 
+
 
 | Feature | YAML | Classic Build |  Classic Release |Notes| 
 |---------|---------|---------|---------|---------|---------|---------|
@@ -123,6 +126,37 @@ Certain pipeline features are only available when defining build or release pipe
 | [Triggers](../build/triggers.md) | Yes |Yes  | Yes   |Defines the event that causes a pipeline to run.  |
 | [Variables](../process/variables.md) | Yes | Yes | Yes | Represents a value to be replaced by data to pass to the pipeline.    |
 | [Variable groups](../library/variable-groups.md) | Yes | Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
+
+::: moniker-end
+
+
+
+::: moniker range="<= tfs-2018"
+
+TFS 2015 through TFS 2018 supports the Classic interface only. The following table indicates which pipeline features are available when defining build or release pipelines. 
+
+| Feature | Classic Build |  Classic Release |Notes| 
+|---------|---------|---------|---------|---------|---------|---------|
+| [Agents](../agents/agents.md) |  Yes | Yes |  Specifies a required resource on which the pipeline runs.|
+| [Approvals](../release/approvals/index.md) |  No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
+| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Supports publishing or consuming different package types. |
+| [Conditions](../process/conditions.md) | Yes | Yes | Specifies conditions to be met prior to running a job.     |
+| [Demands](../process/demands.md) | Yes | Yes | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
+| [Dependencies](../process/stages.md) | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
+| [Deployment groups](../release/deployment-groups/index.md) |  No | Yes | Defines a logical set of deployment target machines. | 
+| [Deployment group jobs](../process/deployment-group-phases.md)| No | Yes | Specifies a job to release to a deployment group. | 
+| [Jobs](key-pipelines-concepts.md) |  Yes | Yes | Defines the execution sequence of a set of steps.|
+| [Service connections](../library/service-endpoints.md) |  Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
+| [Stages](key-pipelines-concepts.md) |  No | Yes |Organizes jobs within a pipeline. |
+| [Task groups](../library/task-groups.md) | Yes  | Yes | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
+| [Tasks](../process/tasks.md) |  Yes | Yes | Defines the building blocks that make up a pipeline.  |
+| [Triggers](../build/triggers.md) | Yes  | Yes   |Defines the event that causes a pipeline to run.  |
+| [Variables](../process/variables.md) |  Yes | Yes | Represents a value to be replaced by data to pass to the pipeline.    |
+| [Variable groups](../library/variable-groups.md) |  Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
+
+::: moniker-end
+
+
 
 ## Try this next
 
