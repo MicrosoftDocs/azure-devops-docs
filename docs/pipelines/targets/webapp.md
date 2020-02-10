@@ -286,7 +286,8 @@ jobs:
   steps:
   # publish an artifact called drop
   - task: PublishBuildArtifacts@1
-    artifactName: drop
+    inputs:
+      artifactName: drop
 
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
