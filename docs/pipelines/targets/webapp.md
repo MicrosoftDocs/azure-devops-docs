@@ -10,7 +10,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 4/4/2019
+ms.date: 02/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -286,6 +286,7 @@ jobs:
   steps:
   # publish an artifact called drop
   - task: PublishBuildArtifacts@1
+    artifactName: drop
 
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
