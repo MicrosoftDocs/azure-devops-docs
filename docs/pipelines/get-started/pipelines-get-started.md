@@ -18,13 +18,20 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= azure-devops-2019"
 
-Azure Pipelines supports continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target. You accomplish this by defining a pipeline. You define pipelines using the YAML syntax or through the user interface (Classic). 
+Azure Pipelines supports continuous integration (CI) and continuous 
+delivery (CD) to constantly and consistently test and build your code 
+and ship it to any target. You accomplish this by defining a pipeline. 
+You define pipelines using the YAML syntax or through the user 
+interface (Classic). 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-Azure Pipelines supports continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target. You accomplish this by defining a pipeline using the user interface, also referred to as _Classic_. 
+Azure Pipelines supports continuous integration (CI) and continuous 
+delivery (CD) to constantly and consistently test and build your code 
+and ship it to any target. You accomplish this by defining a pipeline 
+using the user interface, also referred to as _Classic_. 
 
 ::: moniker-end
 
@@ -38,7 +45,7 @@ Continuous delivery automatically deploys and tests code in multiple stages to h
 
 | Continuous integration (CI)                         |  Continuous delivery (CD)                       |
 | ----------------------------------------------------|-------------------------------------------------|
-|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>Run tests continually. |-Automatically deploy code to production.<br/>- Ensure deployment targets have latest code.<br/>- Use tested code from CI process.|
+|- Increase code coverage<br/>- Build faster by splitting test and build runs<br/>- Automatically ensure you don't ship broken code<br/>Run tests continually. |- Automatically deploy code to production.<br/>- Ensure deployment targets have latest code.<br/>- Use tested code from CI process.|
 
 
 ## Define pipelines using YAML syntax
@@ -71,7 +78,7 @@ YAML pipelines aren't available in TFS 2018 and earlier versions.
 
 ## Define pipelines using the Classic interface 
  
-Create and configure pipelines in the [Azure DevOps Services web portal](https://dev.azure.com/) with the Classic user interface editor. 
+Create and configure pipelines in the Azure DevOps web portal with the Classic user interface editor. 
 You define a *build pipeline* to build and test your code, and then to publish artifacts. You also define a *release pipeline* to consume and deploy those artifacts to deployment targets.
 
 ![Pipelines designer intro image](../media/pipelines-image-designer.png)
@@ -91,31 +98,31 @@ Your code is now updated, built, tested, and packaged. It can be deployed to any
 
 Certain pipeline features are only available when defining build or release pipelines, and some only when using YAML or Classic. The following table indicates which features are supported and for which tasks and methods. 
 
-| Feature | Build | Release | YAML | Classic |  Notes| 
+| Feature | YAML | Classic Build |  Classic Release |Notes| 
 |---------|---------|---------|---------|---------|---------|---------|
-| [Agents](../agents/agents.md) | Yes | Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
-| [Approvals](../release/approvals/index.md) |  | Yes |  | Yes | Defines a set of validations required prior to completing a deployment stage. |
-| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Yes | Supports publishing or consuming different package types. |
-| [Caching](../caching/index.md) | Yes | Yes | Yes | No  | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
-| [Conditions](../process/conditions.md) | Yes | Yes | Yes | Yes | Specifies conditions to be met prior to running a job.     |
-| [Container jobs](../process/container-phases.md) | Yes | Yes | Yes | No | Specifies jobs to run in a container.  |
-| [Demands](../process/demands.md) | Yes | Yes | Yes | Yes | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
-| [Dependencies](../process/stages.md) | Yes | Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
-| [Deployment groups](../release/deployment-groups/index.md) | No | Yes | No | Yes | Defines a logical set of deployment target machines. | 
-| [Deployment group jobs](../process/deployment-group-phases.md)| No | Yes | No | Yes | Specifies a job to release to a deployment group. | 
-| [Deployment jobs](../process/deployment-group-phases.md) | No | Yes | Yes | No | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
-| [Environment](../process/environments.md) | No | Yes | Yes | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
-| [Gates](../release/approvals/gates.md) | No | Yes | Yes | No  | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
-| [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
-| [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
-| [Service containers](../process/service-containers.md) | Yes |Yes  | Yes |No  |Enables you to manage the lifecycle of a containerized service.   |
-| [Stages](key-pipelines-concepts.md) | Yes | Yes | Yes | Yes | Organizes jobs within a pipeline. |
-| [Task groups](../library/task-groups.md) | Yes | Yes | No | Yes | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
-| [Tasks](../process/tasks.md) | Yes | Yes | Yes | Yes |  Defines the building blocks that make up a pipeline.  |
-| [Templates](../process/templates.md) | Yes | Yes | Yes | No | Defines reusable content, logic, and parameters.   |
-| [Triggers](../build/triggers.md) | Yes |Yes  | Yes |Yes  |Defines the event that causes a pipeline to run.  |
-| [Variables](../process/variables.md) | Yes | Yes | Yes | Yes |Represents a value to be replaced by data to pass to the pipeline.    |
-| [Variable groups](../library/variable-groups.md) | Yes | Yes | Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
+| [Agents](../agents/agents.md) |  Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
+| [Approvals](../release/approvals/index.md) | Yes | No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
+| [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Supports publishing or consuming different package types. |
+| [Caching](../caching/index.md) | Yes | Yes | No  | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
+| [Conditions](../process/conditions.md) | Yes | Yes | Yes | Specifies conditions to be met prior to running a job.     |
+| [Container jobs](../process/container-phases.md) |  Yes | No | No | Specifies jobs to run in a container.  |
+| [Demands](../process/demands.md) |  Yes | Yes | Yes | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
+| [Dependencies](../process/stages.md) |  Yes | Yes | Yes | Specifies a requirement that must be met in order to run the next job or stage.  |
+| [Deployment groups](../release/deployment-groups/index.md) | Yes | No | Yes | Defines a logical set of deployment target machines. | 
+| [Deployment group jobs](../process/deployment-group-phases.md)|No | No | Yes | Specifies a job to release to a deployment group. | 
+| [Deployment jobs](../process/deployment-group-phases.md) | Yes | No |  No | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
+| [Environment](../process/environments.md) | Yes | No | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
+| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
+| [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
+| [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
+| [Service containers](../process/service-containers.md) | Yes |No | No  |Enables you to manage the lifecycle of a containerized service.   |
+| [Stages](key-pipelines-concepts.md) | Yes | No | Yes |Organizes jobs within a pipeline. |
+| [Task groups](../library/task-groups.md) | No | Yes  | Yes | Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.| 
+| [Tasks](../process/tasks.md) | Yes | Yes | Yes | Defines the building blocks that make up a pipeline.  |
+| [Templates](../process/templates.md) | Yes |  No | No | Defines reusable content, logic, and parameters.   |
+| [Triggers](../build/triggers.md) | Yes |Yes  | Yes   |Defines the event that causes a pipeline to run.  |
+| [Variables](../process/variables.md) | Yes | Yes | Yes | Represents a value to be replaced by data to pass to the pipeline.    |
+| [Variable groups](../library/variable-groups.md) | Yes | Yes | Yes | Use to store values that you want to control and make available across multiple pipelines.| 
 
 ## Try this next
 
