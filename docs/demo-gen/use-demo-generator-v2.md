@@ -12,7 +12,7 @@ ms.date: 10/10/2019
 
 # Get started creating and populating demo Azure DevOps Services projects
 
-1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by click the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
+1. Browse to the [Azure DevOps Demo Generator site](https://azuredevopsdemogenerator.azurewebsites.net/) by selecting the link, or copy `https://azuredevopsdemogenerator.azurewebsites.net/` into your browser's URL field.
 
 2. Click **Sign In** and provide the Microsoft or Azure AD account credentials associated with an organization in Azure DevOps Services. If you don't have an organization, click on **Get Started for Free** to create one and then log in with your credentials.
 
@@ -66,7 +66,7 @@ Next: [Learn how you can build your own template](build-your-own-template.md)
 ## Common Issues and workarounds:
 
 ### **Issue:** Error while creating release definition:
-Tasks with versions 'ARM Outputs:4.*' are not valid for deploy job 'Agent job' in stage Stage 1
+Tasks with versions `ARM Outputs:4.*` are not valid for deploy job `Agent job` in stage Stage 1
 
 **Cause:** This is usually caused by one of the third-party extensions not enabled or installed in your Azure DevOps org. Usually installation of extensions are quick but sometimes, it  can take a few minutes (or even hours!) for an extension to be available to use, after it is installed in the marketplace. 
 
