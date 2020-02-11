@@ -13,22 +13,30 @@ monikerRange: '>= tfs-2017'
 ms.date: 02/14/2020
 ---
 
-# View progress with the Feature Timeline 
+# View portfolio progress with the Feature Timeline 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 
 The Feature Timeline supports portfolio management by providing a progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
 
+Use the Feature Timeline to:
+
+- Support roadmap planning 
+- Produce reports at each business level to show high and low-level progress views
+- Adjust sprint assignments to child work items 
+
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
  
-[![Feature Timeline](media/feature-timeline/intro.png)](media/feature-timeline/intro-expanded.png#lightbox)
+[![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+
 
 ## Prerequisites
 
 - Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
-- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to. 
+- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
+- To modify work items, you must have permissions to edit work items under the area path they are assigned to.   
 
 ## Define your features and requirements
  
@@ -36,8 +44,10 @@ The Feature Timeline is designed to display features and the progress made to th
 
 To gain the most from the Feature Timeline view, make the following definitions:
 
-- Define teams to support the rollup of their work into features and epics. 
-- Define sprints with dates for the project. Select sprints for the team. To learn how, see 
+- Define teams and area paths to support the rollup of the team's work into features and epics. 
+- Define sprints with dates for the project. Select sprints for the team.  
+	> [!NOTE]   
+	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display in the Feature Timeline view.  
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
 - When child work items are defined, assign the child items to sprints. 
 - To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
@@ -48,7 +58,6 @@ To learn more, review the following articles:
 - [Define area paths & assign to a team](../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../organizations/settings/set-iteration-paths-sprints.md)  
 
-
 ## Open Boards or Backlogs 
 
 You can access the Feature Timeline from either your team's Kanban board or backlog. 
@@ -58,7 +67,8 @@ Here we open Boards.
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
-	![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile-s155.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile-s155.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -71,7 +81,8 @@ Here we open Boards.
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
-	![Open your Kanban board](../boards/boards/media/quickstart/open-kanban-board-agile.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Open your Kanban board](../boards/boards/media/quickstart/open-kanban-board-agile.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -85,11 +96,13 @@ Here we open Boards.
 
 1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
 
-	![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
 
 	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
 
-	![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
 
 1. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
 
@@ -98,18 +111,19 @@ Here we open Boards.
 
    Your Kanban board appears. 
 	  
-   ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
+	> [!div class="mx-imgBorder"]  
+	> ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
 
 ::: moniker-end   
 
 ## Open the Feature Timeline
 
-1. Choose **Feature Timeline**. 
+Choose **Feature Timeline**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose Feature Timeline from Azure Boards](media/feature-timeline/choose-feature-timeline.png)
- 
+> [!div class="mx-imgBorder"]  
+> ![Choose Feature Timeline from Azure Boards](media/feature-timeline/choose-feature-timeline.png)
 
+If you don't see the **Feature Timeline** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
 <a id="customize" /> 
 
@@ -127,21 +141,40 @@ You can customize your view of the Feature Timeline with the controls shown in t
 - **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 - **Closed Features**: Filters the Features based on those closed within the selected time frame. 
 
- 
+> [!NOTE]  
+> The 
+
 
 
 <a id="drill-down" /> 
 
-## Drill-down into a feature 
+## Drill-down and change Start and End iterations 
  
- 
- 
+1. To view the requirements linked to a feature, choose the ![ ](../media/icons/info.png) info icon for that feature. 
 
-<a id="configuration" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
 
-## Configure  
- 
- 
+	A dialog opens showing the child items of the feature. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Feature Timeline controls](media/feature-timeline/drill-down-2.png)
+
+	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
+
+1.	Or, you can also drag and drop a child item to a new iteration. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Feature Timeline controls](media/feature-timeline/drill-down-3.png)
+
+::: moniker range="azure-devops"
+
+## Plan Features 
+
+
+
+::: moniker-end
+
 
 ## Related articles
 
