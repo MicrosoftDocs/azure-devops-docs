@@ -28,9 +28,9 @@ Use the Feature Timeline to support the following tasks:
 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
- 
-> [!div class="mx-imgBorder"]  
-> ![![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+
+*To see the full image, click to expand*.  
+![![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
 
 
 ## Prerequisites
@@ -58,10 +58,10 @@ To gain the most from the Feature Timeline view, make the following definitions:
 > [!TIP]   
 > To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
-To learn more, review the following articles: 
-- [Configuration and customization of Azure Boards](../configure-customize.md) 
-- [Define area paths & assign to a team](../organizations/settings/set-area-paths.md)  
-- [Define iteration paths (sprints) & assign team iterations ](../organizations/settings/set-iteration-paths-sprints.md)  
+To learn more, review the following articles:  
+- [Configuration and customization of Azure Boards](../configure-customize.md)  
+- [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
+- [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
 
 ## Open Boards or Backlogs 
 
@@ -87,7 +87,7 @@ Here we open Boards.
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open your Kanban board](../boards/boards/media/quickstart/open-kanban-board-agile.png)  
+	> ![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile.png)  
 
 	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -134,11 +134,10 @@ If you don't see the **Feature Timeline** link, then the [Feature Timeline and E
 
 ## Customize your view
 
-You can customize your view of the Feature Timeline with the controls shown in the following image: 
+You can customize your view of the Feature Timeline with the controls shown in the following image:
 
 > [!div class="mx-imgBorder"]  
-> ![Feature Timeline controls](media/feature-timeline/controls.png)
-
+> ![Feature Timeline controls](media/feature-timeline/controls.png)  
 
 - **View Sprints**: Enter the number of iterations to show  
 - **Plan Features**: Opens a side panel of additional features participating in a Portfolio Plan. 
@@ -147,7 +146,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 - **Closed Features**: Filters the Features based on those closed within the selected time frame. 
 
 > [!NOTE]  
-> The 
+> The Plan Features is in Preview and available for Azure DevOps Services only at this time. Use of this feature integrates with 
 
 
 
