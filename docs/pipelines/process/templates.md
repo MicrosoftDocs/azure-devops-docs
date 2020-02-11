@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 01/10/2020
+ms.date: 02/11/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -307,15 +307,14 @@ steps:
 ```
 
 > [!Note]
-> Scalar parameters are always treated as strings.
-> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
+> Scalar parameters without a specified type are treated as strings.
+> For example, `eq(parameters['myparam'], true)` will return `true`, even if the `myparam` parameter is the word `false`, if `myparam` is not explicitly made `boolean`.
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
 Parameters are not limited to scalar strings.
-As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
-Likewise, sequences can be passed where sequences are expected.
-For example:
+See the list of [data types](#parameter-data-types).
+For example, using the `object` type:
 
 ```yaml
 # azure-pipelines.yml
