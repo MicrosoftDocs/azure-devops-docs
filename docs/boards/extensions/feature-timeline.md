@@ -1,7 +1,7 @@
 ---
 title: Sprint calendar view of features and epics
 titleSuffix: Azure DevOps
-description: Learn how to work with a calendar view of features and epics 
+description: Learn how to manage portfolios with a calendar view of features and epics  
 ms.custom: extensions
 ms.technology: devops-agile
 ms.prod: devops
@@ -18,18 +18,36 @@ ms.date: 02/14/2020
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 
-View the progress of features grouped by their epic parents using the Feature Timeline extension. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
+The Feature Timeline supports portfolio management by providing a progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
  
-[![](media/feature-timeline/intro.png "Feature Timeline")](media/feature-timeline/intro-expanded.png#lightbox)
-
-
+[![Feature Timeline](media/feature-timeline/intro.png)](media/feature-timeline/intro-expanded.png#lightbox)
 
 ## Prerequisites
 
-- Innstall the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
+- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
+- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to. 
+
+## Define your features and requirements
+ 
+The Feature Timeline is designed to display features and the progress made to their child requirements. The Feature Timeline displays features grouped under epics when they are linked to parent epics. Ungrouped features appear at the bottom of the view. 
+
+To gain the most from the Feature Timeline view, make the following definitions:
+
+- Define teams to support the rollup of their work into features and epics. 
+- Define sprints with dates for the project. Select sprints for the team. To learn how, see 
+- Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
+- When child work items are defined, assign the child items to sprints. 
+- To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
+- Once all child requirements are completed, close the parent feature.  
+
+To learn more, review the following articles: 
+- [Configuration and customization of Azure Boards](../configure-customize.md) 
+- [Define area paths & assign to a team](../organizations/settings/set-area-paths.md)  
+- [Define iteration paths (sprints) & assign team iterations ](../organizations/settings/set-iteration-paths-sprints.md)  
+
 
 ## Open Boards or Backlogs 
 
@@ -114,10 +132,8 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 <a id="drill-down" /> 
 
-## Drill-down options 
+## Drill-down into a feature 
  
-
-## Create a dependency 
  
  
 
