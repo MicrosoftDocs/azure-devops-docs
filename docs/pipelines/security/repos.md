@@ -68,4 +68,6 @@ By keeping the YAML file in a separate repository, you can prevent unapproved co
 This can apply to a public project (with a separate private repo) as well as a non-public project.
 -->
 
-Additional protections can be found in checks on [protected resources](resources.md).
+## Next steps
+
+Next, learn about the additional protection offered by checks on [protected resources](resources.md).

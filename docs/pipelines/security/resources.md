@@ -90,4 +90,6 @@ For instance, your logic could ensure that the code has been reviewed by a certa
 
 ![Screenshot of configuring checks](media/configure-checks.png)
 
-Also consider [project structure](projects.md), which deals in how you group resources.
+## Next steps
+
+Next, consider how you group resources into a [project structure](projects.md).
