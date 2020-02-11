@@ -34,56 +34,10 @@ The Bash task also has a shortcut syntax in YAML:
   failOnStderr: #
   env:  # mapping of environment variables to add
 ```
+
 ::: moniker-end
 
 ## Arguments
-
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Type</td><td>Sets whether this is an inline script or a path to a .sh file</td></tr>
-<tr><td>File path</td><td>Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory). Required if Type is <code>filePath</code>.</td></tr>
-<tr><td>Arguments</td><td>Arguments passed to the Bash script.</td></tr>
-<tr><td>Script</td><td>Contents of the script. Required if Type is <code>inline</code></td></tr>
-<tr><td>Working Directory</td><td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</td></tr>
-<tr>
-<td>Fail on standard error</td>
-<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
-</tr>
-<tr>
-<td>Don't load the profile/initialization files</td>
-<td>If this is <code>true</code>, the task will skip loading the system-wide startup file <code>/etc/profile</code> and any user-level profile initialization files.</td>
-</tr>
-<tr>
-<td>Don't read the <code>~/.bashrc</code> file</td>
-<td>If this is <code>true</code>, the task will not process <code>.bashrc</code> from the user's home directory.</td>
-</tr>
-<tr>
-<td>Environment variables</td>
-<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-<pre><code class="lang-yaml">
-steps:
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: echo $MYSECRET
-    env:
-      MySecret: $(Foo)
-</code></pre>
-<br/><br/>This is equivalent to:<br/><br/>
-<pre><code class="lang-yaml">
-steps:
-  - script: echo $MYSECRET
-    env:
-      MySecret: $(Foo)
-</code></pre>
-</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
 
 |Argument|Description|
 |--- |--- |
@@ -91,11 +45,11 @@ steps:
 |`filePath`<br/>Script Path|(Required) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).|
 |`arguments`<br/>Arguments|(Optional) Arguments passed to the Bash script. Arguments passed to the shell script. Either ordinal parameters or named parameters|
 |`script`<br/>Script|(Required, if Type is inline) Contents of the script <br/>Default value: `"# Write your commands here\n\necho 'Hello world'\n"`|
-|`workingDirectory`<br/>Working Directory| (Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is $(Build.SourcesDirectory)|
+|`workingDirectory`<br/>Working Directory| (Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md)|
 |`failOnStderr`<br/>Fail on standard error|(Optional) If this is true, this task will fail if any errors are written to stderr. <br/>Default value: `true`|
 |`noProfile`<br/>Don't load the system-wide startup/initialization files|(Optional) Don't load the system-wide startup file **`/etc/profile'** or any of the personal initialization files|
-|`noRc`<br/>Don't read the ~/.bashrc file|(Optional) If this is true, the task will not process `.bashrc` from the user's home directory.<br/>Default value: true|
-|Environment variables|A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in like this: 
+|`noRc`<br/>Don't read the ~/.bashrc file|(Optional) If this is true, the task will not process **`.bashrc`** from the user's home directory.<br/>Default value: true|
+|`env`<br/>Environment variables| (Optional) A list of additional items to map into the process's environment.<br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in like this:
 
 ```YAML
 steps:
