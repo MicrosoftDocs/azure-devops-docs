@@ -1,5 +1,5 @@
 ---
-title: Deploy a Azure Pipelines agent on Windows
+title: Deploy an Azure Pipelines agent on Windows
 ms.custom: seodec18
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
