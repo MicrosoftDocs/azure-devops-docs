@@ -20,16 +20,17 @@ ms.date: 02/14/2020
 
 The Feature Timeline supports portfolio management by providing a progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
 
-Use the Feature Timeline to:
+Use the Feature Timeline to support the following tasks: 
 
-- Support roadmap planning 
-- Produce reports at each business level to show high and low-level progress views
-- Adjust sprint assignments to child work items 
+- Support roadmap planning  
+- Produce reports at each business level to show high and low-level progress views  
+- Adjust sprint assignments to child work items  
 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
  
-[![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+> [!div class="mx-imgBorder"]  
+> ![![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
 
 
 ## Prerequisites
@@ -52,6 +53,10 @@ To gain the most from the Feature Timeline view, make the following definitions:
 - When child work items are defined, assign the child items to sprints. 
 - To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
 - Once all child requirements are completed, close the parent feature.  
+
+
+> [!TIP]   
+> To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
 To learn more, review the following articles: 
 - [Configuration and customization of Azure Boards](../configure-customize.md) 
