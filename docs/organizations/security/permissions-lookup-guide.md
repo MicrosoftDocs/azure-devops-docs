@@ -123,7 +123,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit project-level information (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release state (Object)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>Edit shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">Edit shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit shared Analytics views (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit task group (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">Edit this node (Area Path, Object)</a></li>
@@ -236,7 +236,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/permissions.md">View releases (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View instance-level information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View project-level information (Project)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>View shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">View shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View system synchronization information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View test runs (Project)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
@@ -363,7 +363,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit project-level information (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release state (Object)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>Edit shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">Edit shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit shared Analytics views (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit task group (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">Edit this node (Area Path, Object)</a></li>
@@ -479,7 +479,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#collection-level">View instance-level information (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">View instance level information (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View project-level information (Project)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>View shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">View shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View system synchronization information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View test runs (Project)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
