@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 08/22/2019
+ms.date: 02/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -61,44 +61,16 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Script</td>
-<td>Contents of the script you want to run</td>
-</tr>
-<tr>
-<th colspan="2">Optional</th>
-</tr>
-<tr>
-<td>Working directory</td>
-<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</td>
-</tr>
-<tr>
-<td>Fail on standard error</td>
-<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
-</tr>
-<tr>
-<td>Environment variables</td>
-<td>A list of additional items to map into the process&#39;s environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+|Argument|Description|
+|--- |--- |
+|`script`<br/>Script|(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`|
+|`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
+|`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
+|`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in like this: <br/>
 <pre>yaml
 - script: echo %MYSECRET%
   env:
-    MySecret: $(Foo)</pre>
-</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+    MySecret: $(Foo)</pre>|
 
 ## Example
 
