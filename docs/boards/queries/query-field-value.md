@@ -80,7 +80,7 @@ The following table provides an index to those fields that support field compari
 <tr>
 <td width="33%"><h3>A</h3>
 <ul>
-<li><a href="titles-ids-descriptions.md>Acceptance Criteria</a> (Scrum)</li>
+<li><a href="titles-ids-descriptions.md">Acceptance Criteria</a> (Scrum)</li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted By</a> </li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted Date</a></li>
 <li><a href="query-by-workflow-changes.md">Activated By</a></li>
