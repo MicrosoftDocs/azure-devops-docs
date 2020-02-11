@@ -24,7 +24,10 @@ View the progress of features grouped by their epic parents using the Feature Ti
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
  
 > [!div class="mx-imgBorder"]  
-> ![Feature Timeline overview](media/feature-timeline/intro.png)
+> [![](media/feature-timeline/intro.png "Feature Timeline")](media/feature-timeline/intro-expanded.png#lightbox)
+
+
+## Customize your view
 
 You can customize your view of the Feature Timeline with the controls shown in the following image: 
 
