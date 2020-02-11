@@ -55,7 +55,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
   - pipeline: string  # identifier for the resource used in pipeline resource variables
     connection: string  # service connection for pipelines from other Azure DevOps organizations
     project: string # project for the source; optional for current project
-    source: string  # name of the pipeline in the Azure Pipelines UI
+    source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to all branches
     tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
@@ -72,8 +72,8 @@ If you need to consume artifacts from an Azure pipeline within the current proje
 ```yaml
 resources:
   pipelines:
-  - pipeline: SmartHotel-resource # identifier for the resource used in pipeline resource variables
-    source: SmartHotel-CI # name of the pipeline in the Azure Pipelines UI
+  - pipeline: SmartHotel-resource # identifier for the resource (used in pipeline resource variables)
+    source: SmartHotel-CI # name of the pipeline that produces an artifact
 ```
 
 If you need to consume a pipeline from other project, then you need to include the project name while providing source name.
