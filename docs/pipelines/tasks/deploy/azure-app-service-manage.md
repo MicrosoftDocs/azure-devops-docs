@@ -57,6 +57,9 @@ When you swap two slots (usually from a staging slot into the production slot), 
 Also at any point of the swap (or swap with preview) operation, all work of initializing the swapped apps happens on the source slot. The target slot remains online while the source slot is being prepared and warmed up, regardless of where the swap succeeds or fails. 
 Please refer to [Set up staging environments in Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots#AboutConfiguration) for more details.
 
+## Note about slots and performance
+When you use a slot in Azure App service the resources are shared with other slots so be aware than high impact load testing the Test slot could impact performance on a Production slot.
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
