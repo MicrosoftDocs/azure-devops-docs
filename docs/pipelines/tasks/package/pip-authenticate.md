@@ -43,7 +43,7 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 In this example, we are setting authentication for downloading from private Azure Artifacts feeds. The authenticate task creates environment variables `PIP_INDEX_URL` and `PIP_EXTRA_INDEX_URL` that are required to download the distributions. The task sets the variables with auth credentials the task generates for the provided Artifacts feeds. 'HelloTestPackage' has to be present in either 'myTestFeed1' or 'myTestFeed2', otherwise install will fail hard. 
 
-Note that for project scoped feeds that are in a different project than where the pipeline is running in, you must manually give the project and the feed access to the pipeline's project's build service.
+For project scoped feeds that are in a different project than where the pipeline is running in, you must manually give the project and the feed access to the pipeline's project's build service.
 
 ```YAML
 - task: PipAuthenticate@1

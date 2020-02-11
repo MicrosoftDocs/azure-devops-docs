@@ -94,7 +94,7 @@ Organization scoped feed
  </repository>
 ```
 
-Note that the Artifacts feed URL may or may not contain the project. An URL for a project scoped feed must contain the project and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
+The Artifacts feed URL may or may not contain the project. An URL for a project scoped feed must contain the project and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Authenticate Maven feeds outside your organization.
 

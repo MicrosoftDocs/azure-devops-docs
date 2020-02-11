@@ -69,7 +69,7 @@ registry=https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feed}/n
 @{otherscope}:registry=https://{thirdPartyRepository}/npm/registry/
 always-auth=true
 ```
-Note that the registry URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and the URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
+The registry URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and the URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 #### npm
 ```YAML
@@ -81,8 +81,7 @@ Note that the registry URL pointing to an Azure Artifacts feed may or may not co
 # ...
 - script: npm publish -registry https://pkgs.dev.azure.com/{otherorganization}/_packaging/{feed}/npm/registry/
 ```
-where `OtherOrganizationNpmConnection` and `ThirdPartyRepositoryNpmConnection` are the names of <a href="~/pipelines/library/service-endpoints.md#sep-npm">npm service connections</a> that have been configured and authorized for use in your pipeline, and have URLs that match those in the specified .npmrc file.
-
+`OtherOrganizationNpmConnection` and `ThirdPartyRepositoryNpmConnection` are the names of <a href="~/pipelines/library/service-endpoints.md#sep-npm">npm service connections</a> that have been configured and authorized for use in your pipeline, and have URLs that match those in the specified .npmrc file.
 
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions">Control options</a></th>
@@ -122,7 +121,7 @@ This task will only add authentication details to one .npmrc file at a time. If 
 
 ### My agent is behind a web proxy. Will npmAuthenticate set up npm/gulp/Grunt to use my proxy?
 
-No. While this task itself will work behind a web proxy <a href="~/pipelines/agents/proxy.md">your agent has been configured to use</a>, it does not configure npm or npm task runners to use the proxy.
+The answer is no. While this task itself will work behind a web proxy <a href="~/pipelines/agents/proxy.md">your agent has been configured to use</a>, it does not configure npm or npm task runners to use the proxy.
 
 To do so, you can either: 
 * Set the environment variables `http_proxy`/`https_proxy` and optionally `no_proxy` to your proxy settings. See [npm config](https://docs.npmjs.com/misc/config#https-proxy) for details. Note that these are commonly used variables which other non-npm tools (e.g. curl) may also use.
