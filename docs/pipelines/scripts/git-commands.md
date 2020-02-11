@@ -78,8 +78,8 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 
 * **Create branch:**  Allow
 * **Contribute:**  Allow
-* **Read:**  Allow (system)
-* **Create tag:**  Allow (system)
+* **Read:**  Allow
+* **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
