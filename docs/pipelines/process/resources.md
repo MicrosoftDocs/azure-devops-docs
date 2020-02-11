@@ -116,7 +116,7 @@ resources:
 
 ### Default branch for triggers
 Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
-1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose 'Triggers'.
+1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose **Triggers**.
 ![Commits in pipeline run](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
 1. Now you can set the default branch for your pipeline.
