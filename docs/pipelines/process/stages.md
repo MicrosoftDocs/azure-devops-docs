@@ -248,7 +248,7 @@ You can specify the conditions under which each stage runs. By default, a stage 
 
 > [!NOTE]
 >
-> Conditions for failed('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as in the following example will only work for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
 
 
 #### [YAML](#tab/yaml/)
