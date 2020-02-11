@@ -23,9 +23,77 @@ View the progress of features grouped by their epic parents using the Feature Ti
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
  
-> [!div class="mx-imgBorder"]  
-> [![](media/feature-timeline/intro.png "Feature Timeline")](media/feature-timeline/intro-expanded.png#lightbox)
+[![](media/feature-timeline/intro.png "Feature Timeline")](media/feature-timeline/intro-expanded.png#lightbox)
 
+
+
+## Prerequisites
+
+- Innstall the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
+
+## Open Boards or Backlogs 
+
+You can access the Feature Timeline from either your team's Kanban board or backlog. 
+Here we open Boards. 
+
+::: moniker range="azure-devops"
+
+1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
+
+	![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile-s155.png)  
+
+	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Select another team's board](../boards/media/quickstart/select-kanban-team-board.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
+
+	![Open your Kanban board](../boards/boards/media/quickstart/open-kanban-board-agile.png)  
+
+	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Select another team's board](../boards/media/quickstart/select-kanban-team-board.png) 
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
+
+	![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
+
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+
+	![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
+
+1. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
+
+   > [!div class="mx-imgBorder"]  
+   > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png)  
+
+   Your Kanban board appears. 
+	  
+   ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
+
+::: moniker-end   
+
+## Open the Feature Timeline
+
+1. Choose **Feature Timeline**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Feature Timeline from Azure Boards](media/feature-timeline/choose-feature-timeline.png)
+ 
+
+
+<a id="customize" /> 
 
 ## Customize your view
 
@@ -41,28 +109,6 @@ You can customize your view of the Feature Timeline with the controls shown in t
 - **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 - **Closed Features**: Filters the Features based on those closed within the selected time frame. 
 
-
-
-## Prerequisites
-
-- Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
-
-## Open the Feature Timeline
-
-1. Open the web portal for the project where your team is defined.  
-
-1. Open **Boards** or **Backlogs** for your team. 
-
-2. Choose **Feature Timeline**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose Feature Timeline from Azure Boards](media/feature-timeline/choose-feature-timeline.png)
- 
-
-
-<a id="filter" /> 
-
-## Filter options 
  
 
 
