@@ -115,7 +115,7 @@ resources:
 > But if the pipeline resource is from a different repo, the current pipeline is triggered on the default branch.
 
 ### Default branch for triggers
-The triggers for resources are created based on the configuration from default branch of the CD YAML which is master. However, if you like to configure the resource triggers from a different branch, you need to change the default branch for the pipeline. 
+Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
 1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose 'Triggers'.
 ![Commits in pipeline run](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
@@ -399,4 +399,3 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
-
