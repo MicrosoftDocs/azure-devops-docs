@@ -551,7 +551,7 @@ The following scenarios won’t consume a parallel job:
 * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
-The following
+Jobs may not run due to the following reasons.
 
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
@@ -567,15 +567,15 @@ Learn more:
  
 To check how much concurrency you have:
 
-1. Navigate to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`
+1. To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
-    This page can also be accessed from the logs by choosing the manage parallel jobs link.
+    ![Concurrent pipeline limits](media/troubleshooting/concurrent-pipeline-limits.png)
+
+    You can also reach this page by navigating to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`, or choosing **manage parallel jobs** from the logs.
 
     ![Manage parallel jobs](media/troubleshooting/manage-parallel-jobs.png)  
         
 2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
-
-    ![Concurrent pipeline limits](media/troubleshooting/concurrent-pipeline-limits.png)
 
 3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
 
