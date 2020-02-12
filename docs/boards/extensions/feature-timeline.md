@@ -18,7 +18,7 @@ ms.date: 02/14/2020
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 
-The Feature Timeline supports portfolio management by providing a progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
+The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
 
 Use the Feature Timeline to support the following tasks: 
 
@@ -30,7 +30,8 @@ Use the Feature Timeline to support the following tasks:
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 *To see the full image, click to expand*.  
-![![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+
+[![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
 
 
 ## Prerequisites
@@ -146,7 +147,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 - **Closed Features**: Filters the Features based on those closed within the selected time frame. 
 
 > [!NOTE]  
-> The Plan Features is in Preview and available for Azure DevOps Services only at this time. Use of this feature integrates with 
+> The Plan Features is in preview and available for Azure DevOps Services only at this time. Use of this feature integrates with Portfolio plans. 
 
 
 
@@ -171,18 +172,9 @@ You can customize your view of the Feature Timeline with the controls shown in t
 	> [!div class="mx-imgBorder"]  
 	> ![Feature Timeline controls](media/feature-timeline/drill-down-3.png)
 
-::: moniker range="azure-devops"
-
-## Plan Features 
-
-
-
-::: moniker-end
-
 
 ## Related articles
 
-- [Work item field index](..//work-items/guidance/work-item-field.md)
 - [Review team delivery plans](../plans/review-team-plans.md)
 - [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
 - [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
