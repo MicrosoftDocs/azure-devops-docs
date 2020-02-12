@@ -67,7 +67,7 @@ This is equivalent to:
 steps:
   - script: echo $MYSECRET
     env:
-      MySecret: $(Foo)|
+      MySecret: $(Foo)
 ```
 
 ## Open source
