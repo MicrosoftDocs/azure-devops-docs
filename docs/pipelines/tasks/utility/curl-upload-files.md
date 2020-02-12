@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 02/12/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -34,63 +34,17 @@ curl
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Files</td>
-<td>
-<p>If you want to upload a single file, click the <strong>...</strong> button and select the file.</p>
-<p>If you want to upload multiple files, specify a minimatch pattern filter. For example, specify <code>***.zip</code> to upload all ZIP files in all sub-folders.</p>
-</td>
-</tr>
-<tr>
-<td>Username</td>
-<td>
-Specify the username for server authentication.
-</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>
-<p>Specify the password for server authentication.</p>
-<blockquote><strong>Important: </strong> Use a <a href="../../build/variables.md" data-raw-source="[secret variable](../../build/variables.md)">secret variable</a> to avoid exposing this value.</blockquote>
-</td>
-</tr>
-<tr>
-<td>URL</td>
-<td>
-<p>URL to the location where you want to upload the files. If you are uploading to a folder, make sure to end the argument with a trailing slash.</p>
-<p>Acceptable URL protocols include <code>DICT://</code>, <code>FILE://</code>, <code>FTP://</code>, <code>FTPS://</code>, <code>GOPHER://</code>, <code>HTTP://</code>, <code>HTTPS://</code>, <code>IMAP://</code>, <code>IMAPS://</code>, <code>LDAP://</code>, <code>LDAPS://</code>, <code>POP3://</code>, <code>POP3S://</code>, <code>RTMP://</code>, <code>RTSP://</code>, <code>SCP://</code>, <code>SFTP://</code>, <code>SMTP://</code>, <code>SMTPS://</code>, <code>TELNET://</code>, and <code>TFTP://</code>.</p>
-</td>
-</tr>
-<tr>
-<td>Optional Arguments</td>
-<td>
-Arguments to pass to cURL.
-</td>
-</tr>
-<tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Redirect Standard Error to Standard Out</td>
-<td>
-<p>In most cases you should leave this selected.</p>
-<p>Select if you want to add <strong>--stderr -</strong> as an argument to cURL. Otherwise, if you clear this check box, cURL will write its progress bar to stderr, which is interpreted by the build pipeline as error output, which could cause the build to fail.</p>
-</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`files`<br/>Files|(Required) File(s) to be uploaded. Wildcards can be used. <br/>For example, **`**/*.zip`** for all ZIP files in all subfolders|
+|authType<br/>Authentication Method| Default value: `ServiceEndpoint`|
+|`serviceEndpoint`<br/>Service Connection| (Required) The service connection with the credentials for the server authentication. <br/>Use the Generic service connection type for the service connection| 
+|`username`<br/>Username|(Optional) Specify the username for server authentication.|
+|`password`<br/>Password|(Optional) Specify the password for server authentication. <br/>**Important**: Use a [secret variable](../../build/variables.md) to avoid exposing this value|
+|`url`<br/>URL|(Required) URL to the location where you want to upload the files. <br/>If you are uploading to a folder, make sure to end the argument with a trailing slash. <br/><br/>Acceptable URL protocols include `DICT://, FILE://, FTP://, FTPS://, GOPHER://, HTTP://, HTTPS://, IMAP://, IMAPS://, LDAP://, LDAPS://, POP3://, POP3S://, RTMP://, RTSP://, SCP://, SFTP://, SMTP://, SMTPS://, TELNET://,` and `TFTP://`|
+|`remotePath`<br/>Remote Directory|(Optional) If supplied, this is the sub-folder on the remote server for the URL supplied in the credentials <br/>Default value: `upload/$(Build.BuildId)/`|
+|`options`<br/>Optional Arguments|(Optional) Arguments to pass to cURL.|
+|`redirectStderr`<br/>Redirect Standard Error to Standard Out|Adds **`--stderr -`** as an argument to cURL. By default, cURL writes its progress bar to stderr, which is interpreted by the build as error output. Enabling this checkbox suppresses that behavior <br/>Default value: `true`|
 
 ## Open source
 
