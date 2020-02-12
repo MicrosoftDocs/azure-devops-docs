@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 02/12/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -33,11 +33,9 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ## Arguments
 
-| Parameter | Comments |
+| Arguments | Description |
 | --- | --- |
-| **Display name** | Required. The name to display for this task. |
-| **Delay Time (minutes)** | Required. The number of minutes to delay execution. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+| `delayForMinutes`<br/>Delay Time (minutes)| (Required) Delay the execution of the workflow by specified time in minutes. <br/>0 value means that workflow execution will start without delay <br/>Default value: `0`|
 
 Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DelayV1).
 
