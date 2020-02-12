@@ -370,6 +370,7 @@ You can put the template in a core repo and then refer to it from each of your a
 parameters:
 - name: 'vmImage'
   default: 'ubuntu 16.04'
+  type: string
 
 jobs:
 - job: Build
@@ -455,6 +456,7 @@ For example, you define a template:
 parameters:
 - name: 'solution'
   default: '**/*.sln'
+  type: string
 
 steps:
 - task: msbuild@1
@@ -496,6 +498,7 @@ Here's an example that checks for the `solution` parameter using Bash (which ena
 parameters:
 - name: 'solution'
   default: ''
+  type: string
 
 steps:
 - bash: |
@@ -544,8 +547,10 @@ You can use [general functions](expressions.md#functions) in your templates. You
 parameters:
 - name: 'restoreProjects'
   default: ''
+  type: string
 - name: 'buildProjects'
   default: ''
+  type: string
 
 steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
@@ -638,6 +643,7 @@ For example, to insert into a sequence:
 parameters:
 - name: 'toolset'
   default: msbuild
+  type: string
   values:
   - msbuild
   - dotnet
