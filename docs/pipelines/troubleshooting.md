@@ -545,7 +545,7 @@ To troubleshoot issues related to service connections, see [Service Connection t
 
 ### Parallel jobs not running
 
-There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, the releases still sit in queue and run one after the other.
+There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, your runs still sit in queue and run one after the other.
 
 The following scenarios won’t consume a parallel job:
 * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
@@ -589,7 +589,7 @@ Your pipeline may not move to the next stage because it is waiting on approval. 
  
 Jobs may wait if all your agents are currently busy. To check your agents:
 1. Navigate to `https://dev.azure.com/{org}/_settings/agentpools`
-2. Select the agent pool to check, in this example **FabrikamPool**.
+2. Select the agent pool to check, in this example **FabrikamPool**, and choose **Agents**.
 
     ![Agent status](media/troubleshooting/agents-online.png)
 a.	This will show all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
