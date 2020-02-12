@@ -39,10 +39,10 @@ Use this task in a build or release pipeline to download build artifacts.
 |`allowPartiallySucceededBuilds`<br/>Download artifacts even from partially succeeded builds|(Optional) If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded <br/>Default value: `false`|
 |`branchName`<br/>Branch name|(Required) Specify to filter on branch/ref name. <br/>Default value: `refs/heads/develop`|
 |`buildId`<br/>Build|(Required) The build from which to download the artifacts|
-|`tags`<br/>Build Tags|(Optional) A comma-delimited list of tags. Only builds with these tags will be returned.|
+|`tags`<br/>Build tags|(Optional) A comma-delimited list of tags. Only builds with these tags will be returned.|
 |`downloadType`<br/>Download type|(Required) Choose whether to download a single artifact or all artifacts of a specific build. <br/>Default value: `single`|
 |`artifactName`<br/>Artifact name|(Required) The name of the artifact to download|
-|`itemPattern`<br/>Matching pattern|(Optional) Specify files to be downloaded as multi line minimatch pattern. [More Information](https://aka.ms/minimatchexamples).<br/> The default pattern  will download all files across all artifacts in the build if the **`Specific files`** option is selected. To download all files within an artifact drop use **`drop/`** <br/>Default value: `\*\*`|
+|`itemPattern`<br/>Matching pattern|(Optional) Specify files to be downloaded as multi-line minimatch pattern. [More Information](https://aka.ms/minimatchexamples).<br/> The default pattern  will download all files across all artifacts in the build if the **`Specific files`** option is selected. To download all files within an artifact drop use **`drop/`** <br/>Default value: `\*\*`|
 |`downloadPath`<br/>Destination directory|(Required) Path on the agent machine where the artifacts will be downloaded <br/>Default value: `$(System.ArtifactsDirectory)`|
 |`parallelizationLimit`<br/>Parallelization limit|(Optional) Number of files to download simultaneously <br/>Default value: `8`|
 
