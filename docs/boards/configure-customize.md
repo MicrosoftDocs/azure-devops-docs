@@ -447,7 +447,7 @@ Any change made to a process applied to a project impacts all teams in that proj
 Adding custom fields to a work item type doesn't impact any specific tool. The fields simply appear in the corresponding work items. If you add a custom numeric field, however, you can use it to support rollup on backlogs as well as the following reporting tools: 
 - [In-context Velocity report and dashboard widget](../report/dashboards/team-velocity.md)
 - [In-context Sprint Burndown report and dashboard widget](../report/dashboards/configure-sprint-burndown.md)
-- [Dashboard Burndown and Burnup widget](/report/dashboards/configure-burndown-burnup-widgets.md)
+- [Dashboard Burndown and Burnup widget](../report/dashboards/configure-burndown-burnup-widgets.md)
 
 > [!NOTE]   
 > All default and custom fields are shared across all projects in a collection or organization. There is a limit of 1024 fields that you can define for a process. 
@@ -499,7 +499,7 @@ Because process-level, project-level and team-level settings can have a wide imp
 
 ### Process-level changes 
 
-To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
+To create, edit, or manage Inherited processes and apply them to projects, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). Or, you must have  the corresponding permissions **Create process**, **Delete process**, **Edit process**, or **Delete a field from organization** set to **Allow**. See [Set permissions and access for work tracking, Customize an inherited process](/azure/devops/organizations/security/set-permissions-access-work-tracking?view=azure-devops-2019#customize-an-inherited-process).
 
 For additional information, see the following articles:  
 
