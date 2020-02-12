@@ -246,6 +246,11 @@ You control the dependencies by setting the triggers on each stage of the releas
 
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
 
+> [!NOTE]
+>
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+
+
 #### [YAML](#tab/yaml/)
 
 ::: moniker range="azure-devops"
