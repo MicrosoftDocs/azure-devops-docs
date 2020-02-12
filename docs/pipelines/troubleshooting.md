@@ -557,24 +557,27 @@ Learn more:
 [Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
 [Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
 
-#### You don’t have enough concurrency. 
+#### You don’t have enough concurrency
  
 To check how much concurrency you have
 
-1.	Navigate to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`
+1. Navigate to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`
 
     This page can also be accessed from the logs by choosing the manage parallel jobs link.
 
     ![Manage parallel jobs](media/troubleshooting/manage-parallel-jobs.png)  
         
-2.	Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools)
-3.	Click view in progress jobs 
-4.	You’ll see text that says currently running X/X jobs. If that number is maxed out of concurrency, then jobs will need wait until there is room.
- 
+2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
+
+    ![View in-progress jobs](media/troubleshooting/in-progress-jobs.png)
+
+3. You’ll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
+
+    ![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
  
 #### Your job may be waiting for approval
  
-Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](process/approvals).
+Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](process/approvals.md).
  
 #### All available agents are in use 
  
