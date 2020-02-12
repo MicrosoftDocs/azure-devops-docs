@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 12/06/2019
+ms.date: 02/12/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -556,6 +556,32 @@ Learn more:
 [Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline),
 [Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
 [Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
+
+#### You don’t have enough concurrency. 
+ 
+To check how much concurrency you have
+
+1.	Navigate to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`
+
+    This page can also be accessed from the logs by choosing the manage parallel jobs link.
+
+    ![Manage parallel jobs](media/troubleshooting/manage-parallel-jobs.png)  
+        
+2.	Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools)
+3.	Click view in progress jobs 
+4.	You’ll see text that says currently running X/X jobs. If that number is maxed out of concurrency, then jobs will need wait until there is room.
+ 
+ 
+#### Your job may be waiting for approval
+ 
+Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](process/approvals).
+ 
+#### All available agents are in use 
+ 
+If you are using self-hosted agents, they may all currently be busy. To check you
+1.	Navigate to `https://dev.azure.com/{org}/_settings/agentpools?poolId={id}&view=agents`
+a.	This will show all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
+
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
