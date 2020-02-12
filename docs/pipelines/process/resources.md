@@ -112,10 +112,19 @@ resources:
       - master
 ```
 ---
+
+
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch. 
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the default branch.
 
+### Default branch for triggers
+Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
+1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose **Triggers**.
+![Commits in pipeline run](media/triggers-view.png)
+1. Now select 'YAML' tab and go to 'Get sources'.
+1. Now you can set the default branch for your pipeline.
+![Commits in pipeline run](media/triggers-default-branch.png)
 ### `download` for pipelines
 
 All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each `deployment` job. You can override this behavior. For more information, see [Pipeline Artifacts](../artifacts/pipeline-artifacts.md). Regular 'job' artifacts are not automatically downloaded. Use `download` explicitly when needed.
@@ -396,4 +405,3 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, you can see a list of resources that are consumed in the environments view. This view includes resources consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
-
