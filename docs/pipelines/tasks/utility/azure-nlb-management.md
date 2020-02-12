@@ -34,7 +34,7 @@ Use this task in a build or release pipeline to connect or disconnect an Azure v
 |`ConnectedServiceName`<br/>Azure Subscription|(Required) Select the Azure Resource Manager subscription for the deployment <br/>Argument aliases: `azureSubscription`|
 |`ResourceGroupName`<br/>Resource Group|(Required) Select the resource group name|
 |`LoadBalancer`<br/>Load Balancer Name|(Required) Select or enter the load balancer|
-|Action<br/>Action|(Required) <br/> **Disconnect**: Removes the virtual machine’s primary network interface from the load balancer’s backend pool. So that it stops receiving network traffic. <br/>**Connect**: Adds the virtual machine’s primary network interface to load balancer backend pool. So that it starts receiving network traffic based on the load balancing rules for the load balancer resource|
+|`Action`<br/>Action|(Required) <br/> **Disconnect**: Removes the virtual machine’s primary network interface from the load balancer’s backend pool. So that it stops receiving network traffic. <br/>**Connect**: Adds the virtual machine’s primary network interface to load balancer backend pool. So that it starts receiving network traffic based on the load balancing rules for the load balancer resource|
 
 ## Open source
 
