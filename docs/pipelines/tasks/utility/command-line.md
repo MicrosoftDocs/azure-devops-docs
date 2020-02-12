@@ -67,10 +67,12 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 |`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
 |`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
 |`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in like this: <br/>
-<pre>yaml
-- script: echo %MYSECRET%
-  env:
-    MySecret: $(Foo)</pre>|
+
+```YAML
+                - script: echo %MYSECRET%
+                  env:
+                    MySecret: $(Foo)
+```
 
 ## Example
 
