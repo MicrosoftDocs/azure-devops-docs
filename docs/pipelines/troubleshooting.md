@@ -545,17 +545,15 @@ To troubleshoot issues related to service connections, see [Service Connection t
 
 ### Parallel jobs not running
 
-There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, your runs still sit in queue and run one after the other.
-
-The following scenarios won’t consume a parallel job:
-* If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
-* When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
-
-Jobs may not run due to the following reasons.
+There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, your runs still sit in the queue and run one after the other. If your jobs aren't running, check the following items.
 
 * [You don't have enough concurrency](#you-dont-have-enough-concurrency)
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
+
+The following scenarios won’t consume a parallel job:
+* If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+* When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
 Learn more:
 [How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
