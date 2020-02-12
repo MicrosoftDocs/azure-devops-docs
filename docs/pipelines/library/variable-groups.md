@@ -24,11 +24,15 @@ that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml
 
 ::: moniker range="< tfs-2018"
 > [!NOTE]
-> Variable groups can be used in a build pipeline in only Azure DevOps and TFS 2018. They cannot be used in a build pipeline in earlier versions of TFS. 
+> Variable groups can be used in a build pipeline in only Azure DevOps and TFS 2018. They cannot be used in a build pipeline in earlier versions of TFS.
 ::: moniker-end
 
 ## Create a variable group
 
+#### [YAML](#tab/yaml/)
+Variable groups can’t be created in YAML, but they can be used as described in [Use a variable group](#use-a-variable-group).
+
+#### [Classic](#tab/classic/)
 1. Open the **Library** tab to see a list of existing variable groups for your project.
 Choose **+ Variable group**.
 
@@ -51,6 +55,58 @@ Choose **+ Variable group**.
    ![Saving a variable group](media/save-variable-group.png) 
 
 > Variable groups follow the [library security model](index.md#security).
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+You can create a variable group with the [az pipelines variable-group create](/cli/azure/ext/azure-devops/pipelines/variable-group#ext-azure-devops-az-pipelines-variable-group-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli
+az pipelines variable-group create --name
+                                   --variables
+                                   [--authorize {false, true}]
+                                   [--description]
+                                   [--org]
+                                   [--project]
+```
+
+#### Parameters
+
+- **name**: Required. Name of the variable group.
+- **variables**: Required. Variables in format `key=value` space-separated pairs. Secret variables should be managed using [az pipelines variable-group variable](#manage-variables-in-a-variable-group) commands.
+- **authorize**: Optional. Specify whether the variable group should be accessible by all pipelines. Accepted values are *false* and *true*.
+- **description**: Optional. Description of the variable group.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+
+#### Example
+
+The following command blahblahblah.  
+
+```azurecli
+az pipelines variable-group create --name new-app-variables --variables app-location=Head_Office app-name=Fabrikam --output yaml
+
+authorized: false
+description: null
+id: 5
+name: new-app-variables
+providerData: null
+type: Vsts
+variables:
+  app-location:
+    isSecret: null
+    value: Head_Office
+  app-name:
+    isSecret: null
+    value: Fabrikam
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+
+* * *
+
+
 
 ## Use a variable group
 
@@ -117,6 +173,16 @@ also see a drop-down list of stages in the pipeline - you can link the variable 
 > [!NOTE]
 > Linking a variable group to a specific stage is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="azure-devops"
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using a variable group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
 * * *
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the pipeline itself](../process/variables.md).
@@ -126,6 +192,24 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
 will automatically be made available to all the definitions or stages to which the variable group is linked.
+
+## Manage a variable group
+
+YOU CAN BLAH BLAH BLAH
+
+
+
+
+
+
+## Manage variables in a variable group
+
+YOU CAN BLAH BLAH BLAH
+
+
+
+
+
 
 ## Link secrets from an Azure key vault
 
