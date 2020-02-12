@@ -62,6 +62,7 @@ These tools reference the team's default area path, iteration path, and selected
 
 Many of these tools are built from system queries that reference the team area path. For example, a team's default area path filters the work items that appear on a team's backlog. Also, work items that you create using an Agile tool auto-assign the areas and iterations based on team defaults.  
 
+<a id="team-defaults" />
 
 ## Team defaults referenced by backlogs and boards
 
