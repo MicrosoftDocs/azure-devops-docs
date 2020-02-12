@@ -547,9 +547,15 @@ To troubleshoot issues related to service connections, see [Service Connection t
 
 There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, the releases still sit in queue and run one after the other.
 
-Below are scenarios that won’t consume a parallel job:
+The following scenarios won’t consume a parallel job:
 * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
+
+The following
+
+* [You don't have enough concurrency](#you-dont-have-enough-concurrency)
+* [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
+* [All available agents are in use](#all-available-agents-are-in-use)
 
 Learn more:
 [How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
@@ -557,9 +563,9 @@ Learn more:
 [Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
 [Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
 
-#### You don’t have enough concurrency
+#### You don't have enough concurrency
  
-To check how much concurrency you have
+To check how much concurrency you have:
 
 1. Navigate to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`
 
@@ -569,9 +575,9 @@ To check how much concurrency you have
         
 2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
 
-    ![View in-progress jobs](media/troubleshooting/in-progress-jobs.png)
+    ![Concurrent pipeline limits](media/troubleshooting/concurrent-pipeline-limits.png)
 
-3. You’ll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
+3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
 
     ![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
  
@@ -581,8 +587,11 @@ Your pipeline may not move to the next stage because it is waiting on approval. 
  
 #### All available agents are in use 
  
-If you are using self-hosted agents, they may all currently be busy. To check you
-1.	Navigate to `https://dev.azure.com/{org}/_settings/agentpools?poolId={id}&view=agents`
+Jobs may wait if all your agents are currently busy. To check your agents:
+1. Navigate to `https://dev.azure.com/{org}/_settings/agentpools`
+2. Select the agent pool to check, in this example **FabrikamPool**.
+
+    ![Agent status](media/troubleshooting/agents-online.png)
 a.	This will show all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
 
 
