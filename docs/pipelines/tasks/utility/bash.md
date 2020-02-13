@@ -58,7 +58,7 @@ steps:
       targetType: 'inline'
       script: echo $MYSECRET
     env:
-      MySecret: $(Foo)
+      MYSECRET: $(Foo)
 ```
 
 This is equivalent to:
@@ -69,6 +69,7 @@ steps:
     env:
       MySecret: $(Foo)
 ```
+|
 
 ## Open source
 
