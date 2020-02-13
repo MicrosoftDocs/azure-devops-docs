@@ -38,7 +38,7 @@ For non-Microsoft tools that integrate into Azure DevOps but don't support Micro
 
 ### Q: What is my Azure DevOps Services URL?
 
-A: https://dev.azure.com/{yourorganization}
+A: https:\//dev.azure.com/{yourorganization}
 
 ### Q: Can I regenerate a PAT?
 

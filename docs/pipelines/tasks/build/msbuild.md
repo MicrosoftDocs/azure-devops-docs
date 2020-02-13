@@ -116,7 +116,7 @@ msbuild
    </tr>
    <tr>
       <td><code>restoreNugetPackages</code><br/>Restore NuGet Packages</td>
-      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="/docs/pipelines/tasks/package/nuget.md" data-raw-source="[NuGet Installer](../package/nuget.md)">NuGet Installer</a> build task. <br/>Default value: false</td>
+      <td><strong>(Important)</strong> This option is deprecated. Make sure to clear this checkbox and instead use the <a href="../package/prev-versions/nuget-installer-0.md" data-raw-source="[NuGet Installer](../package/prev-versions/nuget-installer-0.md)">NuGet Installer</a> build task. <br/>Default value: false</td>
    </tr>
    <tr>
       <th style="text-align: center" colspan="2">Advanced</th>
