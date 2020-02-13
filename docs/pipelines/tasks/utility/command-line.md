@@ -61,19 +61,48 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 
 ## Arguments
 
+<table>
+  <tr>
+    <th>Argument</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>`script`<br/>Script</td>
+    <td>(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`</td>
+  </tr>
+  <tr>
+    <td>`workingDirectory`<br/>Working directory</td>
+    <td>(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
+  </tr>
+  <tr>
+    <td>`failOnStderr`<br/>Fail on Standard Error</td>
+    <td>If this is true, this task will fail if any errors are written to stderr</td>
+  </tr>
+  <tr>
+    <td>`env`<br/>Environment variables</td>
+    <td>(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example.<br/>
+        ```YAML
+        - script: echo %MYSECRET%
+        env:
+          MySecret: $(Foo)
+        ```
+    </td>
+  </tr>
+</table>
+
 |Argument|Description|
 |--- |--- |
 |`script`<br/>Script|(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`|
 |`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
 |`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
 |`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example. |
-| |
+
 ```YAML
 - script: echo %MYSECRET%
 env:
   MySecret: $(Foo)
 ```
-|
+
 
 ## Example
 
