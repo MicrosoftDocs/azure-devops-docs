@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 The local path on the agent where your source code files are downloaded. For example: `c:\agent_work\1\s`<br /><br />By default, new build pipelines update only the changed files. You can modify how files are downloaded on the [Repository tab](/azure/devops/pipelines/repos/index).
