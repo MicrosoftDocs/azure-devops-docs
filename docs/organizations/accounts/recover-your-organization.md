@@ -25,6 +25,8 @@ After you delete your organization, it's disabled but available for 28 days. If 
 * An organization deleted within the last 28 days.
 * Organization Owner permissions to restore your organization. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
 
+## Recover organization
+
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-organization.md#ChooseOrgAcctMSAcct)

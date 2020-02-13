@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
-ms.date: 12/07/2018
+ms.date: 02/12/2020
 monikerRange: azure-devops
 ---
 
@@ -29,19 +29,13 @@ Use this task in a build or release pipeline to decrypt files using OpenSSL.
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Cypher</td><td>(Required) Encryption cypher to use. See <a href="https://go.microsoft.com/fwlink/?LinkID=627129" data-raw-source="[cypher suite names](https://go.microsoft.com/fwlink/?LinkID=627129)">cypher suite names</a> for a complete list of possible values.</td></tr>
-<tr><td>Encrypted file</td><td>(Required) Relative path of file to decrypt.</td></tr>
-<tr><td>Passphrase</td><td>(Required) Passphrase to use for decryption. <strong>Use a Variable to encrypt the passphrase.</strong></td></tr>
-<tr><td>Decrypted file path</td><td>(Optional) Optional filename for decrypted file. Defaults to the Encrypted File with a &quot;.out&quot; extension</td></tr>
-<tr><td>Working directory</td><td>(Optional) Working directory for decryption. Defaults to the root of the repository.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`cipher`<br/>Cypher|(Required) Encryption cypher to use. See [cypher suite names](https://go.microsoft.com/fwlink/?LinkID=627129) for a complete list of possible values <br/>Default value: `des3`|
+|`inFile`<br/>Encrypted file|(Required) Relative path of file to decrypt.|
+|`passphrase`<br/>Passphrase|(Required) Passphrase to use for decryption. Use a Variable to encrypt the passphrase.|
+|`outFile`<br/>Decrypted file path|(Optional) Optional filename for decrypted file. Defaults to the Encrypted File with a ".out" extension|
+|`cwd`<br/>Working directory|(Optional) Working directory for decryption. Defaults to the root of the repository <br/>Argument aliases: `workingDirectory`|
 
 ## Open source
 

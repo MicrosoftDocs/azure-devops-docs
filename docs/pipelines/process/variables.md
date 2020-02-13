@@ -38,9 +38,9 @@ Any variable that begins with one of these strings (regardless of capitalization
 
 Azure Pipelines supports three different ways to dereference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
+Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
 
-Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
+Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime starts. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
 
 Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.value]`, but `$[variables.key]: value` is not.
 
@@ -221,7 +221,7 @@ steps:
     script: |
         # Encode the Personal Access Token (PAT)
         # $env:USER is a normal variable in the variable group
-        # #env:MY_MAPPED_TOKEN is a mapped secret variable
+        # $env:MY_MAPPED_TOKEN is a mapped secret variable
         $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
         
         # Get a list of releases
@@ -247,11 +247,8 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-Imagine you want to use a secret variable called `mySecret` from a script.
-Unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
-To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
-In the left column, give the variable a name to be used in the environment.
-In the right column, dereference the secret variable like this: `$(mySecret)`.
+Remapping is done in each task that needs to use the secret as an environment variable. If you want to use a secret variable called `mySecret` from a script, use the **Environment** section of the scripting task's input variables. Set the environment variable name to `MYSECRET` and the value to `$(mySecret)`.
+
 
 **Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 

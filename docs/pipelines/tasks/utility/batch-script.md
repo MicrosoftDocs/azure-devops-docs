@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 11/13/2019
+ms.date: 02/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -40,47 +40,13 @@ Optionally, allow it to permanently modify environment variables.
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Path</td>
-<td><p>Specify the path to the .bat or .cmd script you want to run. The path must be a fully qualified path or a valid path relative to the default working directory.</p>
-<p>
-In Team Foundation Build, this directory is <a href="../../build/variables.md" data-raw-source="[$(Build.SourcesDirectory)](../../build/variables.md)">$(Build.SourcesDirectory)</a>.</p>
-</td>
-</tr>
-<tr>
-<td>Arguments</td>
-<td>Specify arguments to pass to the script.</td>
-</tr>
-<tr>
-<tr>
-<td>Modify environment</td>
-<td>Select this check box if you want stage variable modifications in the script to affect subsequent tasks.</td>
-</tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Working folder</td>
-<td>Specify the working directory in which you want to run the script. If you leave it empty, the working directory is the folder where the script is located.
-</td>
-</tr>
-<tr>
-<td>Fail on standard error</td>
-<td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`filename`<br/>Path|(Required) Path of the cmd or bat script to execute. Should be fully qualified path or relative to the default working directory|
+|`arguments`<br/>Arguments|(Optional) Specify arguments to pass to the script.|
+|`modifyEnvironment`<br/>Modify environment|(Optional) Determines whether environment variable modifications will affect subsequent tasks <br/>Default value: `False`|
+|`workingFolder`<br/>Working folder|(Optional) Current working directory when script is run. Defaults to the folder where the script is located|
+|`failOnStandardError`<br/>Fail on Standard Error|(Optional) If this is true, this task will fail if any errors are written to the StandardError stream. <br/>Default value: `false`|
 
 ## Example
 
