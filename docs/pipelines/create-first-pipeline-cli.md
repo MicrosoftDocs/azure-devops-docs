@@ -135,7 +135,7 @@ These commands require either the name or ID of the pipeline you want to manage.
 
 You can queue (run) an existing pipeline with the [az pipelines run](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-run) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines run [--branch]
                  [--commit-id]
                  [--folder-path]
@@ -163,7 +163,7 @@ az pipelines run [--branch]
 
 The following command runs the pipeline named **myGithubname.pipelines-java** in the branch **pipeline** and shows the result in table format.  
 
-```CLI 
+```azurecli 
 az pipelines run --name myGithubname.pipelines-java --branch pipeline --output table
 
 Run ID    Number      Status      Result    Pipeline ID    Pipeline Name                Source Branch    Queued Time               Reason
@@ -175,7 +175,7 @@ Run ID    Number      Status      Result    Pipeline ID    Pipeline Name        
 
 You can update an existing pipeline with the [az pipelines update](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-update) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines update [--branch]
                     [--description]
                     [--id]
@@ -205,7 +205,7 @@ az pipelines update [--branch]
 
 The following command updates the pipeline with the **ID** of 12 with a new name and description and shows the result in table format.
 
-```CLI 
+```azurecli 
 az pipelines update --id 12 --description "rename pipeline" --new-name updatedname.pipelines-java --output table
 
 ID    Name                        Status    Default Queue
@@ -217,7 +217,7 @@ ID    Name                        Status    Default Queue
 
 You can view the details of an existing pipeline with the [az pipelines show](/cli/azure/ext/azure-devops/pipelines#ext-azure-devops-az-pipelines-show) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines show [--folder-path]
                   [--id]
                   [--name]
@@ -239,7 +239,7 @@ az pipelines show [--folder-path]
 
 The following command shows the details of the pipeline with the **ID** of 12 and returns the result in table format.  
 
-```CLI 
+```azurecli 
 az pipelines show --id 12 --output table
 
 ID    Name                        Status    Default Queue
