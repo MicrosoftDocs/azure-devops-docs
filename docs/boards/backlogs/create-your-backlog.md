@@ -58,7 +58,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -78,14 +78,14 @@ From your web browser, open your product backlog.
     > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
     > [!TIP]    
-    > Select the ![ ](../../media/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![ ](../../media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
+    > Select the ![Favorite icon](../../media/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![Favorite icon](../../media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To select which columns display and in what order, select the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To select which columns display and in what order, select the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Column options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
