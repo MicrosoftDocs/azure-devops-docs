@@ -370,6 +370,7 @@ You can put the template in a core repo and then refer to it from each of your a
 parameters:
 - name: 'vmImage'
   default: 'ubuntu 16.04'
+  type: string
 
 jobs:
 - job: Build
@@ -455,6 +456,7 @@ For example, you define a template:
 parameters:
 - name: 'solution'
   default: '**/*.sln'
+  type: string
 
 steps:
 - task: msbuild@1
@@ -496,6 +498,7 @@ Here's an example that checks for the `solution` parameter using Bash (which ena
 parameters:
 - name: 'solution'
   default: ''
+  type: string
 
 steps:
 - bash: |
@@ -544,8 +547,10 @@ You can use [general functions](expressions.md#functions) in your templates. You
 parameters:
 - name: 'restoreProjects'
   default: ''
+  type: string
 - name: 'buildProjects'
   default: ''
+  type: string
 
 steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
@@ -628,9 +633,9 @@ jobs:
 
 ### Conditional insertion
 
-If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
+If you want to conditionally insert into a sequence or a mapping in a template, use insertions and expression evaluation. You can also use `if` statements [outside of templates](expressions.md) as long as you use template syntax.  
 
-For example, to insert into a sequence:
+For example, to insert into a sequence in a template:
 
 ```yaml
 # File: steps/build.yml
@@ -638,6 +643,7 @@ For example, to insert into a sequence:
 parameters:
 - name: 'toolset'
   default: msbuild
+  type: string
   values:
   - msbuild
   - dotnet
@@ -667,7 +673,7 @@ steps:
     toolset: dotnet
 ```
 
-For example, to insert into a mapping:
+For example, to insert into a mapping in a template:
 
 ```yaml
 # File: steps/build.yml
