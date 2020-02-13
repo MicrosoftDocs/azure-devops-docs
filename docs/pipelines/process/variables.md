@@ -212,7 +212,7 @@ az pipelines variable create --name MyVariable --pipeline-id 12 --value platform
 
 Name        Allow Override    Is Secret    Value
 ----------  ----------------  -----------  --------
-MyVariable  False             False        platform
+Configuration  False             False        platform
 ```
 
 <a id="update-variable" />
