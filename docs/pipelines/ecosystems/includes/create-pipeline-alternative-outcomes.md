@@ -1,3 +1,13 @@
+---
+ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 > If you're using your own code, then instead of a new pipeline automatically appearing for you to review a couple of different things might happen.
 >
 > * If your repository contains code that's different in nature than our sample, then a different azure-pipelines.yml file might be created for you.

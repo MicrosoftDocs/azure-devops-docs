@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/13/2020
 ---
 
 You can perform different forms of cleaning the working directory of your self-hosted agent before a build runs.
