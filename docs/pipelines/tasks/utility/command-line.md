@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/11/2020
+ms.date: 02/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -66,7 +66,7 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
 |`script`<br/>Script|(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`|
 |`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
 |`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
-|`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in like this: <br/>
+|`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example. |
 
 ```YAML
                 - script: echo %MYSECRET%
