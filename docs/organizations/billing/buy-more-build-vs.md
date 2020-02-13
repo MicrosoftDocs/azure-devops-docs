@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 02/12/2020
+ms.date: 02/13/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -37,7 +37,7 @@ When you pay per parallel job, there's no monthly time limit for your builds and
 > [!NOTE]
 > When you purchase your first Microsoft-hosted parallel job, the number of parallel jobs you have in the organization still stays at one. This purchase only removes the limits on the free parallel job that you have. To run two jobs concurrently, you need to purchase two parallel jobs.
 
-If your pipelines are in a [public project](../public/about-public-projects.md), you can run up to 10 free parallel jobs with unlimited minutes on Microsoft-hosted agents. [Contact us](https://azure.microsoft.com/support/devops/) for more information.
+Pipelines in a [public project](../public/about-public-projects.md) can run up to 10 free parallel jobs with unlimited minutes on Microsoft-hosted agents. [Contact us](https://azure.microsoft.com/support/devops/) for more information.
 
 ## Self-hosted CI/CD
 
@@ -48,7 +48,7 @@ Azure Pipelines also offers you a way to run the agent on machines that you mana
 
 ### Self-hosted public projects
 
-If your pipelines are in a [public project](../public/about-public-projects.md), then you run up to 10 free parallel jobs with self-hosted agents. If you need more, [contact us](https://azure.microsoft.com/support/devops/).
+For pipelines in a [public project](../public/about-public-projects.md), you can run up to 10 free parallel jobs with self-hosted agents. If you need more, [contact us](https://azure.microsoft.com/support/devops/).
 
 ### Self-hosted private projects
 
