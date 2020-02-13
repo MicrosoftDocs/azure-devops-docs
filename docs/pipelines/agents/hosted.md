@@ -9,7 +9,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/28/2020
+ms.date: 01/31/2020
 monikerRange: azure-devops
 ---
 
@@ -32,10 +32,18 @@ Azure Pipelines provides a Microsoft-hosted agent pool named **Azure Pipelines**
 | Ubuntu 18.04 | *ubuntu-18.04* | `ubuntu-latest` OR `ubuntu-18.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md)
 | Ubuntu 16.04 | *ubuntu-16.04* | `ubuntu-16.04` | [Link](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1604-README.md)
 | macOS X Mojave 10.14 | *macOS-10.14* |  `macOS-latest` OR `macOS-10.14` | [Link](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md)
+| macOS X Catalina 10.15 | *macOS-10.15* |  `macOS-10.15` | [Link](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md)
 
-> [!NOTE]
-> The previous `vs2015-win2012r2`, `macOS-10.13`, and `win1803` images are sunsetting in March 2020.
+> [!IMPORTANT]
+> On March 23, 2020, we'll be removing the following Azure Pipelines hosted images:
+>
+> - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
+> - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
+> - [Windows Server Core 1803](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/win/WindowsContainer1803-Readme.md) - (`win1803`)
+>
 > Customers are encouraged to migrate to `vs2017-win2016`, `macOS-10.14`, or a [self-hosted agent](v2-windows.md) respectively.
+>
+> For more information and instructions on how to update your pipelines that use those images, see [Removing older images in Azure Pipelines hosted pools](https://devblogs.microsoft.com/devops/removing-older-images-in-azure-pipelines-hosted-pools/).
 
 > [!NOTE]
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).

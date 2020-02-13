@@ -7,7 +7,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 01/08/2019
+ms.date: 02/12/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -79,13 +79,11 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> Private GitHub and Bitbucket Cloud repositories require a service connection and must be declared as a repository resource.
+> GitHub and Bitbucket Cloud repositories require a service connection and must be declared as a repository resource.
 
 ```yaml
 steps:
 - checkout: git://MyProject/MyRepo # Azure Repos Git repository in the same organization
-- checkout: github://Org/PublicGitHubRepo
-- checkout: bitbucket://Org/PublicBitbucketRepo
 ```
 
 > [!NOTE]
