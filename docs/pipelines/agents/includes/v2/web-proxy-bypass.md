@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/12/2020
 ---
 
 ### How do I configure the agent to bypass a web proxy and connect to Azure Pipelines?
