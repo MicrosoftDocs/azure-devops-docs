@@ -69,7 +69,6 @@ steps:
     env:
       MySecret: $(Foo)
 ```
-|
 
 ## Open source
 
