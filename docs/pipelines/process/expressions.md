@@ -353,7 +353,7 @@ For templates, you can use conditional insertion when adding a sequence or mappi
 ### Conditionally assign a variable
 ```yml
 variables:
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # this will only work if you have a master branch
     stageName: prod
 
 pool:
