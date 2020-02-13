@@ -590,7 +590,8 @@ Jobs may wait if all your agents are currently busy. To check your agents:
 2. Select the agent pool to check, in this example **FabrikamPool**, and choose **Agents**.
 
     ![Agent status](media/troubleshooting/agents-online.png)
-a.	This will show all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
+
+    This page shows all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
 
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
