@@ -184,4 +184,21 @@ You can customize your view of the Feature Timeline with the controls shown in t
 ## Related Marketplace extensions
 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
- 
+
+
+<!  Questions to address? 
+
+- How get a quarterly view
+- How to view roadmap - next three sprints
+- Show dependencies
+- Drag and drop 
+- Maximum number of sprints: 11 
+- Closing out Epics and Features. 
+- Example showing Predecessor/Successor 
+- Example showing not dependent 
+- Example - Resource view 
+- How determine which sprints to display? 
+- Child items not assigned to an iteration 
+
+
+--> 
