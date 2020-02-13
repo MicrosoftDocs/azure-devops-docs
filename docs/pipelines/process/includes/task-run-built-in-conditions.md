@@ -1,9 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 1/16/2020
+ms.date: 02/13/2020
 ---
 
 * Only when all previous dependencies have succeeded. This is the default if there is not a condition set in the YAML.

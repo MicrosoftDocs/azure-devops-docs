@@ -1,5 +1,12 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-collab
+title: Azure Pipelines with Slack
+ms.manager: bijuv
+ms.author: atinb
+author: atinb
+ms.date: 02/13/2020
 ---
 
 * [Sorry, something went wrong. Please try again.](#sorry-something-went-wrong-please-try-again)
