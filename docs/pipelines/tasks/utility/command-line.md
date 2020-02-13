@@ -81,11 +81,11 @@ You should always prepend `call` before executing a batch file in an Azure Pipel
   <tr>
     <td>`env`<br/>Environment variables</td>
     <td>(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example.<br/>
-        ```YAML
+        <pre>
         - script: echo %MYSECRET%
         env:
           MySecret: $(Foo)
-        ```
+        </pre>
     </td>
   </tr>
 </table>
