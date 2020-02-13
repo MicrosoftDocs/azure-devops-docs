@@ -33,7 +33,7 @@ When multiple teams or products share a project, you can't granularly isolate th
 
 If your Azure DevOps organization was created before August 2019, then runs might be able to access open resources in all of your organization's projects.
 Your organization administrator must review a key security setting in Azure Pipelines that enables project isolation for pipelines.
-You can find this setting at **Azure DevOps** > **Organization settings** > **Pipelines** > **Settings**. Or go directly to [this Azure DevOps location](https://dev.azure.com/ORG-NAME/_settings/pipelinessettings).
+You can find this setting at **Azure DevOps** > **Organization settings** > **Pipelines** > **Settings**. Or go directly to [this Azure DevOps location](https:\//dev.azure.com/ORG-NAME/_settings/pipelinessettings).
 
 ![Screenshot of job authorization scope UI](media/job-auth-scope.png)
 

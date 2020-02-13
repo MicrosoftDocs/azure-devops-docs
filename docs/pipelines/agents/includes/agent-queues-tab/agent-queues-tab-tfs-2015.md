@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/12/2020
 ---
 
 1. Navigate to your project and choose **Manage project** (gear icon). 

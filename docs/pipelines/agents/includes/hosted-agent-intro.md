@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/12/2020
 ---
 
 If your pipelines are in Azure Pipelines, then you've got a convenient option to run your jobs using a **Microsoft-hosted agent**. With Microsoft-hosted agents, maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a fresh virtual machine. The virtual machine is discarded after one use. Microsoft-hosted agents can run jobs [directly on the VM](../../process/phases.md) or [in a container](../../process/container-phases.md).

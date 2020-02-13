@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 Notice that variables are also made available to scripts through environment variables. The syntax for using these environment variables depends on the scripting language.
