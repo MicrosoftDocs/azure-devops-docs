@@ -208,7 +208,7 @@ az pipelines variable create --name
 The following command creates a variable in **MyFirstProject** named **Configuration** with the value **platform** in the pipeline with ID **12**. It shows the result in table format.
 
 ```azurecli
-az pipelines variable create --name MyVariable --pipeline-id 12 --value platform --project MyFirstProject --output table
+az pipelines variable create --name Configuration --pipeline-id 12 --value platform --project MyFirstProject --output table
 
 Name        Allow Override    Is Secret    Value
 ----------  ----------------  -----------  --------
