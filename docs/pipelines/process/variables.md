@@ -202,9 +202,9 @@ Use the script's environment in order to pass secrets to the script. Operating s
 
 ### Reference secret variables in variable groups
 
-This example shows how to reference a variable group in your YAML file and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. 
+This example shows how to reference a variable group in your YAML file, and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret, and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. 
 
-This YAML makes a REST call to retrieve a list of releases and outputs the result. 
+This YAML makes a REST call to retrieve a list of releases, and outputs the result. 
 
 ```yaml
 variables: 
@@ -237,7 +237,8 @@ steps:
 
 ```
 
-**Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> [!IMPORTANT]
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -247,23 +248,24 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-Remapping is done in each task that needs to use the secret as an environment variable. If you want to use a secret variable called `mySecret` from a script, use the **Environment** section of the scripting task's input variables. Set the environment variable name to `MYSECRET` and the value to `$(mySecret)`.
+Each task that needs to use the secret as an environment variable does remapping. If you want to use a secret variable called `mySecret` from a script, use the `Environment` section of the scripting task's input variables. Set the environment variable name to `MYSECRET`, and set the value to `$(mySecret)`.
 
 
-**Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> [!IMPORTANT]
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 * * *
 ## Share variables across pipelines
 
-To share variables across multiple pipelines in your project, you should set them using [variable groups](../library/variable-groups.md) under **Library** using the web interface. For more information, see [variable groups](../library/variable-groups.md).
+To share variables across multiple pipelines in your project, use the web interface. Under **Library**, use [variable groups](../library/variable-groups.md).
 
 ## Use output variables from tasks
 
-Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs using [dependencies](expressions.md#dependencies). 
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
 
 #### [YAML](#tab/yaml/)
 
-For these examples, assume we have a task called `MyTask` which sets an output variable called `MyVar`.
+For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
 
 ### Use outputs in the same job
 
@@ -314,7 +316,7 @@ A script in your pipeline can define a variable so that it can be consumed by on
 ### Set a job-scoped variable from a script
 
 To set a variable from a script, you use the `task.setvariable` logging command.
-This does not update the environment variables, but it does make the new
+This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 ```yaml
@@ -337,7 +339,7 @@ Subsequent steps will also have the pipeline variable added to their environment
 steps:
 
 # Create a variable
-# Note that this does _not_ update the environment of the current script.
+# Note that this does not update the environment of the current script.
 - bash: |
     echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 
@@ -351,7 +353,7 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable using `isOutput=true`. Then you can map it into future jobs using `$[]` syntax and including the step name which set the variable. Multi-job output variables will only work for jobs in the same stage. 
+an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name which set the variable. Multi-job output variables only work for jobs in the same stage. 
 When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
@@ -381,9 +383,11 @@ jobs:
 ```
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
-or [slice](phases.md?tab=yaml#slicing), then to reference the variable,
-you have to include the name
-of the job as well as the step when you access it from a downstream job.
+or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
+you must include:
+
+- The name of the job.
+- The step.
 
 ```yaml
 jobs:
@@ -445,7 +449,7 @@ jobs:
     name: echovar
 ```
 
-The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
+Be sure to prefix the job name to the output variables of a [deployment](deployment-jobs.md) job. In this case, the job name is `A`:
 
 ```yaml
 jobs:
@@ -484,17 +488,17 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` logging command.
-This does not update the environment variables, but it does make the new
+To set a variable from a script, use the `task.setvariable` logging command.
+This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 [!INCLUDE [include](includes/set-variables-in-scripts.md)]
 
-### Using variables as task inputs
+### Use variables as task inputs
 
-In order to use a variable as a task input, the variable must be an output variable and you must give the producing task a reference name.
+In order to use a variable as a task input, you must make the variable an output variable, and you must give the producing task a reference name.
 You can set a task's reference name on the **Output Variables** section of the task editor.
-For instance, a script task whose output variable reference name is `producer` could have the following contents:
+For instance, a script task whose output variable reference name is `producer` might have the following contents:
 
 ```cmd
 mkdir myDir
@@ -505,15 +509,15 @@ The output variable `newworkdir` can be referenced in the input of a downstream 
 
 ### Set a multi-job output variable
 
-You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
+You can't pass a variable from one job to another job of a build pipeline, unless you use YAML.
 
 * * *
-## Set variables using expressions
+## Set variables by using expressions
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can set a variable using an expression. We already encountered one case of this to set a variable to the output of another from a previous job.
+You can set a variable by using an expression. We already encountered one case of this to set a variable to the output of another from a previous job.
 
 ```yaml
 - job: B
@@ -522,7 +526,7 @@ You can set a variable using an expression. We already encountered one case of t
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ] # remember to use single quotes
 ```
 
-You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 ```yaml
 jobs:
@@ -541,7 +545,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 - In the variables of a build pipeline, set a variable `a` to this value: `$[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]`
 
@@ -553,8 +557,8 @@ For more information about counters and other expressions, see [expressions](exp
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
-If a variable appears in the `variables` block of a YAML file, it is fixed and cannot be overridden at queue time.
+You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
+If a variable appears in the `variables` block of a YAML file, it's fixed and can't be overridden at queue time.
 To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job.
 You can set a default value in the editor, and that value can be overridden by the person queuing the pipeline.
 
@@ -564,7 +568,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
+You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
 To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
 
 * * *
@@ -573,7 +577,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
+When you set a variable with the same name in multiple scopes, the following precedence applies (highest precedence first).
 
 1. Job level variable set in the YAML file
 1. Stage level variable set in the YAML file
@@ -581,7 +585,7 @@ When you set a variable with the same name in multiple scopes, the following pre
 1. Variable set at queue time
 1. Pipeline variable set in Pipeline settings UI
 
-In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the Pipeline settings UI.
+In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It's also set in a variable group `G`, and as a variable in the Pipeline settings UI.
 
 ```yaml
 variables:
@@ -604,9 +608,9 @@ stages:
 ```
 
 > [!NOTE]
-> When you set a variable in the YAML file, do not define it in the web editor as 'settable at queue time'. You cannot currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, then do not set it in the YAML file.
+> When you set a variable in the YAML file, don't define it in the web editor as settable at queue time. You can't currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, don't set it in the YAML file.
 
-Variables are expanded once when the run is started, and again, at the beginning of each step. Here is an example to demonstrate this:
+Variables are expanded once when the run is started, and again at the beginning of each step. For example:
 
 ```yaml
 jobs:
@@ -621,9 +625,9 @@ jobs:
     - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
-There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.
+There are two steps in the preceding example. The expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.
 
-Since variables are expanded at the beginning of a job, you cannot use them in a strategy. In the following example, you cannot use the variable `a` to expand the job matrix since the variable is only available at the beginning of each expanded job.
+Because variables are expanded at the beginning of a job, you can't use them in a strategy. In the following example, you can't use the variable `a` to expand the job matrix, because the variable is only available at the beginning of each expanded job.
 
 ```yaml
 jobs:
@@ -653,8 +657,8 @@ If the variable `a` is an output variable from a previous job, then you can use 
 
 ### Recursive expansion
 
-On the agent, variables referenced using `$( )` syntax will be recursively expanded.
-However, for service-side operations such as setting display names, variables are not expanded recursively.
+On the agent, variables referenced using `$( )` syntax are recursively expanded.
+However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -673,16 +677,16 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
+When you set a variable with the same name in multiple scopes, the following precedence applies (highest precedence first).
 
 1. Variable set at queue time
 1. Variable set in the pipeline
 1. Variable set in the variable group
 
-Variables are expanded once when the run is started, and again, at the beginning of each step. Here is an example to demonstrate this:
+Variables are expanded once when the run is started, and again at the beginning of each step. Here's an example to demonstrate this:
 
 - You set a variable called `a` to 10 in a pipeline.
-- In one of the steps (a bash script step), you run the following script:
+- In one of the steps (a bash script step), run the following script:
 
    ```bash
    echo $(a)            # This will be 10
@@ -690,7 +694,7 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
    ```
 
-- In the next step (another bash script step), you run the following script:
+- In the next step (another bash script step), run the following script:
 
    ```bash
    echo $(a)            # This will be 20, since the variables are expanded just before the step
