@@ -154,6 +154,8 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ## Clone a pipeline
 
+If your new pipeline can be created by copying another pipeline, follow the instructions in this section.
+
 #### [YAML](#tab/yaml/)
 
 1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
@@ -161,6 +163,8 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
     ![Pipeline details](get-started/media/pipeline-overview.png)
 
 2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+
+3. To customize your newly cloned pipeline, see [Customize your pipeline](customize-pipeline.md).
 
 #### [Classic](#tab/classic/)
 
