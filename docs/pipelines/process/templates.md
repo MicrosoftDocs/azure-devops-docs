@@ -25,7 +25,7 @@ You can specify parameters and their data types in a template and pass those par
 
 ### Passing parameters
 
-Parameters must contain a name and data type. In `azure-pipeline.yml`, when the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+Parameters must contain a name and data type. In `azure-pipelines.yml`, when the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
 
 ```yaml
 # File: simple-param.yml
@@ -120,7 +120,7 @@ extends:
 
 ## Insert a template
 
-You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipeline.yml`.  
+You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
 
 ```yaml
 # File: include-npm-steps.yml
