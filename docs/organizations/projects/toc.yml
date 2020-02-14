@@ -19,7 +19,7 @@
   - name: Restore a project
     href: restore-project.md
   - name: Change service visibility
-    href: /azure/devops/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set project visibility
     href: /azure/devops/public/make-project-public?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Save project data
