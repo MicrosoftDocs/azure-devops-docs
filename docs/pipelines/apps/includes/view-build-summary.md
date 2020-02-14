@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/14/2020
 ---
 
 1. Once the build completes, select the build number to view a summary of the build.
