@@ -28,12 +28,12 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 
 ## Table of contents (TOC) for Wiki pages
 
-To create a table of contents, add a [\_TOC\_]. The TOC is generated when the tag is added and there's at least one heading on the page.
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag is added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
 > ![Table of contents](media/toc_sample.png)
 
-The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
+The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
 Only Markdown headings are considered for TOC (HTML heading tags aren't).
 
 All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
@@ -45,7 +45,7 @@ For example: Adding bold and italics to a heading text renders the TOC as follow
 Consistency is maintained in the formatting in TOC.
 
 > [!NOTE]
-> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
