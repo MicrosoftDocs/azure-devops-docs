@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 1/15/2020
+ms.date: 02/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -148,6 +148,22 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
 --- 
+
+## Clone a pipeline
+
+If your new pipeline can be made by copying another pipeline, follow the instructions in this section.
+
+#### [YAML](#tab/yaml/)
+
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+
+    ![Pipeline details](../get-started/media/pipeline-overview.png)
+
+2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+
+#### [Classic](#tab/classic/)
+
+* * *
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
