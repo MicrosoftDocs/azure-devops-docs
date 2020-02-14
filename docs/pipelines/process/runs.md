@@ -188,7 +188,7 @@ Using the Azure DevOps CLI, you can list the pipeline runs in your project and v
 
 List the pipeline runs in your project with the [az pipelines runs list](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines runs list [--branch]
                        [--org]
                        [--pipeline-ids]
@@ -220,7 +220,7 @@ az pipelines runs list [--branch]
 
 The following command lists the first three pipeline runs which have a status of **completed** and a result of **succeeded**, and returns the result in table format.  
 
-```CLI 
+```azurecli 
 az pipelines runs list --status completed --result succeeded --top 3 --output table
 
 Run ID    Number      Status     Result     Pipeline ID    Pipeline Name               Source Branch    Queued Time                 Reason
@@ -235,7 +235,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 Show the details for a pipeline run in your project with the [az pipelines runs show](/cli/azure/ext/azure-devops/pipelines/runs#ext-azure-devops-az-pipelines-runs-show) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines runs show --id
                        [--open]
                        [--org]
@@ -253,7 +253,7 @@ az pipelines runs show --id
 
 The following command shows details for the pipeline run with the ID **123** and returns the results in table format. It also opens your web browser to the build results page.
 
-```CLI 
+```azurecli 
 az pipelines runs show --id 122 --open --output table
 
 Run ID    Number      Status     Result     Pipeline ID    Pipeline Name               Source Branch    Queued Time                 Reason
@@ -265,7 +265,7 @@ Run ID    Number      Status     Result     Pipeline ID    Pipeline Name        
 
 Add a tag to a pipeline run in your project with the [az pipelines runs tag add](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-add) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines runs tag add --run-id
                           --tags
                           [--org]
@@ -283,7 +283,7 @@ az pipelines runs tag add --run-id
 
 The following command adds the tag **YAML** to the pipeline run with the ID **123** and returns the result in JSON format.  
 
-```CLI 
+```azurecli 
 az pipelines runs tag add --run-id 123 --tags YAML --output json
 
 [
@@ -295,7 +295,7 @@ az pipelines runs tag add --run-id 123 --tags YAML --output json
 
 List the tags for a pipeline run in your project with the [az pipelines runs tag list](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines runs tag list --run-id
                            [--org]
                            [--project]
@@ -311,7 +311,7 @@ az pipelines runs tag list --run-id
 
 The following command lists the tags for the pipeline run with the ID **123** and returns the result in table format.  
 
-```CLI
+```azurecli
 az pipelines runs tag list --run-id 123 --output table
 
 Tags
@@ -323,7 +323,7 @@ YAML
 
 Delete a tag from a pipeline run in your project with the [az pipelines runs tag delete](/cli/azure/ext/azure-devops/pipelines/runs/tag#ext-azure-devops-az-pipelines-runs-tag-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
-```CLI 
+```azurecli 
 az pipelines runs tag delete --run-id
                              --tag
                              [--org]
@@ -341,7 +341,7 @@ az pipelines runs tag delete --run-id
 
 The following command deletes the **YAML** tag from the pipeline run with ID **123**.  
 
-```CLI 
+```azurecli 
 az pipelines runs tag delete --run-id 123 --tag YAML
 ```
 ::: moniker-end
