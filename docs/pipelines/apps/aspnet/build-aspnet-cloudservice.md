@@ -7,8 +7,8 @@ description: Define a continuous integration (CI) build for your Azure Cloud Ser
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
+ms.author: jukullam
+author: juliakm
 ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---
