@@ -55,9 +55,9 @@ Consistency is maintained in the formatting in TOC.
 
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaidjs.github.io/#/flowchart)
-2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+1.	[Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+2.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+3.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -73,6 +73,7 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 > [!NOTE]
 > HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> Current version of Mermaid used is 8.2.6 
 
 ::: moniker-end
 
