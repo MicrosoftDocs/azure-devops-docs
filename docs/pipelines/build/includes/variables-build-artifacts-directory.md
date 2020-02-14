@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 The local path on the agent where any artifacts are copied to before being pushed to their destination. For example: `c:\agent_work\1\a`

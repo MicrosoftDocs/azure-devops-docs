@@ -209,4 +209,6 @@ Configure a template check on your agent pool or other protected resource.
 This check will fail if your pipeline does not extend the required template and will prevent access to that resource.
 -->
 
-Templates are especially valuable when they can safely take user input in the form of [variables and parameters](inputs.md).
+## Next steps
+
+Next, learn about taking inputs safely through [variables and parameters](inputs.md).
