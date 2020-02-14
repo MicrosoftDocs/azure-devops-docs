@@ -52,9 +52,9 @@ When your Azure AD tenant hasn't assigned an Azure DevOps Administrator, complet
 ## When you're an Azure DevOps Administrator in Azure AD, and you're not a member of the target Azure DevOps organization
 
 1.	Sign in to your organization (```https://dev.azure.com/{yourorganization}```) using the credentials granted to the Azure DevOps Administrator role in Azure AD. 
-    The 401 page appears with a button for claiming ownership.
+    The 403 page appears with a button for claiming ownership.
  
-    ![azure-admin-not-member-org-401.png](media/change-organization-ownership/azure-admin-not-member-org-401.png)
+    ![azure-admin-not-member-org-403.png](media/change-organization-ownership/azure-admin-not-member-org-403.png)
 
 2. Select **Claim Ownership**. Provide a short justification, and then select **Claim Ownership** once again. All Azure DevOps Administrators in your Azure AD receive a notification of the ownership transfer, including your provided justification.
 
