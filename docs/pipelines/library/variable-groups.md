@@ -154,7 +154,7 @@ ID    Name               Type    Description               Is Authorized    Numb
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
