@@ -166,9 +166,10 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
 
+2. Choose **...** and select **Clone**.
+
     ![Clone pipeline menu](media/get-started-designer/clone-pipeline.png)
 
-2. Choose **...** and select **Clone**.
 3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
 * * *
