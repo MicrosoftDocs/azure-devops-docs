@@ -661,7 +661,7 @@ Azure Pipelines supports four kinds of templates:
 - [Step](#step-templates)
 - [Variable](#variable-templates)
 
-You can also use templates to to control what is allowed in a pipeline and to define how parameters can be used.
+You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
 - [Parameter](#parameter-templates)
 
 ::: moniker-end
