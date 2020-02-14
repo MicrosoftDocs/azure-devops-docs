@@ -32,3 +32,7 @@ Avoid echoing secrets to the console, using them in command line parameters, or 
 A number of pipeline events are recorded in the Auditing service.
 Review the audit log periodically to ensure no malicious changes have slipped past.
 Visit `https://dev.azure.com/ORG-NAME/_settings/audit` to get started.
+
+## Next steps
+
+Return to the [overview](overview.md) and make sure you've covered every topic.

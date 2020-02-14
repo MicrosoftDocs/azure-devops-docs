@@ -25,3 +25,20 @@
     #outputStorageContainerSasToken: # Optional
     #sasTokenTimeOutInMinutes: # Optional
 ```
+
+```
+# Example: Upload files from Pipeline staging directory to blob storage.
+- task: AzureFileCopy@2
+  displayName: 'Example Step Name
+  inputs:
+    sourcePath: '$(Build.ArtifactStagingDirectory)/BlobsToUpload'
+    additionalArgumentsForBlobCopy: |
+      '/Y' # Supresses all AZCopy Confirmations. Used here to allow overwrites
+      '/Pattern:*' # Pattern of files to copy.
+      '/S' # Recursive Copy
+    azureSubscription: 'Subscription Name'
+    destination: AzureBlob
+    storage: storageaccountname
+    containerName: storagecontainername
+    blobPrefix: targetdirectoryincontainer
+```

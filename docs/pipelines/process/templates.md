@@ -9,13 +9,13 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 01/10/2020
+ms.date: 02/11/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
 # Template types & usage
 
-Templates let you define reusable content, logic, and parameters. Templates functions in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
+Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
 
@@ -238,8 +238,10 @@ stages:
 # File: templates/npm-with-params.yml
 
 parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
+- name: name  # defaults for any parameters that aren't specified
+  default: ''
+- name: vmImage
+  default: ''
 
 jobs:
 - job: ${{ parameters.name }}
@@ -280,11 +282,13 @@ For example, steps with parameters:
 # File: templates/steps-with-params.yml
 
 parameters:
-  runExtendedTests: 'false'  # defaults for any parameters that aren't specified
+- name: 'runExtendedTests'  # defaults for any parameters that aren't specified
+  type: boolean
+  default: false
 
 steps:
 - script: npm test
-- ${{ if eq(parameters.runExtendedTests, 'true') }}:
+- ${{ if eq(parameters.runExtendedTests, true) }}:
   - script: npm test --extended
 ```
 
@@ -303,15 +307,14 @@ steps:
 ```
 
 > [!Note]
-> Scalar parameters are always treated as strings.
-> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
+> Scalar parameters without a specified type are treated as strings.
+> For example, `eq(parameters['myparam'], true)` will return `true`, even if the `myparam` parameter is the word `false`, if `myparam` is not explicitly made `boolean`.
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
 Parameters are not limited to scalar strings.
-As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
-Likewise, sequences can be passed where sequences are expected.
-For example:
+See the list of [data types](#parameter-data-types).
+For example, using the `object` type:
 
 ```yaml
 # azure-pipelines.yml
@@ -324,7 +327,9 @@ jobs:
 
 # process.yml
 parameters:
-  pool: {}
+- name: 'pool'
+  type: object
+  default: {}
 
 jobs:
 - job: build
@@ -363,7 +368,9 @@ You can put the template in a core repo and then refer to it from each of your a
 # Repo: Contoso/BuildTemplates
 # File: common.yml
 parameters:
-  vmImage: 'ubuntu 16.04'
+- name: 'vmImage'
+  default: 'ubuntu 16.04'
+  type: string
 
 jobs:
 - job: Build
@@ -447,7 +454,9 @@ For example, you define a template:
 # File: steps/msbuild.yml
 
 parameters:
-  solution: '**/*.sln'
+- name: 'solution'
+  default: '**/*.sln'
+  type: string
 
 steps:
 - task: msbuild@1
@@ -487,7 +496,9 @@ Here's an example that checks for the `solution` parameter using Bash (which ena
 # File: steps/msbuild.yml
 
 parameters:
-  solution: ''
+- name: 'solution'
+  default: ''
+  type: string
 
 steps:
 - bash: |
@@ -534,8 +545,12 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 ```yaml
 parameters:
-  restoreProjects: ''
-  buildProjects: ''
+- name: 'restoreProjects'
+  default: ''
+  type: string
+- name: 'buildProjects'
+  default: ''
+  type: string
 
 steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
@@ -550,9 +565,15 @@ For instance, to insert into a sequence:
 # File: jobs/build.yml
 
 parameters:
-  preBuild: []
-  preTest: []
-  preSign: []
+- name: 'preBuild'
+  type: stepList
+  default: []
+- name: 'preTest'
+  type: stepList
+  default: []
+- name: 'preSign'
+  type: stepList
+  default: []
 
 jobs:
 - job: Build
@@ -587,7 +608,9 @@ To insert into a mapping, use the special property `${{ insert }}`.
 ```yaml
 # Default values
 parameters:
-  additionalVariables: {}
+- name: 'additionalVariables'
+  type: object
+  default: {}
 
 jobs:
 - job: build
@@ -610,15 +633,20 @@ jobs:
 
 ### Conditional insertion
 
-If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
+If you want to conditionally insert into a sequence or a mapping in a template, use insertions and expression evaluation. You can also use `if` statements [outside of templates](expressions.md) as long as you use template syntax.  
 
-For example, to insert into a sequence:
+For example, to insert into a sequence in a template:
 
 ```yaml
 # File: steps/build.yml
 
 parameters:
-  toolset: msbuild
+- name: 'toolset'
+  default: msbuild
+  type: string
+  values:
+  - msbuild
+  - dotnet
 
 steps:
 # msbuild
@@ -645,18 +673,20 @@ steps:
     toolset: dotnet
 ```
 
-For example, to insert into a mapping:
+For example, to insert into a mapping in a template:
 
 ```yaml
 # File: steps/build.yml
 
 parameters:
-  debug: false
+- name: 'debug'
+  type: boolean
+  default: false
 
 steps:
 - script: tool
   env:
-    ${{ if eq(parameters.debug, 'true') }}:
+    ${{ if eq(parameters.debug, true) }}:
       TOOL_DEBUG: true
       TOOL_DEBUG_DIR: _dbg
 ```
@@ -677,7 +707,9 @@ For example, you can wrap the steps of each job with additional pre- and post-st
 ```yaml
 # job.yml
 parameters:
-  jobs: []
+- name: 'jobs'
+  type: jobList
+  default: []
 
 jobs:
 - ${{ each job in parameters.jobs }}: # Each job
@@ -710,8 +742,9 @@ For example, to add additional dependencies:
 
 ```yaml
 # job.yml
-parameters:
-  jobs: []
+- name: 'jobs'
+  type: jobList
+  default: []
 
 jobs:
 - job: SomeSpecialTool                # Run your special tool in its own job first
@@ -747,3 +780,10 @@ jobs:
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
 
+## Limits
+
+Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
+To help prevent runaway growth, Azure Pipelines imposes the following limits:
+- No more than 50 separate YAML files may be included (directly or indirectly)
+- No more than 10 megabytes of total YAML content can be included
+- No more than 2000 characters per template expression are allowed

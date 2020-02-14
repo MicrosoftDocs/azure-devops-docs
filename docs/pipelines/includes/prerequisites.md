@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 * A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com).

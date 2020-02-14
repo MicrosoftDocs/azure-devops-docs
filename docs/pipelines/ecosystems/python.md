@@ -241,7 +241,7 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 - script: |
     pip install pytest
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
 ```
 ::: moniker range="azure-devops"

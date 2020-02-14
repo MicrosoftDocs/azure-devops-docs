@@ -117,5 +117,6 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ## Command line interface
 
 - [Azure DevOps CLI](../../cli/index.md)
+- [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
 
 ::: moniker-end

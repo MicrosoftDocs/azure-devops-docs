@@ -1,3 +1,13 @@
+---
+ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 1. When prompted, select the Azure subscription in which you created your Web App.
 2. Select the Web App.
 3. Select **Validate and configure**.
