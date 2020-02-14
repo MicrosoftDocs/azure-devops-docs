@@ -1,3 +1,13 @@
+---
+ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 
    ![Screenshot showing button to set up build for a repository](../../media/set-up-first-build-from-code-hub.png)
