@@ -158,7 +158,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
-    ![Pipeline details](../get-started/media/pipeline-overview.png)
+    ![Pipeline details](get-started/media/pipeline-overview.png)
 
 2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
