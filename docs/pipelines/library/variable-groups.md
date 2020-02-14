@@ -571,4 +571,14 @@ When you set a variable with the same name in multiple scopes, the following pre
 
 [!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range="azure-devops"
+
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables in a group. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service). 
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
 * * *
