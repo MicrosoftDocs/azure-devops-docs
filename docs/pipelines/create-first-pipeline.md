@@ -25,6 +25,9 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 
 [!INCLUDE [include](includes/prerequisites.md)]
 
+> [!NOTE]
+> If you want create a new pipeline by copying another pipeline, see [Clone a pipeline](#clone-a-pipeline).
+
 ## Create your first pipeline
 
 #### [Java](#tab/java)
@@ -151,8 +154,6 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ## Clone a pipeline
 
-If your new pipeline can be made by copying another pipeline, follow the instructions in this section.
-
 #### [YAML](#tab/yaml/)
 
 1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
@@ -162,6 +163,13 @@ If your new pipeline can be made by copying another pipeline, follow the instruc
 2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
 #### [Classic](#tab/classic/)
+
+1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
+
+    ![Clone pipeline menu](media/get-started-designer/clone-pipeline.png)
+
+2. Choose **...** and select **Clone**.
+3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
 * * *
 
