@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/14/2020
 ---
 
 You've just put your own CI pipeline in place to automatically build and validate whatever code is checked in by your team. You can also automatically deploy your app. To learn more, see one of these topics:
