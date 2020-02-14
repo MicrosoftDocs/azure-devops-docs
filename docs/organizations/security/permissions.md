@@ -728,9 +728,9 @@ For each project that you create, the system creates the followings project-leve
         <td>Project Valid Users</td>
         <td><p>Has permissions to access the project.</p>
             <blockquote>
-                If you set the <strong>View collection-level information</strong> permission
+                If you set the <strong>View project-level information</strong> permission
                 to <strong>Deny</strong> or <strong>Not set</strong> for this group,
-                no users will be able to access the project.
+                no users, except for members of Project Collection Administrators group, will be able to access the project. 
             </blockquote>
         </td>
         <td>
