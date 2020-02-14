@@ -10,7 +10,7 @@
     href: get-started/pipelines-sign-up.md
   - name: Create your first pipeline
     href: create-first-pipeline.md
-    displayName: status badge, get started, first pipeline, import from github
+    displayName: status badge, get started, first pipeline, import from github, clone
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
 # - name: Publish build results 
