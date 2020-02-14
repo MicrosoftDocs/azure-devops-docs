@@ -33,6 +33,8 @@ As a member of an Azure Boards project, you can use the majority of features to 
 ::: moniker range="azure-devops"
 
 **A:** For private projects, you can grant access to an unlimited number of users by assigning them Stakeholder access. For public projects, anonymous users&mdash;ones who don't sign into the project&mdash;can view all work items. To learn more, see [About access levels](../organizations/security/access-levels.md) and [About public projects](../organizations/public/about-public-projects.md).
+
+Also, if your organization uses Azure Active Directory to manage user access, you can [add external users to your organization](../organizations/accounts/add-external-user.md).
  
 ::: moniker-end
 
