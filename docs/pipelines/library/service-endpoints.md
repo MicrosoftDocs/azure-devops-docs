@@ -79,9 +79,9 @@ For example, this is the default **Azure Resource Manager** connection dialog:
 1. Next to the overview tab, you can see **Usage history** that shows the list of pipelines using the service connection.
 ![Azure Resource Manager usage history](../release/media/azure-rm-endpoint/usage-history.png)
 
-1. To update the service connection, click on **Edit** at the top right corner of the page.
+1. To update the service connection, click on **Edit** at the top-right corner of the page.
 
-1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top right corner.
+1. **Approvals and checks**, **Security** and **Delete** are part of the more options at the top-right corner.
 ![Azure Resource Manager more options](../release/media/azure-rm-endpoint/more-options.png)
 
 <a name="security"></a>
@@ -93,10 +93,10 @@ To manage the security for a connection:
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
-1. To manage user permissions at hub level, go to the more options at the top right corner and choose **Security**.
+1. To manage user permissions at hub level, go to the more options at the top-right corner and choose **Security**.
 ![Service connection hub security](../release/media/azure-rm-endpoint/service-connection-hub-security.png)
 
-1. To manage security for a service connection, open the service connection and go to more options at top right corner and choose **Security**.
+1. To manage security for a service connection, open the service connection and go to more options at top-right corner and choose **Security**.
 ![Azure Resource Manager security](../release/media/azure-rm-endpoint/security.png)
 
 Service connection is a critical resource for various workflows in Azure DevOps like Classic Build and Release pipelines, YAML pipelines, KevVault Variable groups etc. Based on the usage patterns, service connection security is divided into three categories in the service connections new UI.
@@ -121,12 +121,12 @@ For backward compatibility, in the existing projects, Endpoint Administrators gr
 > This change is applicable only in Azure DevOps Services where new UI is available. 
 > Azure DevOps Server 2019 and older versions still follow the previous security model.
 
-Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role is split between the two levels.
+Along with the new service connections UI, we are introducing **Sharing of service connections across projects**. With this feature, service connections now become an organization level object however scoped to current project by default. In User permissions section, you can see **Project** and **Organization** level permissions. And the functionalities of administrator role are split between the two levels.
 
 #### Project level permissions
 The project level permissions are the user permissions with reader, user, creator and administrator roles, as explained above, within the project scope. You have inheritance and you can set the roles at the hub level as well as for each service connection. 
 
-The project-level administrator have limited administrative capabilities as below:
+The project-level administrator has limited administrative capabilities as below:
 * A project-level administrator can manage other users and roles at project scope.
 * A project-level administrator can rename a service connection, update description and enable/disable "Allow pipeline access" flag.
 * A project-level administrator can delete a service connection which removes the existence of service connection from the project.
@@ -139,19 +139,19 @@ The user that created the service connection is automatically added to the proje
 Organization level permissions are introduced along with cross project sharing feature. Any permissions set at this level are reflected across all the projects where the service connection is shared. There is not inheritance for organization level permissions. Today we only have administrator role at organization level.
 
 The organization-level administrator has all the administrative capabilities that include:
-* A organization-level administrator can manage organization level users.
-* A organization-level administrator can edit all the fields of a service connection.
-* A organization-level administrator can share/un-share a service connection with other projects.
+* An organization-level administrator can manage organization level users.
+* An organization-level administrator can edit all the fields of a service connection.
+* An organization-level administrator can share/un-share a service connection with other projects.
 
 ![Azure Resource Manager organization security](../release/media/azure-rm-endpoint/organization-security.png)
 
-The user that created the service connection is automatically added as a organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
+The user that created the service connection is automatically added as an organization level Administrator role for that service connection. In all the existing service connections, for backward compatibility, all the connection administrators are made organization-level administrators to ensure there is no change in the behavior.
 
 
 ### Pipeline permissions
 Pipeline permissions control which YAML pipelines are authorized to use this service connection. This is interlinked with 'Allow pipeline access' checkbox you find in service connection creation dialogue.
 
-You can either choose to open access for all pipelines to consume this service connection from the more options at top right corner of the **Pipeline permissions** section in security tab of a service connection.
+You can either choose to open access for all pipelines to consume this service connection from the more options at top-right corner of the **Pipeline permissions** section in security tab of a service connection.
 
 Or you can choose to lock down the service connection and only allow selected YAML pipelines to consume this service connection. If any other YAML pipeline refers to this service connection, an authorization request is raised which has to be approved by the connection administrators.
 
@@ -203,7 +203,7 @@ use one of the following techniques:
 
 - If you want to authorize a service connection for a specific pipeline, open the pipeline
   by selecting **Edit** and queue a build manually. You will see a resource authorization error
-  and a "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
+  and an "Authorize resources" action on the error. Choose this action to explicitly add the pipeline as an
   authorized user of the service connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
@@ -260,7 +260,7 @@ using Azure credentials or an Azure management certificate.
 | Subscription Name | Required. The name of your Microsoft Azure subscription (account). |
 | User name | Required for Credentials authentication. User name of a work or school account (for example @fabrikam.com). Microsoft accounts (for example @live or @hotmail) are not supported. |
 | Password | Required for Credentials authentication. Password for the user specified above. |
-| Management Certificate | Required for Certificate based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
+| Management Certificate | Required for Certificate-based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
 > If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
@@ -274,7 +274,7 @@ using Azure credentials or an Azure management certificate.
 <h3 id="sep-azure-resource-manager">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
-using Service Principal Authentication (SPA) or an Azure Managed Service Identity.
+using Service Principal Authentication (SPA) or an Azure-Managed Service Identity.
 The dialog offers two main modes:
 
 * **Automated subscription detection**. In this mode, Azure Pipelines and TFS will attempt to query Azure for all of the subscriptions and instances to which you have access using the credentials you are currently logged on with in Azure Pipelines or TFS (including Microsoft accounts and School or Work accounts).
@@ -811,8 +811,7 @@ available through extensions are:
 
 * [TFS artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with Azure Pipelines
-  through a TFS service connection
-  connection and the **Team Build (external)** artifact,
+  through a TFS service connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from Azure Pipelines. For more information, see
   [External TFS](../release/artifacts.md#onpremtfssource) and
