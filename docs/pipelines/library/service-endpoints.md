@@ -209,7 +209,7 @@ use one of the following techniques:
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 > [!NOTE]
-> Service Connection cannot be specified by variable
+> Service connection cannot be specified by variable
 
 <a name="ep-types"></a>
 
