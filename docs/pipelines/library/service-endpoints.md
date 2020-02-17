@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 05/16/2019
+ms.date: 02/17/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -207,6 +207,9 @@ use one of the following techniques:
   authorized user of the service connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
+
+> [!NOTE]
+> Service Connection cannot be specified by variable
 
 <a name="ep-types"></a>
 
