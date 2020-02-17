@@ -261,7 +261,7 @@ container registry, repository, image name, and tag information. You can also us
 
 ### Zip Deploy
 
-Creates a .zip deployment package and deploys the file contents to the **wwwroot** folder of the App Service or Function App in Azure.
+Expects a .zip deployment package and deploys the file contents to the **wwwroot** folder of the App Service or Function App in Azure.
 This option overwrites all existing contents in the **wwwroot** folder. For more information, see
 [Zip deployment for Azure Functions](https://docs.microsoft.com/azure/azure-functions/deployment-zip-push).
 
@@ -269,7 +269,7 @@ This option overwrites all existing contents in the **wwwroot** folder. For more
 
 ### Run From Package
 
-Creates the same deployment package as Zip Deploy. However, instead of deploying files to the **wwwroot** folder, the entire package is
+Expects the same deployment package as Zip Deploy. However, instead of deploying files to the **wwwroot** folder, the entire package is
 mounted by the Functions runtime and files in the **wwwroot** folder become read-only. For more information, see
 [Run your Azure Functions from a package file](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package).
 
@@ -277,7 +277,7 @@ mounted by the Functions runtime and files in the **wwwroot** folder become read
 
 ### War Deploy
 
-Creates a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
+Expects a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
 
 ## Troubleshooting
 
