@@ -129,7 +129,7 @@ The following table describes each part of the query.
 <td>Count the number of partially successful runs as PartiallySucceededCount</td>
 <tr>
 <tr><td><code>CanceledCount with sum as CanceledCount</code></td>
-<td>Count the number of cancelled runs as CanceledCount</td>
+<td>Count the number of canceled runs as CanceledCount</td>
 <tr>
 <tr><td><code>))</code></td>
 <td>Close aggregate() and groupby()</td>
