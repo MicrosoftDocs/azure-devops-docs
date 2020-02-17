@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: UshaN
 author: UshaN
-ms.date: 09/24/2019
+ms.date: 02/17/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -108,7 +108,7 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
 - task: AzureCLI@2
   displayName: Azure CLI
   inputs:
-    azureSubscription: <Name of the Azure subscription>
+    azureSubscription: <Name of the Azure Resource Manager service connection>
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
