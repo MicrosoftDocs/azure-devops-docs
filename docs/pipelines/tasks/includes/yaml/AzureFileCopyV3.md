@@ -26,7 +26,7 @@
     #sasTokenTimeOutInMinutes: # Optional
 ```
 
-```
+```YAML
 # Example: Upload files from Pipeline staging directory to blob storage.
 - task: AzureFileCopy@2
   displayName: 'Example Step Name
