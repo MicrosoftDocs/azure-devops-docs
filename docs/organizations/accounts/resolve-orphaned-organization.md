@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 02/14/2019
+ms.date: 02/18/2019
 monikerRange: 'azure-devops'
 ---
 
@@ -37,7 +37,7 @@ If you don't know who the Azure DevOps Administrator is for your organization, f
 1. To find your Azure DevOps Administrator, go to the [Azure portal](https://portal.azure.com/), as described in [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about Azure AD roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).  
 2. The Azure DevOps Administrator can now complete the steps in [Change Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization.  
 
-## When you don't have an Administrator
+## When you don't have an Azure DevOps Administrator
 
 When your Azure AD tenant hasn't assigned an Azure DevOps Administrator, complete the following steps.
 
@@ -48,15 +48,33 @@ When your Azure AD tenant hasn't assigned an Azure DevOps Administrator, complet
 	> Any changes to role membership may take up to an hour to propagate to Azure DevOps.  
 
 3. The Azure DevOps Administrator can now complete the steps in [Change Azure DevOps owner](change-organization-ownership.md) to claim ownership of the target Azure DevOps organization.  
- 
+
+## When your Azure DevOps Administrator is a member of the target organization
+
+Complete the following steps when your Azure DevOps Administrator in Azure AD is a member of the target Azure DevOps organization.
+
+1.	As the Azure DevOps Administrator, sign in to your organization (```https://dev.azure.com/{yourorganization}```) . 
+
+2. Select **Organization Settings**, and then **Overview**.
+
+3. Within the warning message, select **Change owner**.
+
+    ![Warning PCA and Owner inactive in Azure AD](media/change-organization-ownership/warning-message-change-owner.png)
+
+4. Select a user from the dropdown menu, or search for a user by entering the user's name, provide a short justification, and then select **Change**. 
+
+    ![Change the organization owner](media/change-organization-ownership/change-organization-owner.png)
+
+   A notification of the ownership transfer with your provided justification is sent to all Azure DevOps Administrators in your Azure Active Directory. 
+
 ## When your Azure DevOps Administrator isn't a member of the target organization
 
-Complete the following step when your Azure DevOps Administrator in Azure AD isn't a member of the target Azure DevOps organization.
+Complete the following steps when your Azure DevOps Administrator in Azure AD isn't a member of the target Azure DevOps organization.
 
 1.	Sign in to your organization (```https://dev.azure.com/{yourorganization}```) using the credentials granted to the Azure DevOps Administrator role in Azure AD. 
     An error page appears with a button for claiming ownership.
  
-    ![Azure AD Administrator not member of organization.png](media/change-organization-ownership/not-member-of-organization-azure-active-directory-administrator.png)
+    ![Azure AD Administrator not member of organization](media/change-organization-ownership/error-message-administrator-not-member-of-organization.png)
 
 2. Select **Claim Ownership**. Provide a short justification, and then select **Claim Ownership** once again. All Azure DevOps Administrators in your Azure AD receive a notification of the ownership transfer, including your provided justification.
 

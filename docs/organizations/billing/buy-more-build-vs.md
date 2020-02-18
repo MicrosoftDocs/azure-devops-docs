@@ -10,7 +10,7 @@ ms.topic: quickstart
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 02/13/2020
+ms.date: 02/18/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -104,7 +104,8 @@ To view your current CI/CD capacity details and consumption, complete the follow
 
    ![Pipelines, Parallel jobs](media/shared/pipelines-parallel-jobs.png)
 
-  > **Important:** Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
+  > [!IMPORTANT]
+  > Hosted XAML build controller isn't supported. If you have an organization where you need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
   > set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
   > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx). To learn more about the hosted XAML model, see [Get started with XAML](../../pipelines/get-started-yaml.md).
 
