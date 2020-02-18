@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 1/29/2020
+ms.date: 2/18/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -116,6 +116,7 @@ This document covers the schema of an Azure Pipelines YAML file.
 To learn the basics of YAML, see [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/).
 Azure Pipelines doesn't support all YAML features.
 Unsupported features include anchors, complex keys, and sets.
+Also, unlike standard YAML, Azure Pipelines depends on seeing `stage`, `job`, `task`, or a task shortcut like `script` as the first key in a mapping.
 
 ## Pipeline
 
@@ -661,7 +662,7 @@ Azure Pipelines supports four kinds of templates:
 - [Step](#step-templates)
 - [Variable](#variable-templates)
 
-You can also use templates to to control what is allowed in a pipeline and to define how parameters can be used.
+You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
 - [Parameter](#parameter-templates)
 
 ::: moniker-end
