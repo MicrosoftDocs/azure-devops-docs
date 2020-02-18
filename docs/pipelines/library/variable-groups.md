@@ -15,12 +15,12 @@ monikerRange: '>= tfs-2017'
 
 # Add & use variable groups
 
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-
 Use a variable group to store values that you want to control and make available across
 multiple pipelines. You can also use variable groups to store secrets and other values
 that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml&view=azure-devops#use-a-variable-group). Variable groups are defined and managed in the **Library** page under
 **Pipelines**.
+
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="< tfs-2018"
 > [!NOTE]
@@ -60,7 +60,7 @@ Choose **+ Variable group**.
 
 ::: moniker range="= azure-devops"
 
-Using the Azure DevOps CLI, you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) as well as [manage the inidividual variables within a variable group](#manage-variables-in-a-variable-group).
+Using the Azure DevOps CLI, you can create and update variable groups for the pipeline runs in your project. You can also [manage the variable groups](#manage-a-variable-group) as well as [manage the individual variables within a variable group](#manage-variables-in-a-variable-group).
 
 ### Prerequisites
 
