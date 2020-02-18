@@ -30,7 +30,7 @@ To track the progress of more than one test plan or test suite, use the Progress
 6. View the progress each suite has made within a test plan and identify the areas that need attention.
 
 ### Configuring the report
-By navigating to Test Plans > Progress Report*, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
+By navigating to Test Plans > Progress Report, you can start using the report. It requires no setup and is applicable for all Azure DevOps Services organizations. When you view the report, it shows you the status of the test plan you had accessed last. However, using the filter bar, you can select one or more test plans in the project.
 
 ### Understanding the report
 The progress report consists of three sections:
