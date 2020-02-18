@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 11/27/2019
+ms.date: 02/18/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
@@ -101,6 +101,9 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
 
 >[!IMPORTANT]
-> Your feedback to `devops_tools@microsoft.com` is getting through, even if you receive a message 
-> that seems to indicate that the message couldn't be delivered. Thank you for your feedback and patience
-> while we resolve the issue that is causing the message. 
+> When sending feedback email, you may receive the following notification:
+>
+> `The group <group> only accepts messages from people in its organization or on its allowed senders list, and your email address isn't on the list.`
+>
+> Even if you receive this message, your feedback to `devops_tools@microsoft.com` is getting through.
+> Thank you for your feedback and patience while we resolve the issue that is causing the message. 
