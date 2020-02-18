@@ -415,9 +415,9 @@ Following YAML snippet showcases JSON variable substitution.
     steps:
     - task: AzureRmWebAppDeployment@4
       inputs:
-        ConnectionType: 'AzureRM'
+        ConnectionType: <Name of the Azure Resource Manager service connection>
         azureSubscription: <Name of the Azure subscription>
-        appType: <Name of the Web>
+        appType: <Name of the App Service type>
         WebAppName: <Name of the Azure WebApp>
         package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         JSONFiles: '**/appsettings.json'
