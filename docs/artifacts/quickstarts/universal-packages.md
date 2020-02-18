@@ -130,6 +130,8 @@ To see the package that you just published, go to the organization that you spec
 
 Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then, download your package.
 
+You must use the Azure CLI to download the package. Azure DevOps doesn't support direct HTTP/HTTPS download links or other ways to download the package. 
+
 The following example downloads a package with the same metadata as the publish example. Update these values to match the values that you selected when you published your package.
 
 # [New URLs](#tab/azuredevops)
