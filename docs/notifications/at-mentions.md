@@ -81,6 +81,11 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 
 Use the <strong>@mention</strong> control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
+> [!NOTE]
+> Do not copy/paste <strong>@mention</strong> users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
+
+::: moniker-end
+
 ## Related articles
 
 - [Work item form controls](../boards/work-items/work-item-form-controls.md)  
