@@ -405,7 +405,7 @@ Following YAML snippet showcases JSON variable substitution.
 ```YAML
 - variables:
     Data.DebugMode: disabled
-    Data.DefaultConnection.ConnectionString: 'Server= This is JSON substitution example demo'
+    Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
     Data.DBAccess.Users.0: Admin-3
     Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
@@ -415,7 +415,7 @@ Following YAML snippet showcases JSON variable substitution.
     steps:
     - task: AzureRmWebAppDeployment@4
       inputs:
-        ConnectionType: <Name of the Azure Resource Manager service connection>
+        ConnectionType: Azure Resource Manager
         azureSubscription: <Name of the Azure subscription>
         appType: <Name of the App Service type>
         WebAppName: <Name of the Azure WebApp>
