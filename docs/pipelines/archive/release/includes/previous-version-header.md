@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/19/2020
 ---
 
 **Visual Studio 2015 | Azure Pipelines | TFS 2015 | [Previous version](../overview-rm2013.md)**  

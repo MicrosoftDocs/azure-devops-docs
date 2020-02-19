@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/19/2020
 ---
 
 1. Choose **Azure DevOps**, **Collection settings**.
