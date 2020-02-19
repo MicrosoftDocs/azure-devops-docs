@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 1/15/2020
+ms.date: 02/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,6 +24,9 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 ## Prerequisites
 
 [!INCLUDE [include](includes/prerequisites.md)]
+
+> [!NOTE]
+> If you want create a new pipeline by copying another pipeline, see [Clone a pipeline](#clone-a-pipeline).
 
 ## Create your first pipeline
 
@@ -148,6 +151,32 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
 --- 
+
+## Clone a pipeline
+
+If your new pipeline can be created by copying another pipeline, follow the instructions in this section.
+
+#### [YAML](#tab/yaml/)
+
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+
+    ![Pipeline details](get-started/media/pipeline-overview.png)
+
+2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+
+3. To customize your newly cloned pipeline, see [Customize your pipeline](customize-pipeline.md).
+
+#### [Classic](#tab/classic/)
+
+1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
+
+2. Choose **...** and select **Clone**.
+
+    ![Clone pipeline menu](media/get-started-designer/clone-pipeline.png)
+
+3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
+
+* * *
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
