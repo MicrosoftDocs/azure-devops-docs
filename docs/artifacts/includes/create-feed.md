@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 A feed is a container for packages.
