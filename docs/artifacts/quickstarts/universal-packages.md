@@ -121,7 +121,7 @@ az artifacts universal publish --organization https://fabrikam.visualstudio.com 
 
 ## View the package in your feed
 
-To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Artifacts** icon on the left side naviation.
+To see the package that you just published, go to the organization that you specified in the publish command, select any project, and then select the **Artifacts** icon on the left side navigation.
 
 > [!div class="mx-imgBorder"] 
 > ![Universal Package listing in a sample feed](media/universal-in-feed.png)
