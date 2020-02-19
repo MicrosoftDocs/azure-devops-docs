@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 To talk to Azure Artifact feeds, you'll need a token on your local machine that Maven can pick up and pass to Azure DevOps Services.  
