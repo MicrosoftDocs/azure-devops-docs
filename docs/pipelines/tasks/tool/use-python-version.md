@@ -87,11 +87,35 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 
 ### How can I configure a self-hosted agent to use this task?
 
-Our image generation scripts are open-source [on GitHub](https://github.com/actions/virtual-environments).
-Search the code for `AGENT_TOOLSDIRECTORY`.
+The desired Python version will have to be added to the tool cache on the self-hosted agent in order for the task to use it. Normally the tool cache is located under the `_work/_tool` directory of the agent or the path can be overrided by the environment variable AGENT_TOOLSDIRECTORY. Under that directory, create the following directory structure based off of your Python version:
 
-For details on how the task finds a particular Python version, see [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
-The tool name to use is "Python."
+```
+$AGENT_TOOLSDIRECTORY/
+    Python/
+        {version number}/
+            {platform}/
+                {tool files}
+            {platform}.complete
+```
+
+The `version number` should follow the format of `1.2.3`. 
+The `platform` should either be `x86` or `x64`.
+The `tool files` should be the unzipped Python version files.
+The `{platform}.complete` should be a 0 byte file that looks like `x86.complete` or `x64.complete` and just signifies the tool has been installed in the cache properly.
+
+As a complete, concrete example, here is how a completed download of Python 3.6.4 for x64 would look in the tool cache:
+
+```
+$AGENT_TOOLSDIRECTORY/
+    Python/
+        3.6.4/
+            x64/
+                {tool files}
+            x64.complete
+```
+
+For more details on the tool cache, look [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
+
 In order that your scripts may work as they would on Microsoft-hosted agents, we recommend following the symlinking structure from [PEP 394](https://www.python.org/dev/peps/pep-0394/) on Unix-like systems.
 
 <!-- ENDSECTION -->
