@@ -104,7 +104,15 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="5"><a href="2020/sprint-164-update.md" data-raw-source="[28 January 2020](2020/sprint-163-update.md)">28 January 2020</a></td>
+            <td rowspan="5"><a href="2020/sprint-165-update.md" data-raw-source="[17 February 2020](2020/sprint-163-update.md)">17 February 2020</a></td>
+            <td>Disable Request Access policy</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Preview fully parsed YAML document without running the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Disable automatic agents upgrades at a pool level</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure File Copy Task now supports AzCopy V10</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Custom notification subscription for draft pull requests</td><td>Repos</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="5"><a href="2020/sprint-164-update.md" data-raw-source="[28 January 2020](2020/sprint-164-update.md)">28 January 2020</a></td>
             <td>Restrict organization creation via Azure AD tenant policy</td><td>General</td><td>Future</td>
         </tr>
         <tr><td>Read-only variables</td><td>Pipelines</td><td>Future</td></tr>
