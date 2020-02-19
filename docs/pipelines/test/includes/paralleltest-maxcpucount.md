@@ -3,6 +3,7 @@ ms.topic: include
 ms.prod: devops
 ms.technology: devops-cicd
 ms.author: pbora
+ms.manager: mijacobs
 author: pboraMSFT
 ms.date: 02/19/2020
 ---
