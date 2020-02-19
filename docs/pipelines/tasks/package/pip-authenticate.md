@@ -62,7 +62,7 @@ For project scoped feeds that are in a different project than where the pipeline
 
 In this example, we are setting authentication for downloading from private Azure Artifacts feed but [pypi](https://pypi.org) is consulted first. The authenticate task creates an environment variable `PIP_EXTRA_INDEX_URL` which contain auth credentials required to download the distributions. 'HelloTestPackage' will be downloaded from the authenticated feeds only if it's not present in [pypi](https://pypi.org).
 
-Note that for project scoped feeds that are in a different project than where the pipeline is running in, you must manually give the project and the feed access to the pipeline's project's build service.
+For project scoped feeds that are in a different project than where the pipeline is running in, you must manually give the project and the feed access to the pipeline's project's build service.
 
 ```YAML
 - task: PipAuthenticate@1

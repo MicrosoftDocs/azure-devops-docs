@@ -130,7 +130,7 @@ Feeds within your Azure Artifacts organization will also be automatically authen
 ```
 `OtherOrganizationFeedConnection` and `ThirdPartyRepositoryConnection` are the names of [NuGet service connections](~/pipelines/library/service-endpoints.md#sep-nuget) that have been configured and authorized for use in your pipeline, and have URLs that match those in your nuget.config or command line argument.
 
-Note that the package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
+The package source URL pointing to an Azure Artifacts feed may or may not contain the project. An URL for a project scoped feed must contain the project, and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ## Open source
 
@@ -188,7 +188,7 @@ Instead:
 No. While this task itself will work behind a web proxy [your agent has been configured to use](~/pipelines/agents/proxy.md), it does not configure NuGet tools to use the proxy.
 
 To do so, you can either:
-* Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Note that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
+* Set the environment variable `http_proxy` and optionally `no_proxy` to your proxy settings. See [NuGet CLI environment variables](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-environment-variables) for details. Please understand that these are commonly used variables which other non-NuGet tools (e.g. curl) may also use.
   >**Caution:**  
   >The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
 
