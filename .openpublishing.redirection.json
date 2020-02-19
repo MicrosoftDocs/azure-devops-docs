@@ -7758,7 +7758,7 @@
     {
       "source_path": "docs/pipelines/actions/create-deploy-releases.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-iis-deploygroups.md",
@@ -7803,7 +7803,7 @@
     {
       "source_path": "docs/pipelines/actions/work-with-release-definitions.md",
       "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/set-permissions.md",
