@@ -1,4 +1,4 @@
-﻿---
+---
 title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
@@ -11,16 +11,29 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/17/2020
 ---
 
 # Copy or clone work items  
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
+::: moniker range=">= azure-devops-2019"
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. 
+
+::: moniker-end
+
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
+
+> [!TIP]    
+> You can't copy or clone linked work items at this time. To learn more, see the [Q & A section](#faq-copy-clone) later in this article. 
+
 
 Use this article to learn how to:  
 
@@ -177,6 +190,12 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 ![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
+
+## Q & A
+
+[!INCLUDE [temp](../includes/faq-copy-clone.md)]
+
+
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

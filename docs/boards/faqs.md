@@ -91,6 +91,20 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
 
+
+::: moniker range=">= azure-devops-2019"
+
+## GitHub integration
+
+Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
+
+
+### Q: Can I specify the status when linking a work item to a GitHub commit or PR?
+
+**A:** No. This feature isn't supported at this time. 
+
+::: moniker-end 
+
 ## Backlogs and boards 
 
 Each backlog and board represents a filtered list of work items based on area path and iteration path assignments. To understand how the filtering is applied, see [About teams and Agile tools, Team defaults referenced by backlogs and boards](../organizations/settings/about-teams-and-settings.md#team-defaults).
@@ -116,18 +130,11 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
 
-::: moniker range=">= azure-devops-2019"
 
-## GitHub integration
+## Queries 
 
-Azure Boards integrates with GitHub. To learn more, see [Azure Boards & GitHub](github/index.md).
+[!INCLUDE [temp](includes/faq-view-all-work-items.md)] 
 
-
-### Q: Can I specify the status when linking a work item to a GitHub commit or PR?
-
-**A:** No. This feature isn't supported at this time. 
-
-::: moniker-end 
 
 ## Configuration and customizations  
 
