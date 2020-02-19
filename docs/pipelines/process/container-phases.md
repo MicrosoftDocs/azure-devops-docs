@@ -113,8 +113,8 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running an 1803
-> build, we also use the `1803` tag for the container.
+> Since this example uses the hosted Windows Container pool, which is running a windows-2019
+> build, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
