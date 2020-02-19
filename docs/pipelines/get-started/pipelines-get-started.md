@@ -106,7 +106,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Agents](../agents/agents.md) |  Yes | Yes | Yes | Specifies a required resource on which the pipeline runs.|
 | [Approvals](../release/approvals/index.md) | Yes | No  | Yes | Defines a set of validations required prior to completing a deployment stage. |
 | [Artifacts](../artifacts/artifacts-overview.md) | Yes | Yes | Yes | Supports publishing or consuming different package types. |
-| [Caching](../caching/index.md) | Yes | Yes | No  | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
+| [Caching](../release/caching.md) | Yes | Yes | No  | Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.| 
 | [Conditions](../process/conditions.md) | Yes | Yes | Yes | Specifies conditions to be met prior to running a job.     |
 | [Container jobs](../process/container-phases.md) |  Yes | No | No | Specifies jobs to run in a container.  |
 | [Demands](../process/demands.md) |  Yes | Yes | Yes | Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents. |
