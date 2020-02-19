@@ -71,7 +71,47 @@ You can add custom work item types at each level, and even add custom portfolio 
 
 ## Work tracking options and recommended usage  
 
-One of the main choices teams have is choosing the work item types they use to track their work. The following table summarizes the main options, recommended usage, and  supported tasks and tools.  
+One of the main choices teams have is choosing the work item types they use to track their work. The following table summarizes the main options, recommended usage, and supported tasks and tools.  
+
+:::row:::
+   :::column span="":::
+      **Work tracking options**
+   :::column-end:::
+   :::column span="2":::
+      **Tasks and tools supported**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Tasks only
+   :::column-end:::
+   :::column span="2":::
+      **Not recommended**  
+      There is no way to quickly enter new tasks in a backlog nor prioritize a backlog of tasks. In addition, there is no support for calendar views, cross-team views, or portfolio planning 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Requirements with child-dependent tasks
+   :::column-end:::
+   :::column span="2":::
+     ** Supports Scrum methods**  
+     Recommended for teams that follow Scrum methods and want to track time associated with work.  
+     - Quickly define and prioritize backlog items: [Product backlog](backlogs/create-your-backlog.md)</li>
+     - Forecast sprints using team velocity: [Forecast](sprints/forecast.md)  
+     - Plan sprints: [Backlog Planning tool](sprints/assign-work-sprint.md)  
+     - Plan and track capacity: [Sprint capacity tool](sprints/set-capacity.md)
+     - Track estimated and remaining work: [Taskboard](sprints/adjust-work.md)
+     - Monitor sprint burndown based on remaining work such as hours or days: [Sprint burndown](/azure/devops/report/dashboards/configure-sprint-burndown?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json)
+     - Conduct daily scrums, update and monitor task status: [Sprint Taskboard](sprints/task-board.md)  
+     - Estimate work: [Define Story Points, Effort, or Size](backlogs/create-your-backlog.md#add-details-and-estimates)
+     - View progress bars, counts, or sums of rollup on tasks: [Rollup](backlogs/display-rollup.md)  
+     - Track dependencies across teams and projects: [Dependency Tracker](extensions/dependency-tracker.md)  
+
+     Many teams start out using Scrum methods to track and plan their work using the tools available through the Sprints hub. The Sprints tools support estimating and tracking remaining work and use of capacity planning. If you don't plan on using these tools, then adding child-dependent tasks is optional. Developers might add them simply as a checklist of items they need to complete a user story or backlog requirement. 
+   :::column-end:::
+:::row-end:::
+
 
 <table width="100%">
 <tbody valign="top">
