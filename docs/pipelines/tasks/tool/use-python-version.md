@@ -87,7 +87,7 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 
 ### How can I configure a self-hosted agent to use this task?
 
-The desired Python version will have to be added to the tool cache on the self-hosted agent in order for the task to use it. Normally the tool cache is located under the `_work/_tool` directory of the agent or the path can be overridden by the environment variable AGENT_TOOLSDIRECTORY. Under that directory, create the following directory structure based off of your Python version:
+The desired Python version will have to be added to the tool cache on the self-hosted agent in order for the task to use it. Normally the tool cache is located under the `_work/_tool` directory of the agent or the path can be overridden by the environment variable `AGENT_TOOLSDIRECTORY`. Under that directory, create the following directory structure based off of your Python version:
 
 ```
 $AGENT_TOOLSDIRECTORY/
