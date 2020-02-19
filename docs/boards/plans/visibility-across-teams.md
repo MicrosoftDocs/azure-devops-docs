@@ -200,6 +200,15 @@ You can add [Widgets based on the Analytics Service](../../report/dashboards/ana
 You can track capacity for individuals that participate on more than one team. To learn how, see [Set sprint capacity, Track capacity when working on more than one team](../sprints/set-capacity.md#track-capacity-per-team).
 
 
+
+## Limitations of multi-team Kanban board views 
+
+While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
+Only when the work item state changes does the card column reflect the same on all boards.
+
+> [!IMPORTANT]   
+> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
+
 ## Related articles
 
 As you can see, there are a number of ways you can monitor progress and trends across several teams. The methods you choose will depend on your focus and organizational goals.
@@ -210,13 +219,4 @@ Here are some additional topics that address working with multiple teams:
 - [Review team plans](review-team-plans.md)
 - [Add teams](../../organizations/settings/add-teams.md)
 - [Portfolio management](portfolio-management.md)
-
-
-## Limitations of multi-team Kanban board views 
-
-While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](../boards/add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
-Only when the work item state changes does the card column reflect the same on all boards.
-
-> [!IMPORTANT]   
-> Work items that appear on more than one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by [team area path](../../organizations/settings/set-area-paths.md). Another option is to add custom workflow states which all teams can use. For details, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
