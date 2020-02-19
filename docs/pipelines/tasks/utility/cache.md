@@ -50,4 +50,4 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 Learn more about pipeline caching:
 
-> [Pipeline Caching](../../caching/index.md)
+> [Pipeline Caching](../../release/caching.md)
