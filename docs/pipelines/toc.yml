@@ -181,7 +181,7 @@
   - name: Run Git commands
     href: scripts/git-commands.md
   - name: Reduce build time using caching (Preview)
-    href: caching/index.md
+    href: release/caching.md
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
