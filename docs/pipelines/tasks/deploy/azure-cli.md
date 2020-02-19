@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: UshaN
 author: UshaN
-ms.date: 09/24/2019
+ms.date: 02/17/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -28,7 +28,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 
 - Supports running PowerShell and PowerShell Core script
 - PowerShell Core script works with Xplat agents (Windows, Linux or OSX), make sure the agent has PowerShell version 6 or higher
-- Powershell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
+- PowerShell script works only with Windows agent, make sure the agent has PowerShell version 5 or lower
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>scriptPath</code><br/>Script Path</td>
-    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows based agent else .ps1 or .sh when using linux based agent) or a path relative to the default working directory</td>
+    <td>(Required) Fully qualified path of the script(.ps1 or .bat or .cmd when using Windows-based agent else <code>.ps1 </code> or <code>.sh </code> when using linux-based agent) or a path relative to the default working directory</td>
 </tr>
 <tr>
     <td><code>inlineScript</code><br/>Inline Script</td>
@@ -94,7 +94,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
 </tr>
 <tr>
     <td><code>powerShellIgnoreLASTEXITCODE</code><br/>Ignore $LASTEXITCODE</td>
-    <td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of powershell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td>
+    <td>(Optional) If this is false, the line <code>if ((Test-Path -LiteralPath variable:\\LASTEXITCODE)) { exit $LASTEXITCODE }</code> is appended to the end of your script. This will cause the last exit code from an external command to be propagated as the exit code of PowerShell. Otherwise the line is not appended to the end of your script<br/>Default value: false</td>
 </tr>
 </table>
 
@@ -108,7 +108,7 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
 - task: AzureCLI@2
   displayName: Azure CLI
   inputs:
-    azureSubscription: <Name of the Azure subscription>
+    azureSubscription: <Name of the Azure Resource Manager service connection>
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
