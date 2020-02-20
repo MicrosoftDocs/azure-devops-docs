@@ -105,7 +105,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
 
-[List teams](#list-teams) | [Add a team](#add-team) | [Move work items](#move-work-items) | [Update a team](rename-remove-team#update-team) | [Delete a team](rename-remove-team#delete-team)
+[List teams](#list-teams) | [Add a team](#add-team) | [Move work items](#move-work-items) | [Update a team](rename-remove-team.md#update-team) | [Delete a team](rename-remove-team.md#delete-team)
 
 <a id="list-teams" /> 
 
