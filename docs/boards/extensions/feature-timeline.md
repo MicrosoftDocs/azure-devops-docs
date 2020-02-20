@@ -27,7 +27,7 @@ Use the Feature Timeline to support the following tasks:
 - Adjust sprint assignments to child work items  
 
 > [!NOTE]   
-> The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
+> The Feature Timeline and Epic Roadmap extension is available on TFS 2017 Update 2 and later versions. You can install it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 [!INCLUDE [temp](../../includes/lightbox-image.md)]
 
@@ -159,7 +159,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 ## Drill-down and change Start and End iterations 
  
-1. To view the requirements linked to a feature, choose the ![ ](../media/icons/info.png) info icon for that feature. 
+1. To view the requirements linked to a feature, choose the ![info icon](../media/icons/info.png) info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
@@ -179,7 +179,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 ## Q & A
 
-### How con I view the roadmap, the next three sprints? 
+### How can I view the roadmap, the next three sprints? 
 
 A: Make sure you enter sufficient number of sprints to display the next three sprints, and assign work items to the next three sprints. Use the Planning pane to assign work items to sprints through drag-and-drop. To learn how, see [Assign backlog items to a sprint](../sprints/assign-work-sprint.md).
 
