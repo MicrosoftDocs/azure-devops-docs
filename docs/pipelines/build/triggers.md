@@ -613,7 +613,7 @@ Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as 
 
 Example | Cron expression
 --------|----------------
-Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, `0 18 * * Mon,Wed,Fri` or `0 18 * * 1-5/2`
+Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, `0 18 * * Mon,Wed,Fri`, or `0 18 * * 1-5/2`
 Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
 Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
@@ -678,7 +678,7 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC` or `9:30 PM UTC`. Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
 * Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
@@ -753,7 +753,7 @@ YAML pipelines are not yet available on TFS.
 
 Select the days and times when you want to run the build.
 
-If your repository is Azure Repos Git, GitHub or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
+If your repository is Azure Repos Git, GitHub, or Other Git, then you can also specify branches to include and exclude. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 
 ### Example: Nightly build of Git repo in multiple time zones
@@ -936,7 +936,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 > [!NOTE]
 > Keep in mind that in some cases, a single [multi-job build](../process/phases.md) could meet your needs.
-> However, a build completion trigger is useful if your requirements include different configuration settings, options or a different team to own the dependent pipeline.
+> However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent pipeline.
 
 ### Download artifacts from the triggering build
 
@@ -954,7 +954,7 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
-1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI` or `Schedule`, and so on).
+1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, `Schedule`, and so on).
 
 1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 
