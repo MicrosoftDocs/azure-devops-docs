@@ -39,6 +39,9 @@ If your teammates want to edit pipelines, then have an administrator add them to
 
 ## Confirm that contributors have pipeline permissions 
 
+> [!NOTE]
+> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
+
 If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
 
 1. Make sure you are a member of the Build Administrators group or the Project Administrators group ([learn more](../../organizations/security/set-project-collection-level-permissions.md)).
