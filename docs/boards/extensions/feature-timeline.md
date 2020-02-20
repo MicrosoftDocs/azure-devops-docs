@@ -29,7 +29,7 @@ Use the Feature Timeline to support the following tasks:
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
-*To see the full image, click to expand*.  
+[!INCLUDE [temp](../../includes/lightbox-image.md)]
 
 [![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
 
@@ -49,11 +49,13 @@ To gain the most from the Feature Timeline view, make the following definitions:
 - Define teams and area paths to support the rollup of the team's work into features and epics. 
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
-	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display in the Feature Timeline view.  
+	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
+- For work to be performed in some future iteration, you can leave the dates unset and it will appear as the last sprint in the roadmap. 
+- Make sure the team is subscribed to the sprints of interest. 
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
 - When child work items are defined, assign the child items to sprints. 
 - To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
-- Once all child requirements are completed, close the parent feature.  
+- Once all child requirements are completed, set the State of the parent feature to Done or Completed.  
 
 
 > [!TIP]   
@@ -140,14 +142,16 @@ You can customize your view of the Feature Timeline with the controls shown in t
 > [!div class="mx-imgBorder"]  
 > ![Feature Timeline controls](media/feature-timeline/controls.png)  
 
-- **View Sprints**: Enter the number of iterations to show  
+- **View Sprints**: Enter the number of iterations to show. The maximum number is 11. 
+	> [!NOTE]  
+	Sprint labels may not display for iterations above six, however, the calendar view represents those iterations.
 - **Plan Features**: Opens a side panel of additional features participating in a Portfolio Plan. 
 - **Show Details**: Displays progress bars of Feature child items
 - **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 - **Closed Features**: Filters the Features based on those closed within the selected time frame. 
 
 > [!NOTE]  
-> The Plan Features is in preview and available for Azure DevOps Services only at this time. Use of this feature integrates with Portfolio plans. 
+> The Plan Features is in preview and available for Azure DevOps Services only at this time. Use of this feature integrates with Portfolio plans. Portfolio Plans are  not yet documented.
 
 
 
@@ -173,6 +177,13 @@ You can customize your view of the Feature Timeline with the controls shown in t
 	> ![Feature Timeline controls](media/feature-timeline/drill-down-3.png)
 
 
+## Q & A
+
+### How con I view the roadmap, the next three sprints? 
+
+A: Make sure you enter sufficient number of sprints to display the next three sprints, and assign work items to the next three sprints. Use the Planning pane to assign work items to sprints through drag-and-drop. To learn how, see [Assign backlog items to a sprint](../sprints/assign-work-sprint.md).
+
+
 ## Related articles
 
 - [Review team delivery plans](../plans/review-team-plans.md)
@@ -184,21 +195,3 @@ You can customize your view of the Feature Timeline with the controls shown in t
 ## Related Marketplace extensions
 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
-
-
-<!  Questions to address? 
-
-- How get a quarterly view
-- How to view roadmap - next three sprints
-- Show dependencies
-- Drag and drop 
-- Maximum number of sprints: 11 
-- Closing out Epics and Features. 
-- Example showing Predecessor/Successor 
-- Example showing not dependent 
-- Example - Resource view 
-- How determine which sprints to display? 
-- Child items not assigned to an iteration 
-
-
---> 
