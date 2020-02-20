@@ -103,7 +103,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://devblogs.microsoft.com/devops/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests/).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -438,7 +438,7 @@ For more information, see
 ### Q:  Can I debug a load test while it's running in the cloud?
 
 **A**: Yes, you can do this when you use Visual Studio Enterprise 2015 or later. 
-[Learn more](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test.aspx).
+[Learn more](https://devblogs.microsoft.com/devops/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test/).
 
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
@@ -585,13 +585,13 @@ If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vso
 ## Troubleshooting
 
 ### Q: What do I do if Visual Studio stops responding when I try run a load test in the cloud?
-**A**: To resolve this issue, see [Known issues with load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2013/11/07/known-issues-with-load-testing-in-visual-studio-2013.aspx).
+**A**: To resolve this issue, see [Known issues with load testing](https://devblogs.microsoft.com/devops/known-issues-with-load-testing-in-visual-studio-2013/).
 
 ### Q: How do I record a web performance test with Internet Explorer 11?
 
 **A**: If the web test recorder is not active when you try and record your 
 web test with Internet Explorer 11, 
-see [Using Internet Explorer 11 and not able to record a web performance test](https://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx) 
+see [Using Internet Explorer 11 and not able to record a web performance test](https://devblogs.microsoft.com/devops/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully/) 
 to resolve the issue.
 
 ### Q: How do I view errors and warnings that happen when my load test is running in the cloud?
@@ -738,7 +738,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: Where can I find information about other errors?
 
-**A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
+**A**: See [Visual Studio Cloud Load Testing error codes](https://devblogs.microsoft.com/devops/visual-studio-cloud-load-testing-amp-error-codes/) to find more details about other errors and their resolutions, where applicable.
 
 ---
 
