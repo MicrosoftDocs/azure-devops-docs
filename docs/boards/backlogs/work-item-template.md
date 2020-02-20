@@ -1,4 +1,4 @@
-﻿---
+---
 title: Use work item templates to update stories, & more
 titleSuffix: Azure Boards   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
@@ -182,7 +182,7 @@ The main method for adding a work item using a template is to open the template 
 
     Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
-1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
+1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget).  
 
 2. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
