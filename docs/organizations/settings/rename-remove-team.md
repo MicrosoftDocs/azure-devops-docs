@@ -18,7 +18,17 @@ ms.date: 02/20/2020
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-As your organization changes, you may have a need to rename a team or remove it. 
+As your organization changes, you may have a need to rename a team or remove it.  
+
+When you rename a team, the new name propagates throughout the system with the following team artifacts also are renamed:
+- Team security group 
+- Team backlogs and boards
+- Team dashboards 
+ 
+> [!TIP]    
+> You will need to update any queries that reference the old team security group name. 
+
+When you remove or delete a team, you delete all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
  
 ## Prerequisites 
 
@@ -62,11 +72,9 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-From the Azure DevOps CLI command, you can update a team's name and description. 
-
 <a id="update-team" /> 
 
-You can rename a team using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
+You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
 ```CLI
@@ -166,7 +174,7 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
   "name": "Organization Management",
   "projectId": "56af920d-393b-4236-9a07-24439ccaa85c",
   "projectName": "Fabrikam Fiber",
-  "url": "https://dev.azure.com/kelliott/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/7f099146-29a2-4798-9949-77c9f5f79653"
+  "url": "https://dev.azure.com/fabrikam/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/7f099146-29a2-4798-9949-77c9f5f79653"
 }
 ```
 
@@ -184,7 +192,6 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 
 	> [!div class="mx-imgBorder"]
 	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
-
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
@@ -228,23 +235,27 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ## Delete a team 
 
+> [!IMPORTANT]   
+> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
+
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-> To enable the new user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page)
 
-1. To delete a team, open **Project settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-preview.png)  
+1. From the web portal, choose **Project settings** and open **Teams**.
 
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
+   ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
-2. To complete the delete operation, you must type the name of the WIT as shown. 
+1. Choose the team you want to delete. Scroll down to the Delete team section. Choose **Delete Team**.    
 
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog-preview.png)
+	> [!div class="mx-imgBorder"]
+	> ![Delete team](media/rename-remove-team/delete-team-operation.png)
+
+1. Choose **Delete** in the confirmation box to complete the delete operation. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Delete team confirmation dialog](media/rename-remove-team/delete-team-confirmation.png) 
 
 
 #### [Current page](#tab/current-page) 
@@ -323,44 +334,6 @@ Are you sure you want to delete this team? (y/n): y
 	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
 ::: moniker-end
-
-
-<a id="grant-add-permissions"></a>  
-
-## Grant team members additional permissions  
-
-For teams to work autonomously, you may want to provide them with permissions that they don't have by default. Suggested tasks include providing team administrators or team leads permissions to:  
-
-- Create and edit child nodes under their default area path
-- Create and edit child nodes under an existing iteration node 
-- Create shared queries and folders under the Shared Queries folder
-
-For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
-
-
-::: moniker range=">= tfs-2018 <= azure-devops-2019" 
-
-If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
-
-::: moniker-end 
-
-::: moniker range="<= tfs-2017" 
-
-If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
-
--  [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) 
--  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
-
-::: moniker-end 
-
-## Next steps
-
-Once you've created a team, you'll want to configure your Agile tools to support how your team works. Also, consider adding one or more users as team administrators. Team administrators have the necessary permissions to add team members, add a picture to the team profile, and configure and manage all team features.  
-
-> [!div class="nextstepaction"]
-> [Add team administrator](add-team-administrator.md)
-> or
-> [Manage teams and configure team tools](manage-teams.md)
 
 
 ## Related articles

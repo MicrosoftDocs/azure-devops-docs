@@ -159,14 +159,14 @@ Open the Teams settings page as described in the previous section.
 
 #### [Preview page](#tab/preview-page) 
 
-From the Administrators section, choose the ![remove icon](../../remove-icon.png) for the account you want to remove as a team administrator. 
+From the Administrators section, choose the ![remove icon](../../media/icons/remove-icon.png) for the account you want to remove as a team administrator. 
 
 ![Remove team admin](media/add-team-admin/remove-admin-new-ui-page.png)
 
 
 #### [Current page](#tab/current-page) 
 
-From the Administrators section, choose the ![delete icon](../../delete-icon.png) for the account you want to remove as a team administrator. 
+From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the account you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
@@ -178,7 +178,7 @@ From the Administrators section, choose the ![delete icon](../../delete-icon.png
 ::: moniker range=">= tfs-2013 <= azure-devops-2019"
 
 
-From the Administrators section, choose the ![delete icon](../../delete-icon.png) for the account you want to remove as a team administrator. 
+From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the account you want to remove as a team administrator. 
 
 > [!div class="mx-imgBorder"]
 > ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
