@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add a team, move from one team to several teams
 titleSuffix: Azure DevOps 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
@@ -25,16 +25,6 @@ As your organization grows, make sure that you configure your Agile tools to sup
 >
 > For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
 
-<!---
-In this topic you'll learn:  
-
->[!div class="checklist"]    
-> * How to add a team, move from one team to two teams   
-> * How to add team members  
-> * How to move work items assigned to one team to another team  
-> * How to delete a team      
-> * Additional permissions you may want to grant team members    
--->
 
 <a id="add-team"> </a>  
 
@@ -115,7 +105,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
 
-[List teams](#list-teams) | [Add a team](#add-team) | [Move work items](#move-work-items) | [Delete a team](#delete-team)
+[List teams](#list-teams) | [Add a team](#add-team) | [Move work items](#move-work-items) | [Update a team](rename-remove-team#update-team) | [Delete a team](rename-remove-team#delete-team)
 
 <a id="list-teams" /> 
 
@@ -276,8 +266,6 @@ C:\WINDOWS\system32>az devops team create --name Web --project "Fabrikam Fiber"
 From your web browser, you can view teams that have been added and add teams. From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
 
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
-
-[!INCLUDE [preview-features](../../project/navigation/preview-features.md)]
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -689,103 +677,6 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: moniker-end
 
-## Delete a team 
-
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the new user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page)
-
-1. To delete a team, open **Project settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-preview.png)  
-
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog-preview.png)
-
-
-#### [Current page](#tab/current-page) 
-
-1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-vert.png)  
-
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
-
-<a id="delete-team" /> 
-
-You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-az devops team delete --id
-                      [--project]
-                      [--yes]
-```
-
-#### Parameters
-
-- **id**: Required. The id of the team to delete.
-- **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
-- **yes**: Optional. Specify to not prompt for confirmation. 
-
-#### Example
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-C:\WINDOWS\system32>az devops team delete --id 5385556a-254d-4ad4-bd11-71955e3a7070 --project "Fabrikam Fiber"
-Are you sure you want to delete this team? (y/n): y
-
-```
-
-* * *
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-vert.png)  
-
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-
-1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-
-	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
- 
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-::: moniker-end
-
 
 <a id="grant-add-permissions"></a>  
 
@@ -827,6 +718,7 @@ Once you've created a team, you'll want to configure your Agile tools to support
 
 ## Related articles
 
+- [Rename or remove a team](rename-remove-team.md)
 - [About teams and Agile tools](about-teams-and-settings.md)
 - [Azure DevOps Teams CLI](/cli/azure/ext/azure-devops/devops/team)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)

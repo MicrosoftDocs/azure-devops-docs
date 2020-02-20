@@ -26,6 +26,8 @@
   items:    
   - name: Configure team tools
     href: ../manage-teams.md
+  - name: Rename or delete a team
+    href: ../rename-remove-team.md
   - name: Select backlog levels
     href: ../select-backlog-navigation-levels.md
   - name: Show bugs on backlogs & boards
