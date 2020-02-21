@@ -202,7 +202,7 @@ Now that your server can receive service hook events when new PRs are created, u
     var authHandler = vsts.getPersonalAccessTokenHandler(token)
     var connection = new vsts.WebApi(collectionURL, authHandler)
 
-    var vstsGit = connection.getGitApi().then( success => { console.log(success); }, error => { console.log(error); } )
+    var vstsGit = connection.getGitApi().then( success => { console.log(success) }, error => { console.log(error) } )
     ```
 
 5. Create an environment variable for your collection URL, replacing `<your account>` with the name of your Azure DevOps organization.
@@ -254,7 +254,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
     ``` javascript
         if (title.includes("WIP")) {
-            prStatus.state = "pending";
+            prStatus.state = "pending"
             prStatus.description = "Work in progress"
         }
     ```
@@ -263,7 +263,7 @@ Now that your server can receive service hook events when new PRs are created, u
 
     ``` javascript
     vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
-        console.log(result);
+        console.log(result)
     })
     ```
 
@@ -300,7 +300,7 @@ Now that your server can receive service hook events when new PRs are created, u
         // Post the status to the PR
         vstsGit.createPullRequestStatus(prStatus, repoId, pullRequestId).then( result => {
             console.log(result)
-        });
+        })
 
         res.send("Received the POST")
     })
