@@ -1,6 +1,6 @@
 ---
 title: Environment
-description: Collection of deployment targets useful for traceability and recoding deployment history
+description: Collection of deployment targets useful for traceability and recording deployment history
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
