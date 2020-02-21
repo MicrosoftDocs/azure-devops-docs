@@ -34,7 +34,7 @@ and more. Because the most important work appears at the top of the list, your t
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
-## Open your backlog from the web portal
+## Open your backlog  
 
 From your web browser, open your product backlog.  
 
@@ -144,6 +144,9 @@ Users with **Stakeholder** access can only add work items to the end of the back
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/add-new-items-agile.png) 
 
+	> [!NOTE]  
+	> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+
 2. Repeat this step to capture all your ideas as work items.  
 
 ::: moniker-end
@@ -155,6 +158,9 @@ To build your backlog, enter a title and select **Add**. If you don't see the **
 
 ![Add work items to the backlog](media/create-backlog/add-new-items-standard.png) 
 
+> [!NOTE]  
+> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+
 Repeat this step until you capture all your main ideas. 
 
 ::: moniker-end
@@ -164,22 +170,26 @@ Repeat this step until you capture all your main ideas.
 >
 > By default, user stories appear on Agile backlogs, issues on Basic backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
-<a id="move-items-priority-order">  </a>
+<a id="reorder-backlog">  </a>
 
 ## Reorder your backlog
 
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
-To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> [!TIP]  
+> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
 > [!div class="mx-imgBorder"]
 > ![Reorder work items](media/create-backlog/cyb-order-backlog.png)
 
+> [!NOTE]  
+> To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder backlog items. 
 
-> [!TIP]  
-> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:  
+- [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
+- [Fix re-ordering and nesting issues](resolve-backlog-reorder-issues.md)
 
 
 <a id="estimates">  </a>
