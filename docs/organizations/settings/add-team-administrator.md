@@ -31,13 +31,15 @@ As a team administrator, you can configure, customize, and manage all team-relat
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). 
-* You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
-  ::: moniker-end
-  ::: moniker range="<= azure-devops-2019"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
-  ::: moniker-end
-  To get added as a team administrator, ask another team admin, the organization owner, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+::: moniker-end
+::: moniker range="<= azure-devops-2019"
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+::: moniker-end
+
+To get added as a team administrator, ask another team admin, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
 
 If you need to add a team, see [Add teams](add-teams.md).
 
