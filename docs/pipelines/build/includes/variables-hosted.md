@@ -21,7 +21,7 @@ ms.date: 02/13/2020
 <td>Agent.BuildDirectory</td>
 <td>
 <p>The local path on the agent where all folders for a given build pipeline are created.</p>
-<p>For example: <code>c:\agent_work\1</code></p>
+<p>For example: <code>/home/vsts/work/1</code></p>
 </td>
 </tr>
 
@@ -181,6 +181,11 @@ For example: <code>c:\agent_work\1\b</code>.
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
+
+<tr>
+<td>Build.ContainerId</td>
+<td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact. 
+<br><br>
 
 <tr>
 <td>Build.DefinitionName</td>
@@ -470,7 +475,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <tr>
 <td>Pipeline.Workspace</td>
 <td>Workspace directory for a particular pipeline.<br><br>
-For example, <code>c:\agent_work\1</code>.</td>
+For example, <code>/home/vsts/work/1</code>.</td>
 </tr>
 
 </table>
