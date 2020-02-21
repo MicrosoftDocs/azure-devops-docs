@@ -60,7 +60,7 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 ### Q: Can a work item be assigned to several users or a user group? 
 
-**A:** No. Work items can only be assigned to a single user. 
+**A:** No. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
 
 ### Q: What's the recommended method to group work? 
 
