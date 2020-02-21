@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 03/21/2019
+ms.date: 02/21/2020
 ---
 
 # Create your product backlog 
@@ -20,7 +20,7 @@ ms.date: 03/21/2019
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -115,7 +115,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 ::: moniker-end
 
 
-## Determine if bugs should appear on your backlog 
+## Track bugs on your backlog 
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
@@ -123,7 +123,7 @@ Before deciding, review [Configure and customize, Treat bugs as requirements or 
 
 <a id="convert-ideas" />
 
-## Convert ideas into backlog items or stories
+## Convert ideas into backlog items 
 
 Your backlog shows work that you plan to do or have started to work on. As soon as the state of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
 
@@ -166,7 +166,7 @@ Repeat this step until you capture all your main ideas.
 
 <a id="move-items-priority-order">  </a>
 
-## Move items into priority order
+## Reorder your backlog
 
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
@@ -200,38 +200,50 @@ To open each item, double-click or press Enter. Then add all the information you
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](media/create-backlog/pbi-form.png) 
 
-<table valign="top" width="100%">
-<tbody valign="top" >
-<tr>
-<th width="20%">Field</th>
-<th width="80%">Usage</th>
-</tr>
-<tr>
-<td><a href="../queries/query-numeric.md" data-raw-source="[Effort](../queries/query-numeric.md)">Effort</a><br/>
-<a href="../queries/query-numeric.md" data-raw-source="[Story Points](../queries/query-numeric.md)">Story Points</a><br/>
-<a href="../queries/query-numeric.md" data-raw-source="[Size](../queries/query-numeric.md)">Size</a></td> 
-<td>
 <a name="estimates"></a>
-Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for <strong>Effort</strong>, <strong>Size</strong>, or <strong>Story Points</strong> are used to calculate <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity](../../report/dashboards/team-velocity.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
-</td> 
-</tr>
-<tr>
-<td><a href="../queries/query-numeric.md" data-raw-source="[Business Value](../queries/query-numeric.md)">Business Value</a></td> 
-<td>Specify a priority that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.</td> 
-</tr>
-<tr>
-<td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
-<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don&#39;t describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
-</tr>
-<tr>
-<td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </td> 
-<td><p>Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
-<p>Before work begins on a PBI or bug, describe the <a href="best-practices-product-backlog.md#acceptance" data-raw-source="[criteria for customer acceptance](best-practices-product-backlog.md#acceptance)">criteria for customer acceptance</a> as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.</p></td> 
-</tr>
-</tbody>
-</table>
 
+:::row:::
+   :::column span="":::
+      **Field**
+   :::column-end:::
+   :::column span="3":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Effort](../queries/query-numeric.md), [Story Points](../queries/query-numeric.md), [Size](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers.  
+      The estimates you set for **Effort**, **Size**, or **Story Points** are used to calculate [velocity](../../report/dashboards/team-velocity.md) and [forecast sprints](../sprints/forecast.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Business Value](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      Specify a priority that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Description](../queries/titles-ids-descriptions.md)
+   :::column-end:::
+   :::column span="3":::
+      Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Acceptance Criteria](../queries/titles-ids-descriptions.md)
+   :::column-end:::
+   :::column span="3":::
+      Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
+      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
+   :::column-end:::
+:::row-end:::
 
 
 ## Try this next
