@@ -196,19 +196,69 @@ Backlogs that participate in portfolio management or that contain nested same-ty
 
 ## Add details and estimates
 
-Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, they need more details. You capture these details within the work item form.
+Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
 
-> [!TIP]  
-> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Basic or Scrum, **Story Points** for Agile, or **Size** for CMMI. 
+To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
-To open each item, double-click or press Enter. Then add all the information you want to track. Enter as much detail as the team needs to:  
+Enter as much detail as the team needs to:  
 - Understand the scope. 
 - Estimate the work required. 
 - Develop tests. 
 - Ensure that the end product meets acceptance criteria.  
 
+#### [Agile process](#tab/agile-process) 
+For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
+
+> [!div class="mx-imgBorder"]
+> ![User Story work item form, add details](../get-started/media/plan-track-work/user-story-form-add-details.png)
+
+> [!NOTE]  
+> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
+
+ Choose **Save & Close** when done. 
+
+
+#### [Basic process](#tab/basic-process) 
+
+For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
+
+> [!div class="mx-imgBorder"]
+> ![Issues work item form, add details ](../get-started/media/track-issues/issue-form-add-details.png)
+
+> [!NOTE]  
+> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
+
+Choose **Save & Close** when done. 
+
+#### [Scrum process](#tab/scrum-process) 
+
+For example, here we assign the product backlog item to Christie Church and set an Effort level of 8. 
+
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](media/create-backlog/pbi-form.png) 
+
+> [!NOTE]  
+> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
+
+Choose **Save & Close** when done. 
+
+
+#### [CMMI process](#tab/cmmi-process) 
+
+For example, here we assign the product backlog item to Jamal Hartnett and set Size to 8. 
+
+> [!div class="mx-imgBorder"]  
+> ![Requirements work item form](../work-items/guidance/media/cmmi-requirement-form.png) 
+
+> [!NOTE]  
+> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
+
+Choose **Save & Close** when done. 
+
+*** 
+
+> [!TIP]  
+> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Basic or Scrum, **Story Points** for Agile, or **Size** for CMMI. 
 
 <a name="estimates"></a>
 
