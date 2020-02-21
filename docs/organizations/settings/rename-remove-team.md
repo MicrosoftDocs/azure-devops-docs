@@ -285,7 +285,7 @@ az devops team delete --id
 
 #### Parameters
 
-- **id**: Required. The id of the team to delete.
+- **id**: Required. The ID of the team to delete.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".
 - **yes**: Optional. Specify to not prompt for confirmation. 
 
