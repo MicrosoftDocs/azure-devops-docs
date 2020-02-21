@@ -1,5 +1,5 @@
 ---
-title: Add a team administrator 
+title: Add or remove a team administrator 
 titleSuffix: Azure DevOps
 description: Add a user to the team administrator role in Azure DevOps  
 ms.technology: devops-settings
@@ -11,10 +11,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/01/2019
+ms.date: 02/20/2020
 ---
 
-# Add a team administrator 
+# Add or remove a team administrator 
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
@@ -31,13 +31,15 @@ As a team administrator, you can configure, customize, and manage all team-relat
 ## Prerequisites
 
 ::: moniker range="azure-devops"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). 
-* You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
-  ::: moniker-end
-  ::: moniker range="<= azure-devops-2019"
-* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). * You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update. 
-  ::: moniker-end
-  To get added as a team administrator, ask another team admin, the organization owner, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+::: moniker-end
+::: moniker range="<= azure-devops-2019"
+- You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).  
+- You must be a [member of the Project Administrators group](../security/set-project-collection-level-permissions.md), or a team administrator for the team you want to update.  
+::: moniker-end
+
+To get added as a team administrator, ask another team admin, or a member of the [Project Administrators group](../security/set-project-collection-level-permissions.md) to add you.  
 
 If you need to add a team, see [Add teams](add-teams.md).
 
@@ -48,7 +50,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -147,6 +149,45 @@ From the web portal, open the admin page for the team.
 ::: moniker-end  
 
 
+<a id="remove-admin">  </a>
+
+## Remove an administrator
+
+Each team must have at least one administrator. To remove an administrator, you must first add at least a second administrator before you can remove the first administrator. 
+
+Open the **Teams** settings page as described in the previous section.
+
+::: moniker range="azure-devops"
+
+#### [Preview page](#tab/preview-page) 
+
+From the Administrators section, choose the ![remove icon](../../media/icons/remove-icon.png) remove icon for the account you want to remove as a team administrator. 
+
+![Remove team admin](media/add-team-admin/remove-admin-new-ui-page.png)
+
+
+#### [Current page](#tab/current-page) 
+
+From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the account you want to remove as a team administrator. 
+
+> [!div class="mx-imgBorder"]
+> ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
+
+* * *
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= azure-devops-2019"
+
+
+From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the account you want to remove as a team administrator. 
+
+> [!div class="mx-imgBorder"]
+> ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
+
+::: moniker-end    
+
+ 
 ## Try next  
 
 > [!div class="nextstepaction"]
@@ -154,6 +195,7 @@ From the web portal, open the admin page for the team.
 
 ## Related articles
 
+- [Add teams](add-teams.md)  
 - [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
-- [Manage portfolios](../../boards/plans/portfolio-management.md)
+- [Configure and customize Azure Boards](../../boards/configure-customize.md)
 - [Set team favorites](../../project/navigation/set-favorites.md) 
