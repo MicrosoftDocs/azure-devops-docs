@@ -204,16 +204,16 @@ Enter as much detail as the team needs to:
 - Understand the scope. 
 - Estimate the work required. 
 - Develop tests. 
-- Ensure that the end product meets acceptance criteria.  
+- Ensure that the end product meets acceptance criteria.
+
+[!INCLUDE [temp](../includes/note-user-assigned.md)]
 
 #### [Agile process](#tab/agile-process) 
+
 For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
 
 > [!div class="mx-imgBorder"]
 > ![User Story work item form, add details](../get-started/media/plan-track-work/user-story-form-add-details.png)
-
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
 
  Choose **Save & Close** when done. 
 
@@ -225,9 +225,6 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 > [!div class="mx-imgBorder"]
 > ![Issues work item form, add details ](../get-started/media/track-issues/issue-form-add-details.png)
 
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
-
 Choose **Save & Close** when done. 
 
 #### [Scrum process](#tab/scrum-process) 
@@ -236,9 +233,6 @@ For example, here we assign the product backlog item to Christie Church and set 
 
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](media/create-backlog/pbi-form.png) 
-
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
 
 Choose **Save & Close** when done. 
 
@@ -249,9 +243,6 @@ For example, here we assign the product backlog item to Jamal Hartnett and set S
 
 > [!div class="mx-imgBorder"]  
 > ![Requirements work item form](../work-items/guidance/media/cmmi-requirement-form.png) 
-
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. To learn more, see [Add members to a project or team](../../organizations/security/add-users-team-project.md).
 
 Choose **Save & Close** when done. 
 
@@ -304,6 +295,14 @@ Choose **Save & Close** when done.
       Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
    :::column-end:::
 :::row-end:::
+:::row:::
+   :::column span="":::
+      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+   :::column-end:::
+   :::column span="3":::
+      Describes the customer impact of not implementing the requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories.
+   :::column-end:::
+:::row-end:::
 
 
 ## Try this next
@@ -318,6 +317,8 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ## Related articles
 
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
