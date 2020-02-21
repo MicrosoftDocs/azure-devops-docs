@@ -42,13 +42,13 @@ As a team administrator, you can configure, customize, and manage all team-relat
 If you need to add a team, see [Add teams](add-teams.md).
 
 <a id="open-admin-context">  </a>
-a
+
 ## Add an administrator
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -148,18 +148,18 @@ From the web portal, open the admin page for the team.
 
 
 <a id="remove-admin">  </a>
-a
+
 ## Remove an administrator
 
 Each team must have at least one administrator. To remove an administrator, you must first add at least a second administrator before you can remove the first administrator. 
 
-Open the Teams settings page as described in the previous section.
+Open the **Teams** settings page as described in the previous section.
 
 ::: moniker range="azure-devops"
 
 #### [Preview page](#tab/preview-page) 
 
-From the Administrators section, choose the ![remove icon](../../media/icons/remove-icon.png) for the account you want to remove as a team administrator. 
+From the Administrators section, choose the ![remove icon](../../media/icons/remove-icon.png) remove icon for the account you want to remove as a team administrator. 
 
 ![Remove team admin](media/add-team-admin/remove-admin-new-ui-page.png)
 
@@ -193,6 +193,7 @@ From the Administrators section, choose the ![delete icon](../../media/icons/del
 
 ## Related articles
 
+- [Add teams](add-teams.md)  
 - [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
 - [Configure and customize Azure Boards](../../boards/configure-customize.md)
 - [Set team favorites](../../project/navigation/set-favorites.md) 
