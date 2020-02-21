@@ -427,7 +427,7 @@ az boards work-item update --id
 
 #### Parameters
 
-- **id**: Required. The id of the work item to update.
+- **id**: Required. The ID of the work item to update.
 - **area**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName.  
 - **assigned-to**: Optional. Name of the person the work item is assigned to *Jamal*.
 - **description**: Optional. Description of the work item. 
@@ -598,8 +598,8 @@ One last step in moving from one team to two teams requires configuring the defa
 
 2. Refresh the product backlog page for the team, and you'll see only those work items assigned to the *Fabrikam Fiber* area path.  
 
-   > [!div class="mx-imgBorder"]  
-   > ![Product backlog, default project team](media/add-team/product-backlog-default-team.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Product backlog, default project team](media/add-team/product-backlog-default-team.png)
 
 
 
