@@ -74,7 +74,7 @@ The CMMI process provides several work item types&mdash;for example, requirement
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![CMMI process work item types, conceptual image](media/about-boards/cmmi-process-wits.png) | ![Requirements, show parents](media/about-boards/cmmi-hierarchy.png)  |
+> |![CMMI work item types, conceptual image](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png) | ![Requirements, show parents](media/about-boards/cmmi-hierarchy.png)  |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -142,7 +142,7 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 
 The Backlog items Kanban board is the best tool for quickly adding product backlog items and child tasks. To open, choose **Boards>Boards**.  
 
-![Open your Kanban board](media/plan-track-work/choose-features-board-scrum-items.png)  
+![Open your Kanban board](media/plan-track-work/choose-features-board-scrum.png)  
 
 The Features Kanban board is the best tool for quickly adding features and product backlog items that are children of those features. 
 To open the Features board from the Backlog items board, choose **Features** from the board selector. 
@@ -150,7 +150,7 @@ To open the Features board from the Backlog items board, choose **Features** fro
 > [!div class="mx-imgBorder"]  
 > ![Open the features board](media/plan-track-work/choose-features-board-scrum.png)  
 
-The default Scrum process configuration doesn't enable the Epic backlog level for a team. To enable it, see [Select backlog navigation levels for your team](../organizations/settings/select-backlog-navigation-levels.md).
+The default Scrum process configuration doesn't enable the Epic backlog level for a team. To enable it, see [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).
 
 #### [CMMI process](#tab/cmmi-process) 
 
@@ -361,7 +361,7 @@ Choose **Save & Close** when done.
    :::column-end:::
    :::column span="3":::
       Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
-      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
+      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](../backlogs/best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers' expectations. Also, this information provides the basis for acceptance testing.
    :::column-end:::
 :::row-end:::
 :::row:::
