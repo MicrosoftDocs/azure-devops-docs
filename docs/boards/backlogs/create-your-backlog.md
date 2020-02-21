@@ -171,6 +171,7 @@ Repeat this step until you capture all your main ideas.
 > By default, user stories appear on Agile backlogs, issues on Basic backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
 <a id="reorder-backlog">  </a>
+<a id="move-items-priority-order">  </a>
 
 ## Reorder your backlog
 
