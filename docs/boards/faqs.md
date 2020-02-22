@@ -141,6 +141,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
 
+[!INCLUDE [temp](includes/faq-picklist.md)] 
+
 ### Q: Can I add or rename a portfolio backlog?  
 
 **A:** Yes. You can add up to a total of five portfolio backlogs. And, you can rename a portfolio backlog and add custom work item types to a portfolio backlog. 
