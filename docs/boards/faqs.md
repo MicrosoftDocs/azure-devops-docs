@@ -68,6 +68,7 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
+[!INCLUDE [temp](includes/faq-milestone-marker.md)] 
 
 ### Q: How can I best track dependencies?
 

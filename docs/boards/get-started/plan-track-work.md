@@ -1,7 +1,7 @@
 ---
-title: Plan & track work for Basic or Agile process
+title: Plan & track work, Agile, Basic, Scrum, or CMMI process
 titleSuffix: Azure Boards 
-description: Plan and track work in your new team project on Azure Boards
+description: Plan and track work in your new team project on Azure Boards using the Agile, Basic, Scrum, or CMMI process
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 08/23/2019
+ms.date: 02/21/2020
 ---
 
 
@@ -60,7 +60,7 @@ The Scrum process provides several work item types&mdash;for example, product ba
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![Scrum work item types, conceptual image](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  | ![Backlogs, show parents](media/about-boards/scrum-hierarchy.png)  |
+> |![Scrum work item types, conceptual image](../work-items/guidance/media/ALM_PT_Scrum_WIT_Artifacts.png)  | ![Backlogs, show parents](media/about-boards/scrum-hierarchy-simple.png)  |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -74,7 +74,7 @@ The CMMI process provides several work item types&mdash;for example, requirement
 > [!div class="mx-tdCol2BreakAll"]
 > |Work item types| Backlog hierarchy |
 > |------|---------|
-> |![CMMI work item types, conceptual image](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png) | ![Requirements, show parents](media/about-boards/cmmi-hierarchy.png)  |
+> |![CMMI work item types, conceptual image](../work-items/guidance/media/ALM_PT_CMMI_WIT_Artifacts.png) | ![Requirements, show parents](media/about-boards/cmmi-hierarchy-simple.png)  |
 
 Within each work item form, you can describe the work to be done, assign work to project contributors, track status, and collaborate with others through the Discussion section. 
 
@@ -312,7 +312,8 @@ Choose **Save & Close** when done.
    :::column-end:::
    :::column span="3":::
       Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.  
-      [!INCLUDE [temp](../includes/note-user-assigned.md)]
+      > [!NOTE]  
+      > You can only assign work to a single user. If you need to assign work to more than one user, add a work item for each user and distinguish the work to be done by title and description. The Assigned To field only accepts user accounts that have been [added to a project or team](../../organizations/security/add-users-team-project.md). 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -633,6 +634,10 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 
 [!INCLUDE [temp](../includes/discussion-tip.md)]
+
+## Q & A 
+
+[!INCLUDE [temp](../includes/faq-milestone-marker.md)] 
 
 
 ## Try this next  
