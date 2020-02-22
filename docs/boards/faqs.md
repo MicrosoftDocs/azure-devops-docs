@@ -141,7 +141,7 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
 
-[!INCLUDE [temp](includes/faq-picklist.md)] 
+[!INCLUDE [temp](includes/faq-picklists.md)] 
 
 ### Q: Can I add or rename a portfolio backlog?  
 
