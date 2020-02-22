@@ -21,7 +21,7 @@ ms.date: 02/21/2020
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
-Choose one of the following four system processes&mdash;**Agile**, **Basic**, **Scrum**, or **CMMI**&mdash;for guidance depending on what process was selected for your project.  
+Choose one of the following four system processes&mdash;**Agile**, **Basic**, **Scrum**, or **Capability Maturity Model Integration (CMMI)**&mdash;for guidance depending on what process was selected for your project. For an overview of each of these processes, see [Choose a process](../work-items/guidance/choose-process.md).
 
 [!INCLUDE [temp](../includes/basic-process-note.md)] 
 
@@ -691,7 +691,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 [!INCLUDE [temp](../includes/faq-milestone-marker.md)] 
 
-[!INCLUDE [temp](../includes/faq-picklist.md)] 
+[!INCLUDE [temp](../includes/faq-picklists.md)] 
 
 
 ## Try this next  
