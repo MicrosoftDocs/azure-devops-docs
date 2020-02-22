@@ -104,7 +104,7 @@ For details, see [Default permissions and access for Azure Boards](permissions-a
 ::: moniker range="<= tfs-2018"
 
 > [!NOTE]   
-> The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described. 
+> The images shown in this article correspond to the latest version of Azure Boards. While they may differ from those shown in earlier, on-premises versions of Azure DevOps, they are similar in the functions described unless otherwise noted. 
 
 ::: moniker-end
 
@@ -407,8 +407,9 @@ Choose **Save & Close** when done.
 
 ## Update status
 
-#### [Agile process](#tab/agile-process) 
+The State field tracks the status of a work item. With the Kanban board, you can quickly update the status of backlog items by dragging and dropping them to a different column. This feature requires that you have Basic access or higher.  
 
+#### [Agile process](#tab/agile-process) 
 
 As work starts, drag the user story card from the **Backlog** column to the **Active** column. Once work is ready for review, move to the **Resolved** column. After it is reviewed and accepted, move to the **Closed** column. 
 
@@ -457,6 +458,14 @@ Task checklists provide a quick and easy way to track elements of work which are
 > Tasks that you create from the Kanban board are automatically assigned to the sprint/iteration path of the parent work item under which you define them. 
 
 Tasks that you create from the Kanban board show up on your sprint taskboard. Also, tasks that you create from the [sprint backlog](../sprints/assign-work-sprint.md) or [taskboard](../sprints/task-board.md) show up within tasks checklists on the Kanban board.  
+
+
+::: moniker range="<= tfs-2015"
+
+> [!NOTE]   
+> The Task checklists are available from with TFS 2015.1 and later versions. 
+
+::: moniker-end
 
 
 #### [Agile process](#tab/agile-process) 
@@ -580,18 +589,18 @@ Here we assign the task to Jamal.
 
 #### [Scrum process](#tab/scrum-process) 
 
-Here we assign the task to Christie Church.   
+Here we assign the task to Jamal.  
 
 > [!div class="mx-imgBorder"]  
-> ![Task form](media/plan-track-work/task-form.png)  
+> ![Task form](../work-items/guidance/media/scrum-task-form.png)  
 
 
 #### [CMMI process](#tab/cmmi-process) 
 
-Here we assign the task to Christie Church.   
+Here we assign the task to Jamal.   
 
 > [!div class="mx-imgBorder"]  
-> ![Task form](media/plan-track-work/task-form.png)  
+> ![Task form](../work-items/guidance/media/cmmi-task-form.png)  
 
 * * *
 
@@ -599,6 +608,9 @@ Here we assign the task to Christie Church.
 ### Field descriptions
 
 In addition to the fields you can define for a backlog item&mdash;user story, issue, product backlog item, or requirement&mdash;you can specify the following fields for a task to support capacity and time tracking. 
+
+> [!NOTE]   
+> There are no inherent time units associated with this field even though the taskboard always shows "h" for hours in relationship to Remaining Work. You can specify work in any unit of measurement your team chooses. 
 
 :::row:::
    :::column span="":::
@@ -624,11 +636,51 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 :::row-end:::
 :::row:::
    :::column span="":::
+      [Discipline](../queries/query-numeric.md) (CMMI process)
+   :::column-end:::
+   :::column span="3":::
+      The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
+      - **Analysis**
+      - **Development**
+      - **Test**
+      - **User Education**
+      - **User Experience**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Original Estimate](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      The amount of estimated work required to complete a task. Typically, this field doesn't change after it is assigned. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
       [Remaining Work](../queries/query-numeric.md)
    :::column-end:::
    :::column span="3":::
-      The amount of work that remains to finish a task. You can specify work in hours or in days. There are no inherent time units associated with this field even though the taskboard always shows "h" for hours in relationship to Remaining Work.  
-      Remaining Work is often used to calculate burn down for a sprint.  
+      The amount of work that remains to finish a task. You can specify work in hours or in days. As work progresses, update this field. It's used to calculate [capacity charts](../sprints/set-capacity.md) and the [sprint burndown chart](../../report/dashboards/configure-sprint-burndown.md).   
+      If you divide a task into subtasks, specify Remaining Work for the subtasks only. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Completed Work](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      The amount of work spent implementing a task. Enter a value for this field when you complete the task.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Task Type](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+   :::column-end:::
+   :::column span="3":::
+      Select the kind of task to implement from the allowed values:</p>
+      - **Corrective Action**
+      - **Mitigation Action**
+      - **Planned**
    :::column-end:::
 :::row-end:::
 
@@ -638,6 +690,8 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 ## Q & A 
 
 [!INCLUDE [temp](../includes/faq-milestone-marker.md)] 
+
+[!INCLUDE [temp](../includes/faq-picklist.md)] 
 
 
 ## Try this next  
@@ -650,5 +704,4 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 
 - [Index to field descriptions](../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/get-started/toc.json&bc=/azure/devops/boards/get-started/breadcrumb/toc.json)  
 - [Add tags to issues or tasks](../queries/add-tags-to-work-items.md)   
-- [Use @mentions in work items](../../notifications/at-mentions.md)
-- [Use #ID to link to work items](../../notifications/add-links-to-work-items.md) 
+
