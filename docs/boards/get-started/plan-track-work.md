@@ -83,22 +83,15 @@ Here we show how to add user stories and child tasks from the web portal and add
 
 * * * 
 
-::: moniker range="<= tfs-2017"
-
-> [!NOTE]   
-> The **Discussion** section is available with TFS 2017.2 and later versions. 
-
-::: moniker-end
 
 ## Prerequisites
 
 - After you connect to a project, you can add work items. If you don't have a project yet, [create one in Azure DevOps](sign-up-invite-teammates.md). 
-- To add issues and tasks to the board, and use all other board features, you must be granted **Basic** access and have been added as a member of the Contributors or Project Administrators group. 
-- If you have been granted **Stakeholder** access for a private project and have been added as a member of the Contributors or Project Administrators group, you can view boards, open and modify issues and tasks, and add child tasks to a checklist. However, you can't update the status of an issue or reorder or reparent an issue using drag-and-drop, nor update a field on a card. 
+- To add work items to a board, and use all other board features, you must be granted **Basic** access and have been added as a member of the Contributors or Project Administrators group. 
+- If you have been granted **Stakeholder** access for a private project and have been added as a member of the Contributors or Project Administrators group, you can view boards, open and modify work items, and add child tasks to a checklist. However, you can't update the status of a backlog item or reorder or reparent a backlog item using drag-and-drop, nor update a field on a card.
 - If you have been granted **Stakeholder** access for a public project, and have been added as a member of the Contributors or Project Administrators group, you have full access to all Boards features. 
 
 For details, see [Default permissions and access for Azure Boards](permissions-access-boards.md)
-
 
 
 ::: moniker range="<= tfs-2018"
@@ -234,11 +227,16 @@ To open the Features board from the Requirements board, choose **Features** from
 
 * * *
 
-
 ## Add details to a board item
 
 Choose the issue or user story title to open it. Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
+::: moniker range="<= tfs-2017"
+
+> [!NOTE]   
+> The **Discussion** section is available with TFS 2017.2 and later versions. 
+
+::: moniker-end
 
 #### [Agile process](#tab/agile-process) 
 
@@ -246,9 +244,6 @@ For example, here we assign the story to Raisa Pokrovskaya and we add a discussi
 
 > [!div class="mx-imgBorder"]
 > ![User Story work item form, add details](media/plan-track-work/user-story-form-add-details.png)
-
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. 
 
  Choose **Save & Close** when done. 
 
@@ -259,9 +254,6 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 
 > [!div class="mx-imgBorder"]
 > ![Issues work item form, add details ](media/track-issues/issue-form-add-details.png)
-
-> [!NOTE]  
-> You can only assign work to a user who has been added to the project. 
 
 Choose **Save & Close** when done. 
 
@@ -286,6 +278,7 @@ For example, here we assign the product backlog item to Jamal Hartnett and set S
 Choose **Save & Close** when done.  
 
 * * *
+
 
 
 ### Field descriptions
@@ -622,7 +615,7 @@ In addition to the fields you can define for a backlog item&mdash;user story, is
 :::row-end:::
 :::row:::
    :::column span="":::
-      [Activity](../queries/query-numeric.md), [Discipline](../queries/query-numeric.md) (CMMI process)
+      [Activity](../queries/query-numeric.md) 
    :::column-end:::
    :::column span="3":::
       The type of activity that is required to perform a task.To learn more about how this field is used, see [Capacity planning](../sprints/set-capacity.md). Allowed values are:  
