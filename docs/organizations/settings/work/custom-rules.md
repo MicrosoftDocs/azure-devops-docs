@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 02/24/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -127,10 +127,10 @@ You delete or disable the rule from the actions menu of the rule.
 
 ## Restrict modification of work items based on a user or group
 
-You can customize work item types to support these restriction requests:
+You can add rules to work item types to support these restriction requests:
 
 - Restrict who can create or modify a work item
-- Restrict who can create specific work item types, such as Epics or Features
+- Restrict who can create a work item types 
 - Restrict who can modify a specific field for a work item type
 - Hide field from the form
 
@@ -139,7 +139,18 @@ For example, the following condition indicates that the State field, for the Ini
 > [!div class="mx-imgBorder"]  
 > ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
 
+For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule.  
+
+> [!NOTE]   
+> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
+
+
 ::: moniker-end
+
+
+:::image type="content" source="../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png" alt-text="Custom rule":::
+
+Something, something, something, :::image type="icon" source="../../../media/icons/add-icon.png "::: Something, something, something.  
 
 
 ## Related articles
