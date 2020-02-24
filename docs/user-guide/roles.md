@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 02/24/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,15 +18,22 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
-If you're a sole developer or you work on a small team, you likely do tasks that are associated with issue tracking, feature planning, coding, testing, build, and deployment.  
+If you're a sole developer or work in a small setting, you track issues, plan features, code, test, build, and deploy.  
 
-If you work in a large company, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.
+If you work in a large setting, you may be more focused on a specific set of tasks that aligns with specific roles. These specific roles could be software development, project management, or DevOps.
 
 This article describes the features and tasks available to you, based on your role.  
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build pipelines, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through [permission management](../organizations/security/permissions.md).
+Team members are contributors who have access to the following areas and more:
+- code base
+- work item tracking
+- Agile tools
+- build pipelines
+- test tools
+
+If you need to lock down specific areas to a select set of contributors, see [permission management](../organizations/security/permissions.md).
 
 ### Software developers
 
@@ -55,11 +62,12 @@ Project managers (PMs) typically plan the feature set to deliver, set priorities
   
 For more information about getting started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-If you're used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+If you use Excel or Project to plan and track your work, you can integrate these tools with Azure DevOps. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+
 
 ### DevOps: builders, testers, and release managers
 
-A main advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following main DevOps-associated tasks that Azure DevOps supports:
+An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports:
 
 - Define builds
 - Unit test your code 
@@ -80,7 +88,7 @@ Stakeholder access essentially provides free access to a limited set of feature 
 
 ## Administrator roles
 
-A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. But there are still several administrative tasks required to support a collaborative, integrated software development environment.
+A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. But there are several administrative tasks required to support a collaborative, integrated software development environment.
 
 The main tasks are grouped as follows by membership in a security group or role.
 
