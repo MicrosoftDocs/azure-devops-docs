@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
+ms.date: 02/12/2020
 ---
 
 <h3 id="powershell-version">What version of PowerShell do I need? Where can I get a newer version?</h3>

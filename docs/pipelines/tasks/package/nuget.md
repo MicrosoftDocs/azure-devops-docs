@@ -101,12 +101,33 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
 
 ```YAML
-# Restore project
+# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    feedsToUse: Select
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
     restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from an organization scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-organization-scoped-feed'
+    restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from feed(s) set in nuget.config
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
 ```
 
 ### Package
@@ -139,7 +160,7 @@ Push/Publish a package to a feed defined in your NuGet.config.
     nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
 ```
 
-Push/Publish a package to a feed you define in the task
+Push/Publish a package to a feed in the same organization you define in the task
 
 ```YAML
 # Push a project
@@ -147,6 +168,7 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
     publishVstsFeed: 'myTestFeed'
 ```
 

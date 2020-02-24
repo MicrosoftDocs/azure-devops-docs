@@ -74,7 +74,7 @@ See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-j
 
 ### Hosted agents
 
-The `win1803` and `ubuntu-16.04` pools support running containers.
+The `windows-2019` and `ubuntu-16.04` pools support running containers.
 The Hosted macOS pool does not support running containers.
 
 ## Single job
@@ -103,9 +103,9 @@ A Windows example:
 
 ```yaml
 pool:
-  vmImage: 'win1803'
+  vmImage: 'windows-2019'
 
-container: mcr.microsoft.com/windows/servercore:1803
+container: mcr.microsoft.com/windows/servercore:ltsc2019
 
 steps:
 - script: set
@@ -113,8 +113,8 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running an 1803
-> build, we also use the `1803` tag for the container.
+> Since this example uses the hosted Windows Container pool, which is running a windows-2019
+> build, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 

@@ -9,7 +9,7 @@ ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 1/8/2019
+ms.date: 02/11/2020
 monikerRange: azure-devops
 ---
 
@@ -17,15 +17,17 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-A resource is anything used by a pipeline that lives outside the pipeline. 
-
-A resource can be another CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.), code repositories (GitHub, Azure Repos, Git), container image registries (ACR, Docker Hub, etc.) or package feeds (Azure Artifact feed, Artifactory package etc.).  
+A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
+* CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
+* code repositories (GitHub, Azure Repos, Git)
+* container image registries (Azure Container Registry, Docker Hub, etc.) 
+* package feeds (Azure Artifact feed, Artifactory package etc.)  
 
 ## Why resources?
 
-Resources are defined at one place and can be consumed anywhere in your pipeline. Resources provide you the full traceability of the services consumed in your pipeline including the version, artifacts, associated commits and work-items. You can fully automate your DevOps workflow by subscribing to trigger events on your resources.
+Resources are defined at one place and can be consumed anywhere in your pipeline. Resources provide you the full traceability of the services consumed in your pipeline including the version, artifacts, associated commits, and work-items. You can fully automate your DevOps workflow by subscribing to trigger events on your resources.
 
-Resources in YAML represent sources of types pipelines, builds, repositories, containers and packages. 
+Resources in YAML represent sources of types pipelines, builds, repositories, containers, and packages. 
 
 ### Schema
 
@@ -43,17 +45,19 @@ resources:
 
 If you have an Azure Pipeline that produces artifacts, you can consume the artifacts by defining a `pipelines` resource. `pipelines` is a dedicated resource only for Azure Pipelines. You can also set triggers on pipeline resource for your CD workflows.
 
+In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. 
+
 ## [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
   pipelines:
-  - pipeline: string  # identifier for the pipeline resource
+  - pipeline: string  # identifier for the resource used in pipeline resource variables
     connection: string  # service connection for pipelines from other Azure DevOps organizations
     project: string # project for the source; optional for current project
-    source: string  # source definition of the pipeline
+    source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
-    branch: string  # branch to pick the artifact, optional; defaults to master branch
+    branch: string  # branch to pick the artifact, optional; defaults to all branches
     tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
@@ -68,8 +72,8 @@ If you need to consume artifacts from an Azure pipeline within the current proje
 ```yaml
 resources:
   pipelines:
-  - pipeline: SmartHotel
-    source: SmartHotel-CI # name of the pipeline source definition
+  - pipeline: SmartHotel-resource # identifier for the resource (used in pipeline resource variables)
+    source: SmartHotel-CI # name of the pipeline that produces an artifact
 ```
 
 If you need to consume a pipeline from other project, then you need to include the project name while providing source name.
@@ -108,13 +112,22 @@ resources:
       - master
 ```
 ---
+
+
 > [!IMPORTANT]
 > When you define a resource trigger, if its pipeline resource is from the same repo as the current pipeline, triggering follows the same branch and commit on which the event is raised.
-> But if the pipeline resource is from a different repo, the current pipeline is triggered on the master branch. 
+> But if the pipeline resource is from a different repo, the current pipeline is triggered on the default branch.
 
+### Default branch for triggers
+Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
+1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose **Triggers**.
+![Commits in pipeline run](media/triggers-view.png)
+1. Now select 'YAML' tab and go to 'Get sources'.
+1. Now you can set the default branch for your pipeline.
+![Commits in pipeline run](media/triggers-default-branch.png)
 ### `download` for pipelines
 
-All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each of the `deployment` job. You can override this behavior: see [Pipeline Artifacts](../artifacts/pipeline-artifacts.md) for more details. For regular 'job' artifacts are not automatically downloaded. You need to use `download` explicitly wherever needed.
+All artifacts from the current pipeline and from all `pipeline` resources are automatically downloaded and made available at the beginning of each `deployment` job. You can override this behavior. For more information, see [Pipeline Artifacts](../artifacts/pipeline-artifacts.md). Regular 'job' artifacts are not automatically downloaded. Use `download` explicitly when needed.
 
 ## [Schema](#tab/schema)
 
@@ -163,7 +176,7 @@ resources.pipeline.<Alias>.requestedForID
 
 ## Resources: `builds`
 
-If you have any external CI build system that produces artifacts, you can consume the artifacts by defining a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI etc.
+If you have any external CI build system that produces artifacts, you can consume artifacts with a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI etc.
 
 ## [Schema](#tab/schema)
 
@@ -178,7 +191,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     trigger: boolean    # Triggers are not enabled by default and should be explicitly set
 ```
 
-`builds` is an extensible category. You can write an extension to consume artifacts from your builds service (CircleCI, TeamCity etc.) and introduce a new type of service to be part of `builds`. Currently, we are providing Jenkins resource as a type in `builds`.
+`builds` is an extensible category. You can write an extension to consume artifacts from your builds service (CircleCI, TeamCity etc.) and introduce a new type of service as part of `builds`. Jenkins is a type of resource in `builds`.
 
 ## [Example](#tab/example)
 
@@ -201,7 +214,9 @@ resources:
 You can consume artifacts from the `build` resource as part of your jobs using `downloadBuild` task. Based on the type of `build` resource defined (Jenkins, TeamCity etc.), this task automatically resolves to the corresponding download task for the service during the run time.
 
 Artifacts from the `build` resource are downloaded to `$(PIPELINE.WORKSPACE)/<build-identifier>/` folder. 
-Note: `build` resource artifacts are not automatically downloaded in your jobs/deploy-jobs and you need to explicitly add `downloadBuild` task for consuming the artifacts.
+
+> [!IMPORTANT]
+> `build` resource artifacts are not automatically downloaded in your jobs/deploy-jobs. You need to explicitly add `downloadBuild` task for consuming the artifacts.
 
 ## [Schema](#tab/schema)
 
@@ -288,13 +303,13 @@ steps:
   persistCredentials: boolean  # if 'true', leave the OAuth token in the Git config after the initial fetch; defaults to false
 ```
 
-Repos from `repository` resource are not automatically synced in your jobs and you need to explicitly use `checkout` to fetch your repos as part of your jobs.
+Repos from the `repository` resource are not automatically synced in your jobs. Use `checkout` to fetch your repos as part of your jobs.
 
 For more information, see [Check out multiple repositories in your pipeline](../repos/multi-repo-checkout.md).
 
 ## Resources: `containers`
 
-If you need to consume a container image as part of your CI/CD pipeline, you can achieve it using `containers`. A container resource can be a Docker Registry, Azure Container Registry or any private Docker registry.
+If you need to consume a container image as part of your CI/CD pipeline, you can achieve it using `containers`. A container resource can be a public or private Docker Registry, or Azure Container Registry.
 
 
 If you need to consume images from Docker registry as part of your pipeline, you can define a generic container resource (not `type` keyword required). 
@@ -325,7 +340,7 @@ resources:
 ```
 ---
 
-We have introduced a first class container resource type for Azure Container registry (ACR) which can be used for consuming your ACR images as part of your jobs and also enable automatic pipeline triggers.
+You can use a first class container resource type for Azure Container Registry (ACR) to consume your ACR images. This resources type can be used as part of your jobs and also to enable automatic pipeline triggers.
 
 ## [Schema](#tab/schema)
 
@@ -361,7 +376,7 @@ resources:
 ```
 ---
 #### Container resource variables
-Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry and connection details are made accessible across all the jobs to be used in your container deploy tasks.
+Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks.
 
 ```yaml
 resources.container.<Alias>.type
@@ -375,7 +390,7 @@ resources.container.<Alias>.location
 Note: location variable is only applicable for `ACR` type of container resources.
 
 ## Traceability
-We provide full traceability about any resource consumed at a pipeline level and at the deployment-job level where it is deployed to Environment.
+We provide full traceability for any resource consumed at a pipeline or deployment-job level.
 
 ### Pipeline traceability
 For every pipeline run, we show the info about the 
@@ -388,6 +403,5 @@ For every pipeline run, we show the info about the
 4. Work-items for each resource.
 
 ### Environment traceability
-Whenever a pipeline deploys to an environment, in the environments view, we show the actual list of resources that are consumed as part of the deployment-jobs and their associated commits and work-items.
+Whenever a pipeline deploys to an environment, you can see a list of resources that are consumed in the environments view. This view includes resources consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
-
