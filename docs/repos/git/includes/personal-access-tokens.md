@@ -84,7 +84,7 @@ ms.topic: include
    If you're using Azure DevOps Services, and you have more than one organization,
    you can also select the organization where you want to use the token.
 
-   <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="/azure/devops/repos/git/media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   ![Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token](../media/setup-personal-access-token.png)
 
 5. Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes)
    for this token to authorize for *your specific tasks*.
@@ -122,7 +122,7 @@ To keep your token more secure, use credential managers so you don't have to ent
 
 ## Revoke personal access tokens to remove access
 
-When you don't need your token anymore, just revoke it to remove access.
+When you don't need your token anymore, revoke it to remove access.
 
 ::: moniker range="azure-devops"
 
@@ -137,7 +137,7 @@ When you don't need your token anymore, just revoke it to remove access.
 
 2. Under Security, select **Personal access tokens**. Select the token for which you want to revoke access, and then select **Revoke**.
 
-   ![Revoke a token or all tokens](/../../repos/git/media/revoke-personal-access-tokens-preview.png)
+   ![Revoke a token or all tokens](../media/revoke-personal-access-tokens-preview.png)
 
 3. Select Revoke in the confirmation dialog.
 
@@ -149,9 +149,8 @@ When you don't need your token anymore, just revoke it to remove access.
 
    ![Go to the organization home page, open your profile, go to Security](../media/my-profile-team-services.png)  
 
-2. Revoke access.
+2. **Revoke** access.
    
-   <img alt="Revoke a token or all tokens" src="/azure/devops/repos/git/media/revoke-personal-access-tokens.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 

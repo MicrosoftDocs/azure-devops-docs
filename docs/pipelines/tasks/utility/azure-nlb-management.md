@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 02/11/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -29,20 +29,12 @@ Use this task in a build or release pipeline to connect or disconnect an Azure v
 
 ## Arguments
 
-<table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Azure Subscription</td><td>(Required) Select the Azure Resource Manager subscription for the deployment.</td></tr>
-<tr><td>Resource Group</td><td>(Required) Select the resource group name.</td></tr>
-<tr><td>Load Balancer Name</td><td>(Required) Select or enter the load balancer.</td></tr>
-<tr><td>Action</td><td>(Required) Disconnect:  Removes the virtual machine’s primary network interface from the load balancer’s backend pool. So that it stops receiving network traffic.
-
-Connect: Adds the virtual machine’s primary network interface to load balancer backend pool. So that it starts receiving network traffic based on the load balancing rules for the load balancer resource.</td></tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`ConnectedServiceName`<br/>Azure Subscription|(Required) Select the Azure Resource Manager subscription for the deployment <br/>Argument aliases: `azureSubscription`|
+|`ResourceGroupName`<br/>Resource Group|(Required) Select the resource group name|
+|`LoadBalancer`<br/>Load Balancer Name|(Required) Select or enter the load balancer|
+|`Action`<br/>Action|(Required) <br/> **Disconnect**: Removes the virtual machine’s primary network interface from the load balancer’s backend pool. So that it stops receiving network traffic. <br/>**Connect**: Adds the virtual machine’s primary network interface to load balancer backend pool. So that it starts receiving network traffic based on the load balancing rules for the load balancer resource|
 
 ## Open source
 

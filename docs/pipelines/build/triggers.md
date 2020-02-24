@@ -8,7 +8,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 01/09/2020
+ms.date: 02/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -451,6 +451,9 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 
 Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
+> [!NOTE]
+> If you want to build your pipeline by only using scheduled triggers, you must disable [PR](#pr-triggers) and [continuous integration](#ci-triggers) triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pull-request-validation) and must be disabled there.
+
 ```yaml
 schedules:
 - cron: string # cron syntax defining a schedule
@@ -611,7 +614,7 @@ Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as 
 Example | Cron expression
 --------|----------------
 Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, `0 18 * * Mon,Wed,Fri`, or `0 18 * * 1-5/2`
-Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *`, or `0 0-18/6 * * *`
+Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
 Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
@@ -675,14 +678,14 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC`, or `9:30 PM UTC`. Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
 In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron syntax is `0 8 * * Mon-Fri`.
 
 * Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
 > [!IMPORTANT]
@@ -721,13 +724,13 @@ schedules:
 In the first schedule, **M-F 3:00 AM (UTC) daily build**, the cron syntax is `0 3 * * Mon-Fri`.
 
 * Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
 
 In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, the cron syntax is `0 3 * * Sun`.
 
 * Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
 * We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
@@ -951,7 +954,7 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
-1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, `Schedule`, and so on).
 
 1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 

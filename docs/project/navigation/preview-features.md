@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 11/06/2019
+ms.date: 02/17/2020
 ---
 
 
@@ -88,28 +88,30 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 
 <a id="account-manager" />
 
-1. To access the Preview features options, open your profile menu. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
+To access the Preview features options, open your profile menu. The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not.  
 
-	#### New Account Manager enabled
+#### [New Account Manager enabled](#tab/new-account-enabled)
 
-	Choose your profile menu, then choose the ![ ](../../media/icons/actions-icon.png) actions icon, **User settings**, and then **Preview features**. 
+Choose your profile menu, then choose the ![ ](../../media/icons/actions-icon.png) actions icon, **User settings**, and then **Preview features**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open User settings](media/preview-features/open-preview-features-s161.png)  ![Open Preview Features](media/preview-features/user-settings-menu.png) 
+> [!div class="mx-imgBorder"]  
+> ![Open User settings](media/preview-features/open-preview-features-s161.png)  ![Open Preview Features](media/preview-features/user-settings-menu.png) 
 
-	Choose **Azure DevOps profile** to access your personal Azure DevOps settings, notifications, usage, and security settings.  
+Choose **Azure DevOps profile** to access your personal Azure DevOps settings, notifications, usage, and security settings.  
 
-	#### New Account Manager not enabled
+#### [New Account Manager not enabled](#tab/new-account-not-enabled)
 
-	Choose your profile menu and then choose **Preview features**. 
+Choose your profile menu and then choose **Preview features**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](media/preview-features/open-preview-features-old-account-manager.png)
+> [!div class="mx-imgBorder"]  
+> ![Open Preview Features](media/preview-features/open-preview-features-old-account-manager.png)
 
-1. To enable or disable a feature, choose the slider. 
+---
 
-	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](media/preview-features/user-level-s160.png) 
+To enable or disable a feature, choose the slider. 
+
+> [!div class="mx-imgBorder"]  
+> ![Preview features options for yourself](media/preview-features/user-level-s160.png) 
 
 <a id="account-level">  </a>
 

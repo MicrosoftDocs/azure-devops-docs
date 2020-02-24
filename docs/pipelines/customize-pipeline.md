@@ -77,7 +77,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "macos-10.13"
+      vmImage: "macos-latest"
     ```
     
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
@@ -122,7 +122,7 @@ You can build and test your project on multiple platforms. One way to do it is w
         linux:
           imageName: "ubuntu-16.04"
         mac:
-          imageName: "macos-10.13"
+          imageName: "macos-10.14"
         windows:
           imageName: "vs2017-win2016"
       maxParallel: 3
@@ -234,7 +234,7 @@ Sometimes you'll want to prevent new runs from starting on your pipeline.
 * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 
 ### Other settings
-* **YAML file path.** If you ever need to direct your pipeline to use a different YAMl file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+* **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
 * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
 

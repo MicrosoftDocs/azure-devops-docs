@@ -1,4 +1,4 @@
-﻿---
+---
 title: Plan product backlog of stories, issues, & more
 titleSuffix: Azure Boards
 description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
@@ -21,6 +21,8 @@ ms.date: 03/21/2019
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
 
 After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
+
+[!INCLUDE [temp](../includes/note-configure-customize.md)]
 
 Your backlog consists of a list of [work items](../work-items/about-work-items.md). 
 You use work items to share information, assign work to team members, track dependencies, organize work, 
@@ -56,7 +58,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -76,14 +78,14 @@ From your web browser, open your product backlog.
     > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
     > [!TIP]    
-    > Select the ![ ](../../media/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![ ](../../media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
+    > Select the ![Favorite icon](../../media/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![Favorite icon](../../media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To select which columns display and in what order, select the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To select which columns display and in what order, select the ![Actions icon](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Column options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -117,30 +119,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
-[!INCLUDE [temp](../includes/basic-process-bug-note.md)]
-
-If you use the Scrum process, your default setup is to track bugs along with product backlog items (PBIs). If you work in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
-
-Talk with your team to determine how they want to manage bugs. Then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
-
-> [!NOTE]    
-> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. If you're not a team administrator, the option to change the setting is disabled. To be added as a team administrator, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
-
-
-::: moniker range="<= tfs-2018"
-
-> [!TIP]  
-> After you refresh a backlog or board and if you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on the Kanban or sprint taskboards.  
-
-::: moniker-end
-
-
-::: moniker range="> tfs-2018"
-
-> [!TIP]  
-> After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
-
-::: moniker-end
+Before deciding, review [Configure and customize, Treat bugs as requirements or tasks](../configure-customize.md) for guidance. 
 
 <a id="convert-ideas" />
 

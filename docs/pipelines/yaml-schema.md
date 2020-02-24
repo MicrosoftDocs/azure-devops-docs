@@ -9,7 +9,7 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 1/24/2020
+ms.date: 2/18/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -116,6 +116,7 @@ This document covers the schema of an Azure Pipelines YAML file.
 To learn the basics of YAML, see [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/).
 Azure Pipelines doesn't support all YAML features.
 Unsupported features include anchors, complex keys, and sets.
+Also, unlike standard YAML, Azure Pipelines depends on seeing `stage`, `job`, `task`, or a task shortcut like `script` as the first key in a mapping.
 
 ## Pipeline
 
@@ -129,7 +130,7 @@ resources:
   pipelines: [ pipelineResource ]
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
-variables: { string: string } | [ variable | templateReference ]
+variables: # several syntaxes, see specific section
 trigger: trigger
 pr: pr
 stages: [ stage | templateReference ]
@@ -158,7 +159,7 @@ name: string  # build numbering format
 resources:
   containers: [ containerResource ]
   repositories: [ repositoryResource ]
-variables: { string: string } | [ variable | templateReference ]
+variables: # several syntaxes, see specific section
 trigger: trigger
 pr: pr
 jobs: [ job | templateReference ]
@@ -221,7 +222,7 @@ stages:
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
-  variables: { string: string } | [ variable | variableReference ]
+  variables: # several syntaxes, see specific section
   jobs: [ job | templateReference]
 ```
 
@@ -295,7 +296,7 @@ jobs:
   container: containerReference # container to run this job inside of
   timeoutInMinutes: number # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: number # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ]
+  variables: # several syntaxes, see specific section
   steps: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
   services: { string: string | container } # container resources to run as a service container
 ```
@@ -485,7 +486,7 @@ jobs:
   services: { string: string | container } # container resources to run as a service container
   timeoutInMinutes: nonEmptyString        # how long to run the job before automatically cancelling
   cancelTimeoutInMinutes: nonEmptyString  # how much time to give 'run always even if cancelled tasks' before killing them
-  variables: { string: string } | [ variable | variableReference ]
+  variables: # several syntaxes, see specific section
   environment: string  # target environment name and optionally a resource name to record the deployment history; format: <environment-name>.<resource-name>
   strategy:
     runOnce:    #rolling, canary are the other strategies that are supported
@@ -570,18 +571,18 @@ Specify variables at the pipeline, stage, or job level.
 
 #### [Schema](#tab/schema/)
 
-For a simple set of hard-coded variables, use this syntax:
+For a simple set of hard-coded variables, use this mapping syntax:
 
 ```yaml
 variables: { string: string }
 ```
 
-To include variable groups, switch to this list syntax:
+To include variable groups, switch to this sequence syntax:
 
 ```yaml
 variables:
-- name: string # name of a variable
-  value: any # value of the variable
+- name: string  # name of a variable
+  value: string # value of the variable
 - group: string # name of a variable group
 ```
 
@@ -590,6 +591,8 @@ You can repeat `name`/`value` pairs and `group`.
 You can also include variables from templates.
 
 #### [Example](#tab/example/)
+
+Mapping syntax:
 
 ::: moniker range="> azure-devops-2019"
 
@@ -630,6 +633,8 @@ jobs:
 
 ::: moniker-end
 
+Sequence syntax:
+
 ```yaml
 variables:
 - name: MY_VARIABLE           # hard-coded value
@@ -657,7 +662,7 @@ Azure Pipelines supports four kinds of templates:
 - [Step](#step-templates)
 - [Variable](#variable-templates)
 
-You can also use templates to to control what is allowed in a pipeline and to define how parameters can be used.
+You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
 - [Parameter](#parameter-templates)
 
 ::: moniker-end
@@ -721,7 +726,7 @@ stages:
     - script: npm test -- --file=${{ parameters.testFile }}
   - job: ${{ parameters.name }}_Mac
     pool:
-      vmImage: macos-10.13
+      vmImage: macos-10.14
     steps:
     - script: npm install
     - script: npm test -- --file=${{ parameters.testFile }}
@@ -796,7 +801,7 @@ jobs:
   parameters:
     name: macOS
     pool:
-      vmImage: 'macOS-10.13'
+      vmImage: 'macOS-10.14'
 
 - template: jobs/build.yml  # Template reference
   parameters:
@@ -853,7 +858,7 @@ steps:
 jobs:
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - template: steps/build.yml # Template reference
 
@@ -1005,7 +1010,7 @@ An example of a resource is another CI/CD pipeline that produces:
 - Code repositories like GitHub, Azure Repos, or Git.
 - Container-image registries like Azure Container Registry or Docker hub.
 
-Resources in YAML represent sources of pipelines, containers, repositories, and types.
+Resources in YAML represent sources of pipelines, containers, repositories, and types. For more information on Resources, [see here](process/resources.md).
 
 ### General schema
 
@@ -1085,7 +1090,7 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
-You can consume artifacts from a pipeline resource by using a `download` task. See the [download](#download) keyword.
+You can consume artifacts from a pipeline resource by using a `download` task. See the [download](/azure/devops/pipelines/yaml-schema?view=azure-devops#download) keyword.
 
 ### Container resource
 
@@ -1402,7 +1407,7 @@ Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-trig
 
 ```yaml
 schedules:
-- cron: string # cron syntax defining a schedule
+- cron: string # cron syntax defining a schedule in UTC time
   displayName: string # friendly name given to a specific schedule
   branches:
     include: [ string ] # which branches the schedule applies to

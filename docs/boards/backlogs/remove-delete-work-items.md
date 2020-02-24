@@ -376,6 +376,10 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
+> [!NOTE]   
+> To permanently delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**. 
+
+
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"
@@ -440,6 +444,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
+::: moniker range="tfs-2013"  
+
+> [!NOTE]  
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi**command. 
+
+::: moniker-end
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range="= azure-devops"

@@ -1,5 +1,11 @@
 ---
 ms.topic: include
+ms.prod: devops
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 Install npm packages from your feed, and also from npmjs.com if you've configured [upstream sources](../../npm/upstream-sources.md), using the npm client.

@@ -22,6 +22,7 @@ The On-premises XML process model provides support for customizing work tracking
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
 
+[!INCLUDE [temp](../boards/includes/note-configure-customize.md)]
 
 ::: moniker range="azure-devops-2019"  
 

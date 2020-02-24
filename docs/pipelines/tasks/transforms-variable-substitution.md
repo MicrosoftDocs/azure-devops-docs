@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 02/18/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -346,6 +346,8 @@ As an example, consider the task of overriding values in this JSON file:
 The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
+# [Classic](#tab/Classic)
+
 1. Create a release pipeline with a stage named **Release**.
 
 2. Add an **Azure App Service Deploy** task and enter a newline-separated
@@ -395,6 +397,33 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
      }
    }
    '''
+
+# [YAML](#tab/yaml)
+
+Following YAML snippet showcases JSON variable substitution.
+
+```YAML
+- variables:
+    Data.DebugMode: disabled
+    Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
+    Data.DBAccess.Users.0: Admin-3
+    Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
+
+- stage: Deploy
+  jobs:
+  - job: DeployJob
+    steps:
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: Azure Resource Manager
+        azureSubscription: <Name of the Azure subscription>
+        appType: <Name of the App Service type>
+        WebAppName: <Name of the Azure WebApp>
+        package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        JSONFiles: '**/appsettings.json'
+```
+
+* * *
 
 ### JSON variable substitution notes
 

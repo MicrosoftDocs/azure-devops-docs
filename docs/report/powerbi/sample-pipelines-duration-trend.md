@@ -363,6 +363,8 @@ You may want to view the duration trend for all the pipelines of the project in 
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
 - Select the Build pipeline from the slicer for which you need to see the trend of pipeline pass rate 
 
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
+
 #### [Power BI query](#tab/powerbi/)
 
 [!INCLUDE [temp](includes/sample-powerbi-query.md)]

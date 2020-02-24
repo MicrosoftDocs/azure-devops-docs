@@ -9,7 +9,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 1/15/2020
+ms.date: 02/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,6 +24,9 @@ This is a step-by-step guide to using Azure Pipelines to build a GitHub reposito
 ## Prerequisites
 
 [!INCLUDE [include](includes/prerequisites.md)]
+
+> [!NOTE]
+> If you want create a new pipeline by copying another pipeline, see [Clone a pipeline](#clone-a-pipeline).
 
 ## Create your first pipeline
 
@@ -148,6 +151,32 @@ When you're done, you'll have a working YAML file (`azure-pipelines.yml`) in you
 Learn more about [working with JavaScript](ecosystems/javascript.md) in your pipeline.
 
 --- 
+
+## Clone a pipeline
+
+If your new pipeline can be created by copying another pipeline, follow the instructions in this section.
+
+#### [YAML](#tab/yaml/)
+
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
+
+    ![Pipeline details](get-started/media/pipeline-overview.png)
+
+2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
+
+3. To customize your newly cloned pipeline, see [Customize your pipeline](customize-pipeline.md).
+
+#### [Classic](#tab/classic/)
+
+1. Navigate to the pipeline details page for your pipeline. If you have the `definitionId` you can browse to it using the following URL: `https://dev.azure.com/{org}/{project}/_build?definitionId={id}&_a=summary`
+
+2. Choose **...** and select **Clone**.
+
+    ![Clone pipeline menu](media/get-started-designer/clone-pipeline.png)
+
+3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
+
+* * *
 
 [!INCLUDE [include](includes/get-status-badge.md)]
 
@@ -945,11 +974,15 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 > In many cases, you probably would want to edit the release pipeline so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
 <a name="next-steps"></a>
 
 ## Next steps
 
-You've learned the basics of using the classic editor to create and run a pipeline.
+You've learned the basics of creating and running a pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
@@ -962,6 +995,10 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [Java](ecosystems/java.md) | Gradle |
 | [JavaScript](ecosystems/javascript.md) | Node.js |
 | [Xcode](ecosystems/xcode.md) | Xcode |
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 ## Q & A
 
@@ -979,9 +1016,29 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 ### What kinds of version control can I use
 
-We've used a Git repository in Azure Repos to keep things focused on CI/CD for this tutorial.
-
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+* Clients
+
+  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
+  * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+  * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
+  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
+  * [IntelliJ](../java/download-intellij-plug-in.md)
+  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
+
+* Services
+  * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
+  * Git service providers such as GitHub and Bitbucket Cloud
+  * Subversion
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 * Clients
 
@@ -998,13 +1055,13 @@ When you're ready to get going with CI/CD for your app, you can use the version 
   * Git service providers such as GitHub and Bitbucket Cloud
   * Subversion
 
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops" 
+
 ### How do I replicate a pipeline?
 
 If your pipeline has a pattern that you want to replicate in other pipelines, clone it, export it, or save it as a template.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
 > ![all-definitions-build-action-menu-replicate-actions](media/get-started-designer/all-definitions-build-action-menu-replicate-actions-newnav.png)
@@ -1029,6 +1086,7 @@ After you create a template, your team members can use it to follow the pattern 
 > [!TIP]
 >
 > If you're using the **New Build Editor**, then your custom templates are shown at the bottom of the list.
+
 
 ### How do I work with drafts?
 
@@ -1094,13 +1152,24 @@ When you're ready you can publish the draft to merge the changes into your build
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
+::: moniker-end
+
+::: moniker range=">=tfs-2013"
+
 ### How can I delete a pipeline?
 
 To delete a pipeline, navigate to the summary page for that pipeline, and choose **Delete** from the **...** menu in the top-right of the page. Type the name of the pipeline to confirm, and choose **Delete**.
 
+::: moniker-end
+
+::: moniker range="<= azure-devops"
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
 
 You can queue builds [automatically](build/triggers.md) or manually.
 
@@ -1124,7 +1193,35 @@ When you manually queue a build, you can, for a single run of the build:
 
   - Run a private build of a [shelveset](https://msdn.microsoft.com/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+You can queue builds [automatically](build/triggers.md) or manually.
+
+When you manually queue a build, you can, for a single run of the build:
+
+* Specify the [pool](agents/pools-queues.md) into which the build goes.
+
+* Add and modify some [variables](build/variables.md).
+
+* Add [demands](process/demands.md).
+
+* In a Git repository
+
+  - Build a [branch](../repos/git/branches.md) or a [tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+  - Build a [commit](../repos/git/commits.md).
+
+::: moniker-end
+
+::: moniker range=">=tfs-2013"
+
 ### Where can I learn more about build pipeline settings?
+
+::: moniker-end
+
+::: moniker range=">=tfs-2013 <= tfs-2018"
 
 To learn more about build pipeline settings, see:
 
@@ -1136,6 +1233,23 @@ To learn more about build pipeline settings, see:
 * [Retention](policies/retention.md)
 * [History](build/history.md)
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+To learn more about build pipeline settings, see:
+
+* [Getting sources](repos/index.md)
+* [Tasks](tasks/index.md)
+* [Variables](build/variables.md)
+* [Triggers](build/triggers.md)
+* [Retention](policies/retention.md)
+* [History](build/history.md)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops"
+
 ### How do I programmatically create a build pipeline?
 
 [REST API Reference: Create a build pipeline](../integrate/index.md)
@@ -1145,5 +1259,5 @@ To learn more about build pipeline settings, see:
 
 <!-- ENDSECTION -->
 
-::: moniker-end
+::: moniker-end 
 
