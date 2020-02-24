@@ -135,7 +135,7 @@ To open the Epics board from the Issues board, choose **Epics** from the board s
 
 The Backlog items Kanban board is the best tool for quickly adding product backlog items and child tasks. To open, choose **Boards>Boards**.  
 
-![Open your Kanban board](media/plan-track-work/choose-features-board-scrum.png)  
+![Open your Kanban board](media/plan-track-work/open-kanban-board-scrum-items.png)  
 
 The Features Kanban board is the best tool for quickly adding features and product backlog items that are children of those features. 
 To open the Features board from the Backlog items board, choose **Features** from the board selector. 
