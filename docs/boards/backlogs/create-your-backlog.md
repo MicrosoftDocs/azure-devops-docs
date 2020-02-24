@@ -207,7 +207,9 @@ Enter as much detail as the team needs to:
 - Develop tests. 
 - Ensure that the end product meets acceptance criteria.
 
+
 [!INCLUDE [temp](../includes/note-user-assigned.md)]
+
 
 #### [Agile process](#tab/agile-process) 
 
@@ -318,6 +320,21 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ## Related articles
 
+::: moniker range="azure-devops"
+
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
+- [Refine your backlog](best-practices-product-backlog.md)  
+- [Display rollup progress bars or counts](display-rollup.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
@@ -326,3 +343,4 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
+::: moniker-end
