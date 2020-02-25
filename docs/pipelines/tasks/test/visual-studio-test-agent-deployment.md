@@ -135,7 +135,7 @@ The supported options for these scenarios are:
 
 ### Example
 
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/10618066/)
+* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### More information
 
