@@ -20,8 +20,8 @@ ms.date: 02/13/2020
 <tr>
 <td>Agent.BuildDirectory</td>
 <td>
-<p>The local path on the agent where all folders for a given build pipeline are created.</p>
-<p>For example: <code>c:\agent_work\1</code></p>
+<p>The local path on the agent where all folders for a given build pipeline are created. This variable has the same value as <code>Pipeline.Workspace</code>.</p>
+<p>For example: <code>/home/vsts/work/1</code></p>
 </td>
 </tr>
 
@@ -474,8 +474,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Pipeline.Workspace</td>
-<td>Workspace directory for a particular pipeline.<br><br>
-For example, <code>c:\agent_work\1</code>.</td>
+<td>Workspace directory for a particular pipeline. This variable has the same value as <code>Agent.BuildDirectory</code>.<br><br>
+For example, <code>/home/vsts/work/1</code>.</td>
 </tr>
 
 </table>
