@@ -144,13 +144,10 @@ For custom work item types you can specify the System.State. For default work it
 > [!NOTE]   
 > Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
 
-
 ::: moniker-end
 
 
-:::image type="content" source="../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png" alt-text="Custom rule":::
-
-Something, something, something, :::image type="icon" source="../../../media/icons/add-icon.png "::: Something, something, something.  
+:::image type="icon" source="../../../media/icons/add-icon.png ":::
 
 
 ## Related articles
