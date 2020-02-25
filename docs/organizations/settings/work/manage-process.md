@@ -73,7 +73,7 @@ You can change the process a project uses from a system process or inherited pro
 
 The second method is to migrate your project between two completely different process types. For example, moving from Agile to Scrum, or Basic to Agile.
 
-For the second method, we have provided detailed steps for three common scenerios of changing the process used by a project.
+For the second method, we have provided detailed steps for three common scenarios of changing the process used by a project.
 
 - [Scrum to Agile](./change-process-scrum-to-agile.md)
 - [Agile to Scrum](./change-process-agile-to-scrum.md)
