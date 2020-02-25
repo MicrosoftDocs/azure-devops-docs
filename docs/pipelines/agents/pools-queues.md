@@ -9,7 +9,7 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/13/2019
+ms.date: 02/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -51,7 +51,7 @@ Agent pools are scoped to project collections.
 
 Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections.
 
-When you create a pipeline, you specify which pool it uses.
+When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify which pool the pipeline uses. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
 
 ::: moniker-end
 
