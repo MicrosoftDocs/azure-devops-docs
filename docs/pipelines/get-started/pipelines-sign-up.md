@@ -29,18 +29,17 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
    ![Start free with Azure Pipelines](../../media/start-free-with-azure-pipelines.png)
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Create a Microsoft account](media/acquisition/sign-in-new.png)
+   
+    > [!div class="mx-imgBorder"]
+    >![Create a Microsoft account](../../boards/get-started/media/acquisition/sign-in-new.png)
 
 3. Enter your password and select **Sign in**.
 
-   ![Enter your password and sign in](/azure/devops/media/enter-password-sign-in.png)
+   ![Enter your password and sign in](../../media/enter-password-sign-in.png)
 
 4. To get started with Azure Pipelines, select **Continue**.
 
-	> [!div class="mx-imgBorder"]  
-	> ![Choose Continue to sign up for Azure DevOps](/azure/devops/media/sign-up-azure-devops.png)
+    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
     ![New project, select Azure Pipelines](../media/new-project-select-pipelines.png)
 
@@ -87,15 +86,15 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 1. Enter a name for your project, select the visibility, and optionally provide a description. Then choose **Create project**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project dialog](media/sign-up/nf-create-project.png)
+    > [!div class="mx-imgBorder"]
+	>![Create new project dialog](../../boards/get-started/media/sign-up/nf-create-project.png)
 
 	Special characters aren't allowed in the project name (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ]).  The project name also can't begin with an underscore, can't begin or end with a period, and must be 64 characters or less. Set your project visibility to either public or private. Public visibility allows for anyone on the internet to view your project. Private visibility is for only people who you give access to your project.
 	
 2. When your project is created, the Kanban board automatically appears.
 
 	> [!div class="mx-imgBorder"]
-	> ![Kanban board](media/track-issues/issues-board-new-item.png)
+	> ![Kanban board](../../boards/get-started/media/track-issues/issues-board-new-item.png)
 
 	You're now set to start [create your first pipeline](../create-first-pipeline.md), or [invite other users](#invite-others) to collaborate with your project. 
 
