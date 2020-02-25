@@ -8,4 +8,4 @@ See [Configure unit tests by using a .runsettings file](/visualstudio/test/confi
 
 #### Where can I get more information about overriding settings in the Run Settings file?
 
-See [Supplying Run Time Parameters to Tests](https://blogs.msdn.com/b/visualstudioalm/archive/2015/09/04/supplying-run-time-parameters-to-tests.aspx)
+See [Supplying Run Time Parameters to Tests](https://devblogs.microsoft.com/devops/supplying-run-time-parameters-to-tests/)
