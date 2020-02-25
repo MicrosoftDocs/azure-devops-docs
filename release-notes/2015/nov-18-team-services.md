@@ -46,7 +46,7 @@ For more information, and to get started, see the full documentation at [https:/
 
 ## Package Management public preview
 
-Today, we are announcing the public preview of a [new package management service](https://devblogs.microsoft.com/devops/announcing-package-management-for-vso-tfs/) on Visual Studio Team Services. This initial preview supports NuGet, but we’ll be adding support additional packaging systems over time.
+Today, we are announcing the public preview of a [new package management service](https://devblogs.microsoft.com/devops/announcing-package-management-support-for-vsotfs/) on Visual Studio Team Services. This initial preview supports NuGet, but we’ll be adding support additional packaging systems over time.
 
 This new package management service allows you to create and host Nuget feeds for your organization with no effort. You can use the feeds to publish/manage OSS packages you use, or to publish private packages that you want to share within your organization. The Team Services build-and-release system has tasks that will both publish and restore any Nuget packages you host.
 
@@ -68,7 +68,7 @@ Testing is an important part of a DevOps process. Today we showed a new set of t
 
 Since 2010, we’ve had a very nice exploratory testing tool that enables you to do manual exploratory testing, capture and mark up screen shots, collect diagnostic information, file bugs, etc. Today we are announcing the preview of a new browser-based exploratory testing extension. You can now perform exploratory testing of your web applications at any time, right from your Chrome browser, on any platform (Linux, macOS, or Windows)—no need for predefined test cases or test steps. Support for other browsers, like Edge, Firefox, etc., is coming soon.
 
-Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](https://devblogs.microsoft.com/devops/announcing-easy-to-use-web-based-exploratory-test-for-visual-studio-team-services/).
+Learn more about the Exploratory Testing extension [here](https://marketplace.visualstudio.com/items/ms.vss-exploratorytesting-web) or this [blog](https://devblogs.microsoft.com/devops/test-feedback-overview/).
 
 ## Test Manager extension
 

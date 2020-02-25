@@ -66,7 +66,7 @@ Manual installation steps for the [Windows Git Credential Manager](https://githu
 
 ## Learn more
 
-We provide full source code for credential managers. We've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [macOS and Linux Git Credential Manager](https://devblogs.microsoft.com/devops/visual-studio-team-services-git-credential-manager-for-mac-and-linux/) and the 
+We provide full source code for credential managers. We've also documented how the credential manager integrates with Git. Refer to the MSDN blog posts on the [macOS and Linux Git Credential Manager](https://devblogs.microsoft.com/devops/git-credential-manager-for-mac-and-linux/) and the 
 [Windows Credential Manager](https://devblogs.microsoft.com/devops/announcing-the-git-credential-manager-for-windows-1-0/).
 
 For information on the low-level internals of the Git Credential Manager for Windows, see [How the Git Credential Manager works](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/wiki/How-the-Git-Credential-Managers-works).

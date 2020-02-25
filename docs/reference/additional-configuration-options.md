@@ -206,9 +206,6 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 project from RTM to Update 2](https://devblogs.microsoft.com/devops/upgrade-your-2012-process-template-from-rtm-to-update-2/). You can learn about additional changes made to enable features from [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md).
-
-
 If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../boards/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 

@@ -738,7 +738,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: Where can I find information about other errors?
 
-**A**: See [Visual Studio Cloud Load Testing error codes](https://devblogs.microsoft.com/devops/visual-studio-cloud-load-testing-amp-error-codes/) to find more details about other errors and their resolutions, where applicable.
+**A**: See [Visual Studio Cloud Load Testing error codes](https://devblogs.microsoft.com/devops/visual-studio-cloud-load-testing-error-codes/) to find more details about other errors and their resolutions, where applicable.
 
 ---
 

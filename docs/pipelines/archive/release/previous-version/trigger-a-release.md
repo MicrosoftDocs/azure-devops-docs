@@ -107,7 +107,7 @@ Also, if you haven't yet set up your build system,
 
 * [Using Release Management service to manage releases](https://devblogs.microsoft.com/devops/using-release-management-vso-service-to-manage-releases/) 
 
-* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://devblogs.microsoft.com/devops/how-to-trigger-deployments-to-chef-managed-environment-from-release-management/) 
+* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://devblogs.microsoft.com/devops/how-to-trigger-deployments-to-chef-managed-environments-from-release-management-2013-with-update-3-rc/) 
 
 <a name="add_template"></a>
 ### Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?
@@ -123,9 +123,7 @@ with the corresponding release management process template.
    you want to work in (Keyboard: Ctrl + 0, C).
 
 1. In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**
-   locate the template that you need. Or download the template to this 
-   folder from the zip file that is attached to 
-   **[this blog post](https://devblogs.microsoft.com/devops/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build/)**.
+   locate the template that you need. 
 
    * TFS 2013 and 2015
      - **TFVC**: ReleaseTfvcTemplate.12.xaml.
@@ -150,9 +148,7 @@ with the corresponding release management process template.
 ### Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?
 
 **A**: Add sections to your custom build pipeline template to provide the 
-workflow logic. Download the snippets file with these sections 
-**[here](https://devblogs.microsoft.com/devops/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build/)**.
-Use the snippets to add these arguments to your build pipeline template: 
+workflow logic. Add these arguments to your build pipeline template: 
 **ConfigurationsToRelease**, **ReleaseBuild**, **ReleaseTargetStage**, 
 **DropBuild**.
 
