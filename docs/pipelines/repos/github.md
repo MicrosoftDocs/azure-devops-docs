@@ -153,14 +153,15 @@ To use the GitHub App, install it in your GitHub organization or user account fo
 
 After installation, the GitHub App will become Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s GitHub identity which may lose access to the repository.
 
-The GitHub App can be installed and uninstalled from two locations:
-
-1. The app's [homepage](https://github.com/apps/azure-pipelines) - **This method is recommended**.
-1. The app's [GitHub Marketplace listing](https://github.com/marketplace/azure-pipelines/).
+The GitHub App can be installed and uninstalled from the app's [homepage](https://github.com/apps/azure-pipelines).
 
 If you install the GitHub App for all repositories in a GitHub organization, you don't need to worry about Azure Pipelines sending mass emails or automatically setting up pipelines on your behalf. As an alternative to installing the app for all repositories, repository admins can install it one at a time for individual repositories. This requires more work for admins, but has no advantage nor disadvantage.
 
 After installation, the GitHub App will be Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s GitHub identity, which may lose access to the repository.
+
+>[!NOTE]
+>Once the GitHub App is installed, pipelines can be created for the organization's repositories in different Azure DevOps organizations and projects. However, if you create pipelines for a single repository in multiple Azure DevOps organizations, only the first organization's pipelines can be automatically triggered by GitHub commits or pull requests. Manual or scheduled builds are still possible in secondary Azure DevOps organizations.
+
 
 #### Where to install the GitHub App
 
@@ -1001,10 +1002,10 @@ Depending on the authentication type and ownership of the repository, specific p
 - If you're using OAuth, see [Repository permissions for OAuth authentication](#repository-permissions-for-oauth-authentication).
 - If you're using PATs, see [Repository permissions for Personal access token (PAT) authentication](#repository-permissions-for-personal-access-token-pat-authentication).
 
-### I understand that the GitHub app is the recommended integration with Azure Pipelines. How do I switch my classic pipeline to use GitHub app instead of OAuth?
+### I understand that the GitHub app is the recommended integration with Azure Pipelines. How do I switch my classic build pipeline to use GitHub app instead of OAuth?
 
 - Navigate [here](https://github.com/apps/azure-pipelines) and install the app in the GitHub organization of your repository.
-- During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contain the build pipeline that builds your repository. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
+- During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contains the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
 - In the next page that appears, you do not need to proceed creating a new pipeline.
 - Edit your pipeline by visiting the Builds page (e.g., https://dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
 - Select the "Get sources" step in the pipeline.
@@ -1014,7 +1015,9 @@ Depending on the authentication type and ownership of the repository, specific p
 
 ### I am using the GitHub app. However, my pipeline is not being triggered when I push an update to the repository. How do I diagnose this problem?
 
-- Verify that you installed the GitHub app for your repository. Go to `https://github.com/<org_name>/<repo_name>/settings/installations` to check whether the app is installed for your repo.
+
+- Verify that the mapping between the GitHub org and Azure DevOps org has been set up correctly using the app. Open a pull request in your GitHub repository, and make the comment `/azp where`. This reports back the Azure DevOps organization that the repository is mapped to. If nothing is reported back, then the app hasn't been installed or mapped correctly to an Azure DevOps organization.
+- If your app has not been set up with the correct mapping, verify that you installed the GitHub app for your repository. Go to `https://github.com/<org_name>/<repo_name>/settings/installations` to check whether the app is installed for your repo.
 - Verify that you have a service connection for the GitHub app in your Azure DevOps org. Go to Project Settings, then to the Service connections page. Look for a GitHub service connection with the same name as your GitHub org. Under the information section it should say "Connecting to service using token".
 - Verify that your pipeline is using the GitHub app service connection. Edit the pipeline and select the Get sources step if you have a classic pipeline. If you have a YAML pipeline, select the Triggers option to go to the classic editor, and then review the Get sources step. Verify that you are using the same GitHub app's service connection from the previous step.
 - Do you have another pipeline in a different Azure DevOps organization for the same repository? We currently have the limitation that we can only map a GitHub repo to a single DevOps org. Only the pipelines in the first Azure DevOps org can be automatically triggered.
