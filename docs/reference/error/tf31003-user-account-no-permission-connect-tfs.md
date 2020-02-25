@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # TF31003: Your user account does not have permission to connect to the Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You might receive this error when you try to connect to Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
   

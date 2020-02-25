@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # What are the features in Azure DevOps?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
@@ -1964,7 +1964,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[set alerts](../boards/queries/alerts-and-notifications.md)">set alerts</a>, and log-in or out.</p>
+<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
 <img src="media/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
 
 <p><b>Switch team context</b></p>
@@ -2556,7 +2556,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team alerts</b></p>
-<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[receive email notifications for alerts](../boards/queries/alerts-and-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
+<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
 
 
 <p><b>Team rooms</b></p>

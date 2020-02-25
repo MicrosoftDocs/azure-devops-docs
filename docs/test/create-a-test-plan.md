@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Create test plans and test suites
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Create test plans and test suites to track manual testing for sprints or milestones.
 That way, you can see when the testing for a specific sprint or milestone is complete.
@@ -24,7 +24,7 @@ For more information about manual testing, see [Planned manual testing](overview
 
 ## What are test plans, test suites, and test cases?
 
-[!INCLUDE [test-hub-include](_shared/test-hub-include.md)] provides three main types of test management artifacts: test plans, test suites, and test cases.
+[!INCLUDE [test-hub-include](includes/test-hub-include.md)] provides three main types of test management artifacts: test plans, test suites, and test cases.
 These elements are stored in your work repository as special types of work items. 
 You can export and share them with your team, and benefit from close integration for all of your DevOps tasks.
 
@@ -60,7 +60,7 @@ However, a better option may be to [copy or clone the test cases](reference-qa.m
 > [!TIP]
 > For more information about the ways you can work with test plans, test suites, and test cases, see the [FAQs for manual testing](reference-qa.md#testplans).
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)]
+[!INCLUDE [feature-availability](includes/feature-availability.md)]
 
 ## Prerequisites
 
@@ -85,7 +85,7 @@ To create and edit a test artifact, you must have one of the following access le
 
 - [Basic + Test plans](../organizations/security/access-levels.md)
 - [Visual Studio Enterprise](../organizations/security/access-levels.md)
-- [Basic](../organizations/security/access-levels.md) to create and edit test cases, but not the other types of test artifacts
+- [Basic](../organizations/security/access-levels.md) edit test cases, but not create them or other types of test artifacts
 
 Test artifacts include test plan, test suite, test case, test configuration, shared step, and shared parameter.
 
@@ -103,7 +103,7 @@ If you want to use Azure Test Plans, and haven't done so already, [sign up for A
 
 You need a project. For more information, see [create your project](../organizations/accounts/organization-management.md). Then [create your backlog](../boards/backlogs/create-your-backlog.md).
 
-1. In Azure DevOps Services or Azure DevOps Server, open your project and go to [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+1. In Azure DevOps Services or Azure DevOps Server, open your project and go to [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
    If you already have a test plan, choose **Test Plans** to go to the page that lists all test plans.
 
    ![Opening the list of test plans page](media/create-a-test-plan/goto-test-plans-page.png)

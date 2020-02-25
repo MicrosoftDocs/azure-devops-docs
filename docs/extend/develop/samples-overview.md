@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 Get started developing your extension by working from a sample. 
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 The Microsoft samples listed below show the capabilities of the extension framework and how to 
 contribute to various areas. Each sample illustrates one or more contributions. We've limited the 

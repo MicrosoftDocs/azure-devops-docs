@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 ---
 
 # TF30167: The New Team Project Wizard could not finish creating the project {0}.
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The New Team Project Wizard encountered an unexpected error while creating the project {*name*}. This problem can occur when the wizard uses a third-party plug-in while creating the project, and the third-party plug-in encounters a critical error such as a stack overflow or running out of memory.  
   

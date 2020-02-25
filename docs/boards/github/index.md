@@ -17,7 +17,7 @@ ms.date: 06/28/2019
 
 # Azure Boards & GitHub 
 
-[!INCLUDE [temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Use this guide to connect Azure Boards with one or more GitHub repositories.  
  
@@ -40,7 +40,7 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 ::: moniker-end
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 
 ::: moniker range="azure-devops"

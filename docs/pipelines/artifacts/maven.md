@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2018'
 
 # Set up Azure Pipelines and Maven
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.

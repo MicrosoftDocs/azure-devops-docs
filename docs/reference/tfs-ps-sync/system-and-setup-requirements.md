@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 # System and setup requirements to support TFS-Project Server integration  
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a>
 You can synchronize data between Visual Studio Team Foundation Server (TFS) and Office Project Server by installing Team Foundation Server Extensions for Project Server. You can install the extensions on Project Server 2010 with SP1 or Project Server 2013. 

@@ -28,7 +28,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GitHubReleaseV0.md)]
+[!INCLUDE [temp](../includes/yaml/GitHubReleaseV0.md)]
 
 ::: moniker-end
 

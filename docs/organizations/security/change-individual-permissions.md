@@ -16,7 +16,7 @@ ms.date: 11/20/2019
 
 # Change individual or group permissions
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The standard way to set permissions is by adding them to one or more built-in security groups. However, sometimes you may want to grant additional permissions to select users, where not all permissions are assigned to the security group. For example, if you want to give some users the ability to add or edit area and iteration paths, but don't want them to have all permissions available to members of the Project Administrators group.
 
@@ -35,7 +35,7 @@ In this article you learn how to do the following tasks:
 
 If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
 
-[!INCLUDE [temp](../../_shared/image-differences.md)]
+[!INCLUDE [temp](../../includes/image-differences.md)]
 
 <a id="create-custom-group" />
 

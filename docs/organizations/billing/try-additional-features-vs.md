@@ -16,11 +16,11 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Try Azure Test Plans for free
 
-[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
 In this quickstart, learn how to try Azure Test Plans for free for 30 days.
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
@@ -31,11 +31,11 @@ You must have [Project Collection Administrator or organization Owner permission
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing](media/_shared/select-billing-organization-settings.png)
+   ![Select Billing](media/shared/select-billing-organization-settings.png)
 
 4. Select **Start free trial**.
 

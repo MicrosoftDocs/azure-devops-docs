@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # FAQs for load testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 <a name="qageneral"></a>
 ## General
@@ -103,7 +103,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://devblogs.microsoft.com/devops/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests/).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -202,7 +202,7 @@ for the duration of the run. So if you retain 20 cores for 10 minutes, an additi
 
 * Resource retention is not available for Apache JMeter tests at the present time.
 
-For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/18/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
+For more details, see [this blog post](https://devblogs.microsoft.com/devops/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
 
 <a name="deletetests"></a>
 ### Q: How do I delete a load test?
@@ -438,7 +438,7 @@ For more information, see
 ### Q:  Can I debug a load test while it's running in the cloud?
 
 **A**: Yes, you can do this when you use Visual Studio Enterprise 2015 or later. 
-[Learn more](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test.aspx).
+[Learn more](https://devblogs.microsoft.com/devops/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test/).
 
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
@@ -585,13 +585,13 @@ If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vso
 ## Troubleshooting
 
 ### Q: What do I do if Visual Studio stops responding when I try run a load test in the cloud?
-**A**: To resolve this issue, see [Known issues with load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2013/11/07/known-issues-with-load-testing-in-visual-studio-2013.aspx).
+**A**: To resolve this issue, see [Known issues with load testing](https://devblogs.microsoft.com/devops/known-issues-with-load-testing-in-visual-studio-2013/).
 
 ### Q: How do I record a web performance test with Internet Explorer 11?
 
 **A**: If the web test recorder is not active when you try and record your 
 web test with Internet Explorer 11, 
-see [Using Internet Explorer 11 and not able to record a web performance test](https://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx) 
+see [Using Internet Explorer 11 and not able to record a web performance test](https://devblogs.microsoft.com/devops/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully/) 
 to resolve the issue.
 
 ### Q: How do I view errors and warnings that happen when my load test is running in the cloud?
@@ -738,7 +738,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: Where can I find information about other errors?
 
-**A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
+**A**: See [Visual Studio Cloud Load Testing error codes](https://devblogs.microsoft.com/devops/visual-studio-cloud-load-testing-error-codes/) to find more details about other errors and their resolutions, where applicable.
 
 ---
 
@@ -748,7 +748,7 @@ To fix this problem, create another load test. Delete the failed test run.
 **Tutorials**
 
 * [All about Load Test planning](/archive/blogs/geoffgr/all-about-load-test-planning-part-1introduction)
-* [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
+* [Simulating expected load - how to model real world load in CLT](/archive/blogs/edglas/simulating-peak-load-with-vs-load-tests)
 * [Analyzing Load Test results](https://devblogs.microsoft.com/devops/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports/)
 * [Data driven Load Tests with VSO and SQL Azure](https://devblogs.microsoft.com/devops/data-driven-load-tests-using-visual-studio-online-and-sql-azure/)
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
@@ -760,14 +760,14 @@ To fix this problem, create another load test. Delete the failed test run.
 * [Load Test plug-ins](/archive/blogs/slumley/load-test-plug-ins)
 * [Generating Excel reports for your Load Test runs](https://devblogs.microsoft.com/devops/generating-excel-reports-for-load-test-runs-done-in-between-0319-0331/)
 * [Generating Run Comparison report in Excel](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
-* [Understanding Virtual User Activity visualization](https://blogs.msdn.microsoft.com/slumley/archive/2009/06/09/vsts-2010-feature-load-test-virtual-user-activity-visualization.aspx)
+* [Understanding Virtual User Activity visualization](/archive/blogs/slumley/vsts-2010-feature-load-test-virtual-user-activity-visualization)
 * [Using fiddler to create web tests](http://www.bugtrap.co.uk/2010/06/using-fiddler-with-visual-studio-team.html) 
-* [Creating web tests transactions from fiddler](https://blogs.msdn.microsoft.com/nexpert/archive/2009/05/04/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert.aspx)
-* [Creating custom Load profiles via plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/04/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down.aspx)
+* [Creating web tests transactions from fiddler](/archive/blogs/nexpert/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert)
+* [Creating custom Load profiles via plug-ins](/archive/blogs/slumley/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down)
 
 **Case Studies**
 
-* [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
+* [Load Testing Visual Studio Online itself](/archive/blogs/edglas/load-testing-visual-studio-online)
 * [NORAD Tracks Santa](https://devblogs.microsoft.com/devops/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website/)
 
 **Blogs and other references**
@@ -785,4 +785,4 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ---
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

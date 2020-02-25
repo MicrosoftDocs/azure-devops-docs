@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Configuration quick reference
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server and Microsoft Project Server, you must first install the Team Foundation Server Extensions for Project Server and configure the two server products. You can use this topic as a quick reference to install software, assign permissions, configure integration, and verify data synchronization. To perform more customized configurations or for more detailed procedures, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   

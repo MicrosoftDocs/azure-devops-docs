@@ -14,7 +14,7 @@ ms.date: 12/23/2019
 
 # Add a build or release task
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 Users can install extensions to their organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
@@ -516,8 +516,3 @@ For build and release tasks for packaging and publishing Azure DevOps Extensions
 * [Extension Manifest Reference](./manifest.md)
 * [Build/Release Task JSON Schema](./integrate-build-task.md)
 * [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
-
->[!NOTE]
->Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that
->shows how to create, debug, and test a cross platform task in Node using the TypeScript API.
-

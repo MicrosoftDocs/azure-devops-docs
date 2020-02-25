@@ -17,7 +17,7 @@ ms.date: 10/16/2019
 
 # Set permissions on queries and query folders
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
@@ -40,7 +40,7 @@ By creating folders under Shared Queries, you can grant permissions to users for
 
 A ![ ](/azure/devops/media/icons/checkmark.png) checkmark in the following table indicates that the corresponding access level or security group has access to a feature by default. 
 
-[!INCLUDE [temp](../../organizations/security/_shared/boards-queries.md)]
+[!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
 ## Set permissions on a new query folder
 

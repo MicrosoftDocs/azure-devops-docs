@@ -17,7 +17,7 @@ ms.date: 10/28/2019
 
 # About settings at the user, team, project, or organization-level 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 

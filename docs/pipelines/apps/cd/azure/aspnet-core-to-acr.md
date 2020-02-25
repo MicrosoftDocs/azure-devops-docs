@@ -30,9 +30,9 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
-[!INCLUDE [create-azure-container-registry](../../../apps/_shared/create-azure-container-registry.md)]
+[!INCLUDE [create-azure-container-registry](../../../apps/includes/create-azure-container-registry.md)]
 
-[!INCLUDE [import-code-aspnet-core](../../../apps/_shared/import-code-aspnet-core-docker.md)]
+[!INCLUDE [import-code-aspnet-core](../../../apps/includes/import-code-aspnet-core-docker.md)]
 
 ##  Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.

@@ -22,11 +22,11 @@ After writing an Azure DevOps Services extension, the next step is to package it
 
 ## Publishing Requirements
 
-[!INCLUDE [](./_shared/before-publishing.md)]
+[!INCLUDE [](./includes/before-publishing.md)]
 
 ## Create a publisher
 
-[!INCLUDE [](./_shared/create-publisher.md)]
+[!INCLUDE [](./includes/create-publisher.md)]
 
 <a id="package" />
 
@@ -63,7 +63,7 @@ Check the size of the vsix after it is packaged. If greater than 50 MB then it n
 <a id="upload"></a>
 ## Publish
 
-[!INCLUDE [Package_extension](../_shared/procedures/publish.md)]
+[!INCLUDE [Package_extension](../includes/procedures/publish.md)]
 
 ## Share
 
@@ -102,7 +102,7 @@ To install an extension that has been shared:
   
 ## Update
 
-[!INCLUDE [Update_extension](../_shared/procedures/update.md)]
+[!INCLUDE [Update_extension](../includes/procedures/update.md)]
 
 ## Make your extension public (visible to everyone)
 

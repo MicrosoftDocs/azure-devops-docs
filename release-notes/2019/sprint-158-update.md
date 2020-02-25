@@ -24,59 +24,59 @@ Check out the [Features](#features) list below for more.
 
 ### General:
 
-[!INCLUDE [sprint-158-update-links](_shared/general/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/general/sprint-158-update-links.md)]
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-158-update-links](_shared/boards/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/boards/sprint-158-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-158-update-links](_shared/repos/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/repos/sprint-158-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-158-update-links](_shared/pipelines/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/pipelines/sprint-158-update-links.md)]
 
 ### Azure Test Plans:
 
-[!INCLUDE [sprint-158-update-links](_shared/testplans/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/testplans/sprint-158-update-links.md)]
 
 ### Reporting:
 
-[!INCLUDE [sprint-158-update-links](_shared/reporting/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/reporting/sprint-158-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-158-update-links](_shared/wiki/sprint-158-update-links.md)]
+[!INCLUDE [sprint-158-update-links](includes/wiki/sprint-158-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-158-update](_shared/general/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/general/sprint-158-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-158-update](_shared/boards/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/boards/sprint-158-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-158-update](_shared/repos/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/repos/sprint-158-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-158-update](_shared/pipelines/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/pipelines/sprint-158-update.md)]
 
 ## Azure Test Plans
 
-[!INCLUDE [sprint-158-update](_shared/testplans/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/testplans/sprint-158-update.md)]
 
 ## Reporting
 
-[!INCLUDE [sprint-158-update](_shared/reporting/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/reporting/sprint-158-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-158-update](_shared/wiki/sprint-158-update.md)]
+[!INCLUDE [sprint-158-update](includes/wiki/sprint-158-update.md)]
 
 ## Next steps
 
@@ -99,4 +99,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-158](_shared/signer/sprint-158.md)]
+[!INCLUDE [sprint-158](includes/signer/sprint-158.md)]

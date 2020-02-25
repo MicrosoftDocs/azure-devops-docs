@@ -9,19 +9,19 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 08/01/2019
+ms.date: 02/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Copy Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-update.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
 Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,75 +33,28 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
+[!INCLUDE [temp](../includes/yaml/CopyFilesV2.md)]
 
 ::: moniker-end
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Source Folder</td>
-<td>
-<p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
-<p>If your build produces artifacts outside of the sources directory, specify <code>$(Agent.BuildDirectory)</code> to copy files from the directory created for the pipeline.</p>
-</td>
-</tr>
-<tr>
-<td>Contents</td>
-<td><p>Specify <a href="http://man7.org/linux/man-pages/man3/fnmatch.3.html">fnmatch pattern filters</a> (one per line) that you want to apply to the list of files to be copied. For example:
-</p>
-<ul>
-<li><code>*</code> copies all files in the specified source folder.</li>
-<li><code>**</code> copies all files in the specified source folder and all files in all sub-folders.</li>
-<li><code>**\bin\**</code> copies all files recursively from any <code>bin</code> folder.</li>
-</ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as <code>**\bin\**</code> instead of <code>**\bin</code>.</p>
-<p>You must use the path separator that matches your build agent type, e.g. <code>/</code> must be used for Linux agents.
-<p>More examples are shown below.</p>
-</td>
-</tr>
-<tr>
-<td>Target Folder</td>
-<td>Folder where the files will be copied. In most cases you specify this folder using a variable. For example, specify <code>$(Build.ArtifactStagingDirectory)</code> if you intend to <a href="../../artifacts/build-artifacts.md" data-raw-source="[publish the files as build artifacts](../../artifacts/build-artifacts.md)">publish the files as build artifacts</a>.</td>
-</tr>
-<tr><th style="text-align: center" colspan="2">Advanced</th></tr>
-<tr>
-<td>Clean Target Folder</td>
-<td>Select this check box to delete all existing files in the target folder before beginning to copy.</td>
-</tr>
-<tr>
-<td>Overwrite</td>
-<td>Select this check box to replace existing files in the target folder.</td>
-</tr>
-<tr>
-<td>Flatten Folders</td>
-<td>Flatten the folder structure and copy all files into the specified target folder.</td>
-</tr>
-<tr>
-<td>Preserve Target Timestamp</td>
-<td>Using the original source file, preserve the target file timestamp.</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
+|Argument|Description|
+|--- |--- |
+|`SourceFolder`<br/>Source Folder|(Optional) Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified [**`$(Build.SourcesDirectory)`**](../../build/variables.md)). <br/> If your build produces artifacts outside of the sources directory, specify `$(Agent.BuildDirectory)` to copy files from the directory created for the pipeline.|
+|`Contents`<br/>Contents|(Required) File paths to include as part of the copy. Supports multiple lines of match patterns. [More Information](https://go.microsoft.com/fwlink/?LinkID=708389). <br/>For example: <br/><ul><li><b><code>*</code></b> copies all files in the specified source folder</li><li><b><code>\*\*</code></b> copies all files in the specified source folder and all files in all sub-folders</li><li><b><code>\*\*\bin\*\*</code></b> copies all files recursively from any bin folder <br/><br/>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as \*\*\bin\*\* instead of \*\*\bin.<br/>You must use the path separator that matches your build agent type. **Example,** / must be used for Linux agents. More examples are shown below. <br/>Default value: `\*\*`|
+|`TargetFolder`<br/>Target Folder|(Required) Target folder or UNC path files will copy to. You can use [variables](https://go.microsoft.com/fwlink/?LinkID=550988). <br/>Example: **$(build.artifactstagingdirectory)**|
+|`CleanTargetFolder`<br/>Clean Target Folder|(Optional) Delete all existing files in target folder before copy <br/>Default value: `false`|
+|`OverWrite`<br/>Overwrite|(Optional) Replace existing files in target folder <br/>Default value: `false`|
+|`flattenFolders`<br/>Flatten Folders|(Optional) Flatten the folder structure and copy all files into the specified target folder <br/>Default value: `false`|
+|`preserveTimestamp`<br/>Preserve Target Timestamp|(Optional) Using the original source file, preserve the target file timestamp. <br/>Default value: `false`|
 
 ## Notes
 
 If no files are matched, the task will still report success.
 If a matched file already exists in the target, the task will report failure unless Overwrite is set to true.
 
-[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
+[!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
 ## Examples
 
@@ -295,19 +248,19 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
 ### How do I use this task to publish artifacts?
 
 See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md).
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

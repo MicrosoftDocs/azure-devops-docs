@@ -27,7 +27,7 @@ View work items that you created or are assigned to you. The **Work Items** page
 > [!NOTE]     
 > The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 
 ## Open Work Items
@@ -179,7 +179,7 @@ ID    Type    Title      Assigned To          State
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -225,9 +225,9 @@ Enter a title and then save the work item. Before you can change the State from 
 
 # [Azure DevOps CLI](#tab/azure-devops-cli)
 
-[!INCLUDE [temp](../_shared/add-work-items-cli.md)]
+[!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -264,7 +264,7 @@ There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that app
 
 From the web portal, you can sort your view by one of the column fields that you select from the **Column Options** dialog. For details, see [Change column options](../backlogs/set-column-options.md).
 
-[!INCLUDE [temp](../_shared/discussion-tip-azure-devops.md)] 
+[!INCLUDE [temp](../includes/discussion-tip-azure-devops.md)] 
 
 
 ## Copy selected items to the clipboard or email them
@@ -302,7 +302,12 @@ Use the following three controls to manage your views in the web portal.
 > | ![Filter](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
+## Q & A 
+
+[!INCLUDE [temp](../includes/faq-view-all-work-items.md)] 
+
 ## Related articles
+
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../project/navigation/preview-features.md)

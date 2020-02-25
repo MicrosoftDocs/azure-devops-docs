@@ -17,7 +17,7 @@ ms.date: 02/08/2018
 
 # Set dashboard permissions    
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)] 
 
 <a id="set-permissions">  </a>
 

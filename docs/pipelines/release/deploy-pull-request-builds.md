@@ -67,7 +67,7 @@ You can use branch policies to enforce successful deployment as a required crite
 
    ![Branches section inside Azure Repos, highlighting branch policy option for master branch](media/deploy-pull-request-builds/branch-policies-menu.png)
 
-3. Select **Add status policy** to display the **Add status policy** page in the right pane. In the **status to check** dropdown, a list of recent statuses that have been posted are displayed. The status of the PR release is also be posted here with the release definition name. The release definition should have run at least once with the PR trigger switched on to see this status. Select the status corresponding to your release definition and save the policy.
+3. Select **Add status policy** to display the **Add status policy** page in the right pane. In the **status to check** dropdown, a list of recent statuses that have been posted are displayed. The status of the PR release is also posted here with the release definition name. The release definition should have run at least once with the PR trigger switched on to see this status. Select the status corresponding to your release definition and save the policy.
 
    ![How to select a status for status policy](media/deploy-pull-request-builds/add-status-policy.png)
 

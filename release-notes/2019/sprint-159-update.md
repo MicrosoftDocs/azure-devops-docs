@@ -22,35 +22,35 @@ Check out the [Features](#features) list below for more.
 
 ### Azure Boards:
 
-[!INCLUDE [sprint-159-update-links](_shared/boards/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/boards/sprint-159-update-links.md)]
 
 ### Azure Repos:
 
-[!INCLUDE [sprint-159-update-links](_shared/repos/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/repos/sprint-159-update-links.md)]
 
 ### Azure Pipelines:
 
-[!INCLUDE [sprint-159-update-links](_shared/pipelines/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/pipelines/sprint-159-update-links.md)]
 
 ### Wiki:
 
-[!INCLUDE [sprint-159-update-links](_shared/wiki/sprint-159-update-links.md)]
+[!INCLUDE [sprint-159-update-links](includes/wiki/sprint-159-update-links.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-159-update](_shared/boards/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/boards/sprint-159-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-159-update](_shared/repos/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/repos/sprint-159-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-159-update](_shared/pipelines/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/pipelines/sprint-159-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-159-update](_shared/wiki/sprint-159-update.md)]
+[!INCLUDE [sprint-159-update](includes/wiki/sprint-159-update.md)]
 
 ## Next steps
 
@@ -73,4 +73,4 @@ You can also get advice and your questions answered by the community on [Stack O
 
 Thanks,
 
-[!INCLUDE [sprint-159](_shared/signer/sprint-159.md)]
+[!INCLUDE [sprint-159](includes/signer/sprint-159.md)]

@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Add stages, dependencies, & conditions  
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
@@ -58,7 +58,7 @@ and [queuing policies](#queuing-policies).
 ![stage](../release/media/definition-02.png)
 
 * * *
-* 
+
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
@@ -245,6 +245,11 @@ You control the dependencies by setting the triggers on each stage of the releas
 <h2 id="conditions">Conditions</h2>
 
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
+
+> [!NOTE]
+>
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+
 
 #### [YAML](#tab/yaml/)
 

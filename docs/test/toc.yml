@@ -47,8 +47,6 @@
     items:
     - name: Track test status
       href: track-test-status.md
-    - name: Delete test artifacts
-      href: ../boards/backlogs/delete-test-artifacts.md
     - name: Perform user acceptance testing
       href: user-acceptance-testing.md
     - name: Test different configurations
@@ -63,6 +61,10 @@
       href: associate-automated-test-with-test-case.md
     - name: Run tests from test plans
       href: run-automated-tests-from-test-hub.md
+    - name: Delete test artifacts
+      href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md 
+    - name: Set permissions and access 
+      href: ../organizations/security/set-permissions-access-test.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items

@@ -74,7 +74,7 @@ for future Marketplace purchases.
 2. From your project collection, 
    go to the Marketplace.
 
-   <img alt="Browse Marketplace in new navigation" src="_shared/media/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Browse Marketplace in new navigation" src="media/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
 
 3. Find and select the extension that you want to install.
 

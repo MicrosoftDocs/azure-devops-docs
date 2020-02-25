@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
@@ -27,7 +27,7 @@ to run tests that have been assigned to you with Azure DevOps.
 Learn more about the [access](https://visualstudio.microsoft.com/pricing/visual-studio-online-pricing-vs) 
 that you need for more advanced testing features.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="run-web"></a>
 ## Run tests for web apps
@@ -92,7 +92,7 @@ If you want to collect more diagnostic data for your desktop application, run yo
 
 1. Launch the test runner client from Azure Test Plans in Azure DevOps by choosing **Run for desktop application** from the **Run** menu. 
 
-   ![Launching the test runner client](media/_shared/collect-diagnostic-data-16.png)
+   ![Launching the test runner client](media/shared/collect-diagnostic-data-16.png)
 
 1. **Download** and install the [Test Runner desktop client](https://aka.ms/ATPTestRunnerDownload) if you haven't already set it up.
 

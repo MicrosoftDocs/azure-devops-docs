@@ -14,7 +14,7 @@ ms.date: 02/14/2017
 
 # Categories XML element reference
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 You use the `CATEGORIES` element to group work item types (WITs). [Use categories to group work item types](use-categories-to-group-work-item-types.md) provides a description of each of the default categories used by Team Foundation Server (TFS).  
   

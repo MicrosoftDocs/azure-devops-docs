@@ -15,7 +15,7 @@ ms.date: 05/06/2019
 
 # Linking, traceability, and managing dependencies  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 
@@ -76,7 +76,7 @@ Organizations that use Azure Active Directory can link work items that exist in 
 
 You can create links between work items by using one of the links control tabs within a work item form. The user interface to link a work item differs based on the platform, version, and client you use. To link several work items to a new or existing item, see [Add link to work items](../backlogs/add-link.md). 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../includes/image-differences.md)]
 
 
 #### [New web form](#tab/new-web-form/)

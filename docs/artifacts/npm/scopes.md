@@ -26,7 +26,7 @@ e.g. `@fabrikam/fiber-core` and configuring your .npmrc file to only use a Azure
 ## Set up
 To use a Azure Artifacts feed with a scope, follow the instructions below, but append your scope to both lines in the project .npmrc file.
 
-[!INCLUDE [](../_shared/npm/npmrc.md)]
+[!INCLUDE [](../includes/npm/npmrc.md)]
 
  Then, replace:
 - `registry=<your feed URL>` with

@@ -9,17 +9,17 @@ ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 12/13/2019
+ms.date: 02/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Agent pools
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Agent pools are scoped to project collections.
 
 Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. In Azure Pipelines, pools are scoped to the entire organization; so you can share the agent machines across projects. In Azure DevOps Server, agent pools are scoped to the entire server; so you can share the agent machines across projects and collections.
 
-When you create a pipeline, you specify which pool it uses.
+When you configure an agent, it is registered with a single pool, and when you create a pipeline, you specify which pool the pipeline uses. When you run the pipeline, it runs on an agent from that pool that meets the [demands](../process/demands.md) of the pipeline.
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -76,7 +76,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 
 
@@ -152,7 +152,7 @@ You create and manage agent pools from the agent pools tab in admin settings.
 If you are an organization administrator, you create and manage agent pools from the agent pools tab in admin settings.
 ::: moniker-end
 
-[!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+[!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 ::: moniker range="<= tfs-2018"
 You create and manage agent queues from the agent queues tab in project settings.
@@ -162,7 +162,7 @@ You create and manage agent queues from the agent queues tab in project settings
 If you are a project team member, you create and manage agent queues from the agent pools tab in project settings.
 ::: moniker-end
 
-[!INCLUDE [agent-queues-tab](_shared/agent-queues-tab.md)]
+[!INCLUDE [agent-queues-tab](includes/agent-queues-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -343,7 +343,7 @@ az pipelines queue show --id 14
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

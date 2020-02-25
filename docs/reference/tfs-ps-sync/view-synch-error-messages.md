@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 
 # View synchronization engine error messages
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> To help troubleshoot the integration of Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you can display a list of recent synchronization errors. You can display the most recent errors that were logged for a project collection by using the `/GetSyncMessages` option of the **TFSAdmin ProjectServer** command-line tool.  
   

@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Search the code base of a public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn how to search the code base of a public projects. With code search, you can locate specific types of code and easily narrow or widen your search.
 
@@ -23,7 +23,7 @@ In this quickstart, you learn how to search the code base of a public projects. 
 
 ## Start a search
 
-To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/_shared/start-search-icon.png) start search icon.
+To start your search, choose **Repos > Files** or other page under **Repos**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/shared/start-search-icon.png) start search icon.
 
 > [!div class="mx-imgBorder"]
 > ![Code Search box, new navigation](media/search/code-search-vert.png)
@@ -69,7 +69,7 @@ To start your search, choose **Repos > Files** or other page under **Repos**, en
    > 
    > Open the search results in a new browser tab from either search box by
    > pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   > ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
+   > ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    > In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    > to the new browser tab.
 

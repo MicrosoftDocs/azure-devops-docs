@@ -28,14 +28,14 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NuGetToolInstallerV0.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetToolInstallerV1.md)]
 
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><code>versionSpec</code><br/>Version Spec</td><td>A version or version range that specifies the NuGet version to make available on the path. Use x as a wildcard. See the <a href=http://dist.nuget.org/tools.json>list of available NuGet versions</a>. If you want to match a pre-release version, the specification must contain a major, minor, patch, and pre-release version from the list above. Examples: 4.x, 3.3.x, 2.8.6, >=4.0.0-0. If unspecified, a version will be chosen automatically</td></tr>
+<tr><td><code>versionSpec</code><br/>Version Spec</td><td>A version or version range that specifies the NuGet version to make available on the path. Use x as a wildcard. See the <a href=http://dist.nuget.org/tools.json>list of available NuGet versions</a>. If you want to match a pre-release version, the specification must contain a major, minor, patch, and pre-release version from the list above. Examples: 5.x, 5.4.x, 5.3.1, >=5.0.0-0. If unspecified, a version will be chosen automatically</td></tr>
 <tr><td><code>checkLatest</code><br/>Always check for new versions</td><td> Always check for and download the latest available version of NuGet.exe which satisfies the version spec. Enabling this option could cause unexpected build breaks when a new version of NuGet is released</td></tr>
 </table>
 
@@ -54,6 +54,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # Manage change
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 You can use change request work items to track and control all changes to the product and supporting systems. All change requests are initiated as the result of a deviation from the baseline, which consists of the original requirements that were identified for the project. For example, if a meeting with a user uncovers new requirements, a change request should be created to propose updating the requirements baseline. For more information about CMMI see [Background to CMMI](guidance-background-to-cmmi.md).  
   
@@ -40,6 +40,6 @@ You can use change request work items to track and control all changes to the pr
  If a change request is accepted, change the State from Proposed (the default for new change requests) to Active.  
   
 ##  <a name="Monitoring"></a> Monitor change requests  
- While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../queries/alerts-and-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
+ While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../../notifications/manage-your-personal-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
   
  If a change request does not receive the attention that it requires, escalate the matter by creating an issue work item. Link the new issue to the change request, and escalate the issue to get the change request impact assessment on track.

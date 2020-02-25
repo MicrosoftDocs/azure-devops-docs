@@ -16,11 +16,11 @@ ms.date: 06/28/2019
 
 # Change a project process from Agile to Scrum
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
 
 You can change a project based on the Agile process to use an inherited Scrum process.  This article provides the steps needed to make this change. 
 
-[!INCLUDE [temp](../_shared/cloud-only-feature.md)]
+[!INCLUDE [temp](../includes/cloud-only-feature.md)]
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
@@ -39,11 +39,11 @@ Reasons you might want to change your process from Agile to Scrum:
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
-[!INCLUDE [temp](../_shared/change-process-manual-steps.md)]
+[!INCLUDE [temp](../includes/change-process-manual-steps.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites-change-process.md)]
+[!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 <a id="create-customize-process" />
 

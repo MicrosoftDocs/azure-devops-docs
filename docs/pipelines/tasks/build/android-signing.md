@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Android signing task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a pipeline to sign and align Android APK files.
 
@@ -30,7 +30,7 @@ The build agent must have the following capabilities:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AndroidSigningV3.md)]
+[!INCLUDE [temp](../includes/yaml/AndroidSigningV3.md)]
 
 ::: moniker-end
 

@@ -444,7 +444,7 @@ Linked work items are also updated showing the pull request completion.
 
 ### Complete automatically
 
-Select **Set auto-complete** from the **Complete** drop-down list to complete the pull request and merge the changes as soon the meet all [branch policies](branch-policies.md).
+Select **Set auto-complete** from the **Complete** drop-down list to complete the pull request and merge the changes as soon as it meets all [branch policies](branch-policies.md).
 When the conditions satisfy branch policies, the pull request is completed. You receive an email notification. If there's a conflict or an error completing the pull request, email notifies you of the issue.
 
 Once you set auto-complete, the pull request displays a banner.

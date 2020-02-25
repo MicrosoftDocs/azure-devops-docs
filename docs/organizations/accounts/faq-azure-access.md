@@ -15,9 +15,9 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot permissions and access with Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 ## General
 
@@ -36,9 +36,9 @@ A: Yes.
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
 
 <a name="ChangeMSA"></a>
 
@@ -49,11 +49,11 @@ A. Yes, but before you switch, make sure that Azure AD meets your needs for shar
 Learn more about the differences in how you
 [control access with Microsoft accounts or with Azure AD, and how to switch when you're ready](access-with-azure-ad.md).
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
-[!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
+[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 ## Azure AD groups
 
@@ -124,13 +124,13 @@ A: No, querying on Azure AD groups is unsupported.
 
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
-A: No, but you might be interested in our [process customization plans](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/27/visual-studio-online-process-customization-update.aspx).
+A: No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
 
 <a name="remove-user-azure-ad-group"></a>
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="faq-users"></a>
 
@@ -227,7 +227,7 @@ A: Your organization was connected to a directory when the organization Owner cr
 
 <a name="switch-directory"></a>
 
-[!INCLUDE [qa-switch-directory-azure-ad](../../_shared/qa-switch-directory-azure-ad.md)]
+[!INCLUDE [qa-switch-directory-azure-ad](../../includes/qa-switch-directory-azure-ad.md)]
 
 <a name="AlternateCredentials"></a>
 
@@ -240,18 +240,18 @@ A: This happens after you connect your organization to a directory.
 A: 
 * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
 
-   ![Select Azure AD and then Resolve](media/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
 * Match the identities. Select **Next** when you're done.
 
-   ![Resolve disconnected users](media/_shared/resolve-disconnected-users.png)
+   ![Resolve disconnected users](media/shared/resolve-disconnected-users.png)
 
 ### Q: I got an error message when I was resolving disconnections. What should I do?
 A: 
 * Try again.
 * You might be a guest in Azure AD. Request that an organization administrator, who is a member of Azure AD,  do the mapping. Or, request that an admin of the Azure AD convert you to a member.
 
-   ![guest-azure-ad-cannot-invite.png](media/_shared/guest-azure-ad-cannot-invite.png)
+   ![guest-azure-ad-cannot-invite.png](media/shared/guest-azure-ad-cannot-invite.png)
 
 * If the error message includes a user in your domain, but you don't see them active in your directory, the user likely left your company. Go to the organization user settings to remove the user from your organization.
 
@@ -271,11 +271,11 @@ A: Clear your browser cache and delete any cookies for the session. Close your b
 A: 
 * In your Azure DevOps **Organization settings**, select **Azure Active Directory**, and then select **Resolve**. 
 
-   ![Select Azure AD and then Resolve](media/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Azure AD and then Resolve](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
 * Match the identities. Select **Next** when you're done.
 
-   ![Resolve disconnected users](media/_shared/resolve-disconnected-users.png)
+   ![Resolve disconnected users](media/shared/resolve-disconnected-users.png)
 
 ### Q: What if my work items are indicating that the users aren't valid?
 
@@ -289,11 +289,11 @@ A: Yes, all pieces in the system are updated with the new ID when a user’s ID 
 
 A: You can still connect to Azure AD, but try to resolve the mapping issue after you've connected. If you still need help, [contact support](https://azure.microsoft.com/support/devops/).
 
-![connection-warning.png](media/_shared/connection-warning.png)
+![connection-warning.png](media/shared/connection-warning.png)
 
 Select the bolded text to see which users are affected.
 
-![Show disconnected users](media/_shared/show-disconnected-users.png)
+![Show disconnected users](media/shared/show-disconnected-users.png)
 
 ### Q: What if I have over 200 users and want to connect to Azure AD?
 
@@ -309,4 +309,4 @@ A: The tenant cache needs to be cleared if you're using a GCM version prior to v
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]

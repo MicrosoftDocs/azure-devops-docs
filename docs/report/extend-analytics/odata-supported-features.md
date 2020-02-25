@@ -17,11 +17,11 @@ ms.date: 04/05/2019
 
 # Supported OData features and clauses 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 this article provides a summary of the OData features and functions supported or not supported by Analytics for Azure DevOps.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 <a id="clauses" />
 

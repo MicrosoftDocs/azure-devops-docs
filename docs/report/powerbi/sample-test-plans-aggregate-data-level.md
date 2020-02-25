@@ -16,7 +16,7 @@ ms.date: 12/09/2019
 
 # Manual test suites aggregated view sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 Some scenarios have a hierarchical organization of test suites as per organization departments or modules as shown below. 
 
@@ -25,14 +25,14 @@ Some scenarios have a hierarchical organization of test suites as per organizati
 
 As shown in the above image, there are level 3 test suites with same names under different level 2 test suites. In that case, an aggregation at a particular test suite level may be required. In this example it is explained how to do this for all level 3 test suites in a test plan.
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 For a sample test suite hierarchy in a test plan like below, you can configure this report.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Test Suites Aggregated View - Report](media/odatapowerbi-aggregatedatlevel.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -79,7 +79,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?  
@@ -107,7 +107,7 @@ $apply=filter((TestSuite/TestPlanTitle eq '{testPlanTitle}' and TestSuite/IdLeve
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
 
 ### Query breakdown
 
@@ -191,7 +191,7 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

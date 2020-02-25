@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 # Kubectl task
 
-[!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
 Use this task in a build or release pipeline to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
 

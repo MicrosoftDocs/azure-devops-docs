@@ -18,7 +18,7 @@ The HostNavigationService provides APIs for interacting with the parent host fra
 
 ![example](./media/hash-browser.png)
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ### Get the current hash value
 

@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Task Progress Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Task Progress report to track how much work the team has completed and how much remains. This report shows the distribution of active and closed Tasks over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   

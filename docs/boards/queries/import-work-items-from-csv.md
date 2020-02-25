@@ -9,18 +9,18 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: "azure-devops"
+monikerRange: ">= azure-devops-2019"
 ms.date: 12/02/2019
 ---
 
 # Bulk import or update work items using CSV files
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
-
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)]
+> [!NOTE]   
+> This feature is available with Azure DevOps Services, [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609), and later versions. 
 
 ## Import new work items
 

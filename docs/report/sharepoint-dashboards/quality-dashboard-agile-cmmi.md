@@ -13,7 +13,7 @@ ms.date: 12/30/2016
 ---
 
 # Quality dashboard (Agile and CMMI)
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Quality dashboard to obtain an overview of progress occurring in the test, development, and build areas as they relate to the quality of the software under development. The team can use the Quality dashboard to learn and make decisions that support team goals around product quality.  
   

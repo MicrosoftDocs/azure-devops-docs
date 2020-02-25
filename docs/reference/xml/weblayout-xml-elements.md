@@ -15,7 +15,7 @@ ms.date: 11/28/2017
 
 # WebLayout and Control elements  
 
-[!INCLUDE [temp](../../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../../includes/version-header-hosted-plus-tfs.md)]
 
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 

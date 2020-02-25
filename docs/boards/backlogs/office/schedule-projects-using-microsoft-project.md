@@ -15,11 +15,11 @@ ms.date: 08/15/2019
 
 # Schedule projects using Microsoft Project  
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in Azure Boards and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
@@ -92,7 +92,7 @@ To learn more, see:
 
 To update a work item type, you add a `FIELD` element for each new field you want to track and a `CONTROL` element for each field you want to display on the work item form. You use the `witadmin` command-line tool to export and import the definition file for each work item type. 
  
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 For more information, see: 
 - [Add or modify a work item field](../../../reference/add-modify-field.md)

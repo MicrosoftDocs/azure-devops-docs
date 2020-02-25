@@ -6,14 +6,14 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
-ms.date: 08/28/2019
+ms.author: atulmal
+author: azooinmyluggage
+ms.date: 02/06/2020
 monikerRange: 'azure-devops'
 ---
 
 # Canary deployment strategy for Kubernetes deployments
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Canary deployment strategy involves deploying new versions of application next to stable production versions to see how the canary version compares against the baseline before promoting or rejecting the deployment. This step-by-step guide covers usage of [Kubernetes manifest task's](../../tasks/deploy/kubernetes-manifest.md) canary strategy support for setting up canary deployments for Kubernetes and the associated workflow in terms of instrumenting code and using the same for comparing baseline and canary before taking a manual judgment on promotion/rejection of the canary.
 
@@ -148,7 +148,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Run this job**: Only when a previous job has failed
 1. Add **Deploy Kubernetes manifests** task with the following configuration to the **Reject canary** job -
     - **Display name**: Reject canary
-    - **Action**: promote
+    - **Action**: reject
     - **Kubernetes service connection**: azure-pipelines-canary-k8s
     - **Namespace**: namespace within the cluster you want to deploy to
     - **Strategy**: Canary

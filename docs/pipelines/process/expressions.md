@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
@@ -343,6 +343,41 @@ You can use the following status check functions as expressions in conditions, b
   * With job names as arguments, evaluates to `True` whether any of those jobs succeeded or failed.
 
   > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
+
+## Conditional insertion
+
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
+
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md#conditional-insertion). 
+
+### Conditionally assign a variable
+```yml
+variables:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # only works if you have a master branch
+    stageName: prod
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo ${{variables.stageName}}
+```
+
+### Conditionally set a task input
+```yml
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'prod'
+    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'dev'
+    publishLocation: 'pipeline'
+```
 
 ## Dependencies
 

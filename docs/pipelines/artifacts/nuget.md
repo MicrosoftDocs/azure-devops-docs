@@ -17,10 +17,10 @@ author: chasewilson
 
 # Publish to NuGet feeds
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to: 
@@ -184,7 +184,7 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 ![Publish packages from team build](media/nuget/publish-packages-from-team-build.png)
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
 ::: moniker range=">= tfs-2018"
 

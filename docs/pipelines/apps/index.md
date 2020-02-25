@@ -7,8 +7,8 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 955133FD-76B4-4D63-AB46-9043D96F8A9D
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
+ms.author: jukullam
+author: juliakm
 ms.date: 08/22/2016
 monikerRange: '>= tfs-2015'
 ---
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and deploy your app
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../includes/version.md)]
 
 <!--- NOT INCLUDED IN TOC --> 
 
@@ -117,11 +117,11 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 
 ::: moniker-end
 

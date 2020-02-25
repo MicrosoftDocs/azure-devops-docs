@@ -13,7 +13,7 @@ ms.date: 04/11/2019
 
 # Configure features after an upgrade
 
-[!INCLUDE [temp](../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [temp](../includes/version-tfs-2018-earlier.md)]
 
 
 After upgrading your Team Foundation Server (TFS), you'll want to use the new features that were installed. Some of these features might require updates to your project. The Configure Features wizard is the easiest way to make this happen. 
@@ -115,7 +115,7 @@ If you have additional questions, you can post one or search for answers in the 
 
 If the projects were created from the same process template, you should be able to modify the source process template, upload it, and then batch update all projects defined for a project collection. Review the following resources: 
 *	[Update a customized process template to access new features](update-customized-process-template.md)
-*	[How to Configure Features for dozens of projects](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx)
+*	[How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/)
 *	[Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
 ### Resolve warning or error messages related to the update of test management artifacts

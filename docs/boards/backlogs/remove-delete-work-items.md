@@ -16,7 +16,7 @@ ms.date: 01/10/2020
 
 # Move, change, or delete work items 
 
-[!INCLUDE [temp](../_shared/azure-boards.md)]
+[!INCLUDE [temp](../includes/azure-boards.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -26,7 +26,7 @@ Often times you find that someone created a work item of the wrong work item typ
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
 
@@ -48,7 +48,7 @@ In this article you'll learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -376,6 +376,10 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
+> [!NOTE]   
+> To permanently delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**. 
+
+
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"
@@ -440,6 +444,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 ::: moniker-end
 
+::: moniker range="tfs-2013"  
+
+> [!NOTE]  
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi**command. 
+
+::: moniker-end
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range="= azure-devops"
@@ -476,7 +486,7 @@ az boards work-item delete --id 864 --destroy --yes
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

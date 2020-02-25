@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013 <=tfs-2017'
 
 # Collaborate in a team room  
 
-[!INCLUDE [version-tfs-2013-2017](../boards/_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [version-tfs-2013-2017](../boards/includes/version-tfs-2013-2017.md)]
 
 Team rooms, like chat rooms, provide teams with a space to discuss work in progress, ask questions, share status, and clarify issues that arise. By fostering and capturing communication among team members, both near and far, team rooms can help increase your team's productivity.
 

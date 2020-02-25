@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Load Testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Load test your app with hundreds of thousands of users using Azure DevOps Test Plans.
 

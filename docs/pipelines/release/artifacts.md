@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -317,8 +317,6 @@ The following features are available when using Azure Container Registry, Docker
 
 <h3 id="artifactsource">Azure Artifacts</h3>
 
-To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/start-using-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
-
 Scenarios where you may want to consume these artifacts are:
 
 1.  You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package to Azure Artifacts and you want to consume the artifact in a release.
@@ -348,6 +346,8 @@ When obtaining Maven artifacts and the artifact is a snapshot build, multiple ve
 Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
 ```
 ----
+
+For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 <a name="externaltfs"></a>
 
@@ -572,4 +572,4 @@ information about each of these. For a list of all pre-defined artifact variable
 * [Release pipelines](index.md)
 * [Stages](../process/stages.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
