@@ -93,15 +93,27 @@ To learn more about what you can customize, see [About process customization and
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
+	::: moniker-end
 
 1. The Create new project page opens. Fill out the form. 
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project.png) 
+	::: moniker-end
 
 2. Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
