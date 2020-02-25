@@ -11,7 +11,7 @@ ms.manager: mijacobs
 
 The task uses the service principal in the service connection to authenticate with Azure. If the service principal has expired or does not have permissions to the App Service, the task fails with the specified error. Verify validity of the service principal used and that it is present in the app registration. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.
 
 ### SSL error

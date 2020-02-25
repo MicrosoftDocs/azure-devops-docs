@@ -124,7 +124,7 @@ A: No, querying on Azure AD groups is unsupported.
 
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
-A: No, but you might be interested in our [process customization plans](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/27/visual-studio-online-process-customization-update.aspx).
+A: No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
 
 <a name="remove-user-azure-ad-group"></a>
 
