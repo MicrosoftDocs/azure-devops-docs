@@ -215,4 +215,3 @@ If you've updated a project that was created with an MSF v 5.0 Agile process tem
 
 If you don't update the workflow, then the task board provides only two states, Active and Closed. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.
 
-Also, you might want to apply the workflow updates to the User Story as described in [Upgrade your 2012 project from RTM to Update 2](https://devblogs.microsoft.com/devops/upgrade-your-2012-process-template-from-rtm-to-update-2/). 
