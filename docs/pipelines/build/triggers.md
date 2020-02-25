@@ -30,7 +30,7 @@ Use triggers to run a pipeline automatically. You can configure four types of tr
 <a name="ci"></a>
 ## CI triggers
 
-Continuous integration (CI) triggers cause a pipeline to run whenever a push is made to the specified branches or a specified tag is pushed.
+Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
@@ -59,7 +59,12 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
-Note: you cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
+
+> [!NOTE]
+> You cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
+
+> [!NOTE]
+> If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
 You can specify branches to include and exclude. For example:
 
@@ -161,7 +166,7 @@ If you don't specify any tag triggers, then by default, tags will not trigger pi
 > If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
 
 > [!NOTE]
-> Triggering on tags is not currently supported for Bitbucket Cloud repos.
+> For Bitbucket Cloud repos, use `branches` syntax to specify tag triggers as described in the previous section. The `tags` syntax is not supported for BitBucket.
 
 ::: moniker-end
 
@@ -619,11 +624,6 @@ Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
 
-> [!NOTE]
-> Each cron schedule has a maximum of 100 pipeline runs per week. If you need more, 
-> you can split your cron schedule into multiple cron schedules that each result in 
-> 100 or less pipeline runs per week.
-
 <a name="always"></a>
 ### Running even when there are no code changes
 
@@ -639,7 +639,7 @@ schedules:
 <a name="limits"></a>
 ### Limits on the number of scheduled runs
 
-There are certain limits on how often you can schedule a pipeline to run in a day. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 100 runs per pipeline per day.
+There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 1000 runs per pipeline per week.
 
 ### Migrating from the classic editor
 
