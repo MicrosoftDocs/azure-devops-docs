@@ -16,7 +16,7 @@ ms.date: 05/06/2019
 
 # Link type reference 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="link-type-guidance"></a>
 

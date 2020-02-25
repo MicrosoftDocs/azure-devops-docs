@@ -17,7 +17,7 @@ ms.date: 11/19/2018
 
 # Backlog keyboard shortcuts
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)] 
 
 ::: moniker range="tfs-2015"
 
@@ -27,7 +27,7 @@ ms.date: 11/19/2018
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)] 
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)] 
 
 
 ## Related articles

@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 # Make Agile team progress visible to the Program Management Office
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager, you can view work progress and resource usage by using Microsoft Project Server while the agile development team manages their user stories and tasks in Visual Studio Team Foundation Server (TFS). You and the Project Management Office (PMO) can view schedules, progress on user stories, and rollup of resources. Meanwhile, the development team members can define, plan, and update their work in TFS. The synchronization engine for TFS and Project Server maintains scheduling data and resource usage for user stories in the mapped enterprise project plan and project.  
   

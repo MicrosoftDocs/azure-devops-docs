@@ -33,7 +33,7 @@ This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Avail
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
+[!INCLUDE [temp](../includes/yaml/UseRubyVersionV0.md)]
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How can I configure a self-hosted agent to use this task?
 

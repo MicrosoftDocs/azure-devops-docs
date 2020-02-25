@@ -8,17 +8,17 @@ ms.technology: devops-cicd
 ms.topic: tutorial
 ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Use approvals and gates to control your deployment
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 By using a combination of manual deployment approvals, gates, and manual

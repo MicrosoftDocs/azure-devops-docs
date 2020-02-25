@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
@@ -16,13 +16,13 @@ ms.date: 02/14/2019
 
 # Add and update a work item
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
 For additional clients that you can use, see [Best tools for adding, updating, and linking work items](../work-items/best-tool-add-update-link-work-items.md).
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 <a id="define-new-work">  </a>
 
@@ -45,7 +45,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
 or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). Note that the Basic process requires Azure DevOps Server 2019.1 or later version.
+> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -126,9 +126,9 @@ Create as many work items as you need of the type you need to track the work you
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[!INCLUDE [temp](../_shared/add-work-items-cli.md)]
+[!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -204,7 +204,7 @@ With each update, changes are recorded in the History field which you can view t
 
 To find work items based on their history, see [History & auditing](../queries/history-and-auditing.md).  
 
-[!INCLUDE [temp](../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../includes/discussion-tip.md)] 
 
 
 #### [Visual Studio 2019](#tab/visual-studio/)
@@ -309,7 +309,7 @@ ID    Type    Title       Assigned To          State
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

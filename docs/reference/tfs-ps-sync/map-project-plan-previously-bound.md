@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Map a project plan that was previously bound to a project
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You can map a project plan that you have been publishing to and refreshing from Visual Studio Team Foundation Server (TFS) to switch to synchronizing with TFS. You can then obtain the benefits of synchronization over those that the Team Foundation add-in to Microsoft Project Professional provides. Before you perform this mapping, you should review the differences in how you manage projects based on these two methods. For more information, see [Operational differences in managing projects using TFS and Project](operational-differences.md).  
   

@@ -16,7 +16,7 @@ ms.date: 12/03/2019
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
@@ -270,7 +270,7 @@ Here's how a three-level nested tree of items appears in Excel:
 
 Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
 
-[!INCLUDE [temp](../../_shared/work-item-types-hierarchy.md)]
+[!INCLUDE [temp](../../includes/work-item-types.md)]
 
 To import a hierarchical list, perform the following steps: 
 

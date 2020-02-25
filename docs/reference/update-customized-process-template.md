@@ -15,7 +15,7 @@ ms.date: 02/26/2018
 
 # Update a customized process template to access new features
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). To update a project that uses the Hosted XML process, see [Import process](../organizations/settings/work/import-process/import-process.md).
@@ -39,7 +39,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
     Choose this option when you've made customizations to your project that aren't present in any of your process templates.
 
-* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
+* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
     Choose this option when you have dozens of projects that were created from the same process template.
 

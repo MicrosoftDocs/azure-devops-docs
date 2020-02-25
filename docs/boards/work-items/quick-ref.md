@@ -1,4 +1,4 @@
-﻿---
+---
 title: Quick index to work item tasks and key concepts
 titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server
@@ -16,7 +16,7 @@ ms.date: 04/10/2019
 
 # Work items quick reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -155,7 +155,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -254,7 +254,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -350,7 +350,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
@@ -434,7 +434,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](../backlogs/add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>

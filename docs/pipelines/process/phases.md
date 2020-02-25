@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Specify jobs in your pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 <a name='agent-phase'></a>
@@ -357,7 +357,7 @@ jobs:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - script: echo hello from macOS
 - job: Linux

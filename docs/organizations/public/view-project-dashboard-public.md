@@ -16,13 +16,13 @@ monikerRange: 'azure-devops'
 
 # Quickstart: View project homepage or a dashboard
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn how to view the project homepage, which typically provides information about the project, and dashboards, which provide charts, links, or focused information for a team or project.
 
 If you're a contributor, you can also [edit README files for a project](../projects/project-vision-status.md) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
 ## Open the project home page
 
@@ -54,7 +54,7 @@ Anonymous users won't be able to view or interact with select widgets. In place 
 
 The following dashboard widgets aren't available to anonymous users:
 
-[!INCLUDE [temp](_shared/unavailable-widgets.md)]  
+[!INCLUDE [temp](includes/unavailable-widgets.md)]  
 
 ## Next steps
 

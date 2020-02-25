@@ -17,7 +17,7 @@ ms.date: 12/20/2018
 # CMMI process work item types and workflow
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the MSF for CMMI Process Improvement 2015 (CMMI) process to plan and track progress of software projects. Teams define requirements to manage the backlog of work and then, using the Kanban board, track progress by updating the status of requirements.
  
@@ -30,7 +30,7 @@ Using Microsoft Test Manager and the web portal, testers create and run test cas
 To support additional CMMI processes, teams can track change requests, risks, issues, and notes captured in review meetings. If you are new to the CMMI process, review the section [Plan and track work with CMMI](cmmi-process.md#start-using) to get started. 
 
   
-[!INCLUDE [temp](../../_shared/note-work-item-form-differences.md)] 
+[!INCLUDE [temp](../../includes/note-work-item-form-differences.md)] 
 
 ## Define requirements 
 
@@ -283,7 +283,7 @@ Use the following guidance and that provided for [fields used in common across w
 </table>
 
 
-[!INCLUDE [temp](../../_shared/discussion-tip.md)] 
+[!INCLUDE [temp](../../includes/discussion-tip.md)] 
 
 ## Track progress
 
@@ -419,15 +419,15 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 Work items you add from the widget are automatically scoped to your team's default area and iteration paths. To change the team context, see [Switch team context](../../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/plans/toc.json&bc=/azure/devops/boards/plans/breadcrumb/toc.json).  
 
 
-[!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   
+[!INCLUDE [temp](../../includes/common-work-item-fields.md)]   
 
 ## Customize work item types
 
-[!INCLUDE [temp](../../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../../includes/customize-work-tracking.md)] 
 
 ## Related articles 
 
-[!INCLUDE [temp](../../_shared/create-team-project-links.md)]  
+[!INCLUDE [temp](../../includes/create-team-project-links.md)]  
 
 
 ### Backlog list order

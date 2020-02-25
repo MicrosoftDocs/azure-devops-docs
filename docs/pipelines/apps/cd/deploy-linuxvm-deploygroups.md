@@ -9,19 +9,19 @@ ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/30/2019
+ms.date: 02/23/2020
 monikerRange: '>= tfs-2018'
 ---
 
 # Deploy to a Linux Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018 and higher. You can use the steps in this
 quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/_shared/media/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will
 automatically show up on your site.
@@ -33,7 +33,7 @@ a deployment script that can be run locally on the Ubuntu server. Set up a CI bu
 
 #### [Java](#tab/java)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)]
 
 ```
 https://github.com/spring-guides/gs-spring-boot-docker.git
@@ -42,7 +42,7 @@ Follow additional steps mentioned in [Build your Java app with Maven](../../ecos
 
 #### [JavaScript](#tab/java-script)
 
-[!INCLUDE [include](../../ecosystems/_shared/get-code-before-sample-repo-option-to-use-own-code.md)] 
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo-option-to-use-own-code.md)] 
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript-docker
@@ -60,7 +60,7 @@ Follow the additional steps described below based on the runtime stack used for 
 
 - For deploying Java Spring Boot and Spring Cloud based apps, create a Linux VM in Azure using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) template, which provides a fully supported OpenJDK-based runtime.
 - For deploying Java servlets on Tomcat server, create a Linux VM with Java 8 using [this](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) Azure template and [configure Tomcat 9.x as a service](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04#step-5-create-a-systemd-service-file).
-- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/Oracle.OracleWebLogicServer12cEnterprise) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14 
+- For deploying Java EE based app, use an Azure template to create a [Linux VM + Java + WebSphere 9.x](https://azuremarketplace.microsoft.com/marketplace/apps/midvision.websphere-application-server-nde-90) or a [Linux VM + Java + WebLogic 12.x](https://azuremarketplace.microsoft.com/marketplace/apps/oracle.20191009-arm-oraclelinux-wls-admin) or a [Linux VM +Java](https://azuremarketplace.microsoft.com/marketplace/apps/azul.azul-zulu8-ubuntu-1804) + WildFly/JBoss 14 
 
 #### [JavaScript](#tab/java-script)
 
@@ -70,7 +70,7 @@ If you don't already have a Linux VM with Nginx, create one now in Azure using t
 
 * * * 
 
-[!INCLUDE [create-linux-deployment-group](../_shared/create-linux-deployment-group.md)]
+[!INCLUDE [create-linux-deployment-group](../includes/create-linux-deployment-group.md)]
 
 ## Define your CD release pipeline
 
@@ -81,12 +81,12 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    * If you've just completed a CI build, in the build's **Summary** tab under **Deployments**,
      choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
-     ![Creating a new release pipeline from the build summary](../_shared/media/release-from-build-summary.png)
+     ![Creating a new release pipeline from the build summary](../media/release-from-build-summary.png)
 
    * Open the **Releases** tab of **Azure Pipelines**, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
-     ![Creating a new release pipeline in the Releases page](../_shared/media/release-from-release-page.png)
+     ![Creating a new release pipeline in the Releases page](../media/release-from-release-page.png)
 
 1. Choose **Start with an Empty job**.
 
@@ -138,7 +138,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 You're now ready to create a release, which means to start the process of running the release pipeline
 with the artifacts produced by a specific build. This will result in deploying the build.
 
-[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
+[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
 ## Next steps
 

@@ -15,7 +15,7 @@ ms.date: 10/23/2017
 
 # TF30147: The New Team Project Wizard could not retrieve the confirmation values because of the error: {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard is building the **Confirm Team Project Settings** wizard page that summarizes all the selections you made and text you typed up to that point. Each wizard page contributes text to the confirmation page, and if the contributing wizard page encounters an unexpected error while passing the text, this error is displayed. The procedures below will help you correct this error.  
   

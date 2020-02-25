@@ -17,7 +17,7 @@ ms.date: 02/14/2019
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
@@ -49,10 +49,10 @@ In this article you'll learn how to:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ::: moniker range="azure-devops"  
 
@@ -147,7 +147,7 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]
 
 ## Show parents and expand the tree hierarchy  
 
@@ -276,10 +276,10 @@ From the product backlog you can multi-select several work items and choose **Ch
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+[!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 
 ## Related articles  

@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Add users to your organization or project
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
@@ -52,11 +52,11 @@ To give other users access to your organization, add their email addresses.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
    
-   ![Select the Users tab, and then select Add users](../../_shared/media/add-new-users.png)
+   ![Select the Users tab, and then select Add users](../../media/add-new-users.png)
 
 4. Enter information into the form.
 
@@ -76,7 +76,7 @@ To give other users access to your organization, add their email addresses.
 <!---
 Go to Users:
 
-![go to users](media/_shared/users-hub-updated.png)
+![go to users](media/shared/users-hub-updated.png)
 
 Choose **Add new users** below "Manage users".
 

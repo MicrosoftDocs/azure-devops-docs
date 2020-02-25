@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core CLI task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 **Azure Pipelines**
 
@@ -25,7 +25,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 
 ## YAML snippet
  
-[!INCLUDE [temp](../_shared/yaml/DotNetCoreCliV2.md)]
+[!INCLUDE [temp](../includes/yaml/DotNetCoreCliV2.md)]
 
 ::: moniker-end
 
@@ -83,7 +83,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>requestedMinorVersion</code><br/>Minor</td><td>The &#39;Y&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](https://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>minorVersion</code></td></tr>
 <tr><td><code>requestedPatchVersion</code><br/>Patch</td><td>The &#39;Z&#39; in version <a href="http://semver.org/spec/v1.0.0.html" data-raw-source="[X.Y.Z](https://semver.org/spec/v1.0.0.html)">X.Y.Z</a>.<br/>Argument aliases: <code>patchVersion</code></td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 
@@ -129,7 +129,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 ### Push NuGet packages to external feed
 
 ```YAML
-# Push all NuGet packages from a build to internal organization Feed
+# Push all NuGet packages from a build to external Feed
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'

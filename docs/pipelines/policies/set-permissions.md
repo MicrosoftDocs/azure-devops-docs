@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Add users to Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker range="> tfs-2018"
 
@@ -38,6 +38,9 @@ If your teammates want to edit pipelines, then have an administrator add them to
 4. After the teammates accept the invitation, ask them to verify that they can [create and edit pipelines](../create-first-pipeline.md).
 
 ## Confirm that contributors have pipeline permissions 
+
+> [!NOTE]
+> A security best practice is to only allow required users and groups for pipeline permissions. The contributors group may be too broad in a given project.  
 
 If you created your project after about October 2018, then the above procedure is probably sufficient. However, in some cases your team members might see errors or grayed-out controls when they try to work with pipelines. In these cases, make sure that your project contributors have the necessary permissions:
 

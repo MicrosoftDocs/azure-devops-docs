@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Kanban board controls
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can quickly switch from the backlog view to the board view using the **Backlog** and **Board** links. Use the following icons to enable other user interface features. 
 
@@ -68,7 +68,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 
 Enter **?** to open the Kanban board keyboard shortcuts.  
 
-<img src="../_shared/media/kanban-board-keyboard-shortcuts-ts-jul.png" alt="Kanban keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
+<img src="../media/kanban-board-keyboard-shortcuts-ts-jul.png" alt="Kanban keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
   
 ::: moniker-end
 
@@ -80,6 +80,6 @@ Global keyboard shortcuts are available from TFS 2015.2 and later versions.
 
 ::: moniker range=">= tfs-2017"
 
-[!INCLUDE [temp](../_shared/live-updates.md)]  
+[!INCLUDE [temp](../includes/live-updates.md)]  
 
 ::: moniker-end

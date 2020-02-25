@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
@@ -124,6 +124,8 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
+
+For more complex triggers that use `exclude` or `batch`, you must use the full syntax as described in the following sections.
 
 You can specify branches to include and exclude. For example:
 
@@ -550,7 +552,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Clean build
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
-ms.manager: shasb
+ms.manager: atulmal
 ms.author: jukullam
 author: juliakm
 ms.date: 05/03/2019
@@ -13,7 +13,7 @@ monikerRange: azure-devops
 ---
 
 # Environment - Kubernetes resource
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 Kubernetes resource view within environments provides a glimpse of the status of objects within the namespace mapped to the resource. It also overlays pipeline traceability on top of these objects so that one can trace back from a Kubernetes object to the pipeline and then back to the commit.
 

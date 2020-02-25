@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Repeat a test with different data
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 When you write a [manual test](create-test-cases.md), 
 you often want to specify that the test should be repeated several 
@@ -29,7 +29,7 @@ use the web portal with TFS 2015 and later or
 Azure DevOps. That way you can run multiple test cases with the 
 same data.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 ## Add parameters to a test case
 
@@ -146,4 +146,4 @@ Record and playback doesn't work with all applications. For details, see
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](how-long-to-keep-test-results.md)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

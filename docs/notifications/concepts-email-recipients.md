@@ -1,4 +1,4 @@
-﻿---
+---
 title: How notification email recipients are determined
 titleSuffix: Azure DevOps 
 description: Describes how email recipients are determined for notifications and events in Azure DevOps and Team Foundation Server (TFS)
@@ -16,16 +16,17 @@ monikerRange: '>= tfs-2017'
 
 # How email recipients of notifications are determined
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
-
-> [!NOTE]
-> This article applies to Azure DevOps, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 Who receives an email notification when an event matches a subscription involves a number of factors. Not understanding these factors can result in your inbox receiving too many (or too few) emails. The following explains how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
+
+[!INCLUDE [note-ui-changes](includes/note-ui-changes.md)]
 
 ## Recipients for custom personal subscriptions
 
 The recipients for a custom personal subscription is the easiest to understand: emails are delivered to the _preferred email address_ of the user that owns the subscription or to the email address configured on the subscription.
+
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 **Preferred email address on a personal subscription (the default)**
 

@@ -16,7 +16,7 @@ ms.date: 12/12/2019
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 <a id="inherited" /> 
 
@@ -30,6 +30,7 @@ There are a number of customizations you can make. The primary ones are adding c
 <a id="what-you-can-customize">  </a>
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
 
+[!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
 
 ## System versus inherited processes 
 
@@ -258,9 +259,9 @@ You can delete a field, and later restore it. Deleting a field deletes all data 
 
 Instead of deleting a field, you may want to instead hide or remove the field from a work item form. For details, see [Add and manage fields, Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 
-[!INCLUDE [temp](../_shared/field-reference.md)] 
+[!INCLUDE [temp](../includes/field-reference.md)] 
 
-[!INCLUDE [temp](../_shared/fields-become-invalid-after-customization.md)] 
+[!INCLUDE [temp](../includes/fields-become-invalid-after-customization.md)] 
 
 
 <a id="system-rules">  </a>
@@ -286,7 +287,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
@@ -302,7 +303,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 ### Restrict modification of closed work items 
 
-[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 ### Restrict modification of work items based on Area Path 
 

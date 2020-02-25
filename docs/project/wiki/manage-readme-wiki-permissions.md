@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 # Manage Wiki permissions
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 By default, all members of the Contributors group can edit Wiki pages.
 

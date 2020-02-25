@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
@@ -194,7 +194,7 @@ Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 
 [Use variables](../build/variables.md)
 
-[!INCLUDE [include](../_shared/variable-set-in-script-qa.md)]
+[!INCLUDE [include](../includes/variable-set-in-script-qa.md)]
 
 ### Which branch of the script does the build run?
 
@@ -205,7 +205,7 @@ The build runs the script same branch of the code you are building.
 You can use named parameters. Other kinds of parameters, such as switch parameters, are not yet supported and will cause errors.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 6/11/2019
+ms.date: 02/06/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Release pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -37,6 +37,8 @@ in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
 ![A release pipeline defines the stages for deployment](media/what-is-release-management/understand-rm-01.1.png)
+
+[What's the difference between a release pipeline and a release?](releases.md)
 
 * **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
 
@@ -103,8 +105,6 @@ You define the **release pipeline** using [stages](../process/stages.md), and re
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
 ![Artifacts in a pipeline and release](media/definition-01.png)
-
-[What's the difference between a release pipeline and a release?](releases.md)
 
 In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage
 and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
@@ -251,7 +251,7 @@ you can abandon the release using the shortcut menu that opens from the ellipses
 
 ![Abandoning a release](media/what-is-release-management/abandon-release.png)
 
-Note that you cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
+You cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
 
 <a name="sendemail"></a>
 ## How do I send release summaries by email?
@@ -261,7 +261,7 @@ Use the **Send Email** option on the menu that opens from the ellipses (**...**)
 
 ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
 
-In the **Send release summary mail** window you can further customize the information to be sent in the email
+In the **Send release summary mail** window, you can further customize the information to be sent in the email
 by selecting only certain sections of the release summary.
 
 <a name="numbering"></a>
@@ -298,11 +298,10 @@ You can customize how long releases of this pipeline must be retained. For more 
 
 Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This allows you to compare the changes at a later point, especially when you are debugging a deployment failure.
 
-
 <a name="getstartednow"></a>
 ## Get started now!
 
-Simply follow these steps:
+Follow these steps:
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     

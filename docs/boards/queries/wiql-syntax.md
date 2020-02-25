@@ -17,7 +17,7 @@ ms.date: 01/16/2020
 
 # Syntax for the Work Item Query Language (WIQL) 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](/rest/api/azure/devops/wit/wiql).  
 
@@ -41,7 +41,6 @@ FROM WorkItems
 WHERE [Work Item Type] = 'User Story'
 ORDER BY [State] Asc, [Changed Date] Desc
 ASOF '6/15/2010'
-Select [State], [Title]
 ```
 
 The WIQL syntax is not case-sensitive.

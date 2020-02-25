@@ -16,7 +16,7 @@ ms.date: 07/22/2019
 
 # View/configure a Cumulative Flow Diagram
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -76,7 +76,7 @@ For the CFD to provide useful information, you'll want to update the status of w
 
 For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ## Open your backlog from the web portal

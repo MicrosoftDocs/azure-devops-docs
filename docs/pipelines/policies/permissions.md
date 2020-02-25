@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2015'
 
 # Pipeline permissions and security roles
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from **Azure Pipelines** in the web portal, either from the user or admin context.
 
@@ -27,9 +27,45 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 ## Default permissions assigned to built-in security groups
 
-Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases.  The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
+Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-[!INCLUDE [temp](../../organizations/security/_shared/build-release.md)]
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../../organizations/security/provide-stakeholder-pipeline-access.md).
+
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-cloud.md)]
+
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](../../organizations/security/includes/pipelines-release.md)] 
+
+### Task groups  
+
+[!INCLUDE [temp](../../organizations/security/includes/task-groups.md)]
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+### Build  
+
+[!INCLUDE [temp](../../organizations/security/includes/build.md)]
+
+### Release  
+
+[!INCLUDE [temp](../../organizations/security/includes/release.md)]
+
+::: moniker-end    
 
 ## Security of agents and library entities
 
@@ -73,7 +109,7 @@ The following permissions are defined for pipelines. All of these can be set at 
 > | **Manage build qualities** | _Only applies to XAML builds_ |
 > | **Manage build queue** | _Only applies to XAML builds_ |
 
-<p />
+
 Default values for all of these permissions are set for team
 project collections and project groups. For example,
 <strong>Project Collection Administrators</strong>, <strong>Project Administrators</strong>, and
@@ -141,6 +177,7 @@ are denied all permissions except <strong>View release pipeline</strong> and
 <strong>View releases</strong>.
 
 ## Task group permissions
+
 Task group permissions follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group pipeline.
@@ -159,19 +196,19 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab in **Azure Pipelines**.
 
-[!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/library-roles.md)]
 
 ## Service connection security roles
 
 You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/service-endpoint-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/service-endpoint-roles.md)]
 
 ## Deployment pool security roles
 
 You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
 
-[!INCLUDE [temp](../../organizations/security/_shared/deployment-pool-roles.md)]
+[!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
 
 ## Related notes 

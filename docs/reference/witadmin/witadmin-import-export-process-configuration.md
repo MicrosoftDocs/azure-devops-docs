@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Import and export process configuration
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You customize the process configuration to modify the display of the web portal Agile tools. A few additional tools require that you map workflow states to metastate mappings.  
 
@@ -27,9 +27,9 @@ To manage the process configuration for a project, use the **witadmin** command 
 -   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  

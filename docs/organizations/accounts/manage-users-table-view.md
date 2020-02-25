@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 ---
 # Manage users and their access in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
 
@@ -33,7 +33,7 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 
 To learn more, read [about access levels](../security/access-levels.md).
 
-[!INCLUDE [prerequisites-add-users-org](../../_shared/prerequisites-add-users-org.md)]
+[!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Manage users
 From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
@@ -54,11 +54,11 @@ The Users view shows key information per user in a table. In this view, you can 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-   ![.](../../_shared/media/open-organization-settings-users-preview.png)
+   ![.](../../media/open-organization-settings-users-preview.png)
 
 4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 
@@ -80,7 +80,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 

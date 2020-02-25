@@ -7,14 +7,14 @@ ms.technology: devops-cicd
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 10/21/2019
 monikerRange: azure-devops
 ---
 
 # Define approvals and checks
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 A pipeline is made up of stages. A pipeline author can control whether a stage should run by defining [conditions](conditions.md) on the stage. Another way to control if and when a stage should run is through **approvals and checks**. 
 

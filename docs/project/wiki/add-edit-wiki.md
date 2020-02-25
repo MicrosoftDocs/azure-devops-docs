@@ -17,7 +17,7 @@ ms.date: 10/14/2019
 
 # Quickstart: Add and edit wiki pages
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
@@ -72,7 +72,7 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 
 <a id="open-wiki">  </a>
 
-[!INCLUDE  [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE  [temp](includes/open-wiki-hub.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -175,7 +175,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 
@@ -185,7 +185,7 @@ az devops wiki page update --path 'my page' --wiki myprojectwiki --file-path a.t
 
 ### Wiki page title naming restrictions
 
-[!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
+[!INCLUDE [temp](./includes/wiki-naming-conventions.md)]
 
 ## Edit and delete wiki pages
 
@@ -276,7 +276,7 @@ az devops wiki page delete --path
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 - **--yes -y**: Optional. Do not prompt for confirmation.
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ### Example
 
@@ -291,7 +291,7 @@ az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-[!INCLUDE [note-cli-not-supported](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
 ::: moniker-end
 

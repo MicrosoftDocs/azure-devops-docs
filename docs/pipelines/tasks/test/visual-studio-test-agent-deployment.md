@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Visual Studio Test Agent Deployment task
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -46,13 +46,13 @@ This task requires the target computer to have:
 
 #### Windows Remote Management (WinRM)
 
-[!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
+[!INCLUDE[deploy-winrm-setup](../includes/deploy-winrm-setup.md)]
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.md)]
+[!INCLUDE [temp](../includes/yaml/DeployVisualStudioTestAgentV2.md)]
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ The supported options for these scenarios are:
 
 ### Example
 
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.com/b/visualstudioalm/archive/2015/06/28/10618066.aspx)
+* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### More information
 
@@ -167,16 +167,16 @@ from both server and client machines without
 triggering the execution of tests on the server 
 machines.
 
-[!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]
+[!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

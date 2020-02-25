@@ -1,4 +1,4 @@
-﻿---
+---
 title: What tasks do backlogs, boards, & plans support? 
 titleSuffix: Azure Boards
 description: Understand the tasks supported among backlogs, Kanban boards, taskboards, and plans in Azure Boards, Azure DevOps, & TFS   
@@ -18,7 +18,7 @@ ms.date: 10/17/2019
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -61,10 +61,11 @@ With list backlogs you can quickly develop your project plan; group and prioriti
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 ::: moniker-end
 
+## Access a backlog or board
 
 You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and taskboard. For an overview of working in Scrum or Kanban, see [What is Azure Boards?](../get-started/what-is-azure-boards.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -84,6 +85,8 @@ You access your backlogs and boards from a web portal. When you work from the St
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
+	[!INCLUDE [temp](../includes/note-basic-process.md)]
+
 2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
@@ -92,7 +95,7 @@ You access your backlogs and boards from a web portal. When you work from the St
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -146,6 +149,8 @@ From your web browser, open your team's product backlog. Select **Boards>Backlog
 To manage work, you have access to three classes of backlogs (portfolio, product, and sprint) and two types of boards (Kanban and Taskboards). Backlogs list work items, boards display work items as cards. Backlog and board views provide similar and distinct features to support planning and tracking. 
 
 You use work items to share information, assign work to team members, track dependencies, organize work, and more. You can apply different filters to your backlogs and boards to just show those items of interest. 
+
+[!INCLUDE [temp](../includes/note-configure-customize.md)]
 
 ### Portfolio, product, and sprint backlogs 
 
@@ -278,7 +283,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see <a href="../sprints/define-sprints.md" data-raw-source="[Schedule sprints](../sprints/define-sprints.md)">Schedule sprints</a></td>
 </tr>
 <tr>
-<td>Cutomize cards</td>
+<td>Customize cards</td>
 <td>n/a</td>
 <td>n/a</td>
 <td><a href="../../boards/boards/customize-cards.md">Customize: cards</a></td></td>
@@ -446,7 +451,7 @@ The following table indicates those elements or tasks associated with each type 
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../../report/dashboards/configure-sprint-burndown.md#past-sprints).
 
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
 
 ## Product backlog "In Progress" filter

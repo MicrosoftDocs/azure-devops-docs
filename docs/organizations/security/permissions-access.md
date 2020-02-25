@@ -16,7 +16,7 @@ ms.date: 06/02/2019
 
 # Default permissions and access for Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
@@ -52,7 +52,7 @@ Users granted Stakeholder access to private projects can't view or create query 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-[!INCLUDE [temp](_shared/report.md)]
+[!INCLUDE [temp](includes/report.md)]
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Users granted Stakeholder access to private projects can't view or create query 
 
 You can pin charts to a team dashboard **Home** page. 
 
-[!INCLUDE [temp](_shared/report.md)]
+[!INCLUDE [temp](includes/report.md)]
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ From the web portal **Analytics views**, you can create and manage Analytics vie
 
 You set [permissions](../../report/powerbi/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. Users with **Stakeholder** access have no access to view or edit Analytics views.
 
-[!INCLUDE [temp](_shared/analytics.md)]
+[!INCLUDE [temp](includes/analytics.md)]
 
 ::: moniker-end
 
@@ -112,32 +112,32 @@ You can plan and track work from the web portal **Work** hub, and using Eclipse,
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
-[!INCLUDE [temp](_shared/boards-work-items.md)]
+[!INCLUDE [temp](includes/boards-work-items.md)]
 
 ### Boards feature access
 
 You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop. 
 
-[!INCLUDE [temp](_shared/boards-boards.md)]
+[!INCLUDE [temp](includes/boards-boards.md)]
 
 ### Backlogs features access
 
 [**Backlogs**](../../boards/backlogs/create-your-backlog.md) display work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.  
 
-[!INCLUDE [temp](_shared/boards-backlogs.md)]
+[!INCLUDE [temp](includes/boards-backlogs.md)]
 
 
 ### Sprints feature access
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
 
-[!INCLUDE [temp](_shared/boards-sprints.md)]
+[!INCLUDE [temp](includes/boards-sprints.md)]
 
 ### Queries and semantic search 
 
 [**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine.
 
-[!INCLUDE [temp](_shared/boards-queries.md)]
+[!INCLUDE [temp](includes/boards-queries.md)]
 
 
 ::: moniker range=">= tfs-2017"
@@ -146,7 +146,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
 
-[!INCLUDE [temp](_shared/boards-plans.md)]
+[!INCLUDE [temp](includes/boards-plans.md)]
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ You can connect to your code from the web portal **Code** hub, or using Xcode, E
 
 You can use [Git repositories](../../repos/git/overview.md) to host and collaborate on your source code. For an overview of code features and functions.
 
-[!INCLUDE [temp](_shared/code-git.md)]
+[!INCLUDE [temp](includes/code-git.md)]
 
 ::: moniker-end
 
@@ -205,7 +205,7 @@ You can use [Git repositories](../../repos/git/overview.md) to host and collabor
 
 [Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
 
-[!INCLUDE [temp](_shared/code-tfvc.md)]
+[!INCLUDE [temp](includes/code-tfvc.md)]
 
 ::: moniker-end
 
@@ -225,38 +225,50 @@ You can define and manage your builds and releases from the web portal **Pipelin
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+
+[!INCLUDE [temp](includes/pipelines-cloud.md)]
+
+::: moniker-end  
+  
+::: moniker range="azure-devops-2019"
+
+### Build  
+
+[!INCLUDE [temp](includes/pipelines-build.md)]
+
+### Release 
+
+[!INCLUDE [temp](includes/pipelines-release.md)]
+
+### Task groups  
+
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. Task group permissions follow a hierarchical model. You can set defaults for all  permissions at the project-level and over-write on an individual task group pipeline. You [define and manage task groups](../../pipelines/library/task-groups.md) in the **Task groups** tab in **Azure Pipelines**.
+
+[!INCLUDE [temp](includes/task-groups.md)]
+
+::: moniker-end   
+
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 ## Build and Release
 
-You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of pipelines features and functions, see [Continuous integration on any platform](../../pipelines/overview.md). From the web portal, you can set permissions for all or individual builds and releases. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
-::: moniker-end
 
-::: moniker range=">= tfs-2015"  
+### Build  
 
-From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+[!INCLUDE [temp](includes/build.md)]
 
-::: moniker-end
+### Release  
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
-
-::: moniker-end  
-  
-::: moniker range="azure-devops"
-
-[!INCLUDE [temp](_shared/pipelines.md)]
+[!INCLUDE [temp](includes/release.md)]
 
 ::: moniker-end    
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
-
-[!INCLUDE [temp](_shared/build-release.md)]
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -274,7 +286,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 You can define and manage manual tests from the web portal, **Test Plans** or **Test**. For an overview of manual test features and functions, see [Testing overview](../../test/index.yml). You set [test permissions at the project level](set-project-collection-level-permissions.md) from **Project Settings > Permissions**. 
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](includes/test.md)]
 
 ::: moniker-end
 
@@ -312,7 +324,7 @@ Users granted Basic access or higher can access Package management features. Use
 
 ::: moniker range=">= tfs-2017"
 
-[!INCLUDE [temp](_shared/package-feeds.md)]
+[!INCLUDE [temp](includes/package-feeds.md)]
 
 ::: moniker-end
 
@@ -324,7 +336,7 @@ To manage notifications, see [Manage personal notifications](../../notifications
 > [!NOTE]  
 > There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/azure/devops/server/command-line/tfssecurity-cmd#collection-level-permissions).
 
-[!INCLUDE [temp](_shared/collaborate.md)]
+[!INCLUDE [temp](includes/collaborate.md)]
 
 
 ## Related notes

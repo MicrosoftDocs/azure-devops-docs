@@ -15,11 +15,11 @@ monikerRange: 'azure-devops'
 
 # Quickstart: View build and release pipelines
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn how to view the status of build and release pipelines for public projects. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json).  
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
 ## View recent builds and build pipelines  
 

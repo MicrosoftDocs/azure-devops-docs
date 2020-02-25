@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Delete your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 28 days, your organization and data are permanently deleted.
@@ -33,7 +33,7 @@ When you delete your organization, note the following:
 
   You're still charged for any paid users and services used during this billing cycle. Billing stops after the current cycle ends.
 
-To delete your organization, you need organization Owner permissions. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
+To delete your organization, you need Project Collection Administrator permissions. [How do I find the Project Collection Administrators?](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group)
 
 ## Prerequisites
 
@@ -41,14 +41,14 @@ If your organization uses an Azure subscription to bill purchases, you must [fir
 
 ## Delete organization
 
-To delete your organization, you need at least Basic access and organization Owner
-permissions. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
+To delete your organization, you need at least Basic access and Project Collection Administrator
+permissions. [How do I find the Project Collection Administrators?](../security/lookup-organization-owner-admin.md#show-members-of-the-project-collection-administrators-group)
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 
 3. Select **Overview** > **Delete**.

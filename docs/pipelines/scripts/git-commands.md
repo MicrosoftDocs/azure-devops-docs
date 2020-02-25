@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Run Git commands in a script
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../includes/version.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.
@@ -79,10 +79,10 @@ On the **Version Control** tab, select the repository in which you want to run G
 
 Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Branch creation:**  Allow
+* **Create branch:**  Allow
 * **Contribute:**  Allow
-* **Read:**  Inherited allow
-* **Tag creation:**  Inherited allow
+* **Read:**  Allow
+* **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
@@ -278,10 +278,10 @@ When you set ```system.prefergit``` to ```true```, the build pipeline uses comma
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

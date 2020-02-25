@@ -14,9 +14,9 @@ monikerRange: '> tfs-2018'
 
 # Run Apache JMeter load tests with Azure DevOps
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Before you start your load testing:
 
@@ -27,7 +27,7 @@ Before you start your load testing:
 
 1. Sign into Azure DevOps.
 
-2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **+ New**
+2. Go to the **Load Test** section of [!INCLUDE [test-hub-include-adsonly](../includes/test-hub-include-adsonly.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](media/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)
@@ -59,7 +59,7 @@ Before you start your load testing:
    The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
    If there are any transaction tests, the page will also show the five slowest of these.
-   Use the ![down arrow](media/_shared/SimpleLoadTestVSO-sort-column.png)
+   Use the ![down arrow](media/shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
 6. Open the **Charts** page to see a graphical representation of 
@@ -68,18 +68,18 @@ Before you start your load testing:
    request. Hover your mouse pointer over a chart to 
    see more details. 
 
-   ![Load test Charts page results](media/_shared/LoadTestVSO-charts.png)
+   ![Load test Charts page results](media/shared/LoadTestVSO-charts.png)
 
 7. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
    ![Load test Diagnostics page results](media/get-started-jmeter-test/JMeterLoadTestVSO-diagnostics-tab.png)
 
-   You can also use the ![arrow](media/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
+   You can also use the ![arrow](media/shared/SimpleLoadTestVSO-summary-errors-icon.png)
    icon in the **Errors** section of the **Summary** page to go directly to the 
    **Diagnostics** page.
 
-   ![Opening the Diagnostics page from the Summary tab](media/_shared/SimpleLoadTestVSO-summary-errors-link.png)
+   ![Opening the Diagnostics page from the Summary tab](media/shared/SimpleLoadTestVSO-summary-errors-link.png)
 
 8. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.
@@ -107,4 +107,4 @@ Before you start your load testing:
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

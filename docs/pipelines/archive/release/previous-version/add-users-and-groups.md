@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Add users and groups, and control access to Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You must add the user account of anyone who wants to set up, start, or approve
 releases to Release Management. Also, you must add the service accounts that 
@@ -201,6 +201,6 @@ members, you must delete them manually from the Manage Users page.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an Azure Web App
 
-[!INCLUDE [version-Azure DevOps Services-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-Azure DevOps Services-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your web app to an Azure App Service Linux on every successful build.
 

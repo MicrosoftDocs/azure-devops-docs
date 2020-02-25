@@ -10,7 +10,7 @@
     href: get-started/pipelines-sign-up.md
   - name: Create your first pipeline
     href: create-first-pipeline.md
-    displayName: status badge, get started, first pipeline, import from github
+    displayName: status badge, get started, first pipeline, import from github, clone pipeline
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
 # - name: Publish build results 
@@ -181,7 +181,7 @@
   - name: Run Git commands
     href: scripts/git-commands.md
   - name: Reduce build time using caching (Preview)
-    href: caching/index.md
+    href: release/caching.md
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
@@ -264,7 +264,7 @@
       href: apps/cd/deploy-docker-webapp.md
     - name: Azure Kubernetes Service (Classic)
       href: apps/cd/deploy-aks.md
-    - name: IoT edge (Classic)
+    - name: Azure IoT Edge (Classic)
       href: release/deploy-iot-using-azure-pipelines.md
     - name: Azure Cosmos DB CI/CD (Classic)
       href: targets/cosmos-db.md
@@ -535,8 +535,6 @@
       href: tasks/utility/azure-monitor.md
     - name: Query Work Items
       href: tasks/utility/work-item-query.md
-    - name: Security and Compliance Assessment
-      href: tasks/utility/azure-policy.md
     - name: Service Fabric PowerShell
       href: tasks/utility/service-fabric-powershell.md
     - name: Shell script
@@ -633,8 +631,8 @@
       href: tasks/deploy/azure-monitor-alerts.md
     - name: Azure MySQL Deployment
       href: tasks/deploy/azure-mysql-deployment.md
-    - name: Azure Policy Check Gate
-      href: tasks/deploy/azure-policy-check-gate.md
+    - name: Azure Policy
+      href: tasks/deploy/azure-policy.md
     - name: Azure PowerShell
       href: tasks/deploy/azure-powershell.md
     - name: Azure Resource Group Deployment
@@ -643,7 +641,7 @@
       href: tasks/deploy/sql-azure-dacpac-deployment.md
     - name: Azure Web App
       href: tasks/deploy/azure-rm-web-app.md
-    - name: Azure VM Scale Set Deployment
+    - name: Azure virtual machine scale set deployment
       href: tasks/deploy/azure-vmss-deployment.md
     - name: Azure Web App for Container
       href: tasks/deploy/azure-rm-web-app-containers.md
@@ -732,8 +730,28 @@
     href: process/artifact-policy.md
 - name: Case studies & best practices
   items:
+  - name: Pipelines security walkthrough
+    items:
+    - name: Overview
+      href: security/overview.md
+    - name: Approach to securing YAML pipelines
+      href: security/approach.md
+    - name: Repository protection
+      href: security/repos.md
+    - name: Pipeline resources
+      href: security/resources.md
+    - name: Project structure
+      href: security/projects.md
+    - name: Security through templates
+      href: security/templates.md
+    - name: Variables and parameters
+      href: security/inputs.md
+    - name: Shared infrastructure
+      href: security/infrastructure.md
+    - name: Other security considerations
+      href: security/misc.md
   - name: Add continuous security validation 
-    href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+    href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Build & deploy automation 
     href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
   - name: Progressively expose releases using deployment rings 
