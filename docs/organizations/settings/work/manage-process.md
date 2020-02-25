@@ -1,4 +1,4 @@
-﻿---
+---
 title: Create and manage an inherited process 
 titleSuffix: Azure DevOps Services
 description: Add custom fields, work item types, and more by creating and applying an inherited process to a project  
@@ -105,12 +105,27 @@ Follow the steps in the wizard
 <a id="create-team-project">  </a>
 ## Create a project from a process 
 
-1. Open the &hellip; context menu for the process you want to use and choose **New project**.  
+1. Open the &hellip; context menu for the process you want to use and choose **New team project**.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
+	::: moniker-end
 
-1. The Create new project page opens. For details, see [Create a project](../../../organizations/projects/create-project.md).
+1. The Create new project page opens. Fill out the form. To learn more, see [Create a project](../../projects/create-project.md).
+
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project.png) 
+	::: moniker-end
 
 <a id="copy-process">  </a>
 ## Copy a process
