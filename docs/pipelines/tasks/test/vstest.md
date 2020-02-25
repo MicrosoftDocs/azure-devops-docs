@@ -25,6 +25,11 @@ Tests that target the .NET core framework can be executed by specifying the appr
 
 Tests can be distributed on multiple agents using version 2 of this task. For more information, see [Run tests in parallel using the Visual Studio Test task](../../test/parallel-testing-vstest.md).
 
+## Check prerequisites
+
+If you are using windows self hosted agent, Make sure your machine has these prerequisites:
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+
 ## Demands 
 
 The agent must have the following capability:

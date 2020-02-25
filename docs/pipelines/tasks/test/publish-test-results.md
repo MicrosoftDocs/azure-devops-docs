@@ -51,6 +51,11 @@ produced when running tests to Azure Pipelines or TFS in order to obtain coverag
 The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
 and [JaCoCo](https://www.eclemma.org/jacoco/).
 
+## Check prerequisites
+
+If you are using windows self hosted agent, Make sure your machine has these prerequisites:
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+
 <a name="demands"></a>
 
 ## Demands
