@@ -559,9 +559,14 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- task: CopyFiles@2
+  inputs:
+    Contents: '**' ## update to match what you want to copy
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
+    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
 ```
 
 ::: moniker-end
