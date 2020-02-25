@@ -454,6 +454,7 @@ Must not contain any Unicode control characters or surrogate characters
 <a id="TeamNames">   </a>
 
 ### Teams 
+
 Team names identify a group of individuals or groups that collectively work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. 
 
 As such, team names must conform to conventions that allow them to be rendered as part of a valid URL. Each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
@@ -666,41 +667,45 @@ Must not contain characters prohibited by the local file system. For more inform
 Each work item type (WIT) definition contains one or more work item fields. These fields define the information stored for work items based on the WIT. A work item field name uniquely identifies each work item field.  
 
 Work item field names that you add must conform to the following restrictions.  
-<table>
-<tr>
-<th width="20%">Restriction type</th>
-<th>Restriction</th>
-</tr>
-<tr>
-<td>
-Length
-</td>
-<td>
-<ul>
-<li>Must not contain more than 128 Unicode characters</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Special characters</td>
-<td>
-<ul>
-<li>Must not contain leading or trailing spaces</li>
-<li>Must not contain two or more consecutive spaces</li>
-<li>Must not contain periods (.)</li>
-<li>Must not contain opening or closing square brackets (&#91; &#93;)</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Scope</td>
-<td>
-<ul>
-<li>Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. </li>
-</ul>
-</td>
-</tr>
-</table>
+
+
+:::row:::
+   :::column span="":::
+      **Restriction type**
+   :::column-end:::
+   :::column span="2":::
+      **Restriction**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Length
+   :::column-end:::
+   :::column span="2":::
+      - Must not contain more than 128 Unicode characters
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Special characters
+   :::column-end:::
+   :::column span="2":::
+      - Field names must contain at least one alphabetic character 
+      - Must not contain any one of the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>-```
+      - Must not contain leading or trailing spaces  
+      - Must not contain two or more consecutive spaces  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Scope
+   :::column-end:::
+   :::column span="2":::
+      - Must be unique within the account/project collection
+      - Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. 
+   :::column-end:::
+:::row-end:::
+
 
 ### Field, link type, and category reference names 
 

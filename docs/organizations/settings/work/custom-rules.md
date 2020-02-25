@@ -147,8 +147,6 @@ For custom work item types you can specify the System.State. For default work it
 ::: moniker-end
 
 
-:::image type="icon" source="../../../media/icons/add-icon.png ":::
-
 
 ## Related articles
 
