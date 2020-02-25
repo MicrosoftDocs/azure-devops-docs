@@ -669,42 +669,61 @@ Each work item type (WIT) definition contains one or more work item fields. Thes
 Work item field names that you add must conform to the following restrictions.  
 
 
-:::row:::
-   :::column span="":::
-      **Restriction type**
-   :::column-end:::
-   :::column span="2":::
-      **Restriction**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Length
-   :::column-end:::
-   :::column span="2":::
-      - Must not contain more than 128 Unicode characters
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Special characters
-   :::column-end:::
-   :::column span="2":::
-      - Field names must contain at least one alphabetic character 
-      - Must not contain any one of the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>-```
-      - Must not contain leading or trailing spaces  
-      - Must not contain two or more consecutive spaces  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Scope
-   :::column-end:::
-   :::column span="2":::
-      - Must be unique within the account/project collection
-      - Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. 
-   :::column-end:::
-:::row-end:::
+<table>
+<tr>
+<th width="20%">Restriction type</th>
+<th>Restriction</th>
+</tr>
+<tr>
+<td>
+<p>Length</p>
+</td>
+<td>
+<ul>
+<li>
+<p>Must not contain more than 128 Unicode characters</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Special characters
+</td>
+<td>
+<ul>
+<li>
+Field names must contain at least one alphabetic character 
+</li>
+<li>
+Must not contain any one of the following characters: <code>.,;'`:~\/\*|?"&%$!+=()[]{}<>-</code>
+</li>
+<li>
+Must not contain leading or trailing spaces 
+</li>
+<li>
+Must not contain two or more consecutive spaces 
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+Scope
+</td>
+<td>
+<ul>
+<li>
+Must be unique within the organization or project collection
+</li>
+<li>
+Must be unique within the organization or project collection  
+<p>Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. </p>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+  
 
 
 ### Field, link type, and category reference names 
