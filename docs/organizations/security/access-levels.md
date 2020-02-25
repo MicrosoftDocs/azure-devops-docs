@@ -168,7 +168,7 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
